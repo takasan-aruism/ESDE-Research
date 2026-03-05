@@ -1,0 +1,23 @@
+ESDE Genesis v0.9 — Extended Runs Summary
+==========================================
+
+A1) LONG RUN (seed=42, 10300 steps total)
+  Cycles completed: 28
+  Max S>0.3 in quiet: 20
+  Max link strength: 0.7356
+  Min active links: 8
+  Total opportunities (4/4 conditions met): 970
+  Total near-misses (3/4 conditions met): 43387
+
+  Dominant near-miss failure mode:
+    missing_strong_link: 34124
+    missing_energy: 7071
+    missing_state: 1176
+    missing_sync: 1016
+
+A2) MULTI-SEED (10 seeds × 3300 steps)
+  Total cycles across all seeds: 4
+  Seeds with links>0 throughout: 10/10
+  Seeds with S>0.3: 10/10
+  Seeds with opportunities: 10/10
+  Mean near-misses: 16595

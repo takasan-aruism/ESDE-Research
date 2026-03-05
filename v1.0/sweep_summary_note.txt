@@ -1,0 +1,23 @@
+ESDE Genesis v1.0 — Bias Sweep Summary
+========================================
+Controller: FROZEN (best v0.9 params)
+Seeds: 5 | Quiet: 800 steps | Biases: [0.0, 0.2, 0.4, 0.6, 0.8]
+
+Best by Explainability X:
+  bias = 0.8  X = 1.390
+  (R=0.769 C=0.530 B=0.0904)
+  cycles = 7.0  seeds_with_cycles = 5/10
+
+Best by cycles:
+  bias = 0.6  mean_cycles = 8.0
+  X = 1.296
+
+Near-miss shift (b=0.0 → b=0.8):
+  missing_strong: 0.912 → 0.875
+  missing_energy: 0.023 → 0.008
+
+Durability:
+  Worst min_links across all runs: 98
+  ✓ No inert collapse
+
+Recommendation: bias ∈ [0.8, 0.6]

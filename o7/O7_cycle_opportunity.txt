@@ -1,0 +1,29 @@
+O7 — Cycle Opportunity Detection
+==================================================
+
+Total C→Dust events (all quiet): 94
+C→Dust events (first 100 quiet steps): 0
+  No C→Dust events in first 100 quiet steps.
+
+All quiet C→Dust events:
+  avg energy after decay:  0.199489
+  avg degree after decay:  0.07
+  first event at step:     567
+  last event at step:      618
+  step range:              567-618
+
+Cycle continuation conditions:
+  To continue C→Dust→A, node needs:
+    1. Seeding event (Dust→A) — currently injection-only
+    2. Energy above threshold — E_thr=0.3
+    3. Strong link — S_thr=0.3
+    4. Phase coherence — P_thr=0.7
+
+  Nodes with energy > 0.3 after decay: 0/94
+  Nodes with degree > 0 after decay:   3/94
+
+  NOTE: C→Dust triggers when E < 0.2 (E_low).
+  Therefore ALL decayed nodes have E < 0.2,
+  which is BELOW E_thr=0.3 for reactions.
+  Even if Dust→A seeding occurred, the node
+  could not react (A+B→C) without energy injection.

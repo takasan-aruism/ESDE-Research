@@ -1,0 +1,17 @@
+ESDE Genesis — O6 Transformation Cycle Detection
+Seed: 42 | Elapsed: 2.6s
+
+Total transformations: 345
+  Injection: 251
+  Quiet:     94
+Unique states: 4 — ['A', 'B', 'C', 'Dust']
+Unique edges:  5
+
+Graph cycles: 2
+  len=3: C → Dust → A → C
+  len=3: C → Dust → B → C
+
+SCCs: 1
+  SCC 1: size=4 — [B, A, Dust, C]
+
+Node lifecycle patterns: 0
