@@ -1,0 +1,37 @@
+ESDE Genesis v1.3 — Ridge Refinement Conclusion
+=================================================
+Grid: plb=[0.004, 0.006, 0.007, 0.008, 0.01, 0.012] × bg=[0.001, 0.003, 0.007]
+Seeds: 3 per point | Quiet: 400 steps
+
+Ridge Analysis:
+  Stable cycling cells (η≥0.8, col=0%, cyc>0): 1
+  Stable non-cycling cells: 14
+
+Band: plb ∈ [0.01, 0.01]
+Best point: plb=0.01 bg=0.003 cyc=1.429 η=0.844
+
+Ridge character: POINT (single plb value)
+
+Stable cycling region:
+  plb=0.01 bg=0.003: cyc=1.429 η=0.844 seeds_cyc=2/3
+
+All stable region (η≥0.8, col=0%):
+  plb=0.004 bg=0.001: cyc=0.0 η=1.192
+  plb=0.004 bg=0.003: cyc=0.0 η=1.141
+  plb=0.004 bg=0.007: cyc=0.0 η=1.13
+  plb=0.006 bg=0.001: cyc=0.0 η=1.034
+  plb=0.006 bg=0.003: cyc=0.0 η=1.054
+  plb=0.006 bg=0.007: cyc=0.0 η=1.048
+  plb=0.007 bg=0.001: cyc=0.0 η=0.983
+  plb=0.007 bg=0.003: cyc=0.0 η=1.0
+  plb=0.007 bg=0.007: cyc=0.0 η=0.978
+  plb=0.008 bg=0.001: cyc=0.0 η=0.964
+  plb=0.008 bg=0.003: cyc=0.0 η=0.943
+  plb=0.008 bg=0.007: cyc=0.0 η=0.954
+  plb=0.01 bg=0.001: cyc=0.0 η=0.811
+  plb=0.01 bg=0.003: cyc=1.429 η=0.844
+  plb=0.01 bg=0.007: cyc=0.0 η=0.838
+
+Recommended defaults:
+  p_link_birth: [0.01, 0.01]
+  bg_inject: [0.001, 0.007] (all values stable)
