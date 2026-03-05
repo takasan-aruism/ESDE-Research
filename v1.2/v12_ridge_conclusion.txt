@@ -1,0 +1,27 @@
+ESDE Genesis v1.2 — 2D Ridge Conclusion
+========================================
+Grid: p_link_birth [0.004, 0.007, 0.012, 0.02] × bg_inject [0.001, 0.003, 0.007, 0.015]
+Seeds: [42, 2024] | Quiet: 400
+
+Ridge point: plb=0.007 bg=0.003
+  cycles/1k=0.714 η=1.0 X=0.6207
+
+Stable region (η≥0.8, 0% collapse):
+  plb=0.004 bg=0.001: cyc=0.0 η=1.214
+  plb=0.004 bg=0.003: cyc=0.0 η=1.227
+  plb=0.004 bg=0.007: cyc=0.0 η=1.164
+  plb=0.004 bg=0.015: cyc=0.0 η=1.239
+  plb=0.007 bg=0.001: cyc=0.0 η=1.021
+  plb=0.007 bg=0.003: cyc=0.714 η=1.0
+  plb=0.007 bg=0.007: cyc=0.0 η=0.978
+  plb=0.007 bg=0.015: cyc=0.0 η=0.976
+
+Collapse region:
+  plb=0.02 bg=0.001: η=0.548 col=100.0%
+  plb=0.02 bg=0.003: η=0.536 col=100.0%
+  plb=0.02 bg=0.007: η=0.568 col=100.0%
+  plb=0.02 bg=0.015: η=0.54 col=100.0%
+
+Recommended operating band:
+  p_link_birth: [0.004, 0.015]
+  bg_inject: [0.001, 0.015]
