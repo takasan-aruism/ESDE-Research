@@ -1,0 +1,24 @@
+ESDE Genesis v1.8-O2 — Raw Feature Logging Conclusion
+=======================================================
+Runs: 50 | Window features: 1250 rows | Cycle pairs: 13136 rows
+
+Raw feature columns collected:
+  r_000, r_001, r_010, r_011, r_100, r_101, r_110, r_111, bd_0, bd_1, sz_0, sz_1, f_0, f_1, intr_0, intr_1, intr_2p
+
+Coverage:
+  r_bits (8 categories): OK
+  boundary_mid (2 bins): OK
+  size_mid_bin (2 bins): OK
+  fert_bin (2 bins): OK
+  intrusion_bin (3 bins): OK
+
+Cycle context pairs format:
+  start_ctx and end_ctx stored as JSON strings (full raw tuple)
+  Post-hoc k-selection: parse JSON, select subset of keys, hash → C′(k) label
+
+Per-rate summary:
+  rate=0.0: sigs=80 drift=0.640 cp_types=5.1
+  rate=0.0005: sigs=79 drift=0.623 cp_types=5.0
+  rate=0.001: sigs=88 drift=0.628 cp_types=4.9
+  rate=0.002: sigs=95 drift=0.648 cp_types=5.7
+  rate=0.005: sigs=112 drift=0.691 cp_types=6.6
