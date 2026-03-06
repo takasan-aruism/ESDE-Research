@@ -1,0 +1,31 @@
+ESDE Genesis v1.8-O — C′ Observation Conclusion
+=================================================
+Sweep: intrusion_rate=[0.0, 0.0005, 0.001, 0.002, 0.005]
+Seeds: 10 | Quiet: 5000
+
+C′ type_count ≥ 3?  YES
+Context drift occurs?  YES
+
+Best signature diversity: rate=0.0
+  C′ signatures=77.5  entropy=5.1401
+  drift fraction=0.5836
+  C′ types/window=5.1  C′ entropy=1.7892
+
+Global unique signatures: 27
+Top signatures:
+  C|r=000|sz=0|bd=0|f=1→A→C|r=000|sz=0|bd=0|f=1: 1742
+  C|r=000|sz=0|bd=0|f=0→A→C|r=000|sz=0|bd=0|f=0: 1560
+  C|r=000|sz=0|bd=0|f=1→B→C|r=000|sz=0|bd=0|f=1: 997
+  C|r=000|sz=0|bd=0|f=0→B→C|r=000|sz=0|bd=0|f=0: 851
+  C|unknown→A→C|r=000|sz=0|bd=0|f=0: 582
+  C|unknown→A→C|r=000|sz=0|bd=0|f=1: 558
+  C|unknown→B→C|r=000|sz=0|bd=0|f=0: 410
+  C|unknown→B→C|r=000|sz=0|bd=0|f=1: 395
+  C|r=001|sz=0|bd=0|f=1→A→C|r=000|sz=0|bd=0|f=1: 186
+  C|r=000|sz=0|bd=0|f=0→A→C|r=001|sz=0|bd=0|f=0: 182
+
+Interpretation:
+- C′ types ≥ 3 means multiple structural contexts for C coexist
+- drift > 0 means nodes change C′ category across cycles (context evolution)
+- signature diversity > 2 means the system generates functionally distinct cycle paths
+  even with only 2 chemical elements (A/B)
