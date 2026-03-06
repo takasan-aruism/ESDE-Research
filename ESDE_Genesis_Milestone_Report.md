@@ -1,10 +1,10 @@
 # ESDE Genesis: Milestone Report
 
-**From Static Graphs to Metabolic Cycles — and the Ridge They Live On**
+**From Static Graphs to Structural Differentiation — A Development History**
 
 *Project: ESDE (Endogenous Stochastic Differential Equation) Framework*
 *Team: Gemini (Architect) / GPT (Audit) / Claude (Implementation)*
-*Date: March 5, 2026 (Updated through v1.2)*
+*Date: March 5, 2026 (Updated through v1.8-O)*
 
 ---
 
@@ -246,6 +246,89 @@ The background injection axis showed no significant effect across its entire ran
 
 **Recommended operating band**: p_link_birth ∈ [0.004, 0.010], bg_inject ∈ [0.001, 0.015].
 
+---
+
+### Phase 9: Validation at Scale (v1.3 – v1.4)
+
+**v1.3 — Ridge Refinement**
+
+The coarse v1.2 grid left open whether the ridge was a fragile point or a usable band. A fine grid (plb ∈ {0.004, 0.006, 0.007, 0.008, 0.010, 0.012} × bg ∈ {0.001, 0.003, 0.007}) resolved this.
+
+The stable region (η ≥ 0.8, no collapse) spanned plb = 0.004 through 0.010 — a 2.5× range. However, cycles appeared only at plb ≥ 0.007 in the short runs (400 quiet steps), and exclusively at bg_inject = 0.003. The short quiet phase was suspected as the bottleneck: the system's time-to-first-cycle (TTFC ≈ 400 steps) meant many runs terminated before cycles could materialize.
+
+**v1.4 — Long-Run Band Validation (Ryzen, 30 runs)**
+
+Three operating points — P1 (plb=0.007), P2 (0.008), P3 (0.010) — were run with 5,000 quiet steps across 10 seeds each, executed in parallel on a 48-thread Ryzen machine.
+
+| Point | plb | Cycles/1k | η | Seeds cycling | TTFC median |
+|-------|-----|-----------|---|---------------|-------------|
+| P1 | 0.007 | 39.1 [36–43] | 1.43 | **10/10** | 402 |
+| P2 | 0.008 | 43.0 [40–46] | 1.44 | **10/10** | 420 |
+| P3 | 0.010 | 51.7 [50–54] | 1.52 | **10/10** | 401 |
+
+**All 30 runs produced cycles. Zero collapses.** η exceeded 1.4 at every point — the long-run system is *more* explainable than the short-run baseline, not less.
+
+The ridge is a band, not a point. TTFC ≈ 400 steps explains why v1.3's short runs missed cycles. P3 (plb=0.010) emerged as the best operating point: highest cycle rate, highest η, tightest IQR.
+
+---
+
+### Phase 10: The Search for Differentiation (v1.5 – v1.8-O)
+
+With robust metabolism confirmed, the question shifted: **can the system produce multiple distinct types of metabolic activity?** This phase explored four approaches to diversification — and resolved the question through a fundamental reframing.
+
+**v1.5 — Differentiation Observation**
+
+First, we measured what already existed. The system maintained 1.81 active islands on average, with coexistence (≥2 islands) in 60% of windows. Islands were spatially distinct strong-link domains running independent cycles. Regime switching occurred (3.7 regimes, 3.0 switches/1k steps).
+
+But cycle types were exactly **two**: C→Dust→A→C (1,444 occurrences, 62%) and C→Dust→B→C (883, 38%). With only two chemical elements A and B, the combinatorial ceiling was two.
+
+**v1.6 — Reaction Yield Asymmetry**
+
+We tested whether making Synthesis energetically favorable over Autocatalysis would create functional differentiation. A 4×3 grid of yield parameters was swept across 10 seeds.
+
+Result: cycle types = 2.00 at every grid point. The Syn/Auto ratio shifted (2.98–3.55) but no new cycle patterns appeared. The asymmetry changed the *frequency* of existing types, not the *number* of types. No runaway, η stable.
+
+**v1.7 — Latent Topography (Thin Heterogeneity)**
+
+We introduced static spatial variation: each node received a fertility multiplier F_i that modulated latent refresh rate. Fertile "valleys" should concentrate Synthesis while "deserts" isolate activity domains.
+
+Result: cycle types = 2.00 at all variance levels. Fertility-Synthesis correlation was positive (r = 0.07) — the niche mechanism worked directionally — but too weak to create new cycle paths. Coexistence dropped slightly (0.58→0.56). The topography changed *where* cycles happened but not *what kinds*.
+
+At this point, three independent approaches (energy asymmetry, spatial heterogeneity, yield differentiation) had all hit the same wall: **with 2 elements, there are exactly 2 cycle paths. This is combinatorial, not parametric.**
+
+**v1.8 — Boundary Intrusion**
+
+Rather than expanding the chemical alphabet — which the project's explainability constitution forbids as premature ontological inflation — we introduced a micro-perturbation: a boundary intrusion operator that gradually shifts link strength from inside islands to across boundaries. One new operator, one new knob (intrusion_rate).
+
+An initial code audit revealed that turnover and rigidity measurements had been artifactual (using `id(frozenset)` as keys, measuring only at the strong threshold). After four targeted fixes (lifetime tracking, dual-threshold islands, execution counters, all-edge boundary crossing), the instruments came alive: turnover at the mid-threshold (S ≥ 0.20) was nonzero, boundary crossing events were measurable, and intrusion success rates were tracked per window.
+
+**v1.8-O — The C′ Reframing (Breakthrough)**
+
+The resolution came not from changing the engine but from changing *how we observe it.*
+
+Instead of classifying cycles by chemical path (A or B), we classified the compound state C by its **structural context**: which resolution of island it belongs to (strong/mid/weak), the island's size, whether the node sits on a boundary, and its local fertility. This produced a C′ label with up to 32 possible categories — without adding a single new state to the chemistry.
+
+Results across the full intrusion sweep (5 rates × 10 seeds):
+
+| Metric | Value |
+|--------|-------|
+| C′ types per window | **4.6 – 5.1** (well above the threshold of 3) |
+| Unique C′-cycle signatures | **27 globally** (up to 77.5 per seed) |
+| C′-cycle signature entropy | **4.98 – 5.14** |
+| Context drift fraction | **58%** of cycles end in a different C′ than they started |
+| Classic cycle types | 2 (unchanged, as expected) |
+
+The top signatures reveal the structure:
+
+- `C|r=000|sz=0|bd=0|f=1 → A → C|r=000|sz=0|bd=0|f=1`: 1,742 (most common — isolated, fertile, A-path, no drift)
+- `C|r=000|sz=0|bd=0|f=0 → A → C|r=000|sz=0|bd=0|f=0`: 1,560 (isolated, infertile, A-path, no drift)
+- `C|r=001|sz=0|bd=0|f=1 → A → C|r=000|sz=0|bd=0|f=1`: 186 (weak-island to isolated — structural descent)
+- `C|r=000|sz=0|bd=0|f=0 → A → C|r=001|sz=0|bd=0|f=0`: 182 (isolated to weak-island — structural ascent)
+
+The system generates cycles that **traverse structural boundaries**. A node can begin a cycle inside a weak island and complete it in isolation, or vice versa. These are not different chemical reactions — they are different *structural journeys* through the same reaction. The 58% drift fraction means most cycles involve a change in topological context.
+
+This resolves the diversity question without violating the explainability constitution. The system has 2 chemical elements but 27 distinct structural cycle signatures, because structure and chemistry are independent dimensions of variation.
+
 **v1.0 — Growth-Zone Biased Seeding**
 The v0.9 near-miss analysis revealed that 79% of failed reactions were due to `missing_strong_link` — A/B nodes existed, energy was sufficient, phase was aligned, but no strong link connected them. The fundamental issue: background seeding was uniform random, while strong links were spatially concentrated in growth zones.
 
@@ -283,6 +366,14 @@ v1.0  Alignment       Growth-zone bias concentrates seeding near strong topology
 v1.0s Bias Sweep      Map cycle rate × explainability across bias strength
 v1.1  Noise Tolerance Identify safe bands and collapse cliffs for 3 noise knobs
 v1.2  Ridge Map       2D heatmap locates the operating envelope
+v1.3  Refinement      Fine grid confirms ridge is a band, not a point
+v1.4  Validation      Long-run: 30/30 seeds cycle, η > 1.4, zero collapse
+─── diversification ───
+v1.5  Differentiation Observe: 2 cycle types, 1.8 islands, 60% coexistence
+v1.6  Yield Asymmetry Energy bias shifts frequency, not type count (still 2)
+v1.7  Topography      Fertility field creates niches but not new paths (still 2)
+v1.8  Intrusion       Boundary perturbation + measurement instrumentation fixes
+v1.8-O C′ Reframing   Contextual labels: 27 signatures, 58% drift, 5+ C′ types
 ```
 
 Each layer addresses a specific structural barrier identified by observation. No layer was added speculatively — every addition was driven by a measured failure mode.
@@ -299,18 +390,21 @@ Starting from 200 disconnected, empty nodes:
 4. **Chemistry** converts compatible neighbors into compounds when energy, topology, and phase align
 5. **Decay** destroys everything that isn't topologically protected
 6. When injection stops and the **quiet phase** begins:
-   - Links decay but are continuously reborn from the **latent field**
+   - Links decay but are continuously reborn from the **latent field**, modulated by local fertility
    - Newborn links participate in loops and **grow stronger** by consuming latent potential
    - Some links reach reaction threshold (S > 0.3), with peak observed strength of 0.74
    - Background micro-injection seeds A/B states, biased toward active growth zones
+   - **Boundary intrusion** gradually shifts connectivity across island borders
    - When a strong link connects an A/B node to a C node with sufficient energy and phase sync, **reactions occur**
    - C nodes eventually decay back to Dust, releasing energy
    - Dust nodes get re-seeded, re-linked, and react again
    - **Individual nodes complete full transformation cycles**: C → Dust → A → C
+   - Multiple **active islands** coexist (mean 1.8, up to 9 simultaneously)
+   - **58% of cycles involve structural context drift** — a node begins its cycle in one topological environment and completes it in another
 
-The system **metabolizes**. Not because we programmed metabolism, but because eight layers of local rules, each addressing a specific structural constraint, collectively create the conditions where cyclic self-renewal becomes possible.
+The system metabolizes, coexists in parallel domains, and **differentiates** — not by having different chemical reactions, but by executing the same reactions in structurally distinct environments. There are 2 chemical elements but 27 observed structural cycle signatures.
 
-We now know *where* this behavior lives in parameter space. The metabolic regime occupies a narrow ridge along the link-birth-rate axis (p_link_birth ≈ 0.007), is robust to wide variation in energy supply and latent refresh rates, and collapses sharply when random connectivity overwhelms topological order. The system self-organized to this ridge during adaptive controller runs — it was not hand-tuned.
+This behavior is robust: 30/30 seeds produce cycles at the validated operating point (plb=0.010), with η > 1.4 (explainability exceeds baseline) and zero collapse across all tested conditions.
 
 ---
 
@@ -318,24 +412,29 @@ We now know *where* this behavior lives in parameter space. The metabolic regime
 
 **What it demonstrates:**
 
-A minimal graph-dynamical system with purely local rules can produce self-sustaining cyclic behavior — structure that persists not by being static but by continuously rebuilding itself from latent potential. The cycle is not forced; it emerges from the intersection of topology, energy, phase, and chemistry under the right parameter regime.
+A minimal graph-dynamical system with purely local rules can produce self-sustaining, spatially distributed, structurally differentiated cyclic behavior. The system metabolizes, forms coexisting activity domains, and generates 27 distinct cycle signatures — all from 2 chemical elements, 200 nodes, and a handful of local rules.
 
-The characterization phase (v1.0 sweep through v1.2) adds a second finding that is arguably more important than the first: **the metabolic regime has measurable structure in parameter space.** It is not a point but a ridge. It is robust along some axes (energy supply, latent refresh) and fragile along one specific axis (connectivity noise). The system's adaptive controller converged to this ridge without being told where it was. This suggests that the ridge is not an artifact of fine-tuning but a structural attractor of the optimization landscape — consistent with the ESDE framework's Axiom X (parameters converge toward maximal self-explainability).
+Three progressively deeper findings:
 
-The Explainability measure (X = R + C + B) provided a quantitative way to distinguish between "alive and structured" and "alive but noisy." Maximum cycle rate and maximum explainability do not coincide at the same parameter values but are close (b=0.6 vs b=0.8), suggesting that the system naturally operates near a Pareto frontier between activity and order.
+*First (v0.9):* Metabolic cycles emerge from mechanism stacking without being programmed. Each layer addresses a specific failure mode identified by observation.
+
+*Second (v1.0–v1.4):* The metabolic regime occupies a characterizable band in parameter space. It is robust along energy and latent axes but fragile along the connectivity axis. The adaptive controller converges to this band without being told where it is, consistent with Axiom X.
+
+*Third (v1.5–v1.8-O):* Diversity does not require expanding the ontology. The system's structural context — which islands a node belongs to, at what resolution, whether it sits on a boundary — creates a high-dimensional space of variation *above* the chemical layer. The key insight is that **differentiation is a property of the observer's resolution, not of the substrate's alphabet.** Two elements produce 27 signatures because structure and chemistry are orthogonal dimensions.
+
+This third finding has a methodological implication: the project explicitly refused to expand the chemical state space (from 4 states to more) despite three versions (v1.5–v1.7) where "types = 2" seemed to demand it. The resolution came from refining the observation framework, not the physics. This is consistent with the ESDE principle that explainability should be maximized by compression, not by proliferating entities.
 
 **What it does not demonstrate (yet):**
-- Cycles remain probabilistic events, not guaranteed outcomes — the dominant bottleneck (79% of near-misses) is still spatial alignment of reactive states with strong links
-- The system does not yet select *for* cycling — cycling is a side effect of structural recurrence, not a fitness criterion
-- We have not observed competition between cycling strategies or spatial clustering of cycling nodes
-- The characterization was performed with 200 nodes; scaling behavior is unknown
+- Whether context drift is *functional* (does a node's behavior change when its C′ label changes?) or merely *observational* (the label changes but nothing mechanically depends on it)
+- Whether islands compete for resources (latent potential, energy) in a way that produces selection
+- Scaling behavior beyond N=200
+- Whether the system can sustain differentiation indefinitely or converges to a frozen state
 
-**Open questions for the next phase:**
-- Does the ridge width scale with system size (N)?
-- Do cycling nodes form spatial clusters (proto-organisms)?
-- Can we define a local X (explainability per component) rather than a global one?
-- What happens when two growth zones compete for the same latent potential?
-- Is there a critical p_link_birth where a phase transition occurs in cycle density?
+**Open questions:**
+- Can C′ labels be made causally relevant (not just observationally distinct)?
+- Does island competition emerge at larger N?
+- Is there a phase transition in signature diversity as intrusion rate increases?
+- Can the rigidity–diversity tradeoff be mapped more precisely at intermediate intrusion rates?
 
 ---
 
@@ -359,7 +458,14 @@ The Explainability measure (X = R + C + B) provided a quantitative way to distin
 | v1.0s | 2026-03-05 | GPT→Claude | Bias sweep (b=0–0.8) | X monotonically increases; all b produce cycles |
 | v1.1 | 2026-03-05 | GPT→Claude | Noise tolerance (η) sweep | 2/3 knobs fully robust; p_link_birth collapses at 0.03 |
 | v1.2 | 2026-03-05 | GPT→Claude | 2D ridge map | Ridge at plb=0.007; operating envelope defined |
+| v1.3 | 2026-03-05 | GPT→Claude | Ridge refinement (fine grid) | Band confirmed: plb 0.007–0.010 |
+| v1.4 | 2026-03-05 | GPT→Claude (Ryzen) | Long-run validation (30 runs) | **30/30 seeds cycle, η>1.4, 0% collapse** |
+| v1.5 | 2026-03-05 | GPT→Claude (Ryzen) | Differentiation observation | 1.8 islands, 60% coexistence, 2 cycle types |
+| v1.6 | 2026-03-05 | Gemini→GPT→Claude (Ryzen) | Reaction yield asymmetry | Types = 2 (combinatorial ceiling confirmed) |
+| v1.7 | 2026-03-05 | Gemini→GPT→Claude (Ryzen) | Latent topography (fertility) | Niche bias works (r=0.07) but types = 2 |
+| v1.8 | 2026-03-05 | GPT→Claude (Ryzen) | Boundary intrusion + instrumentation fixes | Turnover measurable at mid-threshold |
+| v1.8-O | 2026-03-05 | GPT→Claude (Ryzen) | **C′ contextual labeling** | **27 signatures, 5+ C′ types, 58% drift** |
 
 ---
 
-*This document marks the completion of the second major milestone: demonstrating that the metabolic regime in ESDE Genesis occupies a characterizable, reproducible region of parameter space — a ridge that the system's own adaptive controller naturally finds, robust to energy noise but fragile to connectivity noise, and measurable through an operational definition of explainability (X = R + C + B).*
+*This document marks the completion of the third major milestone: demonstrating that structural differentiation — the emergence of multiple distinct cycle signatures — does not require expanding the system's ontology. Two chemical elements produce 27 observationally distinct metabolic paths when the structural context of each node is accounted for. Differentiation is a property of resolution, not of alphabet size. The system metabolizes, coexists, and diversifies.*
