@@ -1,0 +1,25 @@
+ESDE Genesis v1.8 — Boundary Intrusion Conclusion
+=================================================
+Sweep: intrusion_rate=[0.0, 0.0005, 0.001, 0.002, 0.005]
+Seeds: 10 | Quiet: 5000
+Topography: var=0.2 | Yield: syn=0.08
+
+Goal: ≥3 cycle types?  NO
+
+Best diversity: rate=0.0
+  types=2.0 entropy=0.963
+  cycles/1k=54.4
+  turnover=0.0 rigidity=1.0
+
+Global cycle types observed: 2
+  C→Dust→A→C: 8210
+  C→Dust→B→C: 4926
+
+Rigidity vs Diversity:
+  rate=0.0: rig=1.00 types=2.0 turn=0.000
+  rate=0.0005: rig=1.00 types=2.0 turn=0.000
+  rate=0.001: rig=1.00 types=2.0 turn=0.000
+  rate=0.002: rig=1.00 types=2.0 turn=0.000
+  rate=0.005: rig=1.00 types=2.0 turn=0.000
+
+Safe (no runaway, links>0): [0.0, 0.0005, 0.001, 0.002, 0.005]
