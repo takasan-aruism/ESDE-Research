@@ -1,0 +1,24 @@
+ESDE Genesis v1.7 — Latent Topography Conclusion
+=================================================
+Sweep: topography_variance=[0.0, 0.1, 0.2, 0.35, 0.5]
+Seeds: 10 | Quiet: 5000 | E_yield_syn=0.08
+
+Goal: ≥3 cycle types?  NO
+
+Best diversity: var=0.2
+  types=2.0 entropy=0.963
+  cycles/1k=54.4 coexistence=0.56
+
+Fertility correlation (median across seeds):
+  Synthesis ~ F: 0.0696 (positive = furnaces prefer fertile zones)
+  Autocatalysis ~ F: -0.0078
+
+Rigidity vs Diversity:
+  var=0.0: rigidity=1.00 types=2.0
+  var=0.1: rigidity=1.00 types=2.0
+  var=0.2: rigidity=1.00 types=2.0
+  var=0.35: rigidity=1.00 types=2.0
+  var=0.5: rigidity=1.00 types=2.0
+
+Safe band (no runaway, links>0): [0.0, 0.1, 0.2, 0.35, 0.5]
+Runaway flags: 0 variance points
