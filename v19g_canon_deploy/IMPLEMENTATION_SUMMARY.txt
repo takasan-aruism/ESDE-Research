@@ -1,0 +1,32 @@
+ESDE Genesis v1.9g — Implementation Summary
+==============================================
+Date: 2026-03-07
+
+Files Changed:
+  v19g_canon.py (NEW) — single canonical runner for freeze + N=500
+
+Files Unchanged (carried from v1.9g_deploy):
+  genesis_state.py, genesis_physics.py, genesis_logger.py,
+  chemistry.py, realization.py, autogrowth.py, intrusion.py
+
+Key Implementation Decisions:
+
+1. Observer policy is a module-level constant (OBSERVER_POLICY = "hyst_0.01"),
+   not a runtime parameter. This ensures canonical behavior by default.
+
+2. select_k_star() implements hysteresis ONLY on the k=3↔4 boundary.
+   Other k levels use argmax. This matches v1.9f findings that
+   the only unstable boundary is between k=3 and k=4.
+
+3. SwitchEvent is a dataclass with all fields required by audit spec.
+   Logged as JSON per-run alongside the result file.
+
+4. N is a command-line parameter (--N 200 or --N 500).
+   No other parameters change between N=200 and N=500 runs.
+   This is the "change N only" requirement.
+
+5. Aggregate function auto-detects N from result files and produces
+   side-by-side comparison when both N=200 and N=500 data exist.
+
+6. Interpretation branching (Branch 1/2/3) is computed automatically
+   in the aggregate function, matching the GPT audit spec.

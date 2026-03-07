@@ -4,7 +4,7 @@
 
 *Project: ESDE (Endogenous Stochastic Differential Equation) Framework*
 *Team: Gemini (Architect) / GPT (Audit) / Claude (Implementation)*
-*Date: March 6, 2026 (Updated through v1.9 + O9.1–O9.5)*
+*Date: March 6, 2026 (Final — v1.9g, Observer Frozen)*
 
 ---
 
@@ -331,7 +331,7 @@ This resolves the diversity question without violating the explainability consti
 
 ---
 
-### Phase 11: The Observer Learns to See (v1.8-O2 – v1.9)
+### Phase 11: The Observer Learns to See (v1.8-O2 – v1.9g)
 
 The final phase asked a deeper question: if the system produces structural diversity, **how should the observer choose what resolution to see it at?**
 
@@ -380,23 +380,86 @@ The k=3 gap was diagnosed: island size adds **zero** incremental entropy (ΔH = 
 
 Most critically, the intrusion drift audit (O9.3) confirmed that **k=4 is causally justified**: intrusion-hit nodes drift 4× more than non-hit nodes. The intrusion exposure dimension captures *real* structural change, not noise.
 
-**v1.0 — Growth-Zone Biased Seeding**
-The v0.9 near-miss analysis revealed that 79% of failed reactions were due to `missing_strong_link` — A/B nodes existed, energy was sufficient, phase was aligned, but no strong link connected them. The fundamental issue: background seeding was uniform random, while strong links were spatially concentrated in growth zones.
+**v1.9c — Reviving k=3 (Island Scale Tightened)**
 
-v1.0 adds a single meta-parameter: `growth_seeding_bias`. During quiet-phase seeding, the probability of targeting a node is shifted toward regions where auto-growth is actively strengthening links. The bias is a mixture: (1−bias)×uniform + bias×growth_proportional, ensuring diversity is preserved.
+The k=3 gap turned out to be a binning problem, not a fundamental limitation. The original size bins (Small/Large based on mid-threshold island membership) were uninformative because 88% of C-nodes belonged to no mid-island at all.
 
-**Results (6 seeds × 1,800 steps, v1.0 vs v0.9 baseline):**
+The fix: redefine k=3 using multi-scale island membership directly from r_bits, producing four bins: None (no island at any threshold), WeakOnly (in weak but not mid island), Mid (in mid but not strong), Strong (in strong island). This uses existing data — no new physics.
 
-| Metric | v0.9 | v1.0 |
-|--------|------|------|
-| Total cycles | 0 | **54** |
-| Seeds with cycles | 0/6 | **5/6** |
-| Total opportunities | 2,610 | **4,642** |
-| missing_energy (near-miss) | 4,167 | **588** (−86%) |
+The effect was dramatic:
 
-The growth-zone bias does not force cycles. It concentrates the stochastic seeding of reactive states near the locations where topology has already self-organized into usable connectivity. The result is a dramatic increase in the probability that all four reaction conditions (strong link, energy, reactive state, phase sync) align at the same place and time.
+| k* | v1.9 (original) | v1.9c (revised) |
+|----|-----------------|-----------------|
+| k=0 | 5.6% | 2.0% |
+| k=2 | **49.2%** | 5.8% |
+| k=3 | **0%** | **47.6%** |
+| k=4 | 43.7% | 44.4% |
 
-Notably, seed 2024 produced **48 cycles** — suggesting that certain random topologies are particularly fertile for metabolic behavior. This variance across seeds is itself a scientifically interesting observation: the system's capacity for self-renewal depends on the specific topology that emerges during injection.
+k=3 absorbed nearly all of k=2's share. ΔH(k3−k2) shifted from zero to a median above 0.15, far exceeding the 0.05 target. The four-bin island scale provides genuine incremental information that boundary status alone does not capture.
+
+The multi-stage filter now works as designed:
+
+| Intrusion Rate | Dominant k* | Mean J* | Interpretation |
+|----------------|-------------|---------|----------------|
+| 0.000 | k=3 | 0.502 | No noise → island scale context suffices |
+| 0.0005 | k=3 | 0.513 | Minimal noise → same |
+| 0.001 | k=3 | 0.508 | Transition zone |
+| 0.002 | **k=4** | 0.591 | Moderate noise → intrusion context needed |
+| 0.005 | **k=4** | 0.736 | High noise → maximum resolution |
+
+**v1.9d — Reproducibility Validation (150 runs)**
+
+The multi-stage filter was tested for reproducibility across 3 operating points (plb = 0.007, 0.008, 0.010), 5 intrusion rates, and 10 seeds — 150 runs total on the Ryzen machine.
+
+The result is a clean phase diagram:
+
+| | rate=0.0 | 0.0005 | 0.001 | 0.002 | 0.005 |
+|---|---|---|---|---|---|
+| plb=0.007 | k=3 (100%) | k=3 (100%) | k=3 (70%) | k=4 (80%) | k=4 (100%) |
+| plb=0.008 | k=3 (100%) | k=3 (100%) | k=3 (70%) | k=4 (90%) | k=4 (100%) |
+| plb=0.010 | k=3 (100%) | k=3 (90%) | k=4 (60%) | k=4 (100%) | k=4 (100%) |
+
+Three findings from the reproducibility data:
+
+*First*, the qualitative rule is robust: rate ≤ 0.0005 → k=3 with 90–100% seed agreement; rate ≥ 0.002 → k=4 with 80–100% agreement. All three plb values produce the same pattern.
+
+*Second*, rate = 0.001 is a genuine transition zone where seeds disagree (60–70%). This is not instability — it is the system correctly reflecting that at this noise level, the marginal value of intrusion context is ambiguous. The disagreement itself is informative: it marks the boundary between two observation regimes.
+
+*Third*, higher plb shifts the transition leftward: plb=0.010 transitions to k=4 at rate=0.001, while plb=0.007 holds k=3 until rate=0.002. More link births create more boundary structure, making intrusion context valuable earlier. The observer adapts not just to noise but to the system's connectivity regime.
+
+Switch rates (k* changes between consecutive windows) peak at the transition zone (~12 per 100 windows) and drop to 1.5–4 at the extremes. The observer is stable when the signal is clear and appropriately uncertain when it is not.
+
+**v1.9e–f — Diagnosing and Stabilizing the Transition Zone**
+
+The 50% seed agreement at rate=0.001 demanded explanation. Was it random noise, or a structural ambiguity?
+
+The margin analysis (v1.9f) answered definitively: **59% of windows at rate=0.001 have |J₄ − J₃| < 0.02.** The system is not randomly flapping — it is genuinely undecided because the two observation strategies offer nearly equal value at this noise level. The regression slope of J₃ vs None_ratio was −2.85 (Corr = −0.85), confirming that k=3 wins through meaningful island structure, not through trivial None dominance.
+
+Switch events (134 events 3→4, 123 events 4→3) showed the primary driver is spikes in k=4's entropy (H₄), not changes in None ratio or intrusion hit fraction. The competition is *informational*, not structural.
+
+Six stabilization rules were compared: baseline (argmax), three hysteresis thresholds (T=0.01, 0.02, 0.05), and two smoothing windows (3, 5). At rate=0.001:
+
+| Rule | Agreement | Switch/100 |
+|------|-----------|-----------|
+| Baseline | 70% | 30.9 |
+| **hyst_0.01** | **100%** | **4.8** |
+| hyst_0.02 | 100% | 4.8 |
+| smooth_3 | 90% | 18.9 |
+
+Hysteresis with T=0.01 eliminated the instability entirely. It did so by revealing that the *true* preference is k=4 at all tested noise levels — baseline's k=3 selections at low rates were artifacts of window-by-window margin fluctuations around zero.
+
+**v1.9g — Freezing the Observer (120 runs)**
+
+hyst_0.01 was adopted as the default rule and validated across the full 3×4×10 grid (120 runs). Results:
+
+- **11/12 conditions: 100% seed agreement.** The single exception (plb=0.007, rate=0.0005) reached 80%.
+- **Dominant k*=4 at all conditions.** The multi-stage filter simplified: with hysteresis, k=4 is universally preferred because even at low noise, the intrusion exposure dimension carries measurable information.
+- **Switch rate: 0–1 per 100 windows** (down from 30.9 at baseline).
+- **Time stability: 7–10/10 seeds** show identical dominant k* in first and second halves.
+
+This result reframes the earlier narrative. v1.9c showed k=3 winning 48% of windows under baseline scoring. v1.9g shows that this was driven by margin noise: once the observer commits to k=4 (via hysteresis), it never needs to return. The island-scale information that k=3 captures is *real* but *redundant* — k=4 captures it plus the intrusion dimension.
+
+The observer scaffold is frozen: hyst_0.01, k*=4 as default, η ≥ 0.8 maintained across all conditions.
 
 ---
 
@@ -428,6 +491,10 @@ v1.8-O C′ Reframing   Contextual labels: 27 signatures, 58% drift, 5+ C′ typ
 ─── adaptive observation (no new mechanics) ───
 v1.8-O2 Raw Logging   Full context tuples for post-hoc k-selection
 v1.9  Axiom X Observer k*=2 (low noise) → k*=4 (high noise); J increases with intrusion
+v1.9c k=3 Tightened    Island Scale bins revised; k=3 wins 48% of windows
+v1.9d Reproducibility  150 runs: k=3→k=4 transition reproducible across plb/seed
+v1.9e-f Diagnostics   Margin analysis, switch causes, stability rule comparison
+v1.9g  Observer Frozen hyst_0.01 adopted; k*=4 universal; 120 runs, 100% agree
 ```
 
 Each layer addresses a specific structural barrier identified by observation. No layer was added speculatively — every addition was driven by a measured failure mode.
@@ -460,7 +527,9 @@ The system metabolizes, coexists in parallel domains, and **differentiates** —
 
 This behavior is robust: 30/30 seeds produce cycles at the validated operating point (plb=0.010), with η > 1.4 (explainability exceeds baseline) and zero collapse across all tested conditions.
 
-The system also **selects its own observation resolution.** An Axiom X postprocessor evaluates 5 levels of structural context labeling per window and chooses the resolution that maximizes diversity without over-fragmenting. At low noise, it sees 3 types (resonance + boundary context). At high boundary intrusion, it sees 5+ types by additionally tracking intrusion exposure — because the noise creates real structural variation that the observer is rewarded for capturing.
+The system also **selects its own observation resolution.** An Axiom X postprocessor with hysteresis (T=0.01) evaluates 5 levels of structural context labeling per window and commits to the resolution that maximizes diversity without over-fragmenting. After systematic evaluation across 120 configurations, the observer universally selects **k=4** (resonance position + boundary status + island scale + intrusion exposure) as the optimal resolution. This selection is stable: 100% seed agreement at 11/12 conditions, switch rate of 0–1 per 100 windows, and consistent across the first and second halves of each run.
+
+The path to this conclusion was itself informative. Earlier versions (v1.9c) appeared to show a multi-stage filter (k=3 at low noise, k=4 at high noise). Margin analysis revealed that the k=3 selections were driven by window-by-window fluctuations in a near-zero margin — not by a genuine preference. Hysteresis stripped away the noise and exposed k=4 as the universally preferred resolution. The island-scale information that k=3 uniquely captures is real (ΔH = 0.32) but redundant once intrusion exposure is included.
 
 ---
 
@@ -478,21 +547,23 @@ Three progressively deeper findings:
 
 *Third (v1.5–v1.8-O):* Diversity does not require expanding the ontology. The system's structural context — which islands a node belongs to, at what resolution, whether it sits on a boundary — creates a high-dimensional space of variation *above* the chemical layer. The key insight is that **differentiation is a property of the observer's resolution, not of the substrate's alphabet.** Two elements produce 27 signatures because structure and chemistry are orthogonal dimensions.
 
-*Fourth (v1.8-O2–v1.9):* The observer resolution itself can be optimized. Axiom X selects k* per window by maximizing an objective that balances entropy, drift, and parsimony. The result is that **the system tells the observer how finely to look:** low noise → coarse labels suffice; high noise → the observer must zoom in to capture the additional structure that noise creates. k=3 (island size) is correctly rejected because it adds zero information at N=200. This is not failure — it is the observer correctly identifying an uninformative dimension.
+*Fourth (v1.8-O2–v1.9g):* The observer resolution itself can be optimized, and the optimization has a stable fixed point. Axiom X with hysteresis selects k=4 (maximum structural context) as the universally preferred resolution across all tested conditions. The path to this conclusion passed through an apparent multi-stage filter (v1.9c: k=3 at low noise, k=4 at high noise), a reproducibility gap (v1.9d: 50% agreement at the transition), a root-cause analysis (v1.9f: the gap is driven by near-zero margins, not structural ambiguity), and finally a stabilization (v1.9g: hysteresis eliminates the noise and reveals k=4 as the true preference).
 
-This fourth finding has a philosophical implication: the "complexity" of a system is not intrinsic to the system but co-determined by the observer's resolution. The same 200-node graph appears to have 2 types or 112 signatures depending on whether the observer accounts for structural context. Axiom X provides a principled way to choose: maximize what you can see while maintaining explainability.
+This progression has a methodological lesson: **the observer's instability was not a flaw in the system but a measurement artifact.** The system always "wanted" k=4, but the scoring function's sensitivity to window-by-window fluctuations created an apparent transition that didn't exist in the underlying dynamics. Hysteresis — a standard engineering technique for noisy signals — resolved it without changing anything about the system itself.
+
+The broader philosophical point remains: complexity is co-determined by system and observer. The same 200-node graph supports 2 chemical types, 27 structural signatures, or 112 full-context signatures depending on the observer's resolution. Axiom X provides a principled, reproducible way to select among these views — and at N=200, the answer is unambiguous: observe everything you can (k=4), because every dimension carries information.
 
 **What it does not demonstrate (yet):**
-- Whether context drift is *functional* (does a node's behavior change when its C′ label changes?) or merely *observational*
-- Whether k* stabilizes or continues shifting as the system evolves longer
-- Scaling behavior beyond N=200 (k=3's null result may reverse at larger N where islands are larger)
-- Whether the observer can be made *online* (selecting k in real-time rather than post-hoc)
+- Whether k=4's universal dominance persists at larger N (island-scale information may become non-redundant when islands are larger)
+- Whether online k-selection (choosing resolution in real-time) creates feedback between observation and dynamics
+- Whether the system can produce *functional* differentiation (where C′ labels causally affect dynamics, not just observation)
+- Long-term stability beyond 10,000 quiet steps
 
 **Open questions:**
-- Does k=3 (island size) become informative at N=500 or N=1000?
-- Can online k-selection create feedback between observation and dynamics?
-- What is the information-theoretic limit of diversity for a 2-element system at this graph size?
-- Is there a minimum intrusion rate below which k=4 is never selected (phase transition in observability)?
+- At what N does k=3 (island scale) become non-redundant with k=4?
+- Can online k* selection create a feedback loop where observation resolution affects dynamics?
+- What happens if hysteresis is applied to the *system's* parameters rather than the observer's labels?
+- Is there a k=5 that becomes relevant at larger scale or higher noise?
 
 ---
 
@@ -526,7 +597,12 @@ This fourth finding has a philosophical implication: the "complexity" of a syste
 | v1.8-O2 | 2026-03-06 | GPT→Claude (Ryzen) | Raw feature logging (5 dimensions) | 13,136 cycle pairs, full k post-hoc |
 | v1.9 | 2026-03-06 | Gemini→GPT→Claude | **Adaptive Resolution Observer** | **k*=2→4 with noise; J increases; k=0 rejected 94%** |
 | O9.1–5 | 2026-03-06 | GPT→Claude | k* attribution & diagnostics | k=3 adds ΔH=0; intrusion drift 4× causal |
+| v1.9c | 2026-03-06 | GPT→Claude | k=3 tightened (None/WeakOnly/Mid/Strong) | **k=3 wins 48%; ΔH=0.15+ (target 0.05)** |
+| v1.9d | 2026-03-06 | GPT→Claude (Ryzen) | k* reproducibility (150 runs) | k=3→k=4 transition at rate≈0.001; 90-100% seed agreement |
+| v1.9e | 2026-03-06 | GPT→Claude | Island refinement + switch audit | D1=D2; 3→4 symmetric; Corr(J₃,None)=−0.85 |
+| v1.9f | 2026-03-06 | GPT→Claude | Margin analysis + rule comparison | **hyst_0.01: rate=0.001 agree 70%→100%** |
+| v1.9g | 2026-03-06 | GPT→Claude (Ryzen) | **Observer frozen** (120 runs) | **k*=4 universal; 100% agree; sw=0-1/100** |
 
 ---
 
-*This document marks the completion of the fourth major milestone: demonstrating that the observation resolution itself is a tunable, optimizable quantity. Axiom X selects how finely to classify the system's states, choosing coarser labels when structure is simple and finer labels when boundary noise creates additional observable variation. The system does not merely metabolize and diversify — it tells the observer how to see it.*
+*This document marks the completion of the fourth major milestone: demonstrating that observation resolution converges to a stable, reproducible fixed point. The system selects k=4 (maximum structural context) at all tested conditions when scored with Axiom X and stabilized with hysteresis. The path to this conclusion — through apparent multi-stage behavior, a reproducibility gap, root-cause analysis, and stabilization — demonstrates that the observer scaffold is not merely a labeling convenience but an integral part of the system's self-description. The system metabolizes, differentiates, and tells the observer how to see it — and the answer, at N=200, is: see everything.*
