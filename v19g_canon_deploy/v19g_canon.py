@@ -395,6 +395,7 @@ def aggregate():
     for d in sorted(OUTPUT_DIR.iterdir()):
         if not d.is_dir(): continue
         for f in sorted(d.glob("seed_*.json")):
+            if "_switches" in f.name: continue  # skip switch logs
             with open(f) as fh: results.append(json.load(fh))
     if not results:
         print("  No results found."); return
