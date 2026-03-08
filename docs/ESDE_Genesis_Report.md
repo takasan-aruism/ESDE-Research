@@ -1,34 +1,9 @@
-# ESDE Genesis: Milestone Report
+# ESDE Genesis: Observer Physics — Experiment Report
 
-**From Static Graphs to Self-Observing Worlds — A Development History**
-
-*Project: ESDE (Endogenous Stochastic Differential Equation) Framework*
+*Phase: Genesis (v0.0 – Scale N=10000)*
+*Status: COMPLETE*
 *Team: Gemini (Architect) / GPT (Audit) / Claude (Implementation)*
-*Date: March 8, 2026 (Final — Genesis Complete, Scale N=200–10000 Validated)*
-
----
-
-## What We Are Trying to Do
-
-We are building a minimal computational universe from first principles to test a specific claim: that persistent, self-sustaining structure can emerge from nothing more than local energy exchange rules on a graph, without being designed in.
-
-The ESDE framework proposes that physical law is not arbitrary — that the parameters governing a universe converge toward configurations that maximize structural self-explanation. Genesis is the experimental sandbox where we test this. We start with 200 nodes, zero energy, zero connections, and a handful of simple rules. Then we inject energy, step back, and watch.
-
-The central question across all versions has been: **What is the minimum set of local rules that produces durable, cyclic, self-renewing structure?**
-
-This is not a simulation of known physics, chemistry, or biology. It is a search for the structural skeleton beneath all three — the conditions under which "things that persist" emerge from "things that happen."
-
----
-
-## The Three Roles
-
-The project operates as a three-agent collaboration:
-
-- **Gemini (Architect)** designs each version's physics, mechanisms, and experimental conditions.
-- **GPT (Audit)** reviews designs before implementation, identifies risks, mandates ablation controls, and specifies success criteria.
-- **Claude (Implementation)** builds the code, runs experiments, reports results without editorializing, and flags discrepancies between prediction and observation.
-
-No agent has unilateral authority. Design must be audited before implementation. Results are reported honestly regardless of whether they confirm hypotheses.
+*Date: March 4–8, 2026*
 
 ---
 
@@ -589,87 +564,10 @@ The following completion criteria (defined in *ESDE Genesis Completion Criteria 
 
 **Judgment: Genesis is complete.** Observer physics is a scale-stable phase. The observer topology (k*=4 cycle structure) emerges and persists from N=200 to N=10,000 without physics modifications.
 
-**Transition to Ecology:** The next phase studies not whether a single observer can exist, but how multiple observers interact — competition, coexistence, merging, splitting, and regional dominance within large systems.
 
 ---
 
-## The Stack
-
-Each version added one layer. Nothing was removed.
-
-```
-v0.3  Resonance       Closed paths decay slower (topology → persistence)
-v0.4  Phase           Local oscillation inside loops (persistence → rhythm)
-v0.5  Chemistry       State transitions gated by physics (rhythm → reaction)
-v0.6  Patches         Background energy + exothermic decay + ghost links
-v0.7  Controller      Adaptive parameter tuning (Axiom X)
-v0.8  Dual Layer      Latent field enables link birth in quiet
-v0.9  Auto-Growth     Loop participation strengthens links via latent cost
-v1.0  Alignment       Growth-zone bias concentrates seeding near strong topology
-─── characterization (no new mechanics) ───
-v1.0s Bias Sweep      Map cycle rate × explainability across bias strength
-v1.1  Noise Tolerance Identify safe bands and collapse cliffs for 3 noise knobs
-v1.2  Ridge Map       2D heatmap locates the operating envelope
-v1.3  Refinement      Fine grid confirms ridge is a band, not a point
-v1.4  Validation      Long-run: 30/30 seeds cycle, η > 1.4, zero collapse
-─── diversification ───
-v1.5  Differentiation Observe: 2 cycle types, 1.8 islands, 60% coexistence
-v1.6  Yield Asymmetry Energy bias shifts frequency, not type count (still 2)
-v1.7  Topography      Fertility field creates niches but not new paths (still 2)
-v1.8  Intrusion       Boundary perturbation + measurement instrumentation fixes
-v1.8-O C′ Reframing   Contextual labels: 27 signatures, 58% drift, 5+ C′ types
-─── adaptive observation (no new mechanics) ───
-v1.8-O2 Raw Logging   Full context tuples for post-hoc k-selection
-v1.9  Axiom X Observer k*=2 (low noise) → k*=4 (high noise); J increases with intrusion
-v1.9c k=3 Tightened    Island Scale bins revised; k=3 wins 48% of windows
-v1.9d Reproducibility  150 runs: k=3→k=4 transition reproducible across plb/seed
-v1.9e-f Diagnostics   Margin analysis, switch causes, stability rule comparison
-v1.9g  Observer Frozen hyst_0.01 adopted; k*=4 universal; 120 runs, 100% agree
-─── scale expansion (no new mechanics) ───
-Scale N=1000      Observer holds k=4 but agree drops to 60% at rate=0.001
-Scale N=2000      Agree 70%; switch rate peaks; None ratio peaks — worst point
-Scale N=5000      Agree recovers to 80%; None ratio returns to N=1000 level
-Scale N=10000     rate=0.002: 100% agree; rate=0.001: 70% (marginal regime)
-═══ GENESIS COMPLETE ═══
-```
-
-Each layer addresses a specific structural barrier identified by observation. No layer was added speculatively — every addition was driven by a measured failure mode.
-
----
-
-## What the System Does Now
-
-Starting from 200 disconnected, empty nodes:
-
-1. **Injection** floods the system with energy and random connections
-2. **Resonance** identifies closed loops and protects their links from decay
-3. **Phase dynamics** synchronize oscillators within loops
-4. **Chemistry** converts compatible neighbors into compounds when energy, topology, and phase align
-5. **Decay** destroys everything that isn't topologically protected
-6. When injection stops and the **quiet phase** begins:
-   - Links decay but are continuously reborn from the **latent field**, modulated by local fertility
-   - Newborn links participate in loops and **grow stronger** by consuming latent potential
-   - Some links reach reaction threshold (S > 0.3), with peak observed strength of 0.74
-   - Background micro-injection seeds A/B states, biased toward active growth zones
-   - **Boundary intrusion** gradually shifts connectivity across island borders
-   - When a strong link connects an A/B node to a C node with sufficient energy and phase sync, **reactions occur**
-   - C nodes eventually decay back to Dust, releasing energy
-   - Dust nodes get re-seeded, re-linked, and react again
-   - **Individual nodes complete full transformation cycles**: C → Dust → A → C
-   - Multiple **active islands** coexist (mean 1.8, up to 9 simultaneously)
-   - **58% of cycles involve structural context drift** — a node begins its cycle in one topological environment and completes it in another
-
-The system metabolizes, coexists in parallel domains, and **differentiates** — not by having different chemical reactions, but by executing the same reactions in structurally distinct environments. There are 2 chemical elements but 27 observed structural cycle signatures.
-
-This behavior is robust: 30/30 seeds produce cycles at the validated operating point (plb=0.010), with η > 1.4 (explainability exceeds baseline) and zero collapse across all tested conditions.
-
-The system also **selects its own observation resolution.** An Axiom X postprocessor with hysteresis (T=0.01) evaluates 5 levels of structural context labeling per window and commits to the resolution that maximizes diversity without over-fragmenting. After systematic evaluation across 120 configurations, the observer universally selects **k=4** (resonance position + boundary status + island scale + intrusion exposure) as the optimal resolution. This selection is stable: 100% seed agreement at 11/12 conditions, switch rate of 0–1 per 100 windows, and consistent across the first and second halves of each run.
-
-The path to this conclusion was itself informative. Earlier versions (v1.9c) appeared to show a multi-stage filter (k=3 at low noise, k=4 at high noise). Margin analysis revealed that the k=3 selections were driven by window-by-window fluctuations in a near-zero margin — not by a genuine preference. Hysteresis stripped away the noise and exposed k=4 as the universally preferred resolution. The island-scale information that k=3 uniquely captures is real (ΔH = 0.32) but redundant once intrusion exposure is included.
-
----
-
-## What This Means (and What It Doesn't)
+## Findings
 
 **What it demonstrates:**
 
@@ -693,23 +591,9 @@ The broader philosophical point remains: complexity is co-determined by system a
 
 *Sixth (Genesis Completion):* Observer physics is not a finite-size artifact. The five completion criteria are satisfied: (A) k*=4 is preserved from N=200 to N=10000; (B) rate=0.002 achieves ≥90% agreement at all scales and 100% at N=10000; (C) switch rate converges to ~7/100 windows and does not diverge; (D) None ratio remains in a narrow band (0.934–0.941); (E) the same observer topology reproduces in systems from 200 to 10,000 nodes. Genesis establishes that observer structures emerge as a stable phase of the system, not a fragile emergent artifact.
 
-**What it does not demonstrate:**
-- How multiple observers interact when they coexist (→ Ecology phase)
-- Whether observer competition, merging, or splitting produces stable ecological patterns
-- Whether observer regions can dominate or displace each other
-- Whether the system can produce *functional* differentiation (where C′ labels causally affect dynamics)
-- Whether online k-selection creates feedback between observation and dynamics
-
-**Open questions for Ecology:**
-- Do observer regions interact? Can island-level k* diverge across spatial regions?
-- Can observer clusters dominate or displace each other?
-- Do stable ecological patterns (coexistence, competition, succession) emerge?
-- At what scale do regional observers become statistically independent?
-- Can observation of observer interaction produce a new emergent layer?
-
 ---
 
-## Appendix: Version Changelog
+## Version Changelog
 
 | Version | Date | Author | Core Addition | Key Result |
 |---------|------|--------|---------------|------------|
@@ -751,4 +635,4 @@ The broader philosophical point remains: complexity is co-determined by system a
 
 ---
 
-*This document marks the completion of ESDE Genesis: Observer Physics. The project set out to answer a single question: can persistent, self-sustaining structure emerge from purely local energy exchange rules on a graph, without being designed in? The answer, established across six milestones and 50× scale expansion, is yes. Metabolic cycles emerge (v0.9), occupy a characterizable operating band (v1.0–v1.4), generate structural diversity without ontological expansion (v1.5–v1.8-O), select their own observation resolution at a stable fixed point (v1.9g), and reproduce the same observer topology from N=200 to N=10,000 (Scale N=10000). At rate=0.002, the system achieves 100% seed agreement at the largest tested scale — the observer law is not a finite-size artifact but a stable phase of the system. Genesis is complete. The next phase — Ecology — asks not whether an observer can emerge, but how multiple observers interact.*
+*Genesis answered its founding question: can persistent, self-sustaining structure emerge from purely local energy exchange rules on a graph, without being designed in? The answer, established across twelve phases and 50× scale expansion, is yes. Metabolic cycles emerge (v0.9), occupy a characterizable operating band (v1.0–v1.4), generate structural diversity without ontological expansion (v1.5–v1.8-O), select their own observation resolution at a stable fixed point (v1.9g), and reproduce the same observer topology from N=200 to N=10,000 (Scale N=10000). At rate=0.002, the system achieves 100% seed agreement at the largest tested scale — the observer law is not a finite-size artifact but a stable phase of the system. Genesis is complete.*
