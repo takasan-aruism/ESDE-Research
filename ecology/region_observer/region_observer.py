@@ -46,6 +46,7 @@ USAGE
 import numpy as np
 import sys; from pathlib import Path as _P  # noqa
 sys.path.insert(0, str(_P(__file__).resolve().parent.parent / "engine"))
+import engine_accel
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt

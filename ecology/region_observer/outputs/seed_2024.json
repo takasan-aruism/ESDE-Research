@@ -7,53 +7,57 @@
   "n_windows": 25,
   "partition": "2x2",
   "global_dominant_k": 4,
-  "global_dom_frac": 0.68,
-  "global_switches_per_100": 6.0,
+  "global_dom_frac": 0.6,
+  "global_switches_per_100": 17.0,
   "global_time_stable": true,
-  "global_mean_margin": 0.0237,
-  "global_mean_n_C": 177.4,
-  "global_mean_none_ratio": 0.9413,
+  "global_mean_margin": 0.0569,
+  "global_mean_n_C": 175.4,
+  "global_mean_none_ratio": 0.9435,
   "regions": {
     "r0": {
       "dominant_k": 4,
-      "agree_frac": 0.8,
-      "switches": 3,
+      "agree_frac": 0.96,
+      "switches": 1,
+      "max_continuous_windows": 24,
       "k_dist": {
-        "0": 2,
-        "1": 1,
+        "0": 1,
+        "1": 0,
         "2": 0,
-        "3": 2,
-        "4": 20
+        "3": 0,
+        "4": 24
       }
     },
     "r1": {
       "dominant_k": 4,
-      "agree_frac": 0.64,
-      "switches": 4,
+      "agree_frac": 0.88,
+      "switches": 3,
+      "max_continuous_windows": 15,
       "k_dist": {
         "0": 1,
-        "1": 1,
+        "1": 2,
         "2": 0,
-        "3": 7,
-        "4": 16
+        "3": 0,
+        "4": 22
       }
     },
     "r2": {
-      "dominant_k": 3,
-      "agree_frac": 0.6,
-      "switches": 4,
+      "dominant_k": 4,
+      "agree_frac": 0.96,
+      "switches": 1,
+      "max_continuous_windows": 24,
       "k_dist": {
-        "0": 3,
-        "1": 1,
+        "0": 1,
+        "1": 0,
         "2": 0,
-        "3": 15,
-        "4": 6
+        "3": 0,
+        "4": 24
       }
     },
     "r3": {
       "dominant_k": 4,
       "agree_frac": 0.96,
       "switches": 1,
+      "max_continuous_windows": 24,
       "k_dist": {
         "0": 1,
         "1": 0,
@@ -65,29 +69,30 @@
   },
   "inter_region": {
     "e_0_1": {
-      "mean_count": 401.3,
-      "mean_weight": 11.0883
+      "mean_count": 395.4,
+      "mean_weight": 10.9162
     },
     "e_0_2": {
-      "mean_count": 396.3,
-      "mean_weight": 11.0697
+      "mean_count": 393.8,
+      "mean_weight": 10.9537
     },
     "e_0_3": {
-      "mean_count": 373.4,
-      "mean_weight": 10.536
+      "mean_count": 369.6,
+      "mean_weight": 10.369
     },
     "e_1_2": {
-      "mean_count": 391.2,
-      "mean_weight": 10.9399
+      "mean_count": 383.4,
+      "mean_weight": 10.7986
     },
     "e_1_3": {
-      "mean_count": 367.4,
-      "mean_weight": 10.2348
+      "mean_count": 368.0,
+      "mean_weight": 10.3384
     },
     "e_2_3": {
-      "mean_count": 369.2,
-      "mean_weight": 10.2215
+      "mean_count": 366.1,
+      "mean_weight": 10.1195
     }
   },
-  "elapsed": 8316.6
+  "divergence_ratio": 0.4,
+  "elapsed": 4657.8
 }
