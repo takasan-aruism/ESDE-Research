@@ -65,7 +65,7 @@ from v19g_canon import (
 # ================================================================
 # SCALE EXPERIMENT CONSTANTS
 # ================================================================
-SCALE_N_VALUES = [200, 500, 1000, 2000, 5000]
+SCALE_N_VALUES = [200, 500, 1000, 2000, 5000, 10000, 20000]
 DEFAULT_PLB    = [0.007]
 DEFAULT_RATES  = [0.001, 0.002]
 DEFAULT_SEEDS  = ALL_SEEDS   # 10 seeds
