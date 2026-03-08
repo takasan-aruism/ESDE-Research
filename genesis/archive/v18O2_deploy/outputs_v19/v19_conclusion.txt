@@ -1,0 +1,29 @@
+ESDE Genesis v1.9 — Adaptive Resolution Observer Conclusion
+==============================================================
+Input: outputs_v18O2 | λ=1.0 μ=0.5
+
+k* Distribution:
+  k=0: 70 (5.6%)
+  k=1: 19 (1.5%)
+  k=2: 614 (49.2%)
+  k=3: 0 (0.0%)
+  k=4: 546 (43.7%)
+
+Always k=0: NO — system selects higher resolution
+
+Per-rate:
+  rate=0.0: k*=2 J=0.229 types=2.9
+  rate=0.0005: k*=2 J=0.239 types=2.8
+  rate=0.001: k*=2 J=0.248 types=2.8
+  rate=0.002: k*=4 J=0.340 types=3.1
+  rate=0.005: k*=4 J=0.495 types=3.4
+
+QA:
+  Resonance dist: {'Low': 24200, 'Mid': 1719, 'High': 1335}
+  Monotonicity violations: 0
+  Drift coverage: 5995/6245 (96%)
+
+Interpretation:
+  k*>0 means the system benefits from structural context labeling.
+  Increasing k* with intrusion_rate means boundary noise creates observationally
+  richer structure that Axiom X rewards with higher resolution.

@@ -1,0 +1,31 @@
+{
+  "N": 10000,
+  "seed": 1337,
+  "plb": 0.007,
+  "rate": 0.001,
+  "quiet_steps": 5000,
+  "n_windows": 25,
+  "policy": "hyst_0.01",
+  "hyst_threshold": 0.01,
+  "dominant_k": 3,
+  "dominant_k_fraction": 0.44,
+  "switch_count": 7,
+  "switches_per_100": 7.0,
+  "time_stable": false,
+  "first_half_dom": 3,
+  "second_half_dom": 4,
+  "k_dist": {
+    "0": 2,
+    "1": 5,
+    "2": 0,
+    "3": 11,
+    "4": 7
+  },
+  "mean_margin": 0.0034,
+  "pct_close_002": 88.0,
+  "mean_islands_strong": 0.48,
+  "mean_islands_mid": 0.72,
+  "mean_none_ratio": 0.9344,
+  "mean_n_C": 298.5,
+  "elapsed": 42434.3
+}

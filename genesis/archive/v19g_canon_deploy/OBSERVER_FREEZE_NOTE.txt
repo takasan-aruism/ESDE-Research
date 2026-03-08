@@ -1,0 +1,51 @@
+ESDE Genesis v1.9g — Observer Freeze Note
+============================================
+Date: 2026-03-07
+Status: FROZEN
+
+1. Canonical Observer Policy
+   Name: hyst_0.01
+   Implementation: v19g_canon.py, function select_k_star()
+   Rule: k=3→4 requires margin(J4-J3) >= +0.01
+         k=4→3 requires margin(J4-J3) <= -0.01
+         Otherwise: hold current k
+   For k not in {3,4}: argmax J_k (no hysteresis)
+
+2. Label Function
+   Implementation: v19g_canon.py, function ctx_label(ctx, k)
+   k=0: "C"
+   k=1: C + Resonance (High/Mid/Low) from r_bits[0:1]
+   k=2: k=1 + Boundary (Core/Edge) from boundary_mid
+   k=3: k=2 + Island Scale (None/WeakOnly/Mid/Strong) from r_bits[0:3]
+   k=4: k=3 + Intrusion Exposure (0/1+) from intrusion_bin
+
+3. Scoring Function
+   J_k = H(C′_k) + λ·drift_k − μ·log₂(|Types(C′_k)| + 1)
+   λ = 1.0, μ = 0.5
+   drift: sqrt-JSD between consecutive window label distributions
+   H: Shannon entropy (log₂)
+
+4. Canonical Stability Metric
+   PRIMARY: switches_per_100_windows
+     = (number of k* changes) / (total windows / 100)
+   SECONDARY: time_stable = (first_half_dominant_k == second_half_dominant_k)
+   SECONDARY: dominant_k_fraction = (count of most frequent k*) / total_windows
+
+5. Output Schema (per run)
+   N, seed, plb, rate, quiet_steps, n_windows,
+   policy, hyst_threshold,
+   dominant_k, dominant_k_fraction,
+   switch_count, switches_per_100,
+   time_stable, first_half_dom, second_half_dom,
+   k_dist, mean_margin, pct_close_002,
+   mean_islands_strong, mean_islands_mid, mean_none_ratio, mean_n_C,
+   elapsed
+
+6. Switch Event Log (per event)
+   seed, N, window, step, prev_k, new_k, margin, threshold, j3, j4, h3, h4
+
+7. Invariants
+   - η ≥ 0.8 hard gate (not enforced in scorer; checked post-hoc)
+   - No ontology expansion permitted
+   - C′ is observational, not physical
+   - Intrusion is boundary perturbation, not forced strong-link insertion
