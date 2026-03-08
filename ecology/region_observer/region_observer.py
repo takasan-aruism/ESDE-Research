@@ -502,11 +502,14 @@ def run_ecology(seed, N=ECO_N, plb=ECO_PLB, rate=ECO_RATE,
     mean_divergence_duration = round(np.mean(episodes), 2) if episodes else 0
     max_divergence_duration = max(episodes) if episodes else 0
 
+    # v2.4: short vs long divergence classification (threshold = 5 windows)
+    SHORT_LONG_THRESHOLD = 5
+    short_divergence_count = sum(1 for e in episodes if e < SHORT_LONG_THRESHOLD)
+    long_divergence_count = sum(1 for e in episodes if e >= SHORT_LONG_THRESHOLD)
+
     # v2.3: local transition count per region
     for r in range(N_REGIONS):
         rseq = region_k_seqs[r]
-        # Count transitions (already computed as 'switches' in region_summary)
-        # Add explicitly named field for v2.3 spec compliance
         region_summary[f"r{r}"]["local_transition_count"] = region_summary[f"r{r}"]["switches"]
 
     # v2.3: global-local mismatch frequency per region
@@ -521,6 +524,28 @@ def run_ecology(seed, N=ECO_N, plb=ECO_PLB, rate=ECO_RATE,
                 mismatch_count += 1
         region_summary[f"r{r}"]["mismatch_frequency"] = round(
             mismatch_count / max(valid_count, 1), 4)
+
+    # v2.4: region flip rate (transitions / valid windows - 1)
+    for r in range(N_REGIONS):
+        valid_wins = sum(1 for w in window_logs if w.get(f"r{r}_valid", True))
+        denom = max(valid_wins - 1, 1)
+        region_summary[f"r{r}"]["flip_rate"] = round(
+            region_summary[f"r{r}"]["switches"] / denom, 4)
+
+    # v2.4: mismatch state grouping (top 3 patterns during divergence windows only)
+    mismatch_states = Counter()
+    for w in window_logs:
+        if w.get("divergence_flag", 0) != 1:
+            continue
+        state_tuple = (
+            w.get("global_k", 0),
+            w.get("r0_k", 0),
+            w.get("r1_k", 0),
+            w.get("r2_k", 0),
+            w.get("r3_k", 0),
+        )
+        mismatch_states[state_tuple] += 1
+    top_mismatch_states = mismatch_states.most_common(3)
 
     # Mean inter-region edge counts
     inter_means = {}
@@ -555,6 +580,13 @@ def run_ecology(seed, N=ECO_N, plb=ECO_PLB, rate=ECO_RATE,
         "divergence_episode_count": divergence_episode_count,
         "mean_divergence_duration": mean_divergence_duration,
         "max_divergence_duration": max_divergence_duration,
+        # v2.4: classification
+        "short_divergence_count": short_divergence_count,
+        "long_divergence_count": long_divergence_count,
+        "top_mismatch_states": [
+            {"state": f"g{s[0]}_r{s[1]}{s[2]}{s[3]}{s[4]}", "count": c}
+            for s, c in top_mismatch_states
+        ],
         # Runtime
         "elapsed": round(elapsed, 1),
     }
@@ -637,6 +669,31 @@ def aggregate():
             for r in range(N_REGIONS))
         print(f"    seed={res['seed']:>5}: transitions=[{trans}]  mismatch=[{mismatch}]")
 
+    # v2.4: Episode classification
+    print(f"\n  Episode classification (short<5 / long>=5 windows):")
+    for res in results:
+        sc = res.get("short_divergence_count", 0)
+        lc = res.get("long_divergence_count", 0)
+        print(f"    seed={res['seed']:>5}: short={sc} long={lc}")
+
+    # v2.4: Region flip rates
+    print(f"\n  Region flip rates:")
+    for res in results:
+        flips = " ".join(
+            f"r{r}={res['regions'][f'r{r}'].get('flip_rate', 0):.3f}"
+            for r in range(N_REGIONS))
+        print(f"    seed={res['seed']:>5}: [{flips}]")
+
+    # v2.4: Top mismatch states
+    print(f"\n  Top mismatch states (during divergence windows):")
+    for res in results:
+        tms = res.get("top_mismatch_states", [])
+        if tms:
+            states_str = ", ".join(f"{m['state']}×{m['count']}" for m in tms)
+        else:
+            states_str = "(no divergence)"
+        print(f"    seed={res['seed']:>5}: {states_str}")
+
     # Write summary CSV
     rows = []
     for res in results:
@@ -656,12 +713,25 @@ def aggregate():
             # v2.3
             row[f"r{r}_transitions"] = rd.get("local_transition_count", 0)
             row[f"r{r}_mismatch"] = rd.get("mismatch_frequency", 0)
+            # v2.4
+            row[f"r{r}_flip_rate"] = rd.get("flip_rate", 0)
         # v2.2: divergence
         row["divergence_ratio"] = res.get("divergence_ratio", 0)
         # v2.3: episodes
         row["div_episode_count"] = res.get("divergence_episode_count", 0)
         row["div_mean_duration"] = res.get("mean_divergence_duration", 0)
         row["div_max_duration"] = res.get("max_divergence_duration", 0)
+        # v2.4: classification
+        row["short_div"] = res.get("short_divergence_count", 0)
+        row["long_div"] = res.get("long_divergence_count", 0)
+        tms = res.get("top_mismatch_states", [])
+        for i in range(3):
+            if i < len(tms):
+                row[f"top_mm_{i+1}_state"] = tms[i]["state"]
+                row[f"top_mm_{i+1}_count"] = tms[i]["count"]
+            else:
+                row[f"top_mm_{i+1}_state"] = ""
+                row[f"top_mm_{i+1}_count"] = 0
         ie = res.get("inter_region", {})
         for pair_key, vals in ie.items():
             row[f"{pair_key}_count"] = vals["mean_count"]
