@@ -1,0 +1,121 @@
+ESDE Ecology — CSV Schema Documentation
+================================================
+Date: 2026-03-08
+Author: Claude (Implementation)
+
+1. Per-run result: seed_{N}.json
+---------------------------------
+{
+  "N", "seed", "plb", "rate", "quiet_steps", "n_windows",
+  "partition":       "2x2",
+
+  // Global observer (identical to Genesis canonical output)
+  "global_dominant_k", "global_dom_frac",
+  "global_switches_per_100", "global_time_stable",
+  "global_mean_margin", "global_mean_n_C", "global_mean_none_ratio",
+
+  // Per-region observer
+  "regions": {
+    "r0": { "dominant_k", "agree_frac", "switches", "k_dist": {"0":.., "4":..} },
+    "r1": { ... },
+    "r2": { ... },
+    "r3": { ... }
+  },
+
+  // Inter-region edge structure (mean over all windows)
+  "inter_region": {
+    "e_0_1": { "mean_count": float, "mean_weight": float },
+    "e_0_2": { ... },
+    "e_0_3": { ... },
+    "e_1_2": { ... },
+    "e_1_3": { ... },
+    "e_2_3": { ... }
+  },
+
+  "elapsed": float
+}
+
+
+2. Per-window log: seed_{N}_windows.csv
+----------------------------------------
+Columns:
+  seed          int      Seed value
+  window        int      Window index (1-based)
+  step          int      Absolute step (injection + quiet)
+  global_k      int      Global k* this window
+  global_n_C    int      Total C-nodes this window
+  r0_k          int      Region 0 local k*
+  r0_n_C        int      Region 0 C-node count
+  r0_none       float    Region 0 None ratio
+  r0_valid      bool     Region 0 validity flag (>=5 C-nodes)
+  r1_k          int      (same for region 1)
+  r1_n_C        int
+  r1_none       float
+  r1_valid      bool
+  r2_k          int      (same for region 2)
+  ...
+  r3_k          int      (same for region 3)
+  ...
+
+
+3. Inter-region edge log: seed_{N}_inter.csv
+---------------------------------------------
+Columns:
+  seed          int      Seed value
+  window        int      Window index
+  e_0_1_count   int      Active links between region 0 and region 1
+  e_0_1_weight  float    Sum of S_ij across those links
+  e_0_2_count   int      (same for 0-2 pair)
+  e_0_2_weight  float
+  e_0_3_count   int
+  e_0_3_weight  float
+  e_1_2_count   int
+  e_1_2_weight  float
+  e_1_3_count   int
+  e_1_3_weight  float
+  e_2_3_count   int
+  e_2_3_weight  float
+
+
+4. Aggregate summary: ecology_summary.csv
+----------------------------------------------
+Columns:
+  seed          int      Seed value
+  global_k      int      Global dominant k*
+  global_sw     float    Global switches per 100 windows
+  global_none   float    Global mean None ratio
+  global_n_C    float    Global mean C-node count
+  r0_k          int      Region 0 dominant k*
+  r0_agree      float    Region 0 agreement fraction
+  r0_sw         int      Region 0 switch count
+  r1_k          int      (same pattern for r1..r3)
+  ...
+  e_0_1_count   float    Mean inter-region edge count (0-1)
+  e_0_1_weight  float    Mean inter-region edge weight (0-1)
+  ...
+
+
+5. Switch event log: seed_{N}_switches.json
+---------------------------------------------
+Same schema as Genesis canonical (SwitchEvent dataclass).
+
+
+6. Spatial Partition
+--------------------
+Nodes 0..N-1 are mapped to a sqrt(N) x sqrt(N) grid.
+The grid is divided into 2x2 quadrants:
+  Region 0: top-left
+  Region 1: top-right
+  Region 2: bottom-left
+  Region 3: bottom-right
+
+local_valid_flag: True if region has >= 5 C-nodes in the window.
+When False, local k* is held at previous value (or 0 if first window).
+
+
+7. Invariants
+-------------
+- Physics, chemistry, thermodynamics: UNCHANGED from Genesis v1.9g
+- Observer policy: hyst_0.01 (frozen, both global and local)
+- No ontology expansion
+- ESDE-native concepts only
