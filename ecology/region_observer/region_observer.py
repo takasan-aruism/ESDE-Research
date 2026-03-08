@@ -46,7 +46,6 @@ USAGE
 import numpy as np
 import sys; from pathlib import Path as _P  # noqa
 sys.path.insert(0, str(_P(__file__).resolve().parent.parent / "engine"))
-import engine_accel
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -486,6 +485,43 @@ def run_ecology(seed, N=ECO_N, plb=ECO_PLB, rate=ECO_RATE,
     div_flags = [w.get("divergence_flag", 0) for w in window_logs]
     divergence_ratio = round(sum(div_flags) / max(len(div_flags), 1), 4)
 
+    # v2.3: divergence episode tracking
+    # Episode = continuous run of windows where divergence_flag == 1
+    episodes = []
+    cur_ep_start = None
+    for i, df in enumerate(div_flags):
+        if df == 1 and cur_ep_start is None:
+            cur_ep_start = i
+        elif df == 0 and cur_ep_start is not None:
+            episodes.append(i - cur_ep_start)
+            cur_ep_start = None
+    if cur_ep_start is not None:
+        episodes.append(len(div_flags) - cur_ep_start)
+
+    divergence_episode_count = len(episodes)
+    mean_divergence_duration = round(np.mean(episodes), 2) if episodes else 0
+    max_divergence_duration = max(episodes) if episodes else 0
+
+    # v2.3: local transition count per region
+    for r in range(N_REGIONS):
+        rseq = region_k_seqs[r]
+        # Count transitions (already computed as 'switches' in region_summary)
+        # Add explicitly named field for v2.3 spec compliance
+        region_summary[f"r{r}"]["local_transition_count"] = region_summary[f"r{r}"]["switches"]
+
+    # v2.3: global-local mismatch frequency per region
+    for r in range(N_REGIONS):
+        mismatch_count = 0
+        valid_count = 0
+        for w in window_logs:
+            if not w.get(f"r{r}_valid", True):
+                continue
+            valid_count += 1
+            if w.get(f"r{r}_k") != w.get("global_k"):
+                mismatch_count += 1
+        region_summary[f"r{r}"]["mismatch_frequency"] = round(
+            mismatch_count / max(valid_count, 1), 4)
+
     # Mean inter-region edge counts
     inter_means = {}
     for r1 in range(N_REGIONS):
@@ -515,6 +551,10 @@ def run_ecology(seed, N=ECO_N, plb=ECO_PLB, rate=ECO_RATE,
         "inter_region": inter_means,
         # v2.2: temporal
         "divergence_ratio": divergence_ratio,
+        # v2.3: interaction
+        "divergence_episode_count": divergence_episode_count,
+        "mean_divergence_duration": mean_divergence_duration,
+        "max_divergence_duration": max_divergence_duration,
         # Runtime
         "elapsed": round(elapsed, 1),
     }
@@ -578,6 +618,25 @@ def aggregate():
             for r in range(N_REGIONS))
         print(f"    seed={res['seed']:>5}: {streaks}  div_ratio={res.get('divergence_ratio', 0):.2f}")
 
+    # v2.3: Divergence episodes
+    print(f"\n  Divergence episodes:")
+    for res in results:
+        ep = res.get("divergence_episode_count", 0)
+        mean_d = res.get("mean_divergence_duration", 0)
+        max_d = res.get("max_divergence_duration", 0)
+        print(f"    seed={res['seed']:>5}: episodes={ep} mean_dur={mean_d:.1f} max_dur={max_d}")
+
+    # v2.3: Local transitions and mismatch frequency
+    print(f"\n  Local transitions & mismatch frequency:")
+    for res in results:
+        trans = " ".join(
+            f"r{r}={res['regions'][f'r{r}'].get('local_transition_count', 0):>2}"
+            for r in range(N_REGIONS))
+        mismatch = " ".join(
+            f"r{r}={res['regions'][f'r{r}'].get('mismatch_frequency', 0):.2f}"
+            for r in range(N_REGIONS))
+        print(f"    seed={res['seed']:>5}: transitions=[{trans}]  mismatch=[{mismatch}]")
+
     # Write summary CSV
     rows = []
     for res in results:
@@ -594,8 +653,15 @@ def aggregate():
             row[f"r{r}_agree"] = rd["agree_frac"]
             row[f"r{r}_sw"] = rd["switches"]
             row[f"r{r}_max_streak"] = rd.get("max_continuous_windows", 0)
+            # v2.3
+            row[f"r{r}_transitions"] = rd.get("local_transition_count", 0)
+            row[f"r{r}_mismatch"] = rd.get("mismatch_frequency", 0)
         # v2.2: divergence
         row["divergence_ratio"] = res.get("divergence_ratio", 0)
+        # v2.3: episodes
+        row["div_episode_count"] = res.get("divergence_episode_count", 0)
+        row["div_mean_duration"] = res.get("mean_divergence_duration", 0)
+        row["div_max_duration"] = res.get("max_divergence_duration", 0)
         ie = res.get("inter_region", {})
         for pair_key, vals in ie.items():
             row[f"{pair_key}_count"] = vals["mean_count"]
@@ -642,7 +708,10 @@ def main():
         for pair_key, vals in ie.items():
             print(f"    {pair_key}: count={vals['mean_count']:.1f} "
                   f"weight={vals['mean_weight']:.4f}")
-        print(f"  divergence_ratio={res.get('divergence_ratio', 0):.2f}")
+        print(f"  divergence_ratio={res.get('divergence_ratio', 0):.2f} "
+              f"episodes={res.get('divergence_episode_count', 0)} "
+              f"mean_dur={res.get('mean_divergence_duration', 0):.1f} "
+              f"max_dur={res.get('max_divergence_duration', 0)}")
         print(f"  elapsed={res['elapsed']:.0f}s")
         print("  SANITY OK")
         return
@@ -680,11 +749,13 @@ def main():
         print(f"    global k*={result['global_dominant_k']} "
               f"sw={result['global_switches_per_100']} "
               f"div={result.get('divergence_ratio', 0):.2f} "
+              f"ep={result.get('divergence_episode_count', 0)} "
               f"({result['elapsed']:.0f}s)")
         for r in range(N_REGIONS):
             rd = result["regions"][f"r{r}"]
             print(f"      r{r}: k*={rd['dominant_k']} agree={rd['agree_frac']:.2f} "
-                  f"streak={rd.get('max_continuous_windows', 0)}")
+                  f"streak={rd.get('max_continuous_windows', 0)} "
+                  f"mm={rd.get('mismatch_frequency', 0):.2f}")
 
 
 if __name__ == "__main__":
