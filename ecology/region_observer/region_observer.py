@@ -81,13 +81,22 @@ ECO_PLB     = 0.007
 ECO_RATE    = 0.002
 ECO_SEEDS   = [42, 123, 456, 789, 2024,
                7, 13, 99, 314, 555, 777, 1001, 1234, 1999, 3000,
-               4321, 5555, 6789, 8888, 9999]
+               4321, 5555, 6789, 8888, 9999,
+               11, 22, 33, 44, 55, 66, 77, 88, 111, 222,
+               333, 444, 666, 888, 1111, 2222, 3333, 4444, 7777, 10000]
+# v2.6: perturbation rates
+PERTURB_RATES = [0.0018, 0.002, 0.0022]
+PERTURB_SEEDS = [42, 123, 456, 789, 2024, 7, 13, 99, 314, 555]
 GRID_ROWS   = 2
 GRID_COLS   = 2
 N_REGIONS   = GRID_ROWS * GRID_COLS   # 4
 MIN_C_NODES_FOR_VALID = 5             # below this, region flagged invalid
 
-OUTPUT_DIR  = Path("outputs")
+OUTPUT_DIR  = Path("outputs")  # overridden per rate in main()
+
+def output_dir_for_rate(rate):
+    """Rate-specific output directory."""
+    return Path("outputs") / f"rate_{rate:.4f}"
 
 
 # ================================================================
@@ -795,9 +804,127 @@ def aggregate():
 
 
 # ================================================================
+# v2.6: CROSS-RATE VALIDATION AGGREGATE
+# ================================================================
+def validate_aggregate():
+    """Cross-rate regime validation summary."""
+    print(f"\n{'='*80}")
+    print(f"  ESDE Ecology v2.6 — Regime Validation Summary")
+    print(f"{'='*80}")
+
+    all_results = {}  # {rate: [results]}
+    for rate_dir in sorted(Path("outputs").glob("rate_*")):
+        rate_str = rate_dir.name.replace("rate_", "")
+        rate_val = float(rate_str)
+        results = []
+        for f in sorted(rate_dir.glob("seed_*.json")):
+            if "_window" in f.name or "_inter" in f.name or "_switch" in f.name:
+                continue
+            with open(f) as fh:
+                results.append(json.load(fh))
+        if results:
+            all_results[rate_val] = results
+
+    if not all_results:
+        print("  No results found.")
+        return
+
+    # 1. Regime frequency per rate
+    print(f"\n  Regime frequency by rate:")
+    print(f"  {'rate':>8} | {'n':>3} | {'long_drift':>10} {'short_burst':>11} {'quiet':>5} {'mixed':>5}")
+    print(f"  {'-'*55}")
+    for rate in sorted(all_results):
+        results = all_results[rate]
+        n = len(results)
+        regimes = Counter(r.get("run_regime_label", "unknown") for r in results)
+        ld = regimes.get("long_drift", 0)
+        sb = regimes.get("short_burst", 0)
+        qu = regimes.get("quiet", 0)
+        mx = regimes.get("mixed", 0)
+        print(f"  {rate:>8.4f} | {n:>3} | {ld:>5} ({ld/n*100:>3.0f}%) "
+              f"{sb:>5} ({sb/n*100:>3.0f}%) "
+              f"{qu:>3} ({qu/n*100:>3.0f}%) "
+              f"{mx:>3} ({mx/n*100:>3.0f}%)")
+
+    # 2. Global k* distribution per rate
+    print(f"\n  Global k* distribution by rate:")
+    for rate in sorted(all_results):
+        results = all_results[rate]
+        kd = Counter(r["global_dominant_k"] for r in results)
+        dist = ", ".join(f"k={k}:{v}" for k, v in sorted(kd.items()))
+        print(f"    rate={rate:.4f}: {dist}")
+
+    # 3. Divergence statistics per rate
+    print(f"\n  Divergence statistics by rate:")
+    print(f"  {'rate':>8} | {'mean_div%':>9} {'mean_ep':>7} {'mean_dur':>8} {'mean_conc':>9}")
+    print(f"  {'-'*50}")
+    for rate in sorted(all_results):
+        results = all_results[rate]
+        div_ratios = [r.get("divergence_ratio", 0) for r in results]
+        ep_counts = [r.get("divergence_episode_count", 0) for r in results]
+        mean_durs = [r.get("mean_divergence_duration", 0) for r in results]
+        concs = [r.get("mismatch_concentration", 0) for r in results]
+        print(f"  {rate:>8.4f} | {np.mean(div_ratios):>8.2f}% "
+              f"{np.mean(ep_counts):>7.1f} "
+              f"{np.mean(mean_durs):>8.1f} "
+              f"{np.mean(concs):>9.2f}")
+
+    # 4. Geographic bias (baseline only)
+    baseline_rate = 0.002
+    if baseline_rate in all_results:
+        results = all_results[baseline_rate]
+        print(f"\n  Geographic instability (rate={baseline_rate}, n={len(results)}):")
+        flip_sums = {r: [] for r in range(N_REGIONS)}
+        mu_counts = Counter()
+        lu_counts = Counter()
+        for res in results:
+            for r in range(N_REGIONS):
+                fr = res["regions"][f"r{r}"].get("flip_rate", 0)
+                flip_sums[r].append(fr)
+            mu_counts[res.get("most_unstable_region", -1)] += 1
+            lu_counts[res.get("least_unstable_region", -1)] += 1
+
+        for r in range(N_REGIONS):
+            mean_fr = np.mean(flip_sums[r])
+            mu_pct = mu_counts.get(r, 0) / len(results) * 100
+            lu_pct = lu_counts.get(r, 0) / len(results) * 100
+            print(f"    r{r}: mean_flip={mean_fr:.3f}  "
+                  f"most_unstable={mu_pct:.0f}%  "
+                  f"least_unstable={lu_pct:.0f}%")
+
+    # 5. Write cross-rate CSV
+    rows = []
+    for rate in sorted(all_results):
+        results = all_results[rate]
+        regimes = Counter(r.get("run_regime_label", "unknown") for r in results)
+        n = len(results)
+        rows.append({
+            "rate": rate,
+            "n_seeds": n,
+            "long_drift": regimes.get("long_drift", 0),
+            "long_drift_pct": round(regimes.get("long_drift", 0) / n * 100, 1),
+            "short_burst": regimes.get("short_burst", 0),
+            "short_burst_pct": round(regimes.get("short_burst", 0) / n * 100, 1),
+            "quiet": regimes.get("quiet", 0),
+            "mixed": regimes.get("mixed", 0),
+            "mean_div_ratio": round(np.mean([r.get("divergence_ratio", 0) for r in results]), 4),
+            "mean_episodes": round(np.mean([r.get("divergence_episode_count", 0) for r in results]), 2),
+            "mean_concentration": round(np.mean([r.get("mismatch_concentration", 0) for r in results]), 4),
+        })
+
+    out_path = Path("outputs") / "validation_summary.csv"
+    with open(out_path, "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=rows[0].keys())
+        w.writeheader()
+        w.writerows(rows)
+    print(f"\n  Cross-rate summary: {out_path}")
+
+
+# ================================================================
 # MAIN
 # ================================================================
 def main():
+    global OUTPUT_DIR
     parser = argparse.ArgumentParser(
         description="ESDE Ecology — Region-wise Observer")
     parser.add_argument("--seed", type=int, default=None)
@@ -806,9 +933,12 @@ def main():
     parser.add_argument("--rate", type=float, default=ECO_RATE)
     parser.add_argument("--quiet-steps", type=int, default=QUIET_STEPS)
     parser.add_argument("--aggregate", action="store_true")
+    parser.add_argument("--validate", action="store_true")
     parser.add_argument("--sanity", action="store_true")
     args = parser.parse_args()
 
+    # v2.6: rate-specific output directory
+    OUTPUT_DIR = output_dir_for_rate(args.rate)
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     if args.sanity:
@@ -837,6 +967,10 @@ def main():
 
     if args.aggregate:
         aggregate()
+        return
+
+    if args.validate:
+        validate_aggregate()
         return
 
     # Run mode
