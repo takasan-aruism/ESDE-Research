@@ -46,7 +46,6 @@ USAGE
 import numpy as np
 import sys; from pathlib import Path as _P  # noqa
 sys.path.insert(0, str(_P(__file__).resolve().parent.parent / "engine"))
-import engine_accel
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -80,7 +79,9 @@ from v19g_canon import (
 ECO_N       = 5000
 ECO_PLB     = 0.007
 ECO_RATE    = 0.002
-ECO_SEEDS   = [42, 123, 456, 789, 2024]
+ECO_SEEDS   = [42, 123, 456, 789, 2024,
+               7, 13, 99, 314, 555, 777, 1001, 1234, 1999, 3000,
+               4321, 5555, 6789, 8888, 9999]
 GRID_ROWS   = 2
 GRID_COLS   = 2
 N_REGIONS   = GRID_ROWS * GRID_COLS   # 4
@@ -548,6 +549,30 @@ def run_ecology(seed, N=ECO_N, plb=ECO_PLB, rate=ECO_RATE,
         mismatch_states[state_tuple] += 1
     top_mismatch_states = mismatch_states.most_common(3)
 
+    # v2.5: regime labeling (rule-based, priority: long_drift > short_burst > quiet)
+    total_div_windows = sum(div_flags)
+    if long_divergence_count >= 1:
+        run_regime_label = "long_drift"
+    elif short_divergence_count >= 2:
+        run_regime_label = "short_burst"
+    elif total_div_windows <= 2:
+        run_regime_label = "quiet"
+    else:
+        run_regime_label = "mixed"
+
+    # v2.5: region instability ranking (by flip_rate)
+    flip_rates = {r: region_summary[f"r{r}"].get("flip_rate", 0) for r in range(N_REGIONS)}
+    sorted_by_flip = sorted(flip_rates.items(), key=lambda x: -x[1])
+    most_unstable_region = sorted_by_flip[0][0]
+    least_unstable_region = sorted_by_flip[-1][0]
+
+    # v2.5: mismatch concentration (top1 frequency / total divergence windows)
+    if total_div_windows > 0 and top_mismatch_states:
+        top1_count = top_mismatch_states[0][1]
+        mismatch_concentration = round(top1_count / total_div_windows, 4)
+    else:
+        mismatch_concentration = 0
+
     # Mean inter-region edge counts
     inter_means = {}
     for r1 in range(N_REGIONS):
@@ -588,6 +613,11 @@ def run_ecology(seed, N=ECO_N, plb=ECO_PLB, rate=ECO_RATE,
             {"state": f"g{s[0]}_r{s[1]}{s[2]}{s[3]}{s[4]}", "count": c}
             for s, c in top_mismatch_states
         ],
+        # v2.5: regime consolidation
+        "run_regime_label": run_regime_label,
+        "most_unstable_region": most_unstable_region,
+        "least_unstable_region": least_unstable_region,
+        "mismatch_concentration": mismatch_concentration,
         # Runtime
         "elapsed": round(elapsed, 1),
     }
@@ -695,6 +725,19 @@ def aggregate():
             states_str = "(no divergence)"
         print(f"    seed={res['seed']:>5}: {states_str}")
 
+    # v2.5: Regime labels
+    print(f"\n  Run regime labels:")
+    regime_counts = Counter()
+    for res in results:
+        label = res.get("run_regime_label", "unknown")
+        regime_counts[label] += 1
+        mu = res.get("most_unstable_region", "-")
+        lu = res.get("least_unstable_region", "-")
+        mc = res.get("mismatch_concentration", 0)
+        print(f"    seed={res['seed']:>5}: {label:<12} "
+              f"unstable=r{mu} stable=r{lu} concentration={mc:.2f}")
+    print(f"  Regime distribution: {dict(regime_counts)}")
+
     # Write summary CSV
     rows = []
     for res in results:
@@ -733,6 +776,11 @@ def aggregate():
             else:
                 row[f"top_mm_{i+1}_state"] = ""
                 row[f"top_mm_{i+1}_count"] = 0
+        # v2.5: regime consolidation
+        row["regime"] = res.get("run_regime_label", "")
+        row["most_unstable"] = res.get("most_unstable_region", "")
+        row["least_unstable"] = res.get("least_unstable_region", "")
+        row["mm_concentration"] = res.get("mismatch_concentration", 0)
         ie = res.get("inter_region", {})
         for pair_key, vals in ie.items():
             row[f"{pair_key}_count"] = vals["mean_count"]
