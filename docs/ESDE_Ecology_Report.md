@@ -1,7 +1,7 @@
 # ESDE Ecology: Observer Interaction — Experiment Report
 
 *Phase: Ecology (v2.1 – v2.6)*
-*Status: IN PROGRESS (v2.6 regime validation running)*
+*Status: COMPLETE*
 *Team: Gemini (Architect) / GPT (Audit) / Claude (Implementation)*
 *Started: March 9, 2026*
 *Last updated: March 10, 2026*
@@ -152,13 +152,31 @@ Mismatch concentration range: 0.17–0.67. High-concentration seeds (>0.5) are d
 
 ---
 
-## Ecology v2.6 — Regime Validation (IN PROGRESS)
+## Ecology v2.6 — Regime Validation
 
 **Question:** Are regime types stable across larger seed sets and mild parameter perturbation?
 
-**Method:** Expand baseline to 40 seeds at rate=0.002. Add 10 seeds each at rate=0.0018 and rate=0.0022. Compare regime distributions, divergence statistics, and geographic bias across rates.
+**Method:** Expand baseline to 40 seeds at rate=0.002. Add 10 seeds each at rate=0.0018 and rate=0.0022. Compare regime distributions, divergence statistics, and observer concentration across rates. Total: 60 seeds across 3 rate conditions.
 
-**Status:** Running. 10/40 baseline seeds complete. Perturbation runs pending. Results expected within ~12 hours.
+**Results (60 seeds, 3 rates):**
+
+| rate | n_seeds | long_drift | long_drift% | short_burst | short_burst% | quiet | mixed | mean_div_ratio | mean_episodes | mean_concentration |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 0.0018 | 10 | 8 | 80.0 | 2 | 20.0 | 0 | 0 | 0.672 | 2.20 | 0.3989 |
+| 0.0020 | 40 | 31 | 77.5 | 7 | 17.5 | 1 | 1 | 0.553 | 2.42 | 0.3898 |
+| 0.0022 | 10 | 7 | 70.0 | 3 | 30.0 | 0 | 0 | 0.544 | 2.30 | 0.3670 |
+
+Global observer: k* converges to 4 across all rates (mean global_k = 3.8, median = 4.0, max = 4). Mean switching rate: 7.7 per 100 windows. Mean divergence episodes: 2.2 per run.
+
+**Findings:**
+
+*Regime distributions are stable under rate perturbation.* long_drift dominates at all three rates (70–80%), with short_burst as the minority regime (17.5–30%). The ratio is consistent with v2.5's 80/20 split at 20 seeds. Neither quiet nor mixed regimes appear in meaningful numbers (1 quiet and 1 mixed across 40 baseline seeds). The regime structure identified at v2.5 is not an artifact of a single rate value.
+
+*Divergence intensity scales with lower rate.* Mean divergence ratio increases from 0.544 at rate=0.0022 to 0.672 at rate=0.0018. This is consistent with Genesis findings: lower rate produces a more marginal observer regime with more frequent global-local disagreement.
+
+*Observer concentration is distributed, not monopolized.* Mean concentration index ≈ 0.39 across all rates. Observer attention is not dominated by a single region. The ecology remains spatially distributed under perturbation.
+
+*Global k*=4 is robust across rates.* The observer equilibrium at k≈4 is maintained across the tested rate band [0.0018, 0.0022]. Switching remains present but bounded (mean 7.7/100 windows), indicating a metastable regime rather than a frozen attractor.
 
 ---
 
@@ -176,7 +194,7 @@ Combined effect: N=5000 quiet_steps=5000 run time reduced from ~2.5 hours to ~1.
 
 ## What This Demonstrates
 
-The system does not contain one observer — it contains multiple regional observers whose aggregate creates the appearance of a single, less certain global view. Ecology v2.1–v2.5 progressively established:
+The system does not contain one observer — it contains multiple regional observers whose aggregate creates the appearance of a single, less certain global view. Ecology v2.1–v2.6 progressively established:
 
 1. **Local observers are more stable than the global observer** (v2.1: seed 456 global=k3 while all regions=k4)
 2. **Local observer regions persist for extended periods** (v2.2: streaks up to 24/25 windows)
@@ -186,12 +204,12 @@ The system does not contain one observer — it contains multiple regional obser
 6. **The dominant mismatch pattern is "global wrong, locals right"** (v2.4: g3_r4444 is the most common divergence state)
 7. **The system has a dominant regime** (v2.5: 80% long_drift across 20 seeds)
 8. **Spatial asymmetry is a small-sample artifact** (v2.5: instability uniformly distributed across regions at 20 seeds)
+9. **Regime structure is robust under rate perturbation** (v2.6: 70–80% long_drift across 60 seeds at 3 rates; observer concentration distributed; k*=4 stable)
 
 ---
 
 ## What It Does Not Demonstrate
 
-- Whether regime distributions are robust under parameter perturbation (→ v2.6 in progress)
 - Whether finer partitions (4×4, 8×8) reveal hierarchical observer structure
 - Whether regional divergence events are causally linked to island dynamics
 - Whether observer competition or dominance produces lasting spatial patterns
@@ -201,11 +219,10 @@ The system does not contain one observer — it contains multiple regional obser
 
 ## Open Questions
 
-- Are long_drift and short_burst regimes stable under mild rate perturbation?
-- Does regime balance shift predictably with noise level?
 - At finer partition, do sub-regional observers emerge recursively?
 - Can divergence episodes be predicted from early-window indicators?
 - Is there a relationship between mismatch concentration and system-level stability?
+- Does the long_drift/short_burst ratio shift predictably at rate values outside [0.0018, 0.0022]?
 
 ---
 
@@ -218,8 +235,8 @@ The system does not contain one observer — it contains multiple regional obser
 | Eco v2.3 | 2026-03-09 | Gemini→GPT→Claude (Ryzen) | Temporal interaction (5 seeds) | **Discrete episodes; mismatch frequency varies by region** |
 | Eco v2.4 | 2026-03-09 | Gemini→GPT→Claude (Ryzen) | Event classification (5 seeds) | **Short-burst + long-drift; g3_r4444 dominant pattern** |
 | Eco v2.5 | 2026-03-09 | Gemini→GPT→Claude (Ryzen) | Regime consolidation (20 seeds) | **80% long_drift; spatial asymmetry disappears at scale** |
-| Eco v2.6 | 2026-03-10 | Gemini→GPT→Claude (Ryzen) | Regime validation (60 seeds, 3 rates) | *In progress* |
+| Eco v2.6 | 2026-03-10 | Gemini→GPT→Claude (Ryzen) | Regime validation (60 seeds, 3 rates) | **70–80% long_drift stable across rates; k*=4 robust; concentration distributed** |
 
 ---
 
-*Ecology has answered its first question decisively: the observer is plural. The system contains multiple regional observers that are individually more stable than their global aggregate. Divergence between local and global observation is the default state, appearing in discrete temporal episodes that fall into two classes. 80% of runs exhibit at least one sustained divergence episode. The dominant pattern during divergence is "the global observer is wrong and all local observers agree on the correct answer." The next question — whether this structure is robust under perturbation — is being tested now.*
+*Ecology has answered its question decisively: the observer is plural. The system contains multiple regional observers that are individually more stable than their global aggregate. Divergence between local and global observation is the default state, appearing in discrete temporal episodes that fall into two classes. 70–80% of runs exhibit at least one sustained divergence episode, and this ratio is stable under mild rate perturbation across 60 seeds. The dominant pattern during divergence is "the global observer is wrong and all local observers agree on the correct answer." The observer ecology is a stable, distributed, metastable regime — not a static consensus.*
