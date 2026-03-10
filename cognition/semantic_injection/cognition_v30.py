@@ -477,11 +477,15 @@ def run_cognition(seed, N=COG_N, plb=COG_PLB, rate=COG_RATE,
                 new_k_g = select_k_star(j_scores_g, current_k_global)
                 if current_k_global is not None and new_k_g != current_k_global:
                     switch_events.append(SwitchEvent(
-                        window=win_idx, old_k=current_k_global,
-                        new_k=new_k_g, n_C=n_C,
+                        seed=seed, N=N, window=win_idx,
+                        step=(step + 1),
+                        prev_k=current_k_global, new_k=new_k_g,
                         margin=round(j_scores_g.get(new_k_g, 0)
                                      - j_scores_g.get(current_k_global, 0), 6),
-                        cause="observer"))
+                        threshold=HYST_THRESHOLD,
+                        j3=round(j_scores_g.get(3, 0), 6),
+                        j4=round(j_scores_g.get(4, 0), 6),
+                        h3=0.0, h4=0.0))
                 current_k_global = new_k_g
                 k_star_seq.append(new_k_g)
                 margin = max(j_scores_g.values()) - sorted(
