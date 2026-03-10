@@ -1,0 +1,49 @@
+{
+  "N": 5000,
+  "seed": 63,
+  "plb": 0.007,
+  "rate": 0.002,
+  "quiet_steps": 5000,
+  "n_windows": 25,
+  "n_concepts": 2,
+  "concept_zone_sizes": {
+    "0": 1704,
+    "-1": 1686,
+    "1": 1610
+  },
+  "global_dominant_k": 4,
+  "global_dom_frac": 0.8,
+  "global_switches_per_100": 25.0,
+  "global_mean_n_C": 159.0,
+  "global_mean_none_ratio": 0.9342,
+  "divergence_ratio": 0.8,
+  "divergence_episode_count": 1,
+  "run_regime_label": "long_drift",
+  "concept_summary": {
+    "A": {
+      "persistence_frac": 0.04,
+      "max_streak": 1,
+      "mean_islands": 0.04,
+      "mean_nodes_in_isl": 0.0
+    },
+    "B": {
+      "persistence_frac": 0.12,
+      "max_streak": 2,
+      "mean_islands": 0.12,
+      "mean_nodes_in_isl": 0.2
+    }
+  },
+  "mean_boundary_links": 678.3,
+  "mean_boundary_weight": 18.6327,
+  "mean_concept_entropy": 1.5226,
+  "observer_concept_dominant": {
+    "r0": "A",
+    "r1": "B",
+    "r2": "A",
+    "r3": "B"
+  },
+  "merge_count": 0,
+  "split_count": 0,
+  "corr_divergence_entropy": 0.0119,
+  "elapsed": 9303.0
+}
