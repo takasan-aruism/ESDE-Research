@@ -230,11 +230,6 @@ def run_ecology(seed, N=ECO_N, plb=ECO_PLB, rate=ECO_RATE,
     current_k_region = {r: None for r in range(N_REGIONS)}
     region_k_seqs = {r: [] for r in range(N_REGIONS)}
 
-    # ETA tracking
-    _eta_t0 = time.time()
-    _eta_last_window = 0
-    _eta_total_windows = quiet_steps // WINDOW
-
     # Per-window logs
     window_logs = []
     inter_region_logs = []
@@ -293,19 +288,6 @@ def run_ecology(seed, N=ECO_N, plb=ECO_PLB, rate=ECO_RATE,
         # ============================================================
         if (step + 1) % WINDOW == 0:
             win_idx = (step + 1) // WINDOW
-
-            # ETA display
-            _eta_elapsed = time.time() - _eta_t0
-            _eta_last_window = win_idx
-            if _eta_last_window > 0:
-                _eta_per_win = _eta_elapsed / _eta_last_window
-                _eta_remaining = _eta_per_win * (_eta_total_windows - _eta_last_window)
-                _eta_total_est = _eta_per_win * _eta_total_windows
-                if win_idx % 5 == 0 or win_idx == _eta_total_windows:
-                    print(f"    window {win_idx}/{_eta_total_windows}  "
-                          f"elapsed={_eta_elapsed:.0f}s  "
-                          f"ETA={_eta_remaining:.0f}s  "
-                          f"total~{_eta_total_est:.0f}s", flush=True)
 
             # --- Island detection (canonical) ---
             isl_s = find_islands_sets(state, 0.30)
