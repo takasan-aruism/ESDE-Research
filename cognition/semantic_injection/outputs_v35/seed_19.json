@@ -1,0 +1,53 @@
+{
+  "N": 5000,
+  "seed": 19,
+  "dampen_factor": 0.95,
+  "quiet_steps": 5000,
+  "n_windows": 25,
+  "global_dominant_k": 4,
+  "global_sw100": 37.5,
+  "divergence_ratio": 0.36,
+  "concept_summary": {
+    "A": {
+      "persist": 0.04,
+      "max_streak": 1,
+      "mean_isl": 0.04
+    },
+    "B": {
+      "persist": 0.08,
+      "max_streak": 1,
+      "mean_isl": 0.08
+    },
+    "C": {
+      "persist": 0.04,
+      "max_streak": 1,
+      "mean_isl": 0.04
+    }
+  },
+  "mean_entropy": 1.5254,
+  "observer_dominant": {
+    "r0": "A",
+    "r1": "B",
+    "r2": "A",
+    "r3": "B"
+  },
+  "merge_count": 0,
+  "split_count": 0,
+  "total_tripartite": 1,
+  "mean_tripartite": 0.04,
+  "total_diffusion": 70266,
+  "flow_AC": 24067,
+  "flow_BC": 23089,
+  "flow_AB": 23110,
+  "mediation_ratio": 2.0405,
+  "mean_bridges": 3.8,
+  "mean_persist_bridges": 0.0,
+  "mean_bridge_life": 0.84,
+  "max_bridge_life": 1,
+  "mean_bridges_AC": 1.2,
+  "mean_bridges_BC": 1.6,
+  "mean_bridges_AB": 0.9,
+  "total_tension_events": 88787,
+  "retention_gain": -0.16,
+  "elapsed": 5887.3
+}
