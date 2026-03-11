@@ -4,7 +4,7 @@
 
 *Project: ESDE (Endogenous Stochastic Differential Equation) Framework*
 *Team: Gemini (Architect) / GPT (Audit) / Claude (Implementation)*
-*Last updated: March 9, 2026*
+*Last updated: March 11, 2026*
 
 ---
 
@@ -39,9 +39,9 @@ The project progresses through stages, each building on the last:
 ```
 Genesis  — Can an observer emerge? (COMPLETE)
   ↓
-Ecology  — How do multiple observers interact? (IN PROGRESS)
+Ecology  — How do multiple observers interact? (COMPLETE)
   ↓
-Concept  — Can observers form shared representations? (FUTURE)
+Cognition — Can semantic structure emerge as topology? (IN PROGRESS)
   ↓
 Language — Can structural concepts become communicable? (FUTURE)
 ```
@@ -90,37 +90,38 @@ Scale N=10000     rate=0.002: 100% agree; rate=0.001: 70% (marginal regime)
 Eco v2.1  Region Observer    2x2 partition; local k* more stable than global
 Eco v2.2  Temporal Tracking  Persistence streaks, divergence ratio 40–68%
           engine_accel       link_strength_sum O(N)→O(deg); 1.8–3.7× speedup
+Eco v2.3  Temporal Interaction  Discrete episodes; mismatch frequency varies by region
+Eco v2.4  Event Classification  Short-burst + long-drift; g3_r4444 dominant
+Eco v2.5  Regime Consolidation  80% long_drift; spatial asymmetry disappears at scale
+Eco v2.6  Regime Validation     70–80% long_drift across 60 seeds, 3 rates
+═══ ECOLOGY COMPLETE ═══
+─── cognition (semantic injection + observation) ───
+Cog v3.0  Semantic Injection    2 concepts (A/B) via phase + spatial; ecology preserved
+Cog v3.1  Persistence Valid.    100 seeds: checkerboard 100%; merge=0; domains static
+Cog v3.2  Interaction Activ.    Boundary diffusion ~27k events; entropy stable; no merge
+Cog v3.3  Concept Attraction    Bridge max_life=1; flow symmetric; A↔B impossible
+Cog v3.4  Concept Mediation     Mediator C; tripartite loops 85% seeds; bridges transient
 ```
 
-Each layer addresses a specific structural barrier identified by observation. No layer was added speculatively — every addition was driven by a measured failure mode.
+Each layer addresses a specific structural barrier identified by observation.
 
 ---
 
 ## What the System Does Now
 
-Starting from 200 disconnected, empty nodes:
+Starting from 5000 disconnected, empty nodes:
 
 1. **Injection** floods the system with energy and random connections
 2. **Resonance** identifies closed loops and protects their links from decay
 3. **Phase dynamics** synchronize oscillators within loops
 4. **Chemistry** converts compatible neighbors into compounds when energy, topology, and phase align
 5. **Decay** destroys everything that isn't topologically protected
-6. When injection stops and the **quiet phase** begins:
-   - Links decay but are continuously reborn from the **latent field**, modulated by local fertility
-   - Newborn links participate in loops and **grow stronger** by consuming latent potential
-   - Some links reach reaction threshold (S > 0.3), with peak observed strength of 0.74
-   - Background micro-injection seeds A/B states, biased toward active growth zones
-   - **Boundary intrusion** gradually shifts connectivity across island borders
-   - When a strong link connects an A/B node to a C node with sufficient energy and phase sync, **reactions occur**
-   - C nodes eventually decay back to Dust, releasing energy
-   - Dust nodes get re-seeded, re-linked, and react again
-   - **Individual nodes complete full transformation cycles**: C → Dust → A → C
-   - Multiple **active islands** coexist (mean 1.8, up to 9 simultaneously)
-   - **58% of cycles involve structural context drift** — a node begins its cycle in one topological environment and completes it in another
-
-The system metabolizes, coexists in parallel domains, and **differentiates** — not by having different chemical reactions, but by executing the same reactions in structurally distinct environments. There are 2 chemical elements but 27 observed structural cycle signatures.
-
-The system also **selects its own observation resolution.** An Axiom X postprocessor with hysteresis (T=0.01) evaluates 5 levels of structural context labeling per window and commits to the resolution that maximizes diversity without over-fragmenting. The observer universally selects **k=4** (resonance position + boundary status + island scale + intrusion exposure) as the optimal resolution.
+6. In the **quiet phase**, the system self-sustains through latent field link birth, auto-growth, and boundary intrusion
+7. Multiple **active islands** coexist, running independent metabolic cycles
+8. A **multi-scale observer** (k*=4) emerges and persists from N=200 to N=10,000
+9. **Regional observers** are more stable than the global aggregate; divergence is the default state
+10. **Semantic concept domains** (A/B) can be injected via phase coherence and spatial localization without breaking the observer ecology
+11. A **mediator concept** (C) enables multi-concept structures (tripartite loops) that direct A↔B contact cannot produce
 
 ---
 
@@ -132,9 +133,14 @@ The system also **selects its own observation resolution.** An Axiom X postproce
 4. **The observer resolution converges to a stable fixed point** — k=4 is universally preferred, confirmed by hysteresis stabilization (v1.9g)
 5. **Observer physics is scale-stable** — k=4 persists from N=200 to N=10,000; rate=0.002 achieves 100% agreement at largest scale (Scale expansion)
 6. **Genesis is complete** — all five completion criteria satisfied (Genesis completion)
-7. **The global observer is a lossy compression** of richer local structure — regional observers are more stable than their aggregate, and divergence is the default state (Ecology)
+7. **The global observer is a lossy compression** of richer local structure — regional observers are more stable than their aggregate, and divergence is the default state (Ecology v2.1–v2.6)
+8. **Ecology is complete** — observer plurality, regime structure, and rate robustness validated across 60 seeds (Ecology v2.6)
+9. **Semantic structure co-exists with observer physics** — concept injection preserves k*=4 and divergence regime (Cognition v3.0)
+10. **Concept spatial identity is universal** — checkerboard observer-concept mapping in 100/100 seeds (Cognition v3.1)
+11. **Direct cross-concept connection is physically prevented** — phase mismatch (cos(Δθ)≈0) kills bridges within 1 window (Cognition v3.3)
+12. **A phase mediator enables multi-concept structures** — tripartite loops in 85% of seeds; mediation-ratio=2.04 (Cognition v3.4)
 
-Detailed experimental data is in the phase-specific reports: **ESDE_Genesis_Report.md** and **ESDE_Ecology_Report.md**.
+Detailed experimental data is in the phase-specific reports: **ESDE_Genesis_Report.md**, **ESDE_Ecology_Report.md**, and **ESDE_Cognition_Report.md**.
 
 ---
 
@@ -142,6 +148,6 @@ Detailed experimental data is in the phase-specific reports: **ESDE_Genesis_Repo
 
 - Explainability over complexity: ontological additions reduce, not increase, explanatory power
 - Minimum viable change: observe → diagnose → minimal change → re-verify
-- No research jumps: Genesis → Ecology → Concept → Language, in order
+- No research jumps: Genesis → Ecology → Cognition → Language, in order
 - Null results are valid scientific findings
 - AI agents do not defer to each other; facts and observations take precedence
