@@ -1,0 +1,56 @@
+{
+  "N": 5000,
+  "seed": 5,
+  "quiet_steps": 5000,
+  "n_windows": 25,
+  "global_dominant_k": 4,
+  "global_sw100": 37.5,
+  "divergence_ratio": 0.48,
+  "concept_summary": {
+    "A": {
+      "persist": 0.08,
+      "max_streak": 1,
+      "mean_isl": 0.08
+    },
+    "B": {
+      "persist": 0.04,
+      "max_streak": 1,
+      "mean_isl": 0.04
+    },
+    "C": {
+      "persist": 0.04,
+      "max_streak": 1,
+      "mean_isl": 0.04
+    }
+  },
+  "mean_entropy": 1.5407,
+  "observer_dominant": {
+    "r0": "A",
+    "r1": "B",
+    "r2": "A",
+    "r3": "B"
+  },
+  "total_tripartite": 2,
+  "total_diffusion": 70493,
+  "flow_AC": 24541,
+  "flow_BC": 22717,
+  "flow_AB": 23235,
+  "mediation_ratio": 2.0339,
+  "depth_hist": {
+    "1": 0,
+    "2": 52820,
+    "3": 17673
+  },
+  "depth_pct": {
+    "1": 0.0,
+    "2": 74.9,
+    "3": 25.1
+  },
+  "mean_penetration_depth": 2.251,
+  "transport_chains": 16,
+  "mean_svi": 0.0574,
+  "mean_bridges": 5.2,
+  "mean_persist_bridges": 0.0,
+  "max_bridge_life": 1,
+  "elapsed": 6882.7
+}
