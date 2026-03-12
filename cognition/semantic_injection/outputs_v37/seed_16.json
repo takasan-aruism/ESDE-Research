@@ -1,0 +1,111 @@
+{
+  "N": 5000,
+  "seed": 16,
+  "quiet_steps": 5000,
+  "n_windows": 25,
+  "global_dominant_k": 4,
+  "global_sw100": 50.0,
+  "divergence_ratio": 0.6,
+  "concept_summary": {
+    "A": {
+      "persist": 0.0,
+      "max_streak": 0
+    },
+    "B": {
+      "persist": 0.04,
+      "max_streak": 1
+    },
+    "C": {
+      "persist": 0.04,
+      "max_streak": 1
+    }
+  },
+  "mean_entropy": 1.5651,
+  "total_tripartite": 0,
+  "total_diffusion": 70148,
+  "flow_AC": 24394,
+  "flow_BC": 22784,
+  "flow_AB": 22970,
+  "mediation_ratio": 2.0539,
+  "depth_hist": {
+    "2": 52728,
+    "3": 13178,
+    "4": 3071,
+    "5": 797,
+    "6": 222,
+    "7": 65,
+    "8": 36,
+    "9": 21,
+    "10": 7,
+    "11": 23
+  },
+  "depth_pct": {
+    "2": 75.17,
+    "3": 18.79,
+    "4": 4.38,
+    "5": 1.14,
+    "6": 0.32,
+    "7": 0.09,
+    "8": 0.05,
+    "9": 0.03,
+    "10": 0.01,
+    "11": 0.03
+  },
+  "mean_penetration_depth": 2.336,
+  "transport_chains": 23,
+  "mean_bridges": 4.5,
+  "max_bridge_life": 1,
+  "erosion_summary": {
+    "A": {
+      "drift_boundary": 1.581969,
+      "drift_near_core": 1.541052,
+      "drift_deep_core": 1.574395,
+      "erosion_depth": 4,
+      "core_preservation": 0.0,
+      "boundary_k_mean": 1.91
+    },
+    "B": {
+      "drift_boundary": 1.552617,
+      "drift_near_core": 1.577608,
+      "drift_deep_core": 1.222957,
+      "erosion_depth": 5,
+      "core_preservation": 0.2,
+      "boundary_k_mean": 1.88
+    },
+    "C": {
+      "drift_boundary": 1.594235,
+      "drift_near_core": 1.563054,
+      "drift_deep_core": 1.505959,
+      "erosion_depth": 4,
+      "core_preservation": 0.0,
+      "boundary_k_mean": 1.9
+    }
+  },
+  "drift_progression": {
+    "A": {
+      "bnd_first": 1.580228,
+      "bnd_last": 1.609995,
+      "bnd_delta": 0.029767,
+      "deep_first": 2.286061,
+      "deep_last": 1.77156,
+      "deep_delta": -0.514501
+    },
+    "B": {
+      "bnd_first": 1.521674,
+      "bnd_last": 1.54895,
+      "bnd_delta": 0.027276,
+      "deep_first": 0.764081,
+      "deep_last": 1.368994,
+      "deep_delta": 0.604913
+    },
+    "C": {
+      "bnd_first": 1.605482,
+      "bnd_last": 1.566607,
+      "bnd_delta": -0.038875,
+      "deep_first": 0,
+      "deep_last": 1.273529,
+      "deep_delta": 1.273529
+    }
+  },
+  "elapsed": 6913.9
+}
