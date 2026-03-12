@@ -430,7 +430,7 @@ def run_cognition(seed, N=COG_N, plb=COG_PLB, rate=COG_RATE,
         for cn in ["A","B","C"] if erosion_summary.get(cn))
     entropy_collapsed = ent_dev_from_baseline > COLLAPSE_ENTROPY_DEV
     k_collapsed = dk != 4
-    collapse_flag = all_core_gone and (entropy_collapsed or k_collapsed)
+    collapse_flag = bool(all_core_gone and (entropy_collapsed or k_collapsed))
 
     # Depth distribution
     dep_total=sum(tot_depth.values())
@@ -446,7 +446,7 @@ def run_cognition(seed, N=COG_N, plb=COG_PLB, rate=COG_RATE,
         "mean_penetration_depth":mean_dep,
         "erosion_summary":erosion_summary,
         "collapse_flag":collapse_flag,
-        "collapse_detail":{"core_gone":all_core_gone,"entropy_dev":entropy_collapsed,"k_shift":k_collapsed},
+        "collapse_detail":{"core_gone":bool(all_core_gone),"entropy_dev":bool(entropy_collapsed),"k_shift":bool(k_collapsed)},
         "elapsed":round(elapsed,1),
     }
     return result, wlogs, clogs, [asdict(se) for se in sw_ev]
