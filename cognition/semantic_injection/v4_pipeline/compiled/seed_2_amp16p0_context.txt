@@ -1,0 +1,61 @@
+=== ESDE CORE STATE (window 25/25, amp=16.0x, seed=2) ===
+
+CUMULATIVE: k*=4 now. 5 switch(es): w4: 1->4, w5: 4->1, w6: 1->4, w17: 4->1, w18: 1->4. Entropy: 1.5524 mean, range 0.1384. Erosion max: A=5, B=4, C=4. Divergence: 4/25 windows (16%). Surviving cores: B.
+
+RECENT HISTORY (last 5 windows):
+  w21: k*=4 | div=0 | ent=1.5367 v | erosion A=3 B=3 C=3 | core_pres A=0.12 B=0.00 C=0.20 | tri=0 | [DEEP_CORE] fragments A:8 B:3 C:5
+  w22: k*=4 | div=0 | ent=1.5622 ^ | erosion A=4 B=3 C=3 | core_pres A=0.00 B=0.00 C=0.00 | tri=0 | [DEEP_CORE] fragments A:5 B:4 C:0 | [EROSION_ADVANCE] A: 3->4 [CORE_DISSOLVED] A [CORE_DISSOLVED] C
+  w23: k*=4 | div=0 | ent=1.5160 v | erosion A=3 B=4 C=3 | core_pres A=0.00 B=0.00 C=0.00 | tri=0 | [DEEP_CORE] fragments A:0 B:8 C:4 | [EROSION_ADVANCE] B: 3->4 [ENTROPY_SPIKE] delta=-0.0462
+  w24: k*=4 | div=0 | ent=1.5832 ^ | erosion A=3 B=3 C=2 | core_pres A=0.00 B=0.00 C=1.00 | tri=0 | [DEEP_CORE] fragments A:3 B:5 C:0 | [ENTROPY_SPIKE] delta=+0.0672
+  w25: k*=4 | div=0 | ent=1.5722 v | erosion A=4 B=2 C=3 | core_pres A=0.00 B=1.00 C=0.00 | tri=0 | [DEEP_CORE] fragments A:5 B:0 C:4 | [EROSION_ADVANCE] A: 3->4 [EROSION_ADVANCE] C: 2->3 [CORE_DISSOLVED] C
+
+CURRENT FRAME DETAIL:
+  Observer: unanimous k*=4, all regions agree. Margin comfortable (+0.0000).
+  Concepts: A, C dissolved; B surviving. Erosion front at 2-4 hops.
+  Pressure: 16.0x baseline.
+  Deep core: partial connectivity in {'A': 0.33}.
+
+[PROPRIOCEPTION — Mode A]
+  flow_pressure (safe): Stable semantic inflow. Boundary nodes are processing transport normally.
+  erosion (saturated): Erosion at saturation depth (3 hops mean). Physical limit reached; deeper penetration blocked by topology.
+  fragmentation (partial): Deep core contains 9 sub-clusters with partial connectivity. Some internal structure persists.
+  integrity (intact): Global ecology intact. Observer equilibrium at k*=4 maintained.
+  entropy (drifting): Entropy at 1.5722 (delta -0.0110). Mild drift.
+  divergence (unanimous): All regional observers agree with global assessment.
+
+TRANSITIONS THIS WINDOW: none
+ANOMALIES THIS WINDOW: [EROSION_ADVANCE] A: 3->4, [EROSION_ADVANCE] C: 2->3, [CORE_DISSOLVED] C
+
+STATE_PACKET {
+  window: 25/25
+  seed: 2
+  amp: 16.0
+  entropy: 1.5722
+  entropy_delta: -0.0110
+  global_k: 4
+  k_changed: False
+  k_margin: 0.0000
+  divergence: 0
+  tripartite: 0
+  n_C: 28
+  A_erosion_depth: 4
+  A_core_pres: 0.0000
+  A_k_var: 0.2222
+  A_sub_clusters: 5
+  A_core_size: 6
+  A_core_mean_k: 0.33
+  B_erosion_depth: 2
+  B_core_pres: 1.0000
+  B_k_var: 0.0000
+  B_sub_clusters: 0
+  B_core_size: 0
+  B_core_mean_k: 0.00
+  C_erosion_depth: 3
+  C_core_pres: 0.0000
+  C_k_var: 0.0000
+  C_sub_clusters: 4
+  C_core_size: 4
+  C_core_mean_k: 0.00
+  collapse_flag: 0
+  state_hash: 2fdbeb6364b55c88
+}

@@ -1,0 +1,61 @@
+=== ESDE CORE STATE (window 25/25, amp=128.0x, seed=9) ===
+
+CUMULATIVE: k*=4 now. 9 switch(es): w5: 1->4, w12: 4->3, w14: 3->4, w15: 4->3, w16: 3->4, w19: 4->3, w20: 3->4, w21: 4->3, w22: 3->4. Entropy: 1.5594 mean, range 0.1011. Erosion max: A=4, B=4, C=4. Divergence: 12/25 windows (48%). All concept cores dissolved.
+
+RECENT HISTORY (last 5 windows):
+  w21: k*=3 | div=1 | ent=1.4839 v | erosion A=3 B=2 C=4 | core_pres A=0.00 B=1.00 C=0.00 | tri=0 | [DEEP_CORE] fragments A:0 B:0 C:5 | [SWITCH] k*: 4->3 [DIVERGENCE_ONSET] [EROSION_ADVANCE] C: 3->4 [ENTROPY_SPIKE] delta=-0.0677
+  w22: k*=4 | div=0 | ent=1.5810 ^ | erosion A=3 B=2 C=4 | core_pres A=0.00 B=1.00 C=0.00 | tri=0 | [DEEP_CORE] fragments A:0 B:0 C:7 | [SWITCH] k*: 3->4 [DIVERGENCE_RESOLVED] [ENTROPY_SPIKE] delta=+0.0971
+  w23: k*=4 | div=0 | ent=1.5844 | erosion A=3 B=4 C=3 | core_pres A=0.00 B=0.00 C=0.00 | tri=0 | [DEEP_CORE] fragments A:4 B:6 C:5 | [EROSION_ADVANCE] B: 2->4 [CORE_DISSOLVED] B
+  w24: k*=4 | div=0 | ent=1.5726 v | erosion A=4 B=3 C=3 | core_pres A=0.00 B=0.20 C=0.00 | tri=0 | [DEEP_CORE] fragments A:4 B:5 C:3 | [EROSION_ADVANCE] A: 3->4
+  w25: k*=4 | div=0 | ent=1.5148 v | erosion A=3 B=3 C=3 | core_pres A=0.00 B=0.00 C=0.00 | tri=0 | [DEEP_CORE] fragments A:3 B:0 C:3 | [CORE_DISSOLVED] B [ENTROPY_SPIKE] delta=-0.0578
+
+CURRENT FRAME DETAIL:
+  Observer: unanimous k*=4, all regions agree. Margin comfortable (+0.0000).
+  Concepts: all cores dissolved (pres ~ 0). Erosion front at 3-3 hops.
+  Pressure: 128.0x baseline.
+  Deep core: structurally empty. No internal connectivity.
+
+[PROPRIOCEPTION — Mode A]
+  flow_pressure (critical): Critical diffusion volume. Load exceeds normal topological processing capacity.
+  erosion (shallow): Erosion is shallow. Boundary-layer only; deep core isolated from flow.
+  fragmentation (dissolved): Deep core fragmented into 6 disconnected patches with zero internal connectivity. Structure has dissolved.
+  integrity (intact): Global ecology intact. Observer equilibrium at k*=4 maintained.
+  entropy (falling): Entropy dropping (-0.0578). Concept diversity collapsing.
+  divergence (unanimous): All regional observers agree with global assessment.
+
+TRANSITIONS THIS WINDOW: none
+ANOMALIES THIS WINDOW: [CORE_DISSOLVED] B, [ENTROPY_SPIKE] delta=-0.0578
+
+STATE_PACKET {
+  window: 25/25
+  seed: 9
+  amp: 128.0
+  entropy: 1.5148
+  entropy_delta: -0.0578
+  global_k: 4
+  k_changed: False
+  k_margin: 0.0000
+  divergence: 0
+  tripartite: 0
+  n_C: 45
+  A_erosion_depth: 3
+  A_core_pres: 0.0000
+  A_k_var: 0.0000
+  A_sub_clusters: 3
+  A_core_size: 3
+  A_core_mean_k: 0.00
+  B_erosion_depth: 3
+  B_core_pres: 0.0000
+  B_k_var: 0.0000
+  B_sub_clusters: 0
+  B_core_size: 2
+  B_core_mean_k: 0.00
+  C_erosion_depth: 3
+  C_core_pres: 0.0000
+  C_k_var: 0.0000
+  C_sub_clusters: 3
+  C_core_size: 3
+  C_core_mean_k: 0.00
+  collapse_flag: 0
+  state_hash: 862aed41b360e912
+}

@@ -1,0 +1,61 @@
+=== ESDE CORE STATE (window 25/25, amp=32.0x, seed=9) ===
+
+CUMULATIVE: k*=3 now. 7 switch(es): w4: 3->4, w6: 4->1, w17: 4->1, w21: 3->4, w23: 4->3, w24: 3->4, w25: 4->3. Entropy: 1.5402 mean, range 0.2246. Erosion max: A=4, B=4, C=4. Divergence: 14/25 windows (56%). Surviving cores: C.
+
+RECENT HISTORY (last 5 windows):
+  w21: k*=4 | div=0 | ent=1.5090 ^ | erosion A=3 B=2 C=2 | core_pres A=0.00 B=1.00 C=1.00 | tri=0 | [SWITCH] k*: 3->4 [DIVERGENCE_RESOLVED] [CORE_DISSOLVED] A [ENTROPY_SPIKE] delta=+0.1497
+  w22: k*=4 | div=0 | ent=1.5365 ^ | erosion A=4 B=3 C=3 | core_pres A=0.00 B=0.00 C=0.00 | tri=1 | [DEEP_CORE] fragments A:5 B:0 C:0 | [EROSION_ADVANCE] A: 3->4 [EROSION_ADVANCE] B: 2->3 [CORE_DISSOLVED] B [EROSION_ADVANCE] C: 2->3 [CORE_DISSOLVED] C
+  w23: k*=3 | div=1 | ent=1.5822 ^ | erosion A=4 B=3 C=3 | core_pres A=0.00 B=0.00 C=0.00 | tri=0 | [DEEP_CORE] fragments A:5 B:0 C:0 | [SWITCH] k*: 4->3 [DIVERGENCE_ONSET] [ENTROPY_SPIKE] delta=+0.0457
+  w24: k*=4 | div=0 | ent=1.5066 v | erosion A=4 B=3 C=3 | core_pres A=0.00 B=0.00 C=0.00 | tri=0 | [DEEP_CORE] fragments A:6 B:0 C:0 | [SWITCH] k*: 3->4 [DIVERGENCE_RESOLVED] [ENTROPY_SPIKE] delta=-0.0756
+  w25: k*=3 | div=1 | ent=1.4987 v | erosion A=3 B=4 C=4 | core_pres A=0.00 B=0.00 C=0.25 | tri=0 | [DEEP_CORE] fragments A:0 B:5 C:4 | [SWITCH] k*: 4->3 [DIVERGENCE_ONSET] [EROSION_ADVANCE] B: 3->4 [EROSION_ADVANCE] C: 3->4
+
+CURRENT FRAME DETAIL:
+  Observer: k*=3, DIVERGENT (regional disagreement). Margin=+0.0499.
+  Concepts: A, B dissolved; C surviving. Erosion front at 3-4 hops.
+  Pressure: 32.0x baseline.
+  Deep core: structurally empty. No internal connectivity.
+
+[PROPRIOCEPTION — Mode A]
+  flow_pressure (safe): Stable semantic inflow. Boundary nodes are processing transport normally.
+  erosion (saturated): Erosion at saturation depth (4 hops mean). Physical limit reached; deeper penetration blocked by topology.
+  fragmentation (dissolved): Deep core fragmented into 9 disconnected patches with zero internal connectivity. Structure has dissolved.
+  integrity (stressed): Observer resolution shifted to k*=3. Ecology stressed but not collapsed.
+  entropy (drifting): Entropy at 1.4987 (delta -0.0079). Mild drift.
+  divergence (split): Regional observers disagree with global k*. Local structure diverges from aggregate view.
+
+TRANSITIONS THIS WINDOW: [SWITCH] k*: 4->3, [DIVERGENCE_ONSET]
+ANOMALIES THIS WINDOW: [EROSION_ADVANCE] B: 3->4, [EROSION_ADVANCE] C: 3->4
+
+STATE_PACKET {
+  window: 25/25
+  seed: 9
+  amp: 32.0
+  entropy: 1.4987
+  entropy_delta: -0.0079
+  global_k: 3
+  k_changed: True
+  k_margin: 0.0499
+  divergence: 1
+  tripartite: 0
+  n_C: 25
+  A_erosion_depth: 3
+  A_core_pres: 0.0000
+  A_k_var: 0.0000
+  A_sub_clusters: 0
+  A_core_size: 1
+  A_core_mean_k: 0.00
+  B_erosion_depth: 4
+  B_core_pres: 0.0000
+  B_k_var: 0.0000
+  B_sub_clusters: 5
+  B_core_size: 5
+  B_core_mean_k: 0.00
+  C_erosion_depth: 4
+  C_core_pres: 0.2500
+  C_k_var: 0.0000
+  C_sub_clusters: 4
+  C_core_size: 4
+  C_core_mean_k: 0.00
+  collapse_flag: 0
+  state_hash: b5ee7c65fde0b393
+}

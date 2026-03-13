@@ -1,0 +1,61 @@
+=== ESDE CORE STATE (window 25/25, amp=32.0x, seed=2) ===
+
+CUMULATIVE: k*=4 now. 6 switch(es): w5: 1->3, w6: 3->4, w15: 4->3, w16: 3->4, w19: 4->1, w25: 3->4. Entropy: 1.5532 mean, range 0.2104. Erosion max: A=4, B=4, C=6. Divergence: 18/25 windows (72%). Surviving cores: C.
+
+RECENT HISTORY (last 5 windows):
+  w21: k*=0 | div=1 | ent=1.5697 v | erosion A=3 B=4 C=4 | core_pres A=0.00 B=0.00 C=0.00 | tri=0 | [DEEP_CORE] fragments A:3 B:5 C:5 | [EROSION_ADVANCE] B: 3->4
+  w22: k*=3 | div=1 | ent=1.5710 | erosion A=4 B=2 C=4 | core_pres A=0.00 B=1.00 C=0.22 | tri=0 | [DEEP_CORE] fragments A:7 B:0 C:9 | [EROSION_ADVANCE] A: 3->4
+  w23: k*=3 | div=1 | ent=1.5567 v | erosion A=4 B=3 C=3 | core_pres A=0.00 B=0.00 C=0.00 | tri=0 | [DEEP_CORE] fragments A:3 B:0 C:0 | [EROSION_ADVANCE] B: 2->3 [CORE_DISSOLVED] B [CORE_DISSOLVED] C
+  w24: k*=3 | div=1 | ent=1.5206 v | erosion A=4 B=4 C=3 | core_pres A=0.00 B=0.00 C=0.00 | tri=0 | [DEEP_CORE] fragments A:5 B:5 C:4 | [EROSION_ADVANCE] B: 3->4 [ENTROPY_SPIKE] delta=-0.0361
+  w25: k*=4 | div=1 | ent=1.5816 ^ | erosion A=3 B=3 C=2 | core_pres A=0.00 B=0.00 C=1.00 | tri=0 | [DEEP_CORE] fragments A:5 B:3 C:0 | [SWITCH] k*: 3->4 [ENTROPY_SPIKE] delta=+0.0610
+
+CURRENT FRAME DETAIL:
+  Observer: k*=4, DIVERGENT (regional disagreement). Margin=+0.2007.
+  Concepts: A, B dissolved; C surviving. Erosion front at 2-3 hops.
+  Pressure: 32.0x baseline.
+  Deep core: structurally empty. No internal connectivity.
+
+[PROPRIOCEPTION — Mode A]
+  flow_pressure (safe): Stable semantic inflow. Boundary nodes are processing transport normally.
+  erosion (shallow): Erosion is shallow. Boundary-layer only; deep core isolated from flow.
+  fragmentation (dissolved): Deep core fragmented into 8 disconnected patches with zero internal connectivity. Structure has dissolved.
+  integrity (intact): Global ecology intact. Observer equilibrium at k*=4 maintained.
+  entropy (rising): Entropy rising (+0.0610). Concept diversity increasing.
+  divergence (split): Regional observers disagree with global k*. Local structure diverges from aggregate view.
+
+TRANSITIONS THIS WINDOW: [SWITCH] k*: 3->4
+ANOMALIES THIS WINDOW: [ENTROPY_SPIKE] delta=+0.0610
+
+STATE_PACKET {
+  window: 25/25
+  seed: 2
+  amp: 32.0
+  entropy: 1.5816
+  entropy_delta: +0.0610
+  global_k: 4
+  k_changed: True
+  k_margin: 0.2007
+  divergence: 1
+  tripartite: 0
+  n_C: 36
+  A_erosion_depth: 3
+  A_core_pres: 0.0000
+  A_k_var: 0.0000
+  A_sub_clusters: 5
+  A_core_size: 5
+  A_core_mean_k: 0.00
+  B_erosion_depth: 3
+  B_core_pres: 0.0000
+  B_k_var: 0.0000
+  B_sub_clusters: 3
+  B_core_size: 3
+  B_core_mean_k: 0.00
+  C_erosion_depth: 2
+  C_core_pres: 1.0000
+  C_k_var: 0.0000
+  C_sub_clusters: 0
+  C_core_size: 0
+  C_core_mean_k: 0.00
+  collapse_flag: 0
+  state_hash: e1731bfd8c5e8365
+}
