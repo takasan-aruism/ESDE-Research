@@ -79,6 +79,7 @@ DRIFT_EPSILON = 0.05
 AMP_EXTREME = [16.0, 32.0, 64.0, 128.0]
 ENTROPY_BASELINE = 1.54; COLLAPSE_ENTROPY_DEV = 0.1
 DEEP_CORE_DEPTH_THR = 3  # nodes with depth >= this are "deep core"
+DEPTH_INTERVAL = 5       # recompute depth BFS every N windows (perf opt)
 OUTPUT_DIR = Path("outputs_v39")
 
 
@@ -119,8 +120,9 @@ def find_concept_boundary_nodes(state, cm):
             if nb in state.alive_n and cm.get(nb, -1) != cn: bnd.add(n); break
     return bnd
 
-def compute_concept_depth(N, cm, state):
-    bnd = find_concept_boundary_nodes(state, cm)
+def compute_concept_depth(N, cm, state, bnd=None):
+    if bnd is None:
+        bnd = find_concept_boundary_nodes(state, cm)
     depth = {i: -1 for i in range(N)}
     queue = list(bnd)
     for n in queue: depth[n] = 0
@@ -334,6 +336,7 @@ def run_cognition(seed, N=COG_N, plb=COG_PLB, rate=COG_RATE,
     pnr={r:None for r in range(N_REGIONS)}; ckr={r:None for r in range(N_REGIONS)}
     tot_tri=0; entropy_series=[]; wlogs=[]; clogs=[]
     erosion_logs=[]; internal_logs=[]
+    depth_map = None  # cached; recomputed every DEPTH_INTERVAL windows
 
     _t0=time.time(); _tw=quiet_steps//WINDOW
 
@@ -412,8 +415,10 @@ def run_cognition(seed, N=COG_N, plb=COG_PLB, rate=COG_RATE,
                 if (ckr[r] or 0)!=(ckg or 0): df=1
             wl["div"]=df
 
-            # Erosion
-            depth_map = compute_concept_depth(N, cm, state)
+            # Erosion — reuse cached depth_map unless interval hit or late windows
+            _late_start = _tw - 5  # always fresh BFS for last 5 windows
+            if depth_map is None or wi % DEPTH_INTERVAL == 0 or wi > _late_start:
+                depth_map = compute_concept_depth(N, cm, state, bnd=bnd)
             eros = compute_erosion(state, cm, depth_map, theta_initial)
             erosion_logs.append(eros)
 
