@@ -1,0 +1,60 @@
+{
+  "N": 5000,
+  "seed": 3,
+  "amp": 32.0,
+  "diff_prob": 0.16,
+  "quiet_steps": 5000,
+  "n_windows": 25,
+  "global_dominant_k": 4,
+  "global_sw100": 41.7,
+  "divergence_ratio": 0.68,
+  "mean_entropy": 1.5566,
+  "entropy_std": 0.028,
+  "entropy_dev": 0.0166,
+  "total_tripartite": 3,
+  "total_diffusion": 2244585,
+  "erosion_summary": {
+    "A": {
+      "drift_deep": 1.662451,
+      "erosion_depth": 4,
+      "core_preservation": 0.04
+    },
+    "B": {
+      "drift_deep": 1.726644,
+      "erosion_depth": 4,
+      "core_preservation": 0.0
+    },
+    "C": {
+      "drift_deep": 1.516536,
+      "erosion_depth": 5,
+      "core_preservation": 0.0
+    }
+  },
+  "internal_summary": {
+    "A": {
+      "core_k_var": 0.0,
+      "sub_clusters": 3.4,
+      "core_size": 4.0,
+      "core_mean_k": 0.0
+    },
+    "B": {
+      "core_k_var": 0.0,
+      "sub_clusters": 1.8,
+      "core_size": 3.0,
+      "core_mean_k": 0.0
+    },
+    "C": {
+      "core_k_var": 0.0,
+      "sub_clusters": 6.2,
+      "core_size": 7.0,
+      "core_mean_k": 0.0
+    }
+  },
+  "collapse_flag": false,
+  "collapse_detail": {
+    "core_gone": false,
+    "entropy_dev": false,
+    "k_shift": false
+  },
+  "elapsed": 6996.3
+}
