@@ -151,8 +151,8 @@ def main():
     parser.add_argument("--window-steps", type=int, default=WINDOW)
     parser.add_argument("--output", type=str, default="calibration_v43")
     # Encapsulation
-    parser.add_argument("--ratio-thr", type=float, default=3.0)
-    parser.add_argument("--dissolve-thr", type=float, default=1.5)
+    parser.add_argument("--ratio-thr", type=float, default=1.5)
+    parser.add_argument("--dissolve-thr", type=float, default=0.8)
     parser.add_argument("--min-persist", type=int, default=3)
     # Pressure
     parser.add_argument("--pressure-prob", type=float, default=0.005)

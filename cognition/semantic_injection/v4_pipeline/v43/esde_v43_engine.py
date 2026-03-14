@@ -78,11 +78,11 @@ class SemanticPressureParams:
 @dataclass
 class EncapsulationParams:
     """Island detection and lifecycle."""
-    ratio_threshold: float = 3.0      # internal/external density to encapsulate
-    dissolution_threshold: float = 1.5
+    ratio_threshold: float = 1.5      # mean_int_degree / mean_ext_degree to encapsulate
+    dissolution_threshold: float = 0.8
     min_cluster_size: int = 5
     min_persistence: int = 3          # windows before encapsulation
-    s_threshold: float = 0.20
+    s_threshold: float = 0.30         # strong islands (small, dense structures)
     boundary_hardening_bonus: float = 0.05
     boundary_hardening_decay: float = 0.001
 
@@ -110,26 +110,63 @@ class IslandState:
     inner_motif_counts: dict = field(default_factory=dict)
     status: str = "candidate"
 
-def compute_density_ratio(state, nodes, s_thr=0.20):
-    internal = 0; external = 0; boundary = set()
+def compute_density_ratio(state, nodes, s_thr=0.30):
+    """
+    Degree-based cohesion ratio (size-independent).
+
+    internal_cohesion = mean internal degree (links at S >= s_thr)
+    external_exposure = mean external degree (ANY alive link, regardless of S)
+
+    Rationale: cluster membership is defined by strong links (S >= s_thr),
+    but boundary exposure includes ALL connections to the outside world.
+    A strong cluster embedded in a weak-link network has high internal
+    cohesion and low external exposure → high ratio → encapsulation candidate.
+
+    ratio = internal_cohesion / external_exposure
+    """
+    int_degrees = []   # per-node count of internal neighbors (strong links)
+    ext_degrees = []   # per-boundary-node count of external neighbors (any link)
+    boundary = set()
+
     for n in nodes:
-        if n not in state.alive_n: continue
+        if n not in state.alive_n:
+            continue
+        i_deg = 0
+        e_deg = 0
         for nb in state.neighbors(n):
             lk = state.key(n, nb)
-            if lk not in state.alive_l or state.S[lk] < s_thr: continue
+            if lk not in state.alive_l:
+                continue
             if nb in nodes:
-                internal += 1
+                # Internal: count only strong links (cluster-defining threshold)
+                if state.S[lk] >= s_thr:
+                    i_deg += 1
             else:
-                external += 1; boundary.add(n)
-    internal //= 2
-    nn = len(nodes)
-    max_int = nn * (nn - 1) / 2 if nn > 1 else 1
-    max_ext = nn * (state.n_nodes - nn) if nn > 0 else 1
-    d_int = internal / max(max_int, 1)
-    d_ext = external / max(max_ext, 1)
-    return d_int / max(d_ext, 1e-10), internal, external, frozenset(boundary)
+                # External: count ANY alive link (boundary exposure)
+                e_deg += 1
+                boundary.add(n)
+        int_degrees.append(i_deg)
+        if e_deg > 0:
+            ext_degrees.append(e_deg)
 
-def find_inner_motifs(state, interior, s_thr=0.20, sizes=(3, 4)):
+    if not int_degrees:
+        return 0.0, 0, 0, frozenset()
+
+    mean_int = sum(int_degrees) / len(int_degrees)
+    mean_ext = sum(ext_degrees) / len(ext_degrees) if ext_degrees else 0.0
+    internal_edges = sum(int_degrees) // 2
+    external_edges = sum(ext_degrees) if ext_degrees else 0
+
+    # Isolated clusters (no external edges) are NOT encapsulation candidates.
+    # Encapsulation requires a boundary to exist (sparse but present).
+    if external_edges == 0:
+        return 0.0, internal_edges, 0, frozenset()
+
+    ratio = mean_int / mean_ext
+
+    return ratio, internal_edges, external_edges, frozenset(boundary)
+
+def find_inner_motifs(state, interior, s_thr=0.30, sizes=(3, 4)):
     adj = defaultdict(set)
     for n in interior:
         if n not in state.alive_n: continue
@@ -476,7 +513,7 @@ class V43Engine:
         isl_w = find_islands_sets(self.state, 0.10)
 
         isum = self.island_tracker.step(self.state, self.hardening,
-                                         precomputed_islands=isl_m)
+                                         precomputed_islands=isl_s)
 
         # Observer (uses pre-computed islands)
         nm_s = {n for isl in isl_s for n in isl}
