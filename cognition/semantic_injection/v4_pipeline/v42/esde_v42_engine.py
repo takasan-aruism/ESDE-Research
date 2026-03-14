@@ -638,7 +638,14 @@ class V42Engine:
 
         # ---- 4. Cluster observation ----
         self.window_count += 1
-        current_clusters = self.tracker.snapshot(self.state)
+
+        # Pre-compute islands ONCE — shared between tracker + observer
+        isl_s = find_islands_sets(self.state, 0.30)
+        isl_m = find_islands_sets(self.state, 0.20)
+        isl_w = find_islands_sets(self.state, 0.10)
+
+        # Tracker uses isl_m (avoids redundant find_islands_sets call)
+        current_clusters = [frozenset(isl) for isl in isl_m if len(isl) >= 3]
         cluster_delta = self.tracker.update(current_clusters,
                                             wave_result.arrival_times)
 
@@ -648,7 +655,10 @@ class V42Engine:
         cluster_summary = self.tracker.get_summary_v42(resistance_map)
 
         # ---- 5. Observer ----
-        isl_m = find_islands_sets(self.state, 0.20)
+        nm_s = {n for isl in isl_s for n in isl}
+        nm_m = {n for isl in isl_m for n in isl}
+        nm_w = {n for isl in isl_w for n in isl}
+
         bm = set()
         for isl in isl_m:
             for n in isl:
@@ -663,14 +673,9 @@ class V42Engine:
         for i in self.state.alive_n:
             if int(self.state.Z[i]) != 3:
                 continue
-            nms = {n: 1 for isl in find_islands_sets(self.state, 0.30)
-                   for n in isl}
-            nmm = {n: 1 for isl in isl_m for n in isl}
-            s = 1 if i in nms else 0
-            m = 1 if i in nmm else 0
-            nmw = {n: 1 for isl in find_islands_sets(self.state, 0.10)
-                   for n in isl}
-            w = 1 if i in nmw else 0
+            s = 1 if i in nm_s else 0
+            m = 1 if i in nm_m else 0
+            w = 1 if i in nm_w else 0
             nodes_g.append({
                 "r_bits": f"{s}{m}{w}",
                 "boundary_mid": 1 if i in bm else 0,
