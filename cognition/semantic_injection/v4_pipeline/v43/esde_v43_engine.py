@@ -80,9 +80,10 @@ class EncapsulationParams:
     """Island detection and lifecycle."""
     ratio_threshold: float = 1.5      # mean_int_degree / mean_ext_degree to encapsulate
     dissolution_threshold: float = 0.8
-    min_cluster_size: int = 5
+    min_cluster_size: int = 3
     min_persistence: int = 3          # windows before encapsulation
-    s_threshold: float = 0.30         # strong islands (small, dense structures)
+    s_threshold: float = 0.20         # detection baseline (living structure, turnover-capable)
+    s_internal: float = 0.30          # internal density measured at strong threshold
     boundary_hardening_bonus: float = 0.05
     boundary_hardening_decay: float = 0.001
 
@@ -253,7 +254,7 @@ class IslandTracker:
                     if ov > best_ov: best_ov = ov; best_id = gid
 
             ratio, _, _, boundary = compute_density_ratio(
-                state, nodes, self.params.s_threshold)
+                state, nodes, self.params.s_internal)
             interior = nodes - boundary
 
             if best_id and best_ov >= 0.5 and best_id in self.islands:
@@ -283,7 +284,7 @@ class IslandTracker:
                 if ns.status == "encapsulated" and interior:
                     ns.inner_entropy = compute_inner_entropy(state, interior)
                     ns.inner_motif_counts = find_inner_motifs(
-                        state, interior, self.params.s_threshold,
+                        state, interior, self.params.s_internal,
                         self.motif_params.motif_sizes)
                     self.motif_history.setdefault(best_id, []).append(
                         ns.inner_motif_counts.copy())
@@ -513,7 +514,7 @@ class V43Engine:
         isl_w = find_islands_sets(self.state, 0.10)
 
         isum = self.island_tracker.step(self.state, self.hardening,
-                                         precomputed_islands=isl_s)
+                                         precomputed_islands=isl_m)
 
         # Observer (uses pre-computed islands)
         nm_s = {n for isl in isl_s for n in isl}
