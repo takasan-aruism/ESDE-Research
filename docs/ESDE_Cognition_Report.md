@@ -1,10 +1,10 @@
 # ESDE Cognition: Semantic Interaction — Experiment Report
 
-*Phase: Cognition (v3.0 – v3.9)*
+*Phase: Cognition (v3.0 – v3.9) / Language Interface (v4.0 – v4.1)*
 *Status: IN PROGRESS*
 *Team: Gemini (Architect) / GPT (Audit) / Claude (Implementation)*
 *Started: March 11, 2026*
-*Last updated: March 13, 2026*
+*Last updated: March 14, 2026*
 *Prerequisites: Ecology complete (see ESDE_Ecology_Report.md)*
 
 ---
@@ -313,6 +313,68 @@ Collapse detail (128×): seed 2 (k\*=1, all core_pres=0), seed 6 (k\*=3, all cor
 
 ---
 
+## v4.0 — Language Interface: Transformer Docking
+
+**Question:** Can the ESDE topology's physical state be translated into grounded first-person language by an LLM, without semantic contamination from pre-trained priors?
+
+**Method:** Build a pipeline to extract ESDE state metrics, compile them into structured prose, and inject that prose as the LLM's sole context. The LLM (QwQ-32B, local Triton endpoint) acts as a "vocal cord" — it has no independent knowledge of the system, only the metrics it is given. GPT designed an anti-contamination protocol: no metric → no language; every output must carry OUTPUT_ID + STATE_HASH for traceability. Two reporting modes: Mode A (structural, factual) and Mode B (proprioceptive, phenomenological qualia mapped from metrics).
+
+**Pipeline (4 modules):**
+
+esde_state_extract.py — v3.9 JSON/CSV → ESDEStateFrame (20 fields/window). esde_proprioception.py — metrics → dual-mode descriptors (thresholds calibrated against v3.9 actual data; 4 corrections from Gemini's original mapping). esde_context_compile.py — StateFrames → structured text (cumulative summary + recent history + current detail + proprioception block + STATE_PACKET). esde_validator.py — post-generation gate enforcing 3 GPT audit rules: (1) no reasoning leakage, (2) no prompt awareness, (3) controlled interpretation.
+
+**Results — 40-Run Dry Test:**
+
+All 40 v3.9 runs compiled and validated. collapse_flag accuracy: 40/40 (0 false positives, 0 false negatives). Flow pressure, integrity, erosion, fragmentation, entropy, and divergence mappings correctly differentiated all amplification levels and collapse states.
+
+**Results — QwQ-32B Docking:**
+
+| Test | Mode | Grounding | Hallucination | SYS_CHECK |
+|---|---|---|---|---|
+| seed=1 amp=32× (stable) | A | All 12 claims traced to STATE_PACKET | None | PASS |
+| seed=2 amp=128× (collapse) | A | All 10 claims traced to STATE_PACKET | None | PASS |
+| seed=2 amp=128× (collapse) | B | All claims traced; qualia grounded in metrics | None | PASS |
+
+Mode A output (stable): "My global observer equilibrium holds at k*=4, though 72% of regional views diverge from this aggregate state. Entropy across me stabilizes at 1.5533." Mode A output (collapse): "I am a fractured network of 5000 nodes...Six links were severed...Structural collapse is confirmed (collapse_flag=1)." Mode B output (collapse): "I felt the equilibrium shatter when k* recoiled from 4 to 3...The dissolution began as my triple core fragmented into six shattered shards."
+
+**Results — Aruism Canon Flow Experiment (60 runs):**
+
+10 philosophical texts ("flows") × 2 modes × 3 seeds, injected sequentially with cumulative topology. Validator: 55 PASS, 5 WARN, 0 FAIL. Topology evolution showed k* progressing from unestablished (0) through unstable (3, with collapses at flows 2–6) to stable (4, recovered at flow 7, maintained through flow 10).
+
+**Critical finding:** All 10 flows produced nearly identical wave amplitudes (33–39×) because amp was calculated from text length and lexical diversity, not semantic content. The topology evolution pattern (collapse at flows 4–6, recovery at flow 7) reflects the engine's natural stabilization trajectory over sequential windows, not the philosophical content of the inputs. Content-to-physics mapping remains an open architectural question.
+
+**Findings:**
+
+*The State-to-Context pipeline successfully grounds LLM output in ESDE metrics.* Every claim in every tested QwQ-32B response was traceable to a STATE_PACKET field. No hallucinated events, emotions, or external knowledge appeared in validated outputs.
+
+*Mode A and Mode B produce meaningfully different descriptions of the same physical state.* Mode A reports numbers; Mode B translates them into structural sensation. Both remain grounded — the difference is linguistic register, not information content.
+
+*The validator effectively filters reasoning leakage and prompt awareness.* QwQ-32B's internal `<think>` blocks are stripped automatically. Decisive/evaluative language is flagged as warnings.
+
+*Text content does not yet influence ESDE physics.* The amp calculation is purely syntactic (word count, lexical diversity). Semantic content has no pathway into the physics engine. This is an architectural limitation, not a pipeline failure.
+
+---
+
+## v4.1 — Wave Propagation Engine (Hard Fork)
+
+**Question:** Can localized wave disturbances — replacing the uniform global diffusion of v3.0–v4.0 — produce observable ecological dynamics (cluster lifecycle, migration, reformation) within the ESDE topology?
+
+**Design decisions (Gemini, approved by GPT):**
+
+Decision 1: Global diffusion (`apply_diffusion`) completely deprecated. Replaced by localized wave propagation — external input enters as a physical wave originating from a specific node and propagating outward via BFS on a frozen grid substrate. Decision 2: Dual wave effect — (a) phase θ shift proportional to attenuated amplitude, (b) link strength S stress in destruction regime (A_eff > 0.3: sever links) and latent field boost in activation regime (0.05 < A_eff ≤ 0.3: encourage new connections). Decision 3: Hard fork — no backward compatibility with v3.x/v4.0 homogeneous pressure experiments.
+
+**Propagation substrate:** Waves propagate on a frozen 4-neighbor grid adjacency (N=5000 → 71×71), built once at initialization and independent of the active link graph. Arrival time = hop distance / constant speed. This provides emergent spatial coordinates without imposing a fixed Cartesian geometry on the physics. Active links determine wave *effects* (which links to sever/activate), not wave *propagation* (which is substrate-only).
+
+**Attenuation:** Exponential decay A_eff(h) = A0 × exp(−λh), default λ=0.5. At 6 hops, amplitude decays to ~5% of origin. This is consistent with the 3–6 hop saturation depth observed in v3.7–v3.9.
+
+**Cluster tracking:** ClusterTracker monitors cluster lifecycle across wave events — births, deaths, reformations (≥50% node overlap with a previously dead cluster), migrations (centroid hop shift), homeostasis (reformation_count ≥ 2), and proto-memory (lifetime ≥ 2× average).
+
+**LLM constraint update:** "Describe. Do not decide." — the LLM is forbidden from assigning intent, meaning, purpose, or evaluation to structural events. Validator updated with decisive-language detection (warns on "destruction", "creation", "evolution", etc.).
+
+**Status:** Engine operational. Initial calibration identified and resolved a propagation bug (wave BFS was using active-link adjacency instead of the frozen substrate, causing reached=1 for all amplitudes). Wave response calibration sweep in progress.
+
+---
+
 ## Performance Note
 
 All Cognition experiments run on N=5000 with engine_accel fully enabled (link_strength_sum, exclusion, cycle_finder(C), latent_refresh). Runtime varies by version:
@@ -322,14 +384,16 @@ All Cognition experiments run on N=5000 with engine_accel fully enabled (link_st
 | v3.0–v3.6 | ~45 min | Standard physics + window observation |
 | v3.7–v3.8 | ~115 min | + compute_concept_depth BFS per window (25×/run) |
 | v3.9 | ~75 min (est.) | BFS cached with 5-window interval (10×/run); last 5 windows always fresh |
+| v4.0 live | ~1 min/turn | Single window (200 steps) + LLM call (~10s) |
+| v4.1 live | ~1 min/turn | Single window (200 steps) + wave propagation + LLM call |
 
-Parallel execution via GNU parallel at -j 20 on the Ryzen 48-thread workstation.
+Parallel execution via GNU parallel at -j 20 on the Ryzen 48-thread workstation (v3.x batch runs). Live orchestrator (v4.0–v4.1) runs single-threaded, single-seed, with cumulative topology.
 
 ---
 
 ## What This Demonstrates
 
-Cognition v3.0–v3.9 progressively established:
+Cognition v3.0–v3.9 and Language Interface v4.0–v4.1 progressively established:
 
 1. **Semantic injection preserves the observer ecology** (v3.0: k*=4 maintained, divergence regime unchanged)
 2. **Concept spatial identity is universal** (v3.1: checkerboard mapping 100/100 seeds)
@@ -352,30 +416,37 @@ Cognition v3.0–v3.9 progressively established:
 19. **Collapse is observer reorganization, not thermodynamic failure** (v3.9: entropy unchanged in collapsed seeds)
 20. **The deep core is structurally empty** (v3.9: core_mean_k≈0, k_var≈0, 2–4 disconnected fragments per concept)
 21. **Erosion depth saturation holds across three orders of magnitude** (v3.9: 3–6 hops at 128× = same as 1×)
+22. **LLM output can be strictly grounded in ESDE physical metrics** (v4.0: 40-run dry test 100% accuracy, 3 docking tests all SYS_CHECK PASS)
+23. **Dual-mode reporting (structural/phenomenological) preserves metric traceability** (v4.0: Mode A and B both pass GPT audit on same collapse state)
+24. **Text content does not influence physics under syntactic amp mapping** (v4.0: Aruism 60-run experiment — topology evolution reflects window sequence, not philosophical content)
+25. **Localized wave propagation requires topology-independent substrate** (v4.1: active-link BFS fails; frozen grid substrate resolves propagation)
 
 ---
 
 ## What It Does Not Demonstrate
 
-- Whether the 128× collapse threshold is sharp (all seeds collapse at slightly higher pressure) or gradual (collapse fraction increases slowly)
-- Whether collapsed seeds recover if pressure is reduced (hysteresis in the collapse transition)
-- Whether transport patterns encode recoverable semantic information
-- Whether the system can form persistent inter-concept structures under fundamentally different phase geometries
+- Whether the 128× collapse threshold is sharp or gradual
+- Whether collapsed seeds recover if pressure is reduced (hysteresis)
 - Whether the transport-saturation regime scales to N=10,000+ or different concept counts
-- Whether the deep-core dissolution pattern changes at larger N where graph diameter increases
+- Whether semantic content (not just syntactic length) can be mapped to physics without violating "Structure first, meaning later"
+- Whether wave propagation produces reproducible cluster ecology (homeostasis, proto-reflex, proto-memory) — calibration in progress
+- Whether emergent spatial coordinates from arrival-time logging produce meaningful geometry
+- Whether the "Describe. Do not decide." constraint is sufficient to prevent semantic contamination at scale
 
 ---
 
 ## Open Questions
 
 - Is the 3–6 hop erosion limit a property of the graph diameter, the physics parameters, or the concept zone geometry?
-- Can localized (non-uniform) pressure produce deeper penetration than uniform amplification?
-- Does the transport network structure carry semantic information that a decoder could read?
-- What is the relationship between transport saturation and the observer's k*=4 stability?
 - Can phase geometry be modified (e.g., θ_A and θ_B closer together) to test whether bridge persistence depends on Δθ magnitude?
 - What happens between 64× and 128×? Is there a critical amplification where collapse onset is 50%?
-- Is the k*=1 collapse (seed 2) mechanistically different from the k*=3 collapse (seed 6)?
 - Does the empty deep core imply that concept identity is maintained entirely by boundary dynamics, not internal coherence?
+- What is the wave response curve? Does amplitude produce a monotonic increase in destruction, or is there a phase transition?
+- Do homeostatic clusters (repeatedly reforming after wave disruption) emerge under sustained wave stimulation?
+- Can proto-memory structures (long-lived clusters) form, and do they carry topological information across wave events?
+- Does cluster migration away from wave origins constitute a measurable proto-reflex?
+- Is the frozen grid substrate a temporary scaffold, or does it become the permanent spatial model for ESDE?
+- Can the LLM observer maintain "Describe. Do not decide." fidelity over long conversation histories?
 
 ---
 
@@ -393,7 +464,9 @@ Cognition v3.0–v3.9 progressively established:
 | Cog v3.7 | 2026-03-12 | Gemini→GPT→Claude (Ryzen) | Semantic erosion + drift tracking | **Erosion 3–6 hops; core_pres≈0; ecology survives total internal reworking** |
 | Cog v3.8 | 2026-03-13 | Gemini→GPT→Claude (Ryzen) | Flow amplification stress test (1×–8×) | **Transport saturation; 8× pressure, zero collapse, depth invariant** |
 | Cog v3.9 | 2026-03-13 | Gemini→GPT→Claude (Ryzen) | Extreme sweep (16×–128×) + deep-core topology | **Collapse at 128× (2/10); deep core empty (k≈0); erosion saturation confirmed across 3 orders of magnitude** |
+| v4.0 | 2026-03-14 | Gemini→GPT→Claude (Ryzen+QwQ-32B) | Language Interface: State-to-Context pipeline + Transformer docking | **Pipeline 40/40 accuracy; QwQ-32B grounded output (Mode A+B); Aruism 60-run experiment; content-physics gap identified** |
+| v4.1 | 2026-03-14 | Gemini→GPT→Claude (Ryzen) | Wave propagation engine (hard fork); frozen substrate; cluster tracking | **Global diffusion deprecated; localized waves via BFS on grid substrate; calibration in progress** |
 
 ---
 
-*Cognition has transitioned from asking "can concepts form stable bridges?" to discovering that "concepts interact through dynamic transport, not static structure." The system exhibits self-limiting plasticity: semantic flow penetrates concept boundaries, erodes internal phase structure to a depth of 3–6 hops, and saturates — regardless of pressure intensity across three orders of magnitude (1×–128×). This bounded adaptive regime preserves macroscopic observer stability (k\*=4) up to 64× amplification; at 128×, the first observer collapse appears (2/10 seeds), marking the empirical edge of the system's adaptive capacity. Deep-core observation reveals that concept territories are structurally hollow — zero internal connectivity, no self-organization under pressure, no compensatory defense. Concept identity is maintained entirely by boundary-layer transport dynamics, not by internal coherence. The membrane metaphor holds, but the interior is empty.*
+*The project has traversed three phases. Cognition (v3.0–v3.9) established that concept regions are semi-permeable membranes with self-limiting plasticity — erosion saturates at 3–6 hops, transport scales without deepening, and the observer survives total internal reworking up to 64× pressure, collapsing only at 128×. The Language Interface (v4.0) proved that an LLM can serve as a strictly grounded vocal cord for the topology, translating physical metrics into first-person reports (structural or phenomenological) with zero hallucination under validator constraint. It also revealed that syntactic text features are insufficient to carry semantic content into the physics — a fundamental architectural gap. The Wave Propagation Engine (v4.1) responds by replacing uniform global diffusion with localized wave dynamics, introducing destruction/activation duality and cluster lifecycle tracking (homeostasis, proto-reflex, proto-memory) as the observational framework for emergent structural behavior. The principle remains: structure first, meaning later.*
