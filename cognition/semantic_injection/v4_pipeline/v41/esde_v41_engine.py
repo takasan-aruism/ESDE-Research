@@ -28,10 +28,11 @@ from typing import Optional
 # ================================================================
 # PATH SETUP
 # ================================================================
-_SCRIPT_DIR = Path(__file__).resolve().parent
-_PIPELINE_DIR = _SCRIPT_DIR.parent
-_COGNITION_DIR = _PIPELINE_DIR.parent
-_ENGINE_DIR = _COGNITION_DIR.parent / "ecology" / "engine"
+_SCRIPT_DIR = Path(__file__).resolve().parent       # v41/
+_PIPELINE_DIR = _SCRIPT_DIR.parent                   # v4_pipeline/
+_COGNITION_DIR = _PIPELINE_DIR.parent                # semantic_injection/
+_REPO_ROOT = _COGNITION_DIR.parent.parent            # ESDE-Research/
+_ENGINE_DIR = _REPO_ROOT / "ecology" / "engine"
 
 for p in [str(_ENGINE_DIR), str(_COGNITION_DIR)]:
     if p not in sys.path:
