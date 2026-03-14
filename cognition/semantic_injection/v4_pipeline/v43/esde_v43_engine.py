@@ -476,6 +476,7 @@ class V43Engine:
         self.state.EXTINCTION = p["link_death_threshold"]
         self.png = None; self.ckg = None
         self.substrate = build_substrate(N)
+        self._g_scores = np.zeros(N)  # growth score array for seeding bias
 
     def run_injection(self):
         t0 = time.time()
@@ -495,14 +496,52 @@ class V43Engine:
 
     def step_window(self, steps=WINDOW):
         t0 = time.time()
+        bg_prob = BASE_PARAMS["background_injection_prob"]
+
         for step in range(steps):
             self.realizer.step(self.state)
             self.physics.step_pre_chemistry(self.state)
             self.chem.step(self.state)
             self.physics.step_resonance(self.state)
+
+            # Growth score (for seeding bias)
+            self._g_scores[:] = 0
             self.grower.step(self.state)
+            for k in self.state.alive_l:
+                r = self.state.R.get(k, 0.0)
+                if r > 0:
+                    a = min(self.grower.params.auto_growth_rate * r,
+                            max(self.state.get_latent(k[0], k[1]), 0))
+                    if a > 0:
+                        self._g_scores[k[0]] += a
+                        self._g_scores[k[1]] += a
+            gz = float(self._g_scores.sum())
+
             self.intruder.step(self.state)
             self.physics.step_decay_exclusion(self.state)
+
+            # Background seeding (canonical quiet-phase fuel)
+            al = list(self.state.alive_n)
+            na = len(al)
+            if na > 0:
+                aa = np.array(al)
+                if BIAS > 0 and gz > 0:
+                    ga = self._g_scores[aa]; gs = ga.sum()
+                    if gs > 0:
+                        pg = ga / gs
+                        pd = (1 - BIAS) * (np.ones(na) / na) + BIAS * pg
+                        pd /= pd.sum()
+                    else:
+                        pd = np.ones(na) / na
+                else:
+                    pd = np.ones(na) / na
+                mk = self.state.rng.random(na) < bg_prob
+                for idx in range(na):
+                    if mk[idx]:
+                        t = int(self.state.rng.choice(aa, p=pd))
+                        self.state.E[t] = min(1.0, self.state.E[t] + 0.3)
+                        if self.state.Z[t] == 0 and self.state.rng.random() < 0.5:
+                            self.state.Z[t] = 1 if self.state.rng.random() < 0.5 else 2
 
         ps = apply_semantic_pressure(self.state, self.substrate,
             self.pressure_params, self.island_tracker, self.state.rng)
