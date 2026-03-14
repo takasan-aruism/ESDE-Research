@@ -684,7 +684,9 @@ class V42Engine:
 
         if nodes_g and len(nodes_g) >= MIN_C_NODES_FOR_VALID:
             js_g = {k: compute_J(nodes_g, self.png, k)[0] for k in K_LEVELS}
-            gk, self.png, self.ckg = select_k_star(js_g, self.ckg)
+            gk = select_k_star(js_g, self.ckg)
+            self.png = nodes_g
+            self.ckg = gk
         else:
             gk = 0; js_g = {}
 
