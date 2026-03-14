@@ -367,7 +367,7 @@ class ClusterTracker:
         reforms = sum(c.reformation_count for c in self.active.values())
         return {
             "n_clusters": len(self.active),
-            "mean_size": round(np.mean(sizes), 1),
+            "mean_size": int(round(np.mean(sizes))),
             "max_lifetime": max(lifetimes),
             "homeostatic": len(self.get_homeostatic()),
             "proto_memory": len(self.get_proto_memory()),
