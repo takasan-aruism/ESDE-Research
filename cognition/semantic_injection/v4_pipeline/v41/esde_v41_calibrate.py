@@ -103,9 +103,11 @@ def run_calibration(seed, amplitudes, window_steps, output_dir,
         print(f"    Injection...", flush=True)
         engine.run_injection()
 
-        # Fix origin: first alive node (deterministic for given seed)
-        origin = [sorted(engine.state.alive_n)[0]]
-        print(f"    Origin node: {origin[0]}")
+        # Fix origin: grid center node (deterministic, interior, same across amps)
+        side = int(__import__('math').ceil(__import__('math').sqrt(engine.N)))
+        center = (side // 2) * side + (side // 2)
+        origin = [center]
+        print(f"    Origin node: {origin[0]} (grid center)")
 
         # Pre-wave snapshot
         pre_alive_n = len(engine.state.alive_n)

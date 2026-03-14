@@ -80,6 +80,58 @@ class WaveParams:
 
 
 # ================================================================
+# PROPAGATION SUBSTRATE
+# ================================================================
+def build_substrate(N: int) -> dict:
+    """
+    Build frozen grid adjacency for wave propagation.
+
+    This is the persistent propagation substrate independent of the
+    active link graph (per GPT audit recommendation). Nodes are laid
+    out on a ceil(sqrt(N)) × ceil(sqrt(N)) grid. Each node connects
+    to its 4 cardinal neighbors (up/down/left/right).
+
+    Wave propagation uses this substrate. Wave EFFECTS (θ shift, S stress,
+    activation) still reference the active link topology.
+
+    Label: PROPAGATION SUBSTRATE (frozen at init, not active links).
+    """
+    side = int(math.ceil(math.sqrt(N)))
+    adj = {}
+    for i in range(N):
+        r, c = i // side, i % side
+        neighbors = []
+        if r > 0:
+            nb = (r - 1) * side + c
+            if nb < N: neighbors.append(nb)
+        if r < side - 1:
+            nb = (r + 1) * side + c
+            if nb < N: neighbors.append(nb)
+        if c > 0:
+            nb = r * side + (c - 1)
+            if nb < N: neighbors.append(nb)
+        if c < side - 1:
+            nb = r * side + (c + 1)
+            if nb < N: neighbors.append(nb)
+        adj[i] = neighbors
+    return adj
+
+
+def select_substrate_origin(substrate: dict, state, rng, n_origins=1) -> list:
+    """Select origin node(s) preferring high-substrate-degree interior nodes."""
+    # Interior nodes have degree 4; edge/corner have 2-3
+    interior = [n for n, nbs in substrate.items()
+                if len(nbs) == 4 and n in state.alive_n]
+    if not interior:
+        interior = [n for n in substrate if n in state.alive_n]
+    if not interior:
+        return []
+    indices = rng.choice(len(interior), size=min(n_origins, len(interior)),
+                         replace=False)
+    return [interior[i] for i in indices]
+
+
+# ================================================================
 # WAVE EVENT
 # ================================================================
 @dataclass
@@ -107,9 +159,14 @@ class WaveResult:
 
 
 def propagate_wave(state: GenesisState, event: WaveEvent,
-                   params: WaveParams, rng) -> WaveResult:
+                   params: WaveParams, rng,
+                   substrate: dict = None) -> WaveResult:
     """
-    BFS wave propagation from origin nodes across the graph.
+    BFS wave propagation from origin nodes across the propagation substrate.
+
+    Propagation uses the frozen substrate adjacency (grid neighbors),
+    NOT the active link graph. Wave effects (θ shift, S stress, activation)
+    still reference the active link topology.
 
     For each reached node at hop h:
       A_eff = A0 * exp(-λ * h)
@@ -128,13 +185,15 @@ def propagate_wave(state: GenesisState, event: WaveEvent,
             amplitudes[n] = event.amplitude
             queue.append(n)
 
-    # BFS propagation
+    # BFS propagation via SUBSTRATE (not active links)
     while queue:
         node = queue.popleft()
         h = arrival[node]
         if h >= params.max_hops:
             continue
-        for nb in state.neighbors(node):
+        # Use substrate adjacency for propagation
+        neighbors = substrate[node] if substrate else state.neighbors(node)
+        for nb in neighbors:
             if nb in state.alive_n and nb not in arrival:
                 nh = h + 1
                 a_eff = event.amplitude * math.exp(-params.decay_lambda * nh)
@@ -784,6 +843,9 @@ class V41Engine:
         self.pnr = {r: None for r in range(N_REGIONS)}
         self.ckr = {r: None for r in range(N_REGIONS)}
 
+        # Wave propagation substrate (frozen grid adjacency)
+        self.substrate = build_substrate(N)
+
     def run_injection(self):
         """Injection phase to establish topology."""
         t0 = time.time()
@@ -802,13 +864,9 @@ class V41Engine:
         print(f"  ⟐ Injection complete ({time.time()-t0:.0f}s).", flush=True)
 
     def select_wave_origin(self, n_origins=1) -> list:
-        """Select random alive node(s) as wave origin."""
-        alive = list(self.state.alive_n)
-        if not alive:
-            return []
-        indices = self.state.rng.choice(len(alive), size=min(n_origins, len(alive)),
-                                         replace=False)
-        return [alive[i] for i in indices]
+        """Select origin from interior substrate nodes (degree 4)."""
+        return select_substrate_origin(self.substrate, self.state,
+                                       self.state.rng, n_origins)
 
     def step_window(self, amplitude: float,
                     origin_nodes: list = None,
@@ -837,7 +895,8 @@ class V41Engine:
             event_id=self.wave_event_count,
         )
         wave_result = propagate_wave(self.state, event,
-                                     self.wave_params, self.state.rng)
+                                     self.wave_params, self.state.rng,
+                                     substrate=self.substrate)
 
         # Cluster observation
         self.window_count += 1
