@@ -50,6 +50,11 @@ from esde_v43_engine import (
 # ================================================================
 V44_WINDOW = 50   # down from 200
 
+@dataclass
+class V44EncapsulationParams(EncapsulationParams):
+    """v4.4: adds whirlpool_hops to v4.3 params."""
+    whirlpool_hops: int = 2
+
 
 # ================================================================
 # v4.4 ISLAND STATE (adds center_node)
@@ -293,7 +298,7 @@ class V44Engine(V43Engine):
         super().__init__(seed=seed, N=N, plb=plb, rate=rate,
                          island_params=island_params)
         # Replace v4.3 tracker with v4.4 whirlpool tracker
-        params = island_params or EncapsulationParams()
+        params = island_params or V44EncapsulationParams()
         self.island_tracker = WhirlpoolTracker(
             params=params,
             motif_params=MotifParams(),

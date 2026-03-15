@@ -17,7 +17,7 @@ _SCRIPT_DIR = Path(__file__).resolve().parent
 if str(_SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(_SCRIPT_DIR))
 
-from esde_v44_engine import V44Engine, V44_WINDOW, EncapsulationParams
+from esde_v44_engine import V44Engine, V44_WINDOW, V44EncapsulationParams
 
 LOG_FIELDS = [
     "window", "alive_nodes", "alive_links",
@@ -129,7 +129,7 @@ def main():
     parser.add_argument("--persistence", type=int, default=3)
     args = parser.parse_args()
 
-    params = EncapsulationParams(
+    params = V44EncapsulationParams(
         ratio_threshold=args.density_threshold,
         min_persistence=args.persistence,
         whirlpool_hops=args.whirlpool_hops,
