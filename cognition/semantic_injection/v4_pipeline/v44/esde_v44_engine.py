@@ -294,11 +294,11 @@ class V44Engine(V43Engine):
     """V43Engine with WhirlpoolTracker and configurable window size."""
 
     def __init__(self, seed=42, N=5000, plb=0.007, rate=0.002,
-                 island_params=None):
+                 encap_params=None):
+        params = encap_params or V44EncapsulationParams()
         super().__init__(seed=seed, N=N, plb=plb, rate=rate,
-                         island_params=island_params)
+                         encap_params=params)
         # Replace v4.3 tracker with v4.4 whirlpool tracker
-        params = island_params or V44EncapsulationParams()
         self.island_tracker = WhirlpoolTracker(
             params=params,
             motif_params=MotifParams(),

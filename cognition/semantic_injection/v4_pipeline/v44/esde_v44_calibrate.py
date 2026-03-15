@@ -31,16 +31,16 @@ LOG_FIELDS = [
 ]
 
 
-def run(seed, n_windows, window_steps, output_dir, island_params):
+def run(seed, n_windows, window_steps, output_dir, encap_params):
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
     print(f"\n  ESDE v4.4 Whirlpool Identity Calibration")
     print(f"  seed={seed} windows={n_windows} steps/win={window_steps}")
-    print(f"  whirlpool_hops={island_params.whirlpool_hops}")
+    print(f"  whirlpool_hops={encap_params.whirlpool_hops}")
     print(f"  Injection...", flush=True)
 
-    engine = V44Engine(seed=seed, island_params=island_params)
+    engine = V44Engine(seed=seed, encap_params=encap_params)
     engine.run_injection()
 
     csv_path = output_dir / f"v44_seed{seed}.csv"
@@ -137,7 +137,7 @@ def main():
 
     run(seed=args.seed, n_windows=args.windows,
         window_steps=args.window_steps, output_dir=args.output,
-        island_params=params)
+        encap_params=params)
 
 
 if __name__ == "__main__":
