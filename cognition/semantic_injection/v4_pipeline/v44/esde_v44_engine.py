@@ -274,6 +274,7 @@ class WhirlpoolTracker:
             "n_encapsulated": len(enc),
             "n_candidates": len(self.islands) - len(enc),
             "max_size": max(sizes) if sizes else 0,
+            "mean_size": round(float(np.mean(sizes)), 1) if sizes else 0,
             "mean_density_ratio": round(float(np.mean(drs)), 4) if drs else 0,
             "max_density_ratio": round(float(max(drs)), 4) if drs else 0,
             "encap_events": self.encapsulation_events,
