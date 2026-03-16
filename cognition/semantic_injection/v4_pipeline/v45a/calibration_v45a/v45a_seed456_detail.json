@@ -1,0 +1,92 @@
+{
+  "personalities": {},
+  "deformation": {
+    "ISL0177": {
+      "cumulative_turnover": 0,
+      "max_turnover_rate": 0.0,
+      "mean_continuity": 0.0,
+      "lifespan_windows": 1,
+      "boundary_turnover_total": 0
+    },
+    "ISL0178": {
+      "cumulative_turnover": 0,
+      "max_turnover_rate": 0.0,
+      "mean_continuity": 0.0,
+      "lifespan_windows": 1,
+      "boundary_turnover_total": 0
+    },
+    "ISL0179": {
+      "cumulative_turnover": 0,
+      "max_turnover_rate": 0.0,
+      "mean_continuity": 0.0,
+      "lifespan_windows": 1,
+      "boundary_turnover_total": 0
+    },
+    "ISL0180": {
+      "cumulative_turnover": 0,
+      "max_turnover_rate": 0.0,
+      "mean_continuity": 1.0,
+      "lifespan_windows": 2,
+      "boundary_turnover_total": 0
+    }
+  },
+  "resonance_per_island": {
+    "ISL0177": {
+      "resonant_in": 0,
+      "dissonant_in": 0,
+      "resonant_out": 1,
+      "dissonant_out": 2,
+      "total_events": 3
+    },
+    "ISL0178": {
+      "resonant_in": 0,
+      "dissonant_in": 0,
+      "resonant_out": 3,
+      "dissonant_out": 3,
+      "total_events": 6
+    },
+    "ISL0179": {
+      "resonant_in": 0,
+      "dissonant_in": 0,
+      "resonant_out": 2,
+      "dissonant_out": 0,
+      "total_events": 2
+    },
+    "ISL0180": {
+      "resonant_in": 0,
+      "dissonant_in": 0,
+      "resonant_out": 7,
+      "dissonant_out": 3,
+      "total_events": 10
+    }
+  },
+  "dr_per_cluster": {
+    "ISL0177": [
+      0.4444
+    ],
+    "ISL0178": [
+      0.0
+    ],
+    "ISL0179": [
+      0.6667
+    ],
+    "ISL0180": [
+      1.0,
+      0.0
+    ]
+  },
+  "pd_convergence_summary": {
+    "total_both_events": 0,
+    "total_p_events": 1,
+    "total_d_events": 13,
+    "unique_both_islands": 0
+  },
+  "meta": {
+    "seed": 456,
+    "n_windows": 200,
+    "window_steps": 50,
+    "final_alive_links": 2968,
+    "max_milestone": 2,
+    "max_seen_count": 0
+  }
+}
