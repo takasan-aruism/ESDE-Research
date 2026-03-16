@@ -1,10 +1,10 @@
 # ESDE Cognition: Semantic Interaction — Experiment Report
 
-*Phase: Cognition (v3.0 – v3.9) / Language Interface (v4.0 – v4.1)*
-*Status: IN PROGRESS*
+*Phase: Cognition (v3.0 – v3.9) / Encapsulation (v4.0 – v4.4)*
+*Status: IN PROGRESS (v4.4 complete; awaiting Triad direction)*
 *Team: Gemini (Architect) / GPT (Audit) / Claude (Implementation)*
 *Started: March 11, 2026*
-*Last updated: March 14, 2026*
+*Last updated: March 16, 2026*
 *Prerequisites: Ecology complete (see ESDE_Ecology_Report.md)*
 
 ---
@@ -375,6 +375,124 @@ Decision 1: Global diffusion (`apply_diffusion`) completely deprecated. Replaced
 
 ---
 
+## v4.2 — Adaptive Dynamics (Experimental Branch)
+
+**Question:** Can damage-triggered plasticity and structural hardening enable adaptive topology under repeated wave perturbation?
+
+**Method:** Three mechanisms added to v4.1 wave engine. Zero Genesis physics changes. (1) Topological plasticity: nodes at severed link endpoints receive P_val=0.8, decaying 10%/step. Plastic nodes attempt local rewiring within 2 substrate hops, plasticity_factor=1.3 (GPT range [1.1, 1.5]). (2) Structural hardening: links formed between two plastic nodes receive hardening_bonus=0.15, increasing their effective destruction threshold. Hardening decays at 0.005/step, cap=0.5. (3) Lineage resistance tracking: per-cluster mean effective threshold, history tracking. Multi-wave calibration: same engine receives 10 consecutive waves at fixed amplitude. Sweep: 3 amplitudes (0.5, 1.0, 1.5) × 3 seeds (42, 123, 456). 90 total waves across 9 runs.
+
+**Results (9 runs, 90 total waves):**
+
+| seed | amp | active waves | total severed | total rewire | hardened formed | reformations | max clusters | collapse wave |
+|---|---|---|---|---|---|---|---|---|
+| 42 | 0.5 | 5 | 32 | 4 | 1 | 0 | 1 | 6 |
+| 123 | 0.5 | 5 | 30 | 2 | 1 | 0 | 1 | 6 |
+| 456 | 0.5 | 5 | 32 | 16 | 4 | 0 | 2 | 6 |
+| 42 | 1.0 | 5 | 74 | 7 | 0 | 0 | 2 | 6 |
+| 123 | 1.0 | 5 | 79 | 20 | 5 | 0 | 2 | 6 |
+| 456 | 1.0 | 5 | 75 | 23 | 5 | 0 | 2 | 6 |
+| 42 | 1.5 | 5 | 151 | 29 | 12 | 0 | 2 | 6 |
+| 123 | 1.5 | 5 | 182 | 49 | 16 | 0 | 2 | 6 |
+| 456 | 1.5 | 5 | 139 | 31 | 3 | 0 | 3 | 6 |
+
+**Findings:**
+
+*Universal collapse at wave 6.* All 9 runs collapse to alive_links ≤ 15 at wave 6, regardless of amplitude or seed. Links drop from ~3000 to near-zero in a single inter-wave interval — a phase transition, not a trend.
+
+*Plasticity activates correctly at micro level.* Plastic nodes scale with amplitude (9–14 at A=0.5, 36–70 at A=1.5). Rewiring attempts are substantial (84–815 per wave). The mechanism triggers as designed.
+
+*Rewiring is insufficient.* Reconstruction rate is approximately 10–30% of destruction rate. The deficit accumulates across waves.
+
+*Hardening decays before the next wave.* 0.005/step × 200 steps/window = 1.0 total decay per window, which exceeds the initial bonus of 0.15 by ~7×. Hardened links never survive to the next wave.
+
+*The collapse mechanism is link starvation.* Between waves 1–5, alive_links degrades modestly (~9%). The catastrophic drop to zero occurs during the physics steps of wave 6, not during wave 6's propagation. Quiet-phase decay consumes the remaining topology once cumulative damage pushes below a critical link density threshold.
+
+*v4.2 is a partial positive, partial negative result.* Micro-level mechanisms work as designed. Macro-level outcome fails because: (1) rewiring << destruction, (2) hardening decays too fast, (3) inter-wave recovery window is insufficient. The design achieves Perturbation → Plasticity, but the cycle breaks before Plasticity → Sustained Reorganization.
+
+---
+
+## v4.3 — Encapsulation & Inner Topology (Paradigm Shift)
+
+**Question:** Under steady non-destructive semantic pressure, do topological clusters spontaneously form stable boundaries (encapsulation) that persist long enough to develop internal structure?
+
+**Background:** v4.2's universal collapse at wave 6 exposed a fundamental flaw in the "disaster mechanics" paradigm. Gemini's architectural response: deprecate catastrophic waves entirely, return to steady non-destructive pressure, and observe whether stable boundaries emerge naturally. The key insight: biological/cognitive emergence does not arise from resisting endless destruction but from forming a stable boundary that protects an interior where delicate complexity can develop.
+
+**Method:** Three mechanisms replace v4.2. (1) Steady semantic pressure: all nodes receive mild phase perturbation (prob=0.005, strength=0.03) every step; encapsulated island interiors are shielded. (2) Island detection via density ratio at dual thresholds: clusters detected at S≥0.20 (living structure), internal density measured at S≥0.30 (strong core), external exposure measured against all alive links. density_ratio = mean_internal_degree / mean_external_degree. Encapsulation requires DR≥1.5 for 3 consecutive windows by the same cluster (overlap≥50%). (3) Boundary stabilization: plasticity (factor=1.1) and hardening (bonus=0.05, decay=0.001/step) applied only to encapsulated island boundary nodes; interior remains fully dynamic. Canonical background seeding restored. 14 seeds, 25–50 windows each. 555 total observation windows.
+
+**Results (14 seeds, 555 windows):**
+
+| seed | windows | links (first) | links (last) | cluster windows | DR max | DR≥1.5 count | DR≥1.5 max streak | encapsulated |
+|---|---|---|---|---|---|---|---|---|
+| 42 | 25 | 3362 | 3031 | 14 | 1.60 | 3 | 2 | 0 |
+| 123 | 50 | 3373 | 2887 | 34 | 1.60 | 6 | 1 | 0 |
+| 144 | 50 | 3404 | 3012 | 27 | 1.33 | 0 | 0 | 0 |
+| 233 | 50 | 3397 | 2980 | 26 | 2.00 | 2 | 1 | 0 |
+| 456 | 50 | 3382 | 2902 | 28 | 2.00 | 6 | 1 | 0 |
+| 7 | 50 | 3322 | 2836 | 26 | 2.00 | 5 | 1 | 0 |
+| 77 | 50 | 3391 | 2932 | 27 | 2.00 | 7 | 3 | 0 |
+| 999 | 50 | 3357 | 2897 | 29 | 2.00 | 7 | 3 | 0 |
+| 610 | 50 | 3319 | 2918 | 33 | 2.00 | 7 | 2 | 0 |
+| 789 | 50 | 3422 | 2871 | 30 | 2.00 | 4 | 1 | 0 |
+| 987 | 50 | 3338 | 2943 | 30 | 2.00 | 3 | 1 | 0 |
+| 2024 | 50 | 3400 | 2930 | 33 | 1.60 | 4 | 1 | 0 |
+| 1597 | 27 | 3364 | 2947 | 13 | 1.60 | 1 | 1 | 0 |
+| 2584 | 27 | 3342 | 2997 | 16 | 2.00 | 3 | 1 | 0 |
+
+**Findings:**
+
+*Zero collapse across all 14 seeds.* Links stabilize at 2836–3031 (vs initial 3319–3422). The v4.2 catastrophic collapse is definitively resolved by removing destructive waves and restoring canonical background seeding.
+
+*Clusters are ubiquitous but transient.* 366 cluster-bearing windows across 555 total (66%). Cluster sizes consistently 3–5 nodes. The system is a "primordial soup" of continuously forming and dissolving micro-structures.
+
+*High density ratios are common.* 13/14 seeds produce DR≥1.5. 14/14 produce DR≥1.0. Peak DR=2.0 in 9/14 seeds. The system frequently generates clusters with strong internal cohesion relative to external exposure.
+
+*Encapsulation does not occur.* Zero encapsulation events across 555 windows. The bottleneck is not density ratio but cluster identity persistence: DR≥1.5 appears in consecutive windows (max streak=3 in seeds 77 and 999), but the clusters at window(n) and window(n+1) are composed of different nodes. Overlap matching (≥50%) fails because size 3–5 clusters reconfigure completely between 200-step observation windows.
+
+*The system is at a phase boundary.* The topology fluctuates at the edge of encapsulation, regularly producing boundary-like structures that cannot stabilize under the node-overlap identity criterion. Clusters at this scale (3–5 nodes) are thermally unstable — they form, achieve momentary cohesion, and dissolve before the next observation.
+
+---
+
+## v4.4 — Observation Layer Upgrade (Whirlpool Identity)
+
+**Question:** Does spatial identity tracking resolve the cluster identity persistence failure identified in v4.3, enabling detection of encapsulation (M3)?
+
+**Background:** v4.3 demonstrated that the system produces encapsulation-grade density ratios (DR≥1.5 in 13/14 seeds) but fails M3 because size 3–5 node clusters fully reconfigure between 200-step windows. Node-set overlap (≥50%) cannot track structures that metabolize all their nodes. Gemini's diagnosis: "tracking water molecules to measure a whirlpool." The identity criterion, not the physics, was the bottleneck.
+
+**Method:** Zero physics changes from v4.3. Two observation-only upgrades:
+
+1. *Whirlpool Metric:* Cluster identity defined by topological center proximity, not node-set overlap. Each cluster's center = highest internal-degree node (S≥0.30). At the next window, if a cluster exists within 2 substrate hops of the previous center, it inherits the identity. Clusters can fully metabolize while preserving structural identity.
+
+2. *High-speed observation:* Window reduced from 200 to 50 steps. 200 windows = 10,000 steps per seed. Acts as a high-speed camera to capture intermediate states before turnover.
+
+Sweep: 10 seeds × 200 windows. 2,000 total observation windows.
+
+**Results (10 seeds, 200 windows each, 50 steps/window):**
+
+| seed | links (final) | cluster windows | DR max | DR≥1.5 count | max seen_count | seen≥2 windows | seen≥3 windows | encapsulated |
+|---|---|---|---|---|---|---|---|---|
+| 42 | 2934 | 113 | 2.00 | 9 | 2 | 16 | 0 | 0 |
+| 7 | 2959 | 127 | 2.00 | 17 | 2 | 23 | 0 | 0 |
+| 123 | 2927 | 108 | 2.00 | 15 | **4** | 14 | 3 | 0 |
+| 314 | 2917 | 130 | 2.00 | 18 | 3 | 13 | 1 | 0 |
+| 456 | 2968 | 128 | 2.00 | 13 | 3 | 16 | 1 | 0 |
+| 610 | 2991 | 111 | 2.00 | 24 | 3 | 18 | 2 | 0 |
+| 77 | 2956 | 111 | 2.00 | 21 | 3 | 21 | 1 | 0 |
+| 789 | 2968 | 123 | 2.00 | 12 | 3 | 17 | 1 | 0 |
+| 999 | 2912 | 113 | 2.00 | 22 | 3 | 14 | 2 | 0 |
+| 2024 | 3023 | 128 | 2.00 | 22 | 3 | 26 | 3 | 0 |
+
+**Findings:**
+
+*The whirlpool metric successfully tracks metabolizing clusters.* v4.3 could not achieve seen_count=2 for any cluster. v4.4 achieves seen≥2 in all 10 seeds and seen≥3 in 8/10 seeds, with a peak of seen=4 (seed 123, window 42). This confirms structural continuity exists where node-set overlap fails. The observation upgrade works as designed.
+
+*Identity persistence and high density ratio do not co-occur.* Of 14 windows with seen≥3, only 2 also show DR≥1.5 (seed 789 w40: DR=1.60, seed 999 w168: DR=1.50). The persistent cluster and the high-DR cluster appear to be different entities. The system exhibits two distinct cluster populations: (1) persistent low-DR clusters that maintain spatial identity across windows but lack strong internal cohesion, and (2) transient high-DR clusters that briefly achieve encapsulation-grade density but dissolve within 1–2 windows.
+
+*Zero collapse across 10 seeds, 2,000 windows.* Links stabilize at 2912–3023. Physics layer confirmed indefinitely stable.
+
+*The encapsulation bottleneck has shifted.* v4.3 bottleneck: identity matching (solved by whirlpool). v4.4 bottleneck: the two preconditions for encapsulation — persistence and density — appear in different cluster populations. Encapsulation requires both simultaneously.
+
+---
+
 ## Performance Note
 
 All Cognition experiments run on N=5000 with engine_accel fully enabled (link_strength_sum, exclusion, cycle_finder(C), latent_refresh). Runtime varies by version:
@@ -386,14 +504,17 @@ All Cognition experiments run on N=5000 with engine_accel fully enabled (link_st
 | v3.9 | ~75 min (est.) | BFS cached with 5-window interval (10×/run); last 5 windows always fresh |
 | v4.0 live | ~1 min/turn | Single window (200 steps) + LLM call (~10s) |
 | v4.1 live | ~1 min/turn | Single window (200 steps) + wave propagation + LLM call |
+| v4.2 calibration | ~70s/window | 200-step window + wave + plasticity/hardening; ~13 min for 10 waves |
+| v4.3 sweep | ~130s/window | 200-step window + semantic pressure + island detection; ~115 min for 50 windows |
+| v4.4 sweep | ~47s/window | 50-step window + whirlpool identity; ~165 min for 200 windows |
 
-Parallel execution via GNU parallel at -j 20 on the Ryzen 48-thread workstation (v3.x batch runs). Live orchestrator (v4.0–v4.1) runs single-threaded, single-seed, with cumulative topology.
+Parallel execution via GNU parallel at -j 20 on the Ryzen 48-thread workstation (v3.x batch runs). Live orchestrator (v4.0–v4.1) runs single-threaded. v4.2–v4.4 batch sweeps at -j 5.
 
 ---
 
 ## What This Demonstrates
 
-Cognition v3.0–v3.9 and Language Interface v4.0–v4.1 progressively established:
+Cognition v3.0–v3.9 and Language Interface v4.0–v4.4 progressively established:
 
 1. **Semantic injection preserves the observer ecology** (v3.0: k*=4 maintained, divergence regime unchanged)
 2. **Concept spatial identity is universal** (v3.1: checkerboard mapping 100/100 seeds)
@@ -420,6 +541,13 @@ Cognition v3.0–v3.9 and Language Interface v4.0–v4.1 progressively establish
 23. **Dual-mode reporting (structural/phenomenological) preserves metric traceability** (v4.0: Mode A and B both pass GPT audit on same collapse state)
 24. **Text content does not influence physics under syntactic amp mapping** (v4.0: Aruism 60-run experiment — topology evolution reflects window sequence, not philosophical content)
 25. **Localized wave propagation requires topology-independent substrate** (v4.1: active-link BFS fails; frozen grid substrate resolves propagation)
+26. **Plasticity and hardening work at micro level but cannot prevent macro collapse under repeated wave destruction** (v4.2: rewiring ~10–30% of damage; hardening decays 7× too fast; universal collapse at wave 6)
+27. **The disaster-and-rebuild paradigm has a fundamental limit** (v4.2: cumulative link starvation is a phase transition, not a parameter tuning problem)
+28. **Steady non-destructive pressure sustains a stable dynamic ecosystem** (v4.3: zero collapse across 14 seeds, 555 windows; canonical seeding maintains links at ~3000)
+29. **Density-ratio boundary structures emerge frequently and naturally** (v4.3: DR≥1.5 in 13/14 seeds; DR≥1.0 in 14/14; peak DR=2.0)
+30. **Cluster identity persistence is the bottleneck for encapsulation, not density ratio** (v4.3: size 3–5 clusters fully reconfigure between 200-step windows; node-set overlap fails universally)
+31. **Spatial identity tracking detects structural continuity invisible to node-set overlap** (v4.4: whirlpool metric achieves seen_count=4; 8/10 seeds reach seen≥3; v4.3 could not reach seen=2)
+32. **Persistence and density are decorrelated in the current system** (v4.4: persistent clusters have low DR, high-DR clusters are transient; the two preconditions for encapsulation appear in different cluster populations)
 
 ---
 
@@ -429,9 +557,9 @@ Cognition v3.0–v3.9 and Language Interface v4.0–v4.1 progressively establish
 - Whether collapsed seeds recover if pressure is reduced (hysteresis)
 - Whether the transport-saturation regime scales to N=10,000+ or different concept counts
 - Whether semantic content (not just syntactic length) can be mapped to physics without violating "Structure first, meaning later"
-- Whether wave propagation produces reproducible cluster ecology (homeostasis, proto-reflex, proto-memory) — calibration in progress
-- Whether emergent spatial coordinates from arrival-time logging produce meaningful geometry
-- Whether the "Describe. Do not decide." constraint is sufficient to prevent semantic contamination at scale
+- Whether a single cluster can achieve both persistence (seen≥3) AND high density ratio (DR≥1.5) simultaneously — current evidence shows these properties in separate populations
+- Whether the persistence–density decorrelation is a fundamental property of 3–5 node clusters or an artifact of the current pressure/detection parameters
+- Whether encapsulation (M3) is achievable under the current physics, or requires structural modification to correlate persistence with density
 
 ---
 
@@ -440,13 +568,14 @@ Cognition v3.0–v3.9 and Language Interface v4.0–v4.1 progressively establish
 - Is the 3–6 hop erosion limit a property of the graph diameter, the physics parameters, or the concept zone geometry?
 - Can phase geometry be modified (e.g., θ_A and θ_B closer together) to test whether bridge persistence depends on Δθ magnitude?
 - What happens between 64× and 128×? Is there a critical amplification where collapse onset is 50%?
-- Does the empty deep core imply that concept identity is maintained entirely by boundary dynamics, not internal coherence?
-- What is the wave response curve? Does amplitude produce a monotonic increase in destruction, or is there a phase transition?
-- Do homeostatic clusters (repeatedly reforming after wave disruption) emerge under sustained wave stimulation?
-- Can proto-memory structures (long-lived clusters) form, and do they carry topological information across wave events?
-- Does cluster migration away from wave origins constitute a measurable proto-reflex?
-- Is the frozen grid substrate a temporary scaffold, or does it become the permanent spatial model for ESDE?
-- Can the LLM observer maintain "Describe. Do not decide." fidelity over long conversation histories?
+- Is the 3–5 node cluster size an intrinsic property of N=5000 at S≥0.20, or would larger N produce larger clusters?
+- Does the primordial soup state (v4.3) itself represent a scientifically meaningful regime worth characterizing, independent of encapsulation?
+- Why do persistence and density ratio appear in different cluster populations? Is there a structural reason that spatially anchored clusters cannot also be internally dense?
+- Would per-cluster DR logging (tracking the specific DR of the persistent cluster, not just the window max) confirm or refute the two-population hypothesis?
+- Should encapsulation be redefined as two independent milestones: M3a (identity persistence ≥ 3 windows) and M3b (DR ≥ 1.5 for ≥ 3 windows)?
+- Would reducing semantic pressure (below prob=0.005, strength=0.03) give high-DR clusters more time to stabilize, bridging the persistence gap?
+- Does a different whirlpool_hops value (1 or 3 instead of 2) change the persistence–density correlation?
+- Does the empty deep core (v3.9) relate to the shallow cluster depth (v4.3) — are both manifestations of the same structural sparsity at depth?
 
 ---
 
@@ -466,7 +595,10 @@ Cognition v3.0–v3.9 and Language Interface v4.0–v4.1 progressively establish
 | Cog v3.9 | 2026-03-13 | Gemini→GPT→Claude (Ryzen) | Extreme sweep (16×–128×) + deep-core topology | **Collapse at 128× (2/10); deep core empty (k≈0); erosion saturation confirmed across 3 orders of magnitude** |
 | v4.0 | 2026-03-14 | Gemini→GPT→Claude (Ryzen+QwQ-32B) | Language Interface: State-to-Context pipeline + Transformer docking | **Pipeline 40/40 accuracy; QwQ-32B grounded output (Mode A+B); Aruism 60-run experiment; content-physics gap identified** |
 | v4.1 | 2026-03-14 | Gemini→GPT→Claude (Ryzen) | Wave propagation engine (hard fork); frozen substrate; cluster tracking | **Global diffusion deprecated; localized waves via BFS on grid substrate; calibration in progress** |
+| v4.2 | 2026-03-14 | Gemini→GPT→Claude (Ryzen) | Topological plasticity + structural hardening + resistance tracking | **Plasticity activates; rewiring ~10–30% of damage; hardening decays before next wave; universal collapse at wave 6; micro positive, macro negative** |
+| v4.3 | 2026-03-15 | Gemini→GPT→Claude (Ryzen) | Paradigm shift: steady pressure + island detection + encapsulation lifecycle | **Zero collapse (14/14 seeds); DR≥1.5 in 13/14 seeds; encapsulation=0 (cluster identity persistence insufficient at size 3–5); system at phase boundary** |
+| v4.4 | 2026-03-16 | Gemini→GPT→Claude (Ryzen) | Whirlpool identity (spatial tracking) + 50-step high-speed windows | **seen_count=4 achieved (seed 123); 8/10 seeds reach seen≥3; encapsulation=0 (persistent clusters have low DR, high-DR clusters are transient); persistence–density decorrelation identified** |
 
 ---
 
-*The project has traversed three phases. Cognition (v3.0–v3.9) established that concept regions are semi-permeable membranes with self-limiting plasticity — erosion saturates at 3–6 hops, transport scales without deepening, and the observer survives total internal reworking up to 64× pressure, collapsing only at 128×. The Language Interface (v4.0) proved that an LLM can serve as a strictly grounded vocal cord for the topology, translating physical metrics into first-person reports (structural or phenomenological) with zero hallucination under validator constraint. It also revealed that syntactic text features are insufficient to carry semantic content into the physics — a fundamental architectural gap. The Wave Propagation Engine (v4.1) responds by replacing uniform global diffusion with localized wave dynamics, introducing destruction/activation duality and cluster lifecycle tracking (homeostasis, proto-reflex, proto-memory) as the observational framework for emergent structural behavior. The principle remains: structure first, meaning later.*
+*The project has traversed five paradigmatic phases within Cognition. v3.0–v3.9 established that concept regions are semi-permeable membranes with self-limiting plasticity — erosion saturates at 3–6 hops, transport scales without deepening, and the observer survives total internal reworking. The Language Interface (v4.0) proved LLM grounding works but revealed a content-physics gap. The Wave Propagation Engine (v4.1) introduced localized dynamics. Adaptive Dynamics (v4.2) demonstrated that disaster-and-rebuild has a hard limit: cumulative starvation causes phase-transition collapse. The Paradigm Shift (v4.3) replaced destruction with steady pressure and discovered a primordial soup of continuously forming micro-clusters that reach encapsulation-grade density ratios (DR≥1.5 in 93% of seeds) but cannot sustain identity across observation windows. The Observation Upgrade (v4.4) resolved the identity tracking problem — the whirlpool metric successfully tracks metabolizing clusters across windows (seen_count=4), confirming structural continuity exists where node-set overlap fails — but revealed a deeper challenge: persistence and density ratio appear in different cluster populations. The system can sustain structure (seen≥3 in 80% of seeds) and can produce density (DR≥1.5 in 173 windows across 10 seeds), but not both simultaneously in the same cluster. The next architectural decision must address this persistence–density decorrelation.*
