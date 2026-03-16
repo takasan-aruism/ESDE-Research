@@ -123,9 +123,9 @@ def scan_motifs(state, s_thr=0.30):
                 if w > v:
                     triangles.append(frozenset({u, v, w}))
 
-    # Gamma: 4-cycles (squares) — u-v-w-x-u, all distinct
+    # Gamma: chordless 4-cycles (squares) — u-v-w-x-u with no diagonal
     # Only scan if graph is small enough (< 500 nodes with edges)
-    squares = []
+    squares = set()
     if len(adj) < 500:
         for u in adj:
             for v in adj[u]:
@@ -134,18 +134,14 @@ def scan_motifs(state, s_thr=0.30):
                 for w in adj[v]:
                     if w <= u or w == u:
                         continue
-                    if u in adj[w]:
-                        # u-v-w-u is a triangle, skip
-                        if w in adj[u] and v in adj[w]:
-                            pass
-                        # Check for 4-cycle: u-v-w-x-u
-                        for x in adj[w]:
-                            if x <= v or x == u or x == v:
+                    for x in adj[w]:
+                        if x <= v or x == u or x == v:
+                            continue
+                        if u in adj[x]:
+                            # Reject if any chord exists (u-w or v-x)
+                            if w in adj[u] or x in adj[v]:
                                 continue
-                            if u in adj[x]:
-                                sq = frozenset({u, v, w, x})
-                                if sq not in squares:
-                                    squares.append(sq)
+                            squares.add(frozenset({u, v, w, x}))
 
     tri_set = set(triangles)
 
@@ -223,8 +219,7 @@ class V46Tracker(V45aTracker):
                          substrate=substrate)
         # Motif state per island {iid: set of motif frozensets}
         self.island_motifs = {}
-        # System-level motif counts per window
-        self.motif_history = []  # overrides parent if name clashes — renamed below
+        # System-level motif counts per window (v4.6 specific)
         self.system_motif_history = []
 
     def _jaccard(self, a, b):
@@ -262,6 +257,8 @@ class V46Tracker(V45aTracker):
                 "beta": motif_data.get("beta_count", 0),
                 "gamma": motif_data.get("gamma_count", 0),
             })
+            if len(self.system_motif_history) > 200:
+                self.system_motif_history = self.system_motif_history[-100:]
 
         # ── Hybrid identity matching ──
         # Pre-compute whirlpool neighborhoods (from parent)
@@ -301,45 +298,70 @@ class V46Tracker(V45aTracker):
                         best_id = iid
                         match_method = "jaccard"
 
-                # If Jaccard fails, try whirlpool
+                # If Jaccard fails, try whirlpool (best-Jaccard among overlapping)
                 if best_id is None or best_jaccard < self.params.jaccard_threshold:
+                    wp_best_id = None
+                    wp_best_j = -1.0
                     for iid, hood in active_hoods.items():
                         if iid in matched_old:
                             continue
                         if nodes & hood:
-                            best_id = iid
-                            best_jaccard = self._jaccard(nodes, self.islands[iid].nodes)
-                            match_method = "whirlpool"
-                            break
+                            j = self._jaccard(nodes, self.islands[iid].nodes)
+                            if j > wp_best_j:
+                                wp_best_j = j
+                                wp_best_id = iid
+                    if wp_best_id is not None:
+                        best_id = wp_best_id
+                        best_jaccard = wp_best_j
+                        match_method = "whirlpool"
             else:
-                # Whirlpool only (legacy behavior)
+                # Whirlpool only (legacy behavior) — best-match
+                wp_best_id = None
+                wp_best_j = -1.0
                 for iid, hood in active_hoods.items():
                     if iid in matched_old:
                         continue
                     if nodes & hood:
-                        best_id = iid
-                        best_jaccard = self._jaccard(nodes, self.islands[iid].nodes)
-                        match_method = "whirlpool"
-                        break
+                        j = self._jaccard(nodes, self.islands[iid].nodes)
+                        if j > wp_best_j:
+                            wp_best_j = j
+                            wp_best_id = iid
+                if wp_best_id is not None:
+                    best_id = wp_best_id
+                    best_jaccard = wp_best_j
+                    match_method = "whirlpool"
 
             # ── Graveyard check ──
             if best_id is None or (best_jaccard < self.params.jaccard_threshold
                                    and match_method != "whirlpool"):
+                # Jaccard match against graveyard — best match
+                g_best_id = None
+                g_best_j = 0.0
                 for gid, info in self.graveyard.items():
                     j = self._jaccard(nodes, info.nodes)
-                    if j >= self.params.jaccard_threshold:
-                        best_id = gid
-                        best_jaccard = j
-                        match_method = "jaccard_grave"
-                        break
+                    if j >= self.params.jaccard_threshold and j > g_best_j:
+                        g_best_j = j
+                        g_best_id = gid
+                if g_best_id is not None:
+                    best_id = g_best_id
+                    best_jaccard = g_best_j
+                    match_method = "jaccard_grave"
+
+                # Whirlpool fallback on graveyard — best match
                 if best_id is None:
+                    gw_best_id = None
+                    gw_best_j = -1.0
                     for gid, hood in grave_hoods.items():
                         if nodes & hood:
-                            best_id = gid
-                            best_jaccard = self._jaccard(
+                            j = self._jaccard(
                                 nodes, self.graveyard[gid].nodes)
-                            match_method = "whirlpool_grave"
-                            break
+                            if j > gw_best_j:
+                                gw_best_j = j
+                                gw_best_id = gid
+                    if gw_best_id is not None:
+                        best_id = gw_best_id
+                        best_jaccard = gw_best_j
+                        match_method = "whirlpool_grave"
 
             # ── Classify identity ──
             # Per-island motifs
@@ -385,10 +407,9 @@ class V46Tracker(V45aTracker):
                     boundary_nodes=boundary, interior_nodes=interior,
                     center_node=center,
                     born_window=old.born_window,
-                    encapsulated_window=getattr(old, 'encapsulated_window', 0),
+                    encapsulated_window=old.encapsulated_window,
                     last_seen_window=self.window,
-                    strict_seen_count=getattr(old, 'strict_seen_count',
-                                              old.seen_count) + strict_inc,
+                    strict_seen_count=old.strict_seen_count + strict_inc,
                     relaxed_seen_count=old.seen_count + 1,
                     density_ratio=ratio,
                     status=old.status,
@@ -427,7 +448,7 @@ class V46Tracker(V45aTracker):
                     center_node=center,
                     born_window=old_g.born_window,
                     last_seen_window=self.window,
-                    strict_seen_count=getattr(old_g, 'strict_seen_count', 1) + 1,
+                    strict_seen_count=old_g.strict_seen_count + 1,
                     relaxed_seen_count=old_g.seen_count + 1,
                     density_ratio=ratio,
                     identity_class="reformation",
@@ -466,10 +487,8 @@ class V46Tracker(V45aTracker):
         self.islands = new_islands
 
         # ── Hardening for encapsulated boundaries ──
-        d = self.params.hardening_decay if hasattr(self.params, 'hardening_decay') else 0.001
         for iid, info in self.islands.items():
             if info.status == "encapsulated":
-                h_bonus = self.params.hardening_bonus if hasattr(self.params, 'hardening_bonus') else 0.05
                 for n in info.boundary_nodes:
                     if n not in state.alive_n:
                         continue
@@ -478,12 +497,13 @@ class V46Tracker(V45aTracker):
                             lk = state.key(n, nb)
                             if lk in state.alive_l:
                                 hardening[lk] = min(
-                                    0.5, hardening.get(lk, 0) + h_bonus)
+                                    0.5, hardening.get(lk, 0) + self.params.hardening_bonus)
+        # Decay then prune (keys hitting 0 removed in same window)
+        for k in list(hardening):
+            hardening[k] -= self.params.hardening_decay
         dead = [k for k, v in hardening.items() if v <= 0]
         for k in dead:
             del hardening[k]
-        for k in hardening:
-            hardening[k] -= d
 
         # ── Standard isum for backward compatibility ──
         isum = self._summary()
@@ -518,8 +538,7 @@ class V46Tracker(V45aTracker):
 
         # Relaxed vs strict lifespan
         relaxed = [info.relaxed_seen_count for info in self.islands.values()]
-        strict = [getattr(info, 'strict_seen_count', info.seen_count)
-                  for info in self.islands.values()]
+        strict = [info.strict_seen_count for info in self.islands.values()]
         base["max_relaxed_lifespan"] = max(relaxed) if relaxed else 0
         base["max_strict_lifespan"] = max(strict) if strict else 0
 
@@ -557,7 +576,7 @@ class V46Tracker(V45aTracker):
                 "identity_class": info.identity_class,
                 "jaccard": info.jaccard_score,
                 "relaxed_seen": info.relaxed_seen_count,
-                "strict_seen": getattr(info, 'strict_seen_count', info.seen_count),
+                "strict_seen": info.strict_seen_count,
                 "motifs_gained": info.motifs_gained,
                 "motifs_lost": info.motifs_lost,
             }

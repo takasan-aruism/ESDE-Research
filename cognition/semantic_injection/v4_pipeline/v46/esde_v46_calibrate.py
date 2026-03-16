@@ -248,11 +248,14 @@ def aggregate(output_dir):
             d = json.load(fh)
         m = d["meta"]
         pd = d.get("pd_convergence_summary", {})
+        res_all = d.get("resonance_per_island", {})
+        total_incorp = sum(v.get("resonant_in", 0) + v.get("dissonant_in", 0)
+                          for v in res_all.values())
         print(f"  {m['seed']:>6} {m['max_relaxed_lifespan']:>5} "
               f"{m['max_strict_lifespan']:>5} "
               f"{m['final_alive_links']:>5} "
               f"{m['total_accretion_boosts']:>6} "
-              f"{0:>6} "  # incorporations from resonance obs
+              f"{total_incorp:>6} "
               f"{len(d.get('personalities',{})):>4} "
               f"{pd.get('total_both_events',0):>3}")
     print()
