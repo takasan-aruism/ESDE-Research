@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """
-ESDE v4.8c — Axiomatic Parameter Discovery Calibration
-=========================================================
-Phase 1: Two gradient-relaxation loops (compound_restore, inert_penalty).
-No target values. Update every 3 windows.
+ESDE v4.8c Phase 2 — State-Dependent Viscosity Calibration
+=============================================================
+Meta-α: α(t) = α_min + β × tanh(|ΔL| / V_scale). Stateless.
 
 USAGE
 -----
@@ -59,8 +58,8 @@ LOG_FIELDS = [
     "cooled_nodes", "mean_cooling_factor",
     # v4.8b
     "z_hardened", "z_softened", "z_tensioned",
-    # v4.8c (axiomatic drift)
-    "compound_restore", "inert_penalty",
+    # v4.8c Phase 2
+    "alpha_t", "compound_restore", "inert_penalty",
     "delta_L", "delta_Z0", "drift_applied",
 ]
 
@@ -69,15 +68,14 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    drift_mode = "drift" if encap_params.drift_enabled else "static"
-    init_restore = encap_params.z_decay_compound_restore
-    init_inert = encap_params.z_decay_inert_penalty
+    drift_mode = "viscosity" if encap_params.drift_enabled else "static"
 
-    print(f"\n  ESDE v4.8c Axiomatic Parameter Discovery")
+    print(f"\n  ESDE v4.8c Phase 2 — State-Dependent Viscosity")
     print(f"  seed={seed} windows={n_windows} steps/win={window_steps}")
-    print(f"  mode={drift_mode} alpha={encap_params.drift_alpha} "
-          f"interval={encap_params.drift_interval}")
-    print(f"  init: restore={init_restore} inert={init_inert}")
+    print(f"  mode={drift_mode} α_min={encap_params.alpha_min} "
+          f"β={encap_params.alpha_beta} V_scale={encap_params.alpha_v_scale}")
+    print(f"  init: restore={encap_params.z_decay_compound_restore} "
+          f"inert={encap_params.z_decay_inert_penalty}")
     print(f"  Injection...", flush=True)
 
     engine = V48cEngine(seed=seed, encap_params=encap_params)
@@ -93,9 +91,10 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
 
     print(f"\n  {'win':>4} {'clst':>4} {'mxSz':>4} {'rLif':>4} "
           f"{'mxDR':>5} {'drft':>4} "
-          f"{'rest':>7} {'iPen':>6} {'dL':>6} {'dZ0':>6} "
+          f"{'α(t)':>7} {'rest':>7} {'iPen':>6} "
+          f"{'dL':>6} {'dZ0':>6} "
           f"{'gM':>2} {'lnks':>5} {'M':>1} {'sec':>4}")
-    print(f"  {'-'*80}")
+    print(f"  {'-'*85}")
 
     for w in range(n_windows):
         t0 = time.time()
@@ -112,8 +111,9 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
         # Current drift state
         traj = engine.drift_trajectory
         cur = traj[-1] if traj else {}
-        cur_restore = cur.get("compound_restore", init_restore)
-        cur_inert = cur.get("inert_penalty", init_inert)
+        cur_alpha = cur.get("alpha_t", encap_params.alpha_min)
+        cur_restore = cur.get("compound_restore", encap_params.z_decay_compound_restore)
+        cur_inert = cur.get("inert_penalty", encap_params.z_decay_inert_penalty)
         cur_dL = cur.get("delta_L", 0)
         cur_dZ0 = cur.get("delta_Z0", 0)
         cur_applied = cur.get("applied", False)
@@ -173,7 +173,8 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
             "z_hardened": zs.get("hardened", 0),
             "z_softened": zs.get("softened", 0),
             "z_tensioned": zs.get("tensioned", 0),
-            # v4.8c
+            # v4.8c Phase 2
+            "alpha_t": cur_alpha,
             "compound_restore": cur_restore,
             "inert_penalty": cur_inert,
             "delta_L": cur_dL,
@@ -189,7 +190,7 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
               f"{isum['max_relaxed_lifespan']:>4} "
               f"{isum['max_density_ratio']:>5.2f} "
               f"{isum['identity_drift']:>4} "
-              f"{cur_restore:>7.4f} {cur_inert:>6.4f} "
+              f"{cur_alpha:>7.4f} {cur_restore:>7.4f} {cur_inert:>6.4f} "
               f"{cur_dL:>6} {cur_dZ0:>6} "
               f"{isum['motif_gamma']:>2} "
               f"{frame.alive_links:>5} "
@@ -204,10 +205,11 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
         "seed": seed, "n_windows": n_windows,
         "window_steps": window_steps,
         "drift_mode": drift_mode,
-        "drift_alpha": encap_params.drift_alpha,
-        "drift_interval": encap_params.drift_interval,
-        "init_restore": init_restore,
-        "init_inert": init_inert,
+        "alpha_min": encap_params.alpha_min,
+        "alpha_beta": encap_params.alpha_beta,
+        "alpha_v_scale": encap_params.alpha_v_scale,
+        "init_restore": encap_params.z_decay_compound_restore,
+        "init_inert": encap_params.z_decay_inert_penalty,
         "final_restore": cur_restore,
         "final_inert": cur_inert,
         "final_alive_links": frame.alive_links,
@@ -222,8 +224,10 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
     print(f"\n  {'='*60}")
     print(f"  SUMMARY (seed={seed}, {drift_mode})")
     print(f"  {'='*60}")
-    print(f"  Init:  restore={init_restore}  inert={init_inert}")
+    print(f"  Init:  restore={encap_params.z_decay_compound_restore}  "
+          f"inert={encap_params.z_decay_inert_penalty}")
     print(f"  Final: restore={cur_restore:.6f}  inert={cur_inert:.6f}")
+    print(f"  Final α(t): {cur_alpha:.6f}")
     print(f"  Max relaxed lifespan:   {isum['max_relaxed_lifespan']}")
     print(f"  Max cluster size:       {max(int(fr.max_cluster_size) for fr in engine.frames)}")
     print(f"  Max milestone:          {max_ms}")
@@ -240,18 +244,18 @@ def aggregate(output_dir):
         return
 
     print(f"\n  {'='*80}")
-    print(f"  ESDE v4.8c — Aggregate ({len(json_files)} runs)")
+    print(f"  ESDE v4.8c Phase 2 — Aggregate ({len(json_files)} runs)")
     print(f"  {'='*80}")
 
-    print(f"\n  {'seed':>6} {'mode':>6} {'initR':>6} {'finR':>7} "
+    print(f"\n  {'seed':>6} {'mode':>10} {'initR':>6} {'finR':>7} "
           f"{'initI':>6} {'finI':>7} "
           f"{'rLife':>5} {'mxSz':>5} {'links':>5} {'mxM':>3}")
-    print(f"  {'-'*70}")
+    print(f"  {'-'*75}")
     for jf in json_files:
         with open(jf) as fh:
             d = json.load(fh)
         m = d["meta"]
-        print(f"  {m['seed']:>6} {m['drift_mode']:>6} "
+        print(f"  {m['seed']:>6} {m['drift_mode']:>10} "
               f"{m['init_restore']:>6.3f} {m['final_restore']:>7.4f} "
               f"{m['init_inert']:>6.3f} {m['final_inert']:>7.4f} "
               f"{m['max_relaxed_lifespan']:>5} "
@@ -263,13 +267,15 @@ def aggregate(output_dir):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="ESDE v4.8c Axiomatic Parameter Discovery")
+        description="ESDE v4.8c Phase 2 State-Dependent Viscosity")
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--windows", type=int, default=200)
     parser.add_argument("--window-steps", type=int, default=V48C_WINDOW)
     parser.add_argument("--output", type=str, default="calibration_v48c")
-    # v4.8c drift
-    parser.add_argument("--drift-alpha", type=float, default=0.0001)
+    # v4.8c Phase 2
+    parser.add_argument("--alpha-min", type=float, default=0.0001)
+    parser.add_argument("--alpha-beta", type=float, default=0.01)
+    parser.add_argument("--alpha-v-scale", type=float, default=1000.0)
     parser.add_argument("--drift-interval", type=int, default=3)
     parser.add_argument("--init-restore", type=float, default=0.5)
     parser.add_argument("--init-inert", type=float, default=0.02)
@@ -303,7 +309,9 @@ def main():
         z_decay_compound_restore=args.init_restore,
         z_decay_inert_penalty=args.init_inert,
         z_phase_hetero_dampen=args.z_hetero_dampen,
-        drift_alpha=args.drift_alpha,
+        alpha_min=args.alpha_min,
+        alpha_beta=args.alpha_beta,
+        alpha_v_scale=args.alpha_v_scale,
         drift_interval=args.drift_interval,
         drift_enabled=not args.no_drift,
     )

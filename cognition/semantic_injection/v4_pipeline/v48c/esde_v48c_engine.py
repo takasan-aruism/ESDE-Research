@@ -1,29 +1,41 @@
 #!/usr/bin/env python3
 """
-ESDE v4.8c — Axiomatic Parameter Discovery
-=============================================
-Phase : v4.8c (Parameter Layer as Third Term)
+ESDE v4.8c Phase 2 — State-Dependent Viscosity
+=================================================
+Phase : v4.8c (Axiomatic Parameter Discovery, Phase 2)
 Role  : Claude (Implementation)
-Arch  : Gemini (+ Taka / ESDE Formal Theory) | Audit: GPT
+Arch  : Gemini (+ Taka) | Audit: GPT
 
-Grounded in ESDE Formal Theory:
-  Axiom T: Binary relations (Physics ↔ Topology) remain latent.
-           The Parameter Layer is the Third Term (C) that closes
-           the ternary loop, enabling autonomous emergence.
-  Axiom L: dx/dt = -α ∇F
-           Parameters move to minimize structural volatility (∇F),
-           NOT toward human-defined targets.
+Phase 2: Meta-α via State-Dependent Viscosity (Proposal B).
 
-Phase 1: Two loops only.
-  Loop A: compound_restore ← ΔL (link acceleration)
-  Loop B: inert_penalty    ← ΔZ0 (void acceleration)
+  α(t) = α_min + β × tanh(|ΔL(t)| / V_scale)
 
-Update frequency: every 3 windows (allow dynamics to settle).
-No target values. No direct loop interaction. Coupling occurs
-only through ESDE state evolution.
+  α_min   = 0.0001
+  β       = 0.01
+  V_scale = 1000
 
+  α is a STATELESS function of current systemic tension |ΔL|.
+  No memory. No accumulation. No smoothing. No hidden targets.
+
+  When |ΔL| is large (bubble or crash): α rises → parameters
+  respond faster to structural volatility.
+  When |ΔL| is small (near equilibrium): α collapses to α_min
+  → minimal intervention.
+
+  This is Axiom L applied recursively: the learning rate itself
+  is driven by the same gradient signal as the parameters.
+
+Phase 1 loops unchanged:
+  Loop A: compound_restore ← -α(t) × tanh(ΔL / scale_L)
+  Loop B: inert_penalty    ← -α(t) × tanh(ΔZ0 / scale_Z0)
+
+Update frequency: every 3 windows.
 Physics operators: UNCHANGED.
 Observation layer: UNCHANGED (v4.6 tracker + motifs).
+
+IMPORTANT (GPT audit §6): Rapid α fluctuations during bubble
+peaks and sharp drops during contraction are EXPECTED, not bugs.
+Do NOT clamp, smooth, or dampen α.
 """
 
 import sys, math, time
@@ -68,10 +80,12 @@ V48C_WINDOW = 50
 # ================================================================
 @dataclass
 class V48cEncapsulationParams(V48bEncapsulationParams):
-    """v4.8c: axiomatic parameter discovery settings."""
-    # Learning rate (shared by all loops)
-    drift_alpha: float = 0.0001
-    # Saturation scale for tanh (controls gradient sensitivity)
+    """v4.8c Phase 2: state-dependent viscosity parameters."""
+    # Meta-α constants (Proposal B — stateless)
+    alpha_min: float = 0.0001
+    alpha_beta: float = 0.01
+    alpha_v_scale: float = 1000.0
+    # Loop saturation scales
     drift_scale_L: float = 1000.0    # Loop A (link acceleration)
     drift_scale_Z0: float = 500.0    # Loop B (void acceleration)
     # Parameter bounds
@@ -79,9 +93,9 @@ class V48cEncapsulationParams(V48bEncapsulationParams):
     drift_restore_max: float = 1.0
     drift_inert_min: float = 0.0
     drift_inert_max: float = 0.10
-    # Update cadence (windows between parameter updates)
+    # Update cadence
     drift_interval: int = 3
-    # Enable/disable (for ablation)
+    # Enable/disable
     drift_enabled: bool = True
 
 
@@ -90,18 +104,14 @@ class V48cEncapsulationParams(V48bEncapsulationParams):
 # ================================================================
 class V48cEngine(V48bEngine):
     """
-    V48bEngine + Axiomatic Parameter Discovery.
+    V48bEngine + Axiomatic Parameter Discovery (Phase 2).
 
-    The Parameter Layer is the Third Term (Axiom T). It observes
-    structural gradients and adjusts biology-layer parameters via
-    gradient relaxation (Axiom L: dx/dt = -α ∇F).
+    Meta-α: α(t) = α_min + β × tanh(|ΔL(t)| / V_scale)
+    Stateless. No memory. No accumulation.
 
-    Two loops (Phase 1):
-      A) compound_restore ← -α × tanh(ΔL / scale)
-      B) inert_penalty    ← -α × tanh(ΔZ0 / scale)
-
-    Updated every drift_interval windows. No target values.
-    Destructive emergence (crashes) is permitted.
+    Two loops:
+      A) compound_restore ← -α(t) × tanh(ΔL / scale_L)
+      B) inert_penalty    ← -α(t) × tanh(ΔZ0 / scale_Z0)
     """
 
     def __init__(self, seed=42, N=5000, plb=0.007, rate=0.002,
@@ -128,13 +138,13 @@ class V48cEngine(V48bEngine):
 
     def step_window(self, steps=V48C_WINDOW):
         """
-        Run v4.8b step_window, then apply axiomatic parameter drift.
+        Run v4.8b step_window, then apply axiomatic parameter drift
+        with state-dependent viscosity.
 
         First window records baseline only (no drift applied).
         Drift updates occur every drift_interval windows thereafter.
         """
         # ── Full v4.8b physics + observation ──
-        # last_isum is set by V48bEngine.step_window() via parent chain.
         frame = super().step_window(steps=steps)
 
         # ── v4.8c: Axiomatic parameter drift ──
@@ -146,64 +156,61 @@ class V48cEngine(V48bEngine):
         post_links = frame.alive_links
         post_z0 = self._count_z0_links()
 
-        # Compute gradients (∇F = structural volatility)
-        # delta is net change since LAST DRIFT APPLICATION,
-        # not since last window. This allows dynamics to settle
-        # over the full interval before measuring net effect.
+        # Compute gradients (net change since last drift application)
         if self.prev_alive_links > 0:
             delta_L = post_links - self.prev_alive_links
         else:
-            delta_L = 0  # first window: set baseline
+            delta_L = 0
             self.prev_alive_links = post_links
 
         if self.prev_z0_links > 0:
             delta_Z0 = post_z0 - self.prev_z0_links
         else:
-            delta_Z0 = 0  # first window: set baseline
+            delta_Z0 = 0
             self.prev_z0_links = post_z0
+
+        # Compute α(t) — stateless, instantaneous function of |ΔL|
+        p = self.island_tracker.params
+        alpha_t = p.alpha_min + p.alpha_beta * math.tanh(
+            abs(delta_L) / p.alpha_v_scale)
 
         # Check update cadence
         self._drift_window_counter += 1
         applied = False
 
-        if self._drift_window_counter >= self.island_tracker.params.drift_interval:
+        if self._drift_window_counter >= p.drift_interval:
             self._drift_window_counter = 0
             applied = True
 
-            p = self.island_tracker.params
-            alpha = p.drift_alpha
-
-            # Loop A: compound_restore ← -α × tanh(ΔL / scale)
+            # Loop A: compound_restore ← -α(t) × tanh(ΔL / scale_L)
             grad_L = math.tanh(delta_L / p.drift_scale_L)
             old_restore = p.z_decay_compound_restore
-            new_restore = old_restore - (alpha * grad_L)
+            new_restore = old_restore - (alpha_t * grad_L)
             new_restore = max(p.drift_restore_min,
                               min(p.drift_restore_max, new_restore))
             p.z_decay_compound_restore = new_restore
 
-            # Loop B: inert_penalty ← -α × tanh(ΔZ0 / scale)
+            # Loop B: inert_penalty ← -α(t) × tanh(ΔZ0 / scale_Z0)
             grad_Z0 = math.tanh(delta_Z0 / p.drift_scale_Z0)
             old_inert = p.z_decay_inert_penalty
-            new_inert = old_inert - (alpha * grad_Z0)
+            new_inert = old_inert - (alpha_t * grad_Z0)
             new_inert = max(p.drift_inert_min,
                             min(p.drift_inert_max, new_inert))
             p.z_decay_inert_penalty = new_inert
 
             # Update baseline ONLY on drift application
-            # Next interval measures net change from this point
             self.prev_alive_links = post_links
             self.prev_z0_links = post_z0
 
-        # Log trajectory (every window, regardless of update)
-        p = self.island_tracker.params
+        # Log trajectory (every window — mandatory per GPT audit §4)
         self.drift_trajectory.append({
             "window": frame.window,
+            "alpha_t": round(alpha_t, 6),
             "compound_restore": round(p.z_decay_compound_restore, 6),
             "inert_penalty": round(p.z_decay_inert_penalty, 6),
             "delta_L": delta_L,
             "delta_Z0": delta_Z0,
-            "grad_L": round(math.tanh(delta_L / p.drift_scale_L), 6),
-            "grad_Z0": round(math.tanh(delta_Z0 / p.drift_scale_Z0), 6),
+            "abs_delta_L": abs(delta_L),
             "alive_links": post_links,
             "z0_links": post_z0,
             "applied": applied,
