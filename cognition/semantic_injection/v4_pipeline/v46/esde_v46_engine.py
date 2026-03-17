@@ -87,6 +87,9 @@ class V46EncapsulationParams(V45bEncapsulationParams):
     # Motif scanner
     motif_scan_enabled: bool = True
     motif_s_threshold: float = 0.30      # link strength for motif detection
+    # Hardening (used in V46Tracker.step for encapsulated boundaries)
+    hardening_bonus: float = 0.05        # S bonus for encapsulated boundary links
+    hardening_decay: float = 0.001       # per-window decay of hardening
 
 
 # ================================================================

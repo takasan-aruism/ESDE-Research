@@ -126,6 +126,10 @@ def apply_z_decay_correction(state, params):
             state.S[lk] = max(0.0, state.S[lk] - params.z_decay_inert_penalty)
             stats["softened"] += 1
             # Check if link should die
+            # NOTE: Links killed here are not counted in standard decay
+            # statistics (already computed in step_decay_exclusion).
+            # Frame's alive_links will be correct (measured after all
+            # corrections), but per-step decay counters may undercount.
             if state.S[lk] < state.EXTINCTION:
                 state.kill_link(lk)
 
@@ -173,8 +177,13 @@ def apply_z_phase_correction(state, params):
             elif diff < -math.pi:
                 diff += 2 * math.pi
 
-            # Reverse (1 - dampen) of the sync that occurred
-            reverse = diff * (1.0 - dampen) * 0.1  # 0.1 = K_sync baseline
+            # Reverse (1 - dampen) of the sync that occurred.
+            # NOTE: 0.1 approximates K_sync from frozen engine (v19g_canon).
+            # This is a heuristic correction on the current phase difference,
+            # not an exact reversal of the sync delta (which depends on S, R,
+            # and other factors inside step_pre_chemistry). Acceptable as a
+            # first-order approximation for persistent phase tension.
+            reverse = diff * (1.0 - dampen) * 0.1
             state.theta[n1] = (state.theta[n1] - reverse * 0.5) % (2 * math.pi)
             state.theta[n2] = (state.theta[n2] + reverse * 0.5) % (2 * math.pi)
             stats["tensioned"] += 1
@@ -200,6 +209,7 @@ class V48bEngine(V48Engine):
         self.total_z_hardened = 0
         self.total_z_softened = 0
         self.total_z_tensioned = 0
+        self.last_isum = {}  # explicit init (parent sets it too, belt-and-suspenders)
 
     def step_window(self, steps=V48B_WINDOW):
         """
