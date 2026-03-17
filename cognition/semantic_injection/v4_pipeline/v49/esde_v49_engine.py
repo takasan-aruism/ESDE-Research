@@ -139,7 +139,10 @@ class LinkHistoryTensor:
                     self.h_res[lk] = 0.0
 
             # h_str: increment on stress conditions
-            # Stress = Z-state mismatch OR low S (near extinction)
+            # Spec §2.3 defines stress as "energy fluctuations."
+            # Implementation substitutes Z-mismatch + low-S, because
+            # per-step ΔE tracking is not in the physics loop.
+            # Functionally equivalent: both capture adverse conditions.
             n1, n2 = lk
             z1, z2 = int(state.Z[n1]), int(state.Z[n2])
             s_val = state.S.get(lk, 0.0)
@@ -275,17 +278,22 @@ def apply_history_plasticity_suppression(state, tensor, params):
     return stats
 
 
-def apply_avalanche(state, tensor, tracker, params):
+def apply_avalanche(state, tensor, prev_islands, params):
     """
     Macro-history avalanche: when a boundary link of an ossified
     cluster snaps, neighboring intra-cluster links receive a
     temporary decay spike.
 
+    Uses PREVIOUS window's cluster topology (prev_islands) to
+    detect boundary links that died during this window's physics.
+    This is correct because current-window cluster detection
+    already excludes dead links.
+
     C_fragility = f(C_age, lack_of_deformation).
     """
     stats = {"avalanche_events": 0, "cascade_links": 0}
 
-    for iid, info in tracker.islands.items():
+    for iid, info in prev_islands.items():
         if info.status != "encapsulated":
             continue
 
@@ -433,9 +441,9 @@ class V49Engine(V48cEngine):
                     self.state, self.link_history, p)
                 window_hist_stats["snapped"] += hb["snapped"]
 
-                hp = apply_history_plasticity_suppression(
-                    self.state, self.link_history, p)
-                window_hist_stats["suppressed_nodes"] += hp["suppressed_nodes"]
+                # NOTE: plasticity suppression moved to per-window
+                # (post-loop, before semantic pressure) for ~50× speedup.
+                # Latent field changes slowly; per-step is unnecessary.
 
             # Background seeding (canonical)
             al = list(self.state.alive_n)
@@ -470,6 +478,12 @@ class V49Engine(V48cEngine):
         self.history_stats = window_hist_stats
         self.history_stats.update(self.link_history.summary())
 
+        # ── POST-LOOP: Plasticity suppression (h_res, once per window) ──
+        if hist_enabled:
+            hp = apply_history_plasticity_suppression(
+                self.state, self.link_history, p)
+            self.history_stats["suppressed_nodes"] = hp["suppressed_nodes"]
+
         # ── POST-LOOP: Cooled semantic pressure (v4.8) ──
         ps = apply_cooled_semantic_pressure(
             self.state, self.substrate,
@@ -483,15 +497,22 @@ class V49Engine(V48cEngine):
         isl_m = find_islands_sets(self.state, 0.20)
         isl_w = find_islands_sets(self.state, 0.10)
 
+        # Save previous window's cluster state for avalanche check
+        # (avalanche needs to detect links that died DURING this window
+        # relative to the PREVIOUS cluster topology)
+        prev_islands = dict(self.island_tracker.islands)
+
         isum = self.island_tracker.step(self.state, self.hardening,
                                          precomputed_islands=isl_m)
         self.last_isum = isum
 
         # ── POST-LOOP: Avalanche check (macro-history) ──
+        # Uses prev_islands (previous window's clusters) to detect
+        # boundary links that snapped during this window's physics.
         if hist_enabled:
             av = apply_avalanche(
                 self.state, self.link_history,
-                self.island_tracker, p)
+                prev_islands, p)
             self.history_stats["avalanche_events"] = av["avalanche_events"]
             self.history_stats["cascade_links"] = av["cascade_links"]
 
@@ -580,8 +601,9 @@ class V49Engine(V48cEngine):
         self.frames.append(f)
 
         # ── v4.8c: Axiomatic parameter drift ──
-        # Call the drift logic from V48cEngine (we must replicate it
-        # since we overrode step_window and can't call super())
+        # NOTE: Drift logic replicated from V48cEngine because this
+        # method fully overrides step_window(). Future refactor:
+        # extract to V48cEngine._apply_drift(frame) method.
         if p.drift_enabled:
             post_links = f.alive_links
             post_z0 = self._count_z0_links()

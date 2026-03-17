@@ -46,6 +46,7 @@ LOG_FIELDS = [
     "mean_turnover_rate",
     "pd_p_count", "pd_d_count", "pd_both_count",
     "resonant_incorporations", "dissonant_incorporations",
+    "resonant_rejections", "dissonant_rejections",
     "resonance_total_events", "resonance_ratio",
     "personalities_recorded",
     # v4.6
@@ -156,6 +157,8 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
             "pd_both_count": isum["pd_both_count"],
             "resonant_incorporations": isum["resonant_incorporations"],
             "dissonant_incorporations": isum["dissonant_incorporations"],
+            "resonant_rejections": isum["resonant_rejections"],
+            "dissonant_rejections": isum["dissonant_rejections"],
             "resonance_total_events": isum["resonance_total_events"],
             "resonance_ratio": isum["resonance_ratio"],
             "personalities_recorded": isum["personalities_recorded"],
