@@ -1,32 +1,28 @@
 #!/usr/bin/env python3
 """
-ESDE v4.9 — History Layer + Axiomatic Void (Phase 2b)
-=======================================================
-Phase : v4.9 (P1: Structural Fatigue + P2b: Axiomatic Void)
+ESDE v4.9 — History + Axiomatic Void + Substrate Diffusion (Phase 3)
+======================================================================
+Phase : v4.9 (P1: History + P2b: Axiomatic Void + P3: Substrate Diffusion)
 Role  : Claude (Implementation)
 Arch  : Gemini (+ Taka) | Audit: GPT
 
 Phase 1 (Past): Link Tensor H_ij = {h_age, h_res, h_str}
-  Maturation, rigidity, brittleness, avalanche.
+Phase 2b (Future): Axiomatic Void (topological persistence, Loop C for γ)
 
-Phase 2b (Future): Axiomatic Void
-  Generation: snap echo → V_i += k × h_age
-  Persistence: V_i decays ONLY proportional to local link density.
-    V_i *= exp(-local_degree_i). Empty regions → V persists
-    indefinitely. Dense regions → V decays rapidly.
-    NO static decay rate λ. (Architect directive: no manual params)
-  Action: divergence pressure → latent boost ∝ γ×tanh(V_i+V_j).
-    γ is auto-discovered via Loop C (renewal deficit feedback).
-  Consumption: V consumed on link birth.
+Phase 3 (Spatial Propagation):
+  Void diffuses on the FROZEN SUBSTRATE (v4.1 4-neighbor grid),
+  NOT on active link topology. This re-couples isolated void
+  information with active structural regions.
 
-Loop C (γ discovery):
-  Observable: D_ren = total_snaps - void_induced_births (3-window)
-  Rule: Δγ = +α(t) × tanh(D_ren / 1000)
-  If destruction > renewal → γ increases → stronger void pressure.
-  If renewal catches up → γ eases back.
+  Flow rule (per step, after snap echo, before birth):
+    Flow_i→j = (V_i − V_j) × exp(−local_degree_i) × C_diff
+    Only if V_i > V_j. Source-degree weighting only.
+    Strict conservation of total void mass.
+
+  C_diff is a FIXED physical constant (0.02). No tuning. No drift.
 
 Physics operators: UNCHANGED.
-v4.8c axiomatic drift (Loops A, B, meta-α): PRESERVED.
+v4.8c axiomatic drift (Loops A, B, C, meta-α): PRESERVED.
 
 NOTE: Full override of parent step_window(). Intentional for
 physics isolation.
@@ -107,7 +103,8 @@ class V49EncapsulationParams(V48cEncapsulationParams):
     void_gamma_max: float = 20.0
     void_consumption: float = 0.1  # V consumed per link birth
     void_v_max: float = 5.0       # cap on V_i
-    void_diffusion: float = 0.01  # spatial diffusion to neighbors
+    # Phase 3: substrate diffusion (FIXED physical constant, no tuning)
+    void_c_diff: float = 0.02     # diffusion coefficient on frozen substrate
     # NOTE: void_decay_lambda REMOVED. Decay is now topology-dependent:
     # V_i *= exp(-local_degree_i). No manual parameter.
     # Toggles
@@ -420,25 +417,81 @@ def apply_void_consumption(state, void_field, params, pre_alive_l,
     return stats
 
 
-def apply_void_diffusion(void_field, state, params):
-    """Optional weak spatial diffusion of V_i to neighbors."""
-    if params.void_diffusion <= 0:
-        return
-    diff = params.void_diffusion
-    # Accumulate diffusion deltas to avoid order-dependence
+def apply_void_substrate_diffusion(void_field, state, substrate, params,
+                                    void_active):
+    """
+    Phase 3: Substrate-based void diffusion.
+    Void flows on the FROZEN 4-neighbor grid, NOT on active topology.
+    This re-couples isolated nodes (degree=0) with active regions.
+
+    Flow rule:
+      Flow_i→j = (V_i − V_j) × exp(−local_degree_i) × C_diff
+      Only if V_i > V_j. Source-degree weighting only.
+
+    Strict conservation: deltas sum to zero (order-independent).
+    C_diff is a FIXED physical constant.
+
+    Returns stats for mandatory logging.
+    """
+    stats = {"diffusion_events": 0, "void_to_active": 0}
+    c_diff = params.void_c_diff
+    if c_diff <= 0:
+        return stats
+
+    v_max = params.void_v_max
     deltas = np.zeros_like(void_field)
-    for n in range(len(void_field)):
-        if void_field[n] < 0.01 or n not in state.alive_n:
+
+    for n in list(void_active):
+        v_n = void_field[n]
+        if v_n < 0.001:
             continue
-        nbs = [nb for nb in state.neighbors(n) if nb in state.alive_n]
-        if not nbs:
-            continue
-        share = void_field[n] * diff / len(nbs)
-        for nb in nbs:
-            deltas[nb] += share
-        deltas[n] -= void_field[n] * diff
+
+        # Source node's active link degree
+        local_degree = 0
+        if n in state.alive_n:
+            for nb in state.neighbors(n):
+                if nb in state.alive_n:
+                    lk = state.key(n, nb)
+                    if lk in state.alive_l:
+                        local_degree += 1
+
+        # Decay factor: isolated nodes (degree=0) → exp(0)=1.0 (full flow)
+        # Dense nodes (degree=3) → exp(-3)≈0.05 (weak flow)
+        source_factor = math.exp(-local_degree) * c_diff
+
+        # Diffuse to substrate (frozen grid) neighbors
+        sub_nbs = substrate.get(n, set())
+        for nb in sub_nbs:
+            v_nb = void_field[nb]
+            if v_n > v_nb:
+                flow = (v_n - v_nb) * source_factor
+                deltas[n] -= flow
+                deltas[nb] += flow
+                stats["diffusion_events"] += 1
+                # Track if void flows to a node with active links
+                if nb in state.alive_n:
+                    nb_has_links = False
+                    for nb2 in state.neighbors(nb):
+                        if nb2 in state.alive_n:
+                            lk = state.key(nb, nb2)
+                            if lk in state.alive_l:
+                                nb_has_links = True
+                                break
+                    if nb_has_links:
+                        stats["void_to_active"] += 1
+
+    # Apply deltas (conservative: total void mass unchanged)
     void_field += deltas
-    np.clip(void_field, 0.0, params.void_v_max, out=void_field)
+    np.clip(void_field, 0.0, v_max, out=void_field)
+
+    # Update void_active
+    for n in range(len(void_field)):
+        if void_field[n] > 0.001:
+            void_active.add(n)
+        elif n in void_active:
+            void_active.discard(n)
+
+    return stats
 
 
 # ================================================================
@@ -472,21 +525,21 @@ class V49Engine(V48cEngine):
     def step_window(self, steps=V49_WINDOW):
         """
         Physics loop:
-          [void divergence pressure → latent boost]
+          [Phase 3: substrate void diffusion (propagate from prior deposits)]
+          [Phase 2b: void divergence pressure → latent boost]
           [7 canonical operators]
           [Z-coupling corrections]
-          [history tensor update]
-          [history decay correction (h_age)]
-          [history brittleness + snap echo → V_i deposit]
-          [void temporal decay]
-          [void consumption on new links]
+          [Phase 1: history tensor update]
+          [Phase 1: history decay correction (h_age)]
+          [Phase 1: brittleness + snap echo → V_i deposit]
+          [Phase 2b: topological void decay]
+          [Phase 2b: void consumption on new links]
           [background seeding]
         Post-loop:
-          [void spatial diffusion]
-          [plasticity suppression (h_res, per-window)]
+          [Phase 1: plasticity suppression (per-window)]
           [cooled semantic pressure]
           [island observation + avalanche]
-          [axiomatic parameter drift]
+          [axiomatic parameter drift (Loops A, B, C)]
           [observer + frame]
         """
         t0 = time.time()
@@ -501,13 +554,24 @@ class V49Engine(V48cEngine):
               "void_deposited": 0.0}  # void_deposited tracked here because
               # deposits only occur via Phase 1 snaps — no history = no deposits
         wv = {"boosted_pairs": 0, "total_boost": 0.0, "consumed_events": 0,
-              "void_induced_births": 0}
+              "void_induced_births": 0,
+              "diffusion_events": 0, "void_to_active": 0}
 
         for step in range(steps):
             # Snapshot alive links before physics (for consumption tracking)
             pre_alive_l = set(self.state.alive_l) if void_enabled else set()
 
-            # Phase 2: void divergence pressure (before realizer)
+            # Phase 3: substrate void diffusion (propagate prior deposits)
+            # Runs BEFORE divergence pressure so diffused V is immediately
+            # available for latent boost. Uses frozen substrate grid.
+            if void_enabled and self.void_active:
+                sd = apply_void_substrate_diffusion(
+                    self.void_field, self.state, self.substrate, p,
+                    self.void_active)
+                wv["diffusion_events"] += sd["diffusion_events"]
+                wv["void_to_active"] += sd["void_to_active"]
+
+            # Phase 2b: void divergence pressure (before realizer)
             if void_enabled:
                 vp = apply_void_divergence_pressure(
                     self.state, self.void_field, p, self.link_history,
@@ -614,9 +678,30 @@ class V49Engine(V48cEngine):
         self._interval_snaps += wh.get("snapped", 0)
         self._interval_void_births += wv.get("void_induced_births", 0)
 
-        # ── POST-LOOP: Void spatial diffusion ──
-        if void_enabled:
-            apply_void_diffusion(self.void_field, self.state, p)
+        # Mandatory void metrics (GPT audit §LOGGING)
+        alive_nodes_list = list(self.state.alive_n)
+        self.void_stats["total_void_mass"] = round(float(np.sum(self.void_field)), 4)
+        self.void_stats["void_variance"] = round(float(np.var(
+            self.void_field[alive_nodes_list])), 6) if alive_nodes_list else 0
+        isolated_high = 0
+        active_neighbor_high = 0
+        for n in self.void_active:
+            if self.void_field[n] < 0.01:
+                continue
+            has_active_link = False
+            if n in self.state.alive_n:
+                for nb in self.state.neighbors(n):
+                    if nb in self.state.alive_n:
+                        lk = self.state.key(n, nb)
+                        if lk in self.state.alive_l:
+                            has_active_link = True
+                            break
+            if has_active_link:
+                active_neighbor_high += 1
+            else:
+                isolated_high += 1
+        self.void_stats["isolated_high_V"] = isolated_high
+        self.void_stats["active_neighbor_high_V"] = active_neighbor_high
 
         # ── POST-LOOP: Plasticity suppression (h_res, per-window) ──
         if hist_enabled:
