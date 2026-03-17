@@ -60,9 +60,10 @@ LOG_FIELDS = [
     "mature_links", "rigid_links", "brittle_links",
     "hist_matured", "hist_snapped", "hist_suppressed",
     "avalanche_events", "cascade_links",
-    # v4.9 Phase 2
+    # v4.9 Phase 2b
     "void_mean_V", "void_max_V", "void_active_nodes",
     "void_boosted_pairs", "void_consumed", "void_deposited",
+    "void_gamma", "void_induced_births",
 ]
 
 
@@ -90,10 +91,10 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
 
     print(f"\n  {'win':>4} {'clst':>4} {'mxSz':>4} {'rLif':>4} "
           f"{'mxDR':>5} {'drft':>4} "
-          f"{'rest':>7} {'hAge':>5} {'hStr':>5} "
-          f"{'snap':>4} {'mV':>5} {'vBst':>4} {'vCon':>4} "
+          f"{'rest':>7} {'γ':>5} {'hAge':>5} {'hStr':>5} "
+          f"{'snap':>4} {'mV':>5} {'vBst':>4} {'vInd':>4} "
           f"{'gM':>2} {'lnks':>5} {'M':>1} {'sec':>4}")
-    print(f"  {'-'*95}")
+    print(f"  {'-'*100}")
 
     for w in range(n_windows):
         t0 = time.time()
@@ -195,9 +196,13 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
             "void_boosted_pairs": vs.get("boosted_pairs", 0),
             "void_consumed": vs.get("consumed_events", 0),
             "void_deposited": round(hs.get("void_deposited", 0), 4),
+            "void_gamma": cur.get("void_gamma", encap_params.void_gamma),
+            "void_induced_births": vs.get("void_induced_births", 0),
         }
         writer.writerow(row)
         f.flush()
+
+        cur_gamma = cur.get("void_gamma", encap_params.void_gamma)
 
         print(f"  {frame.window:>4} {isum['n_clusters']:>4} "
               f"{isum['max_size']:>4} "
@@ -205,12 +210,13 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
               f"{isum['max_density_ratio']:>5.2f} "
               f"{isum['identity_drift']:>4} "
               f"{cur_restore:>7.4f} "
+              f"{cur_gamma:>5.2f} "
               f"{hs.get('mean_h_age',0):>5.3f} "
               f"{hs.get('mean_h_str',0):>5.3f} "
               f"{hs.get('snapped',0):>4} "
               f"{vs.get('mean_V',0):>5.3f} "
               f"{vs.get('boosted_pairs',0):>4} "
-              f"{vs.get('consumed_events',0):>4} "
+              f"{vs.get('void_induced_births',0):>4} "
               f"{isum['motif_gamma']:>2} "
               f"{frame.alive_links:>5} "
               f"{frame.milestone:>1} {sec:>4.0f}")

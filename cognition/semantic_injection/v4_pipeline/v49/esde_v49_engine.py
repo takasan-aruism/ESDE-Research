@@ -1,28 +1,32 @@
 #!/usr/bin/env python3
 """
-ESDE v4.9 — History Layer + Fertile Void
-==========================================
-Phase : v4.9 (P1: Structural Fatigue + P2: Latent Potential)
+ESDE v4.9 — History Layer + Axiomatic Void (Phase 2b)
+=======================================================
+Phase : v4.9 (P1: Structural Fatigue + P2b: Axiomatic Void)
 Role  : Claude (Implementation)
 Arch  : Gemini (+ Taka) | Audit: GPT
 
 Phase 1 (Past): Link Tensor H_ij = {h_age, h_res, h_str}
   Maturation, rigidity, brittleness, avalanche.
 
-Phase 2 (Future): Fertile Void V_i
-  Generation: snap echo → V_i += k × h_age (structural inertia
-    of collapsed link converts to undirected potential)
-  Action: divergence pressure → latent field boost proportional
-    to tanh(V_i + V_j) (GPT mandatory saturation)
-  Dissipation: temporal decay V *= (1-λ), consumption on link birth
-  Interaction with h_res: P = base × (1-α×h_res) × (1+γ×tanh(V))
+Phase 2b (Future): Axiomatic Void
+  Generation: snap echo → V_i += k × h_age
+  Persistence: V_i decays ONLY proportional to local link density.
+    V_i *= exp(-local_degree_i). Empty regions → V persists
+    indefinitely. Dense regions → V decays rapidly.
+    NO static decay rate λ. (Architect directive: no manual params)
+  Action: divergence pressure → latent boost ∝ γ×tanh(V_i+V_j).
+    γ is auto-discovered via Loop C (renewal deficit feedback).
+  Consumption: V consumed on link birth.
 
-The Fertile Void is NOT memory. It contains zero topological
-information about what collapsed. It is pure undirected
-structural possibility — "vacuum energy" after collapse.
+Loop C (γ discovery):
+  Observable: D_ren = total_snaps - void_induced_births (3-window)
+  Rule: Δγ = +α(t) × tanh(D_ren / 1000)
+  If destruction > renewal → γ increases → stronger void pressure.
+  If renewal catches up → γ eases back.
 
 Physics operators: UNCHANGED.
-v4.8c axiomatic drift: PRESERVED.
+v4.8c axiomatic drift (Loops A, B, meta-α): PRESERVED.
 
 NOTE: Full override of parent step_window(). Intentional for
 physics isolation.
@@ -96,13 +100,16 @@ class V49EncapsulationParams(V48cEncapsulationParams):
     avalanche_radius: int = 1
     fragility_age_threshold: int = 5
     fragility_deformation_decay: float = 0.3
-    # Phase 2: fertile void
+    # Phase 2b: axiomatic void (no static decay, dynamic γ)
     void_k: float = 0.5           # snap echo: V += k * h_age
-    void_gamma: float = 2.0       # divergence pressure strength
-    void_decay_lambda: float = 0.05  # V *= (1 - λ) per step
+    void_gamma: float = 1.0       # divergence pressure (initial, auto-discovered by Loop C)
+    void_gamma_min: float = 0.0   # Loop C bounds
+    void_gamma_max: float = 20.0
     void_consumption: float = 0.1  # V consumed per link birth
     void_v_max: float = 5.0       # cap on V_i
     void_diffusion: float = 0.01  # spatial diffusion to neighbors
+    # NOTE: void_decay_lambda REMOVED. Decay is now topology-dependent:
+    # V_i *= exp(-local_degree_i). No manual parameter.
     # Toggles
     history_enabled: bool = True
     void_enabled: bool = True
@@ -351,29 +358,64 @@ def apply_void_divergence_pressure(state, void_field, params, tensor,
     return stats
 
 
-def apply_void_decay(void_field, params, void_active):
-    """Per-step temporal decay: V *= (1 - λ). Prunes void_active."""
-    decay = 1.0 - params.void_decay_lambda
-    void_field *= decay
-    # Prune nodes that decayed below threshold
-    void_active -= {n for n in void_active if void_field[n] < 0.01}
+def apply_void_topological_decay(void_field, state, void_active):
+    """
+    Phase 2b: Topological persistence.
+    V_i *= exp(-local_degree_i)
+
+    Empty regions (degree=0): exp(0) = 1.0 → V persists indefinitely.
+    Dense regions (degree=3): exp(-3) ≈ 0.05 → V decays rapidly.
+
+    NO static decay rate. The topology itself determines persistence.
+    "The ghost of a shattered structure haunts the depleted coordinate."
+    """
+    for n in list(void_active):
+        if void_field[n] < 0.001:
+            void_active.discard(n)
+            void_field[n] = 0.0
+            continue
+        # Count active links at this node
+        local_degree = 0
+        if n in state.alive_n:
+            for nb in state.neighbors(n):
+                if nb in state.alive_n:
+                    lk = state.key(n, nb)
+                    if lk in state.alive_l:
+                        local_degree += 1
+        # Topological decay
+        void_field[n] *= math.exp(-local_degree)
+        if void_field[n] < 0.001:
+            void_active.discard(n)
+            void_field[n] = 0.0
 
 
-def apply_void_consumption(state, void_field, params, pre_alive_l):
+def apply_void_consumption(state, void_field, params, pre_alive_l,
+                           void_active):
     """
-    Consumption: when a new link is born (present now but not before),
-    consume potential at both endpoints.
+    Consumption: when a new link is born, consume potential at endpoints.
+    Tracks void_induced_births (births where both endpoints had V > 0)
+    for Loop C renewal deficit computation.
     """
-    stats = {"consumed_events": 0}
+    stats = {"consumed_events": 0, "void_induced_births": 0}
     cost = params.void_consumption
 
     new_links = state.alive_l - pre_alive_l
     for lk in new_links:
         n1, n2 = lk
-        if void_field[n1] > 0 or void_field[n2] > 0:
+        v1 = void_field[n1]
+        v2 = void_field[n2]
+        if v1 > 0.001 or v2 > 0.001:
             void_field[n1] = max(0.0, void_field[n1] - cost)
             void_field[n2] = max(0.0, void_field[n2] - cost)
             stats["consumed_events"] += 1
+            # Count as void-induced if BOTH endpoints had potential
+            if v1 > 0.001 and v2 > 0.001:
+                stats["void_induced_births"] += 1
+            # Prune void_active if depleted
+            if void_field[n1] < 0.001:
+                void_active.discard(n1)
+            if void_field[n2] < 0.001:
+                void_active.discard(n2)
 
     return stats
 
@@ -420,6 +462,9 @@ class V49Engine(V48cEngine):
         self.link_history = LinkHistoryTensor()
         self.void_field = np.zeros(N, dtype=np.float64)
         self.void_active = set()  # nodes with V > 0.01, avoids O(N) scan
+        # Loop C accumulators (reset every drift interval)
+        self._interval_snaps = 0
+        self._interval_void_births = 0
         self.history_stats = {}
         self.void_stats = {}
         self.last_isum = {}
@@ -455,7 +500,8 @@ class V49Engine(V48cEngine):
         wh = {"matured": 0, "snapped": 0, "suppressed_nodes": 0,
               "void_deposited": 0.0}  # void_deposited tracked here because
               # deposits only occur via Phase 1 snaps — no history = no deposits
-        wv = {"boosted_pairs": 0, "total_boost": 0.0, "consumed_events": 0}
+        wv = {"boosted_pairs": 0, "total_boost": 0.0, "consumed_events": 0,
+              "void_induced_births": 0}
 
         for step in range(steps):
             # Snapshot alive links before physics (for consumption tracking)
@@ -513,12 +559,15 @@ class V49Engine(V48cEngine):
                 wh["snapped"] += hb["snapped"]
                 wh["void_deposited"] += hb["void_deposited"]
 
-            # Phase 2: void decay + consumption
+            # Phase 2b: topological void decay + consumption
             if void_enabled:
-                apply_void_decay(self.void_field, p, self.void_active)
+                apply_void_topological_decay(
+                    self.void_field, self.state, self.void_active)
                 vc = apply_void_consumption(
-                    self.state, self.void_field, p, pre_alive_l)
+                    self.state, self.void_field, p, pre_alive_l,
+                    self.void_active)
                 wv["consumed_events"] += vc["consumed_events"]
+                wv["void_induced_births"] += vc["void_induced_births"]
 
             # Background seeding (canonical)
             al = list(self.state.alive_n)
@@ -560,6 +609,10 @@ class V49Engine(V48cEngine):
             self.void_field[list(self.state.alive_n)])), 4) if self.state.alive_n else 0
         self.void_stats["max_V"] = round(float(np.max(self.void_field)), 4)
         self.void_stats["active_V_nodes"] = int(np.sum(self.void_field > 0.01))
+
+        # Accumulate for Loop C (renewal deficit, reset on drift application)
+        self._interval_snaps += wh.get("snapped", 0)
+        self._interval_void_births += wv.get("void_induced_births", 0)
 
         # ── POST-LOOP: Void spatial diffusion ──
         if void_enabled:
@@ -717,11 +770,31 @@ class V49Engine(V48cEngine):
                 self.prev_alive_links = post_links
                 self.prev_z0_links = post_z0
 
+                # Loop C: γ ← +α(t) × tanh(D_ren / 1000)
+                # D_ren = snaps - void_induced_births over interval
+                D_ren = self._interval_snaps - self._interval_void_births
+                grad_ren = math.tanh(D_ren / 1000.0)
+                new_gamma = p.void_gamma + (alpha_t * grad_ren)
+                p.void_gamma = max(p.void_gamma_min,
+                                   min(p.void_gamma_max, new_gamma))
+                # Reset interval accumulators
+                self._interval_snaps = 0
+                self._interval_void_births = 0
+
+            # D_ren for logging: applied window uses the value computed above,
+            # non-applied windows show current accumulation
+            if applied:
+                log_d_ren = D_ren
+            else:
+                log_d_ren = self._interval_snaps - self._interval_void_births
+
             self.drift_trajectory.append({
                 "window": f.window,
                 "alpha_t": round(alpha_t, 6),
                 "compound_restore": round(p.z_decay_compound_restore, 6),
                 "inert_penalty": round(p.z_decay_inert_penalty, 6),
+                "void_gamma": round(p.void_gamma, 6),
+                "d_ren": log_d_ren,
                 "delta_L": delta_L, "delta_Z0": delta_Z0,
                 "abs_delta_L": abs(delta_L),
                 "alive_links": post_links, "z0_links": post_z0,
