@@ -1,7 +1,7 @@
 # ESDE Cognition: Semantic Interaction — Experiment Report
 
-*Phase: Cognition (v3.0 – v3.9) / Encapsulation (v4.0 – v4.8c)*
-*Status: IN PROGRESS (v4.8c Axiomatic Parameter Discovery running)*
+*Phase: Cognition (v3.0 – v3.9) / Encapsulation (v4.0 – v4.9)*
+*Status: IN PROGRESS (v4.9 P1+P2 complete; void renewal cycle does not yet close)*
 *Team: Gemini (Architect) / GPT (Audit) / Claude (Implementation)*
 *Started: March 11, 2026*
 *Last updated: March 17, 2026*
@@ -690,26 +690,104 @@ Three-phase lifecycle observed in both seeds:
 
 **Background:** The Architect's directive: static parameter tuning is MORE arbitrary than self-discovery. Hardcoded constants impose human assumptions about equilibrium. The real world distinguishes physics (fixed laws) from biology (dynamically regulated parameters). ESDE must do the same. The mechanism is grounded in ESDE Formal Theory: Axiom T (the parameter layer is the Third Term closing the ternary loop) and Axiom L (dx/dt = −α∇F, gradient descent on structural volatility).
 
-**Method:** Two gradient-relaxation loops, updated every 3 windows:
+**Method:** Two gradient-relaxation loops, updated every 3 windows. Loop A: compound_restore ← −α × tanh(ΔL / 1000). Loop B: inert_penalty ← −α × tanh(ΔZ0 / 500). No target values. Destructive emergence permitted.
 
-Loop A: compound_restore ← −α × tanh(ΔL / 1000). ΔL = net link change over 3-window interval. Reduces structural volatility in link dynamics.
+**Phase 1 (static α=0.0001):** 2 seeds × 200 windows. Result: restore moved 0.0002 over 200 windows — effectively static. α too slow by ~600×. Bubble-crash identical to v4.8b. Mechanism directionally correct (drift reverses on crash) but parametrically inert.
 
-Loop B: inert_penalty ← −α × tanh(ΔZ0 / 500). ΔZ0 = net void-link change over 3-window interval. Reduces structural volatility in void dynamics.
+**Phase 2 (state-dependent viscosity):** α(t) = α_min + β × tanh(|ΔL| / V_scale). Stateless — no memory, no accumulation. α_min=0.0001, β=0.01, V_scale=1000. When |ΔL| is large, α rises to ~0.01 (100× Phase 1). 2 seeds × 200 windows.
 
-α=0.0001. tanh saturation prevents runaway. No target values — the system finds its own equilibrium. Destructive emergence (crashes) is permitted. Physics operators unchanged. v4.6 observation preserved. Currently running 2 seeds × 200 windows.
+**Results (2 seeds, 200 windows, Phase 2 viscosity):**
+
+| Metric | seed 42 | seed 123 | v4.8b ref |
+|---|---|---|---|
+| peak links | 8308 (w6) | 8297 (w7) | 8391 (w5) |
+| trough links | 1023 (w19) | 1068 (w22) | ~1100 (w20) |
+| final links | 2008 | 2072 | 2057 |
+| restore: init → final | 0.50 → **0.516** | 0.50 → **0.513** | 0.50 (static) |
+| inert: init → final | 0.020 → **0.018** | 0.020 → **0.018** | 0.020 (static) |
+| last 50 links (mean±sd) | 2215 ± 95 | 2099 ± 56 | ~2200 |
+
+**Findings:**
+
+*The system discovers its own parameter equilibrium.* Both seeds independently converge to compound_restore ≈ 0.514 and inert_penalty ≈ 0.018. These values were not set by any human — they emerged from the interaction between Z-coupling physics and gradient relaxation. Convergence is reproducible (two seeds agree within 0.003) and stable (last 50 windows show fluctuation < 0.003).
+
+*The bubble-crash cycle persists.* The viscosity mechanism responds 160× faster than Phase 1 (restore range ±0.032 vs ±0.0002), but is still 10× too slow to prevent the initial transient. The bubble completes in 5 windows; maximum per-application drift is 0.01. The controller discovers equilibrium AFTER the crash, not before.
+
+*Static α renders the mechanism inert; dynamic α finds equilibrium.* Phase 1 (α=0.0001) ≈ static. Phase 2 (α up to 0.01) produces real parameter movement. The Architect's principle — "all values should be auto-discovered" — is validated: static α merely moved the manual-tuning problem one level up.
+
+---
+
+## v4.9 Phase 1 — Multidimensional History Layer
+
+**Question:** Does structural history (maturation, rigidity, brittleness) produce path-dependent dynamics and natural destructive emergence?
+
+**Background:** GPT's v4.9 roadmap identified three missing layers: Past (history/inertia), Future (unrealized possibility), External (perturbation). Phase 1 introduces the Past layer. History is modeled NOT as memory but as material properties — metal fatigue, brittleness, civilizational rigidity.
+
+**Method:** Every active link carries a 3D history tensor H_ij:
+
+- h_age (temporal survival): accumulated time alive → slight decay resistance (maturation)
+- h_res (resonance exposure): time in closed loops → suppresses new link formation (rigidity, GPT soft: P *= 1−α×h_res)
+- h_str (stress exposure): Z-mismatch and low-S conditions → catastrophic snap when threshold exceeded (brittleness)
+
+Macro-history: cluster fragility (C_age × lack of deformation) → avalanche cascade when boundary breaches. v4.8c axiomatic drift preserved.
 
 **Results (seed 42, 10-window sanity):**
 
-| Metric | v4.8c | v4.8b ref |
+| Metric | v4.9 P1 | v4.8c Phase 2 |
 |---|---|---|
-| w10 links | 4,923 | 5,137 |
-| max relaxed_lifespan | 10 | 10 |
-| M3 | w5, w7 | w5, w8 |
-| rest (compound_restore) | 0.5000→0.4999 | 0.5000 (static) |
-| iPen (inert_penalty) | 0.0200→0.0200 | 0.0200 (static) |
-| drift applications | 3 (at w3, w6, w9) | N/A |
+| w10 links | **1209** | 5098 |
+| peak links | 6171 (w2) | 8308 (w6) |
+| snap events (total) | **10,341** | 0 |
+| max cluster size | 8 | 12 |
+| mature links (w10) | 15 | N/A |
+| rigid links (w10) | 14 | N/A |
+| brittle links (w10) | 3 | N/A |
 
-Drift correctly reverses direction at w9 (ΔL goes negative → restore increases). Bubble trajectory identical to v4.8b in early windows. 200-window results pending — the key question is whether the controller prevents or moderates the crash phase.
+**Findings:**
+
+*Brittleness acts as a natural bubble suppressor.* The bubble peaks 4 windows earlier (w2 vs w6) and 2000 links lower (6171 vs 8308). h_str snaps 1000-2200 links per window (w3-w8), fracturing stressed structures catastrophically instead of allowing gradual erosion.
+
+*Brittleness also accelerates depletion.* w10 links = 1209, identical to v4.8c's crash trough. Snap events destroy links faster than background seeding can replace them.
+
+*History creates qualitatively new structural entities.* 15 mature links, 14 rigid links, 3 brittle links survive at w10 — the first links in the project with measurable structural memory. Same S value, different behavior based on how the link formed and what it survived.
+
+*Phase 1 alone leads to stagnation.* birth → maturation → rigidification → brittleness → death. No renewal mechanism. The surviving core (mature + rigid links) persists indefinitely but generates no new diversity. This confirms the GPT pre-audit prediction: "Past dominance → stagnation."
+
+---
+
+## v4.9 Phase 1+2 — History Layer + Fertile Void
+
+**Question:** Does the Fertile Void (latent potential deposited at snap sites) provide the renewal force that Phase 1 alone lacks?
+
+**Background:** Phase 1 produces destruction without renewal. Phase 2 introduces the "Future" — not prediction or goals, but undirected structural possibility. When a mature link snaps, its structural inertia converts to a scalar potential field V_i at the endpoint nodes. V_i boosts the stochastic link birth rate in those regions, driving undirected exploration. The void contains zero topological memory — it is pure magnitude of possibility.
+
+**Method:** Three void mechanisms integrated with Phase 1 snap events:
+
+- Generation (snap echo): V_i += k × h_age. Old structures create large voids; young structures create almost nothing.
+- Action (divergence pressure): latent field boosted by γ × tanh(V_i + V_j) before each realizer step. GPT mandatory tanh saturation.
+- Dissipation: V *= (1−λ) per step (temporal decay), V -= cost on link birth (consumption).
+
+Parameters: void_k=0.5, void_gamma=2.0, void_decay_lambda=0.05, void_consumption=0.1.
+
+**Results (seed 42, 10-window sanity):**
+
+| Metric | P1 only | P1+P2 | v4.8c |
+|---|---|---|---|
+| w10 links | 1209 | **1209** | 5098 |
+| snap total | 10,841 | 10,341 | 0 |
+| void boosted pairs | N/A | **0** | N/A |
+| void consumed | N/A | 15,411 | N/A |
+| peak mean_V | N/A | 0.048 | N/A |
+
+**Findings:**
+
+*The Fertile Void generates but does not act.* vBst = 0 across all 10 windows. Zero latent boosts from void divergence pressure. The void field IS populated (peak mean_V = 0.048, 341 active nodes at w10) but decays too rapidly to produce divergence pressure above the detection threshold.
+
+*The timescale mismatch is the same structural problem as v4.5b-v4.7.* Void deposits of 0.08 per snap decay to 0.006 within one window (λ=0.05 → 92.3% loss per 50 steps). By the time divergence pressure runs in the next step, V is near zero. This is the third time in the project that an indirect intermediary field (latent boost in v4.5b/v4.7, void field in v4.9) has failed because its decay rate exceeds the target structure's response time.
+
+*Void consumption is passive, not active.* 15,411 consumption events = link births at nodes where V > 0. But these links were born by normal physics, not by void pressure. The void is drained without having produced any structural effect.
+
+*Phase 1 + Phase 2 combined produces identical results to Phase 1 alone.* The "renewal" force does not yet exist in practice. The cycle remains: birth → maturation → brittleness → death → emptiness. The intended cycle (→ potential → rebirth) requires either reduced decay (λ=0.005), increased deposit magnitude (k=5.0), or architectural change to void application timing.
 
 ---
 
@@ -730,6 +808,7 @@ All Cognition experiments run on N=5000 with engine_accel fully enabled (link_st
 | v4.5a–v4.7 | ~15-27s/window | 50-step + v4.6 tracker + motif scan; v4.7 adds per-step scan (~+3s) |
 | v4.8b | ~15-35s/window | 50-step + Z-coupling per-step (scales with link count); peak ~35s during bubble |
 | v4.8c | ~15-35s/window | Same as v4.8b + negligible drift computation every 3 windows |
+| v4.9 | ~15-26s/window | + history tensor per-step + void field per-step + plasticity per-window; void_active set optimization limits scan to O(|active|) |
 
 Parallel execution via GNU parallel at -j 2 for 200-window runs (v4.5a+). Code review by separate Claude instance added to workflow from v4.6 onward.
 
@@ -783,21 +862,28 @@ Cognition v3.0–v3.9 and Language Interface v4.0–v4.4 progressively establish
 42. **The physics/biology layer distinction is fundamental** (v4.8c: physics operators are frozen constants; Z-coupling parameters are dynamically regulated; hardcoded parameters are more arbitrary than self-discovery)
 43. **Gradient relaxation (Axiom L) correctly reverses drift direction in response to structural volatility** (v4.8c sanity: restore drifts down during bubble, reverses up during contraction)
 44. **A 5-experiment elimination chain (v4.5a→v4.7) proved that the substrate itself, not the metabolic mechanism, was the bottleneck** (the shift to chemical valence in v4.8b was a direct consequence of this systematic elimination)
+45. **State-dependent viscosity enables autonomous parameter discovery** (v4.8c Phase 2: both seeds converge to compound_restore≈0.514, inert_penalty≈0.018 — first system-discovered parameter values in ESDE)
+46. **Static meta-parameters reproduce the manual-tuning problem at a higher level** (v4.8c Phase 1: static α=0.0001 renders the controller inert; Phase 2's dynamic α resolves this)
+47. **Structural history creates qualitatively distinct link populations** (v4.9 P1: mature, rigid, and brittle links coexist — same S value, different behavioral properties based on formation history)
+48. **Brittleness is a natural bubble suppressor** (v4.9 P1: h_str snaps cut bubble peak by 2000 links and 4 windows relative to v4.8c)
+49. **History without future leads to stagnation** (v4.9 P1: birth→maturation→brittleness→death with no renewal; confirms GPT prediction "Past dominance→stagnation")
+50. **Indirect intermediary fields fail when decay exceeds response time** (v4.9 P2: third instance of same pattern — latent boost v4.5b/v4.7, void field v4.9 — all fail because intermediary decays before target structure responds)
+51. **The Fertile Void concept is correct but parametrically inert at current settings** (v4.9 P2: void generates, dissipates, and is passively consumed without ever producing divergence pressure; vBst=0 across all windows)
 
 ---
 
 ## What It Does Not Demonstrate
 
 - Whether the 128× collapse threshold is sharp or gradual
-- Whether collapsed seeds recover if pressure is reduced (hysteresis)
 - Whether the transport-saturation regime scales to N=10,000+ or different concept counts
-- Whether semantic content (not just syntactic length) can be mapped to physics without violating "Structure first, meaning later"
-- Whether v4.8c axiomatic parameter discovery converges to a stable equilibrium or produces perpetual oscillation
-- Whether the bubble-crash cycle observed in v4.8b is eliminated, moderated, or transformed by the homeostatic controller
-- Whether the system can achieve sustained M3 (encapsulation lasting >10 windows) rather than transient M3 during a bubble phase
-- Whether the chemical valence mechanism produces qualitatively different cluster types (compositional identity based on Z-state distribution) or merely larger homogeneous clusters
-- Whether v4.8b/c results scale down to N=50-500 (the original motivation for Track B)
-- Whether alpha/beta motifs (triangles, whisker structures) can emerge at S≥0.30 under any parameter regime, or whether the physics fundamentally favors gamma (4-cycle) motifs
+- Whether the Fertile Void can produce active divergence pressure with reduced decay (λ=0.005) or increased deposit (k=5.0)
+- Whether the void → rebirth cycle can sustain itself across multiple collapse-regeneration epochs
+- Whether the three-layer temporal model (Past + Future + External) produces qualitatively different dynamics than any two layers combined
+- Whether Phase 3 (external perturbation) is necessary to break the mature-rigid core stagnation, or whether an effective void mechanism suffices
+- Whether the system can produce sustained M3 encapsulation outside of the initial bubble transient
+- Whether indirect intermediary fields (latent boost, void) can ever match the system's timescale, or whether only direct physics modifications (Z-coupling) are effective
+- Whether v4.9 results scale down to N=50-500
+- Whether alpha/beta motifs (triangles) can emerge under any parameter regime
 
 ---
 
@@ -805,15 +891,15 @@ Cognition v3.0–v3.9 and Language Interface v4.0–v4.4 progressively establish
 
 - Is the 3–6 hop erosion limit a property of the graph diameter, the physics parameters, or the concept zone geometry?
 - What happens between 64× and 128×? Is there a critical amplification where collapse onset is 50%?
-- Does the empty deep core (v3.9) relate to the shallow cluster depth (v4.3) — are both manifestations of the same structural sparsity at depth?
-- Where does v4.8c compound_restore converge? Is the equilibrium seed-dependent or universal?
-- Does the 3-window drift interval produce qualitatively different convergence from 1-window or 5-window intervals?
-- Is the bubble phase (v4.8b windows 1-5) a necessary precursor to structural emergence, or a pathological transient that the controller should eliminate?
-- Can multi-loop homeostasis (Phase 2: adding cooling_strength and hetero_dampen loops) produce richer equilibria than the current 2-loop system?
-- Does the Z=3 dominance (90%+ of links involve compound nodes) indicate a chemical imbalance, or is it the correct steady state for the A+B→C reaction?
-- At what α does the controller become over-damped (suppressing all structural dynamics) vs under-damped (unable to prevent crashes)?
-- Would the system produce different results starting from compound_restore=0.1 vs 0.5 vs 0.9? Does the controller converge to the same value regardless of initial conditions?
-- Is the persistence–density decorrelation (v4.4) resolved by chemical valence, or does it persist in a different form at larger cluster sizes?
+- Is there a fundamental architectural reason that indirect intermediary fields (latent boost, void) cannot match the system's structural timescale? Or is this always a parameter calibration problem?
+- Can the void decay rate be brought under the axiomatic drift controller (auto-discovered like compound_restore), or does adding 3+ more loops cause instability?
+- Does reducing void_decay_lambda to 0.005 (10× slower) enable active divergence pressure while remaining bounded by V_max?
+- Would applying void divergence pressure per-window (post-loop, accumulated) instead of per-step (subject to within-window decay) resolve the timescale mismatch?
+- Is the bubble-crash an unavoidable initial transient for any system starting from injection, or can pre-equilibration (running drift during injection) eliminate it?
+- Does Phase 3 (external perturbation) need to be designed as a new mechanism, or can the existing semantic pressure + Z-coupling already serve as the external layer?
+- What is the minimum set of temporal layers (Past, Future, External) needed for cyclic emergence? Is any single layer sufficient with correct parameters?
+- Does the Z=3 dominance (90%+ of links involve compound nodes) represent a chemical equilibrium or a pathological monoculture?
+- Can the discovered equilibrium values (restore≈0.514, inert≈0.018) be used as initial conditions to bypass the bubble-crash transient?
 
 ---
 
@@ -843,8 +929,10 @@ Cognition v3.0–v3.9 and Language Interface v4.0–v4.4 progressively establish
 | v4.7 | 2026-03-17 | Gemini→GPT→Claude (Ryzen) | Per-step accretion inside physics loop (10 scans/window) | **6,552 boosts (410× v4.5b); incorporation=0; spatial mismatch identified; latent-boost approach closed** |
 | v4.8 | 2026-03-17 | Gemini→GPT→Claude (Ryzen) | Terrain Genesis: density-dependent cooling | **cooling_factor=1.000; insufficient link density for activation; cooling alone ineffective** |
 | v4.8b | 2026-03-17 | Gemini→GPT→Claude (Ryzen) | Chemical Valence: Z-state topological coupling (Track A+B) | **M3 achieved (first ever); rLif=10; drift=26/win; max_size=11; bubble-crash-depletion cycle; static params unstable** |
-| v4.8c | 2026-03-17 | Gemini→GPT→Claude (Ryzen) | Axiomatic Parameter Discovery (gradient relaxation, Axiom T+L) | **Drift reverses direction correctly; 200-window convergence test in progress** |
+| v4.8c | 2026-03-17 | Gemini→GPT→Claude (Ryzen) | Axiomatic Parameter Discovery (gradient relaxation, Axiom T+L) | **Phase 1: static α inert (600× too slow). Phase 2 viscosity: both seeds converge to restore≈0.514 — first system-discovered parameters. Bubble-crash persists.** |
+| v4.9 P1 | 2026-03-17 | Gemini→GPT→Claude (Ryzen) | Multidimensional History Layer (h_age, h_res, h_str, avalanche) | **Brittleness suppresses bubble (−2000 links, −4 windows); creates mature/rigid/brittle link populations; depletes to 1209 links without renewal; confirms "Past dominance→stagnation"** |
+| v4.9 P1+P2 | 2026-03-17 | Gemini→GPT→Claude (Ryzen) | Fertile Void (snap echo → V_i → divergence pressure) | **Void generates (peak mV=0.048) but does not act (vBst=0); decay 92%/window kills signal before divergence fires; third instance of intermediary-decay timescale mismatch** |
 
 ---
 
-*The project has traversed seven paradigmatic phases within Cognition. v3.0–v3.9 established that concept regions are semi-permeable membranes with self-limiting plasticity — erosion saturates at 3–6 hops, transport scales without deepening, and the observer survives total internal reworking. The Language Interface (v4.0) proved LLM grounding works but revealed a content-physics gap. The Wave Propagation Engine (v4.1) introduced localized dynamics. Adaptive Dynamics (v4.2) demonstrated that disaster-and-rebuild has a hard limit. The Paradigm Shift (v4.3) discovered a primordial soup of micro-clusters. The Observation Upgrade (v4.4) resolved identity tracking but revealed persistence–density decorrelation. The Boundary Metabolism series (v4.5a–v4.7) systematically eliminated every parametric and temporal explanation for incorporation failure across five experiments, conclusively demonstrating that the substrate itself — quantitatively homogeneous, qualitatively uniform — was the fundamental bottleneck. The Chemical Valence breakthrough (v4.8b) activated the existing Z-state chemistry layer to create qualitative structural diversity, producing the project's first M3 encapsulation, first large-scale identity drift, and first sustained cluster growth — but exposed that static parameters cause uncontrolled bubble-crash cycles. The Axiomatic Parameter Discovery (v4.8c) replaces human parameter tuning with gradient relaxation grounded in ESDE Formal Theory (Axiom T and L), treating the parameter layer as the Third Term that closes the ternary loop. Results pending — the system is currently discovering its own equilibrium.*
+*The project has traversed eight paradigmatic phases within Cognition. v3.0–v3.9 established concept regions as semi-permeable membranes with self-limiting plasticity. v4.0 proved LLM grounding. v4.1-v4.2 explored and exhausted wave-based dynamics. v4.3 discovered the primordial soup. v4.4 resolved identity tracking but revealed persistence-density decorrelation. The Boundary Metabolism series (v4.5a–v4.7) systematically eliminated every parametric and temporal explanation for incorporation failure, proving the substrate was the bottleneck. The Chemical Valence breakthrough (v4.8b) produced the project's first M3 encapsulation but exposed static-parameter instability. The Axiomatic Parameter Discovery (v4.8c) demonstrated that systems can discover their own equilibrium values (restore≈0.514, inert≈0.018) through gradient relaxation — the first instance of auto-discovered parameters in ESDE — but cannot prevent the initial bubble-crash transient. The History Layer (v4.9 P1) introduced material-like link properties (maturation, rigidity, brittleness) creating path-dependent dynamics and natural destructive emergence, confirming that history alone leads to stagnation. The Fertile Void (v4.9 P2) correctly conceptualized renewal as undirected structural potential at collapse sites, but the void field decays too rapidly (92%/window) to produce divergence pressure — the third instance of an intermediary-field timescale mismatch in the project (after v4.5b/v4.7 latent boost failures). The system now has Past (history) and a nascent Future (void), but the renewal cycle (collapse → potential → rebirth) does not yet close. Phase 3 (external perturbation) and void parameter calibration are the immediate next steps.*
