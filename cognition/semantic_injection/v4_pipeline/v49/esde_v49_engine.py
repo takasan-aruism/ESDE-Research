@@ -351,7 +351,6 @@ def apply_void_divergence_pressure(state, void_field, params, tensor,
     return stats
 
 
-def apply_void_decay(void_field, params):
 def apply_void_decay(void_field, params, void_active):
     """Per-step temporal decay: V *= (1 - λ). Prunes void_active."""
     decay = 1.0 - params.void_decay_lambda
