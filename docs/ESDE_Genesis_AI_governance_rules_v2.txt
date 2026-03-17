@@ -20,9 +20,8 @@ Genesis
 ↓
 Ecology
 ↓
-Concept
+Cognition
 ↓
-LLM integration
 
 3. 最小変更原則
 問題が起きた場合は
@@ -97,11 +96,15 @@ Architect (ユーザー)
 Gemini
 設計補助
 
-Claude
+Claude I
 実装
+
+Claude II（Iと別スレッド）
+コードレビュー
 
 GPT
 監査
+
 
 --------------------------------------------------
 注意
@@ -122,5 +125,6 @@ AIは必要に応じて柔軟に判断する。
 プロジェクト名称
 --------------------------------------------------
 正式名　ESDE Genesis: Observer Physics
-略式名　ESDE Genesis, Genesis
+略式名　ESDE Genesis, Genesis(Ecology,Cognitionなど)
+
 'Genesisは一般名詞との混同の起こらないように注意する。ドキュメントのファイル名などでの使用は有効的
