@@ -352,6 +352,8 @@ class V46Tracker(V45aTracker):
                     gw_best_id = None
                     gw_best_j = -1.0
                     for gid, hood in grave_hoods.items():
+                        if gid not in self.graveyard:
+                            continue  # already reformed by earlier cluster
                         if nodes & hood:
                             j = self._jaccard(
                                 nodes, self.graveyard[gid].nodes)
