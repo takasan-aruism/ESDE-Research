@@ -192,11 +192,11 @@ def apply_history_decay_correction(state, tensor, params):
     return stats
 
 
-def apply_history_brittleness(state, tensor, params, void_field):
+def apply_history_brittleness(state, tensor, params, void_field, void_active):
     """
     h_str brittleness: catastrophic snap.
-    Phase 2 integration: snap deposits potential into void_field.
-    Returns snap stats.
+    Phase 2 integration: snap deposits potential into void_field
+    and updates void_active set.
     """
     stats = {"snapped": 0, "void_deposited": 0.0}
     threshold = params.history_str_fracture_threshold
@@ -210,11 +210,9 @@ def apply_history_brittleness(state, tensor, params, void_field):
         if h_str >= threshold:
             s_val = state.S.get(lk, 0.0)
             if s_val < snap_stress:
-                # Get h_age before killing
                 h_age = tensor.h_age.get(lk, 0.0)
                 n1, n2 = lk
 
-                # SNAP
                 state.S[lk] = 0.0
                 state.kill_link(lk)
                 stats["snapped"] += 1
@@ -224,6 +222,8 @@ def apply_history_brittleness(state, tensor, params, void_field):
                     deposit = void_k * h_age
                     void_field[n1] = min(v_max, void_field[n1] + deposit)
                     void_field[n2] = min(v_max, void_field[n2] + deposit)
+                    void_active.add(n1)
+                    void_active.add(n2)
                     stats["void_deposited"] += deposit * 2
 
     return stats
@@ -313,39 +313,37 @@ def apply_avalanche(state, tensor, prev_islands, params):
 # ================================================================
 # PHASE 2: FERTILE VOID
 # ================================================================
-def apply_void_divergence_pressure(state, void_field, params, tensor):
+def apply_void_divergence_pressure(state, void_field, params, tensor,
+                                    void_active):
     """
     Phase 2 Action: boost latent field for node pairs with high V_i.
     Applied before realizer.step() each physics step.
 
-    P_new_link effect = base × (1 - α×h_res) × (1 + γ×tanh(V_i+V_j))
-    h_res suppression is already applied per-window; here we apply
-    the void amplification to the latent field directly.
+    Uses void_active (set of node indices with V > 0.01) to avoid
+    scanning all N nodes. Set is maintained by caller.
 
     Returns stats.
     """
     stats = {"boosted_pairs": 0, "total_boost": 0.0}
     gamma = params.void_gamma
 
-    # Only process nodes with V > 0
-    active_nodes = [n for n in range(len(void_field))
-                    if void_field[n] > 0.01 and n in state.alive_n]
-
-    for n in active_nodes:
+    for n in void_active:
+        if n not in state.alive_n:
+            continue
         v_n = void_field[n]
         for nb in state.neighbors(n):
             if nb not in state.alive_n:
                 continue
             lk = state.key(n, nb)
             if lk in state.alive_l:
-                continue  # already active
+                continue
 
             v_nb = void_field[nb]
             # Divergence pressure with GPT mandatory tanh saturation
             amplification = gamma * math.tanh(v_n + v_nb)
             if amplification > 0.01:
                 cur = state.get_latent(n, nb)
-                boost = 0.01 * amplification  # small per-step boost
+                boost = 0.01 * amplification
                 state.set_latent(n, nb, min(1.0, cur + boost))
                 stats["boosted_pairs"] += 1
                 stats["total_boost"] += boost
@@ -354,9 +352,12 @@ def apply_void_divergence_pressure(state, void_field, params, tensor):
 
 
 def apply_void_decay(void_field, params):
-    """Per-step temporal decay: V *= (1 - λ)."""
+def apply_void_decay(void_field, params, void_active):
+    """Per-step temporal decay: V *= (1 - λ). Prunes void_active."""
     decay = 1.0 - params.void_decay_lambda
     void_field *= decay
+    # Prune nodes that decayed below threshold
+    void_active -= {n for n in void_active if void_field[n] < 0.01}
 
 
 def apply_void_consumption(state, void_field, params, pre_alive_l):
@@ -419,6 +420,7 @@ class V49Engine(V48cEngine):
                          encap_params=params)
         self.link_history = LinkHistoryTensor()
         self.void_field = np.zeros(N, dtype=np.float64)
+        self.void_active = set()  # nodes with V > 0.01, avoids O(N) scan
         self.history_stats = {}
         self.void_stats = {}
         self.last_isum = {}
@@ -452,7 +454,8 @@ class V49Engine(V48cEngine):
 
         wz = {"hardened": 0, "softened": 0, "tensioned": 0}
         wh = {"matured": 0, "snapped": 0, "suppressed_nodes": 0,
-              "void_deposited": 0.0}
+              "void_deposited": 0.0}  # void_deposited tracked here because
+              # deposits only occur via Phase 1 snaps — no history = no deposits
         wv = {"boosted_pairs": 0, "total_boost": 0.0, "consumed_events": 0}
 
         for step in range(steps):
@@ -462,7 +465,8 @@ class V49Engine(V48cEngine):
             # Phase 2: void divergence pressure (before realizer)
             if void_enabled:
                 vp = apply_void_divergence_pressure(
-                    self.state, self.void_field, p, self.link_history)
+                    self.state, self.void_field, p, self.link_history,
+                    self.void_active)
                 wv["boosted_pairs"] += vp["boosted_pairs"]
                 wv["total_boost"] += vp["total_boost"]
 
@@ -505,13 +509,14 @@ class V49Engine(V48cEngine):
                 wh["matured"] += hd["matured"]
                 # Brittleness + snap echo (deposits into void_field)
                 hb = apply_history_brittleness(
-                    self.state, self.link_history, p, self.void_field)
+                    self.state, self.link_history, p, self.void_field,
+                    self.void_active)
                 wh["snapped"] += hb["snapped"]
                 wh["void_deposited"] += hb["void_deposited"]
 
             # Phase 2: void decay + consumption
             if void_enabled:
-                apply_void_decay(self.void_field, p)
+                apply_void_decay(self.void_field, p, self.void_active)
                 vc = apply_void_consumption(
                     self.state, self.void_field, p, pre_alive_l)
                 wv["consumed_events"] += vc["consumed_events"]
