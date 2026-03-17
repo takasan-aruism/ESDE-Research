@@ -87,9 +87,9 @@ class V46EncapsulationParams(V45bEncapsulationParams):
     # Motif scanner
     motif_scan_enabled: bool = True
     motif_s_threshold: float = 0.30      # link strength for motif detection
-    # Hardening (used in V46Tracker.step for encapsulated boundaries)
-    hardening_bonus: float = 0.05        # S bonus for encapsulated boundary links
-    hardening_decay: float = 0.001       # per-window decay of hardening
+    # Hardening fields inherited from V43 EncapsulationParams:
+    #   boundary_hardening_bonus = 0.05
+    #   boundary_hardening_decay = 0.001
 
 
 # ================================================================
@@ -502,10 +502,10 @@ class V46Tracker(V45aTracker):
                             lk = state.key(n, nb)
                             if lk in state.alive_l:
                                 hardening[lk] = min(
-                                    0.5, hardening.get(lk, 0) + self.params.hardening_bonus)
+                                    0.5, hardening.get(lk, 0) + self.params.boundary_hardening_bonus)
         # Decay then prune (keys hitting 0 removed in same window)
         for k in list(hardening):
-            hardening[k] -= self.params.hardening_decay
+            hardening[k] -= self.params.boundary_hardening_decay
         dead = [k for k, v in hardening.items() if v <= 0]
         for k in dead:
             del hardening[k]
