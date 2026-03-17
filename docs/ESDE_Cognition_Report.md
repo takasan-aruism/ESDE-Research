@@ -1,10 +1,10 @@
 # ESDE Cognition: Semantic Interaction — Experiment Report
 
-*Phase: Cognition (v3.0 – v3.9) / Encapsulation (v4.0 – v4.4)*
-*Status: IN PROGRESS (v4.4 complete; awaiting Triad direction)*
+*Phase: Cognition (v3.0 – v3.9) / Encapsulation (v4.0 – v4.8c)*
+*Status: IN PROGRESS (v4.8c Axiomatic Parameter Discovery running)*
 *Team: Gemini (Architect) / GPT (Audit) / Claude (Implementation)*
 *Started: March 11, 2026*
-*Last updated: March 16, 2026*
+*Last updated: March 17, 2026*
 *Prerequisites: Ecology complete (see ESDE_Ecology_Report.md)*
 
 ---
@@ -493,6 +493,226 @@ Sweep: 10 seeds × 200 windows. 2,000 total observation windows.
 
 ---
 
+## v4.5a — Boundary Metabolism Observation
+
+**Question:** Do clusters naturally incorporate external nodes through boundary contact? Does deformation (node turnover while preserving identity) occur?
+
+**Background:** v4.4 identified the persistence–density decorrelation problem. Before adding new physics, the Triad directed Claude to install observation-only instruments to measure what actually happens at cluster boundaries.
+
+**Method:** Zero physics changes from v4.4. Four observation systems added: (1) Boundary resonance logger — for each external node adjacent to a cluster boundary, measure phase difference to cluster mean and classify as resonant/dissonant, record incorporation (node joins) or rejection. (2) Deformation tracker — measure node turnover rate, boundary continuity, and cumulative structural mutation per cluster. (3) Personality signature — snapshot internal structure of clusters reaching seen≥3. (4) Persistence/Density paradox monitor — track per-cluster DR history alongside seen_count to characterize P/D decorrelation at island level. 10 seeds × 200 windows (50 steps/window).
+
+**Results (10 seeds, 1,624 windows with clusters):**
+
+| Metric | Value |
+|---|---|
+| boundary contact events | 453 |
+| incorporations | **0** (all 453 rejected) |
+| deformation events | **0** (43 tracked islands, all turnover=0) |
+| personalities recorded | 0 (1 partial in seed 2024) |
+| P/D convergence | 1/72 (1.4%) |
+| max lifespan | 2 windows |
+| collapse | 0 |
+
+**Findings:**
+
+*Natural incorporation does not exist.* All 453 boundary contact events result in rejection. No external node joins any cluster under the current physics. This is not a measurement problem — it is a physics result.
+
+*Clusters do not deform.* All 43 tracked islands maintain identical node sets across their lifespan (continuity=1.0 or 0.0, no partial turnover). The system produces binary outcomes: exact reappearance or complete dissolution.
+
+*The physics engine lacks a boundary metabolism mechanism.* v4.5a establishes that further progress requires physics intervention, not observation refinement.
+
+---
+
+## v4.5b — Resonance-Biased Boundary Accretion
+
+**Question:** Can targeted latent-field boosting at cluster boundaries produce the first incorporation event?
+
+**Method:** After each window, for qualified clusters (DR≥1.0, seen≥2): compute cluster mean phase, scan substrate neighbors of boundary nodes, apply latent boost proportional to exp(−λ × phase_diff). Boost enters RealizationOperator in next window's physics steps. No direct link creation. link_decay unchanged. 2 seeds × 200 windows.
+
+**Results (2 seeds, 200 windows each):**
+
+| Metric | seed 42 | seed 123 | v4.5a ref |
+|---|---|---|---|
+| accretion boosts applied | 11 | 5 | N/A |
+| incorporations | 0 | 0 | 0 |
+| max lifespan | 3 | 3 | 2 |
+| deformation (ISL0154) | turnover=5, continuity=0.375 | 0 | 0 |
+| personalities | 1 (ISL0154) | 0 | 0 |
+
+**Findings:**
+
+*First deformation event in project history.* ISL0154 (seed 42) survived 3 windows with 62.5% node replacement — the first identity-preserving structural mutation ever observed in ESDE. DR history [0.15, 1.0, 0.24]. Personality recorded: 5 nodes, phase_coherence=0.45.
+
+*Incorporation remains zero.* 16 boosts applied across both seeds, none resulting in a new link crossing the detection threshold. The boost fires too infrequently (5/200 qualifying windows) and too late (cluster dissolves before latent matures).
+
+---
+
+## Adaptive Tuner — Parameter Sweep
+
+**Question:** Is boost magnitude the limiting factor?
+
+**Method:** Automated sweep: boost=[0.10, 0.40, 0.70] × lambda=[0.5, 1.7, 2.8, 4.0]. 12/16 configurations completed before early stop.
+
+**Results:** Boost magnitude has zero effect. boost=0.10 and boost=0.70 produce identical scores at every lambda. Only lambda affects boost count (5→3→1 as lambda increases).
+
+**Finding:** *The bottleneck is temporal, not parametric.* The DR≥1.0 AND seen≥2 gate restricts accretion to ~5/200 windows. Boost is applied once per window; latent→active conversion requires 100-200 steps; cluster dies in 50-100 steps.
+
+---
+
+## v4.6 — Dynamic Identity Tracking + Motif Scanner
+
+**Question:** Is strict node-set equality causing premature identity loss? Are there intermediate deformation states that a relaxed tracker would detect?
+
+**Method:** Zero physics changes. Two observation upgrades: (1) Jaccard similarity (threshold 0.3) replaces strict equality for cluster identity. Classifies identity as: stable (J≥0.95), identity_drift (J≥0.3), or dissolution. Dual lifespan tracking (strict and relaxed). (2) Motif scanner: detect alpha (triangle), beta (triangle+whisker), gamma (4-cycle) at S≥0.30. 2 seeds × 200 windows.
+
+**Results (2 seeds, 200 windows each):**
+
+| Metric | seed 42 | seed 123 | v4.5b ref |
+|---|---|---|---|
+| max relaxed_lifespan | 1 | 1 | 3 |
+| identity_drift events | 0 | 0 | N/A |
+| motifs (α/β/γ) | 0/0/0 | 0/0/0 | N/A |
+
+**Findings:**
+
+*Relaxed lifespan equals strict lifespan.* Jaccard scores are binary: 0.0 (completely different) or 1.0 (identical). No intermediate deformation states exist. Clusters do not "gradually mutate" — they vanish entirely and re-form elsewhere.
+
+*Motifs are absent at S≥0.30.* The S≥0.20 detection layer captures living structure, but S≥0.30 is too sparse for triangles or cycles. Deep cores are structurally empty (consistent with v3.9).
+
+*The observation layer has nothing to observe.* The physics does not produce the phenomenon the instruments are designed to detect. Further observation refinement is futile without physics change.
+
+---
+
+## v4.7 — Per-Step Boundary Accretion
+
+**Question:** Does moving accretion into the physics loop (every 5 steps instead of once per window) resolve the temporal mismatch?
+
+**Method:** Resonance-biased accretion fires every 5 physics steps (10 scans per 50-step window) with per_step_boost=0.01. No DR/seen gate (all clusters with size≥3). Cumulative cap 0.5 per node-pair per window. link_decay unchanged. v4.6 observation preserved. 2 seeds × 200 windows.
+
+**Results (2 seeds, 200 windows each):**
+
+| Metric | seed 42 | seed 123 | v4.5b ref |
+|---|---|---|---|
+| total boosts | 3,121 | 3,431 | 11 |
+| boost-active windows | 104/200 | 129/200 | 5/200 |
+| incorporations | **0** | **0** | 0 |
+| identity_drift | 6 | 2 | 0 |
+| gamma motifs | 1 | 1 | 0 |
+| max relaxed_lifespan | 3 | 3 | 3 |
+| final links | 2,926 | 2,978 | 2,865 |
+
+**Findings:**
+
+*Accretion fires at 410× the rate of v4.5b.* The temporal bottleneck is resolved. 58% of windows have active accretion (vs 2% in v4.5b). 6,552 total boosts across 2 seeds.
+
+*Incorporation remains zero.* The root cause is spatial, not temporal. Latent field accumulates at specific node-pairs (B, E), but the next window's cluster has different boundary nodes (B', B''). The boost and the cluster spatially miss each other every time.
+
+*This definitively closes the latent-boost approach.* The latent-to-active pipeline is architecturally incompatible with mobile 3-5 node clusters. Five experiments (v4.5a → v4.7) converge on the same conclusion.
+
+---
+
+## v4.8 — Terrain Genesis (Paradigm Shift)
+
+**Question:** Under density-dependent cooling, do dense regions stabilize into persistent macro-structures?
+
+**Background:** The Architect issued a directive: "What can be done without a scaffold?" All forced accretion mechanisms (v4.5b, v4.7) are deprecated. Focus shifts from "life mechanisms" to "terrain formation."
+
+**Method:** Density-dependent cooling applied to semantic pressure: cooling_factor = 1/(1 + strength × local_density). Dense nodes experience less phase perturbation → phase coherence maintained → resonance protection sustained → structure persists. No accretion. v4.6 observation preserved. 1 seed × 10 windows (sanity).
+
+**Results (seed 42, 10 windows):**
+
+| Metric | Value | v4.4 ref |
+|---|---|---|
+| cooled_nodes | 0 (w9: 1) | N/A |
+| mean_cooling_factor | 1.000 | N/A |
+| max cluster size | 5 | 5 |
+| max lifespan | 1 | 4 |
+
+**Finding:** *Cooling does not activate.* Local link density is too low (most nodes have 0-1 links at S≥0.20) for the cooling function to deviate from 1.0. The system lacks the structural substrate that cooling is designed to protect.
+
+---
+
+## v4.8b — Chemical Valence (Track A + Track B)
+
+**Question:** Does Z-state chemical coupling, combined with cooling, produce qualitatively different structural dynamics?
+
+**Background:** Two parallel tracks. Track A (v4.8 cooling): make structures bigger and longer-lived. Track B (NEW): make structures internally diverse. The Architect's insight: "Stirring stew cannot generate matter. Consciousness even less so." Quantity without quality is insufficient. Track B activates the existing Z-state chemistry layer to influence topology.
+
+**Method:** Two physics corrections applied per-step inside the loop:
+
+(A) Z-dependent decay resistance: Z=0 (inert) links receive extra decay penalty (+0.02/step). Z=3 (compound) links receive partial decay restoration (compound_restore × 0.005/step). Z=1,2 unchanged.
+
+(B) Z-dependent phase coupling: A-B heterogeneous pairs have phase sync partially reversed (hetero_dampen=0.3), maintaining persistent phase tension.
+
+Both corrections toggleable for ablation. v4.6 observation preserved. 2 seeds × 200 windows.
+
+**Results (2 seeds, 200 windows each):**
+
+Three-phase lifecycle observed in both seeds:
+
+| Phase | Windows | Links | Clusters | Key Events |
+|---|---|---|---|---|
+| Bubble | 1-5 | 4600→8400 | 34→74 | M3 achieved, max_size=10-11, identity_drift=26/win, gamma motifs, cooling activates |
+| Crash | 5-20 | 8400→1100 | 74→0 | Z=0 softening overwhelms Z=3 hardening |
+| Depleted stability | 20-200 | 1100→2000 | 0-3 sparse | Below v4.3 baseline, occasional clusters |
+
+| Metric | seed 42 | seed 123 |
+|---|---|---|
+| max relaxed_lifespan | **10** | **10** |
+| max cluster size | **10** | **11** |
+| identity_drift (total) | **164** | **182** |
+| gamma motifs (total) | **12** | **8** |
+| M3 (encapsulation) windows | **2** | 0 |
+| P/D convergence (unique isl) | **3** | 0 |
+| final links | 2,057 | 1,970 |
+
+**Project-first achievements (bubble phase):**
+
+1. M3 (encapsulation) achieved — first time in the project (seed 42, windows 5 & 8)
+2. relaxed_lifespan=10 (previous best: 4 in v4.4)
+3. identity_drift=26 per window (previous: 0)
+4. P/D convergence: 3 unique islands simultaneously persistent AND dense
+5. Cooling activated for the first time (mCF < 1.0)
+
+**Findings:**
+
+*Z-state chemical valence is the correct architectural direction.* The system IS capable of producing large, persistent, internally differentiating structures. All prior versions could not achieve any of these milestones.
+
+*Static parameters cause bubble-crash-depletion.* compound_restore=0.5 is too strong at high density (causing bubble) and too weak at low density (unable to prevent depletion). No single static value works across both regimes.
+
+*The positive feedback loop works but is uncontrolled.* Z=3 hard bonds → increased link density → cooling activates → phase stability → longer structure lifetime → more Z=3 bonds. This loop produces the bubble. When it overshoots, Z=0 softening triggers the crash. The system needs a self-regulating mechanism.
+
+---
+
+## v4.8c — Axiomatic Parameter Discovery
+
+**Question:** Can the system discover its own parameter equilibrium through structural gradient relaxation, eliminating human parameter tuning entirely?
+
+**Background:** The Architect's directive: static parameter tuning is MORE arbitrary than self-discovery. Hardcoded constants impose human assumptions about equilibrium. The real world distinguishes physics (fixed laws) from biology (dynamically regulated parameters). ESDE must do the same. The mechanism is grounded in ESDE Formal Theory: Axiom T (the parameter layer is the Third Term closing the ternary loop) and Axiom L (dx/dt = −α∇F, gradient descent on structural volatility).
+
+**Method:** Two gradient-relaxation loops, updated every 3 windows:
+
+Loop A: compound_restore ← −α × tanh(ΔL / 1000). ΔL = net link change over 3-window interval. Reduces structural volatility in link dynamics.
+
+Loop B: inert_penalty ← −α × tanh(ΔZ0 / 500). ΔZ0 = net void-link change over 3-window interval. Reduces structural volatility in void dynamics.
+
+α=0.0001. tanh saturation prevents runaway. No target values — the system finds its own equilibrium. Destructive emergence (crashes) is permitted. Physics operators unchanged. v4.6 observation preserved. Currently running 2 seeds × 200 windows.
+
+**Results (seed 42, 10-window sanity):**
+
+| Metric | v4.8c | v4.8b ref |
+|---|---|---|
+| w10 links | 4,923 | 5,137 |
+| max relaxed_lifespan | 10 | 10 |
+| M3 | w5, w7 | w5, w8 |
+| rest (compound_restore) | 0.5000→0.4999 | 0.5000 (static) |
+| iPen (inert_penalty) | 0.0200→0.0200 | 0.0200 (static) |
+| drift applications | 3 (at w3, w6, w9) | N/A |
+
+Drift correctly reverses direction at w9 (ΔL goes negative → restore increases). Bubble trajectory identical to v4.8b in early windows. 200-window results pending — the key question is whether the controller prevents or moderates the crash phase.
+
+---
+
 ## Performance Note
 
 All Cognition experiments run on N=5000 with engine_accel fully enabled (link_strength_sum, exclusion, cycle_finder(C), latent_refresh). Runtime varies by version:
@@ -507,8 +727,11 @@ All Cognition experiments run on N=5000 with engine_accel fully enabled (link_st
 | v4.2 calibration | ~70s/window | 200-step window + wave + plasticity/hardening; ~13 min for 10 waves |
 | v4.3 sweep | ~130s/window | 200-step window + semantic pressure + island detection; ~115 min for 50 windows |
 | v4.4 sweep | ~47s/window | 50-step window + whirlpool identity; ~165 min for 200 windows |
+| v4.5a–v4.7 | ~15-27s/window | 50-step + v4.6 tracker + motif scan; v4.7 adds per-step scan (~+3s) |
+| v4.8b | ~15-35s/window | 50-step + Z-coupling per-step (scales with link count); peak ~35s during bubble |
+| v4.8c | ~15-35s/window | Same as v4.8b + negligible drift computation every 3 windows |
 
-Parallel execution via GNU parallel at -j 20 on the Ryzen 48-thread workstation (v3.x batch runs). Live orchestrator (v4.0–v4.1) runs single-threaded. v4.2–v4.4 batch sweeps at -j 5.
+Parallel execution via GNU parallel at -j 2 for 200-window runs (v4.5a+). Code review by separate Claude instance added to workflow from v4.6 onward.
 
 ---
 
@@ -548,6 +771,18 @@ Cognition v3.0–v3.9 and Language Interface v4.0–v4.4 progressively establish
 30. **Cluster identity persistence is the bottleneck for encapsulation, not density ratio** (v4.3: size 3–5 clusters fully reconfigure between 200-step windows; node-set overlap fails universally)
 31. **Spatial identity tracking detects structural continuity invisible to node-set overlap** (v4.4: whirlpool metric achieves seen_count=4; 8/10 seeds reach seen≥3; v4.3 could not reach seen=2)
 32. **Persistence and density are decorrelated in the current system** (v4.4: persistent clusters have low DR, high-DR clusters are transient; the two preconditions for encapsulation appear in different cluster populations)
+33. **Natural boundary incorporation does not exist** (v4.5a: 0/453 contact events produce incorporation; 0/43 islands deform; the physics has no accretion mechanism)
+34. **Latent-field boosting produces the first deformation event** (v4.5b: ISL0154 survives 3 windows with 62.5% node replacement — first identity-preserving structural mutation in ESDE)
+35. **Boost magnitude is irrelevant; the bottleneck is temporal** (Adaptive Tuner: boost=0.10 and boost=0.70 produce identical scores; gate sparsity limits accretion to 5/200 windows)
+36. **No intermediate deformation states exist at current cluster scale** (v4.6: Jaccard scores are binary 0.0 or 1.0; relaxed_lifespan equals strict_lifespan; clusters vanish and re-form rather than gradually mutating)
+37. **Per-step accretion resolves the temporal bottleneck but exposes a spatial mismatch** (v4.7: 6,552 boosts at 410× v4.5b rate; incorporation still zero; latent field accumulates at node-pairs that the next window's cluster does not touch)
+38. **Density-dependent cooling cannot activate without structural substrate** (v4.8: cooling_factor=1.000; link density too low for cooling function to deviate)
+39. **Z-state chemical valence produces the first large-scale structural dynamics in the project** (v4.8b: M3 achieved, relaxed_lifespan=10, identity_drift=26/win, max_size=10-11, gamma motifs detected)
+40. **Qualitative diversity (chemical coupling) succeeds where quantitative intervention (boosting) failed** (v4.8b: 5 versions of latent boosting produced zero incorporation; chemical valence produces M3 in 5 windows)
+41. **Static parameters cause bubble-crash-depletion cycles** (v4.8b: compound_restore=0.5 drives links 4600→8400→1100 in 20 windows; no single static value is stable across density regimes)
+42. **The physics/biology layer distinction is fundamental** (v4.8c: physics operators are frozen constants; Z-coupling parameters are dynamically regulated; hardcoded parameters are more arbitrary than self-discovery)
+43. **Gradient relaxation (Axiom L) correctly reverses drift direction in response to structural volatility** (v4.8c sanity: restore drifts down during bubble, reverses up during contraction)
+44. **A 5-experiment elimination chain (v4.5a→v4.7) proved that the substrate itself, not the metabolic mechanism, was the bottleneck** (the shift to chemical valence in v4.8b was a direct consequence of this systematic elimination)
 
 ---
 
@@ -557,25 +792,28 @@ Cognition v3.0–v3.9 and Language Interface v4.0–v4.4 progressively establish
 - Whether collapsed seeds recover if pressure is reduced (hysteresis)
 - Whether the transport-saturation regime scales to N=10,000+ or different concept counts
 - Whether semantic content (not just syntactic length) can be mapped to physics without violating "Structure first, meaning later"
-- Whether a single cluster can achieve both persistence (seen≥3) AND high density ratio (DR≥1.5) simultaneously — current evidence shows these properties in separate populations
-- Whether the persistence–density decorrelation is a fundamental property of 3–5 node clusters or an artifact of the current pressure/detection parameters
-- Whether encapsulation (M3) is achievable under the current physics, or requires structural modification to correlate persistence with density
+- Whether v4.8c axiomatic parameter discovery converges to a stable equilibrium or produces perpetual oscillation
+- Whether the bubble-crash cycle observed in v4.8b is eliminated, moderated, or transformed by the homeostatic controller
+- Whether the system can achieve sustained M3 (encapsulation lasting >10 windows) rather than transient M3 during a bubble phase
+- Whether the chemical valence mechanism produces qualitatively different cluster types (compositional identity based on Z-state distribution) or merely larger homogeneous clusters
+- Whether v4.8b/c results scale down to N=50-500 (the original motivation for Track B)
+- Whether alpha/beta motifs (triangles, whisker structures) can emerge at S≥0.30 under any parameter regime, or whether the physics fundamentally favors gamma (4-cycle) motifs
 
 ---
 
 ## Open Questions
 
 - Is the 3–6 hop erosion limit a property of the graph diameter, the physics parameters, or the concept zone geometry?
-- Can phase geometry be modified (e.g., θ_A and θ_B closer together) to test whether bridge persistence depends on Δθ magnitude?
 - What happens between 64× and 128×? Is there a critical amplification where collapse onset is 50%?
-- Is the 3–5 node cluster size an intrinsic property of N=5000 at S≥0.20, or would larger N produce larger clusters?
-- Does the primordial soup state (v4.3) itself represent a scientifically meaningful regime worth characterizing, independent of encapsulation?
-- Why do persistence and density ratio appear in different cluster populations? Is there a structural reason that spatially anchored clusters cannot also be internally dense?
-- Would per-cluster DR logging (tracking the specific DR of the persistent cluster, not just the window max) confirm or refute the two-population hypothesis?
-- Should encapsulation be redefined as two independent milestones: M3a (identity persistence ≥ 3 windows) and M3b (DR ≥ 1.5 for ≥ 3 windows)?
-- Would reducing semantic pressure (below prob=0.005, strength=0.03) give high-DR clusters more time to stabilize, bridging the persistence gap?
-- Does a different whirlpool_hops value (1 or 3 instead of 2) change the persistence–density correlation?
 - Does the empty deep core (v3.9) relate to the shallow cluster depth (v4.3) — are both manifestations of the same structural sparsity at depth?
+- Where does v4.8c compound_restore converge? Is the equilibrium seed-dependent or universal?
+- Does the 3-window drift interval produce qualitatively different convergence from 1-window or 5-window intervals?
+- Is the bubble phase (v4.8b windows 1-5) a necessary precursor to structural emergence, or a pathological transient that the controller should eliminate?
+- Can multi-loop homeostasis (Phase 2: adding cooling_strength and hetero_dampen loops) produce richer equilibria than the current 2-loop system?
+- Does the Z=3 dominance (90%+ of links involve compound nodes) indicate a chemical imbalance, or is it the correct steady state for the A+B→C reaction?
+- At what α does the controller become over-damped (suppressing all structural dynamics) vs under-damped (unable to prevent crashes)?
+- Would the system produce different results starting from compound_restore=0.1 vs 0.5 vs 0.9? Does the controller converge to the same value regardless of initial conditions?
+- Is the persistence–density decorrelation (v4.4) resolved by chemical valence, or does it persist in a different form at larger cluster sizes?
 
 ---
 
@@ -598,7 +836,15 @@ Cognition v3.0–v3.9 and Language Interface v4.0–v4.4 progressively establish
 | v4.2 | 2026-03-14 | Gemini→GPT→Claude (Ryzen) | Topological plasticity + structural hardening + resistance tracking | **Plasticity activates; rewiring ~10–30% of damage; hardening decays before next wave; universal collapse at wave 6; micro positive, macro negative** |
 | v4.3 | 2026-03-15 | Gemini→GPT→Claude (Ryzen) | Paradigm shift: steady pressure + island detection + encapsulation lifecycle | **Zero collapse (14/14 seeds); DR≥1.5 in 13/14 seeds; encapsulation=0 (cluster identity persistence insufficient at size 3–5); system at phase boundary** |
 | v4.4 | 2026-03-16 | Gemini→GPT→Claude (Ryzen) | Whirlpool identity (spatial tracking) + 50-step high-speed windows | **seen_count=4 achieved (seed 123); 8/10 seeds reach seen≥3; encapsulation=0 (persistent clusters have low DR, high-DR clusters are transient); persistence–density decorrelation identified** |
+| v4.5a | 2026-03-17 | Gemini→GPT→Claude (Ryzen) | Boundary metabolism observation (4 instruments, zero physics change) | **0/453 incorporations; 0/43 deformations; natural accretion does not exist** |
+| v4.5b | 2026-03-17 | Gemini→GPT→Claude (Ryzen) | Resonance-biased boundary accretion (post-window latent boost) | **First deformation event (ISL0154, 3 windows, 62.5% node replacement); incorporation=0; temporal bottleneck identified** |
+| Tuner | 2026-03-17 | Claude (Ryzen) | Automated boost/lambda parameter sweep | **Boost magnitude irrelevant; bottleneck is gate sparsity (5/200 windows)** |
+| v4.6 | 2026-03-17 | Gemini→GPT→Claude (Ryzen) | Dynamic identity (Jaccard) + motif scanner (α/β/γ) | **No intermediate deformation states; Jaccard binary 0/1; motifs=0 at S≥0.30** |
+| v4.7 | 2026-03-17 | Gemini→GPT→Claude (Ryzen) | Per-step accretion inside physics loop (10 scans/window) | **6,552 boosts (410× v4.5b); incorporation=0; spatial mismatch identified; latent-boost approach closed** |
+| v4.8 | 2026-03-17 | Gemini→GPT→Claude (Ryzen) | Terrain Genesis: density-dependent cooling | **cooling_factor=1.000; insufficient link density for activation; cooling alone ineffective** |
+| v4.8b | 2026-03-17 | Gemini→GPT→Claude (Ryzen) | Chemical Valence: Z-state topological coupling (Track A+B) | **M3 achieved (first ever); rLif=10; drift=26/win; max_size=11; bubble-crash-depletion cycle; static params unstable** |
+| v4.8c | 2026-03-17 | Gemini→GPT→Claude (Ryzen) | Axiomatic Parameter Discovery (gradient relaxation, Axiom T+L) | **Drift reverses direction correctly; 200-window convergence test in progress** |
 
 ---
 
-*The project has traversed five paradigmatic phases within Cognition. v3.0–v3.9 established that concept regions are semi-permeable membranes with self-limiting plasticity — erosion saturates at 3–6 hops, transport scales without deepening, and the observer survives total internal reworking. The Language Interface (v4.0) proved LLM grounding works but revealed a content-physics gap. The Wave Propagation Engine (v4.1) introduced localized dynamics. Adaptive Dynamics (v4.2) demonstrated that disaster-and-rebuild has a hard limit: cumulative starvation causes phase-transition collapse. The Paradigm Shift (v4.3) replaced destruction with steady pressure and discovered a primordial soup of continuously forming micro-clusters that reach encapsulation-grade density ratios (DR≥1.5 in 93% of seeds) but cannot sustain identity across observation windows. The Observation Upgrade (v4.4) resolved the identity tracking problem — the whirlpool metric successfully tracks metabolizing clusters across windows (seen_count=4), confirming structural continuity exists where node-set overlap fails — but revealed a deeper challenge: persistence and density ratio appear in different cluster populations. The system can sustain structure (seen≥3 in 80% of seeds) and can produce density (DR≥1.5 in 173 windows across 10 seeds), but not both simultaneously in the same cluster. The next architectural decision must address this persistence–density decorrelation.*
+*The project has traversed seven paradigmatic phases within Cognition. v3.0–v3.9 established that concept regions are semi-permeable membranes with self-limiting plasticity — erosion saturates at 3–6 hops, transport scales without deepening, and the observer survives total internal reworking. The Language Interface (v4.0) proved LLM grounding works but revealed a content-physics gap. The Wave Propagation Engine (v4.1) introduced localized dynamics. Adaptive Dynamics (v4.2) demonstrated that disaster-and-rebuild has a hard limit. The Paradigm Shift (v4.3) discovered a primordial soup of micro-clusters. The Observation Upgrade (v4.4) resolved identity tracking but revealed persistence–density decorrelation. The Boundary Metabolism series (v4.5a–v4.7) systematically eliminated every parametric and temporal explanation for incorporation failure across five experiments, conclusively demonstrating that the substrate itself — quantitatively homogeneous, qualitatively uniform — was the fundamental bottleneck. The Chemical Valence breakthrough (v4.8b) activated the existing Z-state chemistry layer to create qualitative structural diversity, producing the project's first M3 encapsulation, first large-scale identity drift, and first sustained cluster growth — but exposed that static parameters cause uncontrolled bubble-crash cycles. The Axiomatic Parameter Discovery (v4.8c) replaces human parameter tuning with gradient relaxation grounded in ESDE Formal Theory (Axiom T and L), treating the parameter layer as the Third Term that closes the ternary loop. Results pending — the system is currently discovering its own equilibrium.*
