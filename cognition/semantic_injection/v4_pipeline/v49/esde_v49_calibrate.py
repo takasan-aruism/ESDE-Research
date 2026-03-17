@@ -67,7 +67,7 @@ LOG_FIELDS = [
     # v4.9 Phase 3 (mandatory logging)
     "void_total_mass", "void_variance",
     "void_isolated_high", "void_active_neighbor_high",
-    "void_diffusion_events", "void_to_active",
+    "void_diffusion_events", "void_to_active", "void_c_diff",
 ]
 
 
@@ -210,6 +210,7 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
             "void_active_neighbor_high": vs.get("active_neighbor_high_V", 0),
             "void_diffusion_events": vs.get("diffusion_events", 0),
             "void_to_active": vs.get("void_to_active", 0),
+            "void_c_diff": vs.get("c_diff", 0),
         }
         writer.writerow(row)
         f.flush()

@@ -103,10 +103,12 @@ class V49EncapsulationParams(V48cEncapsulationParams):
     void_gamma_max: float = 20.0
     void_consumption: float = 0.1  # V consumed per link birth
     void_v_max: float = 5.0       # cap on V_i
-    # Phase 3: substrate diffusion (FIXED physical constant, no tuning)
-    void_c_diff: float = 0.02     # diffusion coefficient on frozen substrate
-    # NOTE: void_decay_lambda REMOVED. Decay is now topology-dependent:
-    # V_i *= exp(-local_degree_i). No manual parameter.
+    # Phase 3: substrate diffusion (state-dependent, not static)
+    # C_diff(t) = c_diff_min + c_diff_scale × (isolated_high_V / N)
+    # Stateless: no memory, no loop, no α dependency.
+    void_c_diff_min: float = 0.001   # baseline diffusion
+    void_c_diff_scale: float = 0.5   # scales with isolation fraction
+    # NOTE: void_decay_lambda REMOVED. Decay is topology-dependent.
     # Toggles
     history_enabled: bool = True
     void_enabled: bool = True
@@ -424,21 +426,46 @@ def apply_void_substrate_diffusion(void_field, state, substrate, params,
     Void flows on the FROZEN 4-neighbor grid, NOT on active topology.
     This re-couples isolated nodes (degree=0) with active regions.
 
+    C_diff is state-dependent (stateless, no memory, no α):
+      C_diff(t) = c_diff_min + c_diff_scale × (isolated_high_V / N)
+    Many isolated void nodes → strong diffusion.
+    Few isolated void nodes → weak diffusion.
+
     Flow rule:
-      Flow_i→j = (V_i − V_j) × exp(−local_degree_i) × C_diff
+      Flow_i→j = (V_i − V_j) × exp(−local_degree_i) × C_diff(t)
       Only if V_i > V_j. Source-degree weighting only.
 
     Strict conservation: deltas sum to zero (order-independent).
-    C_diff is a FIXED physical constant.
-
     Returns stats for mandatory logging.
     """
-    stats = {"diffusion_events": 0, "void_to_active": 0}
-    c_diff = params.void_c_diff
-    if c_diff <= 0:
+    stats = {"diffusion_events": 0, "void_to_active": 0, "c_diff": 0.0}
+
+    N = len(void_field)
+    v_max = params.void_v_max
+
+    # Count isolated high-V nodes for state-dependent C_diff
+    isolated_count = 0
+    for n in void_active:
+        if void_field[n] < 0.01:
+            continue
+        has_link = False
+        if n in state.alive_n:
+            for nb in state.neighbors(n):
+                if nb in state.alive_n:
+                    lk = state.key(n, nb)
+                    if lk in state.alive_l:
+                        has_link = True
+                        break
+        if not has_link:
+            isolated_count += 1
+
+    # State-dependent C_diff: isolation fraction drives diffusion strength
+    c_diff = params.void_c_diff_min + params.void_c_diff_scale * (isolated_count / N)
+    stats["c_diff"] = round(c_diff, 6)
+
+    if c_diff <= 0 or not void_active:
         return stats
 
-    v_max = params.void_v_max
     deltas = np.zeros_like(void_field)
 
     for n in list(void_active):
@@ -455,7 +482,7 @@ def apply_void_substrate_diffusion(void_field, state, substrate, params,
                     if lk in state.alive_l:
                         local_degree += 1
 
-        # Decay factor: isolated nodes (degree=0) → exp(0)=1.0 (full flow)
+        # Isolated nodes (degree=0) → exp(0)=1.0 (full flow)
         # Dense nodes (degree=3) → exp(-3)≈0.05 (weak flow)
         source_factor = math.exp(-local_degree) * c_diff
 
@@ -485,7 +512,7 @@ def apply_void_substrate_diffusion(void_field, state, substrate, params,
     np.clip(void_field, 0.0, v_max, out=void_field)
 
     # Update void_active
-    for n in range(len(void_field)):
+    for n in range(N):
         if void_field[n] > 0.001:
             void_active.add(n)
         elif n in void_active:
@@ -525,13 +552,13 @@ class V49Engine(V48cEngine):
     def step_window(self, steps=V49_WINDOW):
         """
         Physics loop:
-          [Phase 3: substrate void diffusion (propagate from prior deposits)]
           [Phase 2b: void divergence pressure → latent boost]
           [7 canonical operators]
           [Z-coupling corrections]
           [Phase 1: history tensor update]
           [Phase 1: history decay correction (h_age)]
           [Phase 1: brittleness + snap echo → V_i deposit]
+          [Phase 3: substrate void diffusion (immediately after snap echo)]
           [Phase 2b: topological void decay]
           [Phase 2b: void consumption on new links]
           [background seeding]
@@ -560,16 +587,6 @@ class V49Engine(V48cEngine):
         for step in range(steps):
             # Snapshot alive links before physics (for consumption tracking)
             pre_alive_l = set(self.state.alive_l) if void_enabled else set()
-
-            # Phase 3: substrate void diffusion (propagate prior deposits)
-            # Runs BEFORE divergence pressure so diffused V is immediately
-            # available for latent boost. Uses frozen substrate grid.
-            if void_enabled and self.void_active:
-                sd = apply_void_substrate_diffusion(
-                    self.void_field, self.state, self.substrate, p,
-                    self.void_active)
-                wv["diffusion_events"] += sd["diffusion_events"]
-                wv["void_to_active"] += sd["void_to_active"]
 
             # Phase 2b: void divergence pressure (before realizer)
             if void_enabled:
@@ -622,6 +639,17 @@ class V49Engine(V48cEngine):
                     self.void_active)
                 wh["snapped"] += hb["snapped"]
                 wh["void_deposited"] += hb["void_deposited"]
+
+            # Phase 3: substrate diffusion (immediately after snap echo)
+            # Void flows on frozen grid from isolated collapse sites
+            # toward active regions. Per Gemini spec §2.
+            if void_enabled and self.void_active:
+                sd = apply_void_substrate_diffusion(
+                    self.void_field, self.state, self.substrate, p,
+                    self.void_active)
+                wv["diffusion_events"] += sd["diffusion_events"]
+                wv["void_to_active"] += sd["void_to_active"]
+                wv["c_diff"] = sd.get("c_diff", 0)
 
             # Phase 2b: topological void decay + consumption
             if void_enabled:
