@@ -174,8 +174,6 @@ def main():
     parser.add_argument("--window-steps", type=int, default=V71_WINDOW)
     parser.add_argument("--output", type=str, default="calibration_v71")
     parser.add_argument("--no-virtual", action="store_true")
-    parser.add_argument("--cooling-strength", type=float, default=1.0)
-    parser.add_argument("--no-cooling", action="store_true")
     parser.add_argument("--density-threshold", type=float, default=1.5)
     parser.add_argument("--persistence", type=int, default=3)
     args = parser.parse_args()
@@ -183,8 +181,6 @@ def main():
     params = V71EncapsulationParams(
         ratio_threshold=args.density_threshold,
         min_persistence=args.persistence,
-        cooling_strength=args.cooling_strength,
-        cooling_enabled=not args.no_cooling,
         virtual_enabled=not args.no_virtual,
     )
 
