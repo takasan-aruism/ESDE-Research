@@ -73,14 +73,28 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
         frame = engine.step_window(steps=window_steps)
         sec = time.time() - t0
 
-        isum = engine.island_tracker.step_summary
-        if not isum:
-            isum = {"n_clusters": 0, "n_encapsulated": 0, "n_candidates": 0,
-                    "max_size": 0, "max_density_ratio": 0, "max_seen_count": 0,
-                    "mean_inner_entropy": 0, "max_inner_entropy": 0,
-                    "total_inner_tri": 0, "motif_recurrence": 0,
-                    "encap_events": 0, "dissolve_events": 0,
-                    "max_relaxed_lifespan": 0}
+        # V43's island_tracker doesn't have step_summary.
+        # Extract from frame fields + tracker state.
+        isum = {
+            "n_clusters": frame.n_clusters,
+            "n_encapsulated": frame.n_encapsulated,
+            "n_candidates": frame.n_candidates,
+            "max_size": int(frame.max_cluster_size),
+            "max_density_ratio": frame.max_density_ratio,
+            "max_seen_count": getattr(frame, 'max_seen_count', 0),
+            "mean_inner_entropy": frame.mean_inner_entropy,
+            "max_inner_entropy": frame.max_inner_entropy,
+            "total_inner_tri": frame.total_inner_triangles,
+            "motif_recurrence": frame.motif_recurrence_count,
+            "encap_events": frame.encap_events_total,
+            "dissolve_events": frame.dissolve_events_total,
+            "max_relaxed_lifespan": 0,
+        }
+        # Compute max lifespan from tracker
+        for iid, info in engine.island_tracker.islands.items():
+            life = info.seen_count
+            if life > isum["max_relaxed_lifespan"]:
+                isum["max_relaxed_lifespan"] = life
         vl = engine.virtual_stats
         max_ms = max(max_ms, frame.milestone)
 
