@@ -15,12 +15,13 @@ from dataclasses import dataclass
 # ================================================================
 # PATH SETUP
 # ================================================================
-_SCRIPT_DIR = Path(__file__).resolve().parent
-_PIPELINE_DIR = _SCRIPT_DIR.parent         # v7_pipeline/
-_V4_PIPELINE = _PIPELINE_DIR.parent / "v4_pipeline"
+_SCRIPT_DIR = Path(__file__).resolve().parent      # v71/
+_PIPELINE_DIR = _SCRIPT_DIR.parent                  # v7_pipeline/
+_SEMANTIC_DIR = _PIPELINE_DIR.parent                # semantic_injection/
+_V4_PIPELINE = _SEMANTIC_DIR / "v4_pipeline"        # v4_pipeline/
 _V43_DIR = _V4_PIPELINE / "v43"
 _V41_DIR = _V4_PIPELINE / "v41"
-_REPO_ROOT = _V4_PIPELINE.parent.parent    # ESDE-Research/
+_REPO_ROOT = _SEMANTIC_DIR.parent.parent            # ESDE-Research/
 _ENGINE_DIR = _REPO_ROOT / "ecology" / "engine"
 
 for p in [str(_PIPELINE_DIR), str(_V43_DIR), str(_V41_DIR),
