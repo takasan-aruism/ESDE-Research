@@ -62,7 +62,7 @@ LOG_FIELDS = [
     "avalanche_events", "cascade_links",
     # v4.9 Phase 2b
     "void_mean_V", "void_max_V", "void_active_nodes",
-    "gen_births", "gen_candidates", "gen_max_p",
+    "gen_births", "gen_candidates", "gen_max_T", "gen_max_delta",
     "void_consumed", "void_deposited",
     "proliferation_pi", "void_induced_births",
     # v4.9 Phase 3 (mandatory logging)
@@ -203,7 +203,8 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
             "void_active_nodes": vs.get("active_V_nodes", 0),
             "gen_births": vs.get("gen_births", 0),
             "gen_candidates": vs.get("gen_candidates", 0),
-            "gen_max_p": round(vs.get("gen_max_p", 0), 6),
+            "gen_max_T": round(vs.get("gen_max_T", 0), 6),
+            "gen_max_delta": round(vs.get("gen_max_delta", 0), 6),
             "void_consumed": vs.get("consumed_events", 0),
             "void_deposited": round(hs.get("void_deposited", 0), 4),
             "proliferation_pi": cur.get("proliferation_pi", encap_params.proliferation_pi),

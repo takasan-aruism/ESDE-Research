@@ -1,40 +1,34 @@
 #!/usr/bin/env python3
 """
-ESDE v4.9 — Generative Dynamics (Phase 7)
-============================================
-Phase : v4.9 (P1-P6 retained + P7: Continuous Probabilistic Generation)
+ESDE v4.9 — State-Determined Inevitability (Phase 7/8)
+========================================================
+Phase : v4.9 (P1-P6 + P7→P8: Deterministic Transition Field)
 Role  : Claude (Implementation)
 Arch  : Gemini (+ Taka) | Audit: GPT
 
-Phase 7: Paradigm shift from threshold-based to generative dynamics.
-  Link formation is no longer gated by latent field threshold.
-  Instead, a continuous probability field drives direct link birth:
+Phase 8: Paradigm shift — link generation is deterministic.
+  No RNG. No probability. No base rate.
 
-    P(link_ij) = tanh(V_i + V_j) × (Π / Π_max) × exp(-min(deg_i, deg_j))
+  Transition Field (structural binding pressure):
+    T_ij = tanh(V_i + V_j) × (Π / Π_max) × Phase_Resonance(i, j)
+    Phase_Resonance = 0.5 × (1 + cos(θ_i − θ_j))
 
-  P_base = 0 (GPT mandate: pure generative, no fixed bias).
-  Candidate edges: substrate neighbors only (locality constraint).
-  P clipped to ≤ 1.0.
+  Emergent Threshold (structural resistance):
+    E_ij = tanh(max(degree_i, degree_j) / (1 + Π))
 
-  Even tiny V combined with high Π creates nonzero birth probability.
-  No accumulation needed. No temporal persistence required.
-  Void translates to structure fluidly and instantaneously.
+  If T_ij > E_ij → link MUST form (latent saturated to 1.0,
+    RealizationOperator converts respecting exclusion/bookkeeping).
+  Δ_ij = T_ij − E_ij logged for future extensions.
 
-  Old divergence pressure (latent field boost) REMOVED.
-  Replaced by probabilistic latent saturation — when P fires,
-  latent is set to 1.0 and RealizationOperator converts it to
-  an active link respecting exclusion and bookkeeping.
+  Phase geometry (θ) replaces RNG as micro-fluctuation source.
+  Dense regions resist (high E_ij). Crisis lowers barrier (Π in denom).
 
   All other mechanics retained:
-    Phase 1: History (h_age, h_res, h_str, avalanche)
-    Phase 2b: Void generation (snap echo), topological persistence
-    Phase 3+: Substrate diffusion (osmosis), C_diff state-dependent
-    Phase 4: Ring cascade on void-induced births
-    Phase 5: Stateless Π = Π_max × tanh(snaps / alive_links)
-    Phase 6: Tension-gated decay: exp(-deg / (1+Π))
-    Loops A+B (α-driven restore/inert). Loop C removed.
+    Phase 1: History  |  Phase 2b: Void  |  Phase 3: Substrate diffusion
+    Phase 4: Ring cascade  |  Phase 5: Stateless Π  |  Phase 6: Tension-gated decay
+    Loops A+B (α-driven).
 
-Physics operators: UNCHANGED (generative is additive, not replacing).
+Physics operators: UNCHANGED.
 """
 
 import sys, math, time
@@ -325,35 +319,39 @@ def apply_avalanche(state, tensor, prev_islands, params):
 # ================================================================
 # PHASE 2: FERTILE VOID
 # ================================================================
-def apply_void_generative(state, void_field, params, substrate, void_active,
-                          rng):
+def apply_void_transition_field(state, void_field, params, substrate,
+                                 void_active):
     """
-    Phase 7: Continuous Probabilistic Generation.
-    Void × tension × boundary topology → latent field saturation.
+    Phase 8: State-Determined Inevitability.
+    Deterministic link generation — no RNG.
 
-    P(link_ij) = tanh(V_i + V_j) × (Π / Π_max) × exp(-min(deg_i, deg_j))
+    Transition Field (structural binding pressure):
+      T_ij = tanh(V_i + V_j) × (Π / Π_max) × Phase_Resonance(i,j)
+      Phase_Resonance = 0.5 × (1 + cos(θ_i − θ_j))
 
-    P_base = 0 (GPT mandate: pure generative, no fixed bias).
-    Candidate edges: substrate neighbors only (locality).
-    Both endpoints must be alive (P7-2 fix).
-    P clipped to ≤ 1.0.
+    Emergent Threshold (structural resistance):
+      E_ij = tanh(max(degree_i, degree_j) / (1 + Π))
 
-    When P fires: latent field saturated to 1.0. The canonical
-    RealizationOperator converts this to an active link in the
-    same window, respecting exclusion constraints and bookkeeping
-    (P7-1 fix: no direct link manipulation).
+    If T_ij > E_ij: latent saturated to 1.0. RealizationOperator
+    converts to active link respecting exclusion and bookkeeping.
 
-    Note: gen_births counted here will also appear as
-    void_induced_births in consumption stats (P7-3: documented).
+    Δ_ij = T_ij − E_ij preserved for audit/future extensions.
+    Void consumed at both endpoints on link creation.
+
+    Candidate edges: substrate neighbors, both alive. No dead nodes.
     """
-    stats = {"gen_births": 0, "gen_candidates": 0, "gen_max_p": 0.0}
+    stats = {"gen_births": 0, "gen_candidates": 0,
+             "gen_max_T": 0.0, "gen_max_delta": 0.0,
+             "gen_mean_delta": 0.0}
     pi = params.proliferation_pi
     pi_max = params.proliferation_pi_max
+    cost = params.void_consumption
 
     if pi < 0.001 or pi_max <= 0:
         return stats
 
-    pi_ratio = pi / pi_max  # [0, 1]
+    pi_ratio = pi / pi_max
+    deltas_list = []
 
     for n in list(void_active):
         v_n = void_field[n]
@@ -363,11 +361,10 @@ def apply_void_generative(state, void_field, params, substrate, void_active,
             continue
 
         deg_n = _node_active_degree(state, n)
+        theta_n = float(state.theta[n])
 
-        # Substrate neighbors only (locality constraint, GPT audit)
         sub_nbs = substrate.get(n, set())
         for nb in sub_nbs:
-            # P7-2: both endpoints must be alive
             if nb not in state.alive_n:
                 continue
             lk = state.key(n, nb)
@@ -376,24 +373,43 @@ def apply_void_generative(state, void_field, params, substrate, void_active,
 
             v_nb = void_field[nb]
             deg_nb = _node_active_degree(state, nb)
+            theta_nb = float(state.theta[nb])
 
-            # P_generative = tanh(V_i+V_j) × (Π/Π_max) × exp(-min(deg_i,deg_j))
+            # Transition Field
             void_factor = math.tanh(v_n + v_nb)
-            boundary_factor = math.exp(-min(deg_n, deg_nb))
-            p_gen = void_factor * pi_ratio * boundary_factor
-            p_gen = min(1.0, max(0.0, p_gen))
+            phase_resonance = 0.5 * (1.0 + math.cos(theta_n - theta_nb))
+            T_ij = void_factor * pi_ratio * phase_resonance
 
-            if p_gen > stats["gen_max_p"]:
-                stats["gen_max_p"] = p_gen
+            # Emergent Threshold
+            E_ij = math.tanh(max(deg_n, deg_nb) / (1.0 + pi))
 
-            if p_gen > 0.0001:
+            # Transition margin
+            delta_ij = T_ij - E_ij
+            deltas_list.append(delta_ij)
+
+            if T_ij > stats["gen_max_T"]:
+                stats["gen_max_T"] = T_ij
+            if delta_ij > stats["gen_max_delta"]:
+                stats["gen_max_delta"] = delta_ij
+
+            if delta_ij > 0:
                 stats["gen_candidates"] += 1
-                if rng.random() < p_gen:
-                    # P7-1: Saturate latent field. RealizationOperator
-                    # converts to active link respecting exclusion +
-                    # bookkeeping (engine_accel cache, R dict, etc.)
-                    state.set_latent(n, nb, 1.0)
-                    stats["gen_births"] += 1
+
+            # Deterministic: if T > E, link MUST form
+            if T_ij > E_ij:
+                # Saturate latent — RealizationOperator converts
+                state.set_latent(n, nb, 1.0)
+                stats["gen_births"] += 1
+                # Consume void
+                void_field[n] = max(0.0, void_field[n] - cost)
+                void_field[nb] = max(0.0, void_field[nb] - cost)
+                if void_field[n] < 0.001:
+                    void_active.discard(n)
+                if void_field[nb] < 0.001:
+                    void_active.discard(nb)
+
+    if deltas_list:
+        stats["gen_mean_delta"] = round(float(np.mean(deltas_list)), 6)
 
     return stats
 
@@ -541,6 +557,7 @@ def apply_void_substrate_diffusion(void_field, state, substrate, params,
         return stats
 
     deltas = np.zeros_like(void_field)
+    affected = set()  # track nodes with nonzero deltas for O(|affected|) update
 
     for n in list(void_active):
         v_n = void_field[n]
@@ -567,6 +584,8 @@ def apply_void_substrate_diffusion(void_field, state, substrate, params,
                 if flow > 0.0001:
                     deltas[n] -= flow
                     deltas[nb] += flow
+                    affected.add(n)
+                    affected.add(nb)
                     stats["diffusion_events"] += 1
                     if deg_j > 0:
                         stats["void_to_active"] += 1
@@ -574,10 +593,11 @@ def apply_void_substrate_diffusion(void_field, state, substrate, params,
     void_field += deltas
     np.clip(void_field, 0.0, v_max, out=void_field)
 
-    for n in range(N):
+    # Update void_active only for affected nodes (P8-3 fix: O(|affected|) not O(N))
+    for n in affected:
         if void_field[n] > 0.001:
             void_active.add(n)
-        elif n in void_active:
+        else:
             void_active.discard(n)
 
     return stats
@@ -619,7 +639,7 @@ class V49Engine(V48cEngine):
           [Phase 1: history decay correction (h_age)]
           [Phase 1: brittleness + snap echo → V_i deposit]
           [Phase 3: substrate void diffusion (after snap echo)]
-          [Phase 7: probabilistic generation (void → latent saturation)]
+          [Phase 8: transition field (T>E → latent saturation, deterministic)]
           [Phase 6: tension-gated void decay]
           [Phase 4: void consumption + cascade on new links]
           [background seeding]
@@ -645,7 +665,8 @@ class V49Engine(V48cEngine):
         wv = {"consumed_events": 0, "void_induced_births": 0,
               "diffusion_events": 0, "void_to_active": 0,
               "cascade_splashes": 0,
-              "gen_births": 0, "gen_candidates": 0, "gen_max_p": 0.0}
+              "gen_births": 0, "gen_candidates": 0,
+              "gen_max_T": 0.0, "gen_max_delta": 0.0}
 
         for step in range(steps):
             # Snapshot alive links before physics (for consumption tracking)
@@ -706,17 +727,18 @@ class V49Engine(V48cEngine):
                 wv["void_to_active"] += sd["void_to_active"]
                 wv["c_diff"] = sd.get("c_diff", 0)
 
-            # Phase 7: Continuous Probabilistic Generation
-            # Direct link birth from void × tension × boundary topology.
-            # Runs after diffusion (V at active nodes) before decay.
+            # Phase 8: Deterministic Transition Field
+            # If T_ij > E_ij → latent saturated, link MUST form. No RNG.
             if void_enabled and self.void_active:
-                gn = apply_void_generative(
+                gn = apply_void_transition_field(
                     self.state, self.void_field, p, self.substrate,
-                    self.void_active, self.state.rng)
+                    self.void_active)
                 wv["gen_births"] += gn["gen_births"]
                 wv["gen_candidates"] += gn["gen_candidates"]
-                if gn["gen_max_p"] > wv.get("gen_max_p", 0):
-                    wv["gen_max_p"] = gn["gen_max_p"]
+                if gn["gen_max_T"] > wv.get("gen_max_T", 0):
+                    wv["gen_max_T"] = gn["gen_max_T"]
+                if gn["gen_max_delta"] > wv.get("gen_max_delta", 0):
+                    wv["gen_max_delta"] = gn["gen_max_delta"]
 
             # Phase 6: tension-gated void decay + consumption + cascade
             if void_enabled:
