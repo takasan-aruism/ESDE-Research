@@ -64,7 +64,7 @@ LOG_FIELDS = [
     # v7.0 virtual layer
     "v_energy", "v_recurrence_n", "v_motifs",
     "v_labels", "v_born", "v_died",
-    "v_torque_n", "v_torque_mean",
+    "v_torque_n", "v_torque_mean", "v_torque_success",
 ]
 
 
@@ -227,6 +227,7 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
             "v_died": vl.get("labels_died", 0),
             "v_torque_n": vl.get("torque_events", 0),
             "v_torque_mean": vl.get("mean_torque", 0),
+            "v_torque_success": vl.get("torque_success", 0),
         }
         writer.writerow(row)
         f.flush()
