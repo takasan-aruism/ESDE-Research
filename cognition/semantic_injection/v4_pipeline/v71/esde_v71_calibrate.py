@@ -120,7 +120,8 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
             "entropy_delta": round(frame.entropy_delta, 4),
             "milestone": frame.milestone,
             "physics_seconds": round(sec, 1),
-            "total_rplus": vl.get("total_rplus", 0),
+            "total_rplus": sum(1 for lk in engine.state.alive_l
+                              if engine.state.R.get(lk, 0.0) > 0),
             "v_energy": vl.get("virtual_energy_total", 0),
             "v_recurrence_n": vl.get("recurrence_entries", 0),
             "v_motifs": vl.get("motifs_detected", 0),
@@ -137,10 +138,13 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
         rlife = isum.get("max_relaxed_lifespan",
                          isum.get("max_lifespan", 0))
 
+        rplus = sum(1 for lk in engine.state.alive_l
+                    if engine.state.R.get(lk, 0.0) > 0)
+
         print(f"  {frame.window:>4} {isum.get('n_clusters',0):>4} "
               f"{isum.get('max_size',0):>4} "
               f"{rlife:>4} "
-              f"{vl.get('total_rplus',0):>4} "
+              f"{rplus:>4} "
               f"{vl.get('virtual_energy_total',0):>6.1f} "
               f"{vl.get('labels_active',0):>3} "
               f"{vl.get('labels_died',0):>3} "

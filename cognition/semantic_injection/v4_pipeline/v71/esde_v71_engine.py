@@ -79,7 +79,11 @@ class VirtualLayer:
         self.next_label_id = 0
         self.stats = {}
 
-    def step(self, state, window_count):
+    def step(self, state, window_count, islands=None, substrate=None):
+        """
+        islands: dict {island_id: IslandState} from tracker
+        substrate: frozen grid adjacency
+        """
         stats = {
             "virtual_energy_total": 0.0,
             "recurrence_entries": 0,
@@ -93,35 +97,41 @@ class VirtualLayer:
             "mean_torque": 0.0,
         }
 
-        # ── 1. SEED ──
-        current_rplus = set()
-        for lk in state.alive_l:
-            r = state.R.get(lk, 0.0)
-            if r > 0:
-                current_rplus.add(lk)
-                self.recurrence[lk] = self.recurrence.get(lk, 0) + 1
+        # ── 1. SEED: from island tracker clusters ──
+        # Any cluster with 3+ nodes at S≥0.20 is a potential label.
+        # This is what Genesis produces naturally every window.
+        cluster_list = []
+        if islands:
+            for iid, info in islands.items():
+                if len(info.nodes) >= 3:
+                    cluster_list.append(info.nodes)
+                    # Track recurrence by cluster nodes (frozen set)
+                    self.recurrence[info.nodes] = \
+                        self.recurrence.get(info.nodes, 0) + 1
 
-        stale = [lk for lk, count in self.recurrence.items()
-                 if lk not in current_rplus and count < 2]
-        for lk in stale:
-            del self.recurrence[lk]
+        # Clean stale recurrence
+        current_clusters = set(info.nodes for info in islands.values()
+                               if len(info.nodes) >= 3) if islands else set()
+        stale = [k for k, v in self.recurrence.items()
+                 if k not in current_clusters and v < 2]
+        for k in stale:
+            del self.recurrence[k]
 
         stats["recurrence_entries"] = len(self.recurrence)
+        stats["motifs_detected"] = len(cluster_list)
 
-        motifs = self._find_rplus_motifs(state, current_rplus)
-        stats["motifs_detected"] = len(motifs)
-
-        for motif_nodes, motif_links in motifs:
+        # Birth new labels from clusters not yet labeled
+        for cluster_nodes in cluster_list:
             already_labeled = False
             for label in self.labels.values():
-                overlap = label["nodes"] & motif_nodes
-                if len(overlap) > len(motif_nodes) * 0.5:
+                overlap = label["nodes"] & cluster_nodes
+                if len(overlap) > len(cluster_nodes) * 0.5:
                     already_labeled = True
                     break
             if already_labeled:
                 continue
 
-            thetas = [float(state.theta[n]) for n in motif_nodes
+            thetas = [float(state.theta[n]) for n in cluster_nodes
                       if n in state.alive_n]
             if not thetas:
                 continue
@@ -130,10 +140,9 @@ class VirtualLayer:
                 sum(math.cos(t) for t in thetas) / len(thetas))
 
             self.labels[self.next_label_id] = {
-                "nodes": frozenset(motif_nodes),
-                "links": frozenset(motif_links),
+                "nodes": frozenset(cluster_nodes),
                 "phase_sig": phase_sig,
-                "strength": float(len(motif_links)),
+                "strength": float(len(cluster_nodes)),
                 "born": window_count,
                 "prev_alignment": 0.0,
                 "coherence": 1.0,
@@ -141,11 +150,15 @@ class VirtualLayer:
             self.next_label_id += 1
             stats["labels_born"] += 1
 
-        # ── 2. LIVE ──
+        # ── 2. LIVE: torque + semantic gravity ──
+        # Labels torque their own nodes AND substrate neighbors.
+        # This is "chemical bonding" — organizing the substrate
+        # so that physics naturally produces structure in those regions.
         node_torques = {}
         total_virtual_energy = 0.0
 
         for lid, label in list(self.labels.items()):
+            # Measure alignment of core nodes
             alignments = []
             alive_count = 0
             for n in label["nodes"]:
@@ -177,20 +190,39 @@ class VirtualLayer:
             if torque_mag < 0.001:
                 continue
 
+            # Torque on core nodes (full strength)
             for n in label["nodes"]:
                 if n not in state.alive_n:
                     continue
                 theta_n = float(state.theta[n])
                 torque = torque_mag * math.sin(
                     label["phase_sig"] - theta_n)
-
                 existing = node_torques.get(n)
                 if existing is None or label["strength"] > existing[1]:
                     node_torques[n] = (torque, label["strength"], lid)
 
+            # Semantic gravity: torque on substrate neighbors (half strength)
+            # "The label rationalizes the surrounding substrate"
+            if substrate:
+                gravity_mag = torque_mag * 0.5
+                for n in label["nodes"]:
+                    for nb in substrate.get(n, set()):
+                        if nb not in state.alive_n:
+                            continue
+                        if nb in label["nodes"]:
+                            continue
+                        theta_nb = float(state.theta[nb])
+                        grav_torque = gravity_mag * math.sin(
+                            label["phase_sig"] - theta_nb)
+                        existing = node_torques.get(nb)
+                        if existing is None or label["strength"] > existing[1]:
+                            node_torques[nb] = (grav_torque,
+                                                label["strength"], lid)
+
             if success > 0:
                 stats["torque_success"] += success
 
+        # Apply torque
         for n, (torque, _, _) in node_torques.items():
             state.theta[n] += torque
             stats["torque_events"] += 1
@@ -329,14 +361,12 @@ class V71Engine(V43Engine):
         # Virtual Layer (World B) — post-physics
         p = self.island_tracker.params
         if hasattr(p, 'virtual_enabled') and p.virtual_enabled:
-            # Count R+ for reporting
-            rplus_count = sum(1 for lk in self.state.alive_l
-                              if self.state.R.get(lk, 0.0) > 0)
-
-            vs = self.virtual.step(self.state, frame.window)
+            vs = self.virtual.step(
+                self.state, frame.window,
+                islands=self.island_tracker.islands,
+                substrate=self.substrate)
             self.virtual_stats = vs
-            self.virtual_stats["total_rplus"] = rplus_count
         else:
-            self.virtual_stats = {"total_rplus": 0}
+            self.virtual_stats = {}
 
         return frame
