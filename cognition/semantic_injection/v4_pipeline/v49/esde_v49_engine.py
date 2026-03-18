@@ -1,29 +1,40 @@
 #!/usr/bin/env python3
 """
-ESDE v4.9 — Tension-Gated Void Dilatation (Phase 6)
-======================================================
-Phase : v4.9 (P1-P5 retained + P6: Tension-Gated Decay)
+ESDE v4.9 — Generative Dynamics (Phase 7)
+============================================
+Phase : v4.9 (P1-P6 retained + P7: Continuous Probabilistic Generation)
 Role  : Claude (Implementation)
 Arch  : Gemini (+ Taka) | Audit: GPT
 
-Phase 6: Solving the temporal persistence problem.
-  Void decay modulated by structural tension Π:
+Phase 7: Paradigm shift from threshold-based to generative dynamics.
+  Link formation is no longer gated by latent field threshold.
+  Instead, a continuous probability field drives direct link birth:
 
-    V_i *= exp(-degree_i / (1 + Π))
+    P(link_ij) = tanh(V_i + V_j) × (Π / Π_max) × exp(-min(deg_i, deg_j))
 
-  Crisis (Π≈5): exp(-2/6) = 0.72 retention per step at degree=2.
-  Peace  (Π≈0): exp(-2/1) = 0.14 retention (reverts to Phase 5).
+  P_base = 0 (GPT mandate: pure generative, no fixed bias).
+  Candidate edges: substrate neighbors only (locality constraint).
+  P clipped to ≤ 1.0.
 
-  Void now "sticks" to active boundaries during crisis,
-  providing temporal bandwidth for divergence and cascade.
-  No manual constants. Fully state-dependent via Π.
+  Even tiny V combined with high Π creates nonzero birth probability.
+  No accumulation needed. No temporal persistence required.
+  Void translates to structure fluidly and instantaneously.
 
-All Phase 5 mechanics retained:
-  Stateless Π = Π_max × tanh(snaps / alive_links)
-  Void Osmosis, Ring Cascade, Divergence Pressure.
-  Loops A+B (α-driven). Loop C removed.
+  Old divergence pressure (latent field boost) REMOVED.
+  Replaced by probabilistic latent saturation — when P fires,
+  latent is set to 1.0 and RealizationOperator converts it to
+  an active link respecting exclusion and bookkeeping.
 
-Physics operators: UNCHANGED.
+  All other mechanics retained:
+    Phase 1: History (h_age, h_res, h_str, avalanche)
+    Phase 2b: Void generation (snap echo), topological persistence
+    Phase 3+: Substrate diffusion (osmosis), C_diff state-dependent
+    Phase 4: Ring cascade on void-induced births
+    Phase 5: Stateless Π = Π_max × tanh(snaps / alive_links)
+    Phase 6: Tension-gated decay: exp(-deg / (1+Π))
+    Loops A+B (α-driven restore/inert). Loop C removed.
+
+Physics operators: UNCHANGED (generative is additive, not replacing).
 """
 
 import sys, math, time
@@ -314,20 +325,49 @@ def apply_avalanche(state, tensor, prev_islands, params):
 # ================================================================
 # PHASE 2: FERTILE VOID
 # ================================================================
-def apply_void_divergence_pressure(state, void_field, params, tensor,
-                                    void_active):
+def apply_void_generative(state, void_field, params, substrate, void_active,
+                          rng):
     """
-    Divergence pressure: boost latent field ∝ Π × tanh(V_i + V_j).
-    Π (Proliferation Drive) replaces old γ. Auto-discovered via Loop C.
-    """
-    stats = {"boosted_pairs": 0, "total_boost": 0.0}
-    pi = params.proliferation_pi
+    Phase 7: Continuous Probabilistic Generation.
+    Void × tension × boundary topology → latent field saturation.
 
-    for n in void_active:
+    P(link_ij) = tanh(V_i + V_j) × (Π / Π_max) × exp(-min(deg_i, deg_j))
+
+    P_base = 0 (GPT mandate: pure generative, no fixed bias).
+    Candidate edges: substrate neighbors only (locality).
+    Both endpoints must be alive (P7-2 fix).
+    P clipped to ≤ 1.0.
+
+    When P fires: latent field saturated to 1.0. The canonical
+    RealizationOperator converts this to an active link in the
+    same window, respecting exclusion constraints and bookkeeping
+    (P7-1 fix: no direct link manipulation).
+
+    Note: gen_births counted here will also appear as
+    void_induced_births in consumption stats (P7-3: documented).
+    """
+    stats = {"gen_births": 0, "gen_candidates": 0, "gen_max_p": 0.0}
+    pi = params.proliferation_pi
+    pi_max = params.proliferation_pi_max
+
+    if pi < 0.001 or pi_max <= 0:
+        return stats
+
+    pi_ratio = pi / pi_max  # [0, 1]
+
+    for n in list(void_active):
+        v_n = void_field[n]
+        if v_n < 0.001:
+            continue
         if n not in state.alive_n:
             continue
-        v_n = void_field[n]
-        for nb in state.neighbors(n):
+
+        deg_n = _node_active_degree(state, n)
+
+        # Substrate neighbors only (locality constraint, GPT audit)
+        sub_nbs = substrate.get(n, set())
+        for nb in sub_nbs:
+            # P7-2: both endpoints must be alive
             if nb not in state.alive_n:
                 continue
             lk = state.key(n, nb)
@@ -335,13 +375,25 @@ def apply_void_divergence_pressure(state, void_field, params, tensor,
                 continue
 
             v_nb = void_field[nb]
-            amplification = pi * math.tanh(v_n + v_nb)
-            if amplification > 0.01:
-                cur = state.get_latent(n, nb)
-                boost = 0.01 * amplification
-                state.set_latent(n, nb, min(1.0, cur + boost))
-                stats["boosted_pairs"] += 1
-                stats["total_boost"] += boost
+            deg_nb = _node_active_degree(state, nb)
+
+            # P_generative = tanh(V_i+V_j) × (Π/Π_max) × exp(-min(deg_i,deg_j))
+            void_factor = math.tanh(v_n + v_nb)
+            boundary_factor = math.exp(-min(deg_n, deg_nb))
+            p_gen = void_factor * pi_ratio * boundary_factor
+            p_gen = min(1.0, max(0.0, p_gen))
+
+            if p_gen > stats["gen_max_p"]:
+                stats["gen_max_p"] = p_gen
+
+            if p_gen > 0.0001:
+                stats["gen_candidates"] += 1
+                if rng.random() < p_gen:
+                    # P7-1: Saturate latent field. RealizationOperator
+                    # converts to active link respecting exclusion +
+                    # bookkeeping (engine_accel cache, R dict, etc.)
+                    state.set_latent(n, nb, 1.0)
+                    stats["gen_births"] += 1
 
     return stats
 
@@ -561,21 +613,22 @@ class V49Engine(V48cEngine):
     def step_window(self, steps=V49_WINDOW):
         """
         Physics loop:
-          [Phase 2b: void divergence pressure → latent boost]
           [7 canonical operators]
           [Z-coupling corrections]
           [Phase 1: history tensor update]
           [Phase 1: history decay correction (h_age)]
           [Phase 1: brittleness + snap echo → V_i deposit]
-          [Phase 3: substrate void diffusion (immediately after snap echo)]
-          [Phase 2b: topological void decay]
-          [Phase 2b: void consumption on new links]
+          [Phase 3: substrate void diffusion (after snap echo)]
+          [Phase 7: probabilistic generation (void → latent saturation)]
+          [Phase 6: tension-gated void decay]
+          [Phase 4: void consumption + cascade on new links]
           [background seeding]
         Post-loop:
+          [Phase 5: stateless Π computation]
           [Phase 1: plasticity suppression (per-window)]
           [cooled semantic pressure]
           [island observation + avalanche]
-          [axiomatic parameter drift (Loops A, B, C)]
+          [axiomatic parameter drift (Loops A, B)]
           [observer + frame]
         """
         t0 = time.time()
@@ -589,22 +642,14 @@ class V49Engine(V48cEngine):
         wh = {"matured": 0, "snapped": 0, "suppressed_nodes": 0,
               "void_deposited": 0.0}  # void_deposited tracked here because
               # deposits only occur via Phase 1 snaps — no history = no deposits
-        wv = {"boosted_pairs": 0, "total_boost": 0.0, "consumed_events": 0,
-              "void_induced_births": 0,
+        wv = {"consumed_events": 0, "void_induced_births": 0,
               "diffusion_events": 0, "void_to_active": 0,
-              "cascade_splashes": 0}
+              "cascade_splashes": 0,
+              "gen_births": 0, "gen_candidates": 0, "gen_max_p": 0.0}
 
         for step in range(steps):
             # Snapshot alive links before physics (for consumption tracking)
             pre_alive_l = set(self.state.alive_l) if void_enabled else set()
-
-            # Phase 2b: void divergence pressure (before realizer)
-            if void_enabled:
-                vp = apply_void_divergence_pressure(
-                    self.state, self.void_field, p, self.link_history,
-                    self.void_active)
-                wv["boosted_pairs"] += vp["boosted_pairs"]
-                wv["total_boost"] += vp["total_boost"]
 
             # 7 canonical operators
             self.realizer.step(self.state)
@@ -660,6 +705,18 @@ class V49Engine(V48cEngine):
                 wv["diffusion_events"] += sd["diffusion_events"]
                 wv["void_to_active"] += sd["void_to_active"]
                 wv["c_diff"] = sd.get("c_diff", 0)
+
+            # Phase 7: Continuous Probabilistic Generation
+            # Direct link birth from void × tension × boundary topology.
+            # Runs after diffusion (V at active nodes) before decay.
+            if void_enabled and self.void_active:
+                gn = apply_void_generative(
+                    self.state, self.void_field, p, self.substrate,
+                    self.void_active, self.state.rng)
+                wv["gen_births"] += gn["gen_births"]
+                wv["gen_candidates"] += gn["gen_candidates"]
+                if gn["gen_max_p"] > wv.get("gen_max_p", 0):
+                    wv["gen_max_p"] = gn["gen_max_p"]
 
             # Phase 6: tension-gated void decay + consumption + cascade
             if void_enabled:

@@ -62,7 +62,8 @@ LOG_FIELDS = [
     "avalanche_events", "cascade_links",
     # v4.9 Phase 2b
     "void_mean_V", "void_max_V", "void_active_nodes",
-    "void_boosted_pairs", "void_consumed", "void_deposited",
+    "gen_births", "gen_candidates", "gen_max_p",
+    "void_consumed", "void_deposited",
     "proliferation_pi", "void_induced_births",
     # v4.9 Phase 3 (mandatory logging)
     "void_total_mass", "void_variance",
@@ -98,7 +99,7 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
     print(f"\n  {'win':>4} {'clst':>4} {'mxSz':>4} {'rLif':>4} "
           f"{'mxDR':>5} {'drft':>4} "
           f"{'rest':>7} {'Π':>5} {'hStr':>5} "
-          f"{'snap':>4} {'mV':>5} {'vBst':>4} {'vInd':>4} "
+          f"{'snap':>4} {'mV':>5} {'gBr':>4} {'vInd':>4} "
           f"{'iso':>3} {'v→a':>4} "
           f"{'gM':>2} {'lnks':>5} {'M':>1} {'sec':>4}")
     print(f"  {'-'*105}")
@@ -200,7 +201,9 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
             "void_mean_V": vs.get("mean_V", 0),
             "void_max_V": vs.get("max_V", 0),
             "void_active_nodes": vs.get("active_V_nodes", 0),
-            "void_boosted_pairs": vs.get("boosted_pairs", 0),
+            "gen_births": vs.get("gen_births", 0),
+            "gen_candidates": vs.get("gen_candidates", 0),
+            "gen_max_p": round(vs.get("gen_max_p", 0), 6),
             "void_consumed": vs.get("consumed_events", 0),
             "void_deposited": round(hs.get("void_deposited", 0), 4),
             "proliferation_pi": cur.get("proliferation_pi", encap_params.proliferation_pi),
@@ -231,7 +234,7 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
               f"{hs.get('mean_h_str',0):>5.3f} "
               f"{hs.get('snapped',0):>4} "
               f"{vs.get('mean_V',0):>5.3f} "
-              f"{vs.get('boosted_pairs',0):>4} "
+              f"{vs.get('gen_births',0):>4} "
               f"{vs.get('void_induced_births',0):>4} "
               f"{vs.get('isolated_high_V',0):>3} "
               f"{vs.get('void_to_active',0):>4} "
