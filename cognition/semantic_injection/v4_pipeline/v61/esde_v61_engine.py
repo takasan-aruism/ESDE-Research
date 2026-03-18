@@ -138,12 +138,22 @@ def apply_brittleness_v61(state, tensor, params, void_field, void_active,
         stats["snapped"] += 1
 
         if r_at_death > 0:
-            # Non-volatile scar
+            # Non-volatile scar (upper layer: structural memory)
             deposit = s_at_death * r_at_death
             if deposit > 0.001:
                 mem[lk] = max(mem.get(lk, 0.0), deposit)
                 stats["mem_deposits"] += 1
                 stats["mem_total"] += deposit
+            # AND void deposit (physics layer: transition field signal)
+            # "Don't ignore noise" — structural death IS the signal.
+            # Hiding it from void killed the transition field pipeline.
+            if void_enabled and h_age > 0:
+                v_deposit = void_k * h_age
+                void_field[n1] = min(v_max, void_field[n1] + v_deposit)
+                void_field[n2] = min(v_max, void_field[n2] + v_deposit)
+                void_active.add(n1)
+                void_active.add(n2)
+                stats["void_deposited"] += v_deposit * 2
         else:
             # R=0: void deposit (canonical)
             if void_enabled and h_age > 0:
@@ -205,7 +215,10 @@ def apply_mem_reformation(state, mem, pre_alive_l):
         state.S[lk] = min(1.0, s_now + bonus)
         stats["mem_reforms"] += 1
         stats["bonus_total"] += bonus
-        # Partial consumption
+        # Partial consumption (#V61-3: non-monotonic logistic map)
+        # Mem=0.5→0.25, Mem=0.9→0.09, Mem=0.1→0.09
+        # Strong and weak scars consumed fast; mid-range (0.3-0.5) persist.
+        # Natural selection pressure toward mid-strength scars.
         mem[lk] = m_val * (1.0 - m_val)
         if mem[lk] < 0.001:
             del mem[lk]
@@ -286,13 +299,22 @@ class V61Engine(V60Engine):
                             saved_latent[lk] = cur_L
                             self.state.set_latent(n, nb, 0.0)
 
-            # ── 2: [v6.0] Activity Amplification (only active nodes) ──
+            # ── 2: [v6.0] Activity Amplification ──
+            # NOTE (#V61-2): Iterates all alive_n, not just active_this_step.
+            # Masked (inactive) pairs have L=0 so boost=E×E×0=0. Functionally
+            # correct but ~2-4× slower than filtering by active_this_step.
             if recur_enabled:
                 aa = apply_activity_amplification(
                     self.state, self.substrate)
                 wr["amplified_pairs"] += aa["amplified_pairs"]
 
             # ── 3: [v6.1] Mem latent floor (before realizer) ──
+            # NOTE (#V61-1): Mem floor runs AFTER action_potential masking.
+            # This means scars override the energy gate — cold nodes with
+            # strong scars CAN reform links. This is INTENTIONAL per Gemini
+            # Cognitive Transition Architecture: "A mature structure that
+            # breaks leaves a massive scar... overwhelmingly likely to
+            # instantly reform." Scars are structural memory, not activity.
             if recur_enabled and self.mem:
                 mf = apply_mem_latent_floor(self.state, self.mem)
                 wr["floor_applied_total"] += mf["floor_applied"]
