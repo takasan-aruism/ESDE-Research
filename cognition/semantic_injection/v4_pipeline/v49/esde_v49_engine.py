@@ -1,38 +1,28 @@
 #!/usr/bin/env python3
 """
-ESDE v4.9 — Proliferation Phase (Phase 4)
-============================================
-Phase : v4.9 (P1: History + P2b: Void + P3: Substrate Diffusion + P4: Proliferation)
+ESDE v4.9 — Stateless Proliferation (Phase 5)
+================================================
+Phase : v4.9 (P1-P4 retained + P5: Stateless Π)
 Role  : Claude (Implementation)
 Arch  : Gemini (+ Taka) | Audit: GPT
 
-Phase 1 (Past): Link Tensor H_ij = {h_age, h_res, h_str}
-Phase 2b (Future): Axiomatic Void (topological persistence)
-Phase 3 (Spatial): Substrate void diffusion (state-dependent C_diff)
+Phase 5: Breaking the α bottleneck.
+  Π is no longer accumulated via Loop C / α(t).
+  Π is a STATELESS function of structural tension:
 
-Phase 4 (Proliferation):
-  Unified parameter Π (Proliferation Drive) replaces γ.
-  Π starts at 0.0 and is auto-discovered via Loop C (renewal deficit).
-  Π governs ALL proliferation mechanics:
+    Π(t) = Π_max × tanh(snaps / max(1, alive_links))
 
-  1. Void Osmosis (Topological Gravity):
-     Active topology acts as gravity well for void energy.
-     Flow += Π × (Degree_j − Degree_i) in substrate diffusion.
-     Void drains from dead zones toward living structure boundaries.
+  High destruction + low survival → Π spikes instantly.
+  Low destruction + high survival → Π collapses instantly.
+  No memory. No α dependency. Instantaneous state reflection.
 
-  2. Crystallization Cascade (Latent Splash):
-     Void-induced link birth → consumed V splashes into latent field
-     of substrate neighbors: L_ik += V_consumed × Π.
-     One birth seeds chain reactions in adjacent space.
+  Π governs: Osmosis gravity, Crystallization Cascade splash,
+  Divergence Pressure. All Phase 4 mechanics retained.
 
-  3. Divergence Pressure:
-     Latent boost ∝ Π × tanh(V_i + V_j). Same role as old γ.
-
-  Loop C: ΔΠ = +α(t) × tanh(D_ren / 1000)
-  D_ren = snaps − births. System dying → Π rises. Proliferating → Π relaxes.
+  Loop A (restore) and Loop B (inert) remain α-driven.
+  Loop C REMOVED.
 
 Physics operators: UNCHANGED.
-v4.8c axiomatic drift (Loops A, B, meta-α): PRESERVED.
 """
 
 import sys, math, time
@@ -103,11 +93,10 @@ class V49EncapsulationParams(V48cEncapsulationParams):
     avalanche_radius: int = 1
     fragility_age_threshold: int = 5
     fragility_deformation_decay: float = 0.3
-    # Phase 4: Proliferation Drive (replaces γ)
+    # Phase 5: Stateless Proliferation Drive
     void_k: float = 0.5           # snap echo: V += k * h_age
-    proliferation_pi: float = 0.0  # unified proliferation parameter (auto-discovered)
-    proliferation_pi_min: float = 0.0
-    proliferation_pi_max: float = 20.0
+    proliferation_pi: float = 0.0  # runtime: computed per window, NOT configured
+    proliferation_pi_max: float = 20.0  # Π_max for tanh scaling
     void_consumption: float = 0.1  # V consumed per link birth
     void_v_max: float = 5.0       # cap on V_i
     # Phase 3: substrate diffusion (state-dependent)
@@ -556,10 +545,9 @@ class V49Engine(V48cEngine):
                          encap_params=params)
         self.link_history = LinkHistoryTensor()
         self.void_field = np.zeros(N, dtype=np.float64)
-        self.void_active = set()  # nodes with V > 0.01, avoids O(N) scan
-        # Loop C accumulators (reset every drift interval)
-        self._interval_snaps = 0
-        self._interval_void_births = 0
+        self.void_active = set()
+        # Phase 5: stateless Π computed per window
+        self.current_pi = 0.0
         self.history_stats = {}
         self.void_stats = {}
         self.last_isum = {}
@@ -719,9 +707,12 @@ class V49Engine(V48cEngine):
         self.void_stats["max_V"] = round(float(np.max(self.void_field)), 4)
         self.void_stats["active_V_nodes"] = int(np.sum(self.void_field > 0.01))
 
-        # Accumulate for Loop C (renewal deficit, reset on drift application)
-        self._interval_snaps += wh.get("snapped", 0)
-        self._interval_void_births += wv.get("void_induced_births", 0)
+        # Phase 5: Stateless Π — computed per window from structural tension
+        window_snaps = wh.get("snapped", 0)
+        alive_links = len(self.state.alive_l)
+        self.current_pi = p.proliferation_pi_max * math.tanh(
+            window_snaps / max(1, alive_links))
+        p.proliferation_pi = self.current_pi  # expose to mechanism functions
 
         # Mandatory void metrics (GPT audit §LOGGING)
         alive_nodes_list = list(self.state.alive_n)
@@ -899,31 +890,14 @@ class V49Engine(V48cEngine):
                     min(p.drift_inert_max, new_inert))
                 self.prev_alive_links = post_links
                 self.prev_z0_links = post_z0
-
-                # Loop C: Π ← +α(t) × tanh(D_ren / 1000)
-                # D_ren = snaps - void_induced_births over interval
-                D_ren = self._interval_snaps - self._interval_void_births
-                grad_ren = math.tanh(D_ren / 1000.0)
-                new_pi = p.proliferation_pi + (alpha_t * grad_ren)
-                p.proliferation_pi = max(p.proliferation_pi_min,
-                                         min(p.proliferation_pi_max, new_pi))
-                # Reset interval accumulators
-                self._interval_snaps = 0
-                self._interval_void_births = 0
-
-            # D_ren for logging
-            if applied:
-                log_d_ren = D_ren
-            else:
-                log_d_ren = self._interval_snaps - self._interval_void_births
+                # Loop C REMOVED (Phase 5). Π is stateless, computed per window.
 
             self.drift_trajectory.append({
                 "window": f.window,
                 "alpha_t": round(alpha_t, 6),
                 "compound_restore": round(p.z_decay_compound_restore, 6),
                 "inert_penalty": round(p.z_decay_inert_penalty, 6),
-                "proliferation_pi": round(p.proliferation_pi, 6),
-                "d_ren": log_d_ren,
+                "proliferation_pi": round(self.current_pi, 6),
                 "delta_L": delta_L, "delta_Z0": delta_Z0,
                 "abs_delta_L": abs(delta_L),
                 "alive_links": post_links, "z0_links": post_z0,
