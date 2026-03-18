@@ -1,7 +1,7 @@
 # ESDE Cognition: Semantic Interaction — Experiment Report
 
 *Phase: Cognition (v3.0 – v3.9) / Encapsulation (v4.0 – v4.9)*
-*Status: IN PROGRESS (v4.9 P1+P2 complete; void renewal cycle does not yet close)*
+*Status: IN PROGRESS (v4.9 P7/8: first void-driven births and post-trough recovery observed)*
 *Team: Gemini (Architect) / GPT (Audit) / Claude (Implementation)*
 *Started: March 11, 2026*
 *Last updated: March 17, 2026*
@@ -791,6 +791,94 @@ Parameters: void_k=0.5, void_gamma=2.0, void_decay_lambda=0.05, void_consumption
 
 ---
 
+## v4.9 Phase 2b — Axiomatic Void (Eliminating Manual Parameters)
+
+**Question:** Can void decay and divergence pressure strength be made fully state-dependent, eliminating all manual parameters?
+
+**Method:** Two changes from Phase 2: (1) Static decay λ=0.05 replaced by topological persistence: V_i *= exp(-local_degree_i). Empty regions: V persists indefinitely. Dense regions: V decays rapidly. (2) Static γ=2.0 replaced by Loop C: Δγ = +α(t) × tanh(D_ren / 1000), where D_ren = snaps − void_induced_births. No manual parameters remain in the void system.
+
+**Results (2 seeds × 200 windows):** γ converges to ≈1.03 by w15 and stops. D_ren collapses in depleted phase (snaps=15/window → Δγ = 0.0000015 per drift). γ=5.0 would require 37,500 windows (≈520 hours). vBst=0, cascade=0, links≈2350. Identical to v4.8c. Topological persistence works (V survives at isolated nodes) but γ is trapped by the single-α bottleneck: all loops (A, B, C) share the same α(t)≈0.0004 in depleted phase, and γ needs 500× more dynamic range than compound_restore.
+
+---
+
+## v4.9 Phase 3 — Substrate Void Diffusion
+
+**Question:** Can void energy be transported from isolated collapse sites to active structural regions via the frozen substrate grid?
+
+**Method:** Void diffuses on the v4.1 4-neighbor frozen grid (not active topology). Flow = (V_i − V_j) × exp(−degree_i) × C_diff. Isolated nodes (degree=0) flow freely; dense nodes suppress flow. C_diff is state-dependent: C_diff = 0.001 + 0.5 × (isolated_high_V / N).
+
+**Results (seed 42, 10 windows):** v→a = 579,845 (void reaches active nodes). vInd = 246 (4× Phase 2). But vBst = 0 (divergence pressure still sub-threshold). links=1209. Diffusion transports void correctly, but the transported V is too thin to trigger latent boost.
+
+---
+
+## v4.9 Phase 4 — Proliferation (Osmosis + Cascade)
+
+**Question:** Can osmotic concentration and crystallization cascade produce self-sustaining structural renewal?
+
+**Method:** Unified parameter Π (Proliferation Drive, initial 0.0) replaces γ, governed by Loop C. Π drives three mechanisms: (1) Void Osmosis: gravity = Π × (Deg_j − Deg_i) pulls void toward active topology. (2) Crystallization Cascade: void-induced birth splashes V_consumed × Π into latent field of substrate neighbors (ring cascade). (3) Divergence Pressure: boost ∝ Π × tanh(V_i + V_j).
+
+**Results (seed 42, 10 windows):** Π=0.023 (same α bottleneck as Phase 2b). All three mechanisms sub-threshold: osmosis gravity=0.023, splash=0.002, divergence amplification=0.00009. cascade=0, vBst=0, links=1209.
+
+---
+
+## v4.9 Phase 5 — Stateless Proliferation (Breaking α Bottleneck)
+
+**Question:** Can Π be made independent of α(t) to reach effective range?
+
+**Method:** Loop C removed. Π = Π_max × tanh(snaps / max(1, alive_links)). Stateless, instantaneous, no α dependency. Π_max=20.0.
+
+**Results (seed 42, 10 windows):** Π reaches 4.8–8.2 (350× Phase 4). α bottleneck solved. But vBst=0, cascade=0, links=1209. New bottleneck: void field density. mean_V=0.001 at active nodes. Osmosis paradox: high Π pulls void to active nodes, but topological decay exp(-degree) instantly destroys it. Increasing Π actually reduces void availability. vInd dropped from 108 (Phase 4) to 19 (Phase 5).
+
+---
+
+## v4.9 Phase 6 — Tension-Gated Decay
+
+**Question:** Can void persist long enough at active nodes for divergence/cascade to fire?
+
+**Method:** Void decay modulated by Π: V *= exp(-degree / (1+Π)). At Π=5, degree=2 node retains 72% per step (vs 14% in Phase 5). No manual constants.
+
+**Results:** Insufficient alone — 0.72^50 ≈ 10^-7 per window. But combined with per-step osmosis replenishment, may sustain V above threshold.
+
+---
+
+## v4.9 Phase 7 (Generative Dynamics)
+
+**Question:** Can the intermediary latent field be bypassed entirely for void-driven link birth?
+
+**Background:** Every indirect mechanism (latent boost v4.5b/v4.7, void field P2-P6) has failed because the intermediary decays before the target responds. Phase 7 is a paradigm shift: instead of boosting the latent field and waiting for the RealizationOperator, void directly generates link birth probability.
+
+**Method (Phase 7):** P(link_ij) = tanh(V_i+V_j) × (Π/Π_max) × exp(-min(deg_i, deg_j)). P_base=0. Substrate neighbors only. When P fires, latent saturated to 1.0; RealizationOperator converts respecting exclusion/bookkeeping.
+
+**Method (Phase 7→8, approved mid-session):** Gemini/GPT directed a further paradigm shift from probabilistic to deterministic generation. Phase 8 replaces RNG with phase geometry:
+
+  T_ij = tanh(V_i+V_j) × (Π/Π_max) × 0.5×(1+cos(θ_i−θ_j))
+  E_ij = tanh(max(deg_i, deg_j) / (1+Π))
+  If T_ij > E_ij → latent saturated to 1.0 (deterministic, no RNG)
+
+Crucially: at both nodes degree=0, E_ij = tanh(0) = 0. Any nonzero V with any nonzero Π guarantees link birth between isolated substrate neighbors. This enables structural self-assembly in void regions for the first time.
+
+**Results (Phase 7/8 combined, seed 42, 20 windows):**
+
+| Metric | Phase 5 (w10) | Phase 7/8 (w10) | Phase 7/8 (w20) |
+|---|---|---|---|
+| alive_links | 1209 | 1319 | **1383** |
+| gen_births | 0 | — | **5,155** |
+| gen_candidates | 0 | — | 5,155 |
+| Π max | 5.85 | — | 8.09 |
+| trough links | 1023 (w19) | — | 870 (w13) |
+
+**Findings:**
+
+*First void-driven link births in the project.* gen_births = 5,155 across 20 windows. The transition field produces structural output for the first time in the entire void mechanism history (Phases 2–6: zero effective births).
+
+*First post-trough recovery.* Links recover from 901 (w12) to 1383 (w20), a +54% increase. All previous versions showed monotonic decline or flat equilibrium after the crash trough. The renewal cycle (collapse → void → rebirth) shows the first signs of closing.
+
+*Degree-zero threshold bypass is the key mechanism.* E_ij = 0 at isolated nodes. Even V=0.001 produces T_ij > 0 = E_ij. This breaks the fundamental void-density bottleneck that defeated Phases 2–6.
+
+*Phase geometry replaces RNG.* cos(θ_i−θ_j) couples the semantic phase chemistry directly to topological generation. Nodes with aligned phases bind deterministically. This is the first time the phase variable (introduced in v3.0) participates in structural generation rather than just resonance scoring.
+
+---
+
 ## Performance Note
 
 All Cognition experiments run on N=5000 with engine_accel fully enabled (link_strength_sum, exclusion, cycle_finder(C), latent_refresh). Runtime varies by version:
@@ -809,6 +897,7 @@ All Cognition experiments run on N=5000 with engine_accel fully enabled (link_st
 | v4.8b | ~15-35s/window | 50-step + Z-coupling per-step (scales with link count); peak ~35s during bubble |
 | v4.8c | ~15-35s/window | Same as v4.8b + negligible drift computation every 3 windows |
 | v4.9 | ~15-26s/window | + history tensor per-step + void field per-step + plasticity per-window; void_active set optimization limits scan to O(|active|) |
+| v4.9 P7/8 | ~15-26s/window | + transition field per-step (substrate neighbors × void_active); affected-set optimization for diffusion |
 
 Parallel execution via GNU parallel at -j 2 for 200-window runs (v4.5a+). Code review by separate Claude instance added to workflow from v4.6 onward.
 
@@ -869,37 +958,44 @@ Cognition v3.0–v3.9 and Language Interface v4.0–v4.4 progressively establish
 49. **History without future leads to stagnation** (v4.9 P1: birth→maturation→brittleness→death with no renewal; confirms GPT prediction "Past dominance→stagnation")
 50. **Indirect intermediary fields fail when decay exceeds response time** (v4.9 P2: third instance of same pattern — latent boost v4.5b/v4.7, void field v4.9 — all fail because intermediary decays before target structure responds)
 51. **The Fertile Void concept is correct but parametrically inert at current settings** (v4.9 P2: void generates, dissipates, and is passively consumed without ever producing divergence pressure; vBst=0 across all windows)
+52. **A single α governing parameters with 500× different dynamic ranges creates a fundamental ceiling** (v4.9 P2b/P4: α sufficient for restore±0.01, insufficient for Π 0→20; the α bottleneck)
+53. **Stateless state-dependent functions bypass the α bottleneck** (v4.9 P5: Π = Π_max × tanh(snaps/alive_links) reaches 4.8–8.2 instantly; same principle as v4.8c Phase 2 viscosity)
+54. **Osmosis paradox: stronger void attraction accelerates void destruction** (v4.9 P5: high Π pulls void to active nodes where topological decay exp(-degree) instantly annihilates it; negative feedback)
+55. **Deterministic state-driven generation bypasses the entire intermediary-field failure pattern** (v4.9 P7/8: T_ij > E_ij at degree=0 nodes produces 5,155 births; first void-driven structural output in the project)
+56. **Degree-zero threshold bypass is the key architectural insight** (E_ij = tanh(0) = 0; any nonzero V × Π guarantees birth between isolated substrate neighbors; breaks the void-density bottleneck)
+57. **Phase geometry (θ) can serve as deterministic micro-fluctuation source** (v4.9 P8: cos(θ_i−θ_j) replaces RNG, coupling semantic phase to structural generation for the first time)
+58. **Post-trough recovery observed for the first time** (v4.9 P7/8: links 901→1383 w12-w20; all previous versions showed monotonic decline or flat equilibrium after crash)
 
 ---
 
 ## What It Does Not Demonstrate
 
-- Whether the 128× collapse threshold is sharp or gradual
-- Whether the transport-saturation regime scales to N=10,000+ or different concept counts
-- Whether the Fertile Void can produce active divergence pressure with reduced decay (λ=0.005) or increased deposit (k=5.0)
-- Whether the void → rebirth cycle can sustain itself across multiple collapse-regeneration epochs
-- Whether the three-layer temporal model (Past + Future + External) produces qualitatively different dynamics than any two layers combined
-- Whether Phase 3 (external perturbation) is necessary to break the mature-rigid core stagnation, or whether an effective void mechanism suffices
-- Whether the system can produce sustained M3 encapsulation outside of the initial bubble transient
-- Whether indirect intermediary fields (latent boost, void) can ever match the system's timescale, or whether only direct physics modifications (Z-coupling) are effective
-- Whether v4.9 results scale down to N=50-500
-- Whether alpha/beta motifs (triangles) can emerge under any parameter regime
+- Whether the post-trough recovery (901→1383) is sustained over 200 windows or plateaus
+- Whether the generative dynamics produce qualitatively different structures (clusters, motifs) vs canonical physics alone
+- Whether the renewal cycle (collapse → void → rebirth) becomes self-sustaining across multiple epochs
+- Whether gen_births produce links that survive long enough to form clusters (S=0.2+ persistence)
+- Whether the cascade mechanism (splash = V_consumed × Π) produces chain-reaction births at high Π
+- Whether the deterministic transition field produces explosion/collapse oscillation (GPT risk §3.1)
+- Whether multi-seed results are consistent (Phase 8 tested with seed 42 only)
+- Whether Phase 8 dynamics scale to N=1000–10000
+- Whether the three-layer temporal model (Past + Future + External) produces emergent behavior beyond any two layers
+- Whether alpha/beta motifs (triangles) can emerge under generative dynamics
 
 ---
 
 ## Open Questions
 
-- Is the 3–6 hop erosion limit a property of the graph diameter, the physics parameters, or the concept zone geometry?
-- What happens between 64× and 128×? Is there a critical amplification where collapse onset is 50%?
-- Is there a fundamental architectural reason that indirect intermediary fields (latent boost, void) cannot match the system's structural timescale? Or is this always a parameter calibration problem?
-- Can the void decay rate be brought under the axiomatic drift controller (auto-discovered like compound_restore), or does adding 3+ more loops cause instability?
-- Does reducing void_decay_lambda to 0.005 (10× slower) enable active divergence pressure while remaining bounded by V_max?
-- Would applying void divergence pressure per-window (post-loop, accumulated) instead of per-step (subject to within-window decay) resolve the timescale mismatch?
-- Is the bubble-crash an unavoidable initial transient for any system starting from injection, or can pre-equilibration (running drift during injection) eliminate it?
-- Does Phase 3 (external perturbation) need to be designed as a new mechanism, or can the existing semantic pressure + Z-coupling already serve as the external layer?
-- What is the minimum set of temporal layers (Past, Future, External) needed for cyclic emergence? Is any single layer sufficient with correct parameters?
-- Does the Z=3 dominance (90%+ of links involve compound nodes) represent a chemical equilibrium or a pathological monoculture?
-- Can the discovered equilibrium values (restore≈0.514, inert≈0.018) be used as initial conditions to bypass the bubble-crash transient?
+- Does the post-trough recovery sustain, stabilize, or oscillate over 200 windows?
+- What is the steady-state link count under generative dynamics? Higher than v4.8c's ~2200?
+- Do void-generated links form clusters that persist, or do they decay within 1-2 windows?
+- Does the cascade mechanism (Phase 4 ring splash) amplify gen_births into chain reactions at high Π?
+- Can the system produce M3 encapsulation from void-generated structure (not just initial bubble)?
+- Is the renewal cycle (collapse → void deposit → diffusion → transition → birth → new structure → maturation → brittleness → collapse) a closed loop, or does it require continuous external injection?
+- Does the deterministic transition field produce winner-take-all monopolization (GPT risk §3.2)?
+- Is the Phase 8 cold-start (Π=0 at w1) a problem for systems without injection-phase bubble?
+- Can the discovered equilibrium values (restore≈0.514, inert≈0.018) be used as initial conditions with Phase 7/8 to eliminate the bubble transient entirely?
+- Is the intermediary-field failure pattern (v4.5b→v4.7→P2–P6) a fundamental property of ESDE's physics, or specific to the latent field implementation?
+- Does Phase 8's phase geometry coupling (cos(θ_i−θ_j)) create semantic bias in structural generation, or is it effectively random?
 
 ---
 
@@ -932,7 +1028,13 @@ Cognition v3.0–v3.9 and Language Interface v4.0–v4.4 progressively establish
 | v4.8c | 2026-03-17 | Gemini→GPT→Claude (Ryzen) | Axiomatic Parameter Discovery (gradient relaxation, Axiom T+L) | **Phase 1: static α inert (600× too slow). Phase 2 viscosity: both seeds converge to restore≈0.514 — first system-discovered parameters. Bubble-crash persists.** |
 | v4.9 P1 | 2026-03-17 | Gemini→GPT→Claude (Ryzen) | Multidimensional History Layer (h_age, h_res, h_str, avalanche) | **Brittleness suppresses bubble (−2000 links, −4 windows); creates mature/rigid/brittle link populations; depletes to 1209 links without renewal; confirms "Past dominance→stagnation"** |
 | v4.9 P1+P2 | 2026-03-17 | Gemini→GPT→Claude (Ryzen) | Fertile Void (snap echo → V_i → divergence pressure) | **Void generates (peak mV=0.048) but does not act (vBst=0); decay 92%/window kills signal before divergence fires; third instance of intermediary-decay timescale mismatch** |
+| v4.9 P2b | 2026-03-18 | Gemini→GPT→Claude (Ryzen) | Axiomatic Void (topological persistence + dynamic γ via Loop C) | **γ trapped at 1.03 by α bottleneck; all three loops share α≈0.0004 in depleted phase; links≈2350** |
+| v4.9 P3 | 2026-03-18 | Gemini→GPT→Claude (Ryzen) | Substrate Void Diffusion (frozen grid, state-dependent C_diff) | **v→a=580K (void reaches active nodes); vInd=246 (4× P2); divergence still sub-threshold; links=1209** |
+| v4.9 P4 | 2026-03-18 | Gemini→GPT→Claude (Ryzen) | Proliferation (Osmosis + Cascade + unified Π) | **Π=0.023 (α bottleneck); all mechanisms sub-threshold; cascade=0; links=1209** |
+| v4.9 P5 | 2026-03-18 | Gemini→GPT→Claude (Ryzen) | Stateless Π = Π_max × tanh(snaps/alive_links) | **α bottleneck solved (Π=4.8–8.2, 350× P4); osmosis paradox — high Π accelerates void destruction; links=1209** |
+| v4.9 P6 | 2026-03-18 | Gemini→GPT→Claude (Ryzen) | Tension-Gated Decay: V *= exp(-deg/(1+Π)) | **72% retention at degree=2 during crisis (vs 14%); insufficient alone (0.72^50≈0)** |
+| v4.9 P7/8 | 2026-03-18 | Gemini→GPT→Claude (Ryzen) | Generative Dynamics: T_ij > E_ij deterministic birth | **5,155 gen_births (FIRST void-driven structural output); post-trough recovery 901→1383; degree-zero bypass breaks void-density bottleneck; phase geometry replaces RNG** |
 
 ---
 
-*The project has traversed eight paradigmatic phases within Cognition. v3.0–v3.9 established concept regions as semi-permeable membranes with self-limiting plasticity. v4.0 proved LLM grounding. v4.1-v4.2 explored and exhausted wave-based dynamics. v4.3 discovered the primordial soup. v4.4 resolved identity tracking but revealed persistence-density decorrelation. The Boundary Metabolism series (v4.5a–v4.7) systematically eliminated every parametric and temporal explanation for incorporation failure, proving the substrate was the bottleneck. The Chemical Valence breakthrough (v4.8b) produced the project's first M3 encapsulation but exposed static-parameter instability. The Axiomatic Parameter Discovery (v4.8c) demonstrated that systems can discover their own equilibrium values (restore≈0.514, inert≈0.018) through gradient relaxation — the first instance of auto-discovered parameters in ESDE — but cannot prevent the initial bubble-crash transient. The History Layer (v4.9 P1) introduced material-like link properties (maturation, rigidity, brittleness) creating path-dependent dynamics and natural destructive emergence, confirming that history alone leads to stagnation. The Fertile Void (v4.9 P2) correctly conceptualized renewal as undirected structural potential at collapse sites, but the void field decays too rapidly (92%/window) to produce divergence pressure — the third instance of an intermediary-field timescale mismatch in the project (after v4.5b/v4.7 latent boost failures). The system now has Past (history) and a nascent Future (void), but the renewal cycle (collapse → potential → rebirth) does not yet close. Phase 3 (external perturbation) and void parameter calibration are the immediate next steps.*
+*The project has traversed eight paradigmatic phases within Cognition and nine sub-phases within v4.9. v3.0–v3.9 established concept regions as semi-permeable membranes with self-limiting plasticity. v4.0 proved LLM grounding. v4.1-v4.2 explored and exhausted wave-based dynamics. v4.3 discovered the primordial soup. v4.4 resolved identity tracking but revealed persistence-density decorrelation. The Boundary Metabolism series (v4.5a–v4.7) systematically eliminated every parametric and temporal explanation for incorporation failure, proving the substrate was the bottleneck. Chemical Valence (v4.8b) produced the project's first M3 encapsulation. Axiomatic Parameter Discovery (v4.8c) demonstrated auto-discovered equilibrium values (restore≈0.514, inert≈0.018). The v4.9 series then pursued the three-layer temporal model (Past + Future + External). Phase 1 (history) introduced material-like link properties but led to stagnation without renewal. Phases 2–6 constructed the Fertile Void through six iterations: static decay (P2), topological persistence (P2b), substrate diffusion (P3), osmotic concentration (P4), stateless Π (P5), and tension-gated decay (P6). Each phase correctly solved the previous bottleneck (decay rate → α speed → spatial coupling → α speed → void density → temporal persistence) while revealing the next. The pattern that emerged: every indirect intermediary mechanism fails because the intermediary decays or is destroyed before the target structure can respond. Phase 7/8 (Generative Dynamics) broke this pattern with a paradigm shift from threshold-based to deterministic state-driven link generation. The transition field T_ij > E_ij, using phase geometry cos(θ_i−θ_j) instead of RNG, produces the project's first void-driven structural output (5,155 births) and the first post-trough recovery (links 901→1383). The renewal cycle (collapse → void → rebirth) shows the first signs of closing. 200-window production runs and multi-seed validation are the immediate next step.*
