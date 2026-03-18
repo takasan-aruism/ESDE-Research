@@ -1,31 +1,38 @@
 #!/usr/bin/env python3
 """
-ESDE v4.9 — History + Axiomatic Void + Substrate Diffusion (Phase 3)
-======================================================================
-Phase : v4.9 (P1: History + P2b: Axiomatic Void + P3: Substrate Diffusion)
+ESDE v4.9 — Proliferation Phase (Phase 4)
+============================================
+Phase : v4.9 (P1: History + P2b: Void + P3: Substrate Diffusion + P4: Proliferation)
 Role  : Claude (Implementation)
 Arch  : Gemini (+ Taka) | Audit: GPT
 
 Phase 1 (Past): Link Tensor H_ij = {h_age, h_res, h_str}
-Phase 2b (Future): Axiomatic Void (topological persistence, Loop C for γ)
+Phase 2b (Future): Axiomatic Void (topological persistence)
+Phase 3 (Spatial): Substrate void diffusion (state-dependent C_diff)
 
-Phase 3 (Spatial Propagation):
-  Void diffuses on the FROZEN SUBSTRATE (v4.1 4-neighbor grid),
-  NOT on active link topology. This re-couples isolated void
-  information with active structural regions.
+Phase 4 (Proliferation):
+  Unified parameter Π (Proliferation Drive) replaces γ.
+  Π starts at 0.0 and is auto-discovered via Loop C (renewal deficit).
+  Π governs ALL proliferation mechanics:
 
-  Flow rule (per step, after snap echo, before birth):
-    Flow_i→j = (V_i − V_j) × exp(−local_degree_i) × C_diff
-    Only if V_i > V_j. Source-degree weighting only.
-    Strict conservation of total void mass.
+  1. Void Osmosis (Topological Gravity):
+     Active topology acts as gravity well for void energy.
+     Flow += Π × (Degree_j − Degree_i) in substrate diffusion.
+     Void drains from dead zones toward living structure boundaries.
 
-  C_diff is a FIXED physical constant (0.02). No tuning. No drift.
+  2. Crystallization Cascade (Latent Splash):
+     Void-induced link birth → consumed V splashes into latent field
+     of substrate neighbors: L_ik += V_consumed × Π.
+     One birth seeds chain reactions in adjacent space.
+
+  3. Divergence Pressure:
+     Latent boost ∝ Π × tanh(V_i + V_j). Same role as old γ.
+
+  Loop C: ΔΠ = +α(t) × tanh(D_ren / 1000)
+  D_ren = snaps − births. System dying → Π rises. Proliferating → Π relaxes.
 
 Physics operators: UNCHANGED.
-v4.8c axiomatic drift (Loops A, B, C, meta-α): PRESERVED.
-
-NOTE: Full override of parent step_window(). Intentional for
-physics isolation.
+v4.8c axiomatic drift (Loops A, B, meta-α): PRESERVED.
 """
 
 import sys, math, time
@@ -96,18 +103,16 @@ class V49EncapsulationParams(V48cEncapsulationParams):
     avalanche_radius: int = 1
     fragility_age_threshold: int = 5
     fragility_deformation_decay: float = 0.3
-    # Phase 2b: axiomatic void (no static decay, dynamic γ)
+    # Phase 4: Proliferation Drive (replaces γ)
     void_k: float = 0.5           # snap echo: V += k * h_age
-    void_gamma: float = 1.0       # divergence pressure (initial, auto-discovered by Loop C)
-    void_gamma_min: float = 0.0   # Loop C bounds
-    void_gamma_max: float = 20.0
+    proliferation_pi: float = 0.0  # unified proliferation parameter (auto-discovered)
+    proliferation_pi_min: float = 0.0
+    proliferation_pi_max: float = 20.0
     void_consumption: float = 0.1  # V consumed per link birth
     void_v_max: float = 5.0       # cap on V_i
-    # Phase 3: substrate diffusion (state-dependent, not static)
-    # C_diff(t) = c_diff_min + c_diff_scale × (isolated_high_V / N)
-    # Stateless: no memory, no loop, no α dependency.
-    void_c_diff_min: float = 0.001   # baseline diffusion
-    void_c_diff_scale: float = 0.5   # scales with isolation fraction
+    # Phase 3: substrate diffusion (state-dependent)
+    void_c_diff_min: float = 0.001
+    void_c_diff_scale: float = 0.5
     # NOTE: void_decay_lambda REMOVED. Decay is topology-dependent.
     # Toggles
     history_enabled: bool = True
@@ -322,16 +327,11 @@ def apply_avalanche(state, tensor, prev_islands, params):
 def apply_void_divergence_pressure(state, void_field, params, tensor,
                                     void_active):
     """
-    Phase 2 Action: boost latent field for node pairs with high V_i.
-    Applied before realizer.step() each physics step.
-
-    Uses void_active (set of node indices with V > 0.01) to avoid
-    scanning all N nodes. Set is maintained by caller.
-
-    Returns stats.
+    Divergence pressure: boost latent field ∝ Π × tanh(V_i + V_j).
+    Π (Proliferation Drive) replaces old γ. Auto-discovered via Loop C.
     """
     stats = {"boosted_pairs": 0, "total_boost": 0.0}
-    gamma = params.void_gamma
+    pi = params.proliferation_pi
 
     for n in void_active:
         if n not in state.alive_n:
@@ -345,8 +345,7 @@ def apply_void_divergence_pressure(state, void_field, params, tensor,
                 continue
 
             v_nb = void_field[nb]
-            # Divergence pressure with GPT mandatory tanh saturation
-            amplification = gamma * math.tanh(v_n + v_nb)
+            amplification = pi * math.tanh(v_n + v_nb)
             if amplification > 0.01:
                 cur = state.get_latent(n, nb)
                 boost = 0.01 * amplification
@@ -389,14 +388,18 @@ def apply_void_topological_decay(void_field, state, void_active):
 
 
 def apply_void_consumption(state, void_field, params, pre_alive_l,
-                           void_active):
+                           void_active, substrate):
     """
-    Consumption: when a new link is born, consume potential at endpoints.
-    Tracks void_induced_births (births where both endpoints had V > 0)
-    for Loop C renewal deficit computation.
+    Consumption + Phase 4 Crystallization Cascade.
+    When a new link is born, consume potential at endpoints.
+    If void-induced: consumed V splashes into latent field of
+    substrate neighbors (Latent Splash), seeding chain reactions.
+    Splash magnitude: V_consumed × Π.
     """
-    stats = {"consumed_events": 0, "void_induced_births": 0}
+    stats = {"consumed_events": 0, "void_induced_births": 0,
+             "cascade_splashes": 0}
     cost = params.void_consumption
+    pi = params.proliferation_pi
 
     new_links = state.alive_l - pre_alive_l
     for lk in new_links:
@@ -404,13 +407,33 @@ def apply_void_consumption(state, void_field, params, pre_alive_l,
         v1 = void_field[n1]
         v2 = void_field[n2]
         if v1 > 0.001 or v2 > 0.001:
+            consumed = min(cost, v1) + min(cost, v2)
             void_field[n1] = max(0.0, void_field[n1] - cost)
             void_field[n2] = max(0.0, void_field[n2] - cost)
             stats["consumed_events"] += 1
-            # Count as void-induced if BOTH endpoints had potential
-            if v1 > 0.001 and v2 > 0.001:
+
+            void_induced = v1 > 0.001 and v2 > 0.001
+            if void_induced:
                 stats["void_induced_births"] += 1
-            # Prune void_active if depleted
+
+                # Phase 4: Crystallization Cascade (Latent Splash)
+                # Consumed V splashes into latent field of substrate neighbors
+                if pi > 0.001 and consumed > 0.001:
+                    splash = consumed * pi
+                    for endpoint in (n1, n2):
+                        sub_nbs = substrate.get(endpoint, set())
+                        for k in sub_nbs:
+                            if k in state.alive_n:
+                                # Boost latent field for all non-active pairs from k
+                                for k2 in state.neighbors(k):
+                                    if k2 in state.alive_n:
+                                        lk2 = state.key(k, k2)
+                                        if lk2 not in state.alive_l:
+                                            cur = state.get_latent(k, k2)
+                                            state.set_latent(k, k2,
+                                                min(1.0, cur + splash))
+                                            stats["cascade_splashes"] += 1
+
             if void_field[n1] < 0.001:
                 void_active.discard(n1)
             if void_field[n2] < 0.001:
@@ -419,47 +442,51 @@ def apply_void_consumption(state, void_field, params, pre_alive_l,
     return stats
 
 
+def _node_active_degree(state, n):
+    """Count active links at node n."""
+    deg = 0
+    if n in state.alive_n:
+        for nb in state.neighbors(n):
+            if nb in state.alive_n:
+                lk = state.key(n, nb)
+                if lk in state.alive_l:
+                    deg += 1
+    return deg
+
+
 def apply_void_substrate_diffusion(void_field, state, substrate, params,
                                     void_active):
     """
-    Phase 3: Substrate-based void diffusion.
-    Void flows on the FROZEN 4-neighbor grid, NOT on active topology.
-    This re-couples isolated nodes (degree=0) with active regions.
+    Phase 3+4: Substrate void diffusion with osmotic gravity.
 
-    C_diff is state-dependent (stateless, no memory, no α):
+    C_diff is state-dependent:
       C_diff(t) = c_diff_min + c_diff_scale × (isolated_high_V / N)
-    Many isolated void nodes → strong diffusion.
-    Few isolated void nodes → weak diffusion.
 
-    Flow rule:
-      Flow_i→j = (V_i − V_j) × exp(−local_degree_i) × C_diff(t)
-      Only if V_i > V_j. Source-degree weighting only.
+    Phase 4 Osmosis: active topology acts as gravity well for void.
+      Gradient_Diff = V_i − V_j
+      Gravity_Pull  = Π × (Degree_j − Degree_i)
+      Flow = (Gradient_Diff + Gravity_Pull) × exp(−degree_i) × C_diff
+      Constrained: V_i never drops below 0.
 
-    Strict conservation: deltas sum to zero (order-independent).
-    Returns stats for mandatory logging.
+    Void naturally drains from dead zones and concentrates at
+    boundaries of living clusters.
+
+    Strict conservation: deltas sum to zero.
     """
     stats = {"diffusion_events": 0, "void_to_active": 0, "c_diff": 0.0}
 
     N = len(void_field)
     v_max = params.void_v_max
+    pi = params.proliferation_pi
 
     # Count isolated high-V nodes for state-dependent C_diff
     isolated_count = 0
     for n in void_active:
         if void_field[n] < 0.01:
             continue
-        has_link = False
-        if n in state.alive_n:
-            for nb in state.neighbors(n):
-                if nb in state.alive_n:
-                    lk = state.key(n, nb)
-                    if lk in state.alive_l:
-                        has_link = True
-                        break
-        if not has_link:
+        if _node_active_degree(state, n) == 0:
             isolated_count += 1
 
-    # State-dependent C_diff: isolation fraction drives diffusion strength
     c_diff = params.void_c_diff_min + params.void_c_diff_scale * (isolated_count / N)
     stats["c_diff"] = round(c_diff, 6)
 
@@ -473,45 +500,33 @@ def apply_void_substrate_diffusion(void_field, state, substrate, params,
         if v_n < 0.001:
             continue
 
-        # Source node's active link degree
-        local_degree = 0
-        if n in state.alive_n:
-            for nb in state.neighbors(n):
-                if nb in state.alive_n:
-                    lk = state.key(n, nb)
-                    if lk in state.alive_l:
-                        local_degree += 1
+        deg_i = _node_active_degree(state, n)
+        source_decay = math.exp(-deg_i) * c_diff
 
-        # Isolated nodes (degree=0) → exp(0)=1.0 (full flow)
-        # Dense nodes (degree=3) → exp(-3)≈0.05 (weak flow)
-        source_factor = math.exp(-local_degree) * c_diff
-
-        # Diffuse to substrate (frozen grid) neighbors
         sub_nbs = substrate.get(n, set())
         for nb in sub_nbs:
             v_nb = void_field[nb]
-            if v_n > v_nb:
-                flow = (v_n - v_nb) * source_factor
-                deltas[n] -= flow
-                deltas[nb] += flow
-                stats["diffusion_events"] += 1
-                # Track if void flows to a node with active links
-                if nb in state.alive_n:
-                    nb_has_links = False
-                    for nb2 in state.neighbors(nb):
-                        if nb2 in state.alive_n:
-                            lk = state.key(nb, nb2)
-                            if lk in state.alive_l:
-                                nb_has_links = True
-                                break
-                    if nb_has_links:
+            deg_j = _node_active_degree(state, nb)
+
+            # Phase 4: osmotic gravity pull
+            gradient = v_n - v_nb
+            gravity = pi * (deg_j - deg_i)
+            effective_flow = (gradient + gravity) * source_decay
+
+            if effective_flow > 0:
+                # Cap flow so V_i doesn't go negative
+                max_flow = v_n + deltas[n]  # remaining V at n
+                flow = min(effective_flow, max(0.0, max_flow * 0.5))
+                if flow > 0.0001:
+                    deltas[n] -= flow
+                    deltas[nb] += flow
+                    stats["diffusion_events"] += 1
+                    if deg_j > 0:
                         stats["void_to_active"] += 1
 
-    # Apply deltas (conservative: total void mass unchanged)
     void_field += deltas
     np.clip(void_field, 0.0, v_max, out=void_field)
 
-    # Update void_active
     for n in range(N):
         if void_field[n] > 0.001:
             void_active.add(n)
@@ -582,7 +597,8 @@ class V49Engine(V48cEngine):
               # deposits only occur via Phase 1 snaps — no history = no deposits
         wv = {"boosted_pairs": 0, "total_boost": 0.0, "consumed_events": 0,
               "void_induced_births": 0,
-              "diffusion_events": 0, "void_to_active": 0}
+              "diffusion_events": 0, "void_to_active": 0,
+              "cascade_splashes": 0}
 
         for step in range(steps):
             # Snapshot alive links before physics (for consumption tracking)
@@ -651,15 +667,16 @@ class V49Engine(V48cEngine):
                 wv["void_to_active"] += sd["void_to_active"]
                 wv["c_diff"] = sd.get("c_diff", 0)
 
-            # Phase 2b: topological void decay + consumption
+            # Phase 2b+4: topological void decay + consumption + cascade
             if void_enabled:
                 apply_void_topological_decay(
                     self.void_field, self.state, self.void_active)
                 vc = apply_void_consumption(
                     self.state, self.void_field, p, pre_alive_l,
-                    self.void_active)
+                    self.void_active, self.substrate)
                 wv["consumed_events"] += vc["consumed_events"]
                 wv["void_induced_births"] += vc["void_induced_births"]
+                wv["cascade_splashes"] += vc.get("cascade_splashes", 0)
 
             # Background seeding (canonical)
             al = list(self.state.alive_n)
@@ -883,19 +900,18 @@ class V49Engine(V48cEngine):
                 self.prev_alive_links = post_links
                 self.prev_z0_links = post_z0
 
-                # Loop C: γ ← +α(t) × tanh(D_ren / 1000)
+                # Loop C: Π ← +α(t) × tanh(D_ren / 1000)
                 # D_ren = snaps - void_induced_births over interval
                 D_ren = self._interval_snaps - self._interval_void_births
                 grad_ren = math.tanh(D_ren / 1000.0)
-                new_gamma = p.void_gamma + (alpha_t * grad_ren)
-                p.void_gamma = max(p.void_gamma_min,
-                                   min(p.void_gamma_max, new_gamma))
+                new_pi = p.proliferation_pi + (alpha_t * grad_ren)
+                p.proliferation_pi = max(p.proliferation_pi_min,
+                                         min(p.proliferation_pi_max, new_pi))
                 # Reset interval accumulators
                 self._interval_snaps = 0
                 self._interval_void_births = 0
 
-            # D_ren for logging: applied window uses the value computed above,
-            # non-applied windows show current accumulation
+            # D_ren for logging
             if applied:
                 log_d_ren = D_ren
             else:
@@ -906,7 +922,7 @@ class V49Engine(V48cEngine):
                 "alpha_t": round(alpha_t, 6),
                 "compound_restore": round(p.z_decay_compound_restore, 6),
                 "inert_penalty": round(p.z_decay_inert_penalty, 6),
-                "void_gamma": round(p.void_gamma, 6),
+                "proliferation_pi": round(p.proliferation_pi, 6),
                 "d_ren": log_d_ren,
                 "delta_L": delta_L, "delta_Z0": delta_Z0,
                 "abs_delta_L": abs(delta_L),
