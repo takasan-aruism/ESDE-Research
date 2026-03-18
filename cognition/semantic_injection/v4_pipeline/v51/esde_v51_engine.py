@@ -17,11 +17,12 @@ Four corrections to close remaining v5.0 disconnections:
   "入口を作るな" — energy enters through circulation, not injection.
 
 §3 — Deterministic E→V Radiation:
-  Every alive node radiates E into V per step:
-    Radiation = E[i] × (1 - exp(-Π))
-    V[i] += Radiation
-    E[i] -= Radiation
-  Π=0 → no radiation. High Π → strong radiation. All state-derived.
+  Every alive node radiates E into V (once per window, post-loop):
+    radiation_frac = Π / (Π + Π_max)
+    Radiation = E[i] × radiation_frac
+    V[i] += Radiation;  E[i] -= Radiation
+  Π=0 → no radiation. Π=Π_max → half of E radiates.
+  Michaelis-Menten saturation. No new constants.
 
 §4 — Proximity Phase Torque:
   R=0 links with structural neighbors get θ coupling:
@@ -215,27 +216,29 @@ def apply_e_to_v_radiation(state, void_field, void_active, params):
     """
     Deterministic E→V radiation. Replaces RNG background injection.
 
-    Every alive node:
-      Radiation = E[i] × (1 - exp(-Π))
+    Every alive node (once per window, post-loop):
+      radiation_frac = Π / (Π + Π_max)
+      Radiation = E[i] × radiation_frac
       V[i] += Radiation
       E[i] -= Radiation
 
-    Π=0 → (1-exp(0)) = 0 → no radiation.
-    Π=5 → (1-exp(-5)) ≈ 0.993 → nearly all E radiates.
-    Π=1 → (1-exp(-1)) ≈ 0.632 → moderate radiation.
+    Π=0 → frac=0 → no radiation.
+    Π=Π_max → frac=0.5 → half of E radiates.
+    Π→∞ → frac→1 (but Π is bounded by tanh in practice).
 
-    No constants. Π governs the fraction. E provides the fuel.
-    System breathes: E → V → birth → V→E → back to E.
+    No new constants. Π and Π_max are existing system quantities.
+    Michaelis-Menten saturation prevents E drain at moderate Π.
     """
     stats = {"boil_events": 0, "boil_v_added_tot": 0.0,
              "boil_e_consumed_tot": 0.0}
     pi = params.proliferation_pi
+    pi_max = params.proliferation_pi_max
     v_max = params.void_v_max
 
     if pi < 0.001:
         return stats
 
-    radiation_frac = 1.0 - math.exp(-pi)
+    radiation_frac = pi / (pi + pi_max)
 
     for n in list(state.alive_n):
         e_n = state.E[n]
