@@ -1,26 +1,27 @@
 #!/usr/bin/env python3
 """
-ESDE v4.9 — Stateless Proliferation (Phase 5)
-================================================
-Phase : v4.9 (P1-P4 retained + P5: Stateless Π)
+ESDE v4.9 — Tension-Gated Void Dilatation (Phase 6)
+======================================================
+Phase : v4.9 (P1-P5 retained + P6: Tension-Gated Decay)
 Role  : Claude (Implementation)
 Arch  : Gemini (+ Taka) | Audit: GPT
 
-Phase 5: Breaking the α bottleneck.
-  Π is no longer accumulated via Loop C / α(t).
-  Π is a STATELESS function of structural tension:
+Phase 6: Solving the temporal persistence problem.
+  Void decay modulated by structural tension Π:
 
-    Π(t) = Π_max × tanh(snaps / max(1, alive_links))
+    V_i *= exp(-degree_i / (1 + Π))
 
-  High destruction + low survival → Π spikes instantly.
-  Low destruction + high survival → Π collapses instantly.
-  No memory. No α dependency. Instantaneous state reflection.
+  Crisis (Π≈5): exp(-2/6) = 0.72 retention per step at degree=2.
+  Peace  (Π≈0): exp(-2/1) = 0.14 retention (reverts to Phase 5).
 
-  Π governs: Osmosis gravity, Crystallization Cascade splash,
-  Divergence Pressure. All Phase 4 mechanics retained.
+  Void now "sticks" to active boundaries during crisis,
+  providing temporal bandwidth for divergence and cascade.
+  No manual constants. Fully state-dependent via Π.
 
-  Loop A (restore) and Loop B (inert) remain α-driven.
-  Loop C REMOVED.
+All Phase 5 mechanics retained:
+  Stateless Π = Π_max × tanh(snaps / alive_links)
+  Void Osmosis, Ring Cascade, Divergence Pressure.
+  Loops A+B (α-driven). Loop C removed.
 
 Physics operators: UNCHANGED.
 """
@@ -345,23 +346,28 @@ def apply_void_divergence_pressure(state, void_field, params, tensor,
     return stats
 
 
-def apply_void_topological_decay(void_field, state, void_active):
+def apply_void_topological_decay(void_field, state, void_active, params):
     """
-    Phase 2b: Topological persistence.
-    V_i *= exp(-local_degree_i)
+    Phase 6: Tension-Gated Void Decay.
+    V_i *= exp(-degree_i / (1 + Π))
 
-    Empty regions (degree=0): exp(0) = 1.0 → V persists indefinitely.
-    Dense regions (degree=3): exp(-3) ≈ 0.05 → V decays rapidly.
+    Π modulates temporal persistence:
+      Peace (Π≈0): denominator=1 → exp(-degree) → instant decay at active nodes.
+      Crisis (Π≈5): denominator=6 → exp(-degree/6) → 72% retention at degree=2.
 
-    NO static decay rate. The topology itself determines persistence.
-    "The ghost of a shattered structure haunts the depleted coordinate."
+    Void "sticks" to active boundaries during structural crisis,
+    providing temporal bandwidth for divergence and cascade.
+    Reverts to instant decay during stable phases.
+    No manual constants. Persistence is fully state-dependent.
     """
+    pi = params.proliferation_pi
+    denom = 1.0 + pi
+
     for n in list(void_active):
         if void_field[n] < 0.001:
             void_active.discard(n)
             void_field[n] = 0.0
             continue
-        # Count active links at this node
         local_degree = 0
         if n in state.alive_n:
             for nb in state.neighbors(n):
@@ -369,8 +375,8 @@ def apply_void_topological_decay(void_field, state, void_active):
                     lk = state.key(n, nb)
                     if lk in state.alive_l:
                         local_degree += 1
-        # Topological decay
-        void_field[n] *= math.exp(-local_degree)
+        # Tension-gated decay
+        void_field[n] *= math.exp(-local_degree / denom)
         if void_field[n] < 0.001:
             void_active.discard(n)
             void_field[n] = 0.0
@@ -655,10 +661,10 @@ class V49Engine(V48cEngine):
                 wv["void_to_active"] += sd["void_to_active"]
                 wv["c_diff"] = sd.get("c_diff", 0)
 
-            # Phase 2b+4: topological void decay + consumption + cascade
+            # Phase 6: tension-gated void decay + consumption + cascade
             if void_enabled:
                 apply_void_topological_decay(
-                    self.void_field, self.state, self.void_active)
+                    self.void_field, self.state, self.void_active, p)
                 vc = apply_void_consumption(
                     self.state, self.void_field, p, pre_alive_l,
                     self.void_active, self.substrate)
