@@ -17,8 +17,18 @@ import numpy as np
 from pathlib import Path
 
 _SCRIPT_DIR = Path(__file__).resolve().parent
-if str(_SCRIPT_DIR) not in sys.path:
-    sys.path.insert(0, str(_SCRIPT_DIR))
+_PIPELINE_DIR = _SCRIPT_DIR.parent
+_SEMANTIC_DIR = _PIPELINE_DIR.parent
+_V4_PIPELINE = _SEMANTIC_DIR / "v4_pipeline"
+_V43_DIR = _V4_PIPELINE / "v43"
+_V41_DIR = _V4_PIPELINE / "v41"
+_REPO_ROOT = _SEMANTIC_DIR.parent.parent
+_ENGINE_DIR = _REPO_ROOT / "ecology" / "engine"
+
+for p in [str(_SCRIPT_DIR), str(_PIPELINE_DIR), str(_V43_DIR),
+          str(_V41_DIR), str(_ENGINE_DIR)]:
+    if p not in sys.path:
+        sys.path.insert(0, p)
 
 from esde_v71_engine import V71Engine, V71EncapsulationParams, V71_WINDOW
 
