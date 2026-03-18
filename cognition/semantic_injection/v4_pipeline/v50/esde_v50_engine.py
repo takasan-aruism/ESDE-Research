@@ -506,7 +506,9 @@ class V50Engine(V49Engine):
 
             alive_nodes_arr = list(self.state.alive_n)
             if alive_nodes_arr:
-                mean_E = float(np.mean(self.state.E[alive_nodes_arr]))
+                mean_E = float(sum(
+                    self.state.E[n] for n in alive_nodes_arr
+                ) / len(alive_nodes_arr))
             else:
                 mean_E = 0.0
             tension_energy = max(0.0, 1.0 - mean_E)
