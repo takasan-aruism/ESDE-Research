@@ -16,13 +16,12 @@ Four corrections to close remaining v5.0 disconnections:
   bg_prob, rng-based E injection, Z=0→A/B assignment ALL removed.
   "入口を作るな" — energy enters through circulation, not injection.
 
-§3 — Deterministic E→V Radiation:
-  Every alive node radiates E into V (once per window, post-loop):
-    radiation_frac = Π / (Π + Π_max)
-    Radiation = E[i] × radiation_frac
-    V[i] += Radiation;  E[i] -= Radiation
-  Π=0 → no radiation. Π=Π_max → half of E radiates.
-  Michaelis-Menten saturation. No new constants.
+§3 — Deterministic E→V Radiation (structure-concentrated):
+  Only nodes WITH alive links radiate (Genesis v1.0 principle):
+    radiation = E[i] × (Π / (Π + Π_max)) × tanh(degree_i)
+  degree=0 → 0 (isolated nodes keep E). degree=3 → ≈1.
+  V concentrates near structure → selective births → cycles.
+  No new constants.
 
 §4 — Proximity Phase Torque:
   R=0 links with structural neighbors get θ coupling:
@@ -216,18 +215,22 @@ def apply_e_to_v_radiation(state, void_field, void_active, params):
     """
     Deterministic E→V radiation. Replaces RNG background injection.
 
-    Every alive node (once per window, post-loop):
-      radiation_frac = Π / (Π + Π_max)
-      Radiation = E[i] × radiation_frac
-      V[i] += Radiation
-      E[i] -= Radiation
+    ONLY nodes with alive links radiate (Genesis v1.0 principle:
+    concentrate resources where structure exists).
 
-    Π=0 → frac=0 → no radiation.
-    Π=Π_max → frac=0.5 → half of E radiates.
-    Π→∞ → frac→1 (but Π is bounded by tanh in practice).
+      degree_n = active link count at node n
+      radiation = E[n] × (Π / (Π + Π_max)) × tanh(degree_n)
 
-    No new constants. Π and Π_max are existing system quantities.
-    Michaelis-Menten saturation prevents E drain at moderate Π.
+    degree=0 → tanh(0)=0 → no radiation (isolated, keeps E)
+    degree=1 → tanh(1)=0.76 → moderate radiation
+    degree=3 → tanh(3)=0.995 → nearly full radiation
+
+    V concentrates near structure → births near structure →
+    cycles form → R>0 → resonance heat returns E.
+    Genesis: "concentrate the stochastic seeding near locations
+    where topology has already self-organized."
+
+    No new constants. degree, Π, Π_max all existing state.
     """
     stats = {"boil_events": 0, "boil_v_added_tot": 0.0,
              "boil_e_consumed_tot": 0.0}
@@ -238,14 +241,20 @@ def apply_e_to_v_radiation(state, void_field, void_active, params):
     if pi < 0.001:
         return stats
 
-    radiation_frac = pi / (pi + pi_max)
+    pi_frac = pi / (pi + pi_max)
 
     for n in list(state.alive_n):
         e_n = state.E[n]
         if e_n < 0.001:
             continue
 
-        radiation = e_n * radiation_frac
+        # Local structure density
+        deg = _node_active_degree(state, n)
+        if deg == 0:
+            continue  # isolated nodes keep their E
+
+        structure_frac = math.tanh(deg)
+        radiation = e_n * pi_frac * structure_frac
         if radiation < 0.0001:
             continue
 
