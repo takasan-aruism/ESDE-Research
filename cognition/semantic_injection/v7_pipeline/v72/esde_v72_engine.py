@@ -25,12 +25,13 @@ from dataclasses import dataclass
 # ================================================================
 # PATH SETUP
 # ================================================================
-_SCRIPT_DIR = Path(__file__).resolve().parent
-_PIPELINE_DIR = _SCRIPT_DIR.parent
-_V4_PIPELINE = _PIPELINE_DIR.parent / "v4_pipeline"
+_SCRIPT_DIR = Path(__file__).resolve().parent      # v72/
+_PIPELINE_DIR = _SCRIPT_DIR.parent                  # v7_pipeline/
+_SEMANTIC_DIR = _PIPELINE_DIR.parent                # semantic_injection/
+_V4_PIPELINE = _SEMANTIC_DIR / "v4_pipeline"        # v4_pipeline/
 _V43_DIR = _V4_PIPELINE / "v43"
 _V41_DIR = _V4_PIPELINE / "v41"
-_REPO_ROOT = _V4_PIPELINE.parent.parent
+_REPO_ROOT = _SEMANTIC_DIR.parent.parent            # ESDE-Research/
 _ENGINE_DIR = _REPO_ROOT / "ecology" / "engine"
 
 for p in [str(_PIPELINE_DIR), str(_V43_DIR), str(_V41_DIR),
@@ -249,7 +250,7 @@ class V72Engine(V43Engine):
               "mean_omega": 0.0}
 
         for step in range(steps):
-            # ── 1: Stress formation barrier (before realizer) ──
+            # ── 1: Stress formation barrier (before realizer, mild) ──
             if stress_enabled:
                 sf = apply_stress_formation_barrier(
                     self.state, self.substrate)
@@ -281,14 +282,7 @@ class V72Engine(V43Engine):
             # ── 8: Canonical decay + exclusion ──
             self.physics.step_decay_exclusion(self.state)
 
-            # ── 9: Stress decay (post-correction) ──
-            if stress_enabled:
-                sd = apply_stress_decay(self.state)
-                ws["stressed"] += sd["stressed"]
-                ws["calcified"] += sd["calcified"]
-                ws["mean_omega"] = sd["mean_omega"]  # last step's value
-
-            # ── 10: Background seeding (canonical) ──
+            # ── 9: Background seeding (canonical) ──
             al = list(self.state.alive_n)
             na = len(al)
             if na > 0:
@@ -315,6 +309,15 @@ class V72Engine(V43Engine):
                                 1 if self.state.rng.random() < 0.5 else 2)
 
         self.stress_stats = ws
+
+        # ── Stress decay (once per window, post-loop) ──
+        # Macro-scale phenomenon. Same timescale as virtual layer.
+        if stress_enabled:
+            sd = apply_stress_decay(self.state)
+            ws["stressed"] = sd["stressed"]
+            ws["calcified"] = sd["calcified"]
+            ws["mean_omega"] = sd["mean_omega"]
+            self.stress_stats = ws
 
         # ════════════════════════════════════════
         # POST-LOOP: V43 observation (reproduced from V43Engine)
