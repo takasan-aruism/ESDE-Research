@@ -52,20 +52,22 @@ _original_get_latent = GenesisState.get_latent
 
 def _fast_get_latent(self, a, b):
     k = (a, b) if a < b else (b, a)
-    return self.latent.get(k, 0.0)
+    if k not in self.L:
+        self.L[k] = self._latent_rng.random()
+    return self.L[k]
 
 GenesisState.get_latent = _fast_get_latent
 
 
 # ================================================================
-# PATCH 3: set_latent() — inline key
+# PATCH 3: set_latent() — inline key, preserve clamp
 # ================================================================
 _original_set_latent = getattr(GenesisState, 'set_latent', None)
 
 if _original_set_latent is not None:
     def _fast_set_latent(self, a, b, val):
         k = (a, b) if a < b else (b, a)
-        self.latent[k] = val
+        self.L[k] = max(0.0, min(1.0, val))
     GenesisState.set_latent = _fast_set_latent
 
 
@@ -115,7 +117,7 @@ if __name__ == "__main__":
             a, b = rng.randint(0, 999), rng.randint(0, 999)
             if a != b:
                 k = (min(a,b), max(a,b))
-                state.latent[k] = rng.random()
+                state.L[k] = rng.random()
 
         errors = 0
         for _ in range(100_000):
@@ -123,10 +125,9 @@ if __name__ == "__main__":
             if a == b:
                 continue
             fast = _fast_get_latent(state, a, b)
-            # Use original key to look up
             k = _original_key(state, a, b)
-            orig = state.latent.get(k, 0.0)
-            if abs(fast - orig) > 1e-10:
+            orig = state.L.get(k, None)
+            if orig is not None and abs(fast - orig) > 1e-10:
                 errors += 1
         print(f"  get_latent() errors: {errors} / 100,000")
 
