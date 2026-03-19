@@ -80,18 +80,17 @@ def compute_omega(state, lk):
     return deg1 + deg2
 
 
-def apply_stress_decay(state):
+def apply_stress_decay(state, stress_intensity):
     """
-    Post-correction after canonical step_decay_exclusion.
+    Post-correction. Stress scaled by dynamic equilibrium.
 
-    Effective_Decay = base_decay × Ω × (1 - R)  [Gemini spec §3A]
+    stress_intensity = current_links / EMA(past_links)
+      > 1.0: overgrown → stress ON (dense links die)
+      < 1.0: depleted → stress OFF (links grow freely)
+      = 1.0: at equilibrium → neutral
 
-    Canonical decay already applied base_decay. We apply the Ω×(1-R) factor
-    as additional S reduction. Self-scaling: normalized by mean Ω.
-
-    Low Ω (branches): mild additional decay → scaffolding survives.
-    High Ω (dense, R=0): heavy additional decay → junk cleared.
-    High Ω (dense, R>0): immune → resonant structures persist.
+    No fixed target. The system's own history IS the target.
+    R>0 links immune via (1-R).
     """
     stats = {"stressed": 0, "calcified": 0, "mean_omega": 0.0}
 
@@ -107,6 +106,11 @@ def apply_stress_decay(state):
     mean_omega = sum(omega_values) / len(omega_values) if omega_values else 1.0
     stats["mean_omega"] = round(mean_omega, 2)
 
+    # Global pressure: how far from equilibrium?
+    # intensity > 1: overgrown → positive global pressure
+    # intensity < 1: depleted → negative global pressure (=growth boost)
+    global_pressure = stress_intensity - 1.0
+
     for lk in list(state.alive_l):
         omega = omegas.get(lk, 0)
         r = state.R.get(lk, 0.0)
@@ -115,17 +119,17 @@ def apply_stress_decay(state):
         if s <= 0:
             continue
 
-        # Stress factor: Ω relative to system mean.
-        # Self-scaling — no fixed constants (#V72-3 fix).
+        # Local factor: Ω relative to mean
         omega_ratio = omega / max(1.0, mean_omega)
 
-        # R>0 immune: (1 - R) [Gemini spec §3A]
+        # R>0 immune
         vulnerability = 1.0 - r
 
-        # Penalty = S × (excess over mean) × vulnerability
-        # omega_ratio > 1: overcrowded → positive penalty (decay)
-        # omega_ratio < 1: sparse → negative penalty (scaffold)
-        penalty = s * (omega_ratio - 1.0) * vulnerability
+        # Combined: global pressure × local density × vulnerability
+        # Overgrown + dense + R=0 → strong decay
+        # Depleted + sparse + R=0 → mild boost (calcification)
+        # At equilibrium → near zero (Genesis physics alone)
+        penalty = s * global_pressure * omega_ratio * vulnerability
 
         if penalty > 0:
             state.S[lk] = max(0.0, s - penalty)
@@ -133,13 +137,9 @@ def apply_stress_decay(state):
             if state.S[lk] <= state.EXTINCTION:
                 state.S[lk] = 0.0
                 state.kill_link(lk)
-        elif penalty < 0:
-            # Calcification: sparse branches strengthen.
-            # Boost = -penalty × (1 - omega_ratio)
-            # Self-scaling: sparser branch → stronger boost.
-            # No fixed 0.5 factor (#V72-3 fix).
-            sparsity = 1.0 - omega_ratio  # 0..1
-            boost = min(-penalty * sparsity, 1.0 - s)
+        elif penalty < 0 and global_pressure < 0:
+            # Depleted: sparse branches strengthen
+            boost = min(-penalty, 1.0 - s)
             state.S[lk] = s + boost
             stats["calcified"] += 1
 
@@ -227,6 +227,9 @@ class V72Engine(V43Engine):
         self.virtual_stats = {}
         self.stress_stats = {}
         self.window_count = 0
+        # Dynamic equilibrium: EMA of link count
+        # First window initializes. No fixed target.
+        self.link_ema = None  # set on first window
 
     def step_window(self, steps=V72_WINDOW):
         """
@@ -305,9 +308,23 @@ class V72Engine(V43Engine):
         self.stress_stats = ws
 
         # ── Stress decay (once per window, post-loop) ──
-        # Macro-scale phenomenon. Same timescale as virtual layer.
+        # Dynamic equilibrium: stress_intensity = current / EMA(past)
+        # First window sets EMA baseline. No fixed target.
         if stress_enabled:
-            sd = apply_stress_decay(self.state)
+            current_links = len(self.state.alive_l)
+            if self.link_ema is None:
+                self.link_ema = float(current_links)
+            # EMA update: tau adapts to window count (slow start, then stable)
+            # alpha = 2/(tau+1). tau = min(window_count+1, 20)
+            tau = min(self.window_count + 1, 20)
+            alpha_ema = 2.0 / (tau + 1.0)
+            self.link_ema = alpha_ema * current_links + (1 - alpha_ema) * self.link_ema
+
+            stress_intensity = current_links / max(1.0, self.link_ema)
+            ws["stress_intensity"] = round(stress_intensity, 4)
+            ws["link_ema"] = round(self.link_ema, 1)
+
+            sd = apply_stress_decay(self.state, stress_intensity)
             ws["stressed"] = sd["stressed"]
             ws["calcified"] = sd["calcified"]
             ws["mean_omega"] = sd["mean_omega"]

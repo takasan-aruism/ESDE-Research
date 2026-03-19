@@ -40,6 +40,7 @@ LOG_FIELDS = [
     "milestone", "physics_seconds",
     # Stress
     "stressed", "calcified", "suppressed", "mean_omega",
+    "stress_intensity", "link_ema",
     # R+
     "total_rplus",
     # Virtual
@@ -74,7 +75,7 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
     max_ms = 0
 
     print(f"\n  {'win':>4} {'clst':>4} {'mxSz':>4} "
-          f"{'R+':>4} {'Ω':>4} "
+          f"{'R+':>4} {'sI':>5} "
           f"{'str':>4} {'cal':>4} "
           f"{'vE':>6} {'vLb':>3} "
           f"{'lnks':>5} {'M':>1} {'sec':>4}")
@@ -115,6 +116,8 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
             "calcified": ss.get("calcified", 0),
             "suppressed": ss.get("suppressed", 0),
             "mean_omega": ss.get("mean_omega", 0),
+            "stress_intensity": ss.get("stress_intensity", 1.0),
+            "link_ema": ss.get("link_ema", 0),
             "total_rplus": rplus,
             "v_energy": vl.get("virtual_energy_total", 0),
             "v_labels": vl.get("labels_active", 0),
@@ -130,7 +133,7 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
               f"{isum.get('n_clusters',0):>4} "
               f"{isum.get('max_size',0):>4} "
               f"{rplus:>4} "
-              f"{ss.get('mean_omega',0):>4.1f} "
+              f"{ss.get('stress_intensity',1.0):>5.3f} "
               f"{ss.get('stressed',0):>4} "
               f"{ss.get('calcified',0):>4} "
               f"{vl.get('virtual_energy_total',0):>6.1f} "
