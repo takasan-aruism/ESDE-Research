@@ -31,6 +31,7 @@ for p in [str(_SCRIPT_DIR), str(_V43_DIR), str(_V41_DIR), str(_ENGINE_DIR)]:
 
 import engine_accel
 assert hasattr(engine_accel, '_fast_link_strength_sum')
+import engine_accel_v3  # v3: key(), get_latent() speedup
 
 from esde_v43_engine import (
     V43Engine, EncapsulationParams, V43StateFrame,
