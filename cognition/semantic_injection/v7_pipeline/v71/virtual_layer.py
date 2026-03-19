@@ -71,19 +71,34 @@ class VirtualLayer:
             "mean_torque": 0.0,
         }
 
-        # ── 1. SEED: island tracker のクラスタから ──
+        # ── 1. SEED: clusters (2+) + R>0 pairs ──
         cluster_list = []
         if islands:
             for iid, info in islands.items():
-                if len(info.nodes) >= 3:
+                if len(info.nodes) >= 2:
                     cluster_list.append(info.nodes)
                     self.recurrence[info.nodes] = \
                         self.recurrence.get(info.nodes, 0) + 1
 
+        # R>0 pairs as seeds (may not appear in islands)
+        for lk in state.alive_l:
+            r = state.R.get(lk, 0.0)
+            if r > 0:
+                pair = frozenset(lk)
+                if pair not in self.recurrence:
+                    cluster_list.append(pair)
+                self.recurrence[pair] = \
+                    self.recurrence.get(pair, 0) + 1
+
         # Stale recurrence cleanup
-        current_clusters = set(
-            info.nodes for info in islands.values()
-            if len(info.nodes) >= 3) if islands else set()
+        current_clusters = set()
+        if islands:
+            for info in islands.values():
+                if len(info.nodes) >= 2:
+                    current_clusters.add(info.nodes)
+        for lk in state.alive_l:
+            if state.R.get(lk, 0.0) > 0:
+                current_clusters.add(frozenset(lk))
         stale = [k for k, v in self.recurrence.items()
                  if k not in current_clusters and v < 2]
         for k in stale:

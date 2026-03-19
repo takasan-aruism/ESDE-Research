@@ -250,13 +250,7 @@ class V72Engine(V43Engine):
               "mean_omega": 0.0}
 
         for step in range(steps):
-            # ── 1: Stress formation barrier (before realizer, mild) ──
-            if stress_enabled:
-                sf = apply_stress_formation_barrier(
-                    self.state, self.substrate)
-                ws["suppressed"] += sf["suppressed"]
-
-            # ── 2: Canonical realizer ──
+            # ── 1: Canonical realizer ──
             self.realizer.step(self.state)
 
             # ── 3-6: Physics + Chemistry + Resonance + Grower ──
