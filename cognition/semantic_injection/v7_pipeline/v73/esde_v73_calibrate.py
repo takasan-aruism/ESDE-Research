@@ -128,15 +128,16 @@ def run(seed, n_windows, window_steps, output_dir, encap_params):
     f.close()
 
     json_path = output_dir / f"{tag}_detail.json"
-    detail = engine.island_tracker.detailed_report()
-    detail["meta"] = {
-        "version": "v7.3",
-        "seed": seed, "n_windows": n_windows,
-        "stress_enabled": bool(encap_params.stress_enabled),
-        "virtual_enabled": bool(encap_params.virtual_enabled),
-        "final_alive_links": frame.alive_links,
+    detail = {
+        "meta": {
+            "version": "v7.3",
+            "seed": seed, "n_windows": n_windows,
+            "stress_enabled": bool(encap_params.stress_enabled),
+            "virtual_enabled": bool(encap_params.virtual_enabled),
+            "final_alive_links": frame.alive_links,
+        },
+        "virtual_summary": engine.virtual.summary(),
     }
-    detail["virtual_summary"] = engine.virtual.summary()
     with open(json_path, "w") as jf:
         json.dump(detail, jf, indent=2, default=str)
 
