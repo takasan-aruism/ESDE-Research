@@ -1,0 +1,1789 @@
+{
+  "atom_id": "PER.smell",
+  "category": "PER",
+  "seed_count": 6,
+  "total_keys": 98,
+  "pos_counts": {
+    "v": 38,
+    "n": 58,
+    "adj": 2
+  },
+  "source_counts": {
+    "0_seed": 15,
+    "2_hypernym_d1": 16,
+    "6_derivational": 29,
+    "3_hyponym_d1": 13,
+    "10_sibling": 80
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 14,
+      "words": [
+        "smell(v)",
+        "smell(n)",
+        "sense of smell(n)",
+        "olfaction(n)",
+        "olfactory modality(n)",
+        "smelling(n)",
+        "sniff(n)",
+        "snuff(n)",
+        "sniff(v)",
+        "whiff(v)",
+        "aroma(n)",
+        "fragrance(n)",
+        "perfume(n)",
+        "scent(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 12,
+      "words": [
+        "perceive(v)",
+        "comprehend(v)",
+        "modality(n)",
+        "sense modality(n)",
+        "sensory system(n)",
+        "exteroception(n)",
+        "sensing(n)",
+        "perception(n)",
+        "odor(n)",
+        "odour(n)",
+        "olfactory sensation(n)",
+        "olfactory perception(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 9,
+      "words": [
+        "scent(v)",
+        "nose(v)",
+        "wind(v)",
+        "get a noseful(v)",
+        "get a whiff(v)",
+        "snuff(v)",
+        "snuffle(v)",
+        "nose(n)",
+        "incense(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 7,
+      "words": [
+        "sniffer(n)",
+        "incense(v)",
+        "aromatic(adj)",
+        "aromatize(v)",
+        "aromatise(v)",
+        "fragrant(adj)",
+        "perfume(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 56,
+      "words": [
+        "misperceive(v)",
+        "apperceive(v)",
+        "see(v)",
+        "catch(v)",
+        "pick up(v)",
+        "hear(v)",
+        "receive(v)",
+        "hallucinate(v)",
+        "spy(v)",
+        "sight(v)",
+        "divine(v)",
+        "listen(v)",
+        "taste(v)",
+        "feel(v)",
+        "sense(v)",
+        "see through(v)",
+        "find(v)",
+        "touch(v)",
+        "dream(v)",
+        "hurt(v)",
+        "ache(v)",
+        "suffer(v)",
+        "taste(n)",
+        "gustation(n)",
+        "sense of taste(n)",
+        "gustatory modality(n)",
+        "hearing(n)",
+        "audition(n)",
+        "auditory sense(n)",
+        "sense of hearing(n)",
+        "auditory modality(n)",
+        "somatosense(n)",
+        "sight(n)",
+        "vision(n)",
+        "visual sense(n)",
+        "visual modality(n)",
+        "touch(n)",
+        "sense of touch(n)",
+        "skin senses(n)",
+        "touch modality(n)",
+        "cutaneous senses(n)",
+        "lipreading(n)",
+        "look(n)",
+        "looking(n)",
+        "looking at(n)",
+        "listening(n)",
+        "tasting(n)",
+        "malodor(n)",
+        "malodour(n)",
+        "stench(n)",
+        "stink(n)",
+        "reek(n)",
+        "fetor(n)",
+        "foetor(n)",
+        "mephitis(n)",
+        "acridity(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "ache",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "hurt.v.06"
+        }
+      ],
+      "definition": "feel physical pain"
+    },
+    {
+      "lemma": "acridity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "smell.n.01",
+          "via_synset": "acridity.n.01"
+        }
+      ],
+      "definition": "having an acrid smell"
+    },
+    {
+      "lemma": "apperceive",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "apperceive.v.01"
+        }
+      ],
+      "definition": "perceive in terms of a past experience"
+    },
+    {
+      "lemma": "aroma",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aroma.n.02",
+          "via_synset": "aroma.n.02"
+        }
+      ],
+      "definition": "a distinctive odor that is pleasant"
+    },
+    {
+      "lemma": "aromatic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aroma.n.02",
+          "via_synset": "aromatic.s.01"
+        }
+      ],
+      "definition": "having a strong pleasant odor; - Jean Stafford"
+    },
+    {
+      "lemma": "aromatise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aroma.n.02",
+          "via_synset": "perfume.v.01"
+        }
+      ],
+      "definition": "fill or impregnate with an odor"
+    },
+    {
+      "lemma": "aromatize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aroma.n.02",
+          "via_synset": "perfume.v.01"
+        }
+      ],
+      "definition": "fill or impregnate with an odor"
+    },
+    {
+      "lemma": "audition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "modality.n.03",
+          "via_synset": "hearing.n.06"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "exteroception.n.01",
+          "via_synset": "hearing.n.06"
+        }
+      ],
+      "definition": "the ability to hear; the auditory faculty"
+    },
+    {
+      "lemma": "auditory modality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "modality.n.03",
+          "via_synset": "hearing.n.06"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "exteroception.n.01",
+          "via_synset": "hearing.n.06"
+        }
+      ],
+      "definition": "the ability to hear; the auditory faculty"
+    },
+    {
+      "lemma": "auditory sense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "modality.n.03",
+          "via_synset": "hearing.n.06"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "exteroception.n.01",
+          "via_synset": "hearing.n.06"
+        }
+      ],
+      "definition": "the ability to hear; the auditory faculty"
+    },
+    {
+      "lemma": "catch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "catch.v.02"
+        }
+      ],
+      "definition": "perceive with the senses quickly, suddenly, or momentarily"
+    },
+    {
+      "lemma": "comprehend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "smell.v.01",
+          "via_synset": "perceive.v.01"
+        }
+      ],
+      "definition": "to become aware of through the senses"
+    },
+    {
+      "lemma": "cutaneous senses",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "exteroception.n.01",
+          "via_synset": "touch.n.02"
+        }
+      ],
+      "definition": "the faculty by which external objects or forces are perceived through contact with the body (especially the hands)"
+    },
+    {
+      "lemma": "divine",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "divine.v.01"
+        }
+      ],
+      "definition": "perceive intuitively or through some inexplicable perceptive powers"
+    },
+    {
+      "lemma": "dream",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "dream.v.02"
+        }
+      ],
+      "definition": "experience while sleeping"
+    },
+    {
+      "lemma": "exteroception",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "smell.n.04",
+          "via_synset": "exteroception.n.01"
+        }
+      ],
+      "definition": "sensitivity to stimuli originating outside of the body"
+    },
+    {
+      "lemma": "feel",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "feel.v.03"
+        }
+      ],
+      "definition": "perceive by a physical sensation, e.g., coming from the skin or muscles"
+    },
+    {
+      "lemma": "fetor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "smell.n.01",
+          "via_synset": "malodor.n.01"
+        }
+      ],
+      "definition": "a distinctive odor that is offensively unpleasant"
+    },
+    {
+      "lemma": "find",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "find.v.13"
+        }
+      ],
+      "definition": "perceive oneself to be in a certain condition or place"
+    },
+    {
+      "lemma": "foetor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "smell.n.01",
+          "via_synset": "malodor.n.01"
+        }
+      ],
+      "definition": "a distinctive odor that is offensively unpleasant"
+    },
+    {
+      "lemma": "fragrance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aroma.n.02",
+          "via_synset": "aroma.n.02"
+        }
+      ],
+      "definition": "a distinctive odor that is pleasant"
+    },
+    {
+      "lemma": "fragrant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aroma.n.02",
+          "via_synset": "fragrant.a.01"
+        }
+      ],
+      "definition": "pleasant-smelling"
+    },
+    {
+      "lemma": "get a noseful",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "smell.v.01",
+          "via_synset": "get_a_noseful.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "smell.v.01",
+          "via_synset": "get_a_noseful.v.01"
+        }
+      ],
+      "definition": "smell strongly and intensely"
+    },
+    {
+      "lemma": "get a whiff",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "smell.v.01",
+          "via_synset": "get_a_noseful.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "smell.v.01",
+          "via_synset": "get_a_noseful.v.01"
+        }
+      ],
+      "definition": "smell strongly and intensely"
+    },
+    {
+      "lemma": "gustation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "modality.n.03",
+          "via_synset": "taste.n.06"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "exteroception.n.01",
+          "via_synset": "taste.n.06"
+        }
+      ],
+      "definition": "the faculty of distinguishing sweet, sour, bitter, and salty properties in the mouth"
+    },
+    {
+      "lemma": "gustatory modality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "modality.n.03",
+          "via_synset": "taste.n.06"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "exteroception.n.01",
+          "via_synset": "taste.n.06"
+        }
+      ],
+      "definition": "the faculty of distinguishing sweet, sour, bitter, and salty properties in the mouth"
+    },
+    {
+      "lemma": "hallucinate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "hallucinate.v.01"
+        }
+      ],
+      "definition": "perceive what is not there; have illusions"
+    },
+    {
+      "lemma": "hear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "hear.v.01"
+        }
+      ],
+      "definition": "perceive (sound) via the auditory sense"
+    },
+    {
+      "lemma": "hearing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "modality.n.03",
+          "via_synset": "hearing.n.06"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "exteroception.n.01",
+          "via_synset": "hearing.n.06"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensing.n.02",
+          "via_synset": "listening.n.01"
+        }
+      ],
+      "definition": "the ability to hear; the auditory faculty"
+    },
+    {
+      "lemma": "hurt",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "hurt.v.06"
+        }
+      ],
+      "definition": "feel physical pain"
+    },
+    {
+      "lemma": "incense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "aroma.n.02",
+          "via_synset": "incense.n.02"
+        }
+      ],
+      "definition": "the pleasing scent produced when incense is burned"
+    },
+    {
+      "lemma": "incense",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "incense.n.02",
+          "via_synset": "cense.v.01"
+        }
+      ],
+      "definition": "perfume especially with a censer"
+    },
+    {
+      "lemma": "lipreading",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensing.n.02",
+          "via_synset": "lipreading.n.01"
+        }
+      ],
+      "definition": "perceiving what a person is saying by observing the movements of the lips"
+    },
+    {
+      "lemma": "listen",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "listen.v.01"
+        }
+      ],
+      "definition": "hear with intention"
+    },
+    {
+      "lemma": "listening",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensing.n.02",
+          "via_synset": "listening.n.01"
+        }
+      ],
+      "definition": "the act of hearing attentively"
+    },
+    {
+      "lemma": "look",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensing.n.02",
+          "via_synset": "look.n.02"
+        }
+      ],
+      "definition": "the act of directing the eyes toward something and perceiving it visually"
+    },
+    {
+      "lemma": "looking",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensing.n.02",
+          "via_synset": "look.n.02"
+        }
+      ],
+      "definition": "the act of directing the eyes toward something and perceiving it visually"
+    },
+    {
+      "lemma": "looking at",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensing.n.02",
+          "via_synset": "look.n.02"
+        }
+      ],
+      "definition": "the act of directing the eyes toward something and perceiving it visually"
+    },
+    {
+      "lemma": "malodor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "smell.n.01",
+          "via_synset": "malodor.n.01"
+        }
+      ],
+      "definition": "a distinctive odor that is offensively unpleasant"
+    },
+    {
+      "lemma": "malodour",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "smell.n.01",
+          "via_synset": "malodor.n.01"
+        }
+      ],
+      "definition": "a distinctive odor that is offensively unpleasant"
+    },
+    {
+      "lemma": "mephitis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "smell.n.01",
+          "via_synset": "malodor.n.01"
+        }
+      ],
+      "definition": "a distinctive odor that is offensively unpleasant"
+    },
+    {
+      "lemma": "misperceive",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "misperceive.v.01"
+        }
+      ],
+      "definition": "perceive incorrectly"
+    },
+    {
+      "lemma": "modality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "smell.n.04",
+          "via_synset": "modality.n.03"
+        }
+      ],
+      "definition": "a particular sense"
+    },
+    {
+      "lemma": "nose",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "smell.n.04",
+          "via_synset": "nose.n.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "scent.v.02",
+          "via_synset": "nose.n.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "scent.v.02",
+          "via_synset": "nose.n.01"
+        }
+      ],
+      "definition": "the sense of smell (especially in animals)"
+    },
+    {
+      "lemma": "nose",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "smell.v.01",
+          "via_synset": "scent.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "nose.n.06",
+          "via_synset": "scent.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "smell.v.01",
+          "via_synset": "scent.v.02"
+        }
+      ],
+      "definition": "catch the scent of; get wind of"
+    },
+    {
+      "lemma": "odor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "aroma.n.02",
+          "via_synset": "smell.n.01"
+        }
+      ],
+      "definition": "the sensation that results when olfactory receptors in the nose are stimulated by particular chemicals in gaseous form"
+    },
+    {
+      "lemma": "odour",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "aroma.n.02",
+          "via_synset": "smell.n.01"
+        }
+      ],
+      "definition": "the sensation that results when olfactory receptors in the nose are stimulated by particular chemicals in gaseous form"
+    },
+    {
+      "lemma": "olfaction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "smell.n.04",
+          "via_synset": "smell.n.04"
+        }
+      ],
+      "definition": "the faculty that enables us to distinguish scents"
+    },
+    {
+      "lemma": "olfactory modality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "smell.n.04",
+          "via_synset": "smell.n.04"
+        }
+      ],
+      "definition": "the faculty that enables us to distinguish scents"
+    },
+    {
+      "lemma": "olfactory perception",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "aroma.n.02",
+          "via_synset": "smell.n.01"
+        }
+      ],
+      "definition": "the sensation that results when olfactory receptors in the nose are stimulated by particular chemicals in gaseous form"
+    },
+    {
+      "lemma": "olfactory sensation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "aroma.n.02",
+          "via_synset": "smell.n.01"
+        }
+      ],
+      "definition": "the sensation that results when olfactory receptors in the nose are stimulated by particular chemicals in gaseous form"
+    },
+    {
+      "lemma": "perceive",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "smell.v.01",
+          "via_synset": "perceive.v.01"
+        }
+      ],
+      "definition": "to become aware of through the senses"
+    },
+    {
+      "lemma": "perception",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "smell.n.05",
+          "via_synset": "sensing.n.02"
+        }
+      ],
+      "definition": "becoming aware of something via the senses"
+    },
+    {
+      "lemma": "perfume",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aroma.n.02",
+          "via_synset": "aroma.n.02"
+        }
+      ],
+      "definition": "a distinctive odor that is pleasant"
+    },
+    {
+      "lemma": "perfume",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aroma.n.02",
+          "via_synset": "perfume.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aroma.n.02",
+          "via_synset": "perfume.v.01"
+        }
+      ],
+      "definition": "apply perfume to"
+    },
+    {
+      "lemma": "pick up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "catch.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "pick_up.v.09"
+        }
+      ],
+      "definition": "perceive with the senses quickly, suddenly, or momentarily"
+    },
+    {
+      "lemma": "receive",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "pick_up.v.09"
+        }
+      ],
+      "definition": "register (perceptual input)"
+    },
+    {
+      "lemma": "reek",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "smell.n.01",
+          "via_synset": "malodor.n.01"
+        }
+      ],
+      "definition": "a distinctive odor that is offensively unpleasant"
+    },
+    {
+      "lemma": "scent",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aroma.n.02",
+          "via_synset": "aroma.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "scent.v.02",
+          "via_synset": "olfactory_property.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "scent.v.02",
+          "via_synset": "scent.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "smell.n.01",
+          "via_synset": "scent.n.02"
+        }
+      ],
+      "definition": "a distinctive odor that is pleasant"
+    },
+    {
+      "lemma": "scent",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "smell.v.01",
+          "via_synset": "scent.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aroma.n.02",
+          "via_synset": "perfume.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aroma.n.02",
+          "via_synset": "odorize.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "smell.v.01",
+          "via_synset": "scent.v.02"
+        }
+      ],
+      "definition": "catch the scent of; get wind of"
+    },
+    {
+      "lemma": "see",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "see.v.01"
+        }
+      ],
+      "definition": "perceive by sight or have the power to perceive by sight"
+    },
+    {
+      "lemma": "see through",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "see_through.v.02"
+        }
+      ],
+      "definition": "perceive the true nature of"
+    },
+    {
+      "lemma": "sense",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "feel.v.03"
+        }
+      ],
+      "definition": "perceive by a physical sensation, e.g., coming from the skin or muscles"
+    },
+    {
+      "lemma": "sense modality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "smell.n.04",
+          "via_synset": "modality.n.03"
+        }
+      ],
+      "definition": "a particular sense"
+    },
+    {
+      "lemma": "sense of hearing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "modality.n.03",
+          "via_synset": "hearing.n.06"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "exteroception.n.01",
+          "via_synset": "hearing.n.06"
+        }
+      ],
+      "definition": "the ability to hear; the auditory faculty"
+    },
+    {
+      "lemma": "sense of smell",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "smell.n.04",
+          "via_synset": "smell.n.04"
+        }
+      ],
+      "definition": "the faculty that enables us to distinguish scents"
+    },
+    {
+      "lemma": "sense of taste",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "modality.n.03",
+          "via_synset": "taste.n.06"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "exteroception.n.01",
+          "via_synset": "taste.n.06"
+        }
+      ],
+      "definition": "the faculty of distinguishing sweet, sour, bitter, and salty properties in the mouth"
+    },
+    {
+      "lemma": "sense of touch",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "exteroception.n.01",
+          "via_synset": "touch.n.02"
+        }
+      ],
+      "definition": "the faculty by which external objects or forces are perceived through contact with the body (especially the hands)"
+    },
+    {
+      "lemma": "sensing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "smell.n.05",
+          "via_synset": "sensing.n.02"
+        }
+      ],
+      "definition": "becoming aware of something via the senses"
+    },
+    {
+      "lemma": "sensory system",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "smell.n.04",
+          "via_synset": "modality.n.03"
+        }
+      ],
+      "definition": "a particular sense"
+    },
+    {
+      "lemma": "sight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "modality.n.03",
+          "via_synset": "sight.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "exteroception.n.01",
+          "via_synset": "sight.n.03"
+        }
+      ],
+      "definition": "the ability to see; the visual faculty"
+    },
+    {
+      "lemma": "sight",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "spy.v.03"
+        }
+      ],
+      "definition": "catch sight of; to perceive with the eyes"
+    },
+    {
+      "lemma": "skin senses",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "exteroception.n.01",
+          "via_synset": "touch.n.02"
+        }
+      ],
+      "definition": "the faculty by which external objects or forces are perceived through contact with the body (especially the hands)"
+    },
+    {
+      "lemma": "smell",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "smell.n.04",
+          "via_synset": "smell.n.04"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "smell.n.05",
+          "via_synset": "smell.n.05"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sniff.n.01",
+          "via_synset": "smell.n.05"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "aroma.n.02",
+          "via_synset": "smell.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "smell.v.01",
+          "via_synset": "smell.n.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "smell.v.01",
+          "via_synset": "smell.n.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "smell.v.01",
+          "via_synset": "olfactory_property.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "smell.v.01",
+          "via_synset": "smell.n.01"
+        }
+      ],
+      "definition": "the faculty that enables us to distinguish scents"
+    },
+    {
+      "lemma": "smell",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "smell.v.01",
+          "via_synset": "smell.v.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sniff.v.01",
+          "via_synset": "smell.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "smell.n.04",
+          "via_synset": "smell.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "smell.n.04",
+          "via_synset": "smell.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "smell.n.05",
+          "via_synset": "smell.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "smell.n.05",
+          "via_synset": "smell.v.01"
+        }
+      ],
+      "definition": "inhale the odor of; perceive by the olfactory sense"
+    },
+    {
+      "lemma": "smelling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "smell.n.05",
+          "via_synset": "smell.n.05"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sniff.n.01",
+          "via_synset": "smell.n.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "smell.v.01",
+          "via_synset": "smell.n.05"
+        }
+      ],
+      "definition": "the act of perceiving the odor of something"
+    },
+    {
+      "lemma": "sniff",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sniff.n.01",
+          "via_synset": "sniff.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "smell.n.05",
+          "via_synset": "sniff.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sniff.v.01",
+          "via_synset": "sniff.n.01"
+        }
+      ],
+      "definition": "sensing an odor by inhaling through the nose"
+    },
+    {
+      "lemma": "sniff",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sniff.v.01",
+          "via_synset": "sniff.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "smell.v.01",
+          "via_synset": "sniff.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sniff.n.01",
+          "via_synset": "sniff.v.01"
+        }
+      ],
+      "definition": "perceive by inhaling through the nose"
+    },
+    {
+      "lemma": "sniffer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sniff.v.01",
+          "via_synset": "sniffer.n.01"
+        }
+      ],
+      "definition": "a person who sniffs"
+    },
+    {
+      "lemma": "snuff",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sniff.n.01",
+          "via_synset": "sniff.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "smell.n.05",
+          "via_synset": "sniff.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "snuff.v.01",
+          "via_synset": "sniff.n.01"
+        }
+      ],
+      "definition": "sensing an odor by inhaling through the nose"
+    },
+    {
+      "lemma": "snuff",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "smell.v.01",
+          "via_synset": "snuff.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sniff.n.01",
+          "via_synset": "snuff.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sniff.n.01",
+          "via_synset": "snuff.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "smell.v.01",
+          "via_synset": "snuff.v.01"
+        }
+      ],
+      "definition": "sniff or smell inquiringly"
+    },
+    {
+      "lemma": "snuffle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "smell.v.01",
+          "via_synset": "snuff.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "smell.v.01",
+          "via_synset": "snuff.v.01"
+        }
+      ],
+      "definition": "sniff or smell inquiringly"
+    },
+    {
+      "lemma": "somatosense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "modality.n.03",
+          "via_synset": "somatosense.n.01"
+        }
+      ],
+      "definition": "any of the sensory systems that mediate sensations of pressure and tickle and warmth and cold and vibration and limb position and limb movement and pain"
+    },
+    {
+      "lemma": "spy",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "spy.v.03"
+        }
+      ],
+      "definition": "catch sight of; to perceive with the eyes"
+    },
+    {
+      "lemma": "stench",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "smell.n.01",
+          "via_synset": "malodor.n.01"
+        }
+      ],
+      "definition": "a distinctive odor that is offensively unpleasant"
+    },
+    {
+      "lemma": "stink",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "smell.n.01",
+          "via_synset": "malodor.n.01"
+        }
+      ],
+      "definition": "a distinctive odor that is offensively unpleasant"
+    },
+    {
+      "lemma": "suffer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "hurt.v.06"
+        }
+      ],
+      "definition": "feel physical pain"
+    },
+    {
+      "lemma": "taste",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "modality.n.03",
+          "via_synset": "taste.n.06"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "exteroception.n.01",
+          "via_synset": "taste.n.06"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensing.n.02",
+          "via_synset": "taste.n.07"
+        }
+      ],
+      "definition": "the faculty of distinguishing sweet, sour, bitter, and salty properties in the mouth"
+    },
+    {
+      "lemma": "taste",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "taste.v.02"
+        }
+      ],
+      "definition": "perceive by the sense of taste"
+    },
+    {
+      "lemma": "tasting",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensing.n.02",
+          "via_synset": "taste.n.07"
+        }
+      ],
+      "definition": "a kind of sensing; distinguishing substances by means of the taste buds"
+    },
+    {
+      "lemma": "touch",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "exteroception.n.01",
+          "via_synset": "touch.n.02"
+        }
+      ],
+      "definition": "the faculty by which external objects or forces are perceived through contact with the body (especially the hands)"
+    },
+    {
+      "lemma": "touch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "touch.v.02"
+        }
+      ],
+      "definition": "perceive via the tactile sense"
+    },
+    {
+      "lemma": "touch modality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "exteroception.n.01",
+          "via_synset": "touch.n.02"
+        }
+      ],
+      "definition": "the faculty by which external objects or forces are perceived through contact with the body (especially the hands)"
+    },
+    {
+      "lemma": "vision",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "modality.n.03",
+          "via_synset": "sight.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "exteroception.n.01",
+          "via_synset": "sight.n.03"
+        }
+      ],
+      "definition": "the ability to see; the visual faculty"
+    },
+    {
+      "lemma": "visual modality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "modality.n.03",
+          "via_synset": "sight.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "exteroception.n.01",
+          "via_synset": "sight.n.03"
+        }
+      ],
+      "definition": "the ability to see; the visual faculty"
+    },
+    {
+      "lemma": "visual sense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "modality.n.03",
+          "via_synset": "sight.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "exteroception.n.01",
+          "via_synset": "sight.n.03"
+        }
+      ],
+      "definition": "the ability to see; the visual faculty"
+    },
+    {
+      "lemma": "whiff",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sniff.v.01",
+          "via_synset": "sniff.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "smell.v.01",
+          "via_synset": "sniff.v.01"
+        }
+      ],
+      "definition": "perceive by inhaling through the nose"
+    },
+    {
+      "lemma": "wind",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "smell.v.01",
+          "via_synset": "scent.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "smell.v.01",
+          "via_synset": "scent.v.02"
+        }
+      ],
+      "definition": "catch the scent of; get wind of"
+    }
+  ]
+}

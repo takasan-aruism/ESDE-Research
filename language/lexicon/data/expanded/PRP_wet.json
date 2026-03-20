@@ -1,0 +1,1761 @@
+{
+  "atom_id": "PRP.wet",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 111,
+  "pos_counts": {
+    "adj": 39,
+    "n": 16,
+    "v": 56
+  },
+  "source_counts": {
+    "0_seed": 14,
+    "6_derivational": 15,
+    "7_similar_to": 43,
+    "2_hypernym_d1": 24,
+    "10_sibling": 35
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 13,
+      "words": [
+        "wet(adj)",
+        "moisture(n)",
+        "wet(n)",
+        "wet(v)",
+        "damp(adj)",
+        "dampish(adj)",
+        "moist(adj)",
+        "muffle(v)",
+        "mute(v)",
+        "dull(v)",
+        "damp(v)",
+        "dampen(v)",
+        "tone down(v)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 24,
+      "words": [
+        "wetness(n)",
+        "make(v)",
+        "urinate(v)",
+        "piddle(v)",
+        "puddle(v)",
+        "micturate(v)",
+        "piss(v)",
+        "pee(v)",
+        "pee-pee(v)",
+        "make water(v)",
+        "relieve oneself(v)",
+        "take a leak(v)",
+        "spend a penny(v)",
+        "wee(v)",
+        "wee-wee(v)",
+        "pass water(v)",
+        "soften(v)",
+        "control(v)",
+        "hold in(v)",
+        "hold(v)",
+        "contain(v)",
+        "check(v)",
+        "curb(v)",
+        "moderate(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 10,
+      "words": [
+        "damp(n)",
+        "dampness(n)",
+        "moistness(n)",
+        "muffler(n)",
+        "mute(n)",
+        "damper(n)",
+        "moisten(v)",
+        "moisturize(v)",
+        "moisturise(v)",
+        "wetter(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 35,
+      "words": [
+        "steaming(adj)",
+        "steamy(adj)",
+        "undried(adj)",
+        "clammy(adj)",
+        "dank(adj)",
+        "bedewed(adj)",
+        "dewy(adj)",
+        "showery(adj)",
+        "rainy(adj)",
+        "reeking(adj)",
+        "watery(adj)",
+        "boggy(adj)",
+        "marshy(adj)",
+        "miry(adj)",
+        "mucky(adj)",
+        "muddy(adj)",
+        "quaggy(adj)",
+        "sloppy(adj)",
+        "sloughy(adj)",
+        "soggy(adj)",
+        "squashy(adj)",
+        "swampy(adj)",
+        "waterlogged(adj)",
+        "tacky(adj)",
+        "humid(adj)",
+        "besprent(adj)",
+        "washed(adj)",
+        "drippy(adj)",
+        "drizzly(adj)",
+        "sticky(adj)",
+        "sodden(adj)",
+        "soppy(adj)",
+        "muggy(adj)",
+        "misty(adj)",
+        "rheumy(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 29,
+      "words": [
+        "wateriness(n)",
+        "muddiness(n)",
+        "sloppiness(n)",
+        "humidity(n)",
+        "humidness(n)",
+        "sogginess(n)",
+        "stale(v)",
+        "thermostat(v)",
+        "train(v)",
+        "mortify(v)",
+        "subdue(v)",
+        "crucify(v)",
+        "catch(v)",
+        "countercheck(v)",
+        "counteract(v)",
+        "bate(v)",
+        "restrict(v)",
+        "restrain(v)",
+        "trammel(v)",
+        "limit(v)",
+        "bound(v)",
+        "confine(v)",
+        "throttle(v)",
+        "deny(v)",
+        "abnegate(v)",
+        "suppress(v)",
+        "stamp down(v)",
+        "inhibit(v)",
+        "conquer(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "abnegate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "deny.v.05"
+        }
+      ],
+      "definition": "deny oneself (something); restrain, especially from indulging in some pleasure"
+    },
+    {
+      "lemma": "bate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "bate.v.01"
+        }
+      ],
+      "definition": "moderate or restrain; lessen the force of"
+    },
+    {
+      "lemma": "bedewed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "bedewed.s.01"
+        }
+      ],
+      "definition": "wet with dew"
+    },
+    {
+      "lemma": "besprent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "besprent.s.01"
+        }
+      ],
+      "definition": "sprinkled over"
+    },
+    {
+      "lemma": "boggy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "boggy.s.01"
+        }
+      ],
+      "definition": "(of soil) soft and watery"
+    },
+    {
+      "lemma": "bound",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "restrict.v.03"
+        }
+      ],
+      "definition": "place limits on (extent or access)"
+    },
+    {
+      "lemma": "catch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "catch.v.13"
+        }
+      ],
+      "definition": "check oneself during an action"
+    },
+    {
+      "lemma": "check",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "damp.v.02",
+          "via_synset": "control.v.02"
+        }
+      ],
+      "definition": "lessen the intensity of; temper; hold in restraint; hold or keep within limits"
+    },
+    {
+      "lemma": "clammy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "clammy.s.01"
+        }
+      ],
+      "definition": "unpleasantly cool and humid"
+    },
+    {
+      "lemma": "confine",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "restrict.v.03"
+        }
+      ],
+      "definition": "place limits on (extent or access)"
+    },
+    {
+      "lemma": "conquer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "suppress.v.01"
+        }
+      ],
+      "definition": "to put down by force or authority"
+    },
+    {
+      "lemma": "contain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "damp.v.02",
+          "via_synset": "control.v.02"
+        }
+      ],
+      "definition": "lessen the intensity of; temper; hold in restraint; hold or keep within limits"
+    },
+    {
+      "lemma": "control",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "damp.v.02",
+          "via_synset": "control.v.02"
+        }
+      ],
+      "definition": "lessen the intensity of; temper; hold in restraint; hold or keep within limits"
+    },
+    {
+      "lemma": "counteract",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "countercheck.v.01"
+        }
+      ],
+      "definition": "oppose or check by a counteraction"
+    },
+    {
+      "lemma": "countercheck",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "countercheck.v.01"
+        }
+      ],
+      "definition": "oppose or check by a counteraction"
+    },
+    {
+      "lemma": "crucify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "mortify.v.02"
+        }
+      ],
+      "definition": "hold within limits and control"
+    },
+    {
+      "lemma": "curb",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "damp.v.02",
+          "via_synset": "control.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "suppress.v.01"
+        }
+      ],
+      "definition": "lessen the intensity of; temper; hold in restraint; hold or keep within limits"
+    },
+    {
+      "lemma": "damp",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "damp.s.01",
+          "via_synset": "damp.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "damp.s.01"
+        }
+      ],
+      "definition": "slightly wet"
+    },
+    {
+      "lemma": "damp",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "damp.s.01",
+          "via_synset": "damp.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wetness.n.01",
+          "via_synset": "damp.n.01"
+        }
+      ],
+      "definition": "a slight wetness"
+    },
+    {
+      "lemma": "damp",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "muffle.v.02",
+          "via_synset": "muffle.v.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "damp.v.02",
+          "via_synset": "damp.v.02"
+        }
+      ],
+      "definition": "deaden (a sound or noise), especially by wrapping"
+    },
+    {
+      "lemma": "dampen",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "muffle.v.02",
+          "via_synset": "muffle.v.02"
+        }
+      ],
+      "definition": "deaden (a sound or noise), especially by wrapping"
+    },
+    {
+      "lemma": "damper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "muffle.v.02",
+          "via_synset": "damper.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "damp.v.02",
+          "via_synset": "damper.n.03"
+        }
+      ],
+      "definition": "a device that decreases the amplitude of electronic, mechanical, acoustical, or aerodynamic oscillations"
+    },
+    {
+      "lemma": "dampish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "damp.s.01",
+          "via_synset": "damp.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "damp.s.01"
+        }
+      ],
+      "definition": "slightly wet"
+    },
+    {
+      "lemma": "dampness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "damp.s.01",
+          "via_synset": "damp.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wetness.n.01",
+          "via_synset": "damp.n.01"
+        }
+      ],
+      "definition": "a slight wetness"
+    },
+    {
+      "lemma": "dank",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "clammy.s.01"
+        }
+      ],
+      "definition": "unpleasantly cool and humid"
+    },
+    {
+      "lemma": "deny",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "deny.v.05"
+        }
+      ],
+      "definition": "deny oneself (something); restrain, especially from indulging in some pleasure"
+    },
+    {
+      "lemma": "dewy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "bedewed.s.01"
+        }
+      ],
+      "definition": "wet with dew"
+    },
+    {
+      "lemma": "drippy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "drippy.s.01"
+        }
+      ],
+      "definition": "wet with light rain"
+    },
+    {
+      "lemma": "drizzly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "drippy.s.01"
+        }
+      ],
+      "definition": "wet with light rain"
+    },
+    {
+      "lemma": "dull",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "muffle.v.02",
+          "via_synset": "muffle.v.02"
+        }
+      ],
+      "definition": "deaden (a sound or noise), especially by wrapping"
+    },
+    {
+      "lemma": "hold",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "damp.v.02",
+          "via_synset": "control.v.02"
+        }
+      ],
+      "definition": "lessen the intensity of; temper; hold in restraint; hold or keep within limits"
+    },
+    {
+      "lemma": "hold in",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "damp.v.02",
+          "via_synset": "control.v.02"
+        }
+      ],
+      "definition": "lessen the intensity of; temper; hold in restraint; hold or keep within limits"
+    },
+    {
+      "lemma": "humid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "humid.s.01"
+        }
+      ],
+      "definition": "containing or characterized by a great deal of water vapor"
+    },
+    {
+      "lemma": "humidity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wetness.n.01",
+          "via_synset": "humidity.n.01"
+        }
+      ],
+      "definition": "wetness in the atmosphere"
+    },
+    {
+      "lemma": "humidness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wetness.n.01",
+          "via_synset": "humidity.n.01"
+        }
+      ],
+      "definition": "wetness in the atmosphere"
+    },
+    {
+      "lemma": "inhibit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "suppress.v.01"
+        }
+      ],
+      "definition": "to put down by force or authority"
+    },
+    {
+      "lemma": "limit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "restrict.v.03"
+        }
+      ],
+      "definition": "place limits on (extent or access)"
+    },
+    {
+      "lemma": "make",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wet.v.02",
+          "via_synset": "make.v.49"
+        }
+      ],
+      "definition": "eliminate urine"
+    },
+    {
+      "lemma": "make water",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wet.v.02",
+          "via_synset": "make.v.49"
+        }
+      ],
+      "definition": "eliminate urine"
+    },
+    {
+      "lemma": "marshy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "boggy.s.01"
+        }
+      ],
+      "definition": "(of soil) soft and watery"
+    },
+    {
+      "lemma": "micturate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wet.v.02",
+          "via_synset": "make.v.49"
+        }
+      ],
+      "definition": "eliminate urine"
+    },
+    {
+      "lemma": "miry",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "boggy.s.01"
+        }
+      ],
+      "definition": "(of soil) soft and watery"
+    },
+    {
+      "lemma": "misty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "misty.s.02"
+        }
+      ],
+      "definition": "wet with mist"
+    },
+    {
+      "lemma": "moderate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "damp.v.02",
+          "via_synset": "control.v.02"
+        }
+      ],
+      "definition": "lessen the intensity of; temper; hold in restraint; hold or keep within limits"
+    },
+    {
+      "lemma": "moist",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "damp.s.01",
+          "via_synset": "damp.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "damp.s.01"
+        }
+      ],
+      "definition": "slightly wet"
+    },
+    {
+      "lemma": "moisten",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "moisture.n.01",
+          "via_synset": "moisten.v.01"
+        }
+      ],
+      "definition": "make moist"
+    },
+    {
+      "lemma": "moistness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "damp.s.01",
+          "via_synset": "damp.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wetness.n.01",
+          "via_synset": "damp.n.01"
+        }
+      ],
+      "definition": "a slight wetness"
+    },
+    {
+      "lemma": "moisture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "moisture.n.01",
+          "via_synset": "moisture.n.01"
+        }
+      ],
+      "definition": "wetness caused by water"
+    },
+    {
+      "lemma": "moisturise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "moisture.n.01",
+          "via_synset": "humidify.v.01"
+        }
+      ],
+      "definition": "make (more) humid"
+    },
+    {
+      "lemma": "moisturize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "moisture.n.01",
+          "via_synset": "humidify.v.01"
+        }
+      ],
+      "definition": "make (more) humid"
+    },
+    {
+      "lemma": "mortify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "mortify.v.02"
+        }
+      ],
+      "definition": "hold within limits and control"
+    },
+    {
+      "lemma": "mucky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "boggy.s.01"
+        }
+      ],
+      "definition": "(of soil) soft and watery"
+    },
+    {
+      "lemma": "muddiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wetness.n.01",
+          "via_synset": "wateriness.n.01"
+        }
+      ],
+      "definition": "the wetness of ground that is covered or soaked with water"
+    },
+    {
+      "lemma": "muddy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "boggy.s.01"
+        }
+      ],
+      "definition": "(of soil) soft and watery"
+    },
+    {
+      "lemma": "muffle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "muffle.v.02",
+          "via_synset": "muffle.v.02"
+        }
+      ],
+      "definition": "deaden (a sound or noise), especially by wrapping"
+    },
+    {
+      "lemma": "muffler",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "muffle.v.02",
+          "via_synset": "damper.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "muffle.v.02",
+          "via_synset": "silencer.n.02"
+        }
+      ],
+      "definition": "a device that decreases the amplitude of electronic, mechanical, acoustical, or aerodynamic oscillations"
+    },
+    {
+      "lemma": "muggy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "muggy.s.01"
+        }
+      ],
+      "definition": "hot or warm and humid"
+    },
+    {
+      "lemma": "mute",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "muffle.v.02",
+          "via_synset": "mute.n.02"
+        }
+      ],
+      "definition": "a device used to soften the tone of a musical instrument"
+    },
+    {
+      "lemma": "mute",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "muffle.v.02",
+          "via_synset": "muffle.v.02"
+        }
+      ],
+      "definition": "deaden (a sound or noise), especially by wrapping"
+    },
+    {
+      "lemma": "pass water",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wet.v.02",
+          "via_synset": "make.v.49"
+        }
+      ],
+      "definition": "eliminate urine"
+    },
+    {
+      "lemma": "pee",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wet.v.02",
+          "via_synset": "make.v.49"
+        }
+      ],
+      "definition": "eliminate urine"
+    },
+    {
+      "lemma": "pee-pee",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wet.v.02",
+          "via_synset": "make.v.49"
+        }
+      ],
+      "definition": "eliminate urine"
+    },
+    {
+      "lemma": "piddle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wet.v.02",
+          "via_synset": "make.v.49"
+        }
+      ],
+      "definition": "eliminate urine"
+    },
+    {
+      "lemma": "piss",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wet.v.02",
+          "via_synset": "make.v.49"
+        }
+      ],
+      "definition": "eliminate urine"
+    },
+    {
+      "lemma": "puddle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wet.v.02",
+          "via_synset": "make.v.49"
+        }
+      ],
+      "definition": "eliminate urine"
+    },
+    {
+      "lemma": "quaggy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "boggy.s.01"
+        }
+      ],
+      "definition": "(of soil) soft and watery"
+    },
+    {
+      "lemma": "rainy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "showery.s.01"
+        }
+      ],
+      "definition": "(of weather) wet by periods of rain"
+    },
+    {
+      "lemma": "reeking",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "reeking.s.01"
+        }
+      ],
+      "definition": "wet with secreted or exuded moisture such as sweat or tears"
+    },
+    {
+      "lemma": "relieve oneself",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wet.v.02",
+          "via_synset": "make.v.49"
+        }
+      ],
+      "definition": "eliminate urine"
+    },
+    {
+      "lemma": "restrain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "restrict.v.03"
+        }
+      ],
+      "definition": "place limits on (extent or access)"
+    },
+    {
+      "lemma": "restrict",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "restrict.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "restrict.v.02"
+        }
+      ],
+      "definition": "place limits on (extent or access)"
+    },
+    {
+      "lemma": "rheumy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "rheumy.s.01"
+        }
+      ],
+      "definition": "moist, damp, wet (especially of air)"
+    },
+    {
+      "lemma": "showery",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "showery.s.01"
+        }
+      ],
+      "definition": "(of weather) wet by periods of rain"
+    },
+    {
+      "lemma": "sloppiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wetness.n.01",
+          "via_synset": "wateriness.n.01"
+        }
+      ],
+      "definition": "the wetness of ground that is covered or soaked with water"
+    },
+    {
+      "lemma": "sloppy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "boggy.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "sloppy.s.02"
+        }
+      ],
+      "definition": "(of soil) soft and watery"
+    },
+    {
+      "lemma": "sloughy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "boggy.s.01"
+        }
+      ],
+      "definition": "(of soil) soft and watery"
+    },
+    {
+      "lemma": "sodden",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "sodden.s.01"
+        }
+      ],
+      "definition": "wet through and through; thoroughly wet"
+    },
+    {
+      "lemma": "soften",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "muffle.v.02",
+          "via_synset": "soften.v.01"
+        }
+      ],
+      "definition": "make (images or sounds) soft or softer"
+    },
+    {
+      "lemma": "sogginess",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wetness.n.01",
+          "via_synset": "sogginess.n.01"
+        }
+      ],
+      "definition": "a heavy wetness"
+    },
+    {
+      "lemma": "soggy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "boggy.s.01"
+        }
+      ],
+      "definition": "(of soil) soft and watery"
+    },
+    {
+      "lemma": "soppy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "sodden.s.01"
+        }
+      ],
+      "definition": "wet through and through; thoroughly wet"
+    },
+    {
+      "lemma": "spend a penny",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wet.v.02",
+          "via_synset": "make.v.49"
+        }
+      ],
+      "definition": "eliminate urine"
+    },
+    {
+      "lemma": "squashy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "boggy.s.01"
+        }
+      ],
+      "definition": "(of soil) soft and watery"
+    },
+    {
+      "lemma": "stale",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "make.v.49",
+          "via_synset": "stale.v.01"
+        }
+      ],
+      "definition": "urinate, of cattle and horses"
+    },
+    {
+      "lemma": "stamp down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "suppress.v.01"
+        }
+      ],
+      "definition": "to put down by force or authority"
+    },
+    {
+      "lemma": "steaming",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "steaming.s.01"
+        }
+      ],
+      "definition": "filled with steam or emitting moisture in the form of vapor or mist"
+    },
+    {
+      "lemma": "steamy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "steaming.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "muggy.s.01"
+        }
+      ],
+      "definition": "filled with steam or emitting moisture in the form of vapor or mist"
+    },
+    {
+      "lemma": "sticky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "sticky.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "muggy.s.01"
+        }
+      ],
+      "definition": "moist as with undried perspiration and with clothing sticking to the body"
+    },
+    {
+      "lemma": "subdue",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "mortify.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "suppress.v.01"
+        }
+      ],
+      "definition": "hold within limits and control"
+    },
+    {
+      "lemma": "suppress",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "suppress.v.01"
+        }
+      ],
+      "definition": "to put down by force or authority"
+    },
+    {
+      "lemma": "swampy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "boggy.s.01"
+        }
+      ],
+      "definition": "(of soil) soft and watery"
+    },
+    {
+      "lemma": "tacky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "tacky.s.01"
+        }
+      ],
+      "definition": "(of a glutinous liquid such as paint) not completely dried and slightly sticky to the touch"
+    },
+    {
+      "lemma": "take a leak",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wet.v.02",
+          "via_synset": "make.v.49"
+        }
+      ],
+      "definition": "eliminate urine"
+    },
+    {
+      "lemma": "thermostat",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "thermostat.v.01"
+        }
+      ],
+      "definition": "control the temperature with a thermostat"
+    },
+    {
+      "lemma": "throttle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "restrict.v.03"
+        }
+      ],
+      "definition": "place limits on (extent or access)"
+    },
+    {
+      "lemma": "tone down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "muffle.v.02",
+          "via_synset": "muffle.v.02"
+        }
+      ],
+      "definition": "deaden (a sound or noise), especially by wrapping"
+    },
+    {
+      "lemma": "train",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "train.v.09"
+        }
+      ],
+      "definition": "cause to grow in a certain way by tying and pruning it"
+    },
+    {
+      "lemma": "trammel",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.v.02",
+          "via_synset": "restrict.v.03"
+        }
+      ],
+      "definition": "place limits on (extent or access)"
+    },
+    {
+      "lemma": "undried",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "undried.s.01"
+        }
+      ],
+      "definition": "still wet or moist"
+    },
+    {
+      "lemma": "urinate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wet.v.02",
+          "via_synset": "make.v.49"
+        }
+      ],
+      "definition": "eliminate urine"
+    },
+    {
+      "lemma": "washed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "washed.s.02"
+        }
+      ],
+      "definition": "wet as from washing; sometimes used in combination"
+    },
+    {
+      "lemma": "wateriness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wetness.n.01",
+          "via_synset": "wateriness.n.01"
+        }
+      ],
+      "definition": "the wetness of ground that is covered or soaked with water"
+    },
+    {
+      "lemma": "waterlogged",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "boggy.s.01"
+        }
+      ],
+      "definition": "(of soil) soft and watery"
+    },
+    {
+      "lemma": "watery",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "reeking.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wet.a.01",
+          "via_synset": "watery.s.01"
+        }
+      ],
+      "definition": "wet with secreted or exuded moisture such as sweat or tears"
+    },
+    {
+      "lemma": "wee",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wet.v.02",
+          "via_synset": "make.v.49"
+        }
+      ],
+      "definition": "eliminate urine"
+    },
+    {
+      "lemma": "wee-wee",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wet.v.02",
+          "via_synset": "make.v.49"
+        }
+      ],
+      "definition": "eliminate urine"
+    },
+    {
+      "lemma": "wet",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wet.a.01",
+          "via_synset": "wet.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "moisture.n.01",
+          "via_synset": "wet.a.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "damp.s.01",
+          "via_synset": "wet.a.01"
+        }
+      ],
+      "definition": "covered or soaked with a liquid such as water"
+    },
+    {
+      "lemma": "wet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "moisture.n.01",
+          "via_synset": "moisture.n.01"
+        }
+      ],
+      "definition": "wetness caused by water"
+    },
+    {
+      "lemma": "wet",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wet.v.02",
+          "via_synset": "wet.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "moisture.n.01",
+          "via_synset": "wet.v.01"
+        }
+      ],
+      "definition": "make one's bed or clothes wet by urinating"
+    },
+    {
+      "lemma": "wetness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "moisture.n.01",
+          "via_synset": "wetness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wet.a.01",
+          "via_synset": "wetness.n.01"
+        }
+      ],
+      "definition": "the condition of containing or being covered by a liquid (especially water)"
+    },
+    {
+      "lemma": "wetter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wet.v.02",
+          "via_synset": "bedwetter.n.01"
+        }
+      ],
+      "definition": "someone suffering from enuresis; someone who urinates while asleep in bed"
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "atom_id": "PER.untouched",
+  "category": "PER",
+  "seed_count": 6,
+  "total_keys": 16,
+  "pos_counts": {
+    "adj": 13,
+    "n": 3
+  },
+  "source_counts": {
+    "0_seed": 11,
+    "6_derivational": 4,
+    "7_similar_to": 5
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 8,
+      "words": [
+        "untouched(adj)",
+        "uninfluenced(adj)",
+        "unswayed(adj)",
+        "untasted(adj)",
+        "integral(adj)",
+        "entire(adj)",
+        "intact(adj)",
+        "pristine(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 3,
+      "words": [
+        "integrality(n)",
+        "entireness(n)",
+        "intactness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 5,
+      "words": [
+        "full(adj)",
+        "whole(adj)",
+        "pure(adj)",
+        "undamaged(adj)",
+        "unaffected(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "entire",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "integral.s.02",
+          "via_synset": "integral.s.02"
+        }
+      ],
+      "definition": "constituting the undiminished entirety; lacking nothing essential especially not damaged; - Bacon"
+    },
+    {
+      "lemma": "entireness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "integral.s.02",
+          "via_synset": "entirety.n.01"
+        }
+      ],
+      "definition": "the state of being total and complete"
+    },
+    {
+      "lemma": "full",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "untouched.s.01",
+          "via_synset": "full.a.01"
+        }
+      ],
+      "definition": "containing as much or as many as is possible or normal"
+    },
+    {
+      "lemma": "intact",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "integral.s.02",
+          "via_synset": "integral.s.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "intact.s.04",
+          "via_synset": "intact.s.04"
+        }
+      ],
+      "definition": "constituting the undiminished entirety; lacking nothing essential especially not damaged; - Bacon"
+    },
+    {
+      "lemma": "intactness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "integral.s.02",
+          "via_synset": "intactness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "intact.s.04",
+          "via_synset": "intactness.n.01"
+        }
+      ],
+      "definition": "the state of being unimpaired"
+    },
+    {
+      "lemma": "integral",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "integral.s.02",
+          "via_synset": "integral.s.02"
+        }
+      ],
+      "definition": "constituting the undiminished entirety; lacking nothing essential especially not damaged; - Bacon"
+    },
+    {
+      "lemma": "integrality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "integral.s.02",
+          "via_synset": "entirety.n.01"
+        }
+      ],
+      "definition": "the state of being total and complete"
+    },
+    {
+      "lemma": "pristine",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pristine.s.01",
+          "via_synset": "pristine.s.01"
+        }
+      ],
+      "definition": "completely free from dirt or contamination"
+    },
+    {
+      "lemma": "pure",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pristine.s.01",
+          "via_synset": "pure.a.01"
+        }
+      ],
+      "definition": "free of extraneous elements of any kind"
+    },
+    {
+      "lemma": "unaffected",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uninfluenced.s.01",
+          "via_synset": "unaffected.a.01"
+        }
+      ],
+      "definition": "undergoing no change when acted upon"
+    },
+    {
+      "lemma": "undamaged",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intact.s.04",
+          "via_synset": "undamaged.a.01"
+        }
+      ],
+      "definition": "not harmed or spoiled; sound"
+    },
+    {
+      "lemma": "uninfluenced",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "uninfluenced.s.01",
+          "via_synset": "uninfluenced.s.01"
+        }
+      ],
+      "definition": "not influenced or affected; - V.L.Parrington"
+    },
+    {
+      "lemma": "unswayed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "uninfluenced.s.01",
+          "via_synset": "uninfluenced.s.01"
+        }
+      ],
+      "definition": "not influenced or affected; - V.L.Parrington"
+    },
+    {
+      "lemma": "untasted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "untouched.s.01",
+          "via_synset": "untouched.s.01"
+        }
+      ],
+      "definition": "still full"
+    },
+    {
+      "lemma": "untouched",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "untouched.a.03",
+          "via_synset": "untouched.a.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "uninfluenced.s.01",
+          "via_synset": "uninfluenced.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "untouched.s.01",
+          "via_synset": "untouched.s.01"
+        }
+      ],
+      "definition": "not having come in contact"
+    },
+    {
+      "lemma": "whole",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "integral.s.02",
+          "via_synset": "whole.a.01"
+        }
+      ],
+      "definition": "including all components without exception; being one unit or constituting the full amount or extent or duration; complete"
+    }
+  ]
+}

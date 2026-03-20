@@ -1,0 +1,396 @@
+{
+  "atom": "FND.uninformed",
+  "category": "FND",
+  "status": "proposed",
+  "symmetric_pair": "FND.information",
+  "definition_en": "Lacking information or knowledge.",
+  "seed_synsets": [],
+  "core_pool": {
+    "rules": [
+      "0_seed",
+      "3_hyponym_d1",
+      "6_derivational",
+      "7_similar_to",
+      "9_antonym"
+    ],
+    "count": 30,
+    "words": [
+      {
+        "w": "clueless",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "totally uninformed about what is going on; not having even a clue from which to infer what is occurring",
+        "path_count": 2,
+        "sources": [
+          "0_seed",
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "ignorance",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "the lack of knowledge or education",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "ignorant",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "uneducated in general; lacking knowledge or sophistication",
+        "path_count": 3,
+        "sources": [
+          "0_seed",
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "ignorantness",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "ignorance (especially of orthodox beliefs)",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "illiterate",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "uneducated in the fundamentals of a given art or branch of learning; lacking knowledge of a specific field",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "incognizance",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "a lack of knowledge or recognition",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "incognizant",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "(often followed by `of') not aware",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "innocent",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "not knowledgeable about something specified",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "naive",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "lacking information or instruction",
+        "path_count": 2,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "nescience",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "ignorance (especially of orthodox beliefs)",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "nescient",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "uneducated in general; lacking knowledge or sophistication",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "newsless",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "not having or receiving news or information",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "oblivious",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "(followed by `to' or `of') lacking conscious awareness of",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "unacquainted",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "not knowledgeable about something specified",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "unadvised",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "having received no information",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "unaware",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "(often followed by `of') not aware",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "unawareness",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "unconsciousness resulting from lack of knowledge or attention",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "unconscious",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "(followed by `of') not knowing or perceiving; - Charles Dickens",
+        "path_count": 2,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "uneducated",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "not having a good education",
+        "path_count": 3,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "unenlightened",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "lacking information or instruction",
+        "path_count": 2,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "uninformed",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "not informed; lacking in knowledge or information",
+        "path_count": 2,
+        "sources": [
+          "0_seed",
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "uninstructed",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "lacking information or instruction",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "unknowing",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "unaware because of a lack of relevant information or knowledge",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "unknowledgeable",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "unaware because of a lack of relevant information or knowledge",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "unlearned",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "uneducated in general; lacking knowledge or sophistication",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "unlettered",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "uneducated in general; lacking knowledge or sophistication",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "unmindful",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "(followed by `to' or `of') lacking conscious awareness of",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "unread",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "not informed through reading; - V.L.Parrington",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "unsuspecting",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "(often followed by `of') not knowing or expecting; not thinking likely",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "unwitting",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "unaware because of a lack of relevant information or knowledge",
+        "path_count": 2,
+        "sources": [
+          "7_similar_to"
+        ]
+      }
+    ]
+  },
+  "deviation_pool": {
+    "rules": [
+      "10_sibling",
+      "11_pertainym",
+      "12_verb_group",
+      "2_hypernym_d1",
+      "4_hyponym_d2",
+      "5_hyponym_d3",
+      "8_also_see"
+    ],
+    "count": 3,
+    "words": [
+      {
+        "w": "asleep",
+        "pos": "adj",
+        "src": "8_also_see",
+        "definition": "in a state of sleep",
+        "path_count": 1,
+        "sources": [
+          "8_also_see"
+        ]
+      },
+      {
+        "w": "insensible",
+        "pos": "adj",
+        "src": "8_also_see",
+        "definition": "incapable of physical sensation",
+        "path_count": 1,
+        "sources": [
+          "8_also_see"
+        ]
+      },
+      {
+        "w": "naif",
+        "pos": "adj",
+        "src": "8_also_see",
+        "definition": "marked by or showing unaffected simplicity and lack of guile or worldly experience",
+        "path_count": 1,
+        "sources": [
+          "8_also_see"
+        ]
+      }
+    ]
+  },
+  "deviation_stats": {
+    "total_candidates": 33,
+    "core_count": 30,
+    "dev_count": 3,
+    "core_ratio": 0.909,
+    "dev_ratio": 0.091,
+    "dev_source_breakdown": {
+      "8_also_see": 3
+    },
+    "step_contributions": {
+      "0_seed": 9,
+      "2_hypernym_d1": 0,
+      "3_hyponym_d1": 0,
+      "4_hyponym_d2": 0,
+      "5_hyponym_d3": 0,
+      "6_derivational": 5,
+      "7_similar_to": 16,
+      "8_also_see": 3,
+      "9_antonym": 0,
+      "10_sibling": 0,
+      "11_pertainym": 0,
+      "12_verb_group": 0
+    }
+  },
+  "meta": {
+    "generator": "wn_lexicon_entry.py",
+    "version": "1.0.0",
+    "design": "3AI consolidated: Core/Deviation pool separation"
+  }
+}

@@ -1,0 +1,1637 @@
+{
+  "atom_id": "EMO.sorrow",
+  "category": "EMO",
+  "seed_count": 6,
+  "total_keys": 96,
+  "pos_counts": {
+    "n": 64,
+    "adj": 28,
+    "v": 4
+  },
+  "source_counts": {
+    "0_seed": 13,
+    "2_hypernym_d1": 6,
+    "10_sibling": 39,
+    "3_hyponym_d1": 17,
+    "6_derivational": 27,
+    "4_hyponym_d2": 12,
+    "5_hyponym_d3": 1,
+    "7_similar_to": 13,
+    "9_antonym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 9,
+      "words": [
+        "sorrow(n)",
+        "regret(n)",
+        "rue(n)",
+        "ruefulness(n)",
+        "grief(n)",
+        "sad(adj)",
+        "heartache(n)",
+        "heartbreak(n)",
+        "brokenheartedness(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 3,
+      "words": [
+        "sadness(n)",
+        "unhappiness(n)",
+        "negative stimulus(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 13,
+      "words": [
+        "broken heart(n)",
+        "mournfulness(n)",
+        "sorrowfulness(n)",
+        "ruthfulness(n)",
+        "self-pity(n)",
+        "compunction(n)",
+        "remorse(n)",
+        "self-reproach(n)",
+        "attrition(n)",
+        "contrition(n)",
+        "contriteness(n)",
+        "dolor(n)",
+        "dolour(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 10,
+      "words": [
+        "plaintiveness(n)",
+        "woe(n)",
+        "woefulness(n)",
+        "guilt(n)",
+        "guilty conscience(n)",
+        "guilt feelings(n)",
+        "guilt trip(n)",
+        "repentance(n)",
+        "penitence(n)",
+        "penance(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 1,
+      "words": [
+        "survivor guilt(n)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 19,
+      "words": [
+        "repentant(adj)",
+        "repent(v)",
+        "penitential(adj)",
+        "penitentiary(adj)",
+        "penitent(adj)",
+        "contrite(adj)",
+        "dolourous(adj)",
+        "dolorous(adj)",
+        "sorrow(v)",
+        "regret(v)",
+        "rue(v)",
+        "rueful(adj)",
+        "brokenhearted(adj)",
+        "woeful(adj)",
+        "mournful(adj)",
+        "sorrowful(adj)",
+        "ruthful(adj)",
+        "guilty(adj)",
+        "plaintive(adj)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 11,
+      "words": [
+        "heavyhearted(adj)",
+        "bittersweet(adj)",
+        "melancholy(adj)",
+        "melancholic(adj)",
+        "doleful(adj)",
+        "tragic(adj)",
+        "tragical(adj)",
+        "pensive(adj)",
+        "wistful(adj)",
+        "tragicomic(adj)",
+        "tragicomical(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "glad(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 29,
+      "words": [
+        "depression(n)",
+        "misery(n)",
+        "downheartedness(n)",
+        "dejectedness(n)",
+        "low-spiritedness(n)",
+        "lowness(n)",
+        "dispiritedness(n)",
+        "melancholy(n)",
+        "cheerlessness(n)",
+        "uncheerfulness(n)",
+        "heaviness(n)",
+        "forlornness(n)",
+        "loneliness(n)",
+        "desolation(n)",
+        "dolefulness(n)",
+        "weepiness(n)",
+        "tearfulness(n)",
+        "concern(n)",
+        "worry(n)",
+        "headache(n)",
+        "vexation(n)",
+        "annoyance(n)",
+        "bother(n)",
+        "botheration(n)",
+        "pain(n)",
+        "infliction(n)",
+        "pain in the neck(n)",
+        "pain in the ass(n)",
+        "aversive stimulus(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "annoyance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "negative_stimulus.n.01",
+          "via_synset": "annoyance.n.04"
+        }
+      ],
+      "definition": "something or someone that causes trouble; a source of unhappiness"
+    },
+    {
+      "lemma": "attrition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sorrow.n.02",
+          "via_synset": "attrition.n.03"
+        }
+      ],
+      "definition": "sorrow for sin arising from fear of damnation"
+    },
+    {
+      "lemma": "aversive stimulus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "negative_stimulus.n.01",
+          "via_synset": "aversive_stimulus.n.01"
+        }
+      ],
+      "definition": "any negative stimulus to which an organism will learn to make a response that avoids it"
+    },
+    {
+      "lemma": "bittersweet",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sad.a.01",
+          "via_synset": "bittersweet.s.01"
+        }
+      ],
+      "definition": "tinged with sadness"
+    },
+    {
+      "lemma": "bother",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "negative_stimulus.n.01",
+          "via_synset": "annoyance.n.04"
+        }
+      ],
+      "definition": "something or someone that causes trouble; a source of unhappiness"
+    },
+    {
+      "lemma": "botheration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "negative_stimulus.n.01",
+          "via_synset": "annoyance.n.04"
+        }
+      ],
+      "definition": "something or someone that causes trouble; a source of unhappiness"
+    },
+    {
+      "lemma": "broken heart",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sorrow.n.01",
+          "via_synset": "broken_heart.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sorrow.n.01",
+          "via_synset": "broken_heart.n.01"
+        }
+      ],
+      "definition": "devastating sorrow and despair"
+    },
+    {
+      "lemma": "brokenhearted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grief.n.01",
+          "via_synset": "brokenhearted.s.01"
+        }
+      ],
+      "definition": "full of sorrow"
+    },
+    {
+      "lemma": "brokenheartedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "grief.n.01",
+          "via_synset": "grief.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sorrow.n.01",
+          "via_synset": "grief.n.01"
+        }
+      ],
+      "definition": "intense sorrow caused by loss of a loved one (especially by death)"
+    },
+    {
+      "lemma": "cheerlessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "cheerlessness.n.01"
+        }
+      ],
+      "definition": "a feeling of dreary or pessimistic sadness"
+    },
+    {
+      "lemma": "compunction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sorrow.n.02",
+          "via_synset": "compunction.n.01"
+        }
+      ],
+      "definition": "a feeling of deep regret (usually for some misdeed)"
+    },
+    {
+      "lemma": "concern",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "negative_stimulus.n.01",
+          "via_synset": "concern.n.04"
+        }
+      ],
+      "definition": "something or someone that causes anxiety; a source of unhappiness"
+    },
+    {
+      "lemma": "contrite",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attrition.n.03",
+          "via_synset": "contrite.s.01"
+        }
+      ],
+      "definition": "feeling or expressing pain or sorrow for sins or offenses"
+    },
+    {
+      "lemma": "contriteness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sorrow.n.02",
+          "via_synset": "attrition.n.03"
+        }
+      ],
+      "definition": "sorrow for sin arising from fear of damnation"
+    },
+    {
+      "lemma": "contrition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sorrow.n.02",
+          "via_synset": "attrition.n.03"
+        }
+      ],
+      "definition": "sorrow for sin arising from fear of damnation"
+    },
+    {
+      "lemma": "dejectedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "downheartedness.n.01"
+        }
+      ],
+      "definition": "a feeling of low spirits"
+    },
+    {
+      "lemma": "depression",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "depression.n.04"
+        }
+      ],
+      "definition": "sad feelings of gloom and inadequacy"
+    },
+    {
+      "lemma": "desolation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "forlornness.n.01"
+        }
+      ],
+      "definition": "sadness resulting from being forsaken or abandoned"
+    },
+    {
+      "lemma": "dispiritedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "downheartedness.n.01"
+        }
+      ],
+      "definition": "a feeling of low spirits"
+    },
+    {
+      "lemma": "doleful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sad.a.01",
+          "via_synset": "doleful.s.01"
+        }
+      ],
+      "definition": "filled with or evoking sadness"
+    },
+    {
+      "lemma": "dolefulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "dolefulness.n.01"
+        }
+      ],
+      "definition": "sadness caused by grief or affliction"
+    },
+    {
+      "lemma": "dolor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "grief.n.01",
+          "via_synset": "dolor.n.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "grief.n.01",
+          "via_synset": "dolor.n.01"
+        }
+      ],
+      "definition": "(poetry) painful grief"
+    },
+    {
+      "lemma": "dolorous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dolor.n.01",
+          "via_synset": "dolorous.s.01"
+        }
+      ],
+      "definition": "showing sorrow"
+    },
+    {
+      "lemma": "dolour",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "grief.n.01",
+          "via_synset": "dolor.n.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "grief.n.01",
+          "via_synset": "dolor.n.01"
+        }
+      ],
+      "definition": "(poetry) painful grief"
+    },
+    {
+      "lemma": "dolourous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dolor.n.01",
+          "via_synset": "dolorous.s.01"
+        }
+      ],
+      "definition": "showing sorrow"
+    },
+    {
+      "lemma": "downheartedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "downheartedness.n.01"
+        }
+      ],
+      "definition": "a feeling of low spirits"
+    },
+    {
+      "lemma": "forlornness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "forlornness.n.01"
+        }
+      ],
+      "definition": "sadness resulting from being forsaken or abandoned"
+    },
+    {
+      "lemma": "glad",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "sad.a.01",
+          "via_synset": "glad.a.01"
+        }
+      ],
+      "definition": "showing or causing joy and pleasure; especially made happy"
+    },
+    {
+      "lemma": "grief",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "grief.n.02",
+          "via_synset": "grief.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "grief.n.01",
+          "via_synset": "grief.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sorrow.n.01",
+          "via_synset": "grief.n.01"
+        }
+      ],
+      "definition": "something that causes great unhappiness"
+    },
+    {
+      "lemma": "guilt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "compunction.n.01",
+          "via_synset": "guilt.n.02"
+        }
+      ],
+      "definition": "remorse caused by feeling responsible for some offense"
+    },
+    {
+      "lemma": "guilt feelings",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "compunction.n.01",
+          "via_synset": "guilt.n.02"
+        }
+      ],
+      "definition": "remorse caused by feeling responsible for some offense"
+    },
+    {
+      "lemma": "guilt trip",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "compunction.n.01",
+          "via_synset": "guilt.n.02"
+        }
+      ],
+      "definition": "remorse caused by feeling responsible for some offense"
+    },
+    {
+      "lemma": "guilty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "guilt.n.02",
+          "via_synset": "guilty.s.01"
+        }
+      ],
+      "definition": "showing a sense of guilt; ; - Eric Linklater"
+    },
+    {
+      "lemma": "guilty conscience",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "compunction.n.01",
+          "via_synset": "guilt.n.02"
+        }
+      ],
+      "definition": "remorse caused by feeling responsible for some offense"
+    },
+    {
+      "lemma": "headache",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "negative_stimulus.n.01",
+          "via_synset": "concern.n.04"
+        }
+      ],
+      "definition": "something or someone that causes anxiety; a source of unhappiness"
+    },
+    {
+      "lemma": "heartache",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "grief.n.01",
+          "via_synset": "grief.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sorrow.n.01",
+          "via_synset": "grief.n.01"
+        }
+      ],
+      "definition": "intense sorrow caused by loss of a loved one (especially by death)"
+    },
+    {
+      "lemma": "heartbreak",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "grief.n.01",
+          "via_synset": "grief.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sorrow.n.01",
+          "via_synset": "grief.n.01"
+        }
+      ],
+      "definition": "intense sorrow caused by loss of a loved one (especially by death)"
+    },
+    {
+      "lemma": "heaviness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "heaviness.n.02"
+        }
+      ],
+      "definition": "persisting sadness"
+    },
+    {
+      "lemma": "heavyhearted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sad.a.01",
+          "via_synset": "heavyhearted.s.01"
+        }
+      ],
+      "definition": "depressed"
+    },
+    {
+      "lemma": "infliction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "negative_stimulus.n.01",
+          "via_synset": "annoyance.n.04"
+        }
+      ],
+      "definition": "something or someone that causes trouble; a source of unhappiness"
+    },
+    {
+      "lemma": "loneliness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "forlornness.n.01"
+        }
+      ],
+      "definition": "sadness resulting from being forsaken or abandoned"
+    },
+    {
+      "lemma": "low-spiritedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "downheartedness.n.01"
+        }
+      ],
+      "definition": "a feeling of low spirits"
+    },
+    {
+      "lemma": "lowness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "downheartedness.n.01"
+        }
+      ],
+      "definition": "a feeling of low spirits"
+    },
+    {
+      "lemma": "melancholic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sad.a.01",
+          "via_synset": "melancholy.s.01"
+        }
+      ],
+      "definition": "characterized by or causing or expressing sadness"
+    },
+    {
+      "lemma": "melancholy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sad.a.01",
+          "via_synset": "melancholy.s.01"
+        }
+      ],
+      "definition": "characterized by or causing or expressing sadness"
+    },
+    {
+      "lemma": "melancholy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "melancholy.n.01"
+        }
+      ],
+      "definition": "a feeling of thoughtful sadness"
+    },
+    {
+      "lemma": "misery",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "misery.n.02"
+        }
+      ],
+      "definition": "a feeling of intense unhappiness"
+    },
+    {
+      "lemma": "mournful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mournfulness.n.01",
+          "via_synset": "mournful.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mournfulness.n.01",
+          "via_synset": "doleful.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sad.a.01",
+          "via_synset": "doleful.s.01"
+        }
+      ],
+      "definition": "expressing sorrow"
+    },
+    {
+      "lemma": "mournfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sorrow.n.01",
+          "via_synset": "mournfulness.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sorrow.n.01",
+          "via_synset": "mournfulness.n.01"
+        }
+      ],
+      "definition": "a state of gloomy sorrow"
+    },
+    {
+      "lemma": "negative stimulus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "grief.n.02",
+          "via_synset": "negative_stimulus.n.01"
+        }
+      ],
+      "definition": "a stimulus with undesirable consequences"
+    },
+    {
+      "lemma": "pain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "negative_stimulus.n.01",
+          "via_synset": "annoyance.n.04"
+        }
+      ],
+      "definition": "something or someone that causes trouble; a source of unhappiness"
+    },
+    {
+      "lemma": "pain in the ass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "negative_stimulus.n.01",
+          "via_synset": "annoyance.n.04"
+        }
+      ],
+      "definition": "something or someone that causes trouble; a source of unhappiness"
+    },
+    {
+      "lemma": "pain in the neck",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "negative_stimulus.n.01",
+          "via_synset": "annoyance.n.04"
+        }
+      ],
+      "definition": "something or someone that causes trouble; a source of unhappiness"
+    },
+    {
+      "lemma": "penance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "compunction.n.01",
+          "via_synset": "repentance.n.01"
+        }
+      ],
+      "definition": "remorse for your past conduct"
+    },
+    {
+      "lemma": "penitence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "compunction.n.01",
+          "via_synset": "repentance.n.01"
+        }
+      ],
+      "definition": "remorse for your past conduct"
+    },
+    {
+      "lemma": "penitent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "repentance.n.01",
+          "via_synset": "penitent.a.01"
+        }
+      ],
+      "definition": "feeling or expressing remorse for misdeeds"
+    },
+    {
+      "lemma": "penitential",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "repentance.n.01",
+          "via_synset": "penitential.s.01"
+        }
+      ],
+      "definition": "showing or constituting penance"
+    },
+    {
+      "lemma": "penitentiary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "repentance.n.01",
+          "via_synset": "penitentiary.s.01"
+        }
+      ],
+      "definition": "used for punishment or reform of criminals or wrongdoers"
+    },
+    {
+      "lemma": "pensive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sad.a.01",
+          "via_synset": "pensive.s.02"
+        }
+      ],
+      "definition": "showing pensive sadness"
+    },
+    {
+      "lemma": "plaintive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "plaintiveness.n.01",
+          "via_synset": "mournful.s.01"
+        }
+      ],
+      "definition": "expressing sorrow"
+    },
+    {
+      "lemma": "plaintiveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "mournfulness.n.01",
+          "via_synset": "plaintiveness.n.01"
+        }
+      ],
+      "definition": "expressing sorrowfulness"
+    },
+    {
+      "lemma": "regret",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sorrow.n.02",
+          "via_synset": "sorrow.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "sorrow.n.02"
+        }
+      ],
+      "definition": "sadness associated with some wrong done or some disappointment"
+    },
+    {
+      "lemma": "regret",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sorrow.n.02",
+          "via_synset": "regret.v.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sorrow.n.02",
+          "via_synset": "regret.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sorrow.n.02",
+          "via_synset": "repent.v.02"
+        }
+      ],
+      "definition": "express with regret"
+    },
+    {
+      "lemma": "remorse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sorrow.n.02",
+          "via_synset": "compunction.n.01"
+        }
+      ],
+      "definition": "a feeling of deep regret (usually for some misdeed)"
+    },
+    {
+      "lemma": "repent",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "repentance.n.01",
+          "via_synset": "repent.v.02"
+        }
+      ],
+      "definition": "feel remorse for; feel sorry for; be contrite about"
+    },
+    {
+      "lemma": "repentance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "compunction.n.01",
+          "via_synset": "repentance.n.01"
+        }
+      ],
+      "definition": "remorse for your past conduct"
+    },
+    {
+      "lemma": "repentant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "repentance.n.01",
+          "via_synset": "penitent.a.01"
+        }
+      ],
+      "definition": "feeling or expressing remorse for misdeeds"
+    },
+    {
+      "lemma": "rue",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sorrow.n.02",
+          "via_synset": "sorrow.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "sorrow.n.02"
+        }
+      ],
+      "definition": "sadness associated with some wrong done or some disappointment"
+    },
+    {
+      "lemma": "rue",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sorrow.n.02",
+          "via_synset": "repent.v.02"
+        }
+      ],
+      "definition": "feel remorse for; feel sorry for; be contrite about"
+    },
+    {
+      "lemma": "rueful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sorrow.n.02",
+          "via_synset": "contrite.s.01"
+        }
+      ],
+      "definition": "feeling or expressing pain or sorrow for sins or offenses"
+    },
+    {
+      "lemma": "ruefulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sorrow.n.02",
+          "via_synset": "sorrow.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "sorrow.n.02"
+        }
+      ],
+      "definition": "sadness associated with some wrong done or some disappointment"
+    },
+    {
+      "lemma": "ruthful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mournfulness.n.01",
+          "via_synset": "contrite.s.01"
+        }
+      ],
+      "definition": "feeling or expressing pain or sorrow for sins or offenses"
+    },
+    {
+      "lemma": "ruthfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sorrow.n.01",
+          "via_synset": "mournfulness.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sorrow.n.01",
+          "via_synset": "mournfulness.n.01"
+        }
+      ],
+      "definition": "a state of gloomy sorrow"
+    },
+    {
+      "lemma": "sad",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sad.a.01",
+          "via_synset": "sad.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sad.s.01",
+          "via_synset": "sad.s.01"
+        }
+      ],
+      "definition": "experiencing or showing sorrow or unhappiness; ; - Christina Rossetti"
+    },
+    {
+      "lemma": "sadness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sorrow.n.01",
+          "via_synset": "sadness.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sorrow.n.02",
+          "via_synset": "sadness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sad.a.01",
+          "via_synset": "sadness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sad.a.01",
+          "via_synset": "sadness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sad.s.01",
+          "via_synset": "gloominess.n.03"
+        }
+      ],
+      "definition": "emotions experienced when not in a state of well-being"
+    },
+    {
+      "lemma": "self-pity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sorrow.n.01",
+          "via_synset": "self-pity.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sorrow.n.01",
+          "via_synset": "self-pity.n.01"
+        }
+      ],
+      "definition": "a feeling of sorrow (often self-indulgent) over your own sufferings"
+    },
+    {
+      "lemma": "self-reproach",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sorrow.n.02",
+          "via_synset": "compunction.n.01"
+        }
+      ],
+      "definition": "a feeling of deep regret (usually for some misdeed)"
+    },
+    {
+      "lemma": "sorrow",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sorrow.n.01",
+          "via_synset": "sorrow.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sorrow.n.02",
+          "via_synset": "sorrow.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "grief.n.02",
+          "via_synset": "grief.n.02"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "grief.n.01",
+          "via_synset": "sorrow.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "sorrow.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "sorrow.n.01"
+        }
+      ],
+      "definition": "an emotion of great sadness associated with loss or bereavement"
+    },
+    {
+      "lemma": "sorrow",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sorrow.n.02",
+          "via_synset": "grieve.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grief.n.02",
+          "via_synset": "grieve.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sorrow.n.01",
+          "via_synset": "grieve.v.01"
+        }
+      ],
+      "definition": "feel grief"
+    },
+    {
+      "lemma": "sorrowful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mournfulness.n.01",
+          "via_synset": "sorrowful.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sad.s.01",
+          "via_synset": "sorrowful.a.01"
+        }
+      ],
+      "definition": "experiencing or marked by or expressing sorrow especially that associated with irreparable loss; ; ; ; - Proverbs 14:13"
+    },
+    {
+      "lemma": "sorrowfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sorrow.n.01",
+          "via_synset": "mournfulness.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sorrow.n.01",
+          "via_synset": "mournfulness.n.01"
+        }
+      ],
+      "definition": "a state of gloomy sorrow"
+    },
+    {
+      "lemma": "survivor guilt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "guilt.n.02",
+          "via_synset": "survivor_guilt.n.01"
+        }
+      ],
+      "definition": "a deep feeling of guilt often experienced by those who have survived some catastrophe that took the lives of many others; derives in part from a feeling that they did not do enough to save the others who perished and in part from feelings of being unworthy relative to those who died"
+    },
+    {
+      "lemma": "tearfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "weepiness.n.01"
+        }
+      ],
+      "definition": "sadness expressed by weeping"
+    },
+    {
+      "lemma": "tragic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sad.a.01",
+          "via_synset": "tragic.s.01"
+        }
+      ],
+      "definition": "very sad; especially involving grief or death or destruction"
+    },
+    {
+      "lemma": "tragical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sad.a.01",
+          "via_synset": "tragic.s.01"
+        }
+      ],
+      "definition": "very sad; especially involving grief or death or destruction"
+    },
+    {
+      "lemma": "tragicomic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sad.a.01",
+          "via_synset": "tragicomic.s.01"
+        }
+      ],
+      "definition": "manifesting both tragic and comic aspects; - B.R.Redman"
+    },
+    {
+      "lemma": "tragicomical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sad.a.01",
+          "via_synset": "tragicomic.s.01"
+        }
+      ],
+      "definition": "manifesting both tragic and comic aspects; - B.R.Redman"
+    },
+    {
+      "lemma": "uncheerfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "cheerlessness.n.01"
+        }
+      ],
+      "definition": "a feeling of dreary or pessimistic sadness"
+    },
+    {
+      "lemma": "unhappiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sorrow.n.01",
+          "via_synset": "sadness.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sorrow.n.02",
+          "via_synset": "sadness.n.01"
+        }
+      ],
+      "definition": "emotions experienced when not in a state of well-being"
+    },
+    {
+      "lemma": "vexation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "negative_stimulus.n.01",
+          "via_synset": "concern.n.04"
+        }
+      ],
+      "definition": "something or someone that causes anxiety; a source of unhappiness"
+    },
+    {
+      "lemma": "weepiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sadness.n.01",
+          "via_synset": "weepiness.n.01"
+        }
+      ],
+      "definition": "sadness expressed by weeping"
+    },
+    {
+      "lemma": "wistful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sad.a.01",
+          "via_synset": "pensive.s.02"
+        }
+      ],
+      "definition": "showing pensive sadness"
+    },
+    {
+      "lemma": "woe",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "mournfulness.n.01",
+          "via_synset": "woe.n.02"
+        }
+      ],
+      "definition": "intense mournfulness"
+    },
+    {
+      "lemma": "woeful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "woe.n.02",
+          "via_synset": "woebegone.s.02"
+        }
+      ],
+      "definition": "affected by or full of grief or woe; - George du Maurier"
+    },
+    {
+      "lemma": "woefulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "mournfulness.n.01",
+          "via_synset": "woe.n.02"
+        }
+      ],
+      "definition": "intense mournfulness"
+    },
+    {
+      "lemma": "worry",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "negative_stimulus.n.01",
+          "via_synset": "concern.n.04"
+        }
+      ],
+      "definition": "something or someone that causes anxiety; a source of unhappiness"
+    }
+  ]
+}

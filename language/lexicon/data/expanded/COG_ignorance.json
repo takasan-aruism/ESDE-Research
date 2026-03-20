@@ -1,0 +1,1589 @@
+{
+  "atom_id": "COG.ignorance",
+  "category": "COG",
+  "seed_count": 6,
+  "total_keys": 97,
+  "pos_counts": {
+    "n": 67,
+    "adj": 29,
+    "v": 1
+  },
+  "source_counts": {
+    "0_seed": 11,
+    "6_derivational": 16,
+    "7_similar_to": 20,
+    "8_also_see": 8,
+    "2_hypernym_d1": 3,
+    "3_hyponym_d1": 8,
+    "4_hyponym_d2": 2,
+    "10_sibling": 52
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 10,
+      "words": [
+        "ignorance(n)",
+        "ignorant(adj)",
+        "unknowledgeable(adj)",
+        "unknowing(adj)",
+        "unwitting(adj)",
+        "illiterate(adj)",
+        "unaware(adj)",
+        "incognizant(adj)",
+        "uninformed(adj)",
+        "clueless(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 3,
+      "words": [
+        "content(n)",
+        "cognitive content(n)",
+        "mental object(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 8,
+      "words": [
+        "illiteracy(n)",
+        "inexperience(n)",
+        "rawness(n)",
+        "ignorantness(n)",
+        "nescience(n)",
+        "unknowing(n)",
+        "unknowingness(n)",
+        "unenlightenment(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 2,
+      "words": [
+        "dark(n)",
+        "darkness(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 7,
+      "words": [
+        "ignore(v)",
+        "nescient(adj)",
+        "dark(adj)",
+        "inexperient(adj)",
+        "raw(adj)",
+        "unawareness(n)",
+        "incognizance(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 13,
+      "words": [
+        "uneducated(adj)",
+        "oblivious(adj)",
+        "unmindful(adj)",
+        "unsuspecting(adj)",
+        "unconscious(adj)",
+        "unread(adj)",
+        "unadvised(adj)",
+        "uninstructed(adj)",
+        "unenlightened(adj)",
+        "naive(adj)",
+        "innocent(adj)",
+        "unacquainted(adj)",
+        "newsless(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 3,
+      "words": [
+        "insensible(adj)",
+        "asleep(adj)",
+        "naif(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 51,
+      "words": [
+        "issue(n)",
+        "noumenon(n)",
+        "thing-in-itself(n)",
+        "heresy(n)",
+        "unorthodoxy(n)",
+        "knowledge domain(n)",
+        "knowledge base(n)",
+        "domain(n)",
+        "acculturation(n)",
+        "culture(n)",
+        "metaknowledge(n)",
+        "food(n)",
+        "food for thought(n)",
+        "intellectual nourishment(n)",
+        "goal(n)",
+        "end(n)",
+        "lore(n)",
+        "traditional knowledge(n)",
+        "universe(n)",
+        "universe of discourse(n)",
+        "representation(n)",
+        "mental representation(n)",
+        "internal representation(n)",
+        "experience(n)",
+        "kernel(n)",
+        "substance(n)",
+        "core(n)",
+        "center(n)",
+        "centre(n)",
+        "essence(n)",
+        "gist(n)",
+        "heart(n)",
+        "heart and soul(n)",
+        "inwardness(n)",
+        "marrow(n)",
+        "meat(n)",
+        "nub(n)",
+        "pith(n)",
+        "sum(n)",
+        "nitty-gritty(n)",
+        "topic(n)",
+        "subject(n)",
+        "matter(n)",
+        "wisdom(n)",
+        "tradition(n)",
+        "belief(n)",
+        "unbelief(n)",
+        "disbelief(n)",
+        "education(n)",
+        "idea(n)",
+        "thought(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "acculturation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "acculturation.n.02"
+        }
+      ],
+      "definition": "all the knowledge and values shared by a society"
+    },
+    {
+      "lemma": "asleep",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unaware.a.01",
+          "via_synset": "asleep.a.01"
+        }
+      ],
+      "definition": "in a state of sleep"
+    },
+    {
+      "lemma": "belief",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "belief.n.01"
+        }
+      ],
+      "definition": "any cognitive content held as true"
+    },
+    {
+      "lemma": "center",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "centre",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "clueless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "clueless.s.01",
+          "via_synset": "clueless.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uninformed.a.01",
+          "via_synset": "clueless.s.01"
+        }
+      ],
+      "definition": "totally uninformed about what is going on; not having even a clue from which to infer what is occurring"
+    },
+    {
+      "lemma": "cognitive content",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "ignorance.n.01",
+          "via_synset": "content.n.05"
+        }
+      ],
+      "definition": "the sum or range of what has been perceived, discovered, or learned"
+    },
+    {
+      "lemma": "content",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "ignorance.n.01",
+          "via_synset": "content.n.05"
+        }
+      ],
+      "definition": "the sum or range of what has been perceived, discovered, or learned"
+    },
+    {
+      "lemma": "core",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "culture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "acculturation.n.02"
+        }
+      ],
+      "definition": "all the knowledge and values shared by a society"
+    },
+    {
+      "lemma": "dark",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dark.n.05",
+          "via_synset": "benighted.s.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dark.n.05",
+          "via_synset": "dark.s.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dark.n.05",
+          "via_synset": "dark.s.03"
+        }
+      ],
+      "definition": "lacking enlightenment or knowledge or culture"
+    },
+    {
+      "lemma": "dark",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "unenlightenment.n.01",
+          "via_synset": "dark.n.05"
+        }
+      ],
+      "definition": "an unenlightened state"
+    },
+    {
+      "lemma": "darkness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "unenlightenment.n.01",
+          "via_synset": "dark.n.05"
+        }
+      ],
+      "definition": "an unenlightened state"
+    },
+    {
+      "lemma": "disbelief",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "unbelief.n.01"
+        }
+      ],
+      "definition": "a rejection of belief"
+    },
+    {
+      "lemma": "domain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "knowledge_domain.n.01"
+        }
+      ],
+      "definition": "the content of a particular field of knowledge"
+    },
+    {
+      "lemma": "education",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "education.n.02"
+        }
+      ],
+      "definition": "knowledge acquired by learning and instruction"
+    },
+    {
+      "lemma": "end",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "goal.n.01"
+        }
+      ],
+      "definition": "the state of affairs that a plan is intended to achieve and that (when achieved) terminates behavior intended to achieve it"
+    },
+    {
+      "lemma": "essence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "experience",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "experience.n.02"
+        }
+      ],
+      "definition": "the content of direct observation or participation in an event"
+    },
+    {
+      "lemma": "food",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "food.n.03"
+        }
+      ],
+      "definition": "anything that provides mental stimulus for thinking"
+    },
+    {
+      "lemma": "food for thought",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "food.n.03"
+        }
+      ],
+      "definition": "anything that provides mental stimulus for thinking"
+    },
+    {
+      "lemma": "gist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "goal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "goal.n.01"
+        }
+      ],
+      "definition": "the state of affairs that a plan is intended to achieve and that (when achieved) terminates behavior intended to achieve it"
+    },
+    {
+      "lemma": "heart",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "heart and soul",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "heresy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "heresy.n.02"
+        }
+      ],
+      "definition": "a belief that rejects the orthodox tenets of a religion"
+    },
+    {
+      "lemma": "idea",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "idea.n.01"
+        }
+      ],
+      "definition": "the content of cognition; the main thing you are thinking about"
+    },
+    {
+      "lemma": "ignorance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ignorance.n.01",
+          "via_synset": "ignorance.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ignorant.s.03",
+          "via_synset": "ignorance.n.01"
+        }
+      ],
+      "definition": "the lack of knowledge or education"
+    },
+    {
+      "lemma": "ignorant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ignorant.s.03",
+          "via_synset": "ignorant.s.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ignorant.s.02",
+          "via_synset": "ignorant.s.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ignorance.n.01",
+          "via_synset": "ignorant.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ignorance.n.01",
+          "via_synset": "ignorant.s.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ignorantness.n.01",
+          "via_synset": "ignorant.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uninformed.a.01",
+          "via_synset": "ignorant.s.03"
+        }
+      ],
+      "definition": "unaware because of a lack of relevant information or knowledge"
+    },
+    {
+      "lemma": "ignorantness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ignorance.n.01",
+          "via_synset": "ignorantness.n.01"
+        }
+      ],
+      "definition": "ignorance (especially of orthodox beliefs)"
+    },
+    {
+      "lemma": "ignore",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ignorance.n.01",
+          "via_synset": "ignore.v.05"
+        }
+      ],
+      "definition": "be ignorant of or in the dark about"
+    },
+    {
+      "lemma": "illiteracy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ignorance.n.01",
+          "via_synset": "illiteracy.n.01"
+        }
+      ],
+      "definition": "ignorance resulting from not reading"
+    },
+    {
+      "lemma": "illiterate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ignorant.s.02",
+          "via_synset": "ignorant.s.02"
+        }
+      ],
+      "definition": "uneducated in the fundamentals of a given art or branch of learning; lacking knowledge of a specific field"
+    },
+    {
+      "lemma": "incognizance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unaware.a.01",
+          "via_synset": "incognizance.n.01"
+        }
+      ],
+      "definition": "a lack of knowledge or recognition"
+    },
+    {
+      "lemma": "incognizant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unaware.a.01",
+          "via_synset": "unaware.a.01"
+        }
+      ],
+      "definition": "(often followed by `of') not aware"
+    },
+    {
+      "lemma": "inexperience",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ignorance.n.01",
+          "via_synset": "inexperience.n.01"
+        }
+      ],
+      "definition": "lack of experience and the knowledge and understanding derived from experience"
+    },
+    {
+      "lemma": "inexperient",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "inexperience.n.01",
+          "via_synset": "inexperienced.a.01"
+        }
+      ],
+      "definition": "lacking practical experience or training"
+    },
+    {
+      "lemma": "innocent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uninformed.a.01",
+          "via_synset": "innocent.s.04"
+        }
+      ],
+      "definition": "not knowledgeable about something specified"
+    },
+    {
+      "lemma": "insensible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unaware.a.01",
+          "via_synset": "insensible.a.01"
+        }
+      ],
+      "definition": "incapable of physical sensation"
+    },
+    {
+      "lemma": "intellectual nourishment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "food.n.03"
+        }
+      ],
+      "definition": "anything that provides mental stimulus for thinking"
+    },
+    {
+      "lemma": "internal representation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "representation.n.01"
+        }
+      ],
+      "definition": "a presentation to the mind in the form of an idea or image"
+    },
+    {
+      "lemma": "inwardness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "issue",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "issue.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "topic.n.02"
+        }
+      ],
+      "definition": "an important question that is in dispute and must be settled"
+    },
+    {
+      "lemma": "kernel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "knowledge base",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "knowledge_domain.n.01"
+        }
+      ],
+      "definition": "the content of a particular field of knowledge"
+    },
+    {
+      "lemma": "knowledge domain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "knowledge_domain.n.01"
+        }
+      ],
+      "definition": "the content of a particular field of knowledge"
+    },
+    {
+      "lemma": "lore",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "lore.n.01"
+        }
+      ],
+      "definition": "knowledge gained through tradition or anecdote"
+    },
+    {
+      "lemma": "marrow",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "matter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "topic.n.02"
+        }
+      ],
+      "definition": "some situation or event that is thought about"
+    },
+    {
+      "lemma": "meat",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "mental object",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "ignorance.n.01",
+          "via_synset": "content.n.05"
+        }
+      ],
+      "definition": "the sum or range of what has been perceived, discovered, or learned"
+    },
+    {
+      "lemma": "mental representation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "representation.n.01"
+        }
+      ],
+      "definition": "a presentation to the mind in the form of an idea or image"
+    },
+    {
+      "lemma": "metaknowledge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "metaknowledge.n.01"
+        }
+      ],
+      "definition": "knowledge about knowledge"
+    },
+    {
+      "lemma": "naif",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "uninformed.a.01",
+          "via_synset": "naive.a.01"
+        }
+      ],
+      "definition": "marked by or showing unaffected simplicity and lack of guile or worldly experience"
+    },
+    {
+      "lemma": "naive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uninformed.a.01",
+          "via_synset": "uninstructed.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "uninformed.a.01",
+          "via_synset": "naive.a.01"
+        }
+      ],
+      "definition": "lacking information or instruction"
+    },
+    {
+      "lemma": "nescience",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ignorance.n.01",
+          "via_synset": "ignorantness.n.01"
+        }
+      ],
+      "definition": "ignorance (especially of orthodox beliefs)"
+    },
+    {
+      "lemma": "nescient",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ignorantness.n.01",
+          "via_synset": "ignorant.s.01"
+        }
+      ],
+      "definition": "uneducated in general; lacking knowledge or sophistication"
+    },
+    {
+      "lemma": "newsless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uninformed.a.01",
+          "via_synset": "newsless.s.01"
+        }
+      ],
+      "definition": "not having or receiving news or information"
+    },
+    {
+      "lemma": "nitty-gritty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "noumenon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "noumenon.n.01"
+        }
+      ],
+      "definition": "the intellectual conception of a thing as it is in itself, not as it is known through perception"
+    },
+    {
+      "lemma": "nub",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "oblivious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unaware.a.01",
+          "via_synset": "oblivious.s.01"
+        }
+      ],
+      "definition": "(followed by `to' or `of') lacking conscious awareness of"
+    },
+    {
+      "lemma": "pith",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "raw",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "inexperience.n.01",
+          "via_synset": "raw.s.11"
+        }
+      ],
+      "definition": "lacking training or experience"
+    },
+    {
+      "lemma": "rawness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ignorance.n.01",
+          "via_synset": "inexperience.n.01"
+        }
+      ],
+      "definition": "lack of experience and the knowledge and understanding derived from experience"
+    },
+    {
+      "lemma": "representation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "representation.n.01"
+        }
+      ],
+      "definition": "a presentation to the mind in the form of an idea or image"
+    },
+    {
+      "lemma": "subject",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "topic.n.02"
+        }
+      ],
+      "definition": "some situation or event that is thought about"
+    },
+    {
+      "lemma": "substance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "sum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "thing-in-itself",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "noumenon.n.01"
+        }
+      ],
+      "definition": "the intellectual conception of a thing as it is in itself, not as it is known through perception"
+    },
+    {
+      "lemma": "thought",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "idea.n.01"
+        }
+      ],
+      "definition": "the content of cognition; the main thing you are thinking about"
+    },
+    {
+      "lemma": "topic",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "topic.n.02"
+        }
+      ],
+      "definition": "some situation or event that is thought about"
+    },
+    {
+      "lemma": "tradition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "tradition.n.01"
+        }
+      ],
+      "definition": "an inherited pattern of thought or action"
+    },
+    {
+      "lemma": "traditional knowledge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "lore.n.01"
+        }
+      ],
+      "definition": "knowledge gained through tradition or anecdote"
+    },
+    {
+      "lemma": "unacquainted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uninformed.a.01",
+          "via_synset": "innocent.s.04"
+        }
+      ],
+      "definition": "not knowledgeable about something specified"
+    },
+    {
+      "lemma": "unadvised",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uninformed.a.01",
+          "via_synset": "unadvised.s.01"
+        }
+      ],
+      "definition": "having received no information"
+    },
+    {
+      "lemma": "unaware",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unaware.a.01",
+          "via_synset": "unaware.a.01"
+        }
+      ],
+      "definition": "(often followed by `of') not aware"
+    },
+    {
+      "lemma": "unawareness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unaware.a.01",
+          "via_synset": "unknowingness.n.02"
+        }
+      ],
+      "definition": "unconsciousness resulting from lack of knowledge or attention"
+    },
+    {
+      "lemma": "unbelief",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "unbelief.n.01"
+        }
+      ],
+      "definition": "a rejection of belief"
+    },
+    {
+      "lemma": "unconscious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unaware.a.01",
+          "via_synset": "unconscious.s.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unaware.a.01",
+          "via_synset": "unconscious.a.01"
+        }
+      ],
+      "definition": "(followed by `of') not knowing or perceiving; - Charles Dickens"
+    },
+    {
+      "lemma": "uneducated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "ignorant.s.02",
+          "via_synset": "uneducated.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "uninformed.a.01",
+          "via_synset": "uneducated.a.01"
+        }
+      ],
+      "definition": "not having a good education"
+    },
+    {
+      "lemma": "unenlightened",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uninformed.a.01",
+          "via_synset": "uninstructed.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "uninformed.a.01",
+          "via_synset": "unenlightened.a.01"
+        }
+      ],
+      "definition": "lacking information or instruction"
+    },
+    {
+      "lemma": "unenlightenment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ignorance.n.01",
+          "via_synset": "unenlightenment.n.01"
+        }
+      ],
+      "definition": "a lack of understanding"
+    },
+    {
+      "lemma": "uninformed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "uninformed.a.01",
+          "via_synset": "uninformed.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "ignorant.s.03",
+          "via_synset": "uninformed.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clueless.s.01",
+          "via_synset": "uninformed.a.01"
+        }
+      ],
+      "definition": "not informed; lacking in knowledge or information"
+    },
+    {
+      "lemma": "uninstructed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uninformed.a.01",
+          "via_synset": "uninstructed.s.01"
+        }
+      ],
+      "definition": "lacking information or instruction"
+    },
+    {
+      "lemma": "universe",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "universe.n.03"
+        }
+      ],
+      "definition": "everything stated or assumed in a given discussion"
+    },
+    {
+      "lemma": "universe of discourse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "universe.n.03"
+        }
+      ],
+      "definition": "everything stated or assumed in a given discussion"
+    },
+    {
+      "lemma": "unknowing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ignorant.s.03",
+          "via_synset": "ignorant.s.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ignorantness.n.01",
+          "via_synset": "ignorant.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uninformed.a.01",
+          "via_synset": "ignorant.s.03"
+        }
+      ],
+      "definition": "unaware because of a lack of relevant information or knowledge"
+    },
+    {
+      "lemma": "unknowing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ignorance.n.01",
+          "via_synset": "ignorantness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ignorant.s.03",
+          "via_synset": "ignorantness.n.01"
+        }
+      ],
+      "definition": "ignorance (especially of orthodox beliefs)"
+    },
+    {
+      "lemma": "unknowingness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ignorance.n.01",
+          "via_synset": "ignorantness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ignorant.s.03",
+          "via_synset": "ignorantness.n.01"
+        }
+      ],
+      "definition": "ignorance (especially of orthodox beliefs)"
+    },
+    {
+      "lemma": "unknowledgeable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ignorant.s.03",
+          "via_synset": "ignorant.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uninformed.a.01",
+          "via_synset": "ignorant.s.03"
+        }
+      ],
+      "definition": "unaware because of a lack of relevant information or knowledge"
+    },
+    {
+      "lemma": "unmindful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unaware.a.01",
+          "via_synset": "oblivious.s.01"
+        }
+      ],
+      "definition": "(followed by `to' or `of') lacking conscious awareness of"
+    },
+    {
+      "lemma": "unorthodoxy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "heresy.n.02"
+        }
+      ],
+      "definition": "a belief that rejects the orthodox tenets of a religion"
+    },
+    {
+      "lemma": "unread",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uninformed.a.01",
+          "via_synset": "unread.s.01"
+        }
+      ],
+      "definition": "not informed through reading; - V.L.Parrington"
+    },
+    {
+      "lemma": "unsuspecting",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unaware.a.01",
+          "via_synset": "unsuspecting.s.02"
+        }
+      ],
+      "definition": "(often followed by `of') not knowing or expecting; not thinking likely"
+    },
+    {
+      "lemma": "unwitting",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ignorant.s.03",
+          "via_synset": "ignorant.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uninformed.a.01",
+          "via_synset": "ignorant.s.03"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unaware.a.01",
+          "via_synset": "unwitting.a.02"
+        }
+      ],
+      "definition": "unaware because of a lack of relevant information or knowledge"
+    },
+    {
+      "lemma": "wisdom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "wisdom.n.01"
+        }
+      ],
+      "definition": "accumulated knowledge or erudition or enlightenment"
+    }
+  ]
+}

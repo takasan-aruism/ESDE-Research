@@ -1,0 +1,943 @@
+{
+  "atom_id": "PRP.hot",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 55,
+  "pos_counts": {
+    "adj": 49,
+    "n": 6
+  },
+  "source_counts": {
+    "0_seed": 14,
+    "7_similar_to": 44,
+    "8_also_see": 2,
+    "6_derivational": 10
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 11,
+      "words": [
+        "hot(adj)",
+        "spicy(adj)",
+        "warm(adj)",
+        "affectionate(adj)",
+        "fond(adj)",
+        "lovesome(adj)",
+        "tender(adj)",
+        "heated(adj)",
+        "heated up(adj)",
+        "het(adj)",
+        "het up(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 6,
+      "words": [
+        "warmness(n)",
+        "hotness(n)",
+        "affection(n)",
+        "affectionateness(n)",
+        "fondness(n)",
+        "tenderness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 38,
+      "words": [
+        "radioactive(adj)",
+        "warmed(adj)",
+        "lukewarm(adj)",
+        "tepid(adj)",
+        "warming(adj)",
+        "baking(adj)",
+        "baking hot(adj)",
+        "thermal(adj)",
+        "hottish(adj)",
+        "fervent(adj)",
+        "fervid(adj)",
+        "heatable(adj)",
+        "red-hot(adj)",
+        "sweltering(adj)",
+        "sweltry(adj)",
+        "white(adj)",
+        "white-hot(adj)",
+        "calorifacient(adj)",
+        "overheated(adj)",
+        "calefactory(adj)",
+        "calefactive(adj)",
+        "calorific(adj)",
+        "tropical(adj)",
+        "tropic(adj)",
+        "sultry(adj)",
+        "stifling(adj)",
+        "sulfurous(adj)",
+        "sulphurous(adj)",
+        "sizzling(adj)",
+        "scorching(adj)",
+        "torrid(adj)",
+        "fiery(adj)",
+        "igneous(adj)",
+        "blistering(adj)",
+        "blistery(adj)",
+        "calefacient(adj)",
+        "tasty(adj)",
+        "loving(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "affection",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "affectionate.s.01",
+          "via_synset": "affection.n.01"
+        }
+      ],
+      "definition": "a positive feeling of liking"
+    },
+    {
+      "lemma": "affectionate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "affectionate.s.01",
+          "via_synset": "affectionate.s.01"
+        }
+      ],
+      "definition": "having or displaying warmth or affection"
+    },
+    {
+      "lemma": "affectionateness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "affectionate.s.01",
+          "via_synset": "affection.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "affectionate.s.01",
+          "via_synset": "affectionateness.n.02"
+        }
+      ],
+      "definition": "a positive feeling of liking"
+    },
+    {
+      "lemma": "baking",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "baking.s.01"
+        }
+      ],
+      "definition": "as hot as if in an oven"
+    },
+    {
+      "lemma": "baking hot",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "baking.s.01"
+        }
+      ],
+      "definition": "as hot as if in an oven"
+    },
+    {
+      "lemma": "blistering",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "blistering.s.02"
+        }
+      ],
+      "definition": "hot enough to raise (or as if to raise) blisters"
+    },
+    {
+      "lemma": "blistery",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "blistering.s.02"
+        }
+      ],
+      "definition": "hot enough to raise (or as if to raise) blisters"
+    },
+    {
+      "lemma": "calefacient",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "calefacient.s.01"
+        }
+      ],
+      "definition": "producing the sensation of heat when applied to the body"
+    },
+    {
+      "lemma": "calefactive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "calefactory.s.01"
+        }
+      ],
+      "definition": "serving to heat"
+    },
+    {
+      "lemma": "calefactory",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "calefactory.s.01"
+        }
+      ],
+      "definition": "serving to heat"
+    },
+    {
+      "lemma": "calorifacient",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "calorifacient.s.01"
+        }
+      ],
+      "definition": "producing heat; usually used of foods"
+    },
+    {
+      "lemma": "calorific",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "calorific.s.01"
+        }
+      ],
+      "definition": "heat-generating"
+    },
+    {
+      "lemma": "fervent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "fervent.s.02"
+        }
+      ],
+      "definition": "extremely hot; - Nathaniel Hawthorne; - Frances Trollope"
+    },
+    {
+      "lemma": "fervid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "fervent.s.02"
+        }
+      ],
+      "definition": "extremely hot; - Nathaniel Hawthorne; - Frances Trollope"
+    },
+    {
+      "lemma": "fiery",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "fiery.s.02"
+        }
+      ],
+      "definition": "like or suggestive of fire"
+    },
+    {
+      "lemma": "fond",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "affectionate.s.01",
+          "via_synset": "affectionate.s.01"
+        }
+      ],
+      "definition": "having or displaying warmth or affection"
+    },
+    {
+      "lemma": "fondness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "affectionate.s.01",
+          "via_synset": "affection.n.01"
+        }
+      ],
+      "definition": "a positive feeling of liking"
+    },
+    {
+      "lemma": "heatable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "heatable.s.01"
+        }
+      ],
+      "definition": "capable of becoming hot"
+    },
+    {
+      "lemma": "heated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "heated.s.01",
+          "via_synset": "heated.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "heated.s.01"
+        }
+      ],
+      "definition": "made warm or hot (`het' is a dialectal variant of `heated')"
+    },
+    {
+      "lemma": "heated up",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "heated.s.01",
+          "via_synset": "heated.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "heated.s.01"
+        }
+      ],
+      "definition": "made warm or hot (`het' is a dialectal variant of `heated')"
+    },
+    {
+      "lemma": "het",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "heated.s.01",
+          "via_synset": "heated.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "heated.s.01"
+        }
+      ],
+      "definition": "made warm or hot (`het' is a dialectal variant of `heated')"
+    },
+    {
+      "lemma": "het up",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "heated.s.01",
+          "via_synset": "heated.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "heated.s.01"
+        }
+      ],
+      "definition": "made warm or hot (`het' is a dialectal variant of `heated')"
+    },
+    {
+      "lemma": "hot",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hot.a.01",
+          "via_synset": "hot.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hot.s.17",
+          "via_synset": "hot.s.17"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hot.s.07",
+          "via_synset": "hot.s.07"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heated.s.01",
+          "via_synset": "hot.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "warm.a.01",
+          "via_synset": "hot.a.01"
+        }
+      ],
+      "definition": "used of physical heat; having a high or higher than desirable temperature or giving off heat or feeling or causing a sensation of heat or burning"
+    },
+    {
+      "lemma": "hotness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hot.a.01",
+          "via_synset": "hotness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hot.s.07",
+          "via_synset": "hotness.n.03"
+        }
+      ],
+      "definition": "the presence of heat"
+    },
+    {
+      "lemma": "hottish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "hottish.s.01"
+        }
+      ],
+      "definition": "somewhat hot"
+    },
+    {
+      "lemma": "igneous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "fiery.s.02"
+        }
+      ],
+      "definition": "like or suggestive of fire"
+    },
+    {
+      "lemma": "lovesome",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "affectionate.s.01",
+          "via_synset": "affectionate.s.01"
+        }
+      ],
+      "definition": "having or displaying warmth or affection"
+    },
+    {
+      "lemma": "loving",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "affectionate.s.01",
+          "via_synset": "loving.a.01"
+        }
+      ],
+      "definition": "feeling or showing love and affection"
+    },
+    {
+      "lemma": "lukewarm",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "warm.a.01",
+          "via_synset": "lukewarm.s.01"
+        }
+      ],
+      "definition": "moderately warm"
+    },
+    {
+      "lemma": "overheated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "overheated.s.01"
+        }
+      ],
+      "definition": "heated beyond a safe or desirable point"
+    },
+    {
+      "lemma": "radioactive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.s.17",
+          "via_synset": "radioactive.a.01"
+        }
+      ],
+      "definition": "exhibiting or caused by radioactivity"
+    },
+    {
+      "lemma": "red-hot",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "red-hot.s.04"
+        }
+      ],
+      "definition": "glowing red with heat"
+    },
+    {
+      "lemma": "scorching",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "scorching.s.01"
+        }
+      ],
+      "definition": "hot and dry enough to burn or parch a surface"
+    },
+    {
+      "lemma": "sizzling",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "sizzling.s.01"
+        }
+      ],
+      "definition": "hot enough to burn with or as if with a hissing sound"
+    },
+    {
+      "lemma": "spicy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hot.s.07",
+          "via_synset": "hot.s.07"
+        }
+      ],
+      "definition": "producing a burning sensation on the taste nerves"
+    },
+    {
+      "lemma": "stifling",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "sultry.s.02"
+        }
+      ],
+      "definition": "characterized by oppressive heat and humidity"
+    },
+    {
+      "lemma": "sulfurous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "sultry.s.02"
+        }
+      ],
+      "definition": "characterized by oppressive heat and humidity"
+    },
+    {
+      "lemma": "sulphurous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "sultry.s.02"
+        }
+      ],
+      "definition": "characterized by oppressive heat and humidity"
+    },
+    {
+      "lemma": "sultry",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "sultry.s.02"
+        }
+      ],
+      "definition": "characterized by oppressive heat and humidity"
+    },
+    {
+      "lemma": "sweltering",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "sweltering.s.01"
+        }
+      ],
+      "definition": "excessively hot and humid or marked by sweating and faintness"
+    },
+    {
+      "lemma": "sweltry",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "sweltering.s.01"
+        }
+      ],
+      "definition": "excessively hot and humid or marked by sweating and faintness"
+    },
+    {
+      "lemma": "tasty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.s.07",
+          "via_synset": "tasty.a.01"
+        }
+      ],
+      "definition": "pleasing to the sense of taste"
+    },
+    {
+      "lemma": "tender",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "affectionate.s.01",
+          "via_synset": "affectionate.s.01"
+        }
+      ],
+      "definition": "having or displaying warmth or affection"
+    },
+    {
+      "lemma": "tenderness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "affectionate.s.01",
+          "via_synset": "affection.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "affectionate.s.01",
+          "via_synset": "tenderness.n.01"
+        }
+      ],
+      "definition": "a positive feeling of liking"
+    },
+    {
+      "lemma": "tepid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "warm.a.01",
+          "via_synset": "lukewarm.s.01"
+        }
+      ],
+      "definition": "moderately warm"
+    },
+    {
+      "lemma": "thermal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "thermal.s.01"
+        }
+      ],
+      "definition": "caused by or designed to retain heat"
+    },
+    {
+      "lemma": "torrid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "torrid.s.03"
+        }
+      ],
+      "definition": "extremely hot"
+    },
+    {
+      "lemma": "tropic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "tropical.s.03"
+        }
+      ],
+      "definition": "of weather or climate; hot and humid as in the tropics"
+    },
+    {
+      "lemma": "tropical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "tropical.s.03"
+        }
+      ],
+      "definition": "of weather or climate; hot and humid as in the tropics"
+    },
+    {
+      "lemma": "warm",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "warm.a.01",
+          "via_synset": "warm.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "affectionate.s.01",
+          "via_synset": "affectionate.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "hot.a.01",
+          "via_synset": "warm.a.01"
+        }
+      ],
+      "definition": "having or producing a comfortable and agreeable degree of heat or imparting or maintaining heat"
+    },
+    {
+      "lemma": "warmed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "warm.a.01",
+          "via_synset": "warmed.s.01"
+        }
+      ],
+      "definition": "having been warmed up"
+    },
+    {
+      "lemma": "warming",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "warm.a.01",
+          "via_synset": "warming.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "calefacient.s.01"
+        }
+      ],
+      "definition": "imparting heat"
+    },
+    {
+      "lemma": "warmness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "warm.a.01",
+          "via_synset": "warmth.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "affectionate.s.01",
+          "via_synset": "affection.n.01"
+        }
+      ],
+      "definition": "the quality of having a moderate degree of heat"
+    },
+    {
+      "lemma": "white",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "white.s.04"
+        }
+      ],
+      "definition": "glowing white with heat"
+    },
+    {
+      "lemma": "white-hot",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hot.a.01",
+          "via_synset": "white.s.04"
+        }
+      ],
+      "definition": "glowing white with heat"
+    }
+  ]
+}

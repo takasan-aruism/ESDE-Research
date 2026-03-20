@@ -1,0 +1,793 @@
+{
+  "atom_id": "EXS.life",
+  "category": "EXS",
+  "seed_count": 6,
+  "total_keys": 39,
+  "pos_counts": {
+    "n": 32,
+    "adj": 3,
+    "v": 4
+  },
+  "source_counts": {
+    "0_seed": 10,
+    "10_sibling": 23,
+    "6_derivational": 13,
+    "2_hypernym_d1": 10,
+    "3_hyponym_d1": 6,
+    "4_hyponym_d2": 1,
+    "7_similar_to": 2
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 5,
+      "words": [
+        "animation(n)",
+        "life(n)",
+        "living(n)",
+        "aliveness(n)",
+        "alive(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 4,
+      "words": [
+        "being(n)",
+        "beingness(n)",
+        "existence(n)",
+        "experience(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 6,
+      "words": [
+        "survival(n)",
+        "endurance(n)",
+        "eternal life(n)",
+        "life eternal(n)",
+        "skin(n)",
+        "ghetto(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 1,
+      "words": [
+        "subsistence(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 5,
+      "words": [
+        "lifer(n)",
+        "live(v)",
+        "subsist(v)",
+        "survive(v)",
+        "endure(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 2,
+      "words": [
+        "lively(adj)",
+        "sensitive(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 16,
+      "words": [
+        "eternity(n)",
+        "timelessness(n)",
+        "timeless existence(n)",
+        "preexistence(n)",
+        "coexistence(n)",
+        "transcendence(n)",
+        "transcendency(n)",
+        "possibility(n)",
+        "possibleness(n)",
+        "actuality(n)",
+        "presence(n)",
+        "reliving(n)",
+        "re-experiencing(n)",
+        "reminder(n)",
+        "world(n)",
+        "reality(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "actuality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "actuality.n.01"
+        }
+      ],
+      "definition": "the state of actually existing objectively"
+    },
+    {
+      "lemma": "alive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "alive.s.01",
+          "via_synset": "alive.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "alive.s.02",
+          "via_synset": "alive.s.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "animation.n.01",
+          "via_synset": "alive.s.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "animation.n.01",
+          "via_synset": "active.s.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "animation.n.01",
+          "via_synset": "alert.s.02"
+        }
+      ],
+      "definition": "(often followed by `with') full of life and spirit"
+    },
+    {
+      "lemma": "aliveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "animation.n.01",
+          "via_synset": "animation.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "alive.s.01",
+          "via_synset": "animateness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "alive.s.02",
+          "via_synset": "animation.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "animation.n.01"
+        }
+      ],
+      "definition": "the condition of living or the state of being alive"
+    },
+    {
+      "lemma": "animation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "animation.n.01",
+          "via_synset": "animation.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "animation.n.01"
+        }
+      ],
+      "definition": "the condition of living or the state of being alive"
+    },
+    {
+      "lemma": "being",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "animation.n.01",
+          "via_synset": "being.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "life.n.03",
+          "via_synset": "being.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "life.n.01",
+          "via_synset": "being.n.01"
+        }
+      ],
+      "definition": "the state or fact of existing"
+    },
+    {
+      "lemma": "beingness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "animation.n.01",
+          "via_synset": "being.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "life.n.03",
+          "via_synset": "being.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "life.n.01",
+          "via_synset": "being.n.01"
+        }
+      ],
+      "definition": "the state or fact of existing"
+    },
+    {
+      "lemma": "coexistence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "coexistence.n.01"
+        }
+      ],
+      "definition": "existing peacefully together"
+    },
+    {
+      "lemma": "endurance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "animation.n.01",
+          "via_synset": "survival.n.01"
+        }
+      ],
+      "definition": "a state of surviving; remaining alive"
+    },
+    {
+      "lemma": "endure",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "survival.n.01",
+          "via_synset": "survive.v.01"
+        }
+      ],
+      "definition": "continue to live through hardship or adversity"
+    },
+    {
+      "lemma": "eternal life",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "animation.n.01",
+          "via_synset": "eternal_life.n.01"
+        }
+      ],
+      "definition": "life without beginning or end"
+    },
+    {
+      "lemma": "eternity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "eternity.n.02"
+        }
+      ],
+      "definition": "a state of eternal existence believed in some religions to characterize the afterlife"
+    },
+    {
+      "lemma": "existence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "animation.n.01",
+          "via_synset": "being.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "life.n.03",
+          "via_synset": "being.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "life.n.01",
+          "via_synset": "being.n.01"
+        }
+      ],
+      "definition": "the state or fact of existing"
+    },
+    {
+      "lemma": "experience",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "life.n.02",
+          "via_synset": "experience.n.02"
+        }
+      ],
+      "definition": "the content of direct observation or participation in an event"
+    },
+    {
+      "lemma": "ghetto",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "life.n.01",
+          "via_synset": "ghetto.n.02"
+        }
+      ],
+      "definition": "any segregated mode of living or working that results from bias or stereotyping"
+    },
+    {
+      "lemma": "life",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "animation.n.01",
+          "via_synset": "animation.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "life.n.03",
+          "via_synset": "life.n.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "life.n.01",
+          "via_synset": "life.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "life.n.02",
+          "via_synset": "life.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "life.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "life.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "animation.n.01"
+        }
+      ],
+      "definition": "the condition of living or the state of being alive"
+    },
+    {
+      "lemma": "life eternal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "animation.n.01",
+          "via_synset": "eternal_life.n.01"
+        }
+      ],
+      "definition": "life without beginning or end"
+    },
+    {
+      "lemma": "lifer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "animation.n.01",
+          "via_synset": "lifer.n.01"
+        }
+      ],
+      "definition": "a prisoner serving a term of life imprisonment"
+    },
+    {
+      "lemma": "live",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "animation.n.01",
+          "via_synset": "be.v.11"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "life.n.02",
+          "via_synset": "live.v.02"
+        }
+      ],
+      "definition": "have life, be alive"
+    },
+    {
+      "lemma": "lively",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "alive.s.01",
+          "via_synset": "lively.a.01"
+        }
+      ],
+      "definition": "full of life and energy"
+    },
+    {
+      "lemma": "living",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "animation.n.01",
+          "via_synset": "animation.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "life.n.02",
+          "via_synset": "life.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "animation.n.01"
+        }
+      ],
+      "definition": "the condition of living or the state of being alive"
+    },
+    {
+      "lemma": "possibility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "possibility.n.02"
+        }
+      ],
+      "definition": "capability of existing or happening or being true"
+    },
+    {
+      "lemma": "possibleness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "possibility.n.02"
+        }
+      ],
+      "definition": "capability of existing or happening or being true"
+    },
+    {
+      "lemma": "preexistence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "preexistence.n.01"
+        }
+      ],
+      "definition": "existing in a former state or previous to something else"
+    },
+    {
+      "lemma": "presence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "presence.n.01"
+        }
+      ],
+      "definition": "the state of being present; current existence"
+    },
+    {
+      "lemma": "re-experiencing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.02",
+          "via_synset": "reliving.n.01"
+        }
+      ],
+      "definition": "a recurrence of a prior experience"
+    },
+    {
+      "lemma": "reality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.02",
+          "via_synset": "world.n.03"
+        }
+      ],
+      "definition": "all of your experiences that determine how things appear to you"
+    },
+    {
+      "lemma": "reliving",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.02",
+          "via_synset": "reliving.n.01"
+        }
+      ],
+      "definition": "a recurrence of a prior experience"
+    },
+    {
+      "lemma": "reminder",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.02",
+          "via_synset": "reminder.n.02"
+        }
+      ],
+      "definition": "an experience that causes you to remember something"
+    },
+    {
+      "lemma": "sensitive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "alive.s.02",
+          "via_synset": "sensitive.a.02"
+        }
+      ],
+      "definition": "being susceptible to the attitudes, feelings, or circumstances of others"
+    },
+    {
+      "lemma": "skin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "animation.n.01",
+          "via_synset": "skin.n.04"
+        }
+      ],
+      "definition": "a person's skin regarded as their life"
+    },
+    {
+      "lemma": "subsist",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "subsistence.n.02",
+          "via_synset": "exist.v.02"
+        }
+      ],
+      "definition": "support oneself"
+    },
+    {
+      "lemma": "subsistence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "survival.n.01",
+          "via_synset": "subsistence.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "subsistence.n.03"
+        }
+      ],
+      "definition": "a means of surviving"
+    },
+    {
+      "lemma": "survival",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "animation.n.01",
+          "via_synset": "survival.n.01"
+        }
+      ],
+      "definition": "a state of surviving; remaining alive"
+    },
+    {
+      "lemma": "survive",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "survival.n.01",
+          "via_synset": "survive.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "survival.n.01",
+          "via_synset": "survive.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "survival.n.01",
+          "via_synset": "exist.v.02"
+        }
+      ],
+      "definition": "continue in existence after (an adversity, etc.)"
+    },
+    {
+      "lemma": "timeless existence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "eternity.n.02"
+        }
+      ],
+      "definition": "a state of eternal existence believed in some religions to characterize the afterlife"
+    },
+    {
+      "lemma": "timelessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "eternity.n.02"
+        }
+      ],
+      "definition": "a state of eternal existence believed in some religions to characterize the afterlife"
+    },
+    {
+      "lemma": "transcendence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "transcendence.n.01"
+        }
+      ],
+      "definition": "a state of being or existence above and beyond the limits of material experience"
+    },
+    {
+      "lemma": "transcendency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "transcendence.n.01"
+        }
+      ],
+      "definition": "a state of being or existence above and beyond the limits of material experience"
+    },
+    {
+      "lemma": "world",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.02",
+          "via_synset": "world.n.03"
+        }
+      ],
+      "definition": "all of your experiences that determine how things appear to you"
+    }
+  ]
+}

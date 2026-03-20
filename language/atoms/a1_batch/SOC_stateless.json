@@ -1,0 +1,415 @@
+{
+  "atom": "SOC.stateless",
+  "category": "SOC",
+  "status": "proposed",
+  "symmetric_pair": "SOC.nation",
+  "definition_en": "Not recognized as a citizen of any country.",
+  "seed_synsets": [],
+  "core_pool": {
+    "rules": [
+      "0_seed",
+      "3_hyponym_d1",
+      "6_derivational",
+      "7_similar_to",
+      "9_antonym"
+    ],
+    "count": 17,
+    "words": [
+      {
+        "w": "deport",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "expel from a country",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "deportation",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "the act of expelling a person from their native land",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "displaced person",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a person forced to flee from home or country",
+        "path_count": 2,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "DP",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a person forced to flee from home or country",
+        "path_count": 2,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "exile",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "the act of expelling a person from their native land",
+        "path_count": 3,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "exile",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "expel from a country",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "expat",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "a person who is voluntarily absent from home or country",
+        "path_count": 2,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "expatriate",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "a person who is voluntarily absent from home or country",
+        "path_count": 2,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "expatriate",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "move away from one's native country and adopt a new residence abroad",
+        "path_count": 2,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "expatriation",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "the act of expelling a person from their native land",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "homeless",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "without nationality or citizenship",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "refugee",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "an exile who flees for safety",
+        "path_count": 2,
+        "sources": [
+          "0_seed",
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "remittance man",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "an exile living on money sent from home",
+        "path_count": 2,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "stateless",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "without nationality or citizenship",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "stateless person",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a person forced to flee from home or country",
+        "path_count": 2,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "transportation",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "the act of expelling a person from their native land",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "unsettled",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "not settled or established",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      }
+    ]
+  },
+  "deviation_pool": {
+    "rules": [
+      "10_sibling",
+      "11_pertainym",
+      "12_verb_group",
+      "2_hypernym_d1",
+      "4_hyponym_d2",
+      "5_hyponym_d3",
+      "8_also_see"
+    ],
+    "count": 18,
+    "words": [
+      {
+        "w": "absentee",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "one that is absent or not in residence",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "anathematisation",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the formal act of pronouncing (someone or something) accursed",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "anathematization",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the formal act of pronouncing (someone or something) accursed",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "AWOL",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "one who is away or absent without leave",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "banishment",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "rejection by means of an act of banishing or proscribing someone",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "defaulter",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "someone who fails to make a required appearance in court",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "disbarment",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the act of expelling a lawyer from the practice of law",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "ejection",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the act of forcing out someone or something",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "excision",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the act of banishing a member of a church from the communion of believers and the privileges of the church; cutting a person off from a religious society",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "exclusion",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the act of forcing out someone or something",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "excommunication",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the act of banishing a member of a church from the communion of believers and the privileges of the church; cutting a person off from a religious society",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "expulsion",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the act of forcing out someone or something",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "hooky player",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "one who is absent from school without permission",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "proscription",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "rejection by means of an act of banishing or proscribing someone",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "relegation",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "mild banishment; consignment to an inferior position",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "riddance",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the act of forcing out someone or something",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "rustication",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "banishment into the country",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "truant",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "one who is absent from school without permission",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      }
+    ]
+  },
+  "deviation_stats": {
+    "total_candidates": 35,
+    "core_count": 17,
+    "dev_count": 18,
+    "core_ratio": 0.486,
+    "dev_ratio": 0.514,
+    "dev_source_breakdown": {
+      "2_hypernym_d1": 3,
+      "10_sibling": 15
+    },
+    "step_contributions": {
+      "0_seed": 9,
+      "2_hypernym_d1": 3,
+      "3_hyponym_d1": 4,
+      "4_hyponym_d2": 0,
+      "5_hyponym_d3": 0,
+      "6_derivational": 3,
+      "7_similar_to": 1,
+      "8_also_see": 0,
+      "9_antonym": 0,
+      "10_sibling": 15,
+      "11_pertainym": 0,
+      "12_verb_group": 0
+    }
+  },
+  "meta": {
+    "generator": "wn_lexicon_entry.py",
+    "version": "1.0.0",
+    "design": "3AI consolidated: Core/Deviation pool separation"
+  }
+}

@@ -1,0 +1,545 @@
+{
+  "atom_id": "MAT.naked",
+  "category": "MAT",
+  "seed_count": 6,
+  "total_keys": 31,
+  "pos_counts": {
+    "adj": 12,
+    "v": 9,
+    "n": 10
+  },
+  "source_counts": {
+    "0_seed": 10,
+    "2_hypernym_d1": 5,
+    "6_derivational": 4,
+    "7_similar_to": 5,
+    "10_sibling": 11
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 8,
+      "words": [
+        "naked(adj)",
+        "raw(adj)",
+        "defenseless(adj)",
+        "bare(adj)",
+        "mere(adj)",
+        "simple(adj)",
+        "bare(v)",
+        "nude(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 5,
+      "words": [
+        "uncover(v)",
+        "expose(v)",
+        "nakedness(n)",
+        "nudity(n)",
+        "nudeness(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 2,
+      "words": [
+        "defenselessness(n)",
+        "nude(adj)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 5,
+      "words": [
+        "unassisted(adj)",
+        "overt(adj)",
+        "open(adj)",
+        "unprotected(adj)",
+        "plain(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 11,
+      "words": [
+        "unwrap(v)",
+        "undo(v)",
+        "unmask(v)",
+        "unclothe(v)",
+        "unveil(v)",
+        "undrape(v)",
+        "bareness(n)",
+        "raw(n)",
+        "altogether(n)",
+        "birthday suit(n)",
+        "undress(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "altogether",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "nakedness.n.01",
+          "via_synset": "raw.n.01"
+        }
+      ],
+      "definition": "informal terms for nakedness"
+    },
+    {
+      "lemma": "bare",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bare.s.04",
+          "via_synset": "bare.s.04"
+        }
+      ],
+      "definition": "apart from anything else; without additions or modifications"
+    },
+    {
+      "lemma": "bare",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bare.v.01",
+          "via_synset": "bare.v.01"
+        }
+      ],
+      "definition": "lay bare"
+    },
+    {
+      "lemma": "bareness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "nakedness.n.01",
+          "via_synset": "bareness.n.02"
+        }
+      ],
+      "definition": "the state of being unclothed and exposed (especially of a part of the body)"
+    },
+    {
+      "lemma": "birthday suit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "nakedness.n.01",
+          "via_synset": "raw.n.01"
+        }
+      ],
+      "definition": "informal terms for nakedness"
+    },
+    {
+      "lemma": "defenseless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "naked.s.02",
+          "via_synset": "naked.s.02"
+        }
+      ],
+      "definition": "having no protecting or concealing cover; - Shakespeare"
+    },
+    {
+      "lemma": "defenselessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "naked.s.02",
+          "via_synset": "defenselessness.n.01"
+        }
+      ],
+      "definition": "the property of being helpless in the face of attack"
+    },
+    {
+      "lemma": "expose",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "bare.v.01",
+          "via_synset": "uncover.v.02"
+        }
+      ],
+      "definition": "remove all or part of one's clothes to show one's body"
+    },
+    {
+      "lemma": "mere",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bare.s.04",
+          "via_synset": "bare.s.04"
+        }
+      ],
+      "definition": "apart from anything else; without additions or modifications"
+    },
+    {
+      "lemma": "naked",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "naked.s.03",
+          "via_synset": "naked.s.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "naked.s.04",
+          "via_synset": "naked.s.04"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "naked.s.02",
+          "via_synset": "naked.s.02"
+        }
+      ],
+      "definition": "(of the eye or ear e.g.) without the aid of an optical or acoustical device or instrument"
+    },
+    {
+      "lemma": "nakedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "nude.n.02",
+          "via_synset": "nakedness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "naked.s.04",
+          "via_synset": "openness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "naked.s.02",
+          "via_synset": "nakedness.n.01"
+        }
+      ],
+      "definition": "the state of being without clothing or covering of any kind"
+    },
+    {
+      "lemma": "nude",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "nude.n.02",
+          "via_synset": "bare.s.01"
+        }
+      ],
+      "definition": "completely unclothed"
+    },
+    {
+      "lemma": "nude",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "nude.n.02",
+          "via_synset": "nude.n.02"
+        }
+      ],
+      "definition": "without clothing (especially in the phrase `in the nude')"
+    },
+    {
+      "lemma": "nudeness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "nude.n.02",
+          "via_synset": "nakedness.n.01"
+        }
+      ],
+      "definition": "the state of being without clothing or covering of any kind"
+    },
+    {
+      "lemma": "nudity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "nude.n.02",
+          "via_synset": "nakedness.n.01"
+        }
+      ],
+      "definition": "the state of being without clothing or covering of any kind"
+    },
+    {
+      "lemma": "open",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "naked.s.04",
+          "via_synset": "overt.a.01"
+        }
+      ],
+      "definition": "open and observable; not secret or hidden"
+    },
+    {
+      "lemma": "overt",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "naked.s.04",
+          "via_synset": "overt.a.01"
+        }
+      ],
+      "definition": "open and observable; not secret or hidden"
+    },
+    {
+      "lemma": "plain",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bare.s.04",
+          "via_synset": "plain.a.02"
+        }
+      ],
+      "definition": "not elaborate or elaborated; simple"
+    },
+    {
+      "lemma": "raw",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "naked.s.04",
+          "via_synset": "naked.s.04"
+        }
+      ],
+      "definition": "devoid of elaboration or diminution or concealment; bare and pure"
+    },
+    {
+      "lemma": "raw",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "nakedness.n.01",
+          "via_synset": "raw.n.01"
+        }
+      ],
+      "definition": "informal terms for nakedness"
+    },
+    {
+      "lemma": "simple",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bare.s.04",
+          "via_synset": "bare.s.04"
+        }
+      ],
+      "definition": "apart from anything else; without additions or modifications"
+    },
+    {
+      "lemma": "unassisted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "naked.s.03",
+          "via_synset": "unassisted.a.02"
+        }
+      ],
+      "definition": "lacking help"
+    },
+    {
+      "lemma": "unclothe",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "uncover.v.02",
+          "via_synset": "unclothe.v.02"
+        }
+      ],
+      "definition": "take the covers off"
+    },
+    {
+      "lemma": "uncover",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "bare.v.01",
+          "via_synset": "uncover.v.02"
+        }
+      ],
+      "definition": "remove all or part of one's clothes to show one's body"
+    },
+    {
+      "lemma": "undo",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "uncover.v.02",
+          "via_synset": "unwrap.v.01"
+        }
+      ],
+      "definition": "remove the outer cover or wrapping of"
+    },
+    {
+      "lemma": "undrape",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "uncover.v.02",
+          "via_synset": "undrape.v.01"
+        }
+      ],
+      "definition": "strip something of drapery"
+    },
+    {
+      "lemma": "undress",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "nakedness.n.01",
+          "via_synset": "undress.n.01"
+        }
+      ],
+      "definition": "partial or complete nakedness"
+    },
+    {
+      "lemma": "unmask",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "uncover.v.02",
+          "via_synset": "unmask.v.02"
+        }
+      ],
+      "definition": "take the mask off"
+    },
+    {
+      "lemma": "unprotected",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "naked.s.02",
+          "via_synset": "unprotected.a.01"
+        }
+      ],
+      "definition": "lacking protection or defense"
+    },
+    {
+      "lemma": "unveil",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "uncover.v.02",
+          "via_synset": "unveil.v.01"
+        }
+      ],
+      "definition": "remove the veil from"
+    },
+    {
+      "lemma": "unwrap",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "uncover.v.02",
+          "via_synset": "unwrap.v.01"
+        }
+      ],
+      "definition": "remove the outer cover or wrapping of"
+    }
+  ]
+}

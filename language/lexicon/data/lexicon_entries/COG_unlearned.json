@@ -1,0 +1,601 @@
+{
+  "atom": "COG.unlearned",
+  "category": "COG",
+  "status": "proposed",
+  "symmetric_pair": "COG.learn",
+  "definition_en": "Lacking education or knowledge; not having learned.",
+  "seed_synsets": [],
+  "core_pool": {
+    "rules": [
+      "0_seed",
+      "3_hyponym_d1",
+      "6_derivational",
+      "7_similar_to",
+      "9_antonym"
+    ],
+    "count": 21,
+    "words": [
+      {
+        "w": "conditioned",
+        "pos": "adj",
+        "src": "9_antonym",
+        "definition": "established by conditioning or learning",
+        "path_count": 1,
+        "sources": [
+          "9_antonym"
+        ]
+      },
+      {
+        "w": "ignorance",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "the lack of knowledge or education",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "ignorant",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "uneducated in general; lacking knowledge or sophistication",
+        "path_count": 4,
+        "sources": [
+          "0_seed",
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "ignorantness",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "ignorance (especially of orthodox beliefs)",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "illiterate",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "uneducated in the fundamentals of a given art or branch of learning; lacking knowledge of a specific field",
+        "path_count": 3,
+        "sources": [
+          "0_seed",
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "innate",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "not established by conditioning or learning",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "innateness",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "the quality of being innate",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "naive",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "inexperienced",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "nescience",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "ignorance (especially of orthodox beliefs)",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "nescient",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "uneducated in general; lacking knowledge or sophistication",
+        "path_count": 2,
+        "sources": [
+          "0_seed",
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "unconditioned",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "not established by conditioning or learning",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "undereducated",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "poorly or insufficiently educated",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "uneducated",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "not having a good education",
+        "path_count": 3,
+        "sources": [
+          "0_seed",
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "unlearn",
+        "pos": "v",
+        "src": "0_seed",
+        "definition": "try to forget; put out of one's memory or knowledge",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "unlearned",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "not established by conditioning or learning",
+        "path_count": 3,
+        "sources": [
+          "0_seed",
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "unlettered",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "uneducated in general; lacking knowledge or sophistication",
+        "path_count": 2,
+        "sources": [
+          "0_seed",
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "unschooled",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "lacking in schooling",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "unstudied",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "lacking knowledge gained by study often in a particular field",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "untaught",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "lacking in schooling",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "unteach",
+        "pos": "v",
+        "src": "0_seed",
+        "definition": "cause to disbelieve; teach someone the contrary of what he or she had learned earlier",
+        "path_count": 2,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "untutored",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "lacking in schooling",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      }
+    ]
+  },
+  "deviation_pool": {
+    "rules": [
+      "10_sibling",
+      "11_pertainym",
+      "12_verb_group",
+      "2_hypernym_d1",
+      "4_hyponym_d2",
+      "5_hyponym_d3",
+      "8_also_see"
+    ],
+    "count": 32,
+    "words": [
+      {
+        "w": "bury",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "dismiss from the mind; stop remembering",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "catechise",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "give religious instructions to",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "catechize",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "give religious instructions to",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "coach",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "teach and supervise (someone); act as a trainer or coach (to), as in sports",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "condition",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "establish a conditioned response",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "develop",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "create by training and teaching",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "drill",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "teach by repetition",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "edify",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make understand",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "educate",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "create by training and teaching",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "enlighten",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make understand",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "forget",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "dismiss from the mind; stop remembering",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "ground",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "instruct someone in the fundamentals of a subject",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "indoctrinate",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "teach doctrines to; teach uncritically",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "induct",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "introduce or initiate",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "innumerate",
+        "pos": "adj",
+        "src": "8_also_see",
+        "definition": "lacking knowledge and understanding of mathematical concepts and methods",
+        "path_count": 1,
+        "sources": [
+          "8_also_see"
+        ]
+      },
+      {
+        "w": "instruct",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "impart skills or knowledge to",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "lecture",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "deliver a lecture or talk",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "mentor",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "serve as a teacher or trusted counselor",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "noncivilised",
+        "pos": "adj",
+        "src": "8_also_see",
+        "definition": "not having a high state of culture and social development",
+        "path_count": 1,
+        "sources": [
+          "8_also_see"
+        ]
+      },
+      {
+        "w": "noncivilized",
+        "pos": "adj",
+        "src": "8_also_see",
+        "definition": "not having a high state of culture and social development",
+        "path_count": 1,
+        "sources": [
+          "8_also_see"
+        ]
+      },
+      {
+        "w": "prepare",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "create by training and teaching",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "reinforce",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "strengthen and support with rewards",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "repress",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "put out of one's consciousness",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "reward",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "strengthen and support with rewards",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "spoonfeed",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "teach without challenging the students",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "suppress",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "put out of one's consciousness",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "talk",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "deliver a lecture or talk",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "teach",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "impart skills or knowledge to",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "train",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "teach and supervise (someone); act as a trainer or coach (to), as in sports",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "tutor",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "be a tutor to someone; give individual instruction",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "unenlightened",
+        "pos": "adj",
+        "src": "8_also_see",
+        "definition": "not enlightened; ignorant",
+        "path_count": 1,
+        "sources": [
+          "8_also_see"
+        ]
+      },
+      {
+        "w": "uninformed",
+        "pos": "adj",
+        "src": "8_also_see",
+        "definition": "not informed; lacking in knowledge or information",
+        "path_count": 1,
+        "sources": [
+          "8_also_see"
+        ]
+      }
+    ]
+  },
+  "deviation_stats": {
+    "total_candidates": 53,
+    "core_count": 21,
+    "dev_count": 32,
+    "core_ratio": 0.396,
+    "dev_ratio": 0.604,
+    "dev_source_breakdown": {
+      "2_hypernym_d1": 4,
+      "10_sibling": 23,
+      "8_also_see": 5
+    },
+    "step_contributions": {
+      "0_seed": 10,
+      "2_hypernym_d1": 4,
+      "3_hyponym_d1": 0,
+      "4_hyponym_d2": 0,
+      "5_hyponym_d3": 0,
+      "6_derivational": 4,
+      "7_similar_to": 6,
+      "8_also_see": 5,
+      "9_antonym": 1,
+      "10_sibling": 23,
+      "11_pertainym": 0,
+      "12_verb_group": 0
+    }
+  },
+  "meta": {
+    "generator": "wn_lexicon_entry.py",
+    "version": "1.0.0",
+    "design": "3AI consolidated: Core/Deviation pool separation"
+  }
+}

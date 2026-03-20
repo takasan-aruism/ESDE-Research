@@ -1,0 +1,4875 @@
+{
+  "atom_id": "EMO.respect",
+  "category": "EMO",
+  "seed_count": 6,
+  "total_keys": 333,
+  "pos_counts": {
+    "n": 273,
+    "v": 55,
+    "adj": 5
+  },
+  "source_counts": {
+    "0_seed": 15,
+    "2_hypernym_d1": 19,
+    "6_derivational": 32,
+    "3_hyponym_d1": 36,
+    "10_sibling": 98,
+    "4_hyponym_d2": 41,
+    "5_hyponym_d3": 110,
+    "9_antonym": 2
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 11,
+      "words": [
+        "respect(n)",
+        "esteem(n)",
+        "regard(n)",
+        "deference(n)",
+        "admire(v)",
+        "look up to(v)",
+        "award(n)",
+        "accolade(n)",
+        "honor(n)",
+        "honour(n)",
+        "laurels(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 19,
+      "words": [
+        "attitude(n)",
+        "mental attitude(n)",
+        "politeness(n)",
+        "civility(n)",
+        "affection(n)",
+        "affectionateness(n)",
+        "fondness(n)",
+        "tenderness(n)",
+        "heart(n)",
+        "warmness(n)",
+        "warmheartedness(n)",
+        "philia(n)",
+        "respect(v)",
+        "esteem(v)",
+        "value(v)",
+        "prize(v)",
+        "prise(v)",
+        "look(v)",
+        "symbol(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 35,
+      "words": [
+        "estimate(n)",
+        "estimation(n)",
+        "props(n)",
+        "last respects(n)",
+        "court(n)",
+        "homage(n)",
+        "envy(v)",
+        "letter(n)",
+        "varsity letter(n)",
+        "trophy(n)",
+        "Emmy(n)",
+        "mention(n)",
+        "honorable mention(n)",
+        "Nobel prize(n)",
+        "decoration(n)",
+        "laurel wreath(n)",
+        "medal(n)",
+        "medallion(n)",
+        "palm(n)",
+        "ribbon(n)",
+        "prize(n)",
+        "aliyah(n)",
+        "pennant(n)",
+        "crown(n)",
+        "Academy Award(n)",
+        "Oscar(n)",
+        "academic degree(n)",
+        "degree(n)",
+        "Prix Goncourt(n)",
+        "cachet(n)",
+        "seal(n)",
+        "seal of approval(n)",
+        "citation(n)",
+        "commendation(n)",
+        "Prix de Rome(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 41,
+      "words": [
+        "reputation(n)",
+        "report(n)",
+        "Distinguished Service Medal(n)",
+        "Bronze Star Medal(n)",
+        "Bronze Star(n)",
+        "Oak Leaf Cluster(n)",
+        "Distinguished Service Cross(n)",
+        "Victoria Cross(n)",
+        "Navy Cross(n)",
+        "Distinguished Conduct Medal(n)",
+        "Croix de Guerre(n)",
+        "Medal of Honor(n)",
+        "Congressional Medal of Honor(n)",
+        "Air Medal(n)",
+        "Distinguished Flying Cross(n)",
+        "Silver Star Medal(n)",
+        "Silver Star(n)",
+        "Distinguished Service Order(n)",
+        "Order of the Purple Heart(n)",
+        "Purple Heart(n)",
+        "Medaille Militaire(n)",
+        "gold medal(n)",
+        "booby prize(n)",
+        "apple of discord(n)",
+        "silver medal(n)",
+        "silver(n)",
+        "cup(n)",
+        "loving cup(n)",
+        "bronze medal(n)",
+        "associate degree(n)",
+        "associate(n)",
+        "bachelor's degree(n)",
+        "baccalaureate(n)",
+        "honours(n)",
+        "honours degree(n)",
+        "honorary degree(n)",
+        "honoris causa(n)",
+        "master's degree(n)",
+        "law degree(n)",
+        "doctor's degree(n)",
+        "doctorate(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 109,
+      "words": [
+        "wooden spoon(n)",
+        "Davis Cup(n)",
+        "Associate in Applied Science(n)",
+        "AAS(n)",
+        "Associate in Arts(n)",
+        "AA(n)",
+        "Associate in Nursing(n)",
+        "AN(n)",
+        "Bachelor of Divinity(n)",
+        "BD(n)",
+        "Bachelor of Arts in Nursing(n)",
+        "BAN(n)",
+        "Bachelor of Science in Engineering(n)",
+        "Bachelor of Arts(n)",
+        "BA(n)",
+        "Artium Baccalaurens(n)",
+        "AB(n)",
+        "Bachelor of Science(n)",
+        "BS(n)",
+        "SB(n)",
+        "Bachelor of Science in Architecture(n)",
+        "BSArch(n)",
+        "Bachelor of Theology(n)",
+        "ThB(n)",
+        "Bachelor of Arts in Library Science(n)",
+        "ABLS(n)",
+        "Bachelor of Music(n)",
+        "BMus(n)",
+        "Bachelor of Literature(n)",
+        "BLitt(n)",
+        "Bachelor of Naval Science(n)",
+        "BNS(n)",
+        "Bachelor of Medicine(n)",
+        "MB(n)",
+        "first(n)",
+        "first-class honours degree(n)",
+        "Doctor of Fine Arts(n)",
+        "Doctor of Science(n)",
+        "DS(n)",
+        "ScD(n)",
+        "Doctor of Humane Letters(n)",
+        "Doctor of Arts(n)",
+        "ArtsD(n)",
+        "Doctor of Humanities(n)",
+        "Doctor of Laws(n)",
+        "LLD(n)",
+        "Master of Science(n)",
+        "MS(n)",
+        "SM(n)",
+        "MSc(n)",
+        "Master of Education(n)",
+        "MEd(n)",
+        "Master of Arts(n)",
+        "MA(n)",
+        "Artium Magister(n)",
+        "AM(n)",
+        "Master in Public Affairs(n)",
+        "Master of Arts in Teaching(n)",
+        "MAT(n)",
+        "Master of Divinity(n)",
+        "MDiv(n)",
+        "Master of Fine Arts(n)",
+        "MFA(n)",
+        "Master of Literature(n)",
+        "MLitt(n)",
+        "Master of Science in Engineering(n)",
+        "Master of Arts in Library Science(n)",
+        "MALS(n)",
+        "Master of Library Science(n)",
+        "MLS(n)",
+        "Master in Business(n)",
+        "Master in Business Administration(n)",
+        "MBA(n)",
+        "Master of Architecture(n)",
+        "MArch(n)",
+        "Master of Theology(n)",
+        "ThM(n)",
+        "Bachelor of Laws(n)",
+        "LLB(n)",
+        "Master of Laws(n)",
+        "LLM(n)",
+        "Doctor of Dental Medicine(n)",
+        "DMD(n)",
+        "Doctor of Sacred Theology(n)",
+        "STD(n)",
+        "Doctor of Osteopathy(n)",
+        "DO(n)",
+        "Doctor of Theology(n)",
+        "ThD(n)",
+        "D.A.(n)",
+        "Doctor of Public Health(n)",
+        "DPH(n)",
+        "Doctor of Medicine(n)",
+        "MD(n)",
+        "Doctor of Music(n)",
+        "DMus(n)",
+        "MusD(n)",
+        "Doctor of Dental Surgery(n)",
+        "DDS(n)",
+        "Doctor of Optometry(n)",
+        "OD(n)",
+        "Doctor of Philosophy(n)",
+        "Doctor of Musical Arts(n)",
+        "AMusD(n)",
+        "Doctor of Divinity(n)",
+        "DD(n)",
+        "Doctor of Education(n)",
+        "EdD(n)",
+        "DEd(n)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 22,
+      "words": [
+        "award(v)",
+        "honorary(adj)",
+        "honor(v)",
+        "honour(v)",
+        "Nobelist(n)",
+        "decorate(v)",
+        "medallist(n)",
+        "medalist(n)",
+        "envy(n)",
+        "deferential(adj)",
+        "deferent(adj)",
+        "seal(v)",
+        "court(v)",
+        "admirer(n)",
+        "cite(v)",
+        "commend(v)",
+        "admiration(n)",
+        "mention(v)",
+        "letter(v)",
+        "doctorial(adj)",
+        "doctoral(adj)",
+        "repute(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 2,
+      "words": [
+        "disrespect(n)",
+        "look down on(v)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 94,
+      "words": [
+        "defensive(n)",
+        "defensive attitude(n)",
+        "position(n)",
+        "stance(n)",
+        "posture(n)",
+        "irreverence(n)",
+        "tolerance(n)",
+        "paternalism(n)",
+        "culture(n)",
+        "southernism(n)",
+        "mentality(n)",
+        "outlook(n)",
+        "mindset(n)",
+        "mind-set(n)",
+        "hardball(n)",
+        "intolerance(n)",
+        "credence(n)",
+        "acceptance(n)",
+        "orientation(n)",
+        "reverence(n)",
+        "inclination(n)",
+        "disposition(n)",
+        "tendency(n)",
+        "high horse(n)",
+        "devoir(n)",
+        "courtesy(n)",
+        "soft spot(n)",
+        "attachment(n)",
+        "fond regard(n)",
+        "protectiveness(n)",
+        "think the world of(v)",
+        "reverence(v)",
+        "fear(v)",
+        "revere(v)",
+        "venerate(v)",
+        "look around(v)",
+        "gloat(v)",
+        "peep(v)",
+        "look back(v)",
+        "look backward(v)",
+        "regard(v)",
+        "consider(v)",
+        "peer(v)",
+        "glance(v)",
+        "peek(v)",
+        "glint(v)",
+        "leer(v)",
+        "eye(v)",
+        "eyeball(v)",
+        "look away(v)",
+        "gaze(v)",
+        "stare(v)",
+        "give the eye(v)",
+        "give the once over(v)",
+        "goggle(v)",
+        "gape(v)",
+        "gawp(v)",
+        "gawk(v)",
+        "squint(v)",
+        "take a look(v)",
+        "have a look(v)",
+        "get a load(v)",
+        "ogle(v)",
+        "give the glad eye(v)",
+        "monogram(n)",
+        "type(n)",
+        "identifier(n)",
+        "lingam(n)",
+        "mantle(n)",
+        "nose(n)",
+        "pound(n)",
+        "pound sign(n)",
+        "dollar(n)",
+        "dollar mark(n)",
+        "dollar sign(n)",
+        "marker(n)",
+        "marking(n)",
+        "mark(n)",
+        "symbolism(n)",
+        "stigma(n)",
+        "brand(n)",
+        "stain(n)",
+        "token(n)",
+        "item(n)",
+        "variable(n)",
+        "stamp(n)",
+        "impression(n)",
+        "icon(n)",
+        "written symbol(n)",
+        "printed symbol(n)",
+        "numeral(n)",
+        "number(n)",
+        "stock symbol(n)",
+        "staff(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "AA",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "associate_degree.n.01",
+          "via_synset": "associate_in_arts.n.01"
+        }
+      ],
+      "definition": "an associate degree in arts"
+    },
+    {
+      "lemma": "AAS",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "associate_degree.n.01",
+          "via_synset": "associate_in_applied_science.n.01"
+        }
+      ],
+      "definition": "an associate degree in applied science"
+    },
+    {
+      "lemma": "AB",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_arts.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in arts and sciences"
+    },
+    {
+      "lemma": "ABLS",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_arts_in_library_science.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in library science"
+    },
+    {
+      "lemma": "academic degree",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "academic_degree.n.01"
+        }
+      ],
+      "definition": "an award conferred by a college or university signifying that the recipient has satisfactorily completed a course of study"
+    },
+    {
+      "lemma": "Academy Award",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "academy_award.n.01"
+        }
+      ],
+      "definition": "an annual award by the Academy of Motion Picture Arts and Sciences for achievements in motion picture production and performance"
+    },
+    {
+      "lemma": "acceptance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "credence.n.01"
+        }
+      ],
+      "definition": "the mental attitude that something is believable and should be accepted as true"
+    },
+    {
+      "lemma": "accolade",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "award.n.02",
+          "via_synset": "award.n.02"
+        }
+      ],
+      "definition": "a tangible symbol signifying approval or distinction"
+    },
+    {
+      "lemma": "admiration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "admire.v.01",
+          "via_synset": "admiration.n.01"
+        }
+      ],
+      "definition": "a feeling of delighted approval and liking"
+    },
+    {
+      "lemma": "admire",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "admire.v.01",
+          "via_synset": "admire.v.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "admire.v.02",
+          "via_synset": "admire.v.02"
+        }
+      ],
+      "definition": "feel admiration for"
+    },
+    {
+      "lemma": "admirer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "admire.v.02",
+          "via_synset": "admirer.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "admire.v.02",
+          "via_synset": "admirer.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "admire.v.01",
+          "via_synset": "supporter.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "admire.v.01",
+          "via_synset": "admirer.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "admire.v.01",
+          "via_synset": "admirer.n.03"
+        }
+      ],
+      "definition": "a person who admires; someone who esteems or respects or approves"
+    },
+    {
+      "lemma": "affection",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "regard.n.06",
+          "via_synset": "affection.n.01"
+        }
+      ],
+      "definition": "a positive feeling of liking"
+    },
+    {
+      "lemma": "affectionateness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "regard.n.06",
+          "via_synset": "affection.n.01"
+        }
+      ],
+      "definition": "a positive feeling of liking"
+    },
+    {
+      "lemma": "Air Medal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "decoration.n.02",
+          "via_synset": "air_medal.n.01"
+        }
+      ],
+      "definition": "a United States Air Force decoration for meritorious achievement while participating in an aerial flight"
+    },
+    {
+      "lemma": "aliyah",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "aliyah.n.01"
+        }
+      ],
+      "definition": "(Judaism) the honor of being called up to the reading desk in the synagogue to read from the Torah"
+    },
+    {
+      "lemma": "AM",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_arts.n.01"
+        }
+      ],
+      "definition": "a master's degree in arts and sciences"
+    },
+    {
+      "lemma": "AMusD",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_musical_arts.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in musical arts"
+    },
+    {
+      "lemma": "AN",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "associate_degree.n.01",
+          "via_synset": "associate_in_nursing.n.01"
+        }
+      ],
+      "definition": "an associate degree in nursing"
+    },
+    {
+      "lemma": "apple of discord",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "trophy.n.02",
+          "via_synset": "apple_of_discord.n.01"
+        }
+      ],
+      "definition": "(classical mythology) a golden apple thrown into a banquet of the gods by Eris (goddess of discord--who had not been invited); the apple had `for the fairest' written on it and Hera and Athena and Aphrodite all claimed it; when Paris (prince of Troy) awarded it to Aphrodite it began a chain of events that led to the Trojan War"
+    },
+    {
+      "lemma": "Artium Baccalaurens",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_arts.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in arts and sciences"
+    },
+    {
+      "lemma": "Artium Magister",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_arts.n.01"
+        }
+      ],
+      "definition": "a master's degree in arts and sciences"
+    },
+    {
+      "lemma": "ArtsD",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "honorary_degree.n.01",
+          "via_synset": "doctor_of_arts.n.01"
+        }
+      ],
+      "definition": "an honorary arts degree"
+    },
+    {
+      "lemma": "associate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "academic_degree.n.01",
+          "via_synset": "associate_degree.n.01"
+        }
+      ],
+      "definition": "a degree granted by a two-year college on successful completion of the undergraduates course of studies"
+    },
+    {
+      "lemma": "associate degree",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "academic_degree.n.01",
+          "via_synset": "associate_degree.n.01"
+        }
+      ],
+      "definition": "a degree granted by a two-year college on successful completion of the undergraduates course of studies"
+    },
+    {
+      "lemma": "Associate in Applied Science",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "associate_degree.n.01",
+          "via_synset": "associate_in_applied_science.n.01"
+        }
+      ],
+      "definition": "an associate degree in applied science"
+    },
+    {
+      "lemma": "Associate in Arts",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "associate_degree.n.01",
+          "via_synset": "associate_in_arts.n.01"
+        }
+      ],
+      "definition": "an associate degree in arts"
+    },
+    {
+      "lemma": "Associate in Nursing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "associate_degree.n.01",
+          "via_synset": "associate_in_nursing.n.01"
+        }
+      ],
+      "definition": "an associate degree in nursing"
+    },
+    {
+      "lemma": "attachment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affection.n.01",
+          "via_synset": "attachment.n.01"
+        }
+      ],
+      "definition": "a feeling of affection for a person or an institution"
+    },
+    {
+      "lemma": "attitude",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "respect.n.03",
+          "via_synset": "attitude.n.01"
+        }
+      ],
+      "definition": "a complex mental state involving beliefs and feelings and values and dispositions to act in certain ways"
+    },
+    {
+      "lemma": "award",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "award.n.02",
+          "via_synset": "award.n.02"
+        }
+      ],
+      "definition": "a tangible symbol signifying approval or distinction"
+    },
+    {
+      "lemma": "award",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "award.n.02",
+          "via_synset": "award.v.01"
+        }
+      ],
+      "definition": "give, especially as an honor or reward"
+    },
+    {
+      "lemma": "BA",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_arts.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in arts and sciences"
+    },
+    {
+      "lemma": "baccalaureate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "academic_degree.n.01",
+          "via_synset": "bachelor's_degree.n.01"
+        }
+      ],
+      "definition": "an academic degree conferred on someone who has successfully completed undergraduate studies"
+    },
+    {
+      "lemma": "Bachelor of Arts",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_arts.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in arts and sciences"
+    },
+    {
+      "lemma": "Bachelor of Arts in Library Science",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_arts_in_library_science.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in library science"
+    },
+    {
+      "lemma": "Bachelor of Arts in Nursing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_arts_in_nursing.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in nursing"
+    },
+    {
+      "lemma": "Bachelor of Divinity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_divinity.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in religion"
+    },
+    {
+      "lemma": "Bachelor of Laws",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "law_degree.n.01",
+          "via_synset": "bachelor_of_laws.n.01"
+        }
+      ],
+      "definition": "a three-year law degree"
+    },
+    {
+      "lemma": "Bachelor of Literature",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_literature.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in literature"
+    },
+    {
+      "lemma": "Bachelor of Medicine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_medicine.n.01"
+        }
+      ],
+      "definition": "(a British degree) a bachelor's degree in medicine"
+    },
+    {
+      "lemma": "Bachelor of Music",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_music.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in music"
+    },
+    {
+      "lemma": "Bachelor of Naval Science",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_naval_science.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in naval science"
+    },
+    {
+      "lemma": "Bachelor of Science",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_science.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in science"
+    },
+    {
+      "lemma": "Bachelor of Science in Architecture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_science_in_architecture.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in architecture"
+    },
+    {
+      "lemma": "Bachelor of Science in Engineering",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_science_in_engineering.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in engineering"
+    },
+    {
+      "lemma": "Bachelor of Theology",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_theology.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in theology"
+    },
+    {
+      "lemma": "bachelor's degree",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "academic_degree.n.01",
+          "via_synset": "bachelor's_degree.n.01"
+        }
+      ],
+      "definition": "an academic degree conferred on someone who has successfully completed undergraduate studies"
+    },
+    {
+      "lemma": "BAN",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_arts_in_nursing.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in nursing"
+    },
+    {
+      "lemma": "BD",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_divinity.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in religion"
+    },
+    {
+      "lemma": "BLitt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_literature.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in literature"
+    },
+    {
+      "lemma": "BMus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_music.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in music"
+    },
+    {
+      "lemma": "BNS",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_naval_science.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in naval science"
+    },
+    {
+      "lemma": "booby prize",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "trophy.n.02",
+          "via_synset": "booby_prize.n.01"
+        }
+      ],
+      "definition": "a prize given to one who finishes last in a contest"
+    },
+    {
+      "lemma": "brand",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "mark.n.06"
+        }
+      ],
+      "definition": "a symbol of disgrace or infamy; --Genesis"
+    },
+    {
+      "lemma": "bronze medal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "trophy.n.02",
+          "via_synset": "bronze_medal.n.01"
+        }
+      ],
+      "definition": "a trophy made of bronze (or having the appearance of bronze) that is usually awarded for winning third place in a competition"
+    },
+    {
+      "lemma": "Bronze Star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "decoration.n.02",
+          "via_synset": "bronze_star_medal.n.01"
+        }
+      ],
+      "definition": "a United States military decoration awarded for meritorious service (except in aerial flight)"
+    },
+    {
+      "lemma": "Bronze Star Medal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "decoration.n.02",
+          "via_synset": "bronze_star_medal.n.01"
+        }
+      ],
+      "definition": "a United States military decoration awarded for meritorious service (except in aerial flight)"
+    },
+    {
+      "lemma": "BS",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_science.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in science"
+    },
+    {
+      "lemma": "BSArch",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_science_in_architecture.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in architecture"
+    },
+    {
+      "lemma": "cachet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "cachet.n.01"
+        }
+      ],
+      "definition": "an indication of approved or superior status"
+    },
+    {
+      "lemma": "citation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "citation.n.01"
+        }
+      ],
+      "definition": "an official award (as for bravery or service) usually given as formal public statement"
+    },
+    {
+      "lemma": "cite",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "citation.n.01",
+          "via_synset": "mention.v.03"
+        }
+      ],
+      "definition": "commend"
+    },
+    {
+      "lemma": "civility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "deference.n.01",
+          "via_synset": "politeness.n.02"
+        }
+      ],
+      "definition": "the act of showing regard for others"
+    },
+    {
+      "lemma": "commend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "citation.n.01",
+          "via_synset": "commend.v.01"
+        }
+      ],
+      "definition": "express approval of"
+    },
+    {
+      "lemma": "commendation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "citation.n.01"
+        }
+      ],
+      "definition": "an official award (as for bravery or service) usually given as formal public statement"
+    },
+    {
+      "lemma": "Congressional Medal of Honor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "decoration.n.02",
+          "via_synset": "medal_of_honor.n.01"
+        }
+      ],
+      "definition": "the highest U.S. military decoration awarded for bravery and valor in action `above and beyond the call of duty'"
+    },
+    {
+      "lemma": "consider",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "regard.v.02"
+        }
+      ],
+      "definition": "look at attentively"
+    },
+    {
+      "lemma": "court",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "deference.n.01",
+          "via_synset": "court.n.11"
+        }
+      ],
+      "definition": "respectful deference"
+    },
+    {
+      "lemma": "court",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "court.n.11",
+          "via_synset": "woo.v.01"
+        }
+      ],
+      "definition": "seek someone's favor"
+    },
+    {
+      "lemma": "courtesy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "politeness.n.02",
+          "via_synset": "courtesy.n.01"
+        }
+      ],
+      "definition": "a courteous or respectful or considerate act"
+    },
+    {
+      "lemma": "credence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "credence.n.01"
+        }
+      ],
+      "definition": "the mental attitude that something is believable and should be accepted as true"
+    },
+    {
+      "lemma": "Croix de Guerre",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "decoration.n.02",
+          "via_synset": "croix_de_guerre.n.01"
+        }
+      ],
+      "definition": "a French military decoration for gallantry"
+    },
+    {
+      "lemma": "crown",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "pennant.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "crown.n.01"
+        }
+      ],
+      "definition": "the award given to the champion"
+    },
+    {
+      "lemma": "culture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "culture.n.06"
+        }
+      ],
+      "definition": "the attitudes and behavior that are characteristic of a particular social group or organization"
+    },
+    {
+      "lemma": "cup",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "trophy.n.02",
+          "via_synset": "cup.n.08"
+        }
+      ],
+      "definition": "a large metal vessel with two handles that is awarded as a trophy to the winner of a competition"
+    },
+    {
+      "lemma": "D.A.",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_arts.n.02"
+        }
+      ],
+      "definition": "a doctor's degree with a special disciplinary focus"
+    },
+    {
+      "lemma": "Davis Cup",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "cup.n.08",
+          "via_synset": "davis_cup.n.01"
+        }
+      ],
+      "definition": "cup awarded for the annual international team tennis competition"
+    },
+    {
+      "lemma": "DD",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_divinity.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in religion"
+    },
+    {
+      "lemma": "DDS",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_dental_surgery.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in dental surgery"
+    },
+    {
+      "lemma": "decorate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "decoration.n.02",
+          "via_synset": "decorate.v.03"
+        }
+      ],
+      "definition": "award a mark of honor, such as a medal, to"
+    },
+    {
+      "lemma": "decoration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "decoration.n.02"
+        }
+      ],
+      "definition": "an award for winning a championship or commemorating some other event"
+    },
+    {
+      "lemma": "DEd",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_education.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in education"
+    },
+    {
+      "lemma": "defensive",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "defensive.n.01"
+        }
+      ],
+      "definition": "an attitude of defensiveness (especially in the phrase `on the defensive')"
+    },
+    {
+      "lemma": "defensive attitude",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "defensive.n.01"
+        }
+      ],
+      "definition": "an attitude of defensiveness (especially in the phrase `on the defensive')"
+    },
+    {
+      "lemma": "deference",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "deference.n.01",
+          "via_synset": "deference.n.01"
+        }
+      ],
+      "definition": "a courteous expression (by word or deed) of esteem or regard"
+    },
+    {
+      "lemma": "deferent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deference.n.01",
+          "via_synset": "deferent.s.01"
+        }
+      ],
+      "definition": "showing deference"
+    },
+    {
+      "lemma": "deferential",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deference.n.01",
+          "via_synset": "deferent.s.01"
+        }
+      ],
+      "definition": "showing deference"
+    },
+    {
+      "lemma": "degree",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "academic_degree.n.01"
+        }
+      ],
+      "definition": "an award conferred by a college or university signifying that the recipient has satisfactorily completed a course of study"
+    },
+    {
+      "lemma": "devoir",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "politeness.n.02",
+          "via_synset": "devoir.n.01"
+        }
+      ],
+      "definition": "formal expression of respect"
+    },
+    {
+      "lemma": "disposition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "inclination.n.01"
+        }
+      ],
+      "definition": "an attitude of mind especially one that favors one alternative over others"
+    },
+    {
+      "lemma": "disrespect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "respect.n.03",
+          "via_synset": "disrespect.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "disrespect.n.02"
+        }
+      ],
+      "definition": "a disrespectful mental attitude"
+    },
+    {
+      "lemma": "Distinguished Conduct Medal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "decoration.n.02",
+          "via_synset": "distinguished_conduct_medal.n.01"
+        }
+      ],
+      "definition": "a British military decoration for distinguished conduct in the field"
+    },
+    {
+      "lemma": "Distinguished Flying Cross",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "decoration.n.02",
+          "via_synset": "distinguished_flying_cross.n.01"
+        }
+      ],
+      "definition": "a United States Air Force decoration for heroism while participating in an aerial flight"
+    },
+    {
+      "lemma": "Distinguished Service Cross",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "decoration.n.02",
+          "via_synset": "distinguished_service_cross.n.01"
+        }
+      ],
+      "definition": "a United States Army decoration for extraordinary heroism against an armed enemy"
+    },
+    {
+      "lemma": "Distinguished Service Medal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "decoration.n.02",
+          "via_synset": "distinguished_service_medal.n.01"
+        }
+      ],
+      "definition": "a United States military decoration for meritorious service in wartime duty of great responsibility"
+    },
+    {
+      "lemma": "Distinguished Service Order",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "decoration.n.02",
+          "via_synset": "distinguished_service_order.n.01"
+        }
+      ],
+      "definition": "a British military decoration for special service in action"
+    },
+    {
+      "lemma": "DMD",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_dental_medicine.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in dental medicine"
+    },
+    {
+      "lemma": "DMus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_music.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in music"
+    },
+    {
+      "lemma": "DO",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_osteopathy.n.01"
+        }
+      ],
+      "definition": "doctor's degree in osteopathy"
+    },
+    {
+      "lemma": "Doctor of Arts",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "honorary_degree.n.01",
+          "via_synset": "doctor_of_arts.n.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_arts.n.02"
+        }
+      ],
+      "definition": "an honorary arts degree"
+    },
+    {
+      "lemma": "Doctor of Dental Medicine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_dental_medicine.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in dental medicine"
+    },
+    {
+      "lemma": "Doctor of Dental Surgery",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_dental_surgery.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in dental surgery"
+    },
+    {
+      "lemma": "Doctor of Divinity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_divinity.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in religion"
+    },
+    {
+      "lemma": "Doctor of Education",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_education.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in education"
+    },
+    {
+      "lemma": "Doctor of Fine Arts",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "honorary_degree.n.01",
+          "via_synset": "doctor_of_fine_arts.n.01"
+        }
+      ],
+      "definition": "an honorary degree in fine arts"
+    },
+    {
+      "lemma": "Doctor of Humane Letters",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "honorary_degree.n.01",
+          "via_synset": "doctor_of_humane_letters.n.01"
+        }
+      ],
+      "definition": "an honorary degree in letters"
+    },
+    {
+      "lemma": "Doctor of Humanities",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "honorary_degree.n.01",
+          "via_synset": "doctor_of_humanities.n.01"
+        }
+      ],
+      "definition": "an honorary degree in the humanities"
+    },
+    {
+      "lemma": "Doctor of Laws",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "honorary_degree.n.01",
+          "via_synset": "doctor_of_laws.n.01"
+        }
+      ],
+      "definition": "an honorary law degree"
+    },
+    {
+      "lemma": "Doctor of Medicine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_medicine.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in medicine"
+    },
+    {
+      "lemma": "Doctor of Music",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_music.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in music"
+    },
+    {
+      "lemma": "Doctor of Musical Arts",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_musical_arts.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in musical arts"
+    },
+    {
+      "lemma": "Doctor of Optometry",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_optometry.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in optometry"
+    },
+    {
+      "lemma": "Doctor of Osteopathy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_osteopathy.n.01"
+        }
+      ],
+      "definition": "doctor's degree in osteopathy"
+    },
+    {
+      "lemma": "Doctor of Philosophy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_philosophy.n.01"
+        }
+      ],
+      "definition": "a doctorate awarded for original contributions to knowledge"
+    },
+    {
+      "lemma": "Doctor of Public Health",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_public_health.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in preventive medicine"
+    },
+    {
+      "lemma": "Doctor of Sacred Theology",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_sacred_theology.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in theology"
+    },
+    {
+      "lemma": "Doctor of Science",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "honorary_degree.n.01",
+          "via_synset": "doctor_of_science.n.01"
+        }
+      ],
+      "definition": "an honorary degree in science"
+    },
+    {
+      "lemma": "Doctor of Theology",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_theology.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in theology"
+    },
+    {
+      "lemma": "doctor's degree",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "academic_degree.n.01",
+          "via_synset": "doctor's_degree.n.01"
+        }
+      ],
+      "definition": "one of the highest earned academic degrees conferred by a university"
+    },
+    {
+      "lemma": "doctoral",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctoral.a.01"
+        }
+      ],
+      "definition": "of or relating to a doctor or doctorate"
+    },
+    {
+      "lemma": "doctorate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "academic_degree.n.01",
+          "via_synset": "doctor's_degree.n.01"
+        }
+      ],
+      "definition": "one of the highest earned academic degrees conferred by a university"
+    },
+    {
+      "lemma": "doctorial",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctoral.a.01"
+        }
+      ],
+      "definition": "of or relating to a doctor or doctorate"
+    },
+    {
+      "lemma": "dollar",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "dollar.n.04"
+        }
+      ],
+      "definition": "a symbol of commercialism or greed"
+    },
+    {
+      "lemma": "dollar mark",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "dollar.n.04"
+        }
+      ],
+      "definition": "a symbol of commercialism or greed"
+    },
+    {
+      "lemma": "dollar sign",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "dollar.n.04"
+        }
+      ],
+      "definition": "a symbol of commercialism or greed"
+    },
+    {
+      "lemma": "DPH",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_public_health.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in preventive medicine"
+    },
+    {
+      "lemma": "DS",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "honorary_degree.n.01",
+          "via_synset": "doctor_of_science.n.01"
+        }
+      ],
+      "definition": "an honorary degree in science"
+    },
+    {
+      "lemma": "EdD",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_education.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in education"
+    },
+    {
+      "lemma": "Emmy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "emmy.n.01"
+        }
+      ],
+      "definition": "an annual award by the Academy of Television Arts and Sciences for outstanding achievements in television"
+    },
+    {
+      "lemma": "envy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "envy.v.01",
+          "via_synset": "envy.n.01"
+        }
+      ],
+      "definition": "a feeling of grudging admiration and desire to have something that is possessed by another"
+    },
+    {
+      "lemma": "envy",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "admire.v.01",
+          "via_synset": "envy.v.01"
+        }
+      ],
+      "definition": "feel envious towards; admire enviously"
+    },
+    {
+      "lemma": "esteem",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "respect.n.03",
+          "via_synset": "respect.n.03"
+        }
+      ],
+      "definition": "an attitude of admiration or esteem"
+    },
+    {
+      "lemma": "esteem",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "admire.v.01",
+          "via_synset": "respect.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "respect.n.03",
+          "via_synset": "respect.v.01"
+        }
+      ],
+      "definition": "regard highly; think much of"
+    },
+    {
+      "lemma": "estimate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "respect.n.03",
+          "via_synset": "estimate.n.05"
+        }
+      ],
+      "definition": "the respect with which a person is held"
+    },
+    {
+      "lemma": "estimation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "respect.n.03",
+          "via_synset": "estimate.n.05"
+        }
+      ],
+      "definition": "the respect with which a person is held"
+    },
+    {
+      "lemma": "eye",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "eye.v.01"
+        }
+      ],
+      "definition": "look at"
+    },
+    {
+      "lemma": "eyeball",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "eye.v.01"
+        }
+      ],
+      "definition": "look at"
+    },
+    {
+      "lemma": "fear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respect.v.01",
+          "via_synset": "reverence.v.01"
+        }
+      ],
+      "definition": "regard with feelings of respect and reverence; consider hallowed or exalted or be in awe of"
+    },
+    {
+      "lemma": "first",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "honours.n.01",
+          "via_synset": "first.n.05"
+        }
+      ],
+      "definition": "an honours degree of the highest class"
+    },
+    {
+      "lemma": "first-class honours degree",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "honours.n.01",
+          "via_synset": "first.n.05"
+        }
+      ],
+      "definition": "an honours degree of the highest class"
+    },
+    {
+      "lemma": "fond regard",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affection.n.01",
+          "via_synset": "attachment.n.01"
+        }
+      ],
+      "definition": "a feeling of affection for a person or an institution"
+    },
+    {
+      "lemma": "fondness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "regard.n.06",
+          "via_synset": "affection.n.01"
+        }
+      ],
+      "definition": "a positive feeling of liking"
+    },
+    {
+      "lemma": "gape",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "goggle.v.01"
+        }
+      ],
+      "definition": "look with amazement; look stupidly"
+    },
+    {
+      "lemma": "gawk",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "goggle.v.01"
+        }
+      ],
+      "definition": "look with amazement; look stupidly"
+    },
+    {
+      "lemma": "gawp",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "goggle.v.01"
+        }
+      ],
+      "definition": "look with amazement; look stupidly"
+    },
+    {
+      "lemma": "gaze",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "gaze.v.01"
+        }
+      ],
+      "definition": "look at with fixed eyes"
+    },
+    {
+      "lemma": "get a load",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "take_a_look.v.01"
+        }
+      ],
+      "definition": "look at with attention"
+    },
+    {
+      "lemma": "give the eye",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "give_the_eye.v.01"
+        }
+      ],
+      "definition": "look at with a critical eye"
+    },
+    {
+      "lemma": "give the glad eye",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "give_the_glad_eye.v.01"
+        }
+      ],
+      "definition": "look seductively at someone"
+    },
+    {
+      "lemma": "give the once over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "give_the_eye.v.01"
+        }
+      ],
+      "definition": "look at with a critical eye"
+    },
+    {
+      "lemma": "glance",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "glance.v.01"
+        }
+      ],
+      "definition": "throw a glance at; take a brief look at"
+    },
+    {
+      "lemma": "glint",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "glance.v.01"
+        }
+      ],
+      "definition": "throw a glance at; take a brief look at"
+    },
+    {
+      "lemma": "gloat",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "gloat.v.02"
+        }
+      ],
+      "definition": "gaze at or think about something with great self-satisfaction, gratification, or joy"
+    },
+    {
+      "lemma": "goggle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "goggle.v.01"
+        }
+      ],
+      "definition": "look with amazement; look stupidly"
+    },
+    {
+      "lemma": "gold medal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "trophy.n.02",
+          "via_synset": "gold_medal.n.01"
+        }
+      ],
+      "definition": "a trophy made of gold (or having the appearance of gold) that is usually awarded for winning first place in a competition"
+    },
+    {
+      "lemma": "hardball",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "hardball.n.01"
+        }
+      ],
+      "definition": "a no-nonsense attitude in business or politics"
+    },
+    {
+      "lemma": "have a look",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "take_a_look.v.01"
+        }
+      ],
+      "definition": "look at with attention"
+    },
+    {
+      "lemma": "heart",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "regard.n.06",
+          "via_synset": "affection.n.01"
+        }
+      ],
+      "definition": "a positive feeling of liking"
+    },
+    {
+      "lemma": "high horse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "high_horse.n.01"
+        }
+      ],
+      "definition": "an attitude of arrogant superiority"
+    },
+    {
+      "lemma": "homage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "deference.n.01",
+          "via_synset": "court.n.11"
+        }
+      ],
+      "definition": "respectful deference"
+    },
+    {
+      "lemma": "honor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "award.n.02",
+          "via_synset": "award.n.02"
+        }
+      ],
+      "definition": "a tangible symbol signifying approval or distinction"
+    },
+    {
+      "lemma": "honor",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "award.n.02",
+          "via_synset": "honor.v.01"
+        }
+      ],
+      "definition": "bestow honor or rewards upon"
+    },
+    {
+      "lemma": "honorable mention",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "mention.n.03"
+        }
+      ],
+      "definition": "an official recognition of merit"
+    },
+    {
+      "lemma": "honorary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "award.n.02",
+          "via_synset": "honorary.s.01"
+        }
+      ],
+      "definition": "given as an honor without the normal duties"
+    },
+    {
+      "lemma": "honorary degree",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "academic_degree.n.01",
+          "via_synset": "honorary_degree.n.01"
+        }
+      ],
+      "definition": "a degree conferred to honor the recipient"
+    },
+    {
+      "lemma": "honoris causa",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "academic_degree.n.01",
+          "via_synset": "honorary_degree.n.01"
+        }
+      ],
+      "definition": "a degree conferred to honor the recipient"
+    },
+    {
+      "lemma": "honour",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "award.n.02",
+          "via_synset": "award.n.02"
+        }
+      ],
+      "definition": "a tangible symbol signifying approval or distinction"
+    },
+    {
+      "lemma": "honour",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "award.n.02",
+          "via_synset": "honor.v.01"
+        }
+      ],
+      "definition": "bestow honor or rewards upon"
+    },
+    {
+      "lemma": "honours",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "academic_degree.n.01",
+          "via_synset": "honours.n.01"
+        }
+      ],
+      "definition": "a university degree with honors"
+    },
+    {
+      "lemma": "honours degree",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "academic_degree.n.01",
+          "via_synset": "honours.n.01"
+        }
+      ],
+      "definition": "a university degree with honors"
+    },
+    {
+      "lemma": "icon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "icon.n.01"
+        }
+      ],
+      "definition": "(computer science) a graphic symbol (usually a simple picture) that denotes a program or a command or a data file or a concept in a graphical user interface"
+    },
+    {
+      "lemma": "identifier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "identifier.n.01"
+        }
+      ],
+      "definition": "a symbol that establishes the identity of the one bearing it"
+    },
+    {
+      "lemma": "impression",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "stamp.n.03"
+        }
+      ],
+      "definition": "a symbol that is the result of printing or engraving"
+    },
+    {
+      "lemma": "inclination",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "inclination.n.01"
+        }
+      ],
+      "definition": "an attitude of mind especially one that favors one alternative over others"
+    },
+    {
+      "lemma": "intolerance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "intolerance.n.02"
+        }
+      ],
+      "definition": "unwillingness to recognize and respect differences in opinions or beliefs"
+    },
+    {
+      "lemma": "irreverence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "irreverence.n.01"
+        }
+      ],
+      "definition": "an irreverent mental attitude"
+    },
+    {
+      "lemma": "item",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "token.n.01"
+        }
+      ],
+      "definition": "an individual instance of a type of symbol"
+    },
+    {
+      "lemma": "last respects",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "deference.n.01",
+          "via_synset": "last_respects.n.01"
+        }
+      ],
+      "definition": "the act of expressing respect for someone who has died"
+    },
+    {
+      "lemma": "laurel wreath",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "decoration.n.02"
+        }
+      ],
+      "definition": "an award for winning a championship or commemorating some other event"
+    },
+    {
+      "lemma": "laurels",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "award.n.02",
+          "via_synset": "award.n.02"
+        }
+      ],
+      "definition": "a tangible symbol signifying approval or distinction"
+    },
+    {
+      "lemma": "law degree",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "academic_degree.n.01",
+          "via_synset": "law_degree.n.01"
+        }
+      ],
+      "definition": "degree conferred on someone who successfully completes law school"
+    },
+    {
+      "lemma": "leer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "leer.v.01"
+        }
+      ],
+      "definition": "look suggestively or obliquely; look or gaze with a sly, immodest, or malign expression"
+    },
+    {
+      "lemma": "letter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "letter.n.05"
+        }
+      ],
+      "definition": "an award earned by participation in a school sport"
+    },
+    {
+      "lemma": "letter",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "letter.n.05",
+          "via_synset": "letter.v.01"
+        }
+      ],
+      "definition": "win an athletic letter"
+    },
+    {
+      "lemma": "lingam",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "lingam.n.01"
+        }
+      ],
+      "definition": "the Hindu phallic symbol of Siva"
+    },
+    {
+      "lemma": "LLB",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "law_degree.n.01",
+          "via_synset": "bachelor_of_laws.n.01"
+        }
+      ],
+      "definition": "a three-year law degree"
+    },
+    {
+      "lemma": "LLD",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "honorary_degree.n.01",
+          "via_synset": "doctor_of_laws.n.01"
+        }
+      ],
+      "definition": "an honorary law degree"
+    },
+    {
+      "lemma": "LLM",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "law_degree.n.01",
+          "via_synset": "master_of_laws.n.01"
+        }
+      ],
+      "definition": "an advanced law degree"
+    },
+    {
+      "lemma": "look",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "admire.v.02",
+          "via_synset": "look.v.01"
+        }
+      ],
+      "definition": "perceive with attention; direct one's gaze towards"
+    },
+    {
+      "lemma": "look around",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "look_around.v.01"
+        }
+      ],
+      "definition": "look about oneself"
+    },
+    {
+      "lemma": "look away",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "look_away.v.01"
+        }
+      ],
+      "definition": "avert one's gaze"
+    },
+    {
+      "lemma": "look back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "look_back.v.01"
+        }
+      ],
+      "definition": "look towards one's back"
+    },
+    {
+      "lemma": "look backward",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "look_back.v.01"
+        }
+      ],
+      "definition": "look towards one's back"
+    },
+    {
+      "lemma": "look down on",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "admire.v.01",
+          "via_synset": "look_down_on.v.01"
+        }
+      ],
+      "definition": "regard with contempt"
+    },
+    {
+      "lemma": "look up to",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "admire.v.01",
+          "via_synset": "admire.v.01"
+        }
+      ],
+      "definition": "feel admiration for"
+    },
+    {
+      "lemma": "loving cup",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "trophy.n.02",
+          "via_synset": "cup.n.08"
+        }
+      ],
+      "definition": "a large metal vessel with two handles that is awarded as a trophy to the winner of a competition"
+    },
+    {
+      "lemma": "MA",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_arts.n.01"
+        }
+      ],
+      "definition": "a master's degree in arts and sciences"
+    },
+    {
+      "lemma": "MALS",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_arts_in_library_science.n.01"
+        }
+      ],
+      "definition": "a master's degree in library science"
+    },
+    {
+      "lemma": "mantle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "mantle.n.01"
+        }
+      ],
+      "definition": "the cloak as a symbol of authority"
+    },
+    {
+      "lemma": "MArch",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_architecture.n.01"
+        }
+      ],
+      "definition": "a degree granted for the successful completion of advanced study of architecture"
+    },
+    {
+      "lemma": "mark",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "marker.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "mark.n.06"
+        }
+      ],
+      "definition": "a distinguishing symbol"
+    },
+    {
+      "lemma": "marker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "marker.n.02"
+        }
+      ],
+      "definition": "a distinguishing symbol"
+    },
+    {
+      "lemma": "marking",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "marker.n.02"
+        }
+      ],
+      "definition": "a distinguishing symbol"
+    },
+    {
+      "lemma": "Master in Business",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_in_business.n.01"
+        }
+      ],
+      "definition": "a master's degree in business"
+    },
+    {
+      "lemma": "Master in Business Administration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_in_business.n.01"
+        }
+      ],
+      "definition": "a master's degree in business"
+    },
+    {
+      "lemma": "Master in Public Affairs",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_in_public_affairs.n.01"
+        }
+      ],
+      "definition": "a master's degree in questions of public concern"
+    },
+    {
+      "lemma": "Master of Architecture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_architecture.n.01"
+        }
+      ],
+      "definition": "a degree granted for the successful completion of advanced study of architecture"
+    },
+    {
+      "lemma": "Master of Arts",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_arts.n.01"
+        }
+      ],
+      "definition": "a master's degree in arts and sciences"
+    },
+    {
+      "lemma": "Master of Arts in Library Science",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_arts_in_library_science.n.01"
+        }
+      ],
+      "definition": "a master's degree in library science"
+    },
+    {
+      "lemma": "Master of Arts in Teaching",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_arts_in_teaching.n.01"
+        }
+      ],
+      "definition": "a master's degree in teaching"
+    },
+    {
+      "lemma": "Master of Divinity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_divinity.n.01"
+        }
+      ],
+      "definition": "a master's degree in religion"
+    },
+    {
+      "lemma": "Master of Education",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_education.n.01"
+        }
+      ],
+      "definition": "a master's degree in education"
+    },
+    {
+      "lemma": "Master of Fine Arts",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_fine_arts.n.01"
+        }
+      ],
+      "definition": "a master's degree in fine arts"
+    },
+    {
+      "lemma": "Master of Laws",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "law_degree.n.01",
+          "via_synset": "master_of_laws.n.01"
+        }
+      ],
+      "definition": "an advanced law degree"
+    },
+    {
+      "lemma": "Master of Library Science",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_library_science.n.01"
+        }
+      ],
+      "definition": "a master's degree in library science"
+    },
+    {
+      "lemma": "Master of Literature",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_literature.n.01"
+        }
+      ],
+      "definition": "a master's degree in literature"
+    },
+    {
+      "lemma": "Master of Science",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_science.n.01"
+        }
+      ],
+      "definition": "a master's degree in science"
+    },
+    {
+      "lemma": "Master of Science in Engineering",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_science_in_engineering.n.01"
+        }
+      ],
+      "definition": "a master's degree in engineering"
+    },
+    {
+      "lemma": "Master of Theology",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_theology.n.01"
+        }
+      ],
+      "definition": "a master's degree in theology"
+    },
+    {
+      "lemma": "master's degree",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "academic_degree.n.01",
+          "via_synset": "master's_degree.n.01"
+        }
+      ],
+      "definition": "an academic degree higher than a bachelor's degree but lower than a doctor's degree"
+    },
+    {
+      "lemma": "MAT",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_arts_in_teaching.n.01"
+        }
+      ],
+      "definition": "a master's degree in teaching"
+    },
+    {
+      "lemma": "MB",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_medicine.n.01"
+        }
+      ],
+      "definition": "(a British degree) a bachelor's degree in medicine"
+    },
+    {
+      "lemma": "MBA",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_in_business.n.01"
+        }
+      ],
+      "definition": "a master's degree in business"
+    },
+    {
+      "lemma": "MD",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_medicine.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in medicine"
+    },
+    {
+      "lemma": "MDiv",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_divinity.n.01"
+        }
+      ],
+      "definition": "a master's degree in religion"
+    },
+    {
+      "lemma": "MEd",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_education.n.01"
+        }
+      ],
+      "definition": "a master's degree in education"
+    },
+    {
+      "lemma": "Medaille Militaire",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "decoration.n.02",
+          "via_synset": "medaille_militaire.n.01"
+        }
+      ],
+      "definition": "a French military decoration"
+    },
+    {
+      "lemma": "medal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "decoration.n.02"
+        }
+      ],
+      "definition": "an award for winning a championship or commemorating some other event"
+    },
+    {
+      "lemma": "Medal of Honor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "decoration.n.02",
+          "via_synset": "medal_of_honor.n.01"
+        }
+      ],
+      "definition": "the highest U.S. military decoration awarded for bravery and valor in action `above and beyond the call of duty'"
+    },
+    {
+      "lemma": "medalist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "decoration.n.02",
+          "via_synset": "medalist.n.01"
+        }
+      ],
+      "definition": "someone who has won a medal"
+    },
+    {
+      "lemma": "medallion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "decoration.n.02"
+        }
+      ],
+      "definition": "an award for winning a championship or commemorating some other event"
+    },
+    {
+      "lemma": "medallist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "decoration.n.02",
+          "via_synset": "medalist.n.01"
+        }
+      ],
+      "definition": "someone who has won a medal"
+    },
+    {
+      "lemma": "mental attitude",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "respect.n.03",
+          "via_synset": "attitude.n.01"
+        }
+      ],
+      "definition": "a complex mental state involving beliefs and feelings and values and dispositions to act in certain ways"
+    },
+    {
+      "lemma": "mentality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "mentality.n.01"
+        }
+      ],
+      "definition": "a habitual or characteristic mental attitude that determines how you will interpret and respond to situations"
+    },
+    {
+      "lemma": "mention",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "mention.n.03"
+        }
+      ],
+      "definition": "an official recognition of merit"
+    },
+    {
+      "lemma": "mention",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mention.n.03",
+          "via_synset": "mention.v.03"
+        }
+      ],
+      "definition": "commend"
+    },
+    {
+      "lemma": "MFA",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_fine_arts.n.01"
+        }
+      ],
+      "definition": "a master's degree in fine arts"
+    },
+    {
+      "lemma": "mind-set",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "mentality.n.01"
+        }
+      ],
+      "definition": "a habitual or characteristic mental attitude that determines how you will interpret and respond to situations"
+    },
+    {
+      "lemma": "mindset",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "mentality.n.01"
+        }
+      ],
+      "definition": "a habitual or characteristic mental attitude that determines how you will interpret and respond to situations"
+    },
+    {
+      "lemma": "MLitt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_literature.n.01"
+        }
+      ],
+      "definition": "a master's degree in literature"
+    },
+    {
+      "lemma": "MLS",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_library_science.n.01"
+        }
+      ],
+      "definition": "a master's degree in library science"
+    },
+    {
+      "lemma": "monogram",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "monogram.n.01"
+        }
+      ],
+      "definition": "a graphic symbol consisting of 2 or more letters combined (usually your initials); printed on stationery or embroidered on clothing"
+    },
+    {
+      "lemma": "MS",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_science.n.01"
+        }
+      ],
+      "definition": "a master's degree in science"
+    },
+    {
+      "lemma": "MSc",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_science.n.01"
+        }
+      ],
+      "definition": "a master's degree in science"
+    },
+    {
+      "lemma": "MusD",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_music.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in music"
+    },
+    {
+      "lemma": "Navy Cross",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "decoration.n.02",
+          "via_synset": "navy_cross.n.01"
+        }
+      ],
+      "definition": "a United States Navy decoration for extraordinary heroism against an armed enemy"
+    },
+    {
+      "lemma": "Nobel prize",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "nobel_prize.n.01"
+        }
+      ],
+      "definition": "an annual award for outstanding contributions to chemistry or physics or physiology and medicine or literature or economics or peace"
+    },
+    {
+      "lemma": "Nobelist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "nobel_prize.n.01",
+          "via_synset": "nobelist.n.01"
+        }
+      ],
+      "definition": "winner of a Nobel prize"
+    },
+    {
+      "lemma": "nose",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "nose.n.05"
+        }
+      ],
+      "definition": "a symbol of inquisitiveness"
+    },
+    {
+      "lemma": "number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "numeral.n.01"
+        }
+      ],
+      "definition": "a symbol used to represent a number"
+    },
+    {
+      "lemma": "numeral",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "numeral.n.01"
+        }
+      ],
+      "definition": "a symbol used to represent a number"
+    },
+    {
+      "lemma": "Oak Leaf Cluster",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "decoration.n.02",
+          "via_synset": "oak_leaf_cluster.n.01"
+        }
+      ],
+      "definition": "a United States military decoration consisting of bronze or silver oak leaves and acorns awarded to anyone who has won a given medal before"
+    },
+    {
+      "lemma": "OD",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_optometry.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in optometry"
+    },
+    {
+      "lemma": "ogle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "ogle.v.01"
+        }
+      ],
+      "definition": "look at with amorous intentions"
+    },
+    {
+      "lemma": "Order of the Purple Heart",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "decoration.n.02",
+          "via_synset": "order_of_the_purple_heart.n.01"
+        }
+      ],
+      "definition": "a United States military decoration awarded to any member of the armed forces who is wounded in action"
+    },
+    {
+      "lemma": "orientation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "orientation.n.02"
+        }
+      ],
+      "definition": "an integrated set of attitudes and beliefs"
+    },
+    {
+      "lemma": "Oscar",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "academy_award.n.01"
+        }
+      ],
+      "definition": "an annual award by the Academy of Motion Picture Arts and Sciences for achievements in motion picture production and performance"
+    },
+    {
+      "lemma": "outlook",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "mentality.n.01"
+        }
+      ],
+      "definition": "a habitual or characteristic mental attitude that determines how you will interpret and respond to situations"
+    },
+    {
+      "lemma": "palm",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "decoration.n.02"
+        }
+      ],
+      "definition": "an award for winning a championship or commemorating some other event"
+    },
+    {
+      "lemma": "paternalism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "paternalism.n.01"
+        }
+      ],
+      "definition": "the attitude (of a person or a government) that subordinates should be controlled in a fatherly way for their own good"
+    },
+    {
+      "lemma": "peek",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "glance.v.01"
+        }
+      ],
+      "definition": "throw a glance at; take a brief look at"
+    },
+    {
+      "lemma": "peep",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "peep.v.01"
+        }
+      ],
+      "definition": "look furtively"
+    },
+    {
+      "lemma": "peer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "peer.v.01"
+        }
+      ],
+      "definition": "look searchingly"
+    },
+    {
+      "lemma": "pennant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "pennant.n.01"
+        }
+      ],
+      "definition": "the award given to the champion"
+    },
+    {
+      "lemma": "philia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "regard.n.06",
+          "via_synset": "affection.n.01"
+        }
+      ],
+      "definition": "a positive feeling of liking"
+    },
+    {
+      "lemma": "politeness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "deference.n.01",
+          "via_synset": "politeness.n.02"
+        }
+      ],
+      "definition": "the act of showing regard for others"
+    },
+    {
+      "lemma": "position",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "position.n.12"
+        }
+      ],
+      "definition": "a rationalized mental attitude"
+    },
+    {
+      "lemma": "posture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "position.n.12"
+        }
+      ],
+      "definition": "a rationalized mental attitude"
+    },
+    {
+      "lemma": "pound",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "pound.n.12"
+        }
+      ],
+      "definition": "a symbol for a unit of currency (especially for the pound sterling in Great Britain)"
+    },
+    {
+      "lemma": "pound sign",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "pound.n.12"
+        }
+      ],
+      "definition": "a symbol for a unit of currency (especially for the pound sterling in Great Britain)"
+    },
+    {
+      "lemma": "printed symbol",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "written_symbol.n.01"
+        }
+      ],
+      "definition": "a written or printed symbol"
+    },
+    {
+      "lemma": "prise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "admire.v.01",
+          "via_synset": "respect.v.01"
+        }
+      ],
+      "definition": "regard highly; think much of"
+    },
+    {
+      "lemma": "Prix de Rome",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "prix_de_rome.n.01"
+        }
+      ],
+      "definition": "an annual prize awarded by the French government in a competition of painters and artists and sculptors and musicians and architects; the winner in each category receives support for a period of study in Rome"
+    },
+    {
+      "lemma": "Prix Goncourt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "prix_goncourt.n.01"
+        }
+      ],
+      "definition": "an award given annually for contributions to French literature"
+    },
+    {
+      "lemma": "prize",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "trophy.n.02"
+        }
+      ],
+      "definition": "something given as a token of victory"
+    },
+    {
+      "lemma": "prize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "admire.v.01",
+          "via_synset": "respect.v.01"
+        }
+      ],
+      "definition": "regard highly; think much of"
+    },
+    {
+      "lemma": "props",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "deference.n.01",
+          "via_synset": "props.n.01"
+        }
+      ],
+      "definition": "proper respect"
+    },
+    {
+      "lemma": "protectiveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affection.n.01",
+          "via_synset": "protectiveness.n.01"
+        }
+      ],
+      "definition": "a feeling of protective affection"
+    },
+    {
+      "lemma": "Purple Heart",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "decoration.n.02",
+          "via_synset": "order_of_the_purple_heart.n.01"
+        }
+      ],
+      "definition": "a United States military decoration awarded to any member of the armed forces who is wounded in action"
+    },
+    {
+      "lemma": "regard",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "respect.n.03",
+          "via_synset": "respect.n.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "regard.n.06",
+          "via_synset": "regard.n.06"
+        }
+      ],
+      "definition": "an attitude of admiration or esteem"
+    },
+    {
+      "lemma": "regard",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "regard.v.02"
+        }
+      ],
+      "definition": "look at attentively"
+    },
+    {
+      "lemma": "report",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "estimate.n.05",
+          "via_synset": "reputation.n.03"
+        }
+      ],
+      "definition": "the general estimation that the public has for a person"
+    },
+    {
+      "lemma": "reputation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "estimate.n.05",
+          "via_synset": "reputation.n.03"
+        }
+      ],
+      "definition": "the general estimation that the public has for a person"
+    },
+    {
+      "lemma": "repute",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reputation.n.03",
+          "via_synset": "think_of.v.03"
+        }
+      ],
+      "definition": "look on as or consider"
+    },
+    {
+      "lemma": "respect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "respect.n.03",
+          "via_synset": "respect.n.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "deference.n.01",
+          "via_synset": "deference.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "regard.n.06",
+          "via_synset": "regard.n.06"
+        }
+      ],
+      "definition": "an attitude of admiration or esteem"
+    },
+    {
+      "lemma": "respect",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "admire.v.01",
+          "via_synset": "respect.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "respect.n.03",
+          "via_synset": "respect.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "respect.n.03",
+          "via_synset": "respect.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deference.n.01",
+          "via_synset": "respect.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deference.n.01",
+          "via_synset": "respect.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "regard.n.06",
+          "via_synset": "respect.v.02"
+        }
+      ],
+      "definition": "regard highly; think much of"
+    },
+    {
+      "lemma": "revere",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respect.v.01",
+          "via_synset": "reverence.v.01"
+        }
+      ],
+      "definition": "regard with feelings of respect and reverence; consider hallowed or exalted or be in awe of"
+    },
+    {
+      "lemma": "reverence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "reverence.n.02"
+        }
+      ],
+      "definition": "a reverent mental attitude"
+    },
+    {
+      "lemma": "reverence",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respect.v.01",
+          "via_synset": "reverence.v.01"
+        }
+      ],
+      "definition": "regard with feelings of respect and reverence; consider hallowed or exalted or be in awe of"
+    },
+    {
+      "lemma": "ribbon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "decoration.n.02"
+        }
+      ],
+      "definition": "an award for winning a championship or commemorating some other event"
+    },
+    {
+      "lemma": "SB",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_science.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in science"
+    },
+    {
+      "lemma": "ScD",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "honorary_degree.n.01",
+          "via_synset": "doctor_of_science.n.01"
+        }
+      ],
+      "definition": "an honorary degree in science"
+    },
+    {
+      "lemma": "seal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "cachet.n.01"
+        }
+      ],
+      "definition": "an indication of approved or superior status"
+    },
+    {
+      "lemma": "seal",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cachet.n.01",
+          "via_synset": "seal.v.03"
+        }
+      ],
+      "definition": "decide irrevocably"
+    },
+    {
+      "lemma": "seal of approval",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "cachet.n.01"
+        }
+      ],
+      "definition": "an indication of approved or superior status"
+    },
+    {
+      "lemma": "silver",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "trophy.n.02",
+          "via_synset": "silver_medal.n.01"
+        }
+      ],
+      "definition": "a trophy made of silver (or having the appearance of silver) that is usually awarded for winning second place in a competition"
+    },
+    {
+      "lemma": "silver medal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "trophy.n.02",
+          "via_synset": "silver_medal.n.01"
+        }
+      ],
+      "definition": "a trophy made of silver (or having the appearance of silver) that is usually awarded for winning second place in a competition"
+    },
+    {
+      "lemma": "Silver Star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "decoration.n.02",
+          "via_synset": "silver_star_medal.n.01"
+        }
+      ],
+      "definition": "a United States military decoration for gallantry in action"
+    },
+    {
+      "lemma": "Silver Star Medal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "decoration.n.02",
+          "via_synset": "silver_star_medal.n.01"
+        }
+      ],
+      "definition": "a United States military decoration for gallantry in action"
+    },
+    {
+      "lemma": "SM",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_science.n.01"
+        }
+      ],
+      "definition": "a master's degree in science"
+    },
+    {
+      "lemma": "soft spot",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affection.n.01",
+          "via_synset": "soft_spot.n.02"
+        }
+      ],
+      "definition": "a sentimental affection"
+    },
+    {
+      "lemma": "southernism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "southernism.n.02"
+        }
+      ],
+      "definition": "an attitude characteristic of Southerners (especially in the US)"
+    },
+    {
+      "lemma": "squint",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "squint.v.02"
+        }
+      ],
+      "definition": "be cross-eyed; have a squint or strabismus"
+    },
+    {
+      "lemma": "staff",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "staff.n.05"
+        }
+      ],
+      "definition": "a rod carried as a symbol"
+    },
+    {
+      "lemma": "stain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "mark.n.06"
+        }
+      ],
+      "definition": "a symbol of disgrace or infamy; --Genesis"
+    },
+    {
+      "lemma": "stamp",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "stamp.n.03"
+        }
+      ],
+      "definition": "a symbol that is the result of printing or engraving"
+    },
+    {
+      "lemma": "stance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "position.n.12"
+        }
+      ],
+      "definition": "a rationalized mental attitude"
+    },
+    {
+      "lemma": "stare",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "gaze.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "stare.v.02"
+        }
+      ],
+      "definition": "look at with fixed eyes"
+    },
+    {
+      "lemma": "STD",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_sacred_theology.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in theology"
+    },
+    {
+      "lemma": "stigma",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "mark.n.06"
+        }
+      ],
+      "definition": "a symbol of disgrace or infamy; --Genesis"
+    },
+    {
+      "lemma": "stock symbol",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "stock_symbol.n.01"
+        }
+      ],
+      "definition": "the letters used to identify listed companies on the securities exchanges where they are traded"
+    },
+    {
+      "lemma": "symbol",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "award.n.02",
+          "via_synset": "symbol.n.01"
+        }
+      ],
+      "definition": "an arbitrary sign (written or printed) that has acquired a conventional significance"
+    },
+    {
+      "lemma": "symbolism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "symbolism.n.01"
+        }
+      ],
+      "definition": "a system of symbols and symbolic representations"
+    },
+    {
+      "lemma": "take a look",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "look.v.01",
+          "via_synset": "take_a_look.v.01"
+        }
+      ],
+      "definition": "look at with attention"
+    },
+    {
+      "lemma": "tendency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "inclination.n.01"
+        }
+      ],
+      "definition": "an attitude of mind especially one that favors one alternative over others"
+    },
+    {
+      "lemma": "tenderness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "regard.n.06",
+          "via_synset": "affection.n.01"
+        }
+      ],
+      "definition": "a positive feeling of liking"
+    },
+    {
+      "lemma": "ThB",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bachelor's_degree.n.01",
+          "via_synset": "bachelor_of_theology.n.01"
+        }
+      ],
+      "definition": "a bachelor's degree in theology"
+    },
+    {
+      "lemma": "ThD",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "doctor's_degree.n.01",
+          "via_synset": "doctor_of_theology.n.01"
+        }
+      ],
+      "definition": "a doctor's degree in theology"
+    },
+    {
+      "lemma": "think the world of",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respect.v.01",
+          "via_synset": "think_the_world_of.v.01"
+        }
+      ],
+      "definition": "esteem very highly"
+    },
+    {
+      "lemma": "ThM",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "master's_degree.n.01",
+          "via_synset": "master_of_theology.n.01"
+        }
+      ],
+      "definition": "a master's degree in theology"
+    },
+    {
+      "lemma": "token",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "token.n.01"
+        }
+      ],
+      "definition": "an individual instance of a type of symbol"
+    },
+    {
+      "lemma": "tolerance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "tolerance.n.04"
+        }
+      ],
+      "definition": "willingness to recognize and respect the beliefs or practices of others"
+    },
+    {
+      "lemma": "trophy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "trophy.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "trophy.n.02"
+        }
+      ],
+      "definition": "an award for success in war or hunting"
+    },
+    {
+      "lemma": "type",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "type.n.05"
+        }
+      ],
+      "definition": "all of the tokens of the same symbol"
+    },
+    {
+      "lemma": "value",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "admire.v.01",
+          "via_synset": "respect.v.01"
+        }
+      ],
+      "definition": "regard highly; think much of"
+    },
+    {
+      "lemma": "variable",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "variable.n.04"
+        }
+      ],
+      "definition": "a symbol (like x or y) that is used in mathematical or logical expressions to represent a variable quantity"
+    },
+    {
+      "lemma": "varsity letter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "award.n.02",
+          "via_synset": "letter.n.05"
+        }
+      ],
+      "definition": "an award earned by participation in a school sport"
+    },
+    {
+      "lemma": "venerate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respect.v.01",
+          "via_synset": "reverence.v.01"
+        }
+      ],
+      "definition": "regard with feelings of respect and reverence; consider hallowed or exalted or be in awe of"
+    },
+    {
+      "lemma": "Victoria Cross",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "decoration.n.02",
+          "via_synset": "victoria_cross.n.01"
+        }
+      ],
+      "definition": "a British military decoration for gallantry"
+    },
+    {
+      "lemma": "warmheartedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "regard.n.06",
+          "via_synset": "affection.n.01"
+        }
+      ],
+      "definition": "a positive feeling of liking"
+    },
+    {
+      "lemma": "warmness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "regard.n.06",
+          "via_synset": "affection.n.01"
+        }
+      ],
+      "definition": "a positive feeling of liking"
+    },
+    {
+      "lemma": "wooden spoon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "booby_prize.n.01",
+          "via_synset": "wooden_spoon.n.01"
+        }
+      ],
+      "definition": "a booby prize consisting of a spoon made of wood"
+    },
+    {
+      "lemma": "written symbol",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "symbol.n.01",
+          "via_synset": "written_symbol.n.01"
+        }
+      ],
+      "definition": "a written or printed symbol"
+    }
+  ]
+}

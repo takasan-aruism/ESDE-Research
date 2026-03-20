@@ -1,0 +1,2779 @@
+{
+  "atom_id": "SOC.citizen",
+  "category": "SOC",
+  "seed_count": 6,
+  "total_keys": 186,
+  "pos_counts": {
+    "n": 170,
+    "adj": 9,
+    "v": 7
+  },
+  "source_counts": {
+    "0_seed": 10,
+    "2_hypernym_d1": 15,
+    "6_derivational": 26,
+    "3_hyponym_d1": 24,
+    "4_hyponym_d2": 11,
+    "7_similar_to": 2,
+    "8_also_see": 1,
+    "9_antonym": 3,
+    "10_sibling": 106,
+    "11_pertainym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 8,
+      "words": [
+        "citizen(n)",
+        "national(adj)",
+        "house physician(n)",
+        "resident(n)",
+        "resident physician(n)",
+        "occupant(n)",
+        "occupier(n)",
+        "member(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 15,
+      "words": [
+        "national(n)",
+        "subject(n)",
+        "doctor(n)",
+        "doc(n)",
+        "physician(n)",
+        "MD(n)",
+        "Dr.(n)",
+        "medico(n)",
+        "inhabitant(n)",
+        "habitant(n)",
+        "dweller(n)",
+        "denizen(n)",
+        "indweller(n)",
+        "unit(n)",
+        "social unit(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 24,
+      "words": [
+        "voter(n)",
+        "elector(n)",
+        "freeman(n)",
+        "freewoman(n)",
+        "thane(n)",
+        "private citizen(n)",
+        "civilian(n)",
+        "active citizen(n)",
+        "repatriate(n)",
+        "inmate(n)",
+        "colonial(n)",
+        "dalesman(n)",
+        "townsman(n)",
+        "towner(n)",
+        "sojourner(n)",
+        "metropolitan(n)",
+        "Alexandrian(n)",
+        "housemate(n)",
+        "tenant(n)",
+        "owner-occupier(n)",
+        "outlier(n)",
+        "stater(n)",
+        "coaster(n)",
+        "suburbanite(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 11,
+      "words": [
+        "floater(n)",
+        "swing voter(n)",
+        "floating voter(n)",
+        "constituent(n)",
+        "crossover voter(n)",
+        "crossover(n)",
+        "freedman(n)",
+        "freedwoman(n)",
+        "townie(n)",
+        "towny(n)",
+        "townee(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 17,
+      "words": [
+        "membership(n)",
+        "tenancy(n)",
+        "tenant(v)",
+        "resident(adj)",
+        "reside(v)",
+        "occupancy(n)",
+        "occupy(v)",
+        "sojourn(v)",
+        "vote(v)",
+        "electoral(adj)",
+        "elect(v)",
+        "thaneship(n)",
+        "civilian(adj)",
+        "colonial(adj)",
+        "citizenship(n)",
+        "nationality(n)",
+        "repatriate(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 2,
+      "words": [
+        "nationalist(adj)",
+        "nationalistic(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 1,
+      "words": [
+        "domestic(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 3,
+      "words": [
+        "noncitizen(n)",
+        "international(adj)",
+        "nonresident(n)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 104,
+      "words": [
+        "patriot(n)",
+        "nationalist(n)",
+        "compatriot(n)",
+        "general practitioner(n)",
+        "GP(n)",
+        "allergist(n)",
+        "angiologist(n)",
+        "quack(n)",
+        "specialist(n)",
+        "medical specialist(n)",
+        "gastroenterologist(n)",
+        "extern(n)",
+        "medical extern(n)",
+        "surgeon(n)",
+        "operating surgeon(n)",
+        "sawbones(n)",
+        "intern(n)",
+        "interne(n)",
+        "houseman(n)",
+        "medical intern(n)",
+        "veterinarian(n)",
+        "veterinary(n)",
+        "veterinary surgeon(n)",
+        "vet(n)",
+        "primary care physician(n)",
+        "abortionist(n)",
+        "hakim(n)",
+        "hakeem(n)",
+        "Austronesian(n)",
+        "American(n)",
+        "landlubber(n)",
+        "landsman(n)",
+        "landman(n)",
+        "islander(n)",
+        "island-dweller(n)",
+        "Australian(n)",
+        "Aussie(n)",
+        "Hittite(n)",
+        "New Zealander(n)",
+        "Kiwi(n)",
+        "Phrygian(n)",
+        "Trinidadian(n)",
+        "Latin(n)",
+        "Philistine(n)",
+        "Asian(n)",
+        "Asiatic(n)",
+        "plainsman(n)",
+        "borderer(n)",
+        "liver(n)",
+        "marcher(n)",
+        "cottager(n)",
+        "cottage dweller(n)",
+        "Numidian(n)",
+        "westerner(n)",
+        "easterner(n)",
+        "tellurian(n)",
+        "earthling(n)",
+        "earthman(n)",
+        "worldling(n)",
+        "villager(n)",
+        "European(n)",
+        "Nazarene(n)",
+        "Northerner(n)",
+        "Alsatian(n)",
+        "Occidental(n)",
+        "Galilean(n)",
+        "Galilaean(n)",
+        "task force(n)",
+        "political unit(n)",
+        "political entity(n)",
+        "working group(n)",
+        "working party(n)",
+        "gang(n)",
+        "crew(n)",
+        "work party(n)",
+        "den(n)",
+        "company(n)",
+        "family(n)",
+        "household(n)",
+        "house(n)",
+        "home(n)",
+        "menage(n)",
+        "intensive care unit(n)",
+        "ICU(n)",
+        "fifth column(n)",
+        "Trojan horse(n)",
+        "instrumentality(n)",
+        "outfit(n)",
+        "administrative unit(n)",
+        "administrative body(n)",
+        "klavern(n)",
+        "general delivery(n)",
+        "poste restante(n)",
+        "side(n)",
+        "military unit(n)",
+        "military force(n)",
+        "military group(n)",
+        "force(n)",
+        "combination(n)",
+        "troop(n)",
+        "scout troop(n)",
+        "scout group(n)",
+        "team(n)",
+        "squad(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 1,
+      "words": [
+        "nation(n)"
+      ]
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "abortionist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "abortionist.n.01"
+        }
+      ],
+      "definition": "a person (who should be a doctor) who terminates pregnancies"
+    },
+    {
+      "lemma": "active citizen",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "citizen.n.01",
+          "via_synset": "active_citizen.n.01"
+        }
+      ],
+      "definition": "a citizen who takes an active role in the community (as in crime prevention and neighborhood watch)"
+    },
+    {
+      "lemma": "administrative body",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "administrative_unit.n.01"
+        }
+      ],
+      "definition": "a unit with administrative responsibilities"
+    },
+    {
+      "lemma": "administrative unit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "administrative_unit.n.01"
+        }
+      ],
+      "definition": "a unit with administrative responsibilities"
+    },
+    {
+      "lemma": "Alexandrian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "resident.n.01",
+          "via_synset": "alexandrian.n.01"
+        }
+      ],
+      "definition": "a resident or native of Alexandria (especially Alexandria in Egypt)"
+    },
+    {
+      "lemma": "allergist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "allergist.n.01"
+        }
+      ],
+      "definition": "a physician skilled in the diagnosis and treatment of allergies"
+    },
+    {
+      "lemma": "Alsatian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "alsatian.n.01"
+        }
+      ],
+      "definition": "a native or inhabitant of Alsace"
+    },
+    {
+      "lemma": "American",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "american.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "american.n.03"
+        }
+      ],
+      "definition": "a native or inhabitant of the United States"
+    },
+    {
+      "lemma": "angiologist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "angiologist.n.01"
+        }
+      ],
+      "definition": "a physician who specializes in angiology"
+    },
+    {
+      "lemma": "Asian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "asian.n.01"
+        }
+      ],
+      "definition": "a native or inhabitant of Asia"
+    },
+    {
+      "lemma": "Asiatic",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "asian.n.01"
+        }
+      ],
+      "definition": "a native or inhabitant of Asia"
+    },
+    {
+      "lemma": "Aussie",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "australian.n.01"
+        }
+      ],
+      "definition": "a native or inhabitant of Australia"
+    },
+    {
+      "lemma": "Australian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "australian.n.01"
+        }
+      ],
+      "definition": "a native or inhabitant of Australia"
+    },
+    {
+      "lemma": "Austronesian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "austronesian.n.01"
+        }
+      ],
+      "definition": "a native or inhabitant of Austronesia"
+    },
+    {
+      "lemma": "borderer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "borderer.n.01"
+        }
+      ],
+      "definition": "an inhabitant of a border area (especially the border between Scotland and England)"
+    },
+    {
+      "lemma": "citizen",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "citizen.n.01",
+          "via_synset": "citizen.n.01"
+        }
+      ],
+      "definition": "a native or naturalized member of a state or other political community"
+    },
+    {
+      "lemma": "citizenship",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "citizen.n.01",
+          "via_synset": "citizenship.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "citizen.n.01",
+          "via_synset": "citizenship.n.02"
+        }
+      ],
+      "definition": "the status of a citizen with rights and duties"
+    },
+    {
+      "lemma": "civilian",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "civilian.n.01",
+          "via_synset": "civilian.a.01"
+        }
+      ],
+      "definition": "associated with civil life or performed by persons who are not active members of the military"
+    },
+    {
+      "lemma": "civilian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "citizen.n.01",
+          "via_synset": "civilian.n.01"
+        }
+      ],
+      "definition": "a nonmilitary citizen"
+    },
+    {
+      "lemma": "coaster",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "resident.n.01",
+          "via_synset": "coaster.n.01"
+        }
+      ],
+      "definition": "a resident of a coastal area"
+    },
+    {
+      "lemma": "colonial",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "colonial.n.01",
+          "via_synset": "colonial.a.01"
+        }
+      ],
+      "definition": "of or relating to or characteristic of or inhabiting a colony"
+    },
+    {
+      "lemma": "colonial",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "resident.n.01",
+          "via_synset": "colonial.n.01"
+        }
+      ],
+      "definition": "a resident of a colony"
+    },
+    {
+      "lemma": "combination",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "combination.n.04"
+        }
+      ],
+      "definition": "a group of people (often temporary) having a common purpose"
+    },
+    {
+      "lemma": "company",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "company.n.09"
+        }
+      ],
+      "definition": "a unit of firefighters including their equipment"
+    },
+    {
+      "lemma": "compatriot",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "national.n.01",
+          "via_synset": "compatriot.n.01"
+        }
+      ],
+      "definition": "a person from your own country"
+    },
+    {
+      "lemma": "constituent",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "voter.n.01",
+          "via_synset": "constituent.n.02"
+        }
+      ],
+      "definition": "a member of a constituency; a citizen who is represented in a government by officials for whom he or she votes"
+    },
+    {
+      "lemma": "cottage dweller",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "cottager.n.01"
+        }
+      ],
+      "definition": "someone who lives in a cottage"
+    },
+    {
+      "lemma": "cottager",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "cottager.n.01"
+        }
+      ],
+      "definition": "someone who lives in a cottage"
+    },
+    {
+      "lemma": "crew",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "gang.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "crew.n.01"
+        }
+      ],
+      "definition": "an organized group of workmen"
+    },
+    {
+      "lemma": "crossover",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "voter.n.01",
+          "via_synset": "crossover_voter.n.01"
+        }
+      ],
+      "definition": "a voter who is registered as a member of one political party but who votes in the primary of another party"
+    },
+    {
+      "lemma": "crossover voter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "voter.n.01",
+          "via_synset": "crossover_voter.n.01"
+        }
+      ],
+      "definition": "a voter who is registered as a member of one political party but who votes in the primary of another party"
+    },
+    {
+      "lemma": "dalesman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "resident.n.01",
+          "via_synset": "dalesman.n.01"
+        }
+      ],
+      "definition": "a person who lives in the dales of northern England"
+    },
+    {
+      "lemma": "den",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "den.n.03"
+        }
+      ],
+      "definition": "a unit of 8 to 10 cub scouts"
+    },
+    {
+      "lemma": "denizen",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "resident.n.01",
+          "via_synset": "inhabitant.n.01"
+        }
+      ],
+      "definition": "a person who inhabits a particular place"
+    },
+    {
+      "lemma": "doc",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "house_physician.n.01",
+          "via_synset": "doctor.n.01"
+        }
+      ],
+      "definition": "a licensed medical practitioner"
+    },
+    {
+      "lemma": "doctor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "house_physician.n.01",
+          "via_synset": "doctor.n.01"
+        }
+      ],
+      "definition": "a licensed medical practitioner"
+    },
+    {
+      "lemma": "domestic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "national.a.02",
+          "via_synset": "domestic.a.01"
+        }
+      ],
+      "definition": "of concern to or concerning the internal affairs of a nation"
+    },
+    {
+      "lemma": "Dr.",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "house_physician.n.01",
+          "via_synset": "doctor.n.01"
+        }
+      ],
+      "definition": "a licensed medical practitioner"
+    },
+    {
+      "lemma": "dweller",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "resident.n.01",
+          "via_synset": "inhabitant.n.01"
+        }
+      ],
+      "definition": "a person who inhabits a particular place"
+    },
+    {
+      "lemma": "earthling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "tellurian.n.01"
+        }
+      ],
+      "definition": "an inhabitant of the earth"
+    },
+    {
+      "lemma": "earthman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "tellurian.n.01"
+        }
+      ],
+      "definition": "an inhabitant of the earth"
+    },
+    {
+      "lemma": "easterner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "easterner.n.01"
+        }
+      ],
+      "definition": "an inhabitant of an eastern area; especially of the U.S."
+    },
+    {
+      "lemma": "elect",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "voter.n.01",
+          "via_synset": "elect.v.01"
+        }
+      ],
+      "definition": "select by a vote for an office or membership"
+    },
+    {
+      "lemma": "elector",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "citizen.n.01",
+          "via_synset": "voter.n.01"
+        }
+      ],
+      "definition": "a citizen who has a legal right to vote"
+    },
+    {
+      "lemma": "electoral",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "voter.n.01",
+          "via_synset": "electoral.s.01"
+        }
+      ],
+      "definition": "relating to or composed of electors"
+    },
+    {
+      "lemma": "European",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "european.n.01"
+        }
+      ],
+      "definition": "a native or inhabitant of Europe"
+    },
+    {
+      "lemma": "extern",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "extern.n.01"
+        }
+      ],
+      "definition": "a nonresident doctor or medical student; connected with a hospital but not living there"
+    },
+    {
+      "lemma": "family",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "family.n.01"
+        }
+      ],
+      "definition": "a social unit living together"
+    },
+    {
+      "lemma": "fifth column",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "fifth_column.n.01"
+        }
+      ],
+      "definition": "a subversive group that supports the enemy and engages in espionage or sabotage; an enemy in your midst"
+    },
+    {
+      "lemma": "floater",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "voter.n.01",
+          "via_synset": "floater.n.05"
+        }
+      ],
+      "definition": "a voter who votes illegally at different polling places in the same election"
+    },
+    {
+      "lemma": "floating voter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "voter.n.01",
+          "via_synset": "swing_voter.n.01"
+        }
+      ],
+      "definition": "a voter who has no allegiance to any political party and whose unpredictable decisions can swing the outcome of an election one way or the other"
+    },
+    {
+      "lemma": "force",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "military_unit.n.01"
+        }
+      ],
+      "definition": "a unit that is part of some military service"
+    },
+    {
+      "lemma": "freedman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "freeman.n.01",
+          "via_synset": "freedman.n.01"
+        }
+      ],
+      "definition": "a person who has been freed from slavery"
+    },
+    {
+      "lemma": "freedwoman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "freeman.n.01",
+          "via_synset": "freedman.n.01"
+        }
+      ],
+      "definition": "a person who has been freed from slavery"
+    },
+    {
+      "lemma": "freeman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "citizen.n.01",
+          "via_synset": "freeman.n.01"
+        }
+      ],
+      "definition": "a person who is not a serf or a slave"
+    },
+    {
+      "lemma": "freewoman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "citizen.n.01",
+          "via_synset": "freeman.n.01"
+        }
+      ],
+      "definition": "a person who is not a serf or a slave"
+    },
+    {
+      "lemma": "Galilaean",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "galilean.n.01"
+        }
+      ],
+      "definition": "an inhabitant of Galilee (an epithet of Jesus Christ)"
+    },
+    {
+      "lemma": "Galilean",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "galilean.n.01"
+        }
+      ],
+      "definition": "an inhabitant of Galilee (an epithet of Jesus Christ)"
+    },
+    {
+      "lemma": "gang",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "gang.n.03"
+        }
+      ],
+      "definition": "an organized group of workmen"
+    },
+    {
+      "lemma": "gastroenterologist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "gastroenterologist.n.01"
+        }
+      ],
+      "definition": "a physician who specializes in diseases of the gastrointestinal tract"
+    },
+    {
+      "lemma": "general delivery",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "general_delivery.n.01"
+        }
+      ],
+      "definition": "the part of a post office that handles mail for persons who call for it"
+    },
+    {
+      "lemma": "general practitioner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "general_practitioner.n.01"
+        }
+      ],
+      "definition": "a physician who is not a specialist but treats all illnesses"
+    },
+    {
+      "lemma": "GP",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "general_practitioner.n.01"
+        }
+      ],
+      "definition": "a physician who is not a specialist but treats all illnesses"
+    },
+    {
+      "lemma": "habitant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "resident.n.01",
+          "via_synset": "inhabitant.n.01"
+        }
+      ],
+      "definition": "a person who inhabits a particular place"
+    },
+    {
+      "lemma": "hakeem",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "hakim.n.02"
+        }
+      ],
+      "definition": "a Muslim physician"
+    },
+    {
+      "lemma": "hakim",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "hakim.n.02"
+        }
+      ],
+      "definition": "a Muslim physician"
+    },
+    {
+      "lemma": "Hittite",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "hittite.n.01"
+        }
+      ],
+      "definition": "a member of an ancient people who inhabited Anatolia and northern Syria about 2000 to 1200 BC"
+    },
+    {
+      "lemma": "home",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "family.n.01"
+        }
+      ],
+      "definition": "a social unit living together"
+    },
+    {
+      "lemma": "house",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "family.n.01"
+        }
+      ],
+      "definition": "a social unit living together"
+    },
+    {
+      "lemma": "house physician",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "house_physician.n.01",
+          "via_synset": "house_physician.n.01"
+        }
+      ],
+      "definition": "a physician (especially an intern) who lives in a hospital and cares for hospitalized patients under the supervision of the medical staff of the hospital"
+    },
+    {
+      "lemma": "household",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "family.n.01"
+        }
+      ],
+      "definition": "a social unit living together"
+    },
+    {
+      "lemma": "houseman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "intern.n.01"
+        }
+      ],
+      "definition": "an advanced student or graduate in medicine gaining supervised practical experience (`houseman' is a British term)"
+    },
+    {
+      "lemma": "housemate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "resident.n.01",
+          "via_synset": "housemate.n.01"
+        }
+      ],
+      "definition": "someone who resides in the same house with you"
+    },
+    {
+      "lemma": "ICU",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "intensive_care_unit.n.01"
+        }
+      ],
+      "definition": "a hospital unit staffed and equipped to provide intensive care"
+    },
+    {
+      "lemma": "indweller",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "resident.n.01",
+          "via_synset": "inhabitant.n.01"
+        }
+      ],
+      "definition": "a person who inhabits a particular place"
+    },
+    {
+      "lemma": "inhabitant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "resident.n.01",
+          "via_synset": "inhabitant.n.01"
+        }
+      ],
+      "definition": "a person who inhabits a particular place"
+    },
+    {
+      "lemma": "inmate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "resident.n.01",
+          "via_synset": "inmate.n.01"
+        }
+      ],
+      "definition": "one of several resident of a dwelling (especially someone confined to a prison or hospital)"
+    },
+    {
+      "lemma": "instrumentality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "instrumentality.n.01"
+        }
+      ],
+      "definition": "a subsidiary organ of government created for a special purpose"
+    },
+    {
+      "lemma": "intensive care unit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "intensive_care_unit.n.01"
+        }
+      ],
+      "definition": "a hospital unit staffed and equipped to provide intensive care"
+    },
+    {
+      "lemma": "intern",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "intern.n.01"
+        }
+      ],
+      "definition": "an advanced student or graduate in medicine gaining supervised practical experience (`houseman' is a British term)"
+    },
+    {
+      "lemma": "international",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "national.a.02",
+          "via_synset": "international.a.01"
+        }
+      ],
+      "definition": "concerning or belonging to all or at least two or more nations"
+    },
+    {
+      "lemma": "interne",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "intern.n.01"
+        }
+      ],
+      "definition": "an advanced student or graduate in medicine gaining supervised practical experience (`houseman' is a British term)"
+    },
+    {
+      "lemma": "island-dweller",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "islander.n.01"
+        }
+      ],
+      "definition": "an inhabitant of an island"
+    },
+    {
+      "lemma": "islander",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "islander.n.01"
+        }
+      ],
+      "definition": "an inhabitant of an island"
+    },
+    {
+      "lemma": "Kiwi",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "new_zealander.n.01"
+        }
+      ],
+      "definition": "a native or inhabitant of New Zealand"
+    },
+    {
+      "lemma": "klavern",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "klavern.n.01"
+        }
+      ],
+      "definition": "a local unit of the Ku Klux Klan"
+    },
+    {
+      "lemma": "landlubber",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "landlubber.n.01"
+        }
+      ],
+      "definition": "a person who lives and works on land"
+    },
+    {
+      "lemma": "landman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "landlubber.n.01"
+        }
+      ],
+      "definition": "a person who lives and works on land"
+    },
+    {
+      "lemma": "landsman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "landlubber.n.01"
+        }
+      ],
+      "definition": "a person who lives and works on land"
+    },
+    {
+      "lemma": "Latin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "latin.n.02"
+        }
+      ],
+      "definition": "an inhabitant of ancient Latium"
+    },
+    {
+      "lemma": "liver",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "liver.n.04"
+        }
+      ],
+      "definition": "someone who lives in a place"
+    },
+    {
+      "lemma": "marcher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "marcher.n.01"
+        }
+      ],
+      "definition": "an inhabitant of a border district"
+    },
+    {
+      "lemma": "MD",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "house_physician.n.01",
+          "via_synset": "doctor.n.01"
+        }
+      ],
+      "definition": "a licensed medical practitioner"
+    },
+    {
+      "lemma": "medical extern",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "extern.n.01"
+        }
+      ],
+      "definition": "a nonresident doctor or medical student; connected with a hospital but not living there"
+    },
+    {
+      "lemma": "medical intern",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "intern.n.01"
+        }
+      ],
+      "definition": "an advanced student or graduate in medicine gaining supervised practical experience (`houseman' is a British term)"
+    },
+    {
+      "lemma": "medical specialist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "specialist.n.02"
+        }
+      ],
+      "definition": "practices one branch of medicine"
+    },
+    {
+      "lemma": "medico",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "house_physician.n.01",
+          "via_synset": "doctor.n.01"
+        }
+      ],
+      "definition": "a licensed medical practitioner"
+    },
+    {
+      "lemma": "member",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "member.n.04",
+          "via_synset": "member.n.04"
+        }
+      ],
+      "definition": "an organization that is a member of another organization (especially a state that belongs to a group of nations)"
+    },
+    {
+      "lemma": "membership",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "member.n.04",
+          "via_synset": "membership.n.02"
+        }
+      ],
+      "definition": "the state of being a member"
+    },
+    {
+      "lemma": "menage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "family.n.01"
+        }
+      ],
+      "definition": "a social unit living together"
+    },
+    {
+      "lemma": "metropolitan",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "resident.n.01",
+          "via_synset": "metropolitan.n.02"
+        }
+      ],
+      "definition": "a person who lives in a metropolis"
+    },
+    {
+      "lemma": "military force",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "military_unit.n.01"
+        }
+      ],
+      "definition": "a unit that is part of some military service"
+    },
+    {
+      "lemma": "military group",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "military_unit.n.01"
+        }
+      ],
+      "definition": "a unit that is part of some military service"
+    },
+    {
+      "lemma": "military unit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "military_unit.n.01"
+        }
+      ],
+      "definition": "a unit that is part of some military service"
+    },
+    {
+      "lemma": "nation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "11_pertainym",
+          "relation": "pertainym",
+          "from_synset": "national.a.01",
+          "via_synset": "state.n.04"
+        }
+      ],
+      "definition": "a politically organized body of people under a single government"
+    },
+    {
+      "lemma": "national",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "national.a.01",
+          "via_synset": "national.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "national.a.02",
+          "via_synset": "national.a.02"
+        }
+      ],
+      "definition": "of or relating to or belonging to a nation or country"
+    },
+    {
+      "lemma": "national",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "citizen.n.01",
+          "via_synset": "national.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "national.a.01",
+          "via_synset": "national.n.01"
+        }
+      ],
+      "definition": "a person who owes allegiance to that nation"
+    },
+    {
+      "lemma": "nationalist",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "national.a.02",
+          "via_synset": "nationalist.s.01"
+        }
+      ],
+      "definition": "devotion to the interests or culture of a particular nation including promoting the interests of one country over those of others"
+    },
+    {
+      "lemma": "nationalist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "national.n.01",
+          "via_synset": "patriot.n.01"
+        }
+      ],
+      "definition": "one who loves and defends his or her country"
+    },
+    {
+      "lemma": "nationalistic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "national.a.02",
+          "via_synset": "nationalist.s.01"
+        }
+      ],
+      "definition": "devotion to the interests or culture of a particular nation including promoting the interests of one country over those of others"
+    },
+    {
+      "lemma": "nationality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "national.a.01",
+          "via_synset": "nationality.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "national.a.01",
+          "via_synset": "nationality.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "national.a.02",
+          "via_synset": "nationality.n.01"
+        }
+      ],
+      "definition": "the status of belonging to a particular nation by birth or naturalization"
+    },
+    {
+      "lemma": "Nazarene",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "nazarene.n.03"
+        }
+      ],
+      "definition": "an inhabitant of Nazareth"
+    },
+    {
+      "lemma": "New Zealander",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "new_zealander.n.01"
+        }
+      ],
+      "definition": "a native or inhabitant of New Zealand"
+    },
+    {
+      "lemma": "noncitizen",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "citizen.n.01",
+          "via_synset": "foreigner.n.01"
+        }
+      ],
+      "definition": "a person who comes from a foreign country; someone who does not owe allegiance to your country"
+    },
+    {
+      "lemma": "nonresident",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "resident.n.01",
+          "via_synset": "nonresident.n.01"
+        }
+      ],
+      "definition": "someone who does not live in a particular place"
+    },
+    {
+      "lemma": "Northerner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "northerner.n.01"
+        }
+      ],
+      "definition": "an inhabitant of the North"
+    },
+    {
+      "lemma": "Numidian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "numidian.n.01"
+        }
+      ],
+      "definition": "an inhabitant of ancient Numidia"
+    },
+    {
+      "lemma": "Occidental",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "occidental.n.01"
+        }
+      ],
+      "definition": "a native inhabitant of the Occident"
+    },
+    {
+      "lemma": "occupancy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "resident.n.01",
+          "via_synset": "occupation.n.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "resident.n.01",
+          "via_synset": "occupancy.n.01"
+        }
+      ],
+      "definition": "the act of occupying or taking possession of a building"
+    },
+    {
+      "lemma": "occupant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "resident.n.01",
+          "via_synset": "resident.n.01"
+        }
+      ],
+      "definition": "someone who lives at a particular place for a prolonged period or who was born there"
+    },
+    {
+      "lemma": "occupier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "resident.n.01",
+          "via_synset": "resident.n.01"
+        }
+      ],
+      "definition": "someone who lives at a particular place for a prolonged period or who was born there"
+    },
+    {
+      "lemma": "occupy",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "resident.n.01",
+          "via_synset": "occupy.v.02"
+        }
+      ],
+      "definition": "live (in a certain place)"
+    },
+    {
+      "lemma": "operating surgeon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "surgeon.n.01"
+        }
+      ],
+      "definition": "a physician who specializes in surgery"
+    },
+    {
+      "lemma": "outfit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "outfit.n.01"
+        }
+      ],
+      "definition": "any cohesive unit such as a military company"
+    },
+    {
+      "lemma": "outlier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "resident.n.01",
+          "via_synset": "outlier.n.01"
+        }
+      ],
+      "definition": "a person who lives away from his place of work"
+    },
+    {
+      "lemma": "owner-occupier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "resident.n.01",
+          "via_synset": "owner-occupier.n.01"
+        }
+      ],
+      "definition": "an occupant who owns the home that he/she lives in"
+    },
+    {
+      "lemma": "patriot",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "national.n.01",
+          "via_synset": "patriot.n.01"
+        }
+      ],
+      "definition": "one who loves and defends his or her country"
+    },
+    {
+      "lemma": "Philistine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "philistine.n.02"
+        }
+      ],
+      "definition": "a member of an Aegean people who settled ancient Philistia around the 12th century BC"
+    },
+    {
+      "lemma": "Phrygian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "phrygian.n.01"
+        }
+      ],
+      "definition": "a native or inhabitant of Phrygia"
+    },
+    {
+      "lemma": "physician",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "house_physician.n.01",
+          "via_synset": "doctor.n.01"
+        }
+      ],
+      "definition": "a licensed medical practitioner"
+    },
+    {
+      "lemma": "plainsman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "plainsman.n.01"
+        }
+      ],
+      "definition": "an inhabitant of a plains region (especially the Great Plains of North America)"
+    },
+    {
+      "lemma": "political entity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "political_unit.n.01"
+        }
+      ],
+      "definition": "a unit with political responsibilities"
+    },
+    {
+      "lemma": "political unit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "political_unit.n.01"
+        }
+      ],
+      "definition": "a unit with political responsibilities"
+    },
+    {
+      "lemma": "poste restante",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "general_delivery.n.01"
+        }
+      ],
+      "definition": "the part of a post office that handles mail for persons who call for it"
+    },
+    {
+      "lemma": "primary care physician",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "primary_care_physician.n.01"
+        }
+      ],
+      "definition": "the physician who provides primary care"
+    },
+    {
+      "lemma": "private citizen",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "citizen.n.01",
+          "via_synset": "private_citizen.n.01"
+        }
+      ],
+      "definition": "a citizen who does not hold any official or public position"
+    },
+    {
+      "lemma": "quack",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "quack.n.01"
+        }
+      ],
+      "definition": "an untrained person who pretends to be a physician and who dispenses medical advice"
+    },
+    {
+      "lemma": "repatriate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "citizen.n.01",
+          "via_synset": "repatriate.n.01"
+        }
+      ],
+      "definition": "a person who has returned to the country of origin or whose citizenship has been restored"
+    },
+    {
+      "lemma": "repatriate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "repatriate.n.01",
+          "via_synset": "repatriate.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "repatriate.n.01",
+          "via_synset": "repatriate.v.01"
+        }
+      ],
+      "definition": "admit back into the country"
+    },
+    {
+      "lemma": "reside",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "resident.n.01",
+          "via_synset": "occupy.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "resident.n.01",
+          "via_synset": "reside.v.01"
+        }
+      ],
+      "definition": "live (in a certain place)"
+    },
+    {
+      "lemma": "resident",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "resident.n.01",
+          "via_synset": "resident.a.01"
+        }
+      ],
+      "definition": "living in a particular place"
+    },
+    {
+      "lemma": "resident",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "house_physician.n.01",
+          "via_synset": "house_physician.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "resident.n.01",
+          "via_synset": "resident.n.01"
+        }
+      ],
+      "definition": "a physician (especially an intern) who lives in a hospital and cares for hospitalized patients under the supervision of the medical staff of the hospital"
+    },
+    {
+      "lemma": "resident physician",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "house_physician.n.01",
+          "via_synset": "house_physician.n.01"
+        }
+      ],
+      "definition": "a physician (especially an intern) who lives in a hospital and cares for hospitalized patients under the supervision of the medical staff of the hospital"
+    },
+    {
+      "lemma": "sawbones",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "surgeon.n.01"
+        }
+      ],
+      "definition": "a physician who specializes in surgery"
+    },
+    {
+      "lemma": "scout group",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "troop.n.03"
+        }
+      ],
+      "definition": "a unit of Girl or Boy Scouts"
+    },
+    {
+      "lemma": "scout troop",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "troop.n.03"
+        }
+      ],
+      "definition": "a unit of Girl or Boy Scouts"
+    },
+    {
+      "lemma": "side",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "side.n.02"
+        }
+      ],
+      "definition": "one of two or more contesting groups"
+    },
+    {
+      "lemma": "social unit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "member.n.04",
+          "via_synset": "unit.n.03"
+        }
+      ],
+      "definition": "an organization regarded as part of a larger social group"
+    },
+    {
+      "lemma": "sojourn",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sojourner.n.01",
+          "via_synset": "sojourn.v.01"
+        }
+      ],
+      "definition": "spend a certain length of time; reside temporarily"
+    },
+    {
+      "lemma": "sojourner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "resident.n.01",
+          "via_synset": "sojourner.n.01"
+        }
+      ],
+      "definition": "a temporary resident"
+    },
+    {
+      "lemma": "specialist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "specialist.n.02"
+        }
+      ],
+      "definition": "practices one branch of medicine"
+    },
+    {
+      "lemma": "squad",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "team.n.01"
+        }
+      ],
+      "definition": "a cooperative unit (especially in sports)"
+    },
+    {
+      "lemma": "stater",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "resident.n.01",
+          "via_synset": "stater.n.02"
+        }
+      ],
+      "definition": "a resident of a particular state or group of states"
+    },
+    {
+      "lemma": "subject",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "citizen.n.01",
+          "via_synset": "national.n.01"
+        }
+      ],
+      "definition": "a person who owes allegiance to that nation"
+    },
+    {
+      "lemma": "suburbanite",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "resident.n.01",
+          "via_synset": "suburbanite.n.01"
+        }
+      ],
+      "definition": "a resident of a suburb"
+    },
+    {
+      "lemma": "surgeon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "surgeon.n.01"
+        }
+      ],
+      "definition": "a physician who specializes in surgery"
+    },
+    {
+      "lemma": "swing voter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "voter.n.01",
+          "via_synset": "swing_voter.n.01"
+        }
+      ],
+      "definition": "a voter who has no allegiance to any political party and whose unpredictable decisions can swing the outcome of an election one way or the other"
+    },
+    {
+      "lemma": "task force",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "task_force.n.02"
+        }
+      ],
+      "definition": "a semipermanent unit created to carry out a continuing task"
+    },
+    {
+      "lemma": "team",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "team.n.01"
+        }
+      ],
+      "definition": "a cooperative unit (especially in sports)"
+    },
+    {
+      "lemma": "tellurian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "tellurian.n.01"
+        }
+      ],
+      "definition": "an inhabitant of the earth"
+    },
+    {
+      "lemma": "tenancy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tenant.n.03",
+          "via_synset": "occupancy.n.01"
+        }
+      ],
+      "definition": "an act of being a tenant or occupant"
+    },
+    {
+      "lemma": "tenant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "resident.n.01",
+          "via_synset": "tenant.n.03"
+        }
+      ],
+      "definition": "any occupant who dwells in a place"
+    },
+    {
+      "lemma": "tenant",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tenant.n.03",
+          "via_synset": "tenant.v.01"
+        }
+      ],
+      "definition": "occupy as a tenant"
+    },
+    {
+      "lemma": "thane",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "citizen.n.01",
+          "via_synset": "thane.n.02"
+        }
+      ],
+      "definition": "a man ranking above an ordinary freeman and below a noble in Anglo-Saxon England (especially one who gave military service in exchange for land)"
+    },
+    {
+      "lemma": "thaneship",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "thane.n.02",
+          "via_synset": "thaneship.n.01"
+        }
+      ],
+      "definition": "the position of thane"
+    },
+    {
+      "lemma": "townee",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "townsman.n.02",
+          "via_synset": "townee.n.01"
+        }
+      ],
+      "definition": "townsman unacquainted with country life especially a slick and flashy male city dweller"
+    },
+    {
+      "lemma": "towner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "resident.n.01",
+          "via_synset": "townsman.n.02"
+        }
+      ],
+      "definition": "a resident of a town or city"
+    },
+    {
+      "lemma": "townie",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "townsman.n.02",
+          "via_synset": "townie.n.01"
+        }
+      ],
+      "definition": "resident of a college town not affiliated with the college"
+    },
+    {
+      "lemma": "townsman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "resident.n.01",
+          "via_synset": "townsman.n.02"
+        }
+      ],
+      "definition": "a resident of a town or city"
+    },
+    {
+      "lemma": "towny",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "townsman.n.02",
+          "via_synset": "townie.n.01"
+        }
+      ],
+      "definition": "resident of a college town not affiliated with the college"
+    },
+    {
+      "lemma": "Trinidadian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "trinidadian.n.01"
+        }
+      ],
+      "definition": "inhabitant or native of Trinidad"
+    },
+    {
+      "lemma": "Trojan horse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "fifth_column.n.01"
+        }
+      ],
+      "definition": "a subversive group that supports the enemy and engages in espionage or sabotage; an enemy in your midst"
+    },
+    {
+      "lemma": "troop",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "troop.n.03"
+        }
+      ],
+      "definition": "a unit of Girl or Boy Scouts"
+    },
+    {
+      "lemma": "unit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "member.n.04",
+          "via_synset": "unit.n.03"
+        }
+      ],
+      "definition": "an organization regarded as part of a larger social group"
+    },
+    {
+      "lemma": "vet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "veterinarian.n.01"
+        }
+      ],
+      "definition": "a doctor who practices veterinary medicine"
+    },
+    {
+      "lemma": "veterinarian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "veterinarian.n.01"
+        }
+      ],
+      "definition": "a doctor who practices veterinary medicine"
+    },
+    {
+      "lemma": "veterinary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "veterinarian.n.01"
+        }
+      ],
+      "definition": "a doctor who practices veterinary medicine"
+    },
+    {
+      "lemma": "veterinary surgeon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "doctor.n.01",
+          "via_synset": "veterinarian.n.01"
+        }
+      ],
+      "definition": "a doctor who practices veterinary medicine"
+    },
+    {
+      "lemma": "villager",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "villager.n.01"
+        }
+      ],
+      "definition": "one who has lived in a village most of their life"
+    },
+    {
+      "lemma": "vote",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "voter.n.01",
+          "via_synset": "vote.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "voter.n.01",
+          "via_synset": "vote.v.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "voter.n.01",
+          "via_synset": "vote.v.02"
+        }
+      ],
+      "definition": "express one's preference for a candidate or for a measure or resolution; cast a vote"
+    },
+    {
+      "lemma": "voter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "citizen.n.01",
+          "via_synset": "voter.n.01"
+        }
+      ],
+      "definition": "a citizen who has a legal right to vote"
+    },
+    {
+      "lemma": "westerner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "westerner.n.01"
+        }
+      ],
+      "definition": "an inhabitant of a western area; especially of the U.S."
+    },
+    {
+      "lemma": "work party",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "gang.n.03"
+        }
+      ],
+      "definition": "an organized group of workmen"
+    },
+    {
+      "lemma": "working group",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "working_group.n.01"
+        }
+      ],
+      "definition": "a group of people working together temporarily until some goal is achieved"
+    },
+    {
+      "lemma": "working party",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "unit.n.03",
+          "via_synset": "working_group.n.01"
+        }
+      ],
+      "definition": "a group of people working together temporarily until some goal is achieved"
+    },
+    {
+      "lemma": "worldling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "inhabitant.n.01",
+          "via_synset": "tellurian.n.01"
+        }
+      ],
+      "definition": "an inhabitant of the earth"
+    }
+  ]
+}

@@ -1,0 +1,1731 @@
+{
+  "atom_id": "BOD.hand",
+  "category": "BOD",
+  "seed_count": 6,
+  "total_keys": 112,
+  "pos_counts": {
+    "n": 93,
+    "v": 18,
+    "adj": 1
+  },
+  "source_counts": {
+    "0_seed": 20,
+    "2_hypernym_d1": 14,
+    "10_sibling": 25,
+    "3_hyponym_d1": 18,
+    "4_hyponym_d2": 17,
+    "5_hyponym_d3": 4,
+    "6_derivational": 26
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 15,
+      "words": [
+        "hand(n)",
+        "manus(n)",
+        "mitt(n)",
+        "paw(n)",
+        "appreciation(n)",
+        "grasp(n)",
+        "hold(n)",
+        "compass(n)",
+        "range(n)",
+        "reach(n)",
+        "clasp(n)",
+        "clench(n)",
+        "clutch(n)",
+        "clutches(n)",
+        "grip(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 14,
+      "words": [
+        "forepaw(n)",
+        "extremity(n)",
+        "side(n)",
+        "understanding(n)",
+        "apprehension(n)",
+        "discernment(n)",
+        "savvy(n)",
+        "capability(n)",
+        "capableness(n)",
+        "potentiality(n)",
+        "grasping(n)",
+        "taking hold(n)",
+        "seizing(n)",
+        "prehension(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 18,
+      "words": [
+        "left(n)",
+        "left hand(n)",
+        "right(n)",
+        "right hand(n)",
+        "hooks(n)",
+        "meat hooks(n)",
+        "maulers(n)",
+        "fist(n)",
+        "clenched fist(n)",
+        "sense(n)",
+        "sight(n)",
+        "ken(n)",
+        "embrace(n)",
+        "embracing(n)",
+        "embracement(n)",
+        "wrestling hold(n)",
+        "chokehold(n)",
+        "choke hold(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 17,
+      "words": [
+        "hug(n)",
+        "clinch(n)",
+        "squeeze(n)",
+        "cuddle(n)",
+        "nestle(n)",
+        "snuggle(n)",
+        "stranglehold(n)",
+        "lock(n)",
+        "nelson(n)",
+        "toehold(n)",
+        "bear hug(n)",
+        "Japanese stranglehold(n)",
+        "scissors(n)",
+        "scissors hold(n)",
+        "scissor hold(n)",
+        "scissor grip(n)",
+        "scissors grip(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 4,
+      "words": [
+        "headlock(n)",
+        "hammerlock(n)",
+        "full nelson(n)",
+        "half nelson(n)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 20,
+      "words": [
+        "clasp(v)",
+        "clench(v)",
+        "clutch(v)",
+        "grasp(v)",
+        "grip(v)",
+        "hold(v)",
+        "embrace(v)",
+        "cuddly(adj)",
+        "cuddle(v)",
+        "nestle(v)",
+        "snuggle(v)",
+        "lock(v)",
+        "sight(v)",
+        "lefthander(n)",
+        "hug(v)",
+        "clinch(v)",
+        "compass(v)",
+        "range(v)",
+        "hand(v)",
+        "paw(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 24,
+      "words": [
+        "vertebrate foot(n)",
+        "pedal extremity(n)",
+        "toe(n)",
+        "finger(n)",
+        "south side(n)",
+        "shipside(n)",
+        "blind side(n)",
+        "west side(n)",
+        "bedside(n)",
+        "dockside(n)",
+        "north side(n)",
+        "east side(n)",
+        "self-knowledge(n)",
+        "realization(n)",
+        "realisation(n)",
+        "recognition(n)",
+        "smattering(n)",
+        "hindsight(n)",
+        "comprehension(n)",
+        "insight(n)",
+        "brainstorm(n)",
+        "brainwave(n)",
+        "perfectibility(n)",
+        "imperfectibility(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "appreciation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "appreciation.n.01",
+          "via_synset": "appreciation.n.01"
+        }
+      ],
+      "definition": "understanding of the nature or meaning or quality or magnitude of something"
+    },
+    {
+      "lemma": "apprehension",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "appreciation.n.01",
+          "via_synset": "understanding.n.01"
+        }
+      ],
+      "definition": "the cognitive condition of someone who understands"
+    },
+    {
+      "lemma": "bear hug",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wrestling_hold.n.01",
+          "via_synset": "bear_hug.n.01"
+        }
+      ],
+      "definition": "a wrestling hold with arms locked tightly around the opponent"
+    },
+    {
+      "lemma": "bedside",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.01",
+          "via_synset": "bedside.n.01"
+        }
+      ],
+      "definition": "space by the side of a bed (especially the bed of a sick or dying person)"
+    },
+    {
+      "lemma": "blind side",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.01",
+          "via_synset": "blind_side.n.01"
+        }
+      ],
+      "definition": "the side on which your vision is limited or obstructed"
+    },
+    {
+      "lemma": "brainstorm",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "understanding.n.01",
+          "via_synset": "insight.n.03"
+        }
+      ],
+      "definition": "the clear (and often sudden) understanding of a complex situation"
+    },
+    {
+      "lemma": "brainwave",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "understanding.n.01",
+          "via_synset": "insight.n.03"
+        }
+      ],
+      "definition": "the clear (and often sudden) understanding of a complex situation"
+    },
+    {
+      "lemma": "capability",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "compass.n.03",
+          "via_synset": "capability.n.03"
+        }
+      ],
+      "definition": "an aptitude that may be developed"
+    },
+    {
+      "lemma": "capableness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "compass.n.03",
+          "via_synset": "capability.n.03"
+        }
+      ],
+      "definition": "an aptitude that may be developed"
+    },
+    {
+      "lemma": "choke hold",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "clasp.n.02",
+          "via_synset": "chokehold.n.02"
+        }
+      ],
+      "definition": "a restraining hold; someone loops the arm around the neck of another person in a tight grip, usually from behind"
+    },
+    {
+      "lemma": "chokehold",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "clasp.n.02",
+          "via_synset": "chokehold.n.02"
+        }
+      ],
+      "definition": "a restraining hold; someone loops the arm around the neck of another person in a tight grip, usually from behind"
+    },
+    {
+      "lemma": "clasp",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "clasp.n.02",
+          "via_synset": "clasp.n.02"
+        }
+      ],
+      "definition": "the act of grasping"
+    },
+    {
+      "lemma": "clasp",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "clasp.n.02",
+          "via_synset": "clasp.v.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "clasp.n.02",
+          "via_synset": "clasp.v.01"
+        }
+      ],
+      "definition": "grasp firmly"
+    },
+    {
+      "lemma": "clench",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "clasp.n.02",
+          "via_synset": "clasp.n.02"
+        }
+      ],
+      "definition": "the act of grasping"
+    },
+    {
+      "lemma": "clench",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "clasp.n.02",
+          "via_synset": "clench.v.01"
+        }
+      ],
+      "definition": "hold in a tight grasp"
+    },
+    {
+      "lemma": "clenched fist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hand.n.01",
+          "via_synset": "fist.n.01"
+        }
+      ],
+      "definition": "a hand with the fingers clenched in the palm (as for hitting)"
+    },
+    {
+      "lemma": "clinch",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "embrace.n.01",
+          "via_synset": "hug.n.01"
+        }
+      ],
+      "definition": "a tight or amorous embrace"
+    },
+    {
+      "lemma": "clinch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hug.n.01",
+          "via_synset": "clench.v.01"
+        }
+      ],
+      "definition": "hold in a tight grasp"
+    },
+    {
+      "lemma": "clutch",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "clasp.n.02",
+          "via_synset": "clasp.n.02"
+        }
+      ],
+      "definition": "the act of grasping"
+    },
+    {
+      "lemma": "clutch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "clasp.n.02",
+          "via_synset": "cling_to.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "clasp.n.02",
+          "via_synset": "seize.v.01"
+        }
+      ],
+      "definition": "hold firmly, usually with one's hands"
+    },
+    {
+      "lemma": "clutches",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "clasp.n.02",
+          "via_synset": "clasp.n.02"
+        }
+      ],
+      "definition": "the act of grasping"
+    },
+    {
+      "lemma": "compass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "compass.n.03",
+          "via_synset": "compass.n.03"
+        }
+      ],
+      "definition": "the limit of capability"
+    },
+    {
+      "lemma": "compass",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compass.n.03",
+          "via_synset": "compass.v.01"
+        }
+      ],
+      "definition": "bring about; accomplish"
+    },
+    {
+      "lemma": "comprehension",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "understanding.n.01",
+          "via_synset": "comprehension.n.01"
+        }
+      ],
+      "definition": "an ability to understand the meaning or importance of something (or the knowledge acquired as a result)"
+    },
+    {
+      "lemma": "cuddle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "embrace.n.01",
+          "via_synset": "cuddle.n.01"
+        }
+      ],
+      "definition": "a close and affectionate (and often prolonged) embrace"
+    },
+    {
+      "lemma": "cuddle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cuddle.n.01",
+          "via_synset": "cuddle.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cuddle.n.01",
+          "via_synset": "cuddle.v.01"
+        }
+      ],
+      "definition": "hold (a person or thing) close, as for affection, comfort, or warmth"
+    },
+    {
+      "lemma": "cuddly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cuddle.n.01",
+          "via_synset": "cuddlesome.s.01"
+        }
+      ],
+      "definition": "inviting cuddling or hugging"
+    },
+    {
+      "lemma": "discernment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "appreciation.n.01",
+          "via_synset": "understanding.n.01"
+        }
+      ],
+      "definition": "the cognitive condition of someone who understands"
+    },
+    {
+      "lemma": "dockside",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.01",
+          "via_synset": "dockside.n.01"
+        }
+      ],
+      "definition": "the region adjacent to a boat dock"
+    },
+    {
+      "lemma": "east side",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.01",
+          "via_synset": "east_side.n.01"
+        }
+      ],
+      "definition": "the side that is on the east"
+    },
+    {
+      "lemma": "embrace",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "clasp.n.02",
+          "via_synset": "embrace.n.01"
+        }
+      ],
+      "definition": "the act of clasping another person in the arms (as in greeting or affection)"
+    },
+    {
+      "lemma": "embrace",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "embrace.n.01",
+          "via_synset": "embrace.v.02"
+        }
+      ],
+      "definition": "squeeze (someone) tightly in your arms, usually with fondness"
+    },
+    {
+      "lemma": "embracement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "clasp.n.02",
+          "via_synset": "embrace.n.01"
+        }
+      ],
+      "definition": "the act of clasping another person in the arms (as in greeting or affection)"
+    },
+    {
+      "lemma": "embracing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "clasp.n.02",
+          "via_synset": "embrace.n.01"
+        }
+      ],
+      "definition": "the act of clasping another person in the arms (as in greeting or affection)"
+    },
+    {
+      "lemma": "extremity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "hand.n.01",
+          "via_synset": "extremity.n.05"
+        }
+      ],
+      "definition": "that part of a limb that is farthest from the torso"
+    },
+    {
+      "lemma": "finger",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "extremity.n.05",
+          "via_synset": "finger.n.01"
+        }
+      ],
+      "definition": "any of the terminal members of the hand (sometimes excepting the thumb)"
+    },
+    {
+      "lemma": "fist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hand.n.01",
+          "via_synset": "fist.n.01"
+        }
+      ],
+      "definition": "a hand with the fingers clenched in the palm (as for hitting)"
+    },
+    {
+      "lemma": "forepaw",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "hand.n.13",
+          "via_synset": "forepaw.n.01"
+        }
+      ],
+      "definition": "front paw; analogous to the human hand"
+    },
+    {
+      "lemma": "full nelson",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "nelson.n.02",
+          "via_synset": "full_nelson.n.01"
+        }
+      ],
+      "definition": "a wrestling hold in which the holder puts both arms under the opponent's arms and exerts pressure on the back of the neck (illegal in amateur wrestling)"
+    },
+    {
+      "lemma": "grasp",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "appreciation.n.01",
+          "via_synset": "appreciation.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "compass.n.03",
+          "via_synset": "compass.n.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "clasp.n.02",
+          "via_synset": "clasp.n.02"
+        }
+      ],
+      "definition": "understanding of the nature or meaning or quality or magnitude of something"
+    },
+    {
+      "lemma": "grasp",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "clasp.n.02",
+          "via_synset": "grasp.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "appreciation.n.01",
+          "via_synset": "grok.v.01"
+        }
+      ],
+      "definition": "hold firmly"
+    },
+    {
+      "lemma": "grasping",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "clasp.n.02",
+          "via_synset": "grasping.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "understanding.n.01",
+          "via_synset": "grasping.n.01"
+        }
+      ],
+      "definition": "the act of gripping something firmly with the hands (or the tentacles)"
+    },
+    {
+      "lemma": "grip",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "clasp.n.02",
+          "via_synset": "clasp.n.02"
+        }
+      ],
+      "definition": "the act of grasping"
+    },
+    {
+      "lemma": "grip",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "clasp.n.02",
+          "via_synset": "grapple.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "clasp.n.02",
+          "via_synset": "grip.v.01"
+        }
+      ],
+      "definition": "to grip or seize, as in a wrestling match"
+    },
+    {
+      "lemma": "half nelson",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "nelson.n.02",
+          "via_synset": "half_nelson.n.01"
+        }
+      ],
+      "definition": "a wrestling hold in which the holder puts an arm under the opponent's arm and exerts pressure on the back of the neck"
+    },
+    {
+      "lemma": "hammerlock",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "lock.n.06",
+          "via_synset": "hammerlock.n.01"
+        }
+      ],
+      "definition": "a wrestling hold in which the opponent's arm is twisted up behind his back"
+    },
+    {
+      "lemma": "hand",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hand.n.13",
+          "via_synset": "hand.n.13"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hand.n.01",
+          "via_synset": "hand.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hand.n.05",
+          "via_synset": "hand.n.05"
+        }
+      ],
+      "definition": "terminal part of the forelimb in certain vertebrates (e.g. apes or kangaroos); - Springfield (Mass.) Union"
+    },
+    {
+      "lemma": "hand",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hand.n.01",
+          "via_synset": "pass.v.05"
+        }
+      ],
+      "definition": "place into the hands or custody of"
+    },
+    {
+      "lemma": "headlock",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "lock.n.06",
+          "via_synset": "headlock.n.01"
+        }
+      ],
+      "definition": "a wrestling hold in which the opponent's head is locked between the crook of your elbow and the side of your body"
+    },
+    {
+      "lemma": "hindsight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "understanding.n.01",
+          "via_synset": "hindsight.n.01"
+        }
+      ],
+      "definition": "understanding the nature of an event after it has happened"
+    },
+    {
+      "lemma": "hold",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "appreciation.n.01",
+          "via_synset": "appreciation.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "clasp.n.02",
+          "via_synset": "clasp.n.02"
+        }
+      ],
+      "definition": "understanding of the nature or meaning or quality or magnitude of something"
+    },
+    {
+      "lemma": "hold",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "clasp.n.02",
+          "via_synset": "hold.v.02"
+        }
+      ],
+      "definition": "have or hold in one's hands or grip"
+    },
+    {
+      "lemma": "hooks",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hand.n.01",
+          "via_synset": "hooks.n.01"
+        }
+      ],
+      "definition": "large strong hand (as of a fighter)"
+    },
+    {
+      "lemma": "hug",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "embrace.n.01",
+          "via_synset": "hug.n.01"
+        }
+      ],
+      "definition": "a tight or amorous embrace"
+    },
+    {
+      "lemma": "hug",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hug.n.01",
+          "via_synset": "embrace.v.02"
+        }
+      ],
+      "definition": "squeeze (someone) tightly in your arms, usually with fondness"
+    },
+    {
+      "lemma": "imperfectibility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "capability.n.03",
+          "via_synset": "imperfectibility.n.01"
+        }
+      ],
+      "definition": "the capability of becoming imperfect"
+    },
+    {
+      "lemma": "insight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "understanding.n.01",
+          "via_synset": "insight.n.03"
+        }
+      ],
+      "definition": "the clear (and often sudden) understanding of a complex situation"
+    },
+    {
+      "lemma": "Japanese stranglehold",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wrestling_hold.n.01",
+          "via_synset": "japanese_stranglehold.n.01"
+        }
+      ],
+      "definition": "a wrestling hold in which the opponent's arms are crossed in front of his own neck to exert pressure on his windpipe"
+    },
+    {
+      "lemma": "ken",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "compass.n.03",
+          "via_synset": "sight.n.05"
+        }
+      ],
+      "definition": "the range of vision"
+    },
+    {
+      "lemma": "left",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hand.n.01",
+          "via_synset": "left.n.03"
+        }
+      ],
+      "definition": "the hand that is on the left side of the body"
+    },
+    {
+      "lemma": "left hand",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hand.n.01",
+          "via_synset": "left.n.03"
+        }
+      ],
+      "definition": "the hand that is on the left side of the body"
+    },
+    {
+      "lemma": "lefthander",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "left.n.03",
+          "via_synset": "left-handed_pitcher.n.01"
+        }
+      ],
+      "definition": "a baseball pitcher who throws the ball with the left hand"
+    },
+    {
+      "lemma": "lock",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wrestling_hold.n.01",
+          "via_synset": "lock.n.06"
+        }
+      ],
+      "definition": "any wrestling hold in which some part of the opponent's body is twisted or pressured"
+    },
+    {
+      "lemma": "lock",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "lock.n.06",
+          "via_synset": "interlock.v.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "lock.n.06",
+          "via_synset": "lock.v.04"
+        }
+      ],
+      "definition": "become engaged or intermeshed with one another"
+    },
+    {
+      "lemma": "manus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hand.n.01",
+          "via_synset": "hand.n.01"
+        }
+      ],
+      "definition": "the (prehensile) extremity of the superior limb"
+    },
+    {
+      "lemma": "maulers",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hand.n.01",
+          "via_synset": "hooks.n.01"
+        }
+      ],
+      "definition": "large strong hand (as of a fighter)"
+    },
+    {
+      "lemma": "meat hooks",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hand.n.01",
+          "via_synset": "hooks.n.01"
+        }
+      ],
+      "definition": "large strong hand (as of a fighter)"
+    },
+    {
+      "lemma": "mitt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hand.n.01",
+          "via_synset": "hand.n.01"
+        }
+      ],
+      "definition": "the (prehensile) extremity of the superior limb"
+    },
+    {
+      "lemma": "nelson",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wrestling_hold.n.01",
+          "via_synset": "nelson.n.02"
+        }
+      ],
+      "definition": "any of several wrestling holds in which an arm is passed under the opponent's arm from behind and the hand exerts pressure on the back of the neck"
+    },
+    {
+      "lemma": "nestle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "embrace.n.01",
+          "via_synset": "cuddle.n.01"
+        }
+      ],
+      "definition": "a close and affectionate (and often prolonged) embrace"
+    },
+    {
+      "lemma": "nestle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cuddle.n.01",
+          "via_synset": "cuddle.v.01"
+        }
+      ],
+      "definition": "move or arrange oneself in a comfortable and cozy position"
+    },
+    {
+      "lemma": "north side",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.01",
+          "via_synset": "north_side.n.01"
+        }
+      ],
+      "definition": "the side that is on the north"
+    },
+    {
+      "lemma": "paw",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hand.n.01",
+          "via_synset": "hand.n.01"
+        }
+      ],
+      "definition": "the (prehensile) extremity of the superior limb"
+    },
+    {
+      "lemma": "paw",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hand.n.01",
+          "via_synset": "paw.v.02"
+        }
+      ],
+      "definition": "touch clumsily"
+    },
+    {
+      "lemma": "pedal extremity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "extremity.n.05",
+          "via_synset": "vertebrate_foot.n.01"
+        }
+      ],
+      "definition": "the extremity of the limb in vertebrates"
+    },
+    {
+      "lemma": "perfectibility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "capability.n.03",
+          "via_synset": "perfectibility.n.01"
+        }
+      ],
+      "definition": "the capability of becoming perfect"
+    },
+    {
+      "lemma": "potentiality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "compass.n.03",
+          "via_synset": "capability.n.03"
+        }
+      ],
+      "definition": "an aptitude that may be developed"
+    },
+    {
+      "lemma": "prehension",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "clasp.n.02",
+          "via_synset": "grasping.n.02"
+        }
+      ],
+      "definition": "the act of gripping something firmly with the hands (or the tentacles)"
+    },
+    {
+      "lemma": "range",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "compass.n.03",
+          "via_synset": "compass.n.03"
+        }
+      ],
+      "definition": "the limit of capability"
+    },
+    {
+      "lemma": "range",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compass.n.03",
+          "via_synset": "range.v.03"
+        }
+      ],
+      "definition": "have a range; be capable of projecting over a certain distance, as of a gun"
+    },
+    {
+      "lemma": "reach",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "compass.n.03",
+          "via_synset": "compass.n.03"
+        }
+      ],
+      "definition": "the limit of capability"
+    },
+    {
+      "lemma": "realisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "understanding.n.01",
+          "via_synset": "realization.n.01"
+        }
+      ],
+      "definition": "coming to understand something clearly and distinctly"
+    },
+    {
+      "lemma": "realization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "understanding.n.01",
+          "via_synset": "realization.n.01"
+        }
+      ],
+      "definition": "coming to understand something clearly and distinctly"
+    },
+    {
+      "lemma": "recognition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "understanding.n.01",
+          "via_synset": "realization.n.01"
+        }
+      ],
+      "definition": "coming to understand something clearly and distinctly"
+    },
+    {
+      "lemma": "right",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hand.n.01",
+          "via_synset": "right.n.05"
+        }
+      ],
+      "definition": "the hand that is on the right side of the body"
+    },
+    {
+      "lemma": "right hand",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hand.n.01",
+          "via_synset": "right.n.05"
+        }
+      ],
+      "definition": "the hand that is on the right side of the body"
+    },
+    {
+      "lemma": "savvy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "appreciation.n.01",
+          "via_synset": "understanding.n.01"
+        }
+      ],
+      "definition": "the cognitive condition of someone who understands"
+    },
+    {
+      "lemma": "scissor grip",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wrestling_hold.n.01",
+          "via_synset": "scissors.n.02"
+        }
+      ],
+      "definition": "a wrestling hold in which you wrap your legs around the opponents body or head and put your feet together and squeeze"
+    },
+    {
+      "lemma": "scissor hold",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wrestling_hold.n.01",
+          "via_synset": "scissors.n.02"
+        }
+      ],
+      "definition": "a wrestling hold in which you wrap your legs around the opponents body or head and put your feet together and squeeze"
+    },
+    {
+      "lemma": "scissors",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wrestling_hold.n.01",
+          "via_synset": "scissors.n.02"
+        }
+      ],
+      "definition": "a wrestling hold in which you wrap your legs around the opponents body or head and put your feet together and squeeze"
+    },
+    {
+      "lemma": "scissors grip",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wrestling_hold.n.01",
+          "via_synset": "scissors.n.02"
+        }
+      ],
+      "definition": "a wrestling hold in which you wrap your legs around the opponents body or head and put your feet together and squeeze"
+    },
+    {
+      "lemma": "scissors hold",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wrestling_hold.n.01",
+          "via_synset": "scissors.n.02"
+        }
+      ],
+      "definition": "a wrestling hold in which you wrap your legs around the opponents body or head and put your feet together and squeeze"
+    },
+    {
+      "lemma": "seizing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "clasp.n.02",
+          "via_synset": "grasping.n.02"
+        }
+      ],
+      "definition": "the act of gripping something firmly with the hands (or the tentacles)"
+    },
+    {
+      "lemma": "self-knowledge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "understanding.n.01",
+          "via_synset": "self-knowledge.n.01"
+        }
+      ],
+      "definition": "an understanding of yourself and your goals and abilities"
+    },
+    {
+      "lemma": "sense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "appreciation.n.01",
+          "via_synset": "sense.n.05"
+        }
+      ],
+      "definition": "a natural appreciation or ability"
+    },
+    {
+      "lemma": "shipside",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.01",
+          "via_synset": "shipside.n.01"
+        }
+      ],
+      "definition": "the part of a wharf that is next to a ship"
+    },
+    {
+      "lemma": "side",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "hand.n.05",
+          "via_synset": "side.n.01"
+        }
+      ],
+      "definition": "a place within a region identified relative to a center or reference location"
+    },
+    {
+      "lemma": "sight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "compass.n.03",
+          "via_synset": "sight.n.05"
+        }
+      ],
+      "definition": "the range of vision"
+    },
+    {
+      "lemma": "sight",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sight.n.05",
+          "via_synset": "spy.v.03"
+        }
+      ],
+      "definition": "catch sight of; to perceive with the eyes"
+    },
+    {
+      "lemma": "smattering",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "understanding.n.01",
+          "via_synset": "smattering.n.02"
+        }
+      ],
+      "definition": "a slight or superficial understanding of a subject"
+    },
+    {
+      "lemma": "snuggle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "embrace.n.01",
+          "via_synset": "cuddle.n.01"
+        }
+      ],
+      "definition": "a close and affectionate (and often prolonged) embrace"
+    },
+    {
+      "lemma": "snuggle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cuddle.n.01",
+          "via_synset": "cuddle.v.01"
+        }
+      ],
+      "definition": "move or arrange oneself in a comfortable and cozy position"
+    },
+    {
+      "lemma": "south side",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.01",
+          "via_synset": "south_side.n.01"
+        }
+      ],
+      "definition": "the side that is on the south"
+    },
+    {
+      "lemma": "squeeze",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "embrace.n.01",
+          "via_synset": "hug.n.01"
+        }
+      ],
+      "definition": "a tight or amorous embrace"
+    },
+    {
+      "lemma": "stranglehold",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wrestling_hold.n.01",
+          "via_synset": "stranglehold.n.02"
+        }
+      ],
+      "definition": "a wrestling hold in which the arms are pressed against the opponent's windpipe"
+    },
+    {
+      "lemma": "taking hold",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "clasp.n.02",
+          "via_synset": "grasping.n.02"
+        }
+      ],
+      "definition": "the act of gripping something firmly with the hands (or the tentacles)"
+    },
+    {
+      "lemma": "toe",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "extremity.n.05",
+          "via_synset": "toe.n.01"
+        }
+      ],
+      "definition": "one of the digits of the foot"
+    },
+    {
+      "lemma": "toehold",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wrestling_hold.n.01",
+          "via_synset": "toehold.n.03"
+        }
+      ],
+      "definition": "a wrestling hold in which the toe is held and the leg is twisted against the joints"
+    },
+    {
+      "lemma": "understanding",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "appreciation.n.01",
+          "via_synset": "understanding.n.01"
+        }
+      ],
+      "definition": "the cognitive condition of someone who understands"
+    },
+    {
+      "lemma": "vertebrate foot",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "extremity.n.05",
+          "via_synset": "vertebrate_foot.n.01"
+        }
+      ],
+      "definition": "the extremity of the limb in vertebrates"
+    },
+    {
+      "lemma": "west side",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.01",
+          "via_synset": "west_side.n.01"
+        }
+      ],
+      "definition": "the side that is on the west"
+    },
+    {
+      "lemma": "wrestling hold",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "clasp.n.02",
+          "via_synset": "wrestling_hold.n.01"
+        }
+      ],
+      "definition": "a hold used in the sport of wrestling"
+    }
+  ]
+}

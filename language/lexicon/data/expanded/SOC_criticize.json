@@ -1,0 +1,4155 @@
+{
+  "atom_id": "SOC.criticize",
+  "category": "SOC",
+  "seed_count": 6,
+  "total_keys": 271,
+  "pos_counts": {
+    "v": 183,
+    "n": 72,
+    "adj": 16
+  },
+  "source_counts": {
+    "0_seed": 17,
+    "3_hyponym_d1": 54,
+    "6_derivational": 95,
+    "4_hyponym_d2": 48,
+    "10_sibling": 79,
+    "2_hypernym_d1": 13,
+    "5_hyponym_d3": 10
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 14,
+      "words": [
+        "knock(v)",
+        "criticize(v)",
+        "criticise(v)",
+        "pick apart(v)",
+        "blame(v)",
+        "charge(v)",
+        "incrimination(n)",
+        "inculpation(n)",
+        "blame(n)",
+        "condemn(v)",
+        "reprobate(v)",
+        "decry(v)",
+        "objurgate(v)",
+        "excoriate(v)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 13,
+      "words": [
+        "comment(v)",
+        "notice(v)",
+        "remark(v)",
+        "point out(v)",
+        "act(v)",
+        "impute(v)",
+        "ascribe(v)",
+        "assign(v)",
+        "attribute(v)",
+        "accusation(n)",
+        "accusal(n)",
+        "denounce(v)",
+        "declare(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 51,
+      "words": [
+        "call on the carpet(v)",
+        "take to task(v)",
+        "rebuke(v)",
+        "rag(v)",
+        "trounce(v)",
+        "reproof(v)",
+        "lecture(v)",
+        "reprimand(v)",
+        "jaw(v)",
+        "dress down(v)",
+        "call down(v)",
+        "scold(v)",
+        "chide(v)",
+        "berate(v)",
+        "bawl out(v)",
+        "remonstrate(v)",
+        "chew out(v)",
+        "chew up(v)",
+        "have words(v)",
+        "lambaste(v)",
+        "lambast(v)",
+        "admonish(v)",
+        "reprove(v)",
+        "attack(v)",
+        "round(v)",
+        "assail(v)",
+        "lash out(v)",
+        "snipe(v)",
+        "assault(v)",
+        "nitpick(v)",
+        "belabor(v)",
+        "belabour(v)",
+        "censure(v)",
+        "criminate(v)",
+        "savage(v)",
+        "blast(v)",
+        "pillory(v)",
+        "crucify(v)",
+        "find fault(v)",
+        "pick(v)",
+        "disparage(v)",
+        "belittle(v)",
+        "pick at(v)",
+        "harsh on(v)",
+        "reprehend(v)",
+        "deplore(v)",
+        "come down(v)",
+        "self-incrimination(n)",
+        "explode(v)",
+        "boo(v)",
+        "hiss(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 41,
+      "words": [
+        "chastise(v)",
+        "castigate(v)",
+        "chasten(v)",
+        "correct(v)",
+        "tell off(v)",
+        "brush down(v)",
+        "vitriol(v)",
+        "claw(v)",
+        "abuse(v)",
+        "clapperclaw(v)",
+        "blackguard(v)",
+        "shout(v)",
+        "rip(v)",
+        "bombard(v)",
+        "barrage(v)",
+        "blister(v)",
+        "scald(v)",
+        "whip(v)",
+        "rubbish(v)",
+        "whang(v)",
+        "fulminate(v)",
+        "rail(v)",
+        "animadvert(v)",
+        "deprecate(v)",
+        "depreciate(v)",
+        "vilipend(v)",
+        "pan(v)",
+        "tear apart(v)",
+        "trash(v)",
+        "minimize(v)",
+        "denigrate(v)",
+        "derogate(v)",
+        "discredit(v)",
+        "disgrace(v)",
+        "accurse(v)",
+        "execrate(v)",
+        "anathemize(v)",
+        "comminate(v)",
+        "anathemise(v)",
+        "anathematize(v)",
+        "anathematise(v)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 9,
+      "words": [
+        "flame(v)",
+        "slang(v)",
+        "vilify(v)",
+        "revile(v)",
+        "vituperate(v)",
+        "curse(v)",
+        "deflate(v)",
+        "puncture(v)",
+        "talk down(v)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 73,
+      "words": [
+        "denouncement(n)",
+        "faultfinder(n)",
+        "rebuker(n)",
+        "rebuke(n)",
+        "reproof(n)",
+        "lecture(n)",
+        "reprimand(n)",
+        "scolder(n)",
+        "scolding(n)",
+        "chiding(n)",
+        "disparagement(n)",
+        "disparager(n)",
+        "whang(n)",
+        "fulmination(n)",
+        "attack(n)",
+        "attacker(n)",
+        "assailant(n)",
+        "assaultive(adj)",
+        "assaulter(n)",
+        "condemnatory(adj)",
+        "condemnation(n)",
+        "reprobation(n)",
+        "excoriation(n)",
+        "abusive(adj)",
+        "abuse(n)",
+        "abuser(n)",
+        "barrage(n)",
+        "bombardment(n)",
+        "blameable(adj)",
+        "blamable(adj)",
+        "admonitory(adj)",
+        "admonishment(n)",
+        "admonition(n)",
+        "reprover(n)",
+        "reproval(n)",
+        "execration(n)",
+        "comminatory(adj)",
+        "anathematization(n)",
+        "anathema(n)",
+        "anathematisation(n)",
+        "boo(n)",
+        "hiss(n)",
+        "hisser(n)",
+        "hissing(n)",
+        "chastisement(n)",
+        "castigation(n)",
+        "objurgation(n)",
+        "corrective(adj)",
+        "discredit(n)",
+        "disgrace(n)",
+        "animadversion(n)",
+        "deprecative(adj)",
+        "deprecatory(adj)",
+        "deprecation(n)",
+        "depreciative(adj)",
+        "depreciatory(adj)",
+        "depreciation(n)",
+        "depreciator(n)",
+        "nitpicker(n)",
+        "critic(n)",
+        "criticism(n)",
+        "incriminate(v)",
+        "inculpate(v)",
+        "censure(n)",
+        "minimization(n)",
+        "minimum(n)",
+        "denigrative(adj)",
+        "denigration(n)",
+        "derogative(adj)",
+        "derogatory(adj)",
+        "derogation(n)",
+        "reprehensible(adj)",
+        "reprehension(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 70,
+      "words": [
+        "wisecrack(v)",
+        "kibitz(v)",
+        "kibbitz(v)",
+        "bank(v)",
+        "project(v)",
+        "externalize(v)",
+        "externalise(v)",
+        "sensualize(v)",
+        "carnalize(v)",
+        "reattribute(v)",
+        "credit(v)",
+        "personify(v)",
+        "personate(v)",
+        "internalize(v)",
+        "internalise(v)",
+        "interiorize(v)",
+        "interiorise(v)",
+        "anthropomorphize(v)",
+        "anthropomorphise(v)",
+        "accredit(v)",
+        "imputation(n)",
+        "allegation(n)",
+        "implication(n)",
+        "self-accusation(n)",
+        "self-condemnation(n)",
+        "imprecation(n)",
+        "indictment(n)",
+        "information(n)",
+        "blame game(n)",
+        "preferment(n)",
+        "recrimination(n)",
+        "take the Fifth(v)",
+        "take the Fifth Amendment(v)",
+        "profess(v)",
+        "opine(v)",
+        "speak up(v)",
+        "speak out(v)",
+        "sound off(v)",
+        "promise(v)",
+        "plead(v)",
+        "testify(v)",
+        "attest(v)",
+        "take the stand(v)",
+        "bear witness(v)",
+        "sentence(v)",
+        "doom(v)",
+        "decree(v)",
+        "proclaim(v)",
+        "exclaim(v)",
+        "promulgate(v)",
+        "count out(v)",
+        "propose(v)",
+        "suggest(v)",
+        "advise(v)",
+        "account(v)",
+        "answer for(v)",
+        "consecrate(v)",
+        "bless(v)",
+        "hallow(v)",
+        "sanctify(v)",
+        "assure(v)",
+        "affirm(v)",
+        "verify(v)",
+        "assert(v)",
+        "avow(v)",
+        "aver(v)",
+        "swan(v)",
+        "swear(v)",
+        "depose(v)",
+        "depone(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "abuse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abuse.v.03",
+          "via_synset": "abuse.n.02"
+        }
+      ],
+      "definition": "a rude expression intended to offend or hurt"
+    },
+    {
+      "lemma": "abuse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "attack.v.02",
+          "via_synset": "abuse.v.03"
+        }
+      ],
+      "definition": "use foul or abusive language towards"
+    },
+    {
+      "lemma": "abuser",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abuse.v.03",
+          "via_synset": "abuser.n.01"
+        }
+      ],
+      "definition": "someone who abuses"
+    },
+    {
+      "lemma": "abusive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abuse.v.03",
+          "via_synset": "abusive.s.01"
+        }
+      ],
+      "definition": "expressing offensive reproach"
+    },
+    {
+      "lemma": "account",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "account.v.04"
+        }
+      ],
+      "definition": "furnish a justifying analysis or explanation"
+    },
+    {
+      "lemma": "accredit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impute.v.01",
+          "via_synset": "accredit.v.03"
+        }
+      ],
+      "definition": "ascribe an achievement to"
+    },
+    {
+      "lemma": "accurse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "deplore.v.01",
+          "via_synset": "accurse.v.01"
+        }
+      ],
+      "definition": "curse or declare to be evil or anathema or threaten with divine punishment"
+    },
+    {
+      "lemma": "accusal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "incrimination.n.01",
+          "via_synset": "accusation.n.01"
+        }
+      ],
+      "definition": "a formal charge of wrongdoing brought against a person; the act of imputing blame or guilt"
+    },
+    {
+      "lemma": "accusation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "incrimination.n.01",
+          "via_synset": "accusation.n.01"
+        }
+      ],
+      "definition": "a formal charge of wrongdoing brought against a person; the act of imputing blame or guilt"
+    },
+    {
+      "lemma": "act",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "criticize.v.02",
+          "via_synset": "act.v.04"
+        }
+      ],
+      "definition": "discharge one's duties"
+    },
+    {
+      "lemma": "admonish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "admonish.v.03"
+        }
+      ],
+      "definition": "take to task"
+    },
+    {
+      "lemma": "admonishment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "admonish.v.03",
+          "via_synset": "admonition.n.02"
+        }
+      ],
+      "definition": "a firm rebuke"
+    },
+    {
+      "lemma": "admonition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "admonish.v.03",
+          "via_synset": "admonition.n.02"
+        }
+      ],
+      "definition": "a firm rebuke"
+    },
+    {
+      "lemma": "admonitory",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "admonish.v.03",
+          "via_synset": "admonitory.s.02"
+        }
+      ],
+      "definition": "expressing reproof or reproach especially as a corrective"
+    },
+    {
+      "lemma": "advise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "propose.v.01"
+        }
+      ],
+      "definition": "make a proposal, declare a plan for something"
+    },
+    {
+      "lemma": "affirm",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "affirm.v.02"
+        }
+      ],
+      "definition": "to declare or affirm solemnly and formally as true"
+    },
+    {
+      "lemma": "allegation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "accusation.n.01",
+          "via_synset": "allegation.n.01"
+        }
+      ],
+      "definition": "(law) a formal accusation against somebody (often in a court of law)"
+    },
+    {
+      "lemma": "anathema",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "accurse.v.01",
+          "via_synset": "anathema.n.02"
+        }
+      ],
+      "definition": "a formal ecclesiastical curse accompanied by excommunication"
+    },
+    {
+      "lemma": "anathematisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "accurse.v.01",
+          "via_synset": "anathematization.n.01"
+        }
+      ],
+      "definition": "the formal act of pronouncing (someone or something) accursed"
+    },
+    {
+      "lemma": "anathematise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "deplore.v.01",
+          "via_synset": "accurse.v.01"
+        }
+      ],
+      "definition": "curse or declare to be evil or anathema or threaten with divine punishment"
+    },
+    {
+      "lemma": "anathematization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "accurse.v.01",
+          "via_synset": "anathematization.n.01"
+        }
+      ],
+      "definition": "the formal act of pronouncing (someone or something) accursed"
+    },
+    {
+      "lemma": "anathematize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "deplore.v.01",
+          "via_synset": "accurse.v.01"
+        }
+      ],
+      "definition": "curse or declare to be evil or anathema or threaten with divine punishment"
+    },
+    {
+      "lemma": "anathemise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "deplore.v.01",
+          "via_synset": "accurse.v.01"
+        }
+      ],
+      "definition": "curse or declare to be evil or anathema or threaten with divine punishment"
+    },
+    {
+      "lemma": "anathemize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "deplore.v.01",
+          "via_synset": "accurse.v.01"
+        }
+      ],
+      "definition": "curse or declare to be evil or anathema or threaten with divine punishment"
+    },
+    {
+      "lemma": "animadversion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "animadvert.v.02",
+          "via_synset": "censure.n.01"
+        }
+      ],
+      "definition": "harsh criticism or disapproval"
+    },
+    {
+      "lemma": "animadvert",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "reprimand.v.01",
+          "via_synset": "animadvert.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "opine.v.01"
+        }
+      ],
+      "definition": "express blame or censure or make a harshly critical remark"
+    },
+    {
+      "lemma": "answer for",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "account.v.04"
+        }
+      ],
+      "definition": "furnish a justifying analysis or explanation"
+    },
+    {
+      "lemma": "anthropomorphise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impute.v.01",
+          "via_synset": "anthropomorphize.v.01"
+        }
+      ],
+      "definition": "ascribe human features to something"
+    },
+    {
+      "lemma": "anthropomorphize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impute.v.01",
+          "via_synset": "anthropomorphize.v.01"
+        }
+      ],
+      "definition": "ascribe human features to something"
+    },
+    {
+      "lemma": "ascribe",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "blame.v.03",
+          "via_synset": "impute.v.01"
+        }
+      ],
+      "definition": "attribute or credit to"
+    },
+    {
+      "lemma": "assail",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "attack.v.02"
+        }
+      ],
+      "definition": "attack in speech or writing"
+    },
+    {
+      "lemma": "assailant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attack.v.02",
+          "via_synset": "attacker.n.01"
+        }
+      ],
+      "definition": "someone who attacks"
+    },
+    {
+      "lemma": "assault",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "attack.v.02"
+        }
+      ],
+      "definition": "attack in speech or writing"
+    },
+    {
+      "lemma": "assaulter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attack.v.02",
+          "via_synset": "attacker.n.01"
+        }
+      ],
+      "definition": "someone who attacks"
+    },
+    {
+      "lemma": "assaultive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attack.v.02",
+          "via_synset": "assaultive.s.01"
+        }
+      ],
+      "definition": "disposed to attack"
+    },
+    {
+      "lemma": "assert",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "affirm.v.02"
+        }
+      ],
+      "definition": "to declare or affirm solemnly and formally as true"
+    },
+    {
+      "lemma": "assign",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "blame.v.03",
+          "via_synset": "impute.v.01"
+        }
+      ],
+      "definition": "attribute or credit to"
+    },
+    {
+      "lemma": "assure",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "promise.v.01"
+        }
+      ],
+      "definition": "make a promise or commitment"
+    },
+    {
+      "lemma": "attack",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attack.v.02",
+          "via_synset": "fire.n.09"
+        }
+      ],
+      "definition": "intense adverse criticism"
+    },
+    {
+      "lemma": "attack",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "attack.v.02"
+        }
+      ],
+      "definition": "attack in speech or writing"
+    },
+    {
+      "lemma": "attacker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attack.v.02",
+          "via_synset": "attacker.n.01"
+        }
+      ],
+      "definition": "someone who attacks"
+    },
+    {
+      "lemma": "attest",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "testify.v.01"
+        }
+      ],
+      "definition": "give testimony in a court of law"
+    },
+    {
+      "lemma": "attribute",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "blame.v.03",
+          "via_synset": "impute.v.01"
+        }
+      ],
+      "definition": "attribute or credit to"
+    },
+    {
+      "lemma": "aver",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "affirm.v.02"
+        }
+      ],
+      "definition": "to declare or affirm solemnly and formally as true"
+    },
+    {
+      "lemma": "avow",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "affirm.v.02"
+        }
+      ],
+      "definition": "to declare or affirm solemnly and formally as true"
+    },
+    {
+      "lemma": "bank",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.04",
+          "via_synset": "bank.v.04"
+        }
+      ],
+      "definition": "act as the banker in a game or in gambling"
+    },
+    {
+      "lemma": "barrage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bombard.v.03",
+          "via_synset": "barrage.n.01"
+        }
+      ],
+      "definition": "the rapid and continuous delivery of linguistic communication (spoken or written)"
+    },
+    {
+      "lemma": "barrage",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "attack.v.02",
+          "via_synset": "bombard.v.03"
+        }
+      ],
+      "definition": "address with continuously or persistently, as if with a barrage"
+    },
+    {
+      "lemma": "bawl out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "bear witness",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "testify.v.01"
+        }
+      ],
+      "definition": "give testimony in a court of law"
+    },
+    {
+      "lemma": "belabor",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "belabor.v.02"
+        }
+      ],
+      "definition": "attack verbally with harsh criticism"
+    },
+    {
+      "lemma": "belabour",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "belabor.v.02"
+        }
+      ],
+      "definition": "attack verbally with harsh criticism"
+    },
+    {
+      "lemma": "belittle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "disparage.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disparage.v.01",
+          "via_synset": "minimize.v.03"
+        }
+      ],
+      "definition": "express a negative opinion of"
+    },
+    {
+      "lemma": "berate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "blackguard",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "attack.v.02",
+          "via_synset": "abuse.v.03"
+        }
+      ],
+      "definition": "use foul or abusive language towards"
+    },
+    {
+      "lemma": "blamable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "blame.v.03",
+          "via_synset": "blameworthy.s.01"
+        }
+      ],
+      "definition": "deserving blame or censure as being wrong or evil or injurious"
+    },
+    {
+      "lemma": "blame",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "incrimination.n.01",
+          "via_synset": "incrimination.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "blame.v.02",
+          "via_synset": "blame.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "blame.v.03",
+          "via_synset": "incrimination.n.01"
+        }
+      ],
+      "definition": "an accusation that you are responsible for some lapse or misdeed"
+    },
+    {
+      "lemma": "blame",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "blame.v.03",
+          "via_synset": "blame.v.03"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "blame.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "incrimination.n.01",
+          "via_synset": "blame.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "incrimination.n.01",
+          "via_synset": "blame.v.03"
+        }
+      ],
+      "definition": "attribute responsibility to"
+    },
+    {
+      "lemma": "blame game",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "accusation.n.01",
+          "via_synset": "blame_game.n.01"
+        }
+      ],
+      "definition": "accusations exchanged among people who refuse to accept sole responsibility for some undesirable event"
+    },
+    {
+      "lemma": "blameable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "blame.v.03",
+          "via_synset": "blameworthy.s.01"
+        }
+      ],
+      "definition": "deserving blame or censure as being wrong or evil or injurious"
+    },
+    {
+      "lemma": "blast",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "savage.v.02"
+        }
+      ],
+      "definition": "criticize harshly or violently"
+    },
+    {
+      "lemma": "bless",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "consecrate.v.04"
+        }
+      ],
+      "definition": "render holy by means of religious rites"
+    },
+    {
+      "lemma": "blister",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "attack.v.02",
+          "via_synset": "blister.v.02"
+        }
+      ],
+      "definition": "subject to harsh criticism"
+    },
+    {
+      "lemma": "bombard",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "attack.v.02",
+          "via_synset": "bombard.v.03"
+        }
+      ],
+      "definition": "address with continuously or persistently, as if with a barrage"
+    },
+    {
+      "lemma": "bombardment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bombard.v.03",
+          "via_synset": "barrage.n.01"
+        }
+      ],
+      "definition": "the rapid and continuous delivery of linguistic communication (spoken or written)"
+    },
+    {
+      "lemma": "boo",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "boo.v.01",
+          "via_synset": "boo.n.01"
+        }
+      ],
+      "definition": "a cry or noise made to express displeasure or contempt"
+    },
+    {
+      "lemma": "boo",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "condemn.v.02",
+          "via_synset": "boo.v.01"
+        }
+      ],
+      "definition": "show displeasure, as after a performance or speech"
+    },
+    {
+      "lemma": "brush down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "call_on_the_carpet.v.01",
+          "via_synset": "tell_off.v.01"
+        }
+      ],
+      "definition": "reprimand"
+    },
+    {
+      "lemma": "call down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "call on the carpet",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "carnalize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impute.v.01",
+          "via_synset": "sensualize.v.02"
+        }
+      ],
+      "definition": "ascribe to an origin in sensation"
+    },
+    {
+      "lemma": "castigate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "call_on_the_carpet.v.01",
+          "via_synset": "chastise.v.01"
+        }
+      ],
+      "definition": "censure severely"
+    },
+    {
+      "lemma": "castigation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "chastise.v.01",
+          "via_synset": "castigation.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "chastise.v.01",
+          "via_synset": "castigation.n.02"
+        }
+      ],
+      "definition": "a severe scolding"
+    },
+    {
+      "lemma": "censure",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reprimand.v.01",
+          "via_synset": "censure.n.01"
+        }
+      ],
+      "definition": "harsh criticism or disapproval"
+    },
+    {
+      "lemma": "censure",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "reprimand.v.01"
+        }
+      ],
+      "definition": "rebuke formally"
+    },
+    {
+      "lemma": "charge",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "blame.v.03",
+          "via_synset": "blame.v.03"
+        }
+      ],
+      "definition": "attribute responsibility to"
+    },
+    {
+      "lemma": "chasten",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "call_on_the_carpet.v.01",
+          "via_synset": "chastise.v.01"
+        }
+      ],
+      "definition": "censure severely"
+    },
+    {
+      "lemma": "chastise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "call_on_the_carpet.v.01",
+          "via_synset": "chastise.v.01"
+        }
+      ],
+      "definition": "censure severely"
+    },
+    {
+      "lemma": "chastisement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "chastise.v.01",
+          "via_synset": "correction.n.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "chastise.v.01",
+          "via_synset": "castigation.n.02"
+        }
+      ],
+      "definition": "a rebuke for making a mistake"
+    },
+    {
+      "lemma": "chew out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "chew up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "chide",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "chiding",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "call_on_the_carpet.v.01",
+          "via_synset": "chiding.n.01"
+        }
+      ],
+      "definition": "rebuking a person harshly"
+    },
+    {
+      "lemma": "clapperclaw",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "attack.v.02",
+          "via_synset": "abuse.v.03"
+        }
+      ],
+      "definition": "use foul or abusive language towards"
+    },
+    {
+      "lemma": "claw",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "attack.v.02",
+          "via_synset": "claw.v.04"
+        }
+      ],
+      "definition": "attack as if with claws"
+    },
+    {
+      "lemma": "come down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "come_down.v.05"
+        }
+      ],
+      "definition": "criticize or reprimand harshly"
+    },
+    {
+      "lemma": "comment",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "knock.v.06",
+          "via_synset": "comment.v.01"
+        }
+      ],
+      "definition": "make or write a comment on"
+    },
+    {
+      "lemma": "comminate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "deplore.v.01",
+          "via_synset": "accurse.v.01"
+        }
+      ],
+      "definition": "curse or declare to be evil or anathema or threaten with divine punishment"
+    },
+    {
+      "lemma": "comminatory",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "accurse.v.01",
+          "via_synset": "comminatory.s.01"
+        }
+      ],
+      "definition": "containing warning of punishment"
+    },
+    {
+      "lemma": "condemn",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "condemn.v.01",
+          "via_synset": "condemn.v.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "condemn.v.02",
+          "via_synset": "condemn.v.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "denounce.v.01",
+          "via_synset": "condemn.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "sentence.v.01"
+        }
+      ],
+      "definition": "express strong disapproval of"
+    },
+    {
+      "lemma": "condemnation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "condemn.v.01",
+          "via_synset": "condemnation.n.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "condemn.v.01",
+          "via_synset": "disapprobation.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "condemn.v.02",
+          "via_synset": "condemnation.n.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "condemn.v.02",
+          "via_synset": "condemnation.n.02"
+        }
+      ],
+      "definition": "the condition of being strongly disapproved of"
+    },
+    {
+      "lemma": "condemnatory",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "condemn.v.01",
+          "via_synset": "condemnatory.s.01"
+        }
+      ],
+      "definition": "containing or imposing condemnation or censure"
+    },
+    {
+      "lemma": "consecrate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "consecrate.v.04"
+        }
+      ],
+      "definition": "render holy by means of religious rites"
+    },
+    {
+      "lemma": "correct",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "call_on_the_carpet.v.01",
+          "via_synset": "chastise.v.01"
+        }
+      ],
+      "definition": "censure severely"
+    },
+    {
+      "lemma": "corrective",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "chastise.v.01",
+          "via_synset": "corrective.s.01"
+        }
+      ],
+      "definition": "designed to promote discipline"
+    },
+    {
+      "lemma": "count out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "count_out.v.01"
+        }
+      ],
+      "definition": "declare the loser"
+    },
+    {
+      "lemma": "credit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impute.v.01",
+          "via_synset": "credit.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impute.v.01",
+          "via_synset": "accredit.v.03"
+        }
+      ],
+      "definition": "give someone credit for something"
+    },
+    {
+      "lemma": "criminate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "reprimand.v.01"
+        }
+      ],
+      "definition": "rebuke formally"
+    },
+    {
+      "lemma": "critic",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "criticize.v.02",
+          "via_synset": "critic.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "criticize.v.02",
+          "via_synset": "critic.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "criticize.v.02",
+          "via_synset": "critic.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "knock.v.06",
+          "via_synset": "critic.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "knock.v.06",
+          "via_synset": "critic.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "knock.v.06",
+          "via_synset": "critic.n.01"
+        }
+      ],
+      "definition": "someone who frequently finds fault or makes harsh and unfair judgments"
+    },
+    {
+      "lemma": "criticise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "knock.v.06",
+          "via_synset": "knock.v.06"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "criticize.v.02",
+          "via_synset": "criticize.v.02"
+        }
+      ],
+      "definition": "find fault with; express criticism of; point out real or perceived flaws"
+    },
+    {
+      "lemma": "criticism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "knock.v.06",
+          "via_synset": "criticism.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "knock.v.06",
+          "via_synset": "criticism.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "knock.v.06",
+          "via_synset": "criticism.n.02"
+        }
+      ],
+      "definition": "a written evaluation of a work of literature"
+    },
+    {
+      "lemma": "criticize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "knock.v.06",
+          "via_synset": "knock.v.06"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "criticize.v.02",
+          "via_synset": "criticize.v.02"
+        }
+      ],
+      "definition": "find fault with; express criticism of; point out real or perceived flaws"
+    },
+    {
+      "lemma": "crucify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "savage.v.02"
+        }
+      ],
+      "definition": "criticize harshly or violently"
+    },
+    {
+      "lemma": "curse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "abuse.v.03",
+          "via_synset": "curse.v.02"
+        }
+      ],
+      "definition": "heap obscenities upon"
+    },
+    {
+      "lemma": "declare",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "condemn.v.02",
+          "via_synset": "declare.v.01"
+        }
+      ],
+      "definition": "state emphatically and authoritatively"
+    },
+    {
+      "lemma": "decree",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "decree.v.01"
+        }
+      ],
+      "definition": "issue a decree"
+    },
+    {
+      "lemma": "decry",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "condemn.v.01",
+          "via_synset": "condemn.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "denounce.v.01",
+          "via_synset": "condemn.v.01"
+        }
+      ],
+      "definition": "express strong disapproval of"
+    },
+    {
+      "lemma": "deflate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "deprecate.v.02",
+          "via_synset": "deflate.v.03"
+        }
+      ],
+      "definition": "reduce or lessen the size or importance of"
+    },
+    {
+      "lemma": "denigrate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disparage.v.01",
+          "via_synset": "minimize.v.03"
+        }
+      ],
+      "definition": "cause to seem less serious; play down"
+    },
+    {
+      "lemma": "denigration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "minimize.v.03",
+          "via_synset": "denigration.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "minimize.v.03",
+          "via_synset": "deprecation.n.02"
+        }
+      ],
+      "definition": "a belittling comment"
+    },
+    {
+      "lemma": "denigrative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "minimize.v.03",
+          "via_synset": "calumniatory.s.01"
+        }
+      ],
+      "definition": "(used of statements) harmful and often untrue; tending to discredit or malign"
+    },
+    {
+      "lemma": "denounce",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "condemn.v.01",
+          "via_synset": "denounce.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "denounce.v.01"
+        }
+      ],
+      "definition": "speak out against"
+    },
+    {
+      "lemma": "denouncement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "denounce.v.01",
+          "via_synset": "denunciation.n.01"
+        }
+      ],
+      "definition": "a public act of denouncing"
+    },
+    {
+      "lemma": "deplore",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "deplore.v.01"
+        }
+      ],
+      "definition": "express strong disapproval of"
+    },
+    {
+      "lemma": "depone",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "swear.v.04"
+        }
+      ],
+      "definition": "make a deposition; declare under oath"
+    },
+    {
+      "lemma": "depose",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "swear.v.04"
+        }
+      ],
+      "definition": "make a deposition; declare under oath"
+    },
+    {
+      "lemma": "deprecate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disparage.v.01",
+          "via_synset": "deprecate.v.02"
+        }
+      ],
+      "definition": "belittle"
+    },
+    {
+      "lemma": "deprecation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deprecate.v.02",
+          "via_synset": "deprecation.n.02"
+        }
+      ],
+      "definition": "the act of expressing disapproval (especially of yourself)"
+    },
+    {
+      "lemma": "deprecative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deprecate.v.02",
+          "via_synset": "belittling.s.01"
+        }
+      ],
+      "definition": "tending to diminish or disparage"
+    },
+    {
+      "lemma": "deprecatory",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deprecate.v.02",
+          "via_synset": "belittling.s.01"
+        }
+      ],
+      "definition": "tending to diminish or disparage"
+    },
+    {
+      "lemma": "depreciate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disparage.v.01",
+          "via_synset": "deprecate.v.02"
+        }
+      ],
+      "definition": "belittle"
+    },
+    {
+      "lemma": "depreciation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deprecate.v.02",
+          "via_synset": "disparagement.n.01"
+        }
+      ],
+      "definition": "a communication that belittles somebody or something"
+    },
+    {
+      "lemma": "depreciative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deprecate.v.02",
+          "via_synset": "belittling.s.01"
+        }
+      ],
+      "definition": "tending to diminish or disparage"
+    },
+    {
+      "lemma": "depreciator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deprecate.v.02",
+          "via_synset": "detractor.n.01"
+        }
+      ],
+      "definition": "one who disparages or belittles the worth of something"
+    },
+    {
+      "lemma": "depreciatory",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deprecate.v.02",
+          "via_synset": "belittling.s.01"
+        }
+      ],
+      "definition": "tending to diminish or disparage"
+    },
+    {
+      "lemma": "derogate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disparage.v.01",
+          "via_synset": "minimize.v.03"
+        }
+      ],
+      "definition": "cause to seem less serious; play down"
+    },
+    {
+      "lemma": "derogation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "minimize.v.03",
+          "via_synset": "disparagement.n.01"
+        }
+      ],
+      "definition": "a communication that belittles somebody or something"
+    },
+    {
+      "lemma": "derogative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "minimize.v.03",
+          "via_synset": "derogative.s.01"
+        }
+      ],
+      "definition": "expressive of low opinion"
+    },
+    {
+      "lemma": "derogatory",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "minimize.v.03",
+          "via_synset": "derogative.s.01"
+        }
+      ],
+      "definition": "expressive of low opinion"
+    },
+    {
+      "lemma": "discredit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "discredit.v.02",
+          "via_synset": "disrepute.n.01"
+        }
+      ],
+      "definition": "the state of being held in low esteem"
+    },
+    {
+      "lemma": "discredit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disparage.v.01",
+          "via_synset": "discredit.v.02"
+        }
+      ],
+      "definition": "damage the reputation of"
+    },
+    {
+      "lemma": "disgrace",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "discredit.v.02",
+          "via_synset": "shame.n.02"
+        }
+      ],
+      "definition": "a state of dishonor"
+    },
+    {
+      "lemma": "disgrace",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disparage.v.01",
+          "via_synset": "discredit.v.02"
+        }
+      ],
+      "definition": "damage the reputation of"
+    },
+    {
+      "lemma": "disparage",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "disparage.v.01"
+        }
+      ],
+      "definition": "express a negative opinion of"
+    },
+    {
+      "lemma": "disparagement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disparage.v.01",
+          "via_synset": "disparagement.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disparage.v.01",
+          "via_synset": "disparagement.n.02"
+        }
+      ],
+      "definition": "a communication that belittles somebody or something"
+    },
+    {
+      "lemma": "disparager",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disparage.v.01",
+          "via_synset": "detractor.n.01"
+        }
+      ],
+      "definition": "one who disparages or belittles the worth of something"
+    },
+    {
+      "lemma": "doom",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "sentence.v.01"
+        }
+      ],
+      "definition": "pronounce a sentence on (somebody) in a court of law"
+    },
+    {
+      "lemma": "dress down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "exclaim",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "proclaim.v.02"
+        }
+      ],
+      "definition": "state or announce"
+    },
+    {
+      "lemma": "excoriate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "condemn.v.01",
+          "via_synset": "condemn.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "denounce.v.01",
+          "via_synset": "condemn.v.01"
+        }
+      ],
+      "definition": "express strong disapproval of"
+    },
+    {
+      "lemma": "excoriation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "condemn.v.01",
+          "via_synset": "excoriation.n.02"
+        }
+      ],
+      "definition": "severe censure"
+    },
+    {
+      "lemma": "execrate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "deplore.v.01",
+          "via_synset": "accurse.v.01"
+        }
+      ],
+      "definition": "curse or declare to be evil or anathema or threaten with divine punishment"
+    },
+    {
+      "lemma": "execration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "accurse.v.01",
+          "via_synset": "execration.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "accurse.v.01",
+          "via_synset": "execration.n.03"
+        }
+      ],
+      "definition": "an appeal to some supernatural power to inflict evil on someone or some group"
+    },
+    {
+      "lemma": "explode",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "condemn.v.02",
+          "via_synset": "explode.v.07"
+        }
+      ],
+      "definition": "drive from the stage by noisy disapproval"
+    },
+    {
+      "lemma": "externalise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impute.v.01",
+          "via_synset": "project.v.12"
+        }
+      ],
+      "definition": "regard as objective"
+    },
+    {
+      "lemma": "externalize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impute.v.01",
+          "via_synset": "project.v.12"
+        }
+      ],
+      "definition": "regard as objective"
+    },
+    {
+      "lemma": "faultfinder",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "blame.v.02",
+          "via_synset": "cynic.n.01"
+        }
+      ],
+      "definition": "someone who is critical of the motives of others"
+    },
+    {
+      "lemma": "find fault",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "blame.v.02"
+        }
+      ],
+      "definition": "harass with constant criticism"
+    },
+    {
+      "lemma": "flame",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "chastise.v.01",
+          "via_synset": "flame.v.03"
+        }
+      ],
+      "definition": "criticize harshly, usually via an electronic medium"
+    },
+    {
+      "lemma": "fulminate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "denounce.v.01",
+          "via_synset": "fulminate.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "denounce.v.01",
+          "via_synset": "fulminate.v.01"
+        }
+      ],
+      "definition": "criticize severely"
+    },
+    {
+      "lemma": "fulmination",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fulminate.v.01",
+          "via_synset": "fulmination.n.01"
+        }
+      ],
+      "definition": "thunderous verbal attack"
+    },
+    {
+      "lemma": "hallow",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "consecrate.v.04"
+        }
+      ],
+      "definition": "render holy by means of religious rites"
+    },
+    {
+      "lemma": "harsh on",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "harsh_on.v.01"
+        }
+      ],
+      "definition": "criticize harshly"
+    },
+    {
+      "lemma": "have words",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "hiss",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "boo.v.01",
+          "via_synset": "hiss.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "boo.v.01",
+          "via_synset": "boo.n.01"
+        }
+      ],
+      "definition": "a fricative sound (especially as an expression of disapproval)"
+    },
+    {
+      "lemma": "hiss",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "condemn.v.02",
+          "via_synset": "boo.v.01"
+        }
+      ],
+      "definition": "show displeasure, as after a performance or speech"
+    },
+    {
+      "lemma": "hisser",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "boo.v.01",
+          "via_synset": "hisser.n.01"
+        }
+      ],
+      "definition": "someone who communicates disapproval by hissing"
+    },
+    {
+      "lemma": "hissing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "boo.v.01",
+          "via_synset": "hiss.n.01"
+        }
+      ],
+      "definition": "a fricative sound (especially as an expression of disapproval)"
+    },
+    {
+      "lemma": "implication",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "accusation.n.01",
+          "via_synset": "implication.n.03"
+        }
+      ],
+      "definition": "an accusation that brings into intimate and usually incriminating connection"
+    },
+    {
+      "lemma": "imprecation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "accusation.n.01",
+          "via_synset": "imprecation.n.02"
+        }
+      ],
+      "definition": "a slanderous accusation"
+    },
+    {
+      "lemma": "imputation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "accusation.n.01",
+          "via_synset": "imputation.n.01"
+        }
+      ],
+      "definition": "a statement attributing something dishonest (especially a criminal offense)"
+    },
+    {
+      "lemma": "impute",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "blame.v.03",
+          "via_synset": "impute.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impute.v.01",
+          "via_synset": "impute.v.02"
+        }
+      ],
+      "definition": "attribute or credit to"
+    },
+    {
+      "lemma": "incriminate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "incrimination.n.01",
+          "via_synset": "incriminate.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "incrimination.n.01",
+          "via_synset": "accuse.v.01"
+        }
+      ],
+      "definition": "suggest that someone is guilty"
+    },
+    {
+      "lemma": "incrimination",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "incrimination.n.01",
+          "via_synset": "incrimination.n.01"
+        }
+      ],
+      "definition": "an accusation that you are responsible for some lapse or misdeed"
+    },
+    {
+      "lemma": "inculpate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "incrimination.n.01",
+          "via_synset": "incriminate.v.01"
+        }
+      ],
+      "definition": "suggest that someone is guilty"
+    },
+    {
+      "lemma": "inculpation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "incrimination.n.01",
+          "via_synset": "incrimination.n.01"
+        }
+      ],
+      "definition": "an accusation that you are responsible for some lapse or misdeed"
+    },
+    {
+      "lemma": "indictment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "accusation.n.01",
+          "via_synset": "indictment.n.02"
+        }
+      ],
+      "definition": "an accusation of wrongdoing"
+    },
+    {
+      "lemma": "information",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "accusation.n.01",
+          "via_synset": "information.n.03"
+        }
+      ],
+      "definition": "formal accusation of a crime"
+    },
+    {
+      "lemma": "interiorise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impute.v.01",
+          "via_synset": "internalize.v.01"
+        }
+      ],
+      "definition": "incorporate within oneself; make subjective or personal"
+    },
+    {
+      "lemma": "interiorize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impute.v.01",
+          "via_synset": "internalize.v.01"
+        }
+      ],
+      "definition": "incorporate within oneself; make subjective or personal"
+    },
+    {
+      "lemma": "internalise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impute.v.01",
+          "via_synset": "internalize.v.01"
+        }
+      ],
+      "definition": "incorporate within oneself; make subjective or personal"
+    },
+    {
+      "lemma": "internalize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impute.v.01",
+          "via_synset": "internalize.v.01"
+        }
+      ],
+      "definition": "incorporate within oneself; make subjective or personal"
+    },
+    {
+      "lemma": "jaw",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "kibbitz",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "comment.v.01",
+          "via_synset": "kibitz.v.01"
+        }
+      ],
+      "definition": "make unwanted and intrusive comments"
+    },
+    {
+      "lemma": "kibitz",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "comment.v.01",
+          "via_synset": "kibitz.v.01"
+        }
+      ],
+      "definition": "make unwanted and intrusive comments"
+    },
+    {
+      "lemma": "knock",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "knock.v.06",
+          "via_synset": "knock.v.06"
+        }
+      ],
+      "definition": "find fault with; express criticism of; point out real or perceived flaws"
+    },
+    {
+      "lemma": "lambast",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "lambaste",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "lash out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "attack.v.02"
+        }
+      ],
+      "definition": "attack in speech or writing"
+    },
+    {
+      "lemma": "lecture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "call_on_the_carpet.v.01",
+          "via_synset": "lecture.n.02"
+        }
+      ],
+      "definition": "a lengthy rebuke"
+    },
+    {
+      "lemma": "lecture",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "minimization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "minimize.v.03",
+          "via_synset": "minimization.n.01"
+        }
+      ],
+      "definition": "the act of reducing something to the least possible amount or degree or position"
+    },
+    {
+      "lemma": "minimize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disparage.v.01",
+          "via_synset": "minimize.v.03"
+        }
+      ],
+      "definition": "cause to seem less serious; play down"
+    },
+    {
+      "lemma": "minimum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "minimize.v.03",
+          "via_synset": "minimum.n.01"
+        }
+      ],
+      "definition": "the smallest possible quantity"
+    },
+    {
+      "lemma": "nitpick",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "nitpick.v.01"
+        }
+      ],
+      "definition": "be overly critical; criticize minor details"
+    },
+    {
+      "lemma": "nitpicker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "nitpick.v.01",
+          "via_synset": "nitpicker.n.01"
+        }
+      ],
+      "definition": "someone who makes small and unjustified criticisms"
+    },
+    {
+      "lemma": "notice",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "knock.v.06",
+          "via_synset": "comment.v.01"
+        }
+      ],
+      "definition": "make or write a comment on"
+    },
+    {
+      "lemma": "objurgate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "condemn.v.01",
+          "via_synset": "condemn.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "call_on_the_carpet.v.01",
+          "via_synset": "chastise.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "denounce.v.01",
+          "via_synset": "condemn.v.01"
+        }
+      ],
+      "definition": "express strong disapproval of"
+    },
+    {
+      "lemma": "objurgation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "chastise.v.01",
+          "via_synset": "chiding.n.01"
+        }
+      ],
+      "definition": "rebuking a person harshly"
+    },
+    {
+      "lemma": "opine",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "opine.v.01"
+        }
+      ],
+      "definition": "express one's opinion openly and without fear or hesitation"
+    },
+    {
+      "lemma": "pan",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disparage.v.01",
+          "via_synset": "pan.v.03"
+        }
+      ],
+      "definition": "express a totally negative opinion of"
+    },
+    {
+      "lemma": "personate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impute.v.01",
+          "via_synset": "personify.v.03"
+        }
+      ],
+      "definition": "attribute human qualities to something"
+    },
+    {
+      "lemma": "personify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impute.v.01",
+          "via_synset": "personify.v.03"
+        }
+      ],
+      "definition": "attribute human qualities to something"
+    },
+    {
+      "lemma": "pick",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "blame.v.02"
+        }
+      ],
+      "definition": "harass with constant criticism"
+    },
+    {
+      "lemma": "pick apart",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "knock.v.06",
+          "via_synset": "knock.v.06"
+        }
+      ],
+      "definition": "find fault with; express criticism of; point out real or perceived flaws"
+    },
+    {
+      "lemma": "pick at",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "disparage.v.01"
+        }
+      ],
+      "definition": "express a negative opinion of"
+    },
+    {
+      "lemma": "pillory",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "savage.v.02"
+        }
+      ],
+      "definition": "criticize harshly or violently"
+    },
+    {
+      "lemma": "plead",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "plead.v.03"
+        }
+      ],
+      "definition": "enter a plea, as in courts of law"
+    },
+    {
+      "lemma": "point out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "knock.v.06",
+          "via_synset": "comment.v.01"
+        }
+      ],
+      "definition": "make or write a comment on"
+    },
+    {
+      "lemma": "preferment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "accusation.n.01",
+          "via_synset": "preferment.n.02"
+        }
+      ],
+      "definition": "the act of making accusations"
+    },
+    {
+      "lemma": "proclaim",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "proclaim.v.02"
+        }
+      ],
+      "definition": "state or announce"
+    },
+    {
+      "lemma": "profess",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "profess.v.04"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "profess.v.02"
+        }
+      ],
+      "definition": "state freely"
+    },
+    {
+      "lemma": "project",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impute.v.01",
+          "via_synset": "project.v.12"
+        }
+      ],
+      "definition": "regard as objective"
+    },
+    {
+      "lemma": "promise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "promise.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "promise.v.01"
+        }
+      ],
+      "definition": "promise to undertake or give"
+    },
+    {
+      "lemma": "promulgate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "proclaim.v.02"
+        }
+      ],
+      "definition": "state or announce"
+    },
+    {
+      "lemma": "propose",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "propose.v.01"
+        }
+      ],
+      "definition": "make a proposal, declare a plan for something"
+    },
+    {
+      "lemma": "puncture",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "deprecate.v.02",
+          "via_synset": "deflate.v.03"
+        }
+      ],
+      "definition": "reduce or lessen the size or importance of"
+    },
+    {
+      "lemma": "rag",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "rail",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "denounce.v.01",
+          "via_synset": "fulminate.v.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "abuse.v.03",
+          "via_synset": "vilify.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "denounce.v.01",
+          "via_synset": "fulminate.v.01"
+        }
+      ],
+      "definition": "criticize severely"
+    },
+    {
+      "lemma": "reattribute",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impute.v.01",
+          "via_synset": "reattribute.v.01"
+        }
+      ],
+      "definition": "attribute to another source"
+    },
+    {
+      "lemma": "rebuke",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "call_on_the_carpet.v.01",
+          "via_synset": "rebuke.n.01"
+        }
+      ],
+      "definition": "an act or expression of criticism and censure"
+    },
+    {
+      "lemma": "rebuke",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "rebuker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "call_on_the_carpet.v.01",
+          "via_synset": "upbraider.n.01"
+        }
+      ],
+      "definition": "someone who finds fault or imputes blame"
+    },
+    {
+      "lemma": "recrimination",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "accusation.n.01",
+          "via_synset": "recrimination.n.01"
+        }
+      ],
+      "definition": "mutual accusations"
+    },
+    {
+      "lemma": "remark",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "knock.v.06",
+          "via_synset": "comment.v.01"
+        }
+      ],
+      "definition": "make or write a comment on"
+    },
+    {
+      "lemma": "remonstrate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "reprehend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "reprehend.v.01"
+        }
+      ],
+      "definition": "express strong disapproval of"
+    },
+    {
+      "lemma": "reprehensible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reprehend.v.01",
+          "via_synset": "condemnable.s.01"
+        }
+      ],
+      "definition": "bringing or deserving severe rebuke or censure"
+    },
+    {
+      "lemma": "reprehension",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reprehend.v.01",
+          "via_synset": "rebuke.n.01"
+        }
+      ],
+      "definition": "an act or expression of criticism and censure"
+    },
+    {
+      "lemma": "reprimand",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "call_on_the_carpet.v.01",
+          "via_synset": "rebuke.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reprimand.v.01",
+          "via_synset": "rebuke.n.01"
+        }
+      ],
+      "definition": "an act or expression of criticism and censure"
+    },
+    {
+      "lemma": "reprimand",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "reprimand.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "reprobate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "condemn.v.01",
+          "via_synset": "condemn.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "denounce.v.01",
+          "via_synset": "condemn.v.01"
+        }
+      ],
+      "definition": "express strong disapproval of"
+    },
+    {
+      "lemma": "reprobation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "condemn.v.01",
+          "via_synset": "reprobation.n.02"
+        }
+      ],
+      "definition": "severe disapproval"
+    },
+    {
+      "lemma": "reproof",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "call_on_the_carpet.v.01",
+          "via_synset": "rebuke.n.01"
+        }
+      ],
+      "definition": "an act or expression of criticism and censure"
+    },
+    {
+      "lemma": "reproof",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "reproval",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "admonish.v.03",
+          "via_synset": "rebuke.n.01"
+        }
+      ],
+      "definition": "an act or expression of criticism and censure"
+    },
+    {
+      "lemma": "reprove",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "admonish.v.03"
+        }
+      ],
+      "definition": "take to task"
+    },
+    {
+      "lemma": "reprover",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "admonish.v.03",
+          "via_synset": "upbraider.n.01"
+        }
+      ],
+      "definition": "someone who finds fault or imputes blame"
+    },
+    {
+      "lemma": "revile",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "abuse.v.03",
+          "via_synset": "vilify.v.01"
+        }
+      ],
+      "definition": "spread negative information about"
+    },
+    {
+      "lemma": "rip",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "attack.v.02",
+          "via_synset": "rip.v.04"
+        }
+      ],
+      "definition": "criticize or abuse strongly and violently"
+    },
+    {
+      "lemma": "round",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "attack.v.02"
+        }
+      ],
+      "definition": "attack in speech or writing"
+    },
+    {
+      "lemma": "rubbish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "attack.v.02",
+          "via_synset": "rubbish.v.01"
+        }
+      ],
+      "definition": "attack strongly"
+    },
+    {
+      "lemma": "sanctify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "consecrate.v.04"
+        }
+      ],
+      "definition": "render holy by means of religious rites"
+    },
+    {
+      "lemma": "savage",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "savage.v.02"
+        }
+      ],
+      "definition": "criticize harshly or violently"
+    },
+    {
+      "lemma": "scald",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "attack.v.02",
+          "via_synset": "blister.v.02"
+        }
+      ],
+      "definition": "subject to harsh criticism"
+    },
+    {
+      "lemma": "scold",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "scolder",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "call_on_the_carpet.v.01",
+          "via_synset": "scold.n.01"
+        }
+      ],
+      "definition": "someone (especially a woman) who annoys people by constantly finding fault"
+    },
+    {
+      "lemma": "scolding",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "call_on_the_carpet.v.01",
+          "via_synset": "chiding.n.01"
+        }
+      ],
+      "definition": "rebuking a person harshly"
+    },
+    {
+      "lemma": "self-accusation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "accusation.n.01",
+          "via_synset": "self-accusation.n.01"
+        }
+      ],
+      "definition": "an admission that you have failed to do or be something you know you should do or be"
+    },
+    {
+      "lemma": "self-condemnation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "accusation.n.01",
+          "via_synset": "self-accusation.n.01"
+        }
+      ],
+      "definition": "an admission that you have failed to do or be something you know you should do or be"
+    },
+    {
+      "lemma": "self-incrimination",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "incrimination.n.01",
+          "via_synset": "self-incrimination.n.01"
+        }
+      ],
+      "definition": "an accusation that incriminates yourself"
+    },
+    {
+      "lemma": "sensualize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impute.v.01",
+          "via_synset": "sensualize.v.02"
+        }
+      ],
+      "definition": "ascribe to an origin in sensation"
+    },
+    {
+      "lemma": "sentence",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "sentence.v.01"
+        }
+      ],
+      "definition": "pronounce a sentence on (somebody) in a court of law"
+    },
+    {
+      "lemma": "shout",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "attack.v.02",
+          "via_synset": "abuse.v.03"
+        }
+      ],
+      "definition": "use foul or abusive language towards"
+    },
+    {
+      "lemma": "slang",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "abuse.v.03",
+          "via_synset": "slang.v.03"
+        }
+      ],
+      "definition": "abuse with coarse language"
+    },
+    {
+      "lemma": "snipe",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "attack.v.02"
+        }
+      ],
+      "definition": "attack in speech or writing"
+    },
+    {
+      "lemma": "sound off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "opine.v.01"
+        }
+      ],
+      "definition": "express one's opinion openly and without fear or hesitation"
+    },
+    {
+      "lemma": "speak out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "opine.v.01"
+        }
+      ],
+      "definition": "express one's opinion openly and without fear or hesitation"
+    },
+    {
+      "lemma": "speak up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "opine.v.01"
+        }
+      ],
+      "definition": "express one's opinion openly and without fear or hesitation"
+    },
+    {
+      "lemma": "suggest",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "propose.v.01"
+        }
+      ],
+      "definition": "make a proposal, declare a plan for something"
+    },
+    {
+      "lemma": "swan",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "affirm.v.02"
+        }
+      ],
+      "definition": "to declare or affirm solemnly and formally as true"
+    },
+    {
+      "lemma": "swear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "affirm.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "swear.v.04"
+        }
+      ],
+      "definition": "to declare or affirm solemnly and formally as true"
+    },
+    {
+      "lemma": "take the Fifth",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "take_the_fifth.v.01"
+        }
+      ],
+      "definition": "refuse to testify by invoking the Fifth Amendment, which states that nobody may be forced to testify as a witness against himself or herself"
+    },
+    {
+      "lemma": "take the Fifth Amendment",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "take_the_fifth.v.01"
+        }
+      ],
+      "definition": "refuse to testify by invoking the Fifth Amendment, which states that nobody may be forced to testify as a witness against himself or herself"
+    },
+    {
+      "lemma": "take the stand",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "testify.v.01"
+        }
+      ],
+      "definition": "give testimony in a court of law"
+    },
+    {
+      "lemma": "take to task",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "talk down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "minimize.v.03",
+          "via_synset": "talk_down.v.01"
+        }
+      ],
+      "definition": "belittle through talk"
+    },
+    {
+      "lemma": "tear apart",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disparage.v.01",
+          "via_synset": "pan.v.03"
+        }
+      ],
+      "definition": "express a totally negative opinion of"
+    },
+    {
+      "lemma": "tell off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "call_on_the_carpet.v.01",
+          "via_synset": "tell_off.v.01"
+        }
+      ],
+      "definition": "reprimand"
+    },
+    {
+      "lemma": "testify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "testify.v.01"
+        }
+      ],
+      "definition": "give testimony in a court of law"
+    },
+    {
+      "lemma": "trash",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disparage.v.01",
+          "via_synset": "pan.v.03"
+        }
+      ],
+      "definition": "express a totally negative opinion of"
+    },
+    {
+      "lemma": "trounce",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "knock.v.06",
+          "via_synset": "call_on_the_carpet.v.01"
+        }
+      ],
+      "definition": "censure severely or angrily"
+    },
+    {
+      "lemma": "verify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "declare.v.01",
+          "via_synset": "affirm.v.02"
+        }
+      ],
+      "definition": "to declare or affirm solemnly and formally as true"
+    },
+    {
+      "lemma": "vilify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "abuse.v.03",
+          "via_synset": "vilify.v.01"
+        }
+      ],
+      "definition": "spread negative information about"
+    },
+    {
+      "lemma": "vilipend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disparage.v.01",
+          "via_synset": "deprecate.v.02"
+        }
+      ],
+      "definition": "belittle"
+    },
+    {
+      "lemma": "vitriol",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "attack.v.02",
+          "via_synset": "vitriol.v.02"
+        }
+      ],
+      "definition": "subject to bitter verbal abuse"
+    },
+    {
+      "lemma": "vituperate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "abuse.v.03",
+          "via_synset": "vilify.v.01"
+        }
+      ],
+      "definition": "spread negative information about"
+    },
+    {
+      "lemma": "whang",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "whang.v.03",
+          "via_synset": "knock.n.05"
+        }
+      ],
+      "definition": "the act of hitting vigorously"
+    },
+    {
+      "lemma": "whang",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "attack.v.02",
+          "via_synset": "whang.v.03"
+        }
+      ],
+      "definition": "attack forcefully"
+    },
+    {
+      "lemma": "whip",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "attack.v.02",
+          "via_synset": "blister.v.02"
+        }
+      ],
+      "definition": "subject to harsh criticism"
+    },
+    {
+      "lemma": "wisecrack",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "comment.v.01",
+          "via_synset": "wisecrack.v.01"
+        }
+      ],
+      "definition": "make a comment, usually ironic"
+    }
+  ]
+}

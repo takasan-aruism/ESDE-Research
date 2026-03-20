@@ -1,0 +1,1094 @@
+{
+  "atom_id": "PRP.dirty",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 64,
+  "pos_counts": {
+    "adj": 55,
+    "n": 9
+  },
+  "source_counts": {
+    "0_seed": 16,
+    "7_similar_to": 52,
+    "8_also_see": 2,
+    "6_derivational": 13
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 10,
+      "words": [
+        "dirty(adj)",
+        "soiled(adj)",
+        "unclean(adj)",
+        "pestiferous(adj)",
+        "foul(adj)",
+        "marked-up(adj)",
+        "filthy(adj)",
+        "nasty(adj)",
+        "lousy(adj)",
+        "impure(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 9,
+      "words": [
+        "filth(n)",
+        "filthiness(n)",
+        "foulness(n)",
+        "nastiness(n)",
+        "uncleanness(n)",
+        "impureness(n)",
+        "dirt(n)",
+        "dirtiness(n)",
+        "lousiness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 44,
+      "words": [
+        "untouchable(adj)",
+        "nonkosher(adj)",
+        "tref(adj)",
+        "terefah(adj)",
+        "illegible(adj)",
+        "buggy(adj)",
+        "feculent(adj)",
+        "travel-soiled(adj)",
+        "travel-stained(adj)",
+        "unwashed(adj)",
+        "mucky(adj)",
+        "muddy(adj)",
+        "cobwebby(adj)",
+        "scummy(adj)",
+        "smudgy(adj)",
+        "Augean(adj)",
+        "greasy(adj)",
+        "oily(adj)",
+        "ratty(adj)",
+        "sooty(adj)",
+        "flyblown(adj)",
+        "squalid(adj)",
+        "sordid(adj)",
+        "snotty(adj)",
+        "snot-nosed(adj)",
+        "maculate(adj)",
+        "black(adj)",
+        "smutty(adj)",
+        "unswept(adj)",
+        "befouled(adj)",
+        "fouled(adj)",
+        "dirty-faced(adj)",
+        "uncleanly(adj)",
+        "bedraggled(adj)",
+        "draggled(adj)",
+        "begrimed(adj)",
+        "dingy(adj)",
+        "grimy(adj)",
+        "grubby(adj)",
+        "grungy(adj)",
+        "raunchy(adj)",
+        "septic(adj)",
+        "infected(adj)",
+        "awful(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 1,
+      "words": [
+        "untidy(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "Augean",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "augean.s.01"
+        }
+      ],
+      "definition": "extremely filthy from long neglect"
+    },
+    {
+      "lemma": "awful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.s.01",
+          "via_synset": "nasty.a.01"
+        }
+      ],
+      "definition": "offensive or even (of persons) malicious; ; ; ; ; ; - Ezra Pound"
+    },
+    {
+      "lemma": "bedraggled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "bedraggled.s.01"
+        }
+      ],
+      "definition": "limp and soiled as if dragged in the mud"
+    },
+    {
+      "lemma": "befouled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "befouled.s.01"
+        }
+      ],
+      "definition": "made dirty or foul"
+    },
+    {
+      "lemma": "begrimed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "begrimed.s.01"
+        }
+      ],
+      "definition": "thickly covered with ingrained dirt or soot"
+    },
+    {
+      "lemma": "black",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "black.s.12"
+        }
+      ],
+      "definition": "soiled with dirt or soot"
+    },
+    {
+      "lemma": "buggy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "buggy.s.02"
+        }
+      ],
+      "definition": "infested with bugs"
+    },
+    {
+      "lemma": "cobwebby",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "cobwebby.s.02"
+        }
+      ],
+      "definition": "covered with cobwebs"
+    },
+    {
+      "lemma": "dingy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "begrimed.s.01"
+        }
+      ],
+      "definition": "thickly covered with ingrained dirt or soot"
+    },
+    {
+      "lemma": "dirt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dirty.a.01",
+          "via_synset": "dirt.n.02"
+        }
+      ],
+      "definition": "the state of being covered with unclean things"
+    },
+    {
+      "lemma": "dirtiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dirty.a.01",
+          "via_synset": "dirtiness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dirty.s.02",
+          "via_synset": "dirtiness.n.01"
+        }
+      ],
+      "definition": "the state of being unsanitary"
+    },
+    {
+      "lemma": "dirty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dirty.a.01",
+          "via_synset": "dirty.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dirty.s.02",
+          "via_synset": "dirty.s.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dirty.s.04",
+          "via_synset": "dirty.s.04"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dirty.s.01",
+          "via_synset": "dirty.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "filthy.s.01",
+          "via_synset": "dirty.a.01"
+        }
+      ],
+      "definition": "soiled or likely to soil with dirt or grime"
+    },
+    {
+      "lemma": "dirty-faced",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "dirty-faced.s.01"
+        }
+      ],
+      "definition": "having a dirty face"
+    },
+    {
+      "lemma": "draggled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "bedraggled.s.01"
+        }
+      ],
+      "definition": "limp and soiled as if dragged in the mud"
+    },
+    {
+      "lemma": "feculent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "feculent.s.01"
+        }
+      ],
+      "definition": "foul with waste matter"
+    },
+    {
+      "lemma": "filth",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "filthy.s.01",
+          "via_synset": "dirt.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "filthy.s.01",
+          "via_synset": "filth.n.03"
+        }
+      ],
+      "definition": "the state of being covered with unclean things"
+    },
+    {
+      "lemma": "filthiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "filthy.s.01",
+          "via_synset": "filth.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dirty.s.01",
+          "via_synset": "filthiness.n.02"
+        }
+      ],
+      "definition": "a state characterized by foul or disgusting dirt and refuse"
+    },
+    {
+      "lemma": "filthy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "filthy.s.01",
+          "via_synset": "filthy.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dirty.s.01",
+          "via_synset": "dirty.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "filthy.s.01"
+        }
+      ],
+      "definition": "disgustingly dirty; filled or smeared with offensive matter"
+    },
+    {
+      "lemma": "flyblown",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "flyblown.s.02"
+        }
+      ],
+      "definition": "foul and run-down and repulsive"
+    },
+    {
+      "lemma": "foul",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dirty.s.04",
+          "via_synset": "dirty.s.04"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "filthy.s.01",
+          "via_synset": "filthy.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "filthy.s.01"
+        }
+      ],
+      "definition": "(of a manuscript) defaced with changes"
+    },
+    {
+      "lemma": "fouled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "befouled.s.01"
+        }
+      ],
+      "definition": "made dirty or foul"
+    },
+    {
+      "lemma": "foulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "filthy.s.01",
+          "via_synset": "filth.n.03"
+        }
+      ],
+      "definition": "a state characterized by foul or disgusting dirt and refuse"
+    },
+    {
+      "lemma": "greasy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "greasy.s.02"
+        }
+      ],
+      "definition": "smeared or soiled with grease or oil"
+    },
+    {
+      "lemma": "grimy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "begrimed.s.01"
+        }
+      ],
+      "definition": "thickly covered with ingrained dirt or soot"
+    },
+    {
+      "lemma": "grubby",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "begrimed.s.01"
+        }
+      ],
+      "definition": "thickly covered with ingrained dirt or soot"
+    },
+    {
+      "lemma": "grungy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "begrimed.s.01"
+        }
+      ],
+      "definition": "thickly covered with ingrained dirt or soot"
+    },
+    {
+      "lemma": "illegible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.s.04",
+          "via_synset": "illegible.a.01"
+        }
+      ],
+      "definition": "(of handwriting, print, etc.) not legible"
+    },
+    {
+      "lemma": "impure",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unclean.a.02",
+          "via_synset": "unclean.a.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unclean.a.02",
+          "via_synset": "impure.a.01"
+        }
+      ],
+      "definition": "having a physical or moral blemish so as to make impure according to dietary or ceremonial laws; ; -Leviticus 11:3"
+    },
+    {
+      "lemma": "impureness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unclean.a.02",
+          "via_synset": "impurity.n.02"
+        }
+      ],
+      "definition": "the condition of being impure"
+    },
+    {
+      "lemma": "infected",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.s.02",
+          "via_synset": "septic.a.01"
+        }
+      ],
+      "definition": "containing or resulting from disease-causing organisms"
+    },
+    {
+      "lemma": "lousiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dirty.s.01",
+          "via_synset": "loathsomeness.n.01"
+        }
+      ],
+      "definition": "the quality of being disgusting to the senses or emotions"
+    },
+    {
+      "lemma": "lousy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dirty.s.01",
+          "via_synset": "dirty.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "lousy.s.02"
+        }
+      ],
+      "definition": "vile; despicable"
+    },
+    {
+      "lemma": "maculate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "maculate.s.02"
+        }
+      ],
+      "definition": "spotted or blotched"
+    },
+    {
+      "lemma": "marked-up",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dirty.s.04",
+          "via_synset": "dirty.s.04"
+        }
+      ],
+      "definition": "(of a manuscript) defaced with changes"
+    },
+    {
+      "lemma": "mucky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "mucky.s.02"
+        }
+      ],
+      "definition": "dirty and messy; covered with mud or muck"
+    },
+    {
+      "lemma": "muddy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "mucky.s.02"
+        }
+      ],
+      "definition": "dirty and messy; covered with mud or muck"
+    },
+    {
+      "lemma": "nastiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "filthy.s.01",
+          "via_synset": "filth.n.03"
+        }
+      ],
+      "definition": "a state characterized by foul or disgusting dirt and refuse"
+    },
+    {
+      "lemma": "nasty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "filthy.s.01",
+          "via_synset": "filthy.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "filthy.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.s.01",
+          "via_synset": "nasty.a.01"
+        }
+      ],
+      "definition": "disgustingly dirty; filled or smeared with offensive matter"
+    },
+    {
+      "lemma": "nonkosher",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unclean.a.02",
+          "via_synset": "nonkosher.s.01"
+        }
+      ],
+      "definition": "not conforming to dietary laws"
+    },
+    {
+      "lemma": "oily",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "greasy.s.02"
+        }
+      ],
+      "definition": "smeared or soiled with grease or oil"
+    },
+    {
+      "lemma": "pestiferous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dirty.s.02",
+          "via_synset": "dirty.s.02"
+        }
+      ],
+      "definition": "contaminated with infecting organisms; ; - Jane Austen"
+    },
+    {
+      "lemma": "ratty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "ratty.s.02"
+        }
+      ],
+      "definition": "dirty and infested with rats"
+    },
+    {
+      "lemma": "raunchy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "begrimed.s.01"
+        }
+      ],
+      "definition": "thickly covered with ingrained dirt or soot"
+    },
+    {
+      "lemma": "scummy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "scummy.s.02"
+        }
+      ],
+      "definition": "covered with scum"
+    },
+    {
+      "lemma": "septic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.s.02",
+          "via_synset": "septic.a.01"
+        }
+      ],
+      "definition": "containing or resulting from disease-causing organisms"
+    },
+    {
+      "lemma": "smudgy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "smudgy.s.01"
+        }
+      ],
+      "definition": "smeared with something that soils or stains; these words are often used in combination; ; - Henry Roth"
+    },
+    {
+      "lemma": "smutty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "black.s.12"
+        }
+      ],
+      "definition": "soiled with dirt or soot"
+    },
+    {
+      "lemma": "snot-nosed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "snotty.s.02"
+        }
+      ],
+      "definition": "dirty with nasal discharge"
+    },
+    {
+      "lemma": "snotty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "snotty.s.02"
+        }
+      ],
+      "definition": "dirty with nasal discharge"
+    },
+    {
+      "lemma": "soiled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dirty.a.01",
+          "via_synset": "dirty.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "filthy.s.01",
+          "via_synset": "dirty.a.01"
+        }
+      ],
+      "definition": "soiled or likely to soil with dirt or grime"
+    },
+    {
+      "lemma": "sooty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "sooty.s.02"
+        }
+      ],
+      "definition": "covered with or as if with soot"
+    },
+    {
+      "lemma": "sordid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "flyblown.s.02"
+        }
+      ],
+      "definition": "foul and run-down and repulsive"
+    },
+    {
+      "lemma": "squalid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "flyblown.s.02"
+        }
+      ],
+      "definition": "foul and run-down and repulsive"
+    },
+    {
+      "lemma": "terefah",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unclean.a.02",
+          "via_synset": "nonkosher.s.01"
+        }
+      ],
+      "definition": "not conforming to dietary laws"
+    },
+    {
+      "lemma": "travel-soiled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "travel-soiled.s.01"
+        }
+      ],
+      "definition": "soiled from travel"
+    },
+    {
+      "lemma": "travel-stained",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "travel-soiled.s.01"
+        }
+      ],
+      "definition": "soiled from travel"
+    },
+    {
+      "lemma": "tref",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unclean.a.02",
+          "via_synset": "nonkosher.s.01"
+        }
+      ],
+      "definition": "not conforming to dietary laws"
+    },
+    {
+      "lemma": "unclean",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dirty.a.01",
+          "via_synset": "dirty.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unclean.a.02",
+          "via_synset": "unclean.a.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "filthy.s.01",
+          "via_synset": "dirty.a.01"
+        }
+      ],
+      "definition": "soiled or likely to soil with dirt or grime"
+    },
+    {
+      "lemma": "uncleanly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "uncleanly.s.01"
+        }
+      ],
+      "definition": "habitually unclean"
+    },
+    {
+      "lemma": "uncleanness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unclean.a.02",
+          "via_synset": "dirtiness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dirty.a.01",
+          "via_synset": "dirtiness.n.01"
+        }
+      ],
+      "definition": "the state of being unsanitary"
+    },
+    {
+      "lemma": "unswept",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "unswept.s.01"
+        }
+      ],
+      "definition": "not having been swept"
+    },
+    {
+      "lemma": "untidy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "dirty.a.01",
+          "via_synset": "untidy.a.01"
+        }
+      ],
+      "definition": "not neat and tidy"
+    },
+    {
+      "lemma": "untouchable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unclean.a.02",
+          "via_synset": "untouchable.s.04"
+        }
+      ],
+      "definition": "( especially used in traditional Hindu belief of the lowest caste or castes) defiling"
+    },
+    {
+      "lemma": "unwashed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dirty.a.01",
+          "via_synset": "unwashed.s.02"
+        }
+      ],
+      "definition": "not cleaned with or as if with soap and water"
+    }
+  ]
+}

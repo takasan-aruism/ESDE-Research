@@ -1,0 +1,2237 @@
+{
+  "atom_id": "ACT.calm",
+  "category": "ACT",
+  "seed_count": 6,
+  "total_keys": 128,
+  "pos_counts": {
+    "v": 72,
+    "n": 46,
+    "adj": 10
+  },
+  "source_counts": {
+    "0_seed": 28,
+    "3_hyponym_d1": 31,
+    "6_derivational": 56,
+    "4_hyponym_d2": 16,
+    "10_sibling": 39,
+    "2_hypernym_d1": 15,
+    "9_antonym": 2
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 22,
+      "words": [
+        "calm(v)",
+        "calm down(v)",
+        "quiet(v)",
+        "tranquilize(v)",
+        "tranquillize(v)",
+        "tranquillise(v)",
+        "quieten(v)",
+        "lull(v)",
+        "still(v)",
+        "sedate(v)",
+        "steady(v)",
+        "becalm(v)",
+        "comfort(v)",
+        "soothe(v)",
+        "console(v)",
+        "solace(v)",
+        "repose(n)",
+        "quiet(n)",
+        "placidity(n)",
+        "serenity(n)",
+        "tranquillity(n)",
+        "tranquility(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 11,
+      "words": [
+        "affect(v)",
+        "stabilize(v)",
+        "stabilise(v)",
+        "relieve(v)",
+        "alleviate(v)",
+        "palliate(v)",
+        "assuage(v)",
+        "composure(n)",
+        "calm(n)",
+        "calmness(n)",
+        "equanimity(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 18,
+      "words": [
+        "pacify(v)",
+        "lenify(v)",
+        "conciliate(v)",
+        "appease(v)",
+        "mollify(v)",
+        "placate(v)",
+        "gentle(v)",
+        "gruntle(v)",
+        "compose(v)",
+        "reassure(v)",
+        "assure(v)",
+        "hypnotize(v)",
+        "hypnotise(v)",
+        "mesmerize(v)",
+        "mesmerise(v)",
+        "allay(v)",
+        "ease(v)",
+        "ataraxia(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 3,
+      "words": [
+        "entrance(v)",
+        "spellbind(v)",
+        "abreact(v)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 40,
+      "words": [
+        "still(n)",
+        "allayer(n)",
+        "reliever(n)",
+        "ease(n)",
+        "easement(n)",
+        "comfort(n)",
+        "comforter(n)",
+        "consolable(adj)",
+        "consolatory(adj)",
+        "consolation(n)",
+        "solace(n)",
+        "solacement(n)",
+        "sedative(adj)",
+        "sedation(n)",
+        "tranquilizer(n)",
+        "tranquillizer(n)",
+        "tranquilliser(n)",
+        "placid(adj)",
+        "entrancement(n)",
+        "spellbinder(n)",
+        "pacification(n)",
+        "peace(n)",
+        "pacifier(n)",
+        "conciliative(adj)",
+        "conciliation(n)",
+        "conciliator(n)",
+        "appeasable(adj)",
+        "mollification(n)",
+        "placative(adj)",
+        "placatory(adj)",
+        "placation(n)",
+        "reassurance(n)",
+        "hypnotizer(n)",
+        "hypnosis(n)",
+        "hypnotiser(n)",
+        "Mesmer(n)",
+        "lull(n)",
+        "ataraxic(adj)",
+        "ataractic(adj)",
+        "abreaction(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 2,
+      "words": [
+        "stimulate(v)",
+        "irritate(v)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 32,
+      "words": [
+        "arouse(v)",
+        "brace(v)",
+        "energize(v)",
+        "energise(v)",
+        "perk up(v)",
+        "tense(v)",
+        "strain(v)",
+        "tense up(v)",
+        "ulcerate(v)",
+        "cramp(v)",
+        "attack(v)",
+        "register(v)",
+        "relax(v)",
+        "unstrain(v)",
+        "unlax(v)",
+        "loosen up(v)",
+        "unwind(v)",
+        "make relaxed(v)",
+        "jaundice(v)",
+        "intoxicate(v)",
+        "soak(v)",
+        "inebriate(v)",
+        "settle(v)",
+        "root(v)",
+        "take root(v)",
+        "steady down(v)",
+        "settle down(v)",
+        "aplomb(n)",
+        "assuredness(n)",
+        "cool(n)",
+        "poise(n)",
+        "sang-froid(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "abreact",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "still.v.03",
+          "via_synset": "abreact.v.01"
+        }
+      ],
+      "definition": "discharge bad feelings or tension through verbalization"
+    },
+    {
+      "lemma": "abreaction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abreact.v.01",
+          "via_synset": "catharsis.n.01"
+        }
+      ],
+      "definition": "(psychoanalysis) purging of emotional tensions"
+    },
+    {
+      "lemma": "affect",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sedate.v.01",
+          "via_synset": "affect.v.02"
+        }
+      ],
+      "definition": "act physically on; have an effect upon"
+    },
+    {
+      "lemma": "allay",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "comfort.v.01",
+          "via_synset": "still.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "comfort.v.01",
+          "via_synset": "still.v.03"
+        }
+      ],
+      "definition": "lessen the intensity of or calm"
+    },
+    {
+      "lemma": "allayer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "still.v.03",
+          "via_synset": "reliever.n.02"
+        }
+      ],
+      "definition": "a person who reduces the intensity (e.g., of fears) and calms and pacifies"
+    },
+    {
+      "lemma": "alleviate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "soothe.v.02",
+          "via_synset": "relieve.v.01"
+        }
+      ],
+      "definition": "provide physical relief, as from pain"
+    },
+    {
+      "lemma": "aplomb",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "composure.n.01",
+          "via_synset": "aplomb.n.01"
+        }
+      ],
+      "definition": "great coolness and composure under strain"
+    },
+    {
+      "lemma": "appeasable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "appeasable.s.01"
+        }
+      ],
+      "definition": "capable of being pacified"
+    },
+    {
+      "lemma": "appease",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "pacify.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "pacify.v.01"
+        }
+      ],
+      "definition": "cause to be more favorably inclined; gain the good will of"
+    },
+    {
+      "lemma": "arouse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "stimulate.v.04"
+        }
+      ],
+      "definition": "cause to be alert and energetic"
+    },
+    {
+      "lemma": "assuage",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "soothe.v.02",
+          "via_synset": "relieve.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "pacify.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "pacify.v.01"
+        }
+      ],
+      "definition": "provide physical relief, as from pain"
+    },
+    {
+      "lemma": "assure",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "reassure.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "reassure.v.01"
+        }
+      ],
+      "definition": "cause to feel sure; give reassurance to"
+    },
+    {
+      "lemma": "assuredness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "composure.n.01",
+          "via_synset": "aplomb.n.01"
+        }
+      ],
+      "definition": "great coolness and composure under strain"
+    },
+    {
+      "lemma": "ataractic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ataraxia.n.01",
+          "via_synset": "ataractic.s.01"
+        }
+      ],
+      "definition": "tending to soothe or tranquilize"
+    },
+    {
+      "lemma": "ataraxia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "repose.n.03",
+          "via_synset": "ataraxia.n.01"
+        }
+      ],
+      "definition": "peace of mind"
+    },
+    {
+      "lemma": "ataraxic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ataraxia.n.01",
+          "via_synset": "ataractic.s.01"
+        }
+      ],
+      "definition": "tending to soothe or tranquilize"
+    },
+    {
+      "lemma": "attack",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "attack.v.06"
+        }
+      ],
+      "definition": "begin to injure"
+    },
+    {
+      "lemma": "becalm",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "steady.v.01",
+          "via_synset": "steady.v.01"
+        }
+      ],
+      "definition": "make steady"
+    },
+    {
+      "lemma": "brace",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "stimulate.v.04"
+        }
+      ],
+      "definition": "cause to be alert and energetic"
+    },
+    {
+      "lemma": "calm",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "repose.n.03",
+          "via_synset": "composure.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sedate.v.01",
+          "via_synset": "composure.n.01"
+        }
+      ],
+      "definition": "steadiness of mind under stress"
+    },
+    {
+      "lemma": "calm",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "calm.v.01",
+          "via_synset": "calm.v.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sedate.v.01",
+          "via_synset": "sedate.v.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "steady.v.01",
+          "via_synset": "steady.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "comfort.v.01",
+          "via_synset": "calm.v.01"
+        }
+      ],
+      "definition": "make calm or still"
+    },
+    {
+      "lemma": "calm down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "calm.v.01",
+          "via_synset": "calm.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "comfort.v.01",
+          "via_synset": "calm.v.01"
+        }
+      ],
+      "definition": "make calm or still"
+    },
+    {
+      "lemma": "calmness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "repose.n.03",
+          "via_synset": "composure.n.01"
+        }
+      ],
+      "definition": "steadiness of mind under stress"
+    },
+    {
+      "lemma": "comfort",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "comfort.v.01",
+          "via_synset": "consolation.n.02"
+        }
+      ],
+      "definition": "the act of consoling; giving relief in affliction"
+    },
+    {
+      "lemma": "comfort",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "comfort.v.01",
+          "via_synset": "comfort.v.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "calm.v.01",
+          "via_synset": "comfort.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "relieve.v.01",
+          "via_synset": "comfort.v.02"
+        }
+      ],
+      "definition": "give moral or emotional strength to"
+    },
+    {
+      "lemma": "comforter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "comfort.v.01",
+          "via_synset": "reliever.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "comfort.v.01",
+          "via_synset": "sympathizer.n.01"
+        }
+      ],
+      "definition": "a person who reduces the intensity (e.g., of fears) and calms and pacifies"
+    },
+    {
+      "lemma": "compose",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "compose.v.05"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "compose.v.05"
+        }
+      ],
+      "definition": "calm (someone, especially oneself); make quiet"
+    },
+    {
+      "lemma": "composure",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "repose.n.03",
+          "via_synset": "composure.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compose.v.05",
+          "via_synset": "composure.n.01"
+        }
+      ],
+      "definition": "steadiness of mind under stress"
+    },
+    {
+      "lemma": "conciliate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "pacify.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "pacify.v.01"
+        }
+      ],
+      "definition": "cause to be more favorably inclined; gain the good will of"
+    },
+    {
+      "lemma": "conciliation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "conciliation.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "placation.n.01"
+        }
+      ],
+      "definition": "the state of manifesting goodwill and cooperation after being reconciled"
+    },
+    {
+      "lemma": "conciliative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "conciliatory.a.02"
+        }
+      ],
+      "definition": "intended to placate"
+    },
+    {
+      "lemma": "conciliator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "conciliator.n.01"
+        }
+      ],
+      "definition": "someone who tries to bring peace"
+    },
+    {
+      "lemma": "consolable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "comfort.v.01",
+          "via_synset": "consolable.a.01"
+        }
+      ],
+      "definition": "able to be consoled"
+    },
+    {
+      "lemma": "consolation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "comfort.v.01",
+          "via_synset": "consolation.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "comfort.v.01",
+          "via_synset": "consolation.n.02"
+        }
+      ],
+      "definition": "the comfort you feel when consoled in times of disappointment"
+    },
+    {
+      "lemma": "consolatory",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "comfort.v.01",
+          "via_synset": "comforting.s.02"
+        }
+      ],
+      "definition": "affording comfort or solace"
+    },
+    {
+      "lemma": "console",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "comfort.v.01",
+          "via_synset": "comfort.v.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "calm.v.01",
+          "via_synset": "comfort.v.01"
+        }
+      ],
+      "definition": "give moral or emotional strength to"
+    },
+    {
+      "lemma": "cool",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "composure.n.01",
+          "via_synset": "aplomb.n.01"
+        }
+      ],
+      "definition": "great coolness and composure under strain"
+    },
+    {
+      "lemma": "cramp",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "cramp.v.03"
+        }
+      ],
+      "definition": "affect with or as if with a cramp"
+    },
+    {
+      "lemma": "ease",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "still.v.03",
+          "via_synset": "relief.n.02"
+        }
+      ],
+      "definition": "the condition of being comfortable or relieved (especially after being relieved of distress)"
+    },
+    {
+      "lemma": "ease",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "comfort.v.01",
+          "via_synset": "still.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "comfort.v.01",
+          "via_synset": "still.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "relieve.v.01",
+          "via_synset": "comfort.v.02"
+        }
+      ],
+      "definition": "lessen the intensity of or calm"
+    },
+    {
+      "lemma": "easement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "still.v.03",
+          "via_synset": "easing.n.02"
+        }
+      ],
+      "definition": "the act of reducing something unpleasant (as pain or annoyance)"
+    },
+    {
+      "lemma": "energise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "stimulate.v.04"
+        }
+      ],
+      "definition": "cause to be alert and energetic"
+    },
+    {
+      "lemma": "energize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "stimulate.v.04"
+        }
+      ],
+      "definition": "cause to be alert and energetic"
+    },
+    {
+      "lemma": "entrance",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hypnotize.v.01",
+          "via_synset": "entrance.v.02"
+        }
+      ],
+      "definition": "put into a trance"
+    },
+    {
+      "lemma": "entrancement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "entrance.v.02",
+          "via_synset": "entrancement.n.01"
+        }
+      ],
+      "definition": "a feeling of delight at being filled with wonder and enchantment"
+    },
+    {
+      "lemma": "equanimity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "repose.n.03",
+          "via_synset": "composure.n.01"
+        }
+      ],
+      "definition": "steadiness of mind under stress"
+    },
+    {
+      "lemma": "gentle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "pacify.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "pacify.v.01"
+        }
+      ],
+      "definition": "cause to be more favorably inclined; gain the good will of"
+    },
+    {
+      "lemma": "gruntle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "pacify.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "pacify.v.01"
+        }
+      ],
+      "definition": "cause to be more favorably inclined; gain the good will of"
+    },
+    {
+      "lemma": "hypnosis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hypnotize.v.01",
+          "via_synset": "hypnosis.n.01"
+        }
+      ],
+      "definition": "a state that resembles sleep but that is induced by suggestion"
+    },
+    {
+      "lemma": "hypnotise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sedate.v.01",
+          "via_synset": "hypnotize.v.01"
+        }
+      ],
+      "definition": "induce hypnosis in"
+    },
+    {
+      "lemma": "hypnotiser",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hypnotize.v.01",
+          "via_synset": "hypnotist.n.01"
+        }
+      ],
+      "definition": "a person who induces hypnosis"
+    },
+    {
+      "lemma": "hypnotize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sedate.v.01",
+          "via_synset": "hypnotize.v.01"
+        }
+      ],
+      "definition": "induce hypnosis in"
+    },
+    {
+      "lemma": "hypnotizer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hypnotize.v.01",
+          "via_synset": "hypnotist.n.01"
+        }
+      ],
+      "definition": "a person who induces hypnosis"
+    },
+    {
+      "lemma": "inebriate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "intoxicate.v.02"
+        }
+      ],
+      "definition": "make drunk (with alcoholic drinks)"
+    },
+    {
+      "lemma": "intoxicate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "intoxicate.v.02"
+        }
+      ],
+      "definition": "make drunk (with alcoholic drinks)"
+    },
+    {
+      "lemma": "irritate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "soothe.v.02",
+          "via_synset": "irritate.v.02"
+        }
+      ],
+      "definition": "excite to an abnormal condition, or chafe or inflame"
+    },
+    {
+      "lemma": "jaundice",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "jaundice.v.02"
+        }
+      ],
+      "definition": "affect with, or as if with, jaundice"
+    },
+    {
+      "lemma": "lenify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "pacify.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "pacify.v.01"
+        }
+      ],
+      "definition": "cause to be more favorably inclined; gain the good will of"
+    },
+    {
+      "lemma": "loosen up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "relax.v.04"
+        }
+      ],
+      "definition": "cause to feel relaxed"
+    },
+    {
+      "lemma": "lull",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "lull.v.01",
+          "via_synset": "lull.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "lull.v.01",
+          "via_synset": "letup.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "calm.v.01",
+          "via_synset": "letup.n.01"
+        }
+      ],
+      "definition": "a period of calm weather"
+    },
+    {
+      "lemma": "lull",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "calm.v.01",
+          "via_synset": "calm.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "lull.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "comfort.v.01",
+          "via_synset": "calm.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "lull.v.01"
+        }
+      ],
+      "definition": "make calm or still"
+    },
+    {
+      "lemma": "make relaxed",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "relax.v.04"
+        }
+      ],
+      "definition": "cause to feel relaxed"
+    },
+    {
+      "lemma": "Mesmer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hypnotize.v.01",
+          "via_synset": "mesmer.n.01"
+        }
+      ],
+      "definition": "Austrian physician who tried to treat diseases with a form of hypnotism (1734-1815)"
+    },
+    {
+      "lemma": "mesmerise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sedate.v.01",
+          "via_synset": "hypnotize.v.01"
+        }
+      ],
+      "definition": "induce hypnosis in"
+    },
+    {
+      "lemma": "mesmerize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sedate.v.01",
+          "via_synset": "hypnotize.v.01"
+        }
+      ],
+      "definition": "induce hypnosis in"
+    },
+    {
+      "lemma": "mollification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "mollification.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "pacification.n.01"
+        }
+      ],
+      "definition": "a state of being appeased or ameliorated or tempered"
+    },
+    {
+      "lemma": "mollify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "pacify.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "pacify.v.01"
+        }
+      ],
+      "definition": "cause to be more favorably inclined; gain the good will of"
+    },
+    {
+      "lemma": "pacification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "pacification.n.01"
+        }
+      ],
+      "definition": "the act of appeasing someone or causing someone to be more favorably inclined"
+    },
+    {
+      "lemma": "pacifier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "comforter.n.04"
+        }
+      ],
+      "definition": "device used for an infant to suck or bite on"
+    },
+    {
+      "lemma": "pacify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "pacify.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "pacify.v.01"
+        }
+      ],
+      "definition": "cause to be more favorably inclined; gain the good will of"
+    },
+    {
+      "lemma": "palliate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "soothe.v.02",
+          "via_synset": "relieve.v.01"
+        }
+      ],
+      "definition": "provide physical relief, as from pain"
+    },
+    {
+      "lemma": "peace",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "peace.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "peace.n.03"
+        }
+      ],
+      "definition": "harmonious relations; freedom from disputes"
+    },
+    {
+      "lemma": "perk up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "stimulate.v.04"
+        }
+      ],
+      "definition": "cause to be alert and energetic"
+    },
+    {
+      "lemma": "placate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "pacify.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "pacify.v.01"
+        }
+      ],
+      "definition": "cause to be more favorably inclined; gain the good will of"
+    },
+    {
+      "lemma": "placation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "placation.n.01"
+        }
+      ],
+      "definition": "the act of placating and overcoming distrust and animosity"
+    },
+    {
+      "lemma": "placative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "appeasing.s.01"
+        }
+      ],
+      "definition": "intended to pacify by acceding to demands or granting concessions"
+    },
+    {
+      "lemma": "placatory",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "appeasing.s.01"
+        }
+      ],
+      "definition": "intended to pacify by acceding to demands or granting concessions"
+    },
+    {
+      "lemma": "placid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "repose.n.03",
+          "via_synset": "equable.s.02"
+        }
+      ],
+      "definition": "not easily irritated"
+    },
+    {
+      "lemma": "placidity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "repose.n.03",
+          "via_synset": "repose.n.03"
+        }
+      ],
+      "definition": "a disposition free from stress or emotion"
+    },
+    {
+      "lemma": "poise",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "composure.n.01",
+          "via_synset": "aplomb.n.01"
+        }
+      ],
+      "definition": "great coolness and composure under strain"
+    },
+    {
+      "lemma": "quiet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "repose.n.03",
+          "via_synset": "repose.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "calm.v.01",
+          "via_synset": "repose.n.03"
+        }
+      ],
+      "definition": "a disposition free from stress or emotion"
+    },
+    {
+      "lemma": "quiet",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "calm.v.01",
+          "via_synset": "calm.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "comfort.v.01",
+          "via_synset": "calm.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "repose.n.03",
+          "via_synset": "calm.v.01"
+        }
+      ],
+      "definition": "make calm or still"
+    },
+    {
+      "lemma": "quieten",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "calm.v.01",
+          "via_synset": "calm.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "comfort.v.01",
+          "via_synset": "calm.v.01"
+        }
+      ],
+      "definition": "make calm or still"
+    },
+    {
+      "lemma": "reassurance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reassure.v.01",
+          "via_synset": "reassurance.n.01"
+        }
+      ],
+      "definition": "the act of reassuring; restoring someone's confidence"
+    },
+    {
+      "lemma": "reassure",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "reassure.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "calm.v.01",
+          "via_synset": "reassure.v.01"
+        }
+      ],
+      "definition": "cause to feel sure; give reassurance to"
+    },
+    {
+      "lemma": "register",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "register.v.10"
+        }
+      ],
+      "definition": "enter into someone's consciousness"
+    },
+    {
+      "lemma": "relax",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "relax.v.04"
+        }
+      ],
+      "definition": "cause to feel relaxed"
+    },
+    {
+      "lemma": "relieve",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "soothe.v.02",
+          "via_synset": "relieve.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "comfort.v.01",
+          "via_synset": "still.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "comfort.v.01",
+          "via_synset": "still.v.03"
+        }
+      ],
+      "definition": "provide physical relief, as from pain"
+    },
+    {
+      "lemma": "reliever",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "still.v.03",
+          "via_synset": "reliever.n.02"
+        }
+      ],
+      "definition": "a person who reduces the intensity (e.g., of fears) and calms and pacifies"
+    },
+    {
+      "lemma": "repose",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "repose.n.03",
+          "via_synset": "repose.n.03"
+        }
+      ],
+      "definition": "a disposition free from stress or emotion"
+    },
+    {
+      "lemma": "root",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "stabilize.v.03",
+          "via_synset": "settle.v.07"
+        }
+      ],
+      "definition": "become settled or established and stable in one's residence or life style"
+    },
+    {
+      "lemma": "sang-froid",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "composure.n.01",
+          "via_synset": "aplomb.n.01"
+        }
+      ],
+      "definition": "great coolness and composure under strain"
+    },
+    {
+      "lemma": "sedate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sedate.v.01",
+          "via_synset": "sedate.v.01"
+        }
+      ],
+      "definition": "cause to be calm or quiet as by administering a sedative to"
+    },
+    {
+      "lemma": "sedation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sedate.v.01",
+          "via_synset": "sedation.n.02"
+        }
+      ],
+      "definition": "the administration of a sedative agent or drug"
+    },
+    {
+      "lemma": "sedative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sedate.v.01",
+          "via_synset": "ataractic.s.01"
+        }
+      ],
+      "definition": "tending to soothe or tranquilize"
+    },
+    {
+      "lemma": "serenity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "repose.n.03",
+          "via_synset": "repose.n.03"
+        }
+      ],
+      "definition": "a disposition free from stress or emotion"
+    },
+    {
+      "lemma": "settle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "stabilize.v.03",
+          "via_synset": "settle.v.07"
+        }
+      ],
+      "definition": "become settled or established and stable in one's residence or life style"
+    },
+    {
+      "lemma": "settle down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "stabilize.v.03",
+          "via_synset": "settle.v.07"
+        }
+      ],
+      "definition": "become settled or established and stable in one's residence or life style"
+    },
+    {
+      "lemma": "soak",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "intoxicate.v.02"
+        }
+      ],
+      "definition": "make drunk (with alcoholic drinks)"
+    },
+    {
+      "lemma": "solace",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "comfort.v.01",
+          "via_synset": "consolation.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "comfort.v.01",
+          "via_synset": "solace.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "comfort.v.01",
+          "via_synset": "consolation.n.01"
+        }
+      ],
+      "definition": "the act of consoling; giving relief in affliction"
+    },
+    {
+      "lemma": "solace",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "comfort.v.01",
+          "via_synset": "comfort.v.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "calm.v.01",
+          "via_synset": "comfort.v.01"
+        }
+      ],
+      "definition": "give moral or emotional strength to"
+    },
+    {
+      "lemma": "solacement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "comfort.v.01",
+          "via_synset": "solace.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "comfort.v.01",
+          "via_synset": "consolation.n.01"
+        }
+      ],
+      "definition": "comfort in disappointment or misery"
+    },
+    {
+      "lemma": "soothe",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "comfort.v.01",
+          "via_synset": "comfort.v.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "soothe.v.02",
+          "via_synset": "soothe.v.02"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "calm.v.01",
+          "via_synset": "comfort.v.01"
+        }
+      ],
+      "definition": "give moral or emotional strength to"
+    },
+    {
+      "lemma": "spellbind",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hypnotize.v.01",
+          "via_synset": "entrance.v.02"
+        }
+      ],
+      "definition": "put into a trance"
+    },
+    {
+      "lemma": "spellbinder",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "entrance.v.02",
+          "via_synset": "spellbinder.n.01"
+        }
+      ],
+      "definition": "an orator who can hold his listeners spellbound"
+    },
+    {
+      "lemma": "stabilise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "steady.v.01",
+          "via_synset": "stabilize.v.03"
+        }
+      ],
+      "definition": "become stable or more stable"
+    },
+    {
+      "lemma": "stabilize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "steady.v.01",
+          "via_synset": "stabilize.v.03"
+        }
+      ],
+      "definition": "become stable or more stable"
+    },
+    {
+      "lemma": "steady",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "steady.v.01",
+          "via_synset": "steady.v.01"
+        }
+      ],
+      "definition": "make steady"
+    },
+    {
+      "lemma": "steady down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "stabilize.v.03",
+          "via_synset": "settle.v.07"
+        }
+      ],
+      "definition": "become settled or established and stable in one's residence or life style"
+    },
+    {
+      "lemma": "still",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "still.v.03",
+          "via_synset": "hush.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "calm.v.01",
+          "via_synset": "hush.n.01"
+        }
+      ],
+      "definition": "(poetic) tranquil silence"
+    },
+    {
+      "lemma": "still",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "calm.v.01",
+          "via_synset": "calm.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "comfort.v.01",
+          "via_synset": "calm.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "comfort.v.01",
+          "via_synset": "still.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "comfort.v.01",
+          "via_synset": "still.v.03"
+        }
+      ],
+      "definition": "make calm or still"
+    },
+    {
+      "lemma": "stimulate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "sedate.v.01",
+          "via_synset": "stimulate.v.04"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "stimulate.v.04"
+        }
+      ],
+      "definition": "cause to be alert and energetic"
+    },
+    {
+      "lemma": "strain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "tense.v.04"
+        }
+      ],
+      "definition": "cause to be tense and uneasy or nervous or anxious"
+    },
+    {
+      "lemma": "take root",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "stabilize.v.03",
+          "via_synset": "settle.v.07"
+        }
+      ],
+      "definition": "become settled or established and stable in one's residence or life style"
+    },
+    {
+      "lemma": "tense",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "tense.v.04"
+        }
+      ],
+      "definition": "cause to be tense and uneasy or nervous or anxious"
+    },
+    {
+      "lemma": "tense up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "tense.v.04"
+        }
+      ],
+      "definition": "cause to be tense and uneasy or nervous or anxious"
+    },
+    {
+      "lemma": "tranquility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "repose.n.03",
+          "via_synset": "repose.n.03"
+        }
+      ],
+      "definition": "a disposition free from stress or emotion"
+    },
+    {
+      "lemma": "tranquilize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "calm.v.01",
+          "via_synset": "calm.v.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sedate.v.01",
+          "via_synset": "sedate.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "comfort.v.01",
+          "via_synset": "calm.v.01"
+        }
+      ],
+      "definition": "make calm or still"
+    },
+    {
+      "lemma": "tranquilizer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sedate.v.01",
+          "via_synset": "tranquilizer.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "calm.v.01",
+          "via_synset": "tranquilizer.n.01"
+        }
+      ],
+      "definition": "a drug used to reduce stress or tension without reducing mental clarity"
+    },
+    {
+      "lemma": "tranquillise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "calm.v.01",
+          "via_synset": "calm.v.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sedate.v.01",
+          "via_synset": "sedate.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "comfort.v.01",
+          "via_synset": "calm.v.01"
+        }
+      ],
+      "definition": "make calm or still"
+    },
+    {
+      "lemma": "tranquilliser",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sedate.v.01",
+          "via_synset": "tranquilizer.n.01"
+        }
+      ],
+      "definition": "a drug used to reduce stress or tension without reducing mental clarity"
+    },
+    {
+      "lemma": "tranquillity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "repose.n.03",
+          "via_synset": "repose.n.03"
+        }
+      ],
+      "definition": "a disposition free from stress or emotion"
+    },
+    {
+      "lemma": "tranquillize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "calm.v.01",
+          "via_synset": "calm.v.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sedate.v.01",
+          "via_synset": "sedate.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "comfort.v.01",
+          "via_synset": "calm.v.01"
+        }
+      ],
+      "definition": "make calm or still"
+    },
+    {
+      "lemma": "tranquillizer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sedate.v.01",
+          "via_synset": "tranquilizer.n.01"
+        }
+      ],
+      "definition": "a drug used to reduce stress or tension without reducing mental clarity"
+    },
+    {
+      "lemma": "ulcerate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "ulcerate.v.02"
+        }
+      ],
+      "definition": "affect with an ulcer"
+    },
+    {
+      "lemma": "unlax",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "relax.v.04"
+        }
+      ],
+      "definition": "cause to feel relaxed"
+    },
+    {
+      "lemma": "unstrain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "relax.v.04"
+        }
+      ],
+      "definition": "cause to feel relaxed"
+    },
+    {
+      "lemma": "unwind",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "affect.v.02",
+          "via_synset": "relax.v.04"
+        }
+      ],
+      "definition": "cause to feel relaxed"
+    }
+  ]
+}

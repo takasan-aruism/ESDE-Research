@@ -1,0 +1,3387 @@
+{
+  "atom": "SOC.sleep",
+  "category": "SOC",
+  "status": "proposed",
+  "symmetric_pair": "SOC.awake",
+  "definition_en": "A natural state of rest with suspended consciousness.",
+  "seed_synsets": [],
+  "core_pool": {
+    "rules": [
+      "0_seed",
+      "3_hyponym_d1",
+      "6_derivational",
+      "7_similar_to",
+      "9_antonym"
+    ],
+    "count": 44,
+    "words": [
+      {
+        "w": "asleep",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "in a state of sleep",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "asleep",
+        "pos": "adv",
+        "src": "0_seed",
+        "definition": "into a sleeping state",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "at rest",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "in a state of repose or especially sleep",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "beauty sleep",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "sleep before midnight",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "dormant",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "in a condition of biological rest or suspended animation",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "dozy",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "half asleep",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "drowsing",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "half asleep",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "drowsy",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "half asleep",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "fast asleep",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "sleeping deeply",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "hibernating",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "in a condition of biological rest or suspended animation",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "hypnoid",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "of or relating to a state of sleep or hypnosis",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "kip",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "sleep",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "kip",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "be asleep",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "nap",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "a period of time spent sleeping",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "nap",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "take a siesta",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "nonrapid eye movement",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a recurring sleep state during which rapid eye movements do not occur and dreaming does not occur; accounts for about 75% of normal sleep time",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "nonrapid eye movement sleep",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a recurring sleep state during which rapid eye movements do not occur and dreaming does not occur; accounts for about 75% of normal sleep time",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "NREM",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a recurring sleep state during which rapid eye movements do not occur and dreaming does not occur; accounts for about 75% of normal sleep time",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "NREM sleep",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a recurring sleep state during which rapid eye movements do not occur and dreaming does not occur; accounts for about 75% of normal sleep time",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "orthodox sleep",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a recurring sleep state during which rapid eye movements do not occur and dreaming does not occur; accounts for about 75% of normal sleep time",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "paradoxical sleep",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a recurring sleep state during which dreaming occurs; a state of rapidly shifting eye movements during sleep",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "rapid eye movement",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a recurring sleep state during which dreaming occurs; a state of rapidly shifting eye movements during sleep",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "rapid eye movement sleep",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a recurring sleep state during which dreaming occurs; a state of rapidly shifting eye movements during sleep",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "REM",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a recurring sleep state during which dreaming occurs; a state of rapidly shifting eye movements during sleep",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "REM sleep",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a recurring sleep state during which dreaming occurs; a state of rapidly shifting eye movements during sleep",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "rest",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "a state of inaction",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "rest",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "give a rest to",
+        "path_count": 2,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "shuteye",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "informal term for sleep",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "sleep",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "a natural and periodic state of rest during which consciousness of the world is suspended",
+        "path_count": 5,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "sleep",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "be asleep",
+        "path_count": 4,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "sleeping",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "the state of being asleep",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "sleepy",
+        "pos": "adj",
+        "src": "6_derivational",
+        "definition": "ready to fall asleep",
+        "path_count": 2,
+        "sources": [
+          "7_similar_to",
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "sleepy-eyed",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "ready to fall asleep",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "sleepyheaded",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "ready to fall asleep",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "slumber",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "a natural and periodic state of rest during which consciousness of the world is suspended",
+        "path_count": 2,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "slumber",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "be asleep",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "slumberous",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "inclined to or marked by drowsiness",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "slumbery",
+        "pos": "adj",
+        "src": "6_derivational",
+        "definition": "inclined to or marked by drowsiness",
+        "path_count": 2,
+        "sources": [
+          "7_similar_to",
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "slumbrous",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "inclined to or marked by drowsiness",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "somnolent",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "inclined to or marked by drowsiness",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "sopor",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "a torpid state resembling deep sleep",
+        "path_count": 2,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "sound asleep",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "sleeping deeply",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "torpid",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "in a condition of biological rest or suspended animation",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "unawakened",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "still asleep",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      }
+    ]
+  },
+  "deviation_pool": {
+    "rules": [
+      "10_sibling",
+      "11_pertainym",
+      "12_verb_group",
+      "2_hypernym_d1",
+      "4_hyponym_d2",
+      "5_hyponym_d3",
+      "8_also_see"
+    ],
+    "count": 288,
+    "words": [
+      {
+        "w": "abeyance",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "temporary cessation or suspension",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "abnormalcy",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "an abnormal physical condition resulting from defective genes or developmental deficiencies",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "abnormality",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "an abnormal physical condition resulting from defective genes or developmental deficiencies",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "acapnia",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a state in which the level of carbon dioxide in the blood is lower than normal; can result from deep or rapid breathing",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "acathexia",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "an inability to retain bodily secretions",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "addiction",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "being abnormally tolerant to and dependent on something that is psychologically or physically habit-forming (especially alcohol or narcotic drugs)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "agalactia",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a condition in which milk is not secreted in the mother's breasts after her child has been delivered",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "agalactosis",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a condition in which milk is not secreted in the mother's breasts after her child has been delivered",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "age",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a prolonged period of time",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "air alert",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the time period during which military and civilian agencies are prepared for an enemy air attack",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "amyxia",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a condition in which no mucus in produced",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "anaesthesia",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "loss of bodily sensation with or without loss of consciousness",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "analgesia",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "absence of the sense of pain without loss of consciousness",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "anergy",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "inactivity and lack of energy",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "anesthesia",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "loss of bodily sensation with or without loss of consciousness",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "anestrum",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "applies to nonhuman mammals: a state or interval of sexual inactivity between two periods of estrus",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "anestrus",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "applies to nonhuman mammals: a state or interval of sexual inactivity between two periods of estrus",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "angiotelectasia",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "dilation and enlargement of arterioles",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "anhidrosis",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "failure of the sweat glands",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "anhydrosis",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "failure of the sweat glands",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "anoestrum",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "applies to nonhuman mammals: a state or interval of sexual inactivity between two periods of estrus",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "anoestrus",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "applies to nonhuman mammals: a state or interval of sexual inactivity between two periods of estrus",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "arousal",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a state of heightened physiological activity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "arrest",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of inactivity following an interruption",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "asphyxia",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a condition in which insufficient or no oxygen and carbon dioxide are exchanged on a ventilatory basis; caused by choking or drowning or electric shock or poison gas",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "bimester",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of 2 months",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "bimillenary",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a span of 2000 years",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "bimillennium",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a span of 2000 years",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "blockage",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the physical condition of blocking or filling a passage with an obstruction",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "bloodiness",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of being bloody",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "bloom",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period of greatest prosperity or productivity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "blossom",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period of greatest prosperity or productivity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "bout",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of illness",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "bronze age",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "(classical mythology) the third age of the world, marked by war and violence",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "calcification",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "an inflexible and unchanging state",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "calendar day",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a day reckoned from midnight to midnight",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "calendar month",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "one of the twelve divisions of the calendar year",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "calendar week",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of seven consecutive days starting on Sunday",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "canicular days",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the hot period between early July and early September; a period of inactivity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "canicule",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the hot period between early July and early September; a period of inactivity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "cellularity",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of having cells",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "century",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of 100 years",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "check",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of inactivity following an interruption",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "civil day",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a day reckoned from midnight to midnight",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "clotting time",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the time it takes for a sample of blood to clot; used to diagnose some clotting disorders",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "cold sweat",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the physical condition of concurrent perspiration and chill; associated with fear",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "continuance",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period of time during which something continues",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "cryptobiosis",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a state in which an animal's metabolic activities come to a reversible standstill",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "dark",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the time after sunset and before sunrise while it is dark outside",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "dawn",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "an opening time period",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "day",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period of time taken by a particular planet (e.g. Mars) to make a complete rotation on its axis",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "daylight",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the time after sunrise and before sunset while it is light outside",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "daytime",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the time after sunrise and before sunset while it is light outside",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "decade",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of 10 years",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "decennary",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of 10 years",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "decennium",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of 10 years",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "deep freeze",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "temporary inactivity or suspension",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "dependance",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "being abnormally tolerant to and dependent on something that is psychologically or physically habit-forming (especially alcohol or narcotic drugs)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "dependence",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "being abnormally tolerant to and dependent on something that is psychologically or physically habit-forming (especially alcohol or narcotic drugs)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "dependency",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "being abnormally tolerant to and dependent on something that is psychologically or physically habit-forming (especially alcohol or narcotic drugs)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "desuetude",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a state of inactivity or disuse",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "dilatation",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of being stretched beyond normal dimensions",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "disorder",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a physical condition in which there is a disturbance of normal functioning",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "distension",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of being stretched beyond normal dimensions",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "distention",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of being stretched beyond normal dimensions",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "dog days",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the hot period between early July and early September; a period of inactivity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "doldrums",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a state of inactivity (in business or art etc)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "dormancy",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a state of quiet (but possibly temporary) inaction",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "downtime",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time when something (as a machine or factory) is not operating (especially as a result of malfunctions)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "drive",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a physiological state corresponding to a strong need or desire",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "drought",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a prolonged shortage",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "drouth",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a prolonged shortage",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "duration",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period of time during which something continues",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "duty tour",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time spent in military service",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "early days",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "an early period of development",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "efflorescence",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period of greatest prosperity or productivity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "elapsed time",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the time that elapses while some event is occurring",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "elastosis",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "breakdown of elastic tissue (as the loss of elasticity in the skin of elderly people that results from degeneration of connective tissue)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "emmetropia",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "(ophthalmology) the normal refractive condition of the eye in which there is clear focus of light on the retina",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "enlistment",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time spent in military service",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "epoch",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period marked by distinctive character or reckoned from a fixed point or event",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "era",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period marked by distinctive character or reckoned from a fixed point or event",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "estrus",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "applies to nonhuman mammals: a state or period of heightened sexual arousal and activity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "eve",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period immediately before something",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "evening",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the early part of night (from dinner until bedtime) spent in a special way",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "extinction",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "no longer active; extinguished",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "extra time",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "playing time beyond regulation, to break a tie",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "false pregnancy",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "physiological state in which a woman exhibits symptoms of pregnancy but is not pregnant",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "fecundity",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of being fertile; capable of producing offspring",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "fertility",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of being fertile; capable of producing offspring",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "festival",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a day or period of time set aside for feasting and celebration",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "field day",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a time of unusual pleasure and success",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "flatulence",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a state of excessive gas in the alimentary canal",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "flatulency",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a state of excessive gas in the alimentary canal",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "flection",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of being flexed (as of a joint)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "flexion",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of being flexed (as of a joint)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "flexure",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of being flexed (as of a joint)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "flower",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period of greatest prosperity or productivity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "flush",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period of greatest prosperity or productivity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "forenoon",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the time period between dawn and noon",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "fortnight",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of fourteen consecutive days",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "gas",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a state of excessive gas in the alimentary canal",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "generation",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the normal time between successive generations",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "gestation",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of being pregnant; the period from conception to birth when a woman carries a developing fetus in her uterus",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "Golden Age",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "(classical mythology) the first and best age of the world, a time of ideal happiness, prosperity, and innocence; by extension, any flourishing and outstanding period",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "good health",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of being vigorous and free from bodily or mental disease",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "great year",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "time required for one complete cycle of the precession of the equinoxes, about 25,800 years",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "habituation",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "being abnormally tolerant to and dependent on something that is psychologically or physically habit-forming (especially alcohol or narcotic drugs)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "half life",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the time required for something to fall to half its initial value (in particular, the time for half the atoms in a radioactive substance to disintegrate)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "half-century",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of 50 years",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "half-life",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the time required for something to fall to half its initial value (in particular, the time for half the atoms in a radioactive substance to disintegrate)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "halt",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of inactivity following an interruption",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "healthiness",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of being vigorous and free from bodily or mental disease",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "heat",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "applies to nonhuman mammals: a state or period of heightened sexual arousal and activity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "hebdomad",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "any period of seven consecutive days",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "heyday",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period of greatest prosperity or productivity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "hitch",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time spent in military service",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "holding pattern",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a state of inaction with no progress and no change",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "honeymoon",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the early (usually calm and harmonious) period of a relationship; business or political",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "hospitalization",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time when you are confined to a hospital",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "hour",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a special and memorable period",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "hours",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "an indefinite period of time",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "hypercapnia",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the physical condition of having the presence of an abnormally high level of carbon dioxide in the circulating blood",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "hypercarbia",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the physical condition of having the presence of an abnormally high level of carbon dioxide in the circulating blood",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "hyperpigmentation",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "unusual darkening of the skin",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "hyperthermia",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "abnormally high body temperature; sometimes induced (as in treating some forms of cancer)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "hyperthermy",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "abnormally high body temperature; sometimes induced (as in treating some forms of cancer)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "hypocapnia",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a state in which the level of carbon dioxide in the blood is lower than normal; can result from deep or rapid breathing",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "hypopigmentation",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "unusual lack of skin color",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "hypothermia",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "subnormal body temperature",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "inaction",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "the state of being inactive",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "inactiveness",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "the state of being inactive",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "inactivity",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "the state of being inactive",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "incognizant",
+        "pos": "adj",
+        "src": "8_also_see",
+        "definition": "(often followed by `of') not aware",
+        "path_count": 1,
+        "sources": [
+          "8_also_see"
+        ]
+      },
+      {
+        "w": "incompatibility",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "(immunology) the degree to which the body's immune system will try to reject foreign material (as transfused blood or transplanted tissue)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "incubation period",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period between infection and the appearance of symptoms of the disease",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "Indian summer",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of unusually warm weather in the autumn",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "indiction",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a 15-year cycle used as a chronological unit in ancient Rome and adopted in some medieval kingdoms",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "infertility",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of being unable to produce offspring; in a woman it is an inability to conceive; in a man it is an inability to impregnate",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "intoxication",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the physiological state produced by a poison or other toxic substance",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "iron age",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "(classical mythology) the last and worst age of the world",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "lactation",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period following birth during which milk is secreted",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "lease",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period of time during which a contract conveying property to a person is in effect",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "life",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period between birth and the present time",
+        "path_count": 3,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "life-time",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period during which something is functional (as between birth and death)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "lifespan",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period during which something is functional (as between birth and death)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "lifetime",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period during which something is functional (as between birth and death)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "long haul",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time sufficient for factors to work themselves out",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "long run",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time sufficient for factors to work themselves out",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "long time",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a prolonged period of time",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "lunar time period",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "there are usually two high and two low tides each day",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "lustrum",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of five years",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "maternity",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of being pregnant; the period from conception to birth when a woman carries a developing fetus in her uterus",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "mid-April",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the middle part of April",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "mid-August",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the middle part of August",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "mid-December",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the middle part of December",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "mid-February",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the middle part of February",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "mid-January",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the middle part of January",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "mid-July",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the middle part of July",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "mid-June",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the middle part of June",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "mid-March",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the middle part of March",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "mid-May",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the middle part of May",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "mid-November",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the middle part of November",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "mid-October",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the middle part of October",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "mid-September",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the middle part of September",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "midweek",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the middle of a week",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "midwinter",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the middle of winter",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "millenary",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a span of 1000 years",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "millennium",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a span of 1000 years",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "month",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "one of the twelve divisions of the calendar year",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "morn",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the time period between dawn and noon",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "morning",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the time period between dawn and noon",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "morning time",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the time period between dawn and noon",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "multistage",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "occurring in more than one stage",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "muscularity",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the physiological state of having or consisting of muscle",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "myasthenia",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "any muscular weakness",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "night",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period spent sleeping",
+        "path_count": 4,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "nighttime",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the time after sunset and before sunrise while it is dark outside",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "normothermia",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "normal body temperature",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "noviciate",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period during which you are a novice (especially in a religious order)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "novitiate",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period during which you are a novice (especially in a religious order)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "obstruction",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the physical condition of blocking or filling a passage with an obstruction",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "occupation",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period of time during which a place or position or nation is occupied",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "oestrus",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "applies to nonhuman mammals: a state or period of heightened sexual arousal and activity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "oligospermia",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "insufficient spermatozoa in the semen",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "Olympiad",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "one of the four-year intervals between Olympic Games; used to reckon time in ancient Greece for twelve centuries beginning in 776 BC",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "overtime",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "playing time beyond regulation, to break a tie",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "oxygen debt",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a cumulative deficit of oxygen resulting from intense exercise; the deficit must be made up when the body returns to rest",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "past",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a earlier period in someone's life (especially one that they have reason to keep secret)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "pathological state",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a physical condition that is caused by disease",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "peacetime",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time during which there is no war",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "peak",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period of greatest prosperity or productivity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "period",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "an amount of time",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "period of time",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "an amount of time",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "phase",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "any distinct time period in a sequence of events",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "phase of the moon",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a time when the Moon presents a particular recurring appearance",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "physical condition",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "the condition or state of the body or bodily functions",
+        "path_count": 2,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "physiological condition",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "the condition or state of the body or bodily functions",
+        "path_count": 2,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "physiological state",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "the condition or state of the body or bodily functions",
+        "path_count": 2,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "Platonic year",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "time required for one complete cycle of the precession of the equinoxes, about 25,800 years",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "poisoning",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the physiological state produced by a poison or other toxic substance",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "potence",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of being potent; a male's capacity to have sexual intercourse",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "potency",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of being potent; a male's capacity to have sexual intercourse",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "pregnancy",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of being pregnant; the period from conception to birth when a woman carries a developing fetus in her uterus",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "prehistoric culture",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the time during the development of human culture before the appearance of the written word",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "prehistory",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the time during the development of human culture before the appearance of the written word",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "prime",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period of greatest prosperity or productivity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "prohibition",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period from 1920 to 1933 when the sale of alcoholic beverages was prohibited in the United States by a constitutional amendment",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "prohibition era",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period from 1920 to 1933 when the sale of alcoholic beverages was prohibited in the United States by a constitutional amendment",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "pseudocyesis",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "physiological state in which a woman exhibits symptoms of pregnancy but is not pregnant",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "puerperium",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "time period following childbirth when the mother's uterus shrinks and the other functional and anatomic changes of pregnancy are resolved",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "quadrennium",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of four years",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "quarter",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a fourth part of a year; three months",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "quarter-century",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of 25 years",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "question time",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period during a parliamentary session when members of British Parliament may ask questions of the ministers",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "quiescence",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a state of quiet (but possibly temporary) inaction",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "quiescency",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a state of quiet (but possibly temporary) inaction",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "quinquennium",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of five years",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "rainy day",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a (future) time of financial need",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "real time",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "(computer science) the time it takes for a process under computer control to occur",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "regulation time",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "(sports) the normal prescribed duration of a game",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "reign",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period during which something or somebody is dominant or powerful",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "rigor mortis",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "temporary stiffness of joints and muscular rigidity occurring after death",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "run",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the continuous period of time during which something (a machine or a factory) operates or continues in operation",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "running time",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the length of time that a movie or tv show runs",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "rut",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "applies to nonhuman mammals: a state or period of heightened sexual arousal and activity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "Saint Martin's summer",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of unusually warm weather in the autumn",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "school",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period of instruction in a school; the time period when school is in session",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "school day",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period of instruction in a school; the time period when school is in session",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "schooltime",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period of instruction in a school; the time period when school is in session",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "season",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a recurrent time marked by major holidays",
+        "path_count": 3,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "sedation",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a state of reduced excitement or anxiety that is induced by the administrative of a sedative agent",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "semester",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "half a year; a period of 6 months",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "shelf life",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the length of time a packaged food or drug will last without deteriorating",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "silly season",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a time usually late summer characterized by exaggerated news stories about frivolous matters for want of real news",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "silver age",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "(classical mythology) the second age of the world, characterized by opulence and irreligion; by extension, a period secondary in achievement to a golden age",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "stage",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "any distinct time period in a sequence of events",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "stagnancy",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "inactivity of liquids; being stagnant; standing still; without current or circulation",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "stagnation",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "inactivity of liquids; being stagnant; standing still; without current or circulation",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "stasis",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "inactivity resulting from a static balance between opposing forces",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "stay",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of inactivity following an interruption",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "sterility",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of being unable to produce offspring; in a woman it is an inability to conceive; in a man it is an inability to impregnate",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "stop",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of inactivity following an interruption",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "stoppage",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of inactivity following an interruption",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "study hall",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time during the school day that is set aside for study",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "suspended animation",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a temporary cessation of vital functions with loss of consciousness resembling death; usually resulting from asphyxia",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "suspension",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "temporary cessation or suspension",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "term",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a limited period of time",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "term of a contract",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period of time during which a contract conveying property to a person is in effect",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "term of enlistment",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time spent in military service",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "test period",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time during which someone or something is tested",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "tide",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "there are usually two high and two low tides each day",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "time",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "an indefinite period (usually marked by specific attributes or activities)",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "time frame",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a time period during which something occurs or is expected to occur",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "time limit",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a time period within which something must be done or completed",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "time of life",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time during which a person is normally in a particular life state",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "time of year",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "one of the natural periods into which the year is divided by the equinoxes and solstices or atmospheric conditions",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "time off",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a time period when you are not required to work",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "time period",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "an amount of time",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "times",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a more or less definite period of time now or previously present",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "torpidity",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a state of motor and mental inactivity with a partial suspension of sensibility",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "torpor",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a state of motor and mental inactivity with a partial suspension of sensibility",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "tour",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time spent in military service",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "tour of duty",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time spent in military service",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "toxic condition",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the physiological state produced by a poison or other toxic substance",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "travel time",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time spent traveling",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "trial period",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time during which someone or something is tested",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "trimester",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of three months; especially one of the three three-month periods into which human pregnancy is divided",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "twelvemonth",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time containing 365 (or 366) days",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "two weeks",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of fourteen consecutive days",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "unaware",
+        "pos": "adj",
+        "src": "8_also_see",
+        "definition": "(often followed by `of') not aware",
+        "path_count": 1,
+        "sources": [
+          "8_also_see"
+        ]
+      },
+      {
+        "w": "unconscious",
+        "pos": "adj",
+        "src": "8_also_see",
+        "definition": "not conscious; lacking awareness and the capacity for sensory perception as if asleep or dead",
+        "path_count": 1,
+        "sources": [
+          "8_also_see"
+        ]
+      },
+      {
+        "w": "upset",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a physical condition in which there is a disturbance of normal functioning",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "uptime",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time when something (as a machine or factory) is functioning and available for use",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "usance",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period of time permitted by commercial usage for the payment of a bill of exchange (especially a foreign bill of exchange)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "vitalisation",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of being vitalized and filled with life",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "vitalization",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the state of being vitalized and filled with life",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "wakefulness",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a periodic state during which you are conscious and aware of the world",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "wartime",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time during which there is armed conflict",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "watch",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the period during which someone (especially a guard) is on duty",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "week",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of seven consecutive days starting on Sunday",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "weekend",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a time period usually extending from Friday night through Sunday; more loosely defined as any period of successive days including one and only one Sunday",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "window",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the time period that is considered best for starting or finishing something",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "work time",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a time period when you are required to work",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "year",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time occupying a regular part of a calendar year that is used for some particular activity",
+        "path_count": 3,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "years",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a prolonged period of time",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "youth",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "an early period of development",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "yr",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a period of time containing 365 (or 366) days",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      }
+    ]
+  },
+  "deviation_stats": {
+    "total_candidates": 332,
+    "core_count": 44,
+    "dev_count": 288,
+    "core_ratio": 0.133,
+    "dev_ratio": 0.867,
+    "dev_source_breakdown": {
+      "10_sibling": 276,
+      "2_hypernym_d1": 9,
+      "8_also_see": 3
+    },
+    "step_contributions": {
+      "0_seed": 7,
+      "2_hypernym_d1": 9,
+      "3_hyponym_d1": 14,
+      "4_hyponym_d2": 0,
+      "5_hyponym_d3": 0,
+      "6_derivational": 7,
+      "7_similar_to": 16,
+      "8_also_see": 3,
+      "9_antonym": 0,
+      "10_sibling": 276,
+      "11_pertainym": 0,
+      "12_verb_group": 0
+    }
+  },
+  "meta": {
+    "generator": "wn_lexicon_entry.py",
+    "version": "1.0.0",
+    "design": "3AI consolidated: Core/Deviation pool separation"
+  }
+}

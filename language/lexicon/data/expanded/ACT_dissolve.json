@@ -1,0 +1,2510 @@
+{
+  "atom_id": "ACT.dissolve",
+  "category": "ACT",
+  "seed_count": 6,
+  "total_keys": 145,
+  "pos_counts": {
+    "v": 124,
+    "n": 18,
+    "adj": 3
+  },
+  "source_counts": {
+    "0_seed": 22,
+    "2_hypernym_d1": 12,
+    "10_sibling": 125,
+    "12_verb_group": 5,
+    "3_hyponym_d1": 13,
+    "4_hyponym_d2": 3,
+    "6_derivational": 30
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 14,
+      "words": [
+        "dissolve(v)",
+        "break up(v)",
+        "thaw(v)",
+        "unfreeze(v)",
+        "unthaw(v)",
+        "dethaw(v)",
+        "melt(v)",
+        "resolve(v)",
+        "run(v)",
+        "melt down(v)",
+        "disperse(v)",
+        "dissipate(v)",
+        "dispel(v)",
+        "scatter(v)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 8,
+      "words": [
+        "end(v)",
+        "terminate(v)",
+        "liquefy(v)",
+        "flux(v)",
+        "liquify(v)",
+        "change integrity(v)",
+        "separate(v)",
+        "divide(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 10,
+      "words": [
+        "defrost(v)",
+        "deice(v)",
+        "de-ice(v)",
+        "deliquesce(v)",
+        "cut(v)",
+        "fuse(v)",
+        "try(v)",
+        "render(v)",
+        "disband(v)",
+        "backscatter(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 21,
+      "words": [
+        "dispersion(n)",
+        "dissipation(n)",
+        "scatter(n)",
+        "scattering(n)",
+        "disbandment(n)",
+        "meltable(adj)",
+        "melt(n)",
+        "melting(n)",
+        "deliquescent(adj)",
+        "dissolution(n)",
+        "fusible(adj)",
+        "fusion(n)",
+        "dissolvent(n)",
+        "dissolver(n)",
+        "dissolving(n)",
+        "resolvent(n)",
+        "thaw(n)",
+        "thawing(n)",
+        "melter(n)",
+        "defroster(n)",
+        "deicer(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 90,
+      "words": [
+        "conclude(v)",
+        "closure(v)",
+        "cloture(v)",
+        "decide(v)",
+        "settle(v)",
+        "adjudicate(v)",
+        "complete(v)",
+        "finish(v)",
+        "close out(v)",
+        "break(v)",
+        "break off(v)",
+        "discontinue(v)",
+        "stop(v)",
+        "abort(v)",
+        "stamp out(v)",
+        "kill(v)",
+        "phase out(v)",
+        "finalize(v)",
+        "finalise(v)",
+        "nail down(v)",
+        "close(v)",
+        "lift(v)",
+        "raise(v)",
+        "ax(v)",
+        "axe(v)",
+        "stub out(v)",
+        "crush out(v)",
+        "extinguish(v)",
+        "press out(v)",
+        "culminate(v)",
+        "interrupt(v)",
+        "condense(v)",
+        "distill(v)",
+        "distil(v)",
+        "polymerize(v)",
+        "polymerise(v)",
+        "jellify(v)",
+        "jelly(v)",
+        "explode(v)",
+        "detonate(v)",
+        "blow up(v)",
+        "set off(v)",
+        "blend(v)",
+        "mix(v)",
+        "conflate(v)",
+        "commingle(v)",
+        "immix(v)",
+        "coalesce(v)",
+        "meld(v)",
+        "merge(v)",
+        "evaporate(v)",
+        "vaporize(v)",
+        "vaporise(v)",
+        "split up(v)",
+        "fall apart(v)",
+        "come apart(v)",
+        "burn(v)",
+        "incinerate(v)",
+        "reform(v)",
+        "split(v)",
+        "dissever(v)",
+        "carve up(v)",
+        "burst(v)",
+        "disintegrate(v)",
+        "decay(v)",
+        "decompose(v)",
+        "pasteurize(v)",
+        "pasteurise(v)",
+        "demulsify(v)",
+        "crumble(v)",
+        "crumple(v)",
+        "tumble(v)",
+        "break down(v)",
+        "collapse(v)",
+        "gasify(v)",
+        "aerify(v)",
+        "crystallize(v)",
+        "crystallise(v)",
+        "crystalize(v)",
+        "crystalise(v)",
+        "cook(v)",
+        "thicken(v)",
+        "inspissate(v)",
+        "shut off(v)",
+        "close off(v)",
+        "partition(v)",
+        "zone(v)",
+        "rail(v)",
+        "rail off(v)",
+        "detach(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 2,
+      "words": [
+        "bleed(v)",
+        "dismiss(v)"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "abort",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "abort.v.01"
+        }
+      ],
+      "definition": "terminate before completion"
+    },
+    {
+      "lemma": "adjudicate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "decide.v.02"
+        }
+      ],
+      "definition": "bring to an end; settle conclusively"
+    },
+    {
+      "lemma": "aerify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "gasify.v.01"
+        }
+      ],
+      "definition": "turn into gas"
+    },
+    {
+      "lemma": "ax",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "ax.v.02"
+        }
+      ],
+      "definition": "terminate"
+    },
+    {
+      "lemma": "axe",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "ax.v.02"
+        }
+      ],
+      "definition": "terminate"
+    },
+    {
+      "lemma": "backscatter",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "break_up.v.17",
+          "via_synset": "backscatter.v.01"
+        }
+      ],
+      "definition": "scatter (radiation) by the atoms of the medium through which it passes"
+    },
+    {
+      "lemma": "bleed",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "melt.v.01",
+          "via_synset": "run.v.27"
+        }
+      ],
+      "definition": "be diffused"
+    },
+    {
+      "lemma": "blend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "blend.v.03"
+        }
+      ],
+      "definition": "mix together different elements"
+    },
+    {
+      "lemma": "blow up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "explode.v.01"
+        }
+      ],
+      "definition": "cause to burst with a violent release of energy"
+    },
+    {
+      "lemma": "break",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "break.v.10"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "interrupt.v.04"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "break.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "separate.v.07",
+          "via_synset": "break.v.05"
+        }
+      ],
+      "definition": "prevent completion"
+    },
+    {
+      "lemma": "break down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "crumble.v.01"
+        }
+      ],
+      "definition": "fall apart"
+    },
+    {
+      "lemma": "break off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "break.v.10"
+        }
+      ],
+      "definition": "prevent completion"
+    },
+    {
+      "lemma": "break up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dissolve.v.10",
+          "via_synset": "dissolve.v.10"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dissolve.v.02",
+          "via_synset": "dissolve.v.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "disperse.v.02",
+          "via_synset": "disperse.v.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "break_up.v.17",
+          "via_synset": "break_up.v.17"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "melt.v.01",
+          "via_synset": "dissolve.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "dissolve.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "break_up.v.17"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "dissolve.v.02"
+        }
+      ],
+      "definition": "bring the association of to an end or cause to break up"
+    },
+    {
+      "lemma": "burn",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "burn.v.07"
+        }
+      ],
+      "definition": "cause to undergo combustion"
+    },
+    {
+      "lemma": "burst",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "explode.v.02"
+        }
+      ],
+      "definition": "burst outward, usually with noise"
+    },
+    {
+      "lemma": "carve up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "divide.v.01"
+        }
+      ],
+      "definition": "separate into parts or portions"
+    },
+    {
+      "lemma": "change integrity",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "dissolve.v.02",
+          "via_synset": "change_integrity.v.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "break_up.v.17",
+          "via_synset": "change_integrity.v.01"
+        }
+      ],
+      "definition": "change in physical make-up"
+    },
+    {
+      "lemma": "close",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "close.v.06"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "close.v.04"
+        }
+      ],
+      "definition": "complete a business deal, negotiation, or an agreement"
+    },
+    {
+      "lemma": "close off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "separate.v.07",
+          "via_synset": "shut_off.v.02"
+        }
+      ],
+      "definition": "isolate or separate"
+    },
+    {
+      "lemma": "close out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "close_out.v.03"
+        }
+      ],
+      "definition": "terminate"
+    },
+    {
+      "lemma": "closure",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "closure.v.01"
+        }
+      ],
+      "definition": "terminate debate by calling for a vote"
+    },
+    {
+      "lemma": "cloture",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "closure.v.01"
+        }
+      ],
+      "definition": "terminate debate by calling for a vote"
+    },
+    {
+      "lemma": "coalesce",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "blend.v.03"
+        }
+      ],
+      "definition": "mix together different elements"
+    },
+    {
+      "lemma": "collapse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "crumble.v.01"
+        }
+      ],
+      "definition": "fall apart"
+    },
+    {
+      "lemma": "come apart",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "break.v.02"
+        }
+      ],
+      "definition": "become separated into pieces or fragments"
+    },
+    {
+      "lemma": "commingle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "blend.v.03"
+        }
+      ],
+      "definition": "mix together different elements"
+    },
+    {
+      "lemma": "complete",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "complete.v.01"
+        }
+      ],
+      "definition": "come or bring to a finish or an end"
+    },
+    {
+      "lemma": "conclude",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "conclude.v.02"
+        }
+      ],
+      "definition": "bring to a close"
+    },
+    {
+      "lemma": "condense",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "liquefy.v.03",
+          "via_synset": "condense.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "condense.v.04"
+        }
+      ],
+      "definition": "undergo condensation; change from a gaseous to a liquid state and fall in drops"
+    },
+    {
+      "lemma": "conflate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "blend.v.03"
+        }
+      ],
+      "definition": "mix together different elements"
+    },
+    {
+      "lemma": "cook",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "cook.v.03"
+        }
+      ],
+      "definition": "transform and make suitable for consumption by heating"
+    },
+    {
+      "lemma": "crumble",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "crumble.v.01"
+        }
+      ],
+      "definition": "fall apart"
+    },
+    {
+      "lemma": "crumple",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "crumble.v.01"
+        }
+      ],
+      "definition": "fall apart"
+    },
+    {
+      "lemma": "crush out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "stub_out.v.01"
+        }
+      ],
+      "definition": "extinguish by crushing"
+    },
+    {
+      "lemma": "crystalise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "crystallize.v.03"
+        }
+      ],
+      "definition": "cause to form crystals or assume crystalline form"
+    },
+    {
+      "lemma": "crystalize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "crystallize.v.03"
+        }
+      ],
+      "definition": "cause to form crystals or assume crystalline form"
+    },
+    {
+      "lemma": "crystallise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "crystallize.v.03"
+        }
+      ],
+      "definition": "cause to form crystals or assume crystalline form"
+    },
+    {
+      "lemma": "crystallize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "crystallize.v.03"
+        }
+      ],
+      "definition": "cause to form crystals or assume crystalline form"
+    },
+    {
+      "lemma": "culminate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "culminate.v.02"
+        }
+      ],
+      "definition": "bring to a head or to the highest point"
+    },
+    {
+      "lemma": "cut",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "dissolve.v.02",
+          "via_synset": "cut.v.34"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "dissolve.v.02",
+          "via_synset": "cut.v.34"
+        }
+      ],
+      "definition": "dissolve by breaking down the fat of"
+    },
+    {
+      "lemma": "de-ice",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "dissolve.v.09",
+          "via_synset": "defrost.v.01"
+        }
+      ],
+      "definition": "make or become free of frost or ice"
+    },
+    {
+      "lemma": "decay",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "disintegrate.v.03"
+        }
+      ],
+      "definition": "lose a stored charge, magnetic flux, or current"
+    },
+    {
+      "lemma": "decide",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "decide.v.02"
+        }
+      ],
+      "definition": "bring to an end; settle conclusively"
+    },
+    {
+      "lemma": "decompose",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "disintegrate.v.03"
+        }
+      ],
+      "definition": "lose a stored charge, magnetic flux, or current"
+    },
+    {
+      "lemma": "defrost",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "dissolve.v.09",
+          "via_synset": "defrost.v.01"
+        }
+      ],
+      "definition": "make or become free of frost or ice"
+    },
+    {
+      "lemma": "defroster",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "defrost.v.01",
+          "via_synset": "defroster.n.01"
+        }
+      ],
+      "definition": "heater that removes ice or frost (as from a windshield or a refrigerator or the wings of an airplane)"
+    },
+    {
+      "lemma": "deice",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "dissolve.v.09",
+          "via_synset": "defrost.v.01"
+        }
+      ],
+      "definition": "make or become free of frost or ice"
+    },
+    {
+      "lemma": "deicer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "defrost.v.01",
+          "via_synset": "defroster.n.01"
+        }
+      ],
+      "definition": "heater that removes ice or frost (as from a windshield or a refrigerator or the wings of an airplane)"
+    },
+    {
+      "lemma": "deliquesce",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "dissolve.v.09",
+          "via_synset": "deliquesce.v.02"
+        }
+      ],
+      "definition": "melt or become liquid by absorbing moisture from the air"
+    },
+    {
+      "lemma": "deliquescent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deliquesce.v.02",
+          "via_synset": "deliquescent.s.01"
+        }
+      ],
+      "definition": "(especially of certain salts) becoming liquid by absorbing moisture from the air"
+    },
+    {
+      "lemma": "demulsify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "demulsify.v.02"
+        }
+      ],
+      "definition": "break down into components"
+    },
+    {
+      "lemma": "detach",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "separate.v.07",
+          "via_synset": "detach.v.02"
+        }
+      ],
+      "definition": "separate (a small unit) from a larger, especially for a special assignment"
+    },
+    {
+      "lemma": "dethaw",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dissolve.v.09",
+          "via_synset": "dissolve.v.09"
+        }
+      ],
+      "definition": "become or cause to become soft or liquid"
+    },
+    {
+      "lemma": "detonate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "explode.v.01"
+        }
+      ],
+      "definition": "cause to burst with a violent release of energy"
+    },
+    {
+      "lemma": "disband",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "disperse.v.02",
+          "via_synset": "disband.v.01"
+        }
+      ],
+      "definition": "cause to break up or cease to function"
+    },
+    {
+      "lemma": "disbandment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disband.v.01",
+          "via_synset": "disbandment.n.01"
+        }
+      ],
+      "definition": "the act of disbanding"
+    },
+    {
+      "lemma": "discontinue",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "break.v.10"
+        }
+      ],
+      "definition": "prevent completion"
+    },
+    {
+      "lemma": "disintegrate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "disintegrate.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "disintegrate.v.03"
+        }
+      ],
+      "definition": "break into parts or components or lose cohesion or unity"
+    },
+    {
+      "lemma": "dismiss",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "dissolve.v.10",
+          "via_synset": "dissolve.v.11"
+        }
+      ],
+      "definition": "declare void"
+    },
+    {
+      "lemma": "dispel",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "disperse.v.02",
+          "via_synset": "disperse.v.02"
+        }
+      ],
+      "definition": "to cause to separate and go in different directions"
+    },
+    {
+      "lemma": "disperse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "disperse.v.02",
+          "via_synset": "disperse.v.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "break_up.v.17",
+          "via_synset": "break_up.v.17"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "break_up.v.17"
+        }
+      ],
+      "definition": "to cause to separate and go in different directions"
+    },
+    {
+      "lemma": "dispersion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disperse.v.02",
+          "via_synset": "dispersion.n.03"
+        }
+      ],
+      "definition": "the act of dispersing or diffusing something"
+    },
+    {
+      "lemma": "dissever",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "divide.v.01"
+        }
+      ],
+      "definition": "separate into parts or portions"
+    },
+    {
+      "lemma": "dissipate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "disperse.v.02",
+          "via_synset": "disperse.v.02"
+        }
+      ],
+      "definition": "to cause to separate and go in different directions"
+    },
+    {
+      "lemma": "dissipation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disperse.v.02",
+          "via_synset": "dissipation.n.01"
+        }
+      ],
+      "definition": "breaking up and scattering by dispersion"
+    },
+    {
+      "lemma": "dissolution",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dissolve.v.10",
+          "via_synset": "dissolution.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dissolve.v.10",
+          "via_synset": "adjournment.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dissolve.v.10",
+          "via_synset": "dissolution.n.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dissolve.v.02",
+          "via_synset": "dissolving.n.01"
+        }
+      ],
+      "definition": "separation into component parts"
+    },
+    {
+      "lemma": "dissolve",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dissolve.v.10",
+          "via_synset": "dissolve.v.10"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dissolve.v.09",
+          "via_synset": "dissolve.v.09"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dissolve.v.02",
+          "via_synset": "dissolve.v.02"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "melt.v.01",
+          "via_synset": "dissolve.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "dissolve.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "dissolve.v.02"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "dissolve.v.10",
+          "via_synset": "dissolve.v.11"
+        }
+      ],
+      "definition": "bring the association of to an end or cause to break up"
+    },
+    {
+      "lemma": "dissolvent",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dissolve.v.02",
+          "via_synset": "solvent.n.01"
+        }
+      ],
+      "definition": "a liquid substance capable of dissolving other substances"
+    },
+    {
+      "lemma": "dissolver",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dissolve.v.02",
+          "via_synset": "solvent.n.01"
+        }
+      ],
+      "definition": "a liquid substance capable of dissolving other substances"
+    },
+    {
+      "lemma": "dissolving",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dissolve.v.02",
+          "via_synset": "dissolving.n.01"
+        }
+      ],
+      "definition": "the process of going into solution"
+    },
+    {
+      "lemma": "distil",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "liquefy.v.03",
+          "via_synset": "condense.v.01"
+        }
+      ],
+      "definition": "undergo condensation; change from a gaseous to a liquid state and fall in drops"
+    },
+    {
+      "lemma": "distill",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "liquefy.v.03",
+          "via_synset": "condense.v.01"
+        }
+      ],
+      "definition": "undergo condensation; change from a gaseous to a liquid state and fall in drops"
+    },
+    {
+      "lemma": "divide",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "disperse.v.02",
+          "via_synset": "separate.v.07"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "divide.v.01"
+        }
+      ],
+      "definition": "make a division or separation"
+    },
+    {
+      "lemma": "end",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "dissolve.v.10",
+          "via_synset": "end.v.02"
+        }
+      ],
+      "definition": "bring to an end or halt"
+    },
+    {
+      "lemma": "evaporate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "evaporate.v.01"
+        }
+      ],
+      "definition": "lose or cause to lose liquid by vaporization leaving a more concentrated residue"
+    },
+    {
+      "lemma": "explode",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "explode.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "explode.v.02"
+        }
+      ],
+      "definition": "cause to burst with a violent release of energy"
+    },
+    {
+      "lemma": "extinguish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "stub_out.v.01"
+        }
+      ],
+      "definition": "extinguish by crushing"
+    },
+    {
+      "lemma": "fall apart",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "break.v.02"
+        }
+      ],
+      "definition": "become separated into pieces or fragments"
+    },
+    {
+      "lemma": "finalise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "finalize.v.01"
+        }
+      ],
+      "definition": "make final; put the last touches on; put into final form"
+    },
+    {
+      "lemma": "finalize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "finalize.v.01"
+        }
+      ],
+      "definition": "make final; put the last touches on; put into final form"
+    },
+    {
+      "lemma": "finish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "complete.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "finish.v.06"
+        }
+      ],
+      "definition": "come or bring to a finish or an end"
+    },
+    {
+      "lemma": "flux",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "dissolve.v.09",
+          "via_synset": "liquefy.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "liquefy.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "blend.v.03"
+        }
+      ],
+      "definition": "become liquid or fluid when heated"
+    },
+    {
+      "lemma": "fuse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "melt.v.01",
+          "via_synset": "fuse.v.04"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "melt.v.01",
+          "via_synset": "fuse.v.04"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "liquefy.v.03",
+          "via_synset": "fuse.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "blend.v.03"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "fuse.v.04",
+          "via_synset": "fuse.v.02"
+        }
+      ],
+      "definition": "make liquid or plastic by heating"
+    },
+    {
+      "lemma": "fusible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fuse.v.04",
+          "via_synset": "fusible.s.01"
+        }
+      ],
+      "definition": "capable of being melted and fused"
+    },
+    {
+      "lemma": "fusion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fuse.v.04",
+          "via_synset": "fusion.n.07"
+        }
+      ],
+      "definition": "the act of fusing (or melting) together"
+    },
+    {
+      "lemma": "gasify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "gasify.v.01"
+        }
+      ],
+      "definition": "turn into gas"
+    },
+    {
+      "lemma": "immix",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "blend.v.03"
+        }
+      ],
+      "definition": "mix together different elements"
+    },
+    {
+      "lemma": "incinerate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "burn.v.07"
+        }
+      ],
+      "definition": "cause to undergo combustion"
+    },
+    {
+      "lemma": "inspissate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "thicken.v.03"
+        }
+      ],
+      "definition": "make viscous or dense"
+    },
+    {
+      "lemma": "interrupt",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "interrupt.v.04"
+        }
+      ],
+      "definition": "terminate"
+    },
+    {
+      "lemma": "jellify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "jellify.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "jellify.v.01"
+        }
+      ],
+      "definition": "make into jelly"
+    },
+    {
+      "lemma": "jelly",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "jellify.v.02"
+        }
+      ],
+      "definition": "make into jelly"
+    },
+    {
+      "lemma": "kill",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "stamp_out.v.01"
+        }
+      ],
+      "definition": "end or extinguish by forceful means"
+    },
+    {
+      "lemma": "lift",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "lift.v.20"
+        }
+      ],
+      "definition": "put an end to"
+    },
+    {
+      "lemma": "liquefy",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "dissolve.v.09",
+          "via_synset": "liquefy.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "liquefy.v.03"
+        }
+      ],
+      "definition": "become liquid or fluid when heated"
+    },
+    {
+      "lemma": "liquify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "dissolve.v.09",
+          "via_synset": "liquefy.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "liquefy.v.03"
+        }
+      ],
+      "definition": "become liquid or fluid when heated"
+    },
+    {
+      "lemma": "meld",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "blend.v.03"
+        }
+      ],
+      "definition": "mix together different elements"
+    },
+    {
+      "lemma": "melt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "melt.v.01",
+          "via_synset": "thaw.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dissolve.v.09",
+          "via_synset": "thaw.n.01"
+        }
+      ],
+      "definition": "the process whereby heat changes something from a solid to a liquid"
+    },
+    {
+      "lemma": "melt",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dissolve.v.09",
+          "via_synset": "dissolve.v.09"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "melt.v.01",
+          "via_synset": "melt.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "dissolve.v.02",
+          "via_synset": "melt.v.01"
+        }
+      ],
+      "definition": "become or cause to become soft or liquid"
+    },
+    {
+      "lemma": "melt down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "melt.v.01",
+          "via_synset": "melt.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "dissolve.v.02",
+          "via_synset": "melt.v.01"
+        }
+      ],
+      "definition": "reduce or cause to be reduced from a solid to a liquid state, usually by heating"
+    },
+    {
+      "lemma": "meltable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "melt.v.01",
+          "via_synset": "meltable.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dissolve.v.09",
+          "via_synset": "meltable.s.01"
+        }
+      ],
+      "definition": "capable of melting"
+    },
+    {
+      "lemma": "melter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dissolve.v.09",
+          "via_synset": "melter.n.01"
+        }
+      ],
+      "definition": "a worker who melts substances (metal or wax etc.)"
+    },
+    {
+      "lemma": "melting",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "melt.v.01",
+          "via_synset": "thaw.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dissolve.v.09",
+          "via_synset": "thaw.n.01"
+        }
+      ],
+      "definition": "the process whereby heat changes something from a solid to a liquid"
+    },
+    {
+      "lemma": "merge",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "blend.v.03"
+        }
+      ],
+      "definition": "mix together different elements"
+    },
+    {
+      "lemma": "mix",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "blend.v.03"
+        }
+      ],
+      "definition": "mix together different elements"
+    },
+    {
+      "lemma": "nail down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "finalize.v.01"
+        }
+      ],
+      "definition": "make final; put the last touches on; put into final form"
+    },
+    {
+      "lemma": "partition",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "separate.v.07",
+          "via_synset": "partition.v.02"
+        }
+      ],
+      "definition": "separate or apportion into sections"
+    },
+    {
+      "lemma": "pasteurise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "pasteurize.v.01"
+        }
+      ],
+      "definition": "heat food in order to kill harmful microorganisms"
+    },
+    {
+      "lemma": "pasteurize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "pasteurize.v.01"
+        }
+      ],
+      "definition": "heat food in order to kill harmful microorganisms"
+    },
+    {
+      "lemma": "phase out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "phase_out.v.01"
+        }
+      ],
+      "definition": "terminate gradually"
+    },
+    {
+      "lemma": "polymerise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "polymerize.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "polymerize.v.02"
+        }
+      ],
+      "definition": "cause (a compound) to polymerize"
+    },
+    {
+      "lemma": "polymerize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "polymerize.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "polymerize.v.02"
+        }
+      ],
+      "definition": "cause (a compound) to polymerize"
+    },
+    {
+      "lemma": "press out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "stub_out.v.01"
+        }
+      ],
+      "definition": "extinguish by crushing"
+    },
+    {
+      "lemma": "rail",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "separate.v.07",
+          "via_synset": "rail.v.04"
+        }
+      ],
+      "definition": "separate with a railing"
+    },
+    {
+      "lemma": "rail off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "separate.v.07",
+          "via_synset": "rail.v.04"
+        }
+      ],
+      "definition": "separate with a railing"
+    },
+    {
+      "lemma": "raise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "lift.v.20"
+        }
+      ],
+      "definition": "put an end to"
+    },
+    {
+      "lemma": "reform",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "reform.v.04"
+        }
+      ],
+      "definition": "break up the molecules of"
+    },
+    {
+      "lemma": "render",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "melt.v.01",
+          "via_synset": "try.v.08"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "melt.v.01",
+          "via_synset": "try.v.08"
+        }
+      ],
+      "definition": "melt (fat or lard) in order to separate out impurities"
+    },
+    {
+      "lemma": "resolve",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dissolve.v.02",
+          "via_synset": "dissolve.v.02"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "melt.v.01",
+          "via_synset": "dissolve.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "decide.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "dissolve.v.02"
+        }
+      ],
+      "definition": "cause to go into a solution"
+    },
+    {
+      "lemma": "resolvent",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dissolve.v.02",
+          "via_synset": "solvent.n.01"
+        }
+      ],
+      "definition": "a liquid substance capable of dissolving other substances"
+    },
+    {
+      "lemma": "run",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "melt.v.01",
+          "via_synset": "melt.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "dissolve.v.02",
+          "via_synset": "melt.v.01"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "melt.v.01",
+          "via_synset": "run.v.27"
+        }
+      ],
+      "definition": "reduce or cause to be reduced from a solid to a liquid state, usually by heating"
+    },
+    {
+      "lemma": "scatter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disperse.v.02",
+          "via_synset": "scatter.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disperse.v.02",
+          "via_synset": "scatter.n.02"
+        }
+      ],
+      "definition": "a haphazard distribution in all directions"
+    },
+    {
+      "lemma": "scatter",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "disperse.v.02",
+          "via_synset": "disperse.v.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "break_up.v.17",
+          "via_synset": "break_up.v.17"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "break_up.v.17"
+        }
+      ],
+      "definition": "to cause to separate and go in different directions"
+    },
+    {
+      "lemma": "scattering",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disperse.v.02",
+          "via_synset": "dispersion.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disperse.v.02",
+          "via_synset": "scatter.n.02"
+        }
+      ],
+      "definition": "spreading widely or driving off"
+    },
+    {
+      "lemma": "separate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "disperse.v.02",
+          "via_synset": "separate.v.07"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "separate.v.05"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "break.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "divide.v.01"
+        }
+      ],
+      "definition": "make a division or separation"
+    },
+    {
+      "lemma": "set off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "explode.v.01"
+        }
+      ],
+      "definition": "cause to burst with a violent release of energy"
+    },
+    {
+      "lemma": "settle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "decide.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "finalize.v.01"
+        }
+      ],
+      "definition": "bring to an end; settle conclusively"
+    },
+    {
+      "lemma": "shut off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "separate.v.07",
+          "via_synset": "shut_off.v.02"
+        }
+      ],
+      "definition": "isolate or separate"
+    },
+    {
+      "lemma": "split",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "divide.v.01"
+        }
+      ],
+      "definition": "separate into parts or portions"
+    },
+    {
+      "lemma": "split up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "break.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "divide.v.01"
+        }
+      ],
+      "definition": "become separated into pieces or fragments"
+    },
+    {
+      "lemma": "stamp out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "stamp_out.v.01"
+        }
+      ],
+      "definition": "end or extinguish by forceful means"
+    },
+    {
+      "lemma": "stop",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "break.v.10"
+        }
+      ],
+      "definition": "prevent completion"
+    },
+    {
+      "lemma": "stub out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.02",
+          "via_synset": "stub_out.v.01"
+        }
+      ],
+      "definition": "extinguish by crushing"
+    },
+    {
+      "lemma": "terminate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "dissolve.v.10",
+          "via_synset": "end.v.02"
+        }
+      ],
+      "definition": "bring to an end or halt"
+    },
+    {
+      "lemma": "thaw",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dissolve.v.09",
+          "via_synset": "thaw.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dissolve.v.09",
+          "via_synset": "thaw.n.01"
+        }
+      ],
+      "definition": "warm weather following a freeze; snow and ice melt"
+    },
+    {
+      "lemma": "thaw",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dissolve.v.09",
+          "via_synset": "dissolve.v.09"
+        }
+      ],
+      "definition": "become or cause to become soft or liquid"
+    },
+    {
+      "lemma": "thawing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dissolve.v.09",
+          "via_synset": "thaw.n.01"
+        }
+      ],
+      "definition": "the process whereby heat changes something from a solid to a liquid"
+    },
+    {
+      "lemma": "thicken",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "thicken.v.03"
+        }
+      ],
+      "definition": "make viscous or dense"
+    },
+    {
+      "lemma": "try",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "melt.v.01",
+          "via_synset": "try.v.08"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "melt.v.01",
+          "via_synset": "try.v.08"
+        }
+      ],
+      "definition": "melt (fat or lard) in order to separate out impurities"
+    },
+    {
+      "lemma": "tumble",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "crumble.v.01"
+        }
+      ],
+      "definition": "fall apart"
+    },
+    {
+      "lemma": "unfreeze",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dissolve.v.09",
+          "via_synset": "dissolve.v.09"
+        }
+      ],
+      "definition": "become or cause to become soft or liquid"
+    },
+    {
+      "lemma": "unthaw",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dissolve.v.09",
+          "via_synset": "dissolve.v.09"
+        }
+      ],
+      "definition": "become or cause to become soft or liquid"
+    },
+    {
+      "lemma": "vaporise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "evaporate.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "gasify.v.01"
+        }
+      ],
+      "definition": "lose or cause to lose liquid by vaporization leaving a more concentrated residue"
+    },
+    {
+      "lemma": "vaporize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "evaporate.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_integrity.v.01",
+          "via_synset": "gasify.v.01"
+        }
+      ],
+      "definition": "lose or cause to lose liquid by vaporization leaving a more concentrated residue"
+    },
+    {
+      "lemma": "zone",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "separate.v.07",
+          "via_synset": "partition.v.02"
+        }
+      ],
+      "definition": "separate or apportion into sections"
+    }
+  ]
+}

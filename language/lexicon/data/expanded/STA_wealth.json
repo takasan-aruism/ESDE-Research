@@ -1,0 +1,1248 @@
+{
+  "atom_id": "STA.wealth",
+  "category": "STA",
+  "seed_count": 6,
+  "total_keys": 77,
+  "pos_counts": {
+    "n": 60,
+    "adj": 15,
+    "v": 2
+  },
+  "source_counts": {
+    "0_seed": 15,
+    "6_derivational": 16,
+    "7_similar_to": 2,
+    "2_hypernym_d1": 5,
+    "3_hyponym_d1": 12,
+    "10_sibling": 28,
+    "4_hyponym_d2": 9,
+    "5_hyponym_d3": 3
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 12,
+      "words": [
+        "wealth(n)",
+        "riches(n)",
+        "wealthiness(n)",
+        "rich(adj)",
+        "comfortable(adj)",
+        "easy(adj)",
+        "prosperous(adj)",
+        "well-fixed(adj)",
+        "well-heeled(adj)",
+        "well-off(adj)",
+        "well-situated(adj)",
+        "well-to-do(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 5,
+      "words": [
+        "abundance(n)",
+        "copiousness(n)",
+        "teemingness(n)",
+        "material resource(n)",
+        "financial condition(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 12,
+      "words": [
+        "treasure(n)",
+        "hoarded wealth(n)",
+        "gold(n)",
+        "affluence(n)",
+        "richness(n)",
+        "mammon(n)",
+        "luxury(n)",
+        "luxuriousness(n)",
+        "opulence(n)",
+        "sumptuousness(n)",
+        "inherited wealth(n)",
+        "sufficiency(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 9,
+      "words": [
+        "valuable(n)",
+        "king's ransom(n)",
+        "fortune(n)",
+        "treasure trove(n)",
+        "trove(n)",
+        "ease(n)",
+        "comfort(n)",
+        "silver spoon(n)",
+        "old money(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 3,
+      "words": [
+        "swag(n)",
+        "precious metal(n)",
+        "lap of luxury(n)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 9,
+      "words": [
+        "wealthy(adj)",
+        "affluent(adj)",
+        "valuable(adj)",
+        "luxurious(adj)",
+        "luxuriate(v)",
+        "opulent(adj)",
+        "sumptuous(adj)",
+        "suffice(v)",
+        "prosperity(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 27,
+      "words": [
+        "profusion(n)",
+        "profuseness(n)",
+        "cornucopia(n)",
+        "amplitude(n)",
+        "bountifulness(n)",
+        "bounty(n)",
+        "luxuriance(n)",
+        "lushness(n)",
+        "voluptuousness(n)",
+        "plenty(n)",
+        "plentifulness(n)",
+        "plenteousness(n)",
+        "plenitude(n)",
+        "plentitude(n)",
+        "overabundance(n)",
+        "overmuch(n)",
+        "overmuchness(n)",
+        "superabundance(n)",
+        "credit crunch(n)",
+        "liquidity crisis(n)",
+        "squeeze(n)",
+        "poorness(n)",
+        "impoverishment(n)",
+        "insolvency(n)",
+        "easy money(n)",
+        "solvency(n)",
+        "tight money(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "abundance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wealth.n.02",
+          "via_synset": "abundance.n.01"
+        }
+      ],
+      "definition": "the property of a more than adequate quantity or supply"
+    },
+    {
+      "lemma": "affluence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wealth.n.01",
+          "via_synset": "affluence.n.01"
+        }
+      ],
+      "definition": "abundant wealth"
+    },
+    {
+      "lemma": "affluent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "affluence.n.01",
+          "via_synset": "affluent.s.01"
+        }
+      ],
+      "definition": "having an abundant supply of money or possessions of value"
+    },
+    {
+      "lemma": "amplitude",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abundance.n.01",
+          "via_synset": "amplitude.n.02"
+        }
+      ],
+      "definition": "the property of copious abundance"
+    },
+    {
+      "lemma": "bountifulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abundance.n.01",
+          "via_synset": "amplitude.n.02"
+        }
+      ],
+      "definition": "the property of copious abundance"
+    },
+    {
+      "lemma": "bounty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abundance.n.01",
+          "via_synset": "amplitude.n.02"
+        }
+      ],
+      "definition": "the property of copious abundance"
+    },
+    {
+      "lemma": "comfort",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "affluence.n.01",
+          "via_synset": "ease.n.02"
+        }
+      ],
+      "definition": "a freedom from financial difficulty that promotes a comfortable state"
+    },
+    {
+      "lemma": "comfortable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "comfortable.s.03",
+          "via_synset": "comfortable.s.03"
+        }
+      ],
+      "definition": "in fortunate circumstances financially; moderately rich"
+    },
+    {
+      "lemma": "copiousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wealth.n.02",
+          "via_synset": "abundance.n.01"
+        }
+      ],
+      "definition": "the property of a more than adequate quantity or supply"
+    },
+    {
+      "lemma": "cornucopia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abundance.n.01",
+          "via_synset": "profusion.n.01"
+        }
+      ],
+      "definition": "the property of being extremely abundant"
+    },
+    {
+      "lemma": "credit crunch",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "financial_condition.n.01",
+          "via_synset": "credit_crunch.n.01"
+        }
+      ],
+      "definition": "a state in which there is a short supply of cash to lend to businesses and consumers and interest rates are high"
+    },
+    {
+      "lemma": "ease",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "affluence.n.01",
+          "via_synset": "ease.n.02"
+        }
+      ],
+      "definition": "a freedom from financial difficulty that promotes a comfortable state"
+    },
+    {
+      "lemma": "easy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "comfortable.s.03",
+          "via_synset": "comfortable.s.03"
+        }
+      ],
+      "definition": "in fortunate circumstances financially; moderately rich"
+    },
+    {
+      "lemma": "easy money",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "financial_condition.n.01",
+          "via_synset": "easy_money.n.02"
+        }
+      ],
+      "definition": "the economic condition in which credit is easy to secure"
+    },
+    {
+      "lemma": "financial condition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wealth.n.01",
+          "via_synset": "financial_condition.n.01"
+        }
+      ],
+      "definition": "the condition of (corporate or personal) finances"
+    },
+    {
+      "lemma": "fortune",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "treasure.n.01",
+          "via_synset": "fortune.n.02"
+        }
+      ],
+      "definition": "a large amount of wealth or prosperity"
+    },
+    {
+      "lemma": "gold",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wealth.n.03",
+          "via_synset": "gold.n.04"
+        }
+      ],
+      "definition": "great wealth; --Ben Jonson"
+    },
+    {
+      "lemma": "hoarded wealth",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wealth.n.03",
+          "via_synset": "treasure.n.01"
+        }
+      ],
+      "definition": "accumulated wealth in the form of money or jewels etc."
+    },
+    {
+      "lemma": "impoverishment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "financial_condition.n.01",
+          "via_synset": "poverty.n.01"
+        }
+      ],
+      "definition": "the state of having little or no money and few or no material possessions"
+    },
+    {
+      "lemma": "inherited wealth",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wealth.n.01",
+          "via_synset": "inherited_wealth.n.01"
+        }
+      ],
+      "definition": "wealth that is inherited rather than earned"
+    },
+    {
+      "lemma": "insolvency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "financial_condition.n.01",
+          "via_synset": "insolvency.n.01"
+        }
+      ],
+      "definition": "the lack of financial resources"
+    },
+    {
+      "lemma": "king's ransom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "treasure.n.01",
+          "via_synset": "king's_ransom.n.01"
+        }
+      ],
+      "definition": "a very large treasure"
+    },
+    {
+      "lemma": "lap of luxury",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "ease.n.02",
+          "via_synset": "lap_of_luxury.n.01"
+        }
+      ],
+      "definition": "in conditions of wealth and comfort"
+    },
+    {
+      "lemma": "liquidity crisis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "financial_condition.n.01",
+          "via_synset": "credit_crunch.n.01"
+        }
+      ],
+      "definition": "a state in which there is a short supply of cash to lend to businesses and consumers and interest rates are high"
+    },
+    {
+      "lemma": "lushness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abundance.n.01",
+          "via_synset": "luxuriance.n.01"
+        }
+      ],
+      "definition": "the property of being lush and abundant and a pleasure to the senses"
+    },
+    {
+      "lemma": "luxuriance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abundance.n.01",
+          "via_synset": "luxuriance.n.01"
+        }
+      ],
+      "definition": "the property of being lush and abundant and a pleasure to the senses"
+    },
+    {
+      "lemma": "luxuriate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "luxury.n.03",
+          "via_synset": "indulge.v.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "luxury.n.03",
+          "via_synset": "luxuriate.v.01"
+        }
+      ],
+      "definition": "enjoy to excess"
+    },
+    {
+      "lemma": "luxurious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "luxury.n.03",
+          "via_synset": "deluxe.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "luxury.n.03",
+          "via_synset": "epicurean.s.02"
+        }
+      ],
+      "definition": "rich and superior in quality"
+    },
+    {
+      "lemma": "luxuriousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wealth.n.01",
+          "via_synset": "luxury.n.03"
+        }
+      ],
+      "definition": "wealth as evidenced by sumptuous living"
+    },
+    {
+      "lemma": "luxury",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wealth.n.01",
+          "via_synset": "luxury.n.03"
+        }
+      ],
+      "definition": "wealth as evidenced by sumptuous living"
+    },
+    {
+      "lemma": "mammon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wealth.n.01",
+          "via_synset": "mammon.n.01"
+        }
+      ],
+      "definition": "wealth regarded as an evil influence"
+    },
+    {
+      "lemma": "material resource",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wealth.n.03",
+          "via_synset": "material_resource.n.01"
+        }
+      ],
+      "definition": "assets in the form of material possessions"
+    },
+    {
+      "lemma": "old money",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "inherited_wealth.n.01",
+          "via_synset": "silver_spoon.n.01"
+        }
+      ],
+      "definition": "the inherited wealth of established upper-class families"
+    },
+    {
+      "lemma": "opulence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wealth.n.01",
+          "via_synset": "luxury.n.03"
+        }
+      ],
+      "definition": "wealth as evidenced by sumptuous living"
+    },
+    {
+      "lemma": "opulent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "luxury.n.03",
+          "via_synset": "deluxe.s.01"
+        }
+      ],
+      "definition": "rich and superior in quality"
+    },
+    {
+      "lemma": "overabundance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abundance.n.01",
+          "via_synset": "overabundance.n.02"
+        }
+      ],
+      "definition": "a quantity that is more than what is appropriate"
+    },
+    {
+      "lemma": "overmuch",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abundance.n.01",
+          "via_synset": "overabundance.n.02"
+        }
+      ],
+      "definition": "a quantity that is more than what is appropriate"
+    },
+    {
+      "lemma": "overmuchness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abundance.n.01",
+          "via_synset": "overabundance.n.02"
+        }
+      ],
+      "definition": "a quantity that is more than what is appropriate"
+    },
+    {
+      "lemma": "plenitude",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abundance.n.01",
+          "via_synset": "plenty.n.01"
+        }
+      ],
+      "definition": "a full supply"
+    },
+    {
+      "lemma": "plenteousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abundance.n.01",
+          "via_synset": "plenty.n.01"
+        }
+      ],
+      "definition": "a full supply"
+    },
+    {
+      "lemma": "plentifulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abundance.n.01",
+          "via_synset": "plenty.n.01"
+        }
+      ],
+      "definition": "a full supply"
+    },
+    {
+      "lemma": "plentitude",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abundance.n.01",
+          "via_synset": "plenty.n.01"
+        }
+      ],
+      "definition": "a full supply"
+    },
+    {
+      "lemma": "plenty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abundance.n.01",
+          "via_synset": "plenty.n.01"
+        }
+      ],
+      "definition": "a full supply"
+    },
+    {
+      "lemma": "poorness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "financial_condition.n.01",
+          "via_synset": "poverty.n.01"
+        }
+      ],
+      "definition": "the state of having little or no money and few or no material possessions"
+    },
+    {
+      "lemma": "precious metal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "valuable.n.01",
+          "via_synset": "precious_metal.n.01"
+        }
+      ],
+      "definition": "any of the less common and valuable metals often used to make coins or jewelry"
+    },
+    {
+      "lemma": "profuseness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abundance.n.01",
+          "via_synset": "profusion.n.01"
+        }
+      ],
+      "definition": "the property of being extremely abundant"
+    },
+    {
+      "lemma": "profusion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abundance.n.01",
+          "via_synset": "profusion.n.01"
+        }
+      ],
+      "definition": "the property of being extremely abundant"
+    },
+    {
+      "lemma": "prosperity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "comfortable.s.03",
+          "via_synset": "prosperity.n.02"
+        }
+      ],
+      "definition": "the condition of prospering; having good fortune"
+    },
+    {
+      "lemma": "prosperous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "comfortable.s.03",
+          "via_synset": "comfortable.s.03"
+        }
+      ],
+      "definition": "in fortunate circumstances financially; moderately rich"
+    },
+    {
+      "lemma": "rich",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "rich.a.02",
+          "via_synset": "rich.a.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "rich.s.01",
+          "via_synset": "rich.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "affluence.n.01",
+          "via_synset": "rich.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "comfortable.s.03",
+          "via_synset": "rich.a.01"
+        }
+      ],
+      "definition": "having an abundant supply of desirable qualities or substances (especially natural resources)"
+    },
+    {
+      "lemma": "riches",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wealth.n.03",
+          "via_synset": "wealth.n.03"
+        }
+      ],
+      "definition": "an abundance of material possessions and resources"
+    },
+    {
+      "lemma": "richness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wealth.n.01",
+          "via_synset": "affluence.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "rich.s.01",
+          "via_synset": "impressiveness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "rich.a.02",
+          "via_synset": "profusion.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "rich.a.02",
+          "via_synset": "richness.n.05"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abundance.n.01",
+          "via_synset": "profusion.n.01"
+        }
+      ],
+      "definition": "abundant wealth"
+    },
+    {
+      "lemma": "silver spoon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "inherited_wealth.n.01",
+          "via_synset": "silver_spoon.n.01"
+        }
+      ],
+      "definition": "the inherited wealth of established upper-class families"
+    },
+    {
+      "lemma": "solvency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "financial_condition.n.01",
+          "via_synset": "solvency.n.01"
+        }
+      ],
+      "definition": "the ability to meet maturing obligations as they come due"
+    },
+    {
+      "lemma": "squeeze",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "financial_condition.n.01",
+          "via_synset": "credit_crunch.n.01"
+        }
+      ],
+      "definition": "a state in which there is a short supply of cash to lend to businesses and consumers and interest rates are high"
+    },
+    {
+      "lemma": "suffice",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sufficiency.n.01",
+          "via_synset": "suffice.v.01"
+        }
+      ],
+      "definition": "be sufficient; be adequate, either in quality or quantity"
+    },
+    {
+      "lemma": "sufficiency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wealth.n.01",
+          "via_synset": "sufficiency.n.01"
+        }
+      ],
+      "definition": "sufficient resources to provide comfort and meet obligations"
+    },
+    {
+      "lemma": "sumptuous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "luxury.n.03",
+          "via_synset": "deluxe.s.01"
+        }
+      ],
+      "definition": "rich and superior in quality"
+    },
+    {
+      "lemma": "sumptuousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wealth.n.01",
+          "via_synset": "luxury.n.03"
+        }
+      ],
+      "definition": "wealth as evidenced by sumptuous living"
+    },
+    {
+      "lemma": "superabundance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abundance.n.01",
+          "via_synset": "overabundance.n.02"
+        }
+      ],
+      "definition": "a quantity that is more than what is appropriate"
+    },
+    {
+      "lemma": "swag",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "valuable.n.01",
+          "via_synset": "swag.n.01"
+        }
+      ],
+      "definition": "valuable goods"
+    },
+    {
+      "lemma": "teemingness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wealth.n.02",
+          "via_synset": "abundance.n.01"
+        }
+      ],
+      "definition": "the property of a more than adequate quantity or supply"
+    },
+    {
+      "lemma": "tight money",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "financial_condition.n.01",
+          "via_synset": "tight_money.n.01"
+        }
+      ],
+      "definition": "the economic condition in which credit is difficult to secure and interest rates are high"
+    },
+    {
+      "lemma": "treasure",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wealth.n.03",
+          "via_synset": "treasure.n.01"
+        }
+      ],
+      "definition": "accumulated wealth in the form of money or jewels etc."
+    },
+    {
+      "lemma": "treasure trove",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "treasure.n.01",
+          "via_synset": "treasure_trove.n.01"
+        }
+      ],
+      "definition": "treasure of unknown ownership found hidden (usually in the earth)"
+    },
+    {
+      "lemma": "trove",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "treasure.n.01",
+          "via_synset": "treasure_trove.n.01"
+        }
+      ],
+      "definition": "treasure of unknown ownership found hidden (usually in the earth)"
+    },
+    {
+      "lemma": "valuable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "valuable.n.01",
+          "via_synset": "valuable.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "rich.s.01",
+          "via_synset": "valuable.a.01"
+        }
+      ],
+      "definition": "having great material or monetary value especially for use or exchange"
+    },
+    {
+      "lemma": "valuable",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "treasure.n.01",
+          "via_synset": "valuable.n.01"
+        }
+      ],
+      "definition": "something of value"
+    },
+    {
+      "lemma": "voluptuousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abundance.n.01",
+          "via_synset": "luxuriance.n.01"
+        }
+      ],
+      "definition": "the property of being lush and abundant and a pleasure to the senses"
+    },
+    {
+      "lemma": "wealth",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wealth.n.02",
+          "via_synset": "wealth.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wealth.n.03",
+          "via_synset": "wealth.n.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wealth.n.01",
+          "via_synset": "wealth.n.01"
+        }
+      ],
+      "definition": "the quality of profuse abundance"
+    },
+    {
+      "lemma": "wealthiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wealth.n.01",
+          "via_synset": "wealth.n.01"
+        }
+      ],
+      "definition": "the state of being rich and affluent; having a plentiful supply of material goods and money"
+    },
+    {
+      "lemma": "wealthy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wealth.n.03",
+          "via_synset": "affluent.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wealth.n.01",
+          "via_synset": "affluent.s.01"
+        }
+      ],
+      "definition": "having an abundant supply of money or possessions of value"
+    },
+    {
+      "lemma": "well-fixed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "comfortable.s.03",
+          "via_synset": "comfortable.s.03"
+        }
+      ],
+      "definition": "in fortunate circumstances financially; moderately rich"
+    },
+    {
+      "lemma": "well-heeled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "comfortable.s.03",
+          "via_synset": "comfortable.s.03"
+        }
+      ],
+      "definition": "in fortunate circumstances financially; moderately rich"
+    },
+    {
+      "lemma": "well-off",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "comfortable.s.03",
+          "via_synset": "comfortable.s.03"
+        }
+      ],
+      "definition": "in fortunate circumstances financially; moderately rich"
+    },
+    {
+      "lemma": "well-situated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "comfortable.s.03",
+          "via_synset": "comfortable.s.03"
+        }
+      ],
+      "definition": "in fortunate circumstances financially; moderately rich"
+    },
+    {
+      "lemma": "well-to-do",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "comfortable.s.03",
+          "via_synset": "comfortable.s.03"
+        }
+      ],
+      "definition": "in fortunate circumstances financially; moderately rich"
+    }
+  ]
+}

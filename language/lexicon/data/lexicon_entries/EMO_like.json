@@ -1,0 +1,975 @@
+{
+  "atom": "EMO.like",
+  "category": "EMO",
+  "status": "proposed",
+  "symmetric_pair": "EMO.dislike",
+  "definition_en": "A feeling of enjoyment or favorable regard.",
+  "seed_synsets": [],
+  "core_pool": {
+    "rules": [
+      "0_seed",
+      "3_hyponym_d1",
+      "6_derivational",
+      "7_similar_to",
+      "9_antonym"
+    ],
+    "count": 24,
+    "words": [
+      {
+        "w": "bask",
+        "pos": "v",
+        "src": "0_seed",
+        "definition": "derive or receive pleasure from; get enjoyment from; take pleasure in",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "devour",
+        "pos": "v",
+        "src": "3_hyponym_d1",
+        "definition": "enjoy avidly",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "enjoy",
+        "pos": "v",
+        "src": "0_seed",
+        "definition": "derive or receive pleasure from; get enjoyment from; take pleasure in",
+        "path_count": 3,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "enjoyer",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "a person who delights in having or using or experiencing something",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "enjoyment",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "the pleasure felt when having a good time",
+        "path_count": 3,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "feast one's eyes",
+        "pos": "v",
+        "src": "3_hyponym_d1",
+        "definition": "look at with great enjoyment",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "ilk",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "a kind of person",
+        "path_count": 2,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "like",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "resembling or similar; having the same or some of the same characteristics; often used in combination",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "like",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "a kind of person",
+        "path_count": 4,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "like-minded",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "of the same turn of mind",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "likeness",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "similarity in appearance or character or nature between persons or things",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "look-alike",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "resembling closely",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "prefer",
+        "pos": "v",
+        "src": "0_seed",
+        "definition": "like better; value more highly",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "preference",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "a strong liking",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "relish",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "vigorous and enthusiastic enjoyment",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "relish",
+        "pos": "v",
+        "src": "0_seed",
+        "definition": "derive or receive pleasure from; get enjoyment from; take pleasure in",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "savor",
+        "pos": "v",
+        "src": "0_seed",
+        "definition": "derive or receive pleasure from; get enjoyment from; take pleasure in",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "savour",
+        "pos": "v",
+        "src": "0_seed",
+        "definition": "derive or receive pleasure from; get enjoyment from; take pleasure in",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "similar",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "resembling or similar; having the same or some of the same characteristics; often used in combination",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "similarity",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "the quality of being similar",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "suchlike",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "of the same kind",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "the like",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "a similar kind; ,",
+        "path_count": 2,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "the likes of",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "a similar kind; ,",
+        "path_count": 2,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "unlike",
+        "pos": "adj",
+        "src": "9_antonym",
+        "definition": "marked by dissimilarity",
+        "path_count": 1,
+        "sources": [
+          "9_antonym"
+        ]
+      }
+    ]
+  },
+  "deviation_pool": {
+    "rules": [
+      "10_sibling",
+      "11_pertainym",
+      "12_verb_group",
+      "2_hypernym_d1",
+      "4_hyponym_d2",
+      "5_hyponym_d3",
+      "8_also_see"
+    ],
+    "count": 67,
+    "words": [
+      {
+        "w": "address",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "address or apply oneself to something, direct one's efforts towards something, such as a question",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "antitype",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "an opposite or contrasting type",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "apply",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "put into service; make work or employ for a particular purpose or for its inherent or natural purpose",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "art form",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "(architecture) a form of artistic expression (such as writing or painting or architecture)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "assign",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "attribute or give",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "avail",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "use to one's advantage",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "brand",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a recognizable kind",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "cannibalise",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "use parts of something to repair something else",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "cannibalize",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "use parts of something to repair something else",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "care for",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "have a liking, fondness, or taste (for)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "color",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "(physics) the characteristic of quarks that determines their role in the strong interaction",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "colour",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "(physics) the characteristic of quarks that determines their role in the strong interaction",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "commit",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "give entirely to a specific person, activity, or cause",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "consecrate",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "give entirely to a specific person, activity, or cause",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "cotton",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "take a liking to",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "dedicate",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "give entirely to a specific person, activity, or cause",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "description",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "sort or variety",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "devote",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "give entirely to a specific person, activity, or cause",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "employ",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "put into service; make work or employ for a particular purpose or for its inherent or natural purpose",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "exercise",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "put to use",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "exert",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "put to use",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "exploit",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "draw from; make good use of",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "extend",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "use to the utmost; exert vigorously or to full capacity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "fall back",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "have recourse to",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "flavor",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "(physics) the six kinds of quarks",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "flavour",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "(physics) the six kinds of quarks",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "form",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "a category of things distinguished by some common characteristic or quality",
+        "path_count": 2,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "genre",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a kind of literary or artistic work",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "genus",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a general kind of something",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "give",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "give entirely to a specific person, activity, or cause",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "implement",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "apply in a manner consistent with its purpose or design",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "kind",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "a category of things distinguished by some common characteristic or quality",
+        "path_count": 2,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "like",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "find enjoyable or agreeable",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "love",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "get pleasure from",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "make",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a recognizable kind",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "manner",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a kind",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "misapply",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "apply to a wrong thing or person; apply badly or incorrectly",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "misuse",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "apply to a wrong thing or person; apply badly or incorrectly",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "model",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a type of product",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "overdrive",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make use of too often or too extensively",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "overuse",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make use of too often or too extensively",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "play",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "employ in a game or in a specific position",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "ply",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "use diligently",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "pull out all the stops",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "use all resources available",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "put",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "attribute or give",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "put to work",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "cause to work",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "recur",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "have recourse to",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "recycle",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "use again after processing",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "reprocess",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "use again after processing",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "resort",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "have recourse to",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "reuse",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "use again after processing",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "same",
+        "pos": "adj",
+        "src": "8_also_see",
+        "definition": "closely similar or comparable in kind or quality or quantity or degree",
+        "path_count": 1,
+        "sources": [
+          "8_also_see"
+        ]
+      },
+      {
+        "w": "share",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "use jointly or in common",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "sort",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "a category of things distinguished by some common characteristic or quality",
+        "path_count": 2,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "species",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a specific kind of something",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "strain",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "use to the utmost; exert vigorously or to full capacity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "stripe",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a kind or category",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "style",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a particular kind (as to appearance)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "take",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "travel or go by means of a certain kind of transportation, or a certain route",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "tap",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "draw from; make good use of",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "type",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a subdivision of a particular kind of thing",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "use",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "put into service; make work or employ for a particular purpose or for its inherent or natural purpose",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "utilise",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "put into service; make work or employ for a particular purpose or for its inherent or natural purpose",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "utilize",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "put into service; make work or employ for a particular purpose or for its inherent or natural purpose",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "variety",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "a category of things distinguished by some common characteristic or quality",
+        "path_count": 2,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "waste",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "use inefficiently or inappropriately",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "work",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "cause to work",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      }
+    ]
+  },
+  "deviation_stats": {
+    "total_candidates": 91,
+    "core_count": 24,
+    "dev_count": 67,
+    "core_ratio": 0.264,
+    "dev_ratio": 0.736,
+    "dev_source_breakdown": {
+      "10_sibling": 56,
+      "2_hypernym_d1": 10,
+      "8_also_see": 1
+    },
+    "step_contributions": {
+      "0_seed": 12,
+      "2_hypernym_d1": 10,
+      "3_hyponym_d1": 2,
+      "4_hyponym_d2": 0,
+      "5_hyponym_d3": 0,
+      "6_derivational": 6,
+      "7_similar_to": 3,
+      "8_also_see": 1,
+      "9_antonym": 1,
+      "10_sibling": 56,
+      "11_pertainym": 0,
+      "12_verb_group": 0
+    }
+  },
+  "meta": {
+    "generator": "wn_lexicon_entry.py",
+    "version": "1.0.0",
+    "design": "3AI consolidated: Core/Deviation pool separation"
+  }
+}

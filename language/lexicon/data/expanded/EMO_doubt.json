@@ -1,0 +1,1743 @@
+{
+  "atom_id": "EMO.doubt",
+  "category": "EMO",
+  "seed_count": 6,
+  "total_keys": 107,
+  "pos_counts": {
+    "n": 81,
+    "v": 10,
+    "adj": 16
+  },
+  "source_counts": {
+    "0_seed": 19,
+    "6_derivational": 28,
+    "2_hypernym_d1": 9,
+    "3_hyponym_d1": 19,
+    "4_hyponym_d2": 3,
+    "7_similar_to": 6,
+    "8_also_see": 2,
+    "9_antonym": 2,
+    "10_sibling": 44
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 14,
+      "words": [
+        "doubt(n)",
+        "dubiousness(n)",
+        "doubtfulness(n)",
+        "question(n)",
+        "doubt(v)",
+        "uncertainty(n)",
+        "incertitude(n)",
+        "dubiety(n)",
+        "uncertain(adj)",
+        "unsure(adj)",
+        "incertain(adj)",
+        "interrogation(n)",
+        "interrogative(n)",
+        "interrogative sentence(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 8,
+      "words": [
+        "uncertainness(n)",
+        "precariousness(n)",
+        "distrust(v)",
+        "mistrust(v)",
+        "suspect(v)",
+        "cognitive state(n)",
+        "state of mind(n)",
+        "sentence(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 19,
+      "words": [
+        "peradventure(n)",
+        "suspense(n)",
+        "indecision(n)",
+        "indecisiveness(n)",
+        "irresolution(n)",
+        "incredulity(n)",
+        "disbelief(n)",
+        "skepticism(n)",
+        "mental rejection(n)",
+        "misgiving(n)",
+        "mistrust(n)",
+        "distrust(n)",
+        "suspicion(n)",
+        "mental reservation(n)",
+        "reservation(n)",
+        "arriere pensee(n)",
+        "leading question(n)",
+        "cross-question(n)",
+        "yes-no question(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 3,
+      "words": [
+        "hesitation(n)",
+        "vacillation(n)",
+        "wavering(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 12,
+      "words": [
+        "dubious(adj)",
+        "doubtful(adj)",
+        "question(v)",
+        "indecisive(adj)",
+        "cross question(v)",
+        "hesitate(v)",
+        "vacillate(v)",
+        "waver(v)",
+        "suspicious(adj)",
+        "interrogate(v)",
+        "incredulous(adj)",
+        "skeptical(adj)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 4,
+      "words": [
+        "up in the air(adj)",
+        "indefinite(adj)",
+        "ambivalent(adj)",
+        "groping(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 2,
+      "words": [
+        "indeterminate(adj)",
+        "undetermined(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 2,
+      "words": [
+        "certainty(n)",
+        "sure(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 43,
+      "words": [
+        "unpredictability(n)",
+        "fortuitousness(n)",
+        "speculativeness(n)",
+        "indefiniteness(n)",
+        "indeterminateness(n)",
+        "indefinity(n)",
+        "indetermination(n)",
+        "indeterminacy(n)",
+        "improbability(n)",
+        "improbableness(n)",
+        "amnesia(n)",
+        "memory loss(n)",
+        "blackout(n)",
+        "interestedness(n)",
+        "curiosity(n)",
+        "wonder(n)",
+        "unconsciousness(n)",
+        "inwardness(n)",
+        "outwardness(n)",
+        "confusion(n)",
+        "mental confusion(n)",
+        "confusedness(n)",
+        "muddiness(n)",
+        "disarray(n)",
+        "paramnesia(n)",
+        "preoccupation(n)",
+        "preoccupancy(n)",
+        "absorption(n)",
+        "engrossment(n)",
+        "subconsciousness(n)",
+        "set(n)",
+        "readiness(n)",
+        "consciousness(n)",
+        "morbidity(n)",
+        "morbidness(n)",
+        "ivory tower(n)",
+        "complex sentence(n)",
+        "declarative sentence(n)",
+        "declaratory sentence(n)",
+        "simple sentence(n)",
+        "run-on sentence(n)",
+        "topic sentence(n)",
+        "compound sentence(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "absorption",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "preoccupation.n.02"
+        }
+      ],
+      "definition": "the mental state of being preoccupied by something"
+    },
+    {
+      "lemma": "ambivalent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uncertain.a.01",
+          "via_synset": "ambivalent.s.01"
+        }
+      ],
+      "definition": "uncertain or unable to decide about what course to follow"
+    },
+    {
+      "lemma": "amnesia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "amnesia.n.01"
+        }
+      ],
+      "definition": "partial or total loss of memory"
+    },
+    {
+      "lemma": "arriere pensee",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "doubt.n.01",
+          "via_synset": "mental_reservation.n.01"
+        }
+      ],
+      "definition": "an unstated doubt that prevents you from accepting something wholeheartedly"
+    },
+    {
+      "lemma": "blackout",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "amnesia.n.01"
+        }
+      ],
+      "definition": "partial or total loss of memory"
+    },
+    {
+      "lemma": "certainty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "doubt.n.01",
+          "via_synset": "certainty.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "certainty.n.01"
+        }
+      ],
+      "definition": "the state of being certain"
+    },
+    {
+      "lemma": "cognitive state",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "doubt.n.01",
+          "via_synset": "cognitive_state.n.01"
+        }
+      ],
+      "definition": "the state of a person's cognitive processes"
+    },
+    {
+      "lemma": "complex sentence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sentence.n.01",
+          "via_synset": "complex_sentence.n.01"
+        }
+      ],
+      "definition": "a sentence composed of at least one main clause and one subordinate clause"
+    },
+    {
+      "lemma": "compound sentence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sentence.n.01",
+          "via_synset": "compound_sentence.n.01"
+        }
+      ],
+      "definition": "a sentence composed of at least two coordinate independent clauses"
+    },
+    {
+      "lemma": "confusedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "confusion.n.02"
+        }
+      ],
+      "definition": "a mental state characterized by a lack of clear and orderly thought and behavior"
+    },
+    {
+      "lemma": "confusion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "confusion.n.02"
+        }
+      ],
+      "definition": "a mental state characterized by a lack of clear and orderly thought and behavior"
+    },
+    {
+      "lemma": "consciousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "consciousness.n.01"
+        }
+      ],
+      "definition": "an alert cognitive state in which you are aware of yourself and your situation"
+    },
+    {
+      "lemma": "cross question",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cross-question.n.01",
+          "via_synset": "cross_examine.v.01"
+        }
+      ],
+      "definition": "question closely, or question a witness that has already been questioned by the opposing side"
+    },
+    {
+      "lemma": "cross-question",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "question.n.03",
+          "via_synset": "cross-question.n.01"
+        }
+      ],
+      "definition": "a question asked in cross-examination"
+    },
+    {
+      "lemma": "curiosity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "curiosity.n.01"
+        }
+      ],
+      "definition": "a state in which you want to learn more about something"
+    },
+    {
+      "lemma": "declarative sentence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sentence.n.01",
+          "via_synset": "declarative_sentence.n.01"
+        }
+      ],
+      "definition": "a sentence (in the indicative mood) that makes a declaration"
+    },
+    {
+      "lemma": "declaratory sentence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sentence.n.01",
+          "via_synset": "declarative_sentence.n.01"
+        }
+      ],
+      "definition": "a sentence (in the indicative mood) that makes a declaration"
+    },
+    {
+      "lemma": "disarray",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "confusion.n.02"
+        }
+      ],
+      "definition": "a mental state characterized by a lack of clear and orderly thought and behavior"
+    },
+    {
+      "lemma": "disbelief",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "doubt.n.01",
+          "via_synset": "incredulity.n.01"
+        }
+      ],
+      "definition": "doubt about the truth of something"
+    },
+    {
+      "lemma": "distrust",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "doubt.n.01",
+          "via_synset": "misgiving.n.03"
+        }
+      ],
+      "definition": "doubt about someone's honesty"
+    },
+    {
+      "lemma": "distrust",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "doubt.v.02",
+          "via_synset": "distrust.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "misgiving.n.03",
+          "via_synset": "distrust.v.01"
+        }
+      ],
+      "definition": "regard as untrustworthy; regard with suspicion; have no faith or confidence in"
+    },
+    {
+      "lemma": "doubt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "doubt.n.02",
+          "via_synset": "doubt.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "doubt.n.01",
+          "via_synset": "doubt.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "doubt.v.02",
+          "via_synset": "doubt.n.02"
+        }
+      ],
+      "definition": "uncertainty about the truth or factuality or existence of something"
+    },
+    {
+      "lemma": "doubt",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "doubt.v.02",
+          "via_synset": "doubt.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "doubt.n.02",
+          "via_synset": "doubt.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "doubt.n.01",
+          "via_synset": "doubt.v.01"
+        }
+      ],
+      "definition": "lack confidence in or have doubts about"
+    },
+    {
+      "lemma": "doubtful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "doubt.n.02",
+          "via_synset": "doubtful.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "doubt.n.01",
+          "via_synset": "doubtful.s.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "doubt.n.01",
+          "via_synset": "doubtful.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uncertain.a.01",
+          "via_synset": "doubtful.s.02"
+        }
+      ],
+      "definition": "open to doubt or suspicion; ; ; ; - Karen Horney"
+    },
+    {
+      "lemma": "doubtfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "doubt.n.02",
+          "via_synset": "doubt.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "doubt.n.01",
+          "via_synset": "doubt.n.01"
+        }
+      ],
+      "definition": "uncertainty about the truth or factuality or existence of something"
+    },
+    {
+      "lemma": "dubiety",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "doubt.n.01",
+          "via_synset": "doubt.n.01"
+        }
+      ],
+      "definition": "the state of being unsure of something"
+    },
+    {
+      "lemma": "dubious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "doubt.n.02",
+          "via_synset": "doubtful.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "doubt.n.01",
+          "via_synset": "dubious.s.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "doubt.n.01",
+          "via_synset": "doubtful.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uncertain.a.01",
+          "via_synset": "doubtful.s.02"
+        }
+      ],
+      "definition": "open to doubt or suspicion; ; ; ; - Karen Horney"
+    },
+    {
+      "lemma": "dubiousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "doubt.n.02",
+          "via_synset": "doubt.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "doubt.n.01",
+          "via_synset": "doubt.n.01"
+        }
+      ],
+      "definition": "uncertainty about the truth or factuality or existence of something"
+    },
+    {
+      "lemma": "engrossment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "preoccupation.n.02"
+        }
+      ],
+      "definition": "the mental state of being preoccupied by something"
+    },
+    {
+      "lemma": "fortuitousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "uncertainty.n.01",
+          "via_synset": "fortuitousness.n.01"
+        }
+      ],
+      "definition": "the quality of happening accidentally and by lucky chance"
+    },
+    {
+      "lemma": "groping",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uncertain.a.01",
+          "via_synset": "groping.s.01"
+        }
+      ],
+      "definition": "acting with uncertainty or hesitance or lack of confidence"
+    },
+    {
+      "lemma": "hesitate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hesitation.n.01",
+          "via_synset": "hesitate.v.01"
+        }
+      ],
+      "definition": "pause or hold back in uncertainty or unwillingness"
+    },
+    {
+      "lemma": "hesitation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "indecision.n.01",
+          "via_synset": "hesitation.n.01"
+        }
+      ],
+      "definition": "indecision in speech or action"
+    },
+    {
+      "lemma": "improbability",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "uncertainty.n.01",
+          "via_synset": "improbability.n.01"
+        }
+      ],
+      "definition": "the quality of being improbable"
+    },
+    {
+      "lemma": "improbableness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "uncertainty.n.01",
+          "via_synset": "improbability.n.01"
+        }
+      ],
+      "definition": "the quality of being improbable"
+    },
+    {
+      "lemma": "incertain",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "uncertain.a.01",
+          "via_synset": "uncertain.a.01"
+        }
+      ],
+      "definition": "lacking or indicating lack of confidence or assurance"
+    },
+    {
+      "lemma": "incertitude",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "doubt.n.01",
+          "via_synset": "doubt.n.01"
+        }
+      ],
+      "definition": "the state of being unsure of something"
+    },
+    {
+      "lemma": "incredulity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "doubt.n.01",
+          "via_synset": "incredulity.n.01"
+        }
+      ],
+      "definition": "doubt about the truth of something"
+    },
+    {
+      "lemma": "incredulous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "incredulity.n.01",
+          "via_synset": "incredulous.a.01"
+        }
+      ],
+      "definition": "not disposed or willing to believe; unbelieving"
+    },
+    {
+      "lemma": "indecision",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "doubt.n.01",
+          "via_synset": "indecision.n.01"
+        }
+      ],
+      "definition": "doubt concerning two or more possible alternatives or courses of action"
+    },
+    {
+      "lemma": "indecisive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "indecision.n.01",
+          "via_synset": "indecisive.a.01"
+        }
+      ],
+      "definition": "characterized by lack of decision and firmness"
+    },
+    {
+      "lemma": "indecisiveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "doubt.n.01",
+          "via_synset": "indecision.n.01"
+        }
+      ],
+      "definition": "doubt concerning two or more possible alternatives or courses of action"
+    },
+    {
+      "lemma": "indefinite",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uncertain.a.02",
+          "via_synset": "indefinite.s.01"
+        }
+      ],
+      "definition": "not decided or not known"
+    },
+    {
+      "lemma": "indefiniteness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "uncertainty.n.01",
+          "via_synset": "indefiniteness.n.01"
+        }
+      ],
+      "definition": "the quality of being vague and poorly defined"
+    },
+    {
+      "lemma": "indefinity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "uncertainty.n.01",
+          "via_synset": "indefiniteness.n.01"
+        }
+      ],
+      "definition": "the quality of being vague and poorly defined"
+    },
+    {
+      "lemma": "indeterminacy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "uncertainty.n.01",
+          "via_synset": "indefiniteness.n.01"
+        }
+      ],
+      "definition": "the quality of being vague and poorly defined"
+    },
+    {
+      "lemma": "indeterminate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "uncertain.a.02",
+          "via_synset": "indeterminate.a.01"
+        }
+      ],
+      "definition": "not precisely determined or established; not fixed or known in advance"
+    },
+    {
+      "lemma": "indeterminateness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "uncertainty.n.01",
+          "via_synset": "indefiniteness.n.01"
+        }
+      ],
+      "definition": "the quality of being vague and poorly defined"
+    },
+    {
+      "lemma": "indetermination",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "uncertainty.n.01",
+          "via_synset": "indefiniteness.n.01"
+        }
+      ],
+      "definition": "the quality of being vague and poorly defined"
+    },
+    {
+      "lemma": "interestedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "interestedness.n.01"
+        }
+      ],
+      "definition": "the state of being interested"
+    },
+    {
+      "lemma": "interrogate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "question.n.03",
+          "via_synset": "interrogate.v.02"
+        }
+      ],
+      "definition": "pose a series of questions to"
+    },
+    {
+      "lemma": "interrogation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "question.n.03",
+          "via_synset": "question.n.03"
+        }
+      ],
+      "definition": "a sentence of inquiry that asks for a reply"
+    },
+    {
+      "lemma": "interrogative",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "question.n.03",
+          "via_synset": "question.n.03"
+        }
+      ],
+      "definition": "a sentence of inquiry that asks for a reply"
+    },
+    {
+      "lemma": "interrogative sentence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "question.n.03",
+          "via_synset": "question.n.03"
+        }
+      ],
+      "definition": "a sentence of inquiry that asks for a reply"
+    },
+    {
+      "lemma": "inwardness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "inwardness.n.02"
+        }
+      ],
+      "definition": "preoccupation especially with one's attitudes and ethical or ideological values"
+    },
+    {
+      "lemma": "irresolution",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "doubt.n.01",
+          "via_synset": "indecision.n.01"
+        }
+      ],
+      "definition": "doubt concerning two or more possible alternatives or courses of action"
+    },
+    {
+      "lemma": "ivory tower",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "ivory_tower.n.01"
+        }
+      ],
+      "definition": "a state of mind that is discussed as if it were a place"
+    },
+    {
+      "lemma": "leading question",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "question.n.03",
+          "via_synset": "leading_question.n.01"
+        }
+      ],
+      "definition": "a question phrased in such a way as to suggest the desired answer; a lawyer may ask leading questions on cross-examination"
+    },
+    {
+      "lemma": "memory loss",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "amnesia.n.01"
+        }
+      ],
+      "definition": "partial or total loss of memory"
+    },
+    {
+      "lemma": "mental confusion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "confusion.n.02"
+        }
+      ],
+      "definition": "a mental state characterized by a lack of clear and orderly thought and behavior"
+    },
+    {
+      "lemma": "mental rejection",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "doubt.n.01",
+          "via_synset": "incredulity.n.01"
+        }
+      ],
+      "definition": "doubt about the truth of something"
+    },
+    {
+      "lemma": "mental reservation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "doubt.n.01",
+          "via_synset": "mental_reservation.n.01"
+        }
+      ],
+      "definition": "an unstated doubt that prevents you from accepting something wholeheartedly"
+    },
+    {
+      "lemma": "misgiving",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "doubt.n.01",
+          "via_synset": "misgiving.n.03"
+        }
+      ],
+      "definition": "doubt about someone's honesty"
+    },
+    {
+      "lemma": "mistrust",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "doubt.n.01",
+          "via_synset": "misgiving.n.03"
+        }
+      ],
+      "definition": "doubt about someone's honesty"
+    },
+    {
+      "lemma": "mistrust",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "doubt.v.02",
+          "via_synset": "distrust.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "misgiving.n.03",
+          "via_synset": "distrust.v.01"
+        }
+      ],
+      "definition": "regard as untrustworthy; regard with suspicion; have no faith or confidence in"
+    },
+    {
+      "lemma": "morbidity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "morbidity.n.02"
+        }
+      ],
+      "definition": "an abnormally gloomy or unhealthy state of mind"
+    },
+    {
+      "lemma": "morbidness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "morbidity.n.02"
+        }
+      ],
+      "definition": "an abnormally gloomy or unhealthy state of mind"
+    },
+    {
+      "lemma": "muddiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "confusion.n.02"
+        }
+      ],
+      "definition": "a mental state characterized by a lack of clear and orderly thought and behavior"
+    },
+    {
+      "lemma": "outwardness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "outwardness.n.01"
+        }
+      ],
+      "definition": "concern with outward things or material objects as opposed to the mind and spirit"
+    },
+    {
+      "lemma": "paramnesia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "paramnesia.n.01"
+        }
+      ],
+      "definition": "(psychiatry) a disorder of memory in which dreams or fantasies are confused with reality"
+    },
+    {
+      "lemma": "peradventure",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "doubt.n.01",
+          "via_synset": "peradventure.n.01"
+        }
+      ],
+      "definition": "doubt or uncertainty as to whether something is the case"
+    },
+    {
+      "lemma": "precariousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "doubt.n.02",
+          "via_synset": "uncertainty.n.01"
+        }
+      ],
+      "definition": "being unsettled or in doubt or dependent on chance"
+    },
+    {
+      "lemma": "preoccupancy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "preoccupation.n.02"
+        }
+      ],
+      "definition": "the mental state of being preoccupied by something"
+    },
+    {
+      "lemma": "preoccupation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "preoccupation.n.02"
+        }
+      ],
+      "definition": "the mental state of being preoccupied by something"
+    },
+    {
+      "lemma": "question",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "doubt.n.02",
+          "via_synset": "doubt.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "question.n.03",
+          "via_synset": "question.n.03"
+        }
+      ],
+      "definition": "uncertainty about the truth or factuality or existence of something"
+    },
+    {
+      "lemma": "question",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "doubt.n.02",
+          "via_synset": "wonder.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "doubt.n.02",
+          "via_synset": "question.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "question.n.03",
+          "via_synset": "interrogate.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "question.n.03",
+          "via_synset": "question.v.03"
+        }
+      ],
+      "definition": "place in doubt or express doubtful speculation"
+    },
+    {
+      "lemma": "readiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "set.n.12"
+        }
+      ],
+      "definition": "(psychology) being temporarily ready to respond in a particular way"
+    },
+    {
+      "lemma": "reservation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "doubt.n.01",
+          "via_synset": "mental_reservation.n.01"
+        }
+      ],
+      "definition": "an unstated doubt that prevents you from accepting something wholeheartedly"
+    },
+    {
+      "lemma": "run-on sentence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sentence.n.01",
+          "via_synset": "run-on_sentence.n.01"
+        }
+      ],
+      "definition": "an ungrammatical sentence in which two or more independent clauses are conjoined without a conjunction"
+    },
+    {
+      "lemma": "sentence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "question.n.03",
+          "via_synset": "sentence.n.01"
+        }
+      ],
+      "definition": "a string of words satisfying the grammatical rules of a language"
+    },
+    {
+      "lemma": "set",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "set.n.12"
+        }
+      ],
+      "definition": "(psychology) being temporarily ready to respond in a particular way"
+    },
+    {
+      "lemma": "simple sentence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sentence.n.01",
+          "via_synset": "simple_sentence.n.01"
+        }
+      ],
+      "definition": "a sentence having no coordinate clauses or subordinate clauses"
+    },
+    {
+      "lemma": "skeptical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "incredulity.n.01",
+          "via_synset": "disbelieving.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "incredulity.n.01",
+          "via_synset": "doubting.s.01"
+        }
+      ],
+      "definition": "denying or questioning the tenets of especially a religion"
+    },
+    {
+      "lemma": "skepticism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "doubt.n.01",
+          "via_synset": "incredulity.n.01"
+        }
+      ],
+      "definition": "doubt about the truth of something"
+    },
+    {
+      "lemma": "speculativeness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "uncertainty.n.01",
+          "via_synset": "speculativeness.n.02"
+        }
+      ],
+      "definition": "the quality of being a conclusion or opinion based on supposition and conjecture rather than on fact or investigation"
+    },
+    {
+      "lemma": "state of mind",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "doubt.n.01",
+          "via_synset": "cognitive_state.n.01"
+        }
+      ],
+      "definition": "the state of a person's cognitive processes"
+    },
+    {
+      "lemma": "subconsciousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "subconsciousness.n.01"
+        }
+      ],
+      "definition": "a state of mind not immediately available to consciousness"
+    },
+    {
+      "lemma": "sure",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "uncertain.a.01",
+          "via_synset": "certain.a.02"
+        }
+      ],
+      "definition": "having or feeling no doubt or uncertainty; confident and assured"
+    },
+    {
+      "lemma": "suspect",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "doubt.v.02",
+          "via_synset": "distrust.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "misgiving.n.03",
+          "via_synset": "distrust.v.01"
+        }
+      ],
+      "definition": "regard as untrustworthy; regard with suspicion; have no faith or confidence in"
+    },
+    {
+      "lemma": "suspense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "doubt.n.01",
+          "via_synset": "suspense.n.02"
+        }
+      ],
+      "definition": "an uncertain cognitive state"
+    },
+    {
+      "lemma": "suspicion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "doubt.n.01",
+          "via_synset": "misgiving.n.03"
+        }
+      ],
+      "definition": "doubt about someone's honesty"
+    },
+    {
+      "lemma": "suspicious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "misgiving.n.03",
+          "via_synset": "leery.s.01"
+        }
+      ],
+      "definition": "openly distrustful and unwilling to confide"
+    },
+    {
+      "lemma": "topic sentence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sentence.n.01",
+          "via_synset": "topic_sentence.n.01"
+        }
+      ],
+      "definition": "a sentence that states the topic of its paragraph"
+    },
+    {
+      "lemma": "uncertain",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "uncertain.a.01",
+          "via_synset": "uncertain.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "uncertain.a.02",
+          "via_synset": "uncertain.a.02"
+        }
+      ],
+      "definition": "lacking or indicating lack of confidence or assurance"
+    },
+    {
+      "lemma": "uncertainness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "doubt.n.02",
+          "via_synset": "uncertainty.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "uncertain.a.02",
+          "via_synset": "uncertainty.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "uncertain.a.01",
+          "via_synset": "uncertainty.n.01"
+        }
+      ],
+      "definition": "being unsettled or in doubt or dependent on chance"
+    },
+    {
+      "lemma": "uncertainty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "doubt.n.01",
+          "via_synset": "doubt.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "doubt.n.02",
+          "via_synset": "uncertainty.n.01"
+        }
+      ],
+      "definition": "the state of being unsure of something"
+    },
+    {
+      "lemma": "unconsciousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "unconsciousness.n.01"
+        }
+      ],
+      "definition": "a state lacking normal awareness of the self or environment"
+    },
+    {
+      "lemma": "undetermined",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "uncertain.a.02",
+          "via_synset": "indeterminate.a.01"
+        }
+      ],
+      "definition": "not precisely determined or established; not fixed or known in advance"
+    },
+    {
+      "lemma": "unpredictability",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "uncertainty.n.01",
+          "via_synset": "unpredictability.n.03"
+        }
+      ],
+      "definition": "lacking predictability"
+    },
+    {
+      "lemma": "unsure",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "uncertain.a.01",
+          "via_synset": "uncertain.a.01"
+        }
+      ],
+      "definition": "lacking or indicating lack of confidence or assurance"
+    },
+    {
+      "lemma": "up in the air",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uncertain.a.02",
+          "via_synset": "up_in_the_air.s.01"
+        }
+      ],
+      "definition": "very uncertain"
+    },
+    {
+      "lemma": "vacillate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hesitation.n.01",
+          "via_synset": "hover.v.01"
+        }
+      ],
+      "definition": "be undecided about something; waver between conflicting positions or courses of action"
+    },
+    {
+      "lemma": "vacillation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "indecision.n.01",
+          "via_synset": "hesitation.n.01"
+        }
+      ],
+      "definition": "indecision in speech or action"
+    },
+    {
+      "lemma": "waver",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hesitation.n.01",
+          "via_synset": "hesitate.v.01"
+        }
+      ],
+      "definition": "pause or hold back in uncertainty or unwillingness"
+    },
+    {
+      "lemma": "wavering",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "indecision.n.01",
+          "via_synset": "hesitation.n.01"
+        }
+      ],
+      "definition": "indecision in speech or action"
+    },
+    {
+      "lemma": "wonder",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "curiosity.n.01"
+        }
+      ],
+      "definition": "a state in which you want to learn more about something"
+    },
+    {
+      "lemma": "yes-no question",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "question.n.03",
+          "via_synset": "yes-no_question.n.01"
+        }
+      ],
+      "definition": "a question that can be answered by yes or no"
+    }
+  ]
+}

@@ -1,0 +1,1655 @@
+{
+  "atom_id": "PRP.low",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 109,
+  "pos_counts": {
+    "n": 66,
+    "v": 20,
+    "adj": 23
+  },
+  "source_counts": {
+    "0_seed": 14,
+    "2_hypernym_d1": 21,
+    "3_hyponym_d1": 5,
+    "4_hyponym_d2": 14,
+    "6_derivational": 8,
+    "7_similar_to": 20,
+    "8_also_see": 1,
+    "10_sibling": 32
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 12,
+      "words": [
+        "low(n)",
+        "depression(n)",
+        "David Low(n)",
+        "Sir David Low(n)",
+        "Sir David Alexander Cecil Low(n)",
+        "short-change(v)",
+        "short(v)",
+        "short(adj)",
+        "little(adj)",
+        "bottom(n)",
+        "underside(n)",
+        "undersurface(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 20,
+      "words": [
+        "air mass(n)",
+        "degree(n)",
+        "grade(n)",
+        "level(n)",
+        "victimize(v)",
+        "swindle(v)",
+        "rook(v)",
+        "goldbrick(v)",
+        "nobble(v)",
+        "diddle(v)",
+        "bunco(v)",
+        "defraud(v)",
+        "scam(v)",
+        "mulct(v)",
+        "gyp(v)",
+        "gip(v)",
+        "hornswoggle(v)",
+        "con(v)",
+        "side(n)",
+        "face(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 5,
+      "words": [
+        "heel(n)",
+        "sole(n)",
+        "underbelly(n)",
+        "bilge(n)",
+        "base(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 14,
+      "words": [
+        "stacked heel(n)",
+        "French heel(n)",
+        "wineglass heel(n)",
+        "spike heel(n)",
+        "spike(n)",
+        "stiletto heel(n)",
+        "Cuban heel(n)",
+        "wedge heel(n)",
+        "wedge(n)",
+        "half sole(n)",
+        "insole(n)",
+        "innersole(n)",
+        "outsole(n)",
+        "bilges(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 5,
+      "words": [
+        "sole(v)",
+        "shortness(n)",
+        "bottom(v)",
+        "heel(v)",
+        "bilge(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 20,
+      "words": [
+        "chunky(adj)",
+        "dumpy(adj)",
+        "low-set(adj)",
+        "squat(adj)",
+        "squatty(adj)",
+        "stumpy(adj)",
+        "half-length(adj)",
+        "squab(adj)",
+        "squabby(adj)",
+        "short-stalked(adj)",
+        "pint-size(adj)",
+        "pint-sized(adj)",
+        "runty(adj)",
+        "sawed-off(adj)",
+        "sawn-off(adj)",
+        "compact(adj)",
+        "heavyset(adj)",
+        "stocky(adj)",
+        "thick(adj)",
+        "thickset(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 1,
+      "words": [
+        "low(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 32,
+      "words": [
+        "intensity(n)",
+        "intensiveness(n)",
+        "lowness(n)",
+        "extreme(n)",
+        "quality(n)",
+        "caliber(n)",
+        "calibre(n)",
+        "moderation(n)",
+        "moderateness(n)",
+        "grind(n)",
+        "amplitude level(n)",
+        "depth(n)",
+        "immoderation(n)",
+        "immoderateness(n)",
+        "sun protection factor(n)",
+        "SPF(n)",
+        "highness(n)",
+        "top(n)",
+        "top side(n)",
+        "upper side(n)",
+        "upside(n)",
+        "front(n)",
+        "front end(n)",
+        "forepart(n)",
+        "beam-ends(n)",
+        "lee(n)",
+        "lee side(n)",
+        "leeward(n)",
+        "rear(n)",
+        "backside(n)",
+        "back end(n)",
+        "windward(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "air mass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "low.n.01",
+          "via_synset": "air_mass.n.01"
+        }
+      ],
+      "definition": "a large body of air with uniform characteristics horizontally"
+    },
+    {
+      "lemma": "amplitude level",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "amplitude_level.n.01"
+        }
+      ],
+      "definition": "the level on a scale of amplitude"
+    },
+    {
+      "lemma": "back end",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.04",
+          "via_synset": "rear.n.02"
+        }
+      ],
+      "definition": "the side of an object that is opposite its front"
+    },
+    {
+      "lemma": "backside",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.04",
+          "via_synset": "rear.n.02"
+        }
+      ],
+      "definition": "the side of an object that is opposite its front"
+    },
+    {
+      "lemma": "base",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "bottom.n.01",
+          "via_synset": "base.n.19"
+        }
+      ],
+      "definition": "a flat bottom on which something is intended to sit"
+    },
+    {
+      "lemma": "beam-ends",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.04",
+          "via_synset": "beam-ends.n.01"
+        }
+      ],
+      "definition": "(nautical) at the ends of the transverse deck beams of a vessel;  means heeled over on the side so that the deck is almost vertical"
+    },
+    {
+      "lemma": "bilge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "bottom.n.01",
+          "via_synset": "bilge.n.02"
+        }
+      ],
+      "definition": "where the sides of the vessel curve in to form the bottom"
+    },
+    {
+      "lemma": "bilge",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bilge.n.02",
+          "via_synset": "bilge.v.02"
+        }
+      ],
+      "definition": "take in water at the bilge"
+    },
+    {
+      "lemma": "bilges",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bilge.n.02",
+          "via_synset": "bilges.n.01"
+        }
+      ],
+      "definition": "in a vessel with two hulls, an enclosed area between the frames at each side"
+    },
+    {
+      "lemma": "bottom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bottom.n.01",
+          "via_synset": "bottom.n.01"
+        }
+      ],
+      "definition": "the lower side of anything"
+    },
+    {
+      "lemma": "bottom",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bottom.n.01",
+          "via_synset": "bottom.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bottom.n.01",
+          "via_synset": "bottom.v.02"
+        }
+      ],
+      "definition": "provide with a bottom or a seat"
+    },
+    {
+      "lemma": "bunco",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "short-change.v.01",
+          "via_synset": "victimize.v.03"
+        }
+      ],
+      "definition": "deprive of by deceit"
+    },
+    {
+      "lemma": "caliber",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "quality.n.02"
+        }
+      ],
+      "definition": "a degree or grade of excellence or worth"
+    },
+    {
+      "lemma": "calibre",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "quality.n.02"
+        }
+      ],
+      "definition": "a degree or grade of excellence or worth"
+    },
+    {
+      "lemma": "chunky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "short.a.03",
+          "via_synset": "chunky.s.02"
+        }
+      ],
+      "definition": "short and thick; as e.g. having short legs and heavy musculature"
+    },
+    {
+      "lemma": "compact",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "short.a.03",
+          "via_synset": "compact.s.01"
+        }
+      ],
+      "definition": "having a short and solid form or stature"
+    },
+    {
+      "lemma": "con",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "short-change.v.01",
+          "via_synset": "victimize.v.03"
+        }
+      ],
+      "definition": "deprive of by deceit"
+    },
+    {
+      "lemma": "Cuban heel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "heel.n.01",
+          "via_synset": "cuban_heel.n.01"
+        }
+      ],
+      "definition": "a broad heel of medium height on women's shoes"
+    },
+    {
+      "lemma": "David Low",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "low.n.02",
+          "via_synset": "low.n.02"
+        }
+      ],
+      "definition": "British political cartoonist (born in New Zealand) who created the character Colonel Blimp (1891-1963)"
+    },
+    {
+      "lemma": "defraud",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "short-change.v.01",
+          "via_synset": "victimize.v.03"
+        }
+      ],
+      "definition": "deprive of by deceit"
+    },
+    {
+      "lemma": "degree",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "low.n.03",
+          "via_synset": "degree.n.01"
+        }
+      ],
+      "definition": "a position on a scale of intensity or amount or quality"
+    },
+    {
+      "lemma": "depression",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "low.n.01",
+          "via_synset": "low.n.01"
+        }
+      ],
+      "definition": "an air mass of lower pressure; often brings precipitation"
+    },
+    {
+      "lemma": "depth",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "depth.n.02"
+        }
+      ],
+      "definition": "degree of psychological or intellectual profundity"
+    },
+    {
+      "lemma": "diddle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "short-change.v.01",
+          "via_synset": "victimize.v.03"
+        }
+      ],
+      "definition": "deprive of by deceit"
+    },
+    {
+      "lemma": "dumpy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "short.a.03",
+          "via_synset": "chunky.s.02"
+        }
+      ],
+      "definition": "short and thick; as e.g. having short legs and heavy musculature"
+    },
+    {
+      "lemma": "extreme",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "extreme.n.01"
+        }
+      ],
+      "definition": "the furthest or highest degree of something"
+    },
+    {
+      "lemma": "face",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "bottom.n.01",
+          "via_synset": "side.n.04"
+        }
+      ],
+      "definition": "a surface forming part of the outside of an object"
+    },
+    {
+      "lemma": "forepart",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.04",
+          "via_synset": "front.n.01"
+        }
+      ],
+      "definition": "the side that is forward or prominent"
+    },
+    {
+      "lemma": "French heel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "heel.n.01",
+          "via_synset": "french_heel.n.01"
+        }
+      ],
+      "definition": "a fairly high narrow heel on women's shoes"
+    },
+    {
+      "lemma": "front",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.04",
+          "via_synset": "front.n.01"
+        }
+      ],
+      "definition": "the side that is forward or prominent"
+    },
+    {
+      "lemma": "front end",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.04",
+          "via_synset": "front.n.01"
+        }
+      ],
+      "definition": "the side that is forward or prominent"
+    },
+    {
+      "lemma": "gip",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "short-change.v.01",
+          "via_synset": "victimize.v.03"
+        }
+      ],
+      "definition": "deprive of by deceit"
+    },
+    {
+      "lemma": "goldbrick",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "short-change.v.01",
+          "via_synset": "victimize.v.03"
+        }
+      ],
+      "definition": "deprive of by deceit"
+    },
+    {
+      "lemma": "grade",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "low.n.03",
+          "via_synset": "degree.n.01"
+        }
+      ],
+      "definition": "a position on a scale of intensity or amount or quality"
+    },
+    {
+      "lemma": "grind",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "grind.n.02"
+        }
+      ],
+      "definition": "the grade of particle fineness to which a substance is ground"
+    },
+    {
+      "lemma": "gyp",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "short-change.v.01",
+          "via_synset": "victimize.v.03"
+        }
+      ],
+      "definition": "deprive of by deceit"
+    },
+    {
+      "lemma": "half sole",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sole.n.01",
+          "via_synset": "half_sole.n.01"
+        }
+      ],
+      "definition": "shoe sole extending from the shank to the toe"
+    },
+    {
+      "lemma": "half-length",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "short.a.03",
+          "via_synset": "half-length.s.01"
+        }
+      ],
+      "definition": "representing only the upper half of the body"
+    },
+    {
+      "lemma": "heavyset",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "short.a.03",
+          "via_synset": "compact.s.01"
+        }
+      ],
+      "definition": "having a short and solid form or stature"
+    },
+    {
+      "lemma": "heel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "bottom.n.01",
+          "via_synset": "heel.n.01"
+        }
+      ],
+      "definition": "the bottom of a shoe or boot; the back part of a shoe or boot that touches the ground and provides elevation"
+    },
+    {
+      "lemma": "heel",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "heel.n.01",
+          "via_synset": "heel.v.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "heel.n.01",
+          "via_synset": "heel.v.02"
+        }
+      ],
+      "definition": "perform with the heels"
+    },
+    {
+      "lemma": "highness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "highness.n.03"
+        }
+      ],
+      "definition": "a high degree (of amount or force etc.)"
+    },
+    {
+      "lemma": "hornswoggle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "short-change.v.01",
+          "via_synset": "victimize.v.03"
+        }
+      ],
+      "definition": "deprive of by deceit"
+    },
+    {
+      "lemma": "immoderateness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "immoderation.n.01"
+        }
+      ],
+      "definition": "the quality of being excessive and lacking in moderation"
+    },
+    {
+      "lemma": "immoderation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "immoderation.n.01"
+        }
+      ],
+      "definition": "the quality of being excessive and lacking in moderation"
+    },
+    {
+      "lemma": "innersole",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sole.n.01",
+          "via_synset": "insole.n.01"
+        }
+      ],
+      "definition": "the inner sole of a shoe or boot where the foot rests"
+    },
+    {
+      "lemma": "insole",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sole.n.01",
+          "via_synset": "insole.n.01"
+        }
+      ],
+      "definition": "the inner sole of a shoe or boot where the foot rests"
+    },
+    {
+      "lemma": "intensity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "intensity.n.02"
+        }
+      ],
+      "definition": "high level or degree; the property of being intense"
+    },
+    {
+      "lemma": "intensiveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "intensity.n.02"
+        }
+      ],
+      "definition": "high level or degree; the property of being intense"
+    },
+    {
+      "lemma": "lee",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.04",
+          "via_synset": "lee.n.08"
+        }
+      ],
+      "definition": "the side of something that is sheltered from the wind"
+    },
+    {
+      "lemma": "lee side",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.04",
+          "via_synset": "lee.n.08"
+        }
+      ],
+      "definition": "the side of something that is sheltered from the wind"
+    },
+    {
+      "lemma": "leeward",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.04",
+          "via_synset": "lee.n.08"
+        }
+      ],
+      "definition": "the side of something that is sheltered from the wind"
+    },
+    {
+      "lemma": "level",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "low.n.03",
+          "via_synset": "degree.n.01"
+        }
+      ],
+      "definition": "a position on a scale of intensity or amount or quality"
+    },
+    {
+      "lemma": "little",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "short.a.03",
+          "via_synset": "short.a.03"
+        }
+      ],
+      "definition": "low in stature; not tall"
+    },
+    {
+      "lemma": "low",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "short.a.03",
+          "via_synset": "low.a.02"
+        }
+      ],
+      "definition": "literal meanings; being at or having a relatively small elevation or upward extension"
+    },
+    {
+      "lemma": "low",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "low.n.01",
+          "via_synset": "low.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "low.n.02",
+          "via_synset": "low.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "low.n.03",
+          "via_synset": "low.n.03"
+        }
+      ],
+      "definition": "an air mass of lower pressure; often brings precipitation"
+    },
+    {
+      "lemma": "low-set",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "short.a.03",
+          "via_synset": "chunky.s.02"
+        }
+      ],
+      "definition": "short and thick; as e.g. having short legs and heavy musculature"
+    },
+    {
+      "lemma": "lowness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "lowness.n.04"
+        }
+      ],
+      "definition": "a low or small degree of any quality (amount or force or temperature etc.)"
+    },
+    {
+      "lemma": "moderateness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "moderation.n.01"
+        }
+      ],
+      "definition": "quality of being moderate and avoiding extremes"
+    },
+    {
+      "lemma": "moderation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "moderation.n.01"
+        }
+      ],
+      "definition": "quality of being moderate and avoiding extremes"
+    },
+    {
+      "lemma": "mulct",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "short-change.v.01",
+          "via_synset": "victimize.v.03"
+        }
+      ],
+      "definition": "deprive of by deceit"
+    },
+    {
+      "lemma": "nobble",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "short-change.v.01",
+          "via_synset": "victimize.v.03"
+        }
+      ],
+      "definition": "deprive of by deceit"
+    },
+    {
+      "lemma": "outsole",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sole.n.01",
+          "via_synset": "outsole.n.01"
+        }
+      ],
+      "definition": "the outer sole of a shoe or boot that is the bottom of the shoe and makes contact with the ground"
+    },
+    {
+      "lemma": "pint-size",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "short.a.03",
+          "via_synset": "pint-size.s.01"
+        }
+      ],
+      "definition": "well below average height"
+    },
+    {
+      "lemma": "pint-sized",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "short.a.03",
+          "via_synset": "pint-size.s.01"
+        }
+      ],
+      "definition": "well below average height"
+    },
+    {
+      "lemma": "quality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "quality.n.02"
+        }
+      ],
+      "definition": "a degree or grade of excellence or worth"
+    },
+    {
+      "lemma": "rear",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.04",
+          "via_synset": "rear.n.02"
+        }
+      ],
+      "definition": "the side of an object that is opposite its front"
+    },
+    {
+      "lemma": "rook",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "short-change.v.01",
+          "via_synset": "victimize.v.03"
+        }
+      ],
+      "definition": "deprive of by deceit"
+    },
+    {
+      "lemma": "runty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "short.a.03",
+          "via_synset": "pint-size.s.01"
+        }
+      ],
+      "definition": "well below average height"
+    },
+    {
+      "lemma": "sawed-off",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "short.a.03",
+          "via_synset": "pint-size.s.01"
+        }
+      ],
+      "definition": "well below average height"
+    },
+    {
+      "lemma": "sawn-off",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "short.a.03",
+          "via_synset": "pint-size.s.01"
+        }
+      ],
+      "definition": "well below average height"
+    },
+    {
+      "lemma": "scam",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "short-change.v.01",
+          "via_synset": "victimize.v.03"
+        }
+      ],
+      "definition": "deprive of by deceit"
+    },
+    {
+      "lemma": "short",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "short.a.03",
+          "via_synset": "short.a.03"
+        }
+      ],
+      "definition": "low in stature; not tall"
+    },
+    {
+      "lemma": "short",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "short-change.v.01",
+          "via_synset": "short-change.v.01"
+        }
+      ],
+      "definition": "cheat someone by not returning him enough money"
+    },
+    {
+      "lemma": "short-change",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "short-change.v.01",
+          "via_synset": "short-change.v.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "short-change.v.01",
+          "via_synset": "victimize.v.03"
+        }
+      ],
+      "definition": "cheat someone by not returning him enough money"
+    },
+    {
+      "lemma": "short-stalked",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "short.a.03",
+          "via_synset": "short-stalked.s.01"
+        }
+      ],
+      "definition": "of plants having relatively short stalks"
+    },
+    {
+      "lemma": "shortness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "short.a.03",
+          "via_synset": "shortness.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "short.a.03",
+          "via_synset": "shortness.n.05"
+        }
+      ],
+      "definition": "the property of being truncated or short"
+    },
+    {
+      "lemma": "side",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "bottom.n.01",
+          "via_synset": "side.n.04"
+        }
+      ],
+      "definition": "a surface forming part of the outside of an object"
+    },
+    {
+      "lemma": "Sir David Alexander Cecil Low",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "low.n.02",
+          "via_synset": "low.n.02"
+        }
+      ],
+      "definition": "British political cartoonist (born in New Zealand) who created the character Colonel Blimp (1891-1963)"
+    },
+    {
+      "lemma": "Sir David Low",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "low.n.02",
+          "via_synset": "low.n.02"
+        }
+      ],
+      "definition": "British political cartoonist (born in New Zealand) who created the character Colonel Blimp (1891-1963)"
+    },
+    {
+      "lemma": "sole",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "bottom.n.01",
+          "via_synset": "sole.n.01"
+        }
+      ],
+      "definition": "the underside of footwear or a golf club"
+    },
+    {
+      "lemma": "sole",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sole.n.01",
+          "via_synset": "sole.v.01"
+        }
+      ],
+      "definition": "put a new sole on"
+    },
+    {
+      "lemma": "SPF",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "sun_protection_factor.n.01"
+        }
+      ],
+      "definition": "the degree to which a sunscreen protects the skin from the direct rays of the sun"
+    },
+    {
+      "lemma": "spike",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "heel.n.01",
+          "via_synset": "spike_heel.n.01"
+        }
+      ],
+      "definition": "a very high narrow heel on women's shoes"
+    },
+    {
+      "lemma": "spike heel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "heel.n.01",
+          "via_synset": "spike_heel.n.01"
+        }
+      ],
+      "definition": "a very high narrow heel on women's shoes"
+    },
+    {
+      "lemma": "squab",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "short.a.03",
+          "via_synset": "squab.s.01"
+        }
+      ],
+      "definition": "short and fat"
+    },
+    {
+      "lemma": "squabby",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "short.a.03",
+          "via_synset": "squab.s.01"
+        }
+      ],
+      "definition": "short and fat"
+    },
+    {
+      "lemma": "squat",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "short.a.03",
+          "via_synset": "chunky.s.02"
+        }
+      ],
+      "definition": "short and thick; as e.g. having short legs and heavy musculature"
+    },
+    {
+      "lemma": "squatty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "short.a.03",
+          "via_synset": "chunky.s.02"
+        }
+      ],
+      "definition": "short and thick; as e.g. having short legs and heavy musculature"
+    },
+    {
+      "lemma": "stacked heel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "heel.n.01",
+          "via_synset": "stacked_heel.n.01"
+        }
+      ],
+      "definition": "a heel made of many layers of leather"
+    },
+    {
+      "lemma": "stiletto heel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "heel.n.01",
+          "via_synset": "spike_heel.n.01"
+        }
+      ],
+      "definition": "a very high narrow heel on women's shoes"
+    },
+    {
+      "lemma": "stocky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "short.a.03",
+          "via_synset": "compact.s.01"
+        }
+      ],
+      "definition": "having a short and solid form or stature"
+    },
+    {
+      "lemma": "stumpy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "short.a.03",
+          "via_synset": "chunky.s.02"
+        }
+      ],
+      "definition": "short and thick; as e.g. having short legs and heavy musculature"
+    },
+    {
+      "lemma": "sun protection factor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "sun_protection_factor.n.01"
+        }
+      ],
+      "definition": "the degree to which a sunscreen protects the skin from the direct rays of the sun"
+    },
+    {
+      "lemma": "swindle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "short-change.v.01",
+          "via_synset": "victimize.v.03"
+        }
+      ],
+      "definition": "deprive of by deceit"
+    },
+    {
+      "lemma": "thick",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "short.a.03",
+          "via_synset": "compact.s.01"
+        }
+      ],
+      "definition": "having a short and solid form or stature"
+    },
+    {
+      "lemma": "thickset",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "short.a.03",
+          "via_synset": "compact.s.01"
+        }
+      ],
+      "definition": "having a short and solid form or stature"
+    },
+    {
+      "lemma": "top",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.04",
+          "via_synset": "top.n.02"
+        }
+      ],
+      "definition": "the highest or uppermost side of anything"
+    },
+    {
+      "lemma": "top side",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.04",
+          "via_synset": "top.n.02"
+        }
+      ],
+      "definition": "the highest or uppermost side of anything"
+    },
+    {
+      "lemma": "underbelly",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "bottom.n.01",
+          "via_synset": "underbelly.n.01"
+        }
+      ],
+      "definition": "lower side"
+    },
+    {
+      "lemma": "underside",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bottom.n.01",
+          "via_synset": "bottom.n.01"
+        }
+      ],
+      "definition": "the lower side of anything"
+    },
+    {
+      "lemma": "undersurface",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bottom.n.01",
+          "via_synset": "bottom.n.01"
+        }
+      ],
+      "definition": "the lower side of anything"
+    },
+    {
+      "lemma": "upper side",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.04",
+          "via_synset": "top.n.02"
+        }
+      ],
+      "definition": "the highest or uppermost side of anything"
+    },
+    {
+      "lemma": "upside",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.04",
+          "via_synset": "top.n.02"
+        }
+      ],
+      "definition": "the highest or uppermost side of anything"
+    },
+    {
+      "lemma": "victimize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "short-change.v.01",
+          "via_synset": "victimize.v.03"
+        }
+      ],
+      "definition": "deprive of by deceit"
+    },
+    {
+      "lemma": "wedge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "heel.n.01",
+          "via_synset": "wedge_heel.n.01"
+        }
+      ],
+      "definition": "a heel that is an extension of the sole of the shoe"
+    },
+    {
+      "lemma": "wedge heel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "heel.n.01",
+          "via_synset": "wedge_heel.n.01"
+        }
+      ],
+      "definition": "a heel that is an extension of the sole of the shoe"
+    },
+    {
+      "lemma": "windward",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "side.n.04",
+          "via_synset": "windward.n.02"
+        }
+      ],
+      "definition": "the side of something that is toward the wind"
+    },
+    {
+      "lemma": "wineglass heel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "heel.n.01",
+          "via_synset": "wineglass_heel.n.01"
+        }
+      ],
+      "definition": "a heel on a woman's shoe in the shape of a wineglass"
+    }
+  ]
+}

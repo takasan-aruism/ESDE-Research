@@ -1,0 +1,675 @@
+{
+  "atom_id": "PER.bitter",
+  "category": "PER",
+  "seed_count": 6,
+  "total_keys": 38,
+  "pos_counts": {
+    "n": 30,
+    "adj": 6,
+    "v": 2
+  },
+  "source_counts": {
+    "0_seed": 9,
+    "6_derivational": 11,
+    "2_hypernym_d1": 2,
+    "3_hyponym_d1": 3,
+    "7_similar_to": 2,
+    "10_sibling": 20
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 7,
+      "words": [
+        "bitterness(n)",
+        "bitter(n)",
+        "bitter(adj)",
+        "harsh(adj)",
+        "rough(adj)",
+        "pungent(adj)",
+        "acrid(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 2,
+      "words": [
+        "taste property(n)",
+        "ale(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 3,
+      "words": [
+        "acerbity(n)",
+        "acridity(n)",
+        "acridness(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 5,
+      "words": [
+        "harshness(n)",
+        "acerbate(v)",
+        "pungency(n)",
+        "roughness(n)",
+        "bitter(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 1,
+      "words": [
+        "unpleasant(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 20,
+      "words": [
+        "spiciness(n)",
+        "spice(n)",
+        "spicery(n)",
+        "rancidness(n)",
+        "palatability(n)",
+        "palatableness(n)",
+        "unpalatability(n)",
+        "unpalatableness(n)",
+        "sweetness(n)",
+        "sourness(n)",
+        "sour(n)",
+        "acidity(n)",
+        "Burton(n)",
+        "stout(n)",
+        "Weissbier(n)",
+        "white beer(n)",
+        "wheat beer(n)",
+        "porter(n)",
+        "porter's beer(n)",
+        "pale ale(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "acerbate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "acerbity.n.01",
+          "via_synset": "acerbate.v.02"
+        }
+      ],
+      "definition": "make sour or bitter"
+    },
+    {
+      "lemma": "acerbity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "bitterness.n.04",
+          "via_synset": "acerbity.n.01"
+        }
+      ],
+      "definition": "a sharp bitterness"
+    },
+    {
+      "lemma": "acidity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "taste_property.n.01",
+          "via_synset": "sourness.n.02"
+        }
+      ],
+      "definition": "the property of being acidic"
+    },
+    {
+      "lemma": "acrid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pungent.s.01",
+          "via_synset": "pungent.s.01"
+        }
+      ],
+      "definition": "strong and sharp"
+    },
+    {
+      "lemma": "acridity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "bitterness.n.04",
+          "via_synset": "acridity.n.02"
+        }
+      ],
+      "definition": "extreme bitterness"
+    },
+    {
+      "lemma": "acridness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "bitterness.n.04",
+          "via_synset": "acridity.n.02"
+        }
+      ],
+      "definition": "extreme bitterness"
+    },
+    {
+      "lemma": "ale",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "bitter.n.01",
+          "via_synset": "ale.n.01"
+        }
+      ],
+      "definition": "a general name for beer made with a top fermenting yeast; in some of the United States an ale is (by law) a brew of more than 4% alcohol by volume"
+    },
+    {
+      "lemma": "bitter",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bitter.s.06",
+          "via_synset": "bitter.s.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bitterness.n.04",
+          "via_synset": "bitter.s.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bitter.n.01",
+          "via_synset": "bitter.s.06"
+        }
+      ],
+      "definition": "causing a sharp and acrid taste experience"
+    },
+    {
+      "lemma": "bitter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bitterness.n.04",
+          "via_synset": "bitterness.n.04"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bitter.n.01",
+          "via_synset": "bitter.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bitter.s.06",
+          "via_synset": "bitter.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bitter.s.06",
+          "via_synset": "bitter.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bitter.s.06",
+          "via_synset": "bitterness.n.04"
+        }
+      ],
+      "definition": "the property of having a harsh unpleasant taste"
+    },
+    {
+      "lemma": "bitter",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bitterness.n.04",
+          "via_synset": "bitter.v.01"
+        }
+      ],
+      "definition": "make bitter"
+    },
+    {
+      "lemma": "bitterness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bitterness.n.04",
+          "via_synset": "bitterness.n.04"
+        }
+      ],
+      "definition": "the property of having a harsh unpleasant taste"
+    },
+    {
+      "lemma": "Burton",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ale.n.01",
+          "via_synset": "burton.n.03"
+        }
+      ],
+      "definition": "a strong dark English ale"
+    },
+    {
+      "lemma": "harsh",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "harsh.s.01",
+          "via_synset": "harsh.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "harsh.s.02",
+          "via_synset": "harsh.s.02"
+        }
+      ],
+      "definition": "unpleasantly stern"
+    },
+    {
+      "lemma": "harshness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "harsh.s.02",
+          "via_synset": "harshness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "harsh.s.01",
+          "via_synset": "severity.n.04"
+        }
+      ],
+      "definition": "the quality of being unpleasant (harsh or rough or grating) to the senses"
+    },
+    {
+      "lemma": "palatability",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "taste_property.n.01",
+          "via_synset": "palatability.n.01"
+        }
+      ],
+      "definition": "the property of being acceptable to the mouth"
+    },
+    {
+      "lemma": "palatableness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "taste_property.n.01",
+          "via_synset": "palatability.n.01"
+        }
+      ],
+      "definition": "the property of being acceptable to the mouth"
+    },
+    {
+      "lemma": "pale ale",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ale.n.01",
+          "via_synset": "pale_ale.n.01"
+        }
+      ],
+      "definition": "an amber colored ale brewed with pale malts; similar to bitter but drier and lighter"
+    },
+    {
+      "lemma": "porter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ale.n.01",
+          "via_synset": "porter.n.07"
+        }
+      ],
+      "definition": "a very dark sweet ale brewed from roasted unmalted barley"
+    },
+    {
+      "lemma": "porter's beer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ale.n.01",
+          "via_synset": "porter.n.07"
+        }
+      ],
+      "definition": "a very dark sweet ale brewed from roasted unmalted barley"
+    },
+    {
+      "lemma": "pungency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pungent.s.01",
+          "via_synset": "pungency.n.02"
+        }
+      ],
+      "definition": "a strong odor or taste property"
+    },
+    {
+      "lemma": "pungent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pungent.s.01",
+          "via_synset": "pungent.s.01"
+        }
+      ],
+      "definition": "strong and sharp"
+    },
+    {
+      "lemma": "rancidness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "taste_property.n.01",
+          "via_synset": "rancidness.n.01"
+        }
+      ],
+      "definition": "the property of being rancid"
+    },
+    {
+      "lemma": "rough",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "harsh.s.01",
+          "via_synset": "harsh.s.01"
+        }
+      ],
+      "definition": "unpleasantly stern"
+    },
+    {
+      "lemma": "roughness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "harsh.s.01",
+          "via_synset": "crudeness.n.03"
+        }
+      ],
+      "definition": "an unpolished unrefined quality"
+    },
+    {
+      "lemma": "sour",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "taste_property.n.01",
+          "via_synset": "sourness.n.02"
+        }
+      ],
+      "definition": "the property of being acidic"
+    },
+    {
+      "lemma": "sourness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "taste_property.n.01",
+          "via_synset": "sourness.n.02"
+        }
+      ],
+      "definition": "the property of being acidic"
+    },
+    {
+      "lemma": "spice",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "taste_property.n.01",
+          "via_synset": "spiciness.n.01"
+        }
+      ],
+      "definition": "the property of being seasoned with spice and so highly flavored"
+    },
+    {
+      "lemma": "spicery",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "taste_property.n.01",
+          "via_synset": "spiciness.n.01"
+        }
+      ],
+      "definition": "the property of being seasoned with spice and so highly flavored"
+    },
+    {
+      "lemma": "spiciness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "taste_property.n.01",
+          "via_synset": "spiciness.n.01"
+        }
+      ],
+      "definition": "the property of being seasoned with spice and so highly flavored"
+    },
+    {
+      "lemma": "stout",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ale.n.01",
+          "via_synset": "stout.n.01"
+        }
+      ],
+      "definition": "a strong very dark heavy-bodied ale made from pale malt and roasted unmalted barley and (often) caramel malt with hops"
+    },
+    {
+      "lemma": "sweetness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "taste_property.n.01",
+          "via_synset": "sweetness.n.02"
+        }
+      ],
+      "definition": "the property of tasting as if it contains sugar"
+    },
+    {
+      "lemma": "taste property",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "bitterness.n.04",
+          "via_synset": "taste_property.n.01"
+        }
+      ],
+      "definition": "a property appreciated via the sense of taste"
+    },
+    {
+      "lemma": "unpalatability",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "taste_property.n.01",
+          "via_synset": "unpalatability.n.01"
+        }
+      ],
+      "definition": "the property of being unacceptable to the mouth"
+    },
+    {
+      "lemma": "unpalatableness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "taste_property.n.01",
+          "via_synset": "unpalatability.n.01"
+        }
+      ],
+      "definition": "the property of being unacceptable to the mouth"
+    },
+    {
+      "lemma": "unpleasant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "harsh.s.02",
+          "via_synset": "unpleasant.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "harsh.s.01",
+          "via_synset": "unpleasant.a.01"
+        }
+      ],
+      "definition": "disagreeable to the senses, to the mind, or feelings"
+    },
+    {
+      "lemma": "Weissbier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ale.n.01",
+          "via_synset": "weissbier.n.01"
+        }
+      ],
+      "definition": "a general name for beers made from wheat by top fermentation; usually very pale and cloudy and effervescent"
+    },
+    {
+      "lemma": "wheat beer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ale.n.01",
+          "via_synset": "weissbier.n.01"
+        }
+      ],
+      "definition": "a general name for beers made from wheat by top fermentation; usually very pale and cloudy and effervescent"
+    },
+    {
+      "lemma": "white beer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ale.n.01",
+          "via_synset": "weissbier.n.01"
+        }
+      ],
+      "definition": "a general name for beers made from wheat by top fermentation; usually very pale and cloudy and effervescent"
+    }
+  ]
+}

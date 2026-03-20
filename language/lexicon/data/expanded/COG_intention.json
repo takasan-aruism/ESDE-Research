@@ -1,0 +1,1957 @@
+{
+  "atom_id": "COG.intention",
+  "category": "COG",
+  "seed_count": 6,
+  "total_keys": 111,
+  "pos_counts": {
+    "n": 34,
+    "v": 75,
+    "adj": 2
+  },
+  "source_counts": {
+    "0_seed": 18,
+    "6_derivational": 38,
+    "10_sibling": 66,
+    "3_hyponym_d1": 24,
+    "2_hypernym_d1": 9,
+    "4_hyponym_d2": 7,
+    "5_hyponym_d3": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 15,
+      "words": [
+        "purpose(n)",
+        "intent(n)",
+        "intention(n)",
+        "aim(n)",
+        "design(n)",
+        "intend(v)",
+        "mean(v)",
+        "think(v)",
+        "destine(v)",
+        "designate(v)",
+        "specify(v)",
+        "plan(v)",
+        "project(v)",
+        "contrive(v)",
+        "design(v)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 6,
+      "words": [
+        "goal(n)",
+        "end(n)",
+        "volition(n)",
+        "willing(n)",
+        "create by mental act(v)",
+        "create mentally(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 19,
+      "words": [
+        "view(n)",
+        "cross-purpose(n)",
+        "sake(n)",
+        "mind(n)",
+        "idea(n)",
+        "will(n)",
+        "final cause(n)",
+        "be after(v)",
+        "aim(v)",
+        "purpose(v)",
+        "purport(v)",
+        "propose(v)",
+        "calculate(v)",
+        "direct(v)",
+        "slate(v)",
+        "map(v)",
+        "map out(v)",
+        "concert(v)",
+        "plot(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 6,
+      "words": [
+        "draw a bead on(v)",
+        "aspire(v)",
+        "shoot for(v)",
+        "hope(v)",
+        "go for(v)",
+        "think out(v)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 1,
+      "words": [
+        "overshoot(v)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 15,
+      "words": [
+        "purport(n)",
+        "destination(n)",
+        "hoper(n)",
+        "aspirant(adj)",
+        "aspiration(n)",
+        "aspirant(n)",
+        "aspirer(n)",
+        "plan(n)",
+        "planner(n)",
+        "planning(n)",
+        "project(n)",
+        "contriver(n)",
+        "will(v)",
+        "intentional(adj)",
+        "mind(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 49,
+      "words": [
+        "objective(n)",
+        "target(n)",
+        "no-goal(n)",
+        "bourn(n)",
+        "bourne(n)",
+        "terminus(n)",
+        "end-all(n)",
+        "scheme(v)",
+        "frame(v)",
+        "compose(v)",
+        "draw up(v)",
+        "mastermind(v)",
+        "engineer(v)",
+        "organize(v)",
+        "organise(v)",
+        "orchestrate(v)",
+        "lay out(v)",
+        "schedule(v)",
+        "chart(v)",
+        "evolve(v)",
+        "germinate(v)",
+        "develop(v)",
+        "schematize(v)",
+        "think up(v)",
+        "think of(v)",
+        "dream up(v)",
+        "hatch(v)",
+        "concoct(v)",
+        "imagine(v)",
+        "conceive of(v)",
+        "ideate(v)",
+        "envisage(v)",
+        "gestate(v)",
+        "conceive(v)",
+        "conceptualize(v)",
+        "conceptualise(v)",
+        "write(v)",
+        "invent(v)",
+        "devise(v)",
+        "excogitate(v)",
+        "formulate(v)",
+        "forge(v)",
+        "construct(v)",
+        "re-create(v)",
+        "program(v)",
+        "programme(v)",
+        "give birth(v)",
+        "draw(v)",
+        "make(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "aim",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "purpose.n.01",
+          "via_synset": "purpose.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aim.v.02",
+          "via_synset": "aim.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aim.v.02",
+          "via_synset": "purpose.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "goal.n.01",
+          "via_synset": "aim.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "goal.n.01",
+          "via_synset": "purpose.n.01"
+        }
+      ],
+      "definition": "an anticipated outcome that is intended or that guides your planned actions"
+    },
+    {
+      "lemma": "aim",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intend.v.01",
+          "via_synset": "aim.v.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intend.v.02",
+          "via_synset": "calculate.v.05"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "plan.v.01",
+          "via_synset": "draw_a_bead_on.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "purpose.n.01",
+          "via_synset": "aim.v.02"
+        }
+      ],
+      "definition": "propose or intend"
+    },
+    {
+      "lemma": "aspirant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "draw_a_bead_on.v.02",
+          "via_synset": "aspirant.s.01"
+        }
+      ],
+      "definition": "desiring or striving for recognition or advancement"
+    },
+    {
+      "lemma": "aspirant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "draw_a_bead_on.v.02",
+          "via_synset": "aspirant.n.01"
+        }
+      ],
+      "definition": "an ambitious and aspiring young person"
+    },
+    {
+      "lemma": "aspiration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "draw_a_bead_on.v.02",
+          "via_synset": "ambition.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "draw_a_bead_on.v.02",
+          "via_synset": "aspiration.n.01"
+        }
+      ],
+      "definition": "a cherished desire"
+    },
+    {
+      "lemma": "aspire",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "plan.v.01",
+          "via_synset": "draw_a_bead_on.v.02"
+        }
+      ],
+      "definition": "have an ambitious plan or a lofty goal"
+    },
+    {
+      "lemma": "aspirer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "draw_a_bead_on.v.02",
+          "via_synset": "aspirant.n.01"
+        }
+      ],
+      "definition": "an ambitious and aspiring young person"
+    },
+    {
+      "lemma": "be after",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intend.v.01",
+          "via_synset": "plan.v.01"
+        }
+      ],
+      "definition": "have the will and intention to carry out some action"
+    },
+    {
+      "lemma": "bourn",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "goal.n.01",
+          "via_synset": "bourn.n.02"
+        }
+      ],
+      "definition": "an archaic term for a goal or destination"
+    },
+    {
+      "lemma": "bourne",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "goal.n.01",
+          "via_synset": "bourn.n.02"
+        }
+      ],
+      "definition": "an archaic term for a goal or destination"
+    },
+    {
+      "lemma": "calculate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intend.v.02",
+          "via_synset": "calculate.v.05"
+        }
+      ],
+      "definition": "specifically design a product, event, or activity for a certain public"
+    },
+    {
+      "lemma": "chart",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plan.v.02",
+          "via_synset": "chart.v.02"
+        }
+      ],
+      "definition": "plan in detail"
+    },
+    {
+      "lemma": "compose",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plan.v.02",
+          "via_synset": "frame.v.05"
+        }
+      ],
+      "definition": "make up plans or basic details for"
+    },
+    {
+      "lemma": "conceive",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "gestate.v.01"
+        }
+      ],
+      "definition": "have the idea for"
+    },
+    {
+      "lemma": "conceive of",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "imagine.v.01"
+        }
+      ],
+      "definition": "form a mental image of something that is not present or that is not the case"
+    },
+    {
+      "lemma": "conceptualise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "gestate.v.01"
+        }
+      ],
+      "definition": "have the idea for"
+    },
+    {
+      "lemma": "conceptualize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "gestate.v.01"
+        }
+      ],
+      "definition": "have the idea for"
+    },
+    {
+      "lemma": "concert",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "plan.v.03",
+          "via_synset": "concert.v.01"
+        }
+      ],
+      "definition": "contrive (a plan) by mutual agreement"
+    },
+    {
+      "lemma": "concoct",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "think_up.v.01"
+        }
+      ],
+      "definition": "devise or invent"
+    },
+    {
+      "lemma": "construct",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "construct.v.04"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "construct.v.05"
+        }
+      ],
+      "definition": "create by linking linguistic units"
+    },
+    {
+      "lemma": "contrive",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "plan.v.03",
+          "via_synset": "plan.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "invent.v.01"
+        }
+      ],
+      "definition": "make or work out a plan for; devise"
+    },
+    {
+      "lemma": "contriver",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "plan.v.03",
+          "via_synset": "planner.n.01"
+        }
+      ],
+      "definition": "a person who makes plans"
+    },
+    {
+      "lemma": "create by mental act",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "plan.v.03",
+          "via_synset": "create_by_mental_act.v.01"
+        }
+      ],
+      "definition": "create mentally and abstractly rather than with one's hands"
+    },
+    {
+      "lemma": "create mentally",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "plan.v.03",
+          "via_synset": "create_by_mental_act.v.01"
+        }
+      ],
+      "definition": "create mentally and abstractly rather than with one's hands"
+    },
+    {
+      "lemma": "cross-purpose",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "purpose.n.01",
+          "via_synset": "cross-purpose.n.01"
+        }
+      ],
+      "definition": "a contrary aim"
+    },
+    {
+      "lemma": "design",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "purpose.n.01",
+          "via_synset": "purpose.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "design.v.02",
+          "via_synset": "design.n.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "design.v.02",
+          "via_synset": "design.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "design.v.02",
+          "via_synset": "design.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "plan.v.03",
+          "via_synset": "invention.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "plan.v.03",
+          "via_synset": "purpose.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "plan.v.03",
+          "via_synset": "design.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "design.v.07",
+          "via_synset": "purpose.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "goal.n.01",
+          "via_synset": "purpose.n.01"
+        }
+      ],
+      "definition": "an anticipated outcome that is intended or that guides your planned actions"
+    },
+    {
+      "lemma": "design",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "plan.v.03",
+          "via_synset": "plan.v.03"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intend.v.01",
+          "via_synset": "design.v.07"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intend.v.02",
+          "via_synset": "design.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "purpose.n.01",
+          "via_synset": "design.v.07"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "purpose.n.01",
+          "via_synset": "design.v.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "purpose.n.01",
+          "via_synset": "plan.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "design.v.04"
+        }
+      ],
+      "definition": "make or work out a plan for; devise"
+    },
+    {
+      "lemma": "designate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "intend.v.02",
+          "via_synset": "intend.v.02"
+        }
+      ],
+      "definition": "design or destine"
+    },
+    {
+      "lemma": "destination",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "intend.v.02",
+          "via_synset": "destination.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "goal.n.01",
+          "via_synset": "destination.n.02"
+        }
+      ],
+      "definition": "the ultimate goal for which something is done"
+    },
+    {
+      "lemma": "destine",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "intend.v.02",
+          "via_synset": "intend.v.02"
+        }
+      ],
+      "definition": "design or destine"
+    },
+    {
+      "lemma": "develop",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "evolve.v.01"
+        }
+      ],
+      "definition": "work out"
+    },
+    {
+      "lemma": "devise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "invent.v.01"
+        }
+      ],
+      "definition": "come up with (an idea, plan, explanation, theory, or principle) after a mental effort"
+    },
+    {
+      "lemma": "direct",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intend.v.02",
+          "via_synset": "calculate.v.05"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plan.v.02",
+          "via_synset": "mastermind.v.01"
+        }
+      ],
+      "definition": "specifically design a product, event, or activity for a certain public"
+    },
+    {
+      "lemma": "draw",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "draw.v.04"
+        }
+      ],
+      "definition": "make, formulate, or derive in the mind"
+    },
+    {
+      "lemma": "draw a bead on",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "plan.v.01",
+          "via_synset": "draw_a_bead_on.v.02"
+        }
+      ],
+      "definition": "have an ambitious plan or a lofty goal"
+    },
+    {
+      "lemma": "draw up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plan.v.02",
+          "via_synset": "frame.v.05"
+        }
+      ],
+      "definition": "make up plans or basic details for"
+    },
+    {
+      "lemma": "dream up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "think_up.v.01"
+        }
+      ],
+      "definition": "devise or invent"
+    },
+    {
+      "lemma": "end",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "purpose.n.01",
+          "via_synset": "goal.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "intention.n.02",
+          "via_synset": "goal.n.01"
+        }
+      ],
+      "definition": "the state of affairs that a plan is intended to achieve and that (when achieved) terminates behavior intended to achieve it"
+    },
+    {
+      "lemma": "end-all",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "goal.n.01",
+          "via_synset": "end-all.n.01"
+        }
+      ],
+      "definition": "the ultimate goal"
+    },
+    {
+      "lemma": "engineer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plan.v.02",
+          "via_synset": "mastermind.v.01"
+        }
+      ],
+      "definition": "plan and direct (a complex undertaking)"
+    },
+    {
+      "lemma": "envisage",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "imagine.v.01"
+        }
+      ],
+      "definition": "form a mental image of something that is not present or that is not the case"
+    },
+    {
+      "lemma": "evolve",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "evolve.v.01"
+        }
+      ],
+      "definition": "work out"
+    },
+    {
+      "lemma": "excogitate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "invent.v.01"
+        }
+      ],
+      "definition": "come up with (an idea, plan, explanation, theory, or principle) after a mental effort"
+    },
+    {
+      "lemma": "final cause",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "purpose.n.01",
+          "via_synset": "final_cause.n.01"
+        }
+      ],
+      "definition": "(philosophy) the end or purpose of a thing or process"
+    },
+    {
+      "lemma": "forge",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "invent.v.01"
+        }
+      ],
+      "definition": "come up with (an idea, plan, explanation, theory, or principle) after a mental effort"
+    },
+    {
+      "lemma": "formulate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "invent.v.01"
+        }
+      ],
+      "definition": "come up with (an idea, plan, explanation, theory, or principle) after a mental effort"
+    },
+    {
+      "lemma": "frame",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plan.v.02",
+          "via_synset": "frame.v.05"
+        }
+      ],
+      "definition": "make up plans or basic details for"
+    },
+    {
+      "lemma": "germinate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "evolve.v.01"
+        }
+      ],
+      "definition": "work out"
+    },
+    {
+      "lemma": "gestate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "gestate.v.01"
+        }
+      ],
+      "definition": "have the idea for"
+    },
+    {
+      "lemma": "give birth",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "give_birth.v.02"
+        }
+      ],
+      "definition": "create or produce an idea"
+    },
+    {
+      "lemma": "go for",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "plan.v.01",
+          "via_synset": "hope.v.03"
+        }
+      ],
+      "definition": "intend with some possibility of fulfilment"
+    },
+    {
+      "lemma": "goal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "purpose.n.01",
+          "via_synset": "goal.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "intention.n.02",
+          "via_synset": "goal.n.01"
+        }
+      ],
+      "definition": "the state of affairs that a plan is intended to achieve and that (when achieved) terminates behavior intended to achieve it"
+    },
+    {
+      "lemma": "hatch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "think_up.v.01"
+        }
+      ],
+      "definition": "devise or invent"
+    },
+    {
+      "lemma": "hope",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "plan.v.01",
+          "via_synset": "hope.v.03"
+        }
+      ],
+      "definition": "intend with some possibility of fulfilment"
+    },
+    {
+      "lemma": "hoper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hope.v.03",
+          "via_synset": "hoper.n.01"
+        }
+      ],
+      "definition": "a person who hopes"
+    },
+    {
+      "lemma": "idea",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "purpose.n.01",
+          "via_synset": "mind.n.06"
+        }
+      ],
+      "definition": "your intention; what you intend to do"
+    },
+    {
+      "lemma": "ideate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "imagine.v.01"
+        }
+      ],
+      "definition": "form a mental image of something that is not present or that is not the case"
+    },
+    {
+      "lemma": "imagine",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "imagine.v.01"
+        }
+      ],
+      "definition": "form a mental image of something that is not present or that is not the case"
+    },
+    {
+      "lemma": "intend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "intend.v.01",
+          "via_synset": "intend.v.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "intend.v.02",
+          "via_synset": "intend.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "purpose.n.01",
+          "via_synset": "intend.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "intention.n.03",
+          "via_synset": "intend.v.01"
+        }
+      ],
+      "definition": "have in mind as a purpose"
+    },
+    {
+      "lemma": "intent",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "purpose.n.01",
+          "via_synset": "purpose.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "intend.v.01",
+          "via_synset": "purpose.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "goal.n.01",
+          "via_synset": "purpose.n.01"
+        }
+      ],
+      "definition": "an anticipated outcome that is intended or that guides your planned actions"
+    },
+    {
+      "lemma": "intention",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "purpose.n.01",
+          "via_synset": "purpose.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "intention.n.03",
+          "via_synset": "intention.n.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "intention.n.02",
+          "via_synset": "intention.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "intend.v.01",
+          "via_synset": "intention.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "goal.n.01",
+          "via_synset": "intention.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "goal.n.01",
+          "via_synset": "purpose.n.01"
+        }
+      ],
+      "definition": "an anticipated outcome that is intended or that guides your planned actions"
+    },
+    {
+      "lemma": "intentional",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "intention.n.02",
+          "via_synset": "intentional.s.01"
+        }
+      ],
+      "definition": "characterized by conscious design or purpose"
+    },
+    {
+      "lemma": "invent",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "invent.v.01"
+        }
+      ],
+      "definition": "come up with (an idea, plan, explanation, theory, or principle) after a mental effort"
+    },
+    {
+      "lemma": "lay out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plan.v.02",
+          "via_synset": "lay_out.v.05"
+        }
+      ],
+      "definition": "provide a detailed plan or design"
+    },
+    {
+      "lemma": "make",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "draw.v.04"
+        }
+      ],
+      "definition": "make, formulate, or derive in the mind"
+    },
+    {
+      "lemma": "map",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "plan.v.03",
+          "via_synset": "map.v.04"
+        }
+      ],
+      "definition": "plan, delineate, or arrange in detail"
+    },
+    {
+      "lemma": "map out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "plan.v.03",
+          "via_synset": "map.v.04"
+        }
+      ],
+      "definition": "plan, delineate, or arrange in detail"
+    },
+    {
+      "lemma": "mastermind",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plan.v.02",
+          "via_synset": "mastermind.v.01"
+        }
+      ],
+      "definition": "plan and direct (a complex undertaking)"
+    },
+    {
+      "lemma": "mean",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "intend.v.01",
+          "via_synset": "intend.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intend.v.02",
+          "via_synset": "mean.v.07"
+        }
+      ],
+      "definition": "have in mind as a purpose"
+    },
+    {
+      "lemma": "mind",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "purpose.n.01",
+          "via_synset": "mind.n.06"
+        }
+      ],
+      "definition": "your intention; what you intend to do"
+    },
+    {
+      "lemma": "mind",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mind.n.06",
+          "via_synset": "mind.v.02"
+        }
+      ],
+      "definition": "be concerned with or about something or somebody"
+    },
+    {
+      "lemma": "no-goal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "goal.n.01",
+          "via_synset": "no-goal.n.01"
+        }
+      ],
+      "definition": "a nonexistent goal"
+    },
+    {
+      "lemma": "objective",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "goal.n.01",
+          "via_synset": "aim.n.02"
+        }
+      ],
+      "definition": "the goal intended to be attained (and which is believed to be attainable)"
+    },
+    {
+      "lemma": "orchestrate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plan.v.02",
+          "via_synset": "mastermind.v.01"
+        }
+      ],
+      "definition": "plan and direct (a complex undertaking)"
+    },
+    {
+      "lemma": "organise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plan.v.02",
+          "via_synset": "mastermind.v.01"
+        }
+      ],
+      "definition": "plan and direct (a complex undertaking)"
+    },
+    {
+      "lemma": "organize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plan.v.02",
+          "via_synset": "mastermind.v.01"
+        }
+      ],
+      "definition": "plan and direct (a complex undertaking)"
+    },
+    {
+      "lemma": "overshoot",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "draw_a_bead_on.v.02",
+          "via_synset": "overshoot.v.02"
+        }
+      ],
+      "definition": "aim too high"
+    },
+    {
+      "lemma": "plan",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "plan.v.03",
+          "via_synset": "design.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "plan.v.03",
+          "via_synset": "plan.n.01"
+        }
+      ],
+      "definition": "an arrangement scheme"
+    },
+    {
+      "lemma": "plan",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "plan.v.03",
+          "via_synset": "plan.v.03"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "intend.v.02",
+          "via_synset": "plan.v.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intend.v.01",
+          "via_synset": "plan.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "design.v.04"
+        }
+      ],
+      "definition": "make or work out a plan for; devise"
+    },
+    {
+      "lemma": "planner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "plan.v.03",
+          "via_synset": "planner.n.01"
+        }
+      ],
+      "definition": "a person who makes plans"
+    },
+    {
+      "lemma": "planning",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "plan.v.03",
+          "via_synset": "planning.n.03"
+        }
+      ],
+      "definition": "the cognitive process of thinking about what you will do in the event of something happening"
+    },
+    {
+      "lemma": "plot",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "plan.v.03",
+          "via_synset": "plot.v.04"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plan.v.02",
+          "via_synset": "plot.v.01"
+        }
+      ],
+      "definition": "devise the sequence of events in (a literary work or a play, movie, or ballet)"
+    },
+    {
+      "lemma": "program",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "program.v.02"
+        }
+      ],
+      "definition": "write a computer program"
+    },
+    {
+      "lemma": "programme",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "program.v.02"
+        }
+      ],
+      "definition": "write a computer program"
+    },
+    {
+      "lemma": "project",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "plan.v.03",
+          "via_synset": "project.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "plan.v.03",
+          "via_synset": "undertaking.n.01"
+        }
+      ],
+      "definition": "a planned undertaking"
+    },
+    {
+      "lemma": "project",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "plan.v.03",
+          "via_synset": "plan.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plan.v.02",
+          "via_synset": "project.v.08"
+        }
+      ],
+      "definition": "make or work out a plan for; devise"
+    },
+    {
+      "lemma": "propose",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intend.v.01",
+          "via_synset": "aim.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plan.v.02",
+          "via_synset": "project.v.08"
+        }
+      ],
+      "definition": "propose or intend"
+    },
+    {
+      "lemma": "purport",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aim.v.02",
+          "via_synset": "intent.n.02"
+        }
+      ],
+      "definition": "the intended meaning of a communication"
+    },
+    {
+      "lemma": "purport",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intend.v.01",
+          "via_synset": "aim.v.02"
+        }
+      ],
+      "definition": "propose or intend"
+    },
+    {
+      "lemma": "purpose",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "purpose.n.01",
+          "via_synset": "purpose.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aim.v.02",
+          "via_synset": "determination.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aim.v.02",
+          "via_synset": "purpose.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "goal.n.01",
+          "via_synset": "purpose.n.01"
+        }
+      ],
+      "definition": "an anticipated outcome that is intended or that guides your planned actions"
+    },
+    {
+      "lemma": "purpose",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intend.v.01",
+          "via_synset": "aim.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "purpose.n.01",
+          "via_synset": "aim.v.02"
+        }
+      ],
+      "definition": "propose or intend"
+    },
+    {
+      "lemma": "re-create",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "re-create.v.03"
+        }
+      ],
+      "definition": "form anew in the imagination; recollect and re-form in the mind"
+    },
+    {
+      "lemma": "sake",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "purpose.n.01",
+          "via_synset": "sake.n.03"
+        }
+      ],
+      "definition": "the purpose of achieving or obtaining"
+    },
+    {
+      "lemma": "schedule",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plan.v.02",
+          "via_synset": "schedule.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plan.v.02",
+          "via_synset": "schedule.v.02"
+        }
+      ],
+      "definition": "plan for an activity or event"
+    },
+    {
+      "lemma": "schematize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "schematize.v.01"
+        }
+      ],
+      "definition": "formulate in regular order; to reduce to a scheme or formula"
+    },
+    {
+      "lemma": "scheme",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plan.v.02",
+          "via_synset": "scheme.v.02"
+        }
+      ],
+      "definition": "devise a system or form a scheme for"
+    },
+    {
+      "lemma": "shoot for",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "plan.v.01",
+          "via_synset": "draw_a_bead_on.v.02"
+        }
+      ],
+      "definition": "have an ambitious plan or a lofty goal"
+    },
+    {
+      "lemma": "slate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intend.v.02",
+          "via_synset": "slate.v.01"
+        }
+      ],
+      "definition": "designate or schedule"
+    },
+    {
+      "lemma": "specify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "intend.v.02",
+          "via_synset": "intend.v.02"
+        }
+      ],
+      "definition": "design or destine"
+    },
+    {
+      "lemma": "target",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "goal.n.01",
+          "via_synset": "aim.n.02"
+        }
+      ],
+      "definition": "the goal intended to be attained (and which is believed to be attainable)"
+    },
+    {
+      "lemma": "terminus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "goal.n.01",
+          "via_synset": "destination.n.02"
+        }
+      ],
+      "definition": "the ultimate goal for which something is done"
+    },
+    {
+      "lemma": "think",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "intend.v.01",
+          "via_synset": "intend.v.01"
+        }
+      ],
+      "definition": "have in mind as a purpose"
+    },
+    {
+      "lemma": "think of",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "think_up.v.01"
+        }
+      ],
+      "definition": "devise or invent"
+    },
+    {
+      "lemma": "think out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "plan.v.01",
+          "via_synset": "think_out.v.01"
+        }
+      ],
+      "definition": "consider carefully and rationally"
+    },
+    {
+      "lemma": "think up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "think_up.v.01"
+        }
+      ],
+      "definition": "devise or invent"
+    },
+    {
+      "lemma": "view",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "purpose.n.01",
+          "via_synset": "view.n.07"
+        }
+      ],
+      "definition": "purpose; the phrase `with a view to' means `with the intention of' or `for the purpose of'"
+    },
+    {
+      "lemma": "volition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "intention.n.03",
+          "via_synset": "volition.n.02"
+        }
+      ],
+      "definition": "the act of making a choice"
+    },
+    {
+      "lemma": "will",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "purpose.n.01",
+          "via_synset": "will.n.02"
+        }
+      ],
+      "definition": "a fixed and persistent intent or purpose"
+    },
+    {
+      "lemma": "will",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "will.n.02",
+          "via_synset": "will.v.02"
+        }
+      ],
+      "definition": "determine by choice"
+    },
+    {
+      "lemma": "willing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "intention.n.03",
+          "via_synset": "volition.n.02"
+        }
+      ],
+      "definition": "the act of making a choice"
+    },
+    {
+      "lemma": "write",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "create_by_mental_act.v.01",
+          "via_synset": "write.v.10"
+        }
+      ],
+      "definition": "create code, write a computer program"
+    }
+  ]
+}

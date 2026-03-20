@@ -1,0 +1,1575 @@
+{
+  "atom_id": "EXS.absence",
+  "category": "EXS",
+  "seed_count": 6,
+  "total_keys": 101,
+  "pos_counts": {
+    "n": 63,
+    "adj": 9,
+    "v": 29
+  },
+  "source_counts": {
+    "0_seed": 10,
+    "6_derivational": 7,
+    "2_hypernym_d1": 10,
+    "3_hyponym_d1": 7,
+    "7_similar_to": 5,
+    "10_sibling": 74
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 7,
+      "words": [
+        "absence(n)",
+        "absence seizure(n)",
+        "absent(adj)",
+        "absentminded(adj)",
+        "abstracted(adj)",
+        "scatty(adj)",
+        "miss(v)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 10,
+      "words": [
+        "lack(n)",
+        "deficiency(n)",
+        "want(n)",
+        "seizure(n)",
+        "ictus(n)",
+        "raptus(n)",
+        "time interval(n)",
+        "interval(n)",
+        "desire(v)",
+        "want(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 7,
+      "words": [
+        "nonoccurrence(n)",
+        "awayness(n)",
+        "pure absence(n)",
+        "simple absence(n)",
+        "complex absence(n)",
+        "subclinical absence(n)",
+        "regret(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 4,
+      "words": [
+        "absentmindedness(n)",
+        "abstractedness(n)",
+        "regret(n)",
+        "away(adj)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 4,
+      "words": [
+        "inattentive(adj)",
+        "truant(adj)",
+        "awol(adj)",
+        "introuvable(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 69,
+      "words": [
+        "mineral deficiency(n)",
+        "deficit(n)",
+        "shortness(n)",
+        "stringency(n)",
+        "tightness(n)",
+        "dearth(n)",
+        "famine(n)",
+        "shortage(n)",
+        "raptus hemorrhagicus(n)",
+        "focal seizure(n)",
+        "convulsion(n)",
+        "access time(n)",
+        "time constant(n)",
+        "rotational latency(n)",
+        "latency(n)",
+        "float(n)",
+        "lead time(n)",
+        "embolism(n)",
+        "intercalation(n)",
+        "lunitidal interval(n)",
+        "pause(n)",
+        "intermission(n)",
+        "break(n)",
+        "interruption(n)",
+        "suspension(n)",
+        "latent period(n)",
+        "eternity(n)",
+        "distance(n)",
+        "space(n)",
+        "time slot(n)",
+        "slot(n)",
+        "reaction time(n)",
+        "response time(n)",
+        "interim(n)",
+        "meantime(n)",
+        "meanwhile(n)",
+        "lag(n)",
+        "cycle(n)",
+        "rhythm(n)",
+        "round(n)",
+        "processing time(n)",
+        "seek time(n)",
+        "period(n)",
+        "interlude(n)",
+        "wish(v)",
+        "wish well(v)",
+        "fancy(v)",
+        "go for(v)",
+        "take to(v)",
+        "hanker(v)",
+        "long(v)",
+        "yearn(v)",
+        "feel like(v)",
+        "like(v)",
+        "envy(v)",
+        "begrudge(v)",
+        "seek(v)",
+        "lust after(v)",
+        "lech after(v)",
+        "care(v)",
+        "itch(v)",
+        "spoil(v)",
+        "ambition(v)",
+        "hope(v)",
+        "crave(v)",
+        "hunger(v)",
+        "thirst(v)",
+        "starve(v)",
+        "lust(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "absence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "absence.n.01",
+          "via_synset": "absence.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "absence.n.04",
+          "via_synset": "absence.n.04"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "absence.n.03",
+          "via_synset": "absence.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "absent.a.01",
+          "via_synset": "absence.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "absent.a.01",
+          "via_synset": "absence.n.02"
+        }
+      ],
+      "definition": "the state of being absent"
+    },
+    {
+      "lemma": "absence seizure",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "absence.n.04",
+          "via_synset": "absence.n.04"
+        }
+      ],
+      "definition": "the occurrence of an abrupt, transient loss or impairment of consciousness (which is not subsequently remembered), sometimes with light twitching, fluttering eyelids, etc.; common in petit mal epilepsy"
+    },
+    {
+      "lemma": "absent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "absent.a.01",
+          "via_synset": "absent.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "absent.s.02",
+          "via_synset": "absent.s.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "absence.n.01",
+          "via_synset": "absent.a.01"
+        }
+      ],
+      "definition": "not being in a specified place"
+    },
+    {
+      "lemma": "absentminded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "absent.s.02",
+          "via_synset": "absent.s.02"
+        }
+      ],
+      "definition": "lost in thought; showing preoccupation"
+    },
+    {
+      "lemma": "absentmindedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "absent.s.02",
+          "via_synset": "absentmindedness.n.01"
+        }
+      ],
+      "definition": "preoccupation so great that the ordinary demands on attention are ignored"
+    },
+    {
+      "lemma": "abstracted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "absent.s.02",
+          "via_synset": "absent.s.02"
+        }
+      ],
+      "definition": "lost in thought; showing preoccupation"
+    },
+    {
+      "lemma": "abstractedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "absent.s.02",
+          "via_synset": "abstractedness.n.01"
+        }
+      ],
+      "definition": "preoccupation with something to the exclusion of all else"
+    },
+    {
+      "lemma": "access time",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "access_time.n.01"
+        }
+      ],
+      "definition": "(computer science) the interval between the time data is requested by the system and the time the data is provided by the drive"
+    },
+    {
+      "lemma": "ambition",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "ambition.v.01"
+        }
+      ],
+      "definition": "have as one's ambition"
+    },
+    {
+      "lemma": "away",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "awayness.n.01",
+          "via_synset": "away.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "absent.a.01",
+          "via_synset": "away.s.01"
+        }
+      ],
+      "definition": "not present; having left"
+    },
+    {
+      "lemma": "awayness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "absence.n.01",
+          "via_synset": "awayness.n.01"
+        }
+      ],
+      "definition": "the state of being elsewhere than in particular place"
+    },
+    {
+      "lemma": "awol",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "absent.a.01",
+          "via_synset": "truant.s.01"
+        }
+      ],
+      "definition": "absent without permission"
+    },
+    {
+      "lemma": "begrudge",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "envy.v.02"
+        }
+      ],
+      "definition": "be envious of; set one's heart on"
+    },
+    {
+      "lemma": "break",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "pause.n.01"
+        }
+      ],
+      "definition": "a time interval during which there is a temporary cessation of something"
+    },
+    {
+      "lemma": "care",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "wish.v.02"
+        }
+      ],
+      "definition": "prefer or wish to do something"
+    },
+    {
+      "lemma": "complex absence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "absence.n.04",
+          "via_synset": "complex_absence.n.01"
+        }
+      ],
+      "definition": "an absence seizure accompanied by other abnormalities (atonia or automatisms or vasomotor changes)"
+    },
+    {
+      "lemma": "convulsion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "seizure.n.01",
+          "via_synset": "convulsion.n.02"
+        }
+      ],
+      "definition": "violent uncontrollable contractions of muscles"
+    },
+    {
+      "lemma": "crave",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "crave.v.01"
+        }
+      ],
+      "definition": "have a craving, appetite, or great desire for"
+    },
+    {
+      "lemma": "cycle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "cycle.n.01"
+        }
+      ],
+      "definition": "an interval during which a recurring sequence of events occurs"
+    },
+    {
+      "lemma": "dearth",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "lack.n.01",
+          "via_synset": "dearth.n.01"
+        }
+      ],
+      "definition": "an acute insufficiency"
+    },
+    {
+      "lemma": "deficiency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "absence.n.01",
+          "via_synset": "lack.n.01"
+        }
+      ],
+      "definition": "the state of needing something that is absent or unavailable"
+    },
+    {
+      "lemma": "deficit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "lack.n.01",
+          "via_synset": "deficit.n.02"
+        }
+      ],
+      "definition": "a deficiency or failure in neurological or mental functioning"
+    },
+    {
+      "lemma": "desire",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "miss.v.02",
+          "via_synset": "desire.v.01"
+        }
+      ],
+      "definition": "feel or have a desire for; want strongly"
+    },
+    {
+      "lemma": "distance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "distance.n.05"
+        }
+      ],
+      "definition": "the interval between two times"
+    },
+    {
+      "lemma": "embolism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "embolism.n.01"
+        }
+      ],
+      "definition": "an insertion into a calendar"
+    },
+    {
+      "lemma": "envy",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "envy.v.02"
+        }
+      ],
+      "definition": "be envious of; set one's heart on"
+    },
+    {
+      "lemma": "eternity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "eternity.n.03"
+        }
+      ],
+      "definition": "a seemingly endless time interval (waiting)"
+    },
+    {
+      "lemma": "famine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "lack.n.01",
+          "via_synset": "dearth.n.01"
+        }
+      ],
+      "definition": "an acute insufficiency"
+    },
+    {
+      "lemma": "fancy",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "fancy.v.02"
+        }
+      ],
+      "definition": "have a fancy or particular liking or desire for"
+    },
+    {
+      "lemma": "feel like",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "feel_like.v.01"
+        }
+      ],
+      "definition": "have an inclination for something or some activity"
+    },
+    {
+      "lemma": "float",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "float.n.01"
+        }
+      ],
+      "definition": "the time interval between the deposit of a check in a bank and its payment"
+    },
+    {
+      "lemma": "focal seizure",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "seizure.n.01",
+          "via_synset": "focal_seizure.n.01"
+        }
+      ],
+      "definition": "transitory disturbance in motor or sensory function resulting from abnormal cortical activity"
+    },
+    {
+      "lemma": "go for",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "fancy.v.02"
+        }
+      ],
+      "definition": "have a fancy or particular liking or desire for"
+    },
+    {
+      "lemma": "hanker",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "hanker.v.01"
+        }
+      ],
+      "definition": "desire strongly or persistently"
+    },
+    {
+      "lemma": "hope",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "hope.v.02"
+        }
+      ],
+      "definition": "be optimistic; be full of hope; have hopes"
+    },
+    {
+      "lemma": "hunger",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "crave.v.01"
+        }
+      ],
+      "definition": "have a craving, appetite, or great desire for"
+    },
+    {
+      "lemma": "ictus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "absence.n.04",
+          "via_synset": "seizure.n.01"
+        }
+      ],
+      "definition": "a sudden occurrence (or recurrence) of a disease"
+    },
+    {
+      "lemma": "inattentive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "absent.s.02",
+          "via_synset": "inattentive.a.01"
+        }
+      ],
+      "definition": "showing a lack of attention or care"
+    },
+    {
+      "lemma": "intercalation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "embolism.n.01"
+        }
+      ],
+      "definition": "an insertion into a calendar"
+    },
+    {
+      "lemma": "interim",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "interim.n.01"
+        }
+      ],
+      "definition": "the time between one event, process, or period and another"
+    },
+    {
+      "lemma": "interlude",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "interlude.n.01"
+        }
+      ],
+      "definition": "an intervening period or episode"
+    },
+    {
+      "lemma": "intermission",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "pause.n.01"
+        }
+      ],
+      "definition": "a time interval during which there is a temporary cessation of something"
+    },
+    {
+      "lemma": "interruption",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "pause.n.01"
+        }
+      ],
+      "definition": "a time interval during which there is a temporary cessation of something"
+    },
+    {
+      "lemma": "interval",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "absence.n.03",
+          "via_synset": "time_interval.n.01"
+        }
+      ],
+      "definition": "a definite length of time marked off by two instants"
+    },
+    {
+      "lemma": "introuvable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "absent.a.01",
+          "via_synset": "introuvable.s.01"
+        }
+      ],
+      "definition": "impossible to find"
+    },
+    {
+      "lemma": "itch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "itch.v.04"
+        }
+      ],
+      "definition": "have a strong desire or urge to do something"
+    },
+    {
+      "lemma": "lack",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "absence.n.01",
+          "via_synset": "lack.n.01"
+        }
+      ],
+      "definition": "the state of needing something that is absent or unavailable"
+    },
+    {
+      "lemma": "lag",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "interim.n.01"
+        }
+      ],
+      "definition": "the time between one event, process, or period and another"
+    },
+    {
+      "lemma": "latency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "rotational_latency.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "reaction_time.n.01"
+        }
+      ],
+      "definition": "(computer science) the time it takes for a specific block of data on a data track to rotate around to the read/write head"
+    },
+    {
+      "lemma": "latent period",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "latent_period.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "reaction_time.n.01"
+        }
+      ],
+      "definition": "the time that elapses before the presence of a disease is manifested by symptoms"
+    },
+    {
+      "lemma": "lead time",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "lead_time.n.01"
+        }
+      ],
+      "definition": "the time interval between the initiation and the completion of a production process"
+    },
+    {
+      "lemma": "lech after",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "lust_after.v.01"
+        }
+      ],
+      "definition": "have a strong sexual desire for"
+    },
+    {
+      "lemma": "like",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "like.v.05"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "wish.v.02"
+        }
+      ],
+      "definition": "want to have"
+    },
+    {
+      "lemma": "long",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "hanker.v.01"
+        }
+      ],
+      "definition": "desire strongly or persistently"
+    },
+    {
+      "lemma": "lunitidal interval",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "lunitidal_interval.n.01"
+        }
+      ],
+      "definition": "interval between the moon's transit of a particular meridian and the next high tide at that meridian"
+    },
+    {
+      "lemma": "lust",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "crave.v.01"
+        }
+      ],
+      "definition": "have a craving, appetite, or great desire for"
+    },
+    {
+      "lemma": "lust after",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "lust_after.v.01"
+        }
+      ],
+      "definition": "have a strong sexual desire for"
+    },
+    {
+      "lemma": "meantime",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "interim.n.01"
+        }
+      ],
+      "definition": "the time between one event, process, or period and another"
+    },
+    {
+      "lemma": "meanwhile",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "interim.n.01"
+        }
+      ],
+      "definition": "the time between one event, process, or period and another"
+    },
+    {
+      "lemma": "mineral deficiency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "lack.n.01",
+          "via_synset": "mineral_deficiency.n.01"
+        }
+      ],
+      "definition": "lack of a mineral micronutrient that is essential for normal nutrition or metabolism"
+    },
+    {
+      "lemma": "miss",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "miss.v.02",
+          "via_synset": "miss.v.02"
+        }
+      ],
+      "definition": "feel or suffer from the lack of"
+    },
+    {
+      "lemma": "nonoccurrence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "absence.n.01",
+          "via_synset": "nonoccurrence.n.01"
+        }
+      ],
+      "definition": "absence by virtue of not occurring"
+    },
+    {
+      "lemma": "pause",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "pause.n.01"
+        }
+      ],
+      "definition": "a time interval during which there is a temporary cessation of something"
+    },
+    {
+      "lemma": "period",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "period.n.02"
+        }
+      ],
+      "definition": "the interval taken to complete one cycle of a regularly repeating phenomenon"
+    },
+    {
+      "lemma": "processing time",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "processing_time.n.01"
+        }
+      ],
+      "definition": "the time it takes to complete a prescribed procedure"
+    },
+    {
+      "lemma": "pure absence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "absence.n.04",
+          "via_synset": "pure_absence.n.01"
+        }
+      ],
+      "definition": "an absence seizure without other complications; followed by 3-per-sec brainwave spikes"
+    },
+    {
+      "lemma": "raptus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "absence.n.04",
+          "via_synset": "seizure.n.01"
+        }
+      ],
+      "definition": "a sudden occurrence (or recurrence) of a disease"
+    },
+    {
+      "lemma": "raptus hemorrhagicus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "seizure.n.01",
+          "via_synset": "raptus_hemorrhagicus.n.01"
+        }
+      ],
+      "definition": "seizure caused by a sudden profuse hemorrhage"
+    },
+    {
+      "lemma": "reaction time",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "reaction_time.n.01"
+        }
+      ],
+      "definition": "the time that elapses between a stimulus and the response to it"
+    },
+    {
+      "lemma": "regret",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "regret.v.02",
+          "via_synset": "sorrow.n.02"
+        }
+      ],
+      "definition": "sadness associated with some wrong done or some disappointment"
+    },
+    {
+      "lemma": "regret",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "miss.v.02",
+          "via_synset": "regret.v.02"
+        }
+      ],
+      "definition": "feel sad about the loss or absence of"
+    },
+    {
+      "lemma": "response time",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "reaction_time.n.01"
+        }
+      ],
+      "definition": "the time that elapses between a stimulus and the response to it"
+    },
+    {
+      "lemma": "rhythm",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "cycle.n.01"
+        }
+      ],
+      "definition": "an interval during which a recurring sequence of events occurs"
+    },
+    {
+      "lemma": "rotational latency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "rotational_latency.n.01"
+        }
+      ],
+      "definition": "(computer science) the time it takes for a specific block of data on a data track to rotate around to the read/write head"
+    },
+    {
+      "lemma": "round",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "cycle.n.01"
+        }
+      ],
+      "definition": "an interval during which a recurring sequence of events occurs"
+    },
+    {
+      "lemma": "scatty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "absent.s.02",
+          "via_synset": "absent.s.02"
+        }
+      ],
+      "definition": "lost in thought; showing preoccupation"
+    },
+    {
+      "lemma": "seek",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "seek.v.01"
+        }
+      ],
+      "definition": "try to get or reach"
+    },
+    {
+      "lemma": "seek time",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "seek_time.n.01"
+        }
+      ],
+      "definition": "(computer science) the time it takes for a read/write head to move to a specific data track"
+    },
+    {
+      "lemma": "seizure",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "absence.n.04",
+          "via_synset": "seizure.n.01"
+        }
+      ],
+      "definition": "a sudden occurrence (or recurrence) of a disease"
+    },
+    {
+      "lemma": "shortage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "lack.n.01",
+          "via_synset": "dearth.n.01"
+        }
+      ],
+      "definition": "an acute insufficiency"
+    },
+    {
+      "lemma": "shortness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "lack.n.01",
+          "via_synset": "shortness.n.02"
+        }
+      ],
+      "definition": "the condition of being short of something"
+    },
+    {
+      "lemma": "simple absence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "absence.n.04",
+          "via_synset": "pure_absence.n.01"
+        }
+      ],
+      "definition": "an absence seizure without other complications; followed by 3-per-sec brainwave spikes"
+    },
+    {
+      "lemma": "slot",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "time_slot.n.01"
+        }
+      ],
+      "definition": "a time assigned on a schedule or agenda"
+    },
+    {
+      "lemma": "space",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "distance.n.05"
+        }
+      ],
+      "definition": "the interval between two times"
+    },
+    {
+      "lemma": "spoil",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "itch.v.04"
+        }
+      ],
+      "definition": "have a strong desire or urge to do something"
+    },
+    {
+      "lemma": "starve",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "crave.v.01"
+        }
+      ],
+      "definition": "have a craving, appetite, or great desire for"
+    },
+    {
+      "lemma": "stringency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "lack.n.01",
+          "via_synset": "stringency.n.01"
+        }
+      ],
+      "definition": "a state occasioned by scarcity of money and a shortage of credit"
+    },
+    {
+      "lemma": "subclinical absence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "absence.n.04",
+          "via_synset": "subclinical_absence.n.01"
+        }
+      ],
+      "definition": "a transient impairment of cortical function demonstrable only by 3-per-second brainwave spikes"
+    },
+    {
+      "lemma": "suspension",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "pause.n.01"
+        }
+      ],
+      "definition": "a time interval during which there is a temporary cessation of something"
+    },
+    {
+      "lemma": "take to",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "fancy.v.02"
+        }
+      ],
+      "definition": "have a fancy or particular liking or desire for"
+    },
+    {
+      "lemma": "thirst",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "crave.v.01"
+        }
+      ],
+      "definition": "have a craving, appetite, or great desire for"
+    },
+    {
+      "lemma": "tightness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "lack.n.01",
+          "via_synset": "stringency.n.01"
+        }
+      ],
+      "definition": "a state occasioned by scarcity of money and a shortage of credit"
+    },
+    {
+      "lemma": "time constant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "time_constant.n.01"
+        }
+      ],
+      "definition": "(electronics) the time required for the current or voltage in a circuit to rise or fall exponentially through approximately 63 per cent of its amplitude"
+    },
+    {
+      "lemma": "time interval",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "absence.n.03",
+          "via_synset": "time_interval.n.01"
+        }
+      ],
+      "definition": "a definite length of time marked off by two instants"
+    },
+    {
+      "lemma": "time slot",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "time_interval.n.01",
+          "via_synset": "time_slot.n.01"
+        }
+      ],
+      "definition": "a time assigned on a schedule or agenda"
+    },
+    {
+      "lemma": "truant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "absent.a.01",
+          "via_synset": "truant.s.01"
+        }
+      ],
+      "definition": "absent without permission"
+    },
+    {
+      "lemma": "want",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "absence.n.01",
+          "via_synset": "lack.n.01"
+        }
+      ],
+      "definition": "the state of needing something that is absent or unavailable"
+    },
+    {
+      "lemma": "want",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "miss.v.02",
+          "via_synset": "desire.v.01"
+        }
+      ],
+      "definition": "feel or have a desire for; want strongly"
+    },
+    {
+      "lemma": "wish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "wish.v.04"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "wish.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "wish.v.02"
+        }
+      ],
+      "definition": "feel or express a desire or hope concerning the future or fortune of"
+    },
+    {
+      "lemma": "wish well",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "wish.v.04"
+        }
+      ],
+      "definition": "feel or express a desire or hope concerning the future or fortune of"
+    },
+    {
+      "lemma": "yearn",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desire.v.01",
+          "via_synset": "hanker.v.01"
+        }
+      ],
+      "definition": "desire strongly or persistently"
+    }
+  ]
+}

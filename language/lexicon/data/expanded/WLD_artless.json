@@ -1,0 +1,1579 @@
+{
+  "atom_id": "WLD.artless",
+  "category": "WLD",
+  "seed_count": 6,
+  "total_keys": 101,
+  "pos_counts": {
+    "adj": 20,
+    "v": 43,
+    "n": 38
+  },
+  "source_counts": {
+    "0_seed": 20,
+    "7_similar_to": 5,
+    "3_hyponym_d1": 35,
+    "4_hyponym_d2": 2,
+    "12_verb_group": 2,
+    "6_derivational": 46,
+    "8_also_see": 1,
+    "9_antonym": 2
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 18,
+      "words": [
+        "artless(adj)",
+        "uncultivated(adj)",
+        "uncultured(adj)",
+        "complain(v)",
+        "kick(v)",
+        "plain(v)",
+        "sound off(v)",
+        "quetch(v)",
+        "kvetch(v)",
+        "apparent(adj)",
+        "evident(adj)",
+        "manifest(adj)",
+        "patent(adj)",
+        "plain(adj)",
+        "unmistakable(adj)",
+        "bare(adj)",
+        "mere(adj)",
+        "simple(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 33,
+      "words": [
+        "grouch(v)",
+        "grumble(v)",
+        "scold(v)",
+        "rail(v)",
+        "inveigh(v)",
+        "repine(v)",
+        "backbite(v)",
+        "bitch(v)",
+        "whine(v)",
+        "grizzle(v)",
+        "yammer(v)",
+        "yawp(v)",
+        "murmur(v)",
+        "mutter(v)",
+        "croak(v)",
+        "gnarl(v)",
+        "protest(v)",
+        "deplore(v)",
+        "lament(v)",
+        "bewail(v)",
+        "bemoan(v)",
+        "bleat(v)",
+        "gripe(v)",
+        "grouse(v)",
+        "crab(v)",
+        "beef(v)",
+        "squawk(v)",
+        "bellyache(v)",
+        "holler(v)",
+        "nag(v)",
+        "peck(v)",
+        "hen-peck(v)",
+        "report(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 1,
+      "words": [
+        "declaim(v)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 41,
+      "words": [
+        "murmur(n)",
+        "murmuring(n)",
+        "murmurer(n)",
+        "mutter(n)",
+        "muttering(n)",
+        "grumble(n)",
+        "grumbler(n)",
+        "grumbling(n)",
+        "backbiter(n)",
+        "bitch(n)",
+        "bitchery(n)",
+        "whine(n)",
+        "whiner(n)",
+        "protestant(adj)",
+        "protest(n)",
+        "protestation(n)",
+        "protester(n)",
+        "grouch(n)",
+        "scold(n)",
+        "scolder(n)",
+        "declamation(n)",
+        "complaint(n)",
+        "complainer(n)",
+        "kick(n)",
+        "apparency(n)",
+        "appear(v)",
+        "apparentness(n)",
+        "evidence(n)",
+        "patency(n)",
+        "plainness(n)",
+        "artlessness(n)",
+        "nag(n)",
+        "nagger(n)",
+        "gripe(n)",
+        "crab(n)",
+        "beef(n)",
+        "squawk(n)",
+        "squawker(n)",
+        "bellyacher(n)",
+        "lamentable(adj)",
+        "lamenter(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 4,
+      "words": [
+        "unskilled(adj)",
+        "unrefined(adj)",
+        "obvious(adj)",
+        "careless(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 1,
+      "words": [
+        "natural(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 2,
+      "words": [
+        "artful(adj)",
+        "cheer(v)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 1,
+      "words": [
+        "snivel(v)"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "apparency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apparent.s.01",
+          "via_synset": "apparentness.n.01"
+        }
+      ],
+      "definition": "the property of being apparent"
+    },
+    {
+      "lemma": "apparent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "apparent.s.01",
+          "via_synset": "apparent.s.01"
+        }
+      ],
+      "definition": "clearly revealed to the mind or the senses or judgment"
+    },
+    {
+      "lemma": "apparentness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apparent.s.01",
+          "via_synset": "apparentness.n.01"
+        }
+      ],
+      "definition": "the property of being apparent"
+    },
+    {
+      "lemma": "appear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apparent.s.01",
+          "via_synset": "appear.v.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apparent.s.01",
+          "via_synset": "appear.v.02"
+        }
+      ],
+      "definition": "seem to be true, probable, or apparent"
+    },
+    {
+      "lemma": "artful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "artless.a.02",
+          "via_synset": "artful.a.02"
+        }
+      ],
+      "definition": "marked by skill in achieving a desired end especially with cunning or craft"
+    },
+    {
+      "lemma": "artless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "artless.a.02",
+          "via_synset": "artless.a.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "artless.s.02",
+          "via_synset": "artless.s.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "artless.s.01",
+          "via_synset": "artless.s.01"
+        }
+      ],
+      "definition": "simple and natural; without cunning or deceit"
+    },
+    {
+      "lemma": "artlessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "artless.a.02",
+          "via_synset": "artlessness.n.02"
+        }
+      ],
+      "definition": "ingenuousness by virtue of being free from artful deceit"
+    },
+    {
+      "lemma": "backbite",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "backbite.v.01"
+        }
+      ],
+      "definition": "say mean things"
+    },
+    {
+      "lemma": "backbiter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "backbite.v.01",
+          "via_synset": "defamer.n.01"
+        }
+      ],
+      "definition": "one who attacks the reputation of another by slander or libel"
+    },
+    {
+      "lemma": "bare",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bare.s.04",
+          "via_synset": "bare.s.04"
+        }
+      ],
+      "definition": "apart from anything else; without additions or modifications"
+    },
+    {
+      "lemma": "beef",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "gripe.v.01",
+          "via_synset": "gripe.n.01"
+        }
+      ],
+      "definition": "informal terms for objecting"
+    },
+    {
+      "lemma": "beef",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "gripe.v.01"
+        }
+      ],
+      "definition": "complain"
+    },
+    {
+      "lemma": "bellyache",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "gripe.v.01"
+        }
+      ],
+      "definition": "complain"
+    },
+    {
+      "lemma": "bellyacher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "gripe.v.01",
+          "via_synset": "whiner.n.01"
+        }
+      ],
+      "definition": "a person given to excessive complaints and crying and whining"
+    },
+    {
+      "lemma": "bemoan",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "deplore.v.02"
+        }
+      ],
+      "definition": "regret strongly"
+    },
+    {
+      "lemma": "bewail",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "deplore.v.02"
+        }
+      ],
+      "definition": "regret strongly"
+    },
+    {
+      "lemma": "bitch",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "backbite.v.01",
+          "via_synset": "gripe.n.01"
+        }
+      ],
+      "definition": "informal terms for objecting"
+    },
+    {
+      "lemma": "bitch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "backbite.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "gripe.v.01"
+        }
+      ],
+      "definition": "say mean things"
+    },
+    {
+      "lemma": "bitchery",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "backbite.v.01",
+          "via_synset": "bitchery.n.01"
+        }
+      ],
+      "definition": "aggressive remarks and behavior like that of a spiteful malicious woman"
+    },
+    {
+      "lemma": "bleat",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "bleat.v.01"
+        }
+      ],
+      "definition": "talk whiningly"
+    },
+    {
+      "lemma": "careless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "artless.a.02",
+          "via_synset": "careless.s.01"
+        }
+      ],
+      "definition": "effortless and unstudied"
+    },
+    {
+      "lemma": "cheer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "complain.v.01",
+          "via_synset": "cheer.v.04"
+        }
+      ],
+      "definition": "become cheerful"
+    },
+    {
+      "lemma": "complain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "complain.v.01",
+          "via_synset": "complain.v.01"
+        }
+      ],
+      "definition": "express complaints, discontent, displeasure, or unhappiness"
+    },
+    {
+      "lemma": "complainer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "complain.v.01",
+          "via_synset": "whiner.n.01"
+        }
+      ],
+      "definition": "a person given to excessive complaints and crying and whining"
+    },
+    {
+      "lemma": "complaint",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "complain.v.01",
+          "via_synset": "complaint.n.03"
+        }
+      ],
+      "definition": "an expression of grievance or resentment"
+    },
+    {
+      "lemma": "crab",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "gripe.v.01",
+          "via_synset": "crab.n.02"
+        }
+      ],
+      "definition": "a quarrelsome grouch"
+    },
+    {
+      "lemma": "crab",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "gripe.v.01"
+        }
+      ],
+      "definition": "complain"
+    },
+    {
+      "lemma": "croak",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "murmur.v.02"
+        }
+      ],
+      "definition": "make complaining remarks or noises under one's breath"
+    },
+    {
+      "lemma": "declaim",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "protest.v.01",
+          "via_synset": "declaim.v.02"
+        }
+      ],
+      "definition": "speak against in an impassioned manner"
+    },
+    {
+      "lemma": "declamation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "declaim.v.02",
+          "via_synset": "declamation.n.01"
+        }
+      ],
+      "definition": "vehement oratory"
+    },
+    {
+      "lemma": "deplore",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "deplore.v.02"
+        }
+      ],
+      "definition": "regret strongly"
+    },
+    {
+      "lemma": "evidence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apparent.s.01",
+          "via_synset": "evidence.n.01"
+        }
+      ],
+      "definition": "your basis for belief or disbelief; knowledge on which to base belief"
+    },
+    {
+      "lemma": "evident",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "apparent.s.01",
+          "via_synset": "apparent.s.01"
+        }
+      ],
+      "definition": "clearly revealed to the mind or the senses or judgment"
+    },
+    {
+      "lemma": "gnarl",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "murmur.v.02"
+        }
+      ],
+      "definition": "make complaining remarks or noises under one's breath"
+    },
+    {
+      "lemma": "gripe",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "gripe.v.01",
+          "via_synset": "gripe.n.01"
+        }
+      ],
+      "definition": "informal terms for objecting"
+    },
+    {
+      "lemma": "gripe",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "gripe.v.01"
+        }
+      ],
+      "definition": "complain"
+    },
+    {
+      "lemma": "grizzle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "whine.v.04"
+        }
+      ],
+      "definition": "complain whiningly"
+    },
+    {
+      "lemma": "grouch",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grouch.v.01",
+          "via_synset": "grouch.n.01"
+        }
+      ],
+      "definition": "a bad-tempered person"
+    },
+    {
+      "lemma": "grouch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "grouch.v.01"
+        }
+      ],
+      "definition": "show one's unhappiness or critical attitude"
+    },
+    {
+      "lemma": "grouse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "gripe.v.01"
+        }
+      ],
+      "definition": "complain"
+    },
+    {
+      "lemma": "grumble",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "murmur.v.02",
+          "via_synset": "grumble.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grouch.v.01",
+          "via_synset": "grumble.n.02"
+        }
+      ],
+      "definition": "a complaint uttered in a low and indistinct tone"
+    },
+    {
+      "lemma": "grumble",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "grouch.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "murmur.v.02"
+        }
+      ],
+      "definition": "show one's unhappiness or critical attitude"
+    },
+    {
+      "lemma": "grumbler",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "murmur.v.02",
+          "via_synset": "whiner.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grouch.v.01",
+          "via_synset": "whiner.n.01"
+        }
+      ],
+      "definition": "a person given to excessive complaints and crying and whining"
+    },
+    {
+      "lemma": "grumbling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "murmur.v.02",
+          "via_synset": "grumble.n.02"
+        }
+      ],
+      "definition": "a complaint uttered in a low and indistinct tone"
+    },
+    {
+      "lemma": "hen-peck",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "nag.v.01"
+        }
+      ],
+      "definition": "bother persistently with trivial complaints"
+    },
+    {
+      "lemma": "holler",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "gripe.v.01"
+        }
+      ],
+      "definition": "complain"
+    },
+    {
+      "lemma": "inveigh",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "rail.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "protest.v.01",
+          "via_synset": "declaim.v.02"
+        }
+      ],
+      "definition": "complain bitterly"
+    },
+    {
+      "lemma": "kick",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "complain.v.01",
+          "via_synset": "gripe.n.01"
+        }
+      ],
+      "definition": "informal terms for objecting"
+    },
+    {
+      "lemma": "kick",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "complain.v.01",
+          "via_synset": "complain.v.01"
+        }
+      ],
+      "definition": "express complaints, discontent, displeasure, or unhappiness"
+    },
+    {
+      "lemma": "kvetch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "complain.v.01",
+          "via_synset": "complain.v.01"
+        }
+      ],
+      "definition": "express complaints, discontent, displeasure, or unhappiness"
+    },
+    {
+      "lemma": "lament",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "deplore.v.02"
+        }
+      ],
+      "definition": "regret strongly"
+    },
+    {
+      "lemma": "lamentable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deplore.v.02",
+          "via_synset": "deplorable.s.01"
+        }
+      ],
+      "definition": "bad; unfortunate"
+    },
+    {
+      "lemma": "lamenter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deplore.v.02",
+          "via_synset": "mourner.n.01"
+        }
+      ],
+      "definition": "a person who is feeling grief (as grieving over someone who has died)"
+    },
+    {
+      "lemma": "manifest",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "apparent.s.01",
+          "via_synset": "apparent.s.01"
+        }
+      ],
+      "definition": "clearly revealed to the mind or the senses or judgment"
+    },
+    {
+      "lemma": "mere",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bare.s.04",
+          "via_synset": "bare.s.04"
+        }
+      ],
+      "definition": "apart from anything else; without additions or modifications"
+    },
+    {
+      "lemma": "murmur",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "murmur.v.02",
+          "via_synset": "grumble.n.02"
+        }
+      ],
+      "definition": "a complaint uttered in a low and indistinct tone"
+    },
+    {
+      "lemma": "murmur",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "murmur.v.02"
+        }
+      ],
+      "definition": "make complaining remarks or noises under one's breath"
+    },
+    {
+      "lemma": "murmurer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "murmur.v.02",
+          "via_synset": "mutterer.n.01"
+        }
+      ],
+      "definition": "a person who speaks softly and indistinctly"
+    },
+    {
+      "lemma": "murmuring",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "murmur.v.02",
+          "via_synset": "grumble.n.02"
+        }
+      ],
+      "definition": "a complaint uttered in a low and indistinct tone"
+    },
+    {
+      "lemma": "mutter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "murmur.v.02",
+          "via_synset": "grumble.n.02"
+        }
+      ],
+      "definition": "a complaint uttered in a low and indistinct tone"
+    },
+    {
+      "lemma": "mutter",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "murmur.v.02"
+        }
+      ],
+      "definition": "make complaining remarks or noises under one's breath"
+    },
+    {
+      "lemma": "muttering",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "murmur.v.02",
+          "via_synset": "grumble.n.02"
+        }
+      ],
+      "definition": "a complaint uttered in a low and indistinct tone"
+    },
+    {
+      "lemma": "nag",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "nag.v.01",
+          "via_synset": "scold.n.01"
+        }
+      ],
+      "definition": "someone (especially a woman) who annoys people by constantly finding fault"
+    },
+    {
+      "lemma": "nag",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "nag.v.01"
+        }
+      ],
+      "definition": "bother persistently with trivial complaints"
+    },
+    {
+      "lemma": "nagger",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "nag.v.01",
+          "via_synset": "scold.n.01"
+        }
+      ],
+      "definition": "someone (especially a woman) who annoys people by constantly finding fault"
+    },
+    {
+      "lemma": "natural",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "artless.a.02",
+          "via_synset": "natural.a.01"
+        }
+      ],
+      "definition": "in accordance with nature; relating to or concerning nature"
+    },
+    {
+      "lemma": "obvious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "apparent.s.01",
+          "via_synset": "obvious.a.01"
+        }
+      ],
+      "definition": "easily perceived by the senses or grasped by the mind"
+    },
+    {
+      "lemma": "patency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apparent.s.01",
+          "via_synset": "obviousness.n.01"
+        }
+      ],
+      "definition": "the property of being easy to see and understand"
+    },
+    {
+      "lemma": "patent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "apparent.s.01",
+          "via_synset": "apparent.s.01"
+        }
+      ],
+      "definition": "clearly revealed to the mind or the senses or judgment"
+    },
+    {
+      "lemma": "peck",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "nag.v.01"
+        }
+      ],
+      "definition": "bother persistently with trivial complaints"
+    },
+    {
+      "lemma": "plain",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "apparent.s.01",
+          "via_synset": "apparent.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bare.s.04",
+          "via_synset": "plain.a.02"
+        }
+      ],
+      "definition": "clearly revealed to the mind or the senses or judgment"
+    },
+    {
+      "lemma": "plain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "complain.v.01",
+          "via_synset": "complain.v.01"
+        }
+      ],
+      "definition": "express complaints, discontent, displeasure, or unhappiness"
+    },
+    {
+      "lemma": "plainness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apparent.s.01",
+          "via_synset": "perspicuity.n.01"
+        }
+      ],
+      "definition": "clarity as a consequence of being perspicuous"
+    },
+    {
+      "lemma": "protest",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "protest.v.01",
+          "via_synset": "protest.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "protest.v.01",
+          "via_synset": "protest.n.01"
+        }
+      ],
+      "definition": "the act of making a strong public expression of disagreement and disapproval"
+    },
+    {
+      "lemma": "protest",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "protest.v.01"
+        }
+      ],
+      "definition": "utter words of protest"
+    },
+    {
+      "lemma": "protestant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "protest.v.01",
+          "via_synset": "protestant.s.01"
+        }
+      ],
+      "definition": "protesting"
+    },
+    {
+      "lemma": "protestation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "protest.v.01",
+          "via_synset": "protestation.n.02"
+        }
+      ],
+      "definition": "a strong declaration of protest"
+    },
+    {
+      "lemma": "protester",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "protest.v.01",
+          "via_synset": "dissenter.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "protest.v.01",
+          "via_synset": "demonstrator.n.03"
+        }
+      ],
+      "definition": "a person who dissents from some established policy"
+    },
+    {
+      "lemma": "quetch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "complain.v.01",
+          "via_synset": "complain.v.01"
+        }
+      ],
+      "definition": "express complaints, discontent, displeasure, or unhappiness"
+    },
+    {
+      "lemma": "rail",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "rail.v.01"
+        }
+      ],
+      "definition": "complain bitterly"
+    },
+    {
+      "lemma": "repine",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "repine.v.01"
+        }
+      ],
+      "definition": "express discontent"
+    },
+    {
+      "lemma": "report",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "report.v.06"
+        }
+      ],
+      "definition": "complain about; make a charge against"
+    },
+    {
+      "lemma": "scold",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grouch.v.01",
+          "via_synset": "scold.n.01"
+        }
+      ],
+      "definition": "someone (especially a woman) who annoys people by constantly finding fault"
+    },
+    {
+      "lemma": "scold",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "grouch.v.01"
+        }
+      ],
+      "definition": "show one's unhappiness or critical attitude"
+    },
+    {
+      "lemma": "scolder",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grouch.v.01",
+          "via_synset": "scold.n.01"
+        }
+      ],
+      "definition": "someone (especially a woman) who annoys people by constantly finding fault"
+    },
+    {
+      "lemma": "simple",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bare.s.04",
+          "via_synset": "bare.s.04"
+        }
+      ],
+      "definition": "apart from anything else; without additions or modifications"
+    },
+    {
+      "lemma": "snivel",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "whine.v.04",
+          "via_synset": "snivel.v.01"
+        }
+      ],
+      "definition": "talk in a tearful manner"
+    },
+    {
+      "lemma": "sound off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "complain.v.01",
+          "via_synset": "complain.v.01"
+        }
+      ],
+      "definition": "express complaints, discontent, displeasure, or unhappiness"
+    },
+    {
+      "lemma": "squawk",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "gripe.v.01",
+          "via_synset": "gripe.n.01"
+        }
+      ],
+      "definition": "informal terms for objecting"
+    },
+    {
+      "lemma": "squawk",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "gripe.v.01"
+        }
+      ],
+      "definition": "complain"
+    },
+    {
+      "lemma": "squawker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "gripe.v.01",
+          "via_synset": "whiner.n.01"
+        }
+      ],
+      "definition": "a person given to excessive complaints and crying and whining"
+    },
+    {
+      "lemma": "uncultivated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "artless.s.02",
+          "via_synset": "artless.s.02"
+        }
+      ],
+      "definition": "(of persons) lacking art or knowledge"
+    },
+    {
+      "lemma": "uncultured",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "artless.s.02",
+          "via_synset": "artless.s.02"
+        }
+      ],
+      "definition": "(of persons) lacking art or knowledge"
+    },
+    {
+      "lemma": "unmistakable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "apparent.s.01",
+          "via_synset": "apparent.s.01"
+        }
+      ],
+      "definition": "clearly revealed to the mind or the senses or judgment"
+    },
+    {
+      "lemma": "unrefined",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "artless.s.02",
+          "via_synset": "unrefined.a.02"
+        }
+      ],
+      "definition": "(used of persons and their behavior) not refined; uncouth"
+    },
+    {
+      "lemma": "unskilled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "artless.s.01",
+          "via_synset": "unskilled.a.01"
+        }
+      ],
+      "definition": "not having or showing or requiring special skill or proficiency"
+    },
+    {
+      "lemma": "whine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "whine.v.04",
+          "via_synset": "whimper.n.01"
+        }
+      ],
+      "definition": "a complaint uttered in a plaintive whining way"
+    },
+    {
+      "lemma": "whine",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "whine.v.04"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "whine.v.04",
+          "via_synset": "snivel.v.01"
+        }
+      ],
+      "definition": "complain whiningly"
+    },
+    {
+      "lemma": "whiner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "whine.v.04",
+          "via_synset": "whiner.n.01"
+        }
+      ],
+      "definition": "a person given to excessive complaints and crying and whining"
+    },
+    {
+      "lemma": "yammer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "whine.v.04"
+        }
+      ],
+      "definition": "complain whiningly"
+    },
+    {
+      "lemma": "yawp",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "complain.v.01",
+          "via_synset": "whine.v.04"
+        }
+      ],
+      "definition": "complain whiningly"
+    }
+  ]
+}

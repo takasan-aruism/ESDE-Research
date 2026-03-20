@@ -1,0 +1,743 @@
+{
+  "atom_id": "EMO.apology",
+  "category": "EMO",
+  "seed_count": 3,
+  "total_keys": 44,
+  "pos_counts": {
+    "n": 41,
+    "adj": 1,
+    "v": 2
+  },
+  "source_counts": {
+    "0_seed": 5,
+    "10_sibling": 30,
+    "2_hypernym_d1": 9,
+    "6_derivational": 7
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 3,
+      "words": [
+        "apology(n)",
+        "apologia(n)",
+        "excuse(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 9,
+      "words": [
+        "acknowledgment(n)",
+        "acknowledgement(n)",
+        "defense(n)",
+        "defence(n)",
+        "vindication(n)",
+        "example(n)",
+        "illustration(n)",
+        "instance(n)",
+        "representative(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 4,
+      "words": [
+        "apologetic(adj)",
+        "apologist(n)",
+        "apologise(v)",
+        "apologize(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 28,
+      "words": [
+        "credits(n)",
+        "farewell(n)",
+        "word of farewell(n)",
+        "mea culpa(n)",
+        "declination(n)",
+        "regrets(n)",
+        "admission(n)",
+        "condolence(n)",
+        "commiseration(n)",
+        "aloha(n)",
+        "ciao(n)",
+        "handshake(n)",
+        "shake(n)",
+        "handshaking(n)",
+        "handclasp(n)",
+        "receipt(n)",
+        "greeting(n)",
+        "salutation(n)",
+        "thanks(n)",
+        "alibi(n)",
+        "exculpation(n)",
+        "self-justification(n)",
+        "specimen(n)",
+        "exception(n)",
+        "precedent(n)",
+        "case in point(n)",
+        "sample(n)",
+        "quintessence(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "acknowledgement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "apology.n.01",
+          "via_synset": "acknowledgment.n.03"
+        }
+      ],
+      "definition": "a statement acknowledging something or someone"
+    },
+    {
+      "lemma": "acknowledgment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "apology.n.01",
+          "via_synset": "acknowledgment.n.03"
+        }
+      ],
+      "definition": "a statement acknowledging something or someone"
+    },
+    {
+      "lemma": "admission",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "acknowledgment.n.03",
+          "via_synset": "admission.n.02"
+        }
+      ],
+      "definition": "an acknowledgment of the truth of something"
+    },
+    {
+      "lemma": "alibi",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "defense.n.04",
+          "via_synset": "alibi.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "defense.n.04",
+          "via_synset": "excuse.n.01"
+        }
+      ],
+      "definition": "(law) a defense by an accused person purporting to show that he or she could not have committed the crime in question"
+    },
+    {
+      "lemma": "aloha",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "acknowledgment.n.03",
+          "via_synset": "aloha.n.01"
+        }
+      ],
+      "definition": "an acknowledgment that can be used to say hello or goodbye (aloha is Hawaiian and ciao is Italian)"
+    },
+    {
+      "lemma": "apologetic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apology.n.02",
+          "via_synset": "apologetic.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apology.n.01",
+          "via_synset": "apologetic.a.01"
+        }
+      ],
+      "definition": "offering or expressing apology"
+    },
+    {
+      "lemma": "apologia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "apology.n.02",
+          "via_synset": "apology.n.02"
+        }
+      ],
+      "definition": "a formal written defense of something you believe in strongly"
+    },
+    {
+      "lemma": "apologise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apology.n.02",
+          "via_synset": "apologize.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apology.n.01",
+          "via_synset": "apologize.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apology.n.01",
+          "via_synset": "apologize.v.01"
+        }
+      ],
+      "definition": "defend, explain, clear away, or make excuses for by reasoning"
+    },
+    {
+      "lemma": "apologist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apology.n.02",
+          "via_synset": "apologist.n.01"
+        }
+      ],
+      "definition": "a person who argues to defend or justify some policy or institution"
+    },
+    {
+      "lemma": "apologize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apology.n.01",
+          "via_synset": "apologize.v.01"
+        }
+      ],
+      "definition": "acknowledge faults or shortcomings or failing"
+    },
+    {
+      "lemma": "apology",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "apology.n.01",
+          "via_synset": "apology.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "apology.n.02",
+          "via_synset": "apology.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "apology.n.03",
+          "via_synset": "apology.n.03"
+        }
+      ],
+      "definition": "an expression of regret at having caused trouble for someone"
+    },
+    {
+      "lemma": "case in point",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "example.n.01",
+          "via_synset": "precedent.n.01"
+        }
+      ],
+      "definition": "an example that is used to justify similar occurrences at a later time"
+    },
+    {
+      "lemma": "ciao",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "acknowledgment.n.03",
+          "via_synset": "aloha.n.01"
+        }
+      ],
+      "definition": "an acknowledgment that can be used to say hello or goodbye (aloha is Hawaiian and ciao is Italian)"
+    },
+    {
+      "lemma": "commiseration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "acknowledgment.n.03",
+          "via_synset": "condolence.n.01"
+        }
+      ],
+      "definition": "an expression of sympathy with another's grief"
+    },
+    {
+      "lemma": "condolence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "acknowledgment.n.03",
+          "via_synset": "condolence.n.01"
+        }
+      ],
+      "definition": "an expression of sympathy with another's grief"
+    },
+    {
+      "lemma": "credits",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "acknowledgment.n.03",
+          "via_synset": "credits.n.01"
+        }
+      ],
+      "definition": "a list of acknowledgements of those who contributed to the creation of a film (usually run at the end of the film)"
+    },
+    {
+      "lemma": "declination",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "acknowledgment.n.03",
+          "via_synset": "declination.n.04"
+        }
+      ],
+      "definition": "a polite refusal of an invitation"
+    },
+    {
+      "lemma": "defence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "apology.n.02",
+          "via_synset": "defense.n.04"
+        }
+      ],
+      "definition": "the justification for some act or belief"
+    },
+    {
+      "lemma": "defense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "apology.n.02",
+          "via_synset": "defense.n.04"
+        }
+      ],
+      "definition": "the justification for some act or belief"
+    },
+    {
+      "lemma": "example",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "apology.n.03",
+          "via_synset": "example.n.01"
+        }
+      ],
+      "definition": "an item of information that is typical of a class or group"
+    },
+    {
+      "lemma": "exception",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "example.n.01",
+          "via_synset": "exception.n.02"
+        }
+      ],
+      "definition": "an instance that does not conform to a rule or generalization"
+    },
+    {
+      "lemma": "exculpation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "defense.n.04",
+          "via_synset": "excuse.n.01"
+        }
+      ],
+      "definition": "a defense of some offensive behavior or some failure to keep a promise etc."
+    },
+    {
+      "lemma": "excuse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "apology.n.03",
+          "via_synset": "apology.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "defense.n.04",
+          "via_synset": "excuse.n.01"
+        }
+      ],
+      "definition": "a poor example"
+    },
+    {
+      "lemma": "farewell",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "acknowledgment.n.03",
+          "via_synset": "farewell.n.01"
+        }
+      ],
+      "definition": "an acknowledgment or expression of goodwill at parting"
+    },
+    {
+      "lemma": "greeting",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "acknowledgment.n.03",
+          "via_synset": "greeting.n.01"
+        }
+      ],
+      "definition": "(usually plural) an acknowledgment or expression of good will (especially on meeting)"
+    },
+    {
+      "lemma": "handclasp",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "acknowledgment.n.03",
+          "via_synset": "handshake.n.01"
+        }
+      ],
+      "definition": "grasping and shaking a person's hand (as to acknowledge an introduction or to agree on a contract)"
+    },
+    {
+      "lemma": "handshake",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "acknowledgment.n.03",
+          "via_synset": "handshake.n.01"
+        }
+      ],
+      "definition": "grasping and shaking a person's hand (as to acknowledge an introduction or to agree on a contract)"
+    },
+    {
+      "lemma": "handshaking",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "acknowledgment.n.03",
+          "via_synset": "handshake.n.01"
+        }
+      ],
+      "definition": "grasping and shaking a person's hand (as to acknowledge an introduction or to agree on a contract)"
+    },
+    {
+      "lemma": "illustration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "apology.n.03",
+          "via_synset": "example.n.01"
+        }
+      ],
+      "definition": "an item of information that is typical of a class or group"
+    },
+    {
+      "lemma": "instance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "apology.n.03",
+          "via_synset": "example.n.01"
+        }
+      ],
+      "definition": "an item of information that is typical of a class or group"
+    },
+    {
+      "lemma": "mea culpa",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "acknowledgment.n.03",
+          "via_synset": "mea_culpa.n.01"
+        }
+      ],
+      "definition": "an acknowledgment of your error or guilt"
+    },
+    {
+      "lemma": "precedent",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "example.n.01",
+          "via_synset": "precedent.n.01"
+        }
+      ],
+      "definition": "an example that is used to justify similar occurrences at a later time"
+    },
+    {
+      "lemma": "quintessence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "example.n.01",
+          "via_synset": "quintessence.n.03"
+        }
+      ],
+      "definition": "the most typical example or representative of a type"
+    },
+    {
+      "lemma": "receipt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "acknowledgment.n.03",
+          "via_synset": "receipt.n.02"
+        }
+      ],
+      "definition": "an acknowledgment (usually tangible) that payment has been made"
+    },
+    {
+      "lemma": "regrets",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "acknowledgment.n.03",
+          "via_synset": "declination.n.04"
+        }
+      ],
+      "definition": "a polite refusal of an invitation"
+    },
+    {
+      "lemma": "representative",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "apology.n.03",
+          "via_synset": "example.n.01"
+        }
+      ],
+      "definition": "an item of information that is typical of a class or group"
+    },
+    {
+      "lemma": "salutation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "acknowledgment.n.03",
+          "via_synset": "greeting.n.01"
+        }
+      ],
+      "definition": "(usually plural) an acknowledgment or expression of good will (especially on meeting)"
+    },
+    {
+      "lemma": "sample",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "example.n.01",
+          "via_synset": "sample.n.01"
+        }
+      ],
+      "definition": "a small part of something intended as representative of the whole"
+    },
+    {
+      "lemma": "self-justification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "defense.n.04",
+          "via_synset": "excuse.n.01"
+        }
+      ],
+      "definition": "a defense of some offensive behavior or some failure to keep a promise etc."
+    },
+    {
+      "lemma": "shake",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "acknowledgment.n.03",
+          "via_synset": "handshake.n.01"
+        }
+      ],
+      "definition": "grasping and shaking a person's hand (as to acknowledge an introduction or to agree on a contract)"
+    },
+    {
+      "lemma": "specimen",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "example.n.01",
+          "via_synset": "specimen.n.01"
+        }
+      ],
+      "definition": "an example regarded as typical of its class"
+    },
+    {
+      "lemma": "thanks",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "acknowledgment.n.03",
+          "via_synset": "thanks.n.01"
+        }
+      ],
+      "definition": "an acknowledgment of appreciation"
+    },
+    {
+      "lemma": "vindication",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "apology.n.02",
+          "via_synset": "defense.n.04"
+        }
+      ],
+      "definition": "the justification for some act or belief"
+    },
+    {
+      "lemma": "word of farewell",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "acknowledgment.n.03",
+          "via_synset": "farewell.n.01"
+        }
+      ],
+      "definition": "an acknowledgment or expression of goodwill at parting"
+    }
+  ]
+}

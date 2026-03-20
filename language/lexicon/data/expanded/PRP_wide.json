@@ -1,0 +1,2133 @@
+{
+  "atom_id": "PRP.wide",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 140,
+  "pos_counts": {
+    "adj": 18,
+    "adv": 2,
+    "n": 120
+  },
+  "source_counts": {
+    "0_seed": 11,
+    "2_hypernym_d1": 2,
+    "6_derivational": 9,
+    "7_similar_to": 12,
+    "8_also_see": 2,
+    "10_sibling": 118
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 7,
+      "words": [
+        "wide(adj)",
+        "broad(adj)",
+        "wide(adv)",
+        "widely(adv)",
+        "broad(n)",
+        "roomy(adj)",
+        "spacious(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 2,
+      "words": [
+        "woman(n)",
+        "adult female(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 6,
+      "words": [
+        "broadness(n)",
+        "spaciousness(n)",
+        "wideness(n)",
+        "roominess(n)",
+        "room(n)",
+        "space(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 12,
+      "words": [
+        "large(adj)",
+        "big(adj)",
+        "wide-screen(adj)",
+        "deep(adj)",
+        "beamy(adj)",
+        "bird's-eye(adj)",
+        "panoramic(adj)",
+        "fanlike(adj)",
+        "sweeping(adj)",
+        "broad-brimmed(adj)",
+        "commodious(adj)",
+        "convenient(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 2,
+      "words": [
+        "comprehensive(adj)",
+        "thick(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 111,
+      "words": [
+        "donna(n)",
+        "gravida(n)",
+        "Wave(n)",
+        "sylph(n)",
+        "dame(n)",
+        "madam(n)",
+        "ma'am(n)",
+        "lady(n)",
+        "gentlewoman(n)",
+        "girl(n)",
+        "divorcee(n)",
+        "grass widow(n)",
+        "cat(n)",
+        "Wac(n)",
+        "girlfriend(n)",
+        "gold digger(n)",
+        "Cinderella(n)",
+        "maenad(n)",
+        "mistress(n)",
+        "kept woman(n)",
+        "fancy woman(n)",
+        "nymphet(n)",
+        "matriarch(n)",
+        "materfamilias(n)",
+        "bluestocking(n)",
+        "bas bleu(n)",
+        "matron(n)",
+        "jilt(n)",
+        "yellow woman(n)",
+        "ex-wife(n)",
+        "ex(n)",
+        "mestiza(n)",
+        "bachelor girl(n)",
+        "bachelorette(n)",
+        "jezebel(n)",
+        "Black woman(n)",
+        "shiksa(n)",
+        "shikse(n)",
+        "enchantress(n)",
+        "temptress(n)",
+        "siren(n)",
+        "Delilah(n)",
+        "femme fatale(n)",
+        "mother figure(n)",
+        "debutante(n)",
+        "deb(n)",
+        "geisha(n)",
+        "geisha girl(n)",
+        "wife(n)",
+        "married woman(n)",
+        "B-girl(n)",
+        "bar girl(n)",
+        "baggage(n)",
+        "nymph(n)",
+        "houri(n)",
+        "eyeful(n)",
+        "prostitute(n)",
+        "cocotte(n)",
+        "whore(n)",
+        "harlot(n)",
+        "bawd(n)",
+        "tart(n)",
+        "cyprian(n)",
+        "working girl(n)",
+        "sporting lady(n)",
+        "lady of pleasure(n)",
+        "woman of the street(n)",
+        "widow(n)",
+        "widow woman(n)",
+        "lady friend(n)",
+        "unmarried woman(n)",
+        "nullipara(n)",
+        "inamorata(n)",
+        "heroine(n)",
+        "nanny(n)",
+        "nursemaid(n)",
+        "nurse(n)",
+        "white woman(n)",
+        "coquette(n)",
+        "flirt(n)",
+        "vamp(n)",
+        "vamper(n)",
+        "minx(n)",
+        "tease(n)",
+        "prickteaser(n)",
+        "old woman(n)",
+        "bridesmaid(n)",
+        "maid of honor(n)",
+        "wonder woman(n)",
+        "dominatrix(n)",
+        "ball-buster(n)",
+        "ball-breaker(n)",
+        "smasher(n)",
+        "stunner(n)",
+        "knockout(n)",
+        "beauty(n)",
+        "ravisher(n)",
+        "sweetheart(n)",
+        "peach(n)",
+        "lulu(n)",
+        "looker(n)",
+        "mantrap(n)",
+        "dish(n)",
+        "miss(n)",
+        "missy(n)",
+        "young lady(n)",
+        "young woman(n)",
+        "fille(n)",
+        "amazon(n)",
+        "virago(n)",
+        "vestal(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "adult female",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "broad.n.01",
+          "via_synset": "woman.n.01"
+        }
+      ],
+      "definition": "an adult female person (as opposed to a man)"
+    },
+    {
+      "lemma": "amazon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "amazon.n.01"
+        }
+      ],
+      "definition": "a large strong and aggressive woman"
+    },
+    {
+      "lemma": "B-girl",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "b-girl.n.01"
+        }
+      ],
+      "definition": "a woman employed by a bar to act as a companion to men customers"
+    },
+    {
+      "lemma": "bachelor girl",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "bachelor_girl.n.01"
+        }
+      ],
+      "definition": "a young unmarried woman who lives alone"
+    },
+    {
+      "lemma": "bachelorette",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "bachelor_girl.n.01"
+        }
+      ],
+      "definition": "a young unmarried woman who lives alone"
+    },
+    {
+      "lemma": "baggage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "baggage.n.02"
+        }
+      ],
+      "definition": "a worthless or immoral woman"
+    },
+    {
+      "lemma": "ball-breaker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "ball-buster.n.01"
+        }
+      ],
+      "definition": "a demanding woman who destroys men's confidence"
+    },
+    {
+      "lemma": "ball-buster",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "ball-buster.n.01"
+        }
+      ],
+      "definition": "a demanding woman who destroys men's confidence"
+    },
+    {
+      "lemma": "bar girl",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "b-girl.n.01"
+        }
+      ],
+      "definition": "a woman employed by a bar to act as a companion to men customers"
+    },
+    {
+      "lemma": "bas bleu",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "bluestocking.n.01"
+        }
+      ],
+      "definition": "a woman having literary or intellectual interests"
+    },
+    {
+      "lemma": "bawd",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "prostitute.n.01"
+        }
+      ],
+      "definition": "a woman who engages in sexual intercourse for money"
+    },
+    {
+      "lemma": "beamy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wide.a.01",
+          "via_synset": "beamy.s.01"
+        }
+      ],
+      "definition": "broad in the beam"
+    },
+    {
+      "lemma": "beauty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "smasher.n.02"
+        }
+      ],
+      "definition": "a very attractive or seductive looking woman"
+    },
+    {
+      "lemma": "big",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "broad.s.05",
+          "via_synset": "large.a.01"
+        }
+      ],
+      "definition": "above average in size or number or quantity or magnitude or extent"
+    },
+    {
+      "lemma": "bird's-eye",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wide.a.01",
+          "via_synset": "bird's-eye.s.01"
+        }
+      ],
+      "definition": "as from an altitude or distance"
+    },
+    {
+      "lemma": "Black woman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "black_woman.n.01"
+        }
+      ],
+      "definition": "a woman who is Black"
+    },
+    {
+      "lemma": "bluestocking",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "bluestocking.n.01"
+        }
+      ],
+      "definition": "a woman having literary or intellectual interests"
+    },
+    {
+      "lemma": "bridesmaid",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "bridesmaid.n.01"
+        }
+      ],
+      "definition": "an unmarried woman who attends the bride at a wedding"
+    },
+    {
+      "lemma": "broad",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wide.a.01",
+          "via_synset": "wide.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "broad.s.05",
+          "via_synset": "broad.s.05"
+        }
+      ],
+      "definition": "having great (or a certain) extent from one side to the other"
+    },
+    {
+      "lemma": "broad",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "broad.n.01",
+          "via_synset": "broad.n.01"
+        }
+      ],
+      "definition": "slang term for a woman"
+    },
+    {
+      "lemma": "broad-brimmed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wide.a.01",
+          "via_synset": "broad-brimmed.s.01"
+        }
+      ],
+      "definition": "(of hats) having a broad brim"
+    },
+    {
+      "lemma": "broadness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "broad.s.05",
+          "via_synset": "wideness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wide.a.01",
+          "via_synset": "wideness.n.01"
+        }
+      ],
+      "definition": "the property of being wide; having great width"
+    },
+    {
+      "lemma": "cat",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "cat.n.03"
+        }
+      ],
+      "definition": "a spiteful woman gossip"
+    },
+    {
+      "lemma": "Cinderella",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "cinderella.n.01"
+        }
+      ],
+      "definition": "a woman whose merits were not been recognized but who then achieves sudden success and recognition"
+    },
+    {
+      "lemma": "cocotte",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "prostitute.n.01"
+        }
+      ],
+      "definition": "a woman who engages in sexual intercourse for money"
+    },
+    {
+      "lemma": "commodious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "roomy.s.01",
+          "via_synset": "commodious.a.01"
+        }
+      ],
+      "definition": "large and roomy (`convenient' is archaic in this sense)"
+    },
+    {
+      "lemma": "comprehensive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "wide.a.01",
+          "via_synset": "comprehensive.a.01"
+        }
+      ],
+      "definition": "including all or everything"
+    },
+    {
+      "lemma": "convenient",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "roomy.s.01",
+          "via_synset": "commodious.a.01"
+        }
+      ],
+      "definition": "large and roomy (`convenient' is archaic in this sense)"
+    },
+    {
+      "lemma": "coquette",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "coquette.n.01"
+        }
+      ],
+      "definition": "a seductive woman who uses her sex appeal to exploit men"
+    },
+    {
+      "lemma": "cyprian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "prostitute.n.01"
+        }
+      ],
+      "definition": "a woman who engages in sexual intercourse for money"
+    },
+    {
+      "lemma": "dame",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "dame.n.02"
+        }
+      ],
+      "definition": "a woman of refinement"
+    },
+    {
+      "lemma": "deb",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "debutante.n.01"
+        }
+      ],
+      "definition": "a young woman making her debut into society"
+    },
+    {
+      "lemma": "debutante",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "debutante.n.01"
+        }
+      ],
+      "definition": "a young woman making her debut into society"
+    },
+    {
+      "lemma": "deep",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wide.a.01",
+          "via_synset": "deep.s.07"
+        }
+      ],
+      "definition": "extending relatively far inward"
+    },
+    {
+      "lemma": "Delilah",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "enchantress.n.01"
+        }
+      ],
+      "definition": "a woman who is considered to be dangerously seductive"
+    },
+    {
+      "lemma": "dish",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "smasher.n.02"
+        }
+      ],
+      "definition": "a very attractive or seductive looking woman"
+    },
+    {
+      "lemma": "divorcee",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "divorcee.n.01"
+        }
+      ],
+      "definition": "a divorced woman or a woman who is separated from her husband"
+    },
+    {
+      "lemma": "dominatrix",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "dominatrix.n.01"
+        }
+      ],
+      "definition": "a dominating woman (especially one who plays that role in a sadomasochistic sexual relationship)"
+    },
+    {
+      "lemma": "donna",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "donna.n.01"
+        }
+      ],
+      "definition": "an Italian woman of rank"
+    },
+    {
+      "lemma": "enchantress",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "enchantress.n.01"
+        }
+      ],
+      "definition": "a woman who is considered to be dangerously seductive"
+    },
+    {
+      "lemma": "ex",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "ex-wife.n.01"
+        }
+      ],
+      "definition": "a woman who was formerly a particular man's wife"
+    },
+    {
+      "lemma": "ex-wife",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "ex-wife.n.01"
+        }
+      ],
+      "definition": "a woman who was formerly a particular man's wife"
+    },
+    {
+      "lemma": "eyeful",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "eyeful.n.01"
+        }
+      ],
+      "definition": "a strikingly beautiful woman"
+    },
+    {
+      "lemma": "fancy woman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "mistress.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "prostitute.n.01"
+        }
+      ],
+      "definition": "an adulterous woman; a woman who has an ongoing extramarital sexual relationship with a man"
+    },
+    {
+      "lemma": "fanlike",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wide.a.01",
+          "via_synset": "fanlike.s.01"
+        }
+      ],
+      "definition": "resembling a fan"
+    },
+    {
+      "lemma": "femme fatale",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "enchantress.n.01"
+        }
+      ],
+      "definition": "a woman who is considered to be dangerously seductive"
+    },
+    {
+      "lemma": "fille",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "girl.n.01"
+        }
+      ],
+      "definition": "a young woman"
+    },
+    {
+      "lemma": "flirt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "coquette.n.01"
+        }
+      ],
+      "definition": "a seductive woman who uses her sex appeal to exploit men"
+    },
+    {
+      "lemma": "geisha",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "geisha.n.01"
+        }
+      ],
+      "definition": "a Japanese woman trained to entertain men with conversation and singing and dancing"
+    },
+    {
+      "lemma": "geisha girl",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "geisha.n.01"
+        }
+      ],
+      "definition": "a Japanese woman trained to entertain men with conversation and singing and dancing"
+    },
+    {
+      "lemma": "gentlewoman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "dame.n.02"
+        }
+      ],
+      "definition": "a woman of refinement"
+    },
+    {
+      "lemma": "girl",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "girl.n.05"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "girlfriend.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "girl.n.01"
+        }
+      ],
+      "definition": "a friendly informal reference to a grown woman"
+    },
+    {
+      "lemma": "girlfriend",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "girlfriend.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "girlfriend.n.02"
+        }
+      ],
+      "definition": "any female friend"
+    },
+    {
+      "lemma": "gold digger",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "gold_digger.n.02"
+        }
+      ],
+      "definition": "a woman who associates with or marries a rich man in order to get valuables from him through gifts or a divorce settlement"
+    },
+    {
+      "lemma": "grass widow",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "divorcee.n.01"
+        }
+      ],
+      "definition": "a divorced woman or a woman who is separated from her husband"
+    },
+    {
+      "lemma": "gravida",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "gravida.n.02"
+        }
+      ],
+      "definition": "a pregnant woman"
+    },
+    {
+      "lemma": "harlot",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "prostitute.n.01"
+        }
+      ],
+      "definition": "a woman who engages in sexual intercourse for money"
+    },
+    {
+      "lemma": "heroine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "heroine.n.02"
+        }
+      ],
+      "definition": "a woman possessing heroic qualities or a woman who has performed heroic deeds"
+    },
+    {
+      "lemma": "houri",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "nymph.n.03"
+        }
+      ],
+      "definition": "a voluptuously beautiful young woman"
+    },
+    {
+      "lemma": "inamorata",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "inamorata.n.01"
+        }
+      ],
+      "definition": "a woman with whom you are in love or have an intimate relationship"
+    },
+    {
+      "lemma": "jezebel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "jezebel.n.02"
+        }
+      ],
+      "definition": "a shameless impudent scheming woman"
+    },
+    {
+      "lemma": "jilt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "jilt.n.01"
+        }
+      ],
+      "definition": "a woman who jilts a lover"
+    },
+    {
+      "lemma": "kept woman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "mistress.n.01"
+        }
+      ],
+      "definition": "an adulterous woman; a woman who has an ongoing extramarital sexual relationship with a man"
+    },
+    {
+      "lemma": "knockout",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "smasher.n.02"
+        }
+      ],
+      "definition": "a very attractive or seductive looking woman"
+    },
+    {
+      "lemma": "lady",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "dame.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "lady.n.01"
+        }
+      ],
+      "definition": "a woman of refinement"
+    },
+    {
+      "lemma": "lady friend",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "girlfriend.n.02"
+        }
+      ],
+      "definition": "a girl or young woman with whom a man is romantically involved"
+    },
+    {
+      "lemma": "lady of pleasure",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "prostitute.n.01"
+        }
+      ],
+      "definition": "a woman who engages in sexual intercourse for money"
+    },
+    {
+      "lemma": "large",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "broad.s.05",
+          "via_synset": "large.a.01"
+        }
+      ],
+      "definition": "above average in size or number or quantity or magnitude or extent"
+    },
+    {
+      "lemma": "looker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "smasher.n.02"
+        }
+      ],
+      "definition": "a very attractive or seductive looking woman"
+    },
+    {
+      "lemma": "lulu",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "smasher.n.02"
+        }
+      ],
+      "definition": "a very attractive or seductive looking woman"
+    },
+    {
+      "lemma": "ma'am",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "dame.n.02"
+        }
+      ],
+      "definition": "a woman of refinement"
+    },
+    {
+      "lemma": "madam",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "dame.n.02"
+        }
+      ],
+      "definition": "a woman of refinement"
+    },
+    {
+      "lemma": "maenad",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "maenad.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "maenad.n.01"
+        }
+      ],
+      "definition": "(Greek mythology) a woman participant in the orgiastic rites of Dionysus"
+    },
+    {
+      "lemma": "maid of honor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "bridesmaid.n.01"
+        }
+      ],
+      "definition": "an unmarried woman who attends the bride at a wedding"
+    },
+    {
+      "lemma": "mantrap",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "smasher.n.02"
+        }
+      ],
+      "definition": "a very attractive or seductive looking woman"
+    },
+    {
+      "lemma": "married woman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "wife.n.01"
+        }
+      ],
+      "definition": "a married woman; a man's partner in marriage"
+    },
+    {
+      "lemma": "materfamilias",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "matriarch.n.01"
+        }
+      ],
+      "definition": "a female head of a family or tribe"
+    },
+    {
+      "lemma": "matriarch",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "matriarch.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "matriarch.n.02"
+        }
+      ],
+      "definition": "a female head of a family or tribe"
+    },
+    {
+      "lemma": "matron",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "matron.n.03"
+        }
+      ],
+      "definition": "a woman in charge of nursing in a medical institution"
+    },
+    {
+      "lemma": "mestiza",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "mestiza.n.01"
+        }
+      ],
+      "definition": "a woman of mixed racial ancestry (especially mixed European and Native American ancestry)"
+    },
+    {
+      "lemma": "minx",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "coquette.n.01"
+        }
+      ],
+      "definition": "a seductive woman who uses her sex appeal to exploit men"
+    },
+    {
+      "lemma": "miss",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "girl.n.01"
+        }
+      ],
+      "definition": "a young woman"
+    },
+    {
+      "lemma": "missy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "girl.n.01"
+        }
+      ],
+      "definition": "a young woman"
+    },
+    {
+      "lemma": "mistress",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "mistress.n.01"
+        }
+      ],
+      "definition": "an adulterous woman; a woman who has an ongoing extramarital sexual relationship with a man"
+    },
+    {
+      "lemma": "mother figure",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "mother_figure.n.01"
+        }
+      ],
+      "definition": "a woman who evokes the feelings usually reserved for a mother"
+    },
+    {
+      "lemma": "nanny",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "nanny.n.01"
+        }
+      ],
+      "definition": "a woman who is the custodian of children"
+    },
+    {
+      "lemma": "nullipara",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "nullipara.n.01"
+        }
+      ],
+      "definition": "(obstetrics) a woman who has never give birth to a child"
+    },
+    {
+      "lemma": "nurse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "nanny.n.01"
+        }
+      ],
+      "definition": "a woman who is the custodian of children"
+    },
+    {
+      "lemma": "nursemaid",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "nanny.n.01"
+        }
+      ],
+      "definition": "a woman who is the custodian of children"
+    },
+    {
+      "lemma": "nymph",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "nymph.n.03"
+        }
+      ],
+      "definition": "a voluptuously beautiful young woman"
+    },
+    {
+      "lemma": "nymphet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "nymphet.n.01"
+        }
+      ],
+      "definition": "a sexually attractive young woman"
+    },
+    {
+      "lemma": "old woman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "old_woman.n.01"
+        }
+      ],
+      "definition": "a woman who is old"
+    },
+    {
+      "lemma": "panoramic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wide.a.01",
+          "via_synset": "bird's-eye.s.01"
+        }
+      ],
+      "definition": "as from an altitude or distance"
+    },
+    {
+      "lemma": "peach",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "smasher.n.02"
+        }
+      ],
+      "definition": "a very attractive or seductive looking woman"
+    },
+    {
+      "lemma": "prickteaser",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "coquette.n.01"
+        }
+      ],
+      "definition": "a seductive woman who uses her sex appeal to exploit men"
+    },
+    {
+      "lemma": "prostitute",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "prostitute.n.01"
+        }
+      ],
+      "definition": "a woman who engages in sexual intercourse for money"
+    },
+    {
+      "lemma": "ravisher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "smasher.n.02"
+        }
+      ],
+      "definition": "a very attractive or seductive looking woman"
+    },
+    {
+      "lemma": "room",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "roomy.s.01",
+          "via_synset": "room.n.02"
+        }
+      ],
+      "definition": "space for movement"
+    },
+    {
+      "lemma": "roominess",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "roomy.s.01",
+          "via_synset": "capaciousness.n.02"
+        }
+      ],
+      "definition": "spatial largeness and extensiveness (especially inside a building)"
+    },
+    {
+      "lemma": "roomy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "roomy.s.01",
+          "via_synset": "roomy.s.01"
+        }
+      ],
+      "definition": "(of buildings and rooms) having ample space"
+    },
+    {
+      "lemma": "shiksa",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "shiksa.n.01"
+        }
+      ],
+      "definition": "a derogatory term used by Jews to refer to non-Jewish women"
+    },
+    {
+      "lemma": "shikse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "shiksa.n.01"
+        }
+      ],
+      "definition": "a derogatory term used by Jews to refer to non-Jewish women"
+    },
+    {
+      "lemma": "siren",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "enchantress.n.01"
+        }
+      ],
+      "definition": "a woman who is considered to be dangerously seductive"
+    },
+    {
+      "lemma": "smasher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "smasher.n.02"
+        }
+      ],
+      "definition": "a very attractive or seductive looking woman"
+    },
+    {
+      "lemma": "space",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "roomy.s.01",
+          "via_synset": "space.n.03"
+        }
+      ],
+      "definition": "an area reserved for some particular purpose"
+    },
+    {
+      "lemma": "spacious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "roomy.s.01",
+          "via_synset": "roomy.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "broad.s.05",
+          "via_synset": "broad.s.05"
+        }
+      ],
+      "definition": "(of buildings and rooms) having ample space"
+    },
+    {
+      "lemma": "spaciousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "broad.s.05",
+          "via_synset": "capaciousness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "roomy.s.01",
+          "via_synset": "capaciousness.n.02"
+        }
+      ],
+      "definition": "spatial largeness and extensiveness (especially inside a building)"
+    },
+    {
+      "lemma": "sporting lady",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "prostitute.n.01"
+        }
+      ],
+      "definition": "a woman who engages in sexual intercourse for money"
+    },
+    {
+      "lemma": "stunner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "smasher.n.02"
+        }
+      ],
+      "definition": "a very attractive or seductive looking woman"
+    },
+    {
+      "lemma": "sweeping",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wide.a.01",
+          "via_synset": "sweeping.s.01"
+        }
+      ],
+      "definition": "taking in or moving over (or as if over) a wide area; often used in combination"
+    },
+    {
+      "lemma": "sweetheart",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "smasher.n.02"
+        }
+      ],
+      "definition": "a very attractive or seductive looking woman"
+    },
+    {
+      "lemma": "sylph",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "sylph.n.01"
+        }
+      ],
+      "definition": "a slender graceful young woman"
+    },
+    {
+      "lemma": "tart",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "prostitute.n.01"
+        }
+      ],
+      "definition": "a woman who engages in sexual intercourse for money"
+    },
+    {
+      "lemma": "tease",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "coquette.n.01"
+        }
+      ],
+      "definition": "a seductive woman who uses her sex appeal to exploit men"
+    },
+    {
+      "lemma": "temptress",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "enchantress.n.01"
+        }
+      ],
+      "definition": "a woman who is considered to be dangerously seductive"
+    },
+    {
+      "lemma": "thick",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "wide.a.01",
+          "via_synset": "thick.a.01"
+        }
+      ],
+      "definition": "not thin; of a specific thickness or of relatively great extent from one surface to the opposite usually in the smallest of the three solid dimensions"
+    },
+    {
+      "lemma": "unmarried woman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "unmarried_woman.n.01"
+        }
+      ],
+      "definition": "a woman who is not married"
+    },
+    {
+      "lemma": "vamp",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "coquette.n.01"
+        }
+      ],
+      "definition": "a seductive woman who uses her sex appeal to exploit men"
+    },
+    {
+      "lemma": "vamper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "coquette.n.01"
+        }
+      ],
+      "definition": "a seductive woman who uses her sex appeal to exploit men"
+    },
+    {
+      "lemma": "vestal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "vestal.n.01"
+        }
+      ],
+      "definition": "a chaste woman"
+    },
+    {
+      "lemma": "virago",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "amazon.n.01"
+        }
+      ],
+      "definition": "a large strong and aggressive woman"
+    },
+    {
+      "lemma": "Wac",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "wac.n.01"
+        }
+      ],
+      "definition": "a member of the Women's Army Corps"
+    },
+    {
+      "lemma": "Wave",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "wave.n.09"
+        }
+      ],
+      "definition": "a member of the women's reserve of the United States Navy; originally organized during World War II but now no longer a separate branch"
+    },
+    {
+      "lemma": "white woman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "white_woman.n.01"
+        }
+      ],
+      "definition": "a woman who is White"
+    },
+    {
+      "lemma": "whore",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "prostitute.n.01"
+        }
+      ],
+      "definition": "a woman who engages in sexual intercourse for money"
+    },
+    {
+      "lemma": "wide",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wide.a.01",
+          "via_synset": "wide.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "broad.s.05",
+          "via_synset": "broad.s.05"
+        }
+      ],
+      "definition": "having great (or a certain) extent from one side to the other"
+    },
+    {
+      "lemma": "wide",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wide.r.04",
+          "via_synset": "wide.r.04"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wide.r.02",
+          "via_synset": "wide.r.02"
+        }
+      ],
+      "definition": "to or over a great extent or range; far"
+    },
+    {
+      "lemma": "wide-screen",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wide.a.01",
+          "via_synset": "wide-screen.s.01"
+        }
+      ],
+      "definition": "(motion pictures) projected on a screen with much greater width than height"
+    },
+    {
+      "lemma": "widely",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wide.r.04",
+          "via_synset": "wide.r.04"
+        }
+      ],
+      "definition": "to or over a great extent or range; far"
+    },
+    {
+      "lemma": "wideness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "broad.s.05",
+          "via_synset": "enormousness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wide.a.01",
+          "via_synset": "wideness.n.01"
+        }
+      ],
+      "definition": "unusual largeness in size or extent or number"
+    },
+    {
+      "lemma": "widow",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "widow.n.01"
+        }
+      ],
+      "definition": "a woman whose husband is dead especially one who has not remarried"
+    },
+    {
+      "lemma": "widow woman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "widow.n.01"
+        }
+      ],
+      "definition": "a woman whose husband is dead especially one who has not remarried"
+    },
+    {
+      "lemma": "wife",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "wife.n.01"
+        }
+      ],
+      "definition": "a married woman; a man's partner in marriage"
+    },
+    {
+      "lemma": "woman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "broad.n.01",
+          "via_synset": "woman.n.01"
+        }
+      ],
+      "definition": "an adult female person (as opposed to a man)"
+    },
+    {
+      "lemma": "woman of the street",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "prostitute.n.01"
+        }
+      ],
+      "definition": "a woman who engages in sexual intercourse for money"
+    },
+    {
+      "lemma": "wonder woman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "wonder_woman.n.01"
+        }
+      ],
+      "definition": "a woman who can be a successful wife and have a professional career at the same time"
+    },
+    {
+      "lemma": "working girl",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "prostitute.n.01"
+        }
+      ],
+      "definition": "a woman who engages in sexual intercourse for money"
+    },
+    {
+      "lemma": "yellow woman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "yellow_woman.n.01"
+        }
+      ],
+      "definition": "offensive term for an Asian woman"
+    },
+    {
+      "lemma": "young lady",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "girl.n.01"
+        }
+      ],
+      "definition": "a young woman"
+    },
+    {
+      "lemma": "young woman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "woman.n.01",
+          "via_synset": "girl.n.01"
+        }
+      ],
+      "definition": "a young woman"
+    }
+  ]
+}

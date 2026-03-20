@@ -1,0 +1,697 @@
+{
+  "atom_id": "ABS.other",
+  "category": "ABS",
+  "seed_count": 6,
+  "total_keys": 36,
+  "pos_counts": {
+    "adj": 33,
+    "n": 2,
+    "v": 1
+  },
+  "source_counts": {
+    "0_seed": 7,
+    "7_similar_to": 36,
+    "8_also_see": 7,
+    "6_derivational": 4
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 4,
+      "words": [
+        "other(adj)",
+        "another(adj)",
+        "some other(adj)",
+        "different(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 3,
+      "words": [
+        "otherness(n)",
+        "difference(n)",
+        "differ(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 24,
+      "words": [
+        "past(adj)",
+        "strange(adj)",
+        "unusual(adj)",
+        "distinct(adj)",
+        "distinguishable(adj)",
+        "diverse(adj)",
+        "various(adj)",
+        "assorted(adj)",
+        "antithetic(adj)",
+        "antithetical(adj)",
+        "several(adj)",
+        "variant(adj)",
+        "contrasting(adj)",
+        "contrastive(adj)",
+        "diametric(adj)",
+        "diametrical(adj)",
+        "opposite(adj)",
+        "polar(adj)",
+        "disparate(adj)",
+        "divers(adj)",
+        "contrary(adj)",
+        "divergent(adj)",
+        "new(adj)",
+        "otherwise(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 5,
+      "words": [
+        "incompatible(adj)",
+        "dissimilar(adj)",
+        "unlike(adj)",
+        "varied(adj)",
+        "separate(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "another",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "another.s.01",
+          "via_synset": "another.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "other.a.01",
+          "via_synset": "another.s.01"
+        }
+      ],
+      "definition": "any of various alternatives; some other"
+    },
+    {
+      "lemma": "antithetic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "antithetic.s.01"
+        }
+      ],
+      "definition": "sharply contrasted in character or purpose"
+    },
+    {
+      "lemma": "antithetical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "antithetic.s.01"
+        }
+      ],
+      "definition": "sharply contrasted in character or purpose"
+    },
+    {
+      "lemma": "assorted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "assorted.s.02"
+        }
+      ],
+      "definition": "of many different kinds purposefully arranged but lacking any uniformity"
+    },
+    {
+      "lemma": "contrary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "contrary.s.01"
+        }
+      ],
+      "definition": "very opposed in nature or character or purpose"
+    },
+    {
+      "lemma": "contrasting",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "contrasting.s.01"
+        }
+      ],
+      "definition": "strikingly different; tending to contrast"
+    },
+    {
+      "lemma": "contrastive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "contrasting.s.01"
+        }
+      ],
+      "definition": "strikingly different; tending to contrast"
+    },
+    {
+      "lemma": "diametric",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "diametric.s.01"
+        }
+      ],
+      "definition": "characterized by opposite extremes; completely opposed"
+    },
+    {
+      "lemma": "diametrical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "diametric.s.01"
+        }
+      ],
+      "definition": "characterized by opposite extremes; completely opposed"
+    },
+    {
+      "lemma": "differ",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "different.a.01",
+          "via_synset": "differ.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "different.s.01",
+          "via_synset": "differ.v.01"
+        }
+      ],
+      "definition": "be different"
+    },
+    {
+      "lemma": "difference",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "different.a.01",
+          "via_synset": "difference.n.01"
+        }
+      ],
+      "definition": "the quality of being unlike or dissimilar"
+    },
+    {
+      "lemma": "different",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "different.a.01",
+          "via_synset": "different.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "different.s.01",
+          "via_synset": "different.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "other.a.01",
+          "via_synset": "different.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "other.a.01",
+          "via_synset": "different.s.03"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "different.a.01",
+          "via_synset": "unlike.a.01"
+        }
+      ],
+      "definition": "unlike in nature or quality or form or degree"
+    },
+    {
+      "lemma": "disparate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "disparate.s.01"
+        }
+      ],
+      "definition": "fundamentally different or distinct in quality or kind"
+    },
+    {
+      "lemma": "dissimilar",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "different.a.01",
+          "via_synset": "dissimilar.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "different.a.01",
+          "via_synset": "unlike.a.01"
+        }
+      ],
+      "definition": "not similar"
+    },
+    {
+      "lemma": "distinct",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "distinct.s.01"
+        }
+      ],
+      "definition": "(often followed by `from') not alike; different in nature or quality"
+    },
+    {
+      "lemma": "distinguishable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "distinct.s.01"
+        }
+      ],
+      "definition": "(often followed by `from') not alike; different in nature or quality"
+    },
+    {
+      "lemma": "divergent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "divergent.s.01"
+        }
+      ],
+      "definition": "diverging from another or from a standard"
+    },
+    {
+      "lemma": "divers",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "divers.s.01"
+        }
+      ],
+      "definition": "many and different"
+    },
+    {
+      "lemma": "diverse",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "diverse.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "divers.s.01"
+        }
+      ],
+      "definition": "distinctly dissimilar or unlike"
+    },
+    {
+      "lemma": "incompatible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "different.a.01",
+          "via_synset": "incompatible.a.01"
+        }
+      ],
+      "definition": "not compatible"
+    },
+    {
+      "lemma": "new",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "other.a.01",
+          "via_synset": "new.s.04"
+        }
+      ],
+      "definition": "other than the former one(s); different"
+    },
+    {
+      "lemma": "opposite",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "diametric.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "opposite.s.04"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "other.a.01",
+          "via_synset": "opposite.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "other.a.01",
+          "via_synset": "opposite.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "other.a.01",
+          "via_synset": "opposite.s.01"
+        }
+      ],
+      "definition": "characterized by opposite extremes; completely opposed"
+    },
+    {
+      "lemma": "other",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "other.s.03",
+          "via_synset": "other.s.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "other.a.01",
+          "via_synset": "other.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "other.s.01",
+          "via_synset": "other.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "another.s.01",
+          "via_synset": "other.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.s.01",
+          "via_synset": "other.a.01"
+        }
+      ],
+      "definition": "very unusual; different in character or quality from the normal or expected; - Lance Morrow"
+    },
+    {
+      "lemma": "otherness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "other.s.03",
+          "via_synset": "otherness.n.01"
+        }
+      ],
+      "definition": "the quality of being not alike; being distinct or different from that otherwise experienced or known"
+    },
+    {
+      "lemma": "otherwise",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "other.a.01",
+          "via_synset": "otherwise.s.01"
+        }
+      ],
+      "definition": "other than as supposed or expected"
+    },
+    {
+      "lemma": "past",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "other.s.01",
+          "via_synset": "past.a.01"
+        }
+      ],
+      "definition": "earlier than the present time; no longer current"
+    },
+    {
+      "lemma": "polar",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "diametric.s.01"
+        }
+      ],
+      "definition": "characterized by opposite extremes; completely opposed"
+    },
+    {
+      "lemma": "separate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "other.a.01",
+          "via_synset": "separate.a.01"
+        }
+      ],
+      "definition": "independent; not united or joint"
+    },
+    {
+      "lemma": "several",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "several.s.03"
+        }
+      ],
+      "definition": "distinct and individual"
+    },
+    {
+      "lemma": "some other",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "another.s.01",
+          "via_synset": "another.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "other.a.01",
+          "via_synset": "another.s.01"
+        }
+      ],
+      "definition": "any of various alternatives; some other"
+    },
+    {
+      "lemma": "strange",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "other.s.03",
+          "via_synset": "strange.a.01"
+        }
+      ],
+      "definition": "being definitely out of the ordinary and unexpected; slightly odd or even a bit weird"
+    },
+    {
+      "lemma": "unlike",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "different.a.01",
+          "via_synset": "unlike.a.01"
+        }
+      ],
+      "definition": "marked by dissimilarity"
+    },
+    {
+      "lemma": "unusual",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "other.s.03",
+          "via_synset": "strange.a.01"
+        }
+      ],
+      "definition": "being definitely out of the ordinary and unexpected; slightly odd or even a bit weird"
+    },
+    {
+      "lemma": "variant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "variant.s.01"
+        }
+      ],
+      "definition": "differing from a norm or standard"
+    },
+    {
+      "lemma": "varied",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "different.a.01",
+          "via_synset": "varied.a.01"
+        }
+      ],
+      "definition": "characterized by variety"
+    },
+    {
+      "lemma": "various",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "diverse.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "different.a.01",
+          "via_synset": "assorted.s.02"
+        }
+      ],
+      "definition": "distinctly dissimilar or unlike"
+    }
+  ]
+}

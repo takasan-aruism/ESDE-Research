@@ -1,0 +1,1256 @@
+{
+  "atom_id": "PRP.bright",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 77,
+  "pos_counts": {
+    "adj": 69,
+    "n": 8
+  },
+  "source_counts": {
+    "0_seed": 13,
+    "7_similar_to": 67,
+    "6_derivational": 13
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 9,
+      "words": [
+        "bright(adj)",
+        "brilliant(adj)",
+        "vivid(adj)",
+        "smart(adj)",
+        "superb(adj)",
+        "aglow(adj)",
+        "lambent(adj)",
+        "lucent(adj)",
+        "luminous(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 8,
+      "words": [
+        "brightness(n)",
+        "lambency(n)",
+        "luminousness(n)",
+        "luminosity(n)",
+        "brilliancy(n)",
+        "brilliance(n)",
+        "vividness(n)",
+        "smartness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 60,
+      "words": [
+        "beaming(adj)",
+        "beamy(adj)",
+        "effulgent(adj)",
+        "radiant(adj)",
+        "refulgent(adj)",
+        "blazing(adj)",
+        "blinding(adj)",
+        "dazzling(adj)",
+        "fulgent(adj)",
+        "glaring(adj)",
+        "glary(adj)",
+        "glimmery(adj)",
+        "silver(adj)",
+        "silvern(adj)",
+        "silvery(adj)",
+        "twinkling(adj)",
+        "agleam(adj)",
+        "gleaming(adj)",
+        "nitid(adj)",
+        "bright as a new penny(adj)",
+        "beady(adj)",
+        "beadlike(adj)",
+        "buttony(adj)",
+        "buttonlike(adj)",
+        "glistening(adj)",
+        "glossy(adj)",
+        "lustrous(adj)",
+        "sheeny(adj)",
+        "shiny(adj)",
+        "shining(adj)",
+        "noctilucent(adj)",
+        "iridescent(adj)",
+        "nacreous(adj)",
+        "opalescent(adj)",
+        "opaline(adj)",
+        "pearlescent(adj)",
+        "lurid(adj)",
+        "shimmery(adj)",
+        "self-luminous(adj)",
+        "ardent(adj)",
+        "aglitter(adj)",
+        "coruscant(adj)",
+        "fulgid(adj)",
+        "glinting(adj)",
+        "glistering(adj)",
+        "glittering(adj)",
+        "glittery(adj)",
+        "scintillant(adj)",
+        "scintillating(adj)",
+        "sparkly(adj)",
+        "satiny(adj)",
+        "sleek(adj)",
+        "silken(adj)",
+        "silky(adj)",
+        "silklike(adj)",
+        "slick(adj)",
+        "superior(adj)",
+        "colorful(adj)",
+        "colourful(adj)",
+        "intelligent(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "agleam",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "agleam.s.01"
+        }
+      ],
+      "definition": "bright with a steady but subdued shining"
+    },
+    {
+      "lemma": "aglitter",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "aglitter.s.01"
+        }
+      ],
+      "definition": "having brief brilliant points or flashes of light"
+    },
+    {
+      "lemma": "aglow",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aglow.s.01",
+          "via_synset": "aglow.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "aglow.s.01"
+        }
+      ],
+      "definition": "softly bright or radiant"
+    },
+    {
+      "lemma": "ardent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "ardent.s.03"
+        }
+      ],
+      "definition": "glowing or shining like fire; - Alexander Pope"
+    },
+    {
+      "lemma": "beadlike",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "beady.s.01"
+        }
+      ],
+      "definition": "small and round and shiny like a shiny bead or button"
+    },
+    {
+      "lemma": "beady",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "beady.s.01"
+        }
+      ],
+      "definition": "small and round and shiny like a shiny bead or button"
+    },
+    {
+      "lemma": "beaming",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "beaming.s.03"
+        }
+      ],
+      "definition": "radiating or as if radiating light"
+    },
+    {
+      "lemma": "beamy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "beaming.s.03"
+        }
+      ],
+      "definition": "radiating or as if radiating light"
+    },
+    {
+      "lemma": "blazing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "blazing.s.01"
+        }
+      ],
+      "definition": "shining intensely"
+    },
+    {
+      "lemma": "blinding",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "blazing.s.01"
+        }
+      ],
+      "definition": "shining intensely"
+    },
+    {
+      "lemma": "bright",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bright.a.01",
+          "via_synset": "bright.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bright.s.01",
+          "via_synset": "bright.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bright.s.02",
+          "via_synset": "bright.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "aglow.s.01",
+          "via_synset": "bright.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "brilliant.s.05",
+          "via_synset": "bright.a.01"
+        }
+      ],
+      "definition": "emitting or reflecting light readily or in large amounts"
+    },
+    {
+      "lemma": "bright as a new penny",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "bright_as_a_new_penny.s.01"
+        }
+      ],
+      "definition": "(metaphor) shining brightly"
+    },
+    {
+      "lemma": "brightness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bright.a.01",
+          "via_synset": "brightness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bright.s.01",
+          "via_synset": "brightness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bright.s.02",
+          "via_synset": "brightness.n.02"
+        }
+      ],
+      "definition": "the location of a visual perception along a continuum from black to white"
+    },
+    {
+      "lemma": "brilliance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "brilliant.s.01",
+          "via_synset": "magnificence.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "brilliant.s.05",
+          "via_synset": "glare.n.01"
+        }
+      ],
+      "definition": "the quality of being magnificent or splendid or grand"
+    },
+    {
+      "lemma": "brilliancy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "brilliant.s.01",
+          "via_synset": "luster.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bright.s.01",
+          "via_synset": "luster.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "brilliant.s.05",
+          "via_synset": "luster.n.01"
+        }
+      ],
+      "definition": "a quality that outshines the usual"
+    },
+    {
+      "lemma": "brilliant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bright.s.01",
+          "via_synset": "bright.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "brilliant.s.05",
+          "via_synset": "brilliant.s.05"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "brilliant.s.01",
+          "via_synset": "brilliant.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "brilliant.s.05"
+        }
+      ],
+      "definition": "having striking color"
+    },
+    {
+      "lemma": "buttonlike",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "beady.s.01"
+        }
+      ],
+      "definition": "small and round and shiny like a shiny bead or button"
+    },
+    {
+      "lemma": "buttony",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "beady.s.01"
+        }
+      ],
+      "definition": "small and round and shiny like a shiny bead or button"
+    },
+    {
+      "lemma": "colorful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.s.01",
+          "via_synset": "colorful.a.01"
+        }
+      ],
+      "definition": "having striking color"
+    },
+    {
+      "lemma": "colourful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.s.01",
+          "via_synset": "colorful.a.01"
+        }
+      ],
+      "definition": "having striking color"
+    },
+    {
+      "lemma": "coruscant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "aglitter.s.01"
+        }
+      ],
+      "definition": "having brief brilliant points or flashes of light"
+    },
+    {
+      "lemma": "dazzling",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "blazing.s.01"
+        }
+      ],
+      "definition": "shining intensely"
+    },
+    {
+      "lemma": "effulgent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "beaming.s.03"
+        }
+      ],
+      "definition": "radiating or as if radiating light"
+    },
+    {
+      "lemma": "fulgent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "blazing.s.01"
+        }
+      ],
+      "definition": "shining intensely"
+    },
+    {
+      "lemma": "fulgid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "aglitter.s.01"
+        }
+      ],
+      "definition": "having brief brilliant points or flashes of light"
+    },
+    {
+      "lemma": "glaring",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "blazing.s.01"
+        }
+      ],
+      "definition": "shining intensely"
+    },
+    {
+      "lemma": "glary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "blazing.s.01"
+        }
+      ],
+      "definition": "shining intensely"
+    },
+    {
+      "lemma": "gleaming",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "agleam.s.01"
+        }
+      ],
+      "definition": "bright with a steady but subdued shining"
+    },
+    {
+      "lemma": "glimmery",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "glimmery.s.01"
+        }
+      ],
+      "definition": "shining softly and intermittently"
+    },
+    {
+      "lemma": "glinting",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "aglitter.s.01"
+        }
+      ],
+      "definition": "having brief brilliant points or flashes of light"
+    },
+    {
+      "lemma": "glistening",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "glistening.s.01"
+        }
+      ],
+      "definition": "reflecting light"
+    },
+    {
+      "lemma": "glistering",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "aglitter.s.01"
+        }
+      ],
+      "definition": "having brief brilliant points or flashes of light"
+    },
+    {
+      "lemma": "glittering",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "aglitter.s.01"
+        }
+      ],
+      "definition": "having brief brilliant points or flashes of light"
+    },
+    {
+      "lemma": "glittery",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "aglitter.s.01"
+        }
+      ],
+      "definition": "having brief brilliant points or flashes of light"
+    },
+    {
+      "lemma": "glossy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "glistening.s.01"
+        }
+      ],
+      "definition": "reflecting light"
+    },
+    {
+      "lemma": "intelligent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.s.02",
+          "via_synset": "intelligent.a.01"
+        }
+      ],
+      "definition": "having the capacity for thought and reason especially to a high degree"
+    },
+    {
+      "lemma": "iridescent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "iridescent.s.02"
+        }
+      ],
+      "definition": "having a play of lustrous rainbow colors"
+    },
+    {
+      "lemma": "lambency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aglow.s.01",
+          "via_synset": "gleam.n.01"
+        }
+      ],
+      "definition": "an appearance of reflected light"
+    },
+    {
+      "lemma": "lambent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aglow.s.01",
+          "via_synset": "aglow.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "aglow.s.01"
+        }
+      ],
+      "definition": "softly bright or radiant"
+    },
+    {
+      "lemma": "lucent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aglow.s.01",
+          "via_synset": "aglow.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "aglow.s.01"
+        }
+      ],
+      "definition": "softly bright or radiant"
+    },
+    {
+      "lemma": "luminosity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aglow.s.01",
+          "via_synset": "luminosity.n.01"
+        }
+      ],
+      "definition": "the quality of being luminous; emitting or reflecting light"
+    },
+    {
+      "lemma": "luminous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aglow.s.01",
+          "via_synset": "aglow.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "aglow.s.01"
+        }
+      ],
+      "definition": "softly bright or radiant"
+    },
+    {
+      "lemma": "luminousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aglow.s.01",
+          "via_synset": "luminosity.n.01"
+        }
+      ],
+      "definition": "the quality of being luminous; emitting or reflecting light"
+    },
+    {
+      "lemma": "lurid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "lurid.s.03"
+        }
+      ],
+      "definition": "shining with an unnatural red glow as of fire seen through smoke"
+    },
+    {
+      "lemma": "lustrous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "glistening.s.01"
+        }
+      ],
+      "definition": "reflecting light"
+    },
+    {
+      "lemma": "nacreous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "iridescent.s.02"
+        }
+      ],
+      "definition": "having a play of lustrous rainbow colors"
+    },
+    {
+      "lemma": "nitid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "agleam.s.01"
+        }
+      ],
+      "definition": "bright with a steady but subdued shining"
+    },
+    {
+      "lemma": "noctilucent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "noctilucent.s.01"
+        }
+      ],
+      "definition": "shining or glowing by night"
+    },
+    {
+      "lemma": "opalescent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "iridescent.s.02"
+        }
+      ],
+      "definition": "having a play of lustrous rainbow colors"
+    },
+    {
+      "lemma": "opaline",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "iridescent.s.02"
+        }
+      ],
+      "definition": "having a play of lustrous rainbow colors"
+    },
+    {
+      "lemma": "pearlescent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "iridescent.s.02"
+        }
+      ],
+      "definition": "having a play of lustrous rainbow colors"
+    },
+    {
+      "lemma": "radiant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "beaming.s.03"
+        }
+      ],
+      "definition": "radiating or as if radiating light"
+    },
+    {
+      "lemma": "refulgent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "beaming.s.03"
+        }
+      ],
+      "definition": "radiating or as if radiating light"
+    },
+    {
+      "lemma": "satiny",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "satiny.s.01"
+        }
+      ],
+      "definition": "having a smooth, gleaming surface reflecting light"
+    },
+    {
+      "lemma": "scintillant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "aglitter.s.01"
+        }
+      ],
+      "definition": "having brief brilliant points or flashes of light"
+    },
+    {
+      "lemma": "scintillating",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "aglitter.s.01"
+        }
+      ],
+      "definition": "having brief brilliant points or flashes of light"
+    },
+    {
+      "lemma": "self-luminous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "self-luminous.s.01"
+        }
+      ],
+      "definition": "having in itself the property of emitting light"
+    },
+    {
+      "lemma": "sheeny",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "glistening.s.01"
+        }
+      ],
+      "definition": "reflecting light"
+    },
+    {
+      "lemma": "shimmery",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "shimmery.s.01"
+        }
+      ],
+      "definition": "glistening tremulously"
+    },
+    {
+      "lemma": "shining",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "glistening.s.01"
+        }
+      ],
+      "definition": "reflecting light"
+    },
+    {
+      "lemma": "shiny",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "glistening.s.01"
+        }
+      ],
+      "definition": "reflecting light"
+    },
+    {
+      "lemma": "silken",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "satiny.s.01"
+        }
+      ],
+      "definition": "having a smooth, gleaming surface reflecting light"
+    },
+    {
+      "lemma": "silklike",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "satiny.s.01"
+        }
+      ],
+      "definition": "having a smooth, gleaming surface reflecting light"
+    },
+    {
+      "lemma": "silky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "satiny.s.01"
+        }
+      ],
+      "definition": "having a smooth, gleaming surface reflecting light"
+    },
+    {
+      "lemma": "silver",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "silver.s.02"
+        }
+      ],
+      "definition": "having the white lustrous sheen of silver"
+    },
+    {
+      "lemma": "silvern",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "silver.s.02"
+        }
+      ],
+      "definition": "having the white lustrous sheen of silver"
+    },
+    {
+      "lemma": "silvery",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "silver.s.02"
+        }
+      ],
+      "definition": "having the white lustrous sheen of silver"
+    },
+    {
+      "lemma": "sleek",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "satiny.s.01"
+        }
+      ],
+      "definition": "having a smooth, gleaming surface reflecting light"
+    },
+    {
+      "lemma": "slick",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "satiny.s.01"
+        }
+      ],
+      "definition": "having a smooth, gleaming surface reflecting light"
+    },
+    {
+      "lemma": "smart",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bright.s.02",
+          "via_synset": "bright.s.02"
+        }
+      ],
+      "definition": "characterized by quickness and ease in learning"
+    },
+    {
+      "lemma": "smartness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bright.s.02",
+          "via_synset": "brightness.n.02"
+        }
+      ],
+      "definition": "intelligence as manifested in being quick and witty"
+    },
+    {
+      "lemma": "sparkly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "aglitter.s.01"
+        }
+      ],
+      "definition": "having brief brilliant points or flashes of light"
+    },
+    {
+      "lemma": "superb",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "brilliant.s.01",
+          "via_synset": "brilliant.s.01"
+        }
+      ],
+      "definition": "of surpassing excellence"
+    },
+    {
+      "lemma": "superior",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "brilliant.s.01",
+          "via_synset": "superior.a.01"
+        }
+      ],
+      "definition": "of high or superior quality or performance"
+    },
+    {
+      "lemma": "twinkling",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bright.a.01",
+          "via_synset": "twinkling.s.01"
+        }
+      ],
+      "definition": "shining intermittently with a sparkling light"
+    },
+    {
+      "lemma": "vivid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bright.s.01",
+          "via_synset": "bright.s.01"
+        }
+      ],
+      "definition": "having striking color"
+    },
+    {
+      "lemma": "vividness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bright.s.01",
+          "via_synset": "saturation.n.04"
+        }
+      ],
+      "definition": "chromatic purity: freedom from dilution with white and hence vivid in hue"
+    }
+  ]
+}

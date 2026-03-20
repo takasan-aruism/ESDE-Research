@@ -1,0 +1,1885 @@
+{
+  "atom_id": "VAL.ugliness",
+  "category": "VAL",
+  "seed_count": 6,
+  "total_keys": 119,
+  "pos_counts": {
+    "n": 88,
+    "adj": 30,
+    "v": 1
+  },
+  "source_counts": {
+    "0_seed": 14,
+    "6_derivational": 25,
+    "7_similar_to": 16,
+    "2_hypernym_d1": 4,
+    "3_hyponym_d1": 12,
+    "4_hyponym_d2": 1,
+    "8_also_see": 3,
+    "10_sibling": 65
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 11,
+      "words": [
+        "ugliness(n)",
+        "nefariousness(n)",
+        "wickedness(n)",
+        "vileness(n)",
+        "ugly(adj)",
+        "surly(adj)",
+        "hideous(adj)",
+        "horrid(adj)",
+        "horrific(adj)",
+        "outrageous(adj)",
+        "repulsive(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 4,
+      "words": [
+        "appearance(n)",
+        "visual aspect(n)",
+        "evil(n)",
+        "evilness(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 12,
+      "words": [
+        "eyesore(n)",
+        "garishness(n)",
+        "gaudiness(n)",
+        "unpleasingness(n)",
+        "grotesqueness(n)",
+        "grotesquery(n)",
+        "grotesquerie(n)",
+        "unattractiveness(n)",
+        "hideousness(n)",
+        "unsightliness(n)",
+        "enormity(n)",
+        "filthiness(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 1,
+      "words": [
+        "shapelessness(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 16,
+      "words": [
+        "unattractive(adj)",
+        "nefarious(adj)",
+        "wicked(adj)",
+        "filthy(adj)",
+        "surliness(n)",
+        "garish(adj)",
+        "gaudy(adj)",
+        "unsightly(adj)",
+        "grotesque(adj)",
+        "shapeless(adj)",
+        "unpleasing(adj)",
+        "horridness(n)",
+        "outrage(n)",
+        "outrageousness(n)",
+        "repulsiveness(n)",
+        "repel(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 11,
+      "words": [
+        "ill-natured(adj)",
+        "monstrous(adj)",
+        "fugly(adj)",
+        "evil-looking(adj)",
+        "disfigured(adj)",
+        "unlovely(adj)",
+        "unpicturesque(adj)",
+        "ill-favored(adj)",
+        "ill-favoured(adj)",
+        "scrofulous(adj)",
+        "offensive(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 2,
+      "words": [
+        "displeasing(adj)",
+        "awkward(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 62,
+      "words": [
+        "disfigurement(n)",
+        "disfiguration(n)",
+        "deformity(n)",
+        "homeliness(n)",
+        "plainness(n)",
+        "phase(n)",
+        "format(n)",
+        "agerasia(n)",
+        "sleekness(n)",
+        "perspective(n)",
+        "linear perspective(n)",
+        "hairiness(n)",
+        "pilosity(n)",
+        "blemish(n)",
+        "defect(n)",
+        "mar(n)",
+        "look(n)",
+        "superficies(n)",
+        "semblance(n)",
+        "gloss(n)",
+        "color(n)",
+        "colour(n)",
+        "ornateness(n)",
+        "elaborateness(n)",
+        "decorativeness(n)",
+        "face(n)",
+        "view(n)",
+        "complexion(n)",
+        "persona(n)",
+        "image(n)",
+        "stain(n)",
+        "discoloration(n)",
+        "discolouration(n)",
+        "vanishing point(n)",
+        "countenance(n)",
+        "visage(n)",
+        "form(n)",
+        "shape(n)",
+        "cast(n)",
+        "etiolation(n)",
+        "impression(n)",
+        "effect(n)",
+        "hairlessness(n)",
+        "malevolence(n)",
+        "malevolency(n)",
+        "malice(n)",
+        "worst(n)",
+        "maleficence(n)",
+        "mischief(n)",
+        "balefulness(n)",
+        "malignity(n)",
+        "malignancy(n)",
+        "malignance(n)",
+        "reprehensibility(n)",
+        "error(n)",
+        "wrongdoing(n)",
+        "frailty(n)",
+        "vice(n)",
+        "perversity(n)",
+        "perverseness(n)",
+        "villainy(n)",
+        "villainousness(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "agerasia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "agerasia.n.01"
+        }
+      ],
+      "definition": "youthful appearance in an old person"
+    },
+    {
+      "lemma": "appearance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "ugliness.n.01",
+          "via_synset": "appearance.n.01"
+        }
+      ],
+      "definition": "outward or visible aspect of a person or thing"
+    },
+    {
+      "lemma": "awkward",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "ugly.a.01",
+          "via_synset": "awkward.a.02"
+        }
+      ],
+      "definition": "lacking grace or skill in manner or movement or performance"
+    },
+    {
+      "lemma": "balefulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evil.n.03",
+          "via_synset": "maleficence.n.02"
+        }
+      ],
+      "definition": "the quality or nature of being harmful or evil"
+    },
+    {
+      "lemma": "blemish",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "blemish.n.01"
+        }
+      ],
+      "definition": "a mark or flaw that spoils the appearance of something (especially on a person's body)"
+    },
+    {
+      "lemma": "cast",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "form.n.07"
+        }
+      ],
+      "definition": "the visual appearance of something or someone"
+    },
+    {
+      "lemma": "color",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "semblance.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "color.n.08"
+        }
+      ],
+      "definition": "an outward or token appearance or form that is deliberately misleading"
+    },
+    {
+      "lemma": "colour",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "semblance.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "color.n.08"
+        }
+      ],
+      "definition": "an outward or token appearance or form that is deliberately misleading"
+    },
+    {
+      "lemma": "complexion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "complexion.n.04"
+        }
+      ],
+      "definition": "texture and appearance of the skin of the face"
+    },
+    {
+      "lemma": "countenance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "countenance.n.01"
+        }
+      ],
+      "definition": "the appearance conveyed by a person's face"
+    },
+    {
+      "lemma": "decorativeness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "decorativeness.n.01"
+        }
+      ],
+      "definition": "an appearance that serves to decorate and make something more attractive"
+    },
+    {
+      "lemma": "defect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "blemish.n.01"
+        }
+      ],
+      "definition": "a mark or flaw that spoils the appearance of something (especially on a person's body)"
+    },
+    {
+      "lemma": "deformity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "disfigurement.n.01"
+        }
+      ],
+      "definition": "an appearance that has been spoiled or is misshapen"
+    },
+    {
+      "lemma": "discoloration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "stain.n.01"
+        }
+      ],
+      "definition": "a soiled or discolored appearance"
+    },
+    {
+      "lemma": "discolouration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "stain.n.01"
+        }
+      ],
+      "definition": "a soiled or discolored appearance"
+    },
+    {
+      "lemma": "disfiguration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "disfigurement.n.01"
+        }
+      ],
+      "definition": "an appearance that has been spoiled or is misshapen"
+    },
+    {
+      "lemma": "disfigured",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "ugly.a.01",
+          "via_synset": "disfigured.s.01"
+        }
+      ],
+      "definition": "having the appearance spoiled"
+    },
+    {
+      "lemma": "disfigurement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "disfigurement.n.01"
+        }
+      ],
+      "definition": "an appearance that has been spoiled or is misshapen"
+    },
+    {
+      "lemma": "displeasing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "ugly.a.01",
+          "via_synset": "displeasing.a.01"
+        }
+      ],
+      "definition": "causing displeasure or lacking pleasing qualities"
+    },
+    {
+      "lemma": "effect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "impression.n.02"
+        }
+      ],
+      "definition": "an outward appearance"
+    },
+    {
+      "lemma": "elaborateness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "ornateness.n.02"
+        }
+      ],
+      "definition": "an ornate appearance; being elaborately (even excessively) decorated"
+    },
+    {
+      "lemma": "enormity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "nefariousness.n.01",
+          "via_synset": "enormity.n.03"
+        }
+      ],
+      "definition": "the quality of extreme wickedness"
+    },
+    {
+      "lemma": "error",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evil.n.03",
+          "via_synset": "error.n.05"
+        }
+      ],
+      "definition": "departure from what is ethically acceptable"
+    },
+    {
+      "lemma": "etiolation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "etiolation.n.01"
+        }
+      ],
+      "definition": "a pale and sickly appearance"
+    },
+    {
+      "lemma": "evil",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "nefariousness.n.01",
+          "via_synset": "evil.n.03"
+        }
+      ],
+      "definition": "the quality of being morally wrong in principle or practice"
+    },
+    {
+      "lemma": "evil-looking",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "ugly.a.01",
+          "via_synset": "evil-looking.s.01"
+        }
+      ],
+      "definition": "having an evil appearance"
+    },
+    {
+      "lemma": "evilness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "nefariousness.n.01",
+          "via_synset": "evil.n.03"
+        }
+      ],
+      "definition": "the quality of being morally wrong in principle or practice"
+    },
+    {
+      "lemma": "eyesore",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ugliness.n.01",
+          "via_synset": "eyesore.n.01"
+        }
+      ],
+      "definition": "something very ugly and offensive"
+    },
+    {
+      "lemma": "face",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "face.n.03"
+        }
+      ],
+      "definition": "the general outward appearance of something"
+    },
+    {
+      "lemma": "filthiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "nefariousness.n.01",
+          "via_synset": "filthiness.n.02"
+        }
+      ],
+      "definition": "moral corruption or pollution"
+    },
+    {
+      "lemma": "filthy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "filthiness.n.02",
+          "via_synset": "dirty.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "filthiness.n.02",
+          "via_synset": "cruddy.s.01"
+        }
+      ],
+      "definition": "vile; despicable"
+    },
+    {
+      "lemma": "form",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "form.n.07"
+        }
+      ],
+      "definition": "the visual appearance of something or someone"
+    },
+    {
+      "lemma": "format",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "format.n.02"
+        }
+      ],
+      "definition": "the general appearance of a publication"
+    },
+    {
+      "lemma": "frailty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evil.n.03",
+          "via_synset": "frailty.n.02"
+        }
+      ],
+      "definition": "moral weakness"
+    },
+    {
+      "lemma": "fugly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "ugly.a.01",
+          "via_synset": "fugly.s.01"
+        }
+      ],
+      "definition": "(slang) extremely ugly"
+    },
+    {
+      "lemma": "garish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "garishness.n.02",
+          "via_synset": "brassy.s.01"
+        }
+      ],
+      "definition": "tastelessly showy"
+    },
+    {
+      "lemma": "garishness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ugliness.n.01",
+          "via_synset": "garishness.n.02"
+        }
+      ],
+      "definition": "strident color or excessive ornamentation"
+    },
+    {
+      "lemma": "gaudiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ugliness.n.01",
+          "via_synset": "garishness.n.02"
+        }
+      ],
+      "definition": "strident color or excessive ornamentation"
+    },
+    {
+      "lemma": "gaudy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "garishness.n.02",
+          "via_synset": "brassy.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "garishness.n.02",
+          "via_synset": "flashy.s.02"
+        }
+      ],
+      "definition": "tastelessly showy"
+    },
+    {
+      "lemma": "gloss",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "semblance.n.01"
+        }
+      ],
+      "definition": "an outward or token appearance or form that is deliberately misleading"
+    },
+    {
+      "lemma": "grotesque",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grotesqueness.n.01",
+          "via_synset": "grotesque.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grotesqueness.n.01",
+          "via_synset": "antic.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "ugly.a.01",
+          "via_synset": "grotesque.s.01"
+        }
+      ],
+      "definition": "distorted and unnatural in shape or size; abnormal and hideous"
+    },
+    {
+      "lemma": "grotesqueness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ugliness.n.01",
+          "via_synset": "grotesqueness.n.01"
+        }
+      ],
+      "definition": "ludicrous or incongruous unnaturalness or distortion"
+    },
+    {
+      "lemma": "grotesquerie",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ugliness.n.01",
+          "via_synset": "grotesqueness.n.01"
+        }
+      ],
+      "definition": "ludicrous or incongruous unnaturalness or distortion"
+    },
+    {
+      "lemma": "grotesquery",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ugliness.n.01",
+          "via_synset": "grotesqueness.n.01"
+        }
+      ],
+      "definition": "ludicrous or incongruous unnaturalness or distortion"
+    },
+    {
+      "lemma": "hairiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "hairiness.n.01"
+        }
+      ],
+      "definition": "the quality of having hair"
+    },
+    {
+      "lemma": "hairlessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "hairlessness.n.02"
+        }
+      ],
+      "definition": "the quality of not having hair"
+    },
+    {
+      "lemma": "hideous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hideous.s.01",
+          "via_synset": "hideous.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hideous.s.02",
+          "via_synset": "hideous.s.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hideousness.n.01",
+          "via_synset": "hideous.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "ugly.a.01",
+          "via_synset": "hideous.s.02"
+        }
+      ],
+      "definition": "grossly offensive to decency or morality; causing horror"
+    },
+    {
+      "lemma": "hideousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ugliness.n.01",
+          "via_synset": "hideousness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hideous.s.02",
+          "via_synset": "hideousness.n.01"
+        }
+      ],
+      "definition": "dreadful ugliness; horrible repulsiveness"
+    },
+    {
+      "lemma": "homeliness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "homeliness.n.02"
+        }
+      ],
+      "definition": "an appearance that is not attractive or beautiful"
+    },
+    {
+      "lemma": "horrid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hideous.s.01",
+          "via_synset": "hideous.s.01"
+        }
+      ],
+      "definition": "grossly offensive to decency or morality; causing horror"
+    },
+    {
+      "lemma": "horridness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hideous.s.01",
+          "via_synset": "awfulness.n.01"
+        }
+      ],
+      "definition": "a quality of extreme unpleasantness"
+    },
+    {
+      "lemma": "horrific",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hideous.s.01",
+          "via_synset": "hideous.s.01"
+        }
+      ],
+      "definition": "grossly offensive to decency or morality; causing horror"
+    },
+    {
+      "lemma": "ill-favored",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "ugly.a.01",
+          "via_synset": "ill-favored.s.01"
+        }
+      ],
+      "definition": "usually used of a face"
+    },
+    {
+      "lemma": "ill-favoured",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "ugly.a.01",
+          "via_synset": "ill-favored.s.01"
+        }
+      ],
+      "definition": "usually used of a face"
+    },
+    {
+      "lemma": "ill-natured",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "surly.s.01",
+          "via_synset": "ill-natured.a.01"
+        }
+      ],
+      "definition": "having an irritable and unpleasant disposition"
+    },
+    {
+      "lemma": "image",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "persona.n.02"
+        }
+      ],
+      "definition": "(Jungian psychology) a personal facade that one presents to the world"
+    },
+    {
+      "lemma": "impression",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "impression.n.02"
+        }
+      ],
+      "definition": "an outward appearance"
+    },
+    {
+      "lemma": "linear perspective",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "perspective.n.02"
+        }
+      ],
+      "definition": "the appearance of things relative to one another as determined by their distance from the viewer"
+    },
+    {
+      "lemma": "look",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "look.n.03"
+        }
+      ],
+      "definition": "physical appearance"
+    },
+    {
+      "lemma": "maleficence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evil.n.03",
+          "via_synset": "maleficence.n.02"
+        }
+      ],
+      "definition": "the quality or nature of being harmful or evil"
+    },
+    {
+      "lemma": "malevolence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evil.n.03",
+          "via_synset": "malevolence.n.02"
+        }
+      ],
+      "definition": "the quality of threatening evil"
+    },
+    {
+      "lemma": "malevolency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evil.n.03",
+          "via_synset": "malevolence.n.02"
+        }
+      ],
+      "definition": "the quality of threatening evil"
+    },
+    {
+      "lemma": "malice",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evil.n.03",
+          "via_synset": "malevolence.n.02"
+        }
+      ],
+      "definition": "the quality of threatening evil"
+    },
+    {
+      "lemma": "malignance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evil.n.03",
+          "via_synset": "malignity.n.02"
+        }
+      ],
+      "definition": "quality of being disposed to evil; intense ill will"
+    },
+    {
+      "lemma": "malignancy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evil.n.03",
+          "via_synset": "malignity.n.02"
+        }
+      ],
+      "definition": "quality of being disposed to evil; intense ill will"
+    },
+    {
+      "lemma": "malignity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evil.n.03",
+          "via_synset": "malignity.n.02"
+        }
+      ],
+      "definition": "quality of being disposed to evil; intense ill will"
+    },
+    {
+      "lemma": "mar",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "blemish.n.01"
+        }
+      ],
+      "definition": "a mark or flaw that spoils the appearance of something (especially on a person's body)"
+    },
+    {
+      "lemma": "mischief",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evil.n.03",
+          "via_synset": "maleficence.n.02"
+        }
+      ],
+      "definition": "the quality or nature of being harmful or evil"
+    },
+    {
+      "lemma": "monstrous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "ugly.a.01",
+          "via_synset": "grotesque.s.01"
+        }
+      ],
+      "definition": "distorted and unnatural in shape or size; abnormal and hideous"
+    },
+    {
+      "lemma": "nefarious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "nefariousness.n.01",
+          "via_synset": "nefarious.s.01"
+        }
+      ],
+      "definition": "extremely wicked"
+    },
+    {
+      "lemma": "nefariousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "nefariousness.n.01",
+          "via_synset": "nefariousness.n.01"
+        }
+      ],
+      "definition": "the quality of being wicked"
+    },
+    {
+      "lemma": "offensive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hideous.s.01",
+          "via_synset": "offensive.a.05"
+        }
+      ],
+      "definition": "unpleasant or disgusting especially to the senses"
+    },
+    {
+      "lemma": "ornateness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "ornateness.n.02"
+        }
+      ],
+      "definition": "an ornate appearance; being elaborately (even excessively) decorated"
+    },
+    {
+      "lemma": "outrage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hideous.s.01",
+          "via_synset": "scandal.n.02"
+        }
+      ],
+      "definition": "a disgraceful event"
+    },
+    {
+      "lemma": "outrageous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hideous.s.01",
+          "via_synset": "hideous.s.01"
+        }
+      ],
+      "definition": "grossly offensive to decency or morality; causing horror"
+    },
+    {
+      "lemma": "outrageousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hideous.s.01",
+          "via_synset": "outrageousness.n.02"
+        }
+      ],
+      "definition": "the quality of being outrageous"
+    },
+    {
+      "lemma": "persona",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "persona.n.02"
+        }
+      ],
+      "definition": "(Jungian psychology) a personal facade that one presents to the world"
+    },
+    {
+      "lemma": "perspective",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "perspective.n.02"
+        }
+      ],
+      "definition": "the appearance of things relative to one another as determined by their distance from the viewer"
+    },
+    {
+      "lemma": "perverseness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evil.n.03",
+          "via_synset": "perversity.n.02"
+        }
+      ],
+      "definition": "deliberately deviating from what is good"
+    },
+    {
+      "lemma": "perversity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evil.n.03",
+          "via_synset": "perversity.n.02"
+        }
+      ],
+      "definition": "deliberately deviating from what is good"
+    },
+    {
+      "lemma": "phase",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "phase.n.04"
+        }
+      ],
+      "definition": "(astronomy) the particular appearance of a body's state of illumination (especially one of the recurring shapes of the part of Earth's moon that is illuminated by the sun)"
+    },
+    {
+      "lemma": "pilosity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "hairiness.n.01"
+        }
+      ],
+      "definition": "the quality of having hair"
+    },
+    {
+      "lemma": "plainness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "homeliness.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "plainness.n.03"
+        }
+      ],
+      "definition": "an appearance that is not attractive or beautiful"
+    },
+    {
+      "lemma": "repel",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hideous.s.02",
+          "via_synset": "disgust.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hideous.s.02",
+          "via_synset": "repel.v.02"
+        }
+      ],
+      "definition": "fill with distaste"
+    },
+    {
+      "lemma": "reprehensibility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evil.n.03",
+          "via_synset": "reprehensibility.n.01"
+        }
+      ],
+      "definition": "being reprehensible; worthy of and deserving reprehension or reproof"
+    },
+    {
+      "lemma": "repulsive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hideous.s.02",
+          "via_synset": "hideous.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "ugly.a.01",
+          "via_synset": "hideous.s.02"
+        }
+      ],
+      "definition": "so extremely ugly as to be terrifying"
+    },
+    {
+      "lemma": "repulsiveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hideous.s.02",
+          "via_synset": "loathsomeness.n.01"
+        }
+      ],
+      "definition": "the quality of being disgusting to the senses or emotions"
+    },
+    {
+      "lemma": "scrofulous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "ugly.a.01",
+          "via_synset": "scrofulous.s.03"
+        }
+      ],
+      "definition": "having a diseased appearance resembling scrofula; - Farley Mowat"
+    },
+    {
+      "lemma": "semblance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "semblance.n.01"
+        }
+      ],
+      "definition": "an outward or token appearance or form that is deliberately misleading"
+    },
+    {
+      "lemma": "shape",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "form.n.07"
+        }
+      ],
+      "definition": "the visual appearance of something or someone"
+    },
+    {
+      "lemma": "shapeless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "shapelessness.n.02",
+          "via_synset": "shapeless.s.02"
+        }
+      ],
+      "definition": "lacking symmetry or attractive form"
+    },
+    {
+      "lemma": "shapelessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "unattractiveness.n.01",
+          "via_synset": "shapelessness.n.02"
+        }
+      ],
+      "definition": "the quality of lacking an esthetically pleasing shape"
+    },
+    {
+      "lemma": "sleekness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "sleekness.n.01"
+        }
+      ],
+      "definition": "the quality of being well-groomed and neatly tailored"
+    },
+    {
+      "lemma": "stain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "stain.n.01"
+        }
+      ],
+      "definition": "a soiled or discolored appearance"
+    },
+    {
+      "lemma": "superficies",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "superficies.n.01"
+        }
+      ],
+      "definition": "the purely external aspect of a thing; superficial appearance; -R.W.Speaight"
+    },
+    {
+      "lemma": "surliness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "surly.s.01",
+          "via_synset": "temper.n.03"
+        }
+      ],
+      "definition": "a disposition to exhibit uncontrolled anger"
+    },
+    {
+      "lemma": "surly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "surly.s.01",
+          "via_synset": "surly.s.01"
+        }
+      ],
+      "definition": "inclined to anger or bad feelings with overtones of menace"
+    },
+    {
+      "lemma": "ugliness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ugliness.n.01",
+          "via_synset": "ugliness.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "nefariousness.n.01",
+          "via_synset": "nefariousness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ugly.a.01",
+          "via_synset": "ugliness.n.01"
+        }
+      ],
+      "definition": "qualities of appearance that do not give pleasure to the senses"
+    },
+    {
+      "lemma": "ugly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ugly.a.01",
+          "via_synset": "ugly.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "surly.s.01",
+          "via_synset": "surly.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "nefariousness.n.01",
+          "via_synset": "despicable.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ugliness.n.01",
+          "via_synset": "ugly.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hideous.s.02",
+          "via_synset": "ugly.a.01"
+        }
+      ],
+      "definition": "displeasing to the senses"
+    },
+    {
+      "lemma": "unattractive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unattractiveness.n.01",
+          "via_synset": "unattractive.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "ugly.a.01",
+          "via_synset": "unattractive.a.01"
+        }
+      ],
+      "definition": "lacking beauty or charm"
+    },
+    {
+      "lemma": "unattractiveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ugliness.n.01",
+          "via_synset": "unattractiveness.n.01"
+        }
+      ],
+      "definition": "an ugliness of appearance that is not appealing to viewers"
+    },
+    {
+      "lemma": "unlovely",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "ugly.a.01",
+          "via_synset": "unlovely.s.01"
+        }
+      ],
+      "definition": "without beauty or charm"
+    },
+    {
+      "lemma": "unpicturesque",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "ugly.a.01",
+          "via_synset": "unlovely.s.01"
+        }
+      ],
+      "definition": "without beauty or charm"
+    },
+    {
+      "lemma": "unpleasing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unpleasingness.n.01",
+          "via_synset": "graceless.s.01"
+        }
+      ],
+      "definition": "lacking graciousness"
+    },
+    {
+      "lemma": "unpleasingness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ugliness.n.01",
+          "via_synset": "unpleasingness.n.01"
+        }
+      ],
+      "definition": "the quality of being unpleasant"
+    },
+    {
+      "lemma": "unsightliness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ugliness.n.01",
+          "via_synset": "unsightliness.n.01"
+        }
+      ],
+      "definition": "ugliness that is unpleasant to look at"
+    },
+    {
+      "lemma": "unsightly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unsightliness.n.01",
+          "via_synset": "unsightly.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "ugly.a.01",
+          "via_synset": "unsightly.s.01"
+        }
+      ],
+      "definition": "unpleasant to look at"
+    },
+    {
+      "lemma": "vanishing point",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "vanishing_point.n.02"
+        }
+      ],
+      "definition": "the appearance of a point on the horizon at which parallel lines converge"
+    },
+    {
+      "lemma": "vice",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evil.n.03",
+          "via_synset": "frailty.n.02"
+        }
+      ],
+      "definition": "moral weakness"
+    },
+    {
+      "lemma": "view",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "view.n.10"
+        }
+      ],
+      "definition": "outward appearance"
+    },
+    {
+      "lemma": "vileness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "nefariousness.n.01",
+          "via_synset": "nefariousness.n.01"
+        }
+      ],
+      "definition": "the quality of being wicked"
+    },
+    {
+      "lemma": "villainousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evil.n.03",
+          "via_synset": "villainy.n.01"
+        }
+      ],
+      "definition": "the quality of evil by virtue of villainous behavior"
+    },
+    {
+      "lemma": "villainy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evil.n.03",
+          "via_synset": "villainy.n.01"
+        }
+      ],
+      "definition": "the quality of evil by virtue of villainous behavior"
+    },
+    {
+      "lemma": "visage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "appearance.n.01",
+          "via_synset": "countenance.n.01"
+        }
+      ],
+      "definition": "the appearance conveyed by a person's face"
+    },
+    {
+      "lemma": "visual aspect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "ugliness.n.01",
+          "via_synset": "appearance.n.01"
+        }
+      ],
+      "definition": "outward or visible aspect of a person or thing"
+    },
+    {
+      "lemma": "wicked",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "nefariousness.n.01",
+          "via_synset": "wicked.a.01"
+        }
+      ],
+      "definition": "morally bad in principle or practice"
+    },
+    {
+      "lemma": "wickedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "nefariousness.n.01",
+          "via_synset": "nefariousness.n.01"
+        }
+      ],
+      "definition": "the quality of being wicked"
+    },
+    {
+      "lemma": "worst",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evil.n.03",
+          "via_synset": "worst.n.02"
+        }
+      ],
+      "definition": "the greatest damage or wickedness of which one is capable"
+    },
+    {
+      "lemma": "wrongdoing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evil.n.03",
+          "via_synset": "error.n.05"
+        }
+      ],
+      "definition": "departure from what is ethically acceptable"
+    }
+  ]
+}

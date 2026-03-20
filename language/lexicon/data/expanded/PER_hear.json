@@ -1,0 +1,1925 @@
+{
+  "atom_id": "PER.hear",
+  "category": "PER",
+  "seed_count": 6,
+  "total_keys": 116,
+  "pos_counts": {
+    "v": 75,
+    "n": 37,
+    "adj": 4
+  },
+  "source_counts": {
+    "0_seed": 17,
+    "10_sibling": 44,
+    "3_hyponym_d1": 26,
+    "12_verb_group": 10,
+    "2_hypernym_d1": 8,
+    "4_hyponym_d2": 9,
+    "6_derivational": 37
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 14,
+      "words": [
+        "hear(v)",
+        "learn(v)",
+        "get word(v)",
+        "get wind(v)",
+        "pick up(v)",
+        "find out(v)",
+        "get a line(v)",
+        "discover(v)",
+        "see(v)",
+        "try(v)",
+        "listen(v)",
+        "heed(v)",
+        "mind(v)",
+        "audible(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 6,
+      "words": [
+        "perceive(v)",
+        "comprehend(v)",
+        "probe(v)",
+        "examine(v)",
+        "obey(v)",
+        "football play(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 22,
+      "words": [
+        "catch(v)",
+        "get(v)",
+        "take in(v)",
+        "overhear(v)",
+        "trip up(v)",
+        "wise up(v)",
+        "get the goods(v)",
+        "find(v)",
+        "ascertain(v)",
+        "rehear(v)",
+        "retry(v)",
+        "hear out(v)",
+        "listen in(v)",
+        "eavesdrop(v)",
+        "hark(v)",
+        "harken(v)",
+        "hearken(v)",
+        "attend(v)",
+        "hang(v)",
+        "advert(v)",
+        "pay heed(v)",
+        "give ear(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 9,
+      "words": [
+        "rake up(v)",
+        "ferret out(v)",
+        "ferret(v)",
+        "price(v)",
+        "wiretap(v)",
+        "tap(v)",
+        "intercept(v)",
+        "bug(v)",
+        "fixate(v)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 27,
+      "words": [
+        "retrial(n)",
+        "wiretap(n)",
+        "wiretapper(n)",
+        "tap(n)",
+        "tapper(n)",
+        "bug(n)",
+        "listener(n)",
+        "listening(n)",
+        "discovery(n)",
+        "trip-up(n)",
+        "hearing(n)",
+        "trier(n)",
+        "eavesdropper(n)",
+        "hearable(adj)",
+        "heed(n)",
+        "mind(n)",
+        "find(n)",
+        "ascertainable(adj)",
+        "fixation(n)",
+        "attentive(adj)",
+        "attention(n)",
+        "attender(n)",
+        "advertent(adj)",
+        "advertency(n)",
+        "advertence(n)",
+        "price(n)",
+        "pricing(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 37,
+      "words": [
+        "misperceive(v)",
+        "apperceive(v)",
+        "receive(v)",
+        "hallucinate(v)",
+        "spy(v)",
+        "sight(v)",
+        "divine(v)",
+        "taste(v)",
+        "feel(v)",
+        "sense(v)",
+        "see through(v)",
+        "touch(v)",
+        "smell(v)",
+        "dream(v)",
+        "hurt(v)",
+        "ache(v)",
+        "suffer(v)",
+        "re-examine(v)",
+        "investigate(v)",
+        "inquire(v)",
+        "enquire(v)",
+        "comply(v)",
+        "follow(v)",
+        "abide by(v)",
+        "take orders(v)",
+        "tackle(n)",
+        "pass(n)",
+        "passing play(n)",
+        "passing game(n)",
+        "passing(n)",
+        "power play(n)",
+        "run(n)",
+        "running(n)",
+        "running play(n)",
+        "running game(n)",
+        "handoff(n)",
+        "touchback(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 1,
+      "words": [
+        "witness(v)"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "abide by",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "obey.v.01",
+          "via_synset": "comply.v.01"
+        }
+      ],
+      "definition": "act in accordance with someone's rules, commands, or wishes"
+    },
+    {
+      "lemma": "ache",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "hurt.v.06"
+        }
+      ],
+      "definition": "feel physical pain"
+    },
+    {
+      "lemma": "advert",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "listen.v.01",
+          "via_synset": "attend.v.05"
+        }
+      ],
+      "definition": "give heed (to)"
+    },
+    {
+      "lemma": "advertence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attend.v.05",
+          "via_synset": "advertence.n.01"
+        }
+      ],
+      "definition": "the process of being heedful"
+    },
+    {
+      "lemma": "advertency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attend.v.05",
+          "via_synset": "advertence.n.01"
+        }
+      ],
+      "definition": "the process of being heedful"
+    },
+    {
+      "lemma": "advertent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attend.v.05",
+          "via_synset": "advertent.s.01"
+        }
+      ],
+      "definition": "giving attention"
+    },
+    {
+      "lemma": "apperceive",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "apperceive.v.01"
+        }
+      ],
+      "definition": "perceive in terms of a past experience"
+    },
+    {
+      "lemma": "ascertain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "learn.v.02",
+          "via_synset": "ascertain.v.04"
+        }
+      ],
+      "definition": "learn or discover with certainty"
+    },
+    {
+      "lemma": "ascertainable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ascertain.v.04",
+          "via_synset": "ascertainable.s.01"
+        }
+      ],
+      "definition": "capable of being ascertained or found out"
+    },
+    {
+      "lemma": "attend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "listen.v.01",
+          "via_synset": "attend.v.05"
+        }
+      ],
+      "definition": "give heed (to)"
+    },
+    {
+      "lemma": "attender",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attend.v.05",
+          "via_synset": "hearer.n.01"
+        }
+      ],
+      "definition": "someone who listens attentively"
+    },
+    {
+      "lemma": "attention",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attend.v.05",
+          "via_synset": "attention.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attend.v.05",
+          "via_synset": "attention.n.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attend.v.05",
+          "via_synset": "attention.n.01"
+        }
+      ],
+      "definition": "a general interest that leads people to want to know more"
+    },
+    {
+      "lemma": "attentive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attend.v.05",
+          "via_synset": "heedful.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attend.v.05",
+          "via_synset": "attentive.a.01"
+        }
+      ],
+      "definition": "taking heed; giving close and thoughtful attention"
+    },
+    {
+      "lemma": "audible",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "audible.n.01",
+          "via_synset": "audible.n.01"
+        }
+      ],
+      "definition": "a football play is changed orally after both teams have assumed their positions at the line of scrimmage"
+    },
+    {
+      "lemma": "bug",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wiretap.v.01",
+          "via_synset": "bug.n.03"
+        }
+      ],
+      "definition": "a small hidden microphone; for listening secretly"
+    },
+    {
+      "lemma": "bug",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "listen_in.v.02",
+          "via_synset": "wiretap.v.01"
+        }
+      ],
+      "definition": "tap a telephone or telegraph wire to get information"
+    },
+    {
+      "lemma": "catch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hear.v.01",
+          "via_synset": "catch.v.21"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hear.v.01",
+          "via_synset": "catch.v.14"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "learn.v.02",
+          "via_synset": "trip_up.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "catch.v.02"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "catch.v.14",
+          "via_synset": "catch.v.21"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "catch.v.21",
+          "via_synset": "catch.v.14"
+        }
+      ],
+      "definition": "perceive by hearing"
+    },
+    {
+      "lemma": "comply",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "obey.v.01",
+          "via_synset": "comply.v.01"
+        }
+      ],
+      "definition": "act in accordance with someone's rules, commands, or wishes"
+    },
+    {
+      "lemma": "comprehend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "hear.v.01",
+          "via_synset": "perceive.v.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "listen.v.01",
+          "via_synset": "perceive.v.01"
+        }
+      ],
+      "definition": "to become aware of through the senses"
+    },
+    {
+      "lemma": "discover",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "learn.v.02",
+          "via_synset": "learn.v.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "learn.v.02",
+          "via_synset": "discover.v.04"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "discover.v.04",
+          "via_synset": "discover.v.03"
+        }
+      ],
+      "definition": "get to know or become aware of, usually accidentally"
+    },
+    {
+      "lemma": "discovery",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "learn.v.02",
+          "via_synset": "discovery.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "learn.v.02",
+          "via_synset": "discovery.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "learn.v.02",
+          "via_synset": "discovery.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "discover.v.04",
+          "via_synset": "discovery.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "discover.v.04",
+          "via_synset": "discovery.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "discover.v.04",
+          "via_synset": "discovery.n.01"
+        }
+      ],
+      "definition": "something that is discovered"
+    },
+    {
+      "lemma": "divine",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "divine.v.01"
+        }
+      ],
+      "definition": "perceive intuitively or through some inexplicable perceptive powers"
+    },
+    {
+      "lemma": "dream",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "dream.v.02"
+        }
+      ],
+      "definition": "experience while sleeping"
+    },
+    {
+      "lemma": "eavesdrop",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "listen.v.01",
+          "via_synset": "listen_in.v.02"
+        }
+      ],
+      "definition": "listen without the speaker's knowledge"
+    },
+    {
+      "lemma": "eavesdropper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "listen_in.v.02",
+          "via_synset": "eavesdropper.n.01"
+        }
+      ],
+      "definition": "a secret listener to private conversations"
+    },
+    {
+      "lemma": "enquire",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "probe.v.01",
+          "via_synset": "investigate.v.02"
+        }
+      ],
+      "definition": "conduct an inquiry or investigation of"
+    },
+    {
+      "lemma": "examine",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "hear.v.03",
+          "via_synset": "probe.v.01"
+        }
+      ],
+      "definition": "question or examine thoroughly and closely"
+    },
+    {
+      "lemma": "feel",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "feel.v.03"
+        }
+      ],
+      "definition": "perceive by a physical sensation, e.g., coming from the skin or muscles"
+    },
+    {
+      "lemma": "ferret",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "discover.v.04",
+          "via_synset": "ferret_out.v.01"
+        }
+      ],
+      "definition": "search and discover through persistent investigation"
+    },
+    {
+      "lemma": "ferret out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "discover.v.04",
+          "via_synset": "ferret_out.v.01"
+        }
+      ],
+      "definition": "search and discover through persistent investigation"
+    },
+    {
+      "lemma": "find",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "discover.v.04",
+          "via_synset": "discovery.n.01"
+        }
+      ],
+      "definition": "the act of discovering something"
+    },
+    {
+      "lemma": "find",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "learn.v.02",
+          "via_synset": "discover.v.04"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "find.v.13"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "learn.v.02",
+          "via_synset": "witness.v.02"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "discover.v.04",
+          "via_synset": "discover.v.03"
+        }
+      ],
+      "definition": "make a discovery"
+    },
+    {
+      "lemma": "find out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "learn.v.02",
+          "via_synset": "learn.v.02"
+        }
+      ],
+      "definition": "get to know or become aware of, usually accidentally"
+    },
+    {
+      "lemma": "fixate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "attend.v.05",
+          "via_synset": "fixate.v.02"
+        }
+      ],
+      "definition": "pay attention to exclusively and obsessively"
+    },
+    {
+      "lemma": "fixation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fixate.v.02",
+          "via_synset": "obsession.n.02"
+        }
+      ],
+      "definition": "an unhealthy and compulsive preoccupation with something or someone"
+    },
+    {
+      "lemma": "follow",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "obey.v.01",
+          "via_synset": "comply.v.01"
+        }
+      ],
+      "definition": "act in accordance with someone's rules, commands, or wishes"
+    },
+    {
+      "lemma": "football play",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "audible.n.01",
+          "via_synset": "football_play.n.01"
+        }
+      ],
+      "definition": "(American football) a play by the offensive team"
+    },
+    {
+      "lemma": "get",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hear.v.01",
+          "via_synset": "catch.v.21"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "catch.v.14",
+          "via_synset": "catch.v.21"
+        }
+      ],
+      "definition": "perceive by hearing"
+    },
+    {
+      "lemma": "get a line",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "learn.v.02",
+          "via_synset": "learn.v.02"
+        }
+      ],
+      "definition": "get to know or become aware of, usually accidentally"
+    },
+    {
+      "lemma": "get the goods",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "learn.v.02",
+          "via_synset": "get_the_goods.v.01"
+        }
+      ],
+      "definition": "discover some bad or hidden information about"
+    },
+    {
+      "lemma": "get wind",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "learn.v.02",
+          "via_synset": "learn.v.02"
+        }
+      ],
+      "definition": "get to know or become aware of, usually accidentally"
+    },
+    {
+      "lemma": "get word",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "learn.v.02",
+          "via_synset": "learn.v.02"
+        }
+      ],
+      "definition": "get to know or become aware of, usually accidentally"
+    },
+    {
+      "lemma": "give ear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "listen.v.01",
+          "via_synset": "attend.v.05"
+        }
+      ],
+      "definition": "give heed (to)"
+    },
+    {
+      "lemma": "hallucinate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "hallucinate.v.01"
+        }
+      ],
+      "definition": "perceive what is not there; have illusions"
+    },
+    {
+      "lemma": "handoff",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "football_play.n.01",
+          "via_synset": "handoff.n.01"
+        }
+      ],
+      "definition": "(American football) a play in which one player hands the ball to a teammate"
+    },
+    {
+      "lemma": "hang",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "listen.v.01",
+          "via_synset": "attend.v.05"
+        }
+      ],
+      "definition": "give heed (to)"
+    },
+    {
+      "lemma": "hark",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "listen.v.01",
+          "via_synset": "hark.v.01"
+        }
+      ],
+      "definition": "listen; used mostly in the imperative"
+    },
+    {
+      "lemma": "harken",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "listen.v.01",
+          "via_synset": "hark.v.01"
+        }
+      ],
+      "definition": "listen; used mostly in the imperative"
+    },
+    {
+      "lemma": "hear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hear.v.01",
+          "via_synset": "hear.v.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "learn.v.02",
+          "via_synset": "learn.v.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hear.v.03",
+          "via_synset": "hear.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "hear.v.01"
+        }
+      ],
+      "definition": "perceive (sound) via the auditory sense"
+    },
+    {
+      "lemma": "hear out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "listen.v.01",
+          "via_synset": "hear_out.v.01"
+        }
+      ],
+      "definition": "listen to every detail and give a full hearing to"
+    },
+    {
+      "lemma": "hearable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hear.v.01",
+          "via_synset": "audible.a.01"
+        }
+      ],
+      "definition": "heard or perceptible by the ear"
+    },
+    {
+      "lemma": "hearing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hear.v.03",
+          "via_synset": "hearing.n.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hear.v.01",
+          "via_synset": "hearing.n.06"
+        }
+      ],
+      "definition": "a session (of a committee or grand jury) in which witnesses are called and testimony is taken"
+    },
+    {
+      "lemma": "hearken",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "listen.v.01",
+          "via_synset": "hark.v.01"
+        }
+      ],
+      "definition": "listen; used mostly in the imperative"
+    },
+    {
+      "lemma": "heed",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "heed.v.01",
+          "via_synset": "attentiveness.n.01"
+        }
+      ],
+      "definition": "paying particular notice (as to children or helpless people)"
+    },
+    {
+      "lemma": "heed",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "heed.v.01",
+          "via_synset": "heed.v.01"
+        }
+      ],
+      "definition": "pay close attention to; give heed to"
+    },
+    {
+      "lemma": "hurt",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "hurt.v.06"
+        }
+      ],
+      "definition": "feel physical pain"
+    },
+    {
+      "lemma": "inquire",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "probe.v.01",
+          "via_synset": "investigate.v.02"
+        }
+      ],
+      "definition": "conduct an inquiry or investigation of"
+    },
+    {
+      "lemma": "intercept",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "listen_in.v.02",
+          "via_synset": "wiretap.v.01"
+        }
+      ],
+      "definition": "tap a telephone or telegraph wire to get information"
+    },
+    {
+      "lemma": "investigate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "probe.v.01",
+          "via_synset": "investigate.v.02"
+        }
+      ],
+      "definition": "conduct an inquiry or investigation of"
+    },
+    {
+      "lemma": "learn",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "learn.v.02",
+          "via_synset": "learn.v.02"
+        }
+      ],
+      "definition": "get to know or become aware of, usually accidentally"
+    },
+    {
+      "lemma": "listen",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "listen.v.01",
+          "via_synset": "listen.v.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "heed.v.01",
+          "via_synset": "heed.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "listen.v.01"
+        }
+      ],
+      "definition": "hear with intention"
+    },
+    {
+      "lemma": "listen in",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "listen.v.01",
+          "via_synset": "listen_in.v.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "listen.v.01",
+          "via_synset": "listen_in.v.01"
+        }
+      ],
+      "definition": "listen without the speaker's knowledge"
+    },
+    {
+      "lemma": "listener",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "listen.v.01",
+          "via_synset": "hearer.n.01"
+        }
+      ],
+      "definition": "someone who listens attentively"
+    },
+    {
+      "lemma": "listening",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "listen.v.01",
+          "via_synset": "listening.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "heed.v.01",
+          "via_synset": "listening.n.01"
+        }
+      ],
+      "definition": "the act of hearing attentively"
+    },
+    {
+      "lemma": "mind",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "heed.v.01",
+          "via_synset": "mind.n.05"
+        }
+      ],
+      "definition": "attention"
+    },
+    {
+      "lemma": "mind",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "heed.v.01",
+          "via_synset": "heed.v.01"
+        }
+      ],
+      "definition": "pay close attention to; give heed to"
+    },
+    {
+      "lemma": "misperceive",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "misperceive.v.01"
+        }
+      ],
+      "definition": "perceive incorrectly"
+    },
+    {
+      "lemma": "obey",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "heed.v.01",
+          "via_synset": "obey.v.01"
+        }
+      ],
+      "definition": "be obedient to"
+    },
+    {
+      "lemma": "overhear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hear.v.01",
+          "via_synset": "catch.v.14"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "catch.v.21",
+          "via_synset": "catch.v.14"
+        }
+      ],
+      "definition": "hear, usually without the knowledge of the speakers"
+    },
+    {
+      "lemma": "pass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "football_play.n.01",
+          "via_synset": "pass.n.03"
+        }
+      ],
+      "definition": "(American football) a play that involves one player throwing the ball to a teammate"
+    },
+    {
+      "lemma": "passing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "football_play.n.01",
+          "via_synset": "pass.n.03"
+        }
+      ],
+      "definition": "(American football) a play that involves one player throwing the ball to a teammate"
+    },
+    {
+      "lemma": "passing game",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "football_play.n.01",
+          "via_synset": "pass.n.03"
+        }
+      ],
+      "definition": "(American football) a play that involves one player throwing the ball to a teammate"
+    },
+    {
+      "lemma": "passing play",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "football_play.n.01",
+          "via_synset": "pass.n.03"
+        }
+      ],
+      "definition": "(American football) a play that involves one player throwing the ball to a teammate"
+    },
+    {
+      "lemma": "pay heed",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "listen.v.01",
+          "via_synset": "attend.v.05"
+        }
+      ],
+      "definition": "give heed (to)"
+    },
+    {
+      "lemma": "perceive",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "hear.v.01",
+          "via_synset": "perceive.v.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "listen.v.01",
+          "via_synset": "perceive.v.01"
+        }
+      ],
+      "definition": "to become aware of through the senses"
+    },
+    {
+      "lemma": "pick up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "learn.v.02",
+          "via_synset": "learn.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "catch.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "pick_up.v.09"
+        }
+      ],
+      "definition": "get to know or become aware of, usually accidentally"
+    },
+    {
+      "lemma": "power play",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "football_play.n.01",
+          "via_synset": "power_play.n.02"
+        }
+      ],
+      "definition": "a play in which there is a concentration of players in one location on the field of play"
+    },
+    {
+      "lemma": "price",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "price.v.02",
+          "via_synset": "price.n.02"
+        }
+      ],
+      "definition": "the amount of money needed to purchase something"
+    },
+    {
+      "lemma": "price",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "ascertain.v.04",
+          "via_synset": "price.v.02"
+        }
+      ],
+      "definition": "ascertain or learn the price of"
+    },
+    {
+      "lemma": "pricing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "price.v.02",
+          "via_synset": "pricing.n.01"
+        }
+      ],
+      "definition": "the evaluation of something in terms of its price"
+    },
+    {
+      "lemma": "probe",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "hear.v.03",
+          "via_synset": "probe.v.01"
+        }
+      ],
+      "definition": "question or examine thoroughly and closely"
+    },
+    {
+      "lemma": "rake up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "discover.v.04",
+          "via_synset": "rake_up.v.01"
+        }
+      ],
+      "definition": "bring to light"
+    },
+    {
+      "lemma": "re-examine",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "probe.v.01",
+          "via_synset": "re-examine.v.01"
+        }
+      ],
+      "definition": "question after cross-examination by opposing counsel"
+    },
+    {
+      "lemma": "receive",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "pick_up.v.09"
+        }
+      ],
+      "definition": "register (perceptual input)"
+    },
+    {
+      "lemma": "rehear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hear.v.03",
+          "via_synset": "rehear.v.01"
+        }
+      ],
+      "definition": "hear or try a court case anew"
+    },
+    {
+      "lemma": "retrial",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "rehear.v.01",
+          "via_synset": "retrial.n.01"
+        }
+      ],
+      "definition": "a new trial in which issues already litigated and to which the court has already rendered a verdict or decision are reexamined by the same court; occurs when the initial trial is found to have been improper or unfair due to procedural errors"
+    },
+    {
+      "lemma": "retry",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hear.v.03",
+          "via_synset": "rehear.v.01"
+        }
+      ],
+      "definition": "hear or try a court case anew"
+    },
+    {
+      "lemma": "run",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "football_play.n.01",
+          "via_synset": "run.n.05"
+        }
+      ],
+      "definition": "(American football) a play in which a player attempts to carry the ball through or past the opposing team"
+    },
+    {
+      "lemma": "running",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "football_play.n.01",
+          "via_synset": "run.n.05"
+        }
+      ],
+      "definition": "(American football) a play in which a player attempts to carry the ball through or past the opposing team"
+    },
+    {
+      "lemma": "running game",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "football_play.n.01",
+          "via_synset": "run.n.05"
+        }
+      ],
+      "definition": "(American football) a play in which a player attempts to carry the ball through or past the opposing team"
+    },
+    {
+      "lemma": "running play",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "football_play.n.01",
+          "via_synset": "run.n.05"
+        }
+      ],
+      "definition": "(American football) a play in which a player attempts to carry the ball through or past the opposing team"
+    },
+    {
+      "lemma": "see",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "learn.v.02",
+          "via_synset": "learn.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "see.v.01"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "learn.v.02",
+          "via_synset": "witness.v.02"
+        }
+      ],
+      "definition": "get to know or become aware of, usually accidentally"
+    },
+    {
+      "lemma": "see through",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "see_through.v.02"
+        }
+      ],
+      "definition": "perceive the true nature of"
+    },
+    {
+      "lemma": "sense",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "feel.v.03"
+        }
+      ],
+      "definition": "perceive by a physical sensation, e.g., coming from the skin or muscles"
+    },
+    {
+      "lemma": "sight",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "spy.v.03"
+        }
+      ],
+      "definition": "catch sight of; to perceive with the eyes"
+    },
+    {
+      "lemma": "smell",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "smell.v.01"
+        }
+      ],
+      "definition": "inhale the odor of; perceive by the olfactory sense"
+    },
+    {
+      "lemma": "spy",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "spy.v.03"
+        }
+      ],
+      "definition": "catch sight of; to perceive with the eyes"
+    },
+    {
+      "lemma": "suffer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "hurt.v.06"
+        }
+      ],
+      "definition": "feel physical pain"
+    },
+    {
+      "lemma": "tackle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "football_play.n.01",
+          "via_synset": "tackle.n.05"
+        }
+      ],
+      "definition": "(American football) grasping an opposing player with the intention of stopping by throwing to the ground"
+    },
+    {
+      "lemma": "take in",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hear.v.01",
+          "via_synset": "catch.v.14"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "catch.v.21",
+          "via_synset": "catch.v.14"
+        }
+      ],
+      "definition": "hear, usually without the knowledge of the speakers"
+    },
+    {
+      "lemma": "take orders",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "obey.v.01",
+          "via_synset": "take_orders.v.01"
+        }
+      ],
+      "definition": "receive and be expected to follow directions or commands"
+    },
+    {
+      "lemma": "tap",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wiretap.v.01",
+          "via_synset": "wiretap.n.01"
+        }
+      ],
+      "definition": "the act of tapping a telephone or telegraph line to get information"
+    },
+    {
+      "lemma": "tap",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "listen_in.v.02",
+          "via_synset": "wiretap.v.01"
+        }
+      ],
+      "definition": "tap a telephone or telegraph wire to get information"
+    },
+    {
+      "lemma": "tapper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wiretap.v.01",
+          "via_synset": "tapper.n.04"
+        }
+      ],
+      "definition": "someone who wiretaps a telephone or telegraph wire"
+    },
+    {
+      "lemma": "taste",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "taste.v.02"
+        }
+      ],
+      "definition": "perceive by the sense of taste"
+    },
+    {
+      "lemma": "touch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "perceive.v.01",
+          "via_synset": "touch.v.02"
+        }
+      ],
+      "definition": "perceive via the tactile sense"
+    },
+    {
+      "lemma": "touchback",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "football_play.n.01",
+          "via_synset": "touchback.n.01"
+        }
+      ],
+      "definition": "(American football) a play in which the opposing team has kicked the football into your end zone"
+    },
+    {
+      "lemma": "trier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hear.v.03",
+          "via_synset": "trier.n.01"
+        }
+      ],
+      "definition": "one (as a judge) who examines and settles a case"
+    },
+    {
+      "lemma": "trip up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "learn.v.02",
+          "via_synset": "trip_up.v.01"
+        }
+      ],
+      "definition": "detect a blunder or misstep"
+    },
+    {
+      "lemma": "trip-up",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "trip_up.v.01",
+          "via_synset": "trip.n.07"
+        }
+      ],
+      "definition": "an unintentional but embarrassing blunder"
+    },
+    {
+      "lemma": "try",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hear.v.03",
+          "via_synset": "hear.v.03"
+        }
+      ],
+      "definition": "examine or hear (evidence or a case) by judicial process"
+    },
+    {
+      "lemma": "wiretap",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wiretap.v.01",
+          "via_synset": "wiretap.n.01"
+        }
+      ],
+      "definition": "the act of tapping a telephone or telegraph line to get information"
+    },
+    {
+      "lemma": "wiretap",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "listen_in.v.02",
+          "via_synset": "wiretap.v.01"
+        }
+      ],
+      "definition": "tap a telephone or telegraph wire to get information"
+    },
+    {
+      "lemma": "wiretapper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wiretap.v.01",
+          "via_synset": "tapper.n.04"
+        }
+      ],
+      "definition": "someone who wiretaps a telephone or telegraph wire"
+    },
+    {
+      "lemma": "wise up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "learn.v.02",
+          "via_synset": "wise_up.v.01"
+        }
+      ],
+      "definition": "get wise to"
+    },
+    {
+      "lemma": "witness",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "learn.v.02",
+          "via_synset": "witness.v.02"
+        }
+      ],
+      "definition": "perceive or be contemporaneous with"
+    }
+  ]
+}

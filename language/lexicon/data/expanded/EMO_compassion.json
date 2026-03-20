@@ -1,0 +1,1811 @@
+{
+  "atom_id": "EMO.compassion",
+  "category": "EMO",
+  "seed_count": 6,
+  "total_keys": 106,
+  "pos_counts": {
+    "n": 81,
+    "adj": 17,
+    "v": 8
+  },
+  "source_counts": {
+    "0_seed": 12,
+    "3_hyponym_d1": 28,
+    "10_sibling": 28,
+    "2_hypernym_d1": 11,
+    "4_hyponym_d2": 13,
+    "5_hyponym_d3": 13,
+    "6_derivational": 38,
+    "9_antonym": 2
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 8,
+      "words": [
+        "compassion(n)",
+        "compassionateness(n)",
+        "pity(n)",
+        "clemency(n)",
+        "mercifulness(n)",
+        "mercy(n)",
+        "kindness(n)",
+        "forgivingness(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 7,
+      "words": [
+        "sympathy(n)",
+        "fellow feeling(n)",
+        "lenience(n)",
+        "leniency(n)",
+        "humaneness(n)",
+        "good(n)",
+        "goodness(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 20,
+      "words": [
+        "heartstrings(n)",
+        "tenderness(n)",
+        "tenderheartedness(n)",
+        "quarter(n)",
+        "reprieve(n)",
+        "respite(n)",
+        "amnesty(n)",
+        "pardon(n)",
+        "free pardon(n)",
+        "commutation(n)",
+        "re-sentencing(n)",
+        "mildness(n)",
+        "lenity(n)",
+        "benevolence(n)",
+        "loving-kindness(n)",
+        "generosity(n)",
+        "generousness(n)",
+        "consideration(n)",
+        "considerateness(n)",
+        "thoughtfulness(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 13,
+      "words": [
+        "forgiveness(n)",
+        "charity(n)",
+        "brotherly love(n)",
+        "charitableness(n)",
+        "liberality(n)",
+        "liberalness(n)",
+        "unselfishness(n)",
+        "bounty(n)",
+        "bounteousness(n)",
+        "bigheartedness(n)",
+        "tact(n)",
+        "tactfulness(n)",
+        "attentiveness(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 13,
+      "words": [
+        "munificence(n)",
+        "largess(n)",
+        "largesse(n)",
+        "magnanimity(n)",
+        "openhandedness(n)",
+        "altruism(n)",
+        "selflessness(n)",
+        "delicacy(n)",
+        "diplomacy(n)",
+        "discreetness(n)",
+        "finesse(n)",
+        "savoir-faire(n)",
+        "address(n)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 25,
+      "words": [
+        "unselfish(adj)",
+        "tender(adj)",
+        "tenderhearted(adj)",
+        "compassionate(v)",
+        "compassionate(adj)",
+        "bighearted(adj)",
+        "kind(adj)",
+        "forgiving(adj)",
+        "lenient(adj)",
+        "consider(v)",
+        "considerate(adj)",
+        "thoughtful(adj)",
+        "liberal(adj)",
+        "merciful(adj)",
+        "clement(adj)",
+        "reprieve(v)",
+        "respite(v)",
+        "bounteous(adj)",
+        "generous(adj)",
+        "pity(v)",
+        "amnesty(v)",
+        "pardon(v)",
+        "commute(v)",
+        "charitable(adj)",
+        "tactful(adj)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 2,
+      "words": [
+        "mercilessness(n)",
+        "unkindness(n)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 18,
+      "words": [
+        "compatibility(n)",
+        "commiseration(n)",
+        "ruth(n)",
+        "pathos(n)",
+        "kindheartedness(n)",
+        "kind-heartedness(n)",
+        "empathy(n)",
+        "concern(n)",
+        "humanity(n)",
+        "virtue(n)",
+        "virtuousness(n)",
+        "moral excellence(n)",
+        "benignity(n)",
+        "benignancy(n)",
+        "graciousness(n)",
+        "summum bonum(n)",
+        "saintliness(n)",
+        "beneficence(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "address",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "tact.n.01",
+          "via_synset": "savoir-faire.n.01"
+        }
+      ],
+      "definition": "social skill"
+    },
+    {
+      "lemma": "altruism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "unselfishness.n.01",
+          "via_synset": "altruism.n.01"
+        }
+      ],
+      "definition": "the quality of unselfish concern for the welfare of others"
+    },
+    {
+      "lemma": "amnesty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "clemency.n.02",
+          "via_synset": "amnesty.n.03"
+        }
+      ],
+      "definition": "the formal act of liberating someone"
+    },
+    {
+      "lemma": "amnesty",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "amnesty.n.03",
+          "via_synset": "amnesty.v.01"
+        }
+      ],
+      "definition": "grant a pardon to (a group of people)"
+    },
+    {
+      "lemma": "attentiveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "consideration.n.04",
+          "via_synset": "attentiveness.n.02"
+        }
+      ],
+      "definition": "the trait of being considerate and thoughtful of others"
+    },
+    {
+      "lemma": "beneficence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "good.n.02",
+          "via_synset": "beneficence.n.02"
+        }
+      ],
+      "definition": "the quality of being kind or helpful or generous"
+    },
+    {
+      "lemma": "benevolence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "kindness.n.01",
+          "via_synset": "benevolence.n.02"
+        }
+      ],
+      "definition": "an inclination to do kind or charitable acts"
+    },
+    {
+      "lemma": "benignancy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "good.n.02",
+          "via_synset": "benignity.n.01"
+        }
+      ],
+      "definition": "the quality of being kind and gentle"
+    },
+    {
+      "lemma": "benignity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "good.n.02",
+          "via_synset": "benignity.n.01"
+        }
+      ],
+      "definition": "the quality of being kind and gentle"
+    },
+    {
+      "lemma": "bighearted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bigheartedness.n.01",
+          "via_synset": "big.s.11"
+        }
+      ],
+      "definition": "given or giving freely"
+    },
+    {
+      "lemma": "bigheartedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "generosity.n.01",
+          "via_synset": "bigheartedness.n.01"
+        }
+      ],
+      "definition": "the quality of being kind and generous"
+    },
+    {
+      "lemma": "bounteous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bounty.n.03",
+          "via_synset": "big.s.11"
+        }
+      ],
+      "definition": "given or giving freely"
+    },
+    {
+      "lemma": "bounteousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "generosity.n.01",
+          "via_synset": "bounty.n.03"
+        }
+      ],
+      "definition": "generosity evidenced by a willingness to give freely"
+    },
+    {
+      "lemma": "bounty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "generosity.n.01",
+          "via_synset": "bounty.n.03"
+        }
+      ],
+      "definition": "generosity evidenced by a willingness to give freely"
+    },
+    {
+      "lemma": "brotherly love",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "benevolence.n.02",
+          "via_synset": "charity.n.02"
+        }
+      ],
+      "definition": "a kindly and lenient attitude toward people"
+    },
+    {
+      "lemma": "charitable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "charitableness.n.01",
+          "via_synset": "charitable.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "charitableness.n.01",
+          "via_synset": "charitable.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "charitableness.n.01",
+          "via_synset": "charitable.a.02"
+        }
+      ],
+      "definition": "showing or motivated by sympathy and understanding and generosity"
+    },
+    {
+      "lemma": "charitableness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "generosity.n.01",
+          "via_synset": "charitableness.n.01"
+        }
+      ],
+      "definition": "generosity as manifested by practicing charity (as for the poor or unfortunate)"
+    },
+    {
+      "lemma": "charity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "benevolence.n.02",
+          "via_synset": "charity.n.02"
+        }
+      ],
+      "definition": "a kindly and lenient attitude toward people"
+    },
+    {
+      "lemma": "clemency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "clemency.n.02",
+          "via_synset": "clemency.n.02"
+        }
+      ],
+      "definition": "leniency and compassion shown toward offenders by a person or agency charged with administering justice"
+    },
+    {
+      "lemma": "clement",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "clemency.n.02",
+          "via_synset": "clement.a.02"
+        }
+      ],
+      "definition": "(used of persons or behavior) inclined to show mercy"
+    },
+    {
+      "lemma": "commiseration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sympathy.n.02",
+          "via_synset": "commiseration.n.01"
+        }
+      ],
+      "definition": "a feeling of sympathy and sorrow for the misfortunes of others"
+    },
+    {
+      "lemma": "commutation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "clemency.n.02",
+          "via_synset": "commutation.n.03"
+        }
+      ],
+      "definition": "(law) the reduction in severity of a punishment imposed by law"
+    },
+    {
+      "lemma": "commute",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "commutation.n.03",
+          "via_synset": "commute.v.04"
+        }
+      ],
+      "definition": "exchange a penalty for a less severe one"
+    },
+    {
+      "lemma": "compassion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "compassion.n.01",
+          "via_synset": "compassion.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "compassion.n.02",
+          "via_synset": "compassion.n.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "compassion.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "compassion.n.02"
+        }
+      ],
+      "definition": "a deep awareness of and sympathy for another's suffering"
+    },
+    {
+      "lemma": "compassionate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compassion.n.01",
+          "via_synset": "compassionate.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compassion.n.02",
+          "via_synset": "compassionate.a.01"
+        }
+      ],
+      "definition": "showing or having compassion"
+    },
+    {
+      "lemma": "compassionate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compassion.n.01",
+          "via_synset": "feel_for.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compassion.n.02",
+          "via_synset": "feel_for.v.01"
+        }
+      ],
+      "definition": "share the suffering of"
+    },
+    {
+      "lemma": "compassionateness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "compassion.n.01",
+          "via_synset": "compassion.n.01"
+        }
+      ],
+      "definition": "a deep awareness of and sympathy for another's suffering"
+    },
+    {
+      "lemma": "compatibility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sympathy.n.02",
+          "via_synset": "compatibility.n.01"
+        }
+      ],
+      "definition": "a feeling of sympathetic understanding"
+    },
+    {
+      "lemma": "concern",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sympathy.n.02",
+          "via_synset": "concern.n.03"
+        }
+      ],
+      "definition": "a feeling of sympathy for someone or something"
+    },
+    {
+      "lemma": "consider",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consideration.n.04",
+          "via_synset": "consider.v.09"
+        }
+      ],
+      "definition": "regard or treat with consideration, respect, and esteem"
+    },
+    {
+      "lemma": "considerate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consideration.n.04",
+          "via_synset": "considerate.a.01"
+        }
+      ],
+      "definition": "showing concern for the rights and feelings of others"
+    },
+    {
+      "lemma": "considerateness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "kindness.n.01",
+          "via_synset": "consideration.n.04"
+        }
+      ],
+      "definition": "kind and considerate regard for others"
+    },
+    {
+      "lemma": "consideration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "kindness.n.01",
+          "via_synset": "consideration.n.04"
+        }
+      ],
+      "definition": "kind and considerate regard for others"
+    },
+    {
+      "lemma": "delicacy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "tact.n.01",
+          "via_synset": "delicacy.n.06"
+        }
+      ],
+      "definition": "subtly skillful handling of a situation"
+    },
+    {
+      "lemma": "diplomacy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "tact.n.01",
+          "via_synset": "delicacy.n.06"
+        }
+      ],
+      "definition": "subtly skillful handling of a situation"
+    },
+    {
+      "lemma": "discreetness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "tact.n.01",
+          "via_synset": "delicacy.n.06"
+        }
+      ],
+      "definition": "subtly skillful handling of a situation"
+    },
+    {
+      "lemma": "empathy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sympathy.n.02",
+          "via_synset": "empathy.n.01"
+        }
+      ],
+      "definition": "understanding and entering into another's feelings"
+    },
+    {
+      "lemma": "fellow feeling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "compassion.n.01",
+          "via_synset": "sympathy.n.02"
+        }
+      ],
+      "definition": "sharing the feelings of others (especially feelings of sorrow or anguish)"
+    },
+    {
+      "lemma": "finesse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "tact.n.01",
+          "via_synset": "delicacy.n.06"
+        }
+      ],
+      "definition": "subtly skillful handling of a situation"
+    },
+    {
+      "lemma": "forgiveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "mercifulness.n.01",
+          "via_synset": "forgiveness.n.01"
+        }
+      ],
+      "definition": "compassionate feelings that support a willingness to forgive"
+    },
+    {
+      "lemma": "forgiving",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "forgivingness.n.01",
+          "via_synset": "absolvitory.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "forgivingness.n.01",
+          "via_synset": "forgiving.a.01"
+        }
+      ],
+      "definition": "providing absolution"
+    },
+    {
+      "lemma": "forgivingness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "forgivingness.n.01",
+          "via_synset": "forgivingness.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "forgivingness.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "forgivingness.n.01"
+        }
+      ],
+      "definition": "tendency to be kind and forgiving"
+    },
+    {
+      "lemma": "free pardon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "clemency.n.02",
+          "via_synset": "amnesty.n.03"
+        }
+      ],
+      "definition": "the formal act of liberating someone"
+    },
+    {
+      "lemma": "generosity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "kindness.n.01",
+          "via_synset": "generosity.n.01"
+        }
+      ],
+      "definition": "the trait of being willing to give your money or time"
+    },
+    {
+      "lemma": "generous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "generosity.n.01",
+          "via_synset": "generous.a.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "generosity.n.01",
+          "via_synset": "generous.a.01"
+        }
+      ],
+      "definition": "not petty in character and mind"
+    },
+    {
+      "lemma": "generousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "kindness.n.01",
+          "via_synset": "generosity.n.01"
+        }
+      ],
+      "definition": "the trait of being willing to give your money or time"
+    },
+    {
+      "lemma": "good",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "kindness.n.01",
+          "via_synset": "good.n.02"
+        }
+      ],
+      "definition": "moral excellence or admirableness"
+    },
+    {
+      "lemma": "goodness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "kindness.n.01",
+          "via_synset": "good.n.02"
+        }
+      ],
+      "definition": "moral excellence or admirableness"
+    },
+    {
+      "lemma": "graciousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "good.n.02",
+          "via_synset": "benignity.n.01"
+        }
+      ],
+      "definition": "the quality of being kind and gentle"
+    },
+    {
+      "lemma": "heartstrings",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "compassion.n.01",
+          "via_synset": "heartstrings.n.01"
+        }
+      ],
+      "definition": "your deepest feelings of love and compassion"
+    },
+    {
+      "lemma": "humaneness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "humaneness.n.01"
+        }
+      ],
+      "definition": "the quality of compassion or consideration for others (people or animals)"
+    },
+    {
+      "lemma": "humanity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "humaneness.n.01",
+          "via_synset": "humanity.n.01"
+        }
+      ],
+      "definition": "the quality of being humane"
+    },
+    {
+      "lemma": "kind",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "kindness.n.01",
+          "via_synset": "kind.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "forgivingness.n.01",
+          "via_synset": "kind.s.02"
+        }
+      ],
+      "definition": "having or showing a tender and considerate and helpful nature; used especially of persons and their behavior"
+    },
+    {
+      "lemma": "kind-heartedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sympathy.n.02",
+          "via_synset": "kindheartedness.n.01"
+        }
+      ],
+      "definition": "sympathy arising from a kind heart"
+    },
+    {
+      "lemma": "kindheartedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sympathy.n.02",
+          "via_synset": "kindheartedness.n.01"
+        }
+      ],
+      "definition": "sympathy arising from a kind heart"
+    },
+    {
+      "lemma": "kindness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "kindness.n.01",
+          "via_synset": "kindness.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "forgivingness.n.01",
+          "via_synset": "forgivingness.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "forgivingness.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "forgivingness.n.01"
+        }
+      ],
+      "definition": "the quality of being warmhearted and considerate and humane and sympathetic"
+    },
+    {
+      "lemma": "largess",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "liberality.n.02",
+          "via_synset": "munificence.n.01"
+        }
+      ],
+      "definition": "liberality in bestowing gifts; extremely liberal and generous of spirit"
+    },
+    {
+      "lemma": "largesse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "liberality.n.02",
+          "via_synset": "munificence.n.01"
+        }
+      ],
+      "definition": "liberality in bestowing gifts; extremely liberal and generous of spirit"
+    },
+    {
+      "lemma": "lenience",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "clemency.n.02",
+          "via_synset": "lenience.n.03"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "lenience.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "lenience.n.01"
+        }
+      ],
+      "definition": "lightening a penalty or excusing from a chore by judges or parents or teachers"
+    },
+    {
+      "lemma": "leniency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "clemency.n.02",
+          "via_synset": "lenience.n.03"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "lenience.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "lenience.n.01"
+        }
+      ],
+      "definition": "lightening a penalty or excusing from a chore by judges or parents or teachers"
+    },
+    {
+      "lemma": "lenient",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "lenience.n.01",
+          "via_synset": "indulgent.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "lenience.n.01",
+          "via_synset": "lenient.s.03"
+        }
+      ],
+      "definition": "tolerant or lenient"
+    },
+    {
+      "lemma": "lenity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "lenience.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "lenience.n.01"
+        }
+      ],
+      "definition": "mercifulness as a consequence of being lenient or tolerant"
+    },
+    {
+      "lemma": "liberal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "liberality.n.02",
+          "via_synset": "big.s.11"
+        }
+      ],
+      "definition": "given or giving freely"
+    },
+    {
+      "lemma": "liberality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "generosity.n.01",
+          "via_synset": "liberality.n.02"
+        }
+      ],
+      "definition": "the trait of being generous in behavior and temperament"
+    },
+    {
+      "lemma": "liberalness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "generosity.n.01",
+          "via_synset": "liberality.n.02"
+        }
+      ],
+      "definition": "the trait of being generous in behavior and temperament"
+    },
+    {
+      "lemma": "loving-kindness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "kindness.n.01",
+          "via_synset": "loving-kindness.n.01"
+        }
+      ],
+      "definition": "tender kindness motivated by a feeling of affection"
+    },
+    {
+      "lemma": "magnanimity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "liberality.n.02",
+          "via_synset": "munificence.n.01"
+        }
+      ],
+      "definition": "liberality in bestowing gifts; extremely liberal and generous of spirit"
+    },
+    {
+      "lemma": "merciful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mercifulness.n.01",
+          "via_synset": "merciful.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "clemency.n.02",
+          "via_synset": "merciful.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "merciful.s.01"
+        }
+      ],
+      "definition": "showing or giving mercy"
+    },
+    {
+      "lemma": "mercifulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "clemency.n.02",
+          "via_synset": "clemency.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "mercifulness.n.02"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "compassion.n.02",
+          "via_synset": "mercifulness.n.02"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forgivingness.n.01",
+          "via_synset": "mercifulness.n.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "compassion.n.01",
+          "via_synset": "mercifulness.n.01"
+        }
+      ],
+      "definition": "leniency and compassion shown toward offenders by a person or agency charged with administering justice"
+    },
+    {
+      "lemma": "mercilessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "mercilessness.n.02"
+        }
+      ],
+      "definition": "inhumaneness evidenced by an unwillingness to be kind or forgiving"
+    },
+    {
+      "lemma": "mercy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "clemency.n.02",
+          "via_synset": "clemency.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "mercifulness.n.02"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "compassion.n.02",
+          "via_synset": "mercifulness.n.02"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forgivingness.n.01",
+          "via_synset": "mercifulness.n.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "compassion.n.01",
+          "via_synset": "mercifulness.n.01"
+        }
+      ],
+      "definition": "leniency and compassion shown toward offenders by a person or agency charged with administering justice"
+    },
+    {
+      "lemma": "mildness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "lenience.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "lenience.n.01"
+        }
+      ],
+      "definition": "mercifulness as a consequence of being lenient or tolerant"
+    },
+    {
+      "lemma": "moral excellence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "good.n.02",
+          "via_synset": "virtue.n.01"
+        }
+      ],
+      "definition": "the quality of doing what is right and avoiding what is wrong"
+    },
+    {
+      "lemma": "munificence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "liberality.n.02",
+          "via_synset": "munificence.n.01"
+        }
+      ],
+      "definition": "liberality in bestowing gifts; extremely liberal and generous of spirit"
+    },
+    {
+      "lemma": "openhandedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "liberality.n.02",
+          "via_synset": "munificence.n.01"
+        }
+      ],
+      "definition": "liberality in bestowing gifts; extremely liberal and generous of spirit"
+    },
+    {
+      "lemma": "pardon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "clemency.n.02",
+          "via_synset": "amnesty.n.03"
+        }
+      ],
+      "definition": "the formal act of liberating someone"
+    },
+    {
+      "lemma": "pardon",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "amnesty.n.03",
+          "via_synset": "pardon.v.02"
+        }
+      ],
+      "definition": "grant a pardon to"
+    },
+    {
+      "lemma": "pathos",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sympathy.n.02",
+          "via_synset": "commiseration.n.01"
+        }
+      ],
+      "definition": "a feeling of sympathy and sorrow for the misfortunes of others"
+    },
+    {
+      "lemma": "pity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "compassion.n.02",
+          "via_synset": "compassion.n.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "compassion.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sympathy.n.02",
+          "via_synset": "commiseration.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mercifulness.n.02",
+          "via_synset": "compassion.n.02"
+        }
+      ],
+      "definition": "the humane quality of understanding the suffering of others and wanting to do something about it"
+    },
+    {
+      "lemma": "pity",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compassion.n.02",
+          "via_synset": "feel_for.v.01"
+        }
+      ],
+      "definition": "share the suffering of"
+    },
+    {
+      "lemma": "quarter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "clemency.n.02",
+          "via_synset": "quarter.n.14"
+        }
+      ],
+      "definition": "clemency or mercy shown to a defeated opponent"
+    },
+    {
+      "lemma": "re-sentencing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "clemency.n.02",
+          "via_synset": "commutation.n.03"
+        }
+      ],
+      "definition": "(law) the reduction in severity of a punishment imposed by law"
+    },
+    {
+      "lemma": "reprieve",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "clemency.n.02",
+          "via_synset": "reprieve.n.04"
+        }
+      ],
+      "definition": "the act of reprieving; postponing or remitting punishment"
+    },
+    {
+      "lemma": "reprieve",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reprieve.n.04",
+          "via_synset": "reprieve.v.01"
+        }
+      ],
+      "definition": "postpone the punishment of a convicted criminal, such as an execution"
+    },
+    {
+      "lemma": "respite",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "clemency.n.02",
+          "via_synset": "reprieve.n.04"
+        }
+      ],
+      "definition": "the act of reprieving; postponing or remitting punishment"
+    },
+    {
+      "lemma": "respite",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reprieve.n.04",
+          "via_synset": "reprieve.v.01"
+        }
+      ],
+      "definition": "postpone the punishment of a convicted criminal, such as an execution"
+    },
+    {
+      "lemma": "ruth",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sympathy.n.02",
+          "via_synset": "commiseration.n.01"
+        }
+      ],
+      "definition": "a feeling of sympathy and sorrow for the misfortunes of others"
+    },
+    {
+      "lemma": "saintliness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "good.n.02",
+          "via_synset": "saintliness.n.01"
+        }
+      ],
+      "definition": "the quality of resembling a saint"
+    },
+    {
+      "lemma": "savoir-faire",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "tact.n.01",
+          "via_synset": "savoir-faire.n.01"
+        }
+      ],
+      "definition": "social skill"
+    },
+    {
+      "lemma": "selflessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "unselfishness.n.01",
+          "via_synset": "altruism.n.01"
+        }
+      ],
+      "definition": "the quality of unselfish concern for the welfare of others"
+    },
+    {
+      "lemma": "summum bonum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "good.n.02",
+          "via_synset": "summum_bonum.n.01"
+        }
+      ],
+      "definition": "the supreme good in which all moral values are included or from which they are derived"
+    },
+    {
+      "lemma": "sympathy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "compassion.n.01",
+          "via_synset": "sympathy.n.02"
+        }
+      ],
+      "definition": "sharing the feelings of others (especially feelings of sorrow or anguish)"
+    },
+    {
+      "lemma": "tact",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "consideration.n.04",
+          "via_synset": "tact.n.01"
+        }
+      ],
+      "definition": "consideration in dealing with others and avoiding giving offense"
+    },
+    {
+      "lemma": "tactful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tact.n.01",
+          "via_synset": "tactful.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tact.n.01",
+          "via_synset": "tactful.a.01"
+        }
+      ],
+      "definition": "showing skill and sensitivity in dealing with people"
+    },
+    {
+      "lemma": "tactfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "consideration.n.04",
+          "via_synset": "tact.n.01"
+        }
+      ],
+      "definition": "consideration in dealing with others and avoiding giving offense"
+    },
+    {
+      "lemma": "tender",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tenderness.n.03",
+          "via_synset": "tender.a.01"
+        }
+      ],
+      "definition": "given to sympathy or gentleness or sentimentality"
+    },
+    {
+      "lemma": "tenderhearted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tenderness.n.03",
+          "via_synset": "tenderhearted.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tenderness.n.03",
+          "via_synset": "tenderhearted.s.02"
+        }
+      ],
+      "definition": "easily moved to love"
+    },
+    {
+      "lemma": "tenderheartedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "compassion.n.01",
+          "via_synset": "tenderness.n.03"
+        }
+      ],
+      "definition": "warm compassionate feelings"
+    },
+    {
+      "lemma": "tenderness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "compassion.n.01",
+          "via_synset": "tenderness.n.03"
+        }
+      ],
+      "definition": "warm compassionate feelings"
+    },
+    {
+      "lemma": "thoughtful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consideration.n.04",
+          "via_synset": "thoughtful.s.03"
+        }
+      ],
+      "definition": "considerate of the feelings or well-being of others"
+    },
+    {
+      "lemma": "thoughtfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "kindness.n.01",
+          "via_synset": "consideration.n.04"
+        }
+      ],
+      "definition": "kind and considerate regard for others"
+    },
+    {
+      "lemma": "unkindness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "kindness.n.01",
+          "via_synset": "unkindness.n.01"
+        }
+      ],
+      "definition": "lack of sympathy"
+    },
+    {
+      "lemma": "unselfish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unselfishness.n.01",
+          "via_synset": "unselfish.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unselfishness.n.01",
+          "via_synset": "unselfish.a.01"
+        }
+      ],
+      "definition": "not greedy"
+    },
+    {
+      "lemma": "unselfishness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "generosity.n.01",
+          "via_synset": "unselfishness.n.01"
+        }
+      ],
+      "definition": "the quality of not putting yourself first but being willing to give your time or money or effort etc. for others"
+    },
+    {
+      "lemma": "virtue",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "good.n.02",
+          "via_synset": "virtue.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "good.n.02",
+          "via_synset": "virtue.n.04"
+        }
+      ],
+      "definition": "the quality of doing what is right and avoiding what is wrong"
+    },
+    {
+      "lemma": "virtuousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "good.n.02",
+          "via_synset": "virtue.n.01"
+        }
+      ],
+      "definition": "the quality of doing what is right and avoiding what is wrong"
+    }
+  ]
+}

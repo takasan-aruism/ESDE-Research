@@ -1,0 +1,1592 @@
+{
+  "atom_id": "REL.together",
+  "category": "REL",
+  "seed_count": 6,
+  "total_keys": 95,
+  "pos_counts": {
+    "adv": 2,
+    "v": 69,
+    "n": 22,
+    "adj": 2
+  },
+  "source_counts": {
+    "0_seed": 8,
+    "2_hypernym_d1": 5,
+    "10_sibling": 37,
+    "3_hyponym_d1": 24,
+    "12_verb_group": 4,
+    "4_hyponym_d2": 7,
+    "6_derivational": 37,
+    "9_antonym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 5,
+      "words": [
+        "together(adv)",
+        "unite(v)",
+        "unify(v)",
+        "combine(v)",
+        "jointly(adv)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 5,
+      "words": [
+        "join(v)",
+        "fall in(v)",
+        "get together(v)",
+        "have(v)",
+        "feature(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 23,
+      "words": [
+        "federate(v)",
+        "federalize(v)",
+        "federalise(v)",
+        "ally with(v)",
+        "marry(v)",
+        "get married(v)",
+        "wed(v)",
+        "conjoin(v)",
+        "hook up with(v)",
+        "get hitched with(v)",
+        "espouse(v)",
+        "band together(v)",
+        "confederate(v)",
+        "league(v)",
+        "reunify(v)",
+        "reunite(v)",
+        "pair(v)",
+        "pair off(v)",
+        "partner off(v)",
+        "couple(v)",
+        "club(v)",
+        "consociate(v)",
+        "associate(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 6,
+      "words": [
+        "wive(v)",
+        "intermarry(v)",
+        "mismarry(v)",
+        "inmarry(v)",
+        "remarry(v)",
+        "walk(v)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 24,
+      "words": [
+        "intermarriage(n)",
+        "league(n)",
+        "unification(n)",
+        "federation(n)",
+        "remarriage(n)",
+        "confederative(adj)",
+        "confederation(n)",
+        "confederate(n)",
+        "confederacy(n)",
+        "club(n)",
+        "associable(adj)",
+        "association(n)",
+        "associate(n)",
+        "inmarriage(n)",
+        "reunion(n)",
+        "reunification(n)",
+        "combine(n)",
+        "combining(n)",
+        "marriage(n)",
+        "married(n)",
+        "wedding(n)",
+        "pair(n)",
+        "pairing(n)",
+        "couple(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "divide(v)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 29,
+      "words": [
+        "infiltrate(v)",
+        "penetrate(v)",
+        "unionize(v)",
+        "unionise(v)",
+        "organize(v)",
+        "organise(v)",
+        "rejoin(v)",
+        "affiliate(v)",
+        "sign up(v)",
+        "band oneself(v)",
+        "league together(v)",
+        "wear(v)",
+        "bear(v)",
+        "carry(v)",
+        "abound(v)",
+        "burst(v)",
+        "bristle(v)",
+        "sport(v)",
+        "boast(v)",
+        "possess(v)",
+        "pack(v)",
+        "take(v)",
+        "give off(v)",
+        "star(v)",
+        "imply(v)",
+        "involve(v)",
+        "brim(v)",
+        "read(v)",
+        "say(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 2,
+      "words": [
+        "tie(v)",
+        "splice(v)"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "abound",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "abound.v.02"
+        }
+      ],
+      "definition": "be in a state of movement or action"
+    },
+    {
+      "lemma": "affiliate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "join.v.01",
+          "via_synset": "affiliate.v.02"
+        }
+      ],
+      "definition": "join in an affiliation"
+    },
+    {
+      "lemma": "ally with",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "ally_with.v.01"
+        }
+      ],
+      "definition": "unite formally; of interest groups or countries"
+    },
+    {
+      "lemma": "associable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consociate.v.01",
+          "via_synset": "associable.s.01"
+        }
+      ],
+      "definition": "capable of being associated"
+    },
+    {
+      "lemma": "associate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consociate.v.01",
+          "via_synset": "associate.n.01"
+        }
+      ],
+      "definition": "a person who joins with others in some activity or endeavor"
+    },
+    {
+      "lemma": "associate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "consociate.v.01"
+        }
+      ],
+      "definition": "bring or come into association or action"
+    },
+    {
+      "lemma": "association",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consociate.v.01",
+          "via_synset": "affiliation.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consociate.v.01",
+          "via_synset": "association.n.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consociate.v.01",
+          "via_synset": "association.n.08"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consociate.v.01",
+          "via_synset": "association.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consociate.v.01",
+          "via_synset": "association.n.02"
+        }
+      ],
+      "definition": "a social or business relationship"
+    },
+    {
+      "lemma": "band oneself",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "join.v.01",
+          "via_synset": "band_oneself.v.01"
+        }
+      ],
+      "definition": "attach oneself to a group"
+    },
+    {
+      "lemma": "band together",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "band_together.v.01"
+        }
+      ],
+      "definition": "form a group or unite"
+    },
+    {
+      "lemma": "bear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "wear.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "bear.v.01"
+        }
+      ],
+      "definition": "have on one's person"
+    },
+    {
+      "lemma": "boast",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "sport.v.01"
+        }
+      ],
+      "definition": "wear or display in an ostentatious or proud manner"
+    },
+    {
+      "lemma": "brim",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "brim.v.01"
+        }
+      ],
+      "definition": "be completely full"
+    },
+    {
+      "lemma": "bristle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "abound.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "bristle.v.03"
+        }
+      ],
+      "definition": "be in a state of movement or action"
+    },
+    {
+      "lemma": "burst",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "abound.v.02"
+        }
+      ],
+      "definition": "be in a state of movement or action"
+    },
+    {
+      "lemma": "carry",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "carry.v.22"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "carry.v.35"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "carry.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "carry.v.18"
+        }
+      ],
+      "definition": "be equipped with (a mast or sail)"
+    },
+    {
+      "lemma": "club",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "club.v.01",
+          "via_synset": "club.n.02"
+        }
+      ],
+      "definition": "a formal association of people with similar interests"
+    },
+    {
+      "lemma": "club",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "club.v.01"
+        }
+      ],
+      "definition": "unite with a common purpose"
+    },
+    {
+      "lemma": "combine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unite.v.03",
+          "via_synset": "combining.n.01"
+        }
+      ],
+      "definition": "an occurrence that results in things being united"
+    },
+    {
+      "lemma": "combine",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unite.v.03",
+          "via_synset": "unite.v.03"
+        }
+      ],
+      "definition": "have or possess in combination"
+    },
+    {
+      "lemma": "combining",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unite.v.03",
+          "via_synset": "combining.n.01"
+        }
+      ],
+      "definition": "an occurrence that results in things being united"
+    },
+    {
+      "lemma": "confederacy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "confederate.v.02",
+          "via_synset": "confederation.n.02"
+        }
+      ],
+      "definition": "a union of political organizations"
+    },
+    {
+      "lemma": "confederate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "confederate.v.02",
+          "via_synset": "accomplice.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "band_together.v.01",
+          "via_synset": "accomplice.n.01"
+        }
+      ],
+      "definition": "a person who joins with another in carrying out some plan (especially an unethical or illegal plan)"
+    },
+    {
+      "lemma": "confederate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "band_together.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "confederate.v.02"
+        }
+      ],
+      "definition": "form a group or unite"
+    },
+    {
+      "lemma": "confederation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "confederate.v.02",
+          "via_synset": "alliance.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "confederate.v.02",
+          "via_synset": "confederation.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "band_together.v.01",
+          "via_synset": "alliance.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "band_together.v.01",
+          "via_synset": "confederation.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "band_together.v.01",
+          "via_synset": "confederation.n.03"
+        }
+      ],
+      "definition": "the state of being allied or confederated"
+    },
+    {
+      "lemma": "confederative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "confederate.v.02",
+          "via_synset": "allied.s.02"
+        }
+      ],
+      "definition": "united in a confederacy or league"
+    },
+    {
+      "lemma": "conjoin",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "marry.v.01"
+        }
+      ],
+      "definition": "take in marriage"
+    },
+    {
+      "lemma": "consociate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "consociate.v.01"
+        }
+      ],
+      "definition": "bring or come into association or action"
+    },
+    {
+      "lemma": "couple",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pair.v.01",
+          "via_synset": "couple.n.01"
+        }
+      ],
+      "definition": "a pair who associate with one another"
+    },
+    {
+      "lemma": "couple",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "pair.v.01"
+        }
+      ],
+      "definition": "form a pair or pairs"
+    },
+    {
+      "lemma": "divide",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "unite.v.01",
+          "via_synset": "divide.v.01"
+        }
+      ],
+      "definition": "separate into parts or portions"
+    },
+    {
+      "lemma": "espouse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "marry.v.01"
+        }
+      ],
+      "definition": "take in marriage"
+    },
+    {
+      "lemma": "fall in",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "unite.v.01",
+          "via_synset": "join.v.01"
+        }
+      ],
+      "definition": "become part of; become a member of a group or organization"
+    },
+    {
+      "lemma": "feature",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "unite.v.03",
+          "via_synset": "have.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "sport.v.01"
+        }
+      ],
+      "definition": "have as a feature"
+    },
+    {
+      "lemma": "federalise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "federate.v.02"
+        }
+      ],
+      "definition": "unite on a federal basis or band together as a league"
+    },
+    {
+      "lemma": "federalize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "federate.v.02"
+        }
+      ],
+      "definition": "unite on a federal basis or band together as a league"
+    },
+    {
+      "lemma": "federate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "federate.v.02"
+        }
+      ],
+      "definition": "unite on a federal basis or band together as a league"
+    },
+    {
+      "lemma": "federation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "federate.v.02",
+          "via_synset": "federation.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "federate.v.02",
+          "via_synset": "confederation.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "federate.v.02",
+          "via_synset": "federation.n.03"
+        }
+      ],
+      "definition": "an organization formed by merging several groups or parties"
+    },
+    {
+      "lemma": "get hitched with",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "marry.v.01"
+        }
+      ],
+      "definition": "take in marriage"
+    },
+    {
+      "lemma": "get married",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "marry.v.01"
+        }
+      ],
+      "definition": "take in marriage"
+    },
+    {
+      "lemma": "get together",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "unite.v.01",
+          "via_synset": "join.v.01"
+        }
+      ],
+      "definition": "become part of; become a member of a group or organization"
+    },
+    {
+      "lemma": "give off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "give_off.v.01"
+        }
+      ],
+      "definition": "have as a by-product"
+    },
+    {
+      "lemma": "have",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "unite.v.03",
+          "via_synset": "have.v.02"
+        }
+      ],
+      "definition": "have as a feature"
+    },
+    {
+      "lemma": "hook up with",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "marry.v.01"
+        }
+      ],
+      "definition": "take in marriage"
+    },
+    {
+      "lemma": "imply",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "imply.v.05"
+        }
+      ],
+      "definition": "have as a necessary feature"
+    },
+    {
+      "lemma": "infiltrate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "join.v.01",
+          "via_synset": "infiltrate.v.02"
+        }
+      ],
+      "definition": "enter a group or organization in order to spy on the members"
+    },
+    {
+      "lemma": "inmarriage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "inmarry.v.01",
+          "via_synset": "endogamy.n.01"
+        }
+      ],
+      "definition": "marriage within one's own tribe or group as required by custom or law"
+    },
+    {
+      "lemma": "inmarry",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "marry.v.01",
+          "via_synset": "inmarry.v.01"
+        }
+      ],
+      "definition": "marry within one's own tribe or group"
+    },
+    {
+      "lemma": "intermarriage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "intermarry.v.01",
+          "via_synset": "exogamy.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "intermarry.v.01",
+          "via_synset": "endogamy.n.01"
+        }
+      ],
+      "definition": "marriage to a person belonging to a tribe or group other than your own as required by custom or law"
+    },
+    {
+      "lemma": "intermarry",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "marry.v.01",
+          "via_synset": "intermarry.v.01"
+        }
+      ],
+      "definition": "marry within the same ethnic, social, or family group"
+    },
+    {
+      "lemma": "involve",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "imply.v.05"
+        }
+      ],
+      "definition": "have as a necessary feature"
+    },
+    {
+      "lemma": "join",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "unite.v.01",
+          "via_synset": "join.v.01"
+        }
+      ],
+      "definition": "become part of; become a member of a group or organization"
+    },
+    {
+      "lemma": "jointly",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "jointly.r.01",
+          "via_synset": "jointly.r.01"
+        }
+      ],
+      "definition": "in collaboration or cooperation"
+    },
+    {
+      "lemma": "league",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "league.v.01",
+          "via_synset": "league.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "league.v.01",
+          "via_synset": "league.n.01"
+        }
+      ],
+      "definition": "an association of states or organizations or individuals for common action"
+    },
+    {
+      "lemma": "league",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "league.v.01"
+        }
+      ],
+      "definition": "unite to form a league"
+    },
+    {
+      "lemma": "league together",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "join.v.01",
+          "via_synset": "band_oneself.v.01"
+        }
+      ],
+      "definition": "attach oneself to a group"
+    },
+    {
+      "lemma": "marriage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "marry.v.01",
+          "via_synset": "marriage.n.03"
+        }
+      ],
+      "definition": "the act of marrying; the nuptial ceremony"
+    },
+    {
+      "lemma": "married",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "marry.v.01",
+          "via_synset": "married.n.01"
+        }
+      ],
+      "definition": "a person who is married"
+    },
+    {
+      "lemma": "marry",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "marry.v.01"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "marry.v.01",
+          "via_synset": "marry.v.02"
+        }
+      ],
+      "definition": "take in marriage"
+    },
+    {
+      "lemma": "mismarry",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "marry.v.01",
+          "via_synset": "mismarry.v.01"
+        }
+      ],
+      "definition": "marry an unsuitable partner"
+    },
+    {
+      "lemma": "organise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "join.v.01",
+          "via_synset": "unionize.v.02"
+        }
+      ],
+      "definition": "form or join a union"
+    },
+    {
+      "lemma": "organize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "join.v.01",
+          "via_synset": "unionize.v.02"
+        }
+      ],
+      "definition": "form or join a union"
+    },
+    {
+      "lemma": "pack",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "carry.v.02"
+        }
+      ],
+      "definition": "have with oneself; have on one's person"
+    },
+    {
+      "lemma": "pair",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pair.v.01",
+          "via_synset": "pair.n.03"
+        }
+      ],
+      "definition": "two people considered as a unit"
+    },
+    {
+      "lemma": "pair",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "pair.v.01"
+        }
+      ],
+      "definition": "form a pair or pairs"
+    },
+    {
+      "lemma": "pair off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "pair.v.01"
+        }
+      ],
+      "definition": "form a pair or pairs"
+    },
+    {
+      "lemma": "pairing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pair.v.01",
+          "via_synset": "pairing.n.02"
+        }
+      ],
+      "definition": "the act of grouping things or people in pairs"
+    },
+    {
+      "lemma": "partner off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "pair.v.01"
+        }
+      ],
+      "definition": "form a pair or pairs"
+    },
+    {
+      "lemma": "penetrate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "join.v.01",
+          "via_synset": "infiltrate.v.02"
+        }
+      ],
+      "definition": "enter a group or organization in order to spy on the members"
+    },
+    {
+      "lemma": "possess",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "possess.v.01"
+        }
+      ],
+      "definition": "have as an attribute, knowledge, or skill"
+    },
+    {
+      "lemma": "read",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "read.v.02"
+        }
+      ],
+      "definition": "have or contain a certain wording or form"
+    },
+    {
+      "lemma": "rejoin",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "join.v.01",
+          "via_synset": "rejoin.v.01"
+        }
+      ],
+      "definition": "join again"
+    },
+    {
+      "lemma": "remarriage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remarry.v.01",
+          "via_synset": "remarriage.n.01"
+        }
+      ],
+      "definition": "the act of marrying again"
+    },
+    {
+      "lemma": "remarry",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "marry.v.01",
+          "via_synset": "remarry.v.01"
+        }
+      ],
+      "definition": "marry, not for the first time"
+    },
+    {
+      "lemma": "reunification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reunify.v.01",
+          "via_synset": "reunion.n.02"
+        }
+      ],
+      "definition": "the act of coming together again"
+    },
+    {
+      "lemma": "reunify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "reunify.v.01"
+        }
+      ],
+      "definition": "unify again, as of a country"
+    },
+    {
+      "lemma": "reunion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reunify.v.01",
+          "via_synset": "reunion.n.02"
+        }
+      ],
+      "definition": "the act of coming together again"
+    },
+    {
+      "lemma": "reunite",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "reunify.v.01"
+        }
+      ],
+      "definition": "unify again, as of a country"
+    },
+    {
+      "lemma": "say",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "read.v.02"
+        }
+      ],
+      "definition": "have or contain a certain wording or form"
+    },
+    {
+      "lemma": "sign up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "join.v.01",
+          "via_synset": "sign_up.v.02"
+        }
+      ],
+      "definition": "join a club, an activity, etc. with the intention to join or participate,"
+    },
+    {
+      "lemma": "splice",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "marry.v.01",
+          "via_synset": "marry.v.02"
+        }
+      ],
+      "definition": "perform a marriage ceremony"
+    },
+    {
+      "lemma": "sport",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "sport.v.01"
+        }
+      ],
+      "definition": "wear or display in an ostentatious or proud manner"
+    },
+    {
+      "lemma": "star",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "star.v.01"
+        }
+      ],
+      "definition": "feature as the star"
+    },
+    {
+      "lemma": "take",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "carry.v.02"
+        }
+      ],
+      "definition": "have with oneself; have on one's person"
+    },
+    {
+      "lemma": "tie",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "marry.v.01",
+          "via_synset": "marry.v.02"
+        }
+      ],
+      "definition": "perform a marriage ceremony"
+    },
+    {
+      "lemma": "together",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "together.r.01",
+          "via_synset": "together.r.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "together.r.02",
+          "via_synset": "together.r.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "together.r.03",
+          "via_synset": "together.r.03"
+        }
+      ],
+      "definition": "in contact with each other or in proximity"
+    },
+    {
+      "lemma": "unification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unite.v.01",
+          "via_synset": "union.n.11"
+        }
+      ],
+      "definition": "the act of making or becoming a single unit"
+    },
+    {
+      "lemma": "unify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unite.v.01",
+          "via_synset": "unite.v.01"
+        }
+      ],
+      "definition": "act in concert or unite in a common purpose or belief"
+    },
+    {
+      "lemma": "unionise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "join.v.01",
+          "via_synset": "unionize.v.02"
+        }
+      ],
+      "definition": "form or join a union"
+    },
+    {
+      "lemma": "unionize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "join.v.01",
+          "via_synset": "unionize.v.02"
+        }
+      ],
+      "definition": "form or join a union"
+    },
+    {
+      "lemma": "unite",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unite.v.01",
+          "via_synset": "unite.v.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unite.v.03",
+          "via_synset": "unite.v.03"
+        }
+      ],
+      "definition": "act in concert or unite in a common purpose or belief"
+    },
+    {
+      "lemma": "walk",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "consociate.v.01",
+          "via_synset": "walk.v.07"
+        }
+      ],
+      "definition": "be or act in association with"
+    },
+    {
+      "lemma": "wear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "wear.v.05"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "wear.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "have.v.02",
+          "via_synset": "wear.v.03"
+        }
+      ],
+      "definition": "have or show an appearance of"
+    },
+    {
+      "lemma": "wed",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "unite.v.01",
+          "via_synset": "marry.v.01"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "marry.v.01",
+          "via_synset": "marry.v.02"
+        }
+      ],
+      "definition": "take in marriage"
+    },
+    {
+      "lemma": "wedding",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "marry.v.01",
+          "via_synset": "marriage.n.03"
+        }
+      ],
+      "definition": "the act of marrying; the nuptial ceremony"
+    },
+    {
+      "lemma": "wive",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "marry.v.01",
+          "via_synset": "wive.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "marry.v.01",
+          "via_synset": "wive.v.02"
+        }
+      ],
+      "definition": "take (someone) as a wife"
+    }
+  ]
+}

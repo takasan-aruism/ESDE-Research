@@ -1,0 +1,1630 @@
+{
+  "atom_id": "PRP.slow",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 101,
+  "pos_counts": {
+    "adj": 25,
+    "v": 62,
+    "n": 14
+  },
+  "source_counts": {
+    "0_seed": 13,
+    "7_similar_to": 22,
+    "3_hyponym_d1": 6,
+    "2_hypernym_d1": 6,
+    "4_hyponym_d2": 8,
+    "12_verb_group": 1,
+    "6_derivational": 15,
+    "8_also_see": 2,
+    "9_antonym": 1,
+    "10_sibling": 47
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 10,
+      "words": [
+        "slow(adj)",
+        "decelerate(v)",
+        "slow(v)",
+        "slow down(v)",
+        "slow up(v)",
+        "retard(v)",
+        "sluggish(adj)",
+        "sulky(adj)",
+        "dull(adj)",
+        "gradual(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 6,
+      "words": [
+        "decrease(v)",
+        "diminish(v)",
+        "lessen(v)",
+        "fall(v)",
+        "antiphon(n)",
+        "antiphony(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 3,
+      "words": [
+        "delay(v)",
+        "detain(v)",
+        "hold up(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 8,
+      "words": [
+        "clog(v)",
+        "constipate(v)",
+        "bog down(v)",
+        "bog(v)",
+        "catch(v)",
+        "stonewall(v)",
+        "stall(v)",
+        "buy time(v)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 11,
+      "words": [
+        "slowness(n)",
+        "slowdown(n)",
+        "stonewaller(n)",
+        "stall(n)",
+        "stalling(n)",
+        "sluggishness(n)",
+        "deceleration(n)",
+        "slowing(n)",
+        "retardation(n)",
+        "delay(n)",
+        "holdup(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 19,
+      "words": [
+        "andante(adj)",
+        "larghetto(adj)",
+        "moderato(adj)",
+        "lento(adj)",
+        "largo(adj)",
+        "adagio(adj)",
+        "lentissimo(adj)",
+        "larghissimo(adj)",
+        "dilatory(adj)",
+        "laggard(adj)",
+        "poky(adj)",
+        "pokey(adj)",
+        "bumper-to-bumper(adj)",
+        "drawn-out(adj)",
+        "long-play(adj)",
+        "long-playing(adj)",
+        "lazy(adj)",
+        "slow-moving(adj)",
+        "inactive(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 2,
+      "words": [
+        "gradual(adj)",
+        "unhurried(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "accelerate(v)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 41,
+      "words": [
+        "abate(v)",
+        "let up(v)",
+        "slack off(v)",
+        "slack(v)",
+        "die away(v)",
+        "shrink(v)",
+        "contract(v)",
+        "dwindle(v)",
+        "dwindle away(v)",
+        "dwindle down(v)",
+        "decline(v)",
+        "go down(v)",
+        "wane(v)",
+        "break(v)",
+        "de-escalate(v)",
+        "shorten(v)",
+        "decrescendo(v)",
+        "depreciate(v)",
+        "undervalue(v)",
+        "devaluate(v)",
+        "devalue(v)",
+        "deflate(v)",
+        "ease up(v)",
+        "ease off(v)",
+        "slacken off(v)",
+        "flag(v)",
+        "remit(v)",
+        "weaken(v)",
+        "shrivel(v)",
+        "shrivel up(v)",
+        "wither(v)",
+        "boil down(v)",
+        "reduce(v)",
+        "decoct(v)",
+        "concentrate(v)",
+        "thin out(v)",
+        "taper(v)",
+        "vanish(v)",
+        "fly(v)",
+        "vaporize(v)",
+        "drop off(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "abate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "abate.v.02"
+        }
+      ],
+      "definition": "become less in amount or intensity"
+    },
+    {
+      "lemma": "accelerate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "accelerate.v.01"
+        }
+      ],
+      "definition": "move faster"
+    },
+    {
+      "lemma": "adagio",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "slow.a.02",
+          "via_synset": "adagio.s.01"
+        }
+      ],
+      "definition": "(of tempo) leisurely"
+    },
+    {
+      "lemma": "andante",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "slow.a.02",
+          "via_synset": "andante.s.01"
+        }
+      ],
+      "definition": "(of tempo) moderately slow"
+    },
+    {
+      "lemma": "antiphon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "gradual.n.01",
+          "via_synset": "antiphon.n.01"
+        }
+      ],
+      "definition": "a verse or song to be chanted or sung in response"
+    },
+    {
+      "lemma": "antiphony",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "gradual.n.01",
+          "via_synset": "antiphon.n.01"
+        }
+      ],
+      "definition": "a verse or song to be chanted or sung in response"
+    },
+    {
+      "lemma": "bog",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "slow.v.03",
+          "via_synset": "bog_down.v.04"
+        }
+      ],
+      "definition": "cause to slow down or get stuck"
+    },
+    {
+      "lemma": "bog down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "slow.v.03",
+          "via_synset": "bog_down.v.04"
+        }
+      ],
+      "definition": "cause to slow down or get stuck"
+    },
+    {
+      "lemma": "boil down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "boil_down.v.02"
+        }
+      ],
+      "definition": "be cooked until very little liquid is left"
+    },
+    {
+      "lemma": "break",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "break.v.56"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "break.v.58"
+        }
+      ],
+      "definition": "fall sharply"
+    },
+    {
+      "lemma": "bumper-to-bumper",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "slow.a.01",
+          "via_synset": "bumper-to-bumper.s.01"
+        }
+      ],
+      "definition": "used of traffic"
+    },
+    {
+      "lemma": "buy time",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "delay.v.01",
+          "via_synset": "buy_time.v.01"
+        }
+      ],
+      "definition": "act so as to delay an event or action in order to gain an advantage"
+    },
+    {
+      "lemma": "catch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "delay.v.01",
+          "via_synset": "catch.v.29"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "catch.v.29",
+          "via_synset": "catch.v.16"
+        }
+      ],
+      "definition": "delay or hold up; prevent from proceeding on schedule or as planned"
+    },
+    {
+      "lemma": "clog",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "slow.v.03",
+          "via_synset": "clog.v.04"
+        }
+      ],
+      "definition": "impede with a clog or as if with a clog"
+    },
+    {
+      "lemma": "concentrate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "boil_down.v.02"
+        }
+      ],
+      "definition": "be cooked until very little liquid is left"
+    },
+    {
+      "lemma": "constipate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "slow.v.03",
+          "via_synset": "clog.v.04"
+        }
+      ],
+      "definition": "impede with a clog or as if with a clog"
+    },
+    {
+      "lemma": "contract",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "shrink.v.04"
+        }
+      ],
+      "definition": "become smaller or draw together"
+    },
+    {
+      "lemma": "de-escalate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "de-escalate.v.01"
+        }
+      ],
+      "definition": "diminish in size, scope, or intensity"
+    },
+    {
+      "lemma": "decelerate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "decelerate.v.01"
+        }
+      ],
+      "definition": "lose velocity; move more slowly"
+    },
+    {
+      "lemma": "deceleration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "deceleration.n.01"
+        }
+      ],
+      "definition": "a decrease in rate of change"
+    },
+    {
+      "lemma": "decline",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "decline.v.04"
+        }
+      ],
+      "definition": "grow smaller"
+    },
+    {
+      "lemma": "decoct",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "boil_down.v.02"
+        }
+      ],
+      "definition": "be cooked until very little liquid is left"
+    },
+    {
+      "lemma": "decrease",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "decrease.v.01"
+        }
+      ],
+      "definition": "decrease in size, extent, or range"
+    },
+    {
+      "lemma": "decrescendo",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "decrescendo.v.01"
+        }
+      ],
+      "definition": "grow quieter"
+    },
+    {
+      "lemma": "deflate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "deflate.v.06"
+        }
+      ],
+      "definition": "become deflated or flaccid, as by losing air"
+    },
+    {
+      "lemma": "delay",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "delay.v.01",
+          "via_synset": "delay.n.02"
+        }
+      ],
+      "definition": "the act of delaying; inactivity resulting in something being put off until a later time"
+    },
+    {
+      "lemma": "delay",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "delay.v.01"
+        }
+      ],
+      "definition": "cause to be slowed down or delayed"
+    },
+    {
+      "lemma": "depreciate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "depreciate.v.03"
+        }
+      ],
+      "definition": "lose in value"
+    },
+    {
+      "lemma": "detain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "delay.v.01"
+        }
+      ],
+      "definition": "cause to be slowed down or delayed"
+    },
+    {
+      "lemma": "devaluate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "depreciate.v.03"
+        }
+      ],
+      "definition": "lose in value"
+    },
+    {
+      "lemma": "devalue",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "depreciate.v.03"
+        }
+      ],
+      "definition": "lose in value"
+    },
+    {
+      "lemma": "die away",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "abate.v.02"
+        }
+      ],
+      "definition": "become less in amount or intensity"
+    },
+    {
+      "lemma": "dilatory",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "slow.a.01",
+          "via_synset": "dilatory.s.01"
+        }
+      ],
+      "definition": "wasting time"
+    },
+    {
+      "lemma": "diminish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "decrease.v.01"
+        }
+      ],
+      "definition": "decrease in size, extent, or range"
+    },
+    {
+      "lemma": "drawn-out",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "slow.a.01",
+          "via_synset": "drawn-out.s.02"
+        }
+      ],
+      "definition": "(used of speech) uttered slowly with prolonged vowels"
+    },
+    {
+      "lemma": "drop off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "drop_off.v.01"
+        }
+      ],
+      "definition": "fall or diminish"
+    },
+    {
+      "lemma": "dull",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dull.s.05",
+          "via_synset": "dull.s.05"
+        }
+      ],
+      "definition": "(of business) not active or brisk"
+    },
+    {
+      "lemma": "dwindle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "dwindle.v.01"
+        }
+      ],
+      "definition": "become smaller or lose substance"
+    },
+    {
+      "lemma": "dwindle away",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "dwindle.v.01"
+        }
+      ],
+      "definition": "become smaller or lose substance"
+    },
+    {
+      "lemma": "dwindle down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "dwindle.v.01"
+        }
+      ],
+      "definition": "become smaller or lose substance"
+    },
+    {
+      "lemma": "ease off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "ease_up.v.02"
+        }
+      ],
+      "definition": "become less intense"
+    },
+    {
+      "lemma": "ease up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "ease_up.v.02"
+        }
+      ],
+      "definition": "become less intense"
+    },
+    {
+      "lemma": "fall",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "decrease.v.01"
+        }
+      ],
+      "definition": "decrease in size, extent, or range"
+    },
+    {
+      "lemma": "flag",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "ease_up.v.02"
+        }
+      ],
+      "definition": "become less intense"
+    },
+    {
+      "lemma": "fly",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "vanish.v.05"
+        }
+      ],
+      "definition": "decrease rapidly and disappear"
+    },
+    {
+      "lemma": "go down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "decline.v.04"
+        }
+      ],
+      "definition": "grow smaller"
+    },
+    {
+      "lemma": "gradual",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "slow.a.01",
+          "via_synset": "gradual.a.01"
+        }
+      ],
+      "definition": "proceeding in small stages"
+    },
+    {
+      "lemma": "gradual",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "gradual.n.01",
+          "via_synset": "gradual.n.01"
+        }
+      ],
+      "definition": "(Roman Catholic Church) an antiphon (usually from the Book of Psalms) immediately after the epistle at Mass"
+    },
+    {
+      "lemma": "hold up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "delay.v.01"
+        }
+      ],
+      "definition": "cause to be slowed down or delayed"
+    },
+    {
+      "lemma": "holdup",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "delay.v.01",
+          "via_synset": "delay.n.02"
+        }
+      ],
+      "definition": "the act of delaying; inactivity resulting in something being put off until a later time"
+    },
+    {
+      "lemma": "inactive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dull.s.05",
+          "via_synset": "inactive.a.07"
+        }
+      ],
+      "definition": "lacking activity; lying idle or unused"
+    },
+    {
+      "lemma": "laggard",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "slow.a.01",
+          "via_synset": "dilatory.s.01"
+        }
+      ],
+      "definition": "wasting time"
+    },
+    {
+      "lemma": "larghetto",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "slow.a.02",
+          "via_synset": "larghetto.s.01"
+        }
+      ],
+      "definition": "(of tempo) less slow and broad than largo"
+    },
+    {
+      "lemma": "larghissimo",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "slow.a.02",
+          "via_synset": "larghissimo.s.01"
+        }
+      ],
+      "definition": "(of tempo) as slow and broad as possible"
+    },
+    {
+      "lemma": "largo",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "slow.a.02",
+          "via_synset": "largo.s.01"
+        }
+      ],
+      "definition": "very slow in tempo and broad in manner"
+    },
+    {
+      "lemma": "lazy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "slow.a.01",
+          "via_synset": "lazy.s.01"
+        }
+      ],
+      "definition": "moving slowly and gently"
+    },
+    {
+      "lemma": "lentissimo",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "slow.a.02",
+          "via_synset": "lentissimo.s.01"
+        }
+      ],
+      "definition": "(of tempo) very slow"
+    },
+    {
+      "lemma": "lento",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "slow.a.02",
+          "via_synset": "lento.s.01"
+        }
+      ],
+      "definition": "(of tempo) slow"
+    },
+    {
+      "lemma": "lessen",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "decrease.v.01"
+        }
+      ],
+      "definition": "decrease in size, extent, or range"
+    },
+    {
+      "lemma": "let up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "abate.v.02"
+        }
+      ],
+      "definition": "become less in amount or intensity"
+    },
+    {
+      "lemma": "long-play",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "slow.a.01",
+          "via_synset": "long-play.s.01"
+        }
+      ],
+      "definition": "(used of records) playing at a slower speed and for a longer time than earlier records"
+    },
+    {
+      "lemma": "long-playing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "slow.a.01",
+          "via_synset": "long-play.s.01"
+        }
+      ],
+      "definition": "(used of records) playing at a slower speed and for a longer time than earlier records"
+    },
+    {
+      "lemma": "moderato",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "slow.a.02",
+          "via_synset": "moderato.s.01"
+        }
+      ],
+      "definition": "(of tempo) moderate"
+    },
+    {
+      "lemma": "pokey",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "slow.a.01",
+          "via_synset": "dilatory.s.01"
+        }
+      ],
+      "definition": "wasting time"
+    },
+    {
+      "lemma": "poky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "slow.a.01",
+          "via_synset": "dilatory.s.01"
+        }
+      ],
+      "definition": "wasting time"
+    },
+    {
+      "lemma": "reduce",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "boil_down.v.02"
+        }
+      ],
+      "definition": "be cooked until very little liquid is left"
+    },
+    {
+      "lemma": "remit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "remit.v.07"
+        }
+      ],
+      "definition": "diminish or abate"
+    },
+    {
+      "lemma": "retard",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "decelerate.v.01"
+        }
+      ],
+      "definition": "lose velocity; move more slowly"
+    },
+    {
+      "lemma": "retardation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "deceleration.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "slowdown.n.01"
+        }
+      ],
+      "definition": "a decrease in rate of change"
+    },
+    {
+      "lemma": "shorten",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "shorten.v.04"
+        }
+      ],
+      "definition": "become short or shorter"
+    },
+    {
+      "lemma": "shrink",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "shrink.v.04"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "shrivel.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "shrink.v.05"
+        }
+      ],
+      "definition": "become smaller or draw together"
+    },
+    {
+      "lemma": "shrivel",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "shrivel.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "shrink.v.05"
+        }
+      ],
+      "definition": "wither, as with a loss of moisture"
+    },
+    {
+      "lemma": "shrivel up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "shrivel.v.01"
+        }
+      ],
+      "definition": "wither, as with a loss of moisture"
+    },
+    {
+      "lemma": "slack",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "abate.v.02"
+        }
+      ],
+      "definition": "become less in amount or intensity"
+    },
+    {
+      "lemma": "slack off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "abate.v.02"
+        }
+      ],
+      "definition": "become less in amount or intensity"
+    },
+    {
+      "lemma": "slacken off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "ease_up.v.02"
+        }
+      ],
+      "definition": "become less intense"
+    },
+    {
+      "lemma": "slow",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "slow.a.01",
+          "via_synset": "slow.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "slow.a.02",
+          "via_synset": "slow.a.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dull.s.05",
+          "via_synset": "dull.s.05"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sluggish.s.01",
+          "via_synset": "slow.a.01"
+        }
+      ],
+      "definition": "not moving quickly; taking a comparatively long time"
+    },
+    {
+      "lemma": "slow",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "decelerate.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "slow.v.03"
+        }
+      ],
+      "definition": "lose velocity; move more slowly"
+    },
+    {
+      "lemma": "slow down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "decelerate.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "slow.v.03"
+        }
+      ],
+      "definition": "lose velocity; move more slowly"
+    },
+    {
+      "lemma": "slow up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "decelerate.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "slow.v.03"
+        }
+      ],
+      "definition": "lose velocity; move more slowly"
+    },
+    {
+      "lemma": "slow-moving",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "slow.a.01",
+          "via_synset": "slow-moving.s.01"
+        }
+      ],
+      "definition": "moving slowly"
+    },
+    {
+      "lemma": "slowdown",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "slow.v.03",
+          "via_synset": "slowdown.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "slowdown.n.01"
+        }
+      ],
+      "definition": "the act of slowing down or falling behind"
+    },
+    {
+      "lemma": "slowing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "decelerate.v.01",
+          "via_synset": "deceleration.n.01"
+        }
+      ],
+      "definition": "a decrease in rate of change"
+    },
+    {
+      "lemma": "slowness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "slow.a.02",
+          "via_synset": "slowness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "slow.a.01",
+          "via_synset": "slowness.n.02"
+        }
+      ],
+      "definition": "a rate demonstrating an absence of haste or hurry"
+    },
+    {
+      "lemma": "sluggish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sluggish.s.01",
+          "via_synset": "sluggish.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dull.s.05",
+          "via_synset": "dull.s.05"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "slow.a.01",
+          "via_synset": "sluggish.s.01"
+        }
+      ],
+      "definition": "moving slowly"
+    },
+    {
+      "lemma": "sluggishness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dull.s.05",
+          "via_synset": "sluggishness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sluggish.s.01",
+          "via_synset": "sluggishness.n.02"
+        }
+      ],
+      "definition": "the pace of things that move relatively slowly"
+    },
+    {
+      "lemma": "stall",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "stall.v.03",
+          "via_synset": "stall.n.07"
+        }
+      ],
+      "definition": "a tactic used to mislead or delay"
+    },
+    {
+      "lemma": "stall",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "delay.v.01",
+          "via_synset": "stall.v.03"
+        }
+      ],
+      "definition": "deliberately delay an event or action"
+    },
+    {
+      "lemma": "stalling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "stall.v.03",
+          "via_synset": "stall.n.07"
+        }
+      ],
+      "definition": "a tactic used to mislead or delay"
+    },
+    {
+      "lemma": "stonewall",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "delay.v.01",
+          "via_synset": "stonewall.v.02"
+        }
+      ],
+      "definition": "engage in delaying tactics or refuse to cooperate"
+    },
+    {
+      "lemma": "stonewaller",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "stonewall.v.02",
+          "via_synset": "stonewaller.n.01"
+        }
+      ],
+      "definition": "one who stonewalls or refuses to answer or cooperate; someone who delays by lengthy speeches etc."
+    },
+    {
+      "lemma": "sulky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sluggish.s.01",
+          "via_synset": "sluggish.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "slow.a.01",
+          "via_synset": "sluggish.s.01"
+        }
+      ],
+      "definition": "moving slowly"
+    },
+    {
+      "lemma": "taper",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "taper.v.01"
+        }
+      ],
+      "definition": "diminish gradually"
+    },
+    {
+      "lemma": "thin out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "thin_out.v.02"
+        }
+      ],
+      "definition": "become sparser"
+    },
+    {
+      "lemma": "undervalue",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "depreciate.v.03"
+        }
+      ],
+      "definition": "lose in value"
+    },
+    {
+      "lemma": "unhurried",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "slow.a.01",
+          "via_synset": "unhurried.a.01"
+        }
+      ],
+      "definition": "relaxed and leisurely; without hurry or haste"
+    },
+    {
+      "lemma": "vanish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "vanish.v.05"
+        }
+      ],
+      "definition": "decrease rapidly and disappear"
+    },
+    {
+      "lemma": "vaporize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "vanish.v.05"
+        }
+      ],
+      "definition": "decrease rapidly and disappear"
+    },
+    {
+      "lemma": "wane",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "decline.v.04"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "wane.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "wane.v.02"
+        }
+      ],
+      "definition": "grow smaller"
+    },
+    {
+      "lemma": "weaken",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "weaken.v.02"
+        }
+      ],
+      "definition": "become weaker"
+    },
+    {
+      "lemma": "wither",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.v.01",
+          "via_synset": "shrivel.v.01"
+        }
+      ],
+      "definition": "wither, as with a loss of moisture"
+    }
+  ]
+}

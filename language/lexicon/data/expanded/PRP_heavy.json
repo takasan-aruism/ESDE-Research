@@ -1,0 +1,618 @@
+{
+  "atom_id": "PRP.heavy",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 34,
+  "pos_counts": {
+    "adj": 28,
+    "n": 6
+  },
+  "source_counts": {
+    "0_seed": 9,
+    "7_similar_to": 26,
+    "6_derivational": 9
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 5,
+      "words": [
+        "heavy(adj)",
+        "weighty(adj)",
+        "grave(adj)",
+        "grievous(adj)",
+        "massive(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 6,
+      "words": [
+        "massiveness(n)",
+        "heaviness(n)",
+        "weightiness(n)",
+        "weight(n)",
+        "graveness(n)",
+        "gravity(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 23,
+      "words": [
+        "heavier-than-air(adj)",
+        "doughy(adj)",
+        "soggy(adj)",
+        "ponderous(adj)",
+        "non-buoyant(adj)",
+        "hefty(adj)",
+        "dense(adj)",
+        "big(adj)",
+        "important(adj)",
+        "of import(adj)",
+        "oppressive(adj)",
+        "leaden(adj)",
+        "weighted(adj)",
+        "distressing(adj)",
+        "distressful(adj)",
+        "disturbing(adj)",
+        "perturbing(adj)",
+        "troubling(adj)",
+        "worrisome(adj)",
+        "worrying(adj)",
+        "burdensome(adj)",
+        "onerous(adj)",
+        "taxing(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "big",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.08",
+          "via_synset": "big.s.09"
+        }
+      ],
+      "definition": "marked by intense physical force"
+    },
+    {
+      "lemma": "burdensome",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.04",
+          "via_synset": "burdensome.s.01"
+        }
+      ],
+      "definition": "not easily borne; wearing"
+    },
+    {
+      "lemma": "dense",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.01",
+          "via_synset": "dense.s.03"
+        }
+      ],
+      "definition": "having high relative density or specific gravity"
+    },
+    {
+      "lemma": "distressful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.04",
+          "via_synset": "distressing.s.01"
+        }
+      ],
+      "definition": "causing distress or worry or anxiety"
+    },
+    {
+      "lemma": "distressing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.04",
+          "via_synset": "distressing.s.01"
+        }
+      ],
+      "definition": "causing distress or worry or anxiety"
+    },
+    {
+      "lemma": "disturbing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.04",
+          "via_synset": "distressing.s.01"
+        }
+      ],
+      "definition": "causing distress or worry or anxiety"
+    },
+    {
+      "lemma": "doughy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.01",
+          "via_synset": "doughy.s.01"
+        }
+      ],
+      "definition": "having the consistency of dough because of insufficient leavening or improper cooking"
+    },
+    {
+      "lemma": "grave",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "grave.s.03",
+          "via_synset": "grave.s.03"
+        }
+      ],
+      "definition": "of great gravity or crucial import; requiring serious thought"
+    },
+    {
+      "lemma": "graveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grave.s.03",
+          "via_synset": "graveness.n.01"
+        }
+      ],
+      "definition": "a manner that is serious and solemn"
+    },
+    {
+      "lemma": "gravity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grave.s.03",
+          "via_synset": "graveness.n.01"
+        }
+      ],
+      "definition": "a manner that is serious and solemn"
+    },
+    {
+      "lemma": "grievous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "grave.s.03",
+          "via_synset": "grave.s.03"
+        }
+      ],
+      "definition": "of great gravity or crucial import; requiring serious thought"
+    },
+    {
+      "lemma": "heavier-than-air",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.01",
+          "via_synset": "heavier-than-air.s.01"
+        }
+      ],
+      "definition": "relating to an aircraft heavier than the air it displaces"
+    },
+    {
+      "lemma": "heaviness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "heavy.a.01",
+          "via_synset": "heaviness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "heavy.a.04",
+          "via_synset": "heaviness.n.02"
+        }
+      ],
+      "definition": "the property of being comparatively great in weight"
+    },
+    {
+      "lemma": "heavy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "heavy.a.01",
+          "via_synset": "heavy.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "heavy.a.04",
+          "via_synset": "heavy.a.04"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "heavy.a.08",
+          "via_synset": "heavy.a.08"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "grave.s.03",
+          "via_synset": "grave.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "massive.s.04",
+          "via_synset": "heavy.a.01"
+        }
+      ],
+      "definition": "of comparatively great physical weight or density"
+    },
+    {
+      "lemma": "hefty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.01",
+          "via_synset": "hefty.s.02"
+        }
+      ],
+      "definition": "of considerable weight and size"
+    },
+    {
+      "lemma": "important",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "grave.s.03",
+          "via_synset": "important.a.01"
+        }
+      ],
+      "definition": "of great significance or value"
+    },
+    {
+      "lemma": "leaden",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.04",
+          "via_synset": "leaden.s.02"
+        }
+      ],
+      "definition": "made heavy or weighted down with weariness"
+    },
+    {
+      "lemma": "massive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "massive.s.04",
+          "via_synset": "massive.s.04"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.01",
+          "via_synset": "massive.s.04"
+        }
+      ],
+      "definition": "consisting of great mass; containing a great quantity of matter"
+    },
+    {
+      "lemma": "massiveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "massive.s.04",
+          "via_synset": "heft.n.01"
+        }
+      ],
+      "definition": "the property of being large in mass"
+    },
+    {
+      "lemma": "non-buoyant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.01",
+          "via_synset": "non-buoyant.s.01"
+        }
+      ],
+      "definition": "tending to sink in a liquid or fall in air"
+    },
+    {
+      "lemma": "of import",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "grave.s.03",
+          "via_synset": "important.a.01"
+        }
+      ],
+      "definition": "of great significance or value"
+    },
+    {
+      "lemma": "onerous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.04",
+          "via_synset": "burdensome.s.01"
+        }
+      ],
+      "definition": "not easily borne; wearing"
+    },
+    {
+      "lemma": "oppressive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.04",
+          "via_synset": "oppressive.s.01"
+        }
+      ],
+      "definition": "weighing heavily on the senses or spirit"
+    },
+    {
+      "lemma": "perturbing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.04",
+          "via_synset": "distressing.s.01"
+        }
+      ],
+      "definition": "causing distress or worry or anxiety"
+    },
+    {
+      "lemma": "ponderous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.01",
+          "via_synset": "ponderous.s.02"
+        }
+      ],
+      "definition": "having great mass and weight and unwieldiness"
+    },
+    {
+      "lemma": "soggy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.01",
+          "via_synset": "doughy.s.01"
+        }
+      ],
+      "definition": "having the consistency of dough because of insufficient leavening or improper cooking"
+    },
+    {
+      "lemma": "taxing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.04",
+          "via_synset": "burdensome.s.01"
+        }
+      ],
+      "definition": "not easily borne; wearing"
+    },
+    {
+      "lemma": "troubling",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.04",
+          "via_synset": "distressing.s.01"
+        }
+      ],
+      "definition": "causing distress or worry or anxiety"
+    },
+    {
+      "lemma": "weight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "weighty.a.01",
+          "via_synset": "weight.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grave.s.03",
+          "via_synset": "weight.n.03"
+        }
+      ],
+      "definition": "the vertical force exerted by a mass as a result of gravity"
+    },
+    {
+      "lemma": "weighted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.04",
+          "via_synset": "leaden.s.02"
+        }
+      ],
+      "definition": "made heavy or weighted down with weariness"
+    },
+    {
+      "lemma": "weightiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "weighty.a.01",
+          "via_synset": "heaviness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grave.s.03",
+          "via_synset": "weight.n.03"
+        }
+      ],
+      "definition": "the property of being comparatively great in weight"
+    },
+    {
+      "lemma": "weighty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "weighty.a.01",
+          "via_synset": "weighty.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "grave.s.03",
+          "via_synset": "grave.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.04",
+          "via_synset": "weighty.s.03"
+        }
+      ],
+      "definition": "having relatively great weight; heavy"
+    },
+    {
+      "lemma": "worrisome",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.04",
+          "via_synset": "distressing.s.01"
+        }
+      ],
+      "definition": "causing distress or worry or anxiety"
+    },
+    {
+      "lemma": "worrying",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "heavy.a.04",
+          "via_synset": "distressing.s.01"
+        }
+      ],
+      "definition": "causing distress or worry or anxiety"
+    }
+  ]
+}

@@ -1,0 +1,911 @@
+{
+  "atom_id": "COG.unlearned",
+  "category": "COG",
+  "seed_count": 6,
+  "total_keys": 53,
+  "pos_counts": {
+    "adj": 20,
+    "v": 29,
+    "n": 4
+  },
+  "source_counts": {
+    "0_seed": 12,
+    "7_similar_to": 14,
+    "8_also_see": 6,
+    "10_sibling": 25,
+    "2_hypernym_d1": 4,
+    "6_derivational": 4,
+    "9_antonym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 10,
+      "words": [
+        "unconditioned(adj)",
+        "innate(adj)",
+        "unlearned(adj)",
+        "ignorant(adj)",
+        "nescient(adj)",
+        "unlettered(adj)",
+        "unlearn(v)",
+        "uneducated(adj)",
+        "illiterate(adj)",
+        "unteach(v)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 4,
+      "words": [
+        "forget(v)",
+        "bury(v)",
+        "teach(v)",
+        "instruct(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 4,
+      "words": [
+        "ignorantness(n)",
+        "ignorance(n)",
+        "nescience(n)",
+        "innateness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 6,
+      "words": [
+        "unstudied(adj)",
+        "undereducated(adj)",
+        "unschooled(adj)",
+        "untaught(adj)",
+        "untutored(adj)",
+        "naive(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 5,
+      "words": [
+        "unenlightened(adj)",
+        "noncivilized(adj)",
+        "noncivilised(adj)",
+        "innumerate(adj)",
+        "uninformed(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "conditioned(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 23,
+      "words": [
+        "suppress(v)",
+        "repress(v)",
+        "enlighten(v)",
+        "edify(v)",
+        "spoonfeed(v)",
+        "coach(v)",
+        "train(v)",
+        "lecture(v)",
+        "talk(v)",
+        "induct(v)",
+        "indoctrinate(v)",
+        "reinforce(v)",
+        "reward(v)",
+        "catechize(v)",
+        "catechise(v)",
+        "ground(v)",
+        "tutor(v)",
+        "mentor(v)",
+        "develop(v)",
+        "prepare(v)",
+        "educate(v)",
+        "condition(v)",
+        "drill(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "bury",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "unlearn.v.01",
+          "via_synset": "forget.v.01"
+        }
+      ],
+      "definition": "dismiss from the mind; stop remembering"
+    },
+    {
+      "lemma": "catechise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "catechize.v.02"
+        }
+      ],
+      "definition": "give religious instructions to"
+    },
+    {
+      "lemma": "catechize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "catechize.v.02"
+        }
+      ],
+      "definition": "give religious instructions to"
+    },
+    {
+      "lemma": "coach",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "coach.v.01"
+        }
+      ],
+      "definition": "teach and supervise (someone); act as a trainer or coach (to), as in sports"
+    },
+    {
+      "lemma": "condition",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "condition.v.01"
+        }
+      ],
+      "definition": "establish a conditioned response"
+    },
+    {
+      "lemma": "conditioned",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "unconditioned.a.01",
+          "via_synset": "conditioned.a.01"
+        }
+      ],
+      "definition": "established by conditioning or learning"
+    },
+    {
+      "lemma": "develop",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "train.v.01"
+        }
+      ],
+      "definition": "create by training and teaching"
+    },
+    {
+      "lemma": "drill",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "drill.v.04"
+        }
+      ],
+      "definition": "teach by repetition"
+    },
+    {
+      "lemma": "edify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "enlighten.v.01"
+        }
+      ],
+      "definition": "make understand"
+    },
+    {
+      "lemma": "educate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "train.v.01"
+        }
+      ],
+      "definition": "create by training and teaching"
+    },
+    {
+      "lemma": "enlighten",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "enlighten.v.01"
+        }
+      ],
+      "definition": "make understand"
+    },
+    {
+      "lemma": "forget",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "unlearn.v.01",
+          "via_synset": "forget.v.01"
+        }
+      ],
+      "definition": "dismiss from the mind; stop remembering"
+    },
+    {
+      "lemma": "ground",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "ground.v.04"
+        }
+      ],
+      "definition": "instruct someone in the fundamentals of a subject"
+    },
+    {
+      "lemma": "ignorance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ignorant.s.01",
+          "via_synset": "ignorance.n.01"
+        }
+      ],
+      "definition": "the lack of knowledge or education"
+    },
+    {
+      "lemma": "ignorant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ignorant.s.01",
+          "via_synset": "ignorant.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ignorant.s.02",
+          "via_synset": "ignorant.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uneducated.a.01",
+          "via_synset": "ignorant.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uneducated.a.01",
+          "via_synset": "ignorant.s.02"
+        }
+      ],
+      "definition": "uneducated in general; lacking knowledge or sophistication"
+    },
+    {
+      "lemma": "ignorantness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ignorant.s.01",
+          "via_synset": "ignorantness.n.01"
+        }
+      ],
+      "definition": "ignorance (especially of orthodox beliefs)"
+    },
+    {
+      "lemma": "illiterate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ignorant.s.02",
+          "via_synset": "ignorant.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uneducated.a.01",
+          "via_synset": "ignorant.s.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "uneducated.a.01",
+          "via_synset": "illiterate.a.01"
+        }
+      ],
+      "definition": "uneducated in the fundamentals of a given art or branch of learning; lacking knowledge of a specific field"
+    },
+    {
+      "lemma": "indoctrinate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "indoctrinate.v.01"
+        }
+      ],
+      "definition": "teach doctrines to; teach uncritically"
+    },
+    {
+      "lemma": "induct",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "induct.v.05"
+        }
+      ],
+      "definition": "introduce or initiate"
+    },
+    {
+      "lemma": "innate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unconditioned.a.01",
+          "via_synset": "unconditioned.a.01"
+        }
+      ],
+      "definition": "not established by conditioning or learning"
+    },
+    {
+      "lemma": "innateness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unconditioned.a.01",
+          "via_synset": "innateness.n.01"
+        }
+      ],
+      "definition": "the quality of being innate"
+    },
+    {
+      "lemma": "innumerate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "uneducated.a.01",
+          "via_synset": "innumerate.a.01"
+        }
+      ],
+      "definition": "lacking knowledge and understanding of mathematical concepts and methods"
+    },
+    {
+      "lemma": "instruct",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "unteach.v.01",
+          "via_synset": "teach.v.01"
+        }
+      ],
+      "definition": "impart skills or knowledge to"
+    },
+    {
+      "lemma": "lecture",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "lecture.v.01"
+        }
+      ],
+      "definition": "deliver a lecture or talk"
+    },
+    {
+      "lemma": "mentor",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "mentor.v.01"
+        }
+      ],
+      "definition": "serve as a teacher or trusted counselor"
+    },
+    {
+      "lemma": "naive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unconditioned.a.01",
+          "via_synset": "naive.s.02"
+        }
+      ],
+      "definition": "inexperienced"
+    },
+    {
+      "lemma": "nescience",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ignorant.s.01",
+          "via_synset": "ignorantness.n.01"
+        }
+      ],
+      "definition": "ignorance (especially of orthodox beliefs)"
+    },
+    {
+      "lemma": "nescient",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ignorant.s.01",
+          "via_synset": "ignorant.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uneducated.a.01",
+          "via_synset": "ignorant.s.01"
+        }
+      ],
+      "definition": "uneducated in general; lacking knowledge or sophistication"
+    },
+    {
+      "lemma": "noncivilised",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "uneducated.a.01",
+          "via_synset": "noncivilized.a.01"
+        }
+      ],
+      "definition": "not having a high state of culture and social development"
+    },
+    {
+      "lemma": "noncivilized",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "uneducated.a.01",
+          "via_synset": "noncivilized.a.01"
+        }
+      ],
+      "definition": "not having a high state of culture and social development"
+    },
+    {
+      "lemma": "prepare",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "train.v.01"
+        }
+      ],
+      "definition": "create by training and teaching"
+    },
+    {
+      "lemma": "reinforce",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "reinforce.v.02"
+        }
+      ],
+      "definition": "strengthen and support with rewards"
+    },
+    {
+      "lemma": "repress",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "forget.v.01",
+          "via_synset": "suppress.v.04"
+        }
+      ],
+      "definition": "put out of one's consciousness"
+    },
+    {
+      "lemma": "reward",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "reinforce.v.02"
+        }
+      ],
+      "definition": "strengthen and support with rewards"
+    },
+    {
+      "lemma": "spoonfeed",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "spoonfeed.v.02"
+        }
+      ],
+      "definition": "teach without challenging the students"
+    },
+    {
+      "lemma": "suppress",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "forget.v.01",
+          "via_synset": "suppress.v.04"
+        }
+      ],
+      "definition": "put out of one's consciousness"
+    },
+    {
+      "lemma": "talk",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "lecture.v.01"
+        }
+      ],
+      "definition": "deliver a lecture or talk"
+    },
+    {
+      "lemma": "teach",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "unteach.v.01",
+          "via_synset": "teach.v.01"
+        }
+      ],
+      "definition": "impart skills or knowledge to"
+    },
+    {
+      "lemma": "train",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "coach.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "train.v.01"
+        }
+      ],
+      "definition": "teach and supervise (someone); act as a trainer or coach (to), as in sports"
+    },
+    {
+      "lemma": "tutor",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "tutor.v.01"
+        }
+      ],
+      "definition": "be a tutor to someone; give individual instruction"
+    },
+    {
+      "lemma": "unconditioned",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unconditioned.a.01",
+          "via_synset": "unconditioned.a.01"
+        }
+      ],
+      "definition": "not established by conditioning or learning"
+    },
+    {
+      "lemma": "undereducated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uneducated.a.01",
+          "via_synset": "undereducated.s.01"
+        }
+      ],
+      "definition": "poorly or insufficiently educated"
+    },
+    {
+      "lemma": "uneducated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "uneducated.a.01",
+          "via_synset": "uneducated.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "ignorant.s.01",
+          "via_synset": "uneducated.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "ignorant.s.02",
+          "via_synset": "uneducated.a.01"
+        }
+      ],
+      "definition": "not having a good education"
+    },
+    {
+      "lemma": "unenlightened",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "uneducated.a.01",
+          "via_synset": "unenlightened.a.01"
+        }
+      ],
+      "definition": "not enlightened; ignorant"
+    },
+    {
+      "lemma": "uninformed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "uneducated.a.01",
+          "via_synset": "uninformed.a.01"
+        }
+      ],
+      "definition": "not informed; lacking in knowledge or information"
+    },
+    {
+      "lemma": "unlearn",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unlearn.v.01",
+          "via_synset": "unlearn.v.01"
+        }
+      ],
+      "definition": "try to forget; put out of one's memory or knowledge"
+    },
+    {
+      "lemma": "unlearned",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unconditioned.a.01",
+          "via_synset": "unconditioned.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ignorant.s.01",
+          "via_synset": "ignorant.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uneducated.a.01",
+          "via_synset": "ignorant.s.01"
+        }
+      ],
+      "definition": "not established by conditioning or learning"
+    },
+    {
+      "lemma": "unlettered",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ignorant.s.01",
+          "via_synset": "ignorant.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uneducated.a.01",
+          "via_synset": "ignorant.s.01"
+        }
+      ],
+      "definition": "uneducated in general; lacking knowledge or sophistication"
+    },
+    {
+      "lemma": "unschooled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uneducated.a.01",
+          "via_synset": "unschooled.s.01"
+        }
+      ],
+      "definition": "lacking in schooling"
+    },
+    {
+      "lemma": "unstudied",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uneducated.a.01",
+          "via_synset": "unstudied.s.01"
+        }
+      ],
+      "definition": "lacking knowledge gained by study often in a particular field"
+    },
+    {
+      "lemma": "untaught",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uneducated.a.01",
+          "via_synset": "unschooled.s.01"
+        }
+      ],
+      "definition": "lacking in schooling"
+    },
+    {
+      "lemma": "unteach",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unteach.v.01",
+          "via_synset": "unteach.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "teach.v.01",
+          "via_synset": "unteach.v.02"
+        }
+      ],
+      "definition": "cause to disbelieve; teach someone the contrary of what he or she had learned earlier"
+    },
+    {
+      "lemma": "untutored",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uneducated.a.01",
+          "via_synset": "unschooled.s.01"
+        }
+      ],
+      "definition": "lacking in schooling"
+    }
+  ]
+}

@@ -1,0 +1,4151 @@
+{
+  "atom_id": "SOC.refuse",
+  "category": "SOC",
+  "seed_count": 6,
+  "total_keys": 259,
+  "pos_counts": {
+    "v": 178,
+    "n": 76,
+    "adj": 5
+  },
+  "source_counts": {
+    "0_seed": 14,
+    "10_sibling": 112,
+    "12_verb_group": 10,
+    "6_derivational": 81,
+    "4_hyponym_d2": 47,
+    "2_hypernym_d1": 12,
+    "3_hyponym_d1": 34,
+    "5_hyponym_d3": 21
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 9,
+      "words": [
+        "refuse(v)",
+        "reject(v)",
+        "pass up(v)",
+        "turn down(v)",
+        "decline(v)",
+        "deny(v)",
+        "resist(v)",
+        "decline(n)",
+        "diminution(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 12,
+      "words": [
+        "keep(v)",
+        "hold on(v)",
+        "react(v)",
+        "respond(v)",
+        "evaluate(v)",
+        "pass judgment(v)",
+        "judge(v)",
+        "decrease(n)",
+        "decrement(n)",
+        "disown(v)",
+        "renounce(v)",
+        "repudiate(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 30,
+      "words": [
+        "bounce(v)",
+        "dishonor(v)",
+        "dishonour(v)",
+        "withhold(v)",
+        "keep back(v)",
+        "reprobate(v)",
+        "disbelieve(v)",
+        "discredit(v)",
+        "recuse(v)",
+        "dismiss(v)",
+        "disregard(v)",
+        "brush aside(v)",
+        "brush off(v)",
+        "discount(v)",
+        "push aside(v)",
+        "ignore(v)",
+        "deterioration(n)",
+        "decline in quality(n)",
+        "declension(n)",
+        "worsening(n)",
+        "slippage(n)",
+        "detumescence(n)",
+        "erosion(n)",
+        "sinking spell(n)",
+        "loss(n)",
+        "nosedive(n)",
+        "ebb(n)",
+        "ebbing(n)",
+        "wane(n)",
+        "abnegate(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 42,
+      "words": [
+        "reserve(v)",
+        "immobilize(v)",
+        "immobilise(v)",
+        "freeze(v)",
+        "block(v)",
+        "deprive(v)",
+        "keep to oneself(v)",
+        "doubt(v)",
+        "distrust(v)",
+        "mistrust(v)",
+        "suspect(v)",
+        "abjure(v)",
+        "recant(v)",
+        "forswear(v)",
+        "retract(v)",
+        "resile(v)",
+        "refute(v)",
+        "rebut(v)",
+        "apostatize(v)",
+        "apostatise(v)",
+        "tergiversate(v)",
+        "swallow(v)",
+        "take back(v)",
+        "unsay(v)",
+        "withdraw(v)",
+        "shrug off(v)",
+        "turn a blind eye(v)",
+        "slight(v)",
+        "cold-shoulder(v)",
+        "disoblige(v)",
+        "pass off(v)",
+        "laugh off(v)",
+        "laugh away(v)",
+        "scoff(v)",
+        "flout(v)",
+        "slump(n)",
+        "slack(n)",
+        "drop-off(n)",
+        "falloff(n)",
+        "falling off(n)",
+        "reducing(n)",
+        "epilation(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 17,
+      "words": [
+        "devote(v)",
+        "bilk(v)",
+        "impoverish(v)",
+        "starve(v)",
+        "famish(v)",
+        "dock(v)",
+        "disenfranchise(v)",
+        "disfranchise(v)",
+        "tongue-tie(v)",
+        "wean(v)",
+        "ablactate(v)",
+        "disinherit(v)",
+        "oppose(v)",
+        "controvert(v)",
+        "contradict(v)",
+        "answer(v)",
+        "psilosis(n)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 62,
+      "words": [
+        "refusal(n)",
+        "rejection(n)",
+        "turndown(n)",
+        "declination(n)",
+        "withdrawal(n)",
+        "denier(n)",
+        "rejective(adj)",
+        "deteriorate(v)",
+        "worsen(v)",
+        "slight(n)",
+        "cold shoulder(n)",
+        "ebb(v)",
+        "wane(v)",
+        "recusation(n)",
+        "abnegation(n)",
+        "abnegator(n)",
+        "doubt(n)",
+        "doubter(n)",
+        "reduce(v)",
+        "disbeliever(n)",
+        "reserve(n)",
+        "reservation(n)",
+        "deprivation(n)",
+        "denial(n)",
+        "slump(v)",
+        "slack(v)",
+        "drop off(v)",
+        "fall off(v)",
+        "renunciation(n)",
+        "renouncement(n)",
+        "repudiation(n)",
+        "diminish(v)",
+        "repudiative(adj)",
+        "lossy(adj)",
+        "scoff(n)",
+        "scoffer(n)",
+        "scoffing(n)",
+        "flouter(n)",
+        "slip(v)",
+        "apostate(n)",
+        "tergiversation(n)",
+        "refutation(n)",
+        "refuter(n)",
+        "rebutter(n)",
+        "rebuttal(n)",
+        "resistant(adj)",
+        "abjuration(n)",
+        "abjurer(n)",
+        "recantation(n)",
+        "forswearing(n)",
+        "retraction(n)",
+        "withholder(n)",
+        "withholding(n)",
+        "dismissive(adj)",
+        "disregard(n)",
+        "brush-off(n)",
+        "discredit(n)",
+        "distrust(n)",
+        "mistrust(n)",
+        "suspect(n)",
+        "suspicion(n)",
+        "freeze(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 82,
+      "words": [
+        "harbor(v)",
+        "harbour(v)",
+        "store(v)",
+        "deduct(v)",
+        "recoup(v)",
+        "carry over(v)",
+        "hold over(v)",
+        "save(v)",
+        "preserve(v)",
+        "retain(v)",
+        "hold(v)",
+        "hold back(v)",
+        "hive away(v)",
+        "lay in(v)",
+        "put in(v)",
+        "salt away(v)",
+        "stack away(v)",
+        "stash away(v)",
+        "treat(v)",
+        "notice(v)",
+        "acknowledge(v)",
+        "stool(v)",
+        "wonder(v)",
+        "marvel(v)",
+        "bristle(v)",
+        "overreact(v)",
+        "flip(v)",
+        "flip out(v)",
+        "explode(v)",
+        "greet(v)",
+        "consent(v)",
+        "go for(v)",
+        "measure(v)",
+        "valuate(v)",
+        "assess(v)",
+        "appraise(v)",
+        "value(v)",
+        "choose(v)",
+        "calculate(v)",
+        "estimate(v)",
+        "reckon(v)",
+        "count on(v)",
+        "figure(v)",
+        "forecast(v)",
+        "impute(v)",
+        "ascribe(v)",
+        "assign(v)",
+        "attribute(v)",
+        "stand(v)",
+        "disapprove(v)",
+        "rate(v)",
+        "rank(v)",
+        "range(v)",
+        "order(v)",
+        "grade(v)",
+        "place(v)",
+        "pass(v)",
+        "prejudge(v)",
+        "expect(v)",
+        "anticipate(v)",
+        "approve(v)",
+        "review(v)",
+        "critique(v)",
+        "think(v)",
+        "believe(v)",
+        "consider(v)",
+        "conceive(v)",
+        "test(v)",
+        "prove(v)",
+        "try(v)",
+        "try out(v)",
+        "examine(v)",
+        "essay(v)",
+        "declare(v)",
+        "adjudge(v)",
+        "reappraise(v)",
+        "fail(v)",
+        "desensitization(n)",
+        "desensitisation(n)",
+        "narrowing(n)",
+        "decay(n)",
+        "wastage(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 5,
+      "words": [
+        "spurn(v)",
+        "freeze off(v)",
+        "scorn(v)",
+        "pooh-pooh(v)",
+        "disdain(v)"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "abjuration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abjure.v.01",
+          "via_synset": "retraction.n.01"
+        }
+      ],
+      "definition": "a disavowal or taking back of a previous assertion"
+    },
+    {
+      "lemma": "abjure",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disown.v.02",
+          "via_synset": "abjure.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disown.v.02",
+          "via_synset": "abjure.v.01"
+        }
+      ],
+      "definition": "formally reject or disavow a formerly held belief, usually under pressure"
+    },
+    {
+      "lemma": "abjurer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abjure.v.01",
+          "via_synset": "abjurer.n.01"
+        }
+      ],
+      "definition": "a person who abjures"
+    },
+    {
+      "lemma": "ablactate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "deprive.v.02",
+          "via_synset": "wean.v.01"
+        }
+      ],
+      "definition": "gradually deprive (infants and young mammals) of mother's milk"
+    },
+    {
+      "lemma": "abnegate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "deny.v.02",
+          "via_synset": "abnegate.v.03"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "deny.v.02",
+          "via_synset": "abnegate.v.03"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "deny.v.04",
+          "via_synset": "deny.v.05"
+        }
+      ],
+      "definition": "deny or renounce"
+    },
+    {
+      "lemma": "abnegation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abnegate.v.03",
+          "via_synset": "abnegation.n.01"
+        }
+      ],
+      "definition": "the denial and rejection of a doctrine or belief"
+    },
+    {
+      "lemma": "abnegator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abnegate.v.03",
+          "via_synset": "abnegator.n.01"
+        }
+      ],
+      "definition": "one who gives up or relinquishes or renounces something"
+    },
+    {
+      "lemma": "acknowledge",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "react.v.01",
+          "via_synset": "notice.v.04"
+        }
+      ],
+      "definition": "express recognition of the presence or existence of, or acquaintance with"
+    },
+    {
+      "lemma": "adjudge",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "declare.v.04"
+        }
+      ],
+      "definition": "declare to be"
+    },
+    {
+      "lemma": "answer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "refute.v.01",
+          "via_synset": "answer.v.05"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "react.v.01",
+          "via_synset": "answer.v.10"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "react.v.01",
+          "via_synset": "answer.v.02"
+        }
+      ],
+      "definition": "give a defence or refutation of (a charge) or in (an argument)"
+    },
+    {
+      "lemma": "anticipate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "expect.v.01"
+        }
+      ],
+      "definition": "regard something as probable or likely"
+    },
+    {
+      "lemma": "apostate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apostatize.v.01",
+          "via_synset": "deserter.n.01"
+        }
+      ],
+      "definition": "a disloyal person who betrays or deserts his cause or religion or political party or friend etc."
+    },
+    {
+      "lemma": "apostatise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disown.v.02",
+          "via_synset": "apostatize.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disown.v.02",
+          "via_synset": "apostatize.v.01"
+        }
+      ],
+      "definition": "abandon one's beliefs or allegiances"
+    },
+    {
+      "lemma": "apostatize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disown.v.02",
+          "via_synset": "apostatize.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disown.v.02",
+          "via_synset": "apostatize.v.01"
+        }
+      ],
+      "definition": "abandon one's beliefs or allegiances"
+    },
+    {
+      "lemma": "appraise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "measure.v.04"
+        }
+      ],
+      "definition": "evaluate or estimate the nature, quality, ability, extent, or significance of"
+    },
+    {
+      "lemma": "approve",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "approve.v.02"
+        }
+      ],
+      "definition": "judge to be right or commendable; think well of"
+    },
+    {
+      "lemma": "ascribe",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "impute.v.01"
+        }
+      ],
+      "definition": "attribute or credit to"
+    },
+    {
+      "lemma": "assess",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "measure.v.04"
+        }
+      ],
+      "definition": "evaluate or estimate the nature, quality, ability, extent, or significance of"
+    },
+    {
+      "lemma": "assign",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "impute.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "assign.v.08"
+        }
+      ],
+      "definition": "attribute or credit to"
+    },
+    {
+      "lemma": "attribute",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "impute.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "assign.v.08"
+        }
+      ],
+      "definition": "attribute or credit to"
+    },
+    {
+      "lemma": "believe",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "think.v.01"
+        }
+      ],
+      "definition": "judge or regard; look upon; judge"
+    },
+    {
+      "lemma": "bilk",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "deprive.v.02",
+          "via_synset": "bilk.v.03"
+        }
+      ],
+      "definition": "evade payment to"
+    },
+    {
+      "lemma": "block",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "withhold.v.01",
+          "via_synset": "freeze.v.08"
+        }
+      ],
+      "definition": "prohibit the conversion or use of (assets)"
+    },
+    {
+      "lemma": "bounce",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "refuse.v.02",
+          "via_synset": "bounce.v.06"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "bounce.v.06",
+          "via_synset": "bounce.v.04"
+        }
+      ],
+      "definition": "refuse to accept and send back"
+    },
+    {
+      "lemma": "bristle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "react.v.01",
+          "via_synset": "bristle.v.04"
+        }
+      ],
+      "definition": "react in an offended or angry manner"
+    },
+    {
+      "lemma": "brush aside",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "reject.v.01",
+          "via_synset": "dismiss.v.01"
+        }
+      ],
+      "definition": "bar from attention or consideration"
+    },
+    {
+      "lemma": "brush off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "reject.v.01",
+          "via_synset": "dismiss.v.01"
+        }
+      ],
+      "definition": "bar from attention or consideration"
+    },
+    {
+      "lemma": "brush-off",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dismiss.v.01",
+          "via_synset": "brush-off.n.01"
+        }
+      ],
+      "definition": "a curt or disdainful rejection"
+    },
+    {
+      "lemma": "calculate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "calculate.v.02"
+        }
+      ],
+      "definition": "judge to be probable"
+    },
+    {
+      "lemma": "carry over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "carry_over.v.03"
+        }
+      ],
+      "definition": "hold over goods to be sold for the next season"
+    },
+    {
+      "lemma": "choose",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "choose.v.03"
+        }
+      ],
+      "definition": "see fit or proper to act in a certain way; decide to act in a certain way"
+    },
+    {
+      "lemma": "cold shoulder",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "slight.v.01",
+          "via_synset": "snub.n.02"
+        }
+      ],
+      "definition": "a refusal to recognize someone you know"
+    },
+    {
+      "lemma": "cold-shoulder",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "dismiss.v.01",
+          "via_synset": "slight.v.01"
+        }
+      ],
+      "definition": "pay no attention to, disrespect"
+    },
+    {
+      "lemma": "conceive",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "think.v.01"
+        }
+      ],
+      "definition": "judge or regard; look upon; judge"
+    },
+    {
+      "lemma": "consent",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "react.v.01",
+          "via_synset": "accept.v.03"
+        }
+      ],
+      "definition": "give an affirmative reply to; respond favorably to"
+    },
+    {
+      "lemma": "consider",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "think.v.01"
+        }
+      ],
+      "definition": "judge or regard; look upon; judge"
+    },
+    {
+      "lemma": "contradict",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "refute.v.01",
+          "via_synset": "oppose.v.06"
+        }
+      ],
+      "definition": "be resistant to"
+    },
+    {
+      "lemma": "controvert",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "refute.v.01",
+          "via_synset": "oppose.v.06"
+        }
+      ],
+      "definition": "be resistant to"
+    },
+    {
+      "lemma": "count on",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "calculate.v.02"
+        }
+      ],
+      "definition": "judge to be probable"
+    },
+    {
+      "lemma": "critique",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "review.v.02"
+        }
+      ],
+      "definition": "appraise critically"
+    },
+    {
+      "lemma": "decay",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.n.02",
+          "via_synset": "decay.n.02"
+        }
+      ],
+      "definition": "a gradual decrease; as of stored charge or current"
+    },
+    {
+      "lemma": "declare",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "declare.v.04"
+        }
+      ],
+      "definition": "declare to be"
+    },
+    {
+      "lemma": "declension",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "decline.n.01",
+          "via_synset": "deterioration.n.02"
+        }
+      ],
+      "definition": "process of changing to an inferior state"
+    },
+    {
+      "lemma": "declination",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "refuse.v.02",
+          "via_synset": "declination.n.04"
+        }
+      ],
+      "definition": "a polite refusal of an invitation"
+    },
+    {
+      "lemma": "decline",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "decline.n.01",
+          "via_synset": "decline.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.n.02",
+          "via_synset": "decay.n.02"
+        }
+      ],
+      "definition": "change toward something smaller or lower"
+    },
+    {
+      "lemma": "decline",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "refuse.v.02",
+          "via_synset": "refuse.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deterioration.n.02",
+          "via_synset": "worsen.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "decline.n.01",
+          "via_synset": "decline.v.04"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "react.v.01",
+          "via_synset": "refuse.v.01"
+        }
+      ],
+      "definition": "refuse to accept"
+    },
+    {
+      "lemma": "decline in quality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "decline.n.01",
+          "via_synset": "deterioration.n.02"
+        }
+      ],
+      "definition": "process of changing to an inferior state"
+    },
+    {
+      "lemma": "decrease",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "decline.n.01",
+          "via_synset": "decrease.n.02"
+        }
+      ],
+      "definition": "a process of becoming smaller or shorter"
+    },
+    {
+      "lemma": "decrement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "decline.n.01",
+          "via_synset": "decrease.n.02"
+        }
+      ],
+      "definition": "a process of becoming smaller or shorter"
+    },
+    {
+      "lemma": "deduct",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "withhold.v.02"
+        }
+      ],
+      "definition": "retain and refrain from disbursing; of payments"
+    },
+    {
+      "lemma": "denial",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deny.v.03",
+          "via_synset": "denial.n.01"
+        }
+      ],
+      "definition": "the act of refusing to comply (as with a request)"
+    },
+    {
+      "lemma": "denier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deny.v.04",
+          "via_synset": "denier.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deny.v.03",
+          "via_synset": "denier.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deny.v.02",
+          "via_synset": "denier.n.03"
+        }
+      ],
+      "definition": "one who denies"
+    },
+    {
+      "lemma": "deny",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "deny.v.04",
+          "via_synset": "deny.v.04"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "deny.v.02",
+          "via_synset": "deny.v.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "withhold.v.01",
+          "via_synset": "deny.v.03"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disown.v.02",
+          "via_synset": "deny.v.02"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "deny.v.04",
+          "via_synset": "deny.v.05"
+        }
+      ],
+      "definition": "refuse to let have"
+    },
+    {
+      "lemma": "deprivation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deprive.v.02",
+          "via_synset": "privation.n.02"
+        }
+      ],
+      "definition": "act of depriving someone of food or money or rights"
+    },
+    {
+      "lemma": "deprive",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "withhold.v.01",
+          "via_synset": "deprive.v.02"
+        }
+      ],
+      "definition": "keep from having, keeping, or obtaining"
+    },
+    {
+      "lemma": "desensitisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.n.02",
+          "via_synset": "desensitization.n.01"
+        }
+      ],
+      "definition": "the process of reducing sensitivity"
+    },
+    {
+      "lemma": "desensitization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.n.02",
+          "via_synset": "desensitization.n.01"
+        }
+      ],
+      "definition": "the process of reducing sensitivity"
+    },
+    {
+      "lemma": "deteriorate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deterioration.n.02",
+          "via_synset": "deteriorate.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deterioration.n.02",
+          "via_synset": "devolve.v.03"
+        }
+      ],
+      "definition": "become worse or disintegrate"
+    },
+    {
+      "lemma": "deterioration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "decline.n.01",
+          "via_synset": "deterioration.n.02"
+        }
+      ],
+      "definition": "process of changing to an inferior state"
+    },
+    {
+      "lemma": "detumescence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "decline.n.01",
+          "via_synset": "detumescence.n.01"
+        }
+      ],
+      "definition": "diminution of swelling; the subsidence of anything swollen"
+    },
+    {
+      "lemma": "devote",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "reserve.v.01",
+          "via_synset": "devote.v.03"
+        }
+      ],
+      "definition": "set aside or apart for a specific purpose or use"
+    },
+    {
+      "lemma": "diminish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "decline.n.01",
+          "via_synset": "decrease.v.01"
+        }
+      ],
+      "definition": "decrease in size, extent, or range"
+    },
+    {
+      "lemma": "diminution",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "decline.n.01",
+          "via_synset": "decline.n.01"
+        }
+      ],
+      "definition": "change toward something smaller or lower"
+    },
+    {
+      "lemma": "disapprove",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "disapprove.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "disapprove.v.01"
+        }
+      ],
+      "definition": "deem wrong or inappropriate"
+    },
+    {
+      "lemma": "disbelieve",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "reject.v.01",
+          "via_synset": "disbelieve.v.01"
+        }
+      ],
+      "definition": "reject as false; refuse to accept"
+    },
+    {
+      "lemma": "disbeliever",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disbelieve.v.01",
+          "via_synset": "disbeliever.n.01"
+        }
+      ],
+      "definition": "someone who refuses to believe (as in a divinity)"
+    },
+    {
+      "lemma": "discount",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "reject.v.01",
+          "via_synset": "dismiss.v.01"
+        }
+      ],
+      "definition": "bar from attention or consideration"
+    },
+    {
+      "lemma": "discredit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "discredit.v.01",
+          "via_synset": "disrepute.n.01"
+        }
+      ],
+      "definition": "the state of being held in low esteem"
+    },
+    {
+      "lemma": "discredit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "reject.v.01",
+          "via_synset": "disbelieve.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "dismiss.v.01",
+          "via_synset": "discredit.v.01"
+        }
+      ],
+      "definition": "reject as false; refuse to accept"
+    },
+    {
+      "lemma": "disdain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "refuse.v.02",
+          "via_synset": "reject.v.04"
+        }
+      ],
+      "definition": "reject with contempt"
+    },
+    {
+      "lemma": "disenfranchise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "deprive.v.02",
+          "via_synset": "disenfranchise.v.01"
+        }
+      ],
+      "definition": "deprive of voting rights"
+    },
+    {
+      "lemma": "disfranchise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "deprive.v.02",
+          "via_synset": "disenfranchise.v.01"
+        }
+      ],
+      "definition": "deprive of voting rights"
+    },
+    {
+      "lemma": "dishonor",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "refuse.v.02",
+          "via_synset": "dishonor.v.03"
+        }
+      ],
+      "definition": "refuse to accept"
+    },
+    {
+      "lemma": "dishonour",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "refuse.v.02",
+          "via_synset": "dishonor.v.03"
+        }
+      ],
+      "definition": "refuse to accept"
+    },
+    {
+      "lemma": "disinherit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "deprive.v.02",
+          "via_synset": "disinherit.v.01"
+        }
+      ],
+      "definition": "prevent deliberately (as by making a will) from inheriting"
+    },
+    {
+      "lemma": "dismiss",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "reject.v.01",
+          "via_synset": "dismiss.v.01"
+        }
+      ],
+      "definition": "bar from attention or consideration"
+    },
+    {
+      "lemma": "dismissive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dismiss.v.01",
+          "via_synset": "dismissive.s.01"
+        }
+      ],
+      "definition": "showing indifference or disregard"
+    },
+    {
+      "lemma": "disoblige",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "dismiss.v.01",
+          "via_synset": "disoblige.v.02"
+        }
+      ],
+      "definition": "ignore someone's wishes"
+    },
+    {
+      "lemma": "disown",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "deny.v.02",
+          "via_synset": "disown.v.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "reject.v.01",
+          "via_synset": "disown.v.02"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "deprive.v.02",
+          "via_synset": "disinherit.v.01"
+        }
+      ],
+      "definition": "cast off"
+    },
+    {
+      "lemma": "disregard",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dismiss.v.01",
+          "via_synset": "disregard.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dismiss.v.01",
+          "via_synset": "disregard.n.02"
+        }
+      ],
+      "definition": "lack of attention and due care"
+    },
+    {
+      "lemma": "disregard",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "reject.v.01",
+          "via_synset": "dismiss.v.01"
+        }
+      ],
+      "definition": "bar from attention or consideration"
+    },
+    {
+      "lemma": "distrust",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "distrust.v.01",
+          "via_synset": "distrust.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "distrust.v.01",
+          "via_synset": "misgiving.n.03"
+        }
+      ],
+      "definition": "the trait of not trusting others"
+    },
+    {
+      "lemma": "distrust",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disbelieve.v.01",
+          "via_synset": "distrust.v.01"
+        }
+      ],
+      "definition": "regard as untrustworthy; regard with suspicion; have no faith or confidence in"
+    },
+    {
+      "lemma": "dock",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "deprive.v.02",
+          "via_synset": "dock.v.02"
+        }
+      ],
+      "definition": "deprive someone of benefits, as a penalty"
+    },
+    {
+      "lemma": "doubt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "doubt.v.01",
+          "via_synset": "doubt.n.01"
+        }
+      ],
+      "definition": "the state of being unsure of something"
+    },
+    {
+      "lemma": "doubt",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disbelieve.v.01",
+          "via_synset": "doubt.v.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "distrust.v.01",
+          "via_synset": "doubt.v.02"
+        }
+      ],
+      "definition": "consider unlikely or have doubts about"
+    },
+    {
+      "lemma": "doubter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "doubt.v.01",
+          "via_synset": "agnostic.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "doubt.v.01",
+          "via_synset": "skeptic.n.01"
+        }
+      ],
+      "definition": "someone who is doubtful or noncommittal about something"
+    },
+    {
+      "lemma": "drop off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "slump.n.01",
+          "via_synset": "slip.v.04"
+        }
+      ],
+      "definition": "get worse"
+    },
+    {
+      "lemma": "drop-off",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "deterioration.n.02",
+          "via_synset": "slump.n.01"
+        }
+      ],
+      "definition": "a noticeable deterioration in performance or quality"
+    },
+    {
+      "lemma": "ebb",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "decline.n.01",
+          "via_synset": "ebb.n.01"
+        }
+      ],
+      "definition": "a gradual decline (in size or strength or power or number)"
+    },
+    {
+      "lemma": "ebb",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ebb.n.01",
+          "via_synset": "ebb.v.03"
+        }
+      ],
+      "definition": "fall away or decline"
+    },
+    {
+      "lemma": "ebbing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "decline.n.01",
+          "via_synset": "ebb.n.01"
+        }
+      ],
+      "definition": "a gradual decline (in size or strength or power or number)"
+    },
+    {
+      "lemma": "epilation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "loss.n.02",
+          "via_synset": "epilation.n.01"
+        }
+      ],
+      "definition": "loss of hair; the result of removing hair"
+    },
+    {
+      "lemma": "erosion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "decline.n.01",
+          "via_synset": "erosion.n.03"
+        }
+      ],
+      "definition": "a gradual decline of something"
+    },
+    {
+      "lemma": "essay",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "test.v.01"
+        }
+      ],
+      "definition": "put to the test, as for its quality, or give experimental use to"
+    },
+    {
+      "lemma": "estimate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "calculate.v.02"
+        }
+      ],
+      "definition": "judge to be probable"
+    },
+    {
+      "lemma": "evaluate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "reject.v.01",
+          "via_synset": "evaluate.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "measure.v.04"
+        }
+      ],
+      "definition": "form a critical opinion of"
+    },
+    {
+      "lemma": "examine",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "test.v.01"
+        }
+      ],
+      "definition": "put to the test, as for its quality, or give experimental use to"
+    },
+    {
+      "lemma": "expect",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "expect.v.01"
+        }
+      ],
+      "definition": "regard something as probable or likely"
+    },
+    {
+      "lemma": "explode",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "react.v.01",
+          "via_synset": "explode.v.03"
+        }
+      ],
+      "definition": "show a violent emotional reaction"
+    },
+    {
+      "lemma": "fail",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "fail.v.06"
+        }
+      ],
+      "definition": "judge unacceptable"
+    },
+    {
+      "lemma": "fall off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "slump.n.01",
+          "via_synset": "slump.v.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "slump.n.01",
+          "via_synset": "fall_off.v.03"
+        }
+      ],
+      "definition": "fall heavily or suddenly; decline markedly"
+    },
+    {
+      "lemma": "falling off",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "deterioration.n.02",
+          "via_synset": "slump.n.01"
+        }
+      ],
+      "definition": "a noticeable deterioration in performance or quality"
+    },
+    {
+      "lemma": "falloff",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "deterioration.n.02",
+          "via_synset": "slump.n.01"
+        }
+      ],
+      "definition": "a noticeable deterioration in performance or quality"
+    },
+    {
+      "lemma": "famish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "deprive.v.02",
+          "via_synset": "starve.v.03"
+        }
+      ],
+      "definition": "deprive of food"
+    },
+    {
+      "lemma": "figure",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "calculate.v.02"
+        }
+      ],
+      "definition": "judge to be probable"
+    },
+    {
+      "lemma": "flip",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "react.v.01",
+          "via_synset": "flip.v.09"
+        }
+      ],
+      "definition": "react in an excited, delighted, or surprised way"
+    },
+    {
+      "lemma": "flip out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "react.v.01",
+          "via_synset": "flip.v.09"
+        }
+      ],
+      "definition": "react in an excited, delighted, or surprised way"
+    },
+    {
+      "lemma": "flout",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "dismiss.v.01",
+          "via_synset": "scoff.v.02"
+        }
+      ],
+      "definition": "treat with contemptuous disregard"
+    },
+    {
+      "lemma": "flouter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "scoff.v.02",
+          "via_synset": "scoffer.n.02"
+        }
+      ],
+      "definition": "someone who jeers or mocks or treats something with contempt or calls out in derision"
+    },
+    {
+      "lemma": "forecast",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "calculate.v.02"
+        }
+      ],
+      "definition": "judge to be probable"
+    },
+    {
+      "lemma": "forswear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disown.v.02",
+          "via_synset": "abjure.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disown.v.02",
+          "via_synset": "abjure.v.01"
+        }
+      ],
+      "definition": "formally reject or disavow a formerly held belief, usually under pressure"
+    },
+    {
+      "lemma": "forswearing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abjure.v.01",
+          "via_synset": "renunciation.n.04"
+        }
+      ],
+      "definition": "the act of renouncing; sacrificing or giving up or surrendering (a possession or right or title or privilege etc.)"
+    },
+    {
+      "lemma": "freeze",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "freeze.v.08",
+          "via_synset": "freeze.n.04"
+        }
+      ],
+      "definition": "fixing (of prices or wages etc) at a particular level"
+    },
+    {
+      "lemma": "freeze",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "withhold.v.01",
+          "via_synset": "freeze.v.08"
+        }
+      ],
+      "definition": "prohibit the conversion or use of (assets)"
+    },
+    {
+      "lemma": "freeze off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "refuse.v.02",
+          "via_synset": "reject.v.04"
+        }
+      ],
+      "definition": "reject with contempt"
+    },
+    {
+      "lemma": "go for",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "react.v.01",
+          "via_synset": "accept.v.03"
+        }
+      ],
+      "definition": "give an affirmative reply to; respond favorably to"
+    },
+    {
+      "lemma": "grade",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "rate.v.01"
+        }
+      ],
+      "definition": "assign a rank or rating to"
+    },
+    {
+      "lemma": "greet",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "react.v.01",
+          "via_synset": "greet.v.03"
+        }
+      ],
+      "definition": "react to in a certain way"
+    },
+    {
+      "lemma": "harbor",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "harbor.v.03"
+        }
+      ],
+      "definition": "keep in one's possession; of animals"
+    },
+    {
+      "lemma": "harbour",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "harbor.v.03"
+        }
+      ],
+      "definition": "keep in one's possession; of animals"
+    },
+    {
+      "lemma": "hive away",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "store.v.01"
+        }
+      ],
+      "definition": "keep or lay aside for future use"
+    },
+    {
+      "lemma": "hold",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "retain.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "declare.v.04"
+        }
+      ],
+      "definition": "secure and keep for possible future use or application"
+    },
+    {
+      "lemma": "hold back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "retain.v.03"
+        }
+      ],
+      "definition": "secure and keep for possible future use or application"
+    },
+    {
+      "lemma": "hold on",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "deny.v.04",
+          "via_synset": "keep.v.03"
+        }
+      ],
+      "definition": "retain possession of"
+    },
+    {
+      "lemma": "hold over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "carry_over.v.03"
+        }
+      ],
+      "definition": "hold over goods to be sold for the next season"
+    },
+    {
+      "lemma": "ignore",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "reject.v.01",
+          "via_synset": "dismiss.v.01"
+        }
+      ],
+      "definition": "bar from attention or consideration"
+    },
+    {
+      "lemma": "immobilise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "withhold.v.01",
+          "via_synset": "immobilize.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "withhold.v.01",
+          "via_synset": "freeze.v.08"
+        }
+      ],
+      "definition": "hold as reserve or withdraw from circulation; of capital"
+    },
+    {
+      "lemma": "immobilize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "withhold.v.01",
+          "via_synset": "immobilize.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "withhold.v.01",
+          "via_synset": "freeze.v.08"
+        }
+      ],
+      "definition": "hold as reserve or withdraw from circulation; of capital"
+    },
+    {
+      "lemma": "impoverish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "deprive.v.02",
+          "via_synset": "impoverish.v.01"
+        }
+      ],
+      "definition": "make poor"
+    },
+    {
+      "lemma": "impute",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "impute.v.01"
+        }
+      ],
+      "definition": "attribute or credit to"
+    },
+    {
+      "lemma": "judge",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "reject.v.01",
+          "via_synset": "evaluate.v.02"
+        }
+      ],
+      "definition": "form a critical opinion of"
+    },
+    {
+      "lemma": "keep",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "deny.v.04",
+          "via_synset": "keep.v.03"
+        }
+      ],
+      "definition": "retain possession of"
+    },
+    {
+      "lemma": "keep back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "deny.v.04",
+          "via_synset": "withhold.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "retain.v.03"
+        }
+      ],
+      "definition": "hold back; refuse to hand over or share"
+    },
+    {
+      "lemma": "keep to oneself",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "withhold.v.01",
+          "via_synset": "keep_to_oneself.v.02"
+        }
+      ],
+      "definition": "withhold information"
+    },
+    {
+      "lemma": "laugh away",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "dismiss.v.01",
+          "via_synset": "laugh_off.v.01"
+        }
+      ],
+      "definition": "deal with a problem by laughing or pretending to be amused by it"
+    },
+    {
+      "lemma": "laugh off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "dismiss.v.01",
+          "via_synset": "laugh_off.v.01"
+        }
+      ],
+      "definition": "deal with a problem by laughing or pretending to be amused by it"
+    },
+    {
+      "lemma": "lay in",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "store.v.01"
+        }
+      ],
+      "definition": "keep or lay aside for future use"
+    },
+    {
+      "lemma": "loss",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "decline.n.01",
+          "via_synset": "loss.n.02"
+        }
+      ],
+      "definition": "gradual decline in amount or activity"
+    },
+    {
+      "lemma": "lossy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "loss.n.02",
+          "via_synset": "lossy.a.01"
+        }
+      ],
+      "definition": "characterized by or causing dissipation of energy"
+    },
+    {
+      "lemma": "marvel",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "react.v.01",
+          "via_synset": "wonder.v.03"
+        }
+      ],
+      "definition": "be amazed at"
+    },
+    {
+      "lemma": "measure",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "measure.v.04"
+        }
+      ],
+      "definition": "evaluate or estimate the nature, quality, ability, extent, or significance of"
+    },
+    {
+      "lemma": "mistrust",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "distrust.v.01",
+          "via_synset": "distrust.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "distrust.v.01",
+          "via_synset": "misgiving.n.03"
+        }
+      ],
+      "definition": "the trait of not trusting others"
+    },
+    {
+      "lemma": "mistrust",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disbelieve.v.01",
+          "via_synset": "distrust.v.01"
+        }
+      ],
+      "definition": "regard as untrustworthy; regard with suspicion; have no faith or confidence in"
+    },
+    {
+      "lemma": "narrowing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.n.02",
+          "via_synset": "narrowing.n.02"
+        }
+      ],
+      "definition": "a decrease in width"
+    },
+    {
+      "lemma": "nosedive",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "decline.n.01",
+          "via_synset": "nosedive.n.01"
+        }
+      ],
+      "definition": "a sudden sharp drop or rapid decline"
+    },
+    {
+      "lemma": "notice",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "react.v.01",
+          "via_synset": "notice.v.04"
+        }
+      ],
+      "definition": "express recognition of the presence or existence of, or acquaintance with"
+    },
+    {
+      "lemma": "oppose",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "refute.v.01",
+          "via_synset": "oppose.v.06"
+        }
+      ],
+      "definition": "be resistant to"
+    },
+    {
+      "lemma": "order",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "rate.v.01"
+        }
+      ],
+      "definition": "assign a rank or rating to"
+    },
+    {
+      "lemma": "overreact",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "react.v.01",
+          "via_synset": "overreact.v.01"
+        }
+      ],
+      "definition": "show an exaggerated response to something"
+    },
+    {
+      "lemma": "pass",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "pass.v.16"
+        }
+      ],
+      "definition": "accept or judge as acceptable"
+    },
+    {
+      "lemma": "pass judgment",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "reject.v.01",
+          "via_synset": "evaluate.v.02"
+        }
+      ],
+      "definition": "form a critical opinion of"
+    },
+    {
+      "lemma": "pass off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "dismiss.v.01",
+          "via_synset": "pass_off.v.02"
+        }
+      ],
+      "definition": "disregard"
+    },
+    {
+      "lemma": "pass up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "refuse.v.02",
+          "via_synset": "refuse.v.02"
+        }
+      ],
+      "definition": "refuse to accept"
+    },
+    {
+      "lemma": "place",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "rate.v.01"
+        }
+      ],
+      "definition": "assign a rank or rating to"
+    },
+    {
+      "lemma": "pooh-pooh",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "refuse.v.02",
+          "via_synset": "reject.v.04"
+        }
+      ],
+      "definition": "reject with contempt"
+    },
+    {
+      "lemma": "prejudge",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "prejudge.v.01"
+        }
+      ],
+      "definition": "judge beforehand, especially without sufficient evidence"
+    },
+    {
+      "lemma": "preserve",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "save.v.02"
+        }
+      ],
+      "definition": "to keep up and reserve for personal or special use"
+    },
+    {
+      "lemma": "prove",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "test.v.01"
+        }
+      ],
+      "definition": "put to the test, as for its quality, or give experimental use to"
+    },
+    {
+      "lemma": "psilosis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "epilation.n.01",
+          "via_synset": "psilosis.n.02"
+        }
+      ],
+      "definition": "falling out of hair"
+    },
+    {
+      "lemma": "push aside",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "reject.v.01",
+          "via_synset": "dismiss.v.01"
+        }
+      ],
+      "definition": "bar from attention or consideration"
+    },
+    {
+      "lemma": "put in",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "store.v.01"
+        }
+      ],
+      "definition": "keep or lay aside for future use"
+    },
+    {
+      "lemma": "range",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "rate.v.01"
+        }
+      ],
+      "definition": "assign a rank or rating to"
+    },
+    {
+      "lemma": "rank",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "rate.v.01"
+        }
+      ],
+      "definition": "assign a rank or rating to"
+    },
+    {
+      "lemma": "rate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "rate.v.01"
+        }
+      ],
+      "definition": "assign a rank or rating to"
+    },
+    {
+      "lemma": "react",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "resist.v.05",
+          "via_synset": "react.v.01"
+        }
+      ],
+      "definition": "show a response or a reaction to something"
+    },
+    {
+      "lemma": "reappraise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "reappraise.v.01"
+        }
+      ],
+      "definition": "appraise anew"
+    },
+    {
+      "lemma": "rebut",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disown.v.02",
+          "via_synset": "refute.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disown.v.02",
+          "via_synset": "refute.v.01"
+        }
+      ],
+      "definition": "overthrow by argument, evidence, or proof"
+    },
+    {
+      "lemma": "rebuttal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "refute.v.01",
+          "via_synset": "rebuttal.n.01"
+        }
+      ],
+      "definition": "the speech act of refuting by offering a contrary contention or argument"
+    },
+    {
+      "lemma": "rebutter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "refute.v.01",
+          "via_synset": "rebutter.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "refute.v.01",
+          "via_synset": "rebutter.n.01"
+        }
+      ],
+      "definition": "(law) a pleading by the defendant in reply to a plaintiff's surrejoinder"
+    },
+    {
+      "lemma": "recant",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disown.v.02",
+          "via_synset": "abjure.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disown.v.02",
+          "via_synset": "abjure.v.01"
+        }
+      ],
+      "definition": "formally reject or disavow a formerly held belief, usually under pressure"
+    },
+    {
+      "lemma": "recantation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abjure.v.01",
+          "via_synset": "retraction.n.01"
+        }
+      ],
+      "definition": "a disavowal or taking back of a previous assertion"
+    },
+    {
+      "lemma": "reckon",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "calculate.v.02"
+        }
+      ],
+      "definition": "judge to be probable"
+    },
+    {
+      "lemma": "recoup",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "withhold.v.02"
+        }
+      ],
+      "definition": "retain and refrain from disbursing; of payments"
+    },
+    {
+      "lemma": "recusation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "recuse.v.02",
+          "via_synset": "recusation.n.02"
+        }
+      ],
+      "definition": "(law) an objection grounded on the judge's relationship to one of the parties"
+    },
+    {
+      "lemma": "recuse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "reject.v.01",
+          "via_synset": "recuse.v.02"
+        }
+      ],
+      "definition": "challenge or except to a judge as being incompetent or interested, in canon and civil law"
+    },
+    {
+      "lemma": "reduce",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reducing.n.02",
+          "via_synset": "reduce.v.20"
+        }
+      ],
+      "definition": "take off weight"
+    },
+    {
+      "lemma": "reducing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "loss.n.02",
+          "via_synset": "reducing.n.02"
+        }
+      ],
+      "definition": "loss of excess weight (as by dieting); becoming slimmer"
+    },
+    {
+      "lemma": "refusal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "refuse.v.02",
+          "via_synset": "refusal.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deny.v.04",
+          "via_synset": "refusal.n.01"
+        }
+      ],
+      "definition": "a message refusing to accept something that is offered"
+    },
+    {
+      "lemma": "refuse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "refuse.v.02",
+          "via_synset": "refuse.v.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "deny.v.04",
+          "via_synset": "deny.v.04"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "resist.v.05",
+          "via_synset": "resist.v.05"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "react.v.01",
+          "via_synset": "refuse.v.01"
+        }
+      ],
+      "definition": "refuse to accept"
+    },
+    {
+      "lemma": "refutation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "refute.v.01",
+          "via_synset": "refutation.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "refute.v.01",
+          "via_synset": "disproof.n.01"
+        }
+      ],
+      "definition": "the speech act of answering an attack on your assertions"
+    },
+    {
+      "lemma": "refute",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disown.v.02",
+          "via_synset": "refute.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disown.v.02",
+          "via_synset": "refute.v.01"
+        }
+      ],
+      "definition": "overthrow by argument, evidence, or proof"
+    },
+    {
+      "lemma": "refuter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "refute.v.01",
+          "via_synset": "rebutter.n.01"
+        }
+      ],
+      "definition": "a debater who refutes or disproves by offering contrary evidence or argument"
+    },
+    {
+      "lemma": "reject",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "refuse.v.02",
+          "via_synset": "refuse.v.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "resist.v.05",
+          "via_synset": "resist.v.05"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "reject.v.01",
+          "via_synset": "reject.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "disapprove.v.02"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "refuse.v.02",
+          "via_synset": "reject.v.04"
+        }
+      ],
+      "definition": "refuse to accept"
+    },
+    {
+      "lemma": "rejection",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "refuse.v.02",
+          "via_synset": "rejection.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reject.v.01",
+          "via_synset": "rejection.n.01"
+        }
+      ],
+      "definition": "the act of rejecting something"
+    },
+    {
+      "lemma": "rejective",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reject.v.01",
+          "via_synset": "rejective.a.01"
+        }
+      ],
+      "definition": "rejecting or tending to reject"
+    },
+    {
+      "lemma": "renounce",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "deny.v.02",
+          "via_synset": "disown.v.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "reject.v.01",
+          "via_synset": "disown.v.02"
+        }
+      ],
+      "definition": "cast off"
+    },
+    {
+      "lemma": "renouncement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disown.v.02",
+          "via_synset": "renunciation.n.03"
+        }
+      ],
+      "definition": "an act (spoken or written) declaring that something is surrendered or disowned"
+    },
+    {
+      "lemma": "renunciation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disown.v.02",
+          "via_synset": "repudiation.n.01"
+        }
+      ],
+      "definition": "rejecting or disowning or disclaiming as invalid"
+    },
+    {
+      "lemma": "reprobate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "reject.v.01",
+          "via_synset": "reprobate.v.01"
+        }
+      ],
+      "definition": "reject (documents) as invalid"
+    },
+    {
+      "lemma": "repudiate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "deny.v.02",
+          "via_synset": "disown.v.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "reject.v.01",
+          "via_synset": "repudiate.v.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "reject.v.01",
+          "via_synset": "disown.v.02"
+        }
+      ],
+      "definition": "cast off"
+    },
+    {
+      "lemma": "repudiation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disown.v.02",
+          "via_synset": "repudiation.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "repudiate.v.02",
+          "via_synset": "repudiation.n.02"
+        }
+      ],
+      "definition": "rejecting or disowning or disclaiming as invalid"
+    },
+    {
+      "lemma": "repudiative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "repudiate.v.02",
+          "via_synset": "repudiative.s.01"
+        }
+      ],
+      "definition": "rejecting emphatically; e.g. refusing to pay or disowning"
+    },
+    {
+      "lemma": "reservation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reserve.v.01",
+          "via_synset": "reservation.n.07"
+        }
+      ],
+      "definition": "the act of keeping back or setting aside for some future occasion"
+    },
+    {
+      "lemma": "reserve",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reserve.v.01",
+          "via_synset": "reserve.n.02"
+        }
+      ],
+      "definition": "something kept back or saved for future use or a special purpose"
+    },
+    {
+      "lemma": "reserve",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "withhold.v.01",
+          "via_synset": "reserve.v.01"
+        }
+      ],
+      "definition": "hold back or set aside, especially for future use or contingency"
+    },
+    {
+      "lemma": "resile",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disown.v.02",
+          "via_synset": "abjure.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disown.v.02",
+          "via_synset": "abjure.v.01"
+        }
+      ],
+      "definition": "formally reject or disavow a formerly held belief, usually under pressure"
+    },
+    {
+      "lemma": "resist",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "resist.v.05",
+          "via_synset": "resist.v.05"
+        }
+      ],
+      "definition": "resist immunologically the introduction of some foreign tissue or organ"
+    },
+    {
+      "lemma": "resistant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "resist.v.05",
+          "via_synset": "immune.s.02"
+        }
+      ],
+      "definition": "relating to or conferring immunity (to disease or infection)"
+    },
+    {
+      "lemma": "respond",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "resist.v.05",
+          "via_synset": "react.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "react.v.01",
+          "via_synset": "respond.v.03"
+        }
+      ],
+      "definition": "show a response or a reaction to something"
+    },
+    {
+      "lemma": "retain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "retain.v.03"
+        }
+      ],
+      "definition": "secure and keep for possible future use or application"
+    },
+    {
+      "lemma": "retract",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disown.v.02",
+          "via_synset": "abjure.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disown.v.02",
+          "via_synset": "abjure.v.01"
+        }
+      ],
+      "definition": "formally reject or disavow a formerly held belief, usually under pressure"
+    },
+    {
+      "lemma": "retraction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abjure.v.01",
+          "via_synset": "retraction.n.01"
+        }
+      ],
+      "definition": "a disavowal or taking back of a previous assertion"
+    },
+    {
+      "lemma": "review",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "review.v.02"
+        }
+      ],
+      "definition": "appraise critically"
+    },
+    {
+      "lemma": "salt away",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "store.v.01"
+        }
+      ],
+      "definition": "keep or lay aside for future use"
+    },
+    {
+      "lemma": "save",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "save.v.02"
+        }
+      ],
+      "definition": "to keep up and reserve for personal or special use"
+    },
+    {
+      "lemma": "scoff",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "scoff.v.02",
+          "via_synset": "jeer.n.01"
+        }
+      ],
+      "definition": "showing your contempt by derision"
+    },
+    {
+      "lemma": "scoff",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "dismiss.v.01",
+          "via_synset": "scoff.v.02"
+        }
+      ],
+      "definition": "treat with contemptuous disregard"
+    },
+    {
+      "lemma": "scoffer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "scoff.v.02",
+          "via_synset": "scoffer.n.02"
+        }
+      ],
+      "definition": "someone who jeers or mocks or treats something with contempt or calls out in derision"
+    },
+    {
+      "lemma": "scoffing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "scoff.v.02",
+          "via_synset": "jeer.n.01"
+        }
+      ],
+      "definition": "showing your contempt by derision"
+    },
+    {
+      "lemma": "scorn",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "refuse.v.02",
+          "via_synset": "reject.v.04"
+        }
+      ],
+      "definition": "reject with contempt"
+    },
+    {
+      "lemma": "shrug off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "dismiss.v.01",
+          "via_synset": "shrug_off.v.01"
+        }
+      ],
+      "definition": "minimize the importance of, brush aside"
+    },
+    {
+      "lemma": "sinking spell",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "decline.n.01",
+          "via_synset": "sinking_spell.n.01"
+        }
+      ],
+      "definition": "a temporary decline in health or value"
+    },
+    {
+      "lemma": "slack",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "deterioration.n.02",
+          "via_synset": "slump.n.01"
+        }
+      ],
+      "definition": "a noticeable deterioration in performance or quality"
+    },
+    {
+      "lemma": "slack",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "slump.n.01",
+          "via_synset": "slake.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "slump.n.01",
+          "via_synset": "slow.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "slump.n.01",
+          "via_synset": "slack.v.04"
+        }
+      ],
+      "definition": "make less active or intense"
+    },
+    {
+      "lemma": "slight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "slight.v.01",
+          "via_synset": "rebuff.n.01"
+        }
+      ],
+      "definition": "a deliberate discourteous act (usually as an expression of anger or disapproval)"
+    },
+    {
+      "lemma": "slight",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "dismiss.v.01",
+          "via_synset": "slight.v.01"
+        }
+      ],
+      "definition": "pay no attention to, disrespect"
+    },
+    {
+      "lemma": "slip",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "slippage.n.02",
+          "via_synset": "slip.v.04"
+        }
+      ],
+      "definition": "get worse"
+    },
+    {
+      "lemma": "slippage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "decline.n.01",
+          "via_synset": "slippage.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.n.02",
+          "via_synset": "slippage.n.01"
+        }
+      ],
+      "definition": "decline from a standard level of performance or achievement"
+    },
+    {
+      "lemma": "slump",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "deterioration.n.02",
+          "via_synset": "slump.n.01"
+        }
+      ],
+      "definition": "a noticeable deterioration in performance or quality"
+    },
+    {
+      "lemma": "slump",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "slump.n.01",
+          "via_synset": "slump.v.03"
+        }
+      ],
+      "definition": "fall heavily or suddenly; decline markedly"
+    },
+    {
+      "lemma": "spurn",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "refuse.v.02",
+          "via_synset": "reject.v.04"
+        }
+      ],
+      "definition": "reject with contempt"
+    },
+    {
+      "lemma": "stack away",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "store.v.01"
+        }
+      ],
+      "definition": "keep or lay aside for future use"
+    },
+    {
+      "lemma": "stand",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "stand.v.06"
+        }
+      ],
+      "definition": "have or maintain a position or stand on an issue"
+    },
+    {
+      "lemma": "starve",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "deprive.v.02",
+          "via_synset": "starve.v.05"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "deprive.v.02",
+          "via_synset": "starve.v.03"
+        }
+      ],
+      "definition": "deprive of a necessity and cause suffering"
+    },
+    {
+      "lemma": "stash away",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "store.v.01"
+        }
+      ],
+      "definition": "keep or lay aside for future use"
+    },
+    {
+      "lemma": "stool",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "react.v.01",
+          "via_synset": "stool.v.02"
+        }
+      ],
+      "definition": "react to a decoy, of wildfowl"
+    },
+    {
+      "lemma": "store",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "store.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "store.v.01"
+        }
+      ],
+      "definition": "find a place for and put away for storage"
+    },
+    {
+      "lemma": "suspect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "distrust.v.01",
+          "via_synset": "suspect.n.01"
+        }
+      ],
+      "definition": "someone who is under suspicion"
+    },
+    {
+      "lemma": "suspect",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disbelieve.v.01",
+          "via_synset": "distrust.v.01"
+        }
+      ],
+      "definition": "regard as untrustworthy; regard with suspicion; have no faith or confidence in"
+    },
+    {
+      "lemma": "suspicion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "distrust.v.01",
+          "via_synset": "misgiving.n.03"
+        }
+      ],
+      "definition": "doubt about someone's honesty"
+    },
+    {
+      "lemma": "swallow",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disown.v.02",
+          "via_synset": "swallow.v.05"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disown.v.02",
+          "via_synset": "swallow.v.05"
+        }
+      ],
+      "definition": "take back what one has said"
+    },
+    {
+      "lemma": "take back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disown.v.02",
+          "via_synset": "swallow.v.05"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disown.v.02",
+          "via_synset": "swallow.v.05"
+        }
+      ],
+      "definition": "take back what one has said"
+    },
+    {
+      "lemma": "tergiversate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disown.v.02",
+          "via_synset": "apostatize.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disown.v.02",
+          "via_synset": "apostatize.v.01"
+        }
+      ],
+      "definition": "abandon one's beliefs or allegiances"
+    },
+    {
+      "lemma": "tergiversation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apostatize.v.01",
+          "via_synset": "apostasy.n.02"
+        }
+      ],
+      "definition": "the act of abandoning a party for cause"
+    },
+    {
+      "lemma": "test",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "test.v.01"
+        }
+      ],
+      "definition": "put to the test, as for its quality, or give experimental use to"
+    },
+    {
+      "lemma": "think",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "think.v.01"
+        }
+      ],
+      "definition": "judge or regard; look upon; judge"
+    },
+    {
+      "lemma": "tongue-tie",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "deprive.v.02",
+          "via_synset": "tongue-tie.v.01"
+        }
+      ],
+      "definition": "deprive of speech"
+    },
+    {
+      "lemma": "treat",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "react.v.01",
+          "via_synset": "treat.v.08"
+        }
+      ],
+      "definition": "regard or consider in a specific way"
+    },
+    {
+      "lemma": "try",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "test.v.01"
+        }
+      ],
+      "definition": "put to the test, as for its quality, or give experimental use to"
+    },
+    {
+      "lemma": "try out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "test.v.01"
+        }
+      ],
+      "definition": "put to the test, as for its quality, or give experimental use to"
+    },
+    {
+      "lemma": "turn a blind eye",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "dismiss.v.01",
+          "via_synset": "turn_a_blind_eye.v.01"
+        }
+      ],
+      "definition": "refuse to acknowledge"
+    },
+    {
+      "lemma": "turn down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "refuse.v.02",
+          "via_synset": "refuse.v.02"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "refuse.v.02",
+          "via_synset": "reject.v.04"
+        }
+      ],
+      "definition": "refuse to accept"
+    },
+    {
+      "lemma": "turndown",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "refuse.v.02",
+          "via_synset": "nonacceptance.n.01"
+        }
+      ],
+      "definition": "the act of refusing an offer"
+    },
+    {
+      "lemma": "unsay",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disown.v.02",
+          "via_synset": "swallow.v.05"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disown.v.02",
+          "via_synset": "swallow.v.05"
+        }
+      ],
+      "definition": "take back what one has said"
+    },
+    {
+      "lemma": "valuate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "measure.v.04"
+        }
+      ],
+      "definition": "evaluate or estimate the nature, quality, ability, extent, or significance of"
+    },
+    {
+      "lemma": "value",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "evaluate.v.02",
+          "via_synset": "measure.v.04"
+        }
+      ],
+      "definition": "evaluate or estimate the nature, quality, ability, extent, or significance of"
+    },
+    {
+      "lemma": "wane",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "decline.n.01",
+          "via_synset": "ebb.n.01"
+        }
+      ],
+      "definition": "a gradual decline (in size or strength or power or number)"
+    },
+    {
+      "lemma": "wane",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ebb.n.01",
+          "via_synset": "decline.v.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ebb.n.01",
+          "via_synset": "wane.v.03"
+        }
+      ],
+      "definition": "grow smaller"
+    },
+    {
+      "lemma": "wastage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "decrease.n.02",
+          "via_synset": "wastage.n.01"
+        }
+      ],
+      "definition": "the process of wasting"
+    },
+    {
+      "lemma": "wean",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "deprive.v.02",
+          "via_synset": "wean.v.01"
+        }
+      ],
+      "definition": "gradually deprive (infants and young mammals) of mother's milk"
+    },
+    {
+      "lemma": "withdraw",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "disown.v.02",
+          "via_synset": "swallow.v.05"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disown.v.02",
+          "via_synset": "swallow.v.05"
+        }
+      ],
+      "definition": "take back what one has said"
+    },
+    {
+      "lemma": "withdrawal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "swallow.v.05",
+          "via_synset": "withdrawal.n.01"
+        }
+      ],
+      "definition": "a retraction of a previously held position"
+    },
+    {
+      "lemma": "withhold",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "deny.v.04",
+          "via_synset": "withhold.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "keep.v.03",
+          "via_synset": "withhold.v.02"
+        }
+      ],
+      "definition": "hold back; refuse to hand over or share"
+    },
+    {
+      "lemma": "withholder",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "withhold.v.01",
+          "via_synset": "withholder.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "withhold.v.01",
+          "via_synset": "withholder.n.02"
+        }
+      ],
+      "definition": "a person who refrains from granting"
+    },
+    {
+      "lemma": "withholding",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "withhold.v.01",
+          "via_synset": "withholding.n.03"
+        }
+      ],
+      "definition": "the act of holding back or keeping within your possession or control"
+    },
+    {
+      "lemma": "wonder",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "react.v.01",
+          "via_synset": "wonder.v.03"
+        }
+      ],
+      "definition": "be amazed at"
+    },
+    {
+      "lemma": "worsen",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deterioration.n.02",
+          "via_synset": "worsen.v.01"
+        }
+      ],
+      "definition": "grow worse"
+    },
+    {
+      "lemma": "worsening",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "decline.n.01",
+          "via_synset": "deterioration.n.02"
+        }
+      ],
+      "definition": "process of changing to an inferior state"
+    }
+  ]
+}

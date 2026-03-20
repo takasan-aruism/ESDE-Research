@@ -1,0 +1,5219 @@
+{
+  "atom_id": "ACT.sink",
+  "category": "ACT",
+  "seed_count": 6,
+  "total_keys": 355,
+  "pos_counts": {
+    "v": 212,
+    "n": 141,
+    "adj": 2
+  },
+  "source_counts": {
+    "0_seed": 11,
+    "2_hypernym_d1": 14,
+    "12_verb_group": 3,
+    "10_sibling": 316,
+    "3_hyponym_d1": 16,
+    "4_hyponym_d2": 5,
+    "6_derivational": 15,
+    "9_antonym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 9,
+      "words": [
+        "sink(v)",
+        "drop down(v)",
+        "sink(n)",
+        "submerge(v)",
+        "submerse(v)",
+        "drown(v)",
+        "overwhelm(v)",
+        "condescend(v)",
+        "deign(v)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 13,
+      "words": [
+        "change posture(v)",
+        "plumbing fixture(n)",
+        "natural process(n)",
+        "natural action(n)",
+        "action(n)",
+        "activity(n)",
+        "settle(v)",
+        "go down(v)",
+        "go under(v)",
+        "cover(v)",
+        "spread over(v)",
+        "act(v)",
+        "move(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 15,
+      "words": [
+        "drop open(v)",
+        "fall open(v)",
+        "sag(v)",
+        "droop(v)",
+        "swag(v)",
+        "flag(v)",
+        "sag down(v)",
+        "washbasin(n)",
+        "basin(n)",
+        "washbowl(n)",
+        "washstand(n)",
+        "lavatory(n)",
+        "kitchen sink(n)",
+        "heat sink(n)",
+        "dive(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 5,
+      "words": [
+        "bag(v)",
+        "slump(v)",
+        "slouch(v)",
+        "belly-flop(v)",
+        "jackknife(v)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 14,
+      "words": [
+        "slouch(n)",
+        "sloucher(n)",
+        "sag(n)",
+        "jackknife(n)",
+        "droop(n)",
+        "submersible(adj)",
+        "submergible(adj)",
+        "submersion(n)",
+        "submerging(n)",
+        "submergence(n)",
+        "dive(n)",
+        "diver(n)",
+        "diving(n)",
+        "bagging(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "source(n)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 297,
+      "words": [
+        "straighten(v)",
+        "unbend(v)",
+        "hunch(v)",
+        "hump(v)",
+        "hunch forward(v)",
+        "hunch over(v)",
+        "lie down(v)",
+        "lie(v)",
+        "arise(v)",
+        "uprise(v)",
+        "get up(v)",
+        "stand up(v)",
+        "sit down(v)",
+        "sit(v)",
+        "bow(v)",
+        "sit up(v)",
+        "uncurl(v)",
+        "right(v)",
+        "fall down(v)",
+        "urinal(n)",
+        "shower(n)",
+        "water faucet(n)",
+        "water tap(n)",
+        "tap(n)",
+        "hydrant(n)",
+        "fountain(n)",
+        "fount(n)",
+        "toilet(n)",
+        "can(n)",
+        "commode(n)",
+        "crapper(n)",
+        "pot(n)",
+        "potty(n)",
+        "stool(n)",
+        "throne(n)",
+        "chemical process(n)",
+        "chemical change(n)",
+        "chemical action(n)",
+        "desorption(n)",
+        "drift(n)",
+        "concretion(n)",
+        "establishment(n)",
+        "ecesis(n)",
+        "geological process(n)",
+        "geologic process(n)",
+        "sericulture(n)",
+        "fossilization(n)",
+        "fossilisation(n)",
+        "temperature change(n)",
+        "demagnetization(n)",
+        "demagnetisation(n)",
+        "formation(n)",
+        "succession(n)",
+        "ecological succession(n)",
+        "pair production(n)",
+        "pair creation(n)",
+        "pair formation(n)",
+        "effervescence(n)",
+        "hardening(n)",
+        "solidifying(n)",
+        "solidification(n)",
+        "set(n)",
+        "curing(n)",
+        "magnetization(n)",
+        "magnetisation(n)",
+        "magnetic induction(n)",
+        "sorption(n)",
+        "dissolution(n)",
+        "disintegration(n)",
+        "chromatography(n)",
+        "inactivation(n)",
+        "transduction(n)",
+        "ion exchange(n)",
+        "vitrification(n)",
+        "acidification(n)",
+        "convection(n)",
+        "diffusion(n)",
+        "ionization(n)",
+        "ionisation(n)",
+        "opacification(n)",
+        "saltation(n)",
+        "radiation(n)",
+        "distillation(n)",
+        "distillment(n)",
+        "oxygenation(n)",
+        "scattering(n)",
+        "survival(n)",
+        "survival of the fittest(n)",
+        "natural selection(n)",
+        "selection(n)",
+        "softening(n)",
+        "capture(n)",
+        "flocculation(n)",
+        "precession of the equinoxes(n)",
+        "oscillation(n)",
+        "release(n)",
+        "centrifugation(n)",
+        "feedback(n)",
+        "curdling(n)",
+        "clotting(n)",
+        "coagulation(n)",
+        "transpiration(n)",
+        "phase change(n)",
+        "phase transition(n)",
+        "state change(n)",
+        "physical change(n)",
+        "decay(n)",
+        "aeration(n)",
+        "flow(n)",
+        "stiffening(n)",
+        "rigidifying(n)",
+        "rigidification(n)",
+        "materialization(n)",
+        "materialisation(n)",
+        "filtration(n)",
+        "leach(n)",
+        "leaching(n)",
+        "soak(n)",
+        "soakage(n)",
+        "soaking(n)",
+        "electrophoresis(n)",
+        "cataphoresis(n)",
+        "dielectrolysis(n)",
+        "ionophoresis(n)",
+        "stimulation(n)",
+        "antiredeposition(n)",
+        "condensation(n)",
+        "extinction(n)",
+        "nuclear reaction(n)",
+        "extraction(n)",
+        "synergy(n)",
+        "synergism(n)",
+        "adiabatic process(n)",
+        "absorption(n)",
+        "subside(v)",
+        "founder(v)",
+        "glaciate(v)",
+        "mist(v)",
+        "mist over(v)",
+        "clothe(v)",
+        "cloak(v)",
+        "drape(v)",
+        "robe(v)",
+        "flood(v)",
+        "mantle(v)",
+        "smother(v)",
+        "shroud(v)",
+        "blanket(v)",
+        "grass(v)",
+        "grass over(v)",
+        "strew(v)",
+        "carpet(v)",
+        "bloody(v)",
+        "coat(v)",
+        "cake(v)",
+        "repeat(v)",
+        "take over(v)",
+        "continue(v)",
+        "go on(v)",
+        "proceed(v)",
+        "go along(v)",
+        "keep(v)",
+        "come to the fore(v)",
+        "step forward(v)",
+        "come forward(v)",
+        "step up(v)",
+        "step to the fore(v)",
+        "come out(v)",
+        "behave(v)",
+        "acquit(v)",
+        "bear(v)",
+        "deport(v)",
+        "conduct(v)",
+        "comport(v)",
+        "carry(v)",
+        "set about(v)",
+        "go about(v)",
+        "approach(v)",
+        "reward(v)",
+        "repay(v)",
+        "pay back(v)",
+        "dispatch(v)",
+        "dare(v)",
+        "attack(v)",
+        "aggress(v)",
+        "interact(v)",
+        "take time by the forelock(v)",
+        "guard(v)",
+        "woo(v)",
+        "court(v)",
+        "romance(v)",
+        "solicit(v)",
+        "coact(v)",
+        "exert(v)",
+        "get around to(v)",
+        "come close(v)",
+        "perform(v)",
+        "satisfice(v)",
+        "satisfise(v)",
+        "create(v)",
+        "deal(v)",
+        "act on(v)",
+        "sneak(v)",
+        "make a point(v)",
+        "make sure(v)",
+        "volunteer(v)",
+        "offer(v)",
+        "dally(v)",
+        "toy(v)",
+        "play(v)",
+        "flirt(v)",
+        "react(v)",
+        "oppose(v)",
+        "finish up(v)",
+        "land up(v)",
+        "fetch up(v)",
+        "end up(v)",
+        "wind up(v)",
+        "finish(v)",
+        "reciprocate(v)",
+        "anticipate(v)",
+        "foresee(v)",
+        "forestall(v)",
+        "counter(v)",
+        "respond(v)",
+        "misbehave(v)",
+        "misconduct(v)",
+        "misdemean(v)",
+        "antagonize(v)",
+        "antagonise(v)",
+        "counteract(v)",
+        "egotrip(v)",
+        "begin(v)",
+        "start(v)",
+        "take care(v)",
+        "take(v)",
+        "go off half-cocked(v)",
+        "go off at half-cock(v)",
+        "wait(v)",
+        "hold off(v)",
+        "hold back(v)",
+        "perpetrate(v)",
+        "commit(v)",
+        "pull(v)",
+        "stoop(v)",
+        "lower oneself(v)",
+        "alternate(v)",
+        "take turns(v)",
+        "interrupt(v)",
+        "disturb(v)",
+        "rampage(v)",
+        "surprise(v)",
+        "maneuver(v)",
+        "manoeuver(v)",
+        "manoeuvre(v)",
+        "go ahead(v)",
+        "plow ahead(v)",
+        "participate(v)",
+        "take part(v)",
+        "stampede(v)",
+        "evade(v)",
+        "do well(v)",
+        "had best(v)",
+        "persist in(v)",
+        "try(v)",
+        "seek(v)",
+        "attempt(v)",
+        "essay(v)",
+        "assay(v)",
+        "effect(v)",
+        "use(v)",
+        "partner(v)",
+        "make bold(v)",
+        "presume(v)",
+        "race(v)",
+        "cope(v)",
+        "get by(v)",
+        "make out(v)",
+        "make do(v)",
+        "contend(v)",
+        "grapple(v)",
+        "manage(v)",
+        "play it by ear(v)",
+        "prosecute(v)",
+        "force(v)",
+        "go(v)",
+        "engage(v)",
+        "pursue(v)",
+        "rush(v)",
+        "hasten(v)",
+        "hurry(v)",
+        "look sharp(v)",
+        "festinate(v)",
+        "lord it over(v)",
+        "queen it over(v)",
+        "put on airs(v)",
+        "act superior(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 1,
+      "words": [
+        "fall off(v)"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "absorption",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "absorption.n.02"
+        }
+      ],
+      "definition": "(physics) the process in which incident radiated energy is retained without reflection or transmission on passing through a medium"
+    },
+    {
+      "lemma": "acidification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "acidification.n.01"
+        }
+      ],
+      "definition": "the process of becoming acid or being converted into an acid"
+    },
+    {
+      "lemma": "acquit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "behave.v.02"
+        }
+      ],
+      "definition": "behave in a certain manner"
+    },
+    {
+      "lemma": "act",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "condescend.v.02",
+          "via_synset": "act.v.01"
+        }
+      ],
+      "definition": "perform an action, or work out or perform (an action)"
+    },
+    {
+      "lemma": "act on",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "act_on.v.02"
+        }
+      ],
+      "definition": "regulate one's behavior in accordance with certain information, ideas, or advice"
+    },
+    {
+      "lemma": "act superior",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "lord_it_over.v.01"
+        }
+      ],
+      "definition": "act like the master of"
+    },
+    {
+      "lemma": "action",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sink.n.02",
+          "via_synset": "natural_process.n.01"
+        }
+      ],
+      "definition": "a process existing in or produced by nature (rather than by the intent of human beings)"
+    },
+    {
+      "lemma": "activity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sink.n.02",
+          "via_synset": "natural_process.n.01"
+        }
+      ],
+      "definition": "a process existing in or produced by nature (rather than by the intent of human beings)"
+    },
+    {
+      "lemma": "adiabatic process",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "adiabatic_process.n.01"
+        }
+      ],
+      "definition": "(thermodynamics) any process that occurs without gain or loss of heat"
+    },
+    {
+      "lemma": "aeration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "aeration.n.01"
+        }
+      ],
+      "definition": "the process of exposing to air (so as to purify)"
+    },
+    {
+      "lemma": "aggress",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "attack.v.03"
+        }
+      ],
+      "definition": "take the initiative and go on the offensive"
+    },
+    {
+      "lemma": "alternate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "alternate.v.05"
+        }
+      ],
+      "definition": "do something in turns"
+    },
+    {
+      "lemma": "antagonise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "antagonize.v.02"
+        }
+      ],
+      "definition": "act in opposition to"
+    },
+    {
+      "lemma": "antagonize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "antagonize.v.02"
+        }
+      ],
+      "definition": "act in opposition to"
+    },
+    {
+      "lemma": "anticipate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "anticipate.v.02"
+        }
+      ],
+      "definition": "act in advance of; deal with ahead of time"
+    },
+    {
+      "lemma": "antiredeposition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "antiredeposition.n.01"
+        }
+      ],
+      "definition": "the process of preventing redeposition"
+    },
+    {
+      "lemma": "approach",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "set_about.v.01"
+        }
+      ],
+      "definition": "begin to deal with"
+    },
+    {
+      "lemma": "arise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "arise.v.03"
+        }
+      ],
+      "definition": "rise to one's feet"
+    },
+    {
+      "lemma": "assay",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "try.v.01"
+        }
+      ],
+      "definition": "make an effort or attempt"
+    },
+    {
+      "lemma": "attack",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "attack.v.03"
+        }
+      ],
+      "definition": "take the initiative and go on the offensive"
+    },
+    {
+      "lemma": "attempt",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "try.v.01"
+        }
+      ],
+      "definition": "make an effort or attempt"
+    },
+    {
+      "lemma": "bag",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sag.v.01",
+          "via_synset": "bag.v.02"
+        }
+      ],
+      "definition": "hang loosely, like an empty bag"
+    },
+    {
+      "lemma": "bagging",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bag.v.02",
+          "via_synset": "sacking.n.01"
+        }
+      ],
+      "definition": "coarse fabric used for bags or sacks"
+    },
+    {
+      "lemma": "basin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.n.01",
+          "via_synset": "washbasin.n.01"
+        }
+      ],
+      "definition": "a bathroom sink that is permanently installed and connected to a water supply and drainpipe; where you can wash your hands and face"
+    },
+    {
+      "lemma": "bear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "behave.v.02"
+        }
+      ],
+      "definition": "behave in a certain manner"
+    },
+    {
+      "lemma": "begin",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "begin.v.08"
+        }
+      ],
+      "definition": "begin an event that is implied and limited by the nature or inherent function of the direct object"
+    },
+    {
+      "lemma": "behave",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "behave.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "behave.v.03"
+        }
+      ],
+      "definition": "behave in a certain manner"
+    },
+    {
+      "lemma": "belly-flop",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "dive.v.02",
+          "via_synset": "belly-flop.v.01"
+        }
+      ],
+      "definition": "dive so that one hits the water with one's belly"
+    },
+    {
+      "lemma": "blanket",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cover.v.02",
+          "via_synset": "blanket.v.02"
+        }
+      ],
+      "definition": "form a blanket-like cover (over)"
+    },
+    {
+      "lemma": "bloody",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cover.v.02",
+          "via_synset": "bloody.v.01"
+        }
+      ],
+      "definition": "cover with blood"
+    },
+    {
+      "lemma": "bow",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "bow.v.03"
+        }
+      ],
+      "definition": "bend the head or the upper part of the body in a gesture of respect or greeting"
+    },
+    {
+      "lemma": "cake",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cover.v.02",
+          "via_synset": "coat.v.03"
+        }
+      ],
+      "definition": "form a coat over"
+    },
+    {
+      "lemma": "can",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plumbing_fixture.n.01",
+          "via_synset": "toilet.n.02"
+        }
+      ],
+      "definition": "a plumbing fixture for defecation and urination"
+    },
+    {
+      "lemma": "capture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "capture.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "capture.n.02"
+        }
+      ],
+      "definition": "any process in which an atomic or nuclear system acquires an additional particle"
+    },
+    {
+      "lemma": "carpet",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cover.v.02",
+          "via_synset": "carpet.v.01"
+        }
+      ],
+      "definition": "form a carpet-like cover (over)"
+    },
+    {
+      "lemma": "carry",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "behave.v.02"
+        }
+      ],
+      "definition": "behave in a certain manner"
+    },
+    {
+      "lemma": "cataphoresis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "electrophoresis.n.01"
+        }
+      ],
+      "definition": "the motion of charged particles in a colloid under the influence of an electric field; particles with a positive charge go to the cathode and negative to the anode"
+    },
+    {
+      "lemma": "centrifugation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "centrifugation.n.01"
+        }
+      ],
+      "definition": "the process of separating substances of different densities by the use of a centrifuge"
+    },
+    {
+      "lemma": "change posture",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sink.v.01",
+          "via_synset": "change_posture.v.01"
+        }
+      ],
+      "definition": "undergo a change in bodily posture"
+    },
+    {
+      "lemma": "chemical action",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "chemical_process.n.01"
+        }
+      ],
+      "definition": "(chemistry) any process determined by the atomic and molecular composition and structure of the substances involved"
+    },
+    {
+      "lemma": "chemical change",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "chemical_process.n.01"
+        }
+      ],
+      "definition": "(chemistry) any process determined by the atomic and molecular composition and structure of the substances involved"
+    },
+    {
+      "lemma": "chemical process",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "chemical_process.n.01"
+        }
+      ],
+      "definition": "(chemistry) any process determined by the atomic and molecular composition and structure of the substances involved"
+    },
+    {
+      "lemma": "chromatography",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "chromatography.n.01"
+        }
+      ],
+      "definition": "a process used for separating mixtures by virtue of differences in absorbency"
+    },
+    {
+      "lemma": "cloak",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cover.v.02",
+          "via_synset": "clothe.v.03"
+        }
+      ],
+      "definition": "cover as if with clothing"
+    },
+    {
+      "lemma": "clothe",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cover.v.02",
+          "via_synset": "clothe.v.03"
+        }
+      ],
+      "definition": "cover as if with clothing"
+    },
+    {
+      "lemma": "clotting",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "curdling.n.01"
+        }
+      ],
+      "definition": "the process of forming semisolid lumps in a liquid"
+    },
+    {
+      "lemma": "coact",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "coact.v.01"
+        }
+      ],
+      "definition": "act together, as of organisms"
+    },
+    {
+      "lemma": "coagulation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "curdling.n.01"
+        }
+      ],
+      "definition": "the process of forming semisolid lumps in a liquid"
+    },
+    {
+      "lemma": "coat",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cover.v.02",
+          "via_synset": "coat.v.03"
+        }
+      ],
+      "definition": "form a coat over"
+    },
+    {
+      "lemma": "come close",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "come_close.v.01"
+        }
+      ],
+      "definition": "nearly do something"
+    },
+    {
+      "lemma": "come forward",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "come_to_the_fore.v.01"
+        }
+      ],
+      "definition": "make oneself visible; take action"
+    },
+    {
+      "lemma": "come out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "come_to_the_fore.v.01"
+        }
+      ],
+      "definition": "make oneself visible; take action"
+    },
+    {
+      "lemma": "come to the fore",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "come_to_the_fore.v.01"
+        }
+      ],
+      "definition": "make oneself visible; take action"
+    },
+    {
+      "lemma": "commit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "perpetrate.v.01"
+        }
+      ],
+      "definition": "perform an act, usually with a negative connotation"
+    },
+    {
+      "lemma": "commode",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plumbing_fixture.n.01",
+          "via_synset": "toilet.n.02"
+        }
+      ],
+      "definition": "a plumbing fixture for defecation and urination"
+    },
+    {
+      "lemma": "comport",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "behave.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "behave.v.03"
+        }
+      ],
+      "definition": "behave in a certain manner"
+    },
+    {
+      "lemma": "concretion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "concretion.n.01"
+        }
+      ],
+      "definition": "the formation of stonelike objects within a body organ (e.g., the kidneys)"
+    },
+    {
+      "lemma": "condensation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "condensation.n.02"
+        }
+      ],
+      "definition": "the process of changing from a gaseous to a liquid or solid state"
+    },
+    {
+      "lemma": "condescend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "condescend.v.02",
+          "via_synset": "condescend.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "condescend.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "condescend.v.03"
+        }
+      ],
+      "definition": "do something that one considers to be below one's dignity"
+    },
+    {
+      "lemma": "conduct",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "behave.v.02"
+        }
+      ],
+      "definition": "behave in a certain manner"
+    },
+    {
+      "lemma": "contend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "cope.v.01"
+        }
+      ],
+      "definition": "come to terms with"
+    },
+    {
+      "lemma": "continue",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "continue.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "continue.v.07"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "continue.v.06"
+        }
+      ],
+      "definition": "continue a certain state, condition, or activity"
+    },
+    {
+      "lemma": "convection",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "convection.n.02"
+        }
+      ],
+      "definition": "(meteorology) the vertical movement of heat or other properties by massive motion within the atmosphere"
+    },
+    {
+      "lemma": "cope",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "cope.v.01"
+        }
+      ],
+      "definition": "come to terms with"
+    },
+    {
+      "lemma": "counter",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "anticipate.v.02"
+        }
+      ],
+      "definition": "act in advance of; deal with ahead of time"
+    },
+    {
+      "lemma": "counteract",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "antagonize.v.02"
+        }
+      ],
+      "definition": "act in opposition to"
+    },
+    {
+      "lemma": "court",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "woo.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "court.v.03"
+        }
+      ],
+      "definition": "make amorous advances towards"
+    },
+    {
+      "lemma": "cover",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "submerge.v.02",
+          "via_synset": "cover.v.02"
+        }
+      ],
+      "definition": "form a cover over"
+    },
+    {
+      "lemma": "crapper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plumbing_fixture.n.01",
+          "via_synset": "toilet.n.02"
+        }
+      ],
+      "definition": "a plumbing fixture for defecation and urination"
+    },
+    {
+      "lemma": "create",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "create.v.03"
+        }
+      ],
+      "definition": "pursue a creative activity; be engaged in a creative activity"
+    },
+    {
+      "lemma": "curdling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "curdling.n.01"
+        }
+      ],
+      "definition": "the process of forming semisolid lumps in a liquid"
+    },
+    {
+      "lemma": "curing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "hardening.n.02"
+        }
+      ],
+      "definition": "the process of becoming hard or solid by cooling or drying or crystallization"
+    },
+    {
+      "lemma": "dally",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "dally.v.01"
+        }
+      ],
+      "definition": "behave carelessly or indifferently"
+    },
+    {
+      "lemma": "dare",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "dare.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "make_bold.v.01"
+        }
+      ],
+      "definition": "to be courageous enough to try or do something; ,"
+    },
+    {
+      "lemma": "deal",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "deal.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "cope.v.01"
+        }
+      ],
+      "definition": "take action with respect to (someone or something)"
+    },
+    {
+      "lemma": "decay",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "decay.n.01"
+        }
+      ],
+      "definition": "the process of gradually becoming inferior"
+    },
+    {
+      "lemma": "deign",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "condescend.v.02",
+          "via_synset": "condescend.v.02"
+        }
+      ],
+      "definition": "do something that one considers to be below one's dignity"
+    },
+    {
+      "lemma": "demagnetisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "demagnetization.n.01"
+        }
+      ],
+      "definition": "the process of removing magnetization"
+    },
+    {
+      "lemma": "demagnetization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "demagnetization.n.01"
+        }
+      ],
+      "definition": "the process of removing magnetization"
+    },
+    {
+      "lemma": "deport",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "behave.v.02"
+        }
+      ],
+      "definition": "behave in a certain manner"
+    },
+    {
+      "lemma": "desorption",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "desorption.n.01"
+        }
+      ],
+      "definition": "changing from an adsorbed state on a surface to a gaseous or liquid state"
+    },
+    {
+      "lemma": "dielectrolysis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "electrophoresis.n.01"
+        }
+      ],
+      "definition": "the motion of charged particles in a colloid under the influence of an electric field; particles with a positive charge go to the cathode and negative to the anode"
+    },
+    {
+      "lemma": "diffusion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "diffusion.n.01"
+        }
+      ],
+      "definition": "(physics) the process in which there is movement of a substance from an area of high concentration of that substance to an area of lower concentration"
+    },
+    {
+      "lemma": "disintegration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "dissolution.n.01"
+        }
+      ],
+      "definition": "separation into component parts"
+    },
+    {
+      "lemma": "dispatch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "dispatch.v.04"
+        }
+      ],
+      "definition": "dispose of rapidly and without delay and efficiently"
+    },
+    {
+      "lemma": "dissolution",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "dissolution.n.01"
+        }
+      ],
+      "definition": "separation into component parts"
+    },
+    {
+      "lemma": "distillation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "distillation.n.01"
+        }
+      ],
+      "definition": "the process of purifying a liquid by boiling it and condensing its vapors"
+    },
+    {
+      "lemma": "distillment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "distillation.n.01"
+        }
+      ],
+      "definition": "the process of purifying a liquid by boiling it and condensing its vapors"
+    },
+    {
+      "lemma": "disturb",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "interrupt.v.02"
+        }
+      ],
+      "definition": "destroy the peace or tranquility of"
+    },
+    {
+      "lemma": "dive",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dive.v.02",
+          "via_synset": "dive.n.02"
+        }
+      ],
+      "definition": "a headlong plunge into water"
+    },
+    {
+      "lemma": "dive",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "submerge.v.01",
+          "via_synset": "dive.v.02"
+        }
+      ],
+      "definition": "plunge into water"
+    },
+    {
+      "lemma": "diver",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dive.v.02",
+          "via_synset": "diver.n.02"
+        }
+      ],
+      "definition": "someone who dives (into water)"
+    },
+    {
+      "lemma": "diving",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dive.v.02",
+          "via_synset": "dive.n.02"
+        }
+      ],
+      "definition": "a headlong plunge into water"
+    },
+    {
+      "lemma": "do well",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "do_well.v.01"
+        }
+      ],
+      "definition": "act in one's own or everybody's best interest"
+    },
+    {
+      "lemma": "drape",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cover.v.02",
+          "via_synset": "clothe.v.03"
+        }
+      ],
+      "definition": "cover as if with clothing"
+    },
+    {
+      "lemma": "drift",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "drift.n.02"
+        }
+      ],
+      "definition": "the gradual departure from an intended course due to external influences (as a ship or plane)"
+    },
+    {
+      "lemma": "droop",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sag.v.01",
+          "via_synset": "sag.n.01"
+        }
+      ],
+      "definition": "a shape that sags"
+    },
+    {
+      "lemma": "droop",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.v.01",
+          "via_synset": "sag.v.01"
+        }
+      ],
+      "definition": "droop, sink, or settle from or as if from pressure or loss of tautness"
+    },
+    {
+      "lemma": "drop down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sink.v.01",
+          "via_synset": "sink.v.01"
+        }
+      ],
+      "definition": "fall or descend to a lower place or level"
+    },
+    {
+      "lemma": "drop open",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.v.01",
+          "via_synset": "drop_open.v.01"
+        }
+      ],
+      "definition": "open involuntarily"
+    },
+    {
+      "lemma": "drown",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "submerge.v.02",
+          "via_synset": "submerge.v.02"
+        }
+      ],
+      "definition": "cover completely or make imperceptible"
+    },
+    {
+      "lemma": "ecesis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "establishment.n.06"
+        }
+      ],
+      "definition": "(ecology) the process by which a plant or animal becomes established in a new habitat"
+    },
+    {
+      "lemma": "ecological succession",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "succession.n.04"
+        }
+      ],
+      "definition": "(ecology) the gradual and orderly process of change in an ecosystem brought about by the progressive replacement of one community by another until a stable climax is established"
+    },
+    {
+      "lemma": "effect",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "effect.v.02"
+        }
+      ],
+      "definition": "act so as to bring into existence"
+    },
+    {
+      "lemma": "effervescence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "effervescence.n.01"
+        }
+      ],
+      "definition": "the process of bubbling as gas escapes"
+    },
+    {
+      "lemma": "egotrip",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "egotrip.v.01"
+        }
+      ],
+      "definition": "act in a way that attracts attention"
+    },
+    {
+      "lemma": "electrophoresis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "electrophoresis.n.01"
+        }
+      ],
+      "definition": "the motion of charged particles in a colloid under the influence of an electric field; particles with a positive charge go to the cathode and negative to the anode"
+    },
+    {
+      "lemma": "end up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "finish_up.v.02"
+        }
+      ],
+      "definition": "finally be or do something"
+    },
+    {
+      "lemma": "engage",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "prosecute.v.03"
+        }
+      ],
+      "definition": "carry out or participate in an activity; be involved in"
+    },
+    {
+      "lemma": "essay",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "try.v.01"
+        }
+      ],
+      "definition": "make an effort or attempt"
+    },
+    {
+      "lemma": "establishment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "establishment.n.06"
+        }
+      ],
+      "definition": "(ecology) the process by which a plant or animal becomes established in a new habitat"
+    },
+    {
+      "lemma": "evade",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "evade.v.03"
+        }
+      ],
+      "definition": "practice evasion"
+    },
+    {
+      "lemma": "exert",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "exert.v.03"
+        }
+      ],
+      "definition": "make a great effort at a mental or physical task"
+    },
+    {
+      "lemma": "extinction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "extinction.n.03"
+        }
+      ],
+      "definition": "the reduction of the intensity of radiation as a consequence of absorption and radiation"
+    },
+    {
+      "lemma": "extraction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "extraction.n.01"
+        }
+      ],
+      "definition": "the process of obtaining something from a mixture or compound by chemical or physical or mechanical means"
+    },
+    {
+      "lemma": "fall down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "fall.v.23"
+        }
+      ],
+      "definition": "lose an upright position suddenly"
+    },
+    {
+      "lemma": "fall off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "sink.v.01",
+          "via_synset": "slump.v.03"
+        }
+      ],
+      "definition": "fall heavily or suddenly; decline markedly"
+    },
+    {
+      "lemma": "fall open",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.v.01",
+          "via_synset": "drop_open.v.01"
+        }
+      ],
+      "definition": "open involuntarily"
+    },
+    {
+      "lemma": "feedback",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "feedback.n.01"
+        }
+      ],
+      "definition": "the process in which part of the output of a system is returned to its input in order to regulate its further output"
+    },
+    {
+      "lemma": "festinate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "rush.v.04"
+        }
+      ],
+      "definition": "act or move at high speed"
+    },
+    {
+      "lemma": "fetch up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "finish_up.v.02"
+        }
+      ],
+      "definition": "finally be or do something"
+    },
+    {
+      "lemma": "filtration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "filtration.n.01"
+        }
+      ],
+      "definition": "the process whereby fluids pass through a filter or a filtering medium"
+    },
+    {
+      "lemma": "finish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "finish_up.v.02"
+        }
+      ],
+      "definition": "finally be or do something"
+    },
+    {
+      "lemma": "finish up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "finish_up.v.02"
+        }
+      ],
+      "definition": "finally be or do something"
+    },
+    {
+      "lemma": "flag",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.v.01",
+          "via_synset": "sag.v.01"
+        }
+      ],
+      "definition": "droop, sink, or settle from or as if from pressure or loss of tautness"
+    },
+    {
+      "lemma": "flirt",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "dally.v.01"
+        }
+      ],
+      "definition": "behave carelessly or indifferently"
+    },
+    {
+      "lemma": "flocculation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "flocculation.n.01"
+        }
+      ],
+      "definition": "the process of flocculating; forming woolly cloudlike aggregations"
+    },
+    {
+      "lemma": "flood",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cover.v.02",
+          "via_synset": "flood.v.02"
+        }
+      ],
+      "definition": "cover with liquid, usually water"
+    },
+    {
+      "lemma": "flow",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "flow.n.04"
+        }
+      ],
+      "definition": "any uninterrupted stream or discharge"
+    },
+    {
+      "lemma": "force",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "force.v.08"
+        }
+      ],
+      "definition": "do forcibly; exert force"
+    },
+    {
+      "lemma": "foresee",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "anticipate.v.02"
+        }
+      ],
+      "definition": "act in advance of; deal with ahead of time"
+    },
+    {
+      "lemma": "forestall",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "anticipate.v.02"
+        }
+      ],
+      "definition": "act in advance of; deal with ahead of time"
+    },
+    {
+      "lemma": "formation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "formation.n.06"
+        }
+      ],
+      "definition": "natural process that causes something to form"
+    },
+    {
+      "lemma": "fossilisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "fossilization.n.01"
+        }
+      ],
+      "definition": "the process of fossilizing a plant or animal that existed in some earlier age; the process of being turned to stone"
+    },
+    {
+      "lemma": "fossilization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "fossilization.n.01"
+        }
+      ],
+      "definition": "the process of fossilizing a plant or animal that existed in some earlier age; the process of being turned to stone"
+    },
+    {
+      "lemma": "founder",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sink.v.04",
+          "via_synset": "founder.v.02"
+        }
+      ],
+      "definition": "sink below the surface"
+    },
+    {
+      "lemma": "fount",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plumbing_fixture.n.01",
+          "via_synset": "fountain.n.04"
+        }
+      ],
+      "definition": "a plumbing fixture that provides a flow of water"
+    },
+    {
+      "lemma": "fountain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plumbing_fixture.n.01",
+          "via_synset": "fountain.n.04"
+        }
+      ],
+      "definition": "a plumbing fixture that provides a flow of water"
+    },
+    {
+      "lemma": "geologic process",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "geological_process.n.01"
+        }
+      ],
+      "definition": "(geology) a natural process whereby geological features are modified"
+    },
+    {
+      "lemma": "geological process",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "geological_process.n.01"
+        }
+      ],
+      "definition": "(geology) a natural process whereby geological features are modified"
+    },
+    {
+      "lemma": "get around to",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "get_around_to.v.01"
+        }
+      ],
+      "definition": "do something despite obstacles such as lack of time"
+    },
+    {
+      "lemma": "get by",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "cope.v.01"
+        }
+      ],
+      "definition": "come to terms with"
+    },
+    {
+      "lemma": "get up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "arise.v.03"
+        }
+      ],
+      "definition": "rise to one's feet"
+    },
+    {
+      "lemma": "glaciate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cover.v.02",
+          "via_synset": "glaciate.v.01"
+        }
+      ],
+      "definition": "cover with ice or snow or a glacier"
+    },
+    {
+      "lemma": "go",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "go.v.02"
+        }
+      ],
+      "definition": "follow a procedure or take a course"
+    },
+    {
+      "lemma": "go about",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "set_about.v.01"
+        }
+      ],
+      "definition": "begin to deal with"
+    },
+    {
+      "lemma": "go ahead",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "go_ahead.v.01"
+        }
+      ],
+      "definition": "proceed (with a plan of action)"
+    },
+    {
+      "lemma": "go along",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "continue.v.01"
+        }
+      ],
+      "definition": "continue a certain state, condition, or activity"
+    },
+    {
+      "lemma": "go down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "submerge.v.01",
+          "via_synset": "sink.v.04"
+        }
+      ],
+      "definition": "go under,"
+    },
+    {
+      "lemma": "go off at half-cock",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "go_off_half-cocked.v.01"
+        }
+      ],
+      "definition": "act prematurely or without reflection or too soon"
+    },
+    {
+      "lemma": "go off half-cocked",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "go_off_half-cocked.v.01"
+        }
+      ],
+      "definition": "act prematurely or without reflection or too soon"
+    },
+    {
+      "lemma": "go on",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "continue.v.01"
+        }
+      ],
+      "definition": "continue a certain state, condition, or activity"
+    },
+    {
+      "lemma": "go under",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "submerge.v.01",
+          "via_synset": "sink.v.04"
+        }
+      ],
+      "definition": "go under,"
+    },
+    {
+      "lemma": "grapple",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "cope.v.01"
+        }
+      ],
+      "definition": "come to terms with"
+    },
+    {
+      "lemma": "grass",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cover.v.02",
+          "via_synset": "grass.v.04"
+        }
+      ],
+      "definition": "cover with grass"
+    },
+    {
+      "lemma": "grass over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cover.v.02",
+          "via_synset": "grass.v.04"
+        }
+      ],
+      "definition": "cover with grass"
+    },
+    {
+      "lemma": "guard",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "guard.v.04"
+        }
+      ],
+      "definition": "take precautions in order to avoid some unwanted consequence"
+    },
+    {
+      "lemma": "had best",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "do_well.v.01"
+        }
+      ],
+      "definition": "act in one's own or everybody's best interest"
+    },
+    {
+      "lemma": "hardening",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "hardening.n.02"
+        }
+      ],
+      "definition": "the process of becoming hard or solid by cooling or drying or crystallization"
+    },
+    {
+      "lemma": "hasten",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "rush.v.04"
+        }
+      ],
+      "definition": "act or move at high speed"
+    },
+    {
+      "lemma": "heat sink",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.n.02",
+          "via_synset": "heat_sink.n.01"
+        }
+      ],
+      "definition": "a metal conductor specially designed to conduct (and radiate) heat"
+    },
+    {
+      "lemma": "hold back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "wait.v.02"
+        }
+      ],
+      "definition": "wait before acting"
+    },
+    {
+      "lemma": "hold off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "wait.v.02"
+        }
+      ],
+      "definition": "wait before acting"
+    },
+    {
+      "lemma": "hump",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "hunch.v.01"
+        }
+      ],
+      "definition": "round one's back by bending forward and drawing the shoulders forward"
+    },
+    {
+      "lemma": "hunch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "hunch.v.01"
+        }
+      ],
+      "definition": "round one's back by bending forward and drawing the shoulders forward"
+    },
+    {
+      "lemma": "hunch forward",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "hunch.v.01"
+        }
+      ],
+      "definition": "round one's back by bending forward and drawing the shoulders forward"
+    },
+    {
+      "lemma": "hunch over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "hunch.v.01"
+        }
+      ],
+      "definition": "round one's back by bending forward and drawing the shoulders forward"
+    },
+    {
+      "lemma": "hurry",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "rush.v.04"
+        }
+      ],
+      "definition": "act or move at high speed"
+    },
+    {
+      "lemma": "hydrant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plumbing_fixture.n.01",
+          "via_synset": "water_faucet.n.01"
+        }
+      ],
+      "definition": "a faucet for drawing water from a pipe or cask"
+    },
+    {
+      "lemma": "inactivation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "inactivation.n.01"
+        }
+      ],
+      "definition": "the process of rendering inactive"
+    },
+    {
+      "lemma": "interact",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "interact.v.01"
+        }
+      ],
+      "definition": "act together or towards others or with others"
+    },
+    {
+      "lemma": "interrupt",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "interrupt.v.02"
+        }
+      ],
+      "definition": "destroy the peace or tranquility of"
+    },
+    {
+      "lemma": "ion exchange",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "ion_exchange.n.01"
+        }
+      ],
+      "definition": "a process in which ions are exchanged between a solution and an insoluble (usually resinous) solid; widely used in industrial processing"
+    },
+    {
+      "lemma": "ionisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "ionization.n.02"
+        }
+      ],
+      "definition": "the process of ionizing; the formation of ions by separating atoms or molecules or radicals or by adding or subtracting electrons from atoms by strong electric fields in a gas"
+    },
+    {
+      "lemma": "ionization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "ionization.n.02"
+        }
+      ],
+      "definition": "the process of ionizing; the formation of ions by separating atoms or molecules or radicals or by adding or subtracting electrons from atoms by strong electric fields in a gas"
+    },
+    {
+      "lemma": "ionophoresis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "electrophoresis.n.01"
+        }
+      ],
+      "definition": "the motion of charged particles in a colloid under the influence of an electric field; particles with a positive charge go to the cathode and negative to the anode"
+    },
+    {
+      "lemma": "jackknife",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "jackknife.v.01",
+          "via_synset": "jackknife.n.02"
+        }
+      ],
+      "definition": "a dive in which the diver bends to touch the ankles before straightening out"
+    },
+    {
+      "lemma": "jackknife",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "dive.v.02",
+          "via_synset": "jackknife.v.01"
+        }
+      ],
+      "definition": "dive into the water bending the body at the waist at a right angle, like a jackknife"
+    },
+    {
+      "lemma": "keep",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "continue.v.01"
+        }
+      ],
+      "definition": "continue a certain state, condition, or activity"
+    },
+    {
+      "lemma": "kitchen sink",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.n.01",
+          "via_synset": "kitchen_sink.n.01"
+        }
+      ],
+      "definition": "a sink in a kitchen"
+    },
+    {
+      "lemma": "land up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "finish_up.v.02"
+        }
+      ],
+      "definition": "finally be or do something"
+    },
+    {
+      "lemma": "lavatory",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.n.01",
+          "via_synset": "washbasin.n.01"
+        }
+      ],
+      "definition": "a bathroom sink that is permanently installed and connected to a water supply and drainpipe; where you can wash your hands and face"
+    },
+    {
+      "lemma": "leach",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "leach.n.01"
+        }
+      ],
+      "definition": "the process of leaching"
+    },
+    {
+      "lemma": "leaching",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "leach.n.01"
+        }
+      ],
+      "definition": "the process of leaching"
+    },
+    {
+      "lemma": "lie",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "lie_down.v.01"
+        }
+      ],
+      "definition": "assume a reclining position"
+    },
+    {
+      "lemma": "lie down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "lie_down.v.01"
+        }
+      ],
+      "definition": "assume a reclining position"
+    },
+    {
+      "lemma": "look sharp",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "rush.v.04"
+        }
+      ],
+      "definition": "act or move at high speed"
+    },
+    {
+      "lemma": "lord it over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "lord_it_over.v.01"
+        }
+      ],
+      "definition": "act like the master of"
+    },
+    {
+      "lemma": "lower oneself",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "condescend.v.03"
+        }
+      ],
+      "definition": "debase oneself morally, act in an undignified, unworthy, or dishonorable way"
+    },
+    {
+      "lemma": "magnetic induction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "magnetization.n.02"
+        }
+      ],
+      "definition": "the process that makes a substance magnetic (temporarily or permanently)"
+    },
+    {
+      "lemma": "magnetisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "magnetization.n.02"
+        }
+      ],
+      "definition": "the process that makes a substance magnetic (temporarily or permanently)"
+    },
+    {
+      "lemma": "magnetization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "magnetization.n.02"
+        }
+      ],
+      "definition": "the process that makes a substance magnetic (temporarily or permanently)"
+    },
+    {
+      "lemma": "make a point",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "make_a_point.v.01"
+        }
+      ],
+      "definition": "make a point of doing something; act purposefully and intentionally"
+    },
+    {
+      "lemma": "make bold",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "make_bold.v.01"
+        }
+      ],
+      "definition": "take upon oneself; act presumptuously, without permission"
+    },
+    {
+      "lemma": "make do",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "cope.v.01"
+        }
+      ],
+      "definition": "come to terms with"
+    },
+    {
+      "lemma": "make out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "cope.v.01"
+        }
+      ],
+      "definition": "come to terms with"
+    },
+    {
+      "lemma": "make sure",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "make_a_point.v.01"
+        }
+      ],
+      "definition": "make a point of doing something; act purposefully and intentionally"
+    },
+    {
+      "lemma": "manage",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "cope.v.01"
+        }
+      ],
+      "definition": "come to terms with"
+    },
+    {
+      "lemma": "maneuver",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "maneuver.v.02"
+        }
+      ],
+      "definition": "act in order to achieve a certain goal"
+    },
+    {
+      "lemma": "manoeuver",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "maneuver.v.02"
+        }
+      ],
+      "definition": "act in order to achieve a certain goal"
+    },
+    {
+      "lemma": "manoeuvre",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "maneuver.v.02"
+        }
+      ],
+      "definition": "act in order to achieve a certain goal"
+    },
+    {
+      "lemma": "mantle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cover.v.02",
+          "via_synset": "mantle.v.02"
+        }
+      ],
+      "definition": "cover like a mantle"
+    },
+    {
+      "lemma": "materialisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "materialization.n.01"
+        }
+      ],
+      "definition": "the process of coming into being; becoming reality"
+    },
+    {
+      "lemma": "materialization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "materialization.n.01"
+        }
+      ],
+      "definition": "the process of coming into being; becoming reality"
+    },
+    {
+      "lemma": "misbehave",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "misbehave.v.01"
+        }
+      ],
+      "definition": "behave badly"
+    },
+    {
+      "lemma": "misconduct",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "misbehave.v.01"
+        }
+      ],
+      "definition": "behave badly"
+    },
+    {
+      "lemma": "misdemean",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "misbehave.v.01"
+        }
+      ],
+      "definition": "behave badly"
+    },
+    {
+      "lemma": "mist",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cover.v.02",
+          "via_synset": "mist.v.01"
+        }
+      ],
+      "definition": "become covered with mist"
+    },
+    {
+      "lemma": "mist over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cover.v.02",
+          "via_synset": "mist.v.01"
+        }
+      ],
+      "definition": "become covered with mist"
+    },
+    {
+      "lemma": "move",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "condescend.v.02",
+          "via_synset": "act.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "go.v.02"
+        }
+      ],
+      "definition": "perform an action, or work out or perform (an action)"
+    },
+    {
+      "lemma": "natural action",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sink.n.02",
+          "via_synset": "natural_process.n.01"
+        }
+      ],
+      "definition": "a process existing in or produced by nature (rather than by the intent of human beings)"
+    },
+    {
+      "lemma": "natural process",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sink.n.02",
+          "via_synset": "natural_process.n.01"
+        }
+      ],
+      "definition": "a process existing in or produced by nature (rather than by the intent of human beings)"
+    },
+    {
+      "lemma": "natural selection",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "survival.n.02"
+        }
+      ],
+      "definition": "a natural process resulting in the evolution of organisms best adapted to the environment"
+    },
+    {
+      "lemma": "nuclear reaction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "nuclear_reaction.n.01"
+        }
+      ],
+      "definition": "(physics) a process that alters the energy or structure or composition of atomic nuclei"
+    },
+    {
+      "lemma": "offer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "volunteer.v.02"
+        }
+      ],
+      "definition": "agree freely"
+    },
+    {
+      "lemma": "opacification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "opacification.n.01"
+        }
+      ],
+      "definition": "the process of becoming cloudy or opaque"
+    },
+    {
+      "lemma": "oppose",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "react.v.02"
+        }
+      ],
+      "definition": "act against or in opposition to"
+    },
+    {
+      "lemma": "oscillation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "oscillation.n.01"
+        }
+      ],
+      "definition": "the process of oscillating between states"
+    },
+    {
+      "lemma": "overwhelm",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "submerge.v.02",
+          "via_synset": "submerge.v.02"
+        }
+      ],
+      "definition": "cover completely or make imperceptible"
+    },
+    {
+      "lemma": "oxygenation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "oxygenation.n.01"
+        }
+      ],
+      "definition": "the process of providing or combining or treating with oxygen"
+    },
+    {
+      "lemma": "pair creation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "pair_production.n.01"
+        }
+      ],
+      "definition": "the transformation of a gamma-ray photon into an electron and a positron when the photon passes close to an atomic nucleus"
+    },
+    {
+      "lemma": "pair formation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "pair_production.n.01"
+        }
+      ],
+      "definition": "the transformation of a gamma-ray photon into an electron and a positron when the photon passes close to an atomic nucleus"
+    },
+    {
+      "lemma": "pair production",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "pair_production.n.01"
+        }
+      ],
+      "definition": "the transformation of a gamma-ray photon into an electron and a positron when the photon passes close to an atomic nucleus"
+    },
+    {
+      "lemma": "participate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "participate.v.01"
+        }
+      ],
+      "definition": "share in something"
+    },
+    {
+      "lemma": "partner",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "partner.v.02"
+        }
+      ],
+      "definition": "act as a partner"
+    },
+    {
+      "lemma": "pay back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "reward.v.03"
+        }
+      ],
+      "definition": "act or give recompense in recognition of someone's behavior or actions"
+    },
+    {
+      "lemma": "perform",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "perform.v.02"
+        }
+      ],
+      "definition": "perform a function"
+    },
+    {
+      "lemma": "perpetrate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "perpetrate.v.01"
+        }
+      ],
+      "definition": "perform an act, usually with a negative connotation"
+    },
+    {
+      "lemma": "persist in",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "continue.v.06"
+        }
+      ],
+      "definition": "do something repeatedly and showing no intention to stop"
+    },
+    {
+      "lemma": "phase change",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "phase_change.n.01"
+        }
+      ],
+      "definition": "a change from one state (solid or liquid or gas) to another without a change in chemical composition"
+    },
+    {
+      "lemma": "phase transition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "phase_change.n.01"
+        }
+      ],
+      "definition": "a change from one state (solid or liquid or gas) to another without a change in chemical composition"
+    },
+    {
+      "lemma": "physical change",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "phase_change.n.01"
+        }
+      ],
+      "definition": "a change from one state (solid or liquid or gas) to another without a change in chemical composition"
+    },
+    {
+      "lemma": "play",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "dally.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "play.v.17"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "play.v.02"
+        }
+      ],
+      "definition": "behave carelessly or indifferently"
+    },
+    {
+      "lemma": "play it by ear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "play_it_by_ear.v.01"
+        }
+      ],
+      "definition": "decide on one's actions as one goes along, depending on the situation"
+    },
+    {
+      "lemma": "plow ahead",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "go_ahead.v.01"
+        }
+      ],
+      "definition": "proceed (with a plan of action)"
+    },
+    {
+      "lemma": "plumbing fixture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sink.n.01",
+          "via_synset": "plumbing_fixture.n.01"
+        }
+      ],
+      "definition": "a fixture for the distribution and use of water in a building"
+    },
+    {
+      "lemma": "pot",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plumbing_fixture.n.01",
+          "via_synset": "toilet.n.02"
+        }
+      ],
+      "definition": "a plumbing fixture for defecation and urination"
+    },
+    {
+      "lemma": "potty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plumbing_fixture.n.01",
+          "via_synset": "toilet.n.02"
+        }
+      ],
+      "definition": "a plumbing fixture for defecation and urination"
+    },
+    {
+      "lemma": "precession of the equinoxes",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "precession_of_the_equinoxes.n.01"
+        }
+      ],
+      "definition": "a slow westward shift of the equinoxes along the plane of the ecliptic caused by precession of the Earth's axis of rotation"
+    },
+    {
+      "lemma": "presume",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "make_bold.v.01"
+        }
+      ],
+      "definition": "take upon oneself; act presumptuously, without permission"
+    },
+    {
+      "lemma": "proceed",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "continue.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "go.v.02"
+        }
+      ],
+      "definition": "continue a certain state, condition, or activity"
+    },
+    {
+      "lemma": "prosecute",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "prosecute.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "prosecute.v.03"
+        }
+      ],
+      "definition": "conduct a prosecution in a court of law"
+    },
+    {
+      "lemma": "pull",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "perpetrate.v.01"
+        }
+      ],
+      "definition": "perform an act, usually with a negative connotation"
+    },
+    {
+      "lemma": "pursue",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "prosecute.v.03"
+        }
+      ],
+      "definition": "carry out or participate in an activity; be involved in"
+    },
+    {
+      "lemma": "put on airs",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "lord_it_over.v.01"
+        }
+      ],
+      "definition": "act like the master of"
+    },
+    {
+      "lemma": "queen it over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "lord_it_over.v.01"
+        }
+      ],
+      "definition": "act like the master of"
+    },
+    {
+      "lemma": "race",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "race.v.03"
+        }
+      ],
+      "definition": "to work as fast as possible towards a goal, sometimes in competition with others"
+    },
+    {
+      "lemma": "radiation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "radiation.n.05"
+        }
+      ],
+      "definition": "the spread of a group of organisms into new habitats"
+    },
+    {
+      "lemma": "rampage",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "rampage.v.01"
+        }
+      ],
+      "definition": "act violently, recklessly, or destructively"
+    },
+    {
+      "lemma": "react",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "react.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "react.v.01"
+        }
+      ],
+      "definition": "act against or in opposition to"
+    },
+    {
+      "lemma": "reciprocate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "reciprocate.v.01"
+        }
+      ],
+      "definition": "act, feel, or give mutually or in return"
+    },
+    {
+      "lemma": "release",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "release.n.03"
+        }
+      ],
+      "definition": "a process that liberates or discharges something"
+    },
+    {
+      "lemma": "repay",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "reward.v.03"
+        }
+      ],
+      "definition": "act or give recompense in recognition of someone's behavior or actions"
+    },
+    {
+      "lemma": "repeat",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "repeat.v.05"
+        }
+      ],
+      "definition": "do over"
+    },
+    {
+      "lemma": "respond",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "react.v.01"
+        }
+      ],
+      "definition": "show a response or a reaction to something"
+    },
+    {
+      "lemma": "reward",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "reward.v.03"
+        }
+      ],
+      "definition": "act or give recompense in recognition of someone's behavior or actions"
+    },
+    {
+      "lemma": "right",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "right.v.03"
+        }
+      ],
+      "definition": "regain an upright or proper position"
+    },
+    {
+      "lemma": "rigidification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "stiffening.n.02"
+        }
+      ],
+      "definition": "the process of becoming stiff or rigid"
+    },
+    {
+      "lemma": "rigidifying",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "stiffening.n.02"
+        }
+      ],
+      "definition": "the process of becoming stiff or rigid"
+    },
+    {
+      "lemma": "robe",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cover.v.02",
+          "via_synset": "clothe.v.03"
+        }
+      ],
+      "definition": "cover as if with clothing"
+    },
+    {
+      "lemma": "romance",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "woo.v.02"
+        }
+      ],
+      "definition": "make amorous advances towards"
+    },
+    {
+      "lemma": "rush",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "rush.v.04"
+        }
+      ],
+      "definition": "act or move at high speed"
+    },
+    {
+      "lemma": "sag",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sag.v.02",
+          "via_synset": "sag.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sag.v.01",
+          "via_synset": "sag.n.01"
+        }
+      ],
+      "definition": "a shape that sags"
+    },
+    {
+      "lemma": "sag",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.v.01",
+          "via_synset": "sag.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.v.01",
+          "via_synset": "sag.v.02"
+        }
+      ],
+      "definition": "droop, sink, or settle from or as if from pressure or loss of tautness"
+    },
+    {
+      "lemma": "sag down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.v.01",
+          "via_synset": "sag.v.02"
+        }
+      ],
+      "definition": "cause to sag"
+    },
+    {
+      "lemma": "saltation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "saltation.n.01"
+        }
+      ],
+      "definition": "(geology) the leaping movement of sand or soil particles as they are transported in a fluid medium over an uneven surface"
+    },
+    {
+      "lemma": "satisfice",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "satisfice.v.01"
+        }
+      ],
+      "definition": "decide on and pursue a course of action satisfying the minimum requirements to achieve a goal"
+    },
+    {
+      "lemma": "satisfise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "satisfice.v.01"
+        }
+      ],
+      "definition": "decide on and pursue a course of action satisfying the minimum requirements to achieve a goal"
+    },
+    {
+      "lemma": "scattering",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "scattering.n.02"
+        }
+      ],
+      "definition": "the physical process in which particles are deflected haphazardly as a result of collisions"
+    },
+    {
+      "lemma": "seek",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "try.v.01"
+        }
+      ],
+      "definition": "make an effort or attempt"
+    },
+    {
+      "lemma": "selection",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "survival.n.02"
+        }
+      ],
+      "definition": "a natural process resulting in the evolution of organisms best adapted to the environment"
+    },
+    {
+      "lemma": "sericulture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "sericulture.n.01"
+        }
+      ],
+      "definition": "raising silkworms in order to obtain raw silk"
+    },
+    {
+      "lemma": "set",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "hardening.n.02"
+        }
+      ],
+      "definition": "the process of becoming hard or solid by cooling or drying or crystallization"
+    },
+    {
+      "lemma": "set about",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "set_about.v.01"
+        }
+      ],
+      "definition": "begin to deal with"
+    },
+    {
+      "lemma": "settle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "submerge.v.01",
+          "via_synset": "sink.v.04"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sink.v.04",
+          "via_synset": "subside.v.03"
+        }
+      ],
+      "definition": "go under,"
+    },
+    {
+      "lemma": "shower",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plumbing_fixture.n.01",
+          "via_synset": "shower.n.01"
+        }
+      ],
+      "definition": "a plumbing fixture that sprays water over you"
+    },
+    {
+      "lemma": "shroud",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cover.v.02",
+          "via_synset": "shroud.v.02"
+        }
+      ],
+      "definition": "form a cover like a shroud"
+    },
+    {
+      "lemma": "sink",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sink.n.01",
+          "via_synset": "sink.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sink.n.02",
+          "via_synset": "sink.n.02"
+        }
+      ],
+      "definition": "plumbing fixture consisting of a water basin fixed to a wall or floor and having a drainpipe"
+    },
+    {
+      "lemma": "sink",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sink.v.01",
+          "via_synset": "sink.v.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "submerge.v.01",
+          "via_synset": "sink.v.04"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "sink.v.01",
+          "via_synset": "slump.v.03"
+        }
+      ],
+      "definition": "fall or descend to a lower place or level"
+    },
+    {
+      "lemma": "sit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "sit_down.v.01"
+        }
+      ],
+      "definition": "take a seat"
+    },
+    {
+      "lemma": "sit down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "sit_down.v.01"
+        }
+      ],
+      "definition": "take a seat"
+    },
+    {
+      "lemma": "sit up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "sit_up.v.02"
+        }
+      ],
+      "definition": "change to an upright sitting position"
+    },
+    {
+      "lemma": "slouch",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "slump.v.01",
+          "via_synset": "slouch.n.02"
+        }
+      ],
+      "definition": "a stooping carriage in standing and walking"
+    },
+    {
+      "lemma": "slouch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sag.v.01",
+          "via_synset": "slump.v.01"
+        }
+      ],
+      "definition": "assume a drooping posture or carriage"
+    },
+    {
+      "lemma": "sloucher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "slump.v.01",
+          "via_synset": "sloucher.n.01"
+        }
+      ],
+      "definition": "a person who slouches; someone with a drooping carriage"
+    },
+    {
+      "lemma": "slump",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sag.v.01",
+          "via_synset": "slump.v.01"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "sink.v.01",
+          "via_synset": "slump.v.03"
+        }
+      ],
+      "definition": "assume a drooping posture or carriage"
+    },
+    {
+      "lemma": "smother",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cover.v.02",
+          "via_synset": "smother.v.04"
+        }
+      ],
+      "definition": "form an impenetrable cover over"
+    },
+    {
+      "lemma": "sneak",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "sneak.v.02"
+        }
+      ],
+      "definition": "put, bring, or take in a secretive or furtive manner"
+    },
+    {
+      "lemma": "soak",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "soak.n.01"
+        }
+      ],
+      "definition": "the process of becoming softened and saturated as a consequence of being immersed in water (or other liquid)"
+    },
+    {
+      "lemma": "soakage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "soak.n.01"
+        }
+      ],
+      "definition": "the process of becoming softened and saturated as a consequence of being immersed in water (or other liquid)"
+    },
+    {
+      "lemma": "soaking",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "soak.n.01"
+        }
+      ],
+      "definition": "the process of becoming softened and saturated as a consequence of being immersed in water (or other liquid)"
+    },
+    {
+      "lemma": "softening",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "softening.n.01"
+        }
+      ],
+      "definition": "the process of becoming softer"
+    },
+    {
+      "lemma": "solicit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "woo.v.02"
+        }
+      ],
+      "definition": "make amorous advances towards"
+    },
+    {
+      "lemma": "solidification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "hardening.n.02"
+        }
+      ],
+      "definition": "the process of becoming hard or solid by cooling or drying or crystallization"
+    },
+    {
+      "lemma": "solidifying",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "hardening.n.02"
+        }
+      ],
+      "definition": "the process of becoming hard or solid by cooling or drying or crystallization"
+    },
+    {
+      "lemma": "sorption",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "sorption.n.01"
+        }
+      ],
+      "definition": "the process in which one substance takes up or holds another (by either absorption or adsorption)"
+    },
+    {
+      "lemma": "source",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "sink.n.02",
+          "via_synset": "source.n.07"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "source.n.07"
+        }
+      ],
+      "definition": "(technology) a process by which energy or a substance enters a system"
+    },
+    {
+      "lemma": "spread over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "submerge.v.02",
+          "via_synset": "cover.v.02"
+        }
+      ],
+      "definition": "form a cover over"
+    },
+    {
+      "lemma": "stampede",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "stampede.v.03"
+        }
+      ],
+      "definition": "act, usually en masse, hurriedly or on an impulse"
+    },
+    {
+      "lemma": "stand up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "arise.v.03"
+        }
+      ],
+      "definition": "rise to one's feet"
+    },
+    {
+      "lemma": "start",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "begin.v.08"
+        }
+      ],
+      "definition": "begin an event that is implied and limited by the nature or inherent function of the direct object"
+    },
+    {
+      "lemma": "state change",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "phase_change.n.01"
+        }
+      ],
+      "definition": "a change from one state (solid or liquid or gas) to another without a change in chemical composition"
+    },
+    {
+      "lemma": "step forward",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "come_to_the_fore.v.01"
+        }
+      ],
+      "definition": "make oneself visible; take action"
+    },
+    {
+      "lemma": "step to the fore",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "come_to_the_fore.v.01"
+        }
+      ],
+      "definition": "make oneself visible; take action"
+    },
+    {
+      "lemma": "step up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "come_to_the_fore.v.01"
+        }
+      ],
+      "definition": "make oneself visible; take action"
+    },
+    {
+      "lemma": "stiffening",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "stiffening.n.02"
+        }
+      ],
+      "definition": "the process of becoming stiff or rigid"
+    },
+    {
+      "lemma": "stimulation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "stimulation.n.03"
+        }
+      ],
+      "definition": "(physiology) the effect of a stimulus (on nerves or organs etc.)"
+    },
+    {
+      "lemma": "stool",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plumbing_fixture.n.01",
+          "via_synset": "toilet.n.02"
+        }
+      ],
+      "definition": "a plumbing fixture for defecation and urination"
+    },
+    {
+      "lemma": "stoop",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "condescend.v.03"
+        }
+      ],
+      "definition": "debase oneself morally, act in an undignified, unworthy, or dishonorable way"
+    },
+    {
+      "lemma": "straighten",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "straighten.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "straighten.v.03"
+        }
+      ],
+      "definition": "straighten up or out; make straight"
+    },
+    {
+      "lemma": "strew",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cover.v.02",
+          "via_synset": "strew.v.02"
+        }
+      ],
+      "definition": "cover; be dispersed over"
+    },
+    {
+      "lemma": "submerge",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "submerge.v.01",
+          "via_synset": "submerge.v.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "submerge.v.02",
+          "via_synset": "submerge.v.02"
+        }
+      ],
+      "definition": "sink below the surface; go under or as if under water"
+    },
+    {
+      "lemma": "submergence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "submerge.v.01",
+          "via_synset": "submergence.n.01"
+        }
+      ],
+      "definition": "sinking until covered completely with water"
+    },
+    {
+      "lemma": "submergible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "submerge.v.01",
+          "via_synset": "submersible.a.01"
+        }
+      ],
+      "definition": "capable of being immersed in water or functioning while submerged"
+    },
+    {
+      "lemma": "submerging",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "submerge.v.01",
+          "via_synset": "submergence.n.01"
+        }
+      ],
+      "definition": "sinking until covered completely with water"
+    },
+    {
+      "lemma": "submerse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "submerge.v.01",
+          "via_synset": "submerge.v.01"
+        }
+      ],
+      "definition": "sink below the surface; go under or as if under water"
+    },
+    {
+      "lemma": "submersible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "submerge.v.01",
+          "via_synset": "submersible.a.01"
+        }
+      ],
+      "definition": "capable of being immersed in water or functioning while submerged"
+    },
+    {
+      "lemma": "submersion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "submerge.v.01",
+          "via_synset": "submergence.n.01"
+        }
+      ],
+      "definition": "sinking until covered completely with water"
+    },
+    {
+      "lemma": "subside",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sink.v.04",
+          "via_synset": "subside.v.03"
+        }
+      ],
+      "definition": "sink down or precipitate"
+    },
+    {
+      "lemma": "succession",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "succession.n.04"
+        }
+      ],
+      "definition": "(ecology) the gradual and orderly process of change in an ecosystem brought about by the progressive replacement of one community by another until a stable climax is established"
+    },
+    {
+      "lemma": "surprise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "surprise.v.02"
+        }
+      ],
+      "definition": "come upon or take unawares"
+    },
+    {
+      "lemma": "survival",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "survival.n.02"
+        }
+      ],
+      "definition": "a natural process resulting in the evolution of organisms best adapted to the environment"
+    },
+    {
+      "lemma": "survival of the fittest",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "survival.n.02"
+        }
+      ],
+      "definition": "a natural process resulting in the evolution of organisms best adapted to the environment"
+    },
+    {
+      "lemma": "swag",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.v.01",
+          "via_synset": "sag.v.01"
+        }
+      ],
+      "definition": "droop, sink, or settle from or as if from pressure or loss of tautness"
+    },
+    {
+      "lemma": "synergism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "synergy.n.01"
+        }
+      ],
+      "definition": "the working together of two things (muscles or drugs for example) to produce an effect greater than the sum of their individual effects"
+    },
+    {
+      "lemma": "synergy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "synergy.n.01"
+        }
+      ],
+      "definition": "the working together of two things (muscles or drugs for example) to produce an effect greater than the sum of their individual effects"
+    },
+    {
+      "lemma": "take",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "take.v.01"
+        }
+      ],
+      "definition": "carry out"
+    },
+    {
+      "lemma": "take care",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "take_care.v.01"
+        }
+      ],
+      "definition": "be careful, prudent, or watchful"
+    },
+    {
+      "lemma": "take over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "repeat.v.05"
+        }
+      ],
+      "definition": "do over"
+    },
+    {
+      "lemma": "take part",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "participate.v.01"
+        }
+      ],
+      "definition": "share in something"
+    },
+    {
+      "lemma": "take time by the forelock",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "take_time_by_the_forelock.v.01"
+        }
+      ],
+      "definition": "act quickly and decisively; not let slip an opportunity"
+    },
+    {
+      "lemma": "take turns",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "alternate.v.05"
+        }
+      ],
+      "definition": "do something in turns"
+    },
+    {
+      "lemma": "tap",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plumbing_fixture.n.01",
+          "via_synset": "water_faucet.n.01"
+        }
+      ],
+      "definition": "a faucet for drawing water from a pipe or cask"
+    },
+    {
+      "lemma": "temperature change",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "temperature_change.n.01"
+        }
+      ],
+      "definition": "a process whereby the degree of hotness of a body (or medium) changes"
+    },
+    {
+      "lemma": "throne",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plumbing_fixture.n.01",
+          "via_synset": "toilet.n.02"
+        }
+      ],
+      "definition": "a plumbing fixture for defecation and urination"
+    },
+    {
+      "lemma": "toilet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plumbing_fixture.n.01",
+          "via_synset": "toilet.n.02"
+        }
+      ],
+      "definition": "a plumbing fixture for defecation and urination"
+    },
+    {
+      "lemma": "toy",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "dally.v.01"
+        }
+      ],
+      "definition": "behave carelessly or indifferently"
+    },
+    {
+      "lemma": "transduction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "transduction.n.02"
+        }
+      ],
+      "definition": "the process whereby a transducer accepts energy in one form and gives back related energy in a different form"
+    },
+    {
+      "lemma": "transpiration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "transpiration.n.01"
+        }
+      ],
+      "definition": "the passage of gases through fine tubes because of differences in pressure or temperature"
+    },
+    {
+      "lemma": "try",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "try.v.01"
+        }
+      ],
+      "definition": "make an effort or attempt"
+    },
+    {
+      "lemma": "unbend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "straighten.v.01"
+        }
+      ],
+      "definition": "straighten up or out; make straight"
+    },
+    {
+      "lemma": "uncurl",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "uncurl.v.01"
+        }
+      ],
+      "definition": "move out of a curled position"
+    },
+    {
+      "lemma": "uprise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "arise.v.03"
+        }
+      ],
+      "definition": "rise to one's feet"
+    },
+    {
+      "lemma": "urinal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plumbing_fixture.n.01",
+          "via_synset": "urinal.n.01"
+        }
+      ],
+      "definition": "a plumbing fixture (usually attached to the wall) used by men to urinate"
+    },
+    {
+      "lemma": "use",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "use.v.06"
+        }
+      ],
+      "definition": "habitually do something (use only in the past tense)"
+    },
+    {
+      "lemma": "vitrification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_process.n.01",
+          "via_synset": "vitrification.n.02"
+        }
+      ],
+      "definition": "the process of becoming vitreous"
+    },
+    {
+      "lemma": "volunteer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "volunteer.v.02"
+        }
+      ],
+      "definition": "agree freely"
+    },
+    {
+      "lemma": "wait",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "wait.v.02"
+        }
+      ],
+      "definition": "wait before acting"
+    },
+    {
+      "lemma": "washbasin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.n.01",
+          "via_synset": "washbasin.n.01"
+        }
+      ],
+      "definition": "a bathroom sink that is permanently installed and connected to a water supply and drainpipe; where you can wash your hands and face"
+    },
+    {
+      "lemma": "washbowl",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.n.01",
+          "via_synset": "washbasin.n.01"
+        }
+      ],
+      "definition": "a bathroom sink that is permanently installed and connected to a water supply and drainpipe; where you can wash your hands and face"
+    },
+    {
+      "lemma": "washstand",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.n.01",
+          "via_synset": "washbasin.n.01"
+        }
+      ],
+      "definition": "a bathroom sink that is permanently installed and connected to a water supply and drainpipe; where you can wash your hands and face"
+    },
+    {
+      "lemma": "water faucet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plumbing_fixture.n.01",
+          "via_synset": "water_faucet.n.01"
+        }
+      ],
+      "definition": "a faucet for drawing water from a pipe or cask"
+    },
+    {
+      "lemma": "water tap",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "plumbing_fixture.n.01",
+          "via_synset": "water_faucet.n.01"
+        }
+      ],
+      "definition": "a faucet for drawing water from a pipe or cask"
+    },
+    {
+      "lemma": "wind up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "finish_up.v.02"
+        }
+      ],
+      "definition": "finally be or do something"
+    },
+    {
+      "lemma": "woo",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "woo.v.02"
+        }
+      ],
+      "definition": "make amorous advances towards"
+    }
+  ]
+}

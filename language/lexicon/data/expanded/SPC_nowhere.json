@@ -1,0 +1,494 @@
+{
+  "atom_id": "SPC.nowhere",
+  "category": "SPC",
+  "seed_count": 6,
+  "total_keys": 28,
+  "pos_counts": {
+    "adv": 1,
+    "n": 13,
+    "adj": 11,
+    "v": 3
+  },
+  "source_counts": {
+    "0_seed": 10,
+    "2_hypernym_d1": 1,
+    "3_hyponym_d1": 1,
+    "6_derivational": 4,
+    "7_similar_to": 6,
+    "10_sibling": 8
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 9,
+      "words": [
+        "nowhere(adv)",
+        "nowhere(n)",
+        "absent(adj)",
+        "absentminded(adj)",
+        "abstracted(adj)",
+        "scatty(adj)",
+        "missing(adj)",
+        "miss(v)",
+        "lose(v)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 1,
+      "words": [
+        "obscurity(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 1,
+      "words": [
+        "overlook(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 3,
+      "words": [
+        "absentmindedness(n)",
+        "abstractedness(n)",
+        "absence(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 6,
+      "words": [
+        "inattentive(adj)",
+        "truant(adj)",
+        "awol(adj)",
+        "away(adj)",
+        "introuvable(adj)",
+        "lost(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 8,
+      "words": [
+        "anonymity(n)",
+        "namelessness(n)",
+        "humbleness(n)",
+        "unimportance(n)",
+        "obscureness(n)",
+        "lowliness(n)",
+        "oblivion(n)",
+        "limbo(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "absence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "absent.a.01",
+          "via_synset": "absence.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "absent.a.01",
+          "via_synset": "absence.n.02"
+        }
+      ],
+      "definition": "the state of being absent"
+    },
+    {
+      "lemma": "absent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "absent.a.01",
+          "via_synset": "absent.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "absent.s.02",
+          "via_synset": "absent.s.02"
+        }
+      ],
+      "definition": "not being in a specified place"
+    },
+    {
+      "lemma": "absentminded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "absent.s.02",
+          "via_synset": "absent.s.02"
+        }
+      ],
+      "definition": "lost in thought; showing preoccupation"
+    },
+    {
+      "lemma": "absentmindedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "absent.s.02",
+          "via_synset": "absentmindedness.n.01"
+        }
+      ],
+      "definition": "preoccupation so great that the ordinary demands on attention are ignored"
+    },
+    {
+      "lemma": "abstracted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "absent.s.02",
+          "via_synset": "absent.s.02"
+        }
+      ],
+      "definition": "lost in thought; showing preoccupation"
+    },
+    {
+      "lemma": "abstractedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "absent.s.02",
+          "via_synset": "abstractedness.n.01"
+        }
+      ],
+      "definition": "preoccupation with something to the exclusion of all else"
+    },
+    {
+      "lemma": "anonymity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "obscurity.n.02",
+          "via_synset": "anonymity.n.01"
+        }
+      ],
+      "definition": "the state of being anonymous"
+    },
+    {
+      "lemma": "away",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "absent.a.01",
+          "via_synset": "away.s.01"
+        }
+      ],
+      "definition": "not present; having left"
+    },
+    {
+      "lemma": "awol",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "absent.a.01",
+          "via_synset": "truant.s.01"
+        }
+      ],
+      "definition": "absent without permission"
+    },
+    {
+      "lemma": "humbleness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "obscurity.n.02",
+          "via_synset": "humbleness.n.01"
+        }
+      ],
+      "definition": "the state of being humble and unimportant"
+    },
+    {
+      "lemma": "inattentive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "absent.s.02",
+          "via_synset": "inattentive.a.01"
+        }
+      ],
+      "definition": "showing a lack of attention or care"
+    },
+    {
+      "lemma": "introuvable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "absent.a.01",
+          "via_synset": "introuvable.s.01"
+        }
+      ],
+      "definition": "impossible to find"
+    },
+    {
+      "lemma": "limbo",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "obscurity.n.02",
+          "via_synset": "oblivion.n.01"
+        }
+      ],
+      "definition": "the state of being disregarded or forgotten"
+    },
+    {
+      "lemma": "lose",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "miss.v.01",
+          "via_synset": "miss.v.01"
+        }
+      ],
+      "definition": "fail to perceive or to catch with the senses or the mind"
+    },
+    {
+      "lemma": "lost",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "missing.s.01",
+          "via_synset": "lost.a.01"
+        }
+      ],
+      "definition": "no longer in your possession or control; unable to be found or recovered"
+    },
+    {
+      "lemma": "lowliness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "obscurity.n.02",
+          "via_synset": "humbleness.n.01"
+        }
+      ],
+      "definition": "the state of being humble and unimportant"
+    },
+    {
+      "lemma": "miss",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "miss.v.01",
+          "via_synset": "miss.v.01"
+        }
+      ],
+      "definition": "fail to perceive or to catch with the senses or the mind"
+    },
+    {
+      "lemma": "missing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "missing.s.01",
+          "via_synset": "missing.s.01"
+        }
+      ],
+      "definition": "not able to be found"
+    },
+    {
+      "lemma": "namelessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "obscurity.n.02",
+          "via_synset": "anonymity.n.01"
+        }
+      ],
+      "definition": "the state of being anonymous"
+    },
+    {
+      "lemma": "nowhere",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "nowhere.r.01",
+          "via_synset": "nowhere.r.01"
+        }
+      ],
+      "definition": "not anywhere; in or at or to no place"
+    },
+    {
+      "lemma": "nowhere",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "nowhere.n.01",
+          "via_synset": "nowhere.n.01"
+        }
+      ],
+      "definition": "an insignificant place"
+    },
+    {
+      "lemma": "oblivion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "obscurity.n.02",
+          "via_synset": "oblivion.n.01"
+        }
+      ],
+      "definition": "the state of being disregarded or forgotten"
+    },
+    {
+      "lemma": "obscureness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "obscurity.n.02",
+          "via_synset": "humbleness.n.01"
+        }
+      ],
+      "definition": "the state of being humble and unimportant"
+    },
+    {
+      "lemma": "obscurity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "nowhere.n.01",
+          "via_synset": "obscurity.n.02"
+        }
+      ],
+      "definition": "an obscure and unimportant standing; not well known"
+    },
+    {
+      "lemma": "overlook",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "miss.v.01",
+          "via_synset": "overlook.v.01"
+        }
+      ],
+      "definition": "look past, fail to notice"
+    },
+    {
+      "lemma": "scatty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "absent.s.02",
+          "via_synset": "absent.s.02"
+        }
+      ],
+      "definition": "lost in thought; showing preoccupation"
+    },
+    {
+      "lemma": "truant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "absent.a.01",
+          "via_synset": "truant.s.01"
+        }
+      ],
+      "definition": "absent without permission"
+    },
+    {
+      "lemma": "unimportance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "obscurity.n.02",
+          "via_synset": "humbleness.n.01"
+        }
+      ],
+      "definition": "the state of being humble and unimportant"
+    }
+  ]
+}

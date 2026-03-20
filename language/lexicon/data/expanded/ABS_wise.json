@@ -1,0 +1,1184 @@
+{
+  "atom_id": "ABS.wise",
+  "category": "ABS",
+  "seed_count": 6,
+  "total_keys": 73,
+  "pos_counts": {
+    "adj": 50,
+    "n": 23
+  },
+  "source_counts": {
+    "0_seed": 12,
+    "7_similar_to": 36,
+    "8_also_see": 11,
+    "2_hypernym_d1": 5,
+    "6_derivational": 6,
+    "9_antonym": 2,
+    "10_sibling": 13
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 10,
+      "words": [
+        "wise(adj)",
+        "judicious(adj)",
+        "heady(adj)",
+        "wise(n)",
+        "healthy(adj)",
+        "intelligent(adj)",
+        "levelheaded(adj)",
+        "level-headed(adj)",
+        "sound(adj)",
+        "prudent(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 5,
+      "words": [
+        "manner(n)",
+        "mode(n)",
+        "style(n)",
+        "way(n)",
+        "fashion(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 4,
+      "words": [
+        "judiciousness(n)",
+        "wiseness(n)",
+        "intelligence(n)",
+        "prudence(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 32,
+      "words": [
+        "scintillating(adj)",
+        "agile(adj)",
+        "nimble(adj)",
+        "apt(adj)",
+        "clever(adj)",
+        "quick(adj)",
+        "ready(adj)",
+        "brainy(adj)",
+        "brilliant(adj)",
+        "smart as a whip(adj)",
+        "searching(adj)",
+        "trenchant(adj)",
+        "bright(adj)",
+        "smart(adj)",
+        "prehensile(adj)",
+        "natural(adj)",
+        "born(adj)",
+        "innate(adj)",
+        "owlish(adj)",
+        "perspicacious(adj)",
+        "sagacious(adj)",
+        "sapient(adj)",
+        "sapiential(adj)",
+        "all-knowing(adj)",
+        "omniscient(adj)",
+        "sage(adj)",
+        "reasonable(adj)",
+        "sensible(adj)",
+        "prudential(adj)",
+        "circumspect(adj)",
+        "discreet(adj)",
+        "provident(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 7,
+      "words": [
+        "precocious(adj)",
+        "well-advised(adj)",
+        "advised(adj)",
+        "advisable(adj)",
+        "politic(adj)",
+        "careful(adj)",
+        "responsible(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 2,
+      "words": [
+        "unintelligent(adj)",
+        "imprudent(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 13,
+      "words": [
+        "setup(n)",
+        "form(n)",
+        "life style(n)",
+        "life-style(n)",
+        "lifestyle(n)",
+        "modus vivendi(n)",
+        "response(n)",
+        "fit(n)",
+        "drape(n)",
+        "touch(n)",
+        "signature(n)",
+        "artistic style(n)",
+        "idiom(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "advisable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "wise.a.01",
+          "via_synset": "advisable.a.01"
+        }
+      ],
+      "definition": "worthy of being recommended or suggested; prudent or wise"
+    },
+    {
+      "lemma": "advised",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "wise.a.01",
+          "via_synset": "well-advised.a.01"
+        }
+      ],
+      "definition": "having the benefit of careful prior consideration or counsel"
+    },
+    {
+      "lemma": "agile",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "agile.s.02"
+        }
+      ],
+      "definition": "mentally quick"
+    },
+    {
+      "lemma": "all-knowing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wise.a.01",
+          "via_synset": "all-knowing.s.01"
+        }
+      ],
+      "definition": "infinitely wise"
+    },
+    {
+      "lemma": "apt",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "apt.s.03"
+        }
+      ],
+      "definition": "mentally quick and resourceful; ; -Bram Stoker"
+    },
+    {
+      "lemma": "artistic style",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "manner.n.01",
+          "via_synset": "artistic_style.n.01"
+        }
+      ],
+      "definition": "the style of a particular artist or school or movement"
+    },
+    {
+      "lemma": "born",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "natural.s.05"
+        }
+      ],
+      "definition": "being talented through inherited qualities"
+    },
+    {
+      "lemma": "brainy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "brainy.s.01"
+        }
+      ],
+      "definition": "having or marked by unusual and impressive intelligence"
+    },
+    {
+      "lemma": "bright",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "bright.s.02"
+        }
+      ],
+      "definition": "characterized by quickness and ease in learning"
+    },
+    {
+      "lemma": "brilliant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "brainy.s.01"
+        }
+      ],
+      "definition": "having or marked by unusual and impressive intelligence"
+    },
+    {
+      "lemma": "careful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "prudent.a.01",
+          "via_synset": "careful.a.01"
+        }
+      ],
+      "definition": "exercising caution or showing care or attention"
+    },
+    {
+      "lemma": "circumspect",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "prudent.a.01",
+          "via_synset": "circumspect.s.01"
+        }
+      ],
+      "definition": "heedful of potential consequences"
+    },
+    {
+      "lemma": "clever",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "apt.s.03"
+        }
+      ],
+      "definition": "mentally quick and resourceful; ; -Bram Stoker"
+    },
+    {
+      "lemma": "discreet",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "prudent.a.01",
+          "via_synset": "circumspect.s.01"
+        }
+      ],
+      "definition": "heedful of potential consequences"
+    },
+    {
+      "lemma": "drape",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "manner.n.01",
+          "via_synset": "drape.n.02"
+        }
+      ],
+      "definition": "the manner in which fabric hangs or falls"
+    },
+    {
+      "lemma": "fashion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wise.n.01",
+          "via_synset": "manner.n.01"
+        }
+      ],
+      "definition": "how something is done or how it happens"
+    },
+    {
+      "lemma": "fit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "manner.n.01",
+          "via_synset": "fit.n.03"
+        }
+      ],
+      "definition": "the manner in which something fits"
+    },
+    {
+      "lemma": "form",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "manner.n.01",
+          "via_synset": "form.n.11"
+        }
+      ],
+      "definition": "a particular mode in which something is manifested"
+    },
+    {
+      "lemma": "heady",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "judicious.s.01",
+          "via_synset": "judicious.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "prudent.a.01",
+          "via_synset": "judicious.s.01"
+        }
+      ],
+      "definition": "marked by the exercise of good judgment or common sense in practical matters"
+    },
+    {
+      "lemma": "healthy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "healthy.s.03",
+          "via_synset": "healthy.s.03"
+        }
+      ],
+      "definition": "exercising or showing good judgment"
+    },
+    {
+      "lemma": "idiom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "manner.n.01",
+          "via_synset": "artistic_style.n.01"
+        }
+      ],
+      "definition": "the style of a particular artist or school or movement"
+    },
+    {
+      "lemma": "imprudent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "prudent.a.01",
+          "via_synset": "imprudent.a.01"
+        }
+      ],
+      "definition": "not prudent or wise; ; - A.M.Schlesinger"
+    },
+    {
+      "lemma": "innate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "natural.s.05"
+        }
+      ],
+      "definition": "being talented through inherited qualities"
+    },
+    {
+      "lemma": "intelligence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "intelligence.n.01"
+        }
+      ],
+      "definition": "the ability to comprehend; to understand and profit from experience"
+    },
+    {
+      "lemma": "intelligent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "healthy.s.03",
+          "via_synset": "healthy.s.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "intelligent.a.01"
+        }
+      ],
+      "definition": "exercising or showing good judgment"
+    },
+    {
+      "lemma": "judicious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "judicious.s.01",
+          "via_synset": "judicious.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "prudent.a.01",
+          "via_synset": "judicious.s.01"
+        }
+      ],
+      "definition": "marked by the exercise of good judgment or common sense in practical matters"
+    },
+    {
+      "lemma": "judiciousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "judicious.s.01",
+          "via_synset": "judiciousness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "judicious.s.01",
+          "via_synset": "judiciousness.n.02"
+        }
+      ],
+      "definition": "good judgment"
+    },
+    {
+      "lemma": "level-headed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "healthy.s.03",
+          "via_synset": "healthy.s.03"
+        }
+      ],
+      "definition": "exercising or showing good judgment"
+    },
+    {
+      "lemma": "levelheaded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "healthy.s.03",
+          "via_synset": "healthy.s.03"
+        }
+      ],
+      "definition": "exercising or showing good judgment"
+    },
+    {
+      "lemma": "life style",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "manner.n.01",
+          "via_synset": "life_style.n.01"
+        }
+      ],
+      "definition": "a manner of living that reflects the person's values and attitudes"
+    },
+    {
+      "lemma": "life-style",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "manner.n.01",
+          "via_synset": "life_style.n.01"
+        }
+      ],
+      "definition": "a manner of living that reflects the person's values and attitudes"
+    },
+    {
+      "lemma": "lifestyle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "manner.n.01",
+          "via_synset": "life_style.n.01"
+        }
+      ],
+      "definition": "a manner of living that reflects the person's values and attitudes"
+    },
+    {
+      "lemma": "manner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wise.n.01",
+          "via_synset": "manner.n.01"
+        }
+      ],
+      "definition": "how something is done or how it happens"
+    },
+    {
+      "lemma": "mode",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wise.n.01",
+          "via_synset": "manner.n.01"
+        }
+      ],
+      "definition": "how something is done or how it happens"
+    },
+    {
+      "lemma": "modus vivendi",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "manner.n.01",
+          "via_synset": "life_style.n.01"
+        }
+      ],
+      "definition": "a manner of living that reflects the person's values and attitudes"
+    },
+    {
+      "lemma": "natural",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "natural.s.05"
+        }
+      ],
+      "definition": "being talented through inherited qualities"
+    },
+    {
+      "lemma": "nimble",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "agile.s.02"
+        }
+      ],
+      "definition": "mentally quick"
+    },
+    {
+      "lemma": "omniscient",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wise.a.01",
+          "via_synset": "all-knowing.s.01"
+        }
+      ],
+      "definition": "infinitely wise"
+    },
+    {
+      "lemma": "owlish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wise.a.01",
+          "via_synset": "owlish.s.01"
+        }
+      ],
+      "definition": "resembling an owl; solemn and wise in appearance"
+    },
+    {
+      "lemma": "perspicacious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wise.a.01",
+          "via_synset": "perspicacious.s.01"
+        }
+      ],
+      "definition": "acutely insightful and wise"
+    },
+    {
+      "lemma": "politic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "wise.a.01",
+          "via_synset": "politic.a.01"
+        }
+      ],
+      "definition": "marked by artful prudence, expedience, and shrewdness"
+    },
+    {
+      "lemma": "precocious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "precocious.a.01"
+        }
+      ],
+      "definition": "characterized by or characteristic of exceptionally early development or maturity (especially in mental aptitude)"
+    },
+    {
+      "lemma": "prehensile",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "prehensile.s.01"
+        }
+      ],
+      "definition": "having a keen intellect; - A.T.Quiller-Couch"
+    },
+    {
+      "lemma": "provident",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "prudent.a.01",
+          "via_synset": "provident.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "prudent.a.01",
+          "via_synset": "provident.a.01"
+        }
+      ],
+      "definition": "careful in regard to your own interests"
+    },
+    {
+      "lemma": "prudence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "prudent.a.01",
+          "via_synset": "discretion.n.02"
+        }
+      ],
+      "definition": "knowing how to avoid embarrassment or distress"
+    },
+    {
+      "lemma": "prudent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "prudent.a.01",
+          "via_synset": "prudent.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "judicious.s.01",
+          "via_synset": "prudent.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "wise.a.01",
+          "via_synset": "prudent.a.01"
+        }
+      ],
+      "definition": "careful and sensible; marked by sound judgment"
+    },
+    {
+      "lemma": "prudential",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "prudent.a.01",
+          "via_synset": "prudential.s.01"
+        }
+      ],
+      "definition": "arising from or characterized by prudence especially in business matters"
+    },
+    {
+      "lemma": "quick",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "quick.s.04"
+        }
+      ],
+      "definition": "apprehending and responding with speed and sensitivity"
+    },
+    {
+      "lemma": "ready",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "quick.s.04"
+        }
+      ],
+      "definition": "apprehending and responding with speed and sensitivity"
+    },
+    {
+      "lemma": "reasonable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "healthy.s.03",
+          "via_synset": "reasonable.a.01"
+        }
+      ],
+      "definition": "showing reason or sound judgment"
+    },
+    {
+      "lemma": "response",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "manner.n.01",
+          "via_synset": "response.n.07"
+        }
+      ],
+      "definition": "the manner in which an electrical or mechanical device responds to an input signal or a range of input signals"
+    },
+    {
+      "lemma": "responsible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "prudent.a.01",
+          "via_synset": "responsible.a.01"
+        }
+      ],
+      "definition": "worthy of or requiring responsibility or trust; or held accountable"
+    },
+    {
+      "lemma": "sagacious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wise.a.01",
+          "via_synset": "perspicacious.s.01"
+        }
+      ],
+      "definition": "acutely insightful and wise"
+    },
+    {
+      "lemma": "sage",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wise.a.01",
+          "via_synset": "sage.s.01"
+        }
+      ],
+      "definition": "having wisdom that comes with age and experience"
+    },
+    {
+      "lemma": "sapient",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wise.a.01",
+          "via_synset": "perspicacious.s.01"
+        }
+      ],
+      "definition": "acutely insightful and wise"
+    },
+    {
+      "lemma": "sapiential",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wise.a.01",
+          "via_synset": "sapiential.s.01"
+        }
+      ],
+      "definition": "characterized by wisdom, especially the wisdom of God"
+    },
+    {
+      "lemma": "scintillating",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "scintillating.s.01"
+        }
+      ],
+      "definition": "brilliantly clever"
+    },
+    {
+      "lemma": "searching",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "searching.s.02"
+        }
+      ],
+      "definition": "having keenness and forcefulness and penetration in thought, expression, or intellect"
+    },
+    {
+      "lemma": "sensible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "healthy.s.03",
+          "via_synset": "reasonable.a.01"
+        }
+      ],
+      "definition": "showing reason or sound judgment"
+    },
+    {
+      "lemma": "setup",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "manner.n.01",
+          "via_synset": "setup.n.02"
+        }
+      ],
+      "definition": "the way something is organized or arranged"
+    },
+    {
+      "lemma": "signature",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "manner.n.01",
+          "via_synset": "touch.n.04"
+        }
+      ],
+      "definition": "a distinguishing style"
+    },
+    {
+      "lemma": "smart",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "bright.s.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "smart.a.01"
+        }
+      ],
+      "definition": "characterized by quickness and ease in learning"
+    },
+    {
+      "lemma": "smart as a whip",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "brainy.s.01"
+        }
+      ],
+      "definition": "having or marked by unusual and impressive intelligence"
+    },
+    {
+      "lemma": "sound",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "healthy.s.03",
+          "via_synset": "healthy.s.03"
+        }
+      ],
+      "definition": "exercising or showing good judgment"
+    },
+    {
+      "lemma": "style",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wise.n.01",
+          "via_synset": "manner.n.01"
+        }
+      ],
+      "definition": "how something is done or how it happens"
+    },
+    {
+      "lemma": "touch",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "manner.n.01",
+          "via_synset": "touch.n.04"
+        }
+      ],
+      "definition": "a distinguishing style"
+    },
+    {
+      "lemma": "trenchant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "searching.s.02"
+        }
+      ],
+      "definition": "having keenness and forcefulness and penetration in thought, expression, or intellect"
+    },
+    {
+      "lemma": "unintelligent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "intelligent.a.01",
+          "via_synset": "unintelligent.a.01"
+        }
+      ],
+      "definition": "lacking intelligence"
+    },
+    {
+      "lemma": "way",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wise.n.01",
+          "via_synset": "manner.n.01"
+        }
+      ],
+      "definition": "how something is done or how it happens"
+    },
+    {
+      "lemma": "well-advised",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "wise.a.01",
+          "via_synset": "well-advised.a.01"
+        }
+      ],
+      "definition": "having the benefit of careful prior consideration or counsel"
+    },
+    {
+      "lemma": "wise",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wise.a.01",
+          "via_synset": "wise.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "judicious.s.01",
+          "via_synset": "judicious.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "prudent.a.01",
+          "via_synset": "judicious.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "prudent.a.01",
+          "via_synset": "wise.a.01"
+        }
+      ],
+      "definition": "having or prompted by wisdom or discernment"
+    },
+    {
+      "lemma": "wise",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wise.n.01",
+          "via_synset": "wise.n.01"
+        }
+      ],
+      "definition": "a way of doing or being"
+    },
+    {
+      "lemma": "wiseness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "judicious.s.01",
+          "via_synset": "wisdom.n.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wise.a.01",
+          "via_synset": "wisdom.n.02"
+        }
+      ],
+      "definition": "the quality of being prudent and sensible"
+    }
+  ]
+}

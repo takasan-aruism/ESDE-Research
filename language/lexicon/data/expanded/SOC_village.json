@@ -1,0 +1,812 @@
+{
+  "atom_id": "SOC.village",
+  "category": "SOC",
+  "seed_count": 6,
+  "total_keys": 46,
+  "pos_counts": {
+    "n": 28,
+    "adj": 18
+  },
+  "source_counts": {
+    "0_seed": 11,
+    "10_sibling": 19,
+    "2_hypernym_d1": 3,
+    "3_hyponym_d1": 5,
+    "6_derivational": 2,
+    "7_similar_to": 18,
+    "11_pertainym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 7,
+      "words": [
+        "village(n)",
+        "small town(n)",
+        "settlement(n)",
+        "Greenwich Village(n)",
+        "hamlet(n)",
+        "rural(adj)",
+        "crossroads(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 1,
+      "words": [
+        "community(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 5,
+      "words": [
+        "moshav(n)",
+        "kraal(n)",
+        "pueblo(n)",
+        "kampong(n)",
+        "campong(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 1,
+      "words": [
+        "rurality(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 17,
+      "words": [
+        "hobnailed(adj)",
+        "arcadian(adj)",
+        "bucolic(adj)",
+        "pastoral(adj)",
+        "country-style(adj)",
+        "country-bred(adj)",
+        "agrestic(adj)",
+        "rustic(adj)",
+        "countrified(adj)",
+        "countryfied(adj)",
+        "cracker-barrel(adj)",
+        "folksy(adj)",
+        "homespun(adj)",
+        "agrarian(adj)",
+        "agricultural(adj)",
+        "farming(adj)",
+        "campestral(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 14,
+      "words": [
+        "Circassian(n)",
+        "neighborhood(n)",
+        "neighbourhood(n)",
+        "Aleut(n)",
+        "parish(n)",
+        "Ummah(n)",
+        "Umma(n)",
+        "Muslim Ummah(n)",
+        "Islamic Ummah(n)",
+        "Islam Nation(n)",
+        "house(n)",
+        "speech community(n)",
+        "horde(n)",
+        "convent(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 1,
+      "words": [
+        "country(n)"
+      ]
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "agrarian",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "rural.a.01",
+          "via_synset": "agrarian.s.01"
+        }
+      ],
+      "definition": "relating to rural matters"
+    },
+    {
+      "lemma": "agrestic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "rural.a.01",
+          "via_synset": "agrestic.s.01"
+        }
+      ],
+      "definition": "characteristic of the fields or country"
+    },
+    {
+      "lemma": "agricultural",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "rural.a.01",
+          "via_synset": "agrarian.s.01"
+        }
+      ],
+      "definition": "relating to rural matters"
+    },
+    {
+      "lemma": "Aleut",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "community.n.01",
+          "via_synset": "aleut.n.02"
+        }
+      ],
+      "definition": "a community of Native Americans who speak an Eskimo-Aleut language and inhabit the Aleutian Islands and southwestern Alaska"
+    },
+    {
+      "lemma": "arcadian",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "rural.a.01",
+          "via_synset": "arcadian.s.01"
+        }
+      ],
+      "definition": "(used with regard to idealized country life) idyllically rustic"
+    },
+    {
+      "lemma": "bucolic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "rural.a.01",
+          "via_synset": "arcadian.s.01"
+        }
+      ],
+      "definition": "(used with regard to idealized country life) idyllically rustic"
+    },
+    {
+      "lemma": "campestral",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "rural.a.01",
+          "via_synset": "campestral.s.01"
+        }
+      ],
+      "definition": "of fields or open country"
+    },
+    {
+      "lemma": "campong",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "village.n.02",
+          "via_synset": "kampong.n.01"
+        }
+      ],
+      "definition": "a native village in Malaysia"
+    },
+    {
+      "lemma": "Circassian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "community.n.01",
+          "via_synset": "circassian.n.02"
+        }
+      ],
+      "definition": "a mostly Sunni Muslim community living in northwestern Caucasia"
+    },
+    {
+      "lemma": "community",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "village.n.01",
+          "via_synset": "community.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "hamlet.n.01",
+          "via_synset": "community.n.01"
+        }
+      ],
+      "definition": "a group of people living in a particular local area"
+    },
+    {
+      "lemma": "convent",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "community.n.01",
+          "via_synset": "convent.n.02"
+        }
+      ],
+      "definition": "a community of people in a religious order (especially nuns) living together"
+    },
+    {
+      "lemma": "countrified",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "rural.a.01",
+          "via_synset": "countrified.s.01"
+        }
+      ],
+      "definition": "characteristic of rural life"
+    },
+    {
+      "lemma": "country",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "11_pertainym",
+          "relation": "pertainym",
+          "from_synset": "rural.a.02",
+          "via_synset": "country.n.04"
+        }
+      ],
+      "definition": "an area outside of cities and towns"
+    },
+    {
+      "lemma": "country-bred",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "rural.a.01",
+          "via_synset": "country-bred.s.01"
+        }
+      ],
+      "definition": "rough and uncouth"
+    },
+    {
+      "lemma": "country-style",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "rural.a.01",
+          "via_synset": "country-style.s.01"
+        }
+      ],
+      "definition": "typical of the country"
+    },
+    {
+      "lemma": "countryfied",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "rural.a.01",
+          "via_synset": "countrified.s.01"
+        }
+      ],
+      "definition": "characteristic of rural life"
+    },
+    {
+      "lemma": "cracker-barrel",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "rural.a.01",
+          "via_synset": "cracker-barrel.s.01"
+        }
+      ],
+      "definition": "characteristic of country life"
+    },
+    {
+      "lemma": "crossroads",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hamlet.n.01",
+          "via_synset": "hamlet.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "community.n.01",
+          "via_synset": "hamlet.n.01"
+        }
+      ],
+      "definition": "a community of people smaller than a village"
+    },
+    {
+      "lemma": "farming",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "rural.a.01",
+          "via_synset": "agrarian.s.01"
+        }
+      ],
+      "definition": "relating to rural matters"
+    },
+    {
+      "lemma": "folksy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "rural.a.01",
+          "via_synset": "cracker-barrel.s.01"
+        }
+      ],
+      "definition": "characteristic of country life"
+    },
+    {
+      "lemma": "Greenwich Village",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "greenwich_village.n.01",
+          "via_synset": "greenwich_village.n.01"
+        }
+      ],
+      "definition": "a mainly residential district of Manhattan; `the Village' became a home for many writers and artists in the 20th century"
+    },
+    {
+      "lemma": "hamlet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "village.n.02",
+          "via_synset": "village.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hamlet.n.01",
+          "via_synset": "hamlet.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "community.n.01",
+          "via_synset": "hamlet.n.01"
+        }
+      ],
+      "definition": "a settlement smaller than a town"
+    },
+    {
+      "lemma": "hobnailed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "rural.a.01",
+          "via_synset": "hobnailed.s.01"
+        }
+      ],
+      "definition": "marked by the wearing of heavy boots studded with hobnails"
+    },
+    {
+      "lemma": "homespun",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "rural.a.01",
+          "via_synset": "cracker-barrel.s.01"
+        }
+      ],
+      "definition": "characteristic of country life"
+    },
+    {
+      "lemma": "horde",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "community.n.01",
+          "via_synset": "horde.n.02"
+        }
+      ],
+      "definition": "a nomadic community"
+    },
+    {
+      "lemma": "house",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "community.n.01",
+          "via_synset": "house.n.03"
+        }
+      ],
+      "definition": "the members of a religious community living together"
+    },
+    {
+      "lemma": "Islam Nation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "community.n.01",
+          "via_synset": "ummah.n.01"
+        }
+      ],
+      "definition": "the Muslim community or people, considered to extend from Mauritania to Pakistan"
+    },
+    {
+      "lemma": "Islamic Ummah",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "community.n.01",
+          "via_synset": "ummah.n.01"
+        }
+      ],
+      "definition": "the Muslim community or people, considered to extend from Mauritania to Pakistan"
+    },
+    {
+      "lemma": "kampong",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "village.n.02",
+          "via_synset": "kampong.n.01"
+        }
+      ],
+      "definition": "a native village in Malaysia"
+    },
+    {
+      "lemma": "kraal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "village.n.02",
+          "via_synset": "kraal.n.01"
+        }
+      ],
+      "definition": "a village of huts for native Africans in southern Africa; usually surrounded by a stockade"
+    },
+    {
+      "lemma": "moshav",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "village.n.01",
+          "via_synset": "moshav.n.01"
+        }
+      ],
+      "definition": "a cooperative Israeli village or settlement comprised of small farms"
+    },
+    {
+      "lemma": "Muslim Ummah",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "community.n.01",
+          "via_synset": "ummah.n.01"
+        }
+      ],
+      "definition": "the Muslim community or people, considered to extend from Mauritania to Pakistan"
+    },
+    {
+      "lemma": "neighborhood",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "community.n.01",
+          "via_synset": "neighborhood.n.02"
+        }
+      ],
+      "definition": "people living near one another"
+    },
+    {
+      "lemma": "neighbourhood",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "community.n.01",
+          "via_synset": "neighborhood.n.02"
+        }
+      ],
+      "definition": "people living near one another"
+    },
+    {
+      "lemma": "parish",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "community.n.01",
+          "via_synset": "parish.n.01"
+        }
+      ],
+      "definition": "a local church community"
+    },
+    {
+      "lemma": "pastoral",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "rural.a.01",
+          "via_synset": "arcadian.s.01"
+        }
+      ],
+      "definition": "(used with regard to idealized country life) idyllically rustic"
+    },
+    {
+      "lemma": "pueblo",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "village.n.02",
+          "via_synset": "pueblo.n.03"
+        }
+      ],
+      "definition": "a communal village built by Indians in the southwestern United States"
+    },
+    {
+      "lemma": "rural",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "rural.a.01",
+          "via_synset": "rural.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "rural.a.02",
+          "via_synset": "rural.a.02"
+        }
+      ],
+      "definition": "living in or characteristic of farming or country life"
+    },
+    {
+      "lemma": "rurality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "rural.a.01",
+          "via_synset": "rurality.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "rural.a.02",
+          "via_synset": "rurality.n.01"
+        }
+      ],
+      "definition": "a rural characteristic or trait"
+    },
+    {
+      "lemma": "rustic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "rural.a.01",
+          "via_synset": "agrestic.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "rural.a.01",
+          "via_synset": "countrified.s.01"
+        }
+      ],
+      "definition": "characteristic of the fields or country"
+    },
+    {
+      "lemma": "settlement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "village.n.01",
+          "via_synset": "village.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "village.n.02",
+          "via_synset": "settlement.n.06"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "community.n.01",
+          "via_synset": "village.n.01"
+        }
+      ],
+      "definition": "a community of people smaller than a town"
+    },
+    {
+      "lemma": "small town",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "village.n.01",
+          "via_synset": "village.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "community.n.01",
+          "via_synset": "village.n.01"
+        }
+      ],
+      "definition": "a community of people smaller than a town"
+    },
+    {
+      "lemma": "speech community",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "community.n.01",
+          "via_synset": "speech_community.n.01"
+        }
+      ],
+      "definition": "people sharing a given language or dialect"
+    },
+    {
+      "lemma": "Umma",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "community.n.01",
+          "via_synset": "ummah.n.01"
+        }
+      ],
+      "definition": "the Muslim community or people, considered to extend from Mauritania to Pakistan"
+    },
+    {
+      "lemma": "Ummah",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "community.n.01",
+          "via_synset": "ummah.n.01"
+        }
+      ],
+      "definition": "the Muslim community or people, considered to extend from Mauritania to Pakistan"
+    },
+    {
+      "lemma": "village",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "village.n.01",
+          "via_synset": "village.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "greenwich_village.n.01",
+          "via_synset": "greenwich_village.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "village.n.02",
+          "via_synset": "village.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "community.n.01",
+          "via_synset": "village.n.01"
+        }
+      ],
+      "definition": "a community of people smaller than a town"
+    }
+  ]
+}

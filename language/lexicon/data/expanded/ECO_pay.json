@@ -1,0 +1,7511 @@
+{
+  "atom_id": "ECO.pay",
+  "category": "ECO",
+  "seed_count": 6,
+  "total_keys": 462,
+  "pos_counts": {
+    "v": 210,
+    "n": 245,
+    "adj": 7
+  },
+  "source_counts": {
+    "0_seed": 13,
+    "6_derivational": 149,
+    "10_sibling": 124,
+    "3_hyponym_d1": 97,
+    "4_hyponym_d2": 106,
+    "2_hypernym_d1": 25,
+    "12_verb_group": 10,
+    "5_hyponym_d3": 94,
+    "9_antonym": 2
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 9,
+      "words": [
+        "pay(v)",
+        "pay off(v)",
+        "make up(v)",
+        "compensate(v)",
+        "payment(n)",
+        "defrayal(n)",
+        "defrayment(n)",
+        "cover(v)",
+        "overcompensate(v)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 23,
+      "words": [
+        "give(v)",
+        "settle(v)",
+        "digest(v)",
+        "endure(v)",
+        "stick out(v)",
+        "stomach(v)",
+        "bear(v)",
+        "stand(v)",
+        "tolerate(v)",
+        "support(v)",
+        "brook(v)",
+        "abide(v)",
+        "suffer(v)",
+        "put up(v)",
+        "cost(n)",
+        "commerce(n)",
+        "commercialism(n)",
+        "mercantilism(n)",
+        "counterbalance(v)",
+        "correct(v)",
+        "even out(v)",
+        "even off(v)",
+        "even up(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 87,
+      "words": [
+        "subsidize(v)",
+        "subsidise(v)",
+        "spend(v)",
+        "expend(v)",
+        "drop(v)",
+        "recompense(v)",
+        "repair(v)",
+        "indemnify(v)",
+        "bribe(v)",
+        "corrupt(v)",
+        "buy(v)",
+        "grease one's palms(v)",
+        "underpay(v)",
+        "prefer(v)",
+        "charge(v)",
+        "pay cash(v)",
+        "defray(v)",
+        "finance(v)",
+        "kick back(v)",
+        "remit(v)",
+        "prepay(v)",
+        "foot(v)",
+        "pick(v)",
+        "redeem(v)",
+        "overpay(v)",
+        "contribute(v)",
+        "tithe(v)",
+        "disburse(v)",
+        "pay out(v)",
+        "refund(v)",
+        "return(v)",
+        "repay(v)",
+        "give back(v)",
+        "remunerate(v)",
+        "go Dutch(v)",
+        "take one's lumps(v)",
+        "get one's lumps(v)",
+        "cash(n)",
+        "immediate payment(n)",
+        "reward(n)",
+        "payoff(n)",
+        "final payment(n)",
+        "token payment(n)",
+        "installment(n)",
+        "conscience money(n)",
+        "pittance(n)",
+        "premium(n)",
+        "insurance premium(n)",
+        "residual(n)",
+        "penalty(n)",
+        "satisfaction(n)",
+        "subscription(n)",
+        "bribe(n)",
+        "underpayment(n)",
+        "refund(n)",
+        "overpayment(n)",
+        "support payment(n)",
+        "remittance(n)",
+        "remittal(n)",
+        "remission(n)",
+        "remitment(n)",
+        "repayment(n)",
+        "quittance(n)",
+        "credit(n)",
+        "deferred payment(n)",
+        "benefit(n)",
+        "royalty(n)",
+        "bonus(n)",
+        "incentive(n)",
+        "lump sum(n)",
+        "blood money(n)",
+        "down payment(n)",
+        "deposit(n)",
+        "regular payment(n)",
+        "recompense(n)",
+        "rendering(n)",
+        "tribute(n)",
+        "spending(n)",
+        "disbursement(n)",
+        "disbursal(n)",
+        "outlay(n)",
+        "fee splitting(n)",
+        "remuneration(n)",
+        "prepayment(n)",
+        "ransom(n)",
+        "amortization(n)",
+        "amortisation(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 95,
+      "words": [
+        "afford(v)",
+        "wanton(v)",
+        "wanton away(v)",
+        "trifle away(v)",
+        "underspend(v)",
+        "invest(v)",
+        "put(v)",
+        "commit(v)",
+        "place(v)",
+        "blow(v)",
+        "consume(v)",
+        "eat up(v)",
+        "use up(v)",
+        "eat(v)",
+        "deplete(v)",
+        "exhaust(v)",
+        "run through(v)",
+        "wipe out(v)",
+        "misspend(v)",
+        "penny-pinch(v)",
+        "nickel-and-dime(v)",
+        "squander(v)",
+        "waste(v)",
+        "ware(v)",
+        "save(v)",
+        "economize(v)",
+        "economise(v)",
+        "piddle(v)",
+        "piddle away(v)",
+        "trifle(v)",
+        "lay out(v)",
+        "buy off(v)",
+        "sop(v)",
+        "refinance(v)",
+        "fund(v)",
+        "seed(v)",
+        "back(v)",
+        "restore(v)",
+        "restitute(v)",
+        "reimburse(v)",
+        "recoup(v)",
+        "bounty(n)",
+        "guerdon(n)",
+        "honorarium(n)",
+        "meed(n)",
+        "fine(n)",
+        "mulct(n)",
+        "amercement(n)",
+        "forfeit(n)",
+        "forfeiture(n)",
+        "retribution(n)",
+        "requital(n)",
+        "soap(n)",
+        "payola(n)",
+        "kickback(n)",
+        "hush money(n)",
+        "rebate(n)",
+        "discount(n)",
+        "child support(n)",
+        "palimony(n)",
+        "alimony(n)",
+        "maintenance(n)",
+        "redemption(n)",
+        "disability benefit(n)",
+        "cost-of-living benefit(n)",
+        "death benefit(n)",
+        "stock option(n)",
+        "sick benefit(n)",
+        "sickness benefit(n)",
+        "fringe benefit(n)",
+        "perquisite(n)",
+        "perk(n)",
+        "dividend(n)",
+        "sales incentive(n)",
+        "margin(n)",
+        "security deposit(n)",
+        "installment plan(n)",
+        "installment buying(n)",
+        "time plan(n)",
+        "disability check(n)",
+        "disability payment(n)",
+        "pension(n)",
+        "annuity(n)",
+        "rente(n)",
+        "stipend(n)",
+        "wage(n)",
+        "pay(n)",
+        "compensation(n)",
+        "allowance(n)",
+        "adjustment(n)",
+        "expending(n)",
+        "expenditure(n)",
+        "deficit spending(n)",
+        "compensatory spending(n)",
+        "pump priming(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 86,
+      "words": [
+        "buy into(v)",
+        "roll over(v)",
+        "tie up(v)",
+        "shelter(v)",
+        "speculate(v)",
+        "job(v)",
+        "drain(v)",
+        "run down(v)",
+        "play out(v)",
+        "sap(v)",
+        "tire(v)",
+        "run out(v)",
+        "indulge(v)",
+        "luxuriate(v)",
+        "burn off(v)",
+        "burn(v)",
+        "burn up(v)",
+        "splurge(v)",
+        "fling(v)",
+        "lavish(v)",
+        "shower(v)",
+        "overspend(v)",
+        "fritter(v)",
+        "frivol away(v)",
+        "dissipate(v)",
+        "shoot(v)",
+        "fritter away(v)",
+        "fool(v)",
+        "fool away(v)",
+        "tighten one's belt(v)",
+        "library fine(n)",
+        "rent-rebate(n)",
+        "advance death benefit(n)",
+        "appanage(n)",
+        "apanage(n)",
+        "gratuity(n)",
+        "tip(n)",
+        "pourboire(n)",
+        "baksheesh(n)",
+        "bakshish(n)",
+        "bakshis(n)",
+        "backsheesh(n)",
+        "hire-purchase(n)",
+        "never-never(n)",
+        "old-age pension(n)",
+        "retirement pension(n)",
+        "retirement check(n)",
+        "retirement benefit(n)",
+        "retirement fund(n)",
+        "superannuation(n)",
+        "ordinary annuity(n)",
+        "reversionary annuity(n)",
+        "survivorship annuity(n)",
+        "annuity in advance(n)",
+        "tontine(n)",
+        "prebend(n)",
+        "merit pay(n)",
+        "double time(n)",
+        "pay envelope(n)",
+        "pay packet(n)",
+        "half-pay(n)",
+        "strike pay(n)",
+        "take-home pay(n)",
+        "combat pay(n)",
+        "found(n)",
+        "sick pay(n)",
+        "minimum wage(n)",
+        "living wage(n)",
+        "overcompensation(n)",
+        "counterbalance(n)",
+        "offset(n)",
+        "reparation(n)",
+        "reimbursement(n)",
+        "emolument(n)",
+        "workmen's compensation(n)",
+        "damages(n)",
+        "amends(n)",
+        "indemnity(n)",
+        "indemnification(n)",
+        "restitution(n)",
+        "redress(n)",
+        "depreciation allowance(n)",
+        "seasonal adjustment(n)",
+        "cost-of-living allowance(n)",
+        "deduction(n)",
+        "tare(n)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 53,
+      "words": [
+        "ransom(v)",
+        "render(v)",
+        "tither(n)",
+        "investment(n)",
+        "investor(n)",
+        "investing(n)",
+        "commitment(n)",
+        "consumptive(adj)",
+        "consumable(adj)",
+        "depletion(n)",
+        "exhaustion(n)",
+        "rebate(v)",
+        "forfeit(v)",
+        "trifling(n)",
+        "subsidization(n)",
+        "subsidisation(n)",
+        "backer(n)",
+        "backing(n)",
+        "spender(n)",
+        "expensive(adj)",
+        "expender(n)",
+        "saver(n)",
+        "economizer(n)",
+        "economy(n)",
+        "economiser(n)",
+        "remunerative(adj)",
+        "remunerator(n)",
+        "redeemer(n)",
+        "payer(n)",
+        "squanderer(n)",
+        "squandering(n)",
+        "waste(n)",
+        "waster(n)",
+        "charge(n)",
+        "stipendiary(adj)",
+        "adjust(v)",
+        "payee(n)",
+        "sop(n)",
+        "bribable(adj)",
+        "briber(n)",
+        "bribery(n)",
+        "corruptible(adj)",
+        "finance(n)",
+        "financing(n)",
+        "pension(v)",
+        "fine(v)",
+        "mulct(v)",
+        "amerce(v)",
+        "disburser(n)",
+        "contribution(n)",
+        "amortize(v)",
+        "amortise(v)",
+        "restoration(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "nonpayment(n)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 104,
+      "words": [
+        "concede(v)",
+        "yield(v)",
+        "cede(v)",
+        "grant(v)",
+        "cough up(v)",
+        "pony up(v)",
+        "spit up(v)",
+        "bestow(v)",
+        "chip in(v)",
+        "kick in(v)",
+        "deposit(v)",
+        "bank(v)",
+        "spare(v)",
+        "give up(v)",
+        "part with(v)",
+        "dispense with(v)",
+        "provide(v)",
+        "supply(v)",
+        "ply(v)",
+        "cater(v)",
+        "present(v)",
+        "submit(v)",
+        "accord(v)",
+        "allot(v)",
+        "requite(v)",
+        "lease(v)",
+        "let(v)",
+        "rent(v)",
+        "heap(v)",
+        "furnish(v)",
+        "enfeoff(v)",
+        "allow(v)",
+        "vest(v)",
+        "lend(v)",
+        "loan(v)",
+        "distribute(v)",
+        "administer(v)",
+        "mete out(v)",
+        "deal(v)",
+        "parcel out(v)",
+        "lot(v)",
+        "dispense(v)",
+        "shell out(v)",
+        "deal out(v)",
+        "dish out(v)",
+        "dole out(v)",
+        "offer(v)",
+        "proffer(v)",
+        "clean up(v)",
+        "liquidate(v)",
+        "prorate(v)",
+        "square(v)",
+        "accept(v)",
+        "live with(v)",
+        "swallow(v)",
+        "take a joke(v)",
+        "stand for(v)",
+        "hold still for(v)",
+        "sit out(v)",
+        "take lying down(v)",
+        "bear up(v)",
+        "replacement cost(n)",
+        "opportunity cost(n)",
+        "price(n)",
+        "marketing cost(n)",
+        "portage(n)",
+        "reproduction cost(n)",
+        "physical value(n)",
+        "capital expenditure(n)",
+        "cost of living(n)",
+        "expense(n)",
+        "handling cost(n)",
+        "handling charge(n)",
+        "distribution cost(n)",
+        "terms(n)",
+        "damage(n)",
+        "production cost(n)",
+        "cost overrun(n)",
+        "unit cost(n)",
+        "borrowing cost(n)",
+        "ransom money(n)",
+        "marketing(n)",
+        "commercial enterprise(n)",
+        "business enterprise(n)",
+        "business(n)",
+        "exchange(n)",
+        "interchange(n)",
+        "distribution(n)",
+        "trade(n)",
+        "trading(n)",
+        "importing(n)",
+        "importation(n)",
+        "selling(n)",
+        "merchandising(n)",
+        "initial public offering(n)",
+        "IPO(n)",
+        "initial offering(n)",
+        "exporting(n)",
+        "exportation(n)",
+        "e-commerce(n)",
+        "traffic(n)",
+        "evasion(n)",
+        "carriage trade(n)",
+        "carry(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 4,
+      "words": [
+        "take(v)",
+        "occupy(v)",
+        "insure(v)",
+        "underwrite(v)"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "abide",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pay.v.09",
+          "via_synset": "digest.v.03"
+        }
+      ],
+      "definition": "put up with something or somebody unpleasant"
+    },
+    {
+      "lemma": "accept",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digest.v.03",
+          "via_synset": "accept.v.07"
+        }
+      ],
+      "definition": "tolerate or accommodate oneself to"
+    },
+    {
+      "lemma": "accord",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "accord.v.02"
+        }
+      ],
+      "definition": "allow to have"
+    },
+    {
+      "lemma": "adjust",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "allowance.n.03",
+          "via_synset": "adjust.v.05"
+        }
+      ],
+      "definition": "decide how much is to be paid on an insurance claim"
+    },
+    {
+      "lemma": "adjustment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "recompense.n.01",
+          "via_synset": "allowance.n.03"
+        }
+      ],
+      "definition": "an amount added or deducted on the basis of qualifying circumstances"
+    },
+    {
+      "lemma": "administer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "distribute.v.01"
+        }
+      ],
+      "definition": "administer or bestow, as in small portions"
+    },
+    {
+      "lemma": "advance death benefit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "death_benefit.n.01",
+          "via_synset": "advance_death_benefit.n.01"
+        }
+      ],
+      "definition": "a percentage of death benefits paid directly to policy holders having a short life expectancy (usually 6 months)"
+    },
+    {
+      "lemma": "afford",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "afford.v.01"
+        }
+      ],
+      "definition": "be able to spare or give up"
+    },
+    {
+      "lemma": "alimony",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "support_payment.n.01",
+          "via_synset": "alimony.n.01"
+        }
+      ],
+      "definition": "court-ordered support paid by one spouse to another after they are separated"
+    },
+    {
+      "lemma": "allot",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "accord.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "distribute.v.01"
+        }
+      ],
+      "definition": "allow to have"
+    },
+    {
+      "lemma": "allow",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "allow.v.03"
+        }
+      ],
+      "definition": "let have"
+    },
+    {
+      "lemma": "allowance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "recompense.n.01",
+          "via_synset": "allowance.n.03"
+        }
+      ],
+      "definition": "an amount added or deducted on the basis of qualifying circumstances"
+    },
+    {
+      "lemma": "amends",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "compensation.n.01",
+          "via_synset": "damages.n.01"
+        }
+      ],
+      "definition": "a sum of money paid in compensation for loss or injury"
+    },
+    {
+      "lemma": "amerce",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fine.n.01",
+          "via_synset": "amerce.v.02"
+        }
+      ],
+      "definition": "punish by a fine imposed arbitrarily by the discretion of the court"
+    },
+    {
+      "lemma": "amercement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "penalty.n.02",
+          "via_synset": "fine.n.01"
+        }
+      ],
+      "definition": "money extracted as a penalty"
+    },
+    {
+      "lemma": "amortisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.02",
+          "via_synset": "amortization.n.02"
+        }
+      ],
+      "definition": "payment of an obligation in a series of installments or transfers"
+    },
+    {
+      "lemma": "amortise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "amortization.n.02",
+          "via_synset": "amortize.v.01"
+        }
+      ],
+      "definition": "liquidate gradually"
+    },
+    {
+      "lemma": "amortization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.02",
+          "via_synset": "amortization.n.02"
+        }
+      ],
+      "definition": "payment of an obligation in a series of installments or transfers"
+    },
+    {
+      "lemma": "amortize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "amortization.n.02",
+          "via_synset": "amortize.v.01"
+        }
+      ],
+      "definition": "liquidate gradually"
+    },
+    {
+      "lemma": "annuity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "regular_payment.n.01",
+          "via_synset": "annuity.n.01"
+        }
+      ],
+      "definition": "income from capital investment paid in a series of regular payments"
+    },
+    {
+      "lemma": "annuity in advance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "annuity.n.01",
+          "via_synset": "annuity_in_advance.n.01"
+        }
+      ],
+      "definition": "an annuity paid in a series of more or less equal payments at the beginning of equally spaced periods"
+    },
+    {
+      "lemma": "apanage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "fringe_benefit.n.01",
+          "via_synset": "appanage.n.01"
+        }
+      ],
+      "definition": "any customary and rightful perquisite appropriate to your station in life"
+    },
+    {
+      "lemma": "appanage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "fringe_benefit.n.01",
+          "via_synset": "appanage.n.01"
+        }
+      ],
+      "definition": "any customary and rightful perquisite appropriate to your station in life"
+    },
+    {
+      "lemma": "back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "finance.v.01",
+          "via_synset": "back.v.05"
+        }
+      ],
+      "definition": "support financial backing for"
+    },
+    {
+      "lemma": "backer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "back.v.05",
+          "via_synset": "angel.n.03"
+        }
+      ],
+      "definition": "invests in a theatrical production"
+    },
+    {
+      "lemma": "backing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "back.v.05",
+          "via_synset": "support.n.11"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "back.v.05",
+          "via_synset": "backing.n.01"
+        }
+      ],
+      "definition": "financial resources provided to make some project possible"
+    },
+    {
+      "lemma": "backsheesh",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "fringe_benefit.n.01",
+          "via_synset": "gratuity.n.01"
+        }
+      ],
+      "definition": "a relatively small amount of money given for services rendered (as by a waiter)"
+    },
+    {
+      "lemma": "baksheesh",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "fringe_benefit.n.01",
+          "via_synset": "gratuity.n.01"
+        }
+      ],
+      "definition": "a relatively small amount of money given for services rendered (as by a waiter)"
+    },
+    {
+      "lemma": "bakshis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "fringe_benefit.n.01",
+          "via_synset": "gratuity.n.01"
+        }
+      ],
+      "definition": "a relatively small amount of money given for services rendered (as by a waiter)"
+    },
+    {
+      "lemma": "bakshish",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "fringe_benefit.n.01",
+          "via_synset": "gratuity.n.01"
+        }
+      ],
+      "definition": "a relatively small amount of money given for services rendered (as by a waiter)"
+    },
+    {
+      "lemma": "bank",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "deposit.v.02"
+        }
+      ],
+      "definition": "put into a bank account"
+    },
+    {
+      "lemma": "bear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pay.v.09",
+          "via_synset": "digest.v.03"
+        }
+      ],
+      "definition": "put up with something or somebody unpleasant"
+    },
+    {
+      "lemma": "bear up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digest.v.03",
+          "via_synset": "bear_up.v.01"
+        }
+      ],
+      "definition": "endure cheerfully"
+    },
+    {
+      "lemma": "benefit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "benefit.n.01"
+        }
+      ],
+      "definition": "financial assistance in time of need"
+    },
+    {
+      "lemma": "bestow",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "bestow.v.02"
+        }
+      ],
+      "definition": "give as a gift"
+    },
+    {
+      "lemma": "blood money",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "blood_money.n.03"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "reward.n.02",
+          "via_synset": "blood_money.n.02"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "compensation.n.01",
+          "via_synset": "blood_money.n.01"
+        }
+      ],
+      "definition": "paid to a hired murderer"
+    },
+    {
+      "lemma": "blow",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "blow.v.09"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "blow.v.09",
+          "via_synset": "waste.v.01"
+        }
+      ],
+      "definition": "spend lavishly or wastefully on"
+    },
+    {
+      "lemma": "bonus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "bonus.n.02"
+        }
+      ],
+      "definition": "an additional payment (or other remuneration) to employees as a means of increasing output"
+    },
+    {
+      "lemma": "borrowing cost",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "borrowing_cost.n.01"
+        }
+      ],
+      "definition": "the cost of borrowing something"
+    },
+    {
+      "lemma": "bounty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "reward.n.02",
+          "via_synset": "bounty.n.01"
+        }
+      ],
+      "definition": "payment or reward (especially from a government) for acts such as catching criminals or killing predatory animals or enlisting in the military"
+    },
+    {
+      "lemma": "bribable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bribe.v.01",
+          "via_synset": "corruptible.s.01"
+        }
+      ],
+      "definition": "capable of being corrupted"
+    },
+    {
+      "lemma": "bribe",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "bribe.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bribe.v.01",
+          "via_synset": "bribe.n.01"
+        }
+      ],
+      "definition": "payment made to a person in a position of trust to corrupt his judgment"
+    },
+    {
+      "lemma": "bribe",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "bribe.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bribe.n.01",
+          "via_synset": "bribe.v.01"
+        }
+      ],
+      "definition": "make illegal payments to in exchange for favors or influence"
+    },
+    {
+      "lemma": "briber",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bribe.v.01",
+          "via_synset": "briber.n.01"
+        }
+      ],
+      "definition": "someone who pays (or otherwise incites) you to commit a wrongful act"
+    },
+    {
+      "lemma": "bribery",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bribe.v.01",
+          "via_synset": "bribery.n.01"
+        }
+      ],
+      "definition": "the practice of offering something (usually money) in order to gain an illicit advantage"
+    },
+    {
+      "lemma": "brook",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pay.v.09",
+          "via_synset": "digest.v.03"
+        }
+      ],
+      "definition": "put up with something or somebody unpleasant"
+    },
+    {
+      "lemma": "burn",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.05",
+          "via_synset": "burn_off.v.01"
+        }
+      ],
+      "definition": "use up (energy)"
+    },
+    {
+      "lemma": "burn off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.05",
+          "via_synset": "burn_off.v.01"
+        }
+      ],
+      "definition": "use up (energy)"
+    },
+    {
+      "lemma": "burn up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.05",
+          "via_synset": "burn_off.v.01"
+        }
+      ],
+      "definition": "use up (energy)"
+    },
+    {
+      "lemma": "business",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "commercial_enterprise.n.02"
+        }
+      ],
+      "definition": "the activity of providing goods and services involving financial and commercial and industrial aspects"
+    },
+    {
+      "lemma": "business enterprise",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "commercial_enterprise.n.02"
+        }
+      ],
+      "definition": "the activity of providing goods and services involving financial and commercial and industrial aspects"
+    },
+    {
+      "lemma": "buy",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "bribe.v.01"
+        }
+      ],
+      "definition": "make illegal payments to in exchange for favors or influence"
+    },
+    {
+      "lemma": "buy into",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "invest.v.01",
+          "via_synset": "buy_into.v.01"
+        }
+      ],
+      "definition": "buy stocks or shares of a company"
+    },
+    {
+      "lemma": "buy off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bribe.v.01",
+          "via_synset": "buy_off.v.01"
+        }
+      ],
+      "definition": "pay someone with influence in order to receive a favor"
+    },
+    {
+      "lemma": "capital expenditure",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "capital_expenditure.n.01"
+        }
+      ],
+      "definition": "the cost of long-term improvements"
+    },
+    {
+      "lemma": "carriage trade",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "carriage_trade.n.01"
+        }
+      ],
+      "definition": "trade from upper-class customers"
+    },
+    {
+      "lemma": "carry",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "compensate.v.01",
+          "via_synset": "carry.v.24"
+        }
+      ],
+      "definition": "compensate for a weaker partner or member by one's own performance"
+    },
+    {
+      "lemma": "cash",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "cash.n.02"
+        }
+      ],
+      "definition": "prompt payment for goods or services in currency or by check"
+    },
+    {
+      "lemma": "cater",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "provide.v.02"
+        }
+      ],
+      "definition": "give what is desired or needed, especially support, food or sustenance"
+    },
+    {
+      "lemma": "cede",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "concede.v.03"
+        }
+      ],
+      "definition": "give over; surrender or relinquish to the physical control of another"
+    },
+    {
+      "lemma": "charge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "charge.v.12",
+          "via_synset": "charge.n.11"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "charge.n.03"
+        }
+      ],
+      "definition": "request for payment of a debt"
+    },
+    {
+      "lemma": "charge",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "charge.v.12"
+        }
+      ],
+      "definition": "pay with a credit card; pay with plastic money; postpone payment by recording a purchase as a debt"
+    },
+    {
+      "lemma": "child support",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "support_payment.n.01",
+          "via_synset": "child_support.n.01"
+        }
+      ],
+      "definition": "court-ordered support paid by one spouse to the other who has custody of the children after the parents are separated"
+    },
+    {
+      "lemma": "chip in",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "contribute.v.02"
+        }
+      ],
+      "definition": "contribute to some cause"
+    },
+    {
+      "lemma": "clean up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "settle.v.14",
+          "via_synset": "clean_up.v.03"
+        }
+      ],
+      "definition": "dispose of"
+    },
+    {
+      "lemma": "combat pay",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "wage.n.01",
+          "via_synset": "combat_pay.n.01"
+        }
+      ],
+      "definition": "extra pay for soldiers engaged in active combat"
+    },
+    {
+      "lemma": "commerce",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "payment.n.02",
+          "via_synset": "commerce.n.01"
+        }
+      ],
+      "definition": "transactions (sales and purchases) having the objective of supplying commodities (goods and services)"
+    },
+    {
+      "lemma": "commercial enterprise",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "commercial_enterprise.n.02"
+        }
+      ],
+      "definition": "the activity of providing goods and services involving financial and commercial and industrial aspects"
+    },
+    {
+      "lemma": "commercialism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "payment.n.02",
+          "via_synset": "commerce.n.01"
+        }
+      ],
+      "definition": "transactions (sales and purchases) having the objective of supplying commodities (goods and services)"
+    },
+    {
+      "lemma": "commit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "invest.v.01"
+        }
+      ],
+      "definition": "make an investment"
+    },
+    {
+      "lemma": "commitment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "invest.v.01",
+          "via_synset": "commitment.n.03"
+        }
+      ],
+      "definition": "an engagement by contract involving financial obligation"
+    },
+    {
+      "lemma": "compensate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pay.v.05",
+          "via_synset": "pay.v.05"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "cover.v.15",
+          "via_synset": "cover.v.15"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "cover.v.15",
+          "via_synset": "compensate.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "compensate.v.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "compensate.v.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compensation.n.01",
+          "via_synset": "right.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compensation.n.01",
+          "via_synset": "pay.v.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compensation.n.01",
+          "via_synset": "compensate.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compensation.n.01",
+          "via_synset": "compensate.v.06"
+        }
+      ],
+      "definition": "do or give something to somebody in return"
+    },
+    {
+      "lemma": "compensation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "recompense.n.01",
+          "via_synset": "compensation.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cover.v.15",
+          "via_synset": "compensation.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compensate.v.06",
+          "via_synset": "compensation.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compensate.v.06",
+          "via_synset": "recompense.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compensate.v.02",
+          "via_synset": "compensation.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compensate.v.02",
+          "via_synset": "recompense.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pay.v.05",
+          "via_synset": "compensation.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pay.v.05",
+          "via_synset": "recompense.n.02"
+        }
+      ],
+      "definition": "something (such as money) given or received as payment or reparation (as for a service or loss or injury)"
+    },
+    {
+      "lemma": "compensatory spending",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spending.n.01",
+          "via_synset": "deficit_spending.n.01"
+        }
+      ],
+      "definition": "spending money raised by borrowing; used by governments to stimulate their economy"
+    },
+    {
+      "lemma": "concede",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "concede.v.03"
+        }
+      ],
+      "definition": "give over; surrender or relinquish to the physical control of another"
+    },
+    {
+      "lemma": "conscience money",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "conscience_money.n.01"
+        }
+      ],
+      "definition": "payment made voluntarily to reduce guilt over dishonest dealings"
+    },
+    {
+      "lemma": "consumable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consume.v.05",
+          "via_synset": "consumable.s.01"
+        }
+      ],
+      "definition": "may be used up"
+    },
+    {
+      "lemma": "consume",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "consume.v.05"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "consume.v.03"
+        }
+      ],
+      "definition": "use up (resources or materials)"
+    },
+    {
+      "lemma": "consumptive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consume.v.05",
+          "via_synset": "consumptive.a.01"
+        }
+      ],
+      "definition": "tending to consume or use often wastefully"
+    },
+    {
+      "lemma": "contribute",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "put_up.v.08"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "contribute.v.02"
+        }
+      ],
+      "definition": "provide"
+    },
+    {
+      "lemma": "contribution",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "put_up.v.08",
+          "via_synset": "contribution.n.03"
+        }
+      ],
+      "definition": "act of giving in common with others for a common purpose especially to a charity"
+    },
+    {
+      "lemma": "correct",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "cover.v.15",
+          "via_synset": "compensate.v.01"
+        }
+      ],
+      "definition": "adjust for"
+    },
+    {
+      "lemma": "corrupt",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "bribe.v.01"
+        }
+      ],
+      "definition": "make illegal payments to in exchange for favors or influence"
+    },
+    {
+      "lemma": "corruptible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bribe.v.01",
+          "via_synset": "corruptible.s.01"
+        }
+      ],
+      "definition": "capable of being corrupted"
+    },
+    {
+      "lemma": "cost",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "payment.n.01",
+          "via_synset": "cost.n.01"
+        }
+      ],
+      "definition": "the total spent for goods or services including money and time and labor"
+    },
+    {
+      "lemma": "cost of living",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "cost_of_living.n.01"
+        }
+      ],
+      "definition": "average cost of basic necessities of life (as food and shelter and clothing)"
+    },
+    {
+      "lemma": "cost overrun",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "cost_overrun.n.01"
+        }
+      ],
+      "definition": "excess of cost over budget"
+    },
+    {
+      "lemma": "cost-of-living allowance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "allowance.n.03",
+          "via_synset": "cost-of-living_allowance.n.01"
+        }
+      ],
+      "definition": "an allowance for changes in the consumer price index"
+    },
+    {
+      "lemma": "cost-of-living benefit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "benefit.n.01",
+          "via_synset": "cost-of-living_benefit.n.01"
+        }
+      ],
+      "definition": "a benefit that goes to anyone whose money receipts increase automatically as prices rise"
+    },
+    {
+      "lemma": "cough up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "cough_up.v.01"
+        }
+      ],
+      "definition": "give reluctantly"
+    },
+    {
+      "lemma": "counterbalance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "compensation.n.01",
+          "via_synset": "counterbalance.n.03"
+        }
+      ],
+      "definition": "a compensating equivalent"
+    },
+    {
+      "lemma": "counterbalance",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "cover.v.15",
+          "via_synset": "compensate.v.01"
+        }
+      ],
+      "definition": "adjust for"
+    },
+    {
+      "lemma": "cover",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "cover.v.15",
+          "via_synset": "cover.v.15"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "cover.v.15",
+          "via_synset": "cover.v.14"
+        }
+      ],
+      "definition": "make up for shortcomings or a feeling of inferiority by exaggerating good qualities"
+    },
+    {
+      "lemma": "credit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "credit.n.05"
+        }
+      ],
+      "definition": "arrangement for deferred payment for goods and services"
+    },
+    {
+      "lemma": "damage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "price.n.02"
+        }
+      ],
+      "definition": "the amount of money needed to purchase something"
+    },
+    {
+      "lemma": "damages",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "compensation.n.01",
+          "via_synset": "damages.n.01"
+        }
+      ],
+      "definition": "a sum of money paid in compensation for loss or injury"
+    },
+    {
+      "lemma": "deal",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "distribute.v.01"
+        }
+      ],
+      "definition": "administer or bestow, as in small portions"
+    },
+    {
+      "lemma": "deal out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "distribute.v.01"
+        }
+      ],
+      "definition": "administer or bestow, as in small portions"
+    },
+    {
+      "lemma": "death benefit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "benefit.n.01",
+          "via_synset": "death_benefit.n.01"
+        }
+      ],
+      "definition": "insurance or pension money payable to a beneficiary of a deceased"
+    },
+    {
+      "lemma": "deduction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "allowance.n.03",
+          "via_synset": "deduction.n.02"
+        }
+      ],
+      "definition": "an amount or percentage deducted"
+    },
+    {
+      "lemma": "deferred payment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "credit.n.05"
+        }
+      ],
+      "definition": "arrangement for deferred payment for goods and services"
+    },
+    {
+      "lemma": "deficit spending",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spending.n.01",
+          "via_synset": "deficit_spending.n.01"
+        }
+      ],
+      "definition": "spending money raised by borrowing; used by governments to stimulate their economy"
+    },
+    {
+      "lemma": "defray",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "defray.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "payment.n.02",
+          "via_synset": "defray.v.01"
+        }
+      ],
+      "definition": "bear the expenses of"
+    },
+    {
+      "lemma": "defrayal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "payment.n.02",
+          "via_synset": "payment.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "defray.v.01",
+          "via_synset": "payment.n.02"
+        }
+      ],
+      "definition": "the act of paying money"
+    },
+    {
+      "lemma": "defrayment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "payment.n.02",
+          "via_synset": "payment.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "defray.v.01",
+          "via_synset": "payment.n.02"
+        }
+      ],
+      "definition": "the act of paying money"
+    },
+    {
+      "lemma": "deplete",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "consume.v.05"
+        }
+      ],
+      "definition": "use up (resources or materials)"
+    },
+    {
+      "lemma": "depletion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consume.v.05",
+          "via_synset": "depletion.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consume.v.05",
+          "via_synset": "depletion.n.01"
+        }
+      ],
+      "definition": "the state of being depleted"
+    },
+    {
+      "lemma": "deposit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "down_payment.n.01"
+        }
+      ],
+      "definition": "a partial payment made at the time of purchase; the balance to be paid later"
+    },
+    {
+      "lemma": "deposit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "deposit.v.02"
+        }
+      ],
+      "definition": "put into a bank account"
+    },
+    {
+      "lemma": "depreciation allowance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "allowance.n.03",
+          "via_synset": "depreciation_allowance.n.01"
+        }
+      ],
+      "definition": "an allowance for loss due to depreciation"
+    },
+    {
+      "lemma": "digest",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pay.v.09",
+          "via_synset": "digest.v.03"
+        }
+      ],
+      "definition": "put up with something or somebody unpleasant"
+    },
+    {
+      "lemma": "disability benefit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "benefit.n.01",
+          "via_synset": "disability_benefit.n.01"
+        }
+      ],
+      "definition": "insurance benefits paid in case of disability"
+    },
+    {
+      "lemma": "disability check",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "regular_payment.n.01",
+          "via_synset": "disability_check.n.01"
+        }
+      ],
+      "definition": "a monthly payment made to someone who has become disabled and is unable to work"
+    },
+    {
+      "lemma": "disability payment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "regular_payment.n.01",
+          "via_synset": "disability_check.n.01"
+        }
+      ],
+      "definition": "a monthly payment made to someone who has become disabled and is unable to work"
+    },
+    {
+      "lemma": "disbursal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.02",
+          "via_synset": "spending.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disburse.v.01",
+          "via_synset": "spending.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "expense.n.01"
+        }
+      ],
+      "definition": "the act of spending or disbursing money"
+    },
+    {
+      "lemma": "disburse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "disburse.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "spending.n.01",
+          "via_synset": "disburse.v.01"
+        }
+      ],
+      "definition": "expend, as from a fund"
+    },
+    {
+      "lemma": "disbursement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.02",
+          "via_synset": "spending.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disburse.v.01",
+          "via_synset": "expense.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disburse.v.01",
+          "via_synset": "spending.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "expense.n.01"
+        }
+      ],
+      "definition": "the act of spending or disbursing money"
+    },
+    {
+      "lemma": "disburser",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disburse.v.01",
+          "via_synset": "spender.n.03"
+        }
+      ],
+      "definition": "someone who spends money to purchase goods or services"
+    },
+    {
+      "lemma": "discount",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "refund.n.01",
+          "via_synset": "rebate.n.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "allowance.n.03",
+          "via_synset": "deduction.n.02"
+        }
+      ],
+      "definition": "a refund of some fraction of the amount paid"
+    },
+    {
+      "lemma": "dish out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "distribute.v.01"
+        }
+      ],
+      "definition": "administer or bestow, as in small portions"
+    },
+    {
+      "lemma": "dispense",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "distribute.v.01"
+        }
+      ],
+      "definition": "administer or bestow, as in small portions"
+    },
+    {
+      "lemma": "dispense with",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "spare.v.03"
+        }
+      ],
+      "definition": "give up what is not strictly needed"
+    },
+    {
+      "lemma": "dissipate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.03",
+          "via_synset": "fritter.v.01"
+        }
+      ],
+      "definition": "spend frivolously and unwisely"
+    },
+    {
+      "lemma": "distribute",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "distribute.v.01"
+        }
+      ],
+      "definition": "administer or bestow, as in small portions"
+    },
+    {
+      "lemma": "distribution",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "distribution.n.04"
+        }
+      ],
+      "definition": "the commercial activity of transporting and selling goods from a producer to a consumer"
+    },
+    {
+      "lemma": "distribution cost",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "distribution_cost.n.01"
+        }
+      ],
+      "definition": "any cost incurred by a producer or wholesaler or retailer or distributor (as for advertising and shipping etc)"
+    },
+    {
+      "lemma": "dividend",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bonus.n.02",
+          "via_synset": "dividend.n.03"
+        }
+      ],
+      "definition": "a bonus; something extra (especially a share of a surplus)"
+    },
+    {
+      "lemma": "dole out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "distribute.v.01"
+        }
+      ],
+      "definition": "administer or bestow, as in small portions"
+    },
+    {
+      "lemma": "double time",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "wage.n.01",
+          "via_synset": "double_time.n.02"
+        }
+      ],
+      "definition": "a doubled wage (for working overtime)"
+    },
+    {
+      "lemma": "down payment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "down_payment.n.01"
+        }
+      ],
+      "definition": "a partial payment made at the time of purchase; the balance to be paid later"
+    },
+    {
+      "lemma": "drain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.05",
+          "via_synset": "drain.v.02"
+        }
+      ],
+      "definition": "deplete of resources"
+    },
+    {
+      "lemma": "drop",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "spend.v.02"
+        }
+      ],
+      "definition": "pay out"
+    },
+    {
+      "lemma": "e-commerce",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "e-commerce.n.01"
+        }
+      ],
+      "definition": "commerce conducted electronically (as on the internet)"
+    },
+    {
+      "lemma": "eat",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "consume.v.05"
+        }
+      ],
+      "definition": "use up (resources or materials)"
+    },
+    {
+      "lemma": "eat up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "consume.v.05"
+        }
+      ],
+      "definition": "use up (resources or materials)"
+    },
+    {
+      "lemma": "economise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "save.v.09"
+        }
+      ],
+      "definition": "spend sparingly, avoid the waste of"
+    },
+    {
+      "lemma": "economiser",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "save.v.09",
+          "via_synset": "economizer.n.01"
+        }
+      ],
+      "definition": "a frugal person who limits spending and avoids waste"
+    },
+    {
+      "lemma": "economize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "save.v.09"
+        }
+      ],
+      "definition": "spend sparingly, avoid the waste of"
+    },
+    {
+      "lemma": "economizer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "save.v.09",
+          "via_synset": "economizer.n.01"
+        }
+      ],
+      "definition": "a frugal person who limits spending and avoids waste"
+    },
+    {
+      "lemma": "economy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "save.v.09",
+          "via_synset": "economy.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "save.v.09",
+          "via_synset": "economy.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "save.v.09",
+          "via_synset": "economy.n.04"
+        }
+      ],
+      "definition": "the efficient use of resources"
+    },
+    {
+      "lemma": "emolument",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "compensation.n.01",
+          "via_synset": "emolument.n.01"
+        }
+      ],
+      "definition": "compensation received by virtue of holding an office or having employment (usually in the form of wages or fees)"
+    },
+    {
+      "lemma": "endure",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pay.v.09",
+          "via_synset": "digest.v.03"
+        }
+      ],
+      "definition": "put up with something or somebody unpleasant"
+    },
+    {
+      "lemma": "enfeoff",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "enfeoff.v.01"
+        }
+      ],
+      "definition": "put in possession of land in exchange for a pledge of service, in feudal society"
+    },
+    {
+      "lemma": "evasion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "evasion.n.02"
+        }
+      ],
+      "definition": "the deliberate act of failing to pay money"
+    },
+    {
+      "lemma": "even off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "cover.v.15",
+          "via_synset": "compensate.v.01"
+        }
+      ],
+      "definition": "adjust for"
+    },
+    {
+      "lemma": "even out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "cover.v.15",
+          "via_synset": "compensate.v.01"
+        }
+      ],
+      "definition": "adjust for"
+    },
+    {
+      "lemma": "even up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "cover.v.15",
+          "via_synset": "compensate.v.01"
+        }
+      ],
+      "definition": "adjust for"
+    },
+    {
+      "lemma": "exchange",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "exchange.n.08"
+        }
+      ],
+      "definition": "reciprocal transfer of equivalent sums of money (especially the currencies of different countries)"
+    },
+    {
+      "lemma": "exhaust",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "consume.v.05"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.05",
+          "via_synset": "run_down.v.06"
+        }
+      ],
+      "definition": "use up (resources or materials)"
+    },
+    {
+      "lemma": "exhaustion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consume.v.05",
+          "via_synset": "exhaustion.n.03"
+        }
+      ],
+      "definition": "the act of exhausting something entirely"
+    },
+    {
+      "lemma": "expend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "spend.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "expending.n.01",
+          "via_synset": "spend.v.02"
+        }
+      ],
+      "definition": "pay out"
+    },
+    {
+      "lemma": "expender",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "spend.v.02",
+          "via_synset": "spender.n.03"
+        }
+      ],
+      "definition": "someone who spends money to purchase goods or services"
+    },
+    {
+      "lemma": "expending",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spending.n.01",
+          "via_synset": "expending.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "spend.v.02",
+          "via_synset": "expending.n.01"
+        }
+      ],
+      "definition": "the act of spending money for goods or services"
+    },
+    {
+      "lemma": "expenditure",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spending.n.01",
+          "via_synset": "expending.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "spend.v.02",
+          "via_synset": "outgo.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "spend.v.02",
+          "via_synset": "expending.n.01"
+        }
+      ],
+      "definition": "the act of spending money for goods or services"
+    },
+    {
+      "lemma": "expense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "expense.n.01"
+        }
+      ],
+      "definition": "amounts paid for goods and services that may be currently tax deductible (as opposed to capital expenditures)"
+    },
+    {
+      "lemma": "expensive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "spend.v.02",
+          "via_synset": "expensive.a.01"
+        }
+      ],
+      "definition": "high in price or charging high prices"
+    },
+    {
+      "lemma": "exportation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "exporting.n.01"
+        }
+      ],
+      "definition": "the commercial activity of selling and shipping goods to a foreign country"
+    },
+    {
+      "lemma": "exporting",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "exporting.n.01"
+        }
+      ],
+      "definition": "the commercial activity of selling and shipping goods to a foreign country"
+    },
+    {
+      "lemma": "fee splitting",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.02",
+          "via_synset": "fee_splitting.n.01"
+        }
+      ],
+      "definition": "payment (usually by doctors or lawyers) of part of the fee in return for the referral"
+    },
+    {
+      "lemma": "final payment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "payoff.n.01"
+        }
+      ],
+      "definition": "the final payment of a debt"
+    },
+    {
+      "lemma": "finance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "finance.v.01",
+          "via_synset": "finance.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "finance.v.01",
+          "via_synset": "finance.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "finance.v.01",
+          "via_synset": "finance.n.01"
+        }
+      ],
+      "definition": "the management of money and credit and banking and investments"
+    },
+    {
+      "lemma": "finance",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "finance.v.01"
+        }
+      ],
+      "definition": "obtain or provide money for"
+    },
+    {
+      "lemma": "financing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "finance.v.01",
+          "via_synset": "financing.n.01"
+        }
+      ],
+      "definition": "the act of financing"
+    },
+    {
+      "lemma": "fine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "penalty.n.02",
+          "via_synset": "fine.n.01"
+        }
+      ],
+      "definition": "money extracted as a penalty"
+    },
+    {
+      "lemma": "fine",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fine.n.01",
+          "via_synset": "ticket.v.01"
+        }
+      ],
+      "definition": "issue a ticket or a fine to as a penalty"
+    },
+    {
+      "lemma": "fling",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.03",
+          "via_synset": "splurge.v.01"
+        }
+      ],
+      "definition": "indulge oneself"
+    },
+    {
+      "lemma": "fool",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.03",
+          "via_synset": "fritter.v.01"
+        }
+      ],
+      "definition": "spend frivolously and unwisely"
+    },
+    {
+      "lemma": "fool away",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.03",
+          "via_synset": "fritter.v.01"
+        }
+      ],
+      "definition": "spend frivolously and unwisely"
+    },
+    {
+      "lemma": "foot",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "foot.v.01"
+        }
+      ],
+      "definition": "pay for something"
+    },
+    {
+      "lemma": "forfeit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "penalty.n.02",
+          "via_synset": "forfeit.n.02"
+        }
+      ],
+      "definition": "a penalty for a fault or mistake that involves losing or giving up something"
+    },
+    {
+      "lemma": "forfeit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "forfeit.n.02",
+          "via_synset": "forfeit.v.01"
+        }
+      ],
+      "definition": "lose (s.th.) or lose the right to (s.th.) by some error, offense, or crime"
+    },
+    {
+      "lemma": "forfeiture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "penalty.n.02",
+          "via_synset": "forfeit.n.02"
+        }
+      ],
+      "definition": "a penalty for a fault or mistake that involves losing or giving up something"
+    },
+    {
+      "lemma": "found",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "wage.n.01",
+          "via_synset": "found.n.01"
+        }
+      ],
+      "definition": "food and lodging provided in addition to money"
+    },
+    {
+      "lemma": "fringe benefit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "benefit.n.01",
+          "via_synset": "fringe_benefit.n.01"
+        }
+      ],
+      "definition": "an incidental benefit awarded for certain types of employment (especially if it is regarded as a right)"
+    },
+    {
+      "lemma": "fritter",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.03",
+          "via_synset": "fritter.v.01"
+        }
+      ],
+      "definition": "spend frivolously and unwisely"
+    },
+    {
+      "lemma": "fritter away",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.03",
+          "via_synset": "fritter.v.01"
+        }
+      ],
+      "definition": "spend frivolously and unwisely"
+    },
+    {
+      "lemma": "frivol away",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.03",
+          "via_synset": "fritter.v.01"
+        }
+      ],
+      "definition": "spend frivolously and unwisely"
+    },
+    {
+      "lemma": "fund",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "finance.v.01",
+          "via_synset": "fund.v.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "invest.v.01",
+          "via_synset": "fund.v.04"
+        }
+      ],
+      "definition": "convert (short-term floating debt) into long-term debt that bears fixed interest and is represented by bonds"
+    },
+    {
+      "lemma": "furnish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "supply.v.01"
+        }
+      ],
+      "definition": "give something useful or necessary to"
+    },
+    {
+      "lemma": "get one's lumps",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.09",
+          "via_synset": "take_one's_lumps.v.01"
+        }
+      ],
+      "definition": "suffer the results or consequences of one's behavior or actions"
+    },
+    {
+      "lemma": "give",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pay.v.01",
+          "via_synset": "give.v.03"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "compensate.v.02",
+          "via_synset": "give.v.29"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "contribute.v.02"
+        }
+      ],
+      "definition": "transfer possession of something concrete or abstract to somebody"
+    },
+    {
+      "lemma": "give back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "refund.v.01"
+        }
+      ],
+      "definition": "pay back"
+    },
+    {
+      "lemma": "give up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "spare.v.03"
+        }
+      ],
+      "definition": "give up what is not strictly needed"
+    },
+    {
+      "lemma": "go Dutch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "go_dutch.v.01"
+        }
+      ],
+      "definition": "share expenses equally and split the cost of something"
+    },
+    {
+      "lemma": "grant",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "concede.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "accord.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "allow.v.03"
+        }
+      ],
+      "definition": "give over; surrender or relinquish to the physical control of another"
+    },
+    {
+      "lemma": "gratuity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "fringe_benefit.n.01",
+          "via_synset": "gratuity.n.01"
+        }
+      ],
+      "definition": "a relatively small amount of money given for services rendered (as by a waiter)"
+    },
+    {
+      "lemma": "grease one's palms",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "bribe.v.01"
+        }
+      ],
+      "definition": "make illegal payments to in exchange for favors or influence"
+    },
+    {
+      "lemma": "guerdon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "reward.n.02",
+          "via_synset": "guerdon.n.01"
+        }
+      ],
+      "definition": "a reward or payment"
+    },
+    {
+      "lemma": "half-pay",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "wage.n.01",
+          "via_synset": "half-pay.n.01"
+        }
+      ],
+      "definition": "reduced wage paid to someone who is not working full time"
+    },
+    {
+      "lemma": "handling charge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "handling_cost.n.01"
+        }
+      ],
+      "definition": "the cost of handling (especially the cost of packaging and mailing an order)"
+    },
+    {
+      "lemma": "handling cost",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "handling_cost.n.01"
+        }
+      ],
+      "definition": "the cost of handling (especially the cost of packaging and mailing an order)"
+    },
+    {
+      "lemma": "heap",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "heap.v.01"
+        }
+      ],
+      "definition": "bestow in large quantities"
+    },
+    {
+      "lemma": "hire-purchase",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "installment_plan.n.01",
+          "via_synset": "hire-purchase.n.01"
+        }
+      ],
+      "definition": "installment plan"
+    },
+    {
+      "lemma": "hold still for",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digest.v.03",
+          "via_synset": "stand_for.v.04"
+        }
+      ],
+      "definition": "tolerate or bear"
+    },
+    {
+      "lemma": "honorarium",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "reward.n.02",
+          "via_synset": "honorarium.n.01"
+        }
+      ],
+      "definition": "a fee paid for a nominally free service"
+    },
+    {
+      "lemma": "hush money",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bribe.n.01",
+          "via_synset": "hush_money.n.01"
+        }
+      ],
+      "definition": "a bribe paid to someone to insure that something is kept secret"
+    },
+    {
+      "lemma": "immediate payment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "cash.n.02"
+        }
+      ],
+      "definition": "prompt payment for goods or services in currency or by check"
+    },
+    {
+      "lemma": "importation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "importing.n.01"
+        }
+      ],
+      "definition": "the commercial activity of buying and bringing in goods from a foreign country"
+    },
+    {
+      "lemma": "importing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "importing.n.01"
+        }
+      ],
+      "definition": "the commercial activity of buying and bringing in goods from a foreign country"
+    },
+    {
+      "lemma": "incentive",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "bonus.n.02"
+        }
+      ],
+      "definition": "an additional payment (or other remuneration) to employees as a means of increasing output"
+    },
+    {
+      "lemma": "indemnification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "compensation.n.01",
+          "via_synset": "damages.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compensate.v.02",
+          "via_synset": "damages.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compensate.v.02",
+          "via_synset": "indemnification.n.02"
+        }
+      ],
+      "definition": "a sum of money paid in compensation for loss or injury"
+    },
+    {
+      "lemma": "indemnify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "compensate.v.02"
+        }
+      ],
+      "definition": "make amends for; pay compensation for"
+    },
+    {
+      "lemma": "indemnity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "compensation.n.01",
+          "via_synset": "damages.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compensate.v.02",
+          "via_synset": "damages.n.01"
+        }
+      ],
+      "definition": "a sum of money paid in compensation for loss or injury"
+    },
+    {
+      "lemma": "indulge",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.05",
+          "via_synset": "indulge.v.03"
+        }
+      ],
+      "definition": "enjoy to excess"
+    },
+    {
+      "lemma": "initial offering",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "initial_public_offering.n.01"
+        }
+      ],
+      "definition": "a corporation's first offer to sell stock to the public"
+    },
+    {
+      "lemma": "initial public offering",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "initial_public_offering.n.01"
+        }
+      ],
+      "definition": "a corporation's first offer to sell stock to the public"
+    },
+    {
+      "lemma": "installment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "installment.n.01"
+        }
+      ],
+      "definition": "a payment of part of a debt; usually paid at regular intervals"
+    },
+    {
+      "lemma": "installment buying",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "regular_payment.n.01",
+          "via_synset": "installment_plan.n.01"
+        }
+      ],
+      "definition": "a system for paying for goods by installments"
+    },
+    {
+      "lemma": "installment plan",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "regular_payment.n.01",
+          "via_synset": "installment_plan.n.01"
+        }
+      ],
+      "definition": "a system for paying for goods by installments"
+    },
+    {
+      "lemma": "insurance premium",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "premium.n.01"
+        }
+      ],
+      "definition": "payment for insurance"
+    },
+    {
+      "lemma": "insure",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "cover.v.15",
+          "via_synset": "cover.v.14"
+        }
+      ],
+      "definition": "protect by insurance"
+    },
+    {
+      "lemma": "interchange",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "exchange.n.08"
+        }
+      ],
+      "definition": "reciprocal transfer of equivalent sums of money (especially the currencies of different countries)"
+    },
+    {
+      "lemma": "invest",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "invest.v.01"
+        }
+      ],
+      "definition": "make an investment"
+    },
+    {
+      "lemma": "investing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "invest.v.01",
+          "via_synset": "investing.n.01"
+        }
+      ],
+      "definition": "the act of investing; laying out money or capital in an enterprise with the expectation of profit"
+    },
+    {
+      "lemma": "investment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "invest.v.01",
+          "via_synset": "investment.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "invest.v.01",
+          "via_synset": "investing.n.01"
+        }
+      ],
+      "definition": "money that is invested with an expectation of profit"
+    },
+    {
+      "lemma": "investor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "invest.v.01",
+          "via_synset": "investor.n.01"
+        }
+      ],
+      "definition": "someone who commits capital in order to gain financial returns"
+    },
+    {
+      "lemma": "IPO",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "initial_public_offering.n.01"
+        }
+      ],
+      "definition": "a corporation's first offer to sell stock to the public"
+    },
+    {
+      "lemma": "job",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "invest.v.01",
+          "via_synset": "speculate.v.04"
+        }
+      ],
+      "definition": "invest at a risk"
+    },
+    {
+      "lemma": "kick back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "kick_back.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "kickback.n.01",
+          "via_synset": "kick_back.v.01"
+        }
+      ],
+      "definition": "pay a kickback; make an illegal payment"
+    },
+    {
+      "lemma": "kick in",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "contribute.v.02"
+        }
+      ],
+      "definition": "contribute to some cause"
+    },
+    {
+      "lemma": "kickback",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bribe.n.01",
+          "via_synset": "kickback.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "kick_back.v.01",
+          "via_synset": "kickback.n.01"
+        }
+      ],
+      "definition": "a commercial bribe paid by a seller to a purchasing agent in order to induce the agent to enter into the transaction"
+    },
+    {
+      "lemma": "lavish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.03",
+          "via_synset": "lavish.v.01"
+        }
+      ],
+      "definition": "expend profusely; also used with abstract nouns"
+    },
+    {
+      "lemma": "lay out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "lay_out.v.03"
+        }
+      ],
+      "definition": "spend or invest"
+    },
+    {
+      "lemma": "lease",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "lease.v.03"
+        }
+      ],
+      "definition": "grant use or occupation of under a term of contract"
+    },
+    {
+      "lemma": "lend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "lend.v.02"
+        }
+      ],
+      "definition": "give temporarily; let have for a limited time"
+    },
+    {
+      "lemma": "let",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "lease.v.03"
+        }
+      ],
+      "definition": "grant use or occupation of under a term of contract"
+    },
+    {
+      "lemma": "library fine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "fine.n.01",
+          "via_synset": "library_fine.n.01"
+        }
+      ],
+      "definition": "fine imposed by a library on books that overdue when returned"
+    },
+    {
+      "lemma": "liquidate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "settle.v.14",
+          "via_synset": "liquidate.v.04"
+        }
+      ],
+      "definition": "settle the affairs of by determining the debts and applying the assets to pay them off"
+    },
+    {
+      "lemma": "live with",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digest.v.03",
+          "via_synset": "accept.v.07"
+        }
+      ],
+      "definition": "tolerate or accommodate oneself to"
+    },
+    {
+      "lemma": "living wage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "wage.n.01",
+          "via_synset": "living_wage.n.01"
+        }
+      ],
+      "definition": "a wage sufficient for a worker and family to subsist comfortably"
+    },
+    {
+      "lemma": "loan",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "lend.v.02"
+        }
+      ],
+      "definition": "give temporarily; let have for a limited time"
+    },
+    {
+      "lemma": "lot",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "distribute.v.01"
+        }
+      ],
+      "definition": "administer or bestow, as in small portions"
+    },
+    {
+      "lemma": "lump sum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "lump_sum.n.01"
+        }
+      ],
+      "definition": "a complete payment consisting of a single sum of money"
+    },
+    {
+      "lemma": "luxuriate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.05",
+          "via_synset": "indulge.v.03"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.03",
+          "via_synset": "luxuriate.v.01"
+        }
+      ],
+      "definition": "enjoy to excess"
+    },
+    {
+      "lemma": "maintenance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "support_payment.n.01",
+          "via_synset": "alimony.n.01"
+        }
+      ],
+      "definition": "court-ordered support paid by one spouse to another after they are separated"
+    },
+    {
+      "lemma": "make up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pay.v.05",
+          "via_synset": "pay.v.05"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "cover.v.15",
+          "via_synset": "compensate.v.01"
+        }
+      ],
+      "definition": "do or give something to somebody in return"
+    },
+    {
+      "lemma": "margin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "down_payment.n.01",
+          "via_synset": "margin.n.03"
+        }
+      ],
+      "definition": "the amount of collateral a customer deposits with a broker when borrowing from the broker to buy securities"
+    },
+    {
+      "lemma": "marketing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "marketing.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "selling.n.01"
+        }
+      ],
+      "definition": "the commercial processes involved in promoting and selling and distributing a product or service"
+    },
+    {
+      "lemma": "marketing cost",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "marketing_cost.n.01"
+        }
+      ],
+      "definition": "the cost of marketing (e.g., the cost of transferring title and moving goods to the customer)"
+    },
+    {
+      "lemma": "meed",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "reward.n.02",
+          "via_synset": "meed.n.01"
+        }
+      ],
+      "definition": "a fitting reward"
+    },
+    {
+      "lemma": "mercantilism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "payment.n.02",
+          "via_synset": "commerce.n.01"
+        }
+      ],
+      "definition": "transactions (sales and purchases) having the objective of supplying commodities (goods and services)"
+    },
+    {
+      "lemma": "merchandising",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "selling.n.01"
+        }
+      ],
+      "definition": "the exchange of goods for an agreed sum of money"
+    },
+    {
+      "lemma": "merit pay",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "wage.n.01",
+          "via_synset": "merit_pay.n.01"
+        }
+      ],
+      "definition": "extra pay awarded to an employee on the basis of merit (especially to school teachers)"
+    },
+    {
+      "lemma": "mete out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "distribute.v.01"
+        }
+      ],
+      "definition": "administer or bestow, as in small portions"
+    },
+    {
+      "lemma": "minimum wage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "wage.n.01",
+          "via_synset": "minimum_wage.n.01"
+        }
+      ],
+      "definition": "the lowest wage that an employer is allowed to pay; determined by contract or by law"
+    },
+    {
+      "lemma": "misspend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "misspend.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "misspend.v.02"
+        }
+      ],
+      "definition": "spend time badly or unwisely"
+    },
+    {
+      "lemma": "mulct",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "penalty.n.02",
+          "via_synset": "fine.n.01"
+        }
+      ],
+      "definition": "money extracted as a penalty"
+    },
+    {
+      "lemma": "mulct",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fine.n.01",
+          "via_synset": "mulct.v.02"
+        }
+      ],
+      "definition": "impose a fine on"
+    },
+    {
+      "lemma": "never-never",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "installment_plan.n.01",
+          "via_synset": "hire-purchase.n.01"
+        }
+      ],
+      "definition": "installment plan"
+    },
+    {
+      "lemma": "nickel-and-dime",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "penny-pinch.v.01"
+        }
+      ],
+      "definition": "spend money frugally; spend as little as possible"
+    },
+    {
+      "lemma": "nonpayment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "payment.n.01",
+          "via_synset": "nonpayment.n.02"
+        },
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "payment.n.02",
+          "via_synset": "evasion.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "evasion.n.02"
+        }
+      ],
+      "definition": "loss resulting from failure of a debt to be paid"
+    },
+    {
+      "lemma": "occupy",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "consume.v.05",
+          "via_synset": "take.v.02"
+        }
+      ],
+      "definition": "require (time or space)"
+    },
+    {
+      "lemma": "offer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "offer.v.02"
+        }
+      ],
+      "definition": "present for acceptance or rejection"
+    },
+    {
+      "lemma": "offset",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "compensation.n.01",
+          "via_synset": "counterbalance.n.03"
+        }
+      ],
+      "definition": "a compensating equivalent"
+    },
+    {
+      "lemma": "old-age pension",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "pension.n.01",
+          "via_synset": "old-age_pension.n.01"
+        }
+      ],
+      "definition": "a monthly payment made to someone who is retired from work"
+    },
+    {
+      "lemma": "opportunity cost",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "opportunity_cost.n.01"
+        }
+      ],
+      "definition": "cost in terms of foregoing alternatives"
+    },
+    {
+      "lemma": "ordinary annuity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "annuity.n.01",
+          "via_synset": "ordinary_annuity.n.01"
+        }
+      ],
+      "definition": "an annuity paid in a series of more or less equal payments at the end of equally spaced periods"
+    },
+    {
+      "lemma": "outlay",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.02",
+          "via_synset": "spending.n.01"
+        }
+      ],
+      "definition": "the act of spending or disbursing money"
+    },
+    {
+      "lemma": "overcompensate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "cover.v.15",
+          "via_synset": "cover.v.15"
+        }
+      ],
+      "definition": "make up for shortcomings or a feeling of inferiority by exaggerating good qualities"
+    },
+    {
+      "lemma": "overcompensation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "compensation.n.01",
+          "via_synset": "overcompensation.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cover.v.15",
+          "via_synset": "overcompensation.n.01"
+        }
+      ],
+      "definition": "excessive compensation"
+    },
+    {
+      "lemma": "overpay",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "overpay.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "overpayment.n.01",
+          "via_synset": "overpay.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "overpayment.n.02",
+          "via_synset": "overpay.v.01"
+        }
+      ],
+      "definition": "pay too much"
+    },
+    {
+      "lemma": "overpayment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "overpayment.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.02",
+          "via_synset": "overpayment.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "overpay.v.01",
+          "via_synset": "overpayment.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "overpay.v.01",
+          "via_synset": "overpayment.n.02"
+        }
+      ],
+      "definition": "a payment larger than needed or expected"
+    },
+    {
+      "lemma": "overspend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.03",
+          "via_synset": "overspend.v.02"
+        }
+      ],
+      "definition": "spend at a high rate"
+    },
+    {
+      "lemma": "palimony",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "support_payment.n.01",
+          "via_synset": "palimony.n.01"
+        }
+      ],
+      "definition": "support paid by one half of an unmarried partnership after the relationship ends"
+    },
+    {
+      "lemma": "parcel out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "distribute.v.01"
+        }
+      ],
+      "definition": "administer or bestow, as in small portions"
+    },
+    {
+      "lemma": "part with",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "spare.v.03"
+        }
+      ],
+      "definition": "give up what is not strictly needed"
+    },
+    {
+      "lemma": "pay",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "regular_payment.n.01",
+          "via_synset": "wage.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pay.v.01",
+          "via_synset": "wage.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pay.v.05",
+          "via_synset": "wage.n.01"
+        }
+      ],
+      "definition": "something that remunerates"
+    },
+    {
+      "lemma": "pay",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pay.v.01",
+          "via_synset": "pay.v.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pay.v.05",
+          "via_synset": "pay.v.05"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pay.v.09",
+          "via_synset": "pay.v.09"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "payment.n.02",
+          "via_synset": "pay.v.11"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "payment.n.02",
+          "via_synset": "pay_up.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "payment.n.02",
+          "via_synset": "pay.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wage.n.01",
+          "via_synset": "yield.v.10"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wage.n.01",
+          "via_synset": "pay_up.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wage.n.01",
+          "via_synset": "pay.v.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wage.n.01",
+          "via_synset": "pay.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "payment.n.01",
+          "via_synset": "pay.v.11"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "payment.n.01",
+          "via_synset": "pay_up.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "payment.n.01",
+          "via_synset": "pay.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "settle.v.14",
+          "via_synset": "pay.v.11"
+        }
+      ],
+      "definition": "give money, usually in exchange for goods or services"
+    },
+    {
+      "lemma": "pay cash",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "pay_cash.v.01"
+        }
+      ],
+      "definition": "pay (for something) with cash"
+    },
+    {
+      "lemma": "pay envelope",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "wage.n.01",
+          "via_synset": "pay_envelope.n.01"
+        }
+      ],
+      "definition": "wages enclosed in an envelope for distribution to the wage earner"
+    },
+    {
+      "lemma": "pay off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pay.v.05",
+          "via_synset": "pay.v.05"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "redeem.v.05"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bribe.v.01",
+          "via_synset": "buy_off.v.01"
+        }
+      ],
+      "definition": "do or give something to somebody in return"
+    },
+    {
+      "lemma": "pay out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "disburse.v.01"
+        }
+      ],
+      "definition": "expend, as from a fund"
+    },
+    {
+      "lemma": "pay packet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "wage.n.01",
+          "via_synset": "pay_envelope.n.01"
+        }
+      ],
+      "definition": "wages enclosed in an envelope for distribution to the wage earner"
+    },
+    {
+      "lemma": "payee",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pay.v.01",
+          "via_synset": "payee.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pay.v.05",
+          "via_synset": "payee.n.01"
+        }
+      ],
+      "definition": "a person to whom money is paid"
+    },
+    {
+      "lemma": "payer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pay.v.09",
+          "via_synset": "payer.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pay.v.01",
+          "via_synset": "payer.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pay.v.05",
+          "via_synset": "payer.n.01"
+        }
+      ],
+      "definition": "a person who pays money for something"
+    },
+    {
+      "lemma": "payment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "payment.n.01",
+          "via_synset": "payment.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "payment.n.02",
+          "via_synset": "payment.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pay.v.01",
+          "via_synset": "payment.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pay.v.01",
+          "via_synset": "payment.n.02"
+        }
+      ],
+      "definition": "a sum of money paid or a claim discharged"
+    },
+    {
+      "lemma": "payoff",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "payoff.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "bribe.n.01"
+        }
+      ],
+      "definition": "the final payment of a debt"
+    },
+    {
+      "lemma": "payola",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bribe.n.01",
+          "via_synset": "payola.n.01"
+        }
+      ],
+      "definition": "a bribe given to a disc jockey to induce him to promote a particular record"
+    },
+    {
+      "lemma": "penalty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "penalty.n.02"
+        }
+      ],
+      "definition": "a payment required for not fulfilling a contract"
+    },
+    {
+      "lemma": "penny-pinch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "penny-pinch.v.01"
+        }
+      ],
+      "definition": "spend money frugally; spend as little as possible"
+    },
+    {
+      "lemma": "pension",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "regular_payment.n.01",
+          "via_synset": "pension.n.01"
+        }
+      ],
+      "definition": "a regular payment to a person that is intended to allow them to subsist without working"
+    },
+    {
+      "lemma": "pension",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pension.n.01",
+          "via_synset": "pension.v.01"
+        }
+      ],
+      "definition": "grant a pension to"
+    },
+    {
+      "lemma": "perk",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "benefit.n.01",
+          "via_synset": "fringe_benefit.n.01"
+        }
+      ],
+      "definition": "an incidental benefit awarded for certain types of employment (especially if it is regarded as a right)"
+    },
+    {
+      "lemma": "perquisite",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "benefit.n.01",
+          "via_synset": "fringe_benefit.n.01"
+        }
+      ],
+      "definition": "an incidental benefit awarded for certain types of employment (especially if it is regarded as a right)"
+    },
+    {
+      "lemma": "physical value",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "reproduction_cost.n.01"
+        }
+      ],
+      "definition": "cost of reproducing physical property minus various allowances (especially depreciation)"
+    },
+    {
+      "lemma": "pick",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "foot.v.01"
+        }
+      ],
+      "definition": "pay for something"
+    },
+    {
+      "lemma": "piddle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "piddle.v.01"
+        }
+      ],
+      "definition": "waste time; spend one's time idly or inefficiently"
+    },
+    {
+      "lemma": "piddle away",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "piddle.v.01"
+        }
+      ],
+      "definition": "waste time; spend one's time idly or inefficiently"
+    },
+    {
+      "lemma": "pittance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "pittance.n.01"
+        }
+      ],
+      "definition": "an inadequate payment"
+    },
+    {
+      "lemma": "place",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "invest.v.01"
+        }
+      ],
+      "definition": "make an investment"
+    },
+    {
+      "lemma": "play out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.05",
+          "via_synset": "run_down.v.06"
+        }
+      ],
+      "definition": "deplete"
+    },
+    {
+      "lemma": "ply",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "provide.v.02"
+        }
+      ],
+      "definition": "give what is desired or needed, especially support, food or sustenance"
+    },
+    {
+      "lemma": "pony up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "cough_up.v.01"
+        }
+      ],
+      "definition": "give reluctantly"
+    },
+    {
+      "lemma": "portage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "portage.n.01"
+        }
+      ],
+      "definition": "the cost of carrying or transporting"
+    },
+    {
+      "lemma": "pourboire",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "fringe_benefit.n.01",
+          "via_synset": "gratuity.n.01"
+        }
+      ],
+      "definition": "a relatively small amount of money given for services rendered (as by a waiter)"
+    },
+    {
+      "lemma": "prebend",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "stipend.n.01",
+          "via_synset": "prebend.n.01"
+        }
+      ],
+      "definition": "the stipend assigned by a cathedral to a canon"
+    },
+    {
+      "lemma": "prefer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "prefer.v.04"
+        }
+      ],
+      "definition": "give preference to one creditor over another"
+    },
+    {
+      "lemma": "premium",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "premium.n.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "reward.n.02",
+          "via_synset": "bounty.n.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bonus.n.02",
+          "via_synset": "premium.n.04"
+        }
+      ],
+      "definition": "payment for insurance"
+    },
+    {
+      "lemma": "prepay",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "prepay.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "prepayment.n.01",
+          "via_synset": "prepay.v.01"
+        }
+      ],
+      "definition": "pay for something before receiving it"
+    },
+    {
+      "lemma": "prepayment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.02",
+          "via_synset": "prepayment.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "prepay.v.01",
+          "via_synset": "prepayment.n.01"
+        }
+      ],
+      "definition": "payment in advance"
+    },
+    {
+      "lemma": "present",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "present.v.04"
+        }
+      ],
+      "definition": "hand over formally"
+    },
+    {
+      "lemma": "price",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "price.n.06"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "price.n.02"
+        }
+      ],
+      "definition": "cost of bribing someone"
+    },
+    {
+      "lemma": "production cost",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "production_cost.n.01"
+        }
+      ],
+      "definition": "combined costs of raw material and labor incurred in producing goods"
+    },
+    {
+      "lemma": "proffer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "offer.v.02"
+        }
+      ],
+      "definition": "present for acceptance or rejection"
+    },
+    {
+      "lemma": "prorate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "settle.v.14",
+          "via_synset": "prorate.v.01"
+        }
+      ],
+      "definition": "make a proportional settlement or distribution"
+    },
+    {
+      "lemma": "provide",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "provide.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "supply.v.01"
+        }
+      ],
+      "definition": "give what is desired or needed, especially support, food or sustenance"
+    },
+    {
+      "lemma": "pump priming",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spending.n.01",
+          "via_synset": "deficit_spending.n.01"
+        }
+      ],
+      "definition": "spending money raised by borrowing; used by governments to stimulate their economy"
+    },
+    {
+      "lemma": "put",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "invest.v.01"
+        }
+      ],
+      "definition": "make an investment"
+    },
+    {
+      "lemma": "put up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pay.v.09",
+          "via_synset": "digest.v.03"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "put_up.v.08"
+        }
+      ],
+      "definition": "put up with something or somebody unpleasant"
+    },
+    {
+      "lemma": "quittance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "repayment.n.02"
+        }
+      ],
+      "definition": "payment of a debt or obligation"
+    },
+    {
+      "lemma": "ransom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.02",
+          "via_synset": "ransom.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "ransom.n.01"
+        }
+      ],
+      "definition": "payment for the release of someone"
+    },
+    {
+      "lemma": "ransom",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ransom.n.02",
+          "via_synset": "ransom.v.01"
+        }
+      ],
+      "definition": "exchange or buy back for money; under threat"
+    },
+    {
+      "lemma": "ransom money",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "ransom.n.01"
+        }
+      ],
+      "definition": "money demanded for the return of a captured person"
+    },
+    {
+      "lemma": "rebate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "refund.n.01",
+          "via_synset": "rebate.n.01"
+        }
+      ],
+      "definition": "a refund of some fraction of the amount paid"
+    },
+    {
+      "lemma": "rebate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "rebate.n.01",
+          "via_synset": "rebate.v.01"
+        }
+      ],
+      "definition": "give a reduction in the price during a sale"
+    },
+    {
+      "lemma": "recompense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "recompense.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compensate.v.06",
+          "via_synset": "recompense.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compensate.v.06",
+          "via_synset": "recompense.n.01"
+        }
+      ],
+      "definition": "payment or reward (as for service rendered)"
+    },
+    {
+      "lemma": "recompense",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "compensate.v.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "compensate.v.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "recompense.n.01",
+          "via_synset": "compensate.v.06"
+        }
+      ],
+      "definition": "make amends for; pay compensation for"
+    },
+    {
+      "lemma": "recoup",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "compensate.v.06",
+          "via_synset": "recoup.v.01"
+        }
+      ],
+      "definition": "reimburse or compensate (someone), as for a loss"
+    },
+    {
+      "lemma": "redeem",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "redeem.v.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "redemption.n.02",
+          "via_synset": "redeem.v.05"
+        }
+      ],
+      "definition": "pay off (loans or promissory notes)"
+    },
+    {
+      "lemma": "redeemer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "redeem.v.05",
+          "via_synset": "redeemer.n.02"
+        }
+      ],
+      "definition": "someone who redeems or buys back (promissory notes or merchandise or commercial paper etc.)"
+    },
+    {
+      "lemma": "redemption",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "repayment.n.02",
+          "via_synset": "redemption.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "redeem.v.05",
+          "via_synset": "redemption.n.02"
+        }
+      ],
+      "definition": "repayment of the principal amount of a debt or security at or before maturity (as when a corporation repurchases its own stock)"
+    },
+    {
+      "lemma": "redress",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "compensation.n.01",
+          "via_synset": "damages.n.01"
+        }
+      ],
+      "definition": "a sum of money paid in compensation for loss or injury"
+    },
+    {
+      "lemma": "refinance",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "finance.v.01",
+          "via_synset": "refinance.v.01"
+        }
+      ],
+      "definition": "renew the financing of"
+    },
+    {
+      "lemma": "refund",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "refund.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.02",
+          "via_synset": "refund.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "refund.v.01",
+          "via_synset": "refund.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "refund.v.01",
+          "via_synset": "refund.n.01"
+        }
+      ],
+      "definition": "money returned to a payer"
+    },
+    {
+      "lemma": "refund",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "refund.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "refund.n.02",
+          "via_synset": "refund.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "refund.n.01",
+          "via_synset": "refund.v.01"
+        }
+      ],
+      "definition": "pay back"
+    },
+    {
+      "lemma": "regular payment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "regular_payment.n.01"
+        }
+      ],
+      "definition": "a payment made at regular times"
+    },
+    {
+      "lemma": "reimburse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "refund.v.01",
+          "via_synset": "reimburse.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "compensate.v.06",
+          "via_synset": "recoup.v.01"
+        }
+      ],
+      "definition": "pay back for some expense incurred"
+    },
+    {
+      "lemma": "reimbursement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "compensation.n.01",
+          "via_synset": "reimbursement.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reimburse.v.01",
+          "via_synset": "reimbursement.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "recoup.v.01",
+          "via_synset": "reimbursement.n.01"
+        }
+      ],
+      "definition": "compensation paid (to someone) for damages or losses or money already spent etc."
+    },
+    {
+      "lemma": "remission",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "remittance.n.01"
+        }
+      ],
+      "definition": "a payment of money sent to a person in another place"
+    },
+    {
+      "lemma": "remit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "remit.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remittance.n.01",
+          "via_synset": "remit.v.01"
+        }
+      ],
+      "definition": "send (money) in payment"
+    },
+    {
+      "lemma": "remitment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "remittance.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remit.v.01",
+          "via_synset": "remittance.n.01"
+        }
+      ],
+      "definition": "a payment of money sent to a person in another place"
+    },
+    {
+      "lemma": "remittal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "remittance.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remit.v.01",
+          "via_synset": "remittance.n.01"
+        }
+      ],
+      "definition": "a payment of money sent to a person in another place"
+    },
+    {
+      "lemma": "remittance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "remittance.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remit.v.01",
+          "via_synset": "remittance.n.01"
+        }
+      ],
+      "definition": "a payment of money sent to a person in another place"
+    },
+    {
+      "lemma": "remunerate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "compensate.v.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wage.n.01",
+          "via_synset": "compensate.v.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remuneration.n.02",
+          "via_synset": "compensate.v.06"
+        }
+      ],
+      "definition": "make payment to; compensate"
+    },
+    {
+      "lemma": "remuneration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.02",
+          "via_synset": "remuneration.n.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "regular_payment.n.01",
+          "via_synset": "wage.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compensate.v.06",
+          "via_synset": "wage.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compensate.v.06",
+          "via_synset": "remuneration.n.02"
+        }
+      ],
+      "definition": "the act of paying for goods or services or to recompense for losses"
+    },
+    {
+      "lemma": "remunerative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compensate.v.06",
+          "via_synset": "lucrative.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compensate.v.06",
+          "via_synset": "compensable.s.01"
+        }
+      ],
+      "definition": "producing a sizeable profit"
+    },
+    {
+      "lemma": "remunerator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compensate.v.06",
+          "via_synset": "payer.n.01"
+        }
+      ],
+      "definition": "a person who pays money for something"
+    },
+    {
+      "lemma": "render",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "rendering.n.07",
+          "via_synset": "give.v.21"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "render.v.07"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "supply.v.01"
+        }
+      ],
+      "definition": "bestow"
+    },
+    {
+      "lemma": "rendering",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.02",
+          "via_synset": "rendering.n.07"
+        }
+      ],
+      "definition": "giving in acknowledgment of obligation"
+    },
+    {
+      "lemma": "rent",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "lease.v.03"
+        }
+      ],
+      "definition": "grant use or occupation of under a term of contract"
+    },
+    {
+      "lemma": "rent-rebate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "rebate.n.01",
+          "via_synset": "rent-rebate.n.01"
+        }
+      ],
+      "definition": "a rebate on rent given by a local government authority"
+    },
+    {
+      "lemma": "rente",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "regular_payment.n.01",
+          "via_synset": "annuity.n.01"
+        }
+      ],
+      "definition": "income from capital investment paid in a series of regular payments"
+    },
+    {
+      "lemma": "repair",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "compensate.v.02"
+        }
+      ],
+      "definition": "make amends for; pay compensation for"
+    },
+    {
+      "lemma": "reparation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "compensation.n.01",
+          "via_synset": "reparation.n.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "compensation.n.01",
+          "via_synset": "reparation.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compensate.v.02",
+          "via_synset": "reparation.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "compensate.v.02",
+          "via_synset": "reparation.n.04"
+        }
+      ],
+      "definition": "compensation (given or received) for an insult or injury"
+    },
+    {
+      "lemma": "repay",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "refund.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "repayment.n.02",
+          "via_synset": "requite.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "repayment.n.02",
+          "via_synset": "refund.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "refund.n.02",
+          "via_synset": "requite.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "refund.n.02",
+          "via_synset": "refund.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "requite.v.01"
+        }
+      ],
+      "definition": "pay back"
+    },
+    {
+      "lemma": "repayment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "repayment.n.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.02",
+          "via_synset": "refund.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "refund.v.01",
+          "via_synset": "repayment.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "refund.v.01",
+          "via_synset": "refund.n.02"
+        }
+      ],
+      "definition": "payment of a debt or obligation"
+    },
+    {
+      "lemma": "replacement cost",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "replacement_cost.n.01"
+        }
+      ],
+      "definition": "current cost of replacing a fixed asset with a new one of equal effectiveness"
+    },
+    {
+      "lemma": "reproduction cost",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "reproduction_cost.n.01"
+        }
+      ],
+      "definition": "cost of reproducing physical property minus various allowances (especially depreciation)"
+    },
+    {
+      "lemma": "requital",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "penalty.n.02",
+          "via_synset": "retribution.n.01"
+        }
+      ],
+      "definition": "a justly deserved penalty"
+    },
+    {
+      "lemma": "requite",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "requite.v.01"
+        }
+      ],
+      "definition": "make repayment for or return something"
+    },
+    {
+      "lemma": "residual",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "residual.n.02"
+        }
+      ],
+      "definition": "(often plural) a payment that is made to a performer or writer or director of a television show or commercial that is paid for every repeat showing"
+    },
+    {
+      "lemma": "restitute",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "refund.v.01",
+          "via_synset": "restore.v.03"
+        }
+      ],
+      "definition": "give or bring back"
+    },
+    {
+      "lemma": "restitution",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "compensation.n.01",
+          "via_synset": "damages.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "restore.v.03",
+          "via_synset": "restitution.n.03"
+        }
+      ],
+      "definition": "a sum of money paid in compensation for loss or injury"
+    },
+    {
+      "lemma": "restoration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "restore.v.03",
+          "via_synset": "restitution.n.03"
+        }
+      ],
+      "definition": "getting something back again"
+    },
+    {
+      "lemma": "restore",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "refund.v.01",
+          "via_synset": "restore.v.03"
+        }
+      ],
+      "definition": "give or bring back"
+    },
+    {
+      "lemma": "retirement benefit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "pension.n.01",
+          "via_synset": "old-age_pension.n.01"
+        }
+      ],
+      "definition": "a monthly payment made to someone who is retired from work"
+    },
+    {
+      "lemma": "retirement check",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "pension.n.01",
+          "via_synset": "old-age_pension.n.01"
+        }
+      ],
+      "definition": "a monthly payment made to someone who is retired from work"
+    },
+    {
+      "lemma": "retirement fund",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "pension.n.01",
+          "via_synset": "old-age_pension.n.01"
+        }
+      ],
+      "definition": "a monthly payment made to someone who is retired from work"
+    },
+    {
+      "lemma": "retirement pension",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "pension.n.01",
+          "via_synset": "old-age_pension.n.01"
+        }
+      ],
+      "definition": "a monthly payment made to someone who is retired from work"
+    },
+    {
+      "lemma": "retribution",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "penalty.n.02",
+          "via_synset": "retribution.n.01"
+        }
+      ],
+      "definition": "a justly deserved penalty"
+    },
+    {
+      "lemma": "return",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "refund.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "render.v.07"
+        }
+      ],
+      "definition": "pay back"
+    },
+    {
+      "lemma": "reversionary annuity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "annuity.n.01",
+          "via_synset": "reversionary_annuity.n.01"
+        }
+      ],
+      "definition": "an annuity payable to one person in the event that someone else is unable to receive it"
+    },
+    {
+      "lemma": "reward",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "reward.n.02"
+        }
+      ],
+      "definition": "payment made in return for a service rendered"
+    },
+    {
+      "lemma": "roll over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "invest.v.01",
+          "via_synset": "roll_over.v.03"
+        }
+      ],
+      "definition": "re-invest (a previous investment) into a similar fund or security"
+    },
+    {
+      "lemma": "royalty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "royalty.n.01"
+        }
+      ],
+      "definition": "payment to the holder of a patent or copyright or resource for the right to use their property"
+    },
+    {
+      "lemma": "run down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.05",
+          "via_synset": "run_down.v.06"
+        }
+      ],
+      "definition": "deplete"
+    },
+    {
+      "lemma": "run out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.05",
+          "via_synset": "run_out.v.06"
+        }
+      ],
+      "definition": "exhaust the supply of"
+    },
+    {
+      "lemma": "run through",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "consume.v.05"
+        }
+      ],
+      "definition": "use up (resources or materials)"
+    },
+    {
+      "lemma": "sales incentive",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bonus.n.02",
+          "via_synset": "sales_incentive.n.01"
+        }
+      ],
+      "definition": "remuneration offered to a salesperson for exceeding some predetermined sales goal"
+    },
+    {
+      "lemma": "sap",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.05",
+          "via_synset": "run_down.v.06"
+        }
+      ],
+      "definition": "deplete"
+    },
+    {
+      "lemma": "satisfaction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "satisfaction.n.04"
+        }
+      ],
+      "definition": "(law) the payment of a debt or fulfillment of an obligation"
+    },
+    {
+      "lemma": "save",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "save.v.09"
+        }
+      ],
+      "definition": "spend sparingly, avoid the waste of"
+    },
+    {
+      "lemma": "saver",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "save.v.09",
+          "via_synset": "saver.n.02"
+        }
+      ],
+      "definition": "someone who saves (especially money)"
+    },
+    {
+      "lemma": "seasonal adjustment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "allowance.n.03",
+          "via_synset": "seasonal_adjustment.n.01"
+        }
+      ],
+      "definition": "a statistical adjustment made to accommodate predictable fluctuations as a function of the season of the year"
+    },
+    {
+      "lemma": "security deposit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "down_payment.n.01",
+          "via_synset": "margin.n.03"
+        }
+      ],
+      "definition": "the amount of collateral a customer deposits with a broker when borrowing from the broker to buy securities"
+    },
+    {
+      "lemma": "seed",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "finance.v.01",
+          "via_synset": "seed.v.02"
+        }
+      ],
+      "definition": "help (an enterprise) in its early stages of development by providing seed money"
+    },
+    {
+      "lemma": "selling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "selling.n.01"
+        }
+      ],
+      "definition": "the exchange of goods for an agreed sum of money"
+    },
+    {
+      "lemma": "settle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pay.v.05",
+          "via_synset": "settle.v.14"
+        }
+      ],
+      "definition": "dispose of; make a financial settlement"
+    },
+    {
+      "lemma": "shell out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "distribute.v.01"
+        }
+      ],
+      "definition": "administer or bestow, as in small portions"
+    },
+    {
+      "lemma": "shelter",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "invest.v.01",
+          "via_synset": "shelter.v.02"
+        }
+      ],
+      "definition": "invest (money) so that it is not taxable"
+    },
+    {
+      "lemma": "shoot",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.03",
+          "via_synset": "fritter.v.01"
+        }
+      ],
+      "definition": "spend frivolously and unwisely"
+    },
+    {
+      "lemma": "shower",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.03",
+          "via_synset": "lavish.v.01"
+        }
+      ],
+      "definition": "expend profusely; also used with abstract nouns"
+    },
+    {
+      "lemma": "sick benefit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "benefit.n.01",
+          "via_synset": "sick_benefit.n.01"
+        }
+      ],
+      "definition": "money paid (by the government) to someone who is too ill to work"
+    },
+    {
+      "lemma": "sick pay",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "wage.n.01",
+          "via_synset": "sick_pay.n.01"
+        }
+      ],
+      "definition": "wages paid to an employee who is on sick leave"
+    },
+    {
+      "lemma": "sickness benefit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "benefit.n.01",
+          "via_synset": "sick_benefit.n.01"
+        }
+      ],
+      "definition": "money paid (by the government) to someone who is too ill to work"
+    },
+    {
+      "lemma": "sit out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digest.v.03",
+          "via_synset": "sit_out.v.02"
+        }
+      ],
+      "definition": "endure to the end"
+    },
+    {
+      "lemma": "soap",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bribe.n.01",
+          "via_synset": "soap.n.02"
+        }
+      ],
+      "definition": "money offered as a bribe"
+    },
+    {
+      "lemma": "sop",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sop.v.01",
+          "via_synset": "sop.n.02"
+        }
+      ],
+      "definition": "a concession given to mollify or placate"
+    },
+    {
+      "lemma": "sop",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bribe.v.01",
+          "via_synset": "sop.v.01"
+        }
+      ],
+      "definition": "give a conciliatory gift or bribe to"
+    },
+    {
+      "lemma": "spare",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "spare.v.03"
+        }
+      ],
+      "definition": "give up what is not strictly needed"
+    },
+    {
+      "lemma": "speculate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "invest.v.01",
+          "via_synset": "speculate.v.04"
+        }
+      ],
+      "definition": "invest at a risk"
+    },
+    {
+      "lemma": "spend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "spend.v.02"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.05",
+          "via_synset": "spend.v.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "spending.n.01",
+          "via_synset": "spend.v.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "spending.n.01",
+          "via_synset": "spend.v.02"
+        }
+      ],
+      "definition": "pay out"
+    },
+    {
+      "lemma": "spender",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "spend.v.02",
+          "via_synset": "spender.n.03"
+        }
+      ],
+      "definition": "someone who spends money to purchase goods or services"
+    },
+    {
+      "lemma": "spending",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.02",
+          "via_synset": "spending.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "spend.v.02",
+          "via_synset": "spending.n.01"
+        }
+      ],
+      "definition": "the act of spending or disbursing money"
+    },
+    {
+      "lemma": "spit up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "cough_up.v.01"
+        }
+      ],
+      "definition": "give reluctantly"
+    },
+    {
+      "lemma": "splurge",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.03",
+          "via_synset": "splurge.v.01"
+        }
+      ],
+      "definition": "indulge oneself"
+    },
+    {
+      "lemma": "squander",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "consume.v.03"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "blow.v.09",
+          "via_synset": "waste.v.01"
+        }
+      ],
+      "definition": "spend extravagantly"
+    },
+    {
+      "lemma": "squanderer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consume.v.03",
+          "via_synset": "prodigal.n.01"
+        }
+      ],
+      "definition": "a recklessly extravagant consumer"
+    },
+    {
+      "lemma": "squandering",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consume.v.03",
+          "via_synset": "squandering.n.01"
+        }
+      ],
+      "definition": "spending resources lavishly and wastefully"
+    },
+    {
+      "lemma": "square",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "settle.v.14",
+          "via_synset": "square.v.06"
+        }
+      ],
+      "definition": "pay someone and settle a debt"
+    },
+    {
+      "lemma": "stand",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pay.v.09",
+          "via_synset": "digest.v.03"
+        }
+      ],
+      "definition": "put up with something or somebody unpleasant"
+    },
+    {
+      "lemma": "stand for",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digest.v.03",
+          "via_synset": "stand_for.v.04"
+        }
+      ],
+      "definition": "tolerate or bear"
+    },
+    {
+      "lemma": "stick out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pay.v.09",
+          "via_synset": "digest.v.03"
+        }
+      ],
+      "definition": "put up with something or somebody unpleasant"
+    },
+    {
+      "lemma": "stipend",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "regular_payment.n.01",
+          "via_synset": "stipend.n.01"
+        }
+      ],
+      "definition": "a sum of money allotted on a regular basis; usually for some specific purpose"
+    },
+    {
+      "lemma": "stipendiary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "stipend.n.01",
+          "via_synset": "stipendiary.a.01"
+        }
+      ],
+      "definition": "pertaining to or of the nature of a stipend or allowance"
+    },
+    {
+      "lemma": "stock option",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "benefit.n.01",
+          "via_synset": "stock_option.n.02"
+        }
+      ],
+      "definition": "a benefit given by a company to an employee in the form of an option to buy stock in the company at a discount or at a fixed price"
+    },
+    {
+      "lemma": "stomach",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pay.v.09",
+          "via_synset": "digest.v.03"
+        }
+      ],
+      "definition": "put up with something or somebody unpleasant"
+    },
+    {
+      "lemma": "strike pay",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "wage.n.01",
+          "via_synset": "strike_pay.n.01"
+        }
+      ],
+      "definition": "money paid to strikers from union funds"
+    },
+    {
+      "lemma": "submit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "present.v.04"
+        }
+      ],
+      "definition": "hand over formally"
+    },
+    {
+      "lemma": "subscription",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "subscription.n.01"
+        }
+      ],
+      "definition": "a payment for consecutive issues of a newspaper or magazine for a given period of time"
+    },
+    {
+      "lemma": "subsidisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "subsidize.v.02",
+          "via_synset": "subsidization.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "subsidize.v.02",
+          "via_synset": "grant.n.02"
+        }
+      ],
+      "definition": "money (or other benefits) obtained as a subsidy"
+    },
+    {
+      "lemma": "subsidise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "subsidize.v.02"
+        }
+      ],
+      "definition": "secure the assistance of by granting a subsidy, as of nations or military forces"
+    },
+    {
+      "lemma": "subsidization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "subsidize.v.02",
+          "via_synset": "subsidization.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "subsidize.v.02",
+          "via_synset": "grant.n.02"
+        }
+      ],
+      "definition": "money (or other benefits) obtained as a subsidy"
+    },
+    {
+      "lemma": "subsidize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "subsidize.v.02"
+        }
+      ],
+      "definition": "secure the assistance of by granting a subsidy, as of nations or military forces"
+    },
+    {
+      "lemma": "suffer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pay.v.09",
+          "via_synset": "digest.v.03"
+        }
+      ],
+      "definition": "put up with something or somebody unpleasant"
+    },
+    {
+      "lemma": "superannuation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "pension.n.01",
+          "via_synset": "old-age_pension.n.01"
+        }
+      ],
+      "definition": "a monthly payment made to someone who is retired from work"
+    },
+    {
+      "lemma": "supply",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "provide.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "supply.v.01"
+        }
+      ],
+      "definition": "give what is desired or needed, especially support, food or sustenance"
+    },
+    {
+      "lemma": "support",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pay.v.09",
+          "via_synset": "digest.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "support.v.02"
+        }
+      ],
+      "definition": "put up with something or somebody unpleasant"
+    },
+    {
+      "lemma": "support payment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "support_payment.n.01"
+        }
+      ],
+      "definition": "a payment made by one person for the support of another"
+    },
+    {
+      "lemma": "survivorship annuity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "annuity.n.01",
+          "via_synset": "reversionary_annuity.n.01"
+        }
+      ],
+      "definition": "an annuity payable to one person in the event that someone else is unable to receive it"
+    },
+    {
+      "lemma": "swallow",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digest.v.03",
+          "via_synset": "accept.v.07"
+        }
+      ],
+      "definition": "tolerate or accommodate oneself to"
+    },
+    {
+      "lemma": "take",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "consume.v.05",
+          "via_synset": "take.v.02"
+        }
+      ],
+      "definition": "require (time or space)"
+    },
+    {
+      "lemma": "take a joke",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digest.v.03",
+          "via_synset": "take_a_joke.v.01"
+        }
+      ],
+      "definition": "listen to a joke at one's own expense"
+    },
+    {
+      "lemma": "take lying down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digest.v.03",
+          "via_synset": "take_lying_down.v.01"
+        }
+      ],
+      "definition": "suffer without protest; suffer or endure passively"
+    },
+    {
+      "lemma": "take one's lumps",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.09",
+          "via_synset": "take_one's_lumps.v.01"
+        }
+      ],
+      "definition": "suffer the results or consequences of one's behavior or actions"
+    },
+    {
+      "lemma": "take-home pay",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "wage.n.01",
+          "via_synset": "take-home_pay.n.01"
+        }
+      ],
+      "definition": "what is left of your pay after deductions for taxes and dues and insurance etc"
+    },
+    {
+      "lemma": "tare",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "allowance.n.03",
+          "via_synset": "tare.n.01"
+        }
+      ],
+      "definition": "an adjustment made for the weight of the packaging in order to determine the net weight of the goods"
+    },
+    {
+      "lemma": "terms",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "price.n.02"
+        }
+      ],
+      "definition": "the amount of money needed to purchase something"
+    },
+    {
+      "lemma": "tie up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "invest.v.01",
+          "via_synset": "tie_up.v.02"
+        }
+      ],
+      "definition": "invest so as to make unavailable for other purposes"
+    },
+    {
+      "lemma": "tighten one's belt",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "save.v.09",
+          "via_synset": "tighten_one's_belt.v.01"
+        }
+      ],
+      "definition": "live frugally and use less resources"
+    },
+    {
+      "lemma": "time plan",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "regular_payment.n.01",
+          "via_synset": "installment_plan.n.01"
+        }
+      ],
+      "definition": "a system for paying for goods by installments"
+    },
+    {
+      "lemma": "tip",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "fringe_benefit.n.01",
+          "via_synset": "gratuity.n.01"
+        }
+      ],
+      "definition": "a relatively small amount of money given for services rendered (as by a waiter)"
+    },
+    {
+      "lemma": "tire",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.05",
+          "via_synset": "run_down.v.06"
+        }
+      ],
+      "definition": "deplete"
+    },
+    {
+      "lemma": "tithe",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "tithe.v.04"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "tithe.v.04",
+          "via_synset": "tithe.v.03"
+        }
+      ],
+      "definition": "pay a tenth of one's income, especially to the church"
+    },
+    {
+      "lemma": "tither",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tithe.v.04",
+          "via_synset": "tither.n.01"
+        }
+      ],
+      "definition": "someone who pays tithes"
+    },
+    {
+      "lemma": "token payment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "token_payment.n.01"
+        }
+      ],
+      "definition": "a small payment made in acknowledgement of an obligation"
+    },
+    {
+      "lemma": "tolerate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pay.v.09",
+          "via_synset": "digest.v.03"
+        }
+      ],
+      "definition": "put up with something or somebody unpleasant"
+    },
+    {
+      "lemma": "tontine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "annuity.n.01",
+          "via_synset": "tontine.n.02"
+        }
+      ],
+      "definition": "an annuity scheme wherein participants share certain benefits and on the death of any participant his benefits are redistributed among the remaining participants; can run for a fixed period of time or until the death of all but one participant"
+    },
+    {
+      "lemma": "trade",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "trade.n.01"
+        }
+      ],
+      "definition": "the commercial exchange (buying and selling on domestic or international markets) of goods and services"
+    },
+    {
+      "lemma": "trading",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "trading.n.01"
+        }
+      ],
+      "definition": "buying or selling securities or commodities"
+    },
+    {
+      "lemma": "traffic",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commerce.n.01",
+          "via_synset": "traffic.n.02"
+        }
+      ],
+      "definition": "buying and selling; especially illicit trade"
+    },
+    {
+      "lemma": "tribute",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.02",
+          "via_synset": "tribute.n.02"
+        }
+      ],
+      "definition": "payment by one nation for protection by another"
+    },
+    {
+      "lemma": "trifle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "piddle.v.01"
+        }
+      ],
+      "definition": "waste time; spend one's time idly or inefficiently"
+    },
+    {
+      "lemma": "trifle away",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "wanton.v.03"
+        }
+      ],
+      "definition": "spend wastefully"
+    },
+    {
+      "lemma": "trifling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "piddle.v.01",
+          "via_synset": "dalliance.n.01"
+        }
+      ],
+      "definition": "the deliberate act of delaying and playing instead of working"
+    },
+    {
+      "lemma": "underpay",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "pay.v.01",
+          "via_synset": "underpay.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "underpayment.n.02",
+          "via_synset": "underpay.v.01"
+        }
+      ],
+      "definition": "pay too little"
+    },
+    {
+      "lemma": "underpayment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.01",
+          "via_synset": "underpayment.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "payment.n.02",
+          "via_synset": "underpayment.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "underpay.v.01",
+          "via_synset": "underpayment.n.02"
+        }
+      ],
+      "definition": "a payment smaller than needed or expected"
+    },
+    {
+      "lemma": "underspend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "underspend.v.02"
+        }
+      ],
+      "definition": "spend at less than the normal rate"
+    },
+    {
+      "lemma": "underwrite",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "cover.v.15",
+          "via_synset": "cover.v.14"
+        }
+      ],
+      "definition": "protect by insurance"
+    },
+    {
+      "lemma": "unit cost",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cost.n.01",
+          "via_synset": "unit_cost.n.01"
+        }
+      ],
+      "definition": "calculated cost for a given unit of a product"
+    },
+    {
+      "lemma": "use up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "consume.v.05"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "consume.v.05",
+          "via_synset": "take.v.02"
+        }
+      ],
+      "definition": "use up (resources or materials)"
+    },
+    {
+      "lemma": "vest",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "vest.v.02"
+        }
+      ],
+      "definition": "place (authority, property, or rights) in the control of a person or group of persons"
+    },
+    {
+      "lemma": "wage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "regular_payment.n.01",
+          "via_synset": "wage.n.01"
+        }
+      ],
+      "definition": "something that remunerates"
+    },
+    {
+      "lemma": "wanton",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "wanton.v.03"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "piddle.v.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consume.v.03",
+          "via_synset": "luxuriate.v.01"
+        }
+      ],
+      "definition": "spend wastefully"
+    },
+    {
+      "lemma": "wanton away",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "wanton.v.03"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "piddle.v.01"
+        }
+      ],
+      "definition": "spend wastefully"
+    },
+    {
+      "lemma": "ware",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "consume.v.03"
+        }
+      ],
+      "definition": "spend extravagantly"
+    },
+    {
+      "lemma": "waste",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consume.v.03",
+          "via_synset": "waste.n.02"
+        }
+      ],
+      "definition": "useless or profitless activity; using or expending or consuming thoughtlessly or carelessly"
+    },
+    {
+      "lemma": "waste",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "consume.v.03"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "blow.v.09",
+          "via_synset": "waste.v.01"
+        }
+      ],
+      "definition": "spend extravagantly"
+    },
+    {
+      "lemma": "waster",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consume.v.03",
+          "via_synset": "wastrel.n.01"
+        }
+      ],
+      "definition": "someone who dissipates resources self-indulgently"
+    },
+    {
+      "lemma": "wipe out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "spend.v.02",
+          "via_synset": "consume.v.05"
+        }
+      ],
+      "definition": "use up (resources or materials)"
+    },
+    {
+      "lemma": "workmen's compensation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "compensation.n.01",
+          "via_synset": "workmen's_compensation.n.01"
+        }
+      ],
+      "definition": "compensation for death or injury suffered by a worker in the course of his employment"
+    },
+    {
+      "lemma": "yield",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "give.v.03",
+          "via_synset": "concede.v.03"
+        }
+      ],
+      "definition": "give over; surrender or relinquish to the physical control of another"
+    }
+  ]
+}

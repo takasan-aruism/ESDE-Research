@@ -1,0 +1,1619 @@
+{
+  "atom_id": "PRP.soft",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 106,
+  "pos_counts": {
+    "adj": 52,
+    "v": 42,
+    "n": 12
+  },
+  "source_counts": {
+    "0_seed": 16,
+    "2_hypernym_d1": 15,
+    "10_sibling": 11,
+    "3_hyponym_d1": 5,
+    "6_derivational": 20,
+    "7_similar_to": 42,
+    "8_also_see": 3,
+    "9_antonym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 13,
+      "words": [
+        "soft(adj)",
+        "pacify(v)",
+        "lenify(v)",
+        "conciliate(v)",
+        "assuage(v)",
+        "appease(v)",
+        "mollify(v)",
+        "placate(v)",
+        "gentle(v)",
+        "gruntle(v)",
+        "ennoble(v)",
+        "entitle(v)",
+        "tender(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 15,
+      "words": [
+        "calm(v)",
+        "calm down(v)",
+        "quiet(v)",
+        "tranquilize(v)",
+        "tranquillize(v)",
+        "tranquillise(v)",
+        "quieten(v)",
+        "lull(v)",
+        "still(v)",
+        "promote(v)",
+        "upgrade(v)",
+        "advance(v)",
+        "kick upstairs(v)",
+        "raise(v)",
+        "elevate(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 5,
+      "words": [
+        "knight(v)",
+        "dub(v)",
+        "lord(v)",
+        "baronetize(v)",
+        "baronetise(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 17,
+      "words": [
+        "softness(n)",
+        "ennoblement(n)",
+        "knight(n)",
+        "Lord(n)",
+        "pacification(n)",
+        "peace(n)",
+        "pacifier(n)",
+        "conciliative(adj)",
+        "conciliation(n)",
+        "conciliator(n)",
+        "appeasable(adj)",
+        "mollification(n)",
+        "placative(adj)",
+        "placatory(adj)",
+        "placation(n)",
+        "tenderize(v)",
+        "baronet(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 42,
+      "words": [
+        "demulcent(adj)",
+        "emollient(adj)",
+        "salving(adj)",
+        "softening(adj)",
+        "downy(adj)",
+        "downlike(adj)",
+        "flossy(adj)",
+        "fluffy(adj)",
+        "flaccid(adj)",
+        "cushioned(adj)",
+        "cushiony(adj)",
+        "padded(adj)",
+        "flocculent(adj)",
+        "woolly(adj)",
+        "wooly(adj)",
+        "compressible(adj)",
+        "squeezable(adj)",
+        "velvet(adj)",
+        "velvety(adj)",
+        "overstuffed(adj)",
+        "cottony(adj)",
+        "spongy(adj)",
+        "squashy(adj)",
+        "squishy(adj)",
+        "spongelike(adj)",
+        "mushy(adj)",
+        "brushed(adj)",
+        "fleecy(adj)",
+        "napped(adj)",
+        "softish(adj)",
+        "semisoft(adj)",
+        "cheeselike(adj)",
+        "yielding(adj)",
+        "qualitative(adj)",
+        "chewable(adj)",
+        "cuttable(adj)",
+        "crisp(adj)",
+        "crispy(adj)",
+        "tenderized(adj)",
+        "tenderised(adj)",
+        "flaky(adj)",
+        "flakey(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 3,
+      "words": [
+        "edible(adj)",
+        "comestible(adj)",
+        "eatable(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "hardened(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 10,
+      "words": [
+        "compose(v)",
+        "reassure(v)",
+        "assure(v)",
+        "bring up(v)",
+        "tenure(v)",
+        "spot promote(v)",
+        "prefer(v)",
+        "favor(v)",
+        "favour(v)",
+        "brevet(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "advance",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "ennoble.v.02",
+          "via_synset": "promote.v.02"
+        }
+      ],
+      "definition": "give a promotion to or assign to a higher position"
+    },
+    {
+      "lemma": "appeasable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "appeasable.s.01"
+        }
+      ],
+      "definition": "capable of being pacified"
+    },
+    {
+      "lemma": "appease",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pacify.v.01",
+          "via_synset": "pacify.v.01"
+        }
+      ],
+      "definition": "cause to be more favorably inclined; gain the good will of"
+    },
+    {
+      "lemma": "assuage",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pacify.v.01",
+          "via_synset": "pacify.v.01"
+        }
+      ],
+      "definition": "cause to be more favorably inclined; gain the good will of"
+    },
+    {
+      "lemma": "assure",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "calm.v.01",
+          "via_synset": "reassure.v.01"
+        }
+      ],
+      "definition": "cause to feel sure; give reassurance to"
+    },
+    {
+      "lemma": "baronet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "baronetize.v.01",
+          "via_synset": "baronet.n.01"
+        }
+      ],
+      "definition": "a member of the British order of honor; ranks below a baron but above a knight"
+    },
+    {
+      "lemma": "baronetise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ennoble.v.02",
+          "via_synset": "baronetize.v.01"
+        }
+      ],
+      "definition": "confer baronetcy upon"
+    },
+    {
+      "lemma": "baronetize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ennoble.v.02",
+          "via_synset": "baronetize.v.01"
+        }
+      ],
+      "definition": "confer baronetcy upon"
+    },
+    {
+      "lemma": "brevet",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "promote.v.02",
+          "via_synset": "brevet.v.01"
+        }
+      ],
+      "definition": "promote somebody by brevet, in the military"
+    },
+    {
+      "lemma": "bring up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "promote.v.02",
+          "via_synset": "bring_up.v.03"
+        }
+      ],
+      "definition": "promote from a lower position or rank"
+    },
+    {
+      "lemma": "brushed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "brushed.s.03"
+        }
+      ],
+      "definition": "(of fabrics) having soft nap produced by brushing"
+    },
+    {
+      "lemma": "calm",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pacify.v.01",
+          "via_synset": "calm.v.01"
+        }
+      ],
+      "definition": "make calm or still"
+    },
+    {
+      "lemma": "calm down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pacify.v.01",
+          "via_synset": "calm.v.01"
+        }
+      ],
+      "definition": "make calm or still"
+    },
+    {
+      "lemma": "cheeselike",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "cheeselike.s.01"
+        }
+      ],
+      "definition": "having the consistency of cheese"
+    },
+    {
+      "lemma": "chewable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tender.a.05",
+          "via_synset": "chewable.s.01"
+        }
+      ],
+      "definition": "easy to cut or chew"
+    },
+    {
+      "lemma": "comestible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "tender.a.05",
+          "via_synset": "edible.a.01"
+        }
+      ],
+      "definition": "suitable for use as food"
+    },
+    {
+      "lemma": "compose",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "calm.v.01",
+          "via_synset": "compose.v.05"
+        }
+      ],
+      "definition": "calm (someone, especially oneself); make quiet"
+    },
+    {
+      "lemma": "compressible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "compressible.s.01"
+        }
+      ],
+      "definition": "capable of being easily compressed"
+    },
+    {
+      "lemma": "conciliate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pacify.v.01",
+          "via_synset": "pacify.v.01"
+        }
+      ],
+      "definition": "cause to be more favorably inclined; gain the good will of"
+    },
+    {
+      "lemma": "conciliation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "conciliation.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "placation.n.01"
+        }
+      ],
+      "definition": "the state of manifesting goodwill and cooperation after being reconciled"
+    },
+    {
+      "lemma": "conciliative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "conciliatory.a.02"
+        }
+      ],
+      "definition": "intended to placate"
+    },
+    {
+      "lemma": "conciliator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "conciliator.n.01"
+        }
+      ],
+      "definition": "someone who tries to bring peace"
+    },
+    {
+      "lemma": "cottony",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "cottony.s.01"
+        }
+      ],
+      "definition": "resembling cotton; as soft as cotton"
+    },
+    {
+      "lemma": "crisp",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tender.a.05",
+          "via_synset": "crisp.s.02"
+        }
+      ],
+      "definition": "tender and brittle"
+    },
+    {
+      "lemma": "crispy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tender.a.05",
+          "via_synset": "crisp.s.02"
+        }
+      ],
+      "definition": "tender and brittle"
+    },
+    {
+      "lemma": "cushioned",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "cushioned.s.01"
+        }
+      ],
+      "definition": "softened by the addition of cushions or padding"
+    },
+    {
+      "lemma": "cushiony",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "cushioned.s.01"
+        }
+      ],
+      "definition": "softened by the addition of cushions or padding"
+    },
+    {
+      "lemma": "cuttable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tender.a.05",
+          "via_synset": "chewable.s.01"
+        }
+      ],
+      "definition": "easy to cut or chew"
+    },
+    {
+      "lemma": "demulcent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "demulcent.s.01"
+        }
+      ],
+      "definition": "having a softening or soothing effect especially to the skin"
+    },
+    {
+      "lemma": "downlike",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "downy.s.01"
+        }
+      ],
+      "definition": "like down or as soft as down"
+    },
+    {
+      "lemma": "downy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "downy.s.01"
+        }
+      ],
+      "definition": "like down or as soft as down"
+    },
+    {
+      "lemma": "dub",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ennoble.v.02",
+          "via_synset": "knight.v.01"
+        }
+      ],
+      "definition": "raise (someone) to knighthood"
+    },
+    {
+      "lemma": "eatable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "tender.a.05",
+          "via_synset": "edible.a.01"
+        }
+      ],
+      "definition": "suitable for use as food"
+    },
+    {
+      "lemma": "edible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "tender.a.05",
+          "via_synset": "edible.a.01"
+        }
+      ],
+      "definition": "suitable for use as food"
+    },
+    {
+      "lemma": "elevate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "ennoble.v.02",
+          "via_synset": "promote.v.02"
+        }
+      ],
+      "definition": "give a promotion to or assign to a higher position"
+    },
+    {
+      "lemma": "emollient",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "demulcent.s.01"
+        }
+      ],
+      "definition": "having a softening or soothing effect especially to the skin"
+    },
+    {
+      "lemma": "ennoble",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ennoble.v.02",
+          "via_synset": "ennoble.v.02"
+        }
+      ],
+      "definition": "give a title to someone; make someone a member of the nobility"
+    },
+    {
+      "lemma": "ennoblement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ennoble.v.02",
+          "via_synset": "ennoblement.n.02"
+        }
+      ],
+      "definition": "the act of raising someone to the nobility"
+    },
+    {
+      "lemma": "entitle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ennoble.v.02",
+          "via_synset": "ennoble.v.02"
+        }
+      ],
+      "definition": "give a title to someone; make someone a member of the nobility"
+    },
+    {
+      "lemma": "favor",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "promote.v.02",
+          "via_synset": "prefer.v.03"
+        }
+      ],
+      "definition": "promote over another"
+    },
+    {
+      "lemma": "favour",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "promote.v.02",
+          "via_synset": "prefer.v.03"
+        }
+      ],
+      "definition": "promote over another"
+    },
+    {
+      "lemma": "flaccid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "flaccid.s.01"
+        }
+      ],
+      "definition": "drooping without elasticity; wanting in stiffness"
+    },
+    {
+      "lemma": "flakey",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tender.a.05",
+          "via_synset": "flaky.s.01"
+        }
+      ],
+      "definition": "made of or easily forming flakes"
+    },
+    {
+      "lemma": "flaky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tender.a.05",
+          "via_synset": "flaky.s.01"
+        }
+      ],
+      "definition": "made of or easily forming flakes"
+    },
+    {
+      "lemma": "fleecy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "brushed.s.03"
+        }
+      ],
+      "definition": "(of fabrics) having soft nap produced by brushing"
+    },
+    {
+      "lemma": "flocculent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "flocculent.s.01"
+        }
+      ],
+      "definition": "having a fluffy character or appearance"
+    },
+    {
+      "lemma": "flossy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "downy.s.01"
+        }
+      ],
+      "definition": "like down or as soft as down"
+    },
+    {
+      "lemma": "fluffy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "downy.s.01"
+        }
+      ],
+      "definition": "like down or as soft as down"
+    },
+    {
+      "lemma": "gentle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pacify.v.01",
+          "via_synset": "pacify.v.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ennoble.v.02",
+          "via_synset": "ennoble.v.02"
+        }
+      ],
+      "definition": "cause to be more favorably inclined; gain the good will of"
+    },
+    {
+      "lemma": "gruntle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pacify.v.01",
+          "via_synset": "pacify.v.01"
+        }
+      ],
+      "definition": "cause to be more favorably inclined; gain the good will of"
+    },
+    {
+      "lemma": "hardened",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "soft.a.06",
+          "via_synset": "hardened.a.03"
+        }
+      ],
+      "definition": "protected against attack (especially by nuclear weapons)"
+    },
+    {
+      "lemma": "kick upstairs",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "ennoble.v.02",
+          "via_synset": "promote.v.02"
+        }
+      ],
+      "definition": "give a promotion to or assign to a higher position"
+    },
+    {
+      "lemma": "knight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "knight.v.01",
+          "via_synset": "knight.n.01"
+        }
+      ],
+      "definition": "originally a person of noble birth trained to arms and chivalry; today in Great Britain a person honored by the sovereign for personal merit"
+    },
+    {
+      "lemma": "knight",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ennoble.v.02",
+          "via_synset": "knight.v.01"
+        }
+      ],
+      "definition": "raise (someone) to knighthood"
+    },
+    {
+      "lemma": "lenify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pacify.v.01",
+          "via_synset": "pacify.v.01"
+        }
+      ],
+      "definition": "cause to be more favorably inclined; gain the good will of"
+    },
+    {
+      "lemma": "Lord",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "lord.v.01",
+          "via_synset": "lord.n.03"
+        }
+      ],
+      "definition": "a titled peer of the realm"
+    },
+    {
+      "lemma": "lord",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ennoble.v.02",
+          "via_synset": "lord.v.01"
+        }
+      ],
+      "definition": "make a lord of someone"
+    },
+    {
+      "lemma": "lull",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pacify.v.01",
+          "via_synset": "calm.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "calm.v.01",
+          "via_synset": "lull.v.01"
+        }
+      ],
+      "definition": "make calm or still"
+    },
+    {
+      "lemma": "mollification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "mollification.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "pacification.n.01"
+        }
+      ],
+      "definition": "a state of being appeased or ameliorated or tempered"
+    },
+    {
+      "lemma": "mollify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pacify.v.01",
+          "via_synset": "pacify.v.01"
+        }
+      ],
+      "definition": "cause to be more favorably inclined; gain the good will of"
+    },
+    {
+      "lemma": "mushy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "mushy.s.01"
+        }
+      ],
+      "definition": "having the consistency of mush"
+    },
+    {
+      "lemma": "napped",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "brushed.s.03"
+        }
+      ],
+      "definition": "(of fabrics) having soft nap produced by brushing"
+    },
+    {
+      "lemma": "overstuffed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "overstuffed.s.01"
+        }
+      ],
+      "definition": "upholstered thickly and deeply"
+    },
+    {
+      "lemma": "pacification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "pacification.n.01"
+        }
+      ],
+      "definition": "the act of appeasing someone or causing someone to be more favorably inclined"
+    },
+    {
+      "lemma": "pacifier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "comforter.n.04"
+        }
+      ],
+      "definition": "device used for an infant to suck or bite on"
+    },
+    {
+      "lemma": "pacify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pacify.v.01",
+          "via_synset": "pacify.v.01"
+        }
+      ],
+      "definition": "cause to be more favorably inclined; gain the good will of"
+    },
+    {
+      "lemma": "padded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "cushioned.s.01"
+        }
+      ],
+      "definition": "softened by the addition of cushions or padding"
+    },
+    {
+      "lemma": "peace",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "peace.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "peace.n.03"
+        }
+      ],
+      "definition": "harmonious relations; freedom from disputes"
+    },
+    {
+      "lemma": "placate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pacify.v.01",
+          "via_synset": "pacify.v.01"
+        }
+      ],
+      "definition": "cause to be more favorably inclined; gain the good will of"
+    },
+    {
+      "lemma": "placation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "placation.n.01"
+        }
+      ],
+      "definition": "the act of placating and overcoming distrust and animosity"
+    },
+    {
+      "lemma": "placative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "appeasing.s.01"
+        }
+      ],
+      "definition": "intended to pacify by acceding to demands or granting concessions"
+    },
+    {
+      "lemma": "placatory",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pacify.v.01",
+          "via_synset": "appeasing.s.01"
+        }
+      ],
+      "definition": "intended to pacify by acceding to demands or granting concessions"
+    },
+    {
+      "lemma": "prefer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "promote.v.02",
+          "via_synset": "prefer.v.03"
+        }
+      ],
+      "definition": "promote over another"
+    },
+    {
+      "lemma": "promote",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "ennoble.v.02",
+          "via_synset": "promote.v.02"
+        }
+      ],
+      "definition": "give a promotion to or assign to a higher position"
+    },
+    {
+      "lemma": "qualitative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.s.03",
+          "via_synset": "qualitative.a.01"
+        }
+      ],
+      "definition": "involving distinctions based on qualities"
+    },
+    {
+      "lemma": "quiet",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pacify.v.01",
+          "via_synset": "calm.v.01"
+        }
+      ],
+      "definition": "make calm or still"
+    },
+    {
+      "lemma": "quieten",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pacify.v.01",
+          "via_synset": "calm.v.01"
+        }
+      ],
+      "definition": "make calm or still"
+    },
+    {
+      "lemma": "raise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "ennoble.v.02",
+          "via_synset": "promote.v.02"
+        }
+      ],
+      "definition": "give a promotion to or assign to a higher position"
+    },
+    {
+      "lemma": "reassure",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "calm.v.01",
+          "via_synset": "reassure.v.01"
+        }
+      ],
+      "definition": "cause to feel sure; give reassurance to"
+    },
+    {
+      "lemma": "salving",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "demulcent.s.01"
+        }
+      ],
+      "definition": "having a softening or soothing effect especially to the skin"
+    },
+    {
+      "lemma": "semisoft",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "softish.s.01"
+        }
+      ],
+      "definition": "somewhat soft"
+    },
+    {
+      "lemma": "soft",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "soft.s.03",
+          "via_synset": "soft.s.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "soft.a.01",
+          "via_synset": "soft.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "soft.a.06",
+          "via_synset": "soft.a.06"
+        }
+      ],
+      "definition": "using evidence not readily amenable to experimental verification or refutation"
+    },
+    {
+      "lemma": "softening",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "demulcent.s.01"
+        }
+      ],
+      "definition": "having a softening or soothing effect especially to the skin"
+    },
+    {
+      "lemma": "softish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "softish.s.01"
+        }
+      ],
+      "definition": "somewhat soft"
+    },
+    {
+      "lemma": "softness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "soft.a.01",
+          "via_synset": "softness.n.01"
+        }
+      ],
+      "definition": "the property of giving little resistance to pressure and being easily cut or molded"
+    },
+    {
+      "lemma": "spongelike",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "spongy.s.01"
+        }
+      ],
+      "definition": "easily squashed; resembling a sponge in having soft porous texture and compressibility"
+    },
+    {
+      "lemma": "spongy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "spongy.s.01"
+        }
+      ],
+      "definition": "easily squashed; resembling a sponge in having soft porous texture and compressibility"
+    },
+    {
+      "lemma": "spot promote",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "promote.v.02",
+          "via_synset": "spot_promote.v.01"
+        }
+      ],
+      "definition": "promote on the spot"
+    },
+    {
+      "lemma": "squashy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "spongy.s.01"
+        }
+      ],
+      "definition": "easily squashed; resembling a sponge in having soft porous texture and compressibility"
+    },
+    {
+      "lemma": "squeezable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "compressible.s.01"
+        }
+      ],
+      "definition": "capable of being easily compressed"
+    },
+    {
+      "lemma": "squishy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "spongy.s.01"
+        }
+      ],
+      "definition": "easily squashed; resembling a sponge in having soft porous texture and compressibility"
+    },
+    {
+      "lemma": "still",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pacify.v.01",
+          "via_synset": "calm.v.01"
+        }
+      ],
+      "definition": "make calm or still"
+    },
+    {
+      "lemma": "tender",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "tender.a.05",
+          "via_synset": "tender.a.05"
+        }
+      ],
+      "definition": "easy to cut or chew"
+    },
+    {
+      "lemma": "tenderised",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tender.a.05",
+          "via_synset": "tenderized.s.01"
+        }
+      ],
+      "definition": "made tender as by marinating or pounding"
+    },
+    {
+      "lemma": "tenderize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tender.a.05",
+          "via_synset": "tender.v.04"
+        }
+      ],
+      "definition": "make tender or more tender as by marinating, pounding, or applying a tenderizer"
+    },
+    {
+      "lemma": "tenderized",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tender.a.05",
+          "via_synset": "tenderized.s.01"
+        }
+      ],
+      "definition": "made tender as by marinating or pounding"
+    },
+    {
+      "lemma": "tenure",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "promote.v.02",
+          "via_synset": "tenure.v.01"
+        }
+      ],
+      "definition": "give life-time employment to"
+    },
+    {
+      "lemma": "tranquilize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pacify.v.01",
+          "via_synset": "calm.v.01"
+        }
+      ],
+      "definition": "make calm or still"
+    },
+    {
+      "lemma": "tranquillise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pacify.v.01",
+          "via_synset": "calm.v.01"
+        }
+      ],
+      "definition": "make calm or still"
+    },
+    {
+      "lemma": "tranquillize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "pacify.v.01",
+          "via_synset": "calm.v.01"
+        }
+      ],
+      "definition": "make calm or still"
+    },
+    {
+      "lemma": "upgrade",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "ennoble.v.02",
+          "via_synset": "promote.v.02"
+        }
+      ],
+      "definition": "give a promotion to or assign to a higher position"
+    },
+    {
+      "lemma": "velvet",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "velvet.s.02"
+        }
+      ],
+      "definition": "resembling velvet in having a smooth soft surface"
+    },
+    {
+      "lemma": "velvety",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "velvet.s.02"
+        }
+      ],
+      "definition": "resembling velvet in having a smooth soft surface"
+    },
+    {
+      "lemma": "woolly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "flocculent.s.01"
+        }
+      ],
+      "definition": "having a fluffy character or appearance"
+    },
+    {
+      "lemma": "wooly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "flocculent.s.01"
+        }
+      ],
+      "definition": "having a fluffy character or appearance"
+    },
+    {
+      "lemma": "yielding",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "soft.a.01",
+          "via_synset": "yielding.s.02"
+        }
+      ],
+      "definition": "lacking stiffness and giving way to pressure"
+    }
+  ]
+}

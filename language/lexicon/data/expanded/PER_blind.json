@@ -1,0 +1,711 @@
+{
+  "atom_id": "PER.blind",
+  "category": "PER",
+  "seed_count": 4,
+  "total_keys": 42,
+  "pos_counts": {
+    "adj": 29,
+    "v": 6,
+    "n": 7
+  },
+  "source_counts": {
+    "0_seed": 7,
+    "7_similar_to": 28,
+    "3_hyponym_d1": 5,
+    "6_derivational": 7,
+    "9_antonym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 6,
+      "words": [
+        "blind(adj)",
+        "unsighted(adj)",
+        "blind(v)",
+        "eyeless(adj)",
+        "sightless(adj)",
+        "unseeing(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 5,
+      "words": [
+        "seel(v)",
+        "dazzle(v)",
+        "bedazzle(v)",
+        "daze(v)",
+        "snow-blind(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 7,
+      "words": [
+        "eyelessness(n)",
+        "sightlessness(n)",
+        "dazzle(n)",
+        "daze(n)",
+        "blinder(n)",
+        "blind(n)",
+        "blindness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 23,
+      "words": [
+        "deuteranopic(adj)",
+        "green-blind(adj)",
+        "snow-blind(adj)",
+        "snow-blinded(adj)",
+        "protanopic(adj)",
+        "red-blind(adj)",
+        "stone-blind(adj)",
+        "tritanopic(adj)",
+        "blue-blind(adj)",
+        "dim-sighted(adj)",
+        "near-blind(adj)",
+        "purblind(adj)",
+        "sand-blind(adj)",
+        "visually impaired(adj)",
+        "visually challenged(adj)",
+        "dazzled(adj)",
+        "blindfold(adj)",
+        "blindfolded(adj)",
+        "blinded(adj)",
+        "color-blind(adj)",
+        "colour-blind(adj)",
+        "unperceptive(adj)",
+        "unperceiving(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "sighted(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "bedazzle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "blind.v.01",
+          "via_synset": "dazzle.v.01"
+        }
+      ],
+      "definition": "to cause someone to lose clear vision, especially from intense light"
+    },
+    {
+      "lemma": "blind",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "blind.a.01",
+          "via_synset": "blind.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "blind.s.01",
+          "via_synset": "blind.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "eyeless.s.01",
+          "via_synset": "blind.a.01"
+        }
+      ],
+      "definition": "unable to see; --Kenneth Jernigan"
+    },
+    {
+      "lemma": "blind",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "blind.v.01",
+          "via_synset": "blind.n.01"
+        }
+      ],
+      "definition": "people who have severe visual impairments, considered as a group"
+    },
+    {
+      "lemma": "blind",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "blind.v.01",
+          "via_synset": "blind.v.01"
+        }
+      ],
+      "definition": "render unable to see"
+    },
+    {
+      "lemma": "blinded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "blinded.s.01"
+        }
+      ],
+      "definition": "deprived of sight"
+    },
+    {
+      "lemma": "blinder",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "blind.v.01",
+          "via_synset": "winker.n.02"
+        }
+      ],
+      "definition": "blind consisting of a leather eyepatch sewn to the side of the halter that prevents a horse from seeing something on either side"
+    },
+    {
+      "lemma": "blindfold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "blindfold.s.01"
+        }
+      ],
+      "definition": "wearing a blindfold"
+    },
+    {
+      "lemma": "blindfolded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "blindfold.s.01"
+        }
+      ],
+      "definition": "wearing a blindfold"
+    },
+    {
+      "lemma": "blindness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "blind.a.01",
+          "via_synset": "blindness.n.01"
+        }
+      ],
+      "definition": "the state of being blind or lacking sight"
+    },
+    {
+      "lemma": "blue-blind",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "tritanopic.s.01"
+        }
+      ],
+      "definition": "inability to see the color blue or to distinguish the colors blue and yellow"
+    },
+    {
+      "lemma": "color-blind",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "color-blind.s.01"
+        }
+      ],
+      "definition": "unable to distinguish one or more chromatic colors"
+    },
+    {
+      "lemma": "colour-blind",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "color-blind.s.01"
+        }
+      ],
+      "definition": "unable to distinguish one or more chromatic colors"
+    },
+    {
+      "lemma": "daze",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dazzle.v.01",
+          "via_synset": "daze.n.02"
+        }
+      ],
+      "definition": "confusion characterized by lack of clarity"
+    },
+    {
+      "lemma": "daze",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "blind.v.01",
+          "via_synset": "dazzle.v.01"
+        }
+      ],
+      "definition": "to cause someone to lose clear vision, especially from intense light"
+    },
+    {
+      "lemma": "dazzle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dazzle.v.01",
+          "via_synset": "dazzle.n.01"
+        }
+      ],
+      "definition": "brightness enough to blind partially and temporarily"
+    },
+    {
+      "lemma": "dazzle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "blind.v.01",
+          "via_synset": "dazzle.v.01"
+        }
+      ],
+      "definition": "to cause someone to lose clear vision, especially from intense light"
+    },
+    {
+      "lemma": "dazzled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "dazzled.s.01"
+        }
+      ],
+      "definition": "having vision overcome temporarily by or as if by intense light"
+    },
+    {
+      "lemma": "deuteranopic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "deuteranopic.s.01"
+        }
+      ],
+      "definition": "inability to see the color green or to distinguish green and purplish-red"
+    },
+    {
+      "lemma": "dim-sighted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "dim-sighted.s.01"
+        }
+      ],
+      "definition": "having greatly reduced vision"
+    },
+    {
+      "lemma": "eyeless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "eyeless.s.01",
+          "via_synset": "eyeless.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "eyeless.s.01"
+        }
+      ],
+      "definition": "lacking sight"
+    },
+    {
+      "lemma": "eyelessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "eyeless.s.01",
+          "via_synset": "eyelessness.n.01"
+        }
+      ],
+      "definition": "blindness due to loss of the eyes"
+    },
+    {
+      "lemma": "green-blind",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "deuteranopic.s.01"
+        }
+      ],
+      "definition": "inability to see the color green or to distinguish green and purplish-red"
+    },
+    {
+      "lemma": "near-blind",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "dim-sighted.s.01"
+        }
+      ],
+      "definition": "having greatly reduced vision"
+    },
+    {
+      "lemma": "protanopic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "protanopic.s.01"
+        }
+      ],
+      "definition": "inability to see the color red or to distinguish red and bluish-green"
+    },
+    {
+      "lemma": "purblind",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "dim-sighted.s.01"
+        }
+      ],
+      "definition": "having greatly reduced vision"
+    },
+    {
+      "lemma": "red-blind",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "protanopic.s.01"
+        }
+      ],
+      "definition": "inability to see the color red or to distinguish red and bluish-green"
+    },
+    {
+      "lemma": "sand-blind",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "dim-sighted.s.01"
+        }
+      ],
+      "definition": "having greatly reduced vision"
+    },
+    {
+      "lemma": "seel",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "blind.v.01",
+          "via_synset": "seel.v.01"
+        }
+      ],
+      "definition": "sew up the eyelids of hawks and falcons"
+    },
+    {
+      "lemma": "sighted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "blind.a.01",
+          "via_synset": "sighted.a.01"
+        }
+      ],
+      "definition": "able to see"
+    },
+    {
+      "lemma": "sightless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "eyeless.s.01",
+          "via_synset": "eyeless.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "eyeless.s.01"
+        }
+      ],
+      "definition": "lacking sight"
+    },
+    {
+      "lemma": "sightlessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "eyeless.s.01",
+          "via_synset": "blindness.n.01"
+        }
+      ],
+      "definition": "the state of being blind or lacking sight"
+    },
+    {
+      "lemma": "snow-blind",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "snow-blind.s.01"
+        }
+      ],
+      "definition": "temporarily blinded by exposure to light reflected from snow or ice"
+    },
+    {
+      "lemma": "snow-blind",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "blind.v.01",
+          "via_synset": "snow-blind.v.01"
+        }
+      ],
+      "definition": "affect with snow blindness"
+    },
+    {
+      "lemma": "snow-blinded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "snow-blind.s.01"
+        }
+      ],
+      "definition": "temporarily blinded by exposure to light reflected from snow or ice"
+    },
+    {
+      "lemma": "stone-blind",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "stone-blind.s.01"
+        }
+      ],
+      "definition": "completely blind"
+    },
+    {
+      "lemma": "tritanopic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "tritanopic.s.01"
+        }
+      ],
+      "definition": "inability to see the color blue or to distinguish the colors blue and yellow"
+    },
+    {
+      "lemma": "unperceiving",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.s.01",
+          "via_synset": "unperceptive.a.01"
+        }
+      ],
+      "definition": "lacking perception"
+    },
+    {
+      "lemma": "unperceptive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.s.01",
+          "via_synset": "unperceptive.a.01"
+        }
+      ],
+      "definition": "lacking perception"
+    },
+    {
+      "lemma": "unseeing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "eyeless.s.01",
+          "via_synset": "eyeless.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "eyeless.s.01"
+        }
+      ],
+      "definition": "lacking sight"
+    },
+    {
+      "lemma": "unsighted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "blind.a.01",
+          "via_synset": "blind.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "eyeless.s.01",
+          "via_synset": "blind.a.01"
+        }
+      ],
+      "definition": "unable to see; --Kenneth Jernigan"
+    },
+    {
+      "lemma": "visually challenged",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "dim-sighted.s.01"
+        }
+      ],
+      "definition": "having greatly reduced vision"
+    },
+    {
+      "lemma": "visually impaired",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blind.a.01",
+          "via_synset": "dim-sighted.s.01"
+        }
+      ],
+      "definition": "having greatly reduced vision"
+    }
+  ]
+}

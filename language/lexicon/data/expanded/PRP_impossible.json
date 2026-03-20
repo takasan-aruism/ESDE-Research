@@ -1,0 +1,530 @@
+{
+  "atom_id": "PRP.impossible",
+  "category": "PRP",
+  "seed_count": 5,
+  "total_keys": 30,
+  "pos_counts": {
+    "adj": 24,
+    "n": 6
+  },
+  "source_counts": {
+    "0_seed": 8,
+    "2_hypernym_d1": 2,
+    "6_derivational": 4,
+    "7_similar_to": 14,
+    "8_also_see": 6
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 6,
+      "words": [
+        "impossible(adj)",
+        "impossible(n)",
+        "insufferable(adj)",
+        "unacceptable(adj)",
+        "unsufferable(adj)",
+        "unable(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 2,
+      "words": [
+        "impossibility(n)",
+        "impossible action(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 3,
+      "words": [
+        "unacceptableness(n)",
+        "unacceptability(n)",
+        "impossibleness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 14,
+      "words": [
+        "incapable(adj)",
+        "intolerable(adj)",
+        "unbearable(adj)",
+        "unendurable(adj)",
+        "hopeless(adj)",
+        "out(adj)",
+        "impracticable(adj)",
+        "infeasible(adj)",
+        "unfeasible(adj)",
+        "unworkable(adj)",
+        "unachievable(adj)",
+        "unattainable(adj)",
+        "undoable(adj)",
+        "unrealizable(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 5,
+      "words": [
+        "unrealistic(adj)",
+        "impractical(adj)",
+        "unthinkable(adj)",
+        "insurmountable(adj)",
+        "unsurmountable(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "hopeless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "impossible.a.01",
+          "via_synset": "hopeless.s.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "impossible.a.01",
+          "via_synset": "hopeless.a.01"
+        }
+      ],
+      "definition": "certain to fail"
+    },
+    {
+      "lemma": "impossibility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "impossible.n.01",
+          "via_synset": "impossibility.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "impossible.a.01",
+          "via_synset": "impossibility.n.01"
+        }
+      ],
+      "definition": "an alternative that is not available"
+    },
+    {
+      "lemma": "impossible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "impossible.a.01",
+          "via_synset": "impossible.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "impossible.s.02",
+          "via_synset": "impossible.s.02"
+        }
+      ],
+      "definition": "not capable of occurring or being accomplished or dealt with"
+    },
+    {
+      "lemma": "impossible",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "impossible.n.01",
+          "via_synset": "impossible.n.01"
+        }
+      ],
+      "definition": "something that cannot be done"
+    },
+    {
+      "lemma": "impossible action",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "impossible.n.01",
+          "via_synset": "impossibility.n.02"
+        }
+      ],
+      "definition": "an alternative that is not available"
+    },
+    {
+      "lemma": "impossibleness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "impossible.a.01",
+          "via_synset": "impossibility.n.01"
+        }
+      ],
+      "definition": "incapability of existing or occurring"
+    },
+    {
+      "lemma": "impracticable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "impossible.a.01",
+          "via_synset": "impracticable.s.01"
+        }
+      ],
+      "definition": "not capable of being carried out or put into practice"
+    },
+    {
+      "lemma": "impractical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "impossible.a.01",
+          "via_synset": "impractical.a.01"
+        }
+      ],
+      "definition": "not practical; not workable or not given to practical matters"
+    },
+    {
+      "lemma": "incapable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unable.s.01",
+          "via_synset": "incapable.a.01"
+        }
+      ],
+      "definition": "(followed by `of') lacking capacity or ability"
+    },
+    {
+      "lemma": "infeasible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "impossible.a.01",
+          "via_synset": "impracticable.s.01"
+        }
+      ],
+      "definition": "not capable of being carried out or put into practice"
+    },
+    {
+      "lemma": "insufferable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "impossible.s.02",
+          "via_synset": "impossible.s.02"
+        }
+      ],
+      "definition": "used of persons or their behavior"
+    },
+    {
+      "lemma": "insurmountable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "impossible.a.01",
+          "via_synset": "insurmountable.a.01"
+        }
+      ],
+      "definition": "not capable of being surmounted or overcome"
+    },
+    {
+      "lemma": "intolerable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "impossible.s.02",
+          "via_synset": "intolerable.a.01"
+        }
+      ],
+      "definition": "incapable of being put up with"
+    },
+    {
+      "lemma": "out",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "impossible.a.01",
+          "via_synset": "out.s.02"
+        }
+      ],
+      "definition": "not worth considering as a possibility"
+    },
+    {
+      "lemma": "unable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unable.a.01",
+          "via_synset": "unable.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unable.s.01",
+          "via_synset": "unable.s.01"
+        }
+      ],
+      "definition": "(usually followed by `to') not having the necessary means or skill or know-how"
+    },
+    {
+      "lemma": "unacceptability",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "impossible.s.02",
+          "via_synset": "unacceptability.n.01"
+        }
+      ],
+      "definition": "unsatisfactoriness by virtue of not conforming to approved standards"
+    },
+    {
+      "lemma": "unacceptable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "impossible.s.02",
+          "via_synset": "impossible.s.02"
+        }
+      ],
+      "definition": "used of persons or their behavior"
+    },
+    {
+      "lemma": "unacceptableness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "impossible.s.02",
+          "via_synset": "unacceptability.n.01"
+        }
+      ],
+      "definition": "unsatisfactoriness by virtue of not conforming to approved standards"
+    },
+    {
+      "lemma": "unachievable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "impossible.a.01",
+          "via_synset": "unachievable.s.01"
+        }
+      ],
+      "definition": "impossible to achieve"
+    },
+    {
+      "lemma": "unattainable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "impossible.a.01",
+          "via_synset": "unachievable.s.01"
+        }
+      ],
+      "definition": "impossible to achieve"
+    },
+    {
+      "lemma": "unbearable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "impossible.s.02",
+          "via_synset": "intolerable.a.01"
+        }
+      ],
+      "definition": "incapable of being put up with"
+    },
+    {
+      "lemma": "undoable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "impossible.a.01",
+          "via_synset": "unachievable.s.01"
+        }
+      ],
+      "definition": "impossible to achieve"
+    },
+    {
+      "lemma": "unendurable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "impossible.s.02",
+          "via_synset": "intolerable.a.01"
+        }
+      ],
+      "definition": "incapable of being put up with"
+    },
+    {
+      "lemma": "unfeasible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "impossible.a.01",
+          "via_synset": "impracticable.s.01"
+        }
+      ],
+      "definition": "not capable of being carried out or put into practice"
+    },
+    {
+      "lemma": "unrealistic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "impossible.a.01",
+          "via_synset": "unrealistic.a.01"
+        }
+      ],
+      "definition": "not realistic"
+    },
+    {
+      "lemma": "unrealizable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "impossible.a.01",
+          "via_synset": "unachievable.s.01"
+        }
+      ],
+      "definition": "impossible to achieve"
+    },
+    {
+      "lemma": "unsufferable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "impossible.s.02",
+          "via_synset": "impossible.s.02"
+        }
+      ],
+      "definition": "used of persons or their behavior"
+    },
+    {
+      "lemma": "unsurmountable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "impossible.a.01",
+          "via_synset": "insurmountable.a.01"
+        }
+      ],
+      "definition": "not capable of being surmounted or overcome"
+    },
+    {
+      "lemma": "unthinkable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "impossible.a.01",
+          "via_synset": "unthinkable.a.01"
+        }
+      ],
+      "definition": "incapable of being conceived or considered"
+    },
+    {
+      "lemma": "unworkable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "impossible.a.01",
+          "via_synset": "impracticable.s.01"
+        }
+      ],
+      "definition": "not capable of being carried out or put into practice"
+    }
+  ]
+}

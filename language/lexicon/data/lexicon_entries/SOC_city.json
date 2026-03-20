@@ -1,0 +1,515 @@
+{
+  "atom": "SOC.city",
+  "category": "SOC",
+  "status": "proposed",
+  "symmetric_pair": "SOC.village",
+  "definition_en": "A large town; urban area.",
+  "seed_synsets": [],
+  "core_pool": {
+    "rules": [
+      "0_seed",
+      "3_hyponym_d1",
+      "6_derivational",
+      "7_similar_to",
+      "9_antonym"
+    ],
+    "count": 19,
+    "words": [
+      {
+        "w": "citified",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "being or having the customs or manners or dress of a city person",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "citify",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "accustom to urban ways",
+        "path_count": 2,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "city",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "a large and densely populated urban area; may include several independent administrative districts",
+        "path_count": 4,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "city-born",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "being or having the customs or manners or dress of a city person",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "city-bred",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "being or having the customs or manners or dress of a city person",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "city-like",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "resembling a city",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "cityfied",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "being or having the customs or manners or dress of a city person",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "metropolis",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "a large and densely populated urban area; may include several independent administrative districts",
+        "path_count": 2,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "metropolitan",
+        "pos": "adj",
+        "src": "6_derivational",
+        "definition": "relating to or characteristic of a metropolis",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "metropolitan",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "in the Eastern Orthodox Church this title is given to a position between bishop and patriarch; equivalent to archbishop in western Christianity",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "national capital",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "the capital city of a nation",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "provincial capital",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "the capital city of a province",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "state capital",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "the capital city of a political subdivision of a country",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "urban",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "relating to or concerned with a city or densely populated area",
+        "path_count": 2,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "urban center",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "a large and densely populated urban area; may include several independent administrative districts",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "urbanised",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "made urban in nature; taking on urban characteristics",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "urbanity",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "the quality or character of life in a city or town",
+        "path_count": 2,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "urbanize",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "impart urban habits, ways of life, or responsibilities upon",
+        "path_count": 2,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "urbanized",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "made urban in nature; taking on urban characteristics",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      }
+    ]
+  },
+  "deviation_pool": {
+    "rules": [
+      "10_sibling",
+      "11_pertainym",
+      "12_verb_group",
+      "2_hypernym_d1",
+      "4_hyponym_d2",
+      "5_hyponym_d3",
+      "8_also_see"
+    ],
+    "count": 26,
+    "words": [
+      {
+        "w": "administrative district",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "a district defined for administrative purposes",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "administrative division",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "a district defined for administrative purposes",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "archbishop",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "a bishop of highest rank",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "borough",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "one of the administrative divisions of a large city",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "canton",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a small administrative division of a country",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "commune",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the smallest administrative district of several European countries",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "country",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the territory occupied by a nation",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "county",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "(United States) the largest administrative district within a state",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "county palatine",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the territory of a count palatine",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "department",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the territorial and administrative division of some countries (such as France)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "federal district",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a district set apart as the seat of government of a federation",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "land",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the territory occupied by a nation",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "municipality",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "an urban district having corporate status and powers of self-government",
+        "path_count": 3,
+        "sources": [
+          "10_sibling",
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "prefecture",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the district administered by a prefect (as in France or Japan or the Roman Empire)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "province",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the territory occupied by one of the constituent administrative districts of a nation",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "reservation",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a district that is reserved for particular purpose",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "reserve",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a district that is reserved for particular purpose",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "school district",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a district whose public schools are administered together",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "shire",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a former administrative district of England; equivalent to a county",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "state",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the territory occupied by one of the constituent administrative districts of a nation",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "territorial division",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "a district defined for administrative purposes",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "town",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "an urban area with a fixed boundary that is smaller than a city",
+        "path_count": 3,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "townsfolk",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the people living in a municipality smaller than a city",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "township",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "an administrative division of a county",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "townspeople",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the people living in a municipality smaller than a city",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "ward",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a district into which a city or town is divided for the purpose of administration and elections",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      }
+    ]
+  },
+  "deviation_stats": {
+    "total_candidates": 45,
+    "core_count": 19,
+    "dev_count": 26,
+    "core_ratio": 0.422,
+    "dev_ratio": 0.578,
+    "dev_source_breakdown": {
+      "2_hypernym_d1": 5,
+      "10_sibling": 22
+    },
+    "step_contributions": {
+      "0_seed": 5,
+      "2_hypernym_d1": 5,
+      "3_hyponym_d1": 3,
+      "4_hyponym_d2": 0,
+      "5_hyponym_d3": 0,
+      "6_derivational": 4,
+      "7_similar_to": 7,
+      "8_also_see": 0,
+      "9_antonym": 0,
+      "10_sibling": 21,
+      "11_pertainym": 0,
+      "12_verb_group": 0
+    }
+  },
+  "meta": {
+    "generator": "wn_lexicon_entry.py",
+    "version": "1.0.0",
+    "design": "3AI consolidated: Core/Deviation pool separation"
+  }
+}

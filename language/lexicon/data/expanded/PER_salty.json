@@ -1,0 +1,934 @@
+{
+  "atom_id": "PER.salty",
+  "category": "PER",
+  "seed_count": 6,
+  "total_keys": 56,
+  "pos_counts": {
+    "adj": 10,
+    "n": 45,
+    "v": 1
+  },
+  "source_counts": {
+    "0_seed": 9,
+    "7_similar_to": 8,
+    "2_hypernym_d1": 4,
+    "6_derivational": 9,
+    "8_also_see": 1,
+    "9_antonym": 1,
+    "10_sibling": 34
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 7,
+      "words": [
+        "salty(adj)",
+        "piquant(adj)",
+        "saline solution(n)",
+        "saline(n)",
+        "saline(adj)",
+        "main(n)",
+        "briny(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 4,
+      "words": [
+        "isotonic solution(n)",
+        "isosmotic solution(n)",
+        "body of water(n)",
+        "water(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 5,
+      "words": [
+        "saltiness(n)",
+        "briny(adj)",
+        "salt(n)",
+        "salinity(n)",
+        "salinate(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 5,
+      "words": [
+        "stimulating(adj)",
+        "tasty(adj)",
+        "saliferous(adj)",
+        "brackish(adj)",
+        "saltish(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "fresh(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 34,
+      "words": [
+        "Ringer's solution(n)",
+        "Ringer solution(n)",
+        "pool(n)",
+        "puddle(n)",
+        "mid-water(n)",
+        "drink(n)",
+        "shoal(n)",
+        "shallow(n)",
+        "waterway(n)",
+        "polynya(n)",
+        "sea(n)",
+        "channel(n)",
+        "lake(n)",
+        "high sea(n)",
+        "international waters(n)",
+        "flowage(n)",
+        "ford(n)",
+        "crossing(n)",
+        "ocean(n)",
+        "offing(n)",
+        "inlet(n)",
+        "recess(n)",
+        "sound(n)",
+        "estuary(n)",
+        "waterfall(n)",
+        "falls(n)",
+        "backwater(n)",
+        "bay(n)",
+        "embayment(n)",
+        "seven seas(n)",
+        "gulf(n)",
+        "territorial waters(n)",
+        "stream(n)",
+        "watercourse(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "backwater",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "backwater.n.01"
+        }
+      ],
+      "definition": "a body of water that was created by a flood or tide or by being held or forced back by a dam"
+    },
+    {
+      "lemma": "bay",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "bay.n.01"
+        }
+      ],
+      "definition": "an indentation of a shoreline larger than a cove but smaller than a gulf"
+    },
+    {
+      "lemma": "body of water",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "main.n.01",
+          "via_synset": "body_of_water.n.01"
+        }
+      ],
+      "definition": "the part of the earth's surface covered with water (such as a river or lake or ocean)"
+    },
+    {
+      "lemma": "brackish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "salty.a.02",
+          "via_synset": "brackish.s.02"
+        }
+      ],
+      "definition": "slightly salty (especially from containing a mixture of seawater and fresh water)"
+    },
+    {
+      "lemma": "briny",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "main.n.01",
+          "via_synset": "brackish.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "salty.a.02",
+          "via_synset": "brackish.s.02"
+        }
+      ],
+      "definition": "slightly salty (especially from containing a mixture of seawater and fresh water)"
+    },
+    {
+      "lemma": "briny",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "main.n.01",
+          "via_synset": "main.n.01"
+        }
+      ],
+      "definition": "any very large body of (salt) water"
+    },
+    {
+      "lemma": "channel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "channel.n.04"
+        }
+      ],
+      "definition": "a deep and relatively narrow body of water (as in a river or a harbor or a strait linking two larger bodies) that allows the best passage for vessels"
+    },
+    {
+      "lemma": "crossing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "ford.n.07"
+        }
+      ],
+      "definition": "a shallow area in a stream that can be forded"
+    },
+    {
+      "lemma": "drink",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "drink.n.04"
+        }
+      ],
+      "definition": "any large deep body of water"
+    },
+    {
+      "lemma": "embayment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "bay.n.01"
+        }
+      ],
+      "definition": "an indentation of a shoreline larger than a cove but smaller than a gulf"
+    },
+    {
+      "lemma": "estuary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "estuary.n.01"
+        }
+      ],
+      "definition": "the wide part of a river where it nears the sea; fresh and salt water mix"
+    },
+    {
+      "lemma": "falls",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "waterfall.n.01"
+        }
+      ],
+      "definition": "a steep descent of the water of a river"
+    },
+    {
+      "lemma": "flowage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "flowage.n.02"
+        }
+      ],
+      "definition": "a body of water that has been created by deliberately flooding an area"
+    },
+    {
+      "lemma": "ford",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "ford.n.07"
+        }
+      ],
+      "definition": "a shallow area in a stream that can be forded"
+    },
+    {
+      "lemma": "fresh",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "salty.a.02",
+          "via_synset": "fresh.a.06"
+        }
+      ],
+      "definition": "not containing or composed of salt water"
+    },
+    {
+      "lemma": "gulf",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "gulf.n.01"
+        }
+      ],
+      "definition": "an arm of a sea or ocean partly enclosed by land; larger than a bay"
+    },
+    {
+      "lemma": "high sea",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "high_sea.n.01"
+        }
+      ],
+      "definition": "the open seas of the world outside the territorial waters of any nation"
+    },
+    {
+      "lemma": "inlet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "inlet.n.01"
+        }
+      ],
+      "definition": "an arm off of a larger body of water (often between rocky headlands)"
+    },
+    {
+      "lemma": "international waters",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "high_sea.n.01"
+        }
+      ],
+      "definition": "the open seas of the world outside the territorial waters of any nation"
+    },
+    {
+      "lemma": "isosmotic solution",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "saline_solution.n.01",
+          "via_synset": "isotonic_solution.n.01"
+        }
+      ],
+      "definition": "a solution having the same osmotic pressure as blood"
+    },
+    {
+      "lemma": "isotonic solution",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "saline_solution.n.01",
+          "via_synset": "isotonic_solution.n.01"
+        }
+      ],
+      "definition": "a solution having the same osmotic pressure as blood"
+    },
+    {
+      "lemma": "lake",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "lake.n.01"
+        }
+      ],
+      "definition": "a body of (usually fresh) water surrounded by land"
+    },
+    {
+      "lemma": "main",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "main.n.01",
+          "via_synset": "main.n.01"
+        }
+      ],
+      "definition": "any very large body of (salt) water"
+    },
+    {
+      "lemma": "mid-water",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "mid-water.n.01"
+        }
+      ],
+      "definition": "the water that is well below the surface but also well above the bottom"
+    },
+    {
+      "lemma": "ocean",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "ocean.n.01"
+        }
+      ],
+      "definition": "a large body of water constituting a principal part of the hydrosphere"
+    },
+    {
+      "lemma": "offing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "offing.n.02"
+        }
+      ],
+      "definition": "the part of the sea that can be seen from the shore and is beyond the anchoring area"
+    },
+    {
+      "lemma": "piquant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "piquant.s.02",
+          "via_synset": "piquant.s.02"
+        }
+      ],
+      "definition": "engagingly stimulating or provocative"
+    },
+    {
+      "lemma": "polynya",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "polynya.n.01"
+        }
+      ],
+      "definition": "a stretch of open water surrounded by ice (especially in Arctic seas)"
+    },
+    {
+      "lemma": "pool",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "pool.n.06"
+        }
+      ],
+      "definition": "a small body of standing water (rainwater) or other liquid"
+    },
+    {
+      "lemma": "puddle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "pool.n.06"
+        }
+      ],
+      "definition": "a small body of standing water (rainwater) or other liquid"
+    },
+    {
+      "lemma": "recess",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "inlet.n.01"
+        }
+      ],
+      "definition": "an arm off of a larger body of water (often between rocky headlands)"
+    },
+    {
+      "lemma": "Ringer solution",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "isotonic_solution.n.01",
+          "via_synset": "ringer's_solution.n.01"
+        }
+      ],
+      "definition": "an aqueous solution containing the chlorides of sodium and potassium and calcium that is isotonic to animal tissues; used to correct dehydration and (in physiological experiments) as a medium for in vitro preparations"
+    },
+    {
+      "lemma": "Ringer's solution",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "isotonic_solution.n.01",
+          "via_synset": "ringer's_solution.n.01"
+        }
+      ],
+      "definition": "an aqueous solution containing the chlorides of sodium and potassium and calcium that is isotonic to animal tissues; used to correct dehydration and (in physiological experiments) as a medium for in vitro preparations"
+    },
+    {
+      "lemma": "saliferous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "salty.a.02",
+          "via_synset": "saliferous.s.01"
+        }
+      ],
+      "definition": "containing or yielding salt"
+    },
+    {
+      "lemma": "salinate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "saline_solution.n.01",
+          "via_synset": "salinate.v.01"
+        }
+      ],
+      "definition": "add salt to"
+    },
+    {
+      "lemma": "saline",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "saline.s.01",
+          "via_synset": "saline.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "salty.a.02",
+          "via_synset": "saline.s.01"
+        }
+      ],
+      "definition": "containing salt"
+    },
+    {
+      "lemma": "saline",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "saline_solution.n.01",
+          "via_synset": "saline_solution.n.01"
+        }
+      ],
+      "definition": "an isotonic solution of sodium chloride and distilled water"
+    },
+    {
+      "lemma": "saline solution",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "saline_solution.n.01",
+          "via_synset": "saline_solution.n.01"
+        }
+      ],
+      "definition": "an isotonic solution of sodium chloride and distilled water"
+    },
+    {
+      "lemma": "salinity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "saline.s.01",
+          "via_synset": "brininess.n.01"
+        }
+      ],
+      "definition": "the relative proportion of salt in a solution"
+    },
+    {
+      "lemma": "salt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "salty.s.02",
+          "via_synset": "salt.n.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "salty.a.02",
+          "via_synset": "salt.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "salty.a.02",
+          "via_synset": "salt.n.02"
+        }
+      ],
+      "definition": "the taste experience when common salt is taken into the mouth"
+    },
+    {
+      "lemma": "saltiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "piquant.s.02",
+          "via_synset": "saltiness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "salty.s.02",
+          "via_synset": "salt.n.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "salty.a.02",
+          "via_synset": "saltiness.n.03"
+        }
+      ],
+      "definition": "language or humor that is down-to-earth"
+    },
+    {
+      "lemma": "saltish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "salty.a.02",
+          "via_synset": "saltish.s.01"
+        }
+      ],
+      "definition": "somewhat salty"
+    },
+    {
+      "lemma": "salty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "salty.s.02",
+          "via_synset": "salty.s.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "piquant.s.02",
+          "via_synset": "piquant.s.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "salty.a.02",
+          "via_synset": "salty.a.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "saline.s.01",
+          "via_synset": "salty.a.02"
+        }
+      ],
+      "definition": "one of the four basic taste sensations; like the taste of sea water"
+    },
+    {
+      "lemma": "sea",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "sea.n.01"
+        }
+      ],
+      "definition": "a division of an ocean or a large body of salt water partially enclosed by land"
+    },
+    {
+      "lemma": "seven seas",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "seven_seas.n.01"
+        }
+      ],
+      "definition": "an informal expression for all of the oceans of the world"
+    },
+    {
+      "lemma": "shallow",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "shoal.n.02"
+        }
+      ],
+      "definition": "a stretch of shallow water"
+    },
+    {
+      "lemma": "shoal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "shoal.n.02"
+        }
+      ],
+      "definition": "a stretch of shallow water"
+    },
+    {
+      "lemma": "sound",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "sound.n.08"
+        }
+      ],
+      "definition": "a large ocean inlet or deep bay"
+    },
+    {
+      "lemma": "stimulating",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "piquant.s.02",
+          "via_synset": "stimulating.a.01"
+        }
+      ],
+      "definition": "rousing or quickening activity or the senses"
+    },
+    {
+      "lemma": "stream",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "stream.n.01"
+        }
+      ],
+      "definition": "a natural body of running water flowing on or under the earth"
+    },
+    {
+      "lemma": "tasty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "salty.s.02",
+          "via_synset": "tasty.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "salty.a.02",
+          "via_synset": "tasty.a.01"
+        }
+      ],
+      "definition": "pleasing to the sense of taste"
+    },
+    {
+      "lemma": "territorial waters",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "territorial_waters.n.01"
+        }
+      ],
+      "definition": "the waters surrounding a nation and its territories over which that nation exercises sovereign jurisdiction"
+    },
+    {
+      "lemma": "water",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "main.n.01",
+          "via_synset": "body_of_water.n.01"
+        }
+      ],
+      "definition": "the part of the earth's surface covered with water (such as a river or lake or ocean)"
+    },
+    {
+      "lemma": "watercourse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "stream.n.01"
+        }
+      ],
+      "definition": "a natural body of running water flowing on or under the earth"
+    },
+    {
+      "lemma": "waterfall",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "waterfall.n.01"
+        }
+      ],
+      "definition": "a steep descent of the water of a river"
+    },
+    {
+      "lemma": "waterway",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "waterway.n.01"
+        }
+      ],
+      "definition": "a navigable body of water"
+    }
+  ]
+}

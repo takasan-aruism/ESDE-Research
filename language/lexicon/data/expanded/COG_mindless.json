@@ -1,0 +1,467 @@
+{
+  "atom_id": "COG.mindless",
+  "category": "COG",
+  "seed_count": 6,
+  "total_keys": 24,
+  "pos_counts": {
+    "adj": 19,
+    "n": 5
+  },
+  "source_counts": {
+    "0_seed": 12,
+    "7_similar_to": 12,
+    "6_derivational": 7,
+    "8_also_see": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 9,
+      "words": [
+        "mindless(adj)",
+        "unmindful(adj)",
+        "forgetful(adj)",
+        "thoughtless(adj)",
+        "uncaring(adj)",
+        "unthinking(adj)",
+        "automatic(adj)",
+        "reflex(adj)",
+        "reflexive(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 5,
+      "words": [
+        "thoughtlessness(n)",
+        "unmindfulness(n)",
+        "forgetfulness(n)",
+        "mindlessness(n)",
+        "reflex(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 10,
+      "words": [
+        "inconsiderate(adj)",
+        "unconsidered(adj)",
+        "unreflective(adj)",
+        "unthoughtful(adj)",
+        "amnesic(adj)",
+        "amnesiac(adj)",
+        "nonintellectual(adj)",
+        "meaningless(adj)",
+        "nonmeaningful(adj)",
+        "involuntary(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "amnesiac",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unmindful.a.01",
+          "via_synset": "amnesic.s.01"
+        }
+      ],
+      "definition": "suffering from a partial loss of memory"
+    },
+    {
+      "lemma": "amnesic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unmindful.a.01",
+          "via_synset": "amnesic.s.01"
+        }
+      ],
+      "definition": "suffering from a partial loss of memory"
+    },
+    {
+      "lemma": "automatic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "automatic.s.02",
+          "via_synset": "automatic.s.02"
+        }
+      ],
+      "definition": "without volition or conscious control"
+    },
+    {
+      "lemma": "forgetful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unmindful.a.01",
+          "via_synset": "unmindful.a.01"
+        }
+      ],
+      "definition": "not mindful or attentive; - G.B.Shaw"
+    },
+    {
+      "lemma": "forgetfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unmindful.a.01",
+          "via_synset": "forgetfulness.n.02"
+        }
+      ],
+      "definition": "unawareness caused by neglectful or heedless failure to remember"
+    },
+    {
+      "lemma": "inconsiderate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "thoughtless.a.01",
+          "via_synset": "inconsiderate.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "thoughtless.s.01",
+          "via_synset": "inconsiderate.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "thoughtless.a.01",
+          "via_synset": "inconsiderate.a.01"
+        }
+      ],
+      "definition": "without proper consideration or reflection"
+    },
+    {
+      "lemma": "involuntary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "automatic.s.02",
+          "via_synset": "involuntary.a.02"
+        }
+      ],
+      "definition": "controlled by the autonomic nervous system; without conscious control"
+    },
+    {
+      "lemma": "meaningless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mindless.s.01",
+          "via_synset": "meaningless.a.01"
+        }
+      ],
+      "definition": "having no meaning or direction or purpose"
+    },
+    {
+      "lemma": "mindless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "mindless.s.02",
+          "via_synset": "mindless.s.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unmindful.a.01",
+          "via_synset": "unmindful.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "mindless.s.01",
+          "via_synset": "mindless.s.01"
+        }
+      ],
+      "definition": "requiring little mental effort"
+    },
+    {
+      "lemma": "mindlessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mindless.s.02",
+          "via_synset": "inanity.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mindless.s.01",
+          "via_synset": "inanity.n.01"
+        }
+      ],
+      "definition": "total lack of meaning or ideas"
+    },
+    {
+      "lemma": "nonintellectual",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mindless.s.02",
+          "via_synset": "nonintellectual.a.01"
+        }
+      ],
+      "definition": "not intellectual"
+    },
+    {
+      "lemma": "nonmeaningful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mindless.s.01",
+          "via_synset": "meaningless.a.01"
+        }
+      ],
+      "definition": "having no meaning or direction or purpose"
+    },
+    {
+      "lemma": "reflex",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "automatic.s.02",
+          "via_synset": "automatic.s.02"
+        }
+      ],
+      "definition": "without volition or conscious control"
+    },
+    {
+      "lemma": "reflex",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "automatic.s.02",
+          "via_synset": "reflex.n.01"
+        }
+      ],
+      "definition": "an automatic instinctive unlearned reaction to a stimulus"
+    },
+    {
+      "lemma": "reflexive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "automatic.s.02",
+          "via_synset": "automatic.s.02"
+        }
+      ],
+      "definition": "without volition or conscious control"
+    },
+    {
+      "lemma": "thoughtless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "thoughtless.s.01",
+          "via_synset": "thoughtless.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "thoughtless.a.01",
+          "via_synset": "thoughtless.a.01"
+        }
+      ],
+      "definition": "without care or thought for others"
+    },
+    {
+      "lemma": "thoughtlessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "thoughtless.a.01",
+          "via_synset": "unthoughtfulness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "thoughtless.s.01",
+          "via_synset": "inconsideration.n.01"
+        }
+      ],
+      "definition": "the trait of not thinking carefully before acting"
+    },
+    {
+      "lemma": "uncaring",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "thoughtless.s.01",
+          "via_synset": "thoughtless.s.01"
+        }
+      ],
+      "definition": "without care or thought for others"
+    },
+    {
+      "lemma": "unconsidered",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "thoughtless.a.01",
+          "via_synset": "inconsiderate.s.01"
+        }
+      ],
+      "definition": "without proper consideration or reflection"
+    },
+    {
+      "lemma": "unmindful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unmindful.a.01",
+          "via_synset": "unmindful.a.01"
+        }
+      ],
+      "definition": "not mindful or attentive; - G.B.Shaw"
+    },
+    {
+      "lemma": "unmindfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unmindful.a.01",
+          "via_synset": "unmindfulness.n.01"
+        }
+      ],
+      "definition": "the trait of forgetting or ignoring your responsibilities"
+    },
+    {
+      "lemma": "unreflective",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "thoughtless.a.01",
+          "via_synset": "unreflective.s.01"
+        }
+      ],
+      "definition": "not exhibiting or characterized by careful thought"
+    },
+    {
+      "lemma": "unthinking",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "thoughtless.s.01",
+          "via_synset": "thoughtless.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "thoughtless.a.01",
+          "via_synset": "unreflective.s.01"
+        }
+      ],
+      "definition": "without care or thought for others"
+    },
+    {
+      "lemma": "unthoughtful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "thoughtless.a.01",
+          "via_synset": "unreflective.s.01"
+        }
+      ],
+      "definition": "not exhibiting or characterized by careful thought"
+    }
+  ]
+}

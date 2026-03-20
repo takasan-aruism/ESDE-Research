@@ -1,0 +1,1195 @@
+{
+  "atom_id": "LOG.unreason",
+  "category": "LOG",
+  "seed_count": 6,
+  "total_keys": 76,
+  "pos_counts": {
+    "n": 59,
+    "adj": 16,
+    "v": 1
+  },
+  "source_counts": {
+    "0_seed": 12,
+    "7_similar_to": 10,
+    "6_derivational": 5,
+    "8_also_see": 4,
+    "2_hypernym_d1": 5,
+    "3_hyponym_d1": 2,
+    "4_hyponym_d2": 1,
+    "10_sibling": 42,
+    "11_pertainym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 11,
+      "words": [
+        "irrationality(n)",
+        "unreason(n)",
+        "unreasonable(adj)",
+        "excessive(adj)",
+        "inordinate(adj)",
+        "undue(adj)",
+        "irrational(adj)",
+        "irrational number(n)",
+        "irrational(n)",
+        "absurd(n)",
+        "the absurd(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 5,
+      "words": [
+        "insanity(n)",
+        "real number(n)",
+        "real(n)",
+        "situation(n)",
+        "state of affairs(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 2,
+      "words": [
+        "algebraic number(n)",
+        "transcendental number(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 1,
+      "words": [
+        "pi(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 3,
+      "words": [
+        "exceed(v)",
+        "excessiveness(n)",
+        "inordinateness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 9,
+      "words": [
+        "counterintuitive(adj)",
+        "unjustified(adj)",
+        "unwarranted(adj)",
+        "mindless(adj)",
+        "reasonless(adj)",
+        "senseless(adj)",
+        "indefensible(adj)",
+        "untenable(adj)",
+        "immoderate(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 2,
+      "words": [
+        "illogical(adj)",
+        "unlogical(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 42,
+      "words": [
+        "lunacy(n)",
+        "madness(n)",
+        "insaneness(n)",
+        "derangement(n)",
+        "mental unsoundness(n)",
+        "unbalance(n)",
+        "dementia(n)",
+        "dementedness(n)",
+        "craziness(n)",
+        "daftness(n)",
+        "flakiness(n)",
+        "rational number(n)",
+        "scalar product(n)",
+        "inner product(n)",
+        "dot product(n)",
+        "ballgame(n)",
+        "new ballgame(n)",
+        "complication(n)",
+        "size(n)",
+        "size of it(n)",
+        "hotbed(n)",
+        "prison(n)",
+        "prison house(n)",
+        "acceptance(n)",
+        "element(n)",
+        "environment(n)",
+        "square one(n)",
+        "inclusion(n)",
+        "challenge(n)",
+        "exclusion(n)",
+        "intestacy(n)",
+        "equilibrium(n)",
+        "childlessness(n)",
+        "rejection(n)",
+        "status quo(n)",
+        "picture(n)",
+        "scene(n)",
+        "crowding(n)",
+        "goldfish bowl(n)",
+        "fish bowl(n)",
+        "fishbowl(n)",
+        "disequilibrium(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 1,
+      "words": [
+        "ratio(n)"
+      ]
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "absurd",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "absurd.n.01",
+          "via_synset": "absurd.n.01"
+        }
+      ],
+      "definition": "a situation in which life seems irrational and meaningless; --Albert Camus"
+    },
+    {
+      "lemma": "acceptance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "acceptance.n.03"
+        }
+      ],
+      "definition": "the state of being acceptable and accepted"
+    },
+    {
+      "lemma": "algebraic number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "irrational_number.n.01",
+          "via_synset": "algebraic_number.n.01"
+        }
+      ],
+      "definition": "root of an algebraic equation with rational coefficients"
+    },
+    {
+      "lemma": "ballgame",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "ballgame.n.01"
+        }
+      ],
+      "definition": "a particular situation that is radically different from the preceding situation"
+    },
+    {
+      "lemma": "challenge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "challenge.n.01"
+        }
+      ],
+      "definition": "a demanding or stimulating situation"
+    },
+    {
+      "lemma": "childlessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "childlessness.n.01"
+        }
+      ],
+      "definition": "the condition of being without offspring"
+    },
+    {
+      "lemma": "complication",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "complication.n.02"
+        }
+      ],
+      "definition": "a situation or condition that is complex or confused"
+    },
+    {
+      "lemma": "counterintuitive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unreasonable.a.01",
+          "via_synset": "counterintuitive.s.01"
+        }
+      ],
+      "definition": "contrary to what common sense would suggest"
+    },
+    {
+      "lemma": "craziness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insanity.n.01",
+          "via_synset": "craziness.n.01"
+        }
+      ],
+      "definition": "informal terms for insanity"
+    },
+    {
+      "lemma": "crowding",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "crowding.n.01"
+        }
+      ],
+      "definition": "a situation in which people or things are crowded together"
+    },
+    {
+      "lemma": "daftness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insanity.n.01",
+          "via_synset": "craziness.n.01"
+        }
+      ],
+      "definition": "informal terms for insanity"
+    },
+    {
+      "lemma": "dementedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insanity.n.01",
+          "via_synset": "dementia.n.01"
+        }
+      ],
+      "definition": "mental deterioration of organic or functional origin"
+    },
+    {
+      "lemma": "dementia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insanity.n.01",
+          "via_synset": "dementia.n.01"
+        }
+      ],
+      "definition": "mental deterioration of organic or functional origin"
+    },
+    {
+      "lemma": "derangement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insanity.n.01",
+          "via_synset": "derangement.n.01"
+        }
+      ],
+      "definition": "a state of mental disturbance and disorientation"
+    },
+    {
+      "lemma": "disequilibrium",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "disequilibrium.n.01"
+        }
+      ],
+      "definition": "loss of equilibrium attributable to an unstable situation in which some forces outweigh others"
+    },
+    {
+      "lemma": "dot product",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "real_number.n.01",
+          "via_synset": "scalar_product.n.01"
+        }
+      ],
+      "definition": "a real number (a scalar) that is the product of two vectors"
+    },
+    {
+      "lemma": "element",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "element.n.06"
+        }
+      ],
+      "definition": "the situation in which you are happiest and most effective"
+    },
+    {
+      "lemma": "environment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "environment.n.01"
+        }
+      ],
+      "definition": "the totality of surrounding conditions"
+    },
+    {
+      "lemma": "equilibrium",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "equilibrium.n.01"
+        }
+      ],
+      "definition": "a stable situation in which forces cancel one another"
+    },
+    {
+      "lemma": "exceed",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "excessive.s.01",
+          "via_synset": "exceed.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "excessive.s.01",
+          "via_synset": "surpass.v.02"
+        }
+      ],
+      "definition": "be superior or better than some standard"
+    },
+    {
+      "lemma": "excessive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "excessive.s.01",
+          "via_synset": "excessive.s.01"
+        }
+      ],
+      "definition": "beyond normal limits"
+    },
+    {
+      "lemma": "excessiveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "excessive.s.01",
+          "via_synset": "excess.n.02"
+        }
+      ],
+      "definition": "immoderation as a consequence of going beyond sufficient or permitted limits"
+    },
+    {
+      "lemma": "exclusion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "exclusion.n.01"
+        }
+      ],
+      "definition": "the state of being excluded"
+    },
+    {
+      "lemma": "fish bowl",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "goldfish_bowl.n.01"
+        }
+      ],
+      "definition": "a state of affairs in which you have no privacy"
+    },
+    {
+      "lemma": "fishbowl",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "goldfish_bowl.n.01"
+        }
+      ],
+      "definition": "a state of affairs in which you have no privacy"
+    },
+    {
+      "lemma": "flakiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insanity.n.01",
+          "via_synset": "craziness.n.01"
+        }
+      ],
+      "definition": "informal terms for insanity"
+    },
+    {
+      "lemma": "goldfish bowl",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "goldfish_bowl.n.01"
+        }
+      ],
+      "definition": "a state of affairs in which you have no privacy"
+    },
+    {
+      "lemma": "hotbed",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "hotbed.n.01"
+        }
+      ],
+      "definition": "a situation that is ideal for rapid development (especially of something bad)"
+    },
+    {
+      "lemma": "illogical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unreasonable.a.01",
+          "via_synset": "illogical.a.01"
+        }
+      ],
+      "definition": "lacking in correct logical relation"
+    },
+    {
+      "lemma": "immoderate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "excessive.s.01",
+          "via_synset": "immoderate.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unreasonable.a.01",
+          "via_synset": "immoderate.a.01"
+        }
+      ],
+      "definition": "beyond reasonable limits"
+    },
+    {
+      "lemma": "inclusion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "inclusion.n.01"
+        }
+      ],
+      "definition": "the state of being included"
+    },
+    {
+      "lemma": "indefensible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unreasonable.a.01",
+          "via_synset": "indefensible.s.01"
+        }
+      ],
+      "definition": "(of theories etc) incapable of being defended or justified"
+    },
+    {
+      "lemma": "inner product",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "real_number.n.01",
+          "via_synset": "scalar_product.n.01"
+        }
+      ],
+      "definition": "a real number (a scalar) that is the product of two vectors"
+    },
+    {
+      "lemma": "inordinate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "excessive.s.01",
+          "via_synset": "excessive.s.01"
+        }
+      ],
+      "definition": "beyond normal limits"
+    },
+    {
+      "lemma": "inordinateness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "excessive.s.01",
+          "via_synset": "excess.n.02"
+        }
+      ],
+      "definition": "immoderation as a consequence of going beyond sufficient or permitted limits"
+    },
+    {
+      "lemma": "insaneness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insanity.n.01",
+          "via_synset": "lunacy.n.01"
+        }
+      ],
+      "definition": "obsolete terms for legal insanity"
+    },
+    {
+      "lemma": "insanity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "irrationality.n.01",
+          "via_synset": "insanity.n.01"
+        }
+      ],
+      "definition": "relatively permanent disorder of the mind"
+    },
+    {
+      "lemma": "intestacy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "intestacy.n.01"
+        }
+      ],
+      "definition": "the situation of being or dying without a legally valid will"
+    },
+    {
+      "lemma": "irrational",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "irrational.a.02",
+          "via_synset": "irrational.a.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "irrationality.n.01",
+          "via_synset": "irrational.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unreasonable.a.01",
+          "via_synset": "irrational.a.01"
+        }
+      ],
+      "definition": "real but not expressible as the quotient of two integers"
+    },
+    {
+      "lemma": "irrational",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "irrational_number.n.01",
+          "via_synset": "irrational_number.n.01"
+        }
+      ],
+      "definition": "a real number that cannot be expressed as a rational number"
+    },
+    {
+      "lemma": "irrational number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "irrational_number.n.01",
+          "via_synset": "irrational_number.n.01"
+        }
+      ],
+      "definition": "a real number that cannot be expressed as a rational number"
+    },
+    {
+      "lemma": "irrationality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "irrationality.n.01",
+          "via_synset": "irrationality.n.01"
+        }
+      ],
+      "definition": "the state of being irrational; lacking powers of understanding"
+    },
+    {
+      "lemma": "lunacy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insanity.n.01",
+          "via_synset": "lunacy.n.01"
+        }
+      ],
+      "definition": "obsolete terms for legal insanity"
+    },
+    {
+      "lemma": "madness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insanity.n.01",
+          "via_synset": "lunacy.n.01"
+        }
+      ],
+      "definition": "obsolete terms for legal insanity"
+    },
+    {
+      "lemma": "mental unsoundness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insanity.n.01",
+          "via_synset": "derangement.n.01"
+        }
+      ],
+      "definition": "a state of mental disturbance and disorientation"
+    },
+    {
+      "lemma": "mindless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unreasonable.a.01",
+          "via_synset": "mindless.s.04"
+        }
+      ],
+      "definition": "not marked by the use of reason"
+    },
+    {
+      "lemma": "new ballgame",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "ballgame.n.01"
+        }
+      ],
+      "definition": "a particular situation that is radically different from the preceding situation"
+    },
+    {
+      "lemma": "pi",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "transcendental_number.n.01",
+          "via_synset": "pi.n.01"
+        }
+      ],
+      "definition": "the ratio of the circumference to the diameter of a circle; approximately equal to 3.14159265358979323846..."
+    },
+    {
+      "lemma": "picture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "picture.n.04"
+        }
+      ],
+      "definition": "a situation treated as an observable object"
+    },
+    {
+      "lemma": "prison",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "prison.n.02"
+        }
+      ],
+      "definition": "a prisonlike situation; a place of seeming confinement"
+    },
+    {
+      "lemma": "prison house",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "prison.n.02"
+        }
+      ],
+      "definition": "a prisonlike situation; a place of seeming confinement"
+    },
+    {
+      "lemma": "ratio",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "11_pertainym",
+          "relation": "pertainym",
+          "from_synset": "irrational.a.02",
+          "via_synset": "ratio.n.01"
+        }
+      ],
+      "definition": "the relative magnitudes of two quantities (usually expressed as a quotient)"
+    },
+    {
+      "lemma": "rational number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "real_number.n.01",
+          "via_synset": "rational_number.n.01"
+        }
+      ],
+      "definition": "an integer or a fraction"
+    },
+    {
+      "lemma": "real",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "irrational_number.n.01",
+          "via_synset": "real_number.n.01"
+        }
+      ],
+      "definition": "any rational or irrational number"
+    },
+    {
+      "lemma": "real number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "irrational_number.n.01",
+          "via_synset": "real_number.n.01"
+        }
+      ],
+      "definition": "any rational or irrational number"
+    },
+    {
+      "lemma": "reasonless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unreasonable.a.01",
+          "via_synset": "mindless.s.04"
+        }
+      ],
+      "definition": "not marked by the use of reason"
+    },
+    {
+      "lemma": "rejection",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "rejection.n.02"
+        }
+      ],
+      "definition": "the state of being rejected"
+    },
+    {
+      "lemma": "scalar product",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "real_number.n.01",
+          "via_synset": "scalar_product.n.01"
+        }
+      ],
+      "definition": "a real number (a scalar) that is the product of two vectors"
+    },
+    {
+      "lemma": "scene",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "picture.n.04"
+        }
+      ],
+      "definition": "a situation treated as an observable object"
+    },
+    {
+      "lemma": "senseless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unreasonable.a.01",
+          "via_synset": "mindless.s.04"
+        }
+      ],
+      "definition": "not marked by the use of reason"
+    },
+    {
+      "lemma": "situation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "absurd.n.01",
+          "via_synset": "situation.n.01"
+        }
+      ],
+      "definition": "the general state of things; the combination of circumstances at a given time; ; ; - Franklin D.Roosevelt"
+    },
+    {
+      "lemma": "size",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "size.n.04"
+        }
+      ],
+      "definition": "the actual state of affairs"
+    },
+    {
+      "lemma": "size of it",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "size.n.04"
+        }
+      ],
+      "definition": "the actual state of affairs"
+    },
+    {
+      "lemma": "square one",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "square_one.n.01"
+        }
+      ],
+      "definition": "the situation in which you begin an endeavor and to which you return if your efforts fail"
+    },
+    {
+      "lemma": "state of affairs",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "absurd.n.01",
+          "via_synset": "situation.n.01"
+        }
+      ],
+      "definition": "the general state of things; the combination of circumstances at a given time; ; ; - Franklin D.Roosevelt"
+    },
+    {
+      "lemma": "status quo",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "situation.n.01",
+          "via_synset": "status_quo.n.01"
+        }
+      ],
+      "definition": "the existing state of affairs"
+    },
+    {
+      "lemma": "the absurd",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "absurd.n.01",
+          "via_synset": "absurd.n.01"
+        }
+      ],
+      "definition": "a situation in which life seems irrational and meaningless; --Albert Camus"
+    },
+    {
+      "lemma": "transcendental number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "irrational_number.n.01",
+          "via_synset": "transcendental_number.n.01"
+        }
+      ],
+      "definition": "an irrational number that is not algebraic"
+    },
+    {
+      "lemma": "unbalance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insanity.n.01",
+          "via_synset": "derangement.n.01"
+        }
+      ],
+      "definition": "a state of mental disturbance and disorientation"
+    },
+    {
+      "lemma": "undue",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "excessive.s.01",
+          "via_synset": "excessive.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unreasonable.a.01",
+          "via_synset": "undue.s.01"
+        }
+      ],
+      "definition": "beyond normal limits"
+    },
+    {
+      "lemma": "unjustified",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unreasonable.a.01",
+          "via_synset": "undue.s.01"
+        }
+      ],
+      "definition": "lacking justification or authorization"
+    },
+    {
+      "lemma": "unlogical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unreasonable.a.01",
+          "via_synset": "illogical.a.01"
+        }
+      ],
+      "definition": "lacking in correct logical relation"
+    },
+    {
+      "lemma": "unreason",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "irrationality.n.01",
+          "via_synset": "irrationality.n.01"
+        }
+      ],
+      "definition": "the state of being irrational; lacking powers of understanding"
+    },
+    {
+      "lemma": "unreasonable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unreasonable.a.01",
+          "via_synset": "unreasonable.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "excessive.s.01",
+          "via_synset": "excessive.s.01"
+        }
+      ],
+      "definition": "not reasonable; not showing good judgment"
+    },
+    {
+      "lemma": "untenable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unreasonable.a.01",
+          "via_synset": "indefensible.s.01"
+        }
+      ],
+      "definition": "(of theories etc) incapable of being defended or justified"
+    },
+    {
+      "lemma": "unwarranted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unreasonable.a.01",
+          "via_synset": "undue.s.01"
+        }
+      ],
+      "definition": "lacking justification or authorization"
+    }
+  ]
+}

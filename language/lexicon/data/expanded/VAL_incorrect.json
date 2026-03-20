@@ -1,0 +1,554 @@
+{
+  "atom_id": "VAL.incorrect",
+  "category": "VAL",
+  "seed_count": 6,
+  "total_keys": 27,
+  "pos_counts": {
+    "adj": 23,
+    "n": 4
+  },
+  "source_counts": {
+    "0_seed": 10,
+    "8_also_see": 10,
+    "7_similar_to": 14,
+    "6_derivational": 7,
+    "9_antonym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 6,
+      "words": [
+        "incorrect(adj)",
+        "wrong(adj)",
+        "false(adj)",
+        "untrue(adj)",
+        "misguided(adj)",
+        "mistaken(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 4,
+      "words": [
+        "incorrectness(n)",
+        "wrongness(n)",
+        "falseness(n)",
+        "falsity(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 10,
+      "words": [
+        "ungrammatical(adj)",
+        "ill-formed(adj)",
+        "erroneous(adj)",
+        "fallacious(adj)",
+        "improper(adj)",
+        "inconstant(adj)",
+        "specious(adj)",
+        "spurious(adj)",
+        "trumped-up(adj)",
+        "mendacious(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 6,
+      "words": [
+        "inaccurate(adj)",
+        "insincere(adj)",
+        "dishonest(adj)",
+        "dishonorable(adj)",
+        "counterfeit(adj)",
+        "imitative(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "true(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "counterfeit",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "false.a.01",
+          "via_synset": "counterfeit.a.01"
+        }
+      ],
+      "definition": "not genuine; imitating something superior"
+    },
+    {
+      "lemma": "dishonest",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "false.a.01",
+          "via_synset": "dishonest.a.01"
+        }
+      ],
+      "definition": "deceptive or fraudulent; disposed to cheat or defraud or deceive"
+    },
+    {
+      "lemma": "dishonorable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "false.a.01",
+          "via_synset": "dishonest.a.01"
+        }
+      ],
+      "definition": "deceptive or fraudulent; disposed to cheat or defraud or deceive"
+    },
+    {
+      "lemma": "erroneous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "incorrect.a.01",
+          "via_synset": "erroneous.s.01"
+        }
+      ],
+      "definition": "containing or characterized by error"
+    },
+    {
+      "lemma": "fallacious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "incorrect.a.01",
+          "via_synset": "fallacious.s.03"
+        }
+      ],
+      "definition": "based on an incorrect or misleading notion or information"
+    },
+    {
+      "lemma": "false",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "false.a.01",
+          "via_synset": "false.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "false.s.09",
+          "via_synset": "false.s.09"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "incorrect.a.01",
+          "via_synset": "false.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "incorrect.a.01",
+          "via_synset": "false.a.01"
+        }
+      ],
+      "definition": "not in accordance with the fact or reality or actuality"
+    },
+    {
+      "lemma": "falseness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "false.s.09",
+          "via_synset": "insincerity.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "false.a.01",
+          "via_synset": "falsity.n.01"
+        }
+      ],
+      "definition": "the quality of not being open or truthful; deceitful or hypocritical"
+    },
+    {
+      "lemma": "falsity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "false.s.09",
+          "via_synset": "falsity.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "false.a.01",
+          "via_synset": "falsehood.n.01"
+        }
+      ],
+      "definition": "the state of being false or untrue"
+    },
+    {
+      "lemma": "ill-formed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "incorrect.s.02",
+          "via_synset": "ungrammatical.a.01"
+        }
+      ],
+      "definition": "not grammatical; not conforming to the rules of grammar or accepted usage"
+    },
+    {
+      "lemma": "imitative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "false.a.01",
+          "via_synset": "counterfeit.a.01"
+        }
+      ],
+      "definition": "not genuine; imitating something superior"
+    },
+    {
+      "lemma": "improper",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "wrong.s.03",
+          "via_synset": "improper.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "incorrect.a.01",
+          "via_synset": "improper.a.01"
+        }
+      ],
+      "definition": "not suitable or right or appropriate"
+    },
+    {
+      "lemma": "inaccurate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "incorrect.a.01",
+          "via_synset": "inaccurate.a.01"
+        }
+      ],
+      "definition": "not exact"
+    },
+    {
+      "lemma": "inconstant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "false.s.09",
+          "via_synset": "inconstant.a.01"
+        }
+      ],
+      "definition": "likely to change frequently often without apparent or cogent reason; variable; ; ; - Shakespeare"
+    },
+    {
+      "lemma": "incorrect",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "incorrect.a.01",
+          "via_synset": "incorrect.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wrong.s.03",
+          "via_synset": "wrong.s.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "incorrect.s.02",
+          "via_synset": "incorrect.s.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "false.a.01",
+          "via_synset": "incorrect.a.01"
+        }
+      ],
+      "definition": "not correct; not in conformity with fact or truth"
+    },
+    {
+      "lemma": "incorrectness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "incorrect.a.01",
+          "via_synset": "incorrectness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "incorrect.a.01",
+          "via_synset": "incorrectness.n.01"
+        }
+      ],
+      "definition": "the quality of not conforming to fact or truth"
+    },
+    {
+      "lemma": "insincere",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "false.a.01",
+          "via_synset": "insincere.a.01"
+        }
+      ],
+      "definition": "lacking sincerity"
+    },
+    {
+      "lemma": "mendacious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "false.a.01",
+          "via_synset": "mendacious.s.02"
+        }
+      ],
+      "definition": "intentionally untrue"
+    },
+    {
+      "lemma": "misguided",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "misguided.s.02",
+          "via_synset": "misguided.s.02"
+        }
+      ],
+      "definition": "wrong in e.g. opinion or judgment"
+    },
+    {
+      "lemma": "mistaken",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "misguided.s.02",
+          "via_synset": "misguided.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "incorrect.a.01",
+          "via_synset": "false.s.01"
+        }
+      ],
+      "definition": "wrong in e.g. opinion or judgment"
+    },
+    {
+      "lemma": "specious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "false.a.01",
+          "via_synset": "specious.s.01"
+        }
+      ],
+      "definition": "plausible but false"
+    },
+    {
+      "lemma": "spurious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "false.a.01",
+          "via_synset": "specious.s.01"
+        }
+      ],
+      "definition": "plausible but false"
+    },
+    {
+      "lemma": "true",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "false.a.01",
+          "via_synset": "true.a.01"
+        }
+      ],
+      "definition": "consistent with fact or reality; not false; ; - B. Russell"
+    },
+    {
+      "lemma": "trumped-up",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "false.a.01",
+          "via_synset": "trumped-up.s.01"
+        }
+      ],
+      "definition": "concocted with intent to deceive"
+    },
+    {
+      "lemma": "ungrammatical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "incorrect.s.02",
+          "via_synset": "ungrammatical.a.01"
+        }
+      ],
+      "definition": "not grammatical; not conforming to the rules of grammar or accepted usage"
+    },
+    {
+      "lemma": "untrue",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "false.s.09",
+          "via_synset": "false.s.09"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "false.a.01",
+          "via_synset": "untrue.s.01"
+        }
+      ],
+      "definition": "(used especially of persons) not dependable in devotion or affection; unfaithful"
+    },
+    {
+      "lemma": "wrong",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "incorrect.a.01",
+          "via_synset": "incorrect.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wrong.s.03",
+          "via_synset": "wrong.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "misguided.s.02",
+          "via_synset": "wrong.a.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "false.a.01",
+          "via_synset": "incorrect.a.01"
+        }
+      ],
+      "definition": "not correct; not in conformity with fact or truth"
+    },
+    {
+      "lemma": "wrongness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "incorrect.a.01",
+          "via_synset": "incorrectness.n.02"
+        }
+      ],
+      "definition": "the quality of not conforming to fact or truth"
+    }
+  ]
+}

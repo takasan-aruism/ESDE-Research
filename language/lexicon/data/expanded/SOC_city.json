@@ -1,0 +1,798 @@
+{
+  "atom_id": "SOC.city",
+  "category": "SOC",
+  "seed_count": 6,
+  "total_keys": 45,
+  "pos_counts": {
+    "n": 34,
+    "adj": 9,
+    "v": 2
+  },
+  "source_counts": {
+    "0_seed": 9,
+    "11_pertainym": 1,
+    "2_hypernym_d1": 6,
+    "10_sibling": 25,
+    "3_hyponym_d1": 3,
+    "6_derivational": 7,
+    "7_similar_to": 7
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 5,
+      "words": [
+        "city(n)",
+        "metropolis(n)",
+        "urban center(n)",
+        "urban(adj)",
+        "metropolitan(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 5,
+      "words": [
+        "municipality(n)",
+        "administrative district(n)",
+        "administrative division(n)",
+        "territorial division(n)",
+        "archbishop(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 3,
+      "words": [
+        "provincial capital(n)",
+        "state capital(n)",
+        "national capital(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 4,
+      "words": [
+        "urbanize(v)",
+        "urbanity(n)",
+        "citify(v)",
+        "metropolitan(adj)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 7,
+      "words": [
+        "citified(adj)",
+        "cityfied(adj)",
+        "city-bred(adj)",
+        "city-born(adj)",
+        "urbanized(adj)",
+        "urbanised(adj)",
+        "city-like(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 21,
+      "words": [
+        "town(n)",
+        "townspeople(n)",
+        "townsfolk(n)",
+        "school district(n)",
+        "borough(n)",
+        "canton(n)",
+        "federal district(n)",
+        "county(n)",
+        "state(n)",
+        "province(n)",
+        "country(n)",
+        "land(n)",
+        "reservation(n)",
+        "reserve(n)",
+        "township(n)",
+        "ward(n)",
+        "prefecture(n)",
+        "department(n)",
+        "shire(n)",
+        "county palatine(n)",
+        "commune(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "administrative district",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "city.n.02",
+          "via_synset": "administrative_district.n.01"
+        }
+      ],
+      "definition": "a district defined for administrative purposes"
+    },
+    {
+      "lemma": "administrative division",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "city.n.02",
+          "via_synset": "administrative_district.n.01"
+        }
+      ],
+      "definition": "a district defined for administrative purposes"
+    },
+    {
+      "lemma": "archbishop",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "metropolitan.n.01",
+          "via_synset": "archbishop.n.01"
+        }
+      ],
+      "definition": "a bishop of highest rank"
+    },
+    {
+      "lemma": "borough",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "borough.n.01"
+        }
+      ],
+      "definition": "one of the administrative divisions of a large city"
+    },
+    {
+      "lemma": "canton",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "canton.n.02"
+        }
+      ],
+      "definition": "a small administrative division of a country"
+    },
+    {
+      "lemma": "citified",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "urban.a.02",
+          "via_synset": "citified.s.01"
+        }
+      ],
+      "definition": "being or having the customs or manners or dress of a city person"
+    },
+    {
+      "lemma": "citify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "city.n.03",
+          "via_synset": "citify.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "city.n.01",
+          "via_synset": "citify.v.01"
+        }
+      ],
+      "definition": "accustom to urban ways"
+    },
+    {
+      "lemma": "city",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "city.n.01",
+          "via_synset": "city.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "city.n.03",
+          "via_synset": "city.n.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "city.n.02",
+          "via_synset": "city.n.02"
+        },
+        {
+          "step": "11_pertainym",
+          "relation": "pertainym",
+          "from_synset": "urban.a.01",
+          "via_synset": "city.n.01"
+        }
+      ],
+      "definition": "a large and densely populated urban area; may include several independent administrative districts"
+    },
+    {
+      "lemma": "city-born",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "urban.a.02",
+          "via_synset": "citified.s.01"
+        }
+      ],
+      "definition": "being or having the customs or manners or dress of a city person"
+    },
+    {
+      "lemma": "city-bred",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "urban.a.02",
+          "via_synset": "citified.s.01"
+        }
+      ],
+      "definition": "being or having the customs or manners or dress of a city person"
+    },
+    {
+      "lemma": "city-like",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "urban.a.02",
+          "via_synset": "city-like.s.01"
+        }
+      ],
+      "definition": "resembling a city"
+    },
+    {
+      "lemma": "cityfied",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "urban.a.02",
+          "via_synset": "citified.s.01"
+        }
+      ],
+      "definition": "being or having the customs or manners or dress of a city person"
+    },
+    {
+      "lemma": "commune",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "commune.n.01"
+        }
+      ],
+      "definition": "the smallest administrative district of several European countries"
+    },
+    {
+      "lemma": "country",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "country.n.02"
+        }
+      ],
+      "definition": "the territory occupied by a nation"
+    },
+    {
+      "lemma": "county",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "county.n.02"
+        }
+      ],
+      "definition": "(United States) the largest administrative district within a state"
+    },
+    {
+      "lemma": "county palatine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "county_palatine.n.01"
+        }
+      ],
+      "definition": "the territory of a count palatine"
+    },
+    {
+      "lemma": "department",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "department.n.02"
+        }
+      ],
+      "definition": "the territorial and administrative division of some countries (such as France)"
+    },
+    {
+      "lemma": "federal district",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "federal_district.n.01"
+        }
+      ],
+      "definition": "a district set apart as the seat of government of a federation"
+    },
+    {
+      "lemma": "land",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "country.n.02"
+        }
+      ],
+      "definition": "the territory occupied by a nation"
+    },
+    {
+      "lemma": "metropolis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "city.n.01",
+          "via_synset": "city.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "city.n.03",
+          "via_synset": "city.n.03"
+        }
+      ],
+      "definition": "a large and densely populated urban area; may include several independent administrative districts"
+    },
+    {
+      "lemma": "metropolitan",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "city.n.01",
+          "via_synset": "metropolitan.a.01"
+        }
+      ],
+      "definition": "relating to or characteristic of a metropolis"
+    },
+    {
+      "lemma": "metropolitan",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "metropolitan.n.01",
+          "via_synset": "metropolitan.n.01"
+        }
+      ],
+      "definition": "in the Eastern Orthodox Church this title is given to a position between bishop and patriarch; equivalent to archbishop in western Christianity"
+    },
+    {
+      "lemma": "municipality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "city.n.01",
+          "via_synset": "municipality.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "city.n.03",
+          "via_synset": "municipality.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "municipality.n.01"
+        }
+      ],
+      "definition": "an urban district having corporate status and powers of self-government"
+    },
+    {
+      "lemma": "national capital",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "city.n.01",
+          "via_synset": "national_capital.n.01"
+        }
+      ],
+      "definition": "the capital city of a nation"
+    },
+    {
+      "lemma": "prefecture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "prefecture.n.01"
+        }
+      ],
+      "definition": "the district administered by a prefect (as in France or Japan or the Roman Empire)"
+    },
+    {
+      "lemma": "province",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "state.n.01"
+        }
+      ],
+      "definition": "the territory occupied by one of the constituent administrative districts of a nation"
+    },
+    {
+      "lemma": "provincial capital",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "city.n.01",
+          "via_synset": "provincial_capital.n.01"
+        }
+      ],
+      "definition": "the capital city of a province"
+    },
+    {
+      "lemma": "reservation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "reservation.n.01"
+        }
+      ],
+      "definition": "a district that is reserved for particular purpose"
+    },
+    {
+      "lemma": "reserve",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "reservation.n.01"
+        }
+      ],
+      "definition": "a district that is reserved for particular purpose"
+    },
+    {
+      "lemma": "school district",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "school_district.n.01"
+        }
+      ],
+      "definition": "a district whose public schools are administered together"
+    },
+    {
+      "lemma": "shire",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "shire.n.01"
+        }
+      ],
+      "definition": "a former administrative district of England; equivalent to a county"
+    },
+    {
+      "lemma": "state",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "state.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "country.n.02"
+        }
+      ],
+      "definition": "the territory occupied by one of the constituent administrative districts of a nation"
+    },
+    {
+      "lemma": "state capital",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "city.n.01",
+          "via_synset": "state_capital.n.01"
+        }
+      ],
+      "definition": "the capital city of a political subdivision of a country"
+    },
+    {
+      "lemma": "territorial division",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "city.n.02",
+          "via_synset": "administrative_district.n.01"
+        }
+      ],
+      "definition": "a district defined for administrative purposes"
+    },
+    {
+      "lemma": "town",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "municipality.n.01",
+          "via_synset": "town.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "municipality.n.02",
+          "via_synset": "town.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "township.n.01"
+        }
+      ],
+      "definition": "an urban area with a fixed boundary that is smaller than a city"
+    },
+    {
+      "lemma": "townsfolk",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "municipality.n.02",
+          "via_synset": "town.n.02"
+        }
+      ],
+      "definition": "the people living in a municipality smaller than a city"
+    },
+    {
+      "lemma": "township",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "township.n.01"
+        }
+      ],
+      "definition": "an administrative division of a county"
+    },
+    {
+      "lemma": "townspeople",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "municipality.n.02",
+          "via_synset": "town.n.02"
+        }
+      ],
+      "definition": "the people living in a municipality smaller than a city"
+    },
+    {
+      "lemma": "urban",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "urban.a.01",
+          "via_synset": "urban.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "urban.a.02",
+          "via_synset": "urban.a.02"
+        }
+      ],
+      "definition": "relating to or concerned with a city or densely populated area"
+    },
+    {
+      "lemma": "urban center",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "city.n.01",
+          "via_synset": "city.n.01"
+        }
+      ],
+      "definition": "a large and densely populated urban area; may include several independent administrative districts"
+    },
+    {
+      "lemma": "urbanised",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "urban.a.02",
+          "via_synset": "urbanized.s.01"
+        }
+      ],
+      "definition": "made urban in nature; taking on urban characteristics"
+    },
+    {
+      "lemma": "urbanity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "urban.a.02",
+          "via_synset": "urbanity.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "urban.a.01",
+          "via_synset": "urbanity.n.02"
+        }
+      ],
+      "definition": "the quality or character of life in a city or town"
+    },
+    {
+      "lemma": "urbanize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "urban.a.02",
+          "via_synset": "urbanize.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "urban.a.02",
+          "via_synset": "urbanize.v.01"
+        }
+      ],
+      "definition": "impart urban habits, ways of life, or responsibilities upon"
+    },
+    {
+      "lemma": "urbanized",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "urban.a.02",
+          "via_synset": "urbanized.s.01"
+        }
+      ],
+      "definition": "made urban in nature; taking on urban characteristics"
+    },
+    {
+      "lemma": "ward",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "administrative_district.n.01",
+          "via_synset": "ward.n.02"
+        }
+      ],
+      "definition": "a district into which a city or town is divided for the purpose of administration and elections"
+    }
+  ]
+}

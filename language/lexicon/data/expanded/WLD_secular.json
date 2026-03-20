@@ -1,0 +1,872 @@
+{
+  "atom_id": "WLD.secular",
+  "category": "WLD",
+  "seed_count": 6,
+  "total_keys": 50,
+  "pos_counts": {
+    "adj": 21,
+    "n": 29
+  },
+  "source_counts": {
+    "0_seed": 12,
+    "8_also_see": 9,
+    "7_similar_to": 14,
+    "2_hypernym_d1": 3,
+    "3_hyponym_d1": 1,
+    "6_derivational": 4,
+    "9_antonym": 2,
+    "10_sibling": 17,
+    "11_pertainym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 8,
+      "words": [
+        "profane(adj)",
+        "secular(adj)",
+        "layman(n)",
+        "layperson(n)",
+        "secular(n)",
+        "worldly(adj)",
+        "temporal(adj)",
+        "blase(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 3,
+      "words": [
+        "commoner(n)",
+        "common man(n)",
+        "common person(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 1,
+      "words": [
+        "lay reader(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 3,
+      "words": [
+        "worldliness(n)",
+        "world(n)",
+        "profaneness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 13,
+      "words": [
+        "impermanent(adj)",
+        "temporary(adj)",
+        "economic(adj)",
+        "mundane(adj)",
+        "terrestrial(adj)",
+        "materialistic(adj)",
+        "mercenary(adj)",
+        "worldly-minded(adj)",
+        "material(adj)",
+        "laic(adj)",
+        "lay(adj)",
+        "profanatory(adj)",
+        "sophisticated(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 2,
+      "words": [
+        "earthly(adj)",
+        "impious(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 2,
+      "words": [
+        "clergyman(n)",
+        "unworldly(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 17,
+      "words": [
+        "bourgeois(n)",
+        "burgher(n)",
+        "cipher(n)",
+        "cypher(n)",
+        "nobody(n)",
+        "nonentity(n)",
+        "everyman(n)",
+        "proletarian(n)",
+        "prole(n)",
+        "worker(n)",
+        "plebeian(n)",
+        "pleb(n)",
+        "rustic(n)",
+        "John Doe(n)",
+        "Joe Blow(n)",
+        "Joe Bloggs(n)",
+        "man in the street(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 1,
+      "words": [
+        "secularism(n)"
+      ]
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "blase",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "blase.s.01",
+          "via_synset": "blase.s.01"
+        }
+      ],
+      "definition": "very sophisticated especially because of surfeit; versed in the ways of the world"
+    },
+    {
+      "lemma": "bourgeois",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commoner.n.01",
+          "via_synset": "bourgeois.n.02"
+        }
+      ],
+      "definition": "a member of the middle class"
+    },
+    {
+      "lemma": "burgher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commoner.n.01",
+          "via_synset": "bourgeois.n.02"
+        }
+      ],
+      "definition": "a member of the middle class"
+    },
+    {
+      "lemma": "cipher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commoner.n.01",
+          "via_synset": "cipher.n.04"
+        }
+      ],
+      "definition": "a person of no influence"
+    },
+    {
+      "lemma": "clergyman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "layman.n.01",
+          "via_synset": "clergyman.n.01"
+        }
+      ],
+      "definition": "a member of the clergy and a spiritual leader of the Christian Church"
+    },
+    {
+      "lemma": "common man",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "layman.n.01",
+          "via_synset": "commoner.n.01"
+        }
+      ],
+      "definition": "a person who holds no title"
+    },
+    {
+      "lemma": "common person",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "layman.n.01",
+          "via_synset": "commoner.n.01"
+        }
+      ],
+      "definition": "a person who holds no title"
+    },
+    {
+      "lemma": "commoner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "layman.n.01",
+          "via_synset": "commoner.n.01"
+        }
+      ],
+      "definition": "a person who holds no title"
+    },
+    {
+      "lemma": "cypher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commoner.n.01",
+          "via_synset": "cipher.n.04"
+        }
+      ],
+      "definition": "a person of no influence"
+    },
+    {
+      "lemma": "earthly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "worldly.a.01",
+          "via_synset": "earthly.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "profane.a.02",
+          "via_synset": "earthly.a.01"
+        }
+      ],
+      "definition": "of or belonging to or characteristic of this earth as distinguished from heaven"
+    },
+    {
+      "lemma": "economic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "worldly.a.01",
+          "via_synset": "economic.s.02"
+        }
+      ],
+      "definition": "concerned with worldly necessities of life (especially money)"
+    },
+    {
+      "lemma": "everyman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commoner.n.01",
+          "via_synset": "everyman.n.01"
+        }
+      ],
+      "definition": "the ordinary person"
+    },
+    {
+      "lemma": "impermanent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "temporal.s.01",
+          "via_synset": "impermanent.a.01"
+        }
+      ],
+      "definition": "not permanent; not lasting; - James Thurber"
+    },
+    {
+      "lemma": "impious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "profane.a.02",
+          "via_synset": "impious.a.01"
+        }
+      ],
+      "definition": "lacking piety or reverence for a god"
+    },
+    {
+      "lemma": "Joe Bloggs",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commoner.n.01",
+          "via_synset": "john_doe.n.01"
+        }
+      ],
+      "definition": "a hypothetical average man"
+    },
+    {
+      "lemma": "Joe Blow",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commoner.n.01",
+          "via_synset": "john_doe.n.01"
+        }
+      ],
+      "definition": "a hypothetical average man"
+    },
+    {
+      "lemma": "John Doe",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commoner.n.01",
+          "via_synset": "john_doe.n.01"
+        }
+      ],
+      "definition": "a hypothetical average man"
+    },
+    {
+      "lemma": "laic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "profane.a.02",
+          "via_synset": "laic.s.01"
+        }
+      ],
+      "definition": "characteristic of those who are not members of the clergy"
+    },
+    {
+      "lemma": "lay",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "profane.a.02",
+          "via_synset": "laic.s.01"
+        }
+      ],
+      "definition": "characteristic of those who are not members of the clergy"
+    },
+    {
+      "lemma": "lay reader",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "layman.n.01",
+          "via_synset": "lay_reader.n.01"
+        }
+      ],
+      "definition": "a layman who is authorized by the bishop to read parts of the service in an Anglican or Episcopal church"
+    },
+    {
+      "lemma": "layman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "layman.n.01",
+          "via_synset": "layman.n.01"
+        }
+      ],
+      "definition": "someone who is not a clergyman or a professional person"
+    },
+    {
+      "lemma": "layperson",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "layman.n.01",
+          "via_synset": "layman.n.01"
+        }
+      ],
+      "definition": "someone who is not a clergyman or a professional person"
+    },
+    {
+      "lemma": "man in the street",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commoner.n.01",
+          "via_synset": "john_doe.n.01"
+        }
+      ],
+      "definition": "a hypothetical average man"
+    },
+    {
+      "lemma": "material",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "worldly.a.01",
+          "via_synset": "material.s.01"
+        }
+      ],
+      "definition": "concerned with worldly rather than spiritual interests"
+    },
+    {
+      "lemma": "materialistic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "worldly.a.01",
+          "via_synset": "materialistic.s.01"
+        }
+      ],
+      "definition": "marked by materialism"
+    },
+    {
+      "lemma": "mercenary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "worldly.a.01",
+          "via_synset": "materialistic.s.01"
+        }
+      ],
+      "definition": "marked by materialism"
+    },
+    {
+      "lemma": "mundane",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "worldly.a.01",
+          "via_synset": "mundane.s.02"
+        }
+      ],
+      "definition": "concerned with the world or worldly matters"
+    },
+    {
+      "lemma": "nobody",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commoner.n.01",
+          "via_synset": "cipher.n.04"
+        }
+      ],
+      "definition": "a person of no influence"
+    },
+    {
+      "lemma": "nonentity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commoner.n.01",
+          "via_synset": "cipher.n.04"
+        }
+      ],
+      "definition": "a person of no influence"
+    },
+    {
+      "lemma": "pleb",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commoner.n.01",
+          "via_synset": "plebeian.n.01"
+        }
+      ],
+      "definition": "one of the common people"
+    },
+    {
+      "lemma": "plebeian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commoner.n.01",
+          "via_synset": "plebeian.n.01"
+        }
+      ],
+      "definition": "one of the common people"
+    },
+    {
+      "lemma": "profanatory",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "profane.a.02",
+          "via_synset": "profanatory.s.01"
+        }
+      ],
+      "definition": "profaning or tending to desecrate"
+    },
+    {
+      "lemma": "profane",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "profane.a.02",
+          "via_synset": "profane.a.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "worldly.a.01",
+          "via_synset": "profane.a.02"
+        }
+      ],
+      "definition": "not concerned with or devoted to religion; ; ; ,"
+    },
+    {
+      "lemma": "profaneness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "profane.a.02",
+          "via_synset": "profaneness.n.01"
+        }
+      ],
+      "definition": "an attitude of irreverence or contempt for a divinity"
+    },
+    {
+      "lemma": "prole",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commoner.n.01",
+          "via_synset": "proletarian.n.01"
+        }
+      ],
+      "definition": "a member of the working class (not necessarily employed)"
+    },
+    {
+      "lemma": "proletarian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commoner.n.01",
+          "via_synset": "proletarian.n.01"
+        }
+      ],
+      "definition": "a member of the working class (not necessarily employed)"
+    },
+    {
+      "lemma": "rustic",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commoner.n.01",
+          "via_synset": "rustic.n.01"
+        }
+      ],
+      "definition": "an unsophisticated country person"
+    },
+    {
+      "lemma": "secular",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "profane.a.02",
+          "via_synset": "profane.a.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "secular.a.01",
+          "via_synset": "secular.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "worldly.a.01",
+          "via_synset": "worldly.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "profane.a.02",
+          "via_synset": "laic.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "worldly.a.01",
+          "via_synset": "profane.a.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "profane.a.02",
+          "via_synset": "worldly.a.01"
+        }
+      ],
+      "definition": "not concerned with or devoted to religion; ; ; ,"
+    },
+    {
+      "lemma": "secular",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "layman.n.01",
+          "via_synset": "layman.n.01"
+        }
+      ],
+      "definition": "someone who is not a clergyman or a professional person"
+    },
+    {
+      "lemma": "secularism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "11_pertainym",
+          "relation": "pertainym",
+          "from_synset": "secular.a.01",
+          "via_synset": "secularism.n.01"
+        }
+      ],
+      "definition": "a doctrine that rejects religion and religious considerations"
+    },
+    {
+      "lemma": "sophisticated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "blase.s.01",
+          "via_synset": "sophisticated.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "worldly.a.01",
+          "via_synset": "sophisticated.a.01"
+        }
+      ],
+      "definition": "having or appealing to those having worldly knowledge and refinement and savoir-faire"
+    },
+    {
+      "lemma": "temporal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "worldly.a.01",
+          "via_synset": "worldly.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "temporal.s.01",
+          "via_synset": "temporal.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "profane.a.02",
+          "via_synset": "worldly.a.01"
+        }
+      ],
+      "definition": "characteristic of or devoted to the temporal world as opposed to the spiritual world"
+    },
+    {
+      "lemma": "temporary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "temporal.s.01",
+          "via_synset": "impermanent.a.01"
+        }
+      ],
+      "definition": "not permanent; not lasting; - James Thurber"
+    },
+    {
+      "lemma": "terrestrial",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "worldly.a.01",
+          "via_synset": "mundane.s.02"
+        }
+      ],
+      "definition": "concerned with the world or worldly matters"
+    },
+    {
+      "lemma": "unworldly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "worldly.a.01",
+          "via_synset": "unworldly.a.01"
+        }
+      ],
+      "definition": "not concerned with the temporal world or swayed by mundane considerations; - Sheldon Cheney"
+    },
+    {
+      "lemma": "worker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "commoner.n.01",
+          "via_synset": "proletarian.n.01"
+        }
+      ],
+      "definition": "a member of the working class (not necessarily employed)"
+    },
+    {
+      "lemma": "world",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "worldly.a.01",
+          "via_synset": "worldly_concern.n.01"
+        }
+      ],
+      "definition": "the concerns of this life as distinguished from heaven and the afterlife"
+    },
+    {
+      "lemma": "worldliness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "worldly.a.01",
+          "via_synset": "worldliness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "blase.s.01",
+          "via_synset": "sophistication.n.04"
+        }
+      ],
+      "definition": "concern with worldly affairs to the neglect of spiritual needs"
+    },
+    {
+      "lemma": "worldly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "worldly.a.01",
+          "via_synset": "worldly.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "blase.s.01",
+          "via_synset": "blase.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "profane.a.02",
+          "via_synset": "worldly.a.01"
+        }
+      ],
+      "definition": "characteristic of or devoted to the temporal world as opposed to the spiritual world"
+    },
+    {
+      "lemma": "worldly-minded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "worldly.a.01",
+          "via_synset": "materialistic.s.01"
+        }
+      ],
+      "definition": "marked by materialism"
+    }
+  ]
+}

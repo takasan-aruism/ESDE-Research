@@ -1,0 +1,432 @@
+{
+  "atom_id": "PRP.light",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 23,
+  "pos_counts": {
+    "adj": 12,
+    "n": 11
+  },
+  "source_counts": {
+    "0_seed": 8,
+    "7_similar_to": 9,
+    "2_hypernym_d1": 2,
+    "6_derivational": 2,
+    "10_sibling": 6
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 6,
+      "words": [
+        "light(adj)",
+        "unaccented(adj)",
+        "weak(adj)",
+        "lightweight(adj)",
+        "lightweight(n)",
+        "weightless(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 2,
+      "words": [
+        "prizefighter(n)",
+        "gladiator(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 2,
+      "words": [
+        "lightness(n)",
+        "weightlessness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 7,
+      "words": [
+        "unstressed(adj)",
+        "light-duty(adj)",
+        "low-density(adj)",
+        "buoyant(adj)",
+        "floaty(adj)",
+        "lighter-than-air(adj)",
+        "airy(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 6,
+      "words": [
+        "welterweight(n)",
+        "light heavyweight(n)",
+        "cruiserweight(n)",
+        "heavyweight(n)",
+        "middleweight(n)",
+        "featherweight(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "airy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "light.a.01",
+          "via_synset": "airy.s.03"
+        }
+      ],
+      "definition": "having little or no perceptible weight; so light as to resemble air"
+    },
+    {
+      "lemma": "buoyant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "light.a.01",
+          "via_synset": "buoyant.s.01"
+        }
+      ],
+      "definition": "tending to float on a liquid or rise in air or gas"
+    },
+    {
+      "lemma": "cruiserweight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "prizefighter.n.01",
+          "via_synset": "light_heavyweight.n.03"
+        }
+      ],
+      "definition": "a professional boxer who weighs between 169 and 175 pounds"
+    },
+    {
+      "lemma": "featherweight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "prizefighter.n.01",
+          "via_synset": "featherweight.n.03"
+        }
+      ],
+      "definition": "a professional boxer who weighs between 123 and 126 pounds"
+    },
+    {
+      "lemma": "floaty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "light.a.01",
+          "via_synset": "buoyant.s.01"
+        }
+      ],
+      "definition": "tending to float on a liquid or rise in air or gas"
+    },
+    {
+      "lemma": "gladiator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "lightweight.n.01",
+          "via_synset": "prizefighter.n.01"
+        }
+      ],
+      "definition": "a professional boxer"
+    },
+    {
+      "lemma": "heavyweight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "prizefighter.n.01",
+          "via_synset": "heavyweight.n.03"
+        }
+      ],
+      "definition": "a professional boxer who weighs more than 190 pounds"
+    },
+    {
+      "lemma": "light",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "light.s.14",
+          "via_synset": "light.s.14"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "light.a.01",
+          "via_synset": "light.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unaccented.s.01",
+          "via_synset": "unaccented.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "lightweight.s.01",
+          "via_synset": "light.a.01"
+        }
+      ],
+      "definition": "designed for ease of movement or to carry little weight"
+    },
+    {
+      "lemma": "light heavyweight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "prizefighter.n.01",
+          "via_synset": "light_heavyweight.n.03"
+        }
+      ],
+      "definition": "a professional boxer who weighs between 169 and 175 pounds"
+    },
+    {
+      "lemma": "light-duty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "light.s.14",
+          "via_synset": "light-duty.a.01"
+        }
+      ],
+      "definition": "not designed for heavy work"
+    },
+    {
+      "lemma": "lighter-than-air",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "light.a.01",
+          "via_synset": "lighter-than-air.s.01"
+        }
+      ],
+      "definition": "relating to a balloon or other aircraft that flies because it weighs less than the air it displaces"
+    },
+    {
+      "lemma": "lightness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "light.a.01",
+          "via_synset": "lightness.n.02"
+        }
+      ],
+      "definition": "the property of being comparatively small in weight"
+    },
+    {
+      "lemma": "lightweight",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "lightweight.s.01",
+          "via_synset": "lightweight.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "light.a.01",
+          "via_synset": "lightweight.s.01"
+        }
+      ],
+      "definition": "weighing relatively little compared with another item or object of similar use"
+    },
+    {
+      "lemma": "lightweight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "lightweight.n.01",
+          "via_synset": "lightweight.n.01"
+        }
+      ],
+      "definition": "a professional boxer who weighs between 131 and 135 pounds"
+    },
+    {
+      "lemma": "low-density",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "light.a.01",
+          "via_synset": "low-density.s.01"
+        }
+      ],
+      "definition": "having low relative density or specific gravity"
+    },
+    {
+      "lemma": "middleweight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "prizefighter.n.01",
+          "via_synset": "middleweight.n.03"
+        }
+      ],
+      "definition": "a professional boxer who weighs between 155 and 160 pounds"
+    },
+    {
+      "lemma": "prizefighter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "lightweight.n.01",
+          "via_synset": "prizefighter.n.01"
+        }
+      ],
+      "definition": "a professional boxer"
+    },
+    {
+      "lemma": "unaccented",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unaccented.s.01",
+          "via_synset": "unaccented.s.01"
+        }
+      ],
+      "definition": "(used of vowels or syllables) pronounced with little or no stress"
+    },
+    {
+      "lemma": "unstressed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unaccented.s.01",
+          "via_synset": "unstressed.a.01"
+        }
+      ],
+      "definition": "not bearing a stress or accent"
+    },
+    {
+      "lemma": "weak",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unaccented.s.01",
+          "via_synset": "unaccented.s.01"
+        }
+      ],
+      "definition": "(used of vowels or syllables) pronounced with little or no stress"
+    },
+    {
+      "lemma": "weightless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "weightless.a.01",
+          "via_synset": "weightless.a.01"
+        }
+      ],
+      "definition": "having little or no weight or apparent gravitational pull; light"
+    },
+    {
+      "lemma": "weightlessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "weightless.a.01",
+          "via_synset": "lightness.n.02"
+        }
+      ],
+      "definition": "the property of being comparatively small in weight"
+    },
+    {
+      "lemma": "welterweight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "prizefighter.n.01",
+          "via_synset": "welterweight.n.04"
+        }
+      ],
+      "definition": "a professional boxer who weighs between 141 and 147 pounds"
+    }
+  ]
+}

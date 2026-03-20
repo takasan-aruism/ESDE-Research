@@ -1,0 +1,2331 @@
+{
+  "atom_id": "FND.unchanging",
+  "category": "FND",
+  "seed_count": 6,
+  "total_keys": 157,
+  "pos_counts": {
+    "adj": 21,
+    "n": 135,
+    "v": 1
+  },
+  "source_counts": {
+    "0_seed": 11,
+    "2_hypernym_d1": 2,
+    "3_hyponym_d1": 22,
+    "10_sibling": 77,
+    "4_hyponym_d2": 27,
+    "5_hyponym_d3": 3,
+    "6_derivational": 6,
+    "7_similar_to": 11,
+    "8_also_see": 2,
+    "9_antonym": 2
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 8,
+      "words": [
+        "unchanging(adj)",
+        "static(adj)",
+        "stable(adj)",
+        "unchanged(adj)",
+        "unaltered(adj)",
+        "constant(n)",
+        "constant quantity(n)",
+        "invariable(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 2,
+      "words": [
+        "quantity(n)",
+        "number(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 22,
+      "words": [
+        "parameter(n)",
+        "parametric quantity(n)",
+        "gravitational constant(n)",
+        "universal gravitational constant(n)",
+        "constant of gravitation(n)",
+        "equilibrium constant(n)",
+        "Boltzmann's constant(n)",
+        "cosmological constant(n)",
+        "coefficient(n)",
+        "speed of light(n)",
+        "light speed(n)",
+        "gas constant(n)",
+        "universal gas constant(n)",
+        "factor of proportionality(n)",
+        "constant of proportionality(n)",
+        "Avogadro's number(n)",
+        "Avogadro number(n)",
+        "ionic charge(n)",
+        "Hubble's constant(n)",
+        "Hubble constant(n)",
+        "Hubble's parameter(n)",
+        "Hubble parameter(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 27,
+      "words": [
+        "degree of freedom(n)",
+        "dissociation constant(n)",
+        "coefficient of self induction(n)",
+        "self-inductance(n)",
+        "transmittance(n)",
+        "transmission(n)",
+        "weight(n)",
+        "weighting(n)",
+        "coefficient of reflection(n)",
+        "reflection factor(n)",
+        "reflectance(n)",
+        "reflectivity(n)",
+        "coefficient of viscosity(n)",
+        "absolute viscosity(n)",
+        "dynamic viscosity(n)",
+        "coefficient of friction(n)",
+        "coefficient of expansion(n)",
+        "expansivity(n)",
+        "coefficient of mutual induction(n)",
+        "mutual inductance(n)",
+        "absorption coefficient(n)",
+        "coefficient of absorption(n)",
+        "absorptance(n)",
+        "drag coefficient(n)",
+        "coefficient of drag(n)",
+        "modulus(n)",
+        "Planck's constant(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 3,
+      "words": [
+        "coefficient of elasticity(n)",
+        "modulus of elasticity(n)",
+        "elastic modulus(n)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 5,
+      "words": [
+        "stableness(n)",
+        "stability(n)",
+        "unchangingness(n)",
+        "weight(v)",
+        "parametric(adj)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 11,
+      "words": [
+        "unchangeable(adj)",
+        "consistent(adj)",
+        "dateless(adj)",
+        "timeless(adj)",
+        "in-situ(adj)",
+        "unmoved(adj)",
+        "unedited(adj)",
+        "unreduced(adj)",
+        "unrevised(adj)",
+        "same(adj)",
+        "idempotent(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 2,
+      "words": [
+        "unvaried(adj)",
+        "unvarying(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 2,
+      "words": [
+        "changed(adj)",
+        "altered(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 75,
+      "words": [
+        "operand(n)",
+        "binomial(n)",
+        "numerical quantity(n)",
+        "proportional(n)",
+        "quantum(n)",
+        "sum(n)",
+        "amount(n)",
+        "total(n)",
+        "product(n)",
+        "mathematical product(n)",
+        "term(n)",
+        "variable(n)",
+        "variable quantity(n)",
+        "coordinate(n)",
+        "co-ordinate(n)",
+        "Fibonacci number(n)",
+        "multiplicand(n)",
+        "cardinality(n)",
+        "score(n)",
+        "divisor(n)",
+        "record(n)",
+        "composite number(n)",
+        "root(n)",
+        "integer(n)",
+        "whole number(n)",
+        "prime(n)",
+        "prime quantity(n)",
+        "oxidation number(n)",
+        "oxidation state(n)",
+        "base(n)",
+        "radix(n)",
+        "pagination(n)",
+        "folio(n)",
+        "page number(n)",
+        "paging(n)",
+        "dividend(n)",
+        "quotient(n)",
+        "compound number(n)",
+        "atomic number(n)",
+        "arity(n)",
+        "cube(n)",
+        "third power(n)",
+        "natural number(n)",
+        "floating-point number(n)",
+        "square(n)",
+        "second power(n)",
+        "remainder(n)",
+        "decimal(n)",
+        "baryon number(n)",
+        "difference(n)",
+        "addend(n)",
+        "linage(n)",
+        "lineage(n)",
+        "complex number(n)",
+        "complex quantity(n)",
+        "imaginary number(n)",
+        "imaginary(n)",
+        "ordinal number(n)",
+        "ordinal(n)",
+        "no.(n)",
+        "biquadrate(n)",
+        "biquadratic(n)",
+        "quartic(n)",
+        "fourth power(n)",
+        "subtrahend(n)",
+        "count(n)",
+        "fixed-point number(n)",
+        "multiplier(n)",
+        "multiplier factor(n)",
+        "cardinal number(n)",
+        "cardinal(n)",
+        "factor(n)",
+        "minuend(n)",
+        "quota(n)",
+        "augend(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "absolute viscosity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "coefficient_of_viscosity.n.01"
+        }
+      ],
+      "definition": "a measure of the resistance to flow of a fluid under an applied force"
+    },
+    {
+      "lemma": "absorptance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "absorption_coefficient.n.01"
+        }
+      ],
+      "definition": "a measure of the rate of decrease in the intensity of electromagnetic radiation (as light) as it passes through a given substance; the fraction of incident radiant energy absorbed per unit mass or thickness of an absorber"
+    },
+    {
+      "lemma": "absorption coefficient",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "absorption_coefficient.n.01"
+        }
+      ],
+      "definition": "a measure of the rate of decrease in the intensity of electromagnetic radiation (as light) as it passes through a given substance; the fraction of incident radiant energy absorbed per unit mass or thickness of an absorber"
+    },
+    {
+      "lemma": "addend",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "addend.n.01"
+        }
+      ],
+      "definition": "a number that is added to another number (the augend)"
+    },
+    {
+      "lemma": "altered",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "unaltered.a.01",
+          "via_synset": "altered.a.01"
+        }
+      ],
+      "definition": "changed in form or character without becoming something else; ; ; - Charles Dickens"
+    },
+    {
+      "lemma": "amount",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "quantity.n.03",
+          "via_synset": "sum.n.02"
+        }
+      ],
+      "definition": "a quantity obtained by the addition of a group of numbers"
+    },
+    {
+      "lemma": "arity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "arity.n.01"
+        }
+      ],
+      "definition": "the number of arguments that a function can take"
+    },
+    {
+      "lemma": "atomic number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "atomic_number.n.01"
+        }
+      ],
+      "definition": "the order of an element in Mendeleyev's table of the elements; equal to the number of protons in the nucleus or electrons in the neutral state of an atom of an element"
+    },
+    {
+      "lemma": "augend",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "augend.n.01"
+        }
+      ],
+      "definition": "a number to which another number (the addend) is added"
+    },
+    {
+      "lemma": "Avogadro number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.02",
+          "via_synset": "avogadro's_number.n.01"
+        }
+      ],
+      "definition": "the number of molecules in a mole of a substance (approximately 602,250,000,000,000,000,000,000)"
+    },
+    {
+      "lemma": "Avogadro's number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.02",
+          "via_synset": "avogadro's_number.n.01"
+        }
+      ],
+      "definition": "the number of molecules in a mole of a substance (approximately 602,250,000,000,000,000,000,000)"
+    },
+    {
+      "lemma": "baryon number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "baryon_number.n.01"
+        }
+      ],
+      "definition": "a number equal to the difference between the number of baryons and the number of antibaryons in any subatomic structure; it is conserved in all types of particle interactions"
+    },
+    {
+      "lemma": "base",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "base.n.13"
+        }
+      ],
+      "definition": "(numeration system) the positive integer that is equivalent to one in the next higher counting place"
+    },
+    {
+      "lemma": "binomial",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "quantity.n.03",
+          "via_synset": "binomial.n.01"
+        }
+      ],
+      "definition": "(mathematics) a quantity expressed as a sum or difference of two terms; a polynomial with two terms"
+    },
+    {
+      "lemma": "biquadrate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "biquadrate.n.01"
+        }
+      ],
+      "definition": "an algebraic equation of the fourth degree"
+    },
+    {
+      "lemma": "biquadratic",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "biquadrate.n.01"
+        }
+      ],
+      "definition": "an algebraic equation of the fourth degree"
+    },
+    {
+      "lemma": "Boltzmann's constant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.02",
+          "via_synset": "boltzmann's_constant.n.01"
+        }
+      ],
+      "definition": "constant used in the calculation of the ideal gas constant"
+    },
+    {
+      "lemma": "cardinal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "cardinal_number.n.01"
+        }
+      ],
+      "definition": "the number of elements in a mathematical set; denotes a quantity but not the order"
+    },
+    {
+      "lemma": "cardinal number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "cardinal_number.n.01"
+        }
+      ],
+      "definition": "the number of elements in a mathematical set; denotes a quantity but not the order"
+    },
+    {
+      "lemma": "cardinality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "cardinality.n.01"
+        }
+      ],
+      "definition": "(mathematics) the number of elements in a set or group (considered as a property of that grouping)"
+    },
+    {
+      "lemma": "changed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "unchanged.a.01",
+          "via_synset": "changed.a.01"
+        }
+      ],
+      "definition": "made or become different in nature or form"
+    },
+    {
+      "lemma": "co-ordinate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "coordinate.n.01"
+        }
+      ],
+      "definition": "a number that identifies a position relative to an axis"
+    },
+    {
+      "lemma": "coefficient",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.02",
+          "via_synset": "coefficient.n.01"
+        }
+      ],
+      "definition": "a constant number that serves as a measure of some property or characteristic"
+    },
+    {
+      "lemma": "coefficient of absorption",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "absorption_coefficient.n.01"
+        }
+      ],
+      "definition": "a measure of the rate of decrease in the intensity of electromagnetic radiation (as light) as it passes through a given substance; the fraction of incident radiant energy absorbed per unit mass or thickness of an absorber"
+    },
+    {
+      "lemma": "coefficient of drag",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "drag_coefficient.n.01"
+        }
+      ],
+      "definition": "the ratio of the drag on a body moving through air to the product of the velocity and the surface area of the body"
+    },
+    {
+      "lemma": "coefficient of elasticity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "modulus.n.03",
+          "via_synset": "coefficient_of_elasticity.n.01"
+        }
+      ],
+      "definition": "(physics) the ratio of the applied stress to the change in shape of an elastic body"
+    },
+    {
+      "lemma": "coefficient of expansion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "coefficient_of_expansion.n.01"
+        }
+      ],
+      "definition": "the fractional change in length or area or volume per unit change in temperature at a given constant pressure"
+    },
+    {
+      "lemma": "coefficient of friction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "coefficient_of_friction.n.01"
+        }
+      ],
+      "definition": "the ratio of the weight of an object being moved along a surface and the force that maintains contact between the object and the surface"
+    },
+    {
+      "lemma": "coefficient of mutual induction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "coefficient_of_mutual_induction.n.01"
+        }
+      ],
+      "definition": "a measure of the induction between two circuits; the ratio of the electromotive force in a circuit to the corresponding change of current in a neighboring circuit; usually measured in henries"
+    },
+    {
+      "lemma": "coefficient of reflection",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "coefficient_of_reflection.n.01"
+        }
+      ],
+      "definition": "the fraction of radiant energy that is reflected from a surface"
+    },
+    {
+      "lemma": "coefficient of self induction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "coefficient_of_self_induction.n.01"
+        }
+      ],
+      "definition": "the ratio of the electromotive force produced in a circuit by self-induction to the rate of change of current producing it, expressed in henries"
+    },
+    {
+      "lemma": "coefficient of viscosity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "coefficient_of_viscosity.n.01"
+        }
+      ],
+      "definition": "a measure of the resistance to flow of a fluid under an applied force"
+    },
+    {
+      "lemma": "complex number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "complex_number.n.01"
+        }
+      ],
+      "definition": "(mathematics) a number of the form a+bi where a and b are real numbers and i is the square root of -1"
+    },
+    {
+      "lemma": "complex quantity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "complex_number.n.01"
+        }
+      ],
+      "definition": "(mathematics) a number of the form a+bi where a and b are real numbers and i is the square root of -1"
+    },
+    {
+      "lemma": "composite number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "composite_number.n.01"
+        }
+      ],
+      "definition": "an integer that is divisible without remainder by at least one positive integer other than itself and one"
+    },
+    {
+      "lemma": "compound number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "compound_number.n.01"
+        }
+      ],
+      "definition": "a quantity expressed in two different units"
+    },
+    {
+      "lemma": "consistent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unchanging.s.01",
+          "via_synset": "consistent.a.01"
+        }
+      ],
+      "definition": "(sometimes followed by `with') in agreement or consistent or reliable; ; - FDR"
+    },
+    {
+      "lemma": "constant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "constant.n.01",
+          "via_synset": "constant.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "constant.n.02",
+          "via_synset": "constant.n.02"
+        }
+      ],
+      "definition": "a quantity that does not vary"
+    },
+    {
+      "lemma": "constant of gravitation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.02",
+          "via_synset": "gravitational_constant.n.01"
+        }
+      ],
+      "definition": "(physics) the universal constant relating force to mass and distance in Newton's law of gravitation"
+    },
+    {
+      "lemma": "constant of proportionality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.02",
+          "via_synset": "factor_of_proportionality.n.01"
+        }
+      ],
+      "definition": "the constant value of the ratio of two proportional quantities x and y; usually written y = kx, where k is the factor of proportionality"
+    },
+    {
+      "lemma": "constant quantity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "constant.n.01",
+          "via_synset": "constant.n.01"
+        }
+      ],
+      "definition": "a quantity that does not vary"
+    },
+    {
+      "lemma": "coordinate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "coordinate.n.01"
+        }
+      ],
+      "definition": "a number that identifies a position relative to an axis"
+    },
+    {
+      "lemma": "cosmological constant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.02",
+          "via_synset": "cosmological_constant.n.01"
+        }
+      ],
+      "definition": "an arbitrary constant in the equations of general relativity theory"
+    },
+    {
+      "lemma": "count",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "count.n.01"
+        }
+      ],
+      "definition": "the total number counted"
+    },
+    {
+      "lemma": "cube",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "cube.n.03"
+        }
+      ],
+      "definition": "the product of three equal terms"
+    },
+    {
+      "lemma": "dateless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unaltered.a.01",
+          "via_synset": "dateless.s.04"
+        }
+      ],
+      "definition": "unaffected by time"
+    },
+    {
+      "lemma": "decimal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "decimal.n.02"
+        }
+      ],
+      "definition": "a number in the decimal system"
+    },
+    {
+      "lemma": "degree of freedom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "parameter.n.01",
+          "via_synset": "degree_of_freedom.n.02"
+        }
+      ],
+      "definition": "one of the minimum number of parameters needed to describe the state of a physical system"
+    },
+    {
+      "lemma": "difference",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "remainder.n.03"
+        }
+      ],
+      "definition": "the number that remains after subtraction; the number that when added to the subtrahend gives the minuend"
+    },
+    {
+      "lemma": "dissociation constant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "equilibrium_constant.n.01",
+          "via_synset": "dissociation_constant.n.01"
+        }
+      ],
+      "definition": "the equilibrium constant for a reversible dissociation"
+    },
+    {
+      "lemma": "dividend",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "dividend.n.02"
+        }
+      ],
+      "definition": "a number to be divided by another number"
+    },
+    {
+      "lemma": "divisor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "divisor.n.02"
+        }
+      ],
+      "definition": "the number by which a dividend is divided"
+    },
+    {
+      "lemma": "drag coefficient",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "drag_coefficient.n.01"
+        }
+      ],
+      "definition": "the ratio of the drag on a body moving through air to the product of the velocity and the surface area of the body"
+    },
+    {
+      "lemma": "dynamic viscosity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "coefficient_of_viscosity.n.01"
+        }
+      ],
+      "definition": "a measure of the resistance to flow of a fluid under an applied force"
+    },
+    {
+      "lemma": "elastic modulus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "modulus.n.03",
+          "via_synset": "coefficient_of_elasticity.n.01"
+        }
+      ],
+      "definition": "(physics) the ratio of the applied stress to the change in shape of an elastic body"
+    },
+    {
+      "lemma": "equilibrium constant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.02",
+          "via_synset": "equilibrium_constant.n.01"
+        }
+      ],
+      "definition": "(chemistry) the ratio of concentrations when equilibrium is reached in a reversible reaction (when the rate of the forward reaction equals the rate of the reverse reaction)"
+    },
+    {
+      "lemma": "expansivity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "coefficient_of_expansion.n.01"
+        }
+      ],
+      "definition": "the fractional change in length or area or volume per unit change in temperature at a given constant pressure"
+    },
+    {
+      "lemma": "factor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "factor.n.05"
+        }
+      ],
+      "definition": "any of the numbers (or symbols) that form a product when multiplied together"
+    },
+    {
+      "lemma": "factor of proportionality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.02",
+          "via_synset": "factor_of_proportionality.n.01"
+        }
+      ],
+      "definition": "the constant value of the ratio of two proportional quantities x and y; usually written y = kx, where k is the factor of proportionality"
+    },
+    {
+      "lemma": "Fibonacci number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "fibonacci_number.n.01"
+        }
+      ],
+      "definition": "a number in the Fibonacci sequence"
+    },
+    {
+      "lemma": "fixed-point number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "fixed-point_number.n.01"
+        }
+      ],
+      "definition": "a number represented in fixed-point notation"
+    },
+    {
+      "lemma": "floating-point number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "floating-point_number.n.01"
+        }
+      ],
+      "definition": "a number represented in floating-point notation"
+    },
+    {
+      "lemma": "folio",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "pagination.n.01"
+        }
+      ],
+      "definition": "the system of numbering pages"
+    },
+    {
+      "lemma": "fourth power",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "biquadrate.n.01"
+        }
+      ],
+      "definition": "an algebraic equation of the fourth degree"
+    },
+    {
+      "lemma": "gas constant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.02",
+          "via_synset": "gas_constant.n.01"
+        }
+      ],
+      "definition": "(physics) the universal constant in the gas equation: pressure times volume = R times temperature; equal to 8.3143 joules per kelvin per mole"
+    },
+    {
+      "lemma": "gravitational constant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.02",
+          "via_synset": "gravitational_constant.n.01"
+        }
+      ],
+      "definition": "(physics) the universal constant relating force to mass and distance in Newton's law of gravitation"
+    },
+    {
+      "lemma": "Hubble constant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.02",
+          "via_synset": "hubble's_constant.n.01"
+        }
+      ],
+      "definition": "(cosmology) the ratio of the speed of recession of a galaxy (due to the expansion of the universe) to its distance from the observer; the Hubble constant is not actually a constant, but is regarded as measuring the expansion rate today"
+    },
+    {
+      "lemma": "Hubble parameter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.02",
+          "via_synset": "hubble's_constant.n.01"
+        }
+      ],
+      "definition": "(cosmology) the ratio of the speed of recession of a galaxy (due to the expansion of the universe) to its distance from the observer; the Hubble constant is not actually a constant, but is regarded as measuring the expansion rate today"
+    },
+    {
+      "lemma": "Hubble's constant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.02",
+          "via_synset": "hubble's_constant.n.01"
+        }
+      ],
+      "definition": "(cosmology) the ratio of the speed of recession of a galaxy (due to the expansion of the universe) to its distance from the observer; the Hubble constant is not actually a constant, but is regarded as measuring the expansion rate today"
+    },
+    {
+      "lemma": "Hubble's parameter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.02",
+          "via_synset": "hubble's_constant.n.01"
+        }
+      ],
+      "definition": "(cosmology) the ratio of the speed of recession of a galaxy (due to the expansion of the universe) to its distance from the observer; the Hubble constant is not actually a constant, but is regarded as measuring the expansion rate today"
+    },
+    {
+      "lemma": "idempotent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unchanged.a.01",
+          "via_synset": "idempotent.s.01"
+        }
+      ],
+      "definition": "unchanged in value following multiplication by itself"
+    },
+    {
+      "lemma": "imaginary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "complex_number.n.01"
+        }
+      ],
+      "definition": "(mathematics) a number of the form a+bi where a and b are real numbers and i is the square root of -1"
+    },
+    {
+      "lemma": "imaginary number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "complex_number.n.01"
+        }
+      ],
+      "definition": "(mathematics) a number of the form a+bi where a and b are real numbers and i is the square root of -1"
+    },
+    {
+      "lemma": "in-situ",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unaltered.a.01",
+          "via_synset": "in-situ.s.01"
+        }
+      ],
+      "definition": "being in the original position; not having been moved"
+    },
+    {
+      "lemma": "integer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "integer.n.01"
+        }
+      ],
+      "definition": "any of the natural numbers (positive or negative) or zero"
+    },
+    {
+      "lemma": "invariable",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "constant.n.01",
+          "via_synset": "constant.n.01"
+        }
+      ],
+      "definition": "a quantity that does not vary"
+    },
+    {
+      "lemma": "ionic charge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.02",
+          "via_synset": "ionic_charge.n.01"
+        }
+      ],
+      "definition": "the charge on an ion is equal to a constant charge e multiplied by an integer from 1 to 15"
+    },
+    {
+      "lemma": "light speed",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.02",
+          "via_synset": "speed_of_light.n.01"
+        }
+      ],
+      "definition": "the speed at which light travels in a vacuum; the constancy and universality of the speed of light is recognized by defining it to be exactly 299,792,458 meters per second"
+    },
+    {
+      "lemma": "linage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "linage.n.01"
+        }
+      ],
+      "definition": "the number of lines in a piece of printed material"
+    },
+    {
+      "lemma": "lineage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "linage.n.01"
+        }
+      ],
+      "definition": "the number of lines in a piece of printed material"
+    },
+    {
+      "lemma": "mathematical product",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "quantity.n.03",
+          "via_synset": "product.n.03"
+        }
+      ],
+      "definition": "a quantity obtained by multiplication"
+    },
+    {
+      "lemma": "minuend",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "minuend.n.01"
+        }
+      ],
+      "definition": "the number from which the subtrahend is subtracted"
+    },
+    {
+      "lemma": "modulus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "modulus.n.03"
+        }
+      ],
+      "definition": "(physics) a coefficient that expresses how much of a specified property is possessed by a specified substance"
+    },
+    {
+      "lemma": "modulus of elasticity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "modulus.n.03",
+          "via_synset": "coefficient_of_elasticity.n.01"
+        }
+      ],
+      "definition": "(physics) the ratio of the applied stress to the change in shape of an elastic body"
+    },
+    {
+      "lemma": "multiplicand",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "multiplicand.n.01"
+        }
+      ],
+      "definition": "the number that is multiplied by the multiplier"
+    },
+    {
+      "lemma": "multiplier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "multiplier.n.01"
+        }
+      ],
+      "definition": "the number by which a multiplicand is multiplied"
+    },
+    {
+      "lemma": "multiplier factor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "multiplier.n.01"
+        }
+      ],
+      "definition": "the number by which a multiplicand is multiplied"
+    },
+    {
+      "lemma": "mutual inductance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "coefficient_of_mutual_induction.n.01"
+        }
+      ],
+      "definition": "a measure of the induction between two circuits; the ratio of the electromotive force in a circuit to the corresponding change of current in a neighboring circuit; usually measured in henries"
+    },
+    {
+      "lemma": "natural number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "natural_number.n.01"
+        }
+      ],
+      "definition": "the number 1 and any other number obtained by adding 1 to it repeatedly"
+    },
+    {
+      "lemma": "no.",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "ordinal_number.n.01"
+        }
+      ],
+      "definition": "the number designating place in an ordered sequence"
+    },
+    {
+      "lemma": "number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "constant.n.02",
+          "via_synset": "number.n.02"
+        }
+      ],
+      "definition": "a concept of quantity involving zero and units"
+    },
+    {
+      "lemma": "numerical quantity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "quantity.n.03",
+          "via_synset": "numerical_quantity.n.01"
+        }
+      ],
+      "definition": "a quantity expressed as a number"
+    },
+    {
+      "lemma": "operand",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "quantity.n.03",
+          "via_synset": "operand.n.01"
+        }
+      ],
+      "definition": "a quantity upon which a mathematical operation is performed"
+    },
+    {
+      "lemma": "ordinal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "ordinal_number.n.01"
+        }
+      ],
+      "definition": "the number designating place in an ordered sequence"
+    },
+    {
+      "lemma": "ordinal number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "ordinal_number.n.01"
+        }
+      ],
+      "definition": "the number designating place in an ordered sequence"
+    },
+    {
+      "lemma": "oxidation number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "oxidation_number.n.01"
+        }
+      ],
+      "definition": "the degree of oxidation of an atom or ion or molecule; for simple atoms or ions the oxidation number is equal to the ionic charge"
+    },
+    {
+      "lemma": "oxidation state",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "oxidation_number.n.01"
+        }
+      ],
+      "definition": "the degree of oxidation of an atom or ion or molecule; for simple atoms or ions the oxidation number is equal to the ionic charge"
+    },
+    {
+      "lemma": "page number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "pagination.n.01"
+        }
+      ],
+      "definition": "the system of numbering pages"
+    },
+    {
+      "lemma": "pagination",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "pagination.n.01"
+        }
+      ],
+      "definition": "the system of numbering pages"
+    },
+    {
+      "lemma": "paging",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "pagination.n.01"
+        }
+      ],
+      "definition": "the system of numbering pages"
+    },
+    {
+      "lemma": "parameter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.01",
+          "via_synset": "parameter.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "quantity.n.03",
+          "via_synset": "parameter.n.04"
+        }
+      ],
+      "definition": "a constant in the equation of a curve that can be varied to yield a family of similar curves"
+    },
+    {
+      "lemma": "parametric",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "parameter.n.01",
+          "via_synset": "parametric.a.01"
+        }
+      ],
+      "definition": "of or relating to or in terms of a parameter"
+    },
+    {
+      "lemma": "parametric quantity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.01",
+          "via_synset": "parameter.n.01"
+        }
+      ],
+      "definition": "a constant in the equation of a curve that can be varied to yield a family of similar curves"
+    },
+    {
+      "lemma": "Planck's constant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "factor_of_proportionality.n.01",
+          "via_synset": "planck's_constant.n.01"
+        }
+      ],
+      "definition": "the constant of proportionality relating the energy of a photon to its frequency; approximately 6.626 x 10^-34 joule-second"
+    },
+    {
+      "lemma": "prime",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "prime.n.01"
+        }
+      ],
+      "definition": "a number that has no factor but itself and 1"
+    },
+    {
+      "lemma": "prime quantity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "prime.n.01"
+        }
+      ],
+      "definition": "a number that has no factor but itself and 1"
+    },
+    {
+      "lemma": "product",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "quantity.n.03",
+          "via_synset": "product.n.03"
+        }
+      ],
+      "definition": "a quantity obtained by multiplication"
+    },
+    {
+      "lemma": "proportional",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "quantity.n.03",
+          "via_synset": "proportional.n.01"
+        }
+      ],
+      "definition": "one of the quantities in a mathematical proportion"
+    },
+    {
+      "lemma": "quantity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "constant.n.01",
+          "via_synset": "quantity.n.03"
+        }
+      ],
+      "definition": "the concept that something has a magnitude and can be represented in mathematical expressions by a constant or a variable"
+    },
+    {
+      "lemma": "quantum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "quantity.n.03",
+          "via_synset": "quantum.n.01"
+        }
+      ],
+      "definition": "a discrete amount of something that is analogous to the quantities in quantum theory"
+    },
+    {
+      "lemma": "quartic",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "biquadrate.n.01"
+        }
+      ],
+      "definition": "an algebraic equation of the fourth degree"
+    },
+    {
+      "lemma": "quota",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "quota.n.01"
+        }
+      ],
+      "definition": "a prescribed number"
+    },
+    {
+      "lemma": "quotient",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "quotient.n.02"
+        }
+      ],
+      "definition": "the number obtained by division"
+    },
+    {
+      "lemma": "radix",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "base.n.13"
+        }
+      ],
+      "definition": "(numeration system) the positive integer that is equivalent to one in the next higher counting place"
+    },
+    {
+      "lemma": "record",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "record.n.03"
+        }
+      ],
+      "definition": "the number of wins versus losses and ties a team has had"
+    },
+    {
+      "lemma": "reflectance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "coefficient_of_reflection.n.01"
+        }
+      ],
+      "definition": "the fraction of radiant energy that is reflected from a surface"
+    },
+    {
+      "lemma": "reflection factor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "coefficient_of_reflection.n.01"
+        }
+      ],
+      "definition": "the fraction of radiant energy that is reflected from a surface"
+    },
+    {
+      "lemma": "reflectivity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "coefficient_of_reflection.n.01"
+        }
+      ],
+      "definition": "the fraction of radiant energy that is reflected from a surface"
+    },
+    {
+      "lemma": "remainder",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "remainder.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "remainder.n.03"
+        }
+      ],
+      "definition": "the part of the dividend that is left over when the dividend is not evenly divisible by the divisor"
+    },
+    {
+      "lemma": "root",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "root.n.04"
+        }
+      ],
+      "definition": "a number that, when multiplied by itself some number of times, equals a given number"
+    },
+    {
+      "lemma": "same",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unchanged.a.01",
+          "via_synset": "same.s.01"
+        }
+      ],
+      "definition": "unchanged in character or nature"
+    },
+    {
+      "lemma": "score",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "score.n.03"
+        }
+      ],
+      "definition": "a number that expresses the accomplishment of a team or an individual in a game or contest"
+    },
+    {
+      "lemma": "second power",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "square.n.02"
+        }
+      ],
+      "definition": "the product of two equal terms"
+    },
+    {
+      "lemma": "self-inductance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "coefficient_of_self_induction.n.01"
+        }
+      ],
+      "definition": "the ratio of the electromotive force produced in a circuit by self-induction to the rate of change of current producing it, expressed in henries"
+    },
+    {
+      "lemma": "speed of light",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.02",
+          "via_synset": "speed_of_light.n.01"
+        }
+      ],
+      "definition": "the speed at which light travels in a vacuum; the constancy and universality of the speed of light is recognized by defining it to be exactly 299,792,458 meters per second"
+    },
+    {
+      "lemma": "square",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "square.n.02"
+        }
+      ],
+      "definition": "the product of two equal terms"
+    },
+    {
+      "lemma": "stability",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "static.s.02",
+          "via_synset": "constancy.n.01"
+        }
+      ],
+      "definition": "the quality of being enduring and free from change or variation"
+    },
+    {
+      "lemma": "stable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "static.s.02",
+          "via_synset": "static.s.02"
+        }
+      ],
+      "definition": "showing little if any change"
+    },
+    {
+      "lemma": "stableness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "static.s.02",
+          "via_synset": "stability.n.01"
+        }
+      ],
+      "definition": "the quality or attribute of being firm and steadfast"
+    },
+    {
+      "lemma": "static",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "static.s.02",
+          "via_synset": "static.s.02"
+        }
+      ],
+      "definition": "showing little if any change"
+    },
+    {
+      "lemma": "subtrahend",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "subtrahend.n.01"
+        }
+      ],
+      "definition": "the number to be subtracted from the minuend"
+    },
+    {
+      "lemma": "sum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "quantity.n.03",
+          "via_synset": "sum.n.02"
+        }
+      ],
+      "definition": "a quantity obtained by the addition of a group of numbers"
+    },
+    {
+      "lemma": "term",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "quantity.n.03",
+          "via_synset": "term.n.04"
+        }
+      ],
+      "definition": "any distinct quantity contained in a polynomial"
+    },
+    {
+      "lemma": "third power",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "cube.n.03"
+        }
+      ],
+      "definition": "the product of three equal terms"
+    },
+    {
+      "lemma": "timeless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unaltered.a.01",
+          "via_synset": "dateless.s.04"
+        }
+      ],
+      "definition": "unaffected by time"
+    },
+    {
+      "lemma": "total",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "quantity.n.03",
+          "via_synset": "sum.n.02"
+        }
+      ],
+      "definition": "a quantity obtained by the addition of a group of numbers"
+    },
+    {
+      "lemma": "transmission",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "transmittance.n.01"
+        }
+      ],
+      "definition": "the fraction of radiant energy that passes through a substance"
+    },
+    {
+      "lemma": "transmittance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "transmittance.n.01"
+        }
+      ],
+      "definition": "the fraction of radiant energy that passes through a substance"
+    },
+    {
+      "lemma": "unaltered",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unaltered.a.01",
+          "via_synset": "unaltered.a.01"
+        }
+      ],
+      "definition": "remaining in an original state"
+    },
+    {
+      "lemma": "unchangeable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "static.s.02",
+          "via_synset": "unchangeable.a.01"
+        }
+      ],
+      "definition": "not changeable or subject to change; -Ashley Montagu"
+    },
+    {
+      "lemma": "unchanged",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unchanged.a.01",
+          "via_synset": "unchanged.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unaltered.a.01",
+          "via_synset": "unaltered.a.01"
+        }
+      ],
+      "definition": "not made or become different"
+    },
+    {
+      "lemma": "unchanging",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unchanging.s.01",
+          "via_synset": "unchanging.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "static.s.02",
+          "via_synset": "static.s.02"
+        }
+      ],
+      "definition": "conforming to the same principles or course of action over time"
+    },
+    {
+      "lemma": "unchangingness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "static.s.02",
+          "via_synset": "changelessness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unchanging.s.01",
+          "via_synset": "changelessness.n.02"
+        }
+      ],
+      "definition": "the quality of being unchangeable; having a marked tendency to remain unchanged"
+    },
+    {
+      "lemma": "unedited",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unaltered.a.01",
+          "via_synset": "unedited.s.01"
+        }
+      ],
+      "definition": "not changed by editing"
+    },
+    {
+      "lemma": "universal gas constant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.02",
+          "via_synset": "gas_constant.n.01"
+        }
+      ],
+      "definition": "(physics) the universal constant in the gas equation: pressure times volume = R times temperature; equal to 8.3143 joules per kelvin per mole"
+    },
+    {
+      "lemma": "universal gravitational constant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "constant.n.02",
+          "via_synset": "gravitational_constant.n.01"
+        }
+      ],
+      "definition": "(physics) the universal constant relating force to mass and distance in Newton's law of gravitation"
+    },
+    {
+      "lemma": "unmoved",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unaltered.a.01",
+          "via_synset": "in-situ.s.01"
+        }
+      ],
+      "definition": "being in the original position; not having been moved"
+    },
+    {
+      "lemma": "unreduced",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unaltered.a.01",
+          "via_synset": "unreduced.s.01"
+        }
+      ],
+      "definition": "not altered by reduction"
+    },
+    {
+      "lemma": "unrevised",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unaltered.a.01",
+          "via_synset": "unrevised.s.01"
+        }
+      ],
+      "definition": "not improved or brought up to date"
+    },
+    {
+      "lemma": "unvaried",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unchanged.a.01",
+          "via_synset": "unvaried.a.01"
+        }
+      ],
+      "definition": "lacking variety"
+    },
+    {
+      "lemma": "unvarying",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unchanged.a.01",
+          "via_synset": "unvaried.a.01"
+        }
+      ],
+      "definition": "lacking variety"
+    },
+    {
+      "lemma": "variable",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "quantity.n.03",
+          "via_synset": "variable.n.02"
+        }
+      ],
+      "definition": "a quantity that can assume any of a set of values"
+    },
+    {
+      "lemma": "variable quantity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "quantity.n.03",
+          "via_synset": "variable.n.02"
+        }
+      ],
+      "definition": "a quantity that can assume any of a set of values"
+    },
+    {
+      "lemma": "weight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "weight.n.08"
+        }
+      ],
+      "definition": "(statistics) a coefficient assigned to elements of a frequency distribution in order to represent their relative importance"
+    },
+    {
+      "lemma": "weight",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "weight.n.08",
+          "via_synset": "slant.v.02"
+        }
+      ],
+      "definition": "present with a bias"
+    },
+    {
+      "lemma": "weighting",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "coefficient.n.01",
+          "via_synset": "weight.n.08"
+        }
+      ],
+      "definition": "(statistics) a coefficient assigned to elements of a frequency distribution in order to represent their relative importance"
+    },
+    {
+      "lemma": "whole number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "number.n.02",
+          "via_synset": "integer.n.01"
+        }
+      ],
+      "definition": "any of the natural numbers (positive or negative) or zero"
+    }
+  ]
+}

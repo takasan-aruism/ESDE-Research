@@ -1,0 +1,7324 @@
+{
+  "atom_id": "SOC.official",
+  "category": "SOC",
+  "seed_count": 6,
+  "total_keys": 499,
+  "pos_counts": {
+    "n": 449,
+    "adj": 16,
+    "v": 34
+  },
+  "source_counts": {
+    "0_seed": 16,
+    "3_hyponym_d1": 117,
+    "2_hypernym_d1": 10,
+    "10_sibling": 159,
+    "4_hyponym_d2": 112,
+    "5_hyponym_d3": 47,
+    "6_derivational": 78,
+    "11_pertainym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 12,
+      "words": [
+        "official(n)",
+        "functionary(n)",
+        "official(adj)",
+        "authority(n)",
+        "authorization(n)",
+        "authorisation(n)",
+        "potency(n)",
+        "dominance(n)",
+        "say-so(n)",
+        "sanction(n)",
+        "military officer(n)",
+        "officer(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 10,
+      "words": [
+        "skilled worker(n)",
+        "trained worker(n)",
+        "skilled workman(n)",
+        "adjudicator(n)",
+        "control(n)",
+        "permission(n)",
+        "serviceman(n)",
+        "military man(n)",
+        "man(n)",
+        "military personnel(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 115,
+      "words": [
+        "mandarin(n)",
+        "judge(n)",
+        "justice(n)",
+        "jurist(n)",
+        "incumbent(n)",
+        "officeholder(n)",
+        "macebearer(n)",
+        "mace(n)",
+        "macer(n)",
+        "Comptroller of the Currency(n)",
+        "commissar(n)",
+        "political commissar(n)",
+        "teller(n)",
+        "vote counter(n)",
+        "regulator(n)",
+        "Comptroller General(n)",
+        "church officer(n)",
+        "agent(n)",
+        "federal agent(n)",
+        "elected official(n)",
+        "registrar(n)",
+        "record-keeper(n)",
+        "recorder(n)",
+        "town clerk(n)",
+        "sealer(n)",
+        "weigher(n)",
+        "beadle(n)",
+        "prosecutor(n)",
+        "public prosecutor(n)",
+        "prosecuting officer(n)",
+        "prosecuting attorney(n)",
+        "civil servant(n)",
+        "Inquisitor(n)",
+        "censor(n)",
+        "provincial(n)",
+        "census taker(n)",
+        "enumerator(n)",
+        "caretaker(n)",
+        "holdover(n)",
+        "hangover(n)",
+        "invalidator(n)",
+        "voider(n)",
+        "nullifier(n)",
+        "quaestor(n)",
+        "apparatchik(n)",
+        "noticer(n)",
+        "postmaster general(n)",
+        "diplomat(n)",
+        "diplomatist(n)",
+        "fire marshall(n)",
+        "recruiter(n)",
+        "searcher(n)",
+        "equerry(n)",
+        "hearing examiner(n)",
+        "hearing officer(n)",
+        "notary(n)",
+        "notary public(n)",
+        "bureaucrat(n)",
+        "administrative official(n)",
+        "usher(n)",
+        "doorkeeper(n)",
+        "proconsul(n)",
+        "city father(n)",
+        "licenser(n)",
+        "bailiff(n)",
+        "vizier(n)",
+        "appointee(n)",
+        "fire warden(n)",
+        "forest fire fighter(n)",
+        "ranger(n)",
+        "returning officer(n)",
+        "scorekeeper(n)",
+        "scorer(n)",
+        "umpire(n)",
+        "ump(n)",
+        "football official(n)",
+        "linesman(n)",
+        "referee(n)",
+        "ref(n)",
+        "starter(n)",
+        "dispatcher(n)",
+        "timekeeper(n)",
+        "timer(n)",
+        "lordship(n)",
+        "muscle(n)",
+        "carte blanche(n)",
+        "command(n)",
+        "sovereignty(n)",
+        "imperium(n)",
+        "power of appointment(n)",
+        "Potemkin(n)",
+        "Potyokin(n)",
+        "Grigori Potemkin(n)",
+        "Grigori Potyokin(n)",
+        "Grigori Aleksandrovich Potemkin(n)",
+        "desk officer(n)",
+        "adjutant(n)",
+        "aide(n)",
+        "aide-de-camp(n)",
+        "noncommissioned officer(n)",
+        "noncom(n)",
+        "enlisted officer(n)",
+        "executive officer(n)",
+        "inspector general(n)",
+        "military adviser(n)",
+        "military advisor(n)",
+        "warrant officer(n)",
+        "brass hat(n)",
+        "commanding officer(n)",
+        "commandant(n)",
+        "commander(n)",
+        "chief of staff(n)",
+        "naval officer(n)",
+        "army officer(n)",
+        "commissioned officer(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 111,
+      "words": [
+        "qadi(n)",
+        "ordinary(n)",
+        "chief justice(n)",
+        "magistrate(n)",
+        "alcalde(n)",
+        "trial judge(n)",
+        "Daniel(n)",
+        "doge(n)",
+        "justiciar(n)",
+        "justiciary(n)",
+        "trier(n)",
+        "praetor(n)",
+        "pretor(n)",
+        "office-bearer(n)",
+        "canvasser(n)",
+        "elder(n)",
+        "sexton(n)",
+        "sacristan(n)",
+        "deacon(n)",
+        "Protestant deacon(n)",
+        "churchwarden(n)",
+        "vestryman(n)",
+        "vestrywoman(n)",
+        "verger(n)",
+        "trustbuster(n)",
+        "Indian agent(n)",
+        "Federal(n)",
+        "Fed(n)",
+        "federal official(n)",
+        "lame duck(n)",
+        "selectman(n)",
+        "lieutenant governor(n)",
+        "selectwoman(n)",
+        "rapporteur(n)",
+        "state's attorney(n)",
+        "state attorney(n)",
+        "district attorney(n)",
+        "DA(n)",
+        "Grand Inquisitor(n)",
+        "charge d'affaires(n)",
+        "persona non grata(n)",
+        "Kennan(n)",
+        "George F. Kennan(n)",
+        "George Frost Kennan(n)",
+        "high commissioner(n)",
+        "persona grata(n)",
+        "internuncio(n)",
+        "envoy(n)",
+        "envoy extraordinary(n)",
+        "minister plenipotentiary(n)",
+        "consul(n)",
+        "plenipotentiary(n)",
+        "nuncio(n)",
+        "papal nuncio(n)",
+        "minister(n)",
+        "diplomatic minister(n)",
+        "ambassador(n)",
+        "embassador(n)",
+        "recruiting-sergeant(n)",
+        "procurator(n)",
+        "paper-pusher(n)",
+        "tax assessor(n)",
+        "assessor(n)",
+        "tax collector(n)",
+        "taxman(n)",
+        "exciseman(n)",
+        "collector of internal revenue(n)",
+        "internal revenue agent(n)",
+        "bean counter(n)",
+        "taxer(n)",
+        "sergeant at arms(n)",
+        "serjeant-at-arms(n)",
+        "probation officer(n)",
+        "placeman(n)",
+        "placeseeker(n)",
+        "coyote(n)",
+        "back judge(n)",
+        "line judge(n)",
+        "field judge(n)",
+        "head linesman(n)",
+        "side judge(n)",
+        "adjutant general(n)",
+        "lance corporal(n)",
+        "bombardier(n)",
+        "drill master(n)",
+        "drill instructor(n)",
+        "petty officer(n)",
+        "PO(n)",
+        "P.O.(n)",
+        "aircraftsman(n)",
+        "aircraftman(n)",
+        "corporal(n)",
+        "chief petty officer(n)",
+        "sergeant(n)",
+        "Supreme Allied Commander Europe(n)",
+        "SACEUR(n)",
+        "wing commander(n)",
+        "commander in chief(n)",
+        "generalissimo(n)",
+        "Supreme Allied Commander Atlantic(n)",
+        "SACLANT(n)",
+        "naval commander(n)",
+        "quartermaster(n)",
+        "commissioned military officer(n)",
+        "line officer(n)",
+        "staff officer(n)",
+        "judge advocate general(n)",
+        "judge advocate(n)",
+        "ranker(n)",
+        "supply officer(n)",
+        "commissioned naval officer(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 42,
+      "words": [
+        "stipendiary(n)",
+        "stipendiary magistrate(n)",
+        "justice of the peace(n)",
+        "presbyter(n)",
+        "deaconess(n)",
+        "ambassadress(n)",
+        "Pilate(n)",
+        "Pontius Pilate(n)",
+        "lister(n)",
+        "senior chief petty officer(n)",
+        "SCPO(n)",
+        "master-at-arms(n)",
+        "technical sergeant(n)",
+        "color sergeant(n)",
+        "first sergeant(n)",
+        "sergeant first class(n)",
+        "senior master sergeant(n)",
+        "SMSgt(n)",
+        "sergeant major(n)",
+        "command sergeant major(n)",
+        "gunnery sergeant(n)",
+        "master sergeant(n)",
+        "staff sergeant(n)",
+        "field-grade officer(n)",
+        "field officer(n)",
+        "FO(n)",
+        "major(n)",
+        "captain(n)",
+        "subaltern(n)",
+        "colonel(n)",
+        "lieutenant(n)",
+        "general officer(n)",
+        "marshal(n)",
+        "marshall(n)",
+        "quartermaster general(n)",
+        "skipper(n)",
+        "lieutenant junior grade(n)",
+        "lieutenant JG(n)",
+        "lieutenant commander(n)",
+        "flag officer(n)",
+        "commodore(n)",
+        "ensign(n)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 65,
+      "words": [
+        "record(v)",
+        "inquisitorial(adj)",
+        "officialdom(n)",
+        "function(v)",
+        "ministerial(adj)",
+        "lord(n)",
+        "viziership(n)",
+        "bailiffship(n)",
+        "search(v)",
+        "referee(v)",
+        "refer(v)",
+        "seal(v)",
+        "ambassadorial(adj)",
+        "ambassadorship(n)",
+        "score(v)",
+        "pretorial(adj)",
+        "praetorial(adj)",
+        "pretorian(adj)",
+        "praetorian(adj)",
+        "praetorship(n)",
+        "weigh(v)",
+        "eldership(n)",
+        "command(v)",
+        "commandership(n)",
+        "invalidate(v)",
+        "void(v)",
+        "nullify(v)",
+        "appoint(v)",
+        "assess(v)",
+        "proconsular(adj)",
+        "proconsulship(n)",
+        "rank(v)",
+        "license(v)",
+        "tax(v)",
+        "officer(v)",
+        "hold over(v)",
+        "notarize(v)",
+        "regulate(v)",
+        "time(v)",
+        "censorial(adj)",
+        "censorship(n)",
+        "censor(v)",
+        "try(v)",
+        "magisterial(adj)",
+        "authorize(v)",
+        "authorise(v)",
+        "sanction(v)",
+        "potent(adj)",
+        "dominate(v)",
+        "prosecute(v)",
+        "diplomatical(adj)",
+        "diplomacy(n)",
+        "office(n)",
+        "agential(adj)",
+        "consular(adj)",
+        "consulship(n)",
+        "usherette(n)",
+        "judicial(adj)",
+        "judgeship(n)",
+        "judge(v)",
+        "adjudicate(v)",
+        "jurisprudence(n)",
+        "enumerate(v)",
+        "umpire(v)",
+        "recruit(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 144,
+      "words": [
+        "harpooner(n)",
+        "harpooneer(n)",
+        "framer(n)",
+        "mounter(n)",
+        "plater(n)",
+        "projectionist(n)",
+        "dental hygienist(n)",
+        "calligrapher(n)",
+        "calligraphist(n)",
+        "lockmaster(n)",
+        "lockman(n)",
+        "lockkeeper(n)",
+        "butcher(n)",
+        "slaughterer(n)",
+        "crewman(n)",
+        "crew member(n)",
+        "turtler(n)",
+        "hunter(n)",
+        "huntsman(n)",
+        "riveter(n)",
+        "rivetter(n)",
+        "printer(n)",
+        "pressman(n)",
+        "editor(n)",
+        "editor in chief(n)",
+        "router(n)",
+        "perfecter(n)",
+        "painter(n)",
+        "vulcanizer(n)",
+        "vulcaniser(n)",
+        "lobsterman(n)",
+        "craftsman(n)",
+        "artisan(n)",
+        "journeyman(n)",
+        "artificer(n)",
+        "mender(n)",
+        "repairer(n)",
+        "fixer(n)",
+        "plasterer(n)",
+        "refiner(n)",
+        "optician(n)",
+        "lens maker(n)",
+        "grip(n)",
+        "wallpaperer(n)",
+        "wall-paperer(n)",
+        "shearer(n)",
+        "cook(n)",
+        "founder(n)",
+        "esthetician(n)",
+        "aesthetician(n)",
+        "smith(n)",
+        "galvanizer(n)",
+        "galvaniser(n)",
+        "metalworker(n)",
+        "electrician(n)",
+        "lineman(n)",
+        "aquanaut(n)",
+        "oceanaut(n)",
+        "power worker(n)",
+        "power-station worker(n)",
+        "turner(n)",
+        "plaiter(n)",
+        "baker(n)",
+        "bread maker(n)",
+        "gilder(n)",
+        "indexer(n)",
+        "armorer(n)",
+        "armourer(n)",
+        "balloonist(n)",
+        "fisherman(n)",
+        "fisher(n)",
+        "phlebotomist(n)",
+        "skinner(n)",
+        "technician(n)",
+        "engraver(n)",
+        "dyer(n)",
+        "voicer(n)",
+        "oilman(n)",
+        "wireman(n)",
+        "wirer(n)",
+        "cutter(n)",
+        "mortician(n)",
+        "undertaker(n)",
+        "funeral undertaker(n)",
+        "funeral director(n)",
+        "tuner(n)",
+        "piano tuner(n)",
+        "aviator(n)",
+        "aeronaut(n)",
+        "airman(n)",
+        "flier(n)",
+        "flyer(n)",
+        "draftsman(n)",
+        "draughtsman(n)",
+        "draftsperson(n)",
+        "fumigator(n)",
+        "laminator(n)",
+        "coiner(n)",
+        "minter(n)",
+        "moneyer(n)",
+        "refinisher(n)",
+        "renovator(n)",
+        "restorer(n)",
+        "preserver(n)",
+        "sailor(n)",
+        "hold(n)",
+        "iron fist(n)",
+        "rein(n)",
+        "corporatism(n)",
+        "leave(n)",
+        "consent(n)",
+        "all clear(n)",
+        "pass(n)",
+        "laissez passer(n)",
+        "passport(n)",
+        "green light(n)",
+        "dismissal(n)",
+        "volunteer(n)",
+        "military volunteer(n)",
+        "voluntary(n)",
+        "enlisted person(n)",
+        "bluejacket(n)",
+        "navy man(n)",
+        "sailor boy(n)",
+        "air force officer(n)",
+        "draftee(n)",
+        "conscript(n)",
+        "inductee(n)",
+        "noncombatant(n)",
+        "artilleryman(n)",
+        "cannoneer(n)",
+        "gunner(n)",
+        "machine gunner(n)",
+        "veteran(n)",
+        "vet(n)",
+        "ex-serviceman(n)",
+        "striper(n)",
+        "Marine(n)",
+        "devil dog(n)",
+        "leatherneck(n)",
+        "shipboard soldier(n)",
+        "occupier(n)",
+        "veteran soldier(n)",
+        "commando(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "adjudicate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "judge.n.01",
+          "via_synset": "judge.v.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "judge.n.01",
+          "via_synset": "decide.v.02"
+        }
+      ],
+      "definition": "put on trial or hear a case and sit as the judge at the trial of"
+    },
+    {
+      "lemma": "adjudicator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "official.n.02",
+          "via_synset": "adjudicator.n.01"
+        }
+      ],
+      "definition": "a person who studies and settles conflicts and disputes"
+    },
+    {
+      "lemma": "adjutant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "adjutant.n.01"
+        }
+      ],
+      "definition": "an officer who acts as military assistant to a more senior officer"
+    },
+    {
+      "lemma": "adjutant general",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "adjutant.n.01",
+          "via_synset": "adjutant_general.n.01"
+        }
+      ],
+      "definition": "a general's adjutant; chief administrative officer"
+    },
+    {
+      "lemma": "administrative official",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "bureaucrat.n.01"
+        }
+      ],
+      "definition": "an official of a bureaucracy"
+    },
+    {
+      "lemma": "aeronaut",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "aviator.n.01"
+        }
+      ],
+      "definition": "someone who operates an aircraft"
+    },
+    {
+      "lemma": "aesthetician",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "esthetician.n.01"
+        }
+      ],
+      "definition": "a worker skilled in giving beauty treatments (manicures and facials etc.)"
+    },
+    {
+      "lemma": "agent",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "agent.n.05"
+        }
+      ],
+      "definition": "any agent or representative of a federal agency or bureau"
+    },
+    {
+      "lemma": "agential",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "agent.n.05",
+          "via_synset": "agential.a.01"
+        }
+      ],
+      "definition": "of or relating to an agent or agency"
+    },
+    {
+      "lemma": "aide",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "adjutant.n.01"
+        }
+      ],
+      "definition": "an officer who acts as military assistant to a more senior officer"
+    },
+    {
+      "lemma": "aide-de-camp",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "adjutant.n.01"
+        }
+      ],
+      "definition": "an officer who acts as military assistant to a more senior officer"
+    },
+    {
+      "lemma": "air force officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "air_force_officer.n.01"
+        }
+      ],
+      "definition": "an officer in the airforce"
+    },
+    {
+      "lemma": "aircraftman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "noncommissioned_officer.n.01",
+          "via_synset": "aircraftsman.n.01"
+        }
+      ],
+      "definition": "a noncommissioned officer in the British Royal Air Force"
+    },
+    {
+      "lemma": "aircraftsman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "noncommissioned_officer.n.01",
+          "via_synset": "aircraftsman.n.01"
+        }
+      ],
+      "definition": "a noncommissioned officer in the British Royal Air Force"
+    },
+    {
+      "lemma": "airman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "aviator.n.01"
+        }
+      ],
+      "definition": "someone who operates an aircraft"
+    },
+    {
+      "lemma": "alcalde",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "judge.n.01",
+          "via_synset": "alcalde.n.01"
+        }
+      ],
+      "definition": "a mayor or chief magistrate of a Spanish town"
+    },
+    {
+      "lemma": "all clear",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "permission.n.01",
+          "via_synset": "all_clear.n.02"
+        }
+      ],
+      "definition": "permission to proceed because obstacles have been removed"
+    },
+    {
+      "lemma": "ambassador",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "ambassador.n.01"
+        }
+      ],
+      "definition": "a diplomat of the highest rank; accredited as representative from one country to another"
+    },
+    {
+      "lemma": "ambassadorial",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ambassador.n.01",
+          "via_synset": "ambassadorial.a.01"
+        }
+      ],
+      "definition": "of or relating to or characteristic of ambassadors"
+    },
+    {
+      "lemma": "ambassadorship",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ambassador.n.01",
+          "via_synset": "ambassadorship.n.01"
+        }
+      ],
+      "definition": "the post of ambassador"
+    },
+    {
+      "lemma": "ambassadress",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "ambassador.n.01",
+          "via_synset": "ambassadress.n.01"
+        }
+      ],
+      "definition": "a woman ambassador"
+    },
+    {
+      "lemma": "apparatchik",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "apparatchik.n.01"
+        }
+      ],
+      "definition": "a humorous but derogatory term for an official of a large organization (especially a political organization)"
+    },
+    {
+      "lemma": "appoint",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "appointee.n.01",
+          "via_synset": "appoint.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "appointee.n.01",
+          "via_synset": "appoint.v.02"
+        }
+      ],
+      "definition": "create and charge with a task or function"
+    },
+    {
+      "lemma": "appointee",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "appointee.n.01"
+        }
+      ],
+      "definition": "an official who is appointed"
+    },
+    {
+      "lemma": "aquanaut",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "aquanaut.n.02"
+        }
+      ],
+      "definition": "a skilled worker who can live in underwater installations and participate in scientific research"
+    },
+    {
+      "lemma": "armorer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "armorer.n.01"
+        }
+      ],
+      "definition": "a worker skilled in making armor or arms"
+    },
+    {
+      "lemma": "armourer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "armorer.n.01"
+        }
+      ],
+      "definition": "a worker skilled in making armor or arms"
+    },
+    {
+      "lemma": "army officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "army_officer.n.01"
+        }
+      ],
+      "definition": "an officer in the armed forces"
+    },
+    {
+      "lemma": "artificer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "craftsman.n.03"
+        }
+      ],
+      "definition": "a skilled worker who practices some trade or handicraft"
+    },
+    {
+      "lemma": "artilleryman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "artilleryman.n.01"
+        }
+      ],
+      "definition": "a serviceman in the artillery"
+    },
+    {
+      "lemma": "artisan",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "craftsman.n.03"
+        }
+      ],
+      "definition": "a skilled worker who practices some trade or handicraft"
+    },
+    {
+      "lemma": "assess",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tax_assessor.n.01",
+          "via_synset": "measure.v.04"
+        }
+      ],
+      "definition": "evaluate or estimate the nature, quality, ability, extent, or significance of"
+    },
+    {
+      "lemma": "assessor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bureaucrat.n.01",
+          "via_synset": "tax_assessor.n.01"
+        }
+      ],
+      "definition": "an official who evaluates property for the purpose of taxing it"
+    },
+    {
+      "lemma": "authorisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "authority.n.01",
+          "via_synset": "authority.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "authority.n.06",
+          "via_synset": "authority.n.06"
+        }
+      ],
+      "definition": "the power or right to give orders or make decisions"
+    },
+    {
+      "lemma": "authorise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "authority.n.06",
+          "via_synset": "authorize.v.01"
+        }
+      ],
+      "definition": "grant authorization or clearance for"
+    },
+    {
+      "lemma": "authority",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "authority.n.01",
+          "via_synset": "authority.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "authority.n.06",
+          "via_synset": "authority.n.06"
+        }
+      ],
+      "definition": "the power or right to give orders or make decisions"
+    },
+    {
+      "lemma": "authorization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "authority.n.01",
+          "via_synset": "authority.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "authority.n.06",
+          "via_synset": "authority.n.06"
+        }
+      ],
+      "definition": "the power or right to give orders or make decisions"
+    },
+    {
+      "lemma": "authorize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "authority.n.06",
+          "via_synset": "authorize.v.01"
+        }
+      ],
+      "definition": "grant authorization or clearance for"
+    },
+    {
+      "lemma": "aviator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "aviator.n.01"
+        }
+      ],
+      "definition": "someone who operates an aircraft"
+    },
+    {
+      "lemma": "back judge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "football_official.n.01",
+          "via_synset": "back_judge.n.01"
+        }
+      ],
+      "definition": "a football official"
+    },
+    {
+      "lemma": "bailiff",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "bailiff.n.01"
+        }
+      ],
+      "definition": "an officer of the court who is employed to execute writs and processes and make arrests etc."
+    },
+    {
+      "lemma": "bailiffship",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bailiff.n.01",
+          "via_synset": "bailiffship.n.01"
+        }
+      ],
+      "definition": "the office of bailiff"
+    },
+    {
+      "lemma": "baker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "baker.n.02"
+        }
+      ],
+      "definition": "someone who bakes bread or cake"
+    },
+    {
+      "lemma": "balloonist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "balloonist.n.01"
+        }
+      ],
+      "definition": "someone who flies a balloon"
+    },
+    {
+      "lemma": "beadle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "beadle.n.01"
+        }
+      ],
+      "definition": "a minor parish official who serves a ceremonial function"
+    },
+    {
+      "lemma": "bean counter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bureaucrat.n.01",
+          "via_synset": "bean_counter.n.01"
+        }
+      ],
+      "definition": "an accountant or bureaucrat who is believed to place undue emphasis on the control of expenditures"
+    },
+    {
+      "lemma": "bluejacket",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "bluejacket.n.01"
+        }
+      ],
+      "definition": "a serviceman in the navy"
+    },
+    {
+      "lemma": "bombardier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "noncommissioned_officer.n.01",
+          "via_synset": "bombardier.n.01"
+        }
+      ],
+      "definition": "a noncommissioned officer in the British artillery"
+    },
+    {
+      "lemma": "brass hat",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "brass_hat.n.01"
+        }
+      ],
+      "definition": "a high-ranking military officer"
+    },
+    {
+      "lemma": "bread maker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "baker.n.02"
+        }
+      ],
+      "definition": "someone who bakes bread or cake"
+    },
+    {
+      "lemma": "bureaucrat",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "bureaucrat.n.01"
+        }
+      ],
+      "definition": "an official of a bureaucracy"
+    },
+    {
+      "lemma": "butcher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "butcher.n.03"
+        }
+      ],
+      "definition": "a person who slaughters or dresses meat for market"
+    },
+    {
+      "lemma": "calligrapher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "calligrapher.n.01"
+        }
+      ],
+      "definition": "someone skilled in penmanship"
+    },
+    {
+      "lemma": "calligraphist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "calligrapher.n.01"
+        }
+      ],
+      "definition": "someone skilled in penmanship"
+    },
+    {
+      "lemma": "cannoneer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "artilleryman.n.01"
+        }
+      ],
+      "definition": "a serviceman in the artillery"
+    },
+    {
+      "lemma": "canvasser",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "teller.n.02",
+          "via_synset": "canvasser.n.04"
+        }
+      ],
+      "definition": "a person who takes or counts votes"
+    },
+    {
+      "lemma": "captain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_military_officer.n.01",
+          "via_synset": "captain.n.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_naval_officer.n.01",
+          "via_synset": "captain.n.02"
+        }
+      ],
+      "definition": "an officer holding a rank below a major but above a lieutenant"
+    },
+    {
+      "lemma": "caretaker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "caretaker.n.02"
+        }
+      ],
+      "definition": "an official who performs the duties of an office temporarily"
+    },
+    {
+      "lemma": "carte blanche",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "authority.n.01",
+          "via_synset": "carte_blanche.n.01"
+        }
+      ],
+      "definition": "complete freedom or authority to act"
+    },
+    {
+      "lemma": "censor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "censor.n.02"
+        }
+      ],
+      "definition": "a person who is authorized to read publications or correspondence or to watch theatrical performances and suppress in whole or in part anything considered obscene or politically unacceptable"
+    },
+    {
+      "lemma": "censor",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "censor.n.02",
+          "via_synset": "censor.v.02"
+        }
+      ],
+      "definition": "subject to political, religious, or moral censorship"
+    },
+    {
+      "lemma": "censorial",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "censor.n.02",
+          "via_synset": "censorial.a.01"
+        }
+      ],
+      "definition": "belonging or relating to a censor or a censor's functions"
+    },
+    {
+      "lemma": "censorship",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "censor.n.02",
+          "via_synset": "censoring.n.02"
+        }
+      ],
+      "definition": "deleting parts of publications or correspondence or theatrical performances"
+    },
+    {
+      "lemma": "census taker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "census_taker.n.01"
+        }
+      ],
+      "definition": "someone who collects census data by visiting individual homes"
+    },
+    {
+      "lemma": "charge d'affaires",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "charge_d'affaires.n.01"
+        }
+      ],
+      "definition": "the official temporarily in charge of a diplomatic mission in the absence of the ambassador"
+    },
+    {
+      "lemma": "chief justice",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "judge.n.01",
+          "via_synset": "chief_justice.n.01"
+        }
+      ],
+      "definition": "the judge who presides over a supreme court"
+    },
+    {
+      "lemma": "chief of staff",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "chief_of_staff.n.01"
+        }
+      ],
+      "definition": "the senior officer of a service of the armed forces"
+    },
+    {
+      "lemma": "chief petty officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "noncommissioned_officer.n.01",
+          "via_synset": "chief_petty_officer.n.01"
+        }
+      ],
+      "definition": "a person with the senior noncommissioned naval rank"
+    },
+    {
+      "lemma": "church officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "church_officer.n.01"
+        }
+      ],
+      "definition": "a church official"
+    },
+    {
+      "lemma": "churchwarden",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "church_officer.n.01",
+          "via_synset": "churchwarden.n.01"
+        }
+      ],
+      "definition": "an officer in the Episcopal church who helps a parish priest with secular matters"
+    },
+    {
+      "lemma": "city father",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "city_father.n.01"
+        }
+      ],
+      "definition": "an important municipal official"
+    },
+    {
+      "lemma": "civil servant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "civil_servant.n.01"
+        }
+      ],
+      "definition": "a public official who is a member of the civil service"
+    },
+    {
+      "lemma": "coiner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "coiner.n.03"
+        }
+      ],
+      "definition": "a skilled worker who coins or stamps money"
+    },
+    {
+      "lemma": "collector of internal revenue",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bureaucrat.n.01",
+          "via_synset": "tax_collector.n.01"
+        }
+      ],
+      "definition": "someone who collects taxes for the government"
+    },
+    {
+      "lemma": "colonel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_military_officer.n.01",
+          "via_synset": "colonel.n.01"
+        }
+      ],
+      "definition": "a commissioned military officer in the United States Army or Air Force or Marines who ranks above a lieutenant colonel and below a brigadier general"
+    },
+    {
+      "lemma": "color sergeant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "sergeant.n.01",
+          "via_synset": "color_sergeant.n.01"
+        }
+      ],
+      "definition": "a sergeant in a color guard who carries one of the colors"
+    },
+    {
+      "lemma": "command",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "authority.n.01",
+          "via_synset": "command.n.03"
+        }
+      ],
+      "definition": "the power or authority to command"
+    },
+    {
+      "lemma": "command",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "command.n.03",
+          "via_synset": "control.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "command.n.03",
+          "via_synset": "command.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "commanding_officer.n.01",
+          "via_synset": "control.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "commanding_officer.n.01",
+          "via_synset": "command.v.01"
+        }
+      ],
+      "definition": "exercise authoritative control or power over"
+    },
+    {
+      "lemma": "command sergeant major",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "sergeant.n.01",
+          "via_synset": "sergeant_major.n.01"
+        }
+      ],
+      "definition": "a noncommissioned officer serving as chief administrative officer of a headquarters unit of the Army"
+    },
+    {
+      "lemma": "commandant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "commanding_officer.n.01"
+        }
+      ],
+      "definition": "an officer in command of a military unit"
+    },
+    {
+      "lemma": "commander",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "commanding_officer.n.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_naval_officer.n.01",
+          "via_synset": "commander.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "air_force_officer.n.01"
+        }
+      ],
+      "definition": "an officer in command of a military unit"
+    },
+    {
+      "lemma": "commander in chief",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "commanding_officer.n.01",
+          "via_synset": "commander_in_chief.n.01"
+        }
+      ],
+      "definition": "the officer who holds the supreme command"
+    },
+    {
+      "lemma": "commandership",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "commanding_officer.n.01",
+          "via_synset": "commandership.n.01"
+        }
+      ],
+      "definition": "the position or office of commander"
+    },
+    {
+      "lemma": "commanding officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "commanding_officer.n.01"
+        }
+      ],
+      "definition": "an officer in command of a military unit"
+    },
+    {
+      "lemma": "commando",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "commando.n.01"
+        }
+      ],
+      "definition": "a member of a military unit trained as shock troops for hit-and-run raids"
+    },
+    {
+      "lemma": "commissar",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "commissar.n.01"
+        }
+      ],
+      "definition": "an official of the Communist Party who was assigned to teach party principles to a military unit"
+    },
+    {
+      "lemma": "commissioned military officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "commissioned_officer.n.01",
+          "via_synset": "commissioned_military_officer.n.01"
+        }
+      ],
+      "definition": "a commissioned officer in the Army or Air Force or Marine Corps"
+    },
+    {
+      "lemma": "commissioned naval officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "commissioned_officer.n.01",
+          "via_synset": "commissioned_naval_officer.n.01"
+        }
+      ],
+      "definition": "a commissioned officer in the navy"
+    },
+    {
+      "lemma": "commissioned officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "commissioned_officer.n.01"
+        }
+      ],
+      "definition": "a military officer holding a commission"
+    },
+    {
+      "lemma": "commodore",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_naval_officer.n.01",
+          "via_synset": "commodore.n.01"
+        }
+      ],
+      "definition": "a commissioned naval officer who ranks above a captain and below a rear admiral; the lowest grade of admiral"
+    },
+    {
+      "lemma": "Comptroller General",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "comptroller_general.n.01"
+        }
+      ],
+      "definition": "a United States federal official who supervises expenditures and settles claims against the government"
+    },
+    {
+      "lemma": "Comptroller of the Currency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "comptroller_of_the_currency.n.01"
+        }
+      ],
+      "definition": "a United States federal official who regulates the national banks"
+    },
+    {
+      "lemma": "conscript",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "draftee.n.01"
+        }
+      ],
+      "definition": "someone who is drafted into military service"
+    },
+    {
+      "lemma": "consent",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "permission.n.01",
+          "via_synset": "consent.n.01"
+        }
+      ],
+      "definition": "permission to do something"
+    },
+    {
+      "lemma": "consul",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "consul.n.01"
+        }
+      ],
+      "definition": "a diplomat appointed by a government to protect its commercial interests and help its citizens in a foreign country"
+    },
+    {
+      "lemma": "consular",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consul.n.01",
+          "via_synset": "consular.a.01"
+        }
+      ],
+      "definition": "having to do with a consul or his office or duties"
+    },
+    {
+      "lemma": "consulship",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consul.n.01",
+          "via_synset": "consulship.n.01"
+        }
+      ],
+      "definition": "the post of consul"
+    },
+    {
+      "lemma": "control",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "authority.n.01",
+          "via_synset": "control.n.01"
+        }
+      ],
+      "definition": "power to direct or determine"
+    },
+    {
+      "lemma": "cook",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "cook.n.01"
+        }
+      ],
+      "definition": "someone who cooks food"
+    },
+    {
+      "lemma": "corporal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "noncommissioned_officer.n.01",
+          "via_synset": "corporal.n.01"
+        }
+      ],
+      "definition": "a noncommissioned officer in the Army or Air Force or Marines"
+    },
+    {
+      "lemma": "corporatism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.n.01",
+          "via_synset": "corporatism.n.01"
+        }
+      ],
+      "definition": "control of a state or organization by large interest groups"
+    },
+    {
+      "lemma": "coyote",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "fire_warden.n.01",
+          "via_synset": "coyote.n.03"
+        }
+      ],
+      "definition": "a forest fire fighter who is sent to battle remote and severe forest fires (often for days at a time)"
+    },
+    {
+      "lemma": "craftsman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "craftsman.n.03"
+        }
+      ],
+      "definition": "a skilled worker who practices some trade or handicraft"
+    },
+    {
+      "lemma": "crew member",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "crewman.n.02"
+        }
+      ],
+      "definition": "a member of a flight crew"
+    },
+    {
+      "lemma": "crewman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "crewman.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "sailor.n.01"
+        }
+      ],
+      "definition": "a member of a flight crew"
+    },
+    {
+      "lemma": "cutter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "cutter.n.03"
+        }
+      ],
+      "definition": "someone whose work is cutting (as e.g. cutting cloth for garments)"
+    },
+    {
+      "lemma": "DA",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "prosecutor.n.01",
+          "via_synset": "district_attorney.n.01"
+        }
+      ],
+      "definition": "an official prosecutor for a judicial district"
+    },
+    {
+      "lemma": "Daniel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "judge.n.01",
+          "via_synset": "daniel.n.02"
+        }
+      ],
+      "definition": "a wise and upright judge;  -- Shakespeare"
+    },
+    {
+      "lemma": "deacon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "church_officer.n.01",
+          "via_synset": "deacon.n.01"
+        }
+      ],
+      "definition": "a Protestant layman who assists the minister"
+    },
+    {
+      "lemma": "deaconess",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "deacon.n.01",
+          "via_synset": "deaconess.n.01"
+        }
+      ],
+      "definition": "a woman deacon"
+    },
+    {
+      "lemma": "dental hygienist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "dental_hygienist.n.01"
+        }
+      ],
+      "definition": "someone trained to provide preventive dental service (cleaning teeth or taking x-rays)"
+    },
+    {
+      "lemma": "desk officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "desk_officer.n.01"
+        }
+      ],
+      "definition": "a military officer who is not assigned to active duty"
+    },
+    {
+      "lemma": "devil dog",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "marine.n.01"
+        }
+      ],
+      "definition": "a member of the United States Marine Corps"
+    },
+    {
+      "lemma": "diplomacy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "diplomacy.n.01"
+        }
+      ],
+      "definition": "negotiation between nations"
+    },
+    {
+      "lemma": "diplomat",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "diplomat.n.01"
+        }
+      ],
+      "definition": "an official engaged in international negotiations"
+    },
+    {
+      "lemma": "diplomatic minister",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "minister.n.03"
+        }
+      ],
+      "definition": "a diplomat representing one government to another; ranks below ambassador"
+    },
+    {
+      "lemma": "diplomatical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "diplomatic.a.02"
+        }
+      ],
+      "definition": "using or marked by tact in dealing with sensitive matters or people"
+    },
+    {
+      "lemma": "diplomatist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "diplomat.n.01"
+        }
+      ],
+      "definition": "an official engaged in international negotiations"
+    },
+    {
+      "lemma": "dismissal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "permission.n.01",
+          "via_synset": "dismissal.n.03"
+        }
+      ],
+      "definition": "permission to go; the sending away of someone"
+    },
+    {
+      "lemma": "dispatcher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.02",
+          "via_synset": "starter.n.03"
+        }
+      ],
+      "definition": "the official who signals the beginning of a race or competition"
+    },
+    {
+      "lemma": "district attorney",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "prosecutor.n.01",
+          "via_synset": "district_attorney.n.01"
+        }
+      ],
+      "definition": "an official prosecutor for a judicial district"
+    },
+    {
+      "lemma": "doge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "judge.n.01",
+          "via_synset": "doge.n.01"
+        }
+      ],
+      "definition": "formerly the chief magistrate in the republics of Venice and Genoa"
+    },
+    {
+      "lemma": "dominance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "authority.n.01",
+          "via_synset": "authority.n.01"
+        }
+      ],
+      "definition": "the power or right to give orders or make decisions"
+    },
+    {
+      "lemma": "dominate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "authority.n.01",
+          "via_synset": "dominate.v.03"
+        }
+      ],
+      "definition": "have dominance or the power to defeat over"
+    },
+    {
+      "lemma": "doorkeeper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "usher.n.02"
+        }
+      ],
+      "definition": "an official stationed at the entrance of a courtroom or legislative chamber"
+    },
+    {
+      "lemma": "draftee",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "draftee.n.01"
+        }
+      ],
+      "definition": "someone who is drafted into military service"
+    },
+    {
+      "lemma": "draftsman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "draftsman.n.01"
+        }
+      ],
+      "definition": "a skilled worker who draws plans of buildings or machines"
+    },
+    {
+      "lemma": "draftsperson",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "draftsman.n.01"
+        }
+      ],
+      "definition": "a skilled worker who draws plans of buildings or machines"
+    },
+    {
+      "lemma": "draughtsman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "draftsman.n.01"
+        }
+      ],
+      "definition": "a skilled worker who draws plans of buildings or machines"
+    },
+    {
+      "lemma": "drill instructor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "noncommissioned_officer.n.01",
+          "via_synset": "drill_master.n.01"
+        }
+      ],
+      "definition": "a noncommissioned officer who instructs recruits in military marching and discipline"
+    },
+    {
+      "lemma": "drill master",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "noncommissioned_officer.n.01",
+          "via_synset": "drill_master.n.01"
+        }
+      ],
+      "definition": "a noncommissioned officer who instructs recruits in military marching and discipline"
+    },
+    {
+      "lemma": "dyer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "dyer.n.01"
+        }
+      ],
+      "definition": "someone whose job is to dye cloth"
+    },
+    {
+      "lemma": "editor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "editor.n.01"
+        }
+      ],
+      "definition": "a person responsible for the editorial aspects of publication; the person who determines the final content of a text (especially of a newspaper or magazine)"
+    },
+    {
+      "lemma": "editor in chief",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "editor.n.01"
+        }
+      ],
+      "definition": "a person responsible for the editorial aspects of publication; the person who determines the final content of a text (especially of a newspaper or magazine)"
+    },
+    {
+      "lemma": "elder",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "church_officer.n.01",
+          "via_synset": "elder.n.03"
+        }
+      ],
+      "definition": "any of various church officers"
+    },
+    {
+      "lemma": "eldership",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "elder.n.03",
+          "via_synset": "eldership.n.01"
+        }
+      ],
+      "definition": "the office of elder"
+    },
+    {
+      "lemma": "elected official",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "elected_official.n.01"
+        }
+      ],
+      "definition": "official who won the office in a free election"
+    },
+    {
+      "lemma": "electrician",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "electrician.n.01"
+        }
+      ],
+      "definition": "a person who installs or repairs electrical or telephone lines"
+    },
+    {
+      "lemma": "embassador",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "ambassador.n.01"
+        }
+      ],
+      "definition": "a diplomat of the highest rank; accredited as representative from one country to another"
+    },
+    {
+      "lemma": "engraver",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "engraver.n.01"
+        }
+      ],
+      "definition": "a skilled worker who can inscribe designs or writing onto a surface by carving or etching"
+    },
+    {
+      "lemma": "enlisted officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "noncommissioned_officer.n.01"
+        }
+      ],
+      "definition": "a military officer appointed from enlisted personnel"
+    },
+    {
+      "lemma": "enlisted person",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "enlisted_person.n.01"
+        }
+      ],
+      "definition": "a serviceman who ranks below a commissioned officer"
+    },
+    {
+      "lemma": "ensign",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_naval_officer.n.01",
+          "via_synset": "ensign.n.01"
+        }
+      ],
+      "definition": "a person who holds a commissioned rank in the United States Navy or the United States Coast Guard; below lieutenant junior grade"
+    },
+    {
+      "lemma": "enumerate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "census_taker.n.01",
+          "via_synset": "count.v.01"
+        }
+      ],
+      "definition": "determine the number or amount of"
+    },
+    {
+      "lemma": "enumerator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "census_taker.n.01"
+        }
+      ],
+      "definition": "someone who collects census data by visiting individual homes"
+    },
+    {
+      "lemma": "envoy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "envoy.n.01"
+        }
+      ],
+      "definition": "a diplomat having less authority than an ambassador"
+    },
+    {
+      "lemma": "envoy extraordinary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "envoy.n.01"
+        }
+      ],
+      "definition": "a diplomat having less authority than an ambassador"
+    },
+    {
+      "lemma": "equerry",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "equerry.n.01"
+        }
+      ],
+      "definition": "an official charged with the care of the horses of princes or nobles"
+    },
+    {
+      "lemma": "esthetician",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "esthetician.n.01"
+        }
+      ],
+      "definition": "a worker skilled in giving beauty treatments (manicures and facials etc.)"
+    },
+    {
+      "lemma": "ex-serviceman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "veteran.n.02"
+        }
+      ],
+      "definition": "a person who has served in the armed forces"
+    },
+    {
+      "lemma": "exciseman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bureaucrat.n.01",
+          "via_synset": "tax_collector.n.01"
+        }
+      ],
+      "definition": "someone who collects taxes for the government"
+    },
+    {
+      "lemma": "executive officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "executive_officer.n.01"
+        }
+      ],
+      "definition": "the officer second in command"
+    },
+    {
+      "lemma": "Fed",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "agent.n.05",
+          "via_synset": "federal.n.02"
+        }
+      ],
+      "definition": "any federal law-enforcement officer"
+    },
+    {
+      "lemma": "Federal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "agent.n.05",
+          "via_synset": "federal.n.02"
+        }
+      ],
+      "definition": "any federal law-enforcement officer"
+    },
+    {
+      "lemma": "federal agent",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "agent.n.05"
+        }
+      ],
+      "definition": "any agent or representative of a federal agency or bureau"
+    },
+    {
+      "lemma": "federal official",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "agent.n.05",
+          "via_synset": "federal.n.02"
+        }
+      ],
+      "definition": "any federal law-enforcement officer"
+    },
+    {
+      "lemma": "field judge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "football_official.n.01",
+          "via_synset": "field_judge.n.01"
+        }
+      ],
+      "definition": "a football official"
+    },
+    {
+      "lemma": "field officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_military_officer.n.01",
+          "via_synset": "field-grade_officer.n.01"
+        }
+      ],
+      "definition": "an officer holding the rank of major or lieutenant colonel or colonel"
+    },
+    {
+      "lemma": "field-grade officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_military_officer.n.01",
+          "via_synset": "field-grade_officer.n.01"
+        }
+      ],
+      "definition": "an officer holding the rank of major or lieutenant colonel or colonel"
+    },
+    {
+      "lemma": "fire marshall",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "fire_marshall.n.01"
+        }
+      ],
+      "definition": "an official who is responsible for the prevention and investigation of fires"
+    },
+    {
+      "lemma": "fire warden",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "fire_warden.n.01"
+        }
+      ],
+      "definition": "an official who is responsible for managing and protecting an area of forest"
+    },
+    {
+      "lemma": "first sergeant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "sergeant.n.01",
+          "via_synset": "first_sergeant.n.01"
+        }
+      ],
+      "definition": "a sergeant in the Army above the rank of staff sergeant and below master sergeant"
+    },
+    {
+      "lemma": "fisher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "fisherman.n.01"
+        }
+      ],
+      "definition": "someone whose occupation is catching fish"
+    },
+    {
+      "lemma": "fisherman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "fisherman.n.01"
+        }
+      ],
+      "definition": "someone whose occupation is catching fish"
+    },
+    {
+      "lemma": "fixer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "mender.n.01"
+        }
+      ],
+      "definition": "a skilled worker who mends or repairs things"
+    },
+    {
+      "lemma": "flag officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_naval_officer.n.01",
+          "via_synset": "flag_officer.n.01"
+        }
+      ],
+      "definition": "a senior naval officer above the rank of captain"
+    },
+    {
+      "lemma": "flier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "aviator.n.01"
+        }
+      ],
+      "definition": "someone who operates an aircraft"
+    },
+    {
+      "lemma": "flyer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "aviator.n.01"
+        }
+      ],
+      "definition": "someone who operates an aircraft"
+    },
+    {
+      "lemma": "FO",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_military_officer.n.01",
+          "via_synset": "field-grade_officer.n.01"
+        }
+      ],
+      "definition": "an officer holding the rank of major or lieutenant colonel or colonel"
+    },
+    {
+      "lemma": "football official",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.02",
+          "via_synset": "football_official.n.01"
+        }
+      ],
+      "definition": "an official who enforces the rules at a football game"
+    },
+    {
+      "lemma": "forest fire fighter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "fire_warden.n.01"
+        }
+      ],
+      "definition": "an official who is responsible for managing and protecting an area of forest"
+    },
+    {
+      "lemma": "founder",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "founder.n.03"
+        }
+      ],
+      "definition": "a worker who makes metal castings"
+    },
+    {
+      "lemma": "framer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "framer.n.01"
+        }
+      ],
+      "definition": "someone who makes frames (as for pictures)"
+    },
+    {
+      "lemma": "fumigator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "fumigator.n.01"
+        }
+      ],
+      "definition": "someone whose job is to fumigate"
+    },
+    {
+      "lemma": "function",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "official.n.01",
+          "via_synset": "officiate.v.02"
+        }
+      ],
+      "definition": "perform duties attached to a particular office or place or function"
+    },
+    {
+      "lemma": "functionary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "official.n.01",
+          "via_synset": "official.n.01"
+        }
+      ],
+      "definition": "a worker who holds or is invested with an office"
+    },
+    {
+      "lemma": "funeral director",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "mortician.n.01"
+        }
+      ],
+      "definition": "one whose business is the management of funerals"
+    },
+    {
+      "lemma": "funeral undertaker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "mortician.n.01"
+        }
+      ],
+      "definition": "one whose business is the management of funerals"
+    },
+    {
+      "lemma": "galvaniser",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "galvanizer.n.01"
+        }
+      ],
+      "definition": "a skilled worker who coats iron or steel with zinc"
+    },
+    {
+      "lemma": "galvanizer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "galvanizer.n.01"
+        }
+      ],
+      "definition": "a skilled worker who coats iron or steel with zinc"
+    },
+    {
+      "lemma": "general officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_military_officer.n.01",
+          "via_synset": "general_officer.n.01"
+        }
+      ],
+      "definition": "officers in the Army or Air Force or Marines above the rank of colonel"
+    },
+    {
+      "lemma": "generalissimo",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "commanding_officer.n.01",
+          "via_synset": "commander_in_chief.n.01"
+        }
+      ],
+      "definition": "the officer who holds the supreme command"
+    },
+    {
+      "lemma": "George F. Kennan",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "kennan.n.01"
+        }
+      ],
+      "definition": "United States diplomat who recommended a policy of containment in dealing with Soviet aggression (1904-2005)"
+    },
+    {
+      "lemma": "George Frost Kennan",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "kennan.n.01"
+        }
+      ],
+      "definition": "United States diplomat who recommended a policy of containment in dealing with Soviet aggression (1904-2005)"
+    },
+    {
+      "lemma": "gilder",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "gilder.n.01"
+        }
+      ],
+      "definition": "someone whose occupation is to apply an overlay of gold or gilt"
+    },
+    {
+      "lemma": "Grand Inquisitor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "inquisitor.n.02",
+          "via_synset": "grand_inquisitor.n.01"
+        }
+      ],
+      "definition": "director of the court of Inquisition (especially in Spain and Portugal)"
+    },
+    {
+      "lemma": "green light",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "permission.n.01",
+          "via_synset": "green_light.n.02"
+        }
+      ],
+      "definition": "permission to proceed with a project or to take action"
+    },
+    {
+      "lemma": "Grigori Aleksandrovich Potemkin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "potemkin.n.01"
+        }
+      ],
+      "definition": "a Russian officer and politician who was a favorite of Catherine II and in 1762 helped her to seize power; when she visited the Crimea in 1787 he gave the order for sham villages to be built (1739-1791)"
+    },
+    {
+      "lemma": "Grigori Potemkin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "potemkin.n.01"
+        }
+      ],
+      "definition": "a Russian officer and politician who was a favorite of Catherine II and in 1762 helped her to seize power; when she visited the Crimea in 1787 he gave the order for sham villages to be built (1739-1791)"
+    },
+    {
+      "lemma": "Grigori Potyokin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "potemkin.n.01"
+        }
+      ],
+      "definition": "a Russian officer and politician who was a favorite of Catherine II and in 1762 helped her to seize power; when she visited the Crimea in 1787 he gave the order for sham villages to be built (1739-1791)"
+    },
+    {
+      "lemma": "grip",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "grip.n.05"
+        }
+      ],
+      "definition": "worker who moves the camera around while a film or television show is being made"
+    },
+    {
+      "lemma": "gunner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "artilleryman.n.01"
+        }
+      ],
+      "definition": "a serviceman in the artillery"
+    },
+    {
+      "lemma": "gunnery sergeant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "sergeant.n.01",
+          "via_synset": "gunnery_sergeant.n.01"
+        }
+      ],
+      "definition": "a noncommissioned officer ranking above a staff sergeant in the marines"
+    },
+    {
+      "lemma": "hangover",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "holdover.n.01"
+        }
+      ],
+      "definition": "an official who remains in office after his term"
+    },
+    {
+      "lemma": "harpooneer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "harpooner.n.01"
+        }
+      ],
+      "definition": "someone who launches harpoons"
+    },
+    {
+      "lemma": "harpooner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "harpooner.n.01"
+        }
+      ],
+      "definition": "someone who launches harpoons"
+    },
+    {
+      "lemma": "head linesman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "football_official.n.01",
+          "via_synset": "head_linesman.n.01"
+        }
+      ],
+      "definition": "a football official in charge of recording yardage gained or lost"
+    },
+    {
+      "lemma": "hearing examiner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "hearing_examiner.n.01"
+        }
+      ],
+      "definition": "an official appointed by a government agency to conduct an investigation or administrative hearing so that the agency can exercise its statutory powers"
+    },
+    {
+      "lemma": "hearing officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "hearing_examiner.n.01"
+        }
+      ],
+      "definition": "an official appointed by a government agency to conduct an investigation or administrative hearing so that the agency can exercise its statutory powers"
+    },
+    {
+      "lemma": "high commissioner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "high_commissioner.n.01"
+        }
+      ],
+      "definition": "a senior diplomat from one country to another who is assigned ambassadorial rank"
+    },
+    {
+      "lemma": "hold",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.n.01",
+          "via_synset": "hold.n.03"
+        }
+      ],
+      "definition": "power by which something or someone is affected or dominated"
+    },
+    {
+      "lemma": "hold over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "holdover.n.01",
+          "via_synset": "hold_over.v.04"
+        }
+      ],
+      "definition": "continue a term of office past the normal period of time"
+    },
+    {
+      "lemma": "holdover",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "holdover.n.01"
+        }
+      ],
+      "definition": "an official who remains in office after his term"
+    },
+    {
+      "lemma": "hunter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "hunter.n.01"
+        }
+      ],
+      "definition": "someone who hunts game"
+    },
+    {
+      "lemma": "huntsman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "hunter.n.01"
+        }
+      ],
+      "definition": "someone who hunts game"
+    },
+    {
+      "lemma": "imperium",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "authority.n.01",
+          "via_synset": "imperium.n.02"
+        }
+      ],
+      "definition": "supreme authority; absolute dominion"
+    },
+    {
+      "lemma": "incumbent",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "incumbent.n.01"
+        }
+      ],
+      "definition": "the official who holds an office"
+    },
+    {
+      "lemma": "indexer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "indexer.n.01"
+        }
+      ],
+      "definition": "someone who provides an index"
+    },
+    {
+      "lemma": "Indian agent",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "agent.n.05",
+          "via_synset": "indian_agent.n.01"
+        }
+      ],
+      "definition": "a representative of the federal government to American Indian tribes (especially on Indian reservations)"
+    },
+    {
+      "lemma": "inductee",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "draftee.n.01"
+        }
+      ],
+      "definition": "someone who is drafted into military service"
+    },
+    {
+      "lemma": "Inquisitor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "inquisitor.n.02"
+        }
+      ],
+      "definition": "an official of the ecclesiastical court of the Inquisition"
+    },
+    {
+      "lemma": "inquisitorial",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "inquisitor.n.02",
+          "via_synset": "inquisitorial.s.01"
+        }
+      ],
+      "definition": "marked by inquisitive interest; especially suggestive of an ecclesiastical inquisitor; ; - Waldo Frank"
+    },
+    {
+      "lemma": "inspector general",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "inspector_general.n.01"
+        }
+      ],
+      "definition": "a military officer responsible for investigations"
+    },
+    {
+      "lemma": "internal revenue agent",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bureaucrat.n.01",
+          "via_synset": "tax_collector.n.01"
+        }
+      ],
+      "definition": "someone who collects taxes for the government"
+    },
+    {
+      "lemma": "internuncio",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "internuncio.n.01"
+        }
+      ],
+      "definition": "(Roman Catholic Church) a diplomatic representative of the Pope ranking below a nuncio"
+    },
+    {
+      "lemma": "invalidate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "invalidator.n.01",
+          "via_synset": "invalidate.v.01"
+        }
+      ],
+      "definition": "declare invalid"
+    },
+    {
+      "lemma": "invalidator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "invalidator.n.01"
+        }
+      ],
+      "definition": "an official who can invalidate or nullify"
+    },
+    {
+      "lemma": "iron fist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.n.01",
+          "via_synset": "iron_fist.n.01"
+        }
+      ],
+      "definition": "rigorous or ruthless control"
+    },
+    {
+      "lemma": "journeyman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "craftsman.n.03"
+        }
+      ],
+      "definition": "a skilled worker who practices some trade or handicraft"
+    },
+    {
+      "lemma": "judge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "judge.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "adjudicator.n.01",
+          "via_synset": "judge.n.01"
+        }
+      ],
+      "definition": "a public official authorized to decide questions brought before a court of justice"
+    },
+    {
+      "lemma": "judge",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "judge.n.01",
+          "via_synset": "judge.v.05"
+        }
+      ],
+      "definition": "put on trial or hear a case and sit as the judge at the trial of"
+    },
+    {
+      "lemma": "judge advocate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "commissioned_officer.n.01",
+          "via_synset": "judge_advocate.n.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "staff_officer.n.01",
+          "via_synset": "judge_advocate.n.02"
+        }
+      ],
+      "definition": "an officer assigned to the judge advocate general"
+    },
+    {
+      "lemma": "judge advocate general",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "commissioned_officer.n.01",
+          "via_synset": "judge_advocate_general.n.01"
+        }
+      ],
+      "definition": "the senior legal advisor to a branch of the military"
+    },
+    {
+      "lemma": "judgeship",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "judge.n.01",
+          "via_synset": "judgeship.n.01"
+        }
+      ],
+      "definition": "the position of judge"
+    },
+    {
+      "lemma": "judicial",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "judge.n.01",
+          "via_synset": "judicial.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "judge.n.01",
+          "via_synset": "judicial.a.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "judge.n.01",
+          "via_synset": "judicial.a.03"
+        }
+      ],
+      "definition": "decreed by or proceeding from a court of justice"
+    },
+    {
+      "lemma": "jurisprudence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "judge.n.01",
+          "via_synset": "law.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "judge.n.01",
+          "via_synset": "jurisprudence.n.01"
+        }
+      ],
+      "definition": "the collection of rules imposed by authority"
+    },
+    {
+      "lemma": "jurist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "judge.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "adjudicator.n.01",
+          "via_synset": "judge.n.01"
+        }
+      ],
+      "definition": "a public official authorized to decide questions brought before a court of justice"
+    },
+    {
+      "lemma": "justice",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "judge.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "adjudicator.n.01",
+          "via_synset": "judge.n.01"
+        }
+      ],
+      "definition": "a public official authorized to decide questions brought before a court of justice"
+    },
+    {
+      "lemma": "justice of the peace",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "magistrate.n.01",
+          "via_synset": "justice_of_the_peace.n.01"
+        }
+      ],
+      "definition": "a local magistrate with limited powers"
+    },
+    {
+      "lemma": "justiciar",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "judge.n.01",
+          "via_synset": "justiciar.n.01"
+        }
+      ],
+      "definition": "formerly a high judicial officer"
+    },
+    {
+      "lemma": "justiciary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "judge.n.01",
+          "via_synset": "justiciar.n.01"
+        }
+      ],
+      "definition": "formerly a high judicial officer"
+    },
+    {
+      "lemma": "Kennan",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "kennan.n.01"
+        }
+      ],
+      "definition": "United States diplomat who recommended a policy of containment in dealing with Soviet aggression (1904-2005)"
+    },
+    {
+      "lemma": "laissez passer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "permission.n.01",
+          "via_synset": "pass.n.06"
+        }
+      ],
+      "definition": "a document indicating permission to do something without restrictions"
+    },
+    {
+      "lemma": "lame duck",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "elected_official.n.01",
+          "via_synset": "lame_duck.n.01"
+        }
+      ],
+      "definition": "an elected official still in office but not slated to continue"
+    },
+    {
+      "lemma": "laminator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "laminator.n.01"
+        }
+      ],
+      "definition": "a person who makes laminates (especially plastic laminates)"
+    },
+    {
+      "lemma": "lance corporal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "noncommissioned_officer.n.01",
+          "via_synset": "lance_corporal.n.01"
+        }
+      ],
+      "definition": "an enlisted man in the marine corps ranking above a private first class and below a corporal"
+    },
+    {
+      "lemma": "leatherneck",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "marine.n.01"
+        }
+      ],
+      "definition": "a member of the United States Marine Corps"
+    },
+    {
+      "lemma": "leave",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "permission.n.01",
+          "via_synset": "leave.n.02"
+        }
+      ],
+      "definition": "permission to do something"
+    },
+    {
+      "lemma": "lens maker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "optician.n.01"
+        }
+      ],
+      "definition": "a worker who makes glasses for remedying defects of vision"
+    },
+    {
+      "lemma": "license",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "licenser.n.01",
+          "via_synset": "license.v.01"
+        }
+      ],
+      "definition": "authorize officially"
+    },
+    {
+      "lemma": "licenser",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "licenser.n.01"
+        }
+      ],
+      "definition": "an official who can issue a license or give authoritative permission (especially one who licenses publications)"
+    },
+    {
+      "lemma": "lieutenant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_military_officer.n.01",
+          "via_synset": "lieutenant.n.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_naval_officer.n.01",
+          "via_synset": "lieutenant.n.04"
+        }
+      ],
+      "definition": "a commissioned military officer"
+    },
+    {
+      "lemma": "lieutenant commander",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_naval_officer.n.01",
+          "via_synset": "lieutenant_commander.n.01"
+        }
+      ],
+      "definition": "a commissioned officer in the Navy ranking above a lieutenant and below a commander"
+    },
+    {
+      "lemma": "lieutenant governor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "elected_official.n.01",
+          "via_synset": "lieutenant_governor.n.01"
+        }
+      ],
+      "definition": "an elected official serving as deputy to the governor of a state of the United States"
+    },
+    {
+      "lemma": "lieutenant JG",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_naval_officer.n.01",
+          "via_synset": "lieutenant_junior_grade.n.01"
+        }
+      ],
+      "definition": "an officer holding a commissioned rank in the United States Navy or United States Coast Guard; below lieutenant and above ensign"
+    },
+    {
+      "lemma": "lieutenant junior grade",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_naval_officer.n.01",
+          "via_synset": "lieutenant_junior_grade.n.01"
+        }
+      ],
+      "definition": "an officer holding a commissioned rank in the United States Navy or United States Coast Guard; below lieutenant and above ensign"
+    },
+    {
+      "lemma": "line judge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "football_official.n.01",
+          "via_synset": "line_judge.n.01"
+        }
+      ],
+      "definition": "football official who assists the referee by keeping track of the official time during the game"
+    },
+    {
+      "lemma": "line officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "commissioned_officer.n.01",
+          "via_synset": "line_officer.n.01"
+        }
+      ],
+      "definition": "a commissioned officer with combat units (not a staff officer or a supply officer)"
+    },
+    {
+      "lemma": "lineman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "electrician.n.01"
+        }
+      ],
+      "definition": "a person who installs or repairs electrical or telephone lines"
+    },
+    {
+      "lemma": "linesman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.02",
+          "via_synset": "linesman.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "electrician.n.01"
+        }
+      ],
+      "definition": "official (in tennis, soccer, football, etc.) who assists the referee in some way (especially by watching for out of bounds or offside)"
+    },
+    {
+      "lemma": "lister",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "tax_assessor.n.01",
+          "via_synset": "lister.n.02"
+        }
+      ],
+      "definition": "assessor who makes out the tax lists"
+    },
+    {
+      "lemma": "lobsterman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "lobsterman.n.01"
+        }
+      ],
+      "definition": "a person whose occupation is catching lobsters"
+    },
+    {
+      "lemma": "lockkeeper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "lockmaster.n.01"
+        }
+      ],
+      "definition": "a worker in charge of a lock (on a canal)"
+    },
+    {
+      "lemma": "lockman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "lockmaster.n.01"
+        }
+      ],
+      "definition": "a worker in charge of a lock (on a canal)"
+    },
+    {
+      "lemma": "lockmaster",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "lockmaster.n.01"
+        }
+      ],
+      "definition": "a worker in charge of a lock (on a canal)"
+    },
+    {
+      "lemma": "lord",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "lordship.n.02",
+          "via_synset": "overlord.n.01"
+        }
+      ],
+      "definition": "a person who has general authority over others"
+    },
+    {
+      "lemma": "lordship",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "authority.n.01",
+          "via_synset": "lordship.n.02"
+        }
+      ],
+      "definition": "the authority of a lord"
+    },
+    {
+      "lemma": "mace",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "macebearer.n.01"
+        }
+      ],
+      "definition": "an official who carries a mace of office"
+    },
+    {
+      "lemma": "macebearer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "macebearer.n.01"
+        }
+      ],
+      "definition": "an official who carries a mace of office"
+    },
+    {
+      "lemma": "macer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "macebearer.n.01"
+        }
+      ],
+      "definition": "an official who carries a mace of office"
+    },
+    {
+      "lemma": "machine gunner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "artilleryman.n.01"
+        }
+      ],
+      "definition": "a serviceman in the artillery"
+    },
+    {
+      "lemma": "magisterial",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "magistrate.n.01",
+          "via_synset": "magisterial.a.01"
+        }
+      ],
+      "definition": "of or relating to a magistrate"
+    },
+    {
+      "lemma": "magistrate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "judge.n.01",
+          "via_synset": "magistrate.n.01"
+        }
+      ],
+      "definition": "a lay judge or civil authority who administers the law (especially one who conducts a court dealing with minor offenses)"
+    },
+    {
+      "lemma": "major",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_military_officer.n.01",
+          "via_synset": "major.n.01"
+        }
+      ],
+      "definition": "a commissioned military officer in the United States Army or Air Force or Marines; below lieutenant colonel and above captain"
+    },
+    {
+      "lemma": "man",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "serviceman.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "serviceman.n.01"
+        }
+      ],
+      "definition": "someone who serves in the armed forces; a member of a military force"
+    },
+    {
+      "lemma": "mandarin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "mandarin.n.03"
+        }
+      ],
+      "definition": "any high government official or bureaucrat"
+    },
+    {
+      "lemma": "Marine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "marine.n.01"
+        }
+      ],
+      "definition": "a member of the United States Marine Corps"
+    },
+    {
+      "lemma": "marshal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_military_officer.n.01",
+          "via_synset": "marshal.n.02"
+        }
+      ],
+      "definition": "(in some countries) a military officer of highest rank"
+    },
+    {
+      "lemma": "marshall",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_military_officer.n.01",
+          "via_synset": "marshal.n.02"
+        }
+      ],
+      "definition": "(in some countries) a military officer of highest rank"
+    },
+    {
+      "lemma": "master sergeant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "sergeant.n.01",
+          "via_synset": "master_sergeant.n.01"
+        }
+      ],
+      "definition": "a senior noncommissioned officer in the Army or Marines"
+    },
+    {
+      "lemma": "master-at-arms",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "petty_officer.n.01",
+          "via_synset": "master-at-arms.n.01"
+        }
+      ],
+      "definition": "the senior petty officer; responsible for discipline aboard ship"
+    },
+    {
+      "lemma": "mender",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "mender.n.01"
+        }
+      ],
+      "definition": "a skilled worker who mends or repairs things"
+    },
+    {
+      "lemma": "metalworker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "smith.n.10"
+        }
+      ],
+      "definition": "someone who works metal (especially by hammering it when it is hot and malleable)"
+    },
+    {
+      "lemma": "military adviser",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "military_adviser.n.01"
+        }
+      ],
+      "definition": "a military officer who serves as an adviser to the troops of an allied nation"
+    },
+    {
+      "lemma": "military advisor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "military_adviser.n.01"
+        }
+      ],
+      "definition": "a military officer who serves as an adviser to the troops of an allied nation"
+    },
+    {
+      "lemma": "military man",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "serviceman.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "serviceman.n.01"
+        }
+      ],
+      "definition": "someone who serves in the armed forces; a member of a military force"
+    },
+    {
+      "lemma": "military officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "military_officer.n.01"
+        }
+      ],
+      "definition": "any person in the armed services who holds a position of authority or command"
+    },
+    {
+      "lemma": "military personnel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "serviceman.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "serviceman.n.01"
+        }
+      ],
+      "definition": "someone who serves in the armed forces; a member of a military force"
+    },
+    {
+      "lemma": "military volunteer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "volunteer.n.01"
+        }
+      ],
+      "definition": "(military) a person who freely enlists for service"
+    },
+    {
+      "lemma": "minister",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "minister.n.03"
+        }
+      ],
+      "definition": "a diplomat representing one government to another; ranks below ambassador"
+    },
+    {
+      "lemma": "minister plenipotentiary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "envoy.n.01"
+        }
+      ],
+      "definition": "a diplomat having less authority than an ambassador"
+    },
+    {
+      "lemma": "ministerial",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "minister.n.03",
+          "via_synset": "ministerial.a.02"
+        }
+      ],
+      "definition": "of or relating to a government minister or ministry"
+    },
+    {
+      "lemma": "minter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "coiner.n.03"
+        }
+      ],
+      "definition": "a skilled worker who coins or stamps money"
+    },
+    {
+      "lemma": "moneyer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "coiner.n.03"
+        }
+      ],
+      "definition": "a skilled worker who coins or stamps money"
+    },
+    {
+      "lemma": "mortician",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "mortician.n.01"
+        }
+      ],
+      "definition": "one whose business is the management of funerals"
+    },
+    {
+      "lemma": "mounter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "mounter.n.01"
+        }
+      ],
+      "definition": "a skilled worker who mounts pictures or jewels etc."
+    },
+    {
+      "lemma": "muscle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "authority.n.01",
+          "via_synset": "muscle.n.04"
+        }
+      ],
+      "definition": "authority or power or force (especially when used in a coercive way)"
+    },
+    {
+      "lemma": "naval commander",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "naval_officer.n.01",
+          "via_synset": "naval_commander.n.01"
+        }
+      ],
+      "definition": "naval officer in command of a fleet of warships"
+    },
+    {
+      "lemma": "naval officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "naval_officer.n.01"
+        }
+      ],
+      "definition": "an officer in the navy"
+    },
+    {
+      "lemma": "navy man",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "bluejacket.n.01"
+        }
+      ],
+      "definition": "a serviceman in the navy"
+    },
+    {
+      "lemma": "noncom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "noncommissioned_officer.n.01"
+        }
+      ],
+      "definition": "a military officer appointed from enlisted personnel"
+    },
+    {
+      "lemma": "noncombatant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "noncombatant.n.01"
+        }
+      ],
+      "definition": "a member of the armed forces who does not participate in combat (e.g. a chaplain or surgeon)"
+    },
+    {
+      "lemma": "noncommissioned officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "noncommissioned_officer.n.01"
+        }
+      ],
+      "definition": "a military officer appointed from enlisted personnel"
+    },
+    {
+      "lemma": "notarize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "notary.n.01",
+          "via_synset": "notarize.v.01"
+        }
+      ],
+      "definition": "authenticate as a notary"
+    },
+    {
+      "lemma": "notary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "notary.n.01"
+        }
+      ],
+      "definition": "someone legally empowered to witness signatures and certify a document's validity and to take depositions"
+    },
+    {
+      "lemma": "notary public",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "notary.n.01"
+        }
+      ],
+      "definition": "someone legally empowered to witness signatures and certify a document's validity and to take depositions"
+    },
+    {
+      "lemma": "noticer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "noticer.n.02"
+        }
+      ],
+      "definition": "someone who gives formal notice"
+    },
+    {
+      "lemma": "nullifier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "invalidator.n.01"
+        }
+      ],
+      "definition": "an official who can invalidate or nullify"
+    },
+    {
+      "lemma": "nullify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "invalidator.n.01",
+          "via_synset": "invalidate.v.01"
+        }
+      ],
+      "definition": "declare invalid"
+    },
+    {
+      "lemma": "nuncio",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "nuncio.n.01"
+        }
+      ],
+      "definition": "(Roman Catholic Church) a diplomatic representative of the Pope having ambassadorial status"
+    },
+    {
+      "lemma": "occupier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "occupier.n.02"
+        }
+      ],
+      "definition": "a member of a military force who is residing in a conquered foreign country"
+    },
+    {
+      "lemma": "oceanaut",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "aquanaut.n.02"
+        }
+      ],
+      "definition": "a skilled worker who can live in underwater installations and participate in scientific research"
+    },
+    {
+      "lemma": "office",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "official.a.02",
+          "via_synset": "agency.n.01"
+        },
+        {
+          "step": "11_pertainym",
+          "relation": "pertainym",
+          "from_synset": "official.a.02",
+          "via_synset": "agency.n.01"
+        }
+      ],
+      "definition": "an administrative unit of government"
+    },
+    {
+      "lemma": "office-bearer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "incumbent.n.01",
+          "via_synset": "office-bearer.n.01"
+        }
+      ],
+      "definition": "the person who holds an office"
+    },
+    {
+      "lemma": "officeholder",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "incumbent.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "officeholder.n.01"
+        }
+      ],
+      "definition": "the official who holds an office"
+    },
+    {
+      "lemma": "officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "military_officer.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "officeholder.n.01"
+        }
+      ],
+      "definition": "any person in the armed services who holds a position of authority or command"
+    },
+    {
+      "lemma": "officer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "officer.v.01"
+        }
+      ],
+      "definition": "direct or command as an officer"
+    },
+    {
+      "lemma": "official",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "official.a.02",
+          "via_synset": "official.a.02"
+        }
+      ],
+      "definition": "of or relating to an office"
+    },
+    {
+      "lemma": "official",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "official.n.01",
+          "via_synset": "official.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "official.n.02",
+          "via_synset": "official.n.02"
+        }
+      ],
+      "definition": "a worker who holds or is invested with an office"
+    },
+    {
+      "lemma": "officialdom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "official.n.01",
+          "via_synset": "government_officials.n.01"
+        }
+      ],
+      "definition": "people elected or appointed to administer a government"
+    },
+    {
+      "lemma": "oilman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "oilman.n.02"
+        }
+      ],
+      "definition": "a worker who produces or sells petroleum"
+    },
+    {
+      "lemma": "optician",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "optician.n.01"
+        }
+      ],
+      "definition": "a worker who makes glasses for remedying defects of vision"
+    },
+    {
+      "lemma": "ordinary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "judge.n.01",
+          "via_synset": "ordinary.n.01"
+        }
+      ],
+      "definition": "a judge of a probate court"
+    },
+    {
+      "lemma": "P.O.",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "noncommissioned_officer.n.01",
+          "via_synset": "petty_officer.n.01"
+        }
+      ],
+      "definition": "a noncommissioned officer in the Navy or Coast Guard with a rank comparable to sergeant in the Army"
+    },
+    {
+      "lemma": "painter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "painter.n.02"
+        }
+      ],
+      "definition": "a worker who is employed to cover objects with paint"
+    },
+    {
+      "lemma": "papal nuncio",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "nuncio.n.01"
+        }
+      ],
+      "definition": "(Roman Catholic Church) a diplomatic representative of the Pope having ambassadorial status"
+    },
+    {
+      "lemma": "paper-pusher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bureaucrat.n.01",
+          "via_synset": "paper-pusher.n.01"
+        }
+      ],
+      "definition": "a clerk or bureaucrat who does paperwork"
+    },
+    {
+      "lemma": "pass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "permission.n.01",
+          "via_synset": "pass.n.06"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "permission.n.01",
+          "via_synset": "pass.n.05"
+        }
+      ],
+      "definition": "a document indicating permission to do something without restrictions"
+    },
+    {
+      "lemma": "passport",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "permission.n.01",
+          "via_synset": "pass.n.05"
+        }
+      ],
+      "definition": "any authorization to pass or go somewhere"
+    },
+    {
+      "lemma": "perfecter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "perfecter.n.01"
+        }
+      ],
+      "definition": "a skilled worker who perfects something"
+    },
+    {
+      "lemma": "permission",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "authority.n.06",
+          "via_synset": "permission.n.01"
+        }
+      ],
+      "definition": "approval to do something"
+    },
+    {
+      "lemma": "persona grata",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "persona_grata.n.01"
+        }
+      ],
+      "definition": "a diplomat who is acceptable to the government to which he is sent"
+    },
+    {
+      "lemma": "persona non grata",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "persona_non_grata.n.01"
+        }
+      ],
+      "definition": "a diplomat who is unacceptable to the government to which he is sent"
+    },
+    {
+      "lemma": "petty officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "noncommissioned_officer.n.01",
+          "via_synset": "petty_officer.n.01"
+        }
+      ],
+      "definition": "a noncommissioned officer in the Navy or Coast Guard with a rank comparable to sergeant in the Army"
+    },
+    {
+      "lemma": "phlebotomist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "phlebotomist.n.01"
+        }
+      ],
+      "definition": "someone who practices phlebotomy"
+    },
+    {
+      "lemma": "piano tuner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "tuner.n.01"
+        }
+      ],
+      "definition": "someone who tunes pianos"
+    },
+    {
+      "lemma": "Pilate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "procurator.n.02",
+          "via_synset": "pilate.n.01"
+        }
+      ],
+      "definition": "the Roman procurator of Judea who ordered that Jesus be crucified (died in AD 36)"
+    },
+    {
+      "lemma": "placeman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "appointee.n.01",
+          "via_synset": "placeman.n.01"
+        }
+      ],
+      "definition": "a disparaging term for an appointee"
+    },
+    {
+      "lemma": "placeseeker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "appointee.n.01",
+          "via_synset": "placeman.n.01"
+        }
+      ],
+      "definition": "a disparaging term for an appointee"
+    },
+    {
+      "lemma": "plaiter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "plaiter.n.01"
+        }
+      ],
+      "definition": "someone who plaits (hair or fabric etc.)"
+    },
+    {
+      "lemma": "plasterer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "plasterer.n.01"
+        }
+      ],
+      "definition": "a worker skilled in applying plaster"
+    },
+    {
+      "lemma": "plater",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "plater.n.01"
+        }
+      ],
+      "definition": "a skilled worker who coats articles with a film of metal (usually silver or gold)"
+    },
+    {
+      "lemma": "plenipotentiary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "diplomat.n.01",
+          "via_synset": "plenipotentiary.n.01"
+        }
+      ],
+      "definition": "a diplomat who is fully authorized to represent his or her government"
+    },
+    {
+      "lemma": "PO",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "noncommissioned_officer.n.01",
+          "via_synset": "petty_officer.n.01"
+        }
+      ],
+      "definition": "a noncommissioned officer in the Navy or Coast Guard with a rank comparable to sergeant in the Army"
+    },
+    {
+      "lemma": "political commissar",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "commissar.n.01"
+        }
+      ],
+      "definition": "an official of the Communist Party who was assigned to teach party principles to a military unit"
+    },
+    {
+      "lemma": "Pontius Pilate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "procurator.n.02",
+          "via_synset": "pilate.n.01"
+        }
+      ],
+      "definition": "the Roman procurator of Judea who ordered that Jesus be crucified (died in AD 36)"
+    },
+    {
+      "lemma": "postmaster general",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "postmaster_general.n.01"
+        }
+      ],
+      "definition": "the official in charge of the national postal service"
+    },
+    {
+      "lemma": "Potemkin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "potemkin.n.01"
+        }
+      ],
+      "definition": "a Russian officer and politician who was a favorite of Catherine II and in 1762 helped her to seize power; when she visited the Crimea in 1787 he gave the order for sham villages to be built (1739-1791)"
+    },
+    {
+      "lemma": "potency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "authority.n.01",
+          "via_synset": "authority.n.01"
+        }
+      ],
+      "definition": "the power or right to give orders or make decisions"
+    },
+    {
+      "lemma": "potent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "authority.n.01",
+          "via_synset": "potent.s.02"
+        }
+      ],
+      "definition": "having or wielding force or authority"
+    },
+    {
+      "lemma": "Potyokin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "potemkin.n.01"
+        }
+      ],
+      "definition": "a Russian officer and politician who was a favorite of Catherine II and in 1762 helped her to seize power; when she visited the Crimea in 1787 he gave the order for sham villages to be built (1739-1791)"
+    },
+    {
+      "lemma": "power of appointment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "authority.n.01",
+          "via_synset": "power_of_appointment.n.01"
+        }
+      ],
+      "definition": "authority given (in a will or deed) by a donor to a donee to appoint the beneficiaries of the donor's property"
+    },
+    {
+      "lemma": "power worker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "power_worker.n.01"
+        }
+      ],
+      "definition": "a worker at a power station"
+    },
+    {
+      "lemma": "power-station worker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "power_worker.n.01"
+        }
+      ],
+      "definition": "a worker at a power station"
+    },
+    {
+      "lemma": "praetor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "judge.n.01",
+          "via_synset": "praetor.n.01"
+        }
+      ],
+      "definition": "an annually elected magistrate of the ancient Roman Republic"
+    },
+    {
+      "lemma": "praetorial",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "praetor.n.01",
+          "via_synset": "praetorian.a.01"
+        }
+      ],
+      "definition": "of or relating to a Roman praetor"
+    },
+    {
+      "lemma": "praetorian",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "praetor.n.01",
+          "via_synset": "praetorian.a.01"
+        }
+      ],
+      "definition": "of or relating to a Roman praetor"
+    },
+    {
+      "lemma": "praetorship",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "praetor.n.01",
+          "via_synset": "praetorship.n.01"
+        }
+      ],
+      "definition": "the office of praetor"
+    },
+    {
+      "lemma": "presbyter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "elder.n.03",
+          "via_synset": "presbyter.n.01"
+        }
+      ],
+      "definition": "an elder in the Presbyterian Church"
+    },
+    {
+      "lemma": "preserver",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "refinisher.n.01"
+        }
+      ],
+      "definition": "a skilled worker who is employed to restore or refinish buildings or antique furniture"
+    },
+    {
+      "lemma": "pressman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "printer.n.01"
+        }
+      ],
+      "definition": "someone whose occupation is printing"
+    },
+    {
+      "lemma": "pretor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "judge.n.01",
+          "via_synset": "praetor.n.01"
+        }
+      ],
+      "definition": "an annually elected magistrate of the ancient Roman Republic"
+    },
+    {
+      "lemma": "pretorial",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "praetor.n.01",
+          "via_synset": "praetorian.a.01"
+        }
+      ],
+      "definition": "of or relating to a Roman praetor"
+    },
+    {
+      "lemma": "pretorian",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "praetor.n.01",
+          "via_synset": "praetorian.a.01"
+        }
+      ],
+      "definition": "of or relating to a Roman praetor"
+    },
+    {
+      "lemma": "printer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "printer.n.01"
+        }
+      ],
+      "definition": "someone whose occupation is printing"
+    },
+    {
+      "lemma": "probation officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "officeholder.n.01",
+          "via_synset": "probation_officer.n.01"
+        }
+      ],
+      "definition": "the officer of the court who supervises probationers"
+    },
+    {
+      "lemma": "proconsul",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "proconsul.n.01"
+        }
+      ],
+      "definition": "an official in a modern colony who has considerable administrative power"
+    },
+    {
+      "lemma": "proconsular",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "proconsul.n.01",
+          "via_synset": "proconsular.a.01"
+        }
+      ],
+      "definition": "of or relating to or typical of a proconsul"
+    },
+    {
+      "lemma": "proconsulship",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "proconsul.n.01",
+          "via_synset": "proconsulship.n.01"
+        }
+      ],
+      "definition": "the position of proconsul"
+    },
+    {
+      "lemma": "procurator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bureaucrat.n.01",
+          "via_synset": "procurator.n.02"
+        }
+      ],
+      "definition": "(ancient Rome) someone employed by the Roman Emperor to manage finance and taxes"
+    },
+    {
+      "lemma": "projectionist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "projectionist.n.01"
+        }
+      ],
+      "definition": "the person who operates the projector in a movie house"
+    },
+    {
+      "lemma": "prosecute",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "prosecutor.n.01",
+          "via_synset": "prosecute.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "prosecutor.n.01",
+          "via_synset": "prosecute.v.02"
+        }
+      ],
+      "definition": "conduct a prosecution in a court of law"
+    },
+    {
+      "lemma": "prosecuting attorney",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "prosecutor.n.01"
+        }
+      ],
+      "definition": "a government official who conducts criminal prosecutions on behalf of the state"
+    },
+    {
+      "lemma": "prosecuting officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "prosecutor.n.01"
+        }
+      ],
+      "definition": "a government official who conducts criminal prosecutions on behalf of the state"
+    },
+    {
+      "lemma": "prosecutor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "prosecutor.n.01"
+        }
+      ],
+      "definition": "a government official who conducts criminal prosecutions on behalf of the state"
+    },
+    {
+      "lemma": "Protestant deacon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "church_officer.n.01",
+          "via_synset": "deacon.n.01"
+        }
+      ],
+      "definition": "a Protestant layman who assists the minister"
+    },
+    {
+      "lemma": "provincial",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "provincial.n.01"
+        }
+      ],
+      "definition": "(Roman Catholic Church) an official in charge of an ecclesiastical province acting under the superior general of a religious order"
+    },
+    {
+      "lemma": "public prosecutor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "prosecutor.n.01"
+        }
+      ],
+      "definition": "a government official who conducts criminal prosecutions on behalf of the state"
+    },
+    {
+      "lemma": "qadi",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "judge.n.01",
+          "via_synset": "qadi.n.01"
+        }
+      ],
+      "definition": "an Islamic judge"
+    },
+    {
+      "lemma": "quaestor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "quaestor.n.01"
+        }
+      ],
+      "definition": "any of several public officials of ancient Rome (usually in charge of finance and administration)"
+    },
+    {
+      "lemma": "quartermaster",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "army_officer.n.01",
+          "via_synset": "quartermaster.n.01"
+        }
+      ],
+      "definition": "an army officer who provides clothing and subsistence for troops"
+    },
+    {
+      "lemma": "quartermaster general",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "staff_officer.n.01",
+          "via_synset": "quartermaster_general.n.01"
+        }
+      ],
+      "definition": "a staff officer in charge of supplies for a whole army"
+    },
+    {
+      "lemma": "ranger",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "fire_warden.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "commando.n.01"
+        }
+      ],
+      "definition": "an official who is responsible for managing and protecting an area of forest"
+    },
+    {
+      "lemma": "rank",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ranker.n.01",
+          "via_synset": "rank.v.01"
+        }
+      ],
+      "definition": "take or have a position relative to others"
+    },
+    {
+      "lemma": "ranker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "commissioned_officer.n.01",
+          "via_synset": "ranker.n.01"
+        }
+      ],
+      "definition": "a commissioned officer who has been promoted from enlisted status"
+    },
+    {
+      "lemma": "rapporteur",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "registrar.n.03",
+          "via_synset": "rapporteur.n.01"
+        }
+      ],
+      "definition": "a recorder appointed by a committee to prepare reports of the meetings"
+    },
+    {
+      "lemma": "record",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "registrar.n.03",
+          "via_synset": "record.v.01"
+        }
+      ],
+      "definition": "make a record of; set down in permanent form"
+    },
+    {
+      "lemma": "record-keeper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "registrar.n.03"
+        }
+      ],
+      "definition": "someone responsible for keeping records"
+    },
+    {
+      "lemma": "recorder",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "registrar.n.03"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "judge.n.01",
+          "via_synset": "recorder.n.03"
+        }
+      ],
+      "definition": "someone responsible for keeping records"
+    },
+    {
+      "lemma": "recruit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "recruiter.n.02",
+          "via_synset": "recruit.v.03"
+        }
+      ],
+      "definition": "cause to assemble or enlist in the military"
+    },
+    {
+      "lemma": "recruiter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "recruiter.n.02"
+        }
+      ],
+      "definition": "an official who enlists personnel for military service"
+    },
+    {
+      "lemma": "recruiting-sergeant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "recruiter.n.02",
+          "via_synset": "recruiting-sergeant.n.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "sergeant.n.01",
+          "via_synset": "recruiting-sergeant.n.01"
+        }
+      ],
+      "definition": "a sergeant deputized to enlist recruits"
+    },
+    {
+      "lemma": "ref",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.02",
+          "via_synset": "referee.n.01"
+        }
+      ],
+      "definition": "(sports) the chief official (as in boxing or American football) who is expected to ensure fair play"
+    },
+    {
+      "lemma": "refer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "referee.n.01",
+          "via_synset": "refer.v.04"
+        }
+      ],
+      "definition": "send or direct for treatment, information, or a decision"
+    },
+    {
+      "lemma": "referee",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.02",
+          "via_synset": "referee.n.01"
+        }
+      ],
+      "definition": "(sports) the chief official (as in boxing or American football) who is expected to ensure fair play"
+    },
+    {
+      "lemma": "referee",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "referee.n.01",
+          "via_synset": "referee.v.01"
+        }
+      ],
+      "definition": "be a referee or umpire in a sports competition"
+    },
+    {
+      "lemma": "refiner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "refiner.n.01"
+        }
+      ],
+      "definition": "one whose work is to refine a specific thing"
+    },
+    {
+      "lemma": "refinisher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "refinisher.n.01"
+        }
+      ],
+      "definition": "a skilled worker who is employed to restore or refinish buildings or antique furniture"
+    },
+    {
+      "lemma": "registrar",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "registrar.n.03"
+        }
+      ],
+      "definition": "someone responsible for keeping records"
+    },
+    {
+      "lemma": "regulate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "regulator.n.02",
+          "via_synset": "regulate.v.02"
+        }
+      ],
+      "definition": "bring into conformity with rules or principles or usage; impose regulations"
+    },
+    {
+      "lemma": "regulator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "regulator.n.02"
+        }
+      ],
+      "definition": "an official responsible for control and supervision of a particular activity or area of public interest"
+    },
+    {
+      "lemma": "rein",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "control.n.01",
+          "via_synset": "rein.n.02"
+        }
+      ],
+      "definition": "any means of control"
+    },
+    {
+      "lemma": "renovator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "refinisher.n.01"
+        }
+      ],
+      "definition": "a skilled worker who is employed to restore or refinish buildings or antique furniture"
+    },
+    {
+      "lemma": "repairer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "mender.n.01"
+        }
+      ],
+      "definition": "a skilled worker who mends or repairs things"
+    },
+    {
+      "lemma": "restorer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "refinisher.n.01"
+        }
+      ],
+      "definition": "a skilled worker who is employed to restore or refinish buildings or antique furniture"
+    },
+    {
+      "lemma": "returning officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "returning_officer.n.01"
+        }
+      ],
+      "definition": "the official in each electorate who holds the election and returns the results"
+    },
+    {
+      "lemma": "riveter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "riveter.n.01"
+        }
+      ],
+      "definition": "a worker who inserts and hammers rivets"
+    },
+    {
+      "lemma": "rivetter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "riveter.n.01"
+        }
+      ],
+      "definition": "a worker who inserts and hammers rivets"
+    },
+    {
+      "lemma": "router",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "router.n.01"
+        }
+      ],
+      "definition": "a worker who routes shipments for distribution and delivery"
+    },
+    {
+      "lemma": "SACEUR",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "commanding_officer.n.01",
+          "via_synset": "supreme_allied_commander_europe.n.01"
+        }
+      ],
+      "definition": "commanding officer of ACE; NATO's senior military commander in Europe"
+    },
+    {
+      "lemma": "SACLANT",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "commanding_officer.n.01",
+          "via_synset": "supreme_allied_commander_atlantic.n.01"
+        }
+      ],
+      "definition": "commanding officer of ACLANT; a general of the United States Army nominated by the President of the United States and approved by the North Atlantic Council"
+    },
+    {
+      "lemma": "sacristan",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "church_officer.n.01",
+          "via_synset": "sexton.n.02"
+        }
+      ],
+      "definition": "an officer of the church who is in charge of sacred objects"
+    },
+    {
+      "lemma": "sailor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "sailor.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "bluejacket.n.01"
+        }
+      ],
+      "definition": "any member of a ship's crew"
+    },
+    {
+      "lemma": "sailor boy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "bluejacket.n.01"
+        }
+      ],
+      "definition": "a serviceman in the navy"
+    },
+    {
+      "lemma": "sanction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "authority.n.06",
+          "via_synset": "authority.n.06"
+        }
+      ],
+      "definition": "official permission or approval"
+    },
+    {
+      "lemma": "sanction",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "authority.n.06",
+          "via_synset": "sanction.v.02"
+        }
+      ],
+      "definition": "give authority or permission to"
+    },
+    {
+      "lemma": "say-so",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "authority.n.01",
+          "via_synset": "authority.n.01"
+        }
+      ],
+      "definition": "the power or right to give orders or make decisions"
+    },
+    {
+      "lemma": "score",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "scorekeeper.n.01",
+          "via_synset": "grade.v.03"
+        }
+      ],
+      "definition": "assign a grade or rank to, according to one's evaluation"
+    },
+    {
+      "lemma": "scorekeeper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.02",
+          "via_synset": "scorekeeper.n.01"
+        }
+      ],
+      "definition": "an official who records the score during the progress of a game"
+    },
+    {
+      "lemma": "scorer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.02",
+          "via_synset": "scorekeeper.n.01"
+        }
+      ],
+      "definition": "an official who records the score during the progress of a game"
+    },
+    {
+      "lemma": "SCPO",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "petty_officer.n.01",
+          "via_synset": "senior_chief_petty_officer.n.01"
+        }
+      ],
+      "definition": "a senior noncommissioned officer in the Navy or Coast Guard with a rank comparable to master sergeant in the Army"
+    },
+    {
+      "lemma": "seal",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sealer.n.02",
+          "via_synset": "seal.v.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sealer.n.02",
+          "via_synset": "seal.v.02"
+        }
+      ],
+      "definition": "affix a seal to"
+    },
+    {
+      "lemma": "sealer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "sealer.n.02"
+        }
+      ],
+      "definition": "an official who affixes a seal to a document"
+    },
+    {
+      "lemma": "search",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "searcher.n.02",
+          "via_synset": "search.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "searcher.n.02",
+          "via_synset": "search.v.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "searcher.n.02",
+          "via_synset": "search.v.01"
+        }
+      ],
+      "definition": "search or seek"
+    },
+    {
+      "lemma": "searcher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "searcher.n.02"
+        }
+      ],
+      "definition": "a customs official whose job is to search baggage or goods or vehicles for contraband or dutiable items"
+    },
+    {
+      "lemma": "selectman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "elected_official.n.01",
+          "via_synset": "selectman.n.01"
+        }
+      ],
+      "definition": "an elected member of a board of officials who run New England towns"
+    },
+    {
+      "lemma": "selectwoman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "elected_official.n.01",
+          "via_synset": "selectwoman.n.01"
+        }
+      ],
+      "definition": "an elected member of a board of officials who run New England towns"
+    },
+    {
+      "lemma": "senior chief petty officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "petty_officer.n.01",
+          "via_synset": "senior_chief_petty_officer.n.01"
+        }
+      ],
+      "definition": "a senior noncommissioned officer in the Navy or Coast Guard with a rank comparable to master sergeant in the Army"
+    },
+    {
+      "lemma": "senior master sergeant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "sergeant.n.01",
+          "via_synset": "senior_master_sergeant.n.01"
+        }
+      ],
+      "definition": "a senior noncommissioned officer in the Air Force with a rank comparable to master sergeant in the Army"
+    },
+    {
+      "lemma": "sergeant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "noncommissioned_officer.n.01",
+          "via_synset": "sergeant.n.01"
+        }
+      ],
+      "definition": "any of several noncommissioned officer ranks in the Army or Air Force or Marines ranking above a corporal"
+    },
+    {
+      "lemma": "sergeant at arms",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "officeholder.n.01",
+          "via_synset": "sergeant_at_arms.n.01"
+        }
+      ],
+      "definition": "an officer (as of a legislature or court) who maintains order and executes commands"
+    },
+    {
+      "lemma": "sergeant first class",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "sergeant.n.01",
+          "via_synset": "first_sergeant.n.01"
+        }
+      ],
+      "definition": "a sergeant in the Army above the rank of staff sergeant and below master sergeant"
+    },
+    {
+      "lemma": "sergeant major",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "sergeant.n.01",
+          "via_synset": "sergeant_major.n.01"
+        }
+      ],
+      "definition": "a noncommissioned officer serving as chief administrative officer of a headquarters unit of the Army"
+    },
+    {
+      "lemma": "serjeant-at-arms",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "officeholder.n.01",
+          "via_synset": "sergeant_at_arms.n.01"
+        }
+      ],
+      "definition": "an officer (as of a legislature or court) who maintains order and executes commands"
+    },
+    {
+      "lemma": "serviceman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "serviceman.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "serviceman.n.01"
+        }
+      ],
+      "definition": "someone who serves in the armed forces; a member of a military force"
+    },
+    {
+      "lemma": "sexton",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "church_officer.n.01",
+          "via_synset": "sexton.n.02"
+        }
+      ],
+      "definition": "an officer of the church who is in charge of sacred objects"
+    },
+    {
+      "lemma": "shearer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "shearer.n.03"
+        }
+      ],
+      "definition": "a skilled worker who shears the wool off of sheep or other animals"
+    },
+    {
+      "lemma": "shipboard soldier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "marine.n.01"
+        }
+      ],
+      "definition": "a member of the United States Marine Corps"
+    },
+    {
+      "lemma": "side judge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "football_official.n.01",
+          "via_synset": "side_judge.n.01"
+        }
+      ],
+      "definition": "a football official"
+    },
+    {
+      "lemma": "skilled worker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "official.n.01",
+          "via_synset": "skilled_worker.n.01"
+        }
+      ],
+      "definition": "a worker who has acquired special skills"
+    },
+    {
+      "lemma": "skilled workman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "official.n.01",
+          "via_synset": "skilled_worker.n.01"
+        }
+      ],
+      "definition": "a worker who has acquired special skills"
+    },
+    {
+      "lemma": "skinner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "skinner.n.04"
+        }
+      ],
+      "definition": "a person who prepares or deals in animal skins"
+    },
+    {
+      "lemma": "skipper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_naval_officer.n.01",
+          "via_synset": "captain.n.02"
+        }
+      ],
+      "definition": "the naval officer in command of a military ship"
+    },
+    {
+      "lemma": "slaughterer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "butcher.n.03"
+        }
+      ],
+      "definition": "a person who slaughters or dresses meat for market"
+    },
+    {
+      "lemma": "smith",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "smith.n.09"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "smith.n.10"
+        }
+      ],
+      "definition": "someone who works at something specified"
+    },
+    {
+      "lemma": "SMSgt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "sergeant.n.01",
+          "via_synset": "senior_master_sergeant.n.01"
+        }
+      ],
+      "definition": "a senior noncommissioned officer in the Air Force with a rank comparable to master sergeant in the Army"
+    },
+    {
+      "lemma": "sovereignty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "authority.n.01",
+          "via_synset": "sovereignty.n.03"
+        }
+      ],
+      "definition": "the authority of a state to govern another state"
+    },
+    {
+      "lemma": "staff officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "commissioned_officer.n.01",
+          "via_synset": "staff_officer.n.01"
+        }
+      ],
+      "definition": "a commissioned officer assigned to a military commander's staff"
+    },
+    {
+      "lemma": "staff sergeant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "sergeant.n.01",
+          "via_synset": "staff_sergeant.n.01"
+        }
+      ],
+      "definition": "a noncommissioned officer ranking above corporal and below sergeant first class in the Army or Marines or above airman 1st class in the Air Force"
+    },
+    {
+      "lemma": "starter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.02",
+          "via_synset": "starter.n.03"
+        }
+      ],
+      "definition": "the official who signals the beginning of a race or competition"
+    },
+    {
+      "lemma": "state attorney",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "prosecutor.n.01",
+          "via_synset": "state's_attorney.n.01"
+        }
+      ],
+      "definition": "a prosecuting attorney for a state"
+    },
+    {
+      "lemma": "state's attorney",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "prosecutor.n.01",
+          "via_synset": "state's_attorney.n.01"
+        }
+      ],
+      "definition": "a prosecuting attorney for a state"
+    },
+    {
+      "lemma": "stipendiary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "magistrate.n.01",
+          "via_synset": "stipendiary.n.01"
+        }
+      ],
+      "definition": "(United Kingdom) a paid magistrate (appointed by the Home Secretary) dealing with police cases"
+    },
+    {
+      "lemma": "stipendiary magistrate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "magistrate.n.01",
+          "via_synset": "stipendiary.n.01"
+        }
+      ],
+      "definition": "(United Kingdom) a paid magistrate (appointed by the Home Secretary) dealing with police cases"
+    },
+    {
+      "lemma": "striper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "striper.n.01"
+        }
+      ],
+      "definition": "a serviceman who wears stripes on the uniform to indicate rank or years of service"
+    },
+    {
+      "lemma": "subaltern",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "commissioned_military_officer.n.01",
+          "via_synset": "subaltern.n.01"
+        }
+      ],
+      "definition": "a British commissioned army officer below the rank of captain"
+    },
+    {
+      "lemma": "supply officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "commissioned_officer.n.01",
+          "via_synset": "supply_officer.n.01"
+        }
+      ],
+      "definition": "a commissioned officer responsible for logistics"
+    },
+    {
+      "lemma": "Supreme Allied Commander Atlantic",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "commanding_officer.n.01",
+          "via_synset": "supreme_allied_commander_atlantic.n.01"
+        }
+      ],
+      "definition": "commanding officer of ACLANT; a general of the United States Army nominated by the President of the United States and approved by the North Atlantic Council"
+    },
+    {
+      "lemma": "Supreme Allied Commander Europe",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "commanding_officer.n.01",
+          "via_synset": "supreme_allied_commander_europe.n.01"
+        }
+      ],
+      "definition": "commanding officer of ACE; NATO's senior military commander in Europe"
+    },
+    {
+      "lemma": "tax",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "taxer.n.01",
+          "via_synset": "tax.v.01"
+        }
+      ],
+      "definition": "levy a tax on"
+    },
+    {
+      "lemma": "tax assessor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bureaucrat.n.01",
+          "via_synset": "tax_assessor.n.01"
+        }
+      ],
+      "definition": "an official who evaluates property for the purpose of taxing it"
+    },
+    {
+      "lemma": "tax collector",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bureaucrat.n.01",
+          "via_synset": "tax_collector.n.01"
+        }
+      ],
+      "definition": "someone who collects taxes for the government"
+    },
+    {
+      "lemma": "taxer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bureaucrat.n.01",
+          "via_synset": "taxer.n.01"
+        }
+      ],
+      "definition": "a bureaucrat who levies taxes"
+    },
+    {
+      "lemma": "taxman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bureaucrat.n.01",
+          "via_synset": "tax_collector.n.01"
+        }
+      ],
+      "definition": "someone who collects taxes for the government"
+    },
+    {
+      "lemma": "technical sergeant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "sergeant.n.01",
+          "via_synset": "technical_sergeant.n.01"
+        }
+      ],
+      "definition": "a noncommissioned officer ranking below a master sergeant in the air force or marines"
+    },
+    {
+      "lemma": "technician",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "technician.n.01"
+        }
+      ],
+      "definition": "someone whose occupation involves training in a specific technical process"
+    },
+    {
+      "lemma": "teller",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "teller.n.02"
+        }
+      ],
+      "definition": "an official appointed to count the votes (especially in legislative assembly)"
+    },
+    {
+      "lemma": "time",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "timekeeper.n.01",
+          "via_synset": "clock.v.01"
+        }
+      ],
+      "definition": "measure the time or duration of an event or action or the person who performs an action in a certain period of time"
+    },
+    {
+      "lemma": "timekeeper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.02",
+          "via_synset": "timekeeper.n.01"
+        }
+      ],
+      "definition": "(sports) an official who keeps track of the time elapsed"
+    },
+    {
+      "lemma": "timer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.02",
+          "via_synset": "timekeeper.n.01"
+        }
+      ],
+      "definition": "(sports) an official who keeps track of the time elapsed"
+    },
+    {
+      "lemma": "town clerk",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "town_clerk.n.01"
+        }
+      ],
+      "definition": "the official who keeps a town's records"
+    },
+    {
+      "lemma": "trained worker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "official.n.01",
+          "via_synset": "skilled_worker.n.01"
+        }
+      ],
+      "definition": "a worker who has acquired special skills"
+    },
+    {
+      "lemma": "trial judge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "judge.n.01",
+          "via_synset": "trial_judge.n.01"
+        }
+      ],
+      "definition": "a judge in a trial court"
+    },
+    {
+      "lemma": "trier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "judge.n.01",
+          "via_synset": "trier.n.01"
+        }
+      ],
+      "definition": "one (as a judge) who examines and settles a case"
+    },
+    {
+      "lemma": "trustbuster",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "agent.n.05",
+          "via_synset": "trustbuster.n.01"
+        }
+      ],
+      "definition": "a federal agent who engages in trust busting"
+    },
+    {
+      "lemma": "try",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "trier.n.01",
+          "via_synset": "judge.v.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "trier.n.01",
+          "via_synset": "hear.v.03"
+        }
+      ],
+      "definition": "put on trial or hear a case and sit as the judge at the trial of"
+    },
+    {
+      "lemma": "tuner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "tuner.n.01"
+        }
+      ],
+      "definition": "someone who tunes pianos"
+    },
+    {
+      "lemma": "turner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "turner.n.06"
+        }
+      ],
+      "definition": "a lathe operator"
+    },
+    {
+      "lemma": "turtler",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "turtler.n.01"
+        }
+      ],
+      "definition": "someone whose occupation is hunting turtles"
+    },
+    {
+      "lemma": "ump",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.02",
+          "via_synset": "umpire.n.01"
+        }
+      ],
+      "definition": "an official at a baseball game"
+    },
+    {
+      "lemma": "umpire",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.02",
+          "via_synset": "umpire.n.01"
+        }
+      ],
+      "definition": "an official at a baseball game"
+    },
+    {
+      "lemma": "umpire",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "umpire.n.01",
+          "via_synset": "referee.v.01"
+        }
+      ],
+      "definition": "be a referee or umpire in a sports competition"
+    },
+    {
+      "lemma": "undertaker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "mortician.n.01"
+        }
+      ],
+      "definition": "one whose business is the management of funerals"
+    },
+    {
+      "lemma": "usher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "usher.n.02"
+        }
+      ],
+      "definition": "an official stationed at the entrance of a courtroom or legislative chamber"
+    },
+    {
+      "lemma": "usherette",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "usher.n.02",
+          "via_synset": "usherette.n.01"
+        }
+      ],
+      "definition": "a female usher"
+    },
+    {
+      "lemma": "verger",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "church_officer.n.01",
+          "via_synset": "verger.n.01"
+        }
+      ],
+      "definition": "a church officer who takes care of the interior of the building and acts as an attendant (carries the verge) during ceremonies"
+    },
+    {
+      "lemma": "vestryman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "church_officer.n.01",
+          "via_synset": "vestryman.n.01"
+        }
+      ],
+      "definition": "a man who is a member of a church vestry"
+    },
+    {
+      "lemma": "vestrywoman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "church_officer.n.01",
+          "via_synset": "vestrywoman.n.01"
+        }
+      ],
+      "definition": "a woman who is a member of a church vestry"
+    },
+    {
+      "lemma": "vet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "veteran.n.02"
+        }
+      ],
+      "definition": "a person who has served in the armed forces"
+    },
+    {
+      "lemma": "veteran",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "veteran.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "veteran.n.01"
+        }
+      ],
+      "definition": "a person who has served in the armed forces"
+    },
+    {
+      "lemma": "veteran soldier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "veteran.n.01"
+        }
+      ],
+      "definition": "a serviceman who has seen considerable active service"
+    },
+    {
+      "lemma": "vizier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "vizier.n.01"
+        }
+      ],
+      "definition": "a high official in a Muslim government (especially in the Ottoman Empire)"
+    },
+    {
+      "lemma": "viziership",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "vizier.n.01",
+          "via_synset": "viziership.n.01"
+        }
+      ],
+      "definition": "the position of vizier"
+    },
+    {
+      "lemma": "voicer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "voicer.n.01"
+        }
+      ],
+      "definition": "someone who regulates the tone of organ pipes"
+    },
+    {
+      "lemma": "void",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "invalidator.n.01",
+          "via_synset": "invalidate.v.01"
+        }
+      ],
+      "definition": "declare invalid"
+    },
+    {
+      "lemma": "voider",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "invalidator.n.01"
+        }
+      ],
+      "definition": "an official who can invalidate or nullify"
+    },
+    {
+      "lemma": "voluntary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "volunteer.n.01"
+        }
+      ],
+      "definition": "(military) a person who freely enlists for service"
+    },
+    {
+      "lemma": "volunteer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "serviceman.n.01",
+          "via_synset": "volunteer.n.01"
+        }
+      ],
+      "definition": "(military) a person who freely enlists for service"
+    },
+    {
+      "lemma": "vote counter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "teller.n.02"
+        }
+      ],
+      "definition": "an official appointed to count the votes (especially in legislative assembly)"
+    },
+    {
+      "lemma": "vulcaniser",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "vulcanizer.n.01"
+        }
+      ],
+      "definition": "someone who vulcanizes rubber to improve its strength and resiliency"
+    },
+    {
+      "lemma": "vulcanizer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "vulcanizer.n.01"
+        }
+      ],
+      "definition": "someone who vulcanizes rubber to improve its strength and resiliency"
+    },
+    {
+      "lemma": "wall-paperer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "wallpaperer.n.01"
+        }
+      ],
+      "definition": "a worker who papers walls"
+    },
+    {
+      "lemma": "wallpaperer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "wallpaperer.n.01"
+        }
+      ],
+      "definition": "a worker who papers walls"
+    },
+    {
+      "lemma": "warrant officer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "military_officer.n.01",
+          "via_synset": "warrant_officer.n.01"
+        }
+      ],
+      "definition": "holds rank by virtue of a warrant"
+    },
+    {
+      "lemma": "weigh",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "weigher.n.01",
+          "via_synset": "weigh.v.03"
+        }
+      ],
+      "definition": "determine the weight of"
+    },
+    {
+      "lemma": "weigher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "official.n.01",
+          "via_synset": "weigher.n.01"
+        }
+      ],
+      "definition": "an official who weighs and records the weight"
+    },
+    {
+      "lemma": "wing commander",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "commanding_officer.n.01",
+          "via_synset": "wing_commander.n.01"
+        }
+      ],
+      "definition": "(RAF rank) one who is next below a group captain"
+    },
+    {
+      "lemma": "wireman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "wireman.n.01"
+        }
+      ],
+      "definition": "a worker who installs and repairs electric wiring"
+    },
+    {
+      "lemma": "wirer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "skilled_worker.n.01",
+          "via_synset": "wireman.n.01"
+        }
+      ],
+      "definition": "a worker who installs and repairs electric wiring"
+    }
+  ]
+}

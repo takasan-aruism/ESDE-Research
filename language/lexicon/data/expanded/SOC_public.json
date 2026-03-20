@@ -1,0 +1,1629 @@
+{
+  "atom_id": "SOC.public",
+  "category": "SOC",
+  "seed_count": 6,
+  "total_keys": 107,
+  "pos_counts": {
+    "adj": 22,
+    "n": 84,
+    "v": 1
+  },
+  "source_counts": {
+    "0_seed": 14,
+    "7_similar_to": 12,
+    "3_hyponym_d1": 1,
+    "6_derivational": 9,
+    "8_also_see": 4,
+    "10_sibling": 74
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 12,
+      "words": [
+        "public(adj)",
+        "populace(n)",
+        "public(n)",
+        "world(n)",
+        "common(adj)",
+        "plebeian(adj)",
+        "vulgar(adj)",
+        "unwashed(adj)",
+        "divided(adj)",
+        "divided up(adj)",
+        "shared(adj)",
+        "shared out(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 1,
+      "words": [
+        "admass(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 7,
+      "words": [
+        "commonness(n)",
+        "commonality(n)",
+        "plebeian(n)",
+        "pleb(n)",
+        "vulgarize(v)",
+        "common(n)",
+        "publicity(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 10,
+      "words": [
+        "lowborn(adj)",
+        "communal(adj)",
+        "distributed(adj)",
+        "in the public eye(adj)",
+        "national(adj)",
+        "state-supported(adj)",
+        "semipublic(adj)",
+        "unexclusive(adj)",
+        "unrestricted(adj)",
+        "open(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 3,
+      "words": [
+        "joint(adj)",
+        "overt(adj)",
+        "exoteric(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 74,
+      "words": [
+        "blood(n)",
+        "clientele(n)",
+        "patronage(n)",
+        "business(n)",
+        "age group(n)",
+        "age bracket(n)",
+        "cohort(n)",
+        "peoples(n)",
+        "class(n)",
+        "stratum(n)",
+        "social class(n)",
+        "socio-economic class(n)",
+        "enemy(n)",
+        "mentally retarded(n)",
+        "retarded(n)",
+        "developmentally challenged(n)",
+        "damned(n)",
+        "retreated(n)",
+        "nation(n)",
+        "land(n)",
+        "country(n)",
+        "network army(n)",
+        "free(n)",
+        "free people(n)",
+        "baffled(n)",
+        "wounded(n)",
+        "maimed(n)",
+        "uninitiate(n)",
+        "chosen people(n)",
+        "coevals(n)",
+        "contemporaries(n)",
+        "generation(n)",
+        "tradespeople(n)",
+        "dead(n)",
+        "episcopacy(n)",
+        "episcopate(n)",
+        "pocket(n)",
+        "brave(n)",
+        "homebound(n)",
+        "migration(n)",
+        "business people(n)",
+        "businesspeople(n)",
+        "rank and file(n)",
+        "doomed(n)",
+        "lost(n)",
+        "timid(n)",
+        "cautious(n)",
+        "womankind(n)",
+        "disabled(n)",
+        "handicapped(n)",
+        "smart money(n)",
+        "ancients(n)",
+        "living(n)",
+        "folk(n)",
+        "folks(n)",
+        "common people(n)",
+        "initiate(n)",
+        "enlightened(n)",
+        "deaf(n)",
+        "peanut gallery(n)",
+        "defeated(n)",
+        "discomfited(n)",
+        "unconfessed(n)",
+        "lobby(n)",
+        "blind(n)",
+        "poor people(n)",
+        "poor(n)",
+        "sick(n)",
+        "rich people(n)",
+        "rich(n)",
+        "population(n)",
+        "unemployed people(n)",
+        "unemployed(n)",
+        "nationality(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "admass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "populace.n.01",
+          "via_synset": "admass.n.01"
+        }
+      ],
+      "definition": "the segment of the public that is easily influenced by mass media (chiefly British)"
+    },
+    {
+      "lemma": "age bracket",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "age_group.n.01"
+        }
+      ],
+      "definition": "a group of people having approximately the same age"
+    },
+    {
+      "lemma": "age group",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "age_group.n.01"
+        }
+      ],
+      "definition": "a group of people having approximately the same age"
+    },
+    {
+      "lemma": "ancients",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "ancients.n.01"
+        }
+      ],
+      "definition": "people who lived in times long past (especially during the historical period before the fall of the Roman Empire in western Europe)"
+    },
+    {
+      "lemma": "baffled",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "baffled.n.01"
+        }
+      ],
+      "definition": "people who are frustrated and perplexed"
+    },
+    {
+      "lemma": "blind",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "blind.n.01"
+        }
+      ],
+      "definition": "people who have severe visual impairments, considered as a group"
+    },
+    {
+      "lemma": "blood",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "blood.n.05"
+        }
+      ],
+      "definition": "people viewed as members of a group"
+    },
+    {
+      "lemma": "brave",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "brave.n.02"
+        }
+      ],
+      "definition": "people who are brave"
+    },
+    {
+      "lemma": "business",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "clientele.n.01"
+        }
+      ],
+      "definition": "customers collectively"
+    },
+    {
+      "lemma": "business people",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "business_people.n.01"
+        }
+      ],
+      "definition": "people who transact business (especially business executives)"
+    },
+    {
+      "lemma": "businesspeople",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "business_people.n.01"
+        }
+      ],
+      "definition": "people who transact business (especially business executives)"
+    },
+    {
+      "lemma": "cautious",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "timid.n.01"
+        }
+      ],
+      "definition": "people who are fearful and cautious"
+    },
+    {
+      "lemma": "chosen people",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "chosen_people.n.01"
+        }
+      ],
+      "definition": "any people believing themselves to be chosen by God"
+    },
+    {
+      "lemma": "class",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "class.n.03"
+        }
+      ],
+      "definition": "people having the same social, economic, or educational status"
+    },
+    {
+      "lemma": "clientele",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "clientele.n.01"
+        }
+      ],
+      "definition": "customers collectively"
+    },
+    {
+      "lemma": "coevals",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "coevals.n.01"
+        }
+      ],
+      "definition": "all the people living at the same time or of approximately the same age"
+    },
+    {
+      "lemma": "cohort",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "age_group.n.01"
+        }
+      ],
+      "definition": "a group of people having approximately the same age"
+    },
+    {
+      "lemma": "common",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "common.s.04",
+          "via_synset": "common.s.04"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "common.a.01",
+          "via_synset": "common.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "public.s.01",
+          "via_synset": "common.a.01"
+        }
+      ],
+      "definition": "of or associated with the great masses of people"
+    },
+    {
+      "lemma": "common",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "common.a.01",
+          "via_synset": "park.n.02"
+        }
+      ],
+      "definition": "a piece of open land for recreational use in an urban area"
+    },
+    {
+      "lemma": "common people",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "folk.n.01"
+        }
+      ],
+      "definition": "people in general (often used in the plural)"
+    },
+    {
+      "lemma": "commonality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "common.s.04",
+          "via_synset": "commonalty.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "common.a.01",
+          "via_synset": "commonality.n.02"
+        }
+      ],
+      "definition": "a class composed of persons lacking clerical or noble rank"
+    },
+    {
+      "lemma": "commonness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "common.s.04",
+          "via_synset": "commonality.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "common.a.01",
+          "via_synset": "commonality.n.02"
+        }
+      ],
+      "definition": "sharing of common attributes"
+    },
+    {
+      "lemma": "communal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "common.a.01",
+          "via_synset": "communal.s.01"
+        }
+      ],
+      "definition": "for or by a group rather than individuals; - Paul Roche"
+    },
+    {
+      "lemma": "contemporaries",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "coevals.n.01"
+        }
+      ],
+      "definition": "all the people living at the same time or of approximately the same age"
+    },
+    {
+      "lemma": "country",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "nation.n.02"
+        }
+      ],
+      "definition": "the people who live in a nation or country"
+    },
+    {
+      "lemma": "damned",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "damned.n.01"
+        }
+      ],
+      "definition": "people who are condemned to eternal punishment"
+    },
+    {
+      "lemma": "dead",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "dead.n.01"
+        }
+      ],
+      "definition": "people who are no longer living"
+    },
+    {
+      "lemma": "deaf",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "deaf.n.01"
+        }
+      ],
+      "definition": "people who have severe hearing impairments"
+    },
+    {
+      "lemma": "defeated",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "defeated.n.01"
+        }
+      ],
+      "definition": "people who are defeated"
+    },
+    {
+      "lemma": "developmentally challenged",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "mentally_retarded.n.01"
+        }
+      ],
+      "definition": "people collectively who are mentally retarded"
+    },
+    {
+      "lemma": "disabled",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "disabled.n.01"
+        }
+      ],
+      "definition": "people collectively who are crippled or otherwise physically handicapped"
+    },
+    {
+      "lemma": "discomfited",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "defeated.n.01"
+        }
+      ],
+      "definition": "people who are defeated"
+    },
+    {
+      "lemma": "distributed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "divided.s.02",
+          "via_synset": "distributed.a.01"
+        }
+      ],
+      "definition": "spread out or scattered about or divided up"
+    },
+    {
+      "lemma": "divided",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "divided.s.02",
+          "via_synset": "divided.s.02"
+        }
+      ],
+      "definition": "distributed in portions (often equal) on the basis of a plan or purpose"
+    },
+    {
+      "lemma": "divided up",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "divided.s.02",
+          "via_synset": "divided.s.02"
+        }
+      ],
+      "definition": "distributed in portions (often equal) on the basis of a plan or purpose"
+    },
+    {
+      "lemma": "doomed",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "doomed.n.01"
+        }
+      ],
+      "definition": "people who are destined to die soon"
+    },
+    {
+      "lemma": "enemy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "enemy.n.03"
+        }
+      ],
+      "definition": "any hostile group of people"
+    },
+    {
+      "lemma": "enlightened",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "initiate.n.03"
+        }
+      ],
+      "definition": "people who have been introduced to the mysteries of some field or activity"
+    },
+    {
+      "lemma": "episcopacy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "episcopacy.n.01"
+        }
+      ],
+      "definition": "the collective body of bishops"
+    },
+    {
+      "lemma": "episcopate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "episcopacy.n.01"
+        }
+      ],
+      "definition": "the collective body of bishops"
+    },
+    {
+      "lemma": "exoteric",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "public.a.01",
+          "via_synset": "exoteric.a.01"
+        }
+      ],
+      "definition": "suitable for the general public"
+    },
+    {
+      "lemma": "folk",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "folk.n.01"
+        }
+      ],
+      "definition": "people in general (often used in the plural)"
+    },
+    {
+      "lemma": "folks",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "folk.n.01"
+        }
+      ],
+      "definition": "people in general (often used in the plural)"
+    },
+    {
+      "lemma": "free",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "free.n.01"
+        }
+      ],
+      "definition": "people who are free"
+    },
+    {
+      "lemma": "free people",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "free.n.01"
+        }
+      ],
+      "definition": "people who are free"
+    },
+    {
+      "lemma": "generation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "coevals.n.01"
+        }
+      ],
+      "definition": "all the people living at the same time or of approximately the same age"
+    },
+    {
+      "lemma": "handicapped",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "disabled.n.01"
+        }
+      ],
+      "definition": "people collectively who are crippled or otherwise physically handicapped"
+    },
+    {
+      "lemma": "homebound",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "homebound.n.01"
+        }
+      ],
+      "definition": "people who are confined to their homes"
+    },
+    {
+      "lemma": "in the public eye",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "public.a.01",
+          "via_synset": "in_the_public_eye.s.01"
+        }
+      ],
+      "definition": "of great interest to the public"
+    },
+    {
+      "lemma": "initiate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "initiate.n.03"
+        }
+      ],
+      "definition": "people who have been introduced to the mysteries of some field or activity"
+    },
+    {
+      "lemma": "joint",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "common.a.01",
+          "via_synset": "joint.a.01"
+        }
+      ],
+      "definition": "united or combined"
+    },
+    {
+      "lemma": "land",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "nation.n.02"
+        }
+      ],
+      "definition": "the people who live in a nation or country"
+    },
+    {
+      "lemma": "living",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "living.n.02"
+        }
+      ],
+      "definition": "people who are still living"
+    },
+    {
+      "lemma": "lobby",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "lobby.n.02"
+        }
+      ],
+      "definition": "the people who support some common cause or business or principle or sectional interest"
+    },
+    {
+      "lemma": "lost",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "doomed.n.01"
+        }
+      ],
+      "definition": "people who are destined to die soon"
+    },
+    {
+      "lemma": "lowborn",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "common.s.04",
+          "via_synset": "lowborn.a.01"
+        }
+      ],
+      "definition": "of humble birth or origins"
+    },
+    {
+      "lemma": "maimed",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "wounded.n.01"
+        }
+      ],
+      "definition": "people who are wounded"
+    },
+    {
+      "lemma": "mentally retarded",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "mentally_retarded.n.01"
+        }
+      ],
+      "definition": "people collectively who are mentally retarded"
+    },
+    {
+      "lemma": "migration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "migration.n.02"
+        }
+      ],
+      "definition": "a group of people migrating together (especially in some given time period)"
+    },
+    {
+      "lemma": "nation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "nation.n.02"
+        }
+      ],
+      "definition": "the people who live in a nation or country"
+    },
+    {
+      "lemma": "national",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "public.a.01",
+          "via_synset": "national.s.01"
+        }
+      ],
+      "definition": "owned or maintained for the public by the national government"
+    },
+    {
+      "lemma": "nationality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "nationality.n.01"
+        }
+      ],
+      "definition": "people having common origins or traditions and often comprising a nation"
+    },
+    {
+      "lemma": "network army",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "network_army.n.01"
+        }
+      ],
+      "definition": "a group of like-minded people united by the internet; a new kind of social or political of business group that may exert broad influence on a shared concern"
+    },
+    {
+      "lemma": "open",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "public.a.01",
+          "via_synset": "open.s.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "public.a.01",
+          "via_synset": "overt.a.01"
+        }
+      ],
+      "definition": "open to or in view of all"
+    },
+    {
+      "lemma": "overt",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "public.a.01",
+          "via_synset": "overt.a.01"
+        }
+      ],
+      "definition": "open and observable; not secret or hidden"
+    },
+    {
+      "lemma": "patronage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "clientele.n.01"
+        }
+      ],
+      "definition": "customers collectively"
+    },
+    {
+      "lemma": "peanut gallery",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "peanut_gallery.n.01"
+        }
+      ],
+      "definition": "(figurative) people whose criticisms are regarded as irrelevant or insignificant (resembling uneducated people who throw peanuts on the stage to express displeasure with a performance)"
+    },
+    {
+      "lemma": "peoples",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "peoples.n.01"
+        }
+      ],
+      "definition": "the human beings of a particular nation or community or ethnic group"
+    },
+    {
+      "lemma": "pleb",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "common.s.04",
+          "via_synset": "plebeian.n.01"
+        }
+      ],
+      "definition": "one of the common people"
+    },
+    {
+      "lemma": "plebeian",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "common.s.04",
+          "via_synset": "common.s.04"
+        }
+      ],
+      "definition": "of or associated with the great masses of people"
+    },
+    {
+      "lemma": "plebeian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "common.s.04",
+          "via_synset": "plebeian.n.01"
+        }
+      ],
+      "definition": "one of the common people"
+    },
+    {
+      "lemma": "pocket",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "pocket.n.07"
+        }
+      ],
+      "definition": "a small isolated group of people"
+    },
+    {
+      "lemma": "poor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "poor_people.n.01"
+        }
+      ],
+      "definition": "people without possessions or wealth (considered as a group)"
+    },
+    {
+      "lemma": "poor people",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "poor_people.n.01"
+        }
+      ],
+      "definition": "people without possessions or wealth (considered as a group)"
+    },
+    {
+      "lemma": "populace",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "populace.n.01",
+          "via_synset": "populace.n.01"
+        }
+      ],
+      "definition": "people in general considered as a whole"
+    },
+    {
+      "lemma": "population",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "population.n.01"
+        }
+      ],
+      "definition": "the people who inhabit a territory or state"
+    },
+    {
+      "lemma": "public",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "public.a.01",
+          "via_synset": "public.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "public.s.01",
+          "via_synset": "public.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "common.a.01",
+          "via_synset": "public.s.01"
+        }
+      ],
+      "definition": "not private; open to or concerning the people as a whole"
+    },
+    {
+      "lemma": "public",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "populace.n.01",
+          "via_synset": "populace.n.01"
+        }
+      ],
+      "definition": "people in general considered as a whole"
+    },
+    {
+      "lemma": "publicity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "public.a.01",
+          "via_synset": "publicity.n.02"
+        }
+      ],
+      "definition": "the quality of being open to public view"
+    },
+    {
+      "lemma": "rank and file",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "rank_and_file.n.02"
+        }
+      ],
+      "definition": "people who constitute the main body of any group"
+    },
+    {
+      "lemma": "retarded",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "mentally_retarded.n.01"
+        }
+      ],
+      "definition": "people collectively who are mentally retarded"
+    },
+    {
+      "lemma": "retreated",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "retreated.n.01"
+        }
+      ],
+      "definition": "people who have retreated"
+    },
+    {
+      "lemma": "rich",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "rich_people.n.01"
+        }
+      ],
+      "definition": "people who have possessions and wealth (considered as a group)"
+    },
+    {
+      "lemma": "rich people",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "rich_people.n.01"
+        }
+      ],
+      "definition": "people who have possessions and wealth (considered as a group)"
+    },
+    {
+      "lemma": "semipublic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "public.a.01",
+          "via_synset": "semipublic.s.01"
+        }
+      ],
+      "definition": "having some of the features of public institution"
+    },
+    {
+      "lemma": "shared",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "divided.s.02",
+          "via_synset": "divided.s.02"
+        }
+      ],
+      "definition": "distributed in portions (often equal) on the basis of a plan or purpose"
+    },
+    {
+      "lemma": "shared out",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "divided.s.02",
+          "via_synset": "divided.s.02"
+        }
+      ],
+      "definition": "distributed in portions (often equal) on the basis of a plan or purpose"
+    },
+    {
+      "lemma": "sick",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "sick.n.01"
+        }
+      ],
+      "definition": "people who are sick"
+    },
+    {
+      "lemma": "smart money",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "smart_money.n.03"
+        }
+      ],
+      "definition": "people who are highly experienced or who have inside information"
+    },
+    {
+      "lemma": "social class",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "class.n.03"
+        }
+      ],
+      "definition": "people having the same social, economic, or educational status"
+    },
+    {
+      "lemma": "socio-economic class",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "class.n.03"
+        }
+      ],
+      "definition": "people having the same social, economic, or educational status"
+    },
+    {
+      "lemma": "state-supported",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "public.a.01",
+          "via_synset": "state-supported.s.01"
+        }
+      ],
+      "definition": "supported and operated by the government of a state"
+    },
+    {
+      "lemma": "stratum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "class.n.03"
+        }
+      ],
+      "definition": "people having the same social, economic, or educational status"
+    },
+    {
+      "lemma": "timid",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "timid.n.01"
+        }
+      ],
+      "definition": "people who are fearful and cautious"
+    },
+    {
+      "lemma": "tradespeople",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "tradespeople.n.01"
+        }
+      ],
+      "definition": "people engaged in trade"
+    },
+    {
+      "lemma": "unconfessed",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "unconfessed.n.01"
+        }
+      ],
+      "definition": "people who have not confessed"
+    },
+    {
+      "lemma": "unemployed",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "unemployed_people.n.01"
+        }
+      ],
+      "definition": "people who are involuntarily out of work (considered as a group)"
+    },
+    {
+      "lemma": "unemployed people",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "unemployed_people.n.01"
+        }
+      ],
+      "definition": "people who are involuntarily out of work (considered as a group)"
+    },
+    {
+      "lemma": "unexclusive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "public.a.01",
+          "via_synset": "unexclusive.s.01"
+        }
+      ],
+      "definition": "accessible to all"
+    },
+    {
+      "lemma": "uninitiate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "uninitiate.n.01"
+        }
+      ],
+      "definition": "people who have not been introduced to the mysteries of some field or activity"
+    },
+    {
+      "lemma": "unrestricted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "public.a.01",
+          "via_synset": "unexclusive.s.01"
+        }
+      ],
+      "definition": "accessible to all"
+    },
+    {
+      "lemma": "unwashed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "common.s.04",
+          "via_synset": "common.s.04"
+        }
+      ],
+      "definition": "of or associated with the great masses of people"
+    },
+    {
+      "lemma": "vulgar",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "common.s.04",
+          "via_synset": "common.s.04"
+        }
+      ],
+      "definition": "of or associated with the great masses of people"
+    },
+    {
+      "lemma": "vulgarize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "common.s.04",
+          "via_synset": "popularize.v.01"
+        }
+      ],
+      "definition": "cater to popular taste to make popular and present to the general public; bring into general or common use"
+    },
+    {
+      "lemma": "womankind",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "womankind.n.01"
+        }
+      ],
+      "definition": "women as distinguished from men"
+    },
+    {
+      "lemma": "world",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "populace.n.01",
+          "via_synset": "populace.n.01"
+        }
+      ],
+      "definition": "people in general considered as a whole"
+    },
+    {
+      "lemma": "wounded",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "people.n.01",
+          "via_synset": "wounded.n.01"
+        }
+      ],
+      "definition": "people who are wounded"
+    }
+  ]
+}

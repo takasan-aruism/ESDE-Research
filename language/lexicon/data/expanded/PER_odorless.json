@@ -1,0 +1,209 @@
+{
+  "atom_id": "PER.odorless",
+  "category": "PER",
+  "seed_count": 3,
+  "total_keys": 7,
+  "pos_counts": {
+    "adj": 7
+  },
+  "source_counts": {
+    "0_seed": 5,
+    "7_similar_to": 5,
+    "9_antonym": 2
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 4,
+      "words": [
+        "odorless(adj)",
+        "odourless(adj)",
+        "inodorous(adj)",
+        "scentless(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "7_similar_to",
+      "added": 1,
+      "words": [
+        "non-aromatic(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 2,
+      "words": [
+        "odorous(adj)",
+        "scented(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "inodorous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "odorless.a.01",
+          "via_synset": "odorless.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "scentless.s.01",
+          "via_synset": "odorless.a.01"
+        }
+      ],
+      "definition": "having no odor"
+    },
+    {
+      "lemma": "non-aromatic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "odorless.a.01",
+          "via_synset": "non-aromatic.s.01"
+        }
+      ],
+      "definition": "not aromatic"
+    },
+    {
+      "lemma": "odorless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "odorless.a.01",
+          "via_synset": "odorless.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "scentless.s.01",
+          "via_synset": "odorless.a.01"
+        }
+      ],
+      "definition": "having no odor"
+    },
+    {
+      "lemma": "odorous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "odorless.a.01",
+          "via_synset": "odorous.a.01"
+        }
+      ],
+      "definition": "having odor or a characteristic odor"
+    },
+    {
+      "lemma": "odourless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "odorless.a.01",
+          "via_synset": "odorless.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "scentless.s.01",
+          "via_synset": "odorless.a.01"
+        }
+      ],
+      "definition": "having no odor"
+    },
+    {
+      "lemma": "scented",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "scentless.a.01",
+          "via_synset": "scented.a.01"
+        }
+      ],
+      "definition": "having the sense of smell"
+    },
+    {
+      "lemma": "scentless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "scentless.a.01",
+          "via_synset": "scentless.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "scentless.s.01",
+          "via_synset": "scentless.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "odorless.a.01",
+          "via_synset": "scentless.s.01"
+        }
+      ],
+      "definition": "lacking the sense of smell"
+    }
+  ]
+}

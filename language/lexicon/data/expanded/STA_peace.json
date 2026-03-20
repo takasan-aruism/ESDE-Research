@@ -1,0 +1,1205 @@
+{
+  "atom_id": "STA.peace",
+  "category": "STA",
+  "seed_count": 6,
+  "total_keys": 68,
+  "pos_counts": {
+    "n": 43,
+    "adj": 22,
+    "v": 3
+  },
+  "source_counts": {
+    "0_seed": 15,
+    "4_hyponym_d2": 2,
+    "6_derivational": 20,
+    "7_similar_to": 11,
+    "2_hypernym_d1": 9,
+    "10_sibling": 20,
+    "3_hyponym_d1": 10,
+    "5_hyponym_d3": 1,
+    "8_also_see": 5,
+    "9_antonym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 12,
+      "words": [
+        "peace(n)",
+        "peacefulness(n)",
+        "peace of mind(n)",
+        "repose(n)",
+        "serenity(n)",
+        "heartsease(n)",
+        "ataraxis(n)",
+        "peaceful(adj)",
+        "peaceable(adj)",
+        "passive(adj)",
+        "harmony(n)",
+        "harmoniousness(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 8,
+      "words": [
+        "concord(n)",
+        "concordance(n)",
+        "order(n)",
+        "tranquillity(n)",
+        "tranquility(n)",
+        "quietness(n)",
+        "quietude(n)",
+        "compatibility(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 10,
+      "words": [
+        "amity(n)",
+        "Pax Romana(n)",
+        "armistice(n)",
+        "cease-fire(n)",
+        "truce(n)",
+        "conciliation(n)",
+        "collective security(n)",
+        "congruity(n)",
+        "congruousness(n)",
+        "congruence(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 1,
+      "words": [
+        "peaceableness(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 1,
+      "words": [
+        "mollification(n)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 9,
+      "words": [
+        "pacify(v)",
+        "passiveness(n)",
+        "congruous(adj)",
+        "congruent(adj)",
+        "harmonical(adj)",
+        "harmonize(v)",
+        "harmonious(adj)",
+        "amiable(adj)",
+        "conciliate(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 9,
+      "words": [
+        "pacifist(adj)",
+        "pacifistic(adj)",
+        "dovish(adj)",
+        "pacific(adj)",
+        "halcyon(adj)",
+        "nonbelligerent(adj)",
+        "peace-loving(adj)",
+        "irenic(adj)",
+        "nonviolent(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 4,
+      "words": [
+        "amicable(adj)",
+        "quiet(adj)",
+        "unaggressive(adj)",
+        "nonaggressive(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "unpeaceful(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 13,
+      "words": [
+        "comity(n)",
+        "agreement(n)",
+        "accord(n)",
+        "civil order(n)",
+        "polity(n)",
+        "stability(n)",
+        "rule of law(n)",
+        "quiet(n)",
+        "easiness(n)",
+        "relaxation(n)",
+        "congenialness(n)",
+        "congeniality(n)",
+        "correspondence(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "accord",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "harmony.n.03",
+          "via_synset": "agreement.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "compatibility.n.02",
+          "via_synset": "accord.n.04"
+        }
+      ],
+      "definition": "harmony of people's opinions or actions or characters"
+    },
+    {
+      "lemma": "agreement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "harmony.n.03",
+          "via_synset": "agreement.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "compatibility.n.02",
+          "via_synset": "agreement.n.02"
+        }
+      ],
+      "definition": "harmony of people's opinions or actions or characters"
+    },
+    {
+      "lemma": "amiable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "amity.n.02",
+          "via_synset": "affable.s.01"
+        }
+      ],
+      "definition": "diffusing warmth and friendliness"
+    },
+    {
+      "lemma": "amicable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "peaceful.a.01",
+          "via_synset": "amicable.a.01"
+        }
+      ],
+      "definition": "characterized by friendship and good will"
+    },
+    {
+      "lemma": "amity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "peace.n.01",
+          "via_synset": "amity.n.02"
+        }
+      ],
+      "definition": "a state of friendship and cordiality"
+    },
+    {
+      "lemma": "armistice",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "peace.n.01",
+          "via_synset": "armistice.n.01"
+        }
+      ],
+      "definition": "a state of peace agreed to between opponents so they can discuss peace terms"
+    },
+    {
+      "lemma": "ataraxis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "peace.n.03",
+          "via_synset": "peace.n.03"
+        }
+      ],
+      "definition": "the absence of mental stress or anxiety"
+    },
+    {
+      "lemma": "cease-fire",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "peace.n.01",
+          "via_synset": "armistice.n.01"
+        }
+      ],
+      "definition": "a state of peace agreed to between opponents so they can discuss peace terms"
+    },
+    {
+      "lemma": "civil order",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "order.n.03",
+          "via_synset": "civil_order.n.01"
+        }
+      ],
+      "definition": "the form of government of a social organization"
+    },
+    {
+      "lemma": "collective security",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "peace.n.01",
+          "via_synset": "collective_security.n.01"
+        }
+      ],
+      "definition": "a system for international peace"
+    },
+    {
+      "lemma": "comity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "harmony.n.03",
+          "via_synset": "comity.n.01"
+        }
+      ],
+      "definition": "a state or atmosphere of harmony or mutual civility and respect"
+    },
+    {
+      "lemma": "compatibility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "harmony.n.01",
+          "via_synset": "compatibility.n.02"
+        }
+      ],
+      "definition": "capability of existing or performing in harmonious or congenial combination"
+    },
+    {
+      "lemma": "conciliate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "conciliation.n.01",
+          "via_synset": "pacify.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "conciliation.n.01",
+          "via_synset": "reconcile.v.03"
+        }
+      ],
+      "definition": "cause to be more favorably inclined; gain the good will of"
+    },
+    {
+      "lemma": "conciliation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "peace.n.01",
+          "via_synset": "conciliation.n.01"
+        }
+      ],
+      "definition": "the state of manifesting goodwill and cooperation after being reconciled"
+    },
+    {
+      "lemma": "concord",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "peace.n.02",
+          "via_synset": "harmony.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "order.n.03",
+          "via_synset": "harmony.n.03"
+        }
+      ],
+      "definition": "a harmonious state of things in general and of their properties (as of colors and sounds); congruity of parts with one another and with the whole"
+    },
+    {
+      "lemma": "concordance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "peace.n.02",
+          "via_synset": "harmony.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "order.n.03",
+          "via_synset": "harmony.n.03"
+        }
+      ],
+      "definition": "a harmonious state of things in general and of their properties (as of colors and sounds); congruity of parts with one another and with the whole"
+    },
+    {
+      "lemma": "congeniality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "compatibility.n.02",
+          "via_synset": "congenialness.n.01"
+        }
+      ],
+      "definition": "compatibility between persons"
+    },
+    {
+      "lemma": "congenialness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "compatibility.n.02",
+          "via_synset": "congenialness.n.01"
+        }
+      ],
+      "definition": "compatibility between persons"
+    },
+    {
+      "lemma": "congruence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "harmony.n.01",
+          "via_synset": "congruity.n.01"
+        }
+      ],
+      "definition": "the quality of agreeing; being suitable and appropriate"
+    },
+    {
+      "lemma": "congruent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "congruity.n.01",
+          "via_synset": "congruous.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "congruity.n.01",
+          "via_synset": "congruent.a.02"
+        }
+      ],
+      "definition": "corresponding in character or kind"
+    },
+    {
+      "lemma": "congruity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "harmony.n.01",
+          "via_synset": "congruity.n.01"
+        }
+      ],
+      "definition": "the quality of agreeing; being suitable and appropriate"
+    },
+    {
+      "lemma": "congruous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "congruity.n.01",
+          "via_synset": "congruous.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "congruity.n.01",
+          "via_synset": "congruous.a.01"
+        }
+      ],
+      "definition": "suitable or appropriate together"
+    },
+    {
+      "lemma": "congruousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "harmony.n.01",
+          "via_synset": "congruity.n.01"
+        }
+      ],
+      "definition": "the quality of agreeing; being suitable and appropriate"
+    },
+    {
+      "lemma": "correspondence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "compatibility.n.02",
+          "via_synset": "agreement.n.02"
+        }
+      ],
+      "definition": "compatibility of observations"
+    },
+    {
+      "lemma": "dovish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "peaceful.a.01",
+          "via_synset": "pacifist.s.01"
+        }
+      ],
+      "definition": "opposed to war"
+    },
+    {
+      "lemma": "easiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "tranquillity.n.02",
+          "via_synset": "easiness.n.01"
+        }
+      ],
+      "definition": "a feeling of refreshing tranquility and an absence of tension or worry"
+    },
+    {
+      "lemma": "halcyon",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "peaceful.a.01",
+          "via_synset": "halcyon.s.01"
+        }
+      ],
+      "definition": "idyllically calm and peaceful; suggesting happy tranquillity"
+    },
+    {
+      "lemma": "harmonical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "harmony.n.01",
+          "via_synset": "consonant.s.01"
+        }
+      ],
+      "definition": "involving or characterized by harmony"
+    },
+    {
+      "lemma": "harmonious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "harmony.n.01",
+          "via_synset": "harmonious.s.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "harmony.n.01",
+          "via_synset": "harmonious.s.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "harmony.n.01",
+          "via_synset": "harmonious.s.01"
+        }
+      ],
+      "definition": "suitable and fitting"
+    },
+    {
+      "lemma": "harmoniousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "harmony.n.01",
+          "via_synset": "harmony.n.01"
+        }
+      ],
+      "definition": "compatibility in opinion and action"
+    },
+    {
+      "lemma": "harmonize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "harmony.n.01",
+          "via_synset": "harmonize.v.01"
+        }
+      ],
+      "definition": "go together"
+    },
+    {
+      "lemma": "harmony",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "harmony.n.01",
+          "via_synset": "harmony.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "peace.n.02",
+          "via_synset": "harmony.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "order.n.03",
+          "via_synset": "harmony.n.03"
+        }
+      ],
+      "definition": "compatibility in opinion and action"
+    },
+    {
+      "lemma": "heartsease",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "peace.n.03",
+          "via_synset": "peace.n.03"
+        }
+      ],
+      "definition": "the absence of mental stress or anxiety"
+    },
+    {
+      "lemma": "irenic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "peaceful.a.01",
+          "via_synset": "irenic.s.01"
+        }
+      ],
+      "definition": "conducive to peace"
+    },
+    {
+      "lemma": "mollification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "peaceableness.n.01",
+          "via_synset": "mollification.n.01"
+        }
+      ],
+      "definition": "a state of being appeased or ameliorated or tempered"
+    },
+    {
+      "lemma": "nonaggressive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "peaceful.a.01",
+          "via_synset": "unaggressive.a.01"
+        }
+      ],
+      "definition": "not aggressive; not given to fighting or assertiveness"
+    },
+    {
+      "lemma": "nonbelligerent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "peaceful.a.01",
+          "via_synset": "nonbelligerent.s.01"
+        }
+      ],
+      "definition": "not directly at war"
+    },
+    {
+      "lemma": "nonviolent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "passive.s.01",
+          "via_synset": "nonviolent.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "peaceful.a.01",
+          "via_synset": "nonviolent.a.01"
+        }
+      ],
+      "definition": "abstaining (on principle) from the use of violence"
+    },
+    {
+      "lemma": "order",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "peace.n.01",
+          "via_synset": "order.n.03"
+        }
+      ],
+      "definition": "established customary state (especially of society)"
+    },
+    {
+      "lemma": "pacific",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "peaceful.a.01",
+          "via_synset": "pacific.s.01"
+        }
+      ],
+      "definition": "disposed to peace or of a peaceful nature"
+    },
+    {
+      "lemma": "pacifist",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "peaceful.a.01",
+          "via_synset": "pacifist.s.01"
+        }
+      ],
+      "definition": "opposed to war"
+    },
+    {
+      "lemma": "pacifistic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "peaceful.a.01",
+          "via_synset": "pacifist.s.01"
+        }
+      ],
+      "definition": "opposed to war"
+    },
+    {
+      "lemma": "pacify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "peace.n.02",
+          "via_synset": "pacify.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "peace.n.01",
+          "via_synset": "pacify.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "peace.n.03",
+          "via_synset": "pacify.v.01"
+        }
+      ],
+      "definition": "cause to be more favorably inclined; gain the good will of"
+    },
+    {
+      "lemma": "passive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "passive.s.01",
+          "via_synset": "passive.s.01"
+        }
+      ],
+      "definition": "peacefully resistant in response to injustice"
+    },
+    {
+      "lemma": "passiveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "passive.s.01",
+          "via_synset": "passivity.n.02"
+        }
+      ],
+      "definition": "submission to others or to outside influences"
+    },
+    {
+      "lemma": "Pax Romana",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "peace.n.01",
+          "via_synset": "pax_romana.n.01"
+        }
+      ],
+      "definition": "the Roman peace; the long period of peace enforced on states in the Roman Empire"
+    },
+    {
+      "lemma": "peace",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "peace.n.02",
+          "via_synset": "peace.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "peace.n.01",
+          "via_synset": "peace.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "peace.n.03",
+          "via_synset": "peace.n.03"
+        }
+      ],
+      "definition": "harmonious relations; freedom from disputes"
+    },
+    {
+      "lemma": "peace of mind",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "peace.n.03",
+          "via_synset": "peace.n.03"
+        }
+      ],
+      "definition": "the absence of mental stress or anxiety"
+    },
+    {
+      "lemma": "peace-loving",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "peaceful.a.01",
+          "via_synset": "peaceable.s.01"
+        }
+      ],
+      "definition": "inclined or disposed to peace"
+    },
+    {
+      "lemma": "peaceable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "peaceful.a.01",
+          "via_synset": "peaceful.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "peaceableness.n.01",
+          "via_synset": "peaceable.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "peaceableness.n.01",
+          "via_synset": "pacific.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "peaceful.a.01",
+          "via_synset": "pacific.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "peaceful.a.01",
+          "via_synset": "peaceable.s.01"
+        }
+      ],
+      "definition": "not disturbed by strife or turmoil or war"
+    },
+    {
+      "lemma": "peaceableness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "amity.n.02",
+          "via_synset": "peaceableness.n.01"
+        }
+      ],
+      "definition": "a state that is calm and tranquil"
+    },
+    {
+      "lemma": "peaceful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "peaceful.a.01",
+          "via_synset": "peaceful.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "passive.s.01",
+          "via_synset": "passive.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "peaceableness.n.01",
+          "via_synset": "passive.s.01"
+        }
+      ],
+      "definition": "not disturbed by strife or turmoil or war"
+    },
+    {
+      "lemma": "peacefulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "peace.n.03",
+          "via_synset": "peace.n.03"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "amity.n.02",
+          "via_synset": "peaceableness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "passive.s.01",
+          "via_synset": "peaceableness.n.01"
+        }
+      ],
+      "definition": "the absence of mental stress or anxiety"
+    },
+    {
+      "lemma": "polity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "order.n.03",
+          "via_synset": "civil_order.n.01"
+        }
+      ],
+      "definition": "the form of government of a social organization"
+    },
+    {
+      "lemma": "quiet",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "peaceful.a.01",
+          "via_synset": "quiet.a.01"
+        }
+      ],
+      "definition": "characterized by an absence or near absence of agitation or activity"
+    },
+    {
+      "lemma": "quiet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "order.n.03",
+          "via_synset": "tranquillity.n.01"
+        }
+      ],
+      "definition": "an untroubled state; free from disturbances"
+    },
+    {
+      "lemma": "quietness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "peace.n.03",
+          "via_synset": "tranquillity.n.02"
+        }
+      ],
+      "definition": "a state of peace and quiet"
+    },
+    {
+      "lemma": "quietude",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "peace.n.03",
+          "via_synset": "tranquillity.n.02"
+        }
+      ],
+      "definition": "a state of peace and quiet"
+    },
+    {
+      "lemma": "relaxation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "tranquillity.n.02",
+          "via_synset": "easiness.n.01"
+        }
+      ],
+      "definition": "a feeling of refreshing tranquility and an absence of tension or worry"
+    },
+    {
+      "lemma": "repose",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "peace.n.03",
+          "via_synset": "peace.n.03"
+        }
+      ],
+      "definition": "the absence of mental stress or anxiety"
+    },
+    {
+      "lemma": "rule of law",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "order.n.03",
+          "via_synset": "rule_of_law.n.01"
+        }
+      ],
+      "definition": "a state of order in which events conform to the law"
+    },
+    {
+      "lemma": "serenity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "peace.n.03",
+          "via_synset": "peace.n.03"
+        }
+      ],
+      "definition": "the absence of mental stress or anxiety"
+    },
+    {
+      "lemma": "stability",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "order.n.03",
+          "via_synset": "stability.n.02"
+        }
+      ],
+      "definition": "a stable order (especially of society)"
+    },
+    {
+      "lemma": "tranquility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "peace.n.03",
+          "via_synset": "tranquillity.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "order.n.03",
+          "via_synset": "tranquillity.n.01"
+        }
+      ],
+      "definition": "a state of peace and quiet"
+    },
+    {
+      "lemma": "tranquillity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "peace.n.03",
+          "via_synset": "tranquillity.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "order.n.03",
+          "via_synset": "tranquillity.n.01"
+        }
+      ],
+      "definition": "a state of peace and quiet"
+    },
+    {
+      "lemma": "truce",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "peace.n.01",
+          "via_synset": "armistice.n.01"
+        }
+      ],
+      "definition": "a state of peace agreed to between opponents so they can discuss peace terms"
+    },
+    {
+      "lemma": "unaggressive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "peaceful.a.01",
+          "via_synset": "unaggressive.a.01"
+        }
+      ],
+      "definition": "not aggressive; not given to fighting or assertiveness"
+    },
+    {
+      "lemma": "unpeaceful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "peaceful.a.01",
+          "via_synset": "unpeaceful.a.01"
+        }
+      ],
+      "definition": "not peaceful"
+    }
+  ]
+}

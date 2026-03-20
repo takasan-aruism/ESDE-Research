@@ -1,0 +1,1230 @@
+{
+  "atom_id": "FND.numberless",
+  "category": "FND",
+  "seed_count": 5,
+  "total_keys": 78,
+  "pos_counts": {
+    "adj": 33,
+    "n": 45
+  },
+  "source_counts": {
+    "0_seed": 21,
+    "3_hyponym_d1": 6,
+    "2_hypernym_d1": 1,
+    "4_hyponym_d2": 5,
+    "5_hyponym_d3": 3,
+    "6_derivational": 10,
+    "7_similar_to": 15,
+    "8_also_see": 1,
+    "9_antonym": 1,
+    "10_sibling": 22
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 19,
+      "words": [
+        "countless(adj)",
+        "infinite(adj)",
+        "innumerable(adj)",
+        "innumerous(adj)",
+        "multitudinous(adj)",
+        "myriad(adj)",
+        "numberless(adj)",
+        "uncounted(adj)",
+        "unnumberable(adj)",
+        "unnumbered(adj)",
+        "unnumerable(adj)",
+        "space(n)",
+        "infinite(n)",
+        "incomputable(adj)",
+        "inestimable(adj)",
+        "immeasurable(adj)",
+        "unmeasurable(adj)",
+        "immensurable(adj)",
+        "unmeasured(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 1,
+      "words": [
+        "attribute(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 5,
+      "words": [
+        "mathematical space(n)",
+        "topological space(n)",
+        "outer space(n)",
+        "phase space(n)",
+        "absolute space(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 5,
+      "words": [
+        "manifold(n)",
+        "metric space(n)",
+        "null space(n)",
+        "subspace(n)",
+        "dynamical system(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 3,
+      "words": [
+        "Euclidean space(n)",
+        "Hilbert space(n)",
+        "chaos(n)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 9,
+      "words": [
+        "spacial(adj)",
+        "spatial(adj)",
+        "infiniteness(n)",
+        "infinity(n)",
+        "countlessness(n)",
+        "innumerableness(n)",
+        "multitude(n)",
+        "multitudinousness(n)",
+        "myriad(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 12,
+      "words": [
+        "illimitable(adj)",
+        "limitless(adj)",
+        "measureless(adj)",
+        "abysmal(adj)",
+        "incalculable(adj)",
+        "dateless(adj)",
+        "endless(adj)",
+        "sempiternal(adj)",
+        "boundless(adj)",
+        "unbounded(adj)",
+        "inexhaustible(adj)",
+        "unlimited(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 1,
+      "words": [
+        "immortal(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "measurable(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 22,
+      "words": [
+        "quality(n)",
+        "inheritance(n)",
+        "heritage(n)",
+        "ballast(n)",
+        "trait(n)",
+        "uncheerfulness(n)",
+        "common denominator(n)",
+        "character(n)",
+        "property(n)",
+        "state(n)",
+        "human nature(n)",
+        "depth(n)",
+        "eidos(n)",
+        "personality(n)",
+        "shape(n)",
+        "form(n)",
+        "ethos(n)",
+        "time(n)",
+        "cheerfulness(n)",
+        "cheer(n)",
+        "sunniness(n)",
+        "sunshine(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "absolute space",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "space.n.01",
+          "via_synset": "absolute_space.n.01"
+        }
+      ],
+      "definition": "physical space independent of what occupies it"
+    },
+    {
+      "lemma": "abysmal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "immeasurable.a.01",
+          "via_synset": "abysmal.s.01"
+        }
+      ],
+      "definition": "very great; limitless"
+    },
+    {
+      "lemma": "attribute",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "space.n.01",
+          "via_synset": "attribute.n.02"
+        }
+      ],
+      "definition": "an abstraction belonging to or characteristic of an entity"
+    },
+    {
+      "lemma": "ballast",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "ballast.n.03"
+        }
+      ],
+      "definition": "an attribute that tends to give stability in character and morals; something that steadies the mind or feelings"
+    },
+    {
+      "lemma": "boundless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "infinite.a.01",
+          "via_synset": "boundless.s.01"
+        }
+      ],
+      "definition": "seemingly boundless in amount, number, degree, or especially extent"
+    },
+    {
+      "lemma": "chaos",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "dynamical_system.n.01",
+          "via_synset": "chaos.n.04"
+        }
+      ],
+      "definition": "(physics) a dynamical system that is extremely sensitive to its initial conditions"
+    },
+    {
+      "lemma": "character",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "character.n.09"
+        }
+      ],
+      "definition": "(genetics) an attribute (structural or functional) that is determined by a gene or group of genes"
+    },
+    {
+      "lemma": "cheer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "cheerfulness.n.01"
+        }
+      ],
+      "definition": "the quality of being cheerful and dispelling gloom"
+    },
+    {
+      "lemma": "cheerfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "cheerfulness.n.01"
+        }
+      ],
+      "definition": "the quality of being cheerful and dispelling gloom"
+    },
+    {
+      "lemma": "common denominator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "common_denominator.n.02"
+        }
+      ],
+      "definition": "an attribute that is common to all members of a category"
+    },
+    {
+      "lemma": "countless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "countless.s.01",
+          "via_synset": "countless.s.01"
+        }
+      ],
+      "definition": "too numerous to be counted"
+    },
+    {
+      "lemma": "countlessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "countless.s.01",
+          "via_synset": "innumerableness.n.01"
+        }
+      ],
+      "definition": "a number beyond counting"
+    },
+    {
+      "lemma": "dateless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "infinite.a.01",
+          "via_synset": "dateless.s.01"
+        }
+      ],
+      "definition": "having no known beginning and presumably no end"
+    },
+    {
+      "lemma": "depth",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "depth.n.06"
+        }
+      ],
+      "definition": "the attribute or quality of being deep, strong, or intense"
+    },
+    {
+      "lemma": "dynamical system",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "phase_space.n.01",
+          "via_synset": "dynamical_system.n.01"
+        }
+      ],
+      "definition": "(physics) a phase space together with a transformation of that space"
+    },
+    {
+      "lemma": "eidos",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "eidos.n.01"
+        }
+      ],
+      "definition": "(anthropology) the distinctive expression of the cognitive or intellectual character of a culture or a social group"
+    },
+    {
+      "lemma": "endless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "infinite.a.01",
+          "via_synset": "dateless.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "infinite.a.01",
+          "via_synset": "endless.s.02"
+        }
+      ],
+      "definition": "having no known beginning and presumably no end"
+    },
+    {
+      "lemma": "ethos",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "ethos.n.01"
+        }
+      ],
+      "definition": "(anthropology) the distinctive spirit of a culture or an era"
+    },
+    {
+      "lemma": "Euclidean space",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "metric_space.n.01",
+          "via_synset": "euclidean_space.n.01"
+        }
+      ],
+      "definition": "a space in which Euclid's axioms and definitions apply; a metric space that is linear and finite-dimensional"
+    },
+    {
+      "lemma": "form",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "shape.n.02"
+        }
+      ],
+      "definition": "the spatial arrangement of something as distinct from its substance"
+    },
+    {
+      "lemma": "heritage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "inheritance.n.04"
+        }
+      ],
+      "definition": "any attribute or immaterial possession that is inherited from ancestors"
+    },
+    {
+      "lemma": "Hilbert space",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "metric_space.n.01",
+          "via_synset": "hilbert_space.n.01"
+        }
+      ],
+      "definition": "a metric space that is linear and complete and (usually) infinite-dimensional"
+    },
+    {
+      "lemma": "human nature",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "human_nature.n.01"
+        }
+      ],
+      "definition": "the shared psychological attributes of humankind that are assumed to be shared by all human beings"
+    },
+    {
+      "lemma": "illimitable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "immeasurable.a.01",
+          "via_synset": "illimitable.s.01"
+        }
+      ],
+      "definition": "without limits in extent or size or quantity"
+    },
+    {
+      "lemma": "immeasurable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "incomputable.s.01",
+          "via_synset": "incomputable.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "immeasurable.a.01",
+          "via_synset": "immeasurable.a.01"
+        }
+      ],
+      "definition": "beyond calculation or measure"
+    },
+    {
+      "lemma": "immensurable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "immeasurable.a.01",
+          "via_synset": "immeasurable.a.01"
+        }
+      ],
+      "definition": "impossible to measure"
+    },
+    {
+      "lemma": "immortal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "infinite.a.01",
+          "via_synset": "immortal.a.01"
+        }
+      ],
+      "definition": "not subject to death"
+    },
+    {
+      "lemma": "incalculable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "incomputable.s.01",
+          "via_synset": "incalculable.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "countless.s.01",
+          "via_synset": "incalculable.a.01"
+        }
+      ],
+      "definition": "not capable of being computed or enumerated"
+    },
+    {
+      "lemma": "incomputable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "incomputable.s.01",
+          "via_synset": "incomputable.s.01"
+        }
+      ],
+      "definition": "beyond calculation or measure"
+    },
+    {
+      "lemma": "inestimable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "incomputable.s.01",
+          "via_synset": "incomputable.s.01"
+        }
+      ],
+      "definition": "beyond calculation or measure"
+    },
+    {
+      "lemma": "inexhaustible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "infinite.a.01",
+          "via_synset": "inexhaustible.s.01"
+        }
+      ],
+      "definition": "that cannot be entirely consumed or used up"
+    },
+    {
+      "lemma": "infinite",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "countless.s.01",
+          "via_synset": "countless.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "infinite.a.01",
+          "via_synset": "infinite.a.01"
+        }
+      ],
+      "definition": "too numerous to be counted"
+    },
+    {
+      "lemma": "infinite",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "space.n.01",
+          "via_synset": "space.n.01"
+        }
+      ],
+      "definition": "the unlimited expanse in which everything is located"
+    },
+    {
+      "lemma": "infiniteness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "infinite.a.01",
+          "via_synset": "infiniteness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "countless.s.01",
+          "via_synset": "infiniteness.n.01"
+        }
+      ],
+      "definition": "the quality of being infinite; without bound or limit"
+    },
+    {
+      "lemma": "infinity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "infinite.a.01",
+          "via_synset": "eternity.n.01"
+        }
+      ],
+      "definition": "time without end"
+    },
+    {
+      "lemma": "inheritance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "inheritance.n.04"
+        }
+      ],
+      "definition": "any attribute or immaterial possession that is inherited from ancestors"
+    },
+    {
+      "lemma": "innumerable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "countless.s.01",
+          "via_synset": "countless.s.01"
+        }
+      ],
+      "definition": "too numerous to be counted"
+    },
+    {
+      "lemma": "innumerableness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "countless.s.01",
+          "via_synset": "innumerableness.n.01"
+        }
+      ],
+      "definition": "a number beyond counting"
+    },
+    {
+      "lemma": "innumerous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "countless.s.01",
+          "via_synset": "countless.s.01"
+        }
+      ],
+      "definition": "too numerous to be counted"
+    },
+    {
+      "lemma": "limitless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "immeasurable.a.01",
+          "via_synset": "illimitable.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "infinite.a.01",
+          "via_synset": "boundless.s.01"
+        }
+      ],
+      "definition": "without limits in extent or size or quantity"
+    },
+    {
+      "lemma": "manifold",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "mathematical_space.n.01",
+          "via_synset": "manifold.n.03"
+        }
+      ],
+      "definition": "a set of points such as those of a closed surface or an analogue in three or more dimensions"
+    },
+    {
+      "lemma": "mathematical space",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "space.n.01",
+          "via_synset": "mathematical_space.n.01"
+        }
+      ],
+      "definition": "(mathematics) any set of points that satisfy a set of postulates of some kind"
+    },
+    {
+      "lemma": "measurable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "immeasurable.a.01",
+          "via_synset": "measurable.a.01"
+        }
+      ],
+      "definition": "capable of being measured"
+    },
+    {
+      "lemma": "measureless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "immeasurable.a.01",
+          "via_synset": "illimitable.s.01"
+        }
+      ],
+      "definition": "without limits in extent or size or quantity"
+    },
+    {
+      "lemma": "metric space",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "mathematical_space.n.01",
+          "via_synset": "metric_space.n.01"
+        }
+      ],
+      "definition": "a set of points such that for every pair of points there is a nonnegative real number called their distance that is symmetric and satisfies the triangle inequality"
+    },
+    {
+      "lemma": "multitude",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "countless.s.01",
+          "via_synset": "battalion.n.02"
+        }
+      ],
+      "definition": "a large indefinite number"
+    },
+    {
+      "lemma": "multitudinous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "countless.s.01",
+          "via_synset": "countless.s.01"
+        }
+      ],
+      "definition": "too numerous to be counted"
+    },
+    {
+      "lemma": "multitudinousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "countless.s.01",
+          "via_synset": "multitudinousness.n.01"
+        }
+      ],
+      "definition": "a very large number (especially of people)"
+    },
+    {
+      "lemma": "myriad",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "countless.s.01",
+          "via_synset": "countless.s.01"
+        }
+      ],
+      "definition": "too numerous to be counted"
+    },
+    {
+      "lemma": "myriad",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "countless.s.01",
+          "via_synset": "myriad.n.01"
+        }
+      ],
+      "definition": "a large indefinite number"
+    },
+    {
+      "lemma": "null space",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "mathematical_space.n.01",
+          "via_synset": "null_space.n.01"
+        }
+      ],
+      "definition": "a space that contains no points; and empty space"
+    },
+    {
+      "lemma": "numberless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "countless.s.01",
+          "via_synset": "countless.s.01"
+        }
+      ],
+      "definition": "too numerous to be counted"
+    },
+    {
+      "lemma": "outer space",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "space.n.01",
+          "via_synset": "outer_space.n.01"
+        }
+      ],
+      "definition": "any location outside the Earth's atmosphere"
+    },
+    {
+      "lemma": "personality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "personality.n.01"
+        }
+      ],
+      "definition": "the complex of all the attributes--behavioral, temperamental, emotional and mental--that characterize a unique individual"
+    },
+    {
+      "lemma": "phase space",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "space.n.01",
+          "via_synset": "phase_space.n.01"
+        }
+      ],
+      "definition": "(physics) an ideal space in which the coordinate dimensions represent the variables that are required to describe a system or substance"
+    },
+    {
+      "lemma": "property",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "property.n.02"
+        }
+      ],
+      "definition": "a basic or essential attribute shared by all members of a class"
+    },
+    {
+      "lemma": "quality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "quality.n.01"
+        }
+      ],
+      "definition": "an essential and distinguishing attribute of something or someone; --Shakespeare"
+    },
+    {
+      "lemma": "sempiternal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "infinite.a.01",
+          "via_synset": "dateless.s.01"
+        }
+      ],
+      "definition": "having no known beginning and presumably no end"
+    },
+    {
+      "lemma": "shape",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "shape.n.02"
+        }
+      ],
+      "definition": "the spatial arrangement of something as distinct from its substance"
+    },
+    {
+      "lemma": "space",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "space.n.01",
+          "via_synset": "space.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "space.n.01",
+          "via_synset": "outer_space.n.01"
+        }
+      ],
+      "definition": "the unlimited expanse in which everything is located"
+    },
+    {
+      "lemma": "spacial",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "space.n.01",
+          "via_synset": "spatial.a.01"
+        }
+      ],
+      "definition": "pertaining to or involving or having the nature of space"
+    },
+    {
+      "lemma": "spatial",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "space.n.01",
+          "via_synset": "spatial.a.01"
+        }
+      ],
+      "definition": "pertaining to or involving or having the nature of space"
+    },
+    {
+      "lemma": "state",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "state.n.02"
+        }
+      ],
+      "definition": "the way something is with respect to its main attributes"
+    },
+    {
+      "lemma": "subspace",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "mathematical_space.n.01",
+          "via_synset": "subspace.n.01"
+        }
+      ],
+      "definition": "a space that is contained within another space"
+    },
+    {
+      "lemma": "sunniness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "cheerfulness.n.01"
+        }
+      ],
+      "definition": "the quality of being cheerful and dispelling gloom"
+    },
+    {
+      "lemma": "sunshine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "cheerfulness.n.01"
+        }
+      ],
+      "definition": "the quality of being cheerful and dispelling gloom"
+    },
+    {
+      "lemma": "time",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "time.n.05"
+        }
+      ],
+      "definition": "the continuum of experience in which events pass from the future through the present to the past"
+    },
+    {
+      "lemma": "topological space",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "space.n.01",
+          "via_synset": "mathematical_space.n.01"
+        }
+      ],
+      "definition": "(mathematics) any set of points that satisfy a set of postulates of some kind"
+    },
+    {
+      "lemma": "trait",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "trait.n.01"
+        }
+      ],
+      "definition": "a distinguishing feature of your personal nature"
+    },
+    {
+      "lemma": "unbounded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "infinite.a.01",
+          "via_synset": "boundless.s.01"
+        }
+      ],
+      "definition": "seemingly boundless in amount, number, degree, or especially extent"
+    },
+    {
+      "lemma": "uncheerfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attribute.n.02",
+          "via_synset": "uncheerfulness.n.02"
+        }
+      ],
+      "definition": "not conducive to cheer or good spirits"
+    },
+    {
+      "lemma": "uncounted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "countless.s.01",
+          "via_synset": "countless.s.01"
+        }
+      ],
+      "definition": "too numerous to be counted"
+    },
+    {
+      "lemma": "unlimited",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "infinite.a.01",
+          "via_synset": "inexhaustible.s.01"
+        }
+      ],
+      "definition": "that cannot be entirely consumed or used up"
+    },
+    {
+      "lemma": "unmeasurable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "immeasurable.a.01",
+          "via_synset": "immeasurable.a.01"
+        }
+      ],
+      "definition": "impossible to measure"
+    },
+    {
+      "lemma": "unmeasured",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "immeasurable.a.01",
+          "via_synset": "immeasurable.a.01"
+        }
+      ],
+      "definition": "impossible to measure"
+    },
+    {
+      "lemma": "unnumberable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "countless.s.01",
+          "via_synset": "countless.s.01"
+        }
+      ],
+      "definition": "too numerous to be counted"
+    },
+    {
+      "lemma": "unnumbered",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "countless.s.01",
+          "via_synset": "countless.s.01"
+        }
+      ],
+      "definition": "too numerous to be counted"
+    },
+    {
+      "lemma": "unnumerable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "countless.s.01",
+          "via_synset": "countless.s.01"
+        }
+      ],
+      "definition": "too numerous to be counted"
+    }
+  ]
+}

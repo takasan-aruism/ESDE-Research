@@ -1,0 +1,2341 @@
+{
+  "atom": "SOC.attack",
+  "category": "SOC",
+  "status": "proposed",
+  "symmetric_pair": "SOC.defend",
+  "definition_en": "To take aggressive action against.",
+  "seed_synsets": [],
+  "core_pool": {
+    "rules": [
+      "0_seed",
+      "3_hyponym_d1",
+      "6_derivational",
+      "7_similar_to",
+      "9_antonym"
+    ],
+    "count": 45,
+    "words": [
+      {
+        "w": "aggravated assault",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a reckless attack with intent to injure seriously (as with a deadly weapon)",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "aggress",
+        "pos": "v",
+        "src": "0_seed",
+        "definition": "take the initiative and go on the offensive",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "aggression",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "the act of initiating hostilities",
+        "path_count": 2,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "aggressive",
+        "pos": "adj",
+        "src": "6_derivational",
+        "definition": "characteristic of an enemy or one eager to fight",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "aggressor",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "someone who attacks",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "approach",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "ideas or actions intended to deal with a problem or situation",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "approach",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "begin to deal with",
+        "path_count": 2,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "assault",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "a threatened or attempted physical attack by someone who appears to be able to cause bodily harm if not stopped",
+        "path_count": 2,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "assault",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "attack someone physically or emotionally",
+        "path_count": 2,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "assault and battery",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "an assault in which the assailant makes physical contact",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "attack",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "ideas or actions intended to deal with a problem or situation",
+        "path_count": 3,
+        "sources": [
+          "0_seed",
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "attack",
+        "pos": "v",
+        "src": "0_seed",
+        "definition": "take the initiative and go on the offensive",
+        "path_count": 3,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "attacker",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "someone who attacks",
+        "path_count": 2,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "avenue",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a line of approach",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "battery",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "an assault in which the assailant makes physical contact",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "carnal abuse",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "sexual intercourse with a person (girl or boy) who has not reached the age of consent (even if both parties participate willingly)",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "check",
+        "pos": "v",
+        "src": "3_hyponym_d1",
+        "definition": "place into check",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "date rape",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "rape in which the rapist is known to the victim (as when they are on a date together)",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "fork",
+        "pos": "v",
+        "src": "3_hyponym_d1",
+        "definition": "place under attack with one's own pieces, of two enemy pieces",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "harass",
+        "pos": "v",
+        "src": "3_hyponym_d1",
+        "definition": "exhaust by attacking repeatedly",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "harasser",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "a persistent attacker",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "mug",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "rob at gunpoint or with the threat of violence",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "mugging",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "assault with intent to rob",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "pin",
+        "pos": "v",
+        "src": "3_hyponym_d1",
+        "definition": "immobilize a piece",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "plan of attack",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "ideas or actions intended to deal with a problem or situation",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "rape",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "the crime of forcing a woman to submit to sexual intercourse against her will",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "rape",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "force (someone) to have sex against their will",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "ravish",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "force (someone) to have sex against their will",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "ravishment",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "the crime of forcing a woman to submit to sexual intercourse against her will",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "sit-down",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a strike in which workers refuse to leave the workplace until a settlement is reached",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "sit-down strike",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a strike in which workers refuse to leave the workplace until a settlement is reached",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "statutory rape",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "sexual intercourse with a person (girl or boy) who has not reached the age of consent (even if both parties participate willingly)",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "strike",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "a group's refusal to work in protest against low pay or bad work conditions",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "strike",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "stop work in order to press demands",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "sympathetic strike",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a strike in support of other workers who are on strike; a strike not resulting from direct grievances against the workers' employer",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "sympathy strike",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a strike in support of other workers who are on strike; a strike not resulting from direct grievances against the workers' employer",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "tackle",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "the person who plays that position on a football team",
+        "path_count": 2,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "tackle",
+        "pos": "v",
+        "src": "3_hyponym_d1",
+        "definition": "seize and throw down an opponent player, who usually carries the ball",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "tackler",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "a football player who tackles the ball carrier",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "violate",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "force (someone) to have sex against their will",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "violation",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "the crime of forcing a woman to submit to sexual intercourse against her will",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "walk out",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "stop work in order to press demands",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "walkout",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a strike in which the workers walk out",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "wildcat strike",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a strike undertaken by workers without approval from the officials of their union",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "work stoppage",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "a group's refusal to work in protest against low pay or bad work conditions",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      }
+    ]
+  },
+  "deviation_pool": {
+    "rules": [
+      "10_sibling",
+      "11_pertainym",
+      "12_verb_group",
+      "2_hypernym_d1",
+      "4_hyponym_d2",
+      "5_hyponym_d3",
+      "8_also_see"
+    ],
+    "count": 182,
+    "words": [
+      {
+        "w": "acquit",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "behave in a certain manner",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "act",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "perform an action, or work out or perform (an action)",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "act on",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "regulate one's behavior in accordance with certain information, ideas, or advice",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "act superior",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act like the master of",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "alternate",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "do something in turns",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "antagonise",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act in opposition to",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "antagonize",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act in opposition to",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "anticipate",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act in advance of; deal with ahead of time",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "assail",
+        "pos": "v",
+        "src": "12_verb_group",
+        "definition": "launch an attack or assault on; begin hostilities or start warfare with",
+        "path_count": 1,
+        "sources": [
+          "12_verb_group"
+        ]
+      },
+      {
+        "w": "assay",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make an effort or attempt",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "attempt",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "the act of attacking",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "attempt",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make an effort or attempt",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "auspicate",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "commence in a manner calculated to bring good luck",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "bear",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "behave in a certain manner",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "begin",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "take the first step or steps in carrying out an action",
+        "path_count": 2,
+        "sources": [
+          "10_sibling",
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "behave",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "behave in a certain manner",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "bestir oneself",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "start to be active",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "break in",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "start in a certain activity, enterprise, or role",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "carry",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "behave in a certain manner",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "coact",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act together, as of organisms",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "come close",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "nearly do something",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "come forward",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make oneself visible; take action",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "come on",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "occur or become available",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "come out",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make oneself visible; take action",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "come to the fore",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make oneself visible; take action",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "commence",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "take the first step or steps in carrying out an action",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "commit",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "perform an act, usually with a negative connotation",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "comport",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "behave in a certain manner",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "conceptualisation",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "inventing or contriving an idea or explanation and formulating it mentally",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "conceptualization",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "inventing or contriving an idea or explanation and formulating it mentally",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "condescend",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "behave in a patronizing and condescending manner",
+        "path_count": 3,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "conduct",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "behave in a certain manner",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "contend",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "come to terms with",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "continue",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "continue a certain state, condition, or activity",
+        "path_count": 3,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "cope",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "come to terms with",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "counter",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act in advance of; deal with ahead of time",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "counteract",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act in opposition to",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "court",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make amorous advances towards",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "create",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "pursue a creative activity; be engaged in a creative activity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "dally",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "behave carelessly or indifferently",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "dare",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "to be courageous enough to try or do something; ,",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "deal",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "take action with respect to (someone or something)",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "deign",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "do something that one considers to be below one's dignity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "deport",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "behave in a certain manner",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "descend",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "do something that one considers to be below one's dignity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "dispatch",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "dispose of rapidly and without delay and efficiently",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "disturb",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "destroy the peace or tranquility of",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "do well",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act in one's own or everybody's best interest",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "effect",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act so as to bring into existence",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "egotrip",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act in a way that attracts attention",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "embark",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "set out on (an enterprise or subject of study)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "end up",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "finally be or do something",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "engage",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "carry out or participate in an activity; be involved in",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "enter",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "set out on (an enterprise or subject of study)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "essay",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make an effort or attempt",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "evade",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "practice evasion",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "exert",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make a great effort at a mental or physical task",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "fall",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "begin vigorously",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "festinate",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act or move at high speed",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "fetch up",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "finally be or do something",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "finish",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "finally be or do something",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "finish up",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "finally be or do something",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "flirt",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "behave carelessly or indifferently",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "force",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "do forcibly; exert force",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "foresee",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act in advance of; deal with ahead of time",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "forestall",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act in advance of; deal with ahead of time",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "formulation",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "inventing or contriving an idea or explanation and formulating it mentally",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "framing",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "formulation of the plans and important details",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "get",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "take the first step or steps in carrying out an action",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "get around to",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "do something despite obstacles such as lack of time",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "get by",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "come to terms with",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "get cracking",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "start to be active",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "get down",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "take the first step or steps in carrying out an action",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "get going",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "start to be active",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "get moving",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "start to be active",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "get rolling",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "start to be active",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "get started",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "start to be active",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "get to",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "arrive at the point of",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "get weaving",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "start to be active",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "go",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "follow a procedure or take a course",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "go about",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "begin to deal with",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "go ahead",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "proceed (with a plan of action)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "go along",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "continue a certain state, condition, or activity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "go off at half-cock",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act prematurely or without reflection or too soon",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "go off half-cocked",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act prematurely or without reflection or too soon",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "go on",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "continue a certain state, condition, or activity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "go-slow",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a form of protest by workers in which they deliberately slow down in order to cause problem from their employers",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "grapple",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "come to terms with",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "had best",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act in one's own or everybody's best interest",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "hasten",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act or move at high speed",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "hold back",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "wait before acting",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "hold off",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "wait before acting",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "hurry",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act or move at high speed",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "interact",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act together or towards others or with others",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "interrupt",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "destroy the peace or tranquility of",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "job action",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "a temporary action by workers to protest management decision or to make demands",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "jump off",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "set off quickly, usually with success",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "keep",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "continue a certain state, condition, or activity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "land up",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "finally be or do something",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "launch",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "begin with vigor",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "look sharp",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act or move at high speed",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "lord it over",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act like the master of",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "lower oneself",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "debase oneself morally, act in an undignified, unworthy, or dishonorable way",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "make a point",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make a point of doing something; act purposefully and intentionally",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "make bold",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "take upon oneself; act presumptuously, without permission",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "make do",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "come to terms with",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "make out",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "come to terms with",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "make sure",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make a point of doing something; act purposefully and intentionally",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "manage",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "come to terms with",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "maneuver",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act in order to achieve a certain goal",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "manoeuver",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act in order to achieve a certain goal",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "manoeuvre",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act in order to achieve a certain goal",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "misbehave",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "behave badly",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "misconduct",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "behave badly",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "misdemean",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "behave badly",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "molestation",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the act of subjecting someone to unwanted or improper sexual advances or activity (especially women or children)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "move",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "perform an action, or work out or perform (an action)",
+        "path_count": 2,
+        "sources": [
+          "10_sibling",
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "offer",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "agree freely",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "oppose",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act against or in opposition to",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "participate",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "share in something",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "partner",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act as a partner",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "pay back",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act or give recompense in recognition of someone's behavior or actions",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "perform",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "perform a function",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "perpetrate",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "perform an act, usually with a negative connotation",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "persist in",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "do something repeatedly and showing no intention to stop",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "play",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "behave carelessly or indifferently",
+        "path_count": 3,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "play it by ear",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "decide on one's actions as one goes along, depending on the situation",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "plow ahead",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "proceed (with a plan of action)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "plunge",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "begin with vigor",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "presume",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "take upon oneself; act presumptuously, without permission",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "proceed",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "continue a certain state, condition, or activity",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "prosecute",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "conduct a prosecution in a court of law",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "pull",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "perform an act, usually with a negative connotation",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "pursue",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "carry out or participate in an activity; be involved in",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "put on airs",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act like the master of",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "queen it over",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act like the master of",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "race",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "to work as fast as possible towards a goal, sometimes in competition with others",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "rampage",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act violently, recklessly, or destructively",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "react",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act against or in opposition to",
+        "path_count": 2,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "reciprocate",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act, feel, or give mutually or in return",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "recommence",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "begin again",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "repay",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act or give recompense in recognition of someone's behavior or actions",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "repeat",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "do over",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "resisting arrest",
+        "pos": "n",
+        "src": "4_hyponym_d2",
+        "definition": "physical efforts to oppose a lawful arrest; the resistance is classified as assault and battery upon the person of the police officer attempting to make the arrest",
+        "path_count": 1,
+        "sources": [
+          "4_hyponym_d2"
+        ]
+      },
+      {
+        "w": "respond",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "show a response or a reaction to something",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "reward",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act or give recompense in recognition of someone's behavior or actions",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "romance",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make amorous advances towards",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "rush",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act or move at high speed",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "satisfice",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "decide on and pursue a course of action satisfying the minimum requirements to achieve a goal",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "satisfise",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "decide on and pursue a course of action satisfying the minimum requirements to achieve a goal",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "seek",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make an effort or attempt",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "set about",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "take the first step or steps in carrying out an action",
+        "path_count": 2,
+        "sources": [
+          "10_sibling",
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "set out",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "take the first step or steps in carrying out an action",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "sex crime",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "a statutory offense that provides that it is a crime to knowingly cause another person to engage in an unwanted sexual act by force or threat",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "sex offense",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "a statutory offense that provides that it is a crime to knowingly cause another person to engage in an unwanted sexual act by force or threat",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "sexual abuse",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "a statutory offense that provides that it is a crime to knowingly cause another person to engage in an unwanted sexual act by force or threat",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "sexual assault",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "a statutory offense that provides that it is a crime to knowingly cause another person to engage in an unwanted sexual act by force or threat",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "sneak",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "put, bring, or take in a secretive or furtive manner",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "solicit",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make amorous advances towards",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "stampede",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act, usually en masse, hurriedly or on an impulse",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "start",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "take the first step or steps in carrying out an action",
+        "path_count": 2,
+        "sources": [
+          "10_sibling",
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "start out",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "take the first step or steps in carrying out an action",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "step forward",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make oneself visible; take action",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "step to the fore",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make oneself visible; take action",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "step up",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make oneself visible; take action",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "stoop",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "debase oneself morally, act in an undignified, unworthy, or dishonorable way",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "strike out",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "set out on a course of action",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "surprise",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "come upon or take unawares",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "take",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "carry out",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "take care",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "be careful, prudent, or watchful",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "take over",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "do over",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "take part",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "share in something",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "take time by the forelock",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "act quickly and decisively; not let slip an opportunity",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "take turns",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "do something in turns",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "toy",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "behave carelessly or indifferently",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "try",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make an effort or attempt",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "use",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "habitually do something (use only in the past tense)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "volunteer",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "agree freely",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "wait",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "wait before acting",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "wind up",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "finally be or do something",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "woo",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "make amorous advances towards",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "work to rule",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a job action in which workers cause a slowdown by doing only the minimum amount required by the rules of the workplace",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      }
+    ]
+  },
+  "deviation_stats": {
+    "total_candidates": 227,
+    "core_count": 45,
+    "dev_count": 182,
+    "core_ratio": 0.198,
+    "dev_ratio": 0.802,
+    "dev_source_breakdown": {
+      "10_sibling": 165,
+      "2_hypernym_d1": 19,
+      "12_verb_group": 1,
+      "4_hyponym_d2": 1
+    },
+    "step_contributions": {
+      "0_seed": 11,
+      "2_hypernym_d1": 19,
+      "3_hyponym_d1": 19,
+      "4_hyponym_d2": 1,
+      "5_hyponym_d3": 0,
+      "6_derivational": 15,
+      "7_similar_to": 0,
+      "8_also_see": 0,
+      "9_antonym": 0,
+      "10_sibling": 161,
+      "11_pertainym": 0,
+      "12_verb_group": 1
+    }
+  },
+  "meta": {
+    "generator": "wn_lexicon_entry.py",
+    "version": "1.0.0",
+    "design": "3AI consolidated: Core/Deviation pool separation"
+  }
+}

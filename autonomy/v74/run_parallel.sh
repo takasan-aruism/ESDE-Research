@@ -5,15 +5,17 @@
 # Runs 6 seeds in parallel on Ryzen.
 # Monitor: bash monitor.sh (in another terminal)
 
-SEEDS="42 123 456 789 2024 7"
+SEEDS="42 123 456 789 2024 7 314 999 55 1337 8888 31415"
 WINDOWS=200
 N=10000
+STEPS=100
 OUTPUT="calibration_v74"
-JOBS=6
+JOBS=12
 
 echo "============================================"
 echo "  ESDE v7.4 — Large-Scale Autonomy"
-echo "  N=$N  windows=$WINDOWS  seeds: $SEEDS"
+echo "  N=$N  steps=$STEPS  windows=$WINDOWS"
+echo "  seeds: $SEEDS"
 echo "  Parallel jobs: $JOBS"
 echo "  Output: $OUTPUT/"
 echo "  Start: $(date)"
@@ -24,6 +26,7 @@ mkdir -p $OUTPUT
 parallel -j $JOBS --ungroup \
     python esde_v74_calibrate.py \
         --seed {1} --windows $WINDOWS --N $N \
+        --window-steps $STEPS \
         --output $OUTPUT \
     ::: $SEEDS
 

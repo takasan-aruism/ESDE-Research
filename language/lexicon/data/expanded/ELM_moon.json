@@ -1,0 +1,1884 @@
+{
+  "atom_id": "ELM.moon",
+  "category": "ELM",
+  "seed_count": 6,
+  "total_keys": 125,
+  "pos_counts": {
+    "n": 89,
+    "adj": 3,
+    "v": 33
+  },
+  "source_counts": {
+    "0_seed": 8,
+    "11_pertainym": 1,
+    "2_hypernym_d1": 8,
+    "6_derivational": 3,
+    "10_sibling": 113
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 6,
+      "words": [
+        "Moon(n)",
+        "moonlight(n)",
+        "moonshine(n)",
+        "lunar(adj)",
+        "moonlight(v)",
+        "crescent(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 8,
+      "words": [
+        "satellite(n)",
+        "light(n)",
+        "visible light(n)",
+        "visible radiation(n)",
+        "work(v)",
+        "do work(v)",
+        "curve(n)",
+        "curved shape(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 3,
+      "words": [
+        "moony(adj)",
+        "crescent(adj)",
+        "moonlighter(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 108,
+      "words": [
+        "Galilean satellite(n)",
+        "Galilean(n)",
+        "starlight(n)",
+        "luminescence(n)",
+        "meteor(n)",
+        "shooting star(n)",
+        "firelight(n)",
+        "streamer(n)",
+        "gaslight(n)",
+        "friar's lantern(n)",
+        "ignis fatuus(n)",
+        "jack-o'-lantern(n)",
+        "will-o'-the-wisp(n)",
+        "twilight(n)",
+        "scintillation(n)",
+        "incandescence(n)",
+        "glow(n)",
+        "torchlight(n)",
+        "lamplight(n)",
+        "corona(n)",
+        "radiance(n)",
+        "glowing(n)",
+        "fluorescence(n)",
+        "half-light(n)",
+        "sunlight(n)",
+        "counterglow(n)",
+        "gegenschein(n)",
+        "beam(n)",
+        "beam of light(n)",
+        "light beam(n)",
+        "ray(n)",
+        "ray of light(n)",
+        "shaft(n)",
+        "shaft of light(n)",
+        "irradiation(n)",
+        "candlelight(n)",
+        "candle flame(n)",
+        "tinker(v)",
+        "job(v)",
+        "fill(v)",
+        "take(v)",
+        "occupy(v)",
+        "labor(v)",
+        "labour(v)",
+        "toil(v)",
+        "fag(v)",
+        "travail(v)",
+        "grind(v)",
+        "drudge(v)",
+        "dig(v)",
+        "moil(v)",
+        "man(v)",
+        "serve(v)",
+        "turn a trick(v)",
+        "drive(v)",
+        "fink(v)",
+        "scab(v)",
+        "rat(v)",
+        "blackleg(v)",
+        "bank(v)",
+        "freelance(v)",
+        "slave(v)",
+        "break one's back(v)",
+        "buckle down(v)",
+        "knuckle down(v)",
+        "subcontract(v)",
+        "farm(v)",
+        "envelope(n)",
+        "sinuosity(n)",
+        "sinuousness(n)",
+        "catenary(n)",
+        "bend(n)",
+        "crook(n)",
+        "twist(n)",
+        "turn(n)",
+        "spiral(n)",
+        "S-shape(n)",
+        "arch(n)",
+        "extrados(n)",
+        "arc(n)",
+        "scallop(n)",
+        "crenation(n)",
+        "crenature(n)",
+        "crenel(n)",
+        "crenelle(n)",
+        "bow(n)",
+        "Cupid's bow(n)",
+        "normal curve(n)",
+        "bell-shaped curve(n)",
+        "Gaussian curve(n)",
+        "Gaussian shape(n)",
+        "wave(n)",
+        "undulation(n)",
+        "intrados(n)",
+        "helix(n)",
+        "closed curve(n)",
+        "meander(n)",
+        "bell(n)",
+        "bell shape(n)",
+        "campana(n)",
+        "roulette(n)",
+        "line roulette(n)",
+        "perversion(n)",
+        "hook(n)",
+        "crotchet(n)",
+        "quadric(n)",
+        "quadric surface(n)",
+        "gooseneck(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "arc",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "arc.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "bow.n.05"
+        }
+      ],
+      "definition": "a continuous portion of a circle"
+    },
+    {
+      "lemma": "arch",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "arch.n.01"
+        }
+      ],
+      "definition": "a curved shape in the vertical plane that spans an opening"
+    },
+    {
+      "lemma": "bank",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "bank.v.05"
+        }
+      ],
+      "definition": "be in the banking business"
+    },
+    {
+      "lemma": "beam",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "beam.n.04"
+        }
+      ],
+      "definition": "a column of light (as from a beacon)"
+    },
+    {
+      "lemma": "beam of light",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "beam.n.04"
+        }
+      ],
+      "definition": "a column of light (as from a beacon)"
+    },
+    {
+      "lemma": "bell",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "bell.n.05"
+        }
+      ],
+      "definition": "the shape of a bell"
+    },
+    {
+      "lemma": "bell shape",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "bell.n.05"
+        }
+      ],
+      "definition": "the shape of a bell"
+    },
+    {
+      "lemma": "bell-shaped curve",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "normal_curve.n.01"
+        }
+      ],
+      "definition": "a symmetrical curve representing the normal distribution"
+    },
+    {
+      "lemma": "bend",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "bend.n.01"
+        }
+      ],
+      "definition": "a circular segment of a curve"
+    },
+    {
+      "lemma": "blackleg",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "fink.v.01"
+        }
+      ],
+      "definition": "take the place of work of someone on strike"
+    },
+    {
+      "lemma": "bow",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "bow.n.05"
+        }
+      ],
+      "definition": "something curved in shape"
+    },
+    {
+      "lemma": "break one's back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "slave.v.01"
+        }
+      ],
+      "definition": "work very hard, like a slave"
+    },
+    {
+      "lemma": "buckle down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "slave.v.01"
+        }
+      ],
+      "definition": "work very hard, like a slave"
+    },
+    {
+      "lemma": "campana",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "bell.n.05"
+        }
+      ],
+      "definition": "the shape of a bell"
+    },
+    {
+      "lemma": "candle flame",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "candlelight.n.01"
+        }
+      ],
+      "definition": "the light provided by a burning candle"
+    },
+    {
+      "lemma": "candlelight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "candlelight.n.01"
+        }
+      ],
+      "definition": "the light provided by a burning candle"
+    },
+    {
+      "lemma": "catenary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "catenary.n.01"
+        }
+      ],
+      "definition": "the curve theoretically assumed by a perfectly flexible and inextensible cord of uniform density and cross section hanging freely from two fixed points"
+    },
+    {
+      "lemma": "closed curve",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "closed_curve.n.01"
+        }
+      ],
+      "definition": "a curve (such as a circle) having no endpoints"
+    },
+    {
+      "lemma": "corona",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "corona.n.04"
+        }
+      ],
+      "definition": "one or more circles of light seen around a luminous object"
+    },
+    {
+      "lemma": "counterglow",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "counterglow.n.01"
+        }
+      ],
+      "definition": "a faint spot of light in the night sky that appears directly opposite the position of the sun; a reflection of sunlight by micrometeoric material in space"
+    },
+    {
+      "lemma": "crenation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "scallop.n.01"
+        }
+      ],
+      "definition": "one of a series of rounded projections (or the notches between them) formed by curves along an edge (as the edge of a leaf or piece of cloth or the margin of a shell or a shriveled red blood cell observed in a hypertonic solution etc.)"
+    },
+    {
+      "lemma": "crenature",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "scallop.n.01"
+        }
+      ],
+      "definition": "one of a series of rounded projections (or the notches between them) formed by curves along an edge (as the edge of a leaf or piece of cloth or the margin of a shell or a shriveled red blood cell observed in a hypertonic solution etc.)"
+    },
+    {
+      "lemma": "crenel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "scallop.n.01"
+        }
+      ],
+      "definition": "one of a series of rounded projections (or the notches between them) formed by curves along an edge (as the edge of a leaf or piece of cloth or the margin of a shell or a shriveled red blood cell observed in a hypertonic solution etc.)"
+    },
+    {
+      "lemma": "crenelle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "scallop.n.01"
+        }
+      ],
+      "definition": "one of a series of rounded projections (or the notches between them) formed by curves along an edge (as the edge of a leaf or piece of cloth or the margin of a shell or a shriveled red blood cell observed in a hypertonic solution etc.)"
+    },
+    {
+      "lemma": "crescent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "crescent.n.01",
+          "via_synset": "crescent.s.01"
+        }
+      ],
+      "definition": "resembling the new moon in shape"
+    },
+    {
+      "lemma": "crescent",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "crescent.n.01",
+          "via_synset": "crescent.n.01"
+        }
+      ],
+      "definition": "any shape resembling the curved shape of the moon in its first or last quarters"
+    },
+    {
+      "lemma": "crook",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "bend.n.01"
+        }
+      ],
+      "definition": "a circular segment of a curve"
+    },
+    {
+      "lemma": "crotchet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "hook.n.02"
+        }
+      ],
+      "definition": "a sharp curve or crook; a shape resembling a hook"
+    },
+    {
+      "lemma": "Cupid's bow",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "cupid's_bow.n.01"
+        }
+      ],
+      "definition": "the double curve of the upper lip when considered to resemble Cupid's bow"
+    },
+    {
+      "lemma": "curve",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "crescent.n.01",
+          "via_synset": "curve.n.01"
+        }
+      ],
+      "definition": "the trace of a point whose direction of motion changes"
+    },
+    {
+      "lemma": "curved shape",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "crescent.n.01",
+          "via_synset": "curve.n.01"
+        }
+      ],
+      "definition": "the trace of a point whose direction of motion changes"
+    },
+    {
+      "lemma": "dig",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "labor.v.02"
+        }
+      ],
+      "definition": "work hard"
+    },
+    {
+      "lemma": "do work",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "moonlight.v.01",
+          "via_synset": "work.v.02"
+        }
+      ],
+      "definition": "be employed"
+    },
+    {
+      "lemma": "drive",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "drive.v.13"
+        }
+      ],
+      "definition": "work as a driver"
+    },
+    {
+      "lemma": "drudge",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "labor.v.02"
+        }
+      ],
+      "definition": "work hard"
+    },
+    {
+      "lemma": "envelope",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "envelope.n.03"
+        }
+      ],
+      "definition": "a curve that is tangent to each of a family of curves"
+    },
+    {
+      "lemma": "extrados",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "extrados.n.01"
+        }
+      ],
+      "definition": "the exterior curve of an arch"
+    },
+    {
+      "lemma": "fag",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "labor.v.02"
+        }
+      ],
+      "definition": "work hard"
+    },
+    {
+      "lemma": "farm",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "farm.v.01"
+        }
+      ],
+      "definition": "be a farmer; work as a farmer"
+    },
+    {
+      "lemma": "fill",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "fill.v.04"
+        }
+      ],
+      "definition": "assume, as of positions or roles"
+    },
+    {
+      "lemma": "fink",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "fink.v.01"
+        }
+      ],
+      "definition": "take the place of work of someone on strike"
+    },
+    {
+      "lemma": "firelight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "firelight.n.01"
+        }
+      ],
+      "definition": "the light of a fire (especially in a fireplace)"
+    },
+    {
+      "lemma": "fluorescence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "fluorescence.n.01"
+        }
+      ],
+      "definition": "light emitted during absorption of radiation of some other (invisible) wavelength"
+    },
+    {
+      "lemma": "freelance",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "freelance.v.01"
+        }
+      ],
+      "definition": "work independently and on temporary contracts rather than for a long-term employer"
+    },
+    {
+      "lemma": "friar's lantern",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "friar's_lantern.n.01"
+        }
+      ],
+      "definition": "a pale light sometimes seen at night over marshy ground"
+    },
+    {
+      "lemma": "Galilean",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "satellite.n.03",
+          "via_synset": "galilean_satellite.n.01"
+        }
+      ],
+      "definition": "one of the four satellites of Jupiter that were discovered by Galileo"
+    },
+    {
+      "lemma": "Galilean satellite",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "satellite.n.03",
+          "via_synset": "galilean_satellite.n.01"
+        }
+      ],
+      "definition": "one of the four satellites of Jupiter that were discovered by Galileo"
+    },
+    {
+      "lemma": "gaslight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "gaslight.n.01"
+        }
+      ],
+      "definition": "light yielded by the combustion of illuminating gas"
+    },
+    {
+      "lemma": "Gaussian curve",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "normal_curve.n.01"
+        }
+      ],
+      "definition": "a symmetrical curve representing the normal distribution"
+    },
+    {
+      "lemma": "Gaussian shape",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "normal_curve.n.01"
+        }
+      ],
+      "definition": "a symmetrical curve representing the normal distribution"
+    },
+    {
+      "lemma": "gegenschein",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "counterglow.n.01"
+        }
+      ],
+      "definition": "a faint spot of light in the night sky that appears directly opposite the position of the sun; a reflection of sunlight by micrometeoric material in space"
+    },
+    {
+      "lemma": "glow",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "incandescence.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "radiance.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "glow.n.05"
+        }
+      ],
+      "definition": "the phenomenon of light emission by a body as its temperature is raised"
+    },
+    {
+      "lemma": "glowing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "radiance.n.01"
+        }
+      ],
+      "definition": "the amount of electromagnetic radiation leaving or arriving at a point on a surface"
+    },
+    {
+      "lemma": "gooseneck",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "gooseneck.n.01"
+        }
+      ],
+      "definition": "something in a thin curved form (like the neck of a goose)"
+    },
+    {
+      "lemma": "grind",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "labor.v.02"
+        }
+      ],
+      "definition": "work hard"
+    },
+    {
+      "lemma": "half-light",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "half-light.n.01"
+        }
+      ],
+      "definition": "a greyish light (as at dawn or dusk or in dim interiors)"
+    },
+    {
+      "lemma": "helix",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "helix.n.01"
+        }
+      ],
+      "definition": "a curve that lies on the surface of a cylinder or cone and cuts the element at a constant angle"
+    },
+    {
+      "lemma": "hook",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "hook.n.02"
+        }
+      ],
+      "definition": "a sharp curve or crook; a shape resembling a hook"
+    },
+    {
+      "lemma": "ignis fatuus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "friar's_lantern.n.01"
+        }
+      ],
+      "definition": "a pale light sometimes seen at night over marshy ground"
+    },
+    {
+      "lemma": "incandescence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "incandescence.n.01"
+        }
+      ],
+      "definition": "the phenomenon of light emission by a body as its temperature is raised"
+    },
+    {
+      "lemma": "intrados",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "intrados.n.01"
+        }
+      ],
+      "definition": "the interior curve of an arch"
+    },
+    {
+      "lemma": "irradiation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "beam.n.04"
+        }
+      ],
+      "definition": "a column of light (as from a beacon)"
+    },
+    {
+      "lemma": "jack-o'-lantern",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "friar's_lantern.n.01"
+        }
+      ],
+      "definition": "a pale light sometimes seen at night over marshy ground"
+    },
+    {
+      "lemma": "job",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "job.v.03"
+        }
+      ],
+      "definition": "work occasionally"
+    },
+    {
+      "lemma": "knuckle down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "slave.v.01"
+        }
+      ],
+      "definition": "work very hard, like a slave"
+    },
+    {
+      "lemma": "labor",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "labor.v.02"
+        }
+      ],
+      "definition": "work hard"
+    },
+    {
+      "lemma": "labour",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "labor.v.02"
+        }
+      ],
+      "definition": "work hard"
+    },
+    {
+      "lemma": "lamplight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "lamplight.n.01"
+        }
+      ],
+      "definition": "light from a lamp"
+    },
+    {
+      "lemma": "light",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "moonlight.n.01",
+          "via_synset": "light.n.01"
+        }
+      ],
+      "definition": "(physics) electromagnetic radiation that can produce a visual sensation"
+    },
+    {
+      "lemma": "light beam",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "beam.n.04"
+        }
+      ],
+      "definition": "a column of light (as from a beacon)"
+    },
+    {
+      "lemma": "line roulette",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "roulette.n.01"
+        }
+      ],
+      "definition": "a line generated by a point on one figure rolling around a second figure"
+    },
+    {
+      "lemma": "luminescence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "luminescence.n.01"
+        }
+      ],
+      "definition": "light not due to incandescence; occurs at low temperatures"
+    },
+    {
+      "lemma": "lunar",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "lunar.a.01",
+          "via_synset": "lunar.a.01"
+        }
+      ],
+      "definition": "of or relating to or associated with the moon"
+    },
+    {
+      "lemma": "man",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "man.v.01"
+        }
+      ],
+      "definition": "take charge of a certain job; occupy a certain work place"
+    },
+    {
+      "lemma": "meander",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "meander.n.01"
+        }
+      ],
+      "definition": "a bend or curve, as in a stream or river"
+    },
+    {
+      "lemma": "meteor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "meteor.n.02"
+        }
+      ],
+      "definition": "a streak of light in the sky at night that results when a meteoroid hits the earth's atmosphere and air friction causes the meteoroid to melt or vaporize or explode"
+    },
+    {
+      "lemma": "moil",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "labor.v.02"
+        }
+      ],
+      "definition": "work hard"
+    },
+    {
+      "lemma": "Moon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "moon.n.01",
+          "via_synset": "moon.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "moon.n.06",
+          "via_synset": "moon.n.06"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "moonlight.n.01",
+          "via_synset": "moonlight.n.01"
+        },
+        {
+          "step": "11_pertainym",
+          "relation": "pertainym",
+          "from_synset": "lunar.a.01",
+          "via_synset": "moon.n.01"
+        }
+      ],
+      "definition": "the natural satellite of the Earth"
+    },
+    {
+      "lemma": "moonlight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "moonlight.n.01",
+          "via_synset": "moonlight.n.01"
+        }
+      ],
+      "definition": "the light of the Moon"
+    },
+    {
+      "lemma": "moonlight",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "moonlight.v.01",
+          "via_synset": "moonlight.v.01"
+        }
+      ],
+      "definition": "work a second job, usually after hours"
+    },
+    {
+      "lemma": "moonlighter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "moonlight.v.01",
+          "via_synset": "moonlighter.n.01"
+        }
+      ],
+      "definition": "a person who holds a second job (usually after hours)"
+    },
+    {
+      "lemma": "moonshine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "moonlight.n.01",
+          "via_synset": "moonlight.n.01"
+        }
+      ],
+      "definition": "the light of the Moon"
+    },
+    {
+      "lemma": "moony",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "moonlight.n.01",
+          "via_synset": "moonlit.a.01"
+        }
+      ],
+      "definition": "lighted by moonlight"
+    },
+    {
+      "lemma": "normal curve",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "normal_curve.n.01"
+        }
+      ],
+      "definition": "a symmetrical curve representing the normal distribution"
+    },
+    {
+      "lemma": "occupy",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "fill.v.04"
+        }
+      ],
+      "definition": "assume, as of positions or roles"
+    },
+    {
+      "lemma": "perversion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "perversion.n.01"
+        }
+      ],
+      "definition": "a curve that reverses the direction of something"
+    },
+    {
+      "lemma": "quadric",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "quadric.n.01"
+        }
+      ],
+      "definition": "a curve or surface whose equation (in Cartesian coordinates) is of the second degree"
+    },
+    {
+      "lemma": "quadric surface",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "quadric.n.01"
+        }
+      ],
+      "definition": "a curve or surface whose equation (in Cartesian coordinates) is of the second degree"
+    },
+    {
+      "lemma": "radiance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "radiance.n.01"
+        }
+      ],
+      "definition": "the amount of electromagnetic radiation leaving or arriving at a point on a surface"
+    },
+    {
+      "lemma": "rat",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "fink.v.01"
+        }
+      ],
+      "definition": "take the place of work of someone on strike"
+    },
+    {
+      "lemma": "ray",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "beam.n.04"
+        }
+      ],
+      "definition": "a column of light (as from a beacon)"
+    },
+    {
+      "lemma": "ray of light",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "beam.n.04"
+        }
+      ],
+      "definition": "a column of light (as from a beacon)"
+    },
+    {
+      "lemma": "roulette",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "roulette.n.01"
+        }
+      ],
+      "definition": "a line generated by a point on one figure rolling around a second figure"
+    },
+    {
+      "lemma": "S-shape",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "s-shape.n.01"
+        }
+      ],
+      "definition": "a double curve resembling the letter S"
+    },
+    {
+      "lemma": "satellite",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "moon.n.06",
+          "via_synset": "satellite.n.03"
+        }
+      ],
+      "definition": "any celestial body orbiting around a planet or star"
+    },
+    {
+      "lemma": "scab",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "fink.v.01"
+        }
+      ],
+      "definition": "take the place of work of someone on strike"
+    },
+    {
+      "lemma": "scallop",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "scallop.n.01"
+        }
+      ],
+      "definition": "one of a series of rounded projections (or the notches between them) formed by curves along an edge (as the edge of a leaf or piece of cloth or the margin of a shell or a shriveled red blood cell observed in a hypertonic solution etc.)"
+    },
+    {
+      "lemma": "scintillation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "scintillation.n.01"
+        }
+      ],
+      "definition": "(physics) a flash of light that is produced in a phosphor when it absorbs a photon or ionizing particle"
+    },
+    {
+      "lemma": "serve",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "serve.v.13"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "serve.v.02"
+        }
+      ],
+      "definition": "do military service"
+    },
+    {
+      "lemma": "shaft",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "beam.n.04"
+        }
+      ],
+      "definition": "a column of light (as from a beacon)"
+    },
+    {
+      "lemma": "shaft of light",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "beam.n.04"
+        }
+      ],
+      "definition": "a column of light (as from a beacon)"
+    },
+    {
+      "lemma": "shooting star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "meteor.n.02"
+        }
+      ],
+      "definition": "a streak of light in the sky at night that results when a meteoroid hits the earth's atmosphere and air friction causes the meteoroid to melt or vaporize or explode"
+    },
+    {
+      "lemma": "sinuosity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "sinuosity.n.01"
+        }
+      ],
+      "definition": "having curves"
+    },
+    {
+      "lemma": "sinuousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "sinuosity.n.01"
+        }
+      ],
+      "definition": "having curves"
+    },
+    {
+      "lemma": "slave",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "slave.v.01"
+        }
+      ],
+      "definition": "work very hard, like a slave"
+    },
+    {
+      "lemma": "spiral",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "spiral.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "helix.n.01"
+        }
+      ],
+      "definition": "a plane curve traced by a point circling about the center but at increasing distances from the center"
+    },
+    {
+      "lemma": "starlight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "starlight.n.01"
+        }
+      ],
+      "definition": "the light of the stars"
+    },
+    {
+      "lemma": "streamer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "streamer.n.01"
+        }
+      ],
+      "definition": "light that streams"
+    },
+    {
+      "lemma": "subcontract",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "subcontract.v.02"
+        }
+      ],
+      "definition": "work under a subcontract; engage in a subcontract"
+    },
+    {
+      "lemma": "sunlight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "sunlight.n.01"
+        }
+      ],
+      "definition": "the rays of the sun"
+    },
+    {
+      "lemma": "take",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "fill.v.04"
+        }
+      ],
+      "definition": "assume, as of positions or roles"
+    },
+    {
+      "lemma": "tinker",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "tinker.v.02"
+        }
+      ],
+      "definition": "work as a tinker or tinkerer"
+    },
+    {
+      "lemma": "toil",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "labor.v.02"
+        }
+      ],
+      "definition": "work hard"
+    },
+    {
+      "lemma": "torchlight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "torchlight.n.01"
+        }
+      ],
+      "definition": "light from a torch or torches"
+    },
+    {
+      "lemma": "travail",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "labor.v.02"
+        }
+      ],
+      "definition": "work hard"
+    },
+    {
+      "lemma": "turn",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "bend.n.01"
+        }
+      ],
+      "definition": "a circular segment of a curve"
+    },
+    {
+      "lemma": "turn a trick",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "work.v.02",
+          "via_synset": "turn_a_trick.v.01"
+        }
+      ],
+      "definition": "have a customer, of a prostitute"
+    },
+    {
+      "lemma": "twilight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "twilight.n.02"
+        }
+      ],
+      "definition": "the diffused light from the sky when the sun is below the horizon but its rays are refracted by the atmosphere of the earth"
+    },
+    {
+      "lemma": "twist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "bend.n.01"
+        }
+      ],
+      "definition": "a circular segment of a curve"
+    },
+    {
+      "lemma": "undulation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "wave.n.07"
+        }
+      ],
+      "definition": "an undulating curve"
+    },
+    {
+      "lemma": "visible light",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "moonlight.n.01",
+          "via_synset": "light.n.01"
+        }
+      ],
+      "definition": "(physics) electromagnetic radiation that can produce a visual sensation"
+    },
+    {
+      "lemma": "visible radiation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "moonlight.n.01",
+          "via_synset": "light.n.01"
+        }
+      ],
+      "definition": "(physics) electromagnetic radiation that can produce a visual sensation"
+    },
+    {
+      "lemma": "wave",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curve.n.01",
+          "via_synset": "wave.n.07"
+        }
+      ],
+      "definition": "an undulating curve"
+    },
+    {
+      "lemma": "will-o'-the-wisp",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "light.n.01",
+          "via_synset": "friar's_lantern.n.01"
+        }
+      ],
+      "definition": "a pale light sometimes seen at night over marshy ground"
+    },
+    {
+      "lemma": "work",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "moonlight.v.01",
+          "via_synset": "work.v.02"
+        }
+      ],
+      "definition": "be employed"
+    }
+  ]
+}

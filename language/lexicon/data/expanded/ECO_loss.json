@@ -1,0 +1,1444 @@
+{
+  "atom_id": "ECO.loss",
+  "category": "ECO",
+  "seed_count": 6,
+  "total_keys": 94,
+  "pos_counts": {
+    "n": 82,
+    "v": 12
+  },
+  "source_counts": {
+    "0_seed": 11,
+    "2_hypernym_d1": 10,
+    "3_hyponym_d1": 8,
+    "10_sibling": 67,
+    "6_derivational": 5
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 8,
+      "words": [
+        "loss(n)",
+        "red ink(n)",
+        "red(n)",
+        "lose(v)",
+        "miss(v)",
+        "deficit(n)",
+        "shortage(n)",
+        "shortfall(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 10,
+      "words": [
+        "failure(n)",
+        "experience(n)",
+        "sum(n)",
+        "sum of money(n)",
+        "amount(n)",
+        "amount of money(n)",
+        "suffer(v)",
+        "insufficiency(n)",
+        "inadequacy(n)",
+        "deficiency(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 8,
+      "words": [
+        "default(n)",
+        "capitulation(n)",
+        "fall(n)",
+        "surrender(n)",
+        "squeeze(n)",
+        "paper loss(n)",
+        "overlook(v)",
+        "oxygen deficit(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 3,
+      "words": [
+        "capitulate(v)",
+        "fall(v)",
+        "surrender(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 65,
+      "words": [
+        "backsliding(n)",
+        "lapse(n)",
+        "lapsing(n)",
+        "relapse(n)",
+        "relapsing(n)",
+        "reversion(n)",
+        "reverting(n)",
+        "error(n)",
+        "misplay(n)",
+        "naught(n)",
+        "nonconformity(n)",
+        "nonconformance(n)",
+        "nonpayment(n)",
+        "nonremittal(n)",
+        "failing(n)",
+        "flunk(n)",
+        "out(n)",
+        "good time(n)",
+        "blast(n)",
+        "out-of-body experience(n)",
+        "taste(n)",
+        "flash(n)",
+        "flashing(n)",
+        "augury(n)",
+        "sign(n)",
+        "foretoken(n)",
+        "preindication(n)",
+        "appalling(n)",
+        "ordeal(n)",
+        "time(n)",
+        "vision(n)",
+        "trip(n)",
+        "head trip(n)",
+        "near-death experience(n)",
+        "payroll(n)",
+        "paysheet(n)",
+        "defalcation(n)",
+        "figure(n)",
+        "purse(n)",
+        "contribution(n)",
+        "gross(n)",
+        "revenue(n)",
+        "receipts(n)",
+        "deductible(n)",
+        "coverage(n)",
+        "insurance coverage(n)",
+        "cash surrender value(n)",
+        "advance(n)",
+        "cash advance(n)",
+        "peanuts(n)",
+        "grieve(v)",
+        "sorrow(v)",
+        "anguish(v)",
+        "agonize(v)",
+        "agonise(v)",
+        "meagerness(n)",
+        "meagreness(n)",
+        "leanness(n)",
+        "poorness(n)",
+        "scantiness(n)",
+        "scantness(n)",
+        "exiguity(n)",
+        "slenderness(n)",
+        "scarcity(n)",
+        "scarceness(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "advance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sum.n.01",
+          "via_synset": "advance.n.05"
+        }
+      ],
+      "definition": "an amount paid before it is earned"
+    },
+    {
+      "lemma": "agonise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "suffer.v.03",
+          "via_synset": "agonize.v.02"
+        }
+      ],
+      "definition": "suffer agony or anguish"
+    },
+    {
+      "lemma": "agonize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "suffer.v.03",
+          "via_synset": "agonize.v.02"
+        }
+      ],
+      "definition": "suffer agony or anguish"
+    },
+    {
+      "lemma": "amount",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "loss.n.06",
+          "via_synset": "sum.n.01"
+        }
+      ],
+      "definition": "a quantity of money"
+    },
+    {
+      "lemma": "amount of money",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "loss.n.06",
+          "via_synset": "sum.n.01"
+        }
+      ],
+      "definition": "a quantity of money"
+    },
+    {
+      "lemma": "anguish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "suffer.v.03",
+          "via_synset": "anguish.v.01"
+        }
+      ],
+      "definition": "suffer great pains or distress"
+    },
+    {
+      "lemma": "appalling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.03",
+          "via_synset": "appalling.n.01"
+        }
+      ],
+      "definition": "an experience that appalls"
+    },
+    {
+      "lemma": "augury",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.03",
+          "via_synset": "augury.n.01"
+        }
+      ],
+      "definition": "an event that is experienced as indicating important things to come"
+    },
+    {
+      "lemma": "backsliding",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "failure.n.01",
+          "via_synset": "backsliding.n.01"
+        }
+      ],
+      "definition": "a failure to maintain a higher state"
+    },
+    {
+      "lemma": "blast",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.03",
+          "via_synset": "good_time.n.01"
+        }
+      ],
+      "definition": "a highly pleasurable or exciting experience"
+    },
+    {
+      "lemma": "capitulate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "capitulation.n.03",
+          "via_synset": "capitulate.v.01"
+        }
+      ],
+      "definition": "surrender under agreed conditions"
+    },
+    {
+      "lemma": "capitulation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "loss.n.03",
+          "via_synset": "capitulation.n.03"
+        }
+      ],
+      "definition": "the act of surrendering (usually under agreed conditions)"
+    },
+    {
+      "lemma": "cash advance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sum.n.01",
+          "via_synset": "advance.n.05"
+        }
+      ],
+      "definition": "an amount paid before it is earned"
+    },
+    {
+      "lemma": "cash surrender value",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sum.n.01",
+          "via_synset": "cash_surrender_value.n.01"
+        }
+      ],
+      "definition": "the amount that the insurance company will pay on a given life insurance policy if the policy is cancelled prior to the death of the insured"
+    },
+    {
+      "lemma": "contribution",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sum.n.01",
+          "via_synset": "contribution.n.04"
+        }
+      ],
+      "definition": "an amount of money contributed"
+    },
+    {
+      "lemma": "coverage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sum.n.01",
+          "via_synset": "coverage.n.01"
+        }
+      ],
+      "definition": "the total amount and type of insurance carried"
+    },
+    {
+      "lemma": "deductible",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sum.n.01",
+          "via_synset": "deductible.n.01"
+        }
+      ],
+      "definition": "(taxes) an amount that can be deducted (especially for the purposes of calculating income tax)"
+    },
+    {
+      "lemma": "defalcation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sum.n.01",
+          "via_synset": "defalcation.n.01"
+        }
+      ],
+      "definition": "the sum of money that is misappropriated"
+    },
+    {
+      "lemma": "default",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "loss.n.03",
+          "via_synset": "default.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "failure.n.01",
+          "via_synset": "default.n.02"
+        }
+      ],
+      "definition": "loss due to not showing up"
+    },
+    {
+      "lemma": "deficiency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "deficit.n.01",
+          "via_synset": "insufficiency.n.03"
+        }
+      ],
+      "definition": "lack of an adequate quantity or number"
+    },
+    {
+      "lemma": "deficit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "deficit.n.01",
+          "via_synset": "deficit.n.01"
+        }
+      ],
+      "definition": "the property of being an amount by which something is less than expected or required"
+    },
+    {
+      "lemma": "error",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "failure.n.01",
+          "via_synset": "error.n.04"
+        }
+      ],
+      "definition": "(baseball) a failure of a defensive player to make an out when normal play would have sufficed"
+    },
+    {
+      "lemma": "exiguity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insufficiency.n.03",
+          "via_synset": "meagerness.n.01"
+        }
+      ],
+      "definition": "the quality of being meager; -George Eliot"
+    },
+    {
+      "lemma": "experience",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "loss.n.05",
+          "via_synset": "experience.n.03"
+        }
+      ],
+      "definition": "an event as apprehended"
+    },
+    {
+      "lemma": "failing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "failure.n.01",
+          "via_synset": "failing.n.02"
+        }
+      ],
+      "definition": "failure to reach a minimum required performance"
+    },
+    {
+      "lemma": "failure",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "loss.n.03",
+          "via_synset": "failure.n.01"
+        }
+      ],
+      "definition": "an act that fails"
+    },
+    {
+      "lemma": "fall",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "loss.n.03",
+          "via_synset": "capitulation.n.03"
+        }
+      ],
+      "definition": "the act of surrendering (usually under agreed conditions)"
+    },
+    {
+      "lemma": "fall",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "capitulation.n.03",
+          "via_synset": "fall.v.13"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "capitulation.n.03",
+          "via_synset": "fall.v.09"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "capitulation.n.03",
+          "via_synset": "fall.v.06"
+        }
+      ],
+      "definition": "lose office or power"
+    },
+    {
+      "lemma": "figure",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sum.n.01",
+          "via_synset": "figure.n.07"
+        }
+      ],
+      "definition": "an amount of money expressed numerically"
+    },
+    {
+      "lemma": "flash",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.03",
+          "via_synset": "flash.n.03"
+        }
+      ],
+      "definition": "a short vivid experience"
+    },
+    {
+      "lemma": "flashing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.03",
+          "via_synset": "flash.n.03"
+        }
+      ],
+      "definition": "a short vivid experience"
+    },
+    {
+      "lemma": "flunk",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "failure.n.01",
+          "via_synset": "failing.n.02"
+        }
+      ],
+      "definition": "failure to reach a minimum required performance"
+    },
+    {
+      "lemma": "foretoken",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.03",
+          "via_synset": "augury.n.01"
+        }
+      ],
+      "definition": "an event that is experienced as indicating important things to come"
+    },
+    {
+      "lemma": "good time",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.03",
+          "via_synset": "good_time.n.01"
+        }
+      ],
+      "definition": "a highly pleasurable or exciting experience"
+    },
+    {
+      "lemma": "grieve",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "suffer.v.03",
+          "via_synset": "grieve.v.01"
+        }
+      ],
+      "definition": "feel grief"
+    },
+    {
+      "lemma": "gross",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sum.n.01",
+          "via_synset": "gross.n.02"
+        }
+      ],
+      "definition": "the entire amount of income before any deductions are made"
+    },
+    {
+      "lemma": "head trip",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.03",
+          "via_synset": "trip.n.04"
+        }
+      ],
+      "definition": "an exciting or stimulating experience"
+    },
+    {
+      "lemma": "inadequacy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "deficit.n.01",
+          "via_synset": "insufficiency.n.03"
+        }
+      ],
+      "definition": "lack of an adequate quantity or number"
+    },
+    {
+      "lemma": "insufficiency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "deficit.n.01",
+          "via_synset": "insufficiency.n.03"
+        }
+      ],
+      "definition": "lack of an adequate quantity or number"
+    },
+    {
+      "lemma": "insurance coverage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sum.n.01",
+          "via_synset": "coverage.n.01"
+        }
+      ],
+      "definition": "the total amount and type of insurance carried"
+    },
+    {
+      "lemma": "lapse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "failure.n.01",
+          "via_synset": "backsliding.n.01"
+        }
+      ],
+      "definition": "a failure to maintain a higher state"
+    },
+    {
+      "lemma": "lapsing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "failure.n.01",
+          "via_synset": "backsliding.n.01"
+        }
+      ],
+      "definition": "a failure to maintain a higher state"
+    },
+    {
+      "lemma": "leanness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insufficiency.n.03",
+          "via_synset": "meagerness.n.01"
+        }
+      ],
+      "definition": "the quality of being meager; -George Eliot"
+    },
+    {
+      "lemma": "lose",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "lose.v.03",
+          "via_synset": "lose.v.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "miss.v.01",
+          "via_synset": "miss.v.01"
+        }
+      ],
+      "definition": "suffer the loss of a person through death or removal"
+    },
+    {
+      "lemma": "loss",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "loss.n.03",
+          "via_synset": "loss.n.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "loss.n.05",
+          "via_synset": "loss.n.05"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "loss.n.06",
+          "via_synset": "loss.n.06"
+        }
+      ],
+      "definition": "the act of losing someone or something"
+    },
+    {
+      "lemma": "meagerness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insufficiency.n.03",
+          "via_synset": "meagerness.n.01"
+        }
+      ],
+      "definition": "the quality of being meager; -George Eliot"
+    },
+    {
+      "lemma": "meagreness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insufficiency.n.03",
+          "via_synset": "meagerness.n.01"
+        }
+      ],
+      "definition": "the quality of being meager; -George Eliot"
+    },
+    {
+      "lemma": "misplay",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "failure.n.01",
+          "via_synset": "error.n.04"
+        }
+      ],
+      "definition": "(baseball) a failure of a defensive player to make an out when normal play would have sufficed"
+    },
+    {
+      "lemma": "miss",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "miss.v.01",
+          "via_synset": "miss.v.01"
+        }
+      ],
+      "definition": "fail to perceive or to catch with the senses or the mind"
+    },
+    {
+      "lemma": "naught",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "failure.n.01",
+          "via_synset": "naught.n.02"
+        }
+      ],
+      "definition": "complete failure"
+    },
+    {
+      "lemma": "near-death experience",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.03",
+          "via_synset": "near-death_experience.n.01"
+        }
+      ],
+      "definition": "the experience of being close to death but surviving"
+    },
+    {
+      "lemma": "nonconformance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "failure.n.01",
+          "via_synset": "nonconformity.n.04"
+        }
+      ],
+      "definition": "failure to conform to accepted standards of behavior"
+    },
+    {
+      "lemma": "nonconformity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "failure.n.01",
+          "via_synset": "nonconformity.n.04"
+        }
+      ],
+      "definition": "failure to conform to accepted standards of behavior"
+    },
+    {
+      "lemma": "nonpayment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "failure.n.01",
+          "via_synset": "default.n.02"
+        }
+      ],
+      "definition": "act of failing to meet a financial obligation"
+    },
+    {
+      "lemma": "nonremittal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "failure.n.01",
+          "via_synset": "default.n.02"
+        }
+      ],
+      "definition": "act of failing to meet a financial obligation"
+    },
+    {
+      "lemma": "ordeal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.03",
+          "via_synset": "ordeal.n.01"
+        }
+      ],
+      "definition": "a severe or trying experience"
+    },
+    {
+      "lemma": "out",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "failure.n.01",
+          "via_synset": "out.n.01"
+        }
+      ],
+      "definition": "(baseball) a failure by a batter or runner to reach a base safely in baseball"
+    },
+    {
+      "lemma": "out-of-body experience",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.03",
+          "via_synset": "out-of-body_experience.n.01"
+        }
+      ],
+      "definition": "the dissociative experience of observing yourself from an external perspective as though your mind or soul had left and was observing your body"
+    },
+    {
+      "lemma": "overlook",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "miss.v.01",
+          "via_synset": "overlook.v.01"
+        }
+      ],
+      "definition": "look past, fail to notice"
+    },
+    {
+      "lemma": "oxygen deficit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "deficit.n.01",
+          "via_synset": "oxygen_deficit.n.01"
+        }
+      ],
+      "definition": "temporary oxygen shortage in cells resulting from strenuous exercise"
+    },
+    {
+      "lemma": "paper loss",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "loss.n.06",
+          "via_synset": "paper_loss.n.01"
+        }
+      ],
+      "definition": "an unrealized loss on an investment calculated by subtracting the current market price from the investor's cost"
+    },
+    {
+      "lemma": "payroll",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sum.n.01",
+          "via_synset": "payroll.n.02"
+        }
+      ],
+      "definition": "the total amount of money paid in wages"
+    },
+    {
+      "lemma": "paysheet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sum.n.01",
+          "via_synset": "payroll.n.02"
+        }
+      ],
+      "definition": "the total amount of money paid in wages"
+    },
+    {
+      "lemma": "peanuts",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sum.n.01",
+          "via_synset": "peanuts.n.01"
+        }
+      ],
+      "definition": "an insignificant sum of money; a trifling amount"
+    },
+    {
+      "lemma": "poorness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insufficiency.n.03",
+          "via_synset": "meagerness.n.01"
+        }
+      ],
+      "definition": "the quality of being meager; -George Eliot"
+    },
+    {
+      "lemma": "preindication",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.03",
+          "via_synset": "augury.n.01"
+        }
+      ],
+      "definition": "an event that is experienced as indicating important things to come"
+    },
+    {
+      "lemma": "purse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sum.n.01",
+          "via_synset": "purse.n.04"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sum.n.01",
+          "via_synset": "purse.n.02"
+        }
+      ],
+      "definition": "a sum of money offered as a prize"
+    },
+    {
+      "lemma": "receipts",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sum.n.01",
+          "via_synset": "gross.n.02"
+        }
+      ],
+      "definition": "the entire amount of income before any deductions are made"
+    },
+    {
+      "lemma": "red",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "loss.n.06",
+          "via_synset": "loss.n.06"
+        }
+      ],
+      "definition": "the amount by which the cost of a business exceeds its revenue"
+    },
+    {
+      "lemma": "red ink",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "loss.n.06",
+          "via_synset": "loss.n.06"
+        }
+      ],
+      "definition": "the amount by which the cost of a business exceeds its revenue"
+    },
+    {
+      "lemma": "relapse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "failure.n.01",
+          "via_synset": "backsliding.n.01"
+        }
+      ],
+      "definition": "a failure to maintain a higher state"
+    },
+    {
+      "lemma": "relapsing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "failure.n.01",
+          "via_synset": "backsliding.n.01"
+        }
+      ],
+      "definition": "a failure to maintain a higher state"
+    },
+    {
+      "lemma": "revenue",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sum.n.01",
+          "via_synset": "gross.n.02"
+        }
+      ],
+      "definition": "the entire amount of income before any deductions are made"
+    },
+    {
+      "lemma": "reversion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "failure.n.01",
+          "via_synset": "backsliding.n.01"
+        }
+      ],
+      "definition": "a failure to maintain a higher state"
+    },
+    {
+      "lemma": "reverting",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "failure.n.01",
+          "via_synset": "backsliding.n.01"
+        }
+      ],
+      "definition": "a failure to maintain a higher state"
+    },
+    {
+      "lemma": "scantiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insufficiency.n.03",
+          "via_synset": "meagerness.n.01"
+        }
+      ],
+      "definition": "the quality of being meager; -George Eliot"
+    },
+    {
+      "lemma": "scantness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insufficiency.n.03",
+          "via_synset": "meagerness.n.01"
+        }
+      ],
+      "definition": "the quality of being meager; -George Eliot"
+    },
+    {
+      "lemma": "scarceness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insufficiency.n.03",
+          "via_synset": "scarcity.n.01"
+        }
+      ],
+      "definition": "a small and inadequate amount"
+    },
+    {
+      "lemma": "scarcity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insufficiency.n.03",
+          "via_synset": "scarcity.n.01"
+        }
+      ],
+      "definition": "a small and inadequate amount"
+    },
+    {
+      "lemma": "shortage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "deficit.n.01",
+          "via_synset": "deficit.n.01"
+        }
+      ],
+      "definition": "the property of being an amount by which something is less than expected or required"
+    },
+    {
+      "lemma": "shortfall",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "deficit.n.01",
+          "via_synset": "deficit.n.01"
+        }
+      ],
+      "definition": "the property of being an amount by which something is less than expected or required"
+    },
+    {
+      "lemma": "sign",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.03",
+          "via_synset": "augury.n.01"
+        }
+      ],
+      "definition": "an event that is experienced as indicating important things to come"
+    },
+    {
+      "lemma": "slenderness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "insufficiency.n.03",
+          "via_synset": "slenderness.n.01"
+        }
+      ],
+      "definition": "the quality of being slight or inadequate"
+    },
+    {
+      "lemma": "sorrow",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "suffer.v.03",
+          "via_synset": "grieve.v.01"
+        }
+      ],
+      "definition": "feel grief"
+    },
+    {
+      "lemma": "squeeze",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "loss.n.06",
+          "via_synset": "squeeze.n.03"
+        }
+      ],
+      "definition": "a situation in which increased costs cannot be passed on to the customer"
+    },
+    {
+      "lemma": "suffer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "lose.v.03",
+          "via_synset": "suffer.v.03"
+        }
+      ],
+      "definition": "experience (emotional) pain"
+    },
+    {
+      "lemma": "sum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "loss.n.06",
+          "via_synset": "sum.n.01"
+        }
+      ],
+      "definition": "a quantity of money"
+    },
+    {
+      "lemma": "sum of money",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "loss.n.06",
+          "via_synset": "sum.n.01"
+        }
+      ],
+      "definition": "a quantity of money"
+    },
+    {
+      "lemma": "surrender",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "loss.n.03",
+          "via_synset": "capitulation.n.03"
+        }
+      ],
+      "definition": "the act of surrendering (usually under agreed conditions)"
+    },
+    {
+      "lemma": "surrender",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "capitulation.n.03",
+          "via_synset": "surrender.v.01"
+        }
+      ],
+      "definition": "give up or agree to forgo to the power or possession of another"
+    },
+    {
+      "lemma": "taste",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.03",
+          "via_synset": "taste.n.04"
+        }
+      ],
+      "definition": "a brief experience of something"
+    },
+    {
+      "lemma": "time",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.03",
+          "via_synset": "time.n.06"
+        }
+      ],
+      "definition": "a person's experience on a particular occasion"
+    },
+    {
+      "lemma": "trip",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.03",
+          "via_synset": "trip.n.04"
+        }
+      ],
+      "definition": "an exciting or stimulating experience"
+    },
+    {
+      "lemma": "vision",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "experience.n.03",
+          "via_synset": "vision.n.05"
+        }
+      ],
+      "definition": "a religious or mystical experience of a supernatural appearance"
+    }
+  ]
+}

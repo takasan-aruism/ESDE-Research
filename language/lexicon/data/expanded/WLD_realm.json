@@ -1,0 +1,1515 @@
+{
+  "atom_id": "WLD.realm",
+  "category": "WLD",
+  "seed_count": 6,
+  "total_keys": 89,
+  "pos_counts": {
+    "n": 87,
+    "v": 1,
+    "adj": 1
+  },
+  "source_counts": {
+    "0_seed": 17,
+    "3_hyponym_d1": 14,
+    "2_hypernym_d1": 16,
+    "10_sibling": 65,
+    "4_hyponym_d2": 4,
+    "6_derivational": 3
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 12,
+      "words": [
+        "kingdom(n)",
+        "realm(n)",
+        "region(n)",
+        "land(n)",
+        "sphere(n)",
+        "domain(n)",
+        "area(n)",
+        "orbit(n)",
+        "field(n)",
+        "arena(n)",
+        "domain of a function(n)",
+        "sector(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 7,
+      "words": [
+        "demesne(n)",
+        "knowledge domain(n)",
+        "knowledge base(n)",
+        "environment(n)",
+        "set(n)",
+        "aspect(n)",
+        "facet(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 11,
+      "words": [
+        "lotusland(n)",
+        "lotus land(n)",
+        "lap(n)",
+        "front(n)",
+        "political arena(n)",
+        "political sphere(n)",
+        "preserve(n)",
+        "province(n)",
+        "responsibility(n)",
+        "distaff(n)",
+        "department(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 2,
+      "words": [
+        "lap of the gods(n)",
+        "ecclesiastical province(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 3,
+      "words": [
+        "king(n)",
+        "preserve(v)",
+        "distaff(adj)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 54,
+      "words": [
+        "duchy(n)",
+        "dukedom(n)",
+        "khanate(n)",
+        "viscounty(n)",
+        "sheikdom(n)",
+        "sheikhdom(n)",
+        "fiefdom(n)",
+        "archduchy(n)",
+        "grand duchy(n)",
+        "suzerainty(n)",
+        "earldom(n)",
+        "emirate(n)",
+        "principality(n)",
+        "princedom(n)",
+        "empire(n)",
+        "imperium(n)",
+        "barony(n)",
+        "scientific knowledge(n)",
+        "discipline(n)",
+        "subject(n)",
+        "subject area(n)",
+        "subject field(n)",
+        "field of study(n)",
+        "study(n)",
+        "bailiwick(n)",
+        "street(n)",
+        "home(n)",
+        "milieu(n)",
+        "surroundings(n)",
+        "setting(n)",
+        "background(n)",
+        "scope(n)",
+        "ecology(n)",
+        "context(n)",
+        "circumstance(n)",
+        "Mandelbrot set(n)",
+        "universal set(n)",
+        "mathematical space(n)",
+        "topological space(n)",
+        "solution(n)",
+        "root(n)",
+        "subset(n)",
+        "null set(n)",
+        "intersection(n)",
+        "locus(n)",
+        "group(n)",
+        "mathematical group(n)",
+        "image(n)",
+        "range(n)",
+        "range of a function(n)",
+        "interval(n)",
+        "diagonal(n)",
+        "side(n)",
+        "surface(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "archduchy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "domain.n.02",
+          "via_synset": "archduchy.n.01"
+        }
+      ],
+      "definition": "the domain controlled by an archduke or archduchess"
+    },
+    {
+      "lemma": "area",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sphere.n.01",
+          "via_synset": "sphere.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "kingdom.n.01",
+          "via_synset": "sphere.n.01"
+        }
+      ],
+      "definition": "a particular environment or walk of life"
+    },
+    {
+      "lemma": "arena",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sphere.n.01",
+          "via_synset": "sphere.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "kingdom.n.01",
+          "via_synset": "sphere.n.01"
+        }
+      ],
+      "definition": "a particular environment or walk of life"
+    },
+    {
+      "lemma": "aspect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sector.n.03",
+          "via_synset": "aspect.n.01"
+        }
+      ],
+      "definition": "a distinct feature or element in a problem"
+    },
+    {
+      "lemma": "background",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "environment.n.01",
+          "via_synset": "setting.n.02"
+        }
+      ],
+      "definition": "the state of the environment in which a situation exists"
+    },
+    {
+      "lemma": "bailiwick",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowledge_domain.n.01",
+          "via_synset": "discipline.n.01"
+        }
+      ],
+      "definition": "a branch of knowledge"
+    },
+    {
+      "lemma": "barony",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "domain.n.02",
+          "via_synset": "barony.n.03"
+        }
+      ],
+      "definition": "the domain of a baron"
+    },
+    {
+      "lemma": "circumstance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "environment.n.01",
+          "via_synset": "context.n.02"
+        }
+      ],
+      "definition": "the set of facts or circumstances that surround a situation or event"
+    },
+    {
+      "lemma": "context",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "environment.n.01",
+          "via_synset": "context.n.02"
+        }
+      ],
+      "definition": "the set of facts or circumstances that surround a situation or event"
+    },
+    {
+      "lemma": "demesne",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "kingdom.n.03",
+          "via_synset": "domain.n.02"
+        }
+      ],
+      "definition": "territory over which rule or control is exercised"
+    },
+    {
+      "lemma": "department",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sector.n.03",
+          "via_synset": "department.n.03"
+        }
+      ],
+      "definition": "a specialized sphere of knowledge"
+    },
+    {
+      "lemma": "diagonal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "set.n.02",
+          "via_synset": "diagonal.n.04"
+        }
+      ],
+      "definition": "(mathematics) a set of entries in a square matrix running diagonally either from the upper left to lower right entry or running from the upper right to lower left entry"
+    },
+    {
+      "lemma": "discipline",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowledge_domain.n.01",
+          "via_synset": "discipline.n.01"
+        }
+      ],
+      "definition": "a branch of knowledge"
+    },
+    {
+      "lemma": "distaff",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "distaff.n.01",
+          "via_synset": "female.s.01"
+        }
+      ],
+      "definition": "characteristic of or peculiar to a woman"
+    },
+    {
+      "lemma": "distaff",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sphere.n.01",
+          "via_synset": "distaff.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sphere.n.01",
+          "via_synset": "distaff.n.01"
+        }
+      ],
+      "definition": "the sphere of work by women"
+    },
+    {
+      "lemma": "domain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sphere.n.01",
+          "via_synset": "sphere.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "domain.n.03",
+          "via_synset": "domain.n.03"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "kingdom.n.03",
+          "via_synset": "domain.n.02"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "region.n.05",
+          "via_synset": "knowledge_domain.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "kingdom.n.01",
+          "via_synset": "sphere.n.01"
+        }
+      ],
+      "definition": "a particular environment or walk of life"
+    },
+    {
+      "lemma": "domain of a function",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "domain.n.03",
+          "via_synset": "domain.n.03"
+        }
+      ],
+      "definition": "(mathematics) the set of values of the independent variable for which a function is defined"
+    },
+    {
+      "lemma": "duchy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "domain.n.02",
+          "via_synset": "duchy.n.01"
+        }
+      ],
+      "definition": "the domain controlled by a duke or duchess"
+    },
+    {
+      "lemma": "dukedom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "domain.n.02",
+          "via_synset": "duchy.n.01"
+        }
+      ],
+      "definition": "the domain controlled by a duke or duchess"
+    },
+    {
+      "lemma": "earldom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "domain.n.02",
+          "via_synset": "earldom.n.02"
+        }
+      ],
+      "definition": "the domain controlled by an earl or count or countess"
+    },
+    {
+      "lemma": "ecclesiastical province",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "province.n.02",
+          "via_synset": "ecclesiastical_province.n.01"
+        }
+      ],
+      "definition": "the district within the jurisdiction of an archbishop or a metropolitan or one of the territorial divisions of an ecclesiastical order"
+    },
+    {
+      "lemma": "ecology",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "environment.n.01",
+          "via_synset": "ecology.n.01"
+        }
+      ],
+      "definition": "the environment as it relates to living organisms"
+    },
+    {
+      "lemma": "emirate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "domain.n.02",
+          "via_synset": "emirate.n.01"
+        }
+      ],
+      "definition": "the domain controlled by an emir"
+    },
+    {
+      "lemma": "empire",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "domain.n.02",
+          "via_synset": "empire.n.01"
+        }
+      ],
+      "definition": "the domain ruled by an emperor or empress; the region over which imperial dominion is exercised"
+    },
+    {
+      "lemma": "environment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sphere.n.01",
+          "via_synset": "environment.n.01"
+        }
+      ],
+      "definition": "the totality of surrounding conditions"
+    },
+    {
+      "lemma": "facet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sector.n.03",
+          "via_synset": "aspect.n.01"
+        }
+      ],
+      "definition": "a distinct feature or element in a problem"
+    },
+    {
+      "lemma": "fiefdom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "domain.n.02",
+          "via_synset": "fiefdom.n.01"
+        }
+      ],
+      "definition": "the domain controlled by a feudal lord"
+    },
+    {
+      "lemma": "field",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sphere.n.01",
+          "via_synset": "sphere.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "kingdom.n.01",
+          "via_synset": "sphere.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowledge_domain.n.01",
+          "via_synset": "discipline.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "set.n.02",
+          "via_synset": "field.n.10"
+        }
+      ],
+      "definition": "a particular environment or walk of life"
+    },
+    {
+      "lemma": "field of study",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowledge_domain.n.01",
+          "via_synset": "discipline.n.01"
+        }
+      ],
+      "definition": "a branch of knowledge"
+    },
+    {
+      "lemma": "front",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sphere.n.01",
+          "via_synset": "front.n.06"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sphere.n.01",
+          "via_synset": "front.n.06"
+        }
+      ],
+      "definition": "a sphere of activity involving effort"
+    },
+    {
+      "lemma": "grand duchy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "domain.n.02",
+          "via_synset": "grand_duchy.n.01"
+        }
+      ],
+      "definition": "the domain controlled by a grand duke or grand duchess"
+    },
+    {
+      "lemma": "group",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "set.n.02",
+          "via_synset": "group.n.03"
+        }
+      ],
+      "definition": "a set that is closed, associative, has an identity element and every element has an inverse"
+    },
+    {
+      "lemma": "home",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "environment.n.01",
+          "via_synset": "home.n.07"
+        }
+      ],
+      "definition": "an environment offering affection and security"
+    },
+    {
+      "lemma": "image",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "set.n.02",
+          "via_synset": "image.n.07"
+        }
+      ],
+      "definition": "(mathematics) the set of values of the dependent variable for which a function is defined"
+    },
+    {
+      "lemma": "imperium",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "domain.n.02",
+          "via_synset": "empire.n.01"
+        }
+      ],
+      "definition": "the domain ruled by an emperor or empress; the region over which imperial dominion is exercised"
+    },
+    {
+      "lemma": "intersection",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "set.n.02",
+          "via_synset": "intersection.n.03"
+        }
+      ],
+      "definition": "a point or set of points common to two or more geometric configurations"
+    },
+    {
+      "lemma": "interval",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "set.n.02",
+          "via_synset": "interval.n.02"
+        }
+      ],
+      "definition": "a set containing all points (or all real numbers) between two given endpoints"
+    },
+    {
+      "lemma": "khanate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "domain.n.02",
+          "via_synset": "khanate.n.01"
+        }
+      ],
+      "definition": "the realm of a khan"
+    },
+    {
+      "lemma": "king",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "kingdom.n.03",
+          "via_synset": "king.n.01"
+        }
+      ],
+      "definition": "a male sovereign; ruler of a kingdom"
+    },
+    {
+      "lemma": "kingdom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "kingdom.n.03",
+          "via_synset": "kingdom.n.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "kingdom.n.01",
+          "via_synset": "kingdom.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sphere.n.01",
+          "via_synset": "kingdom.n.01"
+        }
+      ],
+      "definition": "the domain ruled by a king or queen"
+    },
+    {
+      "lemma": "knowledge base",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "region.n.05",
+          "via_synset": "knowledge_domain.n.01"
+        }
+      ],
+      "definition": "the content of a particular field of knowledge"
+    },
+    {
+      "lemma": "knowledge domain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "region.n.05",
+          "via_synset": "knowledge_domain.n.01"
+        }
+      ],
+      "definition": "the content of a particular field of knowledge"
+    },
+    {
+      "lemma": "land",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "kingdom.n.01",
+          "via_synset": "kingdom.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "kingdom.n.03",
+          "via_synset": "domain.n.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sphere.n.01",
+          "via_synset": "kingdom.n.01"
+        }
+      ],
+      "definition": "a domain in which something is dominant"
+    },
+    {
+      "lemma": "lap",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sphere.n.01",
+          "via_synset": "lap.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sphere.n.01",
+          "via_synset": "lap.n.02"
+        }
+      ],
+      "definition": "an area of control or responsibility"
+    },
+    {
+      "lemma": "lap of the gods",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "lap.n.02",
+          "via_synset": "lap_of_the_gods.n.01"
+        }
+      ],
+      "definition": "beyond human control or responsibility"
+    },
+    {
+      "lemma": "locus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "set.n.02",
+          "via_synset": "locus.n.03"
+        }
+      ],
+      "definition": "the set of all points or lines that satisfy or are determined by specific conditions"
+    },
+    {
+      "lemma": "lotus land",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "kingdom.n.01",
+          "via_synset": "lotusland.n.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "kingdom.n.01",
+          "via_synset": "lotusland.n.01"
+        }
+      ],
+      "definition": "an idyllic realm of contentment and self-indulgence"
+    },
+    {
+      "lemma": "lotusland",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "kingdom.n.01",
+          "via_synset": "lotusland.n.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "kingdom.n.01",
+          "via_synset": "lotusland.n.01"
+        }
+      ],
+      "definition": "an idyllic realm of contentment and self-indulgence"
+    },
+    {
+      "lemma": "Mandelbrot set",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "set.n.02",
+          "via_synset": "mandelbrot_set.n.01"
+        }
+      ],
+      "definition": "a set of complex numbers that has a highly convoluted fractal boundary when plotted; the set of all points in the complex plane that are bounded under a certain mathematical iteration"
+    },
+    {
+      "lemma": "mathematical group",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "set.n.02",
+          "via_synset": "group.n.03"
+        }
+      ],
+      "definition": "a set that is closed, associative, has an identity element and every element has an inverse"
+    },
+    {
+      "lemma": "mathematical space",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "set.n.02",
+          "via_synset": "mathematical_space.n.01"
+        }
+      ],
+      "definition": "(mathematics) any set of points that satisfy a set of postulates of some kind"
+    },
+    {
+      "lemma": "milieu",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "environment.n.01",
+          "via_synset": "milieu.n.01"
+        }
+      ],
+      "definition": "the environmental condition"
+    },
+    {
+      "lemma": "null set",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "set.n.02",
+          "via_synset": "null_set.n.01"
+        }
+      ],
+      "definition": "a set that is empty; a set with no members"
+    },
+    {
+      "lemma": "orbit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sphere.n.01",
+          "via_synset": "sphere.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "kingdom.n.01",
+          "via_synset": "sphere.n.01"
+        }
+      ],
+      "definition": "a particular environment or walk of life"
+    },
+    {
+      "lemma": "political arena",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sphere.n.01",
+          "via_synset": "political_arena.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sphere.n.01",
+          "via_synset": "political_arena.n.01"
+        }
+      ],
+      "definition": "a sphere of intense political activity"
+    },
+    {
+      "lemma": "political sphere",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sphere.n.01",
+          "via_synset": "political_arena.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sphere.n.01",
+          "via_synset": "political_arena.n.01"
+        }
+      ],
+      "definition": "a sphere of intense political activity"
+    },
+    {
+      "lemma": "preserve",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sphere.n.01",
+          "via_synset": "preserve.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sphere.n.01",
+          "via_synset": "preserve.n.01"
+        }
+      ],
+      "definition": "a domain that seems to be specially reserved for someone"
+    },
+    {
+      "lemma": "preserve",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "preserve.n.01",
+          "via_synset": "save.v.02"
+        }
+      ],
+      "definition": "to keep up and reserve for personal or special use"
+    },
+    {
+      "lemma": "princedom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "domain.n.02",
+          "via_synset": "principality.n.01"
+        }
+      ],
+      "definition": "territory ruled by a prince"
+    },
+    {
+      "lemma": "principality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "domain.n.02",
+          "via_synset": "principality.n.01"
+        }
+      ],
+      "definition": "territory ruled by a prince"
+    },
+    {
+      "lemma": "province",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sphere.n.01",
+          "via_synset": "province.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sphere.n.01",
+          "via_synset": "province.n.02"
+        }
+      ],
+      "definition": "the proper sphere or extent of your activities"
+    },
+    {
+      "lemma": "range",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "set.n.02",
+          "via_synset": "image.n.07"
+        }
+      ],
+      "definition": "(mathematics) the set of values of the dependent variable for which a function is defined"
+    },
+    {
+      "lemma": "range of a function",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "set.n.02",
+          "via_synset": "image.n.07"
+        }
+      ],
+      "definition": "(mathematics) the set of values of the dependent variable for which a function is defined"
+    },
+    {
+      "lemma": "realm",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "kingdom.n.03",
+          "via_synset": "kingdom.n.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "region.n.05",
+          "via_synset": "region.n.05"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "kingdom.n.01",
+          "via_synset": "kingdom.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sphere.n.01",
+          "via_synset": "kingdom.n.01"
+        }
+      ],
+      "definition": "the domain ruled by a king or queen"
+    },
+    {
+      "lemma": "region",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "region.n.05",
+          "via_synset": "region.n.05"
+        }
+      ],
+      "definition": "a knowledge domain that you are interested in or are communicating about"
+    },
+    {
+      "lemma": "responsibility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sphere.n.01",
+          "via_synset": "province.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sphere.n.01",
+          "via_synset": "province.n.02"
+        }
+      ],
+      "definition": "the proper sphere or extent of your activities"
+    },
+    {
+      "lemma": "root",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "set.n.02",
+          "via_synset": "solution.n.04"
+        }
+      ],
+      "definition": "the set of values that give a true statement when substituted into an equation"
+    },
+    {
+      "lemma": "scientific knowledge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowledge_domain.n.01",
+          "via_synset": "scientific_knowledge.n.01"
+        }
+      ],
+      "definition": "knowledge accumulated by systematic study and organized by general principles"
+    },
+    {
+      "lemma": "scope",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "environment.n.01",
+          "via_synset": "setting.n.02"
+        }
+      ],
+      "definition": "the state of the environment in which a situation exists"
+    },
+    {
+      "lemma": "sector",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sector.n.03",
+          "via_synset": "sector.n.03"
+        }
+      ],
+      "definition": "a particular aspect of life or activity"
+    },
+    {
+      "lemma": "set",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "domain.n.03",
+          "via_synset": "set.n.02"
+        }
+      ],
+      "definition": "(mathematics) an abstract collection of numbers or symbols"
+    },
+    {
+      "lemma": "setting",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "environment.n.01",
+          "via_synset": "setting.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "environment.n.01",
+          "via_synset": "context.n.02"
+        }
+      ],
+      "definition": "the state of the environment in which a situation exists"
+    },
+    {
+      "lemma": "sheikdom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "domain.n.02",
+          "via_synset": "sheikdom.n.01"
+        }
+      ],
+      "definition": "the domain ruled by a sheik"
+    },
+    {
+      "lemma": "sheikhdom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "domain.n.02",
+          "via_synset": "sheikdom.n.01"
+        }
+      ],
+      "definition": "the domain ruled by a sheik"
+    },
+    {
+      "lemma": "side",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "aspect.n.01",
+          "via_synset": "side.n.06"
+        }
+      ],
+      "definition": "an aspect of something (as contrasted with some other implied aspect)"
+    },
+    {
+      "lemma": "solution",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "set.n.02",
+          "via_synset": "solution.n.04"
+        }
+      ],
+      "definition": "the set of values that give a true statement when substituted into an equation"
+    },
+    {
+      "lemma": "sphere",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sphere.n.01",
+          "via_synset": "sphere.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sector.n.03",
+          "via_synset": "sector.n.03"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "kingdom.n.01",
+          "via_synset": "sphere.n.01"
+        }
+      ],
+      "definition": "a particular environment or walk of life"
+    },
+    {
+      "lemma": "street",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "environment.n.01",
+          "via_synset": "street.n.03"
+        }
+      ],
+      "definition": "the streets of a city viewed as a depressed environment in which there is poverty and crime and prostitution and dereliction"
+    },
+    {
+      "lemma": "study",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowledge_domain.n.01",
+          "via_synset": "discipline.n.01"
+        }
+      ],
+      "definition": "a branch of knowledge"
+    },
+    {
+      "lemma": "subject",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowledge_domain.n.01",
+          "via_synset": "discipline.n.01"
+        }
+      ],
+      "definition": "a branch of knowledge"
+    },
+    {
+      "lemma": "subject area",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowledge_domain.n.01",
+          "via_synset": "discipline.n.01"
+        }
+      ],
+      "definition": "a branch of knowledge"
+    },
+    {
+      "lemma": "subject field",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowledge_domain.n.01",
+          "via_synset": "discipline.n.01"
+        }
+      ],
+      "definition": "a branch of knowledge"
+    },
+    {
+      "lemma": "subset",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "set.n.02",
+          "via_synset": "subset.n.01"
+        }
+      ],
+      "definition": "a set whose members are members of another set; a set contained within another set"
+    },
+    {
+      "lemma": "surface",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "aspect.n.01",
+          "via_synset": "surface.n.04"
+        }
+      ],
+      "definition": "a superficial aspect as opposed to the real nature of something"
+    },
+    {
+      "lemma": "surroundings",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "environment.n.01",
+          "via_synset": "milieu.n.01"
+        }
+      ],
+      "definition": "the environmental condition"
+    },
+    {
+      "lemma": "suzerainty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "domain.n.02",
+          "via_synset": "suzerainty.n.02"
+        }
+      ],
+      "definition": "the domain of a suzerain"
+    },
+    {
+      "lemma": "topological space",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "set.n.02",
+          "via_synset": "mathematical_space.n.01"
+        }
+      ],
+      "definition": "(mathematics) any set of points that satisfy a set of postulates of some kind"
+    },
+    {
+      "lemma": "universal set",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "set.n.02",
+          "via_synset": "universal_set.n.01"
+        }
+      ],
+      "definition": "(mathematics) the set that contains all the elements or objects involved in the problem under consideration"
+    },
+    {
+      "lemma": "viscounty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "domain.n.02",
+          "via_synset": "viscounty.n.02"
+        }
+      ],
+      "definition": "the domain controlled by a viscount or viscountess"
+    }
+  ]
+}

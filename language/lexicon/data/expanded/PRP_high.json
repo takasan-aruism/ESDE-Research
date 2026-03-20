@@ -1,0 +1,1424 @@
+{
+  "atom_id": "PRP.high",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 92,
+  "pos_counts": {
+    "n": 73,
+    "adj": 19
+  },
+  "source_counts": {
+    "0_seed": 10,
+    "10_sibling": 50,
+    "2_hypernym_d1": 11,
+    "3_hyponym_d1": 3,
+    "4_hyponym_d2": 1,
+    "6_derivational": 4,
+    "8_also_see": 3,
+    "7_similar_to": 16,
+    "9_antonym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 8,
+      "words": [
+        "high(n)",
+        "tall(n)",
+        "tall(adj)",
+        "elevated railway(n)",
+        "elevated railroad(n)",
+        "elevated(n)",
+        "el(n)",
+        "overhead railway(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 11,
+      "words": [
+        "degree(n)",
+        "grade(n)",
+        "level(n)",
+        "air mass(n)",
+        "elation(n)",
+        "size(n)",
+        "railway(n)",
+        "railroad(n)",
+        "railroad line(n)",
+        "railway line(n)",
+        "railway system(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 3,
+      "words": [
+        "roller coaster(n)",
+        "big dipper(n)",
+        "chute-the-chute(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 1,
+      "words": [
+        "hypercoaster(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 2,
+      "words": [
+        "high(adj)",
+        "tallness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 15,
+      "words": [
+        "tallish(adj)",
+        "long(adj)",
+        "long-stalked(adj)",
+        "tall-stalked(adj)",
+        "stately(adj)",
+        "statuesque(adj)",
+        "gangling(adj)",
+        "gangly(adj)",
+        "lanky(adj)",
+        "rangy(adj)",
+        "in height(adj)",
+        "leggy(adj)",
+        "tall-growing(adj)",
+        "long-legged(adj)",
+        "long-shanked(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 2,
+      "words": [
+        "large(adj)",
+        "big(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "low spirits(n)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 49,
+      "words": [
+        "intensity(n)",
+        "intensiveness(n)",
+        "lowness(n)",
+        "extreme(n)",
+        "quality(n)",
+        "caliber(n)",
+        "calibre(n)",
+        "moderation(n)",
+        "moderateness(n)",
+        "grind(n)",
+        "amplitude level(n)",
+        "depth(n)",
+        "immoderation(n)",
+        "immoderateness(n)",
+        "sun protection factor(n)",
+        "SPF(n)",
+        "highness(n)",
+        "depression(n)",
+        "bliss(n)",
+        "blissfulness(n)",
+        "cloud nine(n)",
+        "seventh heaven(n)",
+        "walking on air(n)",
+        "small(n)",
+        "quarto(n)",
+        "4to(n)",
+        "octavo(n)",
+        "eightvo(n)",
+        "8vo(n)",
+        "stout(n)",
+        "extra large(n)",
+        "large(n)",
+        "number(n)",
+        "outsize(n)",
+        "regular(n)",
+        "petite(n)",
+        "cog railway(n)",
+        "rack railway(n)",
+        "monorail(n)",
+        "cable railway(n)",
+        "funicular(n)",
+        "funicular railway(n)",
+        "rail(n)",
+        "metro(n)",
+        "tube(n)",
+        "underground(n)",
+        "subway system(n)",
+        "subway(n)",
+        "scenic railway(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "4to",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "quarto.n.01"
+        }
+      ],
+      "definition": "the size of a book whose pages are made by folding a sheet of paper twice to form four leaves"
+    },
+    {
+      "lemma": "8vo",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "octavo.n.01"
+        }
+      ],
+      "definition": "the size of a book whose pages are made by folding a sheet of paper three times to form eight leaves"
+    },
+    {
+      "lemma": "air mass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "high.n.02",
+          "via_synset": "air_mass.n.01"
+        }
+      ],
+      "definition": "a large body of air with uniform characteristics horizontally"
+    },
+    {
+      "lemma": "amplitude level",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "amplitude_level.n.01"
+        }
+      ],
+      "definition": "the level on a scale of amplitude"
+    },
+    {
+      "lemma": "big",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "tall.a.01",
+          "via_synset": "large.a.01"
+        }
+      ],
+      "definition": "above average in size or number or quantity or magnitude or extent"
+    },
+    {
+      "lemma": "big dipper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "elevated_railway.n.01",
+          "via_synset": "roller_coaster.n.02"
+        }
+      ],
+      "definition": "elevated railway in an amusement park (usually with sharp curves and steep inclines)"
+    },
+    {
+      "lemma": "bliss",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "elation.n.01",
+          "via_synset": "bliss.n.01"
+        }
+      ],
+      "definition": "a state of extreme happiness"
+    },
+    {
+      "lemma": "blissfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "elation.n.01",
+          "via_synset": "bliss.n.01"
+        }
+      ],
+      "definition": "a state of extreme happiness"
+    },
+    {
+      "lemma": "cable railway",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "railway.n.01",
+          "via_synset": "cable_railway.n.01"
+        }
+      ],
+      "definition": "a railway up the side of a mountain pulled by a moving cable and having counterbalancing ascending and descending cars"
+    },
+    {
+      "lemma": "caliber",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "quality.n.02"
+        }
+      ],
+      "definition": "a degree or grade of excellence or worth"
+    },
+    {
+      "lemma": "calibre",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "quality.n.02"
+        }
+      ],
+      "definition": "a degree or grade of excellence or worth"
+    },
+    {
+      "lemma": "chute-the-chute",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "elevated_railway.n.01",
+          "via_synset": "roller_coaster.n.02"
+        }
+      ],
+      "definition": "elevated railway in an amusement park (usually with sharp curves and steep inclines)"
+    },
+    {
+      "lemma": "cloud nine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "elation.n.01",
+          "via_synset": "bliss.n.01"
+        }
+      ],
+      "definition": "a state of extreme happiness"
+    },
+    {
+      "lemma": "cog railway",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "railway.n.01",
+          "via_synset": "cog_railway.n.01"
+        }
+      ],
+      "definition": "railway for steep mountains; a cogwheel on the locomotive engages cogs on a center rail to provide traction"
+    },
+    {
+      "lemma": "degree",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "high.n.01",
+          "via_synset": "degree.n.01"
+        }
+      ],
+      "definition": "a position on a scale of intensity or amount or quality"
+    },
+    {
+      "lemma": "depression",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "air_mass.n.01",
+          "via_synset": "low.n.01"
+        }
+      ],
+      "definition": "an air mass of lower pressure; often brings precipitation"
+    },
+    {
+      "lemma": "depth",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "depth.n.02"
+        }
+      ],
+      "definition": "degree of psychological or intellectual profundity"
+    },
+    {
+      "lemma": "eightvo",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "octavo.n.01"
+        }
+      ],
+      "definition": "the size of a book whose pages are made by folding a sheet of paper three times to form eight leaves"
+    },
+    {
+      "lemma": "el",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "elevated_railway.n.01",
+          "via_synset": "elevated_railway.n.01"
+        }
+      ],
+      "definition": "a railway that is powered by electricity and that runs on a track that is raised above the street level"
+    },
+    {
+      "lemma": "elation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "high.n.03",
+          "via_synset": "elation.n.01"
+        }
+      ],
+      "definition": "an exhilarating psychological state of pride and optimism; an absence of depression"
+    },
+    {
+      "lemma": "elevated",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "elevated_railway.n.01",
+          "via_synset": "elevated_railway.n.01"
+        }
+      ],
+      "definition": "a railway that is powered by electricity and that runs on a track that is raised above the street level"
+    },
+    {
+      "lemma": "elevated railroad",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "elevated_railway.n.01",
+          "via_synset": "elevated_railway.n.01"
+        }
+      ],
+      "definition": "a railway that is powered by electricity and that runs on a track that is raised above the street level"
+    },
+    {
+      "lemma": "elevated railway",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "elevated_railway.n.01",
+          "via_synset": "elevated_railway.n.01"
+        }
+      ],
+      "definition": "a railway that is powered by electricity and that runs on a track that is raised above the street level"
+    },
+    {
+      "lemma": "extra large",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "extra_large.n.01"
+        }
+      ],
+      "definition": "a garment size for a very large person"
+    },
+    {
+      "lemma": "extreme",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "extreme.n.01"
+        }
+      ],
+      "definition": "the furthest or highest degree of something"
+    },
+    {
+      "lemma": "funicular",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "railway.n.01",
+          "via_synset": "cable_railway.n.01"
+        }
+      ],
+      "definition": "a railway up the side of a mountain pulled by a moving cable and having counterbalancing ascending and descending cars"
+    },
+    {
+      "lemma": "funicular railway",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "railway.n.01",
+          "via_synset": "cable_railway.n.01"
+        }
+      ],
+      "definition": "a railway up the side of a mountain pulled by a moving cable and having counterbalancing ascending and descending cars"
+    },
+    {
+      "lemma": "gangling",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tall.a.01",
+          "via_synset": "gangling.s.01"
+        }
+      ],
+      "definition": "tall and thin and having long slender limbs"
+    },
+    {
+      "lemma": "gangly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tall.a.01",
+          "via_synset": "gangling.s.01"
+        }
+      ],
+      "definition": "tall and thin and having long slender limbs"
+    },
+    {
+      "lemma": "grade",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "high.n.01",
+          "via_synset": "degree.n.01"
+        }
+      ],
+      "definition": "a position on a scale of intensity or amount or quality"
+    },
+    {
+      "lemma": "grind",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "grind.n.02"
+        }
+      ],
+      "definition": "the grade of particle fineness to which a substance is ground"
+    },
+    {
+      "lemma": "high",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "high.n.03",
+          "via_synset": "high.s.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "high.n.01",
+          "via_synset": "high.a.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "tall.a.01",
+          "via_synset": "high.a.02"
+        }
+      ],
+      "definition": "happy and excited and energetic"
+    },
+    {
+      "lemma": "high",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "high.n.01",
+          "via_synset": "high.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "high.n.02",
+          "via_synset": "high.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "high.n.03",
+          "via_synset": "high.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "elation.n.01",
+          "via_synset": "high.n.04"
+        }
+      ],
+      "definition": "a lofty level or position or degree"
+    },
+    {
+      "lemma": "highness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "highness.n.03"
+        }
+      ],
+      "definition": "a high degree (of amount or force etc.)"
+    },
+    {
+      "lemma": "hypercoaster",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "roller_coaster.n.02",
+          "via_synset": "hypercoaster.n.01"
+        }
+      ],
+      "definition": "a roller coaster that goes up 200 feet or higher and can catapult riders from 0 to 70 mph in 4 seconds by motors originally designed to launch rockets"
+    },
+    {
+      "lemma": "immoderateness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "immoderation.n.01"
+        }
+      ],
+      "definition": "the quality of being excessive and lacking in moderation"
+    },
+    {
+      "lemma": "immoderation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "immoderation.n.01"
+        }
+      ],
+      "definition": "the quality of being excessive and lacking in moderation"
+    },
+    {
+      "lemma": "in height",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tall.a.01",
+          "via_synset": "in_height.s.01"
+        }
+      ],
+      "definition": "having a specified height"
+    },
+    {
+      "lemma": "intensity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "intensity.n.02"
+        }
+      ],
+      "definition": "high level or degree; the property of being intense"
+    },
+    {
+      "lemma": "intensiveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "intensity.n.02"
+        }
+      ],
+      "definition": "high level or degree; the property of being intense"
+    },
+    {
+      "lemma": "lanky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tall.a.01",
+          "via_synset": "gangling.s.01"
+        }
+      ],
+      "definition": "tall and thin and having long slender limbs"
+    },
+    {
+      "lemma": "large",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "tall.a.01",
+          "via_synset": "large.a.01"
+        }
+      ],
+      "definition": "above average in size or number or quantity or magnitude or extent"
+    },
+    {
+      "lemma": "large",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "large.n.01"
+        }
+      ],
+      "definition": "a garment size for a large person"
+    },
+    {
+      "lemma": "leggy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tall.a.01",
+          "via_synset": "leggy.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tall.a.01",
+          "via_synset": "leggy.s.02"
+        }
+      ],
+      "definition": "(of plants) having tall spindly stems"
+    },
+    {
+      "lemma": "level",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "high.n.01",
+          "via_synset": "degree.n.01"
+        }
+      ],
+      "definition": "a position on a scale of intensity or amount or quality"
+    },
+    {
+      "lemma": "long",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tall.a.01",
+          "via_synset": "long.s.01"
+        }
+      ],
+      "definition": "of relatively great height; - Sherwood Anderson"
+    },
+    {
+      "lemma": "long-legged",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tall.a.01",
+          "via_synset": "leggy.s.02"
+        }
+      ],
+      "definition": "having long legs"
+    },
+    {
+      "lemma": "long-shanked",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tall.a.01",
+          "via_synset": "leggy.s.02"
+        }
+      ],
+      "definition": "having long legs"
+    },
+    {
+      "lemma": "long-stalked",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tall.a.01",
+          "via_synset": "long-stalked.s.01"
+        }
+      ],
+      "definition": "of plants having relatively long stalks"
+    },
+    {
+      "lemma": "low spirits",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "high.n.03",
+          "via_synset": "low_spirits.n.01"
+        }
+      ],
+      "definition": "a state of mild depression"
+    },
+    {
+      "lemma": "lowness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "lowness.n.04"
+        }
+      ],
+      "definition": "a low or small degree of any quality (amount or force or temperature etc.)"
+    },
+    {
+      "lemma": "metro",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "railway.n.01",
+          "via_synset": "metro.n.01"
+        }
+      ],
+      "definition": "an electric railway operating below the surface of the ground (usually in a city)"
+    },
+    {
+      "lemma": "moderateness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "moderation.n.01"
+        }
+      ],
+      "definition": "quality of being moderate and avoiding extremes"
+    },
+    {
+      "lemma": "moderation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "moderation.n.01"
+        }
+      ],
+      "definition": "quality of being moderate and avoiding extremes"
+    },
+    {
+      "lemma": "monorail",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "railway.n.01",
+          "via_synset": "monorail.n.01"
+        }
+      ],
+      "definition": "a railway having a single track"
+    },
+    {
+      "lemma": "number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "number.n.09"
+        }
+      ],
+      "definition": "a clothing measurement"
+    },
+    {
+      "lemma": "octavo",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "octavo.n.01"
+        }
+      ],
+      "definition": "the size of a book whose pages are made by folding a sheet of paper three times to form eight leaves"
+    },
+    {
+      "lemma": "outsize",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "outsize.n.01"
+        }
+      ],
+      "definition": "an unusual garment size (especially one that is very large)"
+    },
+    {
+      "lemma": "overhead railway",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "elevated_railway.n.01",
+          "via_synset": "elevated_railway.n.01"
+        }
+      ],
+      "definition": "a railway that is powered by electricity and that runs on a track that is raised above the street level"
+    },
+    {
+      "lemma": "petite",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "petite.n.01"
+        }
+      ],
+      "definition": "a garment size for short or slender women"
+    },
+    {
+      "lemma": "quality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "quality.n.02"
+        }
+      ],
+      "definition": "a degree or grade of excellence or worth"
+    },
+    {
+      "lemma": "quarto",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "quarto.n.01"
+        }
+      ],
+      "definition": "the size of a book whose pages are made by folding a sheet of paper twice to form four leaves"
+    },
+    {
+      "lemma": "rack railway",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "railway.n.01",
+          "via_synset": "cog_railway.n.01"
+        }
+      ],
+      "definition": "railway for steep mountains; a cogwheel on the locomotive engages cogs on a center rail to provide traction"
+    },
+    {
+      "lemma": "rail",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "railway.n.01",
+          "via_synset": "rail.n.02"
+        }
+      ],
+      "definition": "short for railway"
+    },
+    {
+      "lemma": "railroad",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "elevated_railway.n.01",
+          "via_synset": "railway.n.01"
+        }
+      ],
+      "definition": "line that is the commercial organization responsible for operating a system of transportation for trains that pull passengers or freight"
+    },
+    {
+      "lemma": "railroad line",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "elevated_railway.n.01",
+          "via_synset": "railway.n.01"
+        }
+      ],
+      "definition": "line that is the commercial organization responsible for operating a system of transportation for trains that pull passengers or freight"
+    },
+    {
+      "lemma": "railway",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "elevated_railway.n.01",
+          "via_synset": "railway.n.01"
+        }
+      ],
+      "definition": "line that is the commercial organization responsible for operating a system of transportation for trains that pull passengers or freight"
+    },
+    {
+      "lemma": "railway line",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "elevated_railway.n.01",
+          "via_synset": "railway.n.01"
+        }
+      ],
+      "definition": "line that is the commercial organization responsible for operating a system of transportation for trains that pull passengers or freight"
+    },
+    {
+      "lemma": "railway system",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "elevated_railway.n.01",
+          "via_synset": "railway.n.01"
+        }
+      ],
+      "definition": "line that is the commercial organization responsible for operating a system of transportation for trains that pull passengers or freight"
+    },
+    {
+      "lemma": "rangy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tall.a.01",
+          "via_synset": "gangling.s.01"
+        }
+      ],
+      "definition": "tall and thin and having long slender limbs"
+    },
+    {
+      "lemma": "regular",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "regular.n.04"
+        }
+      ],
+      "definition": "a garment size for persons of average height and weight"
+    },
+    {
+      "lemma": "roller coaster",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "elevated_railway.n.01",
+          "via_synset": "roller_coaster.n.02"
+        }
+      ],
+      "definition": "elevated railway in an amusement park (usually with sharp curves and steep inclines)"
+    },
+    {
+      "lemma": "scenic railway",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "railway.n.01",
+          "via_synset": "scenic_railway.n.01"
+        }
+      ],
+      "definition": "small railway in an amusement park"
+    },
+    {
+      "lemma": "seventh heaven",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "elation.n.01",
+          "via_synset": "bliss.n.01"
+        }
+      ],
+      "definition": "a state of extreme happiness"
+    },
+    {
+      "lemma": "size",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "tall.n.01",
+          "via_synset": "size.n.02"
+        }
+      ],
+      "definition": "the property resulting from being one of a series of graduated measurements (as of clothing)"
+    },
+    {
+      "lemma": "small",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "small.n.02"
+        }
+      ],
+      "definition": "a garment size for a small person"
+    },
+    {
+      "lemma": "SPF",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "sun_protection_factor.n.01"
+        }
+      ],
+      "definition": "the degree to which a sunscreen protects the skin from the direct rays of the sun"
+    },
+    {
+      "lemma": "stately",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tall.a.01",
+          "via_synset": "stately.s.02"
+        }
+      ],
+      "definition": "of size and dignity suggestive of a statue"
+    },
+    {
+      "lemma": "statuesque",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tall.a.01",
+          "via_synset": "stately.s.02"
+        }
+      ],
+      "definition": "of size and dignity suggestive of a statue"
+    },
+    {
+      "lemma": "stout",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "stout.n.02"
+        }
+      ],
+      "definition": "a garment size for a large or heavy person"
+    },
+    {
+      "lemma": "subway",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "railway.n.01",
+          "via_synset": "metro.n.01"
+        }
+      ],
+      "definition": "an electric railway operating below the surface of the ground (usually in a city)"
+    },
+    {
+      "lemma": "subway system",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "railway.n.01",
+          "via_synset": "metro.n.01"
+        }
+      ],
+      "definition": "an electric railway operating below the surface of the ground (usually in a city)"
+    },
+    {
+      "lemma": "sun protection factor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "degree.n.01",
+          "via_synset": "sun_protection_factor.n.01"
+        }
+      ],
+      "definition": "the degree to which a sunscreen protects the skin from the direct rays of the sun"
+    },
+    {
+      "lemma": "tall",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "tall.a.01",
+          "via_synset": "tall.a.01"
+        }
+      ],
+      "definition": "great in vertical dimension; high in stature"
+    },
+    {
+      "lemma": "tall",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "tall.n.01",
+          "via_synset": "tall.n.01"
+        }
+      ],
+      "definition": "a garment size for a tall person"
+    },
+    {
+      "lemma": "tall-growing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tall.a.01",
+          "via_synset": "leggy.s.01"
+        }
+      ],
+      "definition": "(of plants) having tall spindly stems"
+    },
+    {
+      "lemma": "tall-stalked",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tall.a.01",
+          "via_synset": "long-stalked.s.01"
+        }
+      ],
+      "definition": "of plants having relatively long stalks"
+    },
+    {
+      "lemma": "tallish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tall.a.01",
+          "via_synset": "tallish.s.01"
+        }
+      ],
+      "definition": "somewhat tall"
+    },
+    {
+      "lemma": "tallness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tall.a.01",
+          "via_synset": "tallness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tall.a.01",
+          "via_synset": "height.n.01"
+        }
+      ],
+      "definition": "the property of being taller than average stature"
+    },
+    {
+      "lemma": "tube",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "railway.n.01",
+          "via_synset": "metro.n.01"
+        }
+      ],
+      "definition": "an electric railway operating below the surface of the ground (usually in a city)"
+    },
+    {
+      "lemma": "underground",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "railway.n.01",
+          "via_synset": "metro.n.01"
+        }
+      ],
+      "definition": "an electric railway operating below the surface of the ground (usually in a city)"
+    },
+    {
+      "lemma": "walking on air",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "elation.n.01",
+          "via_synset": "bliss.n.01"
+        }
+      ],
+      "definition": "a state of extreme happiness"
+    }
+  ]
+}

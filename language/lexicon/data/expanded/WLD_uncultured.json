@@ -1,0 +1,476 @@
+{
+  "atom_id": "WLD.uncultured",
+  "category": "WLD",
+  "seed_count": 5,
+  "total_keys": 26,
+  "pos_counts": {
+    "adj": 17,
+    "n": 9
+  },
+  "source_counts": {
+    "0_seed": 15,
+    "7_similar_to": 5,
+    "6_derivational": 11
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 13,
+      "words": [
+        "artless(adj)",
+        "uncultivated(adj)",
+        "uncultured(adj)",
+        "barbarian(adj)",
+        "barbaric(adj)",
+        "savage(adj)",
+        "uncivilized(adj)",
+        "uncivilised(adj)",
+        "wild(adj)",
+        "crude(adj)",
+        "rough(adj)",
+        "unrefined(adj)",
+        "unprocessed(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 9,
+      "words": [
+        "crudeness(n)",
+        "crudity(n)",
+        "roughness(n)",
+        "barbarian(n)",
+        "barbarity(n)",
+        "savage(n)",
+        "savageness(n)",
+        "wild(n)",
+        "wildness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 4,
+      "words": [
+        "tasteless(adj)",
+        "unskilled(adj)",
+        "noncivilized(adj)",
+        "noncivilised(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "artless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "artless.s.02",
+          "via_synset": "artless.s.02"
+        }
+      ],
+      "definition": "(of persons) lacking art or knowledge"
+    },
+    {
+      "lemma": "barbarian",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "barbarian.s.01",
+          "via_synset": "barbarian.s.01"
+        }
+      ],
+      "definition": "without civilizing influences; ; ; ; -Margaret Meade"
+    },
+    {
+      "lemma": "barbarian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "barbarian.s.01",
+          "via_synset": "peasant.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "barbarian.s.01",
+          "via_synset": "savage.n.01"
+        }
+      ],
+      "definition": "a crude uncouth ill-bred person lacking culture or refinement"
+    },
+    {
+      "lemma": "barbaric",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "barbarian.s.01",
+          "via_synset": "barbarian.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "barbaric.s.02",
+          "via_synset": "barbaric.s.02"
+        }
+      ],
+      "definition": "without civilizing influences; ; ; ; -Margaret Meade"
+    },
+    {
+      "lemma": "barbarity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "barbarian.s.01",
+          "via_synset": "brutality.n.02"
+        }
+      ],
+      "definition": "a brutal barbarous savage act"
+    },
+    {
+      "lemma": "crude",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "crude.s.01",
+          "via_synset": "crude.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unrefined.a.01",
+          "via_synset": "unrefined.a.01"
+        }
+      ],
+      "definition": "not carefully or expertly made"
+    },
+    {
+      "lemma": "crudeness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unrefined.a.01",
+          "via_synset": "crudeness.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "crude.s.01",
+          "via_synset": "crudeness.n.03"
+        }
+      ],
+      "definition": "an unpolished unrefined quality"
+    },
+    {
+      "lemma": "crudity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unrefined.a.01",
+          "via_synset": "crudeness.n.01"
+        }
+      ],
+      "definition": "a wild or unrefined state"
+    },
+    {
+      "lemma": "noncivilised",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "barbarian.s.01",
+          "via_synset": "noncivilized.a.01"
+        }
+      ],
+      "definition": "not having a high state of culture and social development"
+    },
+    {
+      "lemma": "noncivilized",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "barbarian.s.01",
+          "via_synset": "noncivilized.a.01"
+        }
+      ],
+      "definition": "not having a high state of culture and social development"
+    },
+    {
+      "lemma": "rough",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "crude.s.01",
+          "via_synset": "crude.s.01"
+        }
+      ],
+      "definition": "not carefully or expertly made"
+    },
+    {
+      "lemma": "roughness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "crude.s.01",
+          "via_synset": "crudeness.n.03"
+        }
+      ],
+      "definition": "an unpolished unrefined quality"
+    },
+    {
+      "lemma": "savage",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "barbarian.s.01",
+          "via_synset": "barbarian.s.01"
+        }
+      ],
+      "definition": "without civilizing influences; ; ; ; -Margaret Meade"
+    },
+    {
+      "lemma": "savage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "barbarian.s.01",
+          "via_synset": "savage.n.01"
+        }
+      ],
+      "definition": "a member of an uncivilized people"
+    },
+    {
+      "lemma": "savageness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "barbarian.s.01",
+          "via_synset": "savageness.n.01"
+        }
+      ],
+      "definition": "the property of being untamed and ferocious"
+    },
+    {
+      "lemma": "tasteless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "barbaric.s.02",
+          "via_synset": "tasteless.a.02"
+        }
+      ],
+      "definition": "lacking aesthetic or social taste"
+    },
+    {
+      "lemma": "uncivilised",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "barbarian.s.01",
+          "via_synset": "barbarian.s.01"
+        }
+      ],
+      "definition": "without civilizing influences; ; ; ; -Margaret Meade"
+    },
+    {
+      "lemma": "uncivilized",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "barbarian.s.01",
+          "via_synset": "barbarian.s.01"
+        }
+      ],
+      "definition": "without civilizing influences; ; ; ; -Margaret Meade"
+    },
+    {
+      "lemma": "uncultivated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "artless.s.02",
+          "via_synset": "artless.s.02"
+        }
+      ],
+      "definition": "(of persons) lacking art or knowledge"
+    },
+    {
+      "lemma": "uncultured",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "artless.s.02",
+          "via_synset": "artless.s.02"
+        }
+      ],
+      "definition": "(of persons) lacking art or knowledge"
+    },
+    {
+      "lemma": "unprocessed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unrefined.a.01",
+          "via_synset": "unrefined.a.01"
+        }
+      ],
+      "definition": "not refined or processed"
+    },
+    {
+      "lemma": "unrefined",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unrefined.a.01",
+          "via_synset": "unrefined.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "artless.s.02",
+          "via_synset": "unrefined.a.02"
+        }
+      ],
+      "definition": "not refined or processed"
+    },
+    {
+      "lemma": "unskilled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "crude.s.01",
+          "via_synset": "unskilled.a.01"
+        }
+      ],
+      "definition": "not having or showing or requiring special skill or proficiency"
+    },
+    {
+      "lemma": "wild",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "barbarian.s.01",
+          "via_synset": "barbarian.s.01"
+        }
+      ],
+      "definition": "without civilizing influences; ; ; ; -Margaret Meade"
+    },
+    {
+      "lemma": "wild",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "barbarian.s.01",
+          "via_synset": "wild.n.01"
+        }
+      ],
+      "definition": "a wild primitive state untouched by civilization"
+    },
+    {
+      "lemma": "wildness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "barbarian.s.01",
+          "via_synset": "wildness.n.04"
+        }
+      ],
+      "definition": "an intractably barbarous or uncultivated state of nature"
+    }
+  ]
+}

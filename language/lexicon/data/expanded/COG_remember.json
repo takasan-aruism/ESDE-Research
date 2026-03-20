@@ -1,0 +1,1628 @@
+{
+  "atom_id": "COG.remember",
+  "category": "COG",
+  "seed_count": 5,
+  "total_keys": 102,
+  "pos_counts": {
+    "v": 68,
+    "n": 31,
+    "adj": 3
+  },
+  "source_counts": {
+    "0_seed": 16,
+    "10_sibling": 21,
+    "2_hypernym_d1": 8,
+    "3_hyponym_d1": 15,
+    "12_verb_group": 2,
+    "5_hyponym_d3": 7,
+    "4_hyponym_d2": 7,
+    "6_derivational": 44
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 13,
+      "words": [
+        "remember(v)",
+        "retrieve(v)",
+        "recall(v)",
+        "call back(v)",
+        "call up(v)",
+        "recollect(v)",
+        "think(v)",
+        "commemorate(v)",
+        "think of(v)",
+        "memorize(v)",
+        "memorise(v)",
+        "con(v)",
+        "learn(v)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 8,
+      "words": [
+        "concentrate(v)",
+        "focus(v)",
+        "center(v)",
+        "centre(v)",
+        "pore(v)",
+        "rivet(v)",
+        "study(v)",
+        "hit the books(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 15,
+      "words": [
+        "review(v)",
+        "brush up(v)",
+        "refresh(v)",
+        "recognize(v)",
+        "recognise(v)",
+        "know(v)",
+        "mind(v)",
+        "bear in mind(v)",
+        "keep note(v)",
+        "qualify(v)",
+        "characterize(v)",
+        "characterise(v)",
+        "retain(v)",
+        "understudy(v)",
+        "alternate(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 7,
+      "words": [
+        "identify(v)",
+        "attend to(v)",
+        "take to heart(v)",
+        "distinguish(v)",
+        "mark(v)",
+        "differentiate(v)",
+        "stamp(v)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 5,
+      "words": [
+        "taste(v)",
+        "type(v)",
+        "typecast(v)",
+        "mistake(v)",
+        "misidentify(v)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 34,
+      "words": [
+        "recognition(n)",
+        "review(n)",
+        "brushup(n)",
+        "refresher(n)",
+        "memorization(n)",
+        "memorizer(n)",
+        "memory(n)",
+        "memorisation(n)",
+        "memoriser(n)",
+        "quality(n)",
+        "characterization(n)",
+        "character(n)",
+        "characterisation(n)",
+        "commemorative(adj)",
+        "commemoration(n)",
+        "remembrance(n)",
+        "retentive(adj)",
+        "retention(n)",
+        "stamp(n)",
+        "remembering(n)",
+        "retrieval(n)",
+        "recall(n)",
+        "recollective(adj)",
+        "recollection(n)",
+        "thought(n)",
+        "think(n)",
+        "mind(n)",
+        "understudy(n)",
+        "alternate(n)",
+        "mark(n)",
+        "marker(n)",
+        "difference(n)",
+        "differentiation(n)",
+        "identity(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 20,
+      "words": [
+        "steep(v)",
+        "immerse(v)",
+        "engulf(v)",
+        "plunge(v)",
+        "engross(v)",
+        "absorb(v)",
+        "soak up(v)",
+        "listen(v)",
+        "hear(v)",
+        "take heed(v)",
+        "zoom in(v)",
+        "cram(v)",
+        "grind away(v)",
+        "drum(v)",
+        "bone up(v)",
+        "swot(v)",
+        "get up(v)",
+        "mug up(v)",
+        "swot up(v)",
+        "bone(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "absorb",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "concentrate.v.02",
+          "via_synset": "steep.v.01"
+        }
+      ],
+      "definition": "devote (oneself) fully to"
+    },
+    {
+      "lemma": "alternate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "understudy.v.01",
+          "via_synset": "surrogate.n.01"
+        }
+      ],
+      "definition": "someone who takes the place of another person"
+    },
+    {
+      "lemma": "alternate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memorize.v.01",
+          "via_synset": "understudy.v.01"
+        }
+      ],
+      "definition": "be an understudy or alternate for a role"
+    },
+    {
+      "lemma": "attend to",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "mind.v.06",
+          "via_synset": "attend_to.v.01"
+        }
+      ],
+      "definition": "get down to; pay attention to; take seriously"
+    },
+    {
+      "lemma": "bear in mind",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "remember.v.02",
+          "via_synset": "mind.v.06"
+        }
+      ],
+      "definition": "keep in mind"
+    },
+    {
+      "lemma": "bone",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "study.v.05",
+          "via_synset": "cram.v.03"
+        }
+      ],
+      "definition": "study intensively, as before an exam"
+    },
+    {
+      "lemma": "bone up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "study.v.05",
+          "via_synset": "cram.v.03"
+        }
+      ],
+      "definition": "study intensively, as before an exam"
+    },
+    {
+      "lemma": "brush up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "remember.v.01",
+          "via_synset": "review.v.04"
+        }
+      ],
+      "definition": "refresh one's memory"
+    },
+    {
+      "lemma": "brushup",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "review.v.04",
+          "via_synset": "review.n.09"
+        }
+      ],
+      "definition": "practice intended to polish performance or refresh the memory"
+    },
+    {
+      "lemma": "call back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "remember.v.01",
+          "via_synset": "remember.v.01"
+        }
+      ],
+      "definition": "recall knowledge from memory; have a recollection"
+    },
+    {
+      "lemma": "call up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "remember.v.01",
+          "via_synset": "remember.v.01"
+        }
+      ],
+      "definition": "recall knowledge from memory; have a recollection"
+    },
+    {
+      "lemma": "center",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "recall.v.05",
+          "via_synset": "concentrate.v.02"
+        }
+      ],
+      "definition": "direct one's attention on something"
+    },
+    {
+      "lemma": "centre",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "recall.v.05",
+          "via_synset": "concentrate.v.02"
+        }
+      ],
+      "definition": "direct one's attention on something"
+    },
+    {
+      "lemma": "character",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "qualify.v.06",
+          "via_synset": "quality.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "qualify.v.06",
+          "via_synset": "character.n.07"
+        }
+      ],
+      "definition": "a characteristic property that defines the apparent individual nature of something"
+    },
+    {
+      "lemma": "characterisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "qualify.v.06",
+          "via_synset": "characterization.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "qualify.v.06",
+          "via_synset": "word_picture.n.01"
+        }
+      ],
+      "definition": "the act of describing distinctive characteristics or essential features"
+    },
+    {
+      "lemma": "characterise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "remember.v.02",
+          "via_synset": "qualify.v.06"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "distinguish.v.03",
+          "via_synset": "characterize.v.02"
+        }
+      ],
+      "definition": "describe or portray the character or the qualities or peculiarities of"
+    },
+    {
+      "lemma": "characterization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "qualify.v.06",
+          "via_synset": "characterization.n.02"
+        }
+      ],
+      "definition": "the act of describing distinctive characteristics or essential features"
+    },
+    {
+      "lemma": "characterize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "remember.v.02",
+          "via_synset": "qualify.v.06"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "distinguish.v.03",
+          "via_synset": "characterize.v.02"
+        }
+      ],
+      "definition": "describe or portray the character or the qualities or peculiarities of"
+    },
+    {
+      "lemma": "commemorate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "commemorate.v.02",
+          "via_synset": "commemorate.v.02"
+        }
+      ],
+      "definition": "call to remembrance; keep alive the memory of someone or something, as in a ceremony"
+    },
+    {
+      "lemma": "commemoration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "commemorate.v.02",
+          "via_synset": "commemoration.n.01"
+        }
+      ],
+      "definition": "a ceremony to honor the memory of someone or something"
+    },
+    {
+      "lemma": "commemorative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "commemorate.v.02",
+          "via_synset": "commemorative.a.01"
+        }
+      ],
+      "definition": "intended as a commemoration"
+    },
+    {
+      "lemma": "con",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "memorize.v.01",
+          "via_synset": "memorize.v.01"
+        }
+      ],
+      "definition": "commit to memory; learn by heart"
+    },
+    {
+      "lemma": "concentrate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "recall.v.05",
+          "via_synset": "concentrate.v.02"
+        }
+      ],
+      "definition": "direct one's attention on something"
+    },
+    {
+      "lemma": "cram",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "study.v.05",
+          "via_synset": "cram.v.03"
+        }
+      ],
+      "definition": "study intensively, as before an exam"
+    },
+    {
+      "lemma": "difference",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "distinguish.v.03",
+          "via_synset": "deviation.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "distinguish.v.03",
+          "via_synset": "difference.n.01"
+        }
+      ],
+      "definition": "a variation that deviates from the standard or norm"
+    },
+    {
+      "lemma": "differentiate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "qualify.v.06",
+          "via_synset": "distinguish.v.03"
+        }
+      ],
+      "definition": "be a distinctive feature, attribute, or trait; sometimes in a very positive sense"
+    },
+    {
+      "lemma": "differentiation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "distinguish.v.03",
+          "via_synset": "differentiation.n.01"
+        }
+      ],
+      "definition": "a discrimination between things as different and distinct"
+    },
+    {
+      "lemma": "distinguish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "qualify.v.06",
+          "via_synset": "distinguish.v.03"
+        }
+      ],
+      "definition": "be a distinctive feature, attribute, or trait; sometimes in a very positive sense"
+    },
+    {
+      "lemma": "drum",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "study.v.05",
+          "via_synset": "cram.v.03"
+        }
+      ],
+      "definition": "study intensively, as before an exam"
+    },
+    {
+      "lemma": "engross",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "concentrate.v.02",
+          "via_synset": "steep.v.01"
+        }
+      ],
+      "definition": "devote (oneself) fully to"
+    },
+    {
+      "lemma": "engulf",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "concentrate.v.02",
+          "via_synset": "steep.v.01"
+        }
+      ],
+      "definition": "devote (oneself) fully to"
+    },
+    {
+      "lemma": "focus",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "recall.v.05",
+          "via_synset": "concentrate.v.02"
+        }
+      ],
+      "definition": "direct one's attention on something"
+    },
+    {
+      "lemma": "get up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "study.v.05",
+          "via_synset": "cram.v.03"
+        }
+      ],
+      "definition": "study intensively, as before an exam"
+    },
+    {
+      "lemma": "grind away",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "study.v.05",
+          "via_synset": "cram.v.03"
+        }
+      ],
+      "definition": "study intensively, as before an exam"
+    },
+    {
+      "lemma": "hear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "concentrate.v.02",
+          "via_synset": "listen.v.02"
+        }
+      ],
+      "definition": "listen and pay attention"
+    },
+    {
+      "lemma": "hit the books",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "memorize.v.01",
+          "via_synset": "study.v.05"
+        }
+      ],
+      "definition": "learn by reading books"
+    },
+    {
+      "lemma": "identify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "recognize.v.04",
+          "via_synset": "identify.v.06"
+        }
+      ],
+      "definition": "consider to be equal or the same"
+    },
+    {
+      "lemma": "identity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "identify.v.06",
+          "via_synset": "identity.n.04"
+        }
+      ],
+      "definition": "exact sameness"
+    },
+    {
+      "lemma": "immerse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "concentrate.v.02",
+          "via_synset": "steep.v.01"
+        }
+      ],
+      "definition": "devote (oneself) fully to"
+    },
+    {
+      "lemma": "keep note",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "remember.v.02",
+          "via_synset": "keep_note.v.01"
+        }
+      ],
+      "definition": "maintain in the forefront of one's awareness"
+    },
+    {
+      "lemma": "know",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "remember.v.01",
+          "via_synset": "know.v.11"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "know.v.11",
+          "via_synset": "know.v.04"
+        }
+      ],
+      "definition": "perceive as familiar"
+    },
+    {
+      "lemma": "learn",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "memorize.v.01",
+          "via_synset": "memorize.v.01"
+        }
+      ],
+      "definition": "commit to memory; learn by heart"
+    },
+    {
+      "lemma": "listen",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "concentrate.v.02",
+          "via_synset": "listen.v.02"
+        }
+      ],
+      "definition": "listen and pay attention"
+    },
+    {
+      "lemma": "mark",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "distinguish.v.03",
+          "via_synset": "marker.n.02"
+        }
+      ],
+      "definition": "a distinguishing symbol"
+    },
+    {
+      "lemma": "mark",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "qualify.v.06",
+          "via_synset": "distinguish.v.03"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "distinguish.v.03",
+          "via_synset": "mark.v.02"
+        }
+      ],
+      "definition": "be a distinctive feature, attribute, or trait; sometimes in a very positive sense"
+    },
+    {
+      "lemma": "marker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "distinguish.v.03",
+          "via_synset": "marker.n.02"
+        }
+      ],
+      "definition": "a distinguishing symbol"
+    },
+    {
+      "lemma": "memorisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "memorize.v.01",
+          "via_synset": "memorization.n.01"
+        }
+      ],
+      "definition": "learning so as to be able to remember verbatim"
+    },
+    {
+      "lemma": "memorise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "memorize.v.01",
+          "via_synset": "memorize.v.01"
+        }
+      ],
+      "definition": "commit to memory; learn by heart"
+    },
+    {
+      "lemma": "memoriser",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "memorize.v.01",
+          "via_synset": "memorizer.n.01"
+        }
+      ],
+      "definition": "a person who learns by rote"
+    },
+    {
+      "lemma": "memorization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "memorize.v.01",
+          "via_synset": "memorization.n.01"
+        }
+      ],
+      "definition": "learning so as to be able to remember verbatim"
+    },
+    {
+      "lemma": "memorize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "memorize.v.01",
+          "via_synset": "memorize.v.01"
+        }
+      ],
+      "definition": "commit to memory; learn by heart"
+    },
+    {
+      "lemma": "memorizer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "memorize.v.01",
+          "via_synset": "memorizer.n.01"
+        }
+      ],
+      "definition": "a person who learns by rote"
+    },
+    {
+      "lemma": "memory",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "memorize.v.01",
+          "via_synset": "memory.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "memorize.v.01",
+          "via_synset": "memory.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "memorize.v.01",
+          "via_synset": "memory.n.03"
+        }
+      ],
+      "definition": "something that is remembered"
+    },
+    {
+      "lemma": "mind",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mind.v.06",
+          "via_synset": "mind.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mind.v.06",
+          "via_synset": "mind.n.01"
+        }
+      ],
+      "definition": "recall or remembrance"
+    },
+    {
+      "lemma": "mind",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "remember.v.02",
+          "via_synset": "mind.v.06"
+        }
+      ],
+      "definition": "keep in mind"
+    },
+    {
+      "lemma": "misidentify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "identify.v.06",
+          "via_synset": "mistake.v.01"
+        }
+      ],
+      "definition": "identify incorrectly"
+    },
+    {
+      "lemma": "mistake",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "identify.v.06",
+          "via_synset": "mistake.v.01"
+        }
+      ],
+      "definition": "identify incorrectly"
+    },
+    {
+      "lemma": "mug up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "study.v.05",
+          "via_synset": "cram.v.03"
+        }
+      ],
+      "definition": "study intensively, as before an exam"
+    },
+    {
+      "lemma": "plunge",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "concentrate.v.02",
+          "via_synset": "steep.v.01"
+        }
+      ],
+      "definition": "devote (oneself) fully to"
+    },
+    {
+      "lemma": "pore",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "recall.v.05",
+          "via_synset": "concentrate.v.02"
+        }
+      ],
+      "definition": "direct one's attention on something"
+    },
+    {
+      "lemma": "qualify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "remember.v.02",
+          "via_synset": "qualify.v.06"
+        }
+      ],
+      "definition": "describe or portray the character or the qualities or peculiarities of"
+    },
+    {
+      "lemma": "quality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "qualify.v.06",
+          "via_synset": "quality.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "qualify.v.06",
+          "via_synset": "quality.n.01"
+        }
+      ],
+      "definition": "a characteristic property that defines the apparent individual nature of something"
+    },
+    {
+      "lemma": "recall",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remember.v.01",
+          "via_synset": "recall.n.04"
+        }
+      ],
+      "definition": "the process of remembering (especially the process of recovering information by mental effort)"
+    },
+    {
+      "lemma": "recall",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "remember.v.01",
+          "via_synset": "remember.v.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "recall.v.05",
+          "via_synset": "recall.v.05"
+        }
+      ],
+      "definition": "recall knowledge from memory; have a recollection"
+    },
+    {
+      "lemma": "recognise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "remember.v.01",
+          "via_synset": "recognize.v.04"
+        }
+      ],
+      "definition": "perceive to be the same"
+    },
+    {
+      "lemma": "recognition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "recognize.v.04",
+          "via_synset": "recognition.n.02"
+        }
+      ],
+      "definition": "the process of recognizing something or someone by remembering"
+    },
+    {
+      "lemma": "recognize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "remember.v.01",
+          "via_synset": "recognize.v.04"
+        }
+      ],
+      "definition": "perceive to be the same"
+    },
+    {
+      "lemma": "recollect",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "remember.v.01",
+          "via_synset": "remember.v.01"
+        }
+      ],
+      "definition": "recall knowledge from memory; have a recollection"
+    },
+    {
+      "lemma": "recollection",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remember.v.01",
+          "via_synset": "recall.n.04"
+        }
+      ],
+      "definition": "the process of remembering (especially the process of recovering information by mental effort)"
+    },
+    {
+      "lemma": "recollective",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remember.v.01",
+          "via_synset": "retentive.a.01"
+        }
+      ],
+      "definition": "good at remembering"
+    },
+    {
+      "lemma": "refresh",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "remember.v.01",
+          "via_synset": "review.v.04"
+        }
+      ],
+      "definition": "refresh one's memory"
+    },
+    {
+      "lemma": "refresher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "review.v.04",
+          "via_synset": "refresher_course.n.01"
+        }
+      ],
+      "definition": "a course that reviews and updates a topic for those who have not kept abreast of developments"
+    },
+    {
+      "lemma": "remember",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "remember.v.01",
+          "via_synset": "remember.v.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "commemorate.v.02",
+          "via_synset": "commemorate.v.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "remember.v.02",
+          "via_synset": "remember.v.02"
+        }
+      ],
+      "definition": "recall knowledge from memory; have a recollection"
+    },
+    {
+      "lemma": "remembering",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remember.v.01",
+          "via_synset": "memory.n.02"
+        }
+      ],
+      "definition": "the cognitive processes whereby past experience is remembered"
+    },
+    {
+      "lemma": "remembrance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "commemorate.v.02",
+          "via_synset": "remembrance.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remember.v.02",
+          "via_synset": "remembrance.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remember.v.01",
+          "via_synset": "remembrance.n.01"
+        }
+      ],
+      "definition": "the ability to recall past occurrences"
+    },
+    {
+      "lemma": "retain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "remember.v.02",
+          "via_synset": "retain.v.04"
+        }
+      ],
+      "definition": "keep in one's mind"
+    },
+    {
+      "lemma": "retention",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "retain.v.04",
+          "via_synset": "memory.n.03"
+        }
+      ],
+      "definition": "the power of retaining and recalling past experience"
+    },
+    {
+      "lemma": "retentive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "retain.v.04",
+          "via_synset": "retentive.a.01"
+        }
+      ],
+      "definition": "good at remembering"
+    },
+    {
+      "lemma": "retrieval",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remember.v.01",
+          "via_synset": "retrieval.n.02"
+        }
+      ],
+      "definition": "the cognitive operation of accessing information in memory"
+    },
+    {
+      "lemma": "retrieve",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "remember.v.01",
+          "via_synset": "remember.v.01"
+        }
+      ],
+      "definition": "recall knowledge from memory; have a recollection"
+    },
+    {
+      "lemma": "review",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "review.v.04",
+          "via_synset": "review.n.09"
+        }
+      ],
+      "definition": "practice intended to polish performance or refresh the memory"
+    },
+    {
+      "lemma": "review",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "remember.v.01",
+          "via_synset": "review.v.04"
+        }
+      ],
+      "definition": "refresh one's memory"
+    },
+    {
+      "lemma": "rivet",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "recall.v.05",
+          "via_synset": "concentrate.v.02"
+        }
+      ],
+      "definition": "direct one's attention on something"
+    },
+    {
+      "lemma": "soak up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "concentrate.v.02",
+          "via_synset": "steep.v.01"
+        }
+      ],
+      "definition": "devote (oneself) fully to"
+    },
+    {
+      "lemma": "stamp",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "stamp.v.03",
+          "via_synset": "stamp.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "stamp.v.03",
+          "via_synset": "cast.n.03"
+        }
+      ],
+      "definition": "a type or class"
+    },
+    {
+      "lemma": "stamp",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "qualify.v.06",
+          "via_synset": "stamp.v.03"
+        }
+      ],
+      "definition": "reveal clearly as having a certain character"
+    },
+    {
+      "lemma": "steep",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "concentrate.v.02",
+          "via_synset": "steep.v.01"
+        }
+      ],
+      "definition": "devote (oneself) fully to"
+    },
+    {
+      "lemma": "study",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "memorize.v.01",
+          "via_synset": "study.v.05"
+        }
+      ],
+      "definition": "learn by reading books"
+    },
+    {
+      "lemma": "swot",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "study.v.05",
+          "via_synset": "cram.v.03"
+        }
+      ],
+      "definition": "study intensively, as before an exam"
+    },
+    {
+      "lemma": "swot up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "study.v.05",
+          "via_synset": "cram.v.03"
+        }
+      ],
+      "definition": "study intensively, as before an exam"
+    },
+    {
+      "lemma": "take heed",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "concentrate.v.02",
+          "via_synset": "listen.v.02"
+        }
+      ],
+      "definition": "listen and pay attention"
+    },
+    {
+      "lemma": "take to heart",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "mind.v.06",
+          "via_synset": "attend_to.v.01"
+        }
+      ],
+      "definition": "get down to; pay attention to; take seriously"
+    },
+    {
+      "lemma": "taste",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "identify.v.06",
+          "via_synset": "taste.v.05"
+        }
+      ],
+      "definition": "distinguish flavors"
+    },
+    {
+      "lemma": "think",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remember.v.01",
+          "via_synset": "think.n.01"
+        }
+      ],
+      "definition": "an instance of deliberate thinking"
+    },
+    {
+      "lemma": "think",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "remember.v.01",
+          "via_synset": "remember.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "concentrate.v.02",
+          "via_synset": "think.v.06"
+        }
+      ],
+      "definition": "recall knowledge from memory; have a recollection"
+    },
+    {
+      "lemma": "think of",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "remember.v.02",
+          "via_synset": "remember.v.02"
+        }
+      ],
+      "definition": "keep in mind for attention or consideration"
+    },
+    {
+      "lemma": "thought",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remember.v.01",
+          "via_synset": "idea.n.01"
+        }
+      ],
+      "definition": "the content of cognition; the main thing you are thinking about"
+    },
+    {
+      "lemma": "type",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "identify.v.06",
+          "via_synset": "type.v.02"
+        }
+      ],
+      "definition": "identify as belonging to a certain type"
+    },
+    {
+      "lemma": "typecast",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "identify.v.06",
+          "via_synset": "type.v.02"
+        }
+      ],
+      "definition": "identify as belonging to a certain type"
+    },
+    {
+      "lemma": "understudy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "understudy.v.01",
+          "via_synset": "understudy.n.01"
+        }
+      ],
+      "definition": "an actor able to replace a regular performer when required"
+    },
+    {
+      "lemma": "understudy",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memorize.v.01",
+          "via_synset": "understudy.v.01"
+        }
+      ],
+      "definition": "be an understudy or alternate for a role"
+    },
+    {
+      "lemma": "zoom in",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "concentrate.v.02",
+          "via_synset": "zoom_in.v.01"
+        }
+      ],
+      "definition": "examine closely; focus one's attention on"
+    }
+  ]
+}

@@ -1,0 +1,640 @@
+{
+  "atom_id": "SOC.stateless",
+  "category": "SOC",
+  "seed_count": 4,
+  "total_keys": 35,
+  "pos_counts": {
+    "adj": 3,
+    "n": 29,
+    "v": 3
+  },
+  "source_counts": {
+    "0_seed": 10,
+    "2_hypernym_d1": 6,
+    "3_hyponym_d1": 5,
+    "10_sibling": 16,
+    "4_hyponym_d2": 3,
+    "6_derivational": 4,
+    "7_similar_to": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 9,
+      "words": [
+        "homeless(adj)",
+        "stateless(adj)",
+        "exile(n)",
+        "deportation(n)",
+        "expatriation(n)",
+        "transportation(n)",
+        "expatriate(n)",
+        "expat(n)",
+        "refugee(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 3,
+      "words": [
+        "banishment(n)",
+        "proscription(n)",
+        "absentee(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 4,
+      "words": [
+        "remittance man(n)",
+        "displaced person(n)",
+        "DP(n)",
+        "stateless person(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 3,
+      "words": [
+        "expatriate(v)",
+        "exile(v)",
+        "deport(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 1,
+      "words": [
+        "unsettled(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 15,
+      "words": [
+        "anathematization(n)",
+        "anathematisation(n)",
+        "disbarment(n)",
+        "excommunication(n)",
+        "excision(n)",
+        "ejection(n)",
+        "exclusion(n)",
+        "expulsion(n)",
+        "riddance(n)",
+        "relegation(n)",
+        "rustication(n)",
+        "truant(n)",
+        "hooky player(n)",
+        "defaulter(n)",
+        "AWOL(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "absentee",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "exile.n.01",
+          "via_synset": "absentee.n.01"
+        }
+      ],
+      "definition": "one that is absent or not in residence"
+    },
+    {
+      "lemma": "anathematisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "banishment.n.02",
+          "via_synset": "anathematization.n.01"
+        }
+      ],
+      "definition": "the formal act of pronouncing (someone or something) accursed"
+    },
+    {
+      "lemma": "anathematization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "banishment.n.02",
+          "via_synset": "anathematization.n.01"
+        }
+      ],
+      "definition": "the formal act of pronouncing (someone or something) accursed"
+    },
+    {
+      "lemma": "AWOL",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "absentee.n.01",
+          "via_synset": "awol.n.01"
+        }
+      ],
+      "definition": "one who is away or absent without leave"
+    },
+    {
+      "lemma": "banishment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "exile.n.03",
+          "via_synset": "banishment.n.02"
+        }
+      ],
+      "definition": "rejection by means of an act of banishing or proscribing someone"
+    },
+    {
+      "lemma": "defaulter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "absentee.n.01",
+          "via_synset": "defaulter.n.01"
+        }
+      ],
+      "definition": "someone who fails to make a required appearance in court"
+    },
+    {
+      "lemma": "deport",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "exile.n.03",
+          "via_synset": "expatriate.v.01"
+        }
+      ],
+      "definition": "expel from a country"
+    },
+    {
+      "lemma": "deportation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "exile.n.03",
+          "via_synset": "exile.n.03"
+        }
+      ],
+      "definition": "the act of expelling a person from their native land"
+    },
+    {
+      "lemma": "disbarment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "banishment.n.02",
+          "via_synset": "disbarment.n.01"
+        }
+      ],
+      "definition": "the act of expelling a lawyer from the practice of law"
+    },
+    {
+      "lemma": "displaced person",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "refugee.n.01",
+          "via_synset": "displaced_person.n.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "refugee.n.01",
+          "via_synset": "displaced_person.n.01"
+        }
+      ],
+      "definition": "a person forced to flee from home or country"
+    },
+    {
+      "lemma": "DP",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "refugee.n.01",
+          "via_synset": "displaced_person.n.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "refugee.n.01",
+          "via_synset": "displaced_person.n.01"
+        }
+      ],
+      "definition": "a person forced to flee from home or country"
+    },
+    {
+      "lemma": "ejection",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "banishment.n.02",
+          "via_synset": "ejection.n.02"
+        }
+      ],
+      "definition": "the act of forcing out someone or something"
+    },
+    {
+      "lemma": "excision",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "banishment.n.02",
+          "via_synset": "excommunication.n.02"
+        }
+      ],
+      "definition": "the act of banishing a member of a church from the communion of believers and the privileges of the church; cutting a person off from a religious society"
+    },
+    {
+      "lemma": "exclusion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "banishment.n.02",
+          "via_synset": "ejection.n.02"
+        }
+      ],
+      "definition": "the act of forcing out someone or something"
+    },
+    {
+      "lemma": "excommunication",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "banishment.n.02",
+          "via_synset": "excommunication.n.02"
+        }
+      ],
+      "definition": "the act of banishing a member of a church from the communion of believers and the privileges of the church; cutting a person off from a religious society"
+    },
+    {
+      "lemma": "exile",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "exile.n.03",
+          "via_synset": "exile.n.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "exile.n.01",
+          "via_synset": "exile.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "refugee.n.01",
+          "via_synset": "exile.n.01"
+        }
+      ],
+      "definition": "the act of expelling a person from their native land"
+    },
+    {
+      "lemma": "exile",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "exile.n.03",
+          "via_synset": "expatriate.v.01"
+        }
+      ],
+      "definition": "expel from a country"
+    },
+    {
+      "lemma": "expat",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "exile.n.01",
+          "via_synset": "exile.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "refugee.n.01",
+          "via_synset": "exile.n.01"
+        }
+      ],
+      "definition": "a person who is voluntarily absent from home or country"
+    },
+    {
+      "lemma": "expatriate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "exile.n.01",
+          "via_synset": "exile.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "refugee.n.01",
+          "via_synset": "exile.n.01"
+        }
+      ],
+      "definition": "a person who is voluntarily absent from home or country"
+    },
+    {
+      "lemma": "expatriate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "exile.n.01",
+          "via_synset": "expatriate.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "exile.n.03",
+          "via_synset": "expatriate.v.01"
+        }
+      ],
+      "definition": "move away from one's native country and adopt a new residence abroad"
+    },
+    {
+      "lemma": "expatriation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "exile.n.03",
+          "via_synset": "exile.n.03"
+        }
+      ],
+      "definition": "the act of expelling a person from their native land"
+    },
+    {
+      "lemma": "expulsion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "banishment.n.02",
+          "via_synset": "ejection.n.02"
+        }
+      ],
+      "definition": "the act of forcing out someone or something"
+    },
+    {
+      "lemma": "homeless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "homeless.s.01",
+          "via_synset": "homeless.s.01"
+        }
+      ],
+      "definition": "without nationality or citizenship"
+    },
+    {
+      "lemma": "hooky player",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "absentee.n.01",
+          "via_synset": "truant.n.01"
+        }
+      ],
+      "definition": "one who is absent from school without permission"
+    },
+    {
+      "lemma": "proscription",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "exile.n.03",
+          "via_synset": "banishment.n.02"
+        }
+      ],
+      "definition": "rejection by means of an act of banishing or proscribing someone"
+    },
+    {
+      "lemma": "refugee",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "refugee.n.01",
+          "via_synset": "refugee.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "exile.n.01",
+          "via_synset": "refugee.n.01"
+        }
+      ],
+      "definition": "an exile who flees for safety"
+    },
+    {
+      "lemma": "relegation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "banishment.n.02",
+          "via_synset": "relegation.n.03"
+        }
+      ],
+      "definition": "mild banishment; consignment to an inferior position"
+    },
+    {
+      "lemma": "remittance man",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "exile.n.01",
+          "via_synset": "remittance_man.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "exile.n.01",
+          "via_synset": "remittance_man.n.01"
+        }
+      ],
+      "definition": "an exile living on money sent from home"
+    },
+    {
+      "lemma": "riddance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "banishment.n.02",
+          "via_synset": "ejection.n.02"
+        }
+      ],
+      "definition": "the act of forcing out someone or something"
+    },
+    {
+      "lemma": "rustication",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "banishment.n.02",
+          "via_synset": "rustication.n.05"
+        }
+      ],
+      "definition": "banishment into the country"
+    },
+    {
+      "lemma": "stateless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "homeless.s.01",
+          "via_synset": "homeless.s.01"
+        }
+      ],
+      "definition": "without nationality or citizenship"
+    },
+    {
+      "lemma": "stateless person",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "refugee.n.01",
+          "via_synset": "displaced_person.n.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "refugee.n.01",
+          "via_synset": "displaced_person.n.01"
+        }
+      ],
+      "definition": "a person forced to flee from home or country"
+    },
+    {
+      "lemma": "transportation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "exile.n.03",
+          "via_synset": "exile.n.03"
+        }
+      ],
+      "definition": "the act of expelling a person from their native land"
+    },
+    {
+      "lemma": "truant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "absentee.n.01",
+          "via_synset": "truant.n.01"
+        }
+      ],
+      "definition": "one who is absent from school without permission"
+    },
+    {
+      "lemma": "unsettled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "homeless.s.01",
+          "via_synset": "unsettled.a.02"
+        }
+      ],
+      "definition": "not settled or established"
+    }
+  ]
+}

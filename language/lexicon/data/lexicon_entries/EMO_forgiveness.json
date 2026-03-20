@@ -1,0 +1,485 @@
+{
+  "atom": "EMO.forgiveness",
+  "category": "EMO",
+  "status": "proposed",
+  "symmetric_pair": "EMO.apology",
+  "definition_en": "The act of releasing resentment; granting pardon.",
+  "seed_synsets": [],
+  "core_pool": {
+    "rules": [
+      "0_seed",
+      "3_hyponym_d1",
+      "6_derivational",
+      "7_similar_to",
+      "9_antonym"
+    ],
+    "count": 11,
+    "words": [
+      {
+        "w": "amnesty",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "the formal act of liberating someone",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "amnesty",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "grant a pardon to (a group of people)",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "condonation",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "a pardon by treating the offender as if the offense had not occurred",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "condone",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "excuse, overlook, or make allowances for; be lenient with",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "exculpate",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "pronounce not guilty of criminal charges",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "exculpation",
+        "pos": "n",
+        "src": "3_hyponym_d1",
+        "definition": "the act of freeing from guilt or blame",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "forgiveness",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "the act of excusing a mistake or offense",
+        "path_count": 2,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "free pardon",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "the formal act of liberating someone",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "let it go",
+        "pos": "v",
+        "src": "0_seed",
+        "definition": "not act",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "pardon",
+        "pos": "n",
+        "src": "0_seed",
+        "definition": "the act of excusing a mistake or offense",
+        "path_count": 2,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "pardon",
+        "pos": "v",
+        "src": "6_derivational",
+        "definition": "grant a pardon to",
+        "path_count": 2,
+        "sources": [
+          "6_derivational"
+        ]
+      }
+    ]
+  },
+  "deviation_pool": {
+    "rules": [
+      "10_sibling",
+      "11_pertainym",
+      "12_verb_group",
+      "2_hypernym_d1",
+      "4_hyponym_d2",
+      "5_hyponym_d3",
+      "8_also_see"
+    ],
+    "count": 31,
+    "words": [
+      {
+        "w": "abstain",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "refrain from voting",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "benefaction",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "an act intending or showing kindness and good will",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "benevolence",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "an act intending or showing kindness and good will",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "benignity",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "a kind act",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "clemency",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "leniency and compassion shown toward offenders by a person or agency charged with administering justice",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "commutation",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "(law) the reduction in severity of a punishment imposed by law",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "consideration",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a considerate and thoughtful act",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "cupboard love",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a show of affection motivated by selfishness",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "endearment",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the act of showing affection",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "favor",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "an act of gracious kindness",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "favour",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "an act of gracious kindness",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "forbear",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "resist doing something",
+        "path_count": 2,
+        "sources": [
+          "10_sibling",
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "help",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "abstain from doing; always used with a negative",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "help oneself",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "abstain from doing; always used with a negative",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "hold back",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "refrain from doing",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "kindness",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "a kind act",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "leave",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "leave unchanged or undisturbed or refrain from taking",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "leave alone",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "leave unchanged or undisturbed or refrain from taking",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "leave behind",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "leave unchanged or undisturbed or refrain from taking",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "mercifulness",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "the feeling that motivates compassion",
+        "path_count": 2,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "mercy",
+        "pos": "n",
+        "src": "2_hypernym_d1",
+        "definition": "the feeling that motivates compassion",
+        "path_count": 2,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "quarter",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "clemency or mercy shown to a defeated opponent",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "re-sentencing",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "(law) the reduction in severity of a punishment imposed by law",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "refrain",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "resist doing something",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "reprieve",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the act of reprieving; postponing or remitting punishment",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "respite",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "the act of reprieving; postponing or remitting punishment",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "save",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "refrain from harming",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "sit out",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "not participate in (an activity, such as a dance or a sports event)",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "spare",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "refrain from harming",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "stand by",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "not act or do anything",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "thoughtfulness",
+        "pos": "n",
+        "src": "10_sibling",
+        "definition": "a considerate and thoughtful act",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      }
+    ]
+  },
+  "deviation_stats": {
+    "total_candidates": 42,
+    "core_count": 11,
+    "dev_count": 31,
+    "core_ratio": 0.262,
+    "dev_ratio": 0.738,
+    "dev_source_breakdown": {
+      "10_sibling": 25,
+      "2_hypernym_d1": 7
+    },
+    "step_contributions": {
+      "0_seed": 5,
+      "2_hypernym_d1": 7,
+      "3_hyponym_d1": 2,
+      "4_hyponym_d2": 0,
+      "5_hyponym_d3": 0,
+      "6_derivational": 4,
+      "7_similar_to": 0,
+      "8_also_see": 0,
+      "9_antonym": 0,
+      "10_sibling": 24,
+      "11_pertainym": 0,
+      "12_verb_group": 0
+    }
+  },
+  "meta": {
+    "generator": "wn_lexicon_entry.py",
+    "version": "1.0.0",
+    "design": "3AI consolidated: Core/Deviation pool separation"
+  }
+}

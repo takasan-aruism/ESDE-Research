@@ -1,0 +1,1505 @@
+{
+  "atom_id": "EMO.contempt",
+  "category": "EMO",
+  "seed_count": 5,
+  "total_keys": 91,
+  "pos_counts": {
+    "n": 73,
+    "v": 16,
+    "adj": 2
+  },
+  "source_counts": {
+    "0_seed": 15,
+    "2_hypernym_d1": 10,
+    "6_derivational": 22,
+    "10_sibling": 63,
+    "3_hyponym_d1": 5
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 11,
+      "words": [
+        "contempt(n)",
+        "disrespect(n)",
+        "disdain(n)",
+        "scorn(n)",
+        "despite(n)",
+        "condescension(n)",
+        "patronage(n)",
+        "contemn(v)",
+        "despise(v)",
+        "scorn(v)",
+        "disdain(v)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 8,
+      "words": [
+        "discourtesy(n)",
+        "rudeness(n)",
+        "dislike(n)",
+        "disparagement(n)",
+        "depreciation(n)",
+        "derogation(n)",
+        "hate(v)",
+        "detest(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 4,
+      "words": [
+        "sneer(n)",
+        "leer(n)",
+        "fleer(n)",
+        "look down on(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 10,
+      "words": [
+        "sneer(v)",
+        "fleer(v)",
+        "contemptuous(adj)",
+        "disrespect(v)",
+        "condescend(v)",
+        "leery(adj)",
+        "leer(v)",
+        "despising(n)",
+        "despisal(n)",
+        "scorner(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 58,
+      "words": [
+        "incivility(n)",
+        "crust(n)",
+        "gall(n)",
+        "impertinence(n)",
+        "impudence(n)",
+        "insolence(n)",
+        "cheekiness(n)",
+        "freshness(n)",
+        "ungraciousness(n)",
+        "boorishness(n)",
+        "impoliteness(n)",
+        "abruptness(n)",
+        "brusqueness(n)",
+        "curtness(n)",
+        "gruffness(n)",
+        "shortness(n)",
+        "technophobia(n)",
+        "alienation(n)",
+        "disaffection(n)",
+        "estrangement(n)",
+        "scunner(n)",
+        "unfriendliness(n)",
+        "antipathy(n)",
+        "aversion(n)",
+        "distaste(n)",
+        "disgust(n)",
+        "disapproval(n)",
+        "Anglophobia(n)",
+        "antagonism(n)",
+        "creepy-crawlies(n)",
+        "disinclination(n)",
+        "cheek(n)",
+        "derision(n)",
+        "abuse(n)",
+        "insult(n)",
+        "revilement(n)",
+        "contumely(n)",
+        "vilification(n)",
+        "ridicule(n)",
+        "blasphemy(n)",
+        "defamation(n)",
+        "calumny(n)",
+        "calumniation(n)",
+        "obloquy(n)",
+        "traducement(n)",
+        "hatchet job(n)",
+        "detraction(n)",
+        "petty criticism(n)",
+        "sour grapes(n)",
+        "denigration(n)",
+        "belittling(n)",
+        "aspersion(n)",
+        "slur(n)",
+        "cold water(n)",
+        "abhor(v)",
+        "loathe(v)",
+        "abominate(v)",
+        "execrate(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "abhor",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "hate.v.01",
+          "via_synset": "abhor.v.01"
+        }
+      ],
+      "definition": "find repugnant"
+    },
+    {
+      "lemma": "abominate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "hate.v.01",
+          "via_synset": "abhor.v.01"
+        }
+      ],
+      "definition": "find repugnant"
+    },
+    {
+      "lemma": "abruptness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "discourtesy.n.02",
+          "via_synset": "abruptness.n.01"
+        }
+      ],
+      "definition": "an abrupt discourteous manner"
+    },
+    {
+      "lemma": "abuse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disrespect.n.01",
+          "via_synset": "abuse.n.02"
+        }
+      ],
+      "definition": "a rude expression intended to offend or hurt"
+    },
+    {
+      "lemma": "alienation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "dislike.n.02",
+          "via_synset": "alienation.n.01"
+        }
+      ],
+      "definition": "the feeling of being alienated from other people"
+    },
+    {
+      "lemma": "Anglophobia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "dislike.n.02",
+          "via_synset": "anglophobia.n.01"
+        }
+      ],
+      "definition": "dislike (or fear) of Britain and British customs"
+    },
+    {
+      "lemma": "antagonism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "dislike.n.02",
+          "via_synset": "antagonism.n.03"
+        }
+      ],
+      "definition": "an actively expressed feeling of dislike and hostility"
+    },
+    {
+      "lemma": "antipathy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "dislike.n.02",
+          "via_synset": "antipathy.n.01"
+        }
+      ],
+      "definition": "a feeling of intense dislike"
+    },
+    {
+      "lemma": "aspersion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disparagement.n.01",
+          "via_synset": "aspersion.n.01"
+        }
+      ],
+      "definition": "a disparaging remark"
+    },
+    {
+      "lemma": "aversion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "dislike.n.02",
+          "via_synset": "antipathy.n.01"
+        }
+      ],
+      "definition": "a feeling of intense dislike"
+    },
+    {
+      "lemma": "belittling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disparagement.n.01",
+          "via_synset": "denigration.n.01"
+        }
+      ],
+      "definition": "a belittling comment"
+    },
+    {
+      "lemma": "blasphemy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disrespect.n.01",
+          "via_synset": "blasphemy.n.01"
+        }
+      ],
+      "definition": "blasphemous language (expressing disrespect for God or for something sacred)"
+    },
+    {
+      "lemma": "boorishness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "discourtesy.n.02",
+          "via_synset": "boorishness.n.01"
+        }
+      ],
+      "definition": "the manner of a rude or insensitive person"
+    },
+    {
+      "lemma": "brusqueness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "discourtesy.n.02",
+          "via_synset": "abruptness.n.01"
+        }
+      ],
+      "definition": "an abrupt discourteous manner"
+    },
+    {
+      "lemma": "calumniation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disparagement.n.01",
+          "via_synset": "defamation.n.01"
+        }
+      ],
+      "definition": "a false accusation of an offense or a malicious misrepresentation of someone's words or actions"
+    },
+    {
+      "lemma": "calumny",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disparagement.n.01",
+          "via_synset": "defamation.n.01"
+        }
+      ],
+      "definition": "a false accusation of an offense or a malicious misrepresentation of someone's words or actions"
+    },
+    {
+      "lemma": "cheek",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disrespect.n.01",
+          "via_synset": "impudence.n.01"
+        }
+      ],
+      "definition": "an impudent statement"
+    },
+    {
+      "lemma": "cheekiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "discourtesy.n.02",
+          "via_synset": "crust.n.03"
+        }
+      ],
+      "definition": "the trait of being rude and impertinent; inclined to take liberties"
+    },
+    {
+      "lemma": "cold water",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disparagement.n.01",
+          "via_synset": "cold_water.n.01"
+        }
+      ],
+      "definition": "disparagement of a plan or hope or expectation"
+    },
+    {
+      "lemma": "condescend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "condescension.n.02",
+          "via_synset": "patronize.v.03"
+        }
+      ],
+      "definition": "treat condescendingly"
+    },
+    {
+      "lemma": "condescension",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "condescension.n.02",
+          "via_synset": "condescension.n.02"
+        }
+      ],
+      "definition": "a communication that indicates lack of respect by patronizing the recipient"
+    },
+    {
+      "lemma": "contemn",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "contemn.v.01",
+          "via_synset": "contemn.v.01"
+        }
+      ],
+      "definition": "look down on with disdain"
+    },
+    {
+      "lemma": "contempt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "contempt.n.02",
+          "via_synset": "contempt.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "contempt.n.01",
+          "via_synset": "contempt.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "contempt.n.03",
+          "via_synset": "contempt.n.03"
+        }
+      ],
+      "definition": "a manner that is generally disrespectful and contemptuous"
+    },
+    {
+      "lemma": "contemptuous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "contempt.n.03",
+          "via_synset": "contemptuous.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "contempt.n.02",
+          "via_synset": "contemptuous.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "contempt.n.01",
+          "via_synset": "contemptuous.s.01"
+        }
+      ],
+      "definition": "expressing extreme contempt"
+    },
+    {
+      "lemma": "contumely",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disrespect.n.01",
+          "via_synset": "abuse.n.02"
+        }
+      ],
+      "definition": "a rude expression intended to offend or hurt"
+    },
+    {
+      "lemma": "creepy-crawlies",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "dislike.n.02",
+          "via_synset": "creepy-crawlies.n.01"
+        }
+      ],
+      "definition": "feelings of dislike and anxiety"
+    },
+    {
+      "lemma": "crust",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "discourtesy.n.02",
+          "via_synset": "crust.n.03"
+        }
+      ],
+      "definition": "the trait of being rude and impertinent; inclined to take liberties"
+    },
+    {
+      "lemma": "curtness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "discourtesy.n.02",
+          "via_synset": "abruptness.n.01"
+        }
+      ],
+      "definition": "an abrupt discourteous manner"
+    },
+    {
+      "lemma": "defamation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disparagement.n.01",
+          "via_synset": "defamation.n.01"
+        }
+      ],
+      "definition": "a false accusation of an offense or a malicious misrepresentation of someone's words or actions"
+    },
+    {
+      "lemma": "denigration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disparagement.n.01",
+          "via_synset": "denigration.n.01"
+        }
+      ],
+      "definition": "a belittling comment"
+    },
+    {
+      "lemma": "depreciation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "condescension.n.02",
+          "via_synset": "disparagement.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disrespect.n.01",
+          "via_synset": "disparagement.n.01"
+        }
+      ],
+      "definition": "a communication that belittles somebody or something"
+    },
+    {
+      "lemma": "derision",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disrespect.n.01",
+          "via_synset": "derision.n.01"
+        }
+      ],
+      "definition": "contemptuous laughter"
+    },
+    {
+      "lemma": "derogation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "condescension.n.02",
+          "via_synset": "disparagement.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disrespect.n.01",
+          "via_synset": "disparagement.n.01"
+        }
+      ],
+      "definition": "a communication that belittles somebody or something"
+    },
+    {
+      "lemma": "despisal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "contemn.v.01",
+          "via_synset": "despisal.n.01"
+        }
+      ],
+      "definition": "a feeling of scornful hatred"
+    },
+    {
+      "lemma": "despise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "contemn.v.01",
+          "via_synset": "contemn.v.01"
+        }
+      ],
+      "definition": "look down on with disdain"
+    },
+    {
+      "lemma": "despising",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "contemn.v.01",
+          "via_synset": "despisal.n.01"
+        }
+      ],
+      "definition": "a feeling of scornful hatred"
+    },
+    {
+      "lemma": "despite",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "contempt.n.01",
+          "via_synset": "contempt.n.01"
+        }
+      ],
+      "definition": "lack of respect accompanied by a feeling of intense dislike"
+    },
+    {
+      "lemma": "detest",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "contemn.v.01",
+          "via_synset": "hate.v.01"
+        }
+      ],
+      "definition": "dislike intensely; feel antipathy or aversion towards"
+    },
+    {
+      "lemma": "detraction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disparagement.n.01",
+          "via_synset": "detraction.n.01"
+        }
+      ],
+      "definition": "a petty disparagement"
+    },
+    {
+      "lemma": "disaffection",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "dislike.n.02",
+          "via_synset": "alienation.n.01"
+        }
+      ],
+      "definition": "the feeling of being alienated from other people"
+    },
+    {
+      "lemma": "disapproval",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "dislike.n.02",
+          "via_synset": "disapproval.n.01"
+        }
+      ],
+      "definition": "a feeling of disliking something or what someone is doing"
+    },
+    {
+      "lemma": "discourtesy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "contempt.n.02",
+          "via_synset": "discourtesy.n.02"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "contempt.n.03",
+          "via_synset": "disrespect.n.01"
+        }
+      ],
+      "definition": "a manner that is rude and insulting"
+    },
+    {
+      "lemma": "disdain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "contempt.n.01",
+          "via_synset": "contempt.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "condescension.n.02",
+          "via_synset": "condescension.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "contemn.v.01",
+          "via_synset": "contempt.n.01"
+        }
+      ],
+      "definition": "lack of respect accompanied by a feeling of intense dislike"
+    },
+    {
+      "lemma": "disdain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "contemn.v.01",
+          "via_synset": "contemn.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "contempt.n.01",
+          "via_synset": "contemn.v.01"
+        }
+      ],
+      "definition": "look down on with disdain"
+    },
+    {
+      "lemma": "disgust",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "dislike.n.02",
+          "via_synset": "disgust.n.01"
+        }
+      ],
+      "definition": "strong feelings of dislike"
+    },
+    {
+      "lemma": "disinclination",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "dislike.n.02",
+          "via_synset": "disinclination.n.01"
+        }
+      ],
+      "definition": "that toward which you are inclined to feel dislike"
+    },
+    {
+      "lemma": "dislike",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "contempt.n.01",
+          "via_synset": "dislike.n.02"
+        }
+      ],
+      "definition": "a feeling of aversion or antipathy"
+    },
+    {
+      "lemma": "disparagement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "condescension.n.02",
+          "via_synset": "disparagement.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disrespect.n.01",
+          "via_synset": "disparagement.n.01"
+        }
+      ],
+      "definition": "a communication that belittles somebody or something"
+    },
+    {
+      "lemma": "disrespect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "contempt.n.02",
+          "via_synset": "contempt.n.02"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "contempt.n.03",
+          "via_synset": "disrespect.n.01"
+        }
+      ],
+      "definition": "a manner that is generally disrespectful and contemptuous"
+    },
+    {
+      "lemma": "disrespect",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "contempt.n.02",
+          "via_synset": "disrespect.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "contempt.n.02",
+          "via_synset": "disrespect.v.01"
+        }
+      ],
+      "definition": "have little or no respect for; hold in contempt"
+    },
+    {
+      "lemma": "distaste",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "dislike.n.02",
+          "via_synset": "antipathy.n.01"
+        }
+      ],
+      "definition": "a feeling of intense dislike"
+    },
+    {
+      "lemma": "estrangement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "dislike.n.02",
+          "via_synset": "alienation.n.01"
+        }
+      ],
+      "definition": "the feeling of being alienated from other people"
+    },
+    {
+      "lemma": "execrate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "hate.v.01",
+          "via_synset": "abhor.v.01"
+        }
+      ],
+      "definition": "find repugnant"
+    },
+    {
+      "lemma": "fleer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "contempt.n.03",
+          "via_synset": "fleer.n.02"
+        }
+      ],
+      "definition": "contempt expressed by mockery in looks or words"
+    },
+    {
+      "lemma": "fleer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fleer.n.02",
+          "via_synset": "fleer.v.01"
+        }
+      ],
+      "definition": "to smirk contemptuously"
+    },
+    {
+      "lemma": "freshness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "discourtesy.n.02",
+          "via_synset": "crust.n.03"
+        }
+      ],
+      "definition": "the trait of being rude and impertinent; inclined to take liberties"
+    },
+    {
+      "lemma": "gall",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "discourtesy.n.02",
+          "via_synset": "crust.n.03"
+        }
+      ],
+      "definition": "the trait of being rude and impertinent; inclined to take liberties"
+    },
+    {
+      "lemma": "gruffness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "discourtesy.n.02",
+          "via_synset": "abruptness.n.01"
+        }
+      ],
+      "definition": "an abrupt discourteous manner"
+    },
+    {
+      "lemma": "hatchet job",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disparagement.n.01",
+          "via_synset": "defamation.n.01"
+        }
+      ],
+      "definition": "a false accusation of an offense or a malicious misrepresentation of someone's words or actions"
+    },
+    {
+      "lemma": "hate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "contemn.v.01",
+          "via_synset": "hate.v.01"
+        }
+      ],
+      "definition": "dislike intensely; feel antipathy or aversion towards"
+    },
+    {
+      "lemma": "impertinence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "discourtesy.n.02",
+          "via_synset": "crust.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disrespect.n.01",
+          "via_synset": "impudence.n.01"
+        }
+      ],
+      "definition": "the trait of being rude and impertinent; inclined to take liberties"
+    },
+    {
+      "lemma": "impoliteness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "discourtesy.n.02",
+          "via_synset": "impoliteness.n.01"
+        }
+      ],
+      "definition": "a discourteous manner that ignores accepted social usage"
+    },
+    {
+      "lemma": "impudence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "discourtesy.n.02",
+          "via_synset": "crust.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disrespect.n.01",
+          "via_synset": "impudence.n.01"
+        }
+      ],
+      "definition": "the trait of being rude and impertinent; inclined to take liberties"
+    },
+    {
+      "lemma": "incivility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "discourtesy.n.02",
+          "via_synset": "incivility.n.01"
+        }
+      ],
+      "definition": "deliberate discourtesy"
+    },
+    {
+      "lemma": "insolence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "discourtesy.n.02",
+          "via_synset": "crust.n.03"
+        }
+      ],
+      "definition": "the trait of being rude and impertinent; inclined to take liberties"
+    },
+    {
+      "lemma": "insult",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disrespect.n.01",
+          "via_synset": "abuse.n.02"
+        }
+      ],
+      "definition": "a rude expression intended to offend or hurt"
+    },
+    {
+      "lemma": "leer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "contempt.n.03",
+          "via_synset": "sneer.n.01"
+        }
+      ],
+      "definition": "a facial expression of contempt or scorn; the upper lip curls"
+    },
+    {
+      "lemma": "leer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sneer.n.01",
+          "via_synset": "leer.v.01"
+        }
+      ],
+      "definition": "look suggestively or obliquely; look or gaze with a sly, immodest, or malign expression"
+    },
+    {
+      "lemma": "leery",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sneer.n.01",
+          "via_synset": "leery.s.01"
+        }
+      ],
+      "definition": "openly distrustful and unwilling to confide"
+    },
+    {
+      "lemma": "loathe",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "hate.v.01",
+          "via_synset": "abhor.v.01"
+        }
+      ],
+      "definition": "find repugnant"
+    },
+    {
+      "lemma": "look down on",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "contemn.v.01",
+          "via_synset": "look_down_on.v.01"
+        }
+      ],
+      "definition": "regard with contempt"
+    },
+    {
+      "lemma": "obloquy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disparagement.n.01",
+          "via_synset": "defamation.n.01"
+        }
+      ],
+      "definition": "a false accusation of an offense or a malicious misrepresentation of someone's words or actions"
+    },
+    {
+      "lemma": "patronage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "condescension.n.02",
+          "via_synset": "condescension.n.02"
+        }
+      ],
+      "definition": "a communication that indicates lack of respect by patronizing the recipient"
+    },
+    {
+      "lemma": "petty criticism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disparagement.n.01",
+          "via_synset": "detraction.n.01"
+        }
+      ],
+      "definition": "a petty disparagement"
+    },
+    {
+      "lemma": "revilement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disrespect.n.01",
+          "via_synset": "abuse.n.02"
+        }
+      ],
+      "definition": "a rude expression intended to offend or hurt"
+    },
+    {
+      "lemma": "ridicule",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disrespect.n.01",
+          "via_synset": "ridicule.n.01"
+        }
+      ],
+      "definition": "language or behavior intended to mock or humiliate"
+    },
+    {
+      "lemma": "rudeness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "contempt.n.02",
+          "via_synset": "discourtesy.n.02"
+        }
+      ],
+      "definition": "a manner that is rude and insulting"
+    },
+    {
+      "lemma": "scorn",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "contempt.n.01",
+          "via_synset": "contempt.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "contempt.n.03",
+          "via_synset": "contempt.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "contemn.v.01",
+          "via_synset": "contempt.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "contemn.v.01",
+          "via_synset": "contempt.n.01"
+        }
+      ],
+      "definition": "lack of respect accompanied by a feeling of intense dislike"
+    },
+    {
+      "lemma": "scorn",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "contemn.v.01",
+          "via_synset": "contemn.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "contempt.n.03",
+          "via_synset": "contemn.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "contempt.n.01",
+          "via_synset": "contemn.v.01"
+        }
+      ],
+      "definition": "look down on with disdain"
+    },
+    {
+      "lemma": "scorner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "contemn.v.01",
+          "via_synset": "sneerer.n.01"
+        }
+      ],
+      "definition": "a person who expresses contempt by remarks or facial expression"
+    },
+    {
+      "lemma": "scunner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "dislike.n.02",
+          "via_synset": "scunner.n.01"
+        }
+      ],
+      "definition": "a strong dislike"
+    },
+    {
+      "lemma": "shortness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "discourtesy.n.02",
+          "via_synset": "abruptness.n.01"
+        }
+      ],
+      "definition": "an abrupt discourteous manner"
+    },
+    {
+      "lemma": "slur",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disparagement.n.01",
+          "via_synset": "aspersion.n.01"
+        }
+      ],
+      "definition": "a disparaging remark"
+    },
+    {
+      "lemma": "sneer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "contempt.n.03",
+          "via_synset": "sneer.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "contempt.n.03",
+          "via_synset": "sneer.n.02"
+        }
+      ],
+      "definition": "a facial expression of contempt or scorn; the upper lip curls"
+    },
+    {
+      "lemma": "sneer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sneer.n.02",
+          "via_synset": "sneer.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sneer.n.02",
+          "via_synset": "sneer.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sneer.n.01",
+          "via_synset": "sneer.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sneer.n.01",
+          "via_synset": "sneer.v.02"
+        }
+      ],
+      "definition": "smile contemptuously"
+    },
+    {
+      "lemma": "sour grapes",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disparagement.n.01",
+          "via_synset": "sour_grapes.n.01"
+        }
+      ],
+      "definition": "disparagement of something that is unattainable"
+    },
+    {
+      "lemma": "technophobia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "dislike.n.02",
+          "via_synset": "technophobia.n.01"
+        }
+      ],
+      "definition": "dislike for new technology"
+    },
+    {
+      "lemma": "traducement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disparagement.n.01",
+          "via_synset": "defamation.n.01"
+        }
+      ],
+      "definition": "a false accusation of an offense or a malicious misrepresentation of someone's words or actions"
+    },
+    {
+      "lemma": "unfriendliness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "dislike.n.02",
+          "via_synset": "unfriendliness.n.01"
+        }
+      ],
+      "definition": "dislike experienced as an absence of friendliness"
+    },
+    {
+      "lemma": "ungraciousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "discourtesy.n.02",
+          "via_synset": "ungraciousness.n.01"
+        }
+      ],
+      "definition": "an offensive lack of good manners"
+    },
+    {
+      "lemma": "vilification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "disrespect.n.01",
+          "via_synset": "abuse.n.02"
+        }
+      ],
+      "definition": "a rude expression intended to offend or hurt"
+    }
+  ]
+}

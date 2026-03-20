@@ -1,0 +1,753 @@
+{
+  "atom_id": "PER.numb",
+  "category": "PER",
+  "seed_count": 6,
+  "total_keys": 44,
+  "pos_counts": {
+    "adj": 26,
+    "v": 13,
+    "n": 5
+  },
+  "source_counts": {
+    "0_seed": 13,
+    "7_similar_to": 17,
+    "2_hypernym_d1": 2,
+    "6_derivational": 5,
+    "8_also_see": 8,
+    "10_sibling": 7
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 11,
+      "words": [
+        "numb(adj)",
+        "numb(v)",
+        "benumb(v)",
+        "blunt(v)",
+        "dull(v)",
+        "asleep(adj)",
+        "benumbed(adj)",
+        "insensitive(adj)",
+        "hardhearted(adj)",
+        "stonyhearted(adj)",
+        "unfeeling(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 2,
+      "words": [
+        "desensitize(v)",
+        "desensitise(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 5,
+      "words": [
+        "numbness(n)",
+        "hardheartedness(n)",
+        "unfeelingness(n)",
+        "insensitiveness(n)",
+        "insensitivity(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 14,
+      "words": [
+        "insensible(adj)",
+        "afraid(adj)",
+        "uncompassionate(adj)",
+        "dead(adj)",
+        "deadened(adj)",
+        "unreactive(adj)",
+        "soulless(adj)",
+        "dull(adj)",
+        "unaffected(adj)",
+        "thick-skinned(adj)",
+        "tough-skinned(adj)",
+        "callous(adj)",
+        "indurate(adj)",
+        "pachydermatous(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 5,
+      "words": [
+        "unresponsive(adj)",
+        "unsusceptible(adj)",
+        "insusceptible(adj)",
+        "hard(adj)",
+        "tough(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 7,
+      "words": [
+        "besot(v)",
+        "stupefy(v)",
+        "stun(v)",
+        "bedaze(v)",
+        "daze(v)",
+        "deafen(v)",
+        "deaf(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "afraid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "numb.s.03",
+          "via_synset": "afraid.a.01"
+        }
+      ],
+      "definition": "filled with fear or apprehension"
+    },
+    {
+      "lemma": "asleep",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "asleep.s.01",
+          "via_synset": "asleep.s.01"
+        }
+      ],
+      "definition": "lacking sensation"
+    },
+    {
+      "lemma": "bedaze",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desensitize.v.01",
+          "via_synset": "stun.v.03"
+        }
+      ],
+      "definition": "overcome as with astonishment or disbelief"
+    },
+    {
+      "lemma": "benumb",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "numb.v.01",
+          "via_synset": "numb.v.01"
+        }
+      ],
+      "definition": "make numb or insensitive"
+    },
+    {
+      "lemma": "benumbed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "asleep.s.01",
+          "via_synset": "asleep.s.01"
+        }
+      ],
+      "definition": "lacking sensation"
+    },
+    {
+      "lemma": "besot",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desensitize.v.01",
+          "via_synset": "besot.v.01"
+        }
+      ],
+      "definition": "make dull or stupid or muddle with drunkenness or infatuation"
+    },
+    {
+      "lemma": "blunt",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "numb.v.01",
+          "via_synset": "numb.v.01"
+        }
+      ],
+      "definition": "make numb or insensitive"
+    },
+    {
+      "lemma": "callous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "insensitive.a.02",
+          "via_synset": "callous.s.01"
+        }
+      ],
+      "definition": "emotionally hardened"
+    },
+    {
+      "lemma": "daze",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desensitize.v.01",
+          "via_synset": "stun.v.03"
+        }
+      ],
+      "definition": "overcome as with astonishment or disbelief"
+    },
+    {
+      "lemma": "dead",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "insensitive.a.01",
+          "via_synset": "dead.s.05"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "insensitive.a.02",
+          "via_synset": "dead.s.04"
+        }
+      ],
+      "definition": "devoid of physical sensation; numb"
+    },
+    {
+      "lemma": "deadened",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "insensitive.a.01",
+          "via_synset": "dead.s.05"
+        }
+      ],
+      "definition": "devoid of physical sensation; numb"
+    },
+    {
+      "lemma": "deaf",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desensitize.v.01",
+          "via_synset": "deafen.v.02"
+        }
+      ],
+      "definition": "make or render deaf"
+    },
+    {
+      "lemma": "deafen",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desensitize.v.01",
+          "via_synset": "deafen.v.02"
+        }
+      ],
+      "definition": "make or render deaf"
+    },
+    {
+      "lemma": "desensitise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "numb.v.01",
+          "via_synset": "desensitize.v.01"
+        }
+      ],
+      "definition": "cause not to be sensitive"
+    },
+    {
+      "lemma": "desensitize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "numb.v.01",
+          "via_synset": "desensitize.v.01"
+        }
+      ],
+      "definition": "cause not to be sensitive"
+    },
+    {
+      "lemma": "dull",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "insensitive.a.02",
+          "via_synset": "dull.s.06"
+        }
+      ],
+      "definition": "blunted in responsiveness or sensibility; ; - Willa Cather"
+    },
+    {
+      "lemma": "dull",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "numb.v.01",
+          "via_synset": "numb.v.01"
+        }
+      ],
+      "definition": "make numb or insensitive"
+    },
+    {
+      "lemma": "hard",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "insensitive.a.02",
+          "via_synset": "hard.a.02"
+        }
+      ],
+      "definition": "dispassionate"
+    },
+    {
+      "lemma": "hardhearted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hardhearted.s.01",
+          "via_synset": "hardhearted.s.01"
+        }
+      ],
+      "definition": "devoid of feeling for others"
+    },
+    {
+      "lemma": "hardheartedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hardhearted.s.01",
+          "via_synset": "heartlessness.n.01"
+        }
+      ],
+      "definition": "an absence of concern for the welfare of others"
+    },
+    {
+      "lemma": "indurate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "insensitive.a.02",
+          "via_synset": "callous.s.01"
+        }
+      ],
+      "definition": "emotionally hardened"
+    },
+    {
+      "lemma": "insensible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "asleep.s.01",
+          "via_synset": "insensible.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "insensitive.a.02",
+          "via_synset": "insensible.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "insensitive.a.01",
+          "via_synset": "insensible.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "insensitive.a.02",
+          "via_synset": "insensible.a.01"
+        }
+      ],
+      "definition": "incapable of physical sensation"
+    },
+    {
+      "lemma": "insensitive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "insensitive.a.01",
+          "via_synset": "insensitive.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "insensitive.a.02",
+          "via_synset": "insensitive.a.02"
+        }
+      ],
+      "definition": "not responsive to physical stimuli"
+    },
+    {
+      "lemma": "insensitiveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "insensitive.a.02",
+          "via_synset": "insensitivity.n.01"
+        }
+      ],
+      "definition": "the inability to respond to affective changes in your interpersonal environment"
+    },
+    {
+      "lemma": "insensitivity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "insensitive.a.02",
+          "via_synset": "insensitivity.n.01"
+        }
+      ],
+      "definition": "the inability to respond to affective changes in your interpersonal environment"
+    },
+    {
+      "lemma": "insusceptible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "insensitive.a.01",
+          "via_synset": "unsusceptible.a.01"
+        }
+      ],
+      "definition": "not susceptible to"
+    },
+    {
+      "lemma": "numb",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "numb.s.03",
+          "via_synset": "numb.s.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "asleep.s.01",
+          "via_synset": "asleep.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "insensitive.a.02",
+          "via_synset": "dead.s.04"
+        }
+      ],
+      "definition": "so frightened as to be unable to move; stunned or paralyzed with terror; petrified"
+    },
+    {
+      "lemma": "numb",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "numb.v.01",
+          "via_synset": "numb.v.01"
+        }
+      ],
+      "definition": "make numb or insensitive"
+    },
+    {
+      "lemma": "numbness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "asleep.s.01",
+          "via_synset": "numbness.n.01"
+        }
+      ],
+      "definition": "partial or total lack of sensation in a part of the body; a symptom of nerve damage or dysfunction"
+    },
+    {
+      "lemma": "pachydermatous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "insensitive.a.02",
+          "via_synset": "callous.s.01"
+        }
+      ],
+      "definition": "emotionally hardened"
+    },
+    {
+      "lemma": "soulless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "insensitive.a.02",
+          "via_synset": "soulless.s.01"
+        }
+      ],
+      "definition": "lacking sensitivity or the capacity for deep feeling"
+    },
+    {
+      "lemma": "stonyhearted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hardhearted.s.01",
+          "via_synset": "hardhearted.s.01"
+        }
+      ],
+      "definition": "devoid of feeling for others"
+    },
+    {
+      "lemma": "stun",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desensitize.v.01",
+          "via_synset": "stun.v.03"
+        }
+      ],
+      "definition": "overcome as with astonishment or disbelief"
+    },
+    {
+      "lemma": "stupefy",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "desensitize.v.01",
+          "via_synset": "besot.v.01"
+        }
+      ],
+      "definition": "make dull or stupid or muddle with drunkenness or infatuation"
+    },
+    {
+      "lemma": "thick-skinned",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "insensitive.a.02",
+          "via_synset": "thick-skinned.s.01"
+        }
+      ],
+      "definition": "insensitive to criticism"
+    },
+    {
+      "lemma": "tough",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "insensitive.a.02",
+          "via_synset": "tough.a.01"
+        }
+      ],
+      "definition": "not given to gentleness or sentimentality"
+    },
+    {
+      "lemma": "tough-skinned",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "insensitive.a.02",
+          "via_synset": "thick-skinned.s.01"
+        }
+      ],
+      "definition": "insensitive to criticism"
+    },
+    {
+      "lemma": "unaffected",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "insensitive.a.02",
+          "via_synset": "insensible.s.01"
+        }
+      ],
+      "definition": "unaware of or indifferent to"
+    },
+    {
+      "lemma": "uncompassionate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "hardhearted.s.01",
+          "via_synset": "uncompassionate.a.01"
+        }
+      ],
+      "definition": "lacking compassion or feeling for others; - Shakespeare"
+    },
+    {
+      "lemma": "unfeeling",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hardhearted.s.01",
+          "via_synset": "hardhearted.s.01"
+        }
+      ],
+      "definition": "devoid of feeling for others"
+    },
+    {
+      "lemma": "unfeelingness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hardhearted.s.01",
+          "via_synset": "unfeelingness.n.01"
+        }
+      ],
+      "definition": "devoid of passion or feeling; hardheartedness"
+    },
+    {
+      "lemma": "unreactive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "insensitive.a.01",
+          "via_synset": "unreactive.s.01"
+        }
+      ],
+      "definition": "not tending to react to stimulation"
+    },
+    {
+      "lemma": "unresponsive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "insensitive.a.01",
+          "via_synset": "unresponsive.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "insensitive.a.02",
+          "via_synset": "unresponsive.a.01"
+        }
+      ],
+      "definition": "not responding to some influence or stimulus"
+    },
+    {
+      "lemma": "unsusceptible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "insensitive.a.01",
+          "via_synset": "unsusceptible.a.01"
+        }
+      ],
+      "definition": "not susceptible to"
+    }
+  ]
+}

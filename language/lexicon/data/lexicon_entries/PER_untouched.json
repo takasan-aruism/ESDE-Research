@@ -1,0 +1,220 @@
+{
+  "atom": "PER.untouched",
+  "category": "PER",
+  "status": "proposed",
+  "symmetric_pair": "PER.touch",
+  "definition_en": "Not touched; in original state.",
+  "seed_synsets": [],
+  "core_pool": {
+    "rules": [
+      "0_seed",
+      "3_hyponym_d1",
+      "6_derivational",
+      "7_similar_to",
+      "9_antonym"
+    ],
+    "count": 16,
+    "words": [
+      {
+        "w": "entire",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "constituting the undiminished entirety; lacking nothing essential especially not damaged; - Bacon",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "entireness",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "the state of being total and complete",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "full",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "containing as much or as many as is possible or normal",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "intact",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "constituting the undiminished entirety; lacking nothing essential especially not damaged; - Bacon",
+        "path_count": 2,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "intactness",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "the state of being unimpaired",
+        "path_count": 2,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "integral",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "constituting the undiminished entirety; lacking nothing essential especially not damaged; - Bacon",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "integrality",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "the state of being total and complete",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "pristine",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "completely free from dirt or contamination",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "pure",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "free of extraneous elements of any kind",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "unaffected",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "undergoing no change when acted upon",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "undamaged",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "not harmed or spoiled; sound",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "uninfluenced",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "not influenced or affected; - V.L.Parrington",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "unswayed",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "not influenced or affected; - V.L.Parrington",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "untasted",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "still full",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "untouched",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "not having come in contact",
+        "path_count": 3,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "whole",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "including all components without exception; being one unit or constituting the full amount or extent or duration; complete",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      }
+    ]
+  },
+  "deviation_pool": {
+    "rules": [
+      "10_sibling",
+      "11_pertainym",
+      "12_verb_group",
+      "2_hypernym_d1",
+      "4_hyponym_d2",
+      "5_hyponym_d3",
+      "8_also_see"
+    ],
+    "count": 0,
+    "words": []
+  },
+  "deviation_stats": {
+    "total_candidates": 16,
+    "core_count": 16,
+    "dev_count": 0,
+    "core_ratio": 1.0,
+    "dev_ratio": 0.0,
+    "dev_source_breakdown": {},
+    "step_contributions": {
+      "0_seed": 8,
+      "2_hypernym_d1": 0,
+      "3_hyponym_d1": 0,
+      "4_hyponym_d2": 0,
+      "5_hyponym_d3": 0,
+      "6_derivational": 3,
+      "7_similar_to": 5,
+      "8_also_see": 0,
+      "9_antonym": 0,
+      "10_sibling": 0,
+      "11_pertainym": 0,
+      "12_verb_group": 0
+    }
+  },
+  "meta": {
+    "generator": "wn_lexicon_entry.py",
+    "version": "1.0.0",
+    "design": "3AI consolidated: Core/Deviation pool separation"
+  }
+}

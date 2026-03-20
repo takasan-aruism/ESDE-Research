@@ -1,0 +1,2130 @@
+{
+  "atom_id": "COM.question",
+  "category": "COM",
+  "seed_count": 6,
+  "total_keys": 116,
+  "pos_counts": {
+    "n": 79,
+    "v": 34,
+    "adj": 3
+  },
+  "source_counts": {
+    "0_seed": 16,
+    "6_derivational": 65,
+    "10_sibling": 19,
+    "3_hyponym_d1": 28,
+    "2_hypernym_d1": 11,
+    "12_verb_group": 4,
+    "4_hyponym_d2": 27,
+    "5_hyponym_d3": 15
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 11,
+      "words": [
+        "question(n)",
+        "interrogation(n)",
+        "interrogative(n)",
+        "interrogative sentence(n)",
+        "inquiry(n)",
+        "enquiry(n)",
+        "query(n)",
+        "question(v)",
+        "query(v)",
+        "research(n)",
+        "ask(v)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 10,
+      "words": [
+        "sentence(n)",
+        "marriage proposal(n)",
+        "proposal of marriage(n)",
+        "marriage offer(n)",
+        "proposal(n)",
+        "questioning(n)",
+        "inquiring(n)",
+        "problem solving(n)",
+        "address(v)",
+        "turn to(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 25,
+      "words": [
+        "leading question(n)",
+        "cross-question(n)",
+        "yes-no question(n)",
+        "wonder(v)",
+        "inquire(v)",
+        "enquire(v)",
+        "check out(v)",
+        "sound out(v)",
+        "feel out(v)",
+        "interpellate(v)",
+        "debrief(v)",
+        "pump(v)",
+        "examine(v)",
+        "heraldry(n)",
+        "empirical research(n)",
+        "poll(n)",
+        "opinion poll(n)",
+        "public opinion poll(n)",
+        "canvass(n)",
+        "nature study(n)",
+        "experiment(n)",
+        "experimentation(n)",
+        "probe(n)",
+        "investigation(n)",
+        "interrogate(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 17,
+      "words": [
+        "request(v)",
+        "quiz(v)",
+        "test(v)",
+        "cross examine(v)",
+        "cross question(v)",
+        "catechize(v)",
+        "catechise(v)",
+        "grill(v)",
+        "straw vote(n)",
+        "straw poll(n)",
+        "exit poll(n)",
+        "pilot experiment(n)",
+        "trial(n)",
+        "trial run(n)",
+        "test(n)",
+        "tryout(n)",
+        "fishing expedition(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 7,
+      "words": [
+        "seek(v)",
+        "road test(n)",
+        "alpha test(n)",
+        "field trial(n)",
+        "field test(n)",
+        "beta test(n)",
+        "trial balloon(n)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 32,
+      "words": [
+        "request(n)",
+        "probe(v)",
+        "investigate(v)",
+        "debriefing(n)",
+        "research(v)",
+        "quizzer(n)",
+        "quiz(n)",
+        "testee(n)",
+        "tester(n)",
+        "testing(n)",
+        "cross-examination(n)",
+        "cross-examiner(n)",
+        "cross-questioner(n)",
+        "asker(n)",
+        "interpellation(n)",
+        "interrogative(adj)",
+        "interrogatory(adj)",
+        "interrogator(n)",
+        "questioner(n)",
+        "querier(n)",
+        "pollster(n)",
+        "poll(v)",
+        "canvass(v)",
+        "wonder(n)",
+        "wonderer(n)",
+        "inquisitive(adj)",
+        "try(v)",
+        "try out(v)",
+        "examinee(n)",
+        "examination(n)",
+        "catechism(n)",
+        "experiment(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 14,
+      "words": [
+        "complex sentence(n)",
+        "declarative sentence(n)",
+        "declaratory sentence(n)",
+        "simple sentence(n)",
+        "run-on sentence(n)",
+        "topic sentence(n)",
+        "compound sentence(n)",
+        "challenge(n)",
+        "interrogatory(n)",
+        "calculation(n)",
+        "computation(n)",
+        "figuring(n)",
+        "reckoning(n)",
+        "call(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "address",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "ask.v.05",
+          "via_synset": "address.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "address.v.01",
+          "via_synset": "address.v.06"
+        }
+      ],
+      "definition": "speak to"
+    },
+    {
+      "lemma": "alpha test",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "trial.n.02",
+          "via_synset": "alpha_test.n.01"
+        }
+      ],
+      "definition": "(computer science) a first test of an experimental product (such as computer software) carried out by the developer"
+    },
+    {
+      "lemma": "ask",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ask.v.05",
+          "via_synset": "ask.v.05"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "question.v.03",
+          "via_synset": "ask.v.05"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "ask.v.05",
+          "via_synset": "ask.v.01"
+        }
+      ],
+      "definition": "address a question to and expect an answer from"
+    },
+    {
+      "lemma": "asker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ask.v.05",
+          "via_synset": "inquirer.n.01"
+        }
+      ],
+      "definition": "someone who asks a question"
+    },
+    {
+      "lemma": "beta test",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "trial.n.02",
+          "via_synset": "beta_test.n.01"
+        }
+      ],
+      "definition": "(computer science) a second test of an experimental product (such as computer software) carried out by an outside organization"
+    },
+    {
+      "lemma": "calculation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "problem_solving.n.02",
+          "via_synset": "calculation.n.02"
+        }
+      ],
+      "definition": "problem solving that involves numbers or quantities"
+    },
+    {
+      "lemma": "call",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "address.v.01",
+          "via_synset": "address.v.06"
+        }
+      ],
+      "definition": "greet, as with a prescribed form, title, or name"
+    },
+    {
+      "lemma": "canvass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "inquiry.n.01",
+          "via_synset": "poll.n.01"
+        }
+      ],
+      "definition": "an inquiry into public opinion conducted by interviewing a random sample of people"
+    },
+    {
+      "lemma": "canvass",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "poll.n.01",
+          "via_synset": "canvass.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "poll.n.01",
+          "via_synset": "poll.v.01"
+        }
+      ],
+      "definition": "solicit votes from potential voters in an electoral campaign"
+    },
+    {
+      "lemma": "catechise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "examine.v.04",
+          "via_synset": "catechize.v.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "examine.v.04",
+          "via_synset": "catechize.v.01"
+        }
+      ],
+      "definition": "examine through questioning and answering"
+    },
+    {
+      "lemma": "catechism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "catechize.v.01",
+          "via_synset": "catechism.n.01"
+        }
+      ],
+      "definition": "a series of question put to an individual (such as a political candidate) to elicit their views"
+    },
+    {
+      "lemma": "catechize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "examine.v.04",
+          "via_synset": "catechize.v.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "examine.v.04",
+          "via_synset": "catechize.v.01"
+        }
+      ],
+      "definition": "examine through questioning and answering"
+    },
+    {
+      "lemma": "challenge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "questioning.n.01",
+          "via_synset": "challenge.n.03"
+        }
+      ],
+      "definition": "questioning a statement and demanding an explanation"
+    },
+    {
+      "lemma": "check out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "question.v.03",
+          "via_synset": "check_out.v.07"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "question.v.03",
+          "via_synset": "check_out.v.07"
+        }
+      ],
+      "definition": "try to learn someone's opinions and intentions"
+    },
+    {
+      "lemma": "complex sentence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sentence.n.01",
+          "via_synset": "complex_sentence.n.01"
+        }
+      ],
+      "definition": "a sentence composed of at least one main clause and one subordinate clause"
+    },
+    {
+      "lemma": "compound sentence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sentence.n.01",
+          "via_synset": "compound_sentence.n.01"
+        }
+      ],
+      "definition": "a sentence composed of at least two coordinate independent clauses"
+    },
+    {
+      "lemma": "computation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "problem_solving.n.02",
+          "via_synset": "calculation.n.02"
+        }
+      ],
+      "definition": "problem solving that involves numbers or quantities"
+    },
+    {
+      "lemma": "cross examine",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "examine.v.04",
+          "via_synset": "cross_examine.v.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "examine.v.04",
+          "via_synset": "cross_examine.v.01"
+        }
+      ],
+      "definition": "question closely, or question a witness that has already been questioned by the opposing side"
+    },
+    {
+      "lemma": "cross question",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "examine.v.04",
+          "via_synset": "cross_examine.v.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "examine.v.04",
+          "via_synset": "cross_examine.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cross-question.n.01",
+          "via_synset": "cross_examine.v.01"
+        }
+      ],
+      "definition": "question closely, or question a witness that has already been questioned by the opposing side"
+    },
+    {
+      "lemma": "cross-examination",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cross_examine.v.01",
+          "via_synset": "cross-examination.n.01"
+        }
+      ],
+      "definition": "(law) close questioning of a hostile witness in a court of law to discredit or throw a new light on the testimony already provided in direct examination"
+    },
+    {
+      "lemma": "cross-examiner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cross_examine.v.01",
+          "via_synset": "cross-examiner.n.01"
+        }
+      ],
+      "definition": "someone who questions a witness carefully (especially about testimony given earlier)"
+    },
+    {
+      "lemma": "cross-question",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "question.n.03",
+          "via_synset": "cross-question.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cross_examine.v.01",
+          "via_synset": "cross-question.n.01"
+        }
+      ],
+      "definition": "a question asked in cross-examination"
+    },
+    {
+      "lemma": "cross-questioner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cross_examine.v.01",
+          "via_synset": "cross-examiner.n.01"
+        }
+      ],
+      "definition": "someone who questions a witness carefully (especially about testimony given earlier)"
+    },
+    {
+      "lemma": "debrief",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "question.v.03",
+          "via_synset": "debrief.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "question.v.03",
+          "via_synset": "debrief.v.01"
+        }
+      ],
+      "definition": "put someone through a debriefing and make him report"
+    },
+    {
+      "lemma": "debriefing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "debrief.v.01",
+          "via_synset": "debriefing.n.01"
+        }
+      ],
+      "definition": "report of a mission or task"
+    },
+    {
+      "lemma": "declarative sentence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sentence.n.01",
+          "via_synset": "declarative_sentence.n.01"
+        }
+      ],
+      "definition": "a sentence (in the indicative mood) that makes a declaration"
+    },
+    {
+      "lemma": "declaratory sentence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sentence.n.01",
+          "via_synset": "declarative_sentence.n.01"
+        }
+      ],
+      "definition": "a sentence (in the indicative mood) that makes a declaration"
+    },
+    {
+      "lemma": "empirical research",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "inquiry.n.01",
+          "via_synset": "empirical_research.n.01"
+        }
+      ],
+      "definition": "an empirical search for knowledge"
+    },
+    {
+      "lemma": "enquire",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "question.v.03",
+          "via_synset": "wonder.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "question.v.03",
+          "via_synset": "wonder.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "question.n.01",
+          "via_synset": "ask.v.01"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "ask.v.05",
+          "via_synset": "ask.v.01"
+        }
+      ],
+      "definition": "have a wish or desire to know something"
+    },
+    {
+      "lemma": "enquiry",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "question.n.01",
+          "via_synset": "question.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "inquiry.n.01",
+          "via_synset": "inquiry.n.01"
+        }
+      ],
+      "definition": "an instance of questioning"
+    },
+    {
+      "lemma": "examination",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "examine.v.04",
+          "via_synset": "interrogation.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "examine.v.04",
+          "via_synset": "examination.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "examine.v.04",
+          "via_synset": "examination.n.05"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "questioning.n.01",
+          "via_synset": "interrogation.n.03"
+        }
+      ],
+      "definition": "formal systematic questioning"
+    },
+    {
+      "lemma": "examine",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "question.v.03",
+          "via_synset": "examine.v.04"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "question.v.03",
+          "via_synset": "examine.v.04"
+        }
+      ],
+      "definition": "question closely"
+    },
+    {
+      "lemma": "examinee",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "examine.v.04",
+          "via_synset": "testee.n.01"
+        }
+      ],
+      "definition": "someone who is tested (as by an intelligence test or an academic examination)"
+    },
+    {
+      "lemma": "exit poll",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "poll.n.01",
+          "via_synset": "exit_poll.n.01"
+        }
+      ],
+      "definition": "a poll of voters as they leave the voting place; usually taken by news media in order to predict the outcome of an election"
+    },
+    {
+      "lemma": "experiment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "inquiry.n.01",
+          "via_synset": "experiment.n.02"
+        }
+      ],
+      "definition": "the testing of an idea"
+    },
+    {
+      "lemma": "experiment",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "experiment.n.02",
+          "via_synset": "experiment.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "experiment.n.02",
+          "via_synset": "experiment.v.02"
+        }
+      ],
+      "definition": "to conduct a test or investigation"
+    },
+    {
+      "lemma": "experimentation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "inquiry.n.01",
+          "via_synset": "experiment.n.02"
+        }
+      ],
+      "definition": "the testing of an idea"
+    },
+    {
+      "lemma": "feel out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "question.v.03",
+          "via_synset": "check_out.v.07"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "question.v.03",
+          "via_synset": "check_out.v.07"
+        }
+      ],
+      "definition": "try to learn someone's opinions and intentions"
+    },
+    {
+      "lemma": "field test",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "trial.n.02",
+          "via_synset": "field_trial.n.01"
+        }
+      ],
+      "definition": "a test of the performance of some new product under the conditions in which it will be used"
+    },
+    {
+      "lemma": "field trial",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "trial.n.02",
+          "via_synset": "field_trial.n.01"
+        }
+      ],
+      "definition": "a test of the performance of some new product under the conditions in which it will be used"
+    },
+    {
+      "lemma": "figuring",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "problem_solving.n.02",
+          "via_synset": "calculation.n.02"
+        }
+      ],
+      "definition": "problem solving that involves numbers or quantities"
+    },
+    {
+      "lemma": "fishing expedition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "probe.n.01",
+          "via_synset": "fishing_expedition.n.01"
+        }
+      ],
+      "definition": "an investigation undertaken in the hope (but not the stated purpose) of discovering information"
+    },
+    {
+      "lemma": "grill",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "examine.v.04",
+          "via_synset": "grill.v.02"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "examine.v.04",
+          "via_synset": "grill.v.02"
+        }
+      ],
+      "definition": "examine thoroughly"
+    },
+    {
+      "lemma": "heraldry",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "inquiry.n.01",
+          "via_synset": "heraldry.n.01"
+        }
+      ],
+      "definition": "the study and classification of armorial bearings and the tracing of genealogies"
+    },
+    {
+      "lemma": "inquire",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "question.v.03",
+          "via_synset": "wonder.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "question.v.03",
+          "via_synset": "wonder.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "question.n.01",
+          "via_synset": "ask.v.01"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "ask.v.05",
+          "via_synset": "ask.v.01"
+        }
+      ],
+      "definition": "have a wish or desire to know something"
+    },
+    {
+      "lemma": "inquiring",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "question.n.01",
+          "via_synset": "questioning.n.01"
+        }
+      ],
+      "definition": "a request for information"
+    },
+    {
+      "lemma": "inquiry",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "question.n.01",
+          "via_synset": "question.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "inquiry.n.01",
+          "via_synset": "inquiry.n.01"
+        }
+      ],
+      "definition": "an instance of questioning"
+    },
+    {
+      "lemma": "inquisitive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wonder.v.01",
+          "via_synset": "inquisitive.s.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wonder.v.01",
+          "via_synset": "inquisitive.s.01"
+        }
+      ],
+      "definition": "inquiring or appearing to inquire"
+    },
+    {
+      "lemma": "interpellate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "question.v.03",
+          "via_synset": "interpellate.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "question.v.03",
+          "via_synset": "interpellate.v.01"
+        }
+      ],
+      "definition": "question formally about policy or government business"
+    },
+    {
+      "lemma": "interpellation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "interpellate.v.01",
+          "via_synset": "interpellation.n.01"
+        }
+      ],
+      "definition": "(parliament) a parliamentary procedure of demanding that a government official explain some act or policy"
+    },
+    {
+      "lemma": "interrogate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ask.v.05",
+          "via_synset": "interrogate.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "question.n.03",
+          "via_synset": "interrogate.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "question.n.01",
+          "via_synset": "interrogate.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ask.v.05",
+          "via_synset": "interrogate.v.02"
+        }
+      ],
+      "definition": "pose a series of questions to"
+    },
+    {
+      "lemma": "interrogation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "question.n.03",
+          "via_synset": "question.n.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "question.n.01",
+          "via_synset": "question.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "interrogate.v.02",
+          "via_synset": "question.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "interrogate.v.02",
+          "via_synset": "question.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "interrogate.v.02",
+          "via_synset": "interrogation.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "questioning.n.01",
+          "via_synset": "interrogation.n.03"
+        }
+      ],
+      "definition": "a sentence of inquiry that asks for a reply"
+    },
+    {
+      "lemma": "interrogative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "interrogate.v.02",
+          "via_synset": "interrogative.a.02"
+        }
+      ],
+      "definition": "relating to the use of or having the nature of an interrogation"
+    },
+    {
+      "lemma": "interrogative",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "question.n.03",
+          "via_synset": "question.n.03"
+        }
+      ],
+      "definition": "a sentence of inquiry that asks for a reply"
+    },
+    {
+      "lemma": "interrogative sentence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "question.n.03",
+          "via_synset": "question.n.03"
+        }
+      ],
+      "definition": "a sentence of inquiry that asks for a reply"
+    },
+    {
+      "lemma": "interrogator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "interrogate.v.02",
+          "via_synset": "inquisitor.n.01"
+        }
+      ],
+      "definition": "a questioner who is excessively harsh"
+    },
+    {
+      "lemma": "interrogatory",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "interrogate.v.02",
+          "via_synset": "interrogative.a.02"
+        }
+      ],
+      "definition": "relating to the use of or having the nature of an interrogation"
+    },
+    {
+      "lemma": "interrogatory",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "questioning.n.01",
+          "via_synset": "interrogation.n.03"
+        }
+      ],
+      "definition": "formal systematic questioning"
+    },
+    {
+      "lemma": "investigate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "probe.n.01",
+          "via_synset": "investigate.v.02"
+        }
+      ],
+      "definition": "conduct an inquiry or investigation of"
+    },
+    {
+      "lemma": "investigation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "inquiry.n.01",
+          "via_synset": "probe.n.01"
+        }
+      ],
+      "definition": "an inquiry into unfamiliar or questionable activities"
+    },
+    {
+      "lemma": "leading question",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "question.n.03",
+          "via_synset": "leading_question.n.01"
+        }
+      ],
+      "definition": "a question phrased in such a way as to suggest the desired answer; a lawyer may ask leading questions on cross-examination"
+    },
+    {
+      "lemma": "marriage offer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "question.n.06",
+          "via_synset": "marriage_proposal.n.01"
+        }
+      ],
+      "definition": "an offer of marriage"
+    },
+    {
+      "lemma": "marriage proposal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "question.n.06",
+          "via_synset": "marriage_proposal.n.01"
+        }
+      ],
+      "definition": "an offer of marriage"
+    },
+    {
+      "lemma": "nature study",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "inquiry.n.01",
+          "via_synset": "nature_study.n.01"
+        }
+      ],
+      "definition": "the study of animals and plants in the natural world (usually at an elementary level)"
+    },
+    {
+      "lemma": "opinion poll",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "inquiry.n.01",
+          "via_synset": "poll.n.01"
+        }
+      ],
+      "definition": "an inquiry into public opinion conducted by interviewing a random sample of people"
+    },
+    {
+      "lemma": "pilot experiment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "experiment.n.02",
+          "via_synset": "pilot_experiment.n.01"
+        }
+      ],
+      "definition": "a preliminary experiment whose outcome can lead to a more extensive experiment"
+    },
+    {
+      "lemma": "poll",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "inquiry.n.01",
+          "via_synset": "poll.n.01"
+        }
+      ],
+      "definition": "an inquiry into public opinion conducted by interviewing a random sample of people"
+    },
+    {
+      "lemma": "poll",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "poll.n.01",
+          "via_synset": "poll.v.01"
+        }
+      ],
+      "definition": "get the opinions (of people) by asking specific questions"
+    },
+    {
+      "lemma": "pollster",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "poll.n.01",
+          "via_synset": "pollster.n.01"
+        }
+      ],
+      "definition": "someone who conducts surveys of public opinion"
+    },
+    {
+      "lemma": "probe",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "inquiry.n.01",
+          "via_synset": "probe.n.01"
+        }
+      ],
+      "definition": "an inquiry into unfamiliar or questionable activities"
+    },
+    {
+      "lemma": "probe",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "probe.n.01",
+          "via_synset": "probe.v.01"
+        }
+      ],
+      "definition": "question or examine thoroughly and closely"
+    },
+    {
+      "lemma": "problem solving",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "inquiry.n.01",
+          "via_synset": "problem_solving.n.02"
+        }
+      ],
+      "definition": "the thought processes involved in solving a problem"
+    },
+    {
+      "lemma": "proposal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "question.n.06",
+          "via_synset": "marriage_proposal.n.01"
+        }
+      ],
+      "definition": "an offer of marriage"
+    },
+    {
+      "lemma": "proposal of marriage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "question.n.06",
+          "via_synset": "marriage_proposal.n.01"
+        }
+      ],
+      "definition": "an offer of marriage"
+    },
+    {
+      "lemma": "public opinion poll",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "inquiry.n.01",
+          "via_synset": "poll.n.01"
+        }
+      ],
+      "definition": "an inquiry into public opinion conducted by interviewing a random sample of people"
+    },
+    {
+      "lemma": "pump",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "question.v.03",
+          "via_synset": "pump.v.08"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "question.v.03",
+          "via_synset": "pump.v.08"
+        }
+      ],
+      "definition": "question persistently"
+    },
+    {
+      "lemma": "querier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "question.v.03",
+          "via_synset": "inquirer.n.01"
+        }
+      ],
+      "definition": "someone who asks a question"
+    },
+    {
+      "lemma": "query",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "question.n.01",
+          "via_synset": "question.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "question.v.03",
+          "via_synset": "question.n.01"
+        }
+      ],
+      "definition": "an instance of questioning"
+    },
+    {
+      "lemma": "query",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "question.v.03",
+          "via_synset": "question.v.03"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ask.v.05",
+          "via_synset": "question.v.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "question.n.01",
+          "via_synset": "question.v.03"
+        }
+      ],
+      "definition": "pose a question"
+    },
+    {
+      "lemma": "question",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "question.n.03",
+          "via_synset": "question.n.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "question.n.06",
+          "via_synset": "question.n.06"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "question.n.01",
+          "via_synset": "question.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "interrogate.v.02",
+          "via_synset": "question.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "interrogate.v.02",
+          "via_synset": "question.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "question.v.03",
+          "via_synset": "question.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "question.v.03",
+          "via_synset": "question.n.01"
+        }
+      ],
+      "definition": "a sentence of inquiry that asks for a reply"
+    },
+    {
+      "lemma": "question",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "question.v.03",
+          "via_synset": "question.v.03"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ask.v.05",
+          "via_synset": "question.v.03"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "ask.v.05",
+          "via_synset": "interrogate.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "question.n.03",
+          "via_synset": "interrogate.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "question.n.03",
+          "via_synset": "question.v.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "question.n.01",
+          "via_synset": "interview.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "question.n.01",
+          "via_synset": "question.v.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "question.n.01",
+          "via_synset": "interrogate.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ask.v.05",
+          "via_synset": "interrogate.v.02"
+        }
+      ],
+      "definition": "pose a question"
+    },
+    {
+      "lemma": "questioner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "question.v.03",
+          "via_synset": "inquirer.n.01"
+        }
+      ],
+      "definition": "someone who asks a question"
+    },
+    {
+      "lemma": "questioning",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "question.n.01",
+          "via_synset": "questioning.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "interrogate.v.02",
+          "via_synset": "questioning.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "question.v.03",
+          "via_synset": "questioning.n.01"
+        }
+      ],
+      "definition": "a request for information"
+    },
+    {
+      "lemma": "quiz",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "quiz.v.01",
+          "via_synset": "quiz.n.01"
+        }
+      ],
+      "definition": "an examination consisting of a few short questions"
+    },
+    {
+      "lemma": "quiz",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "examine.v.04",
+          "via_synset": "quiz.v.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "examine.v.04",
+          "via_synset": "quiz.v.01"
+        }
+      ],
+      "definition": "examine someone's knowledge of something"
+    },
+    {
+      "lemma": "quizzer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "quiz.v.01",
+          "via_synset": "examiner.n.01"
+        }
+      ],
+      "definition": "someone who administers a test to determine your qualifications"
+    },
+    {
+      "lemma": "reckoning",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "problem_solving.n.02",
+          "via_synset": "calculation.n.02"
+        }
+      ],
+      "definition": "problem solving that involves numbers or quantities"
+    },
+    {
+      "lemma": "request",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "request.v.03",
+          "via_synset": "request.n.02"
+        }
+      ],
+      "definition": "the verbal act of requesting"
+    },
+    {
+      "lemma": "request",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wonder.v.01",
+          "via_synset": "request.v.03"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "wonder.v.01",
+          "via_synset": "request.v.03"
+        }
+      ],
+      "definition": "inquire for (information)"
+    },
+    {
+      "lemma": "research",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "inquiry.n.01",
+          "via_synset": "inquiry.n.01"
+        }
+      ],
+      "definition": "a search for knowledge"
+    },
+    {
+      "lemma": "research",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "inquiry.n.01",
+          "via_synset": "research.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "inquiry.n.01",
+          "via_synset": "research.v.02"
+        }
+      ],
+      "definition": "attempt to find out in a systematically and scientific manner"
+    },
+    {
+      "lemma": "road test",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "trial.n.02",
+          "via_synset": "road_test.n.01"
+        }
+      ],
+      "definition": "a test to insure that a vehicle is roadworthy"
+    },
+    {
+      "lemma": "run-on sentence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sentence.n.01",
+          "via_synset": "run-on_sentence.n.01"
+        }
+      ],
+      "definition": "an ungrammatical sentence in which two or more independent clauses are conjoined without a conjunction"
+    },
+    {
+      "lemma": "seek",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "request.v.03",
+          "via_synset": "seek.v.05"
+        }
+      ],
+      "definition": "inquire for"
+    },
+    {
+      "lemma": "sentence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "question.n.03",
+          "via_synset": "sentence.n.01"
+        }
+      ],
+      "definition": "a string of words satisfying the grammatical rules of a language"
+    },
+    {
+      "lemma": "simple sentence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sentence.n.01",
+          "via_synset": "simple_sentence.n.01"
+        }
+      ],
+      "definition": "a sentence having no coordinate clauses or subordinate clauses"
+    },
+    {
+      "lemma": "sound out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "question.v.03",
+          "via_synset": "check_out.v.07"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "question.v.03",
+          "via_synset": "check_out.v.07"
+        }
+      ],
+      "definition": "try to learn someone's opinions and intentions"
+    },
+    {
+      "lemma": "straw poll",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "poll.n.01",
+          "via_synset": "straw_vote.n.01"
+        }
+      ],
+      "definition": "an unofficial vote taken to determine opinion on some issue"
+    },
+    {
+      "lemma": "straw vote",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "poll.n.01",
+          "via_synset": "straw_vote.n.01"
+        }
+      ],
+      "definition": "an unofficial vote taken to determine opinion on some issue"
+    },
+    {
+      "lemma": "test",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "experiment.n.02",
+          "via_synset": "trial.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "quiz.v.01",
+          "via_synset": "examination.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "quiz.v.01",
+          "via_synset": "test.n.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "quiz.v.01",
+          "via_synset": "test.n.02"
+        }
+      ],
+      "definition": "trying something to find out about it"
+    },
+    {
+      "lemma": "test",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "examine.v.04",
+          "via_synset": "quiz.v.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "examine.v.04",
+          "via_synset": "quiz.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "trial.n.02",
+          "via_synset": "test.v.01"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "quiz.v.01",
+          "via_synset": "test.v.07"
+        }
+      ],
+      "definition": "examine someone's knowledge of something"
+    },
+    {
+      "lemma": "testee",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "quiz.v.01",
+          "via_synset": "testee.n.01"
+        }
+      ],
+      "definition": "someone who is tested (as by an intelligence test or an academic examination)"
+    },
+    {
+      "lemma": "tester",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "quiz.v.01",
+          "via_synset": "examiner.n.01"
+        }
+      ],
+      "definition": "someone who administers a test to determine your qualifications"
+    },
+    {
+      "lemma": "testing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "quiz.v.01",
+          "via_synset": "examination.n.05"
+        }
+      ],
+      "definition": "the act of giving students or candidates a test (as by questions) to determine what they know or have learned"
+    },
+    {
+      "lemma": "topic sentence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sentence.n.01",
+          "via_synset": "topic_sentence.n.01"
+        }
+      ],
+      "definition": "a sentence that states the topic of its paragraph"
+    },
+    {
+      "lemma": "trial",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "experiment.n.02",
+          "via_synset": "trial.n.02"
+        }
+      ],
+      "definition": "trying something to find out about it"
+    },
+    {
+      "lemma": "trial balloon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "trial.n.02",
+          "via_synset": "trial_balloon.n.01"
+        }
+      ],
+      "definition": "a test of public opinion"
+    },
+    {
+      "lemma": "trial run",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "experiment.n.02",
+          "via_synset": "trial.n.02"
+        }
+      ],
+      "definition": "trying something to find out about it"
+    },
+    {
+      "lemma": "try",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "trial.n.02",
+          "via_synset": "sample.v.01"
+        }
+      ],
+      "definition": "take a sample of"
+    },
+    {
+      "lemma": "try out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "trial.n.02",
+          "via_synset": "test.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "trial.n.02",
+          "via_synset": "sample.v.01"
+        }
+      ],
+      "definition": "put to the test, as for its quality, or give experimental use to"
+    },
+    {
+      "lemma": "tryout",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "experiment.n.02",
+          "via_synset": "trial.n.02"
+        }
+      ],
+      "definition": "trying something to find out about it"
+    },
+    {
+      "lemma": "turn to",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "ask.v.05",
+          "via_synset": "address.v.01"
+        }
+      ],
+      "definition": "speak to"
+    },
+    {
+      "lemma": "wonder",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wonder.v.01",
+          "via_synset": "curiosity.n.01"
+        }
+      ],
+      "definition": "a state in which you want to learn more about something"
+    },
+    {
+      "lemma": "wonder",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "question.v.03",
+          "via_synset": "wonder.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "question.v.03",
+          "via_synset": "wonder.v.01"
+        }
+      ],
+      "definition": "have a wish or desire to know something"
+    },
+    {
+      "lemma": "wonderer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wonder.v.01",
+          "via_synset": "wonderer.n.01"
+        }
+      ],
+      "definition": "someone who is curious about something"
+    },
+    {
+      "lemma": "yes-no question",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "question.n.03",
+          "via_synset": "yes-no_question.n.01"
+        }
+      ],
+      "definition": "a question that can be answered by yes or no"
+    }
+  ]
+}

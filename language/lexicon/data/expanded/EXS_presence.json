@@ -1,0 +1,1241 @@
+{
+  "atom_id": "EXS.presence",
+  "category": "EXS",
+  "seed_count": 6,
+  "total_keys": 78,
+  "pos_counts": {
+    "n": 62,
+    "v": 8,
+    "adj": 8
+  },
+  "source_counts": {
+    "0_seed": 9,
+    "2_hypernym_d1": 10,
+    "10_sibling": 39,
+    "3_hyponym_d1": 14,
+    "4_hyponym_d2": 2,
+    "6_derivational": 14
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 7,
+      "words": [
+        "presence(n)",
+        "front(n)",
+        "present(n)",
+        "present tense(n)",
+        "present(v)",
+        "Hera(n)",
+        "Here(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 9,
+      "words": [
+        "being(n)",
+        "beingness(n)",
+        "existence(n)",
+        "attendance(n)",
+        "attending(n)",
+        "proximity(n)",
+        "tense(n)",
+        "introduce(v)",
+        "acquaint(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 13,
+      "words": [
+        "occurrence(n)",
+        "hereness(n)",
+        "thereness(n)",
+        "immanence(n)",
+        "immanency(n)",
+        "inherence(n)",
+        "inherency(n)",
+        "ubiety(n)",
+        "shadow(n)",
+        "ubiquity(n)",
+        "ubiquitousness(n)",
+        "omnipresence(n)",
+        "historical present(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 2,
+      "words": [
+        "allopatry(n)",
+        "sympatry(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 11,
+      "words": [
+        "shadow(v)",
+        "inherent(adj)",
+        "inhere(v)",
+        "sympatric(adj)",
+        "present(adj)",
+        "here(adj)",
+        "immanent(adj)",
+        "allopatric(adj)",
+        "presentation(n)",
+        "ubiquitous(adj)",
+        "omnipresent(adj)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 36,
+      "words": [
+        "life(n)",
+        "eternity(n)",
+        "timelessness(n)",
+        "timeless existence(n)",
+        "subsistence(n)",
+        "preexistence(n)",
+        "coexistence(n)",
+        "transcendence(n)",
+        "transcendency(n)",
+        "animation(n)",
+        "living(n)",
+        "aliveness(n)",
+        "possibility(n)",
+        "possibleness(n)",
+        "actuality(n)",
+        "turnout(n)",
+        "appearance(n)",
+        "appearing(n)",
+        "coming into court(n)",
+        "perfective(n)",
+        "perfective tense(n)",
+        "perfect(n)",
+        "perfect tense(n)",
+        "future(n)",
+        "future tense(n)",
+        "progressive(n)",
+        "progressive tense(n)",
+        "imperfect(n)",
+        "imperfect tense(n)",
+        "continuous tense(n)",
+        "past(n)",
+        "past tense(n)",
+        "aorist(n)",
+        "reintroduce(v)",
+        "re-introduce(v)",
+        "bring out(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "acquaint",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "present.v.12",
+          "via_synset": "introduce.v.01"
+        }
+      ],
+      "definition": "cause to come to know personally"
+    },
+    {
+      "lemma": "actuality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "actuality.n.01"
+        }
+      ],
+      "definition": "the state of actually existing objectively"
+    },
+    {
+      "lemma": "aliveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "animation.n.01"
+        }
+      ],
+      "definition": "the condition of living or the state of being alive"
+    },
+    {
+      "lemma": "allopatric",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "allopatry.n.01",
+          "via_synset": "allopatric.a.01"
+        }
+      ],
+      "definition": "(of biological species or speciation) occurring in areas isolated geographically from one another"
+    },
+    {
+      "lemma": "allopatry",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "occurrence.n.02",
+          "via_synset": "allopatry.n.01"
+        }
+      ],
+      "definition": "the occurrence of related organisms in separate geographical areas with no overlap"
+    },
+    {
+      "lemma": "animation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "animation.n.01"
+        }
+      ],
+      "definition": "the condition of living or the state of being alive"
+    },
+    {
+      "lemma": "aorist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "tense.n.01",
+          "via_synset": "aorist.n.01"
+        }
+      ],
+      "definition": "a verb tense in some languages (classical Greek and Sanskrit) expressing action (especially past action) without indicating its completion or continuation"
+    },
+    {
+      "lemma": "appearance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attendance.n.01",
+          "via_synset": "appearance.n.03"
+        }
+      ],
+      "definition": "formal attendance (in court or at a hearing) of a party in an action"
+    },
+    {
+      "lemma": "appearing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attendance.n.01",
+          "via_synset": "appearance.n.03"
+        }
+      ],
+      "definition": "formal attendance (in court or at a hearing) of a party in an action"
+    },
+    {
+      "lemma": "attendance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "presence.n.06",
+          "via_synset": "attendance.n.01"
+        }
+      ],
+      "definition": "the act of being present (at a meeting or event etc.)"
+    },
+    {
+      "lemma": "attending",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "presence.n.06",
+          "via_synset": "attendance.n.01"
+        }
+      ],
+      "definition": "the act of being present (at a meeting or event etc.)"
+    },
+    {
+      "lemma": "being",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "presence.n.01",
+          "via_synset": "being.n.01"
+        }
+      ],
+      "definition": "the state or fact of existing"
+    },
+    {
+      "lemma": "beingness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "presence.n.01",
+          "via_synset": "being.n.01"
+        }
+      ],
+      "definition": "the state or fact of existing"
+    },
+    {
+      "lemma": "bring out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "introduce.v.01",
+          "via_synset": "introduce.v.07"
+        }
+      ],
+      "definition": "bring before the public for the first time, as of an actor, song, etc."
+    },
+    {
+      "lemma": "coexistence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "coexistence.n.01"
+        }
+      ],
+      "definition": "existing peacefully together"
+    },
+    {
+      "lemma": "coming into court",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attendance.n.01",
+          "via_synset": "appearance.n.03"
+        }
+      ],
+      "definition": "formal attendance (in court or at a hearing) of a party in an action"
+    },
+    {
+      "lemma": "continuous tense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "tense.n.01",
+          "via_synset": "progressive.n.01"
+        }
+      ],
+      "definition": "a tense of verbs used in describing action that is on-going"
+    },
+    {
+      "lemma": "eternity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "eternity.n.02"
+        }
+      ],
+      "definition": "a state of eternal existence believed in some religions to characterize the afterlife"
+    },
+    {
+      "lemma": "existence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "presence.n.01",
+          "via_synset": "being.n.01"
+        }
+      ],
+      "definition": "the state or fact of existing"
+    },
+    {
+      "lemma": "front",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "presence.n.02",
+          "via_synset": "presence.n.02"
+        }
+      ],
+      "definition": "the immediate proximity of someone or something"
+    },
+    {
+      "lemma": "future",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "tense.n.01",
+          "via_synset": "future.n.02"
+        }
+      ],
+      "definition": "a verb tense that expresses actions or states in the future"
+    },
+    {
+      "lemma": "future tense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "tense.n.01",
+          "via_synset": "future.n.02"
+        }
+      ],
+      "definition": "a verb tense that expresses actions or states in the future"
+    },
+    {
+      "lemma": "Hera",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hera.n.01",
+          "via_synset": "hera.n.01"
+        }
+      ],
+      "definition": "queen of the Olympian gods in ancient Greek mythology; sister and wife of Zeus remembered for her jealously of the many mortal women Zeus fell in love with; identified with Roman Juno"
+    },
+    {
+      "lemma": "here",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hereness.n.01",
+          "via_synset": "here.s.01"
+        }
+      ],
+      "definition": "being here now"
+    },
+    {
+      "lemma": "Here",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hera.n.01",
+          "via_synset": "hera.n.01"
+        }
+      ],
+      "definition": "queen of the Olympian gods in ancient Greek mythology; sister and wife of Zeus remembered for her jealously of the many mortal women Zeus fell in love with; identified with Roman Juno"
+    },
+    {
+      "lemma": "hereness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "presence.n.01",
+          "via_synset": "hereness.n.01"
+        }
+      ],
+      "definition": "the state of being here in this place"
+    },
+    {
+      "lemma": "historical present",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "present.n.03",
+          "via_synset": "historical_present.n.01"
+        }
+      ],
+      "definition": "the use of the present tense to describe past actions or states"
+    },
+    {
+      "lemma": "immanence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "presence.n.01",
+          "via_synset": "immanence.n.01"
+        }
+      ],
+      "definition": "the state of being within or not going beyond a given domain"
+    },
+    {
+      "lemma": "immanency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "presence.n.01",
+          "via_synset": "immanence.n.01"
+        }
+      ],
+      "definition": "the state of being within or not going beyond a given domain"
+    },
+    {
+      "lemma": "immanent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "immanence.n.01",
+          "via_synset": "immanent.s.01"
+        }
+      ],
+      "definition": "of qualities that are spread throughout something"
+    },
+    {
+      "lemma": "imperfect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "tense.n.01",
+          "via_synset": "progressive.n.01"
+        }
+      ],
+      "definition": "a tense of verbs used in describing action that is on-going"
+    },
+    {
+      "lemma": "imperfect tense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "tense.n.01",
+          "via_synset": "progressive.n.01"
+        }
+      ],
+      "definition": "a tense of verbs used in describing action that is on-going"
+    },
+    {
+      "lemma": "inhere",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "inherence.n.01",
+          "via_synset": "inhere.v.01"
+        }
+      ],
+      "definition": "be inherent in something"
+    },
+    {
+      "lemma": "inherence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "presence.n.01",
+          "via_synset": "inherence.n.01"
+        }
+      ],
+      "definition": "the state of inhering; the state of being a fixed characteristic"
+    },
+    {
+      "lemma": "inherency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "presence.n.01",
+          "via_synset": "inherence.n.01"
+        }
+      ],
+      "definition": "the state of inhering; the state of being a fixed characteristic"
+    },
+    {
+      "lemma": "inherent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "inherence.n.01",
+          "via_synset": "built-in.s.01"
+        }
+      ],
+      "definition": "existing as an essential constituent or characteristic"
+    },
+    {
+      "lemma": "introduce",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "present.v.12",
+          "via_synset": "introduce.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "introduce.v.01",
+          "via_synset": "introduce.v.07"
+        }
+      ],
+      "definition": "cause to come to know personally"
+    },
+    {
+      "lemma": "life",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "life.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "life.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "animation.n.01"
+        }
+      ],
+      "definition": "the course of existence of an individual; the actions and events that occur in living"
+    },
+    {
+      "lemma": "living",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "animation.n.01"
+        }
+      ],
+      "definition": "the condition of living or the state of being alive"
+    },
+    {
+      "lemma": "occurrence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "presence.n.01",
+          "via_synset": "occurrence.n.02"
+        }
+      ],
+      "definition": "an instance of something occurring"
+    },
+    {
+      "lemma": "omnipresence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "presence.n.01",
+          "via_synset": "ubiquity.n.01"
+        }
+      ],
+      "definition": "the state of being everywhere at once (or seeming to be everywhere at once)"
+    },
+    {
+      "lemma": "omnipresent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ubiquity.n.01",
+          "via_synset": "omnipresent.s.01"
+        }
+      ],
+      "definition": "being present everywhere at once"
+    },
+    {
+      "lemma": "past",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "tense.n.01",
+          "via_synset": "past.n.03"
+        }
+      ],
+      "definition": "a verb tense that expresses actions or states in the past"
+    },
+    {
+      "lemma": "past tense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "tense.n.01",
+          "via_synset": "past.n.03"
+        }
+      ],
+      "definition": "a verb tense that expresses actions or states in the past"
+    },
+    {
+      "lemma": "perfect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "tense.n.01",
+          "via_synset": "perfective.n.01"
+        }
+      ],
+      "definition": "a tense of verbs used in describing action that has been completed (sometimes regarded as perfective aspect)"
+    },
+    {
+      "lemma": "perfect tense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "tense.n.01",
+          "via_synset": "perfective.n.01"
+        }
+      ],
+      "definition": "a tense of verbs used in describing action that has been completed (sometimes regarded as perfective aspect)"
+    },
+    {
+      "lemma": "perfective",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "tense.n.01",
+          "via_synset": "perfective.n.01"
+        }
+      ],
+      "definition": "a tense of verbs used in describing action that has been completed (sometimes regarded as perfective aspect)"
+    },
+    {
+      "lemma": "perfective tense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "tense.n.01",
+          "via_synset": "perfective.n.01"
+        }
+      ],
+      "definition": "a tense of verbs used in describing action that has been completed (sometimes regarded as perfective aspect)"
+    },
+    {
+      "lemma": "possibility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "possibility.n.02"
+        }
+      ],
+      "definition": "capability of existing or happening or being true"
+    },
+    {
+      "lemma": "possibleness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "possibility.n.02"
+        }
+      ],
+      "definition": "capability of existing or happening or being true"
+    },
+    {
+      "lemma": "preexistence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "preexistence.n.01"
+        }
+      ],
+      "definition": "existing in a former state or previous to something else"
+    },
+    {
+      "lemma": "presence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "presence.n.01",
+          "via_synset": "presence.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "presence.n.06",
+          "via_synset": "presence.n.06"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "presence.n.02",
+          "via_synset": "presence.n.02"
+        }
+      ],
+      "definition": "the state of being present; current existence"
+    },
+    {
+      "lemma": "present",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "presence.n.06",
+          "via_synset": "present.a.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "present.n.03",
+          "via_synset": "present.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "presence.n.02",
+          "via_synset": "present.a.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "presence.n.01",
+          "via_synset": "present.a.02"
+        }
+      ],
+      "definition": "being or existing in a specified place"
+    },
+    {
+      "lemma": "present",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "present.n.03",
+          "via_synset": "present.n.03"
+        }
+      ],
+      "definition": "a verb tense that expresses actions or states at the time of speaking"
+    },
+    {
+      "lemma": "present",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "present.v.12",
+          "via_synset": "present.v.12"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "present.v.12",
+          "via_synset": "introduce.v.01"
+        }
+      ],
+      "definition": "formally present a debutante, a representative of a country, etc."
+    },
+    {
+      "lemma": "present tense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "present.n.03",
+          "via_synset": "present.n.03"
+        }
+      ],
+      "definition": "a verb tense that expresses actions or states at the time of speaking"
+    },
+    {
+      "lemma": "presentation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "present.v.12",
+          "via_synset": "presentation.n.06"
+        }
+      ],
+      "definition": "formally making a person known to another or to the public"
+    },
+    {
+      "lemma": "progressive",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "tense.n.01",
+          "via_synset": "progressive.n.01"
+        }
+      ],
+      "definition": "a tense of verbs used in describing action that is on-going"
+    },
+    {
+      "lemma": "progressive tense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "tense.n.01",
+          "via_synset": "progressive.n.01"
+        }
+      ],
+      "definition": "a tense of verbs used in describing action that is on-going"
+    },
+    {
+      "lemma": "proximity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "presence.n.02",
+          "via_synset": "proximity.n.02"
+        }
+      ],
+      "definition": "the region close around a person or thing"
+    },
+    {
+      "lemma": "re-introduce",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "introduce.v.01",
+          "via_synset": "reintroduce.v.01"
+        }
+      ],
+      "definition": "introduce anew"
+    },
+    {
+      "lemma": "reintroduce",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "introduce.v.01",
+          "via_synset": "reintroduce.v.01"
+        }
+      ],
+      "definition": "introduce anew"
+    },
+    {
+      "lemma": "shadow",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "presence.n.01",
+          "via_synset": "shadow.n.07"
+        }
+      ],
+      "definition": "a dominating and pervasive presence"
+    },
+    {
+      "lemma": "shadow",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "shadow.n.07",
+          "via_synset": "shadow.v.03"
+        }
+      ],
+      "definition": "make appear small by comparison"
+    },
+    {
+      "lemma": "subsistence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "subsistence.n.03"
+        }
+      ],
+      "definition": "the state of existing in reality; having substance"
+    },
+    {
+      "lemma": "sympatric",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sympatry.n.01",
+          "via_synset": "sympatric.a.01"
+        }
+      ],
+      "definition": "(of biological species or speciation) occurring in the same or overlapping geographical areas"
+    },
+    {
+      "lemma": "sympatry",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "occurrence.n.02",
+          "via_synset": "sympatry.n.01"
+        }
+      ],
+      "definition": "the occurrence of organisms in overlapping geographical areas, but without interbreeding"
+    },
+    {
+      "lemma": "tense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "present.n.03",
+          "via_synset": "tense.n.01"
+        }
+      ],
+      "definition": "a grammatical category of verbs used to express distinctions of time"
+    },
+    {
+      "lemma": "thereness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "presence.n.01",
+          "via_synset": "thereness.n.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "presence.n.01",
+          "via_synset": "thereness.n.01"
+        }
+      ],
+      "definition": "the state of being there--not here--in position"
+    },
+    {
+      "lemma": "timeless existence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "eternity.n.02"
+        }
+      ],
+      "definition": "a state of eternal existence believed in some religions to characterize the afterlife"
+    },
+    {
+      "lemma": "timelessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "eternity.n.02"
+        }
+      ],
+      "definition": "a state of eternal existence believed in some religions to characterize the afterlife"
+    },
+    {
+      "lemma": "transcendence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "transcendence.n.01"
+        }
+      ],
+      "definition": "a state of being or existence above and beyond the limits of material experience"
+    },
+    {
+      "lemma": "transcendency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "being.n.01",
+          "via_synset": "transcendence.n.01"
+        }
+      ],
+      "definition": "a state of being or existence above and beyond the limits of material experience"
+    },
+    {
+      "lemma": "turnout",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attendance.n.01",
+          "via_synset": "turnout.n.06"
+        }
+      ],
+      "definition": "attendance for a particular event or purpose (as to vote in an election)"
+    },
+    {
+      "lemma": "ubiety",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "presence.n.01",
+          "via_synset": "ubiety.n.01"
+        }
+      ],
+      "definition": "the state of existing and being localized in space"
+    },
+    {
+      "lemma": "ubiquitous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ubiquity.n.01",
+          "via_synset": "omnipresent.s.01"
+        }
+      ],
+      "definition": "being present everywhere at once"
+    },
+    {
+      "lemma": "ubiquitousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "presence.n.01",
+          "via_synset": "ubiquity.n.01"
+        }
+      ],
+      "definition": "the state of being everywhere at once (or seeming to be everywhere at once)"
+    },
+    {
+      "lemma": "ubiquity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "presence.n.01",
+          "via_synset": "ubiquity.n.01"
+        }
+      ],
+      "definition": "the state of being everywhere at once (or seeming to be everywhere at once)"
+    }
+  ]
+}

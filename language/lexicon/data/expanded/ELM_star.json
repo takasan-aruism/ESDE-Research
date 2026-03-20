@@ -1,0 +1,1542 @@
+{
+  "atom_id": "ELM.star",
+  "category": "ELM",
+  "seed_count": 6,
+  "total_keys": 98,
+  "pos_counts": {
+    "n": 84,
+    "adj": 10,
+    "v": 4
+  },
+  "source_counts": {
+    "0_seed": 14,
+    "10_sibling": 42,
+    "11_pertainym": 2,
+    "2_hypernym_d1": 9,
+    "3_hyponym_d1": 30,
+    "4_hyponym_d2": 4,
+    "6_derivational": 9,
+    "7_similar_to": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 11,
+      "words": [
+        "star(n)",
+        "principal(n)",
+        "lead(n)",
+        "leading(adj)",
+        "prima(adj)",
+        "star(adj)",
+        "starring(adj)",
+        "stellar(adj)",
+        "astral(adj)",
+        "celestial(adj)",
+        "heavenly(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 7,
+      "words": [
+        "celestial body(n)",
+        "heavenly body(n)",
+        "actor(n)",
+        "histrion(n)",
+        "player(n)",
+        "thespian(n)",
+        "role player(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 30,
+      "words": [
+        "starlet(n)",
+        "white dwarf(n)",
+        "white dwarf star(n)",
+        "sun(n)",
+        "supernova(n)",
+        "giant star(n)",
+        "giant(n)",
+        "red dwarf(n)",
+        "red dwarf star(n)",
+        "red giant(n)",
+        "red giant star(n)",
+        "supergiant(n)",
+        "multiple star(n)",
+        "neutron star(n)",
+        "lodestar(n)",
+        "loadstar(n)",
+        "variable star(n)",
+        "variable(n)",
+        "binary star(n)",
+        "binary(n)",
+        "double star(n)",
+        "fixed star(n)",
+        "nova(n)",
+        "co-star(n)",
+        "television star(n)",
+        "TV star(n)",
+        "film star(n)",
+        "movie star(n)",
+        "idol(n)",
+        "matinee idol(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 4,
+      "words": [
+        "flare star(n)",
+        "Trapezium(n)",
+        "pulsar(n)",
+        "heartthrob(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 6,
+      "words": [
+        "co-star(v)",
+        "star(v)",
+        "Heaven(n)",
+        "idolize(v)",
+        "idolise(v)",
+        "starry(adj)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 1,
+      "words": [
+        "major(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 39,
+      "words": [
+        "planet(n)",
+        "major planet(n)",
+        "satellite(n)",
+        "quasar(n)",
+        "quasi-stellar radio source(n)",
+        "planetesimal(n)",
+        "primary(n)",
+        "minor planet(n)",
+        "planetoid(n)",
+        "actress(n)",
+        "leading man(n)",
+        "mime(n)",
+        "mimer(n)",
+        "mummer(n)",
+        "pantomimer(n)",
+        "pantomimist(n)",
+        "walk-on(n)",
+        "character actor(n)",
+        "plant(n)",
+        "screen actor(n)",
+        "movie actor(n)",
+        "understudy(n)",
+        "standby(n)",
+        "ingenue(n)",
+        "barnstormer(n)",
+        "playactor(n)",
+        "play-actor(n)",
+        "trouper(n)",
+        "comedian(n)",
+        "heavy(n)",
+        "ham(n)",
+        "ham actor(n)",
+        "scene-stealer(n)",
+        "reenactor(n)",
+        "upstager(n)",
+        "tragedian(n)",
+        "supernumerary(n)",
+        "spear carrier(n)",
+        "extra(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "actor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "star.n.04",
+          "via_synset": "actor.n.01"
+        }
+      ],
+      "definition": "a theatrical performer"
+    },
+    {
+      "lemma": "actress",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "actress.n.01"
+        }
+      ],
+      "definition": "a female actor"
+    },
+    {
+      "lemma": "astral",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "stellar.a.02",
+          "via_synset": "stellar.a.02"
+        }
+      ],
+      "definition": "being or relating to or resembling or emanating from stars"
+    },
+    {
+      "lemma": "barnstormer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "barnstormer.n.01"
+        }
+      ],
+      "definition": "an actor who travels around the country presenting plays"
+    },
+    {
+      "lemma": "binary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "binary_star.n.01"
+        }
+      ],
+      "definition": "a system of two stars that revolve around each other under their mutual gravitation"
+    },
+    {
+      "lemma": "binary star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "binary_star.n.01"
+        }
+      ],
+      "definition": "a system of two stars that revolve around each other under their mutual gravitation"
+    },
+    {
+      "lemma": "celestial",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "celestial.a.02",
+          "via_synset": "celestial.a.02"
+        }
+      ],
+      "definition": "relating to or inhabiting a divine heaven"
+    },
+    {
+      "lemma": "celestial body",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "star.n.03",
+          "via_synset": "celestial_body.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "star.n.01",
+          "via_synset": "celestial_body.n.01"
+        }
+      ],
+      "definition": "natural objects visible in the sky"
+    },
+    {
+      "lemma": "character actor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "character_actor.n.01"
+        }
+      ],
+      "definition": "an actor who specializes in playing supporting roles"
+    },
+    {
+      "lemma": "co-star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.04",
+          "via_synset": "co-star.n.01"
+        }
+      ],
+      "definition": "one of two actors who are given equal status as stars in a play or film"
+    },
+    {
+      "lemma": "co-star",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "co-star.n.01",
+          "via_synset": "co-star.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "co-star.n.01",
+          "via_synset": "co-star.v.02"
+        }
+      ],
+      "definition": "feature as the co-star in a performance"
+    },
+    {
+      "lemma": "comedian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "comedian.n.02"
+        }
+      ],
+      "definition": "an actor in a comedy"
+    },
+    {
+      "lemma": "double star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "binary_star.n.01"
+        }
+      ],
+      "definition": "a system of two stars that revolve around each other under their mutual gravitation"
+    },
+    {
+      "lemma": "extra",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "supernumerary.n.02"
+        }
+      ],
+      "definition": "a minor actor in crowd scenes"
+    },
+    {
+      "lemma": "film star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.04",
+          "via_synset": "film_star.n.01"
+        }
+      ],
+      "definition": "a star who plays leading roles in the cinema"
+    },
+    {
+      "lemma": "fixed star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "fixed_star.n.01"
+        }
+      ],
+      "definition": "any star in the Ptolemaic theory of planetary motion"
+    },
+    {
+      "lemma": "flare star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "red_dwarf.n.01",
+          "via_synset": "flare_star.n.01"
+        }
+      ],
+      "definition": "a red dwarf star in which luminosity can change several magnitudes in a few minutes"
+    },
+    {
+      "lemma": "giant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "giant_star.n.01"
+        }
+      ],
+      "definition": "a very bright star of large diameter and low density (relative to the Sun)"
+    },
+    {
+      "lemma": "giant star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "giant_star.n.01"
+        }
+      ],
+      "definition": "a very bright star of large diameter and low density (relative to the Sun)"
+    },
+    {
+      "lemma": "ham",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "ham.n.04"
+        }
+      ],
+      "definition": "an unskilled actor who overacts"
+    },
+    {
+      "lemma": "ham actor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "ham.n.04"
+        }
+      ],
+      "definition": "an unskilled actor who overacts"
+    },
+    {
+      "lemma": "heartthrob",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "idol.n.02",
+          "via_synset": "heartthrob.n.01"
+        }
+      ],
+      "definition": "an object of infatuation"
+    },
+    {
+      "lemma": "Heaven",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "celestial.a.02",
+          "via_synset": "heaven.n.02"
+        },
+        {
+          "step": "11_pertainym",
+          "relation": "pertainym",
+          "from_synset": "celestial.a.02",
+          "via_synset": "heaven.n.02"
+        }
+      ],
+      "definition": "the abode of God and the angels"
+    },
+    {
+      "lemma": "heavenly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "celestial.a.02",
+          "via_synset": "celestial.a.02"
+        }
+      ],
+      "definition": "relating to or inhabiting a divine heaven"
+    },
+    {
+      "lemma": "heavenly body",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "star.n.03",
+          "via_synset": "celestial_body.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "star.n.01",
+          "via_synset": "celestial_body.n.01"
+        }
+      ],
+      "definition": "natural objects visible in the sky"
+    },
+    {
+      "lemma": "heavy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "heavy.n.01"
+        }
+      ],
+      "definition": "an actor who plays villainous roles"
+    },
+    {
+      "lemma": "histrion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "star.n.04",
+          "via_synset": "actor.n.01"
+        }
+      ],
+      "definition": "a theatrical performer"
+    },
+    {
+      "lemma": "idol",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.04",
+          "via_synset": "idol.n.02"
+        }
+      ],
+      "definition": "someone who is adored blindly and excessively"
+    },
+    {
+      "lemma": "idolise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "idol.n.02",
+          "via_synset": "idolize.v.01"
+        }
+      ],
+      "definition": "love unquestioningly and uncritically or to excess; venerate as an idol"
+    },
+    {
+      "lemma": "idolize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "idol.n.02",
+          "via_synset": "idolize.v.01"
+        }
+      ],
+      "definition": "love unquestioningly and uncritically or to excess; venerate as an idol"
+    },
+    {
+      "lemma": "ingenue",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "ingenue.n.01"
+        }
+      ],
+      "definition": "an actress who specializes in playing the role of an artless innocent young girl"
+    },
+    {
+      "lemma": "lead",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "star.n.04",
+          "via_synset": "star.n.04"
+        }
+      ],
+      "definition": "an actor who plays a principal role"
+    },
+    {
+      "lemma": "leading",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "leading.s.01",
+          "via_synset": "leading.s.01"
+        }
+      ],
+      "definition": "indicating the most important performer or role"
+    },
+    {
+      "lemma": "leading man",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "leading_man.n.01"
+        }
+      ],
+      "definition": "actor who plays the leading male role"
+    },
+    {
+      "lemma": "loadstar",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "lodestar.n.01"
+        }
+      ],
+      "definition": "guiding star; a star that is used as a reference point in navigation or astronomy"
+    },
+    {
+      "lemma": "lodestar",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "lodestar.n.01"
+        }
+      ],
+      "definition": "guiding star; a star that is used as a reference point in navigation or astronomy"
+    },
+    {
+      "lemma": "major",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "leading.s.01",
+          "via_synset": "major.a.01"
+        }
+      ],
+      "definition": "of greater importance or stature or rank"
+    },
+    {
+      "lemma": "major planet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "celestial_body.n.01",
+          "via_synset": "planet.n.01"
+        }
+      ],
+      "definition": "(astronomy) any of the nine large celestial bodies in the solar system that revolve around the sun and shine by reflected light; Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, and Pluto in order of their proximity to the sun; viewed from the constellation Hercules, all the planets rotate around the sun in a counterclockwise direction"
+    },
+    {
+      "lemma": "matinee idol",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.04",
+          "via_synset": "idol.n.02"
+        }
+      ],
+      "definition": "someone who is adored blindly and excessively"
+    },
+    {
+      "lemma": "mime",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "mime.n.01"
+        }
+      ],
+      "definition": "an actor who communicates entirely by gesture and facial expression"
+    },
+    {
+      "lemma": "mimer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "mime.n.01"
+        }
+      ],
+      "definition": "an actor who communicates entirely by gesture and facial expression"
+    },
+    {
+      "lemma": "minor planet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "celestial_body.n.01",
+          "via_synset": "minor_planet.n.01"
+        }
+      ],
+      "definition": "any of numerous small celestial bodies that move around the sun"
+    },
+    {
+      "lemma": "movie actor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "screen_actor.n.01"
+        }
+      ],
+      "definition": "an actor who plays a role in a film"
+    },
+    {
+      "lemma": "movie star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.04",
+          "via_synset": "film_star.n.01"
+        }
+      ],
+      "definition": "a star who plays leading roles in the cinema"
+    },
+    {
+      "lemma": "multiple star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "multiple_star.n.01"
+        }
+      ],
+      "definition": "a system of three or more stars associated by gravity"
+    },
+    {
+      "lemma": "mummer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "mime.n.01"
+        }
+      ],
+      "definition": "an actor who communicates entirely by gesture and facial expression"
+    },
+    {
+      "lemma": "neutron star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "neutron_star.n.01"
+        }
+      ],
+      "definition": "a star that has collapsed under its own gravity; it is composed of neutrons"
+    },
+    {
+      "lemma": "nova",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "nova.n.01"
+        }
+      ],
+      "definition": "a star that ejects some of its material in the form of a cloud and become more luminous in the process"
+    },
+    {
+      "lemma": "pantomimer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "mime.n.01"
+        }
+      ],
+      "definition": "an actor who communicates entirely by gesture and facial expression"
+    },
+    {
+      "lemma": "pantomimist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "mime.n.01"
+        }
+      ],
+      "definition": "an actor who communicates entirely by gesture and facial expression"
+    },
+    {
+      "lemma": "planet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "celestial_body.n.01",
+          "via_synset": "planet.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "celestial_body.n.01",
+          "via_synset": "planet.n.03"
+        }
+      ],
+      "definition": "(astronomy) any of the nine large celestial bodies in the solar system that revolve around the sun and shine by reflected light; Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, and Pluto in order of their proximity to the sun; viewed from the constellation Hercules, all the planets rotate around the sun in a counterclockwise direction"
+    },
+    {
+      "lemma": "planetesimal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "celestial_body.n.01",
+          "via_synset": "planetesimal.n.01"
+        }
+      ],
+      "definition": "one of many small solid celestial bodies thought to have existed at an early stage in the development of the solar system"
+    },
+    {
+      "lemma": "planetoid",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "celestial_body.n.01",
+          "via_synset": "minor_planet.n.01"
+        }
+      ],
+      "definition": "any of numerous small celestial bodies that move around the sun"
+    },
+    {
+      "lemma": "plant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "plant.n.03"
+        }
+      ],
+      "definition": "an actor situated in the audience whose acting is rehearsed but seems spontaneous to the audience"
+    },
+    {
+      "lemma": "play-actor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "barnstormer.n.01"
+        }
+      ],
+      "definition": "an actor who travels around the country presenting plays"
+    },
+    {
+      "lemma": "playactor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "barnstormer.n.01"
+        }
+      ],
+      "definition": "an actor who travels around the country presenting plays"
+    },
+    {
+      "lemma": "player",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "star.n.04",
+          "via_synset": "actor.n.01"
+        }
+      ],
+      "definition": "a theatrical performer"
+    },
+    {
+      "lemma": "prima",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "leading.s.01",
+          "via_synset": "leading.s.01"
+        }
+      ],
+      "definition": "indicating the most important performer or role"
+    },
+    {
+      "lemma": "primary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "celestial_body.n.01",
+          "via_synset": "primary.n.03"
+        }
+      ],
+      "definition": "(astronomy) a celestial body (especially a star) relative to other objects in orbit around it"
+    },
+    {
+      "lemma": "principal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "star.n.04",
+          "via_synset": "star.n.04"
+        }
+      ],
+      "definition": "an actor who plays a principal role"
+    },
+    {
+      "lemma": "pulsar",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "neutron_star.n.01",
+          "via_synset": "pulsar.n.01"
+        }
+      ],
+      "definition": "a degenerate neutron star; small and extremely dense; rotates very fast and emits regular pulses of polarized radiation"
+    },
+    {
+      "lemma": "quasar",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "celestial_body.n.01",
+          "via_synset": "quasar.n.01"
+        }
+      ],
+      "definition": "a starlike object that may send out radio waves and other forms of energy; many have large red shifts"
+    },
+    {
+      "lemma": "quasi-stellar radio source",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "celestial_body.n.01",
+          "via_synset": "quasar.n.01"
+        }
+      ],
+      "definition": "a starlike object that may send out radio waves and other forms of energy; many have large red shifts"
+    },
+    {
+      "lemma": "red dwarf",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "red_dwarf.n.01"
+        }
+      ],
+      "definition": "a small, old, relatively cool star; approximately 100 times the mass of Jupiter"
+    },
+    {
+      "lemma": "red dwarf star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "red_dwarf.n.01"
+        }
+      ],
+      "definition": "a small, old, relatively cool star; approximately 100 times the mass of Jupiter"
+    },
+    {
+      "lemma": "red giant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "red_giant.n.01"
+        }
+      ],
+      "definition": "a large, old, luminous star; has a relatively low surface temperature and a diameter large relative to the sun"
+    },
+    {
+      "lemma": "red giant star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "red_giant.n.01"
+        }
+      ],
+      "definition": "a large, old, luminous star; has a relatively low surface temperature and a diameter large relative to the sun"
+    },
+    {
+      "lemma": "reenactor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "reenactor.n.01"
+        }
+      ],
+      "definition": "a person who enacts a role in an event that occurred earlier"
+    },
+    {
+      "lemma": "role player",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "star.n.04",
+          "via_synset": "actor.n.01"
+        }
+      ],
+      "definition": "a theatrical performer"
+    },
+    {
+      "lemma": "satellite",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "celestial_body.n.01",
+          "via_synset": "satellite.n.03"
+        }
+      ],
+      "definition": "any celestial body orbiting around a planet or star"
+    },
+    {
+      "lemma": "scene-stealer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "scene-stealer.n.01"
+        }
+      ],
+      "definition": "an actor who draws more attention than other actors in the same scene"
+    },
+    {
+      "lemma": "screen actor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "screen_actor.n.01"
+        }
+      ],
+      "definition": "an actor who plays a role in a film"
+    },
+    {
+      "lemma": "spear carrier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "supernumerary.n.02"
+        }
+      ],
+      "definition": "a minor actor in crowd scenes"
+    },
+    {
+      "lemma": "standby",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "understudy.n.01"
+        }
+      ],
+      "definition": "an actor able to replace a regular performer when required"
+    },
+    {
+      "lemma": "star",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "leading.s.01",
+          "via_synset": "leading.s.01"
+        }
+      ],
+      "definition": "indicating the most important performer or role"
+    },
+    {
+      "lemma": "star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "star.n.03",
+          "via_synset": "star.n.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "star.n.01",
+          "via_synset": "star.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "star.n.04",
+          "via_synset": "star.n.04"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "celestial_body.n.01",
+          "via_synset": "star.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "celestial_body.n.01",
+          "via_synset": "star.n.03"
+        },
+        {
+          "step": "11_pertainym",
+          "relation": "pertainym",
+          "from_synset": "stellar.a.02",
+          "via_synset": "star.n.01"
+        }
+      ],
+      "definition": "any celestial body visible (as a point of light) from the Earth at night"
+    },
+    {
+      "lemma": "star",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "star.n.04",
+          "via_synset": "star.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "star.n.04",
+          "via_synset": "star.v.01"
+        }
+      ],
+      "definition": "be the star in a performance"
+    },
+    {
+      "lemma": "starlet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.03",
+          "via_synset": "starlet.n.02"
+        }
+      ],
+      "definition": "a small star"
+    },
+    {
+      "lemma": "starring",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "leading.s.01",
+          "via_synset": "leading.s.01"
+        }
+      ],
+      "definition": "indicating the most important performer or role"
+    },
+    {
+      "lemma": "starry",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "star.n.01",
+          "via_synset": "starry.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "star.n.03",
+          "via_synset": "starry.a.01"
+        }
+      ],
+      "definition": "abounding with or resembling stars"
+    },
+    {
+      "lemma": "stellar",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "leading.s.01",
+          "via_synset": "leading.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "stellar.a.02",
+          "via_synset": "stellar.a.02"
+        }
+      ],
+      "definition": "indicating the most important performer or role"
+    },
+    {
+      "lemma": "sun",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "sun.n.04"
+        }
+      ],
+      "definition": "any star around which a planetary system revolves"
+    },
+    {
+      "lemma": "supergiant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "supergiant.n.01"
+        }
+      ],
+      "definition": "an extremely bright star of very large diameter and low density"
+    },
+    {
+      "lemma": "supernova",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "supernova.n.01"
+        }
+      ],
+      "definition": "a star that explodes and becomes extremely luminous in the process"
+    },
+    {
+      "lemma": "supernumerary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "supernumerary.n.02"
+        }
+      ],
+      "definition": "a minor actor in crowd scenes"
+    },
+    {
+      "lemma": "television star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.04",
+          "via_synset": "television_star.n.01"
+        }
+      ],
+      "definition": "a star in a television show"
+    },
+    {
+      "lemma": "thespian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "star.n.04",
+          "via_synset": "actor.n.01"
+        }
+      ],
+      "definition": "a theatrical performer"
+    },
+    {
+      "lemma": "tragedian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "tragedian.n.02"
+        }
+      ],
+      "definition": "an actor who specializes in tragic roles"
+    },
+    {
+      "lemma": "Trapezium",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "multiple_star.n.01",
+          "via_synset": "trapezium.n.02"
+        }
+      ],
+      "definition": "a multiple star in the constellation of Orion"
+    },
+    {
+      "lemma": "trouper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "barnstormer.n.01"
+        }
+      ],
+      "definition": "an actor who travels around the country presenting plays"
+    },
+    {
+      "lemma": "TV star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.04",
+          "via_synset": "television_star.n.01"
+        }
+      ],
+      "definition": "a star in a television show"
+    },
+    {
+      "lemma": "understudy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "understudy.n.01"
+        }
+      ],
+      "definition": "an actor able to replace a regular performer when required"
+    },
+    {
+      "lemma": "upstager",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "upstager.n.01"
+        }
+      ],
+      "definition": "a selfish actor who upstages the other actors"
+    },
+    {
+      "lemma": "variable",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "variable_star.n.01"
+        }
+      ],
+      "definition": "a star that varies noticeably in brightness"
+    },
+    {
+      "lemma": "variable star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "variable_star.n.01"
+        }
+      ],
+      "definition": "a star that varies noticeably in brightness"
+    },
+    {
+      "lemma": "walk-on",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "actor.n.01",
+          "via_synset": "walk-on.n.01"
+        }
+      ],
+      "definition": "plays a small part in a dramatic production"
+    },
+    {
+      "lemma": "white dwarf",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "white_dwarf.n.01"
+        }
+      ],
+      "definition": "a faint star of enormous density"
+    },
+    {
+      "lemma": "white dwarf star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "star.n.01",
+          "via_synset": "white_dwarf.n.01"
+        }
+      ],
+      "definition": "a faint star of enormous density"
+    }
+  ]
+}

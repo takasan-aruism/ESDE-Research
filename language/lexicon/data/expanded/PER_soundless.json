@@ -1,0 +1,543 @@
+{
+  "atom_id": "PER.soundless",
+  "category": "PER",
+  "seed_count": 5,
+  "total_keys": 30,
+  "pos_counts": {
+    "adj": 9,
+    "n": 20,
+    "v": 1
+  },
+  "source_counts": {
+    "0_seed": 11,
+    "2_hypernym_d1": 2,
+    "6_derivational": 9,
+    "10_sibling": 10,
+    "7_similar_to": 4
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 9,
+      "words": [
+        "silent(adj)",
+        "soundless(adj)",
+        "still(adj)",
+        "mum(adj)",
+        "lull(n)",
+        "quiet(n)",
+        "tranquillity(n)",
+        "tranquility(n)",
+        "noiseless(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 2,
+      "words": [
+        "calmness(n)",
+        "order(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 7,
+      "words": [
+        "mum(n)",
+        "silence(n)",
+        "tranquil(adj)",
+        "lull(v)",
+        "noiselessness(n)",
+        "soundlessness(n)",
+        "stillness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 3,
+      "words": [
+        "uncommunicative(adj)",
+        "incommunicative(adj)",
+        "quiet(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 9,
+      "words": [
+        "windlessness(n)",
+        "civil order(n)",
+        "polity(n)",
+        "stability(n)",
+        "harmony(n)",
+        "concord(n)",
+        "concordance(n)",
+        "rule of law(n)",
+        "peace(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "calmness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "lull.n.02",
+          "via_synset": "calmness.n.02"
+        }
+      ],
+      "definition": "an absence of strong winds or rain"
+    },
+    {
+      "lemma": "civil order",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "order.n.03",
+          "via_synset": "civil_order.n.01"
+        }
+      ],
+      "definition": "the form of government of a social organization"
+    },
+    {
+      "lemma": "concord",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "order.n.03",
+          "via_synset": "harmony.n.03"
+        }
+      ],
+      "definition": "a harmonious state of things in general and of their properties (as of colors and sounds); congruity of parts with one another and with the whole"
+    },
+    {
+      "lemma": "concordance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "order.n.03",
+          "via_synset": "harmony.n.03"
+        }
+      ],
+      "definition": "a harmonious state of things in general and of their properties (as of colors and sounds); congruity of parts with one another and with the whole"
+    },
+    {
+      "lemma": "harmony",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "order.n.03",
+          "via_synset": "harmony.n.03"
+        }
+      ],
+      "definition": "a harmonious state of things in general and of their properties (as of colors and sounds); congruity of parts with one another and with the whole"
+    },
+    {
+      "lemma": "incommunicative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mum.s.01",
+          "via_synset": "uncommunicative.a.01"
+        }
+      ],
+      "definition": "not inclined to talk or give information or express opinions"
+    },
+    {
+      "lemma": "lull",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "lull.n.02",
+          "via_synset": "lull.n.02"
+        }
+      ],
+      "definition": "a period of calm weather"
+    },
+    {
+      "lemma": "lull",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "lull.n.02",
+          "via_synset": "lull.v.01"
+        }
+      ],
+      "definition": "calm by deception"
+    },
+    {
+      "lemma": "mum",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "mum.s.01",
+          "via_synset": "mum.s.01"
+        }
+      ],
+      "definition": "failing to speak or communicate etc when expected to"
+    },
+    {
+      "lemma": "mum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mum.s.01",
+          "via_synset": "mum.n.03"
+        }
+      ],
+      "definition": "secrecy"
+    },
+    {
+      "lemma": "noiseless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "noiseless.s.01",
+          "via_synset": "noiseless.s.01"
+        }
+      ],
+      "definition": "making no sound; - Shakespeare"
+    },
+    {
+      "lemma": "noiselessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "noiseless.s.01",
+          "via_synset": "noiselessness.n.01"
+        }
+      ],
+      "definition": "the property of making no noise"
+    },
+    {
+      "lemma": "order",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "tranquillity.n.01",
+          "via_synset": "order.n.03"
+        }
+      ],
+      "definition": "established customary state (especially of society)"
+    },
+    {
+      "lemma": "peace",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "order.n.03",
+          "via_synset": "peace.n.01"
+        }
+      ],
+      "definition": "the state prevailing during the absence of war"
+    },
+    {
+      "lemma": "polity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "order.n.03",
+          "via_synset": "civil_order.n.01"
+        }
+      ],
+      "definition": "the form of government of a social organization"
+    },
+    {
+      "lemma": "quiet",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "noiseless.s.01",
+          "via_synset": "quiet.a.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "silent.s.01",
+          "via_synset": "quiet.a.02"
+        }
+      ],
+      "definition": "free of noise or uproar; or making little if any sound"
+    },
+    {
+      "lemma": "quiet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "lull.n.02",
+          "via_synset": "lull.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "tranquillity.n.01",
+          "via_synset": "tranquillity.n.01"
+        }
+      ],
+      "definition": "a period of calm weather"
+    },
+    {
+      "lemma": "rule of law",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "order.n.03",
+          "via_synset": "rule_of_law.n.01"
+        }
+      ],
+      "definition": "a state of order in which events conform to the law"
+    },
+    {
+      "lemma": "silence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mum.s.01",
+          "via_synset": "muteness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "silent.s.01",
+          "via_synset": "silence.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "silent.s.01",
+          "via_synset": "silence.n.02"
+        }
+      ],
+      "definition": "a refusal to speak when expected"
+    },
+    {
+      "lemma": "silent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "silent.s.01",
+          "via_synset": "silent.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "mum.s.01",
+          "via_synset": "mum.s.01"
+        }
+      ],
+      "definition": "marked by absence of sound"
+    },
+    {
+      "lemma": "soundless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "silent.s.01",
+          "via_synset": "silent.s.01"
+        }
+      ],
+      "definition": "marked by absence of sound"
+    },
+    {
+      "lemma": "soundlessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "silent.s.01",
+          "via_synset": "quietness.n.01"
+        }
+      ],
+      "definition": "the property of making no sound"
+    },
+    {
+      "lemma": "stability",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "order.n.03",
+          "via_synset": "stability.n.02"
+        }
+      ],
+      "definition": "a stable order (especially of society)"
+    },
+    {
+      "lemma": "still",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "silent.s.01",
+          "via_synset": "silent.s.01"
+        }
+      ],
+      "definition": "marked by absence of sound"
+    },
+    {
+      "lemma": "stillness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "silent.s.01",
+          "via_synset": "hush.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "calmness.n.02",
+          "via_synset": "stillness.n.02"
+        }
+      ],
+      "definition": "(poetic) tranquil silence"
+    },
+    {
+      "lemma": "tranquil",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tranquillity.n.01",
+          "via_synset": "placid.s.01"
+        }
+      ],
+      "definition": "(of a body of water) free from disturbance by heavy waves"
+    },
+    {
+      "lemma": "tranquility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "tranquillity.n.01",
+          "via_synset": "tranquillity.n.01"
+        }
+      ],
+      "definition": "an untroubled state; free from disturbances"
+    },
+    {
+      "lemma": "tranquillity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "tranquillity.n.01",
+          "via_synset": "tranquillity.n.01"
+        }
+      ],
+      "definition": "an untroubled state; free from disturbances"
+    },
+    {
+      "lemma": "uncommunicative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mum.s.01",
+          "via_synset": "uncommunicative.a.01"
+        }
+      ],
+      "definition": "not inclined to talk or give information or express opinions"
+    },
+    {
+      "lemma": "windlessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "calmness.n.02",
+          "via_synset": "stillness.n.02"
+        }
+      ],
+      "definition": "calmness without winds"
+    }
+  ]
+}

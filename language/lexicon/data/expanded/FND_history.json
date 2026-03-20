@@ -1,0 +1,1862 @@
+{
+  "atom_id": "FND.history",
+  "category": "FND",
+  "seed_count": 6,
+  "total_keys": 123,
+  "pos_counts": {
+    "n": 111,
+    "adv": 1,
+    "adj": 7,
+    "v": 4
+  },
+  "source_counts": {
+    "0_seed": 9,
+    "2_hypernym_d1": 8,
+    "3_hyponym_d1": 13,
+    "4_hyponym_d2": 8,
+    "5_hyponym_d3": 1,
+    "6_derivational": 20,
+    "10_sibling": 72
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 6,
+      "words": [
+        "history(n)",
+        "account(n)",
+        "chronicle(n)",
+        "story(n)",
+        "historically(adv)",
+        "tradition(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 8,
+      "words": [
+        "past(n)",
+        "past times(n)",
+        "yesteryear(n)",
+        "record(n)",
+        "continuum(n)",
+        "content(n)",
+        "cognitive content(n)",
+        "mental object(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 13,
+      "words": [
+        "biography(n)",
+        "life(n)",
+        "life story(n)",
+        "life history(n)",
+        "etymology(n)",
+        "historical document(n)",
+        "historical paper(n)",
+        "historical record(n)",
+        "annals(n)",
+        "chronological record(n)",
+        "recital(n)",
+        "case history(n)",
+        "ancient history(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 8,
+      "words": [
+        "hagiography(n)",
+        "autobiography(n)",
+        "profile(n)",
+        "folk etymology(n)",
+        "medical history(n)",
+        "medical record(n)",
+        "anamnesis(n)",
+        "family history(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 1,
+      "words": [
+        "memoir(n)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 16,
+      "words": [
+        "historic(adj)",
+        "autobiographical(adj)",
+        "autobiographer(n)",
+        "traditional(adj)",
+        "chronicle(v)",
+        "biographical(adj)",
+        "biographer(n)",
+        "etymological(adj)",
+        "etymologist(n)",
+        "etymologize(v)",
+        "recite(v)",
+        "profile(v)",
+        "annalistic(adj)",
+        "annalist(n)",
+        "hagiographer(n)",
+        "anamnestic(adj)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 71,
+      "words": [
+        "old(n)",
+        "auld langsyne(n)",
+        "langsyne(n)",
+        "old times(n)",
+        "good old days(n)",
+        "bygone(n)",
+        "water under the bridge(n)",
+        "yore(n)",
+        "yesterday(n)",
+        "time immemorial(n)",
+        "time out of mind(n)",
+        "written record(n)",
+        "written account(n)",
+        "file(n)",
+        "data file(n)",
+        "working papers(n)",
+        "stub(n)",
+        "check stub(n)",
+        "counterfoil(n)",
+        "memorabilia(n)",
+        "issue(n)",
+        "noumenon(n)",
+        "thing-in-itself(n)",
+        "heresy(n)",
+        "unorthodoxy(n)",
+        "knowledge domain(n)",
+        "knowledge base(n)",
+        "domain(n)",
+        "acculturation(n)",
+        "culture(n)",
+        "metaknowledge(n)",
+        "food(n)",
+        "food for thought(n)",
+        "intellectual nourishment(n)",
+        "goal(n)",
+        "end(n)",
+        "lore(n)",
+        "traditional knowledge(n)",
+        "ignorance(n)",
+        "universe(n)",
+        "universe of discourse(n)",
+        "representation(n)",
+        "mental representation(n)",
+        "internal representation(n)",
+        "experience(n)",
+        "kernel(n)",
+        "substance(n)",
+        "core(n)",
+        "center(n)",
+        "centre(n)",
+        "essence(n)",
+        "gist(n)",
+        "heart(n)",
+        "heart and soul(n)",
+        "inwardness(n)",
+        "marrow(n)",
+        "meat(n)",
+        "nub(n)",
+        "pith(n)",
+        "sum(n)",
+        "nitty-gritty(n)",
+        "topic(n)",
+        "subject(n)",
+        "matter(n)",
+        "wisdom(n)",
+        "belief(n)",
+        "unbelief(n)",
+        "disbelief(n)",
+        "education(n)",
+        "idea(n)",
+        "thought(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "account",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "history.n.02",
+          "via_synset": "history.n.02"
+        }
+      ],
+      "definition": "a record or narrative description of past events"
+    },
+    {
+      "lemma": "acculturation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "acculturation.n.02"
+        }
+      ],
+      "definition": "all the knowledge and values shared by a society"
+    },
+    {
+      "lemma": "anamnesis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "case_history.n.01",
+          "via_synset": "medical_history.n.01"
+        }
+      ],
+      "definition": "the case history of a medical patient as recalled by the patient"
+    },
+    {
+      "lemma": "anamnestic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "medical_history.n.01",
+          "via_synset": "anamnestic.a.01"
+        }
+      ],
+      "definition": "of or relating to anamnesis; aiding the memory"
+    },
+    {
+      "lemma": "ancient history",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "history.n.02",
+          "via_synset": "ancient_history.n.01"
+        }
+      ],
+      "definition": "a history of the ancient world"
+    },
+    {
+      "lemma": "annalist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "annals.n.02",
+          "via_synset": "annalist.n.01"
+        }
+      ],
+      "definition": "a historian who writes annals"
+    },
+    {
+      "lemma": "annalistic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "annals.n.02",
+          "via_synset": "annalistic.a.01"
+        }
+      ],
+      "definition": "relating to annals"
+    },
+    {
+      "lemma": "annals",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "history.n.02",
+          "via_synset": "annals.n.02"
+        }
+      ],
+      "definition": "a chronological account of events in successive years"
+    },
+    {
+      "lemma": "auld langsyne",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "past.n.01",
+          "via_synset": "auld_langsyne.n.01"
+        }
+      ],
+      "definition": "past times remembered with nostalgia"
+    },
+    {
+      "lemma": "autobiographer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "autobiography.n.01",
+          "via_synset": "autobiographer.n.01"
+        }
+      ],
+      "definition": "someone who writes their own biography"
+    },
+    {
+      "lemma": "autobiographical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "autobiography.n.01",
+          "via_synset": "autobiographical.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "autobiography.n.01",
+          "via_synset": "autobiographical.a.02"
+        }
+      ],
+      "definition": "of or relating to or characteristic of an autobiographer"
+    },
+    {
+      "lemma": "autobiography",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "biography.n.01",
+          "via_synset": "autobiography.n.01"
+        }
+      ],
+      "definition": "a biography of yourself"
+    },
+    {
+      "lemma": "belief",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "belief.n.01"
+        }
+      ],
+      "definition": "any cognitive content held as true"
+    },
+    {
+      "lemma": "biographer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "biography.n.01",
+          "via_synset": "biographer.n.01"
+        }
+      ],
+      "definition": "someone who writes an account of a person's life"
+    },
+    {
+      "lemma": "biographical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "biography.n.01",
+          "via_synset": "biographic.a.01"
+        }
+      ],
+      "definition": "of or relating to or being biography"
+    },
+    {
+      "lemma": "biography",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "history.n.02",
+          "via_synset": "biography.n.01"
+        }
+      ],
+      "definition": "an account of the series of events making up a person's life"
+    },
+    {
+      "lemma": "bygone",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "past.n.01",
+          "via_synset": "bygone.n.01"
+        }
+      ],
+      "definition": "past events to be put aside"
+    },
+    {
+      "lemma": "case history",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "history.n.02",
+          "via_synset": "case_history.n.01"
+        }
+      ],
+      "definition": "detailed record of the background of a person or group under study or treatment"
+    },
+    {
+      "lemma": "center",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "centre",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "check stub",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "record.n.01",
+          "via_synset": "stub.n.04"
+        }
+      ],
+      "definition": "the part of a check that is retained as a record"
+    },
+    {
+      "lemma": "chronicle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "history.n.02",
+          "via_synset": "history.n.02"
+        }
+      ],
+      "definition": "a record or narrative description of past events"
+    },
+    {
+      "lemma": "chronicle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "history.n.02",
+          "via_synset": "chronicle.v.01"
+        }
+      ],
+      "definition": "record in chronological order; make a historical record"
+    },
+    {
+      "lemma": "chronological record",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "history.n.02",
+          "via_synset": "annals.n.02"
+        }
+      ],
+      "definition": "a chronological account of events in successive years"
+    },
+    {
+      "lemma": "cognitive content",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "tradition.n.01",
+          "via_synset": "content.n.05"
+        }
+      ],
+      "definition": "the sum or range of what has been perceived, discovered, or learned"
+    },
+    {
+      "lemma": "content",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "tradition.n.01",
+          "via_synset": "content.n.05"
+        }
+      ],
+      "definition": "the sum or range of what has been perceived, discovered, or learned"
+    },
+    {
+      "lemma": "continuum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "history.n.04",
+          "via_synset": "continuum.n.01"
+        }
+      ],
+      "definition": "a continuous nonspatial whole or extent or succession in which no part or portion is distinct or distinguishable from adjacent parts"
+    },
+    {
+      "lemma": "core",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "counterfoil",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "record.n.01",
+          "via_synset": "stub.n.04"
+        }
+      ],
+      "definition": "the part of a check that is retained as a record"
+    },
+    {
+      "lemma": "culture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "acculturation.n.02"
+        }
+      ],
+      "definition": "all the knowledge and values shared by a society"
+    },
+    {
+      "lemma": "data file",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "record.n.01",
+          "via_synset": "file.n.01"
+        }
+      ],
+      "definition": "a set of related records (either written or electronic) kept together"
+    },
+    {
+      "lemma": "disbelief",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "unbelief.n.01"
+        }
+      ],
+      "definition": "a rejection of belief"
+    },
+    {
+      "lemma": "domain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "knowledge_domain.n.01"
+        }
+      ],
+      "definition": "the content of a particular field of knowledge"
+    },
+    {
+      "lemma": "education",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "education.n.02"
+        }
+      ],
+      "definition": "knowledge acquired by learning and instruction"
+    },
+    {
+      "lemma": "end",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "goal.n.01"
+        }
+      ],
+      "definition": "the state of affairs that a plan is intended to achieve and that (when achieved) terminates behavior intended to achieve it"
+    },
+    {
+      "lemma": "essence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "etymological",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "etymology.n.01",
+          "via_synset": "etymological.a.01"
+        }
+      ],
+      "definition": "based on or belonging to etymology"
+    },
+    {
+      "lemma": "etymologist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "etymology.n.01",
+          "via_synset": "etymologist.n.01"
+        }
+      ],
+      "definition": "a lexicographer who specializes in etymology"
+    },
+    {
+      "lemma": "etymologize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "etymology.n.01",
+          "via_synset": "etymologize.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "etymology.n.01",
+          "via_synset": "etymologize.v.02"
+        }
+      ],
+      "definition": "give the etymology or derivation or suggest an etymology (for a word)"
+    },
+    {
+      "lemma": "etymology",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "history.n.02",
+          "via_synset": "etymology.n.01"
+        }
+      ],
+      "definition": "a history of a word"
+    },
+    {
+      "lemma": "experience",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "experience.n.02"
+        }
+      ],
+      "definition": "the content of direct observation or participation in an event"
+    },
+    {
+      "lemma": "family history",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "case_history.n.01",
+          "via_synset": "family_history.n.01"
+        }
+      ],
+      "definition": "part of a patient's medical history in which questions are asked in an attempt to find out whether the patient has hereditary tendencies toward particular diseases"
+    },
+    {
+      "lemma": "file",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "record.n.01",
+          "via_synset": "file.n.01"
+        }
+      ],
+      "definition": "a set of related records (either written or electronic) kept together"
+    },
+    {
+      "lemma": "folk etymology",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "etymology.n.01",
+          "via_synset": "folk_etymology.n.01"
+        }
+      ],
+      "definition": "a popular but erroneous etymology"
+    },
+    {
+      "lemma": "food",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "food.n.03"
+        }
+      ],
+      "definition": "anything that provides mental stimulus for thinking"
+    },
+    {
+      "lemma": "food for thought",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "food.n.03"
+        }
+      ],
+      "definition": "anything that provides mental stimulus for thinking"
+    },
+    {
+      "lemma": "gist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "goal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "goal.n.01"
+        }
+      ],
+      "definition": "the state of affairs that a plan is intended to achieve and that (when achieved) terminates behavior intended to achieve it"
+    },
+    {
+      "lemma": "good old days",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "past.n.01",
+          "via_synset": "auld_langsyne.n.01"
+        }
+      ],
+      "definition": "past times remembered with nostalgia"
+    },
+    {
+      "lemma": "hagiographer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hagiography.n.01",
+          "via_synset": "hagiographer.n.01"
+        }
+      ],
+      "definition": "the author of a worshipful or idealizing biography"
+    },
+    {
+      "lemma": "hagiography",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "biography.n.01",
+          "via_synset": "hagiography.n.01"
+        }
+      ],
+      "definition": "a biography that idealizes or idolizes the person (especially a person who is a saint)"
+    },
+    {
+      "lemma": "heart",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "heart and soul",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "heresy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "heresy.n.02"
+        }
+      ],
+      "definition": "a belief that rejects the orthodox tenets of a religion"
+    },
+    {
+      "lemma": "historic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "history.n.01",
+          "via_synset": "historic.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "history.n.02",
+          "via_synset": "historic.s.02"
+        }
+      ],
+      "definition": "belonging to the past; of what is important or famous in the past"
+    },
+    {
+      "lemma": "historical document",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "history.n.02",
+          "via_synset": "historical_document.n.01"
+        }
+      ],
+      "definition": "writing having historical value (as opposed to fiction or myth etc.)"
+    },
+    {
+      "lemma": "historical paper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "history.n.02",
+          "via_synset": "historical_document.n.01"
+        }
+      ],
+      "definition": "writing having historical value (as opposed to fiction or myth etc.)"
+    },
+    {
+      "lemma": "historical record",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "history.n.02",
+          "via_synset": "historical_document.n.01"
+        }
+      ],
+      "definition": "writing having historical value (as opposed to fiction or myth etc.)"
+    },
+    {
+      "lemma": "historically",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "historically.r.01",
+          "via_synset": "historically.r.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "historically.r.02",
+          "via_synset": "historically.r.02"
+        }
+      ],
+      "definition": "throughout history"
+    },
+    {
+      "lemma": "history",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "history.n.01",
+          "via_synset": "history.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "history.n.02",
+          "via_synset": "history.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "history.n.04",
+          "via_synset": "history.n.04"
+        }
+      ],
+      "definition": "the aggregate of past events"
+    },
+    {
+      "lemma": "idea",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "idea.n.01"
+        }
+      ],
+      "definition": "the content of cognition; the main thing you are thinking about"
+    },
+    {
+      "lemma": "ignorance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "ignorance.n.01"
+        }
+      ],
+      "definition": "the lack of knowledge or education"
+    },
+    {
+      "lemma": "intellectual nourishment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "food.n.03"
+        }
+      ],
+      "definition": "anything that provides mental stimulus for thinking"
+    },
+    {
+      "lemma": "internal representation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "representation.n.01"
+        }
+      ],
+      "definition": "a presentation to the mind in the form of an idea or image"
+    },
+    {
+      "lemma": "inwardness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "issue",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "issue.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "topic.n.02"
+        }
+      ],
+      "definition": "an important question that is in dispute and must be settled"
+    },
+    {
+      "lemma": "kernel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "knowledge base",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "knowledge_domain.n.01"
+        }
+      ],
+      "definition": "the content of a particular field of knowledge"
+    },
+    {
+      "lemma": "knowledge domain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "knowledge_domain.n.01"
+        }
+      ],
+      "definition": "the content of a particular field of knowledge"
+    },
+    {
+      "lemma": "langsyne",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "past.n.01",
+          "via_synset": "auld_langsyne.n.01"
+        }
+      ],
+      "definition": "past times remembered with nostalgia"
+    },
+    {
+      "lemma": "life",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "history.n.02",
+          "via_synset": "biography.n.01"
+        }
+      ],
+      "definition": "an account of the series of events making up a person's life"
+    },
+    {
+      "lemma": "life history",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "history.n.02",
+          "via_synset": "biography.n.01"
+        }
+      ],
+      "definition": "an account of the series of events making up a person's life"
+    },
+    {
+      "lemma": "life story",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "history.n.02",
+          "via_synset": "biography.n.01"
+        }
+      ],
+      "definition": "an account of the series of events making up a person's life"
+    },
+    {
+      "lemma": "lore",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "lore.n.01"
+        }
+      ],
+      "definition": "knowledge gained through tradition or anecdote"
+    },
+    {
+      "lemma": "marrow",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "matter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "topic.n.02"
+        }
+      ],
+      "definition": "some situation or event that is thought about"
+    },
+    {
+      "lemma": "meat",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "medical history",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "case_history.n.01",
+          "via_synset": "medical_history.n.01"
+        }
+      ],
+      "definition": "the case history of a medical patient as recalled by the patient"
+    },
+    {
+      "lemma": "medical record",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "case_history.n.01",
+          "via_synset": "medical_history.n.01"
+        }
+      ],
+      "definition": "the case history of a medical patient as recalled by the patient"
+    },
+    {
+      "lemma": "memoir",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "autobiography.n.01",
+          "via_synset": "memoir.n.01"
+        }
+      ],
+      "definition": "an account of the author's personal experiences"
+    },
+    {
+      "lemma": "memorabilia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "record.n.01",
+          "via_synset": "memorabilia.n.01"
+        }
+      ],
+      "definition": "a record of things worth remembering"
+    },
+    {
+      "lemma": "mental object",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "tradition.n.01",
+          "via_synset": "content.n.05"
+        }
+      ],
+      "definition": "the sum or range of what has been perceived, discovered, or learned"
+    },
+    {
+      "lemma": "mental representation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "representation.n.01"
+        }
+      ],
+      "definition": "a presentation to the mind in the form of an idea or image"
+    },
+    {
+      "lemma": "metaknowledge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "metaknowledge.n.01"
+        }
+      ],
+      "definition": "knowledge about knowledge"
+    },
+    {
+      "lemma": "nitty-gritty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "noumenon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "noumenon.n.01"
+        }
+      ],
+      "definition": "the intellectual conception of a thing as it is in itself, not as it is known through perception"
+    },
+    {
+      "lemma": "nub",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "old",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "past.n.01",
+          "via_synset": "old.n.01"
+        }
+      ],
+      "definition": "past times (especially in the phrase `in days of old')"
+    },
+    {
+      "lemma": "old times",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "past.n.01",
+          "via_synset": "auld_langsyne.n.01"
+        }
+      ],
+      "definition": "past times remembered with nostalgia"
+    },
+    {
+      "lemma": "past",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "history.n.01",
+          "via_synset": "past.n.01"
+        }
+      ],
+      "definition": "the time that has elapsed"
+    },
+    {
+      "lemma": "past times",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "history.n.01",
+          "via_synset": "past.n.01"
+        }
+      ],
+      "definition": "the time that has elapsed"
+    },
+    {
+      "lemma": "pith",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "profile",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "biography.n.01",
+          "via_synset": "profile.n.03"
+        }
+      ],
+      "definition": "biographical sketch"
+    },
+    {
+      "lemma": "profile",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "profile.n.03",
+          "via_synset": "profile.v.01"
+        }
+      ],
+      "definition": "write about"
+    },
+    {
+      "lemma": "recital",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "history.n.02",
+          "via_synset": "recital.n.05"
+        }
+      ],
+      "definition": "a detailed account or description of something"
+    },
+    {
+      "lemma": "recite",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "recital.n.05",
+          "via_synset": "tell.v.03"
+        }
+      ],
+      "definition": "narrate or give a detailed account of"
+    },
+    {
+      "lemma": "record",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "history.n.02",
+          "via_synset": "record.n.01"
+        }
+      ],
+      "definition": "anything (such as a document or a phonograph record or a photograph) providing permanent evidence of or information about past events"
+    },
+    {
+      "lemma": "representation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "representation.n.01"
+        }
+      ],
+      "definition": "a presentation to the mind in the form of an idea or image"
+    },
+    {
+      "lemma": "story",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "history.n.02",
+          "via_synset": "history.n.02"
+        }
+      ],
+      "definition": "a record or narrative description of past events"
+    },
+    {
+      "lemma": "stub",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "record.n.01",
+          "via_synset": "stub.n.04"
+        }
+      ],
+      "definition": "the part of a check that is retained as a record"
+    },
+    {
+      "lemma": "subject",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "topic.n.02"
+        }
+      ],
+      "definition": "some situation or event that is thought about"
+    },
+    {
+      "lemma": "substance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "sum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "thing-in-itself",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "noumenon.n.01"
+        }
+      ],
+      "definition": "the intellectual conception of a thing as it is in itself, not as it is known through perception"
+    },
+    {
+      "lemma": "thought",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "idea.n.01"
+        }
+      ],
+      "definition": "the content of cognition; the main thing you are thinking about"
+    },
+    {
+      "lemma": "time immemorial",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "past.n.01",
+          "via_synset": "time_immemorial.n.01"
+        }
+      ],
+      "definition": "the distant past beyond memory"
+    },
+    {
+      "lemma": "time out of mind",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "past.n.01",
+          "via_synset": "time_immemorial.n.01"
+        }
+      ],
+      "definition": "the distant past beyond memory"
+    },
+    {
+      "lemma": "topic",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "topic.n.02"
+        }
+      ],
+      "definition": "some situation or event that is thought about"
+    },
+    {
+      "lemma": "tradition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "tradition.n.01",
+          "via_synset": "tradition.n.01"
+        }
+      ],
+      "definition": "an inherited pattern of thought or action"
+    },
+    {
+      "lemma": "traditional",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tradition.n.01",
+          "via_synset": "traditional.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tradition.n.01",
+          "via_synset": "traditional.a.01"
+        }
+      ],
+      "definition": "pertaining to time-honored orthodox doctrines"
+    },
+    {
+      "lemma": "traditional knowledge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "lore.n.01"
+        }
+      ],
+      "definition": "knowledge gained through tradition or anecdote"
+    },
+    {
+      "lemma": "unbelief",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "unbelief.n.01"
+        }
+      ],
+      "definition": "a rejection of belief"
+    },
+    {
+      "lemma": "universe",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "universe.n.03"
+        }
+      ],
+      "definition": "everything stated or assumed in a given discussion"
+    },
+    {
+      "lemma": "universe of discourse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "universe.n.03"
+        }
+      ],
+      "definition": "everything stated or assumed in a given discussion"
+    },
+    {
+      "lemma": "unorthodoxy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "heresy.n.02"
+        }
+      ],
+      "definition": "a belief that rejects the orthodox tenets of a religion"
+    },
+    {
+      "lemma": "water under the bridge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "past.n.01",
+          "via_synset": "bygone.n.01"
+        }
+      ],
+      "definition": "past events to be put aside"
+    },
+    {
+      "lemma": "wisdom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "wisdom.n.01"
+        }
+      ],
+      "definition": "accumulated knowledge or erudition or enlightenment"
+    },
+    {
+      "lemma": "working papers",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "record.n.01",
+          "via_synset": "working_papers.n.01"
+        }
+      ],
+      "definition": "records kept of activities involved in carrying out a project"
+    },
+    {
+      "lemma": "written account",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "record.n.01",
+          "via_synset": "written_record.n.01"
+        }
+      ],
+      "definition": "a written document preserving knowledge of facts or events"
+    },
+    {
+      "lemma": "written record",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "record.n.01",
+          "via_synset": "written_record.n.01"
+        }
+      ],
+      "definition": "a written document preserving knowledge of facts or events"
+    },
+    {
+      "lemma": "yesterday",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "past.n.01",
+          "via_synset": "yesterday.n.02"
+        }
+      ],
+      "definition": "the recent past"
+    },
+    {
+      "lemma": "yesteryear",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "history.n.01",
+          "via_synset": "past.n.01"
+        }
+      ],
+      "definition": "the time that has elapsed"
+    },
+    {
+      "lemma": "yore",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "past.n.01",
+          "via_synset": "yore.n.01"
+        }
+      ],
+      "definition": "time long past"
+    }
+  ]
+}

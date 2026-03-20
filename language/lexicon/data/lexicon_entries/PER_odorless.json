@@ -1,0 +1,134 @@
+{
+  "atom": "PER.odorless",
+  "category": "PER",
+  "status": "proposed",
+  "symmetric_pair": "PER.smell",
+  "definition_en": "Without any smell.",
+  "seed_synsets": [],
+  "core_pool": {
+    "rules": [
+      "0_seed",
+      "3_hyponym_d1",
+      "6_derivational",
+      "7_similar_to",
+      "9_antonym"
+    ],
+    "count": 7,
+    "words": [
+      {
+        "w": "inodorous",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "having no odor",
+        "path_count": 2,
+        "sources": [
+          "0_seed",
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "non-aromatic",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "not aromatic",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "odorless",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "having no odor",
+        "path_count": 2,
+        "sources": [
+          "0_seed",
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "odorous",
+        "pos": "adj",
+        "src": "9_antonym",
+        "definition": "having odor or a characteristic odor",
+        "path_count": 1,
+        "sources": [
+          "9_antonym"
+        ]
+      },
+      {
+        "w": "odourless",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "having no odor",
+        "path_count": 2,
+        "sources": [
+          "0_seed",
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "scented",
+        "pos": "adj",
+        "src": "9_antonym",
+        "definition": "having the sense of smell",
+        "path_count": 1,
+        "sources": [
+          "9_antonym"
+        ]
+      },
+      {
+        "w": "scentless",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "lacking the sense of smell",
+        "path_count": 3,
+        "sources": [
+          "0_seed",
+          "7_similar_to"
+        ]
+      }
+    ]
+  },
+  "deviation_pool": {
+    "rules": [
+      "10_sibling",
+      "11_pertainym",
+      "12_verb_group",
+      "2_hypernym_d1",
+      "4_hyponym_d2",
+      "5_hyponym_d3",
+      "8_also_see"
+    ],
+    "count": 0,
+    "words": []
+  },
+  "deviation_stats": {
+    "total_candidates": 7,
+    "core_count": 7,
+    "dev_count": 0,
+    "core_ratio": 1.0,
+    "dev_ratio": 0.0,
+    "dev_source_breakdown": {},
+    "step_contributions": {
+      "0_seed": 4,
+      "2_hypernym_d1": 0,
+      "3_hyponym_d1": 0,
+      "4_hyponym_d2": 0,
+      "5_hyponym_d3": 0,
+      "6_derivational": 0,
+      "7_similar_to": 1,
+      "8_also_see": 0,
+      "9_antonym": 2,
+      "10_sibling": 0,
+      "11_pertainym": 0,
+      "12_verb_group": 0
+    }
+  },
+  "meta": {
+    "generator": "wn_lexicon_entry.py",
+    "version": "1.0.0",
+    "design": "3AI consolidated: Core/Deviation pool separation"
+  }
+}

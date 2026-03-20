@@ -1,0 +1,1399 @@
+{
+  "atom_id": "SPC.inside",
+  "category": "SPC",
+  "seed_count": 6,
+  "total_keys": 90,
+  "pos_counts": {
+    "n": 77,
+    "adj": 10,
+    "adv": 2,
+    "v": 1
+  },
+  "source_counts": {
+    "0_seed": 12,
+    "8_also_see": 2,
+    "7_similar_to": 6,
+    "2_hypernym_d1": 3,
+    "3_hyponym_d1": 5,
+    "6_derivational": 1,
+    "10_sibling": 69
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 9,
+      "words": [
+        "inside(n)",
+        "interior(n)",
+        "inside(adj)",
+        "inside(adv)",
+        "within(adv)",
+        "home(adj)",
+        "interior(adj)",
+        "internal(adj)",
+        "national(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 3,
+      "words": [
+        "region(n)",
+        "part(n)",
+        "surface(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 5,
+      "words": [
+        "midst(n)",
+        "thick(n)",
+        "penetralia(n)",
+        "midland(n)",
+        "belly(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 1,
+      "words": [
+        "interiorize(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 5,
+      "words": [
+        "inner(adj)",
+        "internecine(adj)",
+        "intrinsic(adj)",
+        "domestic(adj)",
+        "wrong(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 67,
+      "words": [
+        "belt(n)",
+        "sign of the zodiac(n)",
+        "star sign(n)",
+        "sign(n)",
+        "mansion(n)",
+        "house(n)",
+        "planetary house(n)",
+        "aerospace(n)",
+        "ionosphere(n)",
+        "black hole(n)",
+        "layer(n)",
+        "intergalactic space(n)",
+        "bottom(n)",
+        "Sind(n)",
+        "top(n)",
+        "interplanetary space(n)",
+        "biosphere(n)",
+        "extremity(n)",
+        "Eden(n)",
+        "paradise(n)",
+        "nirvana(n)",
+        "heaven(n)",
+        "promised land(n)",
+        "Shangri-la(n)",
+        "zodiac(n)",
+        "deep space(n)",
+        "interstellar space(n)",
+        "vacuum(n)",
+        "vacuity(n)",
+        "mare(n)",
+        "maria(n)",
+        "distance(n)",
+        "hell(n)",
+        "hell on earth(n)",
+        "hellhole(n)",
+        "snake pit(n)",
+        "the pits(n)",
+        "inferno(n)",
+        "heliosphere(n)",
+        "atmosphere(n)",
+        "air(n)",
+        "zone(n)",
+        "radius(n)",
+        "depth(n)",
+        "side(n)",
+        "Papua(n)",
+        "Kuiper belt(n)",
+        "Edgeworth-Kuiper belt(n)",
+        "county(n)",
+        "photosphere(n)",
+        "substrate(n)",
+        "substratum(n)",
+        "interface(n)",
+        "hard palate(n)",
+        "celestial sphere(n)",
+        "sphere(n)",
+        "empyrean(n)",
+        "firmament(n)",
+        "heavens(n)",
+        "vault of heaven(n)",
+        "welkin(n)",
+        "face(n)",
+        "end(n)",
+        "wave front(n)",
+        "wavefront(n)",
+        "palate(n)",
+        "roof of the mouth(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "aerospace",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "aerospace.n.01"
+        }
+      ],
+      "definition": "the atmosphere and outer space considered as a whole"
+    },
+    {
+      "lemma": "air",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "atmosphere.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "air.n.02"
+        }
+      ],
+      "definition": "the mass of air surrounding the Earth"
+    },
+    {
+      "lemma": "atmosphere",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "atmosphere.n.03"
+        }
+      ],
+      "definition": "the mass of air surrounding the Earth"
+    },
+    {
+      "lemma": "belly",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "inside.n.02",
+          "via_synset": "belly.n.04"
+        }
+      ],
+      "definition": "the hollow inside of something"
+    },
+    {
+      "lemma": "belt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "belt.n.03"
+        }
+      ],
+      "definition": "an elongated region where a specific condition or characteristic is found"
+    },
+    {
+      "lemma": "biosphere",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "biosphere.n.01"
+        }
+      ],
+      "definition": "the regions of the surface and atmosphere of the Earth (or other planet) where living organisms exist"
+    },
+    {
+      "lemma": "black hole",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "black_hole.n.01"
+        }
+      ],
+      "definition": "a region of space resulting from the collapse of a star; extremely high gravitational field"
+    },
+    {
+      "lemma": "bottom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "bottom.n.02"
+        }
+      ],
+      "definition": "the lowest part of anything"
+    },
+    {
+      "lemma": "celestial sphere",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "surface.n.02",
+          "via_synset": "celestial_sphere.n.01"
+        }
+      ],
+      "definition": "the apparent surface of the imaginary sphere on which celestial bodies appear to be projected"
+    },
+    {
+      "lemma": "county",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "county.n.01"
+        }
+      ],
+      "definition": "(United Kingdom) a region created by territorial division for the purpose of local government"
+    },
+    {
+      "lemma": "deep space",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "deep_space.n.01"
+        }
+      ],
+      "definition": "any region in space outside the solar system"
+    },
+    {
+      "lemma": "depth",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "depth.n.03"
+        }
+      ],
+      "definition": "(usually plural) the deepest and most remote part"
+    },
+    {
+      "lemma": "distance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "distance.n.02"
+        }
+      ],
+      "definition": "a distant region"
+    },
+    {
+      "lemma": "domestic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "home.s.01",
+          "via_synset": "domestic.a.01"
+        }
+      ],
+      "definition": "of concern to or concerning the internal affairs of a nation"
+    },
+    {
+      "lemma": "Eden",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "eden.n.01"
+        }
+      ],
+      "definition": "any place of complete bliss and delight and peace"
+    },
+    {
+      "lemma": "Edgeworth-Kuiper belt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "kuiper_belt.n.01"
+        }
+      ],
+      "definition": "a disk-shaped region of minor planets outside the orbit of Neptune"
+    },
+    {
+      "lemma": "empyrean",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "surface.n.02",
+          "via_synset": "celestial_sphere.n.01"
+        }
+      ],
+      "definition": "the apparent surface of the imaginary sphere on which celestial bodies appear to be projected"
+    },
+    {
+      "lemma": "end",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "surface.n.02",
+          "via_synset": "end.n.07"
+        }
+      ],
+      "definition": "the surface at either extremity of a three-dimensional object"
+    },
+    {
+      "lemma": "extremity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "extremity.n.04"
+        }
+      ],
+      "definition": "the outermost or farthest region or point"
+    },
+    {
+      "lemma": "face",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "surface.n.02",
+          "via_synset": "side.n.04"
+        }
+      ],
+      "definition": "a surface forming part of the outside of an object"
+    },
+    {
+      "lemma": "firmament",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "surface.n.02",
+          "via_synset": "celestial_sphere.n.01"
+        }
+      ],
+      "definition": "the apparent surface of the imaginary sphere on which celestial bodies appear to be projected"
+    },
+    {
+      "lemma": "hard palate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "surface.n.02",
+          "via_synset": "hard_palate.n.01"
+        }
+      ],
+      "definition": "the bony part of the roof of the mouth"
+    },
+    {
+      "lemma": "heaven",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "eden.n.01"
+        }
+      ],
+      "definition": "any place of complete bliss and delight and peace"
+    },
+    {
+      "lemma": "heavens",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "surface.n.02",
+          "via_synset": "celestial_sphere.n.01"
+        }
+      ],
+      "definition": "the apparent surface of the imaginary sphere on which celestial bodies appear to be projected"
+    },
+    {
+      "lemma": "heliosphere",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "heliosphere.n.01"
+        }
+      ],
+      "definition": "the region inside the heliopause containing the sun and solar system"
+    },
+    {
+      "lemma": "hell",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "hell.n.01"
+        }
+      ],
+      "definition": "any place of pain and turmoil"
+    },
+    {
+      "lemma": "hell on earth",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "hell.n.01"
+        }
+      ],
+      "definition": "any place of pain and turmoil"
+    },
+    {
+      "lemma": "hellhole",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "hell.n.01"
+        }
+      ],
+      "definition": "any place of pain and turmoil"
+    },
+    {
+      "lemma": "home",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "home.s.01",
+          "via_synset": "home.s.01"
+        }
+      ],
+      "definition": "inside the country"
+    },
+    {
+      "lemma": "house",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "sign_of_the_zodiac.n.01"
+        }
+      ],
+      "definition": "(astrology) one of 12 equal areas into which the zodiac is divided"
+    },
+    {
+      "lemma": "inferno",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "hell.n.01"
+        }
+      ],
+      "definition": "any place of pain and turmoil"
+    },
+    {
+      "lemma": "inner",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "internal.a.01",
+          "via_synset": "inner.s.05"
+        }
+      ],
+      "definition": "inside or closer to the inside of the body"
+    },
+    {
+      "lemma": "inside",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "inside.a.01",
+          "via_synset": "inside.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "internal.a.01",
+          "via_synset": "inside.a.01"
+        }
+      ],
+      "definition": "relating to or being on the side closer to the center or within a defined space"
+    },
+    {
+      "lemma": "inside",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "inside.r.02",
+          "via_synset": "inside.r.02"
+        }
+      ],
+      "definition": "on the inside"
+    },
+    {
+      "lemma": "inside",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "inside.n.01",
+          "via_synset": "inside.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "inside.n.02",
+          "via_synset": "inside.n.02"
+        }
+      ],
+      "definition": "the region that is inside of something"
+    },
+    {
+      "lemma": "interface",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "surface.n.02",
+          "via_synset": "interface.n.01"
+        }
+      ],
+      "definition": "(chemistry) a surface forming a common boundary between two things (two objects or liquids or chemical phases)"
+    },
+    {
+      "lemma": "intergalactic space",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "intergalactic_space.n.01"
+        }
+      ],
+      "definition": "the space between galaxies"
+    },
+    {
+      "lemma": "interior",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "home.s.01",
+          "via_synset": "home.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "internal.a.01",
+          "via_synset": "interior.s.03"
+        }
+      ],
+      "definition": "inside the country"
+    },
+    {
+      "lemma": "interior",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "inside.n.01",
+          "via_synset": "inside.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "inside.n.02",
+          "via_synset": "inside.n.02"
+        }
+      ],
+      "definition": "the region that is inside of something"
+    },
+    {
+      "lemma": "interiorize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "inside.n.01",
+          "via_synset": "internalize.v.01"
+        }
+      ],
+      "definition": "incorporate within oneself; make subjective or personal"
+    },
+    {
+      "lemma": "internal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "home.s.01",
+          "via_synset": "home.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "internal.a.01",
+          "via_synset": "internal.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "inside.a.01",
+          "via_synset": "internal.a.01"
+        }
+      ],
+      "definition": "inside the country"
+    },
+    {
+      "lemma": "internecine",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "internal.a.01",
+          "via_synset": "internecine.s.01"
+        }
+      ],
+      "definition": "(of conflict) within a group or organization"
+    },
+    {
+      "lemma": "interplanetary space",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "interplanetary_space.n.01"
+        }
+      ],
+      "definition": "the part of outer space within the solar system"
+    },
+    {
+      "lemma": "interstellar space",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "interstellar_space.n.01"
+        }
+      ],
+      "definition": "the space between stars"
+    },
+    {
+      "lemma": "intrinsic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "internal.a.01",
+          "via_synset": "intrinsic.s.01"
+        }
+      ],
+      "definition": "situated within or belonging solely to the organ or body part on which it acts"
+    },
+    {
+      "lemma": "ionosphere",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "ionosphere.n.01"
+        }
+      ],
+      "definition": "the outer region of the Earth's atmosphere; contains a high concentration of free electrons"
+    },
+    {
+      "lemma": "Kuiper belt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "kuiper_belt.n.01"
+        }
+      ],
+      "definition": "a disk-shaped region of minor planets outside the orbit of Neptune"
+    },
+    {
+      "lemma": "layer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "layer.n.02"
+        }
+      ],
+      "definition": "a relatively thin sheetlike expanse or region lying over or under another"
+    },
+    {
+      "lemma": "mansion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "sign_of_the_zodiac.n.01"
+        }
+      ],
+      "definition": "(astrology) one of 12 equal areas into which the zodiac is divided"
+    },
+    {
+      "lemma": "mare",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "mare.n.02"
+        }
+      ],
+      "definition": "a dark region of considerable extent on the surface of the moon"
+    },
+    {
+      "lemma": "maria",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "mare.n.02"
+        }
+      ],
+      "definition": "a dark region of considerable extent on the surface of the moon"
+    },
+    {
+      "lemma": "midland",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "inside.n.01",
+          "via_synset": "midland.n.02"
+        }
+      ],
+      "definition": "the interior part of a country"
+    },
+    {
+      "lemma": "midst",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "inside.n.01",
+          "via_synset": "midst.n.01"
+        }
+      ],
+      "definition": "the location of something surrounded by other things"
+    },
+    {
+      "lemma": "national",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "home.s.01",
+          "via_synset": "home.s.01"
+        }
+      ],
+      "definition": "inside the country"
+    },
+    {
+      "lemma": "nirvana",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "eden.n.01"
+        }
+      ],
+      "definition": "any place of complete bliss and delight and peace"
+    },
+    {
+      "lemma": "palate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "surface.n.02",
+          "via_synset": "palate.n.01"
+        }
+      ],
+      "definition": "the upper surface of the mouth that separates the oral and nasal cavities"
+    },
+    {
+      "lemma": "Papua",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "papua.n.01"
+        }
+      ],
+      "definition": "the southeastern part of Papua New Guinea"
+    },
+    {
+      "lemma": "paradise",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "eden.n.01"
+        }
+      ],
+      "definition": "any place of complete bliss and delight and peace"
+    },
+    {
+      "lemma": "part",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "inside.n.01",
+          "via_synset": "region.n.01"
+        }
+      ],
+      "definition": "the extended spatial location of something"
+    },
+    {
+      "lemma": "penetralia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "inside.n.01",
+          "via_synset": "penetralia.n.01"
+        }
+      ],
+      "definition": "the innermost parts"
+    },
+    {
+      "lemma": "photosphere",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "surface.n.02",
+          "via_synset": "photosphere.n.01"
+        }
+      ],
+      "definition": "the intensely luminous surface of a star (especially the sun)"
+    },
+    {
+      "lemma": "planetary house",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "sign_of_the_zodiac.n.01"
+        }
+      ],
+      "definition": "(astrology) one of 12 equal areas into which the zodiac is divided"
+    },
+    {
+      "lemma": "promised land",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "eden.n.01"
+        }
+      ],
+      "definition": "any place of complete bliss and delight and peace"
+    },
+    {
+      "lemma": "radius",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "radius.n.03"
+        }
+      ],
+      "definition": "a circular region whose area is indicated by the length of its radius"
+    },
+    {
+      "lemma": "region",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "inside.n.01",
+          "via_synset": "region.n.01"
+        }
+      ],
+      "definition": "the extended spatial location of something"
+    },
+    {
+      "lemma": "roof of the mouth",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "surface.n.02",
+          "via_synset": "palate.n.01"
+        }
+      ],
+      "definition": "the upper surface of the mouth that separates the oral and nasal cavities"
+    },
+    {
+      "lemma": "Shangri-la",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "eden.n.01"
+        }
+      ],
+      "definition": "any place of complete bliss and delight and peace"
+    },
+    {
+      "lemma": "side",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "side.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "surface.n.02",
+          "via_synset": "side.n.04"
+        }
+      ],
+      "definition": "a place within a region identified relative to a center or reference location"
+    },
+    {
+      "lemma": "sign",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "sign_of_the_zodiac.n.01"
+        }
+      ],
+      "definition": "(astrology) one of 12 equal areas into which the zodiac is divided"
+    },
+    {
+      "lemma": "sign of the zodiac",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "sign_of_the_zodiac.n.01"
+        }
+      ],
+      "definition": "(astrology) one of 12 equal areas into which the zodiac is divided"
+    },
+    {
+      "lemma": "Sind",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "sind.n.01"
+        }
+      ],
+      "definition": "a region of southeastern Pakistan"
+    },
+    {
+      "lemma": "snake pit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "hell.n.01"
+        }
+      ],
+      "definition": "any place of pain and turmoil"
+    },
+    {
+      "lemma": "sphere",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "surface.n.02",
+          "via_synset": "celestial_sphere.n.01"
+        }
+      ],
+      "definition": "the apparent surface of the imaginary sphere on which celestial bodies appear to be projected"
+    },
+    {
+      "lemma": "star sign",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "sign_of_the_zodiac.n.01"
+        }
+      ],
+      "definition": "(astrology) one of 12 equal areas into which the zodiac is divided"
+    },
+    {
+      "lemma": "substrate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "surface.n.02",
+          "via_synset": "substrate.n.02"
+        }
+      ],
+      "definition": "a surface on which an organism grows or is attached"
+    },
+    {
+      "lemma": "substratum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "surface.n.02",
+          "via_synset": "substrate.n.02"
+        }
+      ],
+      "definition": "a surface on which an organism grows or is attached"
+    },
+    {
+      "lemma": "surface",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "inside.n.02",
+          "via_synset": "surface.n.02"
+        }
+      ],
+      "definition": "the extended two-dimensional outer boundary of a three-dimensional object"
+    },
+    {
+      "lemma": "the pits",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "hell.n.01"
+        }
+      ],
+      "definition": "any place of pain and turmoil"
+    },
+    {
+      "lemma": "thick",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "inside.n.01",
+          "via_synset": "midst.n.01"
+        }
+      ],
+      "definition": "the location of something surrounded by other things"
+    },
+    {
+      "lemma": "top",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "top.n.01"
+        }
+      ],
+      "definition": "the upper part of anything"
+    },
+    {
+      "lemma": "vacuity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "vacuum.n.03"
+        }
+      ],
+      "definition": "a region that is devoid of matter"
+    },
+    {
+      "lemma": "vacuum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "vacuum.n.03"
+        }
+      ],
+      "definition": "a region that is devoid of matter"
+    },
+    {
+      "lemma": "vault of heaven",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "surface.n.02",
+          "via_synset": "celestial_sphere.n.01"
+        }
+      ],
+      "definition": "the apparent surface of the imaginary sphere on which celestial bodies appear to be projected"
+    },
+    {
+      "lemma": "wave front",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "surface.n.02",
+          "via_synset": "wave_front.n.02"
+        }
+      ],
+      "definition": "(physics) an imaginary surface joining all points in space that are reached at the same instant by a wave propagating through a medium"
+    },
+    {
+      "lemma": "wavefront",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "surface.n.02",
+          "via_synset": "wave_front.n.02"
+        }
+      ],
+      "definition": "(physics) an imaginary surface joining all points in space that are reached at the same instant by a wave propagating through a medium"
+    },
+    {
+      "lemma": "welkin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "surface.n.02",
+          "via_synset": "celestial_sphere.n.01"
+        }
+      ],
+      "definition": "the apparent surface of the imaginary sphere on which celestial bodies appear to be projected"
+    },
+    {
+      "lemma": "within",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "inside.r.02",
+          "via_synset": "inside.r.02"
+        }
+      ],
+      "definition": "on the inside"
+    },
+    {
+      "lemma": "wrong",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "inside.a.01",
+          "via_synset": "wrong.s.04"
+        }
+      ],
+      "definition": "used of the side of cloth or clothing intended to face inward"
+    },
+    {
+      "lemma": "zodiac",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "zodiac.n.01"
+        }
+      ],
+      "definition": "a belt-shaped region in the heavens on either side to the ecliptic; divided into 12 constellations or signs for astrological purposes"
+    },
+    {
+      "lemma": "zone",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "region.n.01",
+          "via_synset": "zone.n.03"
+        }
+      ],
+      "definition": "an area or region distinguished from adjacent parts by a distinctive feature or characteristic"
+    }
+  ]
+}

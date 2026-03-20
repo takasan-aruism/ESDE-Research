@@ -1,0 +1,715 @@
+{
+  "atom_id": "REL.alone",
+  "category": "REL",
+  "seed_count": 6,
+  "total_keys": 44,
+  "pos_counts": {
+    "adj": 16,
+    "adv": 7,
+    "n": 21
+  },
+  "source_counts": {
+    "0_seed": 24,
+    "2_hypernym_d1": 4,
+    "6_derivational": 5,
+    "7_similar_to": 3,
+    "10_sibling": 10
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 22,
+      "words": [
+        "alone(adj)",
+        "unique(adj)",
+        "unequaled(adj)",
+        "unequalled(adj)",
+        "unparalleled(adj)",
+        "entirely(adv)",
+        "exclusively(adv)",
+        "solely(adv)",
+        "alone(adv)",
+        "only(adv)",
+        "solo(adv)",
+        "unaccompanied(adv)",
+        "solitary confinement(n)",
+        "solitary(n)",
+        "hermit(n)",
+        "recluse(n)",
+        "solitudinarian(n)",
+        "troglodyte(n)",
+        "detached(adj)",
+        "isolated(adj)",
+        "separated(adj)",
+        "set-apart(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 4,
+      "words": [
+        "confinement(n)",
+        "loner(n)",
+        "lone wolf(n)",
+        "lone hand(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 5,
+      "words": [
+        "hermitic(adj)",
+        "hermitical(adj)",
+        "recluse(adj)",
+        "solitary(adj)",
+        "uniqueness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 3,
+      "words": [
+        "incomparable(adj)",
+        "uncomparable(adj)",
+        "separate(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 10,
+      "words": [
+        "captivity(n)",
+        "imprisonment(n)",
+        "incarceration(n)",
+        "immurement(n)",
+        "detention(n)",
+        "detainment(n)",
+        "hold(n)",
+        "custody(n)",
+        "constraint(n)",
+        "restraint(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "alone",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "alone.s.04",
+          "via_synset": "alone.s.04"
+        }
+      ],
+      "definition": "radically distinctive and without equal"
+    },
+    {
+      "lemma": "alone",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "entirely.r.02",
+          "via_synset": "entirely.r.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "alone.r.02",
+          "via_synset": "alone.r.02"
+        }
+      ],
+      "definition": "without any others being included or involved"
+    },
+    {
+      "lemma": "captivity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "confinement.n.03",
+          "via_synset": "captivity.n.01"
+        }
+      ],
+      "definition": "the state of being imprisoned"
+    },
+    {
+      "lemma": "confinement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "solitary_confinement.n.01",
+          "via_synset": "confinement.n.03"
+        }
+      ],
+      "definition": "the state of being confined"
+    },
+    {
+      "lemma": "constraint",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "confinement.n.03",
+          "via_synset": "constraint.n.01"
+        }
+      ],
+      "definition": "the state of being physically constrained"
+    },
+    {
+      "lemma": "custody",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "confinement.n.03",
+          "via_synset": "detention.n.01"
+        }
+      ],
+      "definition": "a state of being confined (usually for a short time)"
+    },
+    {
+      "lemma": "detached",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "detached.s.02",
+          "via_synset": "detached.s.02"
+        }
+      ],
+      "definition": "being or feeling set or kept apart from others; ; - Sherwood Anderson"
+    },
+    {
+      "lemma": "detainment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "confinement.n.03",
+          "via_synset": "detention.n.01"
+        }
+      ],
+      "definition": "a state of being confined (usually for a short time)"
+    },
+    {
+      "lemma": "detention",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "confinement.n.03",
+          "via_synset": "detention.n.01"
+        }
+      ],
+      "definition": "a state of being confined (usually for a short time)"
+    },
+    {
+      "lemma": "entirely",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "entirely.r.02",
+          "via_synset": "entirely.r.02"
+        }
+      ],
+      "definition": "without any others being included or involved"
+    },
+    {
+      "lemma": "exclusively",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "entirely.r.02",
+          "via_synset": "entirely.r.02"
+        }
+      ],
+      "definition": "without any others being included or involved"
+    },
+    {
+      "lemma": "hermit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hermit.n.02",
+          "via_synset": "hermit.n.02"
+        }
+      ],
+      "definition": "one who lives in solitude"
+    },
+    {
+      "lemma": "hermitic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hermit.n.02",
+          "via_synset": "anchoritic.s.01"
+        }
+      ],
+      "definition": "characterized by ascetic solitude"
+    },
+    {
+      "lemma": "hermitical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hermit.n.02",
+          "via_synset": "anchoritic.s.01"
+        }
+      ],
+      "definition": "characterized by ascetic solitude"
+    },
+    {
+      "lemma": "hold",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "confinement.n.03",
+          "via_synset": "detention.n.01"
+        }
+      ],
+      "definition": "a state of being confined (usually for a short time)"
+    },
+    {
+      "lemma": "immurement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "confinement.n.03",
+          "via_synset": "captivity.n.01"
+        }
+      ],
+      "definition": "the state of being imprisoned"
+    },
+    {
+      "lemma": "imprisonment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "confinement.n.03",
+          "via_synset": "captivity.n.01"
+        }
+      ],
+      "definition": "the state of being imprisoned"
+    },
+    {
+      "lemma": "incarceration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "confinement.n.03",
+          "via_synset": "captivity.n.01"
+        }
+      ],
+      "definition": "the state of being imprisoned"
+    },
+    {
+      "lemma": "incomparable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "alone.s.04",
+          "via_synset": "incomparable.a.01"
+        }
+      ],
+      "definition": "such that comparison is impossible; unsuitable for comparison or lacking features that can be compared"
+    },
+    {
+      "lemma": "isolated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "detached.s.02",
+          "via_synset": "detached.s.02"
+        }
+      ],
+      "definition": "being or feeling set or kept apart from others; ; - Sherwood Anderson"
+    },
+    {
+      "lemma": "lone hand",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "hermit.n.02",
+          "via_synset": "loner.n.01"
+        }
+      ],
+      "definition": "a person who avoids the company or assistance of others"
+    },
+    {
+      "lemma": "lone wolf",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "hermit.n.02",
+          "via_synset": "loner.n.01"
+        }
+      ],
+      "definition": "a person who avoids the company or assistance of others"
+    },
+    {
+      "lemma": "loner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "hermit.n.02",
+          "via_synset": "loner.n.01"
+        }
+      ],
+      "definition": "a person who avoids the company or assistance of others"
+    },
+    {
+      "lemma": "only",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "entirely.r.02",
+          "via_synset": "entirely.r.02"
+        }
+      ],
+      "definition": "without any others being included or involved"
+    },
+    {
+      "lemma": "recluse",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hermit.n.02",
+          "via_synset": "recluse.s.01"
+        }
+      ],
+      "definition": "withdrawn from society; seeking solitude"
+    },
+    {
+      "lemma": "recluse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hermit.n.02",
+          "via_synset": "hermit.n.02"
+        }
+      ],
+      "definition": "one who lives in solitude"
+    },
+    {
+      "lemma": "restraint",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "confinement.n.03",
+          "via_synset": "constraint.n.01"
+        }
+      ],
+      "definition": "the state of being physically constrained"
+    },
+    {
+      "lemma": "separate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "detached.s.02",
+          "via_synset": "separate.a.01"
+        }
+      ],
+      "definition": "independent; not united or joint"
+    },
+    {
+      "lemma": "separated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "detached.s.02",
+          "via_synset": "detached.s.02"
+        }
+      ],
+      "definition": "being or feeling set or kept apart from others; ; - Sherwood Anderson"
+    },
+    {
+      "lemma": "set-apart",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "detached.s.02",
+          "via_synset": "detached.s.02"
+        }
+      ],
+      "definition": "being or feeling set or kept apart from others; ; - Sherwood Anderson"
+    },
+    {
+      "lemma": "solely",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "entirely.r.02",
+          "via_synset": "entirely.r.02"
+        }
+      ],
+      "definition": "without any others being included or involved"
+    },
+    {
+      "lemma": "solitary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hermit.n.02",
+          "via_synset": "lone.s.02"
+        }
+      ],
+      "definition": "characterized by or preferring solitude"
+    },
+    {
+      "lemma": "solitary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "solitary_confinement.n.01",
+          "via_synset": "solitary_confinement.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hermit.n.02",
+          "via_synset": "hermit.n.02"
+        }
+      ],
+      "definition": "confinement of a prisoner in isolation from other prisoners"
+    },
+    {
+      "lemma": "solitary confinement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "solitary_confinement.n.01",
+          "via_synset": "solitary_confinement.n.01"
+        }
+      ],
+      "definition": "confinement of a prisoner in isolation from other prisoners"
+    },
+    {
+      "lemma": "solitudinarian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hermit.n.02",
+          "via_synset": "hermit.n.02"
+        }
+      ],
+      "definition": "one who lives in solitude"
+    },
+    {
+      "lemma": "solo",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "alone.r.02",
+          "via_synset": "alone.r.02"
+        }
+      ],
+      "definition": "without anybody else or anything else"
+    },
+    {
+      "lemma": "troglodyte",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hermit.n.02",
+          "via_synset": "hermit.n.02"
+        }
+      ],
+      "definition": "one who lives in solitude"
+    },
+    {
+      "lemma": "unaccompanied",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "alone.r.02",
+          "via_synset": "alone.r.02"
+        }
+      ],
+      "definition": "without anybody else or anything else"
+    },
+    {
+      "lemma": "uncomparable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "alone.s.04",
+          "via_synset": "incomparable.a.01"
+        }
+      ],
+      "definition": "such that comparison is impossible; unsuitable for comparison or lacking features that can be compared"
+    },
+    {
+      "lemma": "unequaled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "alone.s.04",
+          "via_synset": "alone.s.04"
+        }
+      ],
+      "definition": "radically distinctive and without equal"
+    },
+    {
+      "lemma": "unequalled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "alone.s.04",
+          "via_synset": "alone.s.04"
+        }
+      ],
+      "definition": "radically distinctive and without equal"
+    },
+    {
+      "lemma": "unique",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "alone.s.04",
+          "via_synset": "alone.s.04"
+        }
+      ],
+      "definition": "radically distinctive and without equal"
+    },
+    {
+      "lemma": "uniqueness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "alone.s.04",
+          "via_synset": "singularity.n.01"
+        }
+      ],
+      "definition": "the quality of being one of a kind"
+    },
+    {
+      "lemma": "unparalleled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "alone.s.04",
+          "via_synset": "alone.s.04"
+        }
+      ],
+      "definition": "radically distinctive and without equal"
+    }
+  ]
+}

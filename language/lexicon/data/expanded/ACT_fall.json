@@ -1,0 +1,1921 @@
+{
+  "atom_id": "ACT.fall",
+  "category": "ACT",
+  "seed_count": 6,
+  "total_keys": 119,
+  "pos_counts": {
+    "n": 52,
+    "v": 65,
+    "adj": 2
+  },
+  "source_counts": {
+    "0_seed": 17,
+    "6_derivational": 18,
+    "10_sibling": 77,
+    "12_verb_group": 4,
+    "2_hypernym_d1": 14,
+    "3_hyponym_d1": 12,
+    "4_hyponym_d2": 3,
+    "9_antonym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 16,
+      "words": [
+        "spill(n)",
+        "tumble(n)",
+        "fall(n)",
+        "fall(v)",
+        "descent(n)",
+        "declivity(n)",
+        "decline(n)",
+        "declination(n)",
+        "declension(n)",
+        "downslope(n)",
+        "drop curtain(n)",
+        "drop cloth(n)",
+        "drop down(v)",
+        "topple(v)",
+        "tumble(v)",
+        "tip(v)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 13,
+      "words": [
+        "slip(n)",
+        "trip(n)",
+        "change posture(v)",
+        "slope(n)",
+        "incline(n)",
+        "side(n)",
+        "curtain(n)",
+        "drape(n)",
+        "drapery(n)",
+        "mantle(n)",
+        "pall(n)",
+        "push(v)",
+        "force(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 11,
+      "words": [
+        "wipeout(n)",
+        "pratfall(n)",
+        "downhill(n)",
+        "steep(n)",
+        "drop open(v)",
+        "fall open(v)",
+        "sag(v)",
+        "droop(v)",
+        "swag(v)",
+        "flag(v)",
+        "sag down(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 3,
+      "words": [
+        "bag(v)",
+        "slump(v)",
+        "slouch(v)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 8,
+      "words": [
+        "slouch(n)",
+        "sloucher(n)",
+        "declivitous(adj)",
+        "decline(v)",
+        "sag(n)",
+        "downhill(adj)",
+        "droop(n)",
+        "bagging(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "ascent(n)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 66,
+      "words": [
+        "straighten(v)",
+        "unbend(v)",
+        "hunch(v)",
+        "hump(v)",
+        "hunch forward(v)",
+        "hunch over(v)",
+        "lie down(v)",
+        "lie(v)",
+        "arise(v)",
+        "uprise(v)",
+        "get up(v)",
+        "stand up(v)",
+        "sit down(v)",
+        "sit(v)",
+        "bow(v)",
+        "sit up(v)",
+        "uncurl(v)",
+        "right(v)",
+        "fall down(v)",
+        "piedmont(n)",
+        "coast(n)",
+        "mountainside(n)",
+        "versant(n)",
+        "hillside(n)",
+        "ski slope(n)",
+        "escarpment(n)",
+        "scarp(n)",
+        "bank(n)",
+        "canyonside(n)",
+        "acclivity(n)",
+        "raise(n)",
+        "upgrade(n)",
+        "cant(n)",
+        "camber(n)",
+        "portiere(n)",
+        "festoon(n)",
+        "frontal(n)",
+        "theater curtain(n)",
+        "theatre curtain(n)",
+        "shower curtain(n)",
+        "thrust(v)",
+        "shove(v)",
+        "drive(v)",
+        "press(v)",
+        "nose(v)",
+        "push up(v)",
+        "jerk(v)",
+        "flick(v)",
+        "push out(v)",
+        "obtrude(v)",
+        "thrust out(v)",
+        "nudge(v)",
+        "poke at(v)",
+        "prod(v)",
+        "muscle into(v)",
+        "jam(v)",
+        "repel(v)",
+        "repulse(v)",
+        "force back(v)",
+        "push back(v)",
+        "beat back(v)",
+        "stuff(v)",
+        "squeeze(v)",
+        "push aside(v)",
+        "push away(v)",
+        "jostle(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 1,
+      "words": [
+        "fall off(v)"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "acclivity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "slope.n.01",
+          "via_synset": "ascent.n.01"
+        }
+      ],
+      "definition": "an upward slope or grade (as in a road)"
+    },
+    {
+      "lemma": "arise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "arise.v.03"
+        }
+      ],
+      "definition": "rise to one's feet"
+    },
+    {
+      "lemma": "ascent",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "descent.n.05",
+          "via_synset": "ascent.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "slope.n.01",
+          "via_synset": "ascent.n.01"
+        }
+      ],
+      "definition": "an upward slope or grade (as in a road)"
+    },
+    {
+      "lemma": "bag",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sag.v.01",
+          "via_synset": "bag.v.02"
+        }
+      ],
+      "definition": "hang loosely, like an empty bag"
+    },
+    {
+      "lemma": "bagging",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bag.v.02",
+          "via_synset": "sacking.n.01"
+        }
+      ],
+      "definition": "coarse fabric used for bags or sacks"
+    },
+    {
+      "lemma": "bank",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "slope.n.01",
+          "via_synset": "bank.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "slope.n.01",
+          "via_synset": "bank.n.07"
+        }
+      ],
+      "definition": "sloping land (especially the slope beside a body of water)"
+    },
+    {
+      "lemma": "beat back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "repel.v.01"
+        }
+      ],
+      "definition": "cause to move back by force or influence"
+    },
+    {
+      "lemma": "bow",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "bow.v.03"
+        }
+      ],
+      "definition": "bend the head or the upper part of the body in a gesture of respect or greeting"
+    },
+    {
+      "lemma": "camber",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "slope.n.01",
+          "via_synset": "bank.n.07"
+        }
+      ],
+      "definition": "a slope in the turn of a road or track; the outside is higher than the inside in order to reduce the effects of centrifugal force"
+    },
+    {
+      "lemma": "cant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "slope.n.01",
+          "via_synset": "bank.n.07"
+        }
+      ],
+      "definition": "a slope in the turn of a road or track; the outside is higher than the inside in order to reduce the effects of centrifugal force"
+    },
+    {
+      "lemma": "canyonside",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "slope.n.01",
+          "via_synset": "canyonside.n.01"
+        }
+      ],
+      "definition": "the steeply sloping side of a canyon"
+    },
+    {
+      "lemma": "change posture",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "fall.v.24",
+          "via_synset": "change_posture.v.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sink.v.01",
+          "via_synset": "change_posture.v.01"
+        }
+      ],
+      "definition": "undergo a change in bodily posture"
+    },
+    {
+      "lemma": "coast",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "slope.n.01",
+          "via_synset": "coast.n.02"
+        }
+      ],
+      "definition": "a slope down which sleds may coast"
+    },
+    {
+      "lemma": "curtain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "drop_curtain.n.01",
+          "via_synset": "curtain.n.01"
+        }
+      ],
+      "definition": "hanging cloth used as a blind (especially for a window)"
+    },
+    {
+      "lemma": "declension",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "descent.n.05",
+          "via_synset": "descent.n.05"
+        }
+      ],
+      "definition": "a downward slope or bend"
+    },
+    {
+      "lemma": "declination",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "descent.n.05",
+          "via_synset": "descent.n.05"
+        }
+      ],
+      "definition": "a downward slope or bend"
+    },
+    {
+      "lemma": "decline",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "descent.n.05",
+          "via_synset": "descent.n.05"
+        }
+      ],
+      "definition": "a downward slope or bend"
+    },
+    {
+      "lemma": "decline",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "descent.n.05",
+          "via_synset": "decline.v.05"
+        }
+      ],
+      "definition": "go down"
+    },
+    {
+      "lemma": "declivitous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "descent.n.05",
+          "via_synset": "declivitous.s.01"
+        }
+      ],
+      "definition": "sloping down rather steeply"
+    },
+    {
+      "lemma": "declivity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "descent.n.05",
+          "via_synset": "descent.n.05"
+        }
+      ],
+      "definition": "a downward slope or bend"
+    },
+    {
+      "lemma": "descent",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "descent.n.05",
+          "via_synset": "descent.n.05"
+        }
+      ],
+      "definition": "a downward slope or bend"
+    },
+    {
+      "lemma": "downhill",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "downhill.n.01",
+          "via_synset": "declivitous.s.01"
+        }
+      ],
+      "definition": "sloping down rather steeply"
+    },
+    {
+      "lemma": "downhill",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "descent.n.05",
+          "via_synset": "downhill.n.01"
+        }
+      ],
+      "definition": "the downward slope of a hill"
+    },
+    {
+      "lemma": "downslope",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "descent.n.05",
+          "via_synset": "descent.n.05"
+        }
+      ],
+      "definition": "a downward slope or bend"
+    },
+    {
+      "lemma": "drape",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "drop_curtain.n.01",
+          "via_synset": "curtain.n.01"
+        }
+      ],
+      "definition": "hanging cloth used as a blind (especially for a window)"
+    },
+    {
+      "lemma": "drapery",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "drop_curtain.n.01",
+          "via_synset": "curtain.n.01"
+        }
+      ],
+      "definition": "hanging cloth used as a blind (especially for a window)"
+    },
+    {
+      "lemma": "drive",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "drive.v.15"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "repel.v.01"
+        }
+      ],
+      "definition": "urge forward"
+    },
+    {
+      "lemma": "droop",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sag.v.01",
+          "via_synset": "sag.n.01"
+        }
+      ],
+      "definition": "a shape that sags"
+    },
+    {
+      "lemma": "droop",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.v.01",
+          "via_synset": "sag.v.01"
+        }
+      ],
+      "definition": "droop, sink, or settle from or as if from pressure or loss of tautness"
+    },
+    {
+      "lemma": "drop cloth",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "drop_curtain.n.01",
+          "via_synset": "drop_curtain.n.01"
+        }
+      ],
+      "definition": "a curtain that can be lowered and raised onto a stage from the flies; often used as background scenery"
+    },
+    {
+      "lemma": "drop curtain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "drop_curtain.n.01",
+          "via_synset": "drop_curtain.n.01"
+        }
+      ],
+      "definition": "a curtain that can be lowered and raised onto a stage from the flies; often used as background scenery"
+    },
+    {
+      "lemma": "drop down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sink.v.01",
+          "via_synset": "sink.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "sink.v.01"
+        }
+      ],
+      "definition": "fall or descend to a lower place or level"
+    },
+    {
+      "lemma": "drop open",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.v.01",
+          "via_synset": "drop_open.v.01"
+        }
+      ],
+      "definition": "open involuntarily"
+    },
+    {
+      "lemma": "escarpment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "slope.n.01",
+          "via_synset": "escarpment.n.01"
+        }
+      ],
+      "definition": "a long steep slope or cliff at the edge of a plateau or ridge; usually formed by erosion"
+    },
+    {
+      "lemma": "fall",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "spill.n.04",
+          "via_synset": "spill.n.04"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "descent.n.05",
+          "via_synset": "descent.n.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fall.v.24",
+          "via_synset": "spill.n.04"
+        }
+      ],
+      "definition": "a sudden drop from an upright position"
+    },
+    {
+      "lemma": "fall",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "fall.v.24",
+          "via_synset": "fall.v.24"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "spill.n.04",
+          "via_synset": "fall.v.24"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "spill.n.04",
+          "via_synset": "fall.v.23"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "spill.n.04",
+          "via_synset": "fall.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "descent.n.05",
+          "via_synset": "fall.v.22"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "fall.v.23"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "fall.v.24"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "fall.v.24",
+          "via_synset": "fall.v.23"
+        }
+      ],
+      "definition": "drop oneself to a lower or less erect position"
+    },
+    {
+      "lemma": "fall down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "fall.v.23"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "fall.v.24",
+          "via_synset": "fall.v.23"
+        }
+      ],
+      "definition": "lose an upright position suddenly"
+    },
+    {
+      "lemma": "fall off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "sink.v.01",
+          "via_synset": "slump.v.03"
+        }
+      ],
+      "definition": "fall heavily or suddenly; decline markedly"
+    },
+    {
+      "lemma": "fall open",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.v.01",
+          "via_synset": "drop_open.v.01"
+        }
+      ],
+      "definition": "open involuntarily"
+    },
+    {
+      "lemma": "festoon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curtain.n.01",
+          "via_synset": "festoon.n.01"
+        }
+      ],
+      "definition": "a curtain of fabric draped and bound at intervals to form graceful curves"
+    },
+    {
+      "lemma": "flag",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.v.01",
+          "via_synset": "sag.v.01"
+        }
+      ],
+      "definition": "droop, sink, or settle from or as if from pressure or loss of tautness"
+    },
+    {
+      "lemma": "flick",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "jerk.v.05"
+        }
+      ],
+      "definition": "throw or toss with a quick motion"
+    },
+    {
+      "lemma": "force",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "topple.v.02",
+          "via_synset": "push.v.01"
+        }
+      ],
+      "definition": "move with force,"
+    },
+    {
+      "lemma": "force back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "repel.v.01"
+        }
+      ],
+      "definition": "cause to move back by force or influence"
+    },
+    {
+      "lemma": "frontal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curtain.n.01",
+          "via_synset": "frontal.n.02"
+        }
+      ],
+      "definition": "a drapery that covers the front of an altar"
+    },
+    {
+      "lemma": "get up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "arise.v.03"
+        }
+      ],
+      "definition": "rise to one's feet"
+    },
+    {
+      "lemma": "hillside",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "slope.n.01",
+          "via_synset": "hillside.n.01"
+        }
+      ],
+      "definition": "the side or slope of a hill"
+    },
+    {
+      "lemma": "hump",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "hunch.v.01"
+        }
+      ],
+      "definition": "round one's back by bending forward and drawing the shoulders forward"
+    },
+    {
+      "lemma": "hunch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "hunch.v.01"
+        }
+      ],
+      "definition": "round one's back by bending forward and drawing the shoulders forward"
+    },
+    {
+      "lemma": "hunch forward",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "hunch.v.01"
+        }
+      ],
+      "definition": "round one's back by bending forward and drawing the shoulders forward"
+    },
+    {
+      "lemma": "hunch over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "hunch.v.01"
+        }
+      ],
+      "definition": "round one's back by bending forward and drawing the shoulders forward"
+    },
+    {
+      "lemma": "incline",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "descent.n.05",
+          "via_synset": "slope.n.01"
+        }
+      ],
+      "definition": "an elevated geological formation"
+    },
+    {
+      "lemma": "jam",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "jam.v.02"
+        }
+      ],
+      "definition": "push down forcibly"
+    },
+    {
+      "lemma": "jerk",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "jerk.v.05"
+        }
+      ],
+      "definition": "throw or toss with a quick motion"
+    },
+    {
+      "lemma": "jostle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "jostle.v.02"
+        }
+      ],
+      "definition": "come into rough contact with while moving"
+    },
+    {
+      "lemma": "lie",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "lie_down.v.01"
+        }
+      ],
+      "definition": "assume a reclining position"
+    },
+    {
+      "lemma": "lie down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "lie_down.v.01"
+        }
+      ],
+      "definition": "assume a reclining position"
+    },
+    {
+      "lemma": "mantle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "drop_curtain.n.01",
+          "via_synset": "curtain.n.01"
+        }
+      ],
+      "definition": "hanging cloth used as a blind (especially for a window)"
+    },
+    {
+      "lemma": "mountainside",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "slope.n.01",
+          "via_synset": "mountainside.n.01"
+        }
+      ],
+      "definition": "the side or slope of a mountain"
+    },
+    {
+      "lemma": "muscle into",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "muscle_into.v.01"
+        }
+      ],
+      "definition": "force one's way"
+    },
+    {
+      "lemma": "nose",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "nose.v.04"
+        }
+      ],
+      "definition": "push or move with the nose"
+    },
+    {
+      "lemma": "nudge",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "nudge.v.01"
+        }
+      ],
+      "definition": "to push against gently"
+    },
+    {
+      "lemma": "obtrude",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "push_out.v.01"
+        }
+      ],
+      "definition": "push to thrust outward"
+    },
+    {
+      "lemma": "pall",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "drop_curtain.n.01",
+          "via_synset": "curtain.n.01"
+        }
+      ],
+      "definition": "hanging cloth used as a blind (especially for a window)"
+    },
+    {
+      "lemma": "piedmont",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "slope.n.01",
+          "via_synset": "piedmont.n.02"
+        }
+      ],
+      "definition": "a gentle slope leading from the base of a mountain to a region of flat land"
+    },
+    {
+      "lemma": "poke at",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "nudge.v.01"
+        }
+      ],
+      "definition": "to push against gently"
+    },
+    {
+      "lemma": "portiere",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curtain.n.01",
+          "via_synset": "portiere.n.01"
+        }
+      ],
+      "definition": "a heavy curtain hung across a doorway"
+    },
+    {
+      "lemma": "pratfall",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "spill.n.04",
+          "via_synset": "pratfall.n.01"
+        }
+      ],
+      "definition": "a fall onto your buttocks"
+    },
+    {
+      "lemma": "press",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "press.v.11"
+        }
+      ],
+      "definition": "make strenuous pushing movements during birth to expel the baby"
+    },
+    {
+      "lemma": "prod",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "nudge.v.01"
+        }
+      ],
+      "definition": "to push against gently"
+    },
+    {
+      "lemma": "push",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "topple.v.02",
+          "via_synset": "push.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "press.v.11"
+        }
+      ],
+      "definition": "move with force,"
+    },
+    {
+      "lemma": "push aside",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "push_aside.v.01"
+        }
+      ],
+      "definition": "push out of the way"
+    },
+    {
+      "lemma": "push away",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "push_aside.v.01"
+        }
+      ],
+      "definition": "push out of the way"
+    },
+    {
+      "lemma": "push back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "repel.v.01"
+        }
+      ],
+      "definition": "cause to move back by force or influence"
+    },
+    {
+      "lemma": "push out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "push_out.v.01"
+        }
+      ],
+      "definition": "push to thrust outward"
+    },
+    {
+      "lemma": "push up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "push_up.v.01"
+        }
+      ],
+      "definition": "push upward"
+    },
+    {
+      "lemma": "raise",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "slope.n.01",
+          "via_synset": "ascent.n.01"
+        }
+      ],
+      "definition": "an upward slope or grade (as in a road)"
+    },
+    {
+      "lemma": "repel",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "repel.v.01"
+        }
+      ],
+      "definition": "cause to move back by force or influence"
+    },
+    {
+      "lemma": "repulse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "repel.v.01"
+        }
+      ],
+      "definition": "cause to move back by force or influence"
+    },
+    {
+      "lemma": "right",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "right.v.03"
+        }
+      ],
+      "definition": "regain an upright or proper position"
+    },
+    {
+      "lemma": "sag",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sag.v.02",
+          "via_synset": "sag.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sag.v.01",
+          "via_synset": "sag.n.01"
+        }
+      ],
+      "definition": "a shape that sags"
+    },
+    {
+      "lemma": "sag",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.v.01",
+          "via_synset": "sag.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.v.01",
+          "via_synset": "sag.v.02"
+        }
+      ],
+      "definition": "droop, sink, or settle from or as if from pressure or loss of tautness"
+    },
+    {
+      "lemma": "sag down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.v.01",
+          "via_synset": "sag.v.02"
+        }
+      ],
+      "definition": "cause to sag"
+    },
+    {
+      "lemma": "scarp",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "slope.n.01",
+          "via_synset": "escarpment.n.01"
+        }
+      ],
+      "definition": "a long steep slope or cliff at the edge of a plateau or ridge; usually formed by erosion"
+    },
+    {
+      "lemma": "shove",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "shove.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "thrust.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "jostle.v.02"
+        }
+      ],
+      "definition": "push roughly"
+    },
+    {
+      "lemma": "shower curtain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curtain.n.01",
+          "via_synset": "shower_curtain.n.01"
+        }
+      ],
+      "definition": "a curtain that keeps water from splashing out of the shower area"
+    },
+    {
+      "lemma": "side",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "descent.n.05",
+          "via_synset": "slope.n.01"
+        }
+      ],
+      "definition": "an elevated geological formation"
+    },
+    {
+      "lemma": "sit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "sit_down.v.01"
+        }
+      ],
+      "definition": "take a seat"
+    },
+    {
+      "lemma": "sit down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "sit_down.v.01"
+        }
+      ],
+      "definition": "take a seat"
+    },
+    {
+      "lemma": "sit up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "sit_up.v.02"
+        }
+      ],
+      "definition": "change to an upright sitting position"
+    },
+    {
+      "lemma": "ski slope",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "slope.n.01",
+          "via_synset": "ski_slope.n.01"
+        }
+      ],
+      "definition": "a snow-covered slope for skiing"
+    },
+    {
+      "lemma": "slip",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "spill.n.04",
+          "via_synset": "slip.n.07"
+        }
+      ],
+      "definition": "an accidental misstep threatening (or causing) a fall"
+    },
+    {
+      "lemma": "slope",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "descent.n.05",
+          "via_synset": "slope.n.01"
+        }
+      ],
+      "definition": "an elevated geological formation"
+    },
+    {
+      "lemma": "slouch",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "slump.v.01",
+          "via_synset": "slouch.n.02"
+        }
+      ],
+      "definition": "a stooping carriage in standing and walking"
+    },
+    {
+      "lemma": "slouch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sag.v.01",
+          "via_synset": "slump.v.01"
+        }
+      ],
+      "definition": "assume a drooping posture or carriage"
+    },
+    {
+      "lemma": "sloucher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "slump.v.01",
+          "via_synset": "sloucher.n.01"
+        }
+      ],
+      "definition": "a person who slouches; someone with a drooping carriage"
+    },
+    {
+      "lemma": "slump",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sag.v.01",
+          "via_synset": "slump.v.01"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "sink.v.01",
+          "via_synset": "slump.v.03"
+        }
+      ],
+      "definition": "assume a drooping posture or carriage"
+    },
+    {
+      "lemma": "spill",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "spill.n.04",
+          "via_synset": "spill.n.04"
+        }
+      ],
+      "definition": "a sudden drop from an upright position"
+    },
+    {
+      "lemma": "squeeze",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "thrust.v.02"
+        }
+      ],
+      "definition": "press or force"
+    },
+    {
+      "lemma": "stand up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "arise.v.03"
+        }
+      ],
+      "definition": "rise to one's feet"
+    },
+    {
+      "lemma": "steep",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "descent.n.05",
+          "via_synset": "steep.n.01"
+        }
+      ],
+      "definition": "a steep place (as on a hill)"
+    },
+    {
+      "lemma": "straighten",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "straighten.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "straighten.v.03"
+        }
+      ],
+      "definition": "straighten up or out; make straight"
+    },
+    {
+      "lemma": "stuff",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "thrust.v.02"
+        }
+      ],
+      "definition": "press or force"
+    },
+    {
+      "lemma": "swag",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sink.v.01",
+          "via_synset": "sag.v.01"
+        }
+      ],
+      "definition": "droop, sink, or settle from or as if from pressure or loss of tautness"
+    },
+    {
+      "lemma": "theater curtain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curtain.n.01",
+          "via_synset": "theater_curtain.n.01"
+        }
+      ],
+      "definition": "a hanging cloth that conceals the stage from the view of the audience; rises or parts at the beginning and descends or closes between acts and at the end of a performance"
+    },
+    {
+      "lemma": "theatre curtain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "curtain.n.01",
+          "via_synset": "theater_curtain.n.01"
+        }
+      ],
+      "definition": "a hanging cloth that conceals the stage from the view of the audience; rises or parts at the beginning and descends or closes between acts and at the end of a performance"
+    },
+    {
+      "lemma": "thrust",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "thrust.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "thrust.v.02"
+        }
+      ],
+      "definition": "push forcefully"
+    },
+    {
+      "lemma": "thrust out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "push.v.01",
+          "via_synset": "push_out.v.01"
+        }
+      ],
+      "definition": "push to thrust outward"
+    },
+    {
+      "lemma": "tip",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "topple.v.02",
+          "via_synset": "topple.v.02"
+        }
+      ],
+      "definition": "cause to topple or tumble by pushing"
+    },
+    {
+      "lemma": "topple",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "topple.v.02",
+          "via_synset": "topple.v.02"
+        }
+      ],
+      "definition": "cause to topple or tumble by pushing"
+    },
+    {
+      "lemma": "trip",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "spill.n.04",
+          "via_synset": "slip.n.07"
+        }
+      ],
+      "definition": "an accidental misstep threatening (or causing) a fall"
+    },
+    {
+      "lemma": "tumble",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "spill.n.04",
+          "via_synset": "spill.n.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "topple.v.02",
+          "via_synset": "spill.n.04"
+        }
+      ],
+      "definition": "a sudden drop from an upright position"
+    },
+    {
+      "lemma": "tumble",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "topple.v.02",
+          "via_synset": "topple.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "spill.n.04",
+          "via_synset": "topple.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "spill.n.04",
+          "via_synset": "tumble.v.08"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "spill.n.04",
+          "via_synset": "tumble.v.01"
+        }
+      ],
+      "definition": "cause to topple or tumble by pushing"
+    },
+    {
+      "lemma": "unbend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "straighten.v.01"
+        }
+      ],
+      "definition": "straighten up or out; make straight"
+    },
+    {
+      "lemma": "uncurl",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "uncurl.v.01"
+        }
+      ],
+      "definition": "move out of a curled position"
+    },
+    {
+      "lemma": "upgrade",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "slope.n.01",
+          "via_synset": "ascent.n.01"
+        }
+      ],
+      "definition": "an upward slope or grade (as in a road)"
+    },
+    {
+      "lemma": "uprise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "change_posture.v.01",
+          "via_synset": "arise.v.03"
+        }
+      ],
+      "definition": "rise to one's feet"
+    },
+    {
+      "lemma": "versant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "slope.n.01",
+          "via_synset": "mountainside.n.01"
+        }
+      ],
+      "definition": "the side or slope of a mountain"
+    },
+    {
+      "lemma": "wipeout",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "spill.n.04",
+          "via_synset": "wipeout.n.02"
+        }
+      ],
+      "definition": "a spill in some sport (as a fall from a bicycle or while skiing or being capsized on a surfboard)"
+    }
+  ]
+}

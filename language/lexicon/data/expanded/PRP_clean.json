@@ -1,0 +1,954 @@
+{
+  "atom_id": "PRP.clean",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 53,
+  "pos_counts": {
+    "adj": 45,
+    "n": 8
+  },
+  "source_counts": {
+    "0_seed": 16,
+    "7_similar_to": 44,
+    "8_also_see": 5,
+    "6_derivational": 8,
+    "9_antonym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 13,
+      "words": [
+        "clean(adj)",
+        "clear(adj)",
+        "light(adj)",
+        "unclouded(adj)",
+        "unobjectionable(adj)",
+        "pure(adj)",
+        "immaculate(adj)",
+        "speckless(adj)",
+        "spick-and-span(adj)",
+        "spic-and-span(adj)",
+        "spic(adj)",
+        "spick(adj)",
+        "spotless(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 8,
+      "words": [
+        "immaculateness(n)",
+        "spotlessness(n)",
+        "clarity(n)",
+        "clearness(n)",
+        "uncloudedness(n)",
+        "cleanness(n)",
+        "pureness(n)",
+        "purity(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 28,
+      "words": [
+        "cleanly(adj)",
+        "unsullied(adj)",
+        "scrubbed(adj)",
+        "fresh(adj)",
+        "unused(adj)",
+        "unsoiled(adj)",
+        "unspotted(adj)",
+        "unstained(adj)",
+        "washed(adj)",
+        "water-washed(adj)",
+        "pristine(adj)",
+        "dry-cleaned(adj)",
+        "cleanable(adj)",
+        "axenic(adj)",
+        "unadulterated(adj)",
+        "sublimate(adj)",
+        "uncontaminated(adj)",
+        "unpolluted(adj)",
+        "native(adj)",
+        "unalloyed(adj)",
+        "virginal(adj)",
+        "plain(adj)",
+        "sheer(adj)",
+        "unmingled(adj)",
+        "unmixed(adj)",
+        "fine(adj)",
+        "harmonious(adj)",
+        "antiseptic(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 3,
+      "words": [
+        "tidy(adj)",
+        "processed(adj)",
+        "decent(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "impure(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "antiseptic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.08",
+          "via_synset": "antiseptic.s.03"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "clean.a.01",
+          "via_synset": "antiseptic.a.01"
+        }
+      ],
+      "definition": "devoid of objectionable language"
+    },
+    {
+      "lemma": "axenic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.a.01",
+          "via_synset": "axenic.s.02"
+        }
+      ],
+      "definition": "(used of cultures of microorganisms) completely free from other organisms"
+    },
+    {
+      "lemma": "clarity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "clean.s.02",
+          "via_synset": "clearness.n.02"
+        }
+      ],
+      "definition": "the quality of clear water"
+    },
+    {
+      "lemma": "clean",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "clean.a.01",
+          "via_synset": "clean.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "clean.s.02",
+          "via_synset": "clean.s.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "clean.a.08",
+          "via_synset": "clean.a.08"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "immaculate.s.01",
+          "via_synset": "clean.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.a.01",
+          "via_synset": "clean.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.a.01",
+          "via_synset": "clean.s.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "pure.a.01",
+          "via_synset": "clean.a.06"
+        }
+      ],
+      "definition": "free from dirt or impurities; or having clean habits"
+    },
+    {
+      "lemma": "cleanable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.01",
+          "via_synset": "cleanable.s.01"
+        }
+      ],
+      "definition": "capable of being cleaned"
+    },
+    {
+      "lemma": "cleanly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.01",
+          "via_synset": "cleanly.s.01"
+        }
+      ],
+      "definition": "habitually clean"
+    },
+    {
+      "lemma": "cleanness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "clean.a.01",
+          "via_synset": "cleanness.n.01"
+        }
+      ],
+      "definition": "the state of being clean; without dirt or other impurities"
+    },
+    {
+      "lemma": "clear",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "clean.s.02",
+          "via_synset": "clean.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.a.01",
+          "via_synset": "clean.s.02"
+        }
+      ],
+      "definition": "(of sound or color) free from anything that dulls or dims"
+    },
+    {
+      "lemma": "clearness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "clean.s.02",
+          "via_synset": "clearness.n.02"
+        }
+      ],
+      "definition": "the quality of clear water"
+    },
+    {
+      "lemma": "decent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "clean.a.08",
+          "via_synset": "decent.a.03"
+        }
+      ],
+      "definition": "conforming to conventions of sexual behavior; - George Santayana"
+    },
+    {
+      "lemma": "dry-cleaned",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.01",
+          "via_synset": "dry-cleaned.s.01"
+        }
+      ],
+      "definition": "cleaned with chemical solvents"
+    },
+    {
+      "lemma": "fine",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.a.01",
+          "via_synset": "fine.s.05"
+        }
+      ],
+      "definition": "free from impurities; having a high or specified degree of purity"
+    },
+    {
+      "lemma": "fresh",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.01",
+          "via_synset": "fresh.s.08"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.a.01",
+          "via_synset": "clean.s.03"
+        }
+      ],
+      "definition": "not yet used or soiled"
+    },
+    {
+      "lemma": "harmonious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.s.02",
+          "via_synset": "harmonious.a.01"
+        }
+      ],
+      "definition": "musically pleasing"
+    },
+    {
+      "lemma": "immaculate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "immaculate.s.01",
+          "via_synset": "immaculate.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.01",
+          "via_synset": "immaculate.s.01"
+        }
+      ],
+      "definition": "completely neat and clean"
+    },
+    {
+      "lemma": "immaculateness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "immaculate.s.01",
+          "via_synset": "spotlessness.n.01"
+        }
+      ],
+      "definition": "the state of being spotlessly clean"
+    },
+    {
+      "lemma": "impure",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "pure.a.01",
+          "via_synset": "impure.a.01"
+        }
+      ],
+      "definition": "combined with extraneous elements"
+    },
+    {
+      "lemma": "light",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "clean.s.02",
+          "via_synset": "clean.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.a.01",
+          "via_synset": "clean.s.02"
+        }
+      ],
+      "definition": "(of sound or color) free from anything that dulls or dims"
+    },
+    {
+      "lemma": "native",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.a.01",
+          "via_synset": "native.s.01"
+        }
+      ],
+      "definition": "as found in nature in the elemental form"
+    },
+    {
+      "lemma": "plain",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.a.01",
+          "via_synset": "plain.s.02"
+        }
+      ],
+      "definition": "not mixed with extraneous elements"
+    },
+    {
+      "lemma": "pristine",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.01",
+          "via_synset": "pristine.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.a.01",
+          "via_synset": "pristine.s.01"
+        }
+      ],
+      "definition": "immaculately clean and unused"
+    },
+    {
+      "lemma": "processed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "pure.a.01",
+          "via_synset": "processed.a.03"
+        }
+      ],
+      "definition": "prepared or converted from a natural state by subjecting to a special process"
+    },
+    {
+      "lemma": "pure",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pure.s.02",
+          "via_synset": "pure.s.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pure.a.01",
+          "via_synset": "pure.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.s.02",
+          "via_synset": "pure.a.01"
+        }
+      ],
+      "definition": "free from discordant qualities"
+    },
+    {
+      "lemma": "pureness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pure.a.01",
+          "via_synset": "purity.n.01"
+        }
+      ],
+      "definition": "being undiluted or unmixed with extraneous material"
+    },
+    {
+      "lemma": "purity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pure.a.01",
+          "via_synset": "purity.n.01"
+        }
+      ],
+      "definition": "being undiluted or unmixed with extraneous material"
+    },
+    {
+      "lemma": "scrubbed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.01",
+          "via_synset": "scrubbed.s.01"
+        }
+      ],
+      "definition": "made clean by scrubbing"
+    },
+    {
+      "lemma": "sheer",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.a.01",
+          "via_synset": "plain.s.02"
+        }
+      ],
+      "definition": "not mixed with extraneous elements"
+    },
+    {
+      "lemma": "speckless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "immaculate.s.01",
+          "via_synset": "immaculate.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.01",
+          "via_synset": "immaculate.s.01"
+        }
+      ],
+      "definition": "completely neat and clean"
+    },
+    {
+      "lemma": "spic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "immaculate.s.01",
+          "via_synset": "immaculate.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.01",
+          "via_synset": "immaculate.s.01"
+        }
+      ],
+      "definition": "completely neat and clean"
+    },
+    {
+      "lemma": "spic-and-span",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "immaculate.s.01",
+          "via_synset": "immaculate.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.01",
+          "via_synset": "immaculate.s.01"
+        }
+      ],
+      "definition": "completely neat and clean"
+    },
+    {
+      "lemma": "spick",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "immaculate.s.01",
+          "via_synset": "immaculate.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.01",
+          "via_synset": "immaculate.s.01"
+        }
+      ],
+      "definition": "completely neat and clean"
+    },
+    {
+      "lemma": "spick-and-span",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "immaculate.s.01",
+          "via_synset": "immaculate.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.01",
+          "via_synset": "immaculate.s.01"
+        }
+      ],
+      "definition": "completely neat and clean"
+    },
+    {
+      "lemma": "spotless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "immaculate.s.01",
+          "via_synset": "immaculate.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.01",
+          "via_synset": "immaculate.s.01"
+        }
+      ],
+      "definition": "completely neat and clean"
+    },
+    {
+      "lemma": "spotlessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "immaculate.s.01",
+          "via_synset": "spotlessness.n.01"
+        }
+      ],
+      "definition": "the state of being spotlessly clean"
+    },
+    {
+      "lemma": "sublimate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.a.01",
+          "via_synset": "sublimate.s.01"
+        }
+      ],
+      "definition": "made pure"
+    },
+    {
+      "lemma": "tidy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "clean.a.01",
+          "via_synset": "tidy.a.01"
+        }
+      ],
+      "definition": "marked by order and cleanliness in appearance or habits"
+    },
+    {
+      "lemma": "unadulterated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.a.01",
+          "via_synset": "unadulterated.s.01"
+        }
+      ],
+      "definition": "not mixed with impurities"
+    },
+    {
+      "lemma": "unalloyed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.a.01",
+          "via_synset": "unalloyed.s.01"
+        }
+      ],
+      "definition": "free from admixture"
+    },
+    {
+      "lemma": "unclouded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "clean.s.02",
+          "via_synset": "clean.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.a.01",
+          "via_synset": "clean.s.02"
+        }
+      ],
+      "definition": "(of sound or color) free from anything that dulls or dims"
+    },
+    {
+      "lemma": "uncloudedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "clean.s.02",
+          "via_synset": "clearness.n.02"
+        }
+      ],
+      "definition": "the quality of clear water"
+    },
+    {
+      "lemma": "uncontaminated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.a.01",
+          "via_synset": "uncontaminated.s.01"
+        }
+      ],
+      "definition": "free from admixture with noxious elements; clean"
+    },
+    {
+      "lemma": "unmingled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.a.01",
+          "via_synset": "plain.s.02"
+        }
+      ],
+      "definition": "not mixed with extraneous elements"
+    },
+    {
+      "lemma": "unmixed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.a.01",
+          "via_synset": "plain.s.02"
+        }
+      ],
+      "definition": "not mixed with extraneous elements"
+    },
+    {
+      "lemma": "unobjectionable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "clean.a.08",
+          "via_synset": "clean.a.08"
+        }
+      ],
+      "definition": "(of behavior or especially language) free from objectionable elements; fit for all observers"
+    },
+    {
+      "lemma": "unpolluted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.a.01",
+          "via_synset": "uncontaminated.s.01"
+        }
+      ],
+      "definition": "free from admixture with noxious elements; clean"
+    },
+    {
+      "lemma": "unsoiled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.01",
+          "via_synset": "unsoiled.s.01"
+        }
+      ],
+      "definition": "without soil or spot or stain"
+    },
+    {
+      "lemma": "unspotted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.01",
+          "via_synset": "unsoiled.s.01"
+        }
+      ],
+      "definition": "without soil or spot or stain"
+    },
+    {
+      "lemma": "unstained",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.01",
+          "via_synset": "unsoiled.s.01"
+        }
+      ],
+      "definition": "without soil or spot or stain"
+    },
+    {
+      "lemma": "unsullied",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.01",
+          "via_synset": "unsullied.s.01"
+        }
+      ],
+      "definition": "spotlessly clean and fresh"
+    },
+    {
+      "lemma": "unused",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.01",
+          "via_synset": "fresh.s.08"
+        }
+      ],
+      "definition": "not yet used or soiled"
+    },
+    {
+      "lemma": "virginal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.a.01",
+          "via_synset": "virginal.s.01"
+        }
+      ],
+      "definition": "untouched or undefiled; - L.P.Smith"
+    },
+    {
+      "lemma": "washed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.01",
+          "via_synset": "washed.s.01"
+        }
+      ],
+      "definition": "clean by virtue of having been washed in water"
+    },
+    {
+      "lemma": "water-washed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "clean.a.01",
+          "via_synset": "washed.s.01"
+        }
+      ],
+      "definition": "clean by virtue of having been washed in water"
+    }
+  ]
+}

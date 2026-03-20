@@ -1,0 +1,1196 @@
+{
+  "atom_id": "PRP.near",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 74,
+  "pos_counts": {
+    "adj": 36,
+    "adv": 8,
+    "v": 27,
+    "n": 3
+  },
+  "source_counts": {
+    "0_seed": 17,
+    "7_similar_to": 37,
+    "2_hypernym_d1": 5,
+    "6_derivational": 5,
+    "10_sibling": 22
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 16,
+      "words": [
+        "dear(adj)",
+        "good(adj)",
+        "near(adj)",
+        "approximate(adj)",
+        "about(adv)",
+        "almost(adv)",
+        "most(adv)",
+        "nearly(adv)",
+        "near(adv)",
+        "nigh(adv)",
+        "virtually(adv)",
+        "well-nigh(adv)",
+        "close(adj)",
+        "conclude(v)",
+        "close(v)",
+        "nearby(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 5,
+      "words": [
+        "end(v)",
+        "stop(v)",
+        "finish(v)",
+        "terminate(v)",
+        "cease(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 3,
+      "words": [
+        "close(n)",
+        "closing(n)",
+        "closeness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 30,
+      "words": [
+        "proximate(adj)",
+        "scalelike(adj)",
+        "appressed(adj)",
+        "adpressed(adj)",
+        "at hand(adj)",
+        "close at hand(adj)",
+        "imminent(adj)",
+        "impendent(adj)",
+        "impending(adj)",
+        "adjacent(adj)",
+        "next(adj)",
+        "side by side(adj)",
+        "close-hauled(adj)",
+        "contiguous(adj)",
+        "immediate(adj)",
+        "nestled(adj)",
+        "snuggled(adj)",
+        "encompassing(adj)",
+        "surrounding(adj)",
+        "circumferent(adj)",
+        "close together(adj)",
+        "close-set(adj)",
+        "close set(adj)",
+        "enveloping(adj)",
+        "juxtaposed(adj)",
+        "walk-to(adj)",
+        "walking(adj)",
+        "ambient(adj)",
+        "hand-to-hand(adj)",
+        "nigh(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 20,
+      "words": [
+        "break(v)",
+        "pass away(v)",
+        "run out(v)",
+        "vanish(v)",
+        "disappear(v)",
+        "go away(v)",
+        "discontinue(v)",
+        "adjourn(v)",
+        "recess(v)",
+        "break up(v)",
+        "turn out(v)",
+        "come out(v)",
+        "culminate(v)",
+        "climax(v)",
+        "run low(v)",
+        "run short(v)",
+        "go(v)",
+        "cut out(v)",
+        "go out(v)",
+        "lapse(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "about",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "about.r.07",
+          "via_synset": "about.r.07"
+        }
+      ],
+      "definition": "(of actions or states) slightly short of or not quite accomplished; all but"
+    },
+    {
+      "lemma": "adjacent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "adjacent.s.01"
+        }
+      ],
+      "definition": "nearest in space or position; immediately adjoining without intervening space"
+    },
+    {
+      "lemma": "adjourn",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "adjourn.v.01"
+        }
+      ],
+      "definition": "close at the end of a session"
+    },
+    {
+      "lemma": "adpressed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "appressed.s.01"
+        }
+      ],
+      "definition": "pressed close to or lying flat against something; ; -L.V.Pirsson"
+    },
+    {
+      "lemma": "almost",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "about.r.07",
+          "via_synset": "about.r.07"
+        }
+      ],
+      "definition": "(of actions or states) slightly short of or not quite accomplished; all but"
+    },
+    {
+      "lemma": "ambient",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "ambient.s.01"
+        }
+      ],
+      "definition": "completely enveloping"
+    },
+    {
+      "lemma": "appressed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "appressed.s.01"
+        }
+      ],
+      "definition": "pressed close to or lying flat against something; ; -L.V.Pirsson"
+    },
+    {
+      "lemma": "approximate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "approximate.s.02",
+          "via_synset": "approximate.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "approximate.s.03"
+        }
+      ],
+      "definition": "very close in resemblance"
+    },
+    {
+      "lemma": "at hand",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "at_hand.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "at_hand.s.01"
+        }
+      ],
+      "definition": "close in time; about to occur"
+    },
+    {
+      "lemma": "break",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "break.v.23"
+        }
+      ],
+      "definition": "come to an end"
+    },
+    {
+      "lemma": "break up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "adjourn.v.01"
+        }
+      ],
+      "definition": "close at the end of a session"
+    },
+    {
+      "lemma": "cease",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "conclude.v.04",
+          "via_synset": "end.v.01"
+        }
+      ],
+      "definition": "have an end, in a temporal, spatial, or quantitative sense; either spatial or metaphorical"
+    },
+    {
+      "lemma": "circumferent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "encompassing.s.02"
+        }
+      ],
+      "definition": "closely encircling"
+    },
+    {
+      "lemma": "climax",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "culminate.v.01"
+        }
+      ],
+      "definition": "end, especially to reach a final or climactic stage"
+    },
+    {
+      "lemma": "close",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "close.a.01",
+          "via_synset": "close.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dear.s.02",
+          "via_synset": "close.a.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "approximate.s.02",
+          "via_synset": "close.a.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "nearby.s.01",
+          "via_synset": "near.a.01"
+        }
+      ],
+      "definition": "at or within a short distance in space or time or having elements near each other"
+    },
+    {
+      "lemma": "close",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "conclude.v.04",
+          "via_synset": "stopping_point.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "conclude.v.04",
+          "via_synset": "finale.n.03"
+        }
+      ],
+      "definition": "the temporal end; the concluding time"
+    },
+    {
+      "lemma": "close",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "conclude.v.04",
+          "via_synset": "conclude.v.04"
+        }
+      ],
+      "definition": "come to a close"
+    },
+    {
+      "lemma": "close at hand",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "at_hand.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "at_hand.s.01"
+        }
+      ],
+      "definition": "close in time; about to occur"
+    },
+    {
+      "lemma": "close set",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "close-set.s.01"
+        }
+      ],
+      "definition": "set close together"
+    },
+    {
+      "lemma": "close together",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "approximate.s.03"
+        }
+      ],
+      "definition": "located close together"
+    },
+    {
+      "lemma": "close-hauled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "close-hauled.s.01"
+        }
+      ],
+      "definition": "having the sails trimmed for sailing as close to the wind as possible"
+    },
+    {
+      "lemma": "close-set",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "close-set.s.01"
+        }
+      ],
+      "definition": "set close together"
+    },
+    {
+      "lemma": "closeness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "close.a.01",
+          "via_synset": "nearness.n.01"
+        }
+      ],
+      "definition": "the spatial property resulting from a relatively small distance"
+    },
+    {
+      "lemma": "closing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "conclude.v.04",
+          "via_synset": "conclusion.n.08"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "conclude.v.04",
+          "via_synset": "completion.n.02"
+        }
+      ],
+      "definition": "the last section of a communication"
+    },
+    {
+      "lemma": "come out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "turn_out.v.04"
+        }
+      ],
+      "definition": "result or end"
+    },
+    {
+      "lemma": "conclude",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "conclude.v.04",
+          "via_synset": "conclude.v.04"
+        }
+      ],
+      "definition": "come to a close"
+    },
+    {
+      "lemma": "contiguous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "contiguous.s.01"
+        }
+      ],
+      "definition": "very close or connected in space or time"
+    },
+    {
+      "lemma": "culminate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "culminate.v.01"
+        }
+      ],
+      "definition": "end, especially to reach a final or climactic stage"
+    },
+    {
+      "lemma": "cut out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "cut_out.v.06"
+        }
+      ],
+      "definition": "cease operating"
+    },
+    {
+      "lemma": "dear",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dear.s.02",
+          "via_synset": "dear.s.02"
+        }
+      ],
+      "definition": "with or in a close or intimate relationship"
+    },
+    {
+      "lemma": "disappear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "vanish.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "vanish.v.04"
+        }
+      ],
+      "definition": "become invisible or unnoticeable"
+    },
+    {
+      "lemma": "discontinue",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "discontinue.v.02"
+        }
+      ],
+      "definition": "come to or be at an end"
+    },
+    {
+      "lemma": "encompassing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "encompassing.s.02"
+        }
+      ],
+      "definition": "closely encircling"
+    },
+    {
+      "lemma": "end",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "conclude.v.04",
+          "via_synset": "end.v.01"
+        }
+      ],
+      "definition": "have an end, in a temporal, spatial, or quantitative sense; either spatial or metaphorical"
+    },
+    {
+      "lemma": "enveloping",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "enveloping.s.01"
+        }
+      ],
+      "definition": "surrounding and closing in on or hemming in"
+    },
+    {
+      "lemma": "finish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "conclude.v.04",
+          "via_synset": "end.v.01"
+        }
+      ],
+      "definition": "have an end, in a temporal, spatial, or quantitative sense; either spatial or metaphorical"
+    },
+    {
+      "lemma": "go",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "run_low.v.01"
+        }
+      ],
+      "definition": "to be spent or finished"
+    },
+    {
+      "lemma": "go away",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "vanish.v.02"
+        }
+      ],
+      "definition": "become invisible or unnoticeable"
+    },
+    {
+      "lemma": "go out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "go_out.v.04"
+        }
+      ],
+      "definition": "become extinguished"
+    },
+    {
+      "lemma": "good",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dear.s.02",
+          "via_synset": "dear.s.02"
+        }
+      ],
+      "definition": "with or in a close or intimate relationship"
+    },
+    {
+      "lemma": "hand-to-hand",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "hand-to-hand.s.01"
+        }
+      ],
+      "definition": "being at close quarters"
+    },
+    {
+      "lemma": "immediate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "contiguous.s.01"
+        }
+      ],
+      "definition": "very close or connected in space or time"
+    },
+    {
+      "lemma": "imminent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "at_hand.s.02"
+        }
+      ],
+      "definition": "close in time; about to occur"
+    },
+    {
+      "lemma": "impendent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "at_hand.s.02"
+        }
+      ],
+      "definition": "close in time; about to occur"
+    },
+    {
+      "lemma": "impending",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "at_hand.s.02"
+        }
+      ],
+      "definition": "close in time; about to occur"
+    },
+    {
+      "lemma": "juxtaposed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "juxtaposed.s.01"
+        }
+      ],
+      "definition": "placed side by side often for comparison"
+    },
+    {
+      "lemma": "lapse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "lapse.v.02"
+        }
+      ],
+      "definition": "end, at least for a long time"
+    },
+    {
+      "lemma": "most",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "about.r.07",
+          "via_synset": "about.r.07"
+        }
+      ],
+      "definition": "(of actions or states) slightly short of or not quite accomplished; all but"
+    },
+    {
+      "lemma": "near",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dear.s.02",
+          "via_synset": "dear.s.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "approximate.s.02",
+          "via_synset": "approximate.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "nearby.s.01",
+          "via_synset": "near.a.01"
+        }
+      ],
+      "definition": "with or in a close or intimate relationship"
+    },
+    {
+      "lemma": "near",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "about.r.07",
+          "via_synset": "about.r.07"
+        }
+      ],
+      "definition": "(of actions or states) slightly short of or not quite accomplished; all but"
+    },
+    {
+      "lemma": "nearby",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "nearby.s.01",
+          "via_synset": "nearby.s.01"
+        }
+      ],
+      "definition": "close at hand"
+    },
+    {
+      "lemma": "nearly",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "about.r.07",
+          "via_synset": "about.r.07"
+        }
+      ],
+      "definition": "(of actions or states) slightly short of or not quite accomplished; all but"
+    },
+    {
+      "lemma": "nestled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "nestled.s.01"
+        }
+      ],
+      "definition": "drawn or pressed close to someone or something for or as if for affection or protection"
+    },
+    {
+      "lemma": "next",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "adjacent.s.01"
+        }
+      ],
+      "definition": "nearest in space or position; immediately adjoining without intervening space"
+    },
+    {
+      "lemma": "nigh",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "nearby.s.01",
+          "via_synset": "near.a.01"
+        }
+      ],
+      "definition": "not far distant in time or space or degree or circumstances"
+    },
+    {
+      "lemma": "nigh",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "about.r.07",
+          "via_synset": "about.r.07"
+        }
+      ],
+      "definition": "(of actions or states) slightly short of or not quite accomplished; all but"
+    },
+    {
+      "lemma": "pass away",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "pass_away.v.02"
+        }
+      ],
+      "definition": "go out of existence"
+    },
+    {
+      "lemma": "proximate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "proximate.s.01"
+        }
+      ],
+      "definition": "very close in space or time"
+    },
+    {
+      "lemma": "recess",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "adjourn.v.01"
+        }
+      ],
+      "definition": "close at the end of a session"
+    },
+    {
+      "lemma": "run low",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "run_low.v.01"
+        }
+      ],
+      "definition": "to be spent or finished"
+    },
+    {
+      "lemma": "run out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "run_out.v.01"
+        }
+      ],
+      "definition": "become used up; be exhausted"
+    },
+    {
+      "lemma": "run short",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "run_low.v.01"
+        }
+      ],
+      "definition": "to be spent or finished"
+    },
+    {
+      "lemma": "scalelike",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "scalelike.s.01"
+        }
+      ],
+      "definition": "reduced to a small appressed thing that resembles a scale"
+    },
+    {
+      "lemma": "side by side",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "adjacent.s.01"
+        }
+      ],
+      "definition": "nearest in space or position; immediately adjoining without intervening space"
+    },
+    {
+      "lemma": "snuggled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "nestled.s.01"
+        }
+      ],
+      "definition": "drawn or pressed close to someone or something for or as if for affection or protection"
+    },
+    {
+      "lemma": "stop",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "conclude.v.04",
+          "via_synset": "end.v.01"
+        }
+      ],
+      "definition": "have an end, in a temporal, spatial, or quantitative sense; either spatial or metaphorical"
+    },
+    {
+      "lemma": "surrounding",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "encompassing.s.02"
+        }
+      ],
+      "definition": "closely encircling"
+    },
+    {
+      "lemma": "terminate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "conclude.v.04",
+          "via_synset": "end.v.01"
+        }
+      ],
+      "definition": "have an end, in a temporal, spatial, or quantitative sense; either spatial or metaphorical"
+    },
+    {
+      "lemma": "turn out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "turn_out.v.04"
+        }
+      ],
+      "definition": "result or end"
+    },
+    {
+      "lemma": "vanish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "vanish.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "end.v.01",
+          "via_synset": "vanish.v.04"
+        }
+      ],
+      "definition": "become invisible or unnoticeable"
+    },
+    {
+      "lemma": "virtually",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "about.r.07",
+          "via_synset": "about.r.07"
+        }
+      ],
+      "definition": "(of actions or states) slightly short of or not quite accomplished; all but"
+    },
+    {
+      "lemma": "walk-to",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "walk-to.s.01"
+        }
+      ],
+      "definition": "close enough to be walked to"
+    },
+    {
+      "lemma": "walking",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "close.a.01",
+          "via_synset": "walk-to.s.01"
+        }
+      ],
+      "definition": "close enough to be walked to"
+    },
+    {
+      "lemma": "well-nigh",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "about.r.07",
+          "via_synset": "about.r.07"
+        }
+      ],
+      "definition": "(of actions or states) slightly short of or not quite accomplished; all but"
+    }
+  ]
+}

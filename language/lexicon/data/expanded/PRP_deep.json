@@ -1,0 +1,1158 @@
+{
+  "atom_id": "PRP.deep",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 69,
+  "pos_counts": {
+    "adj": 47,
+    "n": 22
+  },
+  "source_counts": {
+    "0_seed": 11,
+    "6_derivational": 10,
+    "7_similar_to": 43,
+    "8_also_see": 5,
+    "2_hypernym_d1": 3,
+    "9_antonym": 1,
+    "10_sibling": 13
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 9,
+      "words": [
+        "deep(adj)",
+        "deep(n)",
+        "trench(n)",
+        "oceanic abyss(n)",
+        "profound(adj)",
+        "unfathomed(adj)",
+        "unplumbed(adj)",
+        "unsounded(adj)",
+        "intense(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 3,
+      "words": [
+        "middle(n)",
+        "natural depression(n)",
+        "depression(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 3,
+      "words": [
+        "intensity(n)",
+        "profoundness(n)",
+        "profundity(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 37,
+      "words": [
+        "violent(adj)",
+        "wild(adj)",
+        "main(adj)",
+        "extreme(adj)",
+        "utmost(adj)",
+        "uttermost(adj)",
+        "terrific(adj)",
+        "strong(adj)",
+        "intensified(adj)",
+        "raging(adj)",
+        "unabated(adj)",
+        "concentrated(adj)",
+        "aggravated(adj)",
+        "blood-and-guts(adj)",
+        "severe(adj)",
+        "terrible(adj)",
+        "wicked(adj)",
+        "thick(adj)",
+        "intensive(adj)",
+        "fierce(adj)",
+        "tearing(adj)",
+        "vehement(adj)",
+        "trigger-happy(adj)",
+        "exquisite(adj)",
+        "keen(adj)",
+        "consuming(adj)",
+        "overwhelming(adj)",
+        "smart(adj)",
+        "cold(adj)",
+        "brutal(adj)",
+        "unrelenting(adj)",
+        "bad(adj)",
+        "big(adj)",
+        "screaming(adj)",
+        "thoughtful(adj)",
+        "wide(adj)",
+        "broad(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 3,
+      "words": [
+        "immoderate(adj)",
+        "intemperate(adj)",
+        "scholarly(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "mild(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 13,
+      "words": [
+        "trough(n)",
+        "hole(n)",
+        "hollow(n)",
+        "valley(n)",
+        "vale(n)",
+        "basin(n)",
+        "bed(n)",
+        "bottom(n)",
+        "crater(n)",
+        "sinkhole(n)",
+        "sink(n)",
+        "swallow hole(n)",
+        "lowland(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "aggravated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "aggravated.s.01"
+        }
+      ],
+      "definition": "made more severe or intense especially in law"
+    },
+    {
+      "lemma": "bad",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "bad.s.01"
+        }
+      ],
+      "definition": "very intense"
+    },
+    {
+      "lemma": "basin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_depression.n.01",
+          "via_synset": "basin.n.03"
+        }
+      ],
+      "definition": "a natural depression in the surface of the land often with a lake at the bottom of it"
+    },
+    {
+      "lemma": "bed",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_depression.n.01",
+          "via_synset": "bed.n.03"
+        }
+      ],
+      "definition": "a depression forming the ground under a body of water"
+    },
+    {
+      "lemma": "big",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "bad.s.01"
+        }
+      ],
+      "definition": "very intense"
+    },
+    {
+      "lemma": "blood-and-guts",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "blood-and-guts.s.01"
+        }
+      ],
+      "definition": "marked by great zeal or violence"
+    },
+    {
+      "lemma": "bottom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_depression.n.01",
+          "via_synset": "bed.n.03"
+        }
+      ],
+      "definition": "a depression forming the ground under a body of water"
+    },
+    {
+      "lemma": "broad",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "deep.s.07",
+          "via_synset": "wide.a.01"
+        }
+      ],
+      "definition": "having great (or a certain) extent from one side to the other"
+    },
+    {
+      "lemma": "brutal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "brutal.s.02"
+        }
+      ],
+      "definition": "harsh"
+    },
+    {
+      "lemma": "cold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "cold.s.05"
+        }
+      ],
+      "definition": "so intense as to be almost uncontrollable"
+    },
+    {
+      "lemma": "concentrated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "concentrated.s.02"
+        }
+      ],
+      "definition": "intensely focused"
+    },
+    {
+      "lemma": "consuming",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "consuming.s.01"
+        }
+      ],
+      "definition": "very intense"
+    },
+    {
+      "lemma": "crater",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_depression.n.01",
+          "via_synset": "crater.n.03"
+        }
+      ],
+      "definition": "a bowl-shaped depression formed by the impact of a meteorite or bomb"
+    },
+    {
+      "lemma": "deep",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "deep.s.07",
+          "via_synset": "deep.s.07"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "deep.n.01",
+          "via_synset": "thick.s.05"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "thick.s.05"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "deep.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "profound.a.01",
+          "via_synset": "deep.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "profound.s.05",
+          "via_synset": "deep.a.03"
+        }
+      ],
+      "definition": "extending relatively far inward"
+    },
+    {
+      "lemma": "deep",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "deep.n.01",
+          "via_synset": "deep.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "trench.n.02",
+          "via_synset": "trench.n.02"
+        }
+      ],
+      "definition": "the central and most intense or profound part"
+    },
+    {
+      "lemma": "depression",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "trench.n.02",
+          "via_synset": "natural_depression.n.01"
+        }
+      ],
+      "definition": "a sunken or depressed geological formation"
+    },
+    {
+      "lemma": "exquisite",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "exquisite.s.01"
+        }
+      ],
+      "definition": "intense or sharp"
+    },
+    {
+      "lemma": "extreme",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "extreme.s.01"
+        }
+      ],
+      "definition": "of the greatest possible degree or extent or intensity"
+    },
+    {
+      "lemma": "fierce",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "fierce.s.02"
+        }
+      ],
+      "definition": "marked by extreme intensity of emotions or convictions; inclined to react violently; fervid"
+    },
+    {
+      "lemma": "hole",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_depression.n.01",
+          "via_synset": "hole.n.05"
+        }
+      ],
+      "definition": "a depression hollowed out of solid matter"
+    },
+    {
+      "lemma": "hollow",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_depression.n.01",
+          "via_synset": "hole.n.05"
+        }
+      ],
+      "definition": "a depression hollowed out of solid matter"
+    },
+    {
+      "lemma": "immoderate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "intense.a.01",
+          "via_synset": "immoderate.a.01"
+        }
+      ],
+      "definition": "beyond reasonable limits"
+    },
+    {
+      "lemma": "intemperate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "intense.a.01",
+          "via_synset": "intemperate.a.02"
+        }
+      ],
+      "definition": "excessive in behavior"
+    },
+    {
+      "lemma": "intense",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "intense.a.01",
+          "via_synset": "intense.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "profound.a.01",
+          "via_synset": "intense.a.01"
+        }
+      ],
+      "definition": "possessing or displaying a distinctive feature to a heightened degree"
+    },
+    {
+      "lemma": "intensified",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "intensified.s.01"
+        }
+      ],
+      "definition": "made more intense"
+    },
+    {
+      "lemma": "intensity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "intense.a.01",
+          "via_synset": "intensity.n.02"
+        }
+      ],
+      "definition": "high level or degree; the property of being intense"
+    },
+    {
+      "lemma": "intensive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "intensive.s.01"
+        }
+      ],
+      "definition": "characterized by a high degree or intensity; often used as a combining form"
+    },
+    {
+      "lemma": "keen",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "exquisite.s.01"
+        }
+      ],
+      "definition": "intense or sharp"
+    },
+    {
+      "lemma": "lowland",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_depression.n.01",
+          "via_synset": "lowland.n.01"
+        }
+      ],
+      "definition": "low level country"
+    },
+    {
+      "lemma": "main",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "main.s.02"
+        }
+      ],
+      "definition": "of force; of the greatest possible intensity"
+    },
+    {
+      "lemma": "middle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "deep.n.01",
+          "via_synset": "middle.n.04"
+        }
+      ],
+      "definition": "time between the beginning and the end of a temporal period"
+    },
+    {
+      "lemma": "mild",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "intense.a.01",
+          "via_synset": "mild.a.01"
+        }
+      ],
+      "definition": "moderate in type or degree or effect or force; far from extreme"
+    },
+    {
+      "lemma": "natural depression",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "trench.n.02",
+          "via_synset": "natural_depression.n.01"
+        }
+      ],
+      "definition": "a sunken or depressed geological formation"
+    },
+    {
+      "lemma": "oceanic abyss",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "trench.n.02",
+          "via_synset": "trench.n.02"
+        }
+      ],
+      "definition": "a long steep-sided depression in the ocean floor"
+    },
+    {
+      "lemma": "overwhelming",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "consuming.s.01"
+        }
+      ],
+      "definition": "very intense"
+    },
+    {
+      "lemma": "profound",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "profound.s.05",
+          "via_synset": "profound.s.05"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "profound.a.01",
+          "via_synset": "profound.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "profound.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "intense.a.01",
+          "via_synset": "profound.a.01"
+        }
+      ],
+      "definition": "situated at or extending to great depth; too deep to have been sounded or plumbed; ; -Thomas Gray"
+    },
+    {
+      "lemma": "profoundness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "profound.a.01",
+          "via_synset": "profoundness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "profound.a.01",
+          "via_synset": "astuteness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "profound.a.01",
+          "via_synset": "profundity.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "profound.s.05",
+          "via_synset": "deepness.n.02"
+        }
+      ],
+      "definition": "extremeness of degree"
+    },
+    {
+      "lemma": "profundity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "profound.a.01",
+          "via_synset": "reconditeness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "profound.a.01",
+          "via_synset": "astuteness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "profound.a.01",
+          "via_synset": "profundity.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "profound.s.05",
+          "via_synset": "deepness.n.02"
+        }
+      ],
+      "definition": "wisdom that is recondite and abstruse and profound"
+    },
+    {
+      "lemma": "raging",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "raging.s.02"
+        }
+      ],
+      "definition": "very severe"
+    },
+    {
+      "lemma": "scholarly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "profound.a.01",
+          "via_synset": "scholarly.a.01"
+        }
+      ],
+      "definition": "characteristic of scholars or scholarship"
+    },
+    {
+      "lemma": "screaming",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "screaming.s.01"
+        }
+      ],
+      "definition": "so extremely intense as to evoke screams"
+    },
+    {
+      "lemma": "severe",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "severe.s.01"
+        }
+      ],
+      "definition": "intensely or extremely bad or unpleasant in degree or quality"
+    },
+    {
+      "lemma": "sink",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_depression.n.01",
+          "via_synset": "sinkhole.n.01"
+        }
+      ],
+      "definition": "a depression in the ground communicating with a subterranean passage (especially in limestone) and formed by solution or by collapse of a cavern roof"
+    },
+    {
+      "lemma": "sinkhole",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_depression.n.01",
+          "via_synset": "sinkhole.n.01"
+        }
+      ],
+      "definition": "a depression in the ground communicating with a subterranean passage (especially in limestone) and formed by solution or by collapse of a cavern roof"
+    },
+    {
+      "lemma": "smart",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "smart.s.04"
+        }
+      ],
+      "definition": "painfully severe"
+    },
+    {
+      "lemma": "strong",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "strong.s.01"
+        }
+      ],
+      "definition": "not faint or feeble"
+    },
+    {
+      "lemma": "swallow hole",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_depression.n.01",
+          "via_synset": "sinkhole.n.01"
+        }
+      ],
+      "definition": "a depression in the ground communicating with a subterranean passage (especially in limestone) and formed by solution or by collapse of a cavern roof"
+    },
+    {
+      "lemma": "tearing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "fierce.s.02"
+        }
+      ],
+      "definition": "marked by extreme intensity of emotions or convictions; inclined to react violently; fervid"
+    },
+    {
+      "lemma": "terrible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "severe.s.01"
+        }
+      ],
+      "definition": "intensely or extremely bad or unpleasant in degree or quality"
+    },
+    {
+      "lemma": "terrific",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "terrific.s.01"
+        }
+      ],
+      "definition": "very great or intense"
+    },
+    {
+      "lemma": "thick",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "thick.s.05"
+        }
+      ],
+      "definition": "(of darkness) very intense"
+    },
+    {
+      "lemma": "thoughtful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "profound.a.01",
+          "via_synset": "thoughtful.s.01"
+        }
+      ],
+      "definition": "having intellectual depth"
+    },
+    {
+      "lemma": "trench",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "trench.n.02",
+          "via_synset": "trench.n.02"
+        }
+      ],
+      "definition": "a long steep-sided depression in the ocean floor"
+    },
+    {
+      "lemma": "trigger-happy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "fierce.s.02"
+        }
+      ],
+      "definition": "marked by extreme intensity of emotions or convictions; inclined to react violently; fervid"
+    },
+    {
+      "lemma": "trough",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_depression.n.01",
+          "via_synset": "trough.n.01"
+        }
+      ],
+      "definition": "a narrow depression (as in the earth or between ocean waves or in the ocean bed)"
+    },
+    {
+      "lemma": "unabated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "unabated.s.01"
+        }
+      ],
+      "definition": "continuing at full strength or intensity"
+    },
+    {
+      "lemma": "unfathomed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "profound.s.05",
+          "via_synset": "profound.s.05"
+        }
+      ],
+      "definition": "situated at or extending to great depth; too deep to have been sounded or plumbed; ; -Thomas Gray"
+    },
+    {
+      "lemma": "unplumbed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "profound.s.05",
+          "via_synset": "profound.s.05"
+        }
+      ],
+      "definition": "situated at or extending to great depth; too deep to have been sounded or plumbed; ; -Thomas Gray"
+    },
+    {
+      "lemma": "unrelenting",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "brutal.s.02"
+        }
+      ],
+      "definition": "harsh"
+    },
+    {
+      "lemma": "unsounded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "profound.s.05",
+          "via_synset": "profound.s.05"
+        }
+      ],
+      "definition": "situated at or extending to great depth; too deep to have been sounded or plumbed; ; -Thomas Gray"
+    },
+    {
+      "lemma": "utmost",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "extreme.s.01"
+        }
+      ],
+      "definition": "of the greatest possible degree or extent or intensity"
+    },
+    {
+      "lemma": "uttermost",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "extreme.s.01"
+        }
+      ],
+      "definition": "of the greatest possible degree or extent or intensity"
+    },
+    {
+      "lemma": "vale",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_depression.n.01",
+          "via_synset": "valley.n.01"
+        }
+      ],
+      "definition": "a long depression in the surface of the land that usually contains a river"
+    },
+    {
+      "lemma": "valley",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "natural_depression.n.01",
+          "via_synset": "valley.n.01"
+        }
+      ],
+      "definition": "a long depression in the surface of the land that usually contains a river"
+    },
+    {
+      "lemma": "vehement",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "fierce.s.02"
+        }
+      ],
+      "definition": "marked by extreme intensity of emotions or convictions; inclined to react violently; fervid"
+    },
+    {
+      "lemma": "violent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "violent.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "fierce.s.02"
+        }
+      ],
+      "definition": "(of colors or sounds) intensely vivid or loud"
+    },
+    {
+      "lemma": "wicked",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "severe.s.01"
+        }
+      ],
+      "definition": "intensely or extremely bad or unpleasant in degree or quality"
+    },
+    {
+      "lemma": "wide",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "deep.s.07",
+          "via_synset": "wide.a.01"
+        }
+      ],
+      "definition": "having great (or a certain) extent from one side to the other"
+    },
+    {
+      "lemma": "wild",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "intense.a.01",
+          "via_synset": "violent.s.02"
+        }
+      ],
+      "definition": "(of colors or sounds) intensely vivid or loud"
+    }
+  ]
+}

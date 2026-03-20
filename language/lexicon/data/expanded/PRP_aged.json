@@ -1,0 +1,1230 @@
+{
+  "atom_id": "PRP.aged",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 76,
+  "pos_counts": {
+    "adj": 68,
+    "n": 8
+  },
+  "source_counts": {
+    "0_seed": 10,
+    "6_derivational": 4,
+    "7_similar_to": 62,
+    "2_hypernym_d1": 3,
+    "8_also_see": 9,
+    "10_sibling": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 7,
+      "words": [
+        "aged(adj)",
+        "of age(adj)",
+        "ripened(adj)",
+        "cured(adj)",
+        "old(adj)",
+        "aged(n)",
+        "elderly(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 3,
+      "words": [
+        "age group(n)",
+        "age bracket(n)",
+        "cohort(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 2,
+      "words": [
+        "agedness(n)",
+        "oldness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 56,
+      "words": [
+        "ripe(adj)",
+        "mature(adj)",
+        "immemorial(adj)",
+        "sunset(adj)",
+        "longtime(adj)",
+        "age-old(adj)",
+        "antique(adj)",
+        "hoary(adj)",
+        "rusty(adj)",
+        "secondhand(adj)",
+        "used(adj)",
+        "hand-me-down(adj)",
+        "hand-down(adj)",
+        "yellow(adj)",
+        "yellowed(adj)",
+        "auld(adj)",
+        "long-ago(adj)",
+        "antediluvian(adj)",
+        "antiquated(adj)",
+        "archaic(adj)",
+        "patched(adj)",
+        "preserved(adj)",
+        "centenarian(adj)",
+        "grey(adj)",
+        "gray(adj)",
+        "grey-haired(adj)",
+        "gray-haired(adj)",
+        "grey-headed(adj)",
+        "gray-headed(adj)",
+        "grizzly(adj)",
+        "hoar(adj)",
+        "white-haired(adj)",
+        "anile(adj)",
+        "octogenarian(adj)",
+        "middle-aged(adj)",
+        "sexagenarian(adj)",
+        "venerable(adj)",
+        "emeritus(adj)",
+        "aging(adj)",
+        "ageing(adj)",
+        "senescent(adj)",
+        "nonagenarian(adj)",
+        "overage(adj)",
+        "overaged(adj)",
+        "superannuated(adj)",
+        "over-the-hill(adj)",
+        "ancient(adj)",
+        "darkened(adj)",
+        "doddering(adj)",
+        "doddery(adj)",
+        "gaga(adj)",
+        "senile(adj)",
+        "oldish(adj)",
+        "elderly(adj)",
+        "older(adj)",
+        "senior(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 7,
+      "words": [
+        "worn(adj)",
+        "nonmodern(adj)",
+        "stale(adj)",
+        "noncurrent(adj)",
+        "past(adj)",
+        "experienced(adj)",
+        "experient(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 1,
+      "words": [
+        "youth(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "age bracket",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "aged.n.01",
+          "via_synset": "age_group.n.01"
+        }
+      ],
+      "definition": "a group of people having approximately the same age"
+    },
+    {
+      "lemma": "age group",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "aged.n.01",
+          "via_synset": "age_group.n.01"
+        }
+      ],
+      "definition": "a group of people having approximately the same age"
+    },
+    {
+      "lemma": "age-old",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.02",
+          "via_synset": "age-old.s.01"
+        }
+      ],
+      "definition": "belonging to or lasting from times long ago"
+    },
+    {
+      "lemma": "aged",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aged.s.03",
+          "via_synset": "aged.s.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aged.s.04",
+          "via_synset": "aged.s.04"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aged.s.05",
+          "via_synset": "aged.s.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aged.n.01",
+          "via_synset": "aged.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "aged.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "aged.s.01"
+        }
+      ],
+      "definition": "having attained a specific age; (`aged' is pronounced as one syllable)"
+    },
+    {
+      "lemma": "aged",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aged.n.01",
+          "via_synset": "aged.n.01"
+        }
+      ],
+      "definition": "people who are old collectively"
+    },
+    {
+      "lemma": "agedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aged.s.04",
+          "via_synset": "agedness.n.01"
+        }
+      ],
+      "definition": "the property characteristic of old age"
+    },
+    {
+      "lemma": "ageing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "aging.s.01"
+        }
+      ],
+      "definition": "growing old"
+    },
+    {
+      "lemma": "aging",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "aging.s.01"
+        }
+      ],
+      "definition": "growing old"
+    },
+    {
+      "lemma": "ancient",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "ancient.s.02"
+        }
+      ],
+      "definition": "very old"
+    },
+    {
+      "lemma": "anile",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "anile.s.01"
+        }
+      ],
+      "definition": "of or like a feeble old woman"
+    },
+    {
+      "lemma": "antediluvian",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.02",
+          "via_synset": "antediluvian.s.01"
+        }
+      ],
+      "definition": "so extremely old as seeming to belong to an earlier period"
+    },
+    {
+      "lemma": "antiquated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.02",
+          "via_synset": "antediluvian.s.01"
+        }
+      ],
+      "definition": "so extremely old as seeming to belong to an earlier period"
+    },
+    {
+      "lemma": "antique",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.02",
+          "via_synset": "age-old.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.02",
+          "via_synset": "antique.s.01"
+        }
+      ],
+      "definition": "belonging to or lasting from times long ago"
+    },
+    {
+      "lemma": "archaic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.02",
+          "via_synset": "antediluvian.s.01"
+        }
+      ],
+      "definition": "so extremely old as seeming to belong to an earlier period"
+    },
+    {
+      "lemma": "auld",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.02",
+          "via_synset": "auld.s.01"
+        }
+      ],
+      "definition": "a Scottish word"
+    },
+    {
+      "lemma": "centenarian",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "centenarian.s.01"
+        }
+      ],
+      "definition": "being at least 100 years old"
+    },
+    {
+      "lemma": "cohort",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "aged.n.01",
+          "via_synset": "age_group.n.01"
+        }
+      ],
+      "definition": "a group of people having approximately the same age"
+    },
+    {
+      "lemma": "cured",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aged.s.05",
+          "via_synset": "aged.s.05"
+        }
+      ],
+      "definition": "(used of tobacco) aging as a preservative process (`aged' is pronounced as one syllable)"
+    },
+    {
+      "lemma": "darkened",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "darkened.s.01"
+        }
+      ],
+      "definition": "(of fabrics and paper) grown dark in color over time"
+    },
+    {
+      "lemma": "doddering",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "doddering.s.01"
+        }
+      ],
+      "definition": "mentally or physically infirm with age"
+    },
+    {
+      "lemma": "doddery",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "doddering.s.01"
+        }
+      ],
+      "definition": "mentally or physically infirm with age"
+    },
+    {
+      "lemma": "elderly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "aged.s.01"
+        }
+      ],
+      "definition": "advanced in years; (`aged' is pronounced as two syllables)"
+    },
+    {
+      "lemma": "elderly",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aged.n.01",
+          "via_synset": "aged.n.01"
+        }
+      ],
+      "definition": "people who are old collectively"
+    },
+    {
+      "lemma": "emeritus",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "emeritus.s.01"
+        }
+      ],
+      "definition": "honorably retired from assigned duties and retaining your title along with the additional title `emeritus' as in `professor emeritus'"
+    },
+    {
+      "lemma": "experienced",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "old.a.01",
+          "via_synset": "experienced.a.01"
+        }
+      ],
+      "definition": "having experience; having knowledge or skill from observation or participation"
+    },
+    {
+      "lemma": "experient",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "old.a.01",
+          "via_synset": "experienced.a.01"
+        }
+      ],
+      "definition": "having experience; having knowledge or skill from observation or participation"
+    },
+    {
+      "lemma": "gaga",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "doddering.s.01"
+        }
+      ],
+      "definition": "mentally or physically infirm with age"
+    },
+    {
+      "lemma": "gray",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "grey.s.02"
+        }
+      ],
+      "definition": "showing characteristics of age, especially having grey or white hair; -Coleridge"
+    },
+    {
+      "lemma": "gray-haired",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "grey.s.02"
+        }
+      ],
+      "definition": "showing characteristics of age, especially having grey or white hair; -Coleridge"
+    },
+    {
+      "lemma": "gray-headed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "grey.s.02"
+        }
+      ],
+      "definition": "showing characteristics of age, especially having grey or white hair; -Coleridge"
+    },
+    {
+      "lemma": "grey",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "grey.s.02"
+        }
+      ],
+      "definition": "showing characteristics of age, especially having grey or white hair; -Coleridge"
+    },
+    {
+      "lemma": "grey-haired",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "grey.s.02"
+        }
+      ],
+      "definition": "showing characteristics of age, especially having grey or white hair; -Coleridge"
+    },
+    {
+      "lemma": "grey-headed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "grey.s.02"
+        }
+      ],
+      "definition": "showing characteristics of age, especially having grey or white hair; -Coleridge"
+    },
+    {
+      "lemma": "grizzly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "grey.s.02"
+        }
+      ],
+      "definition": "showing characteristics of age, especially having grey or white hair; -Coleridge"
+    },
+    {
+      "lemma": "hand-down",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.02",
+          "via_synset": "hand-me-down.s.01"
+        }
+      ],
+      "definition": "passed on from one person to another"
+    },
+    {
+      "lemma": "hand-me-down",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.02",
+          "via_synset": "hand-me-down.s.01"
+        }
+      ],
+      "definition": "passed on from one person to another"
+    },
+    {
+      "lemma": "hoar",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "grey.s.02"
+        }
+      ],
+      "definition": "showing characteristics of age, especially having grey or white hair; -Coleridge"
+    },
+    {
+      "lemma": "hoary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.02",
+          "via_synset": "hoary.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "grey.s.02"
+        }
+      ],
+      "definition": "ancient"
+    },
+    {
+      "lemma": "immemorial",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.02",
+          "via_synset": "immemorial.s.01"
+        }
+      ],
+      "definition": "long past; beyond the limits of memory or tradition or recorded history"
+    },
+    {
+      "lemma": "long-ago",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.02",
+          "via_synset": "long-ago.s.01"
+        }
+      ],
+      "definition": "belonging to time long gone"
+    },
+    {
+      "lemma": "longtime",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.02",
+          "via_synset": "longtime.s.01"
+        }
+      ],
+      "definition": "of long duration"
+    },
+    {
+      "lemma": "mature",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "aged.s.04",
+          "via_synset": "ripe.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "old.a.01",
+          "via_synset": "mature.a.03"
+        }
+      ],
+      "definition": "fully developed or matured and ready to be eaten or used"
+    },
+    {
+      "lemma": "middle-aged",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "middle-aged.s.01"
+        }
+      ],
+      "definition": "being roughly between 45 and 65 years old"
+    },
+    {
+      "lemma": "nonagenarian",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "nonagenarian.s.01"
+        }
+      ],
+      "definition": "being from 90 to 99 years old"
+    },
+    {
+      "lemma": "noncurrent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "old.a.02",
+          "via_synset": "noncurrent.a.01"
+        }
+      ],
+      "definition": "not current or belonging to the present time"
+    },
+    {
+      "lemma": "nonmodern",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "old.a.02",
+          "via_synset": "nonmodern.a.01"
+        }
+      ],
+      "definition": "not modern; of or characteristic of an earlier time"
+    },
+    {
+      "lemma": "octogenarian",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "octogenarian.s.01"
+        }
+      ],
+      "definition": "being from 80 to 89 years old"
+    },
+    {
+      "lemma": "of age",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aged.s.03",
+          "via_synset": "aged.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "aged.s.03"
+        }
+      ],
+      "definition": "having attained a specific age; (`aged' is pronounced as one syllable)"
+    },
+    {
+      "lemma": "old",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "old.a.01",
+          "via_synset": "old.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "old.a.02",
+          "via_synset": "old.a.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "aged.s.03",
+          "via_synset": "old.a.01"
+        }
+      ],
+      "definition": "(used especially of persons) having lived for a relatively long time or attained a specific age"
+    },
+    {
+      "lemma": "older",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "aged.s.01"
+        }
+      ],
+      "definition": "advanced in years; (`aged' is pronounced as two syllables)"
+    },
+    {
+      "lemma": "oldish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "oldish.s.01"
+        }
+      ],
+      "definition": "somewhat elderly"
+    },
+    {
+      "lemma": "oldness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "old.a.02",
+          "via_synset": "oldness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "old.a.01",
+          "via_synset": "oldness.n.01"
+        }
+      ],
+      "definition": "the quality of being old; the opposite of newness"
+    },
+    {
+      "lemma": "over-the-hill",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "overage.s.01"
+        }
+      ],
+      "definition": "too old to be useful; - Anthony Trollope"
+    },
+    {
+      "lemma": "overage",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "overage.s.01"
+        }
+      ],
+      "definition": "too old to be useful; - Anthony Trollope"
+    },
+    {
+      "lemma": "overaged",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "overage.s.01"
+        }
+      ],
+      "definition": "too old to be useful; - Anthony Trollope"
+    },
+    {
+      "lemma": "past",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "old.a.02",
+          "via_synset": "past.a.01"
+        }
+      ],
+      "definition": "earlier than the present time; no longer current"
+    },
+    {
+      "lemma": "patched",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.02",
+          "via_synset": "patched.s.01"
+        }
+      ],
+      "definition": "mended usually clumsily by covering a hole with a patch"
+    },
+    {
+      "lemma": "preserved",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "aged.s.05",
+          "via_synset": "preserved.a.01"
+        }
+      ],
+      "definition": "prevented from decaying or spoiling and prepared for future use"
+    },
+    {
+      "lemma": "ripe",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "aged.s.04",
+          "via_synset": "ripe.a.01"
+        }
+      ],
+      "definition": "fully developed or matured and ready to be eaten or used"
+    },
+    {
+      "lemma": "ripened",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aged.s.04",
+          "via_synset": "aged.s.04"
+        }
+      ],
+      "definition": "of wines, fruit, cheeses; having reached a desired or final condition; (`aged' pronounced as one syllable)"
+    },
+    {
+      "lemma": "rusty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.02",
+          "via_synset": "hoary.s.02"
+        }
+      ],
+      "definition": "ancient"
+    },
+    {
+      "lemma": "secondhand",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.02",
+          "via_synset": "secondhand.s.02"
+        }
+      ],
+      "definition": "previously used or owned by another"
+    },
+    {
+      "lemma": "senescent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "aging.s.01"
+        }
+      ],
+      "definition": "growing old"
+    },
+    {
+      "lemma": "senile",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "doddering.s.01"
+        }
+      ],
+      "definition": "mentally or physically infirm with age"
+    },
+    {
+      "lemma": "senior",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "aged.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "old.a.01",
+          "via_synset": "senior.a.01"
+        }
+      ],
+      "definition": "advanced in years; (`aged' is pronounced as two syllables)"
+    },
+    {
+      "lemma": "sexagenarian",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "sexagenarian.s.01"
+        }
+      ],
+      "definition": "being from 60 to 69 years old"
+    },
+    {
+      "lemma": "stale",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "old.a.02",
+          "via_synset": "stale.a.01"
+        }
+      ],
+      "definition": "lacking freshness, palatability, or showing deterioration from age"
+    },
+    {
+      "lemma": "sunset",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.02",
+          "via_synset": "sunset.s.01"
+        }
+      ],
+      "definition": "of a declining industry or technology"
+    },
+    {
+      "lemma": "superannuated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "overage.s.01"
+        }
+      ],
+      "definition": "too old to be useful; - Anthony Trollope"
+    },
+    {
+      "lemma": "used",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.02",
+          "via_synset": "secondhand.s.02"
+        }
+      ],
+      "definition": "previously used or owned by another"
+    },
+    {
+      "lemma": "venerable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "venerable.s.01"
+        }
+      ],
+      "definition": "impressive by reason of age"
+    },
+    {
+      "lemma": "white-haired",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.01",
+          "via_synset": "grey.s.02"
+        }
+      ],
+      "definition": "showing characteristics of age, especially having grey or white hair; -Coleridge"
+    },
+    {
+      "lemma": "worn",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "old.a.02",
+          "via_synset": "worn.a.01"
+        }
+      ],
+      "definition": "affected by wear; damaged by long use"
+    },
+    {
+      "lemma": "yellow",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.02",
+          "via_synset": "yellow.s.03"
+        }
+      ],
+      "definition": "changed to a yellowish color by age"
+    },
+    {
+      "lemma": "yellowed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "old.a.02",
+          "via_synset": "yellow.s.03"
+        }
+      ],
+      "definition": "changed to a yellowish color by age"
+    },
+    {
+      "lemma": "youth",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "age_group.n.01",
+          "via_synset": "young.n.09"
+        }
+      ],
+      "definition": "young people collectively"
+    }
+  ]
+}

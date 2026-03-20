@@ -1,0 +1,1312 @@
+{
+  "atom_id": "PER.delicious",
+  "category": "PER",
+  "seed_count": 4,
+  "total_keys": 82,
+  "pos_counts": {
+    "adj": 59,
+    "n": 23
+  },
+  "source_counts": {
+    "0_seed": 11,
+    "7_similar_to": 54,
+    "8_also_see": 6,
+    "2_hypernym_d1": 2,
+    "3_hyponym_d1": 3,
+    "6_derivational": 3,
+    "9_antonym": 1,
+    "10_sibling": 14
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 10,
+      "words": [
+        "delectable(adj)",
+        "delicious(adj)",
+        "luscious(adj)",
+        "pleasant-tasting(adj)",
+        "scrumptious(adj)",
+        "toothsome(adj)",
+        "yummy(adj)",
+        "Delicious(n)",
+        "delightful(adj)",
+        "tasty(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 2,
+      "words": [
+        "eating apple(n)",
+        "dessert apple(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 3,
+      "words": [
+        "Golden Delicious(n)",
+        "Yellow Delicious(n)",
+        "Red Delicious(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 3,
+      "words": [
+        "taste(n)",
+        "tastiness(n)",
+        "toothsomeness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 45,
+      "words": [
+        "strong-flavored(adj)",
+        "bittersweet(adj)",
+        "semisweet(adj)",
+        "salty(adj)",
+        "gingery(adj)",
+        "nippy(adj)",
+        "pungent(adj)",
+        "fruity(adj)",
+        "acid-tasting(adj)",
+        "sour-tasting(adj)",
+        "grapey(adj)",
+        "grapy(adj)",
+        "smoky(adj)",
+        "hot(adj)",
+        "spicy(adj)",
+        "flavorful(adj)",
+        "flavourful(adj)",
+        "flavorous(adj)",
+        "flavourous(adj)",
+        "flavorsome(adj)",
+        "flavoursome(adj)",
+        "sapid(adj)",
+        "saporous(adj)",
+        "choice(adj)",
+        "bitterish(adj)",
+        "sharp-tasting(adj)",
+        "ambrosial(adj)",
+        "ambrosian(adj)",
+        "nectarous(adj)",
+        "full-bodied(adj)",
+        "racy(adj)",
+        "rich(adj)",
+        "robust(adj)",
+        "dainty(adj)",
+        "piquant(adj)",
+        "savory(adj)",
+        "savoury(adj)",
+        "zesty(adj)",
+        "peppery(adj)",
+        "mild-tasting(adj)",
+        "winy(adj)",
+        "winey(adj)",
+        "nutty(adj)",
+        "nutlike(adj)",
+        "pleasing(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 4,
+      "words": [
+        "appetizing(adj)",
+        "appetising(adj)",
+        "palatable(adj)",
+        "sweet(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "tasteless(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 14,
+      "words": [
+        "Cortland(n)",
+        "Pearmain(n)",
+        "Baldwin(n)",
+        "Prima(n)",
+        "Jonathan(n)",
+        "Stayman(n)",
+        "Stayman Winesap(n)",
+        "McIntosh(n)",
+        "Empire(n)",
+        "Granny Smith(n)",
+        "Grimes' golden(n)",
+        "Pippin(n)",
+        "Northern Spy(n)",
+        "Winesap(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "acid-tasting",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "acid-tasting.s.01"
+        }
+      ],
+      "definition": "having a sour acidic taste"
+    },
+    {
+      "lemma": "ambrosial",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "ambrosial.s.01"
+        }
+      ],
+      "definition": "extremely pleasing to the taste; sweet and fragrant"
+    },
+    {
+      "lemma": "ambrosian",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "ambrosial.s.01"
+        }
+      ],
+      "definition": "extremely pleasing to the taste; sweet and fragrant"
+    },
+    {
+      "lemma": "appetising",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "tasty.a.01",
+          "via_synset": "appetizing.a.01"
+        }
+      ],
+      "definition": "appealing to or stimulating the appetite especially in appearance or aroma"
+    },
+    {
+      "lemma": "appetizing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "tasty.a.01",
+          "via_synset": "appetizing.a.01"
+        }
+      ],
+      "definition": "appealing to or stimulating the appetite especially in appearance or aroma"
+    },
+    {
+      "lemma": "Baldwin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "eating_apple.n.01",
+          "via_synset": "baldwin.n.03"
+        }
+      ],
+      "definition": "an American eating apple with red or yellow and red skin"
+    },
+    {
+      "lemma": "bitterish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "bitterish.s.01"
+        }
+      ],
+      "definition": "somewhat bitter"
+    },
+    {
+      "lemma": "bittersweet",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "bittersweet.s.02"
+        }
+      ],
+      "definition": "having a taste that is a mixture of bitterness and sweetness"
+    },
+    {
+      "lemma": "choice",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "choice.s.02"
+        }
+      ],
+      "definition": "appealing to refined taste"
+    },
+    {
+      "lemma": "Cortland",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "eating_apple.n.01",
+          "via_synset": "cortland.n.01"
+        }
+      ],
+      "definition": "large apple with a red skin"
+    },
+    {
+      "lemma": "dainty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "dainty.s.03"
+        }
+      ],
+      "definition": "especially pleasing to the taste"
+    },
+    {
+      "lemma": "delectable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "delectable.s.01",
+          "via_synset": "delectable.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "delectable.s.01"
+        }
+      ],
+      "definition": "extremely pleasing to the sense of taste"
+    },
+    {
+      "lemma": "delicious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "delectable.s.01",
+          "via_synset": "delectable.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "delightful.s.01",
+          "via_synset": "delightful.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "delectable.s.01"
+        }
+      ],
+      "definition": "extremely pleasing to the sense of taste"
+    },
+    {
+      "lemma": "Delicious",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "delicious.n.01",
+          "via_synset": "delicious.n.01"
+        }
+      ],
+      "definition": "variety of sweet eating apples"
+    },
+    {
+      "lemma": "delightful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "delightful.s.01",
+          "via_synset": "delightful.s.01"
+        }
+      ],
+      "definition": "greatly pleasing or entertaining"
+    },
+    {
+      "lemma": "dessert apple",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "delicious.n.01",
+          "via_synset": "eating_apple.n.01"
+        }
+      ],
+      "definition": "an apple used primarily for eating raw without cooking"
+    },
+    {
+      "lemma": "eating apple",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "delicious.n.01",
+          "via_synset": "eating_apple.n.01"
+        }
+      ],
+      "definition": "an apple used primarily for eating raw without cooking"
+    },
+    {
+      "lemma": "Empire",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "eating_apple.n.01",
+          "via_synset": "empire.n.05"
+        }
+      ],
+      "definition": "an eating apple that somewhat resembles a McIntosh; used as both an eating and a cooking apple"
+    },
+    {
+      "lemma": "flavorful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "flavorful.s.01"
+        }
+      ],
+      "definition": "full of flavor"
+    },
+    {
+      "lemma": "flavorous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "flavorful.s.01"
+        }
+      ],
+      "definition": "full of flavor"
+    },
+    {
+      "lemma": "flavorsome",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "flavorful.s.01"
+        }
+      ],
+      "definition": "full of flavor"
+    },
+    {
+      "lemma": "flavourful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "flavorful.s.01"
+        }
+      ],
+      "definition": "full of flavor"
+    },
+    {
+      "lemma": "flavourous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "flavorful.s.01"
+        }
+      ],
+      "definition": "full of flavor"
+    },
+    {
+      "lemma": "flavoursome",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "flavorful.s.01"
+        }
+      ],
+      "definition": "full of flavor"
+    },
+    {
+      "lemma": "fruity",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "fruity.s.01"
+        }
+      ],
+      "definition": "tasting or smelling richly of or as of fruit"
+    },
+    {
+      "lemma": "full-bodied",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "full-bodied.s.01"
+        }
+      ],
+      "definition": "marked by richness and fullness of flavor"
+    },
+    {
+      "lemma": "gingery",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "gingery.s.01"
+        }
+      ],
+      "definition": "having a taste like that of ginger"
+    },
+    {
+      "lemma": "Golden Delicious",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "delicious.n.01",
+          "via_synset": "golden_delicious.n.01"
+        }
+      ],
+      "definition": "a sweet eating apple with yellow skin"
+    },
+    {
+      "lemma": "Granny Smith",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "eating_apple.n.01",
+          "via_synset": "granny_smith.n.01"
+        }
+      ],
+      "definition": "apple with a green skin and hard tart flesh"
+    },
+    {
+      "lemma": "grapey",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "grapey.s.01"
+        }
+      ],
+      "definition": "having a taste like that of grapes"
+    },
+    {
+      "lemma": "grapy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "grapey.s.01"
+        }
+      ],
+      "definition": "having a taste like that of grapes"
+    },
+    {
+      "lemma": "Grimes' golden",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "eating_apple.n.01",
+          "via_synset": "grimes'_golden.n.01"
+        }
+      ],
+      "definition": "yellow apple that ripens in late autumn; eaten raw"
+    },
+    {
+      "lemma": "hot",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "hot.s.07"
+        }
+      ],
+      "definition": "producing a burning sensation on the taste nerves"
+    },
+    {
+      "lemma": "Jonathan",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "eating_apple.n.01",
+          "via_synset": "jonathan.n.01"
+        }
+      ],
+      "definition": "red late-ripening apple; primarily eaten raw"
+    },
+    {
+      "lemma": "luscious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "delectable.s.01",
+          "via_synset": "delectable.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "delectable.s.01"
+        }
+      ],
+      "definition": "extremely pleasing to the sense of taste"
+    },
+    {
+      "lemma": "McIntosh",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "eating_apple.n.01",
+          "via_synset": "mcintosh.n.01"
+        }
+      ],
+      "definition": "early-ripening apple popular in the northeastern United States; primarily eaten raw but suitable for applesauce"
+    },
+    {
+      "lemma": "mild-tasting",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "mild-tasting.s.01"
+        }
+      ],
+      "definition": "having a mild taste"
+    },
+    {
+      "lemma": "nectarous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "ambrosial.s.01"
+        }
+      ],
+      "definition": "extremely pleasing to the taste; sweet and fragrant"
+    },
+    {
+      "lemma": "nippy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "nippy.s.01"
+        }
+      ],
+      "definition": "a sharp biting taste"
+    },
+    {
+      "lemma": "Northern Spy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "eating_apple.n.01",
+          "via_synset": "northern_spy.n.01"
+        }
+      ],
+      "definition": "large late-ripening apple with skin striped with yellow and red"
+    },
+    {
+      "lemma": "nutlike",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "nutty.s.01"
+        }
+      ],
+      "definition": "having the flavor of nuts"
+    },
+    {
+      "lemma": "nutty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "nutty.s.01"
+        }
+      ],
+      "definition": "having the flavor of nuts"
+    },
+    {
+      "lemma": "palatable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "tasty.a.01",
+          "via_synset": "palatable.a.01"
+        }
+      ],
+      "definition": "acceptable to the taste or mind"
+    },
+    {
+      "lemma": "Pearmain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "eating_apple.n.01",
+          "via_synset": "pearmain.n.01"
+        }
+      ],
+      "definition": "any of several varieties of apples with red skins"
+    },
+    {
+      "lemma": "peppery",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "peppery.s.01"
+        }
+      ],
+      "definition": "having the piquant burning taste of peppers"
+    },
+    {
+      "lemma": "Pippin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "eating_apple.n.01",
+          "via_synset": "pippin.n.01"
+        }
+      ],
+      "definition": "any of numerous superior eating apples with yellow or greenish yellow skin flushed with red"
+    },
+    {
+      "lemma": "piquant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "piquant.s.01"
+        }
+      ],
+      "definition": "having an agreeably pungent taste"
+    },
+    {
+      "lemma": "pleasant-tasting",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "delectable.s.01",
+          "via_synset": "delectable.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "delectable.s.01"
+        }
+      ],
+      "definition": "extremely pleasing to the sense of taste"
+    },
+    {
+      "lemma": "pleasing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "delightful.s.01",
+          "via_synset": "pleasing.a.01"
+        }
+      ],
+      "definition": "giving pleasure and satisfaction"
+    },
+    {
+      "lemma": "Prima",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "eating_apple.n.01",
+          "via_synset": "prima.n.01"
+        }
+      ],
+      "definition": "used primarily as eating apples"
+    },
+    {
+      "lemma": "pungent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "pungent.s.01"
+        }
+      ],
+      "definition": "strong and sharp"
+    },
+    {
+      "lemma": "racy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "full-bodied.s.01"
+        }
+      ],
+      "definition": "marked by richness and fullness of flavor"
+    },
+    {
+      "lemma": "Red Delicious",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "delicious.n.01",
+          "via_synset": "red_delicious.n.01"
+        }
+      ],
+      "definition": "a sweet eating apple with bright red skin; most widely grown apple worldwide"
+    },
+    {
+      "lemma": "rich",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "full-bodied.s.01"
+        }
+      ],
+      "definition": "marked by richness and fullness of flavor"
+    },
+    {
+      "lemma": "robust",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "full-bodied.s.01"
+        }
+      ],
+      "definition": "marked by richness and fullness of flavor"
+    },
+    {
+      "lemma": "salty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "salty.s.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "tasty.a.01",
+          "via_synset": "salty.a.02"
+        }
+      ],
+      "definition": "one of the four basic taste sensations; like the taste of sea water"
+    },
+    {
+      "lemma": "sapid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "flavorful.s.01"
+        }
+      ],
+      "definition": "full of flavor"
+    },
+    {
+      "lemma": "saporous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "flavorful.s.01"
+        }
+      ],
+      "definition": "full of flavor"
+    },
+    {
+      "lemma": "savory",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "piquant.s.01"
+        }
+      ],
+      "definition": "having an agreeably pungent taste"
+    },
+    {
+      "lemma": "savoury",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "piquant.s.01"
+        }
+      ],
+      "definition": "having an agreeably pungent taste"
+    },
+    {
+      "lemma": "scrumptious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "delectable.s.01",
+          "via_synset": "delectable.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "delectable.s.01"
+        }
+      ],
+      "definition": "extremely pleasing to the sense of taste"
+    },
+    {
+      "lemma": "semisweet",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "bittersweet.s.02"
+        }
+      ],
+      "definition": "having a taste that is a mixture of bitterness and sweetness"
+    },
+    {
+      "lemma": "sharp-tasting",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "bitterish.s.01"
+        }
+      ],
+      "definition": "somewhat bitter"
+    },
+    {
+      "lemma": "smoky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "smoky.s.01"
+        }
+      ],
+      "definition": "tasting of smoke"
+    },
+    {
+      "lemma": "sour-tasting",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "acid-tasting.s.01"
+        }
+      ],
+      "definition": "having a sour acidic taste"
+    },
+    {
+      "lemma": "spicy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "hot.s.07"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "piquant.s.01"
+        }
+      ],
+      "definition": "producing a burning sensation on the taste nerves"
+    },
+    {
+      "lemma": "Stayman",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "eating_apple.n.01",
+          "via_synset": "stayman.n.01"
+        }
+      ],
+      "definition": "apple grown chiefly in the Shenandoah Valley"
+    },
+    {
+      "lemma": "Stayman Winesap",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "eating_apple.n.01",
+          "via_synset": "stayman_winesap.n.01"
+        }
+      ],
+      "definition": "crisp tart apple; good for eating raw and suitable for cooking"
+    },
+    {
+      "lemma": "strong-flavored",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "strong-flavored.s.01"
+        }
+      ],
+      "definition": "having a strong taste"
+    },
+    {
+      "lemma": "sweet",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "tasty.a.01",
+          "via_synset": "sweet.a.01"
+        }
+      ],
+      "definition": "having or denoting the characteristic taste of sugar"
+    },
+    {
+      "lemma": "taste",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tasty.a.01",
+          "via_synset": "taste.n.06"
+        }
+      ],
+      "definition": "the faculty of distinguishing sweet, sour, bitter, and salty properties in the mouth"
+    },
+    {
+      "lemma": "tasteless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "tasty.a.01",
+          "via_synset": "tasteless.a.01"
+        }
+      ],
+      "definition": "lacking flavor"
+    },
+    {
+      "lemma": "tastiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tasty.a.01",
+          "via_synset": "pleasingness.n.01"
+        }
+      ],
+      "definition": "pleasant palatability"
+    },
+    {
+      "lemma": "tasty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "tasty.a.01",
+          "via_synset": "tasty.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "delectable.s.01",
+          "via_synset": "tasty.a.01"
+        }
+      ],
+      "definition": "pleasing to the sense of taste"
+    },
+    {
+      "lemma": "toothsome",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "delectable.s.01",
+          "via_synset": "delectable.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "delectable.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "tasty.a.01",
+          "via_synset": "palatable.a.01"
+        }
+      ],
+      "definition": "extremely pleasing to the sense of taste"
+    },
+    {
+      "lemma": "toothsomeness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "delectable.s.01",
+          "via_synset": "delectability.n.01"
+        }
+      ],
+      "definition": "extreme appetizingness"
+    },
+    {
+      "lemma": "Winesap",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "eating_apple.n.01",
+          "via_synset": "winesap.n.01"
+        }
+      ],
+      "definition": "crisp apple with dark red skin"
+    },
+    {
+      "lemma": "winey",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "winy.s.01"
+        }
+      ],
+      "definition": "having the taste of wine"
+    },
+    {
+      "lemma": "winy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "winy.s.01"
+        }
+      ],
+      "definition": "having the taste of wine"
+    },
+    {
+      "lemma": "Yellow Delicious",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "delicious.n.01",
+          "via_synset": "golden_delicious.n.01"
+        }
+      ],
+      "definition": "a sweet eating apple with yellow skin"
+    },
+    {
+      "lemma": "yummy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "delectable.s.01",
+          "via_synset": "delectable.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "delectable.s.01"
+        }
+      ],
+      "definition": "extremely pleasing to the sense of taste"
+    },
+    {
+      "lemma": "zesty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasty.a.01",
+          "via_synset": "piquant.s.01"
+        }
+      ],
+      "definition": "having an agreeably pungent taste"
+    }
+  ]
+}

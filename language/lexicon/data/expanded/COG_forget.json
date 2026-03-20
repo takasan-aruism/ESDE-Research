@@ -1,0 +1,1384 @@
+{
+  "atom_id": "COG.forget",
+  "category": "COG",
+  "seed_count": 6,
+  "total_keys": 88,
+  "pos_counts": {
+    "v": 37,
+    "n": 51
+  },
+  "source_counts": {
+    "0_seed": 11,
+    "2_hypernym_d1": 13,
+    "6_derivational": 16,
+    "3_hyponym_d1": 12,
+    "4_hyponym_d2": 5,
+    "10_sibling": 38,
+    "5_hyponym_d3": 2,
+    "9_antonym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 9,
+      "words": [
+        "forget(v)",
+        "bury(v)",
+        "block(v)",
+        "blank out(v)",
+        "draw a blank(v)",
+        "overlook(v)",
+        "overlook(n)",
+        "fail(v)",
+        "neglect(v)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 10,
+      "words": [
+        "pretermit(v)",
+        "omit(v)",
+        "drop(v)",
+        "miss(v)",
+        "leave out(v)",
+        "overleap(v)",
+        "lose(v)",
+        "topographic point(n)",
+        "place(n)",
+        "spot(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 11,
+      "words": [
+        "suppress(v)",
+        "repress(v)",
+        "unlearn(v)",
+        "slip(v)",
+        "slip one's mind(v)",
+        "choke(v)",
+        "strike out(v)",
+        "default(v)",
+        "default on(v)",
+        "muff(v)",
+        "lose track(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 5,
+      "words": [
+        "swallow(v)",
+        "cut(v)",
+        "skip(v)",
+        "fan(v)",
+        "whiff(v)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 2,
+      "words": [
+        "bunk off(v)",
+        "play hooky(v)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 13,
+      "words": [
+        "block(n)",
+        "suppression(n)",
+        "whiff(n)",
+        "whiffer(n)",
+        "skip(n)",
+        "skipper(n)",
+        "failure(n)",
+        "neglect(n)",
+        "default(n)",
+        "defaulter(n)",
+        "muff(n)",
+        "slip(n)",
+        "choker(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "mind(v)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 37,
+      "words": [
+        "jump(v)",
+        "pass over(v)",
+        "skip over(v)",
+        "showplace(n)",
+        "peak(n)",
+        "crown(n)",
+        "crest(n)",
+        "top(n)",
+        "tip(n)",
+        "summit(n)",
+        "birthplace(n)",
+        "place of birth(n)",
+        "rendezvous(n)",
+        "hiding place(n)",
+        "target(n)",
+        "target area(n)",
+        "solitude(n)",
+        "junction(n)",
+        "holy place(n)",
+        "sanctum(n)",
+        "holy(n)",
+        "mecca(n)",
+        "pool(n)",
+        "puddle(n)",
+        "polling place(n)",
+        "polling station(n)",
+        "grave(n)",
+        "tomb(n)",
+        "end(n)",
+        "nesting place(n)",
+        "zone(n)",
+        "scour(n)",
+        "service area(n)",
+        "stop(n)",
+        "hole-in-the-wall(n)",
+        "high(n)",
+        "heights(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "birthplace",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "birthplace.n.01"
+        }
+      ],
+      "definition": "the place where someone was born"
+    },
+    {
+      "lemma": "blank out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "forget.v.02",
+          "via_synset": "forget.v.02"
+        }
+      ],
+      "definition": "be unable to remember"
+    },
+    {
+      "lemma": "block",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "forget.v.02",
+          "via_synset": "block.n.07"
+        }
+      ],
+      "definition": "an inability to remember or think of something you normally can do; often caused by emotional tension"
+    },
+    {
+      "lemma": "block",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "forget.v.02",
+          "via_synset": "forget.v.02"
+        }
+      ],
+      "definition": "be unable to remember"
+    },
+    {
+      "lemma": "bunk off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "cut.v.11",
+          "via_synset": "bunk_off.v.01"
+        }
+      ],
+      "definition": "play truant from work or school"
+    },
+    {
+      "lemma": "bury",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "forget.v.01",
+          "via_synset": "forget.v.01"
+        }
+      ],
+      "definition": "dismiss from the mind; stop remembering"
+    },
+    {
+      "lemma": "choke",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "fail.v.01",
+          "via_synset": "choke.v.06"
+        }
+      ],
+      "definition": "fail to perform adequately due to tension or agitation"
+    },
+    {
+      "lemma": "choker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "choke.v.06",
+          "via_synset": "choker.n.02"
+        }
+      ],
+      "definition": "an unfortunate person who is unable to perform effectively because of nervous tension or agitation"
+    },
+    {
+      "lemma": "crest",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "peak.n.04"
+        }
+      ],
+      "definition": "the top or extreme point of something (usually a mountain or hill)"
+    },
+    {
+      "lemma": "crown",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "peak.n.04"
+        }
+      ],
+      "definition": "the top or extreme point of something (usually a mountain or hill)"
+    },
+    {
+      "lemma": "cut",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "miss.v.03",
+          "via_synset": "cut.v.11"
+        }
+      ],
+      "definition": "intentionally fail to attend"
+    },
+    {
+      "lemma": "default",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "default.v.01",
+          "via_synset": "nonpayment.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "default.v.01",
+          "via_synset": "default.n.02"
+        }
+      ],
+      "definition": "loss resulting from failure of a debt to be paid"
+    },
+    {
+      "lemma": "default",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "fail.v.01",
+          "via_synset": "default.v.01"
+        }
+      ],
+      "definition": "fail to pay up"
+    },
+    {
+      "lemma": "default on",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "fail.v.01",
+          "via_synset": "default.v.01"
+        }
+      ],
+      "definition": "fail to pay up"
+    },
+    {
+      "lemma": "defaulter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "default.v.01",
+          "via_synset": "defaulter.n.02"
+        }
+      ],
+      "definition": "someone who fails to meet a financial obligation"
+    },
+    {
+      "lemma": "draw a blank",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "forget.v.02",
+          "via_synset": "forget.v.02"
+        }
+      ],
+      "definition": "be unable to remember"
+    },
+    {
+      "lemma": "drop",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forget.v.03",
+          "via_synset": "neglect.v.01"
+        }
+      ],
+      "definition": "leave undone or leave out"
+    },
+    {
+      "lemma": "end",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "end.n.10"
+        }
+      ],
+      "definition": "one of two places from which people are communicating to each other"
+    },
+    {
+      "lemma": "fail",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "fail.v.01",
+          "via_synset": "fail.v.01"
+        }
+      ],
+      "definition": "fail to do something; leave something undone"
+    },
+    {
+      "lemma": "failure",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fail.v.01",
+          "via_synset": "failure.n.05"
+        }
+      ],
+      "definition": "an unexpected omission"
+    },
+    {
+      "lemma": "fan",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "strike_out.v.02",
+          "via_synset": "fan.v.01"
+        }
+      ],
+      "definition": "strike out (a batter), (of a pitcher)"
+    },
+    {
+      "lemma": "forget",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "forget.v.01",
+          "via_synset": "forget.v.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "forget.v.02",
+          "via_synset": "forget.v.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "forget.v.03",
+          "via_synset": "forget.v.03"
+        }
+      ],
+      "definition": "dismiss from the mind; stop remembering"
+    },
+    {
+      "lemma": "grave",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "grave.n.02"
+        }
+      ],
+      "definition": "a place for the burial of a corpse (especially beneath the ground and marked by a tombstone)"
+    },
+    {
+      "lemma": "heights",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "high.n.05"
+        }
+      ],
+      "definition": "a high place"
+    },
+    {
+      "lemma": "hiding place",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "hiding_place.n.01"
+        }
+      ],
+      "definition": "a place suitable for hiding something (such as yourself)"
+    },
+    {
+      "lemma": "high",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "high.n.05"
+        }
+      ],
+      "definition": "a high place"
+    },
+    {
+      "lemma": "hole-in-the-wall",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "hole-in-the-wall.n.01"
+        }
+      ],
+      "definition": "a small unpretentious out-of-the-way place"
+    },
+    {
+      "lemma": "holy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "holy_place.n.01"
+        }
+      ],
+      "definition": "a sacred place of pilgrimage"
+    },
+    {
+      "lemma": "holy place",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "holy_place.n.01"
+        }
+      ],
+      "definition": "a sacred place of pilgrimage"
+    },
+    {
+      "lemma": "jump",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "neglect.v.01",
+          "via_synset": "jump.v.13"
+        }
+      ],
+      "definition": "bypass"
+    },
+    {
+      "lemma": "junction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "junction.n.01"
+        }
+      ],
+      "definition": "the place where two or more things come together"
+    },
+    {
+      "lemma": "leave out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forget.v.03",
+          "via_synset": "neglect.v.01"
+        }
+      ],
+      "definition": "leave undone or leave out"
+    },
+    {
+      "lemma": "lose",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "overlook.v.01",
+          "via_synset": "miss.v.01"
+        }
+      ],
+      "definition": "fail to perceive or to catch with the senses or the mind"
+    },
+    {
+      "lemma": "lose track",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "fail.v.01",
+          "via_synset": "lose_track.v.01"
+        }
+      ],
+      "definition": "fail to keep informed or aware"
+    },
+    {
+      "lemma": "mecca",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "mecca.n.02"
+        }
+      ],
+      "definition": "a place that attracts many visitors"
+    },
+    {
+      "lemma": "mind",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "forget.v.03",
+          "via_synset": "mind.v.06"
+        }
+      ],
+      "definition": "keep in mind"
+    },
+    {
+      "lemma": "miss",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forget.v.03",
+          "via_synset": "neglect.v.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "overlook.v.01",
+          "via_synset": "miss.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "fail.v.01",
+          "via_synset": "miss.v.03"
+        }
+      ],
+      "definition": "leave undone or leave out"
+    },
+    {
+      "lemma": "muff",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "muff.v.01",
+          "via_synset": "fumble.n.01"
+        }
+      ],
+      "definition": "(sports) dropping the ball"
+    },
+    {
+      "lemma": "muff",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "fail.v.01",
+          "via_synset": "muff.v.01"
+        }
+      ],
+      "definition": "fail to catch, as of a ball"
+    },
+    {
+      "lemma": "neglect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fail.v.01",
+          "via_synset": "negligence.n.02"
+        }
+      ],
+      "definition": "the trait of neglecting responsibilities and lacking concern"
+    },
+    {
+      "lemma": "neglect",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "fail.v.01",
+          "via_synset": "fail.v.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forget.v.03",
+          "via_synset": "neglect.v.01"
+        }
+      ],
+      "definition": "fail to do something; leave something undone"
+    },
+    {
+      "lemma": "nesting place",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "nesting_place.n.01"
+        }
+      ],
+      "definition": "a place suitable for nesting"
+    },
+    {
+      "lemma": "omit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forget.v.03",
+          "via_synset": "neglect.v.01"
+        }
+      ],
+      "definition": "leave undone or leave out"
+    },
+    {
+      "lemma": "overleap",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forget.v.03",
+          "via_synset": "neglect.v.01"
+        }
+      ],
+      "definition": "leave undone or leave out"
+    },
+    {
+      "lemma": "overlook",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "overlook.n.01",
+          "via_synset": "overlook.n.01"
+        }
+      ],
+      "definition": "a high place affording a good view"
+    },
+    {
+      "lemma": "overlook",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "overlook.v.01",
+          "via_synset": "overlook.v.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forget.v.03",
+          "via_synset": "neglect.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "overlook.n.01",
+          "via_synset": "look_out_on.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "overlook.n.01",
+          "via_synset": "dominate.v.05"
+        }
+      ],
+      "definition": "look past, fail to notice"
+    },
+    {
+      "lemma": "pass over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "neglect.v.01",
+          "via_synset": "jump.v.13"
+        }
+      ],
+      "definition": "bypass"
+    },
+    {
+      "lemma": "peak",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "peak.n.04"
+        }
+      ],
+      "definition": "the top or extreme point of something (usually a mountain or hill)"
+    },
+    {
+      "lemma": "place",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "overlook.n.01",
+          "via_synset": "topographic_point.n.01"
+        }
+      ],
+      "definition": "a point located with respect to surface features of some region"
+    },
+    {
+      "lemma": "place of birth",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "birthplace.n.01"
+        }
+      ],
+      "definition": "the place where someone was born"
+    },
+    {
+      "lemma": "play hooky",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "cut.v.11",
+          "via_synset": "bunk_off.v.01"
+        }
+      ],
+      "definition": "play truant from work or school"
+    },
+    {
+      "lemma": "polling place",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "polling_place.n.01"
+        }
+      ],
+      "definition": "a place where voters go to cast their votes in an election"
+    },
+    {
+      "lemma": "polling station",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "polling_place.n.01"
+        }
+      ],
+      "definition": "a place where voters go to cast their votes in an election"
+    },
+    {
+      "lemma": "pool",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "pool.n.08"
+        }
+      ],
+      "definition": "something resembling a pool of liquid"
+    },
+    {
+      "lemma": "pretermit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forget.v.03",
+          "via_synset": "neglect.v.01"
+        }
+      ],
+      "definition": "leave undone or leave out"
+    },
+    {
+      "lemma": "puddle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "pool.n.08"
+        }
+      ],
+      "definition": "something resembling a pool of liquid"
+    },
+    {
+      "lemma": "rendezvous",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "rendezvous.n.02"
+        }
+      ],
+      "definition": "a place where people meet"
+    },
+    {
+      "lemma": "repress",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "forget.v.01",
+          "via_synset": "suppress.v.04"
+        }
+      ],
+      "definition": "put out of one's consciousness"
+    },
+    {
+      "lemma": "sanctum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "holy_place.n.01"
+        }
+      ],
+      "definition": "a sacred place of pilgrimage"
+    },
+    {
+      "lemma": "scour",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "scour.n.01"
+        }
+      ],
+      "definition": "a place that is scoured (especially by running water)"
+    },
+    {
+      "lemma": "service area",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "service_area.n.01"
+        }
+      ],
+      "definition": "place on a highway providing garage services and eating and toilet facilities"
+    },
+    {
+      "lemma": "showplace",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "showplace.n.01"
+        }
+      ],
+      "definition": "a place that is frequently exhibited and visited for its historical interest or natural beauty"
+    },
+    {
+      "lemma": "skip",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cut.v.11",
+          "via_synset": "omission.n.01"
+        }
+      ],
+      "definition": "a mistake resulting from neglect"
+    },
+    {
+      "lemma": "skip",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "miss.v.03",
+          "via_synset": "cut.v.11"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "neglect.v.01",
+          "via_synset": "jump.v.13"
+        }
+      ],
+      "definition": "intentionally fail to attend"
+    },
+    {
+      "lemma": "skip over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "neglect.v.01",
+          "via_synset": "jump.v.13"
+        }
+      ],
+      "definition": "bypass"
+    },
+    {
+      "lemma": "skipper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cut.v.11",
+          "via_synset": "skipper.n.01"
+        }
+      ],
+      "definition": "a student who fails to attend classes"
+    },
+    {
+      "lemma": "slip",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "slip.v.10",
+          "via_synset": "slip.n.02"
+        }
+      ],
+      "definition": "a minor inadvertent mistake usually observed in speech or writing or in small accidents or memory lapses etc."
+    },
+    {
+      "lemma": "slip",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "forget.v.02",
+          "via_synset": "slip.v.10"
+        }
+      ],
+      "definition": "pass out of one's memory"
+    },
+    {
+      "lemma": "slip one's mind",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "forget.v.02",
+          "via_synset": "slip.v.10"
+        }
+      ],
+      "definition": "pass out of one's memory"
+    },
+    {
+      "lemma": "solitude",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "solitude.n.03"
+        }
+      ],
+      "definition": "a solitary place"
+    },
+    {
+      "lemma": "spot",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "overlook.n.01",
+          "via_synset": "topographic_point.n.01"
+        }
+      ],
+      "definition": "a point located with respect to surface features of some region"
+    },
+    {
+      "lemma": "stop",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "stop.n.05"
+        }
+      ],
+      "definition": "a spot where something halts or pauses"
+    },
+    {
+      "lemma": "strike out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "fail.v.01",
+          "via_synset": "strike_out.v.02"
+        }
+      ],
+      "definition": "put out or be put out by a strikeout"
+    },
+    {
+      "lemma": "summit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "peak.n.04"
+        }
+      ],
+      "definition": "the top or extreme point of something (usually a mountain or hill)"
+    },
+    {
+      "lemma": "suppress",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "forget.v.01",
+          "via_synset": "suppress.v.04"
+        }
+      ],
+      "definition": "put out of one's consciousness"
+    },
+    {
+      "lemma": "suppression",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "suppress.v.04",
+          "via_synset": "inhibition.n.01"
+        }
+      ],
+      "definition": "(psychology) the conscious exclusion of unacceptable thoughts or desires"
+    },
+    {
+      "lemma": "swallow",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "suppress.v.04",
+          "via_synset": "swallow.v.06"
+        }
+      ],
+      "definition": "keep from expressing"
+    },
+    {
+      "lemma": "target",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "target.n.03"
+        }
+      ],
+      "definition": "the location of the target that is to be hit"
+    },
+    {
+      "lemma": "target area",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "target.n.03"
+        }
+      ],
+      "definition": "the location of the target that is to be hit"
+    },
+    {
+      "lemma": "tip",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "peak.n.04"
+        }
+      ],
+      "definition": "the top or extreme point of something (usually a mountain or hill)"
+    },
+    {
+      "lemma": "tomb",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "grave.n.02"
+        }
+      ],
+      "definition": "a place for the burial of a corpse (especially beneath the ground and marked by a tombstone)"
+    },
+    {
+      "lemma": "top",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "peak.n.04"
+        }
+      ],
+      "definition": "the top or extreme point of something (usually a mountain or hill)"
+    },
+    {
+      "lemma": "topographic point",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "overlook.n.01",
+          "via_synset": "topographic_point.n.01"
+        }
+      ],
+      "definition": "a point located with respect to surface features of some region"
+    },
+    {
+      "lemma": "unlearn",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "forget.v.01",
+          "via_synset": "unlearn.v.01"
+        }
+      ],
+      "definition": "try to forget; put out of one's memory or knowledge"
+    },
+    {
+      "lemma": "whiff",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "whiff.v.03",
+          "via_synset": "whiff.n.03"
+        }
+      ],
+      "definition": "a strikeout resulting from the batter swinging at and missing the ball for the third strike"
+    },
+    {
+      "lemma": "whiff",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "strike_out.v.02",
+          "via_synset": "whiff.v.03"
+        }
+      ],
+      "definition": "strike out by swinging and missing the pitch charged as the third"
+    },
+    {
+      "lemma": "whiffer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "whiff.v.03",
+          "via_synset": "whiffer.n.01"
+        }
+      ],
+      "definition": "a batter who strikes out by swinging at and missing the third strike"
+    },
+    {
+      "lemma": "zone",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "zone.n.01"
+        }
+      ],
+      "definition": "a locally circumscribed place characterized by some distinctive features"
+    }
+  ]
+}

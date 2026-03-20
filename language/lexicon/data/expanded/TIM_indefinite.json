@@ -1,0 +1,536 @@
+{
+  "atom_id": "TIM.indefinite",
+  "category": "TIM",
+  "seed_count": 6,
+  "total_keys": 27,
+  "pos_counts": {
+    "adj": 21,
+    "n": 6
+  },
+  "source_counts": {
+    "0_seed": 9,
+    "7_similar_to": 12,
+    "8_also_see": 7,
+    "6_derivational": 9,
+    "9_antonym": 2
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 6,
+      "words": [
+        "indefinite(adj)",
+        "uncertain(adj)",
+        "unsealed(adj)",
+        "obscure(adj)",
+        "vague(adj)",
+        "undefined(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 6,
+      "words": [
+        "uncertainness(n)",
+        "obscurity(n)",
+        "obscureness(n)",
+        "vagueness(n)",
+        "indefiniteness(n)",
+        "indefinity(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 10,
+      "words": [
+        "up in the air(adj)",
+        "unclear(adj)",
+        "indefinable(adj)",
+        "undefinable(adj)",
+        "indecisive(adj)",
+        "one(adj)",
+        "nebulous(adj)",
+        "unfixed(adj)",
+        "noncommittal(adj)",
+        "coy(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 3,
+      "words": [
+        "indeterminate(adj)",
+        "undetermined(adj)",
+        "indistinct(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 2,
+      "words": [
+        "sealed(adj)",
+        "defined(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "coy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "indefinite.a.01",
+          "via_synset": "coy.s.02"
+        }
+      ],
+      "definition": "showing marked and often playful or irritating evasiveness or reluctance to make a definite or committing statement"
+    },
+    {
+      "lemma": "defined",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "undefined.a.01",
+          "via_synset": "defined.a.01"
+        }
+      ],
+      "definition": "clearly characterized or delimited"
+    },
+    {
+      "lemma": "indecisive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "indefinite.a.01",
+          "via_synset": "indecisive.s.01"
+        }
+      ],
+      "definition": "not clearly defined"
+    },
+    {
+      "lemma": "indefinable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "undefined.a.01",
+          "via_synset": "indefinable.s.01"
+        }
+      ],
+      "definition": "not capable of being precisely or readily described; not easily put into words"
+    },
+    {
+      "lemma": "indefinite",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "indefinite.a.01",
+          "via_synset": "indefinite.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "indefinite.s.01",
+          "via_synset": "indefinite.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uncertain.a.02",
+          "via_synset": "indefinite.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "undefined.a.01",
+          "via_synset": "indefinite.a.01"
+        }
+      ],
+      "definition": "vague or not clearly defined or stated"
+    },
+    {
+      "lemma": "indefiniteness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "indefinite.a.01",
+          "via_synset": "indefiniteness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "indefinite.s.01",
+          "via_synset": "indefiniteness.n.01"
+        }
+      ],
+      "definition": "the quality of being vague and poorly defined"
+    },
+    {
+      "lemma": "indefinity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "indefinite.a.01",
+          "via_synset": "indefiniteness.n.01"
+        }
+      ],
+      "definition": "the quality of being vague and poorly defined"
+    },
+    {
+      "lemma": "indeterminate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "uncertain.a.02",
+          "via_synset": "indeterminate.a.01"
+        }
+      ],
+      "definition": "not precisely determined or established; not fixed or known in advance"
+    },
+    {
+      "lemma": "indistinct",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "indefinite.a.01",
+          "via_synset": "indistinct.a.01"
+        }
+      ],
+      "definition": "not clearly defined or easy to perceive or understand"
+    },
+    {
+      "lemma": "nebulous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "indefinite.a.01",
+          "via_synset": "nebulous.s.02"
+        }
+      ],
+      "definition": "lacking definition or definite content; ; - Jane Austen"
+    },
+    {
+      "lemma": "noncommittal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "indefinite.a.01",
+          "via_synset": "noncommittal.s.01"
+        }
+      ],
+      "definition": "refusing to bind oneself to a particular course of action or view or the like"
+    },
+    {
+      "lemma": "obscure",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "obscure.s.01",
+          "via_synset": "obscure.s.01"
+        }
+      ],
+      "definition": "not clearly understood or expressed; ; -Anatole Broyard; - P.A.Sorokin; - John Locke"
+    },
+    {
+      "lemma": "obscureness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "obscure.s.01",
+          "via_synset": "obscureness.n.03"
+        }
+      ],
+      "definition": "the quality of being unclear or abstruse and hard to understand"
+    },
+    {
+      "lemma": "obscurity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "obscure.s.01",
+          "via_synset": "obscureness.n.03"
+        }
+      ],
+      "definition": "the quality of being unclear or abstruse and hard to understand"
+    },
+    {
+      "lemma": "one",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "indefinite.a.01",
+          "via_synset": "one.s.05"
+        }
+      ],
+      "definition": "indefinite in time or position"
+    },
+    {
+      "lemma": "sealed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "unsealed.a.01",
+          "via_synset": "sealed.a.01"
+        }
+      ],
+      "definition": "established irrevocably"
+    },
+    {
+      "lemma": "uncertain",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "uncertain.a.02",
+          "via_synset": "uncertain.a.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unsealed.a.01",
+          "via_synset": "unsealed.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "indefinite.s.01",
+          "via_synset": "uncertain.a.02"
+        }
+      ],
+      "definition": "not established beyond doubt; still undecided or unknown"
+    },
+    {
+      "lemma": "uncertainness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "uncertain.a.02",
+          "via_synset": "uncertainty.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unsealed.a.01",
+          "via_synset": "uncertainty.n.01"
+        }
+      ],
+      "definition": "being unsettled or in doubt or dependent on chance"
+    },
+    {
+      "lemma": "unclear",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "obscure.s.01",
+          "via_synset": "unclear.a.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "indefinite.a.01",
+          "via_synset": "unclear.a.02"
+        }
+      ],
+      "definition": "not clear to the mind"
+    },
+    {
+      "lemma": "undefinable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "undefined.a.01",
+          "via_synset": "indefinable.s.01"
+        }
+      ],
+      "definition": "not capable of being precisely or readily described; not easily put into words"
+    },
+    {
+      "lemma": "undefined",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "undefined.a.01",
+          "via_synset": "undefined.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "indefinite.a.01",
+          "via_synset": "undefined.a.01"
+        }
+      ],
+      "definition": "not precisely limited, determined, or distinguished"
+    },
+    {
+      "lemma": "undetermined",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "uncertain.a.02",
+          "via_synset": "indeterminate.a.01"
+        }
+      ],
+      "definition": "not precisely determined or established; not fixed or known in advance"
+    },
+    {
+      "lemma": "unfixed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "indefinite.a.01",
+          "via_synset": "nebulous.s.02"
+        }
+      ],
+      "definition": "lacking definition or definite content; ; - Jane Austen"
+    },
+    {
+      "lemma": "unsealed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unsealed.a.01",
+          "via_synset": "unsealed.a.01"
+        }
+      ],
+      "definition": "not established or confirmed"
+    },
+    {
+      "lemma": "up in the air",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "uncertain.a.02",
+          "via_synset": "up_in_the_air.s.01"
+        }
+      ],
+      "definition": "very uncertain"
+    },
+    {
+      "lemma": "vague",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "obscure.s.01",
+          "via_synset": "obscure.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "undefined.a.01",
+          "via_synset": "undefined.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "indefinite.a.01",
+          "via_synset": "undefined.a.01"
+        }
+      ],
+      "definition": "not clearly understood or expressed; ; -Anatole Broyard; - P.A.Sorokin; - John Locke"
+    },
+    {
+      "lemma": "vagueness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "obscure.s.01",
+          "via_synset": "vagueness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "undefined.a.01",
+          "via_synset": "vagueness.n.01"
+        }
+      ],
+      "definition": "unclearness by virtue of being poorly expressed or not coherent in meaning"
+    }
+  ]
+}

@@ -1,0 +1,1984 @@
+{
+  "meta": {
+    "total_atoms": 326,
+    "total_core_words": 33394,
+    "total_dev_words": 97456,
+    "zero_core_atoms": 1,
+    "avg_core_per_atom": 102.4,
+    "avg_dev_per_atom": 298.9,
+    "core_steps": [
+      "0_seed",
+      "3_hyponym_d1",
+      "6_derivational",
+      "7_similar_to",
+      "9_antonym"
+    ],
+    "deviation_steps": [
+      "10_sibling",
+      "11_pertainym",
+      "12_verb_group",
+      "2_hypernym_d1",
+      "4_hyponym_d2",
+      "5_hyponym_d3",
+      "8_also_see"
+    ]
+  },
+  "atoms": {
+    "ABS.bound": {
+      "core_count": 186,
+      "dev_count": 351,
+      "core_ratio": 0.346,
+      "status": "proposed"
+    },
+    "ABS.exempt": {
+      "core_count": 33,
+      "dev_count": 665,
+      "core_ratio": 0.047,
+      "status": "proposed"
+    },
+    "ABS.foolish": {
+      "core_count": 95,
+      "dev_count": 7,
+      "core_ratio": 0.931,
+      "status": "proposed"
+    },
+    "ABS.other": {
+      "core_count": 31,
+      "dev_count": 5,
+      "core_ratio": 0.861,
+      "status": "proposed"
+    },
+    "ABS.release": {
+      "core_count": 89,
+      "dev_count": 56,
+      "core_ratio": 0.614,
+      "status": "proposed"
+    },
+    "ABS.responsibility": {
+      "core_count": 61,
+      "dev_count": 91,
+      "core_ratio": 0.401,
+      "status": "proposed"
+    },
+    "ABS.self": {
+      "core_count": 24,
+      "dev_count": 866,
+      "core_ratio": 0.027,
+      "status": "proposed"
+    },
+    "ABS.wise": {
+      "core_count": 48,
+      "dev_count": 25,
+      "core_ratio": 0.658,
+      "status": "proposed"
+    },
+    "ACT.abandon": {
+      "core_count": 60,
+      "dev_count": 103,
+      "core_ratio": 0.368,
+      "status": "proposed"
+    },
+    "ACT.agitate": {
+      "core_count": 115,
+      "dev_count": 386,
+      "core_ratio": 0.23,
+      "status": "proposed"
+    },
+    "ACT.arrive": {
+      "core_count": 74,
+      "dev_count": 92,
+      "core_ratio": 0.446,
+      "status": "proposed"
+    },
+    "ACT.ascend": {
+      "core_count": 28,
+      "dev_count": 347,
+      "core_ratio": 0.075,
+      "status": "proposed"
+    },
+    "ACT.build": {
+      "core_count": 474,
+      "dev_count": 635,
+      "core_ratio": 0.427,
+      "status": "proposed"
+    },
+    "ACT.calm": {
+      "core_count": 86,
+      "dev_count": 42,
+      "core_ratio": 0.672,
+      "status": "proposed"
+    },
+    "ACT.create": {
+      "core_count": 493,
+      "dev_count": 1379,
+      "core_ratio": 0.263,
+      "status": "proposed"
+    },
+    "ACT.descend": {
+      "core_count": 97,
+      "dev_count": 616,
+      "core_ratio": 0.136,
+      "status": "proposed"
+    },
+    "ACT.destroy": {
+      "core_count": 144,
+      "dev_count": 107,
+      "core_ratio": 0.574,
+      "status": "proposed"
+    },
+    "ACT.dissolve": {
+      "core_count": 45,
+      "dev_count": 100,
+      "core_ratio": 0.31,
+      "status": "proposed"
+    },
+    "ACT.emit": {
+      "core_count": 305,
+      "dev_count": 127,
+      "core_ratio": 0.706,
+      "status": "proposed"
+    },
+    "ACT.exit": {
+      "core_count": 88,
+      "dev_count": 408,
+      "core_ratio": 0.177,
+      "status": "proposed"
+    },
+    "ACT.fall": {
+      "core_count": 36,
+      "dev_count": 83,
+      "core_ratio": 0.303,
+      "status": "proposed"
+    },
+    "ACT.give": {
+      "core_count": 341,
+      "dev_count": 413,
+      "core_ratio": 0.452,
+      "status": "proposed"
+    },
+    "ACT.go": {
+      "core_count": 102,
+      "dev_count": 565,
+      "core_ratio": 0.153,
+      "status": "proposed"
+    },
+    "ACT.leave": {
+      "core_count": 108,
+      "dev_count": 210,
+      "core_ratio": 0.34,
+      "status": "proposed"
+    },
+    "ACT.lie_down": {
+      "core_count": 57,
+      "dev_count": 161,
+      "core_ratio": 0.261,
+      "status": "proposed"
+    },
+    "ACT.lose": {
+      "core_count": 13,
+      "dev_count": 177,
+      "core_ratio": 0.068,
+      "status": "proposed"
+    },
+    "ACT.make": {
+      "core_count": 577,
+      "dev_count": 1039,
+      "core_ratio": 0.357,
+      "status": "proposed"
+    },
+    "ACT.move": {
+      "core_count": 1267,
+      "dev_count": 1875,
+      "core_ratio": 0.403,
+      "status": "proposed"
+    },
+    "ACT.obtain": {
+      "core_count": 246,
+      "dev_count": 428,
+      "core_ratio": 0.365,
+      "status": "proposed"
+    },
+    "ACT.receive": {
+      "core_count": 63,
+      "dev_count": 221,
+      "core_ratio": 0.222,
+      "status": "proposed"
+    },
+    "ACT.rise": {
+      "core_count": 79,
+      "dev_count": 487,
+      "core_ratio": 0.14,
+      "status": "proposed"
+    },
+    "ACT.sink": {
+      "core_count": 39,
+      "dev_count": 316,
+      "core_ratio": 0.11,
+      "status": "proposed"
+    },
+    "ACT.sit": {
+      "core_count": 76,
+      "dev_count": 377,
+      "core_ratio": 0.168,
+      "status": "proposed"
+    },
+    "ACT.stand": {
+      "core_count": 40,
+      "dev_count": 511,
+      "core_ratio": 0.073,
+      "status": "proposed"
+    },
+    "ACT.stop": {
+      "core_count": 101,
+      "dev_count": 91,
+      "core_ratio": 0.526,
+      "status": "proposed"
+    },
+    "ACT.take": {
+      "core_count": 156,
+      "dev_count": 103,
+      "core_ratio": 0.602,
+      "status": "proposed"
+    },
+    "BEI.beast": {
+      "core_count": 145,
+      "dev_count": 1083,
+      "core_ratio": 0.118,
+      "status": "proposed"
+    },
+    "BEI.child": {
+      "core_count": 92,
+      "dev_count": 129,
+      "core_ratio": 0.416,
+      "status": "proposed"
+    },
+    "BEI.female": {
+      "core_count": 166,
+      "dev_count": 834,
+      "core_ratio": 0.166,
+      "status": "proposed"
+    },
+    "BEI.human": {
+      "core_count": 58,
+      "dev_count": 93,
+      "core_ratio": 0.384,
+      "status": "proposed"
+    },
+    "BEI.male": {
+      "core_count": 81,
+      "dev_count": 860,
+      "core_ratio": 0.086,
+      "status": "proposed"
+    },
+    "BEI.parent": {
+      "core_count": 52,
+      "dev_count": 157,
+      "core_ratio": 0.249,
+      "status": "proposed"
+    },
+    "BEI.plant": {
+      "core_count": 112,
+      "dev_count": 2199,
+      "core_ratio": 0.048,
+      "status": "proposed"
+    },
+    "BEI.root": {
+      "core_count": 66,
+      "dev_count": 187,
+      "core_ratio": 0.261,
+      "status": "proposed"
+    },
+    "BOD.ear": {
+      "core_count": 48,
+      "dev_count": 118,
+      "core_ratio": 0.289,
+      "status": "proposed"
+    },
+    "BOD.eye": {
+      "core_count": 75,
+      "dev_count": 98,
+      "core_ratio": 0.434,
+      "status": "proposed"
+    },
+    "BOD.face": {
+      "core_count": 63,
+      "dev_count": 152,
+      "core_ratio": 0.293,
+      "status": "proposed"
+    },
+    "BOD.foot": {
+      "core_count": 103,
+      "dev_count": 84,
+      "core_ratio": 0.551,
+      "status": "proposed"
+    },
+    "BOD.hand": {
+      "core_count": 53,
+      "dev_count": 59,
+      "core_ratio": 0.473,
+      "status": "proposed"
+    },
+    "BOD.head": {
+      "core_count": 29,
+      "dev_count": 241,
+      "core_ratio": 0.107,
+      "status": "proposed"
+    },
+    "BOD.hip": {
+      "core_count": 13,
+      "dev_count": 235,
+      "core_ratio": 0.052,
+      "status": "proposed"
+    },
+    "BOD.mouth": {
+      "core_count": 361,
+      "dev_count": 295,
+      "core_ratio": 0.55,
+      "status": "proposed"
+    },
+    "CHG.advance": {
+      "core_count": 87,
+      "dev_count": 376,
+      "core_ratio": 0.188,
+      "status": "proposed"
+    },
+    "CHG.begin": {
+      "core_count": 89,
+      "dev_count": 334,
+      "core_ratio": 0.21,
+      "status": "proposed"
+    },
+    "CHG.decay": {
+      "core_count": 64,
+      "dev_count": 386,
+      "core_ratio": 0.142,
+      "status": "proposed"
+    },
+    "CHG.end": {
+      "core_count": 140,
+      "dev_count": 827,
+      "core_ratio": 0.145,
+      "status": "proposed"
+    },
+    "CHG.grow": {
+      "core_count": 142,
+      "dev_count": 936,
+      "core_ratio": 0.132,
+      "status": "proposed"
+    },
+    "CHG.retreat": {
+      "core_count": 36,
+      "dev_count": 503,
+      "core_ratio": 0.067,
+      "status": "proposed"
+    },
+    "CHG.stay": {
+      "core_count": 79,
+      "dev_count": 288,
+      "core_ratio": 0.215,
+      "status": "proposed"
+    },
+    "COG.confusion": {
+      "core_count": 84,
+      "dev_count": 269,
+      "core_ratio": 0.238,
+      "status": "proposed"
+    },
+    "COG.enlightenment": {
+      "core_count": 90,
+      "dev_count": 157,
+      "core_ratio": 0.364,
+      "status": "proposed"
+    },
+    "COG.forget": {
+      "core_count": 35,
+      "dev_count": 53,
+      "core_ratio": 0.398,
+      "status": "proposed"
+    },
+    "COG.ignorance": {
+      "core_count": 38,
+      "dev_count": 59,
+      "core_ratio": 0.392,
+      "status": "proposed"
+    },
+    "COG.instinct": {
+      "core_count": 31,
+      "dev_count": 31,
+      "core_ratio": 0.5,
+      "status": "proposed"
+    },
+    "COG.intention": {
+      "core_count": 49,
+      "dev_count": 62,
+      "core_ratio": 0.441,
+      "status": "proposed"
+    },
+    "COG.know": {
+      "core_count": 117,
+      "dev_count": 69,
+      "core_ratio": 0.629,
+      "status": "proposed"
+    },
+    "COG.learn": {
+      "core_count": 233,
+      "dev_count": 453,
+      "core_ratio": 0.34,
+      "status": "proposed"
+    },
+    "COG.mindless": {
+      "core_count": 24,
+      "dev_count": 0,
+      "core_ratio": 1.0,
+      "status": "proposed"
+    },
+    "COG.remember": {
+      "core_count": 62,
+      "dev_count": 40,
+      "core_ratio": 0.608,
+      "status": "proposed"
+    },
+    "COG.separate": {
+      "core_count": 120,
+      "dev_count": 82,
+      "core_ratio": 0.594,
+      "status": "proposed"
+    },
+    "COG.think": {
+      "core_count": 336,
+      "dev_count": 355,
+      "core_ratio": 0.486,
+      "status": "proposed"
+    },
+    "COG.unlearned": {
+      "core_count": 21,
+      "dev_count": 32,
+      "core_ratio": 0.396,
+      "status": "proposed"
+    },
+    "COM.announce": {
+      "core_count": 130,
+      "dev_count": 222,
+      "core_ratio": 0.369,
+      "status": "proposed"
+    },
+    "COM.answer": {
+      "core_count": 153,
+      "dev_count": 333,
+      "core_ratio": 0.315,
+      "status": "proposed"
+    },
+    "COM.conduct": {
+      "core_count": 330,
+      "dev_count": 696,
+      "core_ratio": 0.322,
+      "status": "proposed"
+    },
+    "COM.conflict": {
+      "core_count": 82,
+      "dev_count": 267,
+      "core_ratio": 0.235,
+      "status": "proposed"
+    },
+    "COM.cooperate": {
+      "core_count": 64,
+      "dev_count": 754,
+      "core_ratio": 0.078,
+      "status": "proposed"
+    },
+    "COM.muteness": {
+      "core_count": 20,
+      "dev_count": 190,
+      "core_ratio": 0.095,
+      "status": "proposed"
+    },
+    "COM.practice": {
+      "core_count": 118,
+      "dev_count": 296,
+      "core_ratio": 0.285,
+      "status": "proposed"
+    },
+    "COM.question": {
+      "core_count": 72,
+      "dev_count": 44,
+      "core_ratio": 0.621,
+      "status": "proposed"
+    },
+    "COM.secret": {
+      "core_count": 75,
+      "dev_count": 63,
+      "core_ratio": 0.543,
+      "status": "proposed"
+    },
+    "COM.silence": {
+      "core_count": 27,
+      "dev_count": 234,
+      "core_ratio": 0.103,
+      "status": "proposed"
+    },
+    "COM.speak": {
+      "core_count": 467,
+      "dev_count": 335,
+      "core_ratio": 0.582,
+      "status": "proposed"
+    },
+    "COM.teach": {
+      "core_count": 93,
+      "dev_count": 158,
+      "core_ratio": 0.371,
+      "status": "proposed"
+    },
+    "ECO.buy": {
+      "core_count": 78,
+      "dev_count": 404,
+      "core_ratio": 0.162,
+      "status": "proposed"
+    },
+    "ECO.currency": {
+      "core_count": 64,
+      "dev_count": 94,
+      "core_ratio": 0.405,
+      "status": "proposed"
+    },
+    "ECO.earn": {
+      "core_count": 100,
+      "dev_count": 123,
+      "core_ratio": 0.448,
+      "status": "proposed"
+    },
+    "ECO.income": {
+      "core_count": 91,
+      "dev_count": 64,
+      "core_ratio": 0.587,
+      "status": "proposed"
+    },
+    "ECO.loss": {
+      "core_count": 19,
+      "dev_count": 75,
+      "core_ratio": 0.202,
+      "status": "proposed"
+    },
+    "ECO.money": {
+      "core_count": 73,
+      "dev_count": 111,
+      "core_ratio": 0.397,
+      "status": "proposed"
+    },
+    "ECO.pay": {
+      "core_count": 163,
+      "dev_count": 299,
+      "core_ratio": 0.353,
+      "status": "proposed"
+    },
+    "ECO.price": {
+      "core_count": 86,
+      "dev_count": 258,
+      "core_ratio": 0.25,
+      "status": "proposed"
+    },
+    "ECO.save": {
+      "core_count": 107,
+      "dev_count": 104,
+      "core_ratio": 0.507,
+      "status": "proposed"
+    },
+    "ECO.sell": {
+      "core_count": 86,
+      "dev_count": 81,
+      "core_ratio": 0.515,
+      "status": "proposed"
+    },
+    "ECO.waste": {
+      "core_count": 82,
+      "dev_count": 415,
+      "core_ratio": 0.165,
+      "status": "proposed"
+    },
+    "ECO.withdraw": {
+      "core_count": 78,
+      "dev_count": 190,
+      "core_ratio": 0.291,
+      "status": "proposed"
+    },
+    "ELM.darkness": {
+      "core_count": 46,
+      "dev_count": 194,
+      "core_ratio": 0.192,
+      "status": "proposed"
+    },
+    "ELM.earth": {
+      "core_count": 68,
+      "dev_count": 259,
+      "core_ratio": 0.208,
+      "status": "proposed"
+    },
+    "ELM.fire": {
+      "core_count": 83,
+      "dev_count": 139,
+      "core_ratio": 0.374,
+      "status": "proposed"
+    },
+    "ELM.light": {
+      "core_count": 166,
+      "dev_count": 116,
+      "core_ratio": 0.589,
+      "status": "proposed"
+    },
+    "ELM.moon": {
+      "core_count": 9,
+      "dev_count": 116,
+      "core_ratio": 0.072,
+      "status": "proposed"
+    },
+    "ELM.morning": {
+      "core_count": 47,
+      "dev_count": 233,
+      "core_ratio": 0.168,
+      "status": "proposed"
+    },
+    "ELM.night": {
+      "core_count": 38,
+      "dev_count": 182,
+      "core_ratio": 0.173,
+      "status": "proposed"
+    },
+    "ELM.sky": {
+      "core_count": 57,
+      "dev_count": 113,
+      "core_ratio": 0.335,
+      "status": "proposed"
+    },
+    "ELM.star": {
+      "core_count": 48,
+      "dev_count": 50,
+      "core_ratio": 0.49,
+      "status": "proposed"
+    },
+    "ELM.sun": {
+      "core_count": 34,
+      "dev_count": 228,
+      "core_ratio": 0.13,
+      "status": "proposed"
+    },
+    "ELM.water": {
+      "core_count": 173,
+      "dev_count": 340,
+      "core_ratio": 0.337,
+      "status": "proposed"
+    },
+    "ELM.wind": {
+      "core_count": 138,
+      "dev_count": 170,
+      "core_ratio": 0.448,
+      "status": "proposed"
+    },
+    "EMO.anger": {
+      "core_count": 83,
+      "dev_count": 64,
+      "core_ratio": 0.565,
+      "status": "proposed"
+    },
+    "EMO.anxiety": {
+      "core_count": 83,
+      "dev_count": 67,
+      "core_ratio": 0.553,
+      "status": "proposed"
+    },
+    "EMO.apology": {
+      "core_count": 7,
+      "dev_count": 37,
+      "core_ratio": 0.159,
+      "status": "proposed"
+    },
+    "EMO.compassion": {
+      "core_count": 57,
+      "dev_count": 49,
+      "core_ratio": 0.538,
+      "status": "proposed"
+    },
+    "EMO.contempt": {
+      "core_count": 25,
+      "dev_count": 66,
+      "core_ratio": 0.275,
+      "status": "proposed"
+    },
+    "EMO.courage": {
+      "core_count": 80,
+      "dev_count": 48,
+      "core_ratio": 0.625,
+      "status": "proposed"
+    },
+    "EMO.desire": {
+      "core_count": 106,
+      "dev_count": 165,
+      "core_ratio": 0.391,
+      "status": "proposed"
+    },
+    "EMO.despair": {
+      "core_count": 47,
+      "dev_count": 242,
+      "core_ratio": 0.163,
+      "status": "proposed"
+    },
+    "EMO.dislike": {
+      "core_count": 72,
+      "dev_count": 111,
+      "core_ratio": 0.393,
+      "status": "proposed"
+    },
+    "EMO.doubt": {
+      "core_count": 55,
+      "dev_count": 52,
+      "core_ratio": 0.514,
+      "status": "proposed"
+    },
+    "EMO.fear": {
+      "core_count": 91,
+      "dev_count": 105,
+      "core_ratio": 0.464,
+      "status": "proposed"
+    },
+    "EMO.forgiveness": {
+      "core_count": 11,
+      "dev_count": 31,
+      "core_ratio": 0.262,
+      "status": "proposed"
+    },
+    "EMO.happiness": {
+      "core_count": 66,
+      "dev_count": 152,
+      "core_ratio": 0.303,
+      "status": "proposed"
+    },
+    "EMO.hate": {
+      "core_count": 71,
+      "dev_count": 52,
+      "core_ratio": 0.577,
+      "status": "proposed"
+    },
+    "EMO.hope": {
+      "core_count": 31,
+      "dev_count": 93,
+      "core_ratio": 0.25,
+      "status": "proposed"
+    },
+    "EMO.joy": {
+      "core_count": 71,
+      "dev_count": 77,
+      "core_ratio": 0.48,
+      "status": "proposed"
+    },
+    "EMO.like": {
+      "core_count": 24,
+      "dev_count": 67,
+      "core_ratio": 0.264,
+      "status": "proposed"
+    },
+    "EMO.love": {
+      "core_count": 58,
+      "dev_count": 58,
+      "core_ratio": 0.5,
+      "status": "proposed"
+    },
+    "EMO.manifest": {
+      "core_count": 71,
+      "dev_count": 138,
+      "core_ratio": 0.34,
+      "status": "proposed"
+    },
+    "EMO.patience": {
+      "core_count": 48,
+      "dev_count": 150,
+      "core_ratio": 0.242,
+      "status": "proposed"
+    },
+    "EMO.pleasure": {
+      "core_count": 41,
+      "dev_count": 134,
+      "core_ratio": 0.234,
+      "status": "proposed"
+    },
+    "EMO.pride": {
+      "core_count": 77,
+      "dev_count": 163,
+      "core_ratio": 0.321,
+      "status": "proposed"
+    },
+    "EMO.respect": {
+      "core_count": 72,
+      "dev_count": 261,
+      "core_ratio": 0.216,
+      "status": "proposed"
+    },
+    "EMO.satisfaction": {
+      "core_count": 46,
+      "dev_count": 156,
+      "core_ratio": 0.228,
+      "status": "proposed"
+    },
+    "EMO.shame": {
+      "core_count": 69,
+      "dev_count": 144,
+      "core_ratio": 0.324,
+      "status": "proposed"
+    },
+    "EMO.sorrow": {
+      "core_count": 54,
+      "dev_count": 42,
+      "core_ratio": 0.562,
+      "status": "proposed"
+    },
+    "EMO.trust": {
+      "core_count": 21,
+      "dev_count": 152,
+      "core_ratio": 0.121,
+      "status": "proposed"
+    },
+    "EMO.unhappiness": {
+      "core_count": 81,
+      "dev_count": 132,
+      "core_ratio": 0.38,
+      "status": "proposed"
+    },
+    "EMO.wish": {
+      "core_count": 38,
+      "dev_count": 142,
+      "core_ratio": 0.211,
+      "status": "proposed"
+    },
+    "EMO.worry": {
+      "core_count": 102,
+      "dev_count": 59,
+      "core_ratio": 0.634,
+      "status": "proposed"
+    },
+    "EXS.absence": {
+      "core_count": 22,
+      "dev_count": 79,
+      "core_ratio": 0.218,
+      "status": "proposed"
+    },
+    "EXS.being": {
+      "core_count": 1010,
+      "dev_count": 3680,
+      "core_ratio": 0.215,
+      "status": "proposed"
+    },
+    "EXS.death": {
+      "core_count": 58,
+      "dev_count": 266,
+      "core_ratio": 0.179,
+      "status": "proposed"
+    },
+    "EXS.life": {
+      "core_count": 18,
+      "dev_count": 21,
+      "core_ratio": 0.462,
+      "status": "proposed"
+    },
+    "EXS.matter": {
+      "core_count": 315,
+      "dev_count": 1921,
+      "core_ratio": 0.141,
+      "status": "proposed"
+    },
+    "EXS.nonbeing": {
+      "core_count": 51,
+      "dev_count": 822,
+      "core_ratio": 0.058,
+      "status": "proposed"
+    },
+    "EXS.physical_body": {
+      "core_count": 28,
+      "dev_count": 134,
+      "core_ratio": 0.173,
+      "status": "proposed"
+    },
+    "EXS.presence": {
+      "core_count": 31,
+      "dev_count": 47,
+      "core_ratio": 0.397,
+      "status": "proposed"
+    },
+    "EXS.spirit": {
+      "core_count": 66,
+      "dev_count": 117,
+      "core_ratio": 0.361,
+      "status": "proposed"
+    },
+    "EXS.vitality": {
+      "core_count": 50,
+      "dev_count": 231,
+      "core_ratio": 0.178,
+      "status": "proposed"
+    },
+    "EXS.void": {
+      "core_count": 47,
+      "dev_count": 868,
+      "core_ratio": 0.051,
+      "status": "proposed"
+    },
+    "FND.ahistorical": {
+      "core_count": 7,
+      "dev_count": 0,
+      "core_ratio": 1.0,
+      "status": "proposed"
+    },
+    "FND.body": {
+      "core_count": 20,
+      "dev_count": 95,
+      "core_ratio": 0.174,
+      "status": "proposed"
+    },
+    "FND.consciousness": {
+      "core_count": 47,
+      "dev_count": 55,
+      "core_ratio": 0.461,
+      "status": "proposed"
+    },
+    "FND.history": {
+      "core_count": 35,
+      "dev_count": 88,
+      "core_ratio": 0.285,
+      "status": "proposed"
+    },
+    "FND.information": {
+      "core_count": 168,
+      "dev_count": 726,
+      "core_ratio": 0.188,
+      "status": "proposed"
+    },
+    "FND.intuition": {
+      "core_count": 32,
+      "dev_count": 65,
+      "core_ratio": 0.33,
+      "status": "proposed"
+    },
+    "FND.labor": {
+      "core_count": 271,
+      "dev_count": 374,
+      "core_ratio": 0.42,
+      "status": "proposed"
+    },
+    "FND.language": {
+      "core_count": 169,
+      "dev_count": 678,
+      "core_ratio": 0.2,
+      "status": "proposed"
+    },
+    "FND.languageless": {
+      "core_count": 19,
+      "dev_count": 0,
+      "core_ratio": 1.0,
+      "status": "proposed"
+    },
+    "FND.logic": {
+      "core_count": 24,
+      "dev_count": 153,
+      "core_ratio": 0.136,
+      "status": "proposed"
+    },
+    "FND.memory": {
+      "core_count": 53,
+      "dev_count": 73,
+      "core_ratio": 0.421,
+      "status": "proposed"
+    },
+    "FND.memoryless": {
+      "core_count": 24,
+      "dev_count": 104,
+      "core_ratio": 0.188,
+      "status": "proposed"
+    },
+    "FND.mind": {
+      "core_count": 101,
+      "dev_count": 237,
+      "core_ratio": 0.299,
+      "status": "proposed"
+    },
+    "FND.number": {
+      "core_count": 156,
+      "dev_count": 672,
+      "core_ratio": 0.188,
+      "status": "proposed"
+    },
+    "FND.numberless": {
+      "core_count": 46,
+      "dev_count": 32,
+      "core_ratio": 0.59,
+      "status": "proposed"
+    },
+    "FND.play": {
+      "core_count": 78,
+      "dev_count": 343,
+      "core_ratio": 0.185,
+      "status": "proposed"
+    },
+    "FND.spaceless": {
+      "core_count": 0,
+      "dev_count": 0,
+      "core_ratio": 0,
+      "status": "proposed"
+    },
+    "FND.spatiality": {
+      "core_count": 106,
+      "dev_count": 350,
+      "core_ratio": 0.232,
+      "status": "proposed"
+    },
+    "FND.temporality": {
+      "core_count": 73,
+      "dev_count": 336,
+      "core_ratio": 0.178,
+      "status": "proposed"
+    },
+    "FND.time": {
+      "core_count": 76,
+      "dev_count": 355,
+      "core_ratio": 0.176,
+      "status": "proposed"
+    },
+    "FND.timeless": {
+      "core_count": 29,
+      "dev_count": 0,
+      "core_ratio": 1.0,
+      "status": "proposed"
+    },
+    "FND.transformation": {
+      "core_count": 1053,
+      "dev_count": 1709,
+      "core_ratio": 0.381,
+      "status": "proposed"
+    },
+    "FND.unchanging": {
+      "core_count": 48,
+      "dev_count": 109,
+      "core_ratio": 0.306,
+      "status": "proposed"
+    },
+    "FND.unconscious": {
+      "core_count": 38,
+      "dev_count": 23,
+      "core_ratio": 0.623,
+      "status": "proposed"
+    },
+    "FND.uninformed": {
+      "core_count": 30,
+      "dev_count": 3,
+      "core_ratio": 0.909,
+      "status": "proposed"
+    },
+    "LOG.cause": {
+      "core_count": 476,
+      "dev_count": 2975,
+      "core_ratio": 0.138,
+      "status": "proposed"
+    },
+    "LOG.effect": {
+      "core_count": 99,
+      "dev_count": 313,
+      "core_ratio": 0.24,
+      "status": "proposed"
+    },
+    "LOG.reason": {
+      "core_count": 19,
+      "dev_count": 140,
+      "core_ratio": 0.119,
+      "status": "proposed"
+    },
+    "LOG.unreason": {
+      "core_count": 25,
+      "dev_count": 51,
+      "core_ratio": 0.329,
+      "status": "proposed"
+    },
+    "MAT.bare_hand": {
+      "core_count": 16,
+      "dev_count": 13,
+      "core_ratio": 0.552,
+      "status": "proposed"
+    },
+    "MAT.clothing": {
+      "core_count": 251,
+      "dev_count": 810,
+      "core_ratio": 0.237,
+      "status": "proposed"
+    },
+    "MAT.drink": {
+      "core_count": 142,
+      "dev_count": 362,
+      "core_ratio": 0.282,
+      "status": "proposed"
+    },
+    "MAT.food": {
+      "core_count": 254,
+      "dev_count": 1447,
+      "core_ratio": 0.149,
+      "status": "proposed"
+    },
+    "MAT.naked": {
+      "core_count": 16,
+      "dev_count": 15,
+      "core_ratio": 0.516,
+      "status": "proposed"
+    },
+    "MAT.tool": {
+      "core_count": 206,
+      "dev_count": 752,
+      "core_ratio": 0.215,
+      "status": "proposed"
+    },
+    "NAT.flower": {
+      "core_count": 283,
+      "dev_count": 1123,
+      "core_ratio": 0.201,
+      "status": "proposed"
+    },
+    "NAT.river": {
+      "core_count": 44,
+      "dev_count": 221,
+      "core_ratio": 0.166,
+      "status": "proposed"
+    },
+    "NAT.sea": {
+      "core_count": 10,
+      "dev_count": 185,
+      "core_ratio": 0.051,
+      "status": "proposed"
+    },
+    "NAT.tree": {
+      "core_count": 489,
+      "dev_count": 1701,
+      "core_ratio": 0.223,
+      "status": "proposed"
+    },
+    "PER.bitter": {
+      "core_count": 16,
+      "dev_count": 22,
+      "core_ratio": 0.421,
+      "status": "proposed"
+    },
+    "PER.blind": {
+      "core_count": 42,
+      "dev_count": 0,
+      "core_ratio": 1.0,
+      "status": "proposed"
+    },
+    "PER.deaf": {
+      "core_count": 18,
+      "dev_count": 76,
+      "core_ratio": 0.191,
+      "status": "proposed"
+    },
+    "PER.delicious": {
+      "core_count": 62,
+      "dev_count": 20,
+      "core_ratio": 0.756,
+      "status": "proposed"
+    },
+    "PER.feel": {
+      "core_count": 120,
+      "dev_count": 120,
+      "core_ratio": 0.5,
+      "status": "proposed"
+    },
+    "PER.fragrance": {
+      "core_count": 53,
+      "dev_count": 104,
+      "core_ratio": 0.338,
+      "status": "proposed"
+    },
+    "PER.hear": {
+      "core_count": 63,
+      "dev_count": 53,
+      "core_ratio": 0.543,
+      "status": "proposed"
+    },
+    "PER.numb": {
+      "core_count": 30,
+      "dev_count": 14,
+      "core_ratio": 0.682,
+      "status": "proposed"
+    },
+    "PER.odorless": {
+      "core_count": 7,
+      "dev_count": 0,
+      "core_ratio": 1.0,
+      "status": "proposed"
+    },
+    "PER.salty": {
+      "core_count": 18,
+      "dev_count": 38,
+      "core_ratio": 0.321,
+      "status": "proposed"
+    },
+    "PER.see": {
+      "core_count": 85,
+      "dev_count": 84,
+      "core_ratio": 0.503,
+      "status": "proposed"
+    },
+    "PER.smell": {
+      "core_count": 30,
+      "dev_count": 68,
+      "core_ratio": 0.306,
+      "status": "proposed"
+    },
+    "PER.sound": {
+      "core_count": 40,
+      "dev_count": 77,
+      "core_ratio": 0.342,
+      "status": "proposed"
+    },
+    "PER.soundless": {
+      "core_count": 19,
+      "dev_count": 11,
+      "core_ratio": 0.633,
+      "status": "proposed"
+    },
+    "PER.stench": {
+      "core_count": 52,
+      "dev_count": 284,
+      "core_ratio": 0.155,
+      "status": "proposed"
+    },
+    "PER.sweet": {
+      "core_count": 35,
+      "dev_count": 11,
+      "core_ratio": 0.761,
+      "status": "proposed"
+    },
+    "PER.taste": {
+      "core_count": 72,
+      "dev_count": 84,
+      "core_ratio": 0.462,
+      "status": "proposed"
+    },
+    "PER.tasteless": {
+      "core_count": 49,
+      "dev_count": 4,
+      "core_ratio": 0.925,
+      "status": "proposed"
+    },
+    "PER.touch": {
+      "core_count": 201,
+      "dev_count": 455,
+      "core_ratio": 0.306,
+      "status": "proposed"
+    },
+    "PER.untouched": {
+      "core_count": 16,
+      "dev_count": 0,
+      "core_ratio": 1.0,
+      "status": "proposed"
+    },
+    "PRP.aged": {
+      "core_count": 65,
+      "dev_count": 11,
+      "core_ratio": 0.855,
+      "status": "proposed"
+    },
+    "PRP.blunt": {
+      "core_count": 12,
+      "dev_count": 692,
+      "core_ratio": 0.017,
+      "status": "proposed"
+    },
+    "PRP.bright": {
+      "core_count": 77,
+      "dev_count": 0,
+      "core_ratio": 1.0,
+      "status": "proposed"
+    },
+    "PRP.clean": {
+      "core_count": 50,
+      "dev_count": 3,
+      "core_ratio": 0.943,
+      "status": "proposed"
+    },
+    "PRP.clear": {
+      "core_count": 45,
+      "dev_count": 159,
+      "core_ratio": 0.221,
+      "status": "proposed"
+    },
+    "PRP.cold": {
+      "core_count": 57,
+      "dev_count": 64,
+      "core_ratio": 0.471,
+      "status": "proposed"
+    },
+    "PRP.dark": {
+      "core_count": 76,
+      "dev_count": 477,
+      "core_ratio": 0.137,
+      "status": "proposed"
+    },
+    "PRP.deep": {
+      "core_count": 50,
+      "dev_count": 19,
+      "core_ratio": 0.725,
+      "status": "proposed"
+    },
+    "PRP.difficult": {
+      "core_count": 117,
+      "dev_count": 35,
+      "core_ratio": 0.77,
+      "status": "proposed"
+    },
+    "PRP.dirty": {
+      "core_count": 63,
+      "dev_count": 1,
+      "core_ratio": 0.984,
+      "status": "proposed"
+    },
+    "PRP.dry": {
+      "core_count": 54,
+      "dev_count": 690,
+      "core_ratio": 0.073,
+      "status": "proposed"
+    },
+    "PRP.easy": {
+      "core_count": 29,
+      "dev_count": 2,
+      "core_ratio": 0.935,
+      "status": "proposed"
+    },
+    "PRP.far": {
+      "core_count": 33,
+      "dev_count": 198,
+      "core_ratio": 0.143,
+      "status": "proposed"
+    },
+    "PRP.fast": {
+      "core_count": 57,
+      "dev_count": 50,
+      "core_ratio": 0.533,
+      "status": "proposed"
+    },
+    "PRP.hard": {
+      "core_count": 96,
+      "dev_count": 320,
+      "core_ratio": 0.231,
+      "status": "proposed"
+    },
+    "PRP.heavy": {
+      "core_count": 34,
+      "dev_count": 0,
+      "core_ratio": 1.0,
+      "status": "proposed"
+    },
+    "PRP.high": {
+      "core_count": 29,
+      "dev_count": 63,
+      "core_ratio": 0.315,
+      "status": "proposed"
+    },
+    "PRP.hot": {
+      "core_count": 55,
+      "dev_count": 0,
+      "core_ratio": 1.0,
+      "status": "proposed"
+    },
+    "PRP.impossible": {
+      "core_count": 24,
+      "dev_count": 6,
+      "core_ratio": 0.8,
+      "status": "proposed"
+    },
+    "PRP.large": {
+      "core_count": 106,
+      "dev_count": 13,
+      "core_ratio": 0.891,
+      "status": "proposed"
+    },
+    "PRP.light": {
+      "core_count": 15,
+      "dev_count": 8,
+      "core_ratio": 0.652,
+      "status": "proposed"
+    },
+    "PRP.long": {
+      "core_count": 79,
+      "dev_count": 63,
+      "core_ratio": 0.556,
+      "status": "proposed"
+    },
+    "PRP.low": {
+      "core_count": 42,
+      "dev_count": 67,
+      "core_ratio": 0.385,
+      "status": "proposed"
+    },
+    "PRP.multiple": {
+      "core_count": 74,
+      "dev_count": 4,
+      "core_ratio": 0.949,
+      "status": "proposed"
+    },
+    "PRP.murky": {
+      "core_count": 55,
+      "dev_count": 1,
+      "core_ratio": 0.982,
+      "status": "proposed"
+    },
+    "PRP.narrow": {
+      "core_count": 73,
+      "dev_count": 53,
+      "core_ratio": 0.579,
+      "status": "proposed"
+    },
+    "PRP.near": {
+      "core_count": 49,
+      "dev_count": 25,
+      "core_ratio": 0.662,
+      "status": "proposed"
+    },
+    "PRP.new": {
+      "core_count": 49,
+      "dev_count": 2,
+      "core_ratio": 0.961,
+      "status": "proposed"
+    },
+    "PRP.old": {
+      "core_count": 62,
+      "dev_count": 695,
+      "core_ratio": 0.082,
+      "status": "proposed"
+    },
+    "PRP.part": {
+      "core_count": 187,
+      "dev_count": 833,
+      "core_ratio": 0.183,
+      "status": "proposed"
+    },
+    "PRP.possible": {
+      "core_count": 56,
+      "dev_count": 239,
+      "core_ratio": 0.19,
+      "status": "proposed"
+    },
+    "PRP.rough": {
+      "core_count": 135,
+      "dev_count": 8,
+      "core_ratio": 0.944,
+      "status": "proposed"
+    },
+    "PRP.shallow": {
+      "core_count": 80,
+      "dev_count": 243,
+      "core_ratio": 0.248,
+      "status": "proposed"
+    },
+    "PRP.sharp": {
+      "core_count": 82,
+      "dev_count": 108,
+      "core_ratio": 0.432,
+      "status": "proposed"
+    },
+    "PRP.short": {
+      "core_count": 9,
+      "dev_count": 206,
+      "core_ratio": 0.042,
+      "status": "proposed"
+    },
+    "PRP.single": {
+      "core_count": 29,
+      "dev_count": 86,
+      "core_ratio": 0.252,
+      "status": "proposed"
+    },
+    "PRP.slow": {
+      "core_count": 44,
+      "dev_count": 57,
+      "core_ratio": 0.436,
+      "status": "proposed"
+    },
+    "PRP.small": {
+      "core_count": 82,
+      "dev_count": 126,
+      "core_ratio": 0.394,
+      "status": "proposed"
+    },
+    "PRP.smooth": {
+      "core_count": 55,
+      "dev_count": 763,
+      "core_ratio": 0.067,
+      "status": "proposed"
+    },
+    "PRP.soft": {
+      "core_count": 78,
+      "dev_count": 28,
+      "core_ratio": 0.736,
+      "status": "proposed"
+    },
+    "PRP.strong": {
+      "core_count": 48,
+      "dev_count": 7,
+      "core_ratio": 0.873,
+      "status": "proposed"
+    },
+    "PRP.weak": {
+      "core_count": 39,
+      "dev_count": 23,
+      "core_ratio": 0.629,
+      "status": "proposed"
+    },
+    "PRP.wet": {
+      "core_count": 59,
+      "dev_count": 52,
+      "core_ratio": 0.532,
+      "status": "proposed"
+    },
+    "PRP.whole": {
+      "core_count": 151,
+      "dev_count": 1388,
+      "core_ratio": 0.098,
+      "status": "proposed"
+    },
+    "PRP.wide": {
+      "core_count": 25,
+      "dev_count": 115,
+      "core_ratio": 0.179,
+      "status": "proposed"
+    },
+    "PRP.young": {
+      "core_count": 72,
+      "dev_count": 692,
+      "core_ratio": 0.094,
+      "status": "proposed"
+    },
+    "REL.alone": {
+      "core_count": 30,
+      "dev_count": 14,
+      "core_ratio": 0.682,
+      "status": "proposed"
+    },
+    "REL.different": {
+      "core_count": 32,
+      "dev_count": 4,
+      "core_ratio": 0.889,
+      "status": "proposed"
+    },
+    "REL.same": {
+      "core_count": 64,
+      "dev_count": 789,
+      "core_ratio": 0.075,
+      "status": "proposed"
+    },
+    "REL.together": {
+      "core_count": 53,
+      "dev_count": 42,
+      "core_ratio": 0.558,
+      "status": "proposed"
+    },
+    "SOC.attack": {
+      "core_count": 45,
+      "dev_count": 182,
+      "core_ratio": 0.198,
+      "status": "proposed"
+    },
+    "SOC.awake": {
+      "core_count": 51,
+      "dev_count": 826,
+      "core_ratio": 0.058,
+      "status": "proposed"
+    },
+    "SOC.citizen": {
+      "core_count": 55,
+      "dev_count": 131,
+      "core_ratio": 0.296,
+      "status": "proposed"
+    },
+    "SOC.city": {
+      "core_count": 19,
+      "dev_count": 26,
+      "core_ratio": 0.422,
+      "status": "proposed"
+    },
+    "SOC.criticize": {
+      "core_count": 139,
+      "dev_count": 132,
+      "core_ratio": 0.513,
+      "status": "proposed"
+    },
+    "SOC.defend": {
+      "core_count": 91,
+      "dev_count": 80,
+      "core_ratio": 0.532,
+      "status": "proposed"
+    },
+    "SOC.family": {
+      "core_count": 167,
+      "dev_count": 3744,
+      "core_ratio": 0.043,
+      "status": "proposed"
+    },
+    "SOC.homeless": {
+      "core_count": 651,
+      "dev_count": 777,
+      "core_ratio": 0.456,
+      "status": "proposed"
+    },
+    "SOC.individual": {
+      "core_count": 1962,
+      "dev_count": 5234,
+      "core_ratio": 0.273,
+      "status": "proposed"
+    },
+    "SOC.nation": {
+      "core_count": 142,
+      "dev_count": 250,
+      "core_ratio": 0.362,
+      "status": "proposed"
+    },
+    "SOC.obstruct": {
+      "core_count": 98,
+      "dev_count": 82,
+      "core_ratio": 0.544,
+      "status": "proposed"
+    },
+    "SOC.official": {
+      "core_count": 192,
+      "dev_count": 307,
+      "core_ratio": 0.385,
+      "status": "proposed"
+    },
+    "SOC.pass": {
+      "core_count": 57,
+      "dev_count": 372,
+      "core_ratio": 0.133,
+      "status": "proposed"
+    },
+    "SOC.praise": {
+      "core_count": 111,
+      "dev_count": 164,
+      "core_ratio": 0.404,
+      "status": "proposed"
+    },
+    "SOC.public": {
+      "core_count": 30,
+      "dev_count": 77,
+      "core_ratio": 0.28,
+      "status": "proposed"
+    },
+    "SOC.refuse": {
+      "core_count": 104,
+      "dev_count": 155,
+      "core_ratio": 0.402,
+      "status": "proposed"
+    },
+    "SOC.request": {
+      "core_count": 116,
+      "dev_count": 219,
+      "core_ratio": 0.346,
+      "status": "proposed"
+    },
+    "SOC.rest": {
+      "core_count": 51,
+      "dev_count": 209,
+      "core_ratio": 0.196,
+      "status": "proposed"
+    },
+    "SOC.sleep": {
+      "core_count": 44,
+      "dev_count": 288,
+      "core_ratio": 0.133,
+      "status": "proposed"
+    },
+    "SOC.stateless": {
+      "core_count": 17,
+      "dev_count": 18,
+      "core_ratio": 0.486,
+      "status": "proposed"
+    },
+    "SOC.village": {
+      "core_count": 30,
+      "dev_count": 16,
+      "core_ratio": 0.652,
+      "status": "proposed"
+    },
+    "SOC.work": {
+      "core_count": 369,
+      "dev_count": 941,
+      "core_ratio": 0.282,
+      "status": "proposed"
+    },
+    "SPC.direction": {
+      "core_count": 86,
+      "dev_count": 488,
+      "core_ratio": 0.15,
+      "status": "proposed"
+    },
+    "SPC.inside": {
+      "core_count": 20,
+      "dev_count": 70,
+      "core_ratio": 0.222,
+      "status": "proposed"
+    },
+    "SPC.nowhere": {
+      "core_count": 19,
+      "dev_count": 9,
+      "core_ratio": 0.679,
+      "status": "proposed"
+    },
+    "SPC.outside": {
+      "core_count": 19,
+      "dev_count": 72,
+      "core_ratio": 0.209,
+      "status": "proposed"
+    },
+    "SPC.place": {
+      "core_count": 104,
+      "dev_count": 845,
+      "core_ratio": 0.11,
+      "status": "proposed"
+    },
+    "SPC.reverse": {
+      "core_count": 45,
+      "dev_count": 121,
+      "core_ratio": 0.271,
+      "status": "proposed"
+    },
+    "STA.comfort": {
+      "core_count": 45,
+      "dev_count": 429,
+      "core_ratio": 0.095,
+      "status": "proposed"
+    },
+    "STA.danger": {
+      "core_count": 51,
+      "dev_count": 243,
+      "core_ratio": 0.173,
+      "status": "proposed"
+    },
+    "STA.healing": {
+      "core_count": 86,
+      "dev_count": 336,
+      "core_ratio": 0.204,
+      "status": "proposed"
+    },
+    "STA.health": {
+      "core_count": 35,
+      "dev_count": 193,
+      "core_ratio": 0.154,
+      "status": "proposed"
+    },
+    "STA.illness": {
+      "core_count": 236,
+      "dev_count": 786,
+      "core_ratio": 0.231,
+      "status": "proposed"
+    },
+    "STA.pain": {
+      "core_count": 198,
+      "dev_count": 363,
+      "core_ratio": 0.353,
+      "status": "proposed"
+    },
+    "STA.peace": {
+      "core_count": 41,
+      "dev_count": 27,
+      "core_ratio": 0.603,
+      "status": "proposed"
+    },
+    "STA.poverty": {
+      "core_count": 67,
+      "dev_count": 96,
+      "core_ratio": 0.411,
+      "status": "proposed"
+    },
+    "STA.war": {
+      "core_count": 95,
+      "dev_count": 148,
+      "core_ratio": 0.391,
+      "status": "proposed"
+    },
+    "STA.wealth": {
+      "core_count": 33,
+      "dev_count": 44,
+      "core_ratio": 0.429,
+      "status": "proposed"
+    },
+    "STA.wound": {
+      "core_count": 136,
+      "dev_count": 193,
+      "core_ratio": 0.413,
+      "status": "proposed"
+    },
+    "TIM.appear": {
+      "core_count": 64,
+      "dev_count": 212,
+      "core_ratio": 0.232,
+      "status": "proposed"
+    },
+    "TIM.come": {
+      "core_count": 66,
+      "dev_count": 296,
+      "core_ratio": 0.182,
+      "status": "proposed"
+    },
+    "TIM.indefinite": {
+      "core_count": 24,
+      "dev_count": 3,
+      "core_ratio": 0.889,
+      "status": "proposed"
+    },
+    "TIM.moment": {
+      "core_count": 38,
+      "dev_count": 144,
+      "core_ratio": 0.209,
+      "status": "proposed"
+    },
+    "TIM.now": {
+      "core_count": 33,
+      "dev_count": 68,
+      "core_ratio": 0.327,
+      "status": "proposed"
+    },
+    "TIM.past": {
+      "core_count": 42,
+      "dev_count": 189,
+      "core_ratio": 0.182,
+      "status": "proposed"
+    },
+    "TIM.period": {
+      "core_count": 273,
+      "dev_count": 619,
+      "core_ratio": 0.306,
+      "status": "proposed"
+    },
+    "VAL.beauty": {
+      "core_count": 83,
+      "dev_count": 181,
+      "core_ratio": 0.314,
+      "status": "proposed"
+    },
+    "VAL.correct": {
+      "core_count": 94,
+      "dev_count": 786,
+      "core_ratio": 0.107,
+      "status": "proposed"
+    },
+    "VAL.evil": {
+      "core_count": 93,
+      "dev_count": 59,
+      "core_ratio": 0.612,
+      "status": "proposed"
+    },
+    "VAL.falsehood": {
+      "core_count": 74,
+      "dev_count": 123,
+      "core_ratio": 0.376,
+      "status": "proposed"
+    },
+    "VAL.good": {
+      "core_count": 48,
+      "dev_count": 64,
+      "core_ratio": 0.429,
+      "status": "proposed"
+    },
+    "VAL.incorrect": {
+      "core_count": 21,
+      "dev_count": 6,
+      "core_ratio": 0.778,
+      "status": "proposed"
+    },
+    "VAL.profane": {
+      "core_count": 74,
+      "dev_count": 703,
+      "core_ratio": 0.095,
+      "status": "proposed"
+    },
+    "VAL.sacred": {
+      "core_count": 47,
+      "dev_count": 39,
+      "core_ratio": 0.547,
+      "status": "proposed"
+    },
+    "VAL.truth": {
+      "core_count": 31,
+      "dev_count": 263,
+      "core_ratio": 0.105,
+      "status": "proposed"
+    },
+    "VAL.ugliness": {
+      "core_count": 50,
+      "dev_count": 69,
+      "core_ratio": 0.42,
+      "status": "proposed"
+    },
+    "WLD.art": {
+      "core_count": 117,
+      "dev_count": 142,
+      "core_ratio": 0.452,
+      "status": "proposed"
+    },
+    "WLD.artless": {
+      "core_count": 98,
+      "dev_count": 3,
+      "core_ratio": 0.97,
+      "status": "proposed"
+    },
+    "WLD.culture": {
+      "core_count": 18,
+      "dev_count": 98,
+      "core_ratio": 0.155,
+      "status": "proposed"
+    },
+    "WLD.nonscience": {
+      "core_count": 237,
+      "dev_count": 505,
+      "core_ratio": 0.319,
+      "status": "proposed"
+    },
+    "WLD.outer_realm": {
+      "core_count": 20,
+      "dev_count": 70,
+      "core_ratio": 0.222,
+      "status": "proposed"
+    },
+    "WLD.realm": {
+      "core_count": 26,
+      "dev_count": 63,
+      "core_ratio": 0.292,
+      "status": "proposed"
+    },
+    "WLD.religion": {
+      "core_count": 121,
+      "dev_count": 237,
+      "core_ratio": 0.338,
+      "status": "proposed"
+    },
+    "WLD.science": {
+      "core_count": 119,
+      "dev_count": 303,
+      "core_ratio": 0.282,
+      "status": "proposed"
+    },
+    "WLD.secular": {
+      "core_count": 27,
+      "dev_count": 23,
+      "core_ratio": 0.54,
+      "status": "proposed"
+    },
+    "WLD.technique": {
+      "core_count": 86,
+      "dev_count": 143,
+      "core_ratio": 0.376,
+      "status": "proposed"
+    },
+    "WLD.uncultured": {
+      "core_count": 26,
+      "dev_count": 0,
+      "core_ratio": 1.0,
+      "status": "proposed"
+    },
+    "WLD.unskilled": {
+      "core_count": 99,
+      "dev_count": 649,
+      "core_ratio": 0.132,
+      "status": "proposed"
+    }
+  }
+}

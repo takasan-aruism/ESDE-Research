@@ -1,0 +1,1853 @@
+{
+  "atom_id": "PRP.cold",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 121,
+  "pos_counts": {
+    "adj": 35,
+    "n": 82,
+    "v": 4
+  },
+  "source_counts": {
+    "0_seed": 13,
+    "6_derivational": 12,
+    "7_similar_to": 33,
+    "2_hypernym_d1": 13,
+    "3_hyponym_d1": 10,
+    "4_hyponym_d2": 1,
+    "8_also_see": 2,
+    "10_sibling": 48
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 12,
+      "words": [
+        "cold(adj)",
+        "cold(n)",
+        "common cold(n)",
+        "coldness(n)",
+        "chili(n)",
+        "chili pepper(n)",
+        "chilli(n)",
+        "chilly(n)",
+        "chile(n)",
+        "chilly(adj)",
+        "freeze(n)",
+        "freezing(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 13,
+      "words": [
+        "communicable disease(n)",
+        "respiratory disease(n)",
+        "respiratory illness(n)",
+        "respiratory disorder(n)",
+        "temperature(n)",
+        "hot pepper(n)",
+        "phase change(n)",
+        "phase transition(n)",
+        "state change(n)",
+        "physical change(n)",
+        "cooling(n)",
+        "chilling(n)",
+        "temperature reduction(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 10,
+      "words": [
+        "head cold(n)",
+        "jalapeno(n)",
+        "jalapeno pepper(n)",
+        "cayenne(n)",
+        "cayenne pepper(n)",
+        "freeze-drying(n)",
+        "lyophilization(n)",
+        "lyophilisation(n)",
+        "frost(n)",
+        "icing(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 1,
+      "words": [
+        "chipotle(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 5,
+      "words": [
+        "freeze(v)",
+        "lyophilize(v)",
+        "lyophilise(v)",
+        "frosty(adj)",
+        "frost(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 30,
+      "words": [
+        "unemotional(adj)",
+        "algid(adj)",
+        "frigorific(adj)",
+        "frore(adj)",
+        "arctic(adj)",
+        "frigid(adj)",
+        "gelid(adj)",
+        "glacial(adj)",
+        "icy(adj)",
+        "polar(adj)",
+        "refrigerant(adj)",
+        "refrigerating(adj)",
+        "stone-cold(adj)",
+        "refrigerated(adj)",
+        "rimed(adj)",
+        "rimy(adj)",
+        "crisp(adj)",
+        "nipping(adj)",
+        "nippy(adj)",
+        "snappy(adj)",
+        "unheated(adj)",
+        "unwarmed(adj)",
+        "ice-cold(adj)",
+        "shivery(adj)",
+        "parky(adj)",
+        "acold(adj)",
+        "bleak(adj)",
+        "cutting(adj)",
+        "raw(adj)",
+        "heatless(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 2,
+      "words": [
+        "cool(adj)",
+        "frozen(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 48,
+      "words": [
+        "contagious disease(n)",
+        "contagion(n)",
+        "infectious disease(n)",
+        "asthma(n)",
+        "asthma attack(n)",
+        "bronchial asthma(n)",
+        "emphysema(n)",
+        "pulmonary emphysema(n)",
+        "pneumonia(n)",
+        "influenza(n)",
+        "flu(n)",
+        "grippe(n)",
+        "whooping cough(n)",
+        "pertussis(n)",
+        "atypical pneumonia(n)",
+        "primary atypical pneumonia(n)",
+        "mycoplasmal pneumonia(n)",
+        "interstitial pneumonia(n)",
+        "bronchitis(n)",
+        "pneumoconiosis(n)",
+        "pneumonoconiosis(n)",
+        "severe acute respiratory syndrome(n)",
+        "SARS(n)",
+        "respiratory distress syndrome(n)",
+        "respiratory distress syndrome of the newborn(n)",
+        "hyaline membrane disease(n)",
+        "adult respiratory distress syndrome(n)",
+        "ARDS(n)",
+        "wet lung(n)",
+        "white lung(n)",
+        "heat(n)",
+        "warmth(n)",
+        "comfort zone(n)",
+        "tabasco(n)",
+        "red pepper(n)",
+        "thaw(n)",
+        "melt(n)",
+        "thawing(n)",
+        "melting(n)",
+        "vaporization(n)",
+        "vaporisation(n)",
+        "vapor(n)",
+        "vapour(n)",
+        "evaporation(n)",
+        "liquefaction(n)",
+        "heat dissipation(n)",
+        "refrigeration(n)",
+        "infrigidation(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "acold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "acold.s.01"
+        }
+      ],
+      "definition": "of persons; feeling cold; - Shakespeare"
+    },
+    {
+      "lemma": "adult respiratory distress syndrome",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "adult_respiratory_distress_syndrome.n.01"
+        }
+      ],
+      "definition": "acute lung injury characterized by coughing and rales; inflammation of the lungs which become stiff and fibrous and cannot exchange oxygen; occurs among persons exposed to irritants such as corrosive chemical vapors or ammonia or chlorine etc."
+    },
+    {
+      "lemma": "algid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "algid.s.01"
+        }
+      ],
+      "definition": "chilly"
+    },
+    {
+      "lemma": "arctic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "arctic.s.02"
+        }
+      ],
+      "definition": "extremely cold"
+    },
+    {
+      "lemma": "ARDS",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "adult_respiratory_distress_syndrome.n.01"
+        }
+      ],
+      "definition": "acute lung injury characterized by coughing and rales; inflammation of the lungs which become stiff and fibrous and cannot exchange oxygen; occurs among persons exposed to irritants such as corrosive chemical vapors or ammonia or chlorine etc."
+    },
+    {
+      "lemma": "asthma",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "asthma.n.01"
+        }
+      ],
+      "definition": "respiratory disorder characterized by wheezing; usually of allergic origin"
+    },
+    {
+      "lemma": "asthma attack",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "asthma.n.01"
+        }
+      ],
+      "definition": "respiratory disorder characterized by wheezing; usually of allergic origin"
+    },
+    {
+      "lemma": "atypical pneumonia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "atypical_pneumonia.n.01"
+        }
+      ],
+      "definition": "an acute respiratory disease marked by high fever and coughing; caused by mycoplasma; primarily affecting children and young adults"
+    },
+    {
+      "lemma": "bleak",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "bleak.s.03"
+        }
+      ],
+      "definition": "unpleasantly cold and damp"
+    },
+    {
+      "lemma": "bronchial asthma",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "asthma.n.01"
+        }
+      ],
+      "definition": "respiratory disorder characterized by wheezing; usually of allergic origin"
+    },
+    {
+      "lemma": "bronchitis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "bronchitis.n.01"
+        }
+      ],
+      "definition": "inflammation of the membranes lining the bronchial tubes"
+    },
+    {
+      "lemma": "cayenne",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "chili.n.02",
+          "via_synset": "cayenne.n.03"
+        }
+      ],
+      "definition": "a long and often twisted hot red pepper"
+    },
+    {
+      "lemma": "cayenne pepper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "chili.n.02",
+          "via_synset": "cayenne.n.03"
+        }
+      ],
+      "definition": "a long and often twisted hot red pepper"
+    },
+    {
+      "lemma": "chile",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "chili.n.02",
+          "via_synset": "chili.n.02"
+        }
+      ],
+      "definition": "very hot and finely tapering pepper of special pungency"
+    },
+    {
+      "lemma": "chili",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "chili.n.02",
+          "via_synset": "chili.n.02"
+        }
+      ],
+      "definition": "very hot and finely tapering pepper of special pungency"
+    },
+    {
+      "lemma": "chili pepper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "chili.n.02",
+          "via_synset": "chili.n.02"
+        }
+      ],
+      "definition": "very hot and finely tapering pepper of special pungency"
+    },
+    {
+      "lemma": "chilli",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "chili.n.02",
+          "via_synset": "chili.n.02"
+        }
+      ],
+      "definition": "very hot and finely tapering pepper of special pungency"
+    },
+    {
+      "lemma": "chilling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "freeze.n.01",
+          "via_synset": "cooling.n.01"
+        }
+      ],
+      "definition": "the process of becoming cooler; a falling temperature"
+    },
+    {
+      "lemma": "chilly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "chilly.s.01",
+          "via_synset": "chilly.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "chilly.s.02"
+        }
+      ],
+      "definition": "not characterized by emotion; -C.W.Cunningham"
+    },
+    {
+      "lemma": "chilly",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "chili.n.02",
+          "via_synset": "chili.n.02"
+        }
+      ],
+      "definition": "very hot and finely tapering pepper of special pungency"
+    },
+    {
+      "lemma": "chipotle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "jalapeno.n.02",
+          "via_synset": "chipotle.n.01"
+        }
+      ],
+      "definition": "a ripe jalapeno that has been dried for use in cooking"
+    },
+    {
+      "lemma": "cold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "cold.a.01",
+          "via_synset": "cold.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cold.n.03",
+          "via_synset": "cold.a.01"
+        }
+      ],
+      "definition": "having a low or inadequate temperature or feeling a sensation of coldness or having been made cold by e.g. ice or refrigeration"
+    },
+    {
+      "lemma": "cold",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "cold.n.01",
+          "via_synset": "cold.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "cold.n.03",
+          "via_synset": "cold.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cold.a.01",
+          "via_synset": "cold.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cold.a.01",
+          "via_synset": "coldness.n.03"
+        }
+      ],
+      "definition": "a mild viral infection involving the nose and respiratory passages (but not the lungs)"
+    },
+    {
+      "lemma": "coldness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "cold.n.03",
+          "via_synset": "cold.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cold.a.01",
+          "via_synset": "cold.n.03"
+        }
+      ],
+      "definition": "the sensation produced by low temperatures"
+    },
+    {
+      "lemma": "comfort zone",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "temperature.n.02",
+          "via_synset": "comfort_zone.n.01"
+        }
+      ],
+      "definition": "the temperature range (between 28 and 30 degrees Centigrade) at which the naked human body is able to maintain a heat balance without shivering or sweating"
+    },
+    {
+      "lemma": "common cold",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "cold.n.01",
+          "via_synset": "cold.n.01"
+        }
+      ],
+      "definition": "a mild viral infection involving the nose and respiratory passages (but not the lungs)"
+    },
+    {
+      "lemma": "communicable disease",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "cold.n.01",
+          "via_synset": "communicable_disease.n.01"
+        }
+      ],
+      "definition": "a disease that can be communicated from one person to another"
+    },
+    {
+      "lemma": "contagion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "communicable_disease.n.01",
+          "via_synset": "contagious_disease.n.01"
+        }
+      ],
+      "definition": "any disease easily transmitted by contact"
+    },
+    {
+      "lemma": "contagious disease",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "communicable_disease.n.01",
+          "via_synset": "contagious_disease.n.01"
+        }
+      ],
+      "definition": "any disease easily transmitted by contact"
+    },
+    {
+      "lemma": "cool",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "cold.a.01",
+          "via_synset": "cool.a.01"
+        }
+      ],
+      "definition": "neither warm nor very cold; giving relief from heat"
+    },
+    {
+      "lemma": "cooling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "freeze.n.01",
+          "via_synset": "cooling.n.01"
+        }
+      ],
+      "definition": "the process of becoming cooler; a falling temperature"
+    },
+    {
+      "lemma": "crisp",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "crisp.s.03"
+        }
+      ],
+      "definition": "pleasantly cold and invigorating"
+    },
+    {
+      "lemma": "cutting",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "bleak.s.03"
+        }
+      ],
+      "definition": "unpleasantly cold and damp"
+    },
+    {
+      "lemma": "emphysema",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "emphysema.n.01"
+        }
+      ],
+      "definition": "an abnormal condition of the lungs marked by decreased respiratory function; associated with smoking or chronic bronchitis or old age"
+    },
+    {
+      "lemma": "evaporation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "phase_change.n.01",
+          "via_synset": "vaporization.n.02"
+        }
+      ],
+      "definition": "the process of becoming a vapor"
+    },
+    {
+      "lemma": "flu",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "influenza.n.01"
+        }
+      ],
+      "definition": "an acute febrile highly contagious viral disease"
+    },
+    {
+      "lemma": "freeze",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "freeze.n.01",
+          "via_synset": "freeze.n.01"
+        }
+      ],
+      "definition": "the withdrawal of heat to change something from a liquid to a solid"
+    },
+    {
+      "lemma": "freeze",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "freeze.n.01",
+          "via_synset": "freeze.v.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "freeze.n.01",
+          "via_synset": "freeze.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "freeze.n.01",
+          "via_synset": "freeze.v.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "freeze.n.01",
+          "via_synset": "freeze.v.07"
+        }
+      ],
+      "definition": "cause to freeze"
+    },
+    {
+      "lemma": "freeze-drying",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "freeze.n.01",
+          "via_synset": "freeze-drying.n.01"
+        }
+      ],
+      "definition": "a method of drying food or blood plasma or pharmaceuticals or tissue without destroying their physical structure; material is frozen and then warmed in a vacuum so that the ice sublimes"
+    },
+    {
+      "lemma": "freezing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "freeze.n.01",
+          "via_synset": "freeze.n.01"
+        }
+      ],
+      "definition": "the withdrawal of heat to change something from a liquid to a solid"
+    },
+    {
+      "lemma": "frigid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "arctic.s.02"
+        }
+      ],
+      "definition": "extremely cold"
+    },
+    {
+      "lemma": "frigorific",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "frigorific.s.01"
+        }
+      ],
+      "definition": "causing cold; cooling or chilling"
+    },
+    {
+      "lemma": "frore",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "frore.s.01"
+        }
+      ],
+      "definition": "very cold"
+    },
+    {
+      "lemma": "frost",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "freeze.n.01",
+          "via_synset": "frost.n.03"
+        }
+      ],
+      "definition": "the formation of frost or ice on a surface"
+    },
+    {
+      "lemma": "frost",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "frost.n.03",
+          "via_synset": "frost.v.03"
+        }
+      ],
+      "definition": "cover with frost"
+    },
+    {
+      "lemma": "frosty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "frost.n.03",
+          "via_synset": "frosty.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "frosty.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "crisp.s.03"
+        }
+      ],
+      "definition": "covered with frost; ; -Wm.Faulkner"
+    },
+    {
+      "lemma": "frozen",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "cold.a.01",
+          "via_synset": "frozen.a.01"
+        }
+      ],
+      "definition": "turned into ice; affected by freezing or by long and severe cold"
+    },
+    {
+      "lemma": "gelid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "arctic.s.02"
+        }
+      ],
+      "definition": "extremely cold"
+    },
+    {
+      "lemma": "glacial",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "arctic.s.02"
+        }
+      ],
+      "definition": "extremely cold"
+    },
+    {
+      "lemma": "grippe",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "influenza.n.01"
+        }
+      ],
+      "definition": "an acute febrile highly contagious viral disease"
+    },
+    {
+      "lemma": "head cold",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "cold.n.01",
+          "via_synset": "head_cold.n.01"
+        }
+      ],
+      "definition": "a common cold affecting the nasal passages and resulting in congestion and sneezing and headache"
+    },
+    {
+      "lemma": "heat",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "temperature.n.02",
+          "via_synset": "heat.n.03"
+        }
+      ],
+      "definition": "the sensation caused by heat energy"
+    },
+    {
+      "lemma": "heat dissipation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cooling.n.01",
+          "via_synset": "heat_dissipation.n.01"
+        }
+      ],
+      "definition": "dissipation of heat"
+    },
+    {
+      "lemma": "heatless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "heatless.s.01"
+        }
+      ],
+      "definition": "without generating heat"
+    },
+    {
+      "lemma": "hot pepper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "chili.n.02",
+          "via_synset": "hot_pepper.n.02"
+        }
+      ],
+      "definition": "any of various pungent capsicum fruits"
+    },
+    {
+      "lemma": "hyaline membrane disease",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "respiratory_distress_syndrome.n.01"
+        }
+      ],
+      "definition": "an acute lung disease of the newborn (especially the premature newborn); lungs cannot expand because of a wetting agent is lacking; characterized by rapid shallow breathing and cyanosis and the formation of a glassy hyaline membrane over the alveoli"
+    },
+    {
+      "lemma": "ice-cold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "ice-cold.s.01"
+        }
+      ],
+      "definition": "as cold as ice"
+    },
+    {
+      "lemma": "icing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "freeze.n.01",
+          "via_synset": "frost.n.03"
+        }
+      ],
+      "definition": "the formation of frost or ice on a surface"
+    },
+    {
+      "lemma": "icy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "arctic.s.02"
+        }
+      ],
+      "definition": "extremely cold"
+    },
+    {
+      "lemma": "infectious disease",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "communicable_disease.n.01",
+          "via_synset": "infectious_disease.n.01"
+        }
+      ],
+      "definition": "a disease transmitted only by a specific kind of contact"
+    },
+    {
+      "lemma": "influenza",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "influenza.n.01"
+        }
+      ],
+      "definition": "an acute febrile highly contagious viral disease"
+    },
+    {
+      "lemma": "infrigidation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cooling.n.01",
+          "via_synset": "refrigeration.n.01"
+        }
+      ],
+      "definition": "the process of cooling or freezing (e.g., food) for preservative purposes"
+    },
+    {
+      "lemma": "interstitial pneumonia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "interstitial_pneumonia.n.01"
+        }
+      ],
+      "definition": "chronic lung disease affecting the interstitial tissue of the lungs"
+    },
+    {
+      "lemma": "jalapeno",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "chili.n.02",
+          "via_synset": "jalapeno.n.02"
+        }
+      ],
+      "definition": "hot green or red pepper of southwestern United States and Mexico"
+    },
+    {
+      "lemma": "jalapeno pepper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "chili.n.02",
+          "via_synset": "jalapeno.n.02"
+        }
+      ],
+      "definition": "hot green or red pepper of southwestern United States and Mexico"
+    },
+    {
+      "lemma": "liquefaction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "phase_change.n.01",
+          "via_synset": "liquefaction.n.01"
+        }
+      ],
+      "definition": "the conversion of a solid or a gas into a liquid"
+    },
+    {
+      "lemma": "lyophilisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "freeze.n.01",
+          "via_synset": "freeze-drying.n.01"
+        }
+      ],
+      "definition": "a method of drying food or blood plasma or pharmaceuticals or tissue without destroying their physical structure; material is frozen and then warmed in a vacuum so that the ice sublimes"
+    },
+    {
+      "lemma": "lyophilise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "freeze-drying.n.01",
+          "via_synset": "lyophilize.v.01"
+        }
+      ],
+      "definition": "to dry (blood, serum, or tissue) by freezing in a high vacuum"
+    },
+    {
+      "lemma": "lyophilization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "freeze.n.01",
+          "via_synset": "freeze-drying.n.01"
+        }
+      ],
+      "definition": "a method of drying food or blood plasma or pharmaceuticals or tissue without destroying their physical structure; material is frozen and then warmed in a vacuum so that the ice sublimes"
+    },
+    {
+      "lemma": "lyophilize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "freeze-drying.n.01",
+          "via_synset": "lyophilize.v.01"
+        }
+      ],
+      "definition": "to dry (blood, serum, or tissue) by freezing in a high vacuum"
+    },
+    {
+      "lemma": "melt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "phase_change.n.01",
+          "via_synset": "thaw.n.01"
+        }
+      ],
+      "definition": "the process whereby heat changes something from a solid to a liquid"
+    },
+    {
+      "lemma": "melting",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "phase_change.n.01",
+          "via_synset": "thaw.n.01"
+        }
+      ],
+      "definition": "the process whereby heat changes something from a solid to a liquid"
+    },
+    {
+      "lemma": "mycoplasmal pneumonia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "atypical_pneumonia.n.01"
+        }
+      ],
+      "definition": "an acute respiratory disease marked by high fever and coughing; caused by mycoplasma; primarily affecting children and young adults"
+    },
+    {
+      "lemma": "nipping",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "crisp.s.03"
+        }
+      ],
+      "definition": "pleasantly cold and invigorating"
+    },
+    {
+      "lemma": "nippy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "crisp.s.03"
+        }
+      ],
+      "definition": "pleasantly cold and invigorating"
+    },
+    {
+      "lemma": "parky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "chilly.s.02"
+        }
+      ],
+      "definition": "appreciably or disagreeably cold"
+    },
+    {
+      "lemma": "pertussis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "whooping_cough.n.01"
+        }
+      ],
+      "definition": "a disease of the respiratory mucous membrane"
+    },
+    {
+      "lemma": "phase change",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "freeze.n.01",
+          "via_synset": "phase_change.n.01"
+        }
+      ],
+      "definition": "a change from one state (solid or liquid or gas) to another without a change in chemical composition"
+    },
+    {
+      "lemma": "phase transition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "freeze.n.01",
+          "via_synset": "phase_change.n.01"
+        }
+      ],
+      "definition": "a change from one state (solid or liquid or gas) to another without a change in chemical composition"
+    },
+    {
+      "lemma": "physical change",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "freeze.n.01",
+          "via_synset": "phase_change.n.01"
+        }
+      ],
+      "definition": "a change from one state (solid or liquid or gas) to another without a change in chemical composition"
+    },
+    {
+      "lemma": "pneumoconiosis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "pneumoconiosis.n.01"
+        }
+      ],
+      "definition": "chronic respiratory disease caused by inhaling metallic or mineral particles"
+    },
+    {
+      "lemma": "pneumonia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "pneumonia.n.01"
+        }
+      ],
+      "definition": "respiratory disease characterized by inflammation of the lung parenchyma (excluding the bronchi) with congestion caused by viruses or bacteria or irritants"
+    },
+    {
+      "lemma": "pneumonoconiosis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "pneumoconiosis.n.01"
+        }
+      ],
+      "definition": "chronic respiratory disease caused by inhaling metallic or mineral particles"
+    },
+    {
+      "lemma": "polar",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "arctic.s.02"
+        }
+      ],
+      "definition": "extremely cold"
+    },
+    {
+      "lemma": "primary atypical pneumonia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "atypical_pneumonia.n.01"
+        }
+      ],
+      "definition": "an acute respiratory disease marked by high fever and coughing; caused by mycoplasma; primarily affecting children and young adults"
+    },
+    {
+      "lemma": "pulmonary emphysema",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "emphysema.n.01"
+        }
+      ],
+      "definition": "an abnormal condition of the lungs marked by decreased respiratory function; associated with smoking or chronic bronchitis or old age"
+    },
+    {
+      "lemma": "raw",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "bleak.s.03"
+        }
+      ],
+      "definition": "unpleasantly cold and damp"
+    },
+    {
+      "lemma": "red pepper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "hot_pepper.n.02",
+          "via_synset": "tabasco.n.03"
+        }
+      ],
+      "definition": "very hot red peppers; usually long and thin; some very small"
+    },
+    {
+      "lemma": "refrigerant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "refrigerant.s.01"
+        }
+      ],
+      "definition": "causing cooling or freezing"
+    },
+    {
+      "lemma": "refrigerated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "refrigerated.s.01"
+        }
+      ],
+      "definition": "made or kept cold by refrigeration"
+    },
+    {
+      "lemma": "refrigerating",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "refrigerant.s.01"
+        }
+      ],
+      "definition": "causing cooling or freezing"
+    },
+    {
+      "lemma": "refrigeration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cooling.n.01",
+          "via_synset": "refrigeration.n.01"
+        }
+      ],
+      "definition": "the process of cooling or freezing (e.g., food) for preservative purposes"
+    },
+    {
+      "lemma": "respiratory disease",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "cold.n.01",
+          "via_synset": "respiratory_disease.n.01"
+        }
+      ],
+      "definition": "a disease affecting the respiratory system"
+    },
+    {
+      "lemma": "respiratory disorder",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "cold.n.01",
+          "via_synset": "respiratory_disease.n.01"
+        }
+      ],
+      "definition": "a disease affecting the respiratory system"
+    },
+    {
+      "lemma": "respiratory distress syndrome",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "respiratory_distress_syndrome.n.01"
+        }
+      ],
+      "definition": "an acute lung disease of the newborn (especially the premature newborn); lungs cannot expand because of a wetting agent is lacking; characterized by rapid shallow breathing and cyanosis and the formation of a glassy hyaline membrane over the alveoli"
+    },
+    {
+      "lemma": "respiratory distress syndrome of the newborn",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "respiratory_distress_syndrome.n.01"
+        }
+      ],
+      "definition": "an acute lung disease of the newborn (especially the premature newborn); lungs cannot expand because of a wetting agent is lacking; characterized by rapid shallow breathing and cyanosis and the formation of a glassy hyaline membrane over the alveoli"
+    },
+    {
+      "lemma": "respiratory illness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "cold.n.01",
+          "via_synset": "respiratory_disease.n.01"
+        }
+      ],
+      "definition": "a disease affecting the respiratory system"
+    },
+    {
+      "lemma": "rimed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "frosty.s.02"
+        }
+      ],
+      "definition": "covered with frost; ; -Wm.Faulkner"
+    },
+    {
+      "lemma": "rimy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "frosty.s.02"
+        }
+      ],
+      "definition": "covered with frost; ; -Wm.Faulkner"
+    },
+    {
+      "lemma": "SARS",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "severe_acute_respiratory_syndrome.n.01"
+        }
+      ],
+      "definition": "a respiratory disease of unknown etiology that apparently originated in mainland China in 2003; characterized by fever and coughing or difficulty breathing or hypoxia; can be fatal"
+    },
+    {
+      "lemma": "severe acute respiratory syndrome",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "severe_acute_respiratory_syndrome.n.01"
+        }
+      ],
+      "definition": "a respiratory disease of unknown etiology that apparently originated in mainland China in 2003; characterized by fever and coughing or difficulty breathing or hypoxia; can be fatal"
+    },
+    {
+      "lemma": "shivery",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "shivery.s.01"
+        }
+      ],
+      "definition": "cold enough to cause shivers"
+    },
+    {
+      "lemma": "snappy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "crisp.s.03"
+        }
+      ],
+      "definition": "pleasantly cold and invigorating"
+    },
+    {
+      "lemma": "state change",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "freeze.n.01",
+          "via_synset": "phase_change.n.01"
+        }
+      ],
+      "definition": "a change from one state (solid or liquid or gas) to another without a change in chemical composition"
+    },
+    {
+      "lemma": "stone-cold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "stone-cold.s.01"
+        }
+      ],
+      "definition": "completely cold"
+    },
+    {
+      "lemma": "tabasco",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "hot_pepper.n.02",
+          "via_synset": "tabasco.n.03"
+        }
+      ],
+      "definition": "very hot red peppers; usually long and thin; some very small"
+    },
+    {
+      "lemma": "temperature",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "cold.n.03",
+          "via_synset": "temperature.n.02"
+        }
+      ],
+      "definition": "the somatic sensation of cold or heat"
+    },
+    {
+      "lemma": "temperature reduction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "freeze.n.01",
+          "via_synset": "cooling.n.01"
+        }
+      ],
+      "definition": "the process of becoming cooler; a falling temperature"
+    },
+    {
+      "lemma": "thaw",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "phase_change.n.01",
+          "via_synset": "thaw.n.01"
+        }
+      ],
+      "definition": "the process whereby heat changes something from a solid to a liquid"
+    },
+    {
+      "lemma": "thawing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "phase_change.n.01",
+          "via_synset": "thaw.n.01"
+        }
+      ],
+      "definition": "the process whereby heat changes something from a solid to a liquid"
+    },
+    {
+      "lemma": "unemotional",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "chilly.s.01",
+          "via_synset": "unemotional.a.01"
+        }
+      ],
+      "definition": "unsusceptible to or destitute of or showing no emotion"
+    },
+    {
+      "lemma": "unheated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "unheated.s.01"
+        }
+      ],
+      "definition": "not having been heated or warmed"
+    },
+    {
+      "lemma": "unwarmed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cold.a.01",
+          "via_synset": "unheated.s.01"
+        }
+      ],
+      "definition": "not having been heated or warmed"
+    },
+    {
+      "lemma": "vapor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "phase_change.n.01",
+          "via_synset": "vaporization.n.02"
+        }
+      ],
+      "definition": "the process of becoming a vapor"
+    },
+    {
+      "lemma": "vaporisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "phase_change.n.01",
+          "via_synset": "vaporization.n.02"
+        }
+      ],
+      "definition": "the process of becoming a vapor"
+    },
+    {
+      "lemma": "vaporization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "phase_change.n.01",
+          "via_synset": "vaporization.n.02"
+        }
+      ],
+      "definition": "the process of becoming a vapor"
+    },
+    {
+      "lemma": "vapour",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "phase_change.n.01",
+          "via_synset": "vaporization.n.02"
+        }
+      ],
+      "definition": "the process of becoming a vapor"
+    },
+    {
+      "lemma": "warmth",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "temperature.n.02",
+          "via_synset": "heat.n.03"
+        }
+      ],
+      "definition": "the sensation caused by heat energy"
+    },
+    {
+      "lemma": "wet lung",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "adult_respiratory_distress_syndrome.n.01"
+        }
+      ],
+      "definition": "acute lung injury characterized by coughing and rales; inflammation of the lungs which become stiff and fibrous and cannot exchange oxygen; occurs among persons exposed to irritants such as corrosive chemical vapors or ammonia or chlorine etc."
+    },
+    {
+      "lemma": "white lung",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "adult_respiratory_distress_syndrome.n.01"
+        }
+      ],
+      "definition": "acute lung injury characterized by coughing and rales; inflammation of the lungs which become stiff and fibrous and cannot exchange oxygen; occurs among persons exposed to irritants such as corrosive chemical vapors or ammonia or chlorine etc."
+    },
+    {
+      "lemma": "whooping cough",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "respiratory_disease.n.01",
+          "via_synset": "whooping_cough.n.01"
+        }
+      ],
+      "definition": "a disease of the respiratory mucous membrane"
+    }
+  ]
+}

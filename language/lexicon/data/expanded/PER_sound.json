@@ -1,0 +1,1933 @@
+{
+  "atom_id": "PER.sound",
+  "category": "PER",
+  "seed_count": 6,
+  "total_keys": 117,
+  "pos_counts": {
+    "n": 99,
+    "adj": 14,
+    "v": 4
+  },
+  "source_counts": {
+    "0_seed": 13,
+    "2_hypernym_d1": 13,
+    "3_hyponym_d1": 16,
+    "10_sibling": 64,
+    "4_hyponym_d2": 5,
+    "5_hyponym_d3": 6,
+    "6_derivational": 34
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 9,
+      "words": [
+        "sound(n)",
+        "auditory sensation(n)",
+        "noise(n)",
+        "dissonance(n)",
+        "racket(n)",
+        "randomness(n)",
+        "haphazardness(n)",
+        "stochasticity(n)",
+        "audio(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 11,
+      "words": [
+        "sound property(n)",
+        "mechanical phenomenon(n)",
+        "sensation(n)",
+        "esthesis(n)",
+        "aesthesis(n)",
+        "sense experience(n)",
+        "sense impression(n)",
+        "sense datum(n)",
+        "irregularity(n)",
+        "unregularity(n)",
+        "auditory communication(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 12,
+      "words": [
+        "noisiness(n)",
+        "racketiness(n)",
+        "unison(n)",
+        "ring(n)",
+        "voice(n)",
+        "ultrasound(n)",
+        "dub(n)",
+        "tone(n)",
+        "pure tone(n)",
+        "music(n)",
+        "euphony(n)",
+        "ergodicity(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 5,
+      "words": [
+        "boisterousness(n)",
+        "androglossia(n)",
+        "harmonic(n)",
+        "music of the spheres(n)",
+        "piano music(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 6,
+      "words": [
+        "fundamental(n)",
+        "fundamental frequency(n)",
+        "first harmonic(n)",
+        "overtone(n)",
+        "partial(n)",
+        "partial tone(n)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 19,
+      "words": [
+        "musical(adj)",
+        "euphonic(adj)",
+        "euphonous(adj)",
+        "euphonious(adj)",
+        "euphonical(adj)",
+        "musician(n)",
+        "harmonic(adj)",
+        "sound(v)",
+        "noise(v)",
+        "dissonant(adj)",
+        "dissonate(v)",
+        "boisterous(adj)",
+        "tonal(adj)",
+        "ultrasonic(adj)",
+        "ring(v)",
+        "noisy(adj)",
+        "rackety(adj)",
+        "random(adj)",
+        "haphazard(adj)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 55,
+      "words": [
+        "timbre(n)",
+        "timber(n)",
+        "quality(n)",
+        "registration(n)",
+        "musicality(n)",
+        "musicalness(n)",
+        "volume(n)",
+        "loudness(n)",
+        "intensity(n)",
+        "harmony(n)",
+        "pitch(n)",
+        "rhythmicity(n)",
+        "softness(n)",
+        "leverage(n)",
+        "purchase(n)",
+        "inertia(n)",
+        "trajectory(n)",
+        "flight(n)",
+        "resistance(n)",
+        "taste(n)",
+        "taste sensation(n)",
+        "gustatory sensation(n)",
+        "taste perception(n)",
+        "gustatory perception(n)",
+        "vision(n)",
+        "visual sensation(n)",
+        "synesthesia(n)",
+        "synaesthesia(n)",
+        "masking(n)",
+        "threshold(n)",
+        "limen(n)",
+        "smell(n)",
+        "odor(n)",
+        "odour(n)",
+        "olfactory sensation(n)",
+        "olfactory perception(n)",
+        "unsteadiness(n)",
+        "intermittence(n)",
+        "intermittency(n)",
+        "unevenness(n)",
+        "variability(n)",
+        "inhomogeneity(n)",
+        "fluctuation(n)",
+        "wavering(n)",
+        "fitfulness(n)",
+        "jerkiness(n)",
+        "utterance(n)",
+        "vocalization(n)",
+        "speech(n)",
+        "speech communication(n)",
+        "spoken communication(n)",
+        "spoken language(n)",
+        "language(n)",
+        "voice communication(n)",
+        "oral communication(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "aesthesis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sound.n.02",
+          "via_synset": "sensation.n.01"
+        }
+      ],
+      "definition": "an unelaborated elementary awareness of stimulation"
+    },
+    {
+      "lemma": "androglossia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "voice.n.01",
+          "via_synset": "androglossia.n.01"
+        }
+      ],
+      "definition": "a woman's voice with male qualities"
+    },
+    {
+      "lemma": "audio",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "audio.n.01",
+          "via_synset": "audio.n.01"
+        }
+      ],
+      "definition": "the audible part of a transmitted signal"
+    },
+    {
+      "lemma": "auditory communication",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "audio.n.01",
+          "via_synset": "auditory_communication.n.01"
+        }
+      ],
+      "definition": "communication that relies on hearing"
+    },
+    {
+      "lemma": "auditory sensation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sound.n.02",
+          "via_synset": "sound.n.02"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "noise.n.02",
+          "via_synset": "sound.n.02"
+        }
+      ],
+      "definition": "the subjective sensation of hearing something"
+    },
+    {
+      "lemma": "boisterous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "boisterousness.n.02",
+          "via_synset": "boisterous.s.01"
+        }
+      ],
+      "definition": "noisy and lacking in restraint or discipline"
+    },
+    {
+      "lemma": "boisterousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "noisiness.n.01",
+          "via_synset": "boisterousness.n.02"
+        }
+      ],
+      "definition": "the property of being noisy and lively and unrestrained"
+    },
+    {
+      "lemma": "dissonance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "noise.n.02",
+          "via_synset": "noise.n.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sound.n.02",
+          "via_synset": "noise.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound_property.n.01",
+          "via_synset": "dissonance.n.03"
+        }
+      ],
+      "definition": "the auditory experience of sound that lacks musical quality; sound that is a disagreeable auditory experience"
+    },
+    {
+      "lemma": "dissonant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "noise.n.02",
+          "via_synset": "unresolved.s.02"
+        }
+      ],
+      "definition": "characterized by musical dissonance; harmonically unresolved"
+    },
+    {
+      "lemma": "dissonate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "noise.n.02",
+          "via_synset": "disharmonize.v.01"
+        }
+      ],
+      "definition": "cause to sound harsh and unpleasant"
+    },
+    {
+      "lemma": "dub",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sound.n.02",
+          "via_synset": "dub.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound.n.02",
+          "via_synset": "dub.n.01"
+        }
+      ],
+      "definition": "the new sounds added by dubbing"
+    },
+    {
+      "lemma": "ergodicity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "randomness.n.02",
+          "via_synset": "ergodicity.n.01"
+        }
+      ],
+      "definition": "an attribute of stochastic systems; generally, a system that tends in probability to a limiting form that is independent of the initial conditions"
+    },
+    {
+      "lemma": "esthesis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sound.n.02",
+          "via_synset": "sensation.n.01"
+        }
+      ],
+      "definition": "an unelaborated elementary awareness of stimulation"
+    },
+    {
+      "lemma": "euphonic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "music.n.02",
+          "via_synset": "euphonic.a.01"
+        }
+      ],
+      "definition": "of or relating to or characterized by euphony"
+    },
+    {
+      "lemma": "euphonical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "music.n.02",
+          "via_synset": "euphonic.a.01"
+        }
+      ],
+      "definition": "of or relating to or characterized by euphony"
+    },
+    {
+      "lemma": "euphonious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "music.n.02",
+          "via_synset": "euphonious.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "music.n.02",
+          "via_synset": "euphonious.a.01"
+        }
+      ],
+      "definition": "(of speech or dialect) pleasing in sound; not harsh or strident"
+    },
+    {
+      "lemma": "euphonous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "music.n.02",
+          "via_synset": "euphonious.a.01"
+        }
+      ],
+      "definition": "having a pleasant sound"
+    },
+    {
+      "lemma": "euphony",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sound.n.02",
+          "via_synset": "music.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound.n.02",
+          "via_synset": "music.n.02"
+        }
+      ],
+      "definition": "any agreeable (pleasing and harmonious) sounds"
+    },
+    {
+      "lemma": "first harmonic",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "harmonic.n.01",
+          "via_synset": "fundamental.n.02"
+        }
+      ],
+      "definition": "the lowest tone of a harmonic series"
+    },
+    {
+      "lemma": "fitfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "irregularity.n.02",
+          "via_synset": "fitfulness.n.01"
+        }
+      ],
+      "definition": "the quality of being spasmodic and irregular"
+    },
+    {
+      "lemma": "flight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mechanical_phenomenon.n.01",
+          "via_synset": "trajectory.n.01"
+        }
+      ],
+      "definition": "the path followed by an object moving through space"
+    },
+    {
+      "lemma": "fluctuation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "irregularity.n.02",
+          "via_synset": "fluctuation.n.03"
+        }
+      ],
+      "definition": "the quality of being unsteady and subject to changes"
+    },
+    {
+      "lemma": "fundamental",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "harmonic.n.01",
+          "via_synset": "fundamental.n.02"
+        }
+      ],
+      "definition": "the lowest tone of a harmonic series"
+    },
+    {
+      "lemma": "fundamental frequency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "harmonic.n.01",
+          "via_synset": "fundamental.n.02"
+        }
+      ],
+      "definition": "the lowest tone of a harmonic series"
+    },
+    {
+      "lemma": "gustatory perception",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensation.n.01",
+          "via_synset": "taste.n.01"
+        }
+      ],
+      "definition": "the sensation that results when taste buds in the tongue and throat convey information about the chemical composition of a soluble stimulus"
+    },
+    {
+      "lemma": "gustatory sensation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensation.n.01",
+          "via_synset": "taste.n.01"
+        }
+      ],
+      "definition": "the sensation that results when taste buds in the tongue and throat convey information about the chemical composition of a soluble stimulus"
+    },
+    {
+      "lemma": "haphazard",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "randomness.n.02",
+          "via_synset": "haphazard.s.01"
+        }
+      ],
+      "definition": "dependent upon or characterized by chance"
+    },
+    {
+      "lemma": "haphazardness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "randomness.n.02",
+          "via_synset": "randomness.n.02"
+        }
+      ],
+      "definition": "the quality of lacking any predictable order or plan"
+    },
+    {
+      "lemma": "harmonic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "harmonic.n.01",
+          "via_synset": "harmonic.a.02"
+        }
+      ],
+      "definition": "of or relating to harmonics"
+    },
+    {
+      "lemma": "harmonic",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "tone.n.07",
+          "via_synset": "harmonic.n.01"
+        }
+      ],
+      "definition": "a tone that is a component of a complex sound"
+    },
+    {
+      "lemma": "harmony",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound_property.n.01",
+          "via_synset": "harmony.n.05"
+        }
+      ],
+      "definition": "an agreeable sound property"
+    },
+    {
+      "lemma": "inertia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mechanical_phenomenon.n.01",
+          "via_synset": "inertia.n.02"
+        }
+      ],
+      "definition": "(physics) the tendency of a body to maintain its state of rest or uniform motion unless acted upon by an external force"
+    },
+    {
+      "lemma": "inhomogeneity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "irregularity.n.02",
+          "via_synset": "inhomogeneity.n.01"
+        }
+      ],
+      "definition": "the quality of being inhomogeneous"
+    },
+    {
+      "lemma": "intensity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound_property.n.01",
+          "via_synset": "volume.n.06"
+        }
+      ],
+      "definition": "the magnitude of sound (usually in a specified direction)"
+    },
+    {
+      "lemma": "intermittence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "irregularity.n.02",
+          "via_synset": "intermittence.n.01"
+        }
+      ],
+      "definition": "the quality of being intermittent; subject to interruption or periodic stopping"
+    },
+    {
+      "lemma": "intermittency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "irregularity.n.02",
+          "via_synset": "intermittence.n.01"
+        }
+      ],
+      "definition": "the quality of being intermittent; subject to interruption or periodic stopping"
+    },
+    {
+      "lemma": "irregularity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "randomness.n.02",
+          "via_synset": "irregularity.n.02"
+        }
+      ],
+      "definition": "not characterized by a fixed principle or rate; at irregular intervals"
+    },
+    {
+      "lemma": "jerkiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "irregularity.n.02",
+          "via_synset": "fitfulness.n.01"
+        }
+      ],
+      "definition": "the quality of being spasmodic and irregular"
+    },
+    {
+      "lemma": "language",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "auditory_communication.n.01",
+          "via_synset": "speech.n.02"
+        }
+      ],
+      "definition": "(language) communication by word of mouth"
+    },
+    {
+      "lemma": "leverage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mechanical_phenomenon.n.01",
+          "via_synset": "leverage.n.01"
+        }
+      ],
+      "definition": "the mechanical advantage gained by being in a position to use a lever"
+    },
+    {
+      "lemma": "limen",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensation.n.01",
+          "via_synset": "threshold.n.02"
+        }
+      ],
+      "definition": "the smallest detectable sensation"
+    },
+    {
+      "lemma": "loudness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound_property.n.01",
+          "via_synset": "volume.n.06"
+        }
+      ],
+      "definition": "the magnitude of sound (usually in a specified direction)"
+    },
+    {
+      "lemma": "masking",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensation.n.01",
+          "via_synset": "masking.n.02"
+        }
+      ],
+      "definition": "the blocking of one sensation resulting from the presence of another sensation"
+    },
+    {
+      "lemma": "mechanical phenomenon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sound.n.03",
+          "via_synset": "mechanical_phenomenon.n.01"
+        }
+      ],
+      "definition": "a physical phenomenon associated with the equilibrium or motion of objects"
+    },
+    {
+      "lemma": "music",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sound.n.02",
+          "via_synset": "music.n.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sound.n.02",
+          "via_synset": "music.n.04"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound.n.02",
+          "via_synset": "music.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound.n.02",
+          "via_synset": "music.n.04"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "auditory_communication.n.01",
+          "via_synset": "music.n.01"
+        }
+      ],
+      "definition": "any agreeable (pleasing and harmonious) sounds"
+    },
+    {
+      "lemma": "music of the spheres",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "music.n.02",
+          "via_synset": "music_of_the_spheres.n.01"
+        }
+      ],
+      "definition": "an inaudible music that Pythagoras thought was produced by the celestial"
+    },
+    {
+      "lemma": "musical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "music.n.02",
+          "via_synset": "melodious.a.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "music.n.04",
+          "via_synset": "musical.a.03"
+        }
+      ],
+      "definition": "containing or constituting or characterized by pleasing melody"
+    },
+    {
+      "lemma": "musicality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound_property.n.01",
+          "via_synset": "musicality.n.01"
+        }
+      ],
+      "definition": "the property of sounding like music"
+    },
+    {
+      "lemma": "musicalness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound_property.n.01",
+          "via_synset": "musicality.n.01"
+        }
+      ],
+      "definition": "the property of sounding like music"
+    },
+    {
+      "lemma": "musician",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "music.n.04",
+          "via_synset": "musician.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "music.n.04",
+          "via_synset": "musician.n.02"
+        }
+      ],
+      "definition": "someone who plays a musical instrument (as a profession)"
+    },
+    {
+      "lemma": "noise",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "noise.n.02",
+          "via_synset": "noise.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "randomness.n.02",
+          "via_synset": "randomness.n.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sound.n.02",
+          "via_synset": "noise.n.02"
+        }
+      ],
+      "definition": "the auditory experience of sound that lacks musical quality; sound that is a disagreeable auditory experience"
+    },
+    {
+      "lemma": "noise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "noise.n.02",
+          "via_synset": "make_noise.v.01"
+        }
+      ],
+      "definition": "emit a noise"
+    },
+    {
+      "lemma": "noisiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sound.n.01",
+          "via_synset": "noisiness.n.01"
+        }
+      ],
+      "definition": "the auditory effect characterized by loud and constant noise"
+    },
+    {
+      "lemma": "noisy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "noisiness.n.01",
+          "via_synset": "noisy.a.01"
+        }
+      ],
+      "definition": "full of or characterized by loud and nonmusical sounds"
+    },
+    {
+      "lemma": "odor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensation.n.01",
+          "via_synset": "smell.n.01"
+        }
+      ],
+      "definition": "the sensation that results when olfactory receptors in the nose are stimulated by particular chemicals in gaseous form"
+    },
+    {
+      "lemma": "odour",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensation.n.01",
+          "via_synset": "smell.n.01"
+        }
+      ],
+      "definition": "the sensation that results when olfactory receptors in the nose are stimulated by particular chemicals in gaseous form"
+    },
+    {
+      "lemma": "olfactory perception",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensation.n.01",
+          "via_synset": "smell.n.01"
+        }
+      ],
+      "definition": "the sensation that results when olfactory receptors in the nose are stimulated by particular chemicals in gaseous form"
+    },
+    {
+      "lemma": "olfactory sensation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensation.n.01",
+          "via_synset": "smell.n.01"
+        }
+      ],
+      "definition": "the sensation that results when olfactory receptors in the nose are stimulated by particular chemicals in gaseous form"
+    },
+    {
+      "lemma": "oral communication",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "auditory_communication.n.01",
+          "via_synset": "speech.n.02"
+        }
+      ],
+      "definition": "(language) communication by word of mouth"
+    },
+    {
+      "lemma": "overtone",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "harmonic.n.01",
+          "via_synset": "overtone.n.02"
+        }
+      ],
+      "definition": "a harmonic with a frequency that is a multiple of the fundamental frequency"
+    },
+    {
+      "lemma": "partial",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "harmonic.n.01",
+          "via_synset": "overtone.n.02"
+        }
+      ],
+      "definition": "a harmonic with a frequency that is a multiple of the fundamental frequency"
+    },
+    {
+      "lemma": "partial tone",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "harmonic.n.01",
+          "via_synset": "overtone.n.02"
+        }
+      ],
+      "definition": "a harmonic with a frequency that is a multiple of the fundamental frequency"
+    },
+    {
+      "lemma": "piano music",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "music.n.04",
+          "via_synset": "piano_music.n.02"
+        }
+      ],
+      "definition": "the sound of music produced by a piano"
+    },
+    {
+      "lemma": "pitch",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound_property.n.01",
+          "via_synset": "pitch.n.01"
+        }
+      ],
+      "definition": "the property of sound that varies with variation in the frequency of vibration"
+    },
+    {
+      "lemma": "purchase",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mechanical_phenomenon.n.01",
+          "via_synset": "leverage.n.01"
+        }
+      ],
+      "definition": "the mechanical advantage gained by being in a position to use a lever"
+    },
+    {
+      "lemma": "pure tone",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sound.n.02",
+          "via_synset": "tone.n.07"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound.n.02",
+          "via_synset": "tone.n.07"
+        }
+      ],
+      "definition": "a steady sound without overtones"
+    },
+    {
+      "lemma": "quality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound_property.n.01",
+          "via_synset": "timbre.n.01"
+        }
+      ],
+      "definition": "(music) the distinctive property of a complex sound (a voice or noise or musical sound)"
+    },
+    {
+      "lemma": "racket",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "noise.n.02",
+          "via_synset": "noise.n.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sound.n.02",
+          "via_synset": "noise.n.02"
+        }
+      ],
+      "definition": "the auditory experience of sound that lacks musical quality; sound that is a disagreeable auditory experience"
+    },
+    {
+      "lemma": "racketiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sound.n.01",
+          "via_synset": "noisiness.n.01"
+        }
+      ],
+      "definition": "the auditory effect characterized by loud and constant noise"
+    },
+    {
+      "lemma": "rackety",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "noisiness.n.01",
+          "via_synset": "rackety.s.01"
+        }
+      ],
+      "definition": "uncontrollably noisy"
+    },
+    {
+      "lemma": "random",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "randomness.n.02",
+          "via_synset": "random.a.01"
+        }
+      ],
+      "definition": "lacking any definite plan or order or purpose; governed by or depending on chance"
+    },
+    {
+      "lemma": "randomness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "randomness.n.02",
+          "via_synset": "randomness.n.02"
+        }
+      ],
+      "definition": "the quality of lacking any predictable order or plan"
+    },
+    {
+      "lemma": "registration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound_property.n.01",
+          "via_synset": "registration.n.04"
+        }
+      ],
+      "definition": "(music) the sound property resulting from a combination of organ stops used to perform a particular piece of music; the technique of selecting and adjusting organ stops"
+    },
+    {
+      "lemma": "resistance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mechanical_phenomenon.n.01",
+          "via_synset": "resistance.n.02"
+        }
+      ],
+      "definition": "any mechanical force that tends to retard or oppose motion"
+    },
+    {
+      "lemma": "rhythmicity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound_property.n.01",
+          "via_synset": "rhythmicity.n.01"
+        }
+      ],
+      "definition": "the rhythmic property imparted by the accents and relative durations of notes in a piece of music"
+    },
+    {
+      "lemma": "ring",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sound.n.01",
+          "via_synset": "ring.n.01"
+        }
+      ],
+      "definition": "a characteristic sound"
+    },
+    {
+      "lemma": "ring",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ring.n.01",
+          "via_synset": "resound.v.01"
+        }
+      ],
+      "definition": "ring or echo with sound"
+    },
+    {
+      "lemma": "sensation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sound.n.02",
+          "via_synset": "sensation.n.01"
+        }
+      ],
+      "definition": "an unelaborated elementary awareness of stimulation"
+    },
+    {
+      "lemma": "sense datum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sound.n.02",
+          "via_synset": "sensation.n.01"
+        }
+      ],
+      "definition": "an unelaborated elementary awareness of stimulation"
+    },
+    {
+      "lemma": "sense experience",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sound.n.02",
+          "via_synset": "sensation.n.01"
+        }
+      ],
+      "definition": "an unelaborated elementary awareness of stimulation"
+    },
+    {
+      "lemma": "sense impression",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sound.n.02",
+          "via_synset": "sensation.n.01"
+        }
+      ],
+      "definition": "an unelaborated elementary awareness of stimulation"
+    },
+    {
+      "lemma": "smell",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensation.n.01",
+          "via_synset": "smell.n.01"
+        }
+      ],
+      "definition": "the sensation that results when olfactory receptors in the nose are stimulated by particular chemicals in gaseous form"
+    },
+    {
+      "lemma": "softness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound_property.n.01",
+          "via_synset": "softness.n.05"
+        }
+      ],
+      "definition": "a sound property that is free from loudness or stridency"
+    },
+    {
+      "lemma": "sound",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sound.n.01",
+          "via_synset": "sound.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sound.n.03",
+          "via_synset": "sound.n.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sound.n.02",
+          "via_synset": "sound.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "audio.n.01",
+          "via_synset": "audio.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "noise.n.02",
+          "via_synset": "sound.n.02"
+        }
+      ],
+      "definition": "the particular auditory effect produced by a given cause"
+    },
+    {
+      "lemma": "sound",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sound.n.02",
+          "via_synset": "sound.v.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sound.n.02",
+          "via_synset": "sound.v.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sound.n.02",
+          "via_synset": "sound.v.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "audio.n.01",
+          "via_synset": "sound.v.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "audio.n.01",
+          "via_synset": "sound.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sound.n.03",
+          "via_synset": "sound.v.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sound.n.03",
+          "via_synset": "sound.v.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sound.n.03",
+          "via_synset": "sound.v.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sound.n.03",
+          "via_synset": "sound.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sound.n.01",
+          "via_synset": "sound.v.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sound.n.01",
+          "via_synset": "sound.v.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sound.n.01",
+          "via_synset": "sound.v.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sound.n.01",
+          "via_synset": "sound.v.02"
+        }
+      ],
+      "definition": "cause to sound"
+    },
+    {
+      "lemma": "sound property",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "sound.n.01",
+          "via_synset": "sound_property.n.01"
+        }
+      ],
+      "definition": "an attribute of sound"
+    },
+    {
+      "lemma": "speech",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "auditory_communication.n.01",
+          "via_synset": "speech.n.02"
+        }
+      ],
+      "definition": "(language) communication by word of mouth"
+    },
+    {
+      "lemma": "speech communication",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "auditory_communication.n.01",
+          "via_synset": "speech.n.02"
+        }
+      ],
+      "definition": "(language) communication by word of mouth"
+    },
+    {
+      "lemma": "spoken communication",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "auditory_communication.n.01",
+          "via_synset": "speech.n.02"
+        }
+      ],
+      "definition": "(language) communication by word of mouth"
+    },
+    {
+      "lemma": "spoken language",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "auditory_communication.n.01",
+          "via_synset": "speech.n.02"
+        }
+      ],
+      "definition": "(language) communication by word of mouth"
+    },
+    {
+      "lemma": "stochasticity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "randomness.n.02",
+          "via_synset": "randomness.n.02"
+        }
+      ],
+      "definition": "the quality of lacking any predictable order or plan"
+    },
+    {
+      "lemma": "synaesthesia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensation.n.01",
+          "via_synset": "synesthesia.n.01"
+        }
+      ],
+      "definition": "a sensation that normally occurs in one sense modality occurs when another modality is stimulated"
+    },
+    {
+      "lemma": "synesthesia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensation.n.01",
+          "via_synset": "synesthesia.n.01"
+        }
+      ],
+      "definition": "a sensation that normally occurs in one sense modality occurs when another modality is stimulated"
+    },
+    {
+      "lemma": "taste",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensation.n.01",
+          "via_synset": "taste.n.01"
+        }
+      ],
+      "definition": "the sensation that results when taste buds in the tongue and throat convey information about the chemical composition of a soluble stimulus"
+    },
+    {
+      "lemma": "taste perception",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensation.n.01",
+          "via_synset": "taste.n.01"
+        }
+      ],
+      "definition": "the sensation that results when taste buds in the tongue and throat convey information about the chemical composition of a soluble stimulus"
+    },
+    {
+      "lemma": "taste sensation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensation.n.01",
+          "via_synset": "taste.n.01"
+        }
+      ],
+      "definition": "the sensation that results when taste buds in the tongue and throat convey information about the chemical composition of a soluble stimulus"
+    },
+    {
+      "lemma": "threshold",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensation.n.01",
+          "via_synset": "threshold.n.02"
+        }
+      ],
+      "definition": "the smallest detectable sensation"
+    },
+    {
+      "lemma": "timber",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound_property.n.01",
+          "via_synset": "timbre.n.01"
+        }
+      ],
+      "definition": "(music) the distinctive property of a complex sound (a voice or noise or musical sound)"
+    },
+    {
+      "lemma": "timbre",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound_property.n.01",
+          "via_synset": "timbre.n.01"
+        }
+      ],
+      "definition": "(music) the distinctive property of a complex sound (a voice or noise or musical sound)"
+    },
+    {
+      "lemma": "tonal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tone.n.07",
+          "via_synset": "tonal.a.02"
+        }
+      ],
+      "definition": "having tonality; i.e. tones and chords organized in relation to one tone such as a keynote or tonic"
+    },
+    {
+      "lemma": "tone",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sound.n.02",
+          "via_synset": "tone.n.07"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound_property.n.01",
+          "via_synset": "timbre.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound.n.02",
+          "via_synset": "tone.n.07"
+        }
+      ],
+      "definition": "a steady sound without overtones"
+    },
+    {
+      "lemma": "trajectory",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mechanical_phenomenon.n.01",
+          "via_synset": "trajectory.n.01"
+        }
+      ],
+      "definition": "the path followed by an object moving through space"
+    },
+    {
+      "lemma": "ultrasonic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ultrasound.n.01",
+          "via_synset": "supersonic.s.01"
+        }
+      ],
+      "definition": "having frequencies above those of audible sound"
+    },
+    {
+      "lemma": "ultrasound",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sound.n.03",
+          "via_synset": "ultrasound.n.01"
+        }
+      ],
+      "definition": "very high frequency sound; used in ultrasonography"
+    },
+    {
+      "lemma": "unevenness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "irregularity.n.02",
+          "via_synset": "unevenness.n.01"
+        }
+      ],
+      "definition": "the quality of being uneven and lacking uniformity"
+    },
+    {
+      "lemma": "unison",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sound.n.01",
+          "via_synset": "unison.n.03"
+        }
+      ],
+      "definition": "(music) two or more sounds or tones at the same pitch or in octaves"
+    },
+    {
+      "lemma": "unregularity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "randomness.n.02",
+          "via_synset": "irregularity.n.02"
+        }
+      ],
+      "definition": "not characterized by a fixed principle or rate; at irregular intervals"
+    },
+    {
+      "lemma": "unsteadiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "irregularity.n.02",
+          "via_synset": "unsteadiness.n.02"
+        }
+      ],
+      "definition": "the quality of being unsteady--varying and unpredictable"
+    },
+    {
+      "lemma": "utterance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "auditory_communication.n.01",
+          "via_synset": "utterance.n.01"
+        }
+      ],
+      "definition": "the use of uttered sounds for auditory communication"
+    },
+    {
+      "lemma": "variability",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "irregularity.n.02",
+          "via_synset": "unevenness.n.01"
+        }
+      ],
+      "definition": "the quality of being uneven and lacking uniformity"
+    },
+    {
+      "lemma": "vision",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensation.n.01",
+          "via_synset": "vision.n.03"
+        }
+      ],
+      "definition": "the perceptual experience of seeing"
+    },
+    {
+      "lemma": "visual sensation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sensation.n.01",
+          "via_synset": "vision.n.03"
+        }
+      ],
+      "definition": "the perceptual experience of seeing"
+    },
+    {
+      "lemma": "vocalization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "auditory_communication.n.01",
+          "via_synset": "utterance.n.01"
+        }
+      ],
+      "definition": "the use of uttered sounds for auditory communication"
+    },
+    {
+      "lemma": "voice",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "sound.n.01",
+          "via_synset": "voice.n.01"
+        }
+      ],
+      "definition": "the distinctive quality or pitch or condition of a person's speech"
+    },
+    {
+      "lemma": "voice communication",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "auditory_communication.n.01",
+          "via_synset": "speech.n.02"
+        }
+      ],
+      "definition": "(language) communication by word of mouth"
+    },
+    {
+      "lemma": "volume",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sound_property.n.01",
+          "via_synset": "volume.n.06"
+        }
+      ],
+      "definition": "the magnitude of sound (usually in a specified direction)"
+    },
+    {
+      "lemma": "wavering",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "irregularity.n.02",
+          "via_synset": "fluctuation.n.03"
+        }
+      ],
+      "definition": "the quality of being unsteady and subject to changes"
+    }
+  ]
+}

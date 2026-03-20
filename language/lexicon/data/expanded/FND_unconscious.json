@@ -1,0 +1,1034 @@
+{
+  "atom_id": "FND.unconscious",
+  "category": "FND",
+  "seed_count": 6,
+  "total_keys": 61,
+  "pos_counts": {
+    "adj": 27,
+    "n": 34
+  },
+  "source_counts": {
+    "0_seed": 12,
+    "7_similar_to": 21,
+    "8_also_see": 11,
+    "6_derivational": 5,
+    "10_sibling": 14,
+    "2_hypernym_d1": 9,
+    "3_hyponym_d1": 4
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 11,
+      "words": [
+        "unconscious(adj)",
+        "unconscious mind(n)",
+        "unconscious(n)",
+        "unaware(adj)",
+        "incognizant(adj)",
+        "automatic(adj)",
+        "reflex(adj)",
+        "reflexive(adj)",
+        "automatic rifle(n)",
+        "automatic(n)",
+        "machine rifle(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 9,
+      "words": [
+        "mind(n)",
+        "head(n)",
+        "brain(n)",
+        "psyche(n)",
+        "nous(n)",
+        "automatic firearm(n)",
+        "automatic gun(n)",
+        "automatic weapon(n)",
+        "machine gun(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 4,
+      "words": [
+        "assault rifle(n)",
+        "assault gun(n)",
+        "Browning automatic rifle(n)",
+        "BAR(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 4,
+      "words": [
+        "unconsciousness(n)",
+        "reflex(n)",
+        "unawareness(n)",
+        "incognizance(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 19,
+      "words": [
+        "cold(adj)",
+        "semicomatose(adj)",
+        "knocked out(adj)",
+        "kayoed(adj)",
+        "KO'd(adj)",
+        "out(adj)",
+        "stunned(adj)",
+        "insensible(adj)",
+        "senseless(adj)",
+        "subconscious(adj)",
+        "innocent(adj)",
+        "comatose(adj)",
+        "nonconscious(adj)",
+        "involuntary(adj)",
+        "oblivious(adj)",
+        "unmindful(adj)",
+        "unsuspecting(adj)",
+        "nonvoluntary(adj)",
+        "unvoluntary(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 2,
+      "words": [
+        "asleep(adj)",
+        "unwitting(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 12,
+      "words": [
+        "ego(n)",
+        "subconscious mind(n)",
+        "subconscious(n)",
+        "noddle(n)",
+        "tabula rasa(n)",
+        "automatic pistol(n)",
+        "submachine gun(n)",
+        "Gatling gun(n)",
+        "Maxim gun(n)",
+        "Browning machine gun(n)",
+        "Peacemaker(n)",
+        "Spandau(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "asleep",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "asleep.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unaware.a.01",
+          "via_synset": "asleep.a.01"
+        }
+      ],
+      "definition": "in a state of sleep"
+    },
+    {
+      "lemma": "assault gun",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "automatic_rifle.n.01",
+          "via_synset": "assault_rifle.n.01"
+        }
+      ],
+      "definition": "any of the automatic rifles or semiautomatic rifles with large magazines designed for military use"
+    },
+    {
+      "lemma": "assault rifle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "automatic_rifle.n.01",
+          "via_synset": "assault_rifle.n.01"
+        }
+      ],
+      "definition": "any of the automatic rifles or semiautomatic rifles with large magazines designed for military use"
+    },
+    {
+      "lemma": "automatic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "automatic.s.02",
+          "via_synset": "automatic.s.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "automatic_rifle.n.01",
+          "via_synset": "automatic.a.01"
+        }
+      ],
+      "definition": "without volition or conscious control"
+    },
+    {
+      "lemma": "automatic",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "automatic_rifle.n.01",
+          "via_synset": "automatic_rifle.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "automatic_firearm.n.01",
+          "via_synset": "automatic_pistol.n.01"
+        }
+      ],
+      "definition": "light machine gun"
+    },
+    {
+      "lemma": "automatic firearm",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "automatic_rifle.n.01",
+          "via_synset": "automatic_firearm.n.01"
+        }
+      ],
+      "definition": "a firearm that reloads itself and keeps firing until the trigger is released"
+    },
+    {
+      "lemma": "automatic gun",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "automatic_rifle.n.01",
+          "via_synset": "automatic_firearm.n.01"
+        }
+      ],
+      "definition": "a firearm that reloads itself and keeps firing until the trigger is released"
+    },
+    {
+      "lemma": "automatic pistol",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "automatic_firearm.n.01",
+          "via_synset": "automatic_pistol.n.01"
+        }
+      ],
+      "definition": "a pistol that will keep firing until the ammunition is gone or the trigger is released"
+    },
+    {
+      "lemma": "automatic rifle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "automatic_rifle.n.01",
+          "via_synset": "automatic_rifle.n.01"
+        }
+      ],
+      "definition": "light machine gun"
+    },
+    {
+      "lemma": "automatic weapon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "automatic_rifle.n.01",
+          "via_synset": "automatic_firearm.n.01"
+        }
+      ],
+      "definition": "a firearm that reloads itself and keeps firing until the trigger is released"
+    },
+    {
+      "lemma": "BAR",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "automatic_rifle.n.01",
+          "via_synset": "browning_automatic_rifle.n.01"
+        }
+      ],
+      "definition": "a portable .30 caliber automatic rifle operated by gas pressure and fed by cartridges from a magazine; used by United States troops in World War I and in World War II and in the Korean War"
+    },
+    {
+      "lemma": "brain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "unconscious_mind.n.01",
+          "via_synset": "mind.n.01"
+        }
+      ],
+      "definition": "that which is responsible for one's thoughts and feelings; the seat of the faculty of reason"
+    },
+    {
+      "lemma": "Browning automatic rifle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "automatic_rifle.n.01",
+          "via_synset": "browning_automatic_rifle.n.01"
+        }
+      ],
+      "definition": "a portable .30 caliber automatic rifle operated by gas pressure and fed by cartridges from a magazine; used by United States troops in World War I and in World War II and in the Korean War"
+    },
+    {
+      "lemma": "Browning machine gun",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "machine_gun.n.01",
+          "via_synset": "browning_machine_gun.n.01"
+        }
+      ],
+      "definition": "a belt-fed machine gun capable of firing more than 500 rounds per minute; used by United States troops in World War II and the Korean War"
+    },
+    {
+      "lemma": "cold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "cold.s.09"
+        }
+      ],
+      "definition": "unconscious from a blow or shock or intoxication"
+    },
+    {
+      "lemma": "comatose",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "comatose.s.01"
+        }
+      ],
+      "definition": "in a state of deep and usually prolonged unconsciousness; unable to respond to external stimuli"
+    },
+    {
+      "lemma": "ego",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mind.n.01",
+          "via_synset": "ego.n.03"
+        }
+      ],
+      "definition": "(psychoanalysis) the conscious mind"
+    },
+    {
+      "lemma": "Gatling gun",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "machine_gun.n.01",
+          "via_synset": "gatling_gun.n.01"
+        }
+      ],
+      "definition": "an early form of machine gun having several barrels that fire in sequence as they are rotated"
+    },
+    {
+      "lemma": "head",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "unconscious_mind.n.01",
+          "via_synset": "mind.n.01"
+        }
+      ],
+      "definition": "that which is responsible for one's thoughts and feelings; the seat of the faculty of reason"
+    },
+    {
+      "lemma": "incognizance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unaware.a.01",
+          "via_synset": "incognizance.n.01"
+        }
+      ],
+      "definition": "a lack of knowledge or recognition"
+    },
+    {
+      "lemma": "incognizant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unaware.a.01",
+          "via_synset": "unaware.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "unaware.a.01"
+        }
+      ],
+      "definition": "(often followed by `of') not aware"
+    },
+    {
+      "lemma": "innocent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "innocent.s.06"
+        }
+      ],
+      "definition": "(used of things) lacking sense or awareness"
+    },
+    {
+      "lemma": "insensible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "insensible.s.03"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "insensible.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unaware.a.01",
+          "via_synset": "insensible.a.01"
+        }
+      ],
+      "definition": "unresponsive to stimulation"
+    },
+    {
+      "lemma": "involuntary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "automatic.s.02",
+          "via_synset": "involuntary.a.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unconscious.s.01",
+          "via_synset": "involuntary.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "involuntary.a.01"
+        }
+      ],
+      "definition": "controlled by the autonomic nervous system; without conscious control"
+    },
+    {
+      "lemma": "kayoed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "knocked_out.s.01"
+        }
+      ],
+      "definition": "knocked unconscious by a heavy blow"
+    },
+    {
+      "lemma": "knocked out",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "knocked_out.s.01"
+        }
+      ],
+      "definition": "knocked unconscious by a heavy blow"
+    },
+    {
+      "lemma": "KO'd",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "knocked_out.s.01"
+        }
+      ],
+      "definition": "knocked unconscious by a heavy blow"
+    },
+    {
+      "lemma": "machine gun",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "automatic_rifle.n.01",
+          "via_synset": "machine_gun.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "automatic_firearm.n.01",
+          "via_synset": "machine_gun.n.01"
+        }
+      ],
+      "definition": "a rapidly firing automatic gun (often mounted)"
+    },
+    {
+      "lemma": "machine rifle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "automatic_rifle.n.01",
+          "via_synset": "automatic_rifle.n.01"
+        }
+      ],
+      "definition": "light machine gun"
+    },
+    {
+      "lemma": "Maxim gun",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "machine_gun.n.01",
+          "via_synset": "maxim_gun.n.01"
+        }
+      ],
+      "definition": "an obsolete water-cooled machine gun having a single barrel"
+    },
+    {
+      "lemma": "mind",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "unconscious_mind.n.01",
+          "via_synset": "mind.n.01"
+        }
+      ],
+      "definition": "that which is responsible for one's thoughts and feelings; the seat of the faculty of reason"
+    },
+    {
+      "lemma": "noddle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mind.n.01",
+          "via_synset": "noddle.n.01"
+        }
+      ],
+      "definition": "an informal British expression for head or mind"
+    },
+    {
+      "lemma": "nonconscious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "nonconscious.s.01"
+        }
+      ],
+      "definition": "concerning mental functioning that is not represented in consciousness"
+    },
+    {
+      "lemma": "nonvoluntary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unconscious.s.01",
+          "via_synset": "involuntary.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "involuntary.a.01"
+        }
+      ],
+      "definition": "not subject to the control of the will; ; ; ; - John F.Kennedy"
+    },
+    {
+      "lemma": "nous",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "unconscious_mind.n.01",
+          "via_synset": "mind.n.01"
+        }
+      ],
+      "definition": "that which is responsible for one's thoughts and feelings; the seat of the faculty of reason"
+    },
+    {
+      "lemma": "oblivious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unaware.a.01",
+          "via_synset": "oblivious.s.01"
+        }
+      ],
+      "definition": "(followed by `to' or `of') lacking conscious awareness of"
+    },
+    {
+      "lemma": "out",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "knocked_out.s.01"
+        }
+      ],
+      "definition": "knocked unconscious by a heavy blow"
+    },
+    {
+      "lemma": "Peacemaker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "machine_gun.n.01",
+          "via_synset": "browning_machine_gun.n.01"
+        }
+      ],
+      "definition": "a belt-fed machine gun capable of firing more than 500 rounds per minute; used by United States troops in World War II and the Korean War"
+    },
+    {
+      "lemma": "psyche",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "unconscious_mind.n.01",
+          "via_synset": "mind.n.01"
+        }
+      ],
+      "definition": "that which is responsible for one's thoughts and feelings; the seat of the faculty of reason"
+    },
+    {
+      "lemma": "reflex",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "automatic.s.02",
+          "via_synset": "automatic.s.02"
+        }
+      ],
+      "definition": "without volition or conscious control"
+    },
+    {
+      "lemma": "reflex",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "automatic.s.02",
+          "via_synset": "reflex.n.01"
+        }
+      ],
+      "definition": "an automatic instinctive unlearned reaction to a stimulus"
+    },
+    {
+      "lemma": "reflexive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "automatic.s.02",
+          "via_synset": "automatic.s.02"
+        }
+      ],
+      "definition": "without volition or conscious control"
+    },
+    {
+      "lemma": "semicomatose",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "semicomatose.s.01"
+        }
+      ],
+      "definition": "in a state of partial coma"
+    },
+    {
+      "lemma": "senseless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "insensible.s.03"
+        }
+      ],
+      "definition": "unresponsive to stimulation"
+    },
+    {
+      "lemma": "Spandau",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "machine_gun.n.01",
+          "via_synset": "spandau.n.01"
+        }
+      ],
+      "definition": "a German machine gun"
+    },
+    {
+      "lemma": "stunned",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "knocked_out.s.01"
+        }
+      ],
+      "definition": "knocked unconscious by a heavy blow"
+    },
+    {
+      "lemma": "subconscious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "subconscious.s.01"
+        }
+      ],
+      "definition": "just below the level of consciousness"
+    },
+    {
+      "lemma": "subconscious",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mind.n.01",
+          "via_synset": "subconscious_mind.n.01"
+        }
+      ],
+      "definition": "psychic activity just below the level of awareness"
+    },
+    {
+      "lemma": "subconscious mind",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mind.n.01",
+          "via_synset": "subconscious_mind.n.01"
+        }
+      ],
+      "definition": "psychic activity just below the level of awareness"
+    },
+    {
+      "lemma": "submachine gun",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "machine_gun.n.01",
+          "via_synset": "submachine_gun.n.01"
+        }
+      ],
+      "definition": "machine gun that is a portable automatic firearm"
+    },
+    {
+      "lemma": "tabula rasa",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mind.n.01",
+          "via_synset": "tabula_rasa.n.01"
+        }
+      ],
+      "definition": "a young mind not yet affected by experience (according to John Locke)"
+    },
+    {
+      "lemma": "unaware",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unaware.a.01",
+          "via_synset": "unaware.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "unaware.a.01"
+        }
+      ],
+      "definition": "(often followed by `of') not aware"
+    },
+    {
+      "lemma": "unawareness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unaware.a.01",
+          "via_synset": "unknowingness.n.02"
+        }
+      ],
+      "definition": "unconsciousness resulting from lack of knowledge or attention"
+    },
+    {
+      "lemma": "unconscious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unconscious.s.01",
+          "via_synset": "unconscious.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "unconscious.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unaware.a.01",
+          "via_synset": "unconscious.s.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unaware.a.01",
+          "via_synset": "unconscious.a.01"
+        }
+      ],
+      "definition": "without conscious volition"
+    },
+    {
+      "lemma": "unconscious",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unconscious_mind.n.01",
+          "via_synset": "unconscious_mind.n.01"
+        }
+      ],
+      "definition": "that part of the mind wherein psychic activity takes place of which the person is unaware"
+    },
+    {
+      "lemma": "unconscious mind",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unconscious_mind.n.01",
+          "via_synset": "unconscious_mind.n.01"
+        }
+      ],
+      "definition": "that part of the mind wherein psychic activity takes place of which the person is unaware"
+    },
+    {
+      "lemma": "unconsciousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "unconsciousness.n.01"
+        }
+      ],
+      "definition": "a state lacking normal awareness of the self or environment"
+    },
+    {
+      "lemma": "unmindful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unaware.a.01",
+          "via_synset": "oblivious.s.01"
+        }
+      ],
+      "definition": "(followed by `to' or `of') lacking conscious awareness of"
+    },
+    {
+      "lemma": "unsuspecting",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unaware.a.01",
+          "via_synset": "unsuspecting.s.02"
+        }
+      ],
+      "definition": "(often followed by `of') not knowing or expecting; not thinking likely"
+    },
+    {
+      "lemma": "unvoluntary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unconscious.s.01",
+          "via_synset": "involuntary.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unconscious.a.01",
+          "via_synset": "involuntary.a.01"
+        }
+      ],
+      "definition": "not subject to the control of the will; ; ; ; - John F.Kennedy"
+    },
+    {
+      "lemma": "unwitting",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unaware.a.01",
+          "via_synset": "unwitting.a.02"
+        }
+      ],
+      "definition": "not aware or knowing"
+    }
+  ]
+}

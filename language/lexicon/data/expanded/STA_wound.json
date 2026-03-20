@@ -1,0 +1,5509 @@
+{
+  "atom_id": "STA.wound",
+  "category": "STA",
+  "seed_count": 6,
+  "total_keys": 329,
+  "pos_counts": {
+    "n": 221,
+    "v": 102,
+    "adj": 6
+  },
+  "source_counts": {
+    "0_seed": 12,
+    "3_hyponym_d1": 63,
+    "6_derivational": 117,
+    "2_hypernym_d1": 17,
+    "10_sibling": 104,
+    "4_hyponym_d2": 107,
+    "5_hyponym_d3": 37,
+    "12_verb_group": 7
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 8,
+      "words": [
+        "wound(n)",
+        "lesion(n)",
+        "injury(n)",
+        "combat injury(n)",
+        "hurt(n)",
+        "harm(n)",
+        "trauma(n)",
+        "hurt(v)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 12,
+      "words": [
+        "personnel casualty(n)",
+        "loss(n)",
+        "distress(n)",
+        "suffering(n)",
+        "wrongdoing(n)",
+        "wrongful conduct(n)",
+        "misconduct(n)",
+        "actus reus(n)",
+        "ill health(n)",
+        "unhealthiness(n)",
+        "health problem(n)",
+        "indispose(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 60,
+      "words": [
+        "cut(n)",
+        "gash(n)",
+        "slash(n)",
+        "slice(n)",
+        "stigmata(n)",
+        "abrasion(n)",
+        "scratch(n)",
+        "scrape(n)",
+        "excoriation(n)",
+        "bite(n)",
+        "laceration(n)",
+        "raw wound(n)",
+        "flesh wound(n)",
+        "blighty wound(n)",
+        "disservice(n)",
+        "ill service(n)",
+        "ill turn(n)",
+        "spoil(n)",
+        "spoiling(n)",
+        "spoilage(n)",
+        "rupture(n)",
+        "blunt trauma(n)",
+        "penetrating trauma(n)",
+        "penetrating injury(n)",
+        "fracture(n)",
+        "break(n)",
+        "bruise(n)",
+        "contusion(n)",
+        "wrench(n)",
+        "twist(n)",
+        "pull(n)",
+        "brain damage(n)",
+        "whiplash(n)",
+        "whiplash injury(n)",
+        "birth trauma(n)",
+        "pinch(n)",
+        "dislocation(n)",
+        "strain(n)",
+        "burn(n)",
+        "sting(n)",
+        "insect bite(n)",
+        "electric shock(n)",
+        "blast trauma(n)",
+        "bleeding(n)",
+        "hemorrhage(n)",
+        "haemorrhage(n)",
+        "wale(n)",
+        "welt(n)",
+        "weal(n)",
+        "wheal(n)",
+        "bump(n)",
+        "frostbite(n)",
+        "cryopathy(n)",
+        "intravasation(n)",
+        "trouble(v)",
+        "ail(v)",
+        "pain(v)",
+        "disagree with(v)",
+        "injure(v)",
+        "wound(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 95,
+      "words": [
+        "rope burn(n)",
+        "graze(n)",
+        "snakebite(n)",
+        "dog bite(n)",
+        "herniated disc(n)",
+        "ruptured intervertebral disc(n)",
+        "slipped disc(n)",
+        "hernia(n)",
+        "herniation(n)",
+        "fatigue fracture(n)",
+        "stress fracture(n)",
+        "compound fracture(n)",
+        "open fracture(n)",
+        "comminuted fracture(n)",
+        "compression fracture(n)",
+        "displaced fracture(n)",
+        "impacted fracture(n)",
+        "incomplete fracture(n)",
+        "simple fracture(n)",
+        "closed fracture(n)",
+        "hairline fracture(n)",
+        "capillary fracture(n)",
+        "depressed fracture(n)",
+        "complete fracture(n)",
+        "petechia(n)",
+        "shiner(n)",
+        "black eye(n)",
+        "mouse(n)",
+        "ecchymosis(n)",
+        "sprain(n)",
+        "spondylolisthesis(n)",
+        "diastasis(n)",
+        "abarticulation(n)",
+        "first-degree burn(n)",
+        "scorch(n)",
+        "singe(n)",
+        "second-degree burn(n)",
+        "electric burn(n)",
+        "scald(n)",
+        "third-degree burn(n)",
+        "flea bite(n)",
+        "mosquito bite(n)",
+        "bee sting(n)",
+        "nosebleed(n)",
+        "epistaxis(n)",
+        "ulemorrhagia(n)",
+        "hyphema(n)",
+        "hemorrhagic stroke(n)",
+        "haemorrhagic stroke(n)",
+        "blood extravasation(n)",
+        "cerebral hemorrhage(n)",
+        "metrorrhagia(n)",
+        "trench foot(n)",
+        "immersion foot(n)",
+        "erupt(v)",
+        "recrudesce(v)",
+        "break out(v)",
+        "skin(v)",
+        "scrape(v)",
+        "knife(v)",
+        "stab(v)",
+        "calk(v)",
+        "shoot(v)",
+        "hit(v)",
+        "pip(v)",
+        "pull(v)",
+        "overstretch(v)",
+        "concuss(v)",
+        "traumatize(v)",
+        "traumatise(v)",
+        "shock(v)",
+        "subluxate(v)",
+        "disable(v)",
+        "invalid(v)",
+        "incapacitate(v)",
+        "handicap(v)",
+        "harm(v)",
+        "twist(v)",
+        "sprain(v)",
+        "wrench(v)",
+        "turn(v)",
+        "wrick(v)",
+        "rick(v)",
+        "fracture(v)",
+        "break(v)",
+        "bruise(v)",
+        "contuse(v)",
+        "graze(v)",
+        "maim(v)",
+        "trample(v)",
+        "torture(v)",
+        "excruciate(v)",
+        "torment(v)",
+        "run down(v)",
+        "run over(v)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 33,
+      "words": [
+        "laparocele(n)",
+        "eventration(n)",
+        "umbilical hernia(n)",
+        "omphalocele(n)",
+        "hiatus hernia(n)",
+        "hiatal hernia(n)",
+        "diaphragmatic hernia(n)",
+        "exomphalos(n)",
+        "diverticulum(n)",
+        "colpocele(n)",
+        "vaginocele(n)",
+        "keratocele(n)",
+        "inguinal hernia(n)",
+        "greenstick fracture(n)",
+        "sunburn(n)",
+        "erythema solare(n)",
+        "poniard(v)",
+        "bayonet(v)",
+        "kneecap(v)",
+        "gun down(v)",
+        "grass(v)",
+        "hock(v)",
+        "sicken(v)",
+        "jam(v)",
+        "crush(v)",
+        "cripple(v)",
+        "lame(v)",
+        "mutilate(v)",
+        "mar(v)",
+        "martyr(v)",
+        "martyrize(v)",
+        "martyrise(v)",
+        "rack(v)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 55,
+      "words": [
+        "lacerate(v)",
+        "shoot(n)",
+        "shooter(n)",
+        "hitting(n)",
+        "abrade(v)",
+        "scratchy(adj)",
+        "scratch(v)",
+        "excoriate(v)",
+        "disablement(n)",
+        "invalid(n)",
+        "handicap(n)",
+        "scald(v)",
+        "knife(n)",
+        "stab(n)",
+        "stabber(n)",
+        "bite(v)",
+        "maimer(n)",
+        "injurious(adj)",
+        "traumatic(adj)",
+        "welt(v)",
+        "gash(v)",
+        "slash(v)",
+        "slice(v)",
+        "strain(v)",
+        "skin(n)",
+        "scorch(v)",
+        "singe(v)",
+        "bleed(v)",
+        "hemorrhagic(adj)",
+        "hemorrhage(v)",
+        "haemorrhagic(adj)",
+        "burn(v)",
+        "spoil(v)",
+        "bruiser(n)",
+        "rupture(v)",
+        "eruptive(adj)",
+        "dislocate(v)",
+        "subluxation(n)",
+        "trample(n)",
+        "trampler(n)",
+        "wounding(n)",
+        "shock(n)",
+        "sting(v)",
+        "torture(n)",
+        "torturer(n)",
+        "torturing(n)",
+        "excruciation(n)",
+        "torment(n)",
+        "tormenter(n)",
+        "wrick(n)",
+        "rick(n)",
+        "trouble(n)",
+        "ailment(n)",
+        "pain(n)",
+        "grazing(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 64,
+      "words": [
+        "sacrifice(n)",
+        "tsoris(n)",
+        "anguish(n)",
+        "self-torture(n)",
+        "self-torment(n)",
+        "champerty(n)",
+        "violation(n)",
+        "infringement(n)",
+        "malpractice(n)",
+        "dishonesty(n)",
+        "knavery(n)",
+        "misfeasance(n)",
+        "dereliction(n)",
+        "falsification(n)",
+        "misrepresentation(n)",
+        "injustice(n)",
+        "unfairness(n)",
+        "iniquity(n)",
+        "shabbiness(n)",
+        "tort(n)",
+        "civil wrong(n)",
+        "malfeasance(n)",
+        "misbehavior(n)",
+        "misbehaviour(n)",
+        "misdeed(n)",
+        "perversion(n)",
+        "trespass(n)",
+        "encroachment(n)",
+        "intrusion(n)",
+        "usurpation(n)",
+        "malversation(n)",
+        "maintenance(n)",
+        "criminal maintenance(n)",
+        "infliction(n)",
+        "transgression(n)",
+        "evildoing(n)",
+        "brutalization(n)",
+        "brutalisation(n)",
+        "illness(n)",
+        "unwellness(n)",
+        "malady(n)",
+        "sickness(n)",
+        "dyscrasia(n)",
+        "affliction(n)",
+        "biliousness(n)",
+        "infection(n)",
+        "unfitness(n)",
+        "softness(n)",
+        "pathology(n)",
+        "invalidism(n)",
+        "constipate(v)",
+        "bind(v)",
+        "tire(v)",
+        "wear upon(v)",
+        "tire out(v)",
+        "wear(v)",
+        "weary(v)",
+        "jade(v)",
+        "wear out(v)",
+        "outwear(v)",
+        "wear down(v)",
+        "fag out(v)",
+        "fag(v)",
+        "fatigue(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 2,
+      "words": [
+        "blast(v)",
+        "strike(v)"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "abarticulation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "dislocation.n.03",
+          "via_synset": "abarticulation.n.01"
+        }
+      ],
+      "definition": "dislocation of a joint"
+    },
+    {
+      "lemma": "abrade",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abrasion.n.01",
+          "via_synset": "abrade.v.01"
+        }
+      ],
+      "definition": "wear away"
+    },
+    {
+      "lemma": "abrasion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "abrasion.n.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "abrasion.n.01"
+        }
+      ],
+      "definition": "an abraded area where the skin is torn or worn off"
+    },
+    {
+      "lemma": "actus reus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "injury.n.04",
+          "via_synset": "wrongdoing.n.02"
+        }
+      ],
+      "definition": "activity that transgresses moral or civil law"
+    },
+    {
+      "lemma": "affliction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ill_health.n.01",
+          "via_synset": "affliction.n.02"
+        }
+      ],
+      "definition": "a condition of suffering or distress due to ill health"
+    },
+    {
+      "lemma": "ail",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hurt.v.02",
+          "via_synset": "trouble.v.05"
+        }
+      ],
+      "definition": "cause bodily suffering to and make sick or indisposed"
+    },
+    {
+      "lemma": "ailment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "trouble.v.05",
+          "via_synset": "ailment.n.01"
+        }
+      ],
+      "definition": "an often persistent bodily disorder or disease; a cause for complaining"
+    },
+    {
+      "lemma": "anguish",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "distress.n.01",
+          "via_synset": "anguish.n.01"
+        }
+      ],
+      "definition": "extreme mental distress"
+    },
+    {
+      "lemma": "bayonet",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "knife.v.01",
+          "via_synset": "bayonet.v.01"
+        }
+      ],
+      "definition": "stab or kill someone with a bayonet"
+    },
+    {
+      "lemma": "bee sting",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sting.n.03",
+          "via_synset": "bee_sting.n.01"
+        }
+      ],
+      "definition": "a sting inflicted by a bee"
+    },
+    {
+      "lemma": "biliousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ill_health.n.01",
+          "via_synset": "biliousness.n.01"
+        }
+      ],
+      "definition": "gastric distress caused by a disorder of the liver or gall bladder"
+    },
+    {
+      "lemma": "bind",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "indispose.v.03",
+          "via_synset": "constipate.v.02"
+        }
+      ],
+      "definition": "cause to be constipated"
+    },
+    {
+      "lemma": "birth trauma",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "birth_trauma.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "birth_trauma.n.01"
+        }
+      ],
+      "definition": "physical injury to an infant during the birth process"
+    },
+    {
+      "lemma": "bite",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "bite.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "sting.n.03"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "bite.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "sting.n.03"
+        }
+      ],
+      "definition": "a wound resulting from biting by an animal or a person"
+    },
+    {
+      "lemma": "bite",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bite.n.01",
+          "via_synset": "bite.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sting.n.03",
+          "via_synset": "sting.v.02"
+        }
+      ],
+      "definition": "to grip, cut off, or tear with or as if with the teeth or jaws"
+    },
+    {
+      "lemma": "black eye",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bruise.n.01",
+          "via_synset": "shiner.n.01"
+        }
+      ],
+      "definition": "a swollen bruise caused by a blow to the eye"
+    },
+    {
+      "lemma": "blast",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "shoot.v.01",
+          "via_synset": "blast.v.07"
+        }
+      ],
+      "definition": "fire a shot"
+    },
+    {
+      "lemma": "blast trauma",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "blast_trauma.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "blast_trauma.n.01"
+        }
+      ],
+      "definition": "injury caused the explosion of a bomb (especially in enclosed spaces)"
+    },
+    {
+      "lemma": "bleed",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bleeding.n.01",
+          "via_synset": "shed_blood.v.02"
+        }
+      ],
+      "definition": "lose blood from one's body"
+    },
+    {
+      "lemma": "bleeding",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "bleeding.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "bleeding.n.01"
+        }
+      ],
+      "definition": "the flow of blood from a ruptured blood vessel"
+    },
+    {
+      "lemma": "blighty wound",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wound.n.02",
+          "via_synset": "blighty_wound.n.01"
+        }
+      ],
+      "definition": "a wound that would cause an English soldier to be sent home from service abroad"
+    },
+    {
+      "lemma": "blood extravasation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bleeding.n.01",
+          "via_synset": "blood_extravasation.n.01"
+        }
+      ],
+      "definition": "the leakage of blood from a vessel into tissues surrounding it; can occur in injuries or burns or allergic reactions"
+    },
+    {
+      "lemma": "blunt trauma",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "blunt_trauma.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "blunt_trauma.n.01"
+        }
+      ],
+      "definition": "injury incurred when the human body hits or is hit by a large outside object (as a car)"
+    },
+    {
+      "lemma": "brain damage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "brain_damage.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "brain_damage.n.01"
+        }
+      ],
+      "definition": "injury to the brain that impairs its functions (especially permanently); can be caused by trauma to the head, infection, hemorrhage, inadequate oxygen, genetic abnormality, etc."
+    },
+    {
+      "lemma": "break",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "fracture.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fracture.v.06",
+          "via_synset": "fracture.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "fracture.n.01"
+        }
+      ],
+      "definition": "breaking of hard tissue such as bone"
+    },
+    {
+      "lemma": "break",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "fracture.v.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fracture.n.01",
+          "via_synset": "crack.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fracture.n.01",
+          "via_synset": "fracture.v.06"
+        }
+      ],
+      "definition": "fracture a bone of"
+    },
+    {
+      "lemma": "break out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "trouble.v.05",
+          "via_synset": "erupt.v.08"
+        }
+      ],
+      "definition": "become raw or open"
+    },
+    {
+      "lemma": "bruise",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "bruise.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bruise.v.01",
+          "via_synset": "bruise.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "bruise.n.01"
+        }
+      ],
+      "definition": "an injury that doesn't break the skin but results in some discoloration"
+    },
+    {
+      "lemma": "bruise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "bruise.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bruise.n.01",
+          "via_synset": "bruise.v.01"
+        }
+      ],
+      "definition": "injure the underlying soft tissue or bone of"
+    },
+    {
+      "lemma": "bruiser",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bruise.v.01",
+          "via_synset": "bull.n.02"
+        }
+      ],
+      "definition": "a large and strong and heavyset man"
+    },
+    {
+      "lemma": "brutalisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "brutalization.n.02"
+        }
+      ],
+      "definition": "the activity of treating someone savagely or viciously"
+    },
+    {
+      "lemma": "brutalization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "brutalization.n.02"
+        }
+      ],
+      "definition": "the activity of treating someone savagely or viciously"
+    },
+    {
+      "lemma": "bump",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "bump.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "bump.n.01"
+        }
+      ],
+      "definition": "a lump on the body caused by a blow"
+    },
+    {
+      "lemma": "burn",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "burn.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "burn.n.03"
+        }
+      ],
+      "definition": "an injury caused by exposure to heat or chemicals or radiation"
+    },
+    {
+      "lemma": "burn",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "burn.n.03",
+          "via_synset": "cauterize.v.01"
+        }
+      ],
+      "definition": "burn, sear, or freeze (tissue) using a hot iron or electric current or a caustic agent"
+    },
+    {
+      "lemma": "calk",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "calk.v.03"
+        }
+      ],
+      "definition": "injure with a calk"
+    },
+    {
+      "lemma": "capillary fracture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "fracture.n.01",
+          "via_synset": "hairline_fracture.n.01"
+        }
+      ],
+      "definition": "a fracture without separation of the fragments and the line of the break being very thin"
+    },
+    {
+      "lemma": "cerebral hemorrhage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bleeding.n.01",
+          "via_synset": "cerebral_hemorrhage.n.01"
+        }
+      ],
+      "definition": "bleeding from a ruptured blood vessel in the brain"
+    },
+    {
+      "lemma": "champerty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "champerty.n.01"
+        }
+      ],
+      "definition": "an unethical agreement between an attorney and client that the attorney would sue and pay the costs of the client's suit in return for a portion of the damages awarded"
+    },
+    {
+      "lemma": "civil wrong",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "tort.n.01"
+        }
+      ],
+      "definition": "(law) any wrongdoing for which an action for damages may be brought"
+    },
+    {
+      "lemma": "closed fracture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "fracture.n.01",
+          "via_synset": "simple_fracture.n.01"
+        }
+      ],
+      "definition": "an uncomplicated fracture in which the broken bones to not pierce the skin"
+    },
+    {
+      "lemma": "colpocele",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "hernia.n.01",
+          "via_synset": "colpocele.n.01"
+        }
+      ],
+      "definition": "hernia projecting into the vagina"
+    },
+    {
+      "lemma": "combat injury",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wound.n.02",
+          "via_synset": "wound.n.02"
+        }
+      ],
+      "definition": "a casualty to military personnel resulting from combat"
+    },
+    {
+      "lemma": "comminuted fracture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "fracture.n.01",
+          "via_synset": "comminuted_fracture.n.01"
+        }
+      ],
+      "definition": "fracture in which the bone is splintered or crushed"
+    },
+    {
+      "lemma": "complete fracture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "fracture.n.01",
+          "via_synset": "complete_fracture.n.01"
+        }
+      ],
+      "definition": "break involving the entire width of the bone"
+    },
+    {
+      "lemma": "compound fracture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "fracture.n.01",
+          "via_synset": "compound_fracture.n.01"
+        }
+      ],
+      "definition": "bone fracture associated with lacerated soft tissue or an open wound"
+    },
+    {
+      "lemma": "compression fracture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "fracture.n.01",
+          "via_synset": "compression_fracture.n.01"
+        }
+      ],
+      "definition": "fracture in which the bone collapses (especially in short bones such as vertebrae)"
+    },
+    {
+      "lemma": "concuss",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "concuss.v.02"
+        }
+      ],
+      "definition": "injure the brain; sustain a concussion"
+    },
+    {
+      "lemma": "constipate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "indispose.v.03",
+          "via_synset": "constipate.v.02"
+        }
+      ],
+      "definition": "cause to be constipated"
+    },
+    {
+      "lemma": "contuse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "bruise.v.01"
+        }
+      ],
+      "definition": "injure the underlying soft tissue or bone of"
+    },
+    {
+      "lemma": "contusion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "bruise.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bruise.v.01",
+          "via_synset": "contusion.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "bruise.n.01"
+        }
+      ],
+      "definition": "an injury that doesn't break the skin but results in some discoloration"
+    },
+    {
+      "lemma": "criminal maintenance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "maintenance.n.05"
+        }
+      ],
+      "definition": "the unauthorized interference in a legal action by a person having no interest in it (as by helping one party with money or otherwise to continue the action) so as to obstruct justice or promote unnecessary litigation or unsettle the peace of the community"
+    },
+    {
+      "lemma": "cripple",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "maim.v.01",
+          "via_synset": "cripple.v.02"
+        }
+      ],
+      "definition": "deprive of the use of a limb, especially a leg"
+    },
+    {
+      "lemma": "crush",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bruise.v.01",
+          "via_synset": "jam.v.03"
+        }
+      ],
+      "definition": "crush or bruise"
+    },
+    {
+      "lemma": "cryopathy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "frostbite.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "frostbite.n.01"
+        }
+      ],
+      "definition": "destruction of tissue by freezing and characterized by tingling, blistering and possibly gangrene"
+    },
+    {
+      "lemma": "cut",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "cut.n.05"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "cut.n.05"
+        }
+      ],
+      "definition": "a wound made by cutting"
+    },
+    {
+      "lemma": "depressed fracture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "fracture.n.01",
+          "via_synset": "depressed_fracture.n.01"
+        }
+      ],
+      "definition": "fracture of the skull where the bone is pushed in"
+    },
+    {
+      "lemma": "dereliction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "dereliction.n.02"
+        }
+      ],
+      "definition": "willful negligence"
+    },
+    {
+      "lemma": "diaphragmatic hernia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "hernia.n.01",
+          "via_synset": "hiatus_hernia.n.01"
+        }
+      ],
+      "definition": "hernia resulting from the protrusion of part of the stomach through the diaphragm"
+    },
+    {
+      "lemma": "diastasis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "dislocation.n.03",
+          "via_synset": "diastasis.n.01"
+        }
+      ],
+      "definition": "separation of an epiphysis from the long bone to which it is normally attached without fracture of the bone"
+    },
+    {
+      "lemma": "disable",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "disable.v.02"
+        }
+      ],
+      "definition": "injure permanently"
+    },
+    {
+      "lemma": "disablement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disable.v.02",
+          "via_synset": "disability.n.01"
+        }
+      ],
+      "definition": "the condition of being unable to perform as a consequence of physical or mental unfitness"
+    },
+    {
+      "lemma": "disagree with",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hurt.v.02",
+          "via_synset": "disagree_with.v.01"
+        }
+      ],
+      "definition": "not be very easily digestible"
+    },
+    {
+      "lemma": "dishonesty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "dishonesty.n.02"
+        }
+      ],
+      "definition": "lack of honesty; acts of lying or cheating or stealing"
+    },
+    {
+      "lemma": "dislocate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dislocation.n.03",
+          "via_synset": "dislocate.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dislocation.n.03",
+          "via_synset": "dislocate.v.01"
+        }
+      ],
+      "definition": "put out of its usual place, position, or relationship"
+    },
+    {
+      "lemma": "dislocation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "dislocation.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "dislocation.n.03"
+        }
+      ],
+      "definition": "a displacement of a part (especially a bone) from its normal position (as in the shoulder or the vertebral column)"
+    },
+    {
+      "lemma": "displaced fracture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "fracture.n.01",
+          "via_synset": "displaced_fracture.n.01"
+        }
+      ],
+      "definition": "fracture in which the two ends of the broken bone are separated from one another"
+    },
+    {
+      "lemma": "disservice",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.04",
+          "via_synset": "disservice.n.01"
+        }
+      ],
+      "definition": "an act intended to help that turns out badly"
+    },
+    {
+      "lemma": "distress",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wound.n.03",
+          "via_synset": "distress.n.01"
+        }
+      ],
+      "definition": "psychological suffering"
+    },
+    {
+      "lemma": "diverticulum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "hernia.n.01",
+          "via_synset": "diverticulum.n.01"
+        }
+      ],
+      "definition": "a herniation through the muscular wall of a tubular organ (especially the colon)"
+    },
+    {
+      "lemma": "dog bite",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bite.n.01",
+          "via_synset": "dog_bite.n.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bite.n.01",
+          "via_synset": "dog_bite.n.01"
+        }
+      ],
+      "definition": "a bite inflicted by a dog"
+    },
+    {
+      "lemma": "dyscrasia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ill_health.n.01",
+          "via_synset": "dyscrasia.n.01"
+        }
+      ],
+      "definition": "an abnormal or physiologically unbalanced state of the body"
+    },
+    {
+      "lemma": "ecchymosis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bruise.n.01",
+          "via_synset": "ecchymosis.n.01"
+        }
+      ],
+      "definition": "the purple or black-and-blue area resulting from a bruise"
+    },
+    {
+      "lemma": "electric burn",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "burn.n.03",
+          "via_synset": "electric_burn.n.01"
+        }
+      ],
+      "definition": "a burn caused by heat produced by an electric current"
+    },
+    {
+      "lemma": "electric shock",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "electric_shock.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "electric_shock.n.02"
+        }
+      ],
+      "definition": "trauma caused by the passage of electric current through the body (as from contact with high voltage lines or being struck by lightning); usually involves burns and abnormal heart rhythm and unconsciousness"
+    },
+    {
+      "lemma": "encroachment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "trespass.n.02"
+        }
+      ],
+      "definition": "entry to another's property without right or permission"
+    },
+    {
+      "lemma": "epistaxis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bleeding.n.01",
+          "via_synset": "nosebleed.n.01"
+        }
+      ],
+      "definition": "bleeding from the nose"
+    },
+    {
+      "lemma": "erupt",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "trouble.v.05",
+          "via_synset": "erupt.v.08"
+        }
+      ],
+      "definition": "become raw or open"
+    },
+    {
+      "lemma": "eruptive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "erupt.v.08",
+          "via_synset": "eruptive.s.01"
+        }
+      ],
+      "definition": "actively spewing out lava"
+    },
+    {
+      "lemma": "erythema solare",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "first-degree_burn.n.01",
+          "via_synset": "sunburn.n.02"
+        }
+      ],
+      "definition": "redness of the skin caused by exposure to the rays of the sun"
+    },
+    {
+      "lemma": "eventration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "hernia.n.01",
+          "via_synset": "eventration.n.01"
+        }
+      ],
+      "definition": "protrusion of the intestine through the abdominal wall"
+    },
+    {
+      "lemma": "evildoing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "transgression.n.01"
+        }
+      ],
+      "definition": "the act of transgressing; the violation of a law or a duty or moral principle"
+    },
+    {
+      "lemma": "excoriate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abrasion.n.01",
+          "via_synset": "chafe.v.04"
+        }
+      ],
+      "definition": "tear or wear off the skin or make sore by abrading"
+    },
+    {
+      "lemma": "excoriation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "abrasion.n.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "abrasion.n.01"
+        }
+      ],
+      "definition": "an abraded area where the skin is torn or worn off"
+    },
+    {
+      "lemma": "excruciate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "torture.v.02"
+        }
+      ],
+      "definition": "subject to torture"
+    },
+    {
+      "lemma": "excruciation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "torture.v.02",
+          "via_synset": "agony.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "torture.v.02",
+          "via_synset": "crucifixion.n.03"
+        }
+      ],
+      "definition": "a state of acute pain"
+    },
+    {
+      "lemma": "exomphalos",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "hernia.n.01",
+          "via_synset": "exomphalos.n.01"
+        }
+      ],
+      "definition": "an umbilical hernia at birth in which some abdominal organs push into the umbilical cord"
+    },
+    {
+      "lemma": "fag",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "indispose.v.03",
+          "via_synset": "tire.v.02"
+        }
+      ],
+      "definition": "exhaust or get tired through overuse or great strain or stress"
+    },
+    {
+      "lemma": "fag out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "indispose.v.03",
+          "via_synset": "tire.v.02"
+        }
+      ],
+      "definition": "exhaust or get tired through overuse or great strain or stress"
+    },
+    {
+      "lemma": "falsification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "falsification.n.02"
+        }
+      ],
+      "definition": "a willful perversion of facts"
+    },
+    {
+      "lemma": "fatigue",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "indispose.v.03",
+          "via_synset": "tire.v.02"
+        }
+      ],
+      "definition": "exhaust or get tired through overuse or great strain or stress"
+    },
+    {
+      "lemma": "fatigue fracture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "fracture.n.01",
+          "via_synset": "fatigue_fracture.n.01"
+        }
+      ],
+      "definition": "fracture resulting from excessive activity rather than a specific injury"
+    },
+    {
+      "lemma": "first-degree burn",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "burn.n.03",
+          "via_synset": "first-degree_burn.n.01"
+        }
+      ],
+      "definition": "burn causing redness of the skin surface"
+    },
+    {
+      "lemma": "flea bite",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sting.n.03",
+          "via_synset": "flea_bite.n.01"
+        }
+      ],
+      "definition": "sting inflicted by a flea"
+    },
+    {
+      "lemma": "flesh wound",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wound.n.02",
+          "via_synset": "flesh_wound.n.01"
+        }
+      ],
+      "definition": "a wound that does not damage important internal organs or shatter any bones"
+    },
+    {
+      "lemma": "fracture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "fracture.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fracture.v.06",
+          "via_synset": "fracture.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fracture.v.06",
+          "via_synset": "fracture.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "fracture.n.01"
+        }
+      ],
+      "definition": "breaking of hard tissue such as bone"
+    },
+    {
+      "lemma": "fracture",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "fracture.v.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fracture.n.01",
+          "via_synset": "fracture.v.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fracture.n.01",
+          "via_synset": "fracture.v.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fracture.n.01",
+          "via_synset": "fracture.v.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fracture.n.01",
+          "via_synset": "fracture.v.03"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "fracture.v.06",
+          "via_synset": "fracture.v.05"
+        }
+      ],
+      "definition": "fracture a bone of"
+    },
+    {
+      "lemma": "frostbite",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "frostbite.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "frostbite.n.01"
+        }
+      ],
+      "definition": "destruction of tissue by freezing and characterized by tingling, blistering and possibly gangrene"
+    },
+    {
+      "lemma": "gash",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "cut.n.05"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "cut.n.05"
+        }
+      ],
+      "definition": "a wound made by cutting"
+    },
+    {
+      "lemma": "gash",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cut.n.05",
+          "via_synset": "slash.v.03"
+        }
+      ],
+      "definition": "cut open"
+    },
+    {
+      "lemma": "grass",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "shoot.v.01",
+          "via_synset": "grass.v.01"
+        }
+      ],
+      "definition": "shoot down, of birds"
+    },
+    {
+      "lemma": "graze",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "abrasion.n.01",
+          "via_synset": "graze.n.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "abrasion.n.01",
+          "via_synset": "graze.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "graze.v.02",
+          "via_synset": "graze.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "graze.v.02",
+          "via_synset": "graze.n.02"
+        }
+      ],
+      "definition": "a superficial abrasion"
+    },
+    {
+      "lemma": "graze",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "graze.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "graze.n.01",
+          "via_synset": "graze.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "graze.n.01",
+          "via_synset": "graze.v.04"
+        }
+      ],
+      "definition": "break the skin (of a body part) by scraping"
+    },
+    {
+      "lemma": "grazing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "graze.v.02",
+          "via_synset": "grazing.n.02"
+        }
+      ],
+      "definition": "the act of brushing against while passing"
+    },
+    {
+      "lemma": "greenstick fracture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "incomplete_fracture.n.01",
+          "via_synset": "greenstick_fracture.n.01"
+        }
+      ],
+      "definition": "a partial fracture of a bone (usually in children); the bone is bent but broken on only one side"
+    },
+    {
+      "lemma": "gun down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "shoot.v.01",
+          "via_synset": "gun_down.v.01"
+        }
+      ],
+      "definition": "strike down or shoot down"
+    },
+    {
+      "lemma": "haemorrhage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "bleeding.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "bleeding.n.01"
+        }
+      ],
+      "definition": "the flow of blood from a ruptured blood vessel"
+    },
+    {
+      "lemma": "haemorrhagic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bleeding.n.01",
+          "via_synset": "hemorrhagic.a.01"
+        }
+      ],
+      "definition": "of or relating to a hemorrhage"
+    },
+    {
+      "lemma": "haemorrhagic stroke",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bleeding.n.01",
+          "via_synset": "hemorrhagic_stroke.n.01"
+        }
+      ],
+      "definition": "stroke caused by the rupture of a blood vessel in the brain"
+    },
+    {
+      "lemma": "hairline fracture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "fracture.n.01",
+          "via_synset": "hairline_fracture.n.01"
+        }
+      ],
+      "definition": "a fracture without separation of the fragments and the line of the break being very thin"
+    },
+    {
+      "lemma": "handicap",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disable.v.02",
+          "via_synset": "disability.n.01"
+        }
+      ],
+      "definition": "the condition of being unable to perform as a consequence of physical or mental unfitness"
+    },
+    {
+      "lemma": "handicap",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "disable.v.02"
+        }
+      ],
+      "definition": "injure permanently"
+    },
+    {
+      "lemma": "harm",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "injury.n.01",
+          "via_synset": "injury.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wound.n.01",
+          "via_synset": "injury.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "harm.v.01",
+          "via_synset": "damage.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "harm.v.01",
+          "via_synset": "damage.n.01"
+        }
+      ],
+      "definition": "any physical damage to the body caused by violence or accident or fracture etc."
+    },
+    {
+      "lemma": "harm",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "harm.v.01"
+        }
+      ],
+      "definition": "cause or do harm to"
+    },
+    {
+      "lemma": "health problem",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "injury.n.01",
+          "via_synset": "ill_health.n.01"
+        }
+      ],
+      "definition": "a state in which you are unable to function normally and without pain"
+    },
+    {
+      "lemma": "hemorrhage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "bleeding.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "bleeding.n.01"
+        }
+      ],
+      "definition": "the flow of blood from a ruptured blood vessel"
+    },
+    {
+      "lemma": "hemorrhage",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bleeding.n.01",
+          "via_synset": "shed_blood.v.02"
+        }
+      ],
+      "definition": "lose blood from one's body"
+    },
+    {
+      "lemma": "hemorrhagic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bleeding.n.01",
+          "via_synset": "hemorrhagic.a.01"
+        }
+      ],
+      "definition": "of or relating to a hemorrhage"
+    },
+    {
+      "lemma": "hemorrhagic stroke",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bleeding.n.01",
+          "via_synset": "hemorrhagic_stroke.n.01"
+        }
+      ],
+      "definition": "stroke caused by the rupture of a blood vessel in the brain"
+    },
+    {
+      "lemma": "hernia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "rupture.n.01",
+          "via_synset": "hernia.n.01"
+        }
+      ],
+      "definition": "rupture in smooth muscle tissue through which a bodily structure protrudes"
+    },
+    {
+      "lemma": "herniated disc",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "rupture.n.01",
+          "via_synset": "herniated_disc.n.01"
+        }
+      ],
+      "definition": "a painful rupture of the fibrocartilage of the disc between spinal vertebrae; occurs most often in the lumbar region"
+    },
+    {
+      "lemma": "herniation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "rupture.n.01",
+          "via_synset": "hernia.n.01"
+        }
+      ],
+      "definition": "rupture in smooth muscle tissue through which a bodily structure protrudes"
+    },
+    {
+      "lemma": "hiatal hernia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "hernia.n.01",
+          "via_synset": "hiatus_hernia.n.01"
+        }
+      ],
+      "definition": "hernia resulting from the protrusion of part of the stomach through the diaphragm"
+    },
+    {
+      "lemma": "hiatus hernia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "hernia.n.01",
+          "via_synset": "hiatus_hernia.n.01"
+        }
+      ],
+      "definition": "hernia resulting from the protrusion of part of the stomach through the diaphragm"
+    },
+    {
+      "lemma": "hit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "shoot.v.01"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "shoot.v.01",
+          "via_synset": "strike.v.04"
+        }
+      ],
+      "definition": "hit with a missile from a weapon"
+    },
+    {
+      "lemma": "hitting",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "shoot.v.01",
+          "via_synset": "hit.n.02"
+        }
+      ],
+      "definition": "the act of contacting one thing with another"
+    },
+    {
+      "lemma": "hock",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "disable.v.02",
+          "via_synset": "hock.v.02"
+        }
+      ],
+      "definition": "disable by cutting the hock"
+    },
+    {
+      "lemma": "hurt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "injury.n.01",
+          "via_synset": "injury.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wound.n.01",
+          "via_synset": "injury.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wound.n.03",
+          "via_synset": "distress.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hurt.v.02",
+          "via_synset": "distress.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hurt.v.02",
+          "via_synset": "suffering.n.04"
+        }
+      ],
+      "definition": "any physical damage to the body caused by violence or accident or fracture etc."
+    },
+    {
+      "lemma": "hurt",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hurt.v.02",
+          "via_synset": "hurt.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "injury.n.01",
+          "via_synset": "hurt.v.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "injury.n.01",
+          "via_synset": "suffer.v.06"
+        }
+      ],
+      "definition": "give trouble or pain to"
+    },
+    {
+      "lemma": "hyphema",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bleeding.n.01",
+          "via_synset": "hyphema.n.01"
+        }
+      ],
+      "definition": "bleeding into the interior chamber of the eye"
+    },
+    {
+      "lemma": "ill health",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "injury.n.01",
+          "via_synset": "ill_health.n.01"
+        }
+      ],
+      "definition": "a state in which you are unable to function normally and without pain"
+    },
+    {
+      "lemma": "ill service",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.04",
+          "via_synset": "disservice.n.01"
+        }
+      ],
+      "definition": "an act intended to help that turns out badly"
+    },
+    {
+      "lemma": "ill turn",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.04",
+          "via_synset": "disservice.n.01"
+        }
+      ],
+      "definition": "an act intended to help that turns out badly"
+    },
+    {
+      "lemma": "illness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ill_health.n.01",
+          "via_synset": "illness.n.01"
+        }
+      ],
+      "definition": "impairment of normal physiological function affecting part or all of an organism"
+    },
+    {
+      "lemma": "immersion foot",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "frostbite.n.01",
+          "via_synset": "trench_foot.n.01"
+        }
+      ],
+      "definition": "resembling frostbite but without freezing; resulting from exposure to cold and wet"
+    },
+    {
+      "lemma": "impacted fracture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "fracture.n.01",
+          "via_synset": "impacted_fracture.n.01"
+        }
+      ],
+      "definition": "fracture in which one broken end is wedged into the other broken end"
+    },
+    {
+      "lemma": "incapacitate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "disable.v.02"
+        }
+      ],
+      "definition": "injure permanently"
+    },
+    {
+      "lemma": "incomplete fracture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "fracture.n.01",
+          "via_synset": "incomplete_fracture.n.01"
+        }
+      ],
+      "definition": "fracture that does not go across the entire width of the bone"
+    },
+    {
+      "lemma": "indispose",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "hurt.v.02",
+          "via_synset": "indispose.v.03"
+        }
+      ],
+      "definition": "cause to feel unwell"
+    },
+    {
+      "lemma": "infection",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ill_health.n.01",
+          "via_synset": "infection.n.01"
+        }
+      ],
+      "definition": "the pathological state resulting from the invasion of the body by pathogenic microorganisms"
+    },
+    {
+      "lemma": "infliction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "infliction.n.02"
+        }
+      ],
+      "definition": "an act causing pain or damage"
+    },
+    {
+      "lemma": "infringement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "violation.n.02"
+        }
+      ],
+      "definition": "an act that disregards an agreement or a right"
+    },
+    {
+      "lemma": "inguinal hernia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "hernia.n.01",
+          "via_synset": "inguinal_hernia.n.01"
+        }
+      ],
+      "definition": "hernia in which a loop of intestine enters the inguinal canal; the most common type of hernia in males"
+    },
+    {
+      "lemma": "iniquity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "injustice.n.01"
+        }
+      ],
+      "definition": "an unjust act"
+    },
+    {
+      "lemma": "injure",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hurt.v.02",
+          "via_synset": "injure.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "injury.n.01",
+          "via_synset": "injure.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "injury.n.04",
+          "via_synset": "injure.v.01"
+        }
+      ],
+      "definition": "cause injuries or bodily harm to"
+    },
+    {
+      "lemma": "injurious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "injury.n.01",
+          "via_synset": "deleterious.s.01"
+        }
+      ],
+      "definition": "harmful to living things"
+    },
+    {
+      "lemma": "injury",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wound.n.02",
+          "via_synset": "wound.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "injury.n.04",
+          "via_synset": "injury.n.04"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "injury.n.01",
+          "via_synset": "injury.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wound.n.01",
+          "via_synset": "injury.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "injure.v.01",
+          "via_synset": "injury.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "injure.v.01",
+          "via_synset": "injury.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "injure.v.01",
+          "via_synset": "injury.n.04"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "injury.n.05"
+        }
+      ],
+      "definition": "a casualty to military personnel resulting from combat"
+    },
+    {
+      "lemma": "injustice",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "injustice.n.01"
+        }
+      ],
+      "definition": "an unjust act"
+    },
+    {
+      "lemma": "insect bite",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "sting.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "sting.n.03"
+        }
+      ],
+      "definition": "a painful wound caused by the thrust of an insect's stinger into skin"
+    },
+    {
+      "lemma": "intravasation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "intravasation.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "intravasation.n.01"
+        }
+      ],
+      "definition": "entry of foreign matter into a blood vessel"
+    },
+    {
+      "lemma": "intrusion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "trespass.n.02"
+        }
+      ],
+      "definition": "entry to another's property without right or permission"
+    },
+    {
+      "lemma": "invalid",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "disable.v.02",
+          "via_synset": "invalid.n.01"
+        }
+      ],
+      "definition": "someone who is incapacitated by a chronic illness or injury"
+    },
+    {
+      "lemma": "invalid",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "disable.v.02"
+        }
+      ],
+      "definition": "injure permanently"
+    },
+    {
+      "lemma": "invalidism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ill_health.n.01",
+          "via_synset": "invalidism.n.01"
+        }
+      ],
+      "definition": "chronic ill health"
+    },
+    {
+      "lemma": "jade",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "indispose.v.03",
+          "via_synset": "tire.v.02"
+        }
+      ],
+      "definition": "exhaust or get tired through overuse or great strain or stress"
+    },
+    {
+      "lemma": "jam",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bruise.v.01",
+          "via_synset": "jam.v.03"
+        }
+      ],
+      "definition": "crush or bruise"
+    },
+    {
+      "lemma": "keratocele",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "hernia.n.01",
+          "via_synset": "keratocele.n.01"
+        }
+      ],
+      "definition": "hernia of the cornea"
+    },
+    {
+      "lemma": "knavery",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "dishonesty.n.02"
+        }
+      ],
+      "definition": "lack of honesty; acts of lying or cheating or stealing"
+    },
+    {
+      "lemma": "kneecap",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "shoot.v.01",
+          "via_synset": "kneecap.v.01"
+        }
+      ],
+      "definition": "shoot in the kneecap, often done by terrorist groups as a warning"
+    },
+    {
+      "lemma": "knife",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "knife.v.01",
+          "via_synset": "knife.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "knife.v.01",
+          "via_synset": "knife.n.01"
+        }
+      ],
+      "definition": "a weapon with a handle and blade with a sharp point"
+    },
+    {
+      "lemma": "knife",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "knife.v.01"
+        }
+      ],
+      "definition": "use a knife on"
+    },
+    {
+      "lemma": "lacerate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "laceration.n.01",
+          "via_synset": "lacerate.v.01"
+        }
+      ],
+      "definition": "cut or tear irregularly"
+    },
+    {
+      "lemma": "laceration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "laceration.n.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "laceration.n.01"
+        }
+      ],
+      "definition": "a torn ragged wound"
+    },
+    {
+      "lemma": "lame",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "maim.v.01",
+          "via_synset": "cripple.v.02"
+        }
+      ],
+      "definition": "deprive of the use of a limb, especially a leg"
+    },
+    {
+      "lemma": "laparocele",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "hernia.n.01",
+          "via_synset": "laparocele.n.01"
+        }
+      ],
+      "definition": "hernia through the abdomen"
+    },
+    {
+      "lemma": "lesion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wound.n.01",
+          "via_synset": "wound.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "wound.n.01"
+        }
+      ],
+      "definition": "an injury to living tissue (especially an injury involving a cut or break in the skin)"
+    },
+    {
+      "lemma": "loss",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wound.n.02",
+          "via_synset": "personnel_casualty.n.01"
+        }
+      ],
+      "definition": "military personnel lost by death or capture"
+    },
+    {
+      "lemma": "maim",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "maim.v.01"
+        }
+      ],
+      "definition": "injure or wound seriously and leave permanent disfiguration or mutilation"
+    },
+    {
+      "lemma": "maimer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "maim.v.01",
+          "via_synset": "mutilator.n.01"
+        }
+      ],
+      "definition": "a person who mutilates or destroys or disfigures or cripples"
+    },
+    {
+      "lemma": "maintenance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "maintenance.n.05"
+        }
+      ],
+      "definition": "the unauthorized interference in a legal action by a person having no interest in it (as by helping one party with money or otherwise to continue the action) so as to obstruct justice or promote unnecessary litigation or unsettle the peace of the community"
+    },
+    {
+      "lemma": "malady",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ill_health.n.01",
+          "via_synset": "illness.n.01"
+        }
+      ],
+      "definition": "impairment of normal physiological function affecting part or all of an organism"
+    },
+    {
+      "lemma": "malfeasance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "malfeasance.n.01"
+        }
+      ],
+      "definition": "wrongful conduct by a public official"
+    },
+    {
+      "lemma": "malpractice",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "malpractice.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "malpractice.n.01"
+        }
+      ],
+      "definition": "a wrongful act that the actor had no right to do; improper professional conduct"
+    },
+    {
+      "lemma": "malversation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "malversation.n.01"
+        }
+      ],
+      "definition": "misconduct in public office"
+    },
+    {
+      "lemma": "mar",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "maim.v.01",
+          "via_synset": "mutilate.v.03"
+        }
+      ],
+      "definition": "destroy or injure severely"
+    },
+    {
+      "lemma": "martyr",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "torture.v.02",
+          "via_synset": "martyr.v.02"
+        }
+      ],
+      "definition": "torture and torment like a martyr"
+    },
+    {
+      "lemma": "martyrise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "torture.v.02",
+          "via_synset": "martyr.v.02"
+        }
+      ],
+      "definition": "torture and torment like a martyr"
+    },
+    {
+      "lemma": "martyrize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "torture.v.02",
+          "via_synset": "martyr.v.02"
+        }
+      ],
+      "definition": "torture and torment like a martyr"
+    },
+    {
+      "lemma": "metrorrhagia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bleeding.n.01",
+          "via_synset": "metrorrhagia.n.01"
+        }
+      ],
+      "definition": "bleeding from the uterus that is not due to menstruation; usually indicative of disease (as cervical cancer)"
+    },
+    {
+      "lemma": "misbehavior",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "misbehavior.n.01"
+        }
+      ],
+      "definition": "improper or wicked or immoral behavior"
+    },
+    {
+      "lemma": "misbehaviour",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "misbehavior.n.01"
+        }
+      ],
+      "definition": "improper or wicked or immoral behavior"
+    },
+    {
+      "lemma": "misconduct",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "injury.n.04",
+          "via_synset": "wrongdoing.n.02"
+        }
+      ],
+      "definition": "activity that transgresses moral or civil law"
+    },
+    {
+      "lemma": "misdeed",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "misbehavior.n.01"
+        }
+      ],
+      "definition": "improper or wicked or immoral behavior"
+    },
+    {
+      "lemma": "misfeasance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "misfeasance.n.01"
+        }
+      ],
+      "definition": "doing a proper act in a wrongful or injurious manner"
+    },
+    {
+      "lemma": "misrepresentation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "falsification.n.02"
+        }
+      ],
+      "definition": "a willful perversion of facts"
+    },
+    {
+      "lemma": "mosquito bite",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sting.n.03",
+          "via_synset": "mosquito_bite.n.01"
+        }
+      ],
+      "definition": "a sting inflicted by a mosquito"
+    },
+    {
+      "lemma": "mouse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bruise.n.01",
+          "via_synset": "shiner.n.01"
+        }
+      ],
+      "definition": "a swollen bruise caused by a blow to the eye"
+    },
+    {
+      "lemma": "mutilate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "maim.v.01",
+          "via_synset": "mutilate.v.03"
+        }
+      ],
+      "definition": "destroy or injure severely"
+    },
+    {
+      "lemma": "nosebleed",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bleeding.n.01",
+          "via_synset": "nosebleed.n.01"
+        }
+      ],
+      "definition": "bleeding from the nose"
+    },
+    {
+      "lemma": "omphalocele",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "hernia.n.01",
+          "via_synset": "umbilical_hernia.n.01"
+        }
+      ],
+      "definition": "protrusion of the intestine and omentum through a hernia in the abdominal wall near the navel; usually self correcting after birth"
+    },
+    {
+      "lemma": "open fracture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "fracture.n.01",
+          "via_synset": "compound_fracture.n.01"
+        }
+      ],
+      "definition": "bone fracture associated with lacerated soft tissue or an open wound"
+    },
+    {
+      "lemma": "outwear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "indispose.v.03",
+          "via_synset": "tire.v.02"
+        }
+      ],
+      "definition": "exhaust or get tired through overuse or great strain or stress"
+    },
+    {
+      "lemma": "overstretch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "pull.v.08"
+        }
+      ],
+      "definition": "strain abnormally"
+    },
+    {
+      "lemma": "pain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "trouble.v.05",
+          "via_synset": "pain.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "trouble.v.05",
+          "via_synset": "pain.n.01"
+        }
+      ],
+      "definition": "a somatic sensation of acute discomfort"
+    },
+    {
+      "lemma": "pain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hurt.v.02",
+          "via_synset": "trouble.v.05"
+        }
+      ],
+      "definition": "cause bodily suffering to and make sick or indisposed"
+    },
+    {
+      "lemma": "pathology",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ill_health.n.01",
+          "via_synset": "pathology.n.02"
+        }
+      ],
+      "definition": "any deviation from a healthy or normal condition"
+    },
+    {
+      "lemma": "penetrating injury",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "penetrating_trauma.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "penetrating_trauma.n.01"
+        }
+      ],
+      "definition": "injury incurred when an object (as a knife or bullet or shrapnel) penetrates into the body"
+    },
+    {
+      "lemma": "penetrating trauma",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "penetrating_trauma.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "penetrating_trauma.n.01"
+        }
+      ],
+      "definition": "injury incurred when an object (as a knife or bullet or shrapnel) penetrates into the body"
+    },
+    {
+      "lemma": "personnel casualty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wound.n.02",
+          "via_synset": "personnel_casualty.n.01"
+        }
+      ],
+      "definition": "military personnel lost by death or capture"
+    },
+    {
+      "lemma": "perversion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "perversion.n.03"
+        }
+      ],
+      "definition": "the action of perverting something (turning it to a wrong use)"
+    },
+    {
+      "lemma": "petechia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bruise.n.01",
+          "via_synset": "petechia.n.01"
+        }
+      ],
+      "definition": "a minute red or purple spot on the surface of the skin as the result of tiny hemorrhages of blood vessels in the skin (as in typhoid fever)"
+    },
+    {
+      "lemma": "pinch",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "pinch.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "pinch.n.02"
+        }
+      ],
+      "definition": "an injury resulting from getting some body part squeezed"
+    },
+    {
+      "lemma": "pip",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "shoot.v.01"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "shoot.v.01",
+          "via_synset": "shoot.v.02"
+        }
+      ],
+      "definition": "hit with a missile from a weapon"
+    },
+    {
+      "lemma": "poniard",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "knife.v.01",
+          "via_synset": "poniard.v.01"
+        }
+      ],
+      "definition": "stab with a poniard"
+    },
+    {
+      "lemma": "pull",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "wrench.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pull.v.08",
+          "via_synset": "wrench.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "wrench.n.01"
+        }
+      ],
+      "definition": "a sharp strain on muscles or ligaments"
+    },
+    {
+      "lemma": "pull",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "pull.v.08"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wrench.n.01",
+          "via_synset": "pull.v.08"
+        }
+      ],
+      "definition": "strain abnormally"
+    },
+    {
+      "lemma": "rack",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "torture.v.02",
+          "via_synset": "rack.v.11"
+        }
+      ],
+      "definition": "torture on the rack"
+    },
+    {
+      "lemma": "raw wound",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "raw_wound.n.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "raw_wound.n.01"
+        }
+      ],
+      "definition": "a wound that exposes subcutaneous tissue"
+    },
+    {
+      "lemma": "recrudesce",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "trouble.v.05",
+          "via_synset": "erupt.v.08"
+        }
+      ],
+      "definition": "become raw or open"
+    },
+    {
+      "lemma": "rick",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "twist.v.10",
+          "via_synset": "crick.n.01"
+        }
+      ],
+      "definition": "a painful muscle spasm especially in the neck or back (`rick' and `wrick' are British)"
+    },
+    {
+      "lemma": "rick",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "twist.v.10"
+        }
+      ],
+      "definition": "twist suddenly so as to sprain"
+    },
+    {
+      "lemma": "rope burn",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "abrasion.n.01",
+          "via_synset": "rope_burn.n.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "abrasion.n.01",
+          "via_synset": "rope_burn.n.01"
+        }
+      ],
+      "definition": "abrasion (usually on the hands) caused by friction from a rope"
+    },
+    {
+      "lemma": "run down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "run_down.v.03"
+        }
+      ],
+      "definition": "injure or kill by running over, as with a vehicle"
+    },
+    {
+      "lemma": "run over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "run_down.v.03"
+        }
+      ],
+      "definition": "injure or kill by running over, as with a vehicle"
+    },
+    {
+      "lemma": "rupture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "rupture.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "rupture.n.01"
+        }
+      ],
+      "definition": "state of being torn or burst open"
+    },
+    {
+      "lemma": "rupture",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "rupture.n.01",
+          "via_synset": "tear.v.01"
+        }
+      ],
+      "definition": "separate or cause to separate abruptly"
+    },
+    {
+      "lemma": "ruptured intervertebral disc",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "rupture.n.01",
+          "via_synset": "herniated_disc.n.01"
+        }
+      ],
+      "definition": "a painful rupture of the fibrocartilage of the disc between spinal vertebrae; occurs most often in the lumbar region"
+    },
+    {
+      "lemma": "sacrifice",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "personnel_casualty.n.01",
+          "via_synset": "sacrifice.n.02"
+        }
+      ],
+      "definition": "personnel that are sacrificed (e.g., surrendered or lost in order to gain an objective)"
+    },
+    {
+      "lemma": "scald",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "burn.n.03",
+          "via_synset": "scald.n.01"
+        }
+      ],
+      "definition": "a burn cause by hot liquid or steam"
+    },
+    {
+      "lemma": "scald",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "scald.n.01",
+          "via_synset": "scald.v.04"
+        }
+      ],
+      "definition": "burn with a hot liquid or steam"
+    },
+    {
+      "lemma": "scorch",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "burn.n.03",
+          "via_synset": "scorch.n.01"
+        }
+      ],
+      "definition": "a surface burn"
+    },
+    {
+      "lemma": "scorch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "scorch.n.01",
+          "via_synset": "char.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "scorch.n.01",
+          "via_synset": "scorch.v.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "scorch.n.01",
+          "via_synset": "scorch.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "scorch.n.01",
+          "via_synset": "sear.v.01"
+        }
+      ],
+      "definition": "burn slightly and superficially so as to affect color"
+    },
+    {
+      "lemma": "scrape",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "abrasion.n.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "abrasion.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "skin.v.02",
+          "via_synset": "abrasion.n.01"
+        }
+      ],
+      "definition": "an abraded area where the skin is torn or worn off"
+    },
+    {
+      "lemma": "scrape",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "skin.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abrasion.n.01",
+          "via_synset": "skin.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abrasion.n.01",
+          "via_synset": "scratch.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abrasion.n.01",
+          "via_synset": "scrape.v.01"
+        }
+      ],
+      "definition": "bruise, cut, or injure the skin or the surface of"
+    },
+    {
+      "lemma": "scratch",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "abrasion.n.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "abrasion.n.01"
+        }
+      ],
+      "definition": "an abraded area where the skin is torn or worn off"
+    },
+    {
+      "lemma": "scratch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abrasion.n.01",
+          "via_synset": "rub.v.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abrasion.n.01",
+          "via_synset": "scratch.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abrasion.n.01",
+          "via_synset": "rub.v.02"
+        }
+      ],
+      "definition": "scrape or rub as if to relieve itching"
+    },
+    {
+      "lemma": "scratchy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abrasion.n.01",
+          "via_synset": "abrasive.s.01"
+        }
+      ],
+      "definition": "causing abrasion"
+    },
+    {
+      "lemma": "second-degree burn",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "burn.n.03",
+          "via_synset": "second-degree_burn.n.01"
+        }
+      ],
+      "definition": "burn causing blisters on the skin and superficial destruction of the dermis"
+    },
+    {
+      "lemma": "self-torment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "distress.n.01",
+          "via_synset": "self-torture.n.01"
+        }
+      ],
+      "definition": "self-imposed distress"
+    },
+    {
+      "lemma": "self-torture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "distress.n.01",
+          "via_synset": "self-torture.n.01"
+        }
+      ],
+      "definition": "self-imposed distress"
+    },
+    {
+      "lemma": "shabbiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "injustice.n.01"
+        }
+      ],
+      "definition": "an unjust act"
+    },
+    {
+      "lemma": "shiner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bruise.n.01",
+          "via_synset": "shiner.n.01"
+        }
+      ],
+      "definition": "a swollen bruise caused by a blow to the eye"
+    },
+    {
+      "lemma": "shock",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "traumatize.v.01",
+          "via_synset": "shock.n.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "traumatize.v.01",
+          "via_synset": "daze.n.01"
+        }
+      ],
+      "definition": "an unpleasant or disappointing surprise"
+    },
+    {
+      "lemma": "shock",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "traumatize.v.01"
+        }
+      ],
+      "definition": "inflict a trauma upon"
+    },
+    {
+      "lemma": "shoot",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "shoot.v.01",
+          "via_synset": "shoot.n.02"
+        }
+      ],
+      "definition": "the act of shooting at targets"
+    },
+    {
+      "lemma": "shoot",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "shoot.v.01"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "shoot.v.01",
+          "via_synset": "blast.v.07"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "shoot.v.01",
+          "via_synset": "shoot.v.02"
+        }
+      ],
+      "definition": "hit with a missile from a weapon"
+    },
+    {
+      "lemma": "shooter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "shoot.v.01",
+          "via_synset": "shot.n.05"
+        }
+      ],
+      "definition": "a person who shoots (usually with respect to their ability to shoot)"
+    },
+    {
+      "lemma": "sicken",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "harm.v.01",
+          "via_synset": "sicken.v.04"
+        }
+      ],
+      "definition": "make sick or ill"
+    },
+    {
+      "lemma": "sickness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ill_health.n.01",
+          "via_synset": "illness.n.01"
+        }
+      ],
+      "definition": "impairment of normal physiological function affecting part or all of an organism"
+    },
+    {
+      "lemma": "simple fracture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "fracture.n.01",
+          "via_synset": "simple_fracture.n.01"
+        }
+      ],
+      "definition": "an uncomplicated fracture in which the broken bones to not pierce the skin"
+    },
+    {
+      "lemma": "singe",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "burn.n.03",
+          "via_synset": "scorch.n.01"
+        }
+      ],
+      "definition": "a surface burn"
+    },
+    {
+      "lemma": "singe",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "scorch.n.01",
+          "via_synset": "singe.v.01"
+        }
+      ],
+      "definition": "burn superficially or lightly"
+    },
+    {
+      "lemma": "skin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "skin.v.02",
+          "via_synset": "hide.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "skin.v.02",
+          "via_synset": "skin.n.01"
+        }
+      ],
+      "definition": "body covering of a living animal"
+    },
+    {
+      "lemma": "skin",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "skin.v.02"
+        }
+      ],
+      "definition": "bruise, cut, or injure the skin or the surface of"
+    },
+    {
+      "lemma": "slash",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "cut.n.05"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "cut.n.05"
+        }
+      ],
+      "definition": "a wound made by cutting"
+    },
+    {
+      "lemma": "slash",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cut.n.05",
+          "via_synset": "slash.v.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cut.n.05",
+          "via_synset": "slash.v.01"
+        }
+      ],
+      "definition": "cut open"
+    },
+    {
+      "lemma": "slice",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "cut.n.05"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "cut.n.05"
+        }
+      ],
+      "definition": "a wound made by cutting"
+    },
+    {
+      "lemma": "slice",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cut.n.05",
+          "via_synset": "slit.v.01"
+        }
+      ],
+      "definition": "make a clean cut through"
+    },
+    {
+      "lemma": "slipped disc",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "rupture.n.01",
+          "via_synset": "herniated_disc.n.01"
+        }
+      ],
+      "definition": "a painful rupture of the fibrocartilage of the disc between spinal vertebrae; occurs most often in the lumbar region"
+    },
+    {
+      "lemma": "snakebite",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bite.n.01",
+          "via_synset": "snakebite.n.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "bite.n.01",
+          "via_synset": "snakebite.n.01"
+        }
+      ],
+      "definition": "a bite inflicted by a (venomous) snake"
+    },
+    {
+      "lemma": "softness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ill_health.n.01",
+          "via_synset": "unfitness.n.01"
+        }
+      ],
+      "definition": "poor physical condition; being out of shape or out of condition (as from a life of ease and luxury)"
+    },
+    {
+      "lemma": "spoil",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.04",
+          "via_synset": "spoil.n.02"
+        }
+      ],
+      "definition": "the act of spoiling something by causing damage to it"
+    },
+    {
+      "lemma": "spoil",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "spoil.n.02",
+          "via_synset": "mar.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "spoil.n.02",
+          "via_synset": "botch.v.01"
+        }
+      ],
+      "definition": "make imperfect"
+    },
+    {
+      "lemma": "spoilage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.04",
+          "via_synset": "spoil.n.02"
+        }
+      ],
+      "definition": "the act of spoiling something by causing damage to it"
+    },
+    {
+      "lemma": "spoiling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.04",
+          "via_synset": "spoil.n.02"
+        }
+      ],
+      "definition": "the act of spoiling something by causing damage to it"
+    },
+    {
+      "lemma": "spondylolisthesis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "dislocation.n.03",
+          "via_synset": "spondylolisthesis.n.01"
+        }
+      ],
+      "definition": "a forward dislocation of one vertebra over the one beneath it producing pressure on spinal nerves"
+    },
+    {
+      "lemma": "sprain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wrench.n.01",
+          "via_synset": "sprain.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "twist.v.10",
+          "via_synset": "sprain.n.01"
+        }
+      ],
+      "definition": "a painful injury to a joint caused by a sudden wrenching of its ligaments"
+    },
+    {
+      "lemma": "sprain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "twist.v.10"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sprain.n.01",
+          "via_synset": "twist.v.10"
+        }
+      ],
+      "definition": "twist suddenly so as to sprain"
+    },
+    {
+      "lemma": "stab",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "knife.v.01",
+          "via_synset": "stab.n.02"
+        }
+      ],
+      "definition": "a strong blow with a knife or other sharp pointed instrument"
+    },
+    {
+      "lemma": "stab",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "knife.v.01"
+        }
+      ],
+      "definition": "use a knife on"
+    },
+    {
+      "lemma": "stabber",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "knife.v.01",
+          "via_synset": "stabber.n.01"
+        }
+      ],
+      "definition": "someone who stabs another person"
+    },
+    {
+      "lemma": "stigmata",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "stigmata.n.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "wound.n.01",
+          "via_synset": "stigmata.n.01"
+        }
+      ],
+      "definition": "marks resembling the wounds on the crucified body of Christ"
+    },
+    {
+      "lemma": "sting",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "sting.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "sting.n.03"
+        }
+      ],
+      "definition": "a painful wound caused by the thrust of an insect's stinger into skin"
+    },
+    {
+      "lemma": "sting",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sting.n.03",
+          "via_synset": "sting.v.02"
+        }
+      ],
+      "definition": "deliver a sting to"
+    },
+    {
+      "lemma": "strain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "strain.n.07"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "strain.n.07"
+        }
+      ],
+      "definition": "injury to a muscle (often caused by overuse); results in swelling and pain"
+    },
+    {
+      "lemma": "strain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "strain.n.07",
+          "via_synset": "deform.v.05"
+        }
+      ],
+      "definition": "alter the shape of (something) by stress"
+    },
+    {
+      "lemma": "stress fracture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "fracture.n.01",
+          "via_synset": "fatigue_fracture.n.01"
+        }
+      ],
+      "definition": "fracture resulting from excessive activity rather than a specific injury"
+    },
+    {
+      "lemma": "strike",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "shoot.v.01",
+          "via_synset": "strike.v.04"
+        }
+      ],
+      "definition": "make a strategic, offensive, assault against an enemy, opponent, or a target"
+    },
+    {
+      "lemma": "subluxate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "subluxate.v.01"
+        }
+      ],
+      "definition": "sprain or dislocate slightly"
+    },
+    {
+      "lemma": "subluxation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "subluxate.v.01",
+          "via_synset": "subluxation.n.01"
+        }
+      ],
+      "definition": "partial displacement of a joint or organ"
+    },
+    {
+      "lemma": "suffering",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wound.n.03",
+          "via_synset": "distress.n.01"
+        }
+      ],
+      "definition": "psychological suffering"
+    },
+    {
+      "lemma": "sunburn",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "first-degree_burn.n.01",
+          "via_synset": "sunburn.n.02"
+        }
+      ],
+      "definition": "redness of the skin caused by exposure to the rays of the sun"
+    },
+    {
+      "lemma": "third-degree burn",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "burn.n.03",
+          "via_synset": "third-degree_burn.n.01"
+        }
+      ],
+      "definition": "burn characterized by destruction of both epidermis and dermis"
+    },
+    {
+      "lemma": "tire",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "indispose.v.03",
+          "via_synset": "tire.v.02"
+        }
+      ],
+      "definition": "exhaust or get tired through overuse or great strain or stress"
+    },
+    {
+      "lemma": "tire out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "indispose.v.03",
+          "via_synset": "tire.v.02"
+        }
+      ],
+      "definition": "exhaust or get tired through overuse or great strain or stress"
+    },
+    {
+      "lemma": "torment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "torture.v.02",
+          "via_synset": "torture.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "distress.n.01",
+          "via_synset": "anguish.n.01"
+        }
+      ],
+      "definition": "unbearable physical pain"
+    },
+    {
+      "lemma": "torment",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "torture.v.02"
+        }
+      ],
+      "definition": "subject to torture"
+    },
+    {
+      "lemma": "tormenter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "torture.v.02",
+          "via_synset": "tormentor.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "torture.v.02",
+          "via_synset": "tormenter.n.02"
+        }
+      ],
+      "definition": "someone who torments"
+    },
+    {
+      "lemma": "tort",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "tort.n.01"
+        }
+      ],
+      "definition": "(law) any wrongdoing for which an action for damages may be brought"
+    },
+    {
+      "lemma": "torture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "torture.v.02",
+          "via_synset": "torture.n.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "torture.v.02",
+          "via_synset": "torture.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "distress.n.01",
+          "via_synset": "anguish.n.01"
+        }
+      ],
+      "definition": "the deliberate, systematic, or wanton infliction of physical or mental suffering by one or more persons in an attempt to force another person to yield information or to make a confession or for any other reason"
+    },
+    {
+      "lemma": "torture",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "torture.v.02"
+        }
+      ],
+      "definition": "subject to torture"
+    },
+    {
+      "lemma": "torturer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "torture.v.02",
+          "via_synset": "torturer.n.01"
+        }
+      ],
+      "definition": "someone who inflicts severe physical pain (usually for punishment or coercion)"
+    },
+    {
+      "lemma": "torturing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "torture.v.02",
+          "via_synset": "torture.n.05"
+        }
+      ],
+      "definition": "the deliberate, systematic, or wanton infliction of physical or mental suffering by one or more persons in an attempt to force another person to yield information or to make a confession or for any other reason"
+    },
+    {
+      "lemma": "trample",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "trample.v.02",
+          "via_synset": "trample.n.01"
+        }
+      ],
+      "definition": "the sound of heavy treading or stomping"
+    },
+    {
+      "lemma": "trample",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "trample.v.02"
+        }
+      ],
+      "definition": "injure by trampling or as if by trampling"
+    },
+    {
+      "lemma": "trampler",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "trample.v.02",
+          "via_synset": "trampler.n.01"
+        }
+      ],
+      "definition": "someone who injures by trampling"
+    },
+    {
+      "lemma": "transgression",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "transgression.n.01"
+        }
+      ],
+      "definition": "the act of transgressing; the violation of a law or a duty or moral principle"
+    },
+    {
+      "lemma": "trauma",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "injury.n.01",
+          "via_synset": "injury.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "wound.n.01",
+          "via_synset": "injury.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "traumatize.v.01",
+          "via_synset": "injury.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "traumatize.v.01",
+          "via_synset": "trauma.n.02"
+        }
+      ],
+      "definition": "any physical damage to the body caused by violence or accident or fracture etc."
+    },
+    {
+      "lemma": "traumatic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "injury.n.01",
+          "via_synset": "traumatic.a.01"
+        }
+      ],
+      "definition": "of or relating to a physical injury or wound to the body"
+    },
+    {
+      "lemma": "traumatise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "traumatize.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "injury.n.01",
+          "via_synset": "traumatize.v.01"
+        }
+      ],
+      "definition": "inflict a trauma upon"
+    },
+    {
+      "lemma": "traumatize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "traumatize.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "injury.n.01",
+          "via_synset": "traumatize.v.01"
+        }
+      ],
+      "definition": "inflict a trauma upon"
+    },
+    {
+      "lemma": "trench foot",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "frostbite.n.01",
+          "via_synset": "trench_foot.n.01"
+        }
+      ],
+      "definition": "resembling frostbite but without freezing; resulting from exposure to cold and wet"
+    },
+    {
+      "lemma": "trespass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "trespass.n.02"
+        }
+      ],
+      "definition": "entry to another's property without right or permission"
+    },
+    {
+      "lemma": "trouble",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "trouble.v.05",
+          "via_synset": "trouble.n.03"
+        }
+      ],
+      "definition": "an event causing distress or pain"
+    },
+    {
+      "lemma": "trouble",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hurt.v.02",
+          "via_synset": "trouble.v.05"
+        }
+      ],
+      "definition": "cause bodily suffering to and make sick or indisposed"
+    },
+    {
+      "lemma": "tsoris",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "distress.n.01",
+          "via_synset": "tsoris.n.01"
+        }
+      ],
+      "definition": "(Yiddish) trouble and suffering"
+    },
+    {
+      "lemma": "turn",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "twist.v.10"
+        }
+      ],
+      "definition": "twist suddenly so as to sprain"
+    },
+    {
+      "lemma": "twist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "wrench.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "twist.v.10",
+          "via_synset": "wrench.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "wrench.n.01"
+        }
+      ],
+      "definition": "a sharp strain on muscles or ligaments"
+    },
+    {
+      "lemma": "twist",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "twist.v.10"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wrench.n.01",
+          "via_synset": "twist.v.10"
+        }
+      ],
+      "definition": "twist suddenly so as to sprain"
+    },
+    {
+      "lemma": "ulemorrhagia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "bleeding.n.01",
+          "via_synset": "ulemorrhagia.n.01"
+        }
+      ],
+      "definition": "bleeding of the gums"
+    },
+    {
+      "lemma": "umbilical hernia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "hernia.n.01",
+          "via_synset": "umbilical_hernia.n.01"
+        }
+      ],
+      "definition": "protrusion of the intestine and omentum through a hernia in the abdominal wall near the navel; usually self correcting after birth"
+    },
+    {
+      "lemma": "unfairness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "injustice.n.01"
+        }
+      ],
+      "definition": "an unjust act"
+    },
+    {
+      "lemma": "unfitness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ill_health.n.01",
+          "via_synset": "unfitness.n.01"
+        }
+      ],
+      "definition": "poor physical condition; being out of shape or out of condition (as from a life of ease and luxury)"
+    },
+    {
+      "lemma": "unhealthiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "injury.n.01",
+          "via_synset": "ill_health.n.01"
+        }
+      ],
+      "definition": "a state in which you are unable to function normally and without pain"
+    },
+    {
+      "lemma": "unwellness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "ill_health.n.01",
+          "via_synset": "illness.n.01"
+        }
+      ],
+      "definition": "impairment of normal physiological function affecting part or all of an organism"
+    },
+    {
+      "lemma": "usurpation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "trespass.n.02"
+        }
+      ],
+      "definition": "entry to another's property without right or permission"
+    },
+    {
+      "lemma": "vaginocele",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "hernia.n.01",
+          "via_synset": "colpocele.n.01"
+        }
+      ],
+      "definition": "hernia projecting into the vagina"
+    },
+    {
+      "lemma": "violation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "violation.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "wrongdoing.n.02",
+          "via_synset": "trespass.n.02"
+        }
+      ],
+      "definition": "an act that disregards an agreement or a right"
+    },
+    {
+      "lemma": "wale",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "wale.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "wale.n.01"
+        }
+      ],
+      "definition": "a raised mark on the skin (as produced by the blow of a whip); characteristic of many allergic reactions"
+    },
+    {
+      "lemma": "weal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "wale.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "wale.n.01"
+        }
+      ],
+      "definition": "a raised mark on the skin (as produced by the blow of a whip); characteristic of many allergic reactions"
+    },
+    {
+      "lemma": "wear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "indispose.v.03",
+          "via_synset": "tire.v.02"
+        }
+      ],
+      "definition": "exhaust or get tired through overuse or great strain or stress"
+    },
+    {
+      "lemma": "wear down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "indispose.v.03",
+          "via_synset": "tire.v.02"
+        }
+      ],
+      "definition": "exhaust or get tired through overuse or great strain or stress"
+    },
+    {
+      "lemma": "wear out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "indispose.v.03",
+          "via_synset": "tire.v.02"
+        }
+      ],
+      "definition": "exhaust or get tired through overuse or great strain or stress"
+    },
+    {
+      "lemma": "wear upon",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "indispose.v.03",
+          "via_synset": "tire.v.02"
+        }
+      ],
+      "definition": "exhaust or get tired through overuse or great strain or stress"
+    },
+    {
+      "lemma": "weary",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "indispose.v.03",
+          "via_synset": "tire.v.02"
+        }
+      ],
+      "definition": "exhaust or get tired through overuse or great strain or stress"
+    },
+    {
+      "lemma": "welt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "wale.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "wale.n.01"
+        }
+      ],
+      "definition": "a raised mark on the skin (as produced by the blow of a whip); characteristic of many allergic reactions"
+    },
+    {
+      "lemma": "welt",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wale.n.01",
+          "via_synset": "flog.v.01"
+        }
+      ],
+      "definition": "beat severely with a whip or rod"
+    },
+    {
+      "lemma": "wheal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "wale.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "wale.n.01"
+        }
+      ],
+      "definition": "a raised mark on the skin (as produced by the blow of a whip); characteristic of many allergic reactions"
+    },
+    {
+      "lemma": "whiplash",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "whiplash.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "whiplash.n.01"
+        }
+      ],
+      "definition": "an injury to the neck (the cervical vertebrae) resulting from rapid acceleration or deceleration (as in an automobile accident)"
+    },
+    {
+      "lemma": "whiplash injury",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "whiplash.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "whiplash.n.01"
+        }
+      ],
+      "definition": "an injury to the neck (the cervical vertebrae) resulting from rapid acceleration or deceleration (as in an automobile accident)"
+    },
+    {
+      "lemma": "wound",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wound.n.01",
+          "via_synset": "wound.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wound.n.02",
+          "via_synset": "wound.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "wound.n.03",
+          "via_synset": "wound.n.03"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "wound.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "injure.v.01",
+          "via_synset": "wound.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "injure.v.01",
+          "via_synset": "wound.n.04"
+        }
+      ],
+      "definition": "an injury to living tissue (especially an injury involving a cut or break in the skin)"
+    },
+    {
+      "lemma": "wound",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hurt.v.02",
+          "via_synset": "injure.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wound.n.02",
+          "via_synset": "injure.v.01"
+        }
+      ],
+      "definition": "cause injuries or bodily harm to"
+    },
+    {
+      "lemma": "wounding",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "injure.v.01",
+          "via_synset": "wound.n.04"
+        }
+      ],
+      "definition": "the act of inflicting a wound"
+    },
+    {
+      "lemma": "wrench",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "injury.n.01",
+          "via_synset": "wrench.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "twist.v.10",
+          "via_synset": "wrench.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "injury.n.01",
+          "via_synset": "wrench.n.01"
+        }
+      ],
+      "definition": "a sharp strain on muscles or ligaments"
+    },
+    {
+      "lemma": "wrench",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "twist.v.10"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "wrench.n.01",
+          "via_synset": "twist.v.10"
+        }
+      ],
+      "definition": "twist suddenly so as to sprain"
+    },
+    {
+      "lemma": "wrick",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "twist.v.10",
+          "via_synset": "crick.n.01"
+        }
+      ],
+      "definition": "a painful muscle spasm especially in the neck or back (`rick' and `wrick' are British)"
+    },
+    {
+      "lemma": "wrick",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "injure.v.01",
+          "via_synset": "twist.v.10"
+        }
+      ],
+      "definition": "twist suddenly so as to sprain"
+    },
+    {
+      "lemma": "wrongdoing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "injury.n.04",
+          "via_synset": "wrongdoing.n.02"
+        }
+      ],
+      "definition": "activity that transgresses moral or civil law"
+    },
+    {
+      "lemma": "wrongful conduct",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "injury.n.04",
+          "via_synset": "wrongdoing.n.02"
+        }
+      ],
+      "definition": "activity that transgresses moral or civil law"
+    }
+  ]
+}

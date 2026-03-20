@@ -1,0 +1,1907 @@
+{
+  "atom_id": "FND.memoryless",
+  "category": "FND",
+  "seed_count": 5,
+  "total_keys": 128,
+  "pos_counts": {
+    "v": 20,
+    "n": 105,
+    "adj": 3
+  },
+  "source_counts": {
+    "0_seed": 11,
+    "2_hypernym_d1": 15,
+    "3_hyponym_d1": 8,
+    "4_hyponym_d2": 2,
+    "6_derivational": 7,
+    "9_antonym": 1,
+    "10_sibling": 88
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 9,
+      "words": [
+        "forget(v)",
+        "block(v)",
+        "blank out(v)",
+        "draw a blank(v)",
+        "amnesia(n)",
+        "memory loss(n)",
+        "blackout(n)",
+        "space(n)",
+        "blank(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 15,
+      "words": [
+        "neglect(v)",
+        "pretermit(v)",
+        "omit(v)",
+        "drop(v)",
+        "miss(v)",
+        "leave out(v)",
+        "overlook(v)",
+        "overleap(v)",
+        "cognitive state(n)",
+        "state of mind(n)",
+        "character(n)",
+        "grapheme(n)",
+        "graphic symbol(n)",
+        "sheet(n)",
+        "flat solid(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 8,
+      "words": [
+        "slip(v)",
+        "slip one's mind(v)",
+        "retrograde amnesia(n)",
+        "transient global amnesia(n)",
+        "forgetfulness(n)",
+        "anterograde amnesia(n)",
+        "posttraumatic amnesia(n)",
+        "selective amnesia(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 2,
+      "words": [
+        "senior moment(n)",
+        "posthypnotic amnesia(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 6,
+      "words": [
+        "amnestic(adj)",
+        "amnesic(adj)",
+        "forgetful(adj)",
+        "slip(n)",
+        "space(v)",
+        "block(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "mind(v)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 87,
+      "words": [
+        "jump(v)",
+        "pass over(v)",
+        "skip(v)",
+        "skip over(v)",
+        "interestedness(n)",
+        "curiosity(n)",
+        "wonder(n)",
+        "unconsciousness(n)",
+        "inwardness(n)",
+        "outwardness(n)",
+        "confusion(n)",
+        "mental confusion(n)",
+        "confusedness(n)",
+        "muddiness(n)",
+        "disarray(n)",
+        "paramnesia(n)",
+        "preoccupation(n)",
+        "preoccupancy(n)",
+        "absorption(n)",
+        "engrossment(n)",
+        "subconsciousness(n)",
+        "set(n)",
+        "readiness(n)",
+        "consciousness(n)",
+        "morbidity(n)",
+        "morbidness(n)",
+        "doubt(n)",
+        "uncertainty(n)",
+        "incertitude(n)",
+        "dubiety(n)",
+        "doubtfulness(n)",
+        "dubiousness(n)",
+        "certainty(n)",
+        "ivory tower(n)",
+        "dagger(n)",
+        "obelisk(n)",
+        "superscript(n)",
+        "superior(n)",
+        "capital(n)",
+        "capital letter(n)",
+        "uppercase(n)",
+        "upper-case letter(n)",
+        "majuscule(n)",
+        "subscript(n)",
+        "inferior(n)",
+        "ligature(n)",
+        "percent sign(n)",
+        "percentage sign(n)",
+        "radical(n)",
+        "stenograph(n)",
+        "letter(n)",
+        "letter of the alphabet(n)",
+        "alphabetic character(n)",
+        "check character(n)",
+        "ASCII character(n)",
+        "pictograph(n)",
+        "type(n)",
+        "small letter(n)",
+        "lowercase(n)",
+        "lower-case letter(n)",
+        "minuscule(n)",
+        "double dagger(n)",
+        "double obelisk(n)",
+        "diesis(n)",
+        "phonetic symbol(n)",
+        "ideogram(n)",
+        "ideograph(n)",
+        "mathematical symbol(n)",
+        "rune(n)",
+        "runic letter(n)",
+        "allograph(n)",
+        "asterisk(n)",
+        "star(n)",
+        "board(n)",
+        "plate glass(n)",
+        "sheet glass(n)",
+        "panel(n)",
+        "blackboard(n)",
+        "chalkboard(n)",
+        "film(n)",
+        "plastic film(n)",
+        "membrane(n)",
+        "plate(n)",
+        "photographic plate(n)",
+        "sheet metal(n)",
+        "stencil(n)",
+        "laminate(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "absorption",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "preoccupation.n.02"
+        }
+      ],
+      "definition": "the mental state of being preoccupied by something"
+    },
+    {
+      "lemma": "allograph",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "allograph.n.01"
+        }
+      ],
+      "definition": "a variant form of a grapheme, as `m' or `M' or a handwritten version of that grapheme"
+    },
+    {
+      "lemma": "alphabetic character",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "letter.n.02"
+        }
+      ],
+      "definition": "the conventional characters of the alphabet used to represent speech"
+    },
+    {
+      "lemma": "amnesia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "amnesia.n.01",
+          "via_synset": "amnesia.n.01"
+        }
+      ],
+      "definition": "partial or total loss of memory"
+    },
+    {
+      "lemma": "amnesic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "amnesia.n.01",
+          "via_synset": "amnesic.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "amnesia.n.01",
+          "via_synset": "amnestic.a.01"
+        }
+      ],
+      "definition": "suffering from a partial loss of memory"
+    },
+    {
+      "lemma": "amnestic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "amnesia.n.01",
+          "via_synset": "amnestic.a.01"
+        }
+      ],
+      "definition": "of or relating to or caused by amnesia"
+    },
+    {
+      "lemma": "anterograde amnesia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "amnesia.n.01",
+          "via_synset": "anterograde_amnesia.n.01"
+        }
+      ],
+      "definition": "loss of memory for events immediately following a trauma; sometimes in effect for events during and for a long time following the trauma"
+    },
+    {
+      "lemma": "ASCII character",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "ascii_character.n.01"
+        }
+      ],
+      "definition": "any member of the standard code for representing characters by binary numbers"
+    },
+    {
+      "lemma": "asterisk",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "asterisk.n.01"
+        }
+      ],
+      "definition": "a star-shaped character * used in printing"
+    },
+    {
+      "lemma": "blackboard",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sheet.n.06",
+          "via_synset": "blackboard.n.01"
+        }
+      ],
+      "definition": "sheet of slate; for writing with chalk"
+    },
+    {
+      "lemma": "blackout",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "amnesia.n.01",
+          "via_synset": "amnesia.n.01"
+        }
+      ],
+      "definition": "partial or total loss of memory"
+    },
+    {
+      "lemma": "blank",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "space.n.05",
+          "via_synset": "space.n.05"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "blank.n.03",
+          "via_synset": "blank.n.03"
+        }
+      ],
+      "definition": "a blank character used to separate successive words in writing or printing"
+    },
+    {
+      "lemma": "blank out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "forget.v.02",
+          "via_synset": "forget.v.02"
+        }
+      ],
+      "definition": "be unable to remember"
+    },
+    {
+      "lemma": "block",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "forget.v.02",
+          "via_synset": "block.n.07"
+        }
+      ],
+      "definition": "an inability to remember or think of something you normally can do; often caused by emotional tension"
+    },
+    {
+      "lemma": "block",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "forget.v.02",
+          "via_synset": "forget.v.02"
+        }
+      ],
+      "definition": "be unable to remember"
+    },
+    {
+      "lemma": "board",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sheet.n.06",
+          "via_synset": "board.n.03"
+        }
+      ],
+      "definition": "a flat piece of material designed for a special purpose"
+    },
+    {
+      "lemma": "capital",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "capital.n.04"
+        }
+      ],
+      "definition": "one of the large alphabetic characters used as the first letter in writing or printing proper names and sometimes for emphasis"
+    },
+    {
+      "lemma": "capital letter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "capital.n.04"
+        }
+      ],
+      "definition": "one of the large alphabetic characters used as the first letter in writing or printing proper names and sometimes for emphasis"
+    },
+    {
+      "lemma": "certainty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "certainty.n.01"
+        }
+      ],
+      "definition": "the state of being certain"
+    },
+    {
+      "lemma": "chalkboard",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sheet.n.06",
+          "via_synset": "blackboard.n.01"
+        }
+      ],
+      "definition": "sheet of slate; for writing with chalk"
+    },
+    {
+      "lemma": "character",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "space.n.05",
+          "via_synset": "character.n.08"
+        }
+      ],
+      "definition": "a written symbol that is used to represent speech"
+    },
+    {
+      "lemma": "check character",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "check_character.n.01"
+        }
+      ],
+      "definition": "a character that is added to the end of a block of transmitted data and used to check the accuracy of the transmission"
+    },
+    {
+      "lemma": "cognitive state",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "amnesia.n.01",
+          "via_synset": "cognitive_state.n.01"
+        }
+      ],
+      "definition": "the state of a person's cognitive processes"
+    },
+    {
+      "lemma": "confusedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "confusion.n.02"
+        }
+      ],
+      "definition": "a mental state characterized by a lack of clear and orderly thought and behavior"
+    },
+    {
+      "lemma": "confusion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "confusion.n.02"
+        }
+      ],
+      "definition": "a mental state characterized by a lack of clear and orderly thought and behavior"
+    },
+    {
+      "lemma": "consciousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "consciousness.n.01"
+        }
+      ],
+      "definition": "an alert cognitive state in which you are aware of yourself and your situation"
+    },
+    {
+      "lemma": "curiosity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "curiosity.n.01"
+        }
+      ],
+      "definition": "a state in which you want to learn more about something"
+    },
+    {
+      "lemma": "dagger",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "dagger.n.02"
+        }
+      ],
+      "definition": "a character used in printing to indicate a cross reference or footnote"
+    },
+    {
+      "lemma": "diesis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "double_dagger.n.01"
+        }
+      ],
+      "definition": "a character used in printing to indicate a cross reference or footnote"
+    },
+    {
+      "lemma": "disarray",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "confusion.n.02"
+        }
+      ],
+      "definition": "a mental state characterized by a lack of clear and orderly thought and behavior"
+    },
+    {
+      "lemma": "double dagger",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "double_dagger.n.01"
+        }
+      ],
+      "definition": "a character used in printing to indicate a cross reference or footnote"
+    },
+    {
+      "lemma": "double obelisk",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "double_dagger.n.01"
+        }
+      ],
+      "definition": "a character used in printing to indicate a cross reference or footnote"
+    },
+    {
+      "lemma": "doubt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "doubt.n.01"
+        }
+      ],
+      "definition": "the state of being unsure of something"
+    },
+    {
+      "lemma": "doubtfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "doubt.n.01"
+        }
+      ],
+      "definition": "the state of being unsure of something"
+    },
+    {
+      "lemma": "draw a blank",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "forget.v.02",
+          "via_synset": "forget.v.02"
+        }
+      ],
+      "definition": "be unable to remember"
+    },
+    {
+      "lemma": "drop",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forget.v.03",
+          "via_synset": "neglect.v.01"
+        }
+      ],
+      "definition": "leave undone or leave out"
+    },
+    {
+      "lemma": "dubiety",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "doubt.n.01"
+        }
+      ],
+      "definition": "the state of being unsure of something"
+    },
+    {
+      "lemma": "dubiousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "doubt.n.01"
+        }
+      ],
+      "definition": "the state of being unsure of something"
+    },
+    {
+      "lemma": "engrossment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "preoccupation.n.02"
+        }
+      ],
+      "definition": "the mental state of being preoccupied by something"
+    },
+    {
+      "lemma": "film",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sheet.n.06",
+          "via_synset": "film.n.05"
+        }
+      ],
+      "definition": "a thin sheet of (usually plastic and usually transparent) material used to wrap or cover things"
+    },
+    {
+      "lemma": "flat solid",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "blank.n.03",
+          "via_synset": "sheet.n.06"
+        }
+      ],
+      "definition": "a flat artifact that is thin relative to its length and width"
+    },
+    {
+      "lemma": "forget",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "forget.v.02",
+          "via_synset": "forget.v.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "forget.v.03",
+          "via_synset": "forget.v.03"
+        }
+      ],
+      "definition": "be unable to remember"
+    },
+    {
+      "lemma": "forgetful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "forgetfulness.n.01",
+          "via_synset": "unretentive.a.01"
+        }
+      ],
+      "definition": "(of memory) deficient in retentiveness or range"
+    },
+    {
+      "lemma": "forgetfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "amnesia.n.01",
+          "via_synset": "forgetfulness.n.01"
+        }
+      ],
+      "definition": "tendency to forget"
+    },
+    {
+      "lemma": "grapheme",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "space.n.05",
+          "via_synset": "character.n.08"
+        }
+      ],
+      "definition": "a written symbol that is used to represent speech"
+    },
+    {
+      "lemma": "graphic symbol",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "space.n.05",
+          "via_synset": "character.n.08"
+        }
+      ],
+      "definition": "a written symbol that is used to represent speech"
+    },
+    {
+      "lemma": "ideogram",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "ideogram.n.01"
+        }
+      ],
+      "definition": "a graphic character that indicates the meaning of a thing without indicating the sounds used to say it"
+    },
+    {
+      "lemma": "ideograph",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "ideogram.n.01"
+        }
+      ],
+      "definition": "a graphic character that indicates the meaning of a thing without indicating the sounds used to say it"
+    },
+    {
+      "lemma": "incertitude",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "doubt.n.01"
+        }
+      ],
+      "definition": "the state of being unsure of something"
+    },
+    {
+      "lemma": "inferior",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "subscript.n.01"
+        }
+      ],
+      "definition": "a character or symbol set or printed or written beneath or slightly below and to the side of another character"
+    },
+    {
+      "lemma": "interestedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "interestedness.n.01"
+        }
+      ],
+      "definition": "the state of being interested"
+    },
+    {
+      "lemma": "inwardness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "inwardness.n.02"
+        }
+      ],
+      "definition": "preoccupation especially with one's attitudes and ethical or ideological values"
+    },
+    {
+      "lemma": "ivory tower",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "ivory_tower.n.01"
+        }
+      ],
+      "definition": "a state of mind that is discussed as if it were a place"
+    },
+    {
+      "lemma": "jump",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "neglect.v.01",
+          "via_synset": "jump.v.13"
+        }
+      ],
+      "definition": "bypass"
+    },
+    {
+      "lemma": "laminate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sheet.n.06",
+          "via_synset": "laminate.n.01"
+        }
+      ],
+      "definition": "a sheet of material made by bonding two or more sheets or layers"
+    },
+    {
+      "lemma": "leave out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forget.v.03",
+          "via_synset": "neglect.v.01"
+        }
+      ],
+      "definition": "leave undone or leave out"
+    },
+    {
+      "lemma": "letter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "letter.n.02"
+        }
+      ],
+      "definition": "the conventional characters of the alphabet used to represent speech"
+    },
+    {
+      "lemma": "letter of the alphabet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "letter.n.02"
+        }
+      ],
+      "definition": "the conventional characters of the alphabet used to represent speech"
+    },
+    {
+      "lemma": "ligature",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "ligature.n.02"
+        }
+      ],
+      "definition": "character consisting of two or more letters combined into one"
+    },
+    {
+      "lemma": "lower-case letter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "small_letter.n.01"
+        }
+      ],
+      "definition": "the characters that were once kept in bottom half of a compositor's type case"
+    },
+    {
+      "lemma": "lowercase",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "small_letter.n.01"
+        }
+      ],
+      "definition": "the characters that were once kept in bottom half of a compositor's type case"
+    },
+    {
+      "lemma": "majuscule",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "capital.n.04"
+        }
+      ],
+      "definition": "one of the large alphabetic characters used as the first letter in writing or printing proper names and sometimes for emphasis"
+    },
+    {
+      "lemma": "mathematical symbol",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "mathematical_symbol.n.01"
+        }
+      ],
+      "definition": "a character that is used to indicates a mathematical relation or operation"
+    },
+    {
+      "lemma": "membrane",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sheet.n.06",
+          "via_synset": "membrane.n.01"
+        }
+      ],
+      "definition": "a thin pliable sheet of material"
+    },
+    {
+      "lemma": "memory loss",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "amnesia.n.01",
+          "via_synset": "amnesia.n.01"
+        }
+      ],
+      "definition": "partial or total loss of memory"
+    },
+    {
+      "lemma": "mental confusion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "confusion.n.02"
+        }
+      ],
+      "definition": "a mental state characterized by a lack of clear and orderly thought and behavior"
+    },
+    {
+      "lemma": "mind",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "forget.v.03",
+          "via_synset": "mind.v.06"
+        }
+      ],
+      "definition": "keep in mind"
+    },
+    {
+      "lemma": "minuscule",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "small_letter.n.01"
+        }
+      ],
+      "definition": "the characters that were once kept in bottom half of a compositor's type case"
+    },
+    {
+      "lemma": "miss",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forget.v.03",
+          "via_synset": "neglect.v.01"
+        }
+      ],
+      "definition": "leave undone or leave out"
+    },
+    {
+      "lemma": "morbidity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "morbidity.n.02"
+        }
+      ],
+      "definition": "an abnormally gloomy or unhealthy state of mind"
+    },
+    {
+      "lemma": "morbidness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "morbidity.n.02"
+        }
+      ],
+      "definition": "an abnormally gloomy or unhealthy state of mind"
+    },
+    {
+      "lemma": "muddiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "confusion.n.02"
+        }
+      ],
+      "definition": "a mental state characterized by a lack of clear and orderly thought and behavior"
+    },
+    {
+      "lemma": "neglect",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forget.v.03",
+          "via_synset": "neglect.v.01"
+        }
+      ],
+      "definition": "leave undone or leave out"
+    },
+    {
+      "lemma": "obelisk",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "dagger.n.02"
+        }
+      ],
+      "definition": "a character used in printing to indicate a cross reference or footnote"
+    },
+    {
+      "lemma": "omit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forget.v.03",
+          "via_synset": "neglect.v.01"
+        }
+      ],
+      "definition": "leave undone or leave out"
+    },
+    {
+      "lemma": "outwardness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "outwardness.n.01"
+        }
+      ],
+      "definition": "concern with outward things or material objects as opposed to the mind and spirit"
+    },
+    {
+      "lemma": "overleap",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forget.v.03",
+          "via_synset": "neglect.v.01"
+        }
+      ],
+      "definition": "leave undone or leave out"
+    },
+    {
+      "lemma": "overlook",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forget.v.03",
+          "via_synset": "neglect.v.01"
+        }
+      ],
+      "definition": "leave undone or leave out"
+    },
+    {
+      "lemma": "panel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sheet.n.06",
+          "via_synset": "panel.n.01"
+        }
+      ],
+      "definition": "sheet that forms a distinct (usually flat and rectangular) section or component of something"
+    },
+    {
+      "lemma": "paramnesia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "paramnesia.n.01"
+        }
+      ],
+      "definition": "(psychiatry) a disorder of memory in which dreams or fantasies are confused with reality"
+    },
+    {
+      "lemma": "pass over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "neglect.v.01",
+          "via_synset": "jump.v.13"
+        }
+      ],
+      "definition": "bypass"
+    },
+    {
+      "lemma": "percent sign",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "percent_sign.n.01"
+        }
+      ],
+      "definition": "a sign (`%') used to indicate that the number preceding it should be understood as a proportion multiplied by 100"
+    },
+    {
+      "lemma": "percentage sign",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "percent_sign.n.01"
+        }
+      ],
+      "definition": "a sign (`%') used to indicate that the number preceding it should be understood as a proportion multiplied by 100"
+    },
+    {
+      "lemma": "phonetic symbol",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "phonetic_symbol.n.01"
+        }
+      ],
+      "definition": "a written character used in phonetic transcription of represent a particular speech sound"
+    },
+    {
+      "lemma": "photographic plate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sheet.n.06",
+          "via_synset": "plate.n.11"
+        }
+      ],
+      "definition": "a flat sheet of metal or glass on which a photographic image can be recorded"
+    },
+    {
+      "lemma": "pictograph",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "pictograph.n.01"
+        }
+      ],
+      "definition": "a graphic character used in picture writing"
+    },
+    {
+      "lemma": "plastic film",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sheet.n.06",
+          "via_synset": "film.n.05"
+        }
+      ],
+      "definition": "a thin sheet of (usually plastic and usually transparent) material used to wrap or cover things"
+    },
+    {
+      "lemma": "plate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sheet.n.06",
+          "via_synset": "plate.n.11"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sheet.n.06",
+          "via_synset": "plate.n.02"
+        }
+      ],
+      "definition": "a flat sheet of metal or glass on which a photographic image can be recorded"
+    },
+    {
+      "lemma": "plate glass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sheet.n.06",
+          "via_synset": "plate_glass.n.01"
+        }
+      ],
+      "definition": "glass formed into large thin sheets"
+    },
+    {
+      "lemma": "posthypnotic amnesia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "selective_amnesia.n.01",
+          "via_synset": "posthypnotic_amnesia.n.01"
+        }
+      ],
+      "definition": "selective amnesia after being in a hypnotic state of events occurring during hypnosis or of information designated by the hypnotist"
+    },
+    {
+      "lemma": "posttraumatic amnesia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "amnesia.n.01",
+          "via_synset": "anterograde_amnesia.n.01"
+        }
+      ],
+      "definition": "loss of memory for events immediately following a trauma; sometimes in effect for events during and for a long time following the trauma"
+    },
+    {
+      "lemma": "preoccupancy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "preoccupation.n.02"
+        }
+      ],
+      "definition": "the mental state of being preoccupied by something"
+    },
+    {
+      "lemma": "preoccupation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "preoccupation.n.02"
+        }
+      ],
+      "definition": "the mental state of being preoccupied by something"
+    },
+    {
+      "lemma": "pretermit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forget.v.03",
+          "via_synset": "neglect.v.01"
+        }
+      ],
+      "definition": "leave undone or leave out"
+    },
+    {
+      "lemma": "radical",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "radical.n.05"
+        }
+      ],
+      "definition": "a character conveying the lexical meaning of a logogram"
+    },
+    {
+      "lemma": "readiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "set.n.12"
+        }
+      ],
+      "definition": "(psychology) being temporarily ready to respond in a particular way"
+    },
+    {
+      "lemma": "retrograde amnesia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "amnesia.n.01",
+          "via_synset": "retrograde_amnesia.n.01"
+        }
+      ],
+      "definition": "loss of memory for events immediately preceding a trauma"
+    },
+    {
+      "lemma": "rune",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "rune.n.01"
+        }
+      ],
+      "definition": "any character from an ancient Germanic alphabet used in Scandinavia from the 3rd century to the Middle Ages"
+    },
+    {
+      "lemma": "runic letter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "rune.n.01"
+        }
+      ],
+      "definition": "any character from an ancient Germanic alphabet used in Scandinavia from the 3rd century to the Middle Ages"
+    },
+    {
+      "lemma": "selective amnesia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "amnesia.n.01",
+          "via_synset": "selective_amnesia.n.01"
+        }
+      ],
+      "definition": "amnesia about particular events that is very convenient for the person who cannot remember"
+    },
+    {
+      "lemma": "senior moment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "forgetfulness.n.01",
+          "via_synset": "senior_moment.n.01"
+        }
+      ],
+      "definition": "a momentary lapse of memory (especially in older people)"
+    },
+    {
+      "lemma": "set",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "set.n.12"
+        }
+      ],
+      "definition": "(psychology) being temporarily ready to respond in a particular way"
+    },
+    {
+      "lemma": "sheet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "blank.n.03",
+          "via_synset": "sheet.n.06"
+        }
+      ],
+      "definition": "a flat artifact that is thin relative to its length and width"
+    },
+    {
+      "lemma": "sheet glass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sheet.n.06",
+          "via_synset": "plate_glass.n.01"
+        }
+      ],
+      "definition": "glass formed into large thin sheets"
+    },
+    {
+      "lemma": "sheet metal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sheet.n.06",
+          "via_synset": "sheet_metal.n.01"
+        }
+      ],
+      "definition": "sheet of metal formed into a thin plate"
+    },
+    {
+      "lemma": "skip",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "neglect.v.01",
+          "via_synset": "jump.v.13"
+        }
+      ],
+      "definition": "bypass"
+    },
+    {
+      "lemma": "skip over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "neglect.v.01",
+          "via_synset": "jump.v.13"
+        }
+      ],
+      "definition": "bypass"
+    },
+    {
+      "lemma": "slip",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "slip.v.10",
+          "via_synset": "slip.n.02"
+        }
+      ],
+      "definition": "a minor inadvertent mistake usually observed in speech or writing or in small accidents or memory lapses etc."
+    },
+    {
+      "lemma": "slip",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "forget.v.02",
+          "via_synset": "slip.v.10"
+        }
+      ],
+      "definition": "pass out of one's memory"
+    },
+    {
+      "lemma": "slip one's mind",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "forget.v.02",
+          "via_synset": "slip.v.10"
+        }
+      ],
+      "definition": "pass out of one's memory"
+    },
+    {
+      "lemma": "small letter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "small_letter.n.01"
+        }
+      ],
+      "definition": "the characters that were once kept in bottom half of a compositor's type case"
+    },
+    {
+      "lemma": "space",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "space.n.05",
+          "via_synset": "space.n.05"
+        }
+      ],
+      "definition": "a blank character used to separate successive words in writing or printing"
+    },
+    {
+      "lemma": "space",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "space.n.05",
+          "via_synset": "space.v.01"
+        }
+      ],
+      "definition": "place at intervals"
+    },
+    {
+      "lemma": "star",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "asterisk.n.01"
+        }
+      ],
+      "definition": "a star-shaped character * used in printing"
+    },
+    {
+      "lemma": "state of mind",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "amnesia.n.01",
+          "via_synset": "cognitive_state.n.01"
+        }
+      ],
+      "definition": "the state of a person's cognitive processes"
+    },
+    {
+      "lemma": "stencil",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sheet.n.06",
+          "via_synset": "stencil.n.01"
+        }
+      ],
+      "definition": "a sheet of material (metal, plastic, cardboard, waxed paper, silk, etc.) that has been perforated with a pattern (printing or a design); ink or paint can pass through the perforations to create the printed pattern on the surface below"
+    },
+    {
+      "lemma": "stenograph",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "stenograph.n.01"
+        }
+      ],
+      "definition": "a shorthand character"
+    },
+    {
+      "lemma": "subconsciousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "subconsciousness.n.01"
+        }
+      ],
+      "definition": "a state of mind not immediately available to consciousness"
+    },
+    {
+      "lemma": "subscript",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "subscript.n.01"
+        }
+      ],
+      "definition": "a character or symbol set or printed or written beneath or slightly below and to the side of another character"
+    },
+    {
+      "lemma": "superior",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "superscript.n.01"
+        }
+      ],
+      "definition": "a character or symbol set or printed or written above and immediately to one side of another character"
+    },
+    {
+      "lemma": "superscript",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "superscript.n.01"
+        }
+      ],
+      "definition": "a character or symbol set or printed or written above and immediately to one side of another character"
+    },
+    {
+      "lemma": "transient global amnesia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "amnesia.n.01",
+          "via_synset": "transient_global_amnesia.n.01"
+        }
+      ],
+      "definition": "memory disorder seen in middle aged and elderly persons; characterized by an episode of amnesia and bewilderment that lasts for several hours; person is otherwise alert and intellectually active"
+    },
+    {
+      "lemma": "type",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "type.n.04"
+        }
+      ],
+      "definition": "printed characters"
+    },
+    {
+      "lemma": "uncertainty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "doubt.n.01"
+        }
+      ],
+      "definition": "the state of being unsure of something"
+    },
+    {
+      "lemma": "unconsciousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "unconsciousness.n.01"
+        }
+      ],
+      "definition": "a state lacking normal awareness of the self or environment"
+    },
+    {
+      "lemma": "upper-case letter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "capital.n.04"
+        }
+      ],
+      "definition": "one of the large alphabetic characters used as the first letter in writing or printing proper names and sometimes for emphasis"
+    },
+    {
+      "lemma": "uppercase",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "character.n.08",
+          "via_synset": "capital.n.04"
+        }
+      ],
+      "definition": "one of the large alphabetic characters used as the first letter in writing or printing proper names and sometimes for emphasis"
+    },
+    {
+      "lemma": "wonder",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "curiosity.n.01"
+        }
+      ],
+      "definition": "a state in which you want to learn more about something"
+    }
+  ]
+}

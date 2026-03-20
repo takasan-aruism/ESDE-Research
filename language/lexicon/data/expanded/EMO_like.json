@@ -1,0 +1,1469 @@
+{
+  "atom_id": "EMO.like",
+  "category": "EMO",
+  "seed_count": 6,
+  "total_keys": 91,
+  "pos_counts": {
+    "n": 31,
+    "adj": 7,
+    "v": 53
+  },
+  "source_counts": {
+    "0_seed": 14,
+    "10_sibling": 65,
+    "2_hypernym_d1": 14,
+    "3_hyponym_d1": 2,
+    "6_derivational": 8,
+    "7_similar_to": 3,
+    "8_also_see": 1,
+    "9_antonym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 12,
+      "words": [
+        "like(n)",
+        "ilk(n)",
+        "like(adj)",
+        "similar(adj)",
+        "the like(n)",
+        "the likes of(n)",
+        "enjoy(v)",
+        "bask(v)",
+        "relish(v)",
+        "savor(v)",
+        "savour(v)",
+        "prefer(v)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 10,
+      "words": [
+        "kind(n)",
+        "sort(n)",
+        "form(n)",
+        "variety(n)",
+        "use(v)",
+        "utilize(v)",
+        "utilise(v)",
+        "apply(v)",
+        "employ(v)",
+        "like(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 2,
+      "words": [
+        "devour(v)",
+        "feast one's eyes(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 6,
+      "words": [
+        "preference(n)",
+        "likeness(n)",
+        "similarity(n)",
+        "enjoyment(n)",
+        "enjoyer(n)",
+        "relish(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 3,
+      "words": [
+        "look-alike(adj)",
+        "like-minded(adj)",
+        "suchlike(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 1,
+      "words": [
+        "same(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "unlike(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 56,
+      "words": [
+        "genus(n)",
+        "description(n)",
+        "type(n)",
+        "species(n)",
+        "manner(n)",
+        "model(n)",
+        "style(n)",
+        "antitype(n)",
+        "brand(n)",
+        "make(n)",
+        "flavor(n)",
+        "flavour(n)",
+        "art form(n)",
+        "genre(n)",
+        "color(n)",
+        "colour(n)",
+        "stripe(n)",
+        "avail(v)",
+        "address(v)",
+        "strain(v)",
+        "extend(v)",
+        "exploit(v)",
+        "tap(v)",
+        "overuse(v)",
+        "overdrive(v)",
+        "cannibalize(v)",
+        "cannibalise(v)",
+        "fall back(v)",
+        "resort(v)",
+        "recur(v)",
+        "waste(v)",
+        "put(v)",
+        "assign(v)",
+        "pull out all the stops(v)",
+        "play(v)",
+        "give(v)",
+        "dedicate(v)",
+        "consecrate(v)",
+        "commit(v)",
+        "devote(v)",
+        "ply(v)",
+        "work(v)",
+        "put to work(v)",
+        "exert(v)",
+        "exercise(v)",
+        "take(v)",
+        "share(v)",
+        "recycle(v)",
+        "reprocess(v)",
+        "reuse(v)",
+        "misapply(v)",
+        "misuse(v)",
+        "implement(v)",
+        "cotton(v)",
+        "care for(v)",
+        "love(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "address",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "address.v.05"
+        }
+      ],
+      "definition": "address or apply oneself to something, direct one's efforts towards something, such as a question"
+    },
+    {
+      "lemma": "antitype",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "antitype.n.02"
+        }
+      ],
+      "definition": "an opposite or contrasting type"
+    },
+    {
+      "lemma": "apply",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "enjoy.v.02",
+          "via_synset": "use.v.01"
+        }
+      ],
+      "definition": "put into service; make work or employ for a particular purpose or for its inherent or natural purpose"
+    },
+    {
+      "lemma": "art form",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "art_form.n.01"
+        }
+      ],
+      "definition": "(architecture) a form of artistic expression (such as writing or painting or architecture)"
+    },
+    {
+      "lemma": "assign",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "put.v.04"
+        }
+      ],
+      "definition": "attribute or give"
+    },
+    {
+      "lemma": "avail",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "avail.v.01"
+        }
+      ],
+      "definition": "use to one's advantage"
+    },
+    {
+      "lemma": "bask",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "enjoy.v.01",
+          "via_synset": "enjoy.v.01"
+        }
+      ],
+      "definition": "derive or receive pleasure from; get enjoyment from; take pleasure in"
+    },
+    {
+      "lemma": "brand",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "brand.n.02"
+        }
+      ],
+      "definition": "a recognizable kind"
+    },
+    {
+      "lemma": "cannibalise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "cannibalize.v.02"
+        }
+      ],
+      "definition": "use parts of something to repair something else"
+    },
+    {
+      "lemma": "cannibalize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "cannibalize.v.02"
+        }
+      ],
+      "definition": "use parts of something to repair something else"
+    },
+    {
+      "lemma": "care for",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "like.v.02",
+          "via_synset": "care_for.v.01"
+        }
+      ],
+      "definition": "have a liking, fondness, or taste (for)"
+    },
+    {
+      "lemma": "color",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "color.n.07"
+        }
+      ],
+      "definition": "(physics) the characteristic of quarks that determines their role in the strong interaction"
+    },
+    {
+      "lemma": "colour",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "color.n.07"
+        }
+      ],
+      "definition": "(physics) the characteristic of quarks that determines their role in the strong interaction"
+    },
+    {
+      "lemma": "commit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "give.v.18"
+        }
+      ],
+      "definition": "give entirely to a specific person, activity, or cause"
+    },
+    {
+      "lemma": "consecrate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "give.v.18"
+        }
+      ],
+      "definition": "give entirely to a specific person, activity, or cause"
+    },
+    {
+      "lemma": "cotton",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "like.v.02",
+          "via_synset": "cotton.v.01"
+        }
+      ],
+      "definition": "take a liking to"
+    },
+    {
+      "lemma": "dedicate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "give.v.18"
+        }
+      ],
+      "definition": "give entirely to a specific person, activity, or cause"
+    },
+    {
+      "lemma": "description",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "description.n.03"
+        }
+      ],
+      "definition": "sort or variety"
+    },
+    {
+      "lemma": "devote",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "give.v.18"
+        }
+      ],
+      "definition": "give entirely to a specific person, activity, or cause"
+    },
+    {
+      "lemma": "devour",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "enjoy.v.01",
+          "via_synset": "devour.v.02"
+        }
+      ],
+      "definition": "enjoy avidly"
+    },
+    {
+      "lemma": "employ",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "enjoy.v.02",
+          "via_synset": "use.v.01"
+        }
+      ],
+      "definition": "put into service; make work or employ for a particular purpose or for its inherent or natural purpose"
+    },
+    {
+      "lemma": "enjoy",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "enjoy.v.01",
+          "via_synset": "enjoy.v.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "enjoy.v.02",
+          "via_synset": "enjoy.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "like.v.02",
+          "via_synset": "love.v.02"
+        }
+      ],
+      "definition": "derive or receive pleasure from; get enjoyment from; take pleasure in"
+    },
+    {
+      "lemma": "enjoyer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "enjoy.v.01",
+          "via_synset": "enjoyer.n.01"
+        }
+      ],
+      "definition": "a person who delights in having or using or experiencing something"
+    },
+    {
+      "lemma": "enjoyment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "enjoy.v.01",
+          "via_synset": "enjoyment.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "enjoy.v.01",
+          "via_synset": "enjoyment.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "enjoy.v.02",
+          "via_synset": "use.n.07"
+        }
+      ],
+      "definition": "the pleasure felt when having a good time"
+    },
+    {
+      "lemma": "exercise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "exert.v.01"
+        }
+      ],
+      "definition": "put to use"
+    },
+    {
+      "lemma": "exert",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "exert.v.01"
+        }
+      ],
+      "definition": "put to use"
+    },
+    {
+      "lemma": "exploit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "exploit.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "exploit.v.01"
+        }
+      ],
+      "definition": "draw from; make good use of"
+    },
+    {
+      "lemma": "extend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "strain.v.03"
+        }
+      ],
+      "definition": "use to the utmost; exert vigorously or to full capacity"
+    },
+    {
+      "lemma": "fall back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "fall_back.v.05"
+        }
+      ],
+      "definition": "have recourse to"
+    },
+    {
+      "lemma": "feast one's eyes",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "enjoy.v.01",
+          "via_synset": "feast_one's_eyes.v.01"
+        }
+      ],
+      "definition": "look at with great enjoyment"
+    },
+    {
+      "lemma": "flavor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "flavor.n.03"
+        }
+      ],
+      "definition": "(physics) the six kinds of quarks"
+    },
+    {
+      "lemma": "flavour",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "flavor.n.03"
+        }
+      ],
+      "definition": "(physics) the six kinds of quarks"
+    },
+    {
+      "lemma": "form",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "like.n.02",
+          "via_synset": "kind.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "like.n.01",
+          "via_synset": "kind.n.01"
+        }
+      ],
+      "definition": "a category of things distinguished by some common characteristic or quality"
+    },
+    {
+      "lemma": "genre",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "genre.n.01"
+        }
+      ],
+      "definition": "a kind of literary or artistic work"
+    },
+    {
+      "lemma": "genus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "genus.n.01"
+        }
+      ],
+      "definition": "a general kind of something"
+    },
+    {
+      "lemma": "give",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "give.v.18"
+        }
+      ],
+      "definition": "give entirely to a specific person, activity, or cause"
+    },
+    {
+      "lemma": "ilk",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "like.n.02",
+          "via_synset": "like.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "like.n.02"
+        }
+      ],
+      "definition": "a kind of person"
+    },
+    {
+      "lemma": "implement",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "implement.v.01"
+        }
+      ],
+      "definition": "apply in a manner consistent with its purpose or design"
+    },
+    {
+      "lemma": "kind",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "like.n.02",
+          "via_synset": "kind.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "like.n.01",
+          "via_synset": "kind.n.01"
+        }
+      ],
+      "definition": "a category of things distinguished by some common characteristic or quality"
+    },
+    {
+      "lemma": "like",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "like.a.01",
+          "via_synset": "like.a.01"
+        }
+      ],
+      "definition": "resembling or similar; having the same or some of the same characteristics; often used in combination"
+    },
+    {
+      "lemma": "like",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "like.n.02",
+          "via_synset": "like.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "like.n.01",
+          "via_synset": "like.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "like.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "like.n.02"
+        }
+      ],
+      "definition": "a kind of person"
+    },
+    {
+      "lemma": "like",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "prefer.v.01",
+          "via_synset": "like.v.02"
+        }
+      ],
+      "definition": "find enjoyable or agreeable"
+    },
+    {
+      "lemma": "like-minded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "like.a.01",
+          "via_synset": "like-minded.s.01"
+        }
+      ],
+      "definition": "of the same turn of mind"
+    },
+    {
+      "lemma": "likeness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "like.a.01",
+          "via_synset": "likeness.n.01"
+        }
+      ],
+      "definition": "similarity in appearance or character or nature between persons or things"
+    },
+    {
+      "lemma": "look-alike",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "like.a.01",
+          "via_synset": "look-alike.s.01"
+        }
+      ],
+      "definition": "resembling closely"
+    },
+    {
+      "lemma": "love",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "like.v.02",
+          "via_synset": "love.v.02"
+        }
+      ],
+      "definition": "get pleasure from"
+    },
+    {
+      "lemma": "make",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "brand.n.02"
+        }
+      ],
+      "definition": "a recognizable kind"
+    },
+    {
+      "lemma": "manner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "manner.n.03"
+        }
+      ],
+      "definition": "a kind"
+    },
+    {
+      "lemma": "misapply",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "misapply.v.01"
+        }
+      ],
+      "definition": "apply to a wrong thing or person; apply badly or incorrectly"
+    },
+    {
+      "lemma": "misuse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "misapply.v.01"
+        }
+      ],
+      "definition": "apply to a wrong thing or person; apply badly or incorrectly"
+    },
+    {
+      "lemma": "model",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "model.n.02"
+        }
+      ],
+      "definition": "a type of product"
+    },
+    {
+      "lemma": "overdrive",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "overuse.v.01"
+        }
+      ],
+      "definition": "make use of too often or too extensively"
+    },
+    {
+      "lemma": "overuse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "overuse.v.01"
+        }
+      ],
+      "definition": "make use of too often or too extensively"
+    },
+    {
+      "lemma": "play",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "play.v.33"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "play.v.32"
+        }
+      ],
+      "definition": "employ in a game or in a specific position"
+    },
+    {
+      "lemma": "ply",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "ply.v.06"
+        }
+      ],
+      "definition": "use diligently"
+    },
+    {
+      "lemma": "prefer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "prefer.v.01",
+          "via_synset": "prefer.v.01"
+        }
+      ],
+      "definition": "like better; value more highly"
+    },
+    {
+      "lemma": "preference",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "prefer.v.01",
+          "via_synset": "preference.n.01"
+        }
+      ],
+      "definition": "a strong liking"
+    },
+    {
+      "lemma": "pull out all the stops",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "pull_out_all_the_stops.v.01"
+        }
+      ],
+      "definition": "use all resources available"
+    },
+    {
+      "lemma": "put",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "put.v.04"
+        }
+      ],
+      "definition": "attribute or give"
+    },
+    {
+      "lemma": "put to work",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "work.v.12"
+        }
+      ],
+      "definition": "cause to work"
+    },
+    {
+      "lemma": "recur",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "fall_back.v.05"
+        }
+      ],
+      "definition": "have recourse to"
+    },
+    {
+      "lemma": "recycle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "recycle.v.02"
+        }
+      ],
+      "definition": "use again after processing"
+    },
+    {
+      "lemma": "relish",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "enjoy.v.01",
+          "via_synset": "gusto.n.01"
+        }
+      ],
+      "definition": "vigorous and enthusiastic enjoyment"
+    },
+    {
+      "lemma": "relish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "enjoy.v.01",
+          "via_synset": "enjoy.v.01"
+        }
+      ],
+      "definition": "derive or receive pleasure from; get enjoyment from; take pleasure in"
+    },
+    {
+      "lemma": "reprocess",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "recycle.v.02"
+        }
+      ],
+      "definition": "use again after processing"
+    },
+    {
+      "lemma": "resort",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "fall_back.v.05"
+        }
+      ],
+      "definition": "have recourse to"
+    },
+    {
+      "lemma": "reuse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "recycle.v.02"
+        }
+      ],
+      "definition": "use again after processing"
+    },
+    {
+      "lemma": "same",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "like.a.01",
+          "via_synset": "same.a.02"
+        }
+      ],
+      "definition": "closely similar or comparable in kind or quality or quantity or degree"
+    },
+    {
+      "lemma": "savor",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "enjoy.v.01",
+          "via_synset": "enjoy.v.01"
+        }
+      ],
+      "definition": "derive or receive pleasure from; get enjoyment from; take pleasure in"
+    },
+    {
+      "lemma": "savour",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "enjoy.v.01",
+          "via_synset": "enjoy.v.01"
+        }
+      ],
+      "definition": "derive or receive pleasure from; get enjoyment from; take pleasure in"
+    },
+    {
+      "lemma": "share",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "share.v.02"
+        }
+      ],
+      "definition": "use jointly or in common"
+    },
+    {
+      "lemma": "similar",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "like.a.01",
+          "via_synset": "like.a.01"
+        }
+      ],
+      "definition": "resembling or similar; having the same or some of the same characteristics; often used in combination"
+    },
+    {
+      "lemma": "similarity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "like.a.01",
+          "via_synset": "similarity.n.01"
+        }
+      ],
+      "definition": "the quality of being similar"
+    },
+    {
+      "lemma": "sort",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "like.n.02",
+          "via_synset": "kind.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "like.n.01",
+          "via_synset": "kind.n.01"
+        }
+      ],
+      "definition": "a category of things distinguished by some common characteristic or quality"
+    },
+    {
+      "lemma": "species",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "species.n.02"
+        }
+      ],
+      "definition": "a specific kind of something"
+    },
+    {
+      "lemma": "strain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "strain.v.03"
+        }
+      ],
+      "definition": "use to the utmost; exert vigorously or to full capacity"
+    },
+    {
+      "lemma": "stripe",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "stripe.n.04"
+        }
+      ],
+      "definition": "a kind or category"
+    },
+    {
+      "lemma": "style",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "style.n.03"
+        }
+      ],
+      "definition": "a particular kind (as to appearance)"
+    },
+    {
+      "lemma": "suchlike",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "like.a.01",
+          "via_synset": "suchlike.s.01"
+        }
+      ],
+      "definition": "of the same kind"
+    },
+    {
+      "lemma": "take",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "take.v.09"
+        }
+      ],
+      "definition": "travel or go by means of a certain kind of transportation, or a certain route"
+    },
+    {
+      "lemma": "tap",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "exploit.v.02"
+        }
+      ],
+      "definition": "draw from; make good use of"
+    },
+    {
+      "lemma": "the like",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "like.n.01",
+          "via_synset": "like.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "like.n.01"
+        }
+      ],
+      "definition": "a similar kind; ,"
+    },
+    {
+      "lemma": "the likes of",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "like.n.01",
+          "via_synset": "like.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "like.n.01"
+        }
+      ],
+      "definition": "a similar kind; ,"
+    },
+    {
+      "lemma": "type",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kind.n.01",
+          "via_synset": "type.n.01"
+        }
+      ],
+      "definition": "a subdivision of a particular kind of thing"
+    },
+    {
+      "lemma": "unlike",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "like.a.01",
+          "via_synset": "unlike.a.01"
+        }
+      ],
+      "definition": "marked by dissimilarity"
+    },
+    {
+      "lemma": "use",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "enjoy.v.02",
+          "via_synset": "use.v.01"
+        }
+      ],
+      "definition": "put into service; make work or employ for a particular purpose or for its inherent or natural purpose"
+    },
+    {
+      "lemma": "utilise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "enjoy.v.02",
+          "via_synset": "use.v.01"
+        }
+      ],
+      "definition": "put into service; make work or employ for a particular purpose or for its inherent or natural purpose"
+    },
+    {
+      "lemma": "utilize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "enjoy.v.02",
+          "via_synset": "use.v.01"
+        }
+      ],
+      "definition": "put into service; make work or employ for a particular purpose or for its inherent or natural purpose"
+    },
+    {
+      "lemma": "variety",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "like.n.02",
+          "via_synset": "kind.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "like.n.01",
+          "via_synset": "kind.n.01"
+        }
+      ],
+      "definition": "a category of things distinguished by some common characteristic or quality"
+    },
+    {
+      "lemma": "waste",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "waste.v.02"
+        }
+      ],
+      "definition": "use inefficiently or inappropriately"
+    },
+    {
+      "lemma": "work",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "work.v.12"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "use.v.01",
+          "via_synset": "exploit.v.01"
+        }
+      ],
+      "definition": "cause to work"
+    }
+  ]
+}

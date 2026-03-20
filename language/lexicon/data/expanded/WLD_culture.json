@@ -1,0 +1,1810 @@
+{
+  "atom_id": "WLD.culture",
+  "category": "WLD",
+  "seed_count": 6,
+  "total_keys": 116,
+  "pos_counts": {
+    "n": 112,
+    "adj": 2,
+    "v": 2
+  },
+  "source_counts": {
+    "0_seed": 8,
+    "6_derivational": 11,
+    "10_sibling": 91,
+    "11_pertainym": 2,
+    "2_hypernym_d1": 10,
+    "3_hyponym_d1": 9,
+    "4_hyponym_d2": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 5,
+      "words": [
+        "culture(n)",
+        "acculturation(n)",
+        "cultural(adj)",
+        "civilization(n)",
+        "civilisation(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 10,
+      "words": [
+        "attitude(n)",
+        "mental attitude(n)",
+        "taste(n)",
+        "appreciation(n)",
+        "discernment(n)",
+        "perceptiveness(n)",
+        "content(n)",
+        "cognitive content(n)",
+        "mental object(n)",
+        "society(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 9,
+      "words": [
+        "mosaic culture(n)",
+        "cyberculture(n)",
+        "Kalashnikov culture(n)",
+        "counterculture(n)",
+        "mass culture(n)",
+        "letters(n)",
+        "meme(n)",
+        "Islam(n)",
+        "Muslimism(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 1,
+      "words": [
+        "flower power(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 4,
+      "words": [
+        "Islamic(adj)",
+        "Islamist(n)",
+        "acculturate(v)",
+        "civilize(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 87,
+      "words": [
+        "defensive(n)",
+        "defensive attitude(n)",
+        "position(n)",
+        "stance(n)",
+        "posture(n)",
+        "irreverence(n)",
+        "disrespect(n)",
+        "tolerance(n)",
+        "paternalism(n)",
+        "respect(n)",
+        "esteem(n)",
+        "regard(n)",
+        "southernism(n)",
+        "mentality(n)",
+        "outlook(n)",
+        "mindset(n)",
+        "mind-set(n)",
+        "hardball(n)",
+        "intolerance(n)",
+        "credence(n)",
+        "acceptance(n)",
+        "orientation(n)",
+        "reverence(n)",
+        "inclination(n)",
+        "disposition(n)",
+        "tendency(n)",
+        "high horse(n)",
+        "vogue(n)",
+        "trend(n)",
+        "style(n)",
+        "delicacy(n)",
+        "discretion(n)",
+        "virtu(n)",
+        "vertu(n)",
+        "connoisseurship(n)",
+        "issue(n)",
+        "noumenon(n)",
+        "thing-in-itself(n)",
+        "heresy(n)",
+        "unorthodoxy(n)",
+        "knowledge domain(n)",
+        "knowledge base(n)",
+        "domain(n)",
+        "metaknowledge(n)",
+        "food(n)",
+        "food for thought(n)",
+        "intellectual nourishment(n)",
+        "goal(n)",
+        "end(n)",
+        "lore(n)",
+        "traditional knowledge(n)",
+        "ignorance(n)",
+        "universe(n)",
+        "universe of discourse(n)",
+        "representation(n)",
+        "mental representation(n)",
+        "internal representation(n)",
+        "experience(n)",
+        "kernel(n)",
+        "substance(n)",
+        "core(n)",
+        "center(n)",
+        "centre(n)",
+        "essence(n)",
+        "gist(n)",
+        "heart(n)",
+        "heart and soul(n)",
+        "inwardness(n)",
+        "marrow(n)",
+        "meat(n)",
+        "nub(n)",
+        "pith(n)",
+        "sum(n)",
+        "nitty-gritty(n)",
+        "topic(n)",
+        "subject(n)",
+        "matter(n)",
+        "wisdom(n)",
+        "tradition(n)",
+        "belief(n)",
+        "unbelief(n)",
+        "disbelief(n)",
+        "education(n)",
+        "idea(n)",
+        "thought(n)",
+        "tribal society(n)",
+        "open society(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "acceptance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "credence.n.01"
+        }
+      ],
+      "definition": "the mental attitude that something is believable and should be accepted as true"
+    },
+    {
+      "lemma": "acculturate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "culture.n.02",
+          "via_synset": "acculturate.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "acculturation.n.02",
+          "via_synset": "acculturate.v.01"
+        }
+      ],
+      "definition": "assimilate culturally"
+    },
+    {
+      "lemma": "acculturation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "acculturation.n.02",
+          "via_synset": "acculturation.n.02"
+        }
+      ],
+      "definition": "all the knowledge and values shared by a society"
+    },
+    {
+      "lemma": "appreciation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "culture.n.02",
+          "via_synset": "taste.n.03"
+        }
+      ],
+      "definition": "delicate discrimination (especially of aesthetic values)"
+    },
+    {
+      "lemma": "attitude",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "culture.n.06",
+          "via_synset": "attitude.n.01"
+        }
+      ],
+      "definition": "a complex mental state involving beliefs and feelings and values and dispositions to act in certain ways"
+    },
+    {
+      "lemma": "belief",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "belief.n.01"
+        }
+      ],
+      "definition": "any cognitive content held as true"
+    },
+    {
+      "lemma": "center",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "centre",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "civilisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "civilization.n.01",
+          "via_synset": "civilization.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "society.n.01",
+          "via_synset": "culture.n.01"
+        }
+      ],
+      "definition": "a society in an advanced state of social development (e.g., with complex legal and political and religious organizations)"
+    },
+    {
+      "lemma": "civilization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "civilization.n.01",
+          "via_synset": "civilization.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "society.n.01",
+          "via_synset": "culture.n.01"
+        }
+      ],
+      "definition": "a society in an advanced state of social development (e.g., with complex legal and political and religious organizations)"
+    },
+    {
+      "lemma": "civilize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "civilization.n.01",
+          "via_synset": "civilize.v.02"
+        }
+      ],
+      "definition": "raise from a barbaric to a civilized state"
+    },
+    {
+      "lemma": "cognitive content",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "acculturation.n.02",
+          "via_synset": "content.n.05"
+        }
+      ],
+      "definition": "the sum or range of what has been perceived, discovered, or learned"
+    },
+    {
+      "lemma": "connoisseurship",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "taste.n.03",
+          "via_synset": "virtu.n.01"
+        }
+      ],
+      "definition": "love of or taste for fine objects of art"
+    },
+    {
+      "lemma": "content",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "acculturation.n.02",
+          "via_synset": "content.n.05"
+        }
+      ],
+      "definition": "the sum or range of what has been perceived, discovered, or learned"
+    },
+    {
+      "lemma": "core",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "counterculture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "culture.n.02",
+          "via_synset": "counterculture.n.01"
+        }
+      ],
+      "definition": "a culture with lifestyles and values opposed to those of the established culture"
+    },
+    {
+      "lemma": "credence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "credence.n.01"
+        }
+      ],
+      "definition": "the mental attitude that something is believable and should be accepted as true"
+    },
+    {
+      "lemma": "cultural",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "cultural.a.01",
+          "via_synset": "cultural.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "cultural.a.03",
+          "via_synset": "cultural.a.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "culture.n.02",
+          "via_synset": "cultural.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "culture.n.02",
+          "via_synset": "cultural.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "acculturation.n.02",
+          "via_synset": "cultural.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "acculturation.n.02",
+          "via_synset": "cultural.a.03"
+        }
+      ],
+      "definition": "of or relating to the arts and manners that a group favors"
+    },
+    {
+      "lemma": "culture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "culture.n.06",
+          "via_synset": "culture.n.06"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "culture.n.02",
+          "via_synset": "culture.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "acculturation.n.02",
+          "via_synset": "acculturation.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cultural.a.01",
+          "via_synset": "culture.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cultural.a.03",
+          "via_synset": "acculturation.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "society.n.01",
+          "via_synset": "culture.n.01"
+        },
+        {
+          "step": "11_pertainym",
+          "relation": "pertainym",
+          "from_synset": "cultural.a.01",
+          "via_synset": "culture.n.02"
+        },
+        {
+          "step": "11_pertainym",
+          "relation": "pertainym",
+          "from_synset": "cultural.a.03",
+          "via_synset": "acculturation.n.02"
+        }
+      ],
+      "definition": "the attitudes and behavior that are characteristic of a particular social group or organization"
+    },
+    {
+      "lemma": "cyberculture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "culture.n.06",
+          "via_synset": "cyberculture.n.01"
+        }
+      ],
+      "definition": "the culture that emerges from the use of computers for communication and entertainment and business"
+    },
+    {
+      "lemma": "defensive",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "defensive.n.01"
+        }
+      ],
+      "definition": "an attitude of defensiveness (especially in the phrase `on the defensive')"
+    },
+    {
+      "lemma": "defensive attitude",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "defensive.n.01"
+        }
+      ],
+      "definition": "an attitude of defensiveness (especially in the phrase `on the defensive')"
+    },
+    {
+      "lemma": "delicacy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "taste.n.03",
+          "via_synset": "delicacy.n.03"
+        }
+      ],
+      "definition": "refined taste; tact"
+    },
+    {
+      "lemma": "disbelief",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "unbelief.n.01"
+        }
+      ],
+      "definition": "a rejection of belief"
+    },
+    {
+      "lemma": "discernment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "culture.n.02",
+          "via_synset": "taste.n.03"
+        }
+      ],
+      "definition": "delicate discrimination (especially of aesthetic values)"
+    },
+    {
+      "lemma": "discretion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "taste.n.03",
+          "via_synset": "delicacy.n.03"
+        }
+      ],
+      "definition": "refined taste; tact"
+    },
+    {
+      "lemma": "disposition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "inclination.n.01"
+        }
+      ],
+      "definition": "an attitude of mind especially one that favors one alternative over others"
+    },
+    {
+      "lemma": "disrespect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "disrespect.n.02"
+        }
+      ],
+      "definition": "a disrespectful mental attitude"
+    },
+    {
+      "lemma": "domain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "knowledge_domain.n.01"
+        }
+      ],
+      "definition": "the content of a particular field of knowledge"
+    },
+    {
+      "lemma": "education",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "education.n.02"
+        }
+      ],
+      "definition": "knowledge acquired by learning and instruction"
+    },
+    {
+      "lemma": "end",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "goal.n.01"
+        }
+      ],
+      "definition": "the state of affairs that a plan is intended to achieve and that (when achieved) terminates behavior intended to achieve it"
+    },
+    {
+      "lemma": "essence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "esteem",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "respect.n.03"
+        }
+      ],
+      "definition": "an attitude of admiration or esteem"
+    },
+    {
+      "lemma": "experience",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "experience.n.02"
+        }
+      ],
+      "definition": "the content of direct observation or participation in an event"
+    },
+    {
+      "lemma": "flower power",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "counterculture.n.01",
+          "via_synset": "flower_power.n.01"
+        }
+      ],
+      "definition": "a counterculture of young people in the US during the 1960s and 70s"
+    },
+    {
+      "lemma": "food",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "food.n.03"
+        }
+      ],
+      "definition": "anything that provides mental stimulus for thinking"
+    },
+    {
+      "lemma": "food for thought",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "food.n.03"
+        }
+      ],
+      "definition": "anything that provides mental stimulus for thinking"
+    },
+    {
+      "lemma": "gist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "goal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "goal.n.01"
+        }
+      ],
+      "definition": "the state of affairs that a plan is intended to achieve and that (when achieved) terminates behavior intended to achieve it"
+    },
+    {
+      "lemma": "hardball",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "hardball.n.01"
+        }
+      ],
+      "definition": "a no-nonsense attitude in business or politics"
+    },
+    {
+      "lemma": "heart",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "heart and soul",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "heresy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "heresy.n.02"
+        }
+      ],
+      "definition": "a belief that rejects the orthodox tenets of a religion"
+    },
+    {
+      "lemma": "high horse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "high_horse.n.01"
+        }
+      ],
+      "definition": "an attitude of arrogant superiority"
+    },
+    {
+      "lemma": "idea",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "idea.n.01"
+        }
+      ],
+      "definition": "the content of cognition; the main thing you are thinking about"
+    },
+    {
+      "lemma": "ignorance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "ignorance.n.01"
+        }
+      ],
+      "definition": "the lack of knowledge or education"
+    },
+    {
+      "lemma": "inclination",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "inclination.n.01"
+        }
+      ],
+      "definition": "an attitude of mind especially one that favors one alternative over others"
+    },
+    {
+      "lemma": "intellectual nourishment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "food.n.03"
+        }
+      ],
+      "definition": "anything that provides mental stimulus for thinking"
+    },
+    {
+      "lemma": "internal representation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "representation.n.01"
+        }
+      ],
+      "definition": "a presentation to the mind in the form of an idea or image"
+    },
+    {
+      "lemma": "intolerance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "intolerance.n.02"
+        }
+      ],
+      "definition": "unwillingness to recognize and respect differences in opinions or beliefs"
+    },
+    {
+      "lemma": "inwardness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "irreverence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "irreverence.n.01"
+        }
+      ],
+      "definition": "an irreverent mental attitude"
+    },
+    {
+      "lemma": "Islam",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "civilization.n.01",
+          "via_synset": "islam.n.01"
+        }
+      ],
+      "definition": "the civilization of Muslims collectively which is governed by the Muslim religion"
+    },
+    {
+      "lemma": "Islamic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "islam.n.01",
+          "via_synset": "muslim.a.01"
+        }
+      ],
+      "definition": "of or relating to or supporting Islamism"
+    },
+    {
+      "lemma": "Islamist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "islam.n.01",
+          "via_synset": "islamist.n.02"
+        }
+      ],
+      "definition": "an orthodox Muslim"
+    },
+    {
+      "lemma": "issue",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "issue.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "topic.n.02"
+        }
+      ],
+      "definition": "an important question that is in dispute and must be settled"
+    },
+    {
+      "lemma": "Kalashnikov culture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "culture.n.06",
+          "via_synset": "kalashnikov_culture.n.01"
+        }
+      ],
+      "definition": "the attitudes and behavior in a social group that resolves political disputes by force of arms"
+    },
+    {
+      "lemma": "kernel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "knowledge base",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "knowledge_domain.n.01"
+        }
+      ],
+      "definition": "the content of a particular field of knowledge"
+    },
+    {
+      "lemma": "knowledge domain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "knowledge_domain.n.01"
+        }
+      ],
+      "definition": "the content of a particular field of knowledge"
+    },
+    {
+      "lemma": "letters",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "culture.n.02",
+          "via_synset": "letters.n.01"
+        }
+      ],
+      "definition": "the literary culture"
+    },
+    {
+      "lemma": "lore",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "lore.n.01"
+        }
+      ],
+      "definition": "knowledge gained through tradition or anecdote"
+    },
+    {
+      "lemma": "marrow",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "mass culture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "culture.n.02",
+          "via_synset": "mass_culture.n.01"
+        }
+      ],
+      "definition": "the culture that is widely disseminated via the mass media"
+    },
+    {
+      "lemma": "matter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "topic.n.02"
+        }
+      ],
+      "definition": "some situation or event that is thought about"
+    },
+    {
+      "lemma": "meat",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "meme",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "acculturation.n.02",
+          "via_synset": "meme.n.01"
+        }
+      ],
+      "definition": "a cultural unit (an idea or value or pattern of behavior) that is passed from one person to another by non-genetic means (as by imitation)"
+    },
+    {
+      "lemma": "mental attitude",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "culture.n.06",
+          "via_synset": "attitude.n.01"
+        }
+      ],
+      "definition": "a complex mental state involving beliefs and feelings and values and dispositions to act in certain ways"
+    },
+    {
+      "lemma": "mental object",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "acculturation.n.02",
+          "via_synset": "content.n.05"
+        }
+      ],
+      "definition": "the sum or range of what has been perceived, discovered, or learned"
+    },
+    {
+      "lemma": "mental representation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "representation.n.01"
+        }
+      ],
+      "definition": "a presentation to the mind in the form of an idea or image"
+    },
+    {
+      "lemma": "mentality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "mentality.n.01"
+        }
+      ],
+      "definition": "a habitual or characteristic mental attitude that determines how you will interpret and respond to situations"
+    },
+    {
+      "lemma": "metaknowledge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "metaknowledge.n.01"
+        }
+      ],
+      "definition": "knowledge about knowledge"
+    },
+    {
+      "lemma": "mind-set",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "mentality.n.01"
+        }
+      ],
+      "definition": "a habitual or characteristic mental attitude that determines how you will interpret and respond to situations"
+    },
+    {
+      "lemma": "mindset",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "mentality.n.01"
+        }
+      ],
+      "definition": "a habitual or characteristic mental attitude that determines how you will interpret and respond to situations"
+    },
+    {
+      "lemma": "mosaic culture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "culture.n.06",
+          "via_synset": "mosaic_culture.n.01"
+        }
+      ],
+      "definition": "a highly diverse culture"
+    },
+    {
+      "lemma": "Muslimism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "civilization.n.01",
+          "via_synset": "islam.n.01"
+        }
+      ],
+      "definition": "the civilization of Muslims collectively which is governed by the Muslim religion"
+    },
+    {
+      "lemma": "nitty-gritty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "noumenon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "noumenon.n.01"
+        }
+      ],
+      "definition": "the intellectual conception of a thing as it is in itself, not as it is known through perception"
+    },
+    {
+      "lemma": "nub",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "open society",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "society.n.01",
+          "via_synset": "open_society.n.01"
+        }
+      ],
+      "definition": "a society that allows its members considerable freedom (as in a democracy)"
+    },
+    {
+      "lemma": "orientation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "orientation.n.02"
+        }
+      ],
+      "definition": "an integrated set of attitudes and beliefs"
+    },
+    {
+      "lemma": "outlook",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "mentality.n.01"
+        }
+      ],
+      "definition": "a habitual or characteristic mental attitude that determines how you will interpret and respond to situations"
+    },
+    {
+      "lemma": "paternalism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "paternalism.n.01"
+        }
+      ],
+      "definition": "the attitude (of a person or a government) that subordinates should be controlled in a fatherly way for their own good"
+    },
+    {
+      "lemma": "perceptiveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "culture.n.02",
+          "via_synset": "taste.n.03"
+        }
+      ],
+      "definition": "delicate discrimination (especially of aesthetic values)"
+    },
+    {
+      "lemma": "pith",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "position",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "position.n.12"
+        }
+      ],
+      "definition": "a rationalized mental attitude"
+    },
+    {
+      "lemma": "posture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "position.n.12"
+        }
+      ],
+      "definition": "a rationalized mental attitude"
+    },
+    {
+      "lemma": "regard",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "respect.n.03"
+        }
+      ],
+      "definition": "an attitude of admiration or esteem"
+    },
+    {
+      "lemma": "representation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "representation.n.01"
+        }
+      ],
+      "definition": "a presentation to the mind in the form of an idea or image"
+    },
+    {
+      "lemma": "respect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "respect.n.03"
+        }
+      ],
+      "definition": "an attitude of admiration or esteem"
+    },
+    {
+      "lemma": "reverence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "reverence.n.02"
+        }
+      ],
+      "definition": "a reverent mental attitude"
+    },
+    {
+      "lemma": "society",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "civilization.n.01",
+          "via_synset": "society.n.01"
+        }
+      ],
+      "definition": "an extended social group having a distinctive cultural and economic organization"
+    },
+    {
+      "lemma": "southernism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "southernism.n.02"
+        }
+      ],
+      "definition": "an attitude characteristic of Southerners (especially in the US)"
+    },
+    {
+      "lemma": "stance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "position.n.12"
+        }
+      ],
+      "definition": "a rationalized mental attitude"
+    },
+    {
+      "lemma": "style",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "taste.n.03",
+          "via_synset": "vogue.n.01"
+        }
+      ],
+      "definition": "the popular taste at a given time"
+    },
+    {
+      "lemma": "subject",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "topic.n.02"
+        }
+      ],
+      "definition": "some situation or event that is thought about"
+    },
+    {
+      "lemma": "substance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "sum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "kernel.n.03"
+        }
+      ],
+      "definition": "the choicest or most essential or most vital part of some idea or experience"
+    },
+    {
+      "lemma": "taste",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "culture.n.02",
+          "via_synset": "taste.n.03"
+        }
+      ],
+      "definition": "delicate discrimination (especially of aesthetic values)"
+    },
+    {
+      "lemma": "tendency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "inclination.n.01"
+        }
+      ],
+      "definition": "an attitude of mind especially one that favors one alternative over others"
+    },
+    {
+      "lemma": "thing-in-itself",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "noumenon.n.01"
+        }
+      ],
+      "definition": "the intellectual conception of a thing as it is in itself, not as it is known through perception"
+    },
+    {
+      "lemma": "thought",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "idea.n.01"
+        }
+      ],
+      "definition": "the content of cognition; the main thing you are thinking about"
+    },
+    {
+      "lemma": "tolerance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "attitude.n.01",
+          "via_synset": "tolerance.n.04"
+        }
+      ],
+      "definition": "willingness to recognize and respect the beliefs or practices of others"
+    },
+    {
+      "lemma": "topic",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "topic.n.02"
+        }
+      ],
+      "definition": "some situation or event that is thought about"
+    },
+    {
+      "lemma": "tradition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "tradition.n.01"
+        }
+      ],
+      "definition": "an inherited pattern of thought or action"
+    },
+    {
+      "lemma": "traditional knowledge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "lore.n.01"
+        }
+      ],
+      "definition": "knowledge gained through tradition or anecdote"
+    },
+    {
+      "lemma": "trend",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "taste.n.03",
+          "via_synset": "vogue.n.01"
+        }
+      ],
+      "definition": "the popular taste at a given time"
+    },
+    {
+      "lemma": "tribal society",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "society.n.01",
+          "via_synset": "tribal_society.n.01"
+        }
+      ],
+      "definition": "a society with the social organization of a tribe"
+    },
+    {
+      "lemma": "unbelief",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "unbelief.n.01"
+        }
+      ],
+      "definition": "a rejection of belief"
+    },
+    {
+      "lemma": "universe",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "universe.n.03"
+        }
+      ],
+      "definition": "everything stated or assumed in a given discussion"
+    },
+    {
+      "lemma": "universe of discourse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "universe.n.03"
+        }
+      ],
+      "definition": "everything stated or assumed in a given discussion"
+    },
+    {
+      "lemma": "unorthodoxy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "heresy.n.02"
+        }
+      ],
+      "definition": "a belief that rejects the orthodox tenets of a religion"
+    },
+    {
+      "lemma": "vertu",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "taste.n.03",
+          "via_synset": "virtu.n.01"
+        }
+      ],
+      "definition": "love of or taste for fine objects of art"
+    },
+    {
+      "lemma": "virtu",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "taste.n.03",
+          "via_synset": "virtu.n.01"
+        }
+      ],
+      "definition": "love of or taste for fine objects of art"
+    },
+    {
+      "lemma": "vogue",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "taste.n.03",
+          "via_synset": "vogue.n.01"
+        }
+      ],
+      "definition": "the popular taste at a given time"
+    },
+    {
+      "lemma": "wisdom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "content.n.05",
+          "via_synset": "wisdom.n.01"
+        }
+      ],
+      "definition": "accumulated knowledge or erudition or enlightenment"
+    }
+  ]
+}

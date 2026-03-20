@@ -1,0 +1,2047 @@
+{
+  "atom_id": "FND.memory",
+  "category": "FND",
+  "seed_count": 6,
+  "total_keys": 126,
+  "pos_counts": {
+    "n": 100,
+    "v": 21,
+    "adj": 5
+  },
+  "source_counts": {
+    "0_seed": 13,
+    "6_derivational": 47,
+    "3_hyponym_d1": 23,
+    "2_hypernym_d1": 7,
+    "4_hyponym_d2": 15,
+    "5_hyponym_d3": 4,
+    "10_sibling": 49
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 10,
+      "words": [
+        "memory(n)",
+        "retention(n)",
+        "retentiveness(n)",
+        "retentivity(n)",
+        "remembering(n)",
+        "commemorate(v)",
+        "remember(v)",
+        "think back(v)",
+        "recall(n)",
+        "callback(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 7,
+      "words": [
+        "faculty(n)",
+        "mental faculty(n)",
+        "module(n)",
+        "cognitive psychology(n)",
+        "basic cognitive process(n)",
+        "request(n)",
+        "asking(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 21,
+      "words": [
+        "remembrance(n)",
+        "recollection(n)",
+        "anamnesis(n)",
+        "short-term memory(n)",
+        "STM(n)",
+        "immediate memory(n)",
+        "reminiscence(n)",
+        "long-term memory(n)",
+        "LTM(n)",
+        "recognition(n)",
+        "identification(n)",
+        "retrospection(n)",
+        "working memory(n)",
+        "retrieval(n)",
+        "association(n)",
+        "connection(n)",
+        "connexion(n)",
+        "review(v)",
+        "look back(v)",
+        "retrospect(v)",
+        "reminisce(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 15,
+      "words": [
+        "reconstruction(n)",
+        "reconstructive memory(n)",
+        "reproduction(n)",
+        "reproductive memory(n)",
+        "regurgitation(n)",
+        "mind(n)",
+        "semantic memory(n)",
+        "episodic memory(n)",
+        "personal memory(n)",
+        "motor memory(n)",
+        "muscle memory(n)",
+        "identity(n)",
+        "speaker identification(n)",
+        "talker identification(n)",
+        "colligation(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 4,
+      "words": [
+        "generalization(n)",
+        "generalisation(n)",
+        "induction(n)",
+        "inductive reasoning(n)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 22,
+      "words": [
+        "review(n)",
+        "retrospective(adj)",
+        "retrospect(n)",
+        "memorize(v)",
+        "retain(v)",
+        "retentive(adj)",
+        "identify(v)",
+        "associate(v)",
+        "connect(v)",
+        "commemorative(adj)",
+        "commemoration(n)",
+        "recognize(v)",
+        "anamnestic(adj)",
+        "reconstruct(v)",
+        "recall(v)",
+        "recollect(v)",
+        "reminiscent(adj)",
+        "regurgitate(v)",
+        "mind(v)",
+        "retrieve(v)",
+        "colligate(v)",
+        "call back(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 47,
+      "words": [
+        "reason(n)",
+        "understanding(n)",
+        "intellect(n)",
+        "volition(n)",
+        "will(n)",
+        "sense(n)",
+        "sensation(n)",
+        "sentience(n)",
+        "sentiency(n)",
+        "sensory faculty(n)",
+        "language(n)",
+        "speech(n)",
+        "attention(n)",
+        "problem solving(n)",
+        "psycholinguistics(n)",
+        "inattention(n)",
+        "apperception(n)",
+        "representational process(n)",
+        "attending(n)",
+        "perception(n)",
+        "discrimination(n)",
+        "secernment(n)",
+        "learning(n)",
+        "acquisition(n)",
+        "classification(n)",
+        "categorization(n)",
+        "categorisation(n)",
+        "sorting(n)",
+        "intuition(n)",
+        "believing(n)",
+        "charge(n)",
+        "billing(n)",
+        "questioning(n)",
+        "inquiring(n)",
+        "invitation(n)",
+        "call(n)",
+        "notification(n)",
+        "notice(n)",
+        "order(n)",
+        "prayer(n)",
+        "petition(n)",
+        "orison(n)",
+        "trick or treat(n)",
+        "wish(n)",
+        "indirect request(n)",
+        "entreaty(n)",
+        "appeal(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "acquisition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "learning.n.01"
+        }
+      ],
+      "definition": "the cognitive process of acquiring skill or knowledge"
+    },
+    {
+      "lemma": "anamnesis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memory.n.03",
+          "via_synset": "remembrance.n.01"
+        }
+      ],
+      "definition": "the ability to recall past occurrences"
+    },
+    {
+      "lemma": "anamnestic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remembrance.n.01",
+          "via_synset": "anamnestic.a.01"
+        }
+      ],
+      "definition": "of or relating to anamnesis; aiding the memory"
+    },
+    {
+      "lemma": "appeal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "request.n.02",
+          "via_synset": "entreaty.n.01"
+        }
+      ],
+      "definition": "earnest or urgent request"
+    },
+    {
+      "lemma": "apperception",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "apperception.n.01"
+        }
+      ],
+      "definition": "the process whereby perceived qualities of an object are related to past experience"
+    },
+    {
+      "lemma": "asking",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "recall.n.01",
+          "via_synset": "request.n.02"
+        }
+      ],
+      "definition": "the verbal act of requesting"
+    },
+    {
+      "lemma": "associate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "association.n.04",
+          "via_synset": "associate.v.01"
+        }
+      ],
+      "definition": "make a logical or causal connection"
+    },
+    {
+      "lemma": "association",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memory.n.02",
+          "via_synset": "association.n.04"
+        }
+      ],
+      "definition": "the process of bringing ideas or events together in memory or imagination"
+    },
+    {
+      "lemma": "attending",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "attention.n.01"
+        }
+      ],
+      "definition": "the process whereby a person concentrates on some features of the environment to the (relative) exclusion of others"
+    },
+    {
+      "lemma": "attention",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "faculty.n.01",
+          "via_synset": "attention.n.05"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "attention.n.01"
+        }
+      ],
+      "definition": "the faculty or power of mental concentration"
+    },
+    {
+      "lemma": "basic cognitive process",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "memory.n.02",
+          "via_synset": "basic_cognitive_process.n.01"
+        }
+      ],
+      "definition": "cognitive processes involved in obtaining and storing knowledge"
+    },
+    {
+      "lemma": "believing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "believing.n.01"
+        }
+      ],
+      "definition": "the cognitive process that leads to convictions"
+    },
+    {
+      "lemma": "billing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "request.n.02",
+          "via_synset": "charge.n.11"
+        }
+      ],
+      "definition": "request for payment of a debt"
+    },
+    {
+      "lemma": "call",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "request.n.02",
+          "via_synset": "call.n.09"
+        }
+      ],
+      "definition": "a request"
+    },
+    {
+      "lemma": "call back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "recall.n.01",
+          "via_synset": "recall.v.07"
+        }
+      ],
+      "definition": "cause to be returned"
+    },
+    {
+      "lemma": "callback",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "recall.n.01",
+          "via_synset": "recall.n.01"
+        }
+      ],
+      "definition": "a request by the manufacturer of a defective product to return the product (as for replacement or repair)"
+    },
+    {
+      "lemma": "categorisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "classification.n.03"
+        }
+      ],
+      "definition": "the basic cognitive process of arranging into classes or categories"
+    },
+    {
+      "lemma": "categorization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "classification.n.03"
+        }
+      ],
+      "definition": "the basic cognitive process of arranging into classes or categories"
+    },
+    {
+      "lemma": "charge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "request.n.02",
+          "via_synset": "charge.n.11"
+        }
+      ],
+      "definition": "request for payment of a debt"
+    },
+    {
+      "lemma": "classification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "classification.n.03"
+        }
+      ],
+      "definition": "the basic cognitive process of arranging into classes or categories"
+    },
+    {
+      "lemma": "cognitive psychology",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "memory.n.05",
+          "via_synset": "cognitive_psychology.n.01"
+        }
+      ],
+      "definition": "an approach to psychology that emphasizes internal mental processes"
+    },
+    {
+      "lemma": "colligate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "colligation.n.02",
+          "via_synset": "associate.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "colligation.n.02",
+          "via_synset": "subsume.v.02"
+        }
+      ],
+      "definition": "make a logical or causal connection"
+    },
+    {
+      "lemma": "colligation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "association.n.04",
+          "via_synset": "colligation.n.02"
+        }
+      ],
+      "definition": "the connection of isolated facts by a general hypothesis"
+    },
+    {
+      "lemma": "commemorate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "commemorate.v.02",
+          "via_synset": "commemorate.v.02"
+        }
+      ],
+      "definition": "call to remembrance; keep alive the memory of someone or something, as in a ceremony"
+    },
+    {
+      "lemma": "commemoration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "commemorate.v.02",
+          "via_synset": "commemoration.n.01"
+        }
+      ],
+      "definition": "a ceremony to honor the memory of someone or something"
+    },
+    {
+      "lemma": "commemorative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "commemorate.v.02",
+          "via_synset": "commemorative.a.01"
+        }
+      ],
+      "definition": "intended as a commemoration"
+    },
+    {
+      "lemma": "connect",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "association.n.04",
+          "via_synset": "associate.v.01"
+        }
+      ],
+      "definition": "make a logical or causal connection"
+    },
+    {
+      "lemma": "connection",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memory.n.02",
+          "via_synset": "association.n.04"
+        }
+      ],
+      "definition": "the process of bringing ideas or events together in memory or imagination"
+    },
+    {
+      "lemma": "connexion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memory.n.02",
+          "via_synset": "association.n.04"
+        }
+      ],
+      "definition": "the process of bringing ideas or events together in memory or imagination"
+    },
+    {
+      "lemma": "discrimination",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "discrimination.n.02"
+        }
+      ],
+      "definition": "the cognitive process whereby two or more stimuli are distinguished"
+    },
+    {
+      "lemma": "entreaty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "request.n.02",
+          "via_synset": "entreaty.n.01"
+        }
+      ],
+      "definition": "earnest or urgent request"
+    },
+    {
+      "lemma": "episodic memory",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "long-term_memory.n.01",
+          "via_synset": "episodic_memory.n.01"
+        }
+      ],
+      "definition": "memory for episodes in your own life"
+    },
+    {
+      "lemma": "faculty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "memory.n.03",
+          "via_synset": "faculty.n.01"
+        }
+      ],
+      "definition": "one of the inherent cognitive or perceptual powers of the mind"
+    },
+    {
+      "lemma": "generalisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "colligation.n.02",
+          "via_synset": "generalization.n.01"
+        }
+      ],
+      "definition": "reasoning from detailed facts to general principles"
+    },
+    {
+      "lemma": "generalization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "colligation.n.02",
+          "via_synset": "generalization.n.01"
+        }
+      ],
+      "definition": "reasoning from detailed facts to general principles"
+    },
+    {
+      "lemma": "identification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memory.n.02",
+          "via_synset": "recognition.n.02"
+        }
+      ],
+      "definition": "the process of recognizing something or someone by remembering"
+    },
+    {
+      "lemma": "identify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "identity.n.02",
+          "via_synset": "name.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "identity.n.02",
+          "via_synset": "identify.v.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "identity.n.02",
+          "via_synset": "identify.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "recognition.n.02",
+          "via_synset": "identify.v.01"
+        }
+      ],
+      "definition": "give the name or identifying characteristics of; refer to by name or some other identifying characteristic property"
+    },
+    {
+      "lemma": "identity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "recognition.n.02",
+          "via_synset": "identity.n.02"
+        }
+      ],
+      "definition": "the individual characteristics by which a thing or person is recognized or known"
+    },
+    {
+      "lemma": "immediate memory",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memory.n.02",
+          "via_synset": "short-term_memory.n.01"
+        }
+      ],
+      "definition": "what you can repeat immediately after perceiving it"
+    },
+    {
+      "lemma": "inattention",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "inattention.n.01"
+        }
+      ],
+      "definition": "lack of attention"
+    },
+    {
+      "lemma": "indirect request",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "request.n.02",
+          "via_synset": "wish.n.02"
+        }
+      ],
+      "definition": "an expression of some desire or inclination"
+    },
+    {
+      "lemma": "induction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "colligation.n.02",
+          "via_synset": "generalization.n.01"
+        }
+      ],
+      "definition": "reasoning from detailed facts to general principles"
+    },
+    {
+      "lemma": "inductive reasoning",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "colligation.n.02",
+          "via_synset": "generalization.n.01"
+        }
+      ],
+      "definition": "reasoning from detailed facts to general principles"
+    },
+    {
+      "lemma": "inquiring",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "request.n.02",
+          "via_synset": "questioning.n.01"
+        }
+      ],
+      "definition": "a request for information"
+    },
+    {
+      "lemma": "intellect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "faculty.n.01",
+          "via_synset": "reason.n.03"
+        }
+      ],
+      "definition": "the capacity for rational thought or inference or discrimination"
+    },
+    {
+      "lemma": "intuition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "intuition.n.01"
+        }
+      ],
+      "definition": "instinctive knowing (without the use of rational processes)"
+    },
+    {
+      "lemma": "invitation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "request.n.02",
+          "via_synset": "invitation.n.01"
+        }
+      ],
+      "definition": "a request (spoken or written) to participate or be present or take part in something"
+    },
+    {
+      "lemma": "language",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "faculty.n.01",
+          "via_synset": "language.n.05"
+        }
+      ],
+      "definition": "the mental faculty or power of vocal communication"
+    },
+    {
+      "lemma": "learning",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "learning.n.01"
+        }
+      ],
+      "definition": "the cognitive process of acquiring skill or knowledge"
+    },
+    {
+      "lemma": "long-term memory",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memory.n.02",
+          "via_synset": "long-term_memory.n.01"
+        }
+      ],
+      "definition": "your general store of remembered information"
+    },
+    {
+      "lemma": "look back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "remember.v.03",
+          "via_synset": "review.v.05"
+        }
+      ],
+      "definition": "look back upon (a period of time, sequence of events); remember"
+    },
+    {
+      "lemma": "LTM",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memory.n.02",
+          "via_synset": "long-term_memory.n.01"
+        }
+      ],
+      "definition": "your general store of remembered information"
+    },
+    {
+      "lemma": "memorize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "memory.n.03",
+          "via_synset": "memorize.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "memory.n.02",
+          "via_synset": "memorize.v.01"
+        }
+      ],
+      "definition": "commit to memory; learn by heart"
+    },
+    {
+      "lemma": "memory",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "memory.n.03",
+          "via_synset": "memory.n.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "memory.n.05",
+          "via_synset": "memory.n.05"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "memory.n.02",
+          "via_synset": "memory.n.02"
+        }
+      ],
+      "definition": "the power of retaining and recalling past experience"
+    },
+    {
+      "lemma": "mental faculty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "memory.n.03",
+          "via_synset": "faculty.n.01"
+        }
+      ],
+      "definition": "one of the inherent cognitive or perceptual powers of the mind"
+    },
+    {
+      "lemma": "mind",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "recall.n.04",
+          "via_synset": "mind.n.02"
+        }
+      ],
+      "definition": "recall or remembrance"
+    },
+    {
+      "lemma": "mind",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mind.n.02",
+          "via_synset": "mind.v.06"
+        }
+      ],
+      "definition": "keep in mind"
+    },
+    {
+      "lemma": "module",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "memory.n.03",
+          "via_synset": "faculty.n.01"
+        }
+      ],
+      "definition": "one of the inherent cognitive or perceptual powers of the mind"
+    },
+    {
+      "lemma": "motor memory",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "long-term_memory.n.01",
+          "via_synset": "motor_memory.n.01"
+        }
+      ],
+      "definition": "your memory for motor skills"
+    },
+    {
+      "lemma": "muscle memory",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "long-term_memory.n.01",
+          "via_synset": "motor_memory.n.01"
+        }
+      ],
+      "definition": "your memory for motor skills"
+    },
+    {
+      "lemma": "notice",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "request.n.02",
+          "via_synset": "notification.n.03"
+        }
+      ],
+      "definition": "a request for payment"
+    },
+    {
+      "lemma": "notification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "request.n.02",
+          "via_synset": "notification.n.03"
+        }
+      ],
+      "definition": "a request for payment"
+    },
+    {
+      "lemma": "order",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "request.n.02",
+          "via_synset": "order.n.13"
+        }
+      ],
+      "definition": "a request for something to be made, supplied, or served"
+    },
+    {
+      "lemma": "orison",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "request.n.02",
+          "via_synset": "prayer.n.02"
+        }
+      ],
+      "definition": "reverent petition to a deity"
+    },
+    {
+      "lemma": "perception",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "perception.n.03"
+        }
+      ],
+      "definition": "the process of perceiving"
+    },
+    {
+      "lemma": "personal memory",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "long-term_memory.n.01",
+          "via_synset": "episodic_memory.n.01"
+        }
+      ],
+      "definition": "memory for episodes in your own life"
+    },
+    {
+      "lemma": "petition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "request.n.02",
+          "via_synset": "prayer.n.02"
+        }
+      ],
+      "definition": "reverent petition to a deity"
+    },
+    {
+      "lemma": "prayer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "request.n.02",
+          "via_synset": "prayer.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "request.n.02",
+          "via_synset": "entreaty.n.01"
+        }
+      ],
+      "definition": "reverent petition to a deity"
+    },
+    {
+      "lemma": "problem solving",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_psychology.n.01",
+          "via_synset": "problem_solving.n.01"
+        }
+      ],
+      "definition": "the area of cognitive psychology that studies the processes involved in solving problems"
+    },
+    {
+      "lemma": "psycholinguistics",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_psychology.n.01",
+          "via_synset": "psycholinguistics.n.01"
+        }
+      ],
+      "definition": "the branch of cognitive psychology that studies the psychological basis of linguistic competence and performance"
+    },
+    {
+      "lemma": "questioning",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "request.n.02",
+          "via_synset": "questioning.n.01"
+        }
+      ],
+      "definition": "a request for information"
+    },
+    {
+      "lemma": "reason",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "faculty.n.01",
+          "via_synset": "reason.n.03"
+        }
+      ],
+      "definition": "the capacity for rational thought or inference or discrimination"
+    },
+    {
+      "lemma": "recall",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "recall.n.01",
+          "via_synset": "recall.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memory.n.02",
+          "via_synset": "recall.n.04"
+        }
+      ],
+      "definition": "a request by the manufacturer of a defective product to return the product (as for replacement or repair)"
+    },
+    {
+      "lemma": "recall",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "recall.n.04",
+          "via_synset": "remember.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "recall.n.01",
+          "via_synset": "recall.v.06"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "recall.n.01",
+          "via_synset": "recall.v.07"
+        }
+      ],
+      "definition": "recall knowledge from memory; have a recollection"
+    },
+    {
+      "lemma": "recognition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memory.n.02",
+          "via_synset": "recognition.n.02"
+        }
+      ],
+      "definition": "the process of recognizing something or someone by remembering"
+    },
+    {
+      "lemma": "recognize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "recognition.n.02",
+          "via_synset": "recognize.v.04"
+        }
+      ],
+      "definition": "perceive to be the same"
+    },
+    {
+      "lemma": "recollect",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "recall.n.04",
+          "via_synset": "remember.v.01"
+        }
+      ],
+      "definition": "recall knowledge from memory; have a recollection"
+    },
+    {
+      "lemma": "recollection",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memory.n.03",
+          "via_synset": "remembrance.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memory.n.02",
+          "via_synset": "recall.n.04"
+        }
+      ],
+      "definition": "the ability to recall past occurrences"
+    },
+    {
+      "lemma": "reconstruct",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reconstruction.n.04",
+          "via_synset": "reconstruct.v.01"
+        }
+      ],
+      "definition": "reassemble mentally"
+    },
+    {
+      "lemma": "reconstruction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "recall.n.04",
+          "via_synset": "reconstruction.n.04"
+        }
+      ],
+      "definition": "recall that is hypothesized to work by storing abstract features which are then used to construct the memory during recall"
+    },
+    {
+      "lemma": "reconstructive memory",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "recall.n.04",
+          "via_synset": "reconstruction.n.04"
+        }
+      ],
+      "definition": "recall that is hypothesized to work by storing abstract features which are then used to construct the memory during recall"
+    },
+    {
+      "lemma": "regurgitate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "regurgitation.n.02",
+          "via_synset": "regurgitate.v.03"
+        }
+      ],
+      "definition": "repeat after memorization"
+    },
+    {
+      "lemma": "regurgitation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "recall.n.04",
+          "via_synset": "regurgitation.n.02"
+        }
+      ],
+      "definition": "recall after rote memorization"
+    },
+    {
+      "lemma": "remember",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "commemorate.v.02",
+          "via_synset": "commemorate.v.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "remember.v.03",
+          "via_synset": "remember.v.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remembrance.n.01",
+          "via_synset": "commemorate.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remembrance.n.01",
+          "via_synset": "remember.v.07"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remembrance.n.01",
+          "via_synset": "remember.v.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remembrance.n.01",
+          "via_synset": "remember.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remembrance.n.01",
+          "via_synset": "remember.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "memory.n.02",
+          "via_synset": "remember.v.07"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "memory.n.02",
+          "via_synset": "remember.v.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "memory.n.02",
+          "via_synset": "remember.v.01"
+        }
+      ],
+      "definition": "call to remembrance; keep alive the memory of someone or something, as in a ceremony"
+    },
+    {
+      "lemma": "remembering",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "memory.n.02",
+          "via_synset": "memory.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remember.v.03",
+          "via_synset": "memory.n.02"
+        }
+      ],
+      "definition": "the cognitive processes whereby past experience is remembered"
+    },
+    {
+      "lemma": "remembrance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memory.n.03",
+          "via_synset": "remembrance.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "commemorate.v.02",
+          "via_synset": "remembrance.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "remember.v.03",
+          "via_synset": "remembrance.n.01"
+        }
+      ],
+      "definition": "the ability to recall past occurrences"
+    },
+    {
+      "lemma": "reminisce",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "remember.v.03",
+          "via_synset": "reminisce.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "recall.n.04",
+          "via_synset": "reminisce.v.01"
+        }
+      ],
+      "definition": "recall the past"
+    },
+    {
+      "lemma": "reminiscence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memory.n.02",
+          "via_synset": "recall.n.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reminisce.v.01",
+          "via_synset": "reminiscence.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reminisce.v.01",
+          "via_synset": "recall.n.04"
+        }
+      ],
+      "definition": "the process of remembering (especially the process of recovering information by mental effort)"
+    },
+    {
+      "lemma": "reminiscent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "recall.n.04",
+          "via_synset": "evocative.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reminisce.v.01",
+          "via_synset": "evocative.s.01"
+        }
+      ],
+      "definition": "serving to bring to mind; - Wilder Hobson"
+    },
+    {
+      "lemma": "representational process",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "representational_process.n.01"
+        }
+      ],
+      "definition": "any basic cognitive process in which some entity comes to stand for or represent something else"
+    },
+    {
+      "lemma": "reproduction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "recall.n.04",
+          "via_synset": "reproduction.n.02"
+        }
+      ],
+      "definition": "recall that is hypothesized to work by storing the original stimulus input and reproducing it during recall"
+    },
+    {
+      "lemma": "reproductive memory",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "recall.n.04",
+          "via_synset": "reproduction.n.02"
+        }
+      ],
+      "definition": "recall that is hypothesized to work by storing the original stimulus input and reproducing it during recall"
+    },
+    {
+      "lemma": "request",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "recall.n.01",
+          "via_synset": "request.n.02"
+        }
+      ],
+      "definition": "the verbal act of requesting"
+    },
+    {
+      "lemma": "retain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "memory.n.03",
+          "via_synset": "retain.v.04"
+        }
+      ],
+      "definition": "keep in one's mind"
+    },
+    {
+      "lemma": "retention",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "memory.n.03",
+          "via_synset": "memory.n.03"
+        }
+      ],
+      "definition": "the power of retaining and recalling past experience"
+    },
+    {
+      "lemma": "retentive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "memory.n.03",
+          "via_synset": "retentive.a.01"
+        }
+      ],
+      "definition": "good at remembering"
+    },
+    {
+      "lemma": "retentiveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "memory.n.03",
+          "via_synset": "memory.n.03"
+        }
+      ],
+      "definition": "the power of retaining and recalling past experience"
+    },
+    {
+      "lemma": "retentivity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "memory.n.03",
+          "via_synset": "memory.n.03"
+        }
+      ],
+      "definition": "the power of retaining and recalling past experience"
+    },
+    {
+      "lemma": "retrieval",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memory.n.02",
+          "via_synset": "retrieval.n.02"
+        }
+      ],
+      "definition": "the cognitive operation of accessing information in memory"
+    },
+    {
+      "lemma": "retrieve",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "retrieval.n.02",
+          "via_synset": "remember.v.01"
+        }
+      ],
+      "definition": "recall knowledge from memory; have a recollection"
+    },
+    {
+      "lemma": "retrospect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "review.v.05",
+          "via_synset": "retrospect.n.01"
+        }
+      ],
+      "definition": "contemplation of things past"
+    },
+    {
+      "lemma": "retrospect",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "remember.v.03",
+          "via_synset": "review.v.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "retrospection.n.02",
+          "via_synset": "review.v.05"
+        }
+      ],
+      "definition": "look back upon (a period of time, sequence of events); remember"
+    },
+    {
+      "lemma": "retrospection",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memory.n.02",
+          "via_synset": "retrospection.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "review.v.05",
+          "via_synset": "retrospection.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "review.v.05",
+          "via_synset": "retrospection.n.02"
+        }
+      ],
+      "definition": "memory for experiences that are past"
+    },
+    {
+      "lemma": "retrospective",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "review.v.05",
+          "via_synset": "retrospective.a.01"
+        }
+      ],
+      "definition": "concerned with or related to the past"
+    },
+    {
+      "lemma": "review",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "review.v.05",
+          "via_synset": "recapitulation.n.03"
+        }
+      ],
+      "definition": "a summary at the end that repeats the substance of a longer discussion"
+    },
+    {
+      "lemma": "review",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "remember.v.03",
+          "via_synset": "review.v.05"
+        }
+      ],
+      "definition": "look back upon (a period of time, sequence of events); remember"
+    },
+    {
+      "lemma": "secernment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "discrimination.n.02"
+        }
+      ],
+      "definition": "the cognitive process whereby two or more stimuli are distinguished"
+    },
+    {
+      "lemma": "semantic memory",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "long-term_memory.n.01",
+          "via_synset": "semantic_memory.n.01"
+        }
+      ],
+      "definition": "your memory for meanings and general (impersonal) facts"
+    },
+    {
+      "lemma": "sensation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "faculty.n.01",
+          "via_synset": "sense.n.03"
+        }
+      ],
+      "definition": "the faculty through which the external world is apprehended"
+    },
+    {
+      "lemma": "sense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "faculty.n.01",
+          "via_synset": "sense.n.03"
+        }
+      ],
+      "definition": "the faculty through which the external world is apprehended"
+    },
+    {
+      "lemma": "sensory faculty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "faculty.n.01",
+          "via_synset": "sense.n.03"
+        }
+      ],
+      "definition": "the faculty through which the external world is apprehended"
+    },
+    {
+      "lemma": "sentience",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "faculty.n.01",
+          "via_synset": "sense.n.03"
+        }
+      ],
+      "definition": "the faculty through which the external world is apprehended"
+    },
+    {
+      "lemma": "sentiency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "faculty.n.01",
+          "via_synset": "sense.n.03"
+        }
+      ],
+      "definition": "the faculty through which the external world is apprehended"
+    },
+    {
+      "lemma": "short-term memory",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memory.n.02",
+          "via_synset": "short-term_memory.n.01"
+        }
+      ],
+      "definition": "what you can repeat immediately after perceiving it"
+    },
+    {
+      "lemma": "sorting",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "classification.n.03"
+        }
+      ],
+      "definition": "the basic cognitive process of arranging into classes or categories"
+    },
+    {
+      "lemma": "speaker identification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "recognition.n.02",
+          "via_synset": "speaker_identification.n.01"
+        }
+      ],
+      "definition": "identification of a person from the sound of their voice"
+    },
+    {
+      "lemma": "speech",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "faculty.n.01",
+          "via_synset": "language.n.05"
+        }
+      ],
+      "definition": "the mental faculty or power of vocal communication"
+    },
+    {
+      "lemma": "STM",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memory.n.02",
+          "via_synset": "short-term_memory.n.01"
+        }
+      ],
+      "definition": "what you can repeat immediately after perceiving it"
+    },
+    {
+      "lemma": "talker identification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "recognition.n.02",
+          "via_synset": "speaker_identification.n.01"
+        }
+      ],
+      "definition": "identification of a person from the sound of their voice"
+    },
+    {
+      "lemma": "think back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "remember.v.03",
+          "via_synset": "remember.v.03"
+        }
+      ],
+      "definition": "recapture the past; indulge in memories"
+    },
+    {
+      "lemma": "trick or treat",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "request.n.02",
+          "via_synset": "trick_or_treat.n.01"
+        }
+      ],
+      "definition": "a request by children on Halloween; they pass from door to door asking for goodies and threatening to play tricks on those who refuse"
+    },
+    {
+      "lemma": "understanding",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "faculty.n.01",
+          "via_synset": "reason.n.03"
+        }
+      ],
+      "definition": "the capacity for rational thought or inference or discrimination"
+    },
+    {
+      "lemma": "volition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "faculty.n.01",
+          "via_synset": "volition.n.01"
+        }
+      ],
+      "definition": "the capability of conscious choice and decision and intention; - George Meredith"
+    },
+    {
+      "lemma": "will",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "faculty.n.01",
+          "via_synset": "volition.n.01"
+        }
+      ],
+      "definition": "the capability of conscious choice and decision and intention; - George Meredith"
+    },
+    {
+      "lemma": "wish",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "request.n.02",
+          "via_synset": "wish.n.02"
+        }
+      ],
+      "definition": "an expression of some desire or inclination"
+    },
+    {
+      "lemma": "working memory",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "memory.n.02",
+          "via_synset": "working_memory.n.01"
+        }
+      ],
+      "definition": "memory for intermediate results that must be held during thinking"
+    }
+  ]
+}

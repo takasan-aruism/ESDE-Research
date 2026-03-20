@@ -1,0 +1,5513 @@
+{
+  "atom_id": "WLD.religion",
+  "category": "WLD",
+  "seed_count": 6,
+  "total_keys": 358,
+  "pos_counts": {
+    "n": 322,
+    "adj": 33,
+    "v": 3
+  },
+  "source_counts": {
+    "0_seed": 17,
+    "10_sibling": 75,
+    "2_hypernym_d1": 7,
+    "3_hyponym_d1": 60,
+    "4_hyponym_d2": 121,
+    "5_hyponym_d3": 68,
+    "6_derivational": 76,
+    "7_similar_to": 2
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 14,
+      "words": [
+        "religion(n)",
+        "faith(n)",
+        "religious belief(n)",
+        "organized religion(n)",
+        "trust(n)",
+        "spiritual(n)",
+        "Negro spiritual(n)",
+        "apparitional(adj)",
+        "ghostlike(adj)",
+        "ghostly(adj)",
+        "phantasmal(adj)",
+        "spectral(adj)",
+        "spiritual(adj)",
+        "sacred(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 6,
+      "words": [
+        "theological virtue(n)",
+        "supernatural virtue(n)",
+        "belief(n)",
+        "institution(n)",
+        "establishment(n)",
+        "religious song(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 51,
+      "words": [
+        "cult(n)",
+        "Brahmanism(n)",
+        "Brahminism(n)",
+        "theism(n)",
+        "mysticism(n)",
+        "religious mysticism(n)",
+        "nature worship(n)",
+        "Shinto(n)",
+        "Shintoism(n)",
+        "Bahaism(n)",
+        "Buddhism(n)",
+        "Mithraism(n)",
+        "Mithraicism(n)",
+        "Zoroastrianism(n)",
+        "Mazdaism(n)",
+        "paganism(n)",
+        "pagan religion(n)",
+        "heathenism(n)",
+        "Jainism(n)",
+        "ecclesiasticism(n)",
+        "Christianity(n)",
+        "Christian religion(n)",
+        "Taoism(n)",
+        "Hsuan Chiao(n)",
+        "Hinduism(n)",
+        "Hindooism(n)",
+        "Manichaeism(n)",
+        "Manichaeanism(n)",
+        "cultus(n)",
+        "religious cult(n)",
+        "revealed religion(n)",
+        "apophatism(n)",
+        "Sikhism(n)",
+        "shamanism(n)",
+        "Asian shamanism(n)",
+        "doctrine of analogy(n)",
+        "analogy(n)",
+        "cataphatism(n)",
+        "Wicca(n)",
+        "Khalsa(n)",
+        "Judaism(n)",
+        "Hebraism(n)",
+        "Jewish religion(n)",
+        "church(n)",
+        "Christian church(n)",
+        "Scientology(n)",
+        "Church of Scientology(n)",
+        "sect(n)",
+        "religious sect(n)",
+        "religious order(n)",
+        "established church(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 100,
+      "words": [
+        "pantheism(n)",
+        "polytheism(n)",
+        "monotheism(n)",
+        "quietism(n)",
+        "Sufism(n)",
+        "Lamaism(n)",
+        "Tibetan Buddhism(n)",
+        "Theravada(n)",
+        "Theravada Buddhism(n)",
+        "Zen(n)",
+        "Zen Buddhism(n)",
+        "Tantra(n)",
+        "Tantrism(n)",
+        "Mahayana(n)",
+        "Mahayana Buddhism(n)",
+        "Shingon(n)",
+        "Parsiism(n)",
+        "Parseeism(n)",
+        "druidism(n)",
+        "Donatism(n)",
+        "Protestantism(n)",
+        "Tractarianism(n)",
+        "Puseyism(n)",
+        "Catholicism(n)",
+        "Catholicity(n)",
+        "Adventism(n)",
+        "Second Adventism(n)",
+        "Albigensianism(n)",
+        "Catharism(n)",
+        "Vaishnavism(n)",
+        "Vaisnavism(n)",
+        "Vishnuism(n)",
+        "Shaktism(n)",
+        "Saktism(n)",
+        "Vedism(n)",
+        "Shivaism(n)",
+        "Sivaism(n)",
+        "Vedanta(n)",
+        "Krishnaism(n)",
+        "yoga(n)",
+        "Mimamsa(n)",
+        "Darsana(n)",
+        "cargo cult(n)",
+        "macumba(n)",
+        "Rastafarianism(n)",
+        "voodoo(n)",
+        "vodoun(n)",
+        "voodooism(n)",
+        "hoodooism(n)",
+        "obeah(n)",
+        "obi(n)",
+        "Reform Judaism(n)",
+        "Conservative Judaism(n)",
+        "Orthodox Judaism(n)",
+        "Jewish Orthodoxy(n)",
+        "Catholic Church(n)",
+        "Unification Church(n)",
+        "Nestorian Church(n)",
+        "Protestant Church(n)",
+        "Protestant(n)",
+        "Armenian Church(n)",
+        "Armenian Apostolic Orthodox Church(n)",
+        "Coptic Church(n)",
+        "Religious Society of Friends(n)",
+        "Society of Friends(n)",
+        "Quakers(n)",
+        "High Church(n)",
+        "High Anglican Church(n)",
+        "Sunni(n)",
+        "Sunni Islam(n)",
+        "Waldenses(n)",
+        "Vaudois(n)",
+        "brethren(n)",
+        "Zurvanism(n)",
+        "Amish sect(n)",
+        "Shuha Shinto(n)",
+        "Shua(n)",
+        "Karaites(n)",
+        "order(n)",
+        "monastic order(n)",
+        "Hare Krishna(n)",
+        "International Society for Krishna Consciousness(n)",
+        "ISKCON(n)",
+        "Haredi(n)",
+        "Kokka Shinto(n)",
+        "Kokka(n)",
+        "sisterhood(n)",
+        "Shakers(n)",
+        "United Society of Believers in Christ's Second Appearing(n)",
+        "Abecedarian(n)",
+        "Shiah(n)",
+        "Shia(n)",
+        "Shiah Islam(n)",
+        "Albigenses(n)",
+        "Cathars(n)",
+        "Cathari(n)",
+        "Hinayana(n)",
+        "Rastafari(n)",
+        "Rastas(n)",
+        "Rastafarian(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 65,
+      "words": [
+        "tritheism(n)",
+        "Islam(n)",
+        "Islamism(n)",
+        "Mohammedanism(n)",
+        "Muhammadanism(n)",
+        "Muslimism(n)",
+        "Hinayana Buddhism(n)",
+        "Yogacara(n)",
+        "Baptistic doctrine(n)",
+        "Anglicanism(n)",
+        "Congregationalism(n)",
+        "Mormonism(n)",
+        "Calvinism(n)",
+        "Methodism(n)",
+        "Puritanism(n)",
+        "Christian Science(n)",
+        "Wesleyanism(n)",
+        "Wesleyism(n)",
+        "evangelicalism(n)",
+        "Trinitarianism(n)",
+        "Unitarianism(n)",
+        "fundamentalism(n)",
+        "Arminianism(n)",
+        "pentecostalism(n)",
+        "Lutheranism(n)",
+        "predestinarianism(n)",
+        "Mennonitism(n)",
+        "Presbyterianism(n)",
+        "Anabaptism(n)",
+        "Eastern Catholicism(n)",
+        "Romanism(n)",
+        "Roman Catholicism(n)",
+        "papism(n)",
+        "Seventh-Day Adventism(n)",
+        "hoodoo(n)",
+        "Hasidim(n)",
+        "Hassidim(n)",
+        "Hasidism(n)",
+        "Chasidim(n)",
+        "Chassidim(n)",
+        "Uniat Church(n)",
+        "Uniate Church(n)",
+        "Eastern Church(n)",
+        "Byzantine Church(n)",
+        "Roman Catholic(n)",
+        "Western Church(n)",
+        "Roman Catholic Church(n)",
+        "Church of Rome(n)",
+        "Roman Church(n)",
+        "Orthodox Church(n)",
+        "Orthodox Catholic Church(n)",
+        "Eastern Orthodox Church(n)",
+        "Eastern Orthodox(n)",
+        "Old Catholic Church(n)",
+        "Pentecostal religion(n)",
+        "Carmelite order(n)",
+        "Order of Our Lady of Mount Carmel(n)",
+        "Carthusian order(n)",
+        "Society of Jesus(n)",
+        "Jesuit order(n)",
+        "Benedictine order(n)",
+        "order of Saint Benedict(n)",
+        "Augustinian order(n)",
+        "Dominican order(n)",
+        "Franciscan order(n)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 54,
+      "words": [
+        "pantheistic(adj)",
+        "pantheist(n)",
+        "quietist(n)",
+        "Tantric(adj)",
+        "Tantrist(n)",
+        "sacredness(n)",
+        "yogistic(adj)",
+        "yogic(adj)",
+        "mithraistic(adj)",
+        "Mithraist(n)",
+        "Kokka(adj)",
+        "cultist(n)",
+        "Shaktist(n)",
+        "voodoo(v)",
+        "Shivaist(n)",
+        "Manichean(adj)",
+        "Manichaean(adj)",
+        "Sister(n)",
+        "Zen Buddhist(n)",
+        "Hinayanist(n)",
+        "Shintoistic(adj)",
+        "Shintoist(n)",
+        "Catholic(adj)",
+        "catholicize(v)",
+        "Taoist(n)",
+        "Adventist(n)",
+        "Buddhistic(adj)",
+        "Buddhist(n)",
+        "Mahayanist(n)",
+        "Donatist(n)",
+        "christian(adj)",
+        "theistic(adj)",
+        "theistical(adj)",
+        "theist(n)",
+        "shamanistic(adj)",
+        "ghost(n)",
+        "ghostliness(n)",
+        "phantasma(n)",
+        "spirit(n)",
+        "Lamaist(n)",
+        "religious(adj)",
+        "religionist(n)",
+        "Jainist(n)",
+        "trusty(adj)",
+        "trust(v)",
+        "Vedist(n)",
+        "Judaical(adj)",
+        "polytheistic(adj)",
+        "Albigensian(adj)",
+        "monotheistic(adj)",
+        "monotheist(n)",
+        "sectarian(adj)",
+        "mystic(adj)",
+        "mystical(adj)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 2,
+      "words": [
+        "worthy(adj)",
+        "supernatural(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 66,
+      "words": [
+        "hope(n)",
+        "charity(n)",
+        "brotherly love(n)",
+        "spiritualism(n)",
+        "totemism(n)",
+        "expectation(n)",
+        "outlook(n)",
+        "prospect(n)",
+        "supremacism(n)",
+        "individualism(n)",
+        "philosophy(n)",
+        "public opinion(n)",
+        "popular opinion(n)",
+        "opinion(n)",
+        "vox populi(n)",
+        "supernaturalism(n)",
+        "values(n)",
+        "autotelism(n)",
+        "vampirism(n)",
+        "pacifism(n)",
+        "pacificism(n)",
+        "doctrine(n)",
+        "philosophical system(n)",
+        "school of thought(n)",
+        "ism(n)",
+        "spiritual being(n)",
+        "supernatural being(n)",
+        "theosophism(n)",
+        "conviction(n)",
+        "strong belief(n)",
+        "article of faith(n)",
+        "suffragism(n)",
+        "thought(n)",
+        "spiritual world(n)",
+        "spiritual domain(n)",
+        "unseen(n)",
+        "superstition(n)",
+        "superstitious notion(n)",
+        "geneticism(n)",
+        "meliorism(n)",
+        "originalism(n)",
+        "tribalism(n)",
+        "revolutionism(n)",
+        "sentiment(n)",
+        "persuasion(n)",
+        "view(n)",
+        "fetishism(n)",
+        "fetichism(n)",
+        "sacerdotalism(n)",
+        "theory(n)",
+        "medical institution(n)",
+        "financial institution(n)",
+        "financial organization(n)",
+        "financial organisation(n)",
+        "vicariate(n)",
+        "vicarship(n)",
+        "educational institution(n)",
+        "company(n)",
+        "academy(n)",
+        "honorary society(n)",
+        "issuer(n)",
+        "hymn(n)",
+        "anthem(n)",
+        "carol(n)",
+        "Christmas carol(n)",
+        "chant(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "Abecedarian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "abecedarian.n.02"
+        }
+      ],
+      "definition": "a 16th century sect of Anabaptists centered in Germany who had an absolute disdain for human knowledge"
+    },
+    {
+      "lemma": "academy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "institution.n.01",
+          "via_synset": "academy.n.02"
+        }
+      ],
+      "definition": "an institution for the advancement of art or science or literature"
+    },
+    {
+      "lemma": "Adventism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "christianity.n.01",
+          "via_synset": "adventism.n.01"
+        }
+      ],
+      "definition": "any Christian religion that believes the second coming of Christ is imminent"
+    },
+    {
+      "lemma": "Adventist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "adventism.n.01",
+          "via_synset": "adventist.n.01"
+        }
+      ],
+      "definition": "a member of Christian denomination that expects the imminent advent of Christ"
+    },
+    {
+      "lemma": "Albigenses",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "albigenses.n.01"
+        }
+      ],
+      "definition": "a Christian religious sect in southern France in the 12th and 13th centuries; believers in Albigensianism"
+    },
+    {
+      "lemma": "Albigensian",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "albigenses.n.01",
+          "via_synset": "albigensian.a.01"
+        }
+      ],
+      "definition": "of or relating to Albigenses or Albigensianism"
+    },
+    {
+      "lemma": "Albigensianism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "christianity.n.01",
+          "via_synset": "albigensianism.n.01"
+        }
+      ],
+      "definition": "a Christian movement considered to be a medieval descendant of Manichaeism in southern France in the 12th and 13th centuries; characterized by dualism (asserted the coexistence of two mutually opposed principles, one good and one evil); was exterminated for heresy during the Inquisition"
+    },
+    {
+      "lemma": "Amish sect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "amish_sect.n.01"
+        }
+      ],
+      "definition": "an orthodox Anabaptist sect separated from the Mennonites in late 17th century; settled chiefly in southeastern Pennsylvania"
+    },
+    {
+      "lemma": "Anabaptism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "anabaptism.n.01"
+        }
+      ],
+      "definition": "a Protestant movement in the 16th century that believed in the primacy of the Bible, baptised only believers, not infants, and believed in complete separation of church and state"
+    },
+    {
+      "lemma": "analogy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "doctrine_of_analogy.n.01"
+        }
+      ],
+      "definition": "the religious belief that between creature and creator no similarity can be found so great but that the dissimilarity is always greater; any analogy between God and humans will always be inadequate"
+    },
+    {
+      "lemma": "Anglicanism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "anglicanism.n.01"
+        }
+      ],
+      "definition": "the faith and doctrine and practice of the Anglican Church"
+    },
+    {
+      "lemma": "anthem",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "religious_song.n.01",
+          "via_synset": "hymn.n.01"
+        }
+      ],
+      "definition": "a song of praise (to God or to a saint or to a nation)"
+    },
+    {
+      "lemma": "apophatism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "apophatism.n.01"
+        }
+      ],
+      "definition": "the religious belief that God cannot be known but is completely `other' and must be described in negative terms (in terms of what God is not)"
+    },
+    {
+      "lemma": "apparitional",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "apparitional.s.01",
+          "via_synset": "apparitional.s.01"
+        }
+      ],
+      "definition": "resembling or characteristic of a phantom"
+    },
+    {
+      "lemma": "Armenian Apostolic Orthodox Church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "church.n.01",
+          "via_synset": "armenian_church.n.01"
+        }
+      ],
+      "definition": "an independent Christian church established in Armenia since 300; was influenced by both Roman and Byzantine traditions"
+    },
+    {
+      "lemma": "Armenian Church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "church.n.01",
+          "via_synset": "armenian_church.n.01"
+        }
+      ],
+      "definition": "an independent Christian church established in Armenia since 300; was influenced by both Roman and Byzantine traditions"
+    },
+    {
+      "lemma": "Arminianism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "arminianism.n.01"
+        }
+      ],
+      "definition": "17th century theology (named after its founder Jacobus Arminius) that opposes the absolute predestinarianism of John Calvin and holds that human free will is compatible with God's sovereignty"
+    },
+    {
+      "lemma": "article of faith",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "conviction.n.01"
+        }
+      ],
+      "definition": "an unshakable belief in something without need for proof or evidence"
+    },
+    {
+      "lemma": "Asian shamanism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "shamanism.n.02"
+        }
+      ],
+      "definition": "an animistic religion of northern Asia having the belief that the mediation between the visible and the spirit worlds is effected by shamans"
+    },
+    {
+      "lemma": "Augustinian order",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "order.n.11",
+          "via_synset": "augustinian_order.n.01"
+        }
+      ],
+      "definition": "any of several monastic orders observing a rule derived from the writings of St. Augustine"
+    },
+    {
+      "lemma": "autotelism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "autotelism.n.01"
+        }
+      ],
+      "definition": "belief that a work of art is an end in itself or its own justification"
+    },
+    {
+      "lemma": "Bahaism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "bahaism.n.01"
+        }
+      ],
+      "definition": "a religion founded in Iran in 1863; emphasizes the spiritual unity of all humankind; incorporates Christian and Islamic tenets; many adherents live in the United States"
+    },
+    {
+      "lemma": "Baptistic doctrine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "baptistic_doctrine.n.01"
+        }
+      ],
+      "definition": "any of various doctrines closely related to Anabaptism"
+    },
+    {
+      "lemma": "belief",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "religion.n.01",
+          "via_synset": "belief.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "faith.n.02",
+          "via_synset": "belief.n.01"
+        }
+      ],
+      "definition": "any cognitive content held as true"
+    },
+    {
+      "lemma": "Benedictine order",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "order.n.11",
+          "via_synset": "benedictine_order.n.01"
+        }
+      ],
+      "definition": "a Roman Catholic monastic order founded in the 6th century; noted for liturgical worship and for scholarly activities"
+    },
+    {
+      "lemma": "Brahmanism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "brahmanism.n.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hinduism.n.01",
+          "via_synset": "brahmanism.n.01"
+        }
+      ],
+      "definition": "the religious beliefs of ancient India as prescribed in the sacred Vedas and Brahmanas and Upanishads"
+    },
+    {
+      "lemma": "Brahminism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "brahmanism.n.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hinduism.n.01",
+          "via_synset": "brahmanism.n.01"
+        }
+      ],
+      "definition": "the religious beliefs of ancient India as prescribed in the sacred Vedas and Brahmanas and Upanishads"
+    },
+    {
+      "lemma": "brethren",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "brethren.n.01"
+        }
+      ],
+      "definition": "(plural) the lay members of a male religious order"
+    },
+    {
+      "lemma": "brotherly love",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "theological_virtue.n.01",
+          "via_synset": "charity.n.02"
+        }
+      ],
+      "definition": "a kindly and lenient attitude toward people"
+    },
+    {
+      "lemma": "Buddhism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "buddhism.n.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.02",
+          "via_synset": "buddhism.n.01"
+        }
+      ],
+      "definition": "the teaching of Buddha that life is permeated with suffering caused by desire, that suffering ceases when desire ceases, and that enlightenment obtained through right conduct and wisdom and meditation releases one from desire and suffering and rebirth"
+    },
+    {
+      "lemma": "Buddhist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "buddhism.n.01",
+          "via_synset": "buddhist.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "buddhism.n.02",
+          "via_synset": "buddhist.n.01"
+        }
+      ],
+      "definition": "one who follows the teachings of Buddha"
+    },
+    {
+      "lemma": "Buddhistic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "buddhism.n.01",
+          "via_synset": "buddhist.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "buddhism.n.02",
+          "via_synset": "buddhist.a.01"
+        }
+      ],
+      "definition": "of or relating to or supporting Buddhism"
+    },
+    {
+      "lemma": "Byzantine Church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "catholic_church.n.01",
+          "via_synset": "eastern_church.n.02"
+        }
+      ],
+      "definition": "the Catholic Church as it existed in the Byzantine Empire"
+    },
+    {
+      "lemma": "Calvinism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "calvinism.n.01"
+        }
+      ],
+      "definition": "the theological system of John Calvin and his followers emphasizing omnipotence of God and salvation by grace alone"
+    },
+    {
+      "lemma": "cargo cult",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "cult.n.05",
+          "via_synset": "cargo_cult.n.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "cult.n.03",
+          "via_synset": "cargo_cult.n.01"
+        }
+      ],
+      "definition": "a religious cult that anticipates a time of joy, serenity, and justice when salvation comes"
+    },
+    {
+      "lemma": "Carmelite order",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "order.n.11",
+          "via_synset": "carmelite_order.n.01"
+        }
+      ],
+      "definition": "a Roman Catholic mendicant order founded in the 12th century"
+    },
+    {
+      "lemma": "carol",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "religious_song.n.01",
+          "via_synset": "carol.n.01"
+        }
+      ],
+      "definition": "joyful religious song celebrating the birth of Christ"
+    },
+    {
+      "lemma": "Carthusian order",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "order.n.11",
+          "via_synset": "carthusian_order.n.01"
+        }
+      ],
+      "definition": "an austere contemplative Roman Catholic order founded by St. Bruno in 1084"
+    },
+    {
+      "lemma": "cataphatism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "cataphatism.n.01"
+        }
+      ],
+      "definition": "the religious belief that God has given enough clues to be known to humans positively and affirmatively (e.g., God created Adam `in his own image')"
+    },
+    {
+      "lemma": "Cathari",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "albigenses.n.01"
+        }
+      ],
+      "definition": "a Christian religious sect in southern France in the 12th and 13th centuries; believers in Albigensianism"
+    },
+    {
+      "lemma": "Catharism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "christianity.n.01",
+          "via_synset": "albigensianism.n.01"
+        }
+      ],
+      "definition": "a Christian movement considered to be a medieval descendant of Manichaeism in southern France in the 12th and 13th centuries; characterized by dualism (asserted the coexistence of two mutually opposed principles, one good and one evil); was exterminated for heresy during the Inquisition"
+    },
+    {
+      "lemma": "Cathars",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "albigenses.n.01"
+        }
+      ],
+      "definition": "a Christian religious sect in southern France in the 12th and 13th centuries; believers in Albigensianism"
+    },
+    {
+      "lemma": "Catholic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "catholicism.n.01",
+          "via_synset": "catholic.a.01"
+        }
+      ],
+      "definition": "of or relating to or supporting Catholicism"
+    },
+    {
+      "lemma": "Catholic Church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "church.n.01",
+          "via_synset": "catholic_church.n.01"
+        }
+      ],
+      "definition": "any of several churches claiming to have maintained historical continuity with the original Christian Church"
+    },
+    {
+      "lemma": "Catholicism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "christianity.n.01",
+          "via_synset": "catholicism.n.01"
+        }
+      ],
+      "definition": "the beliefs and practices of a Catholic Church"
+    },
+    {
+      "lemma": "Catholicity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "christianity.n.01",
+          "via_synset": "catholicism.n.01"
+        }
+      ],
+      "definition": "the beliefs and practices of a Catholic Church"
+    },
+    {
+      "lemma": "catholicize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "catholicism.n.01",
+          "via_synset": "catholicize.v.01"
+        }
+      ],
+      "definition": "cause to adopt Catholicism"
+    },
+    {
+      "lemma": "chant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "religious_song.n.01",
+          "via_synset": "chant.n.01"
+        }
+      ],
+      "definition": "a repetitive song in which as many syllables as necessary are assigned to a single tone"
+    },
+    {
+      "lemma": "charity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "theological_virtue.n.01",
+          "via_synset": "charity.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "institution.n.01",
+          "via_synset": "charity.n.05"
+        }
+      ],
+      "definition": "a kindly and lenient attitude toward people"
+    },
+    {
+      "lemma": "Chasidim",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "orthodox_judaism.n.01",
+          "via_synset": "hasidim.n.01"
+        }
+      ],
+      "definition": "a sect of Orthodox Jews that arose out of a pietistic movement originating in eastern Europe in the second half of the 18th century; a sect that follows the Mosaic law strictly"
+    },
+    {
+      "lemma": "Chassidim",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "orthodox_judaism.n.01",
+          "via_synset": "hasidim.n.01"
+        }
+      ],
+      "definition": "a sect of Orthodox Jews that arose out of a pietistic movement originating in eastern Europe in the second half of the 18th century; a sect that follows the Mosaic law strictly"
+    },
+    {
+      "lemma": "christian",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "christianity.n.01",
+          "via_synset": "christian.a.02"
+        }
+      ],
+      "definition": "following the teachings or manifesting the qualities or spirit of Jesus Christ"
+    },
+    {
+      "lemma": "Christian church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.02",
+          "via_synset": "church.n.01"
+        }
+      ],
+      "definition": "one of the groups of Christians who have their own beliefs and forms of worship"
+    },
+    {
+      "lemma": "Christian religion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "christianity.n.01"
+        }
+      ],
+      "definition": "a monotheistic system of beliefs and practices based on the Old Testament and the teachings of Jesus as embodied in the New Testament and emphasizing the role of Jesus as savior"
+    },
+    {
+      "lemma": "Christian Science",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "christian_science.n.02"
+        }
+      ],
+      "definition": "religious system based on teachings of Mary Baker Eddy emphasizing spiritual healing"
+    },
+    {
+      "lemma": "Christianity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "christianity.n.01"
+        }
+      ],
+      "definition": "a monotheistic system of beliefs and practices based on the Old Testament and the teachings of Jesus as embodied in the New Testament and emphasizing the role of Jesus as savior"
+    },
+    {
+      "lemma": "Christmas carol",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "religious_song.n.01",
+          "via_synset": "carol.n.01"
+        }
+      ],
+      "definition": "joyful religious song celebrating the birth of Christ"
+    },
+    {
+      "lemma": "church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.02",
+          "via_synset": "church.n.01"
+        }
+      ],
+      "definition": "one of the groups of Christians who have their own beliefs and forms of worship"
+    },
+    {
+      "lemma": "Church of Rome",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "catholic_church.n.01",
+          "via_synset": "roman_catholic.n.02"
+        }
+      ],
+      "definition": "the Christian Church based in the Vatican and presided over by a pope and an episcopal hierarchy"
+    },
+    {
+      "lemma": "Church of Scientology",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.02",
+          "via_synset": "scientology.n.01"
+        }
+      ],
+      "definition": "a new religion founded by L. Ron Hubbard in 1955 and characterized by a belief in the power of a person's spirit to clear itself of past painful experiences through self-knowledge and spiritual fulfillment"
+    },
+    {
+      "lemma": "company",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "institution.n.01",
+          "via_synset": "company.n.01"
+        }
+      ],
+      "definition": "an institution created to conduct business"
+    },
+    {
+      "lemma": "Congregationalism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "congregationalism.n.01"
+        }
+      ],
+      "definition": "system of beliefs and church government of a Protestant denomination in which each member church is self-governing"
+    },
+    {
+      "lemma": "Conservative Judaism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "judaism.n.01",
+          "via_synset": "conservative_judaism.n.01"
+        }
+      ],
+      "definition": "Jews who keep some of the requirements of the Mosaic law but allow for adaptation of other requirements (as some of the dietary laws) to fit modern circumstances"
+    },
+    {
+      "lemma": "conviction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "conviction.n.01"
+        }
+      ],
+      "definition": "an unshakable belief in something without need for proof or evidence"
+    },
+    {
+      "lemma": "Coptic Church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "church.n.01",
+          "via_synset": "coptic_church.n.01"
+        }
+      ],
+      "definition": "the ancient Christian church of Egypt"
+    },
+    {
+      "lemma": "cult",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "cult.n.04"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "cult.n.05"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.02",
+          "via_synset": "cult.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.02",
+          "via_synset": "cult.n.03"
+        }
+      ],
+      "definition": "a religion or sect that is generally considered to be unorthodox, extremist, or false"
+    },
+    {
+      "lemma": "cultist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cult.n.03",
+          "via_synset": "cultist.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cult.n.01",
+          "via_synset": "cultist.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cult.n.05",
+          "via_synset": "cultist.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cult.n.04",
+          "via_synset": "cultist.n.02"
+        }
+      ],
+      "definition": "a member of an unorthodox cult who generally lives outside of conventional society under the direction of a charismatic leader"
+    },
+    {
+      "lemma": "cultus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "cult.n.05"
+        }
+      ],
+      "definition": "a system of religious beliefs and rituals"
+    },
+    {
+      "lemma": "Darsana",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hinduism.n.02",
+          "via_synset": "darsana.n.01"
+        }
+      ],
+      "definition": "(from the Sanskrit word for `to see') one of six orthodox philosophical systems or viewpoints on the nature of reality and the release from bondage to karma"
+    },
+    {
+      "lemma": "doctrine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "doctrine.n.01"
+        }
+      ],
+      "definition": "a belief (or system of beliefs) accepted as authoritative by some group or school"
+    },
+    {
+      "lemma": "doctrine of analogy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "doctrine_of_analogy.n.01"
+        }
+      ],
+      "definition": "the religious belief that between creature and creator no similarity can be found so great but that the dissimilarity is always greater; any analogy between God and humans will always be inadequate"
+    },
+    {
+      "lemma": "Dominican order",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "order.n.11",
+          "via_synset": "dominican_order.n.01"
+        }
+      ],
+      "definition": "a Roman Catholic order of mendicant preachers founded in the 13th century"
+    },
+    {
+      "lemma": "Donatism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "christianity.n.01",
+          "via_synset": "donatism.n.01"
+        }
+      ],
+      "definition": "a schismatic Christian religion in northern Africa from the 4th to the 7th century; held that only those who led a blameless life belonged in the church or could administer the sacraments"
+    },
+    {
+      "lemma": "Donatist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "donatism.n.01",
+          "via_synset": "donatist.n.01"
+        }
+      ],
+      "definition": "an adherent of Donatism"
+    },
+    {
+      "lemma": "druidism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "paganism.n.01",
+          "via_synset": "druidism.n.01"
+        }
+      ],
+      "definition": "the system of religion and philosophy taught by the Druids and their rites and ceremonies"
+    },
+    {
+      "lemma": "Eastern Catholicism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "catholicism.n.01",
+          "via_synset": "eastern_catholicism.n.01"
+        }
+      ],
+      "definition": "the beliefs and practices of any of the eastern Catholic Churches based in Constantinople or Antioch or Alexandria or Moscow or Jerusalem"
+    },
+    {
+      "lemma": "Eastern Church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "catholic_church.n.01",
+          "via_synset": "eastern_church.n.02"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "catholic_church.n.01",
+          "via_synset": "orthodox_church.n.01"
+        }
+      ],
+      "definition": "the Catholic Church as it existed in the Byzantine Empire"
+    },
+    {
+      "lemma": "Eastern Orthodox",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "catholic_church.n.01",
+          "via_synset": "orthodox_church.n.01"
+        }
+      ],
+      "definition": "derived from the Byzantine Church and adhering to Byzantine rites"
+    },
+    {
+      "lemma": "Eastern Orthodox Church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "catholic_church.n.01",
+          "via_synset": "orthodox_church.n.01"
+        }
+      ],
+      "definition": "derived from the Byzantine Church and adhering to Byzantine rites"
+    },
+    {
+      "lemma": "ecclesiasticism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "ecclesiasticism.n.02"
+        }
+      ],
+      "definition": "religion appropriate to a church and to ecclesiastical principles and practices"
+    },
+    {
+      "lemma": "educational institution",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "institution.n.01",
+          "via_synset": "educational_institution.n.01"
+        }
+      ],
+      "definition": "an institution dedicated to education"
+    },
+    {
+      "lemma": "established church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.02",
+          "via_synset": "established_church.n.01"
+        }
+      ],
+      "definition": "the church that is recognized as the official church of a nation"
+    },
+    {
+      "lemma": "establishment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "religion.n.02",
+          "via_synset": "institution.n.01"
+        }
+      ],
+      "definition": "an organization founded and united for a specific purpose"
+    },
+    {
+      "lemma": "evangelicalism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "evangelicalism.n.01"
+        }
+      ],
+      "definition": "stresses the importance of personal conversion and faith as the means of salvation"
+    },
+    {
+      "lemma": "expectation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "expectation.n.01"
+        }
+      ],
+      "definition": "belief about (or mental picture of) the future"
+    },
+    {
+      "lemma": "faith",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "religion.n.01",
+          "via_synset": "religion.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "religion.n.02",
+          "via_synset": "religion.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "faith.n.02",
+          "via_synset": "faith.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "faith.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "religion.n.01"
+        }
+      ],
+      "definition": "a strong belief in a supernatural power or powers that control human destiny"
+    },
+    {
+      "lemma": "fetichism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "fetishism.n.01"
+        }
+      ],
+      "definition": "a belief in the magical power of fetishes (or the worship of a fetish)"
+    },
+    {
+      "lemma": "fetishism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "fetishism.n.01"
+        }
+      ],
+      "definition": "a belief in the magical power of fetishes (or the worship of a fetish)"
+    },
+    {
+      "lemma": "financial institution",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "institution.n.01",
+          "via_synset": "financial_institution.n.01"
+        }
+      ],
+      "definition": "an institution (public or private) that collects funds (from the public or other institutions) and invests them in financial assets"
+    },
+    {
+      "lemma": "financial organisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "institution.n.01",
+          "via_synset": "financial_institution.n.01"
+        }
+      ],
+      "definition": "an institution (public or private) that collects funds (from the public or other institutions) and invests them in financial assets"
+    },
+    {
+      "lemma": "financial organization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "institution.n.01",
+          "via_synset": "financial_institution.n.01"
+        }
+      ],
+      "definition": "an institution (public or private) that collects funds (from the public or other institutions) and invests them in financial assets"
+    },
+    {
+      "lemma": "Franciscan order",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "order.n.11",
+          "via_synset": "franciscan_order.n.01"
+        }
+      ],
+      "definition": "a Roman Catholic order founded by Saint Francis of Assisi in the 13th century"
+    },
+    {
+      "lemma": "fundamentalism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "fundamentalism.n.01"
+        }
+      ],
+      "definition": "the interpretation of every word in the sacred texts as literal truth"
+    },
+    {
+      "lemma": "geneticism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "geneticism.n.01"
+        }
+      ],
+      "definition": "the belief that all human characteristics are determined genetically"
+    },
+    {
+      "lemma": "ghost",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apparitional.s.01",
+          "via_synset": "ghost.n.03"
+        }
+      ],
+      "definition": "the visible disembodied soul of a dead person"
+    },
+    {
+      "lemma": "ghostlike",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "apparitional.s.01",
+          "via_synset": "apparitional.s.01"
+        }
+      ],
+      "definition": "resembling or characteristic of a phantom"
+    },
+    {
+      "lemma": "ghostliness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apparitional.s.01",
+          "via_synset": "eeriness.n.01"
+        }
+      ],
+      "definition": "strangeness by virtue of being mysterious and inspiring fear"
+    },
+    {
+      "lemma": "ghostly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "apparitional.s.01",
+          "via_synset": "apparitional.s.01"
+        }
+      ],
+      "definition": "resembling or characteristic of a phantom"
+    },
+    {
+      "lemma": "Hare Krishna",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "hare_krishna.n.02"
+        }
+      ],
+      "definition": "a religious sect founded in the United States in 1966; based on Vedic scriptures; groups engage in joyful chanting of `Hare Krishna' and other mantras based on the name of the Hindu god Krishna; devotees usually wear saffron robes and practice vegetarianism and celibacy"
+    },
+    {
+      "lemma": "Haredi",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "haredi.n.01"
+        }
+      ],
+      "definition": "any of several sects of Orthodox Judaism that reject modern secular culture and many of whom do not recognize the spiritual authority of the modern state of Israel"
+    },
+    {
+      "lemma": "Hasidim",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "orthodox_judaism.n.01",
+          "via_synset": "hasidim.n.01"
+        }
+      ],
+      "definition": "a sect of Orthodox Jews that arose out of a pietistic movement originating in eastern Europe in the second half of the 18th century; a sect that follows the Mosaic law strictly"
+    },
+    {
+      "lemma": "Hasidism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "orthodox_judaism.n.01",
+          "via_synset": "hasidim.n.01"
+        }
+      ],
+      "definition": "a sect of Orthodox Jews that arose out of a pietistic movement originating in eastern Europe in the second half of the 18th century; a sect that follows the Mosaic law strictly"
+    },
+    {
+      "lemma": "Hassidim",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "orthodox_judaism.n.01",
+          "via_synset": "hasidim.n.01"
+        }
+      ],
+      "definition": "a sect of Orthodox Jews that arose out of a pietistic movement originating in eastern Europe in the second half of the 18th century; a sect that follows the Mosaic law strictly"
+    },
+    {
+      "lemma": "heathenism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "paganism.n.01"
+        }
+      ],
+      "definition": "any of various religions other than Christianity or Judaism or Islamism"
+    },
+    {
+      "lemma": "Hebraism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.02",
+          "via_synset": "judaism.n.01"
+        }
+      ],
+      "definition": "Jews collectively who practice a religion based on the Torah and the Talmud"
+    },
+    {
+      "lemma": "High Anglican Church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "high_church.n.01"
+        }
+      ],
+      "definition": "a group in the Anglican Church that emphasizes the Catholic tradition (especially in sacraments and rituals and obedience to church authority)"
+    },
+    {
+      "lemma": "High Church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "high_church.n.01"
+        }
+      ],
+      "definition": "a group in the Anglican Church that emphasizes the Catholic tradition (especially in sacraments and rituals and obedience to church authority)"
+    },
+    {
+      "lemma": "Hinayana",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "buddhism.n.01",
+          "via_synset": "hinayana.n.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "theravada.n.01",
+          "via_synset": "hinayana.n.02"
+        }
+      ],
+      "definition": "a major school of Buddhism teaching personal salvation through one's own efforts"
+    },
+    {
+      "lemma": "Hinayana Buddhism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "theravada.n.01",
+          "via_synset": "hinayana.n.02"
+        }
+      ],
+      "definition": "an offensive name for the early conservative Theravada Buddhism; it died out in India but survived in Sri Lanka and was taken from there to other regions of southwestern Asia"
+    },
+    {
+      "lemma": "Hinayanist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hinayana.n.01",
+          "via_synset": "hinayanist.n.01"
+        }
+      ],
+      "definition": "an adherent of Hinayana Buddhism"
+    },
+    {
+      "lemma": "Hindooism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "hinduism.n.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.02",
+          "via_synset": "hinduism.n.01"
+        }
+      ],
+      "definition": "a body of religious and philosophical beliefs and cultural practices native to India and based on a caste system; it is characterized by a belief in reincarnation, by a belief in a supreme being of many forms and natures, by the view that opposing theories are aspects of one eternal truth, and by a desire for liberation from earthly evils"
+    },
+    {
+      "lemma": "Hinduism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "hinduism.n.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.02",
+          "via_synset": "hinduism.n.01"
+        }
+      ],
+      "definition": "a body of religious and philosophical beliefs and cultural practices native to India and based on a caste system; it is characterized by a belief in reincarnation, by a belief in a supreme being of many forms and natures, by the view that opposing theories are aspects of one eternal truth, and by a desire for liberation from earthly evils"
+    },
+    {
+      "lemma": "honorary society",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "institution.n.01",
+          "via_synset": "academy.n.02"
+        }
+      ],
+      "definition": "an institution for the advancement of art or science or literature"
+    },
+    {
+      "lemma": "hoodoo",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "voodoo.n.03",
+          "via_synset": "hoodoo.n.02"
+        }
+      ],
+      "definition": "a practitioner of voodoo"
+    },
+    {
+      "lemma": "hoodooism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "cult.n.05",
+          "via_synset": "voodoo.n.03"
+        }
+      ],
+      "definition": "a religious cult practiced chiefly in Caribbean countries (especially Haiti); involves witchcraft and animistic deities"
+    },
+    {
+      "lemma": "hope",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "theological_virtue.n.01",
+          "via_synset": "hope.n.06"
+        }
+      ],
+      "definition": "one of the three Christian virtues"
+    },
+    {
+      "lemma": "Hsuan Chiao",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "taoism.n.03"
+        }
+      ],
+      "definition": "popular Chinese philosophical system based in teachings of Lao-tzu but characterized by a pantheism of many gods and the practices of alchemy and divination and magic"
+    },
+    {
+      "lemma": "hymn",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "religious_song.n.01",
+          "via_synset": "hymn.n.01"
+        }
+      ],
+      "definition": "a song of praise (to God or to a saint or to a nation)"
+    },
+    {
+      "lemma": "individualism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "individualism.n.02"
+        }
+      ],
+      "definition": "a belief in the importance of the individual and the virtue of self-reliance and personal independence"
+    },
+    {
+      "lemma": "institution",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "religion.n.02",
+          "via_synset": "institution.n.01"
+        }
+      ],
+      "definition": "an organization founded and united for a specific purpose"
+    },
+    {
+      "lemma": "International Society for Krishna Consciousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "hare_krishna.n.02"
+        }
+      ],
+      "definition": "a religious sect founded in the United States in 1966; based on Vedic scriptures; groups engage in joyful chanting of `Hare Krishna' and other mantras based on the name of the Hindu god Krishna; devotees usually wear saffron robes and practice vegetarianism and celibacy"
+    },
+    {
+      "lemma": "ISKCON",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "hare_krishna.n.02"
+        }
+      ],
+      "definition": "a religious sect founded in the United States in 1966; based on Vedic scriptures; groups engage in joyful chanting of `Hare Krishna' and other mantras based on the name of the Hindu god Krishna; devotees usually wear saffron robes and practice vegetarianism and celibacy"
+    },
+    {
+      "lemma": "Islam",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "monotheism.n.01",
+          "via_synset": "islam.n.02"
+        }
+      ],
+      "definition": "the monotheistic religious system of Muslims founded in Arabia in the 7th century and based on the teachings of Muhammad as laid down in the Koran"
+    },
+    {
+      "lemma": "Islamism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "monotheism.n.01",
+          "via_synset": "islam.n.02"
+        }
+      ],
+      "definition": "the monotheistic religious system of Muslims founded in Arabia in the 7th century and based on the teachings of Muhammad as laid down in the Koran"
+    },
+    {
+      "lemma": "ism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "doctrine.n.01"
+        }
+      ],
+      "definition": "a belief (or system of beliefs) accepted as authoritative by some group or school"
+    },
+    {
+      "lemma": "issuer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "institution.n.01",
+          "via_synset": "issuer.n.01"
+        }
+      ],
+      "definition": "an institution that issues something (securities or publications or currency etc.)"
+    },
+    {
+      "lemma": "Jainism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "jainism.n.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "jainism.n.01"
+        }
+      ],
+      "definition": "religion founded in the 6th century BC as a revolt against Hinduism; emphasizes asceticism and immortality and transmigration of the soul; denies existence of a perfect or supreme being"
+    },
+    {
+      "lemma": "Jainist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "jainism.n.02",
+          "via_synset": "jainist.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "jainism.n.01",
+          "via_synset": "jainist.n.01"
+        }
+      ],
+      "definition": "a believer in Jainism"
+    },
+    {
+      "lemma": "Jesuit order",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "order.n.11",
+          "via_synset": "society_of_jesus.n.01"
+        }
+      ],
+      "definition": "a Roman Catholic order founded by Saint Ignatius of Loyola in 1534 to defend Catholicism against the Reformation and to do missionary work among the heathen; it is strongly committed to education and scholarship"
+    },
+    {
+      "lemma": "Jewish Orthodoxy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "judaism.n.01",
+          "via_synset": "orthodox_judaism.n.01"
+        }
+      ],
+      "definition": "Jews who strictly observe the Mosaic law as interpreted in the Talmud"
+    },
+    {
+      "lemma": "Jewish religion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.02",
+          "via_synset": "judaism.n.01"
+        }
+      ],
+      "definition": "Jews collectively who practice a religion based on the Torah and the Talmud"
+    },
+    {
+      "lemma": "Judaical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "judaism.n.01",
+          "via_synset": "judaic.a.01"
+        }
+      ],
+      "definition": "of or relating to or characteristic of the Jews or their culture or religion"
+    },
+    {
+      "lemma": "Judaism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.02",
+          "via_synset": "judaism.n.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "monotheism.n.01",
+          "via_synset": "judaism.n.02"
+        }
+      ],
+      "definition": "Jews collectively who practice a religion based on the Torah and the Talmud"
+    },
+    {
+      "lemma": "Karaites",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "karaites.n.01"
+        }
+      ],
+      "definition": "a Jewish sect that recognizes only the Hebrew Scriptures as the source of divinely inspired legislation and denies the authority of the postbiblical tradition of the Talmud; the sect arose in Iraq in the eighth century"
+    },
+    {
+      "lemma": "Khalsa",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.02",
+          "via_synset": "khalsa.n.01"
+        }
+      ],
+      "definition": "the group of initiated Sikhs to which devout orthodox Sikhs are ritually admitted at puberty; founded by the tenth and last Guru in 1699"
+    },
+    {
+      "lemma": "Kokka",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "kokka_shinto.n.01",
+          "via_synset": "kokka.a.01"
+        }
+      ],
+      "definition": "of or pertaining to the branch of Shinto recognized as the state religion of Japan"
+    },
+    {
+      "lemma": "Kokka",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "kokka_shinto.n.01"
+        }
+      ],
+      "definition": "the branch of Shinto recognized as the official state religion of Japan"
+    },
+    {
+      "lemma": "Kokka Shinto",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "kokka_shinto.n.01"
+        }
+      ],
+      "definition": "the branch of Shinto recognized as the official state religion of Japan"
+    },
+    {
+      "lemma": "Krishnaism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hinduism.n.02",
+          "via_synset": "krishnaism.n.01"
+        }
+      ],
+      "definition": "worship of Krishna the 8th avatar of Vishnu"
+    },
+    {
+      "lemma": "Lamaism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "buddhism.n.02",
+          "via_synset": "lamaism.n.01"
+        }
+      ],
+      "definition": "a Buddhist doctrine that includes elements from India that are not Buddhist and elements of preexisting shamanism"
+    },
+    {
+      "lemma": "Lamaist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "lamaism.n.01",
+          "via_synset": "lamaist.n.01"
+        }
+      ],
+      "definition": "(Buddhism) an adherent of Lamaism"
+    },
+    {
+      "lemma": "Lutheranism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "lutheranism.n.01"
+        }
+      ],
+      "definition": "teachings of Martin Luther emphasizing the cardinal doctrine of justification by faith alone"
+    },
+    {
+      "lemma": "macumba",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "cult.n.05",
+          "via_synset": "macumba.n.03"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "cult.n.01",
+          "via_synset": "macumba.n.01"
+        }
+      ],
+      "definition": "a Brazilian religious cult of African origin; combines voodoo elements with singing and chanting and dancing"
+    },
+    {
+      "lemma": "Mahayana",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "buddhism.n.02",
+          "via_synset": "mahayana.n.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "buddhism.n.01",
+          "via_synset": "mahayana.n.01"
+        }
+      ],
+      "definition": "one of two great schools of Buddhist doctrine emphasizing a common search for universal salvation especially through faith alone; the dominant religion of China and Tibet and Japan"
+    },
+    {
+      "lemma": "Mahayana Buddhism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "buddhism.n.02",
+          "via_synset": "mahayana.n.02"
+        }
+      ],
+      "definition": "one of two great schools of Buddhist doctrine emphasizing a common search for universal salvation especially through faith alone; the dominant religion of China and Tibet and Japan"
+    },
+    {
+      "lemma": "Mahayanist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mahayana.n.02",
+          "via_synset": "mahayanist.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mahayana.n.01",
+          "via_synset": "mahayanist.n.01"
+        }
+      ],
+      "definition": "an adherent of Mahayana Buddhism"
+    },
+    {
+      "lemma": "Manichaean",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "manichaeism.n.01",
+          "via_synset": "dualistic.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "manichaeism.n.01",
+          "via_synset": "manichaean.a.02"
+        }
+      ],
+      "definition": "of or relating to the philosophical doctrine of dualism"
+    },
+    {
+      "lemma": "Manichaeanism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "manichaeism.n.01"
+        }
+      ],
+      "definition": "a religion founded by Manes in the third century; a synthesis of Zoroastrian dualism between light and dark and Babylonian folklore and Buddhist ethics and superficial elements of Christianity; spread widely in the Roman Empire but had largely died out by 1000"
+    },
+    {
+      "lemma": "Manichaeism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "manichaeism.n.01"
+        }
+      ],
+      "definition": "a religion founded by Manes in the third century; a synthesis of Zoroastrian dualism between light and dark and Babylonian folklore and Buddhist ethics and superficial elements of Christianity; spread widely in the Roman Empire but had largely died out by 1000"
+    },
+    {
+      "lemma": "Manichean",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "manichaeism.n.01",
+          "via_synset": "manichaean.a.02"
+        }
+      ],
+      "definition": "of or relating to Manichaeism"
+    },
+    {
+      "lemma": "Mazdaism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "zoroastrianism.n.01"
+        }
+      ],
+      "definition": "system of religion founded in Persia in the 6th century BC by Zoroaster; set forth in the Zend-Avesta; based on concept of struggle between light (good) and dark (evil)"
+    },
+    {
+      "lemma": "medical institution",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "institution.n.01",
+          "via_synset": "medical_institution.n.01"
+        }
+      ],
+      "definition": "an institution created for the practice of medicine"
+    },
+    {
+      "lemma": "meliorism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "meliorism.n.01"
+        }
+      ],
+      "definition": "the belief that the world can be made better by human effort"
+    },
+    {
+      "lemma": "Mennonitism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "mennonitism.n.01"
+        }
+      ],
+      "definition": "system of beliefs and practices including belief in scriptural authority; plain dress; adult baptism; foot washing; restriction of marriage to members of the group"
+    },
+    {
+      "lemma": "Methodism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "methodism.n.01"
+        }
+      ],
+      "definition": "the religious beliefs and practices of Methodists characterized by concern with social welfare and public morals"
+    },
+    {
+      "lemma": "Mimamsa",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hinduism.n.02",
+          "via_synset": "mimamsa.n.01"
+        }
+      ],
+      "definition": "(from the Sanskrit word for `reflection' or `interpretation') one of six orthodox philosophical systems or viewpoints on ritual traditions rooted in the Vedas and the Brahmanas as opposed to Vedanta which relies mostly on the Upanishads"
+    },
+    {
+      "lemma": "Mithraicism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "mithraism.n.01"
+        }
+      ],
+      "definition": "ancient Persian religion; popular among Romans during first three centuries a.d."
+    },
+    {
+      "lemma": "Mithraism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "mithraism.n.01"
+        }
+      ],
+      "definition": "ancient Persian religion; popular among Romans during first three centuries a.d."
+    },
+    {
+      "lemma": "Mithraist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mithraism.n.01",
+          "via_synset": "mithraist.n.01"
+        }
+      ],
+      "definition": "adherent of Mithraism"
+    },
+    {
+      "lemma": "mithraistic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mithraism.n.01",
+          "via_synset": "mithraic.a.01"
+        }
+      ],
+      "definition": "of or relating to Mithraism or its god"
+    },
+    {
+      "lemma": "Mohammedanism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "monotheism.n.01",
+          "via_synset": "islam.n.02"
+        }
+      ],
+      "definition": "the monotheistic religious system of Muslims founded in Arabia in the 7th century and based on the teachings of Muhammad as laid down in the Koran"
+    },
+    {
+      "lemma": "monastic order",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "order.n.11"
+        }
+      ],
+      "definition": "a group of person living under a religious rule"
+    },
+    {
+      "lemma": "monotheism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "theism.n.01",
+          "via_synset": "monotheism.n.01"
+        }
+      ],
+      "definition": "belief in a single God"
+    },
+    {
+      "lemma": "monotheist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "monotheism.n.01",
+          "via_synset": "monotheist.n.01"
+        }
+      ],
+      "definition": "a believer in one god"
+    },
+    {
+      "lemma": "monotheistic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "monotheism.n.01",
+          "via_synset": "monotheistic.a.01"
+        }
+      ],
+      "definition": "believing that there is only one god"
+    },
+    {
+      "lemma": "Mormonism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "mormonism.n.01"
+        }
+      ],
+      "definition": "the doctrines and practices of the Mormon Church based on the Book of Mormon"
+    },
+    {
+      "lemma": "Muhammadanism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "monotheism.n.01",
+          "via_synset": "islam.n.02"
+        }
+      ],
+      "definition": "the monotheistic religious system of Muslims founded in Arabia in the 7th century and based on the teachings of Muhammad as laid down in the Koran"
+    },
+    {
+      "lemma": "Muslimism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "monotheism.n.01",
+          "via_synset": "islam.n.02"
+        }
+      ],
+      "definition": "the monotheistic religious system of Muslims founded in Arabia in the 7th century and based on the teachings of Muhammad as laid down in the Koran"
+    },
+    {
+      "lemma": "mystic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mysticism.n.01",
+          "via_synset": "mystic.a.03"
+        }
+      ],
+      "definition": "relating to or characteristic of mysticism"
+    },
+    {
+      "lemma": "mystical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mysticism.n.01",
+          "via_synset": "mystic.a.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mysticism.n.01",
+          "via_synset": "mystic.a.02"
+        }
+      ],
+      "definition": "relating to or characteristic of mysticism"
+    },
+    {
+      "lemma": "mysticism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "mysticism.n.01"
+        }
+      ],
+      "definition": "a religion based on mystical communion with an ultimate reality"
+    },
+    {
+      "lemma": "nature worship",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "nature_worship.n.01"
+        }
+      ],
+      "definition": "a system of religion that deifies and worships natural forces and phenomena"
+    },
+    {
+      "lemma": "Negro spiritual",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "spiritual.n.01",
+          "via_synset": "spiritual.n.01"
+        }
+      ],
+      "definition": "a kind of religious song originated by Blacks in the southern United States"
+    },
+    {
+      "lemma": "Nestorian Church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "church.n.01",
+          "via_synset": "nestorian_church.n.01"
+        }
+      ],
+      "definition": "a Christian Church in the Middle East that followed Nestorianism; there is still a small Nestorian Church in Iraq"
+    },
+    {
+      "lemma": "obeah",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "cult.n.05",
+          "via_synset": "obeah.n.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "cult.n.01",
+          "via_synset": "obeah.n.01"
+        }
+      ],
+      "definition": "a religious belief of African origin involving witchcraft and sorcery; practiced in parts of the West Indies and tropical Americas"
+    },
+    {
+      "lemma": "obi",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "cult.n.05",
+          "via_synset": "obeah.n.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "cult.n.01",
+          "via_synset": "obeah.n.01"
+        }
+      ],
+      "definition": "a religious belief of African origin involving witchcraft and sorcery; practiced in parts of the West Indies and tropical Americas"
+    },
+    {
+      "lemma": "Old Catholic Church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "catholic_church.n.01",
+          "via_synset": "old_catholic_church.n.01"
+        }
+      ],
+      "definition": "Catholic churches that broke away from the Roman Catholic Church in the 18th century"
+    },
+    {
+      "lemma": "opinion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "public_opinion.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "opinion.n.01"
+        }
+      ],
+      "definition": "a belief or sentiment shared by most people; the voice of the people"
+    },
+    {
+      "lemma": "order",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "order.n.11"
+        }
+      ],
+      "definition": "a group of person living under a religious rule"
+    },
+    {
+      "lemma": "Order of Our Lady of Mount Carmel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "order.n.11",
+          "via_synset": "carmelite_order.n.01"
+        }
+      ],
+      "definition": "a Roman Catholic mendicant order founded in the 12th century"
+    },
+    {
+      "lemma": "order of Saint Benedict",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "order.n.11",
+          "via_synset": "benedictine_order.n.01"
+        }
+      ],
+      "definition": "a Roman Catholic monastic order founded in the 6th century; noted for liturgical worship and for scholarly activities"
+    },
+    {
+      "lemma": "organized religion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "religion.n.02",
+          "via_synset": "religion.n.02"
+        }
+      ],
+      "definition": "an institution to express belief in a divine power"
+    },
+    {
+      "lemma": "originalism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "originalism.n.01"
+        }
+      ],
+      "definition": "the belief that the United States Constitution should be interpreted in the way the authors originally intended it"
+    },
+    {
+      "lemma": "Orthodox Catholic Church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "catholic_church.n.01",
+          "via_synset": "orthodox_church.n.01"
+        }
+      ],
+      "definition": "derived from the Byzantine Church and adhering to Byzantine rites"
+    },
+    {
+      "lemma": "Orthodox Church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "catholic_church.n.01",
+          "via_synset": "orthodox_church.n.01"
+        }
+      ],
+      "definition": "derived from the Byzantine Church and adhering to Byzantine rites"
+    },
+    {
+      "lemma": "Orthodox Judaism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "judaism.n.01",
+          "via_synset": "orthodox_judaism.n.01"
+        }
+      ],
+      "definition": "Jews who strictly observe the Mosaic law as interpreted in the Talmud"
+    },
+    {
+      "lemma": "outlook",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "expectation.n.01"
+        }
+      ],
+      "definition": "belief about (or mental picture of) the future"
+    },
+    {
+      "lemma": "pacificism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "pacifism.n.02"
+        }
+      ],
+      "definition": "the belief that all international disputes can be settled by arbitration"
+    },
+    {
+      "lemma": "pacifism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "pacifism.n.02"
+        }
+      ],
+      "definition": "the belief that all international disputes can be settled by arbitration"
+    },
+    {
+      "lemma": "pagan religion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "paganism.n.01"
+        }
+      ],
+      "definition": "any of various religions other than Christianity or Judaism or Islamism"
+    },
+    {
+      "lemma": "paganism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "paganism.n.01"
+        }
+      ],
+      "definition": "any of various religions other than Christianity or Judaism or Islamism"
+    },
+    {
+      "lemma": "pantheism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "theism.n.01",
+          "via_synset": "pantheism.n.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "theism.n.01",
+          "via_synset": "pantheism.n.02"
+        }
+      ],
+      "definition": "(rare) worship that admits or tolerates all gods"
+    },
+    {
+      "lemma": "pantheist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pantheism.n.02",
+          "via_synset": "pantheist.n.01"
+        }
+      ],
+      "definition": "someone who believes that God and the universe are the same"
+    },
+    {
+      "lemma": "pantheistic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pantheism.n.02",
+          "via_synset": "pantheist.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pantheism.n.01",
+          "via_synset": "pantheist.a.01"
+        }
+      ],
+      "definition": "of or relating to pantheism"
+    },
+    {
+      "lemma": "papism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "catholicism.n.01",
+          "via_synset": "romanism.n.01"
+        }
+      ],
+      "definition": "the beliefs and practices of the Catholic Church based in Rome"
+    },
+    {
+      "lemma": "Parseeism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "zoroastrianism.n.01",
+          "via_synset": "parsiism.n.01"
+        }
+      ],
+      "definition": "the faith of a Zoroastrian sect in India"
+    },
+    {
+      "lemma": "Parsiism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "zoroastrianism.n.01",
+          "via_synset": "parsiism.n.01"
+        }
+      ],
+      "definition": "the faith of a Zoroastrian sect in India"
+    },
+    {
+      "lemma": "Pentecostal religion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestant_church.n.01",
+          "via_synset": "pentecostal_religion.n.01"
+        }
+      ],
+      "definition": "any fundamentalist Protestant Church that uses revivalistic methods to achieve experiences comparable to the Pentecostal experiences of the first Christian disciples"
+    },
+    {
+      "lemma": "pentecostalism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "pentecostalism.n.01"
+        }
+      ],
+      "definition": "the principles and practices of Pentecostal religious groups; characterized by religious excitement and talking in tongues"
+    },
+    {
+      "lemma": "persuasion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "opinion.n.01"
+        }
+      ],
+      "definition": "a personal belief or judgment that is not founded on proof or certainty"
+    },
+    {
+      "lemma": "phantasma",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apparitional.s.01",
+          "via_synset": "apparition.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apparitional.s.01",
+          "via_synset": "apparition.n.03"
+        }
+      ],
+      "definition": "a ghostly appearing figure"
+    },
+    {
+      "lemma": "phantasmal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "apparitional.s.01",
+          "via_synset": "apparitional.s.01"
+        }
+      ],
+      "definition": "resembling or characteristic of a phantom"
+    },
+    {
+      "lemma": "philosophical system",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "doctrine.n.01"
+        }
+      ],
+      "definition": "a belief (or system of beliefs) accepted as authoritative by some group or school"
+    },
+    {
+      "lemma": "philosophy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "philosophy.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "doctrine.n.01"
+        }
+      ],
+      "definition": "any personal belief about how to live or how to deal with a situation"
+    },
+    {
+      "lemma": "polytheism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "theism.n.01",
+          "via_synset": "polytheism.n.01"
+        }
+      ],
+      "definition": "belief in multiple Gods"
+    },
+    {
+      "lemma": "polytheistic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "polytheism.n.01",
+          "via_synset": "polytheistic.a.01"
+        }
+      ],
+      "definition": "worshipping or believing in more than one god"
+    },
+    {
+      "lemma": "popular opinion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "public_opinion.n.01"
+        }
+      ],
+      "definition": "a belief or sentiment shared by most people; the voice of the people"
+    },
+    {
+      "lemma": "predestinarianism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "predestinarianism.n.01"
+        }
+      ],
+      "definition": "the belief or doctrine of predestinarians"
+    },
+    {
+      "lemma": "Presbyterianism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "presbyterianism.n.01"
+        }
+      ],
+      "definition": "the doctrines and practices of the Presbyterian Church: based in Calvinism"
+    },
+    {
+      "lemma": "prospect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "expectation.n.01"
+        }
+      ],
+      "definition": "belief about (or mental picture of) the future"
+    },
+    {
+      "lemma": "Protestant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "church.n.01",
+          "via_synset": "protestant_church.n.01"
+        }
+      ],
+      "definition": "the Protestant churches and denominations collectively"
+    },
+    {
+      "lemma": "Protestant Church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "church.n.01",
+          "via_synset": "protestant_church.n.01"
+        }
+      ],
+      "definition": "the Protestant churches and denominations collectively"
+    },
+    {
+      "lemma": "Protestantism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "christianity.n.01",
+          "via_synset": "protestantism.n.01"
+        }
+      ],
+      "definition": "the theological system of any of the churches of western Christendom that separated from the Roman Catholic Church during the Reformation"
+    },
+    {
+      "lemma": "public opinion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "public_opinion.n.01"
+        }
+      ],
+      "definition": "a belief or sentiment shared by most people; the voice of the people"
+    },
+    {
+      "lemma": "Puritanism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "puritanism.n.01"
+        }
+      ],
+      "definition": "the beliefs and practices characteristic of Puritans (most of whom were Calvinists who wished to purify the Church of England of its Catholic aspects)"
+    },
+    {
+      "lemma": "Puseyism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "christianity.n.01",
+          "via_synset": "tractarianism.n.01"
+        }
+      ],
+      "definition": "principles of the founders of the Oxford movement as expounded in pamphlets called `Tracts for the Times'"
+    },
+    {
+      "lemma": "Quakers",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "religious_society_of_friends.n.01"
+        }
+      ],
+      "definition": "a Christian sect founded by George Fox about 1660; commonly called Quakers"
+    },
+    {
+      "lemma": "quietism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "mysticism.n.01",
+          "via_synset": "quietism.n.01"
+        }
+      ],
+      "definition": "a form of religious mysticism requiring withdrawal from all human effort and passive contemplation of God"
+    },
+    {
+      "lemma": "quietist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "quietism.n.01",
+          "via_synset": "quietist.n.01"
+        }
+      ],
+      "definition": "a religious mystic who follows quietism"
+    },
+    {
+      "lemma": "Rastafari",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "cult.n.01",
+          "via_synset": "rastafari.n.01"
+        }
+      ],
+      "definition": "(Jamaica) a Black youth subculture and religious movement that arose in the ghettos of Kingston, Jamaica, in the 1950s; males grow hair in long dreadlocks and wear woolen caps; use marijuana and listen to reggae music"
+    },
+    {
+      "lemma": "Rastafarian",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "cult.n.01",
+          "via_synset": "rastafarian.n.02"
+        }
+      ],
+      "definition": "(Ethiopia) adherents of an African religion that regards Ras Tafari as divine"
+    },
+    {
+      "lemma": "Rastafarianism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "cult.n.05",
+          "via_synset": "rastafarianism.n.01"
+        }
+      ],
+      "definition": "a religious cult based on a belief that Ras Tafari (Haile Selassie) is the Messiah and that Africa (especially Ethiopia) is the Promised Land"
+    },
+    {
+      "lemma": "Rastas",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "cult.n.01",
+          "via_synset": "rastafari.n.01"
+        }
+      ],
+      "definition": "(Jamaica) a Black youth subculture and religious movement that arose in the ghettos of Kingston, Jamaica, in the 1950s; males grow hair in long dreadlocks and wear woolen caps; use marijuana and listen to reggae music"
+    },
+    {
+      "lemma": "Reform Judaism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "judaism.n.01",
+          "via_synset": "reform_judaism.n.01"
+        }
+      ],
+      "definition": "the most liberal Jews; Jews who do not follow the Talmud strictly but try to adapt all of the historical forms of Judaism to the modern world"
+    },
+    {
+      "lemma": "religion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "religion.n.01",
+          "via_synset": "religion.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "religion.n.02",
+          "via_synset": "religion.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "religion.n.01"
+        }
+      ],
+      "definition": "a strong belief in a supernatural power or powers that control human destiny"
+    },
+    {
+      "lemma": "religionist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "religion.n.02",
+          "via_synset": "religionist.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "religion.n.01",
+          "via_synset": "religionist.n.01"
+        }
+      ],
+      "definition": "a person addicted to religion or a religious zealot"
+    },
+    {
+      "lemma": "religious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "religion.n.02",
+          "via_synset": "religious.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "religion.n.01",
+          "via_synset": "religious.a.02"
+        }
+      ],
+      "definition": "concerned with sacred matters or religion or the church"
+    },
+    {
+      "lemma": "religious belief",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "religion.n.01",
+          "via_synset": "religion.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "religion.n.01"
+        }
+      ],
+      "definition": "a strong belief in a supernatural power or powers that control human destiny"
+    },
+    {
+      "lemma": "religious cult",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "cult.n.05"
+        }
+      ],
+      "definition": "a system of religious beliefs and rituals"
+    },
+    {
+      "lemma": "religious mysticism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "mysticism.n.01"
+        }
+      ],
+      "definition": "a religion based on mystical communion with an ultimate reality"
+    },
+    {
+      "lemma": "religious order",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.02",
+          "via_synset": "sect.n.01"
+        }
+      ],
+      "definition": "a subdivision of a larger religious group"
+    },
+    {
+      "lemma": "religious sect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.02",
+          "via_synset": "sect.n.01"
+        }
+      ],
+      "definition": "a subdivision of a larger religious group"
+    },
+    {
+      "lemma": "Religious Society of Friends",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "religious_society_of_friends.n.01"
+        }
+      ],
+      "definition": "a Christian sect founded by George Fox about 1660; commonly called Quakers"
+    },
+    {
+      "lemma": "religious song",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "spiritual.n.01",
+          "via_synset": "religious_song.n.01"
+        }
+      ],
+      "definition": "religious music for singing"
+    },
+    {
+      "lemma": "revealed religion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "revealed_religion.n.01"
+        }
+      ],
+      "definition": "a religion founded primarily on the revelations of God to humankind"
+    },
+    {
+      "lemma": "revolutionism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "revolutionism.n.01"
+        }
+      ],
+      "definition": "a belief in the spread of revolutionary principles"
+    },
+    {
+      "lemma": "Roman Catholic",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "catholic_church.n.01",
+          "via_synset": "roman_catholic.n.02"
+        }
+      ],
+      "definition": "the Christian Church based in the Vatican and presided over by a pope and an episcopal hierarchy"
+    },
+    {
+      "lemma": "Roman Catholic Church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "catholic_church.n.01",
+          "via_synset": "roman_catholic.n.02"
+        }
+      ],
+      "definition": "the Christian Church based in the Vatican and presided over by a pope and an episcopal hierarchy"
+    },
+    {
+      "lemma": "Roman Catholicism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "catholicism.n.01",
+          "via_synset": "romanism.n.01"
+        }
+      ],
+      "definition": "the beliefs and practices of the Catholic Church based in Rome"
+    },
+    {
+      "lemma": "Roman Church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "catholic_church.n.01",
+          "via_synset": "roman_catholic.n.02"
+        }
+      ],
+      "definition": "the Christian Church based in the Vatican and presided over by a pope and an episcopal hierarchy"
+    },
+    {
+      "lemma": "Romanism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "catholicism.n.01",
+          "via_synset": "romanism.n.01"
+        }
+      ],
+      "definition": "the beliefs and practices of the Catholic Church based in Rome"
+    },
+    {
+      "lemma": "sacerdotalism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "sacerdotalism.n.01"
+        }
+      ],
+      "definition": "a belief that priests can act as mediators between human beings and God"
+    },
+    {
+      "lemma": "sacred",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sacred.s.01",
+          "via_synset": "sacred.s.01"
+        }
+      ],
+      "definition": "worthy of respect or dedication"
+    },
+    {
+      "lemma": "sacredness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sacred.s.01",
+          "via_synset": "sacredness.n.01"
+        }
+      ],
+      "definition": "the quality of being sacred"
+    },
+    {
+      "lemma": "Saktism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hinduism.n.02",
+          "via_synset": "shaktism.n.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "shaktism.n.01"
+        }
+      ],
+      "definition": "worship of Shakti as the wife of Shiva"
+    },
+    {
+      "lemma": "school of thought",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "doctrine.n.01"
+        }
+      ],
+      "definition": "a belief (or system of beliefs) accepted as authoritative by some group or school"
+    },
+    {
+      "lemma": "Scientology",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.02",
+          "via_synset": "scientology.n.01"
+        }
+      ],
+      "definition": "a new religion founded by L. Ron Hubbard in 1955 and characterized by a belief in the power of a person's spirit to clear itself of past painful experiences through self-knowledge and spiritual fulfillment"
+    },
+    {
+      "lemma": "Second Adventism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "christianity.n.01",
+          "via_synset": "adventism.n.01"
+        }
+      ],
+      "definition": "any Christian religion that believes the second coming of Christ is imminent"
+    },
+    {
+      "lemma": "sect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.02",
+          "via_synset": "sect.n.01"
+        }
+      ],
+      "definition": "a subdivision of a larger religious group"
+    },
+    {
+      "lemma": "sectarian",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sect.n.01",
+          "via_synset": "sectarian.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sect.n.01",
+          "via_synset": "sectarian.a.02"
+        }
+      ],
+      "definition": "of or relating to or characteristic of a sect or sects"
+    },
+    {
+      "lemma": "sentiment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "opinion.n.01"
+        }
+      ],
+      "definition": "a personal belief or judgment that is not founded on proof or certainty"
+    },
+    {
+      "lemma": "Seventh-Day Adventism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "adventism.n.01",
+          "via_synset": "seventh-day_adventism.n.01"
+        }
+      ],
+      "definition": "Adventism that is strongly Protestant and observes Saturday as the Sabbath"
+    },
+    {
+      "lemma": "Shakers",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "shakers.n.01"
+        }
+      ],
+      "definition": "a celibate and communistic Christian sect in the United States"
+    },
+    {
+      "lemma": "Shaktism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hinduism.n.02",
+          "via_synset": "shaktism.n.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "shaktism.n.01"
+        }
+      ],
+      "definition": "worship of Shakti as the wife of Shiva"
+    },
+    {
+      "lemma": "Shaktist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "shaktism.n.02",
+          "via_synset": "shaktist.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "shaktism.n.01",
+          "via_synset": "shaktist.n.01"
+        }
+      ],
+      "definition": "worshipper of Shakti"
+    },
+    {
+      "lemma": "shamanism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "shamanism.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "shamanism.n.02"
+        }
+      ],
+      "definition": "any animistic religion similar to Asian shamanism (especially as practiced by certain Native American tribes)"
+    },
+    {
+      "lemma": "shamanistic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "shamanism.n.01",
+          "via_synset": "shamanist.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "shamanism.n.02",
+          "via_synset": "shamanist.a.01"
+        }
+      ],
+      "definition": "of or relating to shamanism"
+    },
+    {
+      "lemma": "Shia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "shiah.n.01"
+        }
+      ],
+      "definition": "one of the two main branches of orthodox Islam; mainly in Iran"
+    },
+    {
+      "lemma": "Shiah",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "shiah.n.01"
+        }
+      ],
+      "definition": "one of the two main branches of orthodox Islam; mainly in Iran"
+    },
+    {
+      "lemma": "Shiah Islam",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "shiah.n.01"
+        }
+      ],
+      "definition": "one of the two main branches of orthodox Islam; mainly in Iran"
+    },
+    {
+      "lemma": "Shingon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "buddhism.n.02",
+          "via_synset": "shingon.n.01"
+        }
+      ],
+      "definition": "a form of Buddhism emphasizing mystical symbolism of mantras and mudras and the Buddha's ideal which is inexpressible"
+    },
+    {
+      "lemma": "Shinto",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "shinto.n.02"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.02",
+          "via_synset": "shinto.n.01"
+        }
+      ],
+      "definition": "the ancient indigenous religion of Japan lacking formal dogma; characterized by a veneration of nature spirits and of ancestors"
+    },
+    {
+      "lemma": "Shintoism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "shinto.n.02"
+        }
+      ],
+      "definition": "the ancient indigenous religion of Japan lacking formal dogma; characterized by a veneration of nature spirits and of ancestors"
+    },
+    {
+      "lemma": "Shintoist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "shinto.n.02",
+          "via_synset": "shintoist.n.01"
+        }
+      ],
+      "definition": "a believer in Shintoism"
+    },
+    {
+      "lemma": "Shintoistic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "shinto.n.02",
+          "via_synset": "shinto.a.01"
+        }
+      ],
+      "definition": "relating to or characteristic of Shintoism"
+    },
+    {
+      "lemma": "Shivaism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hinduism.n.02",
+          "via_synset": "shivaism.n.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "shivaism.n.01"
+        }
+      ],
+      "definition": "worship of Shiva one of the 3 chief gods of the Hindu pantheon"
+    },
+    {
+      "lemma": "Shivaist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "shivaism.n.01",
+          "via_synset": "shivaist.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "shivaism.n.02",
+          "via_synset": "shivaist.n.01"
+        }
+      ],
+      "definition": "worshipper of Shiva"
+    },
+    {
+      "lemma": "Shua",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "shuha_shinto.n.01"
+        }
+      ],
+      "definition": "any branch of Shinto other than Kokka"
+    },
+    {
+      "lemma": "Shuha Shinto",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "shuha_shinto.n.01"
+        }
+      ],
+      "definition": "any branch of Shinto other than Kokka"
+    },
+    {
+      "lemma": "Sikhism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "sikhism.n.01"
+        }
+      ],
+      "definition": "the doctrines of a monotheistic religion founded in northern India in the 16th century by Guru Nanak and combining elements of Hinduism and Islam"
+    },
+    {
+      "lemma": "Sister",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sisterhood.n.03",
+          "via_synset": "sister.n.02"
+        }
+      ],
+      "definition": "(Roman Catholic Church) a title given to a nun (and used as a form of address)"
+    },
+    {
+      "lemma": "sisterhood",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "sisterhood.n.03"
+        }
+      ],
+      "definition": "a religious society of women who live together as sisters (especially an order of nuns)"
+    },
+    {
+      "lemma": "Sivaism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hinduism.n.02",
+          "via_synset": "shivaism.n.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "shivaism.n.01"
+        }
+      ],
+      "definition": "worship of Shiva one of the 3 chief gods of the Hindu pantheon"
+    },
+    {
+      "lemma": "Society of Friends",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "religious_society_of_friends.n.01"
+        }
+      ],
+      "definition": "a Christian sect founded by George Fox about 1660; commonly called Quakers"
+    },
+    {
+      "lemma": "Society of Jesus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "order.n.11",
+          "via_synset": "society_of_jesus.n.01"
+        }
+      ],
+      "definition": "a Roman Catholic order founded by Saint Ignatius of Loyola in 1534 to defend Catholicism against the Reformation and to do missionary work among the heathen; it is strongly committed to education and scholarship"
+    },
+    {
+      "lemma": "spectral",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "apparitional.s.01",
+          "via_synset": "apparitional.s.01"
+        }
+      ],
+      "definition": "resembling or characteristic of a phantom"
+    },
+    {
+      "lemma": "spirit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "apparitional.s.01",
+          "via_synset": "spirit.n.04"
+        }
+      ],
+      "definition": "any incorporeal supernatural being that can become visible (or audible) to human beings"
+    },
+    {
+      "lemma": "spiritual",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "apparitional.s.01",
+          "via_synset": "apparitional.s.01"
+        }
+      ],
+      "definition": "resembling or characteristic of a phantom"
+    },
+    {
+      "lemma": "spiritual",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "spiritual.n.01",
+          "via_synset": "spiritual.n.01"
+        }
+      ],
+      "definition": "a kind of religious song originated by Blacks in the southern United States"
+    },
+    {
+      "lemma": "spiritual being",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "spiritual_being.n.01"
+        }
+      ],
+      "definition": "an incorporeal being believed to have powers to affect the course of human events"
+    },
+    {
+      "lemma": "spiritual domain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "spiritual_world.n.01"
+        }
+      ],
+      "definition": "a belief that there is a realm controlled by a divine spirit"
+    },
+    {
+      "lemma": "spiritual world",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "spiritual_world.n.01"
+        }
+      ],
+      "definition": "a belief that there is a realm controlled by a divine spirit"
+    },
+    {
+      "lemma": "spiritualism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "spiritualism.n.02"
+        }
+      ],
+      "definition": "the belief that the spirits of dead people can communicate with people who are still alive (especially via a medium)"
+    },
+    {
+      "lemma": "strong belief",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "conviction.n.01"
+        }
+      ],
+      "definition": "an unshakable belief in something without need for proof or evidence"
+    },
+    {
+      "lemma": "suffragism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "suffragism.n.01"
+        }
+      ],
+      "definition": "the belief that the right to vote should be extended (as to women)"
+    },
+    {
+      "lemma": "Sufism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "mysticism.n.01",
+          "via_synset": "sufism.n.01"
+        }
+      ],
+      "definition": "Islamic mysticism"
+    },
+    {
+      "lemma": "Sunni",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "sunni.n.02"
+        }
+      ],
+      "definition": "one of the two main branches of orthodox Islam"
+    },
+    {
+      "lemma": "Sunni Islam",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "sunni.n.02"
+        }
+      ],
+      "definition": "one of the two main branches of orthodox Islam"
+    },
+    {
+      "lemma": "supernatural",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "apparitional.s.01",
+          "via_synset": "supernatural.a.01"
+        }
+      ],
+      "definition": "not existing in nature or subject to explanation according to natural laws; not physical or material"
+    },
+    {
+      "lemma": "supernatural being",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "spiritual_being.n.01"
+        }
+      ],
+      "definition": "an incorporeal being believed to have powers to affect the course of human events"
+    },
+    {
+      "lemma": "supernatural virtue",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "religion.n.01",
+          "via_synset": "theological_virtue.n.01"
+        }
+      ],
+      "definition": "according to Christian ethics: one of the three virtues (faith, hope, and charity) created by God to round out the natural virtues"
+    },
+    {
+      "lemma": "supernaturalism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "supernaturalism.n.01"
+        }
+      ],
+      "definition": "a belief in forces beyond ordinary human understanding"
+    },
+    {
+      "lemma": "superstition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "superstition.n.01"
+        }
+      ],
+      "definition": "an irrational belief arising from ignorance or fear"
+    },
+    {
+      "lemma": "superstitious notion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "superstition.n.01"
+        }
+      ],
+      "definition": "an irrational belief arising from ignorance or fear"
+    },
+    {
+      "lemma": "supremacism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "supremacism.n.01"
+        }
+      ],
+      "definition": "the belief that some particular group or race is superior to all others"
+    },
+    {
+      "lemma": "Tantra",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "buddhism.n.02",
+          "via_synset": "tantra.n.02"
+        }
+      ],
+      "definition": "doctrine of enlightenment as the realization of the oneness of one's self and the visible world; combines elements of Hinduism and paganism including magical and mystical elements like mantras and mudras and erotic rites; especially influential in Tibet"
+    },
+    {
+      "lemma": "Tantric",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tantrism.n.01",
+          "via_synset": "tantric.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tantra.n.02",
+          "via_synset": "tantric.a.01"
+        }
+      ],
+      "definition": "of or relating to Tantrism"
+    },
+    {
+      "lemma": "Tantrism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "buddhism.n.02",
+          "via_synset": "tantra.n.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "buddhism.n.01",
+          "via_synset": "tantrism.n.01"
+        }
+      ],
+      "definition": "doctrine of enlightenment as the realization of the oneness of one's self and the visible world; combines elements of Hinduism and paganism including magical and mystical elements like mantras and mudras and erotic rites; especially influential in Tibet"
+    },
+    {
+      "lemma": "Tantrist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tantrism.n.01",
+          "via_synset": "tantrist.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tantra.n.02",
+          "via_synset": "tantrist.n.01"
+        }
+      ],
+      "definition": "an adherent of Tantrism"
+    },
+    {
+      "lemma": "Taoism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "taoism.n.03"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.02",
+          "via_synset": "taoism.n.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "taoism.n.01"
+        }
+      ],
+      "definition": "popular Chinese philosophical system based in teachings of Lao-tzu but characterized by a pantheism of many gods and the practices of alchemy and divination and magic"
+    },
+    {
+      "lemma": "Taoist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "taoism.n.01",
+          "via_synset": "taoist.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "taoism.n.02",
+          "via_synset": "taoist.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "taoism.n.03",
+          "via_synset": "taoist.n.01"
+        }
+      ],
+      "definition": "an adherent of any branch of Taoism"
+    },
+    {
+      "lemma": "theism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "theism.n.01"
+        }
+      ],
+      "definition": "the doctrine or belief in the existence of a God or gods"
+    },
+    {
+      "lemma": "theist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "theism.n.01",
+          "via_synset": "theist.n.01"
+        }
+      ],
+      "definition": "one who believes in the existence of a god or gods"
+    },
+    {
+      "lemma": "theistic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "theism.n.01",
+          "via_synset": "theist.a.01"
+        }
+      ],
+      "definition": "of or relating to theism"
+    },
+    {
+      "lemma": "theistical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "theism.n.01",
+          "via_synset": "theist.a.01"
+        }
+      ],
+      "definition": "of or relating to theism"
+    },
+    {
+      "lemma": "theological virtue",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "religion.n.01",
+          "via_synset": "theological_virtue.n.01"
+        }
+      ],
+      "definition": "according to Christian ethics: one of the three virtues (faith, hope, and charity) created by God to round out the natural virtues"
+    },
+    {
+      "lemma": "theory",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "theory.n.03"
+        }
+      ],
+      "definition": "a belief that can guide behavior"
+    },
+    {
+      "lemma": "theosophism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "theosophism.n.01"
+        }
+      ],
+      "definition": "belief in theosophy"
+    },
+    {
+      "lemma": "Theravada",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "buddhism.n.02",
+          "via_synset": "theravada.n.01"
+        }
+      ],
+      "definition": "one of two great schools of Buddhist doctrine emphasizing personal salvation through your own efforts; a conservative form of Buddhism that adheres to Pali scriptures and the non-theistic ideal of self purification to nirvana; the dominant religion of Sri Lanka (Ceylon) and Myanmar (Burma) and Thailand and Laos and Cambodia"
+    },
+    {
+      "lemma": "Theravada Buddhism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "buddhism.n.02",
+          "via_synset": "theravada.n.01"
+        }
+      ],
+      "definition": "one of two great schools of Buddhist doctrine emphasizing personal salvation through your own efforts; a conservative form of Buddhism that adheres to Pali scriptures and the non-theistic ideal of self purification to nirvana; the dominant religion of Sri Lanka (Ceylon) and Myanmar (Burma) and Thailand and Laos and Cambodia"
+    },
+    {
+      "lemma": "thought",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "thought.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "opinion.n.01"
+        }
+      ],
+      "definition": "the organized beliefs of a period or group or individual"
+    },
+    {
+      "lemma": "Tibetan Buddhism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "buddhism.n.02",
+          "via_synset": "lamaism.n.01"
+        }
+      ],
+      "definition": "a Buddhist doctrine that includes elements from India that are not Buddhist and elements of preexisting shamanism"
+    },
+    {
+      "lemma": "totemism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "totemism.n.01"
+        }
+      ],
+      "definition": "belief in the kinship of a group of people with a common totem"
+    },
+    {
+      "lemma": "Tractarianism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "christianity.n.01",
+          "via_synset": "tractarianism.n.01"
+        }
+      ],
+      "definition": "principles of the founders of the Oxford movement as expounded in pamphlets called `Tracts for the Times'"
+    },
+    {
+      "lemma": "tribalism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "tribalism.n.02"
+        }
+      ],
+      "definition": "the beliefs of a tribal society"
+    },
+    {
+      "lemma": "Trinitarianism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "trinitarianism.n.01"
+        }
+      ],
+      "definition": "Christian doctrine stressing belief in the Trinity"
+    },
+    {
+      "lemma": "tritheism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "polytheism.n.01",
+          "via_synset": "tritheism.n.01"
+        }
+      ],
+      "definition": "(Christianity) the heretical belief that the Father and the Son and the Holy Spirit are three separate gods"
+    },
+    {
+      "lemma": "trust",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "faith.n.02",
+          "via_synset": "faith.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "faith.n.02"
+        }
+      ],
+      "definition": "complete confidence in a person or plan etc"
+    },
+    {
+      "lemma": "trust",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "faith.n.02",
+          "via_synset": "trust.v.01"
+        }
+      ],
+      "definition": "have confidence or faith in"
+    },
+    {
+      "lemma": "trusty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "faith.n.02",
+          "via_synset": "trustworthy.a.01"
+        }
+      ],
+      "definition": "worthy of trust or belief"
+    },
+    {
+      "lemma": "Uniat Church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "catholic_church.n.01",
+          "via_synset": "uniat_church.n.01"
+        }
+      ],
+      "definition": "any of several churches in eastern Europe or the Middle East that acknowledge papal authority but retain their own liturgy"
+    },
+    {
+      "lemma": "Uniate Church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "catholic_church.n.01",
+          "via_synset": "uniat_church.n.01"
+        }
+      ],
+      "definition": "any of several churches in eastern Europe or the Middle East that acknowledge papal authority but retain their own liturgy"
+    },
+    {
+      "lemma": "Unification Church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "church.n.01",
+          "via_synset": "unification_church.n.01"
+        }
+      ],
+      "definition": "a Christian church (with some Buddhist elements) founded in 1954 by Sun Myung Moon and known for staging mass weddings and other communal activities"
+    },
+    {
+      "lemma": "Unitarianism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "unitarianism.n.01"
+        }
+      ],
+      "definition": "Christian doctrine that stresses individual freedom of belief and rejects the Trinity"
+    },
+    {
+      "lemma": "United Society of Believers in Christ's Second Appearing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "shakers.n.01"
+        }
+      ],
+      "definition": "a celibate and communistic Christian sect in the United States"
+    },
+    {
+      "lemma": "unseen",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "spiritual_world.n.01"
+        }
+      ],
+      "definition": "a belief that there is a realm controlled by a divine spirit"
+    },
+    {
+      "lemma": "Vaishnavism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hinduism.n.02",
+          "via_synset": "vaishnavism.n.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "vaishnavism.n.01"
+        }
+      ],
+      "definition": "worship of Vishnu one of the 3 chief gods of the Hindu pantheon"
+    },
+    {
+      "lemma": "Vaisnavism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hinduism.n.02",
+          "via_synset": "vaishnavism.n.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "vaishnavism.n.01"
+        }
+      ],
+      "definition": "worship of Vishnu one of the 3 chief gods of the Hindu pantheon"
+    },
+    {
+      "lemma": "values",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "values.n.01"
+        }
+      ],
+      "definition": "beliefs of a person or social group in which they have an emotional investment (either for or against something)"
+    },
+    {
+      "lemma": "vampirism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "vampirism.n.01"
+        }
+      ],
+      "definition": "belief in the existence of vampires"
+    },
+    {
+      "lemma": "Vaudois",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "waldenses.n.01"
+        }
+      ],
+      "definition": "a Christian sect of dissenters that originated in southern France in the late 12th century adopted Calvinist doctrines in the 16th century"
+    },
+    {
+      "lemma": "Vedanta",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hinduism.n.02",
+          "via_synset": "vedanta.n.01"
+        }
+      ],
+      "definition": "(from the Sanskrit for `end of the Veda') one of six orthodox philosophical systems or viewpoints rooted in the Upanishads as opposed to Mimamsa which relies on the Vedas and Brahmanas"
+    },
+    {
+      "lemma": "Vedism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hinduism.n.02",
+          "via_synset": "vedism.n.01"
+        }
+      ],
+      "definition": "the form of Hinduism that revolves primarily around the mythic version and ritual ideologies in the Vedas"
+    },
+    {
+      "lemma": "Vedist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "vedism.n.01",
+          "via_synset": "vedist.n.01"
+        }
+      ],
+      "definition": "a scholar of or an authority on the Vedas"
+    },
+    {
+      "lemma": "vicariate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "institution.n.01",
+          "via_synset": "vicariate.n.01"
+        }
+      ],
+      "definition": "the religious institution under the authority of a vicar"
+    },
+    {
+      "lemma": "vicarship",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "institution.n.01",
+          "via_synset": "vicariate.n.01"
+        }
+      ],
+      "definition": "the religious institution under the authority of a vicar"
+    },
+    {
+      "lemma": "view",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "opinion.n.01"
+        }
+      ],
+      "definition": "a personal belief or judgment that is not founded on proof or certainty"
+    },
+    {
+      "lemma": "Vishnuism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hinduism.n.02",
+          "via_synset": "vaishnavism.n.02"
+        }
+      ],
+      "definition": "worship of Vishnu one of the 3 chief gods of the Hindu pantheon"
+    },
+    {
+      "lemma": "vodoun",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "cult.n.05",
+          "via_synset": "voodoo.n.03"
+        }
+      ],
+      "definition": "a religious cult practiced chiefly in Caribbean countries (especially Haiti); involves witchcraft and animistic deities"
+    },
+    {
+      "lemma": "voodoo",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "cult.n.05",
+          "via_synset": "voodoo.n.03"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "cult.n.01",
+          "via_synset": "voodoo.n.02"
+        }
+      ],
+      "definition": "a religious cult practiced chiefly in Caribbean countries (especially Haiti); involves witchcraft and animistic deities"
+    },
+    {
+      "lemma": "voodoo",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "voodoo.n.03",
+          "via_synset": "voodoo.v.01"
+        }
+      ],
+      "definition": "bewitch by or as if by a voodoo"
+    },
+    {
+      "lemma": "voodooism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "cult.n.05",
+          "via_synset": "voodoo.n.03"
+        }
+      ],
+      "definition": "a religious cult practiced chiefly in Caribbean countries (especially Haiti); involves witchcraft and animistic deities"
+    },
+    {
+      "lemma": "vox populi",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "belief.n.01",
+          "via_synset": "public_opinion.n.01"
+        }
+      ],
+      "definition": "a belief or sentiment shared by most people; the voice of the people"
+    },
+    {
+      "lemma": "Waldenses",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "waldenses.n.01"
+        }
+      ],
+      "definition": "a Christian sect of dissenters that originated in southern France in the late 12th century adopted Calvinist doctrines in the 16th century"
+    },
+    {
+      "lemma": "Wesleyanism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "wesleyanism.n.01"
+        }
+      ],
+      "definition": "evangelical principles taught by John Wesley"
+    },
+    {
+      "lemma": "Wesleyism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "protestantism.n.01",
+          "via_synset": "wesleyanism.n.01"
+        }
+      ],
+      "definition": "evangelical principles taught by John Wesley"
+    },
+    {
+      "lemma": "Western Church",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "catholic_church.n.01",
+          "via_synset": "roman_catholic.n.02"
+        }
+      ],
+      "definition": "the Christian Church based in the Vatican and presided over by a pope and an episcopal hierarchy"
+    },
+    {
+      "lemma": "Wicca",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "wicca.n.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "cult.n.01",
+          "via_synset": "wicca.n.01"
+        }
+      ],
+      "definition": "the polytheistic nature religion of modern witchcraft whose central deity is a mother goddess; claims origins in pre-Christian pagan religions of western Europe"
+    },
+    {
+      "lemma": "worthy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sacred.s.01",
+          "via_synset": "worthy.a.01"
+        }
+      ],
+      "definition": "having worth or merit or value; being honorable or admirable"
+    },
+    {
+      "lemma": "yoga",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hinduism.n.02",
+          "via_synset": "yoga.n.01"
+        }
+      ],
+      "definition": "Hindu discipline aimed at training the consciousness for a state of perfect spiritual insight and tranquility that is achieved through the three paths of actions and knowledge and devotion"
+    },
+    {
+      "lemma": "Yogacara",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "mahayana.n.02",
+          "via_synset": "yogacara.n.01"
+        }
+      ],
+      "definition": "one of the main traditions of Mahayana Buddhism; holds that the mind is real but that objects are just ideas or states of consciousness"
+    },
+    {
+      "lemma": "yogic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "yoga.n.01",
+          "via_synset": "yogistic.a.01"
+        }
+      ],
+      "definition": "of or relating to yoga"
+    },
+    {
+      "lemma": "yogistic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "yoga.n.01",
+          "via_synset": "yogistic.a.01"
+        }
+      ],
+      "definition": "of or relating to yoga"
+    },
+    {
+      "lemma": "Zen",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "buddhism.n.02",
+          "via_synset": "zen.n.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "buddhism.n.01",
+          "via_synset": "zen.n.01"
+        }
+      ],
+      "definition": "a Buddhist doctrine that enlightenment can be attained through direct intuitive insight"
+    },
+    {
+      "lemma": "Zen Buddhism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "buddhism.n.02",
+          "via_synset": "zen.n.02"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "buddhism.n.01",
+          "via_synset": "zen.n.01"
+        }
+      ],
+      "definition": "a Buddhist doctrine that enlightenment can be attained through direct intuitive insight"
+    },
+    {
+      "lemma": "Zen Buddhist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "zen.n.02",
+          "via_synset": "zen_buddhist.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "zen.n.01",
+          "via_synset": "zen_buddhist.n.01"
+        }
+      ],
+      "definition": "an adherent of the doctrines of Zen Buddhism"
+    },
+    {
+      "lemma": "Zoroastrianism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "religion.n.01",
+          "via_synset": "zoroastrianism.n.01"
+        }
+      ],
+      "definition": "system of religion founded in Persia in the 6th century BC by Zoroaster; set forth in the Zend-Avesta; based on concept of struggle between light (good) and dark (evil)"
+    },
+    {
+      "lemma": "Zurvanism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sect.n.01",
+          "via_synset": "zurvanism.n.01"
+        }
+      ],
+      "definition": "a Zoroastrian sect that claims Zurvan was the ultimate source of the universe"
+    }
+  ]
+}

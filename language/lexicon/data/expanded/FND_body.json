@@ -1,0 +1,1751 @@
+{
+  "atom_id": "FND.body",
+  "category": "FND",
+  "seed_count": 6,
+  "total_keys": 115,
+  "pos_counts": {
+    "n": 100,
+    "adj": 15
+  },
+  "source_counts": {
+    "0_seed": 7,
+    "6_derivational": 4,
+    "11_pertainym": 2,
+    "7_similar_to": 14,
+    "2_hypernym_d1": 8,
+    "10_sibling": 89
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 4,
+      "words": [
+        "body(n)",
+        "soundbox(n)",
+        "physical(adj)",
+        "bodily(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 8,
+      "words": [
+        "message(n)",
+        "content(n)",
+        "subject matter(n)",
+        "substance(n)",
+        "mass(n)",
+        "resonator(n)",
+        "cavity resonator(n)",
+        "resonating chamber(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 3,
+      "words": [
+        "physics(n)",
+        "physicality(n)",
+        "physicalness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 13,
+      "words": [
+        "somatogenic(adj)",
+        "somatogenetic(adj)",
+        "personal(adj)",
+        "material(adj)",
+        "animal(adj)",
+        "carnal(adj)",
+        "fleshly(adj)",
+        "sensual(adj)",
+        "corporal(adj)",
+        "corporeal(adj)",
+        "somatic(adj)",
+        "physiologic(adj)",
+        "physiological(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 87,
+      "words": [
+        "refusal(n)",
+        "subject(n)",
+        "topic(n)",
+        "theme(n)",
+        "drivel(n)",
+        "garbage(n)",
+        "respects(n)",
+        "disrespect(n)",
+        "discourtesy(n)",
+        "request(n)",
+        "petition(n)",
+        "postulation(n)",
+        "disapproval(n)",
+        "statement(n)",
+        "digression(n)",
+        "aside(n)",
+        "excursus(n)",
+        "divagation(n)",
+        "parenthesis(n)",
+        "narrative(n)",
+        "narration(n)",
+        "story(n)",
+        "tale(n)",
+        "proposal(n)",
+        "reminder(n)",
+        "offer(n)",
+        "offering(n)",
+        "approval(n)",
+        "commendation(n)",
+        "memorial(n)",
+        "latent content(n)",
+        "meaning(n)",
+        "significance(n)",
+        "signification(n)",
+        "import(n)",
+        "acknowledgment(n)",
+        "acknowledgement(n)",
+        "wit(n)",
+        "humor(n)",
+        "humour(n)",
+        "witticism(n)",
+        "wittiness(n)",
+        "submission(n)",
+        "entry(n)",
+        "sensationalism(n)",
+        "promotion(n)",
+        "publicity(n)",
+        "promotional material(n)",
+        "packaging(n)",
+        "commitment(n)",
+        "dedication(n)",
+        "shocker(n)",
+        "interpolation(n)",
+        "insertion(n)",
+        "direction(n)",
+        "instruction(n)",
+        "information(n)",
+        "info(n)",
+        "corker(n)",
+        "guidance(n)",
+        "counsel(n)",
+        "counseling(n)",
+        "counselling(n)",
+        "opinion(n)",
+        "view(n)",
+        "nonsense(n)",
+        "bunk(n)",
+        "nonsensicality(n)",
+        "meaninglessness(n)",
+        "hokum(n)",
+        "atomic mass(n)",
+        "atomic weight(n)",
+        "relative atomic mass(n)",
+        "gravitational mass(n)",
+        "inertial mass(n)",
+        "bulk(n)",
+        "rest mass(n)",
+        "mass defect(n)",
+        "mass deficiency(n)",
+        "mass energy(n)",
+        "relativistic mass(n)",
+        "molecular weight(n)",
+        "relative molecular mass(n)",
+        "critical mass(n)",
+        "biomass(n)",
+        "sounding board(n)",
+        "soundboard(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "acknowledgement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "acknowledgment.n.03"
+        }
+      ],
+      "definition": "a statement acknowledging something or someone"
+    },
+    {
+      "lemma": "acknowledgment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "acknowledgment.n.03"
+        }
+      ],
+      "definition": "a statement acknowledging something or someone"
+    },
+    {
+      "lemma": "animal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "physical.a.01",
+          "via_synset": "animal.s.01"
+        }
+      ],
+      "definition": "marked by the appetites and passions of the body"
+    },
+    {
+      "lemma": "approval",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "approval.n.04"
+        }
+      ],
+      "definition": "a message expressing a favorable opinion"
+    },
+    {
+      "lemma": "aside",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "digression.n.01"
+        }
+      ],
+      "definition": "a message that departs from the main subject"
+    },
+    {
+      "lemma": "atomic mass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mass.n.01",
+          "via_synset": "atomic_mass.n.01"
+        }
+      ],
+      "definition": "(chemistry) the mass of an atom of a chemical element expressed in atomic mass units"
+    },
+    {
+      "lemma": "atomic weight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mass.n.01",
+          "via_synset": "atomic_mass.n.01"
+        }
+      ],
+      "definition": "(chemistry) the mass of an atom of a chemical element expressed in atomic mass units"
+    },
+    {
+      "lemma": "biomass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mass.n.01",
+          "via_synset": "biomass.n.02"
+        }
+      ],
+      "definition": "the total mass of living matter in a given unit area"
+    },
+    {
+      "lemma": "bodily",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bodily.a.01",
+          "via_synset": "bodily.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "physical.a.01",
+          "via_synset": "bodily.s.01"
+        }
+      ],
+      "definition": "of or relating to or belonging to the body"
+    },
+    {
+      "lemma": "body",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "body.n.08",
+          "via_synset": "body.n.08"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "body.n.09",
+          "via_synset": "body.n.09"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "soundbox.n.01",
+          "via_synset": "soundbox.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bodily.a.01",
+          "via_synset": "body.n.01"
+        },
+        {
+          "step": "11_pertainym",
+          "relation": "pertainym",
+          "from_synset": "bodily.a.01",
+          "via_synset": "body.n.01"
+        }
+      ],
+      "definition": "the central message of a communication"
+    },
+    {
+      "lemma": "bulk",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mass.n.01",
+          "via_synset": "bulk.n.03"
+        }
+      ],
+      "definition": "the property possessed by a large mass"
+    },
+    {
+      "lemma": "bunk",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "nonsense.n.01"
+        }
+      ],
+      "definition": "a message that seems to convey no meaning"
+    },
+    {
+      "lemma": "carnal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "physical.a.01",
+          "via_synset": "animal.s.01"
+        }
+      ],
+      "definition": "marked by the appetites and passions of the body"
+    },
+    {
+      "lemma": "cavity resonator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "soundbox.n.01",
+          "via_synset": "resonator.n.01"
+        }
+      ],
+      "definition": "a hollow chamber whose dimensions allow the resonant oscillation of electromagnetic or acoustic waves"
+    },
+    {
+      "lemma": "commendation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "approval.n.04"
+        }
+      ],
+      "definition": "a message expressing a favorable opinion"
+    },
+    {
+      "lemma": "commitment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "commitment.n.04"
+        }
+      ],
+      "definition": "a message that makes a pledge"
+    },
+    {
+      "lemma": "content",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "body.n.08",
+          "via_synset": "message.n.02"
+        }
+      ],
+      "definition": "what a communication that is about something is about"
+    },
+    {
+      "lemma": "corker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "corker.n.01"
+        }
+      ],
+      "definition": "(dated slang) a remarkable or excellent thing or person"
+    },
+    {
+      "lemma": "corporal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "physical.a.01",
+          "via_synset": "bodily.s.01"
+        }
+      ],
+      "definition": "affecting or characteristic of the body as opposed to the mind or spirit"
+    },
+    {
+      "lemma": "corporeal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "physical.a.01",
+          "via_synset": "bodily.s.01"
+        }
+      ],
+      "definition": "affecting or characteristic of the body as opposed to the mind or spirit"
+    },
+    {
+      "lemma": "counsel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "guidance.n.01"
+        }
+      ],
+      "definition": "something that provides direction or advice as to a decision or course of action"
+    },
+    {
+      "lemma": "counseling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "guidance.n.01"
+        }
+      ],
+      "definition": "something that provides direction or advice as to a decision or course of action"
+    },
+    {
+      "lemma": "counselling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "guidance.n.01"
+        }
+      ],
+      "definition": "something that provides direction or advice as to a decision or course of action"
+    },
+    {
+      "lemma": "critical mass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mass.n.01",
+          "via_synset": "critical_mass.n.02"
+        }
+      ],
+      "definition": "the minimum mass of fissionable material that can sustain a chain reaction"
+    },
+    {
+      "lemma": "dedication",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "commitment.n.04"
+        }
+      ],
+      "definition": "a message that makes a pledge"
+    },
+    {
+      "lemma": "digression",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "digression.n.01"
+        }
+      ],
+      "definition": "a message that departs from the main subject"
+    },
+    {
+      "lemma": "direction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "direction.n.06"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "guidance.n.01"
+        }
+      ],
+      "definition": "a message describing how something is to be done"
+    },
+    {
+      "lemma": "disapproval",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "disapproval.n.02"
+        }
+      ],
+      "definition": "the expression of disapproval"
+    },
+    {
+      "lemma": "discourtesy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "disrespect.n.01"
+        }
+      ],
+      "definition": "an expression of lack of respect"
+    },
+    {
+      "lemma": "disrespect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "disrespect.n.01"
+        }
+      ],
+      "definition": "an expression of lack of respect"
+    },
+    {
+      "lemma": "divagation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "digression.n.01"
+        }
+      ],
+      "definition": "a message that departs from the main subject"
+    },
+    {
+      "lemma": "drivel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "drivel.n.01"
+        }
+      ],
+      "definition": "a worthless message"
+    },
+    {
+      "lemma": "entry",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "submission.n.01"
+        }
+      ],
+      "definition": "something (manuscripts or architectural plans and models or estimates or works of art of all genres etc.) submitted for the judgment of others (as in a competition)"
+    },
+    {
+      "lemma": "excursus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "digression.n.01"
+        }
+      ],
+      "definition": "a message that departs from the main subject"
+    },
+    {
+      "lemma": "fleshly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "physical.a.01",
+          "via_synset": "animal.s.01"
+        }
+      ],
+      "definition": "marked by the appetites and passions of the body"
+    },
+    {
+      "lemma": "garbage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "drivel.n.01"
+        }
+      ],
+      "definition": "a worthless message"
+    },
+    {
+      "lemma": "gravitational mass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mass.n.01",
+          "via_synset": "gravitational_mass.n.01"
+        }
+      ],
+      "definition": "(physics) the mass of a body as measured by its gravitational attraction for other bodies"
+    },
+    {
+      "lemma": "guidance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "guidance.n.01"
+        }
+      ],
+      "definition": "something that provides direction or advice as to a decision or course of action"
+    },
+    {
+      "lemma": "hokum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "nonsense.n.01"
+        }
+      ],
+      "definition": "a message that seems to convey no meaning"
+    },
+    {
+      "lemma": "humor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "wit.n.01"
+        }
+      ],
+      "definition": "a message whose ingenuity or verbal skill or incongruity has the power to evoke laughter"
+    },
+    {
+      "lemma": "humour",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "wit.n.01"
+        }
+      ],
+      "definition": "a message whose ingenuity or verbal skill or incongruity has the power to evoke laughter"
+    },
+    {
+      "lemma": "import",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "meaning.n.01"
+        }
+      ],
+      "definition": "the message that is intended or expressed or signified"
+    },
+    {
+      "lemma": "inertial mass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mass.n.01",
+          "via_synset": "inertial_mass.n.01"
+        }
+      ],
+      "definition": "(physics) the mass of a body as determined by the second law of motion from the acceleration of the body when it is subjected to a force that is not due to gravity"
+    },
+    {
+      "lemma": "info",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "information.n.01"
+        }
+      ],
+      "definition": "a message received and understood"
+    },
+    {
+      "lemma": "information",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "information.n.01"
+        }
+      ],
+      "definition": "a message received and understood"
+    },
+    {
+      "lemma": "insertion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "interpolation.n.01"
+        }
+      ],
+      "definition": "a message (spoken or written) that is introduced or inserted"
+    },
+    {
+      "lemma": "instruction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "direction.n.06"
+        }
+      ],
+      "definition": "a message describing how something is to be done"
+    },
+    {
+      "lemma": "interpolation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "interpolation.n.01"
+        }
+      ],
+      "definition": "a message (spoken or written) that is introduced or inserted"
+    },
+    {
+      "lemma": "latent content",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "latent_content.n.01"
+        }
+      ],
+      "definition": "(psychoanalysis) hidden meaning of a fantasy or dream"
+    },
+    {
+      "lemma": "mass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "body.n.09",
+          "via_synset": "mass.n.01"
+        }
+      ],
+      "definition": "the property of a body that causes it to have weight in a gravitational field"
+    },
+    {
+      "lemma": "mass defect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mass.n.01",
+          "via_synset": "mass_defect.n.01"
+        }
+      ],
+      "definition": "the amount by which the mass of an atomic nucleus is less than the sum of the masses of its constituent particles"
+    },
+    {
+      "lemma": "mass deficiency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mass.n.01",
+          "via_synset": "mass_defect.n.01"
+        }
+      ],
+      "definition": "the amount by which the mass of an atomic nucleus is less than the sum of the masses of its constituent particles"
+    },
+    {
+      "lemma": "mass energy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mass.n.01",
+          "via_synset": "mass_energy.n.01"
+        }
+      ],
+      "definition": "(physics) the mass of a body regarded relativistically as energy"
+    },
+    {
+      "lemma": "material",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "physical.a.01",
+          "via_synset": "material.s.02"
+        }
+      ],
+      "definition": "concerned with or affecting physical as distinct from intellectual or psychological well-being; ; - T.Roosevelt"
+    },
+    {
+      "lemma": "meaning",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "meaning.n.01"
+        }
+      ],
+      "definition": "the message that is intended or expressed or signified"
+    },
+    {
+      "lemma": "meaninglessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "nonsense.n.01"
+        }
+      ],
+      "definition": "a message that seems to convey no meaning"
+    },
+    {
+      "lemma": "memorial",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "memorial.n.02"
+        }
+      ],
+      "definition": "a written statement of facts submitted in conjunction with a petition to an authority"
+    },
+    {
+      "lemma": "message",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "body.n.08",
+          "via_synset": "message.n.02"
+        }
+      ],
+      "definition": "what a communication that is about something is about"
+    },
+    {
+      "lemma": "molecular weight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mass.n.01",
+          "via_synset": "molecular_weight.n.01"
+        }
+      ],
+      "definition": "(chemistry) the sum of the relative atomic masses of the constituent atoms of a molecule"
+    },
+    {
+      "lemma": "narration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "narrative.n.01"
+        }
+      ],
+      "definition": "a message that tells the particulars of an act or occurrence or course of events; presented in writing or drama or cinema or as a radio or television program"
+    },
+    {
+      "lemma": "narrative",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "narrative.n.01"
+        }
+      ],
+      "definition": "a message that tells the particulars of an act or occurrence or course of events; presented in writing or drama or cinema or as a radio or television program"
+    },
+    {
+      "lemma": "nonsense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "nonsense.n.01"
+        }
+      ],
+      "definition": "a message that seems to convey no meaning"
+    },
+    {
+      "lemma": "nonsensicality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "nonsense.n.01"
+        }
+      ],
+      "definition": "a message that seems to convey no meaning"
+    },
+    {
+      "lemma": "offer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "offer.n.02"
+        }
+      ],
+      "definition": "something offered (as a proposal or bid)"
+    },
+    {
+      "lemma": "offering",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "offer.n.02"
+        }
+      ],
+      "definition": "something offered (as a proposal or bid)"
+    },
+    {
+      "lemma": "opinion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "opinion.n.02"
+        }
+      ],
+      "definition": "a message expressing a belief about something; the expression of a belief that is held with confidence but not substantiated by positive knowledge or proof"
+    },
+    {
+      "lemma": "packaging",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "promotion.n.01"
+        }
+      ],
+      "definition": "a message issued in behalf of some product or cause or idea or person or institution"
+    },
+    {
+      "lemma": "parenthesis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "digression.n.01"
+        }
+      ],
+      "definition": "a message that departs from the main subject"
+    },
+    {
+      "lemma": "personal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "physical.a.01",
+          "via_synset": "personal.s.02"
+        }
+      ],
+      "definition": "intimately concerning a person's body or physical being"
+    },
+    {
+      "lemma": "petition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "request.n.01"
+        }
+      ],
+      "definition": "a formal message requesting something that is submitted to an authority"
+    },
+    {
+      "lemma": "physical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "physical.a.01",
+          "via_synset": "physical.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "physical.a.02",
+          "via_synset": "physical.a.02"
+        }
+      ],
+      "definition": "involving the body as distinguished from the mind or spirit"
+    },
+    {
+      "lemma": "physicality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "physical.a.01",
+          "via_synset": "animalism.n.02"
+        }
+      ],
+      "definition": "preoccupation with satisfaction of physical drives and appetites"
+    },
+    {
+      "lemma": "physicalness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "physical.a.01",
+          "via_synset": "materiality.n.02"
+        }
+      ],
+      "definition": "the quality of being physical; consisting of matter"
+    },
+    {
+      "lemma": "physics",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "physical.a.02",
+          "via_synset": "physics.n.01"
+        },
+        {
+          "step": "11_pertainym",
+          "relation": "pertainym",
+          "from_synset": "physical.a.02",
+          "via_synset": "physics.n.01"
+        }
+      ],
+      "definition": "the science of matter and energy and their interactions"
+    },
+    {
+      "lemma": "physiologic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "physical.a.01",
+          "via_synset": "physiologic.s.01"
+        }
+      ],
+      "definition": "of or consistent with an organism's normal functioning"
+    },
+    {
+      "lemma": "physiological",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "physical.a.01",
+          "via_synset": "physiologic.s.01"
+        }
+      ],
+      "definition": "of or consistent with an organism's normal functioning"
+    },
+    {
+      "lemma": "postulation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "request.n.01"
+        }
+      ],
+      "definition": "a formal message requesting something that is submitted to an authority"
+    },
+    {
+      "lemma": "promotion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "promotion.n.01"
+        }
+      ],
+      "definition": "a message issued in behalf of some product or cause or idea or person or institution"
+    },
+    {
+      "lemma": "promotional material",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "promotion.n.01"
+        }
+      ],
+      "definition": "a message issued in behalf of some product or cause or idea or person or institution"
+    },
+    {
+      "lemma": "proposal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "proposal.n.01"
+        }
+      ],
+      "definition": "something proposed (such as a plan or assumption)"
+    },
+    {
+      "lemma": "publicity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "promotion.n.01"
+        }
+      ],
+      "definition": "a message issued in behalf of some product or cause or idea or person or institution"
+    },
+    {
+      "lemma": "refusal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "refusal.n.02"
+        }
+      ],
+      "definition": "a message refusing to accept something that is offered"
+    },
+    {
+      "lemma": "relative atomic mass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mass.n.01",
+          "via_synset": "atomic_mass.n.01"
+        }
+      ],
+      "definition": "(chemistry) the mass of an atom of a chemical element expressed in atomic mass units"
+    },
+    {
+      "lemma": "relative molecular mass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mass.n.01",
+          "via_synset": "molecular_weight.n.01"
+        }
+      ],
+      "definition": "(chemistry) the sum of the relative atomic masses of the constituent atoms of a molecule"
+    },
+    {
+      "lemma": "relativistic mass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mass.n.01",
+          "via_synset": "relativistic_mass.n.01"
+        }
+      ],
+      "definition": "(physics) the mass of a body in motion relative to the observer: it is equal to the rest mass multiplied by a factor that is greater than 1 and that increases as the magnitude of the velocity increases"
+    },
+    {
+      "lemma": "reminder",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "reminder.n.01"
+        }
+      ],
+      "definition": "a message that helps you remember something"
+    },
+    {
+      "lemma": "request",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "request.n.01"
+        }
+      ],
+      "definition": "a formal message requesting something that is submitted to an authority"
+    },
+    {
+      "lemma": "resonating chamber",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "soundbox.n.01",
+          "via_synset": "resonator.n.01"
+        }
+      ],
+      "definition": "a hollow chamber whose dimensions allow the resonant oscillation of electromagnetic or acoustic waves"
+    },
+    {
+      "lemma": "resonator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "soundbox.n.01",
+          "via_synset": "resonator.n.01"
+        }
+      ],
+      "definition": "a hollow chamber whose dimensions allow the resonant oscillation of electromagnetic or acoustic waves"
+    },
+    {
+      "lemma": "respects",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "respects.n.01"
+        }
+      ],
+      "definition": "(often used with `pay') a formal expression of esteem"
+    },
+    {
+      "lemma": "rest mass",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "mass.n.01",
+          "via_synset": "rest_mass.n.01"
+        }
+      ],
+      "definition": "(physics) the mass of a body as measured when the body is at rest relative to an observer, an inherent property of the body"
+    },
+    {
+      "lemma": "sensationalism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "sensationalism.n.01"
+        }
+      ],
+      "definition": "subject matter that is calculated to excite and please vulgar tastes"
+    },
+    {
+      "lemma": "sensual",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "physical.a.01",
+          "via_synset": "animal.s.01"
+        }
+      ],
+      "definition": "marked by the appetites and passions of the body"
+    },
+    {
+      "lemma": "shocker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "shocker.n.02"
+        }
+      ],
+      "definition": "a sensational message (in a film or play or novel)"
+    },
+    {
+      "lemma": "significance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "meaning.n.01"
+        }
+      ],
+      "definition": "the message that is intended or expressed or signified"
+    },
+    {
+      "lemma": "signification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "meaning.n.01"
+        }
+      ],
+      "definition": "the message that is intended or expressed or signified"
+    },
+    {
+      "lemma": "somatic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "physical.a.01",
+          "via_synset": "bodily.s.01"
+        }
+      ],
+      "definition": "affecting or characteristic of the body as opposed to the mind or spirit"
+    },
+    {
+      "lemma": "somatogenetic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "physical.a.01",
+          "via_synset": "somatogenic.s.01"
+        }
+      ],
+      "definition": "of or arising from physiological causes rather than being psychogenic in origin"
+    },
+    {
+      "lemma": "somatogenic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "physical.a.01",
+          "via_synset": "somatogenic.s.01"
+        }
+      ],
+      "definition": "of or arising from physiological causes rather than being psychogenic in origin"
+    },
+    {
+      "lemma": "soundboard",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "resonator.n.01",
+          "via_synset": "sounding_board.n.02"
+        }
+      ],
+      "definition": "(music) resonator consisting of a thin board whose vibrations reinforce the sound of the instrument"
+    },
+    {
+      "lemma": "soundbox",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "soundbox.n.01",
+          "via_synset": "soundbox.n.01"
+        }
+      ],
+      "definition": "a resonating chamber in a musical instrument (as the body of a violin)"
+    },
+    {
+      "lemma": "sounding board",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "resonator.n.01",
+          "via_synset": "sounding_board.n.02"
+        }
+      ],
+      "definition": "(music) resonator consisting of a thin board whose vibrations reinforce the sound of the instrument"
+    },
+    {
+      "lemma": "statement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "statement.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "statement.n.04"
+        }
+      ],
+      "definition": "a message that is stated or declared; a communication (oral or written) setting forth particulars or facts etc"
+    },
+    {
+      "lemma": "story",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "narrative.n.01"
+        }
+      ],
+      "definition": "a message that tells the particulars of an act or occurrence or course of events; presented in writing or drama or cinema or as a radio or television program"
+    },
+    {
+      "lemma": "subject",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "subject.n.01"
+        }
+      ],
+      "definition": "the subject matter of a conversation or discussion"
+    },
+    {
+      "lemma": "subject matter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "body.n.08",
+          "via_synset": "message.n.02"
+        }
+      ],
+      "definition": "what a communication that is about something is about"
+    },
+    {
+      "lemma": "submission",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "submission.n.01"
+        }
+      ],
+      "definition": "something (manuscripts or architectural plans and models or estimates or works of art of all genres etc.) submitted for the judgment of others (as in a competition)"
+    },
+    {
+      "lemma": "substance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "body.n.08",
+          "via_synset": "message.n.02"
+        }
+      ],
+      "definition": "what a communication that is about something is about"
+    },
+    {
+      "lemma": "tale",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "narrative.n.01"
+        }
+      ],
+      "definition": "a message that tells the particulars of an act or occurrence or course of events; presented in writing or drama or cinema or as a radio or television program"
+    },
+    {
+      "lemma": "theme",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "subject.n.01"
+        }
+      ],
+      "definition": "the subject matter of a conversation or discussion"
+    },
+    {
+      "lemma": "topic",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "subject.n.01"
+        }
+      ],
+      "definition": "the subject matter of a conversation or discussion"
+    },
+    {
+      "lemma": "view",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "opinion.n.02"
+        }
+      ],
+      "definition": "a message expressing a belief about something; the expression of a belief that is held with confidence but not substantiated by positive knowledge or proof"
+    },
+    {
+      "lemma": "wit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "wit.n.01"
+        }
+      ],
+      "definition": "a message whose ingenuity or verbal skill or incongruity has the power to evoke laughter"
+    },
+    {
+      "lemma": "witticism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "wit.n.01"
+        }
+      ],
+      "definition": "a message whose ingenuity or verbal skill or incongruity has the power to evoke laughter"
+    },
+    {
+      "lemma": "wittiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "message.n.02",
+          "via_synset": "wit.n.01"
+        }
+      ],
+      "definition": "a message whose ingenuity or verbal skill or incongruity has the power to evoke laughter"
+    }
+  ]
+}

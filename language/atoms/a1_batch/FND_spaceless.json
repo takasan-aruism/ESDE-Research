@@ -1,0 +1,59 @@
+{
+  "atom": "FND.spaceless",
+  "category": "FND",
+  "status": "proposed",
+  "symmetric_pair": "FND.spatiality",
+  "definition_en": "Existing without spatial dimension.",
+  "seed_synsets": [],
+  "core_pool": {
+    "rules": [
+      "0_seed",
+      "3_hyponym_d1",
+      "6_derivational",
+      "7_similar_to",
+      "9_antonym"
+    ],
+    "count": 0,
+    "words": []
+  },
+  "deviation_pool": {
+    "rules": [
+      "10_sibling",
+      "11_pertainym",
+      "12_verb_group",
+      "2_hypernym_d1",
+      "4_hyponym_d2",
+      "5_hyponym_d3",
+      "8_also_see"
+    ],
+    "count": 0,
+    "words": []
+  },
+  "deviation_stats": {
+    "total_candidates": 0,
+    "core_count": 0,
+    "dev_count": 0,
+    "core_ratio": 0,
+    "dev_ratio": 0,
+    "dev_source_breakdown": {},
+    "step_contributions": {
+      "0_seed": 0,
+      "2_hypernym_d1": 0,
+      "3_hyponym_d1": 0,
+      "4_hyponym_d2": 0,
+      "5_hyponym_d3": 0,
+      "6_derivational": 0,
+      "7_similar_to": 0,
+      "8_also_see": 0,
+      "9_antonym": 0,
+      "10_sibling": 0,
+      "11_pertainym": 0,
+      "12_verb_group": 0
+    }
+  },
+  "meta": {
+    "generator": "wn_lexicon_entry.py",
+    "version": "1.0.0",
+    "design": "3AI consolidated: Core/Deviation pool separation"
+  }
+}

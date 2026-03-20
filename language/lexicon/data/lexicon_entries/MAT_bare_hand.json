@@ -1,0 +1,357 @@
+{
+  "atom": "MAT.bare_hand",
+  "category": "MAT",
+  "status": "proposed",
+  "symmetric_pair": "MAT.tool",
+  "definition_en": "Using the hand without covering or tool.",
+  "seed_synsets": [],
+  "core_pool": {
+    "rules": [
+      "0_seed",
+      "3_hyponym_d1",
+      "6_derivational",
+      "7_similar_to",
+      "9_antonym"
+    ],
+    "count": 16,
+    "words": [
+      {
+        "w": "armed",
+        "pos": "adj",
+        "src": "9_antonym",
+        "definition": "(used of persons or the military) characterized by having or bearing arms",
+        "path_count": 1,
+        "sources": [
+          "9_antonym"
+        ]
+      },
+      {
+        "w": "barehanded",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "with bare hands",
+        "path_count": 2,
+        "sources": [
+          "0_seed",
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "clean",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "not carrying concealed weapons",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "defenceless",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "lacking weapons for self-defense",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "defenseless",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "lacking weapons for self-defense",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "demilitarise",
+        "pos": "v",
+        "src": "3_hyponym_d1",
+        "definition": "do away with the military organization and potential of",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "demilitarize",
+        "pos": "v",
+        "src": "3_hyponym_d1",
+        "definition": "do away with the military organization and potential of",
+        "path_count": 1,
+        "sources": [
+          "3_hyponym_d1"
+        ]
+      },
+      {
+        "w": "disarm",
+        "pos": "v",
+        "src": "0_seed",
+        "definition": "take away the weapons from; render harmless",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "disarmament",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "act of reducing or depriving of arms",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "disarmer",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "someone opposed to violence as a means of settling disputes",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "disarming",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "act of reducing or depriving of arms",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "neutralisation",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "action intended to keep a country politically neutral or exclude it from a possible war",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "neutralization",
+        "pos": "n",
+        "src": "6_derivational",
+        "definition": "action intended to keep a country politically neutral or exclude it from a possible war",
+        "path_count": 1,
+        "sources": [
+          "6_derivational"
+        ]
+      },
+      {
+        "w": "unarm",
+        "pos": "v",
+        "src": "0_seed",
+        "definition": "take away the weapons from; render harmless",
+        "path_count": 1,
+        "sources": [
+          "0_seed"
+        ]
+      },
+      {
+        "w": "unarmed",
+        "pos": "adj",
+        "src": "0_seed",
+        "definition": "(used of persons or the military) not having or using arms",
+        "path_count": 2,
+        "sources": [
+          "0_seed",
+          "7_similar_to"
+        ]
+      },
+      {
+        "w": "weaponless",
+        "pos": "adj",
+        "src": "7_similar_to",
+        "definition": "without a weapon",
+        "path_count": 1,
+        "sources": [
+          "7_similar_to"
+        ]
+      }
+    ]
+  },
+  "deviation_pool": {
+    "rules": [
+      "10_sibling",
+      "11_pertainym",
+      "12_verb_group",
+      "2_hypernym_d1",
+      "4_hyponym_d2",
+      "5_hyponym_d3",
+      "8_also_see"
+    ],
+    "count": 13,
+    "words": [
+      {
+        "w": "bereave",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "deprive through death",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "clean",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "deprive wholly of money in a gambling game, robbery, etc.",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "clean out",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "deprive completely of money or goods",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "deprive",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "take away possessions from someone",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "dispossess",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "deprive of the possession of real estate",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "divest",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "take away possessions from someone",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "expropriate",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "deprive of possessions",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "neutralise",
+        "pos": "v",
+        "src": "4_hyponym_d2",
+        "definition": "make incapable of military action",
+        "path_count": 1,
+        "sources": [
+          "4_hyponym_d2"
+        ]
+      },
+      {
+        "w": "neutralize",
+        "pos": "v",
+        "src": "4_hyponym_d2",
+        "definition": "make incapable of military action",
+        "path_count": 1,
+        "sources": [
+          "4_hyponym_d2"
+        ]
+      },
+      {
+        "w": "orphan",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "deprive of parents",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "strip",
+        "pos": "v",
+        "src": "2_hypernym_d1",
+        "definition": "take away possessions from someone",
+        "path_count": 1,
+        "sources": [
+          "2_hypernym_d1"
+        ]
+      },
+      {
+        "w": "unclothe",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "strip",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      },
+      {
+        "w": "unsex",
+        "pos": "v",
+        "src": "10_sibling",
+        "definition": "deprive of sex or sexual powers",
+        "path_count": 1,
+        "sources": [
+          "10_sibling"
+        ]
+      }
+    ]
+  },
+  "deviation_stats": {
+    "total_candidates": 29,
+    "core_count": 16,
+    "dev_count": 13,
+    "core_ratio": 0.552,
+    "dev_ratio": 0.448,
+    "dev_source_breakdown": {
+      "10_sibling": 8,
+      "2_hypernym_d1": 3,
+      "4_hyponym_d2": 2
+    },
+    "step_contributions": {
+      "0_seed": 4,
+      "2_hypernym_d1": 3,
+      "3_hyponym_d1": 2,
+      "4_hyponym_d2": 2,
+      "5_hyponym_d3": 0,
+      "6_derivational": 5,
+      "7_similar_to": 4,
+      "8_also_see": 0,
+      "9_antonym": 1,
+      "10_sibling": 8,
+      "11_pertainym": 0,
+      "12_verb_group": 0
+    }
+  },
+  "meta": {
+    "generator": "wn_lexicon_entry.py",
+    "version": "1.0.0",
+    "design": "3AI consolidated: Core/Deviation pool separation"
+  }
+}

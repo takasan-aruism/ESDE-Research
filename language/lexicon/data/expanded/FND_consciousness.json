@@ -1,0 +1,1783 @@
+{
+  "atom_id": "FND.consciousness",
+  "category": "FND",
+  "seed_count": 6,
+  "total_keys": 102,
+  "pos_counts": {
+    "n": 71,
+    "adj": 25,
+    "v": 6
+  },
+  "source_counts": {
+    "0_seed": 13,
+    "6_derivational": 31,
+    "3_hyponym_d1": 12,
+    "10_sibling": 44,
+    "7_similar_to": 19,
+    "8_also_see": 12,
+    "2_hypernym_d1": 3,
+    "4_hyponym_d2": 6,
+    "5_hyponym_d3": 2,
+    "9_antonym": 3
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 10,
+      "words": [
+        "consciousness(n)",
+        "awareness(n)",
+        "cognizance(n)",
+        "cognisance(n)",
+        "knowingness(n)",
+        "aware(adj)",
+        "cognizant(adj)",
+        "cognisant(adj)",
+        "mindful(adj)",
+        "conscious(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 3,
+      "words": [
+        "cognitive state(n)",
+        "state of mind(n)",
+        "knowing(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 11,
+      "words": [
+        "self(n)",
+        "ego(n)",
+        "stream of consciousness(n)",
+        "waking(n)",
+        "sensibility(n)",
+        "esthesia(n)",
+        "aesthesia(n)",
+        "sentience(n)",
+        "sense(n)",
+        "self-awareness(n)",
+        "feel(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 6,
+      "words": [
+        "anima(n)",
+        "wakefulness(n)",
+        "sense of responsibility(n)",
+        "sense of direction(n)",
+        "self-consciousness(n)",
+        "orientation(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 2,
+      "words": [
+        "vigil(n)",
+        "arousal(n)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 12,
+      "words": [
+        "feel(v)",
+        "self-conscious(adj)",
+        "mindfulness(n)",
+        "sense(v)",
+        "sensify(v)",
+        "sentient(adj)",
+        "cognize(v)",
+        "cognise(v)",
+        "sensible(adj)",
+        "knowing(adj)",
+        "self-aware(adj)",
+        "wake(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 11,
+      "words": [
+        "careful(adj)",
+        "heedful(adj)",
+        "evocative(adj)",
+        "redolent(adj)",
+        "remindful(adj)",
+        "reminiscent(adj)",
+        "resonant(adj)",
+        "alert(adj)",
+        "alive(adj)",
+        "awake(adj)",
+        "semiconscious(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 3,
+      "words": [
+        "witting(adj)",
+        "sensitive(adj)",
+        "voluntary(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 3,
+      "words": [
+        "unconsciousness(n)",
+        "incognizance(n)",
+        "unmindful(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 41,
+      "words": [
+        "amnesia(n)",
+        "memory loss(n)",
+        "blackout(n)",
+        "interestedness(n)",
+        "curiosity(n)",
+        "wonder(n)",
+        "inwardness(n)",
+        "outwardness(n)",
+        "confusion(n)",
+        "mental confusion(n)",
+        "confusedness(n)",
+        "muddiness(n)",
+        "disarray(n)",
+        "paramnesia(n)",
+        "preoccupation(n)",
+        "preoccupancy(n)",
+        "absorption(n)",
+        "engrossment(n)",
+        "subconsciousness(n)",
+        "set(n)",
+        "readiness(n)",
+        "morbidity(n)",
+        "morbidness(n)",
+        "doubt(n)",
+        "uncertainty(n)",
+        "incertitude(n)",
+        "dubiety(n)",
+        "doubtfulness(n)",
+        "dubiousness(n)",
+        "certainty(n)",
+        "ivory tower(n)",
+        "prevision(n)",
+        "foresight(n)",
+        "farsightedness(n)",
+        "prospicience(n)",
+        "ken(n)",
+        "understanding(n)",
+        "apprehension(n)",
+        "discernment(n)",
+        "savvy(n)",
+        "know(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "absorption",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "preoccupation.n.02"
+        }
+      ],
+      "definition": "the mental state of being preoccupied by something"
+    },
+    {
+      "lemma": "aesthesia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "consciousness.n.01",
+          "via_synset": "sensibility.n.01"
+        }
+      ],
+      "definition": "mental responsiveness and awareness"
+    },
+    {
+      "lemma": "alert",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "aware.a.01",
+          "via_synset": "alert.s.02"
+        }
+      ],
+      "definition": "mentally perceptive and responsive"
+    },
+    {
+      "lemma": "alive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "aware.a.01",
+          "via_synset": "alert.s.02"
+        }
+      ],
+      "definition": "mentally perceptive and responsive"
+    },
+    {
+      "lemma": "amnesia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "amnesia.n.01"
+        }
+      ],
+      "definition": "partial or total loss of memory"
+    },
+    {
+      "lemma": "anima",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "self.n.01",
+          "via_synset": "anima.n.01"
+        }
+      ],
+      "definition": "(Jungian psychology) the inner self (not the external persona) that is in touch with the unconscious"
+    },
+    {
+      "lemma": "apprehension",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "understanding.n.01"
+        }
+      ],
+      "definition": "the cognitive condition of someone who understands"
+    },
+    {
+      "lemma": "arousal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "wakefulness.n.01",
+          "via_synset": "arousal.n.03"
+        }
+      ],
+      "definition": "awakening from sleep"
+    },
+    {
+      "lemma": "awake",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "aware.a.01",
+          "via_synset": "alert.s.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "aware.a.01",
+          "via_synset": "awake.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "conscious.a.02",
+          "via_synset": "awake.a.01"
+        }
+      ],
+      "definition": "mentally perceptive and responsive"
+    },
+    {
+      "lemma": "aware",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aware.a.01",
+          "via_synset": "aware.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "mindful.a.01",
+          "via_synset": "mindful.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "awareness.n.02",
+          "via_synset": "mindful.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "awareness.n.01",
+          "via_synset": "mindful.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "awareness.n.01",
+          "via_synset": "aware.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "conscious.s.02",
+          "via_synset": "aware.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "conscious.a.02",
+          "via_synset": "aware.a.01"
+        }
+      ],
+      "definition": "(sometimes followed by `of') having or showing knowledge or understanding or realization or perception"
+    },
+    {
+      "lemma": "awareness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "awareness.n.01",
+          "via_synset": "awareness.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "consciousness.n.01",
+          "via_synset": "awareness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mindful.a.01",
+          "via_synset": "awareness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mindful.a.01",
+          "via_synset": "awareness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aware.a.01",
+          "via_synset": "awareness.n.01"
+        }
+      ],
+      "definition": "having knowledge of"
+    },
+    {
+      "lemma": "blackout",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "amnesia.n.01"
+        }
+      ],
+      "definition": "partial or total loss of memory"
+    },
+    {
+      "lemma": "careful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mindful.a.01",
+          "via_synset": "careful.s.01"
+        }
+      ],
+      "definition": "cautiously attentive"
+    },
+    {
+      "lemma": "certainty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "certainty.n.01"
+        }
+      ],
+      "definition": "the state of being certain"
+    },
+    {
+      "lemma": "cognisance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "awareness.n.01",
+          "via_synset": "awareness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aware.a.01",
+          "via_synset": "awareness.n.01"
+        }
+      ],
+      "definition": "having knowledge of"
+    },
+    {
+      "lemma": "cognisant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aware.a.01",
+          "via_synset": "aware.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "awareness.n.01",
+          "via_synset": "aware.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "conscious.s.02",
+          "via_synset": "aware.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "conscious.a.02",
+          "via_synset": "aware.a.01"
+        }
+      ],
+      "definition": "(sometimes followed by `of') having or showing knowledge or understanding or realization or perception"
+    },
+    {
+      "lemma": "cognise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aware.a.01",
+          "via_synset": "know.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "awareness.n.01",
+          "via_synset": "know.v.01"
+        }
+      ],
+      "definition": "be cognizant or aware of a fact or a specific piece of information; possess knowledge or information about"
+    },
+    {
+      "lemma": "cognitive state",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "consciousness.n.01",
+          "via_synset": "cognitive_state.n.01"
+        }
+      ],
+      "definition": "the state of a person's cognitive processes"
+    },
+    {
+      "lemma": "cognizance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "awareness.n.01",
+          "via_synset": "awareness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aware.a.01",
+          "via_synset": "awareness.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "cognizance.n.02"
+        }
+      ],
+      "definition": "having knowledge of"
+    },
+    {
+      "lemma": "cognizant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aware.a.01",
+          "via_synset": "aware.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "awareness.n.01",
+          "via_synset": "aware.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "conscious.s.02",
+          "via_synset": "aware.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "conscious.a.02",
+          "via_synset": "aware.a.01"
+        }
+      ],
+      "definition": "(sometimes followed by `of') having or showing knowledge or understanding or realization or perception"
+    },
+    {
+      "lemma": "cognize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aware.a.01",
+          "via_synset": "know.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "awareness.n.01",
+          "via_synset": "know.v.01"
+        }
+      ],
+      "definition": "be cognizant or aware of a fact or a specific piece of information; possess knowledge or information about"
+    },
+    {
+      "lemma": "confusedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "confusion.n.02"
+        }
+      ],
+      "definition": "a mental state characterized by a lack of clear and orderly thought and behavior"
+    },
+    {
+      "lemma": "confusion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "confusion.n.02"
+        }
+      ],
+      "definition": "a mental state characterized by a lack of clear and orderly thought and behavior"
+    },
+    {
+      "lemma": "conscious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "conscious.a.02",
+          "via_synset": "conscious.a.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "conscious.s.02",
+          "via_synset": "conscious.s.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "awareness.n.01",
+          "via_synset": "conscious.s.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consciousness.n.01",
+          "via_synset": "conscious.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consciousness.n.01",
+          "via_synset": "conscious.a.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "aware.a.01",
+          "via_synset": "conscious.s.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "aware.a.01",
+          "via_synset": "conscious.a.02"
+        }
+      ],
+      "definition": "knowing and perceiving; having awareness of surroundings and sensations and thoughts"
+    },
+    {
+      "lemma": "consciousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "consciousness.n.01",
+          "via_synset": "consciousness.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "awareness.n.01",
+          "via_synset": "awareness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "conscious.s.02",
+          "via_synset": "awareness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "conscious.a.02",
+          "via_synset": "consciousness.n.01"
+        }
+      ],
+      "definition": "an alert cognitive state in which you are aware of yourself and your situation"
+    },
+    {
+      "lemma": "curiosity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "curiosity.n.01"
+        }
+      ],
+      "definition": "a state in which you want to learn more about something"
+    },
+    {
+      "lemma": "disarray",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "confusion.n.02"
+        }
+      ],
+      "definition": "a mental state characterized by a lack of clear and orderly thought and behavior"
+    },
+    {
+      "lemma": "discernment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "understanding.n.01"
+        }
+      ],
+      "definition": "the cognitive condition of someone who understands"
+    },
+    {
+      "lemma": "doubt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "doubt.n.01"
+        }
+      ],
+      "definition": "the state of being unsure of something"
+    },
+    {
+      "lemma": "doubtfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "doubt.n.01"
+        }
+      ],
+      "definition": "the state of being unsure of something"
+    },
+    {
+      "lemma": "dubiety",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "doubt.n.01"
+        }
+      ],
+      "definition": "the state of being unsure of something"
+    },
+    {
+      "lemma": "dubiousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "doubt.n.01"
+        }
+      ],
+      "definition": "the state of being unsure of something"
+    },
+    {
+      "lemma": "ego",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "consciousness.n.01",
+          "via_synset": "self.n.01"
+        }
+      ],
+      "definition": "your consciousness of your own identity"
+    },
+    {
+      "lemma": "engrossment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "preoccupation.n.02"
+        }
+      ],
+      "definition": "the mental state of being preoccupied by something"
+    },
+    {
+      "lemma": "esthesia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "consciousness.n.01",
+          "via_synset": "sensibility.n.01"
+        }
+      ],
+      "definition": "mental responsiveness and awareness"
+    },
+    {
+      "lemma": "evocative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mindful.a.01",
+          "via_synset": "evocative.s.01"
+        }
+      ],
+      "definition": "serving to bring to mind; - Wilder Hobson"
+    },
+    {
+      "lemma": "farsightedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "prevision.n.03"
+        }
+      ],
+      "definition": "seeing ahead; knowing in advance; foreseeing"
+    },
+    {
+      "lemma": "feel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "awareness.n.01",
+          "via_synset": "feel.n.01"
+        }
+      ],
+      "definition": "an intuitive awareness;  or"
+    },
+    {
+      "lemma": "feel",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "feel.n.01",
+          "via_synset": "find.v.05"
+        }
+      ],
+      "definition": "come to believe on the basis of emotion, intuitions, or indefinite grounds"
+    },
+    {
+      "lemma": "foresight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "prevision.n.03"
+        }
+      ],
+      "definition": "seeing ahead; knowing in advance; foreseeing"
+    },
+    {
+      "lemma": "heedful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mindful.a.01",
+          "via_synset": "careful.s.01"
+        }
+      ],
+      "definition": "cautiously attentive"
+    },
+    {
+      "lemma": "incertitude",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "doubt.n.01"
+        }
+      ],
+      "definition": "the state of being unsure of something"
+    },
+    {
+      "lemma": "incognizance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "awareness.n.01",
+          "via_synset": "incognizance.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "incognizance.n.01"
+        }
+      ],
+      "definition": "a lack of knowledge or recognition"
+    },
+    {
+      "lemma": "interestedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "interestedness.n.01"
+        }
+      ],
+      "definition": "the state of being interested"
+    },
+    {
+      "lemma": "inwardness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "inwardness.n.02"
+        }
+      ],
+      "definition": "preoccupation especially with one's attitudes and ethical or ideological values"
+    },
+    {
+      "lemma": "ivory tower",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "ivory_tower.n.01"
+        }
+      ],
+      "definition": "a state of mind that is discussed as if it were a place"
+    },
+    {
+      "lemma": "ken",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "cognizance.n.02"
+        }
+      ],
+      "definition": "range of what one can know or understand"
+    },
+    {
+      "lemma": "know",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "know.n.01"
+        }
+      ],
+      "definition": "the fact of being aware of information that is known to few people"
+    },
+    {
+      "lemma": "knowing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "awareness.n.01",
+          "via_synset": "knowledgeable.s.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "awareness.n.01",
+          "via_synset": "knowing.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "awareness.n.01",
+          "via_synset": "knowing.s.04"
+        }
+      ],
+      "definition": "alert and fully informed"
+    },
+    {
+      "lemma": "knowing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "awareness.n.01",
+          "via_synset": "knowing.n.01"
+        }
+      ],
+      "definition": "a clear and certain mental apprehension"
+    },
+    {
+      "lemma": "knowingness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "awareness.n.01",
+          "via_synset": "awareness.n.01"
+        }
+      ],
+      "definition": "having knowledge of"
+    },
+    {
+      "lemma": "memory loss",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "amnesia.n.01"
+        }
+      ],
+      "definition": "partial or total loss of memory"
+    },
+    {
+      "lemma": "mental confusion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "confusion.n.02"
+        }
+      ],
+      "definition": "a mental state characterized by a lack of clear and orderly thought and behavior"
+    },
+    {
+      "lemma": "mindful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "mindful.a.01",
+          "via_synset": "mindful.a.01"
+        }
+      ],
+      "definition": "bearing in mind; attentive to"
+    },
+    {
+      "lemma": "mindfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mindful.a.01",
+          "via_synset": "mindfulness.n.01"
+        }
+      ],
+      "definition": "the trait of staying aware of (paying close attention to) your responsibilities"
+    },
+    {
+      "lemma": "morbidity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "morbidity.n.02"
+        }
+      ],
+      "definition": "an abnormally gloomy or unhealthy state of mind"
+    },
+    {
+      "lemma": "morbidness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "morbidity.n.02"
+        }
+      ],
+      "definition": "an abnormally gloomy or unhealthy state of mind"
+    },
+    {
+      "lemma": "muddiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "confusion.n.02"
+        }
+      ],
+      "definition": "a mental state characterized by a lack of clear and orderly thought and behavior"
+    },
+    {
+      "lemma": "orientation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "self-awareness.n.01",
+          "via_synset": "orientation.n.05"
+        }
+      ],
+      "definition": "a person's awareness of self with regard to position and time and place and personal relationships"
+    },
+    {
+      "lemma": "outwardness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "outwardness.n.01"
+        }
+      ],
+      "definition": "concern with outward things or material objects as opposed to the mind and spirit"
+    },
+    {
+      "lemma": "paramnesia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "paramnesia.n.01"
+        }
+      ],
+      "definition": "(psychiatry) a disorder of memory in which dreams or fantasies are confused with reality"
+    },
+    {
+      "lemma": "preoccupancy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "preoccupation.n.02"
+        }
+      ],
+      "definition": "the mental state of being preoccupied by something"
+    },
+    {
+      "lemma": "preoccupation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "preoccupation.n.02"
+        }
+      ],
+      "definition": "the mental state of being preoccupied by something"
+    },
+    {
+      "lemma": "prevision",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "prevision.n.03"
+        }
+      ],
+      "definition": "seeing ahead; knowing in advance; foreseeing"
+    },
+    {
+      "lemma": "prospicience",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "prevision.n.03"
+        }
+      ],
+      "definition": "seeing ahead; knowing in advance; foreseeing"
+    },
+    {
+      "lemma": "readiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "set.n.12"
+        }
+      ],
+      "definition": "(psychology) being temporarily ready to respond in a particular way"
+    },
+    {
+      "lemma": "redolent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mindful.a.01",
+          "via_synset": "evocative.s.01"
+        }
+      ],
+      "definition": "serving to bring to mind; - Wilder Hobson"
+    },
+    {
+      "lemma": "remindful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mindful.a.01",
+          "via_synset": "evocative.s.01"
+        }
+      ],
+      "definition": "serving to bring to mind; - Wilder Hobson"
+    },
+    {
+      "lemma": "reminiscent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mindful.a.01",
+          "via_synset": "evocative.s.01"
+        }
+      ],
+      "definition": "serving to bring to mind; - Wilder Hobson"
+    },
+    {
+      "lemma": "resonant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mindful.a.01",
+          "via_synset": "evocative.s.01"
+        }
+      ],
+      "definition": "serving to bring to mind; - Wilder Hobson"
+    },
+    {
+      "lemma": "savvy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "understanding.n.01"
+        }
+      ],
+      "definition": "the cognitive condition of someone who understands"
+    },
+    {
+      "lemma": "self",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "consciousness.n.01",
+          "via_synset": "self.n.01"
+        }
+      ],
+      "definition": "your consciousness of your own identity"
+    },
+    {
+      "lemma": "self-aware",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "self-awareness.n.01",
+          "via_synset": "self-conscious.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "conscious.a.02",
+          "via_synset": "self-conscious.s.01"
+        }
+      ],
+      "definition": "aware of yourself as an individual or of your own being and actions and thoughts; ; - D.M.Potter"
+    },
+    {
+      "lemma": "self-awareness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "awareness.n.01",
+          "via_synset": "self-awareness.n.01"
+        }
+      ],
+      "definition": "awareness of your own individuality"
+    },
+    {
+      "lemma": "self-conscious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "self-consciousness.n.02",
+          "via_synset": "self-conscious.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "conscious.a.02",
+          "via_synset": "self-conscious.s.01"
+        }
+      ],
+      "definition": "aware of yourself as an individual or of your own being and actions and thoughts; ; - D.M.Potter"
+    },
+    {
+      "lemma": "self-consciousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "self-awareness.n.01",
+          "via_synset": "self-consciousness.n.02"
+        }
+      ],
+      "definition": "self-awareness plus the additional realization that others are similarly aware of you"
+    },
+    {
+      "lemma": "semiconscious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "conscious.a.02",
+          "via_synset": "semiconscious.s.01"
+        }
+      ],
+      "definition": "partially conscious; not completely aware of sensations"
+    },
+    {
+      "lemma": "sense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "awareness.n.01",
+          "via_synset": "sense.n.01"
+        }
+      ],
+      "definition": "a general conscious awareness"
+    },
+    {
+      "lemma": "sense",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sense.n.01",
+          "via_synset": "smell.v.05"
+        }
+      ],
+      "definition": "become aware of not through the senses but instinctively"
+    },
+    {
+      "lemma": "sense of direction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sense.n.01",
+          "via_synset": "sense_of_direction.n.01"
+        }
+      ],
+      "definition": "an awareness of your orientation in space"
+    },
+    {
+      "lemma": "sense of responsibility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "sense.n.01",
+          "via_synset": "sense_of_responsibility.n.01"
+        }
+      ],
+      "definition": "an awareness of your obligations"
+    },
+    {
+      "lemma": "sensibility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "consciousness.n.01",
+          "via_synset": "sensibility.n.01"
+        }
+      ],
+      "definition": "mental responsiveness and awareness"
+    },
+    {
+      "lemma": "sensible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sensibility.n.01",
+          "via_synset": "sensible.a.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "aware.a.01",
+          "via_synset": "sensible.s.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "aware.a.01",
+          "via_synset": "sensible.a.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "conscious.a.02",
+          "via_synset": "sensible.a.02"
+        }
+      ],
+      "definition": "able to feel or perceive"
+    },
+    {
+      "lemma": "sensify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sense.n.01",
+          "via_synset": "sensitize.v.01"
+        }
+      ],
+      "definition": "make sensitive or aware"
+    },
+    {
+      "lemma": "sensitive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "aware.a.01",
+          "via_synset": "sensible.a.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "conscious.a.02",
+          "via_synset": "sensible.a.02"
+        }
+      ],
+      "definition": "able to feel or perceive"
+    },
+    {
+      "lemma": "sentience",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "consciousness.n.01",
+          "via_synset": "awareness.n.02"
+        }
+      ],
+      "definition": "state of elementary or undifferentiated consciousness"
+    },
+    {
+      "lemma": "sentient",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "awareness.n.02",
+          "via_synset": "sentient.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "conscious.a.02",
+          "via_synset": "sentient.s.01"
+        }
+      ],
+      "definition": "endowed with feeling and unstructured consciousness; - T.E.Lawrence"
+    },
+    {
+      "lemma": "set",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "set.n.12"
+        }
+      ],
+      "definition": "(psychology) being temporarily ready to respond in a particular way"
+    },
+    {
+      "lemma": "state of mind",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "consciousness.n.01",
+          "via_synset": "cognitive_state.n.01"
+        }
+      ],
+      "definition": "the state of a person's cognitive processes"
+    },
+    {
+      "lemma": "stream of consciousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "consciousness.n.01",
+          "via_synset": "stream_of_consciousness.n.02"
+        }
+      ],
+      "definition": "the continuous flow of ideas and feelings that constitute an individual's conscious experience"
+    },
+    {
+      "lemma": "subconsciousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "subconsciousness.n.01"
+        }
+      ],
+      "definition": "a state of mind not immediately available to consciousness"
+    },
+    {
+      "lemma": "uncertainty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "doubt.n.01"
+        }
+      ],
+      "definition": "the state of being unsure of something"
+    },
+    {
+      "lemma": "unconsciousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "consciousness.n.01",
+          "via_synset": "unconsciousness.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "unconsciousness.n.01"
+        }
+      ],
+      "definition": "a state lacking normal awareness of the self or environment"
+    },
+    {
+      "lemma": "understanding",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "understanding.n.01"
+        }
+      ],
+      "definition": "the cognitive condition of someone who understands"
+    },
+    {
+      "lemma": "unmindful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "mindful.a.01",
+          "via_synset": "unmindful.a.01"
+        }
+      ],
+      "definition": "not mindful or attentive; - G.B.Shaw"
+    },
+    {
+      "lemma": "vigil",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "wakefulness.n.01",
+          "via_synset": "vigil.n.01"
+        }
+      ],
+      "definition": "a period of sleeplessness"
+    },
+    {
+      "lemma": "voluntary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "conscious.a.02",
+          "via_synset": "voluntary.a.01"
+        }
+      ],
+      "definition": "of your own free will or design; done by choice; not forced or compelled"
+    },
+    {
+      "lemma": "wake",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "waking.n.01",
+          "via_synset": "wake.v.01"
+        }
+      ],
+      "definition": "be awake, be alert, be there"
+    },
+    {
+      "lemma": "wakefulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "waking.n.01",
+          "via_synset": "wakefulness.n.01"
+        }
+      ],
+      "definition": "a periodic state during which you are conscious and aware of the world"
+    },
+    {
+      "lemma": "waking",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "consciousness.n.01",
+          "via_synset": "waking.n.01"
+        }
+      ],
+      "definition": "the state of remaining awake"
+    },
+    {
+      "lemma": "witting",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "aware.a.01",
+          "via_synset": "witting.a.01"
+        }
+      ],
+      "definition": "aware or knowing"
+    },
+    {
+      "lemma": "wonder",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "cognitive_state.n.01",
+          "via_synset": "curiosity.n.01"
+        }
+      ],
+      "definition": "a state in which you want to learn more about something"
+    }
+  ]
+}

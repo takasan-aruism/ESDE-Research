@@ -1,0 +1,860 @@
+{
+  "atom_id": "PRP.new",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 51,
+  "pos_counts": {
+    "adj": 45,
+    "n": 6
+  },
+  "source_counts": {
+    "0_seed": 9,
+    "7_similar_to": 40,
+    "8_also_see": 4,
+    "6_derivational": 7,
+    "9_antonym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 6,
+      "words": [
+        "new(adj)",
+        "raw(adj)",
+        "unexampled(adj)",
+        "fresh(adj)",
+        "late(adj)",
+        "recent(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 6,
+      "words": [
+        "newness(n)",
+        "freshness(n)",
+        "lateness(n)",
+        "recency(n)",
+        "recentness(n)",
+        "rawness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 36,
+      "words": [
+        "rising(adj)",
+        "virgin(adj)",
+        "hot(adj)",
+        "red-hot(adj)",
+        "brand-new(adj)",
+        "bran-new(adj)",
+        "spic-and-span(adj)",
+        "spick-and-span(adj)",
+        "sunrise(adj)",
+        "unused(adj)",
+        "parvenu(adj)",
+        "parvenue(adj)",
+        "untested(adj)",
+        "untried(adj)",
+        "revolutionary(adj)",
+        "radical(adj)",
+        "newborn(adj)",
+        "new-sprung(adj)",
+        "young(adj)",
+        "newfound(adj)",
+        "novel(adj)",
+        "refreshing(adj)",
+        "unprecedented(adj)",
+        "past(adj)",
+        "inexperienced(adj)",
+        "inexperient(adj)",
+        "new-made(adj)",
+        "strong(adj)",
+        "warm(adj)",
+        "fresh-cut(adj)",
+        "crisp(adj)",
+        "good(adj)",
+        "undecomposed(adj)",
+        "unspoiled(adj)",
+        "unspoilt(adj)",
+        "caller(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 2,
+      "words": [
+        "modern(adj)",
+        "current(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "stale(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "bran-new",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "brand-new.s.01"
+        }
+      ],
+      "definition": "conspicuously new"
+    },
+    {
+      "lemma": "brand-new",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "brand-new.s.01"
+        }
+      ],
+      "definition": "conspicuously new"
+    },
+    {
+      "lemma": "caller",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fresh.a.01",
+          "via_synset": "caller.s.02"
+        }
+      ],
+      "definition": "fresh"
+    },
+    {
+      "lemma": "crisp",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fresh.a.01",
+          "via_synset": "crisp.s.04"
+        }
+      ],
+      "definition": "pleasingly firm and fresh"
+    },
+    {
+      "lemma": "current",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "new.a.01",
+          "via_synset": "current.a.01"
+        }
+      ],
+      "definition": "occurring in or belonging to the present time"
+    },
+    {
+      "lemma": "fresh",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "fresh.a.01",
+          "via_synset": "fresh.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "fresh.s.01",
+          "via_synset": "fresh.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "fresh.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "new.a.01",
+          "via_synset": "fresh.a.01"
+        }
+      ],
+      "definition": "recently made, produced, or harvested"
+    },
+    {
+      "lemma": "fresh-cut",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fresh.a.01",
+          "via_synset": "fresh-cut.s.01"
+        }
+      ],
+      "definition": "cut recently"
+    },
+    {
+      "lemma": "freshness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fresh.s.01",
+          "via_synset": "freshness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fresh.a.01",
+          "via_synset": "freshness.n.01"
+        }
+      ],
+      "definition": "originality by virtue of being refreshingly novel"
+    },
+    {
+      "lemma": "good",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fresh.a.01",
+          "via_synset": "good.s.18"
+        }
+      ],
+      "definition": "not left to spoil"
+    },
+    {
+      "lemma": "hot",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "hot.s.11"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fresh.a.01",
+          "via_synset": "hot.s.14"
+        }
+      ],
+      "definition": "newest or most recent"
+    },
+    {
+      "lemma": "inexperienced",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "raw.s.11",
+          "via_synset": "inexperienced.a.01"
+        }
+      ],
+      "definition": "lacking practical experience or training"
+    },
+    {
+      "lemma": "inexperient",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "raw.s.11",
+          "via_synset": "inexperienced.a.01"
+        }
+      ],
+      "definition": "lacking practical experience or training"
+    },
+    {
+      "lemma": "late",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "late.s.02",
+          "via_synset": "late.s.02"
+        }
+      ],
+      "definition": "of the immediate past or just previous to the present time"
+    },
+    {
+      "lemma": "lateness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "late.s.02",
+          "via_synset": "lateness.n.01"
+        }
+      ],
+      "definition": "quality of coming late or later in time"
+    },
+    {
+      "lemma": "modern",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "new.a.01",
+          "via_synset": "modern.a.01"
+        }
+      ],
+      "definition": "belonging to the modern era; since the Middle Ages"
+    },
+    {
+      "lemma": "new",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "new.a.01",
+          "via_synset": "new.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "raw.s.11",
+          "via_synset": "raw.s.11"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "new.s.03",
+          "via_synset": "new.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fresh.s.01",
+          "via_synset": "new.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "fresh.a.01",
+          "via_synset": "new.a.01"
+        }
+      ],
+      "definition": "not of long duration; having just (or relatively recently) come into being or been made or acquired or discovered"
+    },
+    {
+      "lemma": "new-made",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fresh.a.01",
+          "via_synset": "new-made.s.01"
+        }
+      ],
+      "definition": "newly made"
+    },
+    {
+      "lemma": "new-sprung",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "newborn.s.02"
+        }
+      ],
+      "definition": "having just or recently arisen or come into existence"
+    },
+    {
+      "lemma": "newborn",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "newborn.s.02"
+        }
+      ],
+      "definition": "having just or recently arisen or come into existence"
+    },
+    {
+      "lemma": "newfound",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "newfound.s.01"
+        }
+      ],
+      "definition": "newly discovered"
+    },
+    {
+      "lemma": "newness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "new.a.01",
+          "via_synset": "newness.n.01"
+        }
+      ],
+      "definition": "the quality of being new; the opposite of oldness"
+    },
+    {
+      "lemma": "novel",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "novel.s.02"
+        }
+      ],
+      "definition": "pleasantly new or different"
+    },
+    {
+      "lemma": "parvenu",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "parvenu.s.02"
+        }
+      ],
+      "definition": "of or characteristic of a parvenu"
+    },
+    {
+      "lemma": "parvenue",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "parvenu.s.02"
+        }
+      ],
+      "definition": "of or characteristic of a parvenu"
+    },
+    {
+      "lemma": "past",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "late.s.02",
+          "via_synset": "past.a.01"
+        }
+      ],
+      "definition": "earlier than the present time; no longer current"
+    },
+    {
+      "lemma": "radical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "revolutionary.s.01"
+        }
+      ],
+      "definition": "markedly new or introducing radical change"
+    },
+    {
+      "lemma": "raw",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "raw.s.11",
+          "via_synset": "raw.s.11"
+        }
+      ],
+      "definition": "lacking training or experience"
+    },
+    {
+      "lemma": "rawness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "raw.s.11",
+          "via_synset": "inexperience.n.01"
+        }
+      ],
+      "definition": "lack of experience and the knowledge and understanding derived from experience"
+    },
+    {
+      "lemma": "recency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "late.s.02",
+          "via_synset": "recency.n.02"
+        }
+      ],
+      "definition": "the property of having happened or appeared not long ago"
+    },
+    {
+      "lemma": "recent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "late.s.02",
+          "via_synset": "late.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "recent.s.01"
+        }
+      ],
+      "definition": "of the immediate past or just previous to the present time"
+    },
+    {
+      "lemma": "recentness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "late.s.02",
+          "via_synset": "recency.n.01"
+        }
+      ],
+      "definition": "a time immediately before the present"
+    },
+    {
+      "lemma": "red-hot",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "hot.s.11"
+        }
+      ],
+      "definition": "newest or most recent"
+    },
+    {
+      "lemma": "refreshing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "novel.s.02"
+        }
+      ],
+      "definition": "pleasantly new or different"
+    },
+    {
+      "lemma": "revolutionary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "revolutionary.s.01"
+        }
+      ],
+      "definition": "markedly new or introducing radical change"
+    },
+    {
+      "lemma": "rising",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "rising.s.03"
+        }
+      ],
+      "definition": "newly come into prominence"
+    },
+    {
+      "lemma": "spic-and-span",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "brand-new.s.01"
+        }
+      ],
+      "definition": "conspicuously new"
+    },
+    {
+      "lemma": "spick-and-span",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "brand-new.s.01"
+        }
+      ],
+      "definition": "conspicuously new"
+    },
+    {
+      "lemma": "stale",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "fresh.a.01",
+          "via_synset": "stale.a.01"
+        }
+      ],
+      "definition": "lacking freshness, palatability, or showing deterioration from age"
+    },
+    {
+      "lemma": "strong",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fresh.a.01",
+          "via_synset": "strong.s.07"
+        }
+      ],
+      "definition": "freshly made or left"
+    },
+    {
+      "lemma": "sunrise",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "sunrise.s.01"
+        }
+      ],
+      "definition": "of an industry or technology; new and developing"
+    },
+    {
+      "lemma": "undecomposed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fresh.a.01",
+          "via_synset": "good.s.18"
+        }
+      ],
+      "definition": "not left to spoil"
+    },
+    {
+      "lemma": "unexampled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "new.s.03",
+          "via_synset": "new.s.03"
+        }
+      ],
+      "definition": "having no previous example or precedent or parallel"
+    },
+    {
+      "lemma": "unprecedented",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.s.03",
+          "via_synset": "unprecedented.a.01"
+        }
+      ],
+      "definition": "having no precedent; novel"
+    },
+    {
+      "lemma": "unspoiled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fresh.a.01",
+          "via_synset": "good.s.18"
+        }
+      ],
+      "definition": "not left to spoil"
+    },
+    {
+      "lemma": "unspoilt",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fresh.a.01",
+          "via_synset": "good.s.18"
+        }
+      ],
+      "definition": "not left to spoil"
+    },
+    {
+      "lemma": "untested",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "untested.s.02"
+        }
+      ],
+      "definition": "not yet proved or subjected to testing"
+    },
+    {
+      "lemma": "untried",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "untested.s.02"
+        }
+      ],
+      "definition": "not yet proved or subjected to testing"
+    },
+    {
+      "lemma": "unused",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "unused.s.02"
+        }
+      ],
+      "definition": "not yet put into use"
+    },
+    {
+      "lemma": "virgin",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "virgin.s.01"
+        }
+      ],
+      "definition": "being used or worked for the first time"
+    },
+    {
+      "lemma": "warm",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fresh.a.01",
+          "via_synset": "strong.s.07"
+        }
+      ],
+      "definition": "freshly made or left"
+    },
+    {
+      "lemma": "young",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "new.a.01",
+          "via_synset": "young.s.03"
+        }
+      ],
+      "definition": "being in its early stage"
+    }
+  ]
+}

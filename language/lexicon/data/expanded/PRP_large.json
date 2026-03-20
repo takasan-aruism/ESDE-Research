@@ -1,0 +1,1868 @@
+{
+  "atom_id": "PRP.large",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 119,
+  "pos_counts": {
+    "adj": 94,
+    "adv": 1,
+    "n": 23,
+    "v": 1
+  },
+  "source_counts": {
+    "0_seed": 18,
+    "7_similar_to": 93,
+    "6_derivational": 14,
+    "2_hypernym_d1": 1,
+    "10_sibling": 12
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 16,
+      "words": [
+        "big(adj)",
+        "enceinte(adj)",
+        "expectant(adj)",
+        "gravid(adj)",
+        "great(adj)",
+        "large(adj)",
+        "heavy(adj)",
+        "with child(adj)",
+        "large(adv)",
+        "large(n)",
+        "huge(adj)",
+        "immense(adj)",
+        "vast(adj)",
+        "Brobdingnagian(adj)",
+        "enormous(adj)",
+        "tremendous(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 1,
+      "words": [
+        "size(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 10,
+      "words": [
+        "immenseness(n)",
+        "immensity(n)",
+        "vastness(n)",
+        "largeness(n)",
+        "bigness(n)",
+        "enormousness(n)",
+        "enormity(n)",
+        "expect(v)",
+        "gravidness(n)",
+        "gravidity(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 80,
+      "words": [
+        "mountainous(adj)",
+        "grand(adj)",
+        "plumping(adj)",
+        "elephantine(adj)",
+        "gargantuan(adj)",
+        "giant(adj)",
+        "jumbo(adj)",
+        "large-scale(adj)",
+        "biggish(adj)",
+        "largish(adj)",
+        "cosmic(adj)",
+        "man-sized(adj)",
+        "wide-ranging(adj)",
+        "bigger(adj)",
+        "larger(adj)",
+        "astronomic(adj)",
+        "astronomical(adj)",
+        "galactic(adj)",
+        "hulking(adj)",
+        "hulky(adj)",
+        "gigantic(adj)",
+        "mammoth(adj)",
+        "epic(adj)",
+        "heroic(adj)",
+        "larger-than-life(adj)",
+        "king-size(adj)",
+        "king-sized(adj)",
+        "deep(adj)",
+        "life-size(adj)",
+        "lifesize(adj)",
+        "life-sized(adj)",
+        "full-size(adj)",
+        "monstrous(adj)",
+        "medium-large(adj)",
+        "whacking(adj)",
+        "massive(adj)",
+        "volumed(adj)",
+        "blown-up(adj)",
+        "enlarged(adj)",
+        "voluminous(adj)",
+        "overlarge(adj)",
+        "too large(adj)",
+        "monolithic(adj)",
+        "monumental(adj)",
+        "double(adj)",
+        "bulky(adj)",
+        "bouffant(adj)",
+        "puffy(adj)",
+        "titanic(adj)",
+        "broad(adj)",
+        "spacious(adj)",
+        "wide(adj)",
+        "capacious(adj)",
+        "humongous(adj)",
+        "banging(adj)",
+        "thumping(adj)",
+        "whopping(adj)",
+        "walloping(adj)",
+        "bear-sized(adj)",
+        "queen-size(adj)",
+        "queen-sized(adj)",
+        "ample(adj)",
+        "sizable(adj)",
+        "sizeable(adj)",
+        "outsize(adj)",
+        "outsized(adj)",
+        "oversize(adj)",
+        "oversized(adj)",
+        "super(adj)",
+        "large-mouthed(adj)",
+        "rangy(adj)",
+        "colossal(adj)",
+        "prodigious(adj)",
+        "stupendous(adj)",
+        "macroscopic(adj)",
+        "macroscopical(adj)",
+        "macro(adj)",
+        "extensive(adj)",
+        "extended(adj)",
+        "pregnant(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 12,
+      "words": [
+        "quarto(n)",
+        "4to(n)",
+        "octavo(n)",
+        "eightvo(n)",
+        "8vo(n)",
+        "stout(n)",
+        "extra large(n)",
+        "tall(n)",
+        "number(n)",
+        "outsize(n)",
+        "regular(n)",
+        "petite(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "4to",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "quarto.n.01"
+        }
+      ],
+      "definition": "the size of a book whose pages are made by folding a sheet of paper twice to form four leaves"
+    },
+    {
+      "lemma": "8vo",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "octavo.n.01"
+        }
+      ],
+      "definition": "the size of a book whose pages are made by folding a sheet of paper three times to form eight leaves"
+    },
+    {
+      "lemma": "ample",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "ample.s.02"
+        }
+      ],
+      "definition": "fairly large"
+    },
+    {
+      "lemma": "astronomic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "astronomic.s.01"
+        }
+      ],
+      "definition": "inconceivably large"
+    },
+    {
+      "lemma": "astronomical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "astronomic.s.01"
+        }
+      ],
+      "definition": "inconceivably large"
+    },
+    {
+      "lemma": "banging",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "humongous.s.01"
+        }
+      ],
+      "definition": "(used informally) very large"
+    },
+    {
+      "lemma": "bear-sized",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "bear-sized.s.01"
+        }
+      ],
+      "definition": "large as a bear"
+    },
+    {
+      "lemma": "big",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "big.s.12",
+          "via_synset": "big.s.12"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "large.a.01",
+          "via_synset": "large.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "huge.s.01",
+          "via_synset": "large.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "enormous.s.01",
+          "via_synset": "large.a.01"
+        }
+      ],
+      "definition": "in an advanced stage of pregnancy"
+    },
+    {
+      "lemma": "bigger",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "bigger.s.01"
+        }
+      ],
+      "definition": "large or big relative to something else"
+    },
+    {
+      "lemma": "biggish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "biggish.s.01"
+        }
+      ],
+      "definition": "somewhat large"
+    },
+    {
+      "lemma": "bigness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "large.a.01",
+          "via_synset": "largeness.n.03"
+        }
+      ],
+      "definition": "the property of having a relatively great size"
+    },
+    {
+      "lemma": "blown-up",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "blown-up.s.01"
+        }
+      ],
+      "definition": "as of a photograph; made larger"
+    },
+    {
+      "lemma": "bouffant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "bouffant.s.01"
+        }
+      ],
+      "definition": "being puffed out; used of hair style or clothing"
+    },
+    {
+      "lemma": "broad",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "broad.s.05"
+        }
+      ],
+      "definition": "very large in expanse or scope"
+    },
+    {
+      "lemma": "Brobdingnagian",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "huge.s.01",
+          "via_synset": "huge.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "huge.s.01"
+        }
+      ],
+      "definition": "unusually great in size or amount or degree or especially extent or scope; ; ; ; ; ; ; ; ; - W.R.Inge"
+    },
+    {
+      "lemma": "bulky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "bulky.s.01"
+        }
+      ],
+      "definition": "of large size for its weight"
+    },
+    {
+      "lemma": "capacious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "capacious.s.01"
+        }
+      ],
+      "definition": "large in capacity"
+    },
+    {
+      "lemma": "colossal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "colossal.s.01"
+        }
+      ],
+      "definition": "so great in size or force or extent as to elicit awe"
+    },
+    {
+      "lemma": "cosmic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "cosmic.s.01"
+        }
+      ],
+      "definition": "inconceivably extended in space or time"
+    },
+    {
+      "lemma": "deep",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "deep.s.09"
+        }
+      ],
+      "definition": "large in quantity or size"
+    },
+    {
+      "lemma": "double",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "double.s.04"
+        }
+      ],
+      "definition": "large enough for two"
+    },
+    {
+      "lemma": "eightvo",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "octavo.n.01"
+        }
+      ],
+      "definition": "the size of a book whose pages are made by folding a sheet of paper three times to form eight leaves"
+    },
+    {
+      "lemma": "elephantine",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "elephantine.s.01"
+        }
+      ],
+      "definition": "of great mass; huge and bulky"
+    },
+    {
+      "lemma": "enceinte",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "big.s.12",
+          "via_synset": "big.s.12"
+        }
+      ],
+      "definition": "in an advanced stage of pregnancy"
+    },
+    {
+      "lemma": "enlarged",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "blown-up.s.01"
+        }
+      ],
+      "definition": "as of a photograph; made larger"
+    },
+    {
+      "lemma": "enormity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "enormous.s.01",
+          "via_synset": "enormity.n.02"
+        }
+      ],
+      "definition": "vastness of size or extent"
+    },
+    {
+      "lemma": "enormous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "enormous.s.01",
+          "via_synset": "enormous.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "enormous.s.01"
+        }
+      ],
+      "definition": "extraordinarily large in size or extent or amount or power or degree; ; ; ; - Walter Lippman"
+    },
+    {
+      "lemma": "enormousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "enormous.s.01",
+          "via_synset": "enormousness.n.01"
+        }
+      ],
+      "definition": "unusual largeness in size or extent or number"
+    },
+    {
+      "lemma": "epic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "epic.s.01"
+        }
+      ],
+      "definition": "very imposing or impressive; surpassing the ordinary (especially in size or scale)"
+    },
+    {
+      "lemma": "expect",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "big.s.12",
+          "via_synset": "expect.v.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "big.s.12",
+          "via_synset": "have_a_bun_in_the_oven.v.01"
+        }
+      ],
+      "definition": "look forward to the birth of a child"
+    },
+    {
+      "lemma": "expectant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "big.s.12",
+          "via_synset": "big.s.12"
+        }
+      ],
+      "definition": "in an advanced stage of pregnancy"
+    },
+    {
+      "lemma": "extended",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "extensive.s.01"
+        }
+      ],
+      "definition": "large in spatial extent or range or scope or quantity"
+    },
+    {
+      "lemma": "extensive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "extensive.s.01"
+        }
+      ],
+      "definition": "large in spatial extent or range or scope or quantity"
+    },
+    {
+      "lemma": "extra large",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "extra_large.n.01"
+        }
+      ],
+      "definition": "a garment size for a very large person"
+    },
+    {
+      "lemma": "full-size",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "life-size.s.01"
+        }
+      ],
+      "definition": "being of the same size as an original"
+    },
+    {
+      "lemma": "galactic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "astronomic.s.01"
+        }
+      ],
+      "definition": "inconceivably large"
+    },
+    {
+      "lemma": "gargantuan",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "elephantine.s.01"
+        }
+      ],
+      "definition": "of great mass; huge and bulky"
+    },
+    {
+      "lemma": "giant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "elephantine.s.01"
+        }
+      ],
+      "definition": "of great mass; huge and bulky"
+    },
+    {
+      "lemma": "gigantic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "gigantic.s.01"
+        }
+      ],
+      "definition": "so exceedingly large or extensive as to suggest a giant or mammoth"
+    },
+    {
+      "lemma": "grand",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "grand.s.06"
+        }
+      ],
+      "definition": "large and impressive in physical size or extent"
+    },
+    {
+      "lemma": "gravid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "big.s.12",
+          "via_synset": "big.s.12"
+        }
+      ],
+      "definition": "in an advanced stage of pregnancy"
+    },
+    {
+      "lemma": "gravidity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "big.s.12",
+          "via_synset": "gravidity.n.01"
+        }
+      ],
+      "definition": "technical terms for pregnancy"
+    },
+    {
+      "lemma": "gravidness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "big.s.12",
+          "via_synset": "gravidity.n.01"
+        }
+      ],
+      "definition": "technical terms for pregnancy"
+    },
+    {
+      "lemma": "great",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "big.s.12",
+          "via_synset": "big.s.12"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "great.s.01"
+        }
+      ],
+      "definition": "in an advanced stage of pregnancy"
+    },
+    {
+      "lemma": "heavy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "big.s.12",
+          "via_synset": "big.s.12"
+        }
+      ],
+      "definition": "in an advanced stage of pregnancy"
+    },
+    {
+      "lemma": "heroic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "epic.s.01"
+        }
+      ],
+      "definition": "very imposing or impressive; surpassing the ordinary (especially in size or scale)"
+    },
+    {
+      "lemma": "huge",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "huge.s.01",
+          "via_synset": "huge.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "huge.s.01"
+        }
+      ],
+      "definition": "unusually great in size or amount or degree or especially extent or scope; ; ; ; ; ; ; ; ; - W.R.Inge"
+    },
+    {
+      "lemma": "hulking",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "hulking.s.01"
+        }
+      ],
+      "definition": "of great size and bulk"
+    },
+    {
+      "lemma": "hulky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "hulking.s.01"
+        }
+      ],
+      "definition": "of great size and bulk"
+    },
+    {
+      "lemma": "humongous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "humongous.s.01"
+        }
+      ],
+      "definition": "(used informally) very large"
+    },
+    {
+      "lemma": "immense",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "huge.s.01",
+          "via_synset": "huge.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "huge.s.01"
+        }
+      ],
+      "definition": "unusually great in size or amount or degree or especially extent or scope; ; ; ; ; ; ; ; ; - W.R.Inge"
+    },
+    {
+      "lemma": "immenseness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "huge.s.01",
+          "via_synset": "enormousness.n.01"
+        }
+      ],
+      "definition": "unusual largeness in size or extent or number"
+    },
+    {
+      "lemma": "immensity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "huge.s.01",
+          "via_synset": "enormousness.n.01"
+        }
+      ],
+      "definition": "unusual largeness in size or extent or number"
+    },
+    {
+      "lemma": "jumbo",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "elephantine.s.01"
+        }
+      ],
+      "definition": "of great mass; huge and bulky"
+    },
+    {
+      "lemma": "king-size",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "king-size.s.01"
+        }
+      ],
+      "definition": "extra large"
+    },
+    {
+      "lemma": "king-sized",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "king-size.s.01"
+        }
+      ],
+      "definition": "extra large"
+    },
+    {
+      "lemma": "large",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "big.s.12",
+          "via_synset": "big.s.12"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "large.a.01",
+          "via_synset": "large.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "large.n.01",
+          "via_synset": "large.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "huge.s.01",
+          "via_synset": "large.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "enormous.s.01",
+          "via_synset": "large.a.01"
+        }
+      ],
+      "definition": "in an advanced stage of pregnancy"
+    },
+    {
+      "lemma": "large",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "large.r.01",
+          "via_synset": "large.r.01"
+        }
+      ],
+      "definition": "at a distance, wide of something (as of a mark)"
+    },
+    {
+      "lemma": "large",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "large.n.01",
+          "via_synset": "large.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "large.a.01",
+          "via_synset": "large.n.01"
+        }
+      ],
+      "definition": "a garment size for a large person"
+    },
+    {
+      "lemma": "large-mouthed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "large-mouthed.s.01"
+        }
+      ],
+      "definition": "having a relatively large mouth"
+    },
+    {
+      "lemma": "large-scale",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "large-scale.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "large-scale.s.02"
+        }
+      ],
+      "definition": "unusually large in scope"
+    },
+    {
+      "lemma": "largeness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "large.a.01",
+          "via_synset": "largeness.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "big.s.12",
+          "via_synset": "largeness.n.03"
+        }
+      ],
+      "definition": "the property of having a relatively great size"
+    },
+    {
+      "lemma": "larger",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "bigger.s.01"
+        }
+      ],
+      "definition": "large or big relative to something else"
+    },
+    {
+      "lemma": "larger-than-life",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "epic.s.01"
+        }
+      ],
+      "definition": "very imposing or impressive; surpassing the ordinary (especially in size or scale)"
+    },
+    {
+      "lemma": "largish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "biggish.s.01"
+        }
+      ],
+      "definition": "somewhat large"
+    },
+    {
+      "lemma": "life-size",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "life-size.s.01"
+        }
+      ],
+      "definition": "being of the same size as an original"
+    },
+    {
+      "lemma": "life-sized",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "life-size.s.01"
+        }
+      ],
+      "definition": "being of the same size as an original"
+    },
+    {
+      "lemma": "lifesize",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "life-size.s.01"
+        }
+      ],
+      "definition": "being of the same size as an original"
+    },
+    {
+      "lemma": "macro",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "macro.s.01"
+        }
+      ],
+      "definition": "very large in scale or scope or capability"
+    },
+    {
+      "lemma": "macroscopic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "macroscopic.s.02"
+        }
+      ],
+      "definition": "large enough to be visible with the naked eye"
+    },
+    {
+      "lemma": "macroscopical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "macroscopic.s.02"
+        }
+      ],
+      "definition": "large enough to be visible with the naked eye"
+    },
+    {
+      "lemma": "mammoth",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "gigantic.s.01"
+        }
+      ],
+      "definition": "so exceedingly large or extensive as to suggest a giant or mammoth"
+    },
+    {
+      "lemma": "man-sized",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "man-sized.s.02"
+        }
+      ],
+      "definition": "very large; appropriate to the size of a man"
+    },
+    {
+      "lemma": "massive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "massive.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "massive.s.01"
+        }
+      ],
+      "definition": "imposing in scale or scope or degree or power"
+    },
+    {
+      "lemma": "medium-large",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "medium-large.s.01"
+        }
+      ],
+      "definition": "of anything that is large but not the largest"
+    },
+    {
+      "lemma": "monolithic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "massive.s.01"
+        }
+      ],
+      "definition": "imposing in size or bulk or solidity"
+    },
+    {
+      "lemma": "monstrous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "monstrous.s.01"
+        }
+      ],
+      "definition": "abnormally large"
+    },
+    {
+      "lemma": "monumental",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "massive.s.01"
+        }
+      ],
+      "definition": "imposing in size or bulk or solidity"
+    },
+    {
+      "lemma": "mountainous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "mountainous.s.02"
+        }
+      ],
+      "definition": "like a mountain in size and impressiveness"
+    },
+    {
+      "lemma": "number",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "number.n.09"
+        }
+      ],
+      "definition": "a clothing measurement"
+    },
+    {
+      "lemma": "octavo",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "octavo.n.01"
+        }
+      ],
+      "definition": "the size of a book whose pages are made by folding a sheet of paper three times to form eight leaves"
+    },
+    {
+      "lemma": "outsize",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "outsize.s.01"
+        }
+      ],
+      "definition": "larger than normal for its kind"
+    },
+    {
+      "lemma": "outsize",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "outsize.n.01"
+        }
+      ],
+      "definition": "an unusual garment size (especially one that is very large)"
+    },
+    {
+      "lemma": "outsized",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "outsize.s.01"
+        }
+      ],
+      "definition": "larger than normal for its kind"
+    },
+    {
+      "lemma": "overlarge",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "overlarge.s.01"
+        }
+      ],
+      "definition": "excessively large"
+    },
+    {
+      "lemma": "oversize",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "outsize.s.01"
+        }
+      ],
+      "definition": "larger than normal for its kind"
+    },
+    {
+      "lemma": "oversized",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "outsize.s.01"
+        }
+      ],
+      "definition": "larger than normal for its kind"
+    },
+    {
+      "lemma": "petite",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "petite.n.01"
+        }
+      ],
+      "definition": "a garment size for short or slender women"
+    },
+    {
+      "lemma": "plumping",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "plumping.s.01"
+        }
+      ],
+      "definition": "very large; of exceptional size for its kind"
+    },
+    {
+      "lemma": "pregnant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "big.s.12",
+          "via_synset": "pregnant.a.01"
+        }
+      ],
+      "definition": "carrying developing offspring within the body or being about to produce new life"
+    },
+    {
+      "lemma": "prodigious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "colossal.s.01"
+        }
+      ],
+      "definition": "so great in size or force or extent as to elicit awe"
+    },
+    {
+      "lemma": "puffy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "bouffant.s.01"
+        }
+      ],
+      "definition": "being puffed out; used of hair style or clothing"
+    },
+    {
+      "lemma": "quarto",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "quarto.n.01"
+        }
+      ],
+      "definition": "the size of a book whose pages are made by folding a sheet of paper twice to form four leaves"
+    },
+    {
+      "lemma": "queen-size",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "queen-size.s.01"
+        }
+      ],
+      "definition": "(used especially of beds) not as large as king-size"
+    },
+    {
+      "lemma": "queen-sized",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "queen-size.s.01"
+        }
+      ],
+      "definition": "(used especially of beds) not as large as king-size"
+    },
+    {
+      "lemma": "rangy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "rangy.s.03"
+        }
+      ],
+      "definition": "allowing ample room for ranging"
+    },
+    {
+      "lemma": "regular",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "regular.n.04"
+        }
+      ],
+      "definition": "a garment size for persons of average height and weight"
+    },
+    {
+      "lemma": "sizable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "ample.s.02"
+        }
+      ],
+      "definition": "fairly large"
+    },
+    {
+      "lemma": "size",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "large.n.01",
+          "via_synset": "size.n.02"
+        }
+      ],
+      "definition": "the property resulting from being one of a series of graduated measurements (as of clothing)"
+    },
+    {
+      "lemma": "sizeable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "ample.s.02"
+        }
+      ],
+      "definition": "fairly large"
+    },
+    {
+      "lemma": "spacious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "broad.s.05"
+        }
+      ],
+      "definition": "very large in expanse or scope"
+    },
+    {
+      "lemma": "stout",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "stout.n.02"
+        }
+      ],
+      "definition": "a garment size for a large or heavy person"
+    },
+    {
+      "lemma": "stupendous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "colossal.s.01"
+        }
+      ],
+      "definition": "so great in size or force or extent as to elicit awe"
+    },
+    {
+      "lemma": "super",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "super.s.03"
+        }
+      ],
+      "definition": "extremely large"
+    },
+    {
+      "lemma": "tall",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "size.n.02",
+          "via_synset": "tall.n.01"
+        }
+      ],
+      "definition": "a garment size for a tall person"
+    },
+    {
+      "lemma": "thumping",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "humongous.s.01"
+        }
+      ],
+      "definition": "(used informally) very large"
+    },
+    {
+      "lemma": "titanic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "titanic.s.01"
+        }
+      ],
+      "definition": "of great force or power"
+    },
+    {
+      "lemma": "too large",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "overlarge.s.01"
+        }
+      ],
+      "definition": "excessively large"
+    },
+    {
+      "lemma": "tremendous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "enormous.s.01",
+          "via_synset": "enormous.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "enormous.s.01"
+        }
+      ],
+      "definition": "extraordinarily large in size or extent or amount or power or degree; ; ; ; - Walter Lippman"
+    },
+    {
+      "lemma": "vast",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "huge.s.01",
+          "via_synset": "huge.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "huge.s.01"
+        }
+      ],
+      "definition": "unusually great in size or amount or degree or especially extent or scope; ; ; ; ; ; ; ; ; - W.R.Inge"
+    },
+    {
+      "lemma": "vastness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "huge.s.01",
+          "via_synset": "enormousness.n.01"
+        }
+      ],
+      "definition": "unusual largeness in size or extent or number"
+    },
+    {
+      "lemma": "volumed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "volumed.s.01"
+        }
+      ],
+      "definition": "formed or rising in rounded masses"
+    },
+    {
+      "lemma": "voluminous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "voluminous.s.01"
+        }
+      ],
+      "definition": "large in volume or bulk"
+    },
+    {
+      "lemma": "walloping",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "humongous.s.01"
+        }
+      ],
+      "definition": "(used informally) very large"
+    },
+    {
+      "lemma": "whacking",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "whacking.s.01"
+        }
+      ],
+      "definition": "(British informal) enormous"
+    },
+    {
+      "lemma": "whopping",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "humongous.s.01"
+        }
+      ],
+      "definition": "(used informally) very large"
+    },
+    {
+      "lemma": "wide",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "broad.s.05"
+        }
+      ],
+      "definition": "very large in expanse or scope"
+    },
+    {
+      "lemma": "wide-ranging",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "large.a.01",
+          "via_synset": "wide-ranging.s.01"
+        }
+      ],
+      "definition": "including much"
+    },
+    {
+      "lemma": "with child",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "big.s.12",
+          "via_synset": "big.s.12"
+        }
+      ],
+      "definition": "in an advanced stage of pregnancy"
+    }
+  ]
+}

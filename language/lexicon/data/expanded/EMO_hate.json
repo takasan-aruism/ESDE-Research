@@ -1,0 +1,2077 @@
+{
+  "atom_id": "EMO.hate",
+  "category": "EMO",
+  "seed_count": 4,
+  "total_keys": 123,
+  "pos_counts": {
+    "n": 85,
+    "v": 17,
+    "adj": 21
+  },
+  "source_counts": {
+    "0_seed": 12,
+    "6_derivational": 58,
+    "2_hypernym_d1": 6,
+    "3_hyponym_d1": 30,
+    "10_sibling": 28,
+    "4_hyponym_d2": 24,
+    "5_hyponym_d3": 9
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 12,
+      "words": [
+        "hate(n)",
+        "hatred(n)",
+        "hate(v)",
+        "detest(v)",
+        "abhor(v)",
+        "loathe(v)",
+        "abominate(v)",
+        "execrate(v)",
+        "contemn(v)",
+        "despise(v)",
+        "scorn(v)",
+        "disdain(v)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 2,
+      "words": [
+        "emotion(n)",
+        "dislike(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 22,
+      "words": [
+        "despisal(n)",
+        "despising(n)",
+        "misogamy(n)",
+        "hostility(n)",
+        "enmity(n)",
+        "ill will(n)",
+        "misanthropy(n)",
+        "misology(n)",
+        "misoneism(n)",
+        "misopedia(n)",
+        "abhorrence(n)",
+        "abomination(n)",
+        "detestation(n)",
+        "execration(n)",
+        "loathing(n)",
+        "odium(n)",
+        "murderousness(n)",
+        "malevolence(n)",
+        "malignity(n)",
+        "misogyny(n)",
+        "misogynism(n)",
+        "look down on(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 23,
+      "words": [
+        "class feeling(n)",
+        "aggression(n)",
+        "aggressiveness(n)",
+        "belligerence(n)",
+        "belligerency(n)",
+        "animosity(n)",
+        "animus(n)",
+        "bad blood(n)",
+        "resentment(n)",
+        "bitterness(n)",
+        "gall(n)",
+        "rancor(n)",
+        "rancour(n)",
+        "antagonism(n)",
+        "misocainea(n)",
+        "vindictiveness(n)",
+        "vengefulness(n)",
+        "malice(n)",
+        "maliciousness(n)",
+        "spite(n)",
+        "spitefulness(n)",
+        "venom(n)",
+        "maleficence(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 9,
+      "words": [
+        "warpath(n)",
+        "heartburning(n)",
+        "grudge(n)",
+        "score(n)",
+        "grievance(n)",
+        "sulkiness(n)",
+        "huffishness(n)",
+        "envy(n)",
+        "enviousness(n)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 37,
+      "words": [
+        "malicious(adj)",
+        "spite(v)",
+        "spiteful(adj)",
+        "venomous(adj)",
+        "antagonistic(adj)",
+        "antagonist(n)",
+        "antagonize(v)",
+        "antagonise(v)",
+        "murderous(adj)",
+        "misogamist(n)",
+        "hostile(adj)",
+        "inimical(adj)",
+        "malevolent(adj)",
+        "belligerent(adj)",
+        "abhorrent(adj)",
+        "odious(adj)",
+        "misanthropic(adj)",
+        "misanthropical(adj)",
+        "misanthropist(n)",
+        "vindictive(adj)",
+        "vengeful(adj)",
+        "resent(v)",
+        "bitter(adj)",
+        "gall(v)",
+        "rancorous(adj)",
+        "maleficent(adj)",
+        "misogynic(adj)",
+        "misogynous(adj)",
+        "misogynist(n)",
+        "abhorrer(n)",
+        "loather(n)",
+        "abominable(adj)",
+        "abominator(n)",
+        "hater(n)",
+        "scorn(n)",
+        "scorner(n)",
+        "disdain(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 18,
+      "words": [
+        "conditioned emotional response(n)",
+        "CER(n)",
+        "conditioned emotion(n)",
+        "anger(n)",
+        "choler(n)",
+        "ire(n)",
+        "emotional state(n)",
+        "spirit(n)",
+        "fear(n)",
+        "fearfulness(n)",
+        "fright(n)",
+        "joy(n)",
+        "joyousness(n)",
+        "joyfulness(n)",
+        "reverence(n)",
+        "awe(n)",
+        "veneration(n)",
+        "anxiety(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "abhor",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "abhor.v.01",
+          "via_synset": "abhor.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.v.01",
+          "via_synset": "abhor.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abhorrence.n.01",
+          "via_synset": "abhor.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "hate.v.01",
+          "via_synset": "abhor.v.01"
+        }
+      ],
+      "definition": "find repugnant"
+    },
+    {
+      "lemma": "abhorrence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "abhorrence.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abhor.v.01",
+          "via_synset": "abhorrence.n.01"
+        }
+      ],
+      "definition": "hate coupled with disgust"
+    },
+    {
+      "lemma": "abhorrent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abhorrence.n.01",
+          "via_synset": "abhorrent.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abhor.v.01",
+          "via_synset": "abhorrent.s.01"
+        }
+      ],
+      "definition": "offensive to the mind"
+    },
+    {
+      "lemma": "abhorrer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abhor.v.01",
+          "via_synset": "abhorrer.n.01"
+        }
+      ],
+      "definition": "a signer of a 1679 address to Charles II in which those who petitioned for the reconvening of parliament were condemned and abhorred"
+    },
+    {
+      "lemma": "abominable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abhor.v.01",
+          "via_synset": "abominable.s.01"
+        }
+      ],
+      "definition": "unequivocally detestable; ; ; ; - Edmund Burke"
+    },
+    {
+      "lemma": "abominate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "abhor.v.01",
+          "via_synset": "abhor.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.v.01",
+          "via_synset": "abhor.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abhorrence.n.01",
+          "via_synset": "abhor.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "hate.v.01",
+          "via_synset": "abhor.v.01"
+        }
+      ],
+      "definition": "find repugnant"
+    },
+    {
+      "lemma": "abomination",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "abhorrence.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abhor.v.01",
+          "via_synset": "abomination.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abhor.v.01",
+          "via_synset": "abhorrence.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abhor.v.01",
+          "via_synset": "abomination.n.03"
+        }
+      ],
+      "definition": "hate coupled with disgust"
+    },
+    {
+      "lemma": "abominator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abhor.v.01",
+          "via_synset": "abominator.n.01"
+        }
+      ],
+      "definition": "one who hates or loathes"
+    },
+    {
+      "lemma": "aggression",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hostility.n.03",
+          "via_synset": "aggression.n.02"
+        }
+      ],
+      "definition": "a feeling of hostility that arouses thoughts of attack"
+    },
+    {
+      "lemma": "aggressiveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hostility.n.03",
+          "via_synset": "aggression.n.02"
+        }
+      ],
+      "definition": "a feeling of hostility that arouses thoughts of attack"
+    },
+    {
+      "lemma": "anger",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "anger.n.01"
+        }
+      ],
+      "definition": "a strong emotion; a feeling that is oriented toward some real or supposed grievance"
+    },
+    {
+      "lemma": "animosity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hostility.n.03",
+          "via_synset": "animosity.n.01"
+        }
+      ],
+      "definition": "a feeling of ill will arousing active hostility"
+    },
+    {
+      "lemma": "animus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hostility.n.03",
+          "via_synset": "animosity.n.01"
+        }
+      ],
+      "definition": "a feeling of ill will arousing active hostility"
+    },
+    {
+      "lemma": "antagonise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "antagonism.n.03",
+          "via_synset": "antagonize.v.01"
+        }
+      ],
+      "definition": "provoke the hostility of"
+    },
+    {
+      "lemma": "antagonism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hostility.n.03",
+          "via_synset": "antagonism.n.03"
+        }
+      ],
+      "definition": "an actively expressed feeling of dislike and hostility"
+    },
+    {
+      "lemma": "antagonist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "antagonism.n.03",
+          "via_synset": "adversary.n.01"
+        }
+      ],
+      "definition": "someone who offers opposition"
+    },
+    {
+      "lemma": "antagonistic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "antagonism.n.03",
+          "via_synset": "antagonistic.a.03"
+        }
+      ],
+      "definition": "arousing animosity or hostility"
+    },
+    {
+      "lemma": "antagonize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "antagonism.n.03",
+          "via_synset": "antagonize.v.01"
+        }
+      ],
+      "definition": "provoke the hostility of"
+    },
+    {
+      "lemma": "anxiety",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "anxiety.n.02"
+        }
+      ],
+      "definition": "a vague unpleasant emotion that is experienced in anticipation of some (usually ill-defined) misfortune"
+    },
+    {
+      "lemma": "awe",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "fear.n.03"
+        }
+      ],
+      "definition": "a feeling of profound respect for someone or something"
+    },
+    {
+      "lemma": "bad blood",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hostility.n.03",
+          "via_synset": "animosity.n.01"
+        }
+      ],
+      "definition": "a feeling of ill will arousing active hostility"
+    },
+    {
+      "lemma": "belligerence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hostility.n.03",
+          "via_synset": "belligerence.n.01"
+        }
+      ],
+      "definition": "hostile or warlike attitude or nature"
+    },
+    {
+      "lemma": "belligerency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hostility.n.03",
+          "via_synset": "belligerence.n.01"
+        }
+      ],
+      "definition": "hostile or warlike attitude or nature"
+    },
+    {
+      "lemma": "belligerent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "belligerence.n.01",
+          "via_synset": "aggressive.s.02"
+        }
+      ],
+      "definition": "characteristic of an enemy or one eager to fight"
+    },
+    {
+      "lemma": "bitter",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "resentment.n.01",
+          "via_synset": "bitter.s.05"
+        }
+      ],
+      "definition": "proceeding from or exhibiting great hostility or animosity"
+    },
+    {
+      "lemma": "bitterness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hostility.n.03",
+          "via_synset": "resentment.n.01"
+        }
+      ],
+      "definition": "a feeling of deep and bitter anger and ill-will"
+    },
+    {
+      "lemma": "CER",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "conditioned_emotional_response.n.01"
+        }
+      ],
+      "definition": "an emotional response that has been acquired by conditioning"
+    },
+    {
+      "lemma": "choler",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "anger.n.01"
+        }
+      ],
+      "definition": "a strong emotion; a feeling that is oriented toward some real or supposed grievance"
+    },
+    {
+      "lemma": "class feeling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hostility.n.03",
+          "via_synset": "class_feeling.n.01"
+        }
+      ],
+      "definition": "feelings of envy and resentment of one social or economic class for toward another"
+    },
+    {
+      "lemma": "conditioned emotion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "conditioned_emotional_response.n.01"
+        }
+      ],
+      "definition": "an emotional response that has been acquired by conditioning"
+    },
+    {
+      "lemma": "conditioned emotional response",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "conditioned_emotional_response.n.01"
+        }
+      ],
+      "definition": "an emotional response that has been acquired by conditioning"
+    },
+    {
+      "lemma": "contemn",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "contemn.v.01",
+          "via_synset": "contemn.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.v.01",
+          "via_synset": "contemn.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "hate.v.01",
+          "via_synset": "contemn.v.01"
+        }
+      ],
+      "definition": "look down on with disdain"
+    },
+    {
+      "lemma": "despisal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "despisal.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "contemn.v.01",
+          "via_synset": "despisal.n.01"
+        }
+      ],
+      "definition": "a feeling of scornful hatred"
+    },
+    {
+      "lemma": "despise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "contemn.v.01",
+          "via_synset": "contemn.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.v.01",
+          "via_synset": "contemn.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "despisal.n.01",
+          "via_synset": "contemn.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "hate.v.01",
+          "via_synset": "contemn.v.01"
+        }
+      ],
+      "definition": "look down on with disdain"
+    },
+    {
+      "lemma": "despising",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "despisal.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "contemn.v.01",
+          "via_synset": "despisal.n.01"
+        }
+      ],
+      "definition": "a feeling of scornful hatred"
+    },
+    {
+      "lemma": "detest",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hate.v.01",
+          "via_synset": "hate.v.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "abhor.v.01",
+          "via_synset": "hate.v.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "contemn.v.01",
+          "via_synset": "hate.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abhorrence.n.01",
+          "via_synset": "hate.v.01"
+        }
+      ],
+      "definition": "dislike intensely; feel antipathy or aversion towards"
+    },
+    {
+      "lemma": "detestation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "abhorrence.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hate.v.01",
+          "via_synset": "abhorrence.n.01"
+        }
+      ],
+      "definition": "hate coupled with disgust"
+    },
+    {
+      "lemma": "disdain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "contemn.v.01",
+          "via_synset": "contempt.n.01"
+        }
+      ],
+      "definition": "lack of respect accompanied by a feeling of intense dislike"
+    },
+    {
+      "lemma": "disdain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "contemn.v.01",
+          "via_synset": "contemn.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.v.01",
+          "via_synset": "contemn.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "hate.v.01",
+          "via_synset": "contemn.v.01"
+        }
+      ],
+      "definition": "look down on with disdain"
+    },
+    {
+      "lemma": "dislike",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "hate.v.01",
+          "via_synset": "dislike.v.01"
+        }
+      ],
+      "definition": "have or feel a dislike or distaste for"
+    },
+    {
+      "lemma": "emotion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "hate.n.01",
+          "via_synset": "emotion.n.01"
+        }
+      ],
+      "definition": "any strong feeling"
+    },
+    {
+      "lemma": "emotional state",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "emotional_state.n.01"
+        }
+      ],
+      "definition": "the state of a person's emotions (especially with regard to pleasure or dejection)"
+    },
+    {
+      "lemma": "enmity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "hostility.n.03"
+        }
+      ],
+      "definition": "the feeling of a hostile person"
+    },
+    {
+      "lemma": "enviousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "resentment.n.01",
+          "via_synset": "envy.n.01"
+        }
+      ],
+      "definition": "a feeling of grudging admiration and desire to have something that is possessed by another"
+    },
+    {
+      "lemma": "envy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "resentment.n.01",
+          "via_synset": "envy.n.01"
+        }
+      ],
+      "definition": "a feeling of grudging admiration and desire to have something that is possessed by another"
+    },
+    {
+      "lemma": "execrate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "abhor.v.01",
+          "via_synset": "abhor.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.v.01",
+          "via_synset": "abhor.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abhorrence.n.01",
+          "via_synset": "abhor.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "hate.v.01",
+          "via_synset": "abhor.v.01"
+        }
+      ],
+      "definition": "find repugnant"
+    },
+    {
+      "lemma": "execration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "abhorrence.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abhor.v.01",
+          "via_synset": "abhorrence.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abhor.v.01",
+          "via_synset": "execration.n.03"
+        }
+      ],
+      "definition": "hate coupled with disgust"
+    },
+    {
+      "lemma": "fear",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "fear.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "fear.n.03"
+        }
+      ],
+      "definition": "an emotion experienced in anticipation of some specific pain or danger (usually accompanied by a desire to flee or fight)"
+    },
+    {
+      "lemma": "fearfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "fear.n.01"
+        }
+      ],
+      "definition": "an emotion experienced in anticipation of some specific pain or danger (usually accompanied by a desire to flee or fight)"
+    },
+    {
+      "lemma": "fright",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "fear.n.01"
+        }
+      ],
+      "definition": "an emotion experienced in anticipation of some specific pain or danger (usually accompanied by a desire to flee or fight)"
+    },
+    {
+      "lemma": "gall",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hostility.n.03",
+          "via_synset": "resentment.n.01"
+        }
+      ],
+      "definition": "a feeling of deep and bitter anger and ill-will"
+    },
+    {
+      "lemma": "gall",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "resentment.n.01",
+          "via_synset": "gall.v.02"
+        }
+      ],
+      "definition": "irritate or vex"
+    },
+    {
+      "lemma": "grievance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "resentment.n.01",
+          "via_synset": "grudge.n.01"
+        }
+      ],
+      "definition": "a resentment strong enough to justify retaliation"
+    },
+    {
+      "lemma": "grudge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "resentment.n.01",
+          "via_synset": "grudge.n.01"
+        }
+      ],
+      "definition": "a resentment strong enough to justify retaliation"
+    },
+    {
+      "lemma": "hate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hate.n.01",
+          "via_synset": "hate.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hate.v.01",
+          "via_synset": "hate.n.01"
+        }
+      ],
+      "definition": "the emotion of intense dislike; a feeling of dislike so strong that it demands action"
+    },
+    {
+      "lemma": "hate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hate.v.01",
+          "via_synset": "hate.v.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "abhor.v.01",
+          "via_synset": "hate.v.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "contemn.v.01",
+          "via_synset": "hate.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hate.n.01",
+          "via_synset": "hate.v.01"
+        }
+      ],
+      "definition": "dislike intensely; feel antipathy or aversion towards"
+    },
+    {
+      "lemma": "hater",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hate.v.01",
+          "via_synset": "hater.n.01"
+        }
+      ],
+      "definition": "a person who hates"
+    },
+    {
+      "lemma": "hatred",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "hate.n.01",
+          "via_synset": "hate.n.01"
+        }
+      ],
+      "definition": "the emotion of intense dislike; a feeling of dislike so strong that it demands action"
+    },
+    {
+      "lemma": "heartburning",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "resentment.n.01",
+          "via_synset": "heartburning.n.01"
+        }
+      ],
+      "definition": "intense resentment"
+    },
+    {
+      "lemma": "hostile",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hostility.n.03",
+          "via_synset": "hostile.a.01"
+        }
+      ],
+      "definition": "characterized by enmity or ill will"
+    },
+    {
+      "lemma": "hostility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "hostility.n.03"
+        }
+      ],
+      "definition": "the feeling of a hostile person"
+    },
+    {
+      "lemma": "huffishness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "resentment.n.01",
+          "via_synset": "sulkiness.n.02"
+        }
+      ],
+      "definition": "a feeling of sulky resentment"
+    },
+    {
+      "lemma": "ill will",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "hostility.n.03"
+        }
+      ],
+      "definition": "the feeling of a hostile person"
+    },
+    {
+      "lemma": "inimical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "hostility.n.03",
+          "via_synset": "unfriendly.s.01"
+        }
+      ],
+      "definition": "not friendly"
+    },
+    {
+      "lemma": "ire",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "anger.n.01"
+        }
+      ],
+      "definition": "a strong emotion; a feeling that is oriented toward some real or supposed grievance"
+    },
+    {
+      "lemma": "joy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "joy.n.01"
+        }
+      ],
+      "definition": "the emotion of great happiness"
+    },
+    {
+      "lemma": "joyfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "joy.n.01"
+        }
+      ],
+      "definition": "the emotion of great happiness"
+    },
+    {
+      "lemma": "joyousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "joy.n.01"
+        }
+      ],
+      "definition": "the emotion of great happiness"
+    },
+    {
+      "lemma": "loathe",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "abhor.v.01",
+          "via_synset": "abhor.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.v.01",
+          "via_synset": "abhor.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abhorrence.n.01",
+          "via_synset": "abhor.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "hate.v.01",
+          "via_synset": "abhor.v.01"
+        }
+      ],
+      "definition": "find repugnant"
+    },
+    {
+      "lemma": "loather",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abhor.v.01",
+          "via_synset": "abominator.n.01"
+        }
+      ],
+      "definition": "one who hates or loathes"
+    },
+    {
+      "lemma": "loathing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "abhorrence.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abhor.v.01",
+          "via_synset": "abhorrence.n.01"
+        }
+      ],
+      "definition": "hate coupled with disgust"
+    },
+    {
+      "lemma": "look down on",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "contemn.v.01",
+          "via_synset": "look_down_on.v.01"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "contemn.v.01",
+          "via_synset": "look_down_on.v.01"
+        }
+      ],
+      "definition": "regard with contempt"
+    },
+    {
+      "lemma": "maleficence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "malevolence.n.01",
+          "via_synset": "maleficence.n.01"
+        }
+      ],
+      "definition": "doing or causing evil"
+    },
+    {
+      "lemma": "maleficent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "maleficence.n.01",
+          "via_synset": "maleficent.a.01"
+        }
+      ],
+      "definition": "harmful or evil in intent or effect"
+    },
+    {
+      "lemma": "malevolence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "malevolence.n.01"
+        }
+      ],
+      "definition": "wishing evil to others"
+    },
+    {
+      "lemma": "malevolent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "malevolence.n.01",
+          "via_synset": "malevolent.s.01"
+        }
+      ],
+      "definition": "wishing or appearing to wish evil to others; arising from intense ill will or hatred"
+    },
+    {
+      "lemma": "malice",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "malevolence.n.01",
+          "via_synset": "malice.n.01"
+        }
+      ],
+      "definition": "feeling a need to see others suffer"
+    },
+    {
+      "lemma": "malicious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "malice.n.01",
+          "via_synset": "malicious.a.01"
+        }
+      ],
+      "definition": "having the nature of or resulting from malice; ; - Rudyard Kipling"
+    },
+    {
+      "lemma": "maliciousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "malevolence.n.01",
+          "via_synset": "malice.n.01"
+        }
+      ],
+      "definition": "feeling a need to see others suffer"
+    },
+    {
+      "lemma": "malignity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "malevolence.n.01"
+        }
+      ],
+      "definition": "wishing evil to others"
+    },
+    {
+      "lemma": "misanthropic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "misanthropy.n.01",
+          "via_synset": "misanthropic.s.02"
+        }
+      ],
+      "definition": "hating mankind in general"
+    },
+    {
+      "lemma": "misanthropical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "misanthropy.n.01",
+          "via_synset": "misanthropic.s.02"
+        }
+      ],
+      "definition": "hating mankind in general"
+    },
+    {
+      "lemma": "misanthropist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "misanthropy.n.01",
+          "via_synset": "misanthrope.n.01"
+        }
+      ],
+      "definition": "someone who dislikes people in general"
+    },
+    {
+      "lemma": "misanthropy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "misanthropy.n.01"
+        }
+      ],
+      "definition": "hatred of mankind"
+    },
+    {
+      "lemma": "misocainea",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "misoneism.n.01",
+          "via_synset": "misocainea.n.01"
+        }
+      ],
+      "definition": "hatred of new ideas"
+    },
+    {
+      "lemma": "misogamist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "misogamy.n.01",
+          "via_synset": "misogamist.n.01"
+        }
+      ],
+      "definition": "a person who hates marriage"
+    },
+    {
+      "lemma": "misogamy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "misogamy.n.01"
+        }
+      ],
+      "definition": "hatred of marriage"
+    },
+    {
+      "lemma": "misogynic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "misogyny.n.01",
+          "via_synset": "misogynic.s.01"
+        }
+      ],
+      "definition": "(used of men) having deep-seated distrust of women"
+    },
+    {
+      "lemma": "misogynism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "misogyny.n.01"
+        }
+      ],
+      "definition": "hatred of women"
+    },
+    {
+      "lemma": "misogynist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "misogyny.n.01",
+          "via_synset": "misogynist.n.01"
+        }
+      ],
+      "definition": "a misanthrope who dislikes women in particular"
+    },
+    {
+      "lemma": "misogynous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "misogyny.n.01",
+          "via_synset": "misogynous.s.01"
+        }
+      ],
+      "definition": "hating women in particular"
+    },
+    {
+      "lemma": "misogyny",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "misogyny.n.01"
+        }
+      ],
+      "definition": "hatred of women"
+    },
+    {
+      "lemma": "misology",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "misology.n.01"
+        }
+      ],
+      "definition": "hatred of reasoning"
+    },
+    {
+      "lemma": "misoneism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "misoneism.n.01"
+        }
+      ],
+      "definition": "hatred of change or innovation"
+    },
+    {
+      "lemma": "misopedia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "misopedia.n.01"
+        }
+      ],
+      "definition": "hatred of children"
+    },
+    {
+      "lemma": "murderous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "murderousness.n.01",
+          "via_synset": "homicidal.s.01"
+        }
+      ],
+      "definition": "characteristic of or capable of or having a tendency toward killing another human being"
+    },
+    {
+      "lemma": "murderousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "murderousness.n.01"
+        }
+      ],
+      "definition": "a bloodthirsty hatred arousing murderous impulses"
+    },
+    {
+      "lemma": "odious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "abhorrence.n.01",
+          "via_synset": "abominable.s.01"
+        }
+      ],
+      "definition": "unequivocally detestable; ; ; ; - Edmund Burke"
+    },
+    {
+      "lemma": "odium",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.n.01",
+          "via_synset": "abhorrence.n.01"
+        }
+      ],
+      "definition": "hate coupled with disgust"
+    },
+    {
+      "lemma": "rancor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hostility.n.03",
+          "via_synset": "resentment.n.01"
+        }
+      ],
+      "definition": "a feeling of deep and bitter anger and ill-will"
+    },
+    {
+      "lemma": "rancorous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "resentment.n.01",
+          "via_synset": "rancorous.s.01"
+        }
+      ],
+      "definition": "showing deep-seated resentment; - Aldous Huxley"
+    },
+    {
+      "lemma": "rancour",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hostility.n.03",
+          "via_synset": "resentment.n.01"
+        }
+      ],
+      "definition": "a feeling of deep and bitter anger and ill-will"
+    },
+    {
+      "lemma": "resent",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "resentment.n.01",
+          "via_synset": "resent.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "dislike.v.01",
+          "via_synset": "resent.v.01"
+        }
+      ],
+      "definition": "feel bitter or indignant about"
+    },
+    {
+      "lemma": "resentment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "hostility.n.03",
+          "via_synset": "resentment.n.01"
+        }
+      ],
+      "definition": "a feeling of deep and bitter anger and ill-will"
+    },
+    {
+      "lemma": "reverence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "fear.n.03"
+        }
+      ],
+      "definition": "a feeling of profound respect for someone or something"
+    },
+    {
+      "lemma": "score",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "resentment.n.01",
+          "via_synset": "grudge.n.01"
+        }
+      ],
+      "definition": "a resentment strong enough to justify retaliation"
+    },
+    {
+      "lemma": "scorn",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "contemn.v.01",
+          "via_synset": "contempt.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "contemn.v.01",
+          "via_synset": "contempt.n.01"
+        }
+      ],
+      "definition": "open disrespect for a person or thing"
+    },
+    {
+      "lemma": "scorn",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "contemn.v.01",
+          "via_synset": "contemn.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "hate.v.01",
+          "via_synset": "contemn.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "hate.v.01",
+          "via_synset": "contemn.v.01"
+        }
+      ],
+      "definition": "look down on with disdain"
+    },
+    {
+      "lemma": "scorner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "contemn.v.01",
+          "via_synset": "sneerer.n.01"
+        }
+      ],
+      "definition": "a person who expresses contempt by remarks or facial expression"
+    },
+    {
+      "lemma": "spirit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "emotional_state.n.01"
+        }
+      ],
+      "definition": "the state of a person's emotions (especially with regard to pleasure or dejection)"
+    },
+    {
+      "lemma": "spite",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "malevolence.n.01",
+          "via_synset": "malice.n.01"
+        }
+      ],
+      "definition": "feeling a need to see others suffer"
+    },
+    {
+      "lemma": "spite",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "malice.n.01",
+          "via_synset": "hurt.v.05"
+        }
+      ],
+      "definition": "hurt the feelings of"
+    },
+    {
+      "lemma": "spiteful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "malice.n.01",
+          "via_synset": "despiteful.s.01"
+        }
+      ],
+      "definition": "showing malicious ill will and a desire to hurt; motivated by spite"
+    },
+    {
+      "lemma": "spitefulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "malevolence.n.01",
+          "via_synset": "malice.n.01"
+        }
+      ],
+      "definition": "feeling a need to see others suffer"
+    },
+    {
+      "lemma": "sulkiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "resentment.n.01",
+          "via_synset": "sulkiness.n.02"
+        }
+      ],
+      "definition": "a feeling of sulky resentment"
+    },
+    {
+      "lemma": "veneration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "fear.n.03"
+        }
+      ],
+      "definition": "a feeling of profound respect for someone or something"
+    },
+    {
+      "lemma": "vengeful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "vindictiveness.n.01",
+          "via_synset": "revengeful.s.01"
+        }
+      ],
+      "definition": "disposed to seek revenge or intended for revenge; - Shakespeare; - M.R.Cohen"
+    },
+    {
+      "lemma": "vengefulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "malevolence.n.01",
+          "via_synset": "vindictiveness.n.01"
+        }
+      ],
+      "definition": "a malevolent desire for revenge"
+    },
+    {
+      "lemma": "venom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "malevolence.n.01",
+          "via_synset": "malice.n.01"
+        }
+      ],
+      "definition": "feeling a need to see others suffer"
+    },
+    {
+      "lemma": "venomous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "malice.n.01",
+          "via_synset": "poisonous.s.03"
+        }
+      ],
+      "definition": "marked by deep ill will; deliberately harmful"
+    },
+    {
+      "lemma": "vindictive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "vindictiveness.n.01",
+          "via_synset": "revengeful.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "vindictiveness.n.01",
+          "via_synset": "despiteful.s.01"
+        }
+      ],
+      "definition": "disposed to seek revenge or intended for revenge; - Shakespeare; - M.R.Cohen"
+    },
+    {
+      "lemma": "vindictiveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "malevolence.n.01",
+          "via_synset": "vindictiveness.n.01"
+        }
+      ],
+      "definition": "a malevolent desire for revenge"
+    },
+    {
+      "lemma": "warpath",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "belligerence.n.01",
+          "via_synset": "warpath.n.01"
+        }
+      ],
+      "definition": "hostile or belligerent mood"
+    }
+  ]
+}

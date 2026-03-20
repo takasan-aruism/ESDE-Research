@@ -1,0 +1,1386 @@
+{
+  "atom_id": "VAL.sacred",
+  "category": "VAL",
+  "seed_count": 6,
+  "total_keys": 86,
+  "pos_counts": {
+    "adj": 32,
+    "n": 54
+  },
+  "source_counts": {
+    "0_seed": 17,
+    "7_similar_to": 28,
+    "8_also_see": 9,
+    "2_hypernym_d1": 3,
+    "3_hyponym_d1": 6,
+    "6_derivational": 5,
+    "9_antonym": 1,
+    "10_sibling": 32
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 15,
+      "words": [
+        "sacred(adj)",
+        "consecrated(adj)",
+        "sanctified(adj)",
+        "holy(adj)",
+        "holy place(n)",
+        "sanctum(n)",
+        "holy(n)",
+        "Godhead(n)",
+        "Lord(n)",
+        "Creator(n)",
+        "Maker(n)",
+        "Divine(n)",
+        "God Almighty(n)",
+        "Almighty(n)",
+        "Jehovah(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 3,
+      "words": [
+        "topographic point(n)",
+        "place(n)",
+        "spot(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 6,
+      "words": [
+        "Trinity(n)",
+        "Holy Trinity(n)",
+        "Blessed Trinity(n)",
+        "Sacred Trinity(n)",
+        "hypostasis(n)",
+        "hypostasis of Christ(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 3,
+      "words": [
+        "holiness(n)",
+        "sacredness(n)",
+        "almighty(adj)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 22,
+      "words": [
+        "beatified(adj)",
+        "blessed(adj)",
+        "hallowed(adj)",
+        "worthy(adj)",
+        "ineffable(adj)",
+        "unnameable(adj)",
+        "unspeakable(adj)",
+        "unutterable(adj)",
+        "taboo(adj)",
+        "tabu(adj)",
+        "religious(adj)",
+        "spiritual(adj)",
+        "inspirational(adj)",
+        "sacral(adj)",
+        "numinous(adj)",
+        "quasi-religious(adj)",
+        "reverend(adj)",
+        "sublime(adj)",
+        "divine(adj)",
+        "inviolable(adj)",
+        "inviolate(adj)",
+        "sacrosanct(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 4,
+      "words": [
+        "consecrate(adj)",
+        "dedicated(adj)",
+        "pious(adj)",
+        "heavenly(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "unholy(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 32,
+      "words": [
+        "overlook(n)",
+        "showplace(n)",
+        "peak(n)",
+        "crown(n)",
+        "crest(n)",
+        "top(n)",
+        "tip(n)",
+        "summit(n)",
+        "birthplace(n)",
+        "place of birth(n)",
+        "rendezvous(n)",
+        "hiding place(n)",
+        "target(n)",
+        "target area(n)",
+        "solitude(n)",
+        "junction(n)",
+        "mecca(n)",
+        "pool(n)",
+        "puddle(n)",
+        "polling place(n)",
+        "polling station(n)",
+        "grave(n)",
+        "tomb(n)",
+        "end(n)",
+        "nesting place(n)",
+        "zone(n)",
+        "scour(n)",
+        "service area(n)",
+        "stop(n)",
+        "hole-in-the-wall(n)",
+        "high(n)",
+        "heights(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "almighty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "godhead.n.01",
+          "via_synset": "almighty.s.01"
+        }
+      ],
+      "definition": "having unlimited power"
+    },
+    {
+      "lemma": "Almighty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "godhead.n.01",
+          "via_synset": "godhead.n.01"
+        }
+      ],
+      "definition": "terms referring to the Judeo-Christian God"
+    },
+    {
+      "lemma": "beatified",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "holy.a.01",
+          "via_synset": "beatified.s.01"
+        }
+      ],
+      "definition": "Roman Catholic; proclaimed one of the blessed and thus worthy of veneration"
+    },
+    {
+      "lemma": "birthplace",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "birthplace.n.01"
+        }
+      ],
+      "definition": "the place where someone was born"
+    },
+    {
+      "lemma": "blessed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "holy.a.01",
+          "via_synset": "beatified.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "holy.a.01",
+          "via_synset": "blessed.s.01"
+        }
+      ],
+      "definition": "Roman Catholic; proclaimed one of the blessed and thus worthy of veneration"
+    },
+    {
+      "lemma": "Blessed Trinity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "godhead.n.01",
+          "via_synset": "trinity.n.02"
+        }
+      ],
+      "definition": "the union of the Father and Son and Holy Ghost in one Godhead"
+    },
+    {
+      "lemma": "consecrate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "holy.a.01",
+          "via_synset": "consecrated.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "sacred.a.01",
+          "via_synset": "consecrated.a.01"
+        }
+      ],
+      "definition": "solemnly dedicated to or set apart for a high purpose"
+    },
+    {
+      "lemma": "consecrated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "consecrated.s.01",
+          "via_synset": "consecrated.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "holy.a.01",
+          "via_synset": "consecrated.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "holy.a.01",
+          "via_synset": "consecrated.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "sacred.a.01",
+          "via_synset": "consecrated.a.01"
+        }
+      ],
+      "definition": "made or declared or believed to be holy; devoted to a deity or some religious ceremony or use"
+    },
+    {
+      "lemma": "Creator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "godhead.n.01",
+          "via_synset": "godhead.n.01"
+        }
+      ],
+      "definition": "terms referring to the Judeo-Christian God"
+    },
+    {
+      "lemma": "crest",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "peak.n.04"
+        }
+      ],
+      "definition": "the top or extreme point of something (usually a mountain or hill)"
+    },
+    {
+      "lemma": "crown",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "peak.n.04"
+        }
+      ],
+      "definition": "the top or extreme point of something (usually a mountain or hill)"
+    },
+    {
+      "lemma": "dedicated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "holy.a.01",
+          "via_synset": "consecrated.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "sacred.a.01",
+          "via_synset": "consecrated.a.01"
+        }
+      ],
+      "definition": "solemnly dedicated to or set apart for a high purpose"
+    },
+    {
+      "lemma": "divine",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sacred.a.01",
+          "via_synset": "divine.s.04"
+        }
+      ],
+      "definition": "devoted to or in the service or worship of a deity"
+    },
+    {
+      "lemma": "Divine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "godhead.n.01",
+          "via_synset": "godhead.n.01"
+        }
+      ],
+      "definition": "terms referring to the Judeo-Christian God"
+    },
+    {
+      "lemma": "end",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "end.n.10"
+        }
+      ],
+      "definition": "one of two places from which people are communicating to each other"
+    },
+    {
+      "lemma": "God Almighty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "godhead.n.01",
+          "via_synset": "godhead.n.01"
+        }
+      ],
+      "definition": "terms referring to the Judeo-Christian God"
+    },
+    {
+      "lemma": "Godhead",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "godhead.n.01",
+          "via_synset": "godhead.n.01"
+        }
+      ],
+      "definition": "terms referring to the Judeo-Christian God"
+    },
+    {
+      "lemma": "grave",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "grave.n.02"
+        }
+      ],
+      "definition": "a place for the burial of a corpse (especially beneath the ground and marked by a tombstone)"
+    },
+    {
+      "lemma": "hallowed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "holy.a.01",
+          "via_synset": "hallowed.s.01"
+        }
+      ],
+      "definition": "worthy of religious veneration"
+    },
+    {
+      "lemma": "heavenly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "sacred.a.01",
+          "via_synset": "heavenly.a.03"
+        }
+      ],
+      "definition": "of or belonging to heaven or god"
+    },
+    {
+      "lemma": "heights",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "high.n.05"
+        }
+      ],
+      "definition": "a high place"
+    },
+    {
+      "lemma": "hiding place",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "hiding_place.n.01"
+        }
+      ],
+      "definition": "a place suitable for hiding something (such as yourself)"
+    },
+    {
+      "lemma": "high",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "high.n.05"
+        }
+      ],
+      "definition": "a high place"
+    },
+    {
+      "lemma": "hole-in-the-wall",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "hole-in-the-wall.n.01"
+        }
+      ],
+      "definition": "a small unpretentious out-of-the-way place"
+    },
+    {
+      "lemma": "holiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "holy.a.01",
+          "via_synset": "holiness.n.01"
+        }
+      ],
+      "definition": "the quality of being holy"
+    },
+    {
+      "lemma": "holy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "holy.a.01",
+          "via_synset": "holy.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "consecrated.s.01",
+          "via_synset": "holy.a.01"
+        }
+      ],
+      "definition": "belonging to or derived from or associated with a divine power"
+    },
+    {
+      "lemma": "holy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "holy_place.n.01",
+          "via_synset": "holy_place.n.01"
+        }
+      ],
+      "definition": "a sacred place of pilgrimage"
+    },
+    {
+      "lemma": "holy place",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "holy_place.n.01",
+          "via_synset": "holy_place.n.01"
+        }
+      ],
+      "definition": "a sacred place of pilgrimage"
+    },
+    {
+      "lemma": "Holy Trinity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "godhead.n.01",
+          "via_synset": "trinity.n.02"
+        }
+      ],
+      "definition": "the union of the Father and Son and Holy Ghost in one Godhead"
+    },
+    {
+      "lemma": "hypostasis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "godhead.n.01",
+          "via_synset": "hypostasis.n.03"
+        }
+      ],
+      "definition": "any of the three persons of the Godhead constituting the Trinity especially the person of Christ in which divine and human natures are united"
+    },
+    {
+      "lemma": "hypostasis of Christ",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "godhead.n.01",
+          "via_synset": "hypostasis.n.03"
+        }
+      ],
+      "definition": "any of the three persons of the Godhead constituting the Trinity especially the person of Christ in which divine and human natures are united"
+    },
+    {
+      "lemma": "ineffable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sacred.a.01",
+          "via_synset": "ineffable.s.02"
+        }
+      ],
+      "definition": "too sacred to be uttered"
+    },
+    {
+      "lemma": "inspirational",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sacred.a.01",
+          "via_synset": "inspirational.s.01"
+        }
+      ],
+      "definition": "imparting a divine influence on the mind and soul"
+    },
+    {
+      "lemma": "inviolable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sacred.a.01",
+          "via_synset": "inviolable.s.02"
+        }
+      ],
+      "definition": "must be kept sacred"
+    },
+    {
+      "lemma": "inviolate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sacred.a.01",
+          "via_synset": "inviolable.s.02"
+        }
+      ],
+      "definition": "must be kept sacred"
+    },
+    {
+      "lemma": "Jehovah",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "godhead.n.01",
+          "via_synset": "godhead.n.01"
+        }
+      ],
+      "definition": "terms referring to the Judeo-Christian God"
+    },
+    {
+      "lemma": "junction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "junction.n.01"
+        }
+      ],
+      "definition": "the place where two or more things come together"
+    },
+    {
+      "lemma": "Lord",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "godhead.n.01",
+          "via_synset": "godhead.n.01"
+        }
+      ],
+      "definition": "terms referring to the Judeo-Christian God"
+    },
+    {
+      "lemma": "Maker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "godhead.n.01",
+          "via_synset": "godhead.n.01"
+        }
+      ],
+      "definition": "terms referring to the Judeo-Christian God"
+    },
+    {
+      "lemma": "mecca",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "mecca.n.02"
+        }
+      ],
+      "definition": "a place that attracts many visitors"
+    },
+    {
+      "lemma": "nesting place",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "nesting_place.n.01"
+        }
+      ],
+      "definition": "a place suitable for nesting"
+    },
+    {
+      "lemma": "numinous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sacred.a.01",
+          "via_synset": "numinous.s.01"
+        }
+      ],
+      "definition": "evincing the presence of a deity"
+    },
+    {
+      "lemma": "overlook",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "overlook.n.01"
+        }
+      ],
+      "definition": "a high place affording a good view"
+    },
+    {
+      "lemma": "peak",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "peak.n.04"
+        }
+      ],
+      "definition": "the top or extreme point of something (usually a mountain or hill)"
+    },
+    {
+      "lemma": "pious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "sacred.a.01",
+          "via_synset": "pious.a.01"
+        }
+      ],
+      "definition": "having or showing or expressing reverence for a deity"
+    },
+    {
+      "lemma": "place",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "holy_place.n.01",
+          "via_synset": "topographic_point.n.01"
+        }
+      ],
+      "definition": "a point located with respect to surface features of some region"
+    },
+    {
+      "lemma": "place of birth",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "birthplace.n.01"
+        }
+      ],
+      "definition": "the place where someone was born"
+    },
+    {
+      "lemma": "polling place",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "polling_place.n.01"
+        }
+      ],
+      "definition": "a place where voters go to cast their votes in an election"
+    },
+    {
+      "lemma": "polling station",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "polling_place.n.01"
+        }
+      ],
+      "definition": "a place where voters go to cast their votes in an election"
+    },
+    {
+      "lemma": "pool",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "pool.n.08"
+        }
+      ],
+      "definition": "something resembling a pool of liquid"
+    },
+    {
+      "lemma": "puddle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "pool.n.08"
+        }
+      ],
+      "definition": "something resembling a pool of liquid"
+    },
+    {
+      "lemma": "quasi-religious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sacred.a.01",
+          "via_synset": "quasi-religious.s.01"
+        }
+      ],
+      "definition": "resembling something that is religious"
+    },
+    {
+      "lemma": "religious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sacred.a.01",
+          "via_synset": "religious.s.01"
+        }
+      ],
+      "definition": "concerned with sacred matters or religion or the church"
+    },
+    {
+      "lemma": "rendezvous",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "rendezvous.n.02"
+        }
+      ],
+      "definition": "a place where people meet"
+    },
+    {
+      "lemma": "reverend",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sacred.a.01",
+          "via_synset": "reverend.s.01"
+        }
+      ],
+      "definition": "worthy of adoration or reverence"
+    },
+    {
+      "lemma": "sacral",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sacred.a.01",
+          "via_synset": "sacral.s.01"
+        }
+      ],
+      "definition": "of or relating to sacred rites"
+    },
+    {
+      "lemma": "sacred",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sacred.a.01",
+          "via_synset": "sacred.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sacred.s.01",
+          "via_synset": "sacred.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "consecrated.s.01",
+          "via_synset": "consecrated.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "holy.a.01",
+          "via_synset": "hallowed.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "holy.a.01",
+          "via_synset": "consecrated.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "holy.a.01",
+          "via_synset": "sacred.a.01"
+        }
+      ],
+      "definition": "concerned with religion or religious purposes"
+    },
+    {
+      "lemma": "Sacred Trinity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "godhead.n.01",
+          "via_synset": "trinity.n.02"
+        }
+      ],
+      "definition": "the union of the Father and Son and Holy Ghost in one Godhead"
+    },
+    {
+      "lemma": "sacredness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consecrated.s.01",
+          "via_synset": "sacredness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sacred.s.01",
+          "via_synset": "sacredness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sacred.a.01",
+          "via_synset": "sacredness.n.01"
+        }
+      ],
+      "definition": "the quality of being sacred"
+    },
+    {
+      "lemma": "sacrosanct",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sacred.a.01",
+          "via_synset": "inviolable.s.02"
+        }
+      ],
+      "definition": "must be kept sacred"
+    },
+    {
+      "lemma": "sanctified",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "consecrated.s.01",
+          "via_synset": "consecrated.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "holy.a.01",
+          "via_synset": "consecrated.s.01"
+        }
+      ],
+      "definition": "made or declared or believed to be holy; devoted to a deity or some religious ceremony or use"
+    },
+    {
+      "lemma": "sanctum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "holy_place.n.01",
+          "via_synset": "holy_place.n.01"
+        }
+      ],
+      "definition": "a sacred place of pilgrimage"
+    },
+    {
+      "lemma": "scour",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "scour.n.01"
+        }
+      ],
+      "definition": "a place that is scoured (especially by running water)"
+    },
+    {
+      "lemma": "service area",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "service_area.n.01"
+        }
+      ],
+      "definition": "place on a highway providing garage services and eating and toilet facilities"
+    },
+    {
+      "lemma": "showplace",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "showplace.n.01"
+        }
+      ],
+      "definition": "a place that is frequently exhibited and visited for its historical interest or natural beauty"
+    },
+    {
+      "lemma": "solitude",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "solitude.n.03"
+        }
+      ],
+      "definition": "a solitary place"
+    },
+    {
+      "lemma": "spiritual",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sacred.a.01",
+          "via_synset": "religious.s.01"
+        }
+      ],
+      "definition": "concerned with sacred matters or religion or the church"
+    },
+    {
+      "lemma": "spot",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "holy_place.n.01",
+          "via_synset": "topographic_point.n.01"
+        }
+      ],
+      "definition": "a point located with respect to surface features of some region"
+    },
+    {
+      "lemma": "stop",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "stop.n.05"
+        }
+      ],
+      "definition": "a spot where something halts or pauses"
+    },
+    {
+      "lemma": "sublime",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sacred.a.01",
+          "via_synset": "reverend.s.01"
+        }
+      ],
+      "definition": "worthy of adoration or reverence"
+    },
+    {
+      "lemma": "summit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "peak.n.04"
+        }
+      ],
+      "definition": "the top or extreme point of something (usually a mountain or hill)"
+    },
+    {
+      "lemma": "taboo",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sacred.a.01",
+          "via_synset": "taboo.s.02"
+        }
+      ],
+      "definition": "forbidden to profane use especially in South Pacific islands"
+    },
+    {
+      "lemma": "tabu",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sacred.a.01",
+          "via_synset": "taboo.s.02"
+        }
+      ],
+      "definition": "forbidden to profane use especially in South Pacific islands"
+    },
+    {
+      "lemma": "target",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "target.n.03"
+        }
+      ],
+      "definition": "the location of the target that is to be hit"
+    },
+    {
+      "lemma": "target area",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "target.n.03"
+        }
+      ],
+      "definition": "the location of the target that is to be hit"
+    },
+    {
+      "lemma": "tip",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "peak.n.04"
+        }
+      ],
+      "definition": "the top or extreme point of something (usually a mountain or hill)"
+    },
+    {
+      "lemma": "tomb",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "grave.n.02"
+        }
+      ],
+      "definition": "a place for the burial of a corpse (especially beneath the ground and marked by a tombstone)"
+    },
+    {
+      "lemma": "top",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "peak.n.04"
+        }
+      ],
+      "definition": "the top or extreme point of something (usually a mountain or hill)"
+    },
+    {
+      "lemma": "topographic point",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "holy_place.n.01",
+          "via_synset": "topographic_point.n.01"
+        }
+      ],
+      "definition": "a point located with respect to surface features of some region"
+    },
+    {
+      "lemma": "Trinity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "godhead.n.01",
+          "via_synset": "trinity.n.02"
+        }
+      ],
+      "definition": "the union of the Father and Son and Holy Ghost in one Godhead"
+    },
+    {
+      "lemma": "unholy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "holy.a.01",
+          "via_synset": "unholy.a.01"
+        }
+      ],
+      "definition": "not hallowed or consecrated"
+    },
+    {
+      "lemma": "unnameable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sacred.a.01",
+          "via_synset": "ineffable.s.02"
+        }
+      ],
+      "definition": "too sacred to be uttered"
+    },
+    {
+      "lemma": "unspeakable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sacred.a.01",
+          "via_synset": "ineffable.s.02"
+        }
+      ],
+      "definition": "too sacred to be uttered"
+    },
+    {
+      "lemma": "unutterable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sacred.a.01",
+          "via_synset": "ineffable.s.02"
+        }
+      ],
+      "definition": "too sacred to be uttered"
+    },
+    {
+      "lemma": "worthy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sacred.s.01",
+          "via_synset": "worthy.a.01"
+        }
+      ],
+      "definition": "having worth or merit or value; being honorable or admirable"
+    },
+    {
+      "lemma": "zone",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "topographic_point.n.01",
+          "via_synset": "zone.n.01"
+        }
+      ],
+      "definition": "a locally circumscribed place characterized by some distinctive features"
+    }
+  ]
+}

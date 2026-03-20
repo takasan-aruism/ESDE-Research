@@ -1,0 +1,100 @@
+# ESDE System Development Context (Phase 7D)
+
+## 0. AI Role Allocation & Workflow
+本プロジェクトでは、各AIモデルの特性に応じた役割分担を厳格に定めている。あなたは割り当てられた役割（Role）に従って出力を行うこと。
+
+* **Claude (Role: Lead Engineer / Implementer)**
+    * 担当: 長文コードの記述、高難易度ロジックの実装、最終的なプロダクションコードの作成。
+    * 期待値: 複雑な文脈を保持したまま、Phase 7Dの仕様をコードに落とし込む。省略のない実装。
+* **ChatGPT (Role: Architect / Auditor)**
+    * 担当: 仕様の相談、論理的矛盾の監査、全体像（Master Map）の整合性管理。
+* **Gemini (Role: Agile Developer / Consultant)**
+    * 担当: 簡易な実装、単体テスト、別件（Side-channel）の相談。
+
+---
+
+## 1. 目的・全体像 (Master Map)
+
+### Project Philosophy: "Volatility-First & Audit"
+このシステムは、未知のトークンを即座に分類するのではなく、**不確実性（Volatility）**を検出し、**監査（Audit）**可能な状態で保持・解決することを目的とする。
+
+### Aruizm Compass (Minimum Core)
+開発における判断に迷った際は、以下の原則に立ち返ること。
+* **了解→創造は運動であり、結論への圧縮を目的にしない。**
+* **ε（ズレ）は誤差ではなく、構造が生きている証拠として保持する。**
+* **対等性：単一の勝者（winner）で世界を閉じない（null維持）。**
+
+### Phase 7D Definition: "Meta-Audit" (Current Focus)
+「ESDEはなぜ今この世界を、こう見ているのか？」を問い直すフェーズ。
+対象はデータではなく**「法則（ルール）」であり、意味ではなく「意味が決まらない理由の扱い方」**である。
+
+#### 7D I/O Contract (Strict)
+* **Input:** 7B+/7C/7C' の出力ログ（aggregate + audit + drift + qc）のみを唯一の入力とする。
+* **Output:** ルール変更の提案（提案値＋根拠＋影響範囲＋リスク）に限定する。
+* **No-touch:** 既存ログの再解釈で意味を決めない／学習しない／勝者を作らない。
+
+### Architecture & Key Files (Phase 7D Scope)
+
+#### Group A: The Resolver (Phase 7B+/7C/7C')
+* **`resolve_unknown_queue_7bplus_v534_final.py`** (Current Main)
+    * 役割: メイン実行スクリプト。winner=null を徹底。
+* **`esde_engine/resolver/hypothesis.py`**
+* **`esde_engine/resolver/aggregate_state.py`**
+
+#### Group F: The Meta-Auditor (Phase 7D / New)
+ルールの妥当性を検証する最上位レイヤー。
+* **役割:** ルール検証（Volatility算出式や閾値の妥当性確認）、パターン抽出。
+* **想定出力:** `audit_rules_review_7d.json` (提案ファイル), `axis_candidates.json`
+
+---
+
+## 2. 運用プロトコル (Operational Protocols)
+
+### Phase 7D Allowed Adjustment Surface (Touch Only These)
+コード変更や提案において、以下の範囲のみ操作を許可する。
+1.  **config.py:** thresholds/weights（`COMPETE_TH`, `VOL_*` など）
+2.  **hypothesis.py:** volatility / competing の算出定義（新指標はログに必ず出す）
+3.  **7C'/QC:** drift・human_review の送致条件（winner=nullは維持）
+
+### 7D Success Metrics (KPI)
+* **False escalation reduction:** `human_review` の過剰送致を減らす（ただし見逃しを増やさない）。
+* **Volatility calibration:** `VOL_HIGH`/`VOL_LOW` の分布が極端（全HIGH等）にならない。
+* **Determinism:** 同一ログ入力で提案が完全再現する（seed固定/処理順固定）。
+
+### Phase 7D Specific Constraints (禁則事項)
+* ❌ **意味を決めない:** 「この単語はこう解釈すべき」という提案は7Dの責務ではない。
+* ❌ **自動適用しない:** 算出された調整案を勝手に `config.py` に書き込んではならない。必ず「提案ファイル」として出力する。
+* **Molecule Operators (Observe-only):** 分子（¬, ×, ⊕）は善悪評価しない。ただし 7Dでは「出現率」「共起パターン」「高volatilityとの相関」を観測し、ルール側の歪み検知に使う。
+
+### File Policy (Priority)
+* **原則:** 新規ファイルは作らない（Minimal Diffs）。既存ファイルの責務内で完結させる。
+* **例外:** 7Dは「ログ分析専用」でありプロセスが異なるため、責務分離が必要な場合に限り **新規1ファイル (`esde_meta_auditor.py` 等) の作成を許可する**。ただし既存の Resolver/Engine 本体は破壊的な改変を行わないこと。
+
+---
+
+## 3. コード定義 (Skeleton Context)
+Current codebase state (includes Phase 7C').
+
+* **FILE: `esde_engine/config.py`**
+    * `VERSION: str = "5.3.3"`
+    * `COMPETE_TH: float = 0.15`
+    * `VOL_HIGH_TH: float = 0.50`
+* **FILE: `resolve_unknown_queue_7bplus_v534_final.py`**
+    * `class AggregatedRecord`, `class AuditLedger`
+* **FILE: `esde_engine/resolver/aggregate_state.py`**
+    * `class AggregateStateManager`
+* **FILE: `esde_engine/resolver/hypothesis.py`**
+    * `class EvaluationReport`
+
+---
+
+## AIへの追加指示（開発方針）
+
+これより **Phase 7D** の実装を開始します。あなたは **Lead Engineer (Claude)** としての役割を期待されています。
+
+1.  **設計提案:**
+    上記の「I/O Contract」および「File Policy」に基づき、既存のResolverログを読み込んで分析を行う **Phase 7D の実装アプローチ** を提示してください。
+    * 新規ファイル `esde_meta_auditor.py` を作成し、ログを入力として `audit_rules_review_7d.json` を吐き出す構成を推奨します。
+
+2.  **実装:**
+    合意後、指定されたKPI（Determinism等）を満たすコードを実装してください。

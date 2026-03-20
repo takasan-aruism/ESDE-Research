@@ -1,0 +1,997 @@
+{
+  "atom_id": "COG.instinct",
+  "category": "COG",
+  "seed_count": 6,
+  "total_keys": 62,
+  "pos_counts": {
+    "n": 48,
+    "adj": 12,
+    "v": 2
+  },
+  "source_counts": {
+    "0_seed": 14,
+    "2_hypernym_d1": 7,
+    "3_hyponym_d1": 11,
+    "4_hyponym_d2": 1,
+    "6_derivational": 7,
+    "7_similar_to": 3,
+    "9_antonym": 1,
+    "10_sibling": 24
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 12,
+      "words": [
+        "instinct(n)",
+        "inherent aptitude(n)",
+        "instinct(adj)",
+        "replete(adj)",
+        "intuition(n)",
+        "hunch(n)",
+        "suspicion(n)",
+        "unconditioned(adj)",
+        "innate(adj)",
+        "unlearned(adj)",
+        "natural(adj)",
+        "born(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 7,
+      "words": [
+        "aptitude(n)",
+        "basic cognitive process(n)",
+        "impression(n)",
+        "feeling(n)",
+        "belief(n)",
+        "notion(n)",
+        "opinion(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 10,
+      "words": [
+        "id(n)",
+        "inspiration(n)",
+        "insight(n)",
+        "sixth sense(n)",
+        "gnosis(n)",
+        "intuitive feeling(n)",
+        "immediacy(n)",
+        "immediate apprehension(n)",
+        "heart(n)",
+        "bosom(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 1,
+      "words": [
+        "sprachgefuhl(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 4,
+      "words": [
+        "intuit(v)",
+        "suspect(v)",
+        "Gnostic(adj)",
+        "innateness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 3,
+      "words": [
+        "full(adj)",
+        "intelligent(adj)",
+        "naive(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "conditioned(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 24,
+      "words": [
+        "natural ability(n)",
+        "capability(n)",
+        "capableness(n)",
+        "potentiality(n)",
+        "inattention(n)",
+        "apperception(n)",
+        "representational process(n)",
+        "attention(n)",
+        "attending(n)",
+        "perception(n)",
+        "memory(n)",
+        "remembering(n)",
+        "discrimination(n)",
+        "secernment(n)",
+        "learning(n)",
+        "acquisition(n)",
+        "classification(n)",
+        "categorization(n)",
+        "categorisation(n)",
+        "sorting(n)",
+        "believing(n)",
+        "first blush(n)",
+        "effect(n)",
+        "presence(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "acquisition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "learning.n.01"
+        }
+      ],
+      "definition": "the cognitive process of acquiring skill or knowledge"
+    },
+    {
+      "lemma": "apperception",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "apperception.n.01"
+        }
+      ],
+      "definition": "the process whereby perceived qualities of an object are related to past experience"
+    },
+    {
+      "lemma": "aptitude",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "instinct.n.01",
+          "via_synset": "aptitude.n.01"
+        }
+      ],
+      "definition": "inherent ability"
+    },
+    {
+      "lemma": "attending",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "attention.n.01"
+        }
+      ],
+      "definition": "the process whereby a person concentrates on some features of the environment to the (relative) exclusion of others"
+    },
+    {
+      "lemma": "attention",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "attention.n.01"
+        }
+      ],
+      "definition": "the process whereby a person concentrates on some features of the environment to the (relative) exclusion of others"
+    },
+    {
+      "lemma": "basic cognitive process",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "intuition.n.01",
+          "via_synset": "basic_cognitive_process.n.01"
+        }
+      ],
+      "definition": "cognitive processes involved in obtaining and storing knowledge"
+    },
+    {
+      "lemma": "belief",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "intuition.n.02",
+          "via_synset": "impression.n.01"
+        }
+      ],
+      "definition": "a vague idea in which some confidence is placed"
+    },
+    {
+      "lemma": "believing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "believing.n.01"
+        }
+      ],
+      "definition": "the cognitive process that leads to convictions"
+    },
+    {
+      "lemma": "born",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "natural.s.05",
+          "via_synset": "natural.s.05"
+        }
+      ],
+      "definition": "being talented through inherited qualities"
+    },
+    {
+      "lemma": "bosom",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intuition.n.02",
+          "via_synset": "heart.n.01"
+        }
+      ],
+      "definition": "the locus of feelings and intuitions"
+    },
+    {
+      "lemma": "capability",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "aptitude.n.01",
+          "via_synset": "capability.n.03"
+        }
+      ],
+      "definition": "an aptitude that may be developed"
+    },
+    {
+      "lemma": "capableness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "aptitude.n.01",
+          "via_synset": "capability.n.03"
+        }
+      ],
+      "definition": "an aptitude that may be developed"
+    },
+    {
+      "lemma": "categorisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "classification.n.03"
+        }
+      ],
+      "definition": "the basic cognitive process of arranging into classes or categories"
+    },
+    {
+      "lemma": "categorization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "classification.n.03"
+        }
+      ],
+      "definition": "the basic cognitive process of arranging into classes or categories"
+    },
+    {
+      "lemma": "classification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "classification.n.03"
+        }
+      ],
+      "definition": "the basic cognitive process of arranging into classes or categories"
+    },
+    {
+      "lemma": "conditioned",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "unconditioned.a.01",
+          "via_synset": "conditioned.a.01"
+        }
+      ],
+      "definition": "established by conditioning or learning"
+    },
+    {
+      "lemma": "discrimination",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "discrimination.n.02"
+        }
+      ],
+      "definition": "the cognitive process whereby two or more stimuli are distinguished"
+    },
+    {
+      "lemma": "effect",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impression.n.01",
+          "via_synset": "effect.n.03"
+        }
+      ],
+      "definition": "an impression (especially one that is artificial or contrived)"
+    },
+    {
+      "lemma": "feeling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "intuition.n.02",
+          "via_synset": "impression.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intuition.n.01",
+          "via_synset": "feeling.n.06"
+        }
+      ],
+      "definition": "a vague idea in which some confidence is placed"
+    },
+    {
+      "lemma": "first blush",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impression.n.01",
+          "via_synset": "first_blush.n.01"
+        }
+      ],
+      "definition": "at the first glimpse or impression"
+    },
+    {
+      "lemma": "full",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "instinct.s.01",
+          "via_synset": "full.a.01"
+        }
+      ],
+      "definition": "containing as much or as many as is possible or normal"
+    },
+    {
+      "lemma": "gnosis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intuition.n.01",
+          "via_synset": "gnosis.n.01"
+        }
+      ],
+      "definition": "intuitive knowledge of spiritual truths; said to have been possessed by ancient Gnostics"
+    },
+    {
+      "lemma": "Gnostic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "gnosis.n.01",
+          "via_synset": "gnostic.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "gnosis.n.01",
+          "via_synset": "gnostic.a.02"
+        }
+      ],
+      "definition": "of or relating to Gnosticism"
+    },
+    {
+      "lemma": "heart",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intuition.n.02",
+          "via_synset": "heart.n.01"
+        }
+      ],
+      "definition": "the locus of feelings and intuitions"
+    },
+    {
+      "lemma": "hunch",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "intuition.n.02",
+          "via_synset": "intuition.n.02"
+        }
+      ],
+      "definition": "an impression that something might be the case"
+    },
+    {
+      "lemma": "id",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "instinct.n.01",
+          "via_synset": "id.n.03"
+        }
+      ],
+      "definition": "(psychoanalysis) primitive instincts and energies underlying all psychic activity"
+    },
+    {
+      "lemma": "immediacy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intuition.n.01",
+          "via_synset": "immediacy.n.02"
+        }
+      ],
+      "definition": "immediate intuitive awareness"
+    },
+    {
+      "lemma": "immediate apprehension",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intuition.n.01",
+          "via_synset": "immediacy.n.02"
+        }
+      ],
+      "definition": "immediate intuitive awareness"
+    },
+    {
+      "lemma": "impression",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "intuition.n.02",
+          "via_synset": "impression.n.01"
+        }
+      ],
+      "definition": "a vague idea in which some confidence is placed"
+    },
+    {
+      "lemma": "inattention",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "inattention.n.01"
+        }
+      ],
+      "definition": "lack of attention"
+    },
+    {
+      "lemma": "inherent aptitude",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "instinct.n.01",
+          "via_synset": "instinct.n.01"
+        }
+      ],
+      "definition": "inborn pattern of behavior often responsive to specific stimuli"
+    },
+    {
+      "lemma": "innate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unconditioned.a.01",
+          "via_synset": "unconditioned.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "natural.s.05",
+          "via_synset": "natural.s.05"
+        }
+      ],
+      "definition": "not established by conditioning or learning"
+    },
+    {
+      "lemma": "innateness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "natural.s.05",
+          "via_synset": "innateness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unconditioned.a.01",
+          "via_synset": "innateness.n.01"
+        }
+      ],
+      "definition": "the quality of being innate"
+    },
+    {
+      "lemma": "insight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intuition.n.01",
+          "via_synset": "insight.n.04"
+        }
+      ],
+      "definition": "grasping the inner nature of things intuitively"
+    },
+    {
+      "lemma": "inspiration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intuition.n.01",
+          "via_synset": "inspiration.n.03"
+        }
+      ],
+      "definition": "a sudden intuition as part of solving a problem"
+    },
+    {
+      "lemma": "instinct",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "instinct.s.01",
+          "via_synset": "instinct.s.01"
+        }
+      ],
+      "definition": "(followed by `with')deeply filled or permeated"
+    },
+    {
+      "lemma": "instinct",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "instinct.n.01",
+          "via_synset": "instinct.n.01"
+        }
+      ],
+      "definition": "inborn pattern of behavior often responsive to specific stimuli"
+    },
+    {
+      "lemma": "intelligent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "natural.s.05",
+          "via_synset": "intelligent.a.01"
+        }
+      ],
+      "definition": "having the capacity for thought and reason especially to a high degree"
+    },
+    {
+      "lemma": "intuit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "intuition.n.02",
+          "via_synset": "intuit.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "intuition.n.01",
+          "via_synset": "intuit.v.01"
+        }
+      ],
+      "definition": "know or grasp by intuition or feeling"
+    },
+    {
+      "lemma": "intuition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "intuition.n.01",
+          "via_synset": "intuition.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "intuition.n.02",
+          "via_synset": "intuition.n.02"
+        }
+      ],
+      "definition": "instinctive knowing (without the use of rational processes)"
+    },
+    {
+      "lemma": "intuitive feeling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intuition.n.01",
+          "via_synset": "feeling.n.06"
+        }
+      ],
+      "definition": "an intuitive understanding of something"
+    },
+    {
+      "lemma": "learning",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "learning.n.01"
+        }
+      ],
+      "definition": "the cognitive process of acquiring skill or knowledge"
+    },
+    {
+      "lemma": "memory",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "memory.n.02"
+        }
+      ],
+      "definition": "the cognitive processes whereby past experience is remembered"
+    },
+    {
+      "lemma": "naive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unconditioned.a.01",
+          "via_synset": "naive.s.02"
+        }
+      ],
+      "definition": "inexperienced"
+    },
+    {
+      "lemma": "natural",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "natural.s.05",
+          "via_synset": "natural.s.05"
+        }
+      ],
+      "definition": "being talented through inherited qualities"
+    },
+    {
+      "lemma": "natural ability",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "aptitude.n.01",
+          "via_synset": "natural_ability.n.01"
+        }
+      ],
+      "definition": "ability that is inherited"
+    },
+    {
+      "lemma": "notion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "intuition.n.02",
+          "via_synset": "impression.n.01"
+        }
+      ],
+      "definition": "a vague idea in which some confidence is placed"
+    },
+    {
+      "lemma": "opinion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "intuition.n.02",
+          "via_synset": "impression.n.01"
+        }
+      ],
+      "definition": "a vague idea in which some confidence is placed"
+    },
+    {
+      "lemma": "perception",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "perception.n.03"
+        }
+      ],
+      "definition": "the process of perceiving"
+    },
+    {
+      "lemma": "potentiality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "aptitude.n.01",
+          "via_synset": "capability.n.03"
+        }
+      ],
+      "definition": "an aptitude that may be developed"
+    },
+    {
+      "lemma": "presence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "impression.n.01",
+          "via_synset": "presence.n.04"
+        }
+      ],
+      "definition": "the impression that something is present"
+    },
+    {
+      "lemma": "remembering",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "memory.n.02"
+        }
+      ],
+      "definition": "the cognitive processes whereby past experience is remembered"
+    },
+    {
+      "lemma": "replete",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "instinct.s.01",
+          "via_synset": "instinct.s.01"
+        }
+      ],
+      "definition": "(followed by `with')deeply filled or permeated"
+    },
+    {
+      "lemma": "representational process",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "representational_process.n.01"
+        }
+      ],
+      "definition": "any basic cognitive process in which some entity comes to stand for or represent something else"
+    },
+    {
+      "lemma": "secernment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "discrimination.n.02"
+        }
+      ],
+      "definition": "the cognitive process whereby two or more stimuli are distinguished"
+    },
+    {
+      "lemma": "sixth sense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "intuition.n.01",
+          "via_synset": "insight.n.04"
+        }
+      ],
+      "definition": "grasping the inner nature of things intuitively"
+    },
+    {
+      "lemma": "sorting",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "basic_cognitive_process.n.01",
+          "via_synset": "classification.n.03"
+        }
+      ],
+      "definition": "the basic cognitive process of arranging into classes or categories"
+    },
+    {
+      "lemma": "sprachgefuhl",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "feeling.n.06",
+          "via_synset": "sprachgefuhl.n.01"
+        }
+      ],
+      "definition": "an intuitive feeling for the natural idiom of a language"
+    },
+    {
+      "lemma": "suspect",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "intuition.n.02",
+          "via_synset": "suspect.v.01"
+        }
+      ],
+      "definition": "imagine to be the case or true or probable"
+    },
+    {
+      "lemma": "suspicion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "intuition.n.02",
+          "via_synset": "intuition.n.02"
+        }
+      ],
+      "definition": "an impression that something might be the case"
+    },
+    {
+      "lemma": "unconditioned",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unconditioned.a.01",
+          "via_synset": "unconditioned.a.01"
+        }
+      ],
+      "definition": "not established by conditioning or learning"
+    },
+    {
+      "lemma": "unlearned",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unconditioned.a.01",
+          "via_synset": "unconditioned.a.01"
+        }
+      ],
+      "definition": "not established by conditioning or learning"
+    }
+  ]
+}

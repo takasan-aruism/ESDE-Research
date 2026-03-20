@@ -1,0 +1,4761 @@
+{
+  "atom_id": "PRP.shallow",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 323,
+  "pos_counts": {
+    "adj": 33,
+    "n": 272,
+    "v": 18
+  },
+  "source_counts": {
+    "0_seed": 8,
+    "6_derivational": 32,
+    "7_similar_to": 25,
+    "2_hypernym_d1": 4,
+    "3_hyponym_d1": 25,
+    "4_hyponym_d2": 39,
+    "5_hyponym_d3": 116,
+    "10_sibling": 95,
+    "8_also_see": 3
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 6,
+      "words": [
+        "shallow(adj)",
+        "shoal(n)",
+        "shallow(n)",
+        "superficial(adj)",
+        "trivial(adj)",
+        "surface(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 4,
+      "words": [
+        "body of water(n)",
+        "water(n)",
+        "artifact(n)",
+        "artefact(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 25,
+      "words": [
+        "horizontal surface(n)",
+        "level(n)",
+        "vertical surface(n)",
+        "side(n)",
+        "miter(n)",
+        "mitre(n)",
+        "Mobius strip(n)",
+        "tread(n)",
+        "screen(n)",
+        "silver screen(n)",
+        "projection screen(n)",
+        "ground(n)",
+        "meniscus(n)",
+        "spandrel(n)",
+        "spandril(n)",
+        "work surface(n)",
+        "face(n)",
+        "Klein bottle(n)",
+        "board(n)",
+        "gameboard(n)",
+        "superficies(n)",
+        "plaster(n)",
+        "plasterwork(n)",
+        "bed(n)",
+        "skin(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 38,
+      "words": [
+        "platform(n)",
+        "floor(n)",
+        "flooring(n)",
+        "paved surface(n)",
+        "obverse(n)",
+        "nearside(n)",
+        "larboard(n)",
+        "port(n)",
+        "edge(n)",
+        "rear(n)",
+        "back(n)",
+        "starboard(n)",
+        "reverse(n)",
+        "verso(n)",
+        "soffit(n)",
+        "broadside(n)",
+        "front(n)",
+        "sidewall(n)",
+        "upper surface(n)",
+        "beam(n)",
+        "wide screen(n)",
+        "writing board(n)",
+        "tabletop(n)",
+        "checkerboard(n)",
+        "checker board(n)",
+        "cribbage board(n)",
+        "monopoly board(n)",
+        "backgammon board(n)",
+        "go board(n)",
+        "dartboard(n)",
+        "dart board(n)",
+        "Ouija(n)",
+        "Ouija board(n)",
+        "punchboard(n)",
+        "pegboard(n)",
+        "pargeting(n)",
+        "pargetting(n)",
+        "pargetry(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 108,
+      "words": [
+        "stairhead(n)",
+        "stage(n)",
+        "microscope stage(n)",
+        "fly gallery(n)",
+        "fly floor(n)",
+        "dock(n)",
+        "loading dock(n)",
+        "turntable(n)",
+        "pallet(n)",
+        "ring(n)",
+        "auction block(n)",
+        "block(n)",
+        "footboard(n)",
+        "foretop(n)",
+        "top(n)",
+        "landing stage(n)",
+        "monkey bridge(n)",
+        "bandstand(n)",
+        "outdoor stage(n)",
+        "stand(n)",
+        "dais(n)",
+        "podium(n)",
+        "pulpit(n)",
+        "rostrum(n)",
+        "ambo(n)",
+        "stump(n)",
+        "soapbox(n)",
+        "footplate(n)",
+        "catwalk(n)",
+        "crow's nest(n)",
+        "pier(n)",
+        "wharf(n)",
+        "wharfage(n)",
+        "landing(n)",
+        "scaffold(n)",
+        "runway(n)",
+        "launching pad(n)",
+        "launchpad(n)",
+        "launch pad(n)",
+        "launch area(n)",
+        "pad(n)",
+        "deck(n)",
+        "floorboard(n)",
+        "bell deck(n)",
+        "dance floor(n)",
+        "parquet(n)",
+        "parquet floor(n)",
+        "truck bed(n)",
+        "apron(n)",
+        "road surface(n)",
+        "taxiway(n)",
+        "taxi strip(n)",
+        "skidpan(n)",
+        "tarmacadam(n)",
+        "tarmac(n)",
+        "macadam(n)",
+        "pavement(n)",
+        "paving(n)",
+        "coalface(n)",
+        "perpendicular(n)",
+        "head(n)",
+        "featheredge(n)",
+        "milling(n)",
+        "bezel(n)",
+        "knife edge(n)",
+        "cutting edge(n)",
+        "brim(n)",
+        "rim(n)",
+        "lip(n)",
+        "bevel(n)",
+        "cant(n)",
+        "chamfer(n)",
+        "curb(n)",
+        "curbing(n)",
+        "kerb(n)",
+        "groin(n)",
+        "deckle edge(n)",
+        "deckle(n)",
+        "razor edge(n)",
+        "leading edge(n)",
+        "trailing edge(n)",
+        "tail(n)",
+        "tail assembly(n)",
+        "empennage(n)",
+        "stern(n)",
+        "after part(n)",
+        "quarter(n)",
+        "poop(n)",
+        "frontispiece(n)",
+        "shopfront(n)",
+        "storefront(n)",
+        "nose(n)",
+        "facade(n)",
+        "frontage(n)",
+        "frontal(n)",
+        "nose cone(n)",
+        "ogive(n)",
+        "shirtfront(n)",
+        "bow(n)",
+        "fore(n)",
+        "prow(n)",
+        "stem(n)",
+        "ceiling(n)",
+        "lapboard(n)",
+        "clipboard(n)",
+        "countertop(n)",
+        "chessboard(n)",
+        "chess board(n)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 25,
+      "words": [
+        "face(v)",
+        "superficiality(n)",
+        "tread(v)",
+        "screen(v)",
+        "frontal(adj)",
+        "front(v)",
+        "plaster(v)",
+        "miter(v)",
+        "port(adj)",
+        "port(v)",
+        "shallowness(n)",
+        "floor(v)",
+        "shoal(v)",
+        "shallow(v)",
+        "edge(v)",
+        "level(v)",
+        "broadside(v)",
+        "starboard(v)",
+        "surface(v)",
+        "rear(adj)",
+        "back(v)",
+        "trivialize(v)",
+        "trivia(n)",
+        "triviality(n)",
+        "parget(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 24,
+      "words": [
+        "apparent(adj)",
+        "ostensible(adj)",
+        "seeming(adj)",
+        "skin-deep(adj)",
+        "dilettante(adj)",
+        "dilettantish(adj)",
+        "dilettanteish(adj)",
+        "sciolistic(adj)",
+        "glib(adj)",
+        "looking(adj)",
+        "sounding(adj)",
+        "facile(adj)",
+        "light(adj)",
+        "wakeful(adj)",
+        "neritic(adj)",
+        "reefy(adj)",
+        "shelfy(adj)",
+        "shelvy(adj)",
+        "shoaly(adj)",
+        "fordable(adj)",
+        "ankle-deep(adj)",
+        "knee-deep(adj)",
+        "insignificant(adj)",
+        "unimportant(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 3,
+      "words": [
+        "outward(adj)",
+        "frivolous(adj)",
+        "careless(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 90,
+      "words": [
+        "pool(n)",
+        "puddle(n)",
+        "mid-water(n)",
+        "drink(n)",
+        "waterway(n)",
+        "polynya(n)",
+        "sea(n)",
+        "channel(n)",
+        "lake(n)",
+        "high sea(n)",
+        "international waters(n)",
+        "flowage(n)",
+        "ford(n)",
+        "crossing(n)",
+        "ocean(n)",
+        "offing(n)",
+        "inlet(n)",
+        "recess(n)",
+        "sound(n)",
+        "estuary(n)",
+        "waterfall(n)",
+        "falls(n)",
+        "backwater(n)",
+        "bay(n)",
+        "embayment(n)",
+        "seven seas(n)",
+        "gulf(n)",
+        "main(n)",
+        "briny(n)",
+        "territorial waters(n)",
+        "stream(n)",
+        "watercourse(n)",
+        "fixture(n)",
+        "fabric(n)",
+        "cloth(n)",
+        "material(n)",
+        "textile(n)",
+        "squeaker(n)",
+        "decker(n)",
+        "article(n)",
+        "line(n)",
+        "button(n)",
+        "ready-made(n)",
+        "plaything(n)",
+        "toy(n)",
+        "way(n)",
+        "restoration(n)",
+        "opening(n)",
+        "track(n)",
+        "layer(n)",
+        "Americana(n)",
+        "insert(n)",
+        "inset(n)",
+        "sheet(n)",
+        "flat solid(n)",
+        "creation(n)",
+        "structure(n)",
+        "construction(n)",
+        "strip(n)",
+        "slip(n)",
+        "paving material(n)",
+        "electroplate(n)",
+        "lemon(n)",
+        "stinker(n)",
+        "mystification(n)",
+        "square(n)",
+        "sphere(n)",
+        "instrumentality(n)",
+        "instrumentation(n)",
+        "excavation(n)",
+        "marker(n)",
+        "facility(n)",
+        "installation(n)",
+        "float(n)",
+        "cone(n)",
+        "anachronism(n)",
+        "antiquity(n)",
+        "weight(n)",
+        "decoration(n)",
+        "ornament(n)",
+        "ornamentation(n)",
+        "padding(n)",
+        "cushioning(n)",
+        "commodity(n)",
+        "trade good(n)",
+        "good(n)",
+        "extra(n)",
+        "duplicate(n)",
+        "covering(n)",
+        "building material(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "after part",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "rear.n.05",
+          "via_synset": "stern.n.01"
+        }
+      ],
+      "definition": "the rear part of a ship"
+    },
+    {
+      "lemma": "ambo",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "dais.n.01"
+        }
+      ],
+      "definition": "a platform raised above the surrounding level to give prominence to the person on it"
+    },
+    {
+      "lemma": "Americana",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "americana.n.01"
+        }
+      ],
+      "definition": "any artifact (such as books or furniture or art) that is distinctive of America"
+    },
+    {
+      "lemma": "anachronism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "anachronism.n.02"
+        }
+      ],
+      "definition": "an artifact that belongs to another time"
+    },
+    {
+      "lemma": "ankle-deep",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "shallow.a.01",
+          "via_synset": "ankle-deep.s.01"
+        }
+      ],
+      "definition": "coming only to the ankle or knee"
+    },
+    {
+      "lemma": "antiquity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "antiquity.n.03"
+        }
+      ],
+      "definition": "an artifact surviving from the past"
+    },
+    {
+      "lemma": "apparent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "superficial.a.01",
+          "via_synset": "apparent.s.02"
+        }
+      ],
+      "definition": "appearing as such but not necessarily so"
+    },
+    {
+      "lemma": "apron",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "paved_surface.n.01",
+          "via_synset": "apron.n.04"
+        }
+      ],
+      "definition": "a paved surface where aircraft stand while not being used"
+    },
+    {
+      "lemma": "artefact",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "surface.n.01",
+          "via_synset": "artifact.n.01"
+        }
+      ],
+      "definition": "a man-made object taken as a whole"
+    },
+    {
+      "lemma": "article",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "article.n.02"
+        }
+      ],
+      "definition": "one of a class of artifacts"
+    },
+    {
+      "lemma": "artifact",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "surface.n.01",
+          "via_synset": "artifact.n.01"
+        }
+      ],
+      "definition": "a man-made object taken as a whole"
+    },
+    {
+      "lemma": "auction block",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "auction_block.n.01"
+        }
+      ],
+      "definition": "a platform from which an auctioneer sells"
+    },
+    {
+      "lemma": "back",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "side.n.05",
+          "via_synset": "rear.n.05"
+        }
+      ],
+      "definition": "the side that goes last or is not normally seen"
+    },
+    {
+      "lemma": "back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "rear.n.05",
+          "via_synset": "back.v.06"
+        }
+      ],
+      "definition": "be in back of"
+    },
+    {
+      "lemma": "backgammon board",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "board.n.09",
+          "via_synset": "backgammon_board.n.01"
+        }
+      ],
+      "definition": "the board on which backgammon is played"
+    },
+    {
+      "lemma": "backwater",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "backwater.n.01"
+        }
+      ],
+      "definition": "a body of water that was created by a flood or tide or by being held or forced back by a dam"
+    },
+    {
+      "lemma": "bandstand",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "bandstand.n.01"
+        }
+      ],
+      "definition": "a platform where a (brass) band can play in the open air"
+    },
+    {
+      "lemma": "bay",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "bay.n.01"
+        }
+      ],
+      "definition": "an indentation of a shoreline larger than a cove but smaller than a gulf"
+    },
+    {
+      "lemma": "beam",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "side.n.05",
+          "via_synset": "beam.n.06"
+        }
+      ],
+      "definition": "the broad side of a ship"
+    },
+    {
+      "lemma": "bed",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "bed.n.07"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "layer.n.01"
+        }
+      ],
+      "definition": "the flat surface of a printing press on which the type form is laid in the last stage of producing a newspaper or magazine or book etc."
+    },
+    {
+      "lemma": "bell deck",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "floor.n.01",
+          "via_synset": "bell_deck.n.01"
+        }
+      ],
+      "definition": "a floor under the bells of an open belfry"
+    },
+    {
+      "lemma": "bevel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "edge.n.03",
+          "via_synset": "bevel.n.01"
+        }
+      ],
+      "definition": "two surfaces meeting at an angle different from 90 degrees"
+    },
+    {
+      "lemma": "bezel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "edge.n.03",
+          "via_synset": "bezel.n.01"
+        }
+      ],
+      "definition": "a sloping edge on a cutting tool"
+    },
+    {
+      "lemma": "block",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "auction_block.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "block.n.01"
+        }
+      ],
+      "definition": "a platform from which an auctioneer sells"
+    },
+    {
+      "lemma": "board",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "board.n.09"
+        }
+      ],
+      "definition": "a flat portable surface (usually rectangular) designed for board games"
+    },
+    {
+      "lemma": "body of water",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "shoal.n.02",
+          "via_synset": "body_of_water.n.01"
+        }
+      ],
+      "definition": "the part of the earth's surface covered with water (such as a river or lake or ocean)"
+    },
+    {
+      "lemma": "bow",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "front.n.04",
+          "via_synset": "bow.n.03"
+        }
+      ],
+      "definition": "front part of a vessel or aircraft"
+    },
+    {
+      "lemma": "brim",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "edge.n.03",
+          "via_synset": "brim.n.01"
+        }
+      ],
+      "definition": "the top edge of a vessel or other container"
+    },
+    {
+      "lemma": "briny",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "main.n.01"
+        }
+      ],
+      "definition": "any very large body of (salt) water"
+    },
+    {
+      "lemma": "broadside",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "side.n.05",
+          "via_synset": "broadside.n.04"
+        }
+      ],
+      "definition": "the whole side of a vessel from stem to stern"
+    },
+    {
+      "lemma": "broadside",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "broadside.n.04",
+          "via_synset": "broadside.v.01"
+        }
+      ],
+      "definition": "collide with the broad side of"
+    },
+    {
+      "lemma": "building material",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "building_material.n.01"
+        }
+      ],
+      "definition": "material used for constructing buildings"
+    },
+    {
+      "lemma": "button",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "button.n.07"
+        }
+      ],
+      "definition": "any artifact that resembles a button"
+    },
+    {
+      "lemma": "cant",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "edge.n.03",
+          "via_synset": "bevel.n.01"
+        }
+      ],
+      "definition": "two surfaces meeting at an angle different from 90 degrees"
+    },
+    {
+      "lemma": "careless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "superficial.a.01",
+          "via_synset": "careless.a.01"
+        }
+      ],
+      "definition": "marked by lack of attention or consideration or forethought or thoroughness; not careful"
+    },
+    {
+      "lemma": "catwalk",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "catwalk.n.01"
+        }
+      ],
+      "definition": "narrow platform extending out into an auditorium"
+    },
+    {
+      "lemma": "ceiling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "upper_surface.n.01",
+          "via_synset": "ceiling.n.01"
+        }
+      ],
+      "definition": "the overhead upper surface of a covered space"
+    },
+    {
+      "lemma": "chamfer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "edge.n.03",
+          "via_synset": "bevel.n.01"
+        }
+      ],
+      "definition": "two surfaces meeting at an angle different from 90 degrees"
+    },
+    {
+      "lemma": "channel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "channel.n.04"
+        }
+      ],
+      "definition": "a deep and relatively narrow body of water (as in a river or a harbor or a strait linking two larger bodies) that allows the best passage for vessels"
+    },
+    {
+      "lemma": "checker board",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "board.n.09",
+          "via_synset": "checkerboard.n.01"
+        }
+      ],
+      "definition": "a board having 64 squares of two alternating colors"
+    },
+    {
+      "lemma": "checkerboard",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "board.n.09",
+          "via_synset": "checkerboard.n.01"
+        }
+      ],
+      "definition": "a board having 64 squares of two alternating colors"
+    },
+    {
+      "lemma": "chess board",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "checkerboard.n.01",
+          "via_synset": "chessboard.n.01"
+        }
+      ],
+      "definition": "a checkerboard used to play chess"
+    },
+    {
+      "lemma": "chessboard",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "checkerboard.n.01",
+          "via_synset": "chessboard.n.01"
+        }
+      ],
+      "definition": "a checkerboard used to play chess"
+    },
+    {
+      "lemma": "clipboard",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "writing_board.n.01",
+          "via_synset": "clipboard.n.01"
+        }
+      ],
+      "definition": "a small writing board with a clip at the top for holding papers"
+    },
+    {
+      "lemma": "cloth",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "fabric.n.01"
+        }
+      ],
+      "definition": "artifact made by weaving or felting or knitting or crocheting natural or synthetic fibers"
+    },
+    {
+      "lemma": "coalface",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "face.n.13",
+          "via_synset": "coalface.n.01"
+        }
+      ],
+      "definition": "the part of a coal seam that is being cut"
+    },
+    {
+      "lemma": "commodity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "commodity.n.01"
+        }
+      ],
+      "definition": "articles of commerce"
+    },
+    {
+      "lemma": "cone",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "cone.n.01"
+        }
+      ],
+      "definition": "any cone-shaped artifact"
+    },
+    {
+      "lemma": "construction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "structure.n.01"
+        }
+      ],
+      "definition": "a thing constructed; a complex entity constructed of many parts"
+    },
+    {
+      "lemma": "countertop",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "tabletop.n.01",
+          "via_synset": "countertop.n.01"
+        }
+      ],
+      "definition": "the top side of a counter"
+    },
+    {
+      "lemma": "covering",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "covering.n.02"
+        }
+      ],
+      "definition": "an artifact that covers something else (usually to protect or shelter or conceal it)"
+    },
+    {
+      "lemma": "creation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "creation.n.02"
+        }
+      ],
+      "definition": "an artifact that has been brought into existence by someone"
+    },
+    {
+      "lemma": "cribbage board",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "board.n.09",
+          "via_synset": "cribbage_board.n.01"
+        }
+      ],
+      "definition": "a board with pegs and regularly spaced holes for holding the pegs; used for keeping the score in a game of cribbage"
+    },
+    {
+      "lemma": "crossing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "ford.n.07"
+        }
+      ],
+      "definition": "a shallow area in a stream that can be forded"
+    },
+    {
+      "lemma": "crow's nest",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "crow's_nest.n.01"
+        }
+      ],
+      "definition": "platform for a lookout at or near the top of a mast"
+    },
+    {
+      "lemma": "curb",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "edge.n.03",
+          "via_synset": "curb.n.01"
+        }
+      ],
+      "definition": "an edge between a sidewalk and a roadway consisting of a line of curbstones (usually forming part of a gutter)"
+    },
+    {
+      "lemma": "curbing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "edge.n.03",
+          "via_synset": "curb.n.01"
+        }
+      ],
+      "definition": "an edge between a sidewalk and a roadway consisting of a line of curbstones (usually forming part of a gutter)"
+    },
+    {
+      "lemma": "cushioning",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "padding.n.01"
+        }
+      ],
+      "definition": "artifact consisting of soft or resilient material used to fill or give shape or protect or add comfort"
+    },
+    {
+      "lemma": "cutting edge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "edge.n.03",
+          "via_synset": "knife_edge.n.01"
+        }
+      ],
+      "definition": "the sharp cutting side of the blade of a knife"
+    },
+    {
+      "lemma": "dais",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "dais.n.01"
+        }
+      ],
+      "definition": "a platform raised above the surrounding level to give prominence to the person on it"
+    },
+    {
+      "lemma": "dance floor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "floor.n.01",
+          "via_synset": "dance_floor.n.01"
+        }
+      ],
+      "definition": "a bare floor polished for dancing"
+    },
+    {
+      "lemma": "dart board",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "board.n.09",
+          "via_synset": "dartboard.n.01"
+        }
+      ],
+      "definition": "a circular board of wood or cork used as the target in the game of darts"
+    },
+    {
+      "lemma": "dartboard",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "board.n.09",
+          "via_synset": "dartboard.n.01"
+        }
+      ],
+      "definition": "a circular board of wood or cork used as the target in the game of darts"
+    },
+    {
+      "lemma": "deck",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "deck.n.01"
+        }
+      ],
+      "definition": "any of various platforms built into a vessel"
+    },
+    {
+      "lemma": "decker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "decker.n.02"
+        }
+      ],
+      "definition": "(often used in combinations) something constructed with multiple levels"
+    },
+    {
+      "lemma": "deckle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "edge.n.03",
+          "via_synset": "deckle_edge.n.01"
+        }
+      ],
+      "definition": "rough edge left by a deckle on handmade paper or produced artificially on machine-made paper"
+    },
+    {
+      "lemma": "deckle edge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "edge.n.03",
+          "via_synset": "deckle_edge.n.01"
+        }
+      ],
+      "definition": "rough edge left by a deckle on handmade paper or produced artificially on machine-made paper"
+    },
+    {
+      "lemma": "decoration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "decoration.n.01"
+        }
+      ],
+      "definition": "something used to beautify"
+    },
+    {
+      "lemma": "dilettante",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "superficial.a.01",
+          "via_synset": "dilettante.s.01"
+        }
+      ],
+      "definition": "showing frivolous or superficial interest; amateurish"
+    },
+    {
+      "lemma": "dilettanteish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "superficial.a.01",
+          "via_synset": "dilettante.s.01"
+        }
+      ],
+      "definition": "showing frivolous or superficial interest; amateurish"
+    },
+    {
+      "lemma": "dilettantish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "superficial.a.01",
+          "via_synset": "dilettante.s.01"
+        }
+      ],
+      "definition": "showing frivolous or superficial interest; amateurish"
+    },
+    {
+      "lemma": "dock",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "dock.n.04"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "pier.n.01"
+        }
+      ],
+      "definition": "a platform where trucks or trains can be loaded or unloaded"
+    },
+    {
+      "lemma": "drink",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "drink.n.04"
+        }
+      ],
+      "definition": "any large deep body of water"
+    },
+    {
+      "lemma": "duplicate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "extra.n.03"
+        }
+      ],
+      "definition": "something additional of the same kind"
+    },
+    {
+      "lemma": "edge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "side.n.05",
+          "via_synset": "edge.n.03"
+        }
+      ],
+      "definition": "a sharp side formed by the intersection of two surfaces of an object"
+    },
+    {
+      "lemma": "edge",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "edge.n.03",
+          "via_synset": "edge.v.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "edge.n.03",
+          "via_synset": "border.v.04"
+        }
+      ],
+      "definition": "provide with an edge"
+    },
+    {
+      "lemma": "electroplate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "electroplate.n.01"
+        }
+      ],
+      "definition": "any artifact that has been plated with a thin coat of metal by electrolysis"
+    },
+    {
+      "lemma": "embayment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "bay.n.01"
+        }
+      ],
+      "definition": "an indentation of a shoreline larger than a cove but smaller than a gulf"
+    },
+    {
+      "lemma": "empennage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "rear.n.05",
+          "via_synset": "tail.n.07"
+        }
+      ],
+      "definition": "the rear part of an aircraft"
+    },
+    {
+      "lemma": "estuary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "estuary.n.01"
+        }
+      ],
+      "definition": "the wide part of a river where it nears the sea; fresh and salt water mix"
+    },
+    {
+      "lemma": "excavation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "excavation.n.03"
+        }
+      ],
+      "definition": "a hole in the ground made by excavating"
+    },
+    {
+      "lemma": "extra",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "extra.n.03"
+        }
+      ],
+      "definition": "something additional of the same kind"
+    },
+    {
+      "lemma": "fabric",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "fabric.n.01"
+        }
+      ],
+      "definition": "artifact made by weaving or felting or knitting or crocheting natural or synthetic fibers"
+    },
+    {
+      "lemma": "facade",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "front.n.04",
+          "via_synset": "facade.n.01"
+        }
+      ],
+      "definition": "the face or front of a building"
+    },
+    {
+      "lemma": "face",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "face.n.04"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "vertical_surface.n.01",
+          "via_synset": "face.n.13"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "front.n.04",
+          "via_synset": "face.n.08"
+        }
+      ],
+      "definition": "the striking or working surface of an implement"
+    },
+    {
+      "lemma": "face",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "face.n.13",
+          "via_synset": "face.v.09"
+        }
+      ],
+      "definition": "cover the front or surface of"
+    },
+    {
+      "lemma": "facile",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "superficial.a.01",
+          "via_synset": "facile.s.01"
+        }
+      ],
+      "definition": "arrived at without due care or effort; lacking depth"
+    },
+    {
+      "lemma": "facility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "facility.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "facility.n.04"
+        }
+      ],
+      "definition": "a building or place that provides a particular service or is used for a particular industry"
+    },
+    {
+      "lemma": "falls",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "waterfall.n.01"
+        }
+      ],
+      "definition": "a steep descent of the water of a river"
+    },
+    {
+      "lemma": "featheredge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "edge.n.03",
+          "via_synset": "featheredge.n.01"
+        }
+      ],
+      "definition": "a thin tapering edge"
+    },
+    {
+      "lemma": "fixture",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "fixture.n.01"
+        }
+      ],
+      "definition": "an object firmly fixed in place (especially in a household)"
+    },
+    {
+      "lemma": "flat solid",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "sheet.n.06"
+        }
+      ],
+      "definition": "a flat artifact that is thin relative to its length and width"
+    },
+    {
+      "lemma": "float",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "float.n.06"
+        }
+      ],
+      "definition": "something that floats on the surface of water"
+    },
+    {
+      "lemma": "floor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "horizontal_surface.n.01",
+          "via_synset": "floor.n.01"
+        }
+      ],
+      "definition": "the inside lower horizontal surface (as of a room, hallway, tent, or other structure)"
+    },
+    {
+      "lemma": "floor",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "floor.n.01",
+          "via_synset": "deck.v.03"
+        }
+      ],
+      "definition": "knock down with force"
+    },
+    {
+      "lemma": "floorboard",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "floor.n.01",
+          "via_synset": "floorboard.n.02"
+        }
+      ],
+      "definition": "the floor of an automobile"
+    },
+    {
+      "lemma": "flooring",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "horizontal_surface.n.01",
+          "via_synset": "floor.n.01"
+        }
+      ],
+      "definition": "the inside lower horizontal surface (as of a room, hallway, tent, or other structure)"
+    },
+    {
+      "lemma": "flowage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "flowage.n.02"
+        }
+      ],
+      "definition": "a body of water that has been created by deliberately flooding an area"
+    },
+    {
+      "lemma": "fly floor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "fly_gallery.n.01"
+        }
+      ],
+      "definition": "a narrow raised platform at the side of a stage in a theater; stagehands can work the ropes controlling equipment in the flies"
+    },
+    {
+      "lemma": "fly gallery",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "fly_gallery.n.01"
+        }
+      ],
+      "definition": "a narrow raised platform at the side of a stage in a theater; stagehands can work the ropes controlling equipment in the flies"
+    },
+    {
+      "lemma": "footboard",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "footboard.n.01"
+        }
+      ],
+      "definition": "a narrow platform on which to stand or brace the feet"
+    },
+    {
+      "lemma": "footplate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "footplate.n.01"
+        }
+      ],
+      "definition": "the platform in the cab of a locomotive on which the engineer stands to operate the controls"
+    },
+    {
+      "lemma": "ford",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "ford.n.07"
+        }
+      ],
+      "definition": "a shallow area in a stream that can be forded"
+    },
+    {
+      "lemma": "fordable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "shallow.a.01",
+          "via_synset": "fordable.s.01"
+        }
+      ],
+      "definition": "shallow enough to be crossed by walking or riding on an animal or in a vehicle"
+    },
+    {
+      "lemma": "fore",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "front.n.04",
+          "via_synset": "bow.n.03"
+        }
+      ],
+      "definition": "front part of a vessel or aircraft"
+    },
+    {
+      "lemma": "foretop",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "foretop.n.01"
+        }
+      ],
+      "definition": "a platform at the head of a foremast"
+    },
+    {
+      "lemma": "frivolous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "superficial.a.01",
+          "via_synset": "frivolous.a.01"
+        }
+      ],
+      "definition": "not serious in content or attitude or behavior"
+    },
+    {
+      "lemma": "front",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "side.n.05",
+          "via_synset": "front.n.04"
+        }
+      ],
+      "definition": "the side that is seen or that goes first"
+    },
+    {
+      "lemma": "front",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "front.n.04",
+          "via_synset": "front.v.02"
+        }
+      ],
+      "definition": "confront bodily"
+    },
+    {
+      "lemma": "frontage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "front.n.04",
+          "via_synset": "facade.n.01"
+        }
+      ],
+      "definition": "the face or front of a building"
+    },
+    {
+      "lemma": "frontal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "front.n.04",
+          "via_synset": "frontal.s.01"
+        }
+      ],
+      "definition": "belonging to the front part"
+    },
+    {
+      "lemma": "frontal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "front.n.04",
+          "via_synset": "facade.n.01"
+        }
+      ],
+      "definition": "the face or front of a building"
+    },
+    {
+      "lemma": "frontispiece",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "front.n.04",
+          "via_synset": "frontispiece.n.02"
+        }
+      ],
+      "definition": "front illustration facing the title page of a book"
+    },
+    {
+      "lemma": "gameboard",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "board.n.09"
+        }
+      ],
+      "definition": "a flat portable surface (usually rectangular) designed for board games"
+    },
+    {
+      "lemma": "glib",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "superficial.a.01",
+          "via_synset": "glib.s.01"
+        }
+      ],
+      "definition": "marked by lack of intellectual depth"
+    },
+    {
+      "lemma": "go board",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "board.n.09",
+          "via_synset": "go_board.n.01"
+        }
+      ],
+      "definition": "a board used for playing go"
+    },
+    {
+      "lemma": "good",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "commodity.n.01"
+        }
+      ],
+      "definition": "articles of commerce"
+    },
+    {
+      "lemma": "groin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "edge.n.03",
+          "via_synset": "groin.n.02"
+        }
+      ],
+      "definition": "a curved edge formed by two intersecting vaults"
+    },
+    {
+      "lemma": "ground",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "ground.n.10"
+        }
+      ],
+      "definition": "(art) the surface (as a wall or canvas) prepared to take the paint for a painting"
+    },
+    {
+      "lemma": "gulf",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "gulf.n.01"
+        }
+      ],
+      "definition": "an arm of a sea or ocean partly enclosed by land; larger than a bay"
+    },
+    {
+      "lemma": "head",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "obverse.n.02",
+          "via_synset": "head.n.28"
+        }
+      ],
+      "definition": "(usually plural) the obverse side of a coin that usually bears the representation of a person's head"
+    },
+    {
+      "lemma": "high sea",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "high_sea.n.01"
+        }
+      ],
+      "definition": "the open seas of the world outside the territorial waters of any nation"
+    },
+    {
+      "lemma": "horizontal surface",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "horizontal_surface.n.01"
+        }
+      ],
+      "definition": "a flat surface at right angles to a plumb line"
+    },
+    {
+      "lemma": "inlet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "inlet.n.01"
+        }
+      ],
+      "definition": "an arm off of a larger body of water (often between rocky headlands)"
+    },
+    {
+      "lemma": "insert",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "insert.n.02"
+        }
+      ],
+      "definition": "an artifact that is inserted or is to be inserted"
+    },
+    {
+      "lemma": "inset",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "insert.n.02"
+        }
+      ],
+      "definition": "an artifact that is inserted or is to be inserted"
+    },
+    {
+      "lemma": "insignificant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "superficial.s.01",
+          "via_synset": "insignificant.a.04"
+        }
+      ],
+      "definition": "devoid of importance, meaning, or force"
+    },
+    {
+      "lemma": "installation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "facility.n.01"
+        }
+      ],
+      "definition": "a building or place that provides a particular service or is used for a particular industry"
+    },
+    {
+      "lemma": "instrumentality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "instrumentality.n.03"
+        }
+      ],
+      "definition": "an artifact (or system of artifacts) that is instrumental in accomplishing some end"
+    },
+    {
+      "lemma": "instrumentation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "instrumentality.n.03"
+        }
+      ],
+      "definition": "an artifact (or system of artifacts) that is instrumental in accomplishing some end"
+    },
+    {
+      "lemma": "international waters",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "high_sea.n.01"
+        }
+      ],
+      "definition": "the open seas of the world outside the territorial waters of any nation"
+    },
+    {
+      "lemma": "kerb",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "edge.n.03",
+          "via_synset": "curb.n.01"
+        }
+      ],
+      "definition": "an edge between a sidewalk and a roadway consisting of a line of curbstones (usually forming part of a gutter)"
+    },
+    {
+      "lemma": "Klein bottle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "klein_bottle.n.01"
+        }
+      ],
+      "definition": "a closed surface with only one side; formed by passing one end of a tube through the side of the tube and joining it with the other end"
+    },
+    {
+      "lemma": "knee-deep",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "shallow.a.01",
+          "via_synset": "ankle-deep.s.01"
+        }
+      ],
+      "definition": "coming only to the ankle or knee"
+    },
+    {
+      "lemma": "knife edge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "edge.n.03",
+          "via_synset": "knife_edge.n.01"
+        }
+      ],
+      "definition": "the sharp cutting side of the blade of a knife"
+    },
+    {
+      "lemma": "lake",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "lake.n.01"
+        }
+      ],
+      "definition": "a body of (usually fresh) water surrounded by land"
+    },
+    {
+      "lemma": "landing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "landing.n.01"
+        }
+      ],
+      "definition": "an intermediate platform in a staircase"
+    },
+    {
+      "lemma": "landing stage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "landing_stage.n.01"
+        }
+      ],
+      "definition": "platform from which passengers and cargo can be (un)loaded"
+    },
+    {
+      "lemma": "lapboard",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "writing_board.n.01",
+          "via_synset": "lapboard.n.01"
+        }
+      ],
+      "definition": "writing board used on the lap as a table or desk"
+    },
+    {
+      "lemma": "larboard",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "side.n.05",
+          "via_synset": "larboard.n.01"
+        }
+      ],
+      "definition": "the left side of a ship or aircraft to someone who is aboard and facing the bow or nose"
+    },
+    {
+      "lemma": "launch area",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "launching_pad.n.01"
+        }
+      ],
+      "definition": "a platform from which rockets or space craft are launched"
+    },
+    {
+      "lemma": "launch pad",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "launching_pad.n.01"
+        }
+      ],
+      "definition": "a platform from which rockets or space craft are launched"
+    },
+    {
+      "lemma": "launching pad",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "launching_pad.n.01"
+        }
+      ],
+      "definition": "a platform from which rockets or space craft are launched"
+    },
+    {
+      "lemma": "launchpad",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "launching_pad.n.01"
+        }
+      ],
+      "definition": "a platform from which rockets or space craft are launched"
+    },
+    {
+      "lemma": "layer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "layer.n.01"
+        }
+      ],
+      "definition": "single thickness of usually some homogeneous substance"
+    },
+    {
+      "lemma": "leading edge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "edge.n.03",
+          "via_synset": "leading_edge.n.01"
+        }
+      ],
+      "definition": "forward edge of an airfoil"
+    },
+    {
+      "lemma": "lemon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "lemon.n.05"
+        }
+      ],
+      "definition": "an artifact (especially an automobile) that is defective or unsatisfactory"
+    },
+    {
+      "lemma": "level",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "horizontal_surface.n.01"
+        }
+      ],
+      "definition": "a flat surface at right angles to a plumb line"
+    },
+    {
+      "lemma": "level",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "horizontal_surface.n.01",
+          "via_synset": "level.v.02"
+        }
+      ],
+      "definition": "tear down so as to make flat with the ground"
+    },
+    {
+      "lemma": "light",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "shallow.a.02",
+          "via_synset": "light.s.16"
+        }
+      ],
+      "definition": "(of sleep) easily disturbed"
+    },
+    {
+      "lemma": "line",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "line.n.18"
+        }
+      ],
+      "definition": "something (as a cord or rope) that is long and thin and flexible"
+    },
+    {
+      "lemma": "lip",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "edge.n.03",
+          "via_synset": "brim.n.01"
+        }
+      ],
+      "definition": "the top edge of a vessel or other container"
+    },
+    {
+      "lemma": "loading dock",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "dock.n.04"
+        }
+      ],
+      "definition": "a platform where trucks or trains can be loaded or unloaded"
+    },
+    {
+      "lemma": "looking",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "superficial.a.01",
+          "via_synset": "looking.s.01"
+        }
+      ],
+      "definition": "appearing to be as specified; usually used as combining forms"
+    },
+    {
+      "lemma": "macadam",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "paved_surface.n.01",
+          "via_synset": "tarmacadam.n.02"
+        }
+      ],
+      "definition": "a paved surface having compressed layers of broken rocks held together with tar"
+    },
+    {
+      "lemma": "main",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "main.n.01"
+        }
+      ],
+      "definition": "any very large body of (salt) water"
+    },
+    {
+      "lemma": "marker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "marker.n.01"
+        }
+      ],
+      "definition": "some conspicuous object used to distinguish or mark something"
+    },
+    {
+      "lemma": "material",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "fabric.n.01"
+        }
+      ],
+      "definition": "artifact made by weaving or felting or knitting or crocheting natural or synthetic fibers"
+    },
+    {
+      "lemma": "meniscus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "meniscus.n.03"
+        }
+      ],
+      "definition": "(physics) the curved upper surface of a nonturbulent liquid in a vertical tube"
+    },
+    {
+      "lemma": "microscope stage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "stage.n.08"
+        }
+      ],
+      "definition": "a small platform on a microscope where the specimen is mounted for examination"
+    },
+    {
+      "lemma": "mid-water",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "mid-water.n.01"
+        }
+      ],
+      "definition": "the water that is well below the surface but also well above the bottom"
+    },
+    {
+      "lemma": "milling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "edge.n.03",
+          "via_synset": "milling.n.01"
+        }
+      ],
+      "definition": "corrugated edge of a coin"
+    },
+    {
+      "lemma": "miter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "miter.n.02"
+        }
+      ],
+      "definition": "the surface of a beveled end of a piece where a miter joint is made"
+    },
+    {
+      "lemma": "miter",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "miter.n.02",
+          "via_synset": "miter.v.01"
+        }
+      ],
+      "definition": "bevel the edges of, to make a miter joint"
+    },
+    {
+      "lemma": "mitre",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "miter.n.02"
+        }
+      ],
+      "definition": "the surface of a beveled end of a piece where a miter joint is made"
+    },
+    {
+      "lemma": "Mobius strip",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "mobius_strip.n.01"
+        }
+      ],
+      "definition": "a continuous closed surface with only one side; formed from a rectangular strip by rotating one end 180 degrees and joining it with the other end"
+    },
+    {
+      "lemma": "monkey bridge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "monkey_bridge.n.01"
+        }
+      ],
+      "definition": "a high narrow platform above a deck or in an engine room or boiler room"
+    },
+    {
+      "lemma": "monopoly board",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "board.n.09",
+          "via_synset": "monopoly_board.n.01"
+        }
+      ],
+      "definition": "a board used for playing monopoly"
+    },
+    {
+      "lemma": "mystification",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "mystification.n.02"
+        }
+      ],
+      "definition": "something designed to mystify or bewilder"
+    },
+    {
+      "lemma": "nearside",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "side.n.05",
+          "via_synset": "nearside.n.01"
+        }
+      ],
+      "definition": "the side of a vehicle nearest the kerb"
+    },
+    {
+      "lemma": "neritic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "shallow.a.01",
+          "via_synset": "neritic.s.01"
+        }
+      ],
+      "definition": "relating to the region of shallow water adjoining the seacoast"
+    },
+    {
+      "lemma": "nose",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "front.n.04",
+          "via_synset": "nose.n.03"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "front.n.04",
+          "via_synset": "nose.n.02"
+        }
+      ],
+      "definition": "the front or forward projection of a tool or weapon"
+    },
+    {
+      "lemma": "nose cone",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "front.n.04",
+          "via_synset": "nose_cone.n.01"
+        }
+      ],
+      "definition": "front consisting of the conical head of a missile or rocket that protects the payload from heat during its passage through the atmosphere"
+    },
+    {
+      "lemma": "obverse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "side.n.05",
+          "via_synset": "obverse.n.02"
+        }
+      ],
+      "definition": "the side of a coin or medal bearing the principal stamp or design"
+    },
+    {
+      "lemma": "ocean",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "ocean.n.01"
+        }
+      ],
+      "definition": "a large body of water constituting a principal part of the hydrosphere"
+    },
+    {
+      "lemma": "offing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "offing.n.02"
+        }
+      ],
+      "definition": "the part of the sea that can be seen from the shore and is beyond the anchoring area"
+    },
+    {
+      "lemma": "ogive",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "front.n.04",
+          "via_synset": "nose_cone.n.01"
+        }
+      ],
+      "definition": "front consisting of the conical head of a missile or rocket that protects the payload from heat during its passage through the atmosphere"
+    },
+    {
+      "lemma": "opening",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "opening.n.10"
+        }
+      ],
+      "definition": "a vacant or unobstructed space that is man-made"
+    },
+    {
+      "lemma": "ornament",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "decoration.n.01"
+        }
+      ],
+      "definition": "something used to beautify"
+    },
+    {
+      "lemma": "ornamentation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "decoration.n.01"
+        }
+      ],
+      "definition": "something used to beautify"
+    },
+    {
+      "lemma": "ostensible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "superficial.a.01",
+          "via_synset": "apparent.s.02"
+        }
+      ],
+      "definition": "appearing as such but not necessarily so"
+    },
+    {
+      "lemma": "Ouija",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "board.n.09",
+          "via_synset": "ouija.n.01"
+        }
+      ],
+      "definition": "a board with the alphabet on it; used with a planchette to spell out supernatural messages"
+    },
+    {
+      "lemma": "Ouija board",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "board.n.09",
+          "via_synset": "ouija.n.01"
+        }
+      ],
+      "definition": "a board with the alphabet on it; used with a planchette to spell out supernatural messages"
+    },
+    {
+      "lemma": "outdoor stage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "bandstand.n.01"
+        }
+      ],
+      "definition": "a platform where a (brass) band can play in the open air"
+    },
+    {
+      "lemma": "outward",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "superficial.a.01",
+          "via_synset": "outward.a.01"
+        }
+      ],
+      "definition": "relating to physical reality rather than with thoughts or the mind"
+    },
+    {
+      "lemma": "pad",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "launching_pad.n.01"
+        }
+      ],
+      "definition": "a platform from which rockets or space craft are launched"
+    },
+    {
+      "lemma": "padding",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "padding.n.01"
+        }
+      ],
+      "definition": "artifact consisting of soft or resilient material used to fill or give shape or protect or add comfort"
+    },
+    {
+      "lemma": "pallet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "pallet.n.02"
+        }
+      ],
+      "definition": "a portable platform for storing or moving goods that are stacked on it"
+    },
+    {
+      "lemma": "parget",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pargeting.n.02",
+          "via_synset": "parget.v.01"
+        }
+      ],
+      "definition": "apply ornamental plaster to"
+    },
+    {
+      "lemma": "pargeting",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "plaster.n.04",
+          "via_synset": "pargeting.n.02"
+        }
+      ],
+      "definition": "ornamental plasterwork"
+    },
+    {
+      "lemma": "pargetry",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "plaster.n.04",
+          "via_synset": "pargeting.n.02"
+        }
+      ],
+      "definition": "ornamental plasterwork"
+    },
+    {
+      "lemma": "pargetting",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "plaster.n.04",
+          "via_synset": "pargeting.n.02"
+        }
+      ],
+      "definition": "ornamental plasterwork"
+    },
+    {
+      "lemma": "parquet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "floor.n.01",
+          "via_synset": "parquet.n.01"
+        }
+      ],
+      "definition": "a floor made of parquetry"
+    },
+    {
+      "lemma": "parquet floor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "floor.n.01",
+          "via_synset": "parquet.n.01"
+        }
+      ],
+      "definition": "a floor made of parquetry"
+    },
+    {
+      "lemma": "paved surface",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "horizontal_surface.n.01",
+          "via_synset": "paved_surface.n.01"
+        }
+      ],
+      "definition": "a level horizontal surface covered with paving material"
+    },
+    {
+      "lemma": "pavement",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "paved_surface.n.01",
+          "via_synset": "pavement.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "paving.n.01"
+        }
+      ],
+      "definition": "the paved surface of a thoroughfare"
+    },
+    {
+      "lemma": "paving",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "paved_surface.n.01",
+          "via_synset": "pavement.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "paving.n.01"
+        }
+      ],
+      "definition": "the paved surface of a thoroughfare"
+    },
+    {
+      "lemma": "paving material",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "paving.n.01"
+        }
+      ],
+      "definition": "material used to pave an area"
+    },
+    {
+      "lemma": "pegboard",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "board.n.09",
+          "via_synset": "pegboard.n.01"
+        }
+      ],
+      "definition": "a board perforated with regularly spaced holes into which pegs can be fitted"
+    },
+    {
+      "lemma": "perpendicular",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "face.n.13",
+          "via_synset": "perpendicular.n.04"
+        }
+      ],
+      "definition": "an extremely steep face"
+    },
+    {
+      "lemma": "pier",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "pier.n.01"
+        }
+      ],
+      "definition": "a platform built out from the shore into the water and supported by piles; provides access to ships and boats"
+    },
+    {
+      "lemma": "plaster",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "plaster.n.04"
+        }
+      ],
+      "definition": "a surface of hardened plaster (as on a wall or ceiling)"
+    },
+    {
+      "lemma": "plaster",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "plaster.n.04",
+          "via_synset": "plaster.v.05"
+        }
+      ],
+      "definition": "coat with plaster"
+    },
+    {
+      "lemma": "plasterwork",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "plaster.n.04"
+        }
+      ],
+      "definition": "a surface of hardened plaster (as on a wall or ceiling)"
+    },
+    {
+      "lemma": "platform",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "horizontal_surface.n.01",
+          "via_synset": "platform.n.01"
+        }
+      ],
+      "definition": "a raised horizontal surface"
+    },
+    {
+      "lemma": "plaything",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "plaything.n.01"
+        }
+      ],
+      "definition": "an artifact designed to be played with"
+    },
+    {
+      "lemma": "podium",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "dais.n.01"
+        }
+      ],
+      "definition": "a platform raised above the surrounding level to give prominence to the person on it"
+    },
+    {
+      "lemma": "polynya",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "polynya.n.01"
+        }
+      ],
+      "definition": "a stretch of open water surrounded by ice (especially in Arctic seas)"
+    },
+    {
+      "lemma": "pool",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "pool.n.06"
+        }
+      ],
+      "definition": "a small body of standing water (rainwater) or other liquid"
+    },
+    {
+      "lemma": "poop",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "rear.n.05",
+          "via_synset": "stern.n.01"
+        }
+      ],
+      "definition": "the rear part of a ship"
+    },
+    {
+      "lemma": "port",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "larboard.n.01",
+          "via_synset": "port.s.01"
+        }
+      ],
+      "definition": "located on the left side of a ship or aircraft"
+    },
+    {
+      "lemma": "port",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "side.n.05",
+          "via_synset": "larboard.n.01"
+        }
+      ],
+      "definition": "the left side of a ship or aircraft to someone who is aboard and facing the bow or nose"
+    },
+    {
+      "lemma": "port",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "larboard.n.01",
+          "via_synset": "port.v.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "larboard.n.01",
+          "via_synset": "port.v.01"
+        }
+      ],
+      "definition": "turn or go to the port or left side, of a ship"
+    },
+    {
+      "lemma": "projection screen",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "screen.n.01"
+        }
+      ],
+      "definition": "a white or silvered surface where pictures can be projected for viewing"
+    },
+    {
+      "lemma": "prow",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "front.n.04",
+          "via_synset": "bow.n.03"
+        }
+      ],
+      "definition": "front part of a vessel or aircraft"
+    },
+    {
+      "lemma": "puddle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "pool.n.06"
+        }
+      ],
+      "definition": "a small body of standing water (rainwater) or other liquid"
+    },
+    {
+      "lemma": "pulpit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "dais.n.01"
+        }
+      ],
+      "definition": "a platform raised above the surrounding level to give prominence to the person on it"
+    },
+    {
+      "lemma": "punchboard",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "board.n.09",
+          "via_synset": "punchboard.n.01"
+        }
+      ],
+      "definition": "a small board full of holes; each hole contains a slip of paper with symbols printed on it; a gambler pays a small sum for the privilege of pushing out a slip in the hope of obtaining one that entitles him to a prize"
+    },
+    {
+      "lemma": "quarter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "rear.n.05",
+          "via_synset": "stern.n.01"
+        }
+      ],
+      "definition": "the rear part of a ship"
+    },
+    {
+      "lemma": "razor edge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "edge.n.03",
+          "via_synset": "razor_edge.n.01"
+        }
+      ],
+      "definition": "an edge that is as sharp as the cutting side of a razor"
+    },
+    {
+      "lemma": "ready-made",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "ready-made.n.01"
+        }
+      ],
+      "definition": "a manufactured artifact (as a garment or piece of furniture) that is made in advance and available for purchase"
+    },
+    {
+      "lemma": "rear",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "rear.n.05",
+          "via_synset": "rear.s.01"
+        }
+      ],
+      "definition": "located in or toward the back or rear"
+    },
+    {
+      "lemma": "rear",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "side.n.05",
+          "via_synset": "rear.n.05"
+        }
+      ],
+      "definition": "the side that goes last or is not normally seen"
+    },
+    {
+      "lemma": "recess",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "inlet.n.01"
+        }
+      ],
+      "definition": "an arm off of a larger body of water (often between rocky headlands)"
+    },
+    {
+      "lemma": "reefy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "shallow.a.01",
+          "via_synset": "reefy.s.01"
+        }
+      ],
+      "definition": "full of submerged reefs or sandbanks or shoals"
+    },
+    {
+      "lemma": "restoration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "restoration.n.05"
+        }
+      ],
+      "definition": "some artifact that has been restored or reconstructed"
+    },
+    {
+      "lemma": "reverse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "side.n.05",
+          "via_synset": "reverse.n.04"
+        }
+      ],
+      "definition": "the side of a coin or medal that does not bear the principal design"
+    },
+    {
+      "lemma": "rim",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "edge.n.03",
+          "via_synset": "brim.n.01"
+        }
+      ],
+      "definition": "the top edge of a vessel or other container"
+    },
+    {
+      "lemma": "ring",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "ring.n.07"
+        }
+      ],
+      "definition": "a platform usually marked off by ropes in which contestants box or wrestle"
+    },
+    {
+      "lemma": "road surface",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "paved_surface.n.01",
+          "via_synset": "road_surface.n.01"
+        }
+      ],
+      "definition": "the paved surface of a paved roadway"
+    },
+    {
+      "lemma": "rostrum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "dais.n.01"
+        }
+      ],
+      "definition": "a platform raised above the surrounding level to give prominence to the person on it"
+    },
+    {
+      "lemma": "runway",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "runway.n.03"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "paved_surface.n.01",
+          "via_synset": "runway.n.04"
+        }
+      ],
+      "definition": "a narrow platform extending from the stage into the audience in a theater or nightclub etc."
+    },
+    {
+      "lemma": "scaffold",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "scaffold.n.01"
+        }
+      ],
+      "definition": "a platform from which criminals are executed (hanged or beheaded)"
+    },
+    {
+      "lemma": "sciolistic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "superficial.a.01",
+          "via_synset": "dilettante.s.01"
+        }
+      ],
+      "definition": "showing frivolous or superficial interest; amateurish"
+    },
+    {
+      "lemma": "screen",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "screen.n.01"
+        }
+      ],
+      "definition": "a white or silvered surface where pictures can be projected for viewing"
+    },
+    {
+      "lemma": "screen",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "screen.n.01",
+          "via_synset": "screen.v.04"
+        }
+      ],
+      "definition": "project onto a screen for viewing"
+    },
+    {
+      "lemma": "sea",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "sea.n.01"
+        }
+      ],
+      "definition": "a division of an ocean or a large body of salt water partially enclosed by land"
+    },
+    {
+      "lemma": "seeming",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "superficial.a.01",
+          "via_synset": "apparent.s.02"
+        }
+      ],
+      "definition": "appearing as such but not necessarily so"
+    },
+    {
+      "lemma": "seven seas",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "seven_seas.n.01"
+        }
+      ],
+      "definition": "an informal expression for all of the oceans of the world"
+    },
+    {
+      "lemma": "shallow",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "shallow.a.01",
+          "via_synset": "shallow.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "shallow.a.02",
+          "via_synset": "shallow.a.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "shoal.n.02",
+          "via_synset": "shallow.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "superficial.a.01",
+          "via_synset": "shallow.s.01"
+        }
+      ],
+      "definition": "lacking physical depth; having little spatial extension downward or inward from an outer surface or backward or outward from a center"
+    },
+    {
+      "lemma": "shallow",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "shoal.n.02",
+          "via_synset": "shoal.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "shallow.a.01",
+          "via_synset": "shoal.n.02"
+        }
+      ],
+      "definition": "a stretch of shallow water"
+    },
+    {
+      "lemma": "shallow",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "shoal.n.02",
+          "via_synset": "shallow.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "shoal.n.02",
+          "via_synset": "shallow.v.01"
+        }
+      ],
+      "definition": "become shallow"
+    },
+    {
+      "lemma": "shallowness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "shallow.a.01",
+          "via_synset": "shallowness.n.02"
+        }
+      ],
+      "definition": "the quality of lacking physical depth"
+    },
+    {
+      "lemma": "sheet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "sheet.n.06"
+        }
+      ],
+      "definition": "a flat artifact that is thin relative to its length and width"
+    },
+    {
+      "lemma": "shelfy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "shallow.a.01",
+          "via_synset": "reefy.s.01"
+        }
+      ],
+      "definition": "full of submerged reefs or sandbanks or shoals"
+    },
+    {
+      "lemma": "shelvy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "shallow.a.01",
+          "via_synset": "reefy.s.01"
+        }
+      ],
+      "definition": "full of submerged reefs or sandbanks or shoals"
+    },
+    {
+      "lemma": "shirtfront",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "front.n.04",
+          "via_synset": "shirtfront.n.01"
+        }
+      ],
+      "definition": "the front of a shirt (usually the part not covered by a jacket)"
+    },
+    {
+      "lemma": "shoal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "shoal.n.02",
+          "via_synset": "shoal.n.02"
+        }
+      ],
+      "definition": "a stretch of shallow water"
+    },
+    {
+      "lemma": "shoal",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "shoal.n.02",
+          "via_synset": "shallow.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "shoal.n.02",
+          "via_synset": "shallow.v.01"
+        }
+      ],
+      "definition": "become shallow"
+    },
+    {
+      "lemma": "shoaly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "shallow.a.01",
+          "via_synset": "reefy.s.01"
+        }
+      ],
+      "definition": "full of submerged reefs or sandbanks or shoals"
+    },
+    {
+      "lemma": "shopfront",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "front.n.04",
+          "via_synset": "shopfront.n.01"
+        }
+      ],
+      "definition": "the front side of a store facing the street; usually contains display windows"
+    },
+    {
+      "lemma": "side",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "side.n.05"
+        }
+      ],
+      "definition": "an extended outer surface of an object"
+    },
+    {
+      "lemma": "sidewall",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "side.n.05",
+          "via_synset": "sidewall.n.01"
+        }
+      ],
+      "definition": "the side of an automobile tire"
+    },
+    {
+      "lemma": "silver screen",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "screen.n.01"
+        }
+      ],
+      "definition": "a white or silvered surface where pictures can be projected for viewing"
+    },
+    {
+      "lemma": "skidpan",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "paved_surface.n.01",
+          "via_synset": "skidpan.n.01"
+        }
+      ],
+      "definition": "a paved surface on which cars can be made to skid so that drivers can practice controlling them"
+    },
+    {
+      "lemma": "skin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "skin.n.02"
+        }
+      ],
+      "definition": "an outer surface (usually thin)"
+    },
+    {
+      "lemma": "skin-deep",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "superficial.a.01",
+          "via_synset": "skin-deep.s.01"
+        }
+      ],
+      "definition": "penetrating no deeper than the skin:"
+    },
+    {
+      "lemma": "slip",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "strip.n.02"
+        }
+      ],
+      "definition": "artifact consisting of a narrow flat piece of material"
+    },
+    {
+      "lemma": "soapbox",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "dais.n.01"
+        }
+      ],
+      "definition": "a platform raised above the surrounding level to give prominence to the person on it"
+    },
+    {
+      "lemma": "soffit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "side.n.05",
+          "via_synset": "soffit.n.01"
+        }
+      ],
+      "definition": "the underside of a part of a building (such as an arch or overhang or beam etc.)"
+    },
+    {
+      "lemma": "sound",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "sound.n.08"
+        }
+      ],
+      "definition": "a large ocean inlet or deep bay"
+    },
+    {
+      "lemma": "sounding",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "superficial.a.01",
+          "via_synset": "looking.s.01"
+        }
+      ],
+      "definition": "appearing to be as specified; usually used as combining forms"
+    },
+    {
+      "lemma": "spandrel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "spandrel.n.01"
+        }
+      ],
+      "definition": "an approximately triangular surface area between two adjacent arches and the horizontal plane above them"
+    },
+    {
+      "lemma": "spandril",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "spandrel.n.01"
+        }
+      ],
+      "definition": "an approximately triangular surface area between two adjacent arches and the horizontal plane above them"
+    },
+    {
+      "lemma": "sphere",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "sphere.n.02"
+        }
+      ],
+      "definition": "any spherically shaped artifact"
+    },
+    {
+      "lemma": "square",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "square.n.07"
+        }
+      ],
+      "definition": "any artifact having a shape similar to a plane geometric figure with four equal sides and four right angles"
+    },
+    {
+      "lemma": "squeaker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "squeaker.n.01"
+        }
+      ],
+      "definition": "any artifact that makes a squeaking sound when used"
+    },
+    {
+      "lemma": "stage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "stage.n.03"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "stage.n.08"
+        }
+      ],
+      "definition": "a large platform on which people can stand and can be seen by an audience"
+    },
+    {
+      "lemma": "stairhead",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "stairhead.n.01"
+        }
+      ],
+      "definition": "platform at the top of a staircase"
+    },
+    {
+      "lemma": "stand",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "bandstand.n.01"
+        }
+      ],
+      "definition": "a platform where a (brass) band can play in the open air"
+    },
+    {
+      "lemma": "starboard",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "side.n.05",
+          "via_synset": "starboard.n.01"
+        }
+      ],
+      "definition": "the right side of a ship or aircraft to someone who is aboard and facing the bow or nose"
+    },
+    {
+      "lemma": "starboard",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "starboard.n.01",
+          "via_synset": "starboard.v.01"
+        }
+      ],
+      "definition": "turn to the right, of helms or rudders"
+    },
+    {
+      "lemma": "stem",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "front.n.04",
+          "via_synset": "bow.n.03"
+        }
+      ],
+      "definition": "front part of a vessel or aircraft"
+    },
+    {
+      "lemma": "stern",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "rear.n.05",
+          "via_synset": "stern.n.01"
+        }
+      ],
+      "definition": "the rear part of a ship"
+    },
+    {
+      "lemma": "stinker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "lemon.n.05"
+        }
+      ],
+      "definition": "an artifact (especially an automobile) that is defective or unsatisfactory"
+    },
+    {
+      "lemma": "storefront",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "front.n.04",
+          "via_synset": "shopfront.n.01"
+        }
+      ],
+      "definition": "the front side of a store facing the street; usually contains display windows"
+    },
+    {
+      "lemma": "stream",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "stream.n.01"
+        }
+      ],
+      "definition": "a natural body of running water flowing on or under the earth"
+    },
+    {
+      "lemma": "strip",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "strip.n.02"
+        }
+      ],
+      "definition": "artifact consisting of a narrow flat piece of material"
+    },
+    {
+      "lemma": "structure",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "structure.n.01"
+        }
+      ],
+      "definition": "a thing constructed; a complex entity constructed of many parts"
+    },
+    {
+      "lemma": "stump",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "dais.n.01"
+        }
+      ],
+      "definition": "a platform raised above the surrounding level to give prominence to the person on it"
+    },
+    {
+      "lemma": "superficial",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "superficial.s.01",
+          "via_synset": "superficial.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "superficial.a.01",
+          "via_synset": "superficial.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "superficies.n.02",
+          "via_synset": "superficial.a.02"
+        }
+      ],
+      "definition": "of little substance or significance"
+    },
+    {
+      "lemma": "superficiality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "superficial.a.01",
+          "via_synset": "superficiality.n.01"
+        }
+      ],
+      "definition": "lack of depth of knowledge or thought or feeling"
+    },
+    {
+      "lemma": "superficies",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "superficies.n.02"
+        }
+      ],
+      "definition": "outer surface of an area or a body"
+    },
+    {
+      "lemma": "surface",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "surface.n.01",
+          "via_synset": "surface.n.01"
+        }
+      ],
+      "definition": "the outer boundary of an artifact or a material layer constituting or resembling such a boundary"
+    },
+    {
+      "lemma": "surface",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "surface.n.01",
+          "via_synset": "coat.v.01"
+        }
+      ],
+      "definition": "put a coat on; cover the surface of; furnish with a surface"
+    },
+    {
+      "lemma": "tabletop",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "work_surface.n.01",
+          "via_synset": "tabletop.n.01"
+        }
+      ],
+      "definition": "the top horizontal work surface of a table"
+    },
+    {
+      "lemma": "tail",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "rear.n.05",
+          "via_synset": "tail.n.07"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "rear.n.05",
+          "via_synset": "stern.n.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "reverse.n.04",
+          "via_synset": "tail.n.06"
+        }
+      ],
+      "definition": "the rear part of an aircraft"
+    },
+    {
+      "lemma": "tail assembly",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "rear.n.05",
+          "via_synset": "tail.n.07"
+        }
+      ],
+      "definition": "the rear part of an aircraft"
+    },
+    {
+      "lemma": "tarmac",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "paved_surface.n.01",
+          "via_synset": "tarmacadam.n.02"
+        }
+      ],
+      "definition": "a paved surface having compressed layers of broken rocks held together with tar"
+    },
+    {
+      "lemma": "tarmacadam",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "paved_surface.n.01",
+          "via_synset": "tarmacadam.n.02"
+        }
+      ],
+      "definition": "a paved surface having compressed layers of broken rocks held together with tar"
+    },
+    {
+      "lemma": "taxi strip",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "paved_surface.n.01",
+          "via_synset": "taxiway.n.01"
+        }
+      ],
+      "definition": "a paved surface in the form of a strip; used by planes taxiing to or from the runway at an airport"
+    },
+    {
+      "lemma": "taxiway",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "paved_surface.n.01",
+          "via_synset": "taxiway.n.01"
+        }
+      ],
+      "definition": "a paved surface in the form of a strip; used by planes taxiing to or from the runway at an airport"
+    },
+    {
+      "lemma": "territorial waters",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "territorial_waters.n.01"
+        }
+      ],
+      "definition": "the waters surrounding a nation and its territories over which that nation exercises sovereign jurisdiction"
+    },
+    {
+      "lemma": "textile",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "fabric.n.01"
+        }
+      ],
+      "definition": "artifact made by weaving or felting or knitting or crocheting natural or synthetic fibers"
+    },
+    {
+      "lemma": "top",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "top.n.07"
+        }
+      ],
+      "definition": "platform surrounding the head of a lower mast"
+    },
+    {
+      "lemma": "toy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "plaything.n.01"
+        }
+      ],
+      "definition": "an artifact designed to be played with"
+    },
+    {
+      "lemma": "track",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "track.n.03"
+        }
+      ],
+      "definition": "a pair of parallel rails providing a runway for wheels"
+    },
+    {
+      "lemma": "trade good",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "commodity.n.01"
+        }
+      ],
+      "definition": "articles of commerce"
+    },
+    {
+      "lemma": "trailing edge",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "edge.n.03",
+          "via_synset": "trailing_edge.n.01"
+        }
+      ],
+      "definition": "the rear edge of an airfoil"
+    },
+    {
+      "lemma": "tread",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "tread.n.02"
+        }
+      ],
+      "definition": "the grooved surface of a pneumatic tire"
+    },
+    {
+      "lemma": "tread",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tread.n.02",
+          "via_synset": "tread.v.05"
+        }
+      ],
+      "definition": "apply (the tread) to a tire"
+    },
+    {
+      "lemma": "trivia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "superficial.s.01",
+          "via_synset": "triviality.n.03"
+        }
+      ],
+      "definition": "something of small importance"
+    },
+    {
+      "lemma": "trivial",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "superficial.s.01",
+          "via_synset": "superficial.s.01"
+        }
+      ],
+      "definition": "of little substance or significance"
+    },
+    {
+      "lemma": "triviality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "superficial.s.01",
+          "via_synset": "technicality.n.01"
+        }
+      ],
+      "definition": "a detail that is considered insignificant"
+    },
+    {
+      "lemma": "trivialize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "superficial.s.01",
+          "via_synset": "trivialize.v.01"
+        }
+      ],
+      "definition": "make trivial or insignificant"
+    },
+    {
+      "lemma": "truck bed",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "floor.n.01",
+          "via_synset": "truck_bed.n.01"
+        }
+      ],
+      "definition": "the floor or bottom of a wagon or truck or trailer"
+    },
+    {
+      "lemma": "turntable",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "turntable.n.03"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "turntable.n.01"
+        }
+      ],
+      "definition": "a rotatable platform with a track; used to turn locomotives and cars"
+    },
+    {
+      "lemma": "unimportant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "superficial.s.01",
+          "via_synset": "insignificant.a.04"
+        }
+      ],
+      "definition": "devoid of importance, meaning, or force"
+    },
+    {
+      "lemma": "upper surface",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "side.n.05",
+          "via_synset": "upper_surface.n.01"
+        }
+      ],
+      "definition": "the side that is uppermost"
+    },
+    {
+      "lemma": "verso",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "side.n.05",
+          "via_synset": "reverse.n.04"
+        }
+      ],
+      "definition": "the side of a coin or medal that does not bear the principal design"
+    },
+    {
+      "lemma": "vertical surface",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "vertical_surface.n.01"
+        }
+      ],
+      "definition": "a surface that is vertical"
+    },
+    {
+      "lemma": "wakeful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "shallow.a.02",
+          "via_synset": "light.s.16"
+        }
+      ],
+      "definition": "(of sleep) easily disturbed"
+    },
+    {
+      "lemma": "water",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "shoal.n.02",
+          "via_synset": "body_of_water.n.01"
+        }
+      ],
+      "definition": "the part of the earth's surface covered with water (such as a river or lake or ocean)"
+    },
+    {
+      "lemma": "watercourse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "stream.n.01"
+        }
+      ],
+      "definition": "a natural body of running water flowing on or under the earth"
+    },
+    {
+      "lemma": "waterfall",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "waterfall.n.01"
+        }
+      ],
+      "definition": "a steep descent of the water of a river"
+    },
+    {
+      "lemma": "waterway",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "body_of_water.n.01",
+          "via_synset": "waterway.n.01"
+        }
+      ],
+      "definition": "a navigable body of water"
+    },
+    {
+      "lemma": "way",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "way.n.06"
+        }
+      ],
+      "definition": "any artifact consisting of a road or path affording passage from one place to another"
+    },
+    {
+      "lemma": "weight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "artifact.n.01",
+          "via_synset": "weight.n.04"
+        }
+      ],
+      "definition": "an artifact that is heavy"
+    },
+    {
+      "lemma": "wharf",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "pier.n.01"
+        }
+      ],
+      "definition": "a platform built out from the shore into the water and supported by piles; provides access to ships and boats"
+    },
+    {
+      "lemma": "wharfage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "platform.n.01",
+          "via_synset": "pier.n.01"
+        }
+      ],
+      "definition": "a platform built out from the shore into the water and supported by piles; provides access to ships and boats"
+    },
+    {
+      "lemma": "wide screen",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "screen.n.01",
+          "via_synset": "wide_screen.n.01"
+        }
+      ],
+      "definition": "a projection screen that is much wider than it is high"
+    },
+    {
+      "lemma": "work surface",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "surface.n.01",
+          "via_synset": "work_surface.n.01"
+        }
+      ],
+      "definition": "a horizontal surface for supporting objects used in working or playing games"
+    },
+    {
+      "lemma": "writing board",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "work_surface.n.01",
+          "via_synset": "writing_board.n.01"
+        }
+      ],
+      "definition": "work surface consisting of a wide lightweight board that can be placed across the lap and used for writing"
+    }
+  ]
+}

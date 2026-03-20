@@ -1,0 +1,368 @@
+{
+  "atom_id": "FND.languageless",
+  "category": "FND",
+  "seed_count": 3,
+  "total_keys": 19,
+  "pos_counts": {
+    "adj": 17,
+    "n": 2
+  },
+  "source_counts": {
+    "0_seed": 8,
+    "6_derivational": 3,
+    "7_similar_to": 10,
+    "9_antonym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 8,
+      "words": [
+        "mute(adj)",
+        "tongueless(adj)",
+        "unspoken(adj)",
+        "wordless(adj)",
+        "speechless(adj)",
+        "dumb(adj)",
+        "inexpressible(adj)",
+        "unexpressible(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 2,
+      "words": [
+        "muteness(n)",
+        "speechlessness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 8,
+      "words": [
+        "inarticulate(adj)",
+        "unarticulate(adj)",
+        "indefinable(adj)",
+        "indescribable(adj)",
+        "ineffable(adj)",
+        "unspeakable(adj)",
+        "untellable(adj)",
+        "unutterable(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "expressible(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "dumb",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "speechless.s.01",
+          "via_synset": "speechless.s.01"
+        }
+      ],
+      "definition": "temporarily incapable of speaking"
+    },
+    {
+      "lemma": "expressible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "inexpressible.a.01",
+          "via_synset": "expressible.a.01"
+        }
+      ],
+      "definition": "capable of being expressed"
+    },
+    {
+      "lemma": "inarticulate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mute.s.01",
+          "via_synset": "inarticulate.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "speechless.s.01",
+          "via_synset": "inarticulate.a.01"
+        }
+      ],
+      "definition": "without or deprived of the use of speech or words"
+    },
+    {
+      "lemma": "indefinable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "inexpressible.a.01",
+          "via_synset": "indefinable.s.02"
+        }
+      ],
+      "definition": "defying expression or description"
+    },
+    {
+      "lemma": "indescribable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "inexpressible.a.01",
+          "via_synset": "indefinable.s.02"
+        }
+      ],
+      "definition": "defying expression or description"
+    },
+    {
+      "lemma": "ineffable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "inexpressible.a.01",
+          "via_synset": "indefinable.s.02"
+        }
+      ],
+      "definition": "defying expression or description"
+    },
+    {
+      "lemma": "inexpressible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "inexpressible.a.01",
+          "via_synset": "inexpressible.a.01"
+        }
+      ],
+      "definition": "defying expression"
+    },
+    {
+      "lemma": "mute",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "mute.s.01",
+          "via_synset": "mute.s.01"
+        }
+      ],
+      "definition": "expressed without speech; ; ; - Emily Dickinson; ; ; - Thomas Wolfe"
+    },
+    {
+      "lemma": "muteness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mute.s.01",
+          "via_synset": "mutism.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mute.s.01",
+          "via_synset": "muteness.n.02"
+        }
+      ],
+      "definition": "the condition of being unable or unwilling to speak"
+    },
+    {
+      "lemma": "speechless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "speechless.s.01",
+          "via_synset": "speechless.s.01"
+        }
+      ],
+      "definition": "temporarily incapable of speaking"
+    },
+    {
+      "lemma": "speechlessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "speechless.s.01",
+          "via_synset": "speechlessness.n.01"
+        }
+      ],
+      "definition": "the property of being speechless"
+    },
+    {
+      "lemma": "tongueless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "mute.s.01",
+          "via_synset": "mute.s.01"
+        }
+      ],
+      "definition": "expressed without speech; ; ; - Emily Dickinson; ; ; - Thomas Wolfe"
+    },
+    {
+      "lemma": "unarticulate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mute.s.01",
+          "via_synset": "inarticulate.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "speechless.s.01",
+          "via_synset": "inarticulate.a.01"
+        }
+      ],
+      "definition": "without or deprived of the use of speech or words"
+    },
+    {
+      "lemma": "unexpressible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "inexpressible.a.01",
+          "via_synset": "inexpressible.a.01"
+        }
+      ],
+      "definition": "defying expression"
+    },
+    {
+      "lemma": "unspeakable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "inexpressible.a.01",
+          "via_synset": "indefinable.s.02"
+        }
+      ],
+      "definition": "defying expression or description"
+    },
+    {
+      "lemma": "unspoken",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "mute.s.01",
+          "via_synset": "mute.s.01"
+        }
+      ],
+      "definition": "expressed without speech; ; ; - Emily Dickinson; ; ; - Thomas Wolfe"
+    },
+    {
+      "lemma": "untellable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "inexpressible.a.01",
+          "via_synset": "indefinable.s.02"
+        }
+      ],
+      "definition": "defying expression or description"
+    },
+    {
+      "lemma": "unutterable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "inexpressible.a.01",
+          "via_synset": "indefinable.s.02"
+        }
+      ],
+      "definition": "defying expression or description"
+    },
+    {
+      "lemma": "wordless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "mute.s.01",
+          "via_synset": "mute.s.01"
+        }
+      ],
+      "definition": "expressed without speech; ; ; - Emily Dickinson; ; ; - Thomas Wolfe"
+    }
+  ]
+}

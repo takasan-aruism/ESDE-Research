@@ -1,0 +1,982 @@
+{
+  "atom_id": "PRP.murky",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 56,
+  "pos_counts": {
+    "adj": 46,
+    "n": 10
+  },
+  "source_counts": {
+    "0_seed": 14,
+    "7_similar_to": 43,
+    "6_derivational": 17,
+    "8_also_see": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 9,
+      "words": [
+        "murky(adj)",
+        "mirky(adj)",
+        "cloudy(adj)",
+        "muddy(adj)",
+        "turbid(adj)",
+        "nebulose(adj)",
+        "nebulous(adj)",
+        "opaque(adj)",
+        "unintelligible(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 10,
+      "words": [
+        "opacity(n)",
+        "opaqueness(n)",
+        "unintelligibility(n)",
+        "cloudiness(n)",
+        "murk(n)",
+        "murkiness(n)",
+        "cloud(n)",
+        "muddiness(n)",
+        "turbidness(n)",
+        "turbidity(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 36,
+      "words": [
+        "incomprehensible(adj)",
+        "uncomprehensible(adj)",
+        "indistinct(adj)",
+        "lightproof(adj)",
+        "light-tight(adj)",
+        "frosted(adj)",
+        "fogged(adj)",
+        "foggy(adj)",
+        "glaucous(adj)",
+        "semiopaque(adj)",
+        "milky(adj)",
+        "milklike(adj)",
+        "whitish(adj)",
+        "solid(adj)",
+        "shaded(adj)",
+        "dull(adj)",
+        "leaden(adj)",
+        "brumous(adj)",
+        "hazy(adj)",
+        "misty(adj)",
+        "heavy(adj)",
+        "lowering(adj)",
+        "sullen(adj)",
+        "threatening(adj)",
+        "fogbound(adj)",
+        "cloudlike(adj)",
+        "nebular(adj)",
+        "cloud-covered(adj)",
+        "clouded(adj)",
+        "overcast(adj)",
+        "sunless(adj)",
+        "miasmal(adj)",
+        "miasmic(adj)",
+        "vaporous(adj)",
+        "vapourous(adj)",
+        "smoggy(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 1,
+      "words": [
+        "unclear(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "brumous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "brumous.s.01"
+        }
+      ],
+      "definition": "filled or abounding with fog or mist"
+    },
+    {
+      "lemma": "cloud",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "cloud.n.02"
+        }
+      ],
+      "definition": "a visible mass of water or ice particles suspended at a considerable altitude"
+    },
+    {
+      "lemma": "cloud-covered",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "cloud-covered.s.01"
+        }
+      ],
+      "definition": "filled or abounding with clouds"
+    },
+    {
+      "lemma": "clouded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "cloud-covered.s.01"
+        }
+      ],
+      "definition": "filled or abounding with clouds"
+    },
+    {
+      "lemma": "cloudiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cloudy.s.01",
+          "via_synset": "cloudiness.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "cloudiness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cloudy.s.02",
+          "via_synset": "cloudiness.n.03"
+        }
+      ],
+      "definition": "the quality of being cloudy"
+    },
+    {
+      "lemma": "cloudlike",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "cloudlike.s.01"
+        }
+      ],
+      "definition": "resembling a cloud"
+    },
+    {
+      "lemma": "cloudy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "cloudy.s.02",
+          "via_synset": "cloudy.s.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "cloudy.s.01",
+          "via_synset": "cloudy.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "cloudy.a.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "opaque.a.01",
+          "via_synset": "cloudy.s.02"
+        }
+      ],
+      "definition": "(of liquids) clouded as with sediment"
+    },
+    {
+      "lemma": "dull",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "dull.s.08"
+        }
+      ],
+      "definition": "darkened with overcast"
+    },
+    {
+      "lemma": "fogbound",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "fogbound.s.01"
+        }
+      ],
+      "definition": "enveloped in fog"
+    },
+    {
+      "lemma": "fogged",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "opaque.a.01",
+          "via_synset": "fogged.s.01"
+        }
+      ],
+      "definition": "obscured by fog"
+    },
+    {
+      "lemma": "foggy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "opaque.a.01",
+          "via_synset": "fogged.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "brumous.s.01"
+        }
+      ],
+      "definition": "obscured by fog"
+    },
+    {
+      "lemma": "frosted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "opaque.a.01",
+          "via_synset": "frosted.s.01"
+        }
+      ],
+      "definition": "(of glass) having a roughened coating resembling frost"
+    },
+    {
+      "lemma": "glaucous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "opaque.a.01",
+          "via_synset": "glaucous.s.01"
+        }
+      ],
+      "definition": "having a frosted look from a powdery coating, as on plants"
+    },
+    {
+      "lemma": "hazy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "brumous.s.01"
+        }
+      ],
+      "definition": "filled or abounding with fog or mist"
+    },
+    {
+      "lemma": "heavy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "heavy.s.03"
+        }
+      ],
+      "definition": "darkened by clouds"
+    },
+    {
+      "lemma": "incomprehensible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "opaque.s.01",
+          "via_synset": "incomprehensible.a.02"
+        }
+      ],
+      "definition": "difficult to understand; - A. Einstein"
+    },
+    {
+      "lemma": "indistinct",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.s.01",
+          "via_synset": "indistinct.a.01"
+        }
+      ],
+      "definition": "not clearly defined or easy to perceive or understand"
+    },
+    {
+      "lemma": "leaden",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "dull.s.08"
+        }
+      ],
+      "definition": "darkened with overcast"
+    },
+    {
+      "lemma": "light-tight",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "opaque.a.01",
+          "via_synset": "lightproof.s.01"
+        }
+      ],
+      "definition": "not penetrable by light"
+    },
+    {
+      "lemma": "lightproof",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "opaque.a.01",
+          "via_synset": "lightproof.s.01"
+        }
+      ],
+      "definition": "not penetrable by light"
+    },
+    {
+      "lemma": "lowering",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "heavy.s.03"
+        }
+      ],
+      "definition": "darkened by clouds"
+    },
+    {
+      "lemma": "miasmal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "miasmal.s.01"
+        }
+      ],
+      "definition": "filled with vapor"
+    },
+    {
+      "lemma": "miasmic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "miasmal.s.01"
+        }
+      ],
+      "definition": "filled with vapor"
+    },
+    {
+      "lemma": "milklike",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "opaque.a.01",
+          "via_synset": "milky.s.01"
+        }
+      ],
+      "definition": "resembling milk in color not clear"
+    },
+    {
+      "lemma": "milky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "opaque.a.01",
+          "via_synset": "milky.s.01"
+        }
+      ],
+      "definition": "resembling milk in color not clear"
+    },
+    {
+      "lemma": "mirky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "murky.s.02",
+          "via_synset": "murky.s.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "cloudy.s.02",
+          "via_synset": "cloudy.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "opaque.a.01",
+          "via_synset": "cloudy.s.02"
+        }
+      ],
+      "definition": "dark or gloomy"
+    },
+    {
+      "lemma": "misty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "brumous.s.01"
+        }
+      ],
+      "definition": "filled or abounding with fog or mist"
+    },
+    {
+      "lemma": "muddiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cloudy.s.02",
+          "via_synset": "cloudiness.n.03"
+        }
+      ],
+      "definition": "the quality of being cloudy"
+    },
+    {
+      "lemma": "muddy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "cloudy.s.02",
+          "via_synset": "cloudy.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "opaque.a.01",
+          "via_synset": "cloudy.s.02"
+        }
+      ],
+      "definition": "(of liquids) clouded as with sediment"
+    },
+    {
+      "lemma": "murk",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "murky.s.02",
+          "via_synset": "fog.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cloudy.s.02",
+          "via_synset": "fog.n.02"
+        }
+      ],
+      "definition": "an atmosphere in which visibility is reduced because of a cloud of some substance"
+    },
+    {
+      "lemma": "murkiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "murky.s.02",
+          "via_synset": "fog.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cloudy.s.02",
+          "via_synset": "cloudiness.n.03"
+        }
+      ],
+      "definition": "an atmosphere in which visibility is reduced because of a cloud of some substance"
+    },
+    {
+      "lemma": "murky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "murky.s.02",
+          "via_synset": "murky.s.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "cloudy.s.02",
+          "via_synset": "cloudy.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "opaque.a.01",
+          "via_synset": "cloudy.s.02"
+        }
+      ],
+      "definition": "dark or gloomy"
+    },
+    {
+      "lemma": "nebular",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "cloudlike.s.01"
+        }
+      ],
+      "definition": "resembling a cloud"
+    },
+    {
+      "lemma": "nebulose",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "cloudy.s.01",
+          "via_synset": "cloudy.s.01"
+        }
+      ],
+      "definition": "lacking definite form or limits; - H.T.Moore"
+    },
+    {
+      "lemma": "nebulous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "cloudy.s.01",
+          "via_synset": "cloudy.s.01"
+        }
+      ],
+      "definition": "lacking definite form or limits; - H.T.Moore"
+    },
+    {
+      "lemma": "opacity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "opaque.s.01",
+          "via_synset": "opacity.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "opaque.a.01",
+          "via_synset": "opacity.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "opaque.a.01",
+          "via_synset": "opacity.n.03"
+        }
+      ],
+      "definition": "incomprehensibility resulting from obscurity of meaning"
+    },
+    {
+      "lemma": "opaque",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "opaque.a.01",
+          "via_synset": "opaque.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "opaque.s.01",
+          "via_synset": "opaque.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.s.02",
+          "via_synset": "opaque.a.01"
+        }
+      ],
+      "definition": "not transmitting or reflecting light or radiant energy; impenetrable to sight"
+    },
+    {
+      "lemma": "opaqueness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "opaque.s.01",
+          "via_synset": "opacity.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "opaque.a.01",
+          "via_synset": "opacity.n.03"
+        }
+      ],
+      "definition": "incomprehensibility resulting from obscurity of meaning"
+    },
+    {
+      "lemma": "overcast",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "cloud-covered.s.01"
+        }
+      ],
+      "definition": "filled or abounding with clouds"
+    },
+    {
+      "lemma": "semiopaque",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "opaque.a.01",
+          "via_synset": "semiopaque.s.01"
+        }
+      ],
+      "definition": "partially opaque"
+    },
+    {
+      "lemma": "shaded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "murky.s.02",
+          "via_synset": "shaded.a.01"
+        }
+      ],
+      "definition": "protected from heat and light with shade or shadow; ; - Alexander Pope"
+    },
+    {
+      "lemma": "smoggy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "smoggy.s.01"
+        }
+      ],
+      "definition": "clouded with a mixture of smoke and fog"
+    },
+    {
+      "lemma": "solid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "opaque.a.01",
+          "via_synset": "solid.s.08"
+        }
+      ],
+      "definition": "impenetrable for the eye"
+    },
+    {
+      "lemma": "sullen",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "heavy.s.03"
+        }
+      ],
+      "definition": "darkened by clouds"
+    },
+    {
+      "lemma": "sunless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "cloud-covered.s.01"
+        }
+      ],
+      "definition": "filled or abounding with clouds"
+    },
+    {
+      "lemma": "threatening",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "heavy.s.03"
+        }
+      ],
+      "definition": "darkened by clouds"
+    },
+    {
+      "lemma": "turbid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "cloudy.s.02",
+          "via_synset": "cloudy.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "opaque.a.01",
+          "via_synset": "cloudy.s.02"
+        }
+      ],
+      "definition": "(of liquids) clouded as with sediment"
+    },
+    {
+      "lemma": "turbidity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cloudy.s.02",
+          "via_synset": "turbidity.n.01"
+        }
+      ],
+      "definition": "muddiness created by stirring up sediment or having foreign particles suspended"
+    },
+    {
+      "lemma": "turbidness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "cloudy.s.02",
+          "via_synset": "turbidity.n.01"
+        }
+      ],
+      "definition": "muddiness created by stirring up sediment or having foreign particles suspended"
+    },
+    {
+      "lemma": "unclear",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "opaque.a.01",
+          "via_synset": "unclear.a.02"
+        }
+      ],
+      "definition": "not clear to the mind"
+    },
+    {
+      "lemma": "uncomprehensible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "opaque.s.01",
+          "via_synset": "incomprehensible.a.02"
+        }
+      ],
+      "definition": "difficult to understand; - A. Einstein"
+    },
+    {
+      "lemma": "unintelligibility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "opaque.s.01",
+          "via_synset": "incoherence.n.02"
+        }
+      ],
+      "definition": "nonsense that is simply incoherent and unintelligible"
+    },
+    {
+      "lemma": "unintelligible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "opaque.s.01",
+          "via_synset": "opaque.s.01"
+        }
+      ],
+      "definition": "not clearly understood or expressed"
+    },
+    {
+      "lemma": "vaporous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "miasmal.s.01"
+        }
+      ],
+      "definition": "filled with vapor"
+    },
+    {
+      "lemma": "vapourous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "cloudy.a.02",
+          "via_synset": "miasmal.s.01"
+        }
+      ],
+      "definition": "filled with vapor"
+    },
+    {
+      "lemma": "whitish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "opaque.a.01",
+          "via_synset": "milky.s.01"
+        }
+      ],
+      "definition": "resembling milk in color not clear"
+    }
+  ]
+}

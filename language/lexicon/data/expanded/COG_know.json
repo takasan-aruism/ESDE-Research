@@ -1,0 +1,3057 @@
+{
+  "atom_id": "COG.know",
+  "category": "COG",
+  "seed_count": 6,
+  "total_keys": 186,
+  "pos_counts": {
+    "v": 104,
+    "n": 52,
+    "adj": 30
+  },
+  "source_counts": {
+    "0_seed": 11,
+    "4_hyponym_d2": 46,
+    "12_verb_group": 20,
+    "6_derivational": 74,
+    "3_hyponym_d1": 42,
+    "2_hypernym_d1": 1,
+    "5_hyponym_d3": 16,
+    "10_sibling": 16,
+    "8_also_see": 5,
+    "7_similar_to": 12,
+    "9_antonym": 2
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 9,
+      "words": [
+        "know(v)",
+        "cognize(v)",
+        "cognise(v)",
+        "know(n)",
+        "aware(adj)",
+        "cognizant(adj)",
+        "cognisant(adj)",
+        "mindful(adj)",
+        "understand(v)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 1,
+      "words": [
+        "knowing(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 39,
+      "words": [
+        "keep track(v)",
+        "recognize(v)",
+        "recognise(v)",
+        "realize(v)",
+        "realise(v)",
+        "agnize(v)",
+        "agnise(v)",
+        "anticipate(v)",
+        "previse(v)",
+        "foreknow(v)",
+        "foresee(v)",
+        "penetrate(v)",
+        "fathom(v)",
+        "bottom(v)",
+        "grok(v)",
+        "get the picture(v)",
+        "comprehend(v)",
+        "savvy(v)",
+        "dig(v)",
+        "grasp(v)",
+        "compass(v)",
+        "apprehend(v)",
+        "read(v)",
+        "solve(v)",
+        "work out(v)",
+        "figure out(v)",
+        "puzzle out(v)",
+        "lick(v)",
+        "work(v)",
+        "follow(v)",
+        "interpret(v)",
+        "construe(v)",
+        "see(v)",
+        "translate(v)",
+        "make out(v)",
+        "catch(v)",
+        "get(v)",
+        "sense(v)",
+        "touch(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 41,
+      "words": [
+        "digest(v)",
+        "figure(v)",
+        "catch on(v)",
+        "get wise(v)",
+        "get onto(v)",
+        "tumble(v)",
+        "latch on(v)",
+        "cotton on(v)",
+        "twig(v)",
+        "get it(v)",
+        "intuit(v)",
+        "answer(v)",
+        "resolve(v)",
+        "break(v)",
+        "strike(v)",
+        "guess(v)",
+        "infer(v)",
+        "riddle(v)",
+        "misconstrue(v)",
+        "misinterpret(v)",
+        "misconceive(v)",
+        "misunderstand(v)",
+        "misapprehend(v)",
+        "be amiss(v)",
+        "mythicize(v)",
+        "mythicise(v)",
+        "allegorize(v)",
+        "allegorise(v)",
+        "reinterpret(v)",
+        "read between the lines(v)",
+        "spiritualize(v)",
+        "spiritualise(v)",
+        "literalize(v)",
+        "literalise(v)",
+        "educe(v)",
+        "evoke(v)",
+        "elicit(v)",
+        "extract(v)",
+        "draw out(v)",
+        "take(v)",
+        "scan(v)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 14,
+      "words": [
+        "tell(v)",
+        "misread(v)",
+        "reread(v)",
+        "dip into(v)",
+        "decipher(v)",
+        "trace(v)",
+        "skim(v)",
+        "skim over(v)",
+        "anagram(v)",
+        "anagrammatize(v)",
+        "anagrammatise(v)",
+        "lipread(v)",
+        "lip-read(v)",
+        "speech-read(v)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 54,
+      "words": [
+        "digestion(n)",
+        "digest(n)",
+        "comprehensible(adj)",
+        "comprehendible(adj)",
+        "comprehension(n)",
+        "savvy(n)",
+        "grasp(n)",
+        "grasping(n)",
+        "apprehensible(adj)",
+        "apprehensive(adj)",
+        "apprehension(n)",
+        "apprehender(n)",
+        "guesser(n)",
+        "understandable(adj)",
+        "understanding(n)",
+        "mindfulness(n)",
+        "awareness(n)",
+        "knowable(adj)",
+        "knower(n)",
+        "cognitive(adj)",
+        "cognizance(n)",
+        "cognisance(n)",
+        "reading(n)",
+        "realization(n)",
+        "realisation(n)",
+        "penetrative(adj)",
+        "penetration(n)",
+        "intuitive(adj)",
+        "intuition(n)",
+        "read(n)",
+        "reader(n)",
+        "misconstruction(n)",
+        "misconstrual(n)",
+        "misinterpretation(n)",
+        "misconception(n)",
+        "misunderstanding(n)",
+        "misapprehension(n)",
+        "sensitive(adj)",
+        "sense(n)",
+        "solution(n)",
+        "solver(n)",
+        "solvent(n)",
+        "solving(n)",
+        "workable(adj)",
+        "allegory(n)",
+        "interpretation(n)",
+        "construal(n)",
+        "answer(n)",
+        "spiritualization(n)",
+        "spiritualisation(n)",
+        "anticipator(n)",
+        "prevision(n)",
+        "reinterpretation(n)",
+        "answerable(adj)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 12,
+      "words": [
+        "careful(adj)",
+        "heedful(adj)",
+        "evocative(adj)",
+        "redolent(adj)",
+        "remindful(adj)",
+        "reminiscent(adj)",
+        "resonant(adj)",
+        "sensible(adj)",
+        "alert(adj)",
+        "alive(adj)",
+        "awake(adj)",
+        "conscious(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 1,
+      "words": [
+        "witting(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 2,
+      "words": [
+        "ignore(v)",
+        "unmindful(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 8,
+      "words": [
+        "incognizance(n)",
+        "foresight(n)",
+        "farsightedness(n)",
+        "prospicience(n)",
+        "ken(n)",
+        "discernment(n)",
+        "consciousness(n)",
+        "knowingness(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 5,
+      "words": [
+        "say(v)",
+        "consider(v)",
+        "reckon(v)",
+        "view(v)",
+        "regard(v)"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "agnise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "know.v.01",
+          "via_synset": "recognize.v.02"
+        }
+      ],
+      "definition": "be fully aware or cognizant of"
+    },
+    {
+      "lemma": "agnize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "know.v.01",
+          "via_synset": "recognize.v.02"
+        }
+      ],
+      "definition": "be fully aware or cognizant of"
+    },
+    {
+      "lemma": "alert",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "aware.a.01",
+          "via_synset": "alert.s.02"
+        }
+      ],
+      "definition": "mentally perceptive and responsive"
+    },
+    {
+      "lemma": "alive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "aware.a.01",
+          "via_synset": "alert.s.02"
+        }
+      ],
+      "definition": "mentally perceptive and responsive"
+    },
+    {
+      "lemma": "allegorise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "allegorize.v.01"
+        }
+      ],
+      "definition": "interpret as an allegory"
+    },
+    {
+      "lemma": "allegorize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "allegorize.v.01"
+        }
+      ],
+      "definition": "interpret as an allegory"
+    },
+    {
+      "lemma": "allegory",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "allegorize.v.01",
+          "via_synset": "emblem.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "allegorize.v.01",
+          "via_synset": "allegory.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "allegorize.v.01",
+          "via_synset": "fable.n.02"
+        }
+      ],
+      "definition": "a visible symbol representing an abstract idea"
+    },
+    {
+      "lemma": "anagram",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "read.v.01",
+          "via_synset": "anagram.v.01"
+        }
+      ],
+      "definition": "read letters out of order to discover a hidden meaning"
+    },
+    {
+      "lemma": "anagrammatise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "read.v.01",
+          "via_synset": "anagram.v.01"
+        }
+      ],
+      "definition": "read letters out of order to discover a hidden meaning"
+    },
+    {
+      "lemma": "anagrammatize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "read.v.01",
+          "via_synset": "anagram.v.01"
+        }
+      ],
+      "definition": "read letters out of order to discover a hidden meaning"
+    },
+    {
+      "lemma": "answer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "answer.v.03",
+          "via_synset": "solution.n.02"
+        }
+      ],
+      "definition": "a statement that solves a problem or explains how to solve the problem"
+    },
+    {
+      "lemma": "answer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "solve.v.01",
+          "via_synset": "answer.v.04"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "solve.v.01",
+          "via_synset": "answer.v.03"
+        }
+      ],
+      "definition": "understand the meaning of"
+    },
+    {
+      "lemma": "answerable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "answer.v.04",
+          "via_synset": "answerable.s.01"
+        }
+      ],
+      "definition": "capable of being answered"
+    },
+    {
+      "lemma": "anticipate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "know.v.03",
+          "via_synset": "anticipate.v.03"
+        }
+      ],
+      "definition": "realize beforehand"
+    },
+    {
+      "lemma": "anticipator",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "anticipate.v.03",
+          "via_synset": "anticipator.n.01"
+        }
+      ],
+      "definition": "one who anticipates"
+    },
+    {
+      "lemma": "apprehend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "grok.v.01"
+        }
+      ],
+      "definition": "get the meaning of something"
+    },
+    {
+      "lemma": "apprehender",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grok.v.01",
+          "via_synset": "knower.n.01"
+        }
+      ],
+      "definition": "a person who knows or apprehends"
+    },
+    {
+      "lemma": "apprehensible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grok.v.01",
+          "via_synset": "apprehensible.s.01"
+        }
+      ],
+      "definition": "capable of being apprehended or understood"
+    },
+    {
+      "lemma": "apprehension",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grok.v.01",
+          "via_synset": "understanding.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "understanding.n.01"
+        }
+      ],
+      "definition": "the cognitive condition of someone who understands"
+    },
+    {
+      "lemma": "apprehensive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grok.v.01",
+          "via_synset": "apprehensive.s.01"
+        }
+      ],
+      "definition": "quick to understand; - Nathaniel Hawthorne"
+    },
+    {
+      "lemma": "awake",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "aware.a.01",
+          "via_synset": "alert.s.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "aware.a.01",
+          "via_synset": "awake.a.01"
+        }
+      ],
+      "definition": "mentally perceptive and responsive"
+    },
+    {
+      "lemma": "aware",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aware.a.01",
+          "via_synset": "aware.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "mindful.a.01",
+          "via_synset": "mindful.a.01"
+        }
+      ],
+      "definition": "(sometimes followed by `of') having or showing knowledge or understanding or realization or perception"
+    },
+    {
+      "lemma": "awareness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mindful.a.01",
+          "via_synset": "awareness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mindful.a.01",
+          "via_synset": "awareness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aware.a.01",
+          "via_synset": "awareness.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "awareness.n.01"
+        }
+      ],
+      "definition": "having knowledge of"
+    },
+    {
+      "lemma": "be amiss",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "misconstrue.v.01"
+        }
+      ],
+      "definition": "interpret in the wrong way"
+    },
+    {
+      "lemma": "bottom",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "penetrate.v.02"
+        }
+      ],
+      "definition": "come to understand"
+    },
+    {
+      "lemma": "break",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "solve.v.01",
+          "via_synset": "break.v.51"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "break.v.51",
+          "via_synset": "break.v.50"
+        }
+      ],
+      "definition": "find the solution or key to"
+    },
+    {
+      "lemma": "careful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mindful.a.01",
+          "via_synset": "careful.s.01"
+        }
+      ],
+      "definition": "cautiously attentive"
+    },
+    {
+      "lemma": "catch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "catch.v.18"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "catch.v.18",
+          "via_synset": "catch.v.24"
+        }
+      ],
+      "definition": "grasp with the mind or develop an understanding of"
+    },
+    {
+      "lemma": "catch on",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "grok.v.01",
+          "via_synset": "catch_on.v.01"
+        }
+      ],
+      "definition": "understand, usually after some initial difficulty"
+    },
+    {
+      "lemma": "cognisance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "know.v.01",
+          "via_synset": "awareness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aware.a.01",
+          "via_synset": "awareness.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "awareness.n.01"
+        }
+      ],
+      "definition": "having knowledge of"
+    },
+    {
+      "lemma": "cognisant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aware.a.01",
+          "via_synset": "aware.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "know.v.01",
+          "via_synset": "aware.a.01"
+        }
+      ],
+      "definition": "(sometimes followed by `of') having or showing knowledge or understanding or realization or perception"
+    },
+    {
+      "lemma": "cognise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "know.v.01",
+          "via_synset": "know.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aware.a.01",
+          "via_synset": "know.v.01"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "know.v.03",
+          "via_synset": "know.v.01"
+        }
+      ],
+      "definition": "be cognizant or aware of a fact or a specific piece of information; possess knowledge or information about"
+    },
+    {
+      "lemma": "cognitive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "know.v.01",
+          "via_synset": "cognitive.a.01"
+        }
+      ],
+      "definition": "of or being or relating to or involving cognition"
+    },
+    {
+      "lemma": "cognizance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "know.v.01",
+          "via_synset": "awareness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aware.a.01",
+          "via_synset": "awareness.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "cognizance.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "awareness.n.01"
+        }
+      ],
+      "definition": "having knowledge of"
+    },
+    {
+      "lemma": "cognizant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "aware.a.01",
+          "via_synset": "aware.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "know.v.01",
+          "via_synset": "aware.a.01"
+        }
+      ],
+      "definition": "(sometimes followed by `of') having or showing knowledge or understanding or realization or perception"
+    },
+    {
+      "lemma": "cognize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "know.v.01",
+          "via_synset": "know.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "aware.a.01",
+          "via_synset": "know.v.01"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "know.v.03",
+          "via_synset": "know.v.01"
+        }
+      ],
+      "definition": "be cognizant or aware of a fact or a specific piece of information; possess knowledge or information about"
+    },
+    {
+      "lemma": "compass",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "grok.v.01"
+        }
+      ],
+      "definition": "get the meaning of something"
+    },
+    {
+      "lemma": "comprehend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "grok.v.01"
+        }
+      ],
+      "definition": "get the meaning of something"
+    },
+    {
+      "lemma": "comprehendible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grok.v.01",
+          "via_synset": "comprehensible.a.01"
+        }
+      ],
+      "definition": "capable of being comprehended or understood"
+    },
+    {
+      "lemma": "comprehensible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grok.v.01",
+          "via_synset": "comprehensible.a.01"
+        }
+      ],
+      "definition": "capable of being comprehended or understood"
+    },
+    {
+      "lemma": "comprehension",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grok.v.01",
+          "via_synset": "comprehension.n.01"
+        }
+      ],
+      "definition": "an ability to understand the meaning or importance of something (or the knowledge acquired as a result)"
+    },
+    {
+      "lemma": "conscious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "aware.a.01",
+          "via_synset": "conscious.s.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "aware.a.01",
+          "via_synset": "conscious.a.02"
+        }
+      ],
+      "definition": "(followed by `of') showing realization or recognition of something; ; ; - Thomas Hardy"
+    },
+    {
+      "lemma": "consciousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "awareness.n.01"
+        }
+      ],
+      "definition": "having knowledge of"
+    },
+    {
+      "lemma": "consider",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "interpret.v.01",
+          "via_synset": "see.v.05"
+        }
+      ],
+      "definition": "deem to be"
+    },
+    {
+      "lemma": "construal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "interpret.v.01",
+          "via_synset": "construal.n.01"
+        }
+      ],
+      "definition": "an interpretation of the meaning of something; the act of construing"
+    },
+    {
+      "lemma": "construe",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "interpret.v.01"
+        }
+      ],
+      "definition": "make sense of; assign a meaning to"
+    },
+    {
+      "lemma": "cotton on",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "grok.v.01",
+          "via_synset": "catch_on.v.01"
+        }
+      ],
+      "definition": "understand, usually after some initial difficulty"
+    },
+    {
+      "lemma": "decipher",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "read.v.01",
+          "via_synset": "decipher.v.02"
+        }
+      ],
+      "definition": "read with difficulty"
+    },
+    {
+      "lemma": "dig",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "grok.v.01"
+        }
+      ],
+      "definition": "get the meaning of something"
+    },
+    {
+      "lemma": "digest",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "digest.v.02",
+          "via_synset": "compilation.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "digest.v.02",
+          "via_synset": "digest.n.01"
+        }
+      ],
+      "definition": "something that is compiled (as into a single book or file)"
+    },
+    {
+      "lemma": "digest",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "grok.v.01",
+          "via_synset": "digest.v.02"
+        }
+      ],
+      "definition": "arrange and integrate in the mind"
+    },
+    {
+      "lemma": "digestion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "digest.v.02",
+          "via_synset": "digestion.n.03"
+        }
+      ],
+      "definition": "learning and coming to understand ideas and information"
+    },
+    {
+      "lemma": "dip into",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "read.v.01",
+          "via_synset": "dip_into.v.01"
+        }
+      ],
+      "definition": "read selectively; read only certain passages from a text"
+    },
+    {
+      "lemma": "discernment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "understanding.n.01"
+        }
+      ],
+      "definition": "the cognitive condition of someone who understands"
+    },
+    {
+      "lemma": "draw out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "educe.v.01"
+        }
+      ],
+      "definition": "deduce (a principle) or construe (a meaning)"
+    },
+    {
+      "lemma": "educe",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "educe.v.01"
+        }
+      ],
+      "definition": "deduce (a principle) or construe (a meaning)"
+    },
+    {
+      "lemma": "elicit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "educe.v.01"
+        }
+      ],
+      "definition": "deduce (a principle) or construe (a meaning)"
+    },
+    {
+      "lemma": "evocative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mindful.a.01",
+          "via_synset": "evocative.s.01"
+        }
+      ],
+      "definition": "serving to bring to mind; - Wilder Hobson"
+    },
+    {
+      "lemma": "evoke",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "educe.v.01"
+        }
+      ],
+      "definition": "deduce (a principle) or construe (a meaning)"
+    },
+    {
+      "lemma": "extract",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "educe.v.01"
+        }
+      ],
+      "definition": "deduce (a principle) or construe (a meaning)"
+    },
+    {
+      "lemma": "farsightedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "prevision.n.03"
+        }
+      ],
+      "definition": "seeing ahead; knowing in advance; foreseeing"
+    },
+    {
+      "lemma": "fathom",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "penetrate.v.02"
+        }
+      ],
+      "definition": "come to understand"
+    },
+    {
+      "lemma": "figure",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "grok.v.01",
+          "via_synset": "figure.v.05"
+        }
+      ],
+      "definition": "understand"
+    },
+    {
+      "lemma": "figure out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "solve.v.01"
+        }
+      ],
+      "definition": "find the solution to (a problem or question) or understand the meaning of"
+    },
+    {
+      "lemma": "follow",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "follow.v.23"
+        }
+      ],
+      "definition": "grasp the meaning"
+    },
+    {
+      "lemma": "foreknow",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "know.v.03",
+          "via_synset": "anticipate.v.03"
+        }
+      ],
+      "definition": "realize beforehand"
+    },
+    {
+      "lemma": "foresee",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "know.v.03",
+          "via_synset": "anticipate.v.03"
+        }
+      ],
+      "definition": "realize beforehand"
+    },
+    {
+      "lemma": "foresight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "prevision.n.03"
+        }
+      ],
+      "definition": "seeing ahead; knowing in advance; foreseeing"
+    },
+    {
+      "lemma": "get",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "catch.v.18"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "catch.v.18",
+          "via_synset": "get.v.21"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "catch.v.18",
+          "via_synset": "catch.v.24"
+        }
+      ],
+      "definition": "grasp with the mind or develop an understanding of"
+    },
+    {
+      "lemma": "get it",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "grok.v.01",
+          "via_synset": "catch_on.v.01"
+        }
+      ],
+      "definition": "understand, usually after some initial difficulty"
+    },
+    {
+      "lemma": "get onto",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "grok.v.01",
+          "via_synset": "catch_on.v.01"
+        }
+      ],
+      "definition": "understand, usually after some initial difficulty"
+    },
+    {
+      "lemma": "get the picture",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "grok.v.01"
+        }
+      ],
+      "definition": "get the meaning of something"
+    },
+    {
+      "lemma": "get wise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "grok.v.01",
+          "via_synset": "catch_on.v.01"
+        }
+      ],
+      "definition": "understand, usually after some initial difficulty"
+    },
+    {
+      "lemma": "grasp",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grok.v.01",
+          "via_synset": "appreciation.n.01"
+        }
+      ],
+      "definition": "understanding of the nature or meaning or quality or magnitude of something"
+    },
+    {
+      "lemma": "grasp",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "grok.v.01"
+        }
+      ],
+      "definition": "get the meaning of something"
+    },
+    {
+      "lemma": "grasping",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grok.v.01",
+          "via_synset": "grasping.n.01"
+        }
+      ],
+      "definition": "understanding with difficulty"
+    },
+    {
+      "lemma": "grok",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "grok.v.01"
+        }
+      ],
+      "definition": "get the meaning of something"
+    },
+    {
+      "lemma": "guess",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "solve.v.01",
+          "via_synset": "guess.v.04"
+        }
+      ],
+      "definition": "guess correctly; solve by guessing"
+    },
+    {
+      "lemma": "guesser",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "guess.v.04",
+          "via_synset": "guesser.n.01"
+        }
+      ],
+      "definition": "a person who guesses"
+    },
+    {
+      "lemma": "heedful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mindful.a.01",
+          "via_synset": "careful.s.01"
+        }
+      ],
+      "definition": "cautiously attentive"
+    },
+    {
+      "lemma": "ignore",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "know.v.01",
+          "via_synset": "ignore.v.05"
+        }
+      ],
+      "definition": "be ignorant of or in the dark about"
+    },
+    {
+      "lemma": "incognizance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "incognizance.n.01"
+        }
+      ],
+      "definition": "a lack of knowledge or recognition"
+    },
+    {
+      "lemma": "infer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "solve.v.01",
+          "via_synset": "guess.v.04"
+        }
+      ],
+      "definition": "guess correctly; solve by guessing"
+    },
+    {
+      "lemma": "interpret",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "interpret.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "understand.v.03"
+        }
+      ],
+      "definition": "make sense of; assign a meaning to"
+    },
+    {
+      "lemma": "interpretation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "interpret.v.01",
+          "via_synset": "interpretation.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "interpret.v.01",
+          "via_synset": "interpretation.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "interpret.v.01",
+          "via_synset": "interpretation.n.04"
+        }
+      ],
+      "definition": "an explanation that results from interpreting something"
+    },
+    {
+      "lemma": "intuit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "grok.v.01",
+          "via_synset": "intuit.v.01"
+        }
+      ],
+      "definition": "know or grasp by intuition or feeling"
+    },
+    {
+      "lemma": "intuition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "intuit.v.01",
+          "via_synset": "intuition.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "intuit.v.01",
+          "via_synset": "intuition.n.01"
+        }
+      ],
+      "definition": "an impression that something might be the case"
+    },
+    {
+      "lemma": "intuitive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "intuit.v.01",
+          "via_synset": "intuitive.s.02"
+        }
+      ],
+      "definition": "obtained through intuition rather than from reasoning or observation"
+    },
+    {
+      "lemma": "keep track",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "know.v.01",
+          "via_synset": "keep_track.v.01"
+        }
+      ],
+      "definition": "keep informed of fully aware"
+    },
+    {
+      "lemma": "ken",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "cognizance.n.02"
+        }
+      ],
+      "definition": "range of what one can know or understand"
+    },
+    {
+      "lemma": "know",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "know.n.01",
+          "via_synset": "know.n.01"
+        }
+      ],
+      "definition": "the fact of being aware of information that is known to few people"
+    },
+    {
+      "lemma": "know",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "know.v.01",
+          "via_synset": "know.v.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "know.v.03",
+          "via_synset": "know.v.03"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "recognize.v.02",
+          "via_synset": "know.v.09"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "know.v.01",
+          "via_synset": "know.v.03"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "know.v.03",
+          "via_synset": "know.v.01"
+        }
+      ],
+      "definition": "be cognizant or aware of a fact or a specific piece of information; possess knowledge or information about"
+    },
+    {
+      "lemma": "knowable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "know.v.01",
+          "via_synset": "knowable.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "know.v.03",
+          "via_synset": "knowable.a.01"
+        }
+      ],
+      "definition": "capable of being known"
+    },
+    {
+      "lemma": "knower",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "know.v.01",
+          "via_synset": "knower.n.01"
+        }
+      ],
+      "definition": "a person who knows or apprehends"
+    },
+    {
+      "lemma": "knowing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "know.n.01",
+          "via_synset": "knowing.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "know.v.01",
+          "via_synset": "knowing.n.01"
+        }
+      ],
+      "definition": "a clear and certain mental apprehension"
+    },
+    {
+      "lemma": "knowingness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "awareness.n.01"
+        }
+      ],
+      "definition": "having knowledge of"
+    },
+    {
+      "lemma": "latch on",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "grok.v.01",
+          "via_synset": "catch_on.v.01"
+        }
+      ],
+      "definition": "understand, usually after some initial difficulty"
+    },
+    {
+      "lemma": "lick",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "solve.v.01"
+        }
+      ],
+      "definition": "find the solution to (a problem or question) or understand the meaning of"
+    },
+    {
+      "lemma": "lip-read",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "read.v.01",
+          "via_synset": "lipread.v.01"
+        }
+      ],
+      "definition": "interpret by lipreading; of deaf people"
+    },
+    {
+      "lemma": "lipread",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "read.v.01",
+          "via_synset": "lipread.v.01"
+        }
+      ],
+      "definition": "interpret by lipreading; of deaf people"
+    },
+    {
+      "lemma": "literalise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "literalize.v.01"
+        }
+      ],
+      "definition": "make literal"
+    },
+    {
+      "lemma": "literalize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "literalize.v.01"
+        }
+      ],
+      "definition": "make literal"
+    },
+    {
+      "lemma": "make out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "make_out.v.03"
+        }
+      ],
+      "definition": "comprehend"
+    },
+    {
+      "lemma": "mindful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "mindful.a.01",
+          "via_synset": "mindful.a.01"
+        }
+      ],
+      "definition": "bearing in mind; attentive to"
+    },
+    {
+      "lemma": "mindfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mindful.a.01",
+          "via_synset": "mindfulness.n.01"
+        }
+      ],
+      "definition": "the trait of staying aware of (paying close attention to) your responsibilities"
+    },
+    {
+      "lemma": "misapprehend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "misconstrue.v.01"
+        }
+      ],
+      "definition": "interpret in the wrong way"
+    },
+    {
+      "lemma": "misapprehension",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "misconstrue.v.01",
+          "via_synset": "mistake.n.02"
+        }
+      ],
+      "definition": "an understanding of something that is not correct"
+    },
+    {
+      "lemma": "misconceive",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "misconstrue.v.01"
+        }
+      ],
+      "definition": "interpret in the wrong way"
+    },
+    {
+      "lemma": "misconception",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "misconstrue.v.01",
+          "via_synset": "misconception.n.01"
+        }
+      ],
+      "definition": "an incorrect conception"
+    },
+    {
+      "lemma": "misconstrual",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "misconstrue.v.01",
+          "via_synset": "misconstrual.n.01"
+        }
+      ],
+      "definition": "a kind of misinterpretation resulting from putting a wrong construction on words or actions (often deliberately)"
+    },
+    {
+      "lemma": "misconstruction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "misconstrue.v.01",
+          "via_synset": "misconstrual.n.01"
+        }
+      ],
+      "definition": "a kind of misinterpretation resulting from putting a wrong construction on words or actions (often deliberately)"
+    },
+    {
+      "lemma": "misconstrue",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "misconstrue.v.01"
+        }
+      ],
+      "definition": "interpret in the wrong way"
+    },
+    {
+      "lemma": "misinterpret",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "misconstrue.v.01"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "take.v.06",
+          "via_synset": "misread.v.02"
+        }
+      ],
+      "definition": "interpret in the wrong way"
+    },
+    {
+      "lemma": "misinterpretation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "misconstrue.v.01",
+          "via_synset": "misinterpretation.n.01"
+        }
+      ],
+      "definition": "putting the wrong interpretation on"
+    },
+    {
+      "lemma": "misread",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "take.v.06",
+          "via_synset": "misread.v.02"
+        },
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "read.v.04",
+          "via_synset": "misread.v.01"
+        }
+      ],
+      "definition": "interpret wrongly"
+    },
+    {
+      "lemma": "misunderstand",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "misconstrue.v.01"
+        }
+      ],
+      "definition": "interpret in the wrong way"
+    },
+    {
+      "lemma": "misunderstanding",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "misconstrue.v.01",
+          "via_synset": "misinterpretation.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "misconstrue.v.01",
+          "via_synset": "mistake.n.02"
+        }
+      ],
+      "definition": "putting the wrong interpretation on"
+    },
+    {
+      "lemma": "mythicise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "mythicize.v.01"
+        }
+      ],
+      "definition": "interpret as a myth or in terms of mythology"
+    },
+    {
+      "lemma": "mythicize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "mythicize.v.01"
+        }
+      ],
+      "definition": "interpret as a myth or in terms of mythology"
+    },
+    {
+      "lemma": "penetrate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "penetrate.v.02"
+        }
+      ],
+      "definition": "come to understand"
+    },
+    {
+      "lemma": "penetration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "penetrate.v.02",
+          "via_synset": "penetration.n.02"
+        }
+      ],
+      "definition": "clear or deep perception of a situation"
+    },
+    {
+      "lemma": "penetrative",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "penetrate.v.02",
+          "via_synset": "acute.s.02"
+        }
+      ],
+      "definition": "having or demonstrating ability to recognize or draw fine distinctions"
+    },
+    {
+      "lemma": "previse",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "know.v.03",
+          "via_synset": "anticipate.v.03"
+        }
+      ],
+      "definition": "realize beforehand"
+    },
+    {
+      "lemma": "prevision",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "anticipate.v.03",
+          "via_synset": "prevision.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "prevision.n.03"
+        }
+      ],
+      "definition": "seeing ahead; knowing in advance; foreseeing"
+    },
+    {
+      "lemma": "prospicience",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "prevision.n.03"
+        }
+      ],
+      "definition": "seeing ahead; knowing in advance; foreseeing"
+    },
+    {
+      "lemma": "puzzle out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "solve.v.01"
+        }
+      ],
+      "definition": "find the solution to (a problem or question) or understand the meaning of"
+    },
+    {
+      "lemma": "read",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "read.v.01",
+          "via_synset": "read.n.01"
+        }
+      ],
+      "definition": "something that is read"
+    },
+    {
+      "lemma": "read",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "read.v.10"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "understand.v.03"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "take.v.06"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "read.v.04"
+        },
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "read.v.01"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "read.v.10",
+          "via_synset": "take.v.06"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "take.v.06",
+          "via_synset": "read.v.10"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "take.v.06",
+          "via_synset": "read.v.05"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "read.v.01",
+          "via_synset": "read.v.02"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "read.v.01",
+          "via_synset": "read.v.03"
+        }
+      ],
+      "definition": "to hear and understand"
+    },
+    {
+      "lemma": "read between the lines",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "read_between_the_lines.v.01"
+        }
+      ],
+      "definition": "read what is implied but not expressed on the surface"
+    },
+    {
+      "lemma": "reader",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "read.v.01",
+          "via_synset": "reader.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "read.v.01",
+          "via_synset": "reader.n.01"
+        }
+      ],
+      "definition": "a person who can read; a literate person"
+    },
+    {
+      "lemma": "reading",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "take.v.06",
+          "via_synset": "reading.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "read.v.01",
+          "via_synset": "reading.n.01"
+        }
+      ],
+      "definition": "a particular interpretation or performance"
+    },
+    {
+      "lemma": "realisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "recognize.v.02",
+          "via_synset": "realization.n.01"
+        }
+      ],
+      "definition": "coming to understand something clearly and distinctly"
+    },
+    {
+      "lemma": "realise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "know.v.01",
+          "via_synset": "recognize.v.02"
+        }
+      ],
+      "definition": "be fully aware or cognizant of"
+    },
+    {
+      "lemma": "realization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "recognize.v.02",
+          "via_synset": "realization.n.01"
+        }
+      ],
+      "definition": "coming to understand something clearly and distinctly"
+    },
+    {
+      "lemma": "realize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "know.v.01",
+          "via_synset": "recognize.v.02"
+        }
+      ],
+      "definition": "be fully aware or cognizant of"
+    },
+    {
+      "lemma": "reckon",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "interpret.v.01",
+          "via_synset": "see.v.05"
+        }
+      ],
+      "definition": "deem to be"
+    },
+    {
+      "lemma": "recognise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "know.v.01",
+          "via_synset": "recognize.v.02"
+        }
+      ],
+      "definition": "be fully aware or cognizant of"
+    },
+    {
+      "lemma": "recognize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "know.v.01",
+          "via_synset": "recognize.v.02"
+        }
+      ],
+      "definition": "be fully aware or cognizant of"
+    },
+    {
+      "lemma": "redolent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mindful.a.01",
+          "via_synset": "evocative.s.01"
+        }
+      ],
+      "definition": "serving to bring to mind; - Wilder Hobson"
+    },
+    {
+      "lemma": "regard",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "interpret.v.01",
+          "via_synset": "see.v.05"
+        }
+      ],
+      "definition": "deem to be"
+    },
+    {
+      "lemma": "reinterpret",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "reinterpret.v.02"
+        }
+      ],
+      "definition": "assign a new or different meaning to"
+    },
+    {
+      "lemma": "reinterpretation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "reinterpret.v.02",
+          "via_synset": "reinterpretation.n.01"
+        }
+      ],
+      "definition": "a new or different meaning"
+    },
+    {
+      "lemma": "remindful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mindful.a.01",
+          "via_synset": "evocative.s.01"
+        }
+      ],
+      "definition": "serving to bring to mind; - Wilder Hobson"
+    },
+    {
+      "lemma": "reminiscent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mindful.a.01",
+          "via_synset": "evocative.s.01"
+        }
+      ],
+      "definition": "serving to bring to mind; - Wilder Hobson"
+    },
+    {
+      "lemma": "reread",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "read.v.01",
+          "via_synset": "reread.v.01"
+        }
+      ],
+      "definition": "read anew; read again"
+    },
+    {
+      "lemma": "resolve",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "solve.v.01",
+          "via_synset": "answer.v.04"
+        }
+      ],
+      "definition": "understand the meaning of"
+    },
+    {
+      "lemma": "resonant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "mindful.a.01",
+          "via_synset": "evocative.s.01"
+        }
+      ],
+      "definition": "serving to bring to mind; - Wilder Hobson"
+    },
+    {
+      "lemma": "riddle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "solve.v.01",
+          "via_synset": "riddle.v.06"
+        }
+      ],
+      "definition": "explain a riddle"
+    },
+    {
+      "lemma": "savvy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "grok.v.01",
+          "via_synset": "understanding.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "understanding.n.01"
+        }
+      ],
+      "definition": "the cognitive condition of someone who understands"
+    },
+    {
+      "lemma": "savvy",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "grok.v.01"
+        }
+      ],
+      "definition": "get the meaning of something"
+    },
+    {
+      "lemma": "say",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "read.v.01",
+          "via_synset": "read.v.02"
+        }
+      ],
+      "definition": "have or contain a certain wording or form"
+    },
+    {
+      "lemma": "scan",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "read.v.04"
+        }
+      ],
+      "definition": "obtain data from magnetic tapes"
+    },
+    {
+      "lemma": "see",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "interpret.v.01"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "interpret.v.01",
+          "via_synset": "see.v.05"
+        }
+      ],
+      "definition": "make sense of; assign a meaning to"
+    },
+    {
+      "lemma": "sense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sense.v.04",
+          "via_synset": "common_sense.n.01"
+        }
+      ],
+      "definition": "sound practical judgment"
+    },
+    {
+      "lemma": "sense",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "sense.v.04"
+        }
+      ],
+      "definition": "comprehend"
+    },
+    {
+      "lemma": "sensible",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "aware.a.01",
+          "via_synset": "sensible.s.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "aware.a.01",
+          "via_synset": "sensible.a.02"
+        }
+      ],
+      "definition": "aware intuitively or intellectually of something sensed; ; - Henry Hallam; - Edmund Burke"
+    },
+    {
+      "lemma": "sensitive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sense.v.04",
+          "via_synset": "sensitive.a.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "aware.a.01",
+          "via_synset": "sensible.a.02"
+        }
+      ],
+      "definition": "being susceptible to the attitudes, feelings, or circumstances of others"
+    },
+    {
+      "lemma": "skim",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "read.v.01",
+          "via_synset": "skim.v.07"
+        }
+      ],
+      "definition": "read superficially"
+    },
+    {
+      "lemma": "skim over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "read.v.01",
+          "via_synset": "skim.v.07"
+        }
+      ],
+      "definition": "read superficially"
+    },
+    {
+      "lemma": "solution",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "solve.v.01",
+          "via_synset": "solution.n.05"
+        }
+      ],
+      "definition": "the successful action of solving a problem"
+    },
+    {
+      "lemma": "solve",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "solve.v.01"
+        }
+      ],
+      "definition": "find the solution to (a problem or question) or understand the meaning of"
+    },
+    {
+      "lemma": "solvent",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "solve.v.01",
+          "via_synset": "solution.n.02"
+        }
+      ],
+      "definition": "a statement that solves a problem or explains how to solve the problem"
+    },
+    {
+      "lemma": "solver",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "solve.v.01",
+          "via_synset": "problem_solver.n.01"
+        }
+      ],
+      "definition": "a thinker who focuses on the problem as stated and tries to synthesize information and knowledge to achieve a solution"
+    },
+    {
+      "lemma": "solving",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "solve.v.01",
+          "via_synset": "resolution.n.04"
+        }
+      ],
+      "definition": "finding a solution to a problem"
+    },
+    {
+      "lemma": "speech-read",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "read.v.01",
+          "via_synset": "lipread.v.01"
+        }
+      ],
+      "definition": "interpret by lipreading; of deaf people"
+    },
+    {
+      "lemma": "spiritualisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "spiritualize.v.01",
+          "via_synset": "spiritualization.n.01"
+        }
+      ],
+      "definition": "the act of making something spiritual; infusing it with spiritual content"
+    },
+    {
+      "lemma": "spiritualise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "spiritualize.v.01"
+        }
+      ],
+      "definition": "give a spiritual meaning to; read in a spiritual sense"
+    },
+    {
+      "lemma": "spiritualization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "spiritualize.v.01",
+          "via_synset": "spiritualization.n.01"
+        }
+      ],
+      "definition": "the act of making something spiritual; infusing it with spiritual content"
+    },
+    {
+      "lemma": "spiritualize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "spiritualize.v.01"
+        }
+      ],
+      "definition": "give a spiritual meaning to; read in a spiritual sense"
+    },
+    {
+      "lemma": "strike",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "solve.v.01",
+          "via_synset": "strike.v.21"
+        }
+      ],
+      "definition": "arrive at after reckoning, deliberating, and weighing"
+    },
+    {
+      "lemma": "take",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "interpret.v.01",
+          "via_synset": "take.v.06"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "read.v.10",
+          "via_synset": "take.v.06"
+        }
+      ],
+      "definition": "interpret something in a certain way; convey a particular meaning or impression"
+    },
+    {
+      "lemma": "tell",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "guess.v.04",
+          "via_synset": "tell.v.05"
+        }
+      ],
+      "definition": "discern or comprehend"
+    },
+    {
+      "lemma": "touch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "touch.v.13"
+        }
+      ],
+      "definition": "comprehend"
+    },
+    {
+      "lemma": "trace",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "read.v.01",
+          "via_synset": "decipher.v.02"
+        }
+      ],
+      "definition": "read with difficulty"
+    },
+    {
+      "lemma": "translate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "understand.v.03"
+        }
+      ],
+      "definition": "make sense of a language"
+    },
+    {
+      "lemma": "tumble",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "grok.v.01",
+          "via_synset": "catch_on.v.01"
+        }
+      ],
+      "definition": "understand, usually after some initial difficulty"
+    },
+    {
+      "lemma": "twig",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "grok.v.01",
+          "via_synset": "catch_on.v.01"
+        }
+      ],
+      "definition": "understand, usually after some initial difficulty"
+    },
+    {
+      "lemma": "understand",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "understand.v.01",
+          "via_synset": "understand.v.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "understand.v.03"
+        }
+      ],
+      "definition": "know and comprehend the nature or meaning of"
+    },
+    {
+      "lemma": "understandable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "understand.v.01",
+          "via_synset": "apprehensible.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "understand.v.03",
+          "via_synset": "apprehensible.s.01"
+        }
+      ],
+      "definition": "capable of being apprehended or understood"
+    },
+    {
+      "lemma": "understanding",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "understand.v.01",
+          "via_synset": "understanding.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "knowing.n.01",
+          "via_synset": "understanding.n.01"
+        }
+      ],
+      "definition": "the cognitive condition of someone who understands"
+    },
+    {
+      "lemma": "unmindful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "mindful.a.01",
+          "via_synset": "unmindful.a.01"
+        }
+      ],
+      "definition": "not mindful or attentive; - G.B.Shaw"
+    },
+    {
+      "lemma": "view",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "interpret.v.01",
+          "via_synset": "see.v.05"
+        }
+      ],
+      "definition": "deem to be"
+    },
+    {
+      "lemma": "witting",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "aware.a.01",
+          "via_synset": "witting.a.01"
+        }
+      ],
+      "definition": "aware or knowing"
+    },
+    {
+      "lemma": "work",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "solve.v.01"
+        }
+      ],
+      "definition": "find the solution to (a problem or question) or understand the meaning of"
+    },
+    {
+      "lemma": "work out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "understand.v.01",
+          "via_synset": "solve.v.01"
+        }
+      ],
+      "definition": "find the solution to (a problem or question) or understand the meaning of"
+    },
+    {
+      "lemma": "workable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "solve.v.01",
+          "via_synset": "feasible.s.01"
+        }
+      ],
+      "definition": "capable of being done with means at hand and circumstances as they are"
+    }
+  ]
+}

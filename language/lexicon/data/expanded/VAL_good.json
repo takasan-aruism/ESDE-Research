@@ -1,0 +1,1845 @@
+{
+  "atom_id": "VAL.good",
+  "category": "VAL",
+  "seed_count": 6,
+  "total_keys": 112,
+  "pos_counts": {
+    "n": 82,
+    "adj": 29,
+    "v": 1
+  },
+  "source_counts": {
+    "0_seed": 13,
+    "6_derivational": 30,
+    "7_similar_to": 10,
+    "8_also_see": 13,
+    "2_hypernym_d1": 3,
+    "3_hyponym_d1": 13,
+    "10_sibling": 32,
+    "4_hyponym_d2": 11,
+    "5_hyponym_d3": 15,
+    "9_antonym": 2
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 11,
+      "words": [
+        "good(n)",
+        "goodness(n)",
+        "good(adj)",
+        "just(adj)",
+        "upright(adj)",
+        "virtuous(adj)",
+        "pure(adj)",
+        "vestal(adj)",
+        "virgin(adj)",
+        "virginal(adj)",
+        "righteous(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 3,
+      "words": [
+        "morality(n)",
+        "advantage(n)",
+        "vantage(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 12,
+      "words": [
+        "virtue(n)",
+        "virtuousness(n)",
+        "moral excellence(n)",
+        "kindness(n)",
+        "benignity(n)",
+        "benignancy(n)",
+        "graciousness(n)",
+        "summum bonum(n)",
+        "saintliness(n)",
+        "beneficence(n)",
+        "common good(n)",
+        "commonweal(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 11,
+      "words": [
+        "benevolence(n)",
+        "loving-kindness(n)",
+        "generosity(n)",
+        "generousness(n)",
+        "consideration(n)",
+        "considerateness(n)",
+        "thoughtfulness(n)",
+        "grace(n)",
+        "grace of God(n)",
+        "free grace(n)",
+        "cardinal virtue(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 15,
+      "words": [
+        "charity(n)",
+        "brotherly love(n)",
+        "charitableness(n)",
+        "liberality(n)",
+        "liberalness(n)",
+        "unselfishness(n)",
+        "bounty(n)",
+        "bounteousness(n)",
+        "bigheartedness(n)",
+        "tact(n)",
+        "tactfulness(n)",
+        "attentiveness(n)",
+        "theological virtue(n)",
+        "supernatural virtue(n)",
+        "natural virtue(n)"
+      ]
+    },
+    {
+      "step": "6_derivational",
+      "added": 17,
+      "words": [
+        "justness(n)",
+        "uprightness(n)",
+        "kind(adj)",
+        "benign(adj)",
+        "gracious(adj)",
+        "consider(v)",
+        "considerate(adj)",
+        "thoughtful(adj)",
+        "righteousness(n)",
+        "generous(adj)",
+        "beneficent(adj)",
+        "pureness(n)",
+        "purity(n)",
+        "vestal(n)",
+        "virgin(n)",
+        "virginity(n)",
+        "saintly(adj)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 6,
+      "words": [
+        "sound(adj)",
+        "chaste(adj)",
+        "impeccable(adj)",
+        "impeccant(adj)",
+        "innocent(adj)",
+        "sinless(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 5,
+      "words": [
+        "moral(adj)",
+        "worthy(adj)",
+        "guiltless(adj)",
+        "clean-handed(adj)",
+        "pious(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 2,
+      "words": [
+        "evilness(n)",
+        "unrighteous(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 30,
+      "words": [
+        "chastity(n)",
+        "sexual morality(n)",
+        "rightness(n)",
+        "conscience(n)",
+        "superiority(n)",
+        "favorable position(n)",
+        "favourable position(n)",
+        "profit(n)",
+        "gain(n)",
+        "handicap(n)",
+        "lead(n)",
+        "leverage(n)",
+        "start(n)",
+        "head start(n)",
+        "pull(n)",
+        "clout(n)",
+        "favor(n)",
+        "favour(n)",
+        "preference(n)",
+        "privilege(n)",
+        "expedience(n)",
+        "expediency(n)",
+        "tax advantage(n)",
+        "favorableness(n)",
+        "favourableness(n)",
+        "advantageousness(n)",
+        "positivity(n)",
+        "positiveness(n)",
+        "profitableness(n)",
+        "homecourt advantage(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "advantage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "good.n.01",
+          "via_synset": "advantage.n.01"
+        }
+      ],
+      "definition": "the quality of having a superior or more favorable position"
+    },
+    {
+      "lemma": "advantageousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "favorableness.n.01"
+        }
+      ],
+      "definition": "the quality of being encouraging or promising of a successful outcome"
+    },
+    {
+      "lemma": "attentiveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consideration.n.04",
+          "via_synset": "attentiveness.n.02"
+        }
+      ],
+      "definition": "the trait of being considerate and thoughtful of others"
+    },
+    {
+      "lemma": "beneficence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "good.n.02",
+          "via_synset": "beneficence.n.02"
+        }
+      ],
+      "definition": "the quality of being kind or helpful or generous"
+    },
+    {
+      "lemma": "beneficent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "beneficence.n.02",
+          "via_synset": "beneficent.a.01"
+        }
+      ],
+      "definition": "doing or producing good"
+    },
+    {
+      "lemma": "benevolence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "kindness.n.01",
+          "via_synset": "benevolence.n.02"
+        }
+      ],
+      "definition": "an inclination to do kind or charitable acts"
+    },
+    {
+      "lemma": "benign",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "benignity.n.01",
+          "via_synset": "benign.s.01"
+        }
+      ],
+      "definition": "kindness of disposition or manner"
+    },
+    {
+      "lemma": "benignancy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "good.n.02",
+          "via_synset": "benignity.n.01"
+        }
+      ],
+      "definition": "the quality of being kind and gentle"
+    },
+    {
+      "lemma": "benignity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "good.n.02",
+          "via_synset": "benignity.n.01"
+        }
+      ],
+      "definition": "the quality of being kind and gentle"
+    },
+    {
+      "lemma": "bigheartedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "generosity.n.01",
+          "via_synset": "bigheartedness.n.01"
+        }
+      ],
+      "definition": "the quality of being kind and generous"
+    },
+    {
+      "lemma": "bounteousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "generosity.n.01",
+          "via_synset": "bounty.n.03"
+        }
+      ],
+      "definition": "generosity evidenced by a willingness to give freely"
+    },
+    {
+      "lemma": "bounty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "generosity.n.01",
+          "via_synset": "bounty.n.03"
+        }
+      ],
+      "definition": "generosity evidenced by a willingness to give freely"
+    },
+    {
+      "lemma": "brotherly love",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "benevolence.n.02",
+          "via_synset": "charity.n.02"
+        }
+      ],
+      "definition": "a kindly and lenient attitude toward people"
+    },
+    {
+      "lemma": "cardinal virtue",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "virtue.n.04",
+          "via_synset": "cardinal_virtue.n.01"
+        }
+      ],
+      "definition": "one of the seven preeminent virtues"
+    },
+    {
+      "lemma": "charitableness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "generosity.n.01",
+          "via_synset": "charitableness.n.01"
+        }
+      ],
+      "definition": "generosity as manifested by practicing charity (as for the poor or unfortunate)"
+    },
+    {
+      "lemma": "charity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "benevolence.n.02",
+          "via_synset": "charity.n.02"
+        }
+      ],
+      "definition": "a kindly and lenient attitude toward people"
+    },
+    {
+      "lemma": "chaste",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "pure.s.04",
+          "via_synset": "chaste.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "virtuous.a.01",
+          "via_synset": "chaste.a.01"
+        }
+      ],
+      "definition": "morally pure (especially not having experienced sexual intercourse)"
+    },
+    {
+      "lemma": "chastity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "morality.n.01",
+          "via_synset": "virtue.n.03"
+        }
+      ],
+      "definition": "morality with respect to sexual relations"
+    },
+    {
+      "lemma": "clean-handed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "righteous.a.01",
+          "via_synset": "innocent.a.01"
+        }
+      ],
+      "definition": "free from evil or guilt"
+    },
+    {
+      "lemma": "clout",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "pull.n.03"
+        }
+      ],
+      "definition": "special advantage or influence"
+    },
+    {
+      "lemma": "common good",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "good.n.01",
+          "via_synset": "common_good.n.01"
+        }
+      ],
+      "definition": "the good of a community"
+    },
+    {
+      "lemma": "commonweal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "good.n.01",
+          "via_synset": "common_good.n.01"
+        }
+      ],
+      "definition": "the good of a community"
+    },
+    {
+      "lemma": "conscience",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "morality.n.01",
+          "via_synset": "conscience.n.02"
+        }
+      ],
+      "definition": "conformity to one's own sense of right conduct"
+    },
+    {
+      "lemma": "consider",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consideration.n.04",
+          "via_synset": "consider.v.09"
+        }
+      ],
+      "definition": "regard or treat with consideration, respect, and esteem"
+    },
+    {
+      "lemma": "considerate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consideration.n.04",
+          "via_synset": "considerate.a.01"
+        }
+      ],
+      "definition": "showing concern for the rights and feelings of others"
+    },
+    {
+      "lemma": "considerateness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "kindness.n.01",
+          "via_synset": "consideration.n.04"
+        }
+      ],
+      "definition": "kind and considerate regard for others"
+    },
+    {
+      "lemma": "consideration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "kindness.n.01",
+          "via_synset": "consideration.n.04"
+        }
+      ],
+      "definition": "kind and considerate regard for others"
+    },
+    {
+      "lemma": "evilness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "good.n.02",
+          "via_synset": "evil.n.03"
+        }
+      ],
+      "definition": "the quality of being morally wrong in principle or practice"
+    },
+    {
+      "lemma": "expedience",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "expedience.n.01"
+        }
+      ],
+      "definition": "the quality of being suited to the end in view"
+    },
+    {
+      "lemma": "expediency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "expedience.n.01"
+        }
+      ],
+      "definition": "the quality of being suited to the end in view"
+    },
+    {
+      "lemma": "favor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "favor.n.02"
+        }
+      ],
+      "definition": "an advantage to the benefit of someone or something"
+    },
+    {
+      "lemma": "favorable position",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "superiority.n.02"
+        }
+      ],
+      "definition": "the quality of being at a competitive advantage"
+    },
+    {
+      "lemma": "favorableness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "favorableness.n.01"
+        }
+      ],
+      "definition": "the quality of being encouraging or promising of a successful outcome"
+    },
+    {
+      "lemma": "favour",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "favor.n.02"
+        }
+      ],
+      "definition": "an advantage to the benefit of someone or something"
+    },
+    {
+      "lemma": "favourable position",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "superiority.n.02"
+        }
+      ],
+      "definition": "the quality of being at a competitive advantage"
+    },
+    {
+      "lemma": "favourableness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "favorableness.n.01"
+        }
+      ],
+      "definition": "the quality of being encouraging or promising of a successful outcome"
+    },
+    {
+      "lemma": "free grace",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "beneficence.n.02",
+          "via_synset": "grace.n.07"
+        }
+      ],
+      "definition": "(Christian theology) the free and unmerited favor or beneficence of God"
+    },
+    {
+      "lemma": "gain",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "profit.n.02"
+        }
+      ],
+      "definition": "the advantageous quality of being beneficial"
+    },
+    {
+      "lemma": "generosity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "kindness.n.01",
+          "via_synset": "generosity.n.01"
+        }
+      ],
+      "definition": "the trait of being willing to give your money or time"
+    },
+    {
+      "lemma": "generous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "generosity.n.01",
+          "via_synset": "generous.a.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "generosity.n.01",
+          "via_synset": "generous.a.01"
+        }
+      ],
+      "definition": "not petty in character and mind"
+    },
+    {
+      "lemma": "generousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "kindness.n.01",
+          "via_synset": "generosity.n.01"
+        }
+      ],
+      "definition": "the trait of being willing to give your money or time"
+    },
+    {
+      "lemma": "good",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "good.s.05",
+          "via_synset": "good.s.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "good.n.02",
+          "via_synset": "good.s.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "good.n.02",
+          "via_synset": "estimable.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "good.n.02",
+          "via_synset": "good.a.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "righteous.a.01",
+          "via_synset": "good.s.05"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "righteous.a.01",
+          "via_synset": "good.a.03"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "virtuous.a.01",
+          "via_synset": "good.a.03"
+        }
+      ],
+      "definition": "of moral excellence"
+    },
+    {
+      "lemma": "good",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "good.n.02",
+          "via_synset": "good.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "good.n.01",
+          "via_synset": "good.n.01"
+        }
+      ],
+      "definition": "moral excellence or admirableness"
+    },
+    {
+      "lemma": "goodness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "good.n.02",
+          "via_synset": "good.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "good.s.05",
+          "via_synset": "good.n.02"
+        }
+      ],
+      "definition": "moral excellence or admirableness"
+    },
+    {
+      "lemma": "grace",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "beneficence.n.02",
+          "via_synset": "grace.n.07"
+        }
+      ],
+      "definition": "(Christian theology) the free and unmerited favor or beneficence of God"
+    },
+    {
+      "lemma": "grace of God",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "beneficence.n.02",
+          "via_synset": "grace.n.07"
+        }
+      ],
+      "definition": "(Christian theology) the free and unmerited favor or beneficence of God"
+    },
+    {
+      "lemma": "gracious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "benignity.n.01",
+          "via_synset": "gracious.s.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "benignity.n.01",
+          "via_synset": "benignant.s.01"
+        }
+      ],
+      "definition": "disposed to bestow favors"
+    },
+    {
+      "lemma": "graciousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "good.n.02",
+          "via_synset": "benignity.n.01"
+        }
+      ],
+      "definition": "the quality of being kind and gentle"
+    },
+    {
+      "lemma": "guiltless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "righteous.a.01",
+          "via_synset": "innocent.a.01"
+        }
+      ],
+      "definition": "free from evil or guilt"
+    },
+    {
+      "lemma": "handicap",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "handicap.n.02"
+        }
+      ],
+      "definition": "advantage given to a competitor to equalize chances of winning"
+    },
+    {
+      "lemma": "head start",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "start.n.08"
+        }
+      ],
+      "definition": "the advantage gained by beginning early (as in a race)"
+    },
+    {
+      "lemma": "homecourt advantage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "homecourt_advantage.n.01"
+        }
+      ],
+      "definition": "the advantage of playing on your home court in front of fans who are rooting for you"
+    },
+    {
+      "lemma": "impeccable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "virtuous.a.01",
+          "via_synset": "impeccable.s.02"
+        }
+      ],
+      "definition": "not capable of sin"
+    },
+    {
+      "lemma": "impeccant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "virtuous.a.01",
+          "via_synset": "impeccant.s.01"
+        }
+      ],
+      "definition": "free from sin"
+    },
+    {
+      "lemma": "innocent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "virtuous.a.01",
+          "via_synset": "impeccant.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "righteous.a.01",
+          "via_synset": "innocent.a.01"
+        }
+      ],
+      "definition": "free from sin"
+    },
+    {
+      "lemma": "just",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "good.s.05",
+          "via_synset": "good.s.05"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "righteous.a.01",
+          "via_synset": "good.s.05"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "righteous.a.01",
+          "via_synset": "just.a.01"
+        }
+      ],
+      "definition": "of moral excellence"
+    },
+    {
+      "lemma": "justness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "good.s.05",
+          "via_synset": "justness.n.01"
+        }
+      ],
+      "definition": "conformity with some esthetic standard of correctness or propriety"
+    },
+    {
+      "lemma": "kind",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "kindness.n.01",
+          "via_synset": "kind.a.01"
+        }
+      ],
+      "definition": "having or showing a tender and considerate and helpful nature; used especially of persons and their behavior"
+    },
+    {
+      "lemma": "kindness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "good.n.02",
+          "via_synset": "kindness.n.01"
+        }
+      ],
+      "definition": "the quality of being warmhearted and considerate and humane and sympathetic"
+    },
+    {
+      "lemma": "lead",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "lead.n.01"
+        }
+      ],
+      "definition": "an advantage held by a competitor in a race"
+    },
+    {
+      "lemma": "leverage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "leverage.n.02"
+        }
+      ],
+      "definition": "strategic advantage; power to act effectively"
+    },
+    {
+      "lemma": "liberality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "generosity.n.01",
+          "via_synset": "liberality.n.02"
+        }
+      ],
+      "definition": "the trait of being generous in behavior and temperament"
+    },
+    {
+      "lemma": "liberalness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "generosity.n.01",
+          "via_synset": "liberality.n.02"
+        }
+      ],
+      "definition": "the trait of being generous in behavior and temperament"
+    },
+    {
+      "lemma": "loving-kindness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "kindness.n.01",
+          "via_synset": "loving-kindness.n.01"
+        }
+      ],
+      "definition": "tender kindness motivated by a feeling of affection"
+    },
+    {
+      "lemma": "moral",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "righteous.a.01",
+          "via_synset": "moral.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "virtuous.a.01",
+          "via_synset": "moral.a.01"
+        }
+      ],
+      "definition": "concerned with principles of right and wrong or conforming to standards of behavior and character based on those principles"
+    },
+    {
+      "lemma": "moral excellence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "good.n.02",
+          "via_synset": "virtue.n.01"
+        }
+      ],
+      "definition": "the quality of doing what is right and avoiding what is wrong"
+    },
+    {
+      "lemma": "morality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "good.n.02",
+          "via_synset": "morality.n.01"
+        }
+      ],
+      "definition": "concern with the distinction between good and evil or right and wrong; right or good conduct"
+    },
+    {
+      "lemma": "natural virtue",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "cardinal_virtue.n.01",
+          "via_synset": "natural_virtue.n.01"
+        }
+      ],
+      "definition": "(scholasticism) one of the four virtues (prudence, justice, fortitude, and temperance) derived from nature"
+    },
+    {
+      "lemma": "pious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "virtuous.a.01",
+          "via_synset": "pious.a.01"
+        }
+      ],
+      "definition": "having or showing or expressing reverence for a deity"
+    },
+    {
+      "lemma": "positiveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "favorableness.n.01"
+        }
+      ],
+      "definition": "the quality of being encouraging or promising of a successful outcome"
+    },
+    {
+      "lemma": "positivity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "favorableness.n.01"
+        }
+      ],
+      "definition": "the quality of being encouraging or promising of a successful outcome"
+    },
+    {
+      "lemma": "preference",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "preference.n.04"
+        }
+      ],
+      "definition": "grant of favor or advantage to one over another (especially to a country or countries in matters of international trade, such as levying duties)"
+    },
+    {
+      "lemma": "privilege",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "privilege.n.01"
+        }
+      ],
+      "definition": "a special advantage or immunity or benefit not enjoyed by all"
+    },
+    {
+      "lemma": "profit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "profit.n.02"
+        }
+      ],
+      "definition": "the advantageous quality of being beneficial"
+    },
+    {
+      "lemma": "profitableness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "favorableness.n.01"
+        }
+      ],
+      "definition": "the quality of being encouraging or promising of a successful outcome"
+    },
+    {
+      "lemma": "pull",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "pull.n.03"
+        }
+      ],
+      "definition": "special advantage or influence"
+    },
+    {
+      "lemma": "pure",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pure.s.04",
+          "via_synset": "pure.s.04"
+        }
+      ],
+      "definition": "in a state of sexual virginity"
+    },
+    {
+      "lemma": "pureness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pure.s.04",
+          "via_synset": "purity.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pure.s.04",
+          "via_synset": "honor.n.04"
+        }
+      ],
+      "definition": "the state of being unsullied by sin or moral wrong; lacking a knowledge of evil"
+    },
+    {
+      "lemma": "purity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pure.s.04",
+          "via_synset": "honor.n.04"
+        }
+      ],
+      "definition": "a woman's virtue or chastity"
+    },
+    {
+      "lemma": "righteous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "righteous.a.01",
+          "via_synset": "righteous.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "good.s.05",
+          "via_synset": "righteous.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "virtuous.a.01",
+          "via_synset": "righteous.a.01"
+        }
+      ],
+      "definition": "characterized by or proceeding from accepted standards of morality or justice; - James 5:16"
+    },
+    {
+      "lemma": "righteousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "righteous.a.01",
+          "via_synset": "righteousness.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "morality.n.01",
+          "via_synset": "righteousness.n.01"
+        }
+      ],
+      "definition": "adhering to moral principles"
+    },
+    {
+      "lemma": "rightness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "morality.n.01",
+          "via_synset": "rightness.n.01"
+        }
+      ],
+      "definition": "according with conscience or morality"
+    },
+    {
+      "lemma": "saintliness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "good.n.02",
+          "via_synset": "saintliness.n.01"
+        }
+      ],
+      "definition": "the quality of resembling a saint"
+    },
+    {
+      "lemma": "saintly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "saintliness.n.01",
+          "via_synset": "angelic.s.01"
+        }
+      ],
+      "definition": "marked by utter benignity; resembling or befitting an angel or saint"
+    },
+    {
+      "lemma": "sexual morality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "morality.n.01",
+          "via_synset": "virtue.n.03"
+        }
+      ],
+      "definition": "morality with respect to sexual relations"
+    },
+    {
+      "lemma": "sinless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "virtuous.a.01",
+          "via_synset": "impeccant.s.01"
+        }
+      ],
+      "definition": "free from sin"
+    },
+    {
+      "lemma": "sound",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "righteous.a.01",
+          "via_synset": "sound.s.05"
+        }
+      ],
+      "definition": "free from moral defect"
+    },
+    {
+      "lemma": "start",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "start.n.08"
+        }
+      ],
+      "definition": "the advantage gained by beginning early (as in a race)"
+    },
+    {
+      "lemma": "summum bonum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "good.n.02",
+          "via_synset": "summum_bonum.n.01"
+        }
+      ],
+      "definition": "the supreme good in which all moral values are included or from which they are derived"
+    },
+    {
+      "lemma": "superiority",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "superiority.n.02"
+        }
+      ],
+      "definition": "the quality of being at a competitive advantage"
+    },
+    {
+      "lemma": "supernatural virtue",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "cardinal_virtue.n.01",
+          "via_synset": "theological_virtue.n.01"
+        }
+      ],
+      "definition": "according to Christian ethics: one of the three virtues (faith, hope, and charity) created by God to round out the natural virtues"
+    },
+    {
+      "lemma": "tact",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consideration.n.04",
+          "via_synset": "tact.n.01"
+        }
+      ],
+      "definition": "consideration in dealing with others and avoiding giving offense"
+    },
+    {
+      "lemma": "tactfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "consideration.n.04",
+          "via_synset": "tact.n.01"
+        }
+      ],
+      "definition": "consideration in dealing with others and avoiding giving offense"
+    },
+    {
+      "lemma": "tax advantage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "advantage.n.01",
+          "via_synset": "tax_advantage.n.01"
+        }
+      ],
+      "definition": "an advantage bestowed by legislation that reduces a tax on some preferred activity"
+    },
+    {
+      "lemma": "theological virtue",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "cardinal_virtue.n.01",
+          "via_synset": "theological_virtue.n.01"
+        }
+      ],
+      "definition": "according to Christian ethics: one of the three virtues (faith, hope, and charity) created by God to round out the natural virtues"
+    },
+    {
+      "lemma": "thoughtful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "consideration.n.04",
+          "via_synset": "thoughtful.s.03"
+        }
+      ],
+      "definition": "considerate of the feelings or well-being of others"
+    },
+    {
+      "lemma": "thoughtfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "kindness.n.01",
+          "via_synset": "consideration.n.04"
+        }
+      ],
+      "definition": "kind and considerate regard for others"
+    },
+    {
+      "lemma": "unrighteous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "righteous.a.01",
+          "via_synset": "unrighteous.a.01"
+        }
+      ],
+      "definition": "not righteous"
+    },
+    {
+      "lemma": "unselfishness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "5_hyponym_d3",
+          "relation": "hyponym",
+          "from_synset": "generosity.n.01",
+          "via_synset": "unselfishness.n.01"
+        }
+      ],
+      "definition": "the quality of not putting yourself first but being willing to give your time or money or effort etc. for others"
+    },
+    {
+      "lemma": "upright",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "good.s.05",
+          "via_synset": "good.s.05"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "righteous.a.01",
+          "via_synset": "good.s.05"
+        }
+      ],
+      "definition": "of moral excellence"
+    },
+    {
+      "lemma": "uprightness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "good.s.05",
+          "via_synset": "uprightness.n.03"
+        }
+      ],
+      "definition": "righteousness as a consequence of being honorable and honest"
+    },
+    {
+      "lemma": "vantage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "good.n.01",
+          "via_synset": "advantage.n.01"
+        }
+      ],
+      "definition": "the quality of having a superior or more favorable position"
+    },
+    {
+      "lemma": "vestal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pure.s.04",
+          "via_synset": "pure.s.04"
+        }
+      ],
+      "definition": "in a state of sexual virginity"
+    },
+    {
+      "lemma": "vestal",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pure.s.04",
+          "via_synset": "vestal.n.01"
+        }
+      ],
+      "definition": "a chaste woman"
+    },
+    {
+      "lemma": "virgin",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pure.s.04",
+          "via_synset": "pure.s.04"
+        }
+      ],
+      "definition": "in a state of sexual virginity"
+    },
+    {
+      "lemma": "virgin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pure.s.04",
+          "via_synset": "virgin.n.01"
+        }
+      ],
+      "definition": "a person who has never had sex"
+    },
+    {
+      "lemma": "virginal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pure.s.04",
+          "via_synset": "pure.s.04"
+        }
+      ],
+      "definition": "in a state of sexual virginity"
+    },
+    {
+      "lemma": "virginity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pure.s.04",
+          "via_synset": "virginity.n.01"
+        }
+      ],
+      "definition": "the condition or quality of being a virgin"
+    },
+    {
+      "lemma": "virtue",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "good.n.02",
+          "via_synset": "virtue.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "good.n.02",
+          "via_synset": "virtue.n.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "pure.s.04",
+          "via_synset": "virtue.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "virtuous.a.01",
+          "via_synset": "virtue.n.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "virtuous.a.01",
+          "via_synset": "virtue.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "morality.n.01",
+          "via_synset": "virtue.n.03"
+        }
+      ],
+      "definition": "the quality of doing what is right and avoiding what is wrong"
+    },
+    {
+      "lemma": "virtuous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "virtuous.a.01",
+          "via_synset": "virtuous.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "pure.s.04",
+          "via_synset": "pure.s.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "virtue.n.04",
+          "via_synset": "virtuous.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "virtue.n.01",
+          "via_synset": "virtuous.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "righteous.a.01",
+          "via_synset": "virtuous.a.01"
+        }
+      ],
+      "definition": "morally excellent"
+    },
+    {
+      "lemma": "virtuousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "good.n.02",
+          "via_synset": "virtue.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "virtuous.a.01",
+          "via_synset": "virtue.n.01"
+        }
+      ],
+      "definition": "the quality of doing what is right and avoiding what is wrong"
+    },
+    {
+      "lemma": "worthy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "righteous.a.01",
+          "via_synset": "worthy.a.01"
+        }
+      ],
+      "definition": "having worth or merit or value; being honorable or admirable"
+    }
+  ]
+}

@@ -1,0 +1,1673 @@
+{
+  "atom_id": "PRP.fast",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 107,
+  "pos_counts": {
+    "adj": 41,
+    "n": 64,
+    "v": 2
+  },
+  "source_counts": {
+    "0_seed": 11,
+    "7_similar_to": 38,
+    "2_hypernym_d1": 3,
+    "3_hyponym_d1": 4,
+    "6_derivational": 17,
+    "8_also_see": 2,
+    "10_sibling": 46
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 10,
+      "words": [
+        "fast(adj)",
+        "fast(n)",
+        "fasting(n)",
+        "agile(adj)",
+        "nimble(adj)",
+        "quick(adj)",
+        "spry(adj)",
+        "quick(n)",
+        "rapid(adj)",
+        "speedy(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 3,
+      "words": [
+        "abstinence(n)",
+        "area(n)",
+        "region(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 4,
+      "words": [
+        "diet(n)",
+        "dieting(n)",
+        "hunger strike(n)",
+        "Ramadan(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 12,
+      "words": [
+        "fastness(n)",
+        "dietary(adj)",
+        "dietician(n)",
+        "diet(v)",
+        "rapidness(n)",
+        "rapidity(n)",
+        "speediness(n)",
+        "speed(n)",
+        "fast(v)",
+        "agility(n)",
+        "nimbleness(n)",
+        "quickness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 31,
+      "words": [
+        "allegro(adj)",
+        "andantino(adj)",
+        "vivace(adj)",
+        "presto(adj)",
+        "allegretto(adj)",
+        "prestissimo(adj)",
+        "meteoric(adj)",
+        "hurrying(adj)",
+        "scurrying(adj)",
+        "fast-paced(adj)",
+        "express(adj)",
+        "fast-breaking(adj)",
+        "alacritous(adj)",
+        "fleet(adj)",
+        "swift(adj)",
+        "immediate(adj)",
+        "prompt(adj)",
+        "straightaway(adj)",
+        "blistering(adj)",
+        "hot(adj)",
+        "red-hot(adj)",
+        "instantaneous(adj)",
+        "instant(adj)",
+        "double-quick(adj)",
+        "windy(adj)",
+        "smart(adj)",
+        "winged(adj)",
+        "accelerated(adj)",
+        "high-speed(adj)",
+        "high-velocity(adj)",
+        "active(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 2,
+      "words": [
+        "sudden(adj)",
+        "hurried(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 45,
+      "words": [
+        "chastity(n)",
+        "celibacy(n)",
+        "sexual abstention(n)",
+        "sobriety(n)",
+        "temperance(n)",
+        "teetotaling(n)",
+        "teetotalism(n)",
+        "sawm(n)",
+        "inhibition(n)",
+        "suppression(n)",
+        "pubes(n)",
+        "pubic region(n)",
+        "loins(n)",
+        "fovea(n)",
+        "fovea centralis(n)",
+        "groin(n)",
+        "inguen(n)",
+        "side(n)",
+        "middle(n)",
+        "midriff(n)",
+        "midsection(n)",
+        "cortical area(n)",
+        "cortical region(n)",
+        "hypochondrium(n)",
+        "thenar(n)",
+        "palm(n)",
+        "parafovea(n)",
+        "areola(n)",
+        "ring of color(n)",
+        "epigastrium(n)",
+        "perineum(n)",
+        "area of cardiac dullness(n)",
+        "erogenous zone(n)",
+        "waist(n)",
+        "waistline(n)",
+        "cleavage(n)",
+        "macula(n)",
+        "macula lutea(n)",
+        "macular area(n)",
+        "yellow spot(n)",
+        "half-moon(n)",
+        "lunula(n)",
+        "lunule(n)",
+        "sole(n)",
+        "pressure point(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "abstinence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "fast.n.01",
+          "via_synset": "abstinence.n.02"
+        }
+      ],
+      "definition": "act or practice of refraining from indulging an appetite"
+    },
+    {
+      "lemma": "accelerated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "accelerated.s.01"
+        }
+      ],
+      "definition": "speeded up, as of an academic course"
+    },
+    {
+      "lemma": "active",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "agile.s.01",
+          "via_synset": "active.a.05"
+        }
+      ],
+      "definition": "characterized by energetic activity"
+    },
+    {
+      "lemma": "agile",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "agile.s.01",
+          "via_synset": "agile.s.01"
+        }
+      ],
+      "definition": "moving quickly and lightly"
+    },
+    {
+      "lemma": "agility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "agile.s.01",
+          "via_synset": "agility.n.01"
+        }
+      ],
+      "definition": "the gracefulness of a person or animal that is quick and nimble"
+    },
+    {
+      "lemma": "alacritous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "alacritous.s.01"
+        }
+      ],
+      "definition": "quick and eager"
+    },
+    {
+      "lemma": "allegretto",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.03",
+          "via_synset": "allegretto.s.01"
+        }
+      ],
+      "definition": "(of tempo) faster than allegro"
+    },
+    {
+      "lemma": "allegro",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.03",
+          "via_synset": "allegro.s.01"
+        }
+      ],
+      "definition": "(of tempo) fast"
+    },
+    {
+      "lemma": "andantino",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.03",
+          "via_synset": "andantino.s.01"
+        }
+      ],
+      "definition": "(of tempo) moderately fast"
+    },
+    {
+      "lemma": "area",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "quick.n.01",
+          "via_synset": "area.n.03"
+        }
+      ],
+      "definition": "a part of an animal that has a special function or is supplied by a given artery or nerve"
+    },
+    {
+      "lemma": "area of cardiac dullness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "area_of_cardiac_dullness.n.01"
+        }
+      ],
+      "definition": "a triangular area of the front of the chest (determined by percussion); corresponds to the part of the heart not covered by the lungs"
+    },
+    {
+      "lemma": "areola",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "areola.n.02"
+        }
+      ],
+      "definition": "small circular area such as that around the human nipple or an inflamed area around a pimple or insect bite"
+    },
+    {
+      "lemma": "blistering",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "blistering.s.03"
+        }
+      ],
+      "definition": "very fast; capable of quick response and great speed"
+    },
+    {
+      "lemma": "celibacy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abstinence.n.02",
+          "via_synset": "chastity.n.01"
+        }
+      ],
+      "definition": "abstaining from sexual relations (as because of religious vows)"
+    },
+    {
+      "lemma": "chastity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abstinence.n.02",
+          "via_synset": "chastity.n.01"
+        }
+      ],
+      "definition": "abstaining from sexual relations (as because of religious vows)"
+    },
+    {
+      "lemma": "cleavage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "cleavage.n.04"
+        }
+      ],
+      "definition": "the line formed by a groove between two parts (especially the separation between a woman's breasts)"
+    },
+    {
+      "lemma": "cortical area",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "cortical_area.n.01"
+        }
+      ],
+      "definition": "any of various regions of the cerebral cortex"
+    },
+    {
+      "lemma": "cortical region",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "cortical_area.n.01"
+        }
+      ],
+      "definition": "any of various regions of the cerebral cortex"
+    },
+    {
+      "lemma": "diet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "fast.n.01",
+          "via_synset": "diet.n.04"
+        }
+      ],
+      "definition": "the act of restricting your food intake (or your intake of particular foods)"
+    },
+    {
+      "lemma": "diet",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "diet.n.04",
+          "via_synset": "diet.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "diet.n.04",
+          "via_synset": "diet.v.02"
+        }
+      ],
+      "definition": "follow a regimen or a diet, as for health reasons"
+    },
+    {
+      "lemma": "dietary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "diet.n.04",
+          "via_synset": "dietary.a.01"
+        }
+      ],
+      "definition": "of or relating to the diet"
+    },
+    {
+      "lemma": "dietician",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "diet.n.04",
+          "via_synset": "dietician.n.01"
+        }
+      ],
+      "definition": "a specialist in the study of nutrition"
+    },
+    {
+      "lemma": "dieting",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "fast.n.01",
+          "via_synset": "diet.n.04"
+        }
+      ],
+      "definition": "the act of restricting your food intake (or your intake of particular foods)"
+    },
+    {
+      "lemma": "double-quick",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "double-quick.s.01"
+        }
+      ],
+      "definition": "(of a marching cadence) very quick"
+    },
+    {
+      "lemma": "epigastrium",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "epigastrium.n.01"
+        }
+      ],
+      "definition": "the region lying on or over the stomach (just below the sternum)"
+    },
+    {
+      "lemma": "erogenous zone",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "erogenous_zone.n.01"
+        }
+      ],
+      "definition": "any area of the body especially sensitive to sexual stimulation"
+    },
+    {
+      "lemma": "express",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "express.s.02"
+        }
+      ],
+      "definition": "without unnecessary stops"
+    },
+    {
+      "lemma": "fast",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "fast.a.01",
+          "via_synset": "fast.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "fast.a.03",
+          "via_synset": "fast.a.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "rapid.s.02",
+          "via_synset": "fast.a.01"
+        }
+      ],
+      "definition": "acting or moving or capable of acting or moving quickly"
+    },
+    {
+      "lemma": "fast",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "fast.n.01",
+          "via_synset": "fast.n.01"
+        }
+      ],
+      "definition": "abstaining from food"
+    },
+    {
+      "lemma": "fast",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fast.n.01",
+          "via_synset": "fast.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fast.n.01",
+          "via_synset": "fast.v.01"
+        }
+      ],
+      "definition": "abstain from eating"
+    },
+    {
+      "lemma": "fast-breaking",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "fast-breaking.s.01"
+        }
+      ],
+      "definition": "occurring rapidly as a series of events in rapid succession"
+    },
+    {
+      "lemma": "fast-paced",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "fast-paced.s.01"
+        }
+      ],
+      "definition": "of communication that proceeds rapidly"
+    },
+    {
+      "lemma": "fasting",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "fast.n.01",
+          "via_synset": "fast.n.01"
+        }
+      ],
+      "definition": "abstaining from food"
+    },
+    {
+      "lemma": "fastness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fast.a.03",
+          "via_synset": "speed.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fast.a.01",
+          "via_synset": "speed.n.02"
+        }
+      ],
+      "definition": "a rate (usually rapid) at which something happens"
+    },
+    {
+      "lemma": "fleet",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "fleet.s.01"
+        }
+      ],
+      "definition": "moving very fast"
+    },
+    {
+      "lemma": "fovea",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "fovea.n.01"
+        }
+      ],
+      "definition": "area consisting of a small depression in the retina containing cones and where vision is most acute"
+    },
+    {
+      "lemma": "fovea centralis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "fovea.n.01"
+        }
+      ],
+      "definition": "area consisting of a small depression in the retina containing cones and where vision is most acute"
+    },
+    {
+      "lemma": "groin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "groin.n.01"
+        }
+      ],
+      "definition": "the crease at the junction of the inner part of the thigh with the trunk together with the adjacent region and often including the external genitals"
+    },
+    {
+      "lemma": "half-moon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "half-moon.n.01"
+        }
+      ],
+      "definition": "the crescent-shaped area at the base of the human fingernail"
+    },
+    {
+      "lemma": "high-speed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "high-speed.s.01"
+        }
+      ],
+      "definition": "operating at high speed"
+    },
+    {
+      "lemma": "high-velocity",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "high-speed.s.01"
+        }
+      ],
+      "definition": "operating at high speed"
+    },
+    {
+      "lemma": "hot",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "blistering.s.03"
+        }
+      ],
+      "definition": "very fast; capable of quick response and great speed"
+    },
+    {
+      "lemma": "hunger strike",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "fast.n.01",
+          "via_synset": "hunger_strike.n.01"
+        }
+      ],
+      "definition": "a voluntary fast undertaken as a means of protest"
+    },
+    {
+      "lemma": "hurried",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "fast.a.01",
+          "via_synset": "hurried.a.01"
+        }
+      ],
+      "definition": "moving rapidly or performed quickly or in great haste"
+    },
+    {
+      "lemma": "hurrying",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "hurrying.s.01"
+        }
+      ],
+      "definition": "moving with great haste"
+    },
+    {
+      "lemma": "hypochondrium",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "hypochondrium.n.01"
+        }
+      ],
+      "definition": "the upper region of the abdomen just below the lowest ribs on either side of the epigastrium"
+    },
+    {
+      "lemma": "immediate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "immediate.s.04"
+        }
+      ],
+      "definition": "performed with little or no delay"
+    },
+    {
+      "lemma": "inguen",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "groin.n.01"
+        }
+      ],
+      "definition": "the crease at the junction of the inner part of the thigh with the trunk together with the adjacent region and often including the external genitals"
+    },
+    {
+      "lemma": "inhibition",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abstinence.n.02",
+          "via_synset": "inhibition.n.01"
+        }
+      ],
+      "definition": "(psychology) the conscious exclusion of unacceptable thoughts or desires"
+    },
+    {
+      "lemma": "instant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "instantaneous.s.01"
+        }
+      ],
+      "definition": "occurring with no delay"
+    },
+    {
+      "lemma": "instantaneous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "instantaneous.s.01"
+        }
+      ],
+      "definition": "occurring with no delay"
+    },
+    {
+      "lemma": "loins",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "pubes.n.01"
+        }
+      ],
+      "definition": "the lower part of the abdomen just above the external genital organs"
+    },
+    {
+      "lemma": "lunula",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "half-moon.n.01"
+        }
+      ],
+      "definition": "the crescent-shaped area at the base of the human fingernail"
+    },
+    {
+      "lemma": "lunule",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "half-moon.n.01"
+        }
+      ],
+      "definition": "the crescent-shaped area at the base of the human fingernail"
+    },
+    {
+      "lemma": "macula",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "macula.n.02"
+        }
+      ],
+      "definition": "a small yellowish central area of the retina that is rich in cones and that mediates clear detailed vision"
+    },
+    {
+      "lemma": "macula lutea",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "macula.n.02"
+        }
+      ],
+      "definition": "a small yellowish central area of the retina that is rich in cones and that mediates clear detailed vision"
+    },
+    {
+      "lemma": "macular area",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "macula.n.02"
+        }
+      ],
+      "definition": "a small yellowish central area of the retina that is rich in cones and that mediates clear detailed vision"
+    },
+    {
+      "lemma": "meteoric",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "meteoric.s.01"
+        }
+      ],
+      "definition": "like a meteor in speed or brilliance or transience"
+    },
+    {
+      "lemma": "middle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "middle.n.03"
+        }
+      ],
+      "definition": "the middle area of the human torso (usually in front)"
+    },
+    {
+      "lemma": "midriff",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "middle.n.03"
+        }
+      ],
+      "definition": "the middle area of the human torso (usually in front)"
+    },
+    {
+      "lemma": "midsection",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "middle.n.03"
+        }
+      ],
+      "definition": "the middle area of the human torso (usually in front)"
+    },
+    {
+      "lemma": "nimble",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "agile.s.01",
+          "via_synset": "agile.s.01"
+        }
+      ],
+      "definition": "moving quickly and lightly"
+    },
+    {
+      "lemma": "nimbleness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "agile.s.01",
+          "via_synset": "agility.n.01"
+        }
+      ],
+      "definition": "the gracefulness of a person or animal that is quick and nimble"
+    },
+    {
+      "lemma": "palm",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "palm.n.01"
+        }
+      ],
+      "definition": "the inner surface of the hand from the wrist to the base of the fingers"
+    },
+    {
+      "lemma": "parafovea",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "parafovea.n.01"
+        }
+      ],
+      "definition": "area of the retina immediately surrounding the fovea"
+    },
+    {
+      "lemma": "perineum",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "perineum.n.01"
+        }
+      ],
+      "definition": "the general region between the anus and the genital organs"
+    },
+    {
+      "lemma": "pressure point",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "pressure_point.n.03"
+        }
+      ],
+      "definition": "an area on the skin that is highly sensitive to pressure"
+    },
+    {
+      "lemma": "prestissimo",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.03",
+          "via_synset": "prestissimo.s.01"
+        }
+      ],
+      "definition": "(of tempo) as fast as possible"
+    },
+    {
+      "lemma": "presto",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.03",
+          "via_synset": "presto.s.01"
+        }
+      ],
+      "definition": "(of tempo) very fast"
+    },
+    {
+      "lemma": "prompt",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "immediate.s.04"
+        }
+      ],
+      "definition": "performed with little or no delay"
+    },
+    {
+      "lemma": "pubes",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "pubes.n.01"
+        }
+      ],
+      "definition": "the lower part of the abdomen just above the external genital organs"
+    },
+    {
+      "lemma": "pubic region",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "pubes.n.01"
+        }
+      ],
+      "definition": "the lower part of the abdomen just above the external genital organs"
+    },
+    {
+      "lemma": "quick",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "agile.s.01",
+          "via_synset": "agile.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "immediate.s.04"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "quick.s.01"
+        }
+      ],
+      "definition": "moving quickly and lightly"
+    },
+    {
+      "lemma": "quick",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "quick.n.01",
+          "via_synset": "quick.n.01"
+        }
+      ],
+      "definition": "any area of the body that is highly sensitive to pain (as the flesh underneath the skin or a fingernail or toenail)"
+    },
+    {
+      "lemma": "quickness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "agile.s.01",
+          "via_synset": "adeptness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "agile.s.01",
+          "via_synset": "celerity.n.01"
+        }
+      ],
+      "definition": "skillful performance or ability without difficulty"
+    },
+    {
+      "lemma": "Ramadan",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "fast.n.01",
+          "via_synset": "ramadan.n.02"
+        }
+      ],
+      "definition": "(Islam) a fast (held from sunrise to sunset) that is carried out during the Islamic month of Ramadan"
+    },
+    {
+      "lemma": "rapid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "rapid.s.02",
+          "via_synset": "rapid.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "rapid.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "rapid.s.01"
+        }
+      ],
+      "definition": "characterized by speed; moving with or capable of moving with high speed"
+    },
+    {
+      "lemma": "rapidity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "rapid.s.02",
+          "via_synset": "celerity.n.01"
+        }
+      ],
+      "definition": "a rate that is rapid"
+    },
+    {
+      "lemma": "rapidness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "rapid.s.02",
+          "via_synset": "celerity.n.01"
+        }
+      ],
+      "definition": "a rate that is rapid"
+    },
+    {
+      "lemma": "red-hot",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "blistering.s.03"
+        }
+      ],
+      "definition": "very fast; capable of quick response and great speed"
+    },
+    {
+      "lemma": "region",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "quick.n.01",
+          "via_synset": "area.n.03"
+        }
+      ],
+      "definition": "a part of an animal that has a special function or is supplied by a given artery or nerve"
+    },
+    {
+      "lemma": "ring of color",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "areola.n.02"
+        }
+      ],
+      "definition": "small circular area such as that around the human nipple or an inflamed area around a pimple or insect bite"
+    },
+    {
+      "lemma": "sawm",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abstinence.n.02",
+          "via_synset": "sawm.n.01"
+        }
+      ],
+      "definition": "the third pillar of Islam is fasting (primarily during the month of Ramadan); Muslims abstain from food and drink and gambling and all sensuous pleasures from sunrise to sunset during Ramadan"
+    },
+    {
+      "lemma": "scurrying",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "hurrying.s.01"
+        }
+      ],
+      "definition": "moving with great haste"
+    },
+    {
+      "lemma": "sexual abstention",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abstinence.n.02",
+          "via_synset": "chastity.n.01"
+        }
+      ],
+      "definition": "abstaining from sexual relations (as because of religious vows)"
+    },
+    {
+      "lemma": "side",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "side.n.03"
+        }
+      ],
+      "definition": "either the left or right half of a body"
+    },
+    {
+      "lemma": "smart",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "smart.s.05"
+        }
+      ],
+      "definition": "quick and brisk"
+    },
+    {
+      "lemma": "sobriety",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abstinence.n.02",
+          "via_synset": "sobriety.n.04"
+        }
+      ],
+      "definition": "abstaining from excess"
+    },
+    {
+      "lemma": "sole",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "sole.n.03"
+        }
+      ],
+      "definition": "the underside of the foot"
+    },
+    {
+      "lemma": "speed",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "rapid.s.02",
+          "via_synset": "speed.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "rapid.s.02",
+          "via_synset": "speed.n.03"
+        }
+      ],
+      "definition": "distance travelled per unit time"
+    },
+    {
+      "lemma": "speediness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "rapid.s.02",
+          "via_synset": "celerity.n.01"
+        }
+      ],
+      "definition": "a rate that is rapid"
+    },
+    {
+      "lemma": "speedy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "rapid.s.02",
+          "via_synset": "rapid.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "rapid.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "quick.s.01"
+        }
+      ],
+      "definition": "characterized by speed; moving with or capable of moving with high speed"
+    },
+    {
+      "lemma": "spry",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "agile.s.01",
+          "via_synset": "agile.s.01"
+        }
+      ],
+      "definition": "moving quickly and lightly"
+    },
+    {
+      "lemma": "straightaway",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "immediate.s.04"
+        }
+      ],
+      "definition": "performed with little or no delay"
+    },
+    {
+      "lemma": "sudden",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "fast.a.01",
+          "via_synset": "sudden.a.01"
+        }
+      ],
+      "definition": "happening without warning or in a short space of time"
+    },
+    {
+      "lemma": "suppression",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abstinence.n.02",
+          "via_synset": "inhibition.n.01"
+        }
+      ],
+      "definition": "(psychology) the conscious exclusion of unacceptable thoughts or desires"
+    },
+    {
+      "lemma": "swift",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "fleet.s.01"
+        }
+      ],
+      "definition": "moving very fast"
+    },
+    {
+      "lemma": "teetotaling",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abstinence.n.02",
+          "via_synset": "teetotaling.n.01"
+        }
+      ],
+      "definition": "abstaining from alcohol"
+    },
+    {
+      "lemma": "teetotalism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abstinence.n.02",
+          "via_synset": "teetotaling.n.01"
+        }
+      ],
+      "definition": "abstaining from alcohol"
+    },
+    {
+      "lemma": "temperance",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "abstinence.n.02",
+          "via_synset": "sobriety.n.04"
+        }
+      ],
+      "definition": "abstaining from excess"
+    },
+    {
+      "lemma": "thenar",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "thenar.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "palm.n.01"
+        }
+      ],
+      "definition": "the fleshy area of the palm at the base of the thumb"
+    },
+    {
+      "lemma": "vivace",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.03",
+          "via_synset": "vivace.s.01"
+        }
+      ],
+      "definition": "(of tempo) very fast and lively"
+    },
+    {
+      "lemma": "waist",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "waist.n.01"
+        }
+      ],
+      "definition": "the narrowing of the body between the ribs and hips"
+    },
+    {
+      "lemma": "waistline",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "waist.n.01"
+        }
+      ],
+      "definition": "the narrowing of the body between the ribs and hips"
+    },
+    {
+      "lemma": "windy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "windy.s.03"
+        }
+      ],
+      "definition": "resembling the wind in speed, force, or variability"
+    },
+    {
+      "lemma": "winged",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "fast.a.01",
+          "via_synset": "winged.s.01"
+        }
+      ],
+      "definition": "very fast; as if with wings"
+    },
+    {
+      "lemma": "yellow spot",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "area.n.03",
+          "via_synset": "macula.n.02"
+        }
+      ],
+      "definition": "a small yellowish central area of the retina that is rich in cones and that mediates clear detailed vision"
+    }
+  ]
+}

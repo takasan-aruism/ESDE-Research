@@ -1,0 +1,837 @@
+{
+  "atom_id": "PER.sweet",
+  "category": "PER",
+  "seed_count": 6,
+  "total_keys": 46,
+  "pos_counts": {
+    "adj": 30,
+    "v": 11,
+    "n": 5
+  },
+  "source_counts": {
+    "0_seed": 18,
+    "7_similar_to": 19,
+    "8_also_see": 5,
+    "2_hypernym_d1": 4,
+    "6_derivational": 10,
+    "9_antonym": 1,
+    "10_sibling": 6
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 16,
+      "words": [
+        "sweet(adj)",
+        "angelic(adj)",
+        "angelical(adj)",
+        "cherubic(adj)",
+        "seraphic(adj)",
+        "odoriferous(adj)",
+        "odorous(adj)",
+        "perfumed(adj)",
+        "scented(adj)",
+        "sweet-scented(adj)",
+        "sweet-smelling(adj)",
+        "sugary(adj)",
+        "honey(v)",
+        "honeyed(adj)",
+        "honied(adj)",
+        "syrupy(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 4,
+      "words": [
+        "sweeten(v)",
+        "dulcify(v)",
+        "edulcorate(v)",
+        "dulcorate(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 5,
+      "words": [
+        "sweetness(n)",
+        "angel(n)",
+        "seraph(n)",
+        "honey(n)",
+        "sugariness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 13,
+      "words": [
+        "sweetish(adj)",
+        "cloying(adj)",
+        "saccharine(adj)",
+        "treacly(adj)",
+        "fragrant(adj)",
+        "lovable(adj)",
+        "loveable(adj)",
+        "honeylike(adj)",
+        "candied(adj)",
+        "sugar-coated(adj)",
+        "sugared(adj)",
+        "sweetened(adj)",
+        "sweet-flavored(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 1,
+      "words": [
+        "tasty(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "sugarless(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 6,
+      "words": [
+        "mull(v)",
+        "sugarcoat(v)",
+        "glaze(v)",
+        "candy(v)",
+        "sugar(v)",
+        "saccharify(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "angel",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "angelic.s.02",
+          "via_synset": "saint.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "angelic.s.02",
+          "via_synset": "angel.n.01"
+        }
+      ],
+      "definition": "person of exceptional holiness"
+    },
+    {
+      "lemma": "angelic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "angelic.s.02",
+          "via_synset": "angelic.s.02"
+        }
+      ],
+      "definition": "having a sweet nature befitting an angel or cherub"
+    },
+    {
+      "lemma": "angelical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "angelic.s.02",
+          "via_synset": "angelic.s.02"
+        }
+      ],
+      "definition": "having a sweet nature befitting an angel or cherub"
+    },
+    {
+      "lemma": "candied",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sugary.a.01",
+          "via_synset": "candied.s.01"
+        }
+      ],
+      "definition": "encrusted with sugar or syrup"
+    },
+    {
+      "lemma": "candy",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sweeten.v.01",
+          "via_synset": "sugarcoat.v.01"
+        }
+      ],
+      "definition": "coat with something sweet, such as a hard sugar glaze"
+    },
+    {
+      "lemma": "cherubic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "angelic.s.02",
+          "via_synset": "angelic.s.02"
+        }
+      ],
+      "definition": "having a sweet nature befitting an angel or cherub"
+    },
+    {
+      "lemma": "cloying",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sweet.a.01",
+          "via_synset": "cloying.s.01"
+        }
+      ],
+      "definition": "overly sweet"
+    },
+    {
+      "lemma": "dulcify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "honey.v.01",
+          "via_synset": "sweeten.v.01"
+        }
+      ],
+      "definition": "make sweeter in taste"
+    },
+    {
+      "lemma": "dulcorate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "honey.v.01",
+          "via_synset": "sweeten.v.01"
+        }
+      ],
+      "definition": "make sweeter in taste"
+    },
+    {
+      "lemma": "edulcorate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "honey.v.01",
+          "via_synset": "sweeten.v.01"
+        }
+      ],
+      "definition": "make sweeter in taste"
+    },
+    {
+      "lemma": "fragrant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "odoriferous.s.03",
+          "via_synset": "fragrant.a.01"
+        }
+      ],
+      "definition": "pleasant-smelling"
+    },
+    {
+      "lemma": "glaze",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sweeten.v.01",
+          "via_synset": "sugarcoat.v.01"
+        }
+      ],
+      "definition": "coat with something sweet, such as a hard sugar glaze"
+    },
+    {
+      "lemma": "honey",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "honey.v.01",
+          "via_synset": "honey.n.01"
+        }
+      ],
+      "definition": "a sweet yellow liquid produced by bees"
+    },
+    {
+      "lemma": "honey",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "honey.v.01",
+          "via_synset": "honey.v.01"
+        }
+      ],
+      "definition": "sweeten with honey"
+    },
+    {
+      "lemma": "honeyed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "honeyed.s.01",
+          "via_synset": "honeyed.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sugary.a.01",
+          "via_synset": "honeyed.s.01"
+        }
+      ],
+      "definition": "with honey added"
+    },
+    {
+      "lemma": "honeylike",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sugary.a.01",
+          "via_synset": "honeylike.s.01"
+        }
+      ],
+      "definition": "resembling honey"
+    },
+    {
+      "lemma": "honied",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "honeyed.s.01",
+          "via_synset": "honeyed.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sugary.a.01",
+          "via_synset": "honeyed.s.01"
+        }
+      ],
+      "definition": "with honey added"
+    },
+    {
+      "lemma": "lovable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "angelic.s.02",
+          "via_synset": "lovable.a.01"
+        }
+      ],
+      "definition": "having characteristics that attract love or affection"
+    },
+    {
+      "lemma": "loveable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "angelic.s.02",
+          "via_synset": "lovable.a.01"
+        }
+      ],
+      "definition": "having characteristics that attract love or affection"
+    },
+    {
+      "lemma": "mull",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sweeten.v.01",
+          "via_synset": "mull.v.02"
+        }
+      ],
+      "definition": "heat with sugar and spices to make a hot drink"
+    },
+    {
+      "lemma": "odoriferous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "odoriferous.s.03",
+          "via_synset": "odoriferous.s.03"
+        }
+      ],
+      "definition": "having a natural fragrance"
+    },
+    {
+      "lemma": "odorous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "odoriferous.s.03",
+          "via_synset": "odoriferous.s.03"
+        }
+      ],
+      "definition": "having a natural fragrance"
+    },
+    {
+      "lemma": "perfumed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "odoriferous.s.03",
+          "via_synset": "odoriferous.s.03"
+        }
+      ],
+      "definition": "having a natural fragrance"
+    },
+    {
+      "lemma": "saccharify",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sweeten.v.01",
+          "via_synset": "sugar.v.01"
+        }
+      ],
+      "definition": "sweeten with sugar"
+    },
+    {
+      "lemma": "saccharine",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sweet.a.01",
+          "via_synset": "cloying.s.01"
+        }
+      ],
+      "definition": "overly sweet"
+    },
+    {
+      "lemma": "scented",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "odoriferous.s.03",
+          "via_synset": "odoriferous.s.03"
+        }
+      ],
+      "definition": "having a natural fragrance"
+    },
+    {
+      "lemma": "seraph",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "angelic.s.02",
+          "via_synset": "seraph.n.01"
+        }
+      ],
+      "definition": "an angel of the first order; usually portrayed as the winged head of a child"
+    },
+    {
+      "lemma": "seraphic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "angelic.s.02",
+          "via_synset": "angelic.s.02"
+        }
+      ],
+      "definition": "having a sweet nature befitting an angel or cherub"
+    },
+    {
+      "lemma": "sugar",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sweeten.v.01",
+          "via_synset": "sugar.v.01"
+        }
+      ],
+      "definition": "sweeten with sugar"
+    },
+    {
+      "lemma": "sugar-coated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sugary.a.01",
+          "via_synset": "candied.s.01"
+        }
+      ],
+      "definition": "encrusted with sugar or syrup"
+    },
+    {
+      "lemma": "sugarcoat",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sweeten.v.01",
+          "via_synset": "sugarcoat.v.01"
+        }
+      ],
+      "definition": "coat with something sweet, such as a hard sugar glaze"
+    },
+    {
+      "lemma": "sugared",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sugary.a.01",
+          "via_synset": "sugared.s.01"
+        }
+      ],
+      "definition": "with sweetening added"
+    },
+    {
+      "lemma": "sugariness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sugary.a.01",
+          "via_synset": "sweet.n.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sugary.a.01",
+          "via_synset": "sugariness.n.02"
+        }
+      ],
+      "definition": "the taste experience when sugar dissolves in the mouth"
+    },
+    {
+      "lemma": "sugarless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "sugary.a.01",
+          "via_synset": "sugarless.a.01"
+        }
+      ],
+      "definition": "not containing sugar"
+    },
+    {
+      "lemma": "sugary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sugary.a.01",
+          "via_synset": "sugary.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "honeyed.s.01",
+          "via_synset": "sugary.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "sweet.a.01",
+          "via_synset": "sugary.a.01"
+        }
+      ],
+      "definition": "containing sugar"
+    },
+    {
+      "lemma": "sweet",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "sweet.a.01",
+          "via_synset": "sweet.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "angelic.s.02",
+          "via_synset": "angelic.s.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "odoriferous.s.03",
+          "via_synset": "odoriferous.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sugary.a.01",
+          "via_synset": "sugared.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "sweet.a.01",
+          "via_synset": "sweet.a.07"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "sugary.a.01",
+          "via_synset": "sweet.a.07"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "sugary.a.01",
+          "via_synset": "sweet.a.01"
+        }
+      ],
+      "definition": "having or denoting the characteristic taste of sugar"
+    },
+    {
+      "lemma": "sweet-flavored",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sugary.a.01",
+          "via_synset": "sugared.s.01"
+        }
+      ],
+      "definition": "with sweetening added"
+    },
+    {
+      "lemma": "sweet-scented",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "odoriferous.s.03",
+          "via_synset": "odoriferous.s.03"
+        }
+      ],
+      "definition": "having a natural fragrance"
+    },
+    {
+      "lemma": "sweet-smelling",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "odoriferous.s.03",
+          "via_synset": "odoriferous.s.03"
+        }
+      ],
+      "definition": "having a natural fragrance"
+    },
+    {
+      "lemma": "sweeten",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "honey.v.01",
+          "via_synset": "sweeten.v.01"
+        }
+      ],
+      "definition": "make sweeter in taste"
+    },
+    {
+      "lemma": "sweetened",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sugary.a.01",
+          "via_synset": "sugared.s.01"
+        }
+      ],
+      "definition": "with sweetening added"
+    },
+    {
+      "lemma": "sweetish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sweet.a.01",
+          "via_synset": "sweetish.s.01"
+        }
+      ],
+      "definition": "somewhat sweet"
+    },
+    {
+      "lemma": "sweetness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sweet.a.01",
+          "via_synset": "sweet.n.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "sweet.a.01",
+          "via_synset": "sweetness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "odoriferous.s.03",
+          "via_synset": "bouquet.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "angelic.s.02",
+          "via_synset": "pleasantness.n.02"
+        }
+      ],
+      "definition": "the taste experience when sugar dissolves in the mouth"
+    },
+    {
+      "lemma": "syrupy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "honeyed.s.01",
+          "via_synset": "honeyed.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sweet.a.01",
+          "via_synset": "cloying.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sugary.a.01",
+          "via_synset": "honeyed.s.01"
+        }
+      ],
+      "definition": "with honey added"
+    },
+    {
+      "lemma": "tasty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "sweet.a.01",
+          "via_synset": "tasty.a.01"
+        }
+      ],
+      "definition": "pleasing to the sense of taste"
+    },
+    {
+      "lemma": "treacly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "sweet.a.01",
+          "via_synset": "cloying.s.01"
+        }
+      ],
+      "definition": "overly sweet"
+    }
+  ]
+}

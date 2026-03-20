@@ -1,0 +1,575 @@
+{
+  "atom_id": "PRP.easy",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 31,
+  "pos_counts": {
+    "adj": 18,
+    "adv": 6,
+    "n": 7
+  },
+  "source_counts": {
+    "0_seed": 16,
+    "7_similar_to": 9,
+    "8_also_see": 4,
+    "6_derivational": 9,
+    "9_antonym": 2
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 14,
+      "words": [
+        "easy(adj)",
+        "easygoing(adj)",
+        "leisurely(adj)",
+        "slowly(adv)",
+        "slow(adv)",
+        "easy(adv)",
+        "tardily(adv)",
+        "soft(adv)",
+        "simple(adj)",
+        "elementary(adj)",
+        "uncomplicated(adj)",
+        "unproblematic(adj)",
+        "casual(adj)",
+        "effortless(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 7,
+      "words": [
+        "simpleness(n)",
+        "simplicity(n)",
+        "easiness(n)",
+        "leisure(n)",
+        "leisureliness(n)",
+        "casualness(n)",
+        "effortlessness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 6,
+      "words": [
+        "simplex(adj)",
+        "simplistic(adj)",
+        "unsophisticated(adj)",
+        "unanalyzable(adj)",
+        "undecomposable(adj)",
+        "unhurried(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 2,
+      "words": [
+        "unsubdivided(adj)",
+        "plain(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 2,
+      "words": [
+        "quickly(adv)",
+        "complex(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "casual",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "casual.s.09",
+          "via_synset": "casual.s.09"
+        }
+      ],
+      "definition": "not showing effort or strain"
+    },
+    {
+      "lemma": "casualness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "casual.s.09",
+          "via_synset": "casualness.n.01"
+        }
+      ],
+      "definition": "a casual manner"
+    },
+    {
+      "lemma": "complex",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "simple.a.01",
+          "via_synset": "complex.a.01"
+        }
+      ],
+      "definition": "complicated in structure; consisting of interconnected parts"
+    },
+    {
+      "lemma": "easiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "easy.s.01",
+          "via_synset": "ease.n.01"
+        }
+      ],
+      "definition": "freedom from difficulty or hardship or effort"
+    },
+    {
+      "lemma": "easy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "easy.s.01",
+          "via_synset": "easy.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "elementary.s.01",
+          "via_synset": "easy.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "casual.s.09",
+          "via_synset": "easy.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "simple.a.01",
+          "via_synset": "easy.a.01"
+        }
+      ],
+      "definition": "not hurried or forced"
+    },
+    {
+      "lemma": "easy",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "slowly.r.01",
+          "via_synset": "slowly.r.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "easy.r.03",
+          "via_synset": "easy.r.03"
+        }
+      ],
+      "definition": "without speed (`slow' is sometimes used informally for `slowly')"
+    },
+    {
+      "lemma": "easygoing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "easy.s.01",
+          "via_synset": "easy.s.01"
+        }
+      ],
+      "definition": "not hurried or forced"
+    },
+    {
+      "lemma": "effortless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "casual.s.09",
+          "via_synset": "casual.s.09"
+        }
+      ],
+      "definition": "not showing effort or strain"
+    },
+    {
+      "lemma": "effortlessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "casual.s.09",
+          "via_synset": "effortlessness.n.01"
+        }
+      ],
+      "definition": "the quality of requiring little effort"
+    },
+    {
+      "lemma": "elementary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "elementary.s.01",
+          "via_synset": "elementary.s.01"
+        }
+      ],
+      "definition": "easy and not involved or complicated"
+    },
+    {
+      "lemma": "leisure",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "easy.s.01",
+          "via_synset": "leisure.n.01"
+        }
+      ],
+      "definition": "time available for ease and relaxation"
+    },
+    {
+      "lemma": "leisureliness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "easy.s.01",
+          "via_synset": "leisureliness.n.01"
+        }
+      ],
+      "definition": "slowness by virtue of being leisurely"
+    },
+    {
+      "lemma": "leisurely",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "easy.s.01",
+          "via_synset": "easy.s.01"
+        }
+      ],
+      "definition": "not hurried or forced"
+    },
+    {
+      "lemma": "plain",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "simple.a.01",
+          "via_synset": "plain.a.02"
+        }
+      ],
+      "definition": "not elaborate or elaborated; simple"
+    },
+    {
+      "lemma": "quickly",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "slowly.r.01",
+          "via_synset": "quickly.r.01"
+        }
+      ],
+      "definition": "with rapid movements"
+    },
+    {
+      "lemma": "simple",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "simple.a.01",
+          "via_synset": "simple.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "elementary.s.01",
+          "via_synset": "elementary.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "simple.a.01",
+          "via_synset": "simple.a.06"
+        }
+      ],
+      "definition": "having few parts; not complex or complicated or involved"
+    },
+    {
+      "lemma": "simpleness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "simple.a.01",
+          "via_synset": "simplicity.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "elementary.s.01",
+          "via_synset": "ease.n.01"
+        }
+      ],
+      "definition": "the quality of being simple or uncompounded"
+    },
+    {
+      "lemma": "simplex",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "simple.a.01",
+          "via_synset": "simplex.s.02"
+        }
+      ],
+      "definition": "having only one part or element"
+    },
+    {
+      "lemma": "simplicity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "simple.a.01",
+          "via_synset": "simplicity.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "elementary.s.01",
+          "via_synset": "ease.n.01"
+        }
+      ],
+      "definition": "the quality of being simple or uncompounded"
+    },
+    {
+      "lemma": "simplistic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "simple.a.01",
+          "via_synset": "simplistic.s.01"
+        }
+      ],
+      "definition": "characterized by extreme and often misleading simplicity"
+    },
+    {
+      "lemma": "slow",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "slowly.r.01",
+          "via_synset": "slowly.r.01"
+        }
+      ],
+      "definition": "without speed (`slow' is sometimes used informally for `slowly')"
+    },
+    {
+      "lemma": "slowly",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "slowly.r.01",
+          "via_synset": "slowly.r.01"
+        }
+      ],
+      "definition": "without speed (`slow' is sometimes used informally for `slowly')"
+    },
+    {
+      "lemma": "soft",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "easy.r.03",
+          "via_synset": "easy.r.03"
+        }
+      ],
+      "definition": "in a relaxed manner; or without hardship;  (`soft' is nonstandard)"
+    },
+    {
+      "lemma": "tardily",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "slowly.r.01",
+          "via_synset": "slowly.r.01"
+        }
+      ],
+      "definition": "without speed (`slow' is sometimes used informally for `slowly')"
+    },
+    {
+      "lemma": "unanalyzable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "simple.a.01",
+          "via_synset": "unanalyzable.s.01"
+        }
+      ],
+      "definition": "representing the furthest possible extent of analysis or division into parts; - G.S.Brett; -M.R.Cohen"
+    },
+    {
+      "lemma": "uncomplicated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "elementary.s.01",
+          "via_synset": "elementary.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "simple.a.01",
+          "via_synset": "uncomplicated.s.01"
+        }
+      ],
+      "definition": "easy and not involved or complicated"
+    },
+    {
+      "lemma": "undecomposable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "simple.a.01",
+          "via_synset": "unanalyzable.s.01"
+        }
+      ],
+      "definition": "representing the furthest possible extent of analysis or division into parts; - G.S.Brett; -M.R.Cohen"
+    },
+    {
+      "lemma": "unhurried",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "easy.s.01",
+          "via_synset": "unhurried.a.01"
+        }
+      ],
+      "definition": "relaxed and leisurely; without hurry or haste"
+    },
+    {
+      "lemma": "unproblematic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "elementary.s.01",
+          "via_synset": "elementary.s.01"
+        }
+      ],
+      "definition": "easy and not involved or complicated"
+    },
+    {
+      "lemma": "unsophisticated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "simple.a.01",
+          "via_synset": "uncomplicated.s.01"
+        }
+      ],
+      "definition": "lacking complexity"
+    },
+    {
+      "lemma": "unsubdivided",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "simple.a.01",
+          "via_synset": "simple.a.06"
+        }
+      ],
+      "definition": "(botany) of leaf shapes; of leaves having no divisions or subdivisions"
+    }
+  ]
+}

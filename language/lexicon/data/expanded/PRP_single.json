@@ -1,0 +1,1722 @@
+{
+  "atom_id": "PRP.single",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 115,
+  "pos_counts": {
+    "adj": 21,
+    "n": 94
+  },
+  "source_counts": {
+    "0_seed": 17,
+    "7_similar_to": 8,
+    "2_hypernym_d1": 2,
+    "3_hyponym_d1": 3,
+    "4_hyponym_d2": 2,
+    "6_derivational": 2,
+    "8_also_see": 1,
+    "9_antonym": 2,
+    "10_sibling": 81
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 15,
+      "words": [
+        "single(adj)",
+        "unmarried(adj)",
+        "undivided(adj)",
+        "exclusive(adj)",
+        "one(adj)",
+        "ane(adj)",
+        "one(n)",
+        "ace(n)",
+        "single(n)",
+        "unity(n)",
+        "lone(adj)",
+        "lonesome(adj)",
+        "only(adj)",
+        "sole(adj)",
+        "solitary(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 2,
+      "words": [
+        "digit(n)",
+        "figure(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 3,
+      "words": [
+        "singleton(n)",
+        "monad(n)",
+        "monas(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 2,
+      "words": [
+        "mate(n)",
+        "fellow(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 2,
+      "words": [
+        "singleness(n)",
+        "lonesomeness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 7,
+      "words": [
+        "concentrated(adj)",
+        "cardinal(adj)",
+        "divorced(adj)",
+        "mateless(adj)",
+        "unwed(adj)",
+        "unwedded(adj)",
+        "widowed(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 1,
+      "words": [
+        "unmated(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 2,
+      "words": [
+        "double(adj)",
+        "married(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 81,
+      "words": [
+        "significant digit(n)",
+        "significant figure(n)",
+        "octal digit(n)",
+        "zero(n)",
+        "nought(n)",
+        "cipher(n)",
+        "cypher(n)",
+        "five(n)",
+        "cinque(n)",
+        "quint(n)",
+        "quintet(n)",
+        "fivesome(n)",
+        "quintuplet(n)",
+        "pentad(n)",
+        "fin(n)",
+        "Phoebe(n)",
+        "Little Phoebe(n)",
+        "binary digit(n)",
+        "seven(n)",
+        "VII(n)",
+        "sevener(n)",
+        "heptad(n)",
+        "septet(n)",
+        "septenary(n)",
+        "nine(n)",
+        "IX(n)",
+        "niner(n)",
+        "Nina from Carolina(n)",
+        "ennead(n)",
+        "eight(n)",
+        "VIII(n)",
+        "eighter(n)",
+        "eighter from Decatur(n)",
+        "octad(n)",
+        "ogdoad(n)",
+        "octonary(n)",
+        "octet(n)",
+        "decimal digit(n)",
+        "three(n)",
+        "III(n)",
+        "trio(n)",
+        "threesome(n)",
+        "tierce(n)",
+        "leash(n)",
+        "troika(n)",
+        "triad(n)",
+        "trine(n)",
+        "trinity(n)",
+        "ternary(n)",
+        "ternion(n)",
+        "triplet(n)",
+        "tercet(n)",
+        "terzetto(n)",
+        "trey(n)",
+        "deuce-ace(n)",
+        "six(n)",
+        "VI(n)",
+        "sixer(n)",
+        "sise(n)",
+        "Captain Hicks(n)",
+        "half a dozen(n)",
+        "sextet(n)",
+        "sestet(n)",
+        "sextuplet(n)",
+        "hexad(n)",
+        "two(n)",
+        "II(n)",
+        "deuce(n)",
+        "hexadecimal digit(n)",
+        "duodecimal digit(n)",
+        "four(n)",
+        "IV(n)",
+        "tetrad(n)",
+        "quatern(n)",
+        "quaternion(n)",
+        "quaternary(n)",
+        "quaternity(n)",
+        "quartet(n)",
+        "quadruplet(n)",
+        "foursome(n)",
+        "Little Joe(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "ace",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "one.n.01",
+          "via_synset": "one.n.01"
+        }
+      ],
+      "definition": "the smallest whole number or a numeral representing this number"
+    },
+    {
+      "lemma": "ane",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "one.s.01",
+          "via_synset": "one.s.01"
+        }
+      ],
+      "definition": "used of a single unit or thing; not two or more"
+    },
+    {
+      "lemma": "binary digit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "binary_digit.n.01"
+        }
+      ],
+      "definition": "either 0 or 1 in binary notation"
+    },
+    {
+      "lemma": "Captain Hicks",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "six.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of five and one"
+    },
+    {
+      "lemma": "cardinal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "one.s.01",
+          "via_synset": "cardinal.a.02"
+        }
+      ],
+      "definition": "being or denoting a numerical quantity but not order"
+    },
+    {
+      "lemma": "cinque",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "five.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of four and one"
+    },
+    {
+      "lemma": "cipher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "zero.n.02"
+        }
+      ],
+      "definition": "a mathematical element that when added to another number yields the same number"
+    },
+    {
+      "lemma": "concentrated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "single.s.03",
+          "via_synset": "concentrated.a.01"
+        }
+      ],
+      "definition": "gathered together or made less diffuse"
+    },
+    {
+      "lemma": "cypher",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "zero.n.02"
+        }
+      ],
+      "definition": "a mathematical element that when added to another number yields the same number"
+    },
+    {
+      "lemma": "decimal digit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "decimal_digit.n.01"
+        }
+      ],
+      "definition": "a digit from 0 to 9 in decimal notation"
+    },
+    {
+      "lemma": "deuce",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "two.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of one and one or a numeral representing this number"
+    },
+    {
+      "lemma": "deuce-ace",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "three.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of one and one and one"
+    },
+    {
+      "lemma": "digit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "one.n.01",
+          "via_synset": "digit.n.01"
+        }
+      ],
+      "definition": "one of the elements that collectively form a system of numeration"
+    },
+    {
+      "lemma": "divorced",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unmarried.a.01",
+          "via_synset": "divorced.s.01"
+        }
+      ],
+      "definition": "of someone whose marriage has been legally dissolved"
+    },
+    {
+      "lemma": "double",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "single.a.02",
+          "via_synset": "double.a.04"
+        }
+      ],
+      "definition": "used of flowers having more than the usual number of petals in crowded or overlapping arrangements"
+    },
+    {
+      "lemma": "duodecimal digit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "duodecimal_digit.n.01"
+        }
+      ],
+      "definition": "a digit from 0 to 11 in duodecimal notation"
+    },
+    {
+      "lemma": "eight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "eight.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of seven and one"
+    },
+    {
+      "lemma": "eighter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "eight.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of seven and one"
+    },
+    {
+      "lemma": "eighter from Decatur",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "eight.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of seven and one"
+    },
+    {
+      "lemma": "ennead",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "nine.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of eight and one"
+    },
+    {
+      "lemma": "exclusive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "single.s.03",
+          "via_synset": "single.s.03"
+        }
+      ],
+      "definition": "not divided among or brought to bear on more than one object or objective"
+    },
+    {
+      "lemma": "fellow",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "singleton.n.01",
+          "via_synset": "mate.n.06"
+        }
+      ],
+      "definition": "one of a pair"
+    },
+    {
+      "lemma": "figure",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "one.n.01",
+          "via_synset": "digit.n.01"
+        }
+      ],
+      "definition": "one of the elements that collectively form a system of numeration"
+    },
+    {
+      "lemma": "fin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "five.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of four and one"
+    },
+    {
+      "lemma": "five",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "five.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of four and one"
+    },
+    {
+      "lemma": "fivesome",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "five.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of four and one"
+    },
+    {
+      "lemma": "four",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "four.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of three and one"
+    },
+    {
+      "lemma": "foursome",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "four.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of three and one"
+    },
+    {
+      "lemma": "half a dozen",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "six.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of five and one"
+    },
+    {
+      "lemma": "heptad",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "seven.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of six and one"
+    },
+    {
+      "lemma": "hexad",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "six.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of five and one"
+    },
+    {
+      "lemma": "hexadecimal digit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "hexadecimal_digit.n.01"
+        }
+      ],
+      "definition": "a digit from 0 to 15 in hexadecimal notation"
+    },
+    {
+      "lemma": "II",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "two.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of one and one or a numeral representing this number"
+    },
+    {
+      "lemma": "III",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "three.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of one and one and one"
+    },
+    {
+      "lemma": "IV",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "four.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of three and one"
+    },
+    {
+      "lemma": "IX",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "nine.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of eight and one"
+    },
+    {
+      "lemma": "leash",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "three.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of one and one and one"
+    },
+    {
+      "lemma": "Little Joe",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "four.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of three and one"
+    },
+    {
+      "lemma": "Little Phoebe",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "five.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of four and one"
+    },
+    {
+      "lemma": "lone",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "lone.s.03",
+          "via_synset": "lone.s.03"
+        }
+      ],
+      "definition": "being the only one; single and isolated from others"
+    },
+    {
+      "lemma": "lonesome",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "lone.s.03",
+          "via_synset": "lone.s.03"
+        }
+      ],
+      "definition": "being the only one; single and isolated from others"
+    },
+    {
+      "lemma": "lonesomeness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "lone.s.03",
+          "via_synset": "aloneness.n.01"
+        }
+      ],
+      "definition": "a disposition toward being alone"
+    },
+    {
+      "lemma": "married",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "unmarried.a.01",
+          "via_synset": "married.a.01"
+        }
+      ],
+      "definition": "joined in matrimony"
+    },
+    {
+      "lemma": "mate",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "singleton.n.01",
+          "via_synset": "mate.n.06"
+        }
+      ],
+      "definition": "one of a pair"
+    },
+    {
+      "lemma": "mateless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unmarried.a.01",
+          "via_synset": "mateless.s.02"
+        }
+      ],
+      "definition": "of someone who has no marriage partner"
+    },
+    {
+      "lemma": "monad",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "one.n.01",
+          "via_synset": "monad.n.02"
+        }
+      ],
+      "definition": "a singular metaphysical entity from which material properties are said to derive"
+    },
+    {
+      "lemma": "monas",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "one.n.01",
+          "via_synset": "monad.n.02"
+        }
+      ],
+      "definition": "a singular metaphysical entity from which material properties are said to derive"
+    },
+    {
+      "lemma": "Nina from Carolina",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "nine.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of eight and one"
+    },
+    {
+      "lemma": "nine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "nine.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of eight and one"
+    },
+    {
+      "lemma": "niner",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "nine.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of eight and one"
+    },
+    {
+      "lemma": "nought",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "zero.n.02"
+        }
+      ],
+      "definition": "a mathematical element that when added to another number yields the same number"
+    },
+    {
+      "lemma": "octad",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "eight.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of seven and one"
+    },
+    {
+      "lemma": "octal digit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "octal_digit.n.01"
+        }
+      ],
+      "definition": "a digit from 0 to 7 in octal notation"
+    },
+    {
+      "lemma": "octet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "eight.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of seven and one"
+    },
+    {
+      "lemma": "octonary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "eight.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of seven and one"
+    },
+    {
+      "lemma": "ogdoad",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "eight.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of seven and one"
+    },
+    {
+      "lemma": "one",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "one.s.01",
+          "via_synset": "one.s.01"
+        }
+      ],
+      "definition": "used of a single unit or thing; not two or more"
+    },
+    {
+      "lemma": "one",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "one.n.01",
+          "via_synset": "one.n.01"
+        }
+      ],
+      "definition": "the smallest whole number or a numeral representing this number"
+    },
+    {
+      "lemma": "only",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "lone.s.03",
+          "via_synset": "lone.s.03"
+        }
+      ],
+      "definition": "being the only one; single and isolated from others"
+    },
+    {
+      "lemma": "pentad",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "five.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of four and one"
+    },
+    {
+      "lemma": "Phoebe",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "five.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of four and one"
+    },
+    {
+      "lemma": "quadruplet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "four.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of three and one"
+    },
+    {
+      "lemma": "quartet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "four.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of three and one"
+    },
+    {
+      "lemma": "quatern",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "four.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of three and one"
+    },
+    {
+      "lemma": "quaternary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "four.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of three and one"
+    },
+    {
+      "lemma": "quaternion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "four.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of three and one"
+    },
+    {
+      "lemma": "quaternity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "four.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of three and one"
+    },
+    {
+      "lemma": "quint",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "five.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of four and one"
+    },
+    {
+      "lemma": "quintet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "five.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of four and one"
+    },
+    {
+      "lemma": "quintuplet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "five.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of four and one"
+    },
+    {
+      "lemma": "septenary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "seven.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of six and one"
+    },
+    {
+      "lemma": "septet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "seven.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of six and one"
+    },
+    {
+      "lemma": "sestet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "six.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of five and one"
+    },
+    {
+      "lemma": "seven",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "seven.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of six and one"
+    },
+    {
+      "lemma": "sevener",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "seven.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of six and one"
+    },
+    {
+      "lemma": "sextet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "six.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of five and one"
+    },
+    {
+      "lemma": "sextuplet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "six.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of five and one"
+    },
+    {
+      "lemma": "significant digit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "significant_digit.n.01"
+        }
+      ],
+      "definition": "any digit of a number that is known with certainty; any digit of a number beginning with the leftmost non-zero digit and ending with the rightmost non-zero digit (or a zero considered to be the exact value)"
+    },
+    {
+      "lemma": "significant figure",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "significant_digit.n.01"
+        }
+      ],
+      "definition": "any digit of a number that is known with certainty; any digit of a number beginning with the leftmost non-zero digit and ending with the rightmost non-zero digit (or a zero considered to be the exact value)"
+    },
+    {
+      "lemma": "single",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "single.a.02",
+          "via_synset": "single.a.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unmarried.a.01",
+          "via_synset": "unmarried.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "single.s.03",
+          "via_synset": "single.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "lone.s.03",
+          "via_synset": "single.a.03"
+        }
+      ],
+      "definition": "used of flowers having usually only one row or whorl of petals"
+    },
+    {
+      "lemma": "single",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "one.n.01",
+          "via_synset": "one.n.01"
+        }
+      ],
+      "definition": "the smallest whole number or a numeral representing this number"
+    },
+    {
+      "lemma": "singleness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "single.s.03",
+          "via_synset": "singleness.n.02"
+        }
+      ],
+      "definition": "the quality of concentrating on one central objective"
+    },
+    {
+      "lemma": "singleton",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "one.n.01",
+          "via_synset": "singleton.n.01"
+        }
+      ],
+      "definition": "a single object (as distinguished from a pair)"
+    },
+    {
+      "lemma": "sise",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "six.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of five and one"
+    },
+    {
+      "lemma": "six",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "six.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of five and one"
+    },
+    {
+      "lemma": "sixer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "six.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of five and one"
+    },
+    {
+      "lemma": "sole",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "lone.s.03",
+          "via_synset": "lone.s.03"
+        }
+      ],
+      "definition": "being the only one; single and isolated from others"
+    },
+    {
+      "lemma": "solitary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "lone.s.03",
+          "via_synset": "lone.s.03"
+        }
+      ],
+      "definition": "being the only one; single and isolated from others"
+    },
+    {
+      "lemma": "tercet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "three.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of one and one and one"
+    },
+    {
+      "lemma": "ternary",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "three.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of one and one and one"
+    },
+    {
+      "lemma": "ternion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "three.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of one and one and one"
+    },
+    {
+      "lemma": "terzetto",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "three.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of one and one and one"
+    },
+    {
+      "lemma": "tetrad",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "four.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of three and one"
+    },
+    {
+      "lemma": "three",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "three.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of one and one and one"
+    },
+    {
+      "lemma": "threesome",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "three.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of one and one and one"
+    },
+    {
+      "lemma": "tierce",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "three.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of one and one and one"
+    },
+    {
+      "lemma": "trey",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "three.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of one and one and one"
+    },
+    {
+      "lemma": "triad",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "three.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of one and one and one"
+    },
+    {
+      "lemma": "trine",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "three.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of one and one and one"
+    },
+    {
+      "lemma": "trinity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "three.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of one and one and one"
+    },
+    {
+      "lemma": "trio",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "three.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of one and one and one"
+    },
+    {
+      "lemma": "triplet",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "three.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of one and one and one"
+    },
+    {
+      "lemma": "troika",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "three.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of one and one and one"
+    },
+    {
+      "lemma": "two",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "two.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of one and one or a numeral representing this number"
+    },
+    {
+      "lemma": "undivided",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "single.s.03",
+          "via_synset": "single.s.03"
+        }
+      ],
+      "definition": "not divided among or brought to bear on more than one object or objective"
+    },
+    {
+      "lemma": "unity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "one.n.01",
+          "via_synset": "one.n.01"
+        }
+      ],
+      "definition": "the smallest whole number or a numeral representing this number"
+    },
+    {
+      "lemma": "unmarried",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unmarried.a.01",
+          "via_synset": "unmarried.a.01"
+        }
+      ],
+      "definition": "not married or related to the unmarried state"
+    },
+    {
+      "lemma": "unmated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unmarried.a.01",
+          "via_synset": "unmated.a.01"
+        }
+      ],
+      "definition": "not mated sexually"
+    },
+    {
+      "lemma": "unwed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unmarried.a.01",
+          "via_synset": "unwed.s.01"
+        }
+      ],
+      "definition": "of someone who has not been married"
+    },
+    {
+      "lemma": "unwedded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unmarried.a.01",
+          "via_synset": "unwed.s.01"
+        }
+      ],
+      "definition": "of someone who has not been married"
+    },
+    {
+      "lemma": "VI",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "six.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of five and one"
+    },
+    {
+      "lemma": "VII",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "seven.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of six and one"
+    },
+    {
+      "lemma": "VIII",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "eight.n.01"
+        }
+      ],
+      "definition": "the cardinal number that is the sum of seven and one"
+    },
+    {
+      "lemma": "widowed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unmarried.a.01",
+          "via_synset": "widowed.s.01"
+        }
+      ],
+      "definition": "single because of death of the spouse"
+    },
+    {
+      "lemma": "zero",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "digit.n.01",
+          "via_synset": "zero.n.02"
+        }
+      ],
+      "definition": "a mathematical element that when added to another number yields the same number"
+    }
+  ]
+}

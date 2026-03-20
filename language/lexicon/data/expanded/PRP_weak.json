@@ -1,0 +1,1034 @@
+{
+  "atom_id": "PRP.weak",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 62,
+  "pos_counts": {
+    "adj": 36,
+    "n": 26
+  },
+  "source_counts": {
+    "0_seed": 15,
+    "7_similar_to": 28,
+    "2_hypernym_d1": 2,
+    "6_derivational": 9,
+    "8_also_see": 4,
+    "10_sibling": 17
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 11,
+      "words": [
+        "weak(adj)",
+        "decrepit(adj)",
+        "debile(adj)",
+        "feeble(adj)",
+        "infirm(adj)",
+        "rickety(adj)",
+        "sapless(adj)",
+        "weakly(adj)",
+        "lame(adj)",
+        "faint(adj)",
+        "frail(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 2,
+      "words": [
+        "weight unit(n)",
+        "weight(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 6,
+      "words": [
+        "debility(n)",
+        "feebleness(n)",
+        "infirmity(n)",
+        "weakness(n)",
+        "lameness(n)",
+        "faintness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 22,
+      "words": [
+        "frail(adj)",
+        "vulnerable(adj)",
+        "anemic(adj)",
+        "anaemic(adj)",
+        "jerry-built(adj)",
+        "shoddy(adj)",
+        "namby-pamby(adj)",
+        "gutless(adj)",
+        "spineless(adj)",
+        "wishy-washy(adj)",
+        "flimsy(adj)",
+        "adynamic(adj)",
+        "asthenic(adj)",
+        "debilitated(adj)",
+        "enervated(adj)",
+        "puny(adj)",
+        "weakened(adj)",
+        "pale(adj)",
+        "pallid(adj)",
+        "wan(adj)",
+        "sick(adj)",
+        "unskilled(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 4,
+      "words": [
+        "delicate(adj)",
+        "powerless(adj)",
+        "tender(adj)",
+        "untoughened(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 17,
+      "words": [
+        "obolus(n)",
+        "troy unit(n)",
+        "maund(n)",
+        "rotl(n)",
+        "picul(n)",
+        "apothecaries' unit(n)",
+        "apothecaries' weight(n)",
+        "welterweight(n)",
+        "pood(n)",
+        "tael(n)",
+        "tod(n)",
+        "oka(n)",
+        "last(n)",
+        "arroba(n)",
+        "catty(n)",
+        "cattie(n)",
+        "crith(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "adynamic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "adynamic.s.01"
+        }
+      ],
+      "definition": "lacking strength or vigor"
+    },
+    {
+      "lemma": "anaemic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "anemic.s.01"
+        }
+      ],
+      "definition": "lacking vigor or energy"
+    },
+    {
+      "lemma": "anemic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "anemic.s.01"
+        }
+      ],
+      "definition": "lacking vigor or energy"
+    },
+    {
+      "lemma": "apothecaries' unit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "weight_unit.n.02",
+          "via_synset": "apothecaries'_unit.n.01"
+        }
+      ],
+      "definition": "any weight unit used in pharmacy; an ounce is equal to 480 grains and a pound is equal to 12 ounces"
+    },
+    {
+      "lemma": "apothecaries' weight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "weight_unit.n.02",
+          "via_synset": "apothecaries'_unit.n.01"
+        }
+      ],
+      "definition": "any weight unit used in pharmacy; an ounce is equal to 480 grains and a pound is equal to 12 ounces"
+    },
+    {
+      "lemma": "arroba",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "weight_unit.n.02",
+          "via_synset": "arroba.n.01"
+        }
+      ],
+      "definition": "a unit of weight used in some Spanish speaking countries"
+    },
+    {
+      "lemma": "asthenic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "adynamic.s.01"
+        }
+      ],
+      "definition": "lacking strength or vigor"
+    },
+    {
+      "lemma": "cattie",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "weight_unit.n.02",
+          "via_synset": "catty.n.01"
+        }
+      ],
+      "definition": "any of various units of weight used in southeastern Asia (especially a Chinese measure equal to 500 grams)"
+    },
+    {
+      "lemma": "catty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "weight_unit.n.02",
+          "via_synset": "catty.n.01"
+        }
+      ],
+      "definition": "any of various units of weight used in southeastern Asia (especially a Chinese measure equal to 500 grams)"
+    },
+    {
+      "lemma": "crith",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "weight_unit.n.02",
+          "via_synset": "crith.n.01"
+        }
+      ],
+      "definition": "the weight of a liter of hydrogen (at 0 centigrade and 760 millimeters pressure)"
+    },
+    {
+      "lemma": "debile",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "decrepit.s.02",
+          "via_synset": "decrepit.s.02"
+        }
+      ],
+      "definition": "lacking bodily or muscular strength or vitality"
+    },
+    {
+      "lemma": "debilitated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "adynamic.s.01"
+        }
+      ],
+      "definition": "lacking strength or vigor"
+    },
+    {
+      "lemma": "debility",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "decrepit.s.02",
+          "via_synset": "infirmity.n.01"
+        }
+      ],
+      "definition": "the state of being weak in health or body (especially from old age)"
+    },
+    {
+      "lemma": "decrepit",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "decrepit.s.02",
+          "via_synset": "decrepit.s.02"
+        }
+      ],
+      "definition": "lacking bodily or muscular strength or vitality"
+    },
+    {
+      "lemma": "delicate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "weak.a.01",
+          "via_synset": "delicate.a.01"
+        }
+      ],
+      "definition": "exquisitely fine and subtle and pleasing; susceptible to injury"
+    },
+    {
+      "lemma": "enervated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "adynamic.s.01"
+        }
+      ],
+      "definition": "lacking strength or vigor"
+    },
+    {
+      "lemma": "faint",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "faint.s.03",
+          "via_synset": "faint.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "faint.s.03"
+        }
+      ],
+      "definition": "lacking strength or vigor"
+    },
+    {
+      "lemma": "faintness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "faint.s.03",
+          "via_synset": "faintness.n.02"
+        }
+      ],
+      "definition": "the property of being without strength"
+    },
+    {
+      "lemma": "feeble",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "decrepit.s.02",
+          "via_synset": "decrepit.s.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "feeble.s.01",
+          "via_synset": "feeble.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "faint.s.03",
+          "via_synset": "faint.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "faint.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "feeble.s.01"
+        }
+      ],
+      "definition": "lacking bodily or muscular strength or vitality"
+    },
+    {
+      "lemma": "feebleness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "decrepit.s.02",
+          "via_synset": "infirmity.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "feeble.s.01",
+          "via_synset": "feebleness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "faint.s.03",
+          "via_synset": "feebleness.n.02"
+        }
+      ],
+      "definition": "the state of being weak in health or body (especially from old age)"
+    },
+    {
+      "lemma": "flimsy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "flimsy.s.01"
+        }
+      ],
+      "definition": "lacking solidity or strength"
+    },
+    {
+      "lemma": "frail",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "decrepit.s.02",
+          "via_synset": "frail.a.01"
+        }
+      ],
+      "definition": "physically weak"
+    },
+    {
+      "lemma": "frail",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "frail.n.01",
+          "via_synset": "frail.n.01"
+        }
+      ],
+      "definition": "the weight of a frail (basket) full of raisins or figs; between 50 and 75 pounds"
+    },
+    {
+      "lemma": "gutless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "namby-pamby.s.01"
+        }
+      ],
+      "definition": "weak in willpower, courage or vitality"
+    },
+    {
+      "lemma": "infirm",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "decrepit.s.02",
+          "via_synset": "decrepit.s.02"
+        }
+      ],
+      "definition": "lacking bodily or muscular strength or vitality"
+    },
+    {
+      "lemma": "infirmity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "decrepit.s.02",
+          "via_synset": "infirmity.n.01"
+        }
+      ],
+      "definition": "the state of being weak in health or body (especially from old age)"
+    },
+    {
+      "lemma": "jerry-built",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "jerry-built.s.01"
+        }
+      ],
+      "definition": "of inferior workmanship and materials"
+    },
+    {
+      "lemma": "lame",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "feeble.s.01",
+          "via_synset": "feeble.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "feeble.s.01"
+        }
+      ],
+      "definition": "pathetically lacking in force or effectiveness"
+    },
+    {
+      "lemma": "lameness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "feeble.s.01",
+          "via_synset": "lameness.n.02"
+        }
+      ],
+      "definition": "an imperfection or defectiveness"
+    },
+    {
+      "lemma": "last",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "weight_unit.n.02",
+          "via_synset": "last.n.05"
+        }
+      ],
+      "definition": "a unit of weight equal to 4,000 pounds"
+    },
+    {
+      "lemma": "maund",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "weight_unit.n.02",
+          "via_synset": "maund.n.01"
+        }
+      ],
+      "definition": "a unit of weight used in Asia; has different values in different countries"
+    },
+    {
+      "lemma": "namby-pamby",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "namby-pamby.s.01"
+        }
+      ],
+      "definition": "weak in willpower, courage or vitality"
+    },
+    {
+      "lemma": "obolus",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "weight_unit.n.02",
+          "via_synset": "obolus.n.01"
+        }
+      ],
+      "definition": "a Greek unit of weight equal to one tenth of a gram"
+    },
+    {
+      "lemma": "oka",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "weight_unit.n.02",
+          "via_synset": "oka.n.01"
+        }
+      ],
+      "definition": "a Turkish unit of weight equal to about 2.75 pounds"
+    },
+    {
+      "lemma": "pale",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "pale.s.02"
+        }
+      ],
+      "definition": "(of light) lacking in intensity or brightness; dim or feeble"
+    },
+    {
+      "lemma": "pallid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "pale.s.02"
+        }
+      ],
+      "definition": "(of light) lacking in intensity or brightness; dim or feeble"
+    },
+    {
+      "lemma": "picul",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "weight_unit.n.02",
+          "via_synset": "picul.n.01"
+        }
+      ],
+      "definition": "a unit of weight used in some parts of Asia; approximately equal to 133 pounds (the load a grown man can carry)"
+    },
+    {
+      "lemma": "pood",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "weight_unit.n.02",
+          "via_synset": "pood.n.01"
+        }
+      ],
+      "definition": "a Russian unit of weight equal to approximately 36 pounds"
+    },
+    {
+      "lemma": "powerless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "weak.a.01",
+          "via_synset": "powerless.a.01"
+        }
+      ],
+      "definition": "lacking power"
+    },
+    {
+      "lemma": "puny",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "puny.s.01"
+        }
+      ],
+      "definition": "inferior in strength or significance"
+    },
+    {
+      "lemma": "rickety",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "decrepit.s.02",
+          "via_synset": "decrepit.s.02"
+        }
+      ],
+      "definition": "lacking bodily or muscular strength or vitality"
+    },
+    {
+      "lemma": "rotl",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "weight_unit.n.02",
+          "via_synset": "rotl.n.01"
+        }
+      ],
+      "definition": "a unit of weight used in some Moslem countries near the Mediterranean; varies between one and five pounds"
+    },
+    {
+      "lemma": "sapless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "decrepit.s.02",
+          "via_synset": "decrepit.s.02"
+        }
+      ],
+      "definition": "lacking bodily or muscular strength or vitality"
+    },
+    {
+      "lemma": "shoddy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "jerry-built.s.01"
+        }
+      ],
+      "definition": "of inferior workmanship and materials"
+    },
+    {
+      "lemma": "sick",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "pale.s.02"
+        }
+      ],
+      "definition": "(of light) lacking in intensity or brightness; dim or feeble"
+    },
+    {
+      "lemma": "spineless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "namby-pamby.s.01"
+        }
+      ],
+      "definition": "weak in willpower, courage or vitality"
+    },
+    {
+      "lemma": "tael",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "weight_unit.n.02",
+          "via_synset": "tael.n.01"
+        }
+      ],
+      "definition": "a unit of weight used in east Asia approximately equal to 1.3 ounces"
+    },
+    {
+      "lemma": "tender",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "weak.a.01",
+          "via_synset": "tender.a.06"
+        }
+      ],
+      "definition": "physically untoughened"
+    },
+    {
+      "lemma": "tod",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "weight_unit.n.02",
+          "via_synset": "tod.n.01"
+        }
+      ],
+      "definition": "a unit of weight for wool equal to about 28 pounds"
+    },
+    {
+      "lemma": "troy unit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "weight_unit.n.02",
+          "via_synset": "troy_unit.n.01"
+        }
+      ],
+      "definition": "any of the unit of the troy system of weights"
+    },
+    {
+      "lemma": "unskilled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.s.05",
+          "via_synset": "unskilled.a.01"
+        }
+      ],
+      "definition": "not having or showing or requiring special skill or proficiency"
+    },
+    {
+      "lemma": "untoughened",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "weak.a.01",
+          "via_synset": "tender.a.06"
+        }
+      ],
+      "definition": "physically untoughened"
+    },
+    {
+      "lemma": "vulnerable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "vulnerable.s.02"
+        }
+      ],
+      "definition": "capable of being wounded or hurt"
+    },
+    {
+      "lemma": "wan",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "pale.s.02"
+        }
+      ],
+      "definition": "(of light) lacking in intensity or brightness; dim or feeble"
+    },
+    {
+      "lemma": "weak",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "weak.a.01",
+          "via_synset": "weak.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "weak.s.05",
+          "via_synset": "weak.s.05"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "decrepit.s.02",
+          "via_synset": "decrepit.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "feeble.s.01",
+          "via_synset": "weak.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "faint.s.03",
+          "via_synset": "weak.a.01"
+        }
+      ],
+      "definition": "wanting in physical strength"
+    },
+    {
+      "lemma": "weakened",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "weakened.s.02"
+        }
+      ],
+      "definition": "made weak or weaker"
+    },
+    {
+      "lemma": "weakly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "decrepit.s.02",
+          "via_synset": "decrepit.s.02"
+        }
+      ],
+      "definition": "lacking bodily or muscular strength or vitality"
+    },
+    {
+      "lemma": "weakness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "decrepit.s.02",
+          "via_synset": "weakness.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "weak.a.01",
+          "via_synset": "weakness.n.03"
+        }
+      ],
+      "definition": "the property of lacking physical or mental strength; liability to failure under pressure or stress or strain"
+    },
+    {
+      "lemma": "weight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "frail.n.01",
+          "via_synset": "weight_unit.n.02"
+        }
+      ],
+      "definition": "a unit used to measure weight"
+    },
+    {
+      "lemma": "weight unit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "frail.n.01",
+          "via_synset": "weight_unit.n.02"
+        }
+      ],
+      "definition": "a unit used to measure weight"
+    },
+    {
+      "lemma": "welterweight",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "weight_unit.n.02",
+          "via_synset": "welterweight.n.01"
+        }
+      ],
+      "definition": "a weight of 28 pounds; sometimes imposed as a handicap in a horse race (such as a steeplechase)"
+    },
+    {
+      "lemma": "wishy-washy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "weak.a.01",
+          "via_synset": "namby-pamby.s.01"
+        }
+      ],
+      "definition": "weak in willpower, courage or vitality"
+    }
+  ]
+}

@@ -1,0 +1,1905 @@
+{
+  "atom_id": "EMO.love",
+  "category": "EMO",
+  "seed_count": 6,
+  "total_keys": 116,
+  "pos_counts": {
+    "n": 85,
+    "v": 22,
+    "adj": 9
+  },
+  "source_counts": {
+    "0_seed": 12,
+    "10_sibling": 60,
+    "2_hypernym_d1": 8,
+    "6_derivational": 35,
+    "3_hyponym_d1": 28,
+    "4_hyponym_d2": 5
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 9,
+      "words": [
+        "love(n)",
+        "sexual love(n)",
+        "erotic love(n)",
+        "passion(n)",
+        "adore(v)",
+        "care for(v)",
+        "cherish(v)",
+        "hold dear(v)",
+        "treasure(v)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 7,
+      "words": [
+        "sexual desire(n)",
+        "eros(n)",
+        "concupiscence(n)",
+        "physical attraction(n)",
+        "emotion(n)",
+        "love(v)",
+        "like(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 27,
+      "words": [
+        "amorousness(n)",
+        "enamoredness(n)",
+        "filial love(n)",
+        "ardor(n)",
+        "ardour(n)",
+        "benevolence(n)",
+        "worship(n)",
+        "adoration(n)",
+        "lovingness(n)",
+        "caring(n)",
+        "agape(n)",
+        "heartstrings(n)",
+        "devotion(n)",
+        "devotedness(n)",
+        "agape love(n)",
+        "puppy love(n)",
+        "calf love(n)",
+        "crush(n)",
+        "infatuation(n)",
+        "loyalty(n)",
+        "fetishize(v)",
+        "idolize(v)",
+        "idolise(v)",
+        "worship(v)",
+        "hero-worship(v)",
+        "revere(v)",
+        "yearn(v)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 5,
+      "words": [
+        "beneficence(n)",
+        "warmheartedness(n)",
+        "warmth(n)",
+        "drool over(v)",
+        "slobber over(v)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 21,
+      "words": [
+        "loving(adj)",
+        "caring(adj)",
+        "care(v)",
+        "devoted(adj)",
+        "amorous(adj)",
+        "enamored(adj)",
+        "warmhearted(adj)",
+        "beneficent(adj)",
+        "fetish(n)",
+        "adorable(adj)",
+        "adorer(n)",
+        "infatuate(v)",
+        "idolization(n)",
+        "idolizer(n)",
+        "idol(n)",
+        "idolisation(n)",
+        "worshiper(n)",
+        "worshipper(n)",
+        "reverent(adj)",
+        "reverence(n)",
+        "treasure(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 47,
+      "words": [
+        "lecherousness(n)",
+        "lust(n)",
+        "lustfulness(n)",
+        "anaphrodisia(n)",
+        "nymphomania(n)",
+        "the hots(n)",
+        "libido(n)",
+        "eroticism(n)",
+        "erotism(n)",
+        "sexiness(n)",
+        "amativeness(n)",
+        "sensuality(n)",
+        "sensualness(n)",
+        "sensualism(n)",
+        "aphrodisia(n)",
+        "satyriasis(n)",
+        "conditioned emotional response(n)",
+        "CER(n)",
+        "conditioned emotion(n)",
+        "anger(n)",
+        "choler(n)",
+        "ire(n)",
+        "emotional state(n)",
+        "spirit(n)",
+        "fear(n)",
+        "fearfulness(n)",
+        "fright(n)",
+        "hatred(n)",
+        "joy(n)",
+        "joyousness(n)",
+        "joyfulness(n)",
+        "awe(n)",
+        "veneration(n)",
+        "anxiety(n)",
+        "execration(n)",
+        "center(n)",
+        "centre(n)",
+        "center of attention(n)",
+        "centre of attention(n)",
+        "bugbear(n)",
+        "hobgoblin(n)",
+        "antipathy(n)",
+        "hallucination(n)",
+        "dote(v)",
+        "cotton(v)",
+        "enjoy(v)",
+        "prefer(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "adorable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "adore.v.01",
+          "via_synset": "adorable.s.01"
+        }
+      ],
+      "definition": "lovable especially in a childlike or naive way"
+    },
+    {
+      "lemma": "adoration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "worship.n.02"
+        }
+      ],
+      "definition": "a feeling of profound love and admiration"
+    },
+    {
+      "lemma": "adore",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "adore.v.01",
+          "via_synset": "adore.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "love.v.01",
+          "via_synset": "adore.v.01"
+        }
+      ],
+      "definition": "love intensely"
+    },
+    {
+      "lemma": "adorer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "adore.v.01",
+          "via_synset": "admirer.n.03"
+        }
+      ],
+      "definition": "someone who admires a young woman"
+    },
+    {
+      "lemma": "agape",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "agape.n.01"
+        },
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "agape.n.02"
+        }
+      ],
+      "definition": "(Christian theology) the love of God or Christ for mankind"
+    },
+    {
+      "lemma": "agape love",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "agape.n.02"
+        }
+      ],
+      "definition": "selfless love of one person for another without sexual implications (especially love that is spiritual in nature)"
+    },
+    {
+      "lemma": "amativeness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sexual_desire.n.01",
+          "via_synset": "amorousness.n.02"
+        }
+      ],
+      "definition": "the arousal of feelings of sexual desire"
+    },
+    {
+      "lemma": "amorous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "amorousness.n.01",
+          "via_synset": "amative.s.01"
+        }
+      ],
+      "definition": "inclined toward or displaying love"
+    },
+    {
+      "lemma": "amorousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "amorousness.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sexual_desire.n.01",
+          "via_synset": "amorousness.n.02"
+        }
+      ],
+      "definition": "a feeling of love or fondness"
+    },
+    {
+      "lemma": "anaphrodisia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sexual_desire.n.01",
+          "via_synset": "anaphrodisia.n.01"
+        }
+      ],
+      "definition": "decline or absence of sexual desire"
+    },
+    {
+      "lemma": "anger",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "anger.n.01"
+        }
+      ],
+      "definition": "a strong emotion; a feeling that is oriented toward some real or supposed grievance"
+    },
+    {
+      "lemma": "antipathy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "object.n.04",
+          "via_synset": "antipathy.n.02"
+        }
+      ],
+      "definition": "the object of a feeling of intense aversion; something to be avoided"
+    },
+    {
+      "lemma": "anxiety",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "anxiety.n.02"
+        }
+      ],
+      "definition": "a vague unpleasant emotion that is experienced in anticipation of some (usually ill-defined) misfortune"
+    },
+    {
+      "lemma": "aphrodisia",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sexual_desire.n.01",
+          "via_synset": "aphrodisia.n.01"
+        }
+      ],
+      "definition": "a desire for heterosexual intimacy"
+    },
+    {
+      "lemma": "ardor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "ardor.n.02"
+        }
+      ],
+      "definition": "intense feeling of love"
+    },
+    {
+      "lemma": "ardour",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "ardor.n.02"
+        }
+      ],
+      "definition": "intense feeling of love"
+    },
+    {
+      "lemma": "awe",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "fear.n.03"
+        }
+      ],
+      "definition": "a feeling of profound respect for someone or something"
+    },
+    {
+      "lemma": "beneficence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "benevolence.n.01",
+          "via_synset": "beneficence.n.01"
+        }
+      ],
+      "definition": "doing good; feeling beneficent"
+    },
+    {
+      "lemma": "beneficent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "beneficence.n.01",
+          "via_synset": "beneficent.a.01"
+        }
+      ],
+      "definition": "doing or producing good"
+    },
+    {
+      "lemma": "benevolence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "benevolence.n.01"
+        }
+      ],
+      "definition": "disposition to do good"
+    },
+    {
+      "lemma": "bugbear",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "object.n.04",
+          "via_synset": "bugbear.n.02"
+        }
+      ],
+      "definition": "an object of dread or apprehension; ; --Ralph Waldo Emerson"
+    },
+    {
+      "lemma": "calf love",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "puppy_love.n.01"
+        }
+      ],
+      "definition": "temporary love of an adolescent"
+    },
+    {
+      "lemma": "care",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "lovingness.n.01",
+          "via_synset": "care.v.01"
+        }
+      ],
+      "definition": "feel concern or interest"
+    },
+    {
+      "lemma": "care for",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "care_for.v.02",
+          "via_synset": "care_for.v.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "care_for.v.01",
+          "via_synset": "care_for.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "love.v.01",
+          "via_synset": "care_for.v.02"
+        }
+      ],
+      "definition": "be fond of; be attached to"
+    },
+    {
+      "lemma": "caring",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "lovingness.n.01",
+          "via_synset": "caring.s.01"
+        }
+      ],
+      "definition": "feeling and exhibiting concern and empathy for others"
+    },
+    {
+      "lemma": "caring",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "lovingness.n.01"
+        }
+      ],
+      "definition": "a loving feeling"
+    },
+    {
+      "lemma": "center",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "object.n.04",
+          "via_synset": "center.n.06"
+        }
+      ],
+      "definition": "the object upon which interest and attention focuses"
+    },
+    {
+      "lemma": "center of attention",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "object.n.04",
+          "via_synset": "center.n.06"
+        }
+      ],
+      "definition": "the object upon which interest and attention focuses"
+    },
+    {
+      "lemma": "centre",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "object.n.04",
+          "via_synset": "center.n.06"
+        }
+      ],
+      "definition": "the object upon which interest and attention focuses"
+    },
+    {
+      "lemma": "centre of attention",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "object.n.04",
+          "via_synset": "center.n.06"
+        }
+      ],
+      "definition": "the object upon which interest and attention focuses"
+    },
+    {
+      "lemma": "CER",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "conditioned_emotional_response.n.01"
+        }
+      ],
+      "definition": "an emotional response that has been acquired by conditioning"
+    },
+    {
+      "lemma": "cherish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "care_for.v.02",
+          "via_synset": "care_for.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "love.v.01",
+          "via_synset": "care_for.v.02"
+        }
+      ],
+      "definition": "be fond of; be attached to"
+    },
+    {
+      "lemma": "choler",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "anger.n.01"
+        }
+      ],
+      "definition": "a strong emotion; a feeling that is oriented toward some real or supposed grievance"
+    },
+    {
+      "lemma": "concupiscence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "love.n.04",
+          "via_synset": "sexual_desire.n.01"
+        }
+      ],
+      "definition": "a desire for sexual intimacy"
+    },
+    {
+      "lemma": "conditioned emotion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "conditioned_emotional_response.n.01"
+        }
+      ],
+      "definition": "an emotional response that has been acquired by conditioning"
+    },
+    {
+      "lemma": "conditioned emotional response",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "conditioned_emotional_response.n.01"
+        }
+      ],
+      "definition": "an emotional response that has been acquired by conditioning"
+    },
+    {
+      "lemma": "cotton",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "like.v.02",
+          "via_synset": "cotton.v.01"
+        }
+      ],
+      "definition": "take a liking to"
+    },
+    {
+      "lemma": "crush",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "puppy_love.n.01"
+        }
+      ],
+      "definition": "temporary love of an adolescent"
+    },
+    {
+      "lemma": "devoted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "devotion.n.01",
+          "via_synset": "devoted.s.01"
+        }
+      ],
+      "definition": "zealous in devotion or affection"
+    },
+    {
+      "lemma": "devotedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "devotion.n.01"
+        }
+      ],
+      "definition": "feelings of ardent love"
+    },
+    {
+      "lemma": "devotion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "devotion.n.01"
+        }
+      ],
+      "definition": "feelings of ardent love"
+    },
+    {
+      "lemma": "dote",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "love.v.01",
+          "via_synset": "dote.v.02"
+        }
+      ],
+      "definition": "shower with love; show excessive affection for"
+    },
+    {
+      "lemma": "drool over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "idolize.v.01",
+          "via_synset": "drool_over.v.01"
+        }
+      ],
+      "definition": "envy without restraint"
+    },
+    {
+      "lemma": "emotion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "love.n.01",
+          "via_synset": "emotion.n.01"
+        }
+      ],
+      "definition": "any strong feeling"
+    },
+    {
+      "lemma": "emotional state",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "emotional_state.n.01"
+        }
+      ],
+      "definition": "the state of a person's emotions (especially with regard to pleasure or dejection)"
+    },
+    {
+      "lemma": "enamored",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "amorousness.n.01",
+          "via_synset": "enamored.s.01"
+        }
+      ],
+      "definition": "marked by foolish or unreasoning fondness"
+    },
+    {
+      "lemma": "enamoredness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "amorousness.n.01"
+        }
+      ],
+      "definition": "a feeling of love or fondness"
+    },
+    {
+      "lemma": "enjoy",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "like.v.02",
+          "via_synset": "love.v.02"
+        }
+      ],
+      "definition": "get pleasure from"
+    },
+    {
+      "lemma": "eros",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "love.n.04",
+          "via_synset": "sexual_desire.n.01"
+        }
+      ],
+      "definition": "a desire for sexual intimacy"
+    },
+    {
+      "lemma": "erotic love",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "love.n.04",
+          "via_synset": "love.n.04"
+        }
+      ],
+      "definition": "a deep feeling of sexual desire and attraction"
+    },
+    {
+      "lemma": "eroticism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sexual_desire.n.01",
+          "via_synset": "amorousness.n.02"
+        }
+      ],
+      "definition": "the arousal of feelings of sexual desire"
+    },
+    {
+      "lemma": "erotism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sexual_desire.n.01",
+          "via_synset": "amorousness.n.02"
+        }
+      ],
+      "definition": "the arousal of feelings of sexual desire"
+    },
+    {
+      "lemma": "execration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "object.n.04",
+          "via_synset": "execration.n.03"
+        }
+      ],
+      "definition": "the object of cursing or detestation; that which is execrated"
+    },
+    {
+      "lemma": "fear",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "fear.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "fear.n.03"
+        }
+      ],
+      "definition": "an emotion experienced in anticipation of some specific pain or danger (usually accompanied by a desire to flee or fight)"
+    },
+    {
+      "lemma": "fearfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "fear.n.01"
+        }
+      ],
+      "definition": "an emotion experienced in anticipation of some specific pain or danger (usually accompanied by a desire to flee or fight)"
+    },
+    {
+      "lemma": "fetish",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "fetishize.v.01",
+          "via_synset": "fetish.n.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sexual_desire.n.01",
+          "via_synset": "fetish.n.01"
+        }
+      ],
+      "definition": "excessive or irrational devotion to some activity"
+    },
+    {
+      "lemma": "fetishize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "adore.v.01",
+          "via_synset": "fetishize.v.01"
+        }
+      ],
+      "definition": "make a fetish of"
+    },
+    {
+      "lemma": "filial love",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "filial_love.n.01"
+        }
+      ],
+      "definition": "the love of a child for a parent"
+    },
+    {
+      "lemma": "fright",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "fear.n.01"
+        }
+      ],
+      "definition": "an emotion experienced in anticipation of some specific pain or danger (usually accompanied by a desire to flee or fight)"
+    },
+    {
+      "lemma": "hallucination",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "object.n.04",
+          "via_synset": "hallucination.n.03"
+        }
+      ],
+      "definition": "an object perceived during a hallucinatory episode"
+    },
+    {
+      "lemma": "hatred",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "hate.n.01"
+        }
+      ],
+      "definition": "the emotion of intense dislike; a feeling of dislike so strong that it demands action"
+    },
+    {
+      "lemma": "heartstrings",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "heartstrings.n.01"
+        }
+      ],
+      "definition": "your deepest feelings of love and compassion"
+    },
+    {
+      "lemma": "hero-worship",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "adore.v.01",
+          "via_synset": "idolize.v.01"
+        }
+      ],
+      "definition": "love unquestioningly and uncritically or to excess; venerate as an idol"
+    },
+    {
+      "lemma": "hobgoblin",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "object.n.04",
+          "via_synset": "bugbear.n.02"
+        }
+      ],
+      "definition": "an object of dread or apprehension; ; --Ralph Waldo Emerson"
+    },
+    {
+      "lemma": "hold dear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "care_for.v.02",
+          "via_synset": "care_for.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "love.v.01",
+          "via_synset": "care_for.v.02"
+        }
+      ],
+      "definition": "be fond of; be attached to"
+    },
+    {
+      "lemma": "idol",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "idolize.v.01",
+          "via_synset": "idol.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "idolize.v.01",
+          "via_synset": "paragon.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "idolize.v.01",
+          "via_synset": "idol.n.01"
+        }
+      ],
+      "definition": "someone who is adored blindly and excessively"
+    },
+    {
+      "lemma": "idolisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "idolize.v.01",
+          "via_synset": "adoration.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "idolize.v.01",
+          "via_synset": "idolization.n.02"
+        }
+      ],
+      "definition": "the act of admiring strongly"
+    },
+    {
+      "lemma": "idolise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "adore.v.01",
+          "via_synset": "idolize.v.01"
+        }
+      ],
+      "definition": "love unquestioningly and uncritically or to excess; venerate as an idol"
+    },
+    {
+      "lemma": "idolization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "idolize.v.01",
+          "via_synset": "adoration.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "idolize.v.01",
+          "via_synset": "idolization.n.02"
+        }
+      ],
+      "definition": "the act of admiring strongly"
+    },
+    {
+      "lemma": "idolize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "adore.v.01",
+          "via_synset": "idolize.v.01"
+        }
+      ],
+      "definition": "love unquestioningly and uncritically or to excess; venerate as an idol"
+    },
+    {
+      "lemma": "idolizer",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "idolize.v.01",
+          "via_synset": "idolizer.n.01"
+        }
+      ],
+      "definition": "a lover blind with admiration and devotion"
+    },
+    {
+      "lemma": "infatuate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "puppy_love.n.01",
+          "via_synset": "infatuate.v.01"
+        }
+      ],
+      "definition": "arouse unreasoning love or passion in and cause to behave in an irrational way"
+    },
+    {
+      "lemma": "infatuation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "puppy_love.n.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "object.n.04",
+          "via_synset": "infatuation.n.03"
+        }
+      ],
+      "definition": "temporary love of an adolescent"
+    },
+    {
+      "lemma": "ire",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "anger.n.01"
+        }
+      ],
+      "definition": "a strong emotion; a feeling that is oriented toward some real or supposed grievance"
+    },
+    {
+      "lemma": "joy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "joy.n.01"
+        }
+      ],
+      "definition": "the emotion of great happiness"
+    },
+    {
+      "lemma": "joyfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "joy.n.01"
+        }
+      ],
+      "definition": "the emotion of great happiness"
+    },
+    {
+      "lemma": "joyousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "joy.n.01"
+        }
+      ],
+      "definition": "the emotion of great happiness"
+    },
+    {
+      "lemma": "lecherousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sexual_desire.n.01",
+          "via_synset": "lecherousness.n.01"
+        }
+      ],
+      "definition": "a strong sexual desire"
+    },
+    {
+      "lemma": "libido",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sexual_desire.n.01",
+          "via_synset": "libido.n.01"
+        }
+      ],
+      "definition": "(psychoanalysis) a Freudian term for sexual urge or desire"
+    },
+    {
+      "lemma": "like",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "care_for.v.01",
+          "via_synset": "like.v.02"
+        }
+      ],
+      "definition": "find enjoyable or agreeable"
+    },
+    {
+      "lemma": "love",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "love.n.04",
+          "via_synset": "love.n.04"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "love.n.01",
+          "via_synset": "love.n.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "love.n.02",
+          "via_synset": "love.n.02"
+        }
+      ],
+      "definition": "a deep feeling of sexual desire and attraction"
+    },
+    {
+      "lemma": "love",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "adore.v.01",
+          "via_synset": "love.v.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "care_for.v.02",
+          "via_synset": "love.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "love.n.02",
+          "via_synset": "love.v.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "love.n.02",
+          "via_synset": "love.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "love.n.02",
+          "via_synset": "love.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "love.n.01",
+          "via_synset": "love.v.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "love.n.01",
+          "via_synset": "love.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "love.n.01",
+          "via_synset": "love.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "love.n.04",
+          "via_synset": "sleep_together.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "love.v.01",
+          "via_synset": "love.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "like.v.02",
+          "via_synset": "love.v.02"
+        }
+      ],
+      "definition": "have a great affection or liking for"
+    },
+    {
+      "lemma": "loving",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "lovingness.n.01",
+          "via_synset": "loving.a.01"
+        }
+      ],
+      "definition": "feeling or showing love and affection"
+    },
+    {
+      "lemma": "lovingness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "lovingness.n.01"
+        }
+      ],
+      "definition": "a loving feeling"
+    },
+    {
+      "lemma": "loyalty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "loyalty.n.02"
+        }
+      ],
+      "definition": "feelings of allegiance"
+    },
+    {
+      "lemma": "lust",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sexual_desire.n.01",
+          "via_synset": "lecherousness.n.01"
+        }
+      ],
+      "definition": "a strong sexual desire"
+    },
+    {
+      "lemma": "lustfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sexual_desire.n.01",
+          "via_synset": "lecherousness.n.01"
+        }
+      ],
+      "definition": "a strong sexual desire"
+    },
+    {
+      "lemma": "nymphomania",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sexual_desire.n.01",
+          "via_synset": "nymphomania.n.01"
+        }
+      ],
+      "definition": "abnormally intense sexual desire in women"
+    },
+    {
+      "lemma": "passion",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "love.n.02",
+          "via_synset": "love.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sexual_desire.n.01",
+          "via_synset": "passion.n.05"
+        }
+      ],
+      "definition": "any object of warm affection or devotion"
+    },
+    {
+      "lemma": "physical attraction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "love.n.04",
+          "via_synset": "sexual_desire.n.01"
+        }
+      ],
+      "definition": "a desire for sexual intimacy"
+    },
+    {
+      "lemma": "prefer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "like.v.02",
+          "via_synset": "prefer.v.01"
+        }
+      ],
+      "definition": "like better; value more highly"
+    },
+    {
+      "lemma": "puppy love",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "puppy_love.n.01"
+        }
+      ],
+      "definition": "temporary love of an adolescent"
+    },
+    {
+      "lemma": "revere",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "adore.v.01",
+          "via_synset": "idolize.v.01"
+        }
+      ],
+      "definition": "love unquestioningly and uncritically or to excess; venerate as an idol"
+    },
+    {
+      "lemma": "reverence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "idolize.v.01",
+          "via_synset": "reverence.n.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "fear.n.03"
+        }
+      ],
+      "definition": "a reverent mental attitude"
+    },
+    {
+      "lemma": "reverent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "idolize.v.01",
+          "via_synset": "godly.s.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "idolize.v.01",
+          "via_synset": "reverent.a.01"
+        }
+      ],
+      "definition": "showing great reverence for god"
+    },
+    {
+      "lemma": "satyriasis",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sexual_desire.n.01",
+          "via_synset": "satyriasis.n.01"
+        }
+      ],
+      "definition": "abnormally intense sexual desire in men"
+    },
+    {
+      "lemma": "sensualism",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sexual_desire.n.01",
+          "via_synset": "sensuality.n.01"
+        }
+      ],
+      "definition": "desire for sensual pleasures"
+    },
+    {
+      "lemma": "sensuality",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sexual_desire.n.01",
+          "via_synset": "sensuality.n.01"
+        }
+      ],
+      "definition": "desire for sensual pleasures"
+    },
+    {
+      "lemma": "sensualness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sexual_desire.n.01",
+          "via_synset": "sensuality.n.01"
+        }
+      ],
+      "definition": "desire for sensual pleasures"
+    },
+    {
+      "lemma": "sexiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sexual_desire.n.01",
+          "via_synset": "amorousness.n.02"
+        }
+      ],
+      "definition": "the arousal of feelings of sexual desire"
+    },
+    {
+      "lemma": "sexual desire",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "love.n.04",
+          "via_synset": "sexual_desire.n.01"
+        }
+      ],
+      "definition": "a desire for sexual intimacy"
+    },
+    {
+      "lemma": "sexual love",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "love.n.04",
+          "via_synset": "love.n.04"
+        }
+      ],
+      "definition": "a deep feeling of sexual desire and attraction"
+    },
+    {
+      "lemma": "slobber over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "idolize.v.01",
+          "via_synset": "drool_over.v.01"
+        }
+      ],
+      "definition": "envy without restraint"
+    },
+    {
+      "lemma": "spirit",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "emotional_state.n.01"
+        }
+      ],
+      "definition": "the state of a person's emotions (especially with regard to pleasure or dejection)"
+    },
+    {
+      "lemma": "the hots",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sexual_desire.n.01",
+          "via_synset": "the_hots.n.01"
+        }
+      ],
+      "definition": "intense sexual desire"
+    },
+    {
+      "lemma": "treasure",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "care_for.v.02",
+          "via_synset": "treasure.n.03"
+        }
+      ],
+      "definition": "any possession that is highly valued by its owner"
+    },
+    {
+      "lemma": "treasure",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "care_for.v.02",
+          "via_synset": "care_for.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "love.v.01",
+          "via_synset": "care_for.v.02"
+        }
+      ],
+      "definition": "be fond of; be attached to"
+    },
+    {
+      "lemma": "veneration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "emotion.n.01",
+          "via_synset": "fear.n.03"
+        }
+      ],
+      "definition": "a feeling of profound respect for someone or something"
+    },
+    {
+      "lemma": "warmhearted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "warmheartedness.n.01",
+          "via_synset": "warmhearted.a.01"
+        }
+      ],
+      "definition": "marked by warmth of feeling like kindness and sympathy and generosity"
+    },
+    {
+      "lemma": "warmheartedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "lovingness.n.01",
+          "via_synset": "warmheartedness.n.01"
+        }
+      ],
+      "definition": "a warmhearted feeling"
+    },
+    {
+      "lemma": "warmth",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "lovingness.n.01",
+          "via_synset": "warmheartedness.n.01"
+        }
+      ],
+      "definition": "a warmhearted feeling"
+    },
+    {
+      "lemma": "worship",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "love.n.01",
+          "via_synset": "worship.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "idolize.v.01",
+          "via_synset": "worship.n.02"
+        }
+      ],
+      "definition": "a feeling of profound love and admiration"
+    },
+    {
+      "lemma": "worship",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "adore.v.01",
+          "via_synset": "idolize.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "worship.n.02",
+          "via_synset": "idolize.v.01"
+        }
+      ],
+      "definition": "love unquestioningly and uncritically or to excess; venerate as an idol"
+    },
+    {
+      "lemma": "worshiper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "idolize.v.01",
+          "via_synset": "worshiper.n.01"
+        }
+      ],
+      "definition": "someone who admires too much to recognize faults"
+    },
+    {
+      "lemma": "worshipper",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "idolize.v.01",
+          "via_synset": "worshiper.n.01"
+        }
+      ],
+      "definition": "someone who admires too much to recognize faults"
+    },
+    {
+      "lemma": "yearn",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "care_for.v.02",
+          "via_synset": "yearn.v.03"
+        }
+      ],
+      "definition": "have affection for; feel tenderness for"
+    }
+  ]
+}

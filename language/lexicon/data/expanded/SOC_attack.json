@@ -1,0 +1,3437 @@
+{
+  "atom_id": "SOC.attack",
+  "category": "SOC",
+  "seed_count": 6,
+  "total_keys": 227,
+  "pos_counts": {
+    "n": 43,
+    "v": 183,
+    "adj": 1
+  },
+  "source_counts": {
+    "0_seed": 13,
+    "2_hypernym_d1": 20,
+    "6_derivational": 20,
+    "12_verb_group": 2,
+    "10_sibling": 180,
+    "3_hyponym_d1": 19,
+    "4_hyponym_d2": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 11,
+      "words": [
+        "approach(n)",
+        "attack(n)",
+        "plan of attack(n)",
+        "attack(v)",
+        "aggress(v)",
+        "assault(n)",
+        "rape(n)",
+        "violation(n)",
+        "ravishment(n)",
+        "strike(n)",
+        "work stoppage(n)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 19,
+      "words": [
+        "conceptualization(n)",
+        "conceptualisation(n)",
+        "formulation(n)",
+        "act(v)",
+        "move(v)",
+        "get down(v)",
+        "begin(v)",
+        "get(v)",
+        "start out(v)",
+        "start(v)",
+        "set about(v)",
+        "set out(v)",
+        "commence(v)",
+        "attempt(n)",
+        "sexual assault(n)",
+        "sexual abuse(n)",
+        "sex crime(n)",
+        "sex offense(n)",
+        "job action(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 19,
+      "words": [
+        "avenue(n)",
+        "pin(v)",
+        "tackle(v)",
+        "harass(v)",
+        "check(v)",
+        "fork(v)",
+        "mugging(n)",
+        "battery(n)",
+        "assault and battery(n)",
+        "aggravated assault(n)",
+        "statutory rape(n)",
+        "carnal abuse(n)",
+        "date rape(n)",
+        "wildcat strike(n)",
+        "sit-down(n)",
+        "sit-down strike(n)",
+        "sympathy strike(n)",
+        "sympathetic strike(n)",
+        "walkout(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 1,
+      "words": [
+        "resisting arrest(n)"
+      ]
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 15,
+      "words": [
+        "assault(v)",
+        "tackle(n)",
+        "tackler(n)",
+        "mug(v)",
+        "attacker(n)",
+        "aggressive(adj)",
+        "aggression(n)",
+        "aggressor(n)",
+        "harasser(n)",
+        "strike(v)",
+        "approach(v)",
+        "walk out(v)",
+        "rape(v)",
+        "violate(v)",
+        "ravish(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 161,
+      "words": [
+        "framing(n)",
+        "condescend(v)",
+        "repeat(v)",
+        "take over(v)",
+        "continue(v)",
+        "go on(v)",
+        "proceed(v)",
+        "go along(v)",
+        "keep(v)",
+        "come to the fore(v)",
+        "step forward(v)",
+        "come forward(v)",
+        "step up(v)",
+        "step to the fore(v)",
+        "come out(v)",
+        "behave(v)",
+        "acquit(v)",
+        "bear(v)",
+        "deport(v)",
+        "conduct(v)",
+        "comport(v)",
+        "carry(v)",
+        "go about(v)",
+        "reward(v)",
+        "repay(v)",
+        "pay back(v)",
+        "dispatch(v)",
+        "dare(v)",
+        "interact(v)",
+        "take time by the forelock(v)",
+        "woo(v)",
+        "court(v)",
+        "romance(v)",
+        "solicit(v)",
+        "coact(v)",
+        "exert(v)",
+        "get around to(v)",
+        "come close(v)",
+        "perform(v)",
+        "satisfice(v)",
+        "satisfise(v)",
+        "create(v)",
+        "deal(v)",
+        "act on(v)",
+        "sneak(v)",
+        "make a point(v)",
+        "make sure(v)",
+        "volunteer(v)",
+        "offer(v)",
+        "dally(v)",
+        "toy(v)",
+        "play(v)",
+        "flirt(v)",
+        "react(v)",
+        "oppose(v)",
+        "finish up(v)",
+        "land up(v)",
+        "fetch up(v)",
+        "end up(v)",
+        "wind up(v)",
+        "finish(v)",
+        "reciprocate(v)",
+        "anticipate(v)",
+        "foresee(v)",
+        "forestall(v)",
+        "counter(v)",
+        "respond(v)",
+        "misbehave(v)",
+        "misconduct(v)",
+        "misdemean(v)",
+        "antagonize(v)",
+        "antagonise(v)",
+        "counteract(v)",
+        "egotrip(v)",
+        "take care(v)",
+        "take(v)",
+        "go off half-cocked(v)",
+        "go off at half-cock(v)",
+        "wait(v)",
+        "hold off(v)",
+        "hold back(v)",
+        "perpetrate(v)",
+        "commit(v)",
+        "pull(v)",
+        "stoop(v)",
+        "lower oneself(v)",
+        "alternate(v)",
+        "take turns(v)",
+        "interrupt(v)",
+        "disturb(v)",
+        "rampage(v)",
+        "surprise(v)",
+        "maneuver(v)",
+        "manoeuver(v)",
+        "manoeuvre(v)",
+        "go ahead(v)",
+        "plow ahead(v)",
+        "participate(v)",
+        "take part(v)",
+        "stampede(v)",
+        "evade(v)",
+        "do well(v)",
+        "had best(v)",
+        "persist in(v)",
+        "try(v)",
+        "seek(v)",
+        "attempt(v)",
+        "essay(v)",
+        "assay(v)",
+        "effect(v)",
+        "use(v)",
+        "partner(v)",
+        "make bold(v)",
+        "presume(v)",
+        "race(v)",
+        "cope(v)",
+        "get by(v)",
+        "make out(v)",
+        "make do(v)",
+        "contend(v)",
+        "grapple(v)",
+        "manage(v)",
+        "play it by ear(v)",
+        "deign(v)",
+        "descend(v)",
+        "prosecute(v)",
+        "force(v)",
+        "go(v)",
+        "engage(v)",
+        "pursue(v)",
+        "rush(v)",
+        "hasten(v)",
+        "hurry(v)",
+        "look sharp(v)",
+        "festinate(v)",
+        "lord it over(v)",
+        "queen it over(v)",
+        "put on airs(v)",
+        "act superior(v)",
+        "plunge(v)",
+        "launch(v)",
+        "embark(v)",
+        "enter(v)",
+        "get cracking(v)",
+        "bestir oneself(v)",
+        "get going(v)",
+        "get moving(v)",
+        "get weaving(v)",
+        "get started(v)",
+        "get rolling(v)",
+        "jump off(v)",
+        "break in(v)",
+        "come on(v)",
+        "recommence(v)",
+        "strike out(v)",
+        "fall(v)",
+        "get to(v)",
+        "auspicate(v)",
+        "molestation(n)",
+        "work to rule(n)",
+        "go-slow(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 1,
+      "words": [
+        "assail(v)"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "acquit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "behave.v.02"
+        }
+      ],
+      "definition": "behave in a certain manner"
+    },
+    {
+      "lemma": "act",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "attack.v.03",
+          "via_synset": "act.v.01"
+        }
+      ],
+      "definition": "perform an action, or work out or perform (an action)"
+    },
+    {
+      "lemma": "act on",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "act_on.v.02"
+        }
+      ],
+      "definition": "regulate one's behavior in accordance with certain information, ideas, or advice"
+    },
+    {
+      "lemma": "act superior",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "lord_it_over.v.01"
+        }
+      ],
+      "definition": "act like the master of"
+    },
+    {
+      "lemma": "aggravated assault",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "assault.n.02",
+          "via_synset": "aggravated_assault.n.01"
+        }
+      ],
+      "definition": "a reckless attack with intent to injure seriously (as with a deadly weapon)"
+    },
+    {
+      "lemma": "aggress",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "attack.v.03",
+          "via_synset": "attack.v.03"
+        }
+      ],
+      "definition": "take the initiative and go on the offensive"
+    },
+    {
+      "lemma": "aggression",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attack.v.03",
+          "via_synset": "aggression.n.04"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attack.v.03",
+          "via_synset": "aggression.n.03"
+        }
+      ],
+      "definition": "the act of initiating hostilities"
+    },
+    {
+      "lemma": "aggressive",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attack.v.03",
+          "via_synset": "aggressive.s.02"
+        }
+      ],
+      "definition": "characteristic of an enemy or one eager to fight"
+    },
+    {
+      "lemma": "aggressor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attack.v.03",
+          "via_synset": "attacker.n.01"
+        }
+      ],
+      "definition": "someone who attacks"
+    },
+    {
+      "lemma": "alternate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "alternate.v.05"
+        }
+      ],
+      "definition": "do something in turns"
+    },
+    {
+      "lemma": "antagonise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "antagonize.v.02"
+        }
+      ],
+      "definition": "act in opposition to"
+    },
+    {
+      "lemma": "antagonize",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "antagonize.v.02"
+        }
+      ],
+      "definition": "act in opposition to"
+    },
+    {
+      "lemma": "anticipate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "anticipate.v.02"
+        }
+      ],
+      "definition": "act in advance of; deal with ahead of time"
+    },
+    {
+      "lemma": "approach",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "approach.n.01",
+          "via_synset": "approach.n.01"
+        }
+      ],
+      "definition": "ideas or actions intended to deal with a problem or situation"
+    },
+    {
+      "lemma": "approach",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "approach.n.01",
+          "via_synset": "set_about.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "set_about.v.01"
+        }
+      ],
+      "definition": "begin to deal with"
+    },
+    {
+      "lemma": "assail",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "attack.v.03",
+          "via_synset": "attack.v.01"
+        }
+      ],
+      "definition": "launch an attack or assault on; begin hostilities or start warfare with"
+    },
+    {
+      "lemma": "assault",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "assault.n.02",
+          "via_synset": "assault.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "rape.n.03",
+          "via_synset": "rape.n.03"
+        }
+      ],
+      "definition": "a threatened or attempted physical attack by someone who appears to be able to cause bodily harm if not stopped"
+    },
+    {
+      "lemma": "assault",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "assault.n.02",
+          "via_synset": "assail.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "rape.n.03",
+          "via_synset": "assail.v.01"
+        }
+      ],
+      "definition": "attack someone physically or emotionally"
+    },
+    {
+      "lemma": "assault and battery",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "assault.n.02",
+          "via_synset": "battery.n.07"
+        }
+      ],
+      "definition": "an assault in which the assailant makes physical contact"
+    },
+    {
+      "lemma": "assay",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "try.v.01"
+        }
+      ],
+      "definition": "make an effort or attempt"
+    },
+    {
+      "lemma": "attack",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "approach.n.01",
+          "via_synset": "approach.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "assault.n.02",
+          "via_synset": "attack.n.05"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attack.v.03",
+          "via_synset": "attack.n.01"
+        }
+      ],
+      "definition": "ideas or actions intended to deal with a problem or situation"
+    },
+    {
+      "lemma": "attack",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "attack.v.03",
+          "via_synset": "attack.v.03"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "attack.v.05",
+          "via_synset": "attack.v.05"
+        },
+        {
+          "step": "12_verb_group",
+          "relation": "verb_group",
+          "from_synset": "attack.v.03",
+          "via_synset": "attack.v.01"
+        }
+      ],
+      "definition": "take the initiative and go on the offensive"
+    },
+    {
+      "lemma": "attacker",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attack.v.03",
+          "via_synset": "attacker.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "attack.v.05",
+          "via_synset": "attacker.n.01"
+        }
+      ],
+      "definition": "someone who attacks"
+    },
+    {
+      "lemma": "attempt",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "assault.n.02",
+          "via_synset": "attack.n.05"
+        }
+      ],
+      "definition": "the act of attacking"
+    },
+    {
+      "lemma": "attempt",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "try.v.01"
+        }
+      ],
+      "definition": "make an effort or attempt"
+    },
+    {
+      "lemma": "auspicate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "get_down.v.07",
+          "via_synset": "auspicate.v.02"
+        }
+      ],
+      "definition": "commence in a manner calculated to bring good luck"
+    },
+    {
+      "lemma": "avenue",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "approach.n.01",
+          "via_synset": "avenue.n.01"
+        }
+      ],
+      "definition": "a line of approach"
+    },
+    {
+      "lemma": "battery",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "assault.n.02",
+          "via_synset": "battery.n.07"
+        }
+      ],
+      "definition": "an assault in which the assailant makes physical contact"
+    },
+    {
+      "lemma": "bear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "behave.v.02"
+        }
+      ],
+      "definition": "behave in a certain manner"
+    },
+    {
+      "lemma": "begin",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "attack.v.05",
+          "via_synset": "get_down.v.07"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "begin.v.08"
+        }
+      ],
+      "definition": "take the first step or steps in carrying out an action"
+    },
+    {
+      "lemma": "behave",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "behave.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "behave.v.03"
+        }
+      ],
+      "definition": "behave in a certain manner"
+    },
+    {
+      "lemma": "bestir oneself",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "get_down.v.07",
+          "via_synset": "get_cracking.v.01"
+        }
+      ],
+      "definition": "start to be active"
+    },
+    {
+      "lemma": "break in",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "get_down.v.07",
+          "via_synset": "break_in.v.03"
+        }
+      ],
+      "definition": "start in a certain activity, enterprise, or role"
+    },
+    {
+      "lemma": "carnal abuse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "rape.n.03",
+          "via_synset": "statutory_rape.n.01"
+        }
+      ],
+      "definition": "sexual intercourse with a person (girl or boy) who has not reached the age of consent (even if both parties participate willingly)"
+    },
+    {
+      "lemma": "carry",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "behave.v.02"
+        }
+      ],
+      "definition": "behave in a certain manner"
+    },
+    {
+      "lemma": "check",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "attack.v.03",
+          "via_synset": "check.v.19"
+        }
+      ],
+      "definition": "place into check"
+    },
+    {
+      "lemma": "coact",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "coact.v.01"
+        }
+      ],
+      "definition": "act together, as of organisms"
+    },
+    {
+      "lemma": "come close",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "come_close.v.01"
+        }
+      ],
+      "definition": "nearly do something"
+    },
+    {
+      "lemma": "come forward",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "come_to_the_fore.v.01"
+        }
+      ],
+      "definition": "make oneself visible; take action"
+    },
+    {
+      "lemma": "come on",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "get_down.v.07",
+          "via_synset": "come_on.v.05"
+        }
+      ],
+      "definition": "occur or become available"
+    },
+    {
+      "lemma": "come out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "come_to_the_fore.v.01"
+        }
+      ],
+      "definition": "make oneself visible; take action"
+    },
+    {
+      "lemma": "come to the fore",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "come_to_the_fore.v.01"
+        }
+      ],
+      "definition": "make oneself visible; take action"
+    },
+    {
+      "lemma": "commence",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "attack.v.05",
+          "via_synset": "get_down.v.07"
+        }
+      ],
+      "definition": "take the first step or steps in carrying out an action"
+    },
+    {
+      "lemma": "commit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "perpetrate.v.01"
+        }
+      ],
+      "definition": "perform an act, usually with a negative connotation"
+    },
+    {
+      "lemma": "comport",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "behave.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "behave.v.03"
+        }
+      ],
+      "definition": "behave in a certain manner"
+    },
+    {
+      "lemma": "conceptualisation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "approach.n.01",
+          "via_synset": "conceptualization.n.01"
+        }
+      ],
+      "definition": "inventing or contriving an idea or explanation and formulating it mentally"
+    },
+    {
+      "lemma": "conceptualization",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "approach.n.01",
+          "via_synset": "conceptualization.n.01"
+        }
+      ],
+      "definition": "inventing or contriving an idea or explanation and formulating it mentally"
+    },
+    {
+      "lemma": "condescend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "condescend.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "condescend.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "condescend.v.02"
+        }
+      ],
+      "definition": "behave in a patronizing and condescending manner"
+    },
+    {
+      "lemma": "conduct",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "behave.v.02"
+        }
+      ],
+      "definition": "behave in a certain manner"
+    },
+    {
+      "lemma": "contend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "cope.v.01"
+        }
+      ],
+      "definition": "come to terms with"
+    },
+    {
+      "lemma": "continue",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "continue.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "continue.v.07"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "continue.v.06"
+        }
+      ],
+      "definition": "continue a certain state, condition, or activity"
+    },
+    {
+      "lemma": "cope",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "cope.v.01"
+        }
+      ],
+      "definition": "come to terms with"
+    },
+    {
+      "lemma": "counter",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "anticipate.v.02"
+        }
+      ],
+      "definition": "act in advance of; deal with ahead of time"
+    },
+    {
+      "lemma": "counteract",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "antagonize.v.02"
+        }
+      ],
+      "definition": "act in opposition to"
+    },
+    {
+      "lemma": "court",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "woo.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "court.v.03"
+        }
+      ],
+      "definition": "make amorous advances towards"
+    },
+    {
+      "lemma": "create",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "create.v.03"
+        }
+      ],
+      "definition": "pursue a creative activity; be engaged in a creative activity"
+    },
+    {
+      "lemma": "dally",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "dally.v.01"
+        }
+      ],
+      "definition": "behave carelessly or indifferently"
+    },
+    {
+      "lemma": "dare",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "dare.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "make_bold.v.01"
+        }
+      ],
+      "definition": "to be courageous enough to try or do something; ,"
+    },
+    {
+      "lemma": "date rape",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "rape.n.03",
+          "via_synset": "date_rape.n.01"
+        }
+      ],
+      "definition": "rape in which the rapist is known to the victim (as when they are on a date together)"
+    },
+    {
+      "lemma": "deal",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "deal.v.03"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "cope.v.01"
+        }
+      ],
+      "definition": "take action with respect to (someone or something)"
+    },
+    {
+      "lemma": "deign",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "condescend.v.02"
+        }
+      ],
+      "definition": "do something that one considers to be below one's dignity"
+    },
+    {
+      "lemma": "deport",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "behave.v.02"
+        }
+      ],
+      "definition": "behave in a certain manner"
+    },
+    {
+      "lemma": "descend",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "condescend.v.02"
+        }
+      ],
+      "definition": "do something that one considers to be below one's dignity"
+    },
+    {
+      "lemma": "dispatch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "dispatch.v.04"
+        }
+      ],
+      "definition": "dispose of rapidly and without delay and efficiently"
+    },
+    {
+      "lemma": "disturb",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "interrupt.v.02"
+        }
+      ],
+      "definition": "destroy the peace or tranquility of"
+    },
+    {
+      "lemma": "do well",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "do_well.v.01"
+        }
+      ],
+      "definition": "act in one's own or everybody's best interest"
+    },
+    {
+      "lemma": "effect",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "effect.v.02"
+        }
+      ],
+      "definition": "act so as to bring into existence"
+    },
+    {
+      "lemma": "egotrip",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "egotrip.v.01"
+        }
+      ],
+      "definition": "act in a way that attracts attention"
+    },
+    {
+      "lemma": "embark",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "get_down.v.07",
+          "via_synset": "embark.v.02"
+        }
+      ],
+      "definition": "set out on (an enterprise or subject of study)"
+    },
+    {
+      "lemma": "end up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "finish_up.v.02"
+        }
+      ],
+      "definition": "finally be or do something"
+    },
+    {
+      "lemma": "engage",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "prosecute.v.03"
+        }
+      ],
+      "definition": "carry out or participate in an activity; be involved in"
+    },
+    {
+      "lemma": "enter",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "get_down.v.07",
+          "via_synset": "embark.v.02"
+        }
+      ],
+      "definition": "set out on (an enterprise or subject of study)"
+    },
+    {
+      "lemma": "essay",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "try.v.01"
+        }
+      ],
+      "definition": "make an effort or attempt"
+    },
+    {
+      "lemma": "evade",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "evade.v.03"
+        }
+      ],
+      "definition": "practice evasion"
+    },
+    {
+      "lemma": "exert",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "exert.v.03"
+        }
+      ],
+      "definition": "make a great effort at a mental or physical task"
+    },
+    {
+      "lemma": "fall",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "get_down.v.07",
+          "via_synset": "fall.v.30"
+        }
+      ],
+      "definition": "begin vigorously"
+    },
+    {
+      "lemma": "festinate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "rush.v.04"
+        }
+      ],
+      "definition": "act or move at high speed"
+    },
+    {
+      "lemma": "fetch up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "finish_up.v.02"
+        }
+      ],
+      "definition": "finally be or do something"
+    },
+    {
+      "lemma": "finish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "finish_up.v.02"
+        }
+      ],
+      "definition": "finally be or do something"
+    },
+    {
+      "lemma": "finish up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "finish_up.v.02"
+        }
+      ],
+      "definition": "finally be or do something"
+    },
+    {
+      "lemma": "flirt",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "dally.v.01"
+        }
+      ],
+      "definition": "behave carelessly or indifferently"
+    },
+    {
+      "lemma": "force",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "force.v.08"
+        }
+      ],
+      "definition": "do forcibly; exert force"
+    },
+    {
+      "lemma": "foresee",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "anticipate.v.02"
+        }
+      ],
+      "definition": "act in advance of; deal with ahead of time"
+    },
+    {
+      "lemma": "forestall",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "anticipate.v.02"
+        }
+      ],
+      "definition": "act in advance of; deal with ahead of time"
+    },
+    {
+      "lemma": "fork",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "attack.v.03",
+          "via_synset": "fork.v.02"
+        }
+      ],
+      "definition": "place under attack with one's own pieces, of two enemy pieces"
+    },
+    {
+      "lemma": "formulation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "approach.n.01",
+          "via_synset": "conceptualization.n.01"
+        }
+      ],
+      "definition": "inventing or contriving an idea or explanation and formulating it mentally"
+    },
+    {
+      "lemma": "framing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "conceptualization.n.01",
+          "via_synset": "framing.n.01"
+        }
+      ],
+      "definition": "formulation of the plans and important details"
+    },
+    {
+      "lemma": "get",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "attack.v.05",
+          "via_synset": "get_down.v.07"
+        }
+      ],
+      "definition": "take the first step or steps in carrying out an action"
+    },
+    {
+      "lemma": "get around to",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "get_around_to.v.01"
+        }
+      ],
+      "definition": "do something despite obstacles such as lack of time"
+    },
+    {
+      "lemma": "get by",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "cope.v.01"
+        }
+      ],
+      "definition": "come to terms with"
+    },
+    {
+      "lemma": "get cracking",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "get_down.v.07",
+          "via_synset": "get_cracking.v.01"
+        }
+      ],
+      "definition": "start to be active"
+    },
+    {
+      "lemma": "get down",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "attack.v.05",
+          "via_synset": "get_down.v.07"
+        }
+      ],
+      "definition": "take the first step or steps in carrying out an action"
+    },
+    {
+      "lemma": "get going",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "get_down.v.07",
+          "via_synset": "get_cracking.v.01"
+        }
+      ],
+      "definition": "start to be active"
+    },
+    {
+      "lemma": "get moving",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "get_down.v.07",
+          "via_synset": "get_cracking.v.01"
+        }
+      ],
+      "definition": "start to be active"
+    },
+    {
+      "lemma": "get rolling",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "get_down.v.07",
+          "via_synset": "get_cracking.v.01"
+        }
+      ],
+      "definition": "start to be active"
+    },
+    {
+      "lemma": "get started",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "get_down.v.07",
+          "via_synset": "get_cracking.v.01"
+        }
+      ],
+      "definition": "start to be active"
+    },
+    {
+      "lemma": "get to",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "get_down.v.07",
+          "via_synset": "get_to.v.02"
+        }
+      ],
+      "definition": "arrive at the point of"
+    },
+    {
+      "lemma": "get weaving",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "get_down.v.07",
+          "via_synset": "get_cracking.v.01"
+        }
+      ],
+      "definition": "start to be active"
+    },
+    {
+      "lemma": "go",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "go.v.02"
+        }
+      ],
+      "definition": "follow a procedure or take a course"
+    },
+    {
+      "lemma": "go about",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "set_about.v.01"
+        }
+      ],
+      "definition": "begin to deal with"
+    },
+    {
+      "lemma": "go ahead",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "go_ahead.v.01"
+        }
+      ],
+      "definition": "proceed (with a plan of action)"
+    },
+    {
+      "lemma": "go along",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "continue.v.01"
+        }
+      ],
+      "definition": "continue a certain state, condition, or activity"
+    },
+    {
+      "lemma": "go off at half-cock",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "go_off_half-cocked.v.01"
+        }
+      ],
+      "definition": "act prematurely or without reflection or too soon"
+    },
+    {
+      "lemma": "go off half-cocked",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "go_off_half-cocked.v.01"
+        }
+      ],
+      "definition": "act prematurely or without reflection or too soon"
+    },
+    {
+      "lemma": "go on",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "continue.v.01"
+        }
+      ],
+      "definition": "continue a certain state, condition, or activity"
+    },
+    {
+      "lemma": "go-slow",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "job_action.n.01",
+          "via_synset": "go-slow.n.01"
+        }
+      ],
+      "definition": "a form of protest by workers in which they deliberately slow down in order to cause problem from their employers"
+    },
+    {
+      "lemma": "grapple",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "cope.v.01"
+        }
+      ],
+      "definition": "come to terms with"
+    },
+    {
+      "lemma": "had best",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "do_well.v.01"
+        }
+      ],
+      "definition": "act in one's own or everybody's best interest"
+    },
+    {
+      "lemma": "harass",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "attack.v.03",
+          "via_synset": "harass.v.02"
+        }
+      ],
+      "definition": "exhaust by attacking repeatedly"
+    },
+    {
+      "lemma": "harasser",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "harass.v.02",
+          "via_synset": "harasser.n.02"
+        }
+      ],
+      "definition": "a persistent attacker"
+    },
+    {
+      "lemma": "hasten",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "rush.v.04"
+        }
+      ],
+      "definition": "act or move at high speed"
+    },
+    {
+      "lemma": "hold back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "wait.v.02"
+        }
+      ],
+      "definition": "wait before acting"
+    },
+    {
+      "lemma": "hold off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "wait.v.02"
+        }
+      ],
+      "definition": "wait before acting"
+    },
+    {
+      "lemma": "hurry",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "rush.v.04"
+        }
+      ],
+      "definition": "act or move at high speed"
+    },
+    {
+      "lemma": "interact",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "interact.v.01"
+        }
+      ],
+      "definition": "act together or towards others or with others"
+    },
+    {
+      "lemma": "interrupt",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "interrupt.v.02"
+        }
+      ],
+      "definition": "destroy the peace or tranquility of"
+    },
+    {
+      "lemma": "job action",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "strike.n.01",
+          "via_synset": "job_action.n.01"
+        }
+      ],
+      "definition": "a temporary action by workers to protest management decision or to make demands"
+    },
+    {
+      "lemma": "jump off",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "get_down.v.07",
+          "via_synset": "jump_off.v.01"
+        }
+      ],
+      "definition": "set off quickly, usually with success"
+    },
+    {
+      "lemma": "keep",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "continue.v.01"
+        }
+      ],
+      "definition": "continue a certain state, condition, or activity"
+    },
+    {
+      "lemma": "land up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "finish_up.v.02"
+        }
+      ],
+      "definition": "finally be or do something"
+    },
+    {
+      "lemma": "launch",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "get_down.v.07",
+          "via_synset": "plunge.v.04"
+        }
+      ],
+      "definition": "begin with vigor"
+    },
+    {
+      "lemma": "look sharp",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "rush.v.04"
+        }
+      ],
+      "definition": "act or move at high speed"
+    },
+    {
+      "lemma": "lord it over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "lord_it_over.v.01"
+        }
+      ],
+      "definition": "act like the master of"
+    },
+    {
+      "lemma": "lower oneself",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "condescend.v.03"
+        }
+      ],
+      "definition": "debase oneself morally, act in an undignified, unworthy, or dishonorable way"
+    },
+    {
+      "lemma": "make a point",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "make_a_point.v.01"
+        }
+      ],
+      "definition": "make a point of doing something; act purposefully and intentionally"
+    },
+    {
+      "lemma": "make bold",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "make_bold.v.01"
+        }
+      ],
+      "definition": "take upon oneself; act presumptuously, without permission"
+    },
+    {
+      "lemma": "make do",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "cope.v.01"
+        }
+      ],
+      "definition": "come to terms with"
+    },
+    {
+      "lemma": "make out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "cope.v.01"
+        }
+      ],
+      "definition": "come to terms with"
+    },
+    {
+      "lemma": "make sure",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "make_a_point.v.01"
+        }
+      ],
+      "definition": "make a point of doing something; act purposefully and intentionally"
+    },
+    {
+      "lemma": "manage",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "cope.v.01"
+        }
+      ],
+      "definition": "come to terms with"
+    },
+    {
+      "lemma": "maneuver",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "maneuver.v.02"
+        }
+      ],
+      "definition": "act in order to achieve a certain goal"
+    },
+    {
+      "lemma": "manoeuver",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "maneuver.v.02"
+        }
+      ],
+      "definition": "act in order to achieve a certain goal"
+    },
+    {
+      "lemma": "manoeuvre",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "maneuver.v.02"
+        }
+      ],
+      "definition": "act in order to achieve a certain goal"
+    },
+    {
+      "lemma": "misbehave",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "misbehave.v.01"
+        }
+      ],
+      "definition": "behave badly"
+    },
+    {
+      "lemma": "misconduct",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "misbehave.v.01"
+        }
+      ],
+      "definition": "behave badly"
+    },
+    {
+      "lemma": "misdemean",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "misbehave.v.01"
+        }
+      ],
+      "definition": "behave badly"
+    },
+    {
+      "lemma": "molestation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "sexual_assault.n.01",
+          "via_synset": "molestation.n.01"
+        }
+      ],
+      "definition": "the act of subjecting someone to unwanted or improper sexual advances or activity (especially women or children)"
+    },
+    {
+      "lemma": "move",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "attack.v.03",
+          "via_synset": "act.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "go.v.02"
+        }
+      ],
+      "definition": "perform an action, or work out or perform (an action)"
+    },
+    {
+      "lemma": "mug",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "mugging.n.01",
+          "via_synset": "mug.v.01"
+        }
+      ],
+      "definition": "rob at gunpoint or with the threat of violence"
+    },
+    {
+      "lemma": "mugging",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "assault.n.02",
+          "via_synset": "mugging.n.01"
+        }
+      ],
+      "definition": "assault with intent to rob"
+    },
+    {
+      "lemma": "offer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "volunteer.v.02"
+        }
+      ],
+      "definition": "agree freely"
+    },
+    {
+      "lemma": "oppose",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "react.v.02"
+        }
+      ],
+      "definition": "act against or in opposition to"
+    },
+    {
+      "lemma": "participate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "participate.v.01"
+        }
+      ],
+      "definition": "share in something"
+    },
+    {
+      "lemma": "partner",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "partner.v.02"
+        }
+      ],
+      "definition": "act as a partner"
+    },
+    {
+      "lemma": "pay back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "reward.v.03"
+        }
+      ],
+      "definition": "act or give recompense in recognition of someone's behavior or actions"
+    },
+    {
+      "lemma": "perform",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "perform.v.02"
+        }
+      ],
+      "definition": "perform a function"
+    },
+    {
+      "lemma": "perpetrate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "perpetrate.v.01"
+        }
+      ],
+      "definition": "perform an act, usually with a negative connotation"
+    },
+    {
+      "lemma": "persist in",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "continue.v.06"
+        }
+      ],
+      "definition": "do something repeatedly and showing no intention to stop"
+    },
+    {
+      "lemma": "pin",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "attack.v.03",
+          "via_synset": "pin.v.04"
+        }
+      ],
+      "definition": "immobilize a piece"
+    },
+    {
+      "lemma": "plan of attack",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "approach.n.01",
+          "via_synset": "approach.n.01"
+        }
+      ],
+      "definition": "ideas or actions intended to deal with a problem or situation"
+    },
+    {
+      "lemma": "play",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "dally.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "play.v.17"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "play.v.02"
+        }
+      ],
+      "definition": "behave carelessly or indifferently"
+    },
+    {
+      "lemma": "play it by ear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "play_it_by_ear.v.01"
+        }
+      ],
+      "definition": "decide on one's actions as one goes along, depending on the situation"
+    },
+    {
+      "lemma": "plow ahead",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "go_ahead.v.01"
+        }
+      ],
+      "definition": "proceed (with a plan of action)"
+    },
+    {
+      "lemma": "plunge",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "get_down.v.07",
+          "via_synset": "plunge.v.04"
+        }
+      ],
+      "definition": "begin with vigor"
+    },
+    {
+      "lemma": "presume",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "make_bold.v.01"
+        }
+      ],
+      "definition": "take upon oneself; act presumptuously, without permission"
+    },
+    {
+      "lemma": "proceed",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "continue.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "go.v.02"
+        }
+      ],
+      "definition": "continue a certain state, condition, or activity"
+    },
+    {
+      "lemma": "prosecute",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "prosecute.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "prosecute.v.03"
+        }
+      ],
+      "definition": "conduct a prosecution in a court of law"
+    },
+    {
+      "lemma": "pull",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "perpetrate.v.01"
+        }
+      ],
+      "definition": "perform an act, usually with a negative connotation"
+    },
+    {
+      "lemma": "pursue",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "prosecute.v.03"
+        }
+      ],
+      "definition": "carry out or participate in an activity; be involved in"
+    },
+    {
+      "lemma": "put on airs",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "lord_it_over.v.01"
+        }
+      ],
+      "definition": "act like the master of"
+    },
+    {
+      "lemma": "queen it over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "lord_it_over.v.01"
+        }
+      ],
+      "definition": "act like the master of"
+    },
+    {
+      "lemma": "race",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "race.v.03"
+        }
+      ],
+      "definition": "to work as fast as possible towards a goal, sometimes in competition with others"
+    },
+    {
+      "lemma": "rampage",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "rampage.v.01"
+        }
+      ],
+      "definition": "act violently, recklessly, or destructively"
+    },
+    {
+      "lemma": "rape",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "rape.n.03",
+          "via_synset": "rape.n.03"
+        }
+      ],
+      "definition": "the crime of forcing a woman to submit to sexual intercourse against her will"
+    },
+    {
+      "lemma": "rape",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "rape.n.03",
+          "via_synset": "rape.v.01"
+        }
+      ],
+      "definition": "force (someone) to have sex against their will"
+    },
+    {
+      "lemma": "ravish",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "rape.n.03",
+          "via_synset": "rape.v.01"
+        }
+      ],
+      "definition": "force (someone) to have sex against their will"
+    },
+    {
+      "lemma": "ravishment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "rape.n.03",
+          "via_synset": "rape.n.03"
+        }
+      ],
+      "definition": "the crime of forcing a woman to submit to sexual intercourse against her will"
+    },
+    {
+      "lemma": "react",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "react.v.02"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "react.v.01"
+        }
+      ],
+      "definition": "act against or in opposition to"
+    },
+    {
+      "lemma": "reciprocate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "reciprocate.v.01"
+        }
+      ],
+      "definition": "act, feel, or give mutually or in return"
+    },
+    {
+      "lemma": "recommence",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "get_down.v.07",
+          "via_synset": "recommence.v.02"
+        }
+      ],
+      "definition": "begin again"
+    },
+    {
+      "lemma": "repay",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "reward.v.03"
+        }
+      ],
+      "definition": "act or give recompense in recognition of someone's behavior or actions"
+    },
+    {
+      "lemma": "repeat",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "repeat.v.05"
+        }
+      ],
+      "definition": "do over"
+    },
+    {
+      "lemma": "resisting arrest",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "4_hyponym_d2",
+          "relation": "hyponym",
+          "from_synset": "battery.n.07",
+          "via_synset": "resisting_arrest.n.01"
+        }
+      ],
+      "definition": "physical efforts to oppose a lawful arrest; the resistance is classified as assault and battery upon the person of the police officer attempting to make the arrest"
+    },
+    {
+      "lemma": "respond",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "react.v.01"
+        }
+      ],
+      "definition": "show a response or a reaction to something"
+    },
+    {
+      "lemma": "reward",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "reward.v.03"
+        }
+      ],
+      "definition": "act or give recompense in recognition of someone's behavior or actions"
+    },
+    {
+      "lemma": "romance",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "woo.v.02"
+        }
+      ],
+      "definition": "make amorous advances towards"
+    },
+    {
+      "lemma": "rush",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "rush.v.04"
+        }
+      ],
+      "definition": "act or move at high speed"
+    },
+    {
+      "lemma": "satisfice",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "satisfice.v.01"
+        }
+      ],
+      "definition": "decide on and pursue a course of action satisfying the minimum requirements to achieve a goal"
+    },
+    {
+      "lemma": "satisfise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "satisfice.v.01"
+        }
+      ],
+      "definition": "decide on and pursue a course of action satisfying the minimum requirements to achieve a goal"
+    },
+    {
+      "lemma": "seek",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "try.v.01"
+        }
+      ],
+      "definition": "make an effort or attempt"
+    },
+    {
+      "lemma": "set about",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "attack.v.05",
+          "via_synset": "get_down.v.07"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "set_about.v.01"
+        }
+      ],
+      "definition": "take the first step or steps in carrying out an action"
+    },
+    {
+      "lemma": "set out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "attack.v.05",
+          "via_synset": "get_down.v.07"
+        }
+      ],
+      "definition": "take the first step or steps in carrying out an action"
+    },
+    {
+      "lemma": "sex crime",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "rape.n.03",
+          "via_synset": "sexual_assault.n.01"
+        }
+      ],
+      "definition": "a statutory offense that provides that it is a crime to knowingly cause another person to engage in an unwanted sexual act by force or threat"
+    },
+    {
+      "lemma": "sex offense",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "rape.n.03",
+          "via_synset": "sexual_assault.n.01"
+        }
+      ],
+      "definition": "a statutory offense that provides that it is a crime to knowingly cause another person to engage in an unwanted sexual act by force or threat"
+    },
+    {
+      "lemma": "sexual abuse",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "rape.n.03",
+          "via_synset": "sexual_assault.n.01"
+        }
+      ],
+      "definition": "a statutory offense that provides that it is a crime to knowingly cause another person to engage in an unwanted sexual act by force or threat"
+    },
+    {
+      "lemma": "sexual assault",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "rape.n.03",
+          "via_synset": "sexual_assault.n.01"
+        }
+      ],
+      "definition": "a statutory offense that provides that it is a crime to knowingly cause another person to engage in an unwanted sexual act by force or threat"
+    },
+    {
+      "lemma": "sit-down",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "strike.n.01",
+          "via_synset": "sit-down.n.01"
+        }
+      ],
+      "definition": "a strike in which workers refuse to leave the workplace until a settlement is reached"
+    },
+    {
+      "lemma": "sit-down strike",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "strike.n.01",
+          "via_synset": "sit-down.n.01"
+        }
+      ],
+      "definition": "a strike in which workers refuse to leave the workplace until a settlement is reached"
+    },
+    {
+      "lemma": "sneak",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "sneak.v.02"
+        }
+      ],
+      "definition": "put, bring, or take in a secretive or furtive manner"
+    },
+    {
+      "lemma": "solicit",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "woo.v.02"
+        }
+      ],
+      "definition": "make amorous advances towards"
+    },
+    {
+      "lemma": "stampede",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "stampede.v.03"
+        }
+      ],
+      "definition": "act, usually en masse, hurriedly or on an impulse"
+    },
+    {
+      "lemma": "start",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "attack.v.05",
+          "via_synset": "get_down.v.07"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "begin.v.08"
+        }
+      ],
+      "definition": "take the first step or steps in carrying out an action"
+    },
+    {
+      "lemma": "start out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "attack.v.05",
+          "via_synset": "get_down.v.07"
+        }
+      ],
+      "definition": "take the first step or steps in carrying out an action"
+    },
+    {
+      "lemma": "statutory rape",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "rape.n.03",
+          "via_synset": "statutory_rape.n.01"
+        }
+      ],
+      "definition": "sexual intercourse with a person (girl or boy) who has not reached the age of consent (even if both parties participate willingly)"
+    },
+    {
+      "lemma": "step forward",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "come_to_the_fore.v.01"
+        }
+      ],
+      "definition": "make oneself visible; take action"
+    },
+    {
+      "lemma": "step to the fore",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "come_to_the_fore.v.01"
+        }
+      ],
+      "definition": "make oneself visible; take action"
+    },
+    {
+      "lemma": "step up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "come_to_the_fore.v.01"
+        }
+      ],
+      "definition": "make oneself visible; take action"
+    },
+    {
+      "lemma": "stoop",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "condescend.v.03"
+        }
+      ],
+      "definition": "debase oneself morally, act in an undignified, unworthy, or dishonorable way"
+    },
+    {
+      "lemma": "strike",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "strike.n.01",
+          "via_synset": "strike.n.01"
+        }
+      ],
+      "definition": "a group's refusal to work in protest against low pay or bad work conditions"
+    },
+    {
+      "lemma": "strike",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "strike.n.01",
+          "via_synset": "strike.v.07"
+        }
+      ],
+      "definition": "stop work in order to press demands"
+    },
+    {
+      "lemma": "strike out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "get_down.v.07",
+          "via_synset": "strike_out.v.06"
+        }
+      ],
+      "definition": "set out on a course of action"
+    },
+    {
+      "lemma": "surprise",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "surprise.v.02"
+        }
+      ],
+      "definition": "come upon or take unawares"
+    },
+    {
+      "lemma": "sympathetic strike",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "strike.n.01",
+          "via_synset": "sympathy_strike.n.01"
+        }
+      ],
+      "definition": "a strike in support of other workers who are on strike; a strike not resulting from direct grievances against the workers' employer"
+    },
+    {
+      "lemma": "sympathy strike",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "strike.n.01",
+          "via_synset": "sympathy_strike.n.01"
+        }
+      ],
+      "definition": "a strike in support of other workers who are on strike; a strike not resulting from direct grievances against the workers' employer"
+    },
+    {
+      "lemma": "tackle",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tackle.v.03",
+          "via_synset": "tackle.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tackle.v.03",
+          "via_synset": "tackle.n.05"
+        }
+      ],
+      "definition": "the person who plays that position on a football team"
+    },
+    {
+      "lemma": "tackle",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "attack.v.03",
+          "via_synset": "tackle.v.03"
+        }
+      ],
+      "definition": "seize and throw down an opponent player, who usually carries the ball"
+    },
+    {
+      "lemma": "tackler",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tackle.v.03",
+          "via_synset": "tackler.n.01"
+        }
+      ],
+      "definition": "a football player who tackles the ball carrier"
+    },
+    {
+      "lemma": "take",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "take.v.01"
+        }
+      ],
+      "definition": "carry out"
+    },
+    {
+      "lemma": "take care",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "take_care.v.01"
+        }
+      ],
+      "definition": "be careful, prudent, or watchful"
+    },
+    {
+      "lemma": "take over",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "repeat.v.05"
+        }
+      ],
+      "definition": "do over"
+    },
+    {
+      "lemma": "take part",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "participate.v.01"
+        }
+      ],
+      "definition": "share in something"
+    },
+    {
+      "lemma": "take time by the forelock",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "take_time_by_the_forelock.v.01"
+        }
+      ],
+      "definition": "act quickly and decisively; not let slip an opportunity"
+    },
+    {
+      "lemma": "take turns",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "alternate.v.05"
+        }
+      ],
+      "definition": "do something in turns"
+    },
+    {
+      "lemma": "toy",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "dally.v.01"
+        }
+      ],
+      "definition": "behave carelessly or indifferently"
+    },
+    {
+      "lemma": "try",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "try.v.01"
+        }
+      ],
+      "definition": "make an effort or attempt"
+    },
+    {
+      "lemma": "use",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "use.v.06"
+        }
+      ],
+      "definition": "habitually do something (use only in the past tense)"
+    },
+    {
+      "lemma": "violate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "rape.n.03",
+          "via_synset": "rape.v.01"
+        }
+      ],
+      "definition": "force (someone) to have sex against their will"
+    },
+    {
+      "lemma": "violation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "rape.n.03",
+          "via_synset": "rape.n.03"
+        }
+      ],
+      "definition": "the crime of forcing a woman to submit to sexual intercourse against her will"
+    },
+    {
+      "lemma": "volunteer",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "volunteer.v.02"
+        }
+      ],
+      "definition": "agree freely"
+    },
+    {
+      "lemma": "wait",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "wait.v.02"
+        }
+      ],
+      "definition": "wait before acting"
+    },
+    {
+      "lemma": "walk out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "walkout.n.01",
+          "via_synset": "strike.v.07"
+        }
+      ],
+      "definition": "stop work in order to press demands"
+    },
+    {
+      "lemma": "walkout",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "strike.n.01",
+          "via_synset": "walkout.n.01"
+        }
+      ],
+      "definition": "a strike in which the workers walk out"
+    },
+    {
+      "lemma": "wildcat strike",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "strike.n.01",
+          "via_synset": "wildcat_strike.n.01"
+        }
+      ],
+      "definition": "a strike undertaken by workers without approval from the officials of their union"
+    },
+    {
+      "lemma": "wind up",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "finish_up.v.02"
+        }
+      ],
+      "definition": "finally be or do something"
+    },
+    {
+      "lemma": "woo",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "act.v.01",
+          "via_synset": "woo.v.02"
+        }
+      ],
+      "definition": "make amorous advances towards"
+    },
+    {
+      "lemma": "work stoppage",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "strike.n.01",
+          "via_synset": "strike.n.01"
+        }
+      ],
+      "definition": "a group's refusal to work in protest against low pay or bad work conditions"
+    },
+    {
+      "lemma": "work to rule",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "job_action.n.01",
+          "via_synset": "work_to_rule.n.01"
+        }
+      ],
+      "definition": "a job action in which workers cause a slowdown by doing only the minimum amount required by the rules of the workplace"
+    }
+  ]
+}

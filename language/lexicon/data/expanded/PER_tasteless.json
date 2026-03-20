@@ -1,0 +1,918 @@
+{
+  "atom_id": "PER.tasteless",
+  "category": "PER",
+  "seed_count": 4,
+  "total_keys": 53,
+  "pos_counts": {
+    "adj": 44,
+    "n": 9
+  },
+  "source_counts": {
+    "0_seed": 12,
+    "7_similar_to": 39,
+    "6_derivational": 11,
+    "8_also_see": 5,
+    "9_antonym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 9,
+      "words": [
+        "tasteless(adj)",
+        "bland(adj)",
+        "flat(adj)",
+        "flavorless(adj)",
+        "flavourless(adj)",
+        "insipid(adj)",
+        "savorless(adj)",
+        "savourless(adj)",
+        "vapid(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 9,
+      "words": [
+        "tastelessness(n)",
+        "flatness(n)",
+        "blandness(n)",
+        "flavorlessness(n)",
+        "flavourlessness(n)",
+        "insipidness(n)",
+        "insipidity(n)",
+        "savorlessness(n)",
+        "savourlessness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 30,
+      "words": [
+        "unsalted(adj)",
+        "unseasoned(adj)",
+        "unflavored(adj)",
+        "unflavoured(adj)",
+        "nonflavored(adj)",
+        "nonflavoured(adj)",
+        "indelicate(adj)",
+        "off-color(adj)",
+        "off-colour(adj)",
+        "camp(adj)",
+        "campy(adj)",
+        "barbaric(adj)",
+        "ostentatious(adj)",
+        "pretentious(adj)",
+        "brassy(adj)",
+        "cheap(adj)",
+        "flash(adj)",
+        "flashy(adj)",
+        "garish(adj)",
+        "gaudy(adj)",
+        "gimcrack(adj)",
+        "loud(adj)",
+        "meretricious(adj)",
+        "tacky(adj)",
+        "tatty(adj)",
+        "tawdry(adj)",
+        "trashy(adj)",
+        "Brummagem(adj)",
+        "unstimulating(adj)",
+        "unexciting(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 4,
+      "words": [
+        "unappetizing(adj)",
+        "unappetising(adj)",
+        "unpalatable(adj)",
+        "inelegant(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "tasteful(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "barbaric",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "barbaric.s.02"
+        }
+      ],
+      "definition": "unrestrained and crudely rich"
+    },
+    {
+      "lemma": "bland",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bland.s.01",
+          "via_synset": "bland.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bland.s.02",
+          "via_synset": "bland.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.01",
+          "via_synset": "bland.s.01"
+        }
+      ],
+      "definition": "lacking taste or flavor or tang"
+    },
+    {
+      "lemma": "blandness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bland.s.01",
+          "via_synset": "blandness.n.02"
+        }
+      ],
+      "definition": "lacking any distinctive or interesting taste property"
+    },
+    {
+      "lemma": "brassy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "brassy.s.01"
+        }
+      ],
+      "definition": "tastelessly showy"
+    },
+    {
+      "lemma": "Brummagem",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "brummagem.s.01"
+        }
+      ],
+      "definition": "cheap and showy"
+    },
+    {
+      "lemma": "camp",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "camp.s.01"
+        }
+      ],
+      "definition": "providing sophisticated amusement by virtue of having artificially (and vulgarly) mannered or banal or sentimental qualities"
+    },
+    {
+      "lemma": "campy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "camp.s.01"
+        }
+      ],
+      "definition": "providing sophisticated amusement by virtue of having artificially (and vulgarly) mannered or banal or sentimental qualities"
+    },
+    {
+      "lemma": "cheap",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "brassy.s.01"
+        }
+      ],
+      "definition": "tastelessly showy"
+    },
+    {
+      "lemma": "flash",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "brassy.s.01"
+        }
+      ],
+      "definition": "tastelessly showy"
+    },
+    {
+      "lemma": "flashy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "brassy.s.01"
+        }
+      ],
+      "definition": "tastelessly showy"
+    },
+    {
+      "lemma": "flat",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bland.s.01",
+          "via_synset": "bland.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bland.s.02",
+          "via_synset": "bland.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.01",
+          "via_synset": "bland.s.01"
+        }
+      ],
+      "definition": "lacking taste or flavor or tang"
+    },
+    {
+      "lemma": "flatness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bland.s.02",
+          "via_synset": "flatness.n.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bland.s.01",
+          "via_synset": "flatness.n.03"
+        }
+      ],
+      "definition": "a want of animation or brilliance"
+    },
+    {
+      "lemma": "flavorless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bland.s.01",
+          "via_synset": "bland.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.01",
+          "via_synset": "bland.s.01"
+        }
+      ],
+      "definition": "lacking taste or flavor or tang"
+    },
+    {
+      "lemma": "flavorlessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bland.s.01",
+          "via_synset": "flavorlessness.n.01"
+        }
+      ],
+      "definition": "the property of having no flavor"
+    },
+    {
+      "lemma": "flavourless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bland.s.01",
+          "via_synset": "bland.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.01",
+          "via_synset": "bland.s.01"
+        }
+      ],
+      "definition": "lacking taste or flavor or tang"
+    },
+    {
+      "lemma": "flavourlessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bland.s.01",
+          "via_synset": "flavorlessness.n.01"
+        }
+      ],
+      "definition": "the property of having no flavor"
+    },
+    {
+      "lemma": "garish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "brassy.s.01"
+        }
+      ],
+      "definition": "tastelessly showy"
+    },
+    {
+      "lemma": "gaudy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "brassy.s.01"
+        }
+      ],
+      "definition": "tastelessly showy"
+    },
+    {
+      "lemma": "gimcrack",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "brassy.s.01"
+        }
+      ],
+      "definition": "tastelessly showy"
+    },
+    {
+      "lemma": "indelicate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "indelicate.s.01"
+        }
+      ],
+      "definition": "in violation of good taste even verging on the indecent"
+    },
+    {
+      "lemma": "inelegant",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "inelegant.a.01"
+        }
+      ],
+      "definition": "lacking in refinement or grace or good taste"
+    },
+    {
+      "lemma": "insipid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bland.s.01",
+          "via_synset": "bland.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.01",
+          "via_synset": "bland.s.01"
+        }
+      ],
+      "definition": "lacking taste or flavor or tang"
+    },
+    {
+      "lemma": "insipidity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bland.s.01",
+          "via_synset": "blandness.n.02"
+        }
+      ],
+      "definition": "lacking any distinctive or interesting taste property"
+    },
+    {
+      "lemma": "insipidness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bland.s.01",
+          "via_synset": "blandness.n.02"
+        }
+      ],
+      "definition": "lacking any distinctive or interesting taste property"
+    },
+    {
+      "lemma": "loud",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "brassy.s.01"
+        }
+      ],
+      "definition": "tastelessly showy"
+    },
+    {
+      "lemma": "meretricious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "brassy.s.01"
+        }
+      ],
+      "definition": "tastelessly showy"
+    },
+    {
+      "lemma": "nonflavored",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.01",
+          "via_synset": "unflavored.s.01"
+        }
+      ],
+      "definition": "without flavoring added"
+    },
+    {
+      "lemma": "nonflavoured",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.01",
+          "via_synset": "unflavored.s.01"
+        }
+      ],
+      "definition": "without flavoring added"
+    },
+    {
+      "lemma": "off-color",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "indelicate.s.01"
+        }
+      ],
+      "definition": "in violation of good taste even verging on the indecent"
+    },
+    {
+      "lemma": "off-colour",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "indelicate.s.01"
+        }
+      ],
+      "definition": "in violation of good taste even verging on the indecent"
+    },
+    {
+      "lemma": "ostentatious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "ostentatious.s.01"
+        }
+      ],
+      "definition": "(of a display) tawdry or vulgar"
+    },
+    {
+      "lemma": "pretentious",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "ostentatious.s.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "pretentious.a.01"
+        }
+      ],
+      "definition": "(of a display) tawdry or vulgar"
+    },
+    {
+      "lemma": "savorless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bland.s.01",
+          "via_synset": "bland.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.01",
+          "via_synset": "bland.s.01"
+        }
+      ],
+      "definition": "lacking taste or flavor or tang"
+    },
+    {
+      "lemma": "savorlessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bland.s.01",
+          "via_synset": "flavorlessness.n.01"
+        }
+      ],
+      "definition": "the property of having no flavor"
+    },
+    {
+      "lemma": "savourless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bland.s.01",
+          "via_synset": "bland.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.01",
+          "via_synset": "bland.s.01"
+        }
+      ],
+      "definition": "lacking taste or flavor or tang"
+    },
+    {
+      "lemma": "savourlessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "bland.s.01",
+          "via_synset": "flavorlessness.n.01"
+        }
+      ],
+      "definition": "the property of having no flavor"
+    },
+    {
+      "lemma": "tacky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "brassy.s.01"
+        }
+      ],
+      "definition": "tastelessly showy"
+    },
+    {
+      "lemma": "tasteful",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "tasteful.a.01"
+        }
+      ],
+      "definition": "having or showing or conforming to good taste"
+    },
+    {
+      "lemma": "tasteless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "tasteless.a.01",
+          "via_synset": "tasteless.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "tasteless.a.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bland.s.01",
+          "via_synset": "tasteless.a.01"
+        }
+      ],
+      "definition": "lacking flavor"
+    },
+    {
+      "lemma": "tastelessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tasteless.a.01",
+          "via_synset": "flavorlessness.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "tastelessness.n.02"
+        }
+      ],
+      "definition": "the property of having no flavor"
+    },
+    {
+      "lemma": "tatty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "brassy.s.01"
+        }
+      ],
+      "definition": "tastelessly showy"
+    },
+    {
+      "lemma": "tawdry",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "brassy.s.01"
+        }
+      ],
+      "definition": "tastelessly showy"
+    },
+    {
+      "lemma": "trashy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.02",
+          "via_synset": "brassy.s.01"
+        }
+      ],
+      "definition": "tastelessly showy"
+    },
+    {
+      "lemma": "unappetising",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "tasteless.a.01",
+          "via_synset": "unappetizing.a.01"
+        }
+      ],
+      "definition": "not appetizing in appearance, aroma, or taste"
+    },
+    {
+      "lemma": "unappetizing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "tasteless.a.01",
+          "via_synset": "unappetizing.a.01"
+        }
+      ],
+      "definition": "not appetizing in appearance, aroma, or taste"
+    },
+    {
+      "lemma": "unexciting",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bland.s.02",
+          "via_synset": "unstimulating.a.01"
+        }
+      ],
+      "definition": "not stimulating"
+    },
+    {
+      "lemma": "unflavored",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.01",
+          "via_synset": "unflavored.s.01"
+        }
+      ],
+      "definition": "without flavoring added"
+    },
+    {
+      "lemma": "unflavoured",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.01",
+          "via_synset": "unflavored.s.01"
+        }
+      ],
+      "definition": "without flavoring added"
+    },
+    {
+      "lemma": "unpalatable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "tasteless.a.01",
+          "via_synset": "unpalatable.a.01"
+        }
+      ],
+      "definition": "not pleasant or acceptable to the taste or mind"
+    },
+    {
+      "lemma": "unsalted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.01",
+          "via_synset": "unsalted.s.01"
+        }
+      ],
+      "definition": "without salt or seasoning"
+    },
+    {
+      "lemma": "unseasoned",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.01",
+          "via_synset": "unsalted.s.01"
+        }
+      ],
+      "definition": "without salt or seasoning"
+    },
+    {
+      "lemma": "unstimulating",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "bland.s.02",
+          "via_synset": "unstimulating.a.01"
+        }
+      ],
+      "definition": "not stimulating"
+    },
+    {
+      "lemma": "vapid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "bland.s.01",
+          "via_synset": "bland.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "tasteless.a.01",
+          "via_synset": "bland.s.01"
+        }
+      ],
+      "definition": "lacking taste or flavor or tang"
+    }
+  ]
+}

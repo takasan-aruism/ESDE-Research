@@ -1,0 +1,182 @@
+{
+  "atom_id": "FND.ahistorical",
+  "category": "FND",
+  "seed_count": 2,
+  "total_keys": 7,
+  "pos_counts": {
+    "adj": 6,
+    "n": 1
+  },
+  "source_counts": {
+    "0_seed": 3,
+    "6_derivational": 1,
+    "7_similar_to": 2,
+    "9_antonym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 3,
+      "words": [
+        "ahistorical(adj)",
+        "dateless(adj)",
+        "timeless(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 1,
+      "words": [
+        "timelessness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 2,
+      "words": [
+        "unaltered(adj)",
+        "unchanged(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "historical(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "ahistorical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ahistorical.a.01",
+          "via_synset": "ahistorical.a.01"
+        }
+      ],
+      "definition": "unconcerned with or unrelated to history or to historical development or to tradition"
+    },
+    {
+      "lemma": "dateless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dateless.s.04",
+          "via_synset": "dateless.s.04"
+        }
+      ],
+      "definition": "unaffected by time"
+    },
+    {
+      "lemma": "historical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "ahistorical.a.01",
+          "via_synset": "historical.a.01"
+        }
+      ],
+      "definition": "of or relating to the study of history"
+    },
+    {
+      "lemma": "timeless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dateless.s.04",
+          "via_synset": "dateless.s.04"
+        }
+      ],
+      "definition": "unaffected by time"
+    },
+    {
+      "lemma": "timelessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dateless.s.04",
+          "via_synset": "eternity.n.02"
+        }
+      ],
+      "definition": "a state of eternal existence believed in some religions to characterize the afterlife"
+    },
+    {
+      "lemma": "unaltered",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dateless.s.04",
+          "via_synset": "unaltered.a.01"
+        }
+      ],
+      "definition": "remaining in an original state"
+    },
+    {
+      "lemma": "unchanged",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dateless.s.04",
+          "via_synset": "unaltered.a.01"
+        }
+      ],
+      "definition": "remaining in an original state"
+    }
+  ]
+}

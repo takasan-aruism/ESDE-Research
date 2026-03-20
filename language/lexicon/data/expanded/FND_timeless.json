@@ -1,0 +1,507 @@
+{
+  "atom_id": "FND.timeless",
+  "category": "FND",
+  "seed_count": 5,
+  "total_keys": 29,
+  "pos_counts": {
+    "adj": 17,
+    "adv": 5,
+    "n": 7
+  },
+  "source_counts": {
+    "0_seed": 19,
+    "6_derivational": 8,
+    "7_similar_to": 5
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 17,
+      "words": [
+        "dateless(adj)",
+        "timeless(adj)",
+        "ageless(adj)",
+        "aeonian(adj)",
+        "eonian(adj)",
+        "eternal(adj)",
+        "everlasting(adj)",
+        "perpetual(adj)",
+        "unending(adj)",
+        "unceasing(adj)",
+        "endless(adj)",
+        "interminable(adj)",
+        "forever(adv)",
+        "forever and a day(adv)",
+        "everlastingly(adv)",
+        "eternally(adv)",
+        "evermore(adv)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 7,
+      "words": [
+        "timelessness(n)",
+        "endlessness(n)",
+        "eternity(n)",
+        "agelessness(n)",
+        "eon(n)",
+        "everlastingness(n)",
+        "perpetuity(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 5,
+      "words": [
+        "unaltered(adj)",
+        "unchanged(adj)",
+        "long(adj)",
+        "permanent(adj)",
+        "lasting(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "aeonian",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ageless.s.01",
+          "via_synset": "ageless.s.01"
+        }
+      ],
+      "definition": "continuing forever or indefinitely"
+    },
+    {
+      "lemma": "ageless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ageless.s.01",
+          "via_synset": "ageless.s.01"
+        }
+      ],
+      "definition": "continuing forever or indefinitely"
+    },
+    {
+      "lemma": "agelessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ageless.s.01",
+          "via_synset": "agelessness.n.01"
+        }
+      ],
+      "definition": "the quality of being timeless and eternal"
+    },
+    {
+      "lemma": "dateless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dateless.s.04",
+          "via_synset": "dateless.s.04"
+        }
+      ],
+      "definition": "unaffected by time"
+    },
+    {
+      "lemma": "endless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "endless.s.01",
+          "via_synset": "endless.s.01"
+        }
+      ],
+      "definition": "tiresomely long; seemingly without end"
+    },
+    {
+      "lemma": "endlessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "endless.s.01",
+          "via_synset": "endlessness.n.01"
+        }
+      ],
+      "definition": "the property of being (or seeming to be) without end"
+    },
+    {
+      "lemma": "eon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ageless.s.01",
+          "via_synset": "eon.n.02"
+        }
+      ],
+      "definition": "an immeasurably long period of time"
+    },
+    {
+      "lemma": "eonian",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ageless.s.01",
+          "via_synset": "ageless.s.01"
+        }
+      ],
+      "definition": "continuing forever or indefinitely"
+    },
+    {
+      "lemma": "eternal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ageless.s.01",
+          "via_synset": "ageless.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "endless.s.01",
+          "via_synset": "endless.s.01"
+        }
+      ],
+      "definition": "continuing forever or indefinitely"
+    },
+    {
+      "lemma": "eternally",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "everlastingly.r.01",
+          "via_synset": "everlastingly.r.01"
+        }
+      ],
+      "definition": "for a limitless time; ; - P.P.Bliss"
+    },
+    {
+      "lemma": "eternity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "endless.s.01",
+          "via_synset": "eternity.n.03"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ageless.s.01",
+          "via_synset": "eternity.n.02"
+        }
+      ],
+      "definition": "a seemingly endless time interval (waiting)"
+    },
+    {
+      "lemma": "everlasting",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ageless.s.01",
+          "via_synset": "ageless.s.01"
+        }
+      ],
+      "definition": "continuing forever or indefinitely"
+    },
+    {
+      "lemma": "everlastingly",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "everlastingly.r.01",
+          "via_synset": "everlastingly.r.01"
+        }
+      ],
+      "definition": "for a limitless time; ; - P.P.Bliss"
+    },
+    {
+      "lemma": "everlastingness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ageless.s.01",
+          "via_synset": "everlastingness.n.01"
+        }
+      ],
+      "definition": "the property of lasting forever"
+    },
+    {
+      "lemma": "evermore",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "everlastingly.r.01",
+          "via_synset": "everlastingly.r.01"
+        }
+      ],
+      "definition": "for a limitless time; ; - P.P.Bliss"
+    },
+    {
+      "lemma": "forever",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "forever.r.02",
+          "via_synset": "forever.r.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "everlastingly.r.01",
+          "via_synset": "everlastingly.r.01"
+        }
+      ],
+      "definition": "for a very long or seemingly endless time"
+    },
+    {
+      "lemma": "forever and a day",
+      "pos": "adv",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "forever.r.02",
+          "via_synset": "forever.r.02"
+        }
+      ],
+      "definition": "for a very long or seemingly endless time"
+    },
+    {
+      "lemma": "interminable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "endless.s.01",
+          "via_synset": "endless.s.01"
+        }
+      ],
+      "definition": "tiresomely long; seemingly without end"
+    },
+    {
+      "lemma": "lasting",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "ageless.s.01",
+          "via_synset": "permanent.a.01"
+        }
+      ],
+      "definition": "continuing or enduring without marked change in status or condition or place"
+    },
+    {
+      "lemma": "long",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "endless.s.01",
+          "via_synset": "long.a.01"
+        }
+      ],
+      "definition": "primarily temporal sense; being or indicating a relatively great or greater than average duration or passage of time or a duration as specified"
+    },
+    {
+      "lemma": "permanent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "ageless.s.01",
+          "via_synset": "permanent.a.01"
+        }
+      ],
+      "definition": "continuing or enduring without marked change in status or condition or place"
+    },
+    {
+      "lemma": "perpetual",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ageless.s.01",
+          "via_synset": "ageless.s.01"
+        }
+      ],
+      "definition": "continuing forever or indefinitely"
+    },
+    {
+      "lemma": "perpetuity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "ageless.s.01",
+          "via_synset": "perpetuity.n.01"
+        }
+      ],
+      "definition": "the property of being perpetual (seemingly ceaseless)"
+    },
+    {
+      "lemma": "timeless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "dateless.s.04",
+          "via_synset": "dateless.s.04"
+        }
+      ],
+      "definition": "unaffected by time"
+    },
+    {
+      "lemma": "timelessness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "dateless.s.04",
+          "via_synset": "eternity.n.02"
+        }
+      ],
+      "definition": "a state of eternal existence believed in some religions to characterize the afterlife"
+    },
+    {
+      "lemma": "unaltered",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dateless.s.04",
+          "via_synset": "unaltered.a.01"
+        }
+      ],
+      "definition": "remaining in an original state"
+    },
+    {
+      "lemma": "unceasing",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ageless.s.01",
+          "via_synset": "ageless.s.01"
+        }
+      ],
+      "definition": "continuing forever or indefinitely"
+    },
+    {
+      "lemma": "unchanged",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "dateless.s.04",
+          "via_synset": "unaltered.a.01"
+        }
+      ],
+      "definition": "remaining in an original state"
+    },
+    {
+      "lemma": "unending",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "ageless.s.01",
+          "via_synset": "ageless.s.01"
+        }
+      ],
+      "definition": "continuing forever or indefinitely"
+    }
+  ]
+}

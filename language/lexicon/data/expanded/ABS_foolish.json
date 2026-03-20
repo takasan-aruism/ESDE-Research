@@ -1,0 +1,1628 @@
+{
+  "atom_id": "ABS.foolish",
+  "category": "ABS",
+  "seed_count": 6,
+  "total_keys": 102,
+  "pos_counts": {
+    "adj": 93,
+    "n": 9
+  },
+  "source_counts": {
+    "0_seed": 23,
+    "7_similar_to": 75,
+    "8_also_see": 10,
+    "6_derivational": 12,
+    "9_antonym": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 20,
+      "words": [
+        "foolish(adj)",
+        "anserine(adj)",
+        "dopy(adj)",
+        "dopey(adj)",
+        "goosey(adj)",
+        "goosy(adj)",
+        "gooselike(adj)",
+        "jerky(adj)",
+        "stupid(adj)",
+        "unintelligent(adj)",
+        "airheaded(adj)",
+        "dizzy(adj)",
+        "empty-headed(adj)",
+        "featherbrained(adj)",
+        "giddy(adj)",
+        "light-headed(adj)",
+        "lightheaded(adj)",
+        "silly(adj)",
+        "punch-drunk(adj)",
+        "slaphappy(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 9,
+      "words": [
+        "stupid(n)",
+        "stupidity(n)",
+        "dope(n)",
+        "foolishness(n)",
+        "goose(n)",
+        "jerk(n)",
+        "giddiness(n)",
+        "lightheadedness(n)",
+        "silliness(n)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 65,
+      "words": [
+        "blockheaded(adj)",
+        "boneheaded(adj)",
+        "duncical(adj)",
+        "duncish(adj)",
+        "fatheaded(adj)",
+        "loggerheaded(adj)",
+        "thick(adj)",
+        "thickheaded(adj)",
+        "thick-skulled(adj)",
+        "wooden-headed(adj)",
+        "lumpish(adj)",
+        "lumpen(adj)",
+        "unthinking(adj)",
+        "nitwitted(adj)",
+        "senseless(adj)",
+        "soft-witted(adj)",
+        "witless(adj)",
+        "dense(adj)",
+        "dim(adj)",
+        "dull(adj)",
+        "dumb(adj)",
+        "obtuse(adj)",
+        "slow(adj)",
+        "yokel-like(adj)",
+        "cloddish(adj)",
+        "doltish(adj)",
+        "gaumless(adj)",
+        "gormless(adj)",
+        "weak(adj)",
+        "confused(adj)",
+        "rattlebrained(adj)",
+        "rattlepated(adj)",
+        "scatterbrained(adj)",
+        "scatty(adj)",
+        "harebrained(adj)",
+        "insane(adj)",
+        "mad(adj)",
+        "fond(adj)",
+        "unwise(adj)",
+        "asinine(adj)",
+        "fatuous(adj)",
+        "inane(adj)",
+        "mindless(adj)",
+        "vacuous(adj)",
+        "ill-conceived(adj)",
+        "misguided(adj)",
+        "absurd(adj)",
+        "cockeyed(adj)",
+        "derisory(adj)",
+        "idiotic(adj)",
+        "laughable(adj)",
+        "ludicrous(adj)",
+        "nonsensical(adj)",
+        "preposterous(adj)",
+        "ridiculous(adj)",
+        "cockamamie(adj)",
+        "cockamamy(adj)",
+        "goofy(adj)",
+        "sappy(adj)",
+        "wacky(adj)",
+        "whacky(adj)",
+        "zany(adj)",
+        "frivolous(adj)",
+        "brainless(adj)",
+        "headless(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 7,
+      "words": [
+        "ill-advised(adj)",
+        "unadvised(adj)",
+        "inadvisable(adj)",
+        "unadvisable(adj)",
+        "imprudent(adj)",
+        "impolitic(adj)",
+        "retarded(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "smart(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "absurd",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "absurd.s.02"
+        }
+      ],
+      "definition": "incongruous;inviting ridicule"
+    },
+    {
+      "lemma": "airheaded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "airheaded.s.01",
+          "via_synset": "airheaded.s.01"
+        }
+      ],
+      "definition": "lacking seriousness; given to frivolity"
+    },
+    {
+      "lemma": "anserine",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "anserine.s.01",
+          "via_synset": "anserine.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "anserine.s.01"
+        }
+      ],
+      "definition": "having or revealing stupidity"
+    },
+    {
+      "lemma": "asinine",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "asinine.s.01"
+        }
+      ],
+      "definition": "devoid of intelligence"
+    },
+    {
+      "lemma": "blockheaded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "blockheaded.s.01"
+        }
+      ],
+      "definition": "(used informally) stupid"
+    },
+    {
+      "lemma": "boneheaded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "blockheaded.s.01"
+        }
+      ],
+      "definition": "(used informally) stupid"
+    },
+    {
+      "lemma": "brainless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unintelligent.a.01",
+          "via_synset": "brainless.s.01"
+        }
+      ],
+      "definition": "not using intelligence"
+    },
+    {
+      "lemma": "cloddish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "cloddish.s.01"
+        }
+      ],
+      "definition": "heavy and dull and stupid"
+    },
+    {
+      "lemma": "cockamamie",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "cockamamie.s.01"
+        }
+      ],
+      "definition": "ludicrous, foolish"
+    },
+    {
+      "lemma": "cockamamy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "cockamamie.s.01"
+        }
+      ],
+      "definition": "ludicrous, foolish"
+    },
+    {
+      "lemma": "cockeyed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "absurd.s.02"
+        }
+      ],
+      "definition": "incongruous;inviting ridicule"
+    },
+    {
+      "lemma": "confused",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "punch-drunk.s.01",
+          "via_synset": "confused.a.05"
+        }
+      ],
+      "definition": "mentally confused; unable to think with clarity or act intelligently"
+    },
+    {
+      "lemma": "dense",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "dense.s.04"
+        }
+      ],
+      "definition": "slow to learn or understand; lacking intellectual acuity; ; ; - Thackeray"
+    },
+    {
+      "lemma": "derisory",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "absurd.s.02"
+        }
+      ],
+      "definition": "incongruous;inviting ridicule"
+    },
+    {
+      "lemma": "dim",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "dense.s.04"
+        }
+      ],
+      "definition": "slow to learn or understand; lacking intellectual acuity; ; ; - Thackeray"
+    },
+    {
+      "lemma": "dizzy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "airheaded.s.01",
+          "via_synset": "airheaded.s.01"
+        }
+      ],
+      "definition": "lacking seriousness; given to frivolity"
+    },
+    {
+      "lemma": "doltish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "cloddish.s.01"
+        }
+      ],
+      "definition": "heavy and dull and stupid"
+    },
+    {
+      "lemma": "dope",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "anserine.s.01",
+          "via_synset": "dumbbell.n.02"
+        }
+      ],
+      "definition": "an ignorant or foolish person"
+    },
+    {
+      "lemma": "dopey",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "anserine.s.01",
+          "via_synset": "anserine.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "anserine.s.01"
+        }
+      ],
+      "definition": "having or revealing stupidity"
+    },
+    {
+      "lemma": "dopy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "anserine.s.01",
+          "via_synset": "anserine.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "anserine.s.01"
+        }
+      ],
+      "definition": "having or revealing stupidity"
+    },
+    {
+      "lemma": "dull",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "dense.s.04"
+        }
+      ],
+      "definition": "slow to learn or understand; lacking intellectual acuity; ; ; - Thackeray"
+    },
+    {
+      "lemma": "dumb",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "dense.s.04"
+        }
+      ],
+      "definition": "slow to learn or understand; lacking intellectual acuity; ; ; - Thackeray"
+    },
+    {
+      "lemma": "duncical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "blockheaded.s.01"
+        }
+      ],
+      "definition": "(used informally) stupid"
+    },
+    {
+      "lemma": "duncish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "blockheaded.s.01"
+        }
+      ],
+      "definition": "(used informally) stupid"
+    },
+    {
+      "lemma": "empty-headed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "airheaded.s.01",
+          "via_synset": "airheaded.s.01"
+        }
+      ],
+      "definition": "lacking seriousness; given to frivolity"
+    },
+    {
+      "lemma": "fatheaded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "blockheaded.s.01"
+        }
+      ],
+      "definition": "(used informally) stupid"
+    },
+    {
+      "lemma": "fatuous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "asinine.s.01"
+        }
+      ],
+      "definition": "devoid of intelligence"
+    },
+    {
+      "lemma": "featherbrained",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "airheaded.s.01",
+          "via_synset": "airheaded.s.01"
+        }
+      ],
+      "definition": "lacking seriousness; given to frivolity"
+    },
+    {
+      "lemma": "fond",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "fond.s.04"
+        }
+      ],
+      "definition": "absurd or silly because unlikely"
+    },
+    {
+      "lemma": "foolish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "foolish.a.01",
+          "via_synset": "foolish.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "anserine.s.01",
+          "via_synset": "anserine.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "anserine.s.01"
+        }
+      ],
+      "definition": "devoid of good sense or judgment"
+    },
+    {
+      "lemma": "foolishness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "anserine.s.01",
+          "via_synset": "folly.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "foolish.a.01",
+          "via_synset": "folly.n.03"
+        }
+      ],
+      "definition": "the trait of acting stupidly or rashly"
+    },
+    {
+      "lemma": "frivolous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "airheaded.s.01",
+          "via_synset": "frivolous.a.01"
+        }
+      ],
+      "definition": "not serious in content or attitude or behavior"
+    },
+    {
+      "lemma": "gaumless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "gaumless.s.01"
+        }
+      ],
+      "definition": "(British informal) lacking intelligence and vitality"
+    },
+    {
+      "lemma": "giddiness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "airheaded.s.01",
+          "via_synset": "giddiness.n.01"
+        }
+      ],
+      "definition": "an impulsive scatterbrained manner"
+    },
+    {
+      "lemma": "giddy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "airheaded.s.01",
+          "via_synset": "airheaded.s.01"
+        }
+      ],
+      "definition": "lacking seriousness; given to frivolity"
+    },
+    {
+      "lemma": "goofy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "cockamamie.s.01"
+        }
+      ],
+      "definition": "ludicrous, foolish"
+    },
+    {
+      "lemma": "goose",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "anserine.s.01",
+          "via_synset": "fathead.n.01"
+        }
+      ],
+      "definition": "a man who is a stupid incompetent fool"
+    },
+    {
+      "lemma": "gooselike",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "anserine.s.01",
+          "via_synset": "anserine.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "anserine.s.01"
+        }
+      ],
+      "definition": "having or revealing stupidity"
+    },
+    {
+      "lemma": "goosey",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "anserine.s.01",
+          "via_synset": "anserine.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "anserine.s.01"
+        }
+      ],
+      "definition": "having or revealing stupidity"
+    },
+    {
+      "lemma": "goosy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "anserine.s.01",
+          "via_synset": "anserine.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "anserine.s.01"
+        }
+      ],
+      "definition": "having or revealing stupidity"
+    },
+    {
+      "lemma": "gormless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "gaumless.s.01"
+        }
+      ],
+      "definition": "(British informal) lacking intelligence and vitality"
+    },
+    {
+      "lemma": "harebrained",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "harebrained.s.01"
+        }
+      ],
+      "definition": "very foolish"
+    },
+    {
+      "lemma": "headless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "unintelligent.a.01",
+          "via_synset": "brainless.s.01"
+        }
+      ],
+      "definition": "not using intelligence"
+    },
+    {
+      "lemma": "idiotic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "absurd.s.02"
+        }
+      ],
+      "definition": "incongruous;inviting ridicule"
+    },
+    {
+      "lemma": "ill-advised",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "foolish.a.01",
+          "via_synset": "ill-advised.a.01"
+        }
+      ],
+      "definition": "without careful prior deliberation or counsel"
+    },
+    {
+      "lemma": "ill-conceived",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "ill-conceived.s.01"
+        }
+      ],
+      "definition": "poorly conceived or thought out"
+    },
+    {
+      "lemma": "impolitic",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "foolish.a.01",
+          "via_synset": "impolitic.a.01"
+        }
+      ],
+      "definition": "not politic"
+    },
+    {
+      "lemma": "imprudent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "foolish.a.01",
+          "via_synset": "imprudent.a.01"
+        }
+      ],
+      "definition": "not prudent or wise; ; - A.M.Schlesinger"
+    },
+    {
+      "lemma": "inadvisable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "foolish.a.01",
+          "via_synset": "inadvisable.a.01"
+        }
+      ],
+      "definition": "not prudent or wise; not recommended"
+    },
+    {
+      "lemma": "inane",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "asinine.s.01"
+        }
+      ],
+      "definition": "devoid of intelligence"
+    },
+    {
+      "lemma": "insane",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "harebrained.s.01"
+        }
+      ],
+      "definition": "very foolish"
+    },
+    {
+      "lemma": "jerk",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "anserine.s.01",
+          "via_synset": "jerk.n.01"
+        }
+      ],
+      "definition": "a dull stupid fatuous person"
+    },
+    {
+      "lemma": "jerky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "anserine.s.01",
+          "via_synset": "anserine.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "anserine.s.01"
+        }
+      ],
+      "definition": "having or revealing stupidity"
+    },
+    {
+      "lemma": "laughable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "absurd.s.02"
+        }
+      ],
+      "definition": "incongruous;inviting ridicule"
+    },
+    {
+      "lemma": "light-headed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "airheaded.s.01",
+          "via_synset": "airheaded.s.01"
+        }
+      ],
+      "definition": "lacking seriousness; given to frivolity"
+    },
+    {
+      "lemma": "lightheaded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "airheaded.s.01",
+          "via_synset": "airheaded.s.01"
+        }
+      ],
+      "definition": "lacking seriousness; given to frivolity"
+    },
+    {
+      "lemma": "lightheadedness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "airheaded.s.01",
+          "via_synset": "lightheadedness.n.02"
+        }
+      ],
+      "definition": "a frivolous lack of prudence"
+    },
+    {
+      "lemma": "loggerheaded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "blockheaded.s.01"
+        }
+      ],
+      "definition": "(used informally) stupid"
+    },
+    {
+      "lemma": "ludicrous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "absurd.s.02"
+        }
+      ],
+      "definition": "incongruous;inviting ridicule"
+    },
+    {
+      "lemma": "lumpen",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "lumpish.s.01"
+        }
+      ],
+      "definition": "mentally sluggish"
+    },
+    {
+      "lemma": "lumpish",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "lumpish.s.01"
+        }
+      ],
+      "definition": "mentally sluggish"
+    },
+    {
+      "lemma": "mad",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "harebrained.s.01"
+        }
+      ],
+      "definition": "very foolish"
+    },
+    {
+      "lemma": "mindless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "asinine.s.01"
+        }
+      ],
+      "definition": "devoid of intelligence"
+    },
+    {
+      "lemma": "misguided",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "ill-conceived.s.01"
+        }
+      ],
+      "definition": "poorly conceived or thought out"
+    },
+    {
+      "lemma": "nitwitted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "nitwitted.s.01"
+        }
+      ],
+      "definition": "(of especially persons) lacking sense or understanding or judgment"
+    },
+    {
+      "lemma": "nonsensical",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "absurd.s.02"
+        }
+      ],
+      "definition": "incongruous;inviting ridicule"
+    },
+    {
+      "lemma": "obtuse",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "dense.s.04"
+        }
+      ],
+      "definition": "slow to learn or understand; lacking intellectual acuity; ; ; - Thackeray"
+    },
+    {
+      "lemma": "preposterous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "absurd.s.02"
+        }
+      ],
+      "definition": "incongruous;inviting ridicule"
+    },
+    {
+      "lemma": "punch-drunk",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "punch-drunk.s.01",
+          "via_synset": "punch-drunk.s.01"
+        }
+      ],
+      "definition": "dazed from or as if from repeated blows"
+    },
+    {
+      "lemma": "rattlebrained",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "rattlebrained.s.01"
+        }
+      ],
+      "definition": "lacking sense or discretion; ; - Glenway Westcott"
+    },
+    {
+      "lemma": "rattlepated",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "rattlebrained.s.01"
+        }
+      ],
+      "definition": "lacking sense or discretion; ; - Glenway Westcott"
+    },
+    {
+      "lemma": "retarded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unintelligent.a.01",
+          "via_synset": "retarded.a.01"
+        }
+      ],
+      "definition": "relatively slow in mental or emotional or physical development"
+    },
+    {
+      "lemma": "ridiculous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "absurd.s.02"
+        }
+      ],
+      "definition": "incongruous;inviting ridicule"
+    },
+    {
+      "lemma": "sappy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "cockamamie.s.01"
+        }
+      ],
+      "definition": "ludicrous, foolish"
+    },
+    {
+      "lemma": "scatterbrained",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "rattlebrained.s.01"
+        }
+      ],
+      "definition": "lacking sense or discretion; ; - Glenway Westcott"
+    },
+    {
+      "lemma": "scatty",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "rattlebrained.s.01"
+        }
+      ],
+      "definition": "lacking sense or discretion; ; - Glenway Westcott"
+    },
+    {
+      "lemma": "senseless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "nitwitted.s.01"
+        }
+      ],
+      "definition": "(of especially persons) lacking sense or understanding or judgment"
+    },
+    {
+      "lemma": "silliness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "airheaded.s.01",
+          "via_synset": "giddiness.n.01"
+        }
+      ],
+      "definition": "an impulsive scatterbrained manner"
+    },
+    {
+      "lemma": "silly",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "airheaded.s.01",
+          "via_synset": "airheaded.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "punch-drunk.s.01",
+          "via_synset": "punch-drunk.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "cockamamie.s.01"
+        }
+      ],
+      "definition": "lacking seriousness; given to frivolity"
+    },
+    {
+      "lemma": "slaphappy",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "punch-drunk.s.01",
+          "via_synset": "punch-drunk.s.01"
+        }
+      ],
+      "definition": "dazed from or as if from repeated blows"
+    },
+    {
+      "lemma": "slow",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "dense.s.04"
+        }
+      ],
+      "definition": "slow to learn or understand; lacking intellectual acuity; ; ; - Thackeray"
+    },
+    {
+      "lemma": "smart",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "stupid.a.01",
+          "via_synset": "smart.a.01"
+        }
+      ],
+      "definition": "showing mental alertness and calculation and resourcefulness"
+    },
+    {
+      "lemma": "soft-witted",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "nitwitted.s.01"
+        }
+      ],
+      "definition": "(of especially persons) lacking sense or understanding or judgment"
+    },
+    {
+      "lemma": "stupid",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "stupid.a.01",
+          "via_synset": "stupid.a.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unintelligent.a.01",
+          "via_synset": "unintelligent.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "anserine.s.01",
+          "via_synset": "stupid.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "stupid.a.01",
+          "via_synset": "unintelligent.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "unintelligent.a.01",
+          "via_synset": "stupid.a.01"
+        }
+      ],
+      "definition": "lacking or marked by lack of intellectual acuity"
+    },
+    {
+      "lemma": "stupid",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "stupid.a.01",
+          "via_synset": "stupid.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unintelligent.a.01",
+          "via_synset": "stupid.n.01"
+        }
+      ],
+      "definition": "a person who is not very bright"
+    },
+    {
+      "lemma": "stupidity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "stupid.a.01",
+          "via_synset": "stupidity.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "unintelligent.a.01",
+          "via_synset": "stupidity.n.01"
+        }
+      ],
+      "definition": "a poor ability to understand or to profit from experience"
+    },
+    {
+      "lemma": "thick",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "blockheaded.s.01"
+        }
+      ],
+      "definition": "(used informally) stupid"
+    },
+    {
+      "lemma": "thick-skulled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "blockheaded.s.01"
+        }
+      ],
+      "definition": "(used informally) stupid"
+    },
+    {
+      "lemma": "thickheaded",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "blockheaded.s.01"
+        }
+      ],
+      "definition": "(used informally) stupid"
+    },
+    {
+      "lemma": "unadvisable",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "foolish.a.01",
+          "via_synset": "inadvisable.a.01"
+        }
+      ],
+      "definition": "not prudent or wise; not recommended"
+    },
+    {
+      "lemma": "unadvised",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "foolish.a.01",
+          "via_synset": "ill-advised.a.01"
+        }
+      ],
+      "definition": "without careful prior deliberation or counsel"
+    },
+    {
+      "lemma": "unintelligent",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "unintelligent.a.01",
+          "via_synset": "unintelligent.a.01"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "stupid.a.01",
+          "via_synset": "unintelligent.a.01"
+        }
+      ],
+      "definition": "lacking intelligence"
+    },
+    {
+      "lemma": "unthinking",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "lumpish.s.01"
+        }
+      ],
+      "definition": "mentally sluggish"
+    },
+    {
+      "lemma": "unwise",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "unwise.s.01"
+        }
+      ],
+      "definition": "showing or resulting from lack of judgment or wisdom"
+    },
+    {
+      "lemma": "vacuous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "asinine.s.01"
+        }
+      ],
+      "definition": "devoid of intelligence"
+    },
+    {
+      "lemma": "wacky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "cockamamie.s.01"
+        }
+      ],
+      "definition": "ludicrous, foolish"
+    },
+    {
+      "lemma": "weak",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "weak.s.11"
+        }
+      ],
+      "definition": "deficient in intelligence or mental power"
+    },
+    {
+      "lemma": "whacky",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "cockamamie.s.01"
+        }
+      ],
+      "definition": "ludicrous, foolish"
+    },
+    {
+      "lemma": "witless",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "nitwitted.s.01"
+        }
+      ],
+      "definition": "(of especially persons) lacking sense or understanding or judgment"
+    },
+    {
+      "lemma": "wooden-headed",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "blockheaded.s.01"
+        }
+      ],
+      "definition": "(used informally) stupid"
+    },
+    {
+      "lemma": "yokel-like",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "stupid.a.01",
+          "via_synset": "yokel-like.s.01"
+        }
+      ],
+      "definition": "stupid and ignorant like proverbial rural inhabitants"
+    },
+    {
+      "lemma": "zany",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "foolish.a.01",
+          "via_synset": "cockamamie.s.01"
+        }
+      ],
+      "definition": "ludicrous, foolish"
+    }
+  ]
+}

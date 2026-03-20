@@ -1,0 +1,710 @@
+{
+  "atom_id": "EMO.forgiveness",
+  "category": "EMO",
+  "seed_count": 4,
+  "total_keys": 42,
+  "pos_counts": {
+    "n": 24,
+    "v": 18
+  },
+  "source_counts": {
+    "0_seed": 7,
+    "2_hypernym_d1": 9,
+    "10_sibling": 25,
+    "3_hyponym_d1": 2,
+    "6_derivational": 5
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 5,
+      "words": [
+        "forgiveness(n)",
+        "pardon(n)",
+        "amnesty(n)",
+        "free pardon(n)",
+        "let it go(v)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 7,
+      "words": [
+        "kindness(n)",
+        "benignity(n)",
+        "mercifulness(n)",
+        "mercy(n)",
+        "clemency(n)",
+        "refrain(v)",
+        "forbear(v)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 2,
+      "words": [
+        "condonation(n)",
+        "exculpation(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 4,
+      "words": [
+        "exculpate(v)",
+        "condone(v)",
+        "amnesty(v)",
+        "pardon(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "8_also_see",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "9_antonym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "10_sibling",
+      "added": 24,
+      "words": [
+        "cupboard love(n)",
+        "benevolence(n)",
+        "benefaction(n)",
+        "consideration(n)",
+        "thoughtfulness(n)",
+        "favor(n)",
+        "favour(n)",
+        "endearment(n)",
+        "quarter(n)",
+        "reprieve(n)",
+        "respite(n)",
+        "commutation(n)",
+        "re-sentencing(n)",
+        "help oneself(v)",
+        "help(v)",
+        "sit out(v)",
+        "stand by(v)",
+        "hold back(v)",
+        "spare(v)",
+        "save(v)",
+        "abstain(v)",
+        "leave(v)",
+        "leave alone(v)",
+        "leave behind(v)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "abstain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "refrain.v.01",
+          "via_synset": "abstain.v.01"
+        }
+      ],
+      "definition": "refrain from voting"
+    },
+    {
+      "lemma": "amnesty",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "amnesty.n.03",
+          "via_synset": "amnesty.n.03"
+        }
+      ],
+      "definition": "the formal act of liberating someone"
+    },
+    {
+      "lemma": "amnesty",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "amnesty.n.03",
+          "via_synset": "amnesty.v.01"
+        }
+      ],
+      "definition": "grant a pardon to (a group of people)"
+    },
+    {
+      "lemma": "benefaction",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kindness.n.03",
+          "via_synset": "benevolence.n.03"
+        }
+      ],
+      "definition": "an act intending or showing kindness and good will"
+    },
+    {
+      "lemma": "benevolence",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kindness.n.03",
+          "via_synset": "benevolence.n.03"
+        }
+      ],
+      "definition": "an act intending or showing kindness and good will"
+    },
+    {
+      "lemma": "benignity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forgiveness.n.02",
+          "via_synset": "kindness.n.03"
+        }
+      ],
+      "definition": "a kind act"
+    },
+    {
+      "lemma": "clemency",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "amnesty.n.03",
+          "via_synset": "clemency.n.02"
+        }
+      ],
+      "definition": "leniency and compassion shown toward offenders by a person or agency charged with administering justice"
+    },
+    {
+      "lemma": "commutation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "clemency.n.02",
+          "via_synset": "commutation.n.03"
+        }
+      ],
+      "definition": "(law) the reduction in severity of a punishment imposed by law"
+    },
+    {
+      "lemma": "condonation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "forgiveness.n.02",
+          "via_synset": "condonation.n.01"
+        }
+      ],
+      "definition": "a pardon by treating the offender as if the offense had not occurred"
+    },
+    {
+      "lemma": "condone",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "condonation.n.01",
+          "via_synset": "excuse.v.06"
+        }
+      ],
+      "definition": "excuse, overlook, or make allowances for; be lenient with"
+    },
+    {
+      "lemma": "consideration",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kindness.n.03",
+          "via_synset": "consideration.n.06"
+        }
+      ],
+      "definition": "a considerate and thoughtful act"
+    },
+    {
+      "lemma": "cupboard love",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kindness.n.03",
+          "via_synset": "cupboard_love.n.01"
+        }
+      ],
+      "definition": "a show of affection motivated by selfishness"
+    },
+    {
+      "lemma": "endearment",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kindness.n.03",
+          "via_synset": "endearment.n.01"
+        }
+      ],
+      "definition": "the act of showing affection"
+    },
+    {
+      "lemma": "exculpate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "exculpation.n.02",
+          "via_synset": "acquit.v.01"
+        }
+      ],
+      "definition": "pronounce not guilty of criminal charges"
+    },
+    {
+      "lemma": "exculpation",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "forgiveness.n.02",
+          "via_synset": "exculpation.n.02"
+        }
+      ],
+      "definition": "the act of freeing from guilt or blame"
+    },
+    {
+      "lemma": "favor",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kindness.n.03",
+          "via_synset": "favor.n.01"
+        }
+      ],
+      "definition": "an act of gracious kindness"
+    },
+    {
+      "lemma": "favour",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kindness.n.03",
+          "via_synset": "favor.n.01"
+        }
+      ],
+      "definition": "an act of gracious kindness"
+    },
+    {
+      "lemma": "forbear",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "let_it_go.v.01",
+          "via_synset": "refrain.v.01"
+        },
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "refrain.v.01",
+          "via_synset": "forbear.v.01"
+        }
+      ],
+      "definition": "resist doing something"
+    },
+    {
+      "lemma": "forgiveness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "forgiveness.n.02",
+          "via_synset": "forgiveness.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "forgiveness.n.01",
+          "via_synset": "forgiveness.n.01"
+        }
+      ],
+      "definition": "the act of excusing a mistake or offense"
+    },
+    {
+      "lemma": "free pardon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "amnesty.n.03",
+          "via_synset": "amnesty.n.03"
+        }
+      ],
+      "definition": "the formal act of liberating someone"
+    },
+    {
+      "lemma": "help",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "refrain.v.01",
+          "via_synset": "help_oneself.v.01"
+        }
+      ],
+      "definition": "abstain from doing; always used with a negative"
+    },
+    {
+      "lemma": "help oneself",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "refrain.v.01",
+          "via_synset": "help_oneself.v.01"
+        }
+      ],
+      "definition": "abstain from doing; always used with a negative"
+    },
+    {
+      "lemma": "hold back",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "refrain.v.01",
+          "via_synset": "forbear.v.01"
+        }
+      ],
+      "definition": "refrain from doing"
+    },
+    {
+      "lemma": "kindness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forgiveness.n.02",
+          "via_synset": "kindness.n.03"
+        }
+      ],
+      "definition": "a kind act"
+    },
+    {
+      "lemma": "leave",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "refrain.v.01",
+          "via_synset": "leave.v.04"
+        }
+      ],
+      "definition": "leave unchanged or undisturbed or refrain from taking"
+    },
+    {
+      "lemma": "leave alone",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "refrain.v.01",
+          "via_synset": "leave.v.04"
+        }
+      ],
+      "definition": "leave unchanged or undisturbed or refrain from taking"
+    },
+    {
+      "lemma": "leave behind",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "refrain.v.01",
+          "via_synset": "leave.v.04"
+        }
+      ],
+      "definition": "leave unchanged or undisturbed or refrain from taking"
+    },
+    {
+      "lemma": "let it go",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "let_it_go.v.01",
+          "via_synset": "let_it_go.v.01"
+        }
+      ],
+      "definition": "not act"
+    },
+    {
+      "lemma": "mercifulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forgiveness.n.01",
+          "via_synset": "mercifulness.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "amnesty.n.03",
+          "via_synset": "clemency.n.02"
+        }
+      ],
+      "definition": "the feeling that motivates compassion"
+    },
+    {
+      "lemma": "mercy",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "forgiveness.n.01",
+          "via_synset": "mercifulness.n.01"
+        },
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "amnesty.n.03",
+          "via_synset": "clemency.n.02"
+        }
+      ],
+      "definition": "the feeling that motivates compassion"
+    },
+    {
+      "lemma": "pardon",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "forgiveness.n.02",
+          "via_synset": "forgiveness.n.02"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "amnesty.n.03",
+          "via_synset": "amnesty.n.03"
+        }
+      ],
+      "definition": "the act of excusing a mistake or offense"
+    },
+    {
+      "lemma": "pardon",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "amnesty.n.03",
+          "via_synset": "pardon.v.02"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "forgiveness.n.02",
+          "via_synset": "excuse.v.01"
+        }
+      ],
+      "definition": "grant a pardon to"
+    },
+    {
+      "lemma": "quarter",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "clemency.n.02",
+          "via_synset": "quarter.n.14"
+        }
+      ],
+      "definition": "clemency or mercy shown to a defeated opponent"
+    },
+    {
+      "lemma": "re-sentencing",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "clemency.n.02",
+          "via_synset": "commutation.n.03"
+        }
+      ],
+      "definition": "(law) the reduction in severity of a punishment imposed by law"
+    },
+    {
+      "lemma": "refrain",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "let_it_go.v.01",
+          "via_synset": "refrain.v.01"
+        }
+      ],
+      "definition": "resist doing something"
+    },
+    {
+      "lemma": "reprieve",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "clemency.n.02",
+          "via_synset": "reprieve.n.04"
+        }
+      ],
+      "definition": "the act of reprieving; postponing or remitting punishment"
+    },
+    {
+      "lemma": "respite",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "clemency.n.02",
+          "via_synset": "reprieve.n.04"
+        }
+      ],
+      "definition": "the act of reprieving; postponing or remitting punishment"
+    },
+    {
+      "lemma": "save",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "refrain.v.01",
+          "via_synset": "spare.v.01"
+        }
+      ],
+      "definition": "refrain from harming"
+    },
+    {
+      "lemma": "sit out",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "refrain.v.01",
+          "via_synset": "sit_out.v.01"
+        }
+      ],
+      "definition": "not participate in (an activity, such as a dance or a sports event)"
+    },
+    {
+      "lemma": "spare",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "refrain.v.01",
+          "via_synset": "spare.v.01"
+        }
+      ],
+      "definition": "refrain from harming"
+    },
+    {
+      "lemma": "stand by",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "refrain.v.01",
+          "via_synset": "stand_by.v.01"
+        }
+      ],
+      "definition": "not act or do anything"
+    },
+    {
+      "lemma": "thoughtfulness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "kindness.n.03",
+          "via_synset": "consideration.n.06"
+        }
+      ],
+      "definition": "a considerate and thoughtful act"
+    }
+  ]
+}

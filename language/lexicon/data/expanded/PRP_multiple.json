@@ -1,0 +1,1323 @@
+{
+  "atom_id": "PRP.multiple",
+  "category": "PRP",
+  "seed_count": 6,
+  "total_keys": 78,
+  "pos_counts": {
+    "adj": 61,
+    "n": 13,
+    "v": 4
+  },
+  "source_counts": {
+    "0_seed": 9,
+    "6_derivational": 11,
+    "7_similar_to": 69,
+    "2_hypernym_d1": 2,
+    "3_hyponym_d1": 6,
+    "8_also_see": 2,
+    "9_antonym": 1,
+    "10_sibling": 1
+  },
+  "steps": [
+    {
+      "step": "0_seed",
+      "added": 8,
+      "words": [
+        "multiple(adj)",
+        "multiple(n)",
+        "many(adj)",
+        "several(adj)",
+        "respective(adj)",
+        "various(adj)",
+        "numerous(adj)",
+        "legion(adj)"
+      ]
+    },
+    {
+      "step": "2_hypernym_d1",
+      "added": 2,
+      "words": [
+        "product(n)",
+        "mathematical product(n)"
+      ]
+    },
+    {
+      "step": "3_hyponym_d1",
+      "added": 6,
+      "words": [
+        "lowest common multiple(n)",
+        "least common multiple(n)",
+        "lcm(n)",
+        "triple(n)",
+        "quadruple(n)",
+        "double(n)"
+      ]
+    },
+    {
+      "step": "4_hyponym_d2",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "5_hyponym_d3",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "6_derivational",
+      "added": 8,
+      "words": [
+        "double(adj)",
+        "double(v)",
+        "numerosity(n)",
+        "numerousness(n)",
+        "quadruplicate(v)",
+        "quadruple(v)",
+        "multiplicity(n)",
+        "triple(v)"
+      ]
+    },
+    {
+      "step": "7_similar_to",
+      "added": 51,
+      "words": [
+        "treble(adj)",
+        "threefold(adj)",
+        "three-fold(adj)",
+        "triple(adj)",
+        "dual(adj)",
+        "duple(adj)",
+        "ternary(adj)",
+        "triplex(adj)",
+        "binary(adj)",
+        "doubled(adj)",
+        "twofold(adj)",
+        "two-fold(adj)",
+        "sextuple(adj)",
+        "sixfold(adj)",
+        "six-fold(adj)",
+        "bigeminal(adj)",
+        "quintuple(adj)",
+        "fivefold(adj)",
+        "five-fold(adj)",
+        "quaternate(adj)",
+        "quaternary(adj)",
+        "nonuple(adj)",
+        "ninefold(adj)",
+        "nine-fold(adj)",
+        "quadruple(adj)",
+        "fourfold(adj)",
+        "four-fold(adj)",
+        "septuple(adj)",
+        "sevenfold(adj)",
+        "seven-fold(adj)",
+        "aggregate(adj)",
+        "manifold(adj)",
+        "multiplex(adj)",
+        "quadruplicate(adj)",
+        "quadruplex(adj)",
+        "triune(adj)",
+        "duplex(adj)",
+        "octuple(adj)",
+        "eightfold(adj)",
+        "eight-fold(adj)",
+        "tenfold(adj)",
+        "ten-fold(adj)",
+        "denary(adj)",
+        "individual(adj)",
+        "some(adj)",
+        "umpteen(adj)",
+        "umteen(adj)",
+        "many a(adj)",
+        "many an(adj)",
+        "many another(adj)",
+        "galore(adj)"
+      ]
+    },
+    {
+      "step": "8_also_see",
+      "added": 1,
+      "words": [
+        "more(adj)"
+      ]
+    },
+    {
+      "step": "9_antonym",
+      "added": 1,
+      "words": [
+        "few(adj)"
+      ]
+    },
+    {
+      "step": "10_sibling",
+      "added": 1,
+      "words": [
+        "factorial(n)"
+      ]
+    },
+    {
+      "step": "11_pertainym",
+      "added": 0,
+      "words": []
+    },
+    {
+      "step": "12_verb_group",
+      "added": 0,
+      "words": []
+    }
+  ],
+  "candidates": [
+    {
+      "lemma": "aggregate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "aggregate.s.02"
+        }
+      ],
+      "definition": "composed of a dense cluster of separate units such as carpels or florets or drupelets"
+    },
+    {
+      "lemma": "bigeminal",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "bigeminal.s.01"
+        }
+      ],
+      "definition": "occurring in pairs"
+    },
+    {
+      "lemma": "binary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "binary.s.01"
+        }
+      ],
+      "definition": "consisting of two (units or components or elements or terms)"
+    },
+    {
+      "lemma": "denary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "tenfold.s.01"
+        }
+      ],
+      "definition": "containing ten or ten parts"
+    },
+    {
+      "lemma": "double",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "double.n.04",
+          "via_synset": "double.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "double.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "double.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "double.s.01"
+        }
+      ],
+      "definition": "twice as great or many"
+    },
+    {
+      "lemma": "double",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "multiple.n.01",
+          "via_synset": "double.n.04"
+        }
+      ],
+      "definition": "a quantity that is twice as great as another"
+    },
+    {
+      "lemma": "double",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "double.n.04",
+          "via_synset": "duplicate.v.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "double.n.04",
+          "via_synset": "double.v.01"
+        }
+      ],
+      "definition": "make or do or perform again"
+    },
+    {
+      "lemma": "doubled",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "double.s.03"
+        }
+      ],
+      "definition": "twice as great or many"
+    },
+    {
+      "lemma": "dual",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "double.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "double.s.01"
+        }
+      ],
+      "definition": "consisting of or involving two parts or components usually in pairs"
+    },
+    {
+      "lemma": "duple",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "double.s.02"
+        }
+      ],
+      "definition": "consisting of or involving two parts or components usually in pairs"
+    },
+    {
+      "lemma": "duplex",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "duplex.s.01"
+        }
+      ],
+      "definition": "(used technically of a device or process) having two parts"
+    },
+    {
+      "lemma": "eight-fold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "octuple.s.01"
+        }
+      ],
+      "definition": "having eight units or components"
+    },
+    {
+      "lemma": "eightfold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "octuple.s.01"
+        }
+      ],
+      "definition": "having eight units or components"
+    },
+    {
+      "lemma": "factorial",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "10_sibling",
+          "relation": "sibling",
+          "from_synset": "product.n.03",
+          "via_synset": "factorial.n.01"
+        }
+      ],
+      "definition": "the product of all the integers up to and including a given integer"
+    },
+    {
+      "lemma": "few",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "9_antonym",
+          "relation": "antonym",
+          "from_synset": "many.a.01",
+          "via_synset": "few.a.01"
+        }
+      ],
+      "definition": "a quantifier that can be used with count nouns and is often preceded by `a'; a small but indefinite number"
+    },
+    {
+      "lemma": "five-fold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "quintuple.s.01"
+        }
+      ],
+      "definition": "having five units or components"
+    },
+    {
+      "lemma": "fivefold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "quintuple.s.01"
+        }
+      ],
+      "definition": "having five units or components"
+    },
+    {
+      "lemma": "four-fold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "quadruple.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "quadruple.s.01"
+        }
+      ],
+      "definition": "four times as great or many"
+    },
+    {
+      "lemma": "fourfold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "quadruple.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "quadruple.s.01"
+        }
+      ],
+      "definition": "four times as great or many"
+    },
+    {
+      "lemma": "galore",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "many.a.01",
+          "via_synset": "galore.s.01"
+        }
+      ],
+      "definition": "in great numbers"
+    },
+    {
+      "lemma": "individual",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "respective.s.01",
+          "via_synset": "individual.a.01"
+        }
+      ],
+      "definition": "being or characteristic of a single thing or person"
+    },
+    {
+      "lemma": "lcm",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "multiple.n.01",
+          "via_synset": "lowest_common_multiple.n.01"
+        }
+      ],
+      "definition": "the smallest multiple that is exactly divisible by every member of a set of numbers"
+    },
+    {
+      "lemma": "least common multiple",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "multiple.n.01",
+          "via_synset": "lowest_common_multiple.n.01"
+        }
+      ],
+      "definition": "the smallest multiple that is exactly divisible by every member of a set of numbers"
+    },
+    {
+      "lemma": "legion",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "numerous.s.01",
+          "via_synset": "numerous.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "many.a.01",
+          "via_synset": "numerous.s.01"
+        }
+      ],
+      "definition": "amounting to a large indefinite number"
+    },
+    {
+      "lemma": "lowest common multiple",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "multiple.n.01",
+          "via_synset": "lowest_common_multiple.n.01"
+        }
+      ],
+      "definition": "the smallest multiple that is exactly divisible by every member of a set of numbers"
+    },
+    {
+      "lemma": "manifold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "manifold.s.01"
+        }
+      ],
+      "definition": "many and varied; having many features or forms"
+    },
+    {
+      "lemma": "many",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "many.a.01",
+          "via_synset": "many.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "numerous.s.01",
+          "via_synset": "many.a.01"
+        }
+      ],
+      "definition": "a quantifier that can be used with count nouns and is often preceded by `as' or `too' or `so' or `that'; amounting to a large but indefinite number"
+    },
+    {
+      "lemma": "many a",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "many.a.01",
+          "via_synset": "many_a.s.01"
+        }
+      ],
+      "definition": "each of a large indefinite number"
+    },
+    {
+      "lemma": "many an",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "many.a.01",
+          "via_synset": "many_a.s.01"
+        }
+      ],
+      "definition": "each of a large indefinite number"
+    },
+    {
+      "lemma": "many another",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "many.a.01",
+          "via_synset": "many_a.s.01"
+        }
+      ],
+      "definition": "each of a large indefinite number"
+    },
+    {
+      "lemma": "mathematical product",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "multiple.n.01",
+          "via_synset": "product.n.03"
+        }
+      ],
+      "definition": "a quantity obtained by multiplication"
+    },
+    {
+      "lemma": "more",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "many.a.01",
+          "via_synset": "more.a.02"
+        }
+      ],
+      "definition": "(comparative of `many' used with count nouns) quantifier meaning greater in number"
+    },
+    {
+      "lemma": "multiple",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "multiple.a.01",
+          "via_synset": "multiple.a.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "multiple.n.01",
+          "via_synset": "multiple.a.01"
+        }
+      ],
+      "definition": "having or involving or consisting of more than one part or entity or individual"
+    },
+    {
+      "lemma": "multiple",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "multiple.n.01",
+          "via_synset": "multiple.n.01"
+        },
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "multiple.a.01",
+          "via_synset": "multiple.n.01"
+        }
+      ],
+      "definition": "the product of a quantity by an integer"
+    },
+    {
+      "lemma": "multiplex",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "manifold.s.01"
+        }
+      ],
+      "definition": "many and varied; having many features or forms"
+    },
+    {
+      "lemma": "multiplicity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "multiple.a.01",
+          "via_synset": "multiplicity.n.01"
+        }
+      ],
+      "definition": "the property of being multiple"
+    },
+    {
+      "lemma": "nine-fold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "nonuple.s.01"
+        }
+      ],
+      "definition": "having nine units or components"
+    },
+    {
+      "lemma": "ninefold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "nonuple.s.01"
+        }
+      ],
+      "definition": "having nine units or components"
+    },
+    {
+      "lemma": "nonuple",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "nonuple.s.01"
+        }
+      ],
+      "definition": "having nine units or components"
+    },
+    {
+      "lemma": "numerosity",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "numerous.s.01",
+          "via_synset": "numerousness.n.01"
+        }
+      ],
+      "definition": "a large number"
+    },
+    {
+      "lemma": "numerous",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "numerous.s.01",
+          "via_synset": "numerous.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "many.a.01",
+          "via_synset": "numerous.s.01"
+        }
+      ],
+      "definition": "amounting to a large indefinite number"
+    },
+    {
+      "lemma": "numerousness",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "numerous.s.01",
+          "via_synset": "numerousness.n.01"
+        }
+      ],
+      "definition": "a large number"
+    },
+    {
+      "lemma": "octuple",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "octuple.s.01"
+        }
+      ],
+      "definition": "having eight units or components"
+    },
+    {
+      "lemma": "product",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "2_hypernym_d1",
+          "relation": "hypernym",
+          "from_synset": "multiple.n.01",
+          "via_synset": "product.n.03"
+        }
+      ],
+      "definition": "a quantity obtained by multiplication"
+    },
+    {
+      "lemma": "quadruple",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "quadruple.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "quadruple.s.01"
+        }
+      ],
+      "definition": "four times as great or many"
+    },
+    {
+      "lemma": "quadruple",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "multiple.n.01",
+          "via_synset": "quadruple.n.02"
+        }
+      ],
+      "definition": "a quantity that is four times as great as another"
+    },
+    {
+      "lemma": "quadruple",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "quadruple.n.02",
+          "via_synset": "quadruple.v.01"
+        }
+      ],
+      "definition": "increase fourfold"
+    },
+    {
+      "lemma": "quadruplex",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "quadruple.s.01"
+        }
+      ],
+      "definition": "having four units or components"
+    },
+    {
+      "lemma": "quadruplicate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "quadruple.s.01"
+        }
+      ],
+      "definition": "having four units or components"
+    },
+    {
+      "lemma": "quadruplicate",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "quadruple.n.02",
+          "via_synset": "quadruplicate.v.01"
+        }
+      ],
+      "definition": "reproduce fourfold"
+    },
+    {
+      "lemma": "quaternary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "quaternate.s.01"
+        }
+      ],
+      "definition": "consisting of or especially arranged in sets of four"
+    },
+    {
+      "lemma": "quaternate",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "quaternate.s.01"
+        }
+      ],
+      "definition": "consisting of or especially arranged in sets of four"
+    },
+    {
+      "lemma": "quintuple",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "quintuple.s.01"
+        }
+      ],
+      "definition": "having five units or components"
+    },
+    {
+      "lemma": "respective",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "respective.s.01",
+          "via_synset": "respective.s.01"
+        }
+      ],
+      "definition": "considered individually"
+    },
+    {
+      "lemma": "septuple",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "septuple.s.01"
+        }
+      ],
+      "definition": "having seven units or components"
+    },
+    {
+      "lemma": "seven-fold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "septuple.s.01"
+        }
+      ],
+      "definition": "having seven units or components"
+    },
+    {
+      "lemma": "sevenfold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "septuple.s.01"
+        }
+      ],
+      "definition": "having seven units or components"
+    },
+    {
+      "lemma": "several",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "several.s.01",
+          "via_synset": "several.s.01"
+        },
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "respective.s.01",
+          "via_synset": "respective.s.01"
+        }
+      ],
+      "definition": "(used with count nouns) of an indefinite number more than 2 or 3 but not many"
+    },
+    {
+      "lemma": "sextuple",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "sextuple.s.01"
+        }
+      ],
+      "definition": "having six units or components"
+    },
+    {
+      "lemma": "six-fold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "sextuple.s.01"
+        }
+      ],
+      "definition": "having six units or components"
+    },
+    {
+      "lemma": "sixfold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "sextuple.s.01"
+        }
+      ],
+      "definition": "having six units or components"
+    },
+    {
+      "lemma": "some",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "several.s.01",
+          "via_synset": "some.a.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "many.a.01",
+          "via_synset": "some.s.02"
+        },
+        {
+          "step": "8_also_see",
+          "relation": "also_see",
+          "from_synset": "many.a.01",
+          "via_synset": "some.a.01"
+        }
+      ],
+      "definition": "quantifier; used with either mass nouns or plural count nouns to indicate an unspecified number or quantity"
+    },
+    {
+      "lemma": "ten-fold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "tenfold.s.01"
+        }
+      ],
+      "definition": "containing ten or ten parts"
+    },
+    {
+      "lemma": "tenfold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "tenfold.s.01"
+        }
+      ],
+      "definition": "containing ten or ten parts"
+    },
+    {
+      "lemma": "ternary",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "ternary.s.01"
+        }
+      ],
+      "definition": "having three units or components or elements"
+    },
+    {
+      "lemma": "three-fold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "treble.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "double.s.01"
+        }
+      ],
+      "definition": "three times as great or many"
+    },
+    {
+      "lemma": "threefold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "treble.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "double.s.01"
+        }
+      ],
+      "definition": "three times as great or many"
+    },
+    {
+      "lemma": "treble",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "treble.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "ternary.s.01"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "double.s.01"
+        }
+      ],
+      "definition": "three times as great or many"
+    },
+    {
+      "lemma": "triple",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "treble.s.02"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "ternary.s.01"
+        }
+      ],
+      "definition": "three times as great or many"
+    },
+    {
+      "lemma": "triple",
+      "pos": "n",
+      "paths": [
+        {
+          "step": "3_hyponym_d1",
+          "relation": "hyponym",
+          "from_synset": "multiple.n.01",
+          "via_synset": "triple.n.03"
+        }
+      ],
+      "definition": "a quantity that is three times as great as another"
+    },
+    {
+      "lemma": "triple",
+      "pos": "v",
+      "paths": [
+        {
+          "step": "6_derivational",
+          "relation": "derivational",
+          "from_synset": "triple.n.03",
+          "via_synset": "triple.v.01"
+        }
+      ],
+      "definition": "increase threefold"
+    },
+    {
+      "lemma": "triplex",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "ternary.s.01"
+        }
+      ],
+      "definition": "having three units or components or elements"
+    },
+    {
+      "lemma": "triune",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "triune.s.01"
+        }
+      ],
+      "definition": "being three in one; used especially of the Christian Trinity"
+    },
+    {
+      "lemma": "two-fold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "double.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "double.s.01"
+        }
+      ],
+      "definition": "twice as great or many"
+    },
+    {
+      "lemma": "twofold",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "double.s.03"
+        },
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "multiple.a.01",
+          "via_synset": "double.s.01"
+        }
+      ],
+      "definition": "twice as great or many"
+    },
+    {
+      "lemma": "umpteen",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "many.a.01",
+          "via_synset": "umpteen.s.01"
+        }
+      ],
+      "definition": "innumerable but many"
+    },
+    {
+      "lemma": "umteen",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "7_similar_to",
+          "relation": "similar_to",
+          "from_synset": "many.a.01",
+          "via_synset": "umpteen.s.01"
+        }
+      ],
+      "definition": "innumerable but many"
+    },
+    {
+      "lemma": "various",
+      "pos": "adj",
+      "paths": [
+        {
+          "step": "0_seed",
+          "relation": "seed_lemma",
+          "from_synset": "respective.s.01",
+          "via_synset": "respective.s.01"
+        }
+      ],
+      "definition": "considered individually"
+    }
+  ]
+}
