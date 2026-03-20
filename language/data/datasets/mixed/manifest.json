@@ -1,0 +1,263 @@
+{
+  "manifest_version": "v0.1.0",
+  "dataset_name": "mixed",
+  "created_at": "2026-02-01T14:06:06.153980+00:00",
+  "article_count": 15,
+  "articles": {
+    "mil_oda_nobunaga": {
+      "title": "Oda Nobunaga",
+      "prefix": "mil",
+      "text_file": "mil_oda_nobunaga.txt",
+      "artifact_file": "../../artifacts/mil_oda_nobunaga.json",
+      "traces": {
+        "text:char_count": 87746,
+        "text:word_count": 14148,
+        "text:line_count": 518,
+        "meta:domain": "en.wikipedia.org",
+        "http:status_code": 200,
+        "wiki:section_count": 49,
+        "fs:artifact_path": "data/artifacts/mil_oda_nobunaga.json",
+        "harvest:fetched_at": "2026-02-01T14:05:26.732685+00:00",
+        "harvest:api_version": "wikipedia_extracts_v1"
+      }
+    },
+    "mil_cao_cao": {
+      "title": "Cao Cao",
+      "prefix": "mil",
+      "text_file": "mil_cao_cao.txt",
+      "artifact_file": "../../artifacts/mil_cao_cao.json",
+      "traces": {
+        "text:char_count": 95424,
+        "text:word_count": 16478,
+        "text:line_count": 417,
+        "meta:domain": "en.wikipedia.org",
+        "http:status_code": 200,
+        "wiki:section_count": 66,
+        "fs:artifact_path": "data/artifacts/mil_cao_cao.json",
+        "harvest:fetched_at": "2026-02-01T14:05:30.304440+00:00",
+        "harvest:api_version": "wikipedia_extracts_v1"
+      }
+    },
+    "mil_napoleon": {
+      "title": "Napoleon",
+      "prefix": "mil",
+      "text_file": "mil_napoleon.txt",
+      "artifact_file": "../../artifacts/mil_napoleon.json",
+      "traces": {
+        "text:char_count": 88253,
+        "text:word_count": 14072,
+        "text:line_count": 358,
+        "meta:domain": "en.wikipedia.org",
+        "http:status_code": 200,
+        "wiki:section_count": 43,
+        "fs:artifact_path": "data/artifacts/mil_napoleon.json",
+        "harvest:fetched_at": "2026-02-01T14:05:33.158729+00:00",
+        "harvest:api_version": "wikipedia_extracts_v1"
+      }
+    },
+    "mil_hannibal": {
+      "title": "Hannibal",
+      "prefix": "mil",
+      "text_file": "mil_hannibal.txt",
+      "artifact_file": "../../artifacts/mil_hannibal.json",
+      "traces": {
+        "text:char_count": 59653,
+        "text:word_count": 9805,
+        "text:line_count": 206,
+        "meta:domain": "en.wikipedia.org",
+        "http:status_code": 200,
+        "wiki:section_count": 29,
+        "fs:artifact_path": "data/artifacts/mil_hannibal.json",
+        "harvest:fetched_at": "2026-02-01T14:05:34.971081+00:00",
+        "harvest:api_version": "wikipedia_extracts_v1"
+      }
+    },
+    "mil_alexander_the_great": {
+      "title": "Alexander the Great",
+      "prefix": "mil",
+      "text_file": "mil_alexander_the_great.txt",
+      "artifact_file": "../../artifacts/mil_alexander_the_great.json",
+      "traces": {
+        "text:char_count": 89462,
+        "text:word_count": 14249,
+        "text:line_count": 388,
+        "meta:domain": "en.wikipedia.org",
+        "http:status_code": 200,
+        "wiki:section_count": 54,
+        "fs:artifact_path": "data/artifacts/mil_alexander_the_great.json",
+        "harvest:fetched_at": "2026-02-01T14:05:37.465887+00:00",
+        "harvest:api_version": "wikipedia_extracts_v1"
+      }
+    },
+    "sch_albert_einstein": {
+      "title": "Albert Einstein",
+      "prefix": "sch",
+      "text_file": "sch_albert_einstein.txt",
+      "artifact_file": "../../artifacts/sch_albert_einstein.json",
+      "traces": {
+        "text:char_count": 88247,
+        "text:word_count": 14023,
+        "text:line_count": 437,
+        "meta:domain": "en.wikipedia.org",
+        "http:status_code": 200,
+        "wiki:section_count": 40,
+        "fs:artifact_path": "data/artifacts/sch_albert_einstein.json",
+        "harvest:fetched_at": "2026-02-01T14:05:39.657292+00:00",
+        "harvest:api_version": "wikipedia_extracts_v1"
+      }
+    },
+    "sch_abraham_maslow": {
+      "title": "Abraham Maslow",
+      "prefix": "sch",
+      "text_file": "sch_abraham_maslow.txt",
+      "artifact_file": "../../artifacts/sch_abraham_maslow.json",
+      "traces": {
+        "text:char_count": 34263,
+        "text:word_count": 5062,
+        "text:line_count": 215,
+        "meta:domain": "en.wikipedia.org",
+        "http:status_code": 200,
+        "wiki:section_count": 27,
+        "fs:artifact_path": "data/artifacts/sch_abraham_maslow.json",
+        "harvest:fetched_at": "2026-02-01T14:05:42.016314+00:00",
+        "harvest:api_version": "wikipedia_extracts_v1"
+      }
+    },
+    "sch_rene_descartes": {
+      "title": "René Descartes",
+      "prefix": "sch",
+      "text_file": "sch_rene_descartes.txt",
+      "artifact_file": "../../artifacts/sch_rene_descartes.json",
+      "traces": {
+        "text:char_count": 51171,
+        "text:word_count": 8203,
+        "text:line_count": 296,
+        "meta:domain": "en.wikipedia.org",
+        "http:status_code": 200,
+        "wiki:section_count": 43,
+        "fs:artifact_path": "data/artifacts/sch_rene_descartes.json",
+        "harvest:fetched_at": "2026-02-01T14:05:45.568033+00:00",
+        "harvest:api_version": "wikipedia_extracts_v1"
+      }
+    },
+    "sch_jean-henri_fabre": {
+      "title": "Jean-Henri Fabre",
+      "prefix": "sch",
+      "text_file": "sch_jean-henri_fabre.txt",
+      "artifact_file": "../../artifacts/sch_jean-henri_fabre.json",
+      "traces": {
+        "text:char_count": 8776,
+        "text:word_count": 1359,
+        "text:line_count": 110,
+        "meta:domain": "en.wikipedia.org",
+        "http:status_code": 200,
+        "wiki:section_count": 6,
+        "fs:artifact_path": "data/artifacts/sch_jean-henri_fabre.json",
+        "harvest:fetched_at": "2026-02-01T14:05:48.704127+00:00",
+        "harvest:api_version": "wikipedia_extracts_v1"
+      }
+    },
+    "sch_paracelsus": {
+      "title": "Paracelsus",
+      "prefix": "sch",
+      "text_file": "sch_paracelsus.txt",
+      "artifact_file": "../../artifacts/sch_paracelsus.json",
+      "traces": {
+        "text:char_count": 47447,
+        "text:word_count": 7218,
+        "text:line_count": 252,
+        "meta:domain": "en.wikipedia.org",
+        "http:status_code": 200,
+        "wiki:section_count": 26,
+        "fs:artifact_path": "data/artifacts/sch_paracelsus.json",
+        "harvest:fetched_at": "2026-02-01T14:05:50.239648+00:00",
+        "harvest:api_version": "wikipedia_extracts_v1"
+      }
+    },
+    "city_tokyo": {
+      "title": "Tokyo",
+      "prefix": "city",
+      "text_file": "city_tokyo.txt",
+      "artifact_file": "../../artifacts/city_tokyo.json",
+      "traces": {
+        "text:char_count": 74828,
+        "text:word_count": 11546,
+        "text:line_count": 363,
+        "meta:domain": "en.wikipedia.org",
+        "http:status_code": 200,
+        "wiki:section_count": 50,
+        "fs:artifact_path": "data/artifacts/city_tokyo.json",
+        "harvest:fetched_at": "2026-02-01T14:05:52.978209+00:00",
+        "harvest:api_version": "wikipedia_extracts_v1"
+      }
+    },
+    "city_london": {
+      "title": "London",
+      "prefix": "city",
+      "text_file": "city_london.txt",
+      "artifact_file": "../../artifacts/city_london.json",
+      "traces": {
+        "text:char_count": 96788,
+        "text:word_count": 15558,
+        "text:line_count": 433,
+        "meta:domain": "en.wikipedia.org",
+        "http:status_code": 200,
+        "wiki:section_count": 59,
+        "fs:artifact_path": "data/artifacts/city_london.json",
+        "harvest:fetched_at": "2026-02-01T14:05:55.879792+00:00",
+        "harvest:api_version": "wikipedia_extracts_v1"
+      }
+    },
+    "city_new_york_city": {
+      "title": "New York City",
+      "prefix": "city",
+      "text_file": "city_new_york_city.txt",
+      "artifact_file": "../../artifacts/city_new_york_city.json",
+      "traces": {
+        "text:char_count": 94451,
+        "text:word_count": 15131,
+        "text:line_count": 419,
+        "meta:domain": "en.wikipedia.org",
+        "http:status_code": 200,
+        "wiki:section_count": 55,
+        "fs:artifact_path": "data/artifacts/city_new_york_city.json",
+        "harvest:fetched_at": "2026-02-01T14:05:58.548864+00:00",
+        "harvest:api_version": "wikipedia_extracts_v1"
+      }
+    },
+    "city_paris": {
+      "title": "Paris",
+      "prefix": "city",
+      "text_file": "city_paris.txt",
+      "artifact_file": "../../artifacts/city_paris.json",
+      "traces": {
+        "text:char_count": 88545,
+        "text:word_count": 14067,
+        "text:line_count": 426,
+        "meta:domain": "en.wikipedia.org",
+        "http:status_code": 200,
+        "wiki:section_count": 57,
+        "fs:artifact_path": "data/artifacts/city_paris.json",
+        "harvest:fetched_at": "2026-02-01T14:06:01.191315+00:00",
+        "harvest:api_version": "wikipedia_extracts_v1"
+      }
+    },
+    "city_berlin": {
+      "title": "Berlin",
+      "prefix": "city",
+      "text_file": "city_berlin.txt",
+      "artifact_file": "../../artifacts/city_berlin.json",
+      "traces": {
+        "text:char_count": 78322,
+        "text:word_count": 12173,
+        "text:line_count": 386,
+        "meta:domain": "en.wikipedia.org",
+        "http:status_code": 200,
+        "wiki:section_count": 58,
+        "fs:artifact_path": "data/artifacts/city_berlin.json",
+        "harvest:fetched_at": "2026-02-01T14:06:03.670696+00:00",
+        "harvest:api_version": "wikipedia_extracts_v1"
+      }
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "current_config": {
+    "COMPETE_TH": 0.15,
+    "VOL_HIGH_TH": 0.5,
+    "VOL_LOW_TH": 0.25
+  },
+  "meta": {
+    "determinism": {
+      "float_precision": 6,
+      "seed": 0,
+      "sort_keys": true
+    },
+    "engine_version": "7D-1.0",
+    "generated_at": "2026-01-08T06:02:52.270357+00:00",
+    "input_fingerprints": {
+      "audit_drift_7cprime.jsonl": "9afa4c68701a0448b9830d3ab99ac7a06204bb580829099be2f46dc3d0def991",
+      "audit_log_7c.jsonl": "ba6440b64ef4f71d830a5540c7e5ffc8e86853cac7887e144e39c47b35318b1d",
+      "audit_votes_7cprime.jsonl": "0731c8d0738507698f33363816917e871ce189bd3f0c12d39c1e42384758c8bd",
+      "human_review_queue_7cprime.jsonl": "ad20bd1dd80ccb546ae5c362c6efb159d47e2cd8e7169f849d12974b76f0b81e",
+      "qc_metrics_7cprime.json": "662d79338ca3b6c606d069eeb7f0762365b1101b1260b0bf12a0f9657acce71b",
+      "unknown_queue_7bplus.jsonl": "acc4afac9f1b9a65c98fb95c3092b9eade5950b8d5612b35f592569d619db285"
+    },
+    "missing_inputs": [],
+    "phase": "7D",
+    "schema_warnings": [],
+    "spec_version": "7D-1.0"
+  },
+  "missed_danger_samples": [],
+  "proposals": [
+    {
+      "candidates": [
+        0.2,
+        0.25,
+        0.3
+      ],
+      "confidence": "medium",
+      "current_value": 0.15,
+      "id": "P-COMPETE_TH-001",
+      "impact_scope": [
+        "competing_count",
+        "sense_conflict",
+        "volatility_calc"
+      ],
+      "parameter": "COMPETE_TH",
+      "rationale": {
+        "evidence": [
+          {
+            "metric": "multi_compete_rate",
+            "value": 1.0
+          },
+          {
+            "metric": "compete_mean",
+            "value": 2.42
+          },
+          {
+            "metric": "missed_danger_count",
+            "value": 0
+          },
+          {
+            "metric": "sample_count",
+            "value": 100
+          }
+        ],
+        "why_now": "競合過多(100.0%)でsense_conflict膨張"
+      },
+      "risk": {
+        "level": "medium",
+        "mitigation": "閾値上昇で見逃し増リスク→proxy監視強化",
+        "type": "under_detection"
+      },
+      "touch_surface": "config.py"
+    },
+    {
+      "candidates": [
+        "require_stability_volatile_only",
+        "require_multi_risk_flags",
+        "require_vol_high_and_risk_flag"
+      ],
+      "confidence": "medium",
+      "current_value": "current_rules",
+      "id": "P-HR_GATE-001",
+      "impact_scope": [
+        "human_review_queue",
+        "7cprime_gate"
+      ],
+      "parameter": "human_review_conditions",
+      "rationale": {
+        "evidence": [
+          {
+            "metric": "review_rate",
+            "value": 1.0
+          },
+          {
+            "metric": "stability_distribution",
+            "value": {
+              "medium": 4,
+              "stable": 92,
+              "unavailable": 100,
+              "volatile": 4
+            }
+          },
+          {
+            "metric": "sample_count",
+            "value": 100
+          }
+        ],
+        "why_now": "過剰エスカレーション(100.0%)で人間負荷過大"
+      },
+      "risk": {
+        "level": "medium",
+        "mitigation": "条件絞り込みは見逃しリスク→proxy監視必須",
+        "type": "missed_danger"
+      },
+      "touch_surface": "7cprime"
+    }
+  ],
+  "summary": {
+    "distributions": {
+      "competing": {
+        "by_count": {
+          "2": 58,
+          "3": 42
+        },
+        "count": 100,
+        "mean": 2.42
+      },
+      "stability": {
+        "medium": 4,
+        "stable": 92,
+        "unavailable": 100,
+        "volatile": 4
+      },
+      "status": {
+        "defer": 62,
+        "quarantine": 38
+      },
+      "volatility": {
+        "count": 100,
+        "max": 0.63,
+        "mean": 0.5075,
+        "min": 0.18,
+        "missing_count": 0,
+        "percentiles": {
+          "70": 0.58,
+          "80": 0.58,
+          "90": 0.58
+        },
+        "sample_size_adequate": true,
+        "std": 0.085981,
+        "valid_count": 100
+      }
+    },
+    "human_review": {
+      "by_stability": {
+        "medium": 4,
+        "stable": 92,
+        "volatile": 4
+      },
+      "missed_danger_count": 0,
+      "review_rate": 1.0,
+      "total_not_reviewed": 0,
+      "total_reviewed": 100
+    },
+    "risk_flags": {
+      "flag_counts": {
+        "source_conflict": 37,
+        "template_risk": 5
+      },
+      "flag_rate": 0.19,
+      "top_cooccurrences": [
+        {
+          "count": 4,
+          "flags": [
+            "source_conflict",
+            "template_risk"
+          ]
+        }
+      ],
+      "total_records": 200,
+      "total_with_flags": 38
+    },
+    "signals": {
+      "human_review_rate": 1.0,
+      "missed_danger_count": 0,
+      "multi_compete_rate": 1.0,
+      "notable_operator_shift": false,
+      "risk_flag_rate": 0.19,
+      "vol_distribution_health": "ok",
+      "vol_high_rate": 0.38,
+      "vol_low_rate": 0.02
+    }
+  }
+}

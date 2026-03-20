@@ -1,0 +1,409 @@
+{
+  "current_config": {
+    "COMPETE_TH": 0.15,
+    "VOL_HIGH_TH": 0.5,
+    "VOL_LOW_TH": 0.25
+  },
+  "meta": {
+    "determinism": {
+      "float_precision": 6,
+      "seed": 0,
+      "sort_keys": true
+    },
+    "engine_version": "7D-1.0",
+    "generated_at": "2026-01-08T09:32:33.711008+00:00",
+    "input_fingerprints": {
+      "audit_drift_7cprime.jsonl": "a0c3ee80bd37d8eb5f6df726129d40a335b20e335b1c3b0111659ed3d9accc9c",
+      "audit_log_7c.jsonl": "9c324acdf9f07eb4614131de505adbc821d460782634a0b274a9564071001a7c",
+      "audit_votes_7cprime.jsonl": "23adfdc9a0a4e4c9e227851925849e96f7b990677f57169bcb98517713c6a75a",
+      "human_review_queue_7cprime.jsonl": "f8c1eade2007aeae1bcf1b2f62e552277da70affc12b8be57a673bdbd0fd2a22",
+      "qc_metrics_7cprime.json": "cb0a899ec59f83821f10e01b0bab4d18e831bf83efa0a3e299555894d01f525a",
+      "unknown_queue_7bplus.jsonl": "359a5ca52eb26d3af4f4a32e34442bc2870cf50a80dcf11a6819a01633d2c396"
+    },
+    "missing_inputs": [],
+    "phase": "7D",
+    "schema_warnings": [],
+    "spec_version": "7D-1.0"
+  },
+  "missed_danger_samples": [
+    {
+      "aggregate_key": "051721912f518d31",
+      "stability": "stable",
+      "token_norm": "yaml",
+      "triggered_proxies": [
+        "risk_flagged",
+        "axis_drifted"
+      ],
+      "volatility_avg": 0.58
+    },
+    {
+      "aggregate_key": "07df6311265784d8",
+      "stability": "stable",
+      "token_norm": "chemical",
+      "triggered_proxies": [
+        "axis_drifted"
+      ],
+      "volatility_avg": 0.48
+    },
+    {
+      "aggregate_key": "0ade691ca14e18ac",
+      "stability": "stable",
+      "token_norm": "level",
+      "triggered_proxies": [
+        "risk_flagged",
+        "axis_drifted"
+      ],
+      "volatility_avg": 0.58
+    },
+    {
+      "aggregate_key": "0d3b65bef4d7dc65",
+      "stability": "stable",
+      "token_norm": "zero",
+      "triggered_proxies": [
+        "risk_flagged",
+        "axis_drifted"
+      ],
+      "volatility_avg": 0.58
+    },
+    {
+      "aggregate_key": "0ddbc8c2449d1bac",
+      "stability": "stable",
+      "token_norm": "implies",
+      "triggered_proxies": [
+        "axis_drifted"
+      ],
+      "volatility_avg": 0.48
+    },
+    {
+      "aggregate_key": "12e2cc4d4c9b0a74",
+      "stability": "stable",
+      "token_norm": "reaction",
+      "triggered_proxies": [
+        "axis_drifted"
+      ],
+      "volatility_avg": 0.48
+    },
+    {
+      "aggregate_key": "14e33fb97bb69b4c",
+      "stability": "stable",
+      "token_norm": "boolean",
+      "triggered_proxies": [
+        "axis_drifted"
+      ],
+      "volatility_avg": 0.48
+    },
+    {
+      "aggregate_key": "19907902c77ef9f6",
+      "stability": "stable",
+      "token_norm": "else's",
+      "triggered_proxies": [
+        "axis_drifted"
+      ],
+      "volatility_avg": 0.48
+    },
+    {
+      "aggregate_key": "27ae4fdf5c0635e4",
+      "stability": "stable",
+      "token_norm": "programming",
+      "triggered_proxies": [
+        "axis_drifted"
+      ],
+      "volatility_avg": 0.48
+    },
+    {
+      "aggregate_key": "2e2b28f2a4ae119d",
+      "stability": "stable",
+      "token_norm": "jet",
+      "triggered_proxies": [
+        "risk_flagged",
+        "axis_drifted"
+      ],
+      "volatility_avg": 0.63
+    },
+    {
+      "aggregate_key": "2f5302ca0fa2599e",
+      "stability": "stable",
+      "token_norm": "series",
+      "triggered_proxies": [
+        "axis_drifted"
+      ],
+      "volatility_avg": 0.48
+    },
+    {
+      "aggregate_key": "31db8ed48f860204",
+      "stability": "stable",
+      "token_norm": "google",
+      "triggered_proxies": [
+        "axis_drifted"
+      ],
+      "volatility_avg": 0.48
+    },
+    {
+      "aggregate_key": "40f1afd77cb093ad",
+      "stability": "stable",
+      "token_norm": "today",
+      "triggered_proxies": [
+        "risk_flagged",
+        "axis_drifted"
+      ],
+      "volatility_avg": 0.58
+    },
+    {
+      "aggregate_key": "43d70033e51ddefc",
+      "stability": "stable",
+      "token_norm": "keyboard",
+      "triggered_proxies": [
+        "axis_drifted"
+      ],
+      "volatility_avg": 0.48
+    },
+    {
+      "aggregate_key": "440fb3150ca7db67",
+      "stability": "stable",
+      "token_norm": "tragedy",
+      "triggered_proxies": [
+        "axis_drifted"
+      ],
+      "volatility_avg": 0.48
+    },
+    {
+      "aggregate_key": "47779005eac92664",
+      "stability": "stable",
+      "token_norm": "truly",
+      "triggered_proxies": [
+        "risk_flagged",
+        "axis_drifted"
+      ],
+      "volatility_avg": 0.58
+    },
+    {
+      "aggregate_key": "4849fe5a9b3127ba",
+      "stability": "stable",
+      "token_norm": "capital",
+      "triggered_proxies": [
+        "axis_drifted"
+      ],
+      "volatility_avg": 0.48
+    },
+    {
+      "aggregate_key": "49c8228ebd9ef030",
+      "stability": "stable",
+      "token_norm": "rm",
+      "triggered_proxies": [
+        "axis_drifted"
+      ],
+      "volatility_avg": 0.28
+    },
+    {
+      "aggregate_key": "49fd0df18d24251c",
+      "stability": "stable",
+      "token_norm": "audit",
+      "triggered_proxies": [
+        "risk_flagged",
+        "axis_drifted"
+      ],
+      "volatility_avg": 0.58
+    },
+    {
+      "aggregate_key": "4da456f4c36e231e",
+      "stability": "stable",
+      "token_norm": "strictly",
+      "triggered_proxies": [
+        "axis_drifted"
+      ],
+      "volatility_avg": 0.48
+    }
+  ],
+  "proposals": [
+    {
+      "candidates": [
+        0.2,
+        0.25,
+        0.3
+      ],
+      "confidence": "medium",
+      "current_value": 0.15,
+      "id": "P-COMPETE_TH-001",
+      "impact_scope": [
+        "competing_count",
+        "sense_conflict",
+        "volatility_calc"
+      ],
+      "parameter": "COMPETE_TH",
+      "rationale": {
+        "evidence": [
+          {
+            "metric": "multi_compete_rate",
+            "value": 1.0
+          },
+          {
+            "metric": "compete_mean",
+            "value": 2.42
+          },
+          {
+            "metric": "missed_danger_count",
+            "value": 84
+          },
+          {
+            "metric": "sample_count",
+            "value": 100
+          }
+        ],
+        "why_now": "競合過多(100.0%)でsense_conflict膨張"
+      },
+      "risk": {
+        "level": "medium",
+        "mitigation": "閾値上昇で見逃し増リスク→proxy監視強化",
+        "type": "under_detection"
+      },
+      "touch_surface": "config.py"
+    },
+    {
+      "candidates": [
+        "add_proxy_trigger",
+        "lower_stability_threshold",
+        "include_risk_flag_any"
+      ],
+      "confidence": "medium",
+      "current_value": "current_rules",
+      "id": "P-HR_GATE-002",
+      "impact_scope": [
+        "human_review_queue",
+        "7cprime_gate"
+      ],
+      "parameter": "human_review_conditions",
+      "rationale": {
+        "evidence": [
+          {
+            "metric": "missed_danger_count",
+            "value": 84
+          },
+          {
+            "metric": "review_rate",
+            "value": 0.16
+          },
+          {
+            "metric": "sample_missed",
+            "value": [
+              {
+                "aggregate_key": "051721912f518d31",
+                "stability": "stable",
+                "token_norm": "yaml",
+                "triggered_proxies": [
+                  "risk_flagged",
+                  "axis_drifted"
+                ],
+                "volatility_avg": 0.58
+              },
+              {
+                "aggregate_key": "07df6311265784d8",
+                "stability": "stable",
+                "token_norm": "chemical",
+                "triggered_proxies": [
+                  "axis_drifted"
+                ],
+                "volatility_avg": 0.48
+              },
+              {
+                "aggregate_key": "0ade691ca14e18ac",
+                "stability": "stable",
+                "token_norm": "level",
+                "triggered_proxies": [
+                  "risk_flagged",
+                  "axis_drifted"
+                ],
+                "volatility_avg": 0.58
+              }
+            ]
+          },
+          {
+            "metric": "sample_count",
+            "value": 100
+          }
+        ],
+        "why_now": "潜在見逃し84件検出"
+      },
+      "risk": {
+        "level": "low",
+        "mitigation": "見逃し減少が優先",
+        "type": "escalation_increase"
+      },
+      "touch_surface": "7cprime"
+    }
+  ],
+  "summary": {
+    "distributions": {
+      "competing": {
+        "by_count": {
+          "2": 58,
+          "3": 42
+        },
+        "count": 100,
+        "mean": 2.42
+      },
+      "stability": {
+        "medium": 7,
+        "stable": 89,
+        "volatile": 4
+      },
+      "status": {
+        "defer": 62,
+        "quarantine": 38
+      },
+      "volatility": {
+        "count": 100,
+        "max": 0.63,
+        "mean": 0.5075,
+        "min": 0.18,
+        "missing_count": 0,
+        "percentiles": {
+          "70": 0.58,
+          "80": 0.58,
+          "90": 0.58
+        },
+        "sample_size_adequate": true,
+        "std": 0.085981,
+        "valid_count": 100
+      }
+    },
+    "human_review": {
+      "by_stability": {
+        "medium": 7,
+        "stable": 5,
+        "volatile": 4
+      },
+      "missed_danger_count": 84,
+      "review_rate": 0.16,
+      "total_not_reviewed": 84,
+      "total_reviewed": 16
+    },
+    "risk_flags": {
+      "flag_counts": {
+        "source_conflict": 37,
+        "template_risk": 9
+      },
+      "flag_rate": 0.4,
+      "top_cooccurrences": [
+        {
+          "count": 6,
+          "flags": [
+            "source_conflict",
+            "template_risk"
+          ]
+        }
+      ],
+      "total_records": 100,
+      "total_with_flags": 40
+    },
+    "signals": {
+      "human_review_rate": 0.16,
+      "missed_danger_count": 84,
+      "multi_compete_rate": 1.0,
+      "notable_operator_shift": false,
+      "risk_flag_rate": 0.4,
+      "vol_distribution_health": "ok",
+      "vol_high_rate": 0.38,
+      "vol_low_rate": 0.02
+    }
+  }
+}

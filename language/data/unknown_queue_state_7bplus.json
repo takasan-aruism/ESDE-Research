@@ -1,0 +1,3262 @@
+{
+  "_meta": {
+    "last_updated": "2026-01-10T10:20:29.702301+00:00",
+    "aggregate_count": 100,
+    "spec_version": "5.3.4"
+  },
+  "aggregates": {
+    "16784f5a4ece0efd": {
+      "aggregate_key": "16784f5a4ece0efd",
+      "token_norm": "loud",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:09:39.288531+00:00",
+      "last_seen_ts": "2026-01-10T10:09:39.288531+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.2,
+      "volatility_max": 0.2,
+      "volatility_history": [
+        0.2
+      ],
+      "scores_avg": {
+        "A": 0.167,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:09:39.288557+00:00"
+    },
+    "b94d5c312d90ef34": {
+      "aggregate_key": "b94d5c312d90ef34",
+      "token_norm": "statement",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:09:44.554909+00:00",
+      "last_seen_ts": "2026-01-10T10:09:44.554909+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "b0c7dc14670b171e": {
+      "aggregate_key": "b0c7dc14670b171e",
+      "token_norm": "definition",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:09:49.911916+00:00",
+      "last_seen_ts": "2026-01-10T10:09:49.911916+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.28,
+      "volatility_max": 0.28,
+      "volatility_history": [
+        0.28
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.15,
+        "C": 0.4,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "B",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:09:49.911959+00:00"
+    },
+    "34f2a01bad9a9a99": {
+      "aggregate_key": "34f2a01bad9a9a99",
+      "token_norm": "arizm",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:10:16.016569+00:00",
+      "last_seen_ts": "2026-01-10T10:10:16.016569+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.4,
+      "volatility_max": 0.4,
+      "volatility_history": [
+        0.4
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.25,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:10:16.016611+00:00"
+    },
+    "818f40168e2ce497": {
+      "aggregate_key": "818f40168e2ce497",
+      "token_norm": "observed",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:10:20.691915+00:00",
+      "last_seen_ts": "2026-01-10T10:10:20.691915+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "8c1f9f07bad16b32": {
+      "aggregate_key": "8c1f9f07bad16b32",
+      "token_norm": "mirror",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:10:25.771704+00:00",
+      "last_seen_ts": "2026-01-10T10:10:25.771704+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "d8783bfcf5797a57": {
+      "aggregate_key": "d8783bfcf5797a57",
+      "token_norm": "precedes",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:10:31.118592+00:00",
+      "last_seen_ts": "2026-01-10T10:10:31.118592+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "8658d0109fee7274": {
+      "aggregate_key": "8658d0109fee7274",
+      "token_norm": "essence",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:10:36.455625+00:00",
+      "last_seen_ts": "2026-01-10T10:10:36.455625+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "7a01d1587049a7b8": {
+      "aggregate_key": "7a01d1587049a7b8",
+      "token_norm": "out",
+      "pos": "UNK",
+      "route_set": [
+        "B"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:10:43.785771+00:00",
+      "last_seen_ts": "2026-01-10T10:10:43.785771+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "quarantine",
+      "volatility_last": 0.5,
+      "volatility_max": 0.5,
+      "volatility_history": [
+        0.5
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 0.2
+      },
+      "competing_routes_last": [
+        "A",
+        "D"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:10:43.785821+00:00"
+    },
+    "9b4c75abc6d1e902": {
+      "aggregate_key": "9b4c75abc6d1e902",
+      "token_norm": "stock",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:10:48.987329+00:00",
+      "last_seen_ts": "2026-01-10T10:10:48.987329+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:10:48.987373+00:00"
+    },
+    "14e33fb97bb69b4c": {
+      "aggregate_key": "14e33fb97bb69b4c",
+      "token_norm": "boolean",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:10:54.018366+00:00",
+      "last_seen_ts": "2026-01-10T10:10:54.018366+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.14,
+      "volatility_max": 0.14,
+      "volatility_history": [
+        0.14
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.15,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "B",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:10:54.018406+00:00"
+    },
+    "a7f165a626963c54": {
+      "aggregate_key": "a7f165a626963c54",
+      "token_norm": "one",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:11:01.241841+00:00",
+      "last_seen_ts": "2026-01-10T10:11:01.241841+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.3,
+      "volatility_max": 0.3,
+      "volatility_history": [
+        0.3
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.2
+      },
+      "competing_routes_last": [
+        "A",
+        "C",
+        "D"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:11:01.241895+00:00"
+    },
+    "86160a805a30b0f6": {
+      "aggregate_key": "86160a805a30b0f6",
+      "token_norm": "clapping",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:11:06.087034+00:00",
+      "last_seen_ts": "2026-01-10T10:11:06.087034+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "4da456f4c36e231e": {
+      "aggregate_key": "4da456f4c36e231e",
+      "token_norm": "strictly",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:11:15.723205+00:00",
+      "last_seen_ts": "2026-01-10T10:11:15.723205+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.1,
+        "D": 0.0
+      },
+      "competing_routes_last": [],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "a9bc7682ffad86ee": {
+      "aggregate_key": "a9bc7682ffad86ee",
+      "token_norm": "typed",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:11:20.543226+00:00",
+      "last_seen_ts": "2026-01-10T10:11:20.543226+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.24,
+      "volatility_max": 0.24,
+      "volatility_history": [
+        0.24
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.15,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "B",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:11:20.543274+00:00"
+    },
+    "0d3b65bef4d7dc65": {
+      "aggregate_key": "0d3b65bef4d7dc65",
+      "token_norm": "zero",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:11:25.735310+00:00",
+      "last_seen_ts": "2026-01-10T10:11:25.735310+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:11:25.735358+00:00"
+    },
+    "47779005eac92664": {
+      "aggregate_key": "47779005eac92664",
+      "token_norm": "truly",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:11:33.224023+00:00",
+      "last_seen_ts": "2026-01-10T10:11:33.224023+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.1,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "e68b01260616bf49": {
+      "aggregate_key": "e68b01260616bf49",
+      "token_norm": "infinite",
+      "pos": "UNK",
+      "route_set": [
+        "B"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:11:38.129702+00:00",
+      "last_seen_ts": "2026-01-10T10:11:38.129702+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "a66270b495fe2190": {
+      "aggregate_key": "a66270b495fe2190",
+      "token_norm": "lied",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:11:45.296833+00:00",
+      "last_seen_ts": "2026-01-10T10:11:45.296833+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.44,
+      "volatility_max": 0.44,
+      "volatility_history": [
+        0.44
+      ],
+      "scores_avg": {
+        "A": 0.167,
+        "B": 0.15,
+        "C": 0.4,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "B",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:11:45.296895+00:00"
+    },
+    "657881b151dbe62b": {
+      "aggregate_key": "657881b151dbe62b",
+      "token_norm": "honestly",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:11:50.270076+00:00",
+      "last_seen_ts": "2026-01-10T10:11:50.270076+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.14,
+      "volatility_max": 0.14,
+      "volatility_history": [
+        0.14
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.15,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "B",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:11:50.270101+00:00"
+    },
+    "a6af9dd0ab5bc468": {
+      "aggregate_key": "a6af9dd0ab5bc468",
+      "token_norm": "apple",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:11:55.278873+00:00",
+      "last_seen_ts": "2026-01-10T10:11:55.278873+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:11:55.278922+00:00"
+    },
+    "8afcec615eac445f": {
+      "aggregate_key": "8afcec615eac445f",
+      "token_norm": "tokyo",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:12:07.875711+00:00",
+      "last_seen_ts": "2026-01-10T10:12:07.875711+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "quarantine",
+      "volatility_last": 0.54,
+      "volatility_max": 0.54,
+      "volatility_history": [
+        0.54
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.15,
+        "C": 0.25,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "B",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:12:07.875765+00:00"
+    },
+    "4849fe5a9b3127ba": {
+      "aggregate_key": "4849fe5a9b3127ba",
+      "token_norm": "capital",
+      "pos": "UNK",
+      "route_set": [
+        "B"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:12:12.605123+00:00",
+      "last_seen_ts": "2026-01-10T10:12:12.605123+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.48,
+      "volatility_max": 0.48,
+      "volatility_history": [
+        0.48
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.3,
+        "C": 0.4,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "B",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:12:12.605160+00:00"
+    },
+    "995eb353ba9b6358": {
+      "aggregate_key": "995eb353ba9b6358",
+      "token_norm": "japan",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:12:17.661093+00:00",
+      "last_seen_ts": "2026-01-10T10:12:17.661093+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:12:17.661148+00:00"
+    },
+    "83713d80ec34b71f": {
+      "aggregate_key": "83713d80ec34b71f",
+      "token_norm": "boils",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:12:22.892575+00:00",
+      "last_seen_ts": "2026-01-10T10:12:22.892575+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:12:22.892648+00:00"
+    },
+    "bc25068c6aea890c": {
+      "aggregate_key": "bc25068c6aea890c",
+      "token_norm": "100",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:12:31.010179+00:00",
+      "last_seen_ts": "2026-01-10T10:12:31.010179+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.1,
+        "D": 0.8
+      },
+      "competing_routes_last": [
+        "D"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "b6b59492927a8a0c": {
+      "aggregate_key": "b6b59492927a8a0c",
+      "token_norm": "degrees",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:12:39.270092+00:00",
+      "last_seen_ts": "2026-01-10T10:12:39.270092+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.1,
+        "D": 0.0
+      },
+      "competing_routes_last": [],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "b8ea8972b94ecc16": {
+      "aggregate_key": "b8ea8972b94ecc16",
+      "token_norm": "celsius",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:12:44.194670+00:00",
+      "last_seen_ts": "2026-01-10T10:12:44.194670+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.14,
+      "volatility_max": 0.14,
+      "volatility_history": [
+        0.14
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.4,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "0ade691ca14e18ac": {
+      "aggregate_key": "0ade691ca14e18ac",
+      "token_norm": "level",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:12:51.262365+00:00",
+      "last_seen_ts": "2026-01-10T10:12:51.262365+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.34,
+      "volatility_max": 0.34,
+      "volatility_history": [
+        0.34
+      ],
+      "scores_avg": {
+        "A": 0.167,
+        "B": 0.15,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "B",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:12:51.262411+00:00"
+    },
+    "27ae4fdf5c0635e4": {
+      "aggregate_key": "27ae4fdf5c0635e4",
+      "token_norm": "programming",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:12:56.216004+00:00",
+      "last_seen_ts": "2026-01-10T10:12:56.216004+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "66d8e46607ff1644": {
+      "aggregate_key": "66d8e46607ff1644",
+      "token_norm": "east",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:13:03.291424+00:00",
+      "last_seen_ts": "2026-01-10T10:13:03.291424+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.2,
+      "volatility_max": 0.2,
+      "volatility_history": [
+        0.2
+      ],
+      "scores_avg": {
+        "A": 0.167,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:13:03.291450+00:00"
+    },
+    "beda89f4e1895451": {
+      "aggregate_key": "beda89f4e1895451",
+      "token_norm": "dogs",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:13:09.342647+00:00",
+      "last_seen_ts": "2026-01-10T10:13:09.342647+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:13:09.342733+00:00"
+    },
+    "e6831c9c8e7955a3": {
+      "aggregate_key": "e6831c9c8e7955a3",
+      "token_norm": "mammals",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:13:14.350721+00:00",
+      "last_seen_ts": "2026-01-10T10:13:14.350721+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "6907d396e82acc9c": {
+      "aggregate_key": "6907d396e82acc9c",
+      "token_norm": "ai",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:13:19.580110+00:00",
+      "last_seen_ts": "2026-01-10T10:13:19.580110+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "quarantine",
+      "volatility_last": 0.55,
+      "volatility_max": 0.55,
+      "volatility_history": [
+        0.55
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.5
+      },
+      "competing_routes_last": [
+        "A",
+        "C",
+        "D"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:13:19.580152+00:00"
+    },
+    "31db8ed48f860204": {
+      "aggregate_key": "31db8ed48f860204",
+      "token_norm": "google",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:13:24.528625+00:00",
+      "last_seen_ts": "2026-01-10T10:13:24.528625+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "40f1afd77cb093ad": {
+      "aggregate_key": "40f1afd77cb093ad",
+      "token_norm": "today",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:13:29.565553+00:00",
+      "last_seen_ts": "2026-01-10T10:13:29.565553+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:13:29.565588+00:00"
+    },
+    "43d70033e51ddefc": {
+      "aggregate_key": "43d70033e51ddefc",
+      "token_norm": "keyboard",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:13:34.573158+00:00",
+      "last_seen_ts": "2026-01-10T10:13:34.573158+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.14,
+      "volatility_max": 0.14,
+      "volatility_history": [
+        0.14
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.15,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "B",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:13:34.573206+00:00"
+    },
+    "d6e874909f5ef418": {
+      "aggregate_key": "d6e874909f5ef418",
+      "token_norm": "keys",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:13:41.581310+00:00",
+      "last_seen_ts": "2026-01-10T10:13:41.581310+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.34,
+      "volatility_max": 0.34,
+      "volatility_history": [
+        0.34
+      ],
+      "scores_avg": {
+        "A": 0.167,
+        "B": 0.15,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "B",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:13:41.581345+00:00"
+    },
+    "c2e0e63a390079b2": {
+      "aggregate_key": "c2e0e63a390079b2",
+      "token_norm": "flies",
+      "pos": "UNK",
+      "route_set": [
+        "B"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:13:46.963963+00:00",
+      "last_seen_ts": "2026-01-10T10:13:46.963963+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:13:46.964009+00:00"
+    },
+    "78beb90f651a9f2c": {
+      "aggregate_key": "78beb90f651a9f2c",
+      "token_norm": "arrow",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:13:52.166917+00:00",
+      "last_seen_ts": "2026-01-10T10:13:52.166917+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:13:52.166955+00:00"
+    },
+    "d947a8736dae0e53": {
+      "aggregate_key": "d947a8736dae0e53",
+      "token_norm": "banana",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:13:57.445875+00:00",
+      "last_seen_ts": "2026-01-10T10:13:57.445875+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "6265109ee02d975c": {
+      "aggregate_key": "6265109ee02d975c",
+      "token_norm": "computer",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:14:10.577430+00:00",
+      "last_seen_ts": "2026-01-10T10:14:10.577430+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.14,
+      "volatility_max": 0.14,
+      "volatility_history": [
+        0.14
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.15,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "19907902c77ef9f6": {
+      "aggregate_key": "19907902c77ef9f6",
+      "token_norm": "else's",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:14:25.888371+00:00",
+      "last_seen_ts": "2026-01-10T10:14:25.888371+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.14,
+      "volatility_max": 0.14,
+      "volatility_history": [
+        0.14
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.15,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "9de6ada49c975671": {
+      "aggregate_key": "9de6ada49c975671",
+      "token_norm": "poetry",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:14:33.276513+00:00",
+      "last_seen_ts": "2026-01-10T10:14:33.276513+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.1,
+        "D": 0.0
+      },
+      "competing_routes_last": [],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "8189939d8b604086": {
+      "aggregate_key": "8189939d8b604086",
+      "token_norm": "written",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:14:38.382680+00:00",
+      "last_seen_ts": "2026-01-10T10:14:38.382680+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.34,
+      "volatility_max": 0.34,
+      "volatility_history": [
+        0.34
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.3,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "B",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:14:38.382717+00:00"
+    },
+    "ac2626e521b8d39c": {
+      "aggregate_key": "ac2626e521b8d39c",
+      "token_norm": "design",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:14:43.384367+00:00",
+      "last_seen_ts": "2026-01-10T10:14:43.384367+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "655df75525f0bbe7": {
+      "aggregate_key": "655df75525f0bbe7",
+      "token_norm": "visible",
+      "pos": "UNK",
+      "route_set": [
+        "B"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:14:48.965013+00:00",
+      "last_seen_ts": "2026-01-10T10:14:48.965013+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "dfdca0a5b1a8a190": {
+      "aggregate_key": "dfdca0a5b1a8a190",
+      "token_norm": "internet",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:14:53.856566+00:00",
+      "last_seen_ts": "2026-01-10T10:14:53.856566+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "2f5302ca0fa2599e": {
+      "aggregate_key": "2f5302ca0fa2599e",
+      "token_norm": "series",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:14:58.856714+00:00",
+      "last_seen_ts": "2026-01-10T10:14:58.856714+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.14,
+      "volatility_max": 0.14,
+      "volatility_history": [
+        0.14
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.15,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "B",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:14:58.856758+00:00"
+    },
+    "283cd5a48d8b5b15": {
+      "aggregate_key": "283cd5a48d8b5b15",
+      "token_norm": "tubes",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:15:04.813746+00:00",
+      "last_seen_ts": "2026-01-10T10:15:04.813746+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:15:04.813791+00:00"
+    },
+    "d34bc71ceb523e9a": {
+      "aggregate_key": "d34bc71ceb523e9a",
+      "token_norm": "oil",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:15:10.154392+00:00",
+      "last_seen_ts": "2026-01-10T10:15:10.154392+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.3,
+      "volatility_max": 0.3,
+      "volatility_history": [
+        0.3
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.2
+      },
+      "competing_routes_last": [
+        "A",
+        "C",
+        "D"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:15:10.154433+00:00"
+    },
+    "99fcac45473a12d1": {
+      "aggregate_key": "99fcac45473a12d1",
+      "token_norm": "leaks",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:15:17.388300+00:00",
+      "last_seen_ts": "2026-01-10T10:15:17.388300+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.2,
+      "volatility_max": 0.2,
+      "volatility_history": [
+        0.2
+      ],
+      "scores_avg": {
+        "A": 0.167,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:15:17.388352+00:00"
+    },
+    "6ff091f625591a6d": {
+      "aggregate_key": "6ff091f625591a6d",
+      "token_norm": "more",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:15:24.381197+00:00",
+      "last_seen_ts": "2026-01-10T10:15:24.381197+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.2,
+      "volatility_max": 0.2,
+      "volatility_history": [
+        0.2
+      ],
+      "scores_avg": {
+        "A": 0.167,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:15:24.381230+00:00"
+    },
+    "a4db9d00bf12c90f": {
+      "aggregate_key": "a4db9d00bf12c90f",
+      "token_norm": "frequent",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:15:29.499772+00:00",
+      "last_seen_ts": "2026-01-10T10:15:29.499772+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "70930944dd0c1592": {
+      "aggregate_key": "70930944dd0c1592",
+      "token_norm": "mindset",
+      "pos": "UNK",
+      "route_set": [
+        "B"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:15:34.681805+00:00",
+      "last_seen_ts": "2026-01-10T10:15:34.681805+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "43132b39e0a3d7a3": {
+      "aggregate_key": "43132b39e0a3d7a3",
+      "token_norm": "methodology",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:15:39.729861+00:00",
+      "last_seen_ts": "2026-01-10T10:15:39.729861+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "af5ce1b25ddb5975": {
+      "aggregate_key": "af5ce1b25ddb5975",
+      "token_norm": "agile",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:15:48.697807+00:00",
+      "last_seen_ts": "2026-01-10T10:15:48.697807+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:15:48.697849+00:00"
+    },
+    "07df6311265784d8": {
+      "aggregate_key": "07df6311265784d8",
+      "token_norm": "chemical",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:15:53.940267+00:00",
+      "last_seen_ts": "2026-01-10T10:15:53.940267+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "12e2cc4d4c9b0a74": {
+      "aggregate_key": "12e2cc4d4c9b0a74",
+      "token_norm": "reaction",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:15:59.154496+00:00",
+      "last_seen_ts": "2026-01-10T10:15:59.154496+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "e8867bdc734b9917": {
+      "aggregate_key": "e8867bdc734b9917",
+      "token_norm": "repeats",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:16:04.385135+00:00",
+      "last_seen_ts": "2026-01-10T10:16:04.385135+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "440fb3150ca7db67": {
+      "aggregate_key": "440fb3150ca7db67",
+      "token_norm": "tragedy",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:16:09.399793+00:00",
+      "last_seen_ts": "2026-01-10T10:16:09.399793+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.14,
+      "volatility_max": 0.14,
+      "volatility_history": [
+        0.14
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.15,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "B",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:16:09.399847+00:00"
+    },
+    "76ec5ba823e55a17": {
+      "aggregate_key": "76ec5ba823e55a17",
+      "token_norm": "farce",
+      "pos": "UNK",
+      "route_set": [
+        "B"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:16:14.517058+00:00",
+      "last_seen_ts": "2026-01-10T10:16:14.517058+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:16:14.517098+00:00"
+    },
+    "2e2b28f2a4ae119d": {
+      "aggregate_key": "2e2b28f2a4ae119d",
+      "token_norm": "jet",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:16:19.728695+00:00",
+      "last_seen_ts": "2026-01-10T10:16:19.728695+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.3,
+      "volatility_max": 0.3,
+      "volatility_history": [
+        0.3
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.2
+      },
+      "competing_routes_last": [
+        "A",
+        "C",
+        "D"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:16:19.728733+00:00"
+    },
+    "bbf1c2f100b67378": {
+      "aggregate_key": "bbf1c2f100b67378",
+      "token_norm": "cannot",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:16:24.752078+00:00",
+      "last_seen_ts": "2026-01-10T10:16:24.752078+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.4,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "f9ef9546bd70fbe7": {
+      "aggregate_key": "f9ef9546bd70fbe7",
+      "token_norm": "rf",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:16:29.976144+00:00",
+      "last_seen_ts": "2026-01-10T10:16:29.976144+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "quarantine",
+      "volatility_last": 0.55,
+      "volatility_max": 0.55,
+      "volatility_history": [
+        0.55
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.5
+      },
+      "competing_routes_last": [
+        "A",
+        "C",
+        "D"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:16:29.976186+00:00"
+    },
+    "0ddbc8c2449d1bac": {
+      "aggregate_key": "0ddbc8c2449d1bac",
+      "token_norm": "implies",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:16:35.187701+00:00",
+      "last_seen_ts": "2026-01-10T10:16:35.187701+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "68c53a8e59c748ea": {
+      "aggregate_key": "68c53a8e59c748ea",
+      "token_norm": "confidence",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:16:40.464496+00:00",
+      "last_seen_ts": "2026-01-10T10:16:40.464496+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "d9a2c359cca8fd0b": {
+      "aggregate_key": "d9a2c359cca8fd0b",
+      "token_norm": "sudo",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:16:51.098326+00:00",
+      "last_seen_ts": "2026-01-10T10:16:51.098326+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.14,
+      "volatility_max": 0.14,
+      "volatility_history": [
+        0.14
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "49c8228ebd9ef030": {
+      "aggregate_key": "49c8228ebd9ef030",
+      "token_norm": "rm",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:16:58.128917+00:00",
+      "last_seen_ts": "2026-01-10T10:16:58.128917+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 0.5
+      },
+      "competing_routes_last": [
+        "A",
+        "D"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:16:58.128955+00:00"
+    },
+    "e657e64c96b8ddc8": {
+      "aggregate_key": "e657e64c96b8ddc8",
+      "token_norm": "supreme",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:17:02.884455+00:00",
+      "last_seen_ts": "2026-01-10T10:17:02.884455+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "d9b2c4f38d4b63e5": {
+      "aggregate_key": "d9b2c4f38d4b63e5",
+      "token_norm": "docker",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:17:07.894675+00:00",
+      "last_seen_ts": "2026-01-10T10:17:07.894675+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "b6a0297e266a7ca8": {
+      "aggregate_key": "b6a0297e266a7ca8",
+      "token_norm": "containers",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:17:13.099765+00:00",
+      "last_seen_ts": "2026-01-10T10:17:13.099765+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "514595ce3303e882": {
+      "aggregate_key": "514595ce3303e882",
+      "token_norm": "feathers",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:17:18.312483+00:00",
+      "last_seen_ts": "2026-01-10T10:17:18.312483+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.14,
+      "volatility_max": 0.14,
+      "volatility_history": [
+        0.14
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.15,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "B",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:17:18.312525+00:00"
+    },
+    "e171fe5edd159601": {
+      "aggregate_key": "e171fe5edd159601",
+      "token_norm": "usually",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:17:27.377706+00:00",
+      "last_seen_ts": "2026-01-10T10:17:27.377706+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 0.0
+      },
+      "competing_routes_last": [],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "7e3cc94f32092e38": {
+      "aggregate_key": "7e3cc94f32092e38",
+      "token_norm": "json",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:17:37.353394+00:00",
+      "last_seen_ts": "2026-01-10T10:17:37.353394+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.14,
+      "volatility_max": 0.14,
+      "volatility_history": [
+        0.14
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "051721912f518d31": {
+      "aggregate_key": "051721912f518d31",
+      "token_norm": "yaml",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:17:49.901315+00:00",
+      "last_seen_ts": "2026-01-10T10:17:49.901315+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "quarantine",
+      "volatility_last": 0.54,
+      "volatility_max": 0.54,
+      "volatility_history": [
+        0.54
+      ],
+      "scores_avg": {
+        "A": 0.167,
+        "B": 0.0,
+        "C": 0.2,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:17:49.901350+00:00"
+    },
+    "a3bc090b5f1858f1": {
+      "aggregate_key": "a3bc090b5f1858f1",
+      "token_norm": "requires",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:18:00.111053+00:00",
+      "last_seen_ts": "2026-01-10T10:18:00.111053+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.14,
+      "volatility_max": 0.14,
+      "volatility_history": [
+        0.14
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.15,
+        "C": 0.1,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "B"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "49fd0df18d24251c": {
+      "aggregate_key": "49fd0df18d24251c",
+      "token_norm": "audit",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:18:05.078693+00:00",
+      "last_seen_ts": "2026-01-10T10:18:05.078693+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:18:05.078716+00:00"
+    },
+    "9c829b5677438a43": {
+      "aggregate_key": "9c829b5677438a43",
+      "token_norm": "log",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:18:13.274246+00:00",
+      "last_seen_ts": "2026-01-10T10:18:13.274246+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "quarantine",
+      "volatility_last": 0.55,
+      "volatility_max": 0.55,
+      "volatility_history": [
+        0.55
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.3,
+        "D": 0.2
+      },
+      "competing_routes_last": [
+        "A",
+        "C",
+        "D"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:18:13.274282+00:00"
+    },
+    "d56b2e5e6bfadfc3": {
+      "aggregate_key": "d56b2e5e6bfadfc3",
+      "token_norm": "7d",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:18:26.186706+00:00",
+      "last_seen_ts": "2026-01-10T10:18:26.186706+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.44,
+      "volatility_max": 0.44,
+      "volatility_history": [
+        0.44
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.3,
+        "C": 0.1,
+        "D": 0.5
+      },
+      "competing_routes_last": [
+        "A",
+        "B",
+        "D"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:18:26.186738+00:00"
+    },
+    "80dbd187c0803b6d": {
+      "aggregate_key": "80dbd187c0803b6d",
+      "token_norm": "meta",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:18:30.945946+00:00",
+      "last_seen_ts": "2026-01-10T10:18:30.945946+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:18:30.945971+00:00"
+    },
+    "ee76ce0c1ccbf19a": {
+      "aggregate_key": "ee76ce0c1ccbf19a",
+      "token_norm": "null",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:18:38.735158+00:00",
+      "last_seen_ts": "2026-01-10T10:18:38.735158+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.3,
+      "volatility_max": 0.3,
+      "volatility_history": [
+        0.3
+      ],
+      "scores_avg": {
+        "A": 0.167,
+        "B": 0.0,
+        "C": 0.4,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:18:38.735183+00:00"
+    },
+    "d23043741ada003d": {
+      "aggregate_key": "d23043741ada003d",
+      "token_norm": "strict",
+      "pos": "UNK",
+      "route_set": [
+        "B"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:18:47.707850+00:00",
+      "last_seen_ts": "2026-01-10T10:18:47.707850+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.1,
+        "D": 0.0
+      },
+      "competing_routes_last": [],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "d14c896f97d0fe55": {
+      "aggregate_key": "d14c896f97d0fe55",
+      "token_norm": "observation",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:18:52.467682+00:00",
+      "last_seen_ts": "2026-01-10T10:18:52.467682+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "8e6a81f6ca8e5a4d": {
+      "aggregate_key": "8e6a81f6ca8e5a4d",
+      "token_norm": "buffer",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:18:57.614176+00:00",
+      "last_seen_ts": "2026-01-10T10:18:57.614176+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "8bad6be3c73207ed": {
+      "aggregate_key": "8bad6be3c73207ed",
+      "token_norm": "philosophy",
+      "pos": "UNK",
+      "route_set": [
+        "B"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:19:02.651696+00:00",
+      "last_seen_ts": "2026-01-10T10:19:02.651696+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "5bb5d3dd988d6059": {
+      "aggregate_key": "5bb5d3dd988d6059",
+      "token_norm": "module",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:19:07.786583+00:00",
+      "last_seen_ts": "2026-01-10T10:19:07.786583+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "e4178d2566a96e16": {
+      "aggregate_key": "e4178d2566a96e16",
+      "token_norm": "calls",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:19:14.742611+00:00",
+      "last_seen_ts": "2026-01-10T10:19:14.742611+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.4,
+      "volatility_max": 0.4,
+      "volatility_history": [
+        0.4
+      ],
+      "scores_avg": {
+        "A": 0.375,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:19:14.742663+00:00"
+    },
+    "68493ffca7573990": {
+      "aggregate_key": "68493ffca7573990",
+      "token_norm": "recursive",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:19:19.633335+00:00",
+      "last_seen_ts": "2026-01-10T10:19:19.633335+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "e71c1cf94065ef68": {
+      "aggregate_key": "e71c1cf94065ef68",
+      "token_norm": "deploy",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:19:25.094214+00:00",
+      "last_seen_ts": "2026-01-10T10:19:25.094214+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "c552afca73302ee3": {
+      "aggregate_key": "c552afca73302ee3",
+      "token_norm": "friday",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:19:33.371527+00:00",
+      "last_seen_ts": "2026-01-10T10:19:33.371527+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.1,
+        "D": 0.0
+      },
+      "competing_routes_last": [],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "8767954f708a8b3a": {
+      "aggregate_key": "8767954f708a8b3a",
+      "token_norm": "volatility",
+      "pos": "UNK",
+      "route_set": [
+        "B"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:19:38.583865+00:00",
+      "last_seen_ts": "2026-01-10T10:19:38.583865+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.14,
+      "volatility_max": 0.14,
+      "volatility_history": [
+        0.14
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.15,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "B",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:19:38.583901+00:00"
+    },
+    "e700aae80b960de9": {
+      "aggregate_key": "e700aae80b960de9",
+      "token_norm": "404",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:19:51.834194+00:00",
+      "last_seen_ts": "2026-01-10T10:19:51.834194+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.1,
+        "D": 0.8
+      },
+      "competing_routes_last": [
+        "D"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "c44c5ed356f9522c": {
+      "aggregate_key": "c44c5ed356f9522c",
+      "token_norm": "git",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:19:58.720448+00:00",
+      "last_seen_ts": "2026-01-10T10:19:58.720448+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.3,
+      "volatility_max": 0.3,
+      "volatility_history": [
+        0.3
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.2
+      },
+      "competing_routes_last": [
+        "A",
+        "C",
+        "D"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:19:58.720483+00:00"
+    },
+    "37709c4e8b22d1df": {
+      "aggregate_key": "37709c4e8b22d1df",
+      "token_norm": "force",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:20:04.096869+00:00",
+      "last_seen_ts": "2026-01-10T10:20:04.096869+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.24,
+      "volatility_max": 0.24,
+      "volatility_history": [
+        0.24
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.15,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "B",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:20:04.096910+00:00"
+    },
+    "574308f319fabbc2": {
+      "aggregate_key": "574308f319fabbc2",
+      "token_norm": "colorless",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:20:09.424331+00:00",
+      "last_seen_ts": "2026-01-10T10:20:09.424331+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "d9da03729c18b297": {
+      "aggregate_key": "d9da03729c18b297",
+      "token_norm": "green",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:20:14.446108+00:00",
+      "last_seen_ts": "2026-01-10T10:20:14.446108+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.15,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "A",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:20:14.446148+00:00"
+    },
+    "e8b929927b4705af": {
+      "aggregate_key": "e8b929927b4705af",
+      "token_norm": "furiously",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:20:19.714744+00:00",
+      "last_seen_ts": "2026-01-10T10:20:19.714744+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "candidate",
+      "volatility_last": 0.1,
+      "volatility_max": 0.1,
+      "volatility_history": [
+        0.1
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": null
+    },
+    "6dce0ca476f2cbe0": {
+      "aggregate_key": "6dce0ca476f2cbe0",
+      "token_norm": "purple",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:20:24.673934+00:00",
+      "last_seen_ts": "2026-01-10T10:20:24.673934+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.24,
+      "volatility_max": 0.24,
+      "volatility_history": [
+        0.24
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.15,
+        "C": 0.4,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "B",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:20:24.673971+00:00"
+    },
+    "5e7d107a943bf37b": {
+      "aggregate_key": "5e7d107a943bf37b",
+      "token_norm": "algorithm",
+      "pos": "UNK",
+      "route_set": [
+        "C"
+      ],
+      "seen": true,
+      "finalized": false,
+      "count_total": 1,
+      "first_seen_ts": "2026-01-10T10:20:29.687472+00:00",
+      "last_seen_ts": "2026-01-10T10:20:29.687472+00:00",
+      "last_run_id": "20260110_100932",
+      "observe_count": 1,
+      "status_last": "defer",
+      "volatility_last": 0.24,
+      "volatility_max": 0.24,
+      "volatility_history": [
+        0.24
+      ],
+      "scores_avg": {
+        "A": 0.0,
+        "B": 0.15,
+        "C": 0.4,
+        "D": 0.0
+      },
+      "competing_routes_last": [
+        "B",
+        "C"
+      ],
+      "needs_observation": true,
+      "cooldown_until": "2026-01-11T10:20:29.687516+00:00"
+    }
+  }
+}

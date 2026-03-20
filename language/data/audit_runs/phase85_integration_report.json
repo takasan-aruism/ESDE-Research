@@ -1,0 +1,632 @@
+{
+  "audit_version": "8.5.0",
+  "timestamp": "2026-01-13T14:15:32.689246+00:00",
+  "phase": "8-5 Integration",
+  "summary": {
+    "total_inputs": 14,
+    "success_rate": 85.71428571428571,
+    "abstain_rate": 14.285714285714285,
+    "block_rate": 0.0
+  },
+  "stats": {
+    "total_inputs": 14,
+    "candidates_empty": 2,
+    "llm_called": 12,
+    "success": 12,
+    "abstained": 0,
+    "blocked": 0,
+    "coercions": 0,
+    "span_nulls": 5,
+    "ledger_entries": 9,
+    "ledger_reinforcements": 3
+  },
+  "category_stats": {
+    "emotion": {
+      "total": 3,
+      "success": 3,
+      "abstained": 0,
+      "blocked": 0
+    },
+    "logic": {
+      "total": 2,
+      "success": 2,
+      "abstained": 0,
+      "blocked": 0
+    },
+    "conflict": {
+      "total": 2,
+      "success": 2,
+      "abstained": 0,
+      "blocked": 0
+    },
+    "reinforce": {
+      "total": 3,
+      "success": 3,
+      "abstained": 0,
+      "blocked": 0
+    },
+    "noise": {
+      "total": 2,
+      "success": 0,
+      "abstained": 2,
+      "blocked": 0
+    },
+    "edge": {
+      "total": 2,
+      "success": 2,
+      "abstained": 0,
+      "blocked": 0
+    }
+  },
+  "ledger": {
+    "total_entries": 9,
+    "total_observations": 12,
+    "avg_weight": 0.11481022208244772,
+    "max_weight": 0.13533501933306766,
+    "purged_count": 0
+  },
+  "audit_tests": {
+    "conflict_coexistence": "PASS",
+    "reinforcement_stability": "PASS",
+    "retention_by_tau": "PASS",
+    "no_pollution": "PASS"
+  },
+  "results": [
+    {
+      "input_id": "INT001",
+      "category": "emotion",
+      "text": "I love you with all my heart",
+      "candidates_count": 2,
+      "llm_called": true,
+      "success": true,
+      "abstained": false,
+      "blocked": false,
+      "molecule": {
+        "active_atoms": [
+          {
+            "id": "aa_1",
+            "atom": "EMO.love",
+            "axis": "interconnection",
+            "level": "catalytic",
+            "text_ref": "love",
+            "span": [
+              2,
+              6
+            ]
+          },
+          {
+            "id": "aa_2",
+            "atom": "PRP.whole",
+            "axis": "resonance",
+            "level": "existential",
+            "text_ref": "all",
+            "span": [
+              16,
+              19
+            ]
+          }
+        ],
+        "formula": "aa_1 × aa_2",
+        "meta": {
+          "generator": "qwq32b_tp2_long32k_existing",
+          "generator_version": "v8.3",
+          "validator_status": "pass",
+          "coordinate_coercions": [],
+          "span_warnings": [],
+          "timestamp": "2026-01-13T14:13:59.973904+00:00"
+        }
+      },
+      "fingerprint": "1013f40b1bcd48eac95cd922261793a5",
+      "ledger_action": "create",
+      "weight": 1.0,
+      "error": null
+    },
+    {
+      "input_id": "INT002",
+      "category": "emotion",
+      "text": "I hate everything about this",
+      "candidates_count": 1,
+      "llm_called": true,
+      "success": true,
+      "abstained": false,
+      "blocked": false,
+      "molecule": {
+        "active_atoms": [
+          {
+            "id": "aa_1",
+            "atom": "EMO.hate",
+            "axis": "ontological",
+            "level": "material",
+            "text_ref": "hate",
+            "span": [
+              2,
+              6
+            ]
+          }
+        ],
+        "formula": "aa_1",
+        "meta": {
+          "generator": "qwq32b_tp2_long32k_existing",
+          "generator_version": "v8.3",
+          "validator_status": "pass",
+          "coordinate_coercions": [],
+          "span_warnings": [],
+          "timestamp": "2026-01-13T14:14:07.273520+00:00"
+        }
+      },
+      "fingerprint": "939026372a590c49a66a25997fec1e38",
+      "ledger_action": "create",
+      "weight": 1.0,
+      "error": null
+    },
+    {
+      "input_id": "INT003",
+      "category": "emotion",
+      "text": "Fear grips my heart",
+      "candidates_count": 1,
+      "llm_called": true,
+      "success": true,
+      "abstained": false,
+      "blocked": false,
+      "molecule": {
+        "active_atoms": [
+          {
+            "id": "aa_1",
+            "atom": "EMO.fear",
+            "axis": "ontological",
+            "level": "material",
+            "text_ref": "Fear",
+            "span": [
+              0,
+              4
+            ]
+          }
+        ],
+        "formula": "aa_1",
+        "meta": {
+          "generator": "qwq32b_tp2_long32k_existing",
+          "generator_version": "v8.3",
+          "validator_status": "pass",
+          "coordinate_coercions": [],
+          "span_warnings": [],
+          "timestamp": "2026-01-13T14:14:12.896393+00:00"
+        }
+      },
+      "fingerprint": "db773fa991c43a2c6da26a7757ecfb60",
+      "ledger_action": "create",
+      "weight": 1.0,
+      "error": null
+    },
+    {
+      "input_id": "INT004",
+      "category": "logic",
+      "text": "The law requires obedience from citizens",
+      "candidates_count": 2,
+      "llm_called": true,
+      "success": true,
+      "abstained": false,
+      "blocked": false,
+      "molecule": {
+        "active_atoms": [
+          {
+            "id": "aa_1",
+            "atom": "SOC.citizen",
+            "axis": "interconnection",
+            "level": "catalytic",
+            "text_ref": "citizens",
+            "span": [
+              32,
+              40
+            ]
+          },
+          {
+            "id": "aa_2",
+            "atom": "EMO.respect",
+            "axis": "value_generation",
+            "level": "ethical",
+            "text_ref": "obedience",
+            "span": [
+              17,
+              26
+            ]
+          }
+        ],
+        "formula": "aa_2 ▷ aa_1",
+        "meta": {
+          "generator": "qwq32b_tp2_long32k_existing",
+          "generator_version": "v8.3",
+          "validator_status": "pass",
+          "coordinate_coercions": [],
+          "span_warnings": [],
+          "timestamp": "2026-01-13T14:14:26.006535+00:00"
+        }
+      },
+      "fingerprint": "e26196f4d8951f0bb3f84455b821b2a2",
+      "ledger_action": "create",
+      "weight": 1.0,
+      "error": null
+    },
+    {
+      "input_id": "INT005",
+      "category": "logic",
+      "text": "If it rains then the ground gets wet",
+      "candidates_count": 3,
+      "llm_called": true,
+      "success": true,
+      "abstained": false,
+      "blocked": false,
+      "molecule": {
+        "active_atoms": [
+          {
+            "id": "aa_1",
+            "atom": "ELM.earth",
+            "axis": "ontological",
+            "level": "material",
+            "text_ref": "ground",
+            "span": [
+              21,
+              27
+            ]
+          },
+          {
+            "id": "aa_2",
+            "atom": "PRP.wet",
+            "axis": "ontological",
+            "level": "semantic",
+            "text_ref": "wet",
+            "span": [
+              33,
+              36
+            ]
+          }
+        ],
+        "formula": "aa_1 ⇒ aa_2",
+        "meta": {
+          "generator": "qwq32b_tp2_long32k_existing",
+          "generator_version": "v8.3",
+          "validator_status": "pass",
+          "coordinate_coercions": [],
+          "span_warnings": [],
+          "timestamp": "2026-01-13T14:14:49.140433+00:00"
+        }
+      },
+      "fingerprint": "9c523eca7c75d10c15688015b8750fb3",
+      "ledger_action": "create",
+      "weight": 1.0,
+      "error": null
+    },
+    {
+      "input_id": "INT006",
+      "category": "conflict",
+      "text": "I love this place",
+      "candidates_count": 2,
+      "llm_called": true,
+      "success": true,
+      "abstained": false,
+      "blocked": false,
+      "molecule": {
+        "active_atoms": [
+          {
+            "id": "aa_1",
+            "atom": "EMO.love",
+            "axis": "interconnection",
+            "level": "catalytic",
+            "text_ref": "love (token 0)",
+            "span": null
+          },
+          {
+            "id": "aa_2",
+            "atom": "SPC.place",
+            "axis": "scale",
+            "level": "individual",
+            "text_ref": "place (token 2)",
+            "span": null
+          }
+        ],
+        "formula": "aa_1 × aa_2",
+        "meta": {
+          "generator": "qwq32b_tp2_long32k_existing",
+          "generator_version": "v8.3",
+          "validator_status": "pass",
+          "coordinate_coercions": [],
+          "span_warnings": [
+            {
+              "id": "aa_1",
+              "text_ref": "love (token 0)",
+              "warning": "text_ref 'love (token 0)' not found in text"
+            },
+            {
+              "id": "aa_2",
+              "text_ref": "place (token 2)",
+              "warning": "text_ref 'place (token 2)' not found in text"
+            }
+          ],
+          "timestamp": "2026-01-13T14:14:55.191200+00:00"
+        }
+      },
+      "fingerprint": "87c2e1e40bf81f7e360190e024ee464a",
+      "ledger_action": "create",
+      "weight": 1.0,
+      "error": null
+    },
+    {
+      "input_id": "INT007",
+      "category": "conflict",
+      "text": "I hate this place",
+      "candidates_count": 2,
+      "llm_called": true,
+      "success": true,
+      "abstained": false,
+      "blocked": false,
+      "molecule": {
+        "active_atoms": [
+          {
+            "id": "aa_1",
+            "atom": "EMO.hate",
+            "axis": "ontological",
+            "level": "material",
+            "text_ref": "hate",
+            "span": [
+              2,
+              6
+            ]
+          },
+          {
+            "id": "aa_2",
+            "atom": "SPC.place",
+            "axis": "scale",
+            "level": "individual",
+            "text_ref": "place",
+            "span": [
+              12,
+              17
+            ]
+          }
+        ],
+        "formula": "aa_1 ▷ aa_2",
+        "meta": {
+          "generator": "qwq32b_tp2_long32k_existing",
+          "generator_version": "v8.3",
+          "validator_status": "pass",
+          "coordinate_coercions": [],
+          "span_warnings": [],
+          "timestamp": "2026-01-13T14:15:00.928333+00:00"
+        }
+      },
+      "fingerprint": "c875db596f5d72495ffc3bd8151d7782",
+      "ledger_action": "create",
+      "weight": 1.0,
+      "error": null
+    },
+    {
+      "input_id": "INT008",
+      "category": "reinforce",
+      "text": "I love you",
+      "candidates_count": 1,
+      "llm_called": true,
+      "success": true,
+      "abstained": false,
+      "blocked": false,
+      "molecule": {
+        "active_atoms": [
+          {
+            "id": "aa_1",
+            "atom": "EMO.love",
+            "axis": "interconnection",
+            "level": "catalytic",
+            "text_ref": "love",
+            "span": [
+              2,
+              6
+            ]
+          }
+        ],
+        "formula": "aa_1",
+        "meta": {
+          "generator": "qwq32b_tp2_long32k_existing",
+          "generator_version": "v8.3",
+          "validator_status": "pass",
+          "coordinate_coercions": [],
+          "span_warnings": [],
+          "timestamp": "2026-01-13T14:15:06.217618+00:00"
+        }
+      },
+      "fingerprint": "29a6dbec143102f257b4036dbd3fdb2b",
+      "ledger_action": "create",
+      "weight": 1.0,
+      "error": null
+    },
+    {
+      "input_id": "INT009",
+      "category": "reinforce",
+      "text": "I love you",
+      "candidates_count": 1,
+      "llm_called": true,
+      "success": true,
+      "abstained": false,
+      "blocked": false,
+      "molecule": {
+        "active_atoms": [
+          {
+            "id": "aa_1",
+            "atom": "EMO.love",
+            "axis": "interconnection",
+            "level": "catalytic",
+            "text_ref": "love",
+            "span": [
+              2,
+              6
+            ]
+          }
+        ],
+        "formula": "aa_1",
+        "meta": {
+          "generator": "qwq32b_tp2_long32k_existing",
+          "generator_version": "v8.3",
+          "validator_status": "pass",
+          "coordinate_coercions": [],
+          "span_warnings": [],
+          "timestamp": "2026-01-13T14:15:10.551870+00:00"
+        }
+      },
+      "fingerprint": "29a6dbec143102f257b4036dbd3fdb2b",
+      "ledger_action": "reinforce",
+      "weight": 0.9885250888381238,
+      "error": null
+    },
+    {
+      "input_id": "INT010",
+      "category": "reinforce",
+      "text": "I love you",
+      "candidates_count": 1,
+      "llm_called": true,
+      "success": true,
+      "abstained": false,
+      "blocked": false,
+      "molecule": {
+        "active_atoms": [
+          {
+            "id": "aa_1",
+            "atom": "EMO.love",
+            "axis": "interconnection",
+            "level": "catalytic",
+            "text_ref": "love (token 0)",
+            "span": null
+          }
+        ],
+        "formula": "aa_1",
+        "meta": {
+          "generator": "qwq32b_tp2_long32k_existing",
+          "generator_version": "v8.3",
+          "validator_status": "pass",
+          "coordinate_coercions": [],
+          "span_warnings": [
+            {
+              "id": "aa_1",
+              "text_ref": "love (token 0)",
+              "warning": "text_ref 'love (token 0)' not found in text"
+            }
+          ],
+          "timestamp": "2026-01-13T14:15:15.776663+00:00"
+        }
+      },
+      "fingerprint": "29a6dbec143102f257b4036dbd3fdb2b",
+      "ledger_action": "reinforce",
+      "weight": 0.9771663253173755,
+      "error": null
+    },
+    {
+      "input_id": "INT011",
+      "category": "noise",
+      "text": "asdf jkl qwerty",
+      "candidates_count": 0,
+      "llm_called": false,
+      "success": false,
+      "abstained": true,
+      "blocked": false,
+      "molecule": null,
+      "fingerprint": null,
+      "ledger_action": null,
+      "weight": null,
+      "error": null
+    },
+    {
+      "input_id": "INT012",
+      "category": "noise",
+      "text": "the the the the",
+      "candidates_count": 0,
+      "llm_called": false,
+      "success": false,
+      "abstained": true,
+      "blocked": false,
+      "molecule": null,
+      "fingerprint": null,
+      "ledger_action": null,
+      "weight": null,
+      "error": null
+    },
+    {
+      "input_id": "INT013",
+      "category": "edge",
+      "text": "I do not not love you",
+      "candidates_count": 1,
+      "llm_called": true,
+      "success": true,
+      "abstained": false,
+      "blocked": false,
+      "molecule": {
+        "active_atoms": [
+          {
+            "id": "aa_1",
+            "atom": "EMO.love",
+            "axis": "interconnection",
+            "level": "catalytic",
+            "text_ref": "love (token 3)",
+            "span": null
+          }
+        ],
+        "formula": "aa_1",
+        "meta": {
+          "generator": "qwq32b_tp2_long32k_existing",
+          "generator_version": "v8.3",
+          "validator_status": "pass",
+          "coordinate_coercions": [],
+          "span_warnings": [
+            {
+              "id": "aa_1",
+              "text_ref": "love (token 3)",
+              "warning": "text_ref 'love (token 3)' not found in text"
+            }
+          ],
+          "timestamp": "2026-01-13T14:15:26.101389+00:00"
+        }
+      },
+      "fingerprint": "29a6dbec143102f257b4036dbd3fdb2b",
+      "ledger_action": "reinforce",
+      "weight": 0.9552869176452804,
+      "error": null
+    },
+    {
+      "input_id": "INT014",
+      "category": "edge",
+      "text": "This statement is false",
+      "candidates_count": 1,
+      "llm_called": true,
+      "success": true,
+      "abstained": false,
+      "blocked": false,
+      "molecule": {
+        "active_atoms": [
+          {
+            "id": "aa_1",
+            "atom": "EXS.being",
+            "axis": "lawfulness",
+            "level": "necessary",
+            "text_ref": "is (token 2)",
+            "span": null
+          }
+        ],
+        "formula": "¬aa_1",
+        "meta": {
+          "generator": "qwq32b_tp2_long32k_existing",
+          "generator_version": "v8.3",
+          "validator_status": "pass",
+          "coordinate_coercions": [],
+          "span_warnings": [
+            {
+              "id": "aa_1",
+              "text_ref": "is (token 2)",
+              "warning": "text_ref 'is (token 2)' not found in text"
+            }
+          ],
+          "timestamp": "2026-01-13T14:15:32.685567+00:00"
+        }
+      },
+      "fingerprint": "32f116f41261e90abf59f62133ac8c5b",
+      "ledger_action": "create",
+      "weight": 1.0,
+      "error": null
+    }
+  ],
+  "overall_result": "PASS"
+}

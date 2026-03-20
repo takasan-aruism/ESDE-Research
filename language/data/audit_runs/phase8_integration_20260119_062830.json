@@ -1,0 +1,115 @@
+{
+  "timestamp": "20260119_062830",
+  "llm_host": "http://100.107.6.119:8001/v1",
+  "synapse_file": "esde_synapses_v3.json",
+  "glossary_file": "glossary_results.json",
+  "passed": true,
+  "results": [
+    {
+      "input": "I love you",
+      "expect_candidates": true,
+      "expect_success": true,
+      "sensor_ok": true,
+      "generator_ok": true,
+      "validator_ok": true,
+      "schema_ok": true,
+      "passed": true,
+      "error": null,
+      "details": {
+        "candidates_count": 2,
+        "sensor_engine": "v2_synapse",
+        "generator_success": true,
+        "generator_attempts": 1,
+        "generator_coercions": 0,
+        "formula": "aa_1",
+        "atoms_count": 2,
+        "validator_valid": true,
+        "validator_errors": [],
+        "validator_warnings": [],
+        "validator_synapse_hash": "sha256:b7e07bb866bb40373aa5b6bd179351c12d22439c25ecc00f75db99463a60d0cd"
+      }
+    },
+    {
+      "input": "The law requires obedience",
+      "expect_candidates": true,
+      "expect_success": true,
+      "sensor_ok": true,
+      "generator_ok": true,
+      "validator_ok": true,
+      "schema_ok": true,
+      "passed": true,
+      "error": null,
+      "details": {
+        "candidates_count": 5,
+        "sensor_engine": "v2_synapse",
+        "generator_success": true,
+        "generator_attempts": 1,
+        "generator_coercions": 0,
+        "formula": "aa_1 ▷ aa_5",
+        "atoms_count": 2,
+        "validator_valid": true,
+        "validator_errors": [],
+        "validator_warnings": [],
+        "validator_synapse_hash": "sha256:c1be50b970b8b92db2f86ed90591a1510bf593fc07c33b72f71bcb9892b1cf65"
+      }
+    },
+    {
+      "input": "apprenticed to a master",
+      "expect_candidates": true,
+      "expect_success": true,
+      "sensor_ok": true,
+      "generator_ok": true,
+      "validator_ok": true,
+      "schema_ok": true,
+      "passed": true,
+      "error": null,
+      "details": {
+        "candidates_count": 1,
+        "sensor_engine": "v2_synapse",
+        "generator_success": true,
+        "generator_attempts": 1,
+        "generator_coercions": 0,
+        "formula": "aa_1",
+        "atoms_count": 1,
+        "validator_valid": true,
+        "validator_errors": [],
+        "validator_warnings": [],
+        "validator_synapse_hash": "sha256:d6322750949e6871bca318827422a89bb3616fe3c01d0300f5273b8ddeb73cd1"
+      }
+    },
+    {
+      "input": "",
+      "expect_candidates": false,
+      "expect_success": false,
+      "sensor_ok": true,
+      "generator_ok": true,
+      "validator_ok": true,
+      "schema_ok": true,
+      "passed": true,
+      "error": null,
+      "details": {
+        "candidates_count": 0,
+        "sensor_engine": "v2_synapse",
+        "generator_abstained": true,
+        "generator_llm_called": false
+      }
+    },
+    {
+      "input": "asdfghjkl qwertyuiop",
+      "expect_candidates": false,
+      "expect_success": false,
+      "sensor_ok": true,
+      "generator_ok": true,
+      "validator_ok": true,
+      "schema_ok": true,
+      "passed": true,
+      "error": null,
+      "details": {
+        "candidates_count": 0,
+        "sensor_engine": "v2_synapse+v1_fallback",
+        "generator_abstained": true,
+        "generator_llm_called": false
+      }
+    }
+  ]
+}
