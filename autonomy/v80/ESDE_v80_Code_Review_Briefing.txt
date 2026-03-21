@@ -1,0 +1,266 @@
+ESDE v8.0 — Code Review Briefing
+====================================
+Date: 2026-03-21
+Purpose: Context document for code reviewer (Claude instance or GPT)
+Scope: v7.3 → v7.4 → v8.0 lifecycle instrumentation
+
+================================================================
+1. WHERE WE ARE
+================================================================
+
+Phase: Autonomy (formerly Cognition)
+Current codebase: autonomy/v74/ on Ryzen
+  - esde_v74_engine.py (V43 + Stress + VirtualLayer v2)
+  - virtual_layer_v2.py (budget=1 metabolism)
+  - engine_accel_v3.py (key/get_latent/set_latent patches)
+  - esde_v74_calibrate.py (with --profile mode)
+
+Completed runs:
+  - v7.3: N=5000, 50 steps, 200 windows, seed=42 (COMPLETE)
+  - v7.4: N=10000, 200 steps, 200 windows, 5 seeds (COMPLETE)
+  - v7.4: 6 additional seeds (running, data partial)
+
+================================================================
+2. CONVERSATION FLOW (chronological decisions)
+================================================================
+
+A. Budget=1 Metabolism (v7.3)
+   Taka: "Energy is not earned. It IS. Physical stability = 1."
+   Implementation: VirtualLayer allocates budget=1 among labels
+   by link-influence ratio. Torque strength = share × sin(Δθ).
+   Labels below half of fair share die.
+
+B. Stress Dynamic Equilibrium (v7.2→v7.3)
+   Problem: Fixed stress reference killed 300 links below baseline.
+   Taka: "Reference should be system's own past."
+   Implementation: EMA of link count. stress_intensity = current/EMA.
+   Result: Links returned to Genesis baseline (~3100 at N=5000).
+
+C. v7.4 Large-Scale Test
+   Taka: "Scale up to N=10000, multi-seed, see what happens."
+   Result: 5 seeds × 200 windows completed (39h each).
+   Key finding: R+ ≈ 8 does NOT scale with N.
+   Key finding: Dynamic equilibrium is seed-independent (universal).
+
+D. Birth Pattern Discovery
+   From data: 1120 labels born, 9 survived (0.8%).
+   Universal law: 0 survivors born before w100 (5/5 seeds).
+   5-node labels live 18× longer than 2-node.
+   Oldest survivor is ALWAYS 5-node (5/5 seeds).
+
+E. Spatial Analysis
+   Labels are NOT spatial clusters. They are phase-frequency groups.
+   Nodes scattered across grid but share θ.
+   R>0 bridges appear BETWEEN labels, not within.
+
+F. Macro-Node Compression Proposal (Gemini)
+   Gemini proposed: compress 5-node clusters into 1 macro-node,
+   scale to N=1,000,000 for emergent inter-label interaction.
+
+G. Audit Response (Claude, this session)
+   REJECTED premature compression. Reasons:
+   1. Survival mechanism unknown (not share, not alignment, not phase)
+   2. Cost savings minimal (2%, bottleneck is substrate scan not labels)
+   3. System may not be at steady state (2 seeds show below-threshold labels)
+   
+   Recommended: lifecycle instrumentation first, then compression.
+
+H. Taka's Framework
+   "Points first, formulas later. Hypotheses are insufficient."
+   "Designable formulas are permitted IF physically grounded."
+   This aligns with: instrument → collect points → find patterns → formalize.
+
+================================================================
+3. WHAT v8.0 MUST IMPLEMENT
+================================================================
+
+Goal: Add per-label lifecycle logging to virtual_layer_v2.py.
+No changes to physics. No changes to stress. No new mechanics.
+Pure observation. Collect the points needed for future formalization.
+
+--- 3.1 Per-Label Lifecycle Log ---
+
+Every label, from birth to death, must record each window:
+
+  {
+    "label_id": int,
+    "window": int,
+    "event": "birth" | "alive" | "death",
+    "nodes": int,            # node count
+    "share": float,          # budget share this window
+    "alignment": float,      # cos(θ_mean - phase_sig)
+    "torque_applied": float, # total torque this label applied
+    "territory_links": int,  # links connected to owned nodes
+    "territory_rplus": int,  # R>0 links in territory
+    "territory_S_mean": float, # mean S of territory links
+    "phase_sig": float,      # label's phase signature
+    "nearest_label_dist": float, # phase distance to nearest label
+    "n_phase_neighbors": int, # labels within 0.3 rad
+  }
+
+On death, additionally record:
+  {
+    "death_cause": "cull" | "no_alive_nodes" | "other",
+    "share_at_death": float,
+    "age_at_death": int,
+  }
+
+--- 3.2 Storage ---
+
+In-memory list: self.lifecycle_log = []
+Append one entry per label per window.
+At end of run, dump to JSON alongside existing detail.json.
+
+For 200 windows × ~20 labels = ~4000 entries. Negligible memory.
+
+--- 3.3 Per-Window Summary (new CSV columns) ---
+
+Add to calibrate CSV output:
+  - v_oldest_age: age of oldest label
+  - v_mean_age: mean age of all labels
+  - v_mean_share_5node: mean share of 5-node labels
+  - v_share_std: std of share distribution
+  - v_births_5node: 5-node labels born this window
+  - v_deaths_5node: 5-node labels that died this window
+
+================================================================
+4. WHAT v8.0 MUST NOT DO
+================================================================
+
+- Must NOT change physics (Genesis operators frozen)
+- Must NOT change stress mechanism (EMA dynamic equilibrium)
+- Must NOT change label birth/death rules
+- Must NOT change budget=1 allocation
+- Must NOT change torque formula
+- Must NOT introduce new interaction mechanics
+- Must NOT add target-seeking or fixed constants
+
+This is observation only. Adding instruments to the microscope,
+not changing the specimen.
+
+================================================================
+5. EXPECTED RESULTS
+================================================================
+
+From the lifecycle data, we expect to answer:
+
+Q1: What keeps 5-node elders alive for 40-79 windows?
+    Candidates to check:
+    - Does share remain stable or oscillate?
+    - Does alignment drift over time?
+    - Do territory links grow, shrink, or cycle?
+    - Is territory_rplus higher for elders?
+    - Is territory_S_mean higher for elders?
+    - Do elders have fewer phase neighbors (isolated niche)?
+
+Q2: How do labels die?
+    - Sudden (share drops to 0 in 1 window)?
+    - Gradual (share declines over multiple windows)?
+    - Triggered by newcomer birth nearby?
+    - Triggered by physical event (link collapse in territory)?
+
+Q3: Is there temporal correlation between labels?
+    - Does label A's death open space for label B?
+    - Do births cluster in time (multiple born same window)?
+    - Do deaths cluster in time?
+
+Q4: What distinguishes the 51 surviving 5-node from the hundreds
+    of dead 5-node labels?
+    - Birth conditions (what was different at birth site)?
+    - Early trajectory (did survivors gain share faster)?
+    - Location in phase space (were they in gaps between others)?
+
+================================================================
+6. RUN PLAN
+================================================================
+
+Step 1: Implement lifecycle logging in virtual_layer_v2.py
+Step 2: Update calibrate to output new CSV columns
+Step 3: Code review (this document provides context)
+Step 4: Run N=5000, 50 steps, 200 windows, seed=42
+        (~2 hours, fast iteration)
+Step 5: Analyze lifecycle data
+Step 6: If patterns found → formalize (candidate equations)
+Step 7: If patterns sufficient → discuss compression feasibility
+
+================================================================
+7. FILE STRUCTURE
+================================================================
+
+autonomy/v80/
+  esde_v80_engine.py          # copy of v74, path update only
+  virtual_layer_v3.py         # v2 + lifecycle logging
+  esde_v80_calibrate.py       # v74 + new CSV columns
+  engine_accel_v3.py          # unchanged from v74
+
+Changes from v74:
+  - virtual_layer_v2.py → virtual_layer_v3.py (logging added)
+  - calibrate: 6 new CSV columns
+  - engine: import path change only
+
+Lines of new code: ~80-100 (logging + CSV columns)
+Lines of changed code: ~20 (imports, column additions)
+
+================================================================
+8. CONSTRAINTS FROM TAKA
+================================================================
+
+Recorded verbatim for reviewer alignment:
+
+"Points first, formulas later. Hypotheses are insufficient."
+
+"Designable formulas are permitted IF they have physical grounding."
+
+"AI translating my words into known patterns causes drift.
+ Derive from observations, do not translate into existing science."
+
+"Budget=1: physical stability IS the energy. It does not increase
+ or decrease. Metabolism is distribution only."
+
+"Labels: what they see is less important than whether what they
+ see continues to exist."
+
+"The repetitive process (define → invert → asymmetry → linkage →
+ hierarchy → name → next definition) IS existence. If this cycle
+ can be made autonomous, that is artificial intelligence."
+
+================================================================
+9. KNOWN RISKS
+================================================================
+
+- v7.4 CSV data for w128-200 was lost in git operation.
+  Detail JSON survived. Future runs must backup CSV.
+
+- seed=123 and seed=2024 show labels below death threshold at w200.
+  System may not be at steady state. Lifecycle logging will clarify.
+
+- engine_accel_v3 patches key/get_latent/set_latent via monkey-patch.
+  genesis_state.py uses self.L (not self.latent) and lazy init via
+  self._latent_rng.random(). Patch must preserve lazy init.
+
+- Physical layer bottleneck is _fast_realization_step (45% of CPU),
+  which scans all substrate pairs regardless of alive nodes.
+  Label compression does NOT address this bottleneck.
+
+================================================================
+10. AUDIT CHECKLIST FOR REVIEWER
+================================================================
+
+[ ] virtual_layer_v3.py: lifecycle_log entries match spec in §3.1
+[ ] virtual_layer_v3.py: no changes to birth/death/allocation logic
+[ ] virtual_layer_v3.py: death_cause correctly classified
+[ ] virtual_layer_v3.py: nearest_label_dist computed correctly
+[ ] calibrate: new CSV columns match spec in §3.3
+[ ] calibrate: existing columns unchanged
+[ ] engine: only import path changes, no logic changes
+[ ] engine_accel_v3: unchanged from v74
+[ ] No new constants introduced
+[ ] No target-seeking behavior introduced
+[ ] Budget=1 allocation unchanged
+[ ] Torque formula unchanged
+[ ] Stress mechanism unchanged
+[ ] Memory usage: ~4000 entries × ~200 bytes = ~800KB (acceptable)
+[ ] JSON output: lifecycle_log included in detail output
+
+================================================================
+End of Briefing
