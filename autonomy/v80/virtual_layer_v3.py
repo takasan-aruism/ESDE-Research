@@ -248,6 +248,17 @@ class VirtualLayer:
             nearest = self._nearest_label_dist(lid, label)
             n_neighbors = self._n_phase_neighbors(lid, label)
 
+            # Cognitive binding measure: θ coherence of label nodes
+            # R = mean resultant length of θ. R=1: perfectly aligned. R≈0: random.
+            thetas = [float(state.theta[n]) for n in label["nodes"]
+                      if n in state.alive_n]
+            if len(thetas) >= 2:
+                sin_sum = sum(math.sin(t) for t in thetas)
+                cos_sum = sum(math.cos(t) for t in thetas)
+                theta_coherence = math.sqrt(sin_sum**2 + cos_sum**2) / len(thetas)
+            else:
+                theta_coherence = 0.0
+
             event = "birth" if lid in born_this_window else "alive"
 
             self.lifecycle_log.append({
@@ -264,6 +275,7 @@ class VirtualLayer:
                 "phase_sig": round(label["phase_sig"], 4),
                 "nearest_label_dist": round(nearest, 4),
                 "n_phase_neighbors": n_neighbors,
+                "theta_coherence": round(theta_coherence, 4),
             })
 
         # ── 5. CULL ──
@@ -285,6 +297,15 @@ class VirtualLayer:
                 lid, label, state, node_torques)
             nearest = self._nearest_label_dist(lid, label)
             n_neighbors = self._n_phase_neighbors(lid, label)
+            # Coherence at death
+            thetas_d = [float(state.theta[n]) for n in label["nodes"]
+                        if n in state.alive_n]
+            if len(thetas_d) >= 2:
+                sin_s = sum(math.sin(t) for t in thetas_d)
+                cos_s = sum(math.cos(t) for t in thetas_d)
+                theta_coh_d = math.sqrt(sin_s**2 + cos_s**2) / len(thetas_d)
+            else:
+                theta_coh_d = 0.0
             self.lifecycle_log.append({
                 "label_id": lid,
                 "window": window_count,
@@ -299,6 +320,7 @@ class VirtualLayer:
                 "phase_sig": round(label["phase_sig"], 4),
                 "nearest_label_dist": round(nearest, 4),
                 "n_phase_neighbors": n_neighbors,
+                "theta_coherence": round(theta_coh_d, 4),
                 "death_cause": "cull",
                 "share_at_death": round(label["share"], 6),
                 "age_at_death": window_count - label["born"],
