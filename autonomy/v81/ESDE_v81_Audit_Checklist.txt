@@ -1,0 +1,222 @@
+ESDE v8.1 — Code Review Audit Checklist
+==========================================
+Date: 2026-03-22
+Scope: virtual_layer_v4.py, esde_v81_engine.py,
+       esde_v81_calibrate.py, run_equivalence.sh
+Architecture: Gemini v8.1 Directive (Tripartite Architecture)
+Reviewer: [assign]
+
+================================================================
+CONTEXT
+================================================================
+
+v8.1 adds macro-node compression to the virtual layer.
+When --compress is passed, stable labels (age >= min_age,
+nodes >= 3, internal links with S >= 0.20) are compressed
+into MacroNode objects at a designated window. Their internal
+links are removed from the physical layer. MacroNodes exert
+torque via their state vector, not micro-physics.
+
+Compression is OFF by default. Without --compress, v8.1
+behaves identically to v8.0 (lifecycle logging only).
+
+The equivalence test (run_equivalence.sh) runs compressed vs
+uncompressed on the same seed for 500 windows and compares.
+
+================================================================
+SECTION A: TRIPARTITE ARCHITECTURE COMPLIANCE (Gemini §1)
+================================================================
+
+Level 1 (Physical Layer — V43 frozen):
+[ ] V43 operators unchanged (realizer, physics, chemistry,
+    resonance, grower, intruder, decay_exclusion)
+[ ] No label awareness in physical layer
+[ ] Physical operators process all alive_l, including edges
+    adjacent to compressed nodes (perimeter links preserved)
+[ ] Only internal links between compressed nodes are removed
+[ ] Stress mechanism (EMA dynamic equilibrium) unchanged
+
+Level 2 (Compression Engine — virtual_layer_v4.py):
+[ ] MacroNode state vector matches Gemini §3:
+    Required: phase_core_theta, size_class_N,
+              local_stress_omega, h_age
+    Optional: nearest_neighbor_dist
+[ ] E5 (coherence) is QUARANTINED — not in MacroNode state
+[ ] E3 (carrying capacity) is QUARANTINED — not in code logic
+[ ] Compression is purely computational shortcut — no semantic
+    meaning assigned to macro-nodes in Level 2
+
+Level 3 (Ontology — NOT IMPLEMENTED):
+[ ] No Level 3 code exists in v8.1
+[ ] No "territorial defense" or "cognitive binding" logic
+    is encoded in the compression engine
+
+================================================================
+SECTION B: COMPRESSION CORRECTNESS
+================================================================
+
+compress_stable_labels():
+[ ] Called ONCE at compress_at_window (not repeated)
+[ ] Only labels with age >= compress_min_age are eligible
+[ ] Only labels with nodes >= 3 are eligible
+[ ] Only labels with at least 1 internal link S >= 0.20
+[ ] Internal links correctly identified (both endpoints in
+    label's node set)
+[ ] Internal links removed from state.alive_l (del)
+[ ] Removed links tracked in self.removed_links
+[ ] Compressed nodes tracked in self.compressed_nodes
+[ ] MacroNode created with correct initial state
+[ ] Lifecycle log entry with event="compressed" recorded
+
+MacroNode behavior post-compression:
+[ ] MacroNode owns its nodes unconditionally (node_owner)
+[ ] MacroNode participates in share allocation (label_link_count)
+[ ] MacroNode exerts torque via _macro_node_torque()
+[ ] Torque formula: share × sin(phase_core_theta - theta_n)
+    — same as regular label torque
+[ ] local_stress_omega updated each window via perimeter links
+[ ] h_age incremented each window
+[ ] nearest_dist recalculated each window (includes other
+    labels AND other macro-nodes)
+[ ] MacroNode lifecycle logged with event="macro_alive"
+[ ] MacroNode death logged with event="macro_death"
+
+MacroNode death:
+[ ] Same cull threshold as regular labels
+    (share < 0.5 / total_entities)
+[ ] total_entities counts regular labels + macro-nodes
+    WITHOUT double-counting
+[ ] On macro-node death: compressed_nodes released
+[ ] On macro-node death: macro-node removed from registry
+[ ] On macro-node death: corresponding label entry removed
+
+================================================================
+SECTION C: SEED/BIRTH ISOLATION
+================================================================
+
+[ ] New labels NOT seeded from compressed nodes
+    (cluster_nodes & compressed_nodes check)
+[ ] R>0 pairs involving compressed nodes excluded from
+    new label seeding
+[ ] Existing labels not affected by compression of other labels
+
+================================================================
+SECTION D: v8.0 BACKWARD COMPATIBILITY
+================================================================
+
+[ ] Without --compress flag, no compression occurs
+[ ] macro_nodes dict stays empty
+[ ] compressed_nodes stays empty
+[ ] removed_links stays empty
+[ ] Step logic falls through all compression branches
+[ ] Lifecycle log format identical to v8.0 for non-compressed
+[ ] CSV columns: macro_nodes_active=0 and
+    compressed_links_removed=0 when uncompressed
+
+================================================================
+SECTION E: CALIBRATE & CLI
+================================================================
+
+[ ] --compress flag: store_true, default off
+[ ] --compress-at: int, default 50
+[ ] --compress-min-age: int, default 10
+[ ] Compression params passed from main → run → V81Engine
+[ ] CSV LOG_FIELDS includes macro_nodes_active,
+    compressed_links_removed
+[ ] Row dict includes both new fields
+[ ] JSON detail includes lifecycle_log with compression events
+[ ] JSON detail includes macro_node_details in summary
+
+================================================================
+SECTION F: EQUIVALENCE TEST (run_equivalence.sh)
+================================================================
+
+[ ] Run A: uncompressed, seed 123, 500 windows
+[ ] Run B: compressed at w50, seed 123, 500 windows
+[ ] Same N, same steps, same seed
+[ ] Outputs to equivalence_test/ directory
+[ ] Logs saved (run_a.log, run_b.log) for CPU timing
+
+Validation criteria (Gemini §4):
+[ ] Macro-node survival durations ± 10% of Run A age>=50
+[ ] Phase-space partitioning mirrors Run A niche distribution
+[ ] Total physical links do not collapse or explode
+[ ] Run B achieves < 5% of Run A CPU cost
+    NOTE: This target may not be achievable. The bottleneck
+    is _fast_realization_step (45% CPU) which scans ALL
+    substrate pairs regardless of compression. Removing
+    ~20 internal links saves ~0.3% of link evaluations.
+    The 5% target assumes future substrate-scan optimization.
+
+================================================================
+SECTION G: EQUATION STATUS (Gemini §5)
+================================================================
+
+[ ] E2 (Size survival): SAFE. Used as building block rationale.
+    Not hardcoded — labels still use physical birth/death rules.
+[ ] E4 (Territory scaling): SAFE. Geometric reference only.
+    Not hardcoded.
+[ ] E1 (Isolation): PROVISIONAL. Not hardcoded. nearest_dist
+    is tracked but does not drive code logic.
+[ ] E6 (Maturation): PROVISIONAL. h_age tracked but does not
+    drive survival rules.
+[ ] E3 (Carrying capacity): QUARANTINED. Not in code.
+[ ] E5 (Coherence decay): QUARANTINED. Not in MacroNode state.
+
+================================================================
+SECTION H: CONSTITUTION COMPLIANCE
+================================================================
+
+§1 Structure First          [ ] Scale-up only, no new mechanics
+§2 System Alive             [ ] BG seeding preserved
+§3 Axiom L (no targets)     [ ] No fixed constants added
+§4 Emergence Directionality [ ] Compression does not steer
+§5 Axiom ε                  [ ] RNG preserved
+§7 Minimal Change           [ ] Additive only (compression opt-in)
+
+================================================================
+SECTION I: KNOWN RISKS
+================================================================
+
+RISK 1: CPU savings may be minimal.
+  The bottleneck is realizer substrate scan (45%), not internal
+  label link evaluation. Compressing ~20 internal links saves
+  ~0.3%. The 5% CPU target in Gemini §4 is likely unachievable
+  without substrate-scan optimization.
+  REVIEWER: Flag if this invalidates the equivalence test.
+
+RISK 2: _compute_perimeter_omega iterates all alive_l.
+  O(alive_l) per macro-node per window. With 5 macro-nodes and
+  3000 links = 15K iterations. Tolerable at N=5000 but scales
+  linearly. Should use pre-built degree map for O(degree).
+  REVIEWER: Flag as optimization opportunity.
+
+RISK 3: Macro-node death releases nodes but does NOT restore
+  removed internal links. Those links are permanently gone.
+  If the macro-node dies and the nodes rejoin the system, they
+  have fewer links than they would in the uncompressed case.
+  REVIEWER: Assess whether this introduces systematic bias.
+
+RISK 4: Maturation re-fit (Gemini §2) revealed only 10 mature
+  survivors (age>=50) in 48 seeds at 200 windows. The 500-window
+  equivalence test should produce more, but E1 parameters for
+  the mature cohort are statistically weak.
+  REVIEWER: Note in audit memo.
+
+================================================================
+SECTION J: FILES
+================================================================
+
+autonomy/v81/
+  virtual_layer_v4.py     — MacroNode + compression engine
+  esde_v81_engine.py      — V81Engine with compression params
+  esde_v81_calibrate.py   — CLI args + CSV columns
+  engine_accel_v3.py      — Unchanged from v8.0
+  run_equivalence.sh      — Run A vs Run B
+
+Total new code: ~200 lines (MacroNode class + compression logic)
+Changed code: ~30 lines (engine init, calibrate args/columns)
+Unchanged: engine_accel_v3.py, all V43 frozen operators
+
+================================================================
+End of Checklist
