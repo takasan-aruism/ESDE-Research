@@ -68,7 +68,7 @@ class MacroNode:
 class VirtualLayer:
 
     def __init__(self, compression_enabled=False, compress_at_window=50,
-                 compress_min_age=10, compress_min_S=0.20):
+                 compress_min_age=10):
         self.recurrence = {}
         self.labels = {}
         self.next_label_id = 0
@@ -79,7 +79,6 @@ class VirtualLayer:
         self.compression_enabled = compression_enabled
         self.compress_at_window = compress_at_window
         self.compress_min_age = compress_min_age
-        self.compress_min_S = compress_min_S
 
         # Macro-node registry
         self.macro_nodes = {}        # {label_id: MacroNode}
@@ -104,18 +103,21 @@ class VirtualLayer:
             if len(label["nodes"]) < 3:
                 continue
 
-            # Check if nodes have internal links with S >= threshold
+            # Collect ANY internal links (regardless of S)
+            # 48-seed data shows: internal S decays to ~0.045 within
+            # a few windows. Requiring S >= 0.20 blocks all compression.
             internal_links = []
             for lk in state.alive_l:
                 n1, n2 = lk
                 if n1 in label["nodes"] and n2 in label["nodes"]:
-                    s = state.S.get(lk, 0.0)
-                    if s >= self.compress_min_S:
-                        internal_links.append(lk)
+                    internal_links.append(lk)
 
-            # Need at least 1 internal link to justify compression
-            if not internal_links:
-                continue
+            # Compression does NOT require internal links.
+            # COMPRESSION TARGET: the virtual claim (frozenset),
+            # NOT the physical structure. Label's essence is
+            # cognitive binding — the assertion that these nodes
+            # belong together, regardless of physical connection.
+            # (GPT audit 2026-03-23: approved, explicitly documented)
 
             # Measure territory before compression (frozen baseline)
             label_node_set = set(label["nodes"])

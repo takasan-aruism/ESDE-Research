@@ -58,7 +58,7 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
     tags = []
     if encap_params.stress_enabled: tags.append("stress")
     if encap_params.virtual_enabled: tags.append("metab")
-    if compression_enabled: tags.append("compressed")
+    if compression_enabled: tags.append(f"compressed_w{compress_at_window}")
     if not tags: tags.append("baseline")
     tag_str = "+".join(tags)
 
