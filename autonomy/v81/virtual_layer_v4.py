@@ -151,11 +151,11 @@ class VirtualLayer:
                     del state.alive_l[lk]
                     self.removed_links.add(lk)
 
-            # Remove compressed nodes from alive_n → frozen operators
-            # skip them entirely → SPEED IMPROVEMENT.
-            # MacroNode handles torque for these nodes via formula.
-            for n in label["nodes"]:
-                state.alive_n.discard(n)
+            # Nodes STAY in alive_n. They participate in all physics.
+            # Only internal links are removed. This makes macro-node
+            # a "fast label" (no internal cost) not a "strong label"
+            # (immune to physics). Territory changes with physical
+            # fluctuations. Share is earned, not guaranteed.
 
             # Invalidate neighbor cache (state rebuilds lazily)
             if hasattr(state, '_nbr_cache'):
@@ -427,15 +427,11 @@ class VirtualLayer:
                 label_link_count[owner2[0]] += 1
 
         # ── 3. ALLOCATE ──
-        # Regular labels: share from physical link count
-        # MacroNodes: share from frozen baseline (last observed
-        # territory_links before compression). No formula, no
-        # constants. Constitution §3 compliant.
+        # All labels (including macro-nodes) get share from physical
+        # link count. Macro-nodes are "fast labels" — same rules,
+        # just no internal links. Their share rises and falls with
+        # the physical layer, like everyone else.
         total_influence = sum(label_link_count.values())
-
-        for mn_id, mn in self.macro_nodes.items():
-            label_link_count[mn_id] = mn.territory_at_compression
-            total_influence += mn.territory_at_compression
 
         if total_influence == 0:
             total_influence = 1
@@ -631,10 +627,9 @@ class VirtualLayer:
                 "h_age": mn.h_age,
                 "death_cause": "cull",
             })
-            # Release compressed nodes — restore to alive_n
+            # Release compressed node tracking
             for n in mn.node_ids:
                 self.compressed_nodes.discard(n)
-                state.alive_n.add(n)  # re-enter physics
             del self.macro_nodes[mn_id]
             if mn_id in self.labels:
                 del self.labels[mn_id]
