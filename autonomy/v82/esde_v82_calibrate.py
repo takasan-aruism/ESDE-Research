@@ -100,6 +100,8 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
         sec = time.time() - t0
         times.append(sec)
 
+        try:
+
         isum = engine.last_isum
         vl = engine.virtual_stats
         ss = engine.stress_stats
@@ -234,6 +236,8 @@ def main():
     parser.add_argument("--compress-min-age", type=int, default=10,
                         help="Minimum age for compression eligibility")
     args = parser.parse_args()
+
+        try:
 
     params = V82EncapsulationParams(
         stress_enabled=not args.no_stress,
