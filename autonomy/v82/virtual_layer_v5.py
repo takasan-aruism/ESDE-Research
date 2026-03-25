@@ -71,7 +71,8 @@ class VirtualLayer:
     BIN_WIDTH = 2 * math.pi / 64  # ≈ 0.098 rad ≈ 5.6°
 
     def __init__(self, compression_enabled=False, compress_at_window=50,
-                 compress_min_age=10):
+                 compress_min_age=10,
+                 maturation_alpha=0.10, rigidity_beta=0.10):
         self.recurrence = {}
         self.labels = {}
         self.next_label_id = 0
@@ -82,6 +83,13 @@ class VirtualLayer:
         self.compression_enabled = compression_enabled
         self.compress_at_window = compress_at_window
         self.compress_min_age = compress_min_age
+
+        # Phase B: maturation + rigidity (v4.9 history tensor → label)
+        # α from 48-seed Phase A: age 1-5 → 20-40 = 8.3× survival increase
+        # β from 48-seed Phase A: alignment 0.77 → 0.20 over 50 windows
+        # Both derived from observation, not designed.
+        self.maturation_alpha = maturation_alpha
+        self.rigidity_beta = rigidity_beta
 
         # Macro-node registry
         self.macro_nodes = {}        # {label_id: MacroNode}
@@ -292,13 +300,17 @@ class VirtualLayer:
 
     def _macro_node_torque(self, mn, state, node_torques):
         """MacroNode exerts torque via state vector (Level 2).
-        Compressed nodes are not in alive_n but still have theta."""
+        Compressed nodes are not in alive_n but still have theta.
+        Same rigidity rule as regular labels — macro-node is a
+        'fast label', not a privileged one."""
         energy = mn.share
         if energy < 0.0001:
             return
-        torque_mag = energy
+        # Rigidity: same formula as regular labels
+        mn_age = mn.h_age + (mn.compressed_at - mn.born_window)
+        rigidity_factor = 1.0 / (1.0 + self.rigidity_beta * mn_age)
+        torque_mag = energy * rigidity_factor
         for n in mn.node_ids:
-            # Compressed nodes still have theta — torque applies directly
             theta_n = float(state.theta[n])
             torque = torque_mag * math.sin(mn.phase_core_theta - theta_n)
             existing = node_torques.get(n)
@@ -567,7 +579,13 @@ class VirtualLayer:
             energy = budget * label["share"]
             if energy < 0.0001:
                 continue
-            torque_mag = energy
+
+            # Phase B: Rigidity (v4.9 h_res → label version)
+            # Older labels exert weaker torque. They "harden" and
+            # stop pushing the world around them.
+            age = window_count - label["born"]
+            rigidity_factor = 1.0 / (1.0 + self.rigidity_beta * age)
+            torque_mag = energy * rigidity_factor
             for n in label["nodes"]:
                 if n not in state.alive_n:
                     continue
@@ -674,11 +692,21 @@ class VirtualLayer:
         # Don't double-count labels that are also macro-nodes
         total_entities = len([l for l in self.labels if l not in self.macro_nodes]) + len(self.macro_nodes)
         fair_share = 1.0 / max(1, total_entities)
-        death_threshold = fair_share * 0.5
+        base_threshold = fair_share * 0.5
 
-        dead_labels = [lid for lid, label in self.labels.items()
-                       if lid not in self.macro_nodes
-                       and label["share"] < death_threshold]
+        # Phase B: Maturation (v4.9 h_age → label version)
+        # Older labels tolerate lower share before dying.
+        # threshold_i = base / (1 + α × age)
+        # age=0: threshold = base (young labels die easily)
+        # age=20: threshold = base/3 (mature labels are resilient)
+        dead_labels = []
+        for lid, label in self.labels.items():
+            if lid in self.macro_nodes:
+                continue
+            age = window_count - label["born"]
+            threshold_i = base_threshold / (1.0 + self.maturation_alpha * age)
+            if label["share"] < threshold_i:
+                dead_labels.append(lid)
 
         five_node_deaths = 0
         for lid in dead_labels:
@@ -718,9 +746,13 @@ class VirtualLayer:
             del self.labels[lid]
             stats["labels_died"] += 1
 
-        # Macro-node cull (same threshold)
-        dead_macros = [mn_id for mn_id, mn in self.macro_nodes.items()
-                       if mn.share < death_threshold]
+        # Macro-node cull (same maturation rule)
+        dead_macros = []
+        for mn_id, mn in self.macro_nodes.items():
+            mn_age = mn.h_age + (mn.compressed_at - mn.born_window)
+            mn_threshold = base_threshold / (1.0 + self.maturation_alpha * mn_age)
+            if mn.share < mn_threshold:
+                dead_macros.append(mn_id)
         for mn_id in dead_macros:
             mn = self.macro_nodes[mn_id]
             self.lifecycle_log.append({
