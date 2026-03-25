@@ -28,6 +28,7 @@ echo "  === BATCH 1: Baseline ==="
 echo ""
 mkdir -p diag_v82_baseline
 parallel -j $JOBS --ungroup \
+    env OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 \
     python esde_v82_calibrate.py \
         --seed {1} --windows $WINDOWS \
         --output diag_v82_baseline \
@@ -40,6 +41,7 @@ echo "  === BATCH 2: Compressed (v8.1d, w50) ==="
 echo ""
 mkdir -p diag_v82_compressed
 parallel -j $JOBS --ungroup \
+    env OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 \
     python esde_v82_calibrate.py \
         --seed {1} --windows $WINDOWS \
         --compress --compress-at 50 --compress-min-age 10 \
