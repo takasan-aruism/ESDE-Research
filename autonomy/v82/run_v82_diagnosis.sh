@@ -13,7 +13,7 @@ print(' '.join(str(s) for s in base + extra))
 ")
 
 WINDOWS=200
-JOBS=48
+JOBS=24
 
 echo "============================================"
 echo "  ESDE v8.2 — 48-Seed Diagnosis"
