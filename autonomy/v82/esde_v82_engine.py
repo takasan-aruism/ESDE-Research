@@ -109,7 +109,8 @@ class V82Engine(V43Engine):
 
     def __init__(self, seed=42, N=V82_N, plb=0.007, rate=0.002,
                  encap_params=None, compression_enabled=False,
-                 compress_at_window=50, compress_min_age=10):
+                 compress_at_window=50, compress_min_age=10,
+                 maturation_alpha=0.10, rigidity_beta=0.10):
         params = encap_params or V82EncapsulationParams()
         super().__init__(seed=seed, N=N, plb=plb, rate=rate,
                          encap_params=params)
@@ -117,6 +118,8 @@ class V82Engine(V43Engine):
             compression_enabled=compression_enabled,
             compress_at_window=compress_at_window,
             compress_min_age=compress_min_age,
+            maturation_alpha=maturation_alpha,
+            rigidity_beta=rigidity_beta,
         )
         self.virtual_stats = {}
         self.stress_stats = {}

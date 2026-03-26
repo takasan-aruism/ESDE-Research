@@ -54,7 +54,8 @@ LOG_FIELDS = [
 
 def run(seed, n_windows, window_steps, output_dir, encap_params, N,
         compression_enabled=False, compress_at_window=50,
-        compress_min_age=10):
+        compress_min_age=10,
+        maturation_alpha=0.10, rigidity_beta=0.10):
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -68,13 +69,16 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
     print(f"\n  ESDE v8.2 — Large-Scale Autonomy")
     print(f"  N={N} seed={seed} windows={n_windows} "
           f"steps/win={window_steps} [{tag_str}]")
+    print(f"  maturation_alpha={maturation_alpha} rigidity_beta={rigidity_beta}")
     print(f"  Injection...", flush=True)
 
     t_start = time.time()
     engine = V82Engine(seed=seed, N=N, encap_params=encap_params,
                        compression_enabled=compression_enabled,
                        compress_at_window=compress_at_window,
-                       compress_min_age=compress_min_age)
+                       compress_min_age=compress_min_age,
+                       maturation_alpha=maturation_alpha,
+                       rigidity_beta=rigidity_beta)
     engine.run_injection()
     t_inj = time.time() - t_start
     print(f"  Injection done ({t_inj:.0f}s). Starting windows.\n")
@@ -198,6 +202,8 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
             "final_alive_links": frame.alive_links,
             "total_seconds": round(t_total, 0),
             "mean_sec_per_window": round(np.mean(times), 1),
+            "maturation_alpha": maturation_alpha,
+            "rigidity_beta": rigidity_beta,
         },
         "virtual_summary": engine.virtual.summary(),
         "lifecycle_log": engine.virtual.lifecycle_log,
@@ -234,6 +240,10 @@ def main():
                         help="Window at which to compress stable labels")
     parser.add_argument("--compress-min-age", type=int, default=10,
                         help="Minimum age for compression eligibility")
+    parser.add_argument("--maturation-alpha", type=float, default=0.10,
+                        help="Maturation α (death threshold relaxation)")
+    parser.add_argument("--rigidity-beta", type=float, default=0.10,
+                        help="Rigidity β (torque decay)")
     args = parser.parse_args()
 
 
@@ -248,7 +258,9 @@ def main():
         engine = V82Engine(seed=args.seed, N=args.N, encap_params=params,
                            compression_enabled=args.compress,
                            compress_at_window=args.compress_at,
-                           compress_min_age=args.compress_min_age)
+                           compress_min_age=args.compress_min_age,
+                           maturation_alpha=args.maturation_alpha,
+                           rigidity_beta=args.rigidity_beta)
         engine.run_injection()
         pr = cProfile.Profile()
         pr.enable()
@@ -266,7 +278,9 @@ def main():
         encap_params=params, N=args.N,
         compression_enabled=args.compress,
         compress_at_window=args.compress_at,
-        compress_min_age=args.compress_min_age)
+        compress_min_age=args.compress_min_age,
+        maturation_alpha=args.maturation_alpha,
+        rigidity_beta=args.rigidity_beta)
 
 
 if __name__ == "__main__":
