@@ -527,12 +527,13 @@ def main(d):
 
         print(f"\n  Marginal rates:")
         print(f"    Near trio: {near_rate:.4f}    Far: {far_rate:.4f}  "
-              f"(trio effect: {far_rate / max(near_rate, 0.0001):.1f}×)")
+              f"(trio effect: {far_rate / max(near_rate, 0.0001):.1f}× — far is better)")
         print(f"    Low vac:   {low_vac_rate:.4f}  High vac: {high_vac_rate:.4f}  "
-              f"(vacancy effect: {high_vac_rate / max(low_vac_rate, 0.0001):.1f}×)")
+              f"(vacancy effect: {low_vac_rate / max(high_vac_rate, 0.0001):.1f}× — low vac is better)")
 
+        # Both expressed as favorable/unfavorable ratio (>1 = stronger effect)
         trio_effect = far_rate / max(near_rate, 0.0001)
-        vac_effect = high_vac_rate / max(low_vac_rate, 0.0001)
+        vac_effect = low_vac_rate / max(high_vac_rate, 0.0001)
 
         if trio_effect > vac_effect * 1.5:
             print(f"\n  → TRIO PROXIMITY is the dominant factor")
