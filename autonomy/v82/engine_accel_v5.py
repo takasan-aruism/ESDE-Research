@@ -31,7 +31,7 @@ USAGE:
 
 import numpy as np
 from genesis_state import GenesisState
-from genesis_operators import RealizationOperator
+from realization import RealizationOperator
 
 
 # ================================================================
