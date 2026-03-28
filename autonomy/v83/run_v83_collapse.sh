@@ -27,15 +27,13 @@ for AMP in $AMPS; do
     echo ""
     echo "  === A=${AMP} T=${PERIOD} ==="
     mkdir -p $OUTDIR
-    for SEED in $SEEDS; do
-        echo "  seed=$SEED A=$AMP ..."
+    parallel -j 3 --ungroup \
         env OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 \
         python esde_v83_calibrate.py \
-            --seed $SEED --windows $WINDOWS \
+            --seed {1} --windows $WINDOWS \
             --wave-amp $AMP --wave-period $PERIOD \
             --output $OUTDIR \
-            2>&1 | tail -3
-    done
+        ::: $SEEDS
     echo "  A=${AMP} done: $(date)"
 done
 
