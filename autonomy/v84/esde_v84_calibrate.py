@@ -100,36 +100,122 @@ def make_patched_decay(original_decay, local_multiplier):
 
 
 def compute_label_centroids(engine, local_multiplier):
-    """Compute spatial centroids for all active labels.
+    """Compute spatial centroids + per-node physical state + territory spatial distribution.
     
-    Returns dict of label-level spatial stats for CSV logging.
-    Also returns per-label centroid data for detail.json.
+    Returns:
+      - csv_stats: aggregated stats for CSV logging
+      - centroid_data: per-label per-window data for detail.json
+    
+    Instruments:
+      C: frozenset内ノードの物理状態 (oasis側/penalty側の生存差)
+      D: territory空間分布 (territoryリンクの空間的偏り)
+      L4: edge environment class (oasis-oasis / oasis-penalty / penalty-penalty)
     """
     side = int(math.ceil(math.sqrt(engine.N)))
     labels = engine.virtual.labels
+    state = engine.state
     
-    # Aggregate stats
+    # Pre-compute degree map for territory
+    deg = {}
+    for lk in state.alive_l:
+        n1, n2 = lk
+        deg[n1] = deg.get(n1, 0) + 1
+        deg[n2] = deg.get(n2, 0) + 1
+    
+    # Edge environment class (GPT L4)
+    edge_oo = 0  # oasis-oasis
+    edge_op = 0  # oasis-penalty (cross-boundary)
+    edge_pp = 0  # penalty-penalty
+    edge_other = 0  # neutral involved
+    for lk in state.alive_l:
+        n1, n2 = lk
+        m1 = local_multiplier[n1]
+        m2 = local_multiplier[n2]
+        is_oasis_1 = m1 < 0.95
+        is_oasis_2 = m2 < 0.95
+        is_pen_1 = m1 > 1.05
+        is_pen_2 = m2 > 1.05
+        if is_oasis_1 and is_oasis_2:
+            edge_oo += 1
+        elif is_pen_1 and is_pen_2:
+            edge_pp += 1
+        elif (is_oasis_1 and is_pen_2) or (is_pen_1 and is_oasis_2):
+            edge_op += 1
+        else:
+            edge_other += 1
+    
+    # Pre-compute per-node neighbor list for territory (D)
+    node_neighbors = {}  # node -> list of (other_node, link_key)
+    for lk in state.alive_l:
+        n1, n2 = lk
+        node_neighbors.setdefault(n1, []).append(n2)
+        node_neighbors.setdefault(n2, []).append(n1)
+    
+    # Per-label analysis
     centroid_data = []
-    oasis_count = 0  # labels with mean_mult < 0.9
-    penalty_count = 0  # labels with mean_mult > 1.1
+    oasis_count = 0
+    penalty_count = 0
     
     for lid, label in labels.items():
         nodes = label["nodes"]
         if not nodes:
             continue
+        
+        # Basic centroid
         xs = [n % side for n in nodes]
         ys = [n // side for n in nodes]
         mean_x = sum(xs) / len(xs)
         mean_y = sum(ys) / len(ys)
         mean_mult = sum(local_multiplier[n] for n in nodes) / len(nodes)
         
-        centroid_data.append({
+        # ── C: Per-node physical state ──
+        n_alive = sum(1 for n in nodes if n in state.alive_n)
+        e_vals = [float(state.E[n]) for n in nodes if n in state.alive_n]
+        mean_e = sum(e_vals) / len(e_vals) if e_vals else 0
+        links_per_node = [deg.get(n, 0) for n in nodes]
+        mean_links = sum(links_per_node) / len(links_per_node)
+        oasis_nodes = [n for n in nodes if local_multiplier[n] < 0.95]
+        penalty_nodes = [n for n in nodes if local_multiplier[n] > 1.05]
+        oasis_links = sum(deg.get(n, 0) for n in oasis_nodes)
+        penalty_links = sum(deg.get(n, 0) for n in penalty_nodes)
+        
+        # ── D: Territory spatial distribution ──
+        label_node_set = set(nodes)
+        terr_oasis = 0
+        terr_penalty = 0
+        terr_neutral = 0
+        for n in nodes:
+            for other in node_neighbors.get(n, []):
+                if other in label_node_set:
+                    continue  # skip internal links
+                m_other = local_multiplier[other]
+                if m_other < 0.95:
+                    terr_oasis += 1
+                elif m_other > 1.05:
+                    terr_penalty += 1
+                else:
+                    terr_neutral += 1
+        
+        entry = {
             "label_id": lid,
             "nodes": len(nodes),
             "centroid_x": round(mean_x, 2),
             "centroid_y": round(mean_y, 2),
             "mean_local_mult": round(mean_mult, 4),
-        })
+            # C: node physical state
+            "n_alive": n_alive,
+            "mean_E": round(mean_e, 4),
+            "mean_links_per_node": round(mean_links, 2),
+            "n_oasis_nodes": len(oasis_nodes),
+            "n_penalty_nodes": len(penalty_nodes),
+            "oasis_node_links": oasis_links,
+            "penalty_node_links": penalty_links,
+            # D: territory spatial distribution
+            "terr_oasis": terr_oasis,
+            "terr_penalty": terr_penalty,
+            "terr_neutral": terr_neutral,
+        }
+        centroid_data.append(entry)
         
         if mean_mult < 0.9:
             oasis_count += 1
@@ -142,6 +228,10 @@ def compute_label_centroids(engine, local_multiplier):
         "n_oasis": oasis_count,
         "n_penalty": penalty_count,
         "n_neutral": n_labels - oasis_count - penalty_count,
+        # L4: edge environment class
+        "edge_oo": edge_oo,
+        "edge_op": edge_op,
+        "edge_pp": edge_pp,
     }, centroid_data
 
 
@@ -167,6 +257,7 @@ LOG_FIELDS = [
     "vacancy_mean", "history_max", "history_gini",
     # v8.4 local wave columns
     "lw_n_oasis", "lw_n_penalty", "lw_n_neutral",
+    "lw_edge_oo", "lw_edge_op", "lw_edge_pp",
 ]
 
 
@@ -258,12 +349,12 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
         # Compute spatial stats
         if local_amplitude > 0:
             lw_stats, cdata = compute_label_centroids(engine, local_multiplier)
-            # Store centroid snapshot
             for cd in cdata:
                 cd["window"] = frame.window
             centroid_log.extend(cdata)
         else:
-            lw_stats = {"n_oasis": 0, "n_penalty": 0, "n_neutral": 0}
+            lw_stats = {"n_oasis": 0, "n_penalty": 0, "n_neutral": 0,
+                        "edge_oo": 0, "edge_op": 0, "edge_pp": 0}
 
         row = {
             "window": frame.window,
@@ -307,6 +398,9 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
             "lw_n_oasis": lw_stats["n_oasis"],
             "lw_n_penalty": lw_stats["n_penalty"],
             "lw_n_neutral": lw_stats["n_neutral"],
+            "lw_edge_oo": lw_stats["edge_oo"],
+            "lw_edge_op": lw_stats["edge_op"],
+            "lw_edge_pp": lw_stats["edge_pp"],
         }
         writer.writerow(row)
         f.flush()
