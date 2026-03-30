@@ -339,9 +339,14 @@ def compute_thaw_pressure(engine, local_multiplier):
     
     Method:
     1. Get label's phase_sig
-    2. Compute θ variance of current nodes
-    3. Find all alive nodes within ±(θ_variance) of phase_sig
+    2. Find nearest other label's phase_sig → half-distance = theta_range
+    3. Find all alive nodes within ±theta_range of phase_sig
     4. Compare with current nodes (Jaccard)
+    
+    theta_range is NOT a fixed constant. It is determined by the local
+    density of labels in phase space. Dense areas → narrow range.
+    Sparse areas → wide range. This is dynamic equilibrium:
+    the system's own structure determines the measurement scale.
     
     Returns list of per-label thaw pressure dicts.
     Does NOT modify any label data.
@@ -355,6 +360,12 @@ def compute_thaw_pressure(engine, local_multiplier):
         return []
     alive_thetas = {n: float(state.theta[n]) for n in alive_list}
     
+    # Pre-compute all label phase_sigs for nearest-neighbor distance
+    label_sigs = {}
+    for lid, label in labels.items():
+        if label["nodes"]:
+            label_sigs[lid] = label["phase_sig"]
+    
     results = []
     for lid, label in labels.items():
         nodes = label["nodes"]
@@ -363,6 +374,22 @@ def compute_thaw_pressure(engine, local_multiplier):
         
         phase_sig = label["phase_sig"]
         
+        # ── Dynamic theta_range from nearest label distance ──
+        # Find minimum phase distance to any other label
+        min_dist = math.pi  # worst case: half circle
+        for other_lid, other_sig in label_sigs.items():
+            if other_lid == lid:
+                continue
+            d = abs(phase_sig - other_sig)
+            if d > math.pi:
+                d = 2 * math.pi - d
+            if d < min_dist:
+                min_dist = d
+        
+        # theta_range = half of nearest neighbor distance
+        # Dense → narrow, Sparse → wide. Dynamic equilibrium.
+        theta_range = max(0.05, min_dist / 2.0)  # min 0.05 rad ≈ 3°
+        
         # Current nodes' theta values
         current_thetas = []
         for n in nodes:
@@ -370,7 +397,6 @@ def compute_thaw_pressure(engine, local_multiplier):
                 current_thetas.append(float(state.theta[n]))
         
         if len(current_thetas) < 2:
-            # Can't compute variance with < 2 nodes
             results.append({
                 "label_id": lid,
                 "nodes_current": len(nodes),
@@ -381,18 +407,9 @@ def compute_thaw_pressure(engine, local_multiplier):
                 "add_oasis_frac": 0,
                 "drop_penalty_frac": 0,
                 "thaw_pressure": 0,
+                "theta_range": round(theta_range, 4),
             })
             continue
-        
-        # Circular variance of current nodes
-        sin_sum = sum(math.sin(t) for t in current_thetas)
-        cos_sum = sum(math.cos(t) for t in current_thetas)
-        R_bar = math.sqrt(sin_sum**2 + cos_sum**2) / len(current_thetas)
-        circ_var = 1.0 - R_bar  # 0 = perfectly aligned, 1 = uniform
-        
-        # Use circular variance as search radius
-        # Convert to angular range: wider variance = wider search
-        theta_range = max(0.05, circ_var * math.pi)  # min 0.05 rad
         
         # Find hypothetical nodes: alive nodes within theta_range of phase_sig
         hypothetical = set()
@@ -436,6 +453,7 @@ def compute_thaw_pressure(engine, local_multiplier):
             "add_oasis_frac": round(add_oasis_frac, 3),
             "drop_penalty_frac": round(drop_penalty_frac, 3),
             "thaw_pressure": round(thaw_pressure, 4),
+            "theta_range": round(theta_range, 4),
         })
     
     return results
@@ -467,6 +485,7 @@ LOG_FIELDS = [
     # v8.5 thaw pressure summary
     "thaw_mean_jaccard", "thaw_mean_pressure",
     "thaw_mean_add", "thaw_mean_drop",
+    "thaw_mean_range",
 ]
 
 
@@ -600,7 +619,7 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
 
         # ── v8.5: Stage 1 thaw pressure ──
         thaw_summary = {"mean_jaccard": 1.0, "mean_pressure": 0.0,
-                        "mean_add": 0, "mean_drop": 0}
+                        "mean_add": 0, "mean_drop": 0, "mean_range": 0}
         if local_amplitude > 0 and frame.window >= 50:
             thaw_results = compute_thaw_pressure(engine, local_multiplier)
             if thaw_results:
@@ -612,11 +631,13 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
                 pressures = [r["thaw_pressure"] for r in thaw_results]
                 adds = [r["n_add"] for r in thaw_results]
                 drops = [r["n_drop"] for r in thaw_results]
+                ranges = [r.get("theta_range", 0) for r in thaw_results]
                 thaw_summary = {
                     "mean_jaccard": round(np.mean(jaccards), 4),
                     "mean_pressure": round(np.mean(pressures), 4),
                     "mean_add": round(np.mean(adds), 1),
                     "mean_drop": round(np.mean(drops), 1),
+                    "mean_range": round(np.mean(ranges), 4),
                 }
 
         row = {
@@ -669,6 +690,7 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
             "thaw_mean_pressure": thaw_summary["mean_pressure"],
             "thaw_mean_add": thaw_summary["mean_add"],
             "thaw_mean_drop": thaw_summary["mean_drop"],
+            "thaw_mean_range": thaw_summary["mean_range"],
         }
         writer.writerow(row)
         f.flush()
