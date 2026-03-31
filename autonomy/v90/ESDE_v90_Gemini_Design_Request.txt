@@ -1,0 +1,266 @@
+ESDE v9.0 — 仮想層フィードバック: Gemini 設計依頼
+======================================================
+Date: 2026-03-30
+From: Taka (Director) / Claude (Implementation)
+To: Gemini (Architecture)
+Subject: virtual_layer_v9 の設計依頼
+Status: 設計要求（GPT監査後に実装開始）
+
+================================================================
+0. この文書の目的
+================================================================
+
+v9.0 で仮想層にフィードバックループを追加する。
+Gemini に具体的な設計仕様を依頼する。
+
+本文書では、ESDEの現在のコード構造を具体的に示し、
+「どこに何を入れるか」のレベルで設計判断を求める。
+
+抽象的な議論ではなく、実装可能な設計仕様が必要。
+
+================================================================
+1. やりたいこと（1文）
+================================================================
+
+毎windowで仮想層全体の状態を1つの数値にまとめ、
+その数値をtorqueの強さに弱く反映させる。
+
+================================================================
+2. 現在のコード構造
+================================================================
+
+------------------------------------------------------------
+2.1 virtual_layer_v5.py の step() の流れ
+------------------------------------------------------------
+
+step() は毎window 1回呼ばれる。以下の順序で処理する:
+
+  1. BIRTH — 物理層のクラスタを検出し、新しいlabelを生成
+     label["nodes"] = frozenset(cluster_nodes)
+     label["phase_sig"] = クラスタのθ平均
+     label["share"] = 0.0
+     → ここでfrozensetが固定される
+
+  2. COMPRESSION — 条件を満たすlabelをmacro-nodeに圧縮
+     （v8.2以降、compression_enabled=Falseで無効化済み）
+
+  3. SHARE CALCULATION — 各labelのshare配分を計算
+     territory_links = labelのノードに接する近傍リンク数
+     各labelのshare = territory_links / 全labelのterritory_links合計
+     → これがlabelの「存在の重み」
+
+  4. TORQUE — 各labelがphase_sigに向けてノードのθを引っ張る
+     torque_mag = share × torque_strength
+     grav_mag = torque_mag / len(label["nodes"])
+     各ノード: theta += grav_mag × sin(phase_sig - theta)
+     → これがlabelが物理層に対して行う唯一の能動的行為
+
+  5. CULL — shareが閾値以下のlabelを殺す
+     fair_share = 1.0 / total_entities
+     threshold = fair_share × 0.5
+     share < threshold → death
+
+  6. LOGGING — lifecycle_logにイベントを記録
+
+------------------------------------------------------------
+2.2 torque適用の具体コード（L589-606付近）
+------------------------------------------------------------
+
+  for lid, label in self.labels.items():
+      if label["share"] <= 0:
+          continue
+      torque_mag = label["share"] * self.torque_strength
+      grav_mag = torque_mag / max(1, len(label["nodes"]))
+      for n in label["nodes"]:
+          if n in state.alive_n:
+              dt = label["phase_sig"] - float(state.theta[n])
+              # wrap to [-π, π]
+              ...
+              state.theta[n] += grav_mag * math.sin(dt)
+
+------------------------------------------------------------
+2.3 stress equilibrium（物理層、参考）
+------------------------------------------------------------
+
+esde_v82_engine.py の step_window() 内:
+
+  current_links = len(self.state.alive_l)
+  if self.link_ema is None:
+      self.link_ema = float(current_links)
+  tau = min(self.window_count + 1, 20)
+  alpha_ema = 2.0 / (tau + 1.0)
+  self.link_ema = alpha_ema * current_links + (1 - alpha_ema) * self.link_ema
+  stress_intensity = current_links / max(1.0, self.link_ema)
+
+  → stress_intensity > 1.0: リンク過多 → decay強化
+  → stress_intensity < 1.0: リンク過少 → decay緩和
+
+------------------------------------------------------------
+2.4 毎window取得可能な値
+------------------------------------------------------------
+
+virtual_layer_v5 の step() が返す stats dict:
+
+  labels_active: 現在のlabel数
+  labels_born: 今window生まれたlabel数
+  labels_died: 今window死んだlabel数
+  budget: 総territory_links
+  top_share: 最大share
+  mean_torque: 平均torque適用量
+  torque_events: torqueを適用したlabel数
+  label_rplus_rate: R+リンク率
+
+lifecycle_logから取得可能:
+  死んだlabelのshare（death event時のshare値）
+  生まれたlabelのshare（常に0.0で生まれる）
+
+現在計算されていないが計算可能:
+  死んだlabelのshare合計（= 再配分に回るshare量）
+  birth/deathの差分
+  share配分のGini係数
+  territory重複率
+
+================================================================
+3. Gemini に求める設計判断
+================================================================
+
+------------------------------------------------------------
+3.1 何を掬い取るか
+------------------------------------------------------------
+
+毎windowの仮想層状態から1つのスカラーを計算する。
+
+候補:
+
+A. share turnover（死んだlabelのshare合計）
+   = sum(label["share"] for label in died_this_window)
+   意味: 仮想層の「新陳代謝量」
+   計算コスト: O(died_count)。ほぼゼロ。
+
+B. birth/death比
+   = labels_born / max(1, labels_died)
+   意味: 系の成長/衰退
+   計算コスト: O(1)。ゼロ。
+
+C. share Gini係数
+   = 全labelのshare分布の偏り
+   意味: 支配構造の集中度
+   計算コスト: O(labels × log(labels))。軽い。
+
+D. territory重複率
+   = 複数labelのterritoryが重なるノードの割合
+   意味: 競争の激しさ
+   計算コスト: O(labels × nodes)。やや重い。
+
+設計判断: どれから始めるか。
+Takaの方針: こちらで決め打ちしない。
+ただし最初は最もシンプルなもの1つで始める。
+
+------------------------------------------------------------
+3.2 EMAの設計
+------------------------------------------------------------
+
+掬い取った値のEMAを保持する。
+
+  self.global_signal_ema = None  # 初期値
+  
+  # 毎window:
+  raw = (掬い取った値)
+  if self.global_signal_ema is None:
+      self.global_signal_ema = raw
+  tau = min(window_count, 20)
+  alpha = 2.0 / (tau + 1.0)
+  self.global_signal_ema = alpha * raw + (1 - alpha) * self.global_signal_ema
+  
+  signal_ratio = raw / max(small_epsilon, self.global_signal_ema)
+
+stress equilibriumと同一構造。
+
+設計判断:
+  - tau（EMA窓）は20でよいか？
+  - epsilon（ゼロ除算回避）はいくつか？
+
+------------------------------------------------------------
+3.3 torqueへの返し方
+------------------------------------------------------------
+
+signal_ratio をtorqueに乗算する。
+
+  # 現在:
+  torque_mag = label["share"] * self.torque_strength
+  
+  # v9.0:
+  torque_mag = label["share"] * self.torque_strength * signal_ratio
+
+signal_ratio > 1.0: 新陳代謝が激しい → torque強化 → labelがまとまる
+signal_ratio < 1.0: 穏やか → torque弱化 → labelが緩む
+
+設計判断:
+  - 直接乗算か？ 弱い変調（例: 1.0 + 0.1 × (signal_ratio - 1.0)）か？
+  - 変調の強さをどう決めるか？
+  - 全labelに均等に返すか、サイズ別に重みを変えるか？
+
+------------------------------------------------------------
+3.4 ロギング
+------------------------------------------------------------
+
+CSV + detail.json に記録すべきフィールド:
+
+  global_signal_raw: 今windowの生の値
+  global_signal_ema: EMA
+  signal_ratio: raw / ema
+  torque_modulation: 実際にtorqueに乗算した係数
+
+設計判断: 他に必要なフィールドはあるか？
+
+================================================================
+4. 実装上の制約
+================================================================
+
+- Genesis canon（genesis_physics.py）: 変更不可
+- virtual_layer_v5.py: 変更不可（v5はベースライン保持）
+- virtual_layer_v9.py を新設し、VirtualLayer を継承して step() をオーバーライド
+- engine側: esde_v82_engine.py の VirtualLayer import を差し替えるだけ
+- または v90 calibrate 側で VirtualLayer を差し替え
+
+================================================================
+5. 比較runの設計
+================================================================
+
+v9.0 の効果を測定するために、以下の比較が必要:
+
+  条件A: v8.5 baseline（フィードバックなし、A=0.3 local wave）
+  条件B: v9.0（フィードバックあり、A=0.3 local wave）
+
+48-seed × 200 windows。同一seed群。
+
+比較指標:
+  - survival by size
+  - share_retain
+  - C-light / D-light
+  - resistance pattern分布
+  - label数の安定性
+  - フィードバックループの応答（signal_ratioの時系列）
+
+================================================================
+6. 将来的な拡張（今は実装しない）
+================================================================
+
+Phase 1（今回）: スカラー1つ → torqueに弱く返す
+Phase 2: ベクトル化（空間方向、位相方向、サイズ方向で異なる係数）
+Phase 3: 注意構造（系全体のどこに焦点が集まるか）
+
+Phase 2, 3 は Phase 1 の結果を見てから設計する。
+
+================================================================
+7. Gemini に返してほしいもの
+================================================================
+
+1. §3.1 の候補A-Dから、どれで始めるかの判断と理由
+2. §3.3 の変調方法（直接乗算 vs 弱い変調）の設計
+3. signal_ratio の適正範囲（clamp するか、系に任せるか）
+4. virtual_layer_v9 の step() のオーバーライド設計
+5. 上記を統合した設計仕様書
+
+================================================================
+End

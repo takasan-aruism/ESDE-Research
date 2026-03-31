@@ -1,0 +1,261 @@
+ESDE v9.0 — Self-Referential Feedback Loop: Code Review Checklist
+===================================================================
+Date: 2026-03-30
+Scope: virtual_layer_v9.py, esde_v90_calibrate.py, run_v90_mass.sh
+       Genesis canon / esde_v82_engine.py: 変更なし
+Author: Claude (Implementation)
+Design: Gemini (Architecture)
+Audit: GPT (Audit Memo 2026-03-30)
+Reviewer: [assign]
+
+================================================================
+CONTEXT
+================================================================
+
+ESDE初の仮想層ルール変更。
+v8.0-v8.5は全て観測追加またはdecay monkey-patchだった。
+v9.0はtorqueの強さに系全体の状態をフィードバックする。
+
+Gemini設計 + GPT監査修正:
+  - 指標: died_share_sum（CULL直前回収）
+  - EMA: tau=20, stress equilibriumと同構造
+  - 変調: M = 1 + gamma × (ratio - 1), gamma=0.1
+  - clamp: [0.8, 1.2]
+  - warmup: 20 window（M=1.0固定）
+  - 適用先: torqueのみ
+
+================================================================
+SECTION A: 変更なしの確認
+================================================================
+
+[ ] genesis_physics.py: 変更なし
+[ ] esde_v82_engine.py: 変更なし
+[ ] virtual_layer_v5.py: 変更なし（v5は保持。v9を新設）
+[ ] v19g_canon.py: 変更なし
+
+================================================================
+SECTION B: virtual_layer_v9.py
+================================================================
+
+v5をコピーして以下を変更。v5との差分は約43行。
+
+------------------------------------------------------------
+B1. __init__ 追加変数（5変数）
+------------------------------------------------------------
+[ ] self.turnover_ema = None
+    初期値None。最初のwindowでraw値で初期化。
+
+[ ] self.feedback_gamma = 0.10
+    GPT修正: Gemini案0.2 → 0.1に弱化。
+
+[ ] self.feedback_clamp = (0.8, 1.2)
+    GPT修正: Gemini案(0.5, 2.0) → (0.8, 1.2)に狭化。
+
+[ ] self.warmup_windows = 20
+    GPT追加: 最初の20 windowはM=1.0固定。
+
+[ ] self._torque_multiplier = 1.0
+    現在のM。毎window更新。
+
+------------------------------------------------------------
+B2. stats初期化（6フィールド追加）
+------------------------------------------------------------
+[ ] died_share_sum, turnover_ema, signal_ratio,
+    torque_multiplier, warmup_active, feedback_gamma
+
+    early returnの場合もデフォルト値が返る。
+
+------------------------------------------------------------
+B3. torque適用（1行変更）
+------------------------------------------------------------
+[ ] L595: torque_mag = energy * rigidity_factor * self._torque_multiplier
+
+    REVIEWER: self._torque_multiplierは前windowで計算されたM。
+    今windowのtorqueに前windowの状態が反映される。
+    1 window遅延のフィードバック。これは意図的。
+    今windowのCULL結果を今windowのtorqueに即時反映すると因果が逆転する。
+
+------------------------------------------------------------
+B4. CULL前のフィードバック計算（26行追加）
+------------------------------------------------------------
+
+[ ] died_share_sum回収: CULL判定後、削除前
+    dead_labelsは既にリスト化されている（L710-716）。
+    そのshareの合計を取る。
+
+    REVIEWER: GPT要求「CULL直前固定」に準拠。
+    dead_labelsはCULL判定済み（share < threshold）だが
+    まだself.labelsから削除されていない。
+
+[ ] EMA更新:
+    alpha_ema = 2.0 / (tau + 1.0)
+    tau = min(window_count, 20)
+    
+    REVIEWER: window_count < 20ではtauが小さく、
+    alphaが大きくなる（直近重視）。
+    20以降はalpha = 2/21 ≈ 0.095で安定。
+    stress equilibriumと同一構造。
+
+[ ] signal_ratio = died_share_sum / max(1e-6, turnover_ema)
+    
+    REVIEWER: turnover_emaが極小の時、ratioが巨大になる可能性。
+    → clampで制限される。max(1e-6, ...)で除算安全。
+
+[ ] M計算:
+    warmup中 (window < 20): M = 1.0（EMAは更新、Mは固定）
+    warmup後: M_raw = 1.0 + gamma × (ratio - 1.0)
+              M = clamp(M_raw, 0.8, 1.2)
+
+    REVIEWER: gamma=0.1, ratio=2.0 → M_raw=1.1 → M=1.1（clamp内）
+    gamma=0.1, ratio=5.0 → M_raw=1.4 → M=1.2（clampで制限）
+    gamma=0.1, ratio=0.0 → M_raw=0.9 → M=0.9（clamp内）
+    暴走しない。
+
+[ ] _torque_multiplierに格納。次windowのtorqueに使用。
+
+------------------------------------------------------------
+B5. return stats前のstats書き込み（6フィールド）
+------------------------------------------------------------
+[ ] died_share_sum, turnover_ema, signal_ratio,
+    torque_multiplier, warmup_active, feedback_gamma
+
+================================================================
+SECTION C: esde_v90_calibrate.py
+================================================================
+
+v8.5 calibrateベース。変更箇所:
+
+------------------------------------------------------------
+C1. VirtualLayer差し替え
+------------------------------------------------------------
+[ ] from virtual_layer_v9 import VirtualLayer as VirtualLayerV9
+[ ] engine作成後、run_injection前にengine.virtualを差し替え:
+    engine.virtual = VirtualLayerV9(...)
+    
+    REVIEWER: V82Engine.__init__でVirtualLayer(v5)が作られるが、
+    直後にv9で上書きする。injection中からv9が動作する。
+    injection中はlabelが存在しないのでフィードバックは実質無効。
+
+------------------------------------------------------------
+C2. CSV追加列（5列）
+------------------------------------------------------------
+[ ] fb_died_share, fb_ema, fb_ratio, fb_multiplier, fb_warmup
+    virtual_statsから取得。
+
+------------------------------------------------------------
+C3. version/tag更新
+------------------------------------------------------------
+[ ] version: "v9.0"
+[ ] tag: "v90_N{N}_seed{seed}_..."
+[ ] output default: "calibration_v90"
+
+------------------------------------------------------------
+C4. v8.5の計器は全て継承
+------------------------------------------------------------
+[ ] C-light / D-light: そのまま
+[ ] thaw pressure: そのまま（nearest_label_dist版）
+[ ] centroid_log: そのまま
+[ ] monkey-patch (_decay local wave): そのまま
+
+================================================================
+SECTION D: run_v90_mass.sh
+================================================================
+
+[ ] 48 seeds, JOBS=24（教訓33）
+[ ] OMP/MKL/OPENBLAS_NUM_THREADS=1
+[ ] A=0.3 local wave
+[ ] 出力: diag_v90_feedback_A0.3/
+
+================================================================
+SECTION E: GPT監査修正の反映確認
+================================================================
+
+[ ] §2.1 指標A採用、命名中立化 → died_share_sum ✓
+[ ] §2.2 CULL直前固定 → dead_labels判定後、削除前 ✓
+[ ] §2.3 warmup 20 window → self.warmup_windows = 20 ✓
+[ ] §2.4 gamma 0.1 → self.feedback_gamma = 0.10 ✓
+[ ] §2.5 clamp 0.8-1.2 → self.feedback_clamp = (0.8, 1.2) ✓
+[ ] §3 全labelに均等適用 → サイズ別重みなし ✓
+[ ] §4 ロギング → 6フィールド + warmup_active + feedback_gamma ✓
+[ ] §7 位置づけ → 過剰解釈禁止（意識/呼吸/自我の語を使わない） ✓
+
+================================================================
+SECTION F: CONSTITUTION COMPLIANCE
+================================================================
+
+§1 Structure First        ✓ 仮想層にフィードバック構造追加。物理層変更なし
+§3 Axiom L               ✓ 新定数なし。EMAベース。gammaは感度パラメータ
+                            （ただしgamma=0.1はGPT指定。Axiom L的にはグレー）
+§5 Anti-Drift            ✓ Gemini設計 + GPT監査承認済み
+§7 Minimal Change         ✓ torqueへの1行乗算 + CULL前の26行集計
+Genesis Canon Frozen      ✓ 変更なし
+
+REVIEWER: §3 Axiom Lについて。
+gamma=0.1は「手動で設定された感度パラメータ」。
+将来的にはgamma自体を系から導出する方法が望ましい。
+Phase 1では固定値で開始し、gamma感度テストを後で実施。
+
+================================================================
+SECTION G: KNOWN LIMITATIONS
+================================================================
+
+LIMIT 1: gamma=0.1は手動設定。Axiom Lグレー。
+
+LIMIT 2: died_share_sumは「死んだ側だけ」を見ている。
+  仮想層全体の状態としては狭い。Phase 2で拡張候補。
+
+LIMIT 3: 全labelに均等にMを適用。
+  サイズ別や空間別の重みづけはPhase 2候補。
+
+LIMIT 4: 1 window遅延フィードバック。
+  今windowのCULL結果は次windowのtorqueに反映される。
+  即時反映は因果逆転のため不可。
+
+LIMIT 5: warmup 20 windowは固定値。
+  系によっては20が長すぎるか短すぎる可能性。
+
+================================================================
+SECTION H: 比較run設計
+================================================================
+
+条件A: v8.5 baseline（既にdiag_v85_tracking_A0.3に存在）
+条件B: v9.0（diag_v90_feedback_A0.3）
+
+同一48 seeds。同一A=0.3 local wave。
+差分はtorque modulation（M）の有無のみ。
+
+見るべき指標:
+  - survival by size（フィードバックで変わるか？）
+  - share_retain
+  - C-light / D-light
+  - resistance pattern分布（volatileの割合が変わるか？）
+  - labels_active安定性
+  - fb_multiplierの時系列（Mはどう動くか？）
+  - fb_ratioのサイズ差（あるか？）
+
+================================================================
+SUMMARY
+================================================================
+
+Priority   Issue                                     Action
+---------  ----------------------------------------  -------------------
+INFO       #F gamma=0.1は手動設定                   Phase 1固定、後で感度テスト
+INFO       #G2 died_share_sumは死んだ側のみ          Phase 2で拡張候補
+INFO       #B3 1 window遅延                          意図的。因果逆転防止
+NONE       crash-blocker                              なし
+
+手順:
+  cd ~/esde/ESDE-Research/autonomy/v90
+  # virtual_layer_v9.py, esde_v90_calibrate.py, run_v90_mass.sh を配置
+
+  # 3 window動作確認
+  python esde_v90_calibrate.py --seed 42 --windows 3 --local-amp 0.3
+
+  # 60 window確認（warmup 20 + 40 window分のfeedback動作確認）
+  python esde_v90_calibrate.py --seed 42 --windows 60 --local-amp 0.3
+
+  # 48-seed mass test
+  bash run_v90_mass.sh
+
+================================================================
+End of Checklist
