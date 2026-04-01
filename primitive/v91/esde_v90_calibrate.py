@@ -21,7 +21,7 @@ from pathlib import Path
 
 _SCRIPT_DIR = Path(__file__).resolve().parent
 _REPO_ROOT = _SCRIPT_DIR.parent.parent
-_V82_DIR = _SCRIPT_DIR.parent / "v82"
+_V82_DIR = _REPO_ROOT / "autonomy" / "v82"
 _V4_PIPELINE = _REPO_ROOT / "cognition" / "semantic_injection" / "v4_pipeline"
 _V43_DIR = _V4_PIPELINE / "v43"
 _V41_DIR = _V4_PIPELINE / "v41"
@@ -505,7 +505,8 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
         compress_min_age=10,
         maturation_alpha=0.10, rigidity_beta=0.10,
         local_amplitude=0.0,
-        feedback_gamma=0.10, feedback_clamp_lo=0.8, feedback_clamp_hi=1.2):
+        feedback_gamma=0.10, feedback_clamp_lo=0.8, feedback_clamp_hi=1.2,
+        feedback_interval=50):
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -514,6 +515,8 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
     if encap_params.virtual_enabled: tags.append("metab")
     if local_amplitude > 0: tags.append(f"local_A{local_amplitude}")
     tags.append(f"g{feedback_gamma}")
+    if feedback_interval != window_steps:
+        tags.append(f"int{feedback_interval}")
     if not tags: tags.append("baseline")
     tag_str = "+".join(tags)
 
@@ -560,7 +563,8 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
     print(f"  v9 VirtualLayer (feedback loop) installed. "
           f"gamma={engine.virtual.feedback_gamma} "
           f"clamp={engine.virtual.feedback_clamp} "
-          f"warmup={engine.virtual.warmup_windows}")
+          f"warmup={engine.virtual.warmup_windows} "
+          f"interval={feedback_interval}")
 
     engine.run_injection()
     t_inj = time.time() - t_start
@@ -591,7 +595,33 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
 
     for w in range(n_windows):
         t0 = time.time()
-        frame = engine.step_window(steps=window_steps)
+
+        # ── v9.2: Sub-window torque injection ──
+        if feedback_interval >= window_steps:
+            # Default: single step_window, no sub-window torque
+            frame = engine.step_window(steps=window_steps)
+        else:
+            # Split window into chunks. Apply torque between chunks.
+            # Birth/share/cull only on last chunk (virtual.step).
+            n_chunks = window_steps // feedback_interval
+            p = engine.island_tracker.params
+            orig_virtual = p.virtual_enabled
+
+            for chunk in range(n_chunks):
+                if chunk < n_chunks - 1:
+                    # Intermediate: suppress virtual.step, apply torque only
+                    p.virtual_enabled = False
+                    engine.step_window(steps=feedback_interval)
+                    engine.window_count -= 1  # undo premature increment
+                    engine.frames.pop()       # remove intermediate frame
+                    engine.virtual.apply_torque_only(
+                        engine.state, engine.window_count,
+                        substrate=engine.substrate)
+                    p.virtual_enabled = orig_virtual
+                else:
+                    # Last chunk: full processing (birth/share/torque/cull)
+                    frame = engine.step_window(steps=feedback_interval)
+
         sec = time.time() - t0
         times.append(sec)
 
@@ -778,6 +808,7 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
             "grid_side": side,
             "feedback_gamma": feedback_gamma,
             "feedback_clamp": [feedback_clamp_lo, feedback_clamp_hi],
+            "feedback_interval": feedback_interval,
             "representative_labels": sorted(rep_labels) if rep_labels else [],
         },
         "virtual_summary": engine.virtual.summary(),
@@ -825,6 +856,8 @@ def main():
                         help="Torque multiplier lower clamp")
     parser.add_argument("--clamp-hi", type=float, default=1.2,
                         help="Torque multiplier upper clamp")
+    parser.add_argument("--feedback-interval", type=int, default=50,
+                        help="Torque re-application interval within window (50=default=once per window)")
     args = parser.parse_args()
 
     params = V82EncapsulationParams(
@@ -840,7 +873,8 @@ def main():
         local_amplitude=args.local_amp,
         feedback_gamma=args.gamma,
         feedback_clamp_lo=args.clamp_lo,
-        feedback_clamp_hi=args.clamp_hi)
+        feedback_clamp_hi=args.clamp_hi,
+        feedback_interval=args.feedback_interval)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,252 @@
+ESDE v9.2 — Dual-Time Clock Separation: Code Review Checklist
+================================================================
+Date: 2026-03-31
+Scope: virtual_layer_v9.py (apply_torque_only追加),
+       esde_v90_calibrate.py (sub-window torque injection),
+       engine変更なし
+Author: Claude (Implementation)
+Directive: Taka仮説 + GPT/Gemini整理メモ 2026-03-31
+Reviewer: [assign]
+
+================================================================
+CONTEXT
+================================================================
+
+v9.1 Stage A/B で判明: torqueの強弱（gamma/clamp）を
+どう振っても系はほぼ変わらない。5-node survival ≈ 61%。
+
+2つの解釈:
+A. torqueは返し先として弱い → share/birth/deathに返す
+B. torqueは作用しているが、50 stepのdriftで効果が消される
+   → 適用頻度を上げれば見える
+
+Taka仮説: Bを先に切る。返し先変更の前に時間スケール問題を切る。
+
+================================================================
+SECTION A: 変更箇所
+================================================================
+
+------------------------------------------------------------
+A1. virtual_layer_v9.py: apply_torque_only() 追加（57行）
+------------------------------------------------------------
+[ ] step()のtorque部分（§4 TORQUE）と同じロジック
+[ ] 引数: state, window_count, substrate
+[ ] 処理: node_torques構築 → theta更新
+[ ] 処理しないもの: birth, share, cull, logging, EMA, M更新
+[ ] _torque_multiplierは前windowの値をそのまま使用
+[ ] macro-nodeのtorqueも含む
+[ ] 戻り値: torque eventsの数（ログ用）
+
+REVIEWER: step()内のtorque部分とapply_torque_only()は
+コードが重複している。DRY原則違反だが、step()の構造を
+変えずに最小変更で独立メソッドを追加するため意図的。
+将来的にstep()からtorque部分を切り出して共通化が望ましい。
+
+------------------------------------------------------------
+A2. esde_v90_calibrate.py: sub-window torque injection
+------------------------------------------------------------
+[ ] --feedback-interval 引数追加（default=50）
+[ ] run()にfeedback_interval引数追加
+
+[ ] window loop内のロジック:
+    interval >= 50: 従来通りstep_window 1回
+    interval < 50:
+      - n_chunks = window_steps // interval（50/10=5 chunks等）
+      - 中間chunk: virtual_enabled=False でstep_window(interval)
+        → window_count -=1（premature increment修正）
+        → apply_torque_only()
+        → virtual_enabled復元
+      - 最終chunk: full step_window(interval)
+
+REVIEWER:
+核心的判断: 中間chunkでvirtual_enabled=Falseにする。
+これでvirtual.step()（birth/share/cull）がスキップされる。
+最終chunkでvirtual_enabled=Trueに戻してfull処理。
+
+window_count -= 1 の理由:
+step_window()は末尾でwindow_count += 1する。
+中間chunkでも呼ばれるため、n_chunks回incrementされてしまう。
+最終chunk分の1回だけ有効にするため、中間chunkでdecrementする。
+
+REVIEWER WARNING:
+step_window()内のstress equilibriumはchunk毎に走る。
+50 step分のstressと10 step分のstressは異なる可能性。
+ただしstressはalive_linksのEMAなので、
+短いchunkでも大きな差は出ないはず。
+
+------------------------------------------------------------
+A3. tag / meta 更新
+------------------------------------------------------------
+[ ] tagにf"int{feedback_interval}"追加（intervalが50でない場合のみ）
+[ ] detail.json metaに"feedback_interval"追加
+
+================================================================
+SECTION B: 変更なしの確認
+================================================================
+
+[ ] genesis_physics.py: 変更なし
+[ ] esde_v82_engine.py: 変更なし（step_windowの中身は触らない）
+[ ] v19g_canon.py: 変更なし
+[ ] v9のフィードバックロジック（CULL前回収、EMA、warmup、M計算）: 変更なし
+[ ] birth/share/cull条件: 変更なし
+
+================================================================
+SECTION C: apply_torque_only() の正確性
+================================================================
+
+[ ] torque_magの計算:
+    energy × rigidity_factor × self._torque_multiplier
+    step()のL599と同一。
+
+[ ] node_torques の競合解決:
+    existing is None or energy > existing[1]
+    step()のL608と同一。
+
+[ ] macro-node torque:
+    self._macro_node_torque(mn, state, node_torques)
+    step()のL630と同一。
+
+[ ] theta更新:
+    state.theta[n] += torque
+    step()のL635と同一。
+
+[ ] budget = 1.0 固定:
+    step()ではalive_links > 0なら1.0。
+    apply_torque_only()でもalive_links=0なら即returnなので同等。
+
+[ ] label_torque_applied を記録しない:
+    step()ではlabel_torque_applied[lid]に加算。
+    apply_torque_only()ではスキップ。
+    これはwindow stats用なので中間chunkでは不要。
+
+================================================================
+SECTION D: sub-window injection の正確性
+================================================================
+
+[ ] interval=50の場合:
+    n_chunks = 50/50 = 1。
+    ループは1回。chunk=0 = n_chunks-1なので最終chunk。
+    full step_window(50)。従来と完全同一動作。
+
+[ ] interval=10の場合:
+    n_chunks = 50/10 = 5。
+    chunk 0-3: virtual_enabled=False, step_window(10), torque_only
+    chunk 4: full step_window(10)
+    合計: 50 physics steps + 4回追加torque + 1回full virtual
+    
+    REVIEWER: 従来は50 step後に1回torque。
+    interval=10では10 step後にtorque、計5回。
+    Mは前windowの値を使い続ける（window内で更新されない）。
+    
+    これは「50 stepのθ drift」を「10 stepの小さなdrift × 5回補正」に分解。
+    Takaの仮説を直接テスト。
+
+[ ] interval=5の場合:
+    n_chunks = 50/5 = 10。
+    chunk 0-8: virtual_enabled=False, step_window(5), torque_only
+    chunk 9: full step_window(5)
+    合計: 50 physics steps + 9回追加torque + 1回full virtual
+
+[ ] window_countの正確性:
+    中間chunk: step_window() → window_count+1 → 直後に-1
+    最終chunk: step_window() → window_count+1（これが有効な1回）
+    window_countの進行はintervalに関わらず1 window/ループ。
+
+================================================================
+SECTION E: 性能影響
+================================================================
+
+interval=50: 従来通り。14-17秒/window。
+
+interval=10:
+  step_window × 5回。physicsコストは同じ（合計50 steps）。
+  ただしstep_window()のオーバーヘッド（island検出、stress等）が
+  5回走る。island検出が支配的（≈0.5秒/回）。
+  推定: 14-17秒 → 16-20秒/window。約20%増。
+
+interval=5:
+  step_window × 10回。
+  推定: 14-17秒 → 19-25秒/window。約40-50%増。
+
+3-seed sanityでは問題なし。48-seedは要判断。
+
+REVIEWER WARNING:
+step_window()はisland検出を毎回行う。
+中間chunkではisland検出は不要（virtual.stepが走らないため）。
+しかしstep_window()の中を変えずに呼んでいるので回避できない。
+性能が問題になるなら、engine側の修正が必要。
+今は3-seed sanityなので保留。
+
+================================================================
+SECTION F: 実験条件
+================================================================
+
+| 条件 | interval | torque回数/window | 予想 |
+|---|---|---|---|
+| baseline | 50 | 1 | v9.0/v9.1と同一 |
+| 案B | 10 | 5 | θ driftを小刻みに補正 |
+| 案C | 5 | 10 | 最も細かい補正 |
+
+3 conditions × 3 seeds = 9 runs。gamma=0.1、clamp=[0.8,1.2]固定。
+A=0.3 local wave。200 windows。
+
+観測:
+- survival by size（intervalで差が出るか？）
+- M / signal_ratio（window粒度では同一のはず）
+- alive_links（stress equilibriumへの影響）
+- C-light / D-light（個体レベルで差が出るか？）
+
+PASS/FAIL判定:
+- interval=50と10で5-node survivalに>5%の差がある → Taka仮説支持
+- 差がほぼない → torqueは返し先として弱い（解釈A確定）
+
+================================================================
+SECTION G: KNOWN LIMITATIONS
+================================================================
+
+LIMIT 1: コード重複（step()とapply_torque_only()）。
+  将来的に共通化すべき。今は最小変更優先。
+
+LIMIT 2: step_window()のisland検出が中間chunkでも走る。
+  性能影響あり（interval=5で40-50%増）。
+  engine変更なしの制約。
+
+LIMIT 3: stress equilibriumがchunk毎に走る。
+  10 step分のlink変動でEMAが更新される。
+  50 step分と挙動が微妙に異なる可能性。
+
+LIMIT 4: Mはwindow内で更新されない。
+  中間chunkのtorqueは前windowのM値。
+  M入力（died_share_sum）がCULL時にしか得られないため不可避。
+
+================================================================
+SUMMARY
+================================================================
+
+Priority   Issue                                     Action
+---------  ----------------------------------------  -------------------
+INFO       #G1 コード重複                            将来共通化
+INFO       #G2 island検出が中間chunkで不要に走る     性能問題なら要修正
+INFO       #G3 stress EMAがchunk粒度                 差が出るか観測
+NONE       crash-blocker                              なし
+
+手順:
+  cd ~/esde/ESDE-Research/primitive/v91
+  # 2ファイル差し替え
+
+  # 3 window確認（interval=10）
+  python esde_v90_calibrate.py --seed 42 --windows 3 \
+      --local-amp 0.3 --gamma 0.1 --feedback-interval 10
+
+  # sanity 9 runs（約2時間）
+  parallel -j 9 --ungroup \
+      env OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 \
+      python esde_v90_calibrate.py \
+          --seed {1} --windows 200 --local-amp 0.3 \
+          --gamma 0.1 --feedback-interval {2} \
+          --output diag_v92_interval_{2} \
+      ::: 42 123 456 \
+      ::: 50 10 5
+
+================================================================
+End of Checklist

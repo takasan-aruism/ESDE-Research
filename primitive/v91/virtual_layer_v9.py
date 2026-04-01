@@ -390,6 +390,64 @@ class VirtualLayer:
     # ================================================================
     # MAIN STEP (v3 logic + macro-node handling)
     # ================================================================
+    def apply_torque_only(self, state, window_count, substrate=None):
+        """Apply torque without birth/share/cull. For sub-window feedback.
+        Uses current _torque_multiplier (computed at last CULL).
+        Returns number of torque events applied.
+        """
+        alive_links = len(state.alive_l)
+        if alive_links == 0 or not self.labels:
+            return 0
+
+        budget = 1.0
+        node_torques = {}
+        events = 0
+
+        for lid, label in self.labels.items():
+            if lid in self.macro_nodes:
+                continue
+            energy = budget * label["share"]
+            if energy < 0.0001:
+                continue
+            age = window_count - label["born"]
+            rigidity_factor = 1.0 / (1.0 + self.rigidity_beta * age)
+            torque_mag = energy * rigidity_factor * self._torque_multiplier
+            for n in label["nodes"]:
+                if n not in state.alive_n:
+                    continue
+                theta_n = float(state.theta[n])
+                torque = torque_mag * math.sin(
+                    label["phase_sig"] - theta_n)
+                existing = node_torques.get(n)
+                if existing is None or energy > existing[1]:
+                    node_torques[n] = (torque, energy, lid)
+
+            if substrate:
+                grav_mag = torque_mag / max(1, len(label["nodes"]))
+                for n in label["nodes"]:
+                    for nb in substrate.get(n, set()):
+                        if nb not in state.alive_n:
+                            continue
+                        if nb in label["nodes"]:
+                            continue
+                        theta_nb = float(state.theta[nb])
+                        grav_torque = grav_mag * math.sin(
+                            label["phase_sig"] - theta_nb)
+                        existing = node_torques.get(nb)
+                        if existing is None or energy > existing[1]:
+                            node_torques[nb] = (grav_torque, energy, lid)
+
+        # MacroNode torque
+        for mn_id, mn in self.macro_nodes.items():
+            self._macro_node_torque(mn, state, node_torques)
+
+        # Apply
+        for n, (torque, _, _) in node_torques.items():
+            state.theta[n] += torque
+            events += 1
+
+        return events
+
     def step(self, state, window_count, islands=None, substrate=None):
         stats = {
             "budget": 0.0, "labels_active": 0,
