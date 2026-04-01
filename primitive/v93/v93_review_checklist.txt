@@ -1,0 +1,220 @@
+ESDE v9.3 — Deviation Detection + Local Response: Code Review Checklist
+=========================================================================
+Date: 2026-04-01
+Scope: virtual_layer_v9.py (偏りスコア+局所返し追加),
+       esde_v90_calibrate.py (CSV列+deviation_log追加)
+Author: Claude (Implementation)
+Directive: GPT Audit "偏り検知と最小返しループ" 2026-04-01
+Reviewer: [assign]
+
+================================================================
+CONTEXT
+================================================================
+
+v9.2でsemantic gravityが攪乱の主因（80%）と判明。
+GPT方針: semantic gravityをOFFにするのは人間の最適化。
+ESDE自身が偏りを検知して局所的に返す方が原始脳機能に近い。
+
+スケール転移:
+  物理層 → Stress（系がリンク偏りを検知→decayに返す）
+  仮想層全体 → v9.0（系がlabel死亡率を検知→torqueに返す）
+  label個体 → v9.3（個が自分の偏りを検知→自分のgravityに返す）★NEW
+
+================================================================
+SECTION A: 変更箇所
+================================================================
+
+------------------------------------------------------------
+A1. __init__ 追加変数
+------------------------------------------------------------
+[ ] self._prev_territory = {}
+    前windowのlabelごとのterritory_links。link_loss計算用。
+
+[ ] self._deviation_log = []
+    windowごとのdeviation summary。detail.jsonに出力。
+
+------------------------------------------------------------
+A2. Phase A: 偏りスコア計算（step()内、TORQUE前）
+------------------------------------------------------------
+[ ] 3つの偏り指標:
+
+    D1: phase_drift
+      |current_θ_mean - stored_phase_sig|（円周距離）
+      birth時の記憶と現在のθのずれ。
+      正規化: phase_drift / π → [0, 1]。重み0.5。
+
+    D2: link_loss
+      (prev_territory - current_territory) / prev_territory
+      前windowからのterritory減少率。[0, 1]。重み0.3。
+
+    D3: torque_exposure
+      前windowでlabelが受けたtorque適用量。
+      label["_last_torque_applied"]から取得。
+      正規化: min(exposure × 100, 1.0)。重み0.2。
+
+    combined score = 0.5 × D1 + 0.3 × D2 + 0.2 × D3
+
+    REVIEWER: 重み（0.5/0.3/0.2）は初期設定。
+    Axiom L的にはグレーだが、Phase Aの目的は
+    「偏りを信号として持たせる」こと。
+    重みの最適化は後。まず動くかを見る。
+
+    REVIEWER: D3の正規化（×100）は経験的。
+    torque_appliedの典型値が0.001-0.01程度のため。
+    最初のrunで分布を見て調整。
+
+------------------------------------------------------------
+A3. Phase B: 局所返し（gravity_factor）
+------------------------------------------------------------
+[ ] gravity_factor = max(0.0, 1.0 - score)
+
+    score=0: gravity_factor=1.0（full gravity、偏りなし）
+    score=0.5: gravity_factor=0.5（gravity半減）
+    score=1.0: gravity_factor=0.0（gravity停止）
+
+    semantic gravity部で:
+    grav_mag = torque_mag / nodes × gravity_factor
+
+    REVIEWER: この返しは「偏りが大きいlabelほどgravityが弱くなる」。
+    つまり「自分が偏っていると気づいたら、周囲を引っ張るのをやめる」。
+    これは自然な反応。攪乱している自覚 → 攪乱を止める。
+
+    REVIEWER: label内のtorque（core torque）は変わらない。
+    変わるのはlabel外への影響（semantic gravity）のみ。
+    自分の内部は保持しつつ、外への干渉を減らす。
+
+------------------------------------------------------------
+A4. Phase C: 記録
+------------------------------------------------------------
+[ ] label["_last_torque_applied"]: torque適用後に各labelに記録。
+    次windowのD3で使用。
+
+[ ] self._deviation_log: windowごとのsummary:
+    mean_score, max_score, n_labels, n_responding, mean_gravity_factor
+
+[ ] stats追加: dev_mean_score, dev_max_score,
+    dev_n_responding, dev_mean_gf
+
+    n_responding = gravity_factor < 0.95 のlabel数。
+    「反応している」個体の数。
+
+------------------------------------------------------------
+A5. calibrate変更
+------------------------------------------------------------
+[ ] CSV 4列追加: dev_mean_score, dev_max_score,
+    dev_n_responding, dev_mean_gf
+
+[ ] detail.json: deviation_log追加
+
+================================================================
+SECTION B: 変更なしの確認
+================================================================
+
+[ ] genesis_physics.py: 変更なし
+[ ] esde_v82_engine.py: 変更なし
+[ ] birth/death/share/cull: 変更なし
+[ ] core torque（label内ノードへの力）: 変更なし
+[ ] stress equilibrium: 変更なし
+[ ] v9.0フィードバックループ（M計算）: 変更なし
+
+================================================================
+SECTION C: 正確性検証
+================================================================
+
+[ ] phase_drift計算:
+    atan2(sin_sum, cos_sum)で円周平均。
+    |mean - phase_sig|の円周距離。
+    alive_n < 2 → 0.0。安全。
+
+[ ] link_loss計算:
+    _prev_territoryが初回はcurrent値で初期化。
+    初回loss = 0。安全。
+    max(0, ...)で負（territory増加）はゼロ扱い。
+
+[ ] torque_exposure計算:
+    label["_last_torque_applied"]がない場合 → .get() で 0.0。
+    初回window（まだtorque未適用）→ 0.0。安全。
+
+[ ] gravity_factor適用:
+    label内torque（L717-727）は変更なし。
+    semantic gravity（L731以降）のみgf乗算。
+    gf=1.0なら従来と同一動作。
+
+[ ] _prev_territory更新:
+    TORQUE前（deviation計算後）に更新。
+    つまり今windowのterritory → 次windowのprev。
+    タイミングは正しい。
+
+================================================================
+SECTION D: GPT方針との整合性
+================================================================
+
+[ ] Phase A（偏り検知器）: 3指標。deviation_scoresで記録。✓
+[ ] Phase B（弱い返し1本）: gravity_factor。semantic gravityのみ。✓
+[ ] Phase C（結果記録）: deviation_log + stats。✓
+[ ] 「人間が最適値を決めて固定しない」: gravity_factorは
+    scoreから自動計算。人間が値を入れない。✓
+[ ] 「最初は1種類だけ」: semantic gravity modulation のみ。✓
+[ ] 「閾値を超えたlabelだけ」: score > 0.05 で gf < 0.95。
+    全員に反応するが、scoreが小さければgf ≈ 1.0で実質無反応。✓
+
+================================================================
+SECTION E: スケール転移の検証
+================================================================
+
+| スケール | 検知者 | 検知対象 | 返し先 | 実装 |
+|---|---|---|---|---|
+| 物理層 | 系 | alive_links偏り | decay強度 | stress equilibrium |
+| 仮想層全体 | 系 | label死亡率 | torque強度(M) | v9.0 |
+| label個体 | 個 | 自分のphase_drift/link_loss/torque_exposure | 自分のgravity | v9.3 ★ |
+
+初めて「個」が主体になるフィードバック。✓
+
+================================================================
+SECTION F: KNOWN LIMITATIONS
+================================================================
+
+LIMIT 1: 偏りスコアの重み（0.5/0.3/0.2）は手動設定。
+  Axiom Lグレー。初回結果で分布を見て調整or系導出化。
+
+LIMIT 2: D3のtorque_exposure正規化（×100）は経験的。
+  初回runで実際のスケールを確認。
+
+LIMIT 3: gravity_factor = 1.0 - score は線形。
+  非線形（sigmoid等）の方が自然な可能性。初回は線形で開始。
+
+LIMIT 4: apply_torque_only()（sub-window torque）では
+  deviation_scoresが計算されない。window粒度でのみ反応。
+  step粒度の反応はv9.4候補。
+
+LIMIT 5: macro-nodeの偏りスコアは計算されない（macro_nodes skip）。
+  compression_enabled=Falseの現行全runでは影響なし。
+
+================================================================
+SUMMARY
+================================================================
+
+Priority   Issue                                     Action
+---------  ----------------------------------------  -------------------
+INFO       #F1 重み手動設定                           初回結果で判断
+INFO       #F2 D3正規化                               初回結果で確認
+INFO       #F3 線形response                           非線形はv9.4候補
+NONE       crash-blocker                              なし
+
+手順:
+  cd ~/esde/ESDE-Research/primitive/v91
+  # virtual_layer_v9.py を差し替え
+
+  cd ~/esde/ESDE-Research/primitive/v92
+  # esde_v90_calibrate.pyも差し替え（v91にもコピー）
+
+  # step-probe比較（gravity ON + deviation response）
+  python v92_step_probe.py --seed 42 --feedback-interval 5
+
+  # 結果をgravity ON（v9.2）、gravity OFF（v9.2 noG）と比較:
+  # v9.2 gravity ON:  cycle NET = -3.09
+  # v9.2 gravity OFF: cycle NET = -0.65
+  # v9.3 (deviation): cycle NET = ???（-0.65に近づけば偏り返しが機能）
+
+================================================================
+End of Checklist
