@@ -103,6 +103,11 @@ def run_step_probe(seed, feedback_interval, n_windows=60, detail_start=50,
                 pre_theta_std = float(np.std(
                     [float(engine.state.theta[n]) for n in engine.state.alive_n]))
                 pre_links = len(engine.state.alive_l)
+                pre_link_set = set(engine.state.alive_l)
+                pre_S_map = {lk: float(engine.state.S.get(lk, 0))
+                             for lk in engine.state.alive_l}
+                pre_R_map = {lk: float(engine.state.R.get(lk, 0))
+                             for lk in engine.state.alive_l}
 
                 # Physics step (same as engine.step_window inner loop)
                 engine.realizer.step(engine.state)
@@ -142,6 +147,19 @@ def run_step_probe(seed, feedback_interval, n_windows=60, detail_start=50,
 
                 # Record AFTER physics, BEFORE torque
                 post_links = len(engine.state.alive_l)
+                post_physics_link_set = set(engine.state.alive_l)
+
+                # Link quality snapshot (before torque)
+                S_vals = [float(engine.state.S.get(lk, 0)) for lk in engine.state.alive_l]
+                R_plus_count = sum(1 for lk in engine.state.alive_l
+                                  if engine.state.R.get(lk, 0.0) > 0)
+
+                # Links lost during this physics step
+                lost_links = pre_link_set - post_physics_link_set
+                gained_links = post_physics_link_set - pre_link_set
+                lost_S = [float(pre_S_map.get(lk, 0)) for lk in lost_links]
+                lost_R_plus = sum(1 for lk in lost_links
+                                 if pre_R_map.get(lk, 0.0) > 0)
 
                 # Apply torque at specified interval
                 torque_applied = 0
@@ -171,6 +189,13 @@ def run_step_probe(seed, feedback_interval, n_windows=60, detail_start=50,
                     "theta_shift": round(post_torque_theta_mean - pre_theta_mean, 8),
                     "link_delta": post_torque_links - pre_links,
                     "steps_since_torque": steps_since_torque,
+                    # Link quality (P4: what kind of links are lost?)
+                    "n_lost": len(lost_links),
+                    "n_gained": len(gained_links),
+                    "mean_S_lost": round(np.mean(lost_S), 6) if lost_S else 0,
+                    "mean_S_all": round(np.mean(S_vals), 6) if S_vals else 0,
+                    "R_plus_count": R_plus_count,
+                    "lost_R_plus": lost_R_plus,
                 })
 
                 # Track distance from last torque
@@ -297,30 +322,66 @@ def main():
                   f"{np.mean(ld):>+10.2f} "
                   f"{np.mean(std_chg):>+13.8f}")
 
-        # Per-interval cumulative effect
-        if args.feedback_interval < 50 and args.feedback_interval > 1:
-            print(f"\n  --- Per-Torque-Event Cumulative (interval={args.feedback_interval}) ---")
-            # Group steps by their position within each torque cycle
+        # GPT P4: Link quality by temporal class
+        print(f"\n  --- Link Quality by Temporal Class (P4: what dies?) ---")
+        print(f"  {'class':>15} {'n_lost':>7} {'n_gained':>8} {'S_lost':>8} {'S_all':>8} "
+              f"{'R+_count':>9} {'R+_lost':>8}")
+        print(f"  {'-'*66}")
+        for cname, entries in classes.items():
+            if not entries:
+                print(f"  {cname:>15} {'—':>7}")
+                continue
+            nl = [e["n_lost"] for e in entries]
+            ng = [e["n_gained"] for e in entries]
+            sl = [e["mean_S_lost"] for e in entries if e["mean_S_lost"] > 0]
+            sa = [e["mean_S_all"] for e in entries]
+            rp = [e["R_plus_count"] for e in entries]
+            rl = [e["lost_R_plus"] for e in entries]
+            print(f"  {cname:>15} {np.mean(nl):>7.1f} {np.mean(ng):>+7.1f} "
+                  f"{np.mean(sl):>8.4f} " if sl else f"  {cname:>15} {np.mean(nl):>7.1f} {np.mean(ng):>+7.1f} {'—':>8} ",
+                  end="")
+            print(f"{np.mean(sa):>8.4f} {np.mean(rp):>9.0f} {np.mean(rl):>8.2f}")
+
+        # P2: Per-cycle net effect
+        if args.feedback_interval < 50 and args.feedback_interval >= 1:
             cycle_len = args.feedback_interval
             by_pos = {}
             for s in step_log:
                 pos = s["steps_since_torque"]
-                if pos > 90:  # skip initial
+                if pos > 90:
                     continue
                 if pos not in by_pos:
-                    by_pos[pos] = {"shifts": [], "link_deltas": []}
+                    by_pos[pos] = {"shifts": [], "link_deltas": [],
+                                   "n_lost": [], "mean_S_lost": [],
+                                   "lost_R_plus": []}
                 by_pos[pos]["shifts"].append(abs(s["theta_shift"]))
                 by_pos[pos]["link_deltas"].append(s["link_delta"])
+                by_pos[pos]["n_lost"].append(s["n_lost"])
+                by_pos[pos]["mean_S_lost"].append(s["mean_S_lost"])
+                by_pos[pos]["lost_R_plus"].append(s["lost_R_plus"])
 
-            print(f"  {'pos':>5} {'n':>5} {'|shift|':>10} {'link_delta':>11}")
-            print(f"  {'-'*34}")
+            print(f"\n  --- Per-Cycle Profile (interval={cycle_len}) ---")
+            print(f"  {'pos':>5} {'n':>5} {'|shift|':>10} {'link_d':>7} "
+                  f"{'n_lost':>7} {'S_lost':>8} {'R+_lost':>8}")
+            print(f"  {'-'*52}")
+            net_link = 0
             for pos in sorted(by_pos.keys()):
                 if pos >= cycle_len:
                     break
                 d = by_pos[pos]
+                ld = np.mean(d['link_deltas'])
+                net_link += ld
+                sl_vals = [v for v in d['mean_S_lost'] if v > 0]
                 print(f"  {pos:>5} {len(d['shifts']):>5} "
                       f"{np.mean(d['shifts']):>10.8f} "
-                      f"{np.mean(d['link_deltas']):>+10.2f}")
+                      f"{ld:>+6.2f} "
+                      f"{np.mean(d['n_lost']):>7.1f} "
+                      f"{np.mean(sl_vals):>8.4f} " if sl_vals else f"  {pos:>5} {len(d['shifts']):>5} {np.mean(d['shifts']):>10.8f} {ld:>+6.2f} {np.mean(d['n_lost']):>7.1f} {'—':>8} ",
+                      end="")
+                print(f"{np.mean(d['lost_R_plus']):>8.2f}")
+            print(f"\n  Cycle NET link_delta: {net_link:>+.2f}")
+            print(f"  (negative = torque cycle net destroys links)")
+            print(f"  (positive = torque cycle net builds links)")
 
 
 if __name__ == "__main__":
