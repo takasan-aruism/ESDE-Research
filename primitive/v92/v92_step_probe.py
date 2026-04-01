@@ -20,12 +20,11 @@ from pathlib import Path
 
 _SCRIPT_DIR = Path(__file__).resolve().parent
 _REPO_ROOT = _SCRIPT_DIR.parent.parent
+_V91_DIR = _SCRIPT_DIR.parent / "v91"
 _V82_DIR = _REPO_ROOT / "autonomy" / "v82"
 _V43_DIR = _V82_DIR.parent / "v43"
 _V41_DIR = _V82_DIR.parent / "v41"
 _ENGINE_DIR = _REPO_ROOT / "ecology" / "engine"
-_V91_DIR = _SCRIPT_DIR.parent / "v91"
-_V91_DIR = _SCRIPT_DIR.parent / "v91"
 
 for p in [str(_SCRIPT_DIR), str(_V91_DIR), str(_V82_DIR), str(_V43_DIR), str(_V41_DIR), str(_ENGINE_DIR)]:
     if p not in sys.path:
@@ -95,6 +94,7 @@ def run_step_probe(seed, feedback_interval, n_windows=60, detail_start=50,
             # Detail window: step through manually
             bg_prob = BASE_PARAMS["background_injection_prob"]
             p = engine.island_tracker.params
+            steps_since_torque = 99  # large initial value (no prior torque)
 
             for step in range(window_steps):
                 # Record BEFORE physics step
@@ -169,7 +169,15 @@ def run_step_probe(seed, feedback_interval, n_windows=60, detail_start=50,
                     "post_torque_theta_std": round(post_torque_theta_std, 6),
                     "post_torque_links": post_torque_links,
                     "theta_shift": round(post_torque_theta_mean - pre_theta_mean, 8),
+                    "link_delta": post_torque_links - pre_links,
+                    "steps_since_torque": steps_since_torque,
                 })
+
+                # Track distance from last torque
+                if torque_applied > 0:
+                    steps_since_torque = 0
+                else:
+                    steps_since_torque += 1
 
             # End of detail window: run stress + observation + virtual.step
             # Stress
@@ -257,27 +265,62 @@ def main():
 
     # Quick summary
     if step_log:
-        torque_steps = [s for s in step_log if s["torque_applied"] > 0]
-        no_torque = [s for s in step_log if s["torque_applied"] == 0]
         print(f"\n  --- Quick Summary ---")
-        print(f"  Steps with torque: {len(torque_steps)}")
-        print(f"  Steps without:     {len(no_torque)}")
-        if torque_steps:
-            shifts = [abs(s["theta_shift"]) for s in torque_steps]
-            print(f"  |theta_shift| at torque steps: "
-                  f"mean={np.mean(shifts):.8f} max={max(shifts):.8f}")
-        if no_torque:
-            shifts = [abs(s["theta_shift"]) for s in no_torque]
-            print(f"  |theta_shift| at non-torque:   "
-                  f"mean={np.mean(shifts):.8f} max={max(shifts):.8f}")
+        print(f"  Total steps: {len(step_log)}")
+        torque_steps = [s for s in step_log if s["torque_applied"] > 0]
+        print(f"  Torque steps: {len(torque_steps)}")
 
-        # Link change around torque
-        if torque_steps:
-            link_deltas = [s["post_torque_links"] - s["post_physics_links"]
-                           for s in torque_steps]
-            print(f"  Link change at torque: "
-                  f"mean={np.mean(link_deltas):.2f} "
-                  f"(torque doesn't directly change links)")
+        # GPT §5: Temporal decomposition
+        # A = torque step (steps_since_torque == 0)
+        # B = +1 step after torque
+        # C = +2 to +3 steps after torque
+        # D = +4 or more steps after torque
+        classes = {
+            "A_torque":    [s for s in step_log if s["steps_since_torque"] == 0],
+            "B_after+1":   [s for s in step_log if s["steps_since_torque"] == 1],
+            "C_after+2-3": [s for s in step_log if s["steps_since_torque"] in (2, 3)],
+            "D_late_drift": [s for s in step_log if s["steps_since_torque"] >= 4],
+        }
+
+        print(f"\n  --- Temporal Decomposition (GPT §5) ---")
+        print(f"  {'class':>15} {'n':>5} {'|shift|':>10} {'link_delta':>11} {'theta_std_chg':>14}")
+        print(f"  {'-'*58}")
+        for cname, entries in classes.items():
+            if not entries:
+                print(f"  {cname:>15} {'—':>5}")
+                continue
+            shifts = [abs(e["theta_shift"]) for e in entries]
+            ld = [e["link_delta"] for e in entries]
+            std_chg = [e["post_torque_theta_std"] - e["pre_theta_std"] for e in entries]
+            print(f"  {cname:>15} {len(entries):>5} "
+                  f"{np.mean(shifts):>10.8f} "
+                  f"{np.mean(ld):>+10.2f} "
+                  f"{np.mean(std_chg):>+13.8f}")
+
+        # Per-interval cumulative effect
+        if args.feedback_interval < 50 and args.feedback_interval > 1:
+            print(f"\n  --- Per-Torque-Event Cumulative (interval={args.feedback_interval}) ---")
+            # Group steps by their position within each torque cycle
+            cycle_len = args.feedback_interval
+            by_pos = {}
+            for s in step_log:
+                pos = s["steps_since_torque"]
+                if pos > 90:  # skip initial
+                    continue
+                if pos not in by_pos:
+                    by_pos[pos] = {"shifts": [], "link_deltas": []}
+                by_pos[pos]["shifts"].append(abs(s["theta_shift"]))
+                by_pos[pos]["link_deltas"].append(s["link_delta"])
+
+            print(f"  {'pos':>5} {'n':>5} {'|shift|':>10} {'link_delta':>11}")
+            print(f"  {'-'*34}")
+            for pos in sorted(by_pos.keys()):
+                if pos >= cycle_len:
+                    break
+                d = by_pos[pos]
+                print(f"  {pos:>5} {len(d['shifts']):>5} "
+                      f"{np.mean(d['shifts']):>10.8f} "
+                      f"{np.mean(d['link_deltas']):>+10.2f}")
 
 
 if __name__ == "__main__":
