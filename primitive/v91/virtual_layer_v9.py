@@ -112,6 +112,10 @@ class VirtualLayer:
         self.feedback_clamp = feedback_clamp   # M clamp range (lo, hi)
         self.warmup_windows = 20       # M=1.0 during warmup
         self._torque_multiplier = 1.0  # current M (applied to torque)
+        self.semantic_gravity_enabled = True  # v9.2: ON/OFF for audit
+        # v9.3: Per-label deviation detection + local response
+        self._prev_territory = {}  # {lid: territory_links} from last window
+        self._deviation_log = []   # per-window deviation records
 
     def _phase_bin(self, theta):
         """Map theta to bin index [0, N_BINS)."""
@@ -422,7 +426,7 @@ class VirtualLayer:
                 if existing is None or energy > existing[1]:
                     node_torques[n] = (torque, energy, lid)
 
-            if substrate:
+            if substrate and self.semantic_gravity_enabled:
                 grav_mag = torque_mag / max(1, len(label["nodes"]))
                 for n in label["nodes"]:
                     for nb in substrate.get(n, set()):
@@ -461,6 +465,9 @@ class VirtualLayer:
             "died_share_sum": 0.0, "turnover_ema": 0.0,
             "signal_ratio": 0.0, "torque_multiplier": 1.0,
             "warmup_active": 1, "feedback_gamma": self.feedback_gamma,
+            # v9.3 deviation detection
+            "dev_mean_score": 0.0, "dev_max_score": 0.0,
+            "dev_n_responding": 0, "dev_mean_gf": 1.0,
         }
 
         alive_links = len(state.alive_l)
@@ -638,7 +645,62 @@ class VirtualLayer:
                     min_dist = d
             mn.nearest_dist = min_dist
 
-        # ── 4. TORQUE ──
+        # ── 4a. DEVIATION DETECTION (v9.3) ──
+        # Per-label deviation score: phase_drift + link_loss + torque_exposure
+        # Score drives local gravity modulation (Phase B response)
+        deviation_scores = {}
+        gravity_factors = {}  # {lid: 0.0-1.0} for semantic gravity
+
+        for lid, label in self.labels.items():
+            if lid in self.macro_nodes:
+                continue
+
+            # D1: Phase drift — |current θ mean - stored phase_sig|
+            thetas = [float(state.theta[n]) for n in label["nodes"]
+                      if n in state.alive_n]
+            if len(thetas) >= 2:
+                sin_s = sum(math.sin(t) for t in thetas)
+                cos_s = sum(math.cos(t) for t in thetas)
+                mean_theta = math.atan2(sin_s, cos_s)
+                phase_drift = abs(mean_theta - label["phase_sig"])
+                if phase_drift > math.pi:
+                    phase_drift = 2 * math.pi - phase_drift
+            else:
+                phase_drift = 0.0
+
+            # D2: Link loss — territory_links drop from last window
+            current_terr = label_link_count.get(lid, 0)
+            prev_terr = self._prev_territory.get(lid, current_terr)
+            link_loss = max(0, prev_terr - current_terr) / max(1, prev_terr)
+
+            # D3: Torque exposure — how much torque was applied last window
+            # (from label_torque_applied, available after torque step;
+            #  use previous window's value stored in label)
+            torque_exposure = label.get("_last_torque_applied", 0.0)
+
+            # Combined deviation score (0-1 each, weighted sum)
+            score = (0.5 * min(phase_drift / math.pi, 1.0)
+                     + 0.3 * link_loss
+                     + 0.2 * min(torque_exposure * 100, 1.0))
+
+            deviation_scores[lid] = {
+                "phase_drift": round(phase_drift, 4),
+                "link_loss": round(link_loss, 4),
+                "torque_exposure": round(torque_exposure, 6),
+                "score": round(score, 4),
+            }
+
+            # Phase B: Local gravity response
+            # High deviation → weaken semantic gravity for this label
+            # gravity_factor = 1.0 - score (score 0→full gravity, score 1→no gravity)
+            gravity_factors[lid] = max(0.0, 1.0 - score)
+
+        # Update prev_territory for next window
+        self._prev_territory = {lid: label_link_count.get(lid, 0)
+                                for lid in self.labels
+                                if lid not in self.macro_nodes}
+
+        # ── 4b. TORQUE ──
         node_torques = {}
         label_torque_applied = defaultdict(float)
 
@@ -667,8 +729,9 @@ class VirtualLayer:
                     node_torques[n] = (torque, energy, lid)
                     label_torque_applied[lid] += abs(torque)
 
-            if substrate:
-                grav_mag = torque_mag / max(1, len(label["nodes"]))
+            if substrate and self.semantic_gravity_enabled:
+                gf = gravity_factors.get(lid, 1.0)  # v9.3: deviation response
+                grav_mag = torque_mag / max(1, len(label["nodes"])) * gf
                 for n in label["nodes"]:
                     for nb in substrate.get(n, set()):
                         if nb not in state.alive_n:
@@ -693,6 +756,30 @@ class VirtualLayer:
             state.theta[n] += torque
             stats["torque_events"] += 1
             stats["torque_total"] += abs(torque)
+
+        # ── v9.3: Store torque_applied per label for next window's D3 ──
+        for lid, label in self.labels.items():
+            if lid not in self.macro_nodes:
+                label["_last_torque_applied"] = label_torque_applied.get(lid, 0.0)
+
+        # ── v9.3: Deviation log (Phase C: record) ──
+        if deviation_scores:
+            scores = [d["score"] for d in deviation_scores.values()]
+            gfs = [gravity_factors.get(lid, 1.0) for lid in deviation_scores]
+            n_responding = sum(1 for gf in gfs if gf < 0.95)
+            dev_summary = {
+                "window": window_count,
+                "mean_score": round(sum(scores) / len(scores), 4),
+                "max_score": round(max(scores), 4),
+                "n_labels": len(scores),
+                "n_responding": n_responding,
+                "mean_gravity_factor": round(sum(gfs) / len(gfs), 4),
+            }
+            self._deviation_log.append(dev_summary)
+            stats["dev_mean_score"] = dev_summary["mean_score"]
+            stats["dev_max_score"] = dev_summary["max_score"]
+            stats["dev_n_responding"] = n_responding
+            stats["dev_mean_gf"] = dev_summary["mean_gravity_factor"]
 
         # ── v8.2 Phase A: Update phase space observation ──
         self._update_phase_space(window_count)
