@@ -24,8 +24,10 @@ _V82_DIR = _REPO_ROOT / "autonomy" / "v82"
 _V43_DIR = _V82_DIR.parent / "v43"
 _V41_DIR = _V82_DIR.parent / "v41"
 _ENGINE_DIR = _REPO_ROOT / "ecology" / "engine"
+_V91_DIR = _SCRIPT_DIR.parent / "v91"
+_V91_DIR = _SCRIPT_DIR.parent / "v91"
 
-for p in [str(_SCRIPT_DIR), str(_V82_DIR), str(_V43_DIR), str(_V41_DIR), str(_ENGINE_DIR)]:
+for p in [str(_SCRIPT_DIR), str(_V91_DIR), str(_V82_DIR), str(_V43_DIR), str(_V41_DIR), str(_ENGINE_DIR)]:
     if p not in sys.path:
         sys.path.insert(0, p)
 
@@ -201,9 +203,10 @@ def run_step_probe(seed, feedback_interval, n_windows=60, detail_start=50,
             engine.frames.append(f)
 
             if p.virtual_enabled:
-                isl_for_vl = {}
-                for iid, info in isl_m.items():
-                    isl_for_vl[iid] = info
+                # Convert list of frozensets to dict with .nodes attr
+                class _Isl:
+                    def __init__(self, nodes): self.nodes = nodes
+                isl_for_vl = {i: _Isl(ns) for i, ns in enumerate(isl_m)}
                 vs = engine.virtual.step(
                     engine.state, f.window,
                     islands=isl_for_vl,
