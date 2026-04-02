@@ -114,8 +114,9 @@ class VirtualLayer:
         self._torque_multiplier = 1.0  # current M (applied to torque)
         self.semantic_gravity_enabled = True  # v9.2: ON/OFF for audit
         # v9.3: Per-label deviation detection + local response
-        self._prev_territory = {}  # {lid: territory_links} from last window
-        self._deviation_log = []   # per-window deviation records
+        self._prev_territory = {}     # {lid: territory_links} for window-level D2
+        self._prev_label_links = {}   # {lid: local_link_sum} for step-level response
+        self._deviation_log = []      # per-window deviation records
 
     def _phase_bin(self, theta):
         """Map theta to bin index [0, N_BINS)."""
@@ -396,12 +397,27 @@ class VirtualLayer:
     # ================================================================
     def apply_torque_only(self, state, window_count, substrate=None):
         """Apply torque without birth/share/cull. For sub-window feedback.
-        Uses current _torque_multiplier (computed at last CULL).
+        v9.3: Per-label local link change detection for gravity_factor.
+        Each label measures its OWN territory link change, not the global average.
         Returns number of torque events applied.
         """
         alive_links = len(state.alive_l)
         if alive_links == 0 or not self.labels:
             return 0
+
+        # Build per-node degree map (O(links), once per call)
+        deg = {}
+        for lk in state.alive_l:
+            n1, n2 = lk
+            deg[n1] = deg.get(n1, 0) + 1
+            deg[n2] = deg.get(n2, 0) + 1
+
+        # Per-label local territory (sum of node degrees)
+        label_local_links = {}
+        for lid, label in self.labels.items():
+            if lid in self.macro_nodes:
+                continue
+            label_local_links[lid] = sum(deg.get(n, 0) for n in label["nodes"])
 
         budget = 1.0
         node_torques = {}
@@ -413,6 +429,16 @@ class VirtualLayer:
             energy = budget * label["share"]
             if energy < 0.0001:
                 continue
+
+            # v9.3: Per-label gravity_factor from local link change
+            current_local = label_local_links.get(lid, 0)
+            prev_local = self._prev_label_links.get(lid, current_local)
+            if prev_local > 0:
+                local_loss = max(0, prev_local - current_local) / prev_local
+            else:
+                local_loss = 0.0
+            gf = max(0.0, 1.0 - local_loss)
+
             age = window_count - label["born"]
             rigidity_factor = 1.0 / (1.0 + self.rigidity_beta * age)
             torque_mag = energy * rigidity_factor * self._torque_multiplier
@@ -427,7 +453,7 @@ class VirtualLayer:
                     node_torques[n] = (torque, energy, lid)
 
             if substrate and self.semantic_gravity_enabled:
-                grav_mag = torque_mag / max(1, len(label["nodes"]))
+                grav_mag = torque_mag / max(1, len(label["nodes"])) * gf
                 for n in label["nodes"]:
                     for nb in substrate.get(n, set()):
                         if nb not in state.alive_n:
@@ -440,6 +466,9 @@ class VirtualLayer:
                         existing = node_torques.get(nb)
                         if existing is None or energy > existing[1]:
                             node_torques[nb] = (grav_torque, energy, lid)
+
+        # Update per-label link snapshot for next call
+        self._prev_label_links = label_local_links
 
         # MacroNode torque
         for mn_id, mn in self.macro_nodes.items():
