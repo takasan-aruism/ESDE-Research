@@ -116,7 +116,9 @@ class VirtualLayer:
         # v9.3: Per-label deviation detection + local response
         self._prev_territory = {}     # {lid: territory_links} for window-level D2
         self._prev_label_links = {}   # {lid: local_link_sum} for step-level response
+        self._gravity_factors = {}    # {lid: 0.0-1.0} persisted from step() for apply_torque_only()
         self._deviation_log = []      # per-window deviation records
+        self.torque_order = "random"  # "random" / "share" / "age"
 
     def _phase_bin(self, theta):
         """Map theta to bin index [0, N_BINS)."""
@@ -397,7 +399,7 @@ class VirtualLayer:
     # ================================================================
     def apply_torque_only(self, state, window_count, substrate=None):
         """Apply torque without birth/share/cull. For sub-window feedback.
-        v9.3+: Sequential application. Each label applies immediately.
+        v9.3+: Sequential application with deviation-based gravity_factors.
         Returns number of torque events applied.
         """
         alive_links = len(state.alive_l)
@@ -405,9 +407,14 @@ class VirtualLayer:
             return 0
 
         import random as _rnd
-        _seq_rng = _rnd.Random(window_count * 1000 + len(self.labels))
         label_ids = [lid for lid in self.labels if lid not in self.macro_nodes]
-        _seq_rng.shuffle(label_ids)
+        if self.torque_order == "share":
+            label_ids.sort(key=lambda lid: self.labels[lid]["share"], reverse=True)
+        elif self.torque_order == "age":
+            label_ids.sort(key=lambda lid: self.labels[lid]["born"])
+        else:  # "random"
+            _seq_rng = _rnd.Random(window_count * 1000 + len(self.labels))
+            _seq_rng.shuffle(label_ids)
 
         budget = 1.0
         events = 0
@@ -432,7 +439,9 @@ class VirtualLayer:
                 events += 1
 
             if substrate and self.semantic_gravity_enabled:
-                grav_mag = torque_mag / max(1, len(label["nodes"]))
+                # Use persisted gravity_factors from last step()
+                gf = self._gravity_factors.get(lid, 1.0)
+                grav_mag = torque_mag / max(1, len(label["nodes"])) * gf
                 for n in label["nodes"]:
                     for nb in substrate.get(n, set()):
                         if nb not in state.alive_n:
@@ -698,6 +707,9 @@ class VirtualLayer:
             # gravity_factor = 1.0 - score (score 0→full gravity, score 1→no gravity)
             gravity_factors[lid] = max(0.0, 1.0 - score)
 
+        # Persist gravity_factors for apply_torque_only()
+        self._gravity_factors = gravity_factors
+
         # Update prev_territory for next window
         self._prev_territory = {lid: label_link_count.get(lid, 0)
                                 for lid in self.labels
@@ -706,11 +718,15 @@ class VirtualLayer:
         # ── 4b. TORQUE (v9.3+: sequential application) ──
         # Each label computes torque on CURRENT theta, applies IMMEDIATELY.
         # Next label sees the updated theta. No batch buffering.
-        # Order: shuffled per window (deterministic, seed-based).
         import random as _rnd
-        _seq_rng = _rnd.Random(window_count)  # deterministic per window
         label_ids = [lid for lid in self.labels if lid not in self.macro_nodes]
-        _seq_rng.shuffle(label_ids)
+        if self.torque_order == "share":
+            label_ids.sort(key=lambda lid: self.labels[lid]["share"], reverse=True)
+        elif self.torque_order == "age":
+            label_ids.sort(key=lambda lid: self.labels[lid]["born"])
+        else:  # "random"
+            _seq_rng = _rnd.Random(window_count)
+            _seq_rng.shuffle(label_ids)
 
         node_torques = {}  # record of last torque applied (for logging)
         label_torque_applied = defaultdict(float)

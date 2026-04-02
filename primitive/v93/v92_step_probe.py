@@ -35,7 +35,8 @@ from virtual_layer_v9 import VirtualLayer as VirtualLayerV9
 
 
 def run_step_probe(seed, feedback_interval, n_windows=60, detail_start=50,
-                   local_amplitude=0.3, gamma=0.1, semantic_gravity=True):
+                   local_amplitude=0.3, gamma=0.1, semantic_gravity=True,
+                   torque_order="random"):
     """Run with step-level instrumentation within detail windows."""
 
     N = V82_N
@@ -77,10 +78,11 @@ def run_step_probe(seed, feedback_interval, n_windows=60, detail_start=50,
         feedback_clamp=(0.8, 1.2),
     )
     engine.virtual.semantic_gravity_enabled = semantic_gravity
+    engine.virtual.torque_order = torque_order
 
     engine.run_injection()
     print(f"  Injection done. interval={feedback_interval} gamma={gamma} "
-          f"gravity={'ON' if semantic_gravity else 'OFF'}")
+          f"gravity={'ON' if semantic_gravity else 'OFF'} order={torque_order}")
 
     # Storage for step-level data
     step_log = []  # per-step within detail windows
@@ -268,12 +270,16 @@ def main():
     parser.add_argument("--detail-start", type=int, default=50)
     parser.add_argument("--no-gravity", action="store_true",
                         help="Disable semantic gravity (label-external torque)")
+    parser.add_argument("--torque-order", type=str, default="random",
+                        choices=["random", "share", "age"],
+                        help="Label processing order for sequential torque")
     args = parser.parse_args()
 
     grav_tag = "noG" if args.no_gravity else "G"
-    print(f"\n  ESDE v9.2 Step-Level Probe")
+    print(f"\n  ESDE v9.3 Step-Level Probe")
     print(f"  seed={args.seed} interval={args.feedback_interval} "
-          f"gamma={args.gamma} gravity={'OFF' if args.no_gravity else 'ON'}")
+          f"gamma={args.gamma} gravity={'OFF' if args.no_gravity else 'ON'} "
+          f"order={args.torque_order}")
     print(f"  windows={args.windows} detail_start={args.detail_start}\n")
 
     step_log, engine = run_step_probe(
@@ -282,10 +288,11 @@ def main():
         n_windows=args.windows,
         detail_start=args.detail_start,
         gamma=args.gamma,
-        semantic_gravity=not args.no_gravity)
+        semantic_gravity=not args.no_gravity,
+        torque_order=args.torque_order)
 
     # Save
-    outdir = Path(f"diag_v92_stepprobe_int{args.feedback_interval}_{grav_tag}")
+    outdir = Path(f"diag_v93_stepprobe_int{args.feedback_interval}_{grav_tag}_{args.torque_order}")
     outdir.mkdir(parents=True, exist_ok=True)
     outpath = outdir / f"step_log_seed{args.seed}.json"
     with open(outpath, "w") as f:
