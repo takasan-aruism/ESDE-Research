@@ -397,38 +397,16 @@ class VirtualLayer:
     # ================================================================
     def apply_torque_only(self, state, window_count, substrate=None):
         """Apply torque without birth/share/cull. For sub-window feedback.
-        v9.3: Per-label patch (label nodes + 1-hop neighbors) link change
-        detection for gravity_factor. Patch is ~35 nodes / ~200 links,
-        large enough to detect 5-step changes.
+        v9.3+: Contention-gated. Nodes claimed by 2+ labels are skipped.
         Returns number of torque events applied.
         """
         alive_links = len(state.alive_l)
         if alive_links == 0 or not self.labels:
             return 0
 
-        # Build per-node degree map (O(links), once per call)
-        deg = {}
-        for lk in state.alive_l:
-            n1, n2 = lk
-            deg[n1] = deg.get(n1, 0) + 1
-            deg[n2] = deg.get(n2, 0) + 1
-
         budget = 1.0
         node_torques = {}
-        events = 0
-
-        # Per-label patch degree (label nodes + 1-hop neighbors)
-        patch_degrees = {}
-        for lid, label in self.labels.items():
-            if lid in self.macro_nodes:
-                continue
-            patch_nodes = set(label["nodes"])
-            if substrate:
-                for n in label["nodes"]:
-                    for nb in substrate.get(n, set()):
-                        if nb in state.alive_n:
-                            patch_nodes.add(nb)
-            patch_degrees[lid] = sum(deg.get(n, 0) for n in patch_nodes)
+        node_contention = {}
 
         for lid, label in self.labels.items():
             if lid in self.macro_nodes:
@@ -436,15 +414,6 @@ class VirtualLayer:
             energy = budget * label["share"]
             if energy < 0.0001:
                 continue
-
-            # v9.3: Patch-level gravity_factor from local link change
-            current_patch = patch_degrees.get(lid, 0)
-            prev_patch = self._prev_label_links.get(lid, current_patch)
-            if prev_patch > 0:
-                patch_loss = max(0, prev_patch - current_patch) / prev_patch
-            else:
-                patch_loss = 0.0
-            gf = max(0.0, 1.0 - patch_loss)
 
             age = window_count - label["born"]
             rigidity_factor = 1.0 / (1.0 + self.rigidity_beta * age)
@@ -455,12 +424,13 @@ class VirtualLayer:
                 theta_n = float(state.theta[n])
                 torque = torque_mag * math.sin(
                     label["phase_sig"] - theta_n)
+                node_contention[n] = node_contention.get(n, 0) + 1
                 existing = node_torques.get(n)
                 if existing is None or energy > existing[1]:
                     node_torques[n] = (torque, energy, lid)
 
             if substrate and self.semantic_gravity_enabled:
-                grav_mag = torque_mag / max(1, len(label["nodes"])) * gf
+                grav_mag = torque_mag / max(1, len(label["nodes"]))
                 for n in label["nodes"]:
                     for nb in substrate.get(n, set()):
                         if nb not in state.alive_n:
@@ -470,21 +440,21 @@ class VirtualLayer:
                         theta_nb = float(state.theta[nb])
                         grav_torque = grav_mag * math.sin(
                             label["phase_sig"] - theta_nb)
+                        node_contention[nb] = node_contention.get(nb, 0) + 1
                         existing = node_torques.get(nb)
                         if existing is None or energy > existing[1]:
                             node_torques[nb] = (grav_torque, energy, lid)
-
-        # Update per-label patch snapshot for next call
-        self._prev_label_links = patch_degrees
 
         # MacroNode torque
         for mn_id, mn in self.macro_nodes.items():
             self._macro_node_torque(mn, state, node_torques)
 
-        # Apply
+        # Apply — contention-gated
+        events = 0
         for n, (torque, _, _) in node_torques.items():
-            state.theta[n] += torque
-            events += 1
+            if node_contention.get(n, 0) <= 1:
+                state.theta[n] += torque
+                events += 1
 
         return events
 
@@ -492,7 +462,7 @@ class VirtualLayer:
         stats = {
             "budget": 0.0, "labels_active": 0,
             "labels_born": 0, "labels_died": 0,
-            "torque_events": 0, "torque_total": 0.0,
+            "torque_events": 0, "torque_total": 0.0, "torque_contested": 0,
             "motifs_detected": 0, "mean_torque": 0.0,
             "top_share": 0.0, "label_rplus_rate": 0.0,
             "macro_nodes_active": len(self.macro_nodes),
@@ -736,8 +706,9 @@ class VirtualLayer:
                                 for lid in self.labels
                                 if lid not in self.macro_nodes}
 
-        # ── 4b. TORQUE ──
+        # ── 4b. TORQUE (v9.3+: contention-gated) ──
         node_torques = {}
+        node_contention = {}  # {node: count of labels claiming it}
         label_torque_applied = defaultdict(float)
 
         # Regular labels
@@ -760,6 +731,7 @@ class VirtualLayer:
                 theta_n = float(state.theta[n])
                 torque = torque_mag * math.sin(
                     label["phase_sig"] - theta_n)
+                node_contention[n] = node_contention.get(n, 0) + 1
                 existing = node_torques.get(n)
                 if existing is None or energy > existing[1]:
                     node_torques[n] = (torque, energy, lid)
@@ -777,6 +749,7 @@ class VirtualLayer:
                         theta_nb = float(state.theta[nb])
                         grav_torque = grav_mag * math.sin(
                             label["phase_sig"] - theta_nb)
+                        node_contention[nb] = node_contention.get(nb, 0) + 1
                         existing = node_torques.get(nb)
                         if existing is None or energy > existing[1]:
                             node_torques[nb] = (grav_torque, energy, lid)
@@ -787,11 +760,21 @@ class VirtualLayer:
             self._macro_node_torque(mn, state, node_torques)
             label_torque_applied[mn_id] = mn.share  # simplified
 
-        # Apply torque
+        # Apply torque — contention-gated (v9.3+)
+        # Only apply if exactly 1 label claims the node.
+        # Contested nodes (2+ labels pulling different directions) → skip.
+        torque_applied_count = 0
+        torque_skipped_count = 0
         for n, (torque, _, _) in node_torques.items():
-            state.theta[n] += torque
-            stats["torque_events"] += 1
-            stats["torque_total"] += abs(torque)
+            if node_contention.get(n, 0) <= 1:
+                state.theta[n] += torque
+                torque_applied_count += 1
+            else:
+                torque_skipped_count += 1
+        stats["torque_events"] = torque_applied_count
+        stats["torque_total"] = sum(abs(t) for n, (t, _, _) in node_torques.items()
+                                    if node_contention.get(n, 0) <= 1)
+        stats["torque_contested"] = torque_skipped_count
 
         # ── v9.3: Store torque_applied per label for next window's D3 ──
         for lid, label in self.labels.items():
