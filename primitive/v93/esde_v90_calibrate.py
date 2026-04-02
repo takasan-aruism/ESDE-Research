@@ -508,7 +508,7 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
         maturation_alpha=0.10, rigidity_beta=0.10,
         local_amplitude=0.0,
         feedback_gamma=0.10, feedback_clamp_lo=0.8, feedback_clamp_hi=1.2,
-        feedback_interval=50):
+        feedback_interval=50, torque_order="random", deviation_enabled=True):
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -519,6 +519,10 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
     tags.append(f"g{feedback_gamma}")
     if feedback_interval != window_steps:
         tags.append(f"int{feedback_interval}")
+    if torque_order != "random":
+        tags.append(f"ord_{torque_order}")
+    if not deviation_enabled:
+        tags.append("nodev")
     if not tags: tags.append("baseline")
     tag_str = "+".join(tags)
 
@@ -562,11 +566,14 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
         feedback_gamma=feedback_gamma,
         feedback_clamp=(feedback_clamp_lo, feedback_clamp_hi),
     )
+    engine.virtual.torque_order = torque_order
+    engine.virtual.deviation_enabled = deviation_enabled
     print(f"  v9 VirtualLayer (feedback loop) installed. "
           f"gamma={engine.virtual.feedback_gamma} "
           f"clamp={engine.virtual.feedback_clamp} "
           f"warmup={engine.virtual.warmup_windows} "
-          f"interval={feedback_interval}")
+          f"interval={feedback_interval} "
+          f"order={torque_order} deviation={'ON' if deviation_enabled else 'OFF'}")
 
     engine.run_injection()
     t_inj = time.time() - t_start
@@ -817,6 +824,8 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
             "feedback_gamma": feedback_gamma,
             "feedback_clamp": [feedback_clamp_lo, feedback_clamp_hi],
             "feedback_interval": feedback_interval,
+            "torque_order": torque_order,
+            "deviation_enabled": deviation_enabled,
             "representative_labels": sorted(rep_labels) if rep_labels else [],
         },
         "virtual_summary": engine.virtual.summary(),
@@ -869,6 +878,11 @@ def main():
                         help="Torque multiplier upper clamp")
     parser.add_argument("--feedback-interval", type=int, default=50,
                         help="Torque re-application interval within window (50=default=once per window)")
+    parser.add_argument("--torque-order", type=str, default="random",
+                        choices=["random", "share", "age"],
+                        help="Label processing order for sequential torque")
+    parser.add_argument("--no-deviation", action="store_true",
+                        help="Disable deviation detection (all gravity_factors=1.0)")
     args = parser.parse_args()
 
     params = V82EncapsulationParams(
@@ -885,7 +899,9 @@ def main():
         feedback_gamma=args.gamma,
         feedback_clamp_lo=args.clamp_lo,
         feedback_clamp_hi=args.clamp_hi,
-        feedback_interval=args.feedback_interval)
+        feedback_interval=args.feedback_interval,
+        torque_order=args.torque_order,
+        deviation_enabled=not args.no_deviation)
 
 
 if __name__ == "__main__":
