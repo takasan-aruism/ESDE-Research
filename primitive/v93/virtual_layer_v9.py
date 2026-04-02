@@ -119,6 +119,7 @@ class VirtualLayer:
         self._gravity_factors = {}    # {lid: 0.0-1.0} persisted from step() for apply_torque_only()
         self._deviation_log = []      # per-window deviation records
         self.torque_order = "random"  # "random" / "share" / "age"
+        self.deviation_enabled = True  # v9.3: deviation detection ON/OFF
 
     def _phase_bin(self, theta):
         """Map theta to bin index [0, N_BINS)."""
@@ -663,49 +664,50 @@ class VirtualLayer:
         deviation_scores = {}
         gravity_factors = {}  # {lid: 0.0-1.0} for semantic gravity
 
-        for lid, label in self.labels.items():
-            if lid in self.macro_nodes:
-                continue
+        if self.deviation_enabled:
+            for lid, label in self.labels.items():
+                if lid in self.macro_nodes:
+                    continue
 
-            # D1: Phase drift — |current θ mean - stored phase_sig|
-            thetas = [float(state.theta[n]) for n in label["nodes"]
-                      if n in state.alive_n]
-            if len(thetas) >= 2:
-                sin_s = sum(math.sin(t) for t in thetas)
-                cos_s = sum(math.cos(t) for t in thetas)
-                mean_theta = math.atan2(sin_s, cos_s)
-                phase_drift = abs(mean_theta - label["phase_sig"])
-                if phase_drift > math.pi:
-                    phase_drift = 2 * math.pi - phase_drift
-            else:
-                phase_drift = 0.0
+                # D1: Phase drift — |current θ mean - stored phase_sig|
+                thetas = [float(state.theta[n]) for n in label["nodes"]
+                          if n in state.alive_n]
+                if len(thetas) >= 2:
+                    sin_s = sum(math.sin(t) for t in thetas)
+                    cos_s = sum(math.cos(t) for t in thetas)
+                    mean_theta = math.atan2(sin_s, cos_s)
+                    phase_drift = abs(mean_theta - label["phase_sig"])
+                    if phase_drift > math.pi:
+                        phase_drift = 2 * math.pi - phase_drift
+                else:
+                    phase_drift = 0.0
 
-            # D2: Link loss — territory_links drop from last window
-            current_terr = label_link_count.get(lid, 0)
-            prev_terr = self._prev_territory.get(lid, current_terr)
-            link_loss = max(0, prev_terr - current_terr) / max(1, prev_terr)
+                # D2: Link loss — territory_links drop from last window
+                current_terr = label_link_count.get(lid, 0)
+                prev_terr = self._prev_territory.get(lid, current_terr)
+                link_loss = max(0, prev_terr - current_terr) / max(1, prev_terr)
 
-            # D3: Torque exposure — how much torque was applied last window
-            # (from label_torque_applied, available after torque step;
-            #  use previous window's value stored in label)
-            torque_exposure = label.get("_last_torque_applied", 0.0)
+                # D3: Torque exposure — how much torque was applied last window
+                torque_exposure = label.get("_last_torque_applied", 0.0)
 
-            # Combined deviation score (0-1 each, weighted sum)
-            score = (0.5 * min(phase_drift / math.pi, 1.0)
-                     + 0.3 * link_loss
-                     + 0.2 * min(torque_exposure * 100, 1.0))
+                # Combined deviation score (0-1 each, weighted sum)
+                score = (0.5 * min(phase_drift / math.pi, 1.0)
+                         + 0.3 * link_loss
+                         + 0.2 * min(torque_exposure * 100, 1.0))
 
-            deviation_scores[lid] = {
-                "phase_drift": round(phase_drift, 4),
-                "link_loss": round(link_loss, 4),
-                "torque_exposure": round(torque_exposure, 6),
-                "score": round(score, 4),
-            }
+                deviation_scores[lid] = {
+                    "phase_drift": round(phase_drift, 4),
+                    "link_loss": round(link_loss, 4),
+                    "torque_exposure": round(torque_exposure, 6),
+                    "score": round(score, 4),
+                }
 
-            # Phase B: Local gravity response
-            # High deviation → weaken semantic gravity for this label
-            # gravity_factor = 1.0 - score (score 0→full gravity, score 1→no gravity)
-            gravity_factors[lid] = max(0.0, 1.0 - score)
+                gravity_factors[lid] = max(0.0, 1.0 - score)
+        else:
+            # Deviation OFF: all gravity_factors = 1.0
+            for lid in self.labels:
+                if lid not in self.macro_nodes:
+                    gravity_factors[lid] = 1.0
 
         # Persist gravity_factors for apply_torque_only()
         self._gravity_factors = gravity_factors
