@@ -397,6 +397,7 @@ class VirtualLayer:
     def apply_torque_only(self, state, window_count, substrate=None):
         """Apply torque without birth/share/cull. For sub-window feedback.
         Uses current _torque_multiplier (computed at last CULL).
+        v9.3: Computes D1 (phase_drift) at step granularity for gravity_factor.
         Returns number of torque events applied.
         """
         alive_links = len(state.alive_l)
@@ -413,6 +414,25 @@ class VirtualLayer:
             energy = budget * label["share"]
             if energy < 0.0001:
                 continue
+
+            # v9.3: Step-granularity D1 (phase_drift) for gravity_factor
+            thetas = [float(state.theta[n]) for n in label["nodes"]
+                      if n in state.alive_n]
+            if len(thetas) >= 2:
+                sin_s = sum(math.sin(t) for t in thetas)
+                cos_s = sum(math.cos(t) for t in thetas)
+                mean_theta = math.atan2(sin_s, cos_s)
+                phase_drift = abs(mean_theta - label["phase_sig"])
+                if phase_drift > math.pi:
+                    phase_drift = 2 * math.pi - phase_drift
+            else:
+                phase_drift = 0.0
+
+            # Use D1 alone for step-granularity gravity response
+            # (D2/D3 require window-level data, not available here)
+            drift_score = min(phase_drift / math.pi, 1.0)
+            gf = max(0.0, 1.0 - drift_score)
+
             age = window_count - label["born"]
             rigidity_factor = 1.0 / (1.0 + self.rigidity_beta * age)
             torque_mag = energy * rigidity_factor * self._torque_multiplier
@@ -427,7 +447,7 @@ class VirtualLayer:
                     node_torques[n] = (torque, energy, lid)
 
             if substrate and self.semantic_gravity_enabled:
-                grav_mag = torque_mag / max(1, len(label["nodes"]))
+                grav_mag = torque_mag / max(1, len(label["nodes"])) * gf
                 for n in label["nodes"]:
                     for nb in substrate.get(n, set()):
                         if nb not in state.alive_n:
