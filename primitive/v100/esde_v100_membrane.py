@@ -126,7 +126,7 @@ def activate_membrane(state, substrate, pairs, s_init=MEMBRANE_S_INIT):
         # Create active link
         key = state.key(a, b)
         if key not in state.alive_l:
-            state.alive_l[key] = True
+            state.alive_l.add(key)
             state.S[key] = s_init
             state.R[key] = 0.0
             created += 1
