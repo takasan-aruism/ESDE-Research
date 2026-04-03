@@ -508,7 +508,8 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
         maturation_alpha=0.10, rigidity_beta=0.10,
         local_amplitude=0.0,
         feedback_gamma=0.10, feedback_clamp_lo=0.8, feedback_clamp_hi=1.2,
-        feedback_interval=50, torque_order="random", deviation_enabled=True):
+        feedback_interval=50, torque_order="random", deviation_enabled=True,
+        ext_amplitude=0.0, ext_period=50):
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -523,6 +524,8 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
         tags.append(f"ord_{torque_order}")
     if not deviation_enabled:
         tags.append("nodev")
+    if ext_amplitude > 0:
+        tags.append(f"ext_A{ext_amplitude}_T{ext_period}")
     if not tags: tags.append("baseline")
     tag_str = "+".join(tags)
 
@@ -573,7 +576,8 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
           f"clamp={engine.virtual.feedback_clamp} "
           f"warmup={engine.virtual.warmup_windows} "
           f"interval={feedback_interval} "
-          f"order={torque_order} deviation={'ON' if deviation_enabled else 'OFF'}")
+          f"order={torque_order} deviation={'ON' if deviation_enabled else 'OFF'}"
+          f"{f' ext_wave=A{ext_amplitude}_T{ext_period}' if ext_amplitude > 0 else ''}")
 
     engine.run_injection()
     t_inj = time.time() - t_start
@@ -605,6 +609,13 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
     for w in range(n_windows):
         t0 = time.time()
 
+        # ── v8.3: External Wave (temporal bg_prob modulation) ──
+        if ext_amplitude > 0:
+            base_bg = BASE_PARAMS["background_injection_prob"]
+            modulated = base_bg * (1.0 + ext_amplitude * math.sin(
+                2 * math.pi * w / ext_period))
+            BASE_PARAMS["background_injection_prob"] = max(0.0, modulated)
+
         # ── v9.2: Sub-window torque injection ──
         if feedback_interval >= window_steps:
             # Default: single step_window, no sub-window torque
@@ -633,6 +644,10 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
 
         sec = time.time() - t0
         times.append(sec)
+
+        # Restore bg_prob after external wave modulation
+        if ext_amplitude > 0:
+            BASE_PARAMS["background_injection_prob"] = base_bg
 
         isum = engine.last_isum
         vl = engine.virtual_stats
@@ -826,6 +841,8 @@ def run(seed, n_windows, window_steps, output_dir, encap_params, N,
             "feedback_interval": feedback_interval,
             "torque_order": torque_order,
             "deviation_enabled": deviation_enabled,
+            "ext_amplitude": ext_amplitude,
+            "ext_period": ext_period,
             "representative_labels": sorted(rep_labels) if rep_labels else [],
         },
         "virtual_summary": engine.virtual.summary(),
@@ -883,6 +900,10 @@ def main():
                         help="Label processing order for sequential torque")
     parser.add_argument("--no-deviation", action="store_true",
                         help="Disable deviation detection (all gravity_factors=1.0)")
+    parser.add_argument("--ext-amp", type=float, default=0.0,
+                        help="External wave amplitude (0=off, 0.3=30%% bg_prob modulation)")
+    parser.add_argument("--ext-period", type=int, default=50,
+                        help="External wave period in windows")
     args = parser.parse_args()
 
     params = V82EncapsulationParams(
@@ -901,7 +922,9 @@ def main():
         feedback_clamp_hi=args.clamp_hi,
         feedback_interval=args.feedback_interval,
         torque_order=args.torque_order,
-        deviation_enabled=not args.no_deviation)
+        deviation_enabled=not args.no_deviation,
+        ext_amplitude=args.ext_amp,
+        ext_period=args.ext_period)
 
 
 if __name__ == "__main__":
