@@ -154,20 +154,38 @@ class DualVirtualLayer:
         self.macro_nodes = {}
 
     def _filter_islands(self, islands, lo, hi):
-        """Split islands by node range. Cross-boundary islands get split."""
+        """Filter islands by node range. Returns dict {id: obj} compatible
+        with VirtualLayer.step() which calls islands.items() and info.nodes."""
         if islands is None:
             return None
-        filtered = []
-        for isl in islands:
-            if hasattr(isl, 'nodes'):
-                # island_tracker island object
-                subset = frozenset(n for n in isl.nodes if lo <= n < hi)
-            else:
-                # frozenset or set
-                subset = frozenset(n for n in isl if lo <= n < hi)
-            if len(subset) >= 2:
-                filtered.append(subset)
-        return filtered
+        filtered = {}
+        if isinstance(islands, dict):
+            for iid, info in islands.items():
+                nodes = info.nodes if hasattr(info, 'nodes') else info
+                subset = frozenset(n for n in nodes if lo <= n < hi)
+                if len(subset) >= 2:
+                    # Create a minimal object with .nodes attribute
+                    class _Isl:
+                        pass
+                    obj = _Isl()
+                    obj.nodes = subset
+                    # Copy other attributes if present
+                    for attr in ('density_ratio', 'seen_count', 'centroid'):
+                        if hasattr(info, attr):
+                            setattr(obj, attr, getattr(info, attr))
+                    filtered[iid] = obj
+        else:
+            # List of frozensets (from find_islands_sets)
+            for i, isl in enumerate(islands):
+                nodes = isl.nodes if hasattr(isl, 'nodes') else isl
+                subset = frozenset(n for n in nodes if lo <= n < hi)
+                if len(subset) >= 2:
+                    class _Isl:
+                        pass
+                    obj = _Isl()
+                    obj.nodes = subset
+                    filtered[i] = obj
+        return filtered if filtered else None
 
     def step(self, state, window_count, islands=None, substrate=None):
         isl_a = self._filter_islands(islands, 0, self.n)
