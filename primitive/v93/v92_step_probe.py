@@ -37,7 +37,7 @@ from virtual_layer_v9 import VirtualLayer as VirtualLayerV9
 def run_step_probe(seed, feedback_interval, n_windows=60, detail_start=50,
                    local_amplitude=0.3, gamma=0.1, semantic_gravity=True,
                    torque_order="random", deviation_enabled=True,
-                   window_steps=None):
+                   window_steps=None, stress_enabled=True):
     """Run with step-level instrumentation within detail windows."""
 
     N = V82_N
@@ -45,7 +45,7 @@ def run_step_probe(seed, feedback_interval, n_windows=60, detail_start=50,
         window_steps = V82_WINDOW  # 50
 
     encap_params = V82EncapsulationParams(
-        stress_enabled=True, virtual_enabled=True)
+        stress_enabled=stress_enabled, virtual_enabled=True)
 
     engine = V82Engine(seed=seed, N=N, encap_params=encap_params)
 
@@ -212,18 +212,19 @@ def run_step_probe(seed, feedback_interval, n_windows=60, detail_start=50,
                     steps_since_torque += 1
 
             # End of detail window: run stress + observation + virtual.step
-            # Stress
-            current_links = len(engine.state.alive_l)
-            if engine.link_ema is None:
-                engine.link_ema = float(current_links)
-            tau = min(engine.window_count + 1, 20)
-            alpha_ema = 2.0 / (tau + 1.0)
-            engine.link_ema = (alpha_ema * current_links
-                               + (1 - alpha_ema) * engine.link_ema)
-            stress_intensity = current_links / max(1.0, engine.link_ema)
+            # Stress (skip if disabled)
+            if stress_enabled:
+                current_links = len(engine.state.alive_l)
+                if engine.link_ema is None:
+                    engine.link_ema = float(current_links)
+                tau = min(engine.window_count + 1, 20)
+                alpha_ema = 2.0 / (tau + 1.0)
+                engine.link_ema = (alpha_ema * current_links
+                                   + (1 - alpha_ema) * engine.link_ema)
+                stress_intensity = current_links / max(1.0, engine.link_ema)
 
-            from esde_v82_engine import apply_stress_decay
-            apply_stress_decay(engine.state, stress_intensity)
+                from esde_v82_engine import apply_stress_decay
+                apply_stress_decay(engine.state, stress_intensity)
 
             # Island detection + virtual.step
             from esde_v82_engine import find_islands_sets
@@ -279,16 +280,20 @@ def main():
                         help="Label processing order for sequential torque")
     parser.add_argument("--no-deviation", action="store_true",
                         help="Disable deviation detection (all gravity_factors=1.0)")
+    parser.add_argument("--no-stress", action="store_true",
+                        help="Disable stress equilibrium")
     parser.add_argument("--window-steps", type=int, default=50,
                         help="Steps per window (default=50)")
     args = parser.parse_args()
 
     grav_tag = "noG" if args.no_gravity else "G"
     dev_tag = "noD" if args.no_deviation else "D"
+    stress_tag = "noS" if args.no_stress else "S"
     print(f"\n  ESDE v9.3 Step-Level Probe")
     print(f"  seed={args.seed} interval={args.feedback_interval} "
           f"gamma={args.gamma} gravity={'OFF' if args.no_gravity else 'ON'} "
           f"order={args.torque_order} deviation={'OFF' if args.no_deviation else 'ON'} "
+          f"stress={'OFF' if args.no_stress else 'ON'} "
           f"steps/win={args.window_steps}")
     print(f"  windows={args.windows} detail_start={args.detail_start}\n")
 
@@ -301,10 +306,11 @@ def main():
         semantic_gravity=not args.no_gravity,
         torque_order=args.torque_order,
         deviation_enabled=not args.no_deviation,
-        window_steps=args.window_steps)
+        window_steps=args.window_steps,
+        stress_enabled=not args.no_stress)
 
     # Save
-    outdir = Path(f"diag_v93_stepprobe_s{args.window_steps}_int{args.feedback_interval}_{grav_tag}_{args.torque_order}_{dev_tag}")
+    outdir = Path(f"diag_v93_stepprobe_s{args.window_steps}_int{args.feedback_interval}_{grav_tag}_{args.torque_order}_{dev_tag}_{stress_tag}")
     outdir.mkdir(parents=True, exist_ok=True)
     outpath = outdir / f"step_log_seed{args.seed}.json"
     with open(outpath, "w") as f:
