@@ -1,0 +1,163 @@
+ESDE v9.4 — Label-to-Label Coupling Probe: Code Review Checklist
+================================================================
+Date: 2026-04-04
+Scope: v94_coupling_probe.py (新規, 402行)
+       virtual_layer_v9.py (既存, v9.3最新版, 変更なし)
+Author: Claude (Implementation)
+Directive: GPT「シード間より先にシード内ラベル間を検証すべき」
+Reviewer: [assign]
+
+================================================================
+CONTEXT
+================================================================
+
+v10.0aのMembrane実験で1-Stateのcross link問題が発覚。
+GPT方針転換: シード間接続より先に、単一シード内のlabel間
+カップリングを検証する。
+
+検証項目（GPTメモ§4より）:
+  4.1 あるlabelの行動が別labelの局所平衡にどう影響するか
+  4.2 相手labelが修繕・回避・再接続パターンを返すか
+  4.3 往復の安定反復が生まれるか
+  4.4 相手labelの違いに応じて応答が変わるか
+  4.5 過去の相互作用が次の行動に影響するか
+
+================================================================
+SECTION A: 計測方法
+================================================================
+
+------------------------------------------------------------
+A1. 逐次torqueの分解
+------------------------------------------------------------
+
+[ ] v9.3の逐次torque（age順）をlabel単位で分解。
+    1 label torque適用の前後でスナップショットを取る。
+
+    手法:
+    step()を_torque_multiplier=0で実行（birth/share/cull実行、torqueスキップ）
+    → その後、手動で1 labelずつtorqueを適用しながら計測
+
+    REVIEWER: multiplier=0でstep()を呼ぶと、
+    deviation_scoresのD3（torque_exposure）が0になる。
+    gravity_factorsの精度に影響する可能性。
+    ただしdeviation detectionはwindow粒度なので、
+    1 window分のずれは許容範囲。
+
+------------------------------------------------------------
+A2. snapshot_label_patches() [L46-68]
+------------------------------------------------------------
+
+[ ] 各labelのaliveノードのθからcircular mean + stdを計算。
+    n_alive >= 2 → atan2(sin_sum, cos_sum)。
+    n_alive == 1 → そのθをそのまま。
+    n_alive == 0 → 記録しない。
+
+------------------------------------------------------------
+A3. compute_impact() [L71-87]
+------------------------------------------------------------
+
+[ ] 前後のmean_theta差を円周距離で計算。
+    actor自身は除外。
+    [-π, π] に正規化。
+
+------------------------------------------------------------
+A4. apply_single_label_torque() [L94-127]
+------------------------------------------------------------
+
+[ ] VirtualLayerの逐次torqueループと同じ計算。
+    core torque + semantic gravity。
+    gravity_factorsはvl._gravity_factorsから取得。
+    window_countはvl._last_window_countから取得。
+
+    REVIEWER: vl._last_window_countはstep()後に
+    engine.window_countと一致するか確認。
+    → step()内ではwindow_countは引数で渡される。
+    手動でvl._last_window_count = engine.window_countを設定。
+
+------------------------------------------------------------
+A5. top-K tracking [L185-187]
+------------------------------------------------------------
+
+[ ] share上位K label（デフォルト10）のみ詳細計測。
+    全labelのtorqueは適用するが、スナップショットは
+    tracked labelのtorque時のみ取得。
+
+    REVIEWER: 計算量の制御。
+    全70 labelでスナップショットすると70×70=4900回のpatch計算。
+    top-10に絞ると10×70=700回。十分。
+
+================================================================
+SECTION B: 出力
+================================================================
+
+[ ] coupling_summary.json: window別の集計（interactions除外）
+[ ] coupling_full.json: 全interaction記録
+
+[ ] 各interactionの記録:
+    actor, actor_share, actor_age, actor_nodes, torque_mag,
+    n_impacted, top5_impacts, self_delta
+
+[ ] summary表示:
+    §4.1 impact reach（何labelに影響するか）
+    §4.3 recurring pairs（3+ windowで繰り返すペア）
+    §4.4 response variation（target依存性）
+
+================================================================
+SECTION C: 変更なしの確認
+================================================================
+
+[ ] virtual_layer_v9.py: 変更なし
+[ ] genesis_physics.py: 変更なし
+[ ] esde_v82_engine.py: 変更なし
+
+================================================================
+SECTION D: v9.3条件の踏襲
+================================================================
+
+[ ] Stress OFF (encap_params.stress_enabled=False)
+[ ] 500 step/window
+[ ] age順逐次torque
+[ ] deviation ON
+[ ] semantic gravity ON
+
+================================================================
+SECTION E: 既知の制限
+================================================================
+
+LIMIT 1: torque multiplier=0でstep()を呼ぶため、
+  D3（torque_exposure）がゼロになる。
+  gravity_factorsが通常と微妙に異なる可能性。
+
+LIMIT 2: apply_single_label_torque()はVLのsequential
+  ループの外で実行される。node_torques記録が
+  VLのlifecycle_logに入らない。
+
+LIMIT 3: §4.2（修繕反応）はtorque直後のスナップショット
+  だけでは見えない。修繕には数stepかかる。
+  次のlabelのtorque適用時に計測される間接的な記録のみ。
+
+LIMIT 4: §4.5（履歴依存性）はwindow間の比較で推定する。
+  coupling_full.jsonから同一ペアの影響量の時間変化を追う。
+
+================================================================
+SUMMARY
+================================================================
+
+Priority   Issue                                     Action
+---------  ----------------------------------------  -------------------
+MEDIUM     LIMIT 1 torque multiplier=0の影響          初回結果で確認
+INFO       LIMIT 2 lifecycle_logとの不整合             記録用、問題なし
+INFO       LIMIT 3 修繕反応は間接記録                   §4.2は後段で深掘り
+NONE       crash-blocker                              なし
+
+手順:
+  mkdir -p ~/esde/ESDE-Research/primitive/v94
+  cd ~/esde/ESDE-Research/primitive/v94
+  # v94_coupling_probe.py + virtual_layer_v9.py 配置
+
+  python v94_coupling_probe.py --seed 42
+
+  # 実行時間: maturation 20win ≈ 30min + detail 5win ≈ 8min ≈ 40min
+
+================================================================
+End of Checklist
