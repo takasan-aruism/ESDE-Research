@@ -1,10 +1,10 @@
 # ESDE Primitive Report
 
 *Phase: Primitive (v9.0–)*
-*Status: **中間目標1達成。** v9.3 逐次化+age順+longer window+Stress OFFで仮想層が物理層の平衡を肩代わり。External Wave A=0.5でも崩壊せず。*
+*Status: **中間目標1達成。** v9.4 Perception Field実装中。label間カップリングの前提としてlabelの「見える世界」を定義。v10.0a Membrane接続は保留（1-State cross link問題）。*
 *Team: Taka (Director/Philosopher) / Claude (Implementation) / Gemini (Architecture) / GPT (Audit)*
 *Started: March 30, 2026*
-*Last updated: April 3, 2026*
+*Last updated: April 4, 2026*
 *Prerequisites: Autonomy complete (see ESDE_Autonomy_Report.md)*
 
 ---
@@ -49,6 +49,8 @@
 | v9.3 | 04-02 | Deviation Detection → Sequential Torque | 偏り検知（31%改善）→スケール問題→contention gate→**逐次化**。NET -3.09→-0.82。バッチ処理が攪乱の主因。torque/gravity正常 |
 | v9.3+ | 04-02 | Age順 + Longer Window | age順でNET初の正転（+0.08）。500 step/winでNET -0.09（完全平衡）。2相サイクル消滅 |
 | v9.3+ | 04-03 | Stress OFF + External Wave耐性テスト | Stress OFFでNET +0.06（二重平衡干渉の解消）。5-seed比較でlinks同等、5n強化。Ext Wave A=0.5でも崩壊せず。**中間目標1達成** |
+| v10.0a | 04-03 | Membrane Coupling Sanity Check | 1-State N=10000で実装。cross link問題（膜なしでA-B間2800本）。膜は即死（θ差1.54 rad）。**保留** |
+| v9.4 | 04-04 | Coupling Probe + Perception Field | label間カップリング計測→ほぼゼロ（1-hopでは影響圏が重ならない）。方針転換: N-hop Perception（知覚圏）を先に定義。wrap-around torus |
 
 ---
 
@@ -437,6 +439,66 @@ External Wave は破壊ではなく選別圧として機能。
 
 ---
 
+## v10.0a — Membrane Coupling（保留）
+
+中間目標2（複数インスタンス接続）の第一歩として、
+2つの独立生態系を物理的に接続する Synaptic Membrane を実装。
+
+設計: 1-State N=10000。Seed A(0-4999) と Seed B(5000-9999)。
+20ペアの sparse membrane（S_init=0.05）で成熟後に接続。
+
+**結果：2つの構造問題が判明。**
+
+1. **Cross link 問題:** 膜なしの段階で A-B 間に 2800 本のリンクが存在。
+   1-State では Genesis の latent field が Seed 境界を越えてリンクを生成する。
+   「独立な2世界」が物理的に成立していなかった。
+
+2. **膜即死:** 初期 phase_diff = 1.54 rad（約88度）。S=0.05 の弱いリンクは
+   θ差による decay で 1 window 以内に全滅（0/20）。
+
+→ **v10.0a は保留。** シード間接続より先にシード内のlabel間相互作用を検証すべき
+（GPT方針転換メモ）。
+
+## v9.4 — Label間カップリング → Perception Field
+
+### Coupling Probe（失敗）
+
+逐次torqueのlabel単位分解で、各labelの torque が他 label のθにどう影響するかを計測。
+
+**結果:** 50 actor のうち 40 が影響ゼロ。意味のあるペアは grid 上で偶然隣接した1組のみ。
+
+**原因:** semantic gravity の到達範囲が 1-hop（上下左右4マス）しかない。
+5000ノードに70 label が散在。各labelの影響圏（5ノード + 近傍20ノード）は
+他 label と重ならない。**label は孤島。**
+
+### 方針転換: N-hop Gravity → N-hop Perception
+
+Taka/GPT 判断: N-hop で作用させる前に、まず label が「何を見ているか」を定義する。
+「周囲に作用する主体」の前に「世界を見ている主体」として定義する。
+
+### Perception Field の設計
+
+- **知覚範囲:** label の alive node 数 = hop数（5-node → 5-hop）
+- **世界幾何:** wrap-around torus（端バイアス排除）
+- **観測専用:** state.theta / S / R は一切変更しない
+
+計測項目:
+- 可視総ノード数、hop 別分布
+- 内訳: wild（無所属）/ other label core / self core
+- θ統計: variance、phase_sig との距離、near/far phase
+- リンク強度統計
+- **label 間の知覚圏重なり**（pairwise overlap）→ 境界候補の特定
+
+### 影響圏モデルの将来像（Taka提案、未実装）
+
+- label = キャラクタ（戦国大名）。frozenset が家臣、phase_sig が思想
+- 統率力 = n_nodes × mean_S_territory → gravity の hop 数を導出
+- 影響圏の重なり = 境界 = 取り合いの現場
+- A と B の境界から第三勢力 C が生まれる = **三項創発**
+- torque にコスト導入（label がθ場を張ることで share が微減する）→ 将来候補
+
+---
+
 ## 4 要素の現状（Primitive Phase）
 
 | 要素 | 状態 |
@@ -470,6 +532,10 @@ Autonomy の教訓 1-40 は ESDE_Autonomy_Report.md に記載。
 55. Stress は仮想層が未成熟な時代の安定装置。仮想層が成熟すれば役割は縮小可能
 56. 二重平衡は安定ではなく干渉を生みうる。θ 空間とリンク密度という 2 つの最適化基準が競合すると互いの成果を壊す
 57. 安全装置を外すテストは仮想層を十分に成熟させてから行う。逆順では崩壊する
+58. label の影響範囲が狭すぎると label 間カップリングは生じない。個が孤島であれば社会は生まれない
+59. 境界（影響圏の重なり）は破壊の場であると同時に創発の場。A 対 B の二項対立から C が生まれる三項創発
+60. 「作用させる」前に「見えているか」を確認する。知覚なき作用は検証不能
+61. 1-State で N を増やしても Genesis の latent field が境界を無視する。物理的分離は 1-State では保証されない
 
 ---
 
@@ -485,14 +551,15 @@ Autonomy の教訓 1-40 は ESDE_Autonomy_Report.md に記載。
 | 9.3 | Deviation Detection → Sequential Torque | **完了** | 偏り検知 31% 改善。バッチ処理が攪乱の主因と特定。逐次化で NET -3.09→-0.82 |
 | 9.3+ | Age順 + Longer Window | **完了** | age順で NET 初の正転（+0.08）。500 step/win で NET -0.09（完全平衡）|
 | 9.3+ | Stress OFF + External Wave 耐性 | **完了** | Stress OFF で NET +0.06。Ext Wave A=0.5 でも崩壊せず。**中間目標1達成** |
+| 9.4 | Label間カップリング + Perception Field | **進行中** | coupling probe: 影響ゼロ（1-hop孤島問題）。perception field: 知覚圏定義 |
+| 9.4+ | N-hop Gravity（影響圏拡張）| **次候補** | 知覚圏の結果を見て統率力→hop数導出。境界カップリング・三項創発 |
 
-### v10.x — 複数インスタンス（中間目標 2-3）
+### v10.x — 複数インスタンス（中間目標 2-3）— **保留**
 
 | Step | 内容 | 状態 | 中間目標との接続 |
 |---|---|---|---|
-| 10.0 | 複数 seed の同一/隣接空間配置 | **設計中** | 相互作用経路の確立 |
+| 10.0a | Membrane Coupling (1-State N=10000) | **保留** | cross link 問題 + 膜即死。label間カップリング確立後に再開 |
 | 10.1 | seed 間情報伝達の観測 | 未着手 | 意思の疎通の前段階 |
-| 10.2 | 戦略的アプローチの観測 | 未着手 | 社会性の萌芽 |
 
 ### v11.x 以降 — 認知・言語（中間目標 4-6）
 
@@ -530,12 +597,12 @@ Autonomy の教訓 1-40 は ESDE_Autonomy_Report.md に記載。
 ---
 
 *v9.0 で自己参照フィードバックループを導入。v9.1-v9.2 で torque の 2 相サイクルを発見。
-v9.3 で偏り検知（31% 改善）→ バッチ処理の同時性問題を特定 → 逐次化で NET -3.09 → -0.82。
-age 順で初の NET 正転（+0.08）。500 step/window で 2 相サイクル消滅（NET -0.09）。
-Stress OFF で NET +0.06（二重平衡干渉の解消）。5-seed 比較でリンク数同等、5n 強化。
-External Wave A=0.5 でも崩壊せず、3n/4n survival はむしろ改善（少数精鋭化）。
-torque 計算式を一切変えず、4 つの構造変更だけで中間目標 1 を達成。
-仮想層が物理層の平衡を肩代わりし、環境変動にも耐える母体が成立した。
-次は中間目標 2: 複数インスタンスの相互作用。
+v9.3 で偏り検知 → バッチ処理の同時性問題を特定 → 逐次化 + age 順 + longer window + Stress OFF で中間目標1達成。
+v10.0a の Membrane 接続は cross link 問題と膜即死で保留。
+GPT 方針転換: シード間接続の前にシード内 label 間カップリングを検証すべき。
+v9.4 coupling probe で label 間影響がほぼゼロと判明（1-hop 孤島問題）。
+方針: N-hop gravity の前にまず N-hop perception（知覚圏）を定義。
+labelを「作用する主体」の前に「世界を見ている主体」として定義する。
+将来: 統率力 → 影響圏 → 境界 → 三項創発（A 対 B から C が生まれる）。
 最終目標は「神の手を介さずに認知・意味・社会性が創発するモデル」。
 当面のゴールは「私たちと会話ができるシステム」。*
