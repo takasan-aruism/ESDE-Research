@@ -1,18 +1,21 @@
 #!/usr/bin/env python3
 """
-ESDE v9.4+ — Step-Level World Change Log
-==========================================
-Records what each tracked label "sees" at regular intervals within
-each window. Both spatial perception (torus BFS) and structural
-perception (alive link BFS) are captured.
+ESDE v9.4+ — Step-Level World Change Log v2
+=============================================
+Spatial perception: once per window (fixed landscape).
+Structural perception: every step (dynamic relationships).
 
-No new rules. Pure observation. State is never modified.
+Tracks GPT §4.1-4.4:
+  4.1 spatial-only persistence
+  4.2 structural emergence (spatial-only → structural)
+  4.3 structural disappearance (structural → gone)
+  4.4 spatial-structural gap
 
 USAGE:
   python v94_worldlog.py --seed 42
 """
 
-import sys, math, time, json, csv, argparse
+import sys, math, time, json, argparse
 import numpy as np
 from pathlib import Path
 from collections import defaultdict
@@ -52,146 +55,105 @@ def build_torus_substrate(N):
 
 
 # ================================================================
-# DUAL PERCEPTION (spatial + structural)
+# SPATIAL PERCEPTION (once per window)
 # ================================================================
-def compute_perception(state, label, lid, torus_sub, max_hops,
-                       node_to_label, link_adj=None):
-    """Compute both spatial and structural perception for one label.
-
-    Spatial: BFS on torus substrate (fixed grid, wrap-around)
-    Structural: BFS on alive links (dynamic, changes every step)
-
-    link_adj: pre-built adjacency dict. If None, built on-the-fly.
-    Returns dict with both perception fields + summary stats.
-    """
-    core_nodes = frozenset(n for n in label["nodes"] if n in state.alive_n)
-    n_alive = len(core_nodes)
-    if n_alive == 0:
-        return None
-
-    # ── Spatial perception (torus BFS) ──
-    spatial_visited = {}
-    for n in core_nodes:
-        spatial_visited[n] = 0
-    frontier = set(core_nodes)
+def compute_spatial(state, label, torus_sub, max_hops):
+    """BFS on torus. Returns set of visible nodes."""
+    core = frozenset(n for n in label["nodes"] if n in state.alive_n)
+    if not core:
+        return set(), core
+    visited = set(core)
+    frontier = set(core)
     for hop in range(1, max_hops + 1):
         nf = set()
         for n in frontier:
             for nb in torus_sub.get(n, []):
-                if nb not in spatial_visited and nb in state.alive_n:
-                    spatial_visited[nb] = hop
+                if nb not in visited and nb in state.alive_n:
+                    visited.add(nb)
                     nf.add(nb)
         frontier = nf
         if not frontier:
             break
-    spatial_set = set(spatial_visited.keys())
+    return visited, core
 
-    # ── Structural perception (alive link BFS) ──
-    if link_adj is None:
-        link_adj = defaultdict(set)
-        for lk in state.alive_l:
-            n1, n2 = lk
-            link_adj[n1].add(n2)
-            link_adj[n2].add(n1)
 
-    struct_visited = {}
-    for n in core_nodes:
-        struct_visited[n] = 0
-    frontier = set(core_nodes)
+# ================================================================
+# STRUCTURAL PERCEPTION (every step)
+# ================================================================
+def compute_structural(core, max_hops, link_adj, alive_n):
+    """BFS on alive links. Returns set of reachable nodes."""
+    if not core:
+        return set()
+    visited = set(core)
+    frontier = set(n for n in core if n in alive_n)
     for hop in range(1, max_hops + 1):
         nf = set()
         for n in frontier:
             for nb in link_adj.get(n, set()):
-                if nb not in struct_visited and nb in state.alive_n:
-                    struct_visited[nb] = hop
+                if nb not in visited and nb in alive_n:
+                    visited.add(nb)
                     nf.add(nb)
         frontier = nf
         if not frontier:
             break
-    struct_set = set(struct_visited.keys())
+    return visited
 
-    # ── Analyze both fields ──
-    phase_sig = label["phase_sig"]
 
-    def analyze_field(visible_set):
-        if not visible_set:
-            return {"total": 0}
+def build_link_adj(state):
+    """Build alive link adjacency dict."""
+    adj = defaultdict(set)
+    for lk in state.alive_l:
+        n1, n2 = lk
+        adj[n1].add(n2)
+        adj[n2].add(n1)
+    return adj
 
-        wild = 0
-        other_labels = set()
-        other_core_count = 0
-        for n in visible_set:
-            if n in core_nodes:
-                continue
-            owner = node_to_label.get(n)
-            if owner is not None and owner != lid:
-                other_labels.add(owner)
-                other_core_count += 1
-            else:
-                wild += 1
 
-        # θ stats
-        thetas = [float(state.theta[n]) for n in visible_set]
-        phase_diffs = []
-        for t in thetas:
-            d = abs(t - phase_sig)
-            if d > math.pi:
-                d = 2 * math.pi - d
-            phase_diffs.append(d)
+# ================================================================
+# FIELD ANALYSIS
+# ================================================================
+def analyze_structural(state, struct_set, core, phase_sig, node_to_label, lid):
+    """Quick stats for structural field."""
+    if not struct_set:
+        return {"total": 0, "n_seen": 0, "wild": 0,
+                "near_phase_ratio": 0.0, "n_links": 0, "mean_S": 0.0}
 
-        near_phase = sum(1 for d in phase_diffs if d < math.pi / 4)
+    wild = 0
+    other_labels = set()
+    for n in struct_set:
+        if n in core:
+            continue
+        owner = node_to_label.get(n)
+        if owner is not None and owner != lid:
+            other_labels.add(owner)
+        else:
+            wild += 1
 
-        # Circular variance
-        sin_s = sum(math.sin(t) for t in thetas)
-        cos_s = sum(math.cos(t) for t in thetas)
-        R_circ = math.sqrt(sin_s**2 + cos_s**2) / len(thetas)
-        theta_var = 1.0 - R_circ
+    # Phase
+    near = 0
+    for n in struct_set:
+        d = abs(float(state.theta[n]) - phase_sig)
+        if d > math.pi:
+            d = 2 * math.pi - d
+        if d < math.pi / 4:
+            near += 1
 
-        # Link stats within visible set
-        n_links = 0
-        s_sum = 0.0
-        r_plus = 0
-        for lk in state.alive_l:
-            if lk[0] in visible_set and lk[1] in visible_set:
-                n_links += 1
-                s_sum += state.S.get(lk, 0.0)
-                if state.R.get(lk, 0.0) > 0:
-                    r_plus += 1
-
-        return {
-            "total": len(visible_set),
-            "wild": wild,
-            "other_labels_seen": sorted(other_labels),
-            "n_seen": len(other_labels),
-            "other_core_count": other_core_count,
-            "mean_theta": round(math.atan2(sin_s, cos_s), 4),
-            "theta_var": round(theta_var, 4),
-            "mean_phase_diff": round(
-                sum(phase_diffs) / len(phase_diffs), 4),
-            "near_phase_ratio": round(
-                near_phase / len(visible_set), 4),
-            "n_links": n_links,
-            "mean_S": round(s_sum / max(1, n_links), 4),
-            "r_plus": r_plus,
-        }
-
-    spatial_stats = analyze_field(spatial_set)
-    struct_stats = analyze_field(struct_set)
-
-    # Overlap between spatial and structural
-    both = spatial_set & struct_set
-    spatial_only = spatial_set - struct_set
-    struct_only = struct_set - spatial_set
+    # Links within structural field
+    n_links = 0
+    s_sum = 0.0
+    for lk in state.alive_l:
+        if lk[0] in struct_set and lk[1] in struct_set:
+            n_links += 1
+            s_sum += state.S.get(lk, 0.0)
 
     return {
-        "n_core": n_alive,
-        "share": round(label["share"], 6),
-        "phase_sig": round(phase_sig, 4),
-        "spatial": spatial_stats,
-        "structural": struct_stats,
-        "overlap_spatial_structural": len(both),
-        "spatial_only": len(spatial_only),
-        "structural_only": len(struct_only),
+        "total": len(struct_set),
+        "n_seen": len(other_labels),
+        "other_labels": sorted(other_labels),
+        "wild": wild,
+        "near_phase_ratio": round(near / max(1, len(struct_set)), 4),
+        "n_links": n_links,
+        "mean_S": round(s_sum / max(1, n_links), 4),
     }
 
 
@@ -199,17 +161,16 @@ def compute_perception(state, label, lid, torus_sub, max_hops,
 # MAIN
 # ================================================================
 def run(seed=42, maturation_windows=20, tracking_windows=5,
-        window_steps=500, perception_interval=50,
-        case_labels=None, top_k=10):
+        window_steps=500, case_labels=None, top_k=10):
 
     if case_labels is None:
         case_labels = [87, 101, 112]
 
     print(f"\n{'='*65}")
-    print(f"  ESDE v9.4+ — Step-Level World Change Log")
+    print(f"  ESDE v9.4+ — Step-Level World Change Log v2")
     print(f"  seed={seed} mat={maturation_windows} track={tracking_windows}")
-    print(f"  steps/win={window_steps} perc_interval={perception_interval}")
-    print(f"  cases={case_labels} top_k={top_k}")
+    print(f"  steps/win={window_steps} top_k={top_k}")
+    print(f"  spatial=1/window  structural=every step")
     print(f"{'='*65}\n")
 
     t_start = time.time()
@@ -249,33 +210,44 @@ def run(seed=42, maturation_windows=20, tracking_windows=5,
             tracked.add(cl)
     print(f"  Tracking {len(tracked)} labels: {sorted(tracked)}")
 
-    # Build node_to_label
-    node_to_label = {}
-    for lid, lab in vl.labels.items():
-        if lid not in vl.macro_nodes:
-            for n in lab["nodes"]:
-                node_to_label[n] = lid
-
     # ── Tracking Phase ──
     print(f"\n  --- Tracking Phase ({tracking_windows} windows "
           f"× {window_steps} steps) ---\n")
 
-    world_log = defaultdict(list)  # {lid: [entries]}
-    steps_per_perception = perception_interval
-    perceptions_per_window = window_steps // steps_per_perception
+    step_log = defaultdict(list)
+    bg_prob = BASE_PARAMS["background_injection_prob"]
 
     for tw in range(tracking_windows):
         w = maturation_windows + tw
         t0 = time.time()
 
-        # Run physics step by step, take perception snapshots
-        bg_prob = BASE_PARAMS["background_injection_prob"]
-        p = engine.island_tracker.params
+        # ── Spatial perception: once at window start ──
+        node_to_label = {}
+        for lid, lab in vl.labels.items():
+            if lid not in vl.macro_nodes:
+                for n in lab["nodes"]:
+                    node_to_label[n] = lid
+
+        spatial_fields = {}
+        for lid in tracked:
+            if lid not in vl.labels:
+                continue
+            label = vl.labels[lid]
+            core_alive = sum(1 for n in label["nodes"]
+                             if n in engine.state.alive_n)
+            if core_alive == 0:
+                continue
+            sp_set, core = compute_spatial(
+                engine.state, label, torus_sub, core_alive)
+            spatial_fields[lid] = (sp_set, core, core_alive)
+
+        # ── Step-by-step physics + structural perception ──
+        prev_structural = {}
 
         for step in range(window_steps):
             global_step = tw * window_steps + step
 
-            # Physics step (same as engine.step_window inner loop)
+            # Physics step (canon-compliant)
             engine.realizer.step(engine.state)
             engine.physics.step_pre_chemistry(engine.state)
             engine.chem.step(engine.state)
@@ -292,14 +264,14 @@ def run(seed=42, maturation_windows=20, tracking_windows=5,
                     if a > 0:
                         engine._g_scores[k[0]] += a
                         engine._g_scores[k[1]] += a
+            gz = float(engine._g_scores.sum())
 
             engine.intruder.step(engine.state)
             engine.physics.step_decay_exclusion(engine.state)
 
-            # Background seeding (canon-compliant: BIAS + Z seeding)
+            # BG seeding (canon)
             al = list(engine.state.alive_n)
             na = len(al)
-            gz = float(engine._g_scores.sum())
             if na > 0:
                 aa = np.array(al)
                 if BIAS > 0 and gz > 0:
@@ -320,56 +292,55 @@ def run(seed=42, maturation_windows=20, tracking_windows=5,
                         if t in engine.state.alive_n:
                             engine.state.E[t] = min(
                                 1.0, engine.state.E[t] + 0.3)
-                            # Z seeding (canon)
                             if engine.state.Z[t] == 0 and \
                                engine.state.rng.random() < 0.5:
                                 engine.state.Z[t] = 1 if \
                                     engine.state.rng.random() < 0.5 else 2
 
-            # Torque (sub-window, if interval hit)
-            if step > 0 and step % steps_per_perception == 0:
-                vl.apply_torque_only(
-                    engine.state, engine.window_count,
-                    substrate=engine.substrate)
+            # ── Structural perception (every step) ──
+            link_adj = build_link_adj(engine.state)
 
-            # ── Perception snapshot ──
-            if step % steps_per_perception == 0:
-                # Update node_to_label (labels may have changed)
-                node_to_label = {}
-                for lid, lab in vl.labels.items():
-                    if lid not in vl.macro_nodes:
-                        for n in lab["nodes"]:
-                            node_to_label[n] = lid
+            for lid in list(spatial_fields.keys()):
+                if lid not in vl.labels:
+                    continue
+                sp_set, core, max_hops = spatial_fields[lid]
+                struct_set = compute_structural(
+                    core, max_hops, link_adj, engine.state.alive_n)
 
-                # Build link_adj once, share across all labels (#VWL-2)
-                _link_adj = defaultdict(set)
-                for lk in engine.state.alive_l:
-                    n1, n2 = lk
-                    _link_adj[n1].add(n2)
-                    _link_adj[n2].add(n1)
+                # §4.1-4.3: Spatial-structural transitions
+                sp_only = sp_set - struct_set
+                st_only = struct_set - sp_set
+                overlap = sp_set & struct_set
 
-                for lid in tracked:
-                    if lid not in vl.labels:
-                        continue
-                    label = vl.labels[lid]
-                    core_alive = sum(1 for n in label["nodes"]
-                                     if n in engine.state.alive_n)
-                    if core_alive == 0:
-                        continue
+                emerged = set()
+                disappeared = set()
+                if lid in prev_structural:
+                    prev_st = prev_structural[lid]
+                    emerged = struct_set - prev_st
+                    disappeared = prev_st - struct_set
 
-                    perc = compute_perception(
-                        engine.state, label, lid,
-                        torus_sub, core_alive, node_to_label,
-                        link_adj=_link_adj)
+                stats = analyze_structural(
+                    engine.state, struct_set, core,
+                    vl.labels[lid]["phase_sig"], node_to_label, lid)
 
-                    if perc is not None:
-                        perc["window"] = w
-                        perc["step"] = step
-                        perc["global_step"] = global_step
-                        perc["total_links"] = len(engine.state.alive_l)
-                        world_log[lid].append(perc)
+                step_log[lid].append({
+                    "w": w, "step": step,
+                    "sp_total": len(sp_set),
+                    "st_total": stats["total"],
+                    "overlap": len(overlap),
+                    "sp_only": len(sp_only),
+                    "st_only": len(st_only),
+                    "emerged": len(emerged),
+                    "disappeared": len(disappeared),
+                    "st_n_seen": stats["n_seen"],
+                    "st_near_phase": stats["near_phase_ratio"],
+                    "st_links": stats["n_links"],
+                    "st_mean_S": stats["mean_S"],
+                })
 
-        # End of window: run virtual layer step
+                prev_structural[lid] = struct_set
+
+        # ── End of window: virtual layer step ──
         isl_m = find_islands_sets(engine.state, 0.20)
 
         class _Isl:
@@ -386,87 +357,93 @@ def run(seed=42, maturation_windows=20, tracking_windows=5,
         engine.window_count += 1
 
         sec = time.time() - t0
-        n_entries = sum(len(world_log[lid]) for lid in tracked
-                        if lid in vl.labels)
-        print(f"  w={w:>3} links={len(engine.state.alive_l):>5} "
-              f"vLb={len(vl.labels):>3} entries={n_entries} {sec:.0f}s")
+        total_emerged = sum(e["emerged"] for lid in spatial_fields
+                            for e in step_log[lid] if e["w"] == w)
+        total_disappeared = sum(e["disappeared"] for lid in spatial_fields
+                                for e in step_log[lid] if e["w"] == w)
 
-    # ── Analysis ──
+        print(f"  w={w:>3} links={len(engine.state.alive_l):>5} "
+              f"vLb={len(vl.labels):>3} "
+              f"emerged={total_emerged} disappeared={total_disappeared} "
+              f"{sec:.0f}s")
+
+    # ════════════════════════════════════════════════════════
+    # ANALYSIS
+    # ════════════════════════════════════════════════════════
     print(f"\n{'='*65}")
-    print(f"  WORLD CHANGE ANALYSIS")
+    print(f"  SPATIAL-STRUCTURAL ANALYSIS")
     print(f"{'='*65}")
 
     for lid in sorted(tracked):
-        entries = world_log.get(lid, [])
-        if len(entries) < 2:
+        entries = step_log.get(lid, [])
+        if len(entries) < 10:
             continue
 
-        print(f"\n  --- Label {lid} ({len(entries)} snapshots) ---")
+        sp_totals = [e["sp_total"] for e in entries]
+        st_totals = [e["st_total"] for e in entries]
+        overlaps = [e["overlap"] for e in entries]
+        sp_onlys = [e["sp_only"] for e in entries]
+        st_onlys = [e["st_only"] for e in entries]
+        emerged = [e["emerged"] for e in entries]
+        disappeared = [e["disappeared"] for e in entries]
+        st_seen = [e["st_n_seen"] for e in entries]
+        gaps = [sp - st for sp, st in zip(sp_totals, st_totals)]
 
-        # Spatial vs structural comparison
-        sp_totals = [e["spatial"]["total"] for e in entries]
-        st_totals = [e["structural"]["total"] for e in entries]
-        sp_seen = [e["spatial"]["n_seen"] for e in entries]
-        st_seen = [e["structural"]["n_seen"] for e in entries]
-        sp_near = [e["spatial"]["near_phase_ratio"] for e in entries]
-        st_near = [e["structural"]["near_phase_ratio"] for e in entries]
+        print(f"\n  --- Label {lid} ({len(entries)} steps) ---")
+        print(f"    Spatial (fixed): {np.mean(sp_totals):.0f}")
+        print(f"    Structural: mean={np.mean(st_totals):.0f} "
+              f"std={np.std(st_totals):.0f} "
+              f"min={min(st_totals)} max={max(st_totals)}")
+        print(f"    §4.4 Gap: mean={np.mean(gaps):.0f} "
+              f"({np.mean(gaps)/np.mean(sp_totals)*100:.0f}% of spatial)")
+        print(f"    Overlap: mean={np.mean(overlaps):.0f}")
+        print(f"    sp_only: mean={np.mean(sp_onlys):.0f}")
+        print(f"    st_only: mean={np.mean(st_onlys):.0f}")
+        print(f"    §4.2 Emerged/step: mean={np.mean(emerged):.1f} "
+              f"max={max(emerged)}")
+        print(f"    §4.3 Disappeared/step: mean={np.mean(disappeared):.1f} "
+              f"max={max(disappeared)}")
+        print(f"    Structural n_seen: mean={np.mean(st_seen):.1f}")
 
-        print(f"    {'':>12} {'spatial':>10} {'structural':>12}")
-        print(f"    {'visible':>12} {np.mean(sp_totals):>9.0f} "
-              f"{np.mean(st_totals):>11.0f}")
-        print(f"    {'n_seen':>12} {np.mean(sp_seen):>9.1f} "
-              f"{np.mean(st_seen):>11.1f}")
-        print(f"    {'near_phase':>12} {np.mean(sp_near):>8.1%} "
-              f"{np.mean(st_near):>10.1%}")
-        print(f"    {'links':>12} {np.mean([e['spatial']['n_links'] for e in entries]):>9.0f} "
-              f"{np.mean([e['structural']['n_links'] for e in entries]):>11.0f}")
+        if len(st_totals) >= 2:
+            diffs = [abs(st_totals[i] - st_totals[i-1])
+                     for i in range(1, len(st_totals))]
+            print(f"    Step-to-step Δstructural: mean={np.mean(diffs):.1f} "
+                  f"max={max(diffs)}")
 
-        # Step-to-step θ change
-        sp_thetas = [e["spatial"]["mean_theta"] for e in entries]
-        diffs = []
-        for i in range(1, len(sp_thetas)):
-            d = sp_thetas[i] - sp_thetas[i-1]
-            while d > math.pi: d -= 2 * math.pi
-            while d < -math.pi: d += 2 * math.pi
-            diffs.append(abs(d))
-        if diffs:
-            print(f"    θ drift/interval: mean={np.mean(diffs):.4f} "
-                  f"max={max(diffs):.4f}")
-
-        # Spatial-structural overlap
-        overlaps = [e["overlap_spatial_structural"] for e in entries]
-        sp_only = [e["spatial_only"] for e in entries]
-        st_only = [e["structural_only"] for e in entries]
-        print(f"    spatial∩structural: {np.mean(overlaps):.0f}  "
-              f"spatial_only: {np.mean(sp_only):.0f}  "
-              f"structural_only: {np.mean(st_only):.0f}")
-
-    # Timeline for case labels
+    # ── Case Study Timelines ──
     print(f"\n{'='*65}")
-    print(f"  CASE STUDY STEP TIMELINES")
+    print(f"  CASE STUDY STEP TIMELINES (first 30 steps per window)")
     print(f"{'='*65}")
 
     for lid in case_labels:
-        entries = world_log.get(lid, [])
+        entries = step_log.get(lid, [])
         if not entries:
             print(f"\n  Label {lid}: NOT FOUND")
             continue
 
         print(f"\n  --- Label {lid} ---")
-        print(f"  {'step':>5} {'sp_vis':>6} {'st_vis':>6} {'sp_n':>4} "
-              f"{'st_n':>4} {'sp_near':>7} {'st_near':>7} "
-              f"{'sp_lnk':>6} {'st_lnk':>6} {'overlap':>7}")
-        print(f"  {'-'*63}")
+        print(f"  {'step':>5} {'sp':>4} {'st':>4} {'ovlp':>4} "
+              f"{'spO':>4} {'stO':>4} {'emrg':>4} {'disp':>4} "
+              f"{'seen':>4} {'near%':>6}")
+        print(f"  {'-'*50}")
 
-        for e in entries[:30]:  # limit output
-            sp = e["spatial"]
-            st = e["structural"]
-            print(f"  {e['step']:>5} {sp['total']:>6} {st['total']:>6} "
-                  f"{sp['n_seen']:>4} {st['n_seen']:>4} "
-                  f"{sp['near_phase_ratio']*100:>6.1f}% "
-                  f"{st['near_phase_ratio']*100:>6.1f}% "
-                  f"{sp['n_links']:>6} {st['n_links']:>6} "
-                  f"{e['overlap_spatial_structural']:>7}")
+        shown = 0
+        prev_w = None
+        for e in entries:
+            if e["w"] != prev_w:
+                prev_w = e["w"]
+                shown = 0
+                if prev_w > maturation_windows:
+                    print(f"  {'--- window ' + str(e['w']) + ' ---':^50}")
+            if shown < 30:
+                print(f"  {e['step']:>5} {e['sp_total']:>4} "
+                      f"{e['st_total']:>4} {e['overlap']:>4} "
+                      f"{e['sp_only']:>4} {e['st_only']:>4} "
+                      f"{e['emerged']:>4} {e['disappeared']:>4} "
+                      f"{e['st_n_seen']:>4} "
+                      f"{e['st_near_phase']*100:>5.1f}%")
+                shown += 1
 
     t_total = time.time() - t_start
     print(f"\n  Total time: {t_total/60:.1f} min")
@@ -475,28 +452,44 @@ def run(seed=42, maturation_windows=20, tracking_windows=5,
     outdir = Path(f"diag_v94_worldlog_seed{seed}")
     outdir.mkdir(exist_ok=True)
 
-    # Strip sets for JSON
-    save_log = {}
-    for lid, entries in world_log.items():
-        save_log[str(lid)] = entries
-    with open(outdir / "world_log.json", "w") as f:
-        json.dump(save_log, f, indent=2, default=str)
+    save_log = {str(lid): entries for lid, entries in step_log.items()}
+    with open(outdir / "step_log.json", "w") as f:
+        json.dump(save_log, f)
 
-    print(f"  Saved: {outdir}/world_log.json")
+    summary = {}
+    for lid in tracked:
+        entries = step_log.get(lid, [])
+        if not entries:
+            continue
+        summary[str(lid)] = {
+            "n_steps": len(entries),
+            "spatial_mean": round(np.mean([e["sp_total"] for e in entries]), 1),
+            "structural_mean": round(np.mean([e["st_total"] for e in entries]), 1),
+            "structural_std": round(np.std([e["st_total"] for e in entries]), 1),
+            "gap_mean": round(np.mean([e["sp_total"] - e["st_total"]
+                                        for e in entries]), 1),
+            "emerged_mean": round(np.mean([e["emerged"] for e in entries]), 2),
+            "disappeared_mean": round(np.mean([e["disappeared"] for e in entries]), 2),
+            "structural_n_seen_mean": round(
+                np.mean([e["st_n_seen"] for e in entries]), 2),
+        }
+    with open(outdir / "label_summary.json", "w") as f:
+        json.dump(summary, f, indent=2)
+
+    print(f"  Saved: {outdir}/step_log.json")
+    print(f"  Saved: {outdir}/label_summary.json")
     print(f"\n{'='*65}")
-    print(f"  END World Change Log")
+    print(f"  END World Change Log v2")
     print(f"{'='*65}\n")
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="ESDE v9.4+ Step-Level World Change Log")
+        description="ESDE v9.4+ Step-Level World Change Log v2")
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--maturation-windows", type=int, default=20)
     parser.add_argument("--tracking-windows", type=int, default=5)
     parser.add_argument("--window-steps", type=int, default=500)
-    parser.add_argument("--perception-interval", type=int, default=50,
-                        help="Steps between perception snapshots")
     parser.add_argument("--top-k", type=int, default=10)
     parser.add_argument("--case-labels", type=str, default="87,101,112")
     args = parser.parse_args()
@@ -506,6 +499,5 @@ if __name__ == "__main__":
         maturation_windows=args.maturation_windows,
         tracking_windows=args.tracking_windows,
         window_steps=args.window_steps,
-        perception_interval=args.perception_interval,
         case_labels=cases,
         top_k=args.top_k)
