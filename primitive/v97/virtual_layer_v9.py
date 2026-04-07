@@ -116,7 +116,10 @@ class VirtualLayer:
         # v9.3: Per-label deviation detection + local response
         self._prev_territory = {}     # {lid: territory_links} for window-level D2
         self._prev_label_links = {}   # {lid: local_link_sum} for step-level response
+        self._gravity_factors = {}    # {lid: 0.0-1.0} persisted from step() for apply_torque_only()
         self._deviation_log = []      # per-window deviation records
+        self.torque_order = "random"  # "random" / "share" / "age"
+        self.deviation_enabled = True  # v9.3: deviation detection ON/OFF
 
     def _phase_bin(self, theta):
         """Map theta to bin index [0, N_BINS)."""
@@ -397,64 +400,50 @@ class VirtualLayer:
     # ================================================================
     def apply_torque_only(self, state, window_count, substrate=None):
         """Apply torque without birth/share/cull. For sub-window feedback.
-        v9.3: Per-label local link change detection for gravity_factor.
-        Each label measures its OWN territory link change, not the global average.
+        v9.3+: Sequential application with deviation-based gravity_factors.
         Returns number of torque events applied.
         """
         alive_links = len(state.alive_l)
         if alive_links == 0 or not self.labels:
             return 0
 
-        # Build per-node degree map (O(links), once per call)
-        deg = {}
-        for lk in state.alive_l:
-            n1, n2 = lk
-            deg[n1] = deg.get(n1, 0) + 1
-            deg[n2] = deg.get(n2, 0) + 1
-
-        # Per-label local territory (sum of node degrees)
-        label_local_links = {}
-        for lid, label in self.labels.items():
-            if lid in self.macro_nodes:
-                continue
-            label_local_links[lid] = sum(deg.get(n, 0) for n in label["nodes"])
+        import random as _rnd
+        label_ids = [lid for lid in self.labels if lid not in self.macro_nodes]
+        if self.torque_order == "share":
+            label_ids.sort(key=lambda lid: self.labels[lid]["share"], reverse=True)
+        elif self.torque_order == "age":
+            label_ids.sort(key=lambda lid: self.labels[lid]["born"])
+        else:  # "random"
+            _seq_rng = _rnd.Random(window_count * 1000 + len(self.labels))
+            _seq_rng.shuffle(label_ids)
 
         budget = 1.0
-        node_torques = {}
         events = 0
 
-        for lid, label in self.labels.items():
-            if lid in self.macro_nodes:
-                continue
+        for lid in label_ids:
+            label = self.labels[lid]
             energy = budget * label["share"]
             if energy < 0.0001:
                 continue
-
-            # v9.3: Per-label gravity_factor from local link change
-            current_local = label_local_links.get(lid, 0)
-            prev_local = self._prev_label_links.get(lid, current_local)
-            if prev_local > 0:
-                local_loss = max(0, prev_local - current_local) / prev_local
-            else:
-                local_loss = 0.0
-            gf = max(0.0, 1.0 - local_loss)
 
             age = window_count - label["born"]
             rigidity_factor = 1.0 / (1.0 + self.rigidity_beta * age)
             # v9.7 cognitive feedback factor
             cog_factor = label.get("torque_factor", 1.0)
             torque_mag = energy * rigidity_factor * self._torque_multiplier * cog_factor
+
             for n in label["nodes"]:
                 if n not in state.alive_n:
                     continue
                 theta_n = float(state.theta[n])
                 torque = torque_mag * math.sin(
                     label["phase_sig"] - theta_n)
-                existing = node_torques.get(n)
-                if existing is None or energy > existing[1]:
-                    node_torques[n] = (torque, energy, lid)
+                state.theta[n] += torque
+                events += 1
 
             if substrate and self.semantic_gravity_enabled:
+                # Use persisted gravity_factors from last step()
+                gf = self._gravity_factors.get(lid, 1.0)
                 grav_mag = torque_mag / max(1, len(label["nodes"])) * gf
                 for n in label["nodes"]:
                     for nb in substrate.get(n, set()):
@@ -465,21 +454,16 @@ class VirtualLayer:
                         theta_nb = float(state.theta[nb])
                         grav_torque = grav_mag * math.sin(
                             label["phase_sig"] - theta_nb)
-                        existing = node_torques.get(nb)
-                        if existing is None or energy > existing[1]:
-                            node_torques[nb] = (grav_torque, energy, lid)
-
-        # Update per-label link snapshot for next call
-        self._prev_label_links = label_local_links
+                        state.theta[nb] += grav_torque
+                        events += 1
 
         # MacroNode torque
         for mn_id, mn in self.macro_nodes.items():
-            self._macro_node_torque(mn, state, node_torques)
-
-        # Apply
-        for n, (torque, _, _) in node_torques.items():
-            state.theta[n] += torque
-            events += 1
+            node_torques_mn = {}
+            self._macro_node_torque(mn, state, node_torques_mn)
+            for n, (torque, _, _) in node_torques_mn.items():
+                state.theta[n] += torque
+                events += 1
 
         return events
 
@@ -682,88 +666,103 @@ class VirtualLayer:
         deviation_scores = {}
         gravity_factors = {}  # {lid: 0.0-1.0} for semantic gravity
 
-        for lid, label in self.labels.items():
-            if lid in self.macro_nodes:
-                continue
+        if self.deviation_enabled:
+            for lid, label in self.labels.items():
+                if lid in self.macro_nodes:
+                    continue
 
-            # D1: Phase drift — |current θ mean - stored phase_sig|
-            thetas = [float(state.theta[n]) for n in label["nodes"]
-                      if n in state.alive_n]
-            if len(thetas) >= 2:
-                sin_s = sum(math.sin(t) for t in thetas)
-                cos_s = sum(math.cos(t) for t in thetas)
-                mean_theta = math.atan2(sin_s, cos_s)
-                phase_drift = abs(mean_theta - label["phase_sig"])
-                if phase_drift > math.pi:
-                    phase_drift = 2 * math.pi - phase_drift
-            else:
-                phase_drift = 0.0
+                # D1: Phase drift — |current θ mean - stored phase_sig|
+                thetas = [float(state.theta[n]) for n in label["nodes"]
+                          if n in state.alive_n]
+                if len(thetas) >= 2:
+                    sin_s = sum(math.sin(t) for t in thetas)
+                    cos_s = sum(math.cos(t) for t in thetas)
+                    mean_theta = math.atan2(sin_s, cos_s)
+                    phase_drift = abs(mean_theta - label["phase_sig"])
+                    if phase_drift > math.pi:
+                        phase_drift = 2 * math.pi - phase_drift
+                else:
+                    phase_drift = 0.0
 
-            # D2: Link loss — territory_links drop from last window
-            current_terr = label_link_count.get(lid, 0)
-            prev_terr = self._prev_territory.get(lid, current_terr)
-            link_loss = max(0, prev_terr - current_terr) / max(1, prev_terr)
+                # D2: Link loss — territory_links drop from last window
+                current_terr = label_link_count.get(lid, 0)
+                prev_terr = self._prev_territory.get(lid, current_terr)
+                link_loss = max(0, prev_terr - current_terr) / max(1, prev_terr)
 
-            # D3: Torque exposure — how much torque was applied last window
-            # (from label_torque_applied, available after torque step;
-            #  use previous window's value stored in label)
-            torque_exposure = label.get("_last_torque_applied", 0.0)
+                # D3: Torque exposure — how much torque was applied last window
+                torque_exposure = label.get("_last_torque_applied", 0.0)
 
-            # Combined deviation score (0-1 each, weighted sum)
-            score = (0.5 * min(phase_drift / math.pi, 1.0)
-                     + 0.3 * link_loss
-                     + 0.2 * min(torque_exposure * 100, 1.0))
+                # Combined deviation score (0-1 each, weighted sum)
+                score = (0.5 * min(phase_drift / math.pi, 1.0)
+                         + 0.3 * link_loss
+                         + 0.2 * min(torque_exposure * 100, 1.0))
 
-            deviation_scores[lid] = {
-                "phase_drift": round(phase_drift, 4),
-                "link_loss": round(link_loss, 4),
-                "torque_exposure": round(torque_exposure, 6),
-                "score": round(score, 4),
-            }
+                deviation_scores[lid] = {
+                    "phase_drift": round(phase_drift, 4),
+                    "link_loss": round(link_loss, 4),
+                    "torque_exposure": round(torque_exposure, 6),
+                    "score": round(score, 4),
+                }
 
-            # Phase B: Local gravity response
-            # High deviation → weaken semantic gravity for this label
-            # gravity_factor = 1.0 - score (score 0→full gravity, score 1→no gravity)
-            gravity_factors[lid] = max(0.0, 1.0 - score)
+                gravity_factors[lid] = max(0.0, 1.0 - score)
+        else:
+            # Deviation OFF: all gravity_factors = 1.0
+            for lid in self.labels:
+                if lid not in self.macro_nodes:
+                    gravity_factors[lid] = 1.0
+
+        # Persist gravity_factors for apply_torque_only()
+        self._gravity_factors = gravity_factors
 
         # Update prev_territory for next window
         self._prev_territory = {lid: label_link_count.get(lid, 0)
                                 for lid in self.labels
                                 if lid not in self.macro_nodes}
 
-        # ── 4b. TORQUE ──
-        node_torques = {}
+        # ── 4b. TORQUE (v9.3+: sequential application) ──
+        # Each label computes torque on CURRENT theta, applies IMMEDIATELY.
+        # Next label sees the updated theta. No batch buffering.
+        import random as _rnd
+        label_ids = [lid for lid in self.labels if lid not in self.macro_nodes]
+        if self.torque_order == "share":
+            label_ids.sort(key=lambda lid: self.labels[lid]["share"], reverse=True)
+        elif self.torque_order == "age":
+            label_ids.sort(key=lambda lid: self.labels[lid]["born"])
+        else:  # "random"
+            _seq_rng = _rnd.Random(window_count)
+            _seq_rng.shuffle(label_ids)
+
+        node_torques = {}  # record of last torque applied (for logging)
         label_torque_applied = defaultdict(float)
 
-        # Regular labels
-        for lid, label in self.labels.items():
-            if lid in self.macro_nodes:
-                continue
+        for lid in label_ids:
+            label = self.labels[lid]
             energy = budget * label["share"]
             if energy < 0.0001:
                 continue
 
-            # Phase B: Rigidity (v4.9 h_res → label version)
-            # Older labels exert weaker torque. They "harden" and
-            # stop pushing the world around them.
             age = window_count - label["born"]
             rigidity_factor = 1.0 / (1.0 + self.rigidity_beta * age)
             # v9.7 cognitive feedback factor
             cog_factor = label.get("torque_factor", 1.0)
             torque_mag = energy * rigidity_factor * self._torque_multiplier * cog_factor
+
+            # Core torque: compute and apply IMMEDIATELY
             for n in label["nodes"]:
                 if n not in state.alive_n:
                     continue
                 theta_n = float(state.theta[n])
                 torque = torque_mag * math.sin(
                     label["phase_sig"] - theta_n)
-                existing = node_torques.get(n)
-                if existing is None or energy > existing[1]:
-                    node_torques[n] = (torque, energy, lid)
-                    label_torque_applied[lid] += abs(torque)
+                state.theta[n] += torque
+                node_torques[n] = (torque, energy, lid)
+                label_torque_applied[lid] += abs(torque)
+                stats["torque_events"] += 1
+                stats["torque_total"] += abs(torque)
 
+            # Semantic gravity: compute and apply IMMEDIATELY
             if substrate and self.semantic_gravity_enabled:
-                gf = gravity_factors.get(lid, 1.0)  # v9.3: deviation response
+                gf = gravity_factors.get(lid, 1.0)
                 grav_mag = torque_mag / max(1, len(label["nodes"])) * gf
                 for n in label["nodes"]:
                     for nb in substrate.get(n, set()):
@@ -774,21 +773,16 @@ class VirtualLayer:
                         theta_nb = float(state.theta[nb])
                         grav_torque = grav_mag * math.sin(
                             label["phase_sig"] - theta_nb)
-                        existing = node_torques.get(nb)
-                        if existing is None or energy > existing[1]:
-                            node_torques[nb] = (grav_torque, energy, lid)
-                            label_torque_applied[lid] += abs(grav_torque)
+                        state.theta[nb] += grav_torque
+                        node_torques[nb] = (grav_torque, energy, lid)
+                        label_torque_applied[lid] += abs(grav_torque)
+                        stats["torque_events"] += 1
+                        stats["torque_total"] += abs(grav_torque)
 
-        # MacroNode torque (Level 2: formula-based)
+        # MacroNode torque (Level 2: formula-based, still batch)
         for mn_id, mn in self.macro_nodes.items():
             self._macro_node_torque(mn, state, node_torques)
-            label_torque_applied[mn_id] = mn.share  # simplified
-
-        # Apply torque
-        for n, (torque, _, _) in node_torques.items():
-            state.theta[n] += torque
-            stats["torque_events"] += 1
-            stats["torque_total"] += abs(torque)
+            label_torque_applied[mn_id] = mn.share
 
         # ── v9.3: Store torque_applied per label for next window's D3 ──
         for lid, label in self.labels.items():
