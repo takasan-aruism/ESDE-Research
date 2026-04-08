@@ -435,9 +435,11 @@ def run(seed=42, maturation_windows=20, tracking_windows=10,
     # maturation 中も label の生死は起きる。birth/detach を呼ぶ。
     # ただし disposition 計算と per_window 出力はしない。
     for w in range(maturation_windows):
-        prev_lids = set(engine.virtual.labels.keys()) - engine.virtual.macro_nodes
+        macro_set = set(engine.virtual.macro_nodes)
+        prev_lids = set(engine.virtual.labels.keys()) - macro_set
         engine.step_window(steps=window_steps)
-        curr_lids = set(engine.virtual.labels.keys()) - engine.virtual.macro_nodes
+        macro_set = set(engine.virtual.macro_nodes)
+        curr_lids = set(engine.virtual.labels.keys()) - macro_set
 
         # Detach culled
         for lid in (prev_lids - curr_lids):
@@ -778,7 +780,8 @@ def run(seed=42, maturation_windows=20, tracking_windows=10,
         })
 
         # VL step (label の生死がここで起きる)
-        prev_lids = set(vl.labels.keys()) - vl.macro_nodes
+        macro_set = set(vl.macro_nodes)
+        prev_lids = set(vl.labels.keys()) - macro_set
         isl_m = find_islands_sets(engine.state, 0.20)
         class _Isl:
             pass
@@ -791,7 +794,8 @@ def run(seed=42, maturation_windows=20, tracking_windows=10,
                       islands=islands_dict, substrate=engine.substrate)
         engine.virtual_stats = vs
         engine.window_count += 1
-        curr_lids = set(vl.labels.keys()) - vl.macro_nodes
+        macro_set = set(vl.macro_nodes)
+        curr_lids = set(vl.labels.keys()) - macro_set
 
         # Birth new labels → 新 cid
         ghost_births_this_window = 0
