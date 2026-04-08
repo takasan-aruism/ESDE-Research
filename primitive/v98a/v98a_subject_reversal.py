@@ -124,8 +124,10 @@ class SubjectLayer:
         self._next_cid = 0
 
         # cid <-> lid マッピング (active のみ)
-        self.cid_of_lid = {}      # lid (frozenset) -> cid (int)
-        self.current_lid = {}     # cid -> lid or None
+        # NOTE: lid は vl.labels の int ID。frozenset ではない。
+        # frozenset は label["nodes"] の中身であり、それは存在層内部の話。
+        self.cid_of_lid = {}      # lid (int) -> cid (int)
+        self.current_lid = {}     # cid -> lid (int) or None
 
         # ライフサイクル記録
         self.born_at = {}         # cid -> window
@@ -804,7 +806,7 @@ def run(seed=42, maturation_windows=20, tracking_windows=10,
             new_cid = cog.birth(lid, lab["phase_sig"], w)
             if lid not in tracked_lids:
                 tracked_lids.add(lid)
-                all_births_after_mat.append({"lid_repr": str(sorted(lid)[:5]),
+                all_births_after_mat.append({"lid": lid,
                                              "cid": new_cid, "w": w})
                 label_meta[lid] = {
                     "birth_w": w,
@@ -825,7 +827,7 @@ def run(seed=42, maturation_windows=20, tracking_windows=10,
             if lid in label_meta:
                 label_meta[lid]["death_w"] = w
                 label_meta[lid]["became_ghost_w"] = w
-                all_deaths.append({"lid_repr": str(sorted(lid)[:5]),
+                all_deaths.append({"lid": lid,
                                    "cid": cid, "w": w})
             if cid is not None and cid in subject_meta:
                 subject_meta[cid]["host_lost_window"] = w
