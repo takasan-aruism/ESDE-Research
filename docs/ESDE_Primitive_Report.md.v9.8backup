@@ -613,192 +613,6 @@ L87 の social network 内部化。
 
 ---
 
-## v9.8 trilogy — Subject Reversal + Introspection + Information Pickup
-
-v9.5 で確立した 3 層構造の上に、label 中心から **cid (cognitive_id) 中心** へ主体を反転させる。
-3 段階 (a/b/c) で段階的に追加。全段で物理層不変を維持。
-
-### v9.8a — Subject Reversal
-
-**目的:** 認知層の主体を label_id (lid) から cognitive_id (cid) に反転。cid は単調増加 int で再利用しない。
-
-**設計:**
-- `SubjectLayer` クラスを新設（旧 CognitiveLayer の置き換え）
-- Lifecycle: birth(lid) → cid 発番 / detach(lid) → ghost 化 / reap_ghosts() → TTL 超過で完全削除
-- ghost 状態: perception 更新停止 (inert)、ただし他 cid の familiarity dict には残る（= 死んだ人を覚えている）
-- GHOST_TTL = 10 (provisional engineering value、理論的主張ではない)
-- **核心:** label が死んでも cid は即座に死なない。label 死亡 ≠ cid 死亡
-
-**結果:** 48-seed short + 5-seed long で実行。per_window CSV は v9.5 と bit identical を確認（物理層不変）。
-
-### v9.8b — Minimal Introspection
-
-**目的:** cid に「自分の変化に気づく」機能を追加。disposition 4 軸の window 間 delta で gain/loss タグを生成。
-
-**設計:**
-- disposition 4 軸 (Stage 1、固定閾値):
-  - social = n_partners / max_all_partners（[0,1] 正規化比率）
-  - stability = 1/(1 + std/mean of structural set sizes)（[0,1]）
-  - spread = Shannon entropy of attention map / log(n)（[0,1] 正規化）
-  - familiarity = mean(familiarity values)（[0,∞) **非正規化**）
-- 閾値: SOCIAL=0.1, STABILITY=0.1, SPREAD=0.1, FAMILIARITY=2.0
-- 条件: delta > threshold → gain_xxx / delta < -threshold → loss_xxx
-- **Gemini freeze ruling:** 観察専用。torque/action に一切反映しない。ghost は is_hosted ガードでスキップ
-
-### v9.8c — Information Pickup
-
-**目的:** 死亡 label の「情報プール」から、hosted cid が排他的競争で拾得。
-
-**設計:**
-- 死亡 label → death pool に deposit（所属 cid 群の情報）
-- hosted cid が phase 距離で競争、最近者が勝つ
-- **効果は TTL 延長のみ** (cid_ttl_bonus += 1)。物理層不変。GPT 監査条件遵守
-- per_subject CSV: ttl_bonus, n_pickups_won/lost, effective_ttl 列追加
-
-**結果:** 48-seed short + 5-seed long で per_window CSV bit identical 維持。
-
----
-
-## v9.9 — 内的基準軸の骨格 (exploration build)
-
-**目的:** v9.8b の内省タグを使い、cid 自身が「自分にとっての通常」を持つ構造を作る。window 基準、固定閾値のまま。
-
-### 設計
-
-cid に以下の状態を追加（SubjectLayer 内、engine.state に触れない）:
-- `recent_tags`: deque(maxlen=5)、frozenset(tags) を append
-- `recent_dispositions`: deque(maxlen=5)、4 軸 dict を append
-- `personal_range`: 4 軸 × {min,max,mean,std}
-- `drift`: 4 軸 × {positive_count, negative_count, neutral_count}
-
-generate_introspection_tags() 末尾に hook を挿入:
-- **Rule 1** (n<3): 全派生量 = "unformed"
-- **Rule 2** (lowest_std_axis): std が最小の軸、EPS=1e-9、同率なら "tie"
-- **Rule 3** (dominant +/- drift): positive/negative count 最大の軸、0 なら "none"、同率なら "tie"
-- drift は毎回 recent_tags からゼロ再構築（**累積禁止**）
-
-per_subject CSV に v99_ prefix 33 列追加。ghost は関数先頭で早期 return（freeze）。
-
-### 本番結果
-
-- 48 seeds short + 5 seeds long で per_window CSV **bit identical** (v98c と完全一致)
-- per_subject の v98c 既存列も mismatches=0
-- v99_ 列 33 個、全 seed 出力確認
-
-### 3 所見 (short 48 seeds 集約)
-
-**所見 1: familiarity negative drift 82.7% 支配**
-
-dominant_negative_drift_axis (formed のみ):
-- familiarity 82.7% (953/1152)
-- none 9.5%, tie 5.2%, social 1.6%, stability 0.8%, spread 0.2%
-
-**所見 2: spread 沈黙 (lowest_std_axis = spread が 67.6%)**
-
-formed cid の 67.6% で spread が「最も変化しない軸」。familiarity は 0%（最小 std にならない）。
-
-**所見 3: effective_ttl ≥12 → 100% formed**
-
-seed 0 で effective_ttl 12 以上の cid は全て formed。ただし後続の lifetime 統制で境界効果と判明。
-
-### Lifetime 統制分析
-
-v9.8c+ の lifetime_controlled.py と同じ bin 定義 (L01-L06、introspection history 長) で統制:
-
-- **所見 1 (familiarity 支配)**: L02-L05 で 79-96% 維持。**L06 (36+ win) で 54.8% に低下**、"none" が 34.2% に急増。entropy: L02=0.301 → L06=1.471。残差あり
-- **所見 2 (spread 沈黙)**: L02=54%, L06=74%。**lifetime でほぼ説明されない、全 bin で spread 最頻**
-- **所見 3 (ttl 12+ → formed)**: LONG で見ると L02 は ttl 12+ でも 46%。**境界効果、棄却**
-
-### 4 軸閾値監査 (Stage 1)
-
-4 軸の |delta| 分布と閾値の対応:
-
-| 軸 | 閾値 | |delta| p50 | |delta| p90 | 閾値位置 | tag 発生率 | 判定 |
-|---|---:|---:|---:|---|---:|---|
-| social | 0.1 | 0.036 | 0.111 | p85-p90 | 12.4% | OK |
-| stability | 0.1 | 0.032 | 0.079 | p96 | 3.9% | **粗すぎ** |
-| spread | 0.1 | 0.023 | 0.067 | p97 | 3.2% | **粗すぎ** |
-| familiarity | 2.0 | 2.631 | 12.33 | p40 | 59.9% | **細かすぎ** |
-
-**結論:** spread 沈黙 = 閾値アーティファクト（INTROSPECTION_THRESHOLD_SPREAD=0.1 が実変動幅より大きい）。familiarity 支配 = 閾値 2.0 が分布の中央以下で tag が乱発。4 軸の閾値バランスが破綻。
-
-> Taka の判断: 「Stage 2 (固定閾値の数値再調整) を飛ばして Stage 3 (動的閾値) に直行する」
-
----
-
-## v9.10 — Pulse Model & Subjective Surprise (exploration build)
-
-**目的:** v9.9 の window 基準 + 固定閾値 → **Pulse 基準 + MAD-DT (主観的驚き動的閾値)** に観測方式を変更。v99_ 列は一切改変せず v10_ 列を新設併存。
-
-### 設計 (全て確定値、変更禁止)
-
-**Pulse 式:** `is_pulse = (t % 50) == (cid % 50)`。各 cid は自分の ID に応じて 50 step ごとに観測。決定論的（乱数禁止）。
-
-**動的閾値 MAD-DT:**
-```
-theta = mean(|delta_history|)         # 日常的な揺れ幅
-R = delta_current / (theta + epsilon) # 主観的驚き指数
-```
-
-**タグ判定:**
-- R > +1.0 → gain_xxx (Normal)、R < -1.0 → loss_xxx (Normal)
-- R が過去 K=20 パルスの R_max 更新 → major_gain_xxx (Major)
-- Normal と Major は排他でなく併存しうる
-
-**Cold Start:** Pulse 1-3 回目は unformed（タグ生成なし、pulse_tags に push しない）。4 回目以降 R 計算開始。
-
-**Ghost:** pulse 判定スキップ、履歴保持、re-host 時 reset 禁止、reap 時破棄。
-
-### 実装
-
-- `primitive/v910/v910_pulse_model.py` (2,073 行): v99 ベースに v10 層を ADD ONLY
-- SubjectLayer に v10 dicts 13 個追加、on_pulse() メソッド新設
-- per-step ループ内に pulse 発火統合
-- per_subject CSV に v10_ 20 列追加、pulse/pulse_log_seed*.csv 新規出力
-- v99_ 33 列は完全保持（1 バイトも触らない）
-
-### 本番結果
-
-- 5 seeds long + 48 seeds short で per_window CSV **bit identical** (v99 と全 53 seed 一致)
-- per_subject v99_ 列 mismatches = 0
-- v10_ 列 20 個、全 seed 出力確認
-- pulse 発火数: 理論値 (tracking_steps / 50) と完全一致
-
-### L06 長命群の核心的発見
-
-v9.9 (fixed threshold、per-window):
-- L06 dominant negative: familiarity 54.8%, none 34.2%, entropy 1.471
-
-v9.10 (MAD-DT、per-pulse、L06 active 33,671 pulses):
-
-| 軸 | Normal gain+loss | 比率 |
-|---|---:|---:|
-| social | 14,313 | **28.2%** |
-| spread | 13,668 | **27.0%** |
-| familiarity | 13,739 | **27.1%** |
-| stability | 8,964 | **17.7%** |
-
-**familiarity 支配は消えた。** v9.9 の 54.8% → v9.10 の 27.1%。4 軸均等状態 (25% = 理想的均等) に接近。spread 沈黙も消えた (27.0%)。**v9.9 の所見は fixed threshold のアーティファクト**であることが実測で確定。
-
-唯一の残差: stability (17.7%) が他 3 軸より低い。
-
-### Stability 残差の切り分け (Stage A)
-
-stability の計算式: `1/(1 + std/mean of window_st_sizes)`
-
-| 所見 | 数値 | 解釈 |
-|---|---|---|
-| |R|≤1 率 | stability 75.0% (他軸 61-68%) | R が ±1 に収まりやすい→Normal 発火しにくい |
-| |delta| p50 | stability 0.0145 (spread 0.0067 より大) | delta 自体は小さくないが theta も大きい |
-| 全 bin 沈黙 | L01=16.7% → L06=26.6% | L06 特有でなく全域で一貫して最下位 |
-
-**観測器の癖の候補あり:**
-1. `window_st_sizes` は window 先頭でリセット → ノコギリ波特性 (pulse 位置依存)
-2. `1/(1+x)` 圧縮 → std 安定期に 1.0 張り付き → delta 微小化
-3. ESDE 性質の可能性は否定できない (Stage B/C 未実施)
-
----
-
 ## 4 要素の現状（Primitive Phase）
 
 | 要素 | 状態 |
@@ -841,11 +655,6 @@ Autonomy の教訓 1-40 は ESDE_Autonomy_Report.md に記載。
 63. 物理層 = 波（常に動く）、存在層 = 粒子（固定）、認知層 = 過程（波と粒子の間に生まれるパターン）
 64. 同じ魂（frozenset）から、経験の違いで異なるキャラクターが立ち上がる
 65. 認知層の最初の仕事は「世界に作用すること」ではなく「世界を知ること」。物理や原子のような波形型の動きでは認知にならない。偏りを追いかけることで得られるものがある
-66. label の死亡とキャラクター (cid) の死亡は別の事象。cid は ghost として残り、他 cid の記憶にも残る。「種子と実」の分離
-67. 固定閾値は観測器のバイアスを作る。spread=0.1 は実変動幅 (p90=0.067) より大きく沈黙を生み、familiarity=2.0 は p40 で乱発を生む。**パラメータの数値議論ではなく、観測方式の転換で解決する** (教訓 42 の実践)
-68. 動的閾値 (MAD-DT) は各 cid が「自分にとっての通常」を基準にするため、軸のスケール差を自動補正する。v9.9 で見えた familiarity 支配 82.7% は v9.10 で 27.1% (4 軸均等) に変わった。**所見の「意味」は観測器が決める**
-69. Stage 2 (固定閾値の再調整) を飛ばして Stage 3 (動的閾値) に直行する判断は正しかった。中間ステップは「あとで調整する」ための安心感を与えるが、多くの場合その安心感自体が前進を遅延させる
-70. stability 軸の特異性 (17.7%) は計算式由来 (window_st_sizes リセット = ノコギリ波) の可能性と ESDE 自体の性質の可能性が未分離。**観測器の癖と本物の信号を切り分けてから次に進む**
 
 ---
 
@@ -866,13 +675,8 @@ Autonomy の教訓 1-40 は ESDE_Autonomy_Report.md に記載。
 | 9.5 | 3層構造 + 認知Phase 1（φ）| **完了** | 全label DETACHED。αが高すぎた。しかし異なるphase_sigのlabelのφが収束する発見 |
 | 9.5 | Phase 1.5対称分析 + Convergence Detail | **完了** | Δ_phase一様分布。convergence時near_phase 34% vs divergence 18%。偏りの実体はθ分布 |
 | 9.5 | Phase 2 Attention Map | **完了** | 接触記憶。near/far bias非蓄積。L101集中記憶。label間hotspot共有268ノード |
-| 9.5 | Phase 3 Partner Familiarity | **完了** | decay=0.998。reciprocal pairs、familiarity network |
-| 9.5+ | Phase 4 Disposition Vector | **完了** | 4 軸 (social/stability/spread/familiarity) 実装 (v9.8b) |
-| 9.8a | Subject Reversal | **完了** | cid 主体反転、ghost/hosted/reaped lifecycle |
-| 9.8b | Minimal Introspection | **完了** | 固定閾値 gain/loss tag、4 軸 disposition |
-| 9.8c | Information Pickup | **完了** | death pool 拾得、TTL 延長、phase 距離競争 |
-| 9.9 | Internal Axis (骨格) | **完了** | Rule 1-3、personal_range、drift、v99_ 33 列。4 軸閾値 audit で破綻判明 |
-| 9.10 | Pulse Model & Subjective Surprise | **完了** | MAD-DT 動的閾値、50-step pulse、v10_ 20 列。L06 で 4 軸均等化確認 |
+| 9.5 | Phase 3 Partner Familiarity | **実行待ち** | decay=0.998。reciprocal pairs、familiarity network |
+| 9.5+ | Phase 4 Disposition Vector | **次候補** | φ/attention/familiarityから導出。キャラクターの定量化 |
 
 ### v10.x — 複数インスタンス（中間目標 2-3）— **保留**
 
@@ -907,17 +711,13 @@ Autonomy の教訓 1-40 は ESDE_Autonomy_Report.md に記載。
 - **v9 追加:** 系全体の died_share_sum → EMA → torque modulation
 - **v9.3 追加:** deviation detection（D1/D2/D3 → gravity_factor）、逐次適用、age 順、500 step/window
 
-### 認知層（v9.5〜v9.10）= 過程
+### 認知層（v9.5〜、構築中）= 過程
 
 - **存在層を根拠とし、存在層に影響しない純追加レイヤー**
 - φ（認知位相）: α × sin(mean_theta_structural - φ)。Phase 1 完了。全label DETACHED
 - attention map: 知覚圏内ノードごとの出現頻度。decay_rate = 0.99。**Phase 2 完了**: 接触記憶。label間hotspot共有
-- partner familiarity: 他label との接触頻度。decay_rate = 0.998。**Phase 3 完了**
-- disposition 4 軸: social/stability/spread/familiarity。**v9.8b で実装**
-- **v9.8a:** cid 主体反転。label死亡 ≠ cid死亡。ghost 状態 (TTL 10 window)
-- **v9.8c:** death pool pickup、TTL 延長。物理層不変
-- **v9.9:** 内的基準軸の骨格 (Rule 1-3, v99_ 33列)。固定閾値の限界判明
-- **v9.10:** Pulse Model + MAD-DT (v10_ 20列)。動的閾値で 4 軸均等化を確認
+- partner familiarity: 他label との接触頻度。decay_rate = 0.998。**Phase 3 実行待ち**
+- disposition vector: φ/attention/familiarityから導出。4次元。**Phase 4**
 
 ### 計測層（calibrate 側）
 
@@ -940,11 +740,7 @@ near_phase偏り発見（conv 34% vs div 18%）。偏りの実体はノード位
 Phase 2（attention map）は接触記憶として機能。near/far biasは蓄積されないが、
 L101の集中記憶やlabel間hotspot共有268ノード（共有経験の原型）を確認。
 認知は波形的な均質な動きではなく、偏りの追跡から生まれる。
-v9.8 trilogy で cid 主体反転 (a)、固定閾値内省 (b)、death pool 拾得 (c) を段階追加。
-v9.9 で内的基準軸の骨格 (Rule 1-3) を実装し、4 軸閾値の破綻を発見。
-Taka 判断で Stage 2 (閾値再調整) を飛ばし Stage 3 (動的閾値) に直行。
-v9.10 の Pulse Model + MAD-DT で L06 長命群が 4 軸均等 (soc 28%, sta 18%, spr 27%, fam 27%) に接近。
-v9.9 の「familiarity 支配 82.7%」「spread 沈黙 67.6%」は固定閾値アーティファクトと確定。
-stability 残差 (17.7%) の切り分け進行中。
+Phase 3（partner familiarity）実行待ち。Phase 4（disposition vector）で
+キャラクターの定量化に到達予定。
 最終目標は「神の手を介さずに認知・意味・社会性が創発するモデル」。
 当面のゴールは「私たちと会話ができるシステム」。*
