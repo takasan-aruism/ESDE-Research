@@ -166,8 +166,9 @@ V10_AXES = ("social", "stability", "spread", "familiarity")
 # ─────────────────────────────────────────────────────────────────
 # capture probability (GPT 補正 1: Variant A, p = p_max * exp(-λ Δ))
 V11_P_MAX = 0.9             # 最大捕捉確率 (<1.0, 「取りこぼしあり」)
-V11_LAMBDA = 2.0            # 指数減衰係数 (PROVISIONAL、smoke 後に再決定)
-                            # 再決定根拠は v911_capture_param_audit.md に記載
+V11_LAMBDA = 2.724          # Δ p50 基準で再決定 (smoke n=150 eval pulses)
+                            # 根拠: v911_capture_param_audit.md
+                            # 履歴: 2.0 (暫定) → 2.724 (p50 基準、2026-04-14 Taka 承認)
 
 # similarity 重み (GPT 補正 3: 均等初期値、合計 1.0)
 V11_W_N = 0.25
