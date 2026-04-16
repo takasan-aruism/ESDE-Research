@@ -66,7 +66,7 @@ def extract_l06_cids(seeds):
             if npe == "unformed" or npe == "":
                 continue
             if int(npe) >= L06_THRESHOLD:
-                cid = int(r["cid"])
+                cid = int(r["cognitive_id"])
                 nc_raw = r.get("v11_m_c_n_core", "unformed")
                 n_core = int(nc_raw) if nc_raw != "unformed" else 0
                 bg_raw = r.get("v11_b_gen", "unformed")
