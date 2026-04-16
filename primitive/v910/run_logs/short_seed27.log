@@ -1,0 +1,50 @@
+  [engine_accel] Loaded: link_strength_sum, exclusion, latent_refresh, cycle_finder(C)
+  [engine_accel_v3] Patched: key, get_latent, set_latent
+  [engine_accel_v5] L dict -> ShardedLatentDict
+  [engine_accel_v5] get_latent/set_latent -> shard-direct
+  [engine_accel_v5] RealizationOperator.step -> shard-based refresh
+  ⟐ Injection (300 steps)...
+  ⟐ Injection done (72s).
+  seed=27 mat done. labels=28 links=2984 cids_total=95 hosted=28 ghosts=41
+  seed=27 w=20 vLb=30 hosted=28 ghost=41 births=6 reaped=3 pickup=0u+6c cids_total=103 recip=45 136s
+  seed=27 w=21 vLb=26 hosted=30 ghost=44 births=8 reaped=4 pickup=2u+6c cids_total=107 recip=79 137s
+  seed=27 w=22 vLb=29 hosted=26 ghost=48 births=5 reaped=5 pickup=0u+5c cids_total=115 recip=86 136s
+  seed=27 w=23 vLb=28 hosted=29 ghost=48 births=3 reaped=7 pickup=0u+3c cids_total=117 recip=101 137s
+  seed=27 w=24 vLb=23 hosted=28 ghost=44 births=8 reaped=3 pickup=0u+8c cids_total=120 recip=108 137s
+  seed=27 w=25 vLb=20 hosted=23 ghost=49 births=4 reaped=2 pickup=2u+2c cids_total=121 recip=99 136s
+  seed=27 w=26 vLb=21 hosted=20 ghost=51 births=3 reaped=2 pickup=0u+3c cids_total=125 recip=89 135s
+  seed=27 w=27 vLb=23 hosted=21 ghost=52 births=2 reaped=2 pickup=0u+2c cids_total=129 recip=104 134s
+  seed=27 w=28 vLb=21 hosted=23 ghost=52 births=3 reaped=4 pickup=0u+3c cids_total=130 recip=121 135s
+  seed=27 w=29 vLb=20 hosted=21 ghost=51 births=1 reaped=9 pickup=0u+1c cids_total=130 recip=120 134s
+
+  seed=27 DONE in 4248s
+    cids total:    130
+    hosted now:    20
+    ghosts now:    43
+    reaped:        67
+    label rows:    63
+    subject rows:  63
+    tag entries:   186
+    total tags:    156
+    tag dist:
+             gain_social: 17
+             loss_social: 3
+          gain_stability: 4
+          loss_stability: 5
+             gain_spread: 2
+             loss_spread: 5
+        gain_familiarity: 40
+        loss_familiarity: 80
+    --- v9.8c Pickup ---
+    death records:    43
+      consumed:       43 (100.0%)
+      expired:        0 (0.0%)
+      active (end):   0
+    pickups:          43
+      uncontested:    4
+      contested:      39
+    ttl_bonus stats:
+      max:  4
+      mean: 0.33
+      n>0:  29/130
+    conv ratio:    3.6300873050761946

@@ -1,0 +1,2 @@
+- [Parallel execution](feedback_parallel_execution.md) — 重い計測スクリプトは実行前にユーザー確認。parallel/step_window 等の既存パターンに倣う
+- [Codecheck workflow](feedback_codecheck_workflow.md) — コード作成時は必ず codecheck_request.md を同一フォルダに作成。別 Claude Code がレビュー→status_approved/denied.md

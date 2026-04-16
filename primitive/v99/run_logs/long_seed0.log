@@ -1,0 +1,90 @@
+  [engine_accel] Loaded: link_strength_sum, exclusion, latent_refresh, cycle_finder(C)
+  [engine_accel_v3] Patched: key, get_latent, set_latent
+  [engine_accel_v5] L dict -> ShardedLatentDict
+  [engine_accel_v5] get_latent/set_latent -> shard-direct
+  [engine_accel_v5] RealizationOperator.step -> shard-based refresh
+  ⟐ Injection (300 steps)...
+  ⟐ Injection done (72s).
+  seed=0 mat done. labels=15 links=2984 cids_total=67 hosted=15 ghosts=26
+  seed=0 w=20 vLb=14 hosted=15 ghost=26 births=2 reaped=3 pickup=1u+1c cids_total=68 recip=49 133s
+  seed=0 w=21 vLb=24 hosted=14 ghost=25 births=0 reaped=3 pickup=0u+0c cids_total=78 recip=50 134s
+  seed=0 w=22 vLb=19 hosted=24 ghost=22 births=5 reaped=1 pickup=0u+5c cids_total=78 recip=81 135s
+  seed=0 w=23 vLb=18 hosted=19 ghost=26 births=2 reaped=5 pickup=1u+1c cids_total=79 recip=82 133s
+  seed=0 w=24 vLb=17 hosted=18 ghost=23 births=4 reaped=3 pickup=1u+3c cids_total=82 recip=78 132s
+  seed=0 w=25 vLb=19 hosted=17 ghost=24 births=2 reaped=2 pickup=2u+0c cids_total=86 recip=59 132s
+  seed=0 w=26 vLb=19 hosted=19 ghost=24 births=5 reaped=4 pickup=1u+4c cids_total=91 recip=77 132s
+  seed=0 w=27 vLb=21 hosted=19 ghost=25 births=2 reaped=2 pickup=1u+1c cids_total=95 recip=81 130s
+  seed=0 w=28 vLb=21 hosted=21 ghost=25 births=3 reaped=2 pickup=1u+2c cids_total=98 recip=93 130s
+  seed=0 w=29 vLb=20 hosted=21 ghost=26 births=2 reaped=1 pickup=0u+2c cids_total=99 recip=107 129s
+  seed=0 w=30 vLb=20 hosted=20 ghost=27 births=2 reaped=2 pickup=1u+1c cids_total=101 recip=103 128s
+  seed=0 w=31 vLb=24 hosted=20 ghost=27 births=2 reaped=0 pickup=0u+2c cids_total=107 recip=92 127s
+  seed=0 w=32 vLb=30 hosted=24 ghost=29 births=6 reaped=5 pickup=1u+5c cids_total=119 recip=87 126s
+  seed=0 w=33 vLb=21 hosted=30 ghost=30 births=13 reaped=2 pickup=1u+11c cids_total=123 recip=110 127s
+  seed=0 w=34 vLb=18 hosted=21 ghost=41 births=3 reaped=3 pickup=0u+3c cids_total=123 recip=94 126s
+  seed=0 w=35 vLb=21 hosted=18 ghost=41 births=2 reaped=3 pickup=0u+2c cids_total=128 recip=92 126s
+  seed=0 w=36 vLb=21 hosted=21 ghost=40 births=3 reaped=3 pickup=1u+3c cids_total=131 recip=98 126s
+  seed=0 w=37 vLb=21 hosted=21 ghost=40 births=1 reaped=3 pickup=1u+0c cids_total=132 recip=92 125s
+  seed=0 w=38 vLb=34 hosted=21 ghost=38 births=0 reaped=2 pickup=0u+0c cids_total=145 recip=106 126s
+  seed=0 w=39 vLb=23 hosted=34 ghost=36 births=12 reaped=3 pickup=3u+8c cids_total=146 recip=163 126s
+  seed=0 w=40 vLb=26 hosted=23 ghost=45 births=2 reaped=2 pickup=0u+2c cids_total=151 recip=129 125s
+  seed=0 w=41 vLb=22 hosted=26 ghost=45 births=9 reaped=1 pickup=2u+6c cids_total=156 recip=142 124s
+  seed=0 w=42 vLb=26 hosted=22 ghost=53 births=2 reaped=5 pickup=1u+3c cids_total=162 recip=112 124s
+  seed=0 w=43 vLb=26 hosted=26 ghost=50 births=4 reaped=12 pickup=2u+2c cids_total=166 recip=137 124s
+  seed=0 w=44 vLb=25 hosted=26 ghost=42 births=6 reaped=5 pickup=0u+6c cids_total=171 recip=125 122s
+  seed=0 w=45 vLb=25 hosted=25 ghost=43 births=7 reaped=2 pickup=0u+7c cids_total=178 recip=120 121s
+  seed=0 w=46 vLb=22 hosted=25 ghost=48 births=5 reaped=2 pickup=1u+4c cids_total=180 recip=123 121s
+  seed=0 w=47 vLb=26 hosted=22 ghost=51 births=2 reaped=2 pickup=1u+1c cids_total=186 recip=138 119s
+  seed=0 w=48 vLb=27 hosted=26 ghost=51 births=2 reaped=1 pickup=0u+2c cids_total=189 recip=153 119s
+  seed=0 w=49 vLb=21 hosted=27 ghost=52 births=6 reaped=11 pickup=0u+6c cids_total=189 recip=160 118s
+  seed=0 w=50 vLb=22 hosted=21 ghost=47 births=0 reaped=4 pickup=0u+0c cids_total=190 recip=159 117s
+  seed=0 w=51 vLb=19 hosted=22 ghost=43 births=3 reaped=4 pickup=1u+2c cids_total=190 recip=157 117s
+  seed=0 w=52 vLb=24 hosted=19 ghost=42 births=1 reaped=3 pickup=0u+1c cids_total=196 recip=127 116s
+  seed=0 w=53 vLb=25 hosted=24 ghost=40 births=3 reaped=5 pickup=1u+2c cids_total=200 recip=146 117s
+  seed=0 w=54 vLb=25 hosted=25 ghost=38 births=4 reaped=3 pickup=0u+4c cids_total=204 recip=153 116s
+  seed=0 w=55 vLb=27 hosted=25 ghost=39 births=1 reaped=8 pickup=1u+0c cids_total=207 recip=149 116s
+  seed=0 w=56 vLb=20 hosted=27 ghost=32 births=7 reaped=8 pickup=0u+7c cids_total=207 recip=165 116s
+  seed=0 w=57 vLb=28 hosted=20 ghost=31 births=2 reaped=2 pickup=0u+2c cids_total=217 recip=143 115s
+  seed=0 w=58 vLb=28 hosted=28 ghost=31 births=5 reaped=3 pickup=0u+5c cids_total=222 recip=160 116s
+  seed=0 w=59 vLb=30 hosted=28 ghost=33 births=3 reaped=4 pickup=0u+3c cids_total=227 recip=170 116s
+  seed=0 w=60 vLb=24 hosted=30 ghost=32 births=6 reaped=2 pickup=0u+6c cids_total=227 recip=183 115s
+  seed=0 w=61 vLb=24 hosted=24 ghost=36 births=1 reaped=3 pickup=0u+1c cids_total=228 recip=162 113s
+  seed=0 w=62 vLb=33 hosted=24 ghost=34 births=0 reaped=1 pickup=0u+0c cids_total=237 recip=167 114s
+  seed=0 w=63 vLb=29 hosted=33 ghost=33 births=7 reaped=3 pickup=1u+6c cids_total=240 recip=223 114s
+  seed=0 w=64 vLb=35 hosted=29 ghost=37 births=2 reaped=5 pickup=0u+2c cids_total=248 recip=243 112s
+  seed=0 w=65 vLb=46 hosted=35 ghost=34 births=4 reaped=1 pickup=0u+4c cids_total=263 recip=278 113s
+  seed=0 w=66 vLb=45 hosted=46 ghost=37 births=6 reaped=6 pickup=0u+6c cids_total=268 recip=330 113s
+  seed=0 w=67 vLb=40 hosted=45 ghost=37 births=9 reaped=0 pickup=1u+8c cids_total=272 recip=349 111s
+  seed=0 w=68 vLb=43 hosted=40 ghost=46 births=5 reaped=6 pickup=0u+5c cids_total=280 recip=314 111s
+  seed=0 w=69 vLb=37 hosted=43 ghost=45 births=6 reaped=3 pickup=0u+6c cids_total=280 recip=342 110s
+
+  seed=0 DONE in 8860s
+    cids total:    280
+    hosted now:    37
+    ghosts now:    48
+    reaped:        195
+    label rows:    228
+    subject rows:  228
+    tag entries:   1025
+    total tags:    714
+    tag dist:
+             gain_social: 83
+             loss_social: 22
+          gain_stability: 16
+          loss_stability: 29
+             gain_spread: 2
+             loss_spread: 18
+        gain_familiarity: 171
+        loss_familiarity: 373
+    --- v9.8c Pickup ---
+    death records:    191
+      consumed:       191 (100.0%)
+      expired:        0 (0.0%)
+      active (end):   0
+    pickups:          191
+      uncontested:    28
+      contested:      163
+    ttl_bonus stats:
+      max:  9
+      mean: 0.68
+      n>0:  79/280
+    conv ratio:    3.181573402082647
