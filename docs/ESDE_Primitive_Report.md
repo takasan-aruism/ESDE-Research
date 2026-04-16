@@ -946,5 +946,94 @@ Taka 判断で Stage 2 (閾値再調整) を飛ばし Stage 3 (動的閾値) に
 v9.10 の Pulse Model + MAD-DT で L06 長命群が 4 軸均等 (soc 28%, sta 18%, spr 27%, fam 27%) に接近。
 v9.9 の「familiarity 支配 82.7%」「spread 沈黙 67.6%」は固定閾値アーティファクトと確定。
 stability 残差 (17.7%) の切り分け進行中。
+
+---
+
+## v9.11 — Cognitive Capture (事象捕捉フィルタの確立)
+
+**目的:** cid が誕生時の構造 (M_c) と現在の環境 (E_t) を比較し、個体ごとに異なる確率で事象を捕捉する。物理層・存在層への介入なし。
+
+### B_Gen と M_c
+
+label birth 時に 1 回だけ算出し固定:
+
+```
+Pbirth = (1 / C(5000, n_core)) × ρ^(n-1) × r_core^(n-1) × S_avg^(n-1)
+B_Gen  = -log10(Pbirth)
+M_c    = (n_core, S_avg, r_core, phase_sig)
+```
+
+B_Gen バンド構造: n=2→12, n=3→19, n=4→26, n=5→34。バンド間ギャップ ≈7、n_core (組み合わせ項) が支配。
+
+B_Gen は capture に直接入力しない (GPT 補正)。ログ指標として保持。
+
+### E_t と Δ と capture
+
+pulse ごとに知覚圏 (structural field, n_core hops) から自動抽出:
+
+```
+E_t    = (n_local, s_avg_local, r_local, θ_avg_local)
+Δ      = Σ w_i × |M_c_i - E_t_i| / norm_i  (Weighted L1, phase は circular)
+P(cap) = 0.9 × exp(-2.724 × Δ)
+```
+
+重み均等 (0.25×4)。cold start (pulse 1-3) は判定保留。
+
+### 4 層構造の確認
+
+| 層 | 役割 | v9.11 での確立 |
+|---|---|---|
+| 物理層 | 生成基盤 | 不変 |
+| 存在層 | θ torque のみ | 不変 |
+| 認知層 | 観察・比較・捕捉 | **B_Gen + capture で確立** |
+| 意識層 (将来) | 認知の検証 | v10.x 以降 |
+
+B_Gen の導入により「認知層から θ への介入」の誘惑が構造的に消滅した。
+
+### 結果 (48 seeds short + 5 seeds long)
+
+- capture_rate mean ≈ 0.38 (設計通り)
+- 軸寄与: phase 39% + r 34% = 72%、n 14%、s 13%
+- L06 長命群 (114 cids): capture_rate 0.307、n_core=5 が 61%、Δ mean 0.414
+- B_Gen バンド短長一致、λ=2.724 運用妥当
+
+---
+
+## v9.12 — Audit Phase (実装変更ゼロ)
+
+v9.12 は新機構の実装ゼロ、既存データの分析と設計文書化のみ。
+
+### Phase 1: L06 時系列分析
+
+**Δ は i.i.d.** — 自己相関 ≈ 0 (全 lag)。mismatch は蓄積しない。L06 capture 低下は n_core 構成効果 (n_core=5 は構造的に Δ ≈ 0.43 で定常)。
+
+spike (Δ 上位 10%) → capture 15.4%、low → 50.9%。乖離と capture の逆相関は明確。
+
+### Phase 2A: コード解析
+
+1. **phase+r 72% の原因**: NORM_N=86 による d_n 圧縮 (C 仮説確定) + S_avg の物理的定常性 (A 仮説確定)。d_r と d_phase は無相関 (r=0.008)。B 仮説 (E_t 定義偏り) 否定。
+2. **n≥6 欠落**: S≥0.20 連結成分の接続性 (主因) + 50% overlap フィルタ (副因)。コードに上限なし、動力学的帰結。
+
+### Phase 4: 未決境界問題
+
+Taka 発言「並列基準原理」と「構造と数式の分離統合」を設計原理として記録。認知/意識の境界に関する 5 つの未決問題をリスト化。詳細: `docs/v912_unresolved_boundary_questions.md`。
+
+### v9.13 への方針転換
+
+Taka 判断: 「S≥0.20 は神の手。動的均衡の哲学がある以上どこかで切り捨てなければならない。後回しにするほど調整が大変」
+
+→ v9.13 = **S≥0.20 hard threshold の撤去、Pbirth ベースの確率的 birth への移行**。Gemini に architecture 設計を依頼 (`docs/v913_gemini_design_request.md`)。
+
+---
+
+## 教訓 (v9.11-v9.12 追加)
+
+66. B_Gen を capture に直接入力しない判断が v9.11 の最大の architectural 成果。n_core バンド支配が capture 差を飲み込む
+67. Δ が i.i.d. なら retention の価値は「予測」ではなく「主観的基準形成」
+68. NORM_N (正規化定数) の過大設定は軸寄与を構造的に歪める。audit は実験前にコードを読むのが先
+69. 「修正すべき」と即断せず、L06 のような観測結果を asset として活用する視点
+70. 設計定数 (S≥0.20) の撤去は早い方が上位層への波及が少ない
+71. 実験回すより先にコード解析。原因がコードに見えたら実験は確認に格下げ
+
 最終目標は「神の手を介さずに認知・意味・社会性が創発するモデル」。
 当面のゴールは「私たちと会話ができるシステム」。*

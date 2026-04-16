@@ -40,6 +40,8 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
   ↓
 05_primitive_summary.md ← v9.x の現状 (v9.11 対応済み)
   ↓
+05b_primitive_summary_v912_addendum.md  ← v9.12 audit 結果 (新規)
+  ↓
 07_esde_system_structure.md ← 現行システム構造 (v9.11 対応済み)
 ```
 
@@ -57,6 +59,7 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
 | 03 | `03_autonomy_summary.md` | ESDE_Autonomy_Report.md (749 行) | label = 魂 (frozenset)、territory = 場、5-node 転換点、Lifecycle Instrumentation | v9.9 時点 |
 | 04 | `04_cognition_summary.md` | ESDE_Cognition_Report_Final.md (1271 行) | **★最重要・最複雑**。v3-v7 の試行錯誤、「物理層は床」結論、virtual layer の確立 | v9.9 時点 |
 | 05 | `05_primitive_summary.md` | ESDE_Primitive_Report.md | 4 層構造、cid (v9.8a)、内省 tag (v9.8b)、information pickup (v9.8c)、内的基準軸 (v9.9)、Pulse + MAD-DT (v9.10)、Cognitive Capture (v9.11) | **v9.11 対応** |
+| 05b | `05b_primitive_summary_v912_addendum.md` | (`05` の補遺) | v9.12 audit 結果 — Δ i.i.d.、phase+r 原因、n≥6 原因、Pbirth birth 構想 |
 | 06 | `06_concept_core.md` | 概念理解.md (1305 行) | Aruism、3 層構造、絶対ルール、Taka 直接発言、戦国大名モデル、spatial vs structural | v9.9 時点 (古い表記あり、Taka 用あんちょこ) |
 | 07 | `07_esde_system_structure.md` | (要約のみ) | ESDE 現行システム構造、4 層、各層パラメータ、コード参照 | **v9.11 対応** |
 
@@ -76,6 +79,13 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
 8. **「事象」= 周囲の現象そのもの** (Taka 構想)。設計者が定義する外部のラベルではない。
 9. **4 層構造** (v9.11 確立、v9.5 では 3 層と整理されていた): 物理 / 存在 / 認知 / 意識。
 10. **新運用ルール** (v9.11): Claude Code A/B 分担、チェック依頼書必須、並列化必須。
+
+### v9.12 で追加された重要事項 (2026-04-16)
+
+6. **Δ は i.i.d.** — M_c と E_t の乖離は蓄積しない。各 pulse 独立。L06 capture 低下は n_core 構成効果 (時間効果ではない)。
+7. **phase+r 72% 支配の原因は正規化圧縮 + 物理的定常性** — NORM_N=86 による d_n 圧縮 (C 仮説) + S_avg の物理的安定性 (A 仮説)。E_t 定義偏り (B 仮説) は否定。
+8. **n≥6 欠落はコードの上限ではなく構造的帰結** — S≥0.20 連結成分の接続性制約 + 50% overlap フィルタ + 非空間リンク形成。
+9. **S≥0.20 hard threshold 撤去が v9.13 の主題** — Pbirth ベースの確率的 birth に移行する設計が進行中。Gemini に architecture 設計を依頼済み。
 
 ---
 
