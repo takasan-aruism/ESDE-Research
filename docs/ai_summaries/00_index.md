@@ -1,7 +1,7 @@
 # ESDE 研究史 — AI 向け超要約 (Index + 用語対応表)
 
 *作成日*: 2026-04-11 (v9.9 Long Run 進行中)
-*更新*: 2026-04-17 (v9.13 完了、S≥0.20 撤去による前提変更を反映)
+*更新*: 2026-04-17 (v9.13 完了、S≥0.20 撤去による前提変更を反映、05b/05c addendum を 05 に統合)
 *対象読者*: ESDE-Research に新規に関わる Claude (新スレッド初見)
 
 ---
@@ -17,7 +17,7 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
 ## ⚠️ 警告
 
 - これは**要約**であり原本ではない。設計の詳細や個別実験の数値が必要な場合は必ず原本 (`docs/ESDE_*_Report.md` および `docs/概念理解.md`) を参照すること。
-- **要約の最新時点は v9.13 完了 (2026-04-17)**。05, 05b, 05c, 06, 07 は v9.13 対応済み。01-04 は v9.9 時点のまま (古い表記が含まれる、本ファイル末尾の用語対応表で確認)。
+- **要約の最新時点は v9.13 完了 (2026-04-17)**。05, 06, 07 は v9.13 対応済み (05 は旧 05b/05c addendum を統合済み)。01-04 は v9.9 時点のまま (古い表記が含まれる、本ファイル末尾の用語対応表で確認)。
 - **推測補完していない**。原本にあることだけ抽出している。「書いてないこと」を埋めようとしないこと。
 - 概念理解.md からの引用は **必ず引用形式 (>) で残してある**。Taka の発言を勝手に言い換えないこと。
 
@@ -38,16 +38,12 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
   ↓
 04_cognition_summary.md ← ★ 失敗の記録 (最重要、古い表記あり)
   ↓
-05_primitive_summary.md ← v9.x の現状 (v9.9 時点)
-  ↓
-05b_primitive_summary_v912_addendum.md ← v9.11-v9.12 追記
-  ↓
-05c_primitive_summary_v913_addendum.md ← v9.13 追記 (S≥0.20 撤去、v9.11 所見の再解釈)
+05_primitive_summary.md ← Primitive phase 全体 (v9.0-v9.13、v9.13 対応、旧 05b/05c 統合済)
   ↓
 07_esde_system_structure.md ← 現行システム構造 (v9.13 対応)
 ```
 
-**急ぎなら**: 本ファイル末尾の **用語対応表** + `07_esde_system_structure.md` + `05c_primitive_summary_v913_addendum.md` の組み合わせで現状作業に最低限着手できる。**ただし `04_cognition_summary.md` の「却下された方針」は時間を作って必ず読むこと**。
+**急ぎなら**: 本ファイル末尾の **用語対応表** + `07_esde_system_structure.md` + `05_primitive_summary.md` の v9.13 セクション の組み合わせで現状作業に最低限着手できる。**ただし `04_cognition_summary.md` の「却下された方針」は時間を作って必ず読むこと**。
 
 ---
 
@@ -60,9 +56,7 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
 | 02 | `02_ecology_summary.md` | ESDE_Ecology_Report.md (242 行) | observer 複数性、global は lossy compression、long_drift がデフォルト | v9.9 時点 |
 | 03 | `03_autonomy_summary.md` | ESDE_Autonomy_Report.md (749 行) | label = 魂 (frozenset)、territory = 場、5-node 転換点、Lifecycle Instrumentation | v9.9 時点 |
 | 04 | `04_cognition_summary.md` | ESDE_Cognition_Report_Final.md (1271 行) | **★最重要・最複雑**。v3-v7 の試行錯誤、「物理層は床」結論、virtual layer の確立 | v9.9 時点 |
-| 05 | `05_primitive_summary.md` | ESDE_Primitive_Report.md | 4 層構造、cid (v9.8a)、内省 tag (v9.8b)、information pickup (v9.8c)、内的基準軸 (v9.9)、Pulse + MAD-DT (v9.10) | v9.9 時点 |
-| 05b | `05b_primitive_summary_v912_addendum.md` | (`05` の補遺) | v9.11 Cognitive Capture + v9.12 audit 結果 — Δ i.i.d.、phase+r 原因、n≥6 原因、Pbirth birth 構想 | v9.11-v9.12 対応 |
-| 05c | `05c_primitive_summary_v913_addendum.md` | (`05` の補遺) | **v9.13 — S≥0.20 撤去、persistence-based birth、v9.11 所見の再解釈、認知層方向性確定** | **v9.13 対応** |
+| 05 | `05_primitive_summary.md` | ESDE_Primitive_Report.md | Primitive phase 全体 (v9.0-v9.13): 4 層構造、cid、内省 tag、pickup、内的基準軸、Pulse + MAD-DT、Cognitive Capture (B_Gen/M_c/E_t/Δ)、v9.12 audit、v9.13 persistence-based birth、S≥0.20 撤去、認知層方向性確定 | **v9.13 対応 (旧 05b/05c 統合済)** |
 | 06 | `06_concept_core.md` | 概念理解.md (1305 行) | Aruism、4 層構造、絶対ルール、Taka 直接発言、戦国大名モデル、spatial vs structural、v9.12 並列基準、v9.13 記憶の所在 | **v9.13 対応** |
 | 07 | `07_esde_system_structure.md` | (要約のみ) | ESDE 現行システム構造、4 層、各層パラメータ、コード参照 | **v9.13 対応** |
 
@@ -104,7 +98,7 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
 ## このディレクトリの更新ポリシー
 
 - **既存レポート (`docs/ESDE_*_Report.md`、`docs/概念理解.md`) は編集 OK** だが、**常に完全 merge document として出力**すること。パッチ形式で出さない。
-- v9.10 以降の確定事項は 05/05b/05c と 06/07 に反映済み。01-04 は v9.9 時点のまま (本ファイル末尾の用語対応表で吸収)。
+- v9.10 以降の確定事項は 05 (旧 05b/05c 統合済) と 06/07 に反映済み。01-04 は v9.9 時点のまま (本ファイル末尾の用語対応表で吸収)。
 - 要約の質に疑問がある時は、まず原本を読み直して照合すること。要約だけで判断しないこと。
 - **Taka の承認なしに勝手に書き換えない**。新規追記は OK だが、既存要約の改変は Taka の確認を取る。
 
@@ -380,10 +374,10 @@ ESDE のバージョン進行も「phase」と呼ばれる:
 
 1. **本ファイルの用語対応表を確認**: 用語の対応で解消するか
 2. **`07_esde_system_structure.md` を確認**: これが現行の真実
-3. **`05c_primitive_summary_v913_addendum.md` を確認**: v9.13 での前提変更を確認
+3. **`05_primitive_summary.md` の v9.13 セクション を確認**: v9.13 での前提変更を確認
 4. **解消しない場合**: Taka に質問する。**推測で実装に進まない**
 
-過去のドキュメント (01-04, および 05/06 の古い部分) には「3 層構造」「仮想層」「観測層」「n=2 主体」「phase+r 支配」などが残っている。これらは古い表記や v9.11 以前のアーティファクトを含む記述であり、実装の判断基準としてはいけない。
+過去のドキュメント (01-04, および 06 の古い部分) には「3 層構造」「仮想層」「観測層」「n=2 主体」「phase+r 支配」などが残っている。これらは古い表記や v9.11 以前のアーティファクトを含む記述であり、実装の判断基準としてはいけない。
 
 ---
 
@@ -394,17 +388,15 @@ ESDE のバージョン進行も「phase」と呼ばれる:
 **最優先 (必読、実装の判断基準)**
 - 本ファイル (00_index.md): ナビゲーション + 用語対応表
 - `07_esde_system_structure.md`: 現行システム構造 (v9.13 対応)
-- `05c_primitive_summary_v913_addendum.md`: **v9.13 での前提変更 (必読)**
+- `05_primitive_summary.md`: Primitive phase 全体 (v9.13 対応)。特に **v9.13 セクション (persistence-based birth、認知層方向性)** と **v9.12 セクション (Δ i.i.d.、phase+r 原因)** は必読
 
 **次優先 (文脈理解)**
-- `05b_primitive_summary_v912_addendum.md`: v9.11-v9.12 の到達点
 - `06_concept_core.md`: Taka 哲学コア (v9.13 対応)
 
 **次優先 (失敗の記録、必ず時間を作って読む)**
 - `04_cognition_summary.md`: v3-v7 の試行錯誤、「物理層は床」結論
 
 **参考 (背景理解)**
-- `05_primitive_summary.md`: v9.9 時点の Primitive phase
 - `01_genesis_summary.md` 〜 `03_autonomy_summary.md`: 過去の phase 概要
 
 **実装時参照**
