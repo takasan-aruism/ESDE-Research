@@ -1391,7 +1391,7 @@ def v11_compute_delta(m_c, e_t):
 # MAIN
 # ================================================================
 def run(seed=42, maturation_windows=20, tracking_windows=10,
-        window_steps=500, tag="short"):
+        window_steps=500, tag="short", disable_e3=False):
 
     t_start = time.time()
     N = V82_N
@@ -1442,7 +1442,8 @@ def run(seed=42, maturation_windows=20, tracking_windows=10,
 
     # v9.14 Step 1-3: Layer B ledger (audit-only, Layer A を一切触らない)
     # delta 計算は v11_compute_delta を注入 (Layer A と同じ 4-軸 weighted L1)
-    v914_ledger = SpendAuditLedger(delta_fn=v11_compute_delta)
+    v914_ledger = SpendAuditLedger(
+        delta_fn=v11_compute_delta, disable_e3=disable_e3)
 
     # ── Maturation ──
     # maturation 中も label の生死は起きる。birth/detach を呼ぶ。
@@ -2759,10 +2760,16 @@ if __name__ == "__main__":
     parser.add_argument("--tracking-windows", type=int, default=10)
     parser.add_argument("--window-steps", type=int, default=500)
     parser.add_argument("--tag", type=str, default="short")
+    parser.add_argument(
+        "--disable-e3", action="store_true",
+        help="§6.4 ablation: E3_contact event の発行を抑止 (E1/E2 は不変、"
+             "contacted_pairs 登録は維持、Layer A / baseline CSV は bit-identical)"
+    )
     args = parser.parse_args()
 
     run(seed=args.seed,
         maturation_windows=args.maturation_windows,
         tracking_windows=args.tracking_windows,
         window_steps=args.window_steps,
-        tag=args.tag)
+        tag=args.tag,
+        disable_e3=args.disable_e3)

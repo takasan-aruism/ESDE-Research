@@ -68,17 +68,22 @@ class SpendAuditLedger:
     本モジュール内に持たせず、疎結合を保つ。
     """
 
-    def __init__(self, delta_fn=None) -> None:
+    def __init__(self, delta_fn=None, disable_e3: bool = False) -> None:
         """delta_fn(ref_m_c_like, e_t) -> (delta_total, axes_dict)。
 
         ref_m_c_like は {"n_core", "s_avg", "r_core", "phase_sig"} を持つ dict。
         e_t は {"n_local", "s_avg_local", "r_local", "theta_avg_local"} を持つ dict。
         本体から v11_compute_delta を差し込んで使う。
+
+        disable_e3=True のとき E3_contact の event 発行を skip する (§6.4
+        ablation)。contacted_pairs への登録は継続 (再現性維持)。E1/E2 の
+        検知・spend は変更なし。Layer A state は読み取り専用のまま。
         """
         self.ledger: dict[Any, dict[str, Any]] = {}
         # audit event list (Step 6 で per_event_audit.csv に書き出される)
         self.events: list[dict[str, Any]] = []
         self._delta_fn = delta_fn
+        self._disable_e3 = bool(disable_e3)
         # E3 contact 検出用: 登録済み cid の member nodes から構築する
         # node -> set of cids 逆引き。cid 登録時に add、cid retire 時は残す
         # (member_nodes は soul で不変、一度発生した contact pair も不変記録)。
@@ -182,8 +187,12 @@ class SpendAuditLedger:
 
         # E3: step レベルの検出 (全 alive link を node_to_cids で引く)。
         # per-cid ループの後で 1 回だけ実行。
+        # disable_e3=True でも detect は呼ぶ (contacted_pairs 登録維持)。
+        # event 発行のみ skip する (§6.4 ablation 仕様)。
         new_e3_pairs = detect_e3_new_pairs(
             alive_l_set, self._node_to_cids, self._contacted_pairs)
+        if self._disable_e3:
+            return
         for (cid_a, cid_b, lk) in new_e3_pairs:
             # 各 cid 視点で 1 event ずつ発行 (計 2 event/pair)。
             # ただし ctx に無い (hosted でない、または登録前) cid は skip。
