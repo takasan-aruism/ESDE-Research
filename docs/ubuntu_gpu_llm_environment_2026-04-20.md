@@ -7,7 +7,7 @@
 
 この環境はローカルLLM用途としてかなり強力です。特に `NVIDIA GeForce RTX 5090` が2枚あり、各GPUに約32GB、合計で約64GBのVRAMがあります。CPU/RAMも余裕があり、単体GPUでの量子化モデル運用、2GPUでのtensor parallel、実験用の複数モデル常駐に向いています。
 
-一方で、RTX 5090はBlackwell世代でCUDA capability `sm_120` です。既存の一部Conda環境にはCUDA 12.1世代のPyTorch/vLLMが残っており、`vllm_rtx5090`環境ではPyTorchから「sm_120非対応」の警告が出ています。LLM実行基盤はCUDA 12.8以降、かつRTX 5090/Blackwell対応済みのPyTorch・vLLM・関連wheelを使う前提で整備するのが安全です。
+通常のLLM実行基盤はvLLMではなく、Docker上のTensorRT-LLMです。DockerにはNVIDIA NGCのTensorRT-LLM imageが複数あり、過去にQwQ系と思われるTensorRT-LLMコンテナも作成されています。一方で、RTX 5090はBlackwell世代でCUDA capability `sm_120` です。既存の一部Conda環境にはCUDA 12.1世代のPyTorch/vLLMが残っており、`vllm_rtx5090`環境ではPyTorchから「sm_120非対応」の警告が出ています。vLLMは主経路ではなく参考情報として扱い、実運用ではRTX 5090/Blackwell対応済みのTensorRT-LLM containerとCUDA 12.8系の組み合わせを優先するのが安全です。
 
 ## OS / Kernel
 
@@ -214,7 +214,7 @@ NVIDIA GeForce RTX 5090 with CUDA capability sm_120 is not compatible with the c
 The current PyTorch install supports CUDA capabilities sm_50 sm_60 sm_70 sm_75 sm_80 sm_86 sm_90.
 ```
 
-このため、名前は`vllm_rtx5090`ですが、現状のまま本格利用するのは避けた方がよいです。RTX 5090対応済みのPyTorch/CUDA/vLLMへ更新するか、新しい専用環境を作り直すのが安全です。
+このため、名前は`vllm_rtx5090`ですが、通常運用の主経路にはしません。TensorRT-LLM Dockerを優先し、このConda環境は過去検証または補助検証用の参考情報として扱うのが安全です。
 
 ## Docker / Container
 
@@ -227,33 +227,61 @@ The current PyTorch install supports CUDA capabilities sm_50 sm_60 sm_70 sm_75 s
 | Default runtime | `runc` |
 | Docker root | `/var/lib/docker` |
 
-DockerでGPUコンテナを使える土台はあります。必要に応じて以下のような形でGPUを渡せます。
+DockerでGPUコンテナを使える土台はあります。通常のLLM実行はvLLMではなく、TensorRT-LLMをDockerで使う前提です。必要に応じて以下のような形でGPUを渡せます。
 
 ```bash
 docker run --gpus all ...
 ```
 
+### TensorRT-LLM Docker images
+
+調査時点で確認できたTensorRT-LLM image:
+
+```text
+nvcr.io/nvidia/tensorrt-llm/release:1.2.0rc6   31.7GB
+nvcr.io/nvidia/tensorrt-llm/release:1.2.0rc1   35.5GB
+nvcr.io/nvidia/tensorrt-llm/release:1.1.0rc5   44.5GB
+```
+
+確認できた既存コンテナ:
+
+```text
+qwq_tp2_srv    nvcr.io/nvidia/tensorrt-llm/release:1.1.0rc5   Exited (0)   9 days ago
+qwq_srv_tp2    nvcr.io/nvidia/tensorrt-llm/release:1.1.0rc5   Exited (1)   8 weeks ago
+qwq_srv_gpu1   nvcr.io/nvidia/tensorrt-llm/release:1.1.0rc5   Exited (0)   8 weeks ago
+qwq_srv_gpu0   nvcr.io/nvidia/tensorrt-llm/release:1.1.0rc5   Exited (137) 2 months ago
+```
+
+TensorRT-LLM運用では、ホスト側のNVIDIA Driver `570.158.01` とcontainer側CUDA/TensorRT-LLMの対応が重要です。現在のホストはCUDA 12.8表示なので、RTX 5090/Blackwell対応済みのTensorRT-LLM release imageを優先して使うのがよいです。古い`1.1.0rc5`系containerは残っていますが、主運用では`1.2.0rc6`以降の対応状況を基準に確認するのが安全です。
+
 ## LLM導入時の実用メモ
 
 ### 推奨方針
 
-1. RTX 5090/Blackwell対応を最優先する
+1. TensorRT-LLM Dockerを主経路にする
+   - 通常はvLLMを使わない。
+   - NVIDIA NGCの`nvcr.io/nvidia/tensorrt-llm/release` imageを基準にする。
+   - ホストdriverとcontainer内CUDA/TensorRT-LLMのBlackwell対応を確認する。
+
+2. RTX 5090/Blackwell対応を最優先する
    - CUDA 12.8以降を前提にする。
-   - PyTorchは`sm_120`対応済みビルドを使う。
-   - vLLM、FlashAttention、Triton、bitsandbytesはRTX 5090対応状況を確認してから入れる。
+   - TensorRT-LLM、TensorRT、CUDA runtimeがRTX 5090の`sm_120`に対応していることを確認する。
+   - Python/PyTorch環境を補助的に使う場合は、PyTorchも`sm_120`対応済みビルドを使う。
 
-2. GPU 0を主な推論GPUにする
+3. GPU 0を主な単体推論GPUにする
    - GPU 1はデスクトップ/リモートデスクトップでVRAMを使っている。
-   - まずは`CUDA_VISIBLE_DEVICES=0`で単体GPU運用を検証する。
+   - まずは`--gpus '"device=0"'`または`CUDA_VISIBLE_DEVICES=0`相当で単体GPU運用を検証する。
 
-3. 2GPU利用は速度検証が必要
+4. 2GPU利用は速度検証が必要
    - 合計VRAMは約64GBある。
    - ただしGPU間はNVLinkではなく`NODE`接続。
    - 大きなモデルをtensor parallelで動かす場合、通信がボトルネックになる可能性がある。
+   - TensorRT-LLMのtensor parallel構成では、単体GPU時と2GPU時のtokens/secを実測する。
 
-4. 既存の`vllm_rtx5090`環境は再整備候補
+5. 既存の`vllm_rtx5090`環境は参考扱い
    - vLLM 0.5.5とPyTorch 2.4.0/cu121は古く、sm_120非対応警告が出る。
-   - base環境のPyTorch cu128はGPU認識に成功しているため、CUDA 12.8系を基準にした新環境作成がよい。
+   - 通常運用はTensorRT-LLM Dockerなので、このConda環境は主経路にしない。
+   - vLLM検証が必要になった場合だけ、CUDA 12.8/Blackwell対応済みの環境を別途作る。
 
 ### モデルサイズの目安
 
@@ -269,24 +297,31 @@ docker run --gpus all ...
 
 ## 直近の推奨アクション
 
-1. 新しいConda環境を作る
-   - 例: `llm_cuda128` のようにCUDA世代が分かる名前にする。
+1. TensorRT-LLM Docker imageの実行確認を主タスクにする
+   - まず`nvcr.io/nvidia/tensorrt-llm/release:1.2.0rc6`系でRTX 5090が正しく見えるか確認する。
+   - container内で`nvidia-smi`、TensorRT-LLMバージョン、CUDA runtimeを記録する。
 
-2. PyTorchのGPU認識テストを最初に行う
+2. GPU 0単体と2GPU tensor parallelを分けて測る
+   - GPU 0単体: display負荷が少ないため基準測定に向く。
+   - 2GPU: `NODE`接続なので、速度向上率を実測する。
+
+3. Python/Conda環境は補助用途として整える
+   - 必要なら`llm_cuda128`のようにCUDA世代が分かる名前にする。
    - `torch.cuda.is_available()`
    - `torch.cuda.get_device_name(0)`
    - 小さいtensor演算で実際にGPU計算できるか確認する。
 
-3. vLLM導入前にRTX 5090対応を確認する
-   - 既存の`vllm_rtx5090`は警告が出るため、更新または作り直し推奨。
+4. vLLM環境は主経路にしない
+   - 既存の`vllm_rtx5090`は警告が出るため、通常運用には使わない。
+   - vLLMが必要になった場合のみ、Blackwell対応版で再検証する。
 
-4. モデル置き場を決める
+5. モデル置き場を決める
    - `/home/takasan/models` か `/storage/models` に統一する。
    - Hugging Face cacheを使う場合、`HF_HOME`や`TRANSFORMERS_CACHE`を明示すると管理しやすい。
 
-5. 2GPU推論は単体GPU成功後に検証する
+6. 2GPU推論は単体GPU成功後に検証する
    - まずGPU 0単体で動作確認。
-   - 次に`CUDA_VISIBLE_DEVICES=0,1`でtensor parallelを試す。
+   - 次にTensorRT-LLMのtensor parallel構成でGPU 0/1を使う。
 
 ## 採取コマンド
 
@@ -312,8 +347,9 @@ python3 -c "import torch; ..."
 conda run -n vllm_rtx5090 python -c "import torch; ..."
 docker --version
 docker info
+docker images
+docker ps -a
 nvidia-container-cli -V
 dkms status
 dpkg-query -W nvidia-driver-* cuda-toolkit-* cuda-compiler-* nvidia-container-toolkit
 ```
-
