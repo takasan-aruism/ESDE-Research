@@ -1,0 +1,6 @@
+Seq	Host	Starttime	JobRuntime	Send	Receive	Exitval	Signal	Command
+1	:	1776460166.852	  9089.065	0	0	0	0	python v914_probabilistic_expenditure.py --seed 0 --maturation-windows 20 --tracking-windows 50 --window-steps 500 --tag long > logs/step9_seed0.out 2>&1
+4	:	1776460166.860	  9101.261	0	0	0	0	python v914_probabilistic_expenditure.py --seed 3 --maturation-windows 20 --tracking-windows 50 --window-steps 500 --tag long > logs/step9_seed3.out 2>&1
+3	:	1776460166.857	  9110.536	0	0	0	0	python v914_probabilistic_expenditure.py --seed 2 --maturation-windows 20 --tracking-windows 50 --window-steps 500 --tag long > logs/step9_seed2.out 2>&1
+2	:	1776460166.855	  9136.036	0	0	0	0	python v914_probabilistic_expenditure.py --seed 1 --maturation-windows 20 --tracking-windows 50 --window-steps 500 --tag long > logs/step9_seed1.out 2>&1
+5	:	1776460166.862	  9139.121	0	0	0	0	python v914_probabilistic_expenditure.py --seed 4 --maturation-windows 20 --tracking-windows 50 --window-steps 500 --tag long > logs/step9_seed4.out 2>&1

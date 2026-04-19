@@ -1,0 +1,68 @@
+  [engine_accel] Loaded: link_strength_sum, exclusion, latent_refresh, cycle_finder(C)
+  [engine_accel_v3] Patched: key, get_latent, set_latent
+  [engine_accel_v5] L dict -> ShardedLatentDict
+  [engine_accel_v5] get_latent/set_latent -> shard-direct
+  [engine_accel_v5] RealizationOperator.step -> shard-based refresh
+  ⟐ Injection (300 steps)...
+  ⟐ Injection done (88s).
+  seed=39 mat done. labels=18 links=2990 cids_total=98 hosted=18 ghosts=43
+  seed=39 w=20 vLb=27 hosted=18 ghost=43 births=2 reaped=7 pickup=0u+2c cids_total=109 recip=67 158s
+  seed=39 w=21 vLb=25 hosted=27 ghost=38 births=7 reaped=4 pickup=0u+7c cids_total=114 recip=104 161s
+  seed=39 w=22 vLb=22 hosted=25 ghost=41 births=8 reaped=2 pickup=1u+6c cids_total=119 recip=121 161s
+  seed=39 w=23 vLb=26 hosted=22 ghost=47 births=3 reaped=12 pickup=0u+2c cids_total=126 recip=118 160s
+  seed=39 w=24 vLb=29 hosted=26 ghost=38 births=5 reaped=2 pickup=2u+5c cids_total=134 recip=136 160s
+  seed=39 w=25 vLb=29 hosted=29 ghost=41 births=3 reaped=3 pickup=0u+3c cids_total=137 recip=157 161s
+  seed=39 w=26 vLb=24 hosted=29 ghost=41 births=5 reaped=5 pickup=0u+5c cids_total=137 recip=183 161s
+  seed=39 w=27 vLb=26 hosted=24 ghost=41 births=1 reaped=4 pickup=0u+1c cids_total=140 recip=161 161s
+  seed=39 w=28 vLb=26 hosted=26 ghost=38 births=4 reaped=2 pickup=1u+3c cids_total=144 recip=163 159s
+  seed=39 w=29 vLb=27 hosted=26 ghost=40 births=5 reaped=2 pickup=1u+4c cids_total=150 recip=167 153s
+
+  seed=39 DONE in 4838s
+    cids total:    150
+    hosted now:    27
+    ghosts now:    43
+    reaped:        80
+    label rows:    70
+    subject rows:  64
+    tag entries:   188
+    total tags:    139
+    tag dist:
+             gain_social: 14
+             loss_social: 4
+          gain_stability: 4
+          loss_stability: 5
+             gain_spread: 2
+             loss_spread: 7
+        gain_familiarity: 28
+        loss_familiarity: 75
+    --- v9.8c Pickup ---
+    death records:    43
+      consumed:       43 (100.0%)
+      expired:        0 (0.0%)
+      active (end):   0
+    pickups:          43
+      uncontested:    5
+      contested:      38
+    ttl_bonus stats:
+      max:  4
+      mean: 0.29
+      n>0:  26/150
+    conv ratio:    3.052255136466755
+  v913: link_life_log: 327480 rows -> diag_v914_short/persistence/link_life_log_seed39.csv
+  v913: link_snapshot_log: 28760 rows -> diag_v914_short/persistence/link_snapshot_log_seed39.csv
+  v913: label_member_persistence: 79 rows -> diag_v914_short/persistence/label_member_persistence_seed39.csv
+  v913: shadow_component_log: 28 rows -> diag_v914_short/persistence/shadow_component_log_seed39.csv
+  v913 Step 0 persistence audit done. Output: diag_v914_short/persistence
+  v914 Layer B: 64 cid registered, 622 events, 64 cids have spent, 1 cids hit Q=0, 0 cids Q<0 (MUST be 0)
+    E1_birth: 3 events (3 spent)
+    E1_death: 83 events (83 spent)
+    E2_fall: 74 events (74 spent)
+    E2_rise: 74 events (74 spent)
+    E3_contact: 388 events (382 spent)
+    delta_norm: min=0.0000, max=0.7071, mean=0.1688
+    [debug] last step: cids_with_alive_member_links=0, total alive member links=0, max per cid=0, R>0 entries=0
+    [debug] member_nodes size distribution: [(2, 41), (3, 4), (4, 3), (5, 16)]
+  v914 Layer B audit CSVs written to diag_v914_short/audit/
+    per_event_audit: 622 rows
+    per_subject_audit: 64 rows
+    run_level_audit_summary: 4 rows
