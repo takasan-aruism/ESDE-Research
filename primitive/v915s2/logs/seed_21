@@ -1,0 +1,111 @@
+  [engine_accel] Loaded: link_strength_sum, exclusion, latent_refresh, cycle_finder(C)
+  [engine_accel_v3] Patched: key, get_latent, set_latent
+  [engine_accel_v5] L dict -> ShardedLatentDict
+  [engine_accel_v5] get_latent/set_latent -> shard-direct
+  [engine_accel_v5] RealizationOperator.step -> shard-based refresh
+  ⟐ Injection (300 steps)...
+  ⟐ Injection done (93s).
+  seed=21 mat done. labels=22 links=2916 cids_total=95 hosted=22 ghosts=40
+  seed=21 w=20 vLb=23 hosted=22 ghost=40 births=3 reaped=3 pickup=0u+3c cids_total=99 recip=56 158s
+  seed=21 w=21 vLb=21 hosted=23 ghost=40 births=3 reaped=9 pickup=0u+3c cids_total=100 recip=94 159s
+  seed=21 w=22 vLb=24 hosted=21 ghost=34 births=2 reaped=5 pickup=0u+2c cids_total=105 recip=96 162s
+  seed=21 w=23 vLb=31 hosted=24 ghost=31 births=2 reaped=3 pickup=0u+2c cids_total=114 recip=110 164s
+  seed=21 w=24 vLb=28 hosted=31 ghost=30 births=6 reaped=4 pickup=0u+6c cids_total=117 recip=137 166s
+  seed=21 w=25 vLb=26 hosted=28 ghost=32 births=3 reaped=5 pickup=0u+3c cids_total=118 recip=139 163s
+  seed=21 w=26 vLb=30 hosted=26 ghost=30 births=2 reaped=1 pickup=0u+2c cids_total=124 recip=166 160s
+  seed=21 w=27 vLb=29 hosted=30 ghost=31 births=3 reaped=0 pickup=0u+3c cids_total=126 recip=175 163s
+  seed=21 w=28 vLb=29 hosted=29 ghost=34 births=5 reaped=1 pickup=0u+5c cids_total=131 recip=169 162s
+  seed=21 w=29 vLb=29 hosted=29 ghost=38 births=5 reaped=9 pickup=1u+4c cids_total=136 recip=175 162s
+  seed=21 w=30 vLb=27 hosted=29 ghost=34 births=5 reaped=3 pickup=0u+5c cids_total=139 recip=183 163s
+  seed=21 w=31 vLb=26 hosted=27 ghost=36 births=2 reaped=3 pickup=0u+2c cids_total=140 recip=200 160s
+  seed=21 w=32 vLb=29 hosted=26 ghost=35 births=3 reaped=2 pickup=0u+3c cids_total=146 recip=217 158s
+  seed=21 w=33 vLb=34 hosted=29 ghost=36 births=3 reaped=2 pickup=0u+3c cids_total=154 recip=214 157s
+  seed=21 w=34 vLb=31 hosted=34 ghost=37 births=3 reaped=5 pickup=0u+3c cids_total=154 recip=221 155s
+  seed=21 w=35 vLb=32 hosted=31 ghost=35 births=5 reaped=3 pickup=1u+4c cids_total=160 recip=211 153s
+  seed=21 w=36 vLb=28 hosted=32 ghost=37 births=5 reaped=2 pickup=0u+5c cids_total=161 recip=234 155s
+  seed=21 w=37 vLb=36 hosted=28 ghost=40 births=1 reaped=3 pickup=0u+1c cids_total=170 recip=241 155s
+  seed=21 w=38 vLb=34 hosted=36 ghost=38 births=6 reaped=3 pickup=0u+6c cids_total=174 recip=278 156s
+  seed=21 w=39 vLb=29 hosted=34 ghost=41 births=7 reaped=7 pickup=1u+4c cids_total=176 recip=280 155s
+  seed=21 w=40 vLb=29 hosted=29 ghost=41 births=5 reaped=5 pickup=2u+5c cids_total=181 recip=276 157s
+  seed=21 w=41 vLb=28 hosted=29 ghost=41 births=2 reaped=2 pickup=0u+2c cids_total=182 recip=237 155s
+  seed=21 w=42 vLb=33 hosted=28 ghost=41 births=2 reaped=3 pickup=0u+2c cids_total=189 recip=257 156s
+  seed=21 w=43 vLb=29 hosted=33 ghost=40 births=4 reaped=3 pickup=0u+4c cids_total=189 recip=256 155s
+  seed=21 w=44 vLb=29 hosted=29 ghost=41 births=3 reaped=3 pickup=0u+3c cids_total=192 recip=235 152s
+  seed=21 w=45 vLb=26 hosted=29 ghost=41 births=3 reaped=5 pickup=0u+3c cids_total=192 recip=238 151s
+  seed=21 w=46 vLb=28 hosted=26 ghost=39 births=1 reaped=4 pickup=0u+1c cids_total=195 recip=232 152s
+  seed=21 w=47 vLb=33 hosted=28 ghost=36 births=2 reaped=1 pickup=0u+2c cids_total=202 recip=220 151s
+  seed=21 w=48 vLb=34 hosted=33 ghost=37 births=3 reaped=7 pickup=0u+3c cids_total=206 recip=260 152s
+  seed=21 w=49 vLb=33 hosted=34 ghost=33 births=6 reaped=7 pickup=0u+6c cids_total=211 recip=283 152s
+  seed=21 w=50 vLb=29 hosted=33 ghost=32 births=5 reaped=4 pickup=0u+5c cids_total=212 recip=283 149s
+  seed=21 w=51 vLb=29 hosted=29 ghost=33 births=2 reaped=2 pickup=0u+2c cids_total=214 recip=281 151s
+  seed=21 w=52 vLb=38 hosted=29 ghost=33 births=0 reaped=2 pickup=0u+0c cids_total=223 recip=280 152s
+  seed=21 w=53 vLb=31 hosted=38 ghost=31 births=9 reaped=5 pickup=0u+9c cids_total=225 recip=304 152s
+  seed=21 w=54 vLb=33 hosted=31 ghost=35 births=1 reaped=2 pickup=0u+1c cids_total=228 recip=316 149s
+  seed=21 w=55 vLb=35 hosted=33 ghost=34 births=1 reaped=5 pickup=0u+1c cids_total=231 recip=343 149s
+  seed=21 w=56 vLb=38 hosted=35 ghost=30 births=3 reaped=1 pickup=0u+3c cids_total=237 recip=386 150s
+  seed=21 w=57 vLb=36 hosted=38 ghost=32 births=3 reaped=2 pickup=0u+3c cids_total=238 recip=443 150s
+  seed=21 w=58 vLb=38 hosted=36 ghost=33 births=1 reaped=2 pickup=0u+1c cids_total=241 recip=469 152s
+  seed=21 w=59 vLb=39 hosted=38 ghost=32 births=4 reaped=6 pickup=0u+4c cids_total=246 recip=474 153s
+  seed=21 w=60 vLb=45 hosted=39 ghost=30 births=1 reaped=4 pickup=0u+1c cids_total=253 recip=473 155s
+  seed=21 w=61 vLb=43 hosted=45 ghost=27 births=3 reaped=3 pickup=0u+3c cids_total=254 recip=513 152s
+  seed=21 w=62 vLb=43 hosted=43 ghost=27 births=0 reaped=0 pickup=0u+0c cids_total=254 recip=564 153s
+  seed=21 w=63 vLb=39 hosted=43 ghost=27 births=4 reaped=9 pickup=0u+4c cids_total=254 recip=569 150s
+  seed=21 w=64 vLb=39 hosted=39 ghost=22 births=1 reaped=1 pickup=0u+1c cids_total=255 recip=530 150s
+  seed=21 w=65 vLb=33 hosted=39 ghost=22 births=6 reaped=2 pickup=0u+6c cids_total=255 recip=526 150s
+  seed=21 w=66 vLb=37 hosted=33 ghost=26 births=2 reaped=3 pickup=0u+2c cids_total=261 recip=431 146s
+  seed=21 w=67 vLb=39 hosted=37 ghost=25 births=1 reaped=3 pickup=0u+1c cids_total=264 recip=481 144s
+  seed=21 w=68 vLb=45 hosted=39 ghost=23 births=3 reaped=1 pickup=0u+3c cids_total=273 recip=514 138s
+  seed=21 w=69 vLb=38 hosted=45 ghost=25 births=8 reaped=2 pickup=0u+8c cids_total=274 recip=566 134s
+  v9.15 Layer C: per_cid_self: 274 rows -> diag_v915s2_main/selfread/per_cid_self_seed21.csv
+  v9.15 Layer C: divergence_log: 5239 rows -> diag_v915s2_main/selfread/divergence_log_seed21.csv
+  v9.15 Layer C: class_divergence: 85 rows -> diag_v915s2_main/selfread/class_divergence_seed21.csv
+
+  seed=21 DONE in 11077s
+    cids total:    274
+    hosted now:    38
+    ghosts now:    31
+    reaped:        205
+    label rows:    201
+    subject rows:  200
+    tag entries:   1409
+    total tags:    839
+    tag dist:
+             gain_social: 80
+             loss_social: 12
+          gain_stability: 34
+          loss_stability: 25
+             gain_spread: 2
+             loss_spread: 13
+        gain_familiarity: 278
+        loss_familiarity: 395
+    --- v9.8c Pickup ---
+    death records:    163
+      consumed:       163 (100.0%)
+      expired:        0 (0.0%)
+      active (end):   0
+    pickups:          163
+      uncontested:    5
+      contested:      158
+    ttl_bonus stats:
+      max:  10
+      mean: 0.59
+      n>0:  58/274
+    conv ratio:    2.833836030390034
+  v913: link_life_log: 1557489 rows -> diag_v915s2_main/persistence/link_life_log_seed21.csv
+  v913: link_snapshot_log: 137389 rows -> diag_v915s2_main/persistence/link_snapshot_log_seed21.csv
+  v913: label_member_persistence: 320 rows -> diag_v915s2_main/persistence/label_member_persistence_seed21.csv
+  v913: shadow_component_log: 87 rows -> diag_v915s2_main/persistence/shadow_component_log_seed21.csv
+  v913 Step 0 persistence audit done. Output: diag_v915s2_main/persistence
+  v914 Layer B: 200 cid registered, 5239 events, 199 cids have spent, 65 cids hit Q=0, 0 cids Q<0 (MUST be 0)
+    E1_birth: 12 events (5 spent)
+    E1_death: 320 events (313 spent)
+    E2_fall: 264 events (264 spent)
+    E2_rise: 264 events (264 spent)
+    E3_contact: 4379 events (1719 spent)
+    delta_norm: min=0.0000, max=0.7056, mean=0.2024
+    [debug] last step: cids_with_alive_member_links=0, total alive member links=0, max per cid=0, R>0 entries=0
+    [debug] member_nodes size distribution: [(2, 140), (3, 15), (4, 11), (5, 34)]
+  v914 Layer B audit CSVs written to diag_v915s2_main/audit/
+    per_event_audit: 5239 rows
+    per_subject_audit: 200 rows
+    run_level_audit_summary: 4 rows
