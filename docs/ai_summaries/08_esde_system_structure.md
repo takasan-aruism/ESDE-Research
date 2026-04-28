@@ -1,11 +1,11 @@
-# ESDE システム構造 (v9.16 現行)
+# ESDE システム構造 (v9.18 現行、Developmental フェイズ v10.x 開始)
 
 *作成*: v9.11 完了時点
-*更新*: 2026-04-17 (v9.13 完了、S≥0.20 撤去、persistence-based birth 反映)、2026-04-18 (v9.14 完了、Layer B Shadow Ledger 追加)、2026-04-20 (v9.15 完了、CidSelfBuffer 追加、A/B 分離、event 駆動 Fetch)、**2026-04-21 (v9.16 完了、観察サンプリング機構 = age_factor 比例サンプリング追加、Constitution 接続)**
+*更新*: 2026-04-17 (v9.13 完了、S≥0.20 撤去、persistence-based birth 反映)、2026-04-18 (v9.14 完了、Layer B Shadow Ledger 追加)、2026-04-20 (v9.15 完了、CidSelfBuffer 追加、A/B 分離、event 駆動 Fetch)、2026-04-21 (v9.16 完了、観察サンプリング機構 = age_factor 比例サンプリング追加、Constitution 接続)、2026-04-23 (v9.17 段階 4 完了、他者読み + 接触体記録、CidView + InteractionLog、摂食行動の発見、GPT 監査運用指針 v1 導入)、2026-04-24 (v9.18 段階 5 完了、A+C 統合 = cumulative_cognitive_gain + V_unified + theta_distance、per_step 計算、意識の原資モデルの明確化)、**2026-04-24 (Primitive フェイズ完結、Developmental フェイズ (v10.x) 開始、ディレクトリ `developmental/v10X/`)**
 
-> v9.16 時点の **実際に動いているもの** だけを記述する。
+> v9.18 時点の **実際に動いているもの** だけを記述する。
 > 無効化された機能 (stress decay, compression, torque_factor, S≥0.20 hard threshold, Match Ratio 集約 v9.15 段階 1) は末尾に一覧のみ記載。
-> v9.11 で導入された Cognitive Capture、v9.13 で導入された Persistence-based Birth、v9.14 で導入された Paired Audit (Layer A + Layer B)、v9.15 で導入された CidSelfBuffer (A/B 分離、event 駆動 Fetch)、**v9.16 で導入された観察サンプリング機構 (age_factor = Q_remaining / Q0 比例、missing 3 値化、独自 RNG)** を反映。
+> v9.11 Cognitive Capture、v9.13 Persistence-based Birth、v9.14 Paired Audit (Layer A + Layer B)、v9.15 CidSelfBuffer (A/B 分離、event 駆動 Fetch)、v9.16 観察サンプリング機構 (age_factor 比例、missing 3 値化、独自 RNG)、v9.17 他者読み機構 (read_other_on_e3_contact、other_records、visible_ratio = 相手 age_factor) + InteractionLog (接触体記録の外部器、A 側、状態なし、frozenset で pair 識別) + CidView (cid 情報統合 dataclass、B 側 read-only)、**v9.18 A+C 統合 (cumulative_cognitive_gain = Q0 - Q_remaining、V_unified = Kuramoto オーダーパラメータ、theta_distance_from_birth = 生誕時分布との RMS 距離、coverage_ratio、per_step 計算、v18_window_trajectory 新規 CSV、v18_finalize_reason)** を反映。
 
 ---
 
@@ -1247,4 +1247,600 @@ Taka 憲法 (`ESDE_explainability_constitution.txt`) は既に 2026-03-05 で明
 > 動的均衡が重要になるのは物理スケール扱うタイミング。今は CID の主体が主題。現状 CID があろうがなかろうが物理現象は安定的に発生する。
 
 v9.16 では消費 -1 固定のまま。**物理スケール変動化** (ノード数変動等) の段階で再検討。メモ程度で記録、実装は大幅後回し。
+
+### 45. v9.17 段階 4 = 他者読み + 接触体記録 (Taka 2026-04-21 再考 + 2 AI 統合)
+
+Taka 再考:
+> CID という単位から少し離れる必要がある。CID と CID が重なった状態 = 新しい構造となった = 1 である。その単位が生じたという記録を持つ。
+
+v9.17 は二層で構成:
+- **下層 (他者読み)**: CidSelfBuffer に `other_records` 追加、`read_other_on_e3_contact` で相手の M_c features を取得
+- **上層 (接触体記録)**: 新規クラス `InteractionLog` を A 側外部器として配置、接触体を frozenset で識別
+
+X (接触体) は**器として**のみ。状態なし、動態なし、機能なし。動態が見えたら v10.0 繰り上げ検討。
+
+**Taka 哲学**:
+> 意識、とか認知という概念的な囲い込みは、本来的にその構造とその仕組みをみれば自然とそれらしいものとして定義が座るんだと思う。無理に座らせても転げる。
+
+「構造が先、定義は後」を X に適用。
+
+### 46. CidView dataclass = cid 情報の統合ビュー (v9.17、Code A 提案 Q1)
+
+cid は main loop で int、spec-level では「cid_id/Q0/n_core/theta_birth/B_Gen/M_c features を持つ cid-as-object」として想定されていた。
+このギャップを吸収するため、B 側に `CidView` dataclass を配置:
+
+```python
+@dataclass(frozen=True)
+class CidView:
+    cid_id: int
+    Q0: int
+    n_core: int
+    theta_birth: np.ndarray  # 配列本体
+    B_Gen: float
+    M_c_features: Dict[str, Any]  # 10 項目
+    # ... 集約統計 (theta_birth_mean/std/range) 等
+```
+
+read-only、frozen、再構築関数 `build_cid_view(cid_id, ...)` で構築。
+
+### 47. InteractionLog = 接触体記録の外部器 (v9.17、A 側)
+
+上層の接触体記録:
+- cid 間の E3_contact 発火を frozenset で記録
+- 各行: composition (frozenset), cid_a_id, cid_b_id, step, age_factor_a, age_factor_b, composition_str 等
+- canonical ordering dedup (observer_cid < partner_cid) で pair 単位に
+
+**責務分離の四重担保**:
+1. ファイル分離: `v917_interaction_log.py` は A 側
+2. クラス分離: CID は InteractionLog を知らない
+3. メモリ分離: CidSelfBuffer に InteractionLog 参照なし
+4. 命名分離: 無機質名 `InteractionLog` (X の正式名は動態観察後)
+
+AST テスト: CID → InteractionLog 参照なし、InteractionLog → CID import なしを構造的に担保。
+
+### 48. 他者読み仕様 (v9.17、Taka 5 点判断)
+
+`read_other_on_e3_contact(self_view, other_view, event_index, step)`:
+- visible_ratio = other.Q_remaining / other.Q0 (相手の age_factor)
+- n_features_visible = round(10 × visible_ratio)
+- 相手の M_c features (10 項目) のうち n_features_visible 個を独自 RNG で選択
+- 選ばれなかった項目は missing_feature_names に記録
+- 結果を self.other_records に append
+
+**相手の age_factor を使う** (自分ではない) ことが本質 (候補 q、Gemini 推奨):
+> 自分が若くても、相手が崩れかかっていれば読めない。
+
+これは Taka 発見 2 (消費 → 概念形成 → 穴埋め) の直接実装。
+
+### 49. 他者読みで M_c features のみ (v9.17、α 選択)
+
+取得対象は M_c features (不変値) のみ:
+- B_Gen, Q0, n_core, S_avg_birth, r_core_birth, phase_sig_birth
+- theta_birth_mean, theta_birth_std, theta_birth_range, birth_step
+
+**state (動的値) は取得しない**:
+- Q_remaining, age_factor, 現在の位相, current_lid は他者読みの対象外
+- β (state 取得) / γ (full 取得) は禁止
+
+理由: v9.17 は「生誕時の記録」を他者から取得する機構。相手の現在状態を覗く機構ではない。
+
+### 50. canonical ordering dedup (v9.17、Code A 提案 Q3)
+
+E3_contact pair は両方向発火する可能性がある:
+- observer = cid_A、partner = cid_B で 1 event
+- observer = cid_B、partner = cid_A で 1 event
+
+InteractionLog は pair 単位 (= frozenset) で記録したいので、重複排除が必要:
+- `if observer_cid < partner_cid: InteractionLog.record_contact(...)`
+- canonical な方向 (小さい id → 大きい id) でのみ記録
+- 片方向発火の場合は 0 or 1 行記録 (canonical 方向で発火すれば記録)
+
+この dedup により InteractionLog は pair ごとに最大 1 行。
+
+### 51. Layer B 片方向発火は v9.14 仕様 (Code A 2026-04-23 調査)
+
+Code A の v914_spend_audit_ledger.py 調査:
+
+**`_node_to_cids` は retire 時も削除されない** (L87-89):
+- cid が retire しても、過去に登録された逆引きは残存
+- E3_contact pair 検知には ghost 化した cid も入りうる
+
+**event 発火ゲート** (L203-206):
+- `ob_entry = self.ledger.get(observer_cid)` → ledger 登録済みか
+- `ob_ctx = cid_ctx.get(observer_cid)` → 今 step で hosted か
+- 両方 AND で event 発火、片方でも欠けると skip
+
+**結果**: ghost 化した cid は pair 検知対象だが event 発火しない = 片方向発火。
+main tracking 50 で 77% が片方向発火、smoke tracking 10 で 25.6%。
+
+**v9.14 コード L197 コメント**: 「ctx に無い cid は skip」と意図明示。**bug ではない、v9.14 仕様**。
+
+### 52. E3 自体が主要 Q 消費経路 (Code A 2026-04-23 調査)
+
+Q 減少経路は 1 箇所のみ (`entry["v14_q_remaining"] -= 1`)、E1/E2/E3 の 5 種 event 時に発火。
+
+E3_contact の spend 成立率 41.8% (58% は Q=0 cid に発火して空振り)。
+event record は残るが Q は不変。
+
+**実測 (main 24 seed)**:
+
+| event | 総数 | spend 成立 | 成立率 |
+|---|---|---|---|
+| E1_death | 7,815 | 7,605 | 97.3% |
+| E1_birth | 307 | 108 | 35.2% |
+| E2_rise | 6,114 | 6,112 | 99.97% |
+| E2_fall | 6,114 | 6,110 | 99.93% |
+| **E3_contact** | **100,432** | **41,977** | **41.8%** |
+
+E3 spend 成立数 41,977 = 全消費の 67%。E3 が主要 Q 消費経路。
+
+### 53. 摂食行動の比喩は Taka 向け議論語 (v9.17、GPT 監査指針 v1 適用)
+
+Taka 2026-04-23:
+> Ghost を取得は、摂食行動のようなものだと私は考えている。
+
+- Taka 向け議論: 「摂食行動」の比喩を残す (探索推進力あり)
+- AI 向け実装資料: **「片方向 ghost 接触」または「ghost 由来情報取得イベント」** に操作語化
+- Summary / 原本: 併記方式 (「摂食行動 (片方向 E3 接触の比喩、Taka 2026-04-23)」)
+
+**仕様語にしない**: 「何をもって摂食とするか」は未定義。仕様には落とさない。
+
+### 54. GPT 監査運用指針 v1 (v9.17、2026-04-23 導入)
+
+3 役分離の GPT 役割を精密化した運用指針:
+
+> **GPT 監査は、Taka の比喩的・哲学的な推進力を削るのではなく、それを仮説・実装・観察へ切り分け、AI が誤読しない形に翻訳する役である。**
+
+主な規定:
+- §1: 監査の基本姿勢 (探索を削がない、比喩を即否定しない、先に切り分ける)
+- §2: 読者別方針 (Taka 向け / AI 向け / Summary / 外部)
+- §3: 比喩表現への対応 (4 項目形式で、弱体化ではなく誤読防止)
+- §7: 「弱める」提案時の自問 4 項 (これは誰向けか、何の誤読を防ぐか、etc.)
+
+**Claude の資料作成時の自己規律としても機能** (詳細は `08_audit_principles.md`)。
+
+### 55. 物理計算完全不変 (v9.15-v9.17、4 段階連続)
+
+| 比較 | max 絶対差 |
+|---|---|
+| v9.15 段階 1 → 段階 2 | 0.0 |
+| v9.15 段階 2 → v9.16 段階 3 | 0.0 |
+| v9.16 段階 3 → v9.17 段階 4 | **0.0** (5,224 cid 全量) |
+
+認知層の拡張が物理層に一切波及しない設計。**Taka 方針「認知層は物理層を支配しない」(2026-04-16) の構造的実証**。
+
+
+### 56. v9.18 段階 5 = A+C 統合 (Taka 2026-04-23)
+
+Taka:
+> A と C は案外近いように感じる。A = X の原資を C と置くことで興味深いことが起きる。
+
+- **A (差分予測)**: Q 消費に伴う CID 自身の一体感の方向のズレ
+- **C (意識の原資)**: Q 消費の量的記録
+- A と C の統合が本線、B (摂食) / D (三項共鳴) / E (Layer A 再定義) は v9.18 では扱わない
+
+### 57. CidSelfBuffer v9.18 拡張 (純 read-only 観察)
+
+既存フィールド (v9.17 まで) は frozen、以下を追加:
+
+**C (認知増加)**:
+- `v18_cumulative_cognitive_gain` (int): `Q0 - Q_remaining`、単調非減少
+
+**A-Gemini (V_unified 系)**:
+- `v18_birth_v_unified` (complex): 生誕時の V_unified、CID 確立時に 1 回計算
+- `v18_v_unified_concentration_birth` (float): CSV 用キャッシュ
+- `v18_unity_direction` (float | None): V_unified の偏角 (-π, π)
+- `v18_unity_concentration` (float | None): V_unified の振幅 (0, 1)
+- `v18_unity_direction_shift` (float | None): 生誕時との angle 差 (0, π)、ラップ済み絶対値
+- `v18_unity_k` (int): 計算対象ノード数
+
+**A-GPT (theta_distance 系)**:
+- `v18_theta_distance_from_birth` (float | None): 生誕時分布との RMS 距離
+- `v18_theta_distance_coverage_ratio` (float): 生誕時 ∩ 現在 / 生誕時
+
+**ghost 化時の _final 値** (Code A 独自判断):
+- `v18_ghosted_at_step`, `v18_finalize_reason` ('ghost' | 'tracking_end')
+- `v18_cognitive_gain_final`, `v18_v_unified_concentration_final`, etc.
+
+**property 再利用** (既存フィールドから派生、新規実体なし):
+- `v18_birth_theta_by_node`: sorted_member_list と theta_birth から構築
+- `v18_birth_member_nodes`: 既存 member_nodes の alias
+
+### 58. V_unified = Kuramoto オーダーパラメータ (Gemini 案、v918_unity_metrics.py)
+
+```python
+def compute_v_unified(theta_values: np.ndarray) -> complex:
+    """V_unified = (1/k) * Σ exp(i * theta)"""
+    if len(theta_values) == 0:
+        return complex(0.0, 0.0)
+    return np.mean(np.exp(1j * theta_values))
+```
+
+Gemini 評価 (2026-04-23):
+> Kuramoto 系と数学的に整合、これが最適解
+
+**重要**: これは**物理層 θ の同期度**を測る指標。Taka の「統合」(認知層 + 意識層の協働) とは**層が違う** (v9.18 Phase 5 で発覚)。
+
+### 59. theta_distance = 生誕時分布との RMS 距離 (GPT 案、v918_theta_distance.py)
+
+```python
+# 共通ノード (B 案 + coverage_ratio)
+common_nodes = birth_member_nodes & current_member_nodes
+coverage_ratio = len(common_nodes) / len(birth_member_nodes)
+
+# 位相差をラップ (-π, π]
+wrapped_diff = ((theta_curr - theta_birth + π) % (2π)) - π
+distance = sqrt(mean(wrapped_diff ** 2))
+```
+
+coverage_ratio は member_nodes frozen のため v9.18 では定数 1.0。将来 B (摂食) で member_nodes 動的化時に意味を持ち始める。
+
+### 60. per_step 計算の採用 (Taka 2026-04-23)
+
+Taka:
+> Step 単位。時間スケールが認知層では違う。処理が重くなる一方でも基本は容認。
+
+呼び出しタイミング: event Fetch ループ後、`cumulative_step += 1` 直前。q_remaining と engine.state.theta が step 内全更新後の値。
+
+**wall time 影響**: v9.17 以前の 24 並列で CPU が完全使用されていなかったため、per_step のオーバーヘッドが既存待機時間に吸収された。v9.17 main と 1.000x 完全同値の想定外の好結果。
+
+### 61. v18_window_trajectory 新規 CSV (Code A 独自判断)
+
+指示書は「per_window CSV に列追加」を想定したが、既存 per_window.csv は Layer A (seed+window 集約レベル)。v18_* per-CID 値を加えると bit-identity を破る。
+
+Code A 判断:
+- per_window.csv (Layer A) は**一切触らない** (bit-identity 維持)
+- **新規 CSV `v18_window_trajectory` を selfread/ に作成**
+- 1 row/cid/window、v18_* 指標 6 主列 + 補助 1 列 (生の unity_direction)
+
+これは v9.15-17 で確立された「Layer A frozen」方針の厳密な遵守。
+
+### 62. 意識の原資モデル (Taka 2026-04-24、概念化、v10.x で実装予定)
+
+Taka:
+> 認知層の Q を使用することはイベントである。このイベントに対して 1 の Q が消費される。この消費された Q の 1 はどうなる? ただ消えるだけということはあり得ない。何になるの? ということで意識層の 1 という定義をした。
+
+**構造**:
+
+```
+認知層 event (Q 消費 1)
+        ↓ エネルギー保存則的に
+意識層に 1 として転化 (原資の獲得)
+        ↓
+意識層が活動開始
+```
+
+v9.18 では概念化のみ。意識層の実装は v10.x で検討。
+
+### 63. 統合の真の意味 (Taka 2026-04-24)
+
+Taka:
+> 認知機能の次に意識が発達することで、実質二つの機能が一つの働きをすることとなる。その意味で統合という言葉を用いた。
+
+**統合 = 認知層 + 意識層が一つの働きをする状態**。物理層の θ 同期とは別概念。
+
+**v9.18 V_unified は物理層の同期度を測っていた** (層の混同)。保留運用で物理層時間発展の Baseline として将来活用。
+
+### 64. 層の混同の回避 (AI 向け注意事項)
+
+v9.18 で Claude / 2 AI 全員が Taka の「統合」を物理層の操作語 (V_unified) に翻訳した誤り。GPT 監査運用指針 v1 でも防げなかった。
+
+**新スレッド AI の教訓**:
+- 比喩を操作語に翻訳する前に、**どの層の話かを検証**する
+- Taka の「統合」「認知」「意識」は**認知層・意識層の用語**、物理層の指標と等値しない
+- 数学的に美しい指標 (Kuramoto 等) でも、比喩の層と合っているか確認
+- WiFi 数珠つなぎ (物理的必然で遅い) と リモートアクセス (機能的統合) の比喩を思い出す
+
+### 65. 5 段階連続で物理計算完全不変 (v9.15-v9.18)
+
+| 比較 | max 絶対差 |
+|---|---|
+| v9.15 段階 1 → 段階 2 | 0.0 |
+| v9.15 段階 2 → v9.16 段階 3 | 0.0 |
+| v9.16 段階 3 → v9.17 段階 4 | 0.0 |
+| v9.17 段階 4 → v9.18 段階 5 | **0.0** (5,224 cid 全量) |
+
+**Taka 方針「認知層は物理層を支配しない」(2026-04-16) の継続的実証**。認知層の拡張が物理層に一切波及しない設計。
+
+### 66. Primitive フェイズ完結、Developmental フェイズ (v10.x) 開始 (2026-04-24)
+
+GPT 短報 (2026-04-24) + Taka 判断で確定。
+
+- **Primitive フェイズ**: v9.0 〜 v9.18 で完結
+- **Developmental フェイズ**: v10.x、ディレクトリ `developmental/v10X/`
+- **主題**: 認知層と意識層の発達過程の観察
+
+### 67. Developmental フェイズ名選定 (Taka 2026-04-24)
+
+Taka:
+> 名称は conscious と言いたいところだが、developmental を推す。理由は、このフェイズで始めて意識という私たちが掲げてきた対象のようなもの、を扱えるようになることを目標としているからだ。
+
+Developmental を選んだ理由:
+- Cognition フェイズで「夢を見すぎた」反省を名前で予防
+- 意識「そのもの」ではなく「発達過程」を扱う
+- 到達宣言を避ける
+
+### 68. 層ラベルを看板として先に立てる運用 (GPT 診断 2026-04-24)
+
+v9.18 の層の混同 (V_unified が物理層を測っていた) の原因:
+> v9.18 を Primitive の延長として扱ったため、AI 側が物理層や既存認知層の延長として自然に解釈した。
+
+**予防策**: フェイズ名レベルで層を明示。Developmental フェイズでは「意識層の発達」を扱うことを看板として先に立てる。
+
+### 69. 探索帯域の明示 (GPT 概念 2026-04-24)
+
+> v10.x 化は定義の固定ではなく、探索帯域の明示である。
+
+- **構造 = 探索帯域 = 層**を先に明示
+- **定義 = 意識層の具体的機能**は後で Taka の直感が詰める
+- Taka 哲学「構造が先、定義は後」の運用的翻訳
+
+### 70. フェイズ名と層名の対応 (Taka 整理 2026-04-24)
+
+| フェイズ名 | 主に扱う層 | 対応関係 |
+|---|---|---|
+| Genesis | 物理層 | 自然に一致 |
+| Ecology | 物理層の拡張 | 自然に一致 |
+| Cognition | 名前は認知層、実際は存在層 | **ずれ (夢を見すぎた)** |
+| Autonomy | 存在層の確立 | 後から一致 |
+| Primitive | 認知層の実装 | 名前は中立的 |
+| **Developmental** | **認知層 + 意識層の発達** | **初の意図的な統合** |
+
+Taka:
+> フェイズ名との対応は本来なかった。今回はじめて統合したフェイズということになり、その意味で初の試みとなる。
+
+### 71. 意識層の具体的実装は未実装 (v9.18 まで)
+
+v9.18 で概念化された意識の原資モデル:
+```
+認知層 event (Q 消費 1)
+        ↓ エネルギー保存則的に
+意識層に 1 として転化 (原資の獲得)
+```
+
+実装はまだ。Developmental フェイズで構造を観察しながら段階的に実装予定。Taka 指示「寝かせる」に従い急がない。
+
+### 72. Developmental フェイズの禁止事項 (AI 向け)
+
+1. **「意識を実装した」と宣言しない** (到達宣言禁止)
+2. **物理層の同期を意識層の統合と同一視しない** (v9.18 層の混同の反省)
+3. **意識層の具体的機能を急いで定義しない** (Taka 直感待ち)
+4. **Cognition フェイズの「夢を見すぎた」を繰り返さない**
+5. **旧 v10 の再付番をしない** (Taka 判断、悪い見本として保存)
+6. **Developmental フェイズ以降、層を看板として明示しない資料は作らない** (探索帯域の明示)
+
+### 73. 旧 v10 の扱い (Taka 判断 2026-04-24)
+
+Taka:
+> v11 にする必要もない。私が覚えてるので必要な時にいう。当時は ESDE の進化にここまで苦戦するとは思わんかったから雑に V10 に繰り上げたという悪い見本
+
+- 旧 v10 (複数インスタンス計画) は再付番しない
+- 悪い見本として保存
+- 「間違いの価値の反転」の一例
+
+
+---
+
+# Developmental フェイズの構造 (v10.x、追加)
+
+*追加*: 2026-04-28、Claude
+*対象*: v10.0 / v10.1 / v10.2
+
+## 74. 4 層アーキテクチャの確定 (v10.0)
+
+### 74.1 各層の役割
+
+```
+意識層 (Layer C):
+  - 状態変数: C (conscious_layer、cog.C[cid])
+  - 性質: 選択的鮮明、シングルタスク
+  - 動作: 認知活動から C+1 (転化)、意識活動で C-1 (消費)
+  - 実装: v10.2 で初めて動作機構として実装
+
+認知層 (Layer B):
+  - 状態変数: Q (v14_q_remaining)
+  - 性質: ぼやける、全体把握
+  - 動作: E1/E2/E3 spend で Q-1
+  - 実装: v9.x からの継続
+
+存在層 (Layer A):
+  - 状態変数: Label (member_nodes)
+  - 性質: 物理層から論理的に切り出された CID
+  - 動作: detach で ghost 化、cog.is_ghost で判定
+  - 実装: v9.x からの継続、frozen 維持
+
+物理層:
+  - 状態変数: engine.alive_l_set、virtual_layer
+  - 性質: ESDE の最低層、frozen
+  - 動作: engine.step で進行
+  - 実装: v9.x から完全 frozen
+```
+
+### 74.2 層間の動作関係
+
+```
+物理層 step
+  ↓
+Layer A: per-cid update (φ, attention, familiarity)
+  ↓
+v9.10 Pulse + v9.11 Cognitive Capture
+  ↓
+v914_cid_ctx 構築
+  ↓
+Layer B: observe_step (E1/E2/E3 + spend + ingestion)
+  ├ E1/E2: 無条件 Q-1 (確率対象外)
+  └ E3 onset:
+      候補集合判定
+      ├ cognition_candidate (Q>0)
+      └ consciousness_candidate (相手 ghost で residual_Q>0)
+      確率決定 (decide_balance)
+      ├ "cognition" → Q-1 + C+1 + virtual_* 更新
+      ├ "consciousness" → C-1 + 即時摂食 (案 B、Code A 採用)
+      └ "skip" → 何もしない
+  ↓
+v9.17: InteractionLog (E3_contact のみ)
+  ↓
+v9.18: v18_* 更新
+  ↓
+cog.reap_ghosts_step (step 末 reap、residual_Q=0 ghost を一括 reap)
+```
+
+## 75. 死の二階層 (v10.0)
+
+| 階層 | 条件 | 状態 |
+|---|---|---|
+| 存在層の死 | Label 死亡 (detach) | ghost 化 |
+| 認知層の死 | 残 Q = 0 | ghost 消滅 |
+
+ghost = 「魂が抜けた容器」。原資 (Q) を保持する限り存在し続け、Q=0 で消滅。固定 TTL (v9.x の GHOST_TTL=10) は v10.1 で除去。
+
+## 76. 摂食機構 (v10.1 → v10.2)
+
+### 76.1 v10.1 (機械発動)
+
+```
+E3 onset 検出
+  ↓
+全 E3 spend が走る (Q-1)
+  ↓
+ingestion phase (_run_ingestion_phase)
+  - 1 ghost 食べきり
+  - Q0 で頭打ち、消化分は散逸
+  - 1 CID:多 ghost = ランダム選定 (ingestion_rng)
+  - 多 CID:1 ghost = cid_id 昇順
+  ↓
+step 末一括 reap (residual_Q=0 ghost)
+```
+
+### 76.2 v10.2 (確率発動 + 即時摂食)
+
+```
+E3 onset 検出
+  ↓
+候補集合判定 (条件因子チェック先行)
+  ↓
+確率決定 (decide_balance)
+  - cognition: Q-1 + C+1 + virtual_* 更新
+  - consciousness: C-1 + 即時 attempt_ingestion (案 B)
+  - skip: 何もしない (Q=0 ∧ C=0 等)
+  ↓
+step 内動的決定の連鎖:
+  先行 cid が ghost を食べきる → ghost.residual_Q=0
+  → 後続 cid の意識候補消失 → 認知確定
+  ↓
+step 末一括 reap (residual_Q=0 ghost)
+```
+
+## 77. 確率決定機構 (v10.2)
+
+### 77.1 確率式
+
+```
+P(認知) = Q / (Q + C)
+P(意識) = C / (Q + C)
+```
+
+シンプル案。Taka 判断 2026-04-26。観察結果次第で v10.3 以降に調整。
+
+### 77.2 確率対象
+
+- E3 onset のみ確率決定の対象
+- E1 / E2 は従来通り無条件 Q-1 (確率対象外、C 蓄積に寄与しない)
+- 双方向 E3 (hosted-hosted): 必ず認知確定 (三項共鳴は v10.3)
+- 空摂食ケース (residual_Q=0 ghost): 認知確定
+- phantom (reaped 済 cid): 認知確定
+
+### 77.3 解釈 X (Code A 指摘 → Taka 採用)
+
+既存の E3 spend (Q-1) が「認知活動」と同義:
+- 認知が立つ: Q-1 + C+1 + virtual_attention/familiarity 更新
+- 意識が立つ: C-1 + 摂食発動 (Q-1 はしない、virtual 更新も止まる)
+
+## 78. RNG ストリーム (5 系統、完全分離)
+
+```
+engine.rng (Layer A 物理層)
+capture_rng (v9.11 Cognitive Capture、seed ^ 0xC0FFEE)
+ingestion_rng (v10.1 摂食選定、seed ^ 0x1A7E57)
+v9.17 hash ローカル (cid_self_buffer 内、自前 hash)
+balance_rng (v10.2 確率決定、seed ^ 0xBA1A2C)
+```
+
+完全分離の規律により bit-identity 維持。
+
+## 79. 観察ログ (v10.2 で追加)
+
+### 79.1 balance/ ディレクトリ (新規)
+
+- `balance_decisions_seed{N}.csv` (確率決定 raw、18 列)
+- `c_trajectory_seed{N}.csv` (per cid × per window、C 推移)
+- `balance_summary_seed{N}.csv` (run-level、Q+C 保存則含む)
+
+### 79.2 既存 CSV への追加
+
+- `per_subject_seed{N}.csv` に C 関連 4 列追加
+  - C_at_run_end
+  - n_cognition_decisions
+  - n_consciousness_decisions
+  - n_balance_skipped
+
+## 80. 二層 bit-identity 検証 (v10.2)
+
+### 80.1 層 A (v10.2 内部)
+
+同 seed で 2 回 run → 出力が完全一致 (内部決定論性)
+
+### 80.2 層 B (vs v9.18 baseline)
+
+per_event_audit を v9.18 baseline と diff:
+- E1/E2 行: 完全一致
+- E3 行: 意識当選で乖離 (想定通り、Code A 指摘でこの行を除外して比較)
+
+両者は別の検証で、両方を維持。
+
+## 81. 物理層 frozen の継続証拠
+
+```
+v9.18: subject 5,224
+v10.1: subject 5,224 (完全一致)
+v10.2: subject 5,224 (完全一致)
+```
+
+確率決定機構と意識層 C の追加が物理層を一切 perturb していない。
+
+## 82. v10.x 出力データ構造
+
+```
+diag_v102_main/
+├── audit/        per_event_audit + per_subject_audit + run_level_audit_summary
+├── balance/      balance_decisions + c_trajectory + balance_summary (v10.2 新規)
+├── ingestion/    ingestion_events + phantom_contacts + ingestion_summary (v10.1 新規)
+├── subjects/     per_subject + reaped_history
+├── selfread/     v9.18 v18_* trajectories
+├── persistence/  v913 link logs
+├── pulse/, labels/  baseline 同等
+└── analysis/     v10.2 詳細解析 CSV 10 本 (Code A 実施)
+```
+
+## 83. v10.3 への構造的素材 (確定)
+
+### 83.1 主題: 三項共鳴の本格実装
+
+- 双方向 E3 (生きた CID-CID 接触) で両者 C-1
+- v9.14 棚上げから復活
+- 上位の層 (CID 連携の集合的構造) への素材
+
+### 83.2 主役候補
+
+```
+n_core=5 の repeated 群: 217 cid (4.2%)
+n_core=4 の repeated 群: 53 cid (1.0%)
+合計 ~270 cid
+```
+
+### 83.3 系の状態
+
+- 資源は限定的 (Q 枯渇進行、流入鈍化)
+- C は確保されている (60 倍蓄積、上位集団に偏在)
+- タイトな (= 競合的な) 環境
 
