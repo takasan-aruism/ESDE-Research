@@ -1456,10 +1456,11 @@ def v11_compute_delta(m_c, e_t):
 # MAIN
 # ================================================================
 def run(seed=42, maturation_windows=20, tracking_windows=10,
-        window_steps=500, tag="short", disable_e3=False):
+        window_steps=500, tag="short", disable_e3=False, N=None):
 
     t_start = time.time()
-    N = V82_N
+    if N is None:
+        N = V82_N
     torus_sub = build_torus_substrate(N)
 
     outdir = Path(f"diag_v102_{tag}")
@@ -3410,6 +3411,10 @@ if __name__ == "__main__":
         help="§6.4 ablation: E3_contact event の発行を抑止 (E1/E2 は不変、"
              "contacted_pairs 登録は維持、Layer A / baseline CSV は bit-identical)"
     )
+    parser.add_argument(
+        "--N", type=int, default=None,
+        help="ノード数。未指定なら V82_N (=5000) を使用。スケールテスト用。"
+    )
     args = parser.parse_args()
 
     run(seed=args.seed,
@@ -3417,4 +3422,5 @@ if __name__ == "__main__":
         tracking_windows=args.tracking_windows,
         window_steps=args.window_steps,
         tag=args.tag,
-        disable_e3=args.disable_e3)
+        disable_e3=args.disable_e3,
+        N=args.N)
