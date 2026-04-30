@@ -1822,25 +1822,174 @@ diag_v102_main/
 └── analysis/     v10.2 詳細解析 CSV 10 本 (Code A 実施)
 ```
 
-## 83. v10.3 への構造的素材 (確定)
+## 83. v10.3: 双方向 E3 機構と Integration 登場条件の観察 (完了)
 
-### 83.1 主題: 三項共鳴の本格実装
+### 83.1 主題
 
-- 双方向 E3 (生きた CID-CID 接触) で両者 C-1
-- v9.14 棚上げから復活
-- 上位の層 (CID 連携の集合的構造) への素材
+生きた cid 同士の意識層レベルの接触を機構として最小追加し、Layer 5 (CID 共鳴) の入口を開ける。
 
-### 83.2 主役候補
+### 83.2 三層構造の確定
+
+| レベル | 位置づけ | v10.3 でやること |
+|---|---|---|
+| 双方向 E3 | 機構 | 実装する (両者 C-1) |
+| 三項共鳴 | 観察される統計的現象 | 第三項候補のリストアップで記録 |
+| Integration | その上位解釈 | 概念定義のみ、機構実装は v10.4 以降 |
+
+### 83.3 双方向 E3 の発火条件
 
 ```
-n_core=5 の repeated 群: 217 cid (4.2%)
-n_core=4 の repeated 群: 53 cid (1.0%)
-合計 ~270 cid
+両者が hosted ∧ Q > 0 ∧ C ≥ 1 ∧ 同一 alive link 初回接触 onset
 ```
 
-### 83.3 系の状態
+- 両者 C-1 を引く (両者対称消費)
+- 既存 E3 (Q-1) と独立に発火 (同 step で両方)
+- 初回接触のみ (持続接触で毎 step 引かない)
+- ghost との接触は既存 E3 のみ
 
-- 資源は限定的 (Q 枯渇進行、流入鈍化)
-- C は確保されている (60 倍蓄積、上位集団に偏在)
-- タイトな (= 競合的な) 環境
+### 83.4 第三項候補のリストアップ (10 カテゴリ)
+
+| Cat | 候補 | 取得経路 |
+|---|---|---|
+| 1a | closed triad | post-process |
+| 1b | open triad (B 中継) | post-process |
+| 1c | proximate cid | engine + 重心計算 |
+| 2a | 共有ノード | member_nodes logger |
+| 3a-i | 同 cid と E3_contact 経験あり | per_event_audit + per_subject |
+| 3b | 共有 phase 領域 | per_subject |
+| 3c | 共有 birth_window | per_subject |
+| 4a | 重心距離 | member_nodes logger |
+| 4b | 世代距離 | per_subject |
+| 4c | 窓内共在 | per_window |
+
+Cat 2b/2c (共有 link/cycle): v10.3 では見送り、v10.4 以降。
+Cat 5 (cid 自己参照): 永久除外 (神の手リスク)。
+
+### 83.5 観察対象の動的絞り込み (Stage 1/2/3)
+
+- Stage 1: n_core ≥ 4 ∧ n_consciousness ≥ 5 (94 cid)
+- Stage 2: Stage 1 partner (1,255 cid)
+- Stage 3: 第三項として現れた cid
+
+合計 1,349 cid (全 cid 5,224 の 25.8%)。
+
+bias 監視: target 外 fired は集計のみ (`n_be3_outside_targets`)。
+
+### 83.6 3 logger 構成
+
+```
+diag_v103_main/bidirectional/
+├── bidirectional_e3_log_seed{N}.csv             (raw event、A-B 内部情報)
+├── bidirectional_e3_3rd_cid_log_seed{N}.csv     (Cat 1a/1b/1c の cid_c 詳細)
+└── bidirectional_e3_member_nodes_log_seed{N}.csv (Cat 2a/4a の member_nodes)
+```
+
+### 83.7 本番 run 結果 (N=5000、24 seeds × tracking 50)
+
+```
+24/24 seeds 完走、wall time mean 2.97 h
+双方向 E3 fired 6,824 件 / 24 seeds (target 内 2,150 + target 外 4,674)
+labels 24/24 + persistence 96/96 完全一致 (物理層 frozen)
+total_decisions 100,432 完全一致
+```
+
+### 83.8 系の動学変化 (核心発見)
+
+| 指標 | v10.2 | v10.3 | 差分 |
+|---|---:|---:|---|
+| C_max | 85 | 63 | -26% |
+| C_mean | 28.64 | 20.99 | -27% |
+| Q+C total | 25,868 | 19,107 | -26% |
+
+**観察ルールが系の動学を変える**: 双方向 E3 で C-1 を引くという観察記録ルール (cid 内部選択ではなく観察者の単位設定) が、系の C 蓄積を 27% 抑制した。観察者依存性を内包した系として ESDE が立ち上がる。
+
+### 83.9 第三項の構造的発見
+
+```
+closed triad (Cat 1a): 39 件 (1.4%)
+open triad (Cat 1b): 2,788 件 (98.6%)
+比率 116:1 で open triad 主役性
+```
+
+→ 三項共鳴の主役は中継者経由の非対称三項。3 cid 三角形ではない。v3.4 期 tripartite loop の cid スケール再現。
+
+### 83.10 持続性ゼロ
+
+repeated_partners = 0 (本番でも shadow audit でも同様)。**Integration の物理的持続は ESDE では成立しない、統計的痕跡として観察するしかない**ことが本番規模で確定 (v3.4 bridge_max_life=1 と整合)。
+
+### 83.11 Integration 概念 (Taka 整理 2026-04-29)
+
+A + B を抱える上位層の主体。個別 cid の二者択一を Integration が両立させる。
+
+ESDE 階層進化系譜:
+```
+ノード → cid (複数ノードの Integration) → ??? (複数 cid の Integration、v10.3 観察) → SEED 統合
+```
+
+cid 自体が「複数ノードの Integration」だった。Aruism 階層進化の同型反復。
+
+v10.3 では機構実装せず、概念定義と観察データの蓄積のみ。
+
+### 83.12 v10.3 で確立した運用ルール
+
+- 機構と観察と解釈の三層分離
+- 「観察者が決めた記録ルール」としての C 消費
+- 動的絞り込みと bias 監視のセット運用
+- 第三項候補の多軸記録 (一意に決めない、複数同時成立を記録)
+- Paired Audit 原則の継続 (shadow audit + 物理層 frozen + bias 監視)
+
+### 83.13 ESDE 階層整合性の証明
+
+v10.3 で:
+- 物理層は不変 (labels + persistence 完全一致)
+- 認知層は微増 (+1.5% cognition won)
+- 意識層は -27% (C 蓄積抑制)
+
+新機構が下層を壊さず、上層の動学を変える階層分離の正しさが本番規模で確認された。
+
+---
+
+## 84. v10.4 への構造的素材
+
+### 84.1 v10.4 主題候補
+
+#### 候補 A: Integration 独立化 (Code A 最優先推奨)
+
+- open triad ベースの Integration 定義 (closed triad は稀少すぎる)
+- Q 分配機構の設計 (Integration が取った Q を cid 個別代謝として分配)
+- 摂食順序問題の根本解決
+- Layer 5 (CID 共鳴) の本格実装
+
+#### 候補 B: 嗜好の数理化
+
+- post-ingestion weight bias
+- salience 駆動
+
+#### 候補 C: focus / attention_weight の動的化
+
+- selectivity の機構化
+
+#### 候補 D: 摂食順序問題の単独修正
+
+- Integration 不在では意味薄い可能性
+
+優先順位は Taka 直感 + v10.3 観察結果から決定。
+
+### 84.2 v10.3 で観察された軸の継承
+
+- 軸 1: 双方向 E3 の n_core 跨ぎパターン
+- 軸 2: 主役 cid の動的検出
+- 軸 3: 第三項候補のカテゴリ重なり数 (Integration 登場前兆)
+- 軸 4: 持続性 (Integration 機構導入で再評価)
+- 軸 5: 系の動学 (C 蓄積、認知/意識バランス)
+
+### 84.3 v10.3 で確立された設計哲学の継承
+
+- 機構と観察と解釈の三層分離
+- 「観察者が決めた記録ルール」としての C 消費
+- 動的絞り込みと bias 監視のセット運用
+- 第三項候補の多軸記録
+- Paired Audit 原則
+
+これらは v10.4 でも踏襲。Integration 独立化に進む場合も shadow audit + 物理層 frozen + bias 監視を継続。
 
