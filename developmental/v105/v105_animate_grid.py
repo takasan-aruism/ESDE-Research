@@ -296,6 +296,82 @@ DISCRETE_COLORSCALE = [
 ]
 
 
+PALETTE_HEX = [
+    "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd",
+    "#8c564b", "#e377c2", "#bcbd22", "#17becf",
+    "#aec7e8", "#ffbb78", "#f7b6d2",
+]
+RECORDED_COLOR = "rgba(150,150,150,0.6)"
+
+
+def build_frame_traces(snapshot_cid_to_beta, cid_nodes, recorded_set):
+    """1 frame 分の traces (背景 grid、cid star edges、β cohort edges、
+    cid member nodes、be3 fired edges) を返す。
+
+    Returns: dict with keys 'star_x', 'star_y', 'beta_x', 'beta_y',
+                              'node_x', 'node_y', 'node_color', 'node_text'
+    """
+    from collections import defaultdict
+
+    cid_centroids = {}  # cid -> (x, y)
+    node_x, node_y, node_color, node_text = [], [], [], []
+    star_x, star_y = [], []
+    beta_x, beta_y = [], []
+
+    for cid, bid in snapshot_cid_to_beta.items():
+        nodes = cid_nodes.get(cid, [])
+        if not nodes:
+            continue
+        # ノード位置 (col, row)
+        positions = []
+        for n in nodes:
+            r = n // GRID_SIDE
+            c = n % GRID_SIDE
+            positions.append((c, GRID_SIDE - 1 - r))  # y 反転で見た目 row 0 を下に
+        cx = sum(p[0] for p in positions) / len(positions)
+        cy = sum(p[1] for p in positions) / len(positions)
+        cid_centroids[cid] = (cx, cy, bid)
+
+        # 各 member node を node trace に
+        if bid in recorded_set:
+            color = RECORDED_COLOR
+        else:
+            color = PALETTE_HEX[bid % len(PALETTE_HEX)]
+        for px, py in positions:
+            node_x.append(px); node_y.append(py)
+            node_color.append(color)
+            node_text.append(f"cid {cid} → β{bid}")
+
+        # cid 内 star edges (centroid → 各 member)
+        for px, py in positions:
+            star_x += [cx, px, None]
+            star_y += [cy, py, None]
+
+    # β-cohort edges: 同 β cid centroid 間 (各 pair line)
+    beta_to_centroids = defaultdict(list)
+    for cid, (cx, cy, bid) in cid_centroids.items():
+        beta_to_centroids[bid].append((cx, cy, cid))
+    for bid, cents in beta_to_centroids.items():
+        if bid in recorded_set:
+            continue  # recorded β は edge 描かない (ノード灰だけ)
+        if len(cents) < 2:
+            continue
+        # all-pair connect
+        for i in range(len(cents)):
+            for j in range(i + 1, len(cents)):
+                x1, y1, _ = cents[i]
+                x2, y2, _ = cents[j]
+                beta_x += [x1, x2, None]
+                beta_y += [y1, y2, None]
+
+    return {
+        "star_x": star_x, "star_y": star_y,
+        "beta_x": beta_x, "beta_y": beta_y,
+        "node_x": node_x, "node_y": node_y,
+        "node_color": node_color, "node_text": node_text,
+    }
+
+
 def build_plotly_grid_figure(seed_to_data: dict, seeds_to_show: list[int],
                               *, default_seed: int):
     import plotly.graph_objects as go
@@ -306,32 +382,40 @@ def build_plotly_grid_figure(seed_to_data: dict, seeds_to_show: list[int],
     # 1 seed の場合 — slider のみ
     if len(seeds_to_show) == 1:
         seed = seeds_to_show[0]
-        grids, beta_state_final = seed_to_data[seed]
+        snapshots, cid_nodes_data, beta_state_final, _ = seed_to_data[seed]
         recorded_set = {bid for bid, st in beta_state_final.items() if st == "recorded"}
 
         plotly_frames = []
-        for w, grid in grids:
-            unique_bids = sorted(set(grid.flatten().tolist()) - {-1})
+        for w, cid_to_beta in snapshots:
+            tr = build_frame_traces(cid_to_beta, cid_nodes_data, recorded_set)
+            n_cids = len(cid_to_beta)
+            unique_bids = sorted(set(cid_to_beta.values()))
             n_active = sum(1 for b in unique_bids if b not in recorded_set)
             n_recorded = sum(1 for b in unique_bids if b in recorded_set)
-            n_filled = int((grid != -1).sum())
-
-            z = grid_to_color_index(grid, recorded_set)
 
             plotly_frames.append(go.Frame(
-                data=[go.Heatmap(
-                    z=z, zmin=0, zmax=13,
-                    colorscale=DISCRETE_COLORSCALE,
-                    showscale=False,
-                    hoverinfo="skip",
-                    xgap=0.5, ygap=0.5,
-                )],
+                data=[
+                    # cid 内 star edges (faint gray)
+                    go.Scatter(x=tr["star_x"], y=tr["star_y"], mode="lines",
+                                line=dict(color="rgba(0,0,0,0.15)", width=0.7),
+                                hoverinfo="skip", name="cid-internal"),
+                    # β-cohort edges (slightly darker)
+                    go.Scatter(x=tr["beta_x"], y=tr["beta_y"], mode="lines",
+                                line=dict(color="rgba(0,0,0,0.35)", width=1.2),
+                                hoverinfo="skip", name="β-cohort"),
+                    # cid member nodes (colored by β)
+                    go.Scatter(x=tr["node_x"], y=tr["node_y"], mode="markers",
+                                marker=dict(size=10, color=tr["node_color"],
+                                            line=dict(width=0.5, color="rgba(0,0,0,0.5)")),
+                                text=tr["node_text"], hoverinfo="text",
+                                name="cid nodes"),
+                ],
                 name=str(w),
                 layout=go.Layout(
                     annotations=[
                         dict(text=f"<b>seed {seed} window {w}</b><br>"
-                             f"active β = {n_active}, recorded β = {n_recorded}, "
-                             f"filled cells = {n_filled}/{GRID_SIDE*GRID_SIDE}",
+                             f"active cids = {n_cids}, "
+                             f"active β = {n_active}, recorded β = {n_recorded}",
                              xref="paper", yref="paper",
                              x=0.5, y=1.08, xanchor="center",
                              showarrow=False, font=dict(size=14))
@@ -377,45 +461,55 @@ def build_plotly_grid_figure(seed_to_data: dict, seeds_to_show: list[int],
                          for w in range(len(plotly_frames))
                      ]),
             ],
-            title=f"v10.5 71×71 トーラスグリッド × β-Integration (seed {seed})",
-            xaxis=dict(visible=False, scaleanchor="y", scaleratio=1),
-            yaxis=dict(visible=False),
-            height=850,
-            width=900,
-            margin=dict(t=120, b=80),
+            title=f"v10.5 71×71 トーラスグリッド × β-Integration (seed {seed})<br>"
+                  "<sub>各点 = cid の member node、薄線 = cid 内 star、太線 = β 内 cohort、色 = β_id mod 12 (灰 = recorded)</sub>",
+            xaxis=dict(visible=False, range=[-1, GRID_SIDE],
+                        scaleanchor="y", scaleratio=1),
+            yaxis=dict(visible=False, range=[-1, GRID_SIDE]),
+            height=900,
+            width=950,
+            margin=dict(t=140, b=80),
+            plot_bgcolor="rgba(248,248,248,1)",
+            showlegend=False,
         )
 
     else:
-        # case B: dropdown 切替 (Heatmap + discrete colorscale で軽量化)
+        # case B: dropdown 切替 (Scatter ベース)
         plotly_frames = []
         seed_to_keys: dict[int, list[str]] = {}
         for seed in seeds_to_show:
-            grids, beta_state_final = seed_to_data[seed]
+            snapshots, cid_nodes_data, beta_state_final, _ = seed_to_data[seed]
             recorded_set = {bid for bid, st in beta_state_final.items() if st == "recorded"}
             keys = []
-            for w, grid in grids:
-                unique_bids = sorted(set(grid.flatten().tolist()) - {-1})
+            for w, cid_to_beta in snapshots:
+                tr = build_frame_traces(cid_to_beta, cid_nodes_data, recorded_set)
+                n_cids = len(cid_to_beta)
+                unique_bids = sorted(set(cid_to_beta.values()))
                 n_active = sum(1 for b in unique_bids if b not in recorded_set)
                 n_recorded = sum(1 for b in unique_bids if b in recorded_set)
-                n_filled = int((grid != -1).sum())
 
-                z = grid_to_color_index(grid, recorded_set)
                 key = f"seed{seed}_w{w}"
                 keys.append(key)
                 plotly_frames.append(go.Frame(
-                    data=[go.Heatmap(
-                        z=z, zmin=0, zmax=13,
-                        colorscale=DISCRETE_COLORSCALE,
-                        showscale=False,
-                        hoverinfo="skip",
-                        xgap=0.5, ygap=0.5,
-                    )],
+                    data=[
+                        go.Scatter(x=tr["star_x"], y=tr["star_y"], mode="lines",
+                                    line=dict(color="rgba(0,0,0,0.15)", width=0.7),
+                                    hoverinfo="skip", name="cid-internal"),
+                        go.Scatter(x=tr["beta_x"], y=tr["beta_y"], mode="lines",
+                                    line=dict(color="rgba(0,0,0,0.35)", width=1.2),
+                                    hoverinfo="skip", name="β-cohort"),
+                        go.Scatter(x=tr["node_x"], y=tr["node_y"], mode="markers",
+                                    marker=dict(size=10, color=tr["node_color"],
+                                                line=dict(width=0.5, color="rgba(0,0,0,0.5)")),
+                                    text=tr["node_text"], hoverinfo="text",
+                                    name="cid nodes"),
+                    ],
                     name=key,
                     layout=go.Layout(
                         annotations=[
                             dict(text=f"<b>seed {seed} window {w}</b><br>"
-                                 f"active β = {n_active}, recorded β = {n_recorded}, "
-                                 f"filled cells = {n_filled}/{GRID_SIDE*GRID_SIDE}",
+                                 f"active cids = {n_cids}, "
+                                 f"active β = {n_active}, recorded β = {n_recorded}",
                                  xref="paper", yref="paper",
                                  x=0.5, y=1.08, xanchor="center",
                                  showarrow=False, font=dict(size=14))
@@ -481,12 +575,16 @@ def build_plotly_grid_figure(seed_to_data: dict, seeds_to_show: list[int],
                      pad=dict(b=10, t=30), len=0.85,
                      steps=steps),
             ],
-            title=f"v10.5 71×71 トーラスグリッド × β-Integration (24 seeds、初期: seed {default_seed})",
-            xaxis=dict(visible=False, scaleanchor="y", scaleratio=1),
-            yaxis=dict(visible=False),
-            height=850,
-            width=900,
-            margin=dict(t=120, b=80),
+            title=f"v10.5 71×71 トーラスグリッド × β-Integration (24 seeds、初期: seed {default_seed})<br>"
+                  "<sub>各点 = cid の member node、薄線 = cid 内 star、太線 = β 内 cohort、色 = β_id mod 12 (灰 = recorded)</sub>",
+            xaxis=dict(visible=False, range=[-1, GRID_SIDE],
+                        scaleanchor="y", scaleratio=1),
+            yaxis=dict(visible=False, range=[-1, GRID_SIDE]),
+            height=900,
+            width=950,
+            margin=dict(t=140, b=80),
+            plot_bgcolor="rgba(248,248,248,1)",
+            showlegend=False,
         )
 
     return fig
@@ -513,10 +611,9 @@ def main():
         if not snapshots:
             print(f"  seed {s}: no data, skip")
             continue
-        grids = build_grid_frames(snapshots, cid_nodes, beta_state)
-        seed_to_data[s] = (grids, beta_state)
+        seed_to_data[s] = (snapshots, cid_nodes, beta_state, cid_birth)
         n_recorded = sum(1 for st in beta_state.values() if st == "recorded")
-        print(f"  seed {s}: {len(grids)} frames, "
+        print(f"  seed {s}: {len(snapshots)} frames, "
               f"{len(cid_nodes)} cids with frozen nodes, "
               f"β_state final: {n_recorded} recorded")
 
