@@ -46,10 +46,12 @@ def parse_id_list(s: str) -> set[int]:
 
 
 def parse_nodes_repr(s: str) -> list[int]:
-    """'[18 66 1083 2145 4008]' → [18, 66, ...]"""
+    """'[18,66,1083,2145,4008]' or '[18 66 ...]' → [18, 66, ...]"""
     s = s.strip().strip("[]")
     if not s:
         return []
+    # comma + whitespace 両対応
+    s = s.replace(",", " ")
     out = []
     for x in s.split():
         try:
