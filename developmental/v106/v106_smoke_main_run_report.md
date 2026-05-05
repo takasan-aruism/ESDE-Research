@@ -269,3 +269,9 @@ developmental/v106/outputs/
 ---
 
 *以上、Code A による v10.6 smoke + main run 報告。Web Claude の判断後に観察報告書を確定する流れ。*
+
+---
+
+## 後注: 時間軸混在 caveat (2026-05-06 追記)
+
+本報告で挙げた集団平均 finding (CHG.begin 51%、ハブ COG/FND/EXS、TIM.moment 5 パターン支配) は、cid 構造ベクトルが **run 集約 + 終了スナップショット混在** で生成されたため、動学的観察 (step 単位) は捕捉されていない。詳細: → `v106_temporal_axis_caveat.md`

@@ -289,3 +289,9 @@ developmental/v106/outputs/main/stratified/
 ---
 
 *以上、Code A による v10.6 層化解析 run 報告。Web Claude の解釈待ち項目は §11。*
+
+---
+
+## 後注: 時間軸混在 caveat (2026-05-06 追記)
+
+本層化解析で得た「long-lived cid のみ COG.enlightenment 接地」「hub cid 54.7% partial_match」「short × hub = 0」「Integration 増大で atom 接地が逆に弱くなる」等の結果は、cid 構造ベクトルの累積指標が **長寿命 cid ほど豊か (data 生成期間が最大 125 倍違う)** という時間軸混在の構造的バイアスの影響を受けている可能性がある。詳細: → `v106_temporal_axis_caveat.md`
