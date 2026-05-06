@@ -20,6 +20,7 @@ import hashlib
 import json
 import sys
 import time
+from multiprocessing import Pool
 from pathlib import Path
 
 import numpy as np
@@ -155,6 +156,12 @@ def run_seed_full_pipeline(seed: int, out_root: Path) -> dict:
     return summary
 
 
+def _run_seed_pipeline_worker(args):
+    """multiprocessing.Pool 用の worker (top-level 関数で pickle 可能に)."""
+    seed, out_root = args
+    return run_seed_full_pipeline(seed, out_root)
+
+
 # ----------------------------------------------------------------------
 # CLI
 # ----------------------------------------------------------------------
@@ -163,6 +170,8 @@ def main() -> int:
     ap.add_argument("--mode", choices=["smoke", "main"], default="smoke")
     ap.add_argument("--no_layer_b", action="store_true",
                       help="bit-identity 層 B 検証をスキップ")
+    ap.add_argument("--n_workers", type=int, default=24,
+                      help="並列 worker 数 (1=順次、24=full parallel)")
     args = ap.parse_args()
 
     out_root = SMOKE_ROOT if args.mode == "smoke" else MAIN_ROOT
@@ -179,16 +188,26 @@ def main() -> int:
 
     summaries = []
     t0 = time.time()
-    for seed in seeds:
-        s = run_seed_full_pipeline(seed, out_root)
-        print(f"  seed={s['seed']}: events={s['n_source_events']}, "
+    n_workers = max(1, min(args.n_workers, len(seeds)))
+    if n_workers > 1 and len(seeds) > 1:
+        print(f"\n=== 並列実行 ({n_workers} workers、24 seeds 単一バッチ) ===")
+        worker_args = [(s, out_root) for s in seeds]
+        with Pool(processes=n_workers) as pool:
+            summaries = pool.map(_run_seed_pipeline_worker, worker_args)
+        summaries = sorted(summaries, key=lambda s: s["seed"])
+    else:
+        print(f"\n=== 順次実行 ===")
+        for seed in seeds:
+            s = run_seed_full_pipeline(seed, out_root)
+            summaries.append(s)
+    for s in summaries:
+        print(f"  seed={s['seed']:>2}: events={s['n_source_events']}, "
               f"paths={s['n_relation_paths']}, baselines={s['n_baselines']}, "
               f"excess={s['n_excess_rows']}, mh={s['n_multi_hop']}, "
               f"loops_2={s['n_loops_2']}, loops_3={s['n_loops_3']}, "
               f"t_total={s['t_total']}s "
               f"(C={s['t_step_c']}, D={s['t_step_d']}, E={s['t_step_e']}, "
               f"F={s['t_step_f']})")
-        summaries.append(s)
 
     df_sum = pd.DataFrame(summaries)
     safe_write_parquet_v107(df_sum, out_root / "post_process_run_summary.parquet")
