@@ -54,6 +54,9 @@ SEEDS = list(range(24))
 TOP_N_PER_HOP = 20
 MAX_HOPS = 3
 LAG_BINS = list(range(0, 1010, 10))  # 101 bins (0, 10, 20, ..., 1000)
+RUN_END_STEP = 25000
+ECHO_LOCAL_MAX_THRESHOLD = 0.01  # Step G 修正: 0.001 → 0.01
+INTEGRATION_PATH_TYPES = {"integration_alpha", "integration_beta"}
 
 
 def assert_output_under_v107(path: Path) -> None:
@@ -255,6 +258,8 @@ def compute_peak_lag_curve(seed: int, df_targets: pd.DataFrame) -> pd.DataFrame:
     base = df_targets[["event_id", "source_cid", "timestamp", "target_cid",
                           "relation_path_type"]].copy()
     base["target_cid"] = base["target_cid"].astype(int)
+    # Step G 修正: event 終端除外 (timestamp + 1000 > RUN_END_STEP)
+    base = base[base["timestamp"] + max(LAG_BINS) <= RUN_END_STEP].copy()
 
     rows = []
     sample = base
@@ -344,30 +349,37 @@ def classify_wave_patterns(df_peak: pd.DataFrame, df_curve: pd.DataFrame) -> pd.
     for _, r in df_peak.iterrows():
         path = r["relation_path_type"]
         peak_lag = int(r["peak_lag"])
+        abs_peak = float(r["abs_peak_value"])
         sub = df_curve[df_curve["relation_path_type"] == path].sort_values("lag_bin")
         sub_abs = sub["mean_delta_C_at_lag"].abs().values
-        # 即時型: peak_lag < 10
-        # 遅延型: peak_lag > 100
-        # 残響型: 複数のピーク (local max が 2 つ以上)
-        local_maxes = 0
-        for i in range(1, len(sub_abs) - 1):
-            if sub_abs[i] > sub_abs[i - 1] and sub_abs[i] > sub_abs[i + 1] and \
-               sub_abs[i] > 0.001:
-                local_maxes += 1
-        if local_maxes >= 2:
-            wave_class = "echo"  # 残響型
-        elif peak_lag < 10:
-            wave_class = "immediate"
-        elif peak_lag > 100:
-            wave_class = "delayed"
+        # Step G 修正: integration_* は除外フラグ
+        if path in INTEGRATION_PATH_TYPES or abs_peak < ECHO_LOCAL_MAX_THRESHOLD:
+            wave_class = "no_signal"
+            local_maxes = 0
         else:
-            wave_class = "short_term"
+            local_maxes = 0
+            for i in range(1, len(sub_abs) - 1):
+                if (sub_abs[i] > sub_abs[i - 1] and sub_abs[i] > sub_abs[i + 1]
+                        and sub_abs[i] > ECHO_LOCAL_MAX_THRESHOLD):
+                    local_maxes += 1
+            if local_maxes >= 2:
+                wave_class = "echo"
+            elif peak_lag < 10:
+                wave_class = "immediate"
+            elif peak_lag > 100:
+                wave_class = "delayed"
+            else:
+                wave_class = "short_term"
         rows.append({
             "relation_path_type": path,
             "peak_lag": peak_lag,
             "n_local_maxes": local_maxes,
             "wave_pattern_class": wave_class,
-            "abs_peak_value": float(r["abs_peak_value"]),
+            "abs_peak_value": abs_peak,
+            "excluded_reason": (
+                "integration (no C signal)" if path in INTEGRATION_PATH_TYPES
+                else ("low_signal" if abs_peak < ECHO_LOCAL_MAX_THRESHOLD else "")
+            ),
         })
     return pd.DataFrame(rows)
 
