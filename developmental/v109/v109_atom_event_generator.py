@@ -34,6 +34,7 @@ MAIN_ROOT = OUT_ROOT / "main"
 sys.path.insert(0, str(V107_ROOT))
 sys.path.insert(0, str(V108_ROOT))
 from v107_event_aggregator import attach_pre_event_state  # noqa: E402
+from v107_baseline_constructor import _cid_meta_table  # noqa: E402
 from v108_atom_event_generator import (  # noqa: E402
     TARGET_ATOMS,
     RESERVED_ATOM,
@@ -48,7 +49,7 @@ from v108_atom_event_generator import (  # noqa: E402
 SEEDS = list(range(24))
 TOP_K = 100
 
-# 条件設定 (即決事項確定 §2.1 案 c)
+# 条件設定 (即決事項確定 §2.1 案 c + Step F 判定 Q1-Q4)
 CONDITIONS = {
     "A2": {
         "Q_cost": 2, "C_gain": 2,
@@ -62,7 +63,13 @@ CONDITIONS = {
         "timing": "uniform_atom_offset",
         "description": "random cid (seed 内全 cid から random 100、cid 選定感度)",
     },
-    # "C2": Step F (bimodal 結果) 後に分岐確定 (Step G で実装)
+    "C2": {
+        "Q_cost": 1, "C_gain": 1,
+        "cid_selection": "top_k_100",
+        "timing": "lifecycle_synced",
+        "age_target": 200,
+        "description": "リズム同調 (top_k 100、各 cid age=200 で発火、Step F 分岐 1 採用)",
+    },
 }
 
 # B3 random 用 seed (再現性担保、即決 §2.3)
@@ -117,27 +124,68 @@ def select_cids_for_condition(seed: int, atoms: list[str], condition_id: str) ->
     raise ValueError(f"Unknown cid_selection: {cfg['cid_selection']}")
 
 
+def _build_cid_birth_lookup(seed: int) -> dict[int, int]:
+    """seed 内の cognitive_id -> birth_step の lookup dict を構築 (C2 用)."""
+    cid_meta = _cid_meta_table(seed)
+    return dict(zip(
+        cid_meta["cognitive_id"].astype(int),
+        cid_meta["birth_step"].astype(int),
+    ))
+
+
 def generate_atom_events_for_condition(seed: int, cid_df: pd.DataFrame,
                                           condition_id: str) -> pd.DataFrame:
-    """condition_id 列付きで event を生成。timing は uniform_atom_offset 共通。"""
+    """condition_id 列付きで event を生成。timing 別に分岐."""
+    cfg = CONDITIONS[condition_id]
+    timing = cfg["timing"]
     rows = []
-    for atom_idx in cid_df["atom_index"].unique():
-        atom_sub = cid_df[cid_df["atom_index"] == atom_idx].sort_values("top_k_rank")
-        timestamps = schedule_atom_event_timestamps(int(atom_idx))
-        for (_, r), t in zip(atom_sub.iterrows(), timestamps):
-            atom_id = r["atom_id"]
-            reserved_label = RESERVED_LABEL if atom_id == RESERVED_ATOM else ""
-            rows.append({
-                "event_source_type": "atom_introduction_event",
-                "condition_id": condition_id,
-                "source_cid": int(r["source_cid"]),
-                "timestamp": int(t),
-                "atom_id": atom_id,
-                "atom_index": int(atom_idx),
-                "top_k_rank": int(r["top_k_rank"]),
-                "atom_sim_score": float(r["sim_score"]) if pd.notna(r["sim_score"]) else float("nan"),
-                "reserved_label": reserved_label,
-            })
+
+    if timing == "lifecycle_synced":
+        # C2: 各 cid の birth_step + age_target で発火
+        cid_birth = _build_cid_birth_lookup(seed)
+        age_target = cfg["age_target"]
+        for atom_idx in cid_df["atom_index"].unique():
+            atom_sub = cid_df[cid_df["atom_index"] == atom_idx].sort_values("top_k_rank")
+            for _, r in atom_sub.iterrows():
+                cid = int(r["source_cid"])
+                if cid not in cid_birth:
+                    continue
+                ts = cid_birth[cid] + age_target
+                if ts >= RUN_END_STEP:
+                    continue
+                atom_id = r["atom_id"]
+                reserved_label = RESERVED_LABEL if atom_id == RESERVED_ATOM else ""
+                rows.append({
+                    "event_source_type": "atom_introduction_event",
+                    "condition_id": condition_id,
+                    "source_cid": cid,
+                    "timestamp": int(ts),
+                    "atom_id": atom_id,
+                    "atom_index": int(atom_idx),
+                    "top_k_rank": int(r["top_k_rank"]),
+                    "atom_sim_score": float(r["sim_score"]) if pd.notna(r["sim_score"]) else float("nan"),
+                    "reserved_label": reserved_label,
+                })
+    else:
+        # A2 / B3: uniform_atom_offset (v10.8 と同じ)
+        for atom_idx in cid_df["atom_index"].unique():
+            atom_sub = cid_df[cid_df["atom_index"] == atom_idx].sort_values("top_k_rank")
+            timestamps = schedule_atom_event_timestamps(int(atom_idx))
+            for (_, r), t in zip(atom_sub.iterrows(), timestamps):
+                atom_id = r["atom_id"]
+                reserved_label = RESERVED_LABEL if atom_id == RESERVED_ATOM else ""
+                rows.append({
+                    "event_source_type": "atom_introduction_event",
+                    "condition_id": condition_id,
+                    "source_cid": int(r["source_cid"]),
+                    "timestamp": int(t),
+                    "atom_id": atom_id,
+                    "atom_index": int(atom_idx),
+                    "top_k_rank": int(r["top_k_rank"]),
+                    "atom_sim_score": float(r["sim_score"]) if pd.notna(r["sim_score"]) else float("nan"),
+                    "reserved_label": reserved_label,
+                })
+
     df = pd.DataFrame(rows)
     df["seed"] = seed
     df = df.sort_values(["timestamp", "atom_index"]).reset_index(drop=True)
