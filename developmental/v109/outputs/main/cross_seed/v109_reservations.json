@@ -1,0 +1,25 @@
+{
+  "v10_9_reservations": [
+    {
+      "id": 1,
+      "title": "bimodal 解析の手法的限界",
+      "summary": "KDE find_peaks で 2 ピーク捕捉できたのは 0 件、全件 median_split 代替",
+      "impact": "主結果 (H3_lifecycle 60.2%) の信頼性は維持",
+      "v10_10_action": "v10.8 bimodal の真の正体を再評価する素材として残す"
+    },
+    {
+      "id": 2,
+      "title": "QC_cost (Q/C コスト) は v10.9 で評価不能",
+      "summary": "A1 vs A2 の cohens_d max=0.05、abs_mean=0.005 で評価不能",
+      "impact": "post-process 計算的減算のみで実 ledger 不変、QC_cost は寄与候補としてはノブにならない暫定結論",
+      "v10_10_action": "実 simulation 再回しまたは A1 vs A3 比較 (event 有無) を試す"
+    },
+    {
+      "id": 3,
+      "title": "high_fam_out_integ 経路が最強の理由は構造的に未解明",
+      "summary": "Step L で timing 感度 0.222 (最強) と判明したが構造的根拠は仮説段階",
+      "impact": "v10.9 主結果の中心は維持、解釈は v10.10 に持ち越し",
+      "v10_10_action": "Integration 外を主軸にした解析を試す素材として残す"
+    }
+  ]
+}
