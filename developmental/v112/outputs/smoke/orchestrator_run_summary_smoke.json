@@ -1,0 +1,110 @@
+{
+  "mode": "smoke",
+  "n_workers": 4,
+  "verify_bit_identity": true,
+  "layer_b_check": true,
+  "step_c_prerequisite": {
+    "v112_files": 24,
+    "v108_standard_files": 24,
+    "expected_min": 1,
+    "passed": true
+  },
+  "run1_results": [
+    {
+      "module": "v112_atom_event_generator.py",
+      "elapsed_sec": 0.77,
+      "returncode": 0,
+      "stdout_tail": [
+        "  v108_std 実測: 2500 (v108 main 60000/24 = ~2500、Step C filter 後)",
+        "",
+        "DONE  total elapsed = 0.11s, output = /home/takasan/esde/ESDE-Research/developmental/v112/outputs/smoke"
+      ],
+      "stderr_tail": [],
+      "step_id": "step_d",
+      "description": "Step D atom_event_generator"
+    },
+    {
+      "module": "v112_baseline_recalculator.py",
+      "elapsed_sec": 3.42,
+      "returncode": 0,
+      "stdout_tail": [
+        "  per condition mean t: 1.52s",
+        "",
+        "DONE  total elapsed = 2.78s, output = /home/takasan/esde/ESDE-Research/developmental/v112/outputs/smoke"
+      ],
+      "stderr_tail": [],
+      "step_id": "step_e_baseline",
+      "description": "Step E baseline_recalculator"
+    },
+    {
+      "module": "v112_propagation_analyzer.py",
+      "elapsed_sec": 2.43,
+      "returncode": 0,
+      "stdout_tail": [
+        "  total size: 0.11 MB",
+        "",
+        "DONE  total elapsed = 2.17s, output = /home/takasan/esde/ESDE-Research/developmental/v112/outputs/smoke"
+      ],
+      "stderr_tail": [],
+      "step_id": "step_e_propagation",
+      "description": "Step E propagation_analyzer"
+    },
+    {
+      "module": "v112_observation_recorder.py",
+      "elapsed_sec": 0.34,
+      "returncode": 0,
+      "stdout_tail": [
+        "  [#26] Step A 再実施: 層化集計の cond1/cond3 絞り込みによる bin_5+ × before/no_alpha 集中...",
+        "",
+        "DONE  total elapsed = 0.07s, output = /home/takasan/esde/ESDE-Research/developmental/v112/outputs/smoke"
+      ],
+      "stderr_tail": [],
+      "step_id": "step_f",
+      "description": "Step F observation_recorder"
+    }
+  ],
+  "layer_a_bit_identity": {
+    "files_tracked": 11,
+    "mismatches": [],
+    "n_mismatches": 0,
+    "all_pass": true,
+    "hashes_run1": {
+      "atom_introduction_events_v112_seed0.parquet": "22daba56788d6574",
+      "atom_introduction_events_v108_standard_seed0.parquet": "4f14914b66e91250",
+      "baselines_with_delta_v112_seed0.parquet": "2d71fad9ac82a751",
+      "baselines_with_delta_v108_standard_seed0.parquet": "1a4da9da1761fdcb",
+      "excess_change_adjusted_v112_seed0.parquet": "cbd9ecf29739c0ee",
+      "excess_change_adjusted_v108_standard_seed0.parquet": "0113395633523452",
+      "propagation_profile_v112_seed0.parquet": "09db019bd3a0c9f0",
+      "propagation_profile_v108_standard_seed0.parquet": "840e38ebba19977f",
+      "observation_summary_smoke.parquet": "71d541a55ff05d93",
+      "observation_stratified_smoke.parquet": "5467111d4946a806",
+      "observation_records_smoke.json": "3cbb491aef404461"
+    },
+    "hashes_run2": {
+      "atom_introduction_events_v112_seed0.parquet": "22daba56788d6574",
+      "atom_introduction_events_v108_standard_seed0.parquet": "4f14914b66e91250",
+      "baselines_with_delta_v112_seed0.parquet": "2d71fad9ac82a751",
+      "baselines_with_delta_v108_standard_seed0.parquet": "1a4da9da1761fdcb",
+      "excess_change_adjusted_v112_seed0.parquet": "cbd9ecf29739c0ee",
+      "excess_change_adjusted_v108_standard_seed0.parquet": "0113395633523452",
+      "propagation_profile_v112_seed0.parquet": "09db019bd3a0c9f0",
+      "propagation_profile_v108_standard_seed0.parquet": "840e38ebba19977f",
+      "observation_summary_smoke.parquet": "71d541a55ff05d93",
+      "observation_stratified_smoke.parquet": "5467111d4946a806",
+      "observation_records_smoke.json": "3cbb491aef404461"
+    }
+  },
+  "layer_b_unchanged": {
+    "n_files_tracked": 443,
+    "n_changed": 0,
+    "n_added": 0,
+    "n_removed": 0,
+    "changed_details": [],
+    "added_files": [],
+    "removed_files": [],
+    "passed": true
+  },
+  "layer_c_structural": "PASS (assert_output_under_v112 enforced in all modules)",
+  "total_elapsed_sec": 14.02
+}
