@@ -1,0 +1,86 @@
+{
+  "mode": "main",
+  "n_workers": 12,
+  "verify_bit_identity": false,
+  "layer_b_check": true,
+  "step_c_prerequisite": {
+    "v112_files": 24,
+    "v108_standard_files": 24,
+    "expected_min": 24,
+    "passed": true
+  },
+  "run1_results": [
+    {
+      "module": "v112_atom_event_generator.py",
+      "elapsed_sec": 2.71,
+      "returncode": 0,
+      "stdout_tail": [
+        "  v108_std   total:  60000 events / 5111 unique cids",
+        "",
+        "DONE  total elapsed = 2.05s, output = /home/takasan/esde/ESDE-Research/developmental/v112/outputs/main"
+      ],
+      "stderr_tail": [
+        "/home/takasan/esde/ESDE-Research/developmental/v106/v106_post_process.py:74: DtypeWarning: Columns (30) have mixed types. Specify dtype option on import or set low_memory=False.",
+        "  return pd.read_csv(path, **kwargs)"
+      ],
+      "step_id": "step_d",
+      "description": "Step D atom_event_generator"
+    },
+    {
+      "module": "v112_baseline_recalculator.py",
+      "elapsed_sec": 9.05,
+      "returncode": 0,
+      "stdout_tail": [
+        "  per condition mean t: 1.79s",
+        "",
+        "DONE  total elapsed = 8.42s, output = /home/takasan/esde/ESDE-Research/developmental/v112/outputs/main"
+      ],
+      "stderr_tail": [
+        "  return pd.read_csv(path, **kwargs)",
+        "/home/takasan/esde/ESDE-Research/developmental/v106/v106_post_process.py:74: DtypeWarning: Columns (30) have mixed types. Specify dtype option on import or set low_memory=False.",
+        "  return pd.read_csv(path, **kwargs)"
+      ],
+      "step_id": "step_e_baseline",
+      "description": "Step E baseline_recalculator"
+    },
+    {
+      "module": "v112_propagation_analyzer.py",
+      "elapsed_sec": 7.12,
+      "returncode": 0,
+      "stdout_tail": [
+        "  total size: 2.61 MB",
+        "",
+        "DONE  total elapsed = 6.87s, output = /home/takasan/esde/ESDE-Research/developmental/v112/outputs/main"
+      ],
+      "stderr_tail": [],
+      "step_id": "step_e_propagation",
+      "description": "Step E propagation_analyzer"
+    },
+    {
+      "module": "v112_observation_recorder.py",
+      "elapsed_sec": 1.45,
+      "returncode": 0,
+      "stdout_tail": [
+        "  [#26] Step A 再実施: 層化集計の cond1/cond3 絞り込みによる bin_5+ × before/no_alpha 集中...",
+        "",
+        "DONE  total elapsed = 1.18s, output = /home/takasan/esde/ESDE-Research/developmental/v112/outputs/main"
+      ],
+      "stderr_tail": [],
+      "step_id": "step_f",
+      "description": "Step F observation_recorder"
+    }
+  ],
+  "layer_a_bit_identity": null,
+  "layer_b_unchanged": {
+    "n_files_tracked": 443,
+    "n_changed": 0,
+    "n_added": 0,
+    "n_removed": 0,
+    "changed_details": [],
+    "added_files": [],
+    "removed_files": [],
+    "passed": true
+  },
+  "layer_c_structural": "PASS (assert_output_under_v112 enforced in all modules)",
+  "total_elapsed_sec": 20.35
+}
