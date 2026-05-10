@@ -1822,174 +1822,984 @@ diag_v102_main/
 └── analysis/     v10.2 詳細解析 CSV 10 本 (Code A 実施)
 ```
 
-## 83. v10.3: 双方向 E3 機構と Integration 登場条件の観察 (完了)
+## 83. v10.3 完了レポート (双方向 E3 機構 + Integration 登場条件)
 
-### 83.1 主題
+### 83.1 機構の概要
 
-生きた cid 同士の意識層レベルの接触を機構として最小追加し、Layer 5 (CID 共鳴) の入口を開ける。
-
-### 83.2 三層構造の確定
-
-| レベル | 位置づけ | v10.3 でやること |
-|---|---|---|
-| 双方向 E3 | 機構 | 実装する (両者 C-1) |
-| 三項共鳴 | 観察される統計的現象 | 第三項候補のリストアップで記録 |
-| Integration | その上位解釈 | 概念定義のみ、機構実装は v10.4 以降 |
-
-### 83.3 双方向 E3 の発火条件
-
-```
-両者が hosted ∧ Q > 0 ∧ C ≥ 1 ∧ 同一 alive link 初回接触 onset
-```
-
-- 両者 C-1 を引く (両者対称消費)
-- 既存 E3 (Q-1) と独立に発火 (同 step で両方)
+**双方向 E3 機構**:
+- 両者 hosted ∧ Q>0 ∧ C≥1 ∧ 同一 alive link 初回接触で発火
+- 両者から C-1 を引く (v10.3 新規)
+- 既存 E3 (Q-1) と独立に発火
 - 初回接触のみ (持続接触で毎 step 引かない)
-- ghost との接触は既存 E3 のみ
 
-### 83.4 第三項候補のリストアップ (10 カテゴリ)
+**三層構造 (v10.3 で確定)**:
+| レベル | 位置づけ |
+|---|---|
+| 双方向 E3 | 機構 |
+| 三項共鳴 | 観察される統計的現象 |
+| Integration | 上位解釈 (v10.3 では概念のみ) |
 
-| Cat | 候補 | 取得経路 |
-|---|---|---|
-| 1a | closed triad | post-process |
-| 1b | open triad (B 中継) | post-process |
-| 1c | proximate cid | engine + 重心計算 |
-| 2a | 共有ノード | member_nodes logger |
-| 3a-i | 同 cid と E3_contact 経験あり | per_event_audit + per_subject |
-| 3b | 共有 phase 領域 | per_subject |
-| 3c | 共有 birth_window | per_subject |
-| 4a | 重心距離 | member_nodes logger |
-| 4b | 世代距離 | per_subject |
-| 4c | 窓内共在 | per_window |
+### 83.2 本番 run 結果
 
-Cat 2b/2c (共有 link/cycle): v10.3 では見送り、v10.4 以降。
-Cat 5 (cid 自己参照): 永久除外 (神の手リスク)。
+- N=5000, 24 seeds × tracking 50 windows
+- 双方向 E3 fired: 6,824 件
+- 物理層 frozen: labels 24/24 + persistence 96/96 完全一致
+- C 蓄積 27% 抑制 (観察ルールが系の動学を変える)
 
-### 83.5 観察対象の動的絞り込み (Stage 1/2/3)
+### 83.3 主要発見
 
-- Stage 1: n_core ≥ 4 ∧ n_consciousness ≥ 5 (94 cid)
-- Stage 2: Stage 1 partner (1,255 cid)
-- Stage 3: 第三項として現れた cid
+- **open triad 99% 支配 / closed triad 1.4%**: 第三項候補は中継者経由の非対称三項
+- **持続性ゼロ** (repeated_partners=0): Integration の物理的持続は ESDE では成立しない
+- **観察ルールが系の動学を変える**: C 消費 (記録ルール) で C 蓄積を 27% 抑制
 
-合計 1,349 cid (全 cid 5,224 の 25.8%)。
-
-bias 監視: target 外 fired は集計のみ (`n_be3_outside_targets`)。
-
-### 83.6 3 logger 構成
-
-```
-diag_v103_main/bidirectional/
-├── bidirectional_e3_log_seed{N}.csv             (raw event、A-B 内部情報)
-├── bidirectional_e3_3rd_cid_log_seed{N}.csv     (Cat 1a/1b/1c の cid_c 詳細)
-└── bidirectional_e3_member_nodes_log_seed{N}.csv (Cat 2a/4a の member_nodes)
-```
-
-### 83.7 本番 run 結果 (N=5000、24 seeds × tracking 50)
-
-```
-24/24 seeds 完走、wall time mean 2.97 h
-双方向 E3 fired 6,824 件 / 24 seeds (target 内 2,150 + target 外 4,674)
-labels 24/24 + persistence 96/96 完全一致 (物理層 frozen)
-total_decisions 100,432 完全一致
-```
-
-### 83.8 系の動学変化 (核心発見)
-
-| 指標 | v10.2 | v10.3 | 差分 |
-|---|---:|---:|---|
-| C_max | 85 | 63 | -26% |
-| C_mean | 28.64 | 20.99 | -27% |
-| Q+C total | 25,868 | 19,107 | -26% |
-
-**観察ルールが系の動学を変える**: 双方向 E3 で C-1 を引くという観察記録ルール (cid 内部選択ではなく観察者の単位設定) が、系の C 蓄積を 27% 抑制した。観察者依存性を内包した系として ESDE が立ち上がる。
-
-### 83.9 第三項の構造的発見
-
-```
-closed triad (Cat 1a): 39 件 (1.4%)
-open triad (Cat 1b): 2,788 件 (98.6%)
-比率 116:1 で open triad 主役性
-```
-
-→ 三項共鳴の主役は中継者経由の非対称三項。3 cid 三角形ではない。v3.4 期 tripartite loop の cid スケール再現。
-
-### 83.10 持続性ゼロ
-
-repeated_partners = 0 (本番でも shadow audit でも同様)。**Integration の物理的持続は ESDE では成立しない、統計的痕跡として観察するしかない**ことが本番規模で確定 (v3.4 bridge_max_life=1 と整合)。
-
-### 83.11 Integration 概念 (Taka 整理 2026-04-29)
-
-A + B を抱える上位層の主体。個別 cid の二者択一を Integration が両立させる。
-
-ESDE 階層進化系譜:
-```
-ノード → cid (複数ノードの Integration) → ??? (複数 cid の Integration、v10.3 観察) → SEED 統合
-```
-
-cid 自体が「複数ノードの Integration」だった。Aruism 階層進化の同型反復。
-
-v10.3 では機構実装せず、概念定義と観察データの蓄積のみ。
-
-### 83.12 v10.3 で確立した運用ルール
+### 83.4 確立した規律
 
 - 機構と観察と解釈の三層分離
-- 「観察者が決めた記録ルール」としての C 消費
+- 「観察者が決めた記録ルール」(cid 内部選択ではない)
 - 動的絞り込みと bias 監視のセット運用
-- 第三項候補の多軸記録 (一意に決めない、複数同時成立を記録)
-- Paired Audit 原則の継続 (shadow audit + 物理層 frozen + bias 監視)
-
-### 83.13 ESDE 階層整合性の証明
-
-v10.3 で:
-- 物理層は不変 (labels + persistence 完全一致)
-- 認知層は微増 (+1.5% cognition won)
-- 意識層は -27% (C 蓄積抑制)
-
-新機構が下層を壊さず、上層の動学を変える階層分離の正しさが本番規模で確認された。
+- 第三項候補の多軸記録 (10 カテゴリ、Cat 5 cid 自己参照は永久除外)
+- Paired Audit 原則の継続
 
 ---
 
-## 84. v10.4 への構造的素材
+## 84. v10.4 完了レポート (Integration 独立化)
 
-### 84.1 v10.4 主題候補
+### 84.1 機構の概要
 
-#### 候補 A: Integration 独立化 (Code A 最優先推奨)
+v10.3 で概念定義のみだった Integration を機構として実装。Layer 5 (CID 共鳴) の本格実装。
 
-- open triad ベースの Integration 定義 (closed triad は稀少すぎる)
-- Q 分配機構の設計 (Integration が取った Q を cid 個別代謝として分配)
-- 摂食順序問題の根本解決
-- Layer 5 (CID 共鳴) の本格実装
+**誕生条件 (R1 全採用)**:
+- be3 fired (size 2)
+- open_triad (size 3)
+- closed_triad (size 3、実観察 0 件)
+- third_overlap (size 4+)
 
-#### 候補 B: 嗜好の数理化
+**保持状態**:
+- member_cids (現在 active)
+- member_history (永続)
+- Q_inherited / C_inherited (継承バケット)
+- binding_strengths (cid → 結合強度)
+- state: active / recorded (recorded 永続)
 
-- post-ingestion weight bias
-- salience 駆動
+**Q/C 継承 (R5)**:
+- ghost 化時、最強結合 1 つに全継承 (Taka「二重国籍者の遺産は片方のみ」)
+- 複数 Integration 同時所属可 (R3-c)
 
-#### 候補 C: focus / attention_weight の動的化
+**Q/C 再分配 (D4-a + D4-b)**:
+- window 末に active member へ
+- 状態依存の逆張り分配 (Q-poor cid に Q を、C-poor cid に C を)
 
-- selectivity の機構化
+### 84.2 本番 run 結果
 
-#### 候補 D: 摂食順序問題の単独修正
+- N=5000, 24 seeds × tracking 50
+- Integration 13,550 件誕生
+- trigger: be3 52% / open_triad 38% / third_overlap 9% / closed_triad 0%
+- 物理層 frozen: labels 24/24 + persistence 96/96 完全一致
+- wall time +0.6%
 
-- Integration 不在では意味薄い可能性
+### 84.3 系の動学変化 (v10.3 と逆方向)
 
-優先順位は Taka 直感 + v10.3 観察結果から決定。
+| 指標 | v10.3 | v10.4 |
+|---|---:|---:|
+| C_max | -26% | **+31%** |
+| C_mean | -27% | **+15%** |
+| Q+C total | -26% | **+15%** |
 
-### 84.2 v10.3 で観察された軸の継承
+機構が系の動学を逆方向に変える構造を実証。
 
-- 軸 1: 双方向 E3 の n_core 跨ぎパターン
-- 軸 2: 主役 cid の動的検出
-- 軸 3: 第三項候補のカテゴリ重なり数 (Integration 登場前兆)
-- 軸 4: 持続性 (Integration 機構導入で再評価)
-- 軸 5: 系の動学 (C 蓄積、認知/意識バランス)
+### 84.4 主要発見
 
-### 84.3 v10.3 で確立された設計哲学の継承
+- **凍結 C 87%**: recorded Integration に 12,306 単位累積、歴史的記録の構造
+- **closed_triad ゼロ**: be3 run-wide dedup により 3 cid 全ペア接触が構造的に成立しない
+- **n_core 自然集積**: n=2 ×0.32、n=5 ×4.16 の偏り、神の手なし
+- **5 パターン性格分布**: (5,5,5)/(4,5,5)/(2,5,5)/(2,4,5)/(2,2,5)
+- **ハブ cid max 102 Integration 所属**: Top 1% で 29 cid
+- **ハブ cid の 6 段フィードバックループ** (Code A 発見): 神の手なしでハブ性が出現
 
-- 機構と観察と解釈の三層分離
-- 「観察者が決めた記録ルール」としての C 消費
-- 動的絞り込みと bias 監視のセット運用
-- 第三項候補の多軸記録
-- Paired Audit 原則
+### 84.5 ダブルブッキング問題の認識
 
-これらは v10.4 でも踏襲。Integration 独立化に進む場合も shadow audit + 物理層 frozen + bias 監視を継続。
+cid X が 1〜102 の Integration に同時所属する時、Q/C 集計に重複カウント。
+Taka 整理 (2026-05-02): 「α を会計として扱えば問題、各 IID の調査としては違和感なし、やたら活発な個性」。
+→ v10.5 の α/β 階層分離の動機。
 
+---
+
+## 85. v10.5 完了レポート (Layer 5 完成)
+
+### 85.1 機構の概要
+
+v10.4 で持ち越されたダブルブッキング問題と動態機構の不在を解消し、Layer 5 を構造的・動態的に完成。
+
+**3 つの中核機構**:
+
+#### 機構 A: β-Integration の構造実装
+
+- α-Integration を構成要素とする (cid 直接ではない)
+- 結合則: α 同士の cid 共有 2 個以上で merge
+- cid 単一共有時は最強 binding_strength の β に 1 個だけ所属 (案 b)
+- α への Q/C 継承を完全廃止 (会計の二重化回避)
+- ghost 化時の Q/C は β に 100% 継承
+- recorded 永続 (時定数なし、Phantom 規律)
+
+#### 機構 B: Salience-driven Focus (mass_weighted_observation)
+
+```
+mass(X) = X.Q + X.C + sum(β.Q_inherited + β.C_inherited for β in X が所属する β)
+```
+
+- 適用範囲: 他者読み + be3 + ingestion (全範囲)
+- 関数形: 線形 (P ∝ mass(Y))
+- shadow_audit では OFF、本番でのみ ON
+
+#### 機構 C: Recorded からの漏れ (historical_resource_leakage)
+
+- 発火条件: be3 fired または ingestion 時、相手 cid が過去に recorded β に所属
+- 効果: 最強結合 recorded β の C_inherited から ε=1 を主体 cid.C へ転記
+- 構造的副作用 (能動的選択ではない)
+
+### 85.2 ESDE 階層進化系譜の同型反復
+
+```
+ノード → cid → α-Integration → β-Integration → SEED 統合 (Layer 6 射程)
+```
+
+各階層は同じ仮想化操作の繰り返し。Aruism「構造が先、意味が後」の階層論的具体化。
+
+### 85.3 本番 run 結果 (main_v2)
+
+- N=5000, 24 seeds × tracking 50
+- α total 13,881 件 (active 11,792 / recorded 2,089)
+- β total 2,009 件 (active 1,566 / recorded 443)
+- 集約率 (α → β) 約 7:1
+- Salience event 77,880 件
+- Leakage event 232 件 (修正版、全 ingestion path)
+- 物理層 frozen: labels 24/24 + persistence 24/24 完全一致
+- M6 (1 cid → 1 β) 違反 0 件 / 5,224 cids
+
+### 85.4 hub β の自然形成 (核心成果)
+
+| seed | β_id | cids | αs |
+|---:|---:|---:|---:|
+| 22 | β0 | 20 | **691** |
+| 7 | β1 | 20 | 412 |
+| 10 | β0 | 20 | 422 |
+| 15 | β1 | 18 | 398 |
+
+最大 691 α が 1 つの β に統合 (1 cid 34.5 α)。v10.4 hub cid (max 102 重複所属) を会計単位として整理した姿。
+
+### 85.5 ダブルブッキング問題の構造的解消
+
+| 観点 | v10.4 (α のみ) | v10.5 (α/β 階層) |
+|---|---|---|
+| cid 重複所属 | max 102 | 0 (M6 違反 0) |
+| Q/C 集計 | 重複あり | 単一カウント |
+| 観察軸 | α が観察と会計兼任 | α 観察、β 会計、分離 |
+
+「α=観察軸、β=会計単位」の階層分離が機構レベルで成立。
+
+### 85.6 Salience の動学
+
+| event_type | events | mass mean | mass max |
+|---|---:|---:|---:|
+| read_other | 63,312 | 14.57 | 98 |
+| be3_fired | 14,514 | 21.22 | 93 |
+
+be3 fired 対象は read_other 対象より平均 mass が **1.45 倍高い**。「重い cid 同士が共鳴する」動学を定量化。
+
+### 85.7 Leakage の動作 (修正版)
+
+- 232 件発火 (24 seeds、全 ingestion path)
+- unique recorded β: 160 (全 recorded β の 36%)
+- per seed: mean 9.7、range 4-19
+
+凍結 C 87% (v10.4 観察) のうち、ingestion 経由で active 系への流入経路が成立。
+
+**be3 trigger = 0 の構造的理由** (Code A 発見):
+be3 fire 条件 (両者 hosted) と leakage 条件 (cid が過去 recorded β に所属) が論理的に相互排他。Leakage は ingestion path 経由でのみ実用発火。これは設計意図と整合し、be3 path は理論上の保険機構として残置。
+
+### 85.8 確立した規律
+
+- α/β 階層分離 (α = 観察、β = 会計)
+- 既存データの顕在化機構として新機構を位置づける
+- bug 自己発見と修正サイクル (Code A の callback 配線漏れ → 修正)
+- 5 者運用の成熟 (Taka 憲法層 + AI 設計・実装層)
+- 物理層 frozen の本番規模での維持 (Layer 5 完成段階でも)
+
+### 85.9 v10.6 以降への素材
+
+- hub β の自然形成 (max 691 α / 20 cid): スレッド単位統合の素材
+- recorded β の C 凍結と漏れ機構: 歴史資源の流動性の素材
+- mass-weighted 観察の long-tail (mass max 98、p95 36-43): 構造的引力の素材
+- 適応的差分埋め能力: 機能化への素材
+
+具体的な v10.6 主題決定は別途議論。
+
+## 86. v10.6 完了レポート (Genesis × Language 比較研究、Phase 1.5 第一試行)
+
+### 86.1 機構の概要
+
+ESDE Genesis 系 v10.5 出力 (cid 5,224 個) と Language 系 Atom 326 個 (有効 325) を 48 次元 cosine 類似度で比較する **atom_alignment_observer** を post-process として実装。
+
+**重要**: これは ESDE 内部機構ではなく、後段解析 (post-process)。物理層・存在層・認知層・意識層・α/β Integration には一切手を加えない。既存 v10.5 出力 (csv / parquet) を読み取り、観察軸を追加するのみ。
+
+ファイル構造:
+```
+developmental/v106/
+├── v106_post_process.py             (静的解析、cid 構造ベクトル生成)
+├── v106_window_trajectory.py        (window 単位 trajectory)
+├── v106_pulse_trajectory.py         (per-pulse trajectory)
+├── v106_step10_trajectory.py        (10 step interpolation)
+├── v106_event_trajectory.py         (event 単位、最高解像度)
+├── outputs/main/
+│   ├── stratified/                  (層化解析、197 ファイル)
+│   ├── baseline/                    (ランダムベースライン解析)
+│   ├── window_trajectory/
+│   ├── pulse_trajectory/
+│   ├── step10_trajectory/
+│   └── event_trajectory/
+└── reports/                         (各解析報告書)
+```
+
+### 86.2 7 段階の解析機構
+
+各解析が独立した観察軸として機能:
+
+| 解析 | 解像度 | n_records | 主データ |
+|---|---|---|---|
+| 静的 | run 集約 | 5,224 cid | per_subject + audit |
+| 層化 | 5 軸 + cross-tab | 5,224 (派生) | 静的解析の派生 |
+| ベースライン | uniform + shuffled | 24 seeds | atom_profiles cache |
+| window trajectory | 500 step | 31,482 | balance/c_trajectory |
+| per-pulse trajectory | ~50 step | 369,090 | pulse_log |
+| step10 trajectory | 10 step | 1,796,001 | pulse_log + interpolation |
+| event trajectory | event 単位 | 440,666 | event log |
+
+実行時間: 1.91 秒 (静的) ~ 84 秒 (step10) の高速。
+
+### 86.3 48 次元構造ベクトルの設計
+
+各 cid を 48 次元ベクトル (各軸 6 levels × 8 dimensions) として表現:
+
+| 次元 | 意味 | データソース |
+|---|---|---|
+| 1. temporal | 時間性 | lifespan |
+| 2. scale | 規模 | n_core_member |
+| 3. epistemological | 認識性 | last_familiarity_max |
+| 4. ontological | 存在論 | Q/C/familiarity 混合 |
+| 5. interconnection | 結合性 | n_alphas_currently |
+| 6. resonance | 共鳴性 | C_at_run_end |
+| 7. symmetry | 対称性 | v99_drift |
+| 8. lawfulness | 規則性 | pulse_density |
+| 9. experience | 経験性 | event 累積 |
+| 10. value_generation | 価値生成 | Q_spent / target / β 所属 |
+
+→ 48 dim = 8 dim × 6 levels (gradient distribution)
+
+### 86.4 birth_step バグ (副次発見、step10 で同定)
+
+step10 解析実装中に Code A が発見:
+- per_subject の `birth_window` は **window_value 形式 (offset 19)**
+- 既存実装 `birth_step = birth_window * WIN_LEN` は誤り
+- 正式: `birth_step = (birth_window - 19) * WIN_LEN`
+
+影響:
+- 静的・window・pulse 解析で多くの cid が lifespan=1 (clip) になっていた
+- temporal 軸が emergence 一極に偏る影響
+- 主要 finding には大きな影響なし (推測)、定量検証は v10.7 以降
+
+step10 解析では `pulse_log の cid 最初 t` を使い回避。
+
+### 86.5 主要発見
+
+#### 観察解像度ごとに systematically 異なる構造特性
+
+| 解像度 | 1 位 atom | 比率 |
+|---|---|---|
+| 静的 | CHG.begin | 51% (集約罠人工物) |
+| window | TIM.moment | 34% |
+| per-pulse | WLD.artless | 22% |
+| step10 | PER.sound | 28% |
+| event | PER.sound | 26% |
+
+#### 24 seeds 完全一致の動学的発展段階 (event 解析)
+
+```
+Step 0-999:         WLD.artless (素朴さ)
+Step 1000-12999:    PER.sound (聴覚) 12 連続 bin
+Step 13000-15999:   PER.sound と WLD.artless 交替
+Step 16000-19999:   WLD.artless 復活
+Step 20000-24999:   FND.timeless (時間超越)
+```
+
+#### 真の構造的特異性 (効果サイズベース、26 atom)
+
+delta > 1% で 7 atom: PER.sound +25.85%、WLD.artless +24.55%、WLD.culture +5.93%、FND.timeless +5.33%、SOC.city +1.61%、COG.learn +1.12%、PRP.deep +1.09%
+
+z=inf で 19 atom: TIM.appear、ELM.light、PRP.bright、PER.taste、PER.hear、PRP.sharp、FND.transformation 等
+
+#### 真の構造的盲点 (効果サイズベース、7 atom)
+
+TIM.moment -54.11%、COM.conduct -6.49%、TIM.past -4.72%、WLD.science -2.45%、PRP.new -1.78%、ACT.make -1.20%、LOG.cause -1.13%
+
+#### event source 別の意味分化
+
+| source | dominant atom |
+|---|---|
+| alpha_birth | PER.sound 57%、WLD.artless 19% |
+| ingestion | ELM.light 49%、PER.taste 15%、PRP.bright 10% |
+| pulse | PER.sound 28%、WLD.artless 25% |
+| spend | WLD.artless 37%、TIM.appear 26%、ELM.light 21% |
+
+### 86.6 確立した規律
+
+- ベースライン比較 + 効果サイズで切る (新規律最終形、Taka 指摘 2026-05-06 反映)
+- 観察解像度の選択 (静的だけでは捉えきれない)
+- 人間原理偏向の警戒 (事前推測 SOC.central 等が完全反証)
+- 集団平均の罠 (v10.2 #120 の再確認)
+- ウェット概念禁止の徹底
+- Atom 326 絶対化禁止 (Unmatched バケツ必須)
+
+### 86.7 物理層 frozen の維持
+
+post-process なので物理層には一切影響しない。bit-identity 維持は無条件:
+- 既存 v10.5 出力ファイルを変更しない
+- output 先は `developmental/v106/outputs/` 配下のみ
+- shadow audit (path 縛り + 冪等性検証) PASS
+
+### 86.8 v10.7 以降への素材
+
+- 24 seeds 完全一致の動学的発展段階 (素朴 → 聴覚 → 素朴 → 時間超越)
+- 真の構造的特異性 26 atom (聴覚と素朴さに強く接地)
+- 真の構造的盲点 7 atom (TIM.moment 等)
+- event source 別の意味分化 (摂食 = 光 + 味)
+- 解像度依存性の 5 パターン
+- 動学的二相性 (動的瞬間 = 素朴、定常 = 存在 + 出現)
+- 未使用データ 85-95% (関係構造、時系列、内省データ等)
+
+具体的な v10.7 主題決定は別途議論。候補: Atom 持ち込み機構 (建築者視点)、動学観察の本格化 (観察者視点)、両者融合。
+
+## 87. v10.7 完了レポート (発火と波及の機構観察、オービス完成、Phase 1.5 第二試行)
+
+### 87.1 機構の概要
+
+v10.6 の atom_alignment_observer の発展形として、ESDE Genesis 系内部の **発火 (source_event) と波及 (post_event_path_enriched_delta) の機構観察** を post-process として実装。物理層 frozen 維持 (post-process なので無条件)、bit-identity 維持。
+
+ファイル構造:
+```
+developmental/v107/
+├── v107_post_process.py             (orchestrator + 24 seeds 並列)
+├── v107_event_aggregator.py         (5 種 source_event 同定)
+├── v107_path_analyzer.py            (5 種 relation_path 構築)
+├── v107_baseline_constructor.py     (5 種ベースライン群)
+├── v107_avalanche_monitor.py        (3 hop、減衰率、共鳴ループ)
+├── v107_cross_seed_analyzer.py      (Level 1-3 集計)
+├── outputs/main/
+│   ├── source_events_seed*.parquet
+│   ├── relation_paths_seed*.parquet
+│   ├── baselines_with_delta_seed*.parquet
+│   ├── excess_change_seed*.parquet
+│   ├── multi_hop_paths_seed*.parquet
+│   ├── resonance_loops_seed*.parquet
+│   ├── decay_rate_seed*.parquet
+│   ├── peak_lag_curve_seed*.parquet
+│   ├── wave_patterns_seed*.parquet
+│   └── cross_seed/
+│       ├── level_1_co_occurrence.parquet
+│       ├── level_2_path_enriched.parquet
+│       ├── level_3_source_specific.parquet
+│       ├── wave_pattern_summary.parquet
+│       └── resonance_loop_summary.parquet
+└── reports/                         (Step C-J 報告書、Level 1-3 報告書、main_run_report)
+```
+
+### 87.2 5 種 source_event の定義
+
+| event 種別 | 既存ログ | 件数/seed | timestamp | source_cid |
+|---|---|---|---|---|
+| pulse | pulse_log_seed*.csv | 12,530 | t | cid |
+| ingestion | ingestion_events_seed*.csv | 155 | t | observer_cid (eater_cid) |
+| alpha_formation | alpha_lifecycle_log_seed*.csv (event_type='birth') | 424 | step | member_cids 各々 |
+| beta_formation | beta_lifecycle_log_seed*.csv (event_type='birth') | 239 | step | member_cids 各々 |
+| c_conversion | balance_decisions_seed*.csv (decision == 'consciousness') | 155 | step | observer_cid |
+
+合計: 13,503 events/seed × 24 seeds = **415,726 events** (一部 seed のばらつきあり)
+
+### 87.3 5 種 relation_path_type
+
+| relation_path | 構築データ | 経路の意味 |
+|---|---|---|
+| familiarity | network/fam_edges_seed*.csv | 関係性の強度 |
+| attention_via_salience | salience/salience_event_log_seed*.csv | 観察の累積 (attention 代替) |
+| Integration_α | alpha_lifecycle_log の event-by-event | 同 α 内 cid |
+| Integration_β | beta_lifecycle_log の event-by-event | 同 β 内 cid |
+| temporal_coactivation | pulse_log の time-window 集計 | 時間的同期 |
+
+### 87.4 5 種ベースライン群
+
+1. unrelated_baseline (relation_path で全て非接続、緩和定義: familiarity 強度 < 5 + 同 α 内なし + salience 接続少)
+2. same_step_random_baseline (同 step で動いている任意 cid)
+3. matched_baseline (同 n_core / 同 age / 同 hosted 状態)
+4. same_integration_low_familiarity_baseline (同 Integration 内 + familiarity 下位 25%)
+5. high_familiarity_outside_integration_baseline (familiarity 上位 25% + Integration 外)
+
+### 87.5 達成判定 14/14 PASS
+
+5 種 source_event 同定 ✅、5 種 candidate_target_set ✅、5 種ベースライン ✅、Level 1-3 ✅、peak_lag (10 step bin) ✅、波及パターン分類 ✅、アバランシェ防止 (3 hop、17.8 MB/seed) ✅、物理層 frozen (bit-identity 層 A 9/10 + 層 B PASS + 層 C 出力先縛り) ✅、構造語徹底 ✅、WLD.artless 除外 ✅。
+
+### 87.6 因果候補の階層化 (Level 1-3 達成)
+
+| Level | 内容 | 達成数 | 達成率 |
+|---|---|---|---|
+| Level 1: co-occurrence | 発火後に target で変化 | 93/111 | 84% |
+| Level 2: path-enriched | 経路上で変化が大きい | 49/58 | 84% |
+| Level 3: source-specific | event 種別で異なるパターン | 85/90 | 94% |
+
+### 87.7 主要発見
+
+#### medium window 支配
+- top 18 finding すべて medium window (100-1000 step)
+- peak_lag 250-300 が中央値
+- 最大: temporal_coactivation の medium window 内 pulse 数 +15.28
+
+#### 経路強度ランキング (vs unrelated_baseline)
+```
+temporal_coactivation +13.95 (12 倍)
+integration_beta +11.08 (9 倍)
+integration_alpha +10.65 (9 倍)
+familiarity +9.35 (7 倍)
+attention_via_salience +7.43 (6 倍)
+```
+
+#### source-specific 性
+- familiarity 経路: source 依存性が強い (effect_size 1.0-2.0)
+- integration 経路: source-robust (どの source でも 11-17 pulses)
+- immediate window: source-blind (全 source で同じ即時効果)
+
+#### 意識発動の no_signal
+- C conversion は integration_alpha/beta 経路で 24/24 no_signal
+- 意識は cid 個別の現象、階層を超えて波及しない
+
+### 87.8 副次観察
+
+#### 共鳴ループ
+- 2-hop loop: 14,343 件 (mean 598/seed、min_strength 18.06)
+- 3-hop loop: 110,103 件 (mean 4,588/seed、min_strength 7.80)
+
+#### multi-hop 急減衰
+- 1-hop records: 約 188K/seed
+- 2-hop records: 約 165K/seed
+- 3-hop records: 約 13K/seed
+- → small-world 性
+
+#### 波及パターン
+- relation_paths (familiarity / attention / temporal): echo (残響型) 24/24
+- baselines: 大半 echo
+- integration_alpha/beta: no_signal 24/24
+
+### 87.9 性能と規模
+
+- 24 seeds 並列実行 (multiprocessing 24 workers)
+- 実行時間: 234.86 秒 (3.9 分、順次比 12 倍高速)
+- ストレージ: 428 MB (上限 6 GB の 7%)
+- 1 seed 平均: 17.8 MB
+- ファイル数: 217 (= 9 種 × 24 seeds + summary 系)
+
+### 87.10 Code A 認識確認ステップで発見・修正された設計の甘さ 6 件
+
+| 設計の甘さ | Code A 修正案 |
+|---|---|
+| attention map のデータ不在 (重大ブロッカー 1) | salience_event_log で代替 (修正案 C) |
+| ストレージ 31x 超過 (重大ブロッカー 2) | parquet 圧縮 (修正案 E) |
+| c_conversion source の指定誤り | balance_decisions.decision == 'consciousness' |
+| alpha_membership 取得方法 | v10.6 の `_expand_alpha_membership_to_events` 流用 |
+| peak_lag 計算量過大 | 10 step bin |
+| unrelated_baseline 厳密性 | 緩和定義 |
+
+### 87.11 物理層 frozen の維持 (bit-identity 検証)
+
+#### 層 A: 同 seed 2 回実行
+- seed 0 を 2 回 (audit_run_a / audit_run_b)
+- v10.7 post-process 出力 9/10 ファイル完全一致 (post_process_run_summary のみ実行時間記録で差分)
+- データの決定論性は保たれている
+
+#### 層 B: v10.6 baseline との比較
+- v10.6 出力ディレクトリ 731 ファイル MD5 完全一致
+- v10.7 が v10.6 出力を破壊していないことを確認
+
+#### 層 C: v10.7 出力先縛り
+- 全出力が `developmental/v107/outputs/main/` 配下
+- v105/v106 配下への書き込みなし
+- assert_output_under_v107 で path traversal 防止
+
+### 87.12 v10.7 で確立した規律
+
+1. 因果候補の階層化規律 (Level 1-4 段階的検証、Level 1-3 が因果候補、Level 4 で因果確定)
+2. 5 種ベースライン群の必須化
+3. アバランシェ防止規律 (3 hop、減衰率、共鳴ループ、ストレージ上限)
+4. **構造語と直感語の併記** (実装レベルは構造語、議論レベルは直感語、GPT 監査 2026-05-07 で前回方針を自己修正)
+5. Code A 認識確認ステップの必須化 (Taka 指示)
+
+### 87.13 v10.8 以降への素材
+
+- オービス完成 (発火・波及の測定基盤)
+- 5 種 source_event × 5 種 relation_path × 5 種ベースラインの集計済みデータ
+- Level 1-3 の finding (224 件)
+- 共鳴ループ (small-world 構造)
+- medium window 支配の理解
+- temporal_coactivation > familiarity の意外な順位
+- source-specific 性の機能的分化
+- 意識の孤独の構造的記述
+
+具体的な v10.8 主題決定は別途議論。候補: Atom 持ち込み機構 (建築者視点)、temporal_coactivation の構造解析、source-specific 性の精緻化。
+
+
+## 88. v10.8 完了レポート (Atom 単独持ち込み機構の最小実装、Phase 1.5 第三試行、Level 3.5)
+
+### 88.1 機構の概要
+
+v10.7 のオービスを拡張、Atom を ESDE Genesis 系に持ち込む機構を post-process として実装。
+
+主要モジュール:
+- v108_atom_event_generator.py (案 Q + α)
+- v108_event_aggregator_extension.py (source_event 第 6 種追加)
+- v108_global_activation_correction.py (natural events のみで factor 計算)
+- v108_whiteout_monitor.py (副次観察)
+- v108_smallworld_comparison.py (副次観察)
+- v108_post_process.py (orchestrator、v10.7 流用 + 拡張)
+
+ファイル構造:
+```
+developmental/v108/
+├── v108_phase_design.md (両 AI 統合修正版)
+├── v108_2ai_consultation.md
+├── v108_implementation_brief.md
+├── v108_code_recognition_check.md (Code A 認識確認、設計の甘さ 7 件指摘)
+├── v108_response_to_code_a.md (即決事項返答)
+├── v108_environment_check_report.md (25 atom 確定)
+├── v108_atom_co_occurrence_report.md (Level 1)
+├── v108_atom_path_enriched_report.md (Level 2)
+├── v108_atom_source_specific_report.md (Level 3)
+├── v108_introduced_vs_natural_report.md (Level 3.5、v10.8 の核心)
+├── v108_subsidiary_observations_report.md (副次観察 3 件)
+├── v108_main_run_report.md (Code A 総括)
+├── v108_phase_report.md (主題完了レポート)
+├── (Python 6 モジュール)
+└── outputs/main/
+    ├── atom_introduction_events_seed*.parquet
+    ├── (v10.7 と同様の出力ファイル群、ただし source_event 第 6 種を含む)
+    ├── global_activation_factor_seed*.parquet
+    ├── whiteout_monitor_seed*.parquet
+    ├── smallworld_comparison_seed*.parquet
+    ├── error_distribution_seed*.parquet
+    └── cross_seed/
+        ├── level_1_atom_co_occurrence.parquet
+        ├── level_2_atom_path_enriched.parquet
+        ├── level_3_atom_source_specific.parquet
+        ├── atom_vs_natural_baseline.parquet
+        └── (副次観察集計)
+```
+
+合計 363 ファイル、737 MB。
+
+### 88.2 atom_introduction_event の構成 (案 X、Pulse 互換)
+
+```python
+atom_event_record = {
+    "event_id": uuid,
+    "seed": 0-23,
+    "event_source_type": "atom_introduction_event",
+    "source_cid": cid_X,                          # v10.6 top_k から選定
+    "timestamp": t,                                # 案 α 均等分散
+    "Q_pre": Q_real_at_t,                          # v10.5 ledger から取得 (不変)
+    "Q_after_atom_event": Q_real_at_t - 1,         # post-process 計算的減算
+    "C_pre": C_real_at_t,
+    "C_after_atom_event": C_real_at_t + 1,
+    "atom_id": "PER.sound",
+    "atom_index": 0-24,
+    "top_k_rank": 1-100,
+    "reserved_label": "" or "wld_artless_pending",
+}
+```
+
+### 88.3 25 atom 確定リスト (実データ照合)
+
+#### delta_ratio > 1% の 9 atom
+- COG.learn、EXS.being、FND.timeless、PER.sound、PRP.deep、SOC.city、TIM.appear (重複)、WLD.artless (留保)、WLD.culture
+
+#### z=inf の 17 atom
+- BOD.ear、COM.silence、EXS.nonbeing、FND.transformation、PER.feel/fragrance/hear/see/smell/soundless/taste、PRP.bright/sharp、SOC.nation/public、TIM.appear (重複)、WLD.technique
+
+合計 25 atom (重複 TIM.appear を 1 件にカウント)。WLD.artless は留保ラベル付き、集計対象は 24 atom。
+
+#### category 分布
+
+| category | atom 数 |
+|---|---|
+| PER (五感) | 8 |
+| WLD | 3 |
+| SOC | 3 |
+| PRP | 3 |
+| EXS | 2 |
+| FND | 2 |
+| BOD | 1 |
+| COG | 1 |
+| COM | 1 |
+| TIM | 1 |
+
+→ PER 系統が 8 件で最多 (v10.6 観察「PER カテゴリ強接地」と整合)。
+
+### 88.4 達成判定 19/19 PASS
+
+認識確認 + 環境チェック + atom_introduction_event 同定 (60,000 events) + Q/C コスト + source_cid 選定 (案 Q) + 発火タイミング (案 α) + 5+1 種ベースライン群 + global activation 補正 + Level 1-3.5 全達成 + 物理層 frozen + 構造語徹底 + 規律 3 件遵守 + Level 3.5 位置づけ + 副次観察 3 件。
+
+### 88.5 4 段階の階層化 (Level 1-3.5)
+
+| Level | 内容 | candidates | findings | 達成率 |
+|---|---|---:|---:|---|
+| Level 1: atom co-occurrence | atom 発火後に変化 | 1,384 | 811 | 59% |
+| Level 2: atom path-enriched | 経路上で変化が大きい | 1,433 | 683 | 48% |
+| Level 3: atom source-specific | 25 atom 間で異なる波及 | 78 | 36 | 46% |
+| **Level 3.5: introduced vs natural** | **introduced と natural の差分** | 39 | **22** | **56%** |
+
+### 88.6 主要発見
+
+#### Level 1 主要シグナル
+全 24 集計対象 atom で temporal_coactivation × medium n_pulses が +15.6〜+15.8 (24/24 一貫)、atom 間で極めて均質。
+
+#### Level 2 主要シグナル
+temporal_coactivation × medium n_pulses で +13.5〜+13.8 (vs unrelated)。
+
+#### Level 3 path 別 atom 依存性
+- familiarity: effect_size 6.83 (最高、強い atom 依存)
+- attention_via_salience: 2.30
+- integration α/β: 0.85〜0.88
+- temporal_coactivation: 0.03 (最低、atom 中立)
+
+→ familiarity 経路は atom 種別を識別する波及シグナルを持つ。
+
+#### Level 3.5 (v10.8 の核心)
+22 finding 中 **20 件が introduced < natural**:
+- 最大: attention_via_salience × medium n_pulses で atom 4.37 vs natural 8.75 = -4.38 (atom は natural の半分)
+- 例外: temporal_coactivation × medium n_pulses で atom +0.36 (案 α 均等分散発火が temporal で目立つ)
+
+→ atom_introduction_event は ESDE の自然な発火パターンに完全には乗らない (波及が弱い、temporal 除く)。
+
+### 88.7 副次観察
+
+#### Whiteout
+7,200 atom ペアで相関 1.000 近く、100% flag。これは「干渉」ではなく「ESDE 共通効果」(medium n_pulses 1 軸支配の表れ)。真の Whiteout 検証には高次元プロファイル必要 (v10.9 以降)。
+
+#### Small-World
+v10.7 vs v10.8 で loops 14,343 / 110,103 完全同一。post-process は familiarity edge を変更しないので構造的に不変。
+
+#### 誤差分布
+8,835 rows、normal 0% / bimodal 17.4% / skewed 24.3% / other 55.7% / heavy_tail 2.6%。bimodal は target cid の二相状態を反映している可能性。
+
+### 88.8 性能と規模
+
+- 24 seeds 並列実行 (multiprocessing 24 workers)
+- 実行時間: 325 秒 (5.4 分、post_process 261s + global_activation 47s + subsidiary 17s)
+- ストレージ: 737 MB (上限 6 GB の 12%、Code A 当初予想 1.7 GB から大幅減)
+- 1 seed 平均: 30.7 MB
+- ファイル数: 363
+
+### 88.9 Code A 認識確認ステップで発見・修正された設計の甘さ 7 件
+
+#### 重大ブロッカー 2 件
+| ブロッカー | Code A 解決案 |
+|---|---|
+| A. 物理層 frozen と Q 消費の論理的矛盾 | post-process 計算的減算、実 ledger 不変 |
+| B. 26 atom 選定基準の不在 | v10.6 出力から実データ照合で 25 atom |
+
+#### 設計の甘さ 5 件
+| 設計の甘さ | Code A 修正案 |
+|---|---|
+| C. Pulse 同一フォーマットの過剰 | v10.7 source_event スキーマ互換 (27 列) |
+| D. top_k cid 100 個の取得方法不在 | cid_atom_sim_matrix から再計算 |
+| E. global activation の自己補正リスク | natural events のみで factor 計算 |
+| F. Q/C 消費基準値の不明確 | balance_decisions.cognition の固定値 (Q -1 / C +1) |
+| G. Small-World 維持の構造的保証 | post-process は familiarity edge 不変、観察記録のみ |
+
+特に Web Claude の致命的誤解「Pulse = Q 消費」を Code A が修正 (Pulse は disposition update のみ、Q 消費は balance_decisions.cognition / consciousness が担当)。
+
+### 88.10 物理層 frozen の維持 (bit-identity 検証)
+
+#### 層 A: 同 seed 2 回実行
+- seed 0 を 2 回 (audit_run_a / audit_run_b)
+- v10.8 post-process 出力 15/15 完全一致 (summary 系 3 件は実行時間記録で除外)
+
+#### 層 B: v10.7 baseline との比較
+- v10.7 出力ディレクトリ 222 ファイル MD5 完全一致
+- v10.8 が v10.7 出力を破壊していないことを確認
+
+#### 層 C: v10.8 出力先縛り
+- 全出力が `developmental/v108/outputs/main/` 配下
+- v105/v106/v107 配下への書き込みなし
+
+### 88.11 v10.8 で確立した規律 (新規 1 + 実装的確立 3)
+
+#### 新規
+1. Level 3.5 introduced event comparison 規律 (因果断定回避、event 比較として位置づけ)
+
+#### 実装的確立
+2. Atom 持ち込み設計の規律 3 件 (魔法回避 / same_step + global activation 補正 / target は構造経路で選ぶ)
+3. post-process 計算的減算 (物理層 frozen と外部要素導入の両立)
+4. Pulse 処理ルールと同一フォーマット (神の手回避)
+
+### 88.12 v10.9 以降への素材
+
+- Atom 持ち込み機構の精緻化候補 (introduced < natural の原因分離)
+- ESDE Language 上位層 (Axis、Operator、条件因子、分子化) との接続
+- bimodal 分布の構造解析 (target cid 二相状態の解明)
+- B 群 (真の盲点 7 atom) 試験 (v10.8.1)
+- 入力理解機構への前進
+- Whiteout の真の検出 (高次元プロファイル)
+
+具体的な v10.9 主題決定は別途議論。
+
+## 89. v10.9 完了レポート (寄与候補感度評価 + bimodal 構造解析、Phase 1.5 第四試行、会話系設計のための部品調達)
+
+### 89.1 機構の概要
+
+v10.7-v10.8 のオービスを拡張、v10.8 主要発見の 2 つの未解決点 (introduced < natural、bimodal 17.4%) を分離評価する 3 新条件 (A2 / B3 / C2) の post-process として実装。
+
+主要モジュール:
+- v109_atom_event_generator.py (3 新条件の atom_introduction_event 生成)
+- v109_baseline_recalculator.py (各変動条件で baseline 再計算)
+- v109_bimodal_analyzer.py (bimodal 1,540 件構造解析、KDE + median_split 代替)
+- v109_sensitivity_evaluator.py (寄与候補感度評価、Cohen's d)
+- v109_design_table_compiler.py (4 種設計表生成)
+- v109_post_process.py (orchestrator、v10.7-v10.8 流用 + 拡張)
+
+ファイル構造:
+```
+developmental/v109/
+├── v109_phase_design.md             (主題ドキュメント、両 AI 統合修正版)
+├── v109_2ai_consultation.md         (第一回 2 AI 意見聴取)
+├── v109_2ai_followup_question.md    (Taka の問いに対する両 AI 再質問)
+├── v109_atom_residency_reservation.md (Atom 常駐留保ドキュメント)
+├── v109_implementation_brief.md     (Code A 実装指示書)
+├── v109_code_recognition_check.md   (Code A 認識確認、設計の甘さ 7 件指摘)
+├── v109_response_to_code_a.md       (即決事項返答)
+├── v109_environment_check_report.md (Step B)
+├── v109_step_c_report.md            (atom_event_generator A2/B3)
+├── v109_step_d_report.md            (baseline_recalculator A2/B3)
+├── v109_step_e_report.md            (bimodal_analyzer)
+├── v109_step_f_report.md            (bimodal 24 seeds + C2 判定要請)
+├── v109_step_f_judgment.md          (Web Claude 判定、4 決定事項)
+├── v109_step_g_h_report.md          (C2 atom_event + baseline)
+├── v109_step_i_report.md            (sensitivity_evaluator)
+├── v109_step_j_k_report.md          (統合 smoke + main 判定要請)
+├── v109_step_l_report.md            (24 seeds main run + 簡易集計)
+├── v109_step_l_judgment.md          (Web Claude 判定、Q2/Q3 確定)
+├── v109_main_run_report.md          (Code A 総括、Step N)
+├── v109_phase_report.md             (主題完了レポート、Web Claude)
+├── (Python 5 モジュール)
+└── outputs/main/
+    ├── (per-seed 出力 264 ファイル: atom_introduction_events / baselines / sensitivity / bimodal)
+    └── cross_seed/
+        ├── design_table_1_sensitivity.parquet
+        ├── design_table_2_receptivity.parquet
+        ├── design_table_3_routing.parquet
+        ├── design_table_4_naturalness.parquet
+        ├── level_1_mechanism_check.json
+        ├── level_2_condition_diff.parquet
+        ├── level_3_sensitivity.parquet
+        ├── level_3_5_structural_integration.parquet
+        ├── structural_integration_path_bimodal_timing.parquet
+        └── v109_reservations.json
+```
+
+合計 277 files、190 MB。
+
+### 89.2 3 新条件の構成
+
+#### A2: Q -2 / C +2 (Q/C コスト変動)
+
+```python
+atom_event_record_A2 = {
+    "Q_after_atom_event": Q_real_at_t - 2,  # post-process 計算的減算
+    "C_after_atom_event": C_real_at_t + 2,
+    "condition_id": "A2",
+    "varied_factor": "Q_cost",
+    "varied_level": 2,
+}
+```
+
+A1 (Q-1/C+1) との比較で Q/C コスト感度を評価。
+
+#### B3: random cid (cid 選定変動)
+
+```python
+atom_event_record_B3 = {
+    "source_cid": random_cid_from_seed_pool,  # seed 内全 cid から random 100
+    "top_k_rank": -1,
+    "condition_id": "B3",
+    "varied_factor": "cid_selection",
+    "varied_level": 3,
+}
+```
+
+B1 (top_k 100) との比較で cid 選定感度を評価。Atom 326 絶対化禁止規律の確認。
+
+#### C2: リズム同調 (発火タイミング変動)
+
+Step F bimodal 解析結果を踏まえた Web Claude 判定 (Q2 案 b 採用):
+```python
+atom_event_record_C2 = {
+    "source_cid": cid_in_top_k_100,
+    "timestamp": cid.t_birth + 200,  # 各 cid が age=200 で発火
+    "condition_id": "C2",
+    "varied_factor": "timing",
+    "varied_level": 2,
+}
+```
+
+C1 (案 α 均等分散) との比較で発火タイミング感度を評価。Gemini A2 Phase-locking の構造的実装。
+
+### 89.3 25 atom (v10.6 → v10.8 → v10.9 で継承)
+
+v10.8 で確立した 25 atom リストを継承。WLD.artless 留保ラベル付き、集計対象 24 atom。category 分布: PER 8、WLD 3、SOC 3、PRP 3、EXS 2、FND 2、BOD 1、COG 1、COM 1、TIM 1。
+
+### 89.4 達成判定 17/17 PASS
+
+認識確認 + 環境チェック + 3 新条件 main run + 各変動条件 baseline 再計算 + bimodal 構造解析 + C2 案 b 採用 + 寄与候補 3 つの感度評価 + 4 階層 reports + 4 種設計表 + 構造的統合 + natural baseline 比較 + 留保 3 件明記 + 24 seeds 単一バッチ + smoke 後止まって報告 + 同一ターン commit + push = 全項目クリア。
+
+### 89.5 4 段階の階層化 (新規明示、GPT B5)
+
+| Level | 内容 | 主結果 |
+|---|---|---|
+| L1: 機構動作確認 | 全 conditions で安定発火 | 12,960 sensitivity_rows、欠損なし |
+| L2: 条件差確認 | 条件間で systematic な差 | timing × n_pulses 全 win 0.714 (大効果量) |
+| **L3: 寄与候補感度評価** | 各候補のノブ定量化 | timing 0.300 圧倒、QC_cost 0.005 評価不能 |
+| **L3.5: 構造的説明候補整合** | d と a の整合 | 「bimodal 支配性 ≠ 感度の強さ」 |
+
+### 89.6 主要発見 4 件
+
+#### 発見 1: 「強反応する cid は若い cid」 (Step F、構造)
+
+bimodal 1,540 件のうち genuine_bimodal 918、その中で **H3_lifecycle が 553 (60.2%) で支配**:
+- 高 delta 群 cid age = mean 224 / median 227
+- 低 delta 群 cid age = mean 5,612
+- 99% 方向一致、effect_size 0.85
+
+#### 発見 2: timing > cid_selection > QC_cost の感度階層
+
+| comparison | abs_mean | n_large_effect |
+|---|---:|---:|
+| timing | **0.141** | **757** |
+| cid_selection | 0.024 | 18 |
+| QC_cost | 0.005 | 0 (留保) |
+
+#### 発見 3: 「Integration 外の高 familiarity cid」が最強・最 robust の入力経路 (新発見)
+
+| path | mean | std |
+|---|---:|---:|
+| **high_fam_out_integ** | **0.222** | **0.079** |
+| unrelated | 0.205 | 0.065 |
+| familiarity | 0.044 | 0.218 |
+| temporal | 0.015 | 0.220 |
+| attention | 0.010 | 0.128 |
+
+#### 発見 4: C2 で pulse 活動が大効果量で活発化
+
+mean_n_pulses_in_window short 0.97、medium 0.75。
+
+### 89.7 Level 3.5 構造的統合 (核心発見)
+
+| path | bimodal 支配仮説 | timing 感度 | label |
+|---|---|---:|---|
+| high_fam_out | (なし) | 0.222 | sensitivity_strong_structure_weak |
+| unrelated | (なし) | 0.205 | sensitivity_strong_structure_weak |
+| temporal | H3 (74%) | 0.015 | structure_strong_sensitivity_weak |
+| attention | H1 (48%) | 0.010 | structure_strong_sensitivity_weak |
+| familiarity | H3 (59%) | 0.044 | marginal |
+
+→ **「bimodal 支配性 ≠ 感度の強さ」** = ESDE Genesis 系の **構造的多重性**。
+
+### 89.8 4 種設計表 (出口の固定)
+
+#### 表 1: sensitivity_summary (540 rows)
+- 3 比較 × 6 metrics × 10 paths × 3 windows
+- timing × n_pulses × short = 0.97 (大効果量)
+
+#### 表 2: receptivity_detection_criteria (核心、4 rows)
+| criterion | operator | value | effect_size |
+|---|---|---|---:|
+| **cid_age** | <= | 560 | 0.864 |
+| **in_integration** | == | 0 | 0.222 |
+| **familiarity_max** | >= | top_quartile | 0.222 |
+| n_core_member (副) | >= | 4.67 | 1.112 |
+
+→ v10.10「受信可能状態」検出ルール: `if cid.age <= 560 AND cid.in_integration == False AND cid.familiarity_max >= top 25%: receptive`
+
+#### 表 3: input_routing_criteria (10 rows)
+| rank | path | recommendation |
+|---:|---|---|
+| 1 | high_familiarity_outside_integration_baseline | PREFER |
+| 2 | unrelated_baseline | PREFER |
+| 3+ | (他経路) | NEUTRAL |
+
+#### 表 4: natural_likeness_design_criteria (180 rows)
+- 全 180 cells のうち C2 が natural に近づいた cells: 84 (47%)
+- unrelated: 16/18 (89%)、high_fam_out: 12/18 (67%)
+
+### 89.9 性能と規模
+
+- 24 seeds 並列実行 (multiprocessing 24 workers)
+- main run: 112.74 秒 (smoke 込みで 約 150 秒)
+- ストレージ: 190 MB (累計 v107+v108+v109 = 1.29 GB / 上限 21%)
+- ファイル数: 277
+
+### 89.10 Code A 認識確認ステップで発見・修正された設計の甘さ 7 件
+
+#### 重大ブロッカー 1 件
+- A. 9 条件 6 新条件のストレージ 4.4 GB = 上限 72% (打切閾値 50% 超過) → 案 c (3 新条件、上限 18%) で圧縮
+
+#### 設計の甘さ 6 件
+- B. C2 リズム同調が bimodal 解析依存 → bimodal 完了後に再実行
+- C. B3 random cid 母集団 → seed 内全 cid から random 100
+- D. A3 (Q 0/C 0) post-process 整合 → delta 計算スキップ (実施せず留保)
+- E. 出口固定 4 種設計表のフォーマット → Code A 具体化
+- F. bimodal 解析手法 → KDE 第一試行 + Mixture Model フォールバック (実際は KDE fallback 100% で median_split 代替)
+- G. bimodal 1,540 件は seed 0 単独で 67 件のみ → cross-seed 集計が主流
+
+連続 v10.7-v10.9 で合計 20 件の設計の甘さを Code A が補完。手戻りゼロ連続 4 段階。
+
+### 89.11 物理層 frozen の維持 (bit-identity 検証)
+
+#### 層 A: 同 seed 2 回実行
+seed 0 を 2 回 (audit_run_a / audit_run_b)、v10.9 post-process 出力完全一致。
+
+#### 層 B: v10.7/v10.8 baseline との比較
+v10.7 出力 222 ファイル + v10.8 出力 368 ファイル = 590 files MD5 完全一致。
+
+#### 層 C: v10.9 出力先縛り
+全出力が `developmental/v109/outputs/main/` 配下、v105/v106/v107/v108 配下への書き込みなし。
+
+### 89.12 v10.9 で確立した規律 (新規 4 + 継承)
+
+#### 新規 4 件
+
+1. **出口の固定規律** (GPT 提案): 成果物を v10.10 のための設計表 4 種として明示
+2. **「原因」ではなく「寄与候補の感度評価」と呼ぶ命名規律** (GPT B3): 因果断定回避
+3. **各変動条件で baseline 再計算規律** (GPT B6): 流用しない、比較可能性
+4. **4 層階層化の明示規律** (GPT B5): L1/L2/L3/L3.5 を独立記録
+
+#### 継承
+
+v10.7 / v10.8 の規律全て継承。
+
+### 89.13 留保事項 3 件
+
+- 留保 1: bimodal 解析の手法的限界 (KDE fallback 100%、全件 median_split 代替)
+- 留保 2: QC_cost (Q/C コスト) は v10.9 で評価不能 (post-process 限界、A1 vs A3 比較未実施)
+- 留保 3: high_fam_out_integ 経路が最強の理由は構造的に未解明
+
+### 89.14 v10.10 以降への素材
+
+- 4 種設計表 (v10.10 主題決定の素材セット)
+- 「条件適応型 atom 導入」の具体内容: cid age <= 500 + Integration 外 + 高 familiarity + age=200 timing
+- v10.10 主題候補: 条件適応型 atom 導入 (第一推奨) / high_fam_out 構造解明 / Atom 常駐アンカー / B 群試験 / QC_cost 本格評価
+
+具体的な v10.10 主題決定は別途議論。

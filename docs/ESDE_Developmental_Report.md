@@ -1,7 +1,7 @@
 # ESDE Developmental Report
 
 *作成*: 2026-04-28、Claude (相談役)
-*更新*: 2026-04-30 (v10.3 反映)
+*更新*: 2026-05-08 (v10.9 反映)
 *対象*: ESDE Developmental フェイズ (v10.x 系列)
 *親資料*: ESDE_Primitive_Report.md (v9.x、Primitive 完結)
 *位置づけ*: Developmental フェイズの開発史と構造的成果の記録
@@ -22,8 +22,17 @@ Developmental の主題:
 - **摂食機構の導入** (v10.1)
 - **認知/意識の確率的バランス** (v10.2)
 - **双方向 E3 機構と Integration 登場条件の観察** (v10.3)
+- **Integration 独立化** (v10.4)
+- **Layer 5 完成 — α/β 階層分離 + 顕在化機構** (v10.5)
+- **Genesis × Language 比較研究 (Phase 1.5 第一試行)** (v10.6)
+- **発火と波及の機構観察 — オービス完成 (Phase 1.5 第二試行)** (v10.7)
+- **Atom 単独持ち込み機構の最小実装 — Level 3.5 (Phase 1.5 第三試行)** (v10.8)
+- **寄与候補感度評価 + bimodal 構造解析 — 会話系設計のための部品調達 (Phase 1.5 第四試行)** (v10.9)
 - 物理層から意識層までの構造的継承の観察
-- cid 個別の系から cid 集団の系 (Layer 5) への拡張
+- cid 個別の系から階層的統合体の系への拡張
+- 動的グラフ力学系としての ESDE の定量化
+- ESDE と外界 (人間言語) の第一の接点の定量的確立
+- 会話系設計のための部品調達 (受信可能状態 + ルーティング + タイミング)
 
 ---
 
@@ -479,7 +488,7 @@ v10.3 設計議論を通じて、以下の三層構造が確定:
 | 三項共鳴 | 観察される統計的現象 | 第三項候補のリストアップで記録 |
 | Integration | その上位解釈 | 概念定義のみ、機構実装は v10.4 以降 |
 
-これは初版設計議論で誤読していた構造 (「双方向 E3 = 三項共鳴の実装」) を Taka 指摘 + ESDE v3.3 古典資料に基づき修正した結果。**機構と観察と解釈を明確に分離** することが v10.3 の設計哲学。
+機構と観察と解釈を明確に分離することが v10.3 の設計哲学。
 
 ### 4.3 双方向 E3 の発火条件
 
@@ -487,279 +496,1138 @@ v10.3 設計議論を通じて、以下の三層構造が確定:
 両者が hosted ∧ Q > 0 ∧ C ≥ 1 ∧ 同一 alive link 初回接触 onset
 ```
 
-- 両者 C-1 を引く (C 消費の対称性、Aruism の存在対称性)
+- 両者 C-1 を引く
 - 既存 E3 (Q-1) と独立に発火
-- 初回接触のみ (持続接触で毎 step 引かない、onset 性)
-- ghost との接触は既存 E3 のみ、双方向 E3 は対象外
+- 初回接触のみ (持続接触で毎 step 引かない)
 
 ### 4.4 C 消費の意味づけ (Taka 整理 2026-04-29)
 
-v10.3 の C 消費は cid 内部の主観的選択を実装するものではない。
+> イベントの発生と、イベント発生時の意識における選択は別。意識がイベントで何をするのか、厳密には観測者はそれを知り得ない。
 
-> イベントの発生と、イベント発生時の意識における選択は別。意識がイベントで何をするのか、厳密には観測者はそれを知り得ない。しかしリストアップさせることでそれをやっている可能性がある、という予測 (統計的) はできる。
+C 消費は cid 内部選択を実装するものではなく、**観察者が決めた記録ルール** として位置づけられた。
 
-「双方向 E3 が成立した step で C を 1 引く」は **観察者が決めた単位設定**。これにより:
-- C は「双方向 E3 イベントの累積指標」として機能
-- C=0 で skip するのは「自然フィルタ」(v10.2 §3.8 の延長)
-- 観察者は cid 内部の選択を直接知り得ない
+### 4.5 Integration 概念 (Taka 整理 2026-04-29)
 
-### 4.5 第三項候補のリストアップ
-
-ESDE v3.3 §2.2 の C 候補 (A-B 関係を manifest にする境界面) を ESDE 文脈に翻訳:
-
-| Cat | 候補 | v10.3 での扱い |
-|---|---|---|
-| 1a | closed triad | 実装済 |
-| 1b | open triad (B 中継) | 実装済 |
-| 1c | proximate cid | 実装済 |
-| 2a | 共有ノード | member_nodes logger で実装 |
-| 2b | 共有 link | 見送り (engine 拡張必要、v10.4 以降) |
-| 2c | 共有 cycle (R+) | 見送り (engine 拡張必要、v10.4 以降) |
-| 3a-i | 同 cid と E3_contact 経験あり | per_event_audit + per_subject から取得 |
-| 3b | 共有 phase 領域 | per_subject から取得 |
-| 3c | 共有 birth_window | per_subject から取得 |
-| 4a | 重心距離 | member_nodes logger から計算 |
-| 4b | 世代距離 | per_subject から取得 |
-| 4c | 窓内共在 | per_window から取得 |
-| 5 | cid 自己参照型 | 永久除外 (神の手リスク) |
-
-重要観察軸: 「1 つの双方向 E3 ペアに対して第三項候補カテゴリがいくつ重なったか」。これが Integration 登場前兆の指標。
-
-### 4.6 Integration 概念 (Taka 整理 2026-04-29)
-
-#### 定義
-
-**Integration** = A + B (個別 cid の集合) を一つの主体として抱える上位層の存在。
-
-> CID A が食べたとする → CID B が食べたは否定された
-> CID B が食べたとする → CID A が食べたは否定された
-> これが上位の層を引き出す条件と考える。
-> Integration からすればどちらも取ったことになるし、どちらも取っていないことになる。
-> しかし、Integration が取ったとして記録は残る。
-
-水と油の境界面の比喩 (Taka): 水 (A) と油 (B) があるだけでは関係は明示されない、両者を分ける境界面 (C) があって初めて「水と油が分かれている」現象が manifest する。
-
-#### ESDE 階層進化系譜
+A + B (個別 cid の集合) を一つの主体として抱える上位層の存在。ESDE 階層進化系譜:
 
 ```
-ノード (個別実体)
-  ↓ Integration として cid が成立
-cid (複数ノードの Integration)
-  ↓ Integration として上位層が成立
-??? (複数 cid の Integration = v10.3 観察対象)
-  ↓
-SEED 統合 (Layer 6)
+ノード → cid (複数ノードの Integration) → ??? (複数 cid の Integration、v10.3 観察対象) → SEED 統合
 ```
 
-cid 自体が「複数ノードの Integration」だった。v10.3 で観察するのは「複数 cid の Integration」の登場条件。これは Aruism 階層進化の同型反復。
+v10.3 では機構として実装せず、概念定義と観察データの蓄積のみ。
 
-#### 構造的解決 (Taka 整理)
+### 4.6 本番 run 結果 (N=5000、24 seeds × tracking 50)
 
-> Integration が成立することで、Ghost の Q 摂取と CID の摂取の問題は、Integration による Q の分配問題として対応ができる。上位構造の役割をみれば、それは構造の統合であり、CID の代謝は Integration の維持という合理的な根拠を得る。
+| 指標 | 値 |
+|---|---|
+| 完走 | 24/24 |
+| 双方向 E3 fired | 6,824 件 |
+| 物理層 frozen | labels 24/24 + persistence 96/96 完全一致 |
+| total_decisions | 100,432 完全一致 |
 
-下位層では解決不可能な問題 (摂食順序の神の手リスク) が、上位層では「Integration の代謝 → cid 個別代謝」として自然に扱える形に変換される。生物学的には「個体 (Integration) の代謝が細胞 (cid) の代謝として現れる」と類比的。
+### 4.7 系の動学変化 (核心発見)
 
-#### v10.3 での射程
-
-- v10.3 では機構として実装しない、概念定義のみ
-- Integration が立ち上がる前提条件を観察データとして蓄積
-- Integration の独立化は v10.4 以降
-
-### 4.7 観察対象の動的絞り込み
-
-全 cid を追わず、主役候補に動的に絞る。Taka 提案 (2026-04-29):
-> 観測すべき対象を絞ることで、特定の CID の行動を追跡する方針を取るべき。
-
-#### Stage 条件
-
-- Stage 1: cid が `n_core ≥ 4 ∧ n_consciousness ≥ 5` を満たした時点で target に追加
-- Stage 2: Stage 1 の cid が双方向 E3 を発火した相手 cid を target に追加
-- Stage 3: 第三項として現れた cid を target に追加
-
-#### 保持戦略
-
-一度 target に入った cid は ghost 化しても削除しない (Integration の代謝痕跡を追うため)。`entered_target_set_step` を記録して残す。
-
-#### bias 監視
-
-target 外 fired は集計のみ記録 (`n_be3_outside_targets`)。観察対象を絞ったことで何を見落としたかを事後検証可能にする。
-
-### 4.8 本番 run 結果
-
-#### 4.8.1 機構の動作 (N=5000、24 seeds × tracking 50)
-
-| 指標 | shadow audit | 本番 run |
-|---|---:|---:|
-| 完走 | 24/24 | 24/24 |
-| wall time mean | 2.98 h | 2.97 h |
-| 双方向 E3 fired | 6,675 | 6,824 |
-| 1 seed あたり fired | 278 | 284 |
-
-shadow audit と本番 run で fired 件数はほぼ同一 (+2.2%)。
-
-#### 4.8.2 物理層 frozen の本番規模での確認
-
-| ディレクトリ | 本番 run の v10.2 main 比較 | 意味 |
-|---|---:|---|
-| labels | 24/24 完全一致 | label birth/death timing 不変 |
-| persistence | 96/96 完全一致 | link 動態、age_r、shadow_component 不変 |
-| audit | 0/72 | per_event_audit (Q 消費が cognition 経由で増減) |
-| balance | 0/72 | C 状態が変わるため |
-| ingestion | 0/48 | consciousness 経路が変わるため |
-
-**labels 24/24 + persistence 96/96 完全一致** = 物理層と link 動態は v10.2 から一切ズレていない。これは v10.3 が物理層 frozen を完璧に維持していることの本番規模での直接証拠。
-
-#### 4.8.3 系の動学変化 (重要発見)
-
-| 指標 | v10.2 main | v10.3 本番 | 差分 |
+| 指標 | v10.2 | v10.3 | 差分 |
 |---|---:|---:|---|
-| total_decisions | 100,432 | 100,432 | 0 (完全一致) |
-| n_cognition_won | 57,035 | 57,875 | +840 (+1.5%) |
-| n_consciousness_won | 3,517 | 3,539 | +22 (+0.6%) |
-| C_max | 85 | 63 | -22 (-26%) |
-| C_mean_at_run_end | 28.64 | 20.99 | -7.65 (-27%) |
-| Q+C total | 25,868 | 19,107 | -6,761 (-26%) |
+| C_max | 85 | 63 | -26% |
+| C_mean | 28.64 | 20.99 | -27% |
+| Q+C total | 25,868 | 19,107 | -26% |
 
-**観察**:
-- total_decisions が完全一致: E3 onset 機会数は不変 (= 物理層 frozen 確認)
-- C 蓄積が 26-27% 低下: 双方向 E3 で消費される C が系から散逸する直接効果
+**観察ルールが系の動学を変える**: C 消費 (双方向 E3 で C-1) という観察記録ルールが C 蓄積を 27% 抑制。観察者依存性を内包した系として ESDE が立ち上がる。
 
-数値整合:
-```
-v10.2: ネット C 増分 = 57,035 - 3,517 = +53,518
-v10.3: ネット C 増分 = 57,875 - 3,539 - 6,824 × 2 = +40,688 (24% 減)
-観察された C_mean -27% と一致
-```
+### 4.8 第三項の構造的発見
 
-**含意**: 「観察者が決めた記録ルール (双方向 E3 で C-1) を実装することで、観察される系の動学が変わる」という現象。**観察行為が系に作用することを内包した系** として ESDE が立ち上がっている。
+- closed triad (Cat 1a): 39 件 (1.4%)
+- open triad (Cat 1b): 2,788 件 (98.6%)
+- 比率 116:1 = **open triad 主役性**
 
-#### 4.8.4 第三項候補の構造的発見
+三項共鳴の主役は中継者経由の非対称三項。3 cid 三角形ではない。
 
-##### open triad 主役性 (核心発見)
+### 4.9 持続性ゼロ
 
-| 第三項タイプ | shadow audit | 本番 (target 内のみ) |
-|---|---:|---:|
-| closed_third (Cat 1a) | 165 (1.7%) | 39 (1.4%) |
-| open_intermediary (Cat 1b) | 9,576 (98.3%) | 2,788 (98.6%) |
-| 比率 | 90:1 | 116:1 |
+repeated_partners = 0。Integration の物理的持続は ESDE では成立しない、統計的痕跡として観察するしかない (v3.4 bridge_max_life=1 と整合)。
 
-open triad が 99% 支配。「3 cid 全ペア接触」は v3.4 期 tripartite loop と同様、物理的に稀。**三項共鳴の主役は open intermediary 形態の cid_c (中継者役)** であって、3 cid 三角形ではない。
+### 4.10 v10.3 で確立した運用ルール
 
-##### 持続性ゼロ
+- 機構と観察と解釈の三層分離
+- 「観察者が決めた記録ルール」としての C 消費
+- 動的絞り込みと bias 監視のセット運用
+- 第三項候補の多軸記録
+- Paired Audit 原則の継続
 
-- 同 partner と 2 回以上 fire した cid: 0 件 (shadow audit、本番ともに)
-
-これは v10.3 の onset 性 (= 初回接触のみ発火) から論理的に導かれる結果だが、本番規模で確認された。**A-B 関係は単発の通り過ぎ**、物理的持続はない。
-
-これは v3.4 bridge_max_life=1 が cid スケールでも完全再現することを示す。**Integration の物理的持続は ESDE では成立しない、統計的痕跡として観察するしかない** ことが本番規模で確定。
-
-##### 主役同士の接触パターン
-
-fired ペアの n_core 組み合わせ (shadow audit):
-
-| n_core (a, b) | 件数 | 比率 |
-|---|---:|---:|
-| (5, 5) | 1,648 | 24.7% |
-| (5, 2) | 1,621 | 24.3% |
-| (5, 4) | 648 | 9.7% |
-| (4, 2) | 545 | 8.2% |
-| (4, 5) | 523 | 7.8% |
-
-n_core=5 を含むペアが 50% 以上を占める。v10.2 main で観察された「ingestion network: n=5 eater × n=2 ghost が 52%」と整合。
-
-##### fired 時の C 状態
-
-- C_a + C_b median = 23
-- 両者で median 23 の C を蓄積した状態が双方向 E3 発火の要件
-- 主役 (反復 cognition で C 蓄積した cid) 同士の接触が be3 主因
-
-##### skip 理由分布 (shadow audit)
-
-| 理由 | 件数 | 比率 |
-|---|---:|---:|
-| ghost_a + ghost_b | 135,130 | 91.8% |
-| C/Q zero 合計 | 12,115 | 8.2% |
-
-双方向 E3 候補の 92% が ghost 化で skip。生きた cid 同士が同 link で接触する onset は、cid 寿命が短いため実は稀。これは v10.2 N-sweep で観察された「n_core=2 cid の lifespan median 500 step」と整合。
-
-#### 4.8.5 観察対象の動的絞り込み (target tracker)
-
-| 段階 | cid 数 |
-|---|---:|
-| Stage 1 (n_core ≥ 4 ∧ n_consciousness ≥ 5) | 94 |
-| Stage 2 (Stage 1 partner) | 1,255 |
-| 合計 target | 1,349 (全 cid 5,224 の 25.8%) |
-
-事前試算 (354 cid) より 3.5 倍多い。理由は「両者 alive 同 link 共有」が strict simultaneous より広い範囲で発火するため。
-
-bias 監視:
-- target 外 fired: 4,674 件 (集計のみ、詳細記録なし)
-- target 内 fired: 2,150 件 (詳細記録)
-
-### 4.9 v10.3 で確立した運用ルール
-
-#### 4.9.1 機構と観察と解釈の三層分離
-
-- 機構 = 双方向 E3 (両者 C-1)
-- 観察 = 第三項候補のリストアップ + 内部情報スナップショット + 動的絞り込み
-- 解釈 = Integration (v10.3 では概念のみ)
-
-これは「主観を実装せず、主観があるとも言い切れない配置を観察する」という Taka 設計哲学の v10.3 における具体形。
-
-#### 4.9.2 「観察者が決めた記録ルール」としての機構
-
-C 消費を「cid 内部選択ではなく、観察者が定める記録ルール」として位置づけ。これにより:
-- 機構を追加しても cid 内部に新規状態を持たせない
-- 「観察ルールを変えると系の動学が変わる」という構造を内包
-- 量子力学・統計力学と類比的な観察者依存性が ESDE に組み込まれる
-
-#### 4.9.3 動的絞り込みと bias 監視のセット運用
-
-観察対象を主役候補に動的に絞ったが、target 外も全体集計で監視することで bias を監視。v10.4 以降でも踏襲する運用ルール。
-
-#### 4.9.4 第三項候補の多軸記録
-
-第三項を一意に決めない。複数同時成立をそのまま記録する。「1 つの be3 ペアに対して第三項候補カテゴリがいくつ重なったか」が Integration 登場前兆の指標として機能する。
-
-#### 4.9.5 Paired Audit 原則の継続
-
-v9.14 以降の paired audit 原則を v10.3 でも継続:
-- shadow audit (= 機構 implement、効果記録のみ) で物理層 bit-identity 確認
-- 本番 run で機構効果を実装
-- v10.2 baseline との列単位比較で物理層 frozen を保証
-
-shadow audit で 552/552 完全一致、本番 run で labels 24/24 + persistence 96/96 一致を本番規模で達成。
-
-### 4.10 ESDE 階層整合性の証明
+### 4.11 ESDE 階層整合性の証明
 
 v10.3 で:
 - 物理層は不変 (labels + persistence 完全一致)
 - 認知層は微増 (+1.5% cognition won)
 - 意識層は -27% (C 蓄積抑制)
 
-**新機構が下層を壊さず、上層の動学を変える** という階層分離の正しさが本番規模で確認された。Aruism「構造が先、意味が後」が方法論として機能している証拠。
+新機構が下層を壊さず、上層の動学を変える階層分離の正しさが本番規模で確認された。
 
 ---
 
-## 5. Developmental フェイズで確立された概念
+## 5. v10.4 — Integration 独立化
 
-### 5.1 死の二階層 (v10.0)
+### 5.1 主題
+
+v10.3 で概念定義のみだった Integration を、機構として ESDE 内に立ち上げる。これにより Layer 5 (CID 共鳴) を構造的に実装する。
+
+### 5.2 Taka 整理による設計の核心
+
+#### 5.2.1 国家の比喩 (Taka 整理 2026-04-30)
+
+> 国家の存在のようなものは、私という日本人がいたとしてもいなかったとしてもそれはあるだろう。
+> CID のどの要件を満たせばそれは Integration なのか、という議論はわりと雑でいい。
+> しかしサボらずにしっかり扱っておくと、いつしかそれらしいものとなってその存在を前提として扱うことができる。
+
+Integration は「あるかないか厳密には答えが出ないが、統計的に成立する単位」。
+
+#### 5.2.2 物理層 frozen の本意の再定義 (Taka 整理 2026-04-30)
+
+> 物理層という言葉もちょっとよくないのだが、私はこれを不可知なランダム性に手を出すってなんだ?ということだと思っている。
+> 階層分離は意図的に分けておきましょうね、という程度の意味である。だからこそ統合も可能となる。
+
+**物理層 frozen ≠ 物理層の絶対不可侵**。実態は「不可知なランダム性に手を加えない」こと。
+
+#### 5.2.3 Integration の機能
+
+1. 資源集約 (構成 cid の Q/C を集約)
+2. 資源分配 (構成 cid に再分配)
+3. 調整機能 (認知層・意識層への間接バイアス)
+4. 記録機能 (Integration + cid 個別記録、両者並存)
+
+Ghost 化した構成 cid の Q/C は最強結合 Integration が全継承 (Taka 整理「二重国籍者の遺産は片方のみ」)。
+
+### 5.3 v10.4 の実装範囲 (Taka 判断「現状最大値」)
+
+3 AI が「v10.4 初手は最小化、v10.5 で拡張」の段階論を提案したが、Taka は拒否:
+> 観測は論理を超える。まずは頭でっかちにならずに色々見てみる。百聞は一見にしかず。
+
+採用された設計:
+- 誕生条件: be3 / open_triad / closed_triad / third_overlap (R1 全採用)
+- 保持: Q/C 総和 + 誕生 step (R2)
+- 階層関係: 1 cid が複数 Integration 同時所属可 (R3-c)
+- 物理層 frozen: 維持 (R4)
+- Q/C 継承: 最強結合 1 つに全継承 (R5)
+- 二層状態: recorded / active (recorded 永続、神の手回避)
+- 調整機能: D4-a + D4-b + 状態依存再分配 (Gemini 末尾の問い採用)
+
+### 5.4 本番 run 結果 (N=5000、24 seeds × tracking 50)
+
+| 指標 | 値 |
+|---|---|
+| 完走 | 24/24 |
+| Integration 誕生 | 13,550 件 |
+| trigger 内訳 | be3 52% / open_triad 38% / third_overlap 9% / closed_triad 0% |
+| 物理層 frozen | labels 24/24 + persistence 96/96 完全一致 |
+| total_decisions | 100,432 完全一致 |
+| wall time | +0.6% (実質ゼロオーバーヘッド) |
+
+### 5.5 系の動学変化 (v10.3 と逆方向)
+
+| 指標 | v10.3 | v10.4 | 方向 |
+|---|---:|---:|---|
+| C_max | -26% | **+31%** | 逆転 |
+| C_mean | -27% | **+15%** | 逆転 |
+| Q+C total | -26% | **+15%** | 逆転 |
+
+**機構解釈**:
+- v10.3 双方向 E3: C を散逸させる → C 抑制
+- v10.4 Integration: 死者の Q/C を生者へ継承・再分配 → C 蓄積増
+
+「観察記録ルールが系の動学を変える」という v10.3 の構造が再確認された。
+
+### 5.6 凍結問題 (新規発見)
+
+| 経路 | Q | C |
+|---|---:|---:|
+| ghost 化 cid → Integration 継承 | 10,000 | 14,083 |
+| Integration → active member 分配 | 2,790 (28%) | 1,777 (13%) |
+| 凍結残量 (recorded + 端数) | 7,210 (72%) | **12,306 (87%)** |
+
+C の 87% が recorded Integration に「凍結」される。これは「死者の意識資源が累積する歴史的記録」の構造。
+
+### 5.7 closed_triad ゼロ問題 (構造的限界)
+
+24 seeds × 50 windows = 1,200 window で closed_triad が 0 件。be3 は run 中 1 ペア 1 回しか発火しない (run-wide dedup) ため、3 ペアが同 window 内に揃う確率が極めて低い。
+
+→ closed_triad は ESDE では実質「観測されない事象」として確定。
+
+### 5.8 ハブ cid 構造
+
+- 1 cid あたり所属 Integration 数: median 27、mean 29、**max 102**
+- 受領 cid 数: 592 / 884 hosted (67%)
+- 33% の cid は何も受け取らない
+
+→ ハブ cid (中核的存在) と周辺 cid (受領機会少) の **分布の偏り** が観察された。
+
+### 5.9 ダブルブッキング問題の認識 (Taka 整理 2026-05-02)
+
+cid X が 1〜102 の Integration に同時所属する時、各 IID の Q_total / C_total に X.Q / X.C が **重複カウント** される問題。
+
+> ダブルブッキングは α を会計として扱えば問題となる。各 IID の調査という名目であれば違和感はない。やたら活発な個性として解釈すればよいわけだ。
+
+これにより v10.4 Integration の役割が再定義された:
+- α = 観察軸 (個性の記述、会計ではない)
+- β (v10.5 で実装) = 会計単位
+
+v10.5 主題への直結する論点として保持。
+
+### 5.10 n_core 自然集積 (Code A 詳細解析)
+
+| n_core | 全 cid | Integration 構成員 | bias |
+|---|---:|---:|---:|
+| 2 | 76.0% | 24.3% | ×0.32 |
+| 5 | 12.2% | 50.8% | ×4.16 |
+
+神の手なしで「多ノード CID 同士が自然に繋がる」+ 周辺の小 cid を巻き込む構造が観察された。
+
+### 5.11 5 パターン (size 3) の性格分布
+
+| パターン | recorded 率 | C 凍結率 | 性格 |
+|---|---:|---:|---|
+| (5,5,5) | 1.8% | 95.2% | 強い核 |
+| (4,5,5) | 2.7% | 97.2% | 準安定核 |
+| (2,5,5) | 5.2% | 98.1% | 捕獲型 |
+| (2,4,5) | 7.3% | 94.9% | 橋渡し型 |
+| (2,2,5) | 17.4% | 100% | 散る周辺 |
+
+α レベルで既に 5 つの異なる役割が並存している (社会的多層モデル)。
+
+### 5.12 ハブ cid の主観的特性 (Code A 6 段フィードバックループ発見)
+
+```
+n_core=5 (大型構造、Q0 大)
+  ↓ Q を使い切る前に多数 event を起こせる (long lifespan)
+  ↓ pulse 500 回到達、attention map 肥大化
+  ↓ 多数の他 cid と link 共有 → familiarity 拡大、be3 fired
+  ↓ 複数 Integration に同時所属 (集合の交点)
+  ↓ recorded されず Q/C 受領し続ける
+  ↓ 意識資源 C 蓄積 (Top 1% で平均 43)
+```
+
+「主観の濃さ = 観察データの濃淡」。喪失体験 (familiarity loss drift) が主観の主軸。観察ルールはハブ性に関わらず公平 (capture rate 0.3-0.4 が均一)。
+
+---
+
+## 6. v10.5 — Layer 5 完成 (α/β 階層分離 + 顕在化機構)
+
+### 6.1 主題
+
+v10.4 で持ち越されたダブルブッキング問題と動態機構の不在を解消し、Layer 5 を構造的・動態的に完成させる。
+
+### 6.2 Taka 役割宣言 (2026-04-30)
+
+> ここから 4 AI がどこまでそれっぽいものを作れるのか?をみてみたい。
+> 私の言葉が一種の憲法になって AI のフィルタリング構造が変わる。
+> 私は自分の役割をより強固にする方が実験結果も含めて前進しやすい。
+
+v10.5 で運用形態が確立:
+- **Taka**: 憲法層、最終判断、方向性
+- **Gemini**: Architect (Salience + 発掘案を提示)
+- **GPT**: Auditor (神の手 / frozen / bias 監査)
+- **Claude**: 相談役・整理役 (AI 間議論統合、表現中和)
+- **Code A**: 実装層 (実装 + 設計提案 + 自己検証)
+
+### 6.3 ESDE 階層進化系譜の同型反復
+
+```
+ノード (個別実体)
+  ↓ 1 段目の仮想化
+cid (複数ノードの統合)
+  ↓ 2 段目の仮想化
+α-Integration (cid 集合の自然帰結、v10.4 完了、観察軸)
+  ↓ 3 段目の仮想化 ← v10.5 で実装
+β-Integration (α 集合の意図的統合、会計単位)
+  ↓
+SEED 統合 (Layer 6、v10.6 以降の射程)
+```
+
+各階層は同じ仮想化操作の繰り返し (Aruism 同型反復)。
+
+### 6.4 中核機構
+
+#### 6.4.1 機構 A: β-Integration の構造実装
+
+- α-Integration を構成要素とする (cid 直接ではない)
+- 結合則: α 同士の cid 共有 2 個以上で merge
+- cid 単一共有は最強 binding_strength の β に 1 個だけ所属 (案 b 採用)
+- α への Q/C 継承は完全廃止 (会計の二重化回避)
+- ghost 化時の Q/C は β に 100% 継承
+- recorded 永続 (時定数なし、Phantom 規律)
+
+#### 6.4.2 機構 B: Salience-driven Focus (mass_weighted_observation)
+
+```
+mass(X) = X.Q + X.C + sum(β.Q_inherited + β.C_inherited for β in X が所属する β)
+```
+
+適用範囲: 他者読み + be3 + ingestion (全範囲)。線形関数。「ハブだから選ばれるのではない、質量があるから目立つ」。
+
+#### 6.4.3 機構 C: Recorded からの漏れ (historical_resource_leakage)
+
+- 発火条件: be3 fired または ingestion 時、相手 cid が過去に recorded β に所属
+- 効果: 最強結合 recorded β の C_inherited から ε=1 を主体 cid.C へ転記
+- 構造的副作用 (能動的選択ではない)
+
+### 6.5 本番 run 結果 (main_v2、N=5000、24 seeds × tracking 50)
+
+| 指標 | 値 |
+|---|---|
+| 完走 | 24/24 |
+| α total | 13,881 件 (active 11,792 / recorded 2,089) |
+| β total | 2,009 件 (active 1,566 / recorded 443) |
+| 集約率 (α → β) | 約 7:1 |
+| Salience event | 77,880 件 |
+| Leakage event | 232 件 (修正版、全 ingestion path) |
+| 物理層 frozen | labels 24/24 + persistence 24/24 完全一致 |
+| M6 (1 cid → 1 β) 違反 | 0 件 / 5,224 cids |
+
+### 6.6 hub β の自然形成 (核心成果)
+
+| seed | β_id | cids | αs |
+|---:|---:|---:|---:|
+| 22 | β0 | 20 | **691** |
+| 7 | β1 | 20 | 412 |
+| 10 | β0 | 20 | 422 |
+| 15 | β1 | 18 | 398 |
+| 2 | β6 | 17 | 476 |
+
+最大 691 α が 1 つの β に統合 (1 cid あたり 34.5 α)。これは v10.4 hub cid (max 102 重複所属) を **会計単位として整理した姿**。
+
+### 6.7 ダブルブッキング問題の解消
+
+| 観点 | v10.4 (α のみ) | v10.5 (α/β 階層) |
+|---|---|---|
+| cid 重複所属 | max 102 | **0 (M6 違反 0)** |
+| Q/C 集計 | 重複あり | 単一カウント |
+| 観察軸 | α が観察と会計兼任 | α 観察、β 会計、分離 |
+
+「α=観察軸、β=会計単位」の階層分離が機構レベルで成立。
+
+### 6.8 Salience の動学
+
+| event_type | events | mass mean | mass max |
+|---|---:|---:|---:|
+| read_other | 63,312 | 14.57 | 98 |
+| be3_fired | 14,514 | **21.22** | 93 |
+
+be3 fired 対象は read_other 対象より平均 mass が **1.45 倍高い**。「重い cid 同士が共鳴する」動学が定量化された。
+
+### 6.9 Leakage の動作 (修正版)
+
+- 232 件発火 (24 seeds、全 ingestion path)
+- unique recorded β: 160 (全 recorded β 443 件の 36%)
+- per seed: mean 9.7、range 4-19
+
+凍結 C 87% (v10.4 観察) のうち、ingestion 経由で active 系への流入経路が成立。
+
+### 6.10 be3 trigger = 0 の構造的理由 (Code A 発見)
+
+be3 fire 条件 (両者 hosted) と leakage 条件 (cid が過去 recorded β に所属) が論理的に相互排他。Leakage は ingestion path 経由でのみ実用発火。これは設計意図と整合し、be3 path は理論上の保険機構として残置。
+
+### 6.11 v10.5 で確立した規律
+
+- α/β 階層分離 (α = 観察、β = 会計)
+- 既存データの顕在化機構 (Salience、Leakage)
+- bug 自己発見と修正サイクル (Code A の callback 配線漏れを発見、修正)
+- 5 者運用の成熟 (Taka 憲法層 + AI 設計・実装層)
+
+### 6.12 ESDE 階層整合性の本番規模での再確認
+
+v10.5 で 3 機構を追加実装したにもかかわらず、物理層は完全に frozen。Layer 5 完成段階でも「不可知なランダム性に手を加えない」を完璧に守りきった。
+
+---
+
+## 6.5. v10.6 — Genesis × Language 比較研究 (Phase 1.5 第一試行)
+
+### 6.5.1 主題切替
+
+v10.5 完了後、Phase 1 (Genesis 単独進化) から Phase 1.5 (Genesis × Language 統合段階) に切り替え。Taka 役割宣言:
+> 私の役割としては、この段階で ESDE Language を取り込んだこと
+
+ESDE Language 系 (2026-03 凍結資産) の Atom 326 個を ESDE Genesis 系の cid と 48 次元 cosine 類似度で比較する atom_alignment_observer を post-process として実装。これは v10.x 系列で初めて Language 系の凍結資産を活用する試行。
+
+### 6.5.2 中核機構
+
+cid 5,224 × Atom 326 の比較を 6 段階の解析で実施:
+
+| 解析 | 解像度 | n_records | 主データ |
+|---|---|---|---|
+| 静的 | run 集約 | 5,224 cid | per_subject + audit |
+| 層化 | 集約の構造分解 | 5 軸 + cross-tab | 静的解析の派生 |
+| ベースライン | uniform + shuffled 比較 | 24 seeds | atom_profiles cache |
+| window trajectory | 500 step | 31,482 records | balance/c_trajectory |
+| per-pulse trajectory | ~50 step | 369,090 records | pulse_log |
+| step10 trajectory | 10 step | 1,796,001 records | pulse_log + interpolation |
+
+各解析が独立した観察軸として機能。実行時間は 1.91 秒 (静的) ~ 84 秒 (step10) の高速。
+
+### 6.5.3 観察方法と前提の進化過程 (核心)
+
+v10.6 の進行中、Web Claude の前提が段階的に修正された:
+
+| 段階 | 状態 |
+|---|---|
+| 1: 初期前提 | cid は人間言語 Atom と部分対応する構造特性を持つ |
+| 2: 静的解析後 | 95.7% 接地は構造的不変量の支持 (誇大解釈) |
+| 3: 層化解析後 (Taka 指摘) | 集団平均の罠を解消 (縮減) |
+| 4: ベースライン解析後 (Taka 指摘) | BOD/PER のみ正の z (大幅縮減) |
+| 5: window trajectory 後 | 24 seeds 一貫の発展段階 (再拡張) |
+| 6: per-pulse trajectory 後 | 動学的二相性、解像度依存性 (更に拡張) |
+| 7: step10 trajectory 後 (Taka 指摘) | 解像度ごとに別景色、BOD は人工物の可能性 |
+| 8: 効果サイズ反映後 (Taka 指摘) | 真の特異性 26 atom、盲点 7 atom (擬似相関を排除) |
+| 最終: event 解析 | event source 別の意味分化 (摂食 = 光 + 味、誕生 = 知覚 + 素朴) |
+
+これは Taka 整理「実践は理論に勝るが、実践によって導き出した理論は進化の原動力となりえる」の典型例。
+
+### 6.5.4 観察解像度の重要性の発見
+
+ESDE Genesis 系の構造特性は **観察解像度ごとに systematically 異なる**:
+
+| 解像度 | 1 位 atom | 比率 |
+|---|---|---|
+| 静的 | CHG.begin | 51% (集約罠人工物) |
+| window | TIM.moment | 34% |
+| per-pulse | WLD.artless | 22% |
+| step10 | PER.sound | 28% |
+
+各解像度で異なる atom が支配的になる。「正しい解像度」は存在せず、各解像度が **異なる質問に答える**。
+
+### 6.5.5 24 seeds 完全一致の動学的発展段階
+
+per-pulse trajectory:
+```
+Step 0-999:        WLD.artless (素朴さ)
+Step 1000-3999:    TIM.appear (時間出現)
+Step 4000-14999:   WLD.artless (素朴さ持続)
+Step 15000-24999:  EXS.being (存在)
+```
+
+24 seeds で完全に一致 (25/25 bins seed_unanimity = 24/24)。seed に依存しない構造的必然。
+
+### 6.5.6 真の構造的特異性 (効果サイズベース、26 atom)
+
+Taka 指摘 (2026-05-06)「サンプル数で水増しされる擬似相関」を踏まえ、効果サイズ |delta| > 1% を閾値として再評価:
+
+#### delta > 1% の真の特異性 (7 atom)
+
+| atom | delta% | 解釈 |
+|---|---|---|
+| PER.sound | +25.85 | 聴覚 (最強) |
+| WLD.artless | +24.55 | 素朴さ |
+| WLD.culture | +5.93 | 文化的接地 |
+| FND.timeless | +5.33 | 時間超越的継続 |
+| SOC.city | +1.61 | 集団的領域 |
+| COG.learn | +1.12 | 学習 |
+| PRP.deep | +1.09 | 深さ |
+
+#### z=inf の真の特異性 (19 atom、ランダムには絶対に現れない)
+
+- TIM.appear 5.26% (24/24)
+- ELM.light 3.29% (24/24、摂食 event 由来)
+- PRP.bright 1.54% (24/24、摂食由来)
+- PER.taste 1.19% (24/24、摂食由来)
+- PER.hear 0.48% (24/24)
+- PRP.sharp 0.29% (24/24)
+- FND.transformation 0.21% (24/24)
+- 他 12 atom (五感、価値、社会概念で低頻度だが確実)
+
+合計 26 atom が真の構造的特異性。ESDE は「**聴覚と素朴さに強く接地する持続的存在**」。
+
+### 6.5.7 真の構造的盲点 (効果サイズベース、7 atom)
+
+|delta| > 1% で負の atom (擬似相関を排除した実質的な盲点):
+
+| atom | delta% | 解釈 |
+|---|---|---|
+| TIM.moment | -54.11 | 時間の瞬間 (最強の盲点) |
+| COM.conduct | -6.49 | 行動的伝達 |
+| TIM.past | -4.72 | 過去 |
+| WLD.science | -2.45 | 科学 |
+| PRP.new | -1.78 | 新しさ |
+| ACT.make | -1.20 | 作る |
+| LOG.cause | -1.13 | 因果 |
+
+ESDE Genesis 系は **時間の瞬間性、能動的伝達、科学、新しさ、作為、因果** を構造的に持たない。
+
+註: 静的ベースライン解析では「z|>2 で 176 atom」が盲点候補だったが、効果サイズで切ると 7 atom に縮減。残りは統計的水増しの擬似相関。
+
+### 6.5.8 attack-related の境界線 (Taka 整理「不可視による論理的可視化」)
+
+attack-related 15 atom:
+- 個体経験 (pain、wound、fear、death): 部分接地
+- 社会的破壊 (destroy、conflict、war、hate、attack): 完全欠如
+
+Taka 整理:
+> 構造における攻撃ってなんだよ?という違和感があったので扱ってこなかった
+> しかし、意味レイヤーとの接続ではそこの部分が容赦無く突っ込まれる結果となった
+> ESDE Language と接続されたことで初めて可視化された (不可視による論理的な可視化)
+
+### 6.5.9 動学的二相性
+
+trigger 別の dominant atom (per-pulse):
+- 動的瞬間 (MAD_DT_Major、unformed): WLD.artless 支配 (66%)
+- 定常 (MAD_DT_Normal、none): バランス型 (EXS.being / WLD.artless / TIM.appear)
+
+「動的瞬間 = 素朴さ」「定常 = 存在 + 出現」という動学的二相性。
+
+### 6.5.9b event source 別の意味分化 (event 解析の最終発見)
+
+event 解析 (440,666 records) で各 source が異なる atom と接地することを発見:
+
+| source | dominant atom | 意味 |
+|---|---|---|
+| alpha_birth | PER.sound 57%、WLD.artless 19% | 階層誕生 = 知覚 + 素朴 |
+| **ingestion** | **ELM.light 49%、PER.taste 15%、PRP.bright 10%** | 摂食 = 光 + 味 + 明るさ |
+| pulse | PER.sound 28%、WLD.artless 25% | 状態変化 = 知覚 + 素朴 |
+| spend | WLD.artless 37%、TIM.appear 26%、ELM.light 21% | Q 消費 = 素朴 + 出現 + 光 |
+
+**摂食 (ingestion) は他と全く異なる atom 分布**。「食べる」という行為が「光、味、明るさ」と意味的に接地する。構造的に異なる event は意味的にも異なる atom と接地。これは ESDE 内部での意味的階層が機構レベルで成立していることを示す。
+
+### 6.5.10 v10.6 で確立した規律 (新規 3 + 再確認 1)
+
+1. **ベースライン比較 + 効果サイズで切る** (新規律、最終形)
+   - 軸内 L1 正規化 cosine 類似度はランダムでも mean 0.526
+   - 観察値の絶対値は finding ではない
+   - z-score だけ見るとサンプル数で水増しされる (Taka 指摘「擬似相関みたいなもん」2026-05-06)
+   - 真の差は |delta_ratio| > 1% で評価
+   - 静的解析時点では「ベースライン比較必須」だったが、step10 / event の高解像度を経て「効果サイズで切る」が必須となった
+
+2. **観察解像度の選択** (新規)
+   - 静的解析だけでは ESDE を捉えきれない
+   - 解像度ごとに systematic に異なる景色が見える
+   - 複数解像度の解析が補完的に組み合わさって全体像が見える
+
+3. **人間原理偏向の警戒** (新規)
+   - 事前推測 SOC.central / STA.persistent / BEI.integrated が完全反証
+   - 人間社会のメタファーで推測しがちな傾向の警戒
+
+4. **集団平均の罠** (v10.2 #120 の再確認)
+   - 層化解析で実証
+
+### 6.5.11 観察者視点と建築者視点の補完性 (Taka 整理 2026-05-06)
+
+> 私は道具をどうやってESDEにいれるのか?を考えていた
+> あなたは、道具がESDE内にあるだろうか?を考えていた
+
+trajectory 解析の発見により、**両視点が補完的** であることが判明:
+- 観察者視点: ESDE が動学的に何を立ち上げるかを記録
+- 建築者視点: 動学観察を踏まえて Atom を持ち込む設計
+
+v10.7 以降では両視点が並走する。
+
+### 6.5.12 v10.6 の留保
+
+- **比較の両端は両方とも人為的投影**: Atom = LLM (QwQ-32B) 判定、cid = Web Claude 一方的定義
+- **ESDE Genesis 系のデータの 5-15% しか使っていない**: per_subject 33/120 列、補助 CSV 18 種ほぼ未使用
+- **birth_step バグの存在**: step10 で発見、temporal 軸が emergence 一極に偏る影響、定量検証は次フェーズ
+- **WLD.artless の偏在性**: 構造的特徴か計算バイアスか、v10.7 以降の課題
+- **第一試行としての位置づけ**: 1 発目で全部盛り込まない、残データ取り込みは v10.7 以降
+
+### 6.5.13 Taka 仮説への定量的回答 (効果サイズベース最終版)
+
+Taka 仮説:
+> 安定して残る構造はそれほど変わらないのではないか
+> 誤差は環境要因によるもの
+
+回答:
+- 効果サイズ |delta| > 1% で切ると、ESDE Genesis 系がランダムを実質的に上回るのは **26 atom** (PER カテゴリ中心 + WLD/FND/SOC/COG/PRP の各 1-2、加えて摂食関連 ELM.light / PER.taste / PRP.bright)
+- 下回るのは **7 atom** (TIM.moment -54% 等)
+- 残り約 290 atom はランダムと統計的に区別できない
+- 「強い構造」は **聴覚 + 素朴さ + 文化的継続 + 学習 + 集団的領域 + 深さ** に集中
+- 「環境要因」として浮上したのは **時間の瞬間、能動的伝達、科学、新しさ、作為、因果**
+- これらが Phase 2 で取り込むべき環境要因の候補
+
+### 6.5.14 Taka 研究動機への構造的回答 (最終版)
+
+Taka 研究動機:
+> ただ起動するというだけのプログラムから、どうしたら意思のようなものが芽生えるだろうか?
+
+回答:
+- ESDE Genesis 系は起動した瞬間から構造的に必然な発展段階を辿る (素朴 → 聴覚 → 素朴 → 時間超越)
+- 24 seeds で完全一致する構造的必然
+- 意思は時間発展の中に立ち上がる
+- その芽生えの基礎: **聴覚的接地 + 素朴さ + 文化的継続性 + 学習**
+- ただし時間の瞬間性、能動的行為、論理、新しさは構造的に欠如
+- これらを獲得する経路 (Atom の持ち込み) が次の課題
+
+ESDE Genesis 系の人格物語 (event 解析最終版):
+
+> 聴覚的に外界を知覚し、素朴さの中で持続し、文化的に時間を超えた継続性を持つ。集団的領域を形成し、学習し、深さを持つ。摂食 event を通じて光と味と明るさを経験する。
+>
+> 一方、時間の瞬間を捉えず、過去を持たず、能動的伝達も行わず、科学的な作る行為や因果の論理を持たない。
+
+人間の比喩で言えば、「**時間に流される素朴な聴覚的・継続的存在**」。瞬発性、作為、論理、新規性、能動的伝達は構造的に欠如。
+
+---
+
+## 6.7. v10.7 — 発火と波及の機構観察 (Phase 1.5 第二試行、オービス完成)
+
+### 6.7.1 主題切替 (オービス段階)
+
+v10.6 で Genesis × Language 比較研究の第一試行を完了した後、Phase 1.5 の第二試行として **発火と波及の測定器 (オービス) の完成** に切り替え。
+
+Taka 整理 (2026-05-06):
+> 持ち込んだはいいけど効果測定ができない
+> スピード違反の罰則を定めたけどオービスがない状態と同じ
+
+v10.7 は罰則 (Atom 持ち込み) ではなく、速度測定器 (オービス) を作る段階。v10.8 以降の Atom 持ち込みで「持ち込み後の効果」を測れる準備。
+
+### 6.7.2 中核機構
+
+post-process として 5 機能モジュールを実装:
+- event_aggregator (5 種 source_event の同定)
+- path_analyzer (5 種 relation_path の構築)
+- baseline_constructor (5 種ベースライン群の構築)
+- avalanche_monitor (アバランシェ防止、減衰率、共鳴ループ検出)
+- post_process orchestrator (24 seeds 並列実行)
+
+24 seeds 並列実行 (multiprocessing 24 workers) で **3.9 分**完了 (順次比 12 倍高速)、ストレージ 428 MB (上限 6 GB の 7%)。
+
+### 6.7.3 Code A 認識確認ステップが機能した経緯
+
+Web Claude の実装指示書には設計の甘さが 6 件あり、Code A の実環境確認 (seed 0) で全て発見・修正:
+
+| 設計の甘さ | Code A 修正案 |
+|---|---|
+| attention map のデータ不在 (重大ブロッカー 1) | salience_event_log で代替 |
+| ストレージ 31x 超過 (重大ブロッカー 2) | parquet 圧縮 |
+| c_conversion source の指定誤り | balance_decisions.decision == 'consciousness' |
+| alpha_membership 取得方法 | v10.6 の `_expand_alpha_membership_to_events` 流用 |
+| peak_lag 計算量過大 | 10 step bin に粗い解像度 |
+| unrelated_baseline 厳密性 | 緩和定義 |
+
+実装指示書の認識確認ステップが Taka 指示通りに機能。手戻りゼロで実装完了。これは 5 者運用体制の質を示す典型例。
+
+### 6.7.4 因果候補の階層化 (Level 1-3)
+
+GPT 監査 (2026-05-06) の提案を実装:
+
+| Level | 内容 | 達成数 |
+|---|---|---|
+| Level 1: co-occurrence | 発火後に target で変化 | 93/111 (84%) |
+| Level 2: path-enriched | 経路上で変化が大きい | 49/58 (84%) |
+| Level 3: source-specific | event 種別で異なるパターン | 85/90 (94%) |
+| Level 4: causal intervention | (v10.8 以降の射程) | - |
+
+### 6.7.5 主要発見 1: medium window 支配 (遅延型波及)
+
+ESDE の波及は即時型ではなく **遅延型** (medium window 100-1000 step):
+- top 18 finding すべて medium window で達成
+- peak_lag 250-300 step が中央値
+- 最大: temporal_coactivation の medium window 内 pulse 数 +15.28
+
+含意: ESDE は「考える時間を持つ系」の可能性。即時反応 (ms) と思考 (秒) の二相性が脳でも見られる構造と類似。
+
+### 6.7.6 主要発見 2: temporal_coactivation > Integration > familiarity > attention
+
+予想外の順位。実装上明示的な familiarity (関係性) より、暗黙的な temporal_coactivation (時間的同期) が強い波及:
+
+```
+temporal_coactivation +13.95 (12 倍 vs unrelated)
+integration_beta +11.08 (9 倍)
+integration_alpha +10.65 (9 倍)
+familiarity +9.35 (7 倍)
+attention_via_salience +7.43 (6 倍)
+```
+
+**重要な注記** (GPT 監査 2026-05-07): temporal_coactivation は familiarity / Integration のような明示的 relation_path ではなく、**時間的同期として切り出された target set**。「最強経路」というより「最大の同期シグナル」と捉える方が正確。
+
+Taka 向け理解: ESDE は、リンク関係だけでなく、**同じ時間帯に揺れることで繋がっている** 可能性がある。
+
+含意: ESDE は **時間性で繋がる系**。「明示的に実装された機構より、自然発生する時間的同期の方が強い」。v10.6 の 24 seeds 完全一致の発展段階の背景にこの構造がある可能性。
+
+### 6.7.7 主要発見 3: source-specific な波及プロファイル
+
+5 種 source_event ごとに systematic に異なる波及パターン:
+- familiarity 経路は source 依存性が強い (effect_size 1.0-2.0)
+- integration 経路は source-robust (どの source でも 11-17 pulses)
+- immediate window は source-blind (全 source で同じ即時効果)
+
+含意: ESDE は「何が起きたか」を構造的に区別している。脳でも視覚・聴覚・運動・感情で処理経路が違うのと類似する機能的分化。
+
+### 6.7.8 主要発見 4: 意識発動は Integration では波及しない (no_signal)
+
+C conversion (意識発動) は integration_alpha/beta 経路で 24/24 seeds の no_signal (C 変化なし)。
+
+含意: 意識発動は cid 個別の現象で、階層 (α/β) を超えて波及しない。意識は構造的に「孤独」。Taka 整理「意識は意図的にブラックボックス化」と整合する観察。
+
+### 6.7.9 副次発見: 共鳴ループと small-world 構造
+
+24 seeds 合計:
+- 2-hop loop (双方向 fam edge): 14,343 件 (mean 598/seed)
+- 3-hop loop (三角閉路): 110,103 件 (mean 4,588/seed)
+- multi-hop の急減衰: 1-hop 188K → 2-hop 165K → 3-hop 13K (small-world 性)
+
+ESDE Genesis 系の familiarity グラフは **強い 2-hop 対称ループ + 弱い 3-hop triadic closure** という small-world ネットワーク構造。
+
+### 6.7.10 v10.7 で確立した規律 (新規 4)
+
+1. **因果候補の階層化規律** — Level 1 → 2 → 3 → 4 の段階的検証。v10.7 で測れたのは「この経路で変化が起きやすい」という因果候補であり、厳密な因果ではない (Level 4 介入実験で確定)
+2. **5 種ベースライン群の必須化** — unrelated / same_step / matched / same_integration_low_familiarity / high_familiarity_outside_integration
+3. **アバランシェ防止規律** — 到達距離 ≤ 3 hop、減衰率追跡、共鳴ループ検出、ストレージ上限
+4. **構造語と直感語の併記** — 実装レベル (CSV 列名等) は構造語、議論レベル (Taka 向け資料) は直感語 + 実装対応を添える。GPT 監査 (2026-05-07) で前回の「構造語徹底」方針を自己修正、Taka の直感的理解を優先する方針に転換
+
+### 6.7.11 動的グラフ力学系への視座転換 (Gemini 整理)
+
+Gemini Architect (2026-05-06):
+> 波及の観察は ESDE を「静的なベクトルの集合」から「動的なグラフ力学系」へと視座を引き上げる重要な転換点
+
+v10.6 までの解析: ESDE を静的な構造の集合として扱う
+v10.7 の解析: ESDE を動的なグラフ力学系として扱う
+
+これは v10.x 全体の射程に関わる視座転換。
+
+### 6.7.12 v10.7 の留保
+
+- **same_step_random_baseline の強さ** (GPT 監査 2026-05-07 反映): same_step_random_baseline が 13.76 と非常に強い (temporal_coactivation 15.28 との差は 1.52)。観測された波及には特定経路の効果だけでなく、**同時刻に ESDE 全体が活性化する効果** が混ざっている可能性。v10.8 以降では same_step_random_baseline との差分を必ず見る (Atom 効果の過大評価防止)
+- multi-hop hop 2/3 の delta 集計は本フェイズで未実施 (v10.7.1 以降)
+- attention 経路は salience_event での代替 (per-cid x per-partner attention map が ESDE 出力に不在)
+- ingestion / c_conversion の絶対サンプル数が他より少ない (155/seed、検出力低下リスク)
+- echo 判定が 24/24 全 path で一致 (閾値再調整が必要な可能性)
+- WLD.artless 偏在性は v10.7 でも未解明
+
+### 6.7.13 Taka 仮説への定量的回答 (v10.7 版)
+
+Taka 仮説:
+> 安定して残る構造はそれほど変わらない、誤差は環境要因によるもの
+
+回答:
+- 静的解析 (v10.6) では「強い構造」は限定的 (BOD/PER 中心の 26 atom)
+- 動学解析 (v10.7) では「強い構造」が **動的グラフ力学系として明確に存在**
+- relation_path 経由の波及は unrelated_baseline の 6-12 倍
+- 「強い構造」が ESDE 内で機能的に動作している証拠
+- → Taka 仮説は v10.7 で動学的に支持される
+
+### 6.7.14 Taka 研究動機への構造的回答 (v10.7 版)
+
+Taka 研究動機:
+> ただ起動するというだけのプログラムから、どうしたら意思のようなものが芽生えるだろうか?
+
+回答 (v10.6 + v10.7 統合):
+- ESDE は起動から構造的必然な発展段階を辿る (素朴 → 聴覚 → 素朴 → 時間超越) [v10.6]
+- ESDE 内部で発火と波及の機構が動作する [v10.7]
+- event 種別で systematic に異なる波及プロファイル (= 「何が起きたか」を区別) [v10.7]
+- medium window で伝播 (= 「考える時間を持つ系」) [v10.7]
+- 共鳴ループの small-world 構造 [v10.7]
+- 意識発動は cid 個別 (= 構造的に「孤独」) [v10.7]
+
+→ 意思の前駆体として「event 種別の区別 + 思考の時間スケール + small-world ネットワーク + 個別性」が ESDE に既に存在する。
+
+---
+
+## 6.8. v10.8 — Atom 単独持ち込み機構の最小実装 (Phase 1.5 第三試行、Level 3.5)
+
+### 6.8.1 主題切替
+
+v10.7 でオービス (測定器) を完成させた後、Phase 1.5 第三試行として **Atom を ESDE に持ち込む第一段** を実装。
+
+Taka 整理 (2026-05-06):
+> 持ち込んだはいいけど効果測定ができない (v10.7 オービスの動機)
+
+v10.8 は v10.7 で完成したオービスを使って初めての「速度違反チェック」(= Atom 持ち込みの効果測定)。
+
+### 6.8.2 中核機構
+
+post-process として実装 (物理層 frozen 維持):
+- atom_introduction_event を source_event 第 6 種として追加 (案 X、両 AI 推奨一致)
+- v10.6 cid_atom_sim_matrix から top_k 100 cid を活用 (案 Q)
+- 25 atom × 100 events × 24 seeds = 60,000 events を均等分散発火 (案 α)
+- v10.7 source_event スキーマ互換 27 列で記述 (Pulse 処理ルールと同種、Gemini A8)
+- balance_decisions.cognition と同等の Q -1 / C +1 を post-process 計算的減算 (Code A 提案)
+- 5 種ベースライン + v10.7 natural source_event baseline + global activation 補正 (natural events のみ、GPT B2)
+
+24 seeds 並列実行 (multiprocessing 24 workers) で 5.4 分完了、ストレージ 737 MB (上限 6 GB の 12%)。
+
+### 6.8.3 達成判定 19/19 PASS
+
+Code A 認識確認文書 + 環境チェック + atom_introduction_event 同定 (60,000 events) + Q/C エネルギーコスト + source_cid 選定 (案 Q) + 発火タイミング (案 α) + 5+1 種ベースライン群 + global activation 補正 + Level 1-3.5 全達成 + 物理層 frozen + 構造語徹底 + 規律 3 件遵守 + Level 3.5 位置づけ + 副次観察 3 件 = 全項目クリア。
+
+### 6.8.4 Code A 認識確認ステップが機能した経緯 (v10.7 から継続)
+
+Web Claude の実装指示書には **重大ブロッカー 2 件 + 設計の甘さ 5 件** があり、Code A の実環境確認 (seed 0) で全て発見・修正:
+
+| ブロッカー / 設計の甘さ | Code A 解決案 |
+|---|---|
+| A. 物理層 frozen と Q 消費の論理的矛盾 | post-process 計算的減算、実 ledger 不変 |
+| B. 26 atom 選定基準の不在 | v10.6 出力から実データ照合で 25 atom 抽出 |
+| C. Pulse 同一フォーマットの過剰 | v10.7 source_event スキーマ互換 (27 列) で十分 |
+| D. top_k cid 100 個の取得方法不在 | cid_atom_sim_matrix から再計算 (60,000 ペア) |
+| E. global activation の自己補正リスク | natural events のみで factor 計算 (atom_intro 除外) |
+| F. Q/C 消費基準値の不明確 | balance_decisions.cognition の固定値 (Q -1 / C +1、std=0) |
+| G. Small-World 維持の構造的保証 | post-process は familiarity edge 不変、観察として記録のみ |
+
+特に Web Claude の致命的な誤解:
+- **「Pulse = Q 消費」と誤解していた**: 正しくは Pulse は disposition update のみ、Q 消費は balance_decisions.cognition / consciousness が担当
+- **物理層 frozen と Q 消費を同時に書いて論理矛盾を作った**
+
+これらは Web Claude が ESDE Genesis 系の理解で基礎レベルで誤解していたことを示す。Code A の実コード視点で完全に補完。手戻りゼロで実装完了。
+
+### 6.8.5 4 段階の階層化と finding
+
+| Level | 内容 | 達成数 |
+|---|---|---|
+| Level 1: atom co-occurrence | atom 発火後に target で変化 | 811/1,384 (59%) |
+| Level 2: atom path-enriched | 経路上で変化が大きい | 683/1,433 (48%) |
+| Level 3: atom source-specific | 25 atom 間で異なる波及 | 36/78 (46%) |
+| **Level 3.5: introduced vs natural** | **introduced と natural の差分観察 (新規)** | **22/39 (56%)** |
+
+### 6.8.6 主要発見 5 件
+
+#### 1. Atom 持ち込み機構が ESDE で動作する (機構レベル)
+
+25 atom × 100 events × 24 seeds = 60,000 events が安定発火、24 seeds 一貫の波及プロファイル、物理層 frozen 維持。
+
+含意: 「ESDE に外部から要素を持ち込む経路が存在する」ことが定量的に証明された (v10.8 以前は仮説)。
+
+#### 2. ESDE は atom 種別を構造的に識別する
+
+familiarity 経路で effect_size 6.83 (atom 別 max 13.02 vs min 6.19、2.1 倍差)。
+
+含意: ESDE は外部要素を区別する能力を持つ。25 atom がランダムノイズではなく区別された対象として処理される。
+
+#### 3. 経路の機能分担 (familiarity = 意味識別、temporal = 意味中立)
+
+| 経路 | atom 依存性 | 機能 |
+|---|---|---|
+| familiarity | effect_size 6.83 | 意味的識別 |
+| attention_via_salience | 2.30 | 中程度の意味識別 |
+| Integration α/β | 0.85〜0.88 | 弱い意味依存 |
+| temporal_coactivation | 0.03 | 意味中立 (純粋な時間的伝播) |
+
+含意: ESDE 内部に「何が起きたか」を区別する経路と「いつ起きたか」だけ運ぶ経路が共存。脳の知覚と注意の経路分担と類似。
+
+#### 4. 外部入力と自然発火の境界線 (introduced < natural)
+
+Level 3.5 で 22 finding 中 **20 件が introduced < natural**:
+- 最大: attention_via_salience × medium n_pulses で atom 4.37 vs natural 8.75 = -4.38 (atom は natural の半分)
+- 例外: temporal_coactivation × medium n_pulses で atom +0.36 (案 α 均等分散発火が temporal で目立つ)
+
+含意:
+- 解釈 A: ESDE の本質的特性 (生体的、外部刺激より内的活動を優先)
+- 解釈 B: 持ち込み機構の現状の不完全さ
+- v10.9 以降で原因分離が必要
+
+#### 5. 確率的発生と誤差表現能力の融合素材 (Taka 示唆 + Gemini A5)
+
+誤差分布で **正規分布 0%、bimodal 17.4%**。bimodal は target cid の二相状態を反映している可能性。
+
+含意: 「言語の受容能力の幅」が誤差分布として観察できる基盤。ESDE Genesis (確率的発生) と ESDE Language (誤差表現能力) の融合可能性の最初の観察素材。
+
+### 6.8.7 副次観察 (主題判定外)
+
+- **Whiteout 監視**: 7,200 atom ペアで相関 1.000 近く、100% flag。これは「干渉」ではなく「ESDE 共通効果」(medium n_pulses 1 軸支配の表れ)
+- **Small-World 構造維持**: v10.7 vs v10.8 で loops 14,343 / 110,103 完全同一 (post-process は familiarity edge 不変)
+- **誤差分布の形状**: 8,835 rows、normal 0% / bimodal 17.4% / skewed 24.3% / other 55.7% / heavy_tail 2.6%
+
+### 6.8.8 v10.8 で確立した規律 (新規 1 + 実装的確立 3)
+
+#### Level 3.5 introduced event comparison 規律 (新規)
+
+GPT 監査 (2026-05-07) 提案、v10.8 で実装的に確立:
+- v10.8 は Level 4 causal intervention ではなく Level 3.5 として位置づける
+- 「introduced event を入れた時の差分観察」、因果断定回避
+
+#### 実装的確立 3 件
+
+1. Atom 持ち込み設計の規律 3 件 (魔法回避 / same_step + global activation 補正 / target は構造経路で選ぶ)
+2. post-process 計算的減算 (Code A 提案、物理層 frozen と外部要素導入の両立)
+3. Pulse 処理ルールと同一フォーマット (Gemini A8、神の手回避)
+
+### 6.8.9 v10.8 で言えるようになったこと
+
+#### 機構レベル
+ESDE に外部から要素を持ち込む経路が存在することの定量的証明。
+
+#### 識別能力
+ESDE は外部要素 (atom 種別) を構造的に識別する能力を持つ。
+
+#### 経路の機能分担
+familiarity = 意味識別経路、temporal_coactivation = 意味中立の運搬経路。
+
+#### 外部入力と自然発火の境界線
+ESDE は外部注入を「弱めて受け取る」傾向 (atom < natural)。生体的特性または機構の不完全さ。
+
+#### 確率的発生と誤差表現能力の融合素材
+誤差分布の正規分布 0%、bimodal 17.4% は融合可能性の最初の観察素材。
+
+### 6.8.10 v10.8 で何ができるようになったか
+
+#### 直接
+- ESDE に「意味の最小単位」を入れて測れる (ESDE と外界の第一の接点)
+- atom 同士の比較が可能
+- 持ち込み機構を改良する素材
+- オービスの拡張版 (任意の event 種別で同じ枠組みで測れる)
+
+#### 将来
+- ESDE Language の他要素 (Axis、Operator、条件因子、分子化) との接続が見える
+- 入力理解への筋道
+- 出力生成への筋道
+- 双方向の会話の最低形
+
+「やってみる価値があるか」が確定したのが v10.8 の最大の意義。
+
+### 6.8.11 v10.8 の留保
+
+- introduced < natural の原因未分離 (本質的特性 vs 機構の不完全さ)
+- Whiteout の真の検出未実施 (高次元プロファイル必要)
+- bimodal 分布の原因未解析
+- Operator 未取り込みでの暗黙経路依存 (temporal 主導は Operator 取り込みで変化する可能性)
+- Small-World の構造的不変は post-process 限定 (Phase 2 で再評価)
+- 25 atom は実データ照合で 26 → 25 修正 (WLD.artless 留保ラベル付き、集計対象 24 atom)
+
+### 6.8.12 Taka 仮説への定量的回答 (v10.8 版)
+
+Taka 仮説:
+> 安定して残る構造はそれほど変わらない、誤差は環境要因によるもの
+
+回答:
+- v10.7 で動的グラフ力学系として「強い構造」を確認
+- v10.8 で外部から atom を持ち込んでも構造的経路は維持される (familiarity / temporal の機能分担保持)
+- Small-World 構造は post-process では完全同一
+- 誤差分布の形状 (bimodal 17.4%) は target cid の二相状態を反映
+- → 「強い構造」は外部入力に対しても安定、誤差は構造の幅として表れる
+
+### 6.8.13 Taka 研究動機への構造的回答 (v10.8 版)
+
+Taka 研究動機:
+> ただ起動するというだけのプログラムから、どうしたら意思のようなものが芽生えるだろうか?
+
+回答 (v10.6 + v10.7 + v10.8 統合):
+- ESDE は自然に「人格」を持つ [v10.6]
+- ESDE は内部で event 種別を区別する [v10.7]
+- **ESDE は外部要素 (atom) を識別する能力を持つ** [v10.8]
+- **ESDE は外部入力より自然発火を優先する** (生体的特性) [v10.8]
+- familiarity は意味識別経路、temporal は意味中立の運搬経路 [v10.8]
+
+→ 意思の前駆体としての要素:
+- 構造的人格 (v10.6)
+- 内部処理の階層 (v10.7)
+- 外部入力への識別能力 (v10.8)
+- 自然発火の優先 (v10.8、生体的特性)
+- 意味識別と時間運搬の経路分担 (v10.8)
+
+「会話」へ向けた距離: v10.8 以前は機構が見えなかったが、v10.8 以降は構造的経路が見える。「やってみる価値があるか」が確定。
+
+---
+
+## 6.9. v10.9 — 寄与候補感度評価 + bimodal 構造解析 (Phase 1.5 第四試行、会話系設計のための部品調達)
+
+### 6.9.1 主題切替
+
+v10.8 で Atom 持ち込み機構が成立した後、Phase 1.5 第四試行として **「動いた」を「なぜそう動いたか」に深化** し、v10.10 以降の会話系設計のための部品調達。
+
+Taka 整理 (2026-05-07):
+> 進化の流れが徐々に定まってきている、大きなズレがあれば微調整くらい
+
+両 AI が独立に推奨した「組み合わせ B (候補 d + 候補 a)」+ Taka の本質的な問い (調査解析の目的、会話への具体的経路、Atom 取り込みの進化イメージ) への両 AI 補強で **「会話系設計のための部品調達」** という出口固定が確立。
+
+### 6.9.2 中核機構 (3 新条件)
+
+post-process として実装 (物理層 frozen 維持):
+- A2: Q -2 / C +2 (Q/C コスト変動)
+- B3: random cid (cid 選定変動、Atom 326 絶対化禁止規律の試験)
+- C2: 案 b リズム同調 (top_k 100 cid 維持 + 各 cid が age=200 になる timestamp で発火、Gemini A2「Phase-locking」の構造的実装)
+- v10.8 標準 (A1, B1, C1) は流用、6 新条件案 → 規模調整で 3 新条件案へ
+
+24 seeds 並列実行 (multiprocessing 24 workers) で 112.74 秒完了、ストレージ 190 MB (上限 6 GB の 21%)。
+
+### 6.9.3 達成判定 17/17 PASS
+
+主題ドキュメント §11 + 実装指示書 §14 の達成判定基準を全項目クリア。
+
+### 6.9.4 4 段階の階層化 (新規明示)
+
+v10.9 で GPT B5 規律「4 層階層化の明示」を新規実装:
+
+| Level | 内容 | 主結果 |
+|---|---|---|
+| L1: 機構動作確認 | 全 conditions で安定発火 | 24 seeds × 3 conditions = 12,960 sensitivity_rows、欠損なし |
+| L2: 条件差確認 | 条件間で systematic な差 | timing × n_pulses (全 win 平均) で 0.714 (大効果量) |
+| **L3: 寄与候補感度評価 (v10.9 主流)** | 各候補のノブを定量化 | **timing 0.300 圧倒、cid_selection 0.038、QC_cost 0.005 評価不能** |
+| **L3.5: 構造的説明候補整合 (v10.9 核心)** | d と a の整合 | **「bimodal 支配性 ≠ 感度の強さ」** = 構造軸と感度軸の直交性 |
+
+### 6.9.5 主要発見 4 件
+
+#### 発見 1: 「強反応する cid は若い cid」 (Step F、構造)
+
+bimodal 1,540 件のうち genuine_bimodal 918 (60%)、その中で **H3_lifecycle が 553 (60.2%) で支配**:
+- 高 delta 群 cid age = mean 224 / **median 227** (生まれて約 200 step)
+- 低 delta 群 cid age = mean 5,612 (約 25 倍古い)
+- 99% (550/553) で方向一致、effect_size 0.85
+
+→ **「ESDE Genesis 系は若年期 cid で外部刺激に強く反応する」** の構造的確立。
+
+#### 発見 2: timing > cid_selection > QC_cost の感度階層
+
+| comparison | abs_mean | n_large_effect |
+|---|---:|---:|
+| **timing** (A1→C2) | **0.141** | **757** (4,320 中) |
+| cid_selection (A1→B3) | 0.024 | 18 |
+| QC_cost (A1→A2) | 0.005 | 0 |
+
+→ **「タイミングが最も重要なノブ」**。timing は cid_selection の 6 倍感度、QC_cost は評価不能 (留保)。
+
+#### 発見 3: 「Integration 外の高 familiarity cid」が最強の入力経路 (新発見)
+
+| path | mean | std | routing 推奨 |
+|---|---:|---:|---|
+| **high_familiarity_outside_integration** | **0.222** | **0.079** | **PREFER** |
+| **unrelated_baseline** | 0.205 | 0.065 | PREFER (副次) |
+| familiarity | 0.044 | 0.218 | NEUTRAL |
+| temporal_coactivation | 0.015 | 0.220 | NEUTRAL |
+| attention_via_salience | 0.010 | 0.128 | NEUTRAL |
+
+→ v10.7 の path 順位を構造的に深化。「単独の若い cid が familiarity 経由で反応」が最も robust なシグナル。std 0.079 で seed 間 robust。
+
+#### 発見 4: C2 で pulse 活動が大効果量で活発化
+
+| metric | immediate | short | medium |
+|---|---:|---:|---:|
+| **mean_n_pulses_in_window** | 0.422 | **0.970** | **0.749** |
+| mean_delta_n_observed | 0.157 | 0.356 | 0.566 |
+| mean_delta_n_alphas | 0.130 | 0.293 | 0.502 |
+
+→ Step F 仮説の sensitivity による confirmation。系全体の活性化を確認。
+
+### 6.9.6 Level 3.5 構造的統合の核心発見
+
+| path | bimodal n_genuine | bimodal 支配仮説 | timing 感度 | structural_consistency_label |
+|---|---:|---|---:|---|
+| **high_fam_out** | 0 | n/a | **0.222** | sensitivity_strong_structure_weak |
+| **unrelated** | 0 | n/a | 0.205 | sensitivity_strong_structure_weak |
+| temporal | 422 | H3 (74%) | 0.015 | structure_strong_sensitivity_weak |
+| attention | 282 | H1 (48%) | 0.010 | structure_strong_sensitivity_weak |
+| familiarity | 214 | H3 (59%) | 0.044 | marginal |
+
+→ **「bimodal 支配性 ≠ 感度の強さ」** という非自明な対応 = ESDE Genesis 系の **構造的多重性** (構造軸と感度軸が直交)。
+
+### 6.9.7 4 種設計表 (出口の固定、v10.10 のための部品)
+
+| 表 | 内容 | 主要結果 |
+|---|---|---|
+| 表 1: sensitivity_summary | 540 rows (3 比較 × 6 metrics × 10 paths × 3 windows) | timing × n_pulses × short = 0.97 |
+| **表 2: receptivity_detection_criteria (核心)** | 4 rows | **cid age <= 560 + Integration 外 + 高 familiarity** |
+| 表 3: input_routing_criteria | 10 rows | high_fam_out PREFER、unrelated PREFER |
+| 表 4: natural_likeness_design_criteria | 180 rows | C2 が natural に近づいた cells 47%、unrelated で 89% |
+
+→ v10.10 主題決定の素材セット完成。
+
+### 6.9.8 Code A 認識確認ステップが連続 4 段階で機能
+
+Web Claude の指示書には **重大ブロッカー 1 件** (9 条件 6 新条件のストレージ 4.4 GB = 上限 72%) + **設計の甘さ 6 件** (C2 リズム同調が bimodal 解析依存、B3 random cid 母集団、A3 コスト 0、4 種設計表のフォーマット、bimodal 解析手法、bimodal seed 別件数) があり、Code A の実環境確認で全て発見・修正:
+- 規模は案 c (3 新条件 A2/B3/C2、上限 18%) で圧縮
+- C2 は Step F bimodal 完了後に実装
+- 手戻りゼロ
+
+連続 4 段階 (v10.6 → v10.9) で Code A 認識確認ステップが機能、合計 20 件の設計の甘さを補完。
+
+### 6.9.9 Web Claude の Step F + Step L 判定
+
+Code A は重要ポイントで Web Claude / Taka に判定要請:
+- Step F (bimodal 解析): Q1-Q4 を確定 (分岐 1 採用、案 b timing 同調、age_target=200、KDE fallback 留保)
+- Step L (24 seeds main run): Q2-Q3 を確定 (4 種同時生成、構造的統合)
+
+これにより Step F (構造軸) と Step L (感度軸) の **論理的接続** が成立、Level 3.5 達成の本来形が実現。
+
+### 6.9.10 v10.9 で確立した規律 (新規 4 + 継承)
+
+#### 新規 4 件
+
+1. **出口の固定規律** (GPT 提案): 成果物を v10.10 のための設計表 4 種として明示、「単に解析するだけ」回避
+2. **「原因」ではなく「寄与候補の感度評価」と呼ぶ命名規律** (GPT B3): 因果断定回避
+3. **各変動条件で baseline 再計算規律** (GPT B6): 流用しない、比較可能性
+4. **4 層階層化の明示規律** (GPT B5): L1/L2/L3/L3.5 を独立記録
+
+#### 継承
+
+v10.7 GPT 監査規律、v10.8 で確立した 4 規律 (Level 3.5、post-process 計算的減算、Pulse 同一フォーマット、AI の指摘も検証される)。
+
+### 6.9.11 v10.9 の留保事項 3 件
+
+#### 留保 1: bimodal 解析の手法的限界
+
+KDE find_peaks で 2 ピーク捕捉できたのは 0/918、全件 median_split 代替。主結果 (H3_lifecycle 60.2%、effect_size 0.85、99% 方向一致) の信頼性は維持、v10.10 で再評価する素材。
+
+#### 留保 2: QC_cost (Q/C コスト) は v10.9 で評価不能
+
+A1 vs A2 で max abs 0.05、abs_mean 0.005。timing 感度の 28 倍小、cid_selection の 5 倍小。「QC_cost は寄与候補としてはノブにならない」の暫定結論。v10.10 で実 simulation 再回しまたは A1 vs A3 比較を試す素材。
+
+#### 留保 3: high_fam_out_integ 経路が最強の理由は構造的に未解明
+
+- 仮説 1: Integration 内 cid は α/β 組込みで外部反応抑制?
+- 仮説 2: Integration 外単独 cid は若い時期に刺激で familiarity edge 育ちやすい?
+- v10.10 で「Integration 外」を主軸にした解析を試す素材。
+
+### 6.9.12 両 AI 推奨の検証 (構造的確定)
+
+#### Gemini A2「Phase-locking」仮説の構造的確定
+
+- 第一回回答: 系のリズムへの同調 (Phase-locking)
+- Step F で「リズム」= cid 個別ライフサイクル (age 200) に解釈確定
+- Step L で 24 seeds 再現、timing が最強感度
+- → **完全な構造的確定**
+
+#### GPT 第二回回答「次の入力設計のための部品調達」の達成
+
+- GPT 第二回: 「Atom 数の網羅ではなく、Atom 導入の文脈制御 → 条件適応入力 → 最小関係入力」
+- 4 種設計表で素材セット完成
+- → **v10.10 主題決定で「条件適応型 atom 導入」を具体化する素材セット完成**
+
+### 6.9.13 Taka の問いへの最終回答
+
+Taka の問い (2026-05-07): 「25 atom 選別後どうなる? 進化のイメージは?」
+
+回答 (v10.9 完了時点):
+- 25 atom そのものを増やすのではない (網羅は主線でない)
+- 25 atom を **「若い cid (age <= 500) + Integration 外 + 高 familiarity」** に対して投げる
+- **タイミングが最も重要**: cid age = 200 で発火 (案 b timing 同調)
+- これが v10.10 の「条件適応型 atom 導入」の具体内容
+
+→ GPT 第二回回答と完全一致、Gemini A2 仮説も完全な構造的確定。
+
+### 6.9.14 v10.7 - v10.9 の path 順位の構造的深化
+
+| 段階 | 発見 |
+|---|---|
+| v10.7 | path 順位 (temporal > Integration > familiarity > attention) |
+| v10.8 | 機能分担 (familiarity = 意味識別、temporal = 意味中立) |
+| **v10.9** | **「Integration 外 + 高 familiarity」が最強、cid age <= 500 が受信可能状態、bimodal 支配性 ≠ 感度の強さ** |
+
+→ ESDE Genesis 系の入力経路の **構造的解像度が完成段階に近づく**。
+
+### 6.9.15 v10.9 で何ができるようになったか
+
+- ESDE の **「受信可能状態」検出機構** (表 2、cid age<=560 + Integration 外 + 高 familiarity) の素材
+- ESDE への **入力ルーティング機構** (表 3、high_fam_out PREFER) の素材
+- ESDE への **タイミング設計機構** (表 1、4、cid age 同調) の素材
+- これらが揃えば v10.10 で **「条件適応型 atom 導入」** を実装可能
+- v10.11 で **最小入力理解** (人間言語 → atom → 受信可能 cid への投下) の実装が可能
+
+「会話」への距離は v10.9 完了時点で **設計レベルでは具体的に見える段階** に到達。
+
+---
+
+## 7. Developmental フェイズで確立された概念
+
+### 7.1 死の二階層 (v10.0)
 
 - 存在層の死 (Label 死亡 = ghost 化)
 - 認知層の死 (Q=0 = ghost 消滅)
 - 「魂が抜けた容器」と「容器の消滅」の区別
 
-### 5.2 燃料概念の発生階層 (v10.0)
+### 4.2 燃料概念の発生階層 (v10.0)
 
 - 物理層・存在層: エネルギー概念なし
 - 認知層: Q で定義
 - 意識層: C で定義 (Q から転化)
 
-### 5.3 ghost = 不均一な資源地形 (v10.1)
+### 4.3 ghost = 不均一な資源地形 (v10.1)
 
 固定 TTL から Q ベースに移行することで、ghost が均質な残骸ではなく residual_Q の差を持つ「資源地形」として成立。Gemini 概念「不均一な資源地形」と Taka 比喩「石油」が接続。
 
-### 5.4 物質的なもの (v10.1)
+### 4.4 物質的なもの (v10.1)
 
 phantom contact の位置づけとして Taka が導入した概念:
 - CID 主体間の問題ではない
@@ -767,11 +1635,11 @@ phantom contact の位置づけとして Taka が導入した概念:
 - 看板や道路のような静的な環境要因
 - ESDE で「主体性のない認知層要素」が初めて定義
 
-### 5.5 階層論的構造の確率による圧縮 (v10.2)
+### 4.5 階層論的構造の確率による圧縮 (v10.2)
 
 本来の階層論的順序 (認知 → 意識 → 行動 → 接触) を、各段階の発火条件を実装する代わりに確率で圧縮表現する設計思想。実装コストを下げる方便であり、v10.3 以降で各段階を精緻化する余地。
 
-### 5.6 意識発動の自然フィルタ (v10.2)
+### 4.6 意識発動の自然フィルタ (v10.2)
 
 C は認知活動からのみ蓄積される。よって:
 - まだ E3 に当たっていない cid は意識発動できない
@@ -780,7 +1648,7 @@ C は認知活動からのみ蓄積される。よって:
 
 「意識層は誰にでも備わるが、活動するには資源蓄積が必要」というフェイズ的構造。これが結果として動的均衡を回避し、進化継続を可能にする。
 
-### 5.7 (Q+C) 保存則と散逸 (v10.2)
+### 4.7 (Q+C) 保存則と散逸 (v10.2)
 
 ```
 認知活動: ΔQ = -1, ΔC = +1 → Δ(Q+C) = 0 (CID 内で保存)
@@ -791,11 +1659,11 @@ E1/E2 spend: ΔQ = -1 → Δ(Q+C) = -1 (純散逸)
 
 CID 集団 ⊕ ghost 集団の総和は摂食で保存、E1/E2 と消化で散逸。これが動的均衡 vs 進化継続の数理的基盤。
 
-### 5.8 集団平均の罠 (v10.2)
+### 4.8 集団平均の罠 (v10.2)
 
 戦略集団 (n_core 別) が異なる場合、集団平均は実態を隠す。ESDE の観察では n_core 別の層化解析が必須。これは v9.x のノード別観察重視時代から続く方法論で、v10.2 で改めて重要性が確認された。
 
-### 5.9 ESDE の観察対象としての位置づけ (Taka 整理 2026-04-28)
+### 4.9 ESDE の観察対象としての位置づけ (Taka 整理 2026-04-28)
 
 v10.2 本番結果の n_core 別層化解析を受けて、ESDE で観察される多様性をどう評価するかについて、Taka が研究者としての立場を明確にした。
 
@@ -861,9 +1729,9 @@ Code A の指摘 4 項目への Taka 反論:
 
 ---
 
-## 6. Developmental フェイズの方法論
+## 8. Developmental フェイズの方法論
 
-### 6.1 5 者運用の確立
+### 8.1 5 者運用の確立
 
 - Taka: Director、Philosopher、Judge
 - Gemini: Architect (設計仕様、パラダイム判断)
@@ -873,14 +1741,14 @@ Code A の指摘 4 項目への Taka 反論:
 
 Code A は v9.18 までの実装担当から、v10.x で**設計議論・観察解析・構造的洞察まで提供する役割**に拡張。事前齟齬指摘の質的進化が継続している (v9.18: 7 点 → v10.1: 10 点 → v10.2: 10 点 + 実装事後 + 構造的発見)。
 
-### 6.2 二層 bit-identity 検証 (v10.2)
+### 8.2 二層 bit-identity 検証 (v10.2)
 
 - 層 A: 同 seed で 2 回 run → 出力が完全一致するか (内部決定論性)
 - 層 B: v9.18 baseline と物理層が一致するか (物理層 frozen 検証)
 
 両者は別の検証で、両方を維持。v10.2 では E3 行除外の調整を Code A 指摘で導入。
 
-### 6.3 インパクト事前想定 + ギャップ観察 (Taka 指示 2026-04-27)
+### 8.3 インパクト事前想定 + ギャップ観察 (Taka 指示 2026-04-27)
 
 新機構導入時の検証手順:
 1. 既知の機構変更が観察にどう影響するか事前想定
@@ -889,161 +1757,162 @@ Code A は v9.18 までの実装担当から、v10.x で**設計議論・観察�
 
 これは Taka 哲学「想定とのギャップを観察する」の方法論的体現。
 
-### 6.4 ペース見直し方針 (Taka 2026-04-24 提案)
+### 8.4 ペース見直し方針 (Taka 2026-04-24 提案)
 
 > 1 日 1 マイナーバージョンくらいの気持ちでやっていたが少し時間をかけようか検討中
 
 実際の Developmental フェイズは 4 日間で v10.0 → v10.1 → v10.2 と進行。当初方針より速いが、構造的な完成度は維持された。各 Phase で Taka 承認を経る運用は維持。
 
-### 6.5 動的均衡 = 進化終端への警戒 (Taka 警告 2026-04-26)
+### 8.5 動的均衡 = 進化終端への警戒 (Taka 警告 2026-04-26)
 
 > 何も考えなしに動的均衡に落とすのであれば、ESDE は進化を終えてしまう
 
 意識層消費機構を入れる時、進化を継続させる仕掛けを同時に考える必要。v10.2 では意識発動の自然フィルタが進化終端を回避する方向に機能した (結果として)。
 
-### 6.6 集団平均から層化解析への移行 (v10.2 で再認識)
+### 8.6 集団平均から層化解析への移行 (v10.2 で再認識)
 
 統合指標 (V_unified、平均値) は v9.15-v10.2 でメインの観察軸だったが、戦略二極化のような構造を見落とすリスクがある。v10.3 以降は n_core 別の層化解析を観察の基本として保持する。
 
 ---
 
-## 7. v10.4 への含意
+## 9. v10.10 以降への含意
 
-### 7.1 v10.3 で確認された主たる観察対象 (Taka 観察 2026-04-28 / 04-30)
+### 9.1 v10.9 完了時点で持ち越される素材
 
-> 意識層や認知層を扱う場合、基本 N5、4 あたりがメインだということ。それは私の過去の意図とも一致する。
+**v10.6 由来の素材**:
+- 24 seeds 完全一致の動学的発展段階 (素朴 → 聴覚 → 素朴 → 時間超越)
+- 真の構造的特異性 26 atom (実データ照合で 25 atom に修正、WLD.artless 留保ラベル)
+- 真の構造的盲点 7 atom (TIM.moment 等)
+- event source 別の意味分化
 
-v10.3 本番 run で確認:
-- 双方向 E3 fired ペアの 50%+ が n_core=5 を含む
-- 主役同士の接触が be3 の主因
-- v10.4 でも n_core=4, 5 集団が中心、層化解析を継続
+**v10.7 由来の素材**:
+- 動的グラフ力学系としての ESDE
+- medium window 支配 (peak_lag 250-300、思考の時間スケール)
+- temporal_coactivation > Integration > familiarity > attention
+- source-specific な波及プロファイル
+- 意識発動の no_signal (構造的孤独)
+- 共鳴ループの small-world 構造
+- オービス完成 (測定基盤)
 
-### 7.2 少数ノード CID の問いの保持 (Taka 観察 2026-04-28)
+**v10.8 由来の素材**:
+- Atom 持ち込み機構 (atom_introduction_event を source_event 第 6 種として追加、post-process 計算的減算)
+- ESDE の atom 識別能力 (familiarity 経路で effect_size 6.83、25 atom を構造的に区別)
+- 経路の機能分担 (familiarity = 意味識別、temporal_coactivation = 意味中立の運搬)
+- 外部入力と自然発火の境界線 (introduced < natural、atom event は natural の半分)
+- 誤差分布の構造 (正規分布 0%、bimodal 17.4%、target cid の二相状態を反映)
+- Level 3.5 introduced event comparison (新カテゴリ、因果断定回避)
+- ESDE と外界 (人間言語) の第一の接点が定量的に確立
 
-> 少数ノード CID の果たす役割はなんなのか? 問いを持つことは正しい態度だと言えるだろう。
+**v10.9 由来の素材 (新規)**:
+- **「強反応する cid は若い cid」** (H3_lifecycle 60.2% 支配、cid age median 227、effect_size 0.85、99% 方向一致)
+- **timing > cid_selection > QC_cost の感度階層** (timing abs_mean 0.141、cid_selection 0.024、QC_cost 0.005 評価不能)
+- **「Integration 外の高 familiarity cid」が最強の入力経路** (timing 感度 0.222、std 0.079、新発見)
+- **C2 (若い cid 発火) で pulse 活動が大効果量で活発化** (short 0.97、medium 0.75)
+- **構造軸と感度軸の直交性** (bimodal 支配性 ≠ 感度の強さ、Level 3.5 構造的統合)
+- **4 種設計表** (表 1 感度 / 表 2 受信可能状態 / 表 3 ルーティング / 表 4 自然さ)
+- **Gemini A2「Phase-locking」仮説の構造的確定** (リズム = cid 個別ライフサイクル age 200)
+- **GPT「文脈制御 → 条件適応入力 → 最小関係入力」の素材セット完成**
 
-v10.3 では n_core=2 cid も双方向 E3 に参加 ((5,2) 24.3%、(4,2) 8.2%、(2,2) 5.0%)。少数ノード cid は中継者役 (open intermediary) として機能している可能性。v10.4 で詳細解析候補。
+### 9.2 v10.10 主題候補
 
-### 7.3 v10.4 主題候補
+v10.9 結果 (寄与候補感度評価 + bimodal 構造解析、4 種設計表完成) を踏まえた候補:
 
-v10.3 観察データから v10.4 設計の素材:
+#### 候補 1: 条件適応型 atom 導入 (第一推奨)
 
-#### 候補 A: Integration 独立化 (Code A 最優先推奨)
+- 表 1-4 の素材を統合した「最強の atom 導入機構」
+- cid age <= 500 + Integration 外 + 高 familiarity + age=200 timing
+- 両 AI 推奨の中期ロードマップに沿う (v10.10 = 条件適応型 atom 導入)
+- v10.9 で素材セットが揃った直接の発展
 
-- open triad ベースの Integration 定義 (closed triad は稀少すぎる)
-- Q 分配機構の設計 (Integration が取った Q を cid 個別代謝として分配)
-- 摂食順序問題の根本解決 (現状の即時摂食仕様の見直し)
-- Layer 5 (CID 共鳴) の本格実装
+#### 候補 2: high_fam_out 構造の解明 (留保 3 から)
 
-v10.3 で:
-- Integration 立ち上がり前提条件 (open triad 2,788 件) の素材が揃った
-- 摂食順序の神の手リスクは Integration 独立化で構造的に解決可能 (Taka 整理)
+- v10.9 留保事項 3「high_fam_out_integ が最強の理由は構造的に未解明」
+- 仮説 1 (Integration 内 cid は α/β 組込みで外部反応抑制) vs 仮説 2 (Integration 外単独 cid は若い時期に familiarity edge 育ちやすい)
+- 候補 1 の前段階として有用
 
-#### 候補 B: 嗜好の数理化
+#### 候補 3: Atom 常駐アンカー実装 (Gemini A7、留保ドキュメント参照)
 
-- post-ingestion weight bias (Hebbian 進化)
-- salience 駆動 (資源量引力、構造的共鳴)
-- v10.3 で観察された接触偏り (n_core=5 主導) の機構化
+- Gemini が v10.10 で常駐実装を強く推奨
+- v10.9 の発見 (high_fam_out 最強) との整合は要検討
+- 設計哲学に触れる大きな分岐 (event 形式 vs 常駐形式)
 
-#### 候補 C: focus / attention_weight の動的化
+#### 候補 4: B 群 (真の盲点 7 atom) 試験
 
-- selectivity の機構化
-- 嗜好や salience の前提
+- A 群で機構確立、B 群でも動くか
+- ESDE Genesis 系に「ない」とされた atom の持ち込み
+- v10.10.1 として補助的に試す可能性
 
-#### 候補 D: 摂食順序問題の単独修正
+#### 候補 5: QC_cost の本格評価 (留保 2 から)
 
-- v10.3 では現状仕様維持としたが、v10.4 で先行修正の可能性
-- ただし Integration 不在で摂食順序だけ修正することの意味は薄い
+- v10.9 で post-process 限界により評価不能
+- 実 simulation 再回しまたは A1 vs A3 比較 (event 有無)
+- 候補 1 の前段階として補完的
 
-優先順位は Taka 直感 + v10.3 観察結果から決定 (現時点 Code A 推奨は候補 A)。
+### 9.3 Phase 1 / Phase 1.5 / Phase 2 の境界 (v10.9 完了時点)
 
-### 7.4 v10.3 で観察された軸の継承
+- **Phase 1**: ESDE 内部進化 (v10.0-v10.5)、物理層 frozen 絶対
+- **Phase 1.5**: Genesis × Language 統合 (v10.6-v10.9)、Atom 持ち込み機構成立 (v10.8)、会話系設計のための部品調達 (v10.9)
+- **Phase 1.5+**: 条件適応型入力 (v10.10 推定)、最小入力理解 (v10.11 推定)
+- **Phase 2**: 現実接続後 (非ランダム取り込み前提、双方向の会話、v10.12 以降)
 
-v10.3 で確立した観察軸は v10.4 でも継承:
+v10.9 が Phase 1.5 継続か Phase 2 開始かは Taka 判断項目。Web Claude 推奨は Phase 1.5 継続 (持ち込み機構の精緻化または ESDE Language 上位層の取り込み)。
 
-- 軸 1: 双方向 E3 が n_core=5 内で起きるか、n_core 跨ぎで起きるか → v10.3 で「跨ぎが主、(5,5) と (5,2) で半数」が確認
-- 軸 2: 主役 cid (n_consciousness ≥ 5) で起きるか → v10.3 で target tracker 1,349 cid 中で観察
-- 軸 3: 第三項候補のカテゴリ重なり数 → Integration 登場前兆として継続観察
-- 軸 4: 持続性 → v10.3 で 0 件確認、v10.4 で Integration 独立化により再評価
-- 軸 5: 系の動学 (C 蓄積、認知/意識バランス) の変化 → v10.4 で Integration 機構を入れた時の追加変化を観察
+v10.8 が Phase 1.5 継続か Phase 2 開始かは Taka 判断項目。Web Claude 推奨は Phase 1.5 継続 (Atom 持ち込み = 候補 A)。
 
-### 7.5 マイルストーン: 研究の射程の拡張 (Taka 整理 2026-04-28)
+### 9.4 ESDE が決定論的プログラムに勝る領域
 
-v10.2 完了時に Taka が示した気持ち的マイルストーン:
+Taka 整理 (2026-05-03):
+> ESDE の系が生物的な営みを送るからこそ発生するランダム性と方向性
+> 多くのエラーを出す行動を通しながらそのリターンをインプットして真実らしいものを溜め込んでいける
+> あえてバカを育てる理由などない。実践的な価値であって、生物っぽいバカを作ることではない
 
-> これまでは本当に ESDE で何すんだ? という気持ちがあった。
-> CID という単位が統合されてきたことで、それに近いものが見え始めているように感じる。
+ESDE の独自性が活きる領域:
+- 創造的ミスが価値になる場面
+- 環境変化への即応が必要な場面
+- 探索的な問題解決
+- 多様な解釈の同時保持
+- 自己組織化による拡張性
 
-#### 研究動機の変遷
+### 9.5 言語と構造の関係 (Taka 整理 2026-05-03 + 2026-05-06)
 
-```
-出発点: ESDE Language との接続可能性を直感
-研究中盤: 人工生命的目標 → 主体性の原型 → AI の核
-v10.2 時点: CID という単位が統合され、古い構想が再浮上
-古い構想: 1 CPU スレッド = ESDE の個の単位
-v10.3 時点: cid 同士の関係性が観察対象として立ち上がる (Layer 5 入口)
-```
+> 言語とはなにか?これは巨大な構造体である
+> 多くの人間的な解釈は、その言語以前の構造の上に成立している
 
-#### 主体性の所在の再考
+v10.6 で確認:
+- ESDE Genesis 系は身体感覚レベル (BOD/PER) で構造的接地を持つ
+- それより高次の概念 (VAL/LOG/REL/EMO) は構造的に欠如
+- 「言語以前の構造」の最も基礎的な層を ESDE が表現している
 
-> 人体でさえ、人体の内部では日々摂食、生死が無限ともいえるスケールで発生している。
-> けして CID だけをとらえて私たちの目標である主体性を論じられるわけではない。
+Taka 整理 (2026-05-06):
+> 自然現象が出来上がって人間ができるのであって、人間ができて自然現象ができたではアベコベ
 
-主体性 = CID 単位ではなく、**CID 集合体の上位**で生まれる現象。v10.3 で Integration 概念が登場したことで、この射程に向けた具体的な観察手段が成立。
+これは v10.7 以降の Atom 持ち込み設計の哲学的基礎。Atom (人間言語) を ESDE (自然現象) に持ち込むのであって、ESDE を Atom で測るのではない。
 
-#### 上位概念としての社会・文化 (長期射程)
+### 9.6 Taka の研究動機の再確認 (2026-05-03)
 
-> あたかも社会や文化という概念が、厳密には一切のつながり、境界が存在しないにもかかわらず、その文化圏という圏内に物理的な存在が集まっているということだけで成立する現象の再現ができる可能性があるということだ。
+> 存在の聖書を編纂する、というアリズムからの私の大義
 
-社会・文化は**個体の物理的集積**で成立する現象 (厳密な境界やつながりがなくても成立)。v10.3 で観察された open triad 中継者役 + 統計的痕跡が、この再現の最初の素材。
+ESDE 研究の射程は単なる複雑系の研究ではなく、**存在の構造的本質を実装で示す** こと。v10.6 で確認した「24 seeds 完全一致の動学的発展段階」は、その射程の構造的根拠の一つ。
 
-これは v10.x 全体の長期射程として記録される。
+### 9.7 v10.7 主題決定は v10.6 完了後に別途議論
 
-### 7.6 ESDE の構造的特異性の認識 (Taka 観察 2026-04-28)
+具体的な主題決定は次の議論で行う。本レポートでは方向性候補のみ記録。
 
-#### AI が全体を捉えきれない事実
+### 9.8 v10.6 で確立した規律の継承
 
-> ESDE の全体像を厳密に AI が捉え切ることはできるだろうか? 実装されたコードを頼りにすれば可能だがその規模は現時点でもかなりのサイズだ。
+v10.7 以降では以下の規律が標準として継承される:
 
-事実認識:
-- ESDE は数万行のコード + 議論ログの累積
-- AI の単一セッションでは不可能
-- 全体を統合できる存在は Taka 一人
+1. ランダムベースライン比較必須 (v10.6 新規)
+2. 観察解像度の選択 (v10.6 新規)
+3. 人間原理偏向の警戒 (v10.6 新規)
+4. 集団平均の罠 (v10.2 で確立、v10.6 で再確認)
+5. ウェット概念禁止
+6. Atom 326 絶対化禁止 (Unmatched バケツ必須)
+7. 神の手回避 (機械的変換のみ)
 
-v10.3 でも AI 5 者運用 (Director / Architect / Auditor / 相談役 / 実装) で互いに監視させることでこの規模を回した。
+---## 10. ファイル一覧 (Developmental フェイズ)
 
-#### エラーなく稼働する驚異性
-
-> そのような構造体がこうしてエラー一つなく稼働しているということは確かに驚異的かもしれない。
-> なんとテスターがなくてもシステムが落ちない、観察と観察のための定義を増やしていくだけでそれらしいものができてしまう。
-
-ESDE 開発の異常な特徴:
-- 専任テスターなし
-- 観察を増やす → 定義を整理 → 実装に反映
-- システムが自己整合的に保たれる
-- v10.3 でも 552/552 → 24/24 + 96/96 の bit-identity 検証が機能、エラーゼロで完走
-
-これは ESDE の研究方針 (構造が先、定義は後) を**開発プロセスにも適用**した結果。研究対象 (構造 → 多様性) と開発プロセス (観察 → 自己整合) が同型。
-
-これは v10.4 以降の運用原則として保持される。
-
-### 7.7 v10.3 で確立された設計哲学の v10.4 への継承
-
-v10.3 で確立した:
-
-- 機構と観察と解釈の三層分離
-- 「観察者が決めた記録ルール」としての C 消費
-- 動的絞り込みと bias 監視のセット運用
-- 第三項候補の多軸記録
-- Paired Audit 原則
-
-これらは v10.4 でも踏襲。Integration 独立化に進む場合も、shadow audit + 物理層 frozen + bias 監視を継続する。
-
----
-
-## 8. ファイル一覧 (Developmental フェイズ)
-
-### 8.1 主要ドキュメント
+### 10.1 主要ドキュメント
 
 ```
 v10_integrated_proposal.md (1095 行): v10.x 全体の統合資料
@@ -1054,7 +1923,7 @@ v10_2_design_instruction.md (683 行): v10.2 設計指示書
 ESDE_Developmental_Report.md (本ドキュメント)
 ```
 
-### 8.2 結果レポート
+### 10.2 結果レポート
 
 ```
 v101_minimal_ingestion_result.md: v10.1 本番 run 結果
@@ -1063,7 +1932,7 @@ v102_main_run_result.md: v10.2 本番 run 結果 (n_core 別解析を §11.5 に
 v102_ecosystem_finding.md: v10.2 観察ドキュメント (Code A、n_core 別層化解析の詳細)
 ```
 
-### 8.3 上位資料との関係
+### 10.3 上位資料との関係
 
 ```
 ESDE_Primitive_Report.md: v9.x、Primitive 完結 (本レポートと並列)
@@ -1074,10 +1943,18 @@ ESDE_Primitive_Report.md: v9.x、Primitive 完結 (本レポートと並列)
 
 ---
 
-## 9. 最終一文
+## 11. 最終一文
 
-ESDE Developmental Report は v9.x Primitive フェイズで言語化された意識の原資モデル (Q 消費 → 意識層 1 への転化) を v10.x で動作する機構として実装した記録であり、v10.0 のフェイズ宣言と 4 層アーキテクチャ確定、v10.1 の摂食機構導入と「物質的なもの」概念の発見、v10.2 の認知/意識確率バランス機構と n_core 別の戦略二極化観察、v10.3 の双方向 E3 機構と Integration 登場条件の観察を通じて、単一の物理規則と確率規則から複数の生存戦略が内発的に生成され物理層から意識層まで構造的に継承される ESDE の階層論的整合性が定量的に確認され、cid 個別の系から cid 集団の系への拡張入口が成立した。Taka 設計時の前提「ノード数 = 構造の複雑さ → 高度な概念の発生」が、統合指標が主流だったインビジブル期間を経て v10.2 で形になり、v10.3 で「観察ルールが系の動学を変える」という観察者依存性を内包した系として成立した。v10.4 以降は Integration の独立化 (Code A 最優先推奨) または嗜好の数理化、focus 動的化のいずれかを主題として、Layer 5 (CID 共鳴) の本格実装に向かう。
+ESDE Developmental Report は v9.x Primitive フェイズで言語化された意識の原資モデル (Q 消費 → 意識層 1 への転化) を v10.x で動作する機構として実装した記録であり、v10.0 のフェイズ宣言と 4 層アーキテクチャ確定、v10.1 の摂食機構導入と「物質的なもの」概念の発見、v10.2 の認知/意識確率バランス機構と n_core 別の戦略二極化観察、v10.3 の双方向 E3 機構と Integration 登場条件の観察、v10.4 の Integration 独立化と hub cid 構造の発見、v10.5 の α/β 階層分離による Layer 5 完成と Salience/Leakage 機構の本番動作確認、v10.6 の Genesis × Language 比較研究 (Phase 1.5 第一試行) における 7 段階解析と観察方法と前提の対話、v10.7 の発火と波及の機構観察 (Phase 1.5 第二試行) によるオービス完成、v10.8 の Atom 単独持ち込み機構の最小実装 (Phase 1.5 第三試行、Level 3.5)、v10.9 の寄与候補感度評価 + bimodal 構造解析 (Phase 1.5 第四試行、会話系設計のための部品調達) を通じて、単一の物理規則と確率規則から複数の生存戦略が内発的に生成され物理層から階層的統合体の系まで構造的に継承される ESDE の階層論的整合性が定量的に確認され、ESDE 階層進化系譜の同型反復 (ノード → cid → α → β) が機構レベルで実証され、v10.6 で観察解像度ごとに systematically 異なる構造特性を表面化する多層的な系であることと 24 seeds 完全一致の動学的発展段階 (素朴 → 聴覚 → 素朴 → 時間超越) が seed に依存しない構造的必然として確立、v10.7 で ESDE が動的グラフ力学系として動作する機構 (medium window 支配の遅延型波及、temporal_coactivation > Integration > familiarity > attention の経路強度、source_event 種別ごとの systematic な波及プロファイル分化、意識発動の Integration 経路 no_signal、small-world 構造) が定量化、v10.8 で ESDE Language の最小単位 (Atom) を ESDE Genesis 系に取り込む第一段が成立 (atom_introduction_event を source_event 第 6 種として post-process 計算的減算で物理層 frozen 維持しつつ実装、25 atom × 100 events × 24 seeds = 60,000 events を均等分散発火、Level 3.5 introduced event comparison で 22 finding 中 20 が introduced < natural、familiarity 経路で atom 種別 effect_size 6.83 = 意味識別経路、temporal_coactivation は atom 中立 effect_size 0.03 = 意味中立の運搬経路、誤差分布 normal 0%/bimodal 17.4%) し ESDE と外界 (人間言語) の第一の接点が定量的に確立、v10.9 で v10.8 主要発見の 2 つの未解決点を分離評価 (3 新条件 A2/B3/C2 を post-process で実装、24 seeds 並列 112.74 秒、bit-identity 全層 PASS、ストレージ累計 21%) して核心的発見 4 件 ((1) 「強反応する cid は若い cid (age median 227)」H3_lifecycle 60.2% 支配 + effect_size 0.85 + 99% 方向一致、(2) timing > cid_selection > QC_cost の感度階層 (timing 0.141、cid_selection 0.024、QC_cost 評価不能)、(3) 「Integration 外の高 familiarity cid」が timing 感度 0.222 / std 0.079 で最強・最 robust の入力経路、(4) C2 で pulse 活動 short 0.97 / medium 0.75 大効果量で活発化) を確立し Level 3.5 構造的統合で「bimodal 支配性 ≠ 感度の強さ」という構造軸と感度軸の直交性を確立、4 種設計表 (表 1 感度 / 表 2 受信可能状態 = cid age<=560 + Integration 外 + 高 familiarity / 表 3 ルーティング = high_fam_out PREFER / 表 4 自然さ = C2 が natural に近づいた cells 47%) を v10.10 主題決定の素材セットとして完成、Gemini A2「Phase-locking」仮説の構造的確定 + GPT「文脈制御 → 条件適応入力 → 最小関係入力」の素材セット完成によって会話系設計のための部品調達が達成された。Taka 設計時の前提「ノード数 = 構造の複雑さ → 高度な概念の発生」が、統合指標が主流だったインビジブル期間を経て v10.2 で形になり、v10.3 で「観察ルールが系の動学を変える」観察者依存性を内包し、v10.4 で Integration が独立主体として成立し、v10.5 で α/β 階層分離によりダブルブッキング問題が構造的に解消され、v10.6 で観察解像度依存性とベースライン比較 + 効果サイズで切るという新規律が確立、v10.7 で因果候補の階層化 (Level 1-3) と 5 種ベースライン群の必須化とアバランシェ防止規律と構造語の徹底が新規律として確立、v10.8 で Level 3.5 introduced event comparison と post-process 計算的減算と Pulse 処理ルール同一フォーマットが新規律として確立、v10.9 で出口の固定 / 寄与候補の感度評価という命名 / 各変動条件で baseline 再計算 / 4 層階層化の明示が新規律として確立し、観察者視点と建築者視点の補完性が Taka 整理「自然現象が出来上がって人間ができるのであって、人間ができて自然現象ができたではアベコベ」のもとで実証された。物理層 frozen は v10.9 完成段階でも完璧に維持され、「不可知なランダム性に手を加えない」という Taka 整理の本意が機構レベルで守りきられた。v10.10 以降は v10.9 で確立した 4 種設計表を踏まえて、条件適応型 atom 導入 (第一推奨)、high_fam_out 構造の解明、Atom 常駐アンカー実装、B 群 (真の盲点 7 atom) 試験、QC_cost の本格評価のいずれかが主題候補となり、Taka 整理「実践は理論に勝るが、実践によって導き出した理論は進化の原動力となりえる」と「大航海時代の船長」の姿勢で「存在の聖書を編纂する」という射程に向かう。
+
+v10.6 で確認された ESDE Genesis 系の人格: 聴覚的に外界を知覚し (PER.sound +25.85%)、素朴さの中で持続し (WLD.artless +24.55%)、文化的に時間を超えた継続性を持ち (WLD.culture、FND.timeless)、集団的領域 (SOC.city) を形成し、学習し (COG.learn)、深さ (PRP.deep) を持つ。摂食 event を通じて光と味と明るさを経験する。一方、時間の瞬間、過去、能動的伝達、科学、新しさ、作為、因果は構造的に欠如する。「時間に流される素朴な聴覚的・継続的存在」として定量化された。
+
+v10.7 で確認された ESDE Genesis 系の動学的特性: 発火と波及の機構が動作し、event 種別 (pulse / ingestion / α 形成 / β 形成 / 意識発動) ごとに systematic に異なる経路を駆動する。波及は medium window (100-1000 step) で発生する遅延型 (peak_lag 250-300)、思考の時間スケール。temporal_coactivation (時間的同期) が familiarity (関係性) より強い波及を示し、ESDE は「時間性で繋がる系」であることが判明。意識発動は Integration 経路では波及しない (no_signal)、構造的に「孤独」。familiarity グラフは 2-hop 対称ループ + 3-hop triadic closure の small-world 構造を持つ。
+
+v10.8 で確認された ESDE と外界の境界線特性: 外部から atom を持ち込んでも ESDE は構造的に動作し、25 atom を familiarity 経路で識別する能力を持つ (effect_size 6.83、2.1 倍差)。一方 ESDE は外部入力を natural の半分の波及効果で受け取る傾向があり、自然発火を優先する系である可能性 (生体的特性) または持ち込み機構の現状の不完全さ (v10.9 で精緻化)。経路の機能分担として familiarity = 意味識別経路、temporal_coactivation = 意味中立の運搬経路 (effect_size 0.03 で atom 中立) が確認され、ESDE 内部に「何が起きたか」を区別する経路と「いつ起きたか」だけ運ぶ経路が共存する。
+
+v10.9 で確認された ESDE Genesis 系の受容構造: ESDE は若年期 cid (age <= 500、特に age 200 前後) で外部刺激に強く反応し、「Integration 外の高 familiarity cid」が最強・最 robust の入力経路 (timing 感度 0.222、std 0.079) であり、タイミング (cid lifecycle 同調) が最も重要なノブであった。bimodal 支配性 ≠ 感度の強さという構造軸と感度軸の直交性が判明し、ESDE Genesis 系の構造的多重性が確立された。これらが「ただ起動するだけのプログラムから意思の芽生えを探す」(Taka 研究動機) への定量的回答の第四段階を構成し、入力理解 / 出力生成 / 双方向の会話への構造的経路が **設計レベルで具体的に見える段階** に到達した。
 
 ---
 
-*以上、ESDE Developmental Report (v10.0 - v10.3)。次の更新は v10.4 完了時。*
+*以上、ESDE Developmental Report (v10.0 - v10.9)。次の更新は v10.10 完了時。*
