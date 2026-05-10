@@ -176,8 +176,7 @@ def generate_v108_standard_events_for_seed(seed: int) -> pd.DataFrame:
     # inner-join: v108_standard pool に存在する cid のみ (target_step < death PASS した cid)
     df = df_v108.merge(meta_df, on="source_cid", how="inner")
     df = df.sort_values(["timestamp", "atom_index"]).reset_index(drop=True)
-    # event_id 再付番
-    df["event_id"] = [f"{seed}_v108_standard_atom_{i}" for i in range(len(df))]
+    # event_id は v108_re 既存値を保持 (Step E で v108_re baselines を event_id で流用するため)
     return df
 
 
