@@ -1,0 +1,77 @@
+{
+  "formation_relation_check": {
+    "seed": 0,
+    "total_cids_with_intervals": 129,
+    "sample_cids": [
+      {
+        "cid": 2,
+        "n_intervals": 49,
+        "intervals_sample": "[(248, 25000), (927, 25000), (1719, 25000)]",
+        "is_member_at_step_500": true,
+        "is_member_at_step_5000": true
+      },
+      {
+        "cid": 22,
+        "n_intervals": 51,
+        "intervals_sample": "[(248, 25000), (1247, 11000), (1247, 11000)]",
+        "is_member_at_step_500": true,
+        "is_member_at_step_5000": true
+      },
+      {
+        "cid": 19,
+        "n_intervals": 52,
+        "intervals_sample": "[(694, 25000), (962, 25000), (962, 25000)]",
+        "is_member_at_step_500": false,
+        "is_member_at_step_5000": true
+      },
+      {
+        "cid": 41,
+        "n_intervals": 52,
+        "intervals_sample": "[(694, 25000), (962, 25000), (1973, 25000)]",
+        "is_member_at_step_500": false,
+        "is_member_at_step_5000": true
+      },
+      {
+        "cid": 44,
+        "n_intervals": 36,
+        "intervals_sample": "[(927, 25000), (2615, 25000), (4062, 25000)]",
+        "is_member_at_step_500": false,
+        "is_member_at_step_5000": true
+      }
+    ],
+    "implementation_source": "v110_environment_check.py / v112_step_z_environment_check.py 流用",
+    "verified": "OK"
+  },
+  "v108_original_bin_filter": {
+    "seed": 0,
+    "n_v108_original_total": 224,
+    "n_v108_bin_5plus": 21,
+    "ratio": 0.09375,
+    "sample_bin_5plus_cids": [
+      0,
+      2,
+      9,
+      19,
+      22,
+      26,
+      41,
+      42,
+      82,
+      86
+    ],
+    "implementation": "v108 cid_atom_sim_matrix を read、post-process で n_core ≥ 5 filter",
+    "verified": "OK"
+  },
+  "scale_estimate": {
+    "n_v112_trial_A_events_total": 2625,
+    "n_v108_matched_pool_bin_5plus_events": 2625,
+    "n_v108_original_events": 60000,
+    "total_events_3_conditions": 65250,
+    "baseline_calculations_total": "3 cond × 6 baseline × 24 seeds = 432 baseline runs",
+    "main_run_time_estimate": "1-2 分 (24 並列、v10.10 の 10.7% 規模、performance_evaluator 含む)",
+    "storage_estimate_per_seed_mb": "~25-35 MB (3 condition × 8-10 MB)",
+    "storage_estimate_main_total_mb": "~600-840 MB",
+    "cumulative_storage_v107_to_v112_gb": "~2.1-2.4 GB / 上限 6 GB (35-40%)",
+    "打ち切り余裕": "50% (3 GB) に大幅余裕"
+  }
+}
