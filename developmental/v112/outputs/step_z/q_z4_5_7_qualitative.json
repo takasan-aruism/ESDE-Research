@@ -1,0 +1,51 @@
+{
+  "q_z4": {
+    "existing_implementations": [
+      {
+        "file": "developmental/v110/v110_environment_check.py",
+        "desc": "build_alpha_beta_intervals (v10.10)",
+        "exists": true
+      },
+      {
+        "file": "developmental/v110/v110_multi_axis_stratified_analyzer.py",
+        "desc": "build_cid_features + integration_layer (v10.10)",
+        "exists": true
+      },
+      {
+        "file": "developmental/v111/v111_q_c_inherited_observer.py",
+        "desc": "q_c_inherited 起点の within-cid 観察 (v10.11)",
+        "exists": true
+      }
+    ],
+    "data_sources": [
+      "alpha_lifecycle_log_seed*.csv (event_type birth / member_ghosted / active_to_recorded)",
+      "beta_lifecycle_log_seed*.csv (event_type birth / alpha_added / beta_merged / q_c_inherited / active_to_recorded)"
+    ],
+    "implementation_scale": "本 Q-Z1 の build_beta_intervals + is_beta_member_at で 30 行程度、既存規約に整合",
+    "judgment": "(a) v10.10/v10.11 既存実装を流用、新規実装規模 30 行 → 整合、進める"
+  },
+  "q_z5": {
+    "v105_mechanism_a": {
+      "source": "developmental/v105/v105_integration.py:1035 'β 側: Q/C 100% 継承'",
+      "definition": "cid が ghost 化時、その cid が β member なら β が Q/C を 100% 継承。α 側はメンバー除外と recorded 化のみ (Q/C 継承なし)"
+    },
+    "v105_mechanism_c": {
+      "source": "v10.5 §85.1 (推定) 'Recorded 永続' / β は death event なし",
+      "definition": "active_to_recorded で β は永続化、death events 0 件、member_ghosted で α member 除外",
+      "note": "「ε=1 漏れ」の具体的実装は本 Step Z で未確認、要主題ドキュメント参照"
+    },
+    "code_a_view_on_redundancy": {
+      "v10_11_already_observed": "v10.11 q_c_inherited 観察で β member cid の C 値が 24 seeds 一貫して正方向に動くことを確認 (delta_C +0.097〜+0.497、 全 12 cells)、留保 21: ESDE β 機能 (Q/C 継承) の直接観察可能性",
+      "v10_12_condition_1_overlap": "v10.12 条件 1 (β member 除外) は v10.11 結論の実装適用。atom event 効果と β 継承効果の混在を回避する観点では新規だが、「β member は C 増加で鈍感化する」という観察は既知",
+      "judgment_candidate": "(b) 部分的に重なる: 条件 1 単独では v10.11 既知の延長、ただし「4 条件複合 cid (β 非member + 長寿 + n_core 5+ + 高 fam) で atom event 効果が v108 top_k_100 (β member 含む) より強いか」の比較は v10.12 で初めて。Web Claude/Taka 判断: 留保事項として「条件 1 は v10.11 既知」を明記して進めるか、主題変更か"
+    }
+  },
+  "q_z7": {
+    "n_v112_events_estimate_low": 94,
+    "n_v112_events_estimate_high": 2350,
+    "n_v108_events": 5111,
+    "main_run_time_estimate_minutes": "1-3 分 (v10.10/v10.11 相当の 24 並列、events 規模次第)",
+    "storage_estimate_mb": "200-400 MB (主題想定、v10.9-v10.11 累計 1.52 GB から +0.2-0.4 GB)",
+    "cumulative_storage_estimate_gb": "1.7-1.9 GB / 上限 6 GB (28-32%)、打ち切り 50% に余裕"
+  }
+}

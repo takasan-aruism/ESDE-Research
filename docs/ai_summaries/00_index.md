@@ -44,7 +44,12 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
 05_primitive_summary.md ← Primitive phase 全体 (v9.0-v9.18、Primitive 凍結)
 05c_primitive_summary_v913_addendum.md ← v9.13 追補
   ↓
+<<<<<<< HEAD
 06_developmental_summary.md ← ★ Developmental phase (v10.0-v10.6、最新)
+=======
+06_developmental_summary.md ← Developmental phase v10.0-v10.3 (2026-04-28 で凍結)
+06b_developmental_phase15_summary.md ← ★ Phase 1.5 (v10.4-v10.12、最新、新 Web Claude 引き継ぎ用)
+>>>>>>> e658ffc418778ff45620c607f2e354156f54fbb7
   ↓
 08_esde_system_structure.md ← 現行システム構造 (v10.6 対応、4 層 + α/β Integration + Salience + Leakage + Atom alignment)
   ↓
