@@ -1,0 +1,344 @@
+{
+  "metadata": {
+    "step": "C R@1 ベース照合 (留保 #33 同型構造の検証)",
+    "method": "base が top-1 で gt_top1 と一致 AND B/C/BC が top-1 で miss",
+    "rationale": "Step C 初回 (R@3 ベース) で base 優位 token = 0、追加分析で R@1 では 0.96 vs 0.78、留保 #33 同型構造を発見。本書は R@1 ベースで本来の検証を実施。",
+    "interpretation_rule": "断定なし、観察事実のみ記録、Taka 直感判断対象"
+  },
+  "r1_winning_tokens": [
+    {
+      "sentence_id": "berlin_0001",
+      "span_text": "capital",
+      "pos": "NOUN",
+      "gt_top1": "SOC.official",
+      "gt_atoms_top3": [
+        "SOC.official",
+        "SOC.city",
+        "SPC.place"
+      ],
+      "base_top1": "SOC.official",
+      "B_top1": "SOC.city",
+      "C_top1": "SOC.city",
+      "BC_top1": "SOC.city"
+    },
+    {
+      "sentence_id": "berlin_0004",
+      "span_text": "capital",
+      "pos": "NOUN",
+      "gt_top1": "SOC.official",
+      "gt_atoms_top3": [
+        "SOC.official",
+        "SOC.city",
+        "SPC.place"
+      ],
+      "base_top1": "SOC.official",
+      "B_top1": "SOC.city",
+      "C_top1": "SOC.city",
+      "BC_top1": "SOC.city"
+    },
+    {
+      "sentence_id": "berlin_0006",
+      "span_text": "capital",
+      "pos": "NOUN",
+      "gt_top1": "SOC.official",
+      "gt_atoms_top3": [
+        "SOC.official",
+        "SOC.city",
+        "SPC.place"
+      ],
+      "base_top1": "SOC.official",
+      "B_top1": "SOC.city",
+      "C_top1": "SOC.city",
+      "BC_top1": "SOC.city"
+    },
+    {
+      "sentence_id": "berlin_0010",
+      "span_text": "capital",
+      "pos": "NOUN",
+      "gt_top1": "SOC.official",
+      "gt_atoms_top3": [
+        "SOC.official",
+        "SOC.city",
+        "SPC.place"
+      ],
+      "base_top1": "SOC.official",
+      "B_top1": "SPC.place",
+      "C_top1": "SPC.place",
+      "BC_top1": "SPC.place"
+    },
+    {
+      "sentence_id": "berlin_0014",
+      "span_text": "capital",
+      "pos": "NOUN",
+      "gt_top1": "SOC.official",
+      "gt_atoms_top3": [
+        "SOC.official",
+        "SOC.city",
+        "SPC.place"
+      ],
+      "base_top1": "SOC.official",
+      "B_top1": "SOC.city",
+      "C_top1": "SOC.city",
+      "BC_top1": "SOC.city"
+    },
+    {
+      "sentence_id": "berlin_0059",
+      "span_text": "capital",
+      "pos": "NOUN",
+      "gt_top1": "SOC.official",
+      "gt_atoms_top3": [
+        "SOC.official",
+        "SOC.city",
+        "SPC.place"
+      ],
+      "base_top1": "SOC.official",
+      "B_top1": "SPC.place",
+      "C_top1": "SPC.place",
+      "BC_top1": "SPC.place"
+    },
+    {
+      "sentence_id": "berlin_0070",
+      "span_text": "capital",
+      "pos": "NOUN",
+      "gt_top1": "SOC.official",
+      "gt_atoms_top3": [
+        "SOC.official",
+        "SOC.city",
+        "SPC.place"
+      ],
+      "base_top1": "SOC.official",
+      "B_top1": "SOC.city",
+      "C_top1": "SOC.city",
+      "BC_top1": "SOC.city"
+    },
+    {
+      "sentence_id": "berlin_0079",
+      "span_text": "capital",
+      "pos": "NOUN",
+      "gt_top1": "SOC.official",
+      "gt_atoms_top3": [
+        "SOC.official",
+        "SOC.city",
+        "SPC.place"
+      ],
+      "base_top1": "SOC.official",
+      "B_top1": "SOC.city",
+      "C_top1": "SOC.city",
+      "BC_top1": "SOC.city"
+    },
+    {
+      "sentence_id": "berlin_0082",
+      "span_text": "capital",
+      "pos": "NOUN",
+      "gt_top1": "SOC.official",
+      "gt_atoms_top3": [
+        "SOC.official",
+        "SOC.city",
+        "SPC.place"
+      ],
+      "base_top1": "SOC.official",
+      "B_top1": "SOC.city",
+      "C_top1": "SOC.city",
+      "BC_top1": "SOC.city"
+    },
+    {
+      "sentence_id": "berlin_0118",
+      "span_text": "capital",
+      "pos": "NOUN",
+      "gt_top1": "SOC.official",
+      "gt_atoms_top3": [
+        "SOC.official",
+        "SOC.city",
+        "SPC.place"
+      ],
+      "base_top1": "SOC.official",
+      "B_top1": "SPC.place",
+      "C_top1": "SPC.place",
+      "BC_top1": "SPC.place"
+    },
+    {
+      "sentence_id": "berlin_0118",
+      "span_text": "seat",
+      "pos": "NOUN",
+      "gt_top1": "SOC.official",
+      "gt_atoms_top3": [
+        "SOC.official",
+        "SPC.place"
+      ],
+      "base_top1": "SOC.official",
+      "B_top1": "SPC.place",
+      "C_top1": "SPC.place",
+      "BC_top1": "SPC.place"
+    },
+    {
+      "sentence_id": "berlin_0247",
+      "span_text": "capital",
+      "pos": "NOUN",
+      "gt_top1": "SOC.official",
+      "gt_atoms_top3": [
+        "SOC.official",
+        "SOC.city",
+        "WLD.culture"
+      ],
+      "base_top1": "SOC.official",
+      "B_top1": "STA.wealth",
+      "C_top1": "STA.wealth",
+      "BC_top1": "STA.wealth"
+    },
+    {
+      "sentence_id": "berlin_0429",
+      "span_text": "capital",
+      "pos": "NOUN",
+      "gt_top1": "SOC.official",
+      "gt_atoms_top3": [
+        "SOC.official",
+        "SOC.city",
+        "SPC.place"
+      ],
+      "base_top1": "SOC.official",
+      "B_top1": "SOC.city",
+      "C_top1": "SOC.city",
+      "BC_top1": "SOC.city"
+    },
+    {
+      "sentence_id": "berlin_0064",
+      "span_text": "rule",
+      "pos": "NOUN",
+      "gt_top1": "SOC.official",
+      "gt_atoms_top3": [
+        "SOC.official",
+        "COM.conduct"
+      ],
+      "base_top1": "SOC.official",
+      "B_top1": "WLD.religion",
+      "C_top1": "WLD.religion",
+      "BC_top1": "WLD.religion"
+    },
+    {
+      "sentence_id": "berlin_0037",
+      "span_text": "rule",
+      "pos": "NOUN",
+      "gt_top1": "SOC.official",
+      "gt_atoms_top3": [
+        "SOC.official",
+        "COM.conduct"
+      ],
+      "base_top1": "SOC.official",
+      "B_top1": "WLD.religion",
+      "C_top1": "WLD.religion",
+      "BC_top1": "WLD.religion"
+    },
+    {
+      "sentence_id": "berlin_0348",
+      "span_text": "division",
+      "pos": "NOUN",
+      "gt_top1": "PRP.part",
+      "gt_atoms_top3": [
+        "PRP.part",
+        "SOC.work"
+      ],
+      "base_top1": "PRP.part",
+      "B_top1": "SOC.work",
+      "C_top1": "SOC.work",
+      "BC_top1": "SOC.work"
+    },
+    {
+      "sentence_id": "berlin_0224",
+      "span_text": "capital",
+      "pos": "NOUN",
+      "gt_top1": "SOC.official",
+      "gt_atoms_top3": [
+        "SOC.official",
+        "SOC.city",
+        "SPC.place"
+      ],
+      "base_top1": "SOC.official",
+      "B_top1": "SOC.city",
+      "C_top1": "SOC.city",
+      "BC_top1": "SOC.city"
+    },
+    {
+      "sentence_id": "berlin_0060",
+      "span_text": "capital",
+      "pos": "NOUN",
+      "gt_top1": "SOC.official",
+      "gt_atoms_top3": [
+        "SOC.official",
+        "SOC.city",
+        "SPC.place"
+      ],
+      "base_top1": "SOC.official",
+      "B_top1": "SOC.city",
+      "C_top1": "SOC.city",
+      "BC_top1": "SOC.city"
+    }
+  ],
+  "n_r1_winning_tokens": 18,
+  "language_base_winning_atoms_r1": [
+    "PRP.part",
+    "SOC.official"
+  ],
+  "genesis_null_cell_atoms": [
+    "BOD.ear",
+    "EXS.being",
+    "EXS.nonbeing",
+    "FND.timeless",
+    "FND.transformation",
+    "PER.feel",
+    "PER.fragrance",
+    "PER.hear",
+    "PER.smell",
+    "PER.soundless",
+    "PER.taste",
+    "PRP.bright",
+    "PRP.deep",
+    "PRP.sharp",
+    "SOC.nation",
+    "SOC.public",
+    "TIM.appear",
+    "WLD.artless",
+    "WLD.culture",
+    "WLD.technique"
+  ],
+  "overlap_analysis": {
+    "set_a_name": "language_base_winning_R1",
+    "set_a_size": 2,
+    "set_b_name": "genesis_null_cell_atoms",
+    "set_b_size": 20,
+    "overlap": [],
+    "overlap_size": 0,
+    "only_language": [
+      "PRP.part",
+      "SOC.official"
+    ],
+    "only_language_size": 2,
+    "only_genesis": [
+      "BOD.ear",
+      "EXS.being",
+      "EXS.nonbeing",
+      "FND.timeless",
+      "FND.transformation",
+      "PER.feel",
+      "PER.fragrance",
+      "PER.hear",
+      "PER.smell",
+      "PER.soundless",
+      "PER.taste",
+      "PRP.bright",
+      "PRP.deep",
+      "PRP.sharp",
+      "SOC.nation",
+      "SOC.public",
+      "TIM.appear",
+      "WLD.artless",
+      "WLD.culture",
+      "WLD.technique"
+    ],
+    "only_genesis_size": 20,
+    "union_size": 22,
+    "jaccard": 0.0
+  },
+  "computation_metadata": {
+    "elapsed_sec": 0.03
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "step": "C 追加分析",
+    "purpose": "4 mode hit pattern 完全一致 → Web Claude §2.2 言及との照合",
+    "interpretation_rule": "断定なし、観察事実のみ記録"
+  },
+  "top3_uniqueness": {
+    "n_total": 79,
+    "n_all_same": 55,
+    "n_partial_diff": 24,
+    "n_all_diff": 0,
+    "diff_examples": [
+      {
+        "key": [
+          "berlin_0001",
+          "capital"
+        ],
+        "top3_base": [
+          "SOC.official",
+          "SOC.city",
+          "STA.wealth"
+        ],
+        "top3_B": [
+          "SOC.city",
+          "SPC.place",
+          "STA.wealth"
+        ],
+        "top3_C": [
+          "SOC.city",
+          "SPC.place",
+          "STA.wealth"
+        ],
+        "top3_BC": [
+          "SOC.city",
+          "SPC.place",
+          "STA.wealth"
+        ]
+      },
+      {
+        "key": [
+          "berlin_0004",
+          "capital"
+        ],
+        "top3_base": [
+          "SOC.official",
+          "SOC.city",
+          "STA.wealth"
+        ],
+        "top3_B": [
+          "SOC.city",
+          "SPC.place",
+          "SOC.official"
+        ],
+        "top3_C": [
+          "SOC.city",
+          "SPC.place",
+          "SOC.official"
+        ],
+        "top3_BC": [
+          "SOC.city",
+          "SPC.place",
+          "SOC.official"
+        ]
+      },
+      {
+        "key": [
+          "berlin_0006",
+          "capital"
+        ],
+        "top3_base": [
+          "SOC.official",
+          "SOC.city",
+          "STA.wealth"
+        ],
+        "top3_B": [
+          "SOC.city",
+          "SPC.place",
+          "STA.wealth"
+        ],
+        "top3_C": [
+          "SOC.city",
+          "SPC.place",
+          "STA.wealth"
+        ],
+        "top3_BC": [
+          "SOC.city",
+          "SPC.place",
+          "STA.wealth"
+        ]
+      },
+      {
+        "key": [
+          "berlin_0010",
+          "capital"
+        ],
+        "top3_base": [
+          "SOC.official",
+          "SOC.city",
+          "STA.wealth"
+        ],
+        "top3_B": [
+          "SPC.place",
+          "SOC.city",
+          "STA.wealth"
+        ],
+        "top3_C": [
+          "SPC.place",
+          "SOC.city",
+          "STA.wealth"
+        ],
+        "top3_BC": [
+          "SPC.place",
+          "SOC.city",
+          "STA.wealth"
+        ]
+      },
+      {
+        "key": [
+          "berlin_0014",
+          "capital"
+        ],
+        "top3_base": [
+          "SOC.official",
+          "SOC.city",
+          "STA.wealth"
+        ],
+        "top3_B": [
+          "SOC.city",
+          "SPC.place",
+          "STA.wealth"
+        ],
+        "top3_C": [
+          "SOC.city",
+          "SPC.place",
+          "STA.wealth"
+        ],
+        "top3_BC": [
+          "SOC.city",
+          "SPC.place",
+          "STA.wealth"
+        ]
+      }
+    ]
+  },
+  "hit_patterns": {
+    "(True, True, True, True)": 26,
+    "(False, False, False, False)": 53
+  },
+  "recall_by_mode": {
+    "base": {
+      "r1": 0.9629629629629629,
+      "r3": 0.9629629629629629,
+      "n_eval": 27
+    },
+    "B": {
+      "r1": 0.7777777777777778,
+      "r3": 0.9629629629629629,
+      "n_eval": 27
+    },
+    "C": {
+      "r1": 0.7777777777777778,
+      "r3": 0.9629629629629629,
+      "n_eval": 27
+    },
+    "BC": {
+      "r1": 0.7777777777777778,
+      "r3": 0.9629629629629629,
+      "n_eval": 27
+    }
+  },
+  "score_diff_stats": {
+    "mean": 0.210046835443038,
+    "max": 0.7023,
+    "n_tokens_with_diff": 27,
+    "n_tokens_total": 79
+  }
+}
