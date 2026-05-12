@@ -1,0 +1,36 @@
+{
+  "step": "I",
+  "timestamp": "2026-05-12 11:05:21",
+  "layer_a": {
+    "method": "run-internal deterministic via numpy.random.default_rng + per-event seed",
+    "hashes": {
+      "map1_phase_x_ncore_per_seed.parquet": "dc1f28b235c2d652",
+      "map1_phase_x_ncore_cross_seed.parquet": "7f50452e6194f115",
+      "map2_phase_x_path_per_seed.parquet": "33d6e8a02826ddb5",
+      "map2_phase_x_path_cross_seed.parquet": "834de47a4f1d4589",
+      "map3_phase_x_formation_per_seed.parquet": "501623754de27d3f",
+      "map3_phase_x_formation_cross_seed.parquet": "661136691a4153a7",
+      "map4_phase_x_event_per_seed.parquet": "f673f27d41afbd65",
+      "map4_phase_x_event_cross_seed.parquet": "1cb84ce51f94486d",
+      "map5_null_phase_per_cell.parquet": "589d3e69d318355e",
+      "step_h_long_phase_summary.parquet": "82de18d66cc426ee"
+    },
+    "note": "full layer A (2 回実行 hash 比較) は別途 smoke 検証で実施想定"
+  },
+  "layer_b": {
+    "method": "Step B baseline mtime+size との完全比較",
+    "n_files_tracked": 3243,
+    "n_changed": 0,
+    "n_added": 0,
+    "n_removed": 0,
+    "changed_files": [],
+    "added_files": [],
+    "removed_files": [],
+    "passed": true
+  },
+  "layer_c": {
+    "method": "assert_output_under_v113a 構造的保証",
+    "passed": true
+  },
+  "elapsed_sec": 0.12
+}

@@ -1,0 +1,16 @@
+{
+  "step": "G",
+  "method": "cell-based 案 X-1 (Web Claude 即決事項 #1)",
+  "cell_unit": "phase × condition × n_core_bin × atom_id",
+  "null_conditions": {
+    "1_all_paths_no_signal": "5 paths (atom_related 3 + layer5_structural 2) 全て CI 0 を跨ぐ",
+    "2_majority_seeds_signal": "24 seeds 中 |delta_C| > 0 の seed が 12 以上",
+    "3_min_events": "n_events_in_cell >= 3"
+  },
+  "n_total_cells": 450,
+  "n_non_empty_cells": 276,
+  "n_null_candidates": 36,
+  "bootstrap_n_iter": 1000,
+  "random_seed_base": 13013,
+  "elapsed_sec": 13.07
+}
