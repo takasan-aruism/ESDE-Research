@@ -1,7 +1,8 @@
 # ESDE v10.x 実装技術仕様書
 
 *作成*: 2026-05-11、Code A
-*目的*: ESDE v10.0-v10.12 の実装レベル詳細仕様を 1 本に集約、後出しドキュメント
+*最終更新*: 2026-05-12 (v10.13.a 反映)
+*目的*: ESDE v10.0-v10.13.a の実装レベル詳細仕様を 1 本に集約、後出しドキュメント
 *対象*: AI (Web Claude / 他の Code Agent / Code A 自身) 参照用、無駄を削減
 *親資料*: `docs/ai_summaries/06_developmental_summary.md` (概念詳細) + `docs/ai_summaries/06b_developmental_phase15_summary.md` (Phase 1.5 概念詳細) + `developmental/v10x_overall_review.md` (バージョン俯瞰)、本書は **実装ファイル中心**
 
@@ -49,6 +50,10 @@ v10.8 atom_introduction_events.parquet (60K events、25 atom × 100 cid × 24 se
        excess_change_adjusted.parquet (補正済)
    ↓
 v10.9-v10.12 各種派生 (gate/cond/within-cid 等)
+   ↓
+v10.13.a Map 1-5 + long phase (5 phase × 各軸の post-process)
+       map1-5_*.parquet (phase × n_core/path/formation/event/null cell)
+       excess_change_long_*.parquet (v107 WINDOW_DEFS monkey-patch で 1000-25000 step)
 ```
 
 ### 1.3 共通規約
@@ -411,7 +416,7 @@ class LeakageTracker:
 
 ---
 
-## 4. Phase 1.5 実装詳細 (v10.6 - v10.12)
+## 4. Phase 1.5 実装詳細 (v10.6 - v10.13.a)
 
 ### 4.1 v10.6 — Atom Alignment Observer
 
@@ -821,6 +826,120 @@ def paired_analysis(diff_per_seed, metric):
 
 **実装の核心**: 4 条件 (¬β + lifespan ≥ 977 + n_core ≥ 5 + fam ≥ top 50%) の受容 cid pool 420 個に対し 25 atom × cid burst (target_step + atom_idx × 10) で 10,500 events 生成、v108_standard (top_k_100 unique 5,111 cid) と比較。Step Z → J → K の 10 段階 commit chain で物理層 frozen + 層 B 443 files unchanged + bit-identity 全層 PASS を維持。観察結果: **n_pulses_short のみ paired_d +1.36 で頑健 v112 > v108、他 6 metric は方向性なし、smoke seed 0 と main 24 seeds で 4/7 metric 符号反転 (Aruism 発動)**。追加調査で **immediate (1-10 step) delta_C 頑健 + n_pulses window 依存方向反転** を発見。留保累計 27 件。
 
+### 4.8 v10.13.a — reaction phase 5 段階の整備 (post-process、v10.13 a/b/c 順次運用初回)
+
+**主要モジュール** (`developmental/v113a/`):
+
+| ファイル | 役割 | 行数 |
+|---|---|---:|
+| `v113a_step_b_environment.py` | 環境チェック + 層 B baseline 記録 (~3,243 files mtime+size snapshot) | - |
+| `v113a_maps_analyzer.py` | Map 1-4 算出 (phase × n_core / path / formation / event 種別) | ~330 |
+| `v113a_null_phase_analyzer.py` | Map 5 cell-based null absorption (案 X-1) | ~280 |
+| `v113a_long_phase_compute.py` | long phase (1000-25000 step) 算出、v107 WINDOW_DEFS monkey-patch | ~180 |
+| `v113a_bit_identity_check.py` | 層 A/B/C 検証 | - |
+
+**5 phase 定義** (Taka 整理 2026-05-11「時間軸 = 波及深度」起点):
+
+```python
+PHASE_DEFS = [
+    ("immediate", 1, 10),     # Phase 1: Immediate Disturbance (反射 A-B)、v107 immediate
+    ("short", 10, 100),       # Phase 2: Short Circulation (器官循環 A-B-C)、v107 short
+    ("mid", 100, 1000),       # Phase 3: Mid Integration (脳循環 A-B-C-D)、v107 medium 改名
+    ("long", 1000, 25000),    # Phase 4: Long Conditioning (長期記憶 A-B-C-D-E)、新規 monkey-patch
+]
+# Phase 5: Null Absorption は phase 横断、cell-based 判定 (path 5 種全 CI 0 跨ぎ + 過半数 seeds で delta_C 動く + n>=3)
+```
+
+**dataclass 不在 (post-process のみ、parquet スキーマで表現)**
+
+**Map 1-5 schema**:
+
+Map 1 (phase × n_core_bin):
+```
+seed, condition (v112/v108_standard), phase, n_core_bin (bin_2/3_4/5_plus),
+n_events, delta_C_mean, delta_C_std, delta_Q_mean, n_pulses_mean, n_pulses_std
+cross_seed: + paired_diff_mean, paired_diff_std, paired_d, sign_test, bootstrap CI 95%, crosses_zero
+```
+
+Map 2 (phase × relation_path × path_category):
+```
+seed, condition, phase,
+path_category (atom_related/layer5_structural/baseline),
+path_name (5 paths + 5 baselines),
+n_events, path_excess_mean, path_excess_std, path_delta_C_mean
+```
+
+Map 3 (phase × formation_relation):
+```
+seed, condition, phase, formation_relation (before/during/after/no_alpha),
+n_events, delta_C_mean, delta_C_std, n_pulses_mean, n_pulses_std
+```
+
+Map 4 (phase × event 種別、v107 source_events join):
+```
+seed, condition (v107_natural/v112/v108_standard), phase,
+event_source_type (pulse/ingestion/alpha_formation/beta_formation/c_conversion/atom_introduction_event),
+n_events, delta_C_mean, delta_C_std, n_pulses_mean
+```
+
+Map 5 (null phase、cell-based 案 X-1):
+```
+condition, phase, n_core_bin, atom_id, atom_category (10 種 BOD/COG/.../WLD),
+n_events_in_cell, delta_C_cell_mean, delta_C_cell_std,
+n_paths_with_no_signal (0-5),
+n_seeds_with_signal (0-24),
+cond_1_all_paths_no_signal (bool), cond_2_majority_seeds_signal (bool), cond_3_min_events (bool),
+is_null_cell_candidate (3 条件全 PASS の bool)
+```
+
+**重要定数**:
+- `PHASES = ["immediate", "short", "mid"]` (Map 1-5 で 3 phase 集計、long は Step H 別出力)
+- `PHASE_TO_V107_WIN = {"immediate": "immediate", "short": "short", "mid": "medium"}`
+- `RELATION_PATHS_ATOM = ["familiarity", "attention_via_salience", "temporal_coactivation"]`
+- `RELATION_PATHS_LAYER5 = ["integration_alpha", "integration_beta"]`
+- `EXCESS_REFERENCE = "unrelated_baseline"`
+- `BOOTSTRAP_N = 1000`, `RANDOM_SEED = 13013`
+- Null 判定: cond_2 (過半数 seeds 動く) ≥ 12、cond_3 (n_events) ≥ 3
+- `TARGET_ATOMS` 25 個は v108 から継承 (§2.7)
+
+**long phase 算出ロジック** (v107 WINDOW_DEFS monkey-patch):
+
+```python
+import v107_baseline_constructor as v107_bc
+v107_bc.WINDOW_DEFS = [("long", 1000, 25000)]  # 書き換え
+df_with_delta = v107_bc.compute_deltas(seed, df_targets)  # long delta のみ算出
+df_excess = v107_bc.compute_baseline_excess_change(df_with_delta)
+df_excess_adj = add_adjusted_excess(df_excess, df_atom, df_factor)  # v108 流用
+```
+
+**入出力**:
+- 入力: v107 source_events + excess_change、v112 excess_change_adjusted + propagation_profile (主入力、Web Claude 即決事項 #3) + step_c receptive_cids (v108_standard pool filter)
+- 出力 (per-seed): Map 1-5 parquet × 24 seeds × 2 conditions + cross_seed
+- long phase: `excess_change_long_*.parquet` × 48 jobs + baselines_with_delta_long_*
+
+**実装の核心**: v10.7 オービスで確立した 3 window (immediate/short/medium) を Taka 整理「時間軸 = 波及深度」を起点として 5 phase に拡張、v10.12 main run 既存出力の post-process のみで 5 Map を算出 (main run 再実行なし、層 B 3,243 files unchanged)。Map 5 (null phase) は cell-based 案 X-1 (Web Claude 即決事項 2026-05-12) で per-event CI ではなく phase × condition × n_core_bin × atom_id cell × bootstrap CI で判定 (per-event CI は v10.12 cross_seed_analyzer に不在のため構造的設計問題を回避)。long phase は v107 WINDOW_DEFS を monkey-patch で `[("long", 1000, 25000)]` に変更し compute_deltas を呼ぶ。bit-identity 全層 PASS (層 B 3,243 files unchanged、層 A deterministic、層 C 構造的)。実行時間 Step B-I 合計 57 秒、出力 61 MB。
+
+主要観察事実 (judgment 回避、Aruism 整合):
+- Map 1: n_pulses 3 phase 全頑健 v112 > v108 (paired_d +0.91-1.19、bin_5_plus 限定)、delta_C short のみ頑健 (+0.46)
+- Map 2: 15 cells (3 phase × 5 path) 全て CI 0 跨ぎ、path_excess 方向性なし (v10.12 Step J 結論変わらず)
+- Map 3: before formation imm/short 頑健 (paired_d +0.63/+0.42)、mid で消失
+- Map 4: c_conversion = ingestion 完全同値 (留保 #32 = v10.2 即時摂食設計の物理的に同一瞬間を 2 ラベルで記録)、v112 atom phase 別 6 倍増加 (imm 0.013 → mid 0.081)
+- Map 5: v112 で 36 null candidates (path 経路を経ない波及)、v108_standard で 0、PER/WLD/PRP/SOC で分散、EXS が mid で 2 atoms
+
+新規留保 6 件 (累計 27 → 33 件):
+- #28 long phase data 可用性 (算出可能と確定)
+- #29 null absorption 判定方式 (cell-level 案 X-1 採用、Web Claude 即決事項)
+- #30 matched_baseline v112 空 (cond3 構造的)
+- #31 v112 integration_α/β 小サンプル (per-event 1-2 events)
+- #32 c_conversion = ingestion 完全同値 (v10.2 即時摂食設計の構造的帰結、追究で解明済)
+- #33 候補: 集計単位による方向反転 (全 events vs bin_5_plus で paired_d 符号反転 -0.94 vs +1.19、絶対格言 #4 集団平均の罠の生きた実例、Taka §1.9「揺れの幅」と接続)
+
+10 段階の commit chain:
+```
+2281336  v10.13.a Step A 認識確認 + 事前齟齬 7 件指摘 + 9 論点回答
+dd4aecd  v10.13.a Step B-J 完了 (Map 1-5 + long phase + 観察事実報告)
+```
+
 ---
 
 ## 5. 出力ファイル schema 一覧 (主要)
@@ -864,7 +983,21 @@ def paired_analysis(diff_per_seed, metric):
 
 - `*_{cond}_seed{N}.parquet` の `{cond}` は: v10.9 `A1/A2/B3/C2`、v10.10 `v110_{gate}_t{age}` (28 種) + `v108_re`、v10.12 `v112/v108_standard`
 - v10.11: `q_c_inherited_response_profile_seed{N}.parquet` (T_OFFSETS × pairs)
-- v10.12: `propagation_profile_{cond}_seed{N}.parquet` (per-event 7 metric + Step C metadata)
+- v10.12: `propagation_profile_{cond}_seed{N}.parquet` (per-event 7 metric + Step C metadata、medium 固定)
+
+### 5.5 v10.13.a 出力 (Map 1-5 + long phase、`developmental/v113a/outputs/main/`)
+
+| ファイル | 主要列 |
+|---|---|
+| `map1_phase_x_ncore_per_seed.parquet` | seed, condition, phase, n_core_bin, n_events, delta_C_mean/std, delta_Q_mean, n_pulses_mean/std |
+| `map1_phase_x_ncore_cross_seed.parquet` | + paired_diff_mean, paired_d, sign_test, bootstrap CI 95%, crosses_zero |
+| `map2_phase_x_path_per_seed.parquet` | seed, condition, phase, path_category, path_name, n_events, path_excess_mean/std, path_delta_C_mean |
+| `map3_phase_x_formation_per_seed.parquet` | seed, condition, phase, formation_relation, n_events, delta_C_mean/std, n_pulses_mean |
+| `map4_phase_x_event_per_seed.parquet` | seed, condition (v107_natural/v112/v108_standard), phase, event_source_type, n_events, delta_C_mean |
+| `map5_null_phase_per_cell.parquet` | condition, phase, n_core_bin, atom_id, atom_category, n_events_in_cell, n_paths_with_no_signal, is_null_cell_candidate |
+| `excess_change_long_{cond}_seed{N}.parquet` | 通常の excess_change schema、ただし window 列が `long` のみ (1000-25000 step) |
+| `step_b_environment.json`, `layer_b_baseline.json` | 環境チェック + 層 B baseline 記録 |
+| `step_g_summary.json`, `step_h_summary.json`, `step_i_bit_identity_report.json` | 各 step メタデータ |
 
 ---
 
@@ -897,6 +1030,13 @@ python3 developmental/v112/v112_receptive_cid_detector.py --mode main
 python3 developmental/v112/v112_orchestrator.py --mode main --n_workers 12 --layer-b-check
 python3 developmental/v112/v112_cross_seed_analyzer.py
 python3 developmental/v112/v112_window_post_process.py
+
+# v10.13.a reaction phase 5 段階の整備 (post-process のみ)
+python3 developmental/v113a/v113a_step_b_environment.py
+python3 developmental/v113a/v113a_maps_analyzer.py
+python3 developmental/v113a/v113a_null_phase_analyzer.py
+python3 developmental/v113a/v113a_long_phase_compute.py --n_workers 8
+python3 developmental/v113a/v113a_bit_identity_check.py
 ```
 
 ---
@@ -926,7 +1066,7 @@ python3 developmental/v112/v112_window_post_process.py
 | Salience-driven Focus | v10.5 | mass(X) = X.Q + X.C + β継承分、read_other / ingestion / be3 で mass-weighted 選択 |
 | Recorded β からの Leakage | v10.5 | recorded β の C から ε=1 を主体 cid.C に転記 (be3 / ingestion trigger) |
 
-### 7.2 Phase 1.5 (v10.6 - v10.12): Genesis × Language 統合
+### 7.2 Phase 1.5 (v10.6 - v10.13.a): Genesis × Language 統合
 
 **確立された機能**:
 
@@ -960,7 +1100,13 @@ python3 developmental/v112/v112_window_post_process.py
 | Aruism 整合 observation_recorder | v10.12 | 3 段階判定廃止、観察事実 + 層化 + 予想 vs 観察 + 留保を網羅記録 |
 | paired_d / sign_test / bootstrap CI | v10.12 | 24 seeds で formal 統計、deterministic random_seed |
 | bit-identity 3 層検証 | v10.12 | 層 A (smoke 2 回 hash 一致) / 層 B (既存 443 files mtime+size 不変) / 層 C (構造的保証) |
-| smoke seed 0 限界の formal 化 | v10.12 (本日) | window 単位 post-process で smoke vs main 乖離 4/7 metric を verify |
+| smoke seed 0 限界の formal 化 | v10.12 追加 | window 単位 post-process で smoke vs main 乖離 4/7 metric を verify |
+| 5 phase 統合枠組み | v10.13.a | immediate / short / mid / long / null。v10.7 3 window を Taka「時間軸 = 波及深度」で 5 phase 化、観察軸増加ではなく統合 |
+| Map 1-5 reaction phase map | v10.13.a | phase × n_core / path / formation / event 種別 / null cell の 5 出口物 |
+| cell-based null absorption (案 X-1) | v10.13.a | per-event CI 不要、phase × condition × n_core × atom cell で path 5 種無信号判定 |
+| v107 WINDOW_DEFS monkey-patch | v10.13.a | 既存 v107 compute_deltas を再利用、長 phase (1000-25000 step) を層 B 不変で算出 |
+| path_category 分離 | v10.13.a | atom_related (3) / layer5_structural (2) / baseline (5) を parquet 列で明示、絶対格言 #11 |
+| 集計単位による方向反転の操作的観察 | v10.13.a 追究 | 全 events vs bin_5_plus で paired_d 符号反転 (-0.94 vs +1.19)、絶対格言 #4 集団平均の罠の実例 |
 
 ---
 
@@ -975,7 +1121,8 @@ python3 developmental/v112/v112_window_post_process.py
 | safe_write_parquet_v{NNN} | 上記層 C を強制、親 dir 自動作成、snappy 圧縮 |
 | per-seed × per-condition 並列 | `multiprocessing.Pool(processes=N)` で 24 workers 並列 |
 | 確定的乱数 | numpy.random.default_rng(seed) または random.Random(seed) |
-| event_id 命名 | `f"{seed}_{source_type}_{idx}"` (v107) / `f"{seed}_atom_{idx}"` (v108) / `f"{seed}_v112_atom_{idx}"` (v112) |
+| event_id 命名 | `f"{seed}_{source_type}_{idx}"` (v107) / `f"{seed}_atom_{idx}"` (v108) / `f"{seed}_v112_atom_{idx}"` (v112)。v108_standard は v108 互換で `{seed}_atom_{idx}` 保持 |
+| バージョンディレクトリ命名 | v10.0-v10.12 は 3 桁数字 (`v100`-`v112`)、v10.13 以降は a/b/c 接尾辞付き (`v113a`、`v113b`、`v113c`)、v10.13 は旧メジャーバージョン級主題 (Taka 確定 2026-05-11) |
 
 ---
 
@@ -991,13 +1138,23 @@ python3 developmental/v112/v112_window_post_process.py
 | 上位 Primitive Report | `docs/ESDE_Primitive_Report.md` | - |
 | ESDE Language legacy | `docs/LANGUAGE_LEGACY_DIGEST.md` | - |
 
+### v10.13.a 主題ドキュメント (Web Claude + Code A)
+
+| 種別 | ファイル |
+|---|---|
+| 主題ドキュメント | `developmental/v113a/v113a_phase_design.md` (Web Claude、Taka §1.9 + Taka 2026-05-11 整理を起点) |
+| 実装指示書 | `developmental/v113a/v113a_implementation_brief.md` (Web Claude) |
+| Step A 認識確認 | `developmental/v113a/v113a_step_a_recognition.md` (Code A、事前齟齬 7 件 + 9 論点回答) |
+| Step A 即決事項返答 | `developmental/v113a/v113a_step_a_response_from_web_claude.md` (Web Claude → Code A) |
+| Step J 観察事実報告 | `developmental/v113a/v113a_observation_report.md` (Code A、Map 1-5 直感語 + 構造文併記) |
+
 各バージョン完了レポートは `developmental/v{NNN}/v{NNN}_*_report.md` を参照。
 
 ---
 
 ## 10. 最終一文
 
-本書は ESDE v10.0-v10.12 の **実装レベル詳細仕様** を 1 本に集約した後出しドキュメントであり、各バージョンの主要モジュール (`.py` ファイル) + データ構造 (`@dataclass` / NamedTuple) + 主要関数 (引数 + 戻り値) + 重要定数 + 入出力 schema を §3 (Phase 1) と §4 (Phase 1.5) に列挙、共通技術モジュール (v107 baseline_constructor の WINDOW_DEFS と compute_deltas、v107 path_analyzer の 5 種 relation_path、v107 baseline_constructor の 5 種 baseline、v108 global_activation_correction の補正、v108 TARGET_ATOMS 25 atom) を §2 に集約、Phase ごとの機能リスト (Phase 1 で 16 機能 / Phase 1.5 で 26 機能) を §7 に独立掲載、出力 schema 一覧を §5、実行コマンドを §6、各バージョン共通の規約 (物理層 frozen / bit-identity 3 層 / safe_write_parquet / per-seed 並列 / 確定的乱数 / event_id 命名) を §8 に整理、AI 対象として無駄を削減しつつ抜けなく記述、v10.12 完了 (commit 238a145) + 本日の window 追加調査 (commit ee87f63) までの全実装情報を網羅。
+本書は ESDE v10.0-v10.13.a の **実装レベル詳細仕様** を 1 本に集約した後出しドキュメントであり、各バージョンの主要モジュール (`.py` ファイル) + データ構造 (`@dataclass` / NamedTuple) + 主要関数 (引数 + 戻り値) + 重要定数 + 入出力 schema を §3 (Phase 1) と §4 (Phase 1.5) に列挙、共通技術モジュール (v107 baseline_constructor の WINDOW_DEFS と compute_deltas、v107 path_analyzer の 5 種 relation_path、v107 baseline_constructor の 5 種 baseline、v108 global_activation_correction の補正、v108 TARGET_ATOMS 25 atom) を §2 に集約、Phase ごとの機能リスト (Phase 1 で 16 機能 / Phase 1.5 で 32 機能 [v10.13.a で +6]) を §7 に独立掲載、出力 schema 一覧を §5 (v10.13.a Map 1-5 + long phase を §5.5 で追加)、実行コマンドを §6 (v10.13.a 5 段階を追加)、各バージョン共通の規約 (物理層 frozen / bit-identity 3 層 / safe_write_parquet / per-seed 並列 / 確定的乱数 / event_id 命名 / バージョンディレクトリ命名 [v10.13 以降 a/b/c 接尾辞]) を §8 に整理、AI 対象として無駄を削減しつつ抜けなく記述、v10.12 完了 (commit 238a145) + window 追加調査 (commit ee87f63) + v10.13.a Step A-J 完了 (commit 2281336 + dd4aecd) までの全実装情報を網羅、v10.13.a は v10.7 オービス 3 window を Taka 整理「時間軸 = 波及深度」を起点として 5 phase (immediate / short / mid / long / null) に拡張、Map 1-5 (phase × n_core / path / formation / event / null cell) を post-process のみで算出、cell-based null absorption (案 X-1) + v107 WINDOW_DEFS monkey-patch (long phase) + 集計単位による方向反転の操作的観察 (留保 #33 候補、絶対格言 #4 集団平均の罠の実例、Taka §1.9「揺れの幅」と接続) を §4.8 + §7.2 で追加、留保事項累計 27 → 33 件 (#28-#33)。
 
 ---
 
