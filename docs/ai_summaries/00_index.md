@@ -1,7 +1,7 @@
 # ESDE 研究史 — AI 向け超要約 (Index + 用語対応表)
 
 *作成日*: 2026-04-11 (v9.9 Long Run 進行中)
-*更新*: 2026-04-28 (**Developmental フェイズ v10.0/v10.1/v10.2 完了**、意識層 C 動作機構実装、認知/意識確率バランス、n_core 別層化解析、構造的継承の観察、詳細解析 5 本完了)
+*更新*: 2026-04-28 (Developmental v10.0-v10.2 完了)、2026-05-11 (**v10.3-v10.12 完了反映**、Phase 1.5 第七試行完了、Atom 取り込み prototype 主題完了)
 *前回更新*: 2026-04-24 (v9.18 段階 5 完了、A+C 統合、意識の原資モデルの明確化、間違いの価値の反転、Primitive フェイズ完結)
 *対象読者*: ESDE-Research に新規に関わる Claude (新スレッド初見)
 
@@ -18,7 +18,7 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
 ## ⚠️ 警告
 
 - これは**要約**であり原本ではない。設計の詳細や個別実験の数値が必要な場合は必ず原本 (`docs/ESDE_*_Report.md` および `docs/概念理解.md`) を参照すること。
-- **要約の最新時点は v10.2 完了 (2026-04-28)、Developmental フェイズ進行中**。06_developmental_summary、07_concept_core、08_esde_system_structure、09_audit_principles は v10.2 対応済み。05_primitive_summary は Primitive フェイズで凍結 (v9.x 系列、参照用)。01-04 は v9.9 時点のまま (古い表記、用語対応表で確認)。
+- **要約の最新時点は v10.12 完了 (2026-05-11)、Developmental Phase 1.5 第七試行完了**。06_developmental_summary、09_audit_principles、ESDE_Developmental_Report は v10.12 対応済み。07_concept_core、08_esde_system_structure は v10.9 まで本格対応、v10.10-v10.12 は §末追記。05_primitive_summary は Primitive フェイズで凍結 (v9.x 系列、参照用)。01-04 は v9.9 時点のまま (古い表記、用語対応表で確認)。
 - **Developmental フェイズのディレクトリ**: `developmental/v10X/`。
 - **ファイル番号体系の変更 (2026-04-28)**: Developmental フェイズ追加に伴い、06 (旧 concept_core) → 07、07 (旧 system_structure) → 08、08 (旧 audit_principles) → 09 にずらし、新規 06 を Developmental Summary とした。
 - **推測補完していない**。原本にあることだけ抽出している。「書いてないこと」を埋めようとしないこと。
@@ -1566,3 +1566,108 @@ v10_2_analysis_instruction_to_codea.md: Code A 解析依頼書
 - **「動的均衡 = 進化終端」を急ぎたい衝動が出たら、07_concept_core.md D.8 を読む** — C 蓄積による自然フィルタが進化継続を可能にしている
 - **「v10.3 で何でもやりたい」衝動が出たら、Developmental Report §6.3 を読む** — 主題は三項共鳴に確定、主役候補 ~270 cid
 - **「ファイル番号を変えたい」衝動が出たら、本ファイル冒頭の番号体系メモを読む** — 06 が Developmental Summary、07/08/09 はリネーム済み
+
+---
+
+## 18.14 v10.3-v10.12 進行サマリ (2026-05-11 追記)
+
+00_index.md 本体は v10.2 完了時点のまま、v10.3-v10.12 の進行は本セクションで圧縮要約する。詳細は 06_developmental_summary.md §3-§15、ESDE_Developmental_Report.md §6-§14 参照。
+
+### v10.3 (双方向 E3 機構)
+- 双方向 E3 (両者 hosted ∧ Q>0 ∧ C>=1 で両者 C-1) 機構
+- C 蓄積 27% 抑制、観察記録ルールが系の動学を変える観察者依存性
+- 第三項 open triad 98.6%、closed triad 1.4%
+
+### v10.4 (Integration 機構導入)
+- Integration 13,550 件誕生 (be3 / open_triad / closed_triad / third_overlap)
+- Q/C 継承機構の最小実装
+- be3 (両者 C-1)、open_triad、third_overlap 概念新規
+
+### v10.5 (Layer 5 完成、α/β 階層分離)
+- 機構 A (β に Q/C 100% 継承) + 機構 C (Recorded ε=1) 確立
+- α/β 階層分離、hub β 出現 (最大 691 α / 20 cid)
+- α event_type 3 種 / β event_type 5 種
+
+### v10.6 (Atom 比較研究、Phase 1.5 第一試行)
+- 25 atom 構造的特異性 (WLD.artless reserved)
+- 7 段階解析 (per-event / per-pulse / step10 trajectory 等)
+- ベースライン比較 + 効果サイズで切る規律
+
+### v10.7 (オービス完成、Phase 1.5 第二試行)
+- 5 source × 10 path × 415K events / 3.45M excess
+- temporal_coactivation > Integration > familiarity > attention 経路強度
+- medium window 支配の遅延型波及、small-world 構造
+
+### v10.8 (Atom 単独持ち込み、Phase 1.5 第三試行)
+- atom_introduction_event 機構 (25 atom × 100 events × 24 seeds = 60K events)
+- Level 3.5: 20/22 finding が introduced < natural
+- familiarity 経路で atom 識別 effect_size 6.83、temporal 中立 0.03
+
+### v10.9 (4 種設計表、Phase 1.5 第四試行、選抜試験)
+- timing > cid_selection > QC_cost の感度階層
+- high_fam_out_integ で timing 感度 0.222 最強・最 robust
+- 4 種設計表完成 (受信可能状態 / ルーティング / 自然さ / 感度)
+
+### v10.10 (Multi-gate × timing、Phase 1.5 第五試行、観察延長への逸脱)
+- §3.4 反応 type 分業 (bin_2 = pulse / bin_5+ = delta_C)
+- Integration 形成前 cid で timing 効果 / 形成後 100step 超で消失
+- v10.9 設計表の有効領域露出
+
+### v10.11 (q_c_inherited、Phase 1.5 第六試行、v10.5 既知再観察に終わる)
+- 規律 §35 #9 最大級違反、3 AI 全員と Code A の構造的失敗
+- §35 メタ規律 10 項目確立
+- esde_3ai_operations_manual.md 整備
+
+### v10.12 (Atom 取り込み prototype、Phase 1.5 第七試行、現在地)
+- 第 4 版 (2 trial 分割) → 第 5 版 (cond4 top 50% γ 仮置き) で構造的再構築
+- 受容 cid pool 420、events 10,500、main run 20.35 秒、bit-identity 全層 PASS
+- 頑健 5 cells (delta_C × immediate/short + n_pulses × imm/short/med)
+- Taka 過去経験「10 step が一番差が出た」verified
+- 累計留保 27 件、Aruism 整合 judgment 回避
+- 規律 42 候補 (上位完了レポート §5 必読) + 過去観察軸照会義務 + 資料運用ルール導入
+
+## 18.15 v10.12 で導入された運用変更 (v10.13 以降適用)
+
+1. **マイナーバージョン a/b/c 付与** (Taka 提案 2026-05-11): 9 マイナーバージョン進行で連結が見えなくなった反省、単位を大きく扱う
+2. **過去観察軸の照会義務**: 主題ドキュメントに必須記載
+3. **資料運用ルール**: Taka 向けは直感語維持、AI 向け監査資料のみ AI 向け形式 (Pull 型 / 抜粋 / fact sheet)
+4. **AI 向けドキュメント必須記載**: 想定するな聞け / Code A 調査依頼可 / 役割境界
+5. **監査魔人化の歯止め**: 最大 3 ラウンド、Taka 直感に反する監査結果は Web Claude 権限で却下可
+6. **Taka 整理原文の保存**: 要約禁止
+7. **概念単位の正確化**: ESDE 概念単位 (path / event_type / layer / cid / atom 等) を雑に扱わない
+
+## 18.16 主要ファイル一覧 (v10.3-v10.12 追加)
+
+```
+v103: v103_be3_implementation.md / v103_target_tracker_report.md
+v104: v104_be3_postprocess.py / v104_integration.py / v104_observation_target.py
+v105: v105_integration.py (機構 A/C 本体)
+v106: v106_post_process.py / v106_atom_match_classification.py
+v107: v107_event_aggregator.py / v107_path_analyzer.py / v107_baseline_constructor.py
+v108: v108_atom_event_generator.py / v108_baseline_recalculator.py
+v109: v109_atom_event_generator.py / v109_bimodal_analyzer.py / v109_sensitivity_evaluator.py / v109_design_table_compiler.py
+v110: v110_multi_axis_stratified_analyzer.py / v110_n_core_stratified_analyzer.py
+v111: v111_q_c_inherited_observer.py / v111_response_profile_compiler.py
+v112: v112_receptive_cid_detector.py / v112_atom_event_generator.py / v112_propagation_analyzer.py / v112_observation_recorder.py / v112_orchestrator.py / v112_cross_seed_analyzer.py
+
+主題ドキュメント:
+v110_phase_design.md / v110_phase_report.md
+v111_phase_design.md / v111_phase_report.md
+v112_phase_design.md (第 5 版) / v112_phase_design_v4_archived.md / v112_implementation_brief.md (第 4 版)
+v112_completion_report.md (Code A 主題完了報告)
+v112_window_investigation_report.md (Code A 追加調査)
+v112_phase_result.md (Web Claude 版 Phase Result)
+
+運用マニュアル:
+esde_3ai_operations_manual.md (3 AI 共通運用、v10.11 整備)
+```
+
+## 18.17 将来 Claude への申し送り (v10.10-v10.12 追加)
+
+- **「条件研究の延長として観察軸を増やしたい」衝動が出たら、09_audit_principles.md §35 #10 + §36.3 を読む** — v10.10/v10.11/v10.12 第 4 版で繰り返された逸脱パターン
+- **「上位完了レポート §5 を読まずに新主題を組み立てたい」衝動が出たら、09_audit_principles.md §36.2 規律 42 候補を読む** — v10.11/v10.12 第 4 版で発生した規律 §35 #9 違反の特殊形
+- **「path_excess を一括で語りたい」衝動が出たら、09_audit_principles.md §36.7 を読む** — atom 関連 3 path と Layer 5 構造観察 integration_alpha/beta は別系統 (Taka 指摘 2026-05-11)
+- **「pulse / window 観察粒度を新規提案したい」衝動が出たら、過去観察軸の照会を先に行う** — v10.6 step10_baseline / v10.7 オービス (immediate/short/medium) / v10.10 §4 で既に確立されている可能性
+- **「3 段階成功判定 (Full/Partial/Failure) を置きたい」衝動が出たら、v10.12 主題ドキュメント第 5 版 §6.3 を読む** — Aruism「予想と違えば再観察」整合の判定回避方式が v10.12 から運用開始
+- **「familiarity 閾値を厳密に選びたい」衝動が出たら、留保 #25 (v10.12) を読む** — top 25% vs top 50% の意味検証は v10.13 以降の別主題候補、v10.12 では γ 仮置き
+- **「smoke seed 0 だけで本番に進みたい」衝動が出たら、留保 #27 (v10.12) を読む** — seed 0 が外れ値だった事実、v10.13 以降で smoke 複数 seed 化を運用改善候補
