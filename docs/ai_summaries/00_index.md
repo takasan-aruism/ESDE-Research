@@ -45,7 +45,8 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
 05c_primitive_summary_v913_addendum.md ← v9.13 追補
   ↓
 06_developmental_summary.md ← Developmental phase v10.0-v10.9 (Taka update 2026-05-11、v10.9 完了時点まで網羅)
-06b_developmental_phase15_summary.md ← ★ Phase 1.5 (v10.4-v10.12、新 Web Claude 引き継ぎ用、v10.10-v10.12 が新情報、最新)
+06b_developmental_phase15_summary.md ← Phase 1.5 (v10.4-v10.12、v10.10-v10.12 新情報、v10.12 Step A 完了で凍結)
+06c_developmental_v1013_v1101_summary.md ← ★ v10.13.a + Unified Phase v1100/v1101 (新 Web Claude 引き継ぎ用、現主題 v1101 Atom 隆盛観察 Code A Step A-H 完了 2026-05-17、最新)
   ↓
 08_esde_system_structure.md ← 現行システム構造 (v10.6 対応、4 層 + α/β Integration + Salience + Leakage + Atom alignment)
   ↓
@@ -53,6 +54,8 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
 ```
 
 **急ぎなら**: 本ファイル末尾の **用語対応表** + `06_developmental_summary.md` + `08_esde_system_structure.md` + `07_concept_core.md` の Developmental 申し送り の組み合わせで現状作業 (v10.9 完了時点) に最低限着手できる。**ただし `04_cognition_summary.md` の「却下された方針」は時間を作って必ず読むこと**。
+
+**現主題 (v11.0.1 = v1101、2026-05-17 時点)**: 新 Web Claude 引き継ぎは `unified/v1101/v1101_web_claude_handoff.md` (Code A 作成、2026-05-17) を最初に読むこと。Code A Step A-H 完了済 (観察 1/2/3 + 核心発見 = 観察単位による dominant atom 反転 + bit-identity 3 層全 PASS)、Web Claude Phase Result (Step J) 待ち。本書 06c_developmental_v1013_v1101_summary.md で v10.13.a + Unified Phase v1100/v1101 を網羅。
 
 ---
 
