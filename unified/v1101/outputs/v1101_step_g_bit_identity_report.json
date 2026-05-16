@@ -1,0 +1,160 @@
+{
+  "version": "v11.0.1 (v1101) Step G",
+  "timestamp": "2026-05-16T17:28:12Z",
+  "layer_a": {
+    "parquet_hash_match": {
+      "observation_1_center_cids.parquet": true,
+      "observation_1_random_cids.parquet": true,
+      "observation_1_trajectory.parquet": true,
+      "observation_1_summary.parquet": true,
+      "observation_2_events.parquet": true,
+      "observation_2_propagation.parquet": true,
+      "observation_2_summary.parquet": true,
+      "observation_3_cid_atom_distribution.parquet": true,
+      "observation_3_integration_summary.parquet": true,
+      "observation_3_esde_aggregate.parquet": true
+    },
+    "html_structural": {
+      "plotly_graph_div_count_match": true,
+      "Plotly_newPlot_count_match": true,
+      "h2_section_count_match": true,
+      "size_pre_bytes": 977262,
+      "size_post_bytes": 977262,
+      "size_diff_bytes": 0,
+      "note": "HTML byte-identity NOT guaranteed (plotly UUID div IDs random); structural identity verified"
+    },
+    "rerun_times_sec": {
+      "v1101_step_c_observation_1.py": 3.07,
+      "v1101_step_d_observation_2.py": 48.93,
+      "v1101_step_e_observation_3.py": 1.7,
+      "v1101_step_f_graph_html.py": 0.61
+    },
+    "all_parquet_match": true
+  },
+  "layer_b": {
+    "v106_main": {
+      "n_files_pre": 731,
+      "n_files_post": 731,
+      "n_added": 0,
+      "n_removed": 0,
+      "n_modified": 0,
+      "added_samples": [],
+      "removed_samples": [],
+      "modified_samples": [],
+      "pass": true
+    },
+    "v108_main": {
+      "n_files_pre": 368,
+      "n_files_post": 368,
+      "n_added": 0,
+      "n_removed": 0,
+      "n_modified": 0,
+      "added_samples": [],
+      "removed_samples": [],
+      "modified_samples": [],
+      "pass": true
+    },
+    "v112_main": {
+      "n_files_pre": 207,
+      "n_files_post": 207,
+      "n_added": 0,
+      "n_removed": 0,
+      "n_modified": 0,
+      "added_samples": [],
+      "removed_samples": [],
+      "modified_samples": [],
+      "pass": true
+    },
+    "all_pass": true
+  },
+  "layer_c": {
+    "n_write_calls": 11,
+    "all_structurally_under_v1101": true,
+    "allowed_constants": [
+      "V1101_OUT",
+      "V1101_MAIN",
+      "HTML_OUT",
+      "V1101_DIR"
+    ],
+    "findings": [
+      {
+        "script": "v1101_step_c_observation_1.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "V1101_OUT / \"observation_1_center_cids.parquet\"",
+        "structurally_under_v1101": true
+      },
+      {
+        "script": "v1101_step_c_observation_1.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "V1101_OUT / \"observation_1_random_cids.parquet\"",
+        "structurally_under_v1101": true
+      },
+      {
+        "script": "v1101_step_c_observation_1.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "V1101_OUT / \"observation_1_trajectory.parquet\"",
+        "structurally_under_v1101": true
+      },
+      {
+        "script": "v1101_step_c_observation_1.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "V1101_OUT / \"observation_1_summary.parquet\"",
+        "structurally_under_v1101": true
+      },
+      {
+        "script": "v1101_step_d_observation_2.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "V1101_OUT / \"observation_2_events.parquet\"",
+        "structurally_under_v1101": true
+      },
+      {
+        "script": "v1101_step_d_observation_2.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "V1101_OUT / \"observation_2_propagation.parquet\"",
+        "structurally_under_v1101": true
+      },
+      {
+        "script": "v1101_step_d_observation_2.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "V1101_OUT / \"observation_2_summary.parquet\"",
+        "structurally_under_v1101": true
+      },
+      {
+        "script": "v1101_step_e_observation_3.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "V1101_OUT / \"observation_3_cid_atom_distribution.parquet\"",
+        "structurally_under_v1101": true
+      },
+      {
+        "script": "v1101_step_e_observation_3.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "V1101_OUT / \"observation_3_integration_summary.parquet\"",
+        "structurally_under_v1101": true
+      },
+      {
+        "script": "v1101_step_e_observation_3.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "V1101_OUT / \"observation_3_esde_aggregate.parquet\"",
+        "structurally_under_v1101": true
+      },
+      {
+        "script": "v1101_step_f_graph_html.py",
+        "method": "write_text",
+        "position": "receiver",
+        "captured": "HTML_OUT",
+        "structurally_under_v1101": true
+      }
+    ]
+  },
+  "all_layers_pass": true
+}
