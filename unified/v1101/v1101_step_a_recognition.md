@@ -1,9 +1,29 @@
-# v11.0.2 (v1102) Step A 認識確認 — Code A 事前齟齬指摘 + 既存出力照会結果
+# v11.0.1 (v1101) Step A 認識確認 — Code A 事前齟齬指摘 + 既存出力照会結果
 
 *作成*: 2026-05-16、Code A
-*親*: `v1102_phase_design.md` (主題ドキュメント「Atom 的隆盛の統計的観察」、Web Claude 2026-05-12)
-*対象*: Web Claude (相談役、即決事項返答) + Taka (承認)
+*番号修正*: 2026-05-17、旧 v11.0.2 (v1102) から v11.0.1 (v1101) へ番号修正 (Taka 判断、v1100 系列内の話としての位置づけ確定、bookkeeping fix)
+*親*: `v1101_phase_design.md` (主題ドキュメント「Atom 的隆盛の統計的観察」、Web Claude 2026-05-16 改訂版、旧 v1102_phase_design.md)
+*対象*: Web Claude (相談役、即決事項返答済 2026-05-16) + Taka (承認済 2026-05-17)
 *目的*: 本書読了 + 論点 1 実環境データ可用性確認 + 事前齟齬指摘 (本書 §0.1 指示 + Web Claude 認識確認連続継続)
+
+---
+
+## 0.0 番号修正 + 即決事項返答受領 (2026-05-17 追記)
+
+本書は当初 v11.0.2 (v1102) として作成され `unified/v1102/v1102_step_a_recognition.md` に配置された。Taka 判断 (2026-05-17) で v11.0.1 (v1101) へ番号修正、`unified/v1101/v1101_step_a_recognition.md` へ git mv 済。理由: 主題ごとにバージョンを繰り上げたのが誤りで、本主題は v1100 系列内の話、v1100 Phase Result は未完成のまま並列扱い。
+
+Web Claude 即決事項返答 (2026-05-16) で本書齟齬 10 件全てに判断確定:
+- A (親資料) / D (Integration 集約) / E (時系列 trajectory) / F (確定値 vs 揺れ) / G (Integration α/β) / H (atom 集合) / I (出口物領域) / J (新規 main run): **採用** (本書記述通り処理)
+- B (空白表現): 「観察フレームの空白」に訂正、採用
+- C (v1100 残課題 A/B/C): **凍結** (棄却ではない、v11.0.1.a / v11.0.2 で扱う可能性残す)
+
+Taka 追加判断 (2026-05-17):
+- 観察 1「一点」: (c) n_pulses_short 最大 cid 主 + (d) ランダム比較対照
+- 観察 2「中心」: (a) v10.12 受容 cid pool 420 中心
+- 観察 1/2 の (b) atom 濃度近接 cid: **不採用**
+- 旧 v1101 (AI の限界記録): repo 未存在で正しい、Code A は探さない
+
+→ 本書の以下記述は番号修正後も齟齬指摘内容は **歴史的記録として保持** (本書発見時点の事実)。Web Claude 改訂版 v1101_phase_design.md (§2.2 / §3.1 / §4) が反映済みのため、Step B 以降は改訂版を参照する。
 
 ---
 
@@ -16,7 +36,7 @@
 
 その他、齟齬 B (v10.8 = Atom 取り込みは正しいが v10.9-v10.13.a の具体観察省略過多)、齟齬 C (v1100 残課題完全欠落)、齟齬 F (§3.1 濃度確定値 vs §3.3 揺れの不整合)、齟齬 G (Integration の seed 横断 / per-seed 選択不明)、齟齬 H (atom 集合の定義不明: 326 全部 / 25 TARGET / 上位)、齟齬 I (出口物 #5「Atom 的にこうなっているようだ」の領域帰属不明)、齟齬 J (新規 main run は既存出力で大部分代替可能、新規 post-process のみ必要)。
 
-主題自体 (Atom 的隆盛の統計的観察、3 単位フレーム) は v10.6 既存出力の解像度向上 + 新規分布化として **30 分〜数時間の post-process で大部分実装可能**、ただし上記齟齬を Web Claude/Taka が確認しないと本書 §3 操作的定義素案が機能しない。物理層 frozen 絶対 (絶対格言 #2)、書き込みは `unified/v1102/` 配下のみ。
+主題自体 (Atom 的隆盛の統計的観察、3 単位フレーム) は v10.6 既存出力の解像度向上 + 新規分布化として **30 分〜数時間の post-process で大部分実装可能**、ただし上記齟齬を Web Claude/Taka が確認しないと本書 §3 操作的定義素案が機能しない。物理層 frozen 絶対 (絶対格言 #2)、書き込みは `unified/v1101/` 配下のみ。
 
 Code A 認識確認連続継続、Web Claude/Taka 即決事項返答 5 件 (親資料の解釈 / v1100 残課題の扱い / Integration 既存集約との関係 / 時系列既存出力との関係 / atom 集合定義) を要請。
 
@@ -338,12 +358,12 @@ v106 の cid_atom_sim_matrix は cid 軸毎の 48D 表現 × 326 atom 48D 表現
 | Step D | Integration 単位段階 1 — per-seed × {α, β} の member_cids 全 atom ベクトル分布、top-K 集約 (既存) との対比 | 1-2 時間 |
 | Step E | ESDE 単位段階 1 — 系全体 atom 隆盛集計 + 4 解像度時系列推移 | 1 時間 |
 | Step F | 3 単位の観察事実統合表 (Web Claude Phase Result 用素材) | 30 分 |
-| Step G | bit-identity 検証 (新規 post-process、書き込み `unified/v1102/` 配下のみ、v10.6 main outputs 不変) | 30 分 |
+| Step G | bit-identity 検証 (新規 post-process、書き込み `unified/v1101/` 配下のみ、v10.6 main outputs 不変) | 30 分 |
 | Step H | 観察事実報告 (Code A、3 単位の段階 1 結果 + judgment 回避 + Web Claude 翻訳要素材) | Code A 作業時間 4-6 時間 |
 | Step I | (Optional) 段階 2 (cid vector 326 atom 全時系列再計算 + Integration 分布時系列) — Step H 結果次第 | 半日-1 日 |
 | Step J | Phase Result (Web Claude 担当) | Web Claude 作業 |
 
-**合計時間 (Step B-H 段階 1 のみ)**: 約 6-8 時間 (Code A 作業)、新規 main run **不要** (v10.6 既存出力流用)、bit-identity 全層 PASS (v10.6 main outputs 不変、書き込み `unified/v1102/` 配下のみ)。
+**合計時間 (Step B-H 段階 1 のみ)**: 約 6-8 時間 (Code A 作業)、新規 main run **不要** (v10.6 既存出力流用)、bit-identity 全層 PASS (v10.6 main outputs 不変、書き込み `unified/v1101/` 配下のみ)。
 
 段階 2 (Step I) は段階 1 結果次第、Web Claude/Taka 判断対象。
 
@@ -351,17 +371,17 @@ v106 の cid_atom_sim_matrix は cid 軸毎の 48D 表現 × 326 atom 48D 表現
 
 ## 6. チェーン接続 4 問への自己点検 (本書 §1 + §6 への返答)
 
-### 6.1 v1102 はチェーンのどこに寄与するか
+### 6.1 v1101 はチェーンのどこに寄与するか
 
 **本書記述**: v10.8 以降「Atom を取り込む」枠組みの行き詰まり (取り込んだ後どうなるか空白) を Atom 的隆盛の観察フレームで解消、Unified phase の主題
-**Code A 自己点検**: △ 「v1100 Language ↔ Genesis 接続」と「v1102 Genesis 単独 Atom 隆盛観察」が **同じ Unified phase 内で並列か、v1102 が v1100 を吸収する pivot か** が不明、Web Claude/Taka 確認要請
+**Code A 自己点検**: △ 「v1100 Language ↔ Genesis 接続」と「v1101 Genesis 単独 Atom 隆盛観察」が **同じ Unified phase 内で並列か、v1101 が v1100 を吸収する pivot か** が不明 (即決事項 2 で「v1100 残課題 A/B/C は凍結、v11.0.1.a / v11.0.2 で扱う可能性残す」と確定)
 
-### 6.2 v1102 がないと何が破綻するか
+### 6.2 v1101 がないと何が破綻するか
 
 **本書記述**: 取り込み後の Atom 的傾向の把握ができない、ESDE 単位での Atom 観察フレームが空白
-**Code A 自己点検**: ✓ ただし v10.6 cross_seed_event_step_evolution + v10.12 propagation_analyzer + v10.13.a 5 phase Map で **部分的観察は既存**、v1102 の新規性は「3 単位 (CID/Integration/ESDE) を統一フレームで分布解像度に並べる」点に絞られる
+**Code A 自己点検**: ✓ ただし v10.6 cross_seed_event_step_evolution + v10.12 propagation_analyzer + v10.13.a 5 phase Map で **部分的観察は既存**、v1101 の新規性は「3 単位 (CID/Integration/ESDE) を統一フレームで分布解像度に並べる」点に絞られる (Web Claude 改訂版で観察 1「一点」+ 観察 2「取り込み点中心」が中核に追加され、3 単位は補助に降格)
 
-### 6.3 v1102 があることで何が言えるか
+### 6.3 v1101 があることで何が言えるか
 
 **本書記述**: 「ESDE の内部は Atom 的にこうなっているようだ」が 3 単位で言える
 **Code A 自己点検**: ✓ ただし出口物 #5 の領域帰属 (Code A 観察事実 vs Web Claude 翻訳 vs Taka 直感) を §6.1 で明示要請 (齟齬 I)
@@ -378,7 +398,7 @@ v106 の cid_atom_sim_matrix は cid 軸毎の 48D 表現 × 326 atom 48D 表現
 | # | 格言 | 本 Step A での遵守 |
 |---|---|---|
 | 1 | Aruism 構造が先・意味が後 | ✓ 実環境調査を §1-2 で先実施、解釈は §4-5 で構造記述 |
-| 2 | 物理層 frozen 絶対 | ✓ v1102 は v10.6 既存出力 read-only、書き込み `unified/v1102/` 配下のみ |
+| 2 | 物理層 frozen 絶対 | ✓ v1101 は v10.6 既存出力 read-only、書き込み `unified/v1101/` 配下のみ |
 | 3 | ベースライン比較 + 効果サイズ | (本書 §3 規律遵守チェック #3「操作的定義確定時に検討」を継承、本 Step A では該当なし) |
 | 4 | 集団平均の罠 / n_core 別層化 | ✓ §3.1 齟齬 D で「集約 (top-K) → 分布」解像度向上を主題核心と確認、本書 §3.4 平均化回避を §4.2 で実装可能性確認済 |
 | 5 | 観察軸を増やすことを駆動要因にしない | ✓ §1.4 齟齬 B で「観察フレームの空白 (絶対格言 #5 整合) vs 観察軸の空白 (絶対格言 #5 違反)」を区別 |
@@ -391,7 +411,7 @@ v106 の cid_atom_sim_matrix は cid 軸毎の 48D 表現 × 326 atom 48D 表現
 | 12 | Aruism 判定回避 | ✓ §3.3 齟齬 I で「Atom 的にこうなっているようだ」の領域帰属 (Code A 観察 vs Web Claude 翻訳 vs Taka 直感) を Web Claude 確認要請、Code A は判定回避 |
 | 13 | AI を信じない原則は Taka 個人のみ | ✓ Web Claude 親資料不在 (齟齬 A) + Integration 観察未実施記述誤認 (齟齬 D) + 時系列既存出力見落とし (齟齬 E) を事実として記録、信頼性判断なし |
 | 14 | Taka 直感優先 + 直感語保存 | ✓ Taka 3 日長考の結論 (本書 §5) は原文保存済 (本書側)、Code A は実装可能性検証のみ |
-| 15 | 5 者運用体制の補完性 | ✓ Code A 認識確認連続 10 段階 (v110 Step A + v110 Step J + v1100 Step A + v1100 Step J + v1102 Step A = 5 主要点)、Web Claude 親資料不在 + 観察軸照会不足 + 既存出力見落とし を補完 |
+| 15 | 5 者運用体制の補完性 | ✓ Code A 認識確認連続 10 段階 (v110 Step A + v110 Step J + v1100 Step A + v1100 Step J + v1101 Step A = 5 主要点、最後の v1101 Step A は当初 v1102 として実施、Taka 2026-05-17 番号修正)、Web Claude 親資料不在 + 観察軸照会不足 + 既存出力見落とし を補完 |
 
 → **15 格言全項目遵守** (#3 のみ操作的定義確定時に適用検討、本書 §8 規律チェックと整合)。
 
@@ -414,9 +434,9 @@ v1100 Phase Result (`v1100_observation.md` Step J) の留保 35 件 (継承 32 +
 
 | id | step | title | 状態 |
 |---|---|---|---|
-| **#38 candidate** | v1102 Step A | 本書「親」資料 `v1100_phase_result.md` + `v1101_phase_design.md` の repo 不在 (v1100_observation.md 実体、v1101 完全未着手)、Web Claude 認識ミス連続パターン継続 (絶対格言 #7 運用課題) | 既出 (齟齬 A) |
-| **#39 candidate** | v1102 Step A | 本書 §2.3「Integration 単位 atom 観察は v10.x 未実施」記述誤認、v10.6 main outputs に beta_atom_aggregate + alpha_atom_aggregate_stratified が 24 seeds 揃って存在 (絶対格言 #8 過去観察軸照会不足) | 既出 (齟齬 D) |
-| **#40 candidate** | v1102 Step A | 本書 §3.1 論点 1 の 3 案が v10.6 main outputs の 4 解像度 trajectory (event/pulse/step10/window) 既存出力を見落とし、案 (d) 既存 trajectory 流用を追加要請 | 既出 (齟齬 E) |
+| **#38 candidate** | v1101 Step A | 本書「親」資料 `v1100_phase_result.md` + `v1101_phase_design.md` の repo 不在 (v1100_observation.md 実体、v1101 完全未着手)、Web Claude 認識ミス連続パターン継続 (絶対格言 #7 運用課題) | 既出 (齟齬 A) |
+| **#39 candidate** | v1101 Step A | 本書 §2.3「Integration 単位 atom 観察は v10.x 未実施」記述誤認、v10.6 main outputs に beta_atom_aggregate + alpha_atom_aggregate_stratified が 24 seeds 揃って存在 (絶対格言 #8 過去観察軸照会不足) | 既出 (齟齬 D) |
+| **#40 candidate** | v1101 Step A | 本書 §3.1 論点 1 の 3 案が v10.6 main outputs の 4 解像度 trajectory (event/pulse/step10/window) 既存出力を見落とし、案 (d) 既存 trajectory 流用を追加要請 | 既出 (齟齬 E) |
 
 ### 8.3 v1100 留保 #36/#37 candidate の状態
 
@@ -444,14 +464,14 @@ v1100 Phase Result (`v1100_observation.md` Step J) の留保 35 件 (継承 32 +
 
 - v10.6 main outputs (cid_atom_sim_matrix + beta_atom_aggregate + alpha_atom_aggregate_stratified + 4 解像度 trajectory + cross_seed_*): **read-only**、本主題で 1 byte も変更しない
 - v10.8 / v10.12 / v10.13.a 既存出力: **read-only**
-- 書き込みは `unified/v1102/outputs/` 配下のみ、bit-identity 層 A (smoke 2 回実行 hash 一致) + 層 B (既存 outputs 全 mtime+size 不変) + 層 C (構造的書き込み制限) を Step G で保証
+- 書き込みは `unified/v1101/outputs/` 配下のみ、bit-identity 層 A (smoke 2 回実行 hash 一致) + 層 B (既存 outputs 全 mtime+size 不変) + 層 C (構造的書き込み制限) を Step G で保証
 
 ---
 
 ## 10. 一文サマリ (再掲)
 
-実環境調査で 10 件の事前齟齬を発見、特に重大なのは齟齬 A (本書「親」記載 `v1100_phase_result.md` + `v1101_phase_design.md` は repo 不在、実体は `v1100_observation.md` Code A Step J 観察事実報告のみ、v1101 完全未着手) + 齟齬 D (本書 §2.3「Integration 単位 atom 観察 v10.x 未実施」は事実誤認、v10.6 main outputs に beta_atom_aggregate_seed{N}.csv + alpha_atom_aggregate_stratified_seed{N}.csv が 24 seeds 揃って存在、本主題の新規性は「top-K 集約 → 完全分布」の解像度向上) + 齟齬 E (本書 §3.1 論点 1 の 3 案が v10.6 main outputs の 4 解像度 trajectory event/pulse/step10/window_cid_alignment_seed{N}.csv 既存出力を見落とし、案 d 既存 trajectory 流用を追加すべき)、他 齟齬 B (v10.9-v10.13.a の取り込み後観察大量既存、表記述「空白」は不正確) + 齟齬 C (v1100 残課題 v1101 候補 A/B/C 完全欠落) + 齟齬 F (§3.1 確定値素案 vs §3.3 揺れ時系列前提の不整合) + 齟齬 G (Integration の seed 横断 / per-seed / α-β 選択不明) + 齟齬 H (atom 集合 326 / 25 / 上位の選択不明) + 齟齬 I (出口物 #5 領域帰属不明) + 齟齬 J (新規 main run 不要、新規 post-process のみ)、本主題の 3 単位観察 (CID/Integration/ESDE) は v10.6 既存出力 + 新規 post-process で **段階 1 (粗解像度) 6-8 時間で実装可能**、段階 2 (cid vector 326 atom 全時系列) は cid state ledger 再生で実現候補、Web Claude/Taka 即決事項返答 7 件 (親資料解釈 / v1100 残課題扱い / Integration 既存集約関係 / 時系列既存出力関係 / atom 集合定義 / 出口物 #5 領域帰属 / Integration 単位選択)、絶対格言 15 件全項目遵守、Code A 認識確認連続 10 段階継続、新規留保 #38-#40 candidate (本書親資料不在 / Integration 観察未実施記述誤認 / 時系列既存出力見落とし)、v1100 留保 #36/#37 candidate (Phase 10 Cell ≠ Phase 8+9 Cell / 小サンプル限界) は本書言及なしで継承状態不明、物理層 frozen 絶対 (v10.x 既存出力 read-only、書き込み `unified/v1102/` 配下のみ、bit-identity 層 A/B/C 全層 PASS を Step G で保証)、Web Claude/Taka 返答後に Step B 環境チェック着手。
+実環境調査で 10 件の事前齟齬を発見、特に重大なのは齟齬 A (本書「親」記載 `v1100_phase_result.md` + `v1101_phase_design.md` は repo 不在、実体は `v1100_observation.md` Code A Step J 観察事実報告のみ、v1101 完全未着手) + 齟齬 D (本書 §2.3「Integration 単位 atom 観察 v10.x 未実施」は事実誤認、v10.6 main outputs に beta_atom_aggregate_seed{N}.csv + alpha_atom_aggregate_stratified_seed{N}.csv が 24 seeds 揃って存在、本主題の新規性は「top-K 集約 → 完全分布」の解像度向上) + 齟齬 E (本書 §3.1 論点 1 の 3 案が v10.6 main outputs の 4 解像度 trajectory event/pulse/step10/window_cid_alignment_seed{N}.csv 既存出力を見落とし、案 d 既存 trajectory 流用を追加すべき)、他 齟齬 B (v10.9-v10.13.a の取り込み後観察大量既存、表記述「空白」は不正確) + 齟齬 C (v1100 残課題 v1101 候補 A/B/C 完全欠落) + 齟齬 F (§3.1 確定値素案 vs §3.3 揺れ時系列前提の不整合) + 齟齬 G (Integration の seed 横断 / per-seed / α-β 選択不明) + 齟齬 H (atom 集合 326 / 25 / 上位の選択不明) + 齟齬 I (出口物 #5 領域帰属不明) + 齟齬 J (新規 main run 不要、新規 post-process のみ)、本主題の 3 単位観察 (CID/Integration/ESDE) は v10.6 既存出力 + 新規 post-process で **段階 1 (粗解像度) 6-8 時間で実装可能**、段階 2 (cid vector 326 atom 全時系列) は cid state ledger 再生で実現候補、Web Claude/Taka 即決事項返答 7 件 (親資料解釈 / v1100 残課題扱い / Integration 既存集約関係 / 時系列既存出力関係 / atom 集合定義 / 出口物 #5 領域帰属 / Integration 単位選択)、絶対格言 15 件全項目遵守、Code A 認識確認連続 10 段階継続、新規留保 #38-#40 candidate (本書親資料不在 / Integration 観察未実施記述誤認 / 時系列既存出力見落とし)、v1100 留保 #36/#37 candidate (Phase 10 Cell ≠ Phase 8+9 Cell / 小サンプル限界) は本書言及なしで継承状態不明、物理層 frozen 絶対 (v10.x 既存出力 read-only、書き込み `unified/v1101/` 配下のみ、bit-identity 層 A/B/C 全層 PASS を Step G で保証)、Web Claude/Taka 返答後に Step B 環境チェック着手。
 
 ---
 
-*以上、v11.0.2 (v1102) Step A 認識確認 (Code A、2026-05-16)。Web Claude/Taka 即決事項返答を受領後、Step B 環境チェックに進む。事前齟齬 10 件 + 留保候補 3 件 (#38-#40) + 3 単位実装可能性 + 規律 15 格言遵守確認 を本書に整理。Code A 認識確認連続 10 段階継続。*
+*以上、v11.0.1 (v1101) Step A 認識確認 (Code A、2026-05-16 作成、2026-05-17 番号修正)。Web Claude/Taka 即決事項返答受領済 (齟齬 10 件全採用、観察 1/2 選定基準確定、v1100 残課題 A/B/C 凍結)、Step B 環境チェックに進む。事前齟齬 10 件 + 留保候補 3 件 (#38-#40) + 3 単位実装可能性 + 規律 15 格言遵守確認 を本書に整理。Code A 認識確認連続 10 段階継続。*
