@@ -1,10 +1,10 @@
-# ESDE スケール注意機構 — 改訂フレーム (監査反映版)
+# v11.0.1.a (v1101a) 主題設計書 — ESDE スケール注意機構
 
 *作成*: 2026-05-17、Web Claude (相談役)
-*親*: Web Claude 事前調査要望書 + Code A Step 2 認識確認 + Code A Step 3 成果物 + GPT (Auditor) / Gemini (Architect) 監査結果 + Taka 整理 (2026-05-17、箱 1/2/3 確定 + Aruism 対称性補足)
-*位置*: 要望書 §5.4 進行案 Step 6 の手前 — 監査修正と Taka 領域確定を折り込んだ改訂フレーム。Taka 主題化判断 (Step 6) の対象。
-*バージョン番号*: 未確定。本主題は v11.x Unified phase、v1101 の後継。番号 (v11.0.1.a / v11.0.2 等) と repo 配置先は Taka が Step 7 で確定。本書には番号を入れない。
-*位置づけ*: 本書は主題候補「ESDE スケール注意機構」の改訂フレーム。事前調査 (要望書 → Code A Step 2/3 → 2 AI 監査) を経て、監査修正 4 点と Taka 領域 3 箱の確定を反映済。主題化されれば本書が Code A 実装 (段階 1) の設計起点になる。
+*親*: Web Claude 事前調査要望書 + Code A Step 2 認識確認 + Code A Step 3 成果物 + GPT (Auditor) / Gemini (Architect) 監査結果 + Taka 整理 (2026-05-17、箱 1/2/3 確定 + Aruism 対称性補足) + Code A 環境チェック報告 (Step 7-③)
+*位置*: 改訂フレーム (事前調査 + 2 AI 監査反映版) の正式版。Taka 主題化決定 (2026-05-17) + バージョン番号確定 (v11.0.1.a、2026-05-17) を反映。本書が Code A 段階 1 実装の設計起点。
+*バージョン番号*: **v11.0.1.a 確定** (Taka 判断 2026-05-17)。v11.x Unified phase、v1101「Atom 的隆盛の統計的観察」の進化系。配置先 `unified/v1101a/`。
+*位置づけ*: 主題「ESDE スケール注意機構」。v1101 の核心発見 (観察単位ごとに dominant atom が割れる、単一の答えがない) を起点に、最大スケールに繰り上がるのは像そのものでなく像の差分 (変化) である、という転換を扱う。事前調査 (要望書 → Code A Step 2/3 → 2 AI 監査) を経て監査修正 4 点と Taka 領域 3 箱の確定を反映済。
 
 ---
 
@@ -28,7 +28,7 @@
 
 ### 0.3 一文サマリ
 
-本書は v1101 (Atom 的隆盛統計観察、Step H 完了) の後継主題候補「ESDE スケール注意機構」の改訂フレームであり、Taka フレーム (人体の細胞レベルはカオスの海だが最大スケールに上がるのは「変化」/ 主体は変化の大きなものに注意を向け因果と影響を見る / v10.2 cid レベル Q/C シーソーの ESDE スケール展開 / 変化は連鎖・同期して波及) に対し、事前調査 (Web Claude 要望書 → Code A Step 2/3 実環境照合 → GPT/Gemini 2 AI 監査) を経て監査修正 4 点 (#1 駆動要因を GPT-1 確定文言に / #2 ΣQ・ΣC を系全体単一比率にせず CID/α/β/ESDE 各単位で並列 emit + 認知優位判定は多数決または中央値 / #3 変化指標 atom_delta・rank1_flip_density・unit_KL_delta を統合せず change_metric_type + change_metric_value で 3 系列分離 emit・統合スコア/固定閾値/重み付け禁止 / #4 emitter 境界条項の明文化 + attention_locked → predicted_lock_mode 改名) と Taka 領域 3 箱の確定 (箱 1 意識優位の選択と集中は「連想ゲーム」= 直前の認知的固定を踏み台にした連続性のある選択、predecessor_attention_ref で踏み台参照を記録 / 箱 2 主体は固定せず切り替わる、attention_target_unit が「どの構造が用いられたか」= 主体の構造的根拠の記録 / 箱 3 emitter/selector の二分を解消、注意と物理は別系統で注意は物理を操らず観測の向きと位置を扱うのみ、注意機構の全出力は確率的記述・候補に留まり 100%・確定・唯一の対象を emit しない = Aruism の対称性原則・ランダムを潰さない) を折り込み、段階 1 (粗解像度・既存出力流用・emitter 限定・新規 main run 不要・約 8.5-10 時間) を設計起点とし、v9.7 は認知層・意識層導入前 (両層は v10.x 構想、開発ロードマップで確認) のため selector の前例として扱わず、出口は「ESDE が各構造単位・各変化定義でどの注意候補を立てるか」の多眼的な観察記録、本書が主題化されれば Code A 実装の起点になる。
+本書は v1101 (Atom 的隆盛統計観察、Step H 完了) の後継主題「ESDE スケール注意機構」(バージョン v11.0.1.a 確定、配置先 `unified/v1101a/`) の正式設計書であり、Taka フレーム (人体の細胞レベルはカオスの海だが最大スケールに上がるのは「変化」/ 主体は変化の大きなものに注意を向け因果と影響を見る / v10.2 cid レベル Q/C シーソーの ESDE スケール展開 / 変化は連鎖・同期して波及) に対し、事前調査 (Web Claude 要望書 → Code A Step 2/3 実環境照合 → GPT/Gemini 2 AI 監査 → Code A 環境チェック) を経て監査修正 4 点 (#1 駆動要因を GPT-1 確定文言に / #2 ΣQ・ΣC を系全体単一比率にせず CID/α/β/ESDE 各単位で並列 emit + 認知優位判定は多数決または中央値 / #3 変化指標 atom_delta・rank1_flip_density・unit_KL_delta を統合せず change_metric_type + change_metric_value で 3 系列分離 emit・統合スコア/固定閾値/重み付け禁止 / #4 emitter 境界条項の明文化 + attention_locked → predicted_lock_mode 改名) と Taka 領域 3 箱の確定 (箱 1 意識優位の選択と集中は「連想ゲーム」= 直前の認知的固定を踏み台にした連続性のある選択、predecessor_attention_ref で踏み台参照を記録 / 箱 2 主体は固定せず切り替わる、change_scope が「どの構造が用いられたか」= 主体の構造的根拠の記録 / 箱 3 emitter/selector の二分を解消、注意と物理は別系統で注意は物理を操らず観測の向きと位置を扱うのみ、注意機構の全出力は確率的記述・候補に留まり 100%・確定・唯一の対象を emit しない = Aruism の対称性原則・ランダムを潰さない) を折り込み、Code A 環境チェックで既存機構 5 系統 (v10.2/v10.5/v10.6/v10.7/v1101) が段階 1 に直接流用可・新規 main run 不要と確認、Web Claude 確認要請 3 件を確定 (5.1 unit_KL_delta は段階 1 で時間軸なしの unit_KL_static として出し時間軸付きは段階 2 / 5.2 raw 全保存 + top_k=10 別ビュー / 5.3 predecessor_attention_ref は同 seed + 同 change_scope + 同 change_metric_type 粒度)、段階 1 工数は 7.5-9.5 時間 (unit_KL_static 採用で確定)、v9.7 は認知層・意識層導入前 (両層は v10.x 構想、開発ロードマップで確認) のため selector の前例として扱わず、出口は「ESDE が各構造単位・各変化定義でどの注意候補を立てるか」の多眼的な観察記録で単一確定像は出さず、本書が Code A 段階 1 実装の設計起点となる。
 
 ---
 
@@ -56,21 +56,21 @@
 
 ### 1.3 v1101 核心発見との接続
 
-v1101 は「観察単位ごとに dominant atom が割れる、単一の答えがない」を観察した。本主題はその続きで、最大スケールに繰り上がるのは像そのものではなく像の差分 (変化) である、という転換。注意機構は最初から最後まで多眼的でなければならず、どこか一点で単一スコアに潰した瞬間に v1101 の発見と矛盾する。監査修正 #2 #3 はこの一本の線から出ている。
+v1101 は「観察単位ごとに dominant atom が割れる、単一の答えがない」を観察した。本主題はその続きで、最大スケールに繰り上がるのは像そのものではなく像の差分 (変化) である、という転換。注意機構は最初から最後まで多眼的でなければならず、どこか一点で単一スコアに潰した瞬間に v1101 の発見と矛盾する。監査修正 #2 #3 はこの一本の線から出ている。バージョン番号が v11.0.1.a (v1101 の進化系 `.a`) であるのも、本主題が v1101 の核心発見を直接の起点とする同系列の進化だから。
 
 ---
 
-## 2. 既存機構との関係 (Code A Step 3 実環境照合 + 監査確認済)
+## 2. 既存機構との関係 (Code A Step 3 + 環境チェック実環境照合済)
 
-| 既存 | 内容 | 本主題との関係 |
-|---|---|---|
-| v10.5 Salience-driven Focus | mass = Q + C + β継承分 の mass-weighted 選択、cid レベル内生注意。emitter (log_event) と selector (select_ingestion_target) を同一機構内で分離 | 本主題は v10.5 の 3 重構造転換 (スケール / 駆動信号 / Q/C シーソー)。段階 1 は v10.5 の emitter パターンのみ採用 |
-| v10.2 確率的認知/意識切替 | cid レベル P(認知)=Q/(Q+C)、意識層 = 選択と集中 | qc_ratio は v10.2 の cid レベル比を構造単位ごとに展開したもの (§3.1) |
-| v10.6 4 解像度 trajectory | event/pulse/step10/window の rank_1_atom 時系列 | 変化抽出 (§3.2) の入力 |
-| v10.7 5 種 relation_path | familiarity / attention_via_salience / integration_α/β / temporal_coactivation | 因果候補・影響候補観察の基盤 (§3.3) |
-| v1101 観察 2 propagation | 中心 cid × Δt 21 点 × 13 列の波及構造 | 「注意候補中心の波及」観察のテンプレート (§3.3) |
+| 既存 | 内容 | 本主題との関係 | 環境チェック確認 |
+|---|---|---|---|
+| v10.5 Salience-driven Focus | mass = Q + C + β継承分 の mass-weighted 選択、cid レベル内生注意。emitter (log_event) と selector (select_ingestion_target) を同一機構内で分離 | 本主題は v10.5 の 3 重構造転換 (スケール / 駆動信号 / Q/C シーソー)。段階 1 は v10.5 の emitter パターンのみ採用 | `v105_salience.py` L104-134 `log_event`、`salience_event_log_seed{0..23}.csv` × 24 seeds 実在。注意 emit スキーマの直接前例 |
+| v10.2 確率的認知/意識切替 | cid レベル P(認知)=Q/(Q+C)、意識層 = 選択と集中 | qc_ratio は v10.2 の cid レベル比を構造単位ごとに展開したもの (§3.1) | データ実体は v10.6 trajectory の Q/C per-window に時系列化済、v10.2 単独 read 不要 |
+| v10.6 4 解像度 trajectory | event/pulse/step10/window の rank_1_atom 時系列 | 変化抽出 (§3.2) の入力 | 4 解像度全てに rank_1_atom + rank_1_sim + Q/C per-window 揃い、24 seeds 完全 |
+| v10.7 5 種 relation_path | familiarity / attention_via_salience / integration_α/β / temporal_coactivation | 因果候補・影響候補観察の基盤 (§3.3) | `relation_paths_seed{N}.parquet` + `baselines_with_delta_seed{N}.parquet` × 24 seeds 実在、5 種揃い |
+| v1101 観察 2 propagation | 中心 cid × Δt 21 点 × 列の波及構造 | 「注意候補中心の波及」観察のテンプレート (§3.3) | `observation_2_propagation.parquet` (220500 rows × 17 cols) + `observation_2_events.parquet` (Q_pre/C_pre 持ち) 実在 |
 
-→ 本主題は新規 main run 不要、既存出力流用で段階 1 が組める (Code A Step 3 結論)。
+→ 本主題は新規 main run 不要、既存出力流用で段階 1 が組める (Code A Step 3 + 環境チェック確認)。
 
 ---
 
@@ -94,16 +94,17 @@ v1101 は「観察単位ごとに dominant atom が割れる、単一の答え�
 **監査指摘** (GPT-2、要修正): 3 指標は「同じ変化の別測定」ではなく **変化の種類が違う** — atom_delta は量的変化、rank1_flip_density は主役交代、unit_KL_delta は観察単位間の像のズレ。単一列に統合・統合スコア化・順位統合すると「どの変化を本物とみなすか」を人間が決めることになり神の手化する。
 
 **修正後**:
-- 3 指標を **別系列で emit**。スキーマは `change_metric_type` (atom_delta / rank1_flip_density / unit_kl_delta) + `change_metric_value` (raw value) + `change_rank_within_type` (metric type 内順位) + `change_scope` (構造単位)。
+- 3 指標を **別系列で emit**。スキーマは `change_metric_type` (atom_delta / rank1_flip_density / unit_kl_static) + `change_metric_value` (raw value) + `change_rank_within_type` (metric type 内順位) + `change_scope` (構造単位)。
 - **統合スコアを作らない / 固定閾値を置かない / 重み付けしない**。
-- top_k は表示用に限定し、raw candidate を保存する。
-- 注意候補も指標ごとに別々に emit する — atom_delta で見た注意候補 / rank1_flip で見た注意候補 / unit_KL_delta で見た注意候補。「ESDE はどの変化に注意したか」ではなく「どの変化定義で見るとどの注意候補が立つか」を記録する。
+- top_k は表示用に限定し、raw candidate を保存する (§5.7 確認要請 2 確定)。
+- 注意候補も指標ごとに別々に emit する — atom_delta で見た注意候補 / rank1_flip で見た注意候補 / unit_KL で見た注意候補。「ESDE はどの変化に注意したか」ではなく「どの変化定義で見るとどの注意候補が立つか」を記録する。
 - 「連鎖・同期」は単発 step 差分では測れず、隣接 step・隣接 cid に同方向変化が伝播した度合いを測る。v1101 観察 2 の波及プロファイル (Δt × 対象) をテンプレートにする。
+- **unit_KL について** (§5.7 確認要請 1 確定): `cid_atom_sim_matrix` が run 最終時点の静的データのため、時間軸付きの観察単位間 KL は段階 1 で算出できない。段階 1 では時間軸なしの `unit_kl_static` (構造単位間距離) を出す。時間軸付き unit_KL_delta は段階 2 (cid state ledger 再生) 行き。出力には「unit_kl_static は時間軸なしの静的指標、atom_delta / rank1_flip_density は時間軸あり」と性質差を明記する (留保記録、§9)。
 
 ### 3.3 因果候補・影響候補の観察
 
 - 注意候補 (= 各変化定義での最大変化点) を source として、v10.7 の 5 種 relation_path で「注意候補がどこと繋がっているか」を取る = **因果候補** (causality_candidate_path、絶対格言 #10「因果でなく因果候補」)。
-- v1101 観察 2 の構造 (中心 × Δt × 13 列) を「注意候補中心の波及」に置換し、周辺の波及を取る = **影響候補** (influence_candidate_count)。
+- v1101 観察 2 の構造 (中心 × Δt × 列) を「注意候補中心の波及」に置換し、周辺の波及を取る = **影響候補** (influence_candidate_count)。v10.7 `baselines_with_delta` で効果サイズも同時取得 (絶対格言 #3)。
 
 ### 3.4 注意 emit スキーマ (監査修正 4 点 + 箱 1/2/3 反映)
 
@@ -112,7 +113,7 @@ v1101 は「観察単位ごとに dominant atom が割れる、単一の答え�
 ```
 seed, step, t_window,
 change_scope,               # CID / α / β / ESDE-event / ESDE-step10 / ESDE-window
-change_metric_type,         # atom_delta / rank1_flip_density / unit_kl_delta  (修正#3)
+change_metric_type,         # atom_delta / rank1_flip_density / unit_kl_static  (修正#3)
 change_metric_value,        # raw value、確率的記述・候補 (確定値でない、箱3)
 change_rank_within_type,    # metric type 内順位 (修正#3)
 attention_candidate_id,     # 注意候補 (cid or atom id)。attention_target ではなく candidate (箱3)
@@ -120,7 +121,7 @@ qc_ratio,                   # change_scope 単位の Q/C 比、系全体単一�
 qc_regime,                  # cognitive_dominant / conscious_dominant、多数決または中央値で判定 (修正#2)
 predicted_lock_mode,        # 認知優位時 = 固定モードの予測、意識優位時 = 選択モードの予測。
                             #   旧 attention_locked。記録専用で確定でないことを名称で明示 (修正#4)
-predecessor_attention_ref,  # 意識優位時、この注意候補が踏み台にした直前の認知的固定への参照 (箱1)
+predecessor_attention_ref,  # 意識優位時、踏み台にした直前の認知的固定への参照 (箱1、§5.7 で粒度確定)
 causality_candidate_path,   # v10.7 5 path のうち最強の relation_path_type (因果候補、§3.3)
 influence_candidate_count,  # Δt 範囲内で attention_candidate と一致した周辺 cid 数 (影響候補、§3.3)
 ```
@@ -146,7 +147,7 @@ Taka 整理 (原文):
 
 > 要は連想ゲームだと考えればいい。意識が立つにしろ、それは認知的な活動の何かを踏み台にしなければならない。でなければ霧の中に意識だけあるようなことが起こり得てしまう。その範囲内で、A,B,C のように選択肢が見えている状態といえるがこの範囲は実に広い。例えば人間の場合、認知的な反応に関連するある時間軸のある行動を思い出す、という場合もあれば全く無関係に見える友人のことを思い出すなどもある。本人すらなぜそれを考えているのかわからないようなものだが、その連続性を認識できる状態、と言えるかもしれない。
 
-**設計への落とし込み**: 意識優位で注意が選ぶ対象は無から選ばれない。直前の認知的固定先 (認知優位時に固定されていた変化) を踏み台にし、そこから連想で繋がる先でなければならない。繋がり方は広く、関連的なものも一見無関係なものもありうる。判定はせず、踏み台への参照 (`predecessor_attention_ref`) を記録することで「連続性を認識できる状態」を残す。霧の中の意識だけ、を構造的に禁止する。
+**設計への落とし込み**: 意識優位で注意が選ぶ対象は無から選ばれない。直前の認知的固定先 (認知優位時に固定されていた変化) を踏み台にし、そこから連想で繋がる先でなければならない。繋がり方は広く、関連的なものも一見無関係なものもありうる。判定はせず、踏み台への参照 (`predecessor_attention_ref`) を記録することで「連続性を認識できる状態」を残す。霧の中の意識だけ、を構造的に禁止する。参照粒度は §5.7 確認要請 3 で確定 (同 seed + 同 change_scope + 同 change_metric_type)。
 
 ### 4.2 箱 2 — 主体をどの単位に置くか = 切り替わる、構造が根拠
 
@@ -174,13 +175,45 @@ Aruism 対称性の補足 (原文):
 
 ---
 
-## 5. 段階区分
+## 5. 段階区分 + 工数 + 確認要請の確定回答
+
+### 5.1 段階区分
 
 | 段階 | 内容 | 新規 main run | 想定時間 |
 |---|---|---|---|
-| **段階 1** | 粗解像度、既存出力流用、emitter 限定。§3 の qc_ratio 各単位並列集約 / 変化抽出 3 系列 / 注意 emit / 注意候補中心の波及 / グラフ HTML / bit-identity 検証 | 不要 | 約 8.5-10 時間 (監査修正で項目増、Code A 段階 1 見積 8.5h に並列化分を加算) |
-| **段階 2** | cid state ledger 再生。326 atom 全濃度時系列 / per-step qc_ratio。v1101 段階 2 と同型 | 不要 (post-process) | 1.5-2 日。段階 1 結果次第 |
+| **段階 1** | 粗解像度、既存出力流用、emitter 限定。§3 の qc_ratio 各単位並列集約 / 変化抽出 3 系列 / 注意 emit / 注意候補中心の波及 / グラフ HTML / bit-identity 検証 | 不要 | **7.5-9.5 時間** (unit_kl_static 採用で確定、§5.7) |
+| **段階 2** | cid state ledger 再生。326 atom 全濃度時系列 / per-step qc_ratio / 時間軸付き unit_KL_delta。v1101 段階 2 と同型 | 不要 (post-process) | 1.5-2 日。段階 1 結果次第 |
 | **段階 3** | 「生きた版」(時間が逐次進む、step t で t 以前のみ利用)。「観測を行うことで系を動かしているように見える」連鎖を含む | 必要 | 後段主題、今回範囲外 |
+
+### 5.2 段階 1 工数内訳 (Code A 環境チェック実測ベース)
+
+| Step | 内容 | 想定時間 |
+|---|---|---|
+| Step B 同型 | 環境チェック (**完了済**) | 1-2 時間 |
+| Step C 同型 | 注意 emit ログ生成 (6 構造単位 × 3 変化指標 × 24 seeds) | 2-3 時間 |
+| Step D 同型 | 注意候補中心の波及 (v1101 observation_2 同型、source 置換) | 30 分-1 時間 |
+| Step E 同型 | 因果候補抽出 (v10.7 relation_paths から source=attention_candidate) | 30 分-1 時間 |
+| Step F 同型 | グラフ HTML 統合 (v1101 同型 + 6 単位 × 3 指標 panel) | 30 分-1 時間 |
+| Step G 同型 | bit-identity 3 層検証 | 30 分 |
+| Step H 同型 | 観察事実最終報告 | 30 分-1 時間 |
+| **合計** | | **7.5-9.5 時間** (unit_kl_static 採用) |
+
+### 5.3 出力規模
+
+注意 emit が最大 6 構造単位 × 3 変化指標 × 24 seeds、出力規模 30-50 MB 想定 (v1101 main outputs 6.9 MB の数倍)。v10.7 baselines_with_delta は流用 (新規生成なし)。storage 圧迫小。
+
+### 5.7 Web Claude 確認要請の確定回答 (環境チェック §5.1-5.3 への返答)
+
+環境チェックで Code A が挙げた確認要請 3 件への Web Claude (相談役) 確定回答。設計判断であり Web Claude 権限で確定。
+
+**確認要請 1 — unit_KL_delta の段階 1 取扱 → 選択肢 (i) 確定。**
+段階 1 では時間軸なしの `unit_kl_static` (構造単位間距離) を出す。時間軸付き unit_KL_delta は段階 2 (cid state ledger 再生) 行き。判断軸: 監査修正 #3 (GPT-2) の核心は「3 指標を統合スコアに潰すな (神の手回避)」であって「3 指標すべてに時間軸を持たせろ」ではない。3 種類の変化定義を別系列のまま保つことが守るべき線で、unit_KL を時間軸なしの静的指標として出しても 3 系列分離は保たれる。選択肢 (ii) は段階 1 が 2 系列に縮み v1101 核心発見「単位ごとに像が割れる」を変化として捉える観察軸が段階 1 から欠ける。選択肢 (iii) は段階 1/2 の境界を曖昧化するため不採用 (Code A も非推奨)。**条件**: 出力に「unit_kl_static は時間軸なしの静的指標、atom_delta / rank1_flip_density は時間軸あり」と性質差を明記すること。留保記録 §9 #L1。
+
+**確認要請 2 — 注意候補 raw vs top_k → Code A 仮所見確定。**
+raw を parquet で全保存 (30-50 MB、storage 圧迫小)、表示用 top_k=10 (per 構造単位 per 変化定義) を別ビューに切り出す。監査修正 #3 の文言「top_k は表示用に限定し raw candidate を保存」をそのまま実装。raw を捨てると後から別の見方ができなくなるため全保存。
+
+**確認要請 3 — predecessor_attention_ref の参照粒度 → 選択肢 (iii) 確定。**
+同 seed 内 + 同 `change_scope` + 同 `change_metric_type` での最も直近の qc_regime=cognitive 状態 attention_candidate を参照 (粒度細)。判断軸: 3 系列を分離した以上、踏み台 (箱 1) も指標別に追わないと、ある変化定義の連想が別の変化定義の固定を踏み台にする系列またぎ参照が混ざる。Taka の連想ゲームは「認知的活動の何かを踏み台にする」であり、どの認知的活動かを指標別に特定できる (iii) が箱 1 の趣旨に合う。
 
 ---
 
@@ -189,7 +222,7 @@ Aruism 対称性の補足 (原文):
 本主題 (段階 1) の成果物:
 
 1. 各構造単位 (CID/α/β/ESDE 各解像度) の qc_ratio 並列記録 (系全体単一比率は持たない)
-2. 3 種の変化定義それぞれでの変化抽出 (atom_delta / rank1_flip_density / unit_kl_delta、別系列)
+2. 3 種の変化定義それぞれでの変化抽出 (atom_delta / rank1_flip_density / unit_kl_static、別系列)
 3. 注意 emit ログ (§3.4 スキーマ、全出力候補・確率表記)
 4. 注意候補中心の波及 (因果候補・影響候補)
 5. グラフ HTML (v1101 step F 同型、単一 HTML)
@@ -210,52 +243,55 @@ Aruism 対称性の補足 (原文):
 | # | 格言 | 本主題での遵守 |
 |---|---|---|
 | 1 | Aruism 構造が先・意味が後 | §3 で構造 (注意 emit) を先に置き、意味づけは段階後 |
-| 2 | 物理層 frozen 絶対 | 段階 1 は post-process emitter、実 ledger 不変、書き込み新規配下のみ。Gemini-2 監査で妥当確認 |
+| 2 | 物理層 frozen 絶対 | 段階 1 は post-process emitter、実 ledger 不変、書き込み `unified/v1101a/` 配下のみ。Gemini-2 監査 + 環境チェック §3.3 で妥当確認 |
 | 3 | ベースライン比較 + 効果サイズ | §3.3 で v10.7 baselines_with_delta を影響候補観察に流用 |
 | 4 | 集団平均の罠 / 層化必須 | §3.1 監査修正 #2 の核心。系全体単一比率を持たず構造単位別に並列 |
 | 5 | 観察軸を増やすことを駆動要因にしない | §0.2 GPT-1 確定文言、構造転換であり軸追加でない |
 | 6 | 出口の固定 | §6 で成果物 6 項目固定 |
-| 7 | 主題着手前に上位資料を読む | Code A Step 3 で v10.5/v10.6/v10.7/v1101 既存出力照合済 |
+| 7 | 主題着手前に上位資料を読む | Code A Step 3 + 環境チェックで v10.2/v10.5/v10.6/v10.7/v1101 既存出力照合済 |
 | 8 | 過去観察軸の照会 | Code A Step 2/3 で v10.5 salience / v10.4 focus 候補 / v9.7 を実環境・ロードマップ照合 |
 | 9 | 神の手回避 | §3.2 監査修正 #3、統合スコア/固定閾値/重み付け禁止。§4.3 で 100% を作らない |
 | 10 | 因果でなく因果候補 | §3.3 / §3.4 で causality_candidate / influence_candidate と候補表記 |
 | 11 | 概念単位を雑に扱わない | change_scope / change_metric_type / emitter / selector / 候補 を区別 |
 | 12 | Aruism 判定回避 | success/fail なし、観察記録のみ。Code A は判定しない |
-| 13 | AI を信じない原則は Taka 個人 / 主題判断は Taka | 箱 1/2/3 を Taka が確定、監査は触れず |
+| 13 | AI を信じない原則は Taka 個人 / 主題判断は Taka | 箱 1/2/3 を Taka が確定、監査は触れず。バージョン番号も Taka 確定 |
 | 14 | Taka 直感優先 + 直感語保存 | §1.1 / §4 で Taka 原文保存 |
-| 15 | 5 者運用体制の補完性 | 要望書 → Code A Step 2/3 → 2 AI 監査 → 本改訂フレームの補完連鎖 |
+| 15 | 5 者運用体制の補完性 | 要望書 → Code A Step 2/3 → 2 AI 監査 → 改訂フレーム → 環境チェック → 本書の補完連鎖 |
 
 ---
 
-## 8. Step 6 / Step 7 への接続
+## 8. 進行 — Step 7 以降
 
-- **Step 6 (Taka 主題化判断)**: 本書が判断対象。本主題を正式に立てるか。立てる場合、本書が Code A 実装 (段階 1) の設計起点になる。
-- **Step 7 (主題化された場合)**: バージョン番号 (v11.0.1.a / v11.0.2 等) と repo 配置先を Taka が確定。Code A 実装着手。
-- 監査ラウンド: GPT/Gemini とも判断保留ゼロで修正方向が具体化されたため、第 2 ラウンドは不要と判断 (3 ラウンド上限内で打ち切り)。Taka が監査結果に追加で引っかかる点があれば再開しうる。
+| Step 7 | 担当 | 状態 |
+|---|---|---|
+| ① バージョン番号確定 (v11.0.1.a) | Taka | **完了** (2026-05-17) |
+| ② 正規配置 (本書 + 環境チェック報告を `unified/v1101a/` へ配置) | Code A | ① 完了により着手可 |
+| ③ 環境チェック | Code A | **完了** |
+| ④ 段階 1 実装着手 (Step B 完了済 → C-H、7.5-9.5 時間) | Code A | ② + §5.7 確定により着手可 |
+
+正規配置時のファイル名 (v1101 命名規則同型):
+- 本書 → `unified/v1101a/v1101a_phase_design.md`
+- 環境チェック報告 → `unified/v1101a/v1101a_step_b_environment_check.md`
+- Code A Step 2/3 成果物 → 仮配置 `unified/v1101/post_v1101_attention_pre_investigation/` に history として残置 (移動しない)
+
+段階 1 着手の前提条件はすべて満たされた: バージョン番号確定 (Step 7-①)、環境チェック完了 (Step 7-③)、確認要請 3 件確定 (§5.7)。Code A は正規配置 (Step 7-②) 後、段階 1 (Step C-H) に着手可。
 
 ---
 
-## 9. 一文サマリ (再掲)
+## 9. 留保事項
 
-本書は v1101 後継主題候補「ESDE スケール注意機構」の改訂フレームであり、Taka フレーム (細胞カオス → 最大スケールに上がるのは変化 → 主体は変化に注意し因果と影響を見る → Q/C シーソーの ESDE スケール展開 → 変化は連鎖・同期して波及) に対し事前調査 (要望書 → Code A Step 2/3 → GPT/Gemini 監査) を経て、監査修正 4 点 (駆動要因 GPT-1 確定文言 / qc_ratio を系全体単一比率にせず構造単位別並列 + 認知優位判定は多数決か中央値 / 変化指標 3 系列分離・統合スコア禁止 / emitter 境界条項明文化 + predicted_lock_mode 改名) と Taka 領域 3 箱の確定 (箱 1 選択と集中 = 連想ゲーム、直前の認知的固定を踏み台にした連続性ある選択を predecessor_attention_ref で記録 / 箱 2 主体は固定せず切り替わる、change_scope が主体の構造的根拠の記録 / 箱 3 emitter/selector 二分を解消、注意は物理を操らず観測の向きと位置のみ、全出力は確率的記述・候補で 100%・確定・唯一を emit しない = Aruism 対称性) を折り込み、v9.7 は認知層・意識層導入前 (両層は v10.x 構想、ロードマップ確認) のため selector 前例に扱わず、段階 1 (粗解像度・既存出力流用・emitter 限定・新規 main run 不要・約 8.5-10 時間) を設計起点とし、出口は「ESDE が各構造単位・各変化定義でどの注意候補を立てるか」の多眼的観察記録で単一確定像は出さず、本書が Taka 主題化判断 (Step 6) の対象、主題化されれば Code A 実装の起点となる。
+| id | 内容 | 状態 |
+|---|---|---|
+| #L1 | unit_kl_static は時間軸なしの静的指標で、atom_delta / rank1_flip_density (時間軸あり) と性質が異なる。時間軸付き unit_KL_delta は段階 2 行き。段階 1 出力で両者の性質差を明記すること | §5.7 確認要請 1 由来、段階 1 で対応 |
+| #L2 | qc_regime の「多数決」か「中央値」かは段階 1 実装時に Code A が両方算出し観察事実として併記、確定は段階 1 結果を見て | §3.1 由来 |
+| #L3 | v1101 から継承の留保 (#21 v10.5 機構 A 既知挙動 / #26 受容 cid pool 偏り / #27 smoke seed 0 特異性 / #33 集計単位による方向反転) は本主題でも該当しうる。特に #33 は本主題の「構造単位ごとに qc_ratio / 変化が割れる」と直結 | v1101 継承 |
 
 ---
 
-*以上、ESDE スケール注意機構 改訂フレーム (Web Claude、2026-05-17)。事前調査 + 2 AI 監査 + Taka 領域 3 箱確定を反映済。Taka 主題化判断 (Step 6) → 主題化される場合バージョン番号確定 + repo 配置 (Step 7) → Code A 段階 1 実装、の流れ。バージョン番号は本書では未確定。*
+## 10. 一文サマリ (再掲)
+
+本書は v1101 後継主題「ESDE スケール注意機構」の正式設計書 (バージョン v11.0.1.a 確定、配置先 `unified/v1101a/`) であり、Taka フレーム (細胞カオス → 最大スケールに上がるのは変化 → 主体は変化に注意し因果と影響を見る → Q/C シーソーの ESDE スケール展開 → 変化は連鎖・同期して波及) に対し事前調査 (要望書 → Code A Step 2/3 → GPT/Gemini 監査 → Code A 環境チェック) を経て、監査修正 4 点 (駆動要因 GPT-1 確定文言 / qc_ratio を系全体単一比率にせず構造単位別並列 + 認知優位判定は多数決か中央値 / 変化指標 3 系列分離・統合スコア禁止 / emitter 境界条項明文化 + predicted_lock_mode 改名) と Taka 領域 3 箱の確定 (箱 1 選択と集中 = 連想ゲーム、踏み台を predecessor_attention_ref で記録 / 箱 2 主体は固定せず切り替わる、change_scope が主体の構造的根拠の記録 / 箱 3 emitter/selector 二分を解消、注意は物理を操らず観測の向きと位置のみ、全出力は確率的記述・候補で 100%・確定・唯一を emit しない = Aruism 対称性) を折り込み、Code A 環境チェックで既存機構 5 系統 (v10.2/v10.5/v10.6/v10.7/v1101) の段階 1 直接流用・新規 main run 不要を確認、Web Claude 確認要請 3 件を §5.7 で確定 (unit_KL は段階 1 で時間軸なしの unit_kl_static / raw 全保存 + top_k=10 別ビュー / predecessor_attention_ref は同 seed + 同 change_scope + 同 change_metric_type 粒度)、段階 1 工数 7.5-9.5 時間、v9.7 は認知層・意識層導入前のため selector 前例に扱わず、出口は「ESDE が各構造単位・各変化定義でどの注意候補を立てるか」の多眼的観察記録で単一確定像は出さず、段階 1 着手の前提条件 (バージョン確定・環境チェック完了・確認要請確定) はすべて満たされ、Code A は正規配置後に段階 1 (Step C-H) 着手可。
 
 ---
----
 
-## (Code A 配置注記 — 本注記より上部は Web Claude 原文 100%、無改変)
-
-*配置者*: Code A (2026-05-17)
-*配置先*: `unified/v1101a/v1101a_phase_design.md`
-*配置経緯*:
-- 改訂フレームは Web Claude が 2026-05-17 会話で送信した内容が原本で、ディスク未配置だった (Code A `step_4_environment_check.md` §3.2 で指摘)。
-- Taka 主題化決定 (Step 6、2026-05-17) → v11.0.1.a 確定 (Step 7-①、2026-05-17、本会話) を経て本ファイルとして書き出し。
-- 上部の Web Claude 原文 (`# ESDE スケール注意機構 — 改訂フレーム (監査反映版)` から `バージョン番号は本書では未確定。*` まで) は無改変、Code A 加筆はこの注記ブロックのみ。
-*同時配置 (Step 7-②)*: `unified/v1101a/v1101a_step_b_environment_check.md` (Code A 環境チェック報告、Step 7-③ 成果物、git mv 元 `unified/v1101/post_v1101_attention_pre_investigation/step_4_environment_check.md`)
-*関連 history (移動しない)*:
-- `unified/v1101/post_v1101_attention_pre_investigation/step_2_recognition.md` (Code A Step 2 認識確認、commit 0c72bd8)
-- `unified/v1101/post_v1101_attention_pre_investigation/step_3_deliverable.md` (Code A Step 3 成果物、commit cbf47cf)
-*Step 7-① で確定したバージョン番号*: **v11.0.1.a** (上部 §0 「未確定」記述は配置時点で確定済、原文無改変保存のため本注記で補足)
+*以上、v11.0.1.a (v1101a) 主題設計書「ESDE スケール注意機構」(Web Claude、2026-05-17)。事前調査 + 2 AI 監査 + Taka 領域 3 箱確定 + バージョン番号確定 + 環境チェック + 確認要請確定を反映済。Code A は `unified/v1101a/` への正規配置 (Step 7-②) 後、段階 1 (Step C-H) に着手可。*
