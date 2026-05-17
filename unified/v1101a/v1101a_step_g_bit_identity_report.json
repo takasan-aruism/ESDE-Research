@@ -1,0 +1,144 @@
+{
+  "version": "v11.0.1.a (v1101a) Step G",
+  "timestamp": "2026-05-17T17:51:39Z",
+  "note_layer_a": "Step C main 24 seeds は 16 分かかるため smoke seed 0 で 代用、本主題 post-process deterministic",
+  "layer_a": {
+    "parquet_hash_match": {
+      "attention_emit_seed0.parquet": true,
+      "attention_propagation_seed0.parquet": true,
+      "attention_causality_seed0.parquet": true
+    },
+    "html_structural": {
+      "main_plotly_graph_div_count_match": true,
+      "main_Plotly_newPlot_count_match": true,
+      "topk_plotly_graph_div_count_match": true,
+      "topk_Plotly_newPlot_count_match": true,
+      "main_size_pre_bytes": 17555,
+      "main_size_post_bytes": 17555,
+      "main_size_diff_bytes": 0,
+      "topk_size_pre_bytes": 21984,
+      "topk_size_post_bytes": 21984,
+      "topk_size_diff_bytes": 0,
+      "note": "HTML byte-identity NOT guaranteed (plotly UUID div IDs random); structural identity verified"
+    },
+    "rerun_times_sec": {
+      "v1101a_step_c_attention_emit.py": 29.31,
+      "v1101a_step_d_attention_propagation.py": 0.36,
+      "v1101a_step_e_attention_causality.py": 0.74,
+      "v1101a_step_f_graph_html.py": 4.16
+    },
+    "all_parquet_match": true
+  },
+  "layer_b": {
+    "v106_main": {
+      "n_files_pre": 731,
+      "n_files_post": 731,
+      "n_added": 0,
+      "n_removed": 0,
+      "n_modified": 0,
+      "added_samples": [],
+      "removed_samples": [],
+      "modified_samples": [],
+      "pass": true
+    },
+    "v107_main": {
+      "n_files_pre": 222,
+      "n_files_post": 222,
+      "n_added": 0,
+      "n_removed": 0,
+      "n_modified": 0,
+      "added_samples": [],
+      "removed_samples": [],
+      "modified_samples": [],
+      "pass": true
+    },
+    "v105_integration": {
+      "n_files_pre": 144,
+      "n_files_post": 144,
+      "n_added": 0,
+      "n_removed": 0,
+      "n_modified": 0,
+      "added_samples": [],
+      "removed_samples": [],
+      "modified_samples": [],
+      "pass": true
+    },
+    "all_pass": true
+  },
+  "layer_c": {
+    "n_write_calls": 8,
+    "all_structurally_under_v1101a": true,
+    "allowed_tokens": [
+      "V1101A_OUT",
+      "V1101A_MAIN",
+      "V1101A_SMOKE",
+      "V1101A_DIR",
+      "OUT_MAIN",
+      "OUT_SMOKE",
+      "out_dir",
+      "src_dir",
+      "out_main",
+      "out_topk",
+      "out_path"
+    ],
+    "findings": [
+      {
+        "script": "v1101a_step_c_attention_emit.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "out_path",
+        "structurally_under_v1101a": true
+      },
+      {
+        "script": "v1101a_step_c_attention_emit.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "out_path",
+        "structurally_under_v1101a": true
+      },
+      {
+        "script": "v1101a_step_d_attention_propagation.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "out_path",
+        "structurally_under_v1101a": true
+      },
+      {
+        "script": "v1101a_step_d_attention_propagation.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "out_path",
+        "structurally_under_v1101a": true
+      },
+      {
+        "script": "v1101a_step_e_attention_causality.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "out_path",
+        "structurally_under_v1101a": true
+      },
+      {
+        "script": "v1101a_step_e_attention_causality.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "out_path",
+        "structurally_under_v1101a": true
+      },
+      {
+        "script": "v1101a_step_f_graph_html.py",
+        "method": "write_html",
+        "position": "arg",
+        "captured": "out_main",
+        "structurally_under_v1101a": true
+      },
+      {
+        "script": "v1101a_step_f_graph_html.py",
+        "method": "write_html",
+        "position": "arg",
+        "captured": "out_topk",
+        "structurally_under_v1101a": true
+      }
+    ]
+  },
+  "all_layers_pass": true
+}
