@@ -18,20 +18,21 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
 ## ⚠️ 警告
 
 - これは**要約**であり原本ではない。設計の詳細や個別実験の数値が必要な場合は必ず原本 (`docs/ESDE_*_Report.md` および `docs/概念理解.md`) を参照すること。
-- **要約の最新時点は v10.12 完了 (2026-05-11)、Developmental Phase 1.5 第七試行完了**。06_developmental_summary、09_audit_principles、ESDE_Developmental_Report は v10.12 対応済み。07_concept_core、08_esde_system_structure は v10.9 まで本格対応、v10.10-v10.12 は §末追記。05_primitive_summary は Primitive フェイズで凍結 (v9.x 系列、参照用)。01-04 は v9.9 時点のまま (古い表記、用語対応表で確認)。
-- **Developmental フェイズのディレクトリ**: `developmental/v10X/`。
+- **要約の最新時点は v11.0.1.a 完了 (2026-05-18)、Unified Phase 第三主題 (ESDE スケール注意機構) 段階 1 完了**。07_unified_summary は v10.13.a + v1100/v1101/v1101a を網羅 (Unified Phase の正式要約)。06_developmental_summary、10_audit_principles、ESDE_Developmental_Report は v10.12 対応済み。08_concept_core、09_esde_system_structure は v10.9 まで本格対応、v10.10-v10.12 は §末追記。05_primitive_summary は Primitive フェイズで凍結 (v9.x 系列、参照用)。01-04 は v9.9 時点のまま (古い表記、用語対応表で確認)。
+- **Developmental フェイズのディレクトリ**: `developmental/v10X/`。**Unified フェイズのディレクトリ**: `unified/v11XX/`。
 - **ファイル番号体系の変更 (2026-04-28)**: Developmental フェイズ追加に伴い、06 (旧 concept_core) → 07、07 (旧 system_structure) → 08、08 (旧 audit_principles) → 09 にずらし、新規 06 を Developmental Summary とした。
+- **ファイル番号体系の変更 (2026-05-18)**: Unified フェイズ独立に伴い、07 (旧 concept_core) → 08、08 (旧 system_structure) → 09、09 (旧 audit_principles) → 10、10 (旧 language_summary) → 11 にずらし、新規 07 を Unified Phase Summary とした。06/06b/06c は Developmental Phase 要約として据え置き・凍結。Unified Phase の新主題は 07 に追記して一本化する (06d/06e の枝番継続はしない)。
 - **推測補完していない**。原本にあることだけ抽出している。「書いてないこと」を埋めようとしないこと。
 - 概念理解.md からの引用は **必ず引用形式 (>) で残してある**。Taka の発言を勝手に言い換えないこと。
 
 ---
 
-## 推奨読書順序 (v10.6 時点)
+## 推奨読書順序 (v11.0.1.a 時点)
 
 ```
 00_index.md (このファイル)
   ↓ ★末尾の「用語対応表」を必ず最初に読む
-07_concept_core.md      ← 哲学コア + Developmental 概念 (v10.6 対応)
+08_concept_core.md      ← 哲学コア + Developmental 概念 (旧 07)
   ↓
 01_genesis_summary.md   ← 物理層 (床) の確立 (古い表記あり)
   ↓
@@ -44,18 +45,22 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
 05_primitive_summary.md ← Primitive phase 全体 (v9.0-v9.18、Primitive 凍結)
 05c_primitive_summary_v913_addendum.md ← v9.13 追補
   ↓
-06_developmental_summary.md ← Developmental phase v10.0-v10.9 (Taka update 2026-05-11、v10.9 完了時点まで網羅)
-06b_developmental_phase15_summary.md ← Phase 1.5 (v10.4-v10.12、v10.10-v10.12 新情報、v10.12 Step A 完了で凍結)
-06c_developmental_v1013_v1101_summary.md ← ★ v10.13.a + Unified Phase v1100/v1101 (新 Web Claude 引き継ぎ用、現主題 v1101 Atom 隆盛観察 Code A Step A-H 完了 2026-05-17、最新)
+06_developmental_summary.md ← Developmental phase v10.0-v10.9 (凍結)
+06b_developmental_phase15_summary.md ← Phase 1.5 (v10.4-v10.12、凍結)
+06c_developmental_v1013_v1101_summary.md ← v10.13.a + v1100/v1101 (07 の母体、Developmental 完結で凍結)
   ↓
-08_esde_system_structure.md ← 現行システム構造 (v10.6 対応、4 層 + α/β Integration + Salience + Leakage + Atom alignment)
+07_unified_summary.md ← ★ Unified Phase 正式要約 (v10.13.a + v1100/v1101/v1101a、最新、新主題はここに追記)
   ↓
-09_audit_principles.md ← 監査原則 (v10.6 対応、α/β 階層分離、5 者運用、ベースライン比較必須)
+09_esde_system_structure.md ← 現行システム構造 (旧 08、v10.6 対応、4 層 + α/β Integration + Salience + Leakage + Atom alignment)
+  ↓
+10_audit_principles.md ← 監査原則 (旧 09、v10.6 対応、α/β 階層分離、5 者運用、ベースライン比較必須)
+  ↓
+11_esde_language_summary.md ← ESDE Language 系要約 (旧 10)
 ```
 
-**急ぎなら**: 本ファイル末尾の **用語対応表** + `06_developmental_summary.md` + `08_esde_system_structure.md` + `07_concept_core.md` の Developmental 申し送り の組み合わせで現状作業 (v10.9 完了時点) に最低限着手できる。**ただし `04_cognition_summary.md` の「却下された方針」は時間を作って必ず読むこと**。
+**急ぎなら**: 本ファイル末尾の **用語対応表** + `07_unified_summary.md` + `09_esde_system_structure.md` + `08_concept_core.md` の Developmental 申し送り の組み合わせで現状作業 (v11.0.1.a 時点) に最低限着手できる。**ただし `04_cognition_summary.md` の「却下された方針」は時間を作って必ず読むこと**。
 
-**現主題 (v11.0.1 = v1101、2026-05-17 時点)**: 新 Web Claude 引き継ぎは `unified/v1101/v1101_web_claude_handoff.md` (Code A 作成、2026-05-17) を最初に読むこと。Code A Step A-H 完了済 (観察 1/2/3 + 核心発見 = 観察単位による dominant atom 反転 + bit-identity 3 層全 PASS)、Web Claude Phase Result (Step J) 待ち。本書 06c_developmental_v1013_v1101_summary.md で v10.13.a + Unified Phase v1100/v1101 を網羅。
+**現主題 (v11.0.1.a = v1101a、2026-05-18 時点)**: 「ESDE スケール注意機構」段階 1 完了。`07_unified_summary.md` §5 で v1101a 全容を網羅。Code A Step B-H 完了 (注意 emit ログ 172 万 records + 核心観察 = 意識優位時の波及が認知優位の 1.54-1.78 倍 + bit-identity 3 層全 PASS)、Web Claude Phase Result (`unified/v1101a/v1101a_phase_result.md`) 完成。段階 2 (cid state ledger 再生) の要否は 2 AI 意見聴取のうえ Taka 判断する段階。新 Web Claude 引き継ぎは `07_unified_summary.md` を最初に読むこと。
 
 ---
 
@@ -63,15 +68,20 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
 
 | # | ファイル | 原本 | 内容 | 更新状況 |
 |---|---|---|---|---|
-| 00 | `00_index.md` | (このファイル) | ナビゲーション + 用語対応表 | **v9.18 対応** |
+| 00 | `00_index.md` | (このファイル) | ナビゲーション + 用語対応表 | **v11.0.1.a 対応** |
 | 01 | `01_genesis_summary.md` | ESDE_Genesis_Report.md (638 行) | 物理層の確立、5 Forces、観察者 k\*=4、N=10000 まで scale 不変 | v9.9 時点 (古い表記あり) |
 | 02 | `02_ecology_summary.md` | ESDE_Ecology_Report.md (242 行) | observer 複数性、global は lossy compression、long_drift がデフォルト | v9.9 時点 |
 | 03 | `03_autonomy_summary.md` | ESDE_Autonomy_Report.md (749 行) | label = 魂 (frozenset)、territory = 場、5-node 転換点、Lifecycle Instrumentation | v9.9 時点 |
 | 04 | `04_cognition_summary.md` | ESDE_Cognition_Report_Final.md (1271 行) | **★最重要・最複雑**。v3-v7 の試行錯誤、「物理層は床」結論、virtual layer の確立 | v9.9 時点 |
-| 05 | `05_primitive_summary.md` | ESDE_Primitive_Report.md | Primitive phase 全体 (v9.0-v9.18): 4 層構造、cid、Cognitive Capture、v9.13 persistence-based birth、v9.14 Paired Audit + E3 = cid 間共鳴、v9.15 CidSelfBuffer + event 駆動 Fetch + サイコロの比喩、v9.16 観察サンプリング + age_factor + 説明可能性仮説、v9.17 他者読み + 接触体記録 + 摂食行動、v9.18 A+C 統合 + 意識の原資モデル + 間違いの価値の反転 | **v9.18 対応** |
-| 06 | `06_concept_core.md` | 概念理解.md | Aruism、4 層構造、絶対ルール、Taka 発言、戦国大名モデル、v9.13 記憶の所在、v9.14 E3 = cid 間共鳴、v9.15 A/B 分離 + 研究者主観の封印、v9.16 サンプリング + 時間的認識 + Constitution 接続、v9.17 摂食行動 + 意識の原資 + アリズム原理再確認、v9.18 意識の原資モデル + 統合の真の意味 + 間違いの価値の反転 | **v9.18 対応** |
-| 07 | `07_esde_system_structure.md` | (要約のみ) | ESDE 現行システム構造、4 層、Layer B (Shadow Ledger)、Layer 外 CidSelfBuffer (v9.15)、v9.16 段階 3 サンプリング機構、v9.17 CidView + InteractionLog + 他者読み機構、v9.18 V_unified + theta_distance + cumulative_cognitive_gain | **v9.18 対応** |
-| 08 | `08_audit_principles.md` | GPT 監査運用指針 v1 (GPT 作成、2026-04-23) | 監査の基本姿勢、読者別方針、比喩表現への対応、Claude の自己規律、3 役分離での役割定義、v9.18 で初本格適用 | **v9.18 で初本格運用** |
+| 05 | `05_primitive_summary.md` | ESDE_Primitive_Report.md | Primitive phase 全体 (v9.0-v9.18) | **v9.18 対応** |
+| 06 | `06_developmental_summary.md` | ESDE_Developmental_Report.md | Developmental phase v10.0-v10.9 | **凍結** (Developmental Phase 完結) |
+| 06b | `06b_developmental_phase15_summary.md` | (要約のみ) | Developmental Phase 1.5 (v10.4-v10.12) | **凍結** |
+| 06c | `06c_developmental_v1013_v1101_summary.md` | (要約のみ) | v10.13.a + Unified Phase v1100/v1101 (07 の母体) | **凍結** (07 に格上げ統合済) |
+| **07** | `07_unified_summary.md` | (要約のみ、06c を母体に格上げ) | **Unified Phase 正式要約 (v10.13.a + v1100/v1101/v1101a)。新主題はここに追記** | **v11.0.1.a 対応 (最新)** |
+| 08 | `08_concept_core.md` | 概念理解.md | Aruism、4 層構造、絶対ルール、Taka 発言、戦国大名モデル、v9.13-v10.12 各概念 (旧 07_concept_core) | v9.18 + v10.x §末追記 |
+| 09 | `09_esde_system_structure.md` | (要約のみ) | ESDE 現行システム構造、4 層 + α/β Integration + Salience + Leakage + Atom alignment (旧 08_esde_system_structure) | v10.6 対応 |
+| 10 | `10_audit_principles.md` | GPT 監査運用指針 v1 (2026-04-23) | 監査の基本姿勢、読者別方針、3 役分離、5 者運用、ベースライン比較必須 (旧 09_audit_principles) | v10.6 対応 |
+| 11 | `11_esde_language_summary.md` | (要約のみ、Code A 2026-05-13) | ESDE Language 系 (Atom/Synapse/Phase 7-10) 要約 (旧 10_esde_language_summary) | Language 系凍結時点 |
 
 ---
 
@@ -173,7 +183,7 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
 74. **摂食行動の比喩** (Taka 2026-04-23) — 片方向 E3 接触を摂食行動として読む。ESDE 内部に価値判断を持ち込まない、神の手を入れない設計が自発的に人間経験に対応した観察。
 75. **意識の原資仮説** (Taka 2026-04-23) — Q 消費 = 認知の増加 = 意識の原資。後付けの前提として置くことで新しい発見が生まれる (Taka 方法論)。
 76. **アリズム原理の再確認** (Taka 2026-04-23) — ない は ある の上に立つ存在の形式の一つ、本当のない は不可知。ESDE 内部で「他者がない」「接触がない」と観察されることも、一つの存在形式として記録可能。
-77. **GPT 監査運用指針 v1 導入** (2026-04-23) — 3 役分離の GPT 役割を精密化 = 切り分けと翻訳、制動ではない。Claude の資料作成時の自己規律としても機能。`08_audit_principles.md` に AI Summaries 形式で統合、原本は独立保存。
+77. **GPT 監査運用指針 v1 導入** (2026-04-23) — 3 役分離の GPT 役割を精密化 = 切り分けと翻訳、制動ではない。Claude の資料作成時の自己規律としても機能。`08_audit_principles.md` (現 `10_audit_principles.md`) に AI Summaries 形式で統合、原本は独立保存。
 78. **比喩ラベリング運用** (GPT 指針 §9) — 新しい Taka 比喩が出るたびに資料末尾に簡易記録。一覧表は作らず、資料ごと軽量に。Taka 向けは比喩保持、AI 向けは操作語化、Summary は併記方式。
 79. **v10.0 繰り上げは折衷案** — v9.17 完了時点では繰り上げず、次主題決定時に判断。Taka 哲学「構造が先、定義は後」との整合。
 
@@ -866,7 +876,7 @@ ESDE のバージョン進行も「phase」と呼ばれる:
 - [ ] **Layer B の片方向発火を bug 扱いしていないか** (v9.14 仕様、_node_to_cids retire 時不削除の帰結)
 - [ ] **E3 の spend 空振りを異常と扱っていないか** (Q=0 cid への発火は正常、全 E3 の 58%)
 - [ ] **摂食行動 / 意識の原資 / ない・ある を仕様語にしていないか** (Taka 比喩、比喩ラベリング運用で扱う)
-- [ ] **GPT 監査運用指針 v1 を確認したか** (08_audit_principles.md、資料作成時の自己規律にも使う)
+- [ ] **GPT 監査運用指針 v1 を確認したか** (10_audit_principles.md、資料作成時の自己規律にも使う)
 - [ ] **読者別の書き分けをしているか** (Taka 向け / AI 向け / Summary / 外部)
 - [ ] **Claude の意味を盛る癖への歯止めを効かせているか** (結論語を半歩弱める、推奨を前に出しすぎない)
 - [ ] **v9.18 の V_unified / theta_distance を Taka の「統合」と等値していないか** (層の混同、前者は物理層の同期、後者は認知+意識の協働)
@@ -901,7 +911,7 @@ ESDE のバージョン進行も「phase」と呼ばれる:
 新スレッドの AI が文書間の矛盾を見つけた場合:
 
 1. **本ファイルの用語対応表を確認**: 用語の対応で解消するか
-2. **`07_esde_system_structure.md` を確認**: これが現行の真実
+2. **`09_esde_system_structure.md` を確認**: これが現行の真実
 3. **`05_primitive_summary.md` の v9.14 セクション を確認**: v9.14 での前提変更を確認
 4. **解消しない場合**: Taka に質問する。**推測で実装に進まない**
 
@@ -915,7 +925,7 @@ ESDE のバージョン進行も「phase」と呼ばれる:
 
 **最優先 (必読、実装の判断基準)**
 - 本ファイル (00_index.md): ナビゲーション + 用語対応表
-- `07_esde_system_structure.md`: 現行システム構造 (v9.14 対応)
+- `09_esde_system_structure.md`: 現行システム構造 (v9.14 対応)
 - `05_primitive_summary.md`: Primitive phase 全体 (v9.14 対応)。特に **v9.14 セクション (Paired Audit、E3 = cid 間共鳴、上位層の足場)**、**v9.13 セクション (persistence-based birth、認知層方向性)**、**v9.12 セクション (Δ i.i.d.、phase+r 原因)** は必読
 
 **次優先 (文脈理解)**
@@ -1560,15 +1570,15 @@ v10_2_analysis_instruction_to_codea.md: Code A 解析依頼書
 
 ## 18.13 将来 Claude への申し送り (v10.x)
 
-- **「ESDE は生態系である」と断定したい衝動が出たら、07_concept_core.md D.13 を読む** — 立場の選択は研究者が行う
+- **「ESDE は生態系である」と断定したい衝動が出たら、08_concept_core.md D.13 を読む** — 立場の選択は研究者が行う
 - **「過剰評価を避けるための注意点を 4-6 行書きたい」衝動が出たら、ESDE_Developmental_Report.md §4.9 を読む** — Taka が「必要性が見えない」と評価した実例
-- **「集団平均で観察したい」衝動が出たら、07_concept_core.md D.11 を読む** — n_core 別の層化解析を基本とする
+- **「集団平均で観察したい」衝動が出たら、08_concept_core.md D.11 を読む** — n_core 別の層化解析を基本とする
 - **「進化的選択圧は実装されていない」と書きたい衝動が出たら、Taka 反論を読む** — 摂食競争は既に実装されている
-- **「主体性は CID 単位」と断定したい衝動が出たら、07_concept_core.md D.14 を読む** — CID 集合体の上位、長期射程
-- **「v10.x で全機能を実装したい」衝動が出たら、07_concept_core.md D.7 を読む** — 階層論的圧縮、各段階精緻化は v10.3 以降
-- **「動的均衡 = 進化終端」を急ぎたい衝動が出たら、07_concept_core.md D.8 を読む** — C 蓄積による自然フィルタが進化継続を可能にしている
+- **「主体性は CID 単位」と断定したい衝動が出たら、08_concept_core.md D.14 を読む** — CID 集合体の上位、長期射程
+- **「v10.x で全機能を実装したい」衝動が出たら、08_concept_core.md D.7 を読む** — 階層論的圧縮、各段階精緻化は v10.3 以降
+- **「動的均衡 = 進化終端」を急ぎたい衝動が出たら、08_concept_core.md D.8 を読む** — C 蓄積による自然フィルタが進化継続を可能にしている
 - **「v10.3 で何でもやりたい」衝動が出たら、Developmental Report §6.3 を読む** — 主題は三項共鳴に確定、主役候補 ~270 cid
-- **「ファイル番号を変えたい」衝動が出たら、本ファイル冒頭の番号体系メモを読む** — 06 が Developmental Summary、07/08/09 はリネーム済み
+- **「ファイル番号を変えたい」衝動が出たら、本ファイル冒頭の番号体系メモを読む** — 2 度繰り上げ済 (2026-04-28 Developmental / 2026-05-18 Unified)。現体系: 06 系 = Developmental (凍結)、07 = Unified Summary、08 concept / 09 structure / 10 audit / 11 language。Unified の新主題は 07 に追記し枝番を増やさない
 
 ---
 
@@ -1667,9 +1677,9 @@ esde_3ai_operations_manual.md (3 AI 共通運用、v10.11 整備)
 
 ## 18.17 将来 Claude への申し送り (v10.10-v10.12 追加)
 
-- **「条件研究の延長として観察軸を増やしたい」衝動が出たら、09_audit_principles.md §35 #10 + §36.3 を読む** — v10.10/v10.11/v10.12 第 4 版で繰り返された逸脱パターン
-- **「上位完了レポート §5 を読まずに新主題を組み立てたい」衝動が出たら、09_audit_principles.md §36.2 規律 42 候補を読む** — v10.11/v10.12 第 4 版で発生した規律 §35 #9 違反の特殊形
-- **「path_excess を一括で語りたい」衝動が出たら、09_audit_principles.md §36.7 を読む** — atom 関連 3 path と Layer 5 構造観察 integration_alpha/beta は別系統 (Taka 指摘 2026-05-11)
+- **「条件研究の延長として観察軸を増やしたい」衝動が出たら、10_audit_principles.md §35 #10 + §36.3 を読む** — v10.10/v10.11/v10.12 第 4 版で繰り返された逸脱パターン
+- **「上位完了レポート §5 を読まずに新主題を組み立てたい」衝動が出たら、10_audit_principles.md §36.2 規律 42 候補を読む** — v10.11/v10.12 第 4 版で発生した規律 §35 #9 違反の特殊形
+- **「path_excess を一括で語りたい」衝動が出たら、10_audit_principles.md §36.7 を読む** — atom 関連 3 path と Layer 5 構造観察 integration_alpha/beta は別系統 (Taka 指摘 2026-05-11)
 - **「pulse / window 観察粒度を新規提案したい」衝動が出たら、過去観察軸の照会を先に行う** — v10.6 step10_baseline / v10.7 オービス (immediate/short/medium) / v10.10 §4 で既に確立されている可能性
 - **「3 段階成功判定 (Full/Partial/Failure) を置きたい」衝動が出たら、v10.12 主題ドキュメント第 5 版 §6.3 を読む** — Aruism「予想と違えば再観察」整合の判定回避方式が v10.12 から運用開始
 - **「familiarity 閾値を厳密に選びたい」衝動が出たら、留保 #25 (v10.12) を読む** — top 25% vs top 50% の意味検証は v10.13 以降の別主題候補、v10.12 では γ 仮置き

@@ -1,7 +1,8 @@
-# ESDE システム構造 (v9.18 現行、Developmental フェイズ v10.x 開始)
+# 09 ESDE システム構造 (v9.18 現行、Developmental フェイズ v10.x 開始)
 
+*ファイル番号変更 (2026-05-18)*: Unified Phase 独立に伴い `08_esde_system_structure.md` → `09_esde_system_structure.md` に繰り上げ。新規 `07` は `07_unified_summary.md`。内容は変更なし。
 *作成*: v9.11 完了時点
-*更新*: 2026-04-17 (v9.13 完了、S≥0.20 撤去、persistence-based birth 反映)、2026-04-18 (v9.14 完了、Layer B Shadow Ledger 追加)、2026-04-20 (v9.15 完了、CidSelfBuffer 追加、A/B 分離、event 駆動 Fetch)、2026-04-21 (v9.16 完了、観察サンプリング機構 = age_factor 比例サンプリング追加、Constitution 接続)、2026-04-23 (v9.17 段階 4 完了、他者読み + 接触体記録、CidView + InteractionLog、摂食行動の発見、GPT 監査運用指針 v1 導入)、2026-04-24 (v9.18 段階 5 完了、A+C 統合 = cumulative_cognitive_gain + V_unified + theta_distance、per_step 計算、意識の原資モデルの明確化)、**2026-04-24 (Primitive フェイズ完結、Developmental フェイズ (v10.x) 開始、ディレクトリ `developmental/v10X/`)**
+*更新*: 2026-04-17 (v9.13 完了、S≥0.20 撤去、persistence-based birth 反映)、2026-04-18 (v9.14 完了、Layer B Shadow Ledger 追加)、2026-04-20 (v9.15 完了、CidSelfBuffer 追加、A/B 分離、event 駆動 Fetch)、2026-04-21 (v9.16 完了、観察サンプリング機構 = age_factor 比例サンプリング追加、Constitution 接続)、2026-04-23 (v9.17 段階 4 完了、他者読み + 接触体記録、CidView + InteractionLog、摂食行動の発見、GPT 監査運用指針 v1 導入)、2026-04-24 (v9.18 段階 5 完了、A+C 統合 = cumulative_cognitive_gain + V_unified + theta_distance、per_step 計算、意識の原資モデルの明確化)、**2026-04-24 (Primitive フェイズ完結、Developmental フェイズ (v10.x) 開始、ディレクトリ `developmental/v10X/`)**、2026-05-08 (v10.9 反映、§89 オービス + 4 種設計表)、2026-05-11 (v10.10-v10.12 反映、§90-§92)
 
 > v9.18 時点の **実際に動いているもの** だけを記述する。
 > 無効化された機能 (stress decay, compression, torque_factor, S≥0.20 hard threshold, Match Ratio 集約 v9.15 段階 1) は末尾に一覧のみ記載。
@@ -2803,3 +2804,139 @@ v10.7 / v10.8 の規律全て継承。
 - v10.10 主題候補: 条件適応型 atom 導入 (第一推奨) / high_fam_out 構造解明 / Atom 常駐アンカー / B 群試験 / QC_cost 本格評価
 
 具体的な v10.10 主題決定は別途議論。
+
+---
+
+## 90. v10.10 — Multi-gate × timing 観察設計 (Phase 1.5 第五試行)
+
+### 90.1 機構
+
+- 28 conditions = 9 種 gate × 3 timing (200/300/500) + v108_re (v10.8 比較対象)
+- 24 seeds 並列 main run 103.67 秒
+- bit-identity 全層 PASS (867 files MD5 不変)
+- storage 累計 25%
+
+### 90.2 n_core 別層化 (規律 §34 #37 起源)
+
+n_core_bin: bin_2 (76%、ペア) / bin_3_4 (12%、小 cluster) / bin_5+ (12%、中 cluster)
+
+### 90.3 §3.4 反応 type 分業 (v10.12 でも必須参照)
+
+- bin_2: pulse 軸大効果 (matched +4.295)
+- bin_5+: delta_C 軸大効果 (high_fam_out -0.653)
+
+### 90.4 formation_relation 軸 (v10.10 新規)
+
+- before (Integration 形成前)
+- after_formation_0_100 (形成直後)
+- after_formation_100plus (形成後 100 step 超)
+- no_alpha (α 形成しなかった cid)
+
+before で timing 効果 -0.090、after_100plus で 0.000 (完全消失)。
+
+---
+
+## 91. v10.11 — q_c_inherited within-cid observer (Phase 1.5 第六試行)
+
+### 91.1 機構
+
+- q_c_inherited event 起点の within-cid 観察 (T-50 / T+50 前後比較)
+- 12 cells (n_core_bin × β 累積 c_inherited 分位)
+- 24 seeds main run 7.65 秒
+
+### 91.2 観察結果 (全 12 cells で正値)
+
+| n_core_bin | Q1 | Q2 | Q3 | Q4 |
+|---|---:|---:|---:|---:|
+| bin_2 | +0.187 | +0.116 | +0.097 | +0.247 |
+| bin_3_4 | +0.467 | +0.206 | +0.497 | +0.276 |
+| bin_5+ | +0.356 | +0.314 | +0.368 | +0.377 |
+
+→ v10.5 機構 A (β に Q/C 100% 継承) の直接観察 (自明な再観察、規律 §35 #9 違反)
+
+### 91.3 v10.12 への含意
+
+「β member cid を概念取り込み対象から除外」を v10.12 cond1 として採用 (v10.5 機構 A の論理導出可能)。
+
+---
+
+## 92. v10.12 — Atom 取り込み prototype 機構 (Phase 1.5 第七試行)
+
+### 92.1 機構: 受容 cid 同定 (4 条件)
+
+```python
+def is_receptive_cid_v112(cid_record, target_step, esde_state):
+    # cond1: β member ではない (v10.11 §1.1 + v10.5 機構 A)
+    if cid_record.is_beta_member_at(target_step): return False
+    # cond2: lifespan ≥ 977 (v10.10 観察 2、Q2 threshold)
+    if cid_record.lifespan < 977: return False
+    # cond3: n_core ≥ 5 (v10.10 §3.4 = bin_5+)
+    if cid_record.n_core < 5: return False
+    # cond4: familiarity_max ≥ top_50_threshold (γ 仮置き)
+    if cid_record.familiarity_max < top_50_threshold: return False
+    return True
+```
+
+### 92.2 atom_introduction_event 発火 (単一構造)
+
+```python
+target_step = cid.t_birth + 200  # v10.9 案 b 継承
+for cid in receptive_pool:
+    for atom in ALL_ATOMS_25:
+        atom_introduction_event(cid_id=cid.id, atom=atom, step=target_step,
+            Q_delta=-1, C_delta=+1, condition_id="v112_atom_prototype")
+```
+
+### 92.3 v10.8 標準との比較 (副次、層 B 不変)
+
+- v112_atom_prototype: 4 条件適応 (cond4 緩め、420 cid × 25 atom = 10,500 events)
+- v108_standard: top_k 100 cid + 案 α 均等分散 (60,000 events、既存出力流用)
+
+### 92.4 波及プロファイル (Code A 追加調査含む 3 window)
+
+各 (seed, atom, target_cid, event) で:
+
+| metric | window 種類 | 算出範囲 |
+|---|---|---|
+| delta_C | immediate / short / medium | 1-10 / 10-100 / 100-1000 step |
+| delta_Q | 同上 | 同上 |
+| n_pulses | 同上 | 同上 |
+| path_excess (atom 関連 3) | 同上 | familiarity / attention_via_salience / temporal_coactivation |
+| path_excess (Layer 5 構造観察) | 同上 | integration_alpha (atom 主題とは別系統) |
+
+### 92.5 機構の規模
+
+| 項目 | 値 |
+|---|---|
+| 受容 cid pool | 420 (per seed 17.50) |
+| v112 events | 10,500 |
+| main run 時間 | 20.35 秒 |
+| 累計 storage | 94 MB / 6 GB (1.5%) |
+| bit-identity 層 B 不変 | v107-v111 約 1,500 files |
+
+### 92.6 観察事実 (5 cells 頑健 / 21 cells、Taka 過去経験 verified)
+
+詳細は ESDE_Developmental_Report §14.4 参照。
+
+| metric | window | paired_d | 方向 |
+|---|---|---|---|
+| delta_C | immediate | +0.54 | v112 > v108 |
+| delta_C | short | +0.41 | v112 > v108 |
+| n_pulses | immediate | -0.94 | v112 < v108 (逆方向) |
+| n_pulses | short | +1.36 | v112 > v108 |
+| n_pulses | medium | +1.31 | v112 > v108 |
+
+### 92.7 cond1/cond3 絞り込みによる構造的集中 (留保 #26)
+
+- n_core_bin: bin_5_plus 100% (cond3 構造的)
+- formation_relation: before 93.8% / no_alpha 6.2% (cond1 構造的)
+- 空セル (bin_2/3_4 + during/after_*): 記録のみ深追い禁止
+
+v10.13 以降で n_core 軸 / formation_relation 軸を観察対象とする主題候補。
+
+### 92.8 v10.13 以降の運用変更
+
+- マイナーバージョン a/b/c 付与
+- 過去観察軸の照会義務 (主題ドキュメント必須記載)
+- 資料運用ルール (Pull 型 / AI 向け資料 / Taka 整理原文保存 / 監査魔人化歯止め)
+- 規律 42 候補 (上位完了レポート §5 必読)

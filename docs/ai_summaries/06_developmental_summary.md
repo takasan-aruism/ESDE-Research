@@ -1,7 +1,7 @@
 # 06 Developmental Summary
 
 *作成*: 2026-04-28、Claude (相談役)
-*更新*: 2026-05-06 (v10.6 反映)
+*更新*: 2026-05-06 (v10.6 反映)、2026-05-08 (v10.9 反映)、2026-05-10 (v10.10/v10.11 反映)、2026-05-11 (v10.12 完了反映、Atom 取り込み prototype 主題完了)
 *対象*: ESDE Developmental フェイズ (v10.x 系列)
 *親資料*: ESDE_Developmental_Report.md (詳細版)
 *位置づけ*: AI summaries の 1 つ。Developmental フェイズの要約。Primitive Summary (05) と並列。
@@ -1227,4 +1227,210 @@ Developmental Summary は、v9.x Primitive フェイズで言語化された意�
 
 ---
 
-*以上、Developmental Summary (v10.0 - v10.9)。次の更新は v10.10 完了時。*
+---
+
+## 13. v10.10 (Phase 1.5 第五試行、2026-05-09 完了)
+
+### 13.1 主題と転換経緯
+
+当初主題: 条件適応型 atom 導入の単一勝負案 (v10.9 受信可能状態仮説の検証)。
+実際の進行: Code A 認識確認で母集団不足判明 (per atom×seed = 1.84) → Taka 判断で **Multi-gate × timing 二次元観察設計** に転換 → 28 conditions × 24 seeds main run (103.67 秒、bit-identity 全層 PASS、867 files MD5 不変) → Taka 指摘で n_core 層化追加 → 第一弾 5 軸 + 第二弾 4 タスク多軸層化解析。
+
+### 13.2 4 つの核心観察
+
+1. **Integration 形成タイミングが timing 軸の決定因子**: before_formation で -0.090、after_formation_100plus で 0.000 (完全消失)
+2. **寿命と n_core の相関する 2 軸交差効果**: Q4 × bin_5+ で timing -0.217 最大
+3. **atom category で 1 桁差**: BOD/COM/EXS +0.149〜+0.399 vs WLD/TIM +0.009〜+0.022
+4. **§3.4 反応 type 分業**: bin_2 (ペア、76%) は pulse 軸大効果 / bin_5+ (中 cluster、12%) は delta_C 軸大効果
+
+### 13.3 v10.9 ルールの最終位置づけ (GPT 第三回監査指針)
+
+v10.9 ルールは全体平均の真理ではなかったが、特定軸 (formation_relation=before_formation + bin_5+ + long timing) で再現。**v10.10 = v10.9 設計表の有効領域の露出** として位置づけ。観察状態 A/B/C 判定枠を超えた整理を採用。
+
+### 13.4 v10.10 で確立された規律 (2 件、v10.11 で §35 メタ規律 10 項目として明文化)
+
+- 規律 37 (§34): n_core 別層化解析必須 (集団平均の罠回避)
+- 規律 38: formation_relation を観察軸として含む
+
+### 13.5 留保事項 14 件継承 + 新規 11 件 (詳細は ESDE_Developmental_Report 参照)
+
+---
+
+## 14. v10.11 (Phase 1.5 第六試行、2026-05-10 完了、機構の確認試行に終わる)
+
+### 14.1 主題と結果
+
+主題: Integration 形成プロセス解析、q_c_inherited 起点 within-cid design による C 値飽和仮説検証 + v10.12 入力ルーティング条件抽出。
+
+技術的達成: 24 seeds × 12 cells main run 完了 (7.65 秒、bit-identity 層 A PASS、storage 5 MB)、達成条件 §0.2 (v10.12 入力ルーティング条件 1 本抽出) を形式達成 (「β member cid を概念取り込み対象から除外」)。
+
+### 14.2 Taka 指摘で発覚した構造的失敗
+
+Taka 整理 (2026-05-10):
+> 元々 C は高安定 IID ベースでは溢れかえるはずだしそれは実験済みだと思うけどね
+
+→ q_c_inherited 前後の delta_C 観察は v10.5 §7.4-§7.10 で既に確立された機構 A (β に Q/C 100% 継承) + 機構 C (Recorded からの漏れ ε=1) の **自明な再観察に過ぎない**。3 AI 全員と Code A が v10.5 機構を主題設計に反映しなかった構造的失敗。
+
+### 14.3 §35 メタ規律 10 項目の確立
+
+GPT 第三回監査 + Web Claude 自己反省で §35 として明文化:
+1. オープン調査とクローズ調査を固定方針にしない
+2. 追加調査を開く時は理由を明示する
+3. 平均で潰れる構造は必ず層化を検討する
+4. 閾値は真理ではなく運用上の仮置きとして扱う
+5. 整理語は観察事実と分ける
+6. 主題終了条件の前提が実測で崩れた場合は再開を許す
+7. 監査や整理は閉じる妥当性だけでなく開く妥当性も評価する
+8. 最終的な開閉判断は現場感を持つ人間 (Taka) 側に残す
+9. Web Claude は主題ドキュメント着手前に関連バージョンの上位資料を読む (お守り規律)
+10. 「観察できる軸が見えた」を駆動要因にしない
+
+### 14.4 esde_3ai_operations_manual.md 整備
+
+3 AI 共通運用マニュアル (基本原則のみ、超簡潔版) を別ドキュメントで作成。主題着手前の関連過去レポート参照と証明 (節要約 + 本主題への接続) を義務化。
+
+### 14.5 Taka 整理「2 マイナーバージョン使ってなにやってんだか」
+
+v10.10 + v10.11 を「受信機構解明」に費やしたが得られた前進は限定的 (v10.10: 有効領域露出、v10.11: β member 除外 1 条件)。v10.12 は元々の予定 (Atom 取り込み prototype) に戻る。
+
+---
+
+## 15. v10.12 (Phase 1.5 第七試行、2026-05-11 完了、Atom 取り込み prototype)
+
+### 15.1 主題と経緯
+
+主題: **Atom 取り込み prototype (人間言語 → atom 変換)**、v10.6 §7.1 で本来予定された主題への復帰、v10.11 §5.1 直接出発点。
+
+第 4 版主題 (条件適応型 atom 導入の単一勝負案 2 trial 分割、cond4 = familiarity top 25%) は Step Z + Step B 実測で前提崩れ (cond4 top 25% で per seed 4.38、9/24 seed で <3 events、cond4 が AND 連鎖で 78.5% 削減の支配的ボトルネック) → 第 5 版 (cond4 top 50% γ 仮置き、Taka 確認) で再構築 → per seed 17.50 (4 倍改善、全 24 seeds で paired_d 信頼ラインクリア)。
+
+### 15.2 構造的達成 (技術成功)
+
+| 項目 | 値 |
+|---|---|
+| 受容 cid pool | 420 (per seed 17.50) |
+| v112 events | 10,500 (420 × 25 atom) |
+| v108_standard events | 60,000 (既存出力流用、層 B 不変) |
+| main run 時間 | 20.35 秒 |
+| bit-identity | 全層 PASS (層 A/B/C) |
+| 層 B 不変 | v107-v111 約 1,500 files |
+| storage 累計 | 94 MB / 6 GB (1.5%) |
+| 構造的予想 vs 観察 | 6/6 全 matched |
+
+### 15.3 観察事実 (Code A Step J + 追加調査 window 別 post-process)
+
+**頑健 cells (5 件 / 21 cells)**:
+
+| metric | window | paired_d | 方向 |
+|---|---|---|---|
+| delta_C | immediate (1-10 step) | +0.54 | v112 > v108 |
+| delta_C | short (10-100) | +0.41 | v112 > v108 |
+| n_pulses | immediate (1-10) | -0.94 | **v112 < v108** (逆方向) |
+| n_pulses | short (10-100) | +1.36 | v112 > v108 |
+| n_pulses | medium (100-1000) | +1.31 | v112 > v108 |
+
+→ Taka 過去経験「10 step が一番差が出た」が v10.12 データで verified。Step J 報告では medium 固定で見ていたため immediate window の頑健性を見落としていた構造盲点が判明。
+
+**方向性なし (16 cells)**:
+- delta_C × medium / delta_Q × 3 window / path_excess 12 cells (atom 関連 3 path + Layer 5 構造観察 integration_alpha × 3 window)
+
+### 15.4 言えること / 言えないこと (Code A 整理直接採用)
+
+**言えること**:
+- 「条件選別 cid (v112) と類似度選別 cid (v108) で atom 取り込み直後の挙動 (window 依存性) が違う」
+- n_pulses が 1-10 step で v112 抑制、10 step 以降で v112 活発化 という timing 構造の差
+- delta_C は取り込み直後 (1-10 step) ほど v112 cid pool の C 値変化が大きい
+
+**言えないこと**:
+- 「Atom 取り込み prototype として v112 cid pool が有効かどうか」 ← この観察セットでは判定不能
+- path_excess の方向性 (12 cells 全て CI が 0 を跨ぐ)
+
+### 15.5 累計留保 27 件 (継承 22 + 新規 5)
+
+- #23: n_core 別反応 type 分業 (v10.10 §3.4) との接続
+- #24: Q3_threshold (lifespan ≥ 977) の意味
+- #25: familiarity 閾値選定の意味 (top 25% vs 50%)
+- #26: cond1/cond3 絞り込みによる bin_5+ × before/no_alpha 集中
+- #27: smoke seed 0 特異性 (Aruism 発動 evidence)
+
+### 15.6 v10.12 で確立された運用ルール
+
+- 規律 42 (候補): 上位完了レポート §5 (v10.x+1 主題接続) 必読
+- 主題ドキュメントへの「過去観察軸の照会」セクション必須化 (Web Claude 忘却対策)
+- 資料運用ルール (Pull 型 / AI 向け資料 / Taka 整理原文保存 / 監査魔人化歯止め)
+- 概念単位の正確化 (Taka 指摘「integration α/β は atom 関係ない」)
+
+### 15.7 Taka 整理 (v10.12 進行中、原文保存)
+
+主要 7 件:
+1. §1.9 (2026-05-10): 字面に揺れながら反応するシステム
+2. 主題変更 (2026-05-11): Atom 取り込みに戻る、結果は出てるなら戻るべき
+3. familiarity 仮置き (2026-05-11): pulse 観察軸は ESDE 資産として保持
+4. オープン/クローズフェイズ (2026-05-11)
+5. 過去研究のおさらい (2026-05-11): v10.12 で何をなぜ出したいか
+6. マイナーバージョン単位 (2026-05-11): a/b/c 付与で単位明確化
+7. 概念単位正確化 (2026-05-11): integration α/β は atom 関係ない
+
+### 15.8 v10.13 主題候補
+
+- Code A 推奨: window 依存性主題化 → 解像度拡張 → timing 構造意味検討 → cid 選別条件再検討
+- Taka §1.9 由来: 2 atom 組み合わせ / 多スレッド拡張 / Phase 2 移行
+- 留保由来: pulse 観察軸主軸 / familiarity 研究 / n_core 軸 / seed-level variability
+
+→ 本 Phase Result 完了後に 2 AI に振る運用 (Taka 指示)。
+
+---
+
+## 16. v10.13 以降の運用変更
+
+### 16.1 マイナーバージョン a/b/c 付与 (Taka 提案 2026-05-11)
+
+旧運用: 9 マイナーバージョン進行で Taka 自身も連結を忘れる規模。
+新運用: マイナーバージョンを極力変えず a/b/c 付与、一つの単位を大きく扱う。
+
+### 16.2 v11 と Developmental Phase 閉じ方
+
+Taka 提起 (2026-05-11): v11 で何をやるか議論、Developmental Phase をいつ閉じるかも資料作成観点で重要 → 別途 2 AI に振る。
+
+### 16.3 過去観察軸の照会義務 (v10.13 以降の主題ドキュメント必須)
+
+§09 §36.5 で明文化。
+
+---
+
+## 17. 主要ファイル一覧 (v10.10-v10.12 追加)
+
+### 17.1 主題ドキュメント (v10.10-v10.12)
+
+```
+v110_phase_design.md: v10.10 主題ドキュメント第三稿
+v111_phase_design.md: v10.11 主題ドキュメント第三稿
+v112_phase_design.md (第 5 版): v10.12 Atom 取り込み prototype (現行)
+v112_phase_design_v4_archived.md: 第 4 版 (廃止、履歴)
+v112_implementation_brief.md (第 4 版): v10.12 実装指示書
+```
+
+### 17.2 結果レポート
+
+```
+v110_phase_report.md: v10.10 主題完了レポート
+v111_phase_report.md: v10.11 主題完了レポート
+v112_completion_report.md: v10.12 Code A 主題完了報告
+v112_window_investigation_report.md: v10.12 Code A 追加調査 (window 別 post-process)
+v112_phase_result.md: v10.12 Phase Result (Web Claude 版、本資料の親)
+```
+
+### 17.3 運用マニュアル
+
+```
+esde_3ai_operations_manual.md: 3 AI 共通運用マニュアル (v10.11 で整備)
+```
+
+---
+
+## 18. 最終一文 (v10.12 完了時点)
+
+Developmental Phase 1.5 第七試行 (v10.12) は v10.6 §7.1 で本来予定された主題 (Atom 取り込み prototype) に v10.11 §5.1 直接接続で復帰、第 4 版 (2 trial 分割) 廃止 → 第 5 版 (cond4 top 50% γ 仮置き) で構造的に成立、main run 完了 (24 seeds × 2 conditions、20.35 秒、bit-identity 全層 PASS、層 B 1,500 files 不変、storage 累計 94 MB)、頑健 5 cells (delta_C × immediate/short + n_pulses × imm/short/med、Taka 過去経験「10 step が一番差が出た」verified、n_pulses は window 依存方向反転 immediate -0.94 / short +1.36 / medium +1.31) + 16 方向性なし cells、累計留保 27 件、Aruism 整合の judgment 回避方式、v10.10/v10.11 「2 マイナーバージョン受信機構解明」の素材を入力ルーティングとして統合 (cond1: β member 除外 = v10.11 / cond2: 長寿 = v10.10 / cond3: n_core ≥ 5 = v10.10 / cond4: familiarity 緩め = γ 仮置き)、v10.13 主題候補は Code A 推奨 (window 依存性主題化主軸) + Taka §1.9 由来 (2 atom / 多スレッド) + 留保由来 (pulse 軸 / familiarity / n_core / seed variability) を 2 AI 意見聴取に振る運用、v10.13 以降は a/b/c 付与による単位明確化 (Taka 提案) + 過去観察軸照会義務 (主題ドキュメント必須記載) + 資料運用ルール (Pull 型 / Taka 整理原文保存 / 監査魔人化歯止め) を導入、v11 と Developmental Phase 閉じ方は別途議論、Phase 1.5 第七試行は Atom 取り込み prototype として位置づけ直し、本主題が成功すれば v10.13 で字面に揺れながら反応するシステムの精緻化が前進 (Taka 整理 §1.9 反映、Atom スレッド = 連結基盤の第一スレッドの前進)、規律 41 件 + §35 メタ規律 10 項目 + 規律 42 候補 + §5.6 規律チェックリスト (案 X) を継承し本主題完了。
+
+---
+
+*以上、Developmental Summary (v10.0 - v10.12)。次の更新は v10.13 完了時。*
