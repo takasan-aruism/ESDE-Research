@@ -1,6 +1,6 @@
 {
   "version": "v11.0.1.a (v1101a) Step G",
-  "timestamp": "2026-05-17T17:51:39Z",
+  "timestamp": "2026-05-18T00:04:12Z",
   "note_layer_a": "Step C main 24 seeds は 16 分かかるため smoke seed 0 で 代用、本主題 post-process deterministic",
   "layer_a": {
     "parquet_hash_match": {
@@ -13,8 +13,8 @@
       "main_Plotly_newPlot_count_match": true,
       "topk_plotly_graph_div_count_match": true,
       "topk_Plotly_newPlot_count_match": true,
-      "main_size_pre_bytes": 17555,
-      "main_size_post_bytes": 17555,
+      "main_size_pre_bytes": 22338,
+      "main_size_post_bytes": 22338,
       "main_size_diff_bytes": 0,
       "topk_size_pre_bytes": 21984,
       "topk_size_post_bytes": 21984,
@@ -22,10 +22,10 @@
       "note": "HTML byte-identity NOT guaranteed (plotly UUID div IDs random); structural identity verified"
     },
     "rerun_times_sec": {
-      "v1101a_step_c_attention_emit.py": 29.31,
-      "v1101a_step_d_attention_propagation.py": 0.36,
+      "v1101a_step_c_attention_emit.py": 29.24,
+      "v1101a_step_d_attention_propagation.py": 0.37,
       "v1101a_step_e_attention_causality.py": 0.74,
-      "v1101a_step_f_graph_html.py": 4.16
+      "v1101a_step_f_graph_html.py": 5.14
     },
     "all_parquet_match": true
   },

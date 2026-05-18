@@ -71,6 +71,8 @@ influence_candidate_count は、注意候補が選んだ atom が Δt±10 window
 
 対応 — Taka 判断で (iii) 両方併記 を採用。Step E を、sum argmax (現方式) と z-score argmax (path 内正規化) の両方を出力するよう修正する。これにより Integration 経路が因果候補としてどう振る舞うかが見え、かつ「集約方式で因果の像が変わる」事実そのものが観察記録に残る (v1101 留保 #33 と同型の対応)。本修正は新バージョンを切らず v1101a 内の課題として扱う — 原因が「Step E 集約ロジックの問題」と判明しており、新機構の発明でも階層観の書き換えでもなく、本主題段階 1 で用いた観測器の修正のため (詳細は §6 留保 #L5)。本修正は段階 2 (時間軸) とは独立で、段階 2 判断を待たず実施可能。
 
+**24 seeds 実測 (Step E 修正後、Code A 追記)**: 修正後 main 24 seeds 1 batch で 2 方式併記を実行 (1,726,974 records、13.9 秒)。sum 方式は前回と完全一致 (attention_via_salience 76.5% / familiarity 23.5% / temporal 0.01% / integration 系 0%、bit-identity 保証)。z-score 方式では familiarity 33.7% / integration_beta 29.1% / attention_via_salience 13.0% / integration_alpha 12.5% / temporal_coactivation 11.7% で、**dominance が attention_via_salience (76.5%) → familiarity (33.7%) に逆転**、integration 系合計 41.6% で causality 候補として出現 (seed 0 検証時の 29 source_cid 出現は 24 seeds 平均 29.8 と一致、cross-seed unique 245、seed 間 min 6 / max 71 で 12 倍の振れ幅 = 留保 #L3 と同型方向変動)。qc_regime × z-score 方式では familiarity 連想ゲーム方向 (留保 #L6) が維持され認知優位 31.8% → 意識優位 34.5% (+2.7%、sum 方式 +6% より弱め)。分散 0 path 扱い (z-score=0 構造的決定、絶対格言 #9) は実際には適用されず (integration paths も per-source sum 分布が散る)。詳細は `v1101a_step_e_causality_fix_observation.md`。
+
 ### 3.2 意識優位時に familiarity 経路が +6% — 連想ゲームの方向的裏付け (留保 #L6)
 
 因果候補を qc_regime 別に見ると、認知優位では attention_via_salience 80.8% / familiarity 19.1%、意識優位では attention_via_salience 74.6% / familiarity 25.4%。意識優位のとき familiarity 経路が +6%、salience 経路が -6%。

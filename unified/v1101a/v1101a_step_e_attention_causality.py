@@ -81,45 +81,87 @@ def compute_causality(seed: int, src_dir: Path, verbose: bool = True) -> pd.Data
     for pt in PATH_TYPES:
         if pt not in wide.columns:
             wide[pt] = 0.0
-    # argmax で causality_candidate_path
     path_cols = [pt for pt in PATH_TYPES if pt in wide.columns]
-    wide['causality_candidate_path'] = wide[path_cols].idxmax(axis=1)
+
+    # ── 方式 1: sum argmax (現方式、現 causality_candidate_path_sum)
+    wide['causality_candidate_path_sum'] = wide[path_cols].idxmax(axis=1)
     wide['causality_strength_sum_max'] = wide[path_cols].max(axis=1)
     wide['causality_strength_sum_total'] = wide[path_cols].sum(axis=1)
 
+    # ── 方式 2: z-score argmax (path 内正規化、留保 #L5 対応)
+    # 指示書 §4.3: 分散 0 path (integration の 1.0 固定 binary は per-source sum で
+    # は分布が散るため通常 std > 0、ただし極端ケース対応として std < 1e-9 で z=0)。
+    # 構造的決定、ハンドチューニングなし (絶対格言 #9)。
+    zscore_data = {}
+    for pt in path_cols:
+        vals = wide[pt].to_numpy(dtype=float)
+        mean = float(vals.mean())
+        std = float(vals.std(ddof=0))
+        if std < 1e-9:
+            zscore_data[f'zscore_{pt}'] = pd.Series([0.0] * len(wide), index=wide.index)
+        else:
+            zscore_data[f'zscore_{pt}'] = pd.Series((vals - mean) / std, index=wide.index)
+    zscore_df = pd.DataFrame(zscore_data)
+    wide = pd.concat([wide, zscore_df], axis=1)
+
+    zscore_cols = [f'zscore_{pt}' for pt in path_cols]
+    # argmax で path_type 名取得 (zscore_ prefix を除去)
+    wide['causality_candidate_path_zscore'] = (
+        wide[zscore_cols].idxmax(axis=1).str.replace('zscore_', '', regex=False))
+    wide['causality_zscore_max'] = wide[zscore_cols].max(axis=1)
+
     # 列名を分かりやすく
-    rename_map = {pt: f'strength_{pt}' for pt in PATH_TYPES}
+    rename_map = {pt: f'strength_{pt}' for pt in path_cols}
     wide = wide.rename(columns=rename_map)
 
-    # ── effect size: per (source_cid, max_path_type) の delta_* 平均
+    # ── effect size: per (source_cid, path_type) の delta_* 平均
     base_agg = (base.groupby(['source_cid', 'relation_path_type'])
                     .agg(effect_delta_Q_short=('delta_Q_short', 'mean'),
                          effect_delta_C_short=('delta_C_short', 'mean'),
                          effect_delta_R_short=('delta_R_familiarity_short', 'mean'),
                          n_baseline_rows=('delta_Q_short', 'size'))
-                    .reset_index()
-                    .rename(columns={'relation_path_type': 'causality_candidate_path'}))
+                    .reset_index())
 
     # propag.attention_candidate_id を source_cid として merge
-    merged = propag.merge(
+    # Step C placeholder の causality_candidate_path 列を drop してから merge
+    propag_clean = propag.drop(columns=['causality_candidate_path'], errors='ignore')
+    merged = propag_clean.merge(
         wide,
         left_on='attention_candidate_id', right_on='source_cid',
         how='left'
     ).drop(columns=['source_cid'])
 
-    # causality_candidate_path 列を上書き (Step C placeholder)
-    if 'causality_candidate_path_x' in merged.columns:
-        # 万が一 suffix がついた場合
-        merged['causality_candidate_path'] = merged.pop('causality_candidate_path_y')
-        merged = merged.drop(columns=['causality_candidate_path_x'])
-
-    # ── effect size を causality_candidate_path に基づき lookup
+    # ── effect size を 2 方式それぞれの causality_path に基づき lookup
+    # sum 方式の effect
+    base_sum = base_agg.rename(columns={
+        'relation_path_type': 'causality_candidate_path_sum',
+        'effect_delta_Q_short': 'effect_delta_Q_short_sum',
+        'effect_delta_C_short': 'effect_delta_C_short_sum',
+        'effect_delta_R_short': 'effect_delta_R_short_sum',
+        'n_baseline_rows': 'n_baseline_rows_sum',
+    })
     merged = merged.merge(
-        base_agg,
-        left_on=['attention_candidate_id', 'causality_candidate_path'],
-        right_on=['source_cid', 'causality_candidate_path'],
+        base_sum,
+        left_on=['attention_candidate_id', 'causality_candidate_path_sum'],
+        right_on=['source_cid', 'causality_candidate_path_sum'],
         how='left',
-        suffixes=('', '_eff')
+    )
+    if 'source_cid' in merged.columns:
+        merged = merged.drop(columns=['source_cid'])
+
+    # z-score 方式の effect
+    base_zscore = base_agg.rename(columns={
+        'relation_path_type': 'causality_candidate_path_zscore',
+        'effect_delta_Q_short': 'effect_delta_Q_short_zscore',
+        'effect_delta_C_short': 'effect_delta_C_short_zscore',
+        'effect_delta_R_short': 'effect_delta_R_short_zscore',
+        'n_baseline_rows': 'n_baseline_rows_zscore',
+    })
+    merged = merged.merge(
+        base_zscore,
+        left_on=['attention_candidate_id', 'causality_candidate_path_zscore'],
+        right_on=['source_cid', 'causality_candidate_path_zscore'],
+        how='left',
     )
     if 'source_cid' in merged.columns:
         merged = merged.drop(columns=['source_cid'])

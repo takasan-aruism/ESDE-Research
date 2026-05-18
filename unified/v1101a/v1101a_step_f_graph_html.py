@@ -122,11 +122,11 @@ def section_2_influence(df: pd.DataFrame, fig: go.Figure, row: int):
     fig.update_xaxes(tickangle=-30, row=row, col=3)
 
 
-def section_3_causality(df: pd.DataFrame, fig: go.Figure, row: int):
-    """causality_candidate_path 分布 by scope (留保 #L4 正規化済) + qc_regime 別比較"""
+def section_3_causality(df: pd.DataFrame, fig: go.Figure, row: int,
+                         path_col: str = 'causality_candidate_path_sum'):
+    """causality_candidate_path 分布 (path_col = sum or zscore、留保 #L5 対応)"""
     # Panel 1: scope 別 causality frac (stacked bar)
-    ct = pd.crosstab(df['change_scope'], df['causality_candidate_path'],
-                     normalize='index')
+    ct = pd.crosstab(df['change_scope'], df[path_col], normalize='index')
     for pt in PATHS:
         vals = [ct.loc[s, pt] if s in ct.index and pt in ct.columns else 0.0
                 for s in SCOPES]
@@ -140,9 +140,8 @@ def section_3_causality(df: pd.DataFrame, fig: go.Figure, row: int):
     fig.update_yaxes(title='causality path fraction', range=[0, 1], row=row, col=1)
     fig.update_xaxes(tickangle=-30, row=row, col=1)
 
-    # Panel 2: qc_regime × causality (意識/認知別、留保 #L4 正規化済)
-    ct2 = pd.crosstab(df['qc_regime'], df['causality_candidate_path'],
-                      normalize='index')
+    # Panel 2: qc_regime × causality
+    ct2 = pd.crosstab(df['qc_regime'], df[path_col], normalize='index')
     for pt in PATHS:
         vals = [ct2.loc[r, pt] if r in ct2.index and pt in ct2.columns else 0.0
                 for r in ['cognitive_dominant', 'conscious_dominant']]
@@ -155,18 +154,26 @@ def section_3_causality(df: pd.DataFrame, fig: go.Figure, row: int):
             row=row, col=2)
     fig.update_yaxes(title='causality path fraction', range=[0, 1], row=row, col=2)
 
-    # Panel 3: seed 別 attention_via_salience 占有率 (留保 #L3)
-    seed_avs = (df.groupby('seed').apply(
-        lambda d: (d['causality_candidate_path'] == 'attention_via_salience').mean(),
-        include_groups=False).reindex(range(24)))
+    # Panel 3: seed 別 path 別占有率 (留保 #L3)
+    if 'zscore' in path_col:
+        # z-score 方式: integration_beta 占有率 (最大変動 path)
+        seed_metric = df.groupby('seed').apply(
+            lambda d: (d[path_col] == 'integration_beta').mean(),
+            include_groups=False).reindex(range(24))
+        ylabel = 'integration_beta frac (z-score)'
+    else:
+        # sum 方式: attention_via_salience 占有率 (現方式 dominant)
+        seed_metric = df.groupby('seed').apply(
+            lambda d: (d[path_col] == 'attention_via_salience').mean(),
+            include_groups=False).reindex(range(24))
+        ylabel = 'attention_via_salience frac (sum)'
     fig.add_trace(
-        go.Bar(x=[f's{i}' for i in range(24)], y=seed_avs.values,
+        go.Bar(x=[f's{i}' for i in range(24)], y=seed_metric.values,
                marker_color='#1f77b4',
-               text=[f'{v:.2f}' for v in seed_avs.values],
+               text=[f'{v:.2f}' for v in seed_metric.values],
                textposition='outside', showlegend=False),
         row=row, col=3)
-    fig.update_yaxes(title='attention_via_salience frac', range=[0, 1],
-                     row=row, col=3)
+    fig.update_yaxes(title=ylabel, range=[0, 1], row=row, col=3)
     fig.update_xaxes(tickangle=-90, row=row, col=3)
 
 
@@ -200,7 +207,7 @@ def section_topk_view(df: pd.DataFrame, k: int = 10) -> go.Figure:
 
 
 def build_main_dashboard(df: pd.DataFrame) -> go.Figure:
-    """3 セクション dashboard"""
+    """4 セクション dashboard (Section 3 を sum / z-score 2 行に拡張、留保 #L5 対応)"""
     subplot_titles = (
         # Section 1
         [f'qc_regime conscious frac | {m}' for m in METRICS]
@@ -208,23 +215,29 @@ def build_main_dashboard(df: pd.DataFrame) -> go.Figure:
         + ['Influence (cognitive vs conscious)',
            'Influence ratio (conscious / cognitive)',
            'Influence std across 24 seeds (留保 #L3)']
-        # Section 3
-        + ['Causality path by scope (留保 #L4 正規化)',
-           'Causality path by qc_regime',
-           'Per-seed attention_via_salience frac (留保 #L3)']
+        # Section 3a (sum 方式、現方式)
+        + ['Causality by scope [SUM] (留保 #L4 正規化)',
+           'Causality by qc_regime [SUM]',
+           'Per-seed attention_via_salience frac [SUM]']
+        # Section 3b (z-score 方式、留保 #L5 対応)
+        + ['Causality by scope [Z-SCORE] (留保 #L5 集約方式併記)',
+           'Causality by qc_regime [Z-SCORE]',
+           'Per-seed integration_beta frac [Z-SCORE]']
     )
-    fig = make_subplots(rows=3, cols=3,
+    fig = make_subplots(rows=4, cols=3,
                         subplot_titles=subplot_titles,
-                        vertical_spacing=0.12, horizontal_spacing=0.08,
-                        specs=[[{}, {}, {}], [{}, {}, {}], [{}, {}, {}]])
+                        vertical_spacing=0.10, horizontal_spacing=0.08,
+                        specs=[[{}, {}, {}], [{}, {}, {}], [{}, {}, {}], [{}, {}, {}]])
     section_1_qc_regime(df, fig, row=1)
     section_2_influence(df, fig, row=2)
-    section_3_causality(df, fig, row=3)
+    section_3_causality(df, fig, row=3, path_col='causality_candidate_path_sum')
+    section_3_causality(df, fig, row=4, path_col='causality_candidate_path_zscore')
     fig.update_layout(
-        height=1400, width=1700,
+        height=1800, width=1700,
         title=('v11.0.1.a (v1101a) ESDE スケール注意機構 — 段階 1 観察記録 dashboard '
-               '<br><sub>留保 #L4 正規化済、設計書 §3 監査修正 4 点 + 箱 1/2/3 反映、'
-               '判定なし観察記録 (絶対格言 #12)、24 seeds 1 batch (1,726,974 records)</sub>'),
+               '<br><sub>留保 #L4 正規化済 + 留保 #L5 対応 (causality 2 方式 SUM/Z-SCORE 併記、'
+               'v1101 留保 #33 集計単位で像が変わる同型対応)、判定なし観察記録 (絶対格言 #12)、'
+               '24 seeds 1 batch (1,726,974 records)</sub>'),
         showlegend=True,
         legend=dict(orientation='h', yanchor='bottom', y=-0.05, xanchor='center', x=0.5),
         barmode='relative',  # Section 3 stacked path frac、Section 1/2 は単一 trace のため影響なし
