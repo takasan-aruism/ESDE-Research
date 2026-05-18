@@ -1,0 +1,113 @@
+{
+  "version": "v11.0.1.a (v1101a) Phase 2 Step E",
+  "timestamp": "2026-05-18T15:47:24Z",
+  "note": "Phase 2 (cid state ledger 再生 + 観察 A/B/C) の bit-identity 検証。shuffle baseline は rng_seed=42 固定で deterministic。",
+  "layer_a": {
+    "parquet_hash_match": {
+      "cid_state_ledger_seed0.parquet": true,
+      "unit_kl_delta_seed0.parquet": true
+    },
+    "rerun_times_sec": {
+      "v1101a_phase_2_step_b_cid_state_ledger.py": 2.1
+    },
+    "all_parquet_match": true
+  },
+  "layer_b": {
+    "v106_main": {
+      "n_files_pre": 731,
+      "n_files_post": 731,
+      "n_added": 0,
+      "n_removed": 0,
+      "n_modified": 0,
+      "pass": true
+    },
+    "v107_main": {
+      "n_files_pre": 222,
+      "n_files_post": 222,
+      "n_added": 0,
+      "n_removed": 0,
+      "n_modified": 0,
+      "pass": true
+    },
+    "v112_main": {
+      "n_files_pre": 207,
+      "n_files_post": 207,
+      "n_added": 0,
+      "n_removed": 0,
+      "n_modified": 0,
+      "pass": true
+    },
+    "v105_integration": {
+      "n_files_pre": 144,
+      "n_files_post": 144,
+      "n_added": 0,
+      "n_removed": 0,
+      "n_modified": 0,
+      "pass": true
+    },
+    "all_pass": true
+  },
+  "layer_c": {
+    "n_write_calls": 8,
+    "all_structurally_under_v1101a": true,
+    "findings": [
+      {
+        "script": "v1101a_phase_2_step_b_cid_state_ledger.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "state_path",
+        "structurally_under_v1101a": true
+      },
+      {
+        "script": "v1101a_phase_2_step_b_cid_state_ledger.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "kl_path",
+        "structurally_under_v1101a": true
+      },
+      {
+        "script": "v1101a_phase_2_step_b_cid_state_ledger.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "out_dir / 'cid_state_ledger_all.parquet'",
+        "structurally_under_v1101a": true
+      },
+      {
+        "script": "v1101a_phase_2_step_b_cid_state_ledger.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "out_dir / 'unit_kl_delta_all.parquet'",
+        "structurally_under_v1101a": true
+      },
+      {
+        "script": "v1101a_phase_2_step_c_observations.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "out_dir / 'observation_a_candidate_count.parquet'",
+        "structurally_under_v1101a": true
+      },
+      {
+        "script": "v1101a_phase_2_step_c_observations.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "out_dir / 'observation_b_jaccard_proxy.parquet'",
+        "structurally_under_v1101a": true
+      },
+      {
+        "script": "v1101a_phase_2_step_c_observations.py",
+        "method": "to_parquet",
+        "position": "arg",
+        "captured": "out_dir / 'observation_c_predictability.parquet'",
+        "structurally_under_v1101a": true
+      },
+      {
+        "script": "v1101a_phase_2_step_d_graph.py",
+        "method": "write_html",
+        "position": "arg",
+        "captured": "out_path",
+        "structurally_under_v1101a": true
+      }
+    ]
+  },
+  "all_layers_pass": true
+}
