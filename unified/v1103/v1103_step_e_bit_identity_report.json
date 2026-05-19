@@ -1,0 +1,120 @@
+{
+  "version": "v11.0.3 (v1103) Step E",
+  "timestamp": "2026-05-19T22:56:34Z",
+  "layer_a": {
+    "hash_match": {
+      "atom_centroids_48d_raw.parquet": true,
+      "atom_centroids_48d_normalized.parquet": true,
+      "atom_quality.parquet": true,
+      "response_atom_distribution.parquet": true,
+      "density_summary.parquet": true
+    },
+    "rerun_sec": {
+      "v1103_step_b_atom_centroids.py": 1.38,
+      "v1103_step_c_density_distribution.py": 1.81
+    },
+    "all_match": true
+  },
+  "layer_b": {
+    "v106": {
+      "pre": 731,
+      "post": 731,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v107": {
+      "pre": 222,
+      "post": 222,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v112": {
+      "pre": 207,
+      "post": 207,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v105_integration": {
+      "pre": 144,
+      "post": 144,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1101a": {
+      "pre": 131,
+      "post": 131,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1102": {
+      "pre": 3,
+      "post": 3,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "language_mapper": {
+      "pre": 325,
+      "post": 325,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "all_pass": true
+  },
+  "layer_c": {
+    "n": 6,
+    "all_under": true,
+    "findings": [
+      {
+        "script": "v1103_step_b_atom_centroids.py",
+        "method": "to_parquet",
+        "captured": "OUT_MAIN / 'atom_centroids_48d_raw.parquet'",
+        "under": true
+      },
+      {
+        "script": "v1103_step_b_atom_centroids.py",
+        "method": "to_parquet",
+        "captured": "OUT_MAIN / 'atom_centroids_48d_normalized.parquet'",
+        "under": true
+      },
+      {
+        "script": "v1103_step_b_atom_centroids.py",
+        "method": "to_parquet",
+        "captured": "OUT_MAIN / 'atom_quality.parquet'",
+        "under": true
+      },
+      {
+        "script": "v1103_step_c_density_distribution.py",
+        "method": "to_parquet",
+        "captured": "V1103_MAIN / 'response_atom_distribution.parquet'",
+        "under": true
+      },
+      {
+        "script": "v1103_step_c_density_distribution.py",
+        "method": "to_parquet",
+        "captured": "V1103_MAIN / 'density_summary.parquet'",
+        "under": true
+      },
+      {
+        "script": "v1103_step_d_graph.py",
+        "method": "write_html",
+        "captured": "out",
+        "under": true
+      }
+    ]
+  },
+  "all_layers_pass": true
+}
