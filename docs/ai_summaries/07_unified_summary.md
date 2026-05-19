@@ -22,11 +22,13 @@ Unified Phase の独立に伴い、ファイル番号を繰り上げた。Develo
 
 `06` / `06b` / `06c` は Developmental Phase 要約として据え置き・凍結。`01`-`05` (Genesis-Primitive) は変更なし。詳細は `00_index.md` の番号体系メモを参照。
 
+**資料運用方針 (2026-05-18〜19 確定)**: phase 単位の詳細仕様書は廃止する。ESDE Genesis 開発当初は Code A がいなかったため詳細仕様書を重視したが、現在は Code A の認識確認 → 要点まとめ → 齟齬詰め → 実装というプロセスが毎回回るため、詳細仕様書は実質不要。主題設計書 (design.md) は資料タイプが異なり重要なため継続し、仕様書フォルダに階層構造で保存する (v1101a から運用)。Unified Phase の新主題は枝番を増やさず本書 (07) に追記して一本化する。
+
 ---
 
 ## 1. 一文サマリ
 
-ESDE は v10.12 (Phase 1.5 第七試行、2026-05-11) の後 v10.13.a (5 phase Map analyzer、2026-05-12 完了) を経て **Unified Phase** へ移行し、v11.0.0 (v1100) で Language ↔ Genesis 接続の事前調査 (6 候補検証 + 候補 6 実装、両系の文脈非依存性は独立な atom を捕捉し Jaccard 0、Phase Result 未完成のまま残課題 A/B/C は Taka 判断で凍結)、v11.0.1 (v1101) で Taka 3 日長考の結論「Atom 的隆盛の統計的観察」(観察 1 一点を捉える / 観察 2 取り込み点中心の波及 / 観察 3 補助平均統計、Code A Step A-H 完了、核心発見 = 観察単位による dominant atom の 5 分裂)、v11.0.1.a (v1101a) で v1101 核心発見を起点とする「ESDE スケール注意機構」(v10.5 Salience-driven Focus を ESDE スケール・変化駆動へ 3 重構造転換、事前調査 → 2 AI 監査 → Taka 領域 3 箱確定 → 段階 1 Code A Step B-H 完了、核心観察 = 意識優位時の注意候補波及が認知優位の 1.54-1.78 倍、副次に Integration 経路が因果候補として 0 件・連想ゲームの方向的裏付け) を扱った、v1101 と v1101a はいずれも物理層 frozen を完全保証 (bit-identity 3 層全 PASS) し新規 main run なしの既存出力流用 post-process、現在地は v1101a 段階 1 完了 + Phase Result 完成、段階 2 (cid state ledger 再生・時間軸付き観察) を進めるかは 2 AI 意見を聴取して Taka が判断する段階。
+ESDE は v10.12 (Phase 1.5 第七試行、2026-05-11) の後 v10.13.a (5 phase Map analyzer、2026-05-12 完了) を経て **Unified Phase** へ移行し、v11.0.0 (v1100) で Language ↔ Genesis 接続の事前調査 (6 候補検証 + 候補 6 実装、両系の文脈非依存性は独立な atom を捕捉し Jaccard 0、Phase Result 未完成のまま残課題 A/B/C は Taka 判断で凍結)、v11.0.1 (v1101) で Taka 3 日長考の結論「Atom 的隆盛の統計的観察」(観察 1 一点を捉える / 観察 2 取り込み点中心の波及 / 観察 3 補助平均統計、Code A Step A-H 完了、核心発見 = 観察単位による dominant atom の 5 分裂)、v11.0.1.a (v1101a) で v1101 核心発見を起点とする「ESDE スケール注意機構」(v10.5 Salience-driven Focus を ESDE スケール・変化駆動へ 3 重構造転換、事前調査 → 2 AI 監査 → Taka 領域 3 箱確定 → 段階 1 + 段階 2 の Code A 担当完了、段階 1 核心観察 = 意識優位時の注意候補波及が認知優位の 1.54-1.78 倍、段階 2 核心観察 = その波及増加は選択と集中でなく注意が動きながら広がる形、概念修正「注意の揺れと意識は別物」を Taka と AI の双方合意で確定) を扱った、v1101 と v1101a はいずれも物理層 frozen を完全保証 (bit-identity 3 層全 PASS) し新規 main run なしの既存出力流用 post-process、現在地は v1101a 段階 1 + 段階 2 + Phase Result 二本 + Concept Update 完成・会話接続の足取り点検まで完了し次主題を Taka が判断する段階。
 
 ---
 
@@ -156,21 +158,37 @@ Code A Step B-H 完了 (2026-05-18、commit 9 件)。注意 emit ログ 1,726,97
 
 **核心観察**: 意識優位 (conscious_dominant) のときの注意候補の波及 (influence_candidate_count) が認知優位の **1.54-1.78 倍**。6 構造単位すべてで同方向、ESDE 解像度系で倍率最大 (window 1.78×)。Taka フレーム「意識層 = 選択と集中」と方向が一致する。
 
-### 5.6 副次観察 (Phase Result の整理)
+### 5.6 段階 1 副次観察
 
-- **Integration 経路が因果候補として全 24 seeds で 0 件** (留保 #L5)。因果候補 path は attention_via_salience 76.5% / familiarity 23.5% / temporal 0.01% の 3 path に集中、integration_alpha/beta は最強 path として一度も出現しない。原因は v10.7 の relation_strength で cid レベル mass-weighted event が構造的接続のみの Integration 経路に常に勝つこと。Integration は注意の対象ではあっても由来としては不可視。本主題で最も注視すべき観察事実。
+- **Integration 経路が因果候補として全 24 seeds で 0 件** (留保 #L5)。因果候補 path は attention_via_salience 76.5% / familiarity 23.5% / temporal 0.01% に集中、integration_alpha/beta が一度も出現しない。Step H 後の追加調査で原因判明 — relation_strength が integration は 1.0 固定 binary・salience/familiarity は 2 桁連続値とスケールが根本的に異なり、Step E の sum argmax が不当比較していた。仮説 A (観測器の問題) / B (階層の役割分担) は両方真。Taka 判断 (iii) で Step E を sum argmax + z-score argmax の 2 方式併記に修正 (新バージョンを切らず v1101a 内課題)、z-score 方式では integration 合計 41.6% で出現・dominance 逆転。結論は「Integration が注意の由来か」でなく「その問いは集計方式に依存し単一の答えを持たない」(v1101 #42 / v10.13.a #33 と同型)。
 - **意識優位時に familiarity 経路 +6%** (認知優位 19.1% → 意識優位 25.4%、留保 #L6)。箱 1「連想ゲーム」の方向的裏付け候補。
 - predecessor 連鎖 (箱 1) が全 6 構造単位で成立 (埋まり率 86.6-100%)。「霧の中の意識だけ」を禁止する設計が動いた。
 - seed 0 は控えめだが方向の反転なし・強化のみ (留保 #L3、v1101 #33 と同型)。
 - alpha が records の 92.5% 占有 (留保 #L4、n_alphas 母数差由来)。Step F グラフは構造単位内割合に正規化済で集団平均の罠は回避。
 
-### 5.7 Phase Result の置き方 (重要)
+### 5.7 段階 2 — 注意の方向性は選択と集中か拡散か
 
-核心観察の解釈は「意識優位という状態と注意候補の波及の広さが連動する」という観察事実の確認に留め、「選択と集中が立証された」とは言わない。波及が大きいのは選択と集中 (絞って深く) でも拡散 (絞らず広く薄く) でも起きうるため、段階 1 の粗解像度では機能を同定できない。出口固定 (設計書 §6) の「単一の確定像を出さない」原則どおり。機能の同定は段階 2 の時間軸付き粒度が要る。
+段階 2 は段階 1 核心観察 (波及 1.54-1.78 倍) が選択と集中か拡散かを時間軸を入れて切り分けた。新バージョンを切らず v1101a 内の段階として設計書から直接実装 (Code A Step A-F、bit-identity 3 層全 PASS、新規 main run なし)。
 
-### 5.8 v1101a の状態
+段階 2 核心観察 — **選択と集中ではない**。観察 B が全 6 構造単位で「認知優位フェーズは注意の中心 atom が安定し、意識優位フェーズは中心が動く」を示し、観察 A が「注意候補数は収束しない」を示した。意識優位時の波及は一点を深く掘るからでなく、注意が動きながら広がるから。Taka フレーム「意識 = 選択と集中」への反証的観察。
 
-Code A 段階 1 (Step B-H) 完了、Web Claude Phase Result (`v1101a_phase_result.md`) 完成。**段階 2 (cid state ledger 再生・326 atom 全濃度時系列・時間軸付き unit_KL_delta、想定 1.5-2 日) を進めるかは判断待ち** — Taka 判断で 2 AI (GPT/Gemini) に意見を聴取する段階。Phase Result の推奨は、段階 2 に進むなら出口を「核心観察の選択と集中/拡散の切り分け」と「連想ゲームの連鎖確証」に固定すべき、留保 #L5 (Integration 経路) は段階 2 でなく別主題が適切な可能性、というもの。
+観察 C (注意の予測可能性 = Taka「ランダムか妥当か」) は構造単位で割れた — Integration スケールは実測が shuffle baseline の 6-11 倍かつ 100% 未満で「Aさんの揺れ幅」(緩く予測でき確定しない帯) に乗る妥当性が観測された、CID は予測定義の自己言及で 100% 到達 (留保 #L8、単体は揺れ幅を持たず重なって初めて揺れが生まれる)、ESDE 3 解像度は集約で測定不能 (留保 #L10)。
+
+### 5.8 概念修正 — 注意の揺れと意識は別物 (v1101a Concept Update、双方合意)
+
+段階 2 が ESDE 内部の概念「意識 = 選択と集中」(v10.2 以来) を修正。段階 2 が観察したのは「注意の揺れ」(固定集中でもランダム拡散でもなく構造的に妥当な範囲内で動く第三の形) であって「意識」そのものではない。意識 = 注意の揺れ + 状況コントロール + 慣れ の複合で、ESDE はまだ注意の揺れしか観察していない。「意識 = 選択と集中」はこの複合の表層を本質と取り違えた誤認。Taka の理解と AI の説明可能性判断が合致したため双方合意として確定 (`v1101a_concept_update.md`)。
+
+関連する概念整理 — 注意は固定点でなく移動軌跡 (attention trajectory) として読む / 揺れ幅は構造の重なりで生まれる (CID は閉じた点、Integration で揺れが生まれる) / CID・Integration・ESDE の役割分担。
+
+### 5.9 Phase Result の置き方 (段階 1/2 共通の規律)
+
+段階 1 核心観察の解釈は「意識優位という状態と波及の広さが連動する」に留め「選択と集中が立証された」とは言わなかった。段階 2 も「選択と集中ではない」を観察事実として置き、「意識とは何か」の定義はしなかった。出口固定 (絶対格言 #6) の「単一の確定像を出さない」原則どおり。主題評価は Taka 領域。
+
+### 5.10 v1101a の状態
+
+Code A 主題担当範囲 (段階 1 Step B-H + Step E 修正 + 段階 2 Step A-F) 完了。Web Claude Phase Result 二本 (`v1101a_phase_result.md` 段階 1 / `v1101a_phase_2_phase_result.md` 段階 2) + `v1101a_concept_update.md` (概念整理) + 会話接続の足取り点検 (`esde_conversation_path_check.md`) 完成。段階 3 (生きた版、時間が逐次進む、新規 main run 必要) は v1101a 設計書で範囲外。
+
+会話接続の足取り点検の結論 — 2 AI 提案「会話応答を Integration スケールの attention trajectory から読む」を入力から返答まで 5 段に分解して点検した結果、段 1-3 は説明可能性が保てるが段 4 (揺れを応答候補にする) と段 5 (atom→言語変換、v1100 Jaccard 0) は飛躍。道筋は段 3 までしか通っておらず、今そのまま主題化できる完成した道筋ではない。段 4 は「未定義の飛躍」で、定義する作業が次主題になりうる。次主題の確定は Taka 領域。
 
 ---
 
@@ -181,18 +199,18 @@ Code A 段階 1 (Step B-H) 完了、Web Claude Phase Result (`v1101a_phase_resul
 - v10.13.a Map analyzer 完了。
 - v1100 候補 6 実装完了 (Phase Result 未完成)。
 - v1101 Step A-H 完了 + Web Claude Phase Result は v1101a 着手のため未作成 (核心発見は v1101a 駆動要因に継承済)。
-- v1101a 段階 1 (Step B-H) 完了 + Web Claude Phase Result 完成。
+- v1101a 段階 1 (Step B-H + Step E 修正) + 段階 2 (Step A-F) で Code A 主題担当完了。Phase Result 二本 + Concept Update + 会話接続足取り点検 完成。
 - 物理層 frozen 絶対維持 (Developmental + Unified 通算)。
 
 ### 6.2 待機中タスク
 
 | タスク | 担当 | 状態 |
 |---|---|---|
-| v1101a 段階 2 の要否判断 | Taka | 2 AI 意見聴取中 |
-| v1101a 段階 2 (cid state ledger 再生) | Code A | 段階 2 採用判断後、任意 |
+| 次主題の選定 | Taka | v1101a 完了、会話接続足取り点検が判断材料。道 A (段 4 主題化) / B (atom 変換) / C (器官の切り分け) / D (Taka 直感) |
 | v1100 Step K (Phase Result) | Web Claude | 未完成、扱うか後回しか未定 |
 | v1101 Step J (Phase Result) | Web Claude | 未作成 (核心発見は v1101a に継承済、独立 Phase Result を別途作るかは未定) |
 | v1100 残課題 A/B/C | 未定 | 凍結中、v11.0.x 後続で扱う可能性 |
+| v1101a 段階 3 (生きた版) | 未定 | v1101a 設計書で範囲外、新規 main run 必要、後段主題 |
 
 ### 6.3 主題評価判断
 
@@ -211,14 +229,17 @@ Code A は judgment 回避 (絶対格言 #12)。観察結果の主題評価 (suc
 | #36 candidate | v1100 | Phase 10 Cell ≠ Phase 8+9 Cell | 候補 3 を扱う場合は概念再定義必須 |
 | #37 candidate | v1100 | Language 評価 79 targets 小サンプル限界 | #34 棄却は確定でない |
 | #38-#40 candidate | v1101 | 旧 v1102 ドキュメント齟齬 (親資料不在 / Integration 未実施記述 / 時系列既存出力見落とし) | 解消済 |
-| #41 candidate | v1101 | Integration の member_cids 個別 cid id list が v10.x outputs に未 persistence | v1101a でも未解消、段階 2 で cid state ledger 再生対応 |
-| #42 candidate | v1101 | 観察単位による dominant atom 反転 | v1101 Phase Result 解釈領域、v1101a で注意レベルに展開 |
-| #L1 | v1101a | unit_kl_static は時間軸なし、時間軸付きは段階 2 行き | 段階 1 で対応済 (出力に性質差明記) |
+| #41 candidate | v1101 | Integration の member_cids 個別 cid id list | v1101a 段階 1 Step C で解決済 (v105 lifecycle/membership/distribution log から 24 seeds 取得) |
+| #42 candidate | v1101 | 観察単位による dominant atom 反転 | v1101 Phase Result 解釈領域、v1101a で注意・因果候補レベルに展開 |
+| #L1 | v1101a | unit_kl_static は時間軸なし | 段階 1 で対応 (静的版を明記)、段階 2 で簡易版 unit_KL_delta 実装済 |
 | #L2 | v1101a | qc_regime の多数決・中央値を両算出 | 段階 1 で対応済 (両列保存) |
 | #L3 | v1101a | 集計単位による方向変動 (v1101 #33 / #42 継承) | 観察された、反転なし・強化のみ |
-| #L4 | v1101a | alpha records 92.5% 占有 | 段階 1 で対応済 (Step F 正規化) |
-| **#L5** | v1101a | **Integration 経路が因果候補として全 24 seeds で 0 件** | **本主題で最も注視すべき観察事実。段階 2 または別主題の論点** |
-| #L6 | v1101a | 意識優位時 familiarity +6%、連想ゲームの方向的裏付け候補 | 段階 2 (時間軸付き連鎖追跡) の主要動機 |
+| #L4 | v1101a | alpha records 92.5% 占有 | 段階 1/2 で対応済 (グラフ scope 内正規化) |
+| #L5 | v1101a | Integration 経路が因果候補として全 24 seeds で 0 件 | 原因判明・対応完了。relation_strength の binary/連続スケール差による Step E sum argmax の不当比較。Step E を sum/zscore 2 方式併記に修正 (v1101a 内課題)、z-score で integration 41.6% 出現。「集計方式依存で単一の答えを持たない」(#33 系列) |
+| #L6 | v1101a | 意識優位時 familiarity +6%、連想ゲームの方向的裏付け候補 | 段階 2 観察 C で z-score 方式でも維持確認 (認知優位 31.8% → 意識優位 34.5%) |
+| **#L8** | v1101a | **段階 2 観察 C の予測定義が CID スケールで自己言及ループ、100% 到達** | 段階 2 新規。CID は参照先が自分自身のみで揺れ幅が構造的に存在しえない。観察 C を CID で再設計するか Integration/ESDE のみで評価するかは Taka 判断。「重なって揺れが生まれる」の副次観察を含む |
+| **#L9** | v1101a | **段階 2 観察 B が厳密 Jaccard でなく中心 atom 隣接一致 (proxy)** | 段階 2 新規。段階 1 propagation が raw 波及先 cid 集合を持たないため。ただし方向性は 6 単位同方向で頑健、proxy 厳密化でも覆りにくい |
+| **#L10** | v1101a | **段階 2 観察 C が ESDE 3 解像度で測定不能 (scope_id=-1 集約で shuffle 効かず)** | 段階 2 新規。ESDE スケールの注意の妥当性は本手法では測れない。baseline 再設計が要るかは Taka 判断 |
 
 ### 7.2 留保 #33 系列 — Unified Phase を通底する観察
 
@@ -264,9 +285,9 @@ Taka 哲学 4 件は Web Claude memory のみに存在、新 Web Claude は Taka
 
 `unified/v1101/` — `v1101_phase_design.md` (主題ドキュメント) / `v1101_web_claude_handoff.md` / `v1101_step_a_recognition.md` 〜 `v1101_step_h_observation_final.md` / 実装スクリプト 5 / `outputs/main/observation_{1,2,3}_*.parquet` / `outputs/v1101_observation.html`
 
-### 9.4 v1101a (ESDE スケール注意機構、段階 1 完了)
+### 9.4 v1101a (ESDE スケール注意機構、段階 1+2 完了)
 
-`unified/v1101a/` — `v1101a_phase_design.md` (主題設計書、正式版) / `v1101a_step_b_environment_check.md` / `v1101a_step_h_observation_final.md` (Code A 観察事実最終報告) / `v1101a_phase_result.md` (Web Claude Phase Result) / 実装スクリプト 5 (`v1101a_step_{c,d,e,f,g}_*.py`) / `outputs/` 配下 attention_emit / attention_propagation / attention_causality parquet 75 + HTML 2
+`unified/v1101a/` — `v1101a_phase_design.md` (段階 1 主題設計書) / `v1101a_phase_2_design.md` (段階 2 設計書) / `v1101a_step_b_environment_check.md` / `v1101a_step_h_observation_final.md` (段階 1 Code A 観察報告) / `v1101a_phase_2_step_f_observation_final.md` (段階 2 Code A 観察報告) / `v1101a_internal_task_step_e_causality_fix.md` + `v1101a_step_e_causality_fix_observation.md` (Step E 修正、#L5 対応) / `v1101a_phase_result.md` (段階 1 Phase Result) / `v1101a_phase_2_phase_result.md` (段階 2 Phase Result) / `v1101a_concept_update.md` (概念整理) / `esde_conversation_path_check.md` (会話接続足取り点検) / 実装スクリプト / `outputs/` 配下 parquet + HTML。design.md は仕様書フォルダに階層保存。事前調査資料は `unified/v1101/post_v1101_attention_pre_investigation/` に history 残置。
 
 事前調査資料は `unified/v1101/post_v1101_attention_pre_investigation/` に history として残置 (Code A Step 2/3 成果物等)。
 
@@ -275,17 +296,18 @@ Taka 哲学 4 件は Web Claude memory のみに存在、新 Web Claude は Taka
 ## 10. 新 Web Claude スレッドへの申し送り
 
 - Unified Phase の全容把握は本書 (07) で足りる。`06` / `06b` / `06c` は Developmental Phase 用で凍結済、Unified Phase の新主題は本書に追記して一本化する (06d/06e の枝番継続はしない)。
-- v1101a 段階 2 の判断が未決。Phase Result (`v1101a_phase_result.md`) §5 が判断材料、2 AI 意見聴取中。本書を読む時点で段階 2 が着手済 / 見送り済になっている可能性があるので repo の最新状態を確認すること。
-- 留保 #L5 (Integration 経路が因果候補として 0 件) は Unified Phase で最も注視すべき観察事実。「Integration は注意の対象だが由来としては不可視」が計測アーティファクトか ESDE の実態かは未決。
-- 留保 #33 系列 (集計単位を変えると像が変わる) は Unified Phase を通底する。新主題で「単一の集計値で語りたい」衝動が出たら、v1101 核心発見と v1101a 監査修正 #2 #3 を読むこと。
-- v1100 Phase Result が未完成のまま。Unified Phase は Phase Result の作成が後回しになりやすい (v1100 Step K 未作成、v1101 Step J 未作成のまま v1101a に進んだ)。後続で整理が要る。
+- phase 単位の詳細仕様書は廃止 (2026-05-18〜19)。Code A の認識確認 → 要点まとめ → 齟齬詰め → 実装のプロセスが回るため不要。主題設計書 (design.md) は資料タイプが異なり継続、仕様書フォルダに階層保存。
+- v1101a は段階 1+2 完了。次主題は未定 — `esde_conversation_path_check.md` が判断材料 (会話接続は段 3 まで通り、段 4-5 は未定義の飛躍)。道 A (段 4 主題化) / B (atom 変換) / C (器官の切り分け) / D (Taka 直感)。本書を読む時点で次主題が決まっている可能性があるので repo の最新状態を確認すること。
+- 留保 #33 系列 (集計単位を変えると像が変わる) は Unified Phase を通底する。v1101a 段階 2 の観察 C (注意の妥当性が構造単位で割れる) も同型。新主題で「単一の集計値で語りたい」衝動が出たら、v1101 核心発見と v1101a 監査修正 #2 #3 を読むこと。
+- 概念修正に注意 — v1101a Concept Update で「意識 = 選択と集中」は修正された (`v1101a_concept_update.md`)。段階 2 が観察したのは「注意の揺れ」であって「意識」ではない (意識 = 注意の揺れ + 状況コントロール + 慣れ)。新主題で「意識」という語を使うときは、ESDE が実際に観察しているのが注意の揺れだけであることに注意。
+- v1100 / v1101 の Phase Result が未完成のまま。Unified Phase は Phase Result の作成が後回しになりやすい。後続で整理が要る。
 
 ---
 
 ## 11. 一文サマリ (再掲)
 
-本書は Unified Phase が独立フェイズになったことに伴い `06c` を母体に格上げ・新設された正式番号ドキュメント (07) であり、ESDE が v10.13.a (5 phase Map analyzer、Phase 1.5 第八試行) で Unified Phase へ移行した後、v11.0.0 (v1100) で Language ↔ Genesis 接続事前調査 (候補 6 実装、両系の文脈非依存性は独立 atom を捕捉し Jaccard 0、Phase Result 未完成・残課題 A/B/C 凍結)、v11.0.1 (v1101) で Taka 3 日長考の「Atom 的隆盛の統計的観察」(観察 1/2/3、Code A Step A-H 完了、核心発見 = 観察単位による dominant atom の 5 分裂)、v11.0.1.a (v1101a) で v1101 核心発見を起点とする「ESDE スケール注意機構」(v10.5 Salience-driven Focus の 3 重構造転換、事前調査 → 2 AI 監査修正 4 点 → Taka 領域 3 箱確定 → 段階 1 Code A Step B-H 完了、核心観察 = 意識優位時の注意候補波及が認知優位の 1.54-1.78 倍、副次に Integration 経路が因果候補として 0 件 [留保 #L5、最注視] と連想ゲームの方向的裏付け [#L6])、を扱い、v1101/v1101a はいずれも物理層 frozen 完全保証・新規 main run なしの post-process、留保 #33 系列 (集計単位を変えると像が変わる) が Unified Phase を通底し、現在地は v1101a 段階 1 完了 + Phase Result 完成・段階 2 を 2 AI 意見聴取のうえ Taka 判断する段階、ファイル番号は本書新設に伴い旧 07-10 (concept/structure/audit/language) を 08-11 へ繰り上げた。
+本書は Unified Phase が独立フェイズになったことに伴い `06c` を母体に格上げ・新設された正式番号ドキュメント (07) であり、ESDE が v10.13.a (5 phase Map analyzer、Phase 1.5 第八試行) で Unified Phase へ移行した後、v11.0.0 (v1100) で Language ↔ Genesis 接続事前調査 (候補 6 実装、両系の文脈非依存性は独立 atom を捕捉し Jaccard 0、Phase Result 未完成・残課題 A/B/C 凍結)、v11.0.1 (v1101) で Taka 3 日長考の「Atom 的隆盛の統計的観察」(観察 1/2/3、Code A Step A-H 完了、核心発見 = 観察単位による dominant atom の 5 分裂)、v11.0.1.a (v1101a) で v1101 核心発見を起点とする「ESDE スケール注意機構」(v10.5 Salience-driven Focus の 3 重構造転換、事前調査 → 2 AI 監査修正 4 点 → Taka 領域 3 箱確定 → 段階 1 + 段階 2 の Code A 担当完了、段階 1 核心観察 = 意識優位時の注意候補波及が認知優位の 1.54-1.78 倍、段階 2 核心観察 = その波及増加は選択と集中でなく注意が動きながら広がる形、留保 #L5 は Step E 修正で「集計方式依存」と決着、概念修正「注意の揺れと意識は別物」を双方合意で確定)、を扱い、v1101/v1101a はいずれも物理層 frozen 完全保証・新規 main run なしの post-process、留保 #33 系列 (集計単位を変えると像が変わる) が Unified Phase を通底し、現在地は v1101a 段階 1+2 + Phase Result 二本 + Concept Update + 会話接続足取り点検 完成で次主題を Taka が判断する段階、ファイル番号は本書新設に伴い旧 07-10 を 08-11 へ繰り上げ phase 単位詳細仕様書は廃止 (主題設計書は継続)。
 
 ---
 
-*以上、07 Unified Phase Summary (Web Claude、2026-05-18)。`06c` を母体に v1101a を追加し格上げ。Unified Phase の新主題は本書に追記して一本化する。新 Web Claude スレッドは本書 + `00_index.md` 用語対応表 + v1101a 関連資料で Unified Phase 全容を把握可能。*
+*以上、07 Unified Phase Summary (Web Claude、2026-05-19 更新)。`06c` を母体に v1101a 段階 1+2 完了まで反映。Unified Phase の新主題は本書に追記して一本化する。新 Web Claude スレッドは本書 + `00_index.md` 用語対応表 + v1101a 関連資料で Unified Phase 全容を把握可能。*
