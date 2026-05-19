@@ -1,0 +1,87 @@
+{
+  "version": "v11.0.2 (v1102) Step E",
+  "timestamp": "2026-05-19T19:06:49Z",
+  "layer_a": {
+    "parquet_hash_match": {
+      "primary_table.parquet": true
+    },
+    "rerun_times_sec": {
+      "v1102_step_b_primary_table.py": 0.9
+    },
+    "all_parquet_match": true
+  },
+  "layer_b": {
+    "v106_main": {
+      "n_files_pre": 731,
+      "n_files_post": 731,
+      "n_added": 0,
+      "n_removed": 0,
+      "n_modified": 0,
+      "pass": true
+    },
+    "v107_main": {
+      "n_files_pre": 222,
+      "n_files_post": 222,
+      "n_added": 0,
+      "n_removed": 0,
+      "n_modified": 0,
+      "pass": true
+    },
+    "v112_main": {
+      "n_files_pre": 207,
+      "n_files_post": 207,
+      "n_added": 0,
+      "n_removed": 0,
+      "n_modified": 0,
+      "pass": true
+    },
+    "v105_integration": {
+      "n_files_pre": 144,
+      "n_files_post": 144,
+      "n_added": 0,
+      "n_removed": 0,
+      "n_modified": 0,
+      "pass": true
+    },
+    "v1101a_main": {
+      "n_files_pre": 131,
+      "n_files_post": 131,
+      "n_added": 0,
+      "n_removed": 0,
+      "n_modified": 0,
+      "pass": true
+    },
+    "all_pass": true
+  },
+  "layer_c": {
+    "n_write_calls": 4,
+    "all_under_v1102": true,
+    "findings": [
+      {
+        "script": "v1102_step_b_primary_table.py",
+        "method": "to_parquet",
+        "captured": "out_path",
+        "under_v1102": true
+      },
+      {
+        "script": "v1102_step_c_outstanding_extraction.py",
+        "method": "to_parquet",
+        "captured": "src_dir / 'outstanding_thresholds.parquet'",
+        "under_v1102": true
+      },
+      {
+        "script": "v1102_step_c_outstanding_extraction.py",
+        "method": "to_parquet",
+        "captured": "src_dir / 'outstanding_cells.parquet'",
+        "under_v1102": true
+      },
+      {
+        "script": "v1102_step_d_graph.py",
+        "method": "write_html",
+        "captured": "out",
+        "under_v1102": true
+      }
+    ]
+  },
+  "all_layers_pass": true
+}
