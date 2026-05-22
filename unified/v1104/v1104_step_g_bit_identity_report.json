@@ -1,0 +1,123 @@
+{
+  "version": "v11.0.4 (v1104) Step G",
+  "timestamp": "2026-05-22T17:36:49Z",
+  "layer_a": {
+    "hash_match": {
+      "observation_1_cid_integration.parquet": true,
+      "observation_2_predecessor_chain.parquet": true,
+      "observation_3_trajectory_response.parquet": true,
+      "observation_4_b_overlap.parquet": true
+    },
+    "rerun_sec": {
+      "v1104_step_b_observation_1.py": 19.38,
+      "v1104_step_c_observation_2.py": 56.45,
+      "v1104_step_d_observation_3.py": 7.28,
+      "v1104_step_e_observation_4.py": 1.38
+    },
+    "all_match": true
+  },
+  "layer_b": {
+    "v105_sal": {
+      "pre": 24,
+      "post": 24,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v105_int": {
+      "pre": 144,
+      "post": 144,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v106": {
+      "pre": 731,
+      "post": 731,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v107": {
+      "pre": 222,
+      "post": 222,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v112": {
+      "pre": 207,
+      "post": 207,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1101a": {
+      "pre": 131,
+      "post": 131,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1102": {
+      "pre": 3,
+      "post": 3,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1103": {
+      "pre": 7,
+      "post": 7,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "all_pass": true
+  },
+  "layer_c": {
+    "n": 5,
+    "all_under": true,
+    "findings": [
+      {
+        "script": "v1104_step_b_observation_1.py",
+        "method": "to_parquet",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1104_step_c_observation_2.py",
+        "method": "to_parquet",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1104_step_d_observation_3.py",
+        "method": "to_parquet",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1104_step_e_observation_4.py",
+        "method": "to_parquet",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1104_step_f_graph.py",
+        "method": "write_html",
+        "captured": "out",
+        "under": true
+      }
+    ]
+  },
+  "all_layers_pass": true
+}
