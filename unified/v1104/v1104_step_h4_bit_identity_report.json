@@ -1,0 +1,200 @@
+{
+  "version": "v11.0.4 (v1104) Step H-4",
+  "timestamp": "2026-05-22T21:59:24Z",
+  "layer_a": {
+    "hash_match": {
+      "observation_1_cid_integration.parquet": true,
+      "observation_2_predecessor_chain.parquet": true,
+      "observation_3_trajectory_response.parquet": true,
+      "observation_4_b_overlap.parquet": true,
+      "observation_2_restratified.parquet": true,
+      "observation_2_shuffle_variants.parquet": true,
+      "cid_sim_matrix_distribution.parquet": true,
+      "observation_2_resolution.parquet": true,
+      "observation_2_self_loop_split.parquet": true,
+      "observation_3_stratified.parquet": true,
+      "observation_3_weighted.parquet": true,
+      "observation_3_alt_metrics.parquet": true,
+      "observation_3_shuffle_baseline.parquet": true
+    },
+    "rerun_sec": {
+      "v1104_step_b_observation_1.py": 19.49,
+      "v1104_step_c_observation_2.py": 55.69,
+      "v1104_step_d_observation_3.py": 7.1,
+      "v1104_step_e_observation_4.py": 1.42,
+      "v1104_step_h3_reinvestigation.py": 61.36,
+      "v1104_step_h4_reinvestigation.py": 22.36
+    },
+    "all_match": true
+  },
+  "layer_b": {
+    "v105_sal": {
+      "pre": 24,
+      "post": 24,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v105_int": {
+      "pre": 144,
+      "post": 144,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v106": {
+      "pre": 731,
+      "post": 731,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v107": {
+      "pre": 222,
+      "post": 222,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v112": {
+      "pre": 207,
+      "post": 207,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1101a": {
+      "pre": 131,
+      "post": 131,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1102": {
+      "pre": 3,
+      "post": 3,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1103": {
+      "pre": 7,
+      "post": 7,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "all_pass": true
+  },
+  "layer_c": {
+    "n": 16,
+    "all_under": true,
+    "findings": [
+      {
+        "script": "v1104_step_b_observation_1.py",
+        "method": "to_parquet",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1104_step_c_observation_2.py",
+        "method": "to_parquet",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1104_step_d_observation_3.py",
+        "method": "to_parquet",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1104_step_e_observation_4.py",
+        "method": "to_parquet",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1104_step_f_graph.py",
+        "method": "write_html",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1104_step_h3_reinvestigation.py",
+        "method": "to_parquet",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1104_step_h3_reinvestigation.py",
+        "method": "to_parquet",
+        "captured": "out_sd",
+        "under": true
+      },
+      {
+        "script": "v1104_step_h3_reinvestigation.py",
+        "method": "to_parquet",
+        "captured": "out_v",
+        "under": true
+      },
+      {
+        "script": "v1104_step_h3_reinvestigation.py",
+        "method": "to_parquet",
+        "captured": "out_r",
+        "under": true
+      },
+      {
+        "script": "v1104_step_h3_reinvestigation.py",
+        "method": "to_parquet",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1104_step_h3_graph.py",
+        "method": "write_html",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1104_step_h4_reinvestigation.py",
+        "method": "to_parquet",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1104_step_h4_reinvestigation.py",
+        "method": "to_parquet",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1104_step_h4_reinvestigation.py",
+        "method": "to_parquet",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1104_step_h4_reinvestigation.py",
+        "method": "to_parquet",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1104_step_h4_graph.py",
+        "method": "write_html",
+        "captured": "out",
+        "under": true
+      }
+    ]
+  },
+  "all_layers_pass": true
+}
