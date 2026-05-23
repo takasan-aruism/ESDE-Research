@@ -7,6 +7,11 @@
   - §2.4 観察 3: 強度マップの単一スコア化禁止を明示、4 指標を別レイヤーで保持 (GPT)
   - §2.5 観察 4: 役割表を「確定表」でなく「仮割り当て + 観察支持 + 留保」形式に変更 (GPT)
   - §2.6: v1105a 進行条件を「5 役割完全確定」でなく「試行可能な最小役割表 (3 役割) の成立」に変更 (GPT)
+*更新 3*: 2026-05-24、Code A Step A 認識確認反映 (確認要請 7 への Taka 承認、案 B 採用)
+  - §2.3 観察 2: 「48 次元密度 4 種」→「3 density 列 × 2 sim_basis = 6 値別レイヤー保持」
+  - §2.4 観察 3: 強度マップを 4 数値 → 計 11 数値 (lift_C 1 / couple_hit_rate 2 / trajectory r 2 / density r 6) 別レイヤー保持に拡張
+  - §2.5 役割表「統合判断」の構造事実根拠を 6 値前提に微修正
+  - §5 確認要請 #2 を実体構造 (6 値) に合わせて更新
 *位置づけ*: v1105 主題設計書 **草案**。問いの形 A (点検のみ、v1104/v1104a と同じ系譜)。本草案 → Taka 確認 → 2 AI 監査 (GPT/Gemini) → Code A 認識確認 → 実装、の流れに乗せる。
 *親*: `v1104_v1104a_phase_result.md` (4 つの非対称性 #L30-L33) + Taka 整理 (2026-05-23 統合方向への転換 + マイナーバージョン運用方針 + 観察方法を疑う規律) + GPT 2026-05-23 役割表提案 + `esde_segment4_path_check.md` (段 4-b/4-c の切り分け)
 *対象*: Taka (確認) + GPT/Gemini (監査) + Code A (認識確認)
@@ -161,13 +166,26 @@ selector 化禁止: 観察 4 の役割割り当ては post-process 観察のみ�
 
 **観察方法**:
 - Genesis 側: v1104+v1104a の追加調整 2/3 出力 (observation_3_scope_n_stratified, observation_3_density_comparison) を継承。scope × 粒度別の trajectory-density 相関を整理。
-- Language 側: v1103 出力 (atom_centroids_raw/normalized.parquet, atom_quality.parquet, density_summary.parquet) を読み込み、raw / norm / qweighted / constitution-adjusted の 4 種密度を scope × 粒度に当てはめる。
-- 並列表示: scope × 粒度を行、trajectory r と density r を列で並べた表を作成。raw / norm / qweighted / constitution-adjusted の 4 種を分けて記録 (絶対格言 #11「概念単位を雑に扱わない」、v1103 GPT 監査 1 継承)。
+- Language 側: v1103 出力 (atom_centroids_48d_raw/normalized.parquet, atom_quality.parquet, density_summary.parquet) を読み込み。
+- **density_summary.parquet の実体構造** (Code A Step A 実環境照合 2026-05-24): 3 density 列 (`raw_density` / `qweighted_density` / `const_adjusted_density`) × 2 sim_basis (`raw` / `norm`) = **6 値** を持つ (486 rows = 27 receiver_bin × 3 metric × 2 sim_basis × 3 k)。`mean_pairwise_sim` は補助。
+- **6 値すべてを別レイヤーとして保持** (Taka 承認 2026-05-24、Code A 確認要請 7 案 B):
+
+| sim_basis | density 種類 |
+|---|---|
+| raw | raw_density / qweighted_density / const_adjusted_density |
+| norm | raw_density / qweighted_density / const_adjusted_density |
+
+- 並列表示: scope × 粒度を行、trajectory r と 6 種の density r を別レイヤー列で並べた表を作成 (絶対格言 #11「概念単位を雑に扱わない」、v1103 GPT 監査 1 継承、4 種を 6 値に厳密化)。
+
+**6 値保持の根拠** (Code A 確認要請 7 への Web Claude 回答 = 案 B):
+1. 絶対格言 #11 厳密適用: norm 版の qweighted / const_adjusted を捨てない
+2. #L17 (raw vs norm Δ0.208 反転) は留保 #33 系列の一例で、qweighted / const_adjusted でも同様の反転が起きるかは観察対象。3 density 列で sim_basis 比較できないと、留保 #33 系列の観察を構造的に閉じる
+3. v1105a 試行への素材として情報を捨てない (どの sim_basis × density 種類で絞るかの選択肢を広げる)
 
 **期待される観察形** (確定ではない):
 - ESDE event/step10 で trajectory r=0.64 主役 (#L31)
 - 集約 (window / CID 各 bin) で density r=-0.62〜-0.97 主役 (#L31)
-- raw vs norm で Δ0.208 反転 (#L17)、4 種密度で結論が変わる可能性
+- raw vs norm で Δ0.208 反転 (#L17、raw_density で確認済)、qweighted / const_adjusted でも同様の反転が起きるか本観察で初めて見る
 
 **留保候補**: 48 次元人為性留保 (v1103 GPT 監査 5) を本観察結論に必ず添える。
 
@@ -183,11 +201,21 @@ v1104+v1104a が確定したのは「scope × 粒度で連続的に強度が変�
 
 **観察方法**:
 - 観察 1 と観察 2 の出力を scope × 粒度の同じセル上に **強度マップとして並列記録**
-- 各セルに 4 数値を **別レイヤー** で持つ:
-  - ① Genesis lift_C (predecessor 連鎖、§2.2)
-  - ② Language couple_hit_rate (Couple endpoint 接触率、§2.2)
-  - ③ trajectory r (stability_vs_maxprob、§2.3)
-  - ④ density r (raw / norm / qweighted / constitution-adjusted の 4 種は別列で保持、絶対格言 #11)
+- 各セルに **計 11 数値を別レイヤー** で持つ (Taka 承認 2026-05-24、Code A 案 B、6 種 density で拡張):
+  - **段 4-b 系 (3 数値)**:
+    - ① Genesis lift_C (predecessor 連鎖、§2.2)
+    - ② Language couple_hit_rate_unweighted (Couple endpoint 接触率、§2.2)
+    - ③ Language couple_hit_rate_prob_weighted (response_prob 加重、§2.2)
+  - **段 4-c 系 trajectory (2 数値、§2.3)**:
+    - ④ trajectory r (stability_vs_maxprob)
+    - ⑤ trajectory r (diffusion_vs_maxprob)
+  - **段 4-c 系 density (6 数値、§2.3 案 B 採用)**:
+    - ⑥ density r (raw_density × sim_basis=raw)
+    - ⑦ density r (raw_density × sim_basis=norm)
+    - ⑧ density r (qweighted_density × sim_basis=raw)
+    - ⑨ density r (qweighted_density × sim_basis=norm)
+    - ⑩ density r (const_adjusted_density × sim_basis=raw)
+    - ⑪ density r (const_adjusted_density × sim_basis=norm)
 - **異なる尺度を単一スコア化しない**。必要に応じて各指標 **内** で z-score / percentile 表示を補助的に用いる (指標間の合成は行わない)。
 - binary 判定 (動く/動かない) は本主題で行わない。閾値を本主題で導入しない。
 - 「両者強い」「片方強い」「両者弱い」のパターンは Phase Result の段階で **数値を見てから事後的に読む** (判定を先に置かない、旧 Claude チェック §2.4)
@@ -196,9 +224,10 @@ v1104+v1104a が確定したのは「scope × 粒度で連続的に強度が変�
 **期待される観察形** (確定ではない):
 - 4 つの非対称性 (#L30-L33) が強度マップにそのまま現れる
 - scope × 粒度で連続的な強度分布が見える
-- パターンの読み取りは Phase Result 段階、本観察は強度を別レイヤーで並べるところまで
+- density 6 種で「sim_basis × density 種類」の 2 軸非対称性が観察される可能性 (留保 #33 系列の拡張)
+- パターンの読み取りは Phase Result 段階、本観察は強度を 11 レイヤーで並べるところまで
 
-**留保候補**: 強度マップを Phase Result で読むときの視覚化方法 (heatmap など) を Code A Step A で確定。視覚化は補助で、データ本体は parquet で 4 数値を別レイヤー並列保持。
+**留保候補**: 強度マップを Phase Result で読むときの視覚化方法 (heatmap など) を Code A Step A で確定。視覚化は補助で、データ本体は parquet で 11 数値を別レイヤー並列保持。heatmap layer 数の増加は許容 (絶対格言 #11 の厳密適用コスト)。
 
 ### 2.5 観察 4 — 役割表 (仮割り当て + 観察支持 + 留保 形式)
 
@@ -219,7 +248,7 @@ v1104+v1104a が確定したのは「scope × 粒度で連続的に強度が変�
 | 連想・踏み台 | alpha non-self-loop、beta non-self-loop | lift_C=0.152 (alpha 最強)、0.091 (beta)、predecessor 連鎖が機能 (#L30 v1104a 追加調整 1) | Language Couple との接続は couple_hit_rate で別レイヤー (§2.2)、scope 一対一対応はしない |
 | 即時応答の揺れ | ESDE event / ESDE step10 | trajectory stability_vs_maxprob r=0.64 強相関 (#L31 v1104a 追加調整 2) | ESDE window では消える (粒度感度) |
 | 重要性 emit | ESDE (全粒度) | B のみ独自領域 (A=0 / B=9、#L32 v1104a 追加調整 4) | B の意味は scope 別 (CID で B subset / alpha-beta で B superset、#L32)、scope を分けないと点検できない |
-| 統合判断 | CID (qweighted_density) + 48 次元 raw_density | CID 集約で density r=-0.97 最強 (#L31)、48 次元 raw_density k=5 で 0.847 (v1103 段 4-c 機構成立) | 48 次元人為性留保あり (v1103 GPT 監査 5、両端の人為的投影) |
+| 統合判断 | CID (qweighted_density) + 48 次元 raw_density | CID 集約で density r=-0.97 最強 (#L31)、48 次元 raw_density (sim_basis=raw) k=5 で 0.847 (v1103 段 4-c 機構成立) | 48 次元人為性留保あり (v1103 GPT 監査 5)、sim_basis × density 種類の 6 値の中でどれを「主」とするかは v1105a 試行で判断 |
 
 **設計上の規律**: 役割表は完成品ではなく v1105a の試行設計書の素材。Taka 主題評価で割り当てを採用するか、観察結果次第で割り当てが動くかは Taka 領域。本主題範囲は「仮割り当てを構造事実と留保で示す」までで、「これが正解」と確定しない (絶対格言 #6「出口の固定」、#12「Aruism 判定回避」)。
 
@@ -314,9 +343,9 @@ v1105 では仮割り当て表まで。v1105a で実際に絞る試行 (問い�
 ## 5. Code A 確認要請 (予想項目、Step A で確定)
 
 1. Constitution Couple データの読み込み方 (v1103 outputs の proposals.json から、couple_hit_rate 計測の実装方法 §2.2)
-2. 48 次元密度の raw / norm / qweighted / constitution-adjusted 4 種の出力先 (v1103 outputs から)
+2. 48 次元密度 6 値の出力先確認 (3 density 列 × 2 sim_basis、v1103 outputs の density_summary.parquet から、Code A 案 B 採用 / Taka 承認 2026-05-24)
 3. 仮割り当て表の出力フォーマット (parquet + md table 併記、3 列形式 §2.5)
-4. 観察 3 強度マップの視覚化方法 (heatmap など、補助。データ本体は parquet で 4 数値を別レイヤー並列保持、単一スコア化しない §2.4)
+4. 観察 3 強度マップの視覚化方法 (heatmap など、補助。データ本体は parquet で 11 数値を別レイヤー並列保持、単一スコア化しない §2.4)
 5. couple_hit_rate の計測単位の確定 (scope × 粒度のセル内候補 atom の取り方、§2.2)
 6. v1104a 観察 4 出力 (observation_4_b_minus_a_cells) を Step F の役割「重要性 emit」に直接流用できるか
 
@@ -328,10 +357,11 @@ v1105 では仮割り当て表まで。v1105a で実際に絞る試行 (問い�
 |---|---|---|
 | 設計-1 | 役割表 5 役割は GPT 2026-05-23 提案を採用、「仮割り当て + 観察支持 + 留保」形式に変更 (GPT Auditor 2026-05-24 反映) | Taka 主題評価で採否判断 |
 | 設計-2 | 段 4-b と段 4-c の「対称的に」を「同じ scope × 粒度の地形図上に並べる」と読んだ | Taka 確認待ち |
-| 設計-3 | 観察 3 は強度マップとして 4 数値を別レイヤー並列記録、binary 判定および単一スコア化を本主題で行わない (旧 Claude チェック + GPT Auditor 2026-05-24 反映) | 閾値 binary 判定と統合スコア化は v1105a (問いの形 B、試行) で必要に応じて行う |
+| 設計-3 | 観察 3 は強度マップとして 11 数値 (lift_C 1 / couple_hit_rate 2 / trajectory r 2 / density r 6) を別レイヤー並列記録、binary 判定および単一スコア化を本主題で行わない (旧 Claude チェック + GPT Auditor + Code A 案 B 2026-05-24 反映) | 閾値 binary 判定と統合スコア化は v1105a (問いの形 B、試行) で必要に応じて行う |
 | 設計-4 | ~~Constitution Couple が scope × 粒度の地形に直接乗らない可能性~~ → **2 AI 監査で解決**: Couple を scope に一対一対応させず couple_hit_rate を独立レイヤーで計測 (Gemini + GPT 一致 2026-05-24、§2.2) | 解決済み |
 | 設計-5 | v1105a への接続の前提を「5 役割完全確定」から「試行可能な最小役割表 (3 役割) の成立」に変更 (GPT Auditor 2026-05-24 反映、§2.6) | v1105a 進行条件として §2.6 で確定 |
 | 設計-6 | 48 次元人為性留保 (v1103 由来) を観察 2 結論に必ず添える | v1105 Phase Result で添加 |
+| 設計-7 | ~~density 4 種解釈 (sim_basis 統合方法)~~ → **Code A Step A 確認要請 7 解決**: 3 density 列 × 2 sim_basis = 6 値すべて別レイヤー保持 (Code A 案 B / Taka 承認 2026-05-24、§2.3) | 解決済み |
 
 ---
 
@@ -363,6 +393,7 @@ v1105 では仮割り当て表まで。v1105a で実際に絞る試行 (問い�
 | 11 | Constitution Couple が scope に一対一対応させられていないか、couple_hit_rate として独立レイヤーになっているか (Gemini + GPT 一致) | クリア |
 | 12 | 役割表が「確定表」でなく「仮割り当て + 観察支持 + 留保」形式になっているか (GPT) | クリア |
 | 13 | v1105a 進行条件が「5 役割完全確定」でなく「最小役割表 (3 役割) の成立」になっているか (GPT) | クリア |
+| 14 | density 4 種解釈の確定 (Code A Step A 確認要請 7、案 B 採用 = 6 値別レイヤー、Taka 承認 2026-05-24) | クリア |
 
 監査必須 8 問 (`esde_audit_policy_update.md` 必須 8 問) は 2 AI 監査で別途確認済。
 
@@ -370,8 +401,8 @@ v1105 では仮割り当て表まで。v1105a で実際に絞る試行 (問い�
 
 ## 8. 一文サマリ
 
-v1105 設計書 (旧 Claude チェック + 2 AI 監査クリア済み) は、v1104+v1104a で確定した 4 つの非対称性 (#L30-L33) と「ESDE は単一の答えを持たない」を前提として、段 4-b (連想を辿る = Genesis predecessor 連鎖 + Language couple_hit_rate を独立レイヤーで計測、Gemini + GPT 一致 2026-05-24) と段 4-c (応答 Atom を絞る = Genesis trajectory + Language 48 次元密度 4 種を別列保持) を同じ scope × 粒度の地形図上に対称的に並べ (観察 1/2)、両段の強度を scope × 粒度の強度マップとして 4 数値 (lift_C / couple_hit_rate / trajectory r / density r) を別レイヤー並列で記録し binary 判定および単一スコア化を本主題で行わず v1105a に送る (観察 3、旧 Claude + GPT で二重確認)、地形図で止まらず役割表 (候補保持 / 連想・踏み台 / 即時応答の揺れ / 重要性 emit / 統合判断 の 5 役割を scope × 粒度に「仮割り当て + 観察支持 + 留保」形式で割り当て、確定表でなく v1105a 試行設計書の素材として明示、GPT 2026-05-23 提案 + GPT Auditor 2026-05-24 修正反映) まで進める (観察 4) ことを 4 観察で点検する主題 (問いの形 A、v1105a の試行 = 問いの形 B の前提で v1105a 進行条件は「5 役割完全確定」でなく「試行可能な最小役割表 = 候補保持 + 連想 + 絞り の 3 役割の成立」、GPT Auditor 2026-05-24) で、上位目的「会話できる ESDE」への直接接続を §0.2 で明示し、新規 main run なし・新規観察軸追加なし・selector 化禁止・物理層 frozen 維持・観察方法を §2.1 で事前確定・単一の集計値で語る衝動への歯止め (binary 判定および統合スコア化の早期侵入回避を含む) ・統合方向への転換 (v1101→v1104a の多軸化を統合) を規律として組み込む。
+v1105 設計書 (旧 Claude チェック + 2 AI 監査 + Code A Step A 確認要請 7 クリア済み) は、v1104+v1104a で確定した 4 つの非対称性 (#L30-L33) と「ESDE は単一の答えを持たない」を前提として、段 4-b (連想を辿る = Genesis predecessor 連鎖 + Language couple_hit_rate を独立レイヤーで計測、Gemini + GPT 一致 2026-05-24) と段 4-c (応答 Atom を絞る = Genesis trajectory + Language 48 次元密度 6 値 = 3 density 列 × 2 sim_basis を別レイヤー保持、Code A 案 B / Taka 承認 2026-05-24) を同じ scope × 粒度の地形図上に対称的に並べ (観察 1/2)、両段の強度を scope × 粒度の強度マップとして **計 11 数値** (lift_C 1 / couple_hit_rate 2 / trajectory r 2 / density r 6) を別レイヤー並列で記録し binary 判定および単一スコア化を本主題で行わず v1105a に送る (観察 3、旧 Claude + GPT + Code A 案 B で三重確認)、地形図で止まらず役割表 (候補保持 / 連想・踏み台 / 即時応答の揺れ / 重要性 emit / 統合判断 の 5 役割を scope × 粒度に「仮割り当て + 観察支持 + 留保」形式で割り当て、確定表でなく v1105a 試行設計書の素材として明示、GPT 2026-05-23 提案 + GPT Auditor 2026-05-24 修正反映) まで進める (観察 4) ことを 4 観察で点検する主題 (問いの形 A、v1105a の試行 = 問いの形 B の前提で v1105a 進行条件は「5 役割完全確定」でなく「試行可能な最小役割表 = 候補保持 + 連想 + 絞り の 3 役割の成立」、GPT Auditor 2026-05-24) で、上位目的「会話できる ESDE」への直接接続を §0.2 で明示し、新規 main run なし・新規観察軸追加なし・selector 化禁止・物理層 frozen 維持・観察方法を §2.1 で事前確定・単一の集計値で語る衝動への歯止め (binary 判定および統合スコア化の早期侵入回避を含む) ・統合方向への転換 (v1101→v1104a の多軸化を統合) を規律として組み込む。
 
 ---
 
-*以上、v1105 Phase Design (Web Claude、2026-05-24、旧 Claude チェック + 2 AI 監査クリア済み)。次は Taka 最終確認 → Code A 認識確認 (Step A) → 実装 (Step B-G) → Phase Result (Web Claude) → Taka 主題評価 → v1105a 着手判断 (Taka) の流れ。*
+*以上、v1105 Phase Design v4 (Web Claude、2026-05-24、旧 Claude チェック + 2 AI 監査 + Code A Step A 確認要請 7 クリア済み)。次は Code A Step B (環境準備) → Step C-H 実装 → Phase Result (Web Claude) → Taka 主題評価 → v1105a 着手判断 (Taka) の流れ。*
