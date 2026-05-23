@@ -1,0 +1,158 @@
+{
+  "version": "v11.0.4a (v1104a) Step G'",
+  "timestamp": "2026-05-23T09:33:41Z",
+  "layer_a": {
+    "hash_match": {
+      "observation_2_per_chain_shuffle.parquet": true,
+      "observation_2_scope_stratified.parquet": true,
+      "observation_3_scope_n_stratified.parquet": true,
+      "observation_3_density_comparison.parquet": true,
+      "observation_3_density_coverage.parquet": true,
+      "observation_4_scope_filtered.parquet": true,
+      "observation_4_b_minus_a_cells.parquet": true
+    },
+    "rerun_sec": {
+      "v1104a_step_b_adjust1.py": 20.94,
+      "v1104a_step_c_adjust2.py": 0.55,
+      "v1104a_step_d_adjust3.py": 0.61,
+      "v1104a_step_e_adjust4.py": 0.3
+    },
+    "all_match": true
+  },
+  "layer_b": {
+    "v105_sal": {
+      "pre": 24,
+      "post": 24,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v105_int": {
+      "pre": 144,
+      "post": 144,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v106": {
+      "pre": 731,
+      "post": 731,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v107": {
+      "pre": 222,
+      "post": 222,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v112": {
+      "pre": 207,
+      "post": 207,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1101a": {
+      "pre": 131,
+      "post": 131,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1102": {
+      "pre": 3,
+      "post": 3,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1103": {
+      "pre": 7,
+      "post": 7,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1104": {
+      "pre": 13,
+      "post": 13,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "all_pass": true
+  },
+  "layer_c": {
+    "n": 9,
+    "all_under": true,
+    "findings": [
+      {
+        "script": "v1104a_step_b_adjust1.py",
+        "method": "to_parquet",
+        "captured": "pc_out",
+        "under": true
+      },
+      {
+        "script": "v1104a_step_b_adjust1.py",
+        "method": "to_parquet",
+        "captured": "strat_out",
+        "under": true
+      },
+      {
+        "script": "v1104a_step_b_adjust1.py",
+        "method": "write_text",
+        "captured": "nr_out",
+        "under": true
+      },
+      {
+        "script": "v1104a_step_c_adjust2.py",
+        "method": "to_parquet",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1104a_step_d_adjust3.py",
+        "method": "to_parquet",
+        "captured": "cov_out",
+        "under": true
+      },
+      {
+        "script": "v1104a_step_d_adjust3.py",
+        "method": "to_parquet",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1104a_step_e_adjust4.py",
+        "method": "to_parquet",
+        "captured": "out_main",
+        "under": true
+      },
+      {
+        "script": "v1104a_step_e_adjust4.py",
+        "method": "to_parquet",
+        "captured": "out_bma",
+        "under": true
+      },
+      {
+        "script": "v1104a_step_f_graph.py",
+        "method": "write_html",
+        "captured": "out",
+        "under": true
+      }
+    ]
+  },
+  "all_layers_pass": true
+}
