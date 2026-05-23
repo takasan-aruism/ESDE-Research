@@ -1,13 +1,22 @@
 # v11.0.5.a (v1105a) Phase Design Draft — 役割表を使って実際に応答候補を絞る試行
 
 *作成*: 2026-05-24、Web Claude (相談役、Genesis 側)
-*更新*: 2026-05-24、2 AI 監査反映 (GPT Auditor 4 点修正 + Gemini Architect 全面承認 + 構造的アドバイス)
+*更新 1*: 2026-05-24、2 AI 監査反映 (GPT Auditor 4 点修正 + Gemini Architect 全面承認 + 構造的アドバイス)
   - §2.4 試行 Step 3: 絞りアルゴリズムを **rank-based に固定** (`w_i = 1/log(rank_i + 2)` × 積 × 正規化、Aruism 規律を仕様として組み込み、GPT + Gemini 一致)
   - §1.1 / §1.3 / §2.6 / §3.3: 「成立/不成立」を **構造ラベル** (pipeline_complete / candidate_empty / distribution_degenerate / distribution_valid) に置き換え (GPT)
   - §1.3 / §2.6: 7 系列の **共通比較指標** (reduction_ratio 含む) を §2.6 で固定 (GPT)
   - §2.4 / §2.6: B emit を **read-only 観察列** として残す (絞りに使わない、最小 3 役割維持) (GPT)
   - §2.7 (新規): **v1106 接続条件 3 点** (pipeline_complete + distribution_valid + reduction_ratio) を明示、不成立なら v1105b に戻る (GPT)
   - §6 設計-2: 絞りアルゴリズムは解決済み
+*更新 2*: 2026-05-24、Code A Step A 確認要請 4 件への Taka 判断反映 (歌手の音痴比喩、ラッキー判定の余地なし)
+  - §0.6: 物理層 frozen の境界明示 (既存出力ファイル不変、v1103 機構流用は post-process 範囲で規律違反でない)
+  - §2.2 試行 Step 1: 入力データを **v108_standard 60,000 events** に確定 (確認要請 8、bin_2 88% で #L35 観察主入力)
+  - §2.5 試行 Step 4: 段 4-d 機構を **動的計算でカバレッジ 100%** に確定 (確認要請 9、Code A 推奨案 B 静的取り出し 16% は採用せず)
+  - §2.4 試行 Step 3: rank 計算粒度を **per-atom** に確定 (確認要請 10、3 軸 rank の独立性確保、Code A 案 per-receiver_bin 均等は採用せず)
+  - §1.1: 構造ラベル閾値 max_prob 0.999 を確定 (確認要請 11、Code A 案採用、v1103 §7.5 同型)
+  - §6: 設計-11 〜 設計-14 (新規、確認要請 4 件解決) を追加
+  - §7.2 監査クリア項目: #17-20 (新規) を追加
+  - §8 一文サマリ: 確認要請 4 件解決を反映
 *位置づけ*: v1105a 主題設計書 **草案**。問いの形 B (試行、v1101 以来初の切替)。本草案 → Taka 確認 → 2 AI 監査 (GPT/Gemini) → Code A 認識確認 → 実装、の流れに乗せる。
 *親*: `v1105_phase_result.md` (Web Claude、Taka 主題評価で「結果はいいんじゃない、v1105a に進める」承認) + v1105 役割表 (最小 3 役割成立) + Taka 整理 (2026-05-23 マイナーバージョン運用方針 = アルファベットは同じ主題の段階更新または問いの形の切替)
 *対象*: Taka (確認) + GPT/Gemini (監査) + Code A (認識確認)
@@ -64,6 +73,10 @@ v1105 観察 4 で確定した役割表 (最小 3 役割成立) を v1105a 試�
 
 (絶対格言 #2) 物理層 frozen 絶対。v1105a は既存 v10.5/6/7 + v112 + v1101a/1102/1103/1104/1104a/1105 outputs を post-process。新規 main run なし。試行スクリプトの実行は新規だが、これは「物理層を変更する main run」ではなく「既存 outputs を読み込んで役割表に従って計算する trial」。書き込みは `unified/v1105a/` 配下のみ。bit-identity 3 層全 PASS を Step G で確認。
 
+**物理層 frozen の境界明示** (Code A Step A 確認要請 9 への Taka 判断 2026-05-24 反映):
+
+物理層 frozen とは **既存出力ファイルが 1 byte も変更されない** ことを意味する。v1103 の **計算ロジック** (cosine_sim + 確率化、段 4-d 機構) を新規 atom に対して post-process で呼び出すことは、既存ファイル不変のまま実施可能で **規律違反ではない**。v1102 / v1104 / v1105 でも同様の計算ロジック流用は実施済。再現性は LAYER_A bit-identity (同 seed 2 回呼び出し hash 一致) で担保。
+
 ### 0.7 温度感 (esde_attitude_toward_esde.md §5.3)
 
 研究報告書および Phase Result は「驚き」でなく「ESDE が引き続き示した一貫性」として書く。
@@ -98,12 +111,14 @@ v1104+v1104a + v1105 で確定した 7 留保:
 
 各 event について以下の 4 つのラベルを構造事実として記録:
 
-| ラベル | 意味 |
-|---|---|
-| `pipeline_complete` | 入力 atom から応答候補分布まで到達 |
-| `candidate_empty` | 途中で候補数が 0 |
-| `distribution_degenerate` | 出力確率分布が一点集中 (max_prob ≈ 1.0、Aruism 違反) |
-| `distribution_valid` | max_prob < 1.0 かつ entropy > 0 |
+| ラベル | 意味 | 操作的判定条件 (Code A Step A 確認要請 11、Taka 承認 2026-05-24) |
+|---|---|---|
+| `pipeline_complete` | 入力 atom から応答候補分布まで到達 | distribution_valid を達成 (candidate_empty / degenerate でない) |
+| `candidate_empty` | 途中で候補数が 0 | n_candidates_after == 0 |
+| `distribution_degenerate` | 出力確率分布が一点集中 (Aruism 違反) | max_prob ≥ 0.999 OR prob_ge_0.999_count > 0 |
+| `distribution_valid` | 一点集中せず分布として成立 | max_prob < 0.999 AND entropy > 0 (n_after >= 2 implicit) |
+
+閾値 0.999 は v1103 §7.5 (Aruism 対称性チェック) と同型、新規閾値導入でなく既存規律の継承。
 
 「成功」「失敗」「成立」「不成立」を Code A 観察報告では使わない (GPT Auditor 2026-05-24)。Web Claude Phase Result でも構造ラベルを基本とする。
 
@@ -168,9 +183,11 @@ v1105 役割表 (5 役割仮割り当て) のうち、最小 3 役割 (候補保
 ### 2.2 試行 Step 1 — 入力 atom の投入 (CID 候補保持)
 
 **方法**:
-- 入力: 既存 atom_introduction_event 10,500 events (v1102 と同じ、神の手回避)。サンプリングしない、全 events で試行。
-- 各 event の Atom を CID 単位で候補保持。CID_n_size_bin (n=2 / n=3 / n=4 / n=5 / n=6+) の 5 bin で並列に保持。
-- CID_n=2 は #L35 の特殊性を試行内で観察する重要な bin。
+- 入力: `atom_introduction_events_v108_standard` 全 24 seeds 合計 **60,000 events** (Code A Step A 確認要請 8 / Taka 承認 2026-05-24)。サンプリングしない、全 events で試行。
+- **入力データの選択根拠**: v112 series 10,500 events は n_core_bin=bin_5_plus のみで、設計書 §0.8 #L35 (CID_n=2 の特殊性) 観察に必要な bin_2 を含まない。v108_standard は **bin_2 が 88% (52,864/60,000)** を占め、#L35 試行内動的観察の主入力となる。
+- bin 構成 (実体): bin_2 52,864 / bin_3_4 3,717 / bin_5_plus 3,419 (5 bin 並列保持の意図に最も近い実体構成)。
+- 各 event の Atom を CID 単位で候補保持。CID_n_size_bin (bin_2 / bin_3_4 / bin_5_plus) の 3 bin で並列に保持。
+- CID_n=2 (bin_2) は #L35 の特殊性を試行内で観察する重要な bin。
 
 **出力**:
 - 各 event の候補保持された CID list (scope = CID、bin 別)。
@@ -217,6 +234,23 @@ v1105 役割表 (5 役割仮割り当て) のうち、最小 3 役割 (候補保
 各系列内で正規化:
   p_i = score_i / Σ_j score_j
 ```
+
+**rank の計算粒度 — 3 軸すべて per-atom** (Code A Step A 確認要請 10 / Taka 判断 2026-05-24):
+
+| rank 種類 | 計算粒度 | 元データ |
+|---|---|---|
+| `rank_source_i` | per-atom | atom の source レイヤー lift_C / couple_hit_rate を rank (複数レイヤー含む場合は min rank) |
+| `rank_trajectory_i` | **per-atom** | v1102 の trajectory 元データから atom 個別の trajectory_stability r を取得して rank |
+| `rank_density_i` | **per-atom** | 確認要請 9 動的計算結果から atom 個別の density を取得して rank、7 系列別 |
+
+**per-atom 必須の理由** (Taka 判断 2026-05-24):
+
+Code A 当初案「rank_trajectory_i / rank_density_i は per-receiver_bin 集計値を receiver_bin 内全 atom に均等付与」を採用すると、rank の差別化は source rank のみとなり、絞り式は 3 軸でなく実質 1 軸 (source のみ) に縮退する。これは設計書 §2.4 の本来構造 (3 軸 rank で構造的差別化) を音痴な状態のまま試行する形となり、Taka 比喩「音が外れまくっている場合、それは正しい音に修正されるべき」に該当。確認要請 9 動的計算採用と整合 (per-atom 計算は動的計算の自然な帰結)。
+
+**実装詳細**:
+- `log` の底: 自然対数 (e) を採用 (numpy.log)、底は理論的に任意 (rank の単調性のみ保つ)
+- tied rank: `pandas.rank(method='average')` を採用 (同順位は平均順位)
+- 7 系列で並列実行
 
 **なぜこの式か (Aruism 規律を仕様として組み込む、Gemini Architect 2026-05-24)**:
 
@@ -265,19 +299,31 @@ v1105 役割表 (5 役割仮割り当て) のうち、最小 3 役割 (候補保
 - 細粒 trajectory + 集約 density の組み合わせで #L31 が試行内動的に再現するか
 - CID 100% self-loop の影響 (#L33) で source rank がどう挙動するか
 
-### 2.5 試行 Step 4 — 出力確率分布の生成 (段 4-d 機構を継承)
+### 2.5 試行 Step 4 — 出力確率分布の生成 (段 4-d 機構を動的計算で継承、100% カバレッジ)
 
-**方法**:
-- v1103 で機構成立した段 4-d の確率分布出力機構を継承。
-- Step 3 で得られた 7 系列の応答 Atom 候補分布を、v1103 と同じ Aruism 対称性 (max_prob < 1.0、prob ≥ 0.999 の件数を観察) で出力。
+**方法** (Code A Step A 確認要請 9 / Taka 判断 2026-05-24):
+
+- v1103 で機構成立した段 4-d の確率分布出力機構を継承。**動的計算でカバレッジ 100% を確保** (Code A 推奨案 B 静的取り出し 16% は採用せず)。
+- v1103 の **計算ロジック** (cosine_sim + 確率化、7 系列 = sim_basis × density 種類 6 + 48D 1) を Python モジュールとして抽出または再実装し、入力 atom 25 種すべてに対して動的に呼び出し。
+- 既存 v1103 出力ファイル (`response_atom_distribution.parquet` など) は frozen 維持 (1 byte も変更しない、§0.6 物理層 frozen 境界明示)。動的計算結果は `unified/v1105a/` 配下に新規書込み。
+- Step 3 で得られた 7 系列の応答 Atom 候補分布を、v1103 と同じ Aruism 対称性 (max_prob < 0.999、prob ≥ 0.999 の件数を観察) で出力。
 - 7 系列を統合しない、別レイヤーで保持。
+- 再現性は LAYER_A bit-identity (同 seed 2 回呼び出し hash 一致) で担保。
+
+**動的計算採用の理由** (Taka 判断「ラッキー判定の余地なし、本番前に気づけたのはラッキー」):
+
+Code A 推奨案 B (v1103 既存 response_atom_distribution からの静的取り出し) は v1103 計算済の 7 start_atom のみカバー、入力 atom 25 種中 21 種 (84%) が `candidate_empty` で落ちる。試行は「ESDE が応答候補を絞れるか」でなく「v1103 で計算済の 4 atom について何か出るか」に縮退する。設計書 §0.2 駆動要因「役割表が試行可能か」の観察を実体で歪める形となり、ラッキー判定の余地なし (#L34/#L35/#L36 観察が成立するかも不明)。
+
+**物理層 frozen との両立** (§0.6 境界明示再掲):
+
+物理層 frozen とは既存出力ファイル不変。計算ロジックの post-process 呼び出しは v1102 / v1104 / v1105 でも実施済の範囲で、規律違反ではない。
 
 **出力**:
-- 各 event について 7 系列の応答 Atom 候補確率分布。
+- 各 event について 7 系列の応答 Atom 候補確率分布 (event_id × series_id × candidate_atom × probability、25 種全 atom カバレッジ)。
 
 **観察項目**:
 - 各系列の max_prob、entropy、prob ≥ 0.999 件数
-- Aruism 対称性違反 (max_prob ≈ 1.0) の有無
+- Aruism 対称性違反 (max_prob ≥ 0.999) の有無
 - 7 系列の入力 atom との構造的対応関係 (意味判定でなく、入力 atom が出力に現れるかなどの構造観察)
 
 ### 2.6 試行全体の観察項目集計
@@ -392,10 +438,10 @@ selector (本主題で禁止される動作):
 | Step | 担当 | 内容 |
 |---|---|---|
 | A | Code A | 認識確認 (本設計書の不明点を全て確認、確認要請を Web Claude へ) |
-| B | Code A | 環境準備 (v1102 atom_introduction_event + v1104+v1104a / v1105 / v1103 outputs の読み込み確認、試行スクリプト準備) |
+| B | Code A | 環境準備 (v108_standard 60,000 events + v1103 機構抽出方針 + v1102/v1103 per-atom データアクセス確認) |
 | C | Code A | 試行 Step 1+2 (入力投入 + 段 4-b 連想を 4 レイヤーで取り出す) |
-| D | Code A | 試行 Step 3 (段 4-c 絞り、7 系列の応答候補分布を生成) |
-| E | Code A | 試行 Step 4 (段 4-d 機構で確率分布出力、7 系列を別レイヤー保持) |
+| D | Code A | 試行 Step 3 (段 4-c 絞り、7 系列の応答候補分布を生成、per-atom rank) |
+| E | Code A | 試行 Step 4 (段 4-d 機構動的計算、7 系列を別レイヤー保持、100% カバレッジ) |
 | F | Code A | 試行全体の観察項目集計 (各 Step の observation を統合せず別レイヤーで集計) |
 | G | Code A | bit-identity 3 層検証 |
 | H | Code A | 観察事実最終報告 (judgment 回避、構造事実のみ、試行成立/不成立を構造事実として記録) |
@@ -405,13 +451,13 @@ selector (本主題で禁止される動作):
 
 ## 5. Code A 確認要請 (予想項目、Step A で確定)
 
-1. 入力 atom_introduction_event の所在と読み込み方 (v1102 outputs から、10,500 events 全部か bin 別か)
+1. 入力 atom_introduction_event の所在と読み込み方 (v1102 outputs から、10,500 events 全部か bin 別か) → **Step A 解決 (v108_standard 60,000 採用、確認要請 8)**
 2. 試行スクリプトの言語と実装方法 (Python post-process、新規スクリプト)
 3. 段 4-b 連想の出力フォーマット (event_id × scope_layer × candidate_atom_set の parquet、4 レイヤー分)
-4. ~~段 4-c 絞りの具体的アルゴリズム~~ → **2 AI 監査で解決**: §2.4 rank-based 絞り式 (`1/log(rank+2)` × 積 × 正規化) を仕様として確定。Code A は本式に従って実装、独自発明禁止 (GPT + Gemini 一致 2026-05-24)。確認は実装方法の詳細 (rank の計算源、log 関数の底、tied rank の扱いなど) のみ
-5. 段 4-d 確率分布出力の v1103 機構の継承方法 (v1103 outputs のどの機構を呼び出すか)
+4. ~~段 4-c 絞りの具体的アルゴリズム~~ → **2 AI 監査 + Step A で解決**: §2.4 rank-based 絞り式 + per-atom rank
+5. ~~段 4-d 確率分布出力の v1103 機構の継承方法~~ → **Step A 解決 (動的計算 100% カバレッジ、確認要請 9)**
 6. 7 系列の応答候補分布の出力フォーマット (event_id × 系列 ID × atom × prob の parquet)
-7. ~~試行成立 vs 不成立の操作的定義~~ → **2 AI 監査で解決**: §1.1 構造ラベル (pipeline_complete / candidate_empty / distribution_degenerate / distribution_valid) で記録 (GPT Auditor 2026-05-24)。確認は各ラベルの操作的判定条件 (例: prob_ge_0.999_count が何件以上なら distribution_degenerate か) のみ
+7. ~~試行成立 vs 不成立の操作的定義~~ → **2 AI 監査 + Step A で解決**: §1.1 構造ラベル + max_prob 0.999 閾値 (確認要請 11)
 8. v1106 着手判断のための観察項目の優先順位
 
 ---
@@ -421,29 +467,28 @@ selector (本主題で禁止される動作):
 | # | 留保 | 状態 |
 |---|---|---|
 | 設計-1 | 試行 (問いの形 B) は v1101 以来初の切替で、設計規律も新規 | §0.3 と §3.3 で歯止めを明示、Step A 認識確認で Code A 解釈確認 |
-| 設計-2 | ~~段 4-c 絞りの具体的アルゴリズム~~ → **2 AI 監査で解決**: §2.4 rank-based 絞り式 (`1/log(rank+2)` × 積 × 正規化) を仕様として固定、softmax 採用せず、Aruism 規律 (複数候補並立、max_prob 一点集中回避) を変換式の設計段階で組み込み (GPT + Gemini 一致 2026-05-24) | 解決済み |
-| 設計-3 | ~~試行成立 vs 不成立の操作的定義~~ → **2 AI 監査で解決**: §1.1 構造ラベル化 (pipeline_complete / candidate_empty / distribution_degenerate / distribution_valid)、success/failure 表現を避ける (GPT Auditor 2026-05-24) | 解決済み |
-| 設計-4 | 7 系列の応答候補分布をどう Phase Result でまとめるか | §2.6 共通比較指標 (GPT Auditor 2026-05-24) で固定、各系列を統合せず指標で比較 |
-| 設計-5 | ~~v1106 着手判断の条件~~ → **2 AI 監査で解決**: §2.7 で 3 条件 (pipeline_complete + distribution_valid + reduction_ratio) を明示、不成立なら v1105b として絞り式再点検 (GPT Auditor 2026-05-24) | 解決済み |
+| 設計-2 | ~~段 4-c 絞りの具体的アルゴリズム~~ → **2 AI 監査で解決** | 解決済み |
+| 設計-3 | ~~試行成立 vs 不成立の操作的定義~~ → **2 AI 監査で解決** | 解決済み |
+| 設計-4 | 7 系列の応答候補分布をどう Phase Result でまとめるか | §2.6 共通比較指標 (GPT Auditor 2026-05-24) で固定 |
+| 設計-5 | ~~v1106 着手判断の条件~~ → **2 AI 監査で解決** | 解決済み |
 | 設計-6 | 48 次元人為性留保 (v1103 由来) を試行結果に必ず添える | v1105a Phase Result で添加 |
 | 設計-7 | 6 値 density の試行内挙動 (#L36) で「主」が見えた場合の扱い | 本主題では並列保持のまま、判断は v1106 以降 |
 | 設計-8 | CID_n=2 (#L35) が試行内で他 bin と質的に異なる挙動を示した場合の扱い | 本主題では構造事実として記録、判断は v1106 以降 |
-| 設計-9 (新規) | B emit を read-only 観察列で残す方針 (GPT Auditor 2026-05-24) | §2.4 / §2.5 で観察列として組み込み、絞り score には使わない、最小 3 役割維持 |
-| 設計-10 (新規) | v1105b 移行の判断 (3 条件不成立時) | Web Claude Phase Result + Taka 主題評価領域、v1105b 主題は絞り式の再点検 (同じ問いの形 B のまま) |
+| 設計-9 | B emit を read-only 観察列で残す方針 (GPT Auditor 2026-05-24) | §2.4 / §2.5 で観察列として組み込み、絞り score には使わない、最小 3 役割維持 |
+| 設計-10 | v1105b 移行の判断 (3 条件不成立時) | Web Claude Phase Result + Taka 主題評価領域 |
+| **設計-11 (新規)** | ~~入力データ選択 (v112 10,500 vs v108_standard 60,000)~~ → **Step A 確認要請 8 解決**: v108_standard 60,000 採用 (bin_2 88% で #L35 観察主入力、Taka 承認 2026-05-24) | 解決済み |
+| **設計-12 (新規)** | ~~段 4-d 機構の継承方法 (静的取り出し 16% vs 動的計算 100%)~~ → **Step A 確認要請 9 解決**: 動的計算で 100% カバレッジ (Taka 判断「ラッキー判定の余地なし」2026-05-24)、物理層 frozen と v1103 機構流用は両立 (既存ファイル不変、§0.6 境界明示) | 解決済み |
+| **設計-13 (新規)** | ~~rank 計算粒度 (per-receiver_bin vs per-atom)~~ → **Step A 確認要請 10 解決**: 3 軸 (source / trajectory / density) すべて per-atom (Taka 判断「音痴のまま試行しない」2026-05-24)、確認要請 9 動的計算と整合 | 解決済み |
+| **設計-14 (新規)** | ~~構造ラベル操作的閾値~~ → **Step A 確認要請 11 解決**: max_prob 0.999 採用 (v1103 §7.5 同型、Taka 承認 2026-05-24) | 解決済み |
 
 ---
 
-## 7. 監査ポイント (2 AI 監査クリア済み + Code A 引き渡し前提)
+## 7. 監査ポイント (2 AI 監査 + Code A Step A クリア済み + Code A 引き渡し前提)
 
 ### 7.1 2 AI 監査の結果 (2026-05-24)
 
-- **Gemini Architect**: 全面承認。絞りアルゴリズムは rank-based decay または温度付き softmax を推奨 (Aruism 規律を変換式の設計段階で組み込む、ハンドチューニングではなく仕様定義)。§2.4 に反映済。
-- **GPT Auditor**: 通過条件として 4 点修正必須を指摘、全 4 点を本草案に反映:
-  1. Step 3 絞り式を rank-based に固定 (§2.4)
-  2. 「成立/不成立」を構造ラベルに (§1.1)
-  3. 7 系列の共通比較指標を固定 (reduction_ratio 含む) (§2.6)
-  4. B emit を read-only 観察列として残す (§2.4)
-  5. v1106 接続条件 3 点を明示 (§2.7)
+- **Gemini Architect**: 全面承認。
+- **GPT Auditor**: 通過条件として 4 点修正必須を指摘、全 4 点を本草案に反映。
 
 ### 7.2 監査クリア項目 (記録)
 
@@ -457,14 +502,18 @@ selector (本主題で禁止される動作):
 | 6 | 7 系列の応答候補分布を統合せず別レイヤーで保持しているか (絶対格言 #11) | クリア |
 | 7 | 6 値 density を統合せず別レイヤーで保持しているか (v1105 案 B 継承) | クリア |
 | 8 | 「会話できる ESDE」上位目的への接続が §0.2 で明示されているか | クリア |
-| 9 | 温度感が「驚き」でなく「一貫性」になっているか、試行成立/不成立を「成功/失敗」と書いていないか (§0.7) | クリア (構造ラベル採用) |
+| 9 | 温度感が「驚き」でなく「一貫性」になっているか | クリア (構造ラベル採用) |
 | 10 | 段 5a/5b (自然文化) を試行に組み込まない歯止めが明示されているか | クリア |
 | 11 | v1104+v1104a + v1105 の 7 留保 (#L30-L36) が試行内観察対象として組み込まれているか | クリア |
 | 12 | B emit を試行に組み込まない歯止めが明示されているか (最小 3 役割で進める) | クリア (read-only 観察列として残す) |
 | 13 | 絞りアルゴリズムが Code A の独自発明を許さない形で固定されているか (GPT 最大の指摘) | クリア (§2.4 rank-based 固定) |
-| 14 | 絞り式が Aruism 規律 (max_prob 一点集中回避) を構造的に担保しているか (Gemini 警告) | クリア (`1/log(rank+2)` 緩やかな減衰、首位確率 0.3 程度) |
+| 14 | 絞り式が Aruism 規律 (max_prob 一点集中回避) を構造的に担保しているか (Gemini 警告) | クリア |
 | 15 | 7 系列の共通比較指標 (reduction_ratio 含む) が固定されているか | クリア (§2.6 固定) |
 | 16 | v1106 接続条件 3 点 + v1105b 移行可能性が明示されているか | クリア (§2.7 + §6 設計-10) |
+| **17 (新規)** | 入力データが #L35 観察可能な構成になっているか (Code A Step A 確認要請 8) | クリア (v108_standard 60,000、bin_2 88%、Taka 承認 2026-05-24) |
+| **18 (新規)** | 段 4-d 機構のカバレッジが試行範囲を歪めないか (Code A Step A 確認要請 9) | クリア (動的計算 100% カバレッジ、Taka 判断「ラッキー判定の余地なし」2026-05-24) |
+| **19 (新規)** | rank 計算粒度が絞り式の 3 軸構造を維持しているか (Code A Step A 確認要請 10) | クリア (per-atom、Taka 判断「音痴のまま試行しない」2026-05-24) |
+| **20 (新規)** | 構造ラベル閾値が既存規律 (v1103 §7.5) と整合しているか (Code A Step A 確認要請 11) | クリア (max_prob 0.999、v1103 同型、Taka 承認 2026-05-24) |
 
 監査必須 8 問 (`esde_audit_policy_update.md` 必須 8 問) は 2 AI 監査で別途確認済。
 
@@ -472,8 +521,8 @@ selector (本主題で禁止される動作):
 
 ## 8. 一文サマリ
 
-v1105a 設計書 (2 AI 監査クリア済み = GPT 4 点修正 + Gemini 全面承認 + 構造的アドバイス反映) は、v1101 以来初の問いの形 B (試行) として、v1105 で確定した役割表 (最小 3 役割 = 候補保持 CID + 連想 alpha/beta non-self-loop & couple_hit_rate + 絞り ESDE 細粒 trajectory & CID/48D density) を構造的根拠に、既存 atom_introduction_event 10,500 events を入力として段 4-b と段 4-c のパイプラインを実際に動かし応答 Atom 候補確率分布まで生成する試行を行う主題で、試行の境界規律 (試行 ≠ selector 化 / 試行 ≠ 会話成立判定 / 試行 ≠ ハンドチューニング、§0.3、§3.5) を明示、絞りアルゴリズムを **rank-based に固定** (`w_i = 1/log(rank_i + 2)` × 積 × 正規化、Aruism 規律 = 複数候補並立を変換式の設計段階で仕様として組み込み、softmax 採用せず Code A の独自発明を排除、GPT + Gemini 一致 2026-05-24)、4 段階の試行 (Step 1 入力投入 / Step 2 段 4-b 連想を 4 source レイヤー Genesis+Language 並列実行 / Step 3 段 4-c rank-based 絞り 7 系列を density 種類 6 + 48D 1 で並列実行 / Step 4 段 4-d 機構 v1103 継承で確率分布出力) を §2.1 で事前確定、構造ラベル (pipeline_complete / candidate_empty / distribution_degenerate / distribution_valid、success/failure 表現禁止、GPT Auditor 2026-05-24) と共通比較指標 (n_candidates_before/after / reduction_ratio / max_prob / entropy / top1/top5 / input_atom_in_topk / layer_jaccard / b_high_in_top5_ratio) を §2.6 で全 7 系列に固定、B emit を read-only 観察列として残し絞り score には組み込まない (最小 3 役割維持、GPT Auditor 2026-05-24)、v1106 接続条件 3 点 (pipeline_complete + distribution_valid + reduction_ratio、§2.7) を本主題内で事前確定し不成立なら v1105b として絞り式再点検に戻る (Taka 2026-05-23 マイナーバージョン運用方針継承)、上位目的「会話できる ESDE」への直接接続が v1101-v1105 中で最も高い主題として §0.1 で明示、新規 main run なし・新規観察軸追加なし・selector 化禁止・ハンドチューニング禁止・物理層 frozen 維持・絞り式の独自発明禁止・「会話成立」判定の禁止・「正しい応答」判定の禁止・B emit を絞り score に組み込まない・段 5a/5b 範囲外・7 系列および 6 値 density を統合せず別レイヤー保持を規律として組み込み、本設計書 → Code A 認識確認 → 実装 → Phase Result + v1106 / v1105b 着手判断 の流れに乗せる。
+v1105a 設計書 v3 (2 AI 監査 + Code A Step A 確認要請 4 件クリア済み) は、v1101 以来初の問いの形 B (試行) として、v1105 で確定した役割表 (最小 3 役割 = 候補保持 CID + 連想 alpha/beta non-self-loop & couple_hit_rate + 絞り ESDE 細粒 trajectory & CID/48D density) を構造的根拠に、`atom_introduction_events_v108_standard` 60,000 events (bin_2 88% で #L35 観察主入力、Code A Step A 確認要請 8 / Taka 承認 2026-05-24) を入力として段 4-b と段 4-c のパイプラインを実際に動かし応答 Atom 候補確率分布まで生成する試行を行う主題で、試行の境界規律 (試行 ≠ selector 化 / 試行 ≠ 会話成立判定 / 試行 ≠ ハンドチューニング、§0.3、§3.5) を明示、絞りアルゴリズムを **rank-based に固定 + 3 軸すべて per-atom** (`w_i = 1/log(rank_i + 2)` × 積 × 正規化、Aruism 規律 = 複数候補並立を変換式の設計段階で仕様として組み込み、Code A Step A 確認要請 10 / Taka 判断「音痴のまま試行しない」2026-05-24)、4 段階の試行 (Step 1 入力投入 v108_standard 60,000 / Step 2 段 4-b 連想を 4 source レイヤー Genesis+Language 並列実行 / Step 3 段 4-c rank-based 絞り per-atom 7 系列を density 種類 6 + 48D 1 で並列実行 / Step 4 段 4-d 機構 v1103 計算ロジック流用で **動的計算 100% カバレッジ**、Code A Step A 確認要請 9 / Taka 判断「ラッキー判定の余地なし、本番前に気づけたのはラッキー」2026-05-24) を §2.1 で事前確定、構造ラベル (pipeline_complete / candidate_empty / distribution_degenerate / distribution_valid、max_prob 閾値 0.999、Code A Step A 確認要請 11 / Taka 承認 2026-05-24、v1103 §7.5 同型) と共通比較指標 (n_candidates_before/after / reduction_ratio / max_prob / entropy / top1/top5 / input_atom_in_topk / layer_jaccard / b_high_in_top5_ratio) を §2.6 で全 7 系列に固定、B emit を read-only 観察列として残し絞り score には組み込まない、v1106 接続条件 3 点 (pipeline_complete + distribution_valid + reduction_ratio、§2.7) を本主題内で事前確定し不成立なら v1105b として絞り式再点検に戻る、物理層 frozen の境界明示 (§0.6: 既存出力ファイル不変、v1103 計算ロジックの post-process 呼び出しは v1102/v1104/v1105 で実施済の範囲で規律違反でない)、新規 main run なし・新規観察軸追加なし・selector 化禁止・ハンドチューニング禁止・物理層 frozen 維持・絞り式の独自発明禁止・「会話成立」判定の禁止・「正しい応答」判定の禁止・B emit を絞り score に組み込まない・段 5a/5b 範囲外・7 系列および 6 値 density を統合せず別レイヤー保持を規律として組み込み、想定実行時間 1-3 時間 (v1105 < 1 分から増だが「忘れ物を取りに戻っても遅刻しない」範囲、Taka 比喩)、本設計書 v3 → Code A Step B 環境準備 → Step C-G 実装 → Step H 観察事実報告 → Phase Result (Web Claude) → Taka 主題評価 → v1106 (条件成立時) / v1105b (条件不成立時) 着手判断 (Taka) の流れに乗せる。
 
 ---
 
-*以上、v1105a Phase Design v2 (Web Claude、2026-05-24、2 AI 監査クリア済み)。次は Taka 最終確認 → Code A 認識確認 (Step A) → 実装 (Step B-G) → Phase Result (Web Claude) → Taka 主題評価 → v1106 (条件成立時) / v1105b (条件不成立時) 着手判断 (Taka) の流れ。問いの形 B (試行) は v1101 以来初の切替で、ESDE が実際に応答候補を絞れるかどうかの構造事実観察を行う。絞り式は rank-based 固定で Code A の独自発明を排除、Aruism 規律を仕様として担保。*
+*以上、v1105a Phase Design v3 (Web Claude、2026-05-24、2 AI 監査 + Code A Step A 確認要請 4 件クリア済み)。次は Code A Step B 着手段階。問いの形 B (試行) は v1101 以来初の切替で、ESDE が実際に応答候補を絞れるかどうかの構造事実観察を行う。絞り式は rank-based 固定 + 3 軸 per-atom + 段 4-d 動的計算 100% カバレッジで Code A の独自発明と妥協を排除、Aruism 規律を仕様として担保、設計の意図と実体のズレは「音痴のまま試行しない」原則で動的計算採用。*
