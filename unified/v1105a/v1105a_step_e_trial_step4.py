@@ -166,6 +166,8 @@ def main():
                 })
 
     labels_df = pd.DataFrame(label_rows)
+    # LAYER_A bit-identity: 最終 sort で行順序決定論化
+    labels_df = labels_df.sort_values(['seed', 'event_id', 'series_id']).reset_index(drop=True)
     out_labels = V1105A_MAIN / 'trial_step4_labels.parquet'
     labels_df.to_parquet(out_labels, index=False)
     print(f'wrote {out_labels.name} ({len(labels_df):,} rows = 60,000 events × 7 系列)')
@@ -176,6 +178,8 @@ def main():
     dist['structural_label'] = dist.apply(
         lambda r: label_lookup.get((r['seed'], r['event_id'], r['series_id']), 'unknown'),
         axis=1)
+    # LAYER_A bit-identity: 最終 sort で行順序決定論化
+    dist = dist.sort_values(['seed', 'event_id', 'series_id', 'candidate_atom']).reset_index(drop=True)
     out_dist = V1105A_MAIN / 'trial_step4_distributions.parquet'
     dist.to_parquet(out_dist, index=False)
     print(f'wrote {out_dist.name} ({len(dist):,} rows、構造ラベル付き分布)')

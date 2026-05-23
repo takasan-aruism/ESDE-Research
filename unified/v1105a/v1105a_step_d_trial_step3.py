@@ -259,6 +259,8 @@ def main():
                 })
 
     df = pd.DataFrame(out_rows)
+    # LAYER_A bit-identity: 最終 sort で行順序決定論化
+    df = df.sort_values(['seed', 'event_id', 'series_id', 'candidate_atom']).reset_index(drop=True)
     out = V1105A_MAIN / 'trial_step3_distributions.parquet'
     df.to_parquet(out, index=False)
     print(f'\n[4] wrote {out.name} ({len(df):,} rows, elapsed {time.time()-t0:.1f}s)')

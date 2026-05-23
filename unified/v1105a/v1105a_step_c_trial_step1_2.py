@@ -143,6 +143,8 @@ def main():
               f'rows so far={len(rows):,}, elapsed {time.time()-ts:.1f}s')
 
     df = pd.DataFrame(rows)
+    # LAYER_A bit-identity: 最終 sort で行順序決定論化
+    df = df.sort_values(['seed', 'event_id', 'source_layer', 'candidate_atom']).reset_index(drop=True)
     out = V1105A_MAIN / 'trial_step2_associations.parquet'
     df.to_parquet(out, index=False)
     print(f'\nwrote {out.name} ({len(df):,} rows, elapsed {time.time()-t0:.1f}s)')

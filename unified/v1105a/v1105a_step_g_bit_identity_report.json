@@ -1,0 +1,162 @@
+{
+  "version": "v11.0.5a (v1105a) Step G",
+  "timestamp": "2026-05-23T23:55:30Z",
+  "layer_a": {
+    "hash_match": {
+      "trial_step2_associations.parquet": true,
+      "trial_step3_distributions.parquet": true,
+      "trial_step4_labels.parquet": true,
+      "trial_step4_distributions.parquet": true,
+      "trial_summary_metrics.parquet": true,
+      "trial_layer_jaccard.parquet": true,
+      "trial_source_layer_overlap.parquet": true
+    },
+    "rerun_sec": {
+      "v1105a_step_c_trial_step1_2.py": 4.48,
+      "v1105a_step_d_trial_step3.py": 11.08,
+      "v1105a_step_e_trial_step4.py": 13.44,
+      "v1105a_step_f_aggregate.py": 2.98
+    },
+    "all_match": true
+  },
+  "layer_b": {
+    "v105_sal": {
+      "pre": 24,
+      "post": 24,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v105_int": {
+      "pre": 144,
+      "post": 144,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v106": {
+      "pre": 731,
+      "post": 731,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v107": {
+      "pre": 222,
+      "post": 222,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v112": {
+      "pre": 207,
+      "post": 207,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1101a": {
+      "pre": 131,
+      "post": 131,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1102": {
+      "pre": 3,
+      "post": 3,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1103": {
+      "pre": 7,
+      "post": 7,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1104": {
+      "pre": 13,
+      "post": 13,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1104a": {
+      "pre": 8,
+      "post": 8,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1105": {
+      "pre": 4,
+      "post": 4,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "all_pass": true
+  },
+  "layer_c": {
+    "n": 7,
+    "all_under": true,
+    "findings": [
+      {
+        "script": "v1105a_step_c_trial_step1_2.py",
+        "method": "to_parquet",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1105a_step_d_trial_step3.py",
+        "method": "to_parquet",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1105a_step_e_trial_step4.py",
+        "method": "to_parquet",
+        "captured": "out_labels",
+        "under": true
+      },
+      {
+        "script": "v1105a_step_e_trial_step4.py",
+        "method": "to_parquet",
+        "captured": "out_dist",
+        "under": true
+      },
+      {
+        "script": "v1105a_step_f_aggregate.py",
+        "method": "to_parquet",
+        "captured": "out_sum",
+        "under": true
+      },
+      {
+        "script": "v1105a_step_f_aggregate.py",
+        "method": "to_parquet",
+        "captured": "out_jacc",
+        "under": true
+      },
+      {
+        "script": "v1105a_step_f_aggregate.py",
+        "method": "to_parquet",
+        "captured": "out_olap",
+        "under": true
+      }
+    ]
+  },
+  "all_layers_pass": true
+}
