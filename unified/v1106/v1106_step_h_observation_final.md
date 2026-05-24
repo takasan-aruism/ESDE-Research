@@ -225,6 +225,85 @@ Code A 構造事実 (v1106 4 観察) の提示完了。以下は Web Claude + Ta
 
 ---
 
-## 12. 一文サマリ (再掲)
+## 12. v1106 で古い Synapse v3 を使った経緯 + Taka 判断 v1106a 移行 (Step H 報告書追記、2026-05-25)
+
+### 12.1 経緯
+
+v1106 設計書 §0.1 全体図の「Synapse (Atom ↔ 単語マッピング、1-10 強度、約 2 万語)」記述に基づき、Code A は実環境で `language/synapse/esde_synapses_v3.json` (+ patches v3.1-v3.5 overlay) を Synapse データとして採用。SynapseStore overlay 経由で 11,581 synset / 326 atoms を読み込み、接続式 score = Σ p_s7 × syn_weight で接続点検を全 4 観察実施。
+
+### 12.2 Taka 指摘で発覚した不一致 (2026-05-25)
+
+Step H 報告完了後、Taka より:
+> Lexicon 側 A1 batch というのが最新。これは 8 日間 1 億トークン LLM を回して作ったもの。これが最新。古い synapse は使わなくなったはず。
+> やっぱりあった。間違ったもの使って結果を数値化してもそりゃ意味がない。WordNet 利用したやつは精度が低すぎてだめだねぇって言ってたやつだしなぁ。
+
+Code A 追加調査で発見:
+- **`language/lexicon/data/mapper_output/*_a1.jsonl`** (325 atom 別 jsonl、合計 126 MB) が **最新の LLM 1 億トークン重み付きデータ本体**
+- 各 entry に `raw_scores` (48 axes × **0-10 整数 = Taka 言及「10 段階」と完全一致**) + `normalized_scores` (0-1 確率) + `entropy_norm` / `focus_rate` / `top5` / `status` / `evidence` / `llm_elapsed_sec` (mean 57.5s/word、Taka「8 日間 1 億トークン」規模に合致)
+- atom × 48 axes 全部に LLM 判定スコア、word の構造を完全分解
+
+### 12.3 古い Synapse v3 と最新 mapper_output の対比
+
+| | Synapse v3 (v1106 で使用 = 古い) | **mapper_output (本来の最新)** |
+|---|---|---|
+| 単位 | atom → synset (lemma.pos.sense) | **atom × word の 48 axes 全 score** |
+| 重み生成 | model: all-MiniLM-L6-v2 (sentence embedding) | **LLM (1 億トークン、約 8 日間)** |
+| スコア | weight 0-1 (sentence-BERT 由来、Taka 評価「精度が低すぎてだめ」) | **raw_scores 0-10 整数 (LLM 判定) + normalized_scores 0-1** |
+| 件数 | 11,581 synset / 326 atom | 325 atom × 数百 word = 数万 entries |
+| 構造 | atom → synset 単方向 weight | **48 axes 全部に score、word の構造を完全分解** |
+| timestamp | 2026-01-18 | 2026-03-21 (約 2 ヶ月新しい) |
+
+### 12.4 v1106 結果の位置づけ (Taka 判断、案 Y 採用)
+
+**Taka 判断 (2026-05-25 原文)**:
+> 間違えた記録を残すという意味で案 Y、ただし v1106a として扱うこと。
+
+- **案 Y 採用**: v1106 結果はそのまま記録、新しいデータでの接続は v1106a として並行で扱う (v1106b でなく v1106a、つまり同主題の段階 2、v1101a/v1104a/v1105a と同型のマイナーバージョン)
+- v1106 結果の位置づけ: **「古い Synapse v3 を使った接続点検の記録」** = 構造事実としては有効だが「ESDE が話せる素材」を見る本来目的とはズレた結果
+- **v1106a = mapper_output (LLM raw_scores/normalized_scores) ベースの新規 Synapse 接続点検** が新主題、Web Claude 設計待ち
+
+### 12.5 規律的反省 (Taka 規律「ラッキー判定の余地なし」の再適用)
+
+- 設計書 §0.1 図の「Synapse」は古い概念図のまま v1106 設計に組み込まれた (古い前提が引き継がれた)
+- Code A Step A 実環境照合で `language/synapse/esde_synapses_v3.json` を見つけて「これが Synapse」と判断、`language/lexicon/data/mapper_output/` を見落とした
+- v1106 Phase Result 前の段階で発覚 = Taka 規律「**本番前に気づけたのはラッキー、忘れ物を取りに戻っても遅刻しないなら戻るべき**」(歌手の音痴比喩) の再適用
+- WordNet 利用 (Synapse v3 = sentence-BERT) は Taka 評価「精度が低すぎてだめ」と既に言われていたものを使ってしまった = 過去判断の参照漏れ
+
+### 12.6 v1106 出力の今後の扱い
+
+- v1106 出力 13.4M rows + 各種 parquet は **古い Synapse v3 接続の記録として保存維持** (削除しない、間違いの記録)
+- v1106a で mapper_output ベースの接続点検を新規実施 (Web Claude 設計待ち)
+- v1106 + v1106a 統合 Phase Result で「古いデータと新しいデータでの接続結果の差」が構造事実として記録される可能性 (Web Claude/Taka 領域)
+
+### 12.7 mapper_output 実体構造 (v1106a Code A Step A の事前情報として記録)
+
+```python
+# language/lexicon/data/mapper_output/<ATOM>_a1.jsonl の entry 例
+{
+  "word": "actable", "pos": "adj", "atom": "ACT.build",
+  "raw_scores": {  # 48 axes × 0-10 整数 (LLM 直接判定)
+    "ontological.material": 10.0,
+    "experience.creation": 5.0,
+    "value_generation.functional": 5.0,
+    ...  # 48 axes 全て
+  },
+  "normalized_scores": {  # 48 axes × 0-1 確率 (raw_scores の確率化)
+    "ontological.material": 0.9924,
+    ...
+  },
+  "entropy_norm": 0.5, "focus_rate": 0.47,
+  "status": "OK" / "Diffuse_Observation" / "Observation_Failed",
+  "top5": [{"axis_level": "...", "p": 0.99}, ...],
+  "evidence": [...], "llm_elapsed_sec": 57.5, "timestamp": "..."
+}
+```
+
+統計 (1 ファイル sample、ACT_build_a1.jsonl):
+- 行数: 474 (atom 1 つあたり数百 word)
+- raw_scores max: **10.0** が複数 axis で出現 = Taka 言及「10 段階」と完全一致
+
+---
+
+## 13. 一文サマリ (再掲)
 
 Step A-G 全完了、Step A (Taka 指摘 4 点反映 + 確認要請 8/9 案 A 両方承認) → Step B (環境準備 SynapseStore overlay 11,581 synset / 326 atoms / 1,520 frozen baseline / FND.spaceless 防御的除外) → Step C (観察 1 Atom → synset 変換、13.4M rows / 23.1k event-series 全 synset_distribution_valid 100% / n_synsets mean 582 / max_prob mean 0.008 で Aruism 担保) → Step D (観察 2 Synapse 強度 vs s7 整合、top1_weight=1.0 普遍タイで Spearman 計算不能、mean_syn_strength 0.53 微差別化) → Step E (観察 3 候補広がり/絞り、s7 max coverage 4% / s1-s6 max 12% で候補爆発リスク観察可能範囲) → Step F (観察 4 7 系列 layer_jaccard、s7 vs raw 0.84 / s7 vs qweighted 0.63 で s7 独立挙動 #L40 持続、s1 vs s5 = 0.99 で couple_bonus 効果ほぼなし、s1-s6 集計値完全同値 = density 6 種が Synapse 接続段階で平均化) → Step G (bit-identity 3 層全 PASS: LAYER_A 8 ファイル hash 一致 32.9s / LAYER_B 1,520 frozen Synapse 含む / LAYER_C 8 件 unified/v1106/ 配下)、**v1106a 接続条件 4 点すべて構造的成立** (条件 1 PC 23,100 / 条件 2 distribution_valid max_prob mean 0.008-0.011 entropy 5.4-5.9 / 条件 3 候補爆発 s7 max coverage 4% 制御不能でない / 条件 4 s7 主軸構造的存在 n_synsets mean 298)、新規留保候補 #L41-L43 提示 (Synapse weight=1.0 普遍化 / density 6 種平均化 / FND.spaceless 欠落理由 v1107 以降)、既存留保 #L17/#L21'/#L22'/#L24-29/#L30-L36/#L37-L40 + 48 次元人為性留保継承、v1106a 着手 vs v1106b 移行判定 + Phase Result 統合 + #L41-L43 解釈統合は Web Claude Phase Result + Taka 主題評価領域、規律遵守 (絶対格言 + selector 化禁止 + LLM 呼び出し禁止 + 妄想化回避 + Synapse frozen + SynapseStore 仕様遵守 + 接続式独自発明禁止 + 7 系列統合禁止 + Atom 単体限界継承) を全 Step で堅持、書込み unified/v1106/ 配下のみ。
