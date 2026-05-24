@@ -1,0 +1,185 @@
+{
+  "version": "v11.0.6 (v1106) Step G",
+  "timestamp": "2026-05-24T18:38:42Z",
+  "layer_a": {
+    "hash_match": {
+      "observation_1_synset_distributions.parquet": true,
+      "observation_1_labels.parquet": true,
+      "observation_1_excluded_fnd_spaceless.json": true,
+      "observation_2_synapse_alignment.parquet": true,
+      "observation_3_expansion.parquet": true,
+      "observation_3_summary.parquet": true,
+      "observation_4_layer_jaccard.parquet": true,
+      "observation_4_series_comparison.parquet": true
+    },
+    "rerun_sec": {
+      "v1106_step_c_observation_1.py": 20.53,
+      "v1106_step_d_observation_2.py": 3.76,
+      "v1106_step_e_observation_3.py": 0.4,
+      "v1106_step_f_observation_4.py": 8.2
+    },
+    "all_match": true
+  },
+  "layer_b": {
+    "v105_sal": {
+      "pre": 24,
+      "post": 24,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v105_int": {
+      "pre": 144,
+      "post": 144,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v106": {
+      "pre": 731,
+      "post": 731,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v107": {
+      "pre": 222,
+      "post": 222,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v112": {
+      "pre": 207,
+      "post": 207,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1101a": {
+      "pre": 131,
+      "post": 131,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1102": {
+      "pre": 3,
+      "post": 3,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1103": {
+      "pre": 7,
+      "post": 7,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1104": {
+      "pre": 13,
+      "post": 13,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1104a": {
+      "pre": 8,
+      "post": 8,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1105": {
+      "pre": 4,
+      "post": 4,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1105a": {
+      "pre": 7,
+      "post": 7,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "language_synapse": {
+      "pre": 19,
+      "post": 19,
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "all_pass": true
+  },
+  "layer_c": {
+    "n": 8,
+    "all_under": true,
+    "findings": [
+      {
+        "script": "v1106_step_c_observation_1.py",
+        "method": "to_parquet",
+        "captured": "out1",
+        "under": true
+      },
+      {
+        "script": "v1106_step_c_observation_1.py",
+        "method": "to_parquet",
+        "captured": "out2",
+        "under": true
+      },
+      {
+        "script": "v1106_step_c_observation_1.py",
+        "method": "write_text",
+        "captured": "out3",
+        "under": true
+      },
+      {
+        "script": "v1106_step_d_observation_2.py",
+        "method": "to_parquet",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1106_step_e_observation_3.py",
+        "method": "to_parquet",
+        "captured": "out",
+        "under": true
+      },
+      {
+        "script": "v1106_step_e_observation_3.py",
+        "method": "to_parquet",
+        "captured": "out2",
+        "under": true
+      },
+      {
+        "script": "v1106_step_f_observation_4.py",
+        "method": "to_parquet",
+        "captured": "out1",
+        "under": true
+      },
+      {
+        "script": "v1106_step_f_observation_4.py",
+        "method": "to_parquet",
+        "captured": "out2",
+        "under": true
+      }
+    ]
+  },
+  "all_layers_pass": true
+}
