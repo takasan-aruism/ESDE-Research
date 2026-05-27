@@ -45,9 +45,22 @@ V1106B_MAIN = REPO / 'unified/v1106b/outputs/main'
 
 FAM_LOW_THRESH = 10.0
 FAM_HIGH_THRESH = 50.0
-N_PER_BIN = 5  # 各 bin あたり 5 CID
-TARGET_CIDS_PER_SEED = 40
-TARGET_TOTAL = 24 * TARGET_CIDS_PER_SEED  # 960
+
+# 案 E 採用 (Taka 2026-05-28 承認): bin 再設計
+# - hosted/ghost low は ESDE 構造上希少のため除外
+# - reaped high を追加 (per_seed 平均 65 個で余裕)
+# - ghost は per_seed 3 CID に減 (CID 数限界)
+SELECT_BINS_E = [
+    ('hosted', 'mid', 5),
+    ('hosted', 'high', 5),
+    ('ghost', 'mid', 3),   # ghost mid は per_seed 平均 2-3 で 3 CID 確保
+    ('ghost', 'high', 5),
+    ('reaped', 'low', 5),
+    ('reaped', 'mid', 5),
+    ('reaped', 'high', 5),  # 新規追加
+]
+TARGET_CIDS_PER_SEED = sum(n for _, _, n in SELECT_BINS_E)  # 33
+TARGET_TOTAL = 24 * TARGET_CIDS_PER_SEED  # 792
 
 
 def main():
@@ -142,14 +155,11 @@ def main():
     pivot.to_parquet(out2)
     print(f'\n  wrote {out2.name}')
 
-    # (4) 開始 CID 選定 (8 bin × 5 CID/bin = 40 CID/seed)
-    print('\n[4] 開始 CID 選定 (各 seed 40 CID 目標)')
-    SELECT_BINS = [
-        ('hosted', 'low'), ('hosted', 'mid'), ('hosted', 'high'),
-        ('ghost', 'low'), ('ghost', 'mid'), ('ghost', 'high'),
-        ('reaped', 'low'), ('reaped', 'mid'),  # reaped high は対象外 (Code A 認識確認 §4.3)
-    ]
-    print(f'  対象 bin (8 bin): {SELECT_BINS}')
+    # (4) 開始 CID 選定 (案 E、7 bin × per_bin CID 数指定 = 33 CID/seed)
+    print(f'\n[4] 開始 CID 選定 (案 E、各 seed {TARGET_CIDS_PER_SEED} CID 目標)')
+    print(f'  対象 bin (7 bin、per_bin CID 数指定):')
+    for fs, fb, n in SELECT_BINS_E:
+        print(f'    ({fs}, {fb}): {n} CID')
 
     selected = []
     underfill = []  # (seed, bin, available, target)
@@ -157,17 +167,16 @@ def main():
 
     for sd in range(24):
         sub = cid_props[cid_props['seed'] == sd]
-        for fs, fb in SELECT_BINS:
+        for fs, fb, n_target in SELECT_BINS_E:
             cands = sub[(sub['final_state'] == fs) & (sub['fam_bin'] == fb)]
-            if len(cands) >= N_PER_BIN:
-                chosen = cands.sample(n=N_PER_BIN, random_state=42)
+            if len(cands) >= n_target:
+                chosen = cands.sample(n=n_target, random_state=42)
             else:
                 chosen = cands  # 全部採用
-                if len(cands) < N_PER_BIN:
-                    underfill.append({
-                        'seed': sd, 'final_state': fs, 'fam_bin': fb,
-                        'available': len(cands), 'target': N_PER_BIN,
-                    })
+                underfill.append({
+                    'seed': sd, 'final_state': fs, 'fam_bin': fb,
+                    'available': len(cands), 'target': n_target,
+                })
             for _, r in chosen.iterrows():
                 selected.append({
                     'seed': int(r['seed']), 'cid': int(r['cid']),
