@@ -1,0 +1,1582 @@
+{
+  "dialogue_id": "code_a_chat",
+  "created_at": "2026-05-27T16:08:34Z",
+  "turns": [
+    {
+      "turn": 0,
+      "role": "esde",
+      "seed": 7,
+      "cid": 143,
+      "cid_vec_norm": 2.81626775957574,
+      "cid_props": {
+        "n_alphas_currently": 0,
+        "last_familiarity_max": 116.2234,
+        "current_stability": 0.7059,
+        "current_familiarity": 27.8189,
+        "current_social": 0.1842,
+        "current_spread": 0.7627,
+        "C_at_run_end": 0,
+        "final_state": "ghost"
+      },
+      "atom_probs": [
+        {
+          "atom": "PRP.easy",
+          "prob": 0.10650126138276199
+        },
+        {
+          "atom": "COG.learn",
+          "prob": 0.10415842657194611
+        },
+        {
+          "atom": "WLD.technique",
+          "prob": 0.10290105899764614
+        },
+        {
+          "atom": "ECO.withdraw",
+          "prob": 0.10230936803375437
+        },
+        {
+          "atom": "TIM.moment",
+          "prob": 0.0992983978871092
+        },
+        {
+          "atom": "ECO.save",
+          "prob": 0.09859296825917029
+        },
+        {
+          "atom": "COM.practice",
+          "prob": 0.0974313589335818
+        },
+        {
+          "atom": "COG.instinct",
+          "prob": 0.0969312206914668
+        },
+        {
+          "atom": "CHG.advance",
+          "prob": 0.0963990220960914
+        },
+        {
+          "atom": "FND.memory",
+          "prob": 0.09547691714647197
+        }
+      ],
+      "top_words": [
+        {
+          "word": "review",
+          "prob": 0.006638199405832982
+        },
+        {
+          "word": "sack",
+          "prob": 0.003697492713469705
+        },
+        {
+          "word": "easy",
+          "prob": 0.003632869069743919
+        },
+        {
+          "word": "survey",
+          "prob": 0.0035284848979974903
+        },
+        {
+          "word": "assay",
+          "prob": 0.0035213943343706524
+        },
+        {
+          "word": "nose",
+          "prob": 0.0035213806680043373
+        },
+        {
+          "word": "study",
+          "prob": 0.0034971883778830777
+        },
+        {
+          "word": "acquire",
+          "prob": 0.003495940757013226
+        },
+        {
+          "word": "cache",
+          "prob": 0.003450365354193926
+        },
+        {
+          "word": "recall",
+          "prob": 0.0034193104581108137
+        },
+        {
+          "word": "coach",
+          "prob": 0.0033918167870770656
+        },
+        {
+          "word": "preserve",
+          "prob": 0.0033665314931783093
+        },
+        {
+          "word": "provision",
+          "prob": 0.0033489821548290354
+        },
+        {
+          "word": "find",
+          "prob": 0.003347256561185231
+        },
+        {
+          "word": "memory",
+          "prob": 0.003326954492537765
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "role": "human",
+      "response": "What did you learn from this long study?",
+      "tokens": [
+        "what",
+        "learn",
+        "long",
+        "study"
+      ],
+      "matched_words": [
+        "learn",
+        "long",
+        "study"
+      ],
+      "unmatched_words": [
+        "what"
+      ],
+      "top_atoms": [
+        {
+          "atom": "SOC.individual",
+          "prob": 0.1977808436560276
+        },
+        {
+          "atom": "COG.learn",
+          "prob": 0.14733513731800166
+        },
+        {
+          "atom": "EXS.being",
+          "prob": 0.10726860936090453
+        },
+        {
+          "atom": "LOG.cause",
+          "prob": 0.10405828112752194
+        },
+        {
+          "atom": "CHG.begin",
+          "prob": 0.09353737653602526
+        }
+      ],
+      "top_cid_candidates": [
+        {
+          "seed": 15,
+          "cid": 233,
+          "score": 0.4343831004851703,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 116.2234,
+            "current_stability": 0.6934,
+            "current_familiarity": 30.402,
+            "current_social": 0.125,
+            "current_spread": 0.7351,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        },
+        {
+          "seed": 6,
+          "cid": 242,
+          "score": 0.4330615917838234,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 116.2234,
+            "current_stability": 0.7414,
+            "current_familiarity": 24.5733,
+            "current_social": 0.1489,
+            "current_spread": 0.7317,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        },
+        {
+          "seed": 20,
+          "cid": 308,
+          "score": 0.43177085753663824,
+          "props": {
+            "n_alphas_currently": 3,
+            "last_familiarity_max": 116.2234,
+            "current_stability": 0.6569,
+            "current_familiarity": 20.9024,
+            "current_social": 0.1967,
+            "current_spread": 0.7525,
+            "C_at_run_end": 8,
+            "final_state": "hosted"
+          }
+        },
+        {
+          "seed": 0,
+          "cid": 203,
+          "score": 0.431733966507216,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 19.5055,
+            "current_stability": 0.6829,
+            "current_familiarity": 12.4325,
+            "current_social": 0.1316,
+            "current_spread": 0.7853,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        },
+        {
+          "seed": 18,
+          "cid": 215,
+          "score": 0.43161673188372757,
+          "props": {
+            "n_alphas_currently": 1,
+            "last_familiarity_max": 14.7378,
+            "current_stability": 0.6475,
+            "current_familiarity": 5.5702,
+            "current_social": 0.4286,
+            "current_spread": 0.8181,
+            "C_at_run_end": 8,
+            "final_state": "hosted"
+          }
+        }
+      ],
+      "chosen_next": {
+        "seed": 15,
+        "cid": 233,
+        "score": 0.4343831004851703,
+        "mode": "top1"
+      }
+    },
+    {
+      "turn": 2,
+      "role": "esde",
+      "seed": 15,
+      "cid": 233,
+      "cid_vec_norm": 2.8990885821284085,
+      "cid_props": {
+        "n_alphas_currently": 0,
+        "last_familiarity_max": 116.2234,
+        "current_stability": 0.6934,
+        "current_familiarity": 30.402,
+        "current_social": 0.125,
+        "current_spread": 0.7351,
+        "C_at_run_end": 0,
+        "final_state": "reaped"
+      },
+      "atom_probs": [
+        {
+          "atom": "ACT.stand",
+          "prob": 0.10609160296958259
+        },
+        {
+          "atom": "ACT.go",
+          "prob": 0.10195553845693148
+        },
+        {
+          "atom": "CHG.grow",
+          "prob": 0.10023068497358759
+        },
+        {
+          "atom": "ACT.rise",
+          "prob": 0.10017375587545536
+        },
+        {
+          "atom": "ECO.withdraw",
+          "prob": 0.10008296928718648
+        },
+        {
+          "atom": "SOC.pass",
+          "prob": 0.09950139660476359
+        },
+        {
+          "atom": "ACT.arrive",
+          "prob": 0.09885530959864856
+        },
+        {
+          "atom": "CHG.begin",
+          "prob": 0.09839934213185915
+        },
+        {
+          "atom": "MAT.tool",
+          "prob": 0.09759130445498794
+        },
+        {
+          "atom": "ACT.obtain",
+          "prob": 0.09711809564699728
+        }
+      ],
+      "top_words": [
+        {
+          "word": "rise",
+          "prob": 0.004921305026299971
+        },
+        {
+          "word": "stand",
+          "prob": 0.004910378899902785
+        },
+        {
+          "word": "jack",
+          "prob": 0.00450438661781696
+        },
+        {
+          "word": "leaf",
+          "prob": 0.003988755080976427
+        },
+        {
+          "word": "sprout",
+          "prob": 0.003964031772680655
+        },
+        {
+          "word": "limp",
+          "prob": 0.003957461488286913
+        },
+        {
+          "word": "stool",
+          "prob": 0.00381587606210676
+        },
+        {
+          "word": "pod",
+          "prob": 0.0038150318503522088
+        },
+        {
+          "word": "get up",
+          "prob": 0.0035271530234484384
+        },
+        {
+          "word": "go",
+          "prob": 0.003491084473600015
+        },
+        {
+          "word": "climb",
+          "prob": 0.0034121950242528005
+        },
+        {
+          "word": "tap",
+          "prob": 0.003404763170105631
+        },
+        {
+          "word": "hike",
+          "prob": 0.003331695591927404
+        },
+        {
+          "word": "head",
+          "prob": 0.0033228031368379694
+        },
+        {
+          "word": "tiller",
+          "prob": 0.0033090575296918093
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "role": "human",
+      "response": "Where will you go after you rise?",
+      "tokens": [
+        "where",
+        "will",
+        "go",
+        "after",
+        "rise"
+      ],
+      "matched_words": [
+        "will",
+        "go",
+        "rise"
+      ],
+      "unmatched_words": [
+        "where",
+        "after"
+      ],
+      "top_atoms": [
+        {
+          "atom": "EXS.being",
+          "prob": 0.15375595289184693
+        },
+        {
+          "atom": "FND.transformation",
+          "prob": 0.11088445061502344
+        },
+        {
+          "atom": "ACT.go",
+          "prob": 0.09910106547904017
+        },
+        {
+          "atom": "ACT.stand",
+          "prob": 0.09488710242377028
+        },
+        {
+          "atom": "ACT.rise",
+          "prob": 0.09286342922094003
+        }
+      ],
+      "top_cid_candidates": [
+        {
+          "seed": 9,
+          "cid": 135,
+          "score": 0.39505871572172374,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 20.0281,
+            "current_stability": 0.6418,
+            "current_familiarity": 10.4909,
+            "current_social": 0.0882,
+            "current_spread": 0.8006,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        },
+        {
+          "seed": 0,
+          "cid": 7,
+          "score": 0.3932211238683835,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 18.0315,
+            "current_stability": 0.6258,
+            "current_familiarity": 5.3024,
+            "current_social": 0.1935,
+            "current_spread": 0.7751,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        },
+        {
+          "seed": 3,
+          "cid": 271,
+          "score": 0.39121186370192557,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 24.7014,
+            "current_stability": null,
+            "current_familiarity": null,
+            "current_social": null,
+            "current_spread": null,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        },
+        {
+          "seed": 21,
+          "cid": 180,
+          "score": 0.3907053100590894,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 21.18,
+            "current_stability": 0.7427,
+            "current_familiarity": 8.7071,
+            "current_social": 0.1224,
+            "current_spread": 0.803,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        },
+        {
+          "seed": 21,
+          "cid": 161,
+          "score": 0.39009601896547014,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 22.8936,
+            "current_stability": 0.6683,
+            "current_familiarity": 9.3269,
+            "current_social": 0.125,
+            "current_spread": 0.7806,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        }
+      ],
+      "chosen_next": {
+        "seed": 9,
+        "cid": 135,
+        "score": 0.39505871572172374,
+        "mode": "top1"
+      }
+    },
+    {
+      "turn": 4,
+      "role": "esde",
+      "seed": 9,
+      "cid": 135,
+      "cid_vec_norm": 2.8613610871417174,
+      "cid_props": {
+        "n_alphas_currently": 0,
+        "last_familiarity_max": 20.0281,
+        "current_stability": 0.6418,
+        "current_familiarity": 10.4909,
+        "current_social": 0.0882,
+        "current_spread": 0.8006,
+        "C_at_run_end": 0,
+        "final_state": "reaped"
+      },
+      "atom_probs": [
+        {
+          "atom": "TIM.appear",
+          "prob": 0.10471092658783335
+        },
+        {
+          "atom": "ACT.stand",
+          "prob": 0.10247694507740715
+        },
+        {
+          "atom": "PRP.shallow",
+          "prob": 0.10166173799658239
+        },
+        {
+          "atom": "CHG.grow",
+          "prob": 0.09988803382833228
+        },
+        {
+          "atom": "ACT.rise",
+          "prob": 0.099817470192443
+        },
+        {
+          "atom": "ACT.go",
+          "prob": 0.09932721411212304
+        },
+        {
+          "atom": "PER.see",
+          "prob": 0.09837696042809832
+        },
+        {
+          "atom": "MAT.tool",
+          "prob": 0.09836990197602812
+        },
+        {
+          "atom": "ACT.emit",
+          "prob": 0.09774675560116027
+        },
+        {
+          "atom": "PRP.small",
+          "prob": 0.0976240541999921
+        }
+      ],
+      "top_words": [
+        {
+          "word": "peep",
+          "prob": 0.005087271165703934
+        },
+        {
+          "word": "rise",
+          "prob": 0.0042412651631064105
+        },
+        {
+          "word": "stand",
+          "prob": 0.00423168846461474
+        },
+        {
+          "word": "surface",
+          "prob": 0.004025403502707573
+        },
+        {
+          "word": "jack",
+          "prob": 0.003967958149227627
+        },
+        {
+          "word": "heave",
+          "prob": 0.0030705119218617503
+        },
+        {
+          "word": "get up",
+          "prob": 0.003054929977016454
+        },
+        {
+          "word": "lift",
+          "prob": 0.00298084582759621
+        },
+        {
+          "word": "face",
+          "prob": 0.0029523492286786957
+        },
+        {
+          "word": "front",
+          "prob": 0.0029351146178291316
+        },
+        {
+          "word": "climb",
+          "prob": 0.0029283796987498124
+        },
+        {
+          "word": "hike",
+          "prob": 0.0028941537267750165
+        },
+        {
+          "word": "shallow",
+          "prob": 0.002849159361131489
+        },
+        {
+          "word": "shoot",
+          "prob": 0.0028093498204593646
+        },
+        {
+          "word": "roar",
+          "prob": 0.00267832526539194
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "role": "human",
+      "response": "I see your face appearing on the surface",
+      "tokens": [
+        "see",
+        "face",
+        "appearing",
+        "surface"
+      ],
+      "matched_words": [
+        "see",
+        "face",
+        "surface"
+      ],
+      "unmatched_words": [
+        "appearing"
+      ],
+      "top_atoms": [
+        {
+          "atom": "PER.see",
+          "prob": 0.145220238679745
+        },
+        {
+          "atom": "SOC.individual",
+          "prob": 0.13111894997111154
+        },
+        {
+          "atom": "ABS.bound",
+          "prob": 0.12557767439880974
+        },
+        {
+          "atom": "PRP.shallow",
+          "prob": 0.0788247059712355
+        },
+        {
+          "atom": "COG.know",
+          "prob": 0.07071392534174402
+        }
+      ],
+      "top_cid_candidates": [
+        {
+          "seed": 8,
+          "cid": 197,
+          "score": 0.42428420512041226,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 6.1427,
+            "current_stability": 0.6479,
+            "current_familiarity": 3.1508,
+            "current_social": 0.102,
+            "current_spread": 0.7659,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        },
+        {
+          "seed": 12,
+          "cid": 225,
+          "score": 0.4211273110466699,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 11.9847,
+            "current_stability": 0.7032,
+            "current_familiarity": 8.0533,
+            "current_social": 0.1,
+            "current_spread": 0.6972,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        },
+        {
+          "seed": 12,
+          "cid": 142,
+          "score": 0.4199172327172417,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 8.4454,
+            "current_stability": 0.5678,
+            "current_familiarity": 2.6758,
+            "current_social": 0.098,
+            "current_spread": 0.7561,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        },
+        {
+          "seed": 15,
+          "cid": 104,
+          "score": 0.41959323468173887,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 0.936,
+            "current_stability": 0.6447,
+            "current_familiarity": 0.644,
+            "current_social": 0.0455,
+            "current_spread": 0.7698,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        },
+        {
+          "seed": 6,
+          "cid": 199,
+          "score": 0.4190721025669398,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 5.8487,
+            "current_stability": 0.7043,
+            "current_familiarity": 2.6854,
+            "current_social": 0.2326,
+            "current_spread": 0.7436,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        }
+      ],
+      "chosen_next": {
+        "seed": 8,
+        "cid": 197,
+        "score": 0.42428420512041226,
+        "mode": "top1"
+      }
+    },
+    {
+      "turn": 6,
+      "role": "esde",
+      "seed": 8,
+      "cid": 197,
+      "cid_vec_norm": 2.963674236287167,
+      "cid_props": {
+        "n_alphas_currently": 0,
+        "last_familiarity_max": 6.1427,
+        "current_stability": 0.6479,
+        "current_familiarity": 3.1508,
+        "current_social": 0.102,
+        "current_spread": 0.7659,
+        "C_at_run_end": 0,
+        "final_state": "reaped"
+      },
+      "atom_probs": [
+        {
+          "atom": "TIM.appear",
+          "prob": 0.10881874301599927
+        },
+        {
+          "atom": "PER.see",
+          "prob": 0.10561547991374345
+        },
+        {
+          "atom": "ACT.stand",
+          "prob": 0.10143037286756884
+        },
+        {
+          "atom": "ACT.rise",
+          "prob": 0.09950455867745685
+        },
+        {
+          "atom": "PRP.shallow",
+          "prob": 0.0994016251135764
+        },
+        {
+          "atom": "CHG.grow",
+          "prob": 0.09819632439282076
+        },
+        {
+          "atom": "ACT.emit",
+          "prob": 0.09771933870057313
+        },
+        {
+          "atom": "MAT.tool",
+          "prob": 0.09672484087183691
+        },
+        {
+          "atom": "BOD.eye",
+          "prob": 0.09641682274750127
+        },
+        {
+          "atom": "ACT.go",
+          "prob": 0.09617189369892308
+        }
+      ],
+      "top_words": [
+        {
+          "word": "peep",
+          "prob": 0.006219326946907564
+        },
+        {
+          "word": "look",
+          "prob": 0.004236463493334486
+        },
+        {
+          "word": "rise",
+          "prob": 0.0042314629526997655
+        },
+        {
+          "word": "stand",
+          "prob": 0.004221871715953877
+        },
+        {
+          "word": "peek",
+          "prob": 0.0041980003045787
+        },
+        {
+          "word": "see",
+          "prob": 0.004188416109177704
+        },
+        {
+          "word": "eye",
+          "prob": 0.0040894832130890955
+        },
+        {
+          "word": "surface",
+          "prob": 0.00408178835334193
+        },
+        {
+          "word": "squint",
+          "prob": 0.003991593468120172
+        },
+        {
+          "word": "glance",
+          "prob": 0.003959446149716692
+        },
+        {
+          "word": "jack",
+          "prob": 0.0039448818159871
+        },
+        {
+          "word": "stare",
+          "prob": 0.0038799304199450073
+        },
+        {
+          "word": "glimpse",
+          "prob": 0.003538890094743891
+        },
+        {
+          "word": "regard",
+          "prob": 0.003153133211551192
+        },
+        {
+          "word": "gaze",
+          "prob": 0.003149374681727936
+        }
+      ]
+    },
+    {
+      "turn": 7,
+      "role": "human",
+      "response": "Our eyes meet across this moment",
+      "tokens": [
+        "eyes",
+        "meet",
+        "across",
+        "moment"
+      ],
+      "matched_words": [
+        "moment"
+      ],
+      "unmatched_words": [
+        "eyes",
+        "meet",
+        "across"
+      ],
+      "top_atoms": [
+        {
+          "atom": "TIM.moment",
+          "prob": 1.0
+        }
+      ],
+      "top_cid_candidates": [
+        {
+          "seed": 18,
+          "cid": 95,
+          "score": 0.6242936849594116,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 20.1808,
+            "current_stability": 0.6342,
+            "current_familiarity": 5.5696,
+            "current_social": 0.25,
+            "current_spread": 0.6631,
+            "C_at_run_end": 0,
+            "final_state": "ghost"
+          }
+        },
+        {
+          "seed": 7,
+          "cid": 143,
+          "score": 0.6174122095108032,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 116.2234,
+            "current_stability": 0.7059,
+            "current_familiarity": 27.8189,
+            "current_social": 0.1842,
+            "current_spread": 0.7627,
+            "C_at_run_end": 0,
+            "final_state": "ghost"
+          }
+        },
+        {
+          "seed": 13,
+          "cid": 241,
+          "score": 0.6165905594825745,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 20.8445,
+            "current_stability": 0.615,
+            "current_familiarity": 6.6813,
+            "current_social": 0.2778,
+            "current_spread": 0.7556,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        },
+        {
+          "seed": 20,
+          "cid": 246,
+          "score": 0.6161851286888123,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 18.439,
+            "current_stability": 0.6749,
+            "current_familiarity": 5.184,
+            "current_social": 0.2264,
+            "current_spread": 0.8173,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        },
+        {
+          "seed": 8,
+          "cid": 262,
+          "score": 0.6151214241981506,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 19.35,
+            "current_stability": 0.6466,
+            "current_familiarity": 9.0855,
+            "current_social": 0.2,
+            "current_spread": 0.7597,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        }
+      ],
+      "chosen_next": {
+        "seed": 18,
+        "cid": 95,
+        "score": 0.6242936849594116,
+        "mode": "top1"
+      }
+    },
+    {
+      "turn": 8,
+      "role": "esde",
+      "seed": 18,
+      "cid": 95,
+      "cid_vec_norm": 2.837737713899844,
+      "cid_props": {
+        "n_alphas_currently": 0,
+        "last_familiarity_max": 20.1808,
+        "current_stability": 0.6342,
+        "current_familiarity": 5.5696,
+        "current_social": 0.25,
+        "current_spread": 0.6631,
+        "C_at_run_end": 0,
+        "final_state": "ghost"
+      },
+      "atom_probs": [
+        {
+          "atom": "PRP.shallow",
+          "prob": 0.10498134113287412
+        },
+        {
+          "atom": "WLD.artless",
+          "prob": 0.10256172342965239
+        },
+        {
+          "atom": "ECO.save",
+          "prob": 0.10184022588714818
+        },
+        {
+          "atom": "PRP.easy",
+          "prob": 0.10038074888118888
+        },
+        {
+          "atom": "ECO.withdraw",
+          "prob": 0.09985883293375233
+        },
+        {
+          "atom": "SOC.pass",
+          "prob": 0.0993655062986582
+        },
+        {
+          "atom": "ACT.stand",
+          "prob": 0.0985635264343283
+        },
+        {
+          "atom": "PRP.blunt",
+          "prob": 0.0979543157350736
+        },
+        {
+          "atom": "PRP.long",
+          "prob": 0.09726499747304611
+        },
+        {
+          "atom": "WLD.technique",
+          "prob": 0.09722878179427785
+        }
+      ],
+      "top_words": [
+        {
+          "word": "shallow",
+          "prob": 0.006261490245634418
+        },
+        {
+          "word": "sack",
+          "prob": 0.004529852752238198
+        },
+        {
+          "word": "whine",
+          "prob": 0.004511867979340139
+        },
+        {
+          "word": "plaster",
+          "prob": 0.004485948893809839
+        },
+        {
+          "word": "cache",
+          "prob": 0.004473466306575399
+        },
+        {
+          "word": "stand",
+          "prob": 0.004412448234158191
+        },
+        {
+          "word": "rise",
+          "prob": 0.004411851901008315
+        },
+        {
+          "word": "heave",
+          "prob": 0.004381440127122226
+        },
+        {
+          "word": "tread",
+          "prob": 0.0043764127761507085
+        },
+        {
+          "word": "preserve",
+          "prob": 0.004364774062680809
+        },
+        {
+          "word": "provision",
+          "prob": 0.004342021001555632
+        },
+        {
+          "word": "face",
+          "prob": 0.004337565018304113
+        },
+        {
+          "word": "miter",
+          "prob": 0.004298931097201032
+        },
+        {
+          "word": "easy",
+          "prob": 0.004297848475595892
+        },
+        {
+          "word": "screen",
+          "prob": 0.004283359545854812
+        }
+      ]
+    },
+    {
+      "turn": 9,
+      "role": "human",
+      "response": "What do you preserve in this shallow moment?",
+      "tokens": [
+        "what",
+        "preserve",
+        "shallow",
+        "moment"
+      ],
+      "matched_words": [
+        "preserve",
+        "shallow",
+        "moment"
+      ],
+      "unmatched_words": [
+        "what"
+      ],
+      "top_atoms": [
+        {
+          "atom": "EXS.being",
+          "prob": 0.15956200648065794
+        },
+        {
+          "atom": "LOG.cause",
+          "prob": 0.14658746796431094
+        },
+        {
+          "atom": "CHG.stay",
+          "prob": 0.12960663377009649
+        },
+        {
+          "atom": "ELM.water",
+          "prob": 0.09255506459245816
+        },
+        {
+          "atom": "SOC.defend",
+          "prob": 0.08926491415551893
+        }
+      ],
+      "top_cid_candidates": [
+        {
+          "seed": 18,
+          "cid": 95,
+          "score": 0.4170237373430645,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 20.1808,
+            "current_stability": 0.6342,
+            "current_familiarity": 5.5696,
+            "current_social": 0.25,
+            "current_spread": 0.6631,
+            "C_at_run_end": 0,
+            "final_state": "ghost"
+          }
+        },
+        {
+          "seed": 15,
+          "cid": 233,
+          "score": 0.4102754016104462,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 116.2234,
+            "current_stability": 0.6934,
+            "current_familiarity": 30.402,
+            "current_social": 0.125,
+            "current_spread": 0.7351,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        },
+        {
+          "seed": 22,
+          "cid": 242,
+          "score": 0.4065617050294104,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 22.9458,
+            "current_stability": null,
+            "current_familiarity": null,
+            "current_social": null,
+            "current_spread": null,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        },
+        {
+          "seed": 9,
+          "cid": 135,
+          "score": 0.4062920118984975,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 20.0281,
+            "current_stability": 0.6418,
+            "current_familiarity": 10.4909,
+            "current_social": 0.0882,
+            "current_spread": 0.8006,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        },
+        {
+          "seed": 2,
+          "cid": 233,
+          "score": 0.4051241839824735,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 22.2035,
+            "current_stability": null,
+            "current_familiarity": null,
+            "current_social": null,
+            "current_spread": null,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        }
+      ],
+      "chosen_next": {
+        "seed": 18,
+        "cid": 95,
+        "score": 0.4170237373430645,
+        "mode": "top1"
+      }
+    },
+    {
+      "turn": 10,
+      "role": "esde",
+      "seed": 18,
+      "cid": 95,
+      "cid_vec_norm": 2.837737713899844,
+      "cid_props": {
+        "n_alphas_currently": 0,
+        "last_familiarity_max": 20.1808,
+        "current_stability": 0.6342,
+        "current_familiarity": 5.5696,
+        "current_social": 0.25,
+        "current_spread": 0.6631,
+        "C_at_run_end": 0,
+        "final_state": "ghost"
+      },
+      "atom_probs": [
+        {
+          "atom": "PRP.shallow",
+          "prob": 0.10498134113287412
+        },
+        {
+          "atom": "WLD.artless",
+          "prob": 0.10256172342965239
+        },
+        {
+          "atom": "ECO.save",
+          "prob": 0.10184022588714818
+        },
+        {
+          "atom": "PRP.easy",
+          "prob": 0.10038074888118888
+        },
+        {
+          "atom": "ECO.withdraw",
+          "prob": 0.09985883293375233
+        },
+        {
+          "atom": "SOC.pass",
+          "prob": 0.0993655062986582
+        },
+        {
+          "atom": "ACT.stand",
+          "prob": 0.0985635264343283
+        },
+        {
+          "atom": "PRP.blunt",
+          "prob": 0.0979543157350736
+        },
+        {
+          "atom": "PRP.long",
+          "prob": 0.09726499747304611
+        },
+        {
+          "atom": "WLD.technique",
+          "prob": 0.09722878179427785
+        }
+      ],
+      "top_words": [
+        {
+          "word": "shallow",
+          "prob": 0.006261490245634418
+        },
+        {
+          "word": "sack",
+          "prob": 0.004529852752238198
+        },
+        {
+          "word": "whine",
+          "prob": 0.004511867979340139
+        },
+        {
+          "word": "plaster",
+          "prob": 0.004485948893809839
+        },
+        {
+          "word": "cache",
+          "prob": 0.004473466306575399
+        },
+        {
+          "word": "stand",
+          "prob": 0.004412448234158191
+        },
+        {
+          "word": "rise",
+          "prob": 0.004411851901008315
+        },
+        {
+          "word": "heave",
+          "prob": 0.004381440127122226
+        },
+        {
+          "word": "tread",
+          "prob": 0.0043764127761507085
+        },
+        {
+          "word": "preserve",
+          "prob": 0.004364774062680809
+        },
+        {
+          "word": "provision",
+          "prob": 0.004342021001555632
+        },
+        {
+          "word": "face",
+          "prob": 0.004337565018304113
+        },
+        {
+          "word": "miter",
+          "prob": 0.004298931097201032
+        },
+        {
+          "word": "easy",
+          "prob": 0.004297848475595892
+        },
+        {
+          "word": "screen",
+          "prob": 0.004283359545854812
+        }
+      ]
+    },
+    {
+      "turn": 11,
+      "role": "human",
+      "response": "Let us depart from this familiar place",
+      "tokens": [
+        "let",
+        "depart",
+        "familiar",
+        "place"
+      ],
+      "matched_words": [
+        "let",
+        "depart",
+        "familiar",
+        "place"
+      ],
+      "unmatched_words": [],
+      "top_atoms": [
+        {
+          "atom": "SOC.individual",
+          "prob": 0.0967415540630781
+        },
+        {
+          "atom": "ACT.exit",
+          "prob": 0.09602677291480673
+        },
+        {
+          "atom": "PRP.old",
+          "prob": 0.08898012443685607
+        },
+        {
+          "atom": "FND.information",
+          "prob": 0.08119474088640166
+        },
+        {
+          "atom": "SPC.place",
+          "prob": 0.06990096487482225
+        }
+      ],
+      "top_cid_candidates": [
+        {
+          "seed": 9,
+          "cid": 135,
+          "score": 0.32965140397629755,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 20.0281,
+            "current_stability": 0.6418,
+            "current_familiarity": 10.4909,
+            "current_social": 0.0882,
+            "current_spread": 0.8006,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        },
+        {
+          "seed": 3,
+          "cid": 271,
+          "score": 0.3285081628932377,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 24.7014,
+            "current_stability": null,
+            "current_familiarity": null,
+            "current_social": null,
+            "current_spread": null,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        },
+        {
+          "seed": 23,
+          "cid": 294,
+          "score": 0.32846198492576595,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 21.4803,
+            "current_stability": null,
+            "current_familiarity": null,
+            "current_social": null,
+            "current_spread": null,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        },
+        {
+          "seed": 0,
+          "cid": 7,
+          "score": 0.3280110957978514,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 18.0315,
+            "current_stability": 0.6258,
+            "current_familiarity": 5.3024,
+            "current_social": 0.1935,
+            "current_spread": 0.7751,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        },
+        {
+          "seed": 21,
+          "cid": 161,
+          "score": 0.32779988019181855,
+          "props": {
+            "n_alphas_currently": 0,
+            "last_familiarity_max": 22.8936,
+            "current_stability": 0.6683,
+            "current_familiarity": 9.3269,
+            "current_social": 0.125,
+            "current_spread": 0.7806,
+            "C_at_run_end": 0,
+            "final_state": "reaped"
+          }
+        }
+      ],
+      "chosen_next": {
+        "seed": 9,
+        "cid": 135,
+        "score": 0.32965140397629755,
+        "mode": "top1"
+      }
+    },
+    {
+      "turn": 12,
+      "role": "esde",
+      "seed": 9,
+      "cid": 135,
+      "cid_vec_norm": 2.8613610871417174,
+      "cid_props": {
+        "n_alphas_currently": 0,
+        "last_familiarity_max": 20.0281,
+        "current_stability": 0.6418,
+        "current_familiarity": 10.4909,
+        "current_social": 0.0882,
+        "current_spread": 0.8006,
+        "C_at_run_end": 0,
+        "final_state": "reaped"
+      },
+      "atom_probs": [
+        {
+          "atom": "TIM.appear",
+          "prob": 0.10471092658783335
+        },
+        {
+          "atom": "ACT.stand",
+          "prob": 0.10247694507740715
+        },
+        {
+          "atom": "PRP.shallow",
+          "prob": 0.10166173799658239
+        },
+        {
+          "atom": "CHG.grow",
+          "prob": 0.09988803382833228
+        },
+        {
+          "atom": "ACT.rise",
+          "prob": 0.099817470192443
+        },
+        {
+          "atom": "ACT.go",
+          "prob": 0.09932721411212304
+        },
+        {
+          "atom": "PER.see",
+          "prob": 0.09837696042809832
+        },
+        {
+          "atom": "MAT.tool",
+          "prob": 0.09836990197602812
+        },
+        {
+          "atom": "ACT.emit",
+          "prob": 0.09774675560116027
+        },
+        {
+          "atom": "PRP.small",
+          "prob": 0.0976240541999921
+        }
+      ],
+      "top_words": [
+        {
+          "word": "peep",
+          "prob": 0.005087271165703934
+        },
+        {
+          "word": "rise",
+          "prob": 0.0042412651631064105
+        },
+        {
+          "word": "stand",
+          "prob": 0.00423168846461474
+        },
+        {
+          "word": "surface",
+          "prob": 0.004025403502707573
+        },
+        {
+          "word": "jack",
+          "prob": 0.003967958149227627
+        },
+        {
+          "word": "heave",
+          "prob": 0.0030705119218617503
+        },
+        {
+          "word": "get up",
+          "prob": 0.003054929977016454
+        },
+        {
+          "word": "lift",
+          "prob": 0.00298084582759621
+        },
+        {
+          "word": "face",
+          "prob": 0.0029523492286786957
+        },
+        {
+          "word": "front",
+          "prob": 0.0029351146178291316
+        },
+        {
+          "word": "climb",
+          "prob": 0.0029283796987498124
+        },
+        {
+          "word": "hike",
+          "prob": 0.0028941537267750165
+        },
+        {
+          "word": "shallow",
+          "prob": 0.002849159361131489
+        },
+        {
+          "word": "shoot",
+          "prob": 0.0028093498204593646
+        },
+        {
+          "word": "roar",
+          "prob": 0.00267832526539194
+        }
+      ]
+    }
+  ]
+}
