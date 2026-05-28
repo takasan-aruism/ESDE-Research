@@ -1,0 +1,81 @@
+{
+  "version": "v11.0.7b Step G",
+  "timestamp": "2026-05-28T19:03:54Z",
+  "elapsed_sec": 24.55,
+  "layer_a": {
+    "hash_match": {
+      "env_check_summary.parquet": true,
+      "env_check_axes_meta.parquet": true,
+      "axes_correlation_matrix.parquet": true,
+      "observation_1_axis_clusters.parquet": true,
+      "observation_1_hypothesis_purity.parquet": true,
+      "observation_1_summary.parquet": true,
+      "observation_2_axis_contribution.parquet": true,
+      "observation_2_category_scale_bias.parquet": true,
+      "observation_2_summary.parquet": true,
+      "observation_3_axis_shuffle.parquet": true,
+      "observation_3_category_shuffle.parquet": true,
+      "observation_3_summary.parquet": true,
+      "observation_4_category_scale_map.parquet": true,
+      "observation_4_scale_to_axes.parquet": true,
+      "observation_4_summary.parquet": true
+    },
+    "all_match": true,
+    "rerun_sec": {
+      "v1107b_step_b_env_check.py": 0.32,
+      "v1107b_step_c_observation_1.py": 0.75,
+      "v1107b_step_d_observation_2.py": 22.31,
+      "v1107b_step_e_observation_3.py": 0.85,
+      "v1107b_step_f_observation_4.py": 0.27
+    }
+  },
+  "layer_b": {
+    "v105_subjects": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v106_main": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1103_main": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1105a_main": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1106a_main": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1106b_main": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "mapper_output": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    }
+  },
+  "layer_c": {
+    "n": 15,
+    "all_under": true
+  },
+  "all_layers_pass": true
+}
