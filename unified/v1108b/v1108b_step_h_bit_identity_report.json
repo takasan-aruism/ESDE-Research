@@ -1,0 +1,98 @@
+{
+  "version": "v11.0.8b Step H",
+  "timestamp": "2026-05-29T16:43:05Z",
+  "elapsed_sec": 41.59,
+  "layer_a": {
+    "hash_match": {
+      "env_check_summary.parquet": true,
+      "env_check_atom_selection.parquet": true,
+      "env_check_resources.parquet": true,
+      "observation_1_atom_profiles.parquet": true,
+      "observation_1_category_profiles.parquet": true,
+      "observation_1_summary.parquet": false,
+      "observation_2_atom_distances.parquet": true,
+      "observation_2_category_distances.parquet": true,
+      "observation_2_summary.parquet": true,
+      "observation_3_output_properties.parquet": true,
+      "observation_3_cluster_comparison.parquet": true,
+      "observation_3_category_summary.parquet": true,
+      "observation_3_summary.parquet": false,
+      "observation_4_5cat_scale_bias.parquet": true,
+      "observation_4_scale_strength_correlation.parquet": true,
+      "observation_4_summary.parquet": false,
+      "observation_5_attractor_overlap.parquet": true,
+      "observation_5_category_jaccard.parquet": true,
+      "observation_5_summary.parquet": false
+    },
+    "all_match": false,
+    "rerun_sec": {
+      "v1108b_step_b_env_check.py": 0.27,
+      "v1108b_step_c_observation_1.py": 33.89,
+      "v1108b_step_d_observation_2.py": 0.62,
+      "v1108b_step_e_observation_3.py": 2.31,
+      "v1108b_step_f_observation_4.py": 0.55,
+      "v1108b_step_g_observation_5.py": 3.91
+    }
+  },
+  "layer_b": {
+    "v105_subjects": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v106_main": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1103_main": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1106a_main": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1106b_main": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1107a_main": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1107b_main": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1107c_main": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "mapper_output": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    }
+  },
+  "layer_c": {
+    "n": 19,
+    "all_under": true
+  },
+  "all_layers_pass": false
+}

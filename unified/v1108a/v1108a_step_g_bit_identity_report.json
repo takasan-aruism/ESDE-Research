@@ -1,0 +1,70 @@
+{
+  "version": "v11.0.8a Step G",
+  "timestamp": "2026-05-29T16:42:23Z",
+  "elapsed_sec": 36.46,
+  "layer_a": {
+    "hash_match": {
+      "self_dialogue_with_atom_probs.parquet": true,
+      "step_b_summary.parquet": false,
+      "observation_1_delta_C.parquet": true,
+      "observation_1_asymmetry.parquet": true,
+      "observation_1_summary.parquet": false,
+      "observation_2_rho_FH.parquet": true,
+      "observation_2_event_rhos.parquet": true,
+      "observation_2_summary.parquet": false,
+      "observation_3_summary.parquet": true,
+      "observation_4_summary.parquet": false
+    },
+    "all_match": false,
+    "rerun_sec": {
+      "v1108a_step_b_step_h_rerun_with_atom_probs.py": 33.24,
+      "v1108a_step_c_observation_1.py": 1.04,
+      "v1108a_step_d_observation_2.py": 0.82,
+      "v1108a_step_e_observation_3.py": 0.59,
+      "v1108a_step_f_observation_4.py": 0.74
+    }
+  },
+  "layer_b": {
+    "v105_subjects": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v106_main": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1103_main": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1106a_main": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "v1106b_main": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    },
+    "mapper_output": {
+      "add": 0,
+      "rem": 0,
+      "mod": 0,
+      "pass": true
+    }
+  },
+  "layer_c": {
+    "n": 10,
+    "all_under": true
+  },
+  "all_layers_pass": false
+}
