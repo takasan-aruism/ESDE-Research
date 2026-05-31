@@ -100,10 +100,12 @@ def derive_center_target_phase(center_engine, K=K_TARGET):
     return target_phase, top_K
 
 
-def compute_lambda_dynamic(atom_engine):
-    """λ を Atom 系 labels の phase 分散から導出 (state 由来)"""
-    macro = set(atom_engine.virtual.macro_nodes)
-    phase_sigs = [lab['phase_sig'] for lid, lab in atom_engine.virtual.labels.items()
+def compute_lambda_dynamic(center_engine):
+    """λ を center 側 labels の phase 分散から導出 (Taka 指示 2026-06-01:
+    λ の元を center 側の phase まとまりに差し替え。center が散漫なら λ 小=緩く、
+    集中なら λ 大=鋭く狙う、center の集中度が向き先の鋭さを決める)"""
+    macro = set(center_engine.virtual.macro_nodes)
+    phase_sigs = [lab['phase_sig'] for lid, lab in center_engine.virtual.labels.items()
                   if lid not in macro]
     if len(phase_sigs) < 2:
         return 1.0
@@ -202,8 +204,8 @@ def run_attention_loop_b(center_engine, atom_engine, other_engine, w):
         return {'window': w, 'fired': True, **fire_info,
                 'target_phase': None, 'lambda_dyn': None,
                 'max_w': 0.0, 'overlap_n_nodes': 0, 'atom_inject_n': 0}
-    # λ_dynamic
-    lambda_dyn = compute_lambda_dynamic(atom_engine)
+    # λ_dynamic (Taka 2026-06-01 指示: center 側 phase まとまりから)
+    lambda_dyn = compute_lambda_dynamic(center_engine)
     # weights
     weights = compute_label_weights(atom_engine, target_phase, lambda_dyn)
     max_w = max((wt['w'] for wt in weights.values()), default=0.0)
@@ -318,12 +320,13 @@ def run_with_center():
                       'lambda_dyn': loop_info.get('lambda_dyn'),
                       'max_w': loop_info.get('max_w', 0.0),
                       'atom_inject_n': loop_info['atom_inject_n']})
+        tp_str = f'{tp:.2f}' if tp is not None else 'None'
         print(f'  w={w} labels={obs["labels_total"]} '
               f'pct_5+={obs["pct_n_core_5plus"]:.2f}% '
               f'occ_max={obs["occ_max"]:.3f} '
               f'stress={obs["stress_intensity"]:.3f} '
               f'fire={loop_info["fired"]} max_w={loop_info.get("max_w", 0):.3f} '
-              f'tp={tp:.2f if tp is not None else 0:.2f} '
+              f'tp={tp_str} '
               f'near={obs["near_far_near_occ_sum"]:.3f} '
               f'far={obs["near_far_far_occ_sum"]:.3f}')
     print(f'  done ({time.time()-t0:.1f}s)')
