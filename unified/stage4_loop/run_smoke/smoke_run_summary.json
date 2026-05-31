@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-05-31T10:55:01Z",
+  "seed": 42,
+  "N": 5000,
+  "maturation_windows": 3,
+  "tracking_windows": 2,
+  "window_steps": 100,
+  "conditions": [
+    "A_baseline",
+    "B1_mat_alpha_low",
+    "B2_mat_alpha_high",
+    "B3_stress_on",
+    "B4_pressure_high",
+    "B5_inject_amount_low"
+  ],
+  "timing_sec": {
+    "A_baseline": 194.83993339538574,
+    "B1_mat_alpha_low": 194.57443737983704,
+    "B2_mat_alpha_high": 193.6209876537323,
+    "B3_stress_on": 192.8585386276245,
+    "B4_pressure_high": 193.82028794288635,
+    "B5_inject_amount_low": 193.1620626449585
+  },
+  "total_sec": 1165.2275829315186,
+  "n_rows": 30
+}
