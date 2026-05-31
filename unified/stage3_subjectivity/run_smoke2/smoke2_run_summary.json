@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-05-31T00:56:43Z",
+  "seed": 42,
+  "N": 5000,
+  "maturation_windows": 3,
+  "tracking_windows": 2,
+  "window_steps": 100,
+  "inject_radius": 8,
+  "conditions": [
+    "genesis_driven_K5",
+    "shuffled_state_E_K5",
+    "shuffled_random_nodes_K5",
+    "genesis_driven_K50",
+    "shuffled_state_E_K50",
+    "shuffled_random_nodes_K50"
+  ],
+  "timing_sec": {
+    "genesis_driven_K5": 203.92244505882263,
+    "shuffled_state_E_K5": 204.4496147632599,
+    "shuffled_random_nodes_K5": 203.13732504844666,
+    "genesis_driven_K50": 194.3006522655487,
+    "shuffled_state_E_K50": 194.1521191596985,
+    "shuffled_random_nodes_K50": 193.3119821548462
+  },
+  "total_sec": 1195.6301956176758,
+  "n_full_rows": 30,
+  "n_diff_rows": 44
+}
