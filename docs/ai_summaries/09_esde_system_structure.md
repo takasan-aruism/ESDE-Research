@@ -2940,3 +2940,38 @@ v10.13 以降で n_core 軸 / formation_relation 軸を観察対象とする主�
 - 過去観察軸の照会義務 (主題ドキュメント必須記載)
 - 資料運用ルール (Pull 型 / AI 向け資料 / Taka 整理原文保存 / 監査魔人化歯止め)
 - 規律 42 候補 (上位完了レポート §5 必読)
+
+## v1104 + v1104a 構造追加: scope × 粒度の役割表方針 (2026-05-23)
+
+v1104 + v1104a で確定した 4 つの非対称性 (#L30-L33、概念理解.md #413-#418 / 08_concept_core.md §D.95) を ESDE システム構造として記述する。
+
+### scope 別 chain 構造 (#L30)
+
+各 scope の chain 構造を以下に整理:
+
+| scope | chain 構造 |
+|---|---|
+| CID (個体単独) | 100% self-loop (動かない) |
+| alpha / beta (Integration) | 部分 self-loop |
+| ESDE event/step10 (細粒度) | 29-31% self-loop (動く) |
+| ESDE window (集約) | partial self-loop (window 内で戻ってくる) |
+
+CID は段 4-b/4-c の「動く場」として使えない。Integration と ESDE 細粒で chain が動く。
+
+### scope × 粒度の役割表方針 (v1105 主題、GPT 2026-05-23 提案)
+
+応答生成パイプラインの 5 役割を scope × 粒度に割り当てる:
+
+| 役割 | 有力な場所 | 有力指標 | 注意 |
+|---|---|---|---|
+| 候補保持 | CID | density / qweighted_density | trajectory 不可 |
+| 連想・踏み台 | alpha / beta | predecessor lift / non-self-loop chain | CID では不可 |
+| 即時応答の揺れ | ESDE event / step10 | trajectory stability / diffusion | window では消える |
+| 重要性 emit | scope 別 B | B subset/superset/独自 | scope-aware 必須 |
+| 統合判断 | 未確定 | density + trajectory + B | v1105a 試行対象 |
+
+v1105 でこの役割表を確定し、v1105a で実際に応答候補を絞る試行に進む。
+
+### 物理層 frozen の維持 (v1104 + v1104a)
+
+v1104 + v1104a の全観察は新規 main run なし、既存出力 (v10.5/6/7/v112/v1101a/v1102/v1103 main outputs) の再集計のみ。bit-identity 3 層全 PASS (v1104a で 1,502 frozen files、v1104 13 含む)。書込みは unified/v1104/ + unified/v1104a/ 配下のみ。

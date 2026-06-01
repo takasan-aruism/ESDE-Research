@@ -1,8 +1,8 @@
 # ESDE 研究史 — AI 向け超要約 (Index + 用語対応表)
 
 *作成日*: 2026-04-11 (v9.9 Long Run 進行中)
-*更新*: 2026-04-28 (Developmental v10.0-v10.2 完了)、2026-05-11 (**v10.3-v10.12 完了反映**、Phase 1.5 第七試行完了、Atom 取り込み prototype 主題完了)
-*前回更新*: 2026-04-24 (v9.18 段階 5 完了、A+C 統合、意識の原資モデルの明確化、間違いの価値の反転、Primitive フェイズ完結)
+*更新*: 2026-05-23 (**Unified Phase v1104 + v1104a 完了反映、4 つの非対称性 #L30-L33 確定、v1105/v1105a 主題確定、観察方法を疑う規律確立**)
+*前回更新*: 2026-05-11 (Developmental v10.3-v10.12 完了反映、Phase 1.5 第七試行完了、Atom 取り込み prototype 主題完了)
 *対象読者*: ESDE-Research に新規に関わる Claude (新スレッド初見)
 
 ---
@@ -18,7 +18,7 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
 ## ⚠️ 警告
 
 - これは**要約**であり原本ではない。設計の詳細や個別実験の数値が必要な場合は必ず原本 (`docs/ESDE_*_Report.md` および `docs/概念理解.md`) を参照すること。
-- **要約の最新時点は v11.0.1.a 完了 (2026-05-18)、Unified Phase 第三主題 (ESDE スケール注意機構) 段階 1 完了**。07_unified_summary は v10.13.a + v1100/v1101/v1101a を網羅 (Unified Phase の正式要約)。06_developmental_summary、10_audit_principles、ESDE_Developmental_Report は v10.12 対応済み。08_concept_core、09_esde_system_structure は v10.9 まで本格対応、v10.10-v10.12 は §末追記。05_primitive_summary は Primitive フェイズで凍結 (v9.x 系列、参照用)。01-04 は v9.9 時点のまま (古い表記、用語対応表で確認)。
+- **要約の最新時点は v11.0.4a (v1104a) 完了 (2026-05-23)、Unified Phase 第六主題「CID/IID 内部動作点検 段階 2」完了**。07_unified_summary は v10.13.a + v1100/v1101/v1101a/v1102/v1103/v1104/v1104a を網羅 (Unified Phase の正式要約)。06_developmental_summary、10_audit_principles、ESDE_Developmental_Report は v10.12 対応済み。08_concept_core、09_esde_system_structure は v10.9 まで本格対応、v10.10-v10.12 + v1104+v1104a は §末追記。05_primitive_summary は Primitive フェイズで凍結 (v9.x 系列、参照用)。01-04 は v9.9 時点のまま (古い表記、用語対応表で確認)。
 - **Developmental フェイズのディレクトリ**: `developmental/v10X/`。**Unified フェイズのディレクトリ**: `unified/v11XX/`。
 - **ファイル番号体系の変更 (2026-04-28)**: Developmental フェイズ追加に伴い、06 (旧 concept_core) → 07、07 (旧 system_structure) → 08、08 (旧 audit_principles) → 09 にずらし、新規 06 を Developmental Summary とした。
 - **ファイル番号体系の変更 (2026-05-18)**: Unified フェイズ独立に伴い、07 (旧 concept_core) → 08、08 (旧 system_structure) → 09、09 (旧 audit_principles) → 10、10 (旧 language_summary) → 11 にずらし、新規 07 を Unified Phase Summary とした。06/06b/06c は Developmental Phase 要約として据え置き・凍結。Unified Phase の新主題は 07 に追記して一本化する (06d/06e の枝番継続はしない)。
@@ -27,7 +27,7 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
 
 ---
 
-## 推奨読書順序 (v11.0.1.a 時点)
+## 推奨読書順序 (v11.0.4a 時点)
 
 ```
 00_index.md (このファイル)
@@ -58,9 +58,9 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
 11_esde_language_summary.md ← ESDE Language 系要約 (旧 10)
 ```
 
-**急ぎなら**: 本ファイル末尾の **用語対応表** + `07_unified_summary.md` + `09_esde_system_structure.md` + `08_concept_core.md` の Developmental 申し送り の組み合わせで現状作業 (v11.0.1.a 時点) に最低限着手できる。**ただし `04_cognition_summary.md` の「却下された方針」は時間を作って必ず読むこと**。
+**急ぎなら**: 本ファイル末尾の **用語対応表** + `07_unified_summary.md` + `09_esde_system_structure.md` + `08_concept_core.md` の Developmental 申し送り + v1104+v1104a 関連資料 (`v1104_v1104a_phase_result.md` / `esde_unified_inventory.md`) の組み合わせで現状作業 (v11.0.4a 時点) に最低限着手できる。**ただし `04_cognition_summary.md` の「却下された方針」は時間を作って必ず読むこと**。
 
-**現主題 (v11.0.1.a = v1101a、2026-05-18 時点)**: 「ESDE スケール注意機構」段階 1 完了。`07_unified_summary.md` §5 で v1101a 全容を網羅。Code A Step B-H 完了 (注意 emit ログ 172 万 records + 核心観察 = 意識優位時の波及が認知優位の 1.54-1.78 倍 + bit-identity 3 層全 PASS)、Web Claude Phase Result (`unified/v1101a/v1101a_phase_result.md`) 完成。段階 2 (cid state ledger 再生) の要否は 2 AI 意見聴取のうえ Taka 判断する段階。新 Web Claude 引き継ぎは `07_unified_summary.md` を最初に読むこと。
+**現主題 (v11.0.4a = v1104a、2026-05-23 時点)**: 「CID/IID 内部動作点検 段階 2: 観察方法依存の整理と scope × 層化による再点検」完了。`07_unified_summary.md` §7B-§7D で v1104+v1104a 全容と v1105/v1105a 主題方向を網羅。Code A Step A-G (v1104) + Step H 初版 + Step H-3 + Step H-4 + Step A'-G' (v1104a) 完了、bit-identity 全 PASS (1,502 frozen files、v1104 13 含む)、4 つの非対称性 #L30-L33 確定、v1104+v1104a 統合 Phase Result 完成。次主題は v1105 (段 4-b/4-c 対称統合点検、役割表まで進める、問いの形 A) + v1105a (役割表を使って応答候補絞り込み試行、問いの形 B、v1101 以来初の試行切替)。新 Web Claude 引き継ぎは `07_unified_summary.md` を最初に読むこと。
 
 ---
 
@@ -1684,3 +1684,53 @@ esde_3ai_operations_manual.md (3 AI 共通運用、v10.11 整備)
 - **「3 段階成功判定 (Full/Partial/Failure) を置きたい」衝動が出たら、v10.12 主題ドキュメント第 5 版 §6.3 を読む** — Aruism「予想と違えば再観察」整合の判定回避方式が v10.12 から運用開始
 - **「familiarity 閾値を厳密に選びたい」衝動が出たら、留保 #25 (v10.12) を読む** — top 25% vs top 50% の意味検証は v10.13 以降の別主題候補、v10.12 では γ 仮置き
 - **「smoke seed 0 だけで本番に進みたい」衝動が出たら、留保 #27 (v10.12) を読む** — seed 0 が外れ値だった事実、v10.13 以降で smoke 複数 seed 化を運用改善候補
+
+## 18.18 v1104 + v1104a 進行サマリ (2026-05-23 追記)
+
+00_index.md 本体は v10.2 完了時点のまま、Unified Phase v1104 + v1104a の進行は本セクションで圧縮要約する。詳細は 07_unified_summary.md §7B-§7D、v1104_v1104a_phase_result.md 参照。
+
+### v1104 (CID/IID 内部動作点検 段階 1)
+
+- Taka 整理「自分の視点は上から目線、CID/IID が下でやっていることを見ていない」を受け、棚卸し → 駆動要因規律訂正「目的を示せ」で 8 項目 → 4 項目に絞り込み
+- Step H 初版 + Step H-3 (観察 2 再調査、shuffle 種別で lift 0→0.17) + Step H-4 (観察 3 再調査、scope-filter で r 0.157→0.42-0.48) 完了
+- Phase Result は単独で書かず v1104a と統合
+
+### v1104a (CID/IID 内部動作点検 段階 2: 観察方法依存の整理と scope × 層化による再点検)
+
+- v1104 で機能した観察軸 (n_members 層化、scope-filter) を観察 2/3/4 に統一適用
+- 追加調整 4 件 (1: 観察 2 scope × n-size × shuffle × self-loop / 2: 観察 3 CID scope の cid_n_core 層化 / 3: 観察 3 vs 48 次元密度 3 種比較 / 4: 観察 4 scope-filter) 完了
+- 4 つの非対称性 #L30-L33 確定 (scope 別 chain 構造 / 粒度依存の trajectory-density 優劣逆転 / B 指標の scope 別 pattern / CID 100% self-loop が trajectory を構造的に消失)
+- v1104 + v1104a 統合 Phase Result 完成 (3 部構成: 網羅 / 構造 / 接続)
+
+### v1104 + v1104a で確定した結論
+
+ESDE は均一な系でなく場所と粒度で全く違う構造を持つ系。段 4-b/4-c の根拠は単一指標でなく多軸 (scope × 粒度 × 指標) でしか記述できない。Taka 整理「単一の答えを持たない」が観察 1-4 すべてで貫通。留保 #33 系列が全観察に貫通した形。
+
+### 観察方法を疑う規律 (Taka 2026-05-23、原文保存)
+
+「ESDE はランダム発生に構造を与えている。この仕組み上、繋がりが見えなくなるとすれば単に観測方法に問題があるということは明白」「いくら都合よくとも 0 を 1 にはできない」。v1104 観察 2 + 観察 3 の再調査で具体例として現れた。観察結果を「構造がない」と判定する前に、必ず観察方法を疑う手順を入れる。
+
+### 次主題 (v1105 + v1105a)
+
+- v1105 主題: 段 4-b と段 4-c を対称的に統合点検、地形図で止まらず役割表まで進める (5 役割: 候補保持 / 連想・踏み台 / 即時応答の揺れ / 重要性 emit / 統合判断)。問いの形 A (点検のみ、v1101 以来の系譜継続)。
+- v1105a 主題: 役割表を使って実際に応答候補を絞る試行。問いの形 B (試行、v1101 以来初の切替)。
+
+### EVI (Explainability Viability Index) 案 (GPT 2026-05-23 提示、保留)
+
+説明可能性を ESDE 内部の応答準備構造として定義する数理指標。v1105+v1105a 後の統合的指標導入タイミングで Taka 判断。将来導入時は単一スコアでなく scope × 粒度別の vector で扱う方針 (v1104a 4 つの非対称性と整合的)。
+
+### マイナーバージョン運用方針 (Taka 2026-05-23 確定)
+
+- マイナーバージョン (v1104→v1105) = 主題転換
+- アルファベット (v1104→v1104a) = 同じ主題の段階更新または問いの形の切替
+- マイナーを安易に増やさず、関連する主題を a/b で連ねる (後で振り返った時に流れが見えやすい)
+
+## 18.19 将来 Claude への申し送り (v1104 + v1104a)
+
+- **「scope を分けずに pooled で観察したい」衝動が出たら、v1104 Step H-4 観察 3 再調査を読む** — pooled r=0.157 は scope-mix 由来希釈、ESDE-only で r=0.417 が顕在化した
+- **「shuffle baseline を 1 種だけで lift を判定したい」衝動が出たら、v1104 Step H-3 観察 2 再調査を読む** — shuffle A で lift=0 だったのは shuffle が chain 構造を壊していなかった結果、shuffle B/C で lift が顕在化
+- **「観察結果を『構造がない』と判定したい」衝動が出たら、観察方法を疑う規律を思い出す** — ESDE はランダム発生に構造を与えている系、構造が見えないなら観察方法に問題がある可能性が高い
+- **「CID scope で trajectory を見たい」衝動が出たら、留保 #L33 を読む** — CID 100% self-loop で trajectory_stability=1.0 定数化、Pearson 計算原理的に不能
+- **「単一の指標で段 4-b/4-c を作りたい」衝動が出たら、4 つの非対称性 (#L30-L33) を読む** — 単一指標では失敗する、scope × 粒度 × 指標の多軸が必要
+- **「観察軸を更に増やしたい」衝動が出たら、Taka 整理「ばらけていくと分散してしまう、今は統合していく流れ」を読む** — v1101→v1104a は多軸化、v1105 以降は統合方向に転換、新しい課題を増やして調査員に成り下がらない
+- **「EVI を合成指標として今すぐ計算したい」衝動が出たら、EVI 案保留方針を読む** — v1105+v1105a 後、scope × 粒度別 vector として扱う、合成指標にしない

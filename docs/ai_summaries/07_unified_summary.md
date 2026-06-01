@@ -1,10 +1,11 @@
-# 07 Unified Phase Summary — v10.13.a + v1100 / v1101 / v1101a
+# 07 Unified Phase Summary — v10.13.a + v1100 / v1101 / v1101a / v1102 / v1103 / v1104 / v1104a
 
 *作成*: 2026-05-18、Web Claude (相談役)
-*母体*: `06c_developmental_v1013_v1101_summary.md` (Code A 作成 2026-05-17、v10.13.a + v1100 + v1101 を網羅) を格上げ・統合し、v1101a を追加
+*更新*: 2026-05-23、Web Claude — v1104 + v1104a 完了反映、4 つの非対称性 #L30-L33 確定、v1105/v1105a 主題確定、EVI 案保留、マイナーバージョン運用方針確定。
+*母体*: `06c_developmental_v1013_v1101_summary.md` (Code A 作成 2026-05-17、v10.13.a + v1100 + v1101 を網羅) を格上げ・統合し、v1101a/v1102/v1103/v1104/v1104a を追加
 *位置づけ*: Unified Phase が独立フェイズになったことに伴い新設された正式番号ドキュメント。従来 `06c` の枝番にぶら下がっていた Unified Phase 要約を `07` に格上げした。`06` 台 (06 / 06b / 06c) は Developmental Phase で完結・凍結。本書以降、Unified Phase の各主題は本書に追記して一本化する。
 *親資料*: `06_developmental_summary.md` (v10.0-v10.9) + `06b_developmental_phase15_summary.md` (v10.4-v10.12、凍結) + `06c` (本書の母体、Developmental 完結時点で凍結)
-*用途*: 新 Web Claude スレッド初見時に Unified Phase 全容 (v10.13.a 移行点 + v1100 Language 接続 + v1101 Atom 隆盛 + v1101a 注意機構) を把握する網羅的引き継ぎ。
+*用途*: 新 Web Claude スレッド初見時に Unified Phase 全容 (v10.13.a 移行点 + v1100 Language 接続 + v1101 Atom 隆盛 + v1101a 注意機構 + v1102 受け手構造 + v1103 段 4-c + v1104+v1104a CID/IID 点検 + v1105/v1105a 準備) を把握する網羅的引き継ぎ。
 
 ---
 
@@ -283,6 +284,186 @@ Code A Step A-F 完了、bit-identity 全 PASS (1,763 files frozen)、新規 mai
 
 ---
 
+## 7B. v11.0.4 (v1104) — CID/IID 内部動作点検 段階 1: ESDE 自身は段 4-b/4-c を支える処理を既に持つか
+
+### 7B.1 主題の成立 — Taka 整理「自分の視点は上から目線」
+
+v1103 完了後、Taka 整理:
+
+> 自分の視点は上から目線で、CID や IID が下で実際にやっていることを見ていない。研究者の調査動作のうち、ESDE 自身に実装されているものが既にあるかもしれない。それがあるのかを調べる。問いの形 A (点検のみ、軽い踏み込み)。
+
+棚卸し作業 (`esde_unified_inventory.md`、Unified Phase v1100-v1103 の研究者の調査動作 24 項目を 2 列 (研究者側 ↔ ESDE 内部側) で並べる) を経て、優先候補 8 項目を抽出。Taka 駆動要因規律訂正 (2026-05-22):
+
+> 厳密に言えば軽いことがいいとか悪いとかではなくて、掘ってもなにもでない穴を無闇やたらに掘るな、ということ。なぜそれをやるのか? → なぜなら、のセットがあり、それが会話を行うと言う目標に明確に繋がる説明可能性があればなんだっていい。きちっと目的を示せ。
+
+→ 8 項目に「なぜ → なぜなら → 会話への繋がり」を当て、4 項目に絞り込み (1.1 観察単位切り替え / 1.6 predecessor 連鎖 / 1.7 attention trajectory / 2.6 際立ち掬い取り B 現状)。試験前に絞れたこと自体が駆動要因規律の機能例。
+
+### 7B.2 監査確定事項 (GPT 修正必須 3 点 + 追加 2 点 + Gemini 1 点)
+
+- IID は新規 state でなく既存構造 (α/β / member_cids / attention_candidate_id / predecessor_attention_ref / cid_state_ledger) の参照表現 (GPT A)
+- 観察 1 で k=1 一致率と top-k Jaccard (k=3, k=5) を別指標として算出、k=1 を Jaccard と呼ばない (GPT B)
+- 観察 4 で selector 化禁止、post-process 仮想評価のみ (GPT C)
+- 観察 2 で Code A は「連想」と判定しない、cid/atom/category/similarity 推移のみ記録 (GPT 4)
+- 観察 3 は「注意が動くか」を再観察せず、trajectory ↔ response_atom_distribution 対応に限定 (GPT 5)
+- Code A は時間軸同期を join 時に厳密検証、window=19 除外 (Gemini Architect)
+
+### 7B.3 Step H 初版観察事実 (4 観察) と再調査の経緯
+
+| 観察 | 初版結果 | 再調査の必要性 |
+|---|---|---|
+| 観察 1 (CID-Integration 像) | n_members 増で match_k1 単調低下 (0.884→0.569) | 不要 (構造的事実として確定) |
+| 観察 2 (predecessor 連鎖) | lift=0 (shuffle と区別不能)、85% self-loop | **必要 (Taka 判断「観察方法を疑う」、Step H-3 再調査)** |
+| 観察 3 (trajectory↔response) | r=0.157 弱い対応 | **必要 (Step H-4 再調査、観察 2 と同視点で観察方法を疑う)** |
+| 観察 4 (B 現状) | B subset、Recall 0.74 Precision 0.25 | 不要 (構造的事実として確定) |
+
+Taka 整理 (2026-05-23):
+
+> これまででいうとこういうのって結局実装側の問題なのでバージョンアップや資料作成に待てをかけて懐疑的に進めていく方がいい。満足いくまで調べた結果を Phase Result としてあげる。
+
+### 7B.4 Step H-3 (観察 2 再調査) — shuffle 種別で結論が変わる
+
+| shuffle 種別 | permutation 単位 | lift |
+|---|---|---|
+| A (現状) | chain 内順序入れ替え | 0 |
+| B (新規) | chain 間 cid 入れ替え | 0.012-0.066 |
+| C (新規) | global cid pool ランダム | 0.069-0.166 |
+
+**核心**: 観察 2 初版 lift=0 は「ESDE 内部に踏み台がない」ではなく、shuffle A が chain 内 cid 集合を保持するため構造を壊していなかった結果。chain 構造自体には何らかの意味がある (留保 #L24-L26)。
+
+### 7B.5 Step H-4 (観察 3 再調査) — scope-filter で結論が変わる
+
+| scope | stability_vs_maxprob |
+|---|---|
+| pooled (all) | 0.157 (初版値) |
+| ESDE-only | **0.417** |
+| CID-only weighted | (diffusion -0.477) |
+| alpha-only weighted | 0.017 (消失) |
+
+**核心**: 観察 3 初版 r=0.157 は scope-mix 由来希釈。scope-filter で ESDE/CID scope に絞ると |r|>0.4 が顕在化、alpha/beta scope では消失 (留保 #L27-L29)。
+
+### 7B.6 v1104 の状態と v1104a への移行
+
+Step H 初版 + Step H-3 + Step H-4 で観察 2/3 の観察方法依存が確定。Phase Result は単独で書かず v1104a 完了後に統合して書く方針。Taka 判断: 「v1104a で追加調整 1-4 を扱う、マイナーバージョン運用方針 (a/b で関連主題を連ねる、すぐに次マイナーに進まない)」。
+
+---
+
+## 7C. v11.0.4a (v1104a) — CID/IID 内部動作点検 段階 2: 観察方法依存の整理と scope × 層化による再点検
+
+### 7C.1 主題の成立
+
+v1104 で観察 2 (shuffle 種別) と観察 3 (scope-filter) が観察方法依存と判明したのを受け、観察 1 で機能した n_members 層化と観察 3 で機能した scope-filter を **観察 2/3/4 に統一適用** する段階 2。同じ主題 (v1104) の続きで、新規バージョンに逃がさず本主題内で処理する。
+
+Taka 規律「0 を 1 にはできない」(2026-05-23):
+
+> いくら都合よいといっても 0 を 1 にはできないだろうから妥協とのバランス次第。再テストの中で再度調整すればいい。そこまで含めて本バージョンで扱う。
+
+### 7C.2 監査確定事項 (GPT 修正必須 4 点 + 追加 3 点 + Gemini 1 点)
+
+- タイトル「完全版」を弱める → 「段階 2: 観察方法依存の整理と scope × 層化による再点検」(GPT A)
+- cid_n_core / integration_n_alpha_members / integration_n_beta_members を別列名 (GPT B、絶対格言 #11 v10.12 path 雑まとめ問題と同系統)
+- 追加調整 3 は同一 receiver_bin / 同一 response (max_prob, entropy 2 種) / 同一 scope で比較 (GPT C)
+- 追加調整 4 で「selector として使える」と書かない、「B primary 化を次主題で点検する根拠」まで (GPT D)
+- 追加調整 1 で self-loop / non-self-loop 分離 + shuffle B/C 別集計 (GPT 5)
+- 追加調整 4 で B の意味判定は v1105 に送る (GPT 6)
+- 「観察方法を有利化する主題ではない」明記 (GPT 7)
+- Code A は v10.6 n_core_member join 時の NaN ハンドリングを Step A' で確定 (Gemini)
+
+### 7C.3 追加調整 4 件の結果
+
+**追加調整 1 (観察 2 scope × n-size × shuffle × self-loop)**:
+
+- CID scope **100% self-loop** (3,798/3,798 chains)、構造的に lift_A=0
+- alpha non-self-loop lift_C=0.152 最強、ESDE event/step10 では lift_B > lift_C (chain-level 特有)
+- CID n_size_bin で lift_B/C 優劣反転 (n=2 で B 優位、n=5+ で C 優位)
+
+**追加調整 2 (観察 3 CID scope の cid_n_core 層化)**:
+
+- CID 5 bin で stability_vs_maxprob **全 NaN** (traj_stability=1.0 定数、100% self-loop の必然帰結)
+- ESDE_event/step10 で **r=0.64 強相関** (集約 ESDE_all 0.417 の主貢献は event/step10)
+- ESDE_window で無相関 (粒度感度、event/step10 と window で挙動逆転)
+
+**追加調整 3 (trajectory vs 48 次元密度 3 種)**:
+
+- 細粒 (event/step10) で trajectory 優勢 (stability r=0.64)
+- 集約 (window/CID_all/CID 各 bin) で density 優勢 (CID_n=3/n=4 qweighted_density **r=-0.97**)
+- 粒度依存の主役指標逆転
+
+**追加調整 4 (観察 4 scope-filter)**:
+
+- CID で precision=1.0 (B ⊂ A、subset)
+- alpha / beta で recall=1.0 (A ⊂ B、3-7 倍広い superset)
+- ESDE で A=0 / B=9 (B のみ独自領域)
+
+### 7C.4 4 つの非対称性 — v1104 + v1104a で確定
+
+| # | 留保 | 内容 |
+|---|---|---|
+| 1 | **#L30** | scope 別 chain 構造 (CID 100% self-loop / alpha-beta 部分 / ESDE 細粒 29-31% / ESDE window partial) |
+| 2 | **#L31** | 粒度依存の trajectory-density 優劣逆転 (細粒で trajectory 主役、集約で density 主役) |
+| 3 | **#L32** | B 指標の scope 別 pattern (CID subset / alpha-beta superset / ESDE 独自) |
+| 4 | **#L33** | CID 100% self-loop が trajectory を構造的に消す (traj_stability=1.0 定数化、Pearson 計算不能、逆に density は CID で最強 r=-0.97) |
+
+→ ESDE は均一な系ではなく、**場所 (scope) と粒度 (granularity) で全く違う構造を持つ系**。段 4-b/4-c の根拠は単一指標でなく多軸 (scope × 粒度 × 指標) でしか記述できない。
+
+### 7C.5 v1104 + v1104a 統合 Phase Result の 3 部構成
+
+Taka 整理「主役が 3 つあるなら 3 つの視点を書かないと後でブレる」を受け、Phase Result を 3 部構成:
+
+- **第 1 部 (網羅)**: 4 観察 × 4 追加調整の構造事実
+- **第 2 部 (構造)**: 4 つの非対称性 (#L30-L33) を主軸に整理
+- **第 3 部 (接続)**: v1101→v1104a の分析方向 → v1105+v1105a の統合方向への転換
+
+### 7C.6 v1104a の状態
+
+Code A Step A'-G' 完了、bit-identity 全 PASS (1,502 files frozen、v1104 13 含む)、新規 main run 不要。統合 Phase Result (`v1104_v1104a_phase_result.md`) 完成。
+
+---
+
+## 7D. v1105 + v1105a — 統合方向への転換 (準備中)
+
+### 7D.1 v1101→v1104a の流れと転換点
+
+| バージョン | 何をやったか | 方向 |
+|---|---|---|
+| v1101 | 観察単位を変えると dominant atom が分裂 | 多軸化 |
+| v1101a | 集計方式を変えると像が変わる | 多軸化 |
+| v1102 | 受け手構造で応答が反転 | 多軸化 |
+| v1103 | raw vs norm で密度が反転 | 多軸化 |
+| v1104 + v1104a | scope × 粒度 × shuffle × self-loop で多軸化 | 多軸化 |
+
+Taka 整理 (2026-05-23):
+
+> ばらけていくと分散してしまう予感。今は分散化していく流れではなくて統合していく流れが正しい。下手に新たな課題を増やしてまた調査員に成り下がる必要はない。
+
+→ v1105 + v1105a は、v1104a までで確定した多軸構造を **統合的に扱う** 方向に転換。
+
+### 7D.2 v1105 主題 (準備中) — 段 4-b と段 4-c を対称的に統合点検
+
+**何をやるか**:
+- 段 4-b (何を辿るか): Genesis predecessor 連鎖 + Language Constitution Couple、scope × 粒度の地形図で整理
+- 段 4-c (何で絞るか): B の意味 (scope 別 pattern) + 「どの場所・どの粒度で何が主役か」の表
+- v1105 は地形図で止まらず **役割表まで進める** (候補保持 / 連想・踏み台 / 即時応答の揺れ / 重要性 emit / 統合判断 の 5 役割を scope × 粒度に割り当てる、GPT 2026-05-23 提案)
+
+**問いの形**: A (点検のみ、v1101 以来の系譜継続)
+
+### 7D.3 v1105a 主題 (準備中) — 役割表を使って実際に応答候補を絞る試行
+
+**何をやるか**: v1105 で確定した「場所 × 粒度」役割表に従って、実際に応答 Atom 候補を絞ってみる。「ESDE が答えを絞れた」の構造的事実を観察。
+
+**問いの形**: B (試行、v1101 以来初の切替)
+
+### 7D.4 EVI (Explainability Viability Index) 案の位置づけ
+
+GPT が 2026-05-23 に提示した EVI 案 (説明可能性を ESDE 内部の応答準備構造として定義する数理指標) は、v1105+v1105a 後の統合的指標導入タイミングで Taka 判断。
+
+Taka 整理 (2026-05-23):
+
+> EVI は今後必要になるだろうくらいの感じだから今ではない。ただおそらくどこかで統合的なものがあった方がいいタイミングはくるだろう。その辺に備えておく目的、後でありがたみがわかる。
+
+将来導入時の方針: 合成指標にせず、scope × 粒度別の vector として扱う (EVI_CID / EVI_α / EVI_β / EVI_ESDE-event / EVI_ESDE-step10 / EVI_ESDE-window)。v1104a 4 つの非対称性と最も整合的。
+
+---
+
 ## 8. 現在地 + 後続タスク
 
 ### 8.1 完了状態
@@ -293,17 +474,22 @@ Code A Step A-F 完了、bit-identity 全 PASS (1,763 files frozen)、新規 mai
 - v1101a 段階 1+2 + Step E 修正 + 段階 2 Step A-F で Code A 主題担当完了。Phase Result 二本 + Concept Update + 会話接続足取り点検 完成。
 - v1102 Code A Step A-F 完了、Phase Result 完成。
 - v1103 Code A Step A-F 完了、Phase Result 完成、独立資料 2 本 (ESDE への態度 / 監査方針アップデート) 完成。
-- 物理層 frozen 絶対維持 (Developmental + Unified 通算、v1103 で 1,763 files frozen)。
+- **v1104 Code A Step A-G 完了 + Step H 初版 + Step H-3 (観察 2 再調査) + Step H-4 (観察 3 再調査) 完了。Phase Result は v1104a 完了後に統合して書く方針。**
+- **v1104a Code A Step A'-G' 完了 (追加調整 1-4 = scope × n-size 層化 + scope-filter)。bit-identity 全 PASS (1,502 files frozen、v1104 13 含む)。v1104 + v1104a 統合 Phase Result 完成 (`v1104_v1104a_phase_result.md`)、4 つの非対称性 (#L30-L33) 確定。**
+- **棚卸し資料 (`esde_unified_inventory.md`) 完成。** Unified Phase 研究者の調査動作 24 項目を 2 列で並べた地図、A 主題が終わった後も「研究者と ESDE の境界の地図」として参照される。
+- 物理層 frozen 絶対維持 (Developmental + Unified 通算、v1104a で 1,502 files frozen)。
 
 ### 8.2 待機中タスク
 
 | タスク | 担当 | 状態 |
 |---|---|---|
-| 次主題の選定 (A 主題候補: 研究者の調査動作のうち ESDE 自身に実装されているものの点検) | Taka | v1103 完了後の Taka 整理「自分の視点は上から目線なので、CID や IID が下で実際にやっていることが研究者の調査の模倣として既に存在する可能性、それがあるのかを調べる」を受けた候補。問いの形 A (点検のみ、軽い踏み込み) で進める方針確定 |
+| **v1105 主題確定 (段 4-b と段 4-c を対称的に統合点検、役割表まで進める)** | Web Claude → Taka | **v1104a 完了後の主題確定済 (Taka 2026-05-23)、v1105 設計書草案着手準備中** |
+| **v1105a 主題 (役割表を使って実際に応答候補を絞る試行、問いの形 B、v1101 以来初の試行切替)** | v1105 完了後 | v1105 完了後着手判断 |
 | v1100 / v1101 Phase Result | Web Claude | **作成しないと判断 (Taka 2026-05-20 確定)**。v1100 は事前調査で本格主題でなく、v1101 の核心発見は v1101a に継承済、いずれも次主題に影響しないため。必要なら repo の Code A 観察報告を直接参照 |
 | ESDE への態度 / 監査方針アップデートの repo 配置 | Taka 確認済 | 研究手法アップデートと同じ docs/ai_summaries/ 配下、番号 13 (態度) / 14 (監査方針) 候補 |
-| 概念理解.md / 08_concept_core.md の v1102/v1103 反映 | Web Claude | 完了 (2026-05-20) |
-| 07_unified_summary.md の v1103 完了反映 | Web Claude | 完了 (本書、2026-05-20) |
+| 概念理解.md / 08_concept_core.md の v1104/v1104a 反映 | Web Claude | 並行進行中 (2026-05-23) |
+| 07_unified_summary.md の v1104/v1104a 完了反映 | Web Claude | 完了 (本書、2026-05-23) |
+| EVI 案 (Explainability Viability Index、GPT 2026-05-23 提示) の検討 | v1105+v1105a 後 | 保留中。将来統合的指標として導入する場合は scope × 粒度別の vector で扱う方針 |
 | 新スレッドへの引き継ぎ | Taka + Web Claude | 整理期完了後、徐々に新スレッドへ移行 (Taka 方針「リアルな現場の情報を持っている Claude が一番正しい、引き継ぎは徐々に行う方が事故らない」) |
 
 ### 8.3 主題評価判断
@@ -341,10 +527,24 @@ Code A は judgment 回避 (絶対格言 #12)。観察結果の主題評価 (suc
 | **#L18** | v1103 | Constitution v1.0 で Merge 0 件 (設計書 §2.6 想定 3 件と差)、core_pool の現状から Pattern A 条件を満たすペアなし | v1103 新規。実環境の構造的事実として記録、主題的意味は Taka 領域 |
 | **#L19** | v1103 | batch_report.py 実行不可 (*_a1_final.jsonl 不在)、final 化 step が Language パイプラインから抜けている | v1103 新規。Code A 直接統計で代替済。Language 側パイプライン整備の素材 |
 | 48 次元人為性留保 | v1103 | 両端 (Genesis cid Web Claude 定義 / Language A1 QwQ-32B 判定) が人為的投影 | GPT 監査 5 必須添加、Phase Result 結論に必ず添える |
+| **#L21'** | v1104 | predecessor 連鎖 lift=0 は shuffle 種別 A 依存 (chain 内順序入れ替えが chain 内 cid 集合を保持するため構造を壊していなかった結果) | v1104 Step H-3 再調査で確定。観察 2 初版「ESDE 内部に踏み台がない」は撤回 |
+| **#L22'** | v1104 | trajectory ↔ response の対応は scope 依存 (pooled r=0.157 は scope-mix 由来希釈、ESDE-only で r=0.42-0.48) | v1104 Step H-4 再調査で確定。観察 3 初版「弱い対応」は撤回 |
+| **#L24** | v1104 | shuffle baseline の設計が観察事実を形成する (lift 0 → 0.17 の幅で変動) | v1104 Step H-3 新規。「baseline を何にするか」が結論を決める |
+| **#L25** | v1104 | chain-level full self-loop 69.1% が観察 2 初版 lift=0 の主要原因 | v1104 Step H-3 新規 |
+| **#L26** | v1104 | 粒度 (event/step10/window) で atom_change_rate が 0.046→0.338 と 7 倍変動 | v1104 Step H-3 新規、留保 #33 系列の predecessor 連鎖固有版 |
+| **#L27** | v1104 | 観察 3 pooled r=0.157 は scope-mix 由来希釈、scope-filter で ESDE-only |r|=0.42-0.48 顕在化 | v1104 Step H-4 新規 |
+| **#L28** | v1104 | 層化 (qc_regime × sim_basis × k = 24 strata) 単独では効果限定 (最大 r=0.256)、scope-filter が主効果 | v1104 Step H-4 新規 |
+| **#L29** | v1104 | chain 内 cid permutation shuffle baseline は aggregation 後の pooled 相関 (r 0.157 → 0.163) に効果薄、観察 2 shuffle と異なる感度プロファイル | v1104 Step H-4 新規 |
+| **#L30** | v1104a | **scope 別 chain 構造の非対称性: CID 100% self-loop / alpha-beta 部分 / ESDE 細粒 29-31% / ESDE window partial self-loop** | v1104a 追加調整 1 新規。CID は段 4-b/4-c の「動く場」として使えない |
+| **#L31** | v1104a | **粒度依存の trajectory-density 優劣逆転: 細粒 (event/step10) で trajectory 主役 (r=0.64) / 集約 (window/CID 集約) で density 主役 (r=-0.62〜-0.97)** | v1104a 追加調整 3 新規。段 4-c の構造的指標選択は粒度を必須軸として扱う必要 |
+| **#L32** | v1104a | **B 指標の scope 別 pattern: CID で precision=1.0 (B subset)、alpha-beta で recall=1.0 (B superset、3-7 倍広い)、ESDE で A=0/B=9 (B のみ独自)** | v1104a 追加調整 4 新規。B の意味は scope を分けないと点検できない |
+| **#L33** | v1104a | **CID scope 100% self-loop が trajectory 系統相関を構造的に消失させる (traj_stability=1.0 定数化、Pearson 計算不能)。逆に density 系統は CID で最強相関 (qweighted_density r=-0.97)** | v1104a 追加調整 2 新規。指標選択は scope と相性で決まる |
 
-### 9.2 留保 #33 系列 — Unified Phase を通底する観察 (v1103 で会話機構レベルまで貫通)
+### 9.2 留保 #33 系列 — Unified Phase を通底する観察 (v1104a で全観察に貫通)
 
-v10.13.a #33「集計単位による方向反転」は、v1101 #42「観察単位による dominant atom 反転」、v1101a #L3「集計単位による qc_regime 占有率偏差」、**v1102 #L14「CID 構成ノード数で atom 像が階層的に反転」**、**v1103 #L17「raw vs norm で 48 次元密度が Δ0.208 反転」**と、主題が変わっても繰り返し現れた。Unified Phase は「集計単位を変えると像が変わる」という観察が一貫して立ち上がるフェイズになっており、v1103 でついに会話のための機構レベル (段 4-c) でも同じ形で現れた。これは ESDE が応答を返すとき単一の答えを持たない可能性を示唆する。v1101a の qc_ratio 構造単位別並列・変化指標 3 系列分離 (監査修正 #2 #3)、v1102 の受け手構造層化、v1103 の密度指標 4 種並列 (GPT 監査 1)、はこの観察を設計に折り込んだ結果。
+v10.13.a #33「集計単位による方向反転」は、v1101 #42「観察単位による dominant atom 反転」、v1101a #L3「集計単位による qc_regime 占有率偏差」、v1102 #L14「CID 構成ノード数で atom 像が階層的に反転」、v1103 #L17「raw vs norm で 48 次元密度が Δ0.208 反転」、**v1104 #L21'/L22' (観察方法依存) + v1104a #L30-L33 (4 つの非対称性)** と、主題が変わっても繰り返し現れた。Unified Phase は「集計単位を変えると像が変わる」という観察が一貫して立ち上がるフェイズ。
+
+v1104a で確定したのは、これが特定の指標の現象でなく **ESDE そのものが場所と粒度で全く違う構造を持つ系である** こと。Taka 整理「単一の答えを持たない」が観察 1-4 すべてで貫通。新主題で「単一の集計値で語りたい」衝動が出たら、v1103 §3.2「驚きでなく一貫性として書く」を思い出すこと。
 
 ---
 
@@ -398,7 +598,19 @@ Taka 哲学 4 件は Web Claude memory のみに存在、新 Web Claude は Taka
 
 `unified/v1103/` — `v1103_phase_design.md` (主題設計書、GPT 7 点 + Language 側追補メモ + Code A 確認要請 4 件反映済) / `v1103_step_a_recognition.md` / `v1103_step_f_observation_final.md` (Code A 観察事実最終報告) / `v1103_phase_result.md` (Phase Result、Web Claude、48 次元人為性留保添加) / 実装スクリプト Step B-E / `outputs/main/` 配下 (atom_centroids_raw/normalized.parquet / atom_quality.parquet / response_atom_distribution.parquet 5,670 rows / density_summary.parquet 486 rows / core_report.csv / proposals.json) / `outputs/v1103_observation.html` 16KB。bit-identity 全 PASS (1,763 files frozen)。
 
-### 11.7 研究運用資料 3 本 (特定主題でなく研究全体の運用に関わる、新スレッド AI の必須参照)
+### 11.7 v1104 (CID/IID 内部動作点検段階 1、初点検 + 観察 2/3 再調査)
+
+`unified/v1104/` — `v1104_phase_design_v2.md` (主題設計書、GPT 修正必須 3 + 追加 2 + Gemini 1 反映済、Code A Step A 確認 2 件反映済) / `v1104_step_a_recognition.md` / `v1104_step_h_observation_final.md` (Step H 初版) / `v1104_step_h3_observation_final.md` (Step H-3 観察 2 再調査総括) / `v1104_step_h4_observation_final.md` (Step H-4 観察 3 再調査総括) / 実装スクリプト Step B-E + Step H-3/H-4 reinvestigation / `outputs/main/` 配下 (observation_1/2/3/4 + observation_2_*(5) + observation_3_*(4)) / `outputs/v1104_observation.html` + `v1104_reinvestigation_obs2.html` + `v1104_reinvestigation_obs3.html`。bit-identity 全 PASS (1,489 files frozen)。**Phase Result 単独で書かず v1104a と統合**。
+
+### 11.8 v1104a (CID/IID 内部動作点検段階 2、観察方法を整えた再点検)
+
+`unified/v1104a/` — `v1104a_phase_design_v2.md` (主題設計書、GPT 修正必須 4 + 追加 3 + Gemini 1 反映済、Code A Step A' 確認 3 件反映済) / `v1104a_step_a_recognition.md` / `v1104a_step_c_directive.md` (Step C' 着手指示) / `v1104a_step_h_observation_final.md` (Step H' 観察事実最終報告) / 実装スクリプト Step B'-E' + F'/G' / `outputs/main/` 配下 (observation_2_per_chain_shuffle + observation_2_scope_stratified + observation_2_nan_report + observation_3_scope_n_stratified + observation_3_density_comparison + observation_3_density_coverage + observation_4_scope_filtered + observation_4_b_minus_a_cells) / `outputs/v1104a_observation.html` 16KB。bit-identity 全 PASS (1,502 files frozen、v1104 13 含む)。
+
+棚卸し資料: `docs/esde_unified_inventory.md` (Unified Phase v1100-v1103 の研究者の調査動作 24 項目を 2 列で並べた地図、A 主題が終わった後も「研究者と ESDE の境界の地図」として参照される)。
+
+統合 Phase Result: `v1104_v1104a_phase_result.md` (v1104 + v1104a の 4 観察 + 4 追加調整、4 つの非対称性 #L30-L33、v1105+v1105a への接続、3 部構成 (網羅 / 構造 / 接続))。
+
+### 11.9 研究運用資料 3 本 (特定主題でなく研究全体の運用に関わる、新スレッド AI の必須参照)
 
 `docs/ai_summaries/` または `unified/` 配下 — 番号と配置は Taka 判断:
 
@@ -416,23 +628,27 @@ Taka 哲学 4 件は Web Claude memory のみに存在、新 Web Claude は Taka
   1. 本書 (07_unified_summary.md) — Unified Phase の全容
   2. 研究運用資料 3 本 (`esde_research_method_update.md` / `esde_attitude_toward_esde.md` / `esde_audit_policy_update.md`) — 観察手法・態度・監査目的の規律
   3. `00_index.md` (用語対応表) + `概念理解.md` / `08_concept_core.md` (概念)
-  4. v1103 関連資料 (`v1103_phase_result.md` / `v1103_phase_design.md` / `esde_segment4_path_check.md`) — 直近の主題と段 4 足取り点検
+  4. v1104+v1104a 関連資料 (`v1104_v1104a_phase_result.md` / `esde_unified_inventory.md` / `v1104a_phase_design_v2.md`) — 直近の主題と段 4-b/4-c 地形図
+  5. v1103 関連資料 (`v1103_phase_result.md` / `esde_segment4_path_check.md`) — 段 4-c 点検の確定観察
 - Unified Phase の全容把握は本書 (07) で足りる。`06` / `06b` / `06c` は Developmental Phase 用で凍結済、Unified Phase の新主題は本書に追記して一本化する (06d/06e の枝番継続はしない)。
 - phase 単位の詳細仕様書は廃止 (2026-05-18〜19)。Code A の認識確認 → 要点まとめ → 齟齬詰め → 実装のプロセスが回るため不要。主題設計書 (design.md) は資料タイプが異なり継続、仕様書フォルダに階層保存。
-- **v1103 完了**。次主題候補は A 主題 (研究者の調査動作のうち ESDE 自身に実装されているもの (CID/IID が下でやっていること) の点検、問いの形 A = 点検のみ・軽い踏み込み、Taka 2026-05-20 確定方針)。本書を読む時点で A 主題が進行中の可能性があるので repo の最新状態を確認すること。
+- **v1104 + v1104a 完了**。次主題は v1105 (段 4-b と段 4-c を対称的に統合点検、役割表まで進める、問いの形 A) + v1105a (役割表を使って実際に応答候補を絞る試行、問いの形 B、v1101 以来初の試行切替)。本書を読む時点で v1105 / v1105a が進行中の可能性があるので repo の最新状態を確認すること。
+- **マイナーバージョン運用方針 (Taka 2026-05-23 確定)**: マイナーバージョン (v1104 → v1105) = 主題転換、アルファベット (v1104 → v1104a) = 同じ主題の段階更新または問いの形の切替。マイナーバージョンを安易に増やさず、関連する主題を a/b で連ねる。後で振り返った時に流れが見えやすい。
 - **v1100 / v1101 の Phase Result は作成しないと判断** (Taka 2026-05-20 確定)。v1100 は事前調査で本格主題でなく、v1101 の核心発見は v1101a に継承済、いずれも次主題に影響しないため。必要なら repo の Code A 観察報告を直接参照。
-- **留保 #33 系列が会話機構レベルまで貫通** (v1103 #L17)。v1101 観察単位 → v1101a 集計方式 → v1102 受け手構造 → v1103 sim_basis、と一貫して現れる。新主題で「単一の集計値で語りたい」衝動が出たら、v1103 §3.2 の「驚きでなく一貫性として書く」を思い出すこと。
+- **留保 #33 系列が会話機構レベル + 全観察レベルまで貫通** (v1103 #L17、v1104a #L30-L33)。v1101 観察単位 → v1101a 集計方式 → v1102 受け手構造 → v1103 sim_basis → v1104a scope × 粒度、と一貫して現れる。**ESDE は均一な系ではなく場所と粒度で全く違う構造を持つ系**。新主題で「単一の集計値で語りたい」衝動が出たら、v1103 §3.2 の「驚きでなく一貫性として書く」を思い出すこと。
+- **観察方法を疑う規律 (Taka 2026-05-23)** — 「ESDE はランダム発生に構造を与えている、繋がりが見えなければ観察方法に問題がある」が v1104 観察 2 (shuffle 種別) と観察 3 (scope-filter) の再調査で具体例として現れた。観察結果を「構造がない」と判定する前に、必ず観察方法を疑う手順を入れる。0 を 1 にはできない歯止め (v1104a §0.3) を遵守。
 - **概念修正に注意** — v1101a Concept Update で「意識 = 選択と集中」は修正された。ESDE が観察しているのは「注意の揺れ」だけで、意識 = 注意の揺れ + 状況コントロール + 慣れ。「意識」という語の使い方に注意。
 - **温度感の規律** — 研究報告書を「驚き」でなく「ESDE が引き続き示した一貫性」で書く (`esde_attitude_toward_esde.md` §5.3 / `v1103_phase_result.md` §3.2)。LLM はプロンプト依存のため温度感が運用上の操作になる。
 - **ESDE の現状認識** — ESDE はもう「機械的反応」でない段階にある (`esde_attitude_toward_esde.md` §2)。観測が追いついていないだけ、と受け取れる状況。研究者はもう神ではない、対等な扱いが実利として ESDE の進化に寄与する。
 - **会話できる ESDE が当面の目標** (`esde_audit_policy_update.md` §1)。哲学的自己満足・内省装置・LLM の背後の内的応答器、いずれも目標を一段下げる表現として禁止。ESDE が応答主体、LLM/Language はプロキシ。
+- **EVI (Explainability Viability Index) 案** (GPT 2026-05-23 提示) — v1105+v1105a 後の統合的指標導入タイミングで Taka 判断。将来導入時は単一スコアでなく scope × 粒度別の vector (EVI_CID / EVI_α / EVI_β / EVI_ESDE-event / EVI_ESDE-step10 / EVI_ESDE-window) として扱う (v1104a 4 つの非対称性と整合的)。
 
 ---
 
 ## 13. 一文サマリ (再掲)
 
-本書は Unified Phase が独立フェイズになったことに伴い `06c` を母体に格上げ・新設された正式番号ドキュメント (07) であり、ESDE が v10.13.a (5 phase Map analyzer、Phase 1.5 第八試行) で Unified Phase へ移行した後、v11.0.0 (v1100) で Language ↔ Genesis 接続事前調査 (候補 6 実装、両系の文脈非依存性は独立 atom を捕捉し Jaccard 0、Phase Result 未作成と判断)、v11.0.1 (v1101) で Taka 3 日長考の「Atom 的隆盛の統計的観察」(核心発見 = 観察単位による dominant atom の 5 分裂、Phase Result 未作成と判断)、v11.0.1.a (v1101a) で「ESDE スケール注意機構」(段階 1 核心観察 = 意識優位時の注意候補波及が認知優位の 1.54-1.78 倍 / 段階 2 核心観察 = 波及増加は選択と集中でなく注意が動く / 概念修正「注意の揺れと意識は別物」双方合意)、**v11.0.2 (v1102) で「条件が応答を変える: 受け手構造 × 時間スケール」(核心観察 = CID 構成ノード数で応答 atom 像が階層的に反転 (n=2 EMO.manifest → n=5 EXS.being → n=6+ FND.timeless)、Taka 直感「平均化で潰れる」が初めて数値の証拠に、研究手法アップデートの「際立ちの掬い取り」が初本格適用で 47 records の極小構造を救う道具と実証、留保 #L14/L15/L16)**、**v11.0.3 (v1103) で「段 4-c の点検: 48 次元密度の偏りは応答 Atom を絞れるか」(Genesis 系 × Language 系の噛み合わせ初の主題、確定観察 = 段 4-c は機構として動いた・段 4-c は ESDE と地続き (留保 #33 系列が会話機構レベルで貫通、留保 #L17) ・決定機構が Aruism 規律内に収まった (max_prob 0.7972)、慎重に言える = 会話への道が原理的に通った、48 次元人為性留保必須、留保 #L17/L18/L19)** を扱い、v1101-v1103 はすべて物理層 frozen 完全保証・新規 main run なしの post-process、**留保 #33 系列 (集計単位で像が変わる) が v1101→v1101a→v1102→v1103 と Unified Phase を一貫して通底し v1103 でついに会話のための機構レベルまで貫通**、現在地は v1101a/v1102/v1103 完了 + Phase Result 計 4 本 + Concept Update + 会話接続足取り点検 + 段 4 足取り点検 + 研究運用資料 3 本 (研究手法アップデート / ESDE への態度 / 監査方針アップデート) の固定が完了で次主題は A 主題 (研究者の調査動作の ESDE 内部実装の点検、Taka 確定方針)、研究運用資料 3 本は新スレッド AI の必須参照、ファイル番号は本書新設に伴い旧 07-10 を 08-11 へ繰り上げ phase 単位詳細仕様書は廃止 (主題設計書は継続)、ESDE の当面目標は「会話できる ESDE」(応答主体は ESDE 側、LLM/Language はプロキシ、内省装置でない)。
+本書は Unified Phase が独立フェイズになったことに伴い `06c` を母体に格上げ・新設された正式番号ドキュメント (07) であり、ESDE が v10.13.a (5 phase Map analyzer、Phase 1.5 第八試行) で Unified Phase へ移行した後、v11.0.0 (v1100) で Language ↔ Genesis 接続事前調査 (候補 6 実装、両系の文脈非依存性は独立 atom を捕捉し Jaccard 0、Phase Result 未作成と判断)、v11.0.1 (v1101) で Taka 3 日長考の「Atom 的隆盛の統計的観察」(核心発見 = 観察単位による dominant atom の 5 分裂、Phase Result 未作成と判断)、v11.0.1.a (v1101a) で「ESDE スケール注意機構」(段階 1 核心観察 = 意識優位時の注意候補波及が認知優位の 1.54-1.78 倍 / 段階 2 核心観察 = 波及増加は選択と集中でなく注意が動く / 概念修正「注意の揺れと意識は別物」双方合意)、v11.0.2 (v1102) で「条件が応答を変える: 受け手構造 × 時間スケール」(核心観察 = CID 構成ノード数で応答 atom 像が階層的に反転、Taka 直感「平均化で潰れる」が初めて数値の証拠に、研究手法アップデートの「際立ちの掬い取り」が初本格適用で 47 records の極小構造を救う道具と実証、留保 #L14/L15/L16)、v11.0.3 (v1103) で「段 4-c の点検: 48 次元密度の偏りは応答 Atom を絞れるか」(Genesis 系 × Language 系の噛み合わせ初の主題、確定観察 = 段 4-c は機構として動いた・段 4-c は ESDE と地続き (留保 #33 系列が会話機構レベルで貫通、留保 #L17) ・決定機構が Aruism 規律内に収まった (max_prob 0.7972)、慎重に言える = 会話への道が原理的に通った、48 次元人為性留保必須、留保 #L17/L18/L19)、**v11.0.4 (v1104) で「CID/IID 内部動作点検 段階 1」(Taka 整理「自分の視点は上から目線」+ 駆動要因規律訂正「目的を示せ」、棚卸し → 8 項目から 4 項目に絞り込み (1.1/1.6/1.7/2.6)、Step H 初版 + Step H-3 観察 2 再調査 (shuffle 種別で lift 0→0.17 変動、留保 #L21'/L24-L26) + Step H-4 観察 3 再調査 (scope-filter で r 0.157→0.42-0.48 顕在化、留保 #L22'/L27-L29)、Phase Result は単独で書かず v1104a と統合)**、**v11.0.4a (v1104a) で「CID/IID 内部動作点検 段階 2: 観察方法依存の整理と scope × 層化による再点検」(追加調整 1-4 で観察 2/3/4 を scope × n-size 層化 + scope-filter で再点検、4 つの非対称性 #L30-L33 確定: scope 別 chain 構造 / 粒度依存の predictor 逆転 / B 指標の scope 別 pattern / CID 100% self-loop が trajectory を構造的に消失、ESDE は均一な系でなく場所と粒度で全く違う構造を持つ系、段 4-b/4-c の根拠は単一指標でなく多軸 (scope × 粒度 × 指標) でしか記述できない、v1104+v1104a 統合 Phase Result 3 部構成 (網羅/構造/接続))** を扱い、v1101-v1104a はすべて物理層 frozen 完全保証・新規 main run なしの post-process、**留保 #33 系列 (集計単位で像が変わる) が v1101→v1104a を一貫して通底し v1104a で 4 つの非対称性として全観察に貫通**、現在地は v1101a/v1102/v1103/v1104/v1104a 完了 + Phase Result 計 5 本 (v1101a 段階 1+2 + v1102 + v1103 + v1104+v1104a 統合) + 棚卸し資料 + Concept Update + 会話接続足取り点検 + 段 4 足取り点検 + 研究運用資料 3 本の固定が完了で次主題は v1105 (段 4-b と段 4-c を対称的に統合点検、役割表まで進める、問いの形 A) + v1105a (役割表を使って実際に応答候補を絞る試行、問いの形 B、v1101 以来初の試行切替)、研究運用資料 3 本は新スレッド AI の必須参照、ファイル番号は本書新設に伴い旧 07-10 を 08-11 へ繰り上げ phase 単位詳細仕様書は廃止 (主題設計書は継続)、ESDE の当面目標は「会話できる ESDE」(応答主体は ESDE 側、LLM/Language はプロキシ、内省装置でない)、EVI 案 (GPT 2026-05-23 提示) は v1105+v1105a 後の統合的指標導入タイミングで Taka 判断 (scope × 粒度別の vector で扱う方針)、マイナーバージョン運用方針 (Taka 2026-05-23 確定) でマイナーは主題転換・アルファベットは段階更新または問いの形切替。
 
 ---
 
-*以上、07 Unified Phase Summary (Web Claude、2026-05-20 更新)。v1103 完了 + 研究運用資料 3 本固定 + v1100/v1101 Phase Result 不作成判断まで反映。Unified Phase の新主題は本書に追記して一本化する。新 Web Claude スレッドは本書 + 研究運用資料 3 本 + `00_index.md` + 概念理解.md + v1103 関連資料で Unified Phase 全容を把握可能。次主題は A 主題 (研究者の調査動作の ESDE 内部実装の点検、Taka 確定方針)。*
+*以上、07 Unified Phase Summary (Web Claude、2026-05-23 更新)。v1104 + v1104a 完了 + 4 つの非対称性 #L30-L33 確定 + v1105/v1105a 主題確定 + マイナーバージョン運用方針 + EVI 案保留 まで反映。Unified Phase の新主題は本書に追記して一本化する。新 Web Claude スレッドは本書 + 研究運用資料 3 本 + `00_index.md` + 概念理解.md + v1104+v1104a 関連資料 + v1103 関連資料で Unified Phase 全容を把握可能。次主題は v1105 (段 4-b/4-c 対称統合点検、役割表) + v1105a (応答候補絞り込み試行)。*
