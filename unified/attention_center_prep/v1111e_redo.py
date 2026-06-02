@@ -195,6 +195,11 @@ def _worker(args):
         atom.step_window(steps=WINDOW_STEPS)
         if center is not None:
             center.step_window(steps=WINDOW_STEPS)
+        # ★ 致命的バグ修正 (2026-06-02): Other も step_window を呼ぶ
+        # 呼ばないと Other.virtual.labels が空のままで足 2 がスキップ、
+        # v1111c/d は番号コピー欠陥が「labels 空でも動く」状態を支えていた
+        if other is not None:
+            other.step_window(steps=WINDOW_STEPS)
         if w == W_INJECT and cond != 'baseline':
             if should_attend(center):
                 # 足 1: center → Atom 読み (テーマ phase tp_in を計算)
