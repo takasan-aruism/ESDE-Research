@@ -280,6 +280,117 @@ v1111e で Web Claude が実際にコードを view して番号コピーを見�
 
 ---
 
+## 1.4 (Taka 指示 2026-06-04、§2.4 FAIL 後修正) 両床併設 = 案 A + 案 B 同時実装
+
+### 経緯
+
+2026-06-03 §2.4 precheck で「self_random_floor (一様乱数 occ) が機能しない」FAIL を観察:
+- 実機 occ は sparse (mean=0.016, n_above_mean=3-6/64)
+- 一様乱数 occ は非 sparse (mean=0.5, n_above_mean=31/64)
+- → 観察関数 `observe()` の閾値 `th=occ.mean()` で active bin 数が桁違い
+- 対角一致期待値 `diag_ar ≈ 3 × (31/64) ≈ 1.45` が `diag_ao ≈ 3 × (6/64) ≈ 0.28` を超える
+- 一様乱数 occ は self 床として機能しない (前回 self_loop 慣性床と「形は違うが効果は同じ」轍)
+
+### Taka 指示
+
+> 案 A・案 B 両方を self 床として実装、比較する (条件を self_permute_floor と self_krandom_floor に分ける)。
+> 両床とも §2.4 点検を通し (実機 occ で Active × Other が各床を超えるか)、PASS した床だけで本実行。
+> Active が両床を超えれば床選択に依存せず「両系で立つ」が言える、片方だけなら差を観察事実に。
+
+### 実装
+
+#### 案 A: self_permute_floor (実機 occ の bin 順序 permute)
+
+```python
+def permute_phase_occupancy(occ_real, state_seed):
+    rng = np.random.RandomState(int(state_seed))
+    perm = rng.permutation(len(occ_real))
+    return np.asarray(occ_real, dtype=float)[perm]
+```
+
+- 値分布 / sparsity / 閾値挙動 (mean) が実機と完全一致
+- phase 帯対応だけ破壊 = 本来の意図「無関係な phase 帯」
+
+#### 案 B: self_krandom_floor (k 個 random 非ゼロ)
+
+```python
+def krandom_phase_occupancy(occ_real, state_seed, n_bins=N_BINS):
+    occ_real = np.asarray(occ_real, dtype=float)
+    th = float(occ_real.mean())
+    active_bins_real = np.where(occ_real > th)[0]
+    k = len(active_bins_real)
+    occ_k = np.zeros(n_bins, dtype=float)
+    if k == 0:
+        return occ_k
+    rng = np.random.RandomState(int(state_seed))
+    random_bins = rng.choice(n_bins, size=k, replace=False)
+    active_mean_value = float(occ_real[active_bins_real].mean())
+    occ_k[random_bins] = active_mean_value
+    return occ_k
+```
+
+- active bin 数 k を実機と完全に揃える (sparsity 一致)
+- k 個の random bin に実機 active 値の平均値を置く
+- bin 位置のみが乱数
+
+### precheck §2.4 修正 (両床評価)
+
+```python
+def precheck_floor_structures():
+    """3 atom × PROBE_N_WINDOWS=3 windows で統計安定化、両床評価"""
+    # Other probe を全 atom で共用、3 windows ぶん occ snapshot
+    other_probe = build_engine(OTHER_SEED_FIXED)
+    other_occs = []
+    for w in range(PROBE_N_WINDOWS):
+        other_probe.step_window(steps=WINDOW_STEPS)
+        other_occs.append(np.asarray(other_probe.virtual.occupancy))
+
+    # 各 atom で 3 windows 進化、4 種類 cooc を累積
+    for sa in ATOM_SEEDS:
+        atom_probe = build_engine(sa)
+        for w in range(PROBE_N_WINDOWS):
+            atom_probe.step_window(steps=WINDOW_STEPS)
+            occ_a = ...
+            occ_o = other_occs[w]
+            occ_perm = permute_phase_occupancy(occ_a, state_seed)
+            occ_kr = krandom_phase_occupancy(occ_a, state_seed)
+            o_aa.observe(occ_a, occ_a)
+            o_ao.observe(occ_a, occ_o)
+            o_ap.observe(occ_a, occ_perm)
+            o_ak.observe(occ_a, occ_kr)
+
+    diag_aa, diag_ao, diag_ap, diag_ak = ...
+
+    # 床ごと PASS 判定 (strict <)
+    floor_pass = {
+        'self_permute_floor': diag_ap < diag_ao,
+        'self_krandom_floor': diag_ak < diag_ao,
+    }
+
+    # 両床 FAIL → raise (本実行に進まない)
+    # 片床/両床 PASS → PASS dict を返し、main で動的 conditions 構築
+```
+
+### 本実行 conditions (動的)
+
+```python
+conditions = ['active_pair'] + \
+             [f for f in ['self_permute_floor', 'self_krandom_floor'] if floor_pass[f]] + \
+             ['phase_shifted']
+```
+
+- 両床 PASS: 4 conditions × 3 atom = 12 tasks Pool(12)
+- 片床 PASS: 3 conditions × 3 atom = 9 tasks Pool(9)
+- 両床 FAIL: raise で停止
+
+### Stage 1 出口判定 (床選択依存性も明示)
+
+- 全 δ × 全 PASS 床で 3/3 揃う → 「床選択に依存せず両系で立つ」候補観察
+- 一部の床だけ揃う → 「PASS 床選択に依存する」観察事実として記録
+- どの床でも揃わない → Stage 1 不成立 (測れた上での不成立)
+
+---
+
 ## 3.5 (Taka 詰め 2 認識) atom=100 突出が同 seed 並走由来かの結果読み
 
 #### 認識として持つ
