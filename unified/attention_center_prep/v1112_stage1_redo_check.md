@@ -176,10 +176,12 @@ assert len(set(seeds_used)) == WINDOWS, "window 間で乱数 seed が重複"
 
 これら 3 つを **本実行 (Pool 起動) の前に** 実行、結果を Web Claude に報告。
 
-### 2.4 (Taka 詰め 1 追加) 乱数床 diagonal が Active より構造的に低くなりうるか
+### 2.4 (Taka 詰め 1 + Taka 認識 OK 後修正) 乱数床 diagonal が Active より構造的に低くなりうるか — **実機 baseline occ で点検**
 
 §2.1 のダミー shift テストは「diagonal が shift で動く」を確認するだけ。
 もう一歩踏み込んで、**乱数床 (self 床候補) の diagonal が、構造的に Active より低くなりうるか** を点検する。
+
+**Taka 認識 OK 後の修正**: 理想化ダミー (`active_occ[10:20] = uniform(0.5, 1.0)`) でなく、**実機 baseline occupancy** で点検する。理由 = ダミーの mean 閾値挙動が実機とズレ、点検が本番を保証しない (`observe` 内の `th = occ.mean()` が実機 occ とダミー occ で全く違う bin 集合を active と判定する可能性)。
 
 #### 認識
 
@@ -189,71 +191,71 @@ assert len(set(seeds_used)) == WINDOWS, "window 間で乱数 seed が重複"
 - もし乱数床の diagonal が偶然 Active Pair より高く出る経路があると、また (2) が測れない (前回 self が慣性で高く出た轍を、乱数床でも踏む)
 - 前回 self_loop は Atom 自身の慣性で対角が高くなった。乱数床はそれを起こさないか、**結果を取りに行く前に確認する**。
 
-#### 具体実装案
+#### 具体実装案 (実機 baseline occ で点検)
 
-ダミー occ で 3 つの cooc 行列を作り、diagonal を比較:
+本番と同じパスで Atom / Other を 1 window 動かし、得た実機 occupancy で 3 つの cooc を構築:
 
 ```python
-import numpy as np
+def precheck_random_floor_structure():
+    """§2.4: 乱数床が構造的に Active より低くなりうるか、実機 baseline occ で点検"""
+    print("[precheck §2.4] 実機 baseline occ を取得中...")
+    # 本番と同じ build_engine で 1 window 動かす (本番条件保証)
+    atom_probe = build_engine(ATOM_SEEDS[0])   # 例: seed=42
+    other_probe = build_engine(OTHER_SEED_FIXED)  # seed=999
+    atom_probe.step_window(steps=WINDOW_STEPS)
+    other_probe.step_window(steps=WINDOW_STEPS)
 
-n = 64
-# Active 風 occ (特定 bin に偏る、Atom の典型動態を模擬)
-np.random.seed(42)
-active_occ = np.zeros(n)
-active_occ[10:20] = np.random.uniform(0.5, 1.0, 10)  # 10 bin に集中
+    occ_a = np.asarray(atom_probe.virtual.occupancy, dtype=float)  # 実機 Atom occ
+    occ_o = np.asarray(other_probe.virtual.occupancy, dtype=float)  # 実機 Other occ (別 seed)
+    occ_r = random_phase_occupancy(state_seed=ATOM_SEEDS[0] * 100003 + 0 * 7919)  # 乱数床 (state 由来)
 
-# Other 風 occ (別 seed の偏り、独立系を模擬)
-np.random.seed(100)
-other_occ = np.zeros(n)
-other_occ[30:40] = np.random.uniform(0.5, 1.0, 10)  # 別 phase 帯
+    # 3 つの cooc を構築 (1 window 想定、本番と同じ observer.observe を使う)
+    o_aa = ResonanceObserver(); o_aa.observe(occ_a, occ_a)  # Active 自己 (上限)
+    o_ao = ResonanceObserver(); o_ao.observe(occ_a, occ_o)  # Active × Other (Active Pair 期待)
+    o_ar = ResonanceObserver(); o_ar.observe(occ_a, occ_r)  # Active × 乱数 (self 床 期待)
 
-# 乱数 occ (全 bin 一様、self 床候補)
-np.random.seed(999)
-random_occ = np.random.uniform(0, 1, n)
+    diag_aa = diagonal_mass(o_aa.cooc_count, delta=0)
+    diag_ao = diagonal_mass(o_ao.cooc_count, delta=0)
+    diag_ar = diagonal_mass(o_ar.cooc_count, delta=0)
 
-# 3 つの cooc を累積 (1 window 想定)
-o_aa = ResonanceObserver(); o_aa.observe(active_occ, active_occ)
-o_ao = ResonanceObserver(); o_ao.observe(active_occ, other_occ)
-o_ar = ResonanceObserver(); o_ar.observe(active_occ, random_occ)
+    # mean 閾値の挙動も記録 (実機/乱数の閾値超え bin 数を比較)
+    print(f"  実機 Atom: mean={occ_a.mean():.4f}, n_above_mean={int((occ_a > occ_a.mean()).sum())}")
+    print(f"  実機 Other: mean={occ_o.mean():.4f}, n_above_mean={int((occ_o > occ_o.mean()).sum())}")
+    print(f"  乱数: mean={occ_r.mean():.4f}, n_above_mean={int((occ_r > occ_r.mean()).sum())}")
+    print(f"  diag_aa (Active 自己) = {diag_aa}")
+    print(f"  diag_ao (Active × Other) = {diag_ao}")
+    print(f"  diag_ar (Active × 乱数) = {diag_ar}")
 
-diag_aa = diagonal_mass(o_aa.cooc_count, delta=0)  # 完全自己同期 (上限)
-diag_ao = diagonal_mass(o_ao.cooc_count, delta=0)  # Active × Other (Active Pair 期待値)
-diag_ar = diagonal_mass(o_ar.cooc_count, delta=0)  # Active × 乱数 (self 床 期待値)
-
-print(f"diag_aa (Active 自己) = {diag_aa}")
-print(f"diag_ao (Active × Other) = {diag_ao}")
-print(f"diag_ar (Active × 乱数) = {diag_ar}")
-
-# 期待関係: diag_aa > diag_ao > diag_ar
-# - 自己同期は完全 (active bin の自己 cooc が直接対角に乗る)
-# - 別 seed Other は偏りの場所が違う → 対角に乗る確率薄まる
-# - 乱数 occ は閾値超え bin が n/2 ≈ 32 個、Active の active bin (10 個) との対角一致は確率 (10/64) で薄い
-
-# 警告判定
-if diag_ar >= diag_ao:
-    raise RuntimeError("乱数床 diagonal が Active × Other 以上 — self 床として機能しない、測定器壊れ")
-if diag_ar >= diag_aa:
-    raise RuntimeError("乱数床 diagonal が Active 自己以上 — 構造的に不可能、観察関数バグ")
+    if diag_ar >= diag_ao:
+        raise RuntimeError(
+            f"乱数床 diagonal ({diag_ar}) >= Active × Other ({diag_ao}) — "
+            "self 床として機能しない (前回 self_loop 慣性床と同じ轍)。乱数 seed を変えるか設計再考。"
+        )
+    if diag_ar >= diag_aa:
+        raise RuntimeError(
+            f"乱数床 diagonal ({diag_ar}) >= Active 自己 ({diag_aa}) — "
+            "構造的に不可能、observe / diagonal_mass 関数バグ。"
+        )
+    print(f"[precheck §2.4] PASS (diag_aa > diag_ao > diag_ar)")
 ```
 
-#### 補足: occ_aa の閾値挙動
+#### なぜ実機 occ か (Taka 詰め)
 
-`ResonanceObserver.observe` 内で `th = occ.mean()` を閾値に使う。
+- 理想化ダミー (`active_occ[10:20] = uniform(0.5, 1.0)`) の mean 閾値挙動 は:
+  - mean ≈ (10 × 0.75) / 64 ≈ 0.12
+  - 閾値超え bin = 10 個 (鋭く偏り)
+- 一方、実機 occ は:
+  - 全 64 bin に分布、mean は実機の active 帯と他帯の合計
+  - 閾値超え bin 数は実機の動態次第 (おそらく 20-40 個程度、ダミーより緩やか)
+- → ダミーで `diag_ar < diag_ao` を確認しても、実機で同じ関係が保たれる保証なし
+- → **本番と同じ build_engine で 1 window 動かして得た実機 occ で点検する**
 
-- Active 自己: 閾値超え bin = active bin (10 個)、両系で同一 → 対角に直接乗る
-- Active × Other: 閾値超え bin は両系で違う場所 (10 vs 10、対角一致は偶然のみ)
-- Active × 乱数: Active 閾値超え (10 個) × 乱数閾値超え (~32 個) → 対角一致は 10 個 × (32/64) ≈ 5 個 (一様乱数の構造)
+#### 警告経路と対処
 
-→ **乱数床は構造的に Active × Other より低くなる** はず。これを点検で確認。
+1. `diag_ar >= diag_ao`: self 床が機能しない (実機 occ で本当に乱数床が高く出る経路)。乱数 seed を変えるか、self 床の設計再考 (例: 一様 occ でなく、Atom occ の分布形を保ちつつ phase をシャッフル)。
+2. `diag_ar >= diag_aa`: 構造的に不可能、コードバグ修正。
 
-#### 警告経路
-
-警告 (raise) が出るシナリオ:
-
-1. `diag_ar >= diag_ao`: 乱数の occ が偶然 Active の偏った帯に一致した bin を多く含む → 乱数 seed の選び方に依存
-2. `diag_ar >= diag_aa`: 構造的に不可能、observe 関数のバグ
-
-警告 1 を回避するため、`atom_seed * 100003 + w * 7919` から生成される乱数 seed の挙動を、複数の atom_seed × window 組み合わせで確認 (例: 30 window × 3 atom = 90 sample) し、平均 / 分散を見る。
+警告 1 が出たら本実行に進まない。Web Claude / Taka に報告して再設計。
 
 ---
 
