@@ -120,36 +120,90 @@ def cosine_similarity(v1, v2):
 Atom 系 CID 集合 A (|A|≈10-50)、Other 系 CID 集合 O (|O|≈10-50)。
 全 A × O ペアで similarity を計算 (|A|×|O| sample)。
 
-### 2.2 「偶然より似ているか」判定 (Taka 指示)
+### 2.2 「偶然より似ているか」判定 (Taka 詰め 2026-06-04 反映、最重要修正)
 
-**null 分布**: A の特性ベクトル次元値を window 内で **shuffle (各次元を独立に bin permute)**。
-- これで「同じ次元分布だが、相関構造を壊した特性ベクトル群」が得られる
-- 構造 (各 CID の特性間関係) を破壊した null
+#### Code A の盲点修正
 
-```python
-def shuffle_features_independently(feature_matrix, state_seed):
-    """各次元を独立に row 方向シャッフル (CID 間の相関構造を壊す)"""
-    rng = np.random.RandomState(state_seed)
-    shuffled = feature_matrix.copy()
-    n_rows, n_cols = shuffled.shape
-    for col in range(n_cols):
-        shuffled[:, col] = shuffled[rng.permutation(n_rows), col]
-    return shuffled
+当初 Code A は null = 「自身 shuffle」(各次元独立 row 方向 shuffle で CID 間相関構造破壊) を採用していた。Taka 指摘:
+
+> 「現状の null だと『Atom の特性に構造があるか』は見えるが、Taka の問い『別 seed の二系が偶然より似てるか』に答えてない。『どの ESDE でも CID は似た特性分布を持つ (n_core=2 が 85% 等、seed 共通の経験則)』から似てるだけなら、それは足場でない。『皆同じだから似てる』と『この二系が特に響く』が分離できてない」
+
+→ 自身 shuffle null では **共通分布性の効果を引き算できない**。z-score 標準化が「皆同じ次元」を効かせすぎて全ペアが似て見える懸念も同じ。
+
+#### 直す: 別系比較 null (Taka 指示)
+
+```
+実観察: sim(atom=42, other=999)
+null:   sim(atom=42, 別の無関係な系) = Other を複数の別 seed (例 12345, 54321, 7777) にして
+        それぞれとの sim 分布
 ```
 
 判定:
+- sim(atom=42, other=999) が複数の無関係別系との sim 分布より **明確に高い** か
+- 同じくらいなら「どの系とも同程度 = 皆同じ = 足場でない」
+- 特に高いなら「この二系が特に響く = 足場が在る」
 
-| 比較対象 | 期待 |
-|---|---|
-| `sim(A, O)` mean | 実観察 |
-| `sim(A_shuffled, O)` mean | null (構造破壊) |
-| 上位 5% sim ペア数 | 実 vs null |
+これで **「皆同じだから似てる」を引き算して、「特に似てる分」だけを足場とする**。
 
-**「偶然より似ている」**:
-- `mean sim(A, O) > mean sim(A_shuffled, O)` かつ
-- 上位 5% sim ペア数が null より明確に多い
+#### 実装
 
-3 atom seeds × 24 (24 seeds 規律) で全 atom で揃うか確認 (per_atom 観察)。
+```python
+NULL_OTHER_SEEDS = [12345, 54321, 7777, 11111, 33333]  # 5 系 (atom / real_other と非重複)
+
+# 実観察 (real)
+real_features_other = build_features(OTHER_SEED_FIXED)  # 999
+real_sim_mean = mean([cosine(v_a, v_o)
+                      for v_a in atom_features
+                      for v_o in real_features_other])
+
+# null 分布 (別系 5 seed)
+null_sim_means = []
+for null_seed in NULL_OTHER_SEEDS:
+    null_features = build_features(null_seed)
+    null_sim_mean = mean([cosine(v_a, v_n)
+                          for v_a in atom_features
+                          for v_n in null_features])
+    null_sim_means.append(null_sim_mean)
+
+# 判定
+null_max = max(null_sim_means)
+null_mean = mean(null_sim_means)
+gap = real_sim_mean - null_mean  # null mean からのギャップ
+rank = sum(1 for n in null_sim_means if real_sim_mean > n)  # null 何個を超えたか
+
+is_above = (real_sim_mean > null_max)  # null 最大も超えたか
+```
+
+#### 観察指標
+
+| 指標 | 計算 | 解釈 |
+|---|---|---|
+| `real_sim_mean` | sim(atom, real_other) 全ペア平均 | 実観察 |
+| `null_sim_means[5]` | 5 別系それぞれとの sim 平均 | null 分布 |
+| `null_max` | max(null_sim_means) | null 上限 |
+| `null_mean` | mean(null_sim_means) | null 中央 |
+| `gap = real - null_mean` | 実と null 中央のギャップ | 引き算した分 |
+| `rank = #(real > null_i)` | real が null 何個を超えたか | 0-5 |
+
+#### 判定基準 (Taka の言葉)
+
+- `rank = 5/5` かつ `real > null_max` → 「この二系が特に響く = 足場が在る」候補
+- `rank = 3/5` 程度 → 「どの系とも同程度 = 皆同じ = 足場でない」
+- `rank = 0/5` → 「別系のほうが似ている = 足場でない (逆向き)」
+
+#### 上位 5% sim ペア数による補助判定 (mean だけでなく上位も見る)
+
+```python
+# 上位 5% sim の ペア数 (real vs null)
+real_top5_count = sum(1 for s in real_sims if s > np.percentile(real_sims, 95))
+null_top5_counts = [...]  # 同様に各 null で計算
+
+# 高 sim ペア数も real が null より多いか
+```
+
+#### 3 atom seed で揃うか
+
+`ATOM_SEEDS = [42, 100, 200]` で全 atom について real > null_max を確認。3/3 atom で揃えば構造的観察、1/3 のみなら atom 依存。
 
 ---
 
@@ -208,12 +262,15 @@ Atom 系を 1 sample 動かして実機 CID 群を取得、各 CID の自己 sim
 
 - ATOM_SEEDS = [42, 100, 200] (まず 3 atom で確認、smoke 規模)
   - 後の本実行で 24 seeds に拡張 (Taka 規律: 1 バッチ)
-- OTHER_SEED_FIXED = 999 (atom と別 seed、同 seed 並走排除)
+- OTHER_SEED_FIXED = 999 (real, atom と別 seed、同 seed 並走排除)
+- NULL_OTHER_SEEDS = [12345, 54321, 7777, 11111, 33333] (5 系、別系 null 用、atom/real_other と非重複)
 - WINDOW_STEPS = 500
 - WINDOWS = 30 (過去標準)
 - 自然進化 (注入なし、書き戻しなし)
 - node ID 排他 (絶対)
 - 第三 ESDE = なし (今回は CID 特性比較なので observer 不要)
+- 並列: 3 atom + 1 real other + 5 null others = 9 systems Pool(9) 1 Wave
+- 推定時間: 1 system ≈ 1.8 時間、並列で ≈ 1.8 時間
 
 ### 4.3 やる順 (Taka 指示準拠)
 
@@ -242,7 +299,7 @@ Atom 系を 1 sample 動かして実機 CID 群を取得、各 CID の自己 sim
 | 1 | **痩せた phase 表現 (occupancy) を捨て、CID の本当の情報で測る** | ✓ §1 で 15 次元 (n_core / Q / C / phase_sig / phi / lifespan / pulse / familiarity / v9.18 unity) |
 | 2 | **node ID 排他 (絶対)**: nodes / member_nodes / attention[cid][node_id] は使わない | ✓ §1.2 で除外リスト明示 |
 | 3 | **完全一致でなく一致率**: cosine similarity (z-score 標準化後) | ✓ §2.1 |
-| 4 | **偶然より似ているか**: 各次元独立 shuffle した null と比較 | ✓ §2.2 |
+| 4 | **偶然より似ているか**: **別系 5 seed の null 分布** と比較 (Taka 詰め反映) | ✓ §2.2 修正、自身 shuffle null を捨て別系 null に切替 |
 | 5 | **測定器点検 (結果を読む前に必須)**: 自己 > 揺らした自己 > 乱数 が成立するか | ✓ §3.1-§3.4 で 4 項目、FAIL なら raise |
 
 ---
