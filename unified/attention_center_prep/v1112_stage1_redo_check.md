@@ -176,6 +176,85 @@ assert len(set(seeds_used)) == WINDOWS, "window 間で乱数 seed が重複"
 
 これら 3 つを **本実行 (Pool 起動) の前に** 実行、結果を Web Claude に報告。
 
+### 2.4 (Taka 詰め 1 追加) 乱数床 diagonal が Active より構造的に低くなりうるか
+
+§2.1 のダミー shift テストは「diagonal が shift で動く」を確認するだけ。
+もう一歩踏み込んで、**乱数床 (self 床候補) の diagonal が、構造的に Active より低くなりうるか** を点検する。
+
+#### 認識
+
+- 乱数 occ は全 bin に一様にばらつく
+- Active occ は特定 phase 帯に偏る (Atom の active な bin)
+- → 「Active occ (偏り) × 乱数 occ (一様)」の cooc 対角は、「Active occ × Other occ (別 seed の偏り)」より **薄くなる** はず
+- もし乱数床の diagonal が偶然 Active Pair より高く出る経路があると、また (2) が測れない (前回 self が慣性で高く出た轍を、乱数床でも踏む)
+- 前回 self_loop は Atom 自身の慣性で対角が高くなった。乱数床はそれを起こさないか、**結果を取りに行く前に確認する**。
+
+#### 具体実装案
+
+ダミー occ で 3 つの cooc 行列を作り、diagonal を比較:
+
+```python
+import numpy as np
+
+n = 64
+# Active 風 occ (特定 bin に偏る、Atom の典型動態を模擬)
+np.random.seed(42)
+active_occ = np.zeros(n)
+active_occ[10:20] = np.random.uniform(0.5, 1.0, 10)  # 10 bin に集中
+
+# Other 風 occ (別 seed の偏り、独立系を模擬)
+np.random.seed(100)
+other_occ = np.zeros(n)
+other_occ[30:40] = np.random.uniform(0.5, 1.0, 10)  # 別 phase 帯
+
+# 乱数 occ (全 bin 一様、self 床候補)
+np.random.seed(999)
+random_occ = np.random.uniform(0, 1, n)
+
+# 3 つの cooc を累積 (1 window 想定)
+o_aa = ResonanceObserver(); o_aa.observe(active_occ, active_occ)
+o_ao = ResonanceObserver(); o_ao.observe(active_occ, other_occ)
+o_ar = ResonanceObserver(); o_ar.observe(active_occ, random_occ)
+
+diag_aa = diagonal_mass(o_aa.cooc_count, delta=0)  # 完全自己同期 (上限)
+diag_ao = diagonal_mass(o_ao.cooc_count, delta=0)  # Active × Other (Active Pair 期待値)
+diag_ar = diagonal_mass(o_ar.cooc_count, delta=0)  # Active × 乱数 (self 床 期待値)
+
+print(f"diag_aa (Active 自己) = {diag_aa}")
+print(f"diag_ao (Active × Other) = {diag_ao}")
+print(f"diag_ar (Active × 乱数) = {diag_ar}")
+
+# 期待関係: diag_aa > diag_ao > diag_ar
+# - 自己同期は完全 (active bin の自己 cooc が直接対角に乗る)
+# - 別 seed Other は偏りの場所が違う → 対角に乗る確率薄まる
+# - 乱数 occ は閾値超え bin が n/2 ≈ 32 個、Active の active bin (10 個) との対角一致は確率 (10/64) で薄い
+
+# 警告判定
+if diag_ar >= diag_ao:
+    raise RuntimeError("乱数床 diagonal が Active × Other 以上 — self 床として機能しない、測定器壊れ")
+if diag_ar >= diag_aa:
+    raise RuntimeError("乱数床 diagonal が Active 自己以上 — 構造的に不可能、観察関数バグ")
+```
+
+#### 補足: occ_aa の閾値挙動
+
+`ResonanceObserver.observe` 内で `th = occ.mean()` を閾値に使う。
+
+- Active 自己: 閾値超え bin = active bin (10 個)、両系で同一 → 対角に直接乗る
+- Active × Other: 閾値超え bin は両系で違う場所 (10 vs 10、対角一致は偶然のみ)
+- Active × 乱数: Active 閾値超え (10 個) × 乱数閾値超え (~32 個) → 対角一致は 10 個 × (32/64) ≈ 5 個 (一様乱数の構造)
+
+→ **乱数床は構造的に Active × Other より低くなる** はず。これを点検で確認。
+
+#### 警告経路
+
+警告 (raise) が出るシナリオ:
+
+1. `diag_ar >= diag_ao`: 乱数の occ が偶然 Active の偏った帯に一致した bin を多く含む → 乱数 seed の選び方に依存
+2. `diag_ar >= diag_aa`: 構造的に不可能、observe 関数のバグ
+
+警告 1 を回避するため、`atom_seed * 100003 + w * 7919` から生成される乱数 seed の挙動を、複数の atom_seed × window 組み合わせで確認 (例: 30 window × 3 atom = 90 sample) し、平均 / 分散を見る。
+
 ---
 
 ## 3. Web Claude コードチェック手順 (§2、Taka 指示)
@@ -196,6 +275,33 @@ Web Claude がコードを **実際に view して** 以下を確認:
 **Web Claude OK 後に本実行**。報告自己点検 (前回 ATOM_SEEDS は気づいたが指標独立性は見逃した) だけに頼らない。
 
 v1111e で Web Claude が実際にコードを view して番号コピーを見つけた手順を、**今回は最初から組み込む**。
+
+---
+
+## 3.5 (Taka 詰め 2 認識) atom=100 突出が同 seed 並走由来かの結果読み
+
+#### 認識として持つ
+
+- 前回 atom=100 が diagonal で牽引した (442 vs 97 / 126) のは **同 seed 並走 (Other=100 と Atom=100 が同 seed)** が原因という疑い、確定ではない
+- Other=999 にして atom=100 の diagonal が **他 atom (=42, 200) と同程度に下がるか** を結果で見る
+- これは点検でなく **結果の読みの認識**
+
+#### 読みの 2 系統
+
+| 観察 | 読み |
+|---|---|
+| Other=999 で atom=100 diagonal が他 atom と同程度に下がる | 「同 seed 並走が汚染だった」が確認される |
+| Other=999 でも atom=100 diagonal が突出して残る | 同 seed 並走 **ではない別の構造的原因**。例: atom=100 の Atom 自身が特殊な phase 動態を持つ、または atom=100 が偶然 Other=999 と相性が良い (=新たな汚染) |
+
+#### 結果報告時の追加項目
+
+報告書 §X (結果) に以下を明示:
+
+- 3 atom の diagonal raw 値
+- atom=100 の値が他 2 atom と同程度か、突出か (相対比較)
+- 突出が残る場合、別の構造的原因を Web Claude / Taka に投げる (Code A は判定置かない)
+
+これは Stage 1 出口判定に直接影響しないが、観察事実として記録する (Stage 2 設計の判断材料になる)。
 
 ---
 
@@ -238,10 +344,11 @@ v1111e で Web Claude が実際にコードを view して番号コピーを見�
 
 | # | 確認項目 | Code A 認識 |
 |---|---|---|
-| 1 | **測定器の点検 (最優先)**: 主指標 diagonal が位相ずらし (bin shift) で値が動くか。shift 不変な量 (total_cooc 等) を主指標にしていないか | ✓ §2.1 で ダミー行列の roll テスト実装、本実行前に確認 |
+| 1 | **測定器の点検 (最優先)**: 主指標 diagonal が位相ずらし (bin shift) で値が動くか。shift 不変な量 (total_cooc 等) を主指標にしていないか | ✓ §2.1 で ダミー行列の roll テスト実装。**§2.4 で乱数床 < Active × Other 構造性も点検 (Taka 詰め 1)** |
 | 2 | 主指標 diagonal: `Σ M[i,i]` + 近傍 ±δ。total_cooc/N_rcid は判定に使わない (記録のみ) | ✓ §1.1 で複数 δ (0, 1, 3) で測る、total_cooc は parquet 記録のみ判定外 |
 | 3 | 同 seed 並走排除: Other が atom=[42,100,200] のどれとも別 seed か。atom=100 × Other=100 が起きないか | ✓ §1.2 で OTHER_SEED_FIXED=999、§2.2 で assert |
-| 4 | self 床: 乱数 phase 分布との cooc (time-shifted でない)。乱数 seed は state 由来で再現可能か | ✓ §1.3 で `atom_seed * 100003 + w * 7919` 由来の乱数 phase、再現可能 |
+| 4 | self 床: 乱数 phase 分布との cooc (time-shifted でない)。乱数 seed は state 由来で再現可能か | ✓ §1.3 で `atom_seed * 100003 + w * 7919` 由来、再現可能。**§2.4 で乱数床 diagonal が Active より構造的に低くなる確認** |
+| 4b | (Taka 詰め 2 認識) Other=999 で atom=100 の突出が消えるか残るか、結果の読みとして持っているか | ✓ §3.5 で記録。消えれば同 seed 並走汚染確認、残れば別構造原因 |
 | 5 | 不変: node ID 排他 (phase 空間のみ) / state なし観察体 / 書き戻しなし / 案 3+4 / 過去標準スケール / factor なし大小比較。**Web Claude コードチェック (§3) を本実行前に受けること** | ✓ §4 で不変項目維持、§3 で Web Claude コードチェック手順明文化 |
 
 ---
