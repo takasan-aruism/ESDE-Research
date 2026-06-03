@@ -1,0 +1,122 @@
+{
+  "timestamp": "2026-06-03T18:16:31Z",
+  "design": "v1112_stage1_redo",
+  "ATOM_SEEDS": [
+    42,
+    100,
+    200
+  ],
+  "OTHER_SEED_FIXED": 999,
+  "WINDOW_STEPS": 500,
+  "WINDOWS": 30,
+  "DELTAS": [
+    0,
+    1,
+    3
+  ],
+  "conditions_run": [
+    "active_pair",
+    "self_krandom_floor",
+    "phase_shifted"
+  ],
+  "floor_pass_precheck": {
+    "self_permute_floor": false,
+    "self_krandom_floor": true
+  },
+  "judgments": {
+    "d0": {
+      "gt_shifted": 1,
+      "gt_self_krandom_floor": 1,
+      "per_atom": [
+        {
+          "atom_seed": 42,
+          "active": 62.0,
+          "shifted": 89.0,
+          "floor_self_krandom_floor": 63.0,
+          "gt_shifted": false,
+          "gt_self_krandom_floor": false
+        },
+        {
+          "atom_seed": 100,
+          "active": 130.0,
+          "shifted": 105.0,
+          "floor_self_krandom_floor": 110.0,
+          "gt_shifted": true,
+          "gt_self_krandom_floor": true
+        },
+        {
+          "atom_seed": 200,
+          "active": 85.0,
+          "shifted": 135.0,
+          "floor_self_krandom_floor": 110.0,
+          "gt_shifted": false,
+          "gt_self_krandom_floor": false
+        }
+      ]
+    },
+    "d1": {
+      "gt_shifted": 1,
+      "gt_self_krandom_floor": 3,
+      "per_atom": [
+        {
+          "atom_seed": 42,
+          "active": 255.0,
+          "shifted": 294.0,
+          "floor_self_krandom_floor": 205.0,
+          "gt_shifted": false,
+          "gt_self_krandom_floor": true
+        },
+        {
+          "atom_seed": 100,
+          "active": 388.0,
+          "shifted": 331.0,
+          "floor_self_krandom_floor": 325.0,
+          "gt_shifted": true,
+          "gt_self_krandom_floor": true
+        },
+        {
+          "atom_seed": 200,
+          "active": 342.0,
+          "shifted": 402.0,
+          "floor_self_krandom_floor": 335.0,
+          "gt_shifted": false,
+          "gt_self_krandom_floor": true
+        }
+      ]
+    },
+    "d3": {
+      "gt_shifted": 2,
+      "gt_self_krandom_floor": 3,
+      "per_atom": [
+        {
+          "atom_seed": 42,
+          "active": 633.0,
+          "shifted": 764.0,
+          "floor_self_krandom_floor": 519.0,
+          "gt_shifted": false,
+          "gt_self_krandom_floor": true
+        },
+        {
+          "atom_seed": 100,
+          "active": 914.0,
+          "shifted": 832.0,
+          "floor_self_krandom_floor": 743.0,
+          "gt_shifted": true,
+          "gt_self_krandom_floor": true
+        },
+        {
+          "atom_seed": 200,
+          "active": 865.0,
+          "shifted": 776.0,
+          "floor_self_krandom_floor": 770.0,
+          "gt_shifted": true,
+          "gt_self_krandom_floor": true
+        }
+      ]
+    }
+  },
+  "all_delta_3_3": false,
+  "atom_100_diag_d0": 130.0,
+  "atom_other_diag_d0_mean": 73.5,
+  "total_sec": 8605.210947275162
+}
