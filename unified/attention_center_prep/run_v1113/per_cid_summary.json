@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-06-04T00:29:21Z",
+  "design": "v1113_postprocess_per_cid",
+  "ATOM_SEEDS": [
+    0,
+    1,
+    2
+  ],
+  "OTHER_SEED_FIXED": 23,
+  "NULL_OTHER_SEEDS": [
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "NCORE_BANDS": [
+    "n_core_2",
+    "n_core_3",
+    "n_core_4_5",
+    "n_core_6plus"
+  ],
+  "per_atom_summary": [
+    {
+      "atom_seed": 0,
+      "n_cid_total": 228,
+      "n_above_null_max": 44,
+      "pct_above_null_max": 19.298245614035086,
+      "n_rank_5": 44,
+      "n_rank_4": 38,
+      "median_rank": 3.0,
+      "mean_gap_max": 0.0022348676753370642,
+      "max_gap_max": 0.15047427830181104
+    },
+    {
+      "atom_seed": 1,
+      "n_cid_total": 207,
+      "n_above_null_max": 48,
+      "pct_above_null_max": 23.18840579710145,
+      "n_rank_5": 48,
+      "n_rank_4": 31,
+      "median_rank": 3.0,
+      "mean_gap_max": 0.0021625991574536515,
+      "max_gap_max": 0.16873406144188696
+    },
+    {
+      "atom_seed": 2,
+      "n_cid_total": 246,
+      "n_above_null_max": 39,
+      "pct_above_null_max": 15.853658536585366,
+      "n_rank_5": 39,
+      "n_rank_4": 45,
+      "median_rank": 3.0,
+      "mean_gap_max": -0.0015027905695891627,
+      "max_gap_max": 0.1255524152359555
+    }
+  ]
+}

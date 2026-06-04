@@ -28,17 +28,17 @@ REPO = Path('/home/takasan/esde/ESDE-Research')
 STAGE5 = REPO / 'unified/attention_center_prep'
 OUT_DIR = STAGE5 / 'run_v1113'
 
-# 本実装と同じ
-ATOM_SEEDS = [42, 100, 200]
-OTHER_SEED_FIXED = 999
-NULL_OTHER_SEEDS = [12345, 54321, 7777, 11111, 33333]
+# 案 B (v1113_cid_feature_from_v918) と同じ
+ATOM_SEEDS = [0, 1, 2]
+OTHER_SEED_FIXED = 23
+NULL_OTHER_SEEDS = [18, 19, 20, 21, 22]
 FEATURE_KEYS = [
     'phase_sig_cos', 'phase_sig_sin',
-    'phi_cos', 'phi_sin',
     'n_core', 'lifespan',
     'Q0', 'Q_remaining', 'C',
-    'familiarity_n', 'v10_pulse_count', 'v11_n_captured', 'v11_b_gen',
-    'cid_ttl_bonus', 'v18_birth_v_unified_concentration',
+    'last_familiarity_max', 'last_n_partners', 'last_attention_size',
+    'ttl_bonus',
+    'current_social', 'current_stability', 'current_spread', 'current_familiarity',
 ]
 
 # n_core 群分け (v10.2 教訓に従う)
