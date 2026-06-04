@@ -21,12 +21,21 @@
 - 本実装は Center 単体 (Atom なし) → 異なる系の対応関係を含まない
 - node ID コピー / 別系の occupancy cooc / 別系の CID 特性 cosine は採用しない
 
-### 残さないもの (Web Claude 設計 §2、Taka 規律)
+### 残さないもの (Web Claude 設計 §2、Taka 規律「取れないなら落とす・すり替えない」)
 - node ID / member_nodes / attention[node_id]: 別系で意味を持たない、本実装は単系だが規律として遵守
 - phase_sig / θ: 座標、統計に出ない、構造でない
 - 不透明 float ベクトル: 形を数値に潰すと解読が必要、ループに戻る
-- 判定数値 (z-score, EWMA): 発火判定には使うがレコードに残さない (Taka 念押し (a))
+- 判定数値 (z-score, EWMA mean/var): 発火判定には使うがレコード/summary に残さない (Taka 念押し (a))
+- 設計パラメータ (Z_NOTICE/EWMA_ALPHA/WARMUP): summary に残さない、再現はコード冒頭の定数で
 - 差・有意差の測定値: 研究者視点、本実装は「溜まったか + 多様か」を見るのみ (Taka 念押し (b))
+- **pulse_activity (= cog.attention の node 数)**: node ID 依存量 (近似ですり替え) → 落とす (Taka 指摘 2026-06-04)
+
+### 残すフィールド (実機確認済み、近似なし)
+- point: n_core (= n_core_member)、lifespan (= lifespan_so_far)、C (= C_at_window_end)、
+  Q_remaining (= Q_remaining_at_window_end) — source_events から直接、近似なし
+- neighborhood: familiarity_n (= cog.get_n_partners(cid) = len(cog.familiarity[cid]) = familiarity dict のキー数 = 馴染み相手の cid 数)
+  - 実機確認: `v918:2219` で `last_n_partners = cog.get_n_partners(cid)`、`v911:567` で `len(self.familiarity[cid])` を返す = Web Claude 設計の「familiarity 数」と 1:1
+- 「周辺の大きさ list」(= 馴染み相手の n_core list) は v918 output から取れない (Task A 実機確認結果)、Step 2/3 で取得経路を検討
 
 ### 何を測れば何が言えるか
 - 溜まった + 多様: Center が自身の動学で変化点に注意を落とせた = 内部注意の最小機構成立
@@ -177,20 +186,19 @@ def main():
             cid_subj = subj_by_cid.get(cid)
 
             # === レコード生成 (記号 + 構造、判定数値は残さない、Taka 念押し (a)) ===
+            # 実機確認済みフィールドのみ (近似・すり替えなし、Taka 規律遵守)
             point = {
                 'n_core': safe_int(e['n_core_member']),
                 'lifespan': safe_int(e['lifespan_so_far']),
                 'C': safe_int(e['C_at_window_end']),
                 'Q_remaining': safe_int(e['Q_remaining_at_window_end']),
-                # pulse 活動 (近似: source_events に v10_pulse_count 直接ない、
-                # per_subject の last_attention_size を近似値として使う)
-                'pulse_activity': safe_int(cid_subj['last_attention_size']) if cid_subj is not None else 0,
+                # pulse_activity は落とす: v918 output に v10_pulse_count なし、
+                # last_attention_size は cog.attention (node ID 依存) の dict size = NG
             }
             neighborhood = {
-                # familiarity 数 = 近似: per_subject の last_n_partners
+                # familiarity_n: 実機確認済 (v918:2219 + v911:567 で len(cog.familiarity[cid]))
                 'familiarity_n': safe_int(cid_subj['last_n_partners']) if cid_subj is not None else 0,
-                # 周辺の大きさ list は v918 output からは取れない (Task A 実機確認結果)、
-                # Step 1 では落とす (Step 2/3 で取得経路を検討)
+                # 「周辺の大きさ list」は取れない (Step 2/3 で取得経路を検討)
             }
             record = {
                 'order': order,
@@ -262,23 +270,19 @@ def main():
     records_path.write_text(json.dumps(records, indent=2, ensure_ascii=False))
     print(f'\n保存: {records_path.relative_to(REPO)} ({len(records)} レコード)')
 
-    # サマリ
+    # サマリ (Taka 念押し (a) と (b) 厳格遵守)
+    # - 判定数値 (z 値、EWMA mean/var) も判定パラメータ (Z_NOTICE/EWMA_ALPHA/WARMUP_CHUNKS) も含めない
+    #   設計値はコード冒頭の定数で再現可能
+    # - 観察結果 (溜まったか + 多様か) のみ
     summary = {
         'design': 'v1114_step1_internal_attention',
         'center_seed': CENTER_SEED,
-        'n_per_chunk': N_PER_CHUNK,
-        'ewma_alpha': EWMA_ALPHA,
-        'z_notice': Z_NOTICE,
-        'z_anomaly': Z_ANOMALY,
-        'warmup_chunks': WARMUP_CHUNKS,
         'animation_chunks': max_chunk + 1,
         'animation_steps': (max_chunk + 1) * N_PER_CHUNK,
         'records_total': len(records),
         'trigger_distribution': dict(trigger_dist),
         'n_core_distribution': {int(k): v for k, v in n_core_dist.items()},
         'familiarity_n_distribution': {int(k): v for k, v in fam_dist.items()},
-        # 注: z 値、EWMA mean/var、その他判定数値は意図的に summary に含めない
-        # (Taka 念押し (a) 判定と記録の混同を防ぐ)
     }
     summary_path = OUT_DIR / 'summary.json'
     summary_path.write_text(json.dumps(summary, indent=2, ensure_ascii=False))
