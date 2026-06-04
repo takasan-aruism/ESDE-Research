@@ -2975,3 +2975,72 @@ v1105 でこの役割表を確定し、v1105a で実際に応答候補を絞る�
 ### 物理層 frozen の維持 (v1104 + v1104a)
 
 v1104 + v1104a の全観察は新規 main run なし、既存出力 (v10.5/6/7/v112/v1101a/v1102/v1103 main outputs) の再集計のみ。bit-identity 3 層全 PASS (v1104a で 1,502 frozen files、v1104 13 含む)。書込みは unified/v1104/ + unified/v1104a/ 配下のみ。
+
+## v1110-v1114 構造追加: 注意センター ESDE 機能設計から内部注意生成成立まで (2026-06-05)
+
+### 観察対象の規律 (本期間で確立、memory `index_observation_target.md`)
+
+- 過去成功実験 (v9.18 / v10.2 / v10.7 / v106): 全て同じ系内構造を観察 = 構造的因果が観察可能
+- 過去失敗実験 (v1110-v1113): 全て異なる系の対応関係を測ろうとした = 対応関係はそもそも存在しない
+- 新規実験設計時、観察対象が「同じ系内」か「異なる系」か明示し過去成功事例と照合する (実装ファイル冒頭の観察対象注釈ブロック = Code A 自己強制ハードル)
+
+### Center ESDE 構造 (Taka 定義 2026-06-05)
+
+- 構造: V82Engine + VirtualLayerV9 + SubjectLayer (v918 main run と同じ枠組み、ESDE 構造そのまま)
+- 起動: 常時 (動的平衡で止まらず回り続ける)
+- 役割: 注意生成 (どこに注意を向けるか決める)
+- 内部注意: 自系の動的平衡の中の珍しいイベントを CID 認知層・意識層の動きから統計判断
+- 外部注意: Atom ESDE = 言語装置 = 個としては内部 (完全外部 = 物理系等は未来課題)
+- Atom に注意 = 内部的な言語生成
+
+### v1114 Step 1 構造 (Center 内部注意生成、2026-06-05 成立)
+
+```
+Center ESDE (V82Engine + VirtualLayer + SubjectLayer)
+  ↓ 常時動く
+per-10step 監視
+  ↓ メトリック: source_event 5 種 (pulse / ingestion / α_formation / β_formation / c_conversion) の発生数
+EWMA + running z-score (内部、レコードに残さない)
+  ↓ z > 2σ で「注意」、z > 3σ で「異常」
+注意発火 = 該当 event 種別の代表 CID (source_cid) を「点」として取る
+  ↓
+レコード生成:
+  - 順番 (alert 通し番号)
+  - 引き金 (記号、event 種別のみ)
+  - 点: n_core, lifespan, C, Q_remaining (実機確認済み、近似なし)
+  - 周辺: familiarity_n (= len(cog.familiarity[cid])、実機確認済み)
+  ↓
+attention_records.json に json で蓄積
+```
+
+### v1114 で確立した記録の規律
+
+| 残さない (Taka 規律「取れないなら落とす・すり替えない」) | 理由 |
+|---|---|
+| node ID / member_nodes / attention[node_id] | 別系で意味を持たない (v1110-v1113 の失敗パターン回避) |
+| phase_sig / θ (座標) | 統計に出ない、構造でない |
+| 不透明 float ベクトル | 解読が必要、ループに戻る |
+| 判定数値 (z-score, EWMA mean/var) | 判定と記録の分離 (Taka 念押し (a)) |
+| 設計パラメータ (Z_NOTICE / EWMA_ALPHA / WARMUP) | 再現はコード冒頭の定数で |
+| 差・有意差の測定値 | 報告は「溜まったか + 多様か」だけ (Taka 念押し (b)) |
+| 近似値の擦り替え | v1114 pulse_activity = last_attention_size が node ID 依存量で完全削除 (Taka 指摘) |
+
+### v1114 段階構築
+
+| 段階 | 内容 | 状態 |
+|---|---|---|
+| Step 1 | Center 単体 + 内部注意 | 2026-06-05 成立 (287 レコード、Taka「思い描いていたものに近い」) |
+| Step 2 | 内部注意 + Δstate 自己擦り込み (phase 帯対応、node ID 不使用) | 設計案あり、判断 Taka |
+| Step 3 | Center + Atom 並走、外部注意 + Atom Δstate を Center に擦り込み (模倣) | 設計案あり、判断 Taka |
+| Step 4+ | 会話の芽 (入力で Center 状態によって応答の向きが変わる) | 未定 |
+
+### 主要コードパス (本期間で再確認)
+
+- Center 構築: `primitive/v918/v918_memory_readout.py` の `run()` 内 `cog = SubjectLayer()` (V82Engine の属性でないことに注意、v1113 案 A FAIL の盲点)
+- 既存 v918 main run output: `primitive/v918/diag_v918_main/subjects/per_subject_seed{0-23}.csv`, `developmental/v107/outputs/main/source_events_seed{0-23}.parquet` (24 seed × 数百 CID × 数千 events、新規 run なしで観察可能)
+- v1114 Step 1 実装: `unified/v1114/step1_internal_attention.py`
+- v1114 Step 1 出力: `unified/v1114/run_step1/attention_records.json` (287 レコード) + `summary.json` (判定数値・パラメータなし)
+
+### 物理層 frozen の維持 (v1110-v1114)
+
+v1110-v1114 の全観察は新規 main run なし、既存 v918 main run output (seed 0-23) の post-process のみ。書込みは unified/attention_center_prep/ + unified/v1114/ 配下のみ。物理層 (developmental/v10x 等) は 1 bit も触らない。
