@@ -1,0 +1,6513 @@
+[
+  {
+    "order": 0,
+    "cid": 2,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 246,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 500,
+      "C": 0,
+      "Q_remaining": 32
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 1,
+    "cid": 2,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 246,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 500,
+      "C": 0,
+      "Q_remaining": 32
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 2,
+    "cid": 0,
+    "trigger": "c_conversion",
+    "point": {
+      "n_core": 5,
+      "lifespan": 371,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "before",
+      "pulse_reactivity": 500,
+      "C": 0,
+      "Q_remaining": 33
+    },
+    "neighborhood": {
+      "familiarity_n": 57
+    }
+  },
+  {
+    "order": 3,
+    "cid": 0,
+    "trigger": "ingestion",
+    "point": {
+      "n_core": 5,
+      "lifespan": 371,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "before",
+      "pulse_reactivity": 500,
+      "C": 0,
+      "Q_remaining": 33
+    },
+    "neighborhood": {
+      "familiarity_n": 57
+    }
+  },
+  {
+    "order": 4,
+    "cid": 19,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 675,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 500,
+      "C": 1,
+      "Q_remaining": 34
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 5,
+    "cid": 19,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 675,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 500,
+      "C": 1,
+      "Q_remaining": 34
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 6,
+    "cid": 2,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 925,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 1,
+      "Q_remaining": 30
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 7,
+    "cid": 2,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 925,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 1,
+      "Q_remaining": 30
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 8,
+    "cid": 9,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 953,
+      "lifecycle_phase": -0.002,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 160,
+      "C": 0,
+      "Q_remaining": 34
+    },
+    "neighborhood": {
+      "familiarity_n": 23
+    }
+  },
+  {
+    "order": 9,
+    "cid": 9,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 5,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 160,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 23
+    }
+  },
+  {
+    "order": 10,
+    "cid": 70,
+    "trigger": "pulse",
+    "point": {
+      "n_core": 2,
+      "lifespan": 1,
+      "lifecycle_phase": -18.96,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 10,
+      "C": 0,
+      "Q_remaining": 11
+    },
+    "neighborhood": {
+      "familiarity_n": 3
+    }
+  },
+  {
+    "order": 11,
+    "cid": 9,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 1192,
+      "lifecycle_phase": 0.012,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 160,
+      "C": 1,
+      "Q_remaining": 32
+    },
+    "neighborhood": {
+      "familiarity_n": 23
+    }
+  },
+  {
+    "order": 12,
+    "cid": 9,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 1192,
+      "lifecycle_phase": 0.012,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 160,
+      "C": 1,
+      "Q_remaining": 32
+    },
+    "neighborhood": {
+      "familiarity_n": 23
+    }
+  },
+  {
+    "order": 13,
+    "cid": 22,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 1225,
+      "lifecycle_phase": -0.041,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 220,
+      "C": 1,
+      "Q_remaining": 31
+    },
+    "neighborhood": {
+      "familiarity_n": 31
+    }
+  },
+  {
+    "order": 14,
+    "cid": 19,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 1375,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 2,
+      "Q_remaining": 31
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 15,
+    "cid": 19,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 1375,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 2,
+      "Q_remaining": 31
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 16,
+    "cid": 19,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 5,
+      "lifespan": 0,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 17,
+    "cid": 42,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 1522,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 500,
+      "C": 1,
+      "Q_remaining": 31
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 18,
+    "cid": 42,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 1522,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 500,
+      "C": 1,
+      "Q_remaining": 31
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 19,
+    "cid": 22,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 1686,
+      "lifecycle_phase": -0.016,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 220,
+      "C": 1,
+      "Q_remaining": 30
+    },
+    "neighborhood": {
+      "familiarity_n": 31
+    }
+  },
+  {
+    "order": 20,
+    "cid": 22,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 1686,
+      "lifecycle_phase": -0.016,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 220,
+      "C": 1,
+      "Q_remaining": 30
+    },
+    "neighborhood": {
+      "familiarity_n": 31
+    }
+  },
+  {
+    "order": 21,
+    "cid": 19,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 1732,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 2,
+      "Q_remaining": 30
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 22,
+    "cid": 41,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 1932,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 2,
+      "Q_remaining": 31
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 23,
+    "cid": 41,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 1932,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 2,
+      "Q_remaining": 31
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 24,
+    "cid": 22,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 5,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 220,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 31
+    }
+  },
+  {
+    "order": 25,
+    "cid": 22,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 2131,
+      "lifecycle_phase": 0.008,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 220,
+      "C": 3,
+      "Q_remaining": 27
+    },
+    "neighborhood": {
+      "familiarity_n": 31
+    }
+  },
+  {
+    "order": 26,
+    "cid": 22,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 2131,
+      "lifecycle_phase": 0.008,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 220,
+      "C": 3,
+      "Q_remaining": 27
+    },
+    "neighborhood": {
+      "familiarity_n": 31
+    }
+  },
+  {
+    "order": 27,
+    "cid": 52,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 3,
+      "lifespan": 2392,
+      "lifecycle_phase": -0.327,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 110,
+      "C": 1,
+      "Q_remaining": 18
+    },
+    "neighborhood": {
+      "familiarity_n": 21
+    }
+  },
+  {
+    "order": 28,
+    "cid": 52,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 3,
+      "lifespan": 2392,
+      "lifecycle_phase": -0.327,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 110,
+      "C": 1,
+      "Q_remaining": 18
+    },
+    "neighborhood": {
+      "familiarity_n": 21
+    }
+  },
+  {
+    "order": 29,
+    "cid": 64,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 2412,
+      "lifecycle_phase": -1.643,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 70,
+      "C": 0,
+      "Q_remaining": 11
+    },
+    "neighborhood": {
+      "familiarity_n": 9
+    }
+  },
+  {
+    "order": 30,
+    "cid": 0,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 2535,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 500,
+      "C": 4,
+      "Q_remaining": 27
+    },
+    "neighborhood": {
+      "familiarity_n": 57
+    }
+  },
+  {
+    "order": 31,
+    "cid": 42,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 2573,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 1,
+      "Q_remaining": 29
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 32,
+    "cid": 19,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 2856,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 3,
+      "Q_remaining": 28
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 33,
+    "cid": 19,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 2856,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 3,
+      "Q_remaining": 28
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 34,
+    "cid": 7,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 3052,
+      "lifecycle_phase": 0.218,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 90,
+      "C": 2,
+      "Q_remaining": 9
+    },
+    "neighborhood": {
+      "familiarity_n": 6
+    }
+  },
+  {
+    "order": 35,
+    "cid": 7,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 3052,
+      "lifecycle_phase": 0.218,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 90,
+      "C": 2,
+      "Q_remaining": 9
+    },
+    "neighborhood": {
+      "familiarity_n": 6
+    }
+  },
+  {
+    "order": 36,
+    "cid": 10,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 3204,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 500,
+      "C": 1,
+      "Q_remaining": 24
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 37,
+    "cid": 10,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 3204,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 500,
+      "C": 1,
+      "Q_remaining": 24
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 38,
+    "cid": 41,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 3232,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 2,
+      "Q_remaining": 34
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 39,
+    "cid": 41,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 3232,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 2,
+      "Q_remaining": 34
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 40,
+    "cid": 41,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 3406,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 2,
+      "Q_remaining": 34
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 41,
+    "cid": 41,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 3406,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 2,
+      "Q_remaining": 34
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 42,
+    "cid": 9,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 3524,
+      "lifecycle_phase": 0.154,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 160,
+      "C": 3,
+      "Q_remaining": 29
+    },
+    "neighborhood": {
+      "familiarity_n": 23
+    }
+  },
+  {
+    "order": 43,
+    "cid": 86,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 41,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 430,
+      "C": 0,
+      "Q_remaining": 32
+    },
+    "neighborhood": {
+      "familiarity_n": 37
+    }
+  },
+  {
+    "order": 44,
+    "cid": 86,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 41,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 430,
+      "C": 0,
+      "Q_remaining": 32
+    },
+    "neighborhood": {
+      "familiarity_n": 37
+    }
+  },
+  {
+    "order": 45,
+    "cid": 7,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 3694,
+      "lifecycle_phase": 0.264,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 90,
+      "C": 2,
+      "Q_remaining": 8
+    },
+    "neighborhood": {
+      "familiarity_n": 6
+    }
+  },
+  {
+    "order": 46,
+    "cid": 7,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 3694,
+      "lifecycle_phase": 0.264,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 90,
+      "C": 2,
+      "Q_remaining": 8
+    },
+    "neighborhood": {
+      "familiarity_n": 6
+    }
+  },
+  {
+    "order": 47,
+    "cid": 22,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 3818,
+      "lifecycle_phase": 0.099,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 220,
+      "C": 3,
+      "Q_remaining": 25
+    },
+    "neighborhood": {
+      "familiarity_n": 31
+    }
+  },
+  {
+    "order": 48,
+    "cid": 22,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 3818,
+      "lifecycle_phase": 0.099,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 220,
+      "C": 3,
+      "Q_remaining": 25
+    },
+    "neighborhood": {
+      "familiarity_n": 31
+    }
+  },
+  {
+    "order": 49,
+    "cid": 10,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 3965,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 1,
+      "Q_remaining": 23
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 50,
+    "cid": 10,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 3965,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 1,
+      "Q_remaining": 23
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 51,
+    "cid": 26,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 4002,
+      "lifecycle_phase": 0.074,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 400,
+      "C": 2,
+      "Q_remaining": 30
+    },
+    "neighborhood": {
+      "familiarity_n": 35
+    }
+  },
+  {
+    "order": 52,
+    "cid": 90,
+    "trigger": "pulse",
+    "point": {
+      "n_core": 3,
+      "lifespan": 500,
+      "lifecycle_phase": -1.792,
+      "formation_relation": "before",
+      "pulse_reactivity": 100,
+      "C": 1,
+      "Q_remaining": 15
+    },
+    "neighborhood": {
+      "familiarity_n": 19
+    }
+  },
+  {
+    "order": 53,
+    "cid": 10,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 4172,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 1,
+      "Q_remaining": 21
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 54,
+    "cid": 22,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 4447,
+      "lifecycle_phase": 0.133,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 220,
+      "C": 3,
+      "Q_remaining": 23
+    },
+    "neighborhood": {
+      "familiarity_n": 31
+    }
+  },
+  {
+    "order": 55,
+    "cid": 22,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 4447,
+      "lifecycle_phase": 0.133,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 220,
+      "C": 3,
+      "Q_remaining": 23
+    },
+    "neighborhood": {
+      "familiarity_n": 31
+    }
+  },
+  {
+    "order": 56,
+    "cid": 2,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 4519,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 6,
+      "Q_remaining": 23
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 57,
+    "cid": 90,
+    "trigger": "pulse",
+    "point": {
+      "n_core": 3,
+      "lifespan": 1000,
+      "lifecycle_phase": -1.692,
+      "formation_relation": "before",
+      "pulse_reactivity": 100,
+      "C": 2,
+      "Q_remaining": 14
+    },
+    "neighborhood": {
+      "familiarity_n": 19
+    }
+  },
+  {
+    "order": 58,
+    "cid": 9,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 4694,
+      "lifecycle_phase": 0.224,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 160,
+      "C": 5,
+      "Q_remaining": 25
+    },
+    "neighborhood": {
+      "familiarity_n": 23
+    }
+  },
+  {
+    "order": 59,
+    "cid": 9,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 4694,
+      "lifecycle_phase": 0.224,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 160,
+      "C": 5,
+      "Q_remaining": 25
+    },
+    "neighborhood": {
+      "familiarity_n": 23
+    }
+  },
+  {
+    "order": 60,
+    "cid": 94,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 679,
+      "lifecycle_phase": -2.926,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 60,
+      "C": 2,
+      "Q_remaining": 7
+    },
+    "neighborhood": {
+      "familiarity_n": 8
+    }
+  },
+  {
+    "order": 61,
+    "cid": 94,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 679,
+      "lifecycle_phase": -2.926,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 60,
+      "C": 2,
+      "Q_remaining": 7
+    },
+    "neighborhood": {
+      "familiarity_n": 8
+    }
+  },
+  {
+    "order": 62,
+    "cid": 2,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 4903,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 6,
+      "Q_remaining": 23
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 63,
+    "cid": 2,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 4903,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 6,
+      "Q_remaining": 23
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 64,
+    "cid": 0,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 4933,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 5,
+      "Q_remaining": 23
+    },
+    "neighborhood": {
+      "familiarity_n": 57
+    }
+  },
+  {
+    "order": 65,
+    "cid": 10,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 4994,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 2,
+      "Q_remaining": 18
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 66,
+    "cid": 41,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 5,
+      "lifespan": 0,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 67,
+    "cid": 42,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 5047,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 2,
+      "Q_remaining": 25
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 68,
+    "cid": 42,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 5069,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 2,
+      "Q_remaining": 25
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 69,
+    "cid": 82,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 2310,
+      "lifecycle_phase": -2.386,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 60,
+      "C": 2,
+      "Q_remaining": 11
+    },
+    "neighborhood": {
+      "familiarity_n": 27
+    }
+  },
+  {
+    "order": 70,
+    "cid": 82,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 2310,
+      "lifecycle_phase": -2.386,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 60,
+      "C": 2,
+      "Q_remaining": 11
+    },
+    "neighborhood": {
+      "familiarity_n": 27
+    }
+  },
+  {
+    "order": 71,
+    "cid": 52,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 3,
+      "lifespan": 5418,
+      "lifecycle_phase": -0.008,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 110,
+      "C": 5,
+      "Q_remaining": 18
+    },
+    "neighborhood": {
+      "familiarity_n": 21
+    }
+  },
+  {
+    "order": 72,
+    "cid": 52,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 3,
+      "lifespan": 5418,
+      "lifecycle_phase": -0.008,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 110,
+      "C": 5,
+      "Q_remaining": 18
+    },
+    "neighborhood": {
+      "familiarity_n": 21
+    }
+  },
+  {
+    "order": 73,
+    "cid": 52,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 3,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 110,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 21
+    }
+  },
+  {
+    "order": 74,
+    "cid": 82,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 2499,
+      "lifecycle_phase": -2.323,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 60,
+      "C": 4,
+      "Q_remaining": 8
+    },
+    "neighborhood": {
+      "familiarity_n": 27
+    }
+  },
+  {
+    "order": 75,
+    "cid": 0,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 5631,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 5,
+      "Q_remaining": 20
+    },
+    "neighborhood": {
+      "familiarity_n": 57
+    }
+  },
+  {
+    "order": 76,
+    "cid": 9,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 5717,
+      "lifecycle_phase": 0.286,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 160,
+      "C": 5,
+      "Q_remaining": 24
+    },
+    "neighborhood": {
+      "familiarity_n": 23
+    }
+  },
+  {
+    "order": 77,
+    "cid": 9,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 5717,
+      "lifecycle_phase": 0.286,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 160,
+      "C": 5,
+      "Q_remaining": 24
+    },
+    "neighborhood": {
+      "familiarity_n": 23
+    }
+  },
+  {
+    "order": 78,
+    "cid": 2,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 5860,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 6,
+      "Q_remaining": 20
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 79,
+    "cid": 2,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 5860,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 6,
+      "Q_remaining": 20
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 80,
+    "cid": 26,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 5961,
+      "lifecycle_phase": 0.145,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 400,
+      "C": 4,
+      "Q_remaining": 27
+    },
+    "neighborhood": {
+      "familiarity_n": 35
+    }
+  },
+  {
+    "order": 81,
+    "cid": 26,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 5961,
+      "lifecycle_phase": 0.145,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 400,
+      "C": 4,
+      "Q_remaining": 27
+    },
+    "neighborhood": {
+      "familiarity_n": 35
+    }
+  },
+  {
+    "order": 82,
+    "cid": 10,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 6100,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 4,
+      "Q_remaining": 15
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 83,
+    "cid": 44,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 6254,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 4,
+      "Q_remaining": 15
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 84,
+    "cid": 44,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 6254,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 4,
+      "Q_remaining": 15
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 85,
+    "cid": 26,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 6327,
+      "lifecycle_phase": 0.158,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 400,
+      "C": 5,
+      "Q_remaining": 23
+    },
+    "neighborhood": {
+      "familiarity_n": 35
+    }
+  },
+  {
+    "order": 86,
+    "cid": 26,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 6327,
+      "lifecycle_phase": 0.158,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 400,
+      "C": 5,
+      "Q_remaining": 23
+    },
+    "neighborhood": {
+      "familiarity_n": 35
+    }
+  },
+  {
+    "order": 87,
+    "cid": 10,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 6501,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 5,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 88,
+    "cid": 41,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 6538,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 5,
+      "Q_remaining": 32
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 89,
+    "cid": 9,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 6613,
+      "lifecycle_phase": 0.341,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 160,
+      "C": 7,
+      "Q_remaining": 20
+    },
+    "neighborhood": {
+      "familiarity_n": 23
+    }
+  },
+  {
+    "order": 90,
+    "cid": 19,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 6614,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 3,
+      "Q_remaining": 31
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 91,
+    "cid": 41,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 6720,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 5,
+      "Q_remaining": 32
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 92,
+    "cid": 108,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 390,
+      "lifecycle_phase": -18.204,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 10,
+      "C": 0,
+      "Q_remaining": 12
+    },
+    "neighborhood": {
+      "familiarity_n": 5
+    }
+  },
+  {
+    "order": 93,
+    "cid": 108,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 390,
+      "lifecycle_phase": -18.204,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 10,
+      "C": 0,
+      "Q_remaining": 12
+    },
+    "neighborhood": {
+      "familiarity_n": 5
+    }
+  },
+  {
+    "order": 94,
+    "cid": 26,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 7030,
+      "lifecycle_phase": 0.184,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 400,
+      "C": 5,
+      "Q_remaining": 21
+    },
+    "neighborhood": {
+      "familiarity_n": 35
+    }
+  },
+  {
+    "order": 95,
+    "cid": 26,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 7030,
+      "lifecycle_phase": 0.184,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 400,
+      "C": 5,
+      "Q_remaining": 21
+    },
+    "neighborhood": {
+      "familiarity_n": 35
+    }
+  },
+  {
+    "order": 96,
+    "cid": 0,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 7275,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 9,
+      "Q_remaining": 21
+    },
+    "neighborhood": {
+      "familiarity_n": 57
+    }
+  },
+  {
+    "order": 97,
+    "cid": 22,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 7479,
+      "lifecycle_phase": 0.297,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 220,
+      "C": 7,
+      "Q_remaining": 14
+    },
+    "neighborhood": {
+      "familiarity_n": 31
+    }
+  },
+  {
+    "order": 98,
+    "cid": 22,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 7479,
+      "lifecycle_phase": 0.297,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 220,
+      "C": 7,
+      "Q_remaining": 14
+    },
+    "neighborhood": {
+      "familiarity_n": 31
+    }
+  },
+  {
+    "order": 99,
+    "cid": 10,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 7602,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 6,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 100,
+    "cid": 10,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 7602,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 6,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 101,
+    "cid": 42,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 7621,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 5,
+      "Q_remaining": 19
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 102,
+    "cid": 42,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 7621,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 5,
+      "Q_remaining": 19
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 103,
+    "cid": 110,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 1211,
+      "lifecycle_phase": -2.365,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 70,
+      "C": 2,
+      "Q_remaining": 7
+    },
+    "neighborhood": {
+      "familiarity_n": 15
+    }
+  },
+  {
+    "order": 104,
+    "cid": 0,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 7827,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 10,
+      "Q_remaining": 19
+    },
+    "neighborhood": {
+      "familiarity_n": 57
+    }
+  },
+  {
+    "order": 105,
+    "cid": 0,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 7827,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 10,
+      "Q_remaining": 19
+    },
+    "neighborhood": {
+      "familiarity_n": 57
+    }
+  },
+  {
+    "order": 106,
+    "cid": 19,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 8078,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 11,
+      "Q_remaining": 31
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 107,
+    "cid": 19,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 8078,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 11,
+      "Q_remaining": 31
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 108,
+    "cid": 86,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 4604,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 430,
+      "C": 6,
+      "Q_remaining": 28
+    },
+    "neighborhood": {
+      "familiarity_n": 37
+    }
+  },
+  {
+    "order": 109,
+    "cid": 0,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 8209,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 10,
+      "Q_remaining": 27
+    },
+    "neighborhood": {
+      "familiarity_n": 57
+    }
+  },
+  {
+    "order": 110,
+    "cid": 0,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 8209,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 10,
+      "Q_remaining": 27
+    },
+    "neighborhood": {
+      "familiarity_n": 57
+    }
+  },
+  {
+    "order": 111,
+    "cid": 2,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 8390,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 8,
+      "Q_remaining": 17
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 112,
+    "cid": 2,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 8390,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 8,
+      "Q_remaining": 17
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 113,
+    "cid": 41,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 8444,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 9,
+      "Q_remaining": 26
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 114,
+    "cid": 41,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 8444,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 9,
+      "Q_remaining": 26
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 115,
+    "cid": 22,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 8621,
+      "lifecycle_phase": 0.359,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 220,
+      "C": 10,
+      "Q_remaining": 12
+    },
+    "neighborhood": {
+      "familiarity_n": 31
+    }
+  },
+  {
+    "order": 116,
+    "cid": 22,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 8621,
+      "lifecycle_phase": 0.359,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 220,
+      "C": 10,
+      "Q_remaining": 12
+    },
+    "neighborhood": {
+      "familiarity_n": 31
+    }
+  },
+  {
+    "order": 117,
+    "cid": 10,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 8814,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 10,
+      "Q_remaining": 17
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 118,
+    "cid": 10,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 8814,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 10,
+      "Q_remaining": 17
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 119,
+    "cid": 2,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 9000,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 11,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 120,
+    "cid": 2,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 9000,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 11,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 121,
+    "cid": 64,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 2,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 70,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 9
+    }
+  },
+  {
+    "order": 122,
+    "cid": 119,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 2039,
+      "lifecycle_phase": -2.481,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 60,
+      "C": 2,
+      "Q_remaining": 11
+    },
+    "neighborhood": {
+      "familiarity_n": 11
+    }
+  },
+  {
+    "order": 123,
+    "cid": 119,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 2039,
+      "lifecycle_phase": -2.481,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 60,
+      "C": 2,
+      "Q_remaining": 11
+    },
+    "neighborhood": {
+      "familiarity_n": 11
+    }
+  },
+  {
+    "order": 124,
+    "cid": 127,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 1099,
+      "lifecycle_phase": -4.187,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 40,
+      "C": 3,
+      "Q_remaining": 12
+    },
+    "neighborhood": {
+      "familiarity_n": 8
+    }
+  },
+  {
+    "order": 125,
+    "cid": 127,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 1099,
+      "lifecycle_phase": -4.187,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 40,
+      "C": 3,
+      "Q_remaining": 12
+    },
+    "neighborhood": {
+      "familiarity_n": 8
+    }
+  },
+  {
+    "order": 126,
+    "cid": 42,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 9268,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 9,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 127,
+    "cid": 42,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 9268,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 9,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 128,
+    "cid": 107,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 2973,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 370,
+      "C": 7,
+      "Q_remaining": 18
+    },
+    "neighborhood": {
+      "familiarity_n": 33
+    }
+  },
+  {
+    "order": 129,
+    "cid": 107,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 2973,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 370,
+      "C": 7,
+      "Q_remaining": 18
+    },
+    "neighborhood": {
+      "familiarity_n": 33
+    }
+  },
+  {
+    "order": 130,
+    "cid": 65,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 2,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 10,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 3
+    }
+  },
+  {
+    "order": 131,
+    "cid": 2,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 9637,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 11,
+      "Q_remaining": 22
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 132,
+    "cid": 2,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 9637,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 11,
+      "Q_remaining": 22
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 133,
+    "cid": 132,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 111,
+      "lifecycle_phase": -3.743,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 50,
+      "C": 0,
+      "Q_remaining": 26
+    },
+    "neighborhood": {
+      "familiarity_n": 34
+    }
+  },
+  {
+    "order": 134,
+    "cid": 22,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 9685,
+      "lifecycle_phase": 0.417,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 220,
+      "C": 12,
+      "Q_remaining": 9
+    },
+    "neighborhood": {
+      "familiarity_n": 31
+    }
+  },
+  {
+    "order": 135,
+    "cid": 107,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 3326,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 370,
+      "C": 9,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 33
+    }
+  },
+  {
+    "order": 136,
+    "cid": 110,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 3359,
+      "lifecycle_phase": -1.752,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 70,
+      "C": 4,
+      "Q_remaining": 5
+    },
+    "neighborhood": {
+      "familiarity_n": 15
+    }
+  },
+  {
+    "order": 137,
+    "cid": 110,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 3359,
+      "lifecycle_phase": -1.752,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 70,
+      "C": 4,
+      "Q_remaining": 5
+    },
+    "neighborhood": {
+      "familiarity_n": 15
+    }
+  },
+  {
+    "order": 138,
+    "cid": 128,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 1384,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 330,
+      "C": 5,
+      "Q_remaining": 12
+    },
+    "neighborhood": {
+      "familiarity_n": 56
+    }
+  },
+  {
+    "order": 139,
+    "cid": 67,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 3,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 60,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 15
+    }
+  },
+  {
+    "order": 140,
+    "cid": 65,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 10,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 3
+    }
+  },
+  {
+    "order": 141,
+    "cid": 2,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 10289,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 13,
+      "Q_remaining": 19
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 142,
+    "cid": 26,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 10277,
+      "lifecycle_phase": 0.302,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 400,
+      "C": 11,
+      "Q_remaining": 19
+    },
+    "neighborhood": {
+      "familiarity_n": 35
+    }
+  },
+  {
+    "order": 143,
+    "cid": 107,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 3854,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 370,
+      "C": 9,
+      "Q_remaining": 11
+    },
+    "neighborhood": {
+      "familiarity_n": 33
+    }
+  },
+  {
+    "order": 144,
+    "cid": 10,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 10372,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 14,
+      "Q_remaining": 20
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 145,
+    "cid": 0,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 10493,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 16,
+      "Q_remaining": 23
+    },
+    "neighborhood": {
+      "familiarity_n": 57
+    }
+  },
+  {
+    "order": 146,
+    "cid": 68,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 3,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 10,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 11
+    }
+  },
+  {
+    "order": 147,
+    "cid": 10,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 10571,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 16,
+      "Q_remaining": 16
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 148,
+    "cid": 10,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 10571,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 16,
+      "Q_remaining": 16
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 149,
+    "cid": 133,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 1103,
+      "lifecycle_phase": -2.39,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 70,
+      "C": 16,
+      "Q_remaining": 10
+    },
+    "neighborhood": {
+      "familiarity_n": 12
+    }
+  },
+  {
+    "order": 150,
+    "cid": 129,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 2313,
+      "lifecycle_phase": -2.863,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 50,
+      "C": 4,
+      "Q_remaining": 3
+    },
+    "neighborhood": {
+      "familiarity_n": 7
+    }
+  },
+  {
+    "order": 151,
+    "cid": 129,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 2313,
+      "lifecycle_phase": -2.863,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 50,
+      "C": 4,
+      "Q_remaining": 3
+    },
+    "neighborhood": {
+      "familiarity_n": 7
+    }
+  },
+  {
+    "order": 152,
+    "cid": 147,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 315,
+      "lifecycle_phase": -18.276,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 10,
+      "C": 0,
+      "Q_remaining": 12
+    },
+    "neighborhood": {
+      "familiarity_n": 6
+    }
+  },
+  {
+    "order": 153,
+    "cid": 42,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 10835,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 10,
+      "Q_remaining": 10
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 154,
+    "cid": 42,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 10835,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 10,
+      "Q_remaining": 10
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 155,
+    "cid": 26,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 10927,
+      "lifecycle_phase": 0.326,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 400,
+      "C": 10,
+      "Q_remaining": 24
+    },
+    "neighborhood": {
+      "familiarity_n": 35
+    }
+  },
+  {
+    "order": 156,
+    "cid": 68,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 3,
+      "lifespan": 500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 10,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 11
+    }
+  },
+  {
+    "order": 157,
+    "cid": 86,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 7575,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 430,
+      "C": 10,
+      "Q_remaining": 22
+    },
+    "neighborhood": {
+      "familiarity_n": 37
+    }
+  },
+  {
+    "order": 158,
+    "cid": 19,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 11161,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 29,
+      "Q_remaining": 26
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 159,
+    "cid": 10,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 11393,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 18,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 160,
+    "cid": 10,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 11393,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 18,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 161,
+    "cid": 78,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 2,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 10,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 1
+    }
+  },
+  {
+    "order": 162,
+    "cid": 71,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 1000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 20,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 8
+    }
+  },
+  {
+    "order": 163,
+    "cid": 0,
+    "trigger": "pulse",
+    "point": {
+      "n_core": 5,
+      "lifespan": 11500,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 19,
+      "Q_remaining": 19
+    },
+    "neighborhood": {
+      "familiarity_n": 57
+    }
+  },
+  {
+    "order": 164,
+    "cid": 145,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 3,
+      "lifespan": 1558,
+      "lifecycle_phase": -1.974,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 80,
+      "C": 8,
+      "Q_remaining": 6
+    },
+    "neighborhood": {
+      "familiarity_n": 21
+    }
+  },
+  {
+    "order": 165,
+    "cid": 145,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 3,
+      "lifespan": 1558,
+      "lifecycle_phase": -1.974,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 80,
+      "C": 8,
+      "Q_remaining": 6
+    },
+    "neighborhood": {
+      "familiarity_n": 21
+    }
+  },
+  {
+    "order": 166,
+    "cid": 10,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 11820,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 18,
+      "Q_remaining": 15
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 167,
+    "cid": 148,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 1372,
+      "lifecycle_phase": -5.387,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 30,
+      "C": 4,
+      "Q_remaining": 5
+    },
+    "neighborhood": {
+      "familiarity_n": 10
+    }
+  },
+  {
+    "order": 168,
+    "cid": 148,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 1372,
+      "lifecycle_phase": -5.387,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 30,
+      "C": 4,
+      "Q_remaining": 5
+    },
+    "neighborhood": {
+      "familiarity_n": 10
+    }
+  },
+  {
+    "order": 169,
+    "cid": 79,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 2,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 40,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 4
+    }
+  },
+  {
+    "order": 170,
+    "cid": 74,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 1500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 30,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 6
+    }
+  },
+  {
+    "order": 171,
+    "cid": 10,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 12087,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 18,
+      "Q_remaining": 14
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 172,
+    "cid": 10,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 12087,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 18,
+      "Q_remaining": 14
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 173,
+    "cid": 26,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 12124,
+      "lifecycle_phase": 0.369,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 400,
+      "C": 14,
+      "Q_remaining": 18
+    },
+    "neighborhood": {
+      "familiarity_n": 35
+    }
+  },
+  {
+    "order": 174,
+    "cid": 26,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 12124,
+      "lifecycle_phase": 0.369,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 400,
+      "C": 14,
+      "Q_remaining": 18
+    },
+    "neighborhood": {
+      "familiarity_n": 35
+    }
+  },
+  {
+    "order": 175,
+    "cid": 126,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 4262,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 340,
+      "C": 9,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 48
+    }
+  },
+  {
+    "order": 176,
+    "cid": 126,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 4262,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 340,
+      "C": 9,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 48
+    }
+  },
+  {
+    "order": 177,
+    "cid": 0,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 12313,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 21,
+      "Q_remaining": 17
+    },
+    "neighborhood": {
+      "familiarity_n": 57
+    }
+  },
+  {
+    "order": 178,
+    "cid": 41,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 12383,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 21,
+      "Q_remaining": 23
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 179,
+    "cid": 41,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 12383,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 21,
+      "Q_remaining": 23
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 180,
+    "cid": 82,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 5,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 60,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 27
+    }
+  },
+  {
+    "order": 181,
+    "cid": 80,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 10,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 3
+    }
+  },
+  {
+    "order": 182,
+    "cid": 107,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 6045,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 370,
+      "C": 14,
+      "Q_remaining": 20
+    },
+    "neighborhood": {
+      "familiarity_n": 33
+    }
+  },
+  {
+    "order": 183,
+    "cid": 42,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 12822,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 18,
+      "Q_remaining": 6
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 184,
+    "cid": 42,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 12822,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 18,
+      "Q_remaining": 6
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 185,
+    "cid": 19,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 12924,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 32,
+      "Q_remaining": 25
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 186,
+    "cid": 19,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 12924,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 32,
+      "Q_remaining": 25
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 187,
+    "cid": 86,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 5,
+      "lifespan": 0,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 430,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 37
+    }
+  },
+  {
+    "order": 188,
+    "cid": 64,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 4000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 70,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 9
+    }
+  },
+  {
+    "order": 189,
+    "cid": 44,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 13048,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 20,
+      "Q_remaining": 21
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 190,
+    "cid": 44,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 13048,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 20,
+      "Q_remaining": 21
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 191,
+    "cid": 86,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 9609,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 430,
+      "C": 26,
+      "Q_remaining": 19
+    },
+    "neighborhood": {
+      "familiarity_n": 37
+    }
+  },
+  {
+    "order": 192,
+    "cid": 41,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 13168,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 21,
+      "Q_remaining": 20
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 193,
+    "cid": 107,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 6731,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 370,
+      "C": 17,
+      "Q_remaining": 18
+    },
+    "neighborhood": {
+      "familiarity_n": 33
+    }
+  },
+  {
+    "order": 194,
+    "cid": 107,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 6731,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 370,
+      "C": 17,
+      "Q_remaining": 18
+    },
+    "neighborhood": {
+      "familiarity_n": 33
+    }
+  },
+  {
+    "order": 195,
+    "cid": 166,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 3,
+      "lifespan": 758,
+      "lifecycle_phase": -1.342,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 130,
+      "C": 2,
+      "Q_remaining": 14
+    },
+    "neighborhood": {
+      "familiarity_n": 22
+    }
+  },
+  {
+    "order": 196,
+    "cid": 166,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 3,
+      "lifespan": 758,
+      "lifecycle_phase": -1.342,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 130,
+      "C": 2,
+      "Q_remaining": 14
+    },
+    "neighborhood": {
+      "familiarity_n": 22
+    }
+  },
+  {
+    "order": 197,
+    "cid": 91,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 2,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 10,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 5
+    }
+  },
+  {
+    "order": 198,
+    "cid": 87,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 10,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 2
+    }
+  },
+  {
+    "order": 199,
+    "cid": 86,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 10036,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 430,
+      "C": 27,
+      "Q_remaining": 29
+    },
+    "neighborhood": {
+      "familiarity_n": 37
+    }
+  },
+  {
+    "order": 200,
+    "cid": 86,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 10036,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 430,
+      "C": 27,
+      "Q_remaining": 29
+    },
+    "neighborhood": {
+      "familiarity_n": 37
+    }
+  },
+  {
+    "order": 201,
+    "cid": 19,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 13651,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 35,
+      "Q_remaining": 24
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 202,
+    "cid": 19,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 13651,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 35,
+      "Q_remaining": 24
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 203,
+    "cid": 126,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 5803,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 340,
+      "C": 12,
+      "Q_remaining": 15
+    },
+    "neighborhood": {
+      "familiarity_n": 48
+    }
+  },
+  {
+    "order": 204,
+    "cid": 126,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 5803,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 340,
+      "C": 12,
+      "Q_remaining": 15
+    },
+    "neighborhood": {
+      "familiarity_n": 48
+    }
+  },
+  {
+    "order": 205,
+    "cid": 126,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 5883,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 340,
+      "C": 12,
+      "Q_remaining": 15
+    },
+    "neighborhood": {
+      "familiarity_n": 48
+    }
+  },
+  {
+    "order": 206,
+    "cid": 126,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 5883,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 340,
+      "C": 12,
+      "Q_remaining": 15
+    },
+    "neighborhood": {
+      "familiarity_n": 48
+    }
+  },
+  {
+    "order": 207,
+    "cid": 95,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 2,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 10,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 7
+    }
+  },
+  {
+    "order": 208,
+    "cid": 7,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 14000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 90,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 6
+    }
+  },
+  {
+    "order": 209,
+    "cid": 10,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 14098,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 20,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 210,
+    "cid": 10,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 14098,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 20,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 211,
+    "cid": 0,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 14195,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 29,
+      "Q_remaining": 12
+    },
+    "neighborhood": {
+      "familiarity_n": 57
+    }
+  },
+  {
+    "order": 212,
+    "cid": 0,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 14195,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 29,
+      "Q_remaining": 12
+    },
+    "neighborhood": {
+      "familiarity_n": 57
+    }
+  },
+  {
+    "order": 213,
+    "cid": 2,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 14202,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 26,
+      "Q_remaining": 20
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 214,
+    "cid": 171,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 1346,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 240,
+      "C": 4,
+      "Q_remaining": 17
+    },
+    "neighborhood": {
+      "familiarity_n": 50
+    }
+  },
+  {
+    "order": 215,
+    "cid": 167,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 1879,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 250,
+      "C": 6,
+      "Q_remaining": 10
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 216,
+    "cid": 10,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 14433,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 20,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 217,
+    "cid": 10,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 14433,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 20,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 218,
+    "cid": 10,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 14487,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 20,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 219,
+    "cid": 98,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 2,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 20,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 2
+    }
+  },
+  {
+    "order": 220,
+    "cid": 93,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 1000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 20,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 3
+    }
+  },
+  {
+    "order": 221,
+    "cid": 19,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 14572,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 36,
+      "Q_remaining": 22
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 222,
+    "cid": 19,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 14572,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 36,
+      "Q_remaining": 22
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 223,
+    "cid": 42,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 14675,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 20,
+      "Q_remaining": 7
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 224,
+    "cid": 42,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 14790,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 20,
+      "Q_remaining": 7
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 225,
+    "cid": 42,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 14790,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 20,
+      "Q_remaining": 7
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 226,
+    "cid": 41,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 14896,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 27,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 227,
+    "cid": 41,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 14896,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 27,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 228,
+    "cid": 99,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 2,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 20,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 4
+    }
+  },
+  {
+    "order": 229,
+    "cid": 52,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 3,
+      "lifespan": 9500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 110,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 21
+    }
+  },
+  {
+    "order": 230,
+    "cid": 128,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 6513,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 330,
+      "C": 22,
+      "Q_remaining": 21
+    },
+    "neighborhood": {
+      "familiarity_n": 56
+    }
+  },
+  {
+    "order": 231,
+    "cid": 26,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 15094,
+      "lifecycle_phase": 0.477,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 400,
+      "C": 18,
+      "Q_remaining": 19
+    },
+    "neighborhood": {
+      "familiarity_n": 35
+    }
+  },
+  {
+    "order": 232,
+    "cid": 26,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 15094,
+      "lifecycle_phase": 0.477,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 400,
+      "C": 18,
+      "Q_remaining": 19
+    },
+    "neighborhood": {
+      "familiarity_n": 35
+    }
+  },
+  {
+    "order": 233,
+    "cid": 86,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 11854,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 430,
+      "C": 29,
+      "Q_remaining": 29
+    },
+    "neighborhood": {
+      "familiarity_n": 37
+    }
+  },
+  {
+    "order": 234,
+    "cid": 86,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 11854,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 430,
+      "C": 29,
+      "Q_remaining": 29
+    },
+    "neighborhood": {
+      "familiarity_n": 37
+    }
+  },
+  {
+    "order": 235,
+    "cid": 107,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 8973,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 370,
+      "C": 23,
+      "Q_remaining": 15
+    },
+    "neighborhood": {
+      "familiarity_n": 33
+    }
+  },
+  {
+    "order": 236,
+    "cid": 107,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 8973,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 370,
+      "C": 23,
+      "Q_remaining": 15
+    },
+    "neighborhood": {
+      "familiarity_n": 33
+    }
+  },
+  {
+    "order": 237,
+    "cid": 101,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 2,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 30,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 4
+    }
+  },
+  {
+    "order": 238,
+    "cid": 82,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 5,
+      "lifespan": 3000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 60,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 27
+    }
+  },
+  {
+    "order": 239,
+    "cid": 166,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 3,
+      "lifespan": 3181,
+      "lifecycle_phase": -0.97,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 130,
+      "C": 11,
+      "Q_remaining": 10
+    },
+    "neighborhood": {
+      "familiarity_n": 22
+    }
+  },
+  {
+    "order": 240,
+    "cid": 166,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 3,
+      "lifespan": 3181,
+      "lifecycle_phase": -0.97,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 130,
+      "C": 11,
+      "Q_remaining": 10
+    },
+    "neighborhood": {
+      "familiarity_n": 22
+    }
+  },
+  {
+    "order": 241,
+    "cid": 2,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 15769,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 34,
+      "Q_remaining": 15
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 242,
+    "cid": 2,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 15769,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 34,
+      "Q_remaining": 15
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 243,
+    "cid": 107,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 9453,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 370,
+      "C": 25,
+      "Q_remaining": 12
+    },
+    "neighborhood": {
+      "familiarity_n": 33
+    }
+  },
+  {
+    "order": 244,
+    "cid": 107,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 9453,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 370,
+      "C": 25,
+      "Q_remaining": 12
+    },
+    "neighborhood": {
+      "familiarity_n": 33
+    }
+  },
+  {
+    "order": 245,
+    "cid": 107,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 5,
+      "lifespan": 0,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 370,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 33
+    }
+  },
+  {
+    "order": 246,
+    "cid": 88,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 3000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 60,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 9
+    }
+  },
+  {
+    "order": 247,
+    "cid": 19,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 16046,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 46,
+      "Q_remaining": 10
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 248,
+    "cid": 19,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 16046,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 46,
+      "Q_remaining": 10
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 249,
+    "cid": 19,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 16257,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 46,
+      "Q_remaining": 10
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 250,
+    "cid": 19,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 16257,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 46,
+      "Q_remaining": 10
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 251,
+    "cid": 44,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 16416,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 32,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 252,
+    "cid": 44,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 16416,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 32,
+      "Q_remaining": 13
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 253,
+    "cid": 119,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 2,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 60,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 11
+    }
+  },
+  {
+    "order": 254,
+    "cid": 94,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 3000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 60,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 8
+    }
+  },
+  {
+    "order": 255,
+    "cid": 190,
+    "trigger": "pulse",
+    "point": {
+      "n_core": 4,
+      "lifespan": 1,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "before",
+      "pulse_reactivity": 170,
+      "C": 0,
+      "Q_remaining": 26
+    },
+    "neighborhood": {
+      "familiarity_n": 43
+    }
+  },
+  {
+    "order": 256,
+    "cid": 44,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 16530,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 34,
+      "Q_remaining": 10
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 257,
+    "cid": 44,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 16530,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 34,
+      "Q_remaining": 10
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 258,
+    "cid": 128,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 8131,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 330,
+      "C": 28,
+      "Q_remaining": 20
+    },
+    "neighborhood": {
+      "familiarity_n": 56
+    }
+  },
+  {
+    "order": 259,
+    "cid": 128,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 8131,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 330,
+      "C": 28,
+      "Q_remaining": 20
+    },
+    "neighborhood": {
+      "familiarity_n": 56
+    }
+  },
+  {
+    "order": 260,
+    "cid": 126,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 8806,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 340,
+      "C": 23,
+      "Q_remaining": 7
+    },
+    "neighborhood": {
+      "familiarity_n": 48
+    }
+  },
+  {
+    "order": 261,
+    "cid": 126,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 8806,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 340,
+      "C": 23,
+      "Q_remaining": 7
+    },
+    "neighborhood": {
+      "familiarity_n": 48
+    }
+  },
+  {
+    "order": 262,
+    "cid": 0,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 16930,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 33,
+      "Q_remaining": 9
+    },
+    "neighborhood": {
+      "familiarity_n": 57
+    }
+  },
+  {
+    "order": 263,
+    "cid": 101,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 1500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 30,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 4
+    }
+  },
+  {
+    "order": 264,
+    "cid": 190,
+    "trigger": "pulse",
+    "point": {
+      "n_core": 4,
+      "lifespan": 500,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 170,
+      "C": 7,
+      "Q_remaining": 15
+    },
+    "neighborhood": {
+      "familiarity_n": 43
+    }
+  },
+  {
+    "order": 265,
+    "cid": 0,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 17361,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 36,
+      "Q_remaining": 5
+    },
+    "neighborhood": {
+      "familiarity_n": 57
+    }
+  },
+  {
+    "order": 266,
+    "cid": 0,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 17361,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 36,
+      "Q_remaining": 5
+    },
+    "neighborhood": {
+      "familiarity_n": 57
+    }
+  },
+  {
+    "order": 267,
+    "cid": 42,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 17410,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 29,
+      "Q_remaining": 11
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 268,
+    "cid": 42,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 17410,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 29,
+      "Q_remaining": 11
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 269,
+    "cid": 123,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 2,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 20,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 4
+    }
+  },
+  {
+    "order": 270,
+    "cid": 9,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 5,
+      "lifespan": 16500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 160,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 23
+    }
+  },
+  {
+    "order": 271,
+    "cid": 107,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 11202,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 370,
+      "C": 38,
+      "Q_remaining": 6
+    },
+    "neighborhood": {
+      "familiarity_n": 33
+    }
+  },
+  {
+    "order": 272,
+    "cid": 107,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 11202,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 370,
+      "C": 38,
+      "Q_remaining": 6
+    },
+    "neighborhood": {
+      "familiarity_n": 33
+    }
+  },
+  {
+    "order": 273,
+    "cid": 86,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 14358,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 430,
+      "C": 34,
+      "Q_remaining": 29
+    },
+    "neighborhood": {
+      "familiarity_n": 37
+    }
+  },
+  {
+    "order": 274,
+    "cid": 86,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 14358,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 430,
+      "C": 34,
+      "Q_remaining": 29
+    },
+    "neighborhood": {
+      "familiarity_n": 37
+    }
+  },
+  {
+    "order": 275,
+    "cid": 171,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 4957,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 240,
+      "C": 24,
+      "Q_remaining": 4
+    },
+    "neighborhood": {
+      "familiarity_n": 50
+    }
+  },
+  {
+    "order": 276,
+    "cid": 128,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 5,
+      "lifespan": 0,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 330,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 56
+    }
+  },
+  {
+    "order": 277,
+    "cid": 90,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 3,
+      "lifespan": 5000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 100,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 19
+    }
+  },
+  {
+    "order": 278,
+    "cid": 44,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 18237,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 40,
+      "Q_remaining": 3
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 279,
+    "cid": 44,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 18237,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 40,
+      "Q_remaining": 3
+    },
+    "neighborhood": {
+      "familiarity_n": 45
+    }
+  },
+  {
+    "order": 280,
+    "cid": 131,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 3,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 40,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 16
+    }
+  },
+  {
+    "order": 281,
+    "cid": 123,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 1000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 20,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 4
+    }
+  },
+  {
+    "order": 282,
+    "cid": 86,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 15230,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 430,
+      "C": 37,
+      "Q_remaining": 25
+    },
+    "neighborhood": {
+      "familiarity_n": 37
+    }
+  },
+  {
+    "order": 283,
+    "cid": 86,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 15230,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 430,
+      "C": 37,
+      "Q_remaining": 25
+    },
+    "neighborhood": {
+      "familiarity_n": 37
+    }
+  },
+  {
+    "order": 284,
+    "cid": 2,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 18786,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 44,
+      "Q_remaining": 2
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 285,
+    "cid": 132,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 4,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 50,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 34
+    }
+  },
+  {
+    "order": 286,
+    "cid": 200,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 1976,
+      "lifecycle_phase": -1.158,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 130,
+      "C": 5,
+      "Q_remaining": 4
+    },
+    "neighborhood": {
+      "familiarity_n": 16
+    }
+  },
+  {
+    "order": 287,
+    "cid": 200,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 1976,
+      "lifecycle_phase": -1.158,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 130,
+      "C": 5,
+      "Q_remaining": 4
+    },
+    "neighborhood": {
+      "familiarity_n": 16
+    }
+  },
+  {
+    "order": 288,
+    "cid": 145,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 3,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 80,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 21
+    }
+  },
+  {
+    "order": 289,
+    "cid": 110,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 3500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 70,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 15
+    }
+  },
+  {
+    "order": 290,
+    "cid": 42,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 19824,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 36,
+      "Q_remaining": 12
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 291,
+    "cid": 42,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 19824,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 36,
+      "Q_remaining": 12
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 292,
+    "cid": 86,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 16392,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 430,
+      "C": 41,
+      "Q_remaining": 20
+    },
+    "neighborhood": {
+      "familiarity_n": 37
+    }
+  },
+  {
+    "order": 293,
+    "cid": 86,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 16392,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 430,
+      "C": 41,
+      "Q_remaining": 20
+    },
+    "neighborhood": {
+      "familiarity_n": 37
+    }
+  },
+  {
+    "order": 294,
+    "cid": 146,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 2,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 10,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 2
+    }
+  },
+  {
+    "order": 295,
+    "cid": 139,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 1000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 20,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 6
+    }
+  },
+  {
+    "order": 296,
+    "cid": 190,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 3744,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 170,
+      "C": 24,
+      "Q_remaining": 12
+    },
+    "neighborhood": {
+      "familiarity_n": 43
+    }
+  },
+  {
+    "order": 297,
+    "cid": 190,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 3744,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 170,
+      "C": 24,
+      "Q_remaining": 12
+    },
+    "neighborhood": {
+      "familiarity_n": 43
+    }
+  },
+  {
+    "order": 298,
+    "cid": 128,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 11817,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 330,
+      "C": 51,
+      "Q_remaining": 10
+    },
+    "neighborhood": {
+      "familiarity_n": 56
+    }
+  },
+  {
+    "order": 299,
+    "cid": 128,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 11817,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 330,
+      "C": 51,
+      "Q_remaining": 10
+    },
+    "neighborhood": {
+      "familiarity_n": 56
+    }
+  },
+  {
+    "order": 300,
+    "cid": 2,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 20358,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 45,
+      "Q_remaining": 0
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 301,
+    "cid": 151,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 2,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 20,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 7
+    }
+  },
+  {
+    "order": 302,
+    "cid": 22,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 5,
+      "lifespan": 18500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 220,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 31
+    }
+  },
+  {
+    "order": 303,
+    "cid": 0,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 20661,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 39,
+      "Q_remaining": 14
+    },
+    "neighborhood": {
+      "familiarity_n": 57
+    }
+  },
+  {
+    "order": 304,
+    "cid": 0,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 20661,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 39,
+      "Q_remaining": 14
+    },
+    "neighborhood": {
+      "familiarity_n": 57
+    }
+  },
+  {
+    "order": 305,
+    "cid": 167,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 8386,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 250,
+      "C": 17,
+      "Q_remaining": 4
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 306,
+    "cid": 167,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 8386,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 250,
+      "C": 17,
+      "Q_remaining": 4
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 307,
+    "cid": 156,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 4,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 90,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 28
+    }
+  },
+  {
+    "order": 308,
+    "cid": 153,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 10,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 1
+    }
+  },
+  {
+    "order": 309,
+    "cid": 162,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 4,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 20,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 19
+    }
+  },
+  {
+    "order": 310,
+    "cid": 132,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 4,
+      "lifespan": 2500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 50,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 34
+    }
+  },
+  {
+    "order": 311,
+    "cid": 178,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 8073,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 230,
+      "C": 34,
+      "Q_remaining": 4
+    },
+    "neighborhood": {
+      "familiarity_n": 62
+    }
+  },
+  {
+    "order": 312,
+    "cid": 178,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 8073,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 230,
+      "C": 34,
+      "Q_remaining": 4
+    },
+    "neighborhood": {
+      "familiarity_n": 62
+    }
+  },
+  {
+    "order": 313,
+    "cid": 229,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 440,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 70,
+      "C": 0,
+      "Q_remaining": 25
+    },
+    "neighborhood": {
+      "familiarity_n": 50
+    }
+  },
+  {
+    "order": 314,
+    "cid": 229,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 440,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 70,
+      "C": 0,
+      "Q_remaining": 25
+    },
+    "neighborhood": {
+      "familiarity_n": 50
+    }
+  },
+  {
+    "order": 315,
+    "cid": 166,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 3,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 130,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 22
+    }
+  },
+  {
+    "order": 316,
+    "cid": 150,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 2000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 40,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 8
+    }
+  },
+  {
+    "order": 317,
+    "cid": 200,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 4650,
+      "lifecycle_phase": -0.746,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 130,
+      "C": 13,
+      "Q_remaining": 9
+    },
+    "neighborhood": {
+      "familiarity_n": 16
+    }
+  },
+  {
+    "order": 318,
+    "cid": 41,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 22220,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 47,
+      "Q_remaining": 3
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 319,
+    "cid": 41,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 22220,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 47,
+      "Q_remaining": 3
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 320,
+    "cid": 171,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 4,
+      "lifespan": 0,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 240,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 50
+    }
+  },
+  {
+    "order": 321,
+    "cid": 133,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 3500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 70,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 12
+    }
+  },
+  {
+    "order": 322,
+    "cid": 190,
+    "trigger": "pulse",
+    "point": {
+      "n_core": 4,
+      "lifespan": 6000,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 170,
+      "C": 34,
+      "Q_remaining": 0
+    },
+    "neighborhood": {
+      "familiarity_n": 43
+    }
+  },
+  {
+    "order": 323,
+    "cid": 240,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 183,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 50,
+      "C": 0,
+      "Q_remaining": 35
+    },
+    "neighborhood": {
+      "familiarity_n": 54
+    }
+  },
+  {
+    "order": 324,
+    "cid": 240,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 183,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 50,
+      "C": 0,
+      "Q_remaining": 35
+    },
+    "neighborhood": {
+      "familiarity_n": 54
+    }
+  },
+  {
+    "order": 325,
+    "cid": 178,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 5,
+      "lifespan": 0,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 230,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 62
+    }
+  },
+  {
+    "order": 326,
+    "cid": 165,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 1500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 30,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 4
+    }
+  },
+  {
+    "order": 327,
+    "cid": 42,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 22986,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 45,
+      "Q_remaining": 9
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 328,
+    "cid": 42,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 22986,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 45,
+      "Q_remaining": 9
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 329,
+    "cid": 42,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 23026,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 45,
+      "Q_remaining": 9
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 330,
+    "cid": 250,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 108,
+      "lifecycle_phase": -18.784,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 10,
+      "C": 0,
+      "Q_remaining": 12
+    },
+    "neighborhood": {
+      "familiarity_n": 6
+    }
+  },
+  {
+    "order": 331,
+    "cid": 250,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 108,
+      "lifecycle_phase": -18.784,
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 10,
+      "C": 0,
+      "Q_remaining": 12
+    },
+    "neighborhood": {
+      "familiarity_n": 6
+    }
+  },
+  {
+    "order": 332,
+    "cid": 244,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 761,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 50,
+      "C": 5,
+      "Q_remaining": 3
+    },
+    "neighborhood": {
+      "familiarity_n": 16
+    }
+  },
+  {
+    "order": 333,
+    "cid": 244,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 2,
+      "lifespan": 761,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_0_100",
+      "pulse_reactivity": 50,
+      "C": 5,
+      "Q_remaining": 3
+    },
+    "neighborhood": {
+      "familiarity_n": 16
+    }
+  },
+  {
+    "order": 334,
+    "cid": 180,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 5,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 60,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 25
+    }
+  },
+  {
+    "order": 335,
+    "cid": 145,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 3,
+      "lifespan": 4000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 80,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 21
+    }
+  },
+  {
+    "order": 336,
+    "cid": 86,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 20045,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 430,
+      "C": 50,
+      "Q_remaining": 10
+    },
+    "neighborhood": {
+      "familiarity_n": 37
+    }
+  },
+  {
+    "order": 337,
+    "cid": 86,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 20045,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 430,
+      "C": 50,
+      "Q_remaining": 10
+    },
+    "neighborhood": {
+      "familiarity_n": 37
+    }
+  },
+  {
+    "order": 338,
+    "cid": 171,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 10694,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 240,
+      "C": 27,
+      "Q_remaining": 2
+    },
+    "neighborhood": {
+      "familiarity_n": 50
+    }
+  },
+  {
+    "order": 339,
+    "cid": 171,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 4,
+      "lifespan": 10694,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 240,
+      "C": 27,
+      "Q_remaining": 2
+    },
+    "neighborhood": {
+      "familiarity_n": 50
+    }
+  },
+  {
+    "order": 340,
+    "cid": 86,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 20251,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 430,
+      "C": 50,
+      "Q_remaining": 10
+    },
+    "neighborhood": {
+      "familiarity_n": 37
+    }
+  },
+  {
+    "order": 341,
+    "cid": 42,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 23932,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 45,
+      "Q_remaining": 7
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 342,
+    "cid": 42,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 23932,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 500,
+      "C": 45,
+      "Q_remaining": 7
+    },
+    "neighborhood": {
+      "familiarity_n": 64
+    }
+  },
+  {
+    "order": 343,
+    "cid": 186,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 2,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 80,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 12
+    }
+  },
+  {
+    "order": 344,
+    "cid": 182,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 3,
+      "lifespan": 500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 10,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 2
+    }
+  },
+  {
+    "order": 345,
+    "cid": 167,
+    "trigger": "alpha_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 11819,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 250,
+      "C": 23,
+      "Q_remaining": 2
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 346,
+    "cid": 167,
+    "trigger": "beta_formation",
+    "point": {
+      "n_core": 5,
+      "lifespan": 11819,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 250,
+      "C": 23,
+      "Q_remaining": 2
+    },
+    "neighborhood": {
+      "familiarity_n": 63
+    }
+  },
+  {
+    "order": 347,
+    "cid": 158,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 3500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 70,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 7
+    }
+  },
+  {
+    "order": 348,
+    "cid": 270,
+    "trigger": "pulse",
+    "point": {
+      "n_core": 2,
+      "lifespan": 500,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 20,
+      "C": 9,
+      "Q_remaining": 0
+    },
+    "neighborhood": {
+      "familiarity_n": 9
+    }
+  },
+  {
+    "order": 349,
+    "cid": 189,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 2,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 20,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 1
+    }
+  },
+  {
+    "order": 350,
+    "cid": 156,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 4,
+      "lifespan": 4500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 90,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 28
+    }
+  },
+  {
+    "order": 351,
+    "cid": 190,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 4,
+      "lifespan": 0,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 170,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 43
+    }
+  },
+  {
+    "order": 352,
+    "cid": 189,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 1000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 20,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 1
+    }
+  },
+  {
+    "order": 353,
+    "cid": 196,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 2,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 10,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 4
+    }
+  },
+  {
+    "order": 354,
+    "cid": 180,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 5,
+      "lifespan": 3000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 60,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 25
+    }
+  },
+  {
+    "order": 355,
+    "cid": 200,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 2,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 130,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 16
+    }
+  },
+  {
+    "order": 356,
+    "cid": 192,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 1000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 20,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 3
+    }
+  },
+  {
+    "order": 357,
+    "cid": 204,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 2,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 10,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 3
+    }
+  },
+  {
+    "order": 358,
+    "cid": 201,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 10,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 2
+    }
+  },
+  {
+    "order": 359,
+    "cid": 186,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 4000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 80,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 12
+    }
+  },
+  {
+    "order": 360,
+    "cid": 207,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 5,
+      "lifespan": 0,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 120,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 60
+    }
+  },
+  {
+    "order": 361,
+    "cid": 166,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 3,
+      "lifespan": 6500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 130,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 22
+    }
+  },
+  {
+    "order": 362,
+    "cid": 217,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 4,
+      "lifespan": 0,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 110,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 52
+    }
+  },
+  {
+    "order": 363,
+    "cid": 210,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 10,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 5
+    }
+  },
+  {
+    "order": 364,
+    "cid": 222,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 3,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 80,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 33
+    }
+  },
+  {
+    "order": 365,
+    "cid": 26,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 5,
+      "lifespan": 27500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 400,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 35
+    }
+  },
+  {
+    "order": 366,
+    "cid": 208,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 4,
+      "lifespan": 1500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 30,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 22
+    }
+  },
+  {
+    "order": 367,
+    "cid": 227,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 4,
+      "lifespan": 0,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 80,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 46
+    }
+  },
+  {
+    "order": 368,
+    "cid": 226,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 1000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 20,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 8
+    }
+  },
+  {
+    "order": 369,
+    "cid": 228,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 5,
+      "lifespan": 0,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 70,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 62
+    }
+  },
+  {
+    "order": 370,
+    "cid": 237,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 5,
+      "lifespan": 0,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 60,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 52
+    }
+  },
+  {
+    "order": 371,
+    "cid": 212,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 3000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 60,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 12
+    }
+  },
+  {
+    "order": 372,
+    "cid": 240,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 5,
+      "lifespan": 0,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 50,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 54
+    }
+  },
+  {
+    "order": 373,
+    "cid": 191,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 4,
+      "lifespan": 6000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 120,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 27
+    }
+  },
+  {
+    "order": 374,
+    "cid": 248,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 2,
+      "lifespan": 0,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 40,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 12
+    }
+  },
+  {
+    "order": 375,
+    "cid": 238,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 1000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 20,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 5
+    }
+  },
+  {
+    "order": 376,
+    "cid": 263,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 2,
+      "lifespan": 0,
+      "lifecycle_phase": 0.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 20,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 6
+    }
+  },
+  {
+    "order": 377,
+    "cid": 250,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 10,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 6
+    }
+  },
+  {
+    "order": 378,
+    "cid": 268,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 3,
+      "lifespan": 0,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 20,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 18
+    }
+  },
+  {
+    "order": 379,
+    "cid": 200,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 6500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "after_100plus",
+      "pulse_reactivity": 130,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 16
+    }
+  },
+  {
+    "order": 380,
+    "cid": 272,
+    "trigger": "cid_birth",
+    "point": {
+      "n_core": 4,
+      "lifespan": 0,
+      "lifecycle_phase": "unknown",
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 10,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 22
+    }
+  },
+  {
+    "order": 381,
+    "cid": 233,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 3000,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 60,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 17
+    }
+  },
+  {
+    "order": 382,
+    "cid": 241,
+    "trigger": "cid_death",
+    "point": {
+      "n_core": 2,
+      "lifespan": 2500,
+      "lifecycle_phase": 1.0,
+      "formation_relation": "no_alpha",
+      "pulse_reactivity": 50,
+      "C": "unknown",
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 16
+    }
+  }
+]
