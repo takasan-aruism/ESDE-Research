@@ -119,6 +119,13 @@ def main():
     events_df = pd.read_parquet(SOURCE_EVENTS_PATH)
 
     # === 各 CID の pre-compute (本物の数、近似なし) ===
+    # ★ 補正 (2026-06-06、Web Claude/Taka 承認): 時計を tracking step で揃える
+    # 旧: per_subject の birth_window × WINDOW_STEPS = absolute step (起点が違う)
+    # 新: source_events 内部の birth_step / host_lost_step を直接使う (tracking step)
+    # 根拠: v107 event_aggregator line 241 で window_value = (timestamp // 500) + 19
+    #       per_subject の birth_window と source_events の timestamp は +19 window オフセット
+    # 補正は時計を揃えるだけ、percept の中身 (n_core/C/Q/familiarity 等) はいじらない
+
     # n_core (生誕固定、どの source_event からでも取れる、不明なら "unknown")
     n_core_by_cid = (events_df.dropna(subset=['n_core_member'])
                      .groupby('source_cid')['n_core_member'].first().astype(int).to_dict())
@@ -131,24 +138,21 @@ def main():
     alpha_time_by_cid = (events_df[events_df['event_source_type'] == 'alpha_formation']
                          .groupby('source_cid')['timestamp'].min().to_dict())
 
-    # birth_step (per_subject から)
-    birth_step_by_cid = {}
-    death_step_by_cid = {}
-    for _, row in subj_df.iterrows():
-        cid = safe_int(row['cognitive_id'])
-        bw = row.get('birth_window')
-        if pd.notna(bw):
-            birth_step_by_cid[cid] = int(bw) * WINDOW_STEPS
-        hw = row.get('host_lost_window')
-        if pd.notna(hw):
-            death_step_by_cid[cid] = int(hw) * WINDOW_STEPS
+    # ★ birth_step: source_events 内部の birth_step フィールドを直接使う (tracking step、時計揃う)
+    birth_step_by_cid = (events_df.dropna(subset=['birth_step'])
+                         .groupby('source_cid')['birth_step'].first().astype(int).to_dict())
 
-    print(f'pre-compute 結果:')
+    # ★ death_step: source_events 内部の host_lost_step を直接使う (tracking step、時計揃う)
+    death_step_by_cid = (events_df.dropna(subset=['host_lost_step'])
+                         .groupby('source_cid')['host_lost_step'].first().astype(int).to_dict())
+
+    print(f'pre-compute 結果 (時計補正後、全て tracking step):')
     print(f'  n_core 取得 CID 数: {len(n_core_by_cid)} (= source_events を持つ CID)')
     print(f'  pulse_reactivity 取得 CID 数: {len(pulse_count_by_cid)}')
     print(f'  alpha_time 取得 CID 数: {len(alpha_time_by_cid)} (残り {len(subj_df) - len(alpha_time_by_cid)} は no_alpha)')
-    print(f'  birth_step 取得 CID 数: {len(birth_step_by_cid)}')
-    print(f'  death_step 取得 CID 数: {len(death_step_by_cid)} (残り {len(subj_df) - len(death_step_by_cid)} は censored)\n')
+    print(f'  birth_step 取得 CID 数: {len(birth_step_by_cid)} (source_events 内部 birth_step 使用)')
+    print(f'  death_step 取得 CID 数: {len(death_step_by_cid)} (source_events 内部 host_lost_step 使用、'
+          f'残り {len(n_core_by_cid) - len(death_step_by_cid)} は censored)\n')
 
     subj_by_cid = {safe_int(row['cognitive_id']): row for _, row in subj_df.iterrows()}
 
@@ -188,24 +192,23 @@ def main():
         return round(age / total, 3)
 
     # === 引き金 7 種 = 既存 5 + 新規 (cid_birth / cid_death) ===
-    # 新規 event ledger を構築
+    # ★ 補正 (2026-06-06): cid_birth / cid_death event の timestamp も tracking step で構築
+    # 旧: per_subject の birth_window × WINDOW_STEPS = absolute step (起点違い)
+    # 新: source_events 内部の birth_step / host_lost_step を直接 timestamp に使う (時計揃う)
+    # 結果: 既存 5 種引き金と cid_birth/death が同じ時計 (tracking step) で揃う
     new_events_rows = []
-    for _, row in subj_df.iterrows():
-        cid = safe_int(row['cognitive_id'])
-        bw = row.get('birth_window')
-        if pd.notna(bw):
-            new_events_rows.append({
-                'event_source_type': 'cid_birth',
-                'source_cid': cid,
-                'timestamp': int(bw) * WINDOW_STEPS,
-            })
-        hw = row.get('host_lost_window')
-        if pd.notna(hw):
-            new_events_rows.append({
-                'event_source_type': 'cid_death',
-                'source_cid': cid,
-                'timestamp': int(hw) * WINDOW_STEPS,
-            })
+    for cid, birth_step in birth_step_by_cid.items():
+        new_events_rows.append({
+            'event_source_type': 'cid_birth',
+            'source_cid': cid,
+            'timestamp': birth_step,
+        })
+    for cid, death_step in death_step_by_cid.items():
+        new_events_rows.append({
+            'event_source_type': 'cid_death',
+            'source_cid': cid,
+            'timestamp': death_step,
+        })
     new_events_df = pd.DataFrame(new_events_rows)
 
     events_combined = pd.concat([
