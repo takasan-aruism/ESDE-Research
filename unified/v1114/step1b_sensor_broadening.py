@@ -166,6 +166,11 @@ def main():
             return 'after_100plus'
 
     # === lifecycle_phase の判定関数 (死亡確定 CID のみ、生存中は "unknown") ===
+    # Web Claude 指摘 (2026-06-06): 負値バグ修正
+    # 根本原因: per_subject の birth_window (cog.born_at[cid]) と source_events の
+    # timestamp で整合性が取れない (228 CID 中 225 件で min_event_ts < birth_step)
+    # → age < 0 (誕生前) や age > total (死後) のケースが発生
+    # 修正: 範囲外は "unknown" 明示、偽の比率で埋めない (Taka 規律「すり替えない」)
     def get_lifecycle_phase(cid, attention_time):
         if cid not in birth_step_by_cid:
             return 'unknown'  # 誕生時刻不明
@@ -177,6 +182,9 @@ def main():
         if total <= 0:
             return 'unknown'
         age = attention_time - birth
+        if age < 0 or age > total:
+            # 誕生前 or 死後 = phase 計算不能 (per_subject vs source_events の整合性問題)
+            return 'unknown'
         return round(age / total, 3)
 
     # === 引き金 7 種 = 既存 5 + 新規 (cid_birth / cid_death) ===
