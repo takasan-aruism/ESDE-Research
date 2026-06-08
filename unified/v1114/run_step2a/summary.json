@@ -1,0 +1,30 @@
+{
+  "design": "v1114_step2a_live_observer",
+  "note": "formation_relation/lifecycle_phase を落とした (Taka 判断 2026-06-08、v105 hook で 100% 退化、Step 1b 既知バグとして保留)",
+  "seed": 0,
+  "maturation_windows": 20,
+  "tracking_windows": 50,
+  "window_steps": 500,
+  "n_per_chunk": 10,
+  "patch_chunk_count": 3500,
+  "patch_remainder_count": 0,
+  "final_global_step": 35000,
+  "records_total": 443,
+  "trigger_distribution": {
+    "cid_birth": 58,
+    "c_conversion": 119,
+    "pulse": 10,
+    "beta_formation": 68,
+    "alpha_formation": 145,
+    "cid_death": 43
+  },
+  "n_core_distribution": {
+    "5": 228,
+    "2": 120,
+    "3": 35,
+    "4": 60
+  },
+  "familiarity_sizes_has_count": 416,
+  "familiarity_sizes_total_partners": 7353,
+  "v105_output_dir": "/tmp/v105_step2a_seed0_main"
+}
