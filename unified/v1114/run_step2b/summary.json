@@ -1,0 +1,25 @@
+{
+  "design": "v1114_step2b_atom_attention",
+  "note": "釘 3 点遵守: (1) cid_atom_sim_matrix は 4 月手定義投影を 6 月 cid に再適用するだけ、人工性は消えない (本物にならない). (2) 位置づけ = 配管確認まで、応答 (CID 群 dynamics) は Step 3、入力テキスト→Atom は LLM 経由の穴. (3) 観察のみ・engine.state 触らず・inject 呼ばず・8 番目 trigger は既存スキーマ互換.",
+  "top_k": 5,
+  "test_atoms": [
+    "WLD.science",
+    "COG.understand",
+    "ACT.build",
+    "FND.spaceless",
+    "EMO.calm"
+  ],
+  "step2a_records_count": 443,
+  "atom_resonance_records_count": 10,
+  "combined_records_count": 453,
+  "cid_vectors_shape": [
+    228,
+    48
+  ],
+  "sim_matrix_shape": [
+    228,
+    325
+  ],
+  "v105_today_dir": "/tmp/v105_step2a_seed0_main/diag_v105_step2a_seed0",
+  "atom_centroids_path": "unified/v1103/outputs/main/atom_centroids_48d_normalized.parquet"
+}
