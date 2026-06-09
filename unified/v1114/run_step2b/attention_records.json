@@ -14858,112 +14858,348 @@
   },
   {
     "order": 443,
-    "cid": 138,
-    "trigger": "atom_resonance_WLD.science",
-    "point": {
-      "atom_name": "WLD.science",
-      "cosine_sim": 0.461527,
-      "rank_in_topk": 1
-    },
-    "neighborhood": {}
-  },
-  {
-    "order": 444,
     "cid": 250,
     "trigger": "atom_resonance_WLD.science",
     "point": {
-      "atom_name": "WLD.science",
-      "cosine_sim": 0.460949,
-      "rank_in_topk": 2
+      "n_core": 2,
+      "lifespan": 1010,
+      "pulse_reactivity": 10,
+      "C": 4,
+      "Q_remaining": "unknown"
     },
-    "neighborhood": {}
+    "neighborhood": {
+      "familiarity_n": 6,
+      "familiarity_sizes": [
+        2,
+        2,
+        4,
+        4,
+        5
+      ]
+    },
+    "atom_via": "WLD.science",
+    "rank_in_topk": "top1"
   },
   {
-    "order": 445,
+    "order": 444,
     "cid": 151,
     "trigger": "atom_resonance_WLD.science",
     "point": {
-      "atom_name": "WLD.science",
-      "cosine_sim": 0.460698,
-      "rank_in_topk": 3
+      "n_core": 2,
+      "lifespan": 510,
+      "pulse_reactivity": 1,
+      "C": 3,
+      "Q_remaining": "unknown"
     },
-    "neighborhood": {}
+    "neighborhood": {
+      "familiarity_n": 2,
+      "familiarity_sizes": [
+        2,
+        2
+      ]
+    },
+    "atom_via": "WLD.science",
+    "rank_in_topk": "top2"
+  },
+  {
+    "order": 445,
+    "cid": 95,
+    "trigger": "atom_resonance_WLD.science",
+    "point": {
+      "n_core": 2,
+      "lifespan": 510,
+      "pulse_reactivity": 0,
+      "C": 2,
+      "Q_remaining": "unknown"
+    },
+    "neighborhood": {
+      "familiarity_n": 3,
+      "familiarity_sizes": [
+        2,
+        5,
+        2
+      ]
+    },
+    "atom_via": "WLD.science",
+    "rank_in_topk": "top3"
   },
   {
     "order": 446,
-    "cid": 164,
+    "cid": 69,
     "trigger": "atom_resonance_WLD.science",
     "point": {
-      "atom_name": "WLD.science",
-      "cosine_sim": 0.460524,
-      "rank_in_topk": 4
+      "n_core": 2,
+      "lifespan": 900,
+      "pulse_reactivity": 8,
+      "C": 1,
+      "Q_remaining": "unknown"
     },
-    "neighborhood": {}
+    "neighborhood": {
+      "familiarity_n": 4,
+      "familiarity_sizes": [
+        2,
+        5,
+        5,
+        5
+      ]
+    },
+    "atom_via": "WLD.science",
+    "rank_in_topk": "top4"
   },
   {
     "order": 447,
-    "cid": 135,
+    "cid": 196,
     "trigger": "atom_resonance_WLD.science",
     "point": {
-      "atom_name": "WLD.science",
-      "cosine_sim": 0.459984,
-      "rank_in_topk": 5
+      "n_core": 2,
+      "lifespan": 1010,
+      "pulse_reactivity": 10,
+      "C": 2,
+      "Q_remaining": "unknown"
     },
-    "neighborhood": {}
+    "neighborhood": {
+      "familiarity_n": 4,
+      "familiarity_sizes": [
+        2,
+        2,
+        5,
+        4
+      ]
+    },
+    "atom_via": "WLD.science",
+    "rank_in_topk": "top5"
   },
   {
     "order": 448,
     "cid": 19,
     "trigger": "atom_resonance_ACT.build",
     "point": {
-      "atom_name": "ACT.build",
-      "cosine_sim": 0.437631,
-      "rank_in_topk": 1
+      "n_core": 5,
+      "lifespan": 33030,
+      "pulse_reactivity": 491,
+      "C": 56,
+      "Q_remaining": "unknown"
     },
-    "neighborhood": {}
+    "neighborhood": {
+      "familiarity_n": 57,
+      "familiarity_sizes": [
+        5,
+        5,
+        4,
+        5,
+        5,
+        4,
+        5,
+        5,
+        4,
+        5,
+        5,
+        4,
+        5,
+        4,
+        5,
+        2,
+        4,
+        4,
+        5,
+        2,
+        5,
+        5,
+        4,
+        2,
+        5,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    "atom_via": "ACT.build",
+    "rank_in_topk": "top1"
   },
   {
     "order": 449,
     "cid": 26,
     "trigger": "atom_resonance_ACT.build",
     "point": {
-      "atom_name": "ACT.build",
-      "cosine_sim": 0.415879,
-      "rank_in_topk": 2
+      "n_core": 5,
+      "lifespan": 28010,
+      "pulse_reactivity": 400,
+      "C": 33,
+      "Q_remaining": "unknown"
     },
-    "neighborhood": {}
+    "neighborhood": {
+      "familiarity_n": 35,
+      "familiarity_sizes": [
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        4,
+        5,
+        4,
+        5,
+        3,
+        4,
+        5,
+        5,
+        2,
+        4,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        5,
+        2,
+        2,
+        4
+      ]
+    },
+    "atom_via": "ACT.build",
+    "rank_in_topk": "top2"
   },
   {
     "order": 450,
     "cid": 44,
     "trigger": "atom_resonance_ACT.build",
     "point": {
-      "atom_name": "ACT.build",
-      "cosine_sim": 0.401488,
-      "rank_in_topk": 3
+      "n_core": 4,
+      "lifespan": 23290,
+      "pulse_reactivity": 365,
+      "C": 41,
+      "Q_remaining": "unknown"
     },
-    "neighborhood": {}
+    "neighborhood": {
+      "familiarity_n": 27,
+      "familiarity_sizes": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        4,
+        5,
+        5,
+        4,
+        5,
+        3,
+        5,
+        5,
+        4,
+        2,
+        4,
+        4,
+        2,
+        2,
+        2
+      ]
+    },
+    "atom_via": "ACT.build",
+    "rank_in_topk": "top3"
   },
   {
     "order": 451,
     "cid": 133,
     "trigger": "atom_resonance_ACT.build",
     "point": {
-      "atom_name": "ACT.build",
-      "cosine_sim": 0.39763,
-      "rank_in_topk": 4
+      "n_core": 2,
+      "lifespan": 4010,
+      "pulse_reactivity": 70,
+      "C": 17,
+      "Q_remaining": "unknown"
     },
-    "neighborhood": {}
+    "neighborhood": {
+      "familiarity_n": 12,
+      "familiarity_sizes": [
+        2,
+        2,
+        4,
+        5,
+        5,
+        2,
+        5,
+        5,
+        5,
+        5,
+        4
+      ]
+    },
+    "atom_via": "ACT.build",
+    "rank_in_topk": "top4"
   },
   {
     "order": 452,
     "cid": 41,
     "trigger": "atom_resonance_ACT.build",
     "point": {
-      "atom_name": "ACT.build",
-      "cosine_sim": 0.395551,
-      "rank_in_topk": 5
+      "n_core": 5,
+      "lifespan": 29780,
+      "pulse_reactivity": 495,
+      "C": 51,
+      "Q_remaining": "unknown"
     },
-    "neighborhood": {}
+    "neighborhood": {
+      "familiarity_n": 60,
+      "familiarity_sizes": [
+        5,
+        4,
+        5,
+        4,
+        5,
+        5,
+        5,
+        5,
+        4,
+        5,
+        5,
+        4,
+        5,
+        4,
+        2,
+        5,
+        4,
+        4,
+        5,
+        2,
+        5,
+        5,
+        4,
+        2,
+        2,
+        2,
+        5,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        5,
+        2
+      ]
+    },
+    "atom_via": "ACT.build",
+    "rank_in_topk": "top5"
   }
 ]

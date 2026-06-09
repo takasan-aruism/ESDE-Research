@@ -155,40 +155,73 @@ def compute_cid_atom_sim_matrix(cid_list, cid_vectors):
     return out_df, atom_names
 
 
-def get_top_k_resonant_cids(sim_df, atom_name, k=TOP_K):
-    """Atom スコア順に top-k cid を取得 (釘 3: lookup のみ、合成しない)"""
+def get_top_k_resonant_cids(sim_df, atom_name, allowed_cids, k=TOP_K):
+    """Atom スコア順に top-k cid を取得、ただし allowed_cids (Center 知覚済み) に絞る (修正 A)
+
+    釘 3: lookup のみ、合成しない
+    修正 A (2026-06-09): atom が指す cid は Center が知覚できる cid 集合に絞る
+    """
     if atom_name not in sim_df.columns:
         return []
-    sorted_df = sim_df[['cid', atom_name]].sort_values(atom_name, ascending=False).head(k)
+    df = sim_df[sim_df['cid'].isin(allowed_cids)][['cid', atom_name]].copy()
+    sorted_df = df.sort_values(atom_name, ascending=False).head(k)
     return [(int(row['cid']), float(row[atom_name])) for _, row in sorted_df.iterrows()]
 
 
-def build_atom_resonance_records(sim_df, atom_names_input, start_order):
-    """各 Atom 入力に対して top-k 共鳴 CID を引いて 8 番目 trigger レコードを生成
+def build_atom_resonance_records(sim_df, atom_names_input, start_order, cid_percept_map):
+    """各 Atom 入力に対して top-k 共鳴 CID を引いて percept レコードを生成
 
-    釘 (3) スキーマ互換: trigger='atom_resonance_<atom>' + cid + point + neighborhood
-    釘 (3) z で切らない・合成しない: cosine sim 値を point.cosine_sim に記録 (固定 top-k で切る)
-    釘 (3) k 単純固定: TOP_K = 5
+    修正 B (2026-06-09): atom_resonance レコードを既存スキーマに揃える
+    - 共鳴 cid の percept (n_core/C/Q/lifespan/pulse_reactivity/familiarity_n/familiarity_sizes)
+      を point/neighborhood に乗せる (cid_percept_map から取得)
+    - atom_name は別キー 'atom_via' で由来として添える
+    - rank_in_topk は記号 ('top1'..'top5') で記録
+    - raw cosine_sim は落とす (両端人工投影の連続値、percept でない)
+
+    釘 3 遵守: trigger=atom_resonance_<atom>、k 固定 5、lookup のみ
     """
     records = []
     order = start_order
+    allowed_cids = set(cid_percept_map.keys())  # Center が知覚した cid 集合
     for atom_name in atom_names_input:
-        top_k = get_top_k_resonant_cids(sim_df, atom_name, k=TOP_K)
-        for rank, (cid, sim_val) in enumerate(top_k):
+        top_k = get_top_k_resonant_cids(sim_df, atom_name, allowed_cids, k=TOP_K)
+        for rank, (cid, _sim_val) in enumerate(top_k):
+            percept = cid_percept_map.get(cid)
+            if percept is None:
+                continue  # 念のため (allowed_cids で絞ってあるので発生しない)
             record = {
                 'order': order,
                 'cid': cid,
                 'trigger': f'atom_resonance_{atom_name}',
-                'point': {
-                    'atom_name': atom_name,
-                    'cosine_sim': round(sim_val, 6),  # スコア順記録 (判定数値でなく観察値)
-                    'rank_in_topk': rank + 1,  # 1-indexed
-                },
-                'neighborhood': {},  # Step 2-A の familiarity_sizes は本実装範囲外
+                'point': dict(percept['point']),  # Step 2-A 形式 (n_core/lifespan/pulse_reactivity/C/Q_remaining)
+                'neighborhood': dict(percept['neighborhood']),  # familiarity_n + familiarity_sizes
+                'atom_via': atom_name,  # 由来 (記号)
+                'rank_in_topk': f'top{rank + 1}',  # 記号 (top1..top5)
             }
             records.append(record)
             order += 1
     return records
+
+
+def build_cid_percept_map(step2a_records):
+    """Step 2-A records から cid → 最新 percept (point/neighborhood) のマップを構築
+
+    修正 A 補助: Center が知覚した cid 集合とその percept を取得
+    同じ cid が複数 record に登場する場合、最新 (最大 order) を採用
+    """
+    cid_percept = {}
+    for r in step2a_records:
+        cid = int(r['cid'])
+        # 最新 order を優先 (order は通し番号、後勝ち)
+        if cid not in cid_percept or r['order'] > cid_percept[cid]['_order']:
+            cid_percept[cid] = {
+                'point': r['point'],
+                'neighborhood': r['neighborhood'],
+                '_order': r['order'],
+            }
+    # _order を落として返す
+    return {cid: {'point': v['point'], 'neighborhood': v['neighborhood']}
+            for cid, v in cid_percept.items()}
 
 
 def main():
@@ -208,7 +241,11 @@ def main():
         step2a_records = json.load(f)
     print(f'Step 2-A records: {len(step2a_records)}')
 
-    # === v105-today output から 280 cid × 48 次元 vector 構築 ===
+    # === 修正 A: Step 2-A records から Center が知覚した cid → percept マップ構築 ===
+    cid_percept_map = build_cid_percept_map(step2a_records)
+    print(f'Center が知覚した unique cid: {len(cid_percept_map)} (= atom の lookup 範囲)')
+
+    # === v105-today output から 48 次元 vector 構築 ===
     print('\n=== cid vector 構築 (v106 builders、4 月手定義投影を 6 月 cid に再適用) ===')
     cid_list, cid_vectors = build_cid_vectors_from_v105today()
 
@@ -216,10 +253,20 @@ def main():
     print('\n=== cid_atom_sim_matrix 計算 ===')
     sim_df, atom_names = compute_cid_atom_sim_matrix(cid_list, cid_vectors)
 
+    # === 修正 A 確認: sim_df の cid と Center 知覚 cid の重なり ===
+    sim_cids = set(int(c) for c in sim_df['cid'].values)
+    center_cids = set(cid_percept_map.keys())
+    overlap = sim_cids & center_cids
+    print(f'\n修正 A 確認:')
+    print(f'  sim_matrix の cid 数: {len(sim_cids)} (v106 が cid_vector を作れた集合)')
+    print(f'  Center 知覚 cid 数: {len(center_cids)} (Step 2-A records の unique cid)')
+    print(f'  両者の重なり: {len(overlap)} ← atom 経由で引ける cid 範囲 (Center が必ず知覚済み)')
+
     # === TEST_ATOMS で top-k 共鳴 CID 抽出 + 8 番目 trigger レコード生成 ===
-    print('\n=== Atom 手置き → top-k 共鳴 CID → 8 番目 trigger ===')
+    print('\n=== Atom 手置き → top-k 共鳴 CID (Center 知覚済みに絞る) → 8 番目 trigger ===')
     atom_records = build_atom_resonance_records(
-        sim_df, TEST_ATOMS, start_order=len(step2a_records)
+        sim_df, TEST_ATOMS, start_order=len(step2a_records),
+        cid_percept_map=cid_percept_map,
     )
 
     print(f'\natom_resonance records: {len(atom_records)}')
@@ -228,16 +275,23 @@ def main():
     for trig, cnt in trig_dist.most_common():
         print(f'  {trig}: {cnt}')
 
-    # 共鳴 CID の cosine_sim 分布 (各 Atom)
-    print(f'\n各 Atom の top-5 共鳴 CID:')
+    # 共鳴 CID の cid + 主要 percept (cosine_sim は出力しない、percept のみ)
+    print(f'\n各 Atom の top-5 共鳴 CID とその percept:')
     for atom_name in TEST_ATOMS:
         if atom_name not in sim_df.columns:
-            print(f'  {atom_name}: (Atom 不在)')
+            print(f'  {atom_name}: (Atom 不在、atom_centroids に無し)')
             continue
         records_for_atom = [r for r in atom_records if r['trigger'] == f'atom_resonance_{atom_name}']
-        sims = [(r['cid'], r['point']['cosine_sim']) for r in records_for_atom]
-        sim_str = ', '.join(f'cid={c}(sim={s:.3f})' for c, s in sims)
-        print(f'  {atom_name}: {sim_str}')
+        if not records_for_atom:
+            print(f'  {atom_name}: top-k 抽出失敗 (Center 知覚と重なりなし)')
+            continue
+        print(f'  {atom_name}:')
+        for r in records_for_atom:
+            p = r['point']
+            n = r['neighborhood']
+            print(f'    {r["rank_in_topk"]} cid={r["cid"]}: n_core={p.get("n_core")} lifespan={p.get("lifespan")} '
+                  f'pulse={p.get("pulse_reactivity")} C={p.get("C")} Q={p.get("Q_remaining")} '
+                  f'fam_n={n.get("familiarity_n")} fam_sizes={n.get("familiarity_sizes")}')
 
     # === Step 2-A records + 8 番目 trigger records を結合して出力 ===
     combined_records = step2a_records + atom_records
