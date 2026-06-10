@@ -1,0 +1,39 @@
+{
+  "design": "v12_atomset_m2_smoke",
+  "note": "M2: 誕生時 rank_1 + per-10step 頻度集計 + bonus 育成、torque 未接続で baseline と bit-identity",
+  "seed": 0,
+  "maturation_windows": 2,
+  "tracking_windows": 3,
+  "window_steps": 500,
+  "duration_sec": 783.8,
+  "label_birth_count": 31,
+  "labels_total": 18,
+  "labels_with_seed": 18,
+  "rank1_computed_count": 31,
+  "rank1_failed_count": 0,
+  "event_increment_count": 434,
+  "labels_with_bonus_grown": 15,
+  "rank1_top5": [
+    [
+      "PRP.new",
+      7
+    ],
+    [
+      "COG.enlightenment",
+      4
+    ],
+    [
+      "PER.hear",
+      3
+    ],
+    [
+      "FND.ahistorical",
+      2
+    ],
+    [
+      "ACT.create",
+      1
+    ]
+  ],
+  "theta_diverged": false
+}
