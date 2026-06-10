@@ -1,0 +1,225 @@
+{
+  "note": "Projection Audit. v106 build_cid_vector(10軸, phase_sig無) を M4 CID に適用。動態の bonus 対象を実決定するのは簡易版 compute_rank_1_atom(scale+phase)。",
+  "phase_sig_in_v106_vector": false,
+  "cosine_used": true,
+  "off": {
+    "cond": "off",
+    "n_cid": 25,
+    "axis_dispersion": {
+      "temporal": {
+        "var_sum": 0.23502,
+        "distinct_buckets": 2,
+        "near_constant": false
+      },
+      "scale": {
+        "var_sum": 0.2784,
+        "distinct_buckets": 3,
+        "near_constant": false
+      },
+      "epistemological": {
+        "var_sum": 0.51758,
+        "distinct_buckets": 5,
+        "near_constant": false
+      },
+      "ontological": {
+        "var_sum": 0.09046,
+        "distinct_buckets": 4,
+        "near_constant": false
+      },
+      "interconnection": {
+        "var_sum": 0.0125,
+        "distinct_buckets": 1,
+        "near_constant": false
+      },
+      "resonance": {
+        "var_sum": 0.0,
+        "distinct_buckets": 1,
+        "near_constant": true
+      },
+      "symmetry": {
+        "var_sum": 0.0,
+        "distinct_buckets": 1,
+        "near_constant": true
+      },
+      "lawfulness": {
+        "var_sum": 0.1415,
+        "distinct_buckets": 2,
+        "near_constant": false
+      },
+      "experience": {
+        "var_sum": 0.00464,
+        "distinct_buckets": 1,
+        "near_constant": false
+      },
+      "value_generation": {
+        "var_sum": 0.09702,
+        "distinct_buckets": 2,
+        "near_constant": false
+      }
+    },
+    "near_constant_axes": [
+      "resonance",
+      "symmetry"
+    ],
+    "active_axes": [
+      "temporal",
+      "scale",
+      "epistemological",
+      "ontological",
+      "interconnection",
+      "lawfulness",
+      "experience",
+      "value_generation"
+    ],
+    "effective_rank": 6.893,
+    "numerical_rank": 23,
+    "pca_explained_top8": [
+      0.3464,
+      0.1703,
+      0.1412,
+      0.1232,
+      0.0668,
+      0.0508,
+      0.039,
+      0.0232
+    ],
+    "cid_cosine_dist": {
+      "mean": 0.1793,
+      "min": 0.0002,
+      "max": 0.3914
+    },
+    "magnitude": {
+      "mean": 2.8155,
+      "std": 0.0929,
+      "cv": 0.033
+    },
+    "atom_margin_mean": 0.0895,
+    "atom_margin_min": 0.0074,
+    "atom_entropy_mean": 5.667,
+    "v106_top1_distinct": 2,
+    "v106_top1_atoms": {
+      "PRP.new": 21,
+      "EXS.being": 4
+    },
+    "v106_top3_jaccard_mean": 0.48,
+    "simplified_top1_distinct": 6,
+    "simplified_top1_atoms": {
+      "PRP.new": 16,
+      "PER.hear": 4,
+      "FND.ahistorical": 2,
+      "ACT.create": 1,
+      "LOG.effect": 1,
+      "COG.enlightenment": 1
+    }
+  },
+  "small": {
+    "cond": "small",
+    "n_cid": 16,
+    "axis_dispersion": {
+      "temporal": {
+        "var_sum": 0.32096,
+        "distinct_buckets": 2,
+        "near_constant": false
+      },
+      "scale": {
+        "var_sum": 0.46094,
+        "distinct_buckets": 3,
+        "near_constant": false
+      },
+      "epistemological": {
+        "var_sum": 0.55262,
+        "distinct_buckets": 4,
+        "near_constant": false
+      },
+      "ontological": {
+        "var_sum": 0.10775,
+        "distinct_buckets": 4,
+        "near_constant": false
+      },
+      "interconnection": {
+        "var_sum": 0.0,
+        "distinct_buckets": 1,
+        "near_constant": true
+      },
+      "resonance": {
+        "var_sum": 0.0,
+        "distinct_buckets": 1,
+        "near_constant": true
+      },
+      "symmetry": {
+        "var_sum": 0.0,
+        "distinct_buckets": 1,
+        "near_constant": true
+      },
+      "lawfulness": {
+        "var_sum": 0.12801,
+        "distinct_buckets": 2,
+        "near_constant": false
+      },
+      "experience": {
+        "var_sum": 0.0061,
+        "distinct_buckets": 1,
+        "near_constant": false
+      },
+      "value_generation": {
+        "var_sum": 0.18305,
+        "distinct_buckets": 2,
+        "near_constant": false
+      }
+    },
+    "near_constant_axes": [
+      "interconnection",
+      "resonance",
+      "symmetry"
+    ],
+    "active_axes": [
+      "temporal",
+      "scale",
+      "epistemological",
+      "ontological",
+      "lawfulness",
+      "experience",
+      "value_generation"
+    ],
+    "effective_rank": 5.035,
+    "numerical_rank": 15,
+    "pca_explained_top8": [
+      0.4419,
+      0.1936,
+      0.1579,
+      0.0761,
+      0.0538,
+      0.033,
+      0.0303,
+      0.0061
+    ],
+    "cid_cosine_dist": {
+      "mean": 0.2277,
+      "min": -0.0,
+      "max": 0.4065
+    },
+    "magnitude": {
+      "mean": 2.868,
+      "std": 0.0585,
+      "cv": 0.0204
+    },
+    "atom_margin_mean": 0.0941,
+    "atom_margin_min": 0.0336,
+    "atom_entropy_mean": 5.66,
+    "v106_top1_distinct": 2,
+    "v106_top1_atoms": {
+      "PRP.new": 11,
+      "EXS.being": 5
+    },
+    "v106_top3_jaccard_mean": 0.4692,
+    "simplified_top1_distinct": 6,
+    "simplified_top1_atoms": {
+      "PRP.new": 9,
+      "FND.ahistorical": 2,
+      "PER.hear": 2,
+      "ACT.create": 1,
+      "LOG.effect": 1,
+      "PER.see": 1
+    }
+  }
+}
