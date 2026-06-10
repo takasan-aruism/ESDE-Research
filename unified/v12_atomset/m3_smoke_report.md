@@ -70,6 +70,16 @@ link/audit も連動)。torque が theta を変えた結果、形成・存続す
   線形に効く multiplier なので、これは「bonus が torque に実際に乗っている」感応指標
   (集計値が処置に鈍感になる罠を回避: cog_factor は構造保存変換ではない)。
 
+## 訂正・追補 (2026-06-11、Web Claude view + 機構監査を受けて)
+
+本報告の (B) を「population まるごと変化 (CID 数 18→16→18)」で見出しにしたのは粗い (CID 数は
+個性化/寡占/安定化を区別しない集計量)。機構と妥当性の精査・私の実験方法の問題抽出は
+**`m3_investigation_and_method_audit.md`** に分離した。要点:
+- θ→S→ハード閾値 (S<0.007 死 / S≥0.20 island / R>0 seed / share<thr cull、化学ゲート cos(dθ)≥0.7)
+  のカスケードで微小 θ 差が CID 数まで分岐する (コード trace + link `(1335,2701)` 寿命 44→108 step で実証)。
+- CID 数変化は **唯一の入口 cog_factor の下流**。off≡M2 bit-identity がそれを証明 (隔離は崩れていない)。
+- 妥当に言えるのは技術的 PASS まで。個性化 vs 寡占は seed 0・bonus 未 tag で判定不可。
+
 ## 留保 (smoke seed 0 を絶対視しない)
 
 - diff は「population まるごと変化」として現れ、局所的な位相整合量としては測っていない。
