@@ -1,0 +1,286 @@
+{
+  "m4_eq_m3_off": true,
+  "theta_first_divergence_step": 1001,
+  "theta_steps_total": 2500,
+  "first_factor_window": 2,
+  "bonus_labels_at_first_factor": [
+    {
+      "lid": 0,
+      "cid": 0,
+      "factor": 1.131,
+      "n_nodes": 5
+    },
+    {
+      "lid": 2,
+      "cid": 2,
+      "factor": 1.131,
+      "n_nodes": 5
+    },
+    {
+      "lid": 4,
+      "cid": 3,
+      "factor": 1.131,
+      "n_nodes": 2
+    },
+    {
+      "lid": 6,
+      "cid": 4,
+      "factor": 1.131,
+      "n_nodes": 2
+    },
+    {
+      "lid": 7,
+      "cid": 5,
+      "factor": 1.131,
+      "n_nodes": 2
+    },
+    {
+      "lid": 12,
+      "cid": 7,
+      "factor": 1.131,
+      "n_nodes": 2
+    }
+  ],
+  "firstdiv_link_in_territory": {
+    "node1": 1335,
+    "in1": false,
+    "node2": 2701,
+    "in2": false,
+    "verdict": "両 node とも territory 外"
+  },
+  "matched_percid": [
+    {
+      "cid": 0,
+      "bonus_target": true,
+      "off_state": "hosted",
+      "small_state": "hosted",
+      "off_life": 5.0,
+      "small_life": 5.0,
+      "off_coher": 0.7137,
+      "small_coher": 0.3268,
+      "d_life": 0.0,
+      "d_coher": -0.3869
+    },
+    {
+      "cid": 2,
+      "bonus_target": true,
+      "off_state": "hosted",
+      "small_state": "hosted",
+      "off_life": 5.0,
+      "small_life": 5.0,
+      "off_coher": 0.393,
+      "small_coher": 0.1206,
+      "d_life": 0.0,
+      "d_coher": -0.2724
+    },
+    {
+      "cid": 3,
+      "bonus_target": true,
+      "off_state": "hosted",
+      "small_state": "ghost",
+      "off_life": 5.0,
+      "small_life": 3.0,
+      "off_coher": 0.9944,
+      "small_coher": 0.9025,
+      "d_life": -2.0,
+      "d_coher": -0.0919
+    },
+    {
+      "cid": 4,
+      "bonus_target": true,
+      "off_state": "ghost",
+      "small_state": "hosted",
+      "off_life": 3.0,
+      "small_life": 5.0,
+      "off_coher": 0.9767,
+      "small_coher": 0.8866,
+      "d_life": 2.0,
+      "d_coher": -0.0901
+    },
+    {
+      "cid": 5,
+      "bonus_target": true,
+      "off_state": "hosted",
+      "small_state": "hosted",
+      "off_life": 5.0,
+      "small_life": 5.0,
+      "off_coher": 1.0,
+      "small_coher": 0.9682,
+      "d_life": 0.0,
+      "d_coher": -0.0318
+    },
+    {
+      "cid": 7,
+      "bonus_target": true,
+      "off_state": "ghost",
+      "small_state": "hosted",
+      "off_life": 3.0,
+      "small_life": 5.0,
+      "off_coher": 0.8566,
+      "small_coher": 0.3481,
+      "d_life": 2.0,
+      "d_coher": -0.5085
+    },
+    {
+      "cid": 9,
+      "bonus_target": true,
+      "off_state": "hosted",
+      "small_state": "hosted",
+      "off_life": 3.0,
+      "small_life": 3.0,
+      "off_coher": 0.8041,
+      "small_coher": 0.1227,
+      "d_life": 0.0,
+      "d_coher": -0.6814
+    },
+    {
+      "cid": 10,
+      "bonus_target": true,
+      "off_state": "hosted",
+      "small_state": "hosted",
+      "off_life": 3.0,
+      "small_life": 3.0,
+      "off_coher": 0.4767,
+      "small_coher": 0.404,
+      "d_life": 0.0,
+      "d_coher": -0.0727
+    },
+    {
+      "cid": 11,
+      "bonus_target": true,
+      "off_state": "hosted",
+      "small_state": "ghost",
+      "off_life": 3.0,
+      "small_life": 1.0,
+      "off_coher": 0.5657,
+      "small_coher": 0.9221,
+      "d_life": -2.0,
+      "d_coher": 0.3564
+    },
+    {
+      "cid": 12,
+      "bonus_target": true,
+      "off_state": "hosted",
+      "small_state": "ghost",
+      "off_life": 3.0,
+      "small_life": 1.0,
+      "off_coher": 0.0489,
+      "small_coher": 0.9256,
+      "d_life": -2.0,
+      "d_coher": 0.8767
+    },
+    {
+      "cid": 13,
+      "bonus_target": true,
+      "off_state": "hosted",
+      "small_state": "ghost",
+      "off_life": 3.0,
+      "small_life": 1.0,
+      "off_coher": 0.2691,
+      "small_coher": 0.5494,
+      "d_life": -2.0,
+      "d_coher": 0.2803
+    },
+    {
+      "cid": 14,
+      "bonus_target": true,
+      "off_state": "ghost",
+      "small_state": "ghost",
+      "off_life": 1.0,
+      "small_life": 1.0,
+      "off_coher": 0.9999,
+      "small_coher": 0.9718,
+      "d_life": 0.0,
+      "d_coher": -0.0281
+    },
+    {
+      "cid": 15,
+      "bonus_target": true,
+      "off_state": "ghost",
+      "small_state": "hosted",
+      "off_life": 1.0,
+      "small_life": 3.0,
+      "off_coher": 0.5351,
+      "small_coher": 0.7747,
+      "d_life": 2.0,
+      "d_coher": 0.2396
+    },
+    {
+      "cid": 16,
+      "bonus_target": true,
+      "off_state": "ghost",
+      "small_state": "ghost",
+      "off_life": 1.0,
+      "small_life": 1.0,
+      "off_coher": 0.9875,
+      "small_coher": 1.0,
+      "d_life": 0.0,
+      "d_coher": 0.0125
+    },
+    {
+      "cid": 17,
+      "bonus_target": true,
+      "off_state": "ghost",
+      "small_state": "ghost",
+      "off_life": 1.0,
+      "small_life": 1.0,
+      "off_coher": 0.9208,
+      "small_coher": 0.3723,
+      "d_life": 0.0,
+      "d_coher": -0.5485
+    },
+    {
+      "cid": 18,
+      "bonus_target": true,
+      "off_state": "ghost",
+      "small_state": "hosted",
+      "off_life": 1.0,
+      "small_life": 2.0,
+      "off_coher": 0.5394,
+      "small_coher": 0.5316,
+      "d_life": 1.0,
+      "d_coher": -0.0078
+    }
+  ],
+  "bonus_target_cids_small": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "death_cause": {
+    "off": {
+      "n": 25,
+      "hosted": 15,
+      "ghost": 10,
+      "ghost_bonus_target": 10,
+      "ghost_nonbonus": 0,
+      "hosted_bonus_target": 15,
+      "ghost_dur_mean": 350.0
+    },
+    "small": {
+      "n": 16,
+      "hosted": 9,
+      "ghost": 7,
+      "ghost_bonus_target": 7,
+      "ghost_nonbonus": 0,
+      "hosted_bonus_target": 9,
+      "ghost_dur_mean": 500.0
+    }
+  }
+}
