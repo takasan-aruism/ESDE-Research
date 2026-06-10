@@ -1,0 +1,83 @@
+{
+  "design": "v12_atomset_m3_smoke",
+  "note": "M3: 育った atomset_bonus を atomset_factor=1.0+GAIN*bonus として label[\"torque_factor\"] (cog_factor の口) に接続し torque_mag に乗せる。GAIN=0 (off) は M2 baseline と bit-identity (制御群)、GAIN>0 で torque 由来の diff。",
+  "condition": "small",
+  "torque_gain": 0.5,
+  "seed": 0,
+  "maturation_windows": 2,
+  "tracking_windows": 3,
+  "window_steps": 500,
+  "duration_sec": 711.1,
+  "label_birth_count": 24,
+  "labels_total": 14,
+  "labels_with_seed": 14,
+  "event_increment_count": 321,
+  "labels_with_bonus_grown": 9,
+  "bonus_max": 0.381,
+  "factor_set_count": 321,
+  "labels_factor_gt1": 9,
+  "max_atomset_factor": 1.1905,
+  "windows_with_active_factor": 4,
+  "torque_total_sum": 18.4282,
+  "window_torque_log": [
+    [
+      1,
+      0,
+      1.0,
+      3.7752,
+      154
+    ],
+    [
+      2,
+      9,
+      1.0227272727272727,
+      3.0326,
+      114
+    ],
+    [
+      2,
+      6,
+      1.130952380952381,
+      4.1054,
+      204
+    ],
+    [
+      3,
+      15,
+      1.171875,
+      3.7769,
+      209
+    ],
+    [
+      4,
+      9,
+      1.1904761904761905,
+      3.7381,
+      218
+    ]
+  ],
+  "rank1_top5": [
+    [
+      "PRP.new",
+      6
+    ],
+    [
+      "PER.hear",
+      3
+    ],
+    [
+      "FND.ahistorical",
+      2
+    ],
+    [
+      "ACT.create",
+      1
+    ],
+    [
+      "LOG.effect",
+      1
+    ]
+  ],
+  "theta_diverged": false,
+  "v105_out_dir": "/tmp/v12_m3_smoke_small_seed0"
+}

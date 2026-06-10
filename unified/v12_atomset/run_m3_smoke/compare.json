@@ -1,0 +1,258 @@
+{
+  "control_off_vs_m2": {
+    "all_bit_identical": true,
+    "any_diff": false,
+    "files": {
+      "per_subject": {
+        "ok": true,
+        "n_rows": 25,
+        "n_cols": 152,
+        "n_mismatch_cols": 0,
+        "max_diff_overall": 0.0
+      },
+      "link_life": {
+        "ok": true,
+        "n_rows": 104987,
+        "n_cols": 8,
+        "n_mismatch_cols": 0,
+        "max_diff_overall": 0.0
+      },
+      "link_snap": {
+        "ok": true,
+        "n_rows": 9328,
+        "n_cols": 4,
+        "n_mismatch_cols": 0,
+        "max_diff_overall": 0.0
+      },
+      "label_member": {
+        "ok": true,
+        "n_rows": 28,
+        "n_cols": 6,
+        "n_mismatch_cols": 0,
+        "max_diff_overall": 0.0
+      },
+      "audit_event": {
+        "ok": true,
+        "n_rows": 119,
+        "n_cols": 15,
+        "n_mismatch_cols": 0,
+        "max_diff_overall": 0.0
+      },
+      "audit_subj": {
+        "ok": true,
+        "n_rows": 25,
+        "n_cols": 14,
+        "n_mismatch_cols": 0,
+        "max_diff_overall": 0.0
+      }
+    }
+  },
+  "effect_small_vs_off": {
+    "all_bit_identical": false,
+    "any_diff": true,
+    "files": {
+      "per_subject": {
+        "ok": false,
+        "shape_mismatch": true,
+        "shape1": [
+          25,
+          152
+        ],
+        "shape2": [
+          16,
+          152
+        ],
+        "reason": "shape mismatch: (25, 152) vs (16, 152)"
+      },
+      "link_life": {
+        "ok": false,
+        "shape_mismatch": true,
+        "shape1": [
+          104987,
+          8
+        ],
+        "shape2": [
+          104971,
+          8
+        ],
+        "reason": "shape mismatch: (104987, 8) vs (104971, 8)"
+      },
+      "link_snap": {
+        "ok": false,
+        "shape_mismatch": true,
+        "shape1": [
+          9328,
+          4
+        ],
+        "shape2": [
+          9318,
+          4
+        ],
+        "reason": "shape mismatch: (9328, 4) vs (9318, 4)"
+      },
+      "label_member": {
+        "ok": false,
+        "shape_mismatch": true,
+        "shape1": [
+          28,
+          6
+        ],
+        "shape2": [
+          25,
+          6
+        ],
+        "reason": "shape mismatch: (28, 6) vs (25, 6)"
+      },
+      "audit_event": {
+        "ok": false,
+        "shape_mismatch": true,
+        "shape1": [
+          119,
+          15
+        ],
+        "shape2": [
+          77,
+          15
+        ],
+        "reason": "shape mismatch: (119, 15) vs (77, 15)"
+      },
+      "audit_subj": {
+        "ok": false,
+        "shape_mismatch": true,
+        "shape1": [
+          25,
+          14
+        ],
+        "shape2": [
+          16,
+          14
+        ],
+        "reason": "shape mismatch: (25, 14) vs (16, 14)"
+      }
+    }
+  },
+  "effect_medium_vs_off": {
+    "all_bit_identical": false,
+    "any_diff": true,
+    "files": {
+      "per_subject": {
+        "ok": false,
+        "shape_mismatch": true,
+        "shape1": [
+          25,
+          152
+        ],
+        "shape2": [
+          18,
+          152
+        ],
+        "reason": "shape mismatch: (25, 152) vs (18, 152)"
+      },
+      "link_life": {
+        "ok": false,
+        "shape_mismatch": true,
+        "shape1": [
+          104987,
+          8
+        ],
+        "shape2": [
+          104811,
+          8
+        ],
+        "reason": "shape mismatch: (104987, 8) vs (104811, 8)"
+      },
+      "link_snap": {
+        "ok": false,
+        "shape_mismatch": true,
+        "shape1": [
+          9328,
+          4
+        ],
+        "shape2": [
+          9208,
+          4
+        ],
+        "reason": "shape mismatch: (9328, 4) vs (9208, 4)"
+      },
+      "label_member": {
+        "ok": false,
+        "shape_mismatch": true,
+        "shape1": [
+          28,
+          6
+        ],
+        "shape2": [
+          29,
+          6
+        ],
+        "reason": "shape mismatch: (28, 6) vs (29, 6)"
+      },
+      "audit_event": {
+        "ok": false,
+        "shape_mismatch": true,
+        "shape1": [
+          119,
+          15
+        ],
+        "shape2": [
+          76,
+          15
+        ],
+        "reason": "shape mismatch: (119, 15) vs (76, 15)"
+      },
+      "audit_subj": {
+        "ok": false,
+        "shape_mismatch": true,
+        "shape1": [
+          25,
+          14
+        ],
+        "shape2": [
+          18,
+          14
+        ],
+        "reason": "shape mismatch: (25, 14) vs (18, 14)"
+      }
+    }
+  },
+  "instrumentation": {
+    "off": {
+      "theta_diverged": false,
+      "gain": 0.0,
+      "max_atomset_factor": 1.0,
+      "labels_factor_gt1": 0,
+      "windows_with_active_factor": 0,
+      "torque_total_sum": 16.4703,
+      "bonus_max": 0.3837,
+      "duration_sec": 721.6
+    },
+    "small": {
+      "theta_diverged": false,
+      "gain": 0.5,
+      "max_atomset_factor": 1.1905,
+      "labels_factor_gt1": 9,
+      "windows_with_active_factor": 4,
+      "torque_total_sum": 18.4282,
+      "bonus_max": 0.381,
+      "duration_sec": 711.1
+    },
+    "medium": {
+      "theta_diverged": false,
+      "gain": 1.0,
+      "max_atomset_factor": 1.3837,
+      "labels_factor_gt1": 11,
+      "windows_with_active_factor": 4,
+      "torque_total_sum": 18.6334,
+      "bonus_max": 0.3837,
+      "duration_sec": 714.1
+    }
+  },
+  "torque_total_monotonic": true,
+  "verdict": {
+    "control_off_eq_m2": true,
+    "effect_small": true,
+    "effect_medium": true,
+    "no_divergence": true,
+    "m3_smoke_healthy": true
+  }
+}
