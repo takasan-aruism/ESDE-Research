@@ -37,12 +37,15 @@ for p in ['primitive/v910','primitive/v911','primitive/v913','primitive/v914','p
     pp = str(REPO / p)
     if pp not in sys.path: sys.path.insert(0, pp)
 
-SEED = 0; MATURATION_WINDOWS = 2; TRACKING_WINDOWS = 3; WINDOW_STEPS = 500; N_PER_CHUNK = 10
+MATURATION_WINDOWS = 2; WINDOW_STEPS = 500; N_PER_CHUNK = 10
+# argv: CONDITION [SEED] [TRACKING_WINDOWS]
+CONDITION = sys.argv[1] if len(sys.argv) > 1 else 'A'
+SEED = int(sys.argv[2]) if len(sys.argv) > 2 else 0
+TRACKING_WINDOWS = int(sys.argv[3]) if len(sys.argv) > 3 else 15
 
 # 条件 (INPUT_ON, EXP_MODE)
 COND_MAP = {'A': (False, 'off'), 'B': (True, 'off'), 'C': (False, 'on'),
             'D': (True, 'on'), 'E': (True, 'shuffle')}
-CONDITION = sys.argv[1] if len(sys.argv) > 1 else 'A'
 INPUT_ON, EXP_MODE = COND_MAP[CONDITION]
 
 # 経験パラメータ (post-process 確定)
@@ -58,9 +61,9 @@ OTHER_AXES = ['fam_mean', 'n_partners', 'att_entropy']
 AXES = SELF_AXES + OTHER_AXES
 
 ATOM_CENTROIDS_PATH = REPO / 'unified/v1103/outputs/main/atom_centroids_48d_normalized.parquet'
-OUT_DIR = REPO / 'unified/v12_atomset/run_m5_substrate' / CONDITION
+OUT_DIR = REPO / 'unified/v12_atomset/run_m5_substrate' / CONDITION / f'seed{SEED}'
 OUT_DIR.mkdir(parents=True, exist_ok=True)
-V105_OUT = Path(f'/tmp/v12_m5_sub_{CONDITION}_seed0'); V105_OUT.mkdir(parents=True, exist_ok=True)
+V105_OUT = Path(f'/tmp/v12_m5_sub_{CONDITION}_seed{SEED}'); V105_OUT.mkdir(parents=True, exist_ok=True)
 
 H = {'vl': None, 'cog': None, 'engine': None, 'alpha_mgr': None, 'beta_mgr': None,
      'per_step': 0, 'window': 0, 'last_input_window': -999,
@@ -337,7 +340,7 @@ def main():
     t0 = time.time()
     try:
         v105mr.run(seed=SEED, maturation_windows=MATURATION_WINDOWS, tracking_windows=TRACKING_WINDOWS,
-                   window_steps=WINDOW_STEPS, tag=f'v12_m5_sub_{CONDITION}_seed0')
+                   window_steps=WINDOW_STEPS, tag=f'v12_m5_sub_{CONDITION}_seed{SEED}')
     finally:
         os.chdir(cwd)
     dt = time.time() - t0
