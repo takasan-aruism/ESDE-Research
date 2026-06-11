@@ -6,9 +6,11 @@
 `developmental/v101/diag_v101_main/ingestion/ingestion_events_seed0.csv`、`m4_first_divergence` の per-CID tag。
 再現器: `experience_computability_audit.py`(新 run を回さず既存ログのみ読む)。
 
+> **⚠️ Rev1 訂正済(2026-06-11、Taka/Web Claude 指摘)。** 下記 §0〜§5 は **Rev1=smoke seed0 のみ + ingestion(完食)チャネルだけ** を見た判定で、「出会い系は 7%・枯渇・主柱になれない」は **二重の誤り**。本番 24 seeds + 正しいチャネル(E3_contact)で取り直した結論は **§6 (Rev2)** にある。要点: **出会い系(E3_contact)は全 CID の ~84% で σ 定義可能 = 自己系と並ぶ柱になれる。** Rev1 の格下げは撤回。
+
 ---
 
-## 0. 結論(先に・正直に)
+## 0. 結論(先に・正直に)【Rev1=要訂正、§6 参照】
 
 | 確認項目 | 自己系 (pulse/α/β/c_conv) | 出会い系 (ingestion/contact) |
 |---|---|---|
@@ -99,8 +101,55 @@ ingestion             155       55       30       39       16   ← 出会い系
 5. **出会い系を入れるなら partner を記帳に追加**(v107 event 表は partner を落としている。v101 observer/ghost を join するか M5 で記帳)。
 6. **検証は新 run 前に post-process で先行可能**: 自己系の z 分布・一致率トラジェクトリは**既存 v107 `*_pre` 列だけで試算でき**、頻度漏れ(§3)が起きるかを安く先に見られる。
 
+---
+
+## 6. Rev2 — 本番スケール再監査(Taka/Web Claude 指摘を受け、出会い系の格下げを撤回)
+
+日付: 2026-06-11 / トリガ: Taka/Web Claude「出会い系の『7%・枯渇』は smoke が短いせいで本来構造でない。本番では出会い(特に摂食的接触)が主流」。
+再計算: 本番 24 seeds(window 500 × tracking 50 = 25,000 step、N=5,224)の既存ログ。再現器に `--rev2` を追加。
+
+### 6.1 Rev1 の誤りは二重(率直に)
+1. **seed0 一本で判定した**(§1 は 1 seed)。本番は 24 seeds 集計で見るべき。
+2. **出会い系を「ingestion(完食)」一チャネルに矮小化した**。実際は **出会い系に 2 チャネル**ある:
+   - **E3_contact(出会った=物理リンク共有の初回接触)= 100,432 件/24seeds、dense。** これが「出会い」。`primitive/v917/diag_v917_main/selfread/other_records_seed*.csv`(cid_id, other_cid_id)。
+   - **ingestion(食べた=完食)= 3,588 件、sparse。E3 接触の 7.4% しか完食に至らない。** Rev1 が誤って唯一の出会いと見なしたチャネル。
+   - (出典: `primitive/v917/v917_stage4_result.md:46,242`、`developmental/v101/v101_minimal_ingestion_result.md:109,203`)
+
+### 6.2 本番 24 seeds 実測 — σ 定義可能(per-CID ≥3 サンプル)率
+| チャネル | σ 定義可能 CID 率 | per-CID 分布 | 判定 |
+|---|---|---|---|
+| **E3_contact(出会い、正しいチャネル)** | **4,398/5,124 = 85.8%(接触 CID 中)≈ 全 CID の 84%** | contacts/CID: min1 / **中央値6** / 平均19.6 / max159、distinct partner も同数 | **柱になれる** |
+| ingestion(完食、Rev1 の誤チャネル) | 499/5,224 = **9.6%** | sparse | 従(完食は稀) |
+| pulse(自己) | **5,224/5,224 = 100%** | 全 CID ~500 | 柱 |
+| α/β/c_conv(自己の副) | 39〜68% | 中疎 | 補助 |
+
+→ **出会い系(E3_contact)は全 CID の ~84% で平均・分散が取れる。自己系と並ぶ「両方を柱に」が本番では成立。Rev1 の「出会いは主柱になれない・自己系を主柱に」は撤回。** distinct partner 数 = contact 数(other_records は unique pair 初回接触を記録)なので、**per-CID の partner-距離分布が 84% の CID で定義可能** = 出会い系特徴度が大半の CID で計算できる。
+
+### 6.3 なぜ smoke で「枯渇」に見えたか(tracking 長依存)
+`v917_stage4_result.md:242`: **片方向発火(摂食的接触)率 = smoke(tracking10) 25.6% → 本番(tracking50) 77.0%**(ghost が時間で累積し片方向接触が主流化)。smoke 5 window は **出会いが始まる前の最初期**。→ **per-CID 蓄積を smoke で見て「枯渇」と判定してはいけない**(Taka 指摘を採用、規律化)。Taka の従来整理「ESDE の主流は対話でなく摂食」と整合。
+
+### 6.4 zero-variance 安全策(本番でも必要、ただし意味が変わる)
+- 本番では「大半の CID でデータ不足」ではない(84〜100% で σ 定義可能)。**残る問題は『立ち上がり』のみ**: どの CID も最初の 1〜2 接触/pulse は履歴ゼロ、E3_contact <3 の 14% の CID、α/β/c_conv の疎な部分。
+- → **「記録が浅いうちは特徴度=0(一致率を動かさない)」は両系で必要**(Taka 指摘どおり、枯渇対策でなく最初期対策として)。σ floor・z clip・Welford pre-event も据え置き。
+
+### 6.5 §3「頻度の裏口」リスクを本番で再評価(撤回せず、むしろ強化)
+- **自己(pulse)**: 全 CID が ~500 回更新で均一 → **CID 間の頻度差バイアスは小**。だが 500 回の累乗で **magnitude 暴走**(全体一様)→ bound 必須。
+- **出会い(E3_contact)**: per-CID 1〜159 と**広い**(max/中央値 ≈ 26 倍)→ `×(1+z)` を接触数だけ掛けると **159 回更新の CID が 6 回の CID を大きく圧倒 = M4 の near-universal が「接触頻度」経由で再発**。
+- → **§3 対策(典型イベント=×1・外れだけ動く / 閾値更新 / log 空間 / 符号付き平均回帰)は本番でも必須、特に出会い系で重要。** これは Rev1 から不変、むしろ本番の広い接触分布で深刻度が増す。
+
+### 6.6 計算可能性 確定(本番)
+1. **per-CID 過去蓄積**: 自己 ○(100%)、**出会い ○(84%、E3_contact)**。Rev1 の出会い × は誤り。
+2. **特徴度 \|x−μ\|/σ**: 両系で σ 定義可能(立ち上がり対策のみ要)。「n<k で特徴度=0」採用前提。
+3. **更新・保持**: 自明。本番出会い系での §3 calibration が最重要設計点。
+4. **pre-event snapshot**: 既存。自己=v107 `*_pre`、出会い=partner は ghost(host-loss 時点で凍結)+ `bidirectional_e3_log` に接触時点の partner 状態(ncore/phase/s_avg/r_core/q/c)が記録済 → **partner ベクトルは接触時点 snapshot で再構築可**。
+
+### 6.7 留保(M5 設計判断へ)
+- **E3_contact を live で M5 に流せるか**: 接触検知は engine 内に在り(v105 は `v917_a_observer`=`CidSelfBuffer.other_records` を import 済、E3 onset が leakage を駆動)、partner(`other_cid_id`)も記録される。**post-hoc では完全に取得済**、live 配線は要確認だが壁は低い。
+- **出会い event の定義**: 「出会い」= E3_contact(接触、片方向=摂食的接触を含む)を採るのが Taka framing と本番データに整合。ingestion(完食)はその稀な部分集合。**どちらを match-rate 更新トリガにするかは設計判断**(接触=dense で個性化圧、完食=rare で強い意味)。
+- **次アクション**: 自己系 z 分布・一致率トラジェクトリ・§3 頻度漏れの試算は **既存 v107 `*_pre` + v917 `other_records` だけで新 run なしに post-process 先行可能**。M5 実装は Web Claude/Taka 判断後。
+
 ## ファイル
-- `experience_computability_audit.py`(再現器、新 run なし)/ `experience_computability_audit.md`(本書)
+- `experience_computability_audit.py`(再現器、`--rev2` で本番 24 seeds 集計、新 run なし)/ `experience_computability_audit.md`(本書)
 - 参照: `projection_audit_report.md`(§B match 定義)、`m4_report.md`(near-universal)、`m2_smoke.py`(現 atomset_bonus 機構)
 - 実コード: `developmental/v105/v105_memory_readout.py:762`(`attempt_ingestion`)/`:521`(`_ingestion_log`)、
   `developmental/v106/v106_event_trajectory.py:235`(`build_event_cid_vector`)、`developmental/v107/v107_event_aggregator.py`(`*_pre`)
