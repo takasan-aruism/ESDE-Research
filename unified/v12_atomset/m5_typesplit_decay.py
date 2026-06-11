@@ -125,18 +125,24 @@ def _enc_dist(ev, state, etype):
     return out[valid]
 
 
-def robust_f_per_axis(df, axes):
-    """per (cid, axis) full-history robust_z = clip((val−med)/MAD, ±Z)。n<K_MIN は f=0。"""
+def robust_f_per_axis(df, axes, floor=SCALE_FLOOR, floor_rel=0.0, return_scale=False):
+    """per (cid, axis) full-history robust_z = clip((val−med)/max(MAD,floor_a), ±Z)。n<K_MIN は f=0。
+    floor_a = MAD 下限。floor_rel>0 なら軸ごと floor_a = floor_rel·(その軸の全体 MAD)
+    (各軸の固有スケールに比例＝低スケール軸を黙らせず clip 飽和だけ防ぐ)。else 絶対 floor。"""
     f = pd.DataFrame(index=df.index)
+    scale = {}
     for a in axes:
         med = df.groupby('cid')[a].transform('median')
         mad = df.groupby('cid')[a].transform(lambda x: np.median(np.abs(x - np.median(x))) * MAD_C)
         n = df.groupby('cid')[a].transform('size')
-        z = (df[a] - med) / mad.clip(lower=SCALE_FLOOR)
+        gm = float(np.median(np.abs(df[a] - np.median(df[a]))) * MAD_C)  # 全体 MAD
+        scale[a] = gm
+        floor_a = max(floor_rel * gm, SCALE_FLOOR) if floor_rel > 0 else floor
+        z = (df[a] - med) / mad.clip(lower=floor_a)
         z = z.clip(-Z_CLIP, Z_CLIP)
         z = z.where(n >= K_MIN, 0.0)
         f[a] = z
-    return f
+    return (f, scale) if return_scale else f
 
 
 def build_event_arrays(self_df, self_f, enc_df, enc_f):
@@ -181,8 +187,93 @@ def propagate(F, alpha, lam):
     return r, maxlog10, died
 
 
+def _build_arrays_with_floor(self_df, enc_df, floor=SCALE_FLOOR, floor_rel=0.0):
+    self_f = robust_f_per_axis(self_df, SELF_AXES, floor=floor, floor_rel=floor_rel)
+    enc_f = robust_f_per_axis(enc_df, OTHER_AXES, floor=floor, floor_rel=floor_rel)
+    return build_event_arrays(self_df, self_f, enc_df, enc_f)
+
+
+def _metrics(arrays, alpha, lam):
+    finals = []; swings = []; deaths = 0; stress = 0
+    for F in arrays.values():
+        r, mlog, died = propagate(F, alpha, lam)
+        swings.append(mlog)
+        if died or mlog > DEAD_LOG10:
+            deaths += 1
+        else:
+            finals.append(r)
+            if mlog > STRESS_LOG10:
+                stress += 1
+    n = len(arrays)
+    finals = np.array(finals) if finals else np.zeros((0, len(AXES)))
+    sw = np.array(swings, float); fsw = sw[np.isfinite(sw)]
+    out = dict(dead=deaths / n, stress=stress / n,
+               sw50=float(np.percentile(fsw, 50)) if len(fsw) else np.inf,
+               sw99=float(np.percentile(fsw, 99)) if len(fsw) else np.inf)
+    if len(finals) > 3:
+        logr = np.log10(np.clip(np.abs(finals), 1e-12, 1e12))
+        prof = logr - logr.mean(axis=1, keepdims=True)
+        out['diversity'] = float(prof.std(axis=0).mean())
+        dom = np.argmax(logr, axis=1)
+        counts = np.bincount(dom, minlength=len(AXES)) / len(dom)
+        out['dom_entropy'] = float(-np.sum([c * np.log2(c) for c in counts if c > 0]))
+        sl = logr[:, SELF_IDX].mean(1); ol = logr[:, OTHER_IDX].mean(1)
+        out['sep'] = float(pearsonr(sl, ol)[0]) if sl.std() > 0 and ol.std() > 0 else np.nan
+    else:
+        out.update(diversity=np.nan, dom_entropy=np.nan, sep=np.nan)
+    return out
+
+
+def main_floorsweep(seeds):
+    """MAD floor を sweep。裾(sw99/stress/dead)を潰しつつ個性(dom_entropy/diversity)を殺さない値を探す。
+    live 起点 α=0.5、λ∈{1.0,0.99} で測る。"""
+    print(f'=== M5 MAD floor sweep — seeds={seeds} (新 run なし、live 前の技術線) ===\n')
+    sps, eps = [], []
+    for seed in seeds:
+        st = load_state(seed)
+        sv = self_axis_values(st); sv['seed'] = seed
+        ev = encounter_axis_values(seed, st); ev['seed'] = seed
+        sps.append(sv); eps.append(ev)
+    self_df = pd.concat(sps, ignore_index=True)
+    enc_df = pd.concat(eps, ignore_index=True)
+    _, sscale = robust_f_per_axis(self_df, SELF_AXES, return_scale=True)
+    _, oscale = robust_f_per_axis(enc_df, OTHER_AXES, return_scale=True)
+    print('  値の全体 MAD (floor の目安): SELF ' +
+          ', '.join(f'{a}={sscale[a]:.3f}' for a in SELF_AXES))
+    print('                               OTHER ' +
+          ', '.join(f'{a}={oscale[a]:.3f}' for a in OTHER_AXES))
+    print(f'  self events={len(self_df)}, encounter={len(enc_df)}\n')
+
+    ALPHA = 0.5
+    grid = {}
+    # 軸ごと固有スケールに比例した floor (floor_rel · 全体 MAD)。低スケール軸を黙らせない。
+    RELS = [0.0, 1.0, 2.0, 5.0, 10.0, 20.0, 30.0, 50.0]
+    print('  per-axis 相対 floor (floor_rel · その軸の全体 MAD):')
+    print(f'{"rel":>6s} {"λ":>5s} {"dead%":>6s} {"stress%":>8s} {"sw_p50":>7s} {"sw_p99":>8s} '
+          f'{"divers":>7s} {"domEntr":>8s} {"sep":>6s}')
+    for rel in RELS:
+        arrays = _build_arrays_with_floor(self_df, enc_df, floor=SCALE_FLOOR, floor_rel=rel)
+        for lam in [1.0, 0.99]:
+            m = _metrics(arrays, ALPHA, lam)
+            grid[f'rel{rel}_l{lam}'] = dict(floor_rel=rel, alpha=ALPHA, lam=lam, **m)
+            tag = 'none' if rel == 0 else f'{rel:.0f}x'
+            print(f'{tag:>6s} {lam:>5.2f} {100*m["dead"]:>5.1f}% {100*m["stress"]:>7.1f}% '
+                  f'{m["sw50"]:>7.2f} {m["sw99"]:>8.2f} {m["diversity"]:>7.2f} '
+                  f'{m["dom_entropy"]:>8.2f} {m["sep"]:>6.2f}')
+    (OUT / 'mad_floor_sweep.json').write_text(json.dumps(
+        {'seeds': seeds, 'alpha': ALPHA, 'value_scale': {'SELF': sscale, 'OTHER': oscale},
+         'floor_rels': RELS, 'grid': grid}, indent=2, ensure_ascii=False))
+    print(f'\n保存: {OUT/"mad_floor_sweep.json"}')
+    print('  狙い: sw_p99 を θ 生存域 (低い) に、dom_entropy/divers は維持 (個性を殺さない)')
+    print('=== floor 当たり付け 完了 ===')
+
+
 def main():
-    seeds = [int(s) for s in sys.argv[1:]] if len(sys.argv) > 1 else list(range(24))
+    args = [a for a in sys.argv[1:] if not a.startswith('--')]
+    seeds = [int(s) for s in args] if args else list(range(24))
+    if '--floorsweep' in sys.argv:
+        main_floorsweep(seeds)
+        return
     print(f'=== M5 種類分け+衰退 post-process — seeds={seeds} (新 run なし) ===\n')
 
     sps, eps = [], []

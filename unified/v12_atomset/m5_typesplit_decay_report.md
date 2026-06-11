@@ -76,6 +76,38 @@ swing振幅 = 系列中の最大 log10(rate)。dead=rate>1e300(inf)、stress=rat
 - **次（Web Claude/Taka 判断）**: (a) MAD floor を上げた再 sweep を post-process で見るか / (b) この境界（α≤0.5, MAD floor 調整）で **live M5 hook に進み θ を実観測**するか。**Taka の「振らせて波及を見る」が主目的、記録が死ぬ域だけ把握**は post-process で達成（no-inf=α≤0.5、裾の主因=MAD floor）。
 - 計装前提（pre-event 凍結、種類分け）は満たし済み。**live はまだ入っていない。**
 
+---
+
+## 5. MAD floor 当たり付け（live 前の技術線、`--floorsweep`）
+
+裾の主因 = 低スケール SELF 軸が clip 飽和。値の全体 MAD（実測）:
+- SELF: lifespan **0.458** / n_core **0.000** / Q **0.009** / C **0.006**  ← Q/C/n_core はほぼ定数
+- OTHER: R_familiarity 0.673 / n_alphas 1.056 / n_observed 1.003  ← 健全
+
+**絶対 floor は低スケール軸（Q/C）を黙らせる**ので不可。**per-axis 相対 floor**（`floor_a = floor_rel × その軸の全体 MAD`）が正解。α=0.5 での sweep（24 seeds）:
+
+| floor_rel | sw_p99 (max log10 rate) | stress%(>1e6) | dom_entropy(個性) | diversity | dead% |
+|---|---|---|---|---|---|
+| none (1e-6) | 214 | 22.5% | 2.50 | 3.34 | 0% |
+| 1× | 174 | 18.3% | 2.54 | 2.87 | 0% |
+| 2× | 130 | 15.6% | 2.56 | 2.32 | 0% |
+| 5× | 70 | 11.2% | 2.57 | 1.64 | 0% |
+| **10×** | **40** | **8.0%** | **2.58** | 1.26 | 0% |
+| 20× | 23 | 5.2% | 2.57 | 0.96 | 0% |
+| 50× | 12 | 3.0% | 2.57 | 0.67 | 0% |
+
+### 読み・推奨
+- **per-axis 相対 floor は個性を殺さず裾を潰す**: dom_entropy は 5×〜50× で **2.57〜2.58（max 2.81 に近い）で平坦**＝floor を上げても「どの軸が伸びるか」の個性は保たれる（floor が消すのは clip 飽和ノイズ＝magnitude の偽裾だけ）。絶対 floor が低スケール軸を黙らせたのと対照的。
+- **裾は大きく改善**: sw_p99 が 214（10^214）→ 40（10×）→ 23（20×）と数十〜百桁減。stress% も 22%→8%（10×）。
+- **だが floor 単独では θ 安全域に届かない**: 50× でも sw_p99=12（10^12）。残る裾は構造由来（lifespan 単調増加 + 各 SELF 軸 ~500 回更新）で floor では消えない。**過度に floor を上げると Taka の「振らせて観察」用の揺れも消す**ので、floor は「clip 飽和の人工裾を消す最小限」に留める。
+- **当たり（推奨 1 値）: `floor_rel = 10×`**（per-axis MAD 下限 = その軸の全体 MAD の 10 倍）。dom_entropy ピーク 2.58、人工裾を 214→40 に圧縮、stress 22→8%、揺れは残す。**live で θ がすぐ死ぬなら 20×まで上げる余地（個性コストほぼゼロ）。**
+
+### live M5 設計（確定パラメータ）
+- 式 = **robust_z**（median/MAD・符号付き・clip Z=4）/ 種類分け（自己→SELF 軸・出会い→OTHER 軸）/ 衰退 λ=0.95〜0.99
+- **MAD floor = per-axis 相対 10×**（θ がすぐ死ぬなら 20×）
+- gain **α は θ 耐性で決める**: 0.5 以下から開始 → θ が死なない最大まで上げて波及観察（Taka「振らせて波及」）
+- θ を毎 window 監視（NaN/inf 即検知）。smoke first → pause（[[smoke-then-pause]]）
+
 ## ファイル
-- `m5_typesplit_decay.py` / `run_m5/typesplit_decay.json`
+- `m5_typesplit_decay.py`（`--floorsweep` で floor 当たり付け）/ `run_m5/typesplit_decay.json` / `run_m5/mad_floor_sweep.json`
 - 参照: `m5_formula_selection_report.md`（robust_z 選定・#7 露呈）、`experience_computability_audit.md` §6（チャネル）
