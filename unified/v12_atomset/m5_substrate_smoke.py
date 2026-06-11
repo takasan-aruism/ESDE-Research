@@ -171,12 +171,13 @@ def update_experience(cid, vals):
         rm = H['runmean'][cid][a]; n = H['seen_count'][cid][a]
         value = abs(v - rm) if n > 0 else 0.0
         buf = H['buf'][cid][a]
-        # pre-event 統計 (現 value を入れる前の buffer)
+        # pre-event 統計 (現 value を入れる前の buffer)。floor = max(FLOOR_REL×MAD, 絶対floor)
+        # = post-process と同じ per-axis 相対 floor (典型は f≈0、外れだけ動く＝slight・graded)
         if len(buf) >= K_MIN:
             arr = np.array(buf)
             med = np.median(arr); mad = np.median(np.abs(arr - med)) * MAD_C
-            gm = max(mad, 1e-9)  # 簡易 floor (live は全体 MAD 未知→相対 floor は後段)
-            f = float(np.clip((value - med) / max(mad, FLOOR_REL * 1e-3), -Z_CLIP, Z_CLIP))
+            scale = max(FLOOR_REL * mad, 1e-3)
+            f = float(np.clip((value - med) / scale, -Z_CLIP, Z_CLIP))
         else:
             f = 0.0
         # rate 更新 (decay then surprise)
@@ -193,9 +194,12 @@ def update_experience(cid, vals):
     return self_boost, other_boost
 
 
-def per_chunk():
+def per_window_experience():
+    """per-window で経験を更新+適用 (cog state は per-window 更新なので per-window が正しい粒度。
+    per-chunk だと同一値を 50×更新して rate が爆発する)。返り値: exp_E, exp_L の per-cid 台帳。"""
     vl = H['vl']; cog = H['cog']; eng = H['engine']
-    if vl is None or cog is None or eng is None: return
+    exp_E = defaultdict(float); exp_L = defaultdict(float)
+    if vl is None or cog is None or eng is None: return exp_E, exp_L
     cid_of_lid = getattr(cog, 'current_lid', {})
     # node→cid map (今 window 分)
     node2cid = {}
@@ -235,8 +239,9 @@ def per_chunk():
                 for nb in list(eng.state.neighbors(n))[:2]:
                     dL = min(G_L * ob, L_CAP)
                     eng.state.set_latent(n, nb, eng.state.get_latent(n, nb) + dL); dL_total += dL
-            H['chunk_exp_E'][cid] += dE_total
-            H['chunk_exp_L'][cid] += dL_total
+            exp_E[cid] += dE_total
+            exp_L[cid] += dL_total
+    return exp_E, exp_L
 
 
 def patch_vl():
@@ -245,8 +250,10 @@ def patch_vl():
 
     def hooked(self, state, window_count, islands=None, substrate=None):
         H['vl'] = self; H['window'] = int(window_count)
-        H['chunk_exp_E'] = defaultdict(float); H['chunk_exp_L'] = defaultdict(float)
         stats = _orig(self, state, window_count, islands, substrate)
+        # 経験を per-window で更新+適用 (SELF→E, OTHER→L)。台帳 exp_E/exp_L を受ける
+        exp_E, exp_L = per_window_experience()
+        H['chunk_exp_E'] = exp_E; H['chunk_exp_L'] = exp_L
         # 橋 INPUT (window 境界で、INPUT_ON かつ 所定 window)
         input_E = defaultdict(float)
         if INPUT_ON and window_count in INPUT_WINDOWS and H['engine'] is not None:
@@ -311,12 +318,6 @@ def setup_capture():
     _oe = V82Engine.__init__
     def ce(self, *a, **k):
         _oe(self, *a, **k); H['engine'] = self
-        if getattr(self, 'realizer', None) is not None:
-            _ors = self.realizer.step
-            def hrs(state):
-                _ors(state); H['per_step'] += 1
-                if H['per_step'] % N_PER_CHUNK == 0: per_chunk()
-            self.realizer.step = hrs
     V82Engine.__init__ = ce
 
 
