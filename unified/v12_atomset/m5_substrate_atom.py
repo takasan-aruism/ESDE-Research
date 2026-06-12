@@ -63,6 +63,7 @@ G_LINK = 0.004; L_CAP = 0.01   # link: 他者との latent L (絞る、E2 結合
 G_PERC = 0.3        # perception: cog.attention を per-atom でスケール (受け取り方→dynamics)
 G_GRAV = 0.3        # gravity: vl._gravity_factors を per-atom で (torque 同系・別係数)
 TF_HI_MULTI = 1.3   # multi: torque を弱めに
+G_FIELD = 1.0       # field: 文化が育った Atom 領域へ入力 addressing 重みを偏らせる (個体に書かない)
 
 SELF_AXES = ['lifespan', 'n_core', 'C']
 OTHER_AXES = ['fam_mean', 'n_partners', 'att_entropy']
@@ -141,8 +142,22 @@ def bridge_inject(atom_id):
     if vl is None or eng is None or atom_id not in ATOM_PHASE: return {}
     theme = ATOM_PHASE[atom_id]; lam = lam_dyn(vl)
     macro = set(getattr(vl, 'macro_nodes', set()))
-    w = {lid: (math.exp(-lam*cdist(lab['phase_sig'], theme)), list(lab['nodes']))
-         for lid, lab in vl.labels.items() if lid not in macro}
+    # field channel: 文化が育った Atom 領域へ addressing 重みを偏らせる (個体に書かない)
+    field_on = (CHANNEL == 'field' and EXP_MODE in ('on', 'shuffle'))
+    lid2cid = {}
+    if field_on:
+        for c, l in getattr(H['cog'], 'current_lid', {}).items():
+            if l is not None: lid2cid[l] = c
+    cae = H.get('cid_atom_eff', {})
+    w = {}
+    for lid, lab in vl.labels.items():
+        if lid in macro: continue
+        base = math.exp(-lam * cdist(lab['phase_sig'], theme))
+        if field_on:
+            c = lid2cid.get(lid); a = cae.get(c) if c is not None else None
+            ar = H['atom_rate'].get(a, 1.0) if a is not None else 1.0
+            base *= max(0.0, 1.0 + G_FIELD * STRENGTH * (ar - 1.0))  # 文化が育った領域に降りやすい
+        w[lid] = (base, list(lab['nodes']))
     if not w: return {}
     cands = []
     for lid in sorted(w, key=lambda l: -w[l][0])[:5]:
@@ -232,11 +247,15 @@ def per_atom_experience_and_apply():
             cids = [c for c, _, _ in living]; atoms = [cid_atom.get(c) for c in cids]
             perm = list(atoms); H['rng'].shuffle(perm)
             cid_atom = {c: p for c, p in zip(cids, perm)}
+        H['cid_atom_eff'] = cid_atom   # field/bridge が使う (shuffle 反映)
         eng = H['engine']; cog = H['cog']; vl = H['vl']
         for cid, lid, lab in living:
             a = cid_atom.get(cid)
             ar = H['atom_rate'].get(a, 1.0) if a is not None else 1.0
             e = ar - 1.0  # 経験の超過分
+            if CHANNEL == 'field':
+                # field: 個体には一切書かない。bridge_inject が世界(入力地形)を偏らせる
+                applied[cid] = (ar, 1.0); continue
             tf_g = lambda hi, g: float(1.0 + (hi - 1.0) * math.tanh(g * e))  # graded saturate
             app = 1.0
             nodes = [n for n in lab.get('nodes', []) if n in eng.state.alive_n]
@@ -268,6 +287,7 @@ def per_atom_experience_and_apply():
                         eng.state.set_latent(n, nb, eng.state.get_latent(n, nb) + min(0.5 * G_LINK * e, L_CAP))
             applied[cid] = (ar, app)
     else:
+        H['cid_atom_eff'] = dict(H['cid_atom'])
         for cid, lid, lab in living:
             a = H['cid_atom'].get(cid)
             applied[cid] = (H['atom_rate'].get(a, 1.0) if a is not None else 1.0, 1.0)
@@ -355,7 +375,8 @@ def setup_capture():
     V82Engine.__init__ = ce
 
 
-INPUT_WINDOWS = [MATURATION_WINDOWS, MATURATION_WINDOWS + 1]
+# 入力を tracking 中盤〜後半に分散 (field は文化が育ってから入力が降る必要がある、立ち上がり対策)
+INPUT_WINDOWS = [MATURATION_WINDOWS + k for k in (3, 6, 9, 12)]
 INPUT_ATOMS = ['PRP.new', 'PER.hear']
 
 
