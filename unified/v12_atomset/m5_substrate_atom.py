@@ -39,10 +39,12 @@ MATURATION_WINDOWS = 2; WINDOW_STEPS = 500
 CONDITION = sys.argv[1] if len(sys.argv) > 1 else 'A'
 SEED = int(sys.argv[2]) if len(sys.argv) > 2 else 0
 TRACKING_WINDOWS = int(sys.argv[3]) if len(sys.argv) > 3 else 15
-CHANNEL = sys.argv[4] if len(sys.argv) > 4 else 'torque'   # torque | lambda(fallback)
+# CHANNEL: 全部並行で撃つ (Taka)。torque/lambda/link/perception/gravity/multi
+CHANNEL = sys.argv[4] if len(sys.argv) > 4 else 'torque'
 
+# 入力なしで gate を測る: A=baseline, C=経験real, F=経験shuffle対照。B/D/E は入力込み(④用)。
 COND_MAP = {'A': (False, 'off'), 'B': (True, 'off'), 'C': (False, 'on'),
-            'D': (True, 'on'), 'E': (True, 'shuffle')}
+            'D': (True, 'on'), 'E': (True, 'shuffle'), 'F': (False, 'shuffle')}
 INPUT_ON, EXP_MODE = COND_MAP[CONDITION]
 
 # 経験パラメータ (per-cid-axis robust_z は流用、主体だけ atom へ集約)
@@ -53,17 +55,21 @@ ALPHA_ATOM = 0.5; DECAY_ATOM = 0.9
 # torque_factor 別チャネル (slight 限定: tanh で graded saturate、hard clip だと飽和して
 # 経験→効果の勾配が消え関門が判定不能になる)
 G_TORQUE = 0.1; TF_HI = 1.6
-# lambda fallback (知覚選択性: 出力励起の λ を per-atom で鋭く/緩く、θ 非経由)
-G_LAMBDA = 0.5
+# 各チャネルの gain (slight 限定)
+G_LAMBDA = 0.5      # lambda: 出力励起を per-atom 注意で重み (θ 非経由)
+G_LINK = 0.004; L_CAP = 0.01   # link: 他者との latent L (絞る、E2 結合の口)
+G_PERC = 0.3        # perception: cog.attention を per-atom でスケール (受け取り方→dynamics)
+G_GRAV = 0.3        # gravity: vl._gravity_factors を per-atom で (torque 同系・別係数)
+TF_HI_MULTI = 1.3   # multi: torque を弱めに
 
 SELF_AXES = ['lifespan', 'n_core', 'C']
 OTHER_AXES = ['fam_mean', 'n_partners', 'att_entropy']
 AXES = SELF_AXES + OTHER_AXES
 
 ATOM_CENTROIDS_PATH = REPO / 'unified/v1103/outputs/main/atom_centroids_48d_normalized.parquet'
-OUT_DIR = REPO / 'unified/v12_atomset/run_m5_atom' / CONDITION / f'seed{SEED}'
+OUT_DIR = REPO / 'unified/v12_atomset/run_m5_atom' / CHANNEL / CONDITION / f'seed{SEED}'
 OUT_DIR.mkdir(parents=True, exist_ok=True)
-V105_OUT = Path(f'/tmp/v12_m5_atom_{CONDITION}_seed{SEED}'); V105_OUT.mkdir(parents=True, exist_ok=True)
+V105_OUT = Path(f'/tmp/v12_m5_atom_{CHANNEL}_{CONDITION}_seed{SEED}'); V105_OUT.mkdir(parents=True, exist_ok=True)
 
 H = {'vl': None, 'cog': None, 'engine': None, 'window': 0, 'last_input_window': -999,
      'theta_diverged': False,
@@ -223,17 +229,39 @@ def per_atom_experience_and_apply():
             cids = [c for c, _, _ in living]; atoms = [cid_atom.get(c) for c in cids]
             perm = list(atoms); H['rng'].shuffle(perm)
             cid_atom = {c: p for c, p in zip(cids, perm)}
+        eng = H['engine']; cog = H['cog']; vl = H['vl']
         for cid, lid, lab in living:
             a = cid_atom.get(cid)
             ar = H['atom_rate'].get(a, 1.0) if a is not None else 1.0
-            if CHANNEL == 'torque':
-                # graded saturate: atom_rate 1..∞ を [1, TF_HI] へ滑らかに (hard clip 飽和回避)
-                tf = float(1.0 + (TF_HI - 1.0) * math.tanh(G_TORQUE * (ar - 1.0)))
-                lab['torque_factor'] = tf   # ← 物理値でなく係数 (毎 step torque をスケール)
-                applied[cid] = (ar, tf)
-            else:  # lambda fallback: per-atom 注意係数 (θ 非経由、出力読取の λ を鋭く/緩く)
-                lab['atom_attn'] = float(1.0 + G_LAMBDA * (ar - 1.0))
-                applied[cid] = (ar, lab['atom_attn'])
+            e = ar - 1.0  # 経験の超過分
+            tf_g = lambda hi, g: float(1.0 + (hi - 1.0) * math.tanh(g * e))  # graded saturate
+            app = 1.0
+            nodes = [n for n in lab.get('nodes', []) if n in eng.state.alive_n]
+            if CHANNEL == 'torque':                    # (A) 力学: torque 係数 (θ via torque)
+                app = tf_g(TF_HI, G_TORQUE); lab['torque_factor'] = app
+            elif CHANNEL == 'lambda':                  # (B) 出力スケール (θ 非経由・読取)
+                app = 1.0 + G_LAMBDA * e; lab['atom_attn'] = app
+            elif CHANNEL == 'link':                    # (E2) 結合: 他者との latent L (値側)
+                for n in nodes:
+                    for nb in list(eng.state.neighbors(n))[:2]:
+                        eng.state.set_latent(n, nb, eng.state.get_latent(n, nb) + min(G_LINK * e, L_CAP))
+                app = 1.0 + min(G_LINK * e, L_CAP)
+            elif CHANNEL == 'perception':              # (う) 受け取り方: cog.attention をスケール
+                att = getattr(cog, 'attention', {}).get(cid)
+                if att:
+                    sc = 1.0 + G_PERC * math.tanh(e)
+                    for k in list(att.keys()): att[k] *= sc
+                    app = sc
+            elif CHANNEL == 'gravity':                 # (E3) gravity_factor (torque 同系・別係数)
+                gf = getattr(vl, '_gravity_factors', None)
+                if gf is not None:
+                    app = tf_g(TF_HI, G_GRAV); gf[lid] = gf.get(lid, 1.0) * app
+            elif CHANNEL == 'multi':                   # (E1) 合成: torque 弱 + link 弱
+                app = tf_g(TF_HI_MULTI, G_TORQUE); lab['torque_factor'] = app
+                for n in nodes:
+                    for nb in list(eng.state.neighbors(n))[:2]:
+                        eng.state.set_latent(n, nb, eng.state.get_latent(n, nb) + min(0.5 * G_LINK * e, L_CAP))
+            applied[cid] = (ar, app)
     else:
         for cid, lid, lab in living:
             a = H['cid_atom'].get(cid)
