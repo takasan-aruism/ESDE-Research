@@ -50,8 +50,9 @@ Z_CLIP = 4.0; MAD_C = 1.4826; FLOOR_REL = 10.0; DECAY_LAM = 0.97; ALPHA_EXP = 0.
 BUF = 50; K_MIN = 3
 # per-Atom rate 集約 (additive standing, 有界)
 ALPHA_ATOM = 0.5; DECAY_ATOM = 0.9
-# torque_factor 別チャネル (slight 限定: clip)
-G_TORQUE = 0.3; TF_LO = 0.6; TF_HI = 1.6
+# torque_factor 別チャネル (slight 限定: tanh で graded saturate、hard clip だと飽和して
+# 経験→効果の勾配が消え関門が判定不能になる)
+G_TORQUE = 0.1; TF_HI = 1.6
 # lambda fallback (知覚選択性: 出力励起の λ を per-atom で鋭く/緩く、θ 非経由)
 G_LAMBDA = 0.5
 
@@ -226,7 +227,8 @@ def per_atom_experience_and_apply():
             a = cid_atom.get(cid)
             ar = H['atom_rate'].get(a, 1.0) if a is not None else 1.0
             if CHANNEL == 'torque':
-                tf = float(np.clip(1.0 + G_TORQUE * (ar - 1.0), TF_LO, TF_HI))
+                # graded saturate: atom_rate 1..∞ を [1, TF_HI] へ滑らかに (hard clip 飽和回避)
+                tf = float(1.0 + (TF_HI - 1.0) * math.tanh(G_TORQUE * (ar - 1.0)))
                 lab['torque_factor'] = tf   # ← 物理値でなく係数 (毎 step torque をスケール)
                 applied[cid] = (ar, tf)
             else:  # lambda fallback: per-atom 注意係数 (θ 非経由、出力読取の λ を鋭く/緩く)
