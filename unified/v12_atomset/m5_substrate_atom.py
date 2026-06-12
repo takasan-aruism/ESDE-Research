@@ -41,6 +41,8 @@ SEED = int(sys.argv[2]) if len(sys.argv) > 2 else 0
 TRACKING_WINDOWS = int(sys.argv[3]) if len(sys.argv) > 3 else 15
 # CHANNEL: 全部並行で撃つ (Taka)。torque/lambda/link/perception/gravity/multi
 CHANNEL = sys.argv[4] if len(sys.argv) > 4 else 'torque'
+# STRENGTH: over-drive 倍率 (Taka: cid 特異性が出始める閾値を探す)。1=slight 起点
+STRENGTH = float(sys.argv[5]) if len(sys.argv) > 5 else 1.0
 
 # 入力なしで gate を測る: A=baseline, C=経験real, F=経験shuffle対照。B/D/E は入力込み(④用)。
 COND_MAP = {'A': (False, 'off'), 'B': (True, 'off'), 'C': (False, 'on'),
@@ -67,9 +69,10 @@ OTHER_AXES = ['fam_mean', 'n_partners', 'att_entropy']
 AXES = SELF_AXES + OTHER_AXES
 
 ATOM_CENTROIDS_PATH = REPO / 'unified/v1103/outputs/main/atom_centroids_48d_normalized.parquet'
-OUT_DIR = REPO / 'unified/v12_atomset/run_m5_atom' / CHANNEL / CONDITION / f'seed{SEED}'
+CHTAG = f'{CHANNEL}_st{STRENGTH:g}'
+OUT_DIR = REPO / 'unified/v12_atomset/run_m5_atom' / CHTAG / CONDITION / f'seed{SEED}'
 OUT_DIR.mkdir(parents=True, exist_ok=True)
-V105_OUT = Path(f'/tmp/v12_m5_atom_{CHANNEL}_{CONDITION}_seed{SEED}'); V105_OUT.mkdir(parents=True, exist_ok=True)
+V105_OUT = Path(f'/tmp/v12_m5_atom_{CHTAG}_{CONDITION}_seed{SEED}'); V105_OUT.mkdir(parents=True, exist_ok=True)
 
 H = {'vl': None, 'cog': None, 'engine': None, 'window': 0, 'last_input_window': -999,
      'theta_diverged': False,
@@ -238,14 +241,16 @@ def per_atom_experience_and_apply():
             app = 1.0
             nodes = [n for n in lab.get('nodes', []) if n in eng.state.alive_n]
             if CHANNEL == 'torque':                    # (A) 力学: torque 係数 (θ via torque)
-                app = tf_g(TF_HI, G_TORQUE); lab['torque_factor'] = app
+                # over-drive: STRENGTH で最大効果を拡大 (閾値探索)
+                app = float(1.0 + STRENGTH * (TF_HI - 1.0) * math.tanh(G_TORQUE * e)); lab['torque_factor'] = app
             elif CHANNEL == 'lambda':                  # (B) 出力スケール (θ 非経由・読取)
                 app = 1.0 + G_LAMBDA * e; lab['atom_attn'] = app
             elif CHANNEL == 'link':                    # (E2) 結合: 他者との latent L (値側)
+                dL = min(STRENGTH * G_LINK * e, STRENGTH * L_CAP)
                 for n in nodes:
                     for nb in list(eng.state.neighbors(n))[:2]:
-                        eng.state.set_latent(n, nb, eng.state.get_latent(n, nb) + min(G_LINK * e, L_CAP))
-                app = 1.0 + min(G_LINK * e, L_CAP)
+                        eng.state.set_latent(n, nb, eng.state.get_latent(n, nb) + dL)
+                app = 1.0 + dL
             elif CHANNEL == 'perception':              # (う) 受け取り方: cog.attention をスケール
                 att = getattr(cog, 'attention', {}).get(cid)
                 if att:
@@ -297,6 +302,13 @@ def patch_vl():
             cid_of_lid = getattr(H['cog'], 'current_lid', {}) if H['cog'] else {}
             lag = int(window_count) - H['last_input_window'] if H['last_input_window'] >= 0 else 999
             TWO = 2*math.pi
+            # node→cid map (接続相手 cid 特定用)
+            node2cid_out = {}
+            for _c, _l in cid_of_lid.items():
+                if _l is None: continue
+                _lab = self.labels.get(_l)
+                if _lab is None: continue
+                for _n in _lab.get('nodes', []): node2cid_out[_n] = _c
             for cid, lid in cid_of_lid.items():
                 if lid is None: continue
                 lab = self.labels.get(lid)
@@ -309,11 +321,19 @@ def patch_vl():
                 exc = float(np.sum(Ea * np.exp(-lam * d)))
                 if CHANNEL == 'lambda':
                     exc *= lab.get('atom_attn', 1.0)   # λ channel: 注意係数で出力を重み (θ 非経由)
+                # 接続グラフ metric (#4 Taka: link は誰と繋がるか): cid の次数 + 接続相手 cid 数
+                deg = 0; partner_cids = set()
+                for n in nodes:
+                    for nb in eng.state.neighbors(n):
+                        if nb in eng.state.alive_n:
+                            deg += 1; pc = node2cid_out.get(nb)
+                            if pc is not None and pc != cid: partner_cids.add(pc)
                 ar, app = applied.get(cid, (1.0, 1.0))
                 H['records'].append({
                     'condition': CONDITION, 'channel': CHANNEL, 'window': int(window_count), 'cid': int(cid),
                     'atom': H['cid_atom'].get(cid), 'exc': exc, 'atom_rate': float(ar), 'applied': float(app),
                     'input_E': float(input_E.get(cid, 0.0)), 'n_core': len(lab.get('nodes', [])),
+                    'degree': int(deg), 'n_partner_cids': int(len(partner_cids)),
                     'lag_since_input': lag, 'is_reflex_window': int(0 <= lag <= 1)})
             nan = bool(np.any(~np.isfinite(ta))) or (len(ta) and np.max(np.abs(ta)) > 1e6)
             if nan: H['theta_diverged'] = True
