@@ -73,6 +73,10 @@ DECAY_S = 0.05      # 強度: 衰退
 S_CAP = 5.0         # 強度: 緩い飽和(爆発防止、方向は潰さない)
 G_ALIGN = 0.5       # 出力/入力 への効き (slight から)
 SHARE_ALIGN = 0.0   # culture 共有: 初回 OFF (cid 固有性が出てから 0.02→0.1)
+# core channel (Taka: 凍結核 phase_sig を動かす。上書きでなくスイッチ=いつもと違う時だけ構造内で発現方向が動く)
+PHASE_THRESHOLD = 0.5   # f(特徴度)>これ の時だけ核が動く (いつもと違う時だけ)
+PHASE_DRIFT_RATE = 0.1  # 経験方向への1歩 (×STRENGTH)
+MAX_DRIFT = 0.5         # 誕生時 phase_sig から離れる上限 rad (本質方向保持、×STRENGTH)
 
 # confound 除去: lifespan を抜く (culture が lifespan を含むと survival 効果が循環)
 SELF_AXES = ['n_core', 'C']
@@ -95,6 +99,7 @@ H = {'vl': None, 'cog': None, 'engine': None, 'window': 0, 'last_input_window': 
      'atom_rate': defaultdict(lambda: 1.0),                   # ① 主体: atom->rate (per-Atom 文化)
      'cid_atom': {},                                          # cid->atomset_seed
      'cid_align_dir': {}, 'cid_align_strength': {}, 'cid_align_birth': {},  # align: 方向/強度/誕生時
+     'phase_birth': {},                                       # core: 誕生時 phase_sig (本質方向)
      'records': [], 'monitor': [], 'input_events': [],
      'rng': np.random.default_rng(12345 + SEED), 'born_window': {}}
 
@@ -173,6 +178,29 @@ def rank1_atom(label):
 
 def cdist(a, b):
     d = abs(a - b) % (2*math.pi); return min(d, 2*math.pi - d)
+
+
+def cdiff(a, b):
+    """符号付き circular 差 (a - b) ∈ (-π, π]。"""
+    d = (a - b) % (2*math.pi)
+    return d - 2*math.pi if d > math.pi else d
+
+
+def update_phase_sig(cid, label, f, target_avg):
+    """core: いつもと違う時(f>THRESHOLD)だけ、構造内(MAX_DRIFT)で phase_sig を経験方向へ動かす。
+    上書きでなくスイッチ。phase_sig は torque 標的+addressing 基準=動いた核を dynamics/入力が読む。"""
+    if f <= PHASE_THRESHOLD or target_avg is None:
+        return
+    if cid not in H['phase_birth']:
+        H['phase_birth'][cid] = label['phase_sig']
+    birth = H['phase_birth'][cid]; cur = label['phase_sig']
+    step = PHASE_DRIFT_RATE * STRENGTH * min(f, 4.0) * cdiff(target_avg, cur)  # 経験方向へ
+    new = cur + step
+    dev = cdiff(new, birth)
+    md = MAX_DRIFT * STRENGTH
+    if abs(dev) > md:                          # 本質方向を保つ (離れすぎない)
+        new = birth + math.copysign(md, dev)
+    label['phase_sig'] = new % (2 * math.pi)
 
 
 def lam_dyn(vl):
@@ -285,14 +313,20 @@ def per_atom_experience_and_apply():
         for n in lab.get('nodes', []): node2cid[n] = cid
         living.append((cid, lid, lab))
     H['cid_lid_node'] = node2cid
-    # per-cid boost (+ align: 方向/強度を更新)
-    boost = {}
+    # per-cid boost (+ align: 方向/強度更新, core: 核 drift の f/target を収集)
+    boost = {}; H['core_drive'] = {}
+    eng0 = H['engine']
     for cid, lid, lab in living:
         vals = cid_axis_values(cid, lab, cog)
         b, fstr = cid_boost(cid, vals)
         boost[cid] = b
         if CHANNEL == 'align':
             update_alignment(cid, cid_full_vec(cid, lab, cog), fstr)
+        elif CHANNEL == 'core' and eng0 is not None:
+            if cid not in H['phase_birth']: H['phase_birth'][cid] = lab.get('phase_sig', 0.0)
+            nodes = [n for n in lab.get('nodes', []) if n in eng0.state.alive_n]
+            ca = current_phase_avg(nodes, eng0.state.theta) if nodes else None
+            H['core_drive'][cid] = (fstr, ca)
     # ① atom 集約: atom -> mean boost of その atom の cid 群、standing 更新
     atom_boost = defaultdict(list)
     for cid, _, _ in living:
@@ -316,14 +350,28 @@ def per_atom_experience_and_apply():
             if EXP_MODE == 'shuffle':
                 idx = list(range(len(pairs))); H['rng'].shuffle(idx); pairs = [pairs[i] for i in idx]
             H['align_eff'] = {c: p for c, p in zip(ca, pairs)}
+        if CHANNEL == 'core':
+            # 核 drift: 経験(f,target)を cid に割当 (shuffle なら入替=「誰の経験か」の対照)、phase_sig を動かす
+            cc = [c for c, _, _ in living if c in H['core_drive']]
+            drv = [H['core_drive'][c] for c in cc]
+            if EXP_MODE == 'shuffle':
+                idx = list(range(len(drv))); H['rng'].shuffle(idx); drv = [drv[i] for i in idx]
+            lab_of = {c: l for c, _, l in living}
+            for c, (f, tg) in zip(cc, drv):
+                update_phase_sig(c, lab_of[c], f, tg)   # _orig(torque) の前=動いた核を torque/addressing が読む
         eng = H['engine']; cog = H['cog']; vl = H['vl']
         for cid, lid, lab in living:
             a = cid_atom.get(cid)
             ar = H['atom_rate'].get(a, 1.0) if a is not None else 1.0
             e = ar - 1.0  # 経験の超過分
-            if CHANNEL in ('field', 'align'):
-                # 個体には書かない。bridge(入力) と 出力励起 が dir/strength で効く(生きたループ)
-                applied[cid] = (H['cid_align_strength'].get(cid, 0.0) if CHANNEL == 'align' else ar, 1.0)
+            if CHANNEL in ('field', 'align', 'core'):
+                # 個体に物理は書かない。core は phase_sig を上で動かし済(torque/addressing が読む)
+                if CHANNEL == 'core':
+                    bd = H['phase_birth'].get(cid, lab.get('phase_sig', 0.0))
+                    drift = abs(cdiff(lab.get('phase_sig', 0.0), bd))  # 核が誕生時から動いた量
+                    applied[cid] = (drift, 1.0)
+                else:
+                    applied[cid] = (H['cid_align_strength'].get(cid, 0.0) if CHANNEL == 'align' else ar, 1.0)
                 continue
             tf_g = lambda hi, g: float(1.0 + (hi - 1.0) * math.tanh(g * e))  # graded saturate
             app = 1.0
