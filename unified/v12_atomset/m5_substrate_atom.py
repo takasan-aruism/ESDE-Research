@@ -59,19 +59,22 @@ ALPHA_ATOM = 0.5; DECAY_ATOM = 0.9
 G_TORQUE = 0.1; TF_HI = 1.6
 # 各チャネルの gain (slight 限定)
 G_LAMBDA = 0.5      # lambda: 出力励起を per-atom 注意で重み (θ 非経由)
-G_LINK = 0.004; L_CAP = 0.01   # link: 他者との latent L (絞る、E2 結合の口)
+G_LINK = 0.004; L_CAP = 0.01   # (旧 latent 版、no-op だった)
+G_LINK_S = 0.1                 # link 修正: 接続強度 S を文化で強化 (実際に graph を変える)
 G_PERC = 0.3        # perception: cog.attention を per-atom でスケール (受け取り方→dynamics)
 G_GRAV = 0.3        # gravity: vl._gravity_factors を per-atom で (torque 同系・別係数)
 TF_HI_MULTI = 1.3   # multi: torque を弱めに
 G_FIELD = 1.0       # field: 文化が育った Atom 領域へ入力 addressing 重みを偏らせる (個体に書かない)
 
-SELF_AXES = ['lifespan', 'n_core', 'C']
+# confound 除去: lifespan を抜く (culture が lifespan を含むと survival 効果が循環)
+SELF_AXES = ['n_core', 'C']
 OTHER_AXES = ['fam_mean', 'n_partners', 'att_entropy']
 AXES = SELF_AXES + OTHER_AXES
 
 ATOM_CENTROIDS_PATH = REPO / 'unified/v1103/outputs/main/atom_centroids_48d_normalized.parquet'
+RUNROOT = sys.argv[6] if len(sys.argv) > 6 else 'run_m5_atom'  # 出力分離用 (confound 除去版= run_m5_atom_v2)
 CHTAG = f'{CHANNEL}_st{STRENGTH:g}'
-OUT_DIR = REPO / 'unified/v12_atomset/run_m5_atom' / CHTAG / CONDITION / f'seed{SEED}'
+OUT_DIR = REPO / 'unified/v12_atomset' / RUNROOT / CHTAG / CONDITION / f'seed{SEED}'
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 V105_OUT = Path(f'/tmp/v12_m5_atom_{CHTAG}_{CONDITION}_seed{SEED}'); V105_OUT.mkdir(parents=True, exist_ok=True)
 
@@ -264,12 +267,17 @@ def per_atom_experience_and_apply():
                 app = float(1.0 + STRENGTH * (TF_HI - 1.0) * math.tanh(G_TORQUE * e)); lab['torque_factor'] = app
             elif CHANNEL == 'lambda':                  # (B) 出力スケール (θ 非経由・読取)
                 app = 1.0 + G_LAMBDA * e; lab['atom_attn'] = app
-            elif CHANNEL == 'link':                    # (E2) 結合: 他者との latent L (値側)
-                dL = min(STRENGTH * G_LINK * e, STRENGTH * L_CAP)
+            elif CHANNEL == 'link':                    # (E2) 結合: 接続強度 S を実際に強める(修正版)
+                # latent 微増(前回 no-op)でなく、cid の既存 link の S を文化で強化=接続を保持
+                boost = STRENGTH * G_LINK_S * math.tanh(e)
+                nlink = 0
                 for n in nodes:
-                    for nb in list(eng.state.neighbors(n))[:2]:
-                        eng.state.set_latent(n, nb, eng.state.get_latent(n, nb) + dL)
-                app = 1.0 + dL
+                    for nb in list(eng.state.neighbors(n)):
+                        if nb not in eng.state.alive_n: continue
+                        k = eng.state.key(n, nb)
+                        if k in eng.state.alive_l:
+                            eng.state.S[k] = min(1.0, eng.state.S[k] + boost); nlink += 1
+                app = 1.0 + boost
             elif CHANNEL == 'perception':              # (う) 受け取り方: cog.attention をスケール
                 att = getattr(cog, 'attention', {}).get(cid)
                 if att:
