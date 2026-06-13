@@ -65,6 +65,14 @@ G_PERC = 0.3        # perception: cog.attention を per-atom でスケール (�
 G_GRAV = 0.3        # gravity: vl._gravity_factors を per-atom で (torque 同系・別係数)
 TF_HI_MULTI = 1.3   # multi: torque を弱めに
 G_FIELD = 1.0       # field: 文化が育った Atom 領域へ入力 addressing 重みを偏らせる (個体に書かない)
+# align channel (Web Claude+GPT 第三の口): 方向(正規化)と強度(緩く飽和)を分離、入力にも効かす生きたループ
+ALPHA_DIR = 0.3     # 方向: 経験方向へ寄る量
+LEAK = 0.05         # 方向: 使わない向きは誕生時へ戻る(衰退)
+ALPHA_S = 0.3       # 強度: 特徴度で育つ量
+DECAY_S = 0.05      # 強度: 衰退
+S_CAP = 5.0         # 強度: 緩い飽和(爆発防止、方向は潰さない)
+G_ALIGN = 0.5       # 出力/入力 への効き (slight から)
+SHARE_ALIGN = 0.0   # culture 共有: 初回 OFF (cid 固有性が出てから 0.02→0.1)
 
 # confound 除去: lifespan を抜く (culture が lifespan を含むと survival 効果が循環)
 SELF_AXES = ['n_core', 'C']
@@ -86,10 +94,11 @@ H = {'vl': None, 'cog': None, 'engine': None, 'window': 0, 'last_input_window': 
      'seen': defaultdict(lambda: defaultdict(int)),
      'atom_rate': defaultdict(lambda: 1.0),                   # ① 主体: atom->rate (per-Atom 文化)
      'cid_atom': {},                                          # cid->atomset_seed
+     'cid_align_dir': {}, 'cid_align_strength': {}, 'cid_align_birth': {},  # align: 方向/強度/誕生時
      'records': [], 'monitor': [], 'input_events': [],
      'rng': np.random.default_rng(12345 + SEED), 'born_window': {}}
 
-ATOM_PHASE = None; ATOM_NAMES = None; ATOM_MATRIX = None
+ATOM_PHASE = None; ATOM_NAMES = None; ATOM_MATRIX = None; ATOM_INDEX = None
 
 
 def load_atoms():
@@ -105,7 +114,43 @@ def load_atoms():
     U, S, Vt = np.linalg.svd(Mc, full_matrices=False)
     pc = Mc @ Vt[:2].T
     ATOM_PHASE = {a: float(math.atan2(pc[i, 1], pc[i, 0]) % (2*math.pi)) for i, a in enumerate(ATOM_NAMES)}
-    print(f'  atoms: {len(ATOM_NAMES)} (phase placeholder + 48d for rank_1)')
+    global ATOM_INDEX
+    ATOM_INDEX = {a: i for i, a in enumerate(ATOM_NAMES)}
+    print(f'  atoms: {len(ATOM_NAMES)} (phase placeholder + 48d for rank_1/align)')
+
+
+def cid_full_vec(cid, label, cog):
+    """多軸素質 48d (2量でなく n_core/phase/C/fam/n_partners/att_entropy を semantic 領域へ)。"""
+    v = np.zeros(48, dtype=np.float32)
+    n = len(label.get('nodes', [])); ps = label.get('phase_sig', 0.0)
+    v[min(int(abs(ps)/math.pi*7), 6)] = 1.0          # temporal 0-6 (phase)
+    v[7 + min(max(n-2, 0), 5)] = 1.0                 # scale 7-12 (n_core)
+    def grad(val, lo, hi, base, nlev):
+        t = min(max((val-lo)/(hi-lo+1e-9), 0.0), 1.0); v[base + min(int(t*nlev), nlev-1)] = 1.0
+    try: grad(float(cog.get_familiarity_mean(cid)), -1, 1, 13, 5)   # epistemological 13-17
+    except Exception: pass
+    grad(float(getattr(cog, 'C', {}).get(cid, 0)), 0, 20, 18, 5)    # ontological 18-22 (C)
+    try: grad(float(cog.get_n_partners(cid)), 0, 10, 23, 5)         # interconnection 23-27
+    except Exception: pass
+    try: grad(float(cog.get_attention_entropy(cid)), 0, 3, 28, 4)   # resonance 28-31
+    except Exception: pass
+    return v
+
+
+def update_alignment(cid, cur_vec, f):
+    """方向(正規化、経験へ寄る+誕生時へ衰退)と強度(特徴度で育つ+緩く飽和)を別々に更新。"""
+    if cid not in H['cid_align_dir']:
+        bd = cur_vec / (np.linalg.norm(cur_vec) + 1e-9)
+        H['cid_align_dir'][cid] = bd.copy(); H['cid_align_birth'][cid] = bd.copy()
+        H['cid_align_strength'][cid] = 0.0
+    d = H['cid_align_dir'][cid]
+    exp_dir = cur_vec / (np.linalg.norm(cur_vec) + 1e-9)   # 経験が押す方向 = 現在状態
+    d = d + ALPHA_DIR * f * exp_dir
+    d = (1 - LEAK) * d + LEAK * H['cid_align_birth'][cid]  # 衰退: 使わない向きは誕生時へ
+    H['cid_align_dir'][cid] = d / (np.linalg.norm(d) + 1e-9)  # 方向のみ正規化
+    s = H['cid_align_strength'][cid]
+    s = (1 - DECAY_S) * s + ALPHA_S * abs(f)              # 強度: 特徴度で育つ
+    H['cid_align_strength'][cid] = min(s, S_CAP)          # 緩い飽和 (正規化で消さない)
 
 
 def rank1_atom(label):
@@ -145,13 +190,15 @@ def bridge_inject(atom_id):
     if vl is None or eng is None or atom_id not in ATOM_PHASE: return {}
     theme = ATOM_PHASE[atom_id]; lam = lam_dyn(vl)
     macro = set(getattr(vl, 'macro_nodes', set()))
-    # field channel: 文化が育った Atom 領域へ addressing 重みを偏らせる (個体に書かない)
+    # field/align channel: 入力 addressing 重みを文化で偏らせる (個体に物理は書かない)
     field_on = (CHANNEL == 'field' and EXP_MODE in ('on', 'shuffle'))
+    align_on = (CHANNEL == 'align' and EXP_MODE in ('on', 'shuffle'))
     lid2cid = {}
-    if field_on:
+    if field_on or align_on:
         for c, l in getattr(H['cog'], 'current_lid', {}).items():
             if l is not None: lid2cid[l] = c
-    cae = H.get('cid_atom_eff', {})
+    cae = H.get('cid_atom_eff', {}); ae = H.get('align_eff', {})
+    av_in = ATOM_MATRIX[ATOM_INDEX[atom_id]] if (align_on and atom_id in ATOM_INDEX) else None
     w = {}
     for lid, lab in vl.labels.items():
         if lid in macro: continue
@@ -160,6 +207,11 @@ def bridge_inject(atom_id):
             c = lid2cid.get(lid); a = cae.get(c) if c is not None else None
             ar = H['atom_rate'].get(a, 1.0) if a is not None else 1.0
             base *= max(0.0, 1.0 + G_FIELD * STRENGTH * (ar - 1.0))  # 文化が育った領域に降りやすい
+        elif align_on and av_in is not None:
+            c = lid2cid.get(lid); pr = ae.get(c)
+            if pr is not None:
+                d_eff, s_eff = pr
+                base *= max(0.0, 1.0 + G_ALIGN * STRENGTH * s_eff * float(d_eff @ av_in))  # 必須: 受け取り方が変わる
         w[lid] = (base, list(lab['nodes']))
     if not w: return {}
     cands = []
@@ -196,7 +248,8 @@ def cid_axis_values(cid, label, cog):
 
 
 def cid_boost(cid, vals):
-    """per-cid-axis robust_z → combined boost (この CID の経験強度)。"""
+    """per-cid-axis robust_z → (combined boost, mean|f| 特徴度強度)。"""
+    fmags = []
     for a in AXES:
         v = vals[a]; rm = H['runmean'][cid][a]; n = H['seen'][cid][a]
         value = abs(v - rm) if n > 0 else 0.0
@@ -207,9 +260,10 @@ def cid_boost(cid, vals):
         else:
             f = 0.0
         r = H['rate'][cid][a]; r = 1.0 + (r - 1.0) * DECAY_LAM; r = max(0.1, r * (1.0 + ALPHA_EXP * f))
-        H['rate'][cid][a] = r
+        H['rate'][cid][a] = r; fmags.append(abs(f))
         buf.append(value); H['seen'][cid][a] = n + 1; H['runmean'][cid][a] = rm + (v - rm) / (n + 1)
-    return max(0.0, float(np.mean([H['rate'][cid][a] - 1.0 for a in AXES])))
+    boost = max(0.0, float(np.mean([H['rate'][cid][a] - 1.0 for a in AXES])))
+    return boost, float(np.mean(fmags))
 
 
 def per_atom_experience_and_apply():
@@ -231,10 +285,14 @@ def per_atom_experience_and_apply():
         for n in lab.get('nodes', []): node2cid[n] = cid
         living.append((cid, lid, lab))
     H['cid_lid_node'] = node2cid
-    # per-cid boost
+    # per-cid boost (+ align: 方向/強度を更新)
     boost = {}
     for cid, lid, lab in living:
-        boost[cid] = cid_boost(cid, cid_axis_values(cid, lab, cog))
+        vals = cid_axis_values(cid, lab, cog)
+        b, fstr = cid_boost(cid, vals)
+        boost[cid] = b
+        if CHANNEL == 'align':
+            update_alignment(cid, cid_full_vec(cid, lab, cog), fstr)
     # ① atom 集約: atom -> mean boost of その atom の cid 群、standing 更新
     atom_boost = defaultdict(list)
     for cid, _, _ in living:
@@ -251,14 +309,22 @@ def per_atom_experience_and_apply():
             perm = list(atoms); H['rng'].shuffle(perm)
             cid_atom = {c: p for c, p in zip(cids, perm)}
         H['cid_atom_eff'] = cid_atom   # field/bridge が使う (shuffle 反映)
+        # align: 効果用 (dir,strength) を cid に割当 (shuffle なら cid 間で入替=対照)
+        if CHANNEL == 'align':
+            ca = [c for c, _, _ in living if c in H['cid_align_dir']]
+            pairs = [(H['cid_align_dir'][c], H['cid_align_strength'][c]) for c in ca]
+            if EXP_MODE == 'shuffle':
+                idx = list(range(len(pairs))); H['rng'].shuffle(idx); pairs = [pairs[i] for i in idx]
+            H['align_eff'] = {c: p for c, p in zip(ca, pairs)}
         eng = H['engine']; cog = H['cog']; vl = H['vl']
         for cid, lid, lab in living:
             a = cid_atom.get(cid)
             ar = H['atom_rate'].get(a, 1.0) if a is not None else 1.0
             e = ar - 1.0  # 経験の超過分
-            if CHANNEL == 'field':
-                # field: 個体には一切書かない。bridge_inject が世界(入力地形)を偏らせる
-                applied[cid] = (ar, 1.0); continue
+            if CHANNEL in ('field', 'align'):
+                # 個体には書かない。bridge(入力) と 出力励起 が dir/strength で効く(生きたループ)
+                applied[cid] = (H['cid_align_strength'].get(cid, 0.0) if CHANNEL == 'align' else ar, 1.0)
+                continue
             tf_g = lambda hi, g: float(1.0 + (hi - 1.0) * math.tanh(g * e))  # graded saturate
             app = 1.0
             nodes = [n for n in lab.get('nodes', []) if n in eng.state.alive_n]
@@ -295,7 +361,7 @@ def per_atom_experience_and_apply():
                         eng.state.set_latent(n, nb, eng.state.get_latent(n, nb) + min(0.5 * G_LINK * e, L_CAP))
             applied[cid] = (ar, app)
     else:
-        H['cid_atom_eff'] = dict(H['cid_atom'])
+        H['cid_atom_eff'] = dict(H['cid_atom']); H['align_eff'] = {}
         for cid, lid, lab in living:
             a = H['cid_atom'].get(cid)
             applied[cid] = (H['atom_rate'].get(a, 1.0) if a is not None else 1.0, 1.0)
@@ -349,6 +415,13 @@ def patch_vl():
                 exc = float(np.sum(Ea * np.exp(-lam * d)))
                 if CHANNEL == 'lambda':
                     exc *= lab.get('atom_attn', 1.0)   # λ channel: 注意係数で出力を重み (θ 非経由)
+                elif CHANNEL == 'align' and cid in H.get('align_eff', {}):
+                    d_eff, s_eff = H['align_eff'][cid]; atm = H['cid_atom'].get(cid)
+                    if atm in ATOM_INDEX:
+                        av = ATOM_MATRIX[ATOM_INDEX[atm]]
+                        bd = H['cid_align_birth'].get(cid)
+                        mbase = float(bd @ av) if bd is not None else 0.0
+                        exc *= max(0.1, 1.0 + G_ALIGN * STRENGTH * s_eff * (float(d_eff @ av) - mbase))
                 # 接続グラフ metric (#4 Taka: link は誰と繋がるか): cid の次数 + 接続相手 cid 数
                 deg = 0; partner_cids = set()
                 for n in nodes:
