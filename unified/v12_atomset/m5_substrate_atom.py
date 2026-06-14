@@ -85,6 +85,8 @@ AXES = SELF_AXES + OTHER_AXES
 
 ATOM_CENTROIDS_PATH = REPO / 'unified/v1103/outputs/main/atom_centroids_48d_normalized.parquet'
 RUNROOT = sys.argv[6] if len(sys.argv) > 6 else 'run_m5_atom'  # 出力分離用 (confound 除去版= run_m5_atom_v2)
+FINE = (len(sys.argv) > 7 and sys.argv[7] == 'fine')  # 10 step 単位の細かい軌跡記録 (Taka: window荒すぎ)
+FINE_EVERY = 10
 CHTAG = f'{CHANNEL}_st{STRENGTH:g}'
 OUT_DIR = REPO / 'unified/v12_atomset' / RUNROOT / CHTAG / CONDITION / f'seed{SEED}'
 OUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -100,7 +102,7 @@ H = {'vl': None, 'cog': None, 'engine': None, 'window': 0, 'last_input_window': 
      'cid_atom': {},                                          # cid->atomset_seed
      'cid_align_dir': {}, 'cid_align_strength': {}, 'cid_align_birth': {},  # align: 方向/強度/誕生時
      'phase_birth': {},                                       # core: 誕生時 phase_sig (本質方向)
-     'records': [], 'monitor': [], 'input_events': [],
+     'records': [], 'monitor': [], 'input_events': [], 'fine': [], 'gstep': 0,
      'rng': np.random.default_rng(12345 + SEED), 'born_window': {}}
 
 ATOM_PHASE = None; ATOM_NAMES = None; ATOM_MATRIX = None; ATOM_INDEX = None
@@ -500,8 +502,35 @@ def setup_capture():
     def cs(self, *a, **k): _os(self, *a, **k); H['cog'] = self
     SubjectLayer.__init__ = cs
     _oe = V82Engine.__init__
-    def ce(self, *a, **k): _oe(self, *a, **k); H['engine'] = self
+    def ce(self, *a, **k):
+        _oe(self, *a, **k); H['engine'] = self
+        if FINE and getattr(self, 'realizer', None) is not None:
+            _ors = self.realizer.step
+            def hrs(state):
+                _ors(state); H['gstep'] += 1
+                if H['gstep'] % FINE_EVERY == 0: record_fine()
+            self.realizer.step = hrs
     V82Engine.__init__ = ce
+
+
+def record_fine():
+    """10 step 単位で per-cid の位相(cpa)/構造/drift を記録 (window より細かい軌跡)。"""
+    vl = H['vl']; eng = H['engine']; cog = H['cog']
+    if vl is None or eng is None or cog is None: return
+    theta = eng.state.theta
+    for cid, lid in getattr(cog, 'current_lid', {}).items():
+        if lid is None: continue
+        lab = vl.labels.get(lid)
+        if lab is None: continue
+        nodes = [n for n in lab.get('nodes', []) if n in eng.state.alive_n]
+        if not nodes: continue
+        cpa = current_phase_avg(nodes, theta)
+        bd = H['phase_birth'].get(cid, lab.get('phase_sig', 0.0))
+        drift = abs(cdiff(lab.get('phase_sig', 0.0), bd))
+        deg = sum(1 for n in nodes for nb in eng.state.neighbors(n) if nb in eng.state.alive_n)
+        H['fine'].append({'gstep': H['gstep'], 'window': H['window'], 'cid': int(cid),
+                          'cpa': float(cpa) if cpa is not None else 0.0, 'phase_sig': float(lab.get('phase_sig', 0.0)),
+                          'drift': float(drift), 'n_nodes': len(nodes), 'degree': int(deg)})
 
 
 # 入力を tracking 中盤〜後半に分散 (field は文化が育ってから入力が降る必要がある、立ち上がり対策)
@@ -523,6 +552,9 @@ def main():
     dt = time.time() - t0
     rec = pd.DataFrame(H['records']); mon = pd.DataFrame(H['monitor'])
     rec.to_parquet(OUT_DIR / 'records.parquet'); mon.to_parquet(OUT_DIR / 'monitor.parquet')
+    if FINE and H['fine']:
+        pd.DataFrame(H['fine']).to_parquet(OUT_DIR / 'fine.parquet')
+        print(f'  fine(10step): {len(H["fine"])} 行 → fine.parquet')
     dl = da = 0.0
     if len(mon) >= 2:
         dl = (mon['links'].iloc[-1] - mon['links'].iloc[0]) / max(mon['links'].iloc[0], 1) * 100
