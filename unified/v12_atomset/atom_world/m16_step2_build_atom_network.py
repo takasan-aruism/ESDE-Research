@@ -36,7 +36,7 @@ warnings.filterwarnings('ignore')
 REPO = Path('/home/takasan/esde/ESDE-Research')
 SE_DIR = REPO / 'developmental/v107/outputs/main'
 SM_DIR = REPO / 'developmental/v106/outputs/main'
-OUT_DIR = REPO / 'atom_world'
+OUT_DIR = REPO / 'unified/v12_atomset/atom_world'
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 TOPK = 5

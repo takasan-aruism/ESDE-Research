@@ -20,7 +20,7 @@ warnings.filterwarnings('ignore')
 from scipy.stats import spearmanr
 
 REPO = Path('/home/takasan/esde/ESDE-Research')
-AW = REPO / 'atom_world'
+AW = REPO / 'unified/v12_atomset/atom_world'
 SM_DIR = REPO / 'developmental/v106/outputs/main'
 TOPK = 5
 
