@@ -35,12 +35,17 @@
 
 ## 2. Ghost 分離（#30、必須）
 
+**is_ghost の定義（監査で明確化）**: `t ≥ host_lost_step`＝**host 喪失後の死/ghost 相**。これは final_state=='ghost'（seed0 で 8 cid）だけでなく **reaped cid（183/228、全て host_lost を持つ＝host喪失→ghost相→除去）の死後相も含む**。hosted（37、host_lost なし）は全 alive。
+
 | 粒度 | ghost 行数 | ghost Δsim \|mean\| | ghost 切替率 | alive→ghost 遷移 Δsim \|mean\| (n) |
 |---|---|---|---|---|
 | step10 | 15,279 | 0.0020 | 0.57% | 0.0062 (4,429) |
 | event/pulse/window | 0 | — | — | — |
 
-→ 観察事実: **ghost 行を捉えたのは step10 のみ**（10step 固定 grid が死後も続くため。event/pulse/window は死後に行が無い＝event 駆動 or grid が死で終了）。step10 で **ghost は alive より平ら**（Δsim \|mean\| 0.0020 < alive 0.0039、切替率 0.57% < 4.7%）＝#30 の「Ghost-平ら行」が dump で見える。**alive→ghost 遷移の Δsim（0.0062）は steady alive（0.0039）より大きい**＝#30 の「死は大変化」が遷移行で見える。
+→ 観察事実: **ghost 相を捉えたのは step10 のみ**（10step 固定 grid が死後も続くため。event/pulse/window は host_lost より前で行が終わる＝監査3 で max(t)−host_lost が event −8/window −500 と確認、join バグでない）。
+
+→ **訂正（0ベース監査で発覚）**: 当初「ghost は平ら＝#30 の Ghost-平ら行」と書いたが**言い過ぎ**。実データで ghost の Δsim==0 は **0.0%**、非ゼロ中央 **0.0004 ≈ alive 0.0003**＝**ghost は flat-frozen ではない**。低い \|mean\|（0.0020 vs 0.0039）は「大跳ね（pulse 由来）が無い」ための裾の差。正確には **ghost は rank_1 atom が安定（切替 0.57% vs alive 4.7%）＋大跳ねが無い、但し小さく drift し続ける（凍結でない）**。#30 の「Δsim≈0 が固定で続く」は文字通りには成り立たない。
+→ **alive→ghost 遷移の Δsim（0.0062）は steady alive（0.0039）より大きい**＝#30 の「死は大変化」は遷移行で見える（こちらは成立）。
 
 ## 3. 大跳ね × 演算イベント対応（#30 の核、判定でなく対応 dump）
 
@@ -75,4 +80,10 @@
 
 ---
 
-*以上 課題#1（Code A、2026-06-16）。コスト: rank_1 4粒度全CID は ~4s で安い。Δsim 分布は細粒度ほど小(step10 0.004〜window 0.019)、切替率も(4.7%〜33.7%)。Ghost(#30): step10 のみ ghost 捕捉、ghost は alive より平ら(0.002 vs 0.004)、遷移は大(0.006)。大跳ね上位300: pulse がほぼ全行同居だが pulse 最頻の base-rate 留保あり(rate 正規化は未)、誕生/Q奪取/死は上位に目立たず。生死層化は \|mean\| ほぼ不変。閾値・判定・網は出さない。次は Web Claude/Taka。*
+## 7. 0ベース自己監査の結果（2026-06-16 追記）
+報告後に実装を 0 ベースで疑い直し、実データで 5 点検証:
+- ✓ bug なし: host_lost は cid 内定数 / 「ghost は step10 のみ」は実在(event/window は host_lost 前で終了) / diff は cid 毎 reset(跨ぎ汚染なし)。
+- 訂正1: 「ghost は平ら(#30 Ghost-平ら行)」は**言い過ぎ**→ ghost は flat-frozen でなく「atom 安定+大跳ね無し+小 drift」（§2 訂正済）。
+- 訂正2: is_ghost は host 喪失後相＝reaped(183) の死後相も含む（final_state=='ghost' 8 だけでない、§2 明確化済）。
+
+*以上 課題#1（Code A、2026-06-16）。コスト: rank_1 4粒度全CID は ~4s で安い。Δsim 分布は細粒度ほど小(step10 0.004〜window 0.019)、切替率も(4.7%〜33.7%)。Ghost(#30): step10 のみ ghost相 捕捉、ghost は atom 安定+大跳ね無しだが凍結でない(訂正)、遷移は大(0.006)。大跳ね上位300: pulse がほぼ全行同居だが pulse 最頻の base-rate 留保あり(rate 正規化は未)、誕生/Q奪取/死は上位に目立たず。生死層化は \|mean\| ほぼ不変。閾値・判定・網は出さない。次は Web Claude/Taka。*
