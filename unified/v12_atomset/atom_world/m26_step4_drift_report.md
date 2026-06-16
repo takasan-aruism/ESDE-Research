@@ -10,6 +10,9 @@
 
 ---
 
+## 【後日訂正・m29 懐疑監査】
+GATE **E「main↔sim_matrix共起 負相関」は cross-builder 交絡**（edges=build_step10、cooc=sim_matrix の build_cid_vector、run-end でも membership 0.97/5 しか重ならない）＝「再描画でない」の負相関は builder 差込み。一方 **A/B/C（Main↔ctrlA/ctrlB/rare↔common）は全て build_step10 内で交絡なし＝核心（Rfam≈均等≈shuffle、C 疎で退化）は保持**。ctrlB shuffle は per-(event,path) 内で正しい（m29 監査D）。
+
 ## 0. 一文（観察事実）
 
 target の使い方を「均等」から「event 後の drift で重み付け／選別」に替え（辺ロジック不変）、対照 A（均等）/B（drift を target 間 shuffle）込みで 24 seed 形成（物理ゼロ）。drift 量は **C（v1 指示、|Δ|>0 が 1% と疎）** と **Rfam（Code A 追加、69% と密、v108 整合）**。GATE 観察: **Rfam は Main≈ctrlA(均等,0.93-0.97)≈ctrlB(shuffle,0.94-0.97)＝drift 重み付けが均等とも shuffle とも区別されない**。**C は ctrlA と離れる(0.22-0.30)が網が退化(131-200 対/18-22 node)・shuffle 対照(B)が seed 間で不一致(0.61/0.87/0.89)**。判定は Taka。

@@ -10,6 +10,9 @@
 
 ---
 
+## 【後日訂正・m29 懐疑監査】
+GATE **B「tl↔STEP2静的 −0.31・新規対 71%」は builder 交絡**で時間局所化の効果と未分離。STEP2 は sim_matrix(build_cid_vector)、本 STEP は build_step10_cid_vector を使い、同 run-end でも membership top5 が **0.97/5 しか重ならない**（m29 監査B）。「STEP2 の sim_matrix は build_step10 time-local の run-end 版」という本文の記述は**誤り**。一方 rare↔common(0.925)・top辺入替・spike は builder 内で交絡なし＝保持。
+
 ## 0. 一文（観察事実）
 
 membership を「run 終わり sim_matrix（一点）」から「t 時点の time-local top-5（step10 で再計算）」に替え、辺ロジックは STEP 2 不変・window 列追加で 24 seed 形成（物理ゼロ）。GATE 観察（seed0/1/2 一貫）: 時間局所網は STEP2 静的版と **rank 相関 -0.31・新規対 67-71%・distinct 対 +49%**（substantially 別物）、一方 rare↔common は 0.96→**~0.90**（modest 低下）、連続窓で top 辺の 2/3 が入れ替わり（Jaccard 0.33）、**~21% の対が 1 窓に集中（event 的 spike）**・辺は run 全体で誕生、whiteout なし。判定は Taka。
