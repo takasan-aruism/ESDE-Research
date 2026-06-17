@@ -308,7 +308,7 @@ primitive/v918/v918_memory_readout.py  v918 memory readout = 主 entrypoint (run
 ### 8.2 起動と run() シグネチャ
 - 起動キー: `engine.run_injection()` + `engine.virtual = VirtualLayerV9(feedback_gamma=0.10, feedback_clamp=(0.8,1.2))`。
 - コマンド例: `python3 primitive/v918/v918_memory_readout.py --seed 42 --maturation-windows N --tracking-windows N --window-steps N --tag NAME`。
-- `run(seed, maturation_windows, tracking_windows, window_steps, tag)`。`step_window(steps)` が 1 window 分の物理を進める。
+- `run(seed=42, maturation_windows=20, tracking_windows=10, window_steps=500, tag="short", disable_e3=False)`（実コード確認、:1518）。`step_window(steps=V82_WINDOW=50)` が物理を進める（標準 run は window_steps=500）。
 
 ### 8.3 実行フロー（end-to-end）
 1. **点火/注入**: run_injection が INJECTION_STEPS=300 step 注入。
@@ -353,10 +353,10 @@ primitive/v918/v918_memory_readout.py  v918 memory readout = 主 entrypoint (run
 物理層を一切変えず、既存 run 出力（csv/parquet）を読んで新しい観察軸のみを書く。`developmental/v107/v107_post_process.py`（orchestrator）+ event_aggregator / path_analyzer / baseline_constructor / avalanche_monitor / cross_seed_analyzer。
 
 ### 9.1 source_event 5 種（発火, v10.7）
-1. **pulse**（cid pulse 発火, 約12,530/seed）2. **ingestion**（ghost 摂食, 155）3. **alpha_formation**（α 誕生, 424）4. **beta_formation**（β 誕生, 239）5. **c_conversion**（Q→C 転化, 155）。計 約13,503/seed ×24 ≈ 415,726。出力 `developmental/v107/outputs/main/source_events_seed{N}.parquet`。
+列 = **`event_source_type`**。5 種（seed0 実測, seed で件数変動）: 1. **pulse**（cid pulse 発火, 12,530）2. **alpha_formation**（α 誕生, 1,067）3. **beta_formation**（β 誕生, 478）4. **ingestion**（ghost 摂食, 155）5. **c_conversion**（Q→C 転化, 155）。出力 `developmental/v107/outputs/main/source_events_seed{N}.parquet`。
 
 ### 9.2 relation_path 5 種 + 強度順位（波及, v10.7）
-- 5 種: temporal_coactivation（時間共起）/ Integration（α/β 所属）/ familiarity（network 双向 1-hop）/ attention（cog.attention 経由）/ intersection（複合）。
+- 5 種（`relation_paths_seed{N}.parquet` の実測値）: **temporal_coactivation**（時間共起）/ **integration_alpha** / **integration_beta**（α/β 所属、αβ は別系列）/ **familiarity**（network 双向 1-hop）/ **attention_via_salience**（cog.attention 経由）。※ サマリ/旧 index にある「intersection」は実在しない（監査訂正）。
 - 強度順位: **temporal_coactivation(+13.95, 12×) > Integration(+11, 9×) > familiarity(+9.35, 7×) > attention(+7.43, 6×)**。peak_lag 250–300, medium window 100–1000 が支配。
 - 注意: same_step_random baseline=13.76 で temporal の +1.52 下なので「グローバル活性化」に注意。temporal は強いが意味中立、**familiarity が意味同定の主経路**（v10.8 effect_size 6.83）。
 
@@ -459,7 +459,7 @@ ESDE を corr/生存数 一つで判定しない。多レンズ個別軌跡・n_
 | state | `ecology/engine/genesis_state.py` |
 | 物理 operator / inject | `ecology/engine/genesis_physics.py`（inject は :232） |
 | chemistry/realization/autogrowth/intrusion | `ecology/engine/{chemistry,realization,autogrowth,intrusion}.py` |
-| 存在層 | `primitive/v910/virtual_layer_v9.py`（frozenset は :559） |
+| 存在層 | `primitive/v910/virtual_layer_v9.py`（`frozenset(node_ids)` は :42, label 構成は :504–526） |
 | pulse model | `primitive/v910/v910_pulse_model.py` |
 | cognitive capture | `primitive/v911/v911_cognitive_capture.py`（SubjectLayer :263） |
 | Integration α/β | `developmental/v104/v104_integration.py` / `developmental/v105/v105_integration.py` |
@@ -559,4 +559,6 @@ pickup（v9.8c, TTL 延長のみ）/ death_pool / semantic gravity+deviation / v
 ---
 
 *以上 ESDE 技術仕様書 v1.0（Genesis 系・現行）。出典 docs/ai_summaries 一本化、観察者枠組み遵守、現行/凍結/廃止を明示。数値・機構の詳細は §12.2 のコードと各原典に遡れる。*
+
+*監査記録（2026-06-18, Code A 個人監査）: load-bearing な主張を実コードで突合し一致を確認 ― `physics.inject`(:232, amount0.6/prob0.15/radius8) / `v19g_canon` 全 params(BETA1.0/NODE_DECAY0.005/0.26/0.17/0.07/0.003/0.03/K_sync0.1/p_link_birth0.007) / `atom_profiles_cache`(326,48)valid325 / `V82Engine`(V43継承,V82_N5000,step_window) / `v918 run()`(:1518) / `Integration/integration_id/IntegrationManager`(:34/:47)。サマリ由来で古かった §9.1 event 件数（alpha 424→1067, beta 239→478, 列=event_source_type）と §9.2 relation_path 種別（intersection 不在→integration_alpha/beta + attention_via_salience）を実測値へ訂正済。*
 
