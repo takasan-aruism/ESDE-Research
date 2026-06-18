@@ -64,6 +64,20 @@
 ```
 外部は内部因果を迂回せず、物理摂動になって入り、内部因果がそれを再解釈する。だから公式チャネルが `physics.inject`（＝まず物理になる）であって、認知層に「意味」を直書きしても系内で意味を持たない。
 
+### 3.4 環境要因の現在地（外部取り込みの先行機構・土台、2026-06-19 調査追記）
+物理層期の「環境要因を取り込む」構想は 3 機構として実体化し、現在の生死は分かれる（実コード確認）:
+
+| 環境要因 | 層 | 実体 | 現在 |
+|---|---|---|---|
+| **semantic_pressure** | node | `apply_semantic_pressure`（`esde_v43_engine.py:374`, prob0.005/latent_boost0.05, 近傍 latent 摂動・島内部 shield） | **常時稼働**。`esde_v82_engine.py:226` で stress ブロックの外＝**無条件**、24seed main run 含め毎 step 走る |
+| **stress_decay** | link | `apply_stress_decay`（`esde_v82_engine.py:58`, stress_intensity=current_links/link_ema の好不況） | 機構は生・既定 True、**main run は OFF**（`v918_memory_readout.py:1535` stress_enabled=False）。実験で再点火（stage4 B3 / 注意センター build_center）。廃止でない |
+| **External Wave** | 外部 energy 波 | `autonomy/esde_v83_calibrate.py`（wave_amplitude/period, 「±50%吸収=選択圧」） | **レガシー**。calibration のみ、現行 run 未接続（amplitude=0 既定） |
+
+含意（本調査の主題との接続）:
+- **semantic_pressure ＝ §3.2 で薦めた「位相帯=構造摂動」チャネルが、設計案でなく今動いている実機構**。外部入力は新チャネルを発明せず、この常時稼働の node/latent 摂動に「外部由来パターン」を流す形に帰着する（§2–3 の組合せ・新規発明不要を補強）。
+- **External Wave ＝「外部を取り込む」系譜の祖先**だが休眠。系譜は注意センターの外部入力（physics.inject + 位相帯擦り込み, §2/§3）へ引き継がれている。
+- **CID 層直接の環境要因は今もゼロ**（link/node 経由で間接）。§3.3「外部は物理に入り CID が内部因果で再解釈」と整合 ―― 環境要因はもともと物理層概念で、CID はそこから emergent する側。
+
 ## 4. 「現実世界の構造を入れる」の着地点
 「別系」候補は 3 つ（Q10）:
 - (i) 別 `V82Engine` instance（別 seed/N/params）＝最小代用（推奨・stage3 inject ループ流用可）。

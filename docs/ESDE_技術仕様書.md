@@ -159,6 +159,12 @@ ecology/engine/ の凍結コア。N=5000 ノードが 71×71 トーラス上（4
 ### 3.5 物理層 frozen 規律
 新機構は物理層を一切書き換えない。出力は新規 dir に限定し、`assert_output_under_v10X` 等でパス侵入を防ぐ。検証は **bit-identity 3 層**（§11.1）。
 
+### 3.6 環境要因（背景摂動・node/link 層、CID 層直接は無し）
+物理層期の「環境要因」は 3 機構として実体化（CID 層への直接環境要因は今も無く、link/node 経由で間接）:
+- **semantic_pressure**（node 層、`cognition/semantic_injection/v4_pipeline/v43/esde_v43_engine.py:374`、pressure_prob=0.005 / latent_boost=0.05、島内部は shield）: `autonomy/v82/esde_v82_engine.py:226` で **無条件呼出＝全 run で常時稼働**（24seed main 含む）。位相帯=構造摂動の実機構で、外部入力（§10.5）・注意センターの土台。
+- **stress_decay**（link 層、`esde_v82_engine.py:58`、stress_intensity = current_links/link_ema の好不況）: `stress_enabled` で ON/OFF。既定 True だが **v918 main run は OFF**（:1535）、実験（stage4 B3 / 注意センター build_center）で再点火。**廃止ではない**。
+- **External Wave**（外部 energy 波、`autonomy/esde_v83_calibrate.py`、wave_amplitude/period）: autonomy v8.3 の「外部を取り込む」環境要因。現行 run 未接続の**レガシー**（amplitude=0 既定）。「外部取り込み」系譜は注意センター（physics.inject + 位相帯擦り込み）へ継承。
+
 ---
 
 ## 4. 存在層 (Layer 2: Existence) ― 旧称「仮想層」
@@ -525,7 +531,6 @@ ESDE を corr/生存数 一つで判定しない。多レンズ個別軌跡・n_
 | `S≥0.20` 硬閾値 | v9.13 撤廃（神の手）→ persistence-based birth |
 | path B（R>0 pair 即 label） | v9.13 廃止（R=0 汚染） |
 | torque_factor（v9.7 認知→θ介入） | =1.0 無効、失敗を B_Gen で構造的に排除済 |
-| stress_decay | stress_enabled=False |
 | Match Ratio 集約（v9.15 stage1） | stage2 で廃止、3 点フラグへ |
 | GHOST_TTL=10 固定 | v10.1 撤廃 → Q ベースの ghost 死 |
 | 「loop collapse」方向 / v1110–v1113「異系対応」 | 方向違い（ESDE 構造は同系内動学・関係にあり、異系間対応は存在しない） |
@@ -561,4 +566,6 @@ pickup（v9.8c, TTL 延長のみ）/ death_pool / semantic gravity+deviation / v
 *以上 ESDE 技術仕様書 v1.0（Genesis 系・現行）。出典 docs/ai_summaries 一本化、観察者枠組み遵守、現行/凍結/廃止を明示。数値・機構の詳細は §12.2 のコードと各原典に遡れる。*
 
 *監査記録（2026-06-18, Code A 個人監査）: load-bearing な主張を実コードで突合し一致を確認 ― `physics.inject`(:232, amount0.6/prob0.15/radius8) / `v19g_canon` 全 params(BETA1.0/NODE_DECAY0.005/0.26/0.17/0.07/0.003/0.03/K_sync0.1/p_link_birth0.007) / `atom_profiles_cache`(326,48)valid325 / `V82Engine`(V43継承,V82_N5000,step_window) / `v918 run()`(:1518) / `Integration/integration_id/IntegrationManager`(:34/:47)。サマリ由来で古かった §9.1 event 件数（alpha 424→1067, beta 239→478, 列=event_source_type）と §9.2 relation_path 種別（intersection 不在→integration_alpha/beta + attention_via_salience）を実測値へ訂正済。*
+
+*更新（2026-06-19, 環境要因 調査）: §3.6「環境要因」を追加 ― semantic_pressure は `esde_v82_engine.py:226` で無条件＝**全 run 常時稼働**、stress_decay は既定 True だが main run OFF（実験で再点火）・**廃止でない**、External Wave は autonomy v8.3 のレガシー。§15.1 廃止表から stress_decay を除外（§3.6 へ）。*
 
