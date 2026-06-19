@@ -1,0 +1,187 @@
+{
+  "design": "cw_run_real_shuffle_random_canon",
+  "n_cid": 17,
+  "n_seed": 3,
+  "n_child": 204,
+  "steps": 500,
+  "stress": "OFF",
+  "semantic_pressure": "OFF(pressure_prob=0)",
+  "note_body_diff": "本体main(stress OFF/semantic_pressure ON)との差: 本childはsemantic_pressureも切る",
+  "total_s": 642.6,
+  "real": {
+    "alive_ratio": {
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "link_density": {
+      "mean": 0.6293,
+      "std": 0.0709,
+      "min": 0.5451,
+      "max": 0.7739
+    },
+    "R_density": {
+      "mean": 0.0293,
+      "std": 0.0111,
+      "min": 0.0099,
+      "max": 0.0497
+    },
+    "sync_order": {
+      "mean": 0.0864,
+      "std": 0.0369,
+      "min": 0.0404,
+      "max": 0.185
+    },
+    "n_labels": {
+      "mean": 15.7451,
+      "std": 4.0234,
+      "min": 9.3333,
+      "max": 25.3333
+    },
+    "label_density": {
+      "mean": 0.0467,
+      "std": 0.0125,
+      "min": 0.0266,
+      "max": 0.0777
+    },
+    "mean_label_ncore": {
+      "mean": 3.2618,
+      "std": 0.2747,
+      "min": 2.7221,
+      "max": 3.7811
+    }
+  },
+  "shuffle": {
+    "alive_ratio": {
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "link_density": {
+      "mean": 0.6301,
+      "std": 0.0709,
+      "min": 0.5143,
+      "max": 0.7612
+    },
+    "R_density": {
+      "mean": 0.037,
+      "std": 0.0168,
+      "min": 0.0095,
+      "max": 0.0667
+    },
+    "sync_order": {
+      "mean": 0.1072,
+      "std": 0.0542,
+      "min": 0.0479,
+      "max": 0.2825
+    },
+    "n_labels": {
+      "mean": 16.7843,
+      "std": 4.2735,
+      "min": 10.0,
+      "max": 25.3333
+    },
+    "label_density": {
+      "mean": 0.0498,
+      "std": 0.0131,
+      "min": 0.0298,
+      "max": 0.0761
+    },
+    "mean_label_ncore": {
+      "mean": 3.3676,
+      "std": 0.2711,
+      "min": 2.9287,
+      "max": 3.8396
+    }
+  },
+  "random": {
+    "alive_ratio": {
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "link_density": {
+      "mean": 0.6568,
+      "std": 0.0554,
+      "min": 0.5877,
+      "max": 0.8
+    },
+    "R_density": {
+      "mean": 0.0367,
+      "std": 0.0145,
+      "min": 0.0134,
+      "max": 0.0629
+    },
+    "sync_order": {
+      "mean": 0.0999,
+      "std": 0.0364,
+      "min": 0.0476,
+      "max": 0.1624
+    },
+    "n_labels": {
+      "mean": 16.3529,
+      "std": 3.6142,
+      "min": 12.3333,
+      "max": 23.0
+    },
+    "label_density": {
+      "mean": 0.0477,
+      "std": 0.01,
+      "min": 0.0366,
+      "max": 0.0676
+    },
+    "mean_label_ncore": {
+      "mean": 3.4041,
+      "std": 0.2948,
+      "min": 2.7672,
+      "max": 3.8544
+    }
+  },
+  "canon": {
+    "alive_ratio": {
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "link_density": {
+      "mean": 0.633,
+      "std": 0.0347,
+      "min": 0.572,
+      "max": 0.6815
+    },
+    "R_density": {
+      "mean": 0.035,
+      "std": 0.0127,
+      "min": 0.0085,
+      "max": 0.0569
+    },
+    "sync_order": {
+      "mean": 0.0709,
+      "std": 0.0277,
+      "min": 0.0315,
+      "max": 0.1306
+    },
+    "n_labels": {
+      "mean": 15.8039,
+      "std": 2.0414,
+      "min": 12.3333,
+      "max": 19.6667
+    },
+    "label_density": {
+      "mean": 0.0468,
+      "std": 0.006,
+      "min": 0.0365,
+      "max": 0.0582
+    },
+    "mean_label_ncore": {
+      "mean": 3.3425,
+      "std": 0.2816,
+      "min": 2.7669,
+      "max": 3.7361
+    }
+  }
+}
