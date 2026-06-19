@@ -12,6 +12,16 @@
 
 ---
 
+## 0. child-world の位置づけ（文書上で固定・現行技術仕様とのズレの扱い）
+**child-world = V82 系既存箱庭の縮小・param 変調版。** 具体的に `V82Engine(N≈100) + V43 物理 + VirtualLayerV9` ＝ **現行 v918 main run と同一のエンジンスタック**を N と param だけ変えたもの。**純 ecology/engine Genesis（5力7オペレータ）の独立再実装ではない。**
+- ∴ child-world は **V43/V82 層の付加（環境要因 semantic_pressure 常時ON / BIAS 背景 seeding）を継承する**。これらは核 Genesis 物理（ecology/engine）でなく run-path 層。
+- **semantic_pressure の位置づけ（慎重に）**: V43 定義（`esde_v43_engine.py:374`）の node 層環境要因で、`V82.step_window:226` で常時呼ばれる＝**現行 v918 main run でも常時 ON**。純 Genesis 物理法則ではない。child-world は V82 箱庭なので**継承する**（OFF 化は Taka 設計判断＝下記）。
+- **この台帳の読み方**: 「現行 Genesis 仕様そのもの」ではなく、**child-world 実験用の実装候補台帳（V82/V43/Genesis の配線実態）**。エンジンレベルでは「現行Genesis縮小版」と「V82系子系」は同一（どちらも V82Engine）＝区別は仕様レベル（純ecology/engine 物理 vs run-path 付加込み実装）。本台帳は後者（実装実態）を扱う。
+- **パート1 の層タグ**: 核 Genesis（ecology/engine, op 1-26 + 32）と V43/V82 run-path 付加（op 27-31: BIAS seeding / stress(現行OFF) / semantic_pressure(常時ON)）を区別する（下表「層」列）。
+- **要 Taka 設計判断**: child-world で (i) **semantic_pressure** を継承ON（v918 main 忠実・θ背景ノイズ込み）か OFF（param 効果を純粋に見る）か、(ii) stress は元々 OFF のままか、(iii) そもそも child を「V82 箱庭縮小」とするか「核 ecology/engine 物理のみの最小 Genesis」に作り替えるか。本台帳は (i)(ii)(iii) を**固定せず候補として並べる**（設計確定は Taka）。
+
+---
+
 # パート1 — 物理層演算 全数（per-step 実行順 + 周辺）
 
 | # | 演算 | 何をするか（式） | 関与状態 | 使う固定値（実行時値） | コード位置 |
@@ -51,6 +61,8 @@
 | 32 | physics.inject（外部I/F） | target: `E+=inject_amount, alive_n追加`; pair link(radius内) | E,S,alive_n | inject_amount=0.6, inject_prob=0.15, inject_pair_radius=8, inject_link_strength=0.3 | genesis_physics.py:232 |
 
 > ⚠＝canon 定数（BASE_PARAMS）と dataclass 既定が異なり、V43Engine による canon→Params 配線が本台帳では未確認の箇所（実装時に要確認）。「漏れていた」と後で分かるよう明示。
+>
+> **層タグ（§0 参照）**: op **1-26 + 32** ＝ **核 Genesis 物理（`ecology/engine/`）**＝純 Genesis 仕様。op **27-29 BIAS背景 seeding / 30 stress(現行OFF) / 31 semantic_pressure(常時ON)** ＝ **V43/V82 run-path 付加**（純 Genesis 物理でなく、V82 箱庭の付加層。現行 v918 main run も同じくこれらを伴う）。child-world を「核 ecology/engine 物理のみ」に作るなら op 27-31 を外す選択肢があり、「V82 箱庭縮小」とするなら継承する＝§0 の Taka 設計判断。
 
 ---
 
@@ -189,4 +201,4 @@
 - 一方向: 読＝frozen（v19g_canon / 物理オペレータ各 .py / per_subject_seed0）。書＝本 md のみ。コード実行は前回 probe の read-only 確認のみ（本資料で新規実行なし）。親 physics/inject/ledger/state 非書込。
 
 ## 一文サマリ
-物理層演算・CID 値・対応可能性 全数台帳（Code A、2026-06-20、設計フェーズ・実行ゼロ）── **パート1**: 物理演算 32（起動 inject / Realization 2 / Phase Rotation 3 / Flow 3 / Chemistry 7 / Resonance 3 / Auto-Growth / Intrusion 2 / Decay 2 / Exclusion / Extinction 2 / Background 3 / stress(OFF) / semantic_pressure / inject）を式・状態・実行時値・行番号で全数。**パート2**: per_subject 130 カラム全数（固定/時変・n5 値域・CV・散る・由来層、familiarity 系散る・B_Gen CV=0.025 散らず）。**パート3**: 固定値ごとに 配線（**physics.params/realizer/grower/chem の後書き＝大半 per-child 可**、N/plb/rate=constructor、初期θ/ω/F=state init、**BIAS/bg_prob/literal/grid=不可**）／CID 候補複数（構造同型）／n5 で散るか／「書けるが効くは別」注意。N=B_Gen×10 は配線可だが n5 横並び（cross-n_core で約3×）。設計確定・実行はしない。判定は Taka。
+物理層演算・CID 値・対応可能性 全数台帳（Code A、2026-06-20、設計フェーズ・実行ゼロ）── **位置づけ（§0）**: child-world ＝ V82 系既存箱庭の縮小・param変調版（= 現行 v918 main run と同一エンジンスタック）であり、本台帳は「現行 Genesis 仕様そのもの」でなく **child-world 実装候補台帳（V82/V43/Genesis 配線実態）**。op 1-26+32 ＝核 Genesis（ecology/engine）、op 27-31（BIAS seeding / stress(OFF) / **semantic_pressure(常時ON)**）＝ V43/V82 run-path 付加（純 Genesis 物理でなく現行 main も伴う）。core 物理のみにするか継承するかは Taka 判断。── **パート1**: 物理演算 32（起動 inject / Realization 2 / Phase Rotation 3 / Flow 3 / Chemistry 7 / Resonance 3 / Auto-Growth / Intrusion 2 / Decay 2 / Exclusion / Extinction 2 / Background 3 / stress(OFF) / semantic_pressure / inject）を式・状態・実行時値・行番号で全数。**パート2**: per_subject 130 カラム全数（固定/時変・n5 値域・CV・散る・由来層、familiarity 系散る・B_Gen CV=0.025 散らず）。**パート3**: 固定値ごとに 配線（**physics.params/realizer/grower/chem の後書き＝大半 per-child 可**、N/plb/rate=constructor、初期θ/ω/F=state init、**BIAS/bg_prob/literal/grid=不可**）／CID 候補複数（構造同型）／n5 で散るか／「書けるが効くは別」注意。N=B_Gen×10 は配線可だが n5 横並び（cross-n_core で約3×）。設計確定・実行はしない。判定は Taka。
