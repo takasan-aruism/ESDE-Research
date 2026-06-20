@@ -1,0 +1,271 @@
+{
+  "design": "cw_lifespan_synced",
+  "ratios": [
+    1,
+    10
+  ],
+  "cap": 35000,
+  "n_child": 408,
+  "stress": "OFF",
+  "semantic_pressure": "OFF",
+  "knobs": "fixed birth M_c",
+  "note": "re-aggregated from saved parquet (theta_mu agg bug fixed)",
+  "ratio_1": {
+    "real_corr": {
+      "life__n_labels": 0.849,
+      "k_sync__sync_order": 0.656,
+      "plb__link_density": 0.791,
+      "plb__label_density": 0.697,
+      "theta_mu__sync_order": 0.537
+    },
+    "real": {
+      "alive_ratio": {
+        "mean": 0.9985,
+        "std": 0.0025
+      },
+      "link_density": {
+        "mean": 0.7341,
+        "std": 0.0934
+      },
+      "R_density": {
+        "mean": 0.0424,
+        "std": 0.0191
+      },
+      "sync_order": {
+        "mean": 0.1189,
+        "std": 0.0656
+      },
+      "n_labels": {
+        "mean": 29.1176,
+        "std": 16.1881
+      },
+      "label_density": {
+        "mean": 0.0867,
+        "std": 0.0489
+      },
+      "mean_label_ncore": {
+        "mean": 3.9164,
+        "std": 0.7508
+      }
+    },
+    "shuffle": {
+      "alive_ratio": {
+        "mean": 0.9983,
+        "std": 0.0029
+      },
+      "link_density": {
+        "mean": 0.7369,
+        "std": 0.094
+      },
+      "R_density": {
+        "mean": 0.0438,
+        "std": 0.0257
+      },
+      "sync_order": {
+        "mean": 0.1132,
+        "std": 0.0548
+      },
+      "n_labels": {
+        "mean": 29.5882,
+        "std": 17.2408
+      },
+      "label_density": {
+        "mean": 0.0881,
+        "std": 0.052
+      },
+      "mean_label_ncore": {
+        "mean": 3.7774,
+        "std": 0.8042
+      }
+    },
+    "random": {
+      "alive_ratio": {
+        "mean": 0.9978,
+        "std": 0.0034
+      },
+      "link_density": {
+        "mean": 0.7709,
+        "std": 0.067
+      },
+      "R_density": {
+        "mean": 0.0491,
+        "std": 0.0158
+      },
+      "sync_order": {
+        "mean": 0.0986,
+        "std": 0.0704
+      },
+      "n_labels": {
+        "mean": 36.0196,
+        "std": 11.6019
+      },
+      "label_density": {
+        "mean": 0.1061,
+        "std": 0.0343
+      },
+      "mean_label_ncore": {
+        "mean": 4.1293,
+        "std": 0.5412
+      }
+    },
+    "canon": {
+      "alive_ratio": {
+        "mean": 0.9987,
+        "std": 0.0013
+      },
+      "link_density": {
+        "mean": 0.7883,
+        "std": 0.0295
+      },
+      "R_density": {
+        "mean": 0.0517,
+        "std": 0.0177
+      },
+      "sync_order": {
+        "mean": 0.0856,
+        "std": 0.0127
+      },
+      "n_labels": {
+        "mean": 35.7843,
+        "std": 3.3018
+      },
+      "label_density": {
+        "mean": 0.1059,
+        "std": 0.0098
+      },
+      "mean_label_ncore": {
+        "mean": 4.0341,
+        "std": 0.1647
+      }
+    }
+  },
+  "ratio_10": {
+    "real_corr": {
+      "life__n_labels": 0.265,
+      "k_sync__sync_order": 0.772,
+      "plb__link_density": 0.726,
+      "plb__label_density": 0.848,
+      "theta_mu__sync_order": 0.251
+    },
+    "real": {
+      "alive_ratio": {
+        "mean": 0.9973,
+        "std": 0.003
+      },
+      "link_density": {
+        "mean": 0.7846,
+        "std": 0.0492
+      },
+      "R_density": {
+        "mean": 0.0435,
+        "std": 0.0153
+      },
+      "sync_order": {
+        "mean": 0.1313,
+        "std": 0.0732
+      },
+      "n_labels": {
+        "mean": 41.3333,
+        "std": 9.3541
+      },
+      "label_density": {
+        "mean": 0.1225,
+        "std": 0.0289
+      },
+      "mean_label_ncore": {
+        "mean": 4.5913,
+        "std": 0.372
+      }
+    },
+    "shuffle": {
+      "alive_ratio": {
+        "mean": 0.9975,
+        "std": 0.0034
+      },
+      "link_density": {
+        "mean": 0.8071,
+        "std": 0.0572
+      },
+      "R_density": {
+        "mean": 0.0394,
+        "std": 0.0141
+      },
+      "sync_order": {
+        "mean": 0.1274,
+        "std": 0.0644
+      },
+      "n_labels": {
+        "mean": 42.0,
+        "std": 8.8506
+      },
+      "label_density": {
+        "mean": 0.1246,
+        "std": 0.0277
+      },
+      "mean_label_ncore": {
+        "mean": 4.5637,
+        "std": 0.2649
+      }
+    },
+    "random": {
+      "alive_ratio": {
+        "mean": 0.9978,
+        "std": 0.0026
+      },
+      "link_density": {
+        "mean": 0.8159,
+        "std": 0.0443
+      },
+      "R_density": {
+        "mean": 0.0473,
+        "std": 0.0156
+      },
+      "sync_order": {
+        "mean": 0.1041,
+        "std": 0.0464
+      },
+      "n_labels": {
+        "mean": 45.2549,
+        "std": 8.1705
+      },
+      "label_density": {
+        "mean": 0.1336,
+        "std": 0.0248
+      },
+      "mean_label_ncore": {
+        "mean": 4.5324,
+        "std": 0.1675
+      }
+    },
+    "canon": {
+      "alive_ratio": {
+        "mean": 0.9979,
+        "std": 0.0016
+      },
+      "link_density": {
+        "mean": 0.8263,
+        "std": 0.0395
+      },
+      "R_density": {
+        "mean": 0.0462,
+        "std": 0.0113
+      },
+      "sync_order": {
+        "mean": 0.0853,
+        "std": 0.0289
+      },
+      "n_labels": {
+        "mean": 44.8039,
+        "std": 2.8773
+      },
+      "label_density": {
+        "mean": 0.1326,
+        "std": 0.0085
+      },
+      "mean_label_ncore": {
+        "mean": 4.6451,
+        "std": 0.1573
+      }
+    }
+  }
+}
