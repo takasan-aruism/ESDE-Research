@@ -1,0 +1,137 @@
+{
+  "design": "cw_run_long_parallel",
+  "windows": 70,
+  "steps_per_child": 35000,
+  "n_child": 204,
+  "workers": 24,
+  "stress": "OFF",
+  "semantic_pressure": "OFF",
+  "total_s": 2007.8,
+  "real": {
+    "alive_ratio": {
+      "mean": 0.9973,
+      "std": 0.0031
+    },
+    "link_density": {
+      "mean": 0.7921,
+      "std": 0.042
+    },
+    "R_density": {
+      "mean": 0.0449,
+      "std": 0.0139
+    },
+    "sync_order": {
+      "mean": 0.1302,
+      "std": 0.0731
+    },
+    "n_labels": {
+      "mean": 42.451,
+      "std": 8.0536
+    },
+    "label_density": {
+      "mean": 0.1258,
+      "std": 0.0252
+    },
+    "mean_label_ncore": {
+      "mean": 4.6726,
+      "std": 0.1343
+    }
+  },
+  "shuffle": {
+    "alive_ratio": {
+      "mean": 0.9974,
+      "std": 0.0034
+    },
+    "link_density": {
+      "mean": 0.8141,
+      "std": 0.049
+    },
+    "R_density": {
+      "mean": 0.0389,
+      "std": 0.0138
+    },
+    "sync_order": {
+      "mean": 0.133,
+      "std": 0.0605
+    },
+    "n_labels": {
+      "mean": 42.7451,
+      "std": 7.9491
+    },
+    "label_density": {
+      "mean": 0.1268,
+      "std": 0.0252
+    },
+    "mean_label_ncore": {
+      "mean": 4.6081,
+      "std": 0.146
+    }
+  },
+  "random": {
+    "alive_ratio": {
+      "mean": 0.9973,
+      "std": 0.0029
+    },
+    "link_density": {
+      "mean": 0.8233,
+      "std": 0.0296
+    },
+    "R_density": {
+      "mean": 0.0425,
+      "std": 0.0128
+    },
+    "sync_order": {
+      "mean": 0.1039,
+      "std": 0.0518
+    },
+    "n_labels": {
+      "mean": 45.5882,
+      "std": 4.4915
+    },
+    "label_density": {
+      "mean": 0.1334,
+      "std": 0.013
+    },
+    "mean_label_ncore": {
+      "mean": 4.6509,
+      "std": 0.1124
+    }
+  },
+  "canon": {
+    "alive_ratio": {
+      "mean": 0.9979,
+      "std": 0.0016
+    },
+    "link_density": {
+      "mean": 0.8263,
+      "std": 0.0395
+    },
+    "R_density": {
+      "mean": 0.0462,
+      "std": 0.0113
+    },
+    "sync_order": {
+      "mean": 0.0853,
+      "std": 0.0289
+    },
+    "n_labels": {
+      "mean": 44.8039,
+      "std": 2.8773
+    },
+    "label_density": {
+      "mean": 0.1326,
+      "std": 0.0085
+    },
+    "mean_label_ncore": {
+      "mean": 4.6451,
+      "std": 0.1573
+    }
+  },
+  "real_corr": {
+    "k_sync__sync_order": 0.804,
+    "plb__link_density": 0.824,
+    "plb__label_density": 0.9,
+    "N__label_density": -0.468,
+    "theta_mu__sync_order": 0.291
+  }
+}
