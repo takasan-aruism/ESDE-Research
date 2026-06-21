@@ -2,7 +2,7 @@
 
 *作成*: 2026-06-21、Code A
 *目的*: 「今 ESDE で何をやろうとしているか」を新スレッド/3AI が一読で掴むための現況資料。判定は Taka。
-*第一参照*: `docs/ESDE_技術仕様書.md`（現行技術仕様）/ `docs/ai_summaries/07_unified_summary_addendum_v13_childworld.md`（v13 詳細）/ `unified/v13_childworld/`（全データ）。
+*第一参照*: `docs/ESDE_技術仕様書.md`（現行技術仕様）/ `docs/ai_summaries/07_unified_summary_addendum_v1301.md`（v13 詳細）/ `unified/v1301/`（全データ）。
 
 ---
 

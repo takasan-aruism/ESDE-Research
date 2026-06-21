@@ -7,7 +7,7 @@
 - 番号コピー欠陥（v1111c/d）と異系対応 4 連続失敗（v1110–v1113）。
 - 注意センター v1114: Step1（内部注意確立）/ Step2 提案（phase 帯対応 自己擦り込み, node ID 不使用）/ **Step2-B（`unified/v1114/step2b_atom_attention.py`、Atom に「注意を向ける」のみ＝`engine.state` 触らず `physics.inject` 呼ばず）**。
 - v43 `apply_semantic_pressure`（`cognition/semantic_injection/v4_pipeline/v43/esde_v43_engine.py:374`、θ 摂動 + 近傍 `latent_boost=0.05` = 構造的擦り込みの先行確立パターン）。
-- 観察対象軸 INDEX（同系＝構造観察可 / 異系＝対応なし）。`cid_atom_sim_matrix`（cid 48次元 → atom 共鳴、v10.6 / v12_atomset の一致率と同系列）。
+- 観察対象軸 INDEX（同系＝構造観察可 / 異系＝対応なし）。`cid_atom_sim_matrix`（cid 48次元 → atom 共鳴、v10.6 / v1201 の一致率と同系列）。
 - Taka 自己理論（stage3）: 「示せていない（否定）」→「まだ顕在化していない（発達段階）」。
 
 ② Taka 逐語（原文）: 「現在24シードESDEは存在する。これは同じ構造を異なる系で測ったものだ。しかし今後は、ESDEに現実世界の構造を入れるという作業が必要になる。ESDEのCIDはESDEにおける物理的な因果によって成立している。外部から情報を入れる、と言うのがどう言うか方法でどういう形式で可能なのか？　そもそも不可能なのか？　これを調査してもらいたい」。

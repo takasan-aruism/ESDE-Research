@@ -1,0 +1,89 @@
+{
+  "design": "v1201_m2_smoke",
+  "note": "M2: 誕生時 rank_1 + per-10step 頻度集計 + bonus 育成、torque 未接続で baseline と bit-identity",
+  "seed": 0,
+  "maturation_windows": 2,
+  "tracking_windows": 3,
+  "window_steps": 500,
+  "duration_sec": 783.8,
+  "label_birth_count": 31,
+  "labels_total": 18,
+  "labels_with_seed": 18,
+  "rank1_computed_count": 31,
+  "rank1_failed_count": 0,
+  "event_increment_count": 434,
+  "labels_with_bonus_grown": 15,
+  "rank1_top5": [
+    [
+      "PRP.new",
+      7
+    ],
+    [
+      "COG.enlightenment",
+      4
+    ],
+    [
+      "PER.hear",
+      3
+    ],
+    [
+      "FND.ahistorical",
+      2
+    ],
+    [
+      "ACT.create",
+      1
+    ]
+  ],
+  "theta_diverged": false,
+  "bit_identity": {
+    "verified": true,
+    "per_subject": {
+      "ok": true,
+      "n_rows": 25,
+      "n_cols": 152,
+      "all_columns_max_abs_diff": 0.0
+    },
+    "extra_files": {
+      "link_life": {
+        "ok": true,
+        "n_rows": 104987,
+        "n_cols": 8,
+        "reason": null,
+        "n_mismatch_cols": 0
+      },
+      "link_snap": {
+        "ok": true,
+        "n_rows": 9328,
+        "n_cols": 4,
+        "reason": null,
+        "n_mismatch_cols": 0
+      },
+      "label_member": {
+        "ok": true,
+        "n_rows": 28,
+        "n_cols": 6,
+        "reason": null,
+        "n_mismatch_cols": 0
+      },
+      "audit_event": {
+        "ok": true,
+        "n_rows": 119,
+        "n_cols": 15,
+        "reason": null,
+        "n_mismatch_cols": 0
+      },
+      "audit_subj": {
+        "ok": true,
+        "n_rows": 25,
+        "n_cols": 14,
+        "reason": null,
+        "n_mismatch_cols": 0
+      }
+    },
+    "all_files_ok": true,
+    "m1_csv": "/tmp/v12_m1_smoke_seed0/diag_v105_v12_m1_smoke_seed0/subjects/per_subject_seed0.csv",
+    "m2_csv": "/tmp/v12_m2_smoke_seed0/diag_v105_v12_m2_smoke_seed0/subjects/per_subject_seed0.csv",
+    "note": "M1 baseline = atomset key だけ追加 (rank_1/頻度計算なし、torque 未変更)、M2 = rank_1 + 頻度集計 + bonus 育成 (torque 未接続)。per_subject 全 numeric column の max abs diff = 0 で bit-identity 成立、頻度集計が物理に無害であることを示す。"
+  }
+}

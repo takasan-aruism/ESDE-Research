@@ -182,8 +182,8 @@ cid_align（Atom 空間）と Center（v1114）の接続が、「使える」か
 - **v12.1（一致率ルーレット）**: 一致率を argmax で確定させず確率的発生として読み、全 326 cosine が (cid,t) で取れること・掬い取れること自体が v10 rank_1 との決定的差であることを確定（詳細 = `07_unified_summary_addendum_v12_to_v121_roulette.md`、概念理解.md 教訓 427-433）。
 - **v13 child-world（現行フロンティア）**: Atom 空間とは別系統。CID 誕生形態 M_c 4 値を物理 param に写像した N≈100-350 の子系を回し、CID 個性を検出。**親物理に一切書かない**（v9.13 方針内、逸脱 A/B を踏まない）。
   - **本区切りの本体は統計監査**: 前報告の「像が保持」は大半 run 長交絡だった。**`real≒shuffle` の真因は比較統計（署名 mean/std）が cid→param→署名の pairing を構造上見ないこと**。pairing を見る置換検定では `K_sync→sync_order`・`plb→link/label_density` が両 ratio p<0.005（ただし manipulation check であって CID 創発でない）。写像は K_sync 100%・θ 84% 伝達＝入口で潰してはいない。
-  - **次段 = 全検**（全 CID 値→全物理 param）。だが CID 値は実質 ~5-14 独立軸・物理 param も ~6-7 独立軸ゆえ「全部繋ぐ」は冗長で交絡を孕む。選定合理性を 3AI 合議で詰める（判断材料 = `unified/v13_childworld/cw_fulltest_selection_material.md`）。
+  - **次段 = 全検**（全 CID 値→全物理 param）。だが CID 値は実質 ~5-14 独立軸・物理 param も ~6-7 独立軸ゆえ「全部繋ぐ」は冗長で交絡を孕む。選定合理性を 3AI 合議で詰める（判断材料 = `unified/v1301/cw_fulltest_selection_material.md`）。
   - **設計要件**: 比較は pairing 基準・観測窓を揃える・対照を対称に・seed≈12・独立代表選定は n_core ごと。
-  - 詳細 = `07_unified_summary_addendum_v13_childworld.md` / `docs/現在の方向_childworld全検.md` / 概念理解.md 教訓 434-437。
+  - 詳細 = `07_unified_summary_addendum_v1301.md` / `docs/現在の方向_childworld全検.md` / 概念理解.md 教訓 434-437。
 
 *以上、ESDE 開発総括（Web Claude、2026-06-14 / v13 追記 Code A 2026-06-21）。Taka「過去に戻って分岐」＝戻る先 v9.13、分岐 Atom 空間独立座標。突破口 v1114 Step 1。現行フロンティアは v13 child-world（CID 個性の交絡なき検出 → 全検）。*

@@ -1,7 +1,7 @@
 # ESDE 研究史 — AI 向け超要約 (Index + 用語対応表)
 
 *作成日*: 2026-04-11 (v9.9 Long Run 進行中)
-*更新*: 2026-06-21 (**v13 child-world: CID 誕生形態→物理 param の子系。統計監査で `real≒shuffle` の真因＝比較統計 (署名 mean/std) が cid→param→署名の pairing を構造上見ないこと (pairing 検定なら K_sync→sync_order・plb→link/label_density が両 ratio p<0.005) を確定、写像は K_sync 100%/θ 84% 伝達＝入口で潰してない、像が保持して見えた相関の多くは run 長交絡。次は全検だが CID 値 ~5-14 独立軸・物理 param ~6-7 独立軸ゆえ「全部繋ぐ」は冗長、選定合理性を 3AI 合議で詰める。詳細 = `07_unified_summary_addendum_v13_childworld.md`、現況 = `docs/現在の方向_childworld全検.md`、教訓 434-437 = 概念理解.md**)
+*更新*: 2026-06-21 (**v13 child-world: CID 誕生形態→物理 param の子系。統計監査で `real≒shuffle` の真因＝比較統計 (署名 mean/std) が cid→param→署名の pairing を構造上見ないこと (pairing 検定なら K_sync→sync_order・plb→link/label_density が両 ratio p<0.005) を確定、写像は K_sync 100%/θ 84% 伝達＝入口で潰してない、像が保持して見えた相関の多くは run 長交絡。次は全検だが CID 値 ~5-14 独立軸・物理 param ~6-7 独立軸ゆえ「全部繋ぐ」は冗長、選定合理性を 3AI 合議で詰める。詳細 = `07_unified_summary_addendum_v1301.md`、現況 = `docs/現在の方向_childworld全検.md`、教訓 434-437 = 概念理解.md**)
 *前回更新*: 2026-06-05 (**v1105/v1109b → 注意センター ESDE 転換 → v1110-v1113 4 連続失敗 → v1114 Step 1 内部注意生成成立、観察対象の規律 (同じ系内 vs 異なる系) + Code A 循環構造の認識 + Center ESDE Taka 定義、§18.20 + §18.21 新設**)
 *前々回更新*: 2026-05-23 (**Unified Phase v1104 + v1104a 完了反映、4 つの非対称性 #L30-L33 確定、v1105/v1105a 主題確定、観察方法を疑う規律確立**)
 *前回更新*: 2026-05-11 (Developmental v10.3-v10.12 完了反映、Phase 1.5 第七試行完了、Atom 取り込み prototype 主題完了)
