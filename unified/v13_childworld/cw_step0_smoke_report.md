@@ -58,6 +58,21 @@
 - 拡張後も n5 が非有意なら、n5 の D_parent 共線（母集団側）を観察方法として疑う（#29「観察方法を疑う」）。
 - マップ作成（出口2）・Atom 接続・選定確定・beta/Z 投入はしない。
 
+## 6. コード懐疑再点検（2026-06-21、Taka 指示）
+回す前の精査に加え、結果のコードを矛盾・隠れバグ・意図しない挙動・強引な意味づけの観点で再点検。机上12点 + 実機3点を確認、**いずれも問題なし**:
+| 点検 | 結果 |
+|---|---|
+| (A) compression で `macro_nodes` に逃げた label が `n_labels`(active のみ) から漏れ署名を歪めるか | **漏れ0%**（n2/n5 典型・n5 plb高=80 labels でも macro_nodes=0、compression 非発火）。n_labels は全安定構造を捕捉 |
+| (B) canon の6 param が層内一定か（純 seed 雑音床の前提）| **全層で param 一意数=1**（theta_mu=nan）。canon は seed のみ異なる=正しい雑音床 |
+| (C) Mantel null が正しく中心0か | **null 平均≈0**（+0.002/−0.001/+0.003）。n2 r=0.55≫null97.5%=0.18 p=0.001、n5 r=0.10 は null 内 p=0.20=真に null。machinery 健全 |
+| seed 衝突 | real `cid*100+s` と canon `900000+nc*100+s` は衝突なし。各 child 独立・再現可 |
+| D_parent↔D_child のリーク | 親値は署名に直接コピーされない（phase_sig 除外・署名は創発量）。唯一の経路は6 param チャネル=因果 |
+| 6入力>Mc は次元追加の機械的水増しか | No（雑音次元なら r は下がる。上がった=追加軸が aligned signal） |
+| 低分散署名次元（mean_size CV0.03 等）の z 標準化 | 雑音に等重み=Mantel を**保守側**にするのみ（有意性を水増ししない）。創発のみ部分集合でも n2/n4 生存ゆえ無害 |
+| 仕様曖昧の強引な意味づけ | 署名を M_c→創発人口統計に変えた点は §8.2 で根拠明記・Taka 可変と明示。n5 候補要因は「未確定」と明記。6入力>Mc は r 値の直接観察。過剰意味づけなし |
+
+→ **修正を要するバグなし**。signal/noise の footing 不一致のみ前 commit で公平版へ修正済（データ再取得は不要、Mantel は内部一貫ゆえ smoke 結果は有効）。
+
 ## やらないこと / 一方向
 - やらない: seed 拡張を承認前に実行、マップ作成、success/fail 判定、crown。
 - 一方向: 読=frozen。書=`unified/v13_childworld/` のみ。child in-memory、親非書込。
