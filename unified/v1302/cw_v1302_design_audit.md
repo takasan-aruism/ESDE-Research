@@ -95,7 +95,18 @@ K_sync=0.0:r=0.038  0.03:0.034  0.1:0.056  0.3:0.209  1.0:0.556
 ### §1-5 auto_growth / β frozen・runtime 可否 → 両方書換可（(B)案 feasible）
 - canon: `auto_growth_rate=0.03`（`v19g_canon.py:80`）、`beta=1.0`。いずれも非frozen dataclass。
 - runtime パス: `eng.grower.params.auto_growth_rate`（step が毎回読む `esde_v82_engine.py:152`）、`eng.physics.params.beta`（decay/cap が毎 step 読む）。**両方 runtime 書換可**。
-- ⇒ Taka 保留の **(B) 案＝子限定 unfreeze で R を直接増幅** は機構上 feasible（auto_growth↑ で成長加速、β↑ で減衰保護強化、ただし β↑ は R cap=5/β を下げる副作用）。今回は採らないが判断材料として記録。R は §1-3 の通り plb 由来 topology に依存する点に注意。
+- ⇒ Taka 保留の **(B) 案＝子限定 unfreeze で R を直接増幅** は **runtime 書換は機能的に可**（後追い probe `probe_b_autogrowth_beta.py` で build時/走行中 flip とも反映・継続確認）。
+- **ただし実 probe で「R/cluster を単調増幅するノブ」ではないと判明（複数 seed 一貫・雑音でない）**:
+  ```
+  auto_growth=0.0 : meanR mean=2.84 (seed11/22/33=4.705/0.158/3.660) max_size=2/6/2 n_labels=145/34/115
+  auto_growth=0.03: meanR=0.031  max_size=6/7/7 n_labels=21/20/15   (canon)
+  auto_growth=0.1 : meanR=0.028  max_size=4/7/4 n_labels=15/14/18
+  auto_growth=0.3 : meanR=0.061  max_size=4/4/3 n_labels=17/13/14
+  beta=0.5/1.0/2.0/4.0: meanR=0.049/0.058/0.048/0.1 (非単調)
+  走行中 flip(canon→0.3): meanR 0.062→0.022（下降）
+  ```
+  観察: auto_growth は「R 増幅」でなく「**S を太らせ→exclusion 剪定→統合**」のノブ。auto_growth=0 で meanR 極大＋断片(max_size2)多数、>0 で meanR が50-100倍 collapse し少数大 label に統合。**R(閉路密度) と cluster サイズは逆方向**。正の域(0.03→0.3)で単調 size 増もなし。β も cap=5/β の低下と保護強化が相殺し非単調。
+- ⇒ K_sync(§1-3) に続き **auto_growth/β も clean な「偏り増幅」ノブでない**。§8 で唯一 topology を clean に動かしたのは **plb**（高→新規link241/低→5）。判定なし（観察）。
 
 ### §1-6 B_Gen の n_core 支配 → 一致（データ確認）
 - 式（`_compute_pbirth.py`）: `Pbirth=(1/C(5000,n))·rho^(n-1)·r_core^(n-1)·s_avg^(n-1)`、`B=-log10(Pbirth)`。同 n_core 内では `C(5000,n)` 定数ゆえ B 変動は rho/r_core/s_avg のみ。
