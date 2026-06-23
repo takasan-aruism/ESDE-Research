@@ -1,0 +1,84 @@
+{
+  "design": "v1302_B_overlay",
+  "tau": 50,
+  "conds": [
+    "canon",
+    "B",
+    "Bov"
+  ],
+  "run_len": 35000,
+  "n_seeds": 3,
+  "strata": [
+    "2",
+    "5"
+  ],
+  "covered": {
+    "2": 35,
+    "5": 7
+  },
+  "cyclic": {
+    "2": 24,
+    "5": 6
+  },
+  "total_s": 1470.2,
+  "report": {
+    "n2": {
+      "canon": {
+        "n_cid": 35,
+        "r": 0.146,
+        "p": 0.069,
+        "t0_alive_n": 119.9,
+        "t0_loops": 50.85,
+        "t0_maxR": 4.462,
+        "links_added": 0.0
+      },
+      "B": {
+        "n_cid": 35,
+        "r": 0.066,
+        "p": 0.238,
+        "t0_alive_n": 19.6,
+        "t0_loops": 2.66,
+        "t0_maxR": 0.0,
+        "links_added": 18.3
+      },
+      "Bov": {
+        "n_cid": 35,
+        "r": 0.076,
+        "p": 0.21,
+        "t0_alive_n": 119.9,
+        "t0_loops": 186.44,
+        "t0_maxR": 4.571,
+        "links_added": 16.8
+      }
+    },
+    "n5": {
+      "canon": {
+        "n_cid": 7,
+        "r": -0.014,
+        "p": 0.452,
+        "t0_alive_n": 340.7,
+        "t0_loops": 136.57,
+        "t0_maxR": 4.964,
+        "links_added": 0.0
+      },
+      "B": {
+        "n_cid": 7,
+        "r": 0.402,
+        "p": 0.055,
+        "t0_alive_n": 50.4,
+        "t0_loops": 3.14,
+        "t0_maxR": 0.0,
+        "links_added": 49.7
+      },
+      "Bov": {
+        "n_cid": 7,
+        "r": -0.196,
+        "p": 0.798,
+        "t0_alive_n": 340.7,
+        "t0_loops": 314.67,
+        "t0_maxR": 4.917,
+        "links_added": 48.3
+      }
+    }
+  }
+}
