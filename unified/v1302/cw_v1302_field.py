@@ -73,6 +73,86 @@ def build_fields(strata=('2', '5')):
     return out
 
 
+def _cycle_rank(nodes, links):
+    """E - V + C (独立閉路数)。union-find。"""
+    if not links:
+        return 0
+    uf = {v: v for v in nodes}
+
+    def find(x):
+        while uf[x] != x:
+            uf[x] = uf[uf[x]]; x = uf[x]
+        return x
+    E = 0
+    for (i, j) in links:
+        if i in uf and j in uf:
+            E += 1
+            ri, rj = find(i), find(j)
+            if ri != rj:
+                uf[ri] = rj
+    C = len(set(find(v) for v in nodes))
+    return E - len(nodes) + C
+
+
+def build_mature_fields(strata=('2', '5'), tau=50):
+    """(B) 成熟期版。選択=age_r≥tau link の閉路ランク最大 window(全 CID 一律 argmax)、移植中身=その window の全 link field。
+    feasibility probe と同一規則。tau で SELECT、移植は age_r フィルタ無しの全 link(コア+周辺)。"""
+    lmp = pd.read_csv(PAR / 'persistence/label_member_persistence_seed0.csv')
+    lsl = pd.read_csv(PAR / 'persistence/link_snapshot_log_seed0.csv')
+    plab = pd.read_csv(PAR / 'labels/per_label_seed0.csv')
+    sub = pd.read_csv(PAR / 'subjects/per_subject_seed0.csv')
+    sub['cognitive_id'] = pd.to_numeric(sub['cognitive_id'], errors='coerce')
+    wmin, wmax = int(lsl.window.min()), int(lsl.window.max())
+
+    snap = defaultdict(list)  # window -> [(i,j,age_r)]
+    for w, lid, ar in zip(lsl.window, lsl.link_id, lsl.age_r_current):
+        snap[int(w)].append((*_parse(lid), float(ar)))
+    bw_map = dict(zip(plab.label_id, plab.birth_window))
+    core_map = defaultdict(list)
+    for lid, link in zip(lmp.label_id, lmp.link_id):
+        core_map[int(lid)].append(_parse(link))
+
+    def field_at(core, n_core, w, only_tau=None):
+        edges = snap.get(w, [])
+        if only_tau is not None:
+            edges = [(i, j, ar) for (i, j, ar) in edges if ar >= only_tau]
+        adj = defaultdict(set)
+        for (i, j, ar) in edges:
+            adj[i].add(j); adj[j].add(i)
+        visited = set(core); frontier = set(core)
+        for _ in range(n_core + 1):
+            nf = set()
+            for n in frontier:
+                for nb in adj.get(n, set()):
+                    if nb not in visited:
+                        visited.add(nb); nf.add(nb)
+            frontier = nf
+            if not nf:
+                break
+        flinks = [(i, j) for (i, j, ar) in edges if i in visited and j in visited]
+        return sorted(visited), flinks
+
+    out = {}
+    for nc in strata:
+        n_core = int(nc)
+        cids = [int(c) for c in sub[sub.v11_m_c_n_core == nc].cognitive_id.dropna() if int(c) in core_map]
+        for cid in cids:
+            core = set(n for e in core_map[cid] for n in e)
+            # 選択: age_r>=tau link の閉路ランク最大 window (一律 argmax)
+            best_w, best_mrank = wmin, -1
+            for w in range(wmin, wmax + 1):
+                mn, ml = field_at(core, n_core, w, only_tau=tau)
+                mr = _cycle_rank(mn, ml)
+                if mr > best_mrank:
+                    best_mrank, best_w = mr, w
+            # 移植中身: 成熟 window の全 link field (age_r フィルタ無し)
+            fn, fl = field_at(core, n_core, best_w, only_tau=None)
+            out[cid] = dict(n_core=n_core, stratum=nc, field_nodes=fn, field_links=fl,
+                            mat_window=best_w, mat_cycle_rank=best_mrank,
+                            full_has_cycle=_cycle_rank(fn, fl) > 0, tau=tau)
+    return out
+
+
 if __name__ == '__main__':
     f = build_fields(('2', '5'))
     rows = []
