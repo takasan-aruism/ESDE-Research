@@ -602,6 +602,7 @@ pickup（v9.8c, TTL 延長のみ）/ death_pool / semantic gravity+deviation / v
 ---
 
 ## 16. 既知の欠陥・盲点（Code A 再発防止）
+> 開発全史の失敗とその原因（12 型に類型化 + フェーズ別カタログ）は **`docs/ESDE_失敗の記録.md`** に集約。本節はその中で Code A が実装時に踏みやすい盲点の抜粋。
 - **番号コピー欠陥**: 異 seed 系へ node ID を inject しても無意味（node ID は系内のみ有効）。配管は入口/出口 2 本足でなく全足で対称チェック。
 - **集団平均の罠**: n_core 別層化を欠くと 60% の「普通」が稀な際立ちを塗り潰す。per-cid/n_core 層化必須。
 - **集計指標が処置に数理的不感**: bin-shift 不変な指標（total_cooc 等）は処置を検出できない。
