@@ -173,6 +173,14 @@ ecology/engine/ の凍結コア。N=5000 ノードが 71×71 トーラス上（4
 - **stress_decay**（link 層、`esde_v82_engine.py:58`、stress_intensity = current_links/link_ema の好不況）: `stress_enabled` で ON/OFF。既定 True だが **v918 main run は OFF**（:1535）、実験（stage4 B3 / 注意センター build_center）で再点火。**廃止ではない**。
 - **External Wave**（外部 energy 波、`autonomy/esde_v83_calibrate.py`、wave_amplitude/period）: autonomy v8.3 の「外部を取り込む」環境要因。現行 run 未接続の**レガシー**（amplitude=0 既定）。「外部取り込み」系譜は注意センター（physics.inject + 位相帯擦り込み）へ継承。
 
+### 3.7 観察者エコロジー（Ecology 系）― 観察者は単一でなく複数（cid 複数性の前身）
+k\*=4 の観測解像度（§3.2）は単一の大域視点ではない。Ecology 系（`docs/ESDE_Ecology_Report.md`、`docs/ai_summaries/02_ecology_summary.md`）が「global observer（全 5000 node 統合の k-selector）は単一か、local observer（2×2 grid r0-r3 各領域の k-selector）の集合か」を問い、次を確定:
+- **観察者は複数・local が global より安定**: 例 seed456 で global=k3 だが全 region=k4。
+- **divergence（local k\*≠global k\*）がデフォルト**: 40-68% の window で発生。**long_drift（≥5 window 連続乖離）が支配レジーム**（20-60 seeds で 70-80%、rate 摂動耐性あり）。
+- **global observer は lossy compression**: local が正しい k を保持する間 global がそれを消す。最頻 divergence 状態 **g3_r4444（global wrong・全 region right）**。
+- **local persistence は強い**: 単一 region 内で max 24/25 window（96%）の連続同一 k\*。k\*=4 は rate [0.0018,0.0022] で robust（mean global_k 3.8）。当初の 2×2 spatial asymmetry（r2/r3 安定）は 20 seeds で消失＝small sample artifact。
+- **含意**: 観察者エコロジーは静的合意でなく **metastable distributed regime**。「主体は複数あり、それぞれ独自の世界を見ている」という Cognition/Primitive の cid 複数性（§5.1、同じ frozenset を複数 cid が host）の基礎。
+
 ---
 
 ## 4. 存在層 (Layer 2: Existence) ― 旧称「仮想層」
@@ -199,6 +207,15 @@ ecology/engine/ の凍結コア。N=5000 ノードが 71×71 トーラス上（4
 ### 4.4 share / cull（成熟・相対閾値）
 - 死（cull）は相対閾値: `share < base_threshold / (1 + maturation_alpha × age)`、base_threshold = fair_share × 0.5、maturation_alpha = 0.10（年寄りほど死ににくい）。
 - n_core（構成 node 数, = label/cid のサイズ）の実測分布は n=2 が約 62.6%（多数派・「普通」）、n=5 が情報豊富・長寿・hub 化しやすい。**集団平均でなく n_core 別層化で観る**（§9.5, §11.4）。
+
+### 4.5 存在層の成熟（Autonomy 系: n→n+1 相転移・5-node 転換点・territory）
+存在層（label）の「個体としての成熟」は Autonomy 系（v74-v90、`docs/ESDE_Autonomy_Report.md`、`docs/ai_summaries/03_autonomy_summary.md`）が確定。「少数の強い支配者 → 多数の弱い共存者」の相転移条件を問い:
+- **全 n→n+1 が質的相転移、5-node が転換点**: 下位（2→5）は「失う」ことで環境依存から脱却、上位（6→9）は「回復」して territory 支配へ。
+- **density independence（5-node で獲得）**: 環境に依存せず自分で存在条件を作る能力。5-node が「どこでも生きられる」唯一のサイズ（§4.4 の「n=5 が長寿・hub 化しやすい」の起源）。6+ は超長命（190+ win）、6 で align 最低 0.181 → 7-8 で retain 回復 0.74。
+- **territory（場）と link（主体）は別物**: territory の oasis/penalty 比率は全サイズ一定 **1.3×（サイズ非依存）**だが、node-link 比率はサイズ依存（3-node 2.9× → 7-8node 1.3×）。「場」は環境、「主体」はリンク。
+- **環境変動と逆相関**: 好況（リンク増）＝競争激化＝label 減（好況期に 2-node 全滅、4-5-node はむしろ有利）、不況＝既存 label 温存。＝ stress（好不況、§3.6）が存在層に効く経路。
+- **stress OFF ＝存在層成熟の帰結**: v918 main run が stress OFF（§3.6）なのは抑圧でなく**存在層成熟の帰結として位置づけられる**（成熟すると S 分布の揺らぎが減り大型島頻度が下がる副作用、神の手でない）。
+- 留保: 200win で見えた share_retain 3 相構造（6+ で retain>1.0）は 500win で全サイズ<1.0 の**偽信号**と確定、5-node が真の底（観測窓長で像が変わる、§11.4）。
 
 ---
 
@@ -619,8 +636,8 @@ v1302 の (A) は「親に似るか」を測ったため #CW7 トートロジー
 
 ## 付録: 版の時系列（一行年表）
 - **物理 (Genesis)**: 5 力・閉路＝容器・k\*=4 スケール不変（N=200–10,000）。
-- **Ecology**: 観察者は複数（局所観察者が大域より安定、g3_r4444）。
-- **Autonomy (v82)**: n→n+1 が質的相転移、5-node が転回点（密度独立性）。
+- **Ecology**: 観察者は複数（局所観察者が大域より安定、g3_r4444、global=lossy compression、long_drift 支配の metastable regime）＝cid 複数性の前身（§3.7）。
+- **Autonomy (v82)**: n→n+1 が質的相転移、5-node が転回点（density independence）、territory=場/link=主体、環境変動と逆相関、stress OFF=存在層成熟の帰結（§4.5）。
 - **Primitive (v9.0–v9.18)**: 存在層確立 → 認知層実装。v9.4 φ 認知位相・戦国大名モデル（足場）、v9.8 cid/ghost・**disposition 4 軸**（§5.8）、v9.10 pulse/MAD-DT（固定閾値廃止＝v9.9 disposition 支配は閾値アーティファクトと判明）、v9.11 Cognitive Capture、v9.13 persistence birth、v9.14 Q/E3、v9.15 自己読み、v9.16 age_factor、v9.17 他者読み、v9.18 A+C・意識原資モデル。接触≥1回 98.1%・L06 長命群 n=5 優勢（§5.8.3）。
 - **Developmental (v10.0–v10.13a)**: v10.0 4層、v10.1 摂食、v10.2 確率 Q/C 切替・n_core 層化、v10.3 双方向 E3、v10.4 Integration 機構化、v10.5 α/β（Layer5 完成）、v10.6 Atom×cid cosine、v10.7 オービス（source_event/path/因果階層）、v10.8 Atom 持込、v10.9–v10.12 感度・取込 prototype、v10.13a 5-phase map。
 - **Unified (v1100–v1114)**: 留保#33（集計単位で像が変わる）、v1101a 注意機構（「注意の揺れ≠意識」）、v1102 受け手構造で応答反転、v1103 48 次元密度で応答 atom 候補を狭める、v1104/a scope×粒度 4 非対称、v1106–v1109b ループ性＝ESDE の本質、v1110–v1113 異系対応の失敗、**v1114 注意センター内部注意 Step1 確立（2026-06-05）**。
@@ -641,4 +658,6 @@ v1302 の (A) は「親に似るか」を測ったため #CW7 トートロジー
 *更新（2026-06-25, フロンティア網羅 + ai_summaries 統合反映）: 実行履歴（`unified/v1201`/`v1301`/`v1302`）と本書の差を点検し、抜けていた **§17 フロンティア実験アーク**（v12 Atomset 全 arc・凍結核 m5 突破・v12.1 ルーレット・v1301 統計監査・**v1302 child-world 全結果**・v1303 方向）と **§1.6「存在＝同期」目的言語化** を追加。射程行・§0.3 LIVE・§10.5 注記・§12.1 dir 表・年表を v1302 まで更新。v1302 (A) は懐疑再点検（`unified/v1302/cw_v1302_A_skeptic_recheck.{py,md}`）で #CW7 が「残差ゼロ」＝identity transfer の証拠でないと確定（§17.4）。ai_summaries 統合（06b/06c→06・07 追補 4 本→07、2026-06-25）に伴い旧 addendum 参照を `07_unified_summary.md` Part 表記へ更新。コア §3–§9（実コード監査済）に欠落なしを確認、追加は最前線のみ。*
 
 *更新（2026-06-25, 初期 CID 研究の網羅 + cosine m番号突合）: (1) §10.5 の `unified/v1201` cosine 観察の m 番号を実ファイルで突合＝**m31/m33/m35 は正しい**（`m31_full_cosine_probe.py`/`m33_cosine_viz.py`/`m35_roulette_pick.py`、m31 出力 121.3MB/seed・n_rows 62,906 を実測確認）。下流 m36（全 325 atom ≥1 回 picked, min8/max201）/m37（頻度 HTML）/m39-40（n_core=2 拡張）と先行 cid_trajectory_probe（m27/28/30）を §10.5・§17.2 に補記。(2) ai_summaries 精読で初期 CID 研究（Primitive v9.4–v9.10）の抜けを補完＝**§5.8 を新設**: 本書が §5.2/§5.4/§13 で参照しながら未定義だった **disposition（cid キャラクター 4 軸: social/stability/spread/familiarity、観察専用・v9.8b 固定閾値→v9.10 MAD-DT 廃止・v9.9 支配は閾値アーティファクト）**、基礎観測量 **φ（認知位相）/ attention map（ATTENTION_DECAY=0.99）/ partner familiarity（=0.998、Layer A 減衰付き、Layer B virtual_familiarity と別物）**、観察事実（接触≥1回 98.1% / L06 長命群 n=5 優勢 / 戦国大名モデル＝未実装の Layer 5 前身）を定義・収録。**「CID の 4 タイプ」という明示的類型分類は存在せず、disposition は 4 つの観測軸**であることを明記。年表 Primitive 行に v9.4/disposition を追加。*
+
+*更新（2026-06-25, Ecology 観察者複数性 + 存在層成熟の補完）: 年表 1 行のみだった初期 2 フェーズを本文へ。**§3.7 観察者エコロジー**（Ecology 系: global observer=lossy compression・divergence デフォルト・long_drift 支配の metastable distributed regime・local persistence 96%＝「主体は複数あり各々独自の世界を見る」cid 複数性の前身）と **§4.5 存在層の成熟**（Autonomy 系: 全 n→n+1 質的相転移・5-node 転換点・density independence・territory=場 vs link=主体・環境変動と逆相関・**stress OFF=存在層成熟の帰結**で §3.6 の理由を補完）を新設。年表 Ecology/Autonomy 行に §3.7/§4.5 参照を追加。*
 
