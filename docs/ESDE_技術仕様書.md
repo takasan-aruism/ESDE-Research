@@ -214,7 +214,7 @@ ecology/engine/ の凍結コア。N=5000 ノードが 71×71 トーラス上（4
 ### 5.2 pulse model（観察タイミング、v9.10）
 - **pulse** = Layer A の固定観察タイミング。`cumulative_step % 50 == cid % 50`（cid ごとに分散・決定論）。PULSE_INTERVAL=50。Cold Start: 最初の 3 pulse は "unformed"、4 つ目以降 "active"。
 - **MAD-DT (Mean Absolute Delta — Dynamic Threshold)**: theta = mean(|Δx|) を cid 履歴（K=20 window）から自動算出し固定閾値を置換。R(主観的驚き) = Δx_current/(theta+ε)、ε=1e-6。R>+1.0 で gain タグ、R<−1.0 で loss タグ。**固定閾値には二度と戻さない**（v9.8b の social=0.1 等は廃止）。
-- 注意: pulse は disposition 更新のみを行う観察機。Q 消費は認知/意識側の責務（v10.8 訂正、Web Claude が繰り返した誤解）。
+- 注意: pulse は disposition（cid キャラクター 4 軸、定義は **§5.8**）更新のみを行う観察機。Q 消費は認知/意識側の責務（v10.8 訂正、Web Claude が繰り返した誤解）。
 
 ### 5.3 Cognitive Capture（v9.11）
 - **B_Gen（Genesis Budget, cid 固有・誕生時固定）**: ρ=links_total/C(N,2); Pbirth=(1/C(N,n_core))·ρ^(n−1)·r_core^(n−1)·S_avg^(n−1); **B_Gen = −log10(Pbirth)**。誕生確率の桁＝「ほぼ一意のパスワード＋認知燃料」。帯: n=2→≈12, n=3→≈20, n=4→≈28, n=5→≈35, n=6-8→42-62。**B_Gen は capture に直接入れない**（M_c 経由の間接のみ。直入れすると n_core 帯が支配する／GPT 監査訂正）。
@@ -248,6 +248,25 @@ ecology/engine/ の凍結コア。N=5000 ノードが 71×71 トーラス上（4
 - **B（cid 主体）**: cid が自分の構造を独立媒体（CidSelfBuffer）に展開し自分で読む。主語＝cid。
 - **四重保証**: ファイル分離（B は A を import しない）/ クラス・メソッド境界（`_a_observer_*` read-only API）/ メモリ領域分離 / 命名規約（B: `read_own_state`/`read_on_event`; A: `compute_*`/`track_*`）。B を「層」と呼ばない（A 世界と B 世界は別ドメイン）。
 - **サイコロの比喩**: 研究者は「次の目は 1/6」としか言えない。サイコロ自身は「私は 1」と言える。研究者は **いつ cid が自分を読むか予測できない**ことが「研究者主観の封印」の具体的意味。**ランダム性は論理の柱で、切る方向は取らない**。
+
+### 5.8 disposition（cid キャラクター 4 軸）と認知層の基礎観測量（初期 CID 研究, v9.4–v9.10）
+本書が §5.2/§5.4/§13 で参照する disposition・attention・familiarity・φ の**定義**を一箇所に集約（出典 `docs/ai_summaries/05_primitive_summary.md`、`docs/ESDE_Primitive_Report.md`）。いずれも実験者が cid 周りに記録する観測量で、**cid はこれを使って次 step の挙動を変えない**（Gemini freeze ruling: torque/action に一切反映しない）。
+
+#### 5.8.1 disposition 4 軸（v9.8b）
+- **4 軸** = **social**（認識している他 cid の割合）/ **stability**（structural set サイズ変動の安定度）/ **spread**（attention map のエントロピー＝認知の分散）/ **familiarity**（他 label との接触頻度平均）。pulse（§5.2）ごとに更新し、各軸の正負 drift を gain_xxx / loss_xxx タグ化。
+- **固定閾値の廃止（重要・神の手回避）**: v9.8b は固定閾値（social/stability/spread=0.1, familiarity=2.0）で発火していたが 4 軸不整合（stability/spread 粗・familiarity 細）が問題化。**v9.10 で MAD-DT（§5.2、履歴 K=20 由来の動的閾値）に置換し固定値を廃止**。
+- **閾値アーティファクトの教訓**: v9.9 で観測した「familiarity が負 drift 82.7% 支配・spread 沈黙 67.6%」は cid の内的特性ではなく**固定閾値のアーティファクト**だった。MAD-DT に替えると L06 長命群で familiarity 支配 54.8%→27.1% に半減し **4 軸が均等化**（social 28.2 / spread 27.0 / familiarity 27.1 / stability 17.7%）。＝「観察方法が像を作る」初期実例（§11.4 の起源の一つ）。
+- **「4 タイプ」という類型分類は存在しない**: disposition は**4 つの観測軸**であって、cid を 4 類型に分ける分類ではない。戦国大名モデル（下記）も cid 間 territory の記述で個体類型ではない。
+
+#### 5.8.2 基礎観測量 φ / attention map / partner familiarity
+- **φ（認知位相, Phase 1）**: label が structural world の平均位相にどれだけ追従するかの角度。`force = α·sin(mean_theta_structural − φ)`、α≈0.097。観察では**全 label が DETACHED**（過追従で構造に align しない）。
+- **attention map（Phase 2）**: node ID→出現頻度。structural set 内 node を毎 step +1、全体 ×0.99 減衰（**ATTENTION_DECAY=0.99**, 半減期 ≈69 step）。例: L101 entropy 低下 0.72（小さな世界で集中記憶）、label 間 hotspot 共有 L3↔L76 で 268 node＝**共有経験の原型**。
+- **partner familiarity（Phase 3, v9.6+）**: other_label_id→接触頻度。**FAMILIARITY_DECAY=0.998**（半減期 ≈346 step）。**これは Layer A（研究者観察）の減衰付き観測量**で、§5.4 spend packet が更新する **Layer B の virtual_familiarity（E3 駆動・減衰なし・累積のみ）とは別物**（A/B 分離 §5.7）。
+
+#### 5.8.3 初期 CID の観察事実
+- **接触統計**: main tracking-50 で接触 1 回以上の cid 5,124/5,224（**98.1%**）/ 接触 0 回 100/5,224（**1.9%**）＝ほぼ全 cid が他者接触を持つ（「ESDE は社会系」§5.4 の定量的裏付け）。
+- **L06 長命群**: 上位 10% 長命 cid は **n=5 優勢（61.4%、v9.13 で 49–44% に緩和）**かつ capture_rate が全体より低い（0.307 vs 0.379）。当初「複雑ほど時間で Δ 蓄積」と解釈したが、**v9.12 で n_core 由来の構造効果と再解釈**（B_Gen 由来でない、§5.3）。
+- **戦国大名モデル（v9.4 提案・未実装の将来足場）**: label=大名、統率力 = n_nodes×mean_S → gravity 影響圏 hop 数。影響圏が重なる**境界＝創発の場所**、A と B の境界から第三勢力 C の三項創発を問う。三項の足場は E3＝cid 間 2 者共鳴（§5.4）で確立したが 3-cid 以上の実装は棚上げ（Layer 5 Integration §7 への理論的前身、記録のみ）。
 
 ---
 
@@ -410,7 +429,7 @@ unrelated / same_step_random / matched / same_integration_low_familiarity / high
 
 ### 10.5 現行フロンティア: `unified/v1201`（一致率の観察）
 > **注**: `unified/v1201` は 2 アークを含む ―(i) **Atomset**（m1–m15、atom×atom 関係網による個性化と凍結核 m5 突破、§17.1）と (ii) 本節の**一致率 cosine 観察**（m31+）。本節は後者のみを扱う。前者は §17 参照。
-- 全 325 atom cosine を argmax で潰す前にそのまま観察する一連の試み（一致率＝確率的発生の存在のしかたを見る）。`full_cosine_probe`（m31: 全 cosine dump, 121MB/seed）、`cosine_viz`（m33: n_core=5 の生 cosine 可視化）、`roulette`（m35: 各(cid,t)で cosine を確率比例で 1 回ルーレット選択、レアを消さず記録のみ）。
+- 全 325 atom cosine を argmax で潰す前にそのまま観察する一連の試み（一致率＝確率的発生の存在のしかたを見る）。`full_cosine_probe/`（**m31**: 全 cosine dump, step10 seed0, n_rows 62,906, valid 325, 121.3MB/seed）、`cosine_viz/`（**m33**: n_core=5 seed0 の生 cosine 可視化 HTML）、`roulette/`（**m35**: 各(cid,t)で cosine を 0クリップ→正規化→一様乱数 1 つの累積ルーレットで 1 回選択、レアを消さず picked_atom と rank_of_picked を記録のみ）。**下流**（実コードで突合, 2026-06-25）: **m36** 全 325 atom が ≥1 回 picked（min 8 / max 201）＝死に atom なし、**m37** 引かれた atom 頻度の素カウント HTML、**m39/m40** 同一アルゴリズムを n_core=2 に拡張。先行に `cid_trajectory_probe/`（m27/m28 trajectory probe, m30 matchrate 計算監査）。m31/m33/m35 の番号は実ファイル（`m31_full_cosine_probe.py` / `m33_cosine_viz.py` / `m35_roulette_pick.py`）と一致を確認。
 - Ghost の扱い: is_ghost = `t ≥ host_lost_step`。step10 trajectory は reaped で host_lost 打切りのため境界 1 点で退化するが、`final=='ghost'` の cid は host_lost→run 末まで凍結 ghost 相を持つ（多点観察可）。
 - 規律: 濃度/spike/Δ/閾値/集中度を足さず生 cosine と素のカウントのみ。判定は Taka（§11.4「単一指標で分類するな」）。
 
@@ -577,6 +596,7 @@ pickup（v9.8c, TTL 延長のみ）/ death_pool / semantic gravity+deviation / v
 
 ### 17.2 v12.1 一致率ルーレット ― 確率的発生として読む
 - 全 325 atom の cosine を argmax で潰す前に、各 (cid,t) の**その瞬間の全 atom の立ち方**を確率比例で 1 回ルーレット選択し、レアを切り捨てず記録のみ（`unified/v1201` cosine_viz/full_cosine_probe/roulette、§10.5）。
+- 観察事実（m36）: 連続ルーレットで **全 325 atom が ≥1 回引かれる**（min 8 / max 201）＝確率比例でもレアは消えず全 atom が裾に残る。n_core=2/5 両方で実施（m35/m39）。
 - 確定一文: **平均化して同じ≠同じ**。上位の顔ぶれは v10 rank_1 と同じだが、違いは「過去〜未来を畳まず*掬い取れること自体*」＝集計が個を均したから似て見えるのであって個が無いわけではない。全件データが取れる土台が揃った（`07_unified_summary.md` Part 3 §4.2）。
 
 ### 17.3 v13 child-world v1301 ― CID 誕生形態→物理 param の縮小子系（統計監査）
@@ -601,7 +621,7 @@ v1302 の (A) は「親に似るか」を測ったため #CW7 トートロジー
 - **物理 (Genesis)**: 5 力・閉路＝容器・k\*=4 スケール不変（N=200–10,000）。
 - **Ecology**: 観察者は複数（局所観察者が大域より安定、g3_r4444）。
 - **Autonomy (v82)**: n→n+1 が質的相転移、5-node が転回点（密度独立性）。
-- **Primitive (v9.0–v9.18)**: 存在層確立 → 認知層実装。v9.8 cid/ghost、v9.10 pulse/MAD-DT、v9.11 Cognitive Capture、v9.13 persistence birth、v9.14 Q/E3、v9.15 自己読み、v9.16 age_factor、v9.17 他者読み、v9.18 A+C・意識原資モデル。
+- **Primitive (v9.0–v9.18)**: 存在層確立 → 認知層実装。v9.4 φ 認知位相・戦国大名モデル（足場）、v9.8 cid/ghost・**disposition 4 軸**（§5.8）、v9.10 pulse/MAD-DT（固定閾値廃止＝v9.9 disposition 支配は閾値アーティファクトと判明）、v9.11 Cognitive Capture、v9.13 persistence birth、v9.14 Q/E3、v9.15 自己読み、v9.16 age_factor、v9.17 他者読み、v9.18 A+C・意識原資モデル。接触≥1回 98.1%・L06 長命群 n=5 優勢（§5.8.3）。
 - **Developmental (v10.0–v10.13a)**: v10.0 4層、v10.1 摂食、v10.2 確率 Q/C 切替・n_core 層化、v10.3 双方向 E3、v10.4 Integration 機構化、v10.5 α/β（Layer5 完成）、v10.6 Atom×cid cosine、v10.7 オービス（source_event/path/因果階層）、v10.8 Atom 持込、v10.9–v10.12 感度・取込 prototype、v10.13a 5-phase map。
 - **Unified (v1100–v1114)**: 留保#33（集計単位で像が変わる）、v1101a 注意機構（「注意の揺れ≠意識」）、v1102 受け手構造で応答反転、v1103 48 次元密度で応答 atom 候補を狭める、v1104/a scope×粒度 4 非対称、v1106–v1109b ループ性＝ESDE の本質、v1110–v1113 異系対応の失敗、**v1114 注意センター内部注意 Step1 確立（2026-06-05）**。
 - **v1201 (v12 Atomset / v12.1)**: atom×atom 関係網の個性化（全チャネル null・凍結核 m5 で初の cid 特異性 sign-flip）+ 一致率＝cosine(cid48,atom48) の確率的観察（roulette、レアを切り捨てない）。§17.1-17.2。
@@ -619,4 +639,6 @@ v1302 の (A) は「親に似るか」を測ったため #CW7 トートロジー
 *更新（2026-06-21, v13 child-world フロンティア追加）: §12.1 に `unified/v1301/` 行を追加、年表に v13 を追加。**child-world** = `V82Engine(N=B_gen×10≈100-350) + V43 物理 + VirtualLayerV9`（stress OFF + semantic_pressure OFF）＝ main run と同一スタックの縮小・param 変調版。CID 誕生時 M_c 4 値を物理 param に写像（N←B_gen×10 / plb←0.007·(1+0.15·tanh(z_Savg)) / K_sync←r_core 正規化 / 初期θ←phase_sig、サンプラー #30 = 実現値コピーでない構造同型）、4 対照（real/shuffle/random/canon）。読＝frozen `per_subject_seed0`、書＝`unified/v1301/` のみ、child engine は in-memory・**親物理非書込**（一方向、v9.13 方針内）。**統計監査の確定（記録のみ判定なし）**: (1) 寿命同期 run の `life→n_labels +0.85` は run 長トートロジー（観測窓を寿命に同期した副作用、交絡を外すと消滅）、(2) 対照 canon の std 最小は run 長二重固定のアーティファクト、(3) **`real≒shuffle` の真因は署名 mean/std 対照が cid→param→署名の pairing を構造上見ないこと**（shuffle は周辺分布不変）、pairing を見る置換検定では `K_sync→sync_order`・`plb→link/label_density` が両 ratio perm-p<0.005（ただし manipulation check であって CID 創発でない）。(4) 写像は K_sync を 100%・θ を 84% 伝達＝入口で潰してはいない、弱いのは N の源均質（B_gen≒n_core）と plb 設計幅 ±15% の 2 点。**次段**: 全検（全 CID 値→全物理 param）、ただし CID 値は実質 ~5-14 独立軸・物理 param も ~6-7 独立軸（状態変数 L/θ/S/E/R/Z で束ね、S 過剰決定・beta=R↔S 結合）ゆえ「全部繋ぐ」は冗長、選定合理性を 3AI 合議で詰める。詳細 = `docs/ai_summaries/07_unified_summary.md` Part 4 / `docs/現在の方向_childworld全検.md` / `unified/v1301/`。なお child の N は設計上 100-350 で、**「N=5000」は親 v918 main の値であって child の目標ではない**。*
 
 *更新（2026-06-25, フロンティア網羅 + ai_summaries 統合反映）: 実行履歴（`unified/v1201`/`v1301`/`v1302`）と本書の差を点検し、抜けていた **§17 フロンティア実験アーク**（v12 Atomset 全 arc・凍結核 m5 突破・v12.1 ルーレット・v1301 統計監査・**v1302 child-world 全結果**・v1303 方向）と **§1.6「存在＝同期」目的言語化** を追加。射程行・§0.3 LIVE・§10.5 注記・§12.1 dir 表・年表を v1302 まで更新。v1302 (A) は懐疑再点検（`unified/v1302/cw_v1302_A_skeptic_recheck.{py,md}`）で #CW7 が「残差ゼロ」＝identity transfer の証拠でないと確定（§17.4）。ai_summaries 統合（06b/06c→06・07 追補 4 本→07、2026-06-25）に伴い旧 addendum 参照を `07_unified_summary.md` Part 表記へ更新。コア §3–§9（実コード監査済）に欠落なしを確認、追加は最前線のみ。*
+
+*更新（2026-06-25, 初期 CID 研究の網羅 + cosine m番号突合）: (1) §10.5 の `unified/v1201` cosine 観察の m 番号を実ファイルで突合＝**m31/m33/m35 は正しい**（`m31_full_cosine_probe.py`/`m33_cosine_viz.py`/`m35_roulette_pick.py`、m31 出力 121.3MB/seed・n_rows 62,906 を実測確認）。下流 m36（全 325 atom ≥1 回 picked, min8/max201）/m37（頻度 HTML）/m39-40（n_core=2 拡張）と先行 cid_trajectory_probe（m27/28/30）を §10.5・§17.2 に補記。(2) ai_summaries 精読で初期 CID 研究（Primitive v9.4–v9.10）の抜けを補完＝**§5.8 を新設**: 本書が §5.2/§5.4/§13 で参照しながら未定義だった **disposition（cid キャラクター 4 軸: social/stability/spread/familiarity、観察専用・v9.8b 固定閾値→v9.10 MAD-DT 廃止・v9.9 支配は閾値アーティファクト）**、基礎観測量 **φ（認知位相）/ attention map（ATTENTION_DECAY=0.99）/ partner familiarity（=0.998、Layer A 減衰付き、Layer B virtual_familiarity と別物）**、観察事実（接触≥1回 98.1% / L06 長命群 n=5 優勢 / 戦国大名モデル＝未実装の Layer 5 前身）を定義・収録。**「CID の 4 タイプ」という明示的類型分類は存在せず、disposition は 4 つの観測軸**であることを明記。年表 Primitive 行に v9.4/disposition を追加。*
 
