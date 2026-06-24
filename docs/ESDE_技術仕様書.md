@@ -86,7 +86,7 @@ LLM が主応答を作り ESDE が事後説明に堕ちる構成は目標から�
 ```
 物理層 ←(θ torque, 微小・M≈0.993)― 存在層 ―(観察のみ)→ 認知層 ―(認知のみ)→ 意識層
 ```
-**物理層に書き込むのは存在層の torque だけ**。認知層・意識層・Integration・後処理はすべて物理層に対し read-only。この一方向性は **bit-identity 5 段連続（v9.15→…→v9.18, 5,224 cid で max abs diff 0.0）** で構造的に実証済（§11.1）。
+**物理層に書き込むのは存在層の torque だけ**。認知層・意識層・Integration・後処理はすべて物理層に対し read-only。この一方向性は **bit-identity 5 段連続（v9.15→…→v9.18, 5,224 cid で max abs diff 0.0）** で構造的に実証済（§11.1）。**この規律は思想でなく経験**で、Cognition v6「物理層は床。床の上に建てる」が起源（§15.3）。
 
 ### 2.3 エネルギー保存的結合（Q→C）
 ```
@@ -216,6 +216,13 @@ k\*=4 の観測解像度（§3.2）は単一の大域視点ではない。Ecolog
 - **環境変動と逆相関**: 好況（リンク増）＝競争激化＝label 減（好況期に 2-node 全滅、4-5-node はむしろ有利）、不況＝既存 label 温存。＝ stress（好不況、§3.6）が存在層に効く経路。
 - **stress OFF ＝存在層成熟の帰結**: v918 main run が stress OFF（§3.6）なのは抑圧でなく**存在層成熟の帰結として位置づけられる**（成熟すると S 分布の揺らぎが減り大型島頻度が下がる副作用、神の手でない）。
 - 留保: 200win で見えた share_retain 3 相構造（6+ で retain>1.0）は 500win で全サイズ<1.0 の**偽信号**と確定、5-node が真の底（観測窓長で像が変わる、§11.4）。
+
+### 4.6 存在層＝位相周波数グループ（Cognition v7 で確立）― 仮想層の起源
+存在層（§4 冒頭の通り**旧称「仮想層」**、Cognition 系 v7.x で virtual layer として確立）の最重要構造事実（`docs/ai_summaries/04_cognition_summary.md`、`docs/ESDE_Cognition_Report_Final.md`）。phase_sig（§4.1）が「誕生時平均 θ」である理由の根:
+- **label は spatial cluster でなく位相周波数グループ（θ-space organization）**: v7.3 で確定。label 内 node 間距離は 40-60 hops（グリッド上に散在）、label node の **22% は link を持たない**。**R>0 cycle は label 内（intra）でなく label 間（inter）の boundary で形成**＝構造的相互作用の場は境界。label territory は重なり分離不能（§7 の non-separable α / m5 凍結核 §17.1 の前身）。
+- **budget=1 ゼロサム代謝（v7.3）**: 物理的安定＝1 を label 間で分配。1,120 labels 誕生 → **9 生存（0.8%、97% 圧縮）**。生存法則＝late arrival（w100+）＋ low R+ window で誕生（calm 期 R+≈8.7 vs mean 19.5）＋ 5-node（§4.4/§4.5 と整合）。
+- **複雑性は N でなくルールから（v7.4）**: N=5000→10000・12 seeds で同一均衡（links 5701±100, stress 0.986±0.011）、R+≈8 は N 非依存。＝「複雑性は N からでなくルールから born」（v1302「物理演算が変わらねば系は変わらない」§17.4 の祖型）。
+- **virtual layer の独立性（v7.0-7.2）**: R>0 motif から label 誕生、位相 torque で virtual energy を物理層独立に維持（30:1 structural amplification、corr(R+,vE)=0.17 と弱いが 225 labels sustain）。
 
 ---
 
@@ -585,6 +592,13 @@ ESDE を corr/生存数 一つで判定しない。多レンズ個別軌跡・n_
 ### 15.2 休眠保持（不利でも削除しない＝誤りの価値の反転）
 pickup（v9.8c, TTL 延長のみ）/ death_pool / semantic gravity+deviation / v99_ 内部軸 / Layer A 50-step Fetch（stage2 で未使用だがコード保持）/ V_unified（物理層同期 baseline として保持）。
 
+### 15.3 Cognition 系の失敗記録（v3-v7、繰り返さない）― frozen 物理規律の起源
+現行アーキテクチャは Cognition 系 v3-v7 の大量の失敗が駆動して確定した（`docs/ai_summaries/04_cognition_summary.md`、「却下された方針を必ず読む」）。
+- **2 つの Taka 確定（規律の起源）**: (i) v5.1 **「選択なき循環は洗濯機」**＝energy が flow しても selection なしでは structure 形成なし（**selection 先・quantity 後**、§3.2「トポロジが熱力学に先行」/ v1302 plb 否定 §17.4 の根拠）。(ii) v6.x **「物理層は床。床の上に建てる」**＝固定 p_link_birth/latent_refresh/decay 内に circulation/memory を実装するのは根本的に誤り。**この発言以降、物理層への介入は禁則**（§2.2/§11.2 frozen 規律の起源）。
+- **却下された architecture（再実装しない）**: v4.2 adaptive dynamics（wave6 universal collapse＝link starvation は相転移で tuning 不可）/ v4.3 encapsulation（cluster identity 持続せず＝「水分子を追跡して whirlpool を測る」）/ v4.5-4.7 latent boost（incorporation=0、**spatial mismatch** で mobile 3-5 node cluster と非互換）/ v4.8 terrain genesis（local link density 低すぎ cooling 不発）/ v4.8b chemical valence（初 M3 達成も bubble-crash-depletion）/ v4.9 history layer（timescale mismatch）。
+- **3 度反復した同一失敗パターン**: **intermediary field の decay が target response time を超える**（中間場が応答前に消える）＝新機構で「中間場・履歴層・boost 場」を足すときの再発リスク。
+- **転機 v4.9 P7/P8**: 確率的 P(link) を決定論的 T_ij>E_ij に変え、**位相幾何（cos θ）が RNG を置換**＝semantic phase が structural generation に初参入（現行 realization §3.2 の前身）。
+
 ---
 
 ## 16. 既知の欠陥・盲点（Code A 再発防止）
@@ -638,6 +652,7 @@ v1302 の (A) は「親に似るか」を測ったため #CW7 トートロジー
 - **物理 (Genesis)**: 5 力・閉路＝容器・k\*=4 スケール不変（N=200–10,000）。
 - **Ecology**: 観察者は複数（局所観察者が大域より安定、g3_r4444、global=lossy compression、long_drift 支配の metastable regime）＝cid 複数性の前身（§3.7）。
 - **Autonomy (v82)**: n→n+1 が質的相転移、5-node が転回点（density independence）、territory=場/link=主体、環境変動と逆相関、stress OFF=存在層成熟の帰結（§4.5）。
+- **Cognition (v3-v7)**: 失敗が現行アーキテクチャを駆動。**「物理層は床」（v6）「選択なき循環は洗濯機」（v5.1）= frozen 物理規律の起源**、label=位相周波数グループ（θ-space, not spatial, v7.3）、budget=1 ゼロサム（1120→9）、複雑性はルールから（N 非依存, v7.4）。v4.x 却下 architecture 群（§4.6, §15.3）。
 - **Primitive (v9.0–v9.18)**: 存在層確立 → 認知層実装。v9.4 φ 認知位相・戦国大名モデル（足場）、v9.8 cid/ghost・**disposition 4 軸**（§5.8）、v9.10 pulse/MAD-DT（固定閾値廃止＝v9.9 disposition 支配は閾値アーティファクトと判明）、v9.11 Cognitive Capture、v9.13 persistence birth、v9.14 Q/E3、v9.15 自己読み、v9.16 age_factor、v9.17 他者読み、v9.18 A+C・意識原資モデル。接触≥1回 98.1%・L06 長命群 n=5 優勢（§5.8.3）。
 - **Developmental (v10.0–v10.13a)**: v10.0 4層、v10.1 摂食、v10.2 確率 Q/C 切替・n_core 層化、v10.3 双方向 E3、v10.4 Integration 機構化、v10.5 α/β（Layer5 完成）、v10.6 Atom×cid cosine、v10.7 オービス（source_event/path/因果階層）、v10.8 Atom 持込、v10.9–v10.12 感度・取込 prototype、v10.13a 5-phase map。
 - **Unified (v1100–v1114)**: 留保#33（集計単位で像が変わる）、v1101a 注意機構（「注意の揺れ≠意識」）、v1102 受け手構造で応答反転、v1103 48 次元密度で応答 atom 候補を狭める、v1104/a scope×粒度 4 非対称、v1106–v1109b ループ性＝ESDE の本質、v1110–v1113 異系対応の失敗、**v1114 注意センター内部注意 Step1 確立（2026-06-05）**。
@@ -660,4 +675,6 @@ v1302 の (A) は「親に似るか」を測ったため #CW7 トートロジー
 *更新（2026-06-25, 初期 CID 研究の網羅 + cosine m番号突合）: (1) §10.5 の `unified/v1201` cosine 観察の m 番号を実ファイルで突合＝**m31/m33/m35 は正しい**（`m31_full_cosine_probe.py`/`m33_cosine_viz.py`/`m35_roulette_pick.py`、m31 出力 121.3MB/seed・n_rows 62,906 を実測確認）。下流 m36（全 325 atom ≥1 回 picked, min8/max201）/m37（頻度 HTML）/m39-40（n_core=2 拡張）と先行 cid_trajectory_probe（m27/28/30）を §10.5・§17.2 に補記。(2) ai_summaries 精読で初期 CID 研究（Primitive v9.4–v9.10）の抜けを補完＝**§5.8 を新設**: 本書が §5.2/§5.4/§13 で参照しながら未定義だった **disposition（cid キャラクター 4 軸: social/stability/spread/familiarity、観察専用・v9.8b 固定閾値→v9.10 MAD-DT 廃止・v9.9 支配は閾値アーティファクト）**、基礎観測量 **φ（認知位相）/ attention map（ATTENTION_DECAY=0.99）/ partner familiarity（=0.998、Layer A 減衰付き、Layer B virtual_familiarity と別物）**、観察事実（接触≥1回 98.1% / L06 長命群 n=5 優勢 / 戦国大名モデル＝未実装の Layer 5 前身）を定義・収録。**「CID の 4 タイプ」という明示的類型分類は存在せず、disposition は 4 つの観測軸**であることを明記。年表 Primitive 行に v9.4/disposition を追加。*
 
 *更新（2026-06-25, Ecology 観察者複数性 + 存在層成熟の補完）: 年表 1 行のみだった初期 2 フェーズを本文へ。**§3.7 観察者エコロジー**（Ecology 系: global observer=lossy compression・divergence デフォルト・long_drift 支配の metastable distributed regime・local persistence 96%＝「主体は複数あり各々独自の世界を見る」cid 複数性の前身）と **§4.5 存在層の成熟**（Autonomy 系: 全 n→n+1 質的相転移・5-node 転換点・density independence・territory=場 vs link=主体・環境変動と逆相関・**stress OFF=存在層成熟の帰結**で §3.6 の理由を補完）を新設。年表 Ecology/Autonomy 行に §3.7/§4.5 参照を追加。*
+
+*更新（2026-06-25, Cognition 系 失敗記録の補完）: 年表に Cognition 行が無く失敗の記録（04_cognition_summary「最重要・最複雑」）が薄かったため、**§4.6 存在層＝位相周波数グループ**（label は spatial cluster でなく θ-space organization・node 間 40-60 hops・22% link なし・R>0 は label 間境界・budget=1 で 1120→9 生存・複雑性は N でなくルールから＝v1302 §17.4 の祖型・仮想層は Cognition v7 で確立）と **§15.3 Cognition 失敗記録**（**「物理層は床」v6 / 「選択なき循環は洗濯機」v5.1 ＝ frozen 物理規律の起源**・v4.x 却下 architecture 群・3 度反復した timescale mismatch・転機 v4.9 P7/P8 で位相幾何が RNG 置換）を新設。§2.2 に規律の出自（Cognition v6）、年表に Cognition 行を追加。仮想層→存在層の改名は §4 冒頭既出。*
 
