@@ -1,9 +1,9 @@
 # ESDE 技術仕様書（Genesis 系・現行）
 
-*版*: 1.0（2026-06-18 作成、Code A）
+*版*: 1.1（2026-06-18 作成、Code A / 2026-06-25 フロンティア網羅追記、Claude Code）
 *出典*: `docs/ai_summaries/`（00_index 〜 11、約14,000行）を一本化。詳細数値は各原典（`docs/ESDE_*_Report.md` / `primitive/v9XX/*.md` / `developmental/v10X/*.md` / `unified/v1NNN/*.md`）に遡れる。
 *対象範囲*: 現役の **Genesis 系**（物理層→cid→α/β が emergent する「上昇」アプローチ）。Language 系（326 Atoms×48軸、2026-03 凍結）は §10 に substrate として収録。
-*射程の時点*: 認知層 v9.18 / Developmental v10.0–v10.13a / Unified v1100–v1114（注意センター Step1 確立, 2026-06-05）+ 現行フロンティア v1201。
+*射程の時点*: 認知層 v9.18 / Developmental v10.0–v10.13a / Unified v1100–v1114（注意センター Step1 確立, 2026-06-05）+ フロンティア v12 Atomset（v1201）・v13 child-world（v1301/v1302、2026-06-23）+ v1303 設計（§17）。
 
 ---
 
@@ -20,7 +20,7 @@ ESDE は**虚構の構造実験**であり、現実の人間の認知・意識�
 - 効果は設計上「統計的にわずか」であり、**神の手（god's hand）ではない**。
 
 ### 0.3 現行 / 凍結 / 廃止の区別（先に明示）
-- **現役 (LIVE)**: 物理層 `ecology/engine/` + エンジン `autonomy/v82` + 存在層 `primitive/v910` + 認知層 entrypoint `primitive/v918/v918_memory_readout.py` + 後処理 `developmental/v107+` + 注意センター `unified/v1114` + フロンティア `unified/v1201`。
+- **現役 (LIVE)**: 物理層 `ecology/engine/` + エンジン `autonomy/v82` + 存在層 `primitive/v910` + 認知層 entrypoint `primitive/v918/v918_memory_readout.py` + 後処理 `developmental/v107+` + 注意センター `unified/v1114` + フロンティア `unified/v1201`（v12 Atomset / 一致率）・`unified/v1301`・`unified/v1302`（v13 child-world、最新、§17）。
 - **凍結 (FROZEN)**: Language 系（`language/`、2026-03 凍結）。ただし atom profile の供給源として現役後処理に接続（§10）。
 - **廃止 (DEPRECATED, コードは残すが再実装しない)**: `autonomy/v90` 旧 VirtualLayer、`S≥0.20` 閾値、path B、torque_factor（v9.7 認知→θ介入）、stress_decay、「loop collapse」方向、v1110–v1113 の「異系対応」枠組み（§15）。
 
@@ -57,6 +57,14 @@ LLM が主応答を作り ESDE が事後説明に堕ちる構成は目標から�
 - **認知層** = 実験者が先回りして定義した「cid が受信できるものの範囲」。定義できないことはやらない。
 - **意識層** = 実験者が「決定に関わる」と定義した層。決定は認知層を前提に発生し、意識層の原資は認知活動がもたらす（Q→C 転化）。
 - これは**論理学的な構造定義**（仮想的設定）であって、現実の認知・意識ではない。AI は借用語に多少騙されてよいが、**実験者は決して騙されてはならない**（実体は「ledger 列の値の転記」）。
+
+### 1.6 目的の現在の言語化 ―「存在＝同期」（2026-06 セッション）
+§1.4「会話できる ESDE」の上位にある、目的そのものの言語化。判定でなく研究者（Taka）の枠組みの保存（出典 `docs/ai_summaries/esde_direction_memo_existence_sync.md`、`docs/仕様書/v1303_phase_design.md`）。
+- **存在＝多くの系の同期**: ある存在を扱う際に**同期する系が多いほど、私たちはそれは存在する、と感覚的に理解する**（原文趣旨）。幼児が「りんご」を視覚・触覚・温度・音・発話の多系の重なりで覚えるように、一致率（§10.3）は ESDE が外部構造と**何系で同期するか**の測定。**多次元＝存在らしさ**。
+- **一致率 0.5-0.6 頭打ちの解釈**: 同期できる系が言語 1 本だから。物理条件を ESDE の射程に加える＝同期できる系を増やす＝頭打ちを破る筋（「言語で詰まったから物理に逃げる」ではなく、存在＝多系の同期だから系を増やすのが本筋という論理的帰結）。
+- **CID＝偏り検出器**: 「親子」は比喩で、本質は「**通常 ESDE と異なる系を自動で作り出す仕組み**」（§17.3-17.5）。親 CID の偏りを拾う＝方向を持った ESDE の進化（ただのランダムでない）。
+- **直接アクセス全滅＝因果律の自然な防衛＝堅牢性**: 外部から物理を直接書く経路は全滅した（§17.4 v1302 #CW1-4）。だから「**系自身が条件を決める**仕組み」を作る＝**神の手の逆**。
+- **AI 過去案（足す）vs 構想（取り出す）**: AI 案は「ESDE に何かを足す」（Atom 取込・K_sync 接続・topology 移植）で全て弾かれた。構想は「ESDE から何かを取り出す」（多様性を生む物理条件を系自身に探させる／read-back）＝ESDE が自然にやる方向に乗る。名付けは後から来る（自然現象が出来上がって人間が名付ける、アベコベでない）。
 
 ---
 
@@ -401,6 +409,7 @@ unrelated / same_step_random / matched / same_integration_low_familiarity / high
 - v1100 候補6: Language base 優位 atom {SOC.official, PRP.part}(2) vs Genesis null-cell atom(20) の **Jaccard=0**（両系は独立に別の「文脈非依存性」を捕捉）。
 
 ### 10.5 現行フロンティア: `unified/v1201`（一致率の観察）
+> **注**: `unified/v1201` は 2 アークを含む ―(i) **Atomset**（m1–m15、atom×atom 関係網による個性化と凍結核 m5 突破、§17.1）と (ii) 本節の**一致率 cosine 観察**（m31+）。本節は後者のみを扱う。前者は §17 参照。
 - 全 325 atom cosine を argmax で潰す前にそのまま観察する一連の試み（一致率＝確率的発生の存在のしかたを見る）。`full_cosine_probe`（m31: 全 cosine dump, 121MB/seed）、`cosine_viz`（m33: n_core=5 の生 cosine 可視化）、`roulette`（m35: 各(cid,t)で cosine を確率比例で 1 回ルーレット選択、レアを消さず記録のみ）。
 - Ghost の扱い: is_ghost = `t ≥ host_lost_step`。step10 trajectory は reaped で host_lost 打切りのため境界 1 点で退化するが、`final=='ghost'` の cid は host_lost→run 末まで凍結 ghost 相を持つ（多点観察可）。
 - 規律: 濃度/spike/Δ/閾値/集中度を足さず生 cosine と素のカウントのみ。判定は Taka（§11.4「単一指標で分類するな」）。
@@ -452,8 +461,9 @@ ESDE を corr/生存数 一つで判定しない。多レンズ個別軌跡・n_
 | `primitive/v911..v918/` | 認知層スタック（capture/persistence/audit/selfbuffer/A+C） | 現役（entrypoint=v918） |
 | `developmental/v10X/` | 意識 C・摂食・balance・Integration・後処理オービス | 現役 |
 | `unified/v11xx/` | scope×粒度役割表・注意センター | 現役（最新 v1114） |
-| `unified/v1201/` | 一致率（cosine）観察 | 現役 |
-| `unified/v1301/` | CID 誕生形態→物理 param の子系（現行フロンティア） | 現役（最新） |
+| `unified/v1201/` | v12 Atomset（atom×atom 個性化, m1-15）+ 一致率 cosine 観察（m31+） | 現役（§17.1-17.2） |
+| `unified/v1301/` | CID 誕生形態→物理 param の子系（child-world 第一段・統計監査） | 現役（§17.3） |
+| `unified/v1302/` | child-world 継承点検（runtime 3 ノブ全滅 / (A) 持続 param transfer / (B) topology null） | 現役（最新, §17.4） |
 | `language/` | Atom 326 / Synapse / Lexicon | **2026-03 凍結**（substrate） |
 | `legacy/`, `旧/` | 旧資産 | 凍結 |
 
@@ -553,6 +563,40 @@ pickup（v9.8c, TTL 延長のみ）/ death_pool / semantic gravity+deviation / v
 
 ---
 
+## 17. フロンティア実験アーク（v12 Atomset / v13 child-world）― 現行最前線
+
+本書コア（§1–§16）の確定後に進んだ最前線。いずれも **物理層 frozen・親不可侵**（子 engine は in-memory、親 physics/inject/ledger/state 非書込）を厳守。判定（成功/失敗）は置かず観察事実・確定事実・留保（#CW*）で記す。出典は各 `unified/v12xx`・`unified/v13xx` と `docs/ai_summaries/07_unified_summary.md`（Part 3/4）。
+
+### 17.1 v12 Atomset（`unified/v1201`, m1–m15）― atom×atom 関係網による個性化
+- **主題**: CID 境界を越えた **atom×atom 関係網**（cross-CID）。誕生時 atom（n_core+phase_sig→rank_1）を介し、per-cid 経験（robust_z 特徴度）を per-Atom に集約し、同 atom を担う複数 cid に緩く共有・伝播させて cid 特異な個性化を作れるかを問う（`m5_port_inventory_and_plan.md`）。
+- **チャネル全 null（確定）**: torque / lambda / link / field / multi の全チャネルで、baseline η²(degree)=0.624 を超える atom-level 個性化が出ず。atom の成員 cid は**構造（誕生時 n_core+phase_sig）由来で既にクラスタ**しており、緩い文化は dynamics を cid 特異に変えない。shuffle 対照で効果が消える＝偽の足場（`m5_allchannels_result.md`）。
+- **主体の訂正（確定）**: 経験を CID の物理 `state.E` に直接書くと、物理ダイナミクスが毎 step 上書きし cid 特異情報が**干渉で scramble**（D 実割当 vs E shuffle が seed で符号不一致 −17/+5/+7）。主体は **CID でなく AtomID**、経験は state を直接書かず **torque 係数等の standing バイアス**として乗せ、cid 間で緩く共有する分離で干渉が解ける（`m5_interference_and_subject.md`, `m5_channel_investigation.md`、概念は memory `project_atomset_subject_is_atomid_not_cid` / `project_atomset_channels_all_null`）。
+- **m5 突破 ― 凍結核を動かす（初の cid 特異性）**: 全チャネルが「核の外貼り」だったため shuffle で消えた。**phase_sig（凍結核）を「いつもと違う経験の時だけ構造内で動かす」**と、corr(核 drift, Δsurvival) が **C（実割当）5/6 seed 正（平均 +0.40）/ F（shuffle）5/6 seed 負（平均 −0.26）で sign-flip**＝初めて cid 特異性が立った。機構的理由＝**phase_sig は torque 標的かつ addressing 基準**で、動いた核を dynamics と入力の両方が読む。θ 安全（0 θdiv、Δlinks −3.6〜−4.9% の slight）（`m5_core_result.md`、memory `unified/v1201/m5_core_result.md`）。
+- **主要 param/コード/出力**: α(gain) no-inf 域 ≤0.5・λ(decay) 0.95–0.99・per-axis floor 10×MAD・式は **robust_z（median/MAD 符号付き個体内標準化）のみ裏口なし**（`m5_formula_selection_report.md`, `m5_typesplit_decay_report.md`）。本体 `m5_substrate_atom.py`（CHANNEL 切替）、別チャネル実装点 `primitive/v910/virtual_layer_v9.py:432-441`、出力 `run_m5_core/{A,C,F,D,E}/seed*/`。
+- **留保**: ① 48 次元人為性（誕生 atom は n_core×phase_sig の 2 量からの粗写像、実測 atom 8–10 種、centroids は LLM+手定義＝測定でなく定義）② shuffle 対照必須 ③ 効果量 slight 維持（over-drive は観察用に分離）④ 突破は seed0 が逆＝6→12 seed で頑健性要確認 ⑤ per-Atom 集約で cid 特異性が群レベルに均される ⑥ phase_sig 凍結ゆえ identity（一致率）を進化させる経路が別途必要。
+
+### 17.2 v12.1 一致率ルーレット ― 確率的発生として読む
+- 全 325 atom の cosine を argmax で潰す前に、各 (cid,t) の**その瞬間の全 atom の立ち方**を確率比例で 1 回ルーレット選択し、レアを切り捨てず記録のみ（`unified/v1201` cosine_viz/full_cosine_probe/roulette、§10.5）。
+- 確定一文: **平均化して同じ≠同じ**。上位の顔ぶれは v10 rank_1 と同じだが、違いは「過去〜未来を畳まず*掬い取れること自体*」＝集計が個を均したから似て見えるのであって個が無いわけではない。全件データが取れる土台が揃った（`07_unified_summary.md` Part 3 §4.2）。
+
+### 17.3 v13 child-world v1301 ― CID 誕生形態→物理 param の縮小子系（統計監査）
+- **設計**: `V82Engine(N=B_gen×10≈100-350)+V43 物理+VirtualLayerV9`（stress OFF + semantic_pressure OFF）＝main run 同一スタックの縮小・param 変調版。誕生時 M_c 4 値→物理 param 写像（N←B_gen×10 / plb←0.007·(1+0.15·tanh(z_Savg)) / K_sync←r_core 正規化 / 初期θ←phase_sig、サンプラー #30＝構造同型）。4 対照 real/shuffle/random/canon。読＝frozen `per_subject_seed0`、書＝`unified/v1301/` のみ（`cw_run_*_report.md`）。
+- **統計監査の確定（記録のみ）**: (1) 前報告 `life→n_labels +0.85` は **run 長トートロジー**（観測窓を寿命に同期した副作用、交絡を外すと消滅）。(2) 対照 canon の std 最小は run 長二重固定のアーティファクト。(3) **`real≒shuffle` の真因は署名 mean/std 対照が cid→param→署名の pairing を構造上見ないこと**（shuffle は周辺分布不変）。pairing を見る置換検定では `K_sync→sync_order`・`plb→link/label_density` が両 ratio perm-p<0.005（ただし manipulation check であって CID 創発でない）。(4) 写像は K_sync 100%・θ 84% 伝達＝入口で潰していない。弱点は N の源均質（B_gen≒n_core）と plb 設計幅 ±15% の 2 点。
+
+### 17.4 v13 child-world v1302 ― 「継承は持続パラメータ経由でのみ」確定
+親 CID の偏り（R＝閉路＝CID の本体）を子に継がせ、より偏った系を作れるかを点検（`unified/v1302/cw_v1302_*`、`docs/レポート/v1302_phase_result.md`）。
+- **runtime 駆動 3 ノブ全滅（#CW1-4）**: 走行中に物理を書き換える **K_sync**（位相は kuramoto_r を動かすが loop/R 不変）・**auto_growth**（統合ノブで R と cluster サイズは逆・非単調 #CW3）・**β**（cap 干渉で非単調）がいずれも偏り R を増幅しない＝**topology が熱力学に上流**という Genesis 確定の実機裏付け。plb（量）も脆弱軸かつ「洗濯機」R=0 で否定。
+- **pivot**: 偏りは誕生時の初期条件としてのみ渡せる。B_gen は同 n_core 内不変で一意性なし（#CW5）→子は member S/R/conc の structural-strength で代替。step-0 チャネル分解で **K_sync←r_core は幻チャネル**（単独 r=0.108 n.s.、transfer 本体は plb←s_avg、#CW6）。
+- **(A) scalar→plb は 3 層で transfer 成立**: structural-strength を生きたレバー plb に当て late-Mantel n2 0.62 / n4 0.73 / n5 0.72（p=0.001、canon は n4/n5≈0）。N 固定対照で plb 純効果と確認（#CW8）。
+- **(A) 懐疑再点検（本リポ `cw_v1302_A_skeptic_recheck.{py,md}`、生 parquet read-only）― #CW7 は控えめ**: transfer は親 3 軸 (s_avg,r_core,conc) 距離 vs 子署名距離の Mantel だが、(A) で仕込む plb は**その 3 軸の z 平均の単調関数**。検証で ① Mantel(plb 距離のみ) > Mantel(3 軸)、② plb 除去後の 3 軸残差↔子残差 r≈−0.01（n2）＝**ノブを超えた継承は残差ゼロ**、③ 単一 seed 0.40→5seed 0.62 ＝「seed 増で強化」は **seed 平均化の底上げ**、④ late 署名 6 指標は plb の機械的読み出し（lifecycle rho 0.92 等）。＝**0.62 は identity transfer の証拠でなく「自分が回したノブがそのノブの動かすものを動かしたか」を継承と言い換えた値**。ただし「graded ノブで canon と統計的に違う系を作れる」こと自体は本物。
+- **(B) topology 移植は交絡除去後も null（#CW9-11）**: 誕生時 field はほぼ tree（偏り未形成 #CW9）→成熟期移植は τ で符号激変＝非頑健（#CW10）→`run_injection` skip による空エンジン再成長 washout 交絡を Bov(overlay) で除去後も n2 null（#CW11）。成熟・閉路ありの構造を canonical baseline に grafting しても親 identity は伝わらない（memory `feedback_transplant_skip_injection_confound`）。
+- **確定一文**: **継承は持続パラメータ経由（(A)）でのみ成立し、初期条件経由（(B)）では成立しない**。形のコピー（初期条件）は物理ルールを変えず canon 力学に均される。**ESDE で系を変えるにはルール（パラメータ）を変えるしかない**（Taka「物理演算そのものが変わる設計でなければ変わりようがない」の構造的確認）。
+
+### 17.5 v1303 の方向（測る相手を canon へ）― #CW7 を外す
+v1302 の (A) は「親に似るか」を測ったため #CW7 トートロジーが残った。v1303 は測る相手を**「親 CID に似るか」→「通常 ESDE（canon）と統計的に違う系か」**に変える（これで #CW7 が消える）。評価軸は §1.6「存在＝多くの系の同期」。観察1＝(A) の子は canon と有意に違うか（KS/効果サイズ・多次元分離・S/R/conc 軸別）、観察2＝structural-strength の合成規則（等重き/偏り重視/意味づけ無し）で多様性が変わるか。候補1-4 は `docs/仕様書/v1303_phase_design.md`。選定は Taka 主題評価領域。
+
+---
+
 ## 付録: 版の時系列（一行年表）
 - **物理 (Genesis)**: 5 力・閉路＝容器・k\*=4 スケール不変（N=200–10,000）。
 - **Ecology**: 観察者は複数（局所観察者が大域より安定、g3_r4444）。
@@ -560,16 +604,19 @@ pickup（v9.8c, TTL 延長のみ）/ death_pool / semantic gravity+deviation / v
 - **Primitive (v9.0–v9.18)**: 存在層確立 → 認知層実装。v9.8 cid/ghost、v9.10 pulse/MAD-DT、v9.11 Cognitive Capture、v9.13 persistence birth、v9.14 Q/E3、v9.15 自己読み、v9.16 age_factor、v9.17 他者読み、v9.18 A+C・意識原資モデル。
 - **Developmental (v10.0–v10.13a)**: v10.0 4層、v10.1 摂食、v10.2 確率 Q/C 切替・n_core 層化、v10.3 双方向 E3、v10.4 Integration 機構化、v10.5 α/β（Layer5 完成）、v10.6 Atom×cid cosine、v10.7 オービス（source_event/path/因果階層）、v10.8 Atom 持込、v10.9–v10.12 感度・取込 prototype、v10.13a 5-phase map。
 - **Unified (v1100–v1114)**: 留保#33（集計単位で像が変わる）、v1101a 注意機構（「注意の揺れ≠意識」）、v1102 受け手構造で応答反転、v1103 48 次元密度で応答 atom 候補を狭める、v1104/a scope×粒度 4 非対称、v1106–v1109b ループ性＝ESDE の本質、v1110–v1113 異系対応の失敗、**v1114 注意センター内部注意 Step1 確立（2026-06-05）**。
-- **v1201**: 一致率＝cosine(cid48, atom profile48) の観察（全 326 cosine・roulette・n_core 層化）。
-- **フロンティア (v1301)**: CID 誕生形態 M_c→物理 param の縮小子系（N≈100-350・親物理非書込）。CID 個性を pairing 検定で検出、全検（全 CID 値→全 param）の選定合理性を 3AI 合議で詰める段（下記更新注記）。
+- **v1201 (v12 Atomset / v12.1)**: atom×atom 関係網の個性化（全チャネル null・凍結核 m5 で初の cid 特異性 sign-flip）+ 一致率＝cosine(cid48,atom48) の確率的観察（roulette、レアを切り捨てない）。§17.1-17.2。
+- **フロンティア (v1301/v1302 child-world)**: CID 誕生形態 M_c→物理 param の縮小子系（N≈100-350・親物理非書込）。v1301 統計監査（pairing 検定で manipulation check）→ **v1302 で継承は持続パラメータ経由 (A) でのみ成立・初期条件 (B=topology 移植) では不成立を確定**（(A) は #CW7 トートロジー留保、懐疑再点検で残差ゼロ）。§17.3-17.4。
+- **v1303（設計）**: 測る相手を「親に似るか」→「canon と統計的に違う系か」に転換し #CW7 を外す。評価軸＝§1.6「存在＝同期」。§17.5。
 
 ---
 
-*以上 ESDE 技術仕様書 v1.0（Genesis 系・現行）。出典 docs/ai_summaries 一本化、観察者枠組み遵守、現行/凍結/廃止を明示。数値・機構の詳細は §12.2 のコードと各原典に遡れる。*
+*以上 ESDE 技術仕様書 v1.1（Genesis 系・現行）。出典 docs/ai_summaries 一本化、観察者枠組み遵守、現行/凍結/廃止を明示。コア §1–§16 + フロンティア §17（v12 Atomset / v13 child-world / v1303 方向）。数値・機構の詳細は §12.2 のコードと各原典に遡れる。*
 
 *監査記録（2026-06-18, Code A 個人監査）: load-bearing な主張を実コードで突合し一致を確認 ― `physics.inject`(:232, amount0.6/prob0.15/radius8) / `v19g_canon` 全 params(BETA1.0/NODE_DECAY0.005/0.26/0.17/0.07/0.003/0.03/K_sync0.1/p_link_birth0.007) / `atom_profiles_cache`(326,48)valid325 / `V82Engine`(V43継承,V82_N5000,step_window) / `v918 run()`(:1518) / `Integration/integration_id/IntegrationManager`(:34/:47)。サマリ由来で古かった §9.1 event 件数（alpha 424→1067, beta 239→478, 列=event_source_type）と §9.2 relation_path 種別（intersection 不在→integration_alpha/beta + attention_via_salience）を実測値へ訂正済。*
 
 *更新（2026-06-19, 環境要因 調査）: §3.6「環境要因」を追加 ― semantic_pressure は `esde_v82_engine.py:226` で無条件＝**全 run 常時稼働**、stress_decay は既定 True だが main run OFF（実験で再点火）・**廃止でない**、External Wave は autonomy v8.3 のレガシー。§15.1 廃止表から stress_decay を除外（§3.6 へ）。*
 
-*更新（2026-06-21, v13 child-world フロンティア追加）: §12.1 に `unified/v1301/` 行を追加、年表に v13 を追加。**child-world** = `V82Engine(N=B_gen×10≈100-350) + V43 物理 + VirtualLayerV9`（stress OFF + semantic_pressure OFF）＝ main run と同一スタックの縮小・param 変調版。CID 誕生時 M_c 4 値を物理 param に写像（N←B_gen×10 / plb←0.007·(1+0.15·tanh(z_Savg)) / K_sync←r_core 正規化 / 初期θ←phase_sig、サンプラー #30 = 実現値コピーでない構造同型）、4 対照（real/shuffle/random/canon）。読＝frozen `per_subject_seed0`、書＝`unified/v1301/` のみ、child engine は in-memory・**親物理非書込**（一方向、v9.13 方針内）。**統計監査の確定（記録のみ判定なし）**: (1) 寿命同期 run の `life→n_labels +0.85` は run 長トートロジー（観測窓を寿命に同期した副作用、交絡を外すと消滅）、(2) 対照 canon の std 最小は run 長二重固定のアーティファクト、(3) **`real≒shuffle` の真因は署名 mean/std 対照が cid→param→署名の pairing を構造上見ないこと**（shuffle は周辺分布不変）、pairing を見る置換検定では `K_sync→sync_order`・`plb→link/label_density` が両 ratio perm-p<0.005（ただし manipulation check であって CID 創発でない）。(4) 写像は K_sync を 100%・θ を 84% 伝達＝入口で潰してはいない、弱いのは N の源均質（B_gen≒n_core）と plb 設計幅 ±15% の 2 点。**次段**: 全検（全 CID 値→全物理 param）、ただし CID 値は実質 ~5-14 独立軸・物理 param も ~6-7 独立軸（状態変数 L/θ/S/E/R/Z で束ね、S 過剰決定・beta=R↔S 結合）ゆえ「全部繋ぐ」は冗長、選定合理性を 3AI 合議で詰める。詳細 = `docs/ai_summaries/07_unified_summary_addendum_v1301.md` / `docs/現在の方向_childworld全検.md` / `unified/v1301/`。なお child の N は設計上 100-350 で、**「N=5000」は親 v918 main の値であって child の目標ではない**。*
+*更新（2026-06-21, v13 child-world フロンティア追加）: §12.1 に `unified/v1301/` 行を追加、年表に v13 を追加。**child-world** = `V82Engine(N=B_gen×10≈100-350) + V43 物理 + VirtualLayerV9`（stress OFF + semantic_pressure OFF）＝ main run と同一スタックの縮小・param 変調版。CID 誕生時 M_c 4 値を物理 param に写像（N←B_gen×10 / plb←0.007·(1+0.15·tanh(z_Savg)) / K_sync←r_core 正規化 / 初期θ←phase_sig、サンプラー #30 = 実現値コピーでない構造同型）、4 対照（real/shuffle/random/canon）。読＝frozen `per_subject_seed0`、書＝`unified/v1301/` のみ、child engine は in-memory・**親物理非書込**（一方向、v9.13 方針内）。**統計監査の確定（記録のみ判定なし）**: (1) 寿命同期 run の `life→n_labels +0.85` は run 長トートロジー（観測窓を寿命に同期した副作用、交絡を外すと消滅）、(2) 対照 canon の std 最小は run 長二重固定のアーティファクト、(3) **`real≒shuffle` の真因は署名 mean/std 対照が cid→param→署名の pairing を構造上見ないこと**（shuffle は周辺分布不変）、pairing を見る置換検定では `K_sync→sync_order`・`plb→link/label_density` が両 ratio perm-p<0.005（ただし manipulation check であって CID 創発でない）。(4) 写像は K_sync を 100%・θ を 84% 伝達＝入口で潰してはいない、弱いのは N の源均質（B_gen≒n_core）と plb 設計幅 ±15% の 2 点。**次段**: 全検（全 CID 値→全物理 param）、ただし CID 値は実質 ~5-14 独立軸・物理 param も ~6-7 独立軸（状態変数 L/θ/S/E/R/Z で束ね、S 過剰決定・beta=R↔S 結合）ゆえ「全部繋ぐ」は冗長、選定合理性を 3AI 合議で詰める。詳細 = `docs/ai_summaries/07_unified_summary.md` Part 4 / `docs/現在の方向_childworld全検.md` / `unified/v1301/`。なお child の N は設計上 100-350 で、**「N=5000」は親 v918 main の値であって child の目標ではない**。*
+
+*更新（2026-06-25, フロンティア網羅 + ai_summaries 統合反映）: 実行履歴（`unified/v1201`/`v1301`/`v1302`）と本書の差を点検し、抜けていた **§17 フロンティア実験アーク**（v12 Atomset 全 arc・凍結核 m5 突破・v12.1 ルーレット・v1301 統計監査・**v1302 child-world 全結果**・v1303 方向）と **§1.6「存在＝同期」目的言語化** を追加。射程行・§0.3 LIVE・§10.5 注記・§12.1 dir 表・年表を v1302 まで更新。v1302 (A) は懐疑再点検（`unified/v1302/cw_v1302_A_skeptic_recheck.{py,md}`）で #CW7 が「残差ゼロ」＝identity transfer の証拠でないと確定（§17.4）。ai_summaries 統合（06b/06c→06・07 追補 4 本→07、2026-06-25）に伴い旧 addendum 参照を `07_unified_summary.md` Part 表記へ更新。コア §3–§9（実コード監査済）に欠落なしを確認、追加は最前線のみ。*
 
