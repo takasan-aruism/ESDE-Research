@@ -1,7 +1,8 @@
 # ESDE 研究史 — AI 向け超要約 (Index + 用語対応表)
 
 *作成日*: 2026-04-11 (v9.9 Long Run 進行中)
-*更新*: 2026-06-21 (**v13 child-world: CID 誕生形態→物理 param の子系。統計監査で `real≒shuffle` の真因＝比較統計 (署名 mean/std) が cid→param→署名の pairing を構造上見ないこと (pairing 検定なら K_sync→sync_order・plb→link/label_density が両 ratio p<0.005) を確定、写像は K_sync 100%/θ 84% 伝達＝入口で潰してない、像が保持して見えた相関の多くは run 長交絡。次は全検だが CID 値 ~5-14 独立軸・物理 param ~6-7 独立軸ゆえ「全部繋ぐ」は冗長、選定合理性を 3AI 合議で詰める。詳細 = `07_unified_summary_addendum_v1301.md`、現況 = `docs/現在の方向_childworld全検.md`、教訓 434-437 = 概念理解.md**)
+*更新*: 2026-06-25 (**ai_summaries 統合: 枝番 06b/06c を 06 に、07 の追補 4 本を 07 に、全文保存（書き換えなし）で Part 連結により一本化。分岐ファイルは削除。番号体系は 1 番号 = 1 ファイルに復帰**)
+*前回更新*: 2026-06-21 (**v13 child-world: CID 誕生形態→物理 param の子系。統計監査で `real≒shuffle` の真因＝比較統計 (署名 mean/std) が cid→param→署名の pairing を構造上見ないこと (pairing 検定なら K_sync→sync_order・plb→link/label_density が両 ratio p<0.005) を確定、写像は K_sync 100%/θ 84% 伝達＝入口で潰してない、像が保持して見えた相関の多くは run 長交絡。次は全検だが CID 値 ~5-14 独立軸・物理 param ~6-7 独立軸ゆえ「全部繋ぐ」は冗長、選定合理性を 3AI 合議で詰める。詳細 = `07_unified_summary.md` Part 4、現況 = `docs/現在の方向_childworld全検.md`、教訓 434-437 = 概念理解.md**)
 *前回更新*: 2026-06-05 (**v1105/v1109b → 注意センター ESDE 転換 → v1110-v1113 4 連続失敗 → v1114 Step 1 内部注意生成成立、観察対象の規律 (同じ系内 vs 異なる系) + Code A 循環構造の認識 + Center ESDE Taka 定義、§18.20 + §18.21 新設**)
 *前々回更新*: 2026-05-23 (**Unified Phase v1104 + v1104a 完了反映、4 つの非対称性 #L30-L33 確定、v1105/v1105a 主題確定、観察方法を疑う規律確立**)
 *前回更新*: 2026-05-11 (Developmental v10.3-v10.12 完了反映、Phase 1.5 第七試行完了、Atom 取り込み prototype 主題完了)
@@ -24,6 +25,7 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
 - **Developmental フェイズのディレクトリ**: `developmental/v10X/`。**Unified フェイズのディレクトリ**: `unified/v11XX/`。
 - **ファイル番号体系の変更 (2026-04-28)**: Developmental フェイズ追加に伴い、06 (旧 concept_core) → 07、07 (旧 system_structure) → 08、08 (旧 audit_principles) → 09 にずらし、新規 06 を Developmental Summary とした。
 - **ファイル番号体系の変更 (2026-05-18)**: Unified フェイズ独立に伴い、07 (旧 concept_core) → 08、08 (旧 system_structure) → 09、09 (旧 audit_principles) → 10、10 (旧 language_summary) → 11 にずらし、新規 07 を Unified Phase Summary とした。06/06b/06c は Developmental Phase 要約として据え置き・凍結。Unified Phase の新主題は 07 に追記して一本化する (06d/06e の枝番継続はしない)。
+- **枝番・追補の一本化 (2026-06-25)**: 06b/06c を `06_developmental_summary.md` に Part A/B/C として、07 の追補 4 本 (v1105 転換 / 注意センター内部 / v12-v12.1 ルーレット / v13 child-world) を `07_unified_summary.md` に Part 0-4 として、いずれも**全文保存（書き換えなし）で連結統合し分岐ファイルを削除**。以後 06/07 は 1 番号 = 1 ファイル。新主題は各本体に Part 追記する（枝番・addendum ファイルを作らない）。
 - **推測補完していない**。原本にあることだけ抽出している。「書いてないこと」を埋めようとしないこと。
 - 概念理解.md からの引用は **必ず引用形式 (>) で残してある**。Taka の発言を勝手に言い換えないこと。
 
@@ -47,11 +49,9 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
 05_primitive_summary.md ← Primitive phase 全体 (v9.0-v9.18、Primitive 凍結)
 05c_primitive_summary_v913_addendum.md ← v9.13 追補
   ↓
-06_developmental_summary.md ← Developmental phase v10.0-v10.9 (凍結)
-06b_developmental_phase15_summary.md ← Phase 1.5 (v10.4-v10.12、凍結)
-06c_developmental_v1013_v1101_summary.md ← v10.13.a + v1100/v1101 (07 の母体、Developmental 完結で凍結)
+06_developmental_summary.md ← ★ Developmental phase 統合 (Part A: v10.0-v10.3 / Part B: v10.4-v10.12 Phase 1.5 / Part C: v10.13a + v1100/v1101、凍結)
   ↓
-07_unified_summary.md ← ★ Unified Phase 正式要約 (v10.13.a + v1100/v1101/v1101a、最新、新主題はここに追記)
+07_unified_summary.md ← ★ Unified Phase 正式要約 統合 (Part 0: v10.13a-v1104a / Part 1: 注意センター転換 / Part 2: 内部注意生成 / Part 3: v12-v12.1 / Part 4: v13 child-world、最新、新主題はここに Part 追記)
   ↓
 09_esde_system_structure.md ← 現行システム構造 (旧 08、v10.6 対応、4 層 + α/β Integration + Salience + Leakage + Atom alignment)
   ↓
@@ -76,10 +76,8 @@ ESDE 研究の各フェーズ (Genesis / Ecology / Autonomy / Cognition / Primit
 | 03 | `03_autonomy_summary.md` | ESDE_Autonomy_Report.md (749 行) | label = 魂 (frozenset)、territory = 場、5-node 転換点、Lifecycle Instrumentation | v9.9 時点 |
 | 04 | `04_cognition_summary.md` | ESDE_Cognition_Report_Final.md (1271 行) | **★最重要・最複雑**。v3-v7 の試行錯誤、「物理層は床」結論、virtual layer の確立 | v9.9 時点 |
 | 05 | `05_primitive_summary.md` | ESDE_Primitive_Report.md | Primitive phase 全体 (v9.0-v9.18) | **v9.18 対応** |
-| 06 | `06_developmental_summary.md` | ESDE_Developmental_Report.md | Developmental phase v10.0-v10.9 | **凍結** (Developmental Phase 完結) |
-| 06b | `06b_developmental_phase15_summary.md` | (要約のみ) | Developmental Phase 1.5 (v10.4-v10.12) | **凍結** |
-| 06c | `06c_developmental_v1013_v1101_summary.md` | (要約のみ) | v10.13.a + Unified Phase v1100/v1101 (07 の母体) | **凍結** (07 に格上げ統合済) |
-| **07** | `07_unified_summary.md` | (要約のみ、06c を母体に格上げ) | **Unified Phase 正式要約 (v10.13.a + v1100/v1101/v1101a)。新主題はここに追記** | **v11.0.1.a 対応 (最新)** |
+| 06 | `06_developmental_summary.md` | ESDE_Developmental_Report.md | **Developmental phase 統合** (Part A: v10.0-v10.3 / Part B: v10.4-v10.12 Phase 1.5 / Part C: v10.13a + v1100/v1101)。旧 06b/06c を全文保存で統合 | **凍結** (Developmental Phase 完結) |
+| **07** | `07_unified_summary.md` | (要約のみ) | **Unified Phase 正式要約 統合** (Part 0: v10.13a-v1104a / Part 1: 注意センター転換 / Part 2: 内部注意生成 / Part 3: v12-v12.1 / Part 4: v13 child-world)。旧 addendum 4 本を全文保存で統合。新主題はここに Part 追記 | **最新** |
 | 08 | `08_concept_core.md` | 概念理解.md | Aruism、4 層構造、絶対ルール、Taka 発言、戦国大名モデル、v9.13-v10.12 各概念 (旧 07_concept_core) | v9.18 + v10.x §末追記 |
 | 09 | `09_esde_system_structure.md` | (要約のみ) | ESDE 現行システム構造、4 層 + α/β Integration + Salience + Leakage + Atom alignment (旧 08_esde_system_structure) | v10.6 対応 |
 | 10 | `10_audit_principles.md` | GPT 監査運用指針 v1 (2026-04-23) | 監査の基本姿勢、読者別方針、3 役分離、5 者運用、ベースライン比較必須 (旧 09_audit_principles) | v10.6 対応 |
@@ -1739,9 +1737,9 @@ ESDE は均一な系でなく場所と粒度で全く違う構造を持つ系。
 
 ## 18.20 v1105-v1109b → 注意センター ESDE 転換 / v1110-v1113 / v1114 Step 1 進行サマリ (2026-06-05 追記)
 
-00_index.md 本体は v10.2 完了時点のまま、Unified Phase v1105 以降の進行は本セクションで圧縮要約する。詳細は `07_unified_summary_addendum_v1105_to_attention_center.md` (v1105-注意センター転換) + `07_unified_summary_addendum_2_attention_center_internal.md` (v1110-v1114 Step 1) を参照。
+00_index.md 本体は v10.2 完了時点のまま、Unified Phase v1105 以降の進行は本セクションで圧縮要約する。詳細は `07_unified_summary.md` の Part 1 (v1105-注意センター転換) + Part 2 (v1110-v1114 Step 1) を参照。
 
-### v1105-v1109b → 注意センター ESDE 転換 (詳細: addendum 1)
+### v1105-v1109b → 注意センター ESDE 転換 (詳細: 07 Part 1)
 
 - v1105 段 4-b/4-c 統合点検 → v1106 Atom→word 接続 → v1106b 対話 loop 顕在化 → v1107-v1109b で全主題が loop に収束 (#L67 = CID 固定 + 時間進行なし + 外部入力なしの箱庭)
 - Taka 中心法則確立 (確率的発生 × 構造 = 実態、Genesis 本質と Atom 言語道具の分離)
