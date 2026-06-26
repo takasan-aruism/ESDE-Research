@@ -175,6 +175,14 @@ def run_instrumented(seed, maturation_windows, tracking_windows, window_steps, t
                tag=tag, N=N)
     finally:
         os.chdir(cwd0)
+    # 末端 snapshot: realizer hook は step 先頭で控えるため最終 step 後（t=run_end）の状態を
+    # 取り損ねる。run 完了後に engine.state（= 最終 tracking step 後の状態）を1回だけ控え、
+    # hosted-till-end cid の端点欠落（no_snapshot）を埋める。read-only・state 不変。
+    if CAP.engine is not None and CAP.cog is not None:
+        t_end = CAP.track_counter
+        if t_end not in CAP.snaps:
+            CAP.snaps[t_end] = _snapshot_members(
+                CAP.engine.state, CAP.cog, CAP.engine.virtual)
     return scratch
 
 
@@ -391,19 +399,60 @@ def main():
         return
 
     if args.mode == "selftest":
-        # join/lens③/health/欠損判定のコード経路を小N捕捉で offline 検証（~3h run 前のバグ出し）。
-        # alignment を CAP.snaps の (cid,t) から合成、static は scratch の per_subject(同じ小N run)を使う。
+        # §7.2 の t 整合ゲートを小N で非循環に検証する（~3h run 前の必須バグ出し）。
+        # ポイント: alignment を「CAP.snaps の members」から作ると全行 hosted になり health1=0 が
+        # 自明（循環）でテストにならない。よって alignment の (cid,t) 範囲と status は
+        # **per_subject の寿命(host_lost_step/reaped_step)から独立に**作り、phys(member 在否)は
+        # cog 由来の CAP.snaps から取る。t 原点がズレていれば ghost 境界と phys 欠損境界がズレ、
+        # health1_xor_violations != 0 になる（= F型 時点異系対応の検出器）。
         scratch = Path(os.environ.get("V1303_SCRATCH", "/tmp/v1303_scratch"))
         subj = pd.read_csv(scratch / f"diag_v105_{args.tag}" / "subjects" / f"per_subject_seed{args.seed}.csv")
-        synth = []
-        for t, s in sorted(CAP.snaps.items()):
+        run_end = args.tracking_windows * args.window_steps  # tracking step 終端
+
+        # cid -> 在 hosted の t（CAP.snaps membership、cog 由来）
+        member_ts = defaultdict(list)
+        for t, s in CAP.snaps.items():
             for cid in s["members"]:
-                synth.append({"cognitive_id": cid, "t": t, "n_core_member": len(s["members"][cid]),
+                member_ts[int(cid)].append(t)
+
+        def _safe_int(v):
+            try:
+                if pd.isna(v):
+                    return None
+            except (TypeError, ValueError):
+                pass
+            try:
+                return int(float(v))
+            except (TypeError, ValueError):
+                return None  # 'unformed' 等の非数値
+
+        # alignment を per_subject 寿命から合成（ghost-phase の t も含む = 非循環）
+        synth = []
+        for _, r in subj.iterrows():
+            cid = int(r["cognitive_id"])
+            if cid not in member_ts:
+                continue
+            birth = min(member_ts[cid])
+            rp_i = _safe_int(r.get("reaped_step"))
+            end = rp_i if rp_i is not None else run_end
+            nc_i = _safe_int(r.get("v11_m_c_n_core"))
+            nc = nc_i if nc_i is not None else np.nan
+            for t in range(birth, end + 1, SNAP_EVERY):
+                synth.append({"cognitive_id": cid, "t": t, "n_core_member": nc,
                               "C_at_window_end": 0.0, "Q_remaining_at_window_end": 0.0,
                               "rank_1_atom": "SELFTEST", "rank_1_sim": 0.0})
-        # ghost/reaped 経路も踏むため、各 cid の host_lost 以降の t も少し混ぜる
         align = pd.DataFrame(synth)
-        print(f"[selftest] synthesized alignment rows={len(align)} from {len(CAP.snaps)} snaps")
+
+        # 直接 t 整合チェック（health1 とは独立な裏取り）:
+        #   ghost した cid について「最後に hosted だった t」が host_lost_step 直前に来るか。
+        deltas = []
+        for _, r in subj.iterrows():
+            cid = int(r["cognitive_id"]); hl = _safe_int(r.get("host_lost_step"))
+            if hl is None or cid not in member_ts:
+                continue
+            last_hosted = max(member_ts[cid])
+            deltas.append(last_hosted - hl)  # 期待: 小さい負〜0 付近（host_lost 直前まで hosted）
+
         df = build_ledger(args.seed, args.window_steps, align=align, subj=subj)
         hc = health_checks(df)
         sc = df["phys_core_status"].value_counts().to_dict()
@@ -411,13 +460,22 @@ def main():
         r0 = int(((df["core_internal_link_count"].fillna(-1) > 0)
                   & (df["core_internal_R_positive_count"].fillna(-1) == 0)).sum())
         rpos = int((df["core_internal_R_positive_count"].fillna(0) > 0).sum())
+        ghost_rows = int((df["cid_status"] == "ghost").sum())
+        print(f"[selftest] alignment rows={len(align)} (per_subject 寿命由来・非循環) ghost_rows={ghost_rows}")
         print(f"[selftest] ledger rows={len(df)} cols={len(df.columns)}")
         print(f"[selftest] phys_core_status: {sc}")
-        print(f"[selftest] no_internal_link rows={nli} | internal_link_R0 rows={r0} | R_positive rows={rpos}")
-        print(f"[selftest] E_mean notna={int(df['core_node_E_mean'].notna().sum())} "
-              f"theta_rl notna={int(df['core_node_theta_resultant_length'].notna().sum())}")
+        print(f"[selftest] no_internal_link={nli} | internal_link_R0={r0} | R_positive={rpos}")
+        if deltas:
+            arr = np.array(deltas)
+            print(f"[selftest] t整合直接チェック: ghost cid={len(deltas)} "
+                  f"(last_hosted_t - host_lost_step) min/med/max="
+                  f"{arr.min()}/{int(np.median(arr))}/{arr.max()} "
+                  f"(期待: maturation offset 10000 等の桁ズレが無いこと)")
+        else:
+            print("[selftest] t整合直接チェック: この小N run では ghost cid が出ず（窓数を増やすと出る）")
         print(f"[selftest] health: {hc}")
-        print("[selftest] OK")
+        gate = "PASS" if hc["health1_xor_violations"] == 0 else "FAIL"
+        print(f"[selftest] §7.2 t整合ゲート health1_xor==0 : {gate}")
         return
 
     df = build_ledger(args.seed, args.window_steps)
