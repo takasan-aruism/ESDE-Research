@@ -60,43 +60,69 @@ for p in [
         sys.path.insert(0, sp)
 
 SNAP_EVERY = 10           # tracking step10 grid（alignment STEP_GRAIN=10 と一致）
-WINDOW_STEPS = 500        # main_v2
 
 # ── in-memory 計装ストア（READ-ONLY 捕捉） ───────────────────────────────────
 class Capture:
     def __init__(self):
-        self.maturation_step_windows = 0   # step_window 呼び出し回数（maturation=20）
+        self.maturation_step_windows = 0   # step_window 呼び出し回数（maturation=N）
         self.maturation_done = False
         self.track_counter = 0             # tracking 物理 step カウンタ（= pulse t と整合）
-        self.snaps = {}                    # t -> {"E":{n:..},"theta":{..},"Z":{..},"S":{(i,j):..},"R":{..}}
-        self.birth_log = []                # (window_count_at_birth, cid, lid)
-        self.detach_log = []               # (window, cid, lid)
-        self.labels_by_window = {}         # window_count -> {lid: frozenset(nodes)}
-        self.cid_of_lid_birth = {}         # lid -> cid（birth 時点で確定）
+        self.snaps = {}                    # t -> {"members":{cid:frozenset},"E":{n:..},"theta":,"Z":,"S":,"R":}
+        self.cog = None                    # SubjectLayer instance（live cid<->lid）
+        self.engine = None                 # V82Engine instance（engine.virtual=vl）
 
 CAP = Capture()
 
 
-def _snapshot_state(state):
-    alive_n = list(state.alive_n)
-    E = {int(n): float(state.E[n]) for n in alive_n}
-    th = {int(n): float(state.theta[n]) for n in alive_n}
-    Z = {int(n): int(state.Z[n]) for n in alive_n}
-    S = {}
-    R = {}
+def _snapshot_members(state, cog, vl):
+    """その瞬間の hosted cid -> member_nodes を cog.current_lid + vl.labels から直接取得し、
+       member union の物理(E/θ/Z, member 内 link S/R)だけを read-only で控える。
+       window カウンタの再構成はしない（live 参照ゆえ厳密）。"""
+    members = {}
+    union = set()
+    for cid, lid in cog.current_lid.items():
+        if lid is None:            # ghost（host_lost）→ 第一段階は hosted のみ
+            continue
+        lab = vl.labels.get(lid)
+        if lab is None:
+            continue
+        nodes = frozenset(int(n) for n in lab["nodes"])
+        members[int(cid)] = nodes
+        union |= nodes
+    alive_n = state.alive_n
+    E, th, Z = {}, {}, {}
+    for n in union:
+        if n in alive_n:           # member だが死んだ node は除外（E dict に無い）
+            E[n] = float(state.E[n])
+            th[n] = float(state.theta[n])
+            Z[n] = int(state.Z[n])
+    S, R = {}, {}
     for k in state.alive_l:
-        kk = (int(k[0]), int(k[1]))
-        S[kk] = float(state.S[k])
-        R[kk] = float(state.R.get(k, 0.0))
-    return {"E": E, "theta": th, "Z": Z, "S": S, "R": R}
+        if k[0] in union and k[1] in union:
+            kk = (int(k[0]), int(k[1]))
+            S[kk] = float(state.S[k])
+            R[kk] = float(state.R.get(k, 0.0))
+    return {"members": members, "E": E, "theta": th, "Z": Z, "S": S, "R": R}
 
 
 def install_instrumentation():
-    """v105 import 後に呼ぶ。READ-ONLY な monkey-patch のみ。"""
+    """v105 import 後に呼ぶ。READ-ONLY な monkey-patch のみ（state/RNG 不書込）。"""
     import esde_v82_engine as eng_mod
     import v105_memory_readout as ro
     from realization import RealizationOperator
-    from virtual_layer_v9 import VirtualLayer
+
+    # (S1) engine / cog の live 参照を stash（snapshot 時に cid->member_nodes を厳密取得するため）
+    _orig_eng_init = eng_mod.V82Engine.__init__
+    def patched_eng_init(self, *a, **kw):
+        _orig_eng_init(self, *a, **kw)
+        CAP.engine = self
+    eng_mod.V82Engine.__init__ = patched_eng_init
+
+    _orig_cog_init = ro.SubjectLayer.__init__
+    def patched_cog_init(self, *a, **kw):
+        _orig_cog_init(self, *a, **kw)
+        CAP.cog = self
+    ro.SubjectLayer.__init__ = patched_cog_init
 
     # (A1) step_window: maturation 完了検出（tracking は step_window を使わない）
     _orig_step_window = eng_mod.V82Engine.step_window
@@ -106,56 +132,25 @@ def install_instrumentation():
         return r
     eng_mod.V82Engine.step_window = patched_step_window
 
-    # (A2) RealizationOperator.step: tracking 物理 step の先頭で全 node/link を snapshot
-    #   現状 RealizationOperator.step は engine_accel が高速版に差し替え済の場合がある。
-    #   実行時に有効な step を包む（その上で read-only 観測のみ追加）。
+    # (A2) RealizationOperator.step: tracking 物理 step の先頭で live snapshot。
+    #   先頭で控える = state は「直前 step 完了後（bg seeding 込み）」= pulse t と整合。
+    #   maturation 中は maturation_done=False ゆえ計上しない。
     _orig_real_step = RealizationOperator.step
     def patched_real_step(self, state):
-        # maturation_done は run() 側の「20 step_window 完了」で立てる（下の run ラッパで設定）
         if CAP.maturation_done:
             t = CAP.track_counter
-            if t % SNAP_EVERY == 0:
-                CAP.snaps[t] = _snapshot_state(state)
+            if t % SNAP_EVERY == 0 and CAP.cog is not None and CAP.engine is not None:
+                CAP.snaps[t] = _snapshot_members(state, CAP.cog, CAP.engine.virtual)
             CAP.track_counter += 1
         return _orig_real_step(self, state)
     RealizationOperator.step = patched_real_step
 
-    # (B) SubjectLayer.birth / detach: cid<->lid 遷移を window 付きで記録
-    _orig_birth = ro.SubjectLayer.birth
-    def patched_birth(self, lid, phase_sig, current_window):
-        cid = _orig_birth(self, lid, phase_sig, current_window)
-        CAP.cid_of_lid_birth[lid] = cid
-        CAP.birth_log.append((int(current_window), int(cid), int(lid)))
-        return cid
-    ro.SubjectLayer.birth = patched_birth
-
-    _orig_detach = ro.SubjectLayer.detach
-    def patched_detach(self, lid, current_window, residual_Q=0, current_step=None):
-        cid = self.cid_of_lid.get(lid)
-        r = _orig_detach(self, lid, current_window,
-                         residual_Q=residual_Q, current_step=current_step)
-        if cid is not None:
-            CAP.detach_log.append((int(current_window), int(cid), int(lid)))
-        return r
-    ro.SubjectLayer.detach = patched_detach
-
-    # (C) VirtualLayer.step: 各 window の lid->member_nodes を記録（tracking 境界で呼ばれる）
-    _orig_vl_step = VirtualLayer.step
-    def patched_vl_step(self, state, window_count, **kw):
-        r = _orig_vl_step(self, state, window_count, **kw)
-        macro = set(self.macro_nodes)
-        CAP.labels_by_window[int(window_count)] = {
-            int(lid): frozenset(int(n) for n in lab["nodes"])
-            for lid, lab in self.labels.items() if lid not in macro
-        }
-        return r
-    VirtualLayer.step = patched_vl_step
-
     return ro
 
 
-def run_instrumented(seed, maturation_windows, tracking_windows, window_steps, tag):
-    """v105 run() を計装付きで実行。物理 snapshot と cid<->lid / lid->nodes を捕捉。"""
+def run_instrumented(seed, maturation_windows, tracking_windows, window_steps, tag, N=None):
+    """v105 run() を計装付きで実行。物理 snapshot と cid<->lid / lid->nodes を捕捉。
+       N は plumbing 高速化用の上書きのみ（本 smoke/本番は N=None=V82_N=5000 で alignment と一致）。"""
     ro = install_instrumentation()
 
     # maturation_done を「step_window が maturation_windows 回完了した瞬間」に立てる。
@@ -176,45 +171,11 @@ def run_instrumented(seed, maturation_windows, tracking_windows, window_steps, t
     os.chdir(scratch)
     try:
         ro.run(seed=seed, maturation_windows=maturation_windows,
-               tracking_windows=tracking_windows, window_steps=window_steps, tag=tag)
+               tracking_windows=tracking_windows, window_steps=window_steps,
+               tag=tag, N=N)
     finally:
         os.chdir(cwd0)
     return scratch
-
-
-def reconstruct_cid_member_nodes(cid, t, window_steps):
-    """tracking step t における cid の member_nodes(frozenset)と存在状態を返す。
-       cid->lid は birth/detach ログから、lid->nodes は labels_by_window から。"""
-    # t は tracking step。labels_by_window の window_count は maturation 込みの絶対 window。
-    # tracking step t が属する絶対 window:
-    tw = t // window_steps
-    # birth/detach の window は run() の current_window 引数（maturation 末で birth → maturation-1、
-    # tracking 中の birth は絶対 window）。最も近い window スナップを使う。
-    abs_window = None
-    if CAP.labels_by_window:
-        # tracking window の vl.step は window_count = maturation + tw 付近で呼ばれる。
-        cand = [w for w in CAP.labels_by_window.keys()]
-        # tw に対応する最大の window_count（その window 終了時のラベル状態）を選ぶ
-        target = max(cand)  # 既定: 最新
-        # tw に最も近い（超えない最大）window を選ぶ
-        le = [w for w in cand if w <= max(cand)]
-        # 絶対 window 推定: 最小 window_count を maturation 相当とみなし tw を足す
-        base = min(cand)
-        guess = base + tw
-        target = min(cand, key=lambda w: abs(w - guess))
-        abs_window = target
-    labels = CAP.labels_by_window.get(abs_window, {}) if abs_window is not None else {}
-
-    # cid の現在 lid（birth/detach を window 順に畳んで t 時点の現在 lid を求める）
-    cur_lid = None
-    for (w, c, lid) in sorted(CAP.birth_log):
-        if c == cid and w <= (min(CAP.labels_by_window or [0]) + tw):
-            cur_lid = lid
-    for (w, c, lid) in sorted(CAP.detach_log):
-        if c == cid and lid == cur_lid and w <= (min(CAP.labels_by_window or [0]) + tw):
-            cur_lid = None
-    nodes = labels.get(cur_lid) if cur_lid is not None else None
-    return cur_lid, nodes
 
 
 def circular_mean(theta_vals):
@@ -286,9 +247,11 @@ def lens3_row(cid, t, member_nodes, snap, status_base):
     return out
 
 
-def build_ledger(seed, window_steps):
-    align = pd.read_csv(ALIGN_DIR / f"step10_cid_alignment_seed{seed}.csv")
-    subj = pd.read_csv(SUBJ_DIR / f"per_subject_seed{seed}.csv")
+def build_ledger(seed, window_steps, align=None, subj=None):
+    if align is None:
+        align = pd.read_csv(ALIGN_DIR / f"step10_cid_alignment_seed{seed}.csv")
+    if subj is None:
+        subj = pd.read_csv(SUBJ_DIR / f"per_subject_seed{seed}.csv")
 
     static_cols = ["cognitive_id", "v11_b_gen", "v11_m_c_n_core", "v11_m_c_s_avg",
                    "v11_m_c_r_core", "v11_m_c_phase_sig", "original_phase_sig",
@@ -320,13 +283,15 @@ def build_ledger(seed, window_steps):
         else:
             status_base = "hosted_available"
 
-        lid, member_nodes = (None, None)
+        member_nodes = None
         snap = None
         if status_base == "hosted_available":
-            lid, member_nodes = reconstruct_cid_member_nodes(cid, t, window_steps)
             snap = CAP.snaps.get(t)
             if snap is None:
                 status_base = "no_snapshot"
+            else:
+                # snapshot 時に live で控えた cid->member_nodes を厳密 lookup（推測なし）
+                member_nodes = snap["members"].get(cid)
 
         l3 = lens3_row(cid, t, member_nodes, snap, status_base)
 
@@ -356,7 +321,6 @@ def build_ledger(seed, window_steps):
             cid48_source_id=f"{seed}:{cid}:{t}",
             # レンズ③ phys_core（再走吸い出し）
             lens3_source_granularity="rerun_step10",
-            current_lid=lid,
         )
         row.update(l3)
         rows.append(row)
@@ -390,32 +354,70 @@ def main():
     ap.add_argument("--tracking-windows", type=int, default=50)
     ap.add_argument("--window-steps", type=int, default=500)
     ap.add_argument("--tag", type=str, default="v1303smoke")
-    ap.add_argument("--mode", choices=["plumbing", "smoke"], default="smoke")
+    ap.add_argument("--mode", choices=["plumbing", "selftest", "smoke"], default="smoke")
+    ap.add_argument("--N", type=int, default=None,
+                    help="plumbing 高速化用の N 上書きのみ。smoke/本番は未指定(=V82_N=5000)で alignment と一致")
     args = ap.parse_args()
+
+    if args.mode == "smoke" and args.N is not None:
+        raise SystemExit("[v1303] smoke モードで --N 上書きは禁止（alignment=N5000 と CID 宇宙不一致 F型）")
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     print(f"[v1303] re-run seed={args.seed} mat={args.maturation_windows} "
-          f"track={args.tracking_windows} win={args.window_steps} mode={args.mode}", flush=True)
+          f"track={args.tracking_windows} win={args.window_steps} N={args.N} mode={args.mode}", flush=True)
 
     run_instrumented(args.seed, args.maturation_windows, args.tracking_windows,
-                     args.window_steps, args.tag)
+                     args.window_steps, args.tag, N=args.N)
 
-    print(f"[v1303] capture: snaps={len(CAP.snaps)} births={len(CAP.birth_log)} "
-          f"detaches={len(CAP.detach_log)} label_windows={len(CAP.labels_by_window)} "
-          f"track_steps={CAP.track_counter}", flush=True)
+    print(f"[v1303] capture: snaps={len(CAP.snaps)} "
+          f"track_steps={CAP.track_counter} cog={'set' if CAP.cog else 'none'} "
+          f"engine={'set' if CAP.engine else 'none'}", flush=True)
 
     if args.mode == "plumbing":
         # 計装が動いたかの最小確認のみ（join しない）
-        sample_t = sorted(CAP.snaps.keys())[:5]
-        print(f"[plumbing] sample snap t: {sample_t}")
+        keys = sorted(CAP.snaps.keys())
+        print(f"[plumbing] snap t range: {keys[:5]} ... {keys[-3:] if keys else []}")
         if CAP.snaps:
-            anyt = next(iter(CAP.snaps))
+            anyt = keys[len(keys) // 2]
             s = CAP.snaps[anyt]
-            print(f"[plumbing] snap[{anyt}]: nodes={len(s['E'])} links={len(s['S'])}")
-        if CAP.labels_by_window:
-            w = max(CAP.labels_by_window)
-            print(f"[plumbing] labels_by_window[{w}]: {len(CAP.labels_by_window[w])} labels")
+            print(f"[plumbing] snap[{anyt}]: cids={len(s['members'])} "
+                  f"member_nodes={len(s['E'])} internal_links={len(s['S'])}")
+            # 健全性の事前確認: no_internal_link != R0 が両方出るか
+            samp = list(s["members"].items())[:3]
+            for c, mn in samp:
+                il = [k for k in s["S"] if k[0] in mn and k[1] in mn]
+                print(f"[plumbing]   cid={c} n_member={len(mn)} internal_links={len(il)}")
         print("[plumbing] OK")
+        return
+
+    if args.mode == "selftest":
+        # join/lens③/health/欠損判定のコード経路を小N捕捉で offline 検証（~3h run 前のバグ出し）。
+        # alignment を CAP.snaps の (cid,t) から合成、static は scratch の per_subject(同じ小N run)を使う。
+        scratch = Path(os.environ.get("V1303_SCRATCH", "/tmp/v1303_scratch"))
+        subj = pd.read_csv(scratch / f"diag_v105_{args.tag}" / "subjects" / f"per_subject_seed{args.seed}.csv")
+        synth = []
+        for t, s in sorted(CAP.snaps.items()):
+            for cid in s["members"]:
+                synth.append({"cognitive_id": cid, "t": t, "n_core_member": len(s["members"][cid]),
+                              "C_at_window_end": 0.0, "Q_remaining_at_window_end": 0.0,
+                              "rank_1_atom": "SELFTEST", "rank_1_sim": 0.0})
+        # ghost/reaped 経路も踏むため、各 cid の host_lost 以降の t も少し混ぜる
+        align = pd.DataFrame(synth)
+        print(f"[selftest] synthesized alignment rows={len(align)} from {len(CAP.snaps)} snaps")
+        df = build_ledger(args.seed, args.window_steps, align=align, subj=subj)
+        hc = health_checks(df)
+        sc = df["phys_core_status"].value_counts().to_dict()
+        nli = int(df["no_internal_link"].sum())
+        r0 = int(((df["core_internal_link_count"].fillna(-1) > 0)
+                  & (df["core_internal_R_positive_count"].fillna(-1) == 0)).sum())
+        rpos = int((df["core_internal_R_positive_count"].fillna(0) > 0).sum())
+        print(f"[selftest] ledger rows={len(df)} cols={len(df.columns)}")
+        print(f"[selftest] phys_core_status: {sc}")
+        print(f"[selftest] no_internal_link rows={nli} | internal_link_R0 rows={r0} | R_positive rows={rpos}")
+        print(f"[selftest] E_mean notna={int(df['core_node_E_mean'].notna().sum())} "
+              f"theta_rl notna={int(df['core_node_theta_resultant_length'].notna().sum())}")
+        print(f"[selftest] health: {hc}")
+        print("[selftest] OK")
         return
 
     df = build_ledger(args.seed, args.window_steps)
