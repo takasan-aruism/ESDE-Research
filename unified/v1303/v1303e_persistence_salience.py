@@ -1,21 +1,24 @@
 #!/usr/bin/env python3
 # ─────────────────────────────────────────────────────────────────────────────
-# v1303e Step B — θ高同期手本の閾値を「5%固定(q95)」から「persistence(内部履歴由来・
-#   θ中央値以上が連続3点持続=age_r型)」に置き換え、salience の像が変わるかを read-only 観察
-#   （後処理のみ・再走/write-back なし・seed0・判定なし #12・判断A=全面適用 persistence一本）
+# v1303e Step B (修正版 v2) — θ高同期手本の閾値を「5%固定(q95)」から
+#   「動的(cid内 robust-range 正規化)で高同期が持続した区間」に置き換え、salience の像が
+#   変わるかを read-only 観察（後処理のみ・再走/write-back なし・seed0・判定なし #12）
 #
-# 規律宣言(Code A):
-#  読: v1303a ledger + v1303c event_ledger(q95版 salience・比較用) READ-ONLY。
-#  書: unified/v1303/outputs/v1303e/ のみ。write-back しない(B型)。
-#  persistence型: Frozen の persistence-based birth(age_r≥τ, v104:1741/2367)と同型=
-#   「状態が連続して持続した時間」で閾値を立てる。θに当てる=θがcid中央値以上で連続3点(=30step)。
-#  A型/#CW7: N=3・median は研究者選択ゆえ event_source に手本タグ(離脱ポインタ・将来endogenous置換可)。
-#   閾値内部化は多様性拡張の意図(神の手を厳格にしない・Taka方針)。
-#  L型: persistenceを「離脱」「優れている」と言わない=θ系の言い換え(閾値内部化)であって
-#   非θ系=言語の離脱ではないことを明記。準同義反復の側面を隠さない。
-#  D型: cid内中央値基準(cid局所主語)・全n_coreで機能するmedian基準を採用(q75はn2空振り)。
-#  #12: (a)/(b)判定せず観察事実のみ。結果を確定しにいかない。応用可否はTaka。
-#  説明可能性ルーブリック準拠・実装後 verify_rubric() で自己検証。
+# 【v1→v2 の修正理由(信頼問題への対応)】
+#  v1 = θ≥cid中央値 連続3点(median-persistence) は「中央値またぎ」を拾い、θ<0.5 を n5で29%/
+#  n4で18.8% 含む = 「高同期」でなく「平均以上」を拾っていた(Web Claude独立検証で判明・確認済)。
+#  原因 = Frozen の age_r(R>0=意味ある条件の持続)を横流しした際、土台条件を θ≥median(=真ん中・
+#  高さの意味なし)に緩めた。形だけ移植し中身(高同期)が抜けた。
+#  v2 = 土台を「その cid 自身の到達域に対する高さ」= robust-range 正規化に変更:
+#     θ >= q05 + F*(q95-q05)  (cid内・F=0.6・外れ値に頑健なq05-q95レンジ) が連続3点持続。
+#     これで θ<0.5 を n2-4で0%/n5で1% に潰し(高同期を拾う)、全n_core空振り0(全面適用)を両立。
+#  実測で確定: f=0.6 robust が「θ<0.5ほぼ0% かつ 空振り0」の唯一点(min-maxは外れ値で空振り増)。
+#
+# 規律: 読=v1303a ledger READ-ONLY/書=outputs/v1303e のみ・write-back なし(B型)。
+#  A型/#CW7: F=0.6・persist=3 は研究者選択ゆえ event_source 手本タグ(離脱ポインタ・将来endogenous置換可)。
+#  L型: θ系閾値の内部化であって非θ系=言語の離脱ではない(明記・準同義反復を隠さない)。
+#  D型: cid内 robust-range(cid局所主語)・全n_core機能・cid個別/n_core別。#12: 判定せず観察事実のみ。
+#  「想定通り動くか」を verify_gates() で機械確認してから完了(信頼問題: 想定外で先に進まない)。
 # ─────────────────────────────────────────────────────────────────────────────
 import numpy as np
 import pandas as pd
@@ -28,25 +31,23 @@ OUT = REPO / "unified" / "v1303" / "outputs" / "v1303e"
 OUT.mkdir(parents=True, exist_ok=True)
 
 SEED = 0
-N_PERSIST = 3          # 連続N点(=30step)以上の持続を salience とする(age_r≥τ 応用・研究者選択ゆえ手本)
-CONTEXT_WINDOW = "pm1_step10"
+F_RANGE = 0.6          # robust-range の高さ係数(研究者選択=手本)。θ>=q05+F*(q95-q05)
+N_PERSIST = 3          # 連続N点(=30step)以上の持続
+RLO, RHI = 0.05, 0.95  # robust range の下端/上端(外れ値に頑健・min-max を使わない)
+TEMPLATE = "theta_high_robustrange_f06_persist3_v2"
 
 EXPLAIN = {
-    "persistence salience の定義": ("HIGH",
-        "θ_resultant が cid内中央値以上の状態が連続N_PERSIST(=3)点続いた区間に属する時点。runs_mask_ge で機械抽出"),
-    "event_type": ("HIGH", "salience_template_theta_high_persistence(全行同一)"),
+    "salience の定義": ("HIGH",
+        "θ_resultant が [cid内 q05 + 0.6*(q95-q05)] 以上の状態が連続3点続いた区間。"
+        "robust-range 正規化=その個体の到達域に対する高さ(中央値またぎでない)・連続3点で持続を担保"),
     "event_source/template_version": ("HIGH",
-        "researcher_template:theta_high_persistence_median_N3_v1(手本タグ=離脱ポインタ・N3/medianは研究者選択を明示)"),
-    "event_segment_id": ("HIGH", "同一cid内で連続持続区間ごとの通し番号 ps_{cid}_{k}"),
-    "segment_length": ("HIGH", "その持続区間の長さ(step10点数)。q95(瞬間ピーク)との像の違いの指標"),
-    "theta_cid_percentile": ("HIGH", "情報列: その行のθのcid内percentile rank(0-1)"),
-    "比較(jaccard_q95)": ("HIGH", "cid単位で persistence時点集合 と v1303c q95時点集合 の Jaccard(低い=違う像)"),
-    "ledger列(seed/cid/t/n_core/θ/rank_1/C/Q/phys_core_status)": ("HIGH", "v1303a ledger 直接コピー(v1303c salience と同列構成で比較可能)"),
+        f"researcher_template:{TEMPLATE}(F=0.6/persist=3は研究者選択ゆえ手本明示・離脱ポインタ)"),
+    "event_segment_id/segment_length": ("HIGH", "連続持続区間ごとの通し番号と長さ(持続=q95瞬間ピークとの像差の指標)"),
+    "ledger列(seed/cid/t/n_core/θ/rank_1/C/Q/phys_core_status)": ("HIGH", "v1303a ledger 直接コピー(v1303c と同列構成で比較可)"),
 }
 
 
 def runs_mask_ge(cond, n_min):
-    """cond(bool)の連続Trueが長さ>=n_min の区間に属する index集合(persistence型)。segment id も返す。"""
     idx = {}
     n = len(cond); i = 0; seg = 0
     while i < n:
@@ -58,7 +59,7 @@ def runs_mask_ge(cond, n_min):
         if j - i >= n_min:
             seg += 1
             for k in range(i, j):
-                idx[k] = (seg, j - i)  # idx -> (segment番号, 区間長)
+                idx[k] = (seg, j - i)
         i = j
     return idx
 
@@ -67,26 +68,25 @@ def build():
     df = pd.read_parquet(LEDGER)
     h = df[df["phys_core_status"].eq("hosted_available")].copy().sort_values(["cid", "t"]).reset_index(drop=True)
     h["theta_cid_percentile"] = h.groupby("cid")["core_node_theta_resultant_length"].rank(pct=True)
-
     rows = []
-    persist_idx_by_cid = {}   # cid -> set(t)（q95比較用）
+    persist_idx_by_cid = {}
     for cid, g in h.groupby("cid"):
         g = g.sort_values("t").reset_index(drop=True)
         theta = g["core_node_theta_resultant_length"].values.astype(float)
-        med = np.median(theta)
-        seg_map = runs_mask_ge(theta >= med, N_PERSIST)
+        lo, hi = np.quantile(theta, RLO), np.quantile(theta, RHI)
+        thr = lo + F_RANGE * (hi - lo)   # 動的しきい値: その cid 自身の到達域に対する高さ
+        seg_map = runs_mask_ge(theta >= thr, N_PERSIST)
         persist_idx_by_cid[int(cid)] = set(g["t"].iloc[list(seg_map.keys())].tolist())
         for k, (seg, seglen) in seg_map.items():
-            r = g.iloc[k]
-            t = int(r["t"])
-            cid_i = int(cid)
+            r = g.iloc[k]; t = int(r["t"]); cid_i = int(cid)
             rows.append(dict(
                 seed=SEED, cid=cid_i, t=t,
                 event_class="salience_template",
                 event_type="salience_template_theta_high_persistence",
-                event_source="researcher_template:theta_high_persistence_median_N3_v1",
-                template_version="theta_high_persistence_median_N3_v1",
+                event_source=f"researcher_template:{TEMPLATE}",
+                template_version=TEMPLATE,
                 event_segment_id=f"ps_{cid_i}_{seg}", segment_length=int(seglen),
+                theta_threshold=float(thr),
                 n_core=int(r["n_core"]) if not pd.isna(r["n_core"]) else -1,
                 theta_resultant_length=float(r["core_node_theta_resultant_length"]),
                 theta_cid_percentile=float(r["theta_cid_percentile"]),
@@ -94,88 +94,76 @@ def build():
                 C=float(r["C_at_window_end"]) if not pd.isna(r["C_at_window_end"]) else np.nan,
                 Q=float(r["Q_remaining_at_window_end"]) if not pd.isna(r["Q_remaining_at_window_end"]) else np.nan,
                 phys_core_status=r["phys_core_status"],
-                context_window=CONTEXT_WINDOW,
-                ledger_source_id=f"{SEED}:{cid_i}:{t}",
+                context_window="pm1_step10", ledger_source_id=f"{SEED}:{cid_i}:{t}",
             ))
-    ev = pd.DataFrame(rows)
-    return ev, h, persist_idx_by_cid
+    return pd.DataFrame(rows), h, persist_idx_by_cid
+
+
+def verify_gates(ev, h, persist_idx):
+    """『想定通り動くか』の機械確認ゲート(信頼問題: 想定外なら完了にしない)。"""
+    g = {}
+    # ゲート1: 高同期を拾う = θ<0.5 を拾う率が全n_coreで <=2% (v1のn5 29%を潰せたか)
+    for nc in [2, 3, 4, 5]:
+        s = ev[ev.n_core == nc]["theta_resultant_length"]
+        g[f"gate1_n{nc}_theta_lt0.5_frac<=2pct"] = bool(len(s) and (s < 0.5).mean() <= 0.02)
+    # ゲート2: 全面適用 = 空振りcid 0 (>=N点ある cid 全てで salience が立つ)
+    elig = [c for c in h["cid"].unique() if (h["cid"] == c).sum() >= N_PERSIST]
+    g["gate2_no_empty_cid"] = bool(all(len(persist_idx.get(c, set())) > 0 for c in elig))
+    # ゲート3: 拾うθが各cidの高域。
+    #  注: theta_cid_percentile>=0.5 を当初ゲートにしたが FAIL。調査で「飽和cid(n2でθが
+    #  ほぼ高い)では θ=0.70 でも順位は中位(他がもっと高い)」= 順位基準は範囲基準の設計意図
+    #  (飽和でも高同期を拾う)と矛盾する不適切ゲートと判明。順位中位の行が『本当に高θ』である
+    #  ことを直接検証する形に差し替え(=飽和ケースが正しく高同期である証明)。
+    sat = ev[ev["theta_cid_percentile"] < 0.5]   # 順位中位だが範囲では高い飽和cidの行
+    g["gate3_rank_mid_rows_are_high(theta>=0.5)"] = bool(len(sat) == 0 or (sat["theta_resultant_length"] >= 0.5).all())
+    g["gate3_theta_median_high"] = bool(all(ev[ev.n_core == nc]["theta_resultant_length"].median() >= 0.6 for nc in [2, 3, 4, 5]))
+    # ゲート4: 定義通り = 全行 θ>=その行のthreshold, 全segment>=N点, event_source手本タグ
+    g["gate4_all_ge_threshold"] = bool((ev["theta_resultant_length"] >= ev["theta_threshold"] - 1e-9).all())
+    g["gate4_all_segments_ge_N"] = bool((ev.groupby("event_segment_id")["segment_length"].first() >= N_PERSIST).all())
+    g["gate4_event_source_template"] = bool(ev["event_source"].str.startswith("researcher_template:").all())
+    g["gate4_all_hosted"] = bool((ev["phys_core_status"] == "hosted_available").all())
+    return g
 
 
 def main():
     ev, h, persist_idx = build()
     ev.to_parquet(OUT / "v1303e_persistence_salience_seed0.parquet", index=False)
 
-    # q95版(v1303c)との比較
     evc = pd.read_parquet(EVENTC)
     q95 = evc[evc.event_class == "salience_template"]
-    q95_idx = {cid: set(g["t"].tolist()) for cid, g in q95.groupby("cid")}
-
-    # cid別 frac / jaccard / segment
+    q95_idx = {cid: set(gg["t"].tolist()) for cid, gg in q95.groupby("cid")}
     npts = h.groupby("cid").size().to_dict()
     nc_of = h.groupby("cid")["n_core"].first().to_dict()
     comp = []
     for cid in npts:
-        ps = persist_idx.get(cid, set())
-        q = q95_idx.get(cid, set())
-        u = len(ps | q)
+        ps = persist_idx.get(cid, set()); q = q95_idx.get(cid, set()); u = len(ps | q)
         comp.append(dict(cid=cid, n_core=int(nc_of[cid]) if not pd.isna(nc_of[cid]) else -1,
-                         n_points=npts[cid],
                          persist_frac=len(ps) / npts[cid], q95_frac=len(q) / npts[cid],
-                         jaccard=len(ps & q) / u if u else np.nan,
-                         persist_empty=int(len(ps) == 0)))
+                         jaccard=len(ps & q) / u if u else np.nan, persist_empty=int(len(ps) == 0)))
     comp = pd.DataFrame(comp)
     comp.to_parquet(OUT / "v1303e_compare_q95_seed0.parquet", index=False)
 
-    # 健全性
-    hc = {}
-    hc["health1_persist_empty_cid"] = int(comp["persist_empty"].sum())  # 0であるべき
-    hc["health2_all_hosted"] = bool((ev["phys_core_status"] == "hosted_available").all())
-    hc["health3_jaccard_q95_by_ncore"] = {int(nc): round(float(comp[comp.n_core == nc]["jaccard"].median()), 3)
-                                          for nc in [2, 3, 4, 5]}
-    rub = verify_rubric(ev, h, persist_idx)
-
-    print("=== v1303e persistence salience (閾値内部化・判定なし #12) ===")
-    print(f"persistence salience 行={len(ev)} cid={ev['cid'].nunique()} | event_source=手本タグ(離脱ポインタ)")
-    print(f"segment数={ev['event_segment_id'].nunique()} segment長 med={ev.groupby('event_segment_id')['segment_length'].first().median():.0f}")
-    print("\n--- persistence vs q95(5%固定) frac・空振り・Jaccard (n_core別中央値) ---")
-    print(f"{'n_core':6s} | persist_frac q95_frac jaccard | persist空振り/cid")
+    gates = verify_gates(ev, h, persist_idx)
+    print("=== v1303e 修正版v2: 動的(robust-range)高同期持続 salience (判定なし #12) ===")
+    print(f"定義: θ >= q05+{F_RANGE}*(q95-q05) [cid内robust-range] が連続{N_PERSIST}点持続")
+    print(f"salience {len(ev)}行 / {ev.cid.nunique()}cid / {ev.event_segment_id.nunique()}segment")
+    print("\n--- (v1の問題が直ったか) 拾うθ実値 n_core別: θ<0.5割合 ---")
+    print(f"{'n_core':6s}| v2 θmed  θ<0.5%  | (参考)v1 median版 θ<0.5%  | q95 θmed")
+    v1lo = {2: 0.4, 3: 3.6, 4: 18.8, 5: 29.0}
     for nc in [2, 3, 4, 5]:
-        s = comp[comp.n_core == nc]
-        print(f"  n{nc:4d} | {s['persist_frac'].median():.3f}        {s['q95_frac'].median():.3f}     "
-              f"{s['jaccard'].median():.3f}   | {int(s['persist_empty'].sum())}/{len(s)}")
-    print("\n--- 像の違い: persistenceは持続区間(広い)・q95は瞬間ピーク(狭い) ---")
-    print(f"  persistence frac 全体med={comp['persist_frac'].median():.3f} (cidの寿命の約{comp['persist_frac'].median()*100:.0f}%が持続高同期)")
-    print(f"  q95 frac 全体med={comp['q95_frac'].median():.3f} (約5%の瞬間ピーク)")
-    print(f"  Jaccard 全体med={comp['jaccard'].median():.3f} (低い=別の時点を拾う=多様性拡張の像)")
-    print("\n--- 健全性 sanity check ---")
-    for k, v in hc.items():
-        print(f"  {k}: {v}")
-    print("\n--- 説明可能性ルーブリック突合(実装後自己検証) ---")
-    for k, v in rub.items():
-        print(f"  {k}: {v}")
-    print(f"\n  ルーブリック全項目 PASS = {all(rub.values())} | 健全性1(空振り0)={hc['health1_persist_empty_cid']==0}")
+        s = ev[ev.n_core == nc]["theta_resultant_length"]; qs = q95[q95.n_core == nc]["theta_resultant_length"]
+        print(f"  n{nc:4d}| {s.median():.3f}    {(s<0.5).mean()*100:4.1f}%   | {v1lo[nc]:4.1f}%                   | {qs.median():.3f}")
+    print("\n--- persistence(持続) vs q95(瞬間ピーク) ---")
+    print(f"  persist frac全体med={comp.persist_frac.median():.3f} / q95 frac={comp.q95_frac.median():.3f} / "
+          f"Jaccard={comp.jaccard.median():.3f}(別の像) / 空振り={int(comp.persist_empty.sum())}")
+    print(f"  segment長 med={ev.groupby('event_segment_id')['segment_length'].first().median():.0f} "
+          f"(持続=q95の瞬間ピークと違い区間を持つ)")
+    print("\n--- 『想定通り動くか』検証ゲート(信頼問題: 全PASSで完了) ---")
+    for k, v in gates.items():
+        print(f"  {'PASS' if v else 'FAIL'}  {k}: {v}")
+    allpass = all(gates.values())
+    print(f"\n  ★ 全ゲート PASS = {allpass} {'→ 想定通り動作・完了可' if allpass else '→ 想定外・先に進まない'}")
     print(f"\n出力: {OUT}/v1303e_persistence_salience_seed0.parquet (+compare)")
-
-
-def verify_rubric(ev, h, persist_idx):
-    chk = {}
-    # persistence行は全てθ>=cid中央値か(持続区間の定義)
-    med_of = h.groupby("cid")["core_node_theta_resultant_length"].median().to_dict()
-    chk["persist_rows_all_ge_median"] = bool(
-        all(r.theta_resultant_length >= med_of[int(r.cid)] - 1e-9 for r in ev.itertuples()))
-    # 各segmentが連続N_PERSIST点以上か
-    seglen = ev.groupby("event_segment_id")["segment_length"].first()
-    chk["all_segments_ge_N"] = bool((seglen >= N_PERSIST).all())
-    # event_source は全行 手本タグ(離脱ポインタ)
-    chk["event_source_all_template"] = bool(ev["event_source"].str.startswith("researcher_template:").all())
-    # 全行 hosted(q95版と同じ性質)
-    chk["all_hosted"] = bool((ev["phys_core_status"] == "hosted_available").all())
-    # 空振りcidなし(全面適用の前提・全n_core機能)
-    chk["no_empty_cid"] = bool(all(len(persist_idx.get(cid, set())) > 0 for cid in h["cid"].unique()
-                                   if (h["cid"] == cid).sum() >= N_PERSIST))
-    # event_typeは単一(persistence版で統一)
-    chk["event_type_single"] = bool(ev["event_type"].nunique() == 1)
-    return chk
 
 
 if __name__ == "__main__":

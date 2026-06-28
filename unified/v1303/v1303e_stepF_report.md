@@ -1,65 +1,54 @@
-# v1303e Step A〜F — θ高同期閾値を5%固定から persistence(内部履歴由来)に置換 観察事実報告（判定なし）
+# v1303e Step F — θ高同期閾値の動的内部化（修正版 v2・想定通り動作を検証後に完了）観察事実報告
 
-*作成*: 2026-06-29、Code A。
-*位置づけ*: v1303e 主題設計（判断A・全面適用 persistence一本）の Step A〜F。既存 v1303a ledger + v1303c event_ledger の**後処理のみ**（再走/write-back なし）で、θ高同期手本の閾値を **cid内 percentile 上位5%固定(q95)** から **persistence（θがcid中央値以上の状態が連続3点持続＝Frozen の age_r≥τ と同型の内部履歴由来閾値）** に置き換え、salience の像が変わるかを観察した。**(a)/(b) 判定はしない（#12）。** 「persistence が優れている」「5%固定を倒した」「離脱できた」とは言わない。**これはθ系閾値の内部化であって非θ系=言語の離脱ではない（L型・明記）。** 判定は Web Claude / Taka。
-*成果物*: `v1303e_persistence_salience.py` / `outputs/v1303e/v1303e_persistence_salience_seed0.parquet`（25,568行）/ `v1303e_compare_q95_seed0.parquet` / `v1303e_distributions.html` / 調査の `v1303e_threshold_compare_seed0.parquet`。
+*作成*: 2026-06-29、Code A。**v2（修正版）**。
+*位置づけ*: v1303e（θ高同期手本の閾値を5%固定から内部履歴由来の動的閾値へ）の Step F。**v1（median-persistence）が「高同期でなく中央値またぎ」を拾う緩さを Web Claude 独立検証が指摘 → Code A が確認 → robust-range 正規化（v2）に修正し、想定通り動くことを検証ゲートで機械確認してから完了とした。** 後処理のみ・再走/write-back なし・seed0・判定なし（#12）。判定は Web Claude / Taka。
+*成果物*: `v1303e_persistence_salience.py`（v2）/ `outputs/v1303e/v1303e_persistence_salience_seed0.parquet`（18,809行）/ `v1303e_compare_q95_seed0.parquet` / `v1303e_distributions.html`。
 
 ---
 
-## 0. Step A 認識確認（実装前確認・調査で実質済）
-v1303e 調査（`v1303e_investigation_report.md`）で persistence_median_N3 が全n_core空振り0・q95とJaccard≈0.12 を確認済。本実装で event_ledger 構成（v1303c salience と同列構成）・event_source 手本タグ・q95比較経路・全n_core空振り0 を再確認（全て成立）。
+## 0. v1 → v2 の修正経緯（信頼問題への対応・正直に記録）
+- **v1（median-persistence）**：θ≥cid中央値が連続3点。実装・ルーブリックは通ったが、**Web Claude が parquet を独立検証し「θ<0.5 を n5で29%/n4で18.8% 拾う＝高同期でなく中央値またぎ」と指摘**。Code A が再確認し**事実と認めた**（各cidのθ中央値が n5≈0.39 ゆえ「中央値以上」は高同期でない）。
+- **原因**：Frozen の `age_r≥τ`（R>0＝意味ある条件の持続）を横流しした際、土台条件を `θ≥median`（＝真ん中・高さの意味なし）に緩めた。**持続という"形"は移植したが中身(高同期)が抜けた**。
+- **v2（修正）**：土台を「その cid 自身の到達域に対する高さ」＝**robust-range 正規化**に変更：`θ ≥ q05 + 0.6·(q95−q05)`（cid内・外れ値に頑健な q05-q95 レンジ）が連続3点持続。
+- **「想定通り動くまで先に進まない」を徹底**：実測で f を確定（f=0.6 robust が「θ<0.5≈0% かつ 空振り0」の点）→ 検証ゲート全PASS を確認してから完了。
 
-## 1. persistence salience の定義（Frozen の age_r 型と同型）
-- **persistence_median_N3**：θ_resultant が **cid内中央値以上の状態が連続3点（step10×3＝30step）以上続いた区間**に属する時点を θ高同期 salience とする（`runs_mask_ge`）。
-- Frozen の `persistence-based birth（age_r≥τ, v104_memory_readout.py:1741/2367＝連続R>0数で判定）` と同型＝「状態が持続した時間」で閾値を立てる。
-- **event_source=`researcher_template:theta_high_persistence_median_N3_v1`**（N=3・median は研究者選択ゆえ手本タグ＝離脱ポインタ・将来 endogenous 置換可）。
+## 1. v2 が「高同期を動的に全n_coreで拾う」を達成したか（検証）
+| n_core | v2 θmed | **v2 θ<0.5%** | (参考)v1 θ<0.5% | q95 θmed |
+|---|---|---|---|---|
+| 2 | 0.914 | **0.0%** | 0.4% | 0.999 |
+| 3 | 0.832 | **0.0%** | 3.6% | 0.974 |
+| 4 | 0.725 | **0.0%** | 18.8% | 0.902 |
+| 5 | 0.672 | **0.6%** | 29.0% | 0.856 |
+- **v1 の問題（低θを拾う）は解消**：θ<0.5 を n2-4で0%・n5で0.6%（v1 は n5 29%）。拾うθは各cidに対して高い（中央0.67–0.91）。
+- **全 cid 空振り0**（全 n_core）。robust-range（q05-q95）採用で min-max 版（外れ値で空振り増）より coverage 良好。
 
-## 2. 観察 — persistence で salience を拾えたか・q95(5%固定)と違う像か
-- **persistence salience = 25,568行 / 228 cid / 4,833 segment（segment長 中央4点＝40step）**。**全 cid 空振り0・全件 hosted**。
-- **persistence vs q95（n_core別中央値）**：
-  | n_core | persist_frac | q95_frac | Jaccard | persist空振り |
-  |---|---|---|---|---|
-  | 2 | 0.457 | 0.061 | 0.117 | 0/180 |
-  | 3 | 0.418 | 0.051 | 0.115 | 0/12 |
-  | 4 | 0.423 | 0.051 | 0.123 | 0/15 |
-  | 5 | 0.399 | 0.050 | 0.123 | 0/21 |
-- **像の違い（事実）**：persistence は **cid 寿命の約45%**（全体 med 0.447）を「持続高同期」として拾う＝**q95 の約5%（瞬間ピーク）と Jaccard≈0.12 で別の時点**。閾値の内部化で salience の像は**確かに変わった**（持続区間 vs 瞬間ピーク・多様性拡張の像）。
-
-## 3. 【重要・正直な注記】persistence salience は「広い」（45%）
-- persistence は **寿命の約45%を salience とする**＝q95（5%）の約9倍の広さ。「際立ち(rare)」という語感からは**かなり広い**（45%が salient なら「際立ち」と呼べるかは Taka 判断）。
-- これは persistence 型の性質：θ≥中央値は定義上ほぼ50%、連続3点条件で僅かに絞られ約45%。**「持続した高同期区間」を拾う設計ゆえ広いのは仕様通り**だが、salience の選択性は q95 より大幅に低い。
-- → 「5%固定と違う像が出た」(出口a) は成立。ただし**違いの方向は「より広く・選択性が低い」**＝Taka が「閾値内部化＝多様性拡張」として採るか、「salience は rare であるべき」として N を上げる/別定義にするかの判断材料（判定しない）。
-
-## 4. 健全性 sanity check（主題の出口にしない）
-- **健全性1**：persistence salience の空振り cid = **0**（全 n_core・全面適用の前提成立）。
-- **健全性2**：persistence salience 行は**全件 hosted_available**（v1303c と同じ性質・ghost/reaped=0）。
-- **健全性3**：persistence vs q95 Jaccard を n_core 別記録（0.115–0.123＝多様性拡張の像・新発見扱いしない）。
-
-## 5. 【ユーザ重視】説明可能性ルーブリック 実装後突合（全項目 PASS）
-| 検証項目 | 確認内容 | 結果 |
+## 2. 『想定通り動くか』検証ゲート（全PASS で完了・信頼問題）
+| ゲート | 内容 | 結果 |
 |---|---|---|
-| persist_rows_all_ge_median | persistence 行は全て θ≥cid中央値か（持続区間の定義） | **True** |
-| all_segments_ge_N | 各 segment が連続3点以上か | **True** |
-| event_source_all_template | 全行 event_source が手本タグ（離脱ポインタ） | **True** |
-| all_hosted | 全行 hosted_available か | **True** |
-| no_empty_cid | 空振り cid なし（全面適用の前提） | **True** |
-| event_type_single | event_type 単一（persistence版で統一） | **True** |
-→ 6項目すべて PASS。生成物が操作定義通り（強引な解釈なし）を実装後に機械検証。
+| gate1（n2/n3/n4/n5） | θ<0.5（高同期でない）を拾う率 ≤2%（v1の緩さを潰せたか） | **全PASS** |
+| gate2 | 空振りcid 0（全面適用） | **PASS** |
+| gate3_rank_mid_rows_are_high | 順位中位の行が本当に高θ(≥0.5)か（飽和cid検証） | **PASS** |
+| gate3_theta_median_high | θ中央値が全n_coreで≥0.6 | **PASS** |
+| gate4（4項目） | 全行θ≥threshold・全segment≥3点・event_source手本タグ・全hosted | **全PASS** |
+- **gate3 の差し替えを明記（ゲーミングでない）**：当初 `theta_cid_percentile≥0.5`（順位基準）をゲートにしたが FAIL。調査で **percentile<0.5 の 1256行は全て n2 飽和cidで θ実値 min0.613・θ<0.5=0%**＝「ほとんどが高いゆえ順位は中位だが範囲では高同期」と判明。順位基準は**飽和でも高同期を拾う範囲基準の設計意図と矛盾する不適切ゲート**。安易に消さず「順位中位の行が本当に高θ(≥0.5)である」検証に差し替え（飽和ケースの正当性を逆に証明）→ PASS。
 
-## 6. 言えること / 言えないこと
-- **言える（観察事実）**：θ高同期閾値を内部履歴由来 persistence（θ≥中央値 連続3点）に置換でき、全 cid 空振りなく salience を拾え、5%固定 q95 とは Jaccard≈0.12 で**別の像（寿命の約45%の持続区間 vs 約5%の瞬間ピーク）**を生んだ。閾値の内部化（神の手を一つ外す）はできた。
-- **言わない**：「persistence が優れている／正しい」「5%固定を倒した」「離脱できた」「ESDE が自律注意した」とは言わない。**これはθ系閾値の内部化であって非θ系=言語の離脱（v1303d 本筋）ではない**（persistence も θ の関数＝準同義反復の側面・隠さず明記）。salience が45%と広い点は事実として添え、選択性の評価は委ねる。
+## 3. 観察 — persistence(動的・持続) vs q95(5%固定・瞬間ピーク)
+- v2 salience = **18,809行 / 228cid / 3,601 segment**（segment長 中央4）。
+- **persist frac 全体 med 0.48（寿命の約48%）/ q95 frac 0.05 / Jaccard 0.106**＝別の像。
+- **持続 vs 瞬間ピークの正当な差（重要）**：v2 が拾うθ（n5中央0.672）は q95（n5中央0.856）より**やや低い**。理由＝**最高θは一瞬で持続しない**ため、「連続3点持続した高同期」は「瞬間ピーク」より構造的に少し低くなる。これは bug でなく **「持続的高同期 vs 瞬間的高同期」という salience 概念の違い**（拾うθは依然 high＝θ<0.5≈0%）。
 
-## 7. 規律遵守
-- A型/#CW7: N=3・median は研究者選択ゆえ event_source 手本タグ（離脱ポインタ）。閾値内部化は多様性拡張の意図（神の手を厳格にしない・Taka方針）。
-- L型: persistence を「離脱」「優れている」と言わない・θ系言い換えである点を明記・準同義反復を隠さない。
-- D型: cid内中央値基準（cid局所主語）・全n_core機能の median 基準（q75 はn2空振りで不採用）・cid個別/n_core別。#11: persistence と q95 を合成せず比較・差分。
-- #2/B型: 後処理のみ・write-back なし・親非書込。#12/J型: 判定せず観察事実のみ・seed0。F型: anchor=v105_v2。**結果を確定しにいかない**（v1303d の反省）。
+## 4. 言えること / 言えないこと
+- **言える（観察事実）**：θ高同期閾値を**動的（cid内 robust-range・その個体の到達域に対する高さ）で高同期が持続した区間**として内部化でき、全 cid 空振りなく・θ<0.5 をほぼ拾わず（高同期を拾う）・q95(5%固定)と別の像（持続区間 vs 瞬間ピーク・Jaccard 0.11）を生んだ。**v1 の「中央値またぎ（緩すぎ）」を v2 で「高同期」に修正し、想定通り動くことを検証ゲートで確認した。**
+- **言わない**：「persistence が q95 より優れている」「5%固定を倒した」「離脱できた」「ESDE が自律注意した」とは言わない。**これはθ系閾値の内部化であって非θ系=言語の離脱（v1303d本筋）ではない。F=0.6・persist=3 は研究者選択ゆえ event_source に手本タグ（離脱ポインタ）として明示＝完全な離脱ではない（θ系の言い換え・準同義反復の側面を隠さない）。** 「持続的高同期」が q95「瞬間ピーク」より少し低θな点も事実として添える。判定は委ねる。
 
-## 8. 次段（Code A は判定しない・委ねる）
-Web Claude 独立検証（persistence 定義・q95比較 Jaccard・全n_core空振り0・45%の広さの生データ再確認）→ Phase Result → Taka 主題評価。採否（persistence 版を salience の正式定義にするか・N を上げて選択性を上げるか・5%固定のままか）は Taka。
+## 5. 規律遵守
+- **信頼問題（今回の主眼）**：想定（高同期を動的に拾う）が v1 で未達と独立検証で判明 → 直して検証ゲート全PASS で確認してから完了。**想定外のまま先に進めていない。**
+- A型/#CW7: F=0.6/persist=3 は手本タグ（離脱ポインタ）。L型: θ系内部化であって非θ系離脱でないと明記・準同義反復を隠さない。D型: cid内 robust-range（cid局所主語）・全n_core機能・cid個別/n_core別。#2/B型: 後処理のみ・write-back なし。#12: 判定せず観察事実のみ。F型: anchor=v105_v2。
+
+## 6. 次段（Code A は判定しない・委ねる）
+Web Claude 独立検証（v2 の robust-range 定義・θ<0.5≈0%・空振り0・q95比較・gate3差し替えの妥当性の生データ再確認）→ Phase Result → Taka 主題評価。採否（v2 を salience 正式定義にするか・本筋[v1303d 非θ系離脱]へ戻るか）は Taka。
 
 ---
 
-## 9. 一文サマリ
-v1303e（判断A 全面適用・既存 ledger 後処理・再走/write-back なし・seed0・anchor v105_v2）でθ高同期手本の閾値を cid内q95上位5%固定から **persistence(θ≥cid中央値が連続3点持続＝Frozen age_r≥τ 同型の内部履歴由来閾値)** に置換し salience 25,568行/228cid/4,833segment を read-only 構成、**全cid空振り0・全hosted**で q95(5%)と **Jaccard≈0.12＝別の像（寿命の約45%の持続区間 vs 約5%の瞬間ピーク）** を生み閾値の内部化はできた（出口a成立）、ただし**正直な注記＝persistenceは寿命の約45%を拾い q95の9倍広く「rare な際立ち」としては選択性が大幅に低い**（多様性拡張として採るか N上げ/別定義かは Taka判断材料）、健全性1(空振り0)・2(全hosted)・3(Jaccard 0.115-0.123 記録)、**説明可能性ルーブリック6項目を実装後 verify_rubric() で全PASS**（persist行全てθ≥中央値・全segment≥3点・event_source手本タグ・全hosted・空振りなし・event_type単一）、L型厳守＝**これはθ系閾値の内部化であって非θ系=言語の離脱ではない**（persistenceもθの関数＝準同義反復を隠さず明記）・「persistenceが優れている/5%固定を倒した/離脱できた」とは言わない、結果を確定しにいかない、判定は Web Claude/Taka。
+## 7. 一文サマリ
+v1303e 修正版v2（既存ledger後処理・再走/write-back なし・seed0・anchor v105_v2・判定なし#12）── v1(θ≥cid中央値 連続3点=median-persistence)が θ<0.5 を n5で29%/n4で18.8%拾う「中央値またぎ(高同期でない)」緩さを **Web Claude独立検証が指摘→Code A確認(原因=Frozen age_r[R>0=意味ある条件]を横流しし土台をθ≥median[真ん中]に緩め中身が抜けた)** したのを受け、**信頼問題(想定外で先に進まない)に対応して土台を robust-range正規化(θ≥q05+0.6·(q95-q05)・外れ値に頑健・その個体の到達域に対する高さ)が連続3点持続 に修正(v2)**、実測で f=0.6 を「θ<0.5≈0%かつ空振り0」の点として確定し、**検証ゲート全PASS(gate1 θ<0.5≤2%全n_core/gate2 空振り0/gate3 順位中位行も高θ≥0.5[飽和cid検証・順位基準ゲートは範囲設計と矛盾ゆえ差し替えを明記]/gate4 定義通り)で『想定通り高同期を動的に全n_coreで拾う』を機械確認してから完了**、v2 salience 18809行/228cid は θ<0.5を n2-4で0%/n5で0.6%(v1の29%を解消)・拾うθ中央0.67-0.91(高同期)・q95(5%固定)とJaccard0.106(持続区間vs瞬間ピークの別の像)、ただし持続的高同期は瞬間ピークより少しθ低い(最高θは持続しない構造ゆえ・bugでなく概念差)、L型厳守=θ系閾値の内部化であって非θ系=言語の離脱でない(F=0.6/persist=3は手本タグ=離脱ポインタ・準同義反復明記)、「persistenceが優れている/5%固定を倒した/離脱できた」とは言わない、判定はWeb Claude/Taka。
