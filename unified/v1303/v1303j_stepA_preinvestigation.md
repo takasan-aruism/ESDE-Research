@@ -66,3 +66,36 @@ v1303f の raw θ（`theta_resultant_length`）と v1303i の各 θ 稀さ列を
 
 ## 9. 一文サマリ
 v1303j Step A 事前調査（実装前 feasibility・実コード突合・seed0・判定なし #12）── emitter→selector 設計の 5 目を実機 parquet で突合した結果、**機構（珍しさ比例ルーレット 1 本引き＋全順位＋cross-eye 並置）は実装可能**（4 ソースが 10 倍数 t・t∈[0,25000]・228 cid で整合・merge 可）だが、**設計の literal 列名は大半が不一致**（瞬間θ=`theta_resultant_length`／持続θ=`theta_cid_percentile`／link 稀さ=`rarity_internal_link_within_ncore`／B_Gen=`bgen_pct_in_ncore`）、かつ着手前に Taka 判定が要る **2 件を実測検出**＝**(A) cross-cid θ位置の `rarity_theta_global` は raw θ と corr 0.990・within_ncore も 0.826 ＝瞬間θの言い換えで設計自身の除外基準（θ味の稀さは使わない）に反する恐れ（#11/L）**、**(B) v1303i の生成 .py が repo に無く grid 再現・監査不能**、さらに **alive は設計の「v1303i 既定」では不可で per_subject_seed0.csv の host_lost_step から組む必要**・v1303i は既に alive 区間尊重済ゆえ §7 ghost 占有検査は空振りになり得る、read-only/物理非書込/228 宇宙は維持・書込は `unified/v1303j/` 配下のみ・smoke 後停止、(A)(B)＋実列名確定＋alive 再構築の 4 点を Taka 承認後に着手・承認まで停止（採否・cross-eye pull・どの目を動く軌跡と読むかは Taka 領域）。
+
+---
+
+## 付録 A. 目間 corr マトリクス実測（rev2 §3.0 ゲート・read-only・pull なし・判定なし #12）
+
+*追記*: 2026-07-01、Code A。rev2 が「未測」とした 瞬間θ vs 持続θ の distinct 性ほか、候補目のペアワイズ相関を merge_asof grid（per_subject 非依存の v1303i (cid,t) grid に各値を asof backward 寄せ・62,015 行・228 cid）上で実測。本文 §3-A の数値（exact 同位置 join）を substrate 込みで精緻化する。
+
+### A.1 ペアワイズ Pearson corr（pairwise-complete）
+```
+                 瞬間θ    持続θ   link稀さ  静的B_Gen  peer-rel θ  global θ  within_cid θ
+瞬間θ(f raw)     1.000  -0.058   0.102    0.001     0.367     0.485      0.352
+持続θ(e pct)    -0.058   1.000   0.095    0.015     0.323     0.078      0.345
+link稀さ(非θ)    0.102   0.095   1.000   -0.000     0.100     0.090      0.091
+静的B_Gen        0.001   0.015  -0.000    1.000    -0.013     0.007      0.000
+peer-rel θ      0.367   0.323   0.100   -0.013     1.000     0.912      0.988
+global θ(落)    0.485   0.078   0.090    0.007     0.912     1.000      0.902
+within_cid θ    0.352   0.345   0.091    0.000     0.988     0.902      1.000
+```
+availability(nonnull): 瞬間θ 1.00 / 持続θ 0.98 / link 1.00 / **静的B_Gen 0.56**（44% は値なし=fallback 対象）/ peer-rel θ 1.00。
+
+### A.2 読み（事実のみ）
+1. **瞬間θ vs 持続θ = −0.058 ＝ distinct**。rev2 最大の懸念（持続θ=瞬間θ の重複恐れ）は解消。`theta_cid_percentile` は cid 自履歴内 θ 順位の正規化量で、生θとの相関も **0.313**（v1303e 内直接測定 n=18,809）＝瞬間θとは別の目。両方 distinct として残せる。
+2. **link 稀さ・静的 B_Gen は全目と独立**（link は θ系と ≤0.10、B_Gen は全て ≈0）。ただし **B_Gen coverage 0.56**（fallback 率で要報告）。
+3. **θ-family（global / within_ncore / within_cid）は互いに 0.90–0.99 で内部冗長**＝同じθ信号の正規化違い。global を落とし within_cid を不採用、within_ncore のみ残す rev2 の処理は #11 上妥当。
+
+### A.3 本文 §3-A の正直な精緻化（substrate 依存）
+- 本文は **within_ncore × raw θ = 0.826** と記したが、これは **exact (cid,t) 同位置 inner-join**（now_event が立つ*その t*の θ とその ncore 順位）の値。
+- 今回の **merge_asof backward grid（設計の実 join）では 0.367**。どちらも実値で、**substrate で 0.37〜0.83 に動く**。
+- ⇒ **corr マトリクス単独では peer-rel θ が瞬間θの言い換えか否かを確定できない**。global の corr 0.99（exact）も asof では 0.485 だが、θ-family 内 0.91 で within_ncore と機械的に重複するため「落とす」は別根拠で維持。
+- ⇒ rev2 の **「within_ncore は残すが新規と呼ばず、軌跡で重複判定（prove-by-trajectory）」が、データ上も正しい処置**（matrix では決め切れない＝軌跡で見るしかない）。
+
+### A.4 ディスポジション（データと rev2 の整合・判定は Taka）
+4目（瞬間θ・持続θ・link・B_Gen）は distinct ＝Step A pull 採用可、peer-rel θ は prove-by-trajectory で保持、global/within_cid は落とす — いずれも実測と整合。実装上のブロッカーは残っていない。**(あ)(い) 採否・within_ncore の最終採否・cross-eye pull の可否は観察後の Taka 領域**（#12）。
