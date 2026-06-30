@@ -3,7 +3,7 @@
 #         異系対応ではない（v1110-1113 の異 seed node ID inject とは別物・F型回避）。
 # 過去成功との照合: v12.1 ルーレット（argmax で潰さず確率比例で引く・レア切り捨てない）/
 #                   v1114 pull（押し込むでなく拾う）/ v106 read-only 後処理。
-# 過去失敗の回避: A 神の手（cutoff 入れない）/ B 物理介入（read-only・書込は v1303j 配下のみ）/
+# 過去失敗の回避: A 神の手（cutoff 入れない）/ B 物理介入（read-only・書込は unified/v1303/outputs/v1303j 配下のみ）/
 #                 C 自己成就（uniform baseline と比較）/ D 平均化（n_core 保持・潰さない）/
 #                 #11 合成（目ごと別系列・合成なし・目間 corr で distinct 確認）/ L 意味盛り（"注意した" と書かない）。
 # grid/alive 出所: per_subject_seed0.csv（host_lost_step/birth_window）+ c_trajectory(window->step)。
@@ -22,7 +22,7 @@ SELECTOR_RNG_SEED = 1303  # 固定。RNG 単発軌跡を読みすぎない（rev
 REPO = Path(__file__).resolve().parents[2]
 DIAG = REPO / "developmental" / "v105" / "diag_v105_main_v2"
 V1303 = REPO / "unified" / "v1303" / "outputs"
-OUT = REPO / "unified" / "v1303j" / "outputs"
+OUT = REPO / "unified" / "v1303" / "outputs" / "v1303j"
 OUT.mkdir(parents=True, exist_ok=True)
 
 T_STEP = 10
@@ -283,7 +283,7 @@ def write_observation(C, pull, san, grid):
     lines.append("## 6. 次段")
     lines.append("- smoke seed0 まで。main・複数 seed には進まない。承認後に Step B（正式カラム化・複数 seed・RNG 安定性検査）。")
 
-    (REPO / "unified" / "v1303j" / "v1303j_observation.md").write_text("\n".join(lines), encoding="utf-8")
+    (REPO / "unified" / "v1303" / "v1303j_observation.md").write_text("\n".join(lines), encoding="utf-8")
     log("observation.md written")
 
 
