@@ -1,0 +1,21 @@
+{
+  "design": "v1304a_feasibility_smoke",
+  "mapping": "shape-forming Stage 1B (phase_sig 分布サンプル)",
+  "N_child": 150,
+  "steps": 300,
+  "k_seed": 6,
+  "eyes": [
+    "now_theta",
+    "archive_theta_percentile",
+    "link_rarity",
+    "bgen_static_prior"
+  ],
+  "groups": [
+    "canon",
+    "parent",
+    "shuffle",
+    "uniform"
+  ],
+  "n_child_runs": 96,
+  "total_s": 88.9
+}
