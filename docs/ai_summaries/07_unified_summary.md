@@ -1568,3 +1568,45 @@ Taka：
 - 監査/調査: `cw_investigation_homogeneity_wiring.md` / `cw_fulltest_selection_material.md`
 
 *以上 v13 child-world 追補（Code A、2026-06-21、記録のみ・判定なし）。次は 3AI 合議（GPT 監査・Gemini 設計・Web Claude 統合）で全検の選定合理性を確定し、pairing 検定・共通観測窓・対称対照・seed≈12 で設計（Taka 承認後）。*
+
+---
+
+## Part 5（v1303 注意センター統合 → クローズ / v1304 開始） — 07 Unified Summary 追補 — 注意の入力側の確立（emitter → selector → attention output schema）
+
+*追補*: 2026-07-01、Code A。**read-only・物理非書込・同一 seed0 v105_main_v2・228 cid 宇宙・判定なし #12。** 全経路の一次資料 = `unified/v1303/v1303_evolution.md`。
+
+### 0. 一文結論
+v1303 は「親 ESDE が自分の珍しさで何に注意を向ける候補にするか」を pull する **注意の入力側**を、細かいサブブランチ（a→b→c→d→e→f→g→h→i→j→Final）で確立し **2026-07-01 クローズ**。出口＝正式 eye 4 + 補助 1 の attention output schema（本体 = per-t 選択確率）。次は v1304 = その投影（child-ESDE）。
+
+### 1. 経路（emitter → selector → schema）
+- **a 基盤**: 3レンズ（CID固有値 / Atom一致率 rank_1 / phys_core θ/link/R）を canonical で ledger 化（62,906行・frozen byte 一致）。canonical が割れており **v105_main_v2 に固定**（v1302 は v918 別系＝不使用）。
+- **b 時間構造**: 同一CID内で Atom は時間構造を持つ・θ は短期慣性のみ・レンズは独立に動く。
+- **c 手本イベント**: birth_signature（R_positive）と salience_template（θ高同期）を event_class 分離。**R_positive は稀な結節でなく誕生署名**（onset は tracking 窓で観測不能・offset のみ）＝設計-現実差を実装前に検出。
+- **d 手本置換**: θ手本を内在量で離脱できるか → 非θは弱い・θ系は言い換え。
+- **e θ内部化**: θ高同期閾値を研究者5%固定 → **robust-range 動的持続**（q05+0.6·(q95−q05) 連続3点）に置換＝神の手排除（q95 と Jaccard 0.11）。
+- **f Now/Archive 統合**: v1114（注意センター設計）は t 無し・別 run（F型・退化バグ）ゆえ直接使わず、**canonical から v1114 型イベントを t+cid 付き・同228宇宙で再構成**（33,885行・F型回避実証）。
+- **g 4分類**: Comparator 4分類（Familiar/Novel × Stable/Unstable）は literal で degenerate（92%1象限）→ 改善B' で4象限分離。
+- **h 珍しさ独立軸**: B_Gen を n_core内 percentile に正規化＝θ/イベントと独立の珍しさ軸（数値 B_Gen は 45/228 疎）。
+- **i 動的稀さ**: 各 cid/t の物理状態の稀さを全228cid で read-only 計算・静的と独立（corr−0.01）。但し新規に効くのは**非θ link 稀さ・cross-cid θ位置のみ**（θ味は言い換え0.79/R退化98%/CQ冗長−0.76）。
+
+### 2. selector（v1303j）と方法論の落とし穴 2 件（最重要）
+- **selector-prototype**: emitter を**研究者 cutoff なしで珍しさが 1 つ pull**（ルーレット・v12.1 同型）。grid/alive を per_subject + c_trajectory(window→step=500) から自前再構築（v1303i 生成元欠落に非依存）。
+- **落とし穴1**: single-draw の pulled-cid 一致率は目の異同に関係なく **chance(≈1/eligible≈0.04) 支配**で distinct 判定不能（now×peer 0.044 ≈ uniform 0.037）。
+- **落とし穴2**: marginal（時間平均）選択頻度の相関は **D型平均化の罠**で露出時間支配 → θ/link/peer が全て uniform と ~0.99。
+- **本体 = per-t 選択分布**: 選択確率は正規化 salience で厳密（`p=clip(sal,0)/Σ`・RNG 不要）。per-t で目は distinct（now×peer 0.55 / now×link 0.48 / now×persist 0.43）かつ全 eye が uniform と区別可（per-t KL>0）。many-RNG(N=200) は sampler 検証（corr_emp_exact 0.9999）。memory `feedback_single_draw_agreement_is_chance`。
+
+### 3. クローズ（attention output schema 固定・7条件）
+- **eye registry**: 正式4 = now_theta / archive_theta_percentile（旧 persist_thetapct・改名＝**duration lens でない**・pulled/eligible seglen 0.955）/ link_rarity（非θ）/ bgen_static_prior。補助1 = aux_peer_relative_theta（θ-family）。不採用（global/within_cid θ・R_positive・C-Q）は戻さない。
+- **schema**: `v1303_final_attention_output_seed0.parquet`（t×cid×eye 366,605行・本体 `p_select_given_eye_t`・marginal 参考/single-draw 例示）。
+- **構造の正直な記述**: 「5 独立系」でなく dynamic physical cluster（now/archive_θ/link/peer・per-t corr 0.43–0.77）+ static prior（bgen・直交）。link は非θ＝物理側の別軸。**軸数を成果に数えない**。
+
+### 4. 次段 v1304（attention projection / child-ESDE）
+attention output（cid×eye の per-t 選択分布）を子ESDE 等へ投影。**v1304a existence check** = 子が canon と親特異に違う「別の系」として立つか（3条件・初期条件を同期と読まない #CW7・本体 t_mid 以降）。paradigm は既存 `cw_run.py`（build_child 4knob + canon/shuffle/random + signature + run_injection）を再利用（engine の in-memory 自走を smoke 確認）。唯一の設計判断 = 親 attention profile → 子 knob の写像形（推奨 = ensemble）。継承は持続 param 経由のみ（v1302 (A)）。selector と projection を混ぜない。`unified/v1304/v1304a_feasibility_check.md`。
+
+### 出力ファイル（`unified/v1303/` + `outputs/v1303j/`）
+- 進化史: `v1303_evolution.md`（全経路の一次資料）
+- 各段報告: `v1303{b,c,d,e,f,g,h,i}_*` の stepA/stepF 報告・`v1303j_stepA_preinvestigation.md` / `v1303j_stepB_observation.md`
+- 固定: `attention_eye_registry.{md,parquet}` / `v1303_final_attention_schema.md` / `v1303_close_memo.md` / `v1303_final_schema.py`
+- データ: `outputs/v1303j/v1303_final_attention_output_seed0.parquet` + selector/full_rank/cross_eye/eye_corr/sanity + Step B distribution audit 出力
+
+*以上 v1303 注意センター統合クローズ + v1304 開始 追補（Code A、2026-07-01、記録のみ・判定なし）。次は v1304a の写像形（親 attention → 子 knob）を Taka/Web Claude 合意後に実装。*

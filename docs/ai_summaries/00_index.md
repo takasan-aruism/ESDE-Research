@@ -1,7 +1,8 @@
 # ESDE 研究史 — AI 向け超要約 (Index + 用語対応表)
 
 *作成日*: 2026-04-11 (v9.9 Long Run 進行中)
-*更新*: 2026-06-25 (**ai_summaries 統合: 枝番 06b/06c を 06 に、07 の追補 4 本を 07 に、全文保存（書き換えなし）で Part 連結により一本化。分岐ファイルは削除。番号体系は 1 番号 = 1 ファイルに復帰**)
+*更新*: 2026-07-01 (**v1303 注意センター統合クローズ（注意の入力側の確立）+ v1304 開始。emitter→selector→attention output schema を細かいサブブランチ a-Final で確立、正式 eye 4+補助1・本体=per-t 選択確率。方法論の落とし穴2件を実証（single-draw は chance 支配・marginal は平均化の罠）→ distinct 性は per-t 分布で見る。次は v1304 child-ESDE projection。進化史=`unified/v1303/v1303_evolution.md`、詳細=`07_unified_summary.md` Part 5 / `08_concept_core.md` D.99 / 教訓 438-441 = 概念理解.md、§18.23 新設**)
+*前回更新*: 2026-06-25 (**ai_summaries 統合: 枝番 06b/06c を 06 に、07 の追補 4 本を 07 に、全文保存（書き換えなし）で Part 連結により一本化。分岐ファイルは削除。番号体系は 1 番号 = 1 ファイルに復帰**)
 *前回更新*: 2026-06-21 (**v13 child-world: CID 誕生形態→物理 param の子系。統計監査で `real≒shuffle` の真因＝比較統計 (署名 mean/std) が cid→param→署名の pairing を構造上見ないこと (pairing 検定なら K_sync→sync_order・plb→link/label_density が両 ratio p<0.005) を確定、写像は K_sync 100%/θ 84% 伝達＝入口で潰してない、像が保持して見えた相関の多くは run 長交絡。次は全検だが CID 値 ~5-14 独立軸・物理 param ~6-7 独立軸ゆえ「全部繋ぐ」は冗長、選定合理性を 3AI 合議で詰める。詳細 = `07_unified_summary.md` Part 4、現況 = `docs/現在の方向_childworld全検.md`、教訓 434-437 = 概念理解.md**)
 *前回更新*: 2026-06-05 (**v1105/v1109b → 注意センター ESDE 転換 → v1110-v1113 4 連続失敗 → v1114 Step 1 内部注意生成成立、観察対象の規律 (同じ系内 vs 異なる系) + Code A 循環構造の認識 + Center ESDE Taka 定義、§18.20 + §18.21 新設**)
 *前々回更新*: 2026-05-23 (**Unified Phase v1104 + v1104a 完了反映、4 つの非対称性 #L30-L33 確定、v1105/v1105a 主題確定、観察方法を疑う規律確立**)
@@ -1851,3 +1852,19 @@ V10x 以降の失敗はこの方針からの逸脱。
 - **「異なる seed/系の対応関係を測りたい」衝動が出たら、教訓 #422 (観察対象の規律) を読む** — 異なる系は独立、対応関係は存在しない、同じ系内で設計する
 - **「素直な48次元 cosine で一致率を測りたい」衝動が出たら、v1103 (#L17) を読む** — Atom は平均14.5/48軸の疎、素直な cosine はゼロ二義性+重なり軸数依存で使えない、対処A/B/C を使う、raw/norm 両方
 - **「Atom 空間の個性化を物理に効かせたい (出口)」衝動が出たら、Taka「効かせる必要ない、Center が拾う」を読む** — 押し込むでなく拾う、出口は Center (v1114)
+
+## §18.23 v1303 注意センター統合クローズ → v1304 child-ESDE projection (2026-07-01 追記)
+
+v1114 Step1（§18.20-21）で確立した注意センターを、v1303 で**注意の入力側**（親 ESDE が自分の珍しさで注意候補を pull する所）として細かいサブブランチで確立し、**2026-07-01 クローズ**。詳細は `07_unified_summary.md` Part 5 / `08_concept_core.md` D.99 / 進化史 `unified/v1303/v1303_evolution.md` / 教訓 438-441 = 概念理解.md。
+
+### v1303 = emitter → selector → attention output schema (クローズ)
+- **経路**: a(3レンズ ledger・canonical v105_main_v2)→ b(時間構造)→ c(手本イベント二系統・**R_positive は誕生署名**)→ d(手本置換)→ e(**θ閾値を5%固定→robust-range 動的持続に内部化**=神の手排除)→ f(**v1114 を canonical から再構成**し Now/Archive 統合・F型回避)→ g(4分類 degenerate 回避)→ h(B_Gen を独立の珍しさ軸)→ i(動的稀さ・新規は非θ link のみ)→ j(selector)→ Final(schema 固定)。
+- **★ 方法論の落とし穴2件 (memory `feedback_single_draw_agreement_is_chance`)**: selector の distinct 性は集約指標で測れない。(1) single-draw 一致率は chance(≈1/eligible) 支配、(2) marginal 時間平均相関は D型平均化で露出時間支配。**本体は per-t 選択分布**（`p=clip(sal,0)/Σ`・厳密・RNG 不要、many-RNG は sampler 検証のみ）。集約するほど selector の個性は平均化で消える。
+- **出口**: 正式 eye 4（now_theta / archive_theta_percentile〔旧 persist_thetapct・duration lens でない〕/ link_rarity 非θ / bgen_static_prior）+ 補助1（aux_peer_relative_theta）、本体 `p_select_given_eye_t` の schema（t×cid×eye 366,605行）。**v1303k / Step C を作らない**。
+
+### v1304 = attention projection / child-ESDE (進行中)
+- v1303 の attention output（cid×eye の per-t 選択分布）を子ESDE 等へ投影。**v1304a existence check** = 子が canon と親特異に違う「別の系」として立つか（3条件・初期条件を同期と読まない #CW7・本体 t_mid 以降）。paradigm は既存 `cw_run.py` 再利用（engine の in-memory 自走を smoke 確認）。**唯一の設計判断** = 親 attention profile → 子 knob の写像形（推奨 ensemble）、制約 = knob 源 v11 birth 物理は 45/228 疎。継承は持続 param 経由のみ（v1302 (A)）。selector と projection を混ぜない。
+
+### 新スレッドへの「衝動」チェック (v1303/v1304 追加)
+- **「selector の目が別レンズか一致率/平均で測りたい」衝動が出たら、memory `feedback_single_draw_agreement_is_chance` を読む** — single-draw 一致率も marginal 平均も潰れる、per-t 分布で見る
+- **「注意を子ESDE や応答に投影したい」衝動が出たら、selector(v1303) と projection(v1304) を混ぜない** — v1304a は existence check（成立判定でない）・親へ feedback しない・継承は持続 param 経由のみ（初期条件=topology 移植は v1302 で null）

@@ -2404,3 +2404,27 @@ Code A (Web Claude OK を「正解」と思い込み実装)
 - 実装ファイル冒頭の観察対象注釈ブロック (Code A 自己強制ハードル)
 - 当面 Web Claude 不使用、Taka と Code A の二者ループで進める
 - 設計段階で Web Claude を view 役で再投入する場合、観察対象の妥当性は Code A が責任を持つ前提
+
+## D.99 注意センター統合 v1303 — emitter / selector / attention output schema (クローズ 2026-07-01)
+
+D.96（注意センター Taka 定義・v1114 Step1）の続き。v1303 は**注意の入力側**（親 ESDE が自分の珍しさで「何に注意を向ける候補にするか」を pull する所）を確立してクローズした。全経路 = `unified/v1303/v1303_evolution.md`。
+
+### D.99.1 emitter と selector の区別 (Taka 逐語)
+- 「際立ちは頻度で否定しない」「注意＝移動軌跡 trajectory（固定点でない）」「emitter に留め selector にしない」「押し込むでなく拾う（pull）」。
+- **emitter** = 各 (cid,t) に際立ち/珍しさの**値**を付ける部品（v1303f-i）。**selector** = 各 t でその値に比例して 1 つ pull する機構（研究者 cutoff を入れず ESDE の値が選ぶ・v1303j）。selector と projection（注意→応答方向・v1304）を混ぜない。
+
+### D.99.2 目 (eye) = 複数の独立した際立ちレンズ (合成しない #11)
+- 正式 eye 4 + 補助 1 を**別列で並べる**（合成 pull しない・θ×link を掛けない）。now_theta（瞬間の位相同期）/ archive_theta_percentile（Archive 内 θ 位置・**duration lens でない**）/ link_rarity（非θの物理側稀さ）/ bgen_static_prior（誕生時の珍しさ・時間不変）/ aux_peer_relative_theta（θ-family ゆえ補助）。
+- **θ の言い換えに注意**: θ系の稀さ/位置（global/within_cid θ・0.99/0.81）は「瞬間θの言い換え」になりやすく、v1303d/i/j で一貫して検出・除外。**新規に効いたのは非θの link 稀さのみ**。構造は「5 独立系」でなく dynamic physical cluster（now/archive_θ/link/peer）+ static prior（bgen 直交）。**軸数を成果に数えない（DNA=4記号に相当）**。
+
+### D.99.3 ★ selector の distinct 性は集約指標で測れない (方法論の核・memory 化)
+- **落とし穴1**: single-draw の pulled-cid 一致率は目の異同に関係なく chance(≈1/eligible) 支配（now×peer 0.044 ≈ uniform 0.037）。
+- **落とし穴2**: marginal（時間平均）選択頻度の相関は D型平均化の罠で露出時間支配 → 全 eye が uniform と ~0.99。
+- **本体 = per-t 選択分布**: 選択確率は正規化 salience で厳密（`p=clip(sal,0)/Σ`・RNG 不要）。per-t で目は distinct（now×peer 0.55）かつ全 eye が uniform と区別可（per-t KL from uniform >0）。many-RNG は sampler 検証のみ。**集約するほど selector の個性は平均化で消える**（[[feedback_no_single_index_classification]] の selector 版・memory `feedback_single_draw_agreement_is_chance`）。
+
+### D.99.4 attention output schema = v1304 projection への部品
+- `t × cid × eye` の per-t 選択確率（`p_select_given_eye_t`）を固定＝「どの cid が・どの目で・どれだけ引かれやすいか」。marginal は参考・single-draw は例示。これが v1304a child-ESDE existence check の親 profile 入力。**言えるのはここまで**（「ESDE が注意した / 完成した」とは言わない）。
+
+### D.99.5 F型回避と神の手排除の実践 (v1303 で反復)
+- **F型回避**: v1114 の別 run（t 無し・退化バグ・per_subject に無い cid）を直接使わず canonical から同228宇宙で再構成（v1303f）。異系対応（[[index_observation_target]] の失敗型）を予防。
+- **神の手排除**: θ閾値 5%固定 → 内部履歴由来の動的持続閾値（v1303e）／cutoff を入れず uniform null 差で判定（v1303j・C型回避）。
