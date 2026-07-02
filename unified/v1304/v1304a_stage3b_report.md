@@ -58,5 +58,11 @@
 - 限界：親 profile は seed0 のみ（条件付き）。other-parent null は未実施（結果を見て・§2）。子側 N=150 固定・plb のみ per-cid（変数1本）。
 - 判定（出口 a/b/c・composition 継続か別チャネル/feedback か）は Taka。
 
+## 6b. 自己監査（2026-07-03・Code A）— コードバグなし・framing の過大読みを 3 点補正
+Stage 3 で結論を過剰接続した反省から Stage 3b も敵対的に再監査。**コードバグ・設計読み違いは無し**（paired 設計＝draw 内で engine seed を群間 matched・群別に独立 plb、composition・lift 2定義・Holm・t検定・draw 独立性は正しい）。bgen 効果も本物・機構整合・2 base 再現（composition が plb を実際に −2.5% シフト＝corr(bgen-lift,plb)=−0.51 駆動、link_density は plb に敏感＝±15%→−0.17 ゆえ −2.5%→−0.015 と同オーダー同符号、少数 cid 依存でない＝effective count 35/45）。ただし結論を変えない範囲で **framing を 3 点補正**：
+1. **効果量は小さい（有意 ≠ 大効果）**：固定 plb ペアの per-child 比較（n=24）は t−0.49（有意でない）。**t−4.8 の有意性は R=20×M=30 の平均化 power から**であり per-child 効果は小さくノイズ（std 0.062）に埋もれる。→「**小さいが robust**」と読む。
+2. **「仮説 支持」→「1つの高 corr eye(bgen)で consistent」に降格**：高 corr eye は bgen 1個のみで graded な dose-response でなく閾値的 1 例。
+3. **動的 eye の null は 45 制限 slice（注意の 20-26%）上の測定**：off-channel 74% と別チャネルは未検証。「動的 attention が子物理と無関係」でなく「45-slice が s_avg と相関しない」まで。
+
 ## 7. 一文サマリ
 v1304a Stage 3b（統計やり直し・#12）── Stage 3 smoke の不備（単一抽選・unpaired 過大noise床・多重比較未補正・lift定義依存）を R=20 リサンプル×draw単位paired・primary=parent−shuffle事前固定+Holm・lift 2定義併記・base2系列で修正した結果、**inconclusive 解消＝composition は親特異な集団乖離を出せるが lift が転移チャネル s_avg と相関する目(bgen |corr|0.55)のみ**（bgen parent−shuffle link_density t−4.8/−5.2 両base Holm生存・shuffle−canon は null=真の親特異・符号一貫0.8–0.9、動的salience目 now/archive/link は corr弱く Holm生存ゼロ=分離なし）、機構は分離∝corr(注意,チャネル)で仮説支持、ただし**分離する bgen は静的誕生priorで s_avg との相関は誕生物理由来＝動的salience(θ/link)はチャネルに届かず**、出口は bgen で(a)素材/動的目で(b)(c)という事実上の分岐（静的prior経由でaと読むか・動的が届く別チャネル探すか・feedback へ)で判定はTaka、親profileはseed0条件付き・other-parent未実施。
