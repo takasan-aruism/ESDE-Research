@@ -1,3 +1,5 @@
+> **【訂正 2026-07-03・Code A 自己監査 + Stage 3b】**: 本 smoke の結論「(b)/(c) 寄り・親特異な乖離なし」は **撤回**。統計設計不備（単一 composition 抽選・unpaired 過大 noise 床・多重比較未補正）で実効果を見逃す方向だった。統計的にやり直した **Stage 3b**（R=20 リサンプル×draw 単位 paired・Holm 補正・2 base 系列＝`v1304a_stage3b_report.md`）の結論：**composition は親特異な集団乖離を出せるが、lift が転移チャネル s_avg と相関する目（bgen_static_prior・|corr|0.55）のみ**（bgen parent−shuffle が両 base で Holm 生存・shuffle−canon は null＝真の親特異）。動的 salience 目（now/archive/link）は corr 弱く分離せず。本 smoke §3 の「注意⊥s_avg」機構観察は方向として正しかったが、結論の断定（(b)/(c)）は統計不足からの過剰接続だった。以下の smoke 記録は経緯として残す。
+
 # v1304a Stage 3 観察報告 — lift × per-cid composition（smoke・停止・判定なし #12）
 
 *作成*: 2026-07-02、Code A。**feasibility + smoke で停止（§7 指示）。full/3条件統計/判定に進まない。read-only・親へ feedback なし・物理非書込・#12。**
