@@ -1,0 +1,36 @@
+{
+  "design": "v1304b_feedback_loop_smoke_rev4",
+  "R": 5,
+  "T": 5,
+  "M": 20,
+  "base": 0,
+  "g": 1.0,
+  "eps": 1e-06,
+  "lens": "link_density",
+  "init_eye": "now_theta",
+  "n_child_run": 1000,
+  "round0_support": {
+    "support_n": 45,
+    "sum_weight": 1.0000000000000002,
+    "w_min": 0.01632656839869841,
+    "w_max": 0.03581692632325683,
+    "entropy": 3.779930521795531,
+    "cid_hash": "a0ea0593d3eef99ae9b418e6fb0a470d"
+  },
+  "parent_physics_hash": {
+    "PS": "4360e79a45f110b954cfbecdd02e252b",
+    "SCHEMA": "e6c17b4d5256ae5411980c49021f92b0"
+  },
+  "stop_success_conditions": {
+    "i_all_round_group_child_gen": true,
+    "ii_provenance_no_missing": true,
+    "iii_seed_match_fb_shuffle": true,
+    "iv_weight_no_nan_no_collapse": true,
+    "v_parent_physics_hash_unchanged": true,
+    "vi_writes_under_v1304": true
+  },
+  "all_pass": true,
+  "primary_L1_fb_shuffle_mean": 0.8348352141494427,
+  "primary_L1_fb_nofeedback_mean": 0.646901225207644,
+  "total_s": 908.8
+}
