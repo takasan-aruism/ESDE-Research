@@ -1,0 +1,86 @@
+{
+  "design": "v1304c_premise_drift",
+  "mode": "full",
+  "lenses": [
+    "link_density",
+    "R_density"
+  ],
+  "bases": [
+    0,
+    1
+  ],
+  "R": 12,
+  "T": 8,
+  "M": 20,
+  "round0_support": {
+    "support_n": 45,
+    "entropy": 3.779930521795531,
+    "cid_hash": "a0ea0593d3eef99ae9b418e6fb0a470d"
+  },
+  "parent_hash_unchanged": true,
+  "n_child": 23040,
+  "log_complete": {
+    "pop_rows": 23040,
+    "cidsal_rows": 11159,
+    "drift_rows": 336,
+    "expected_pop": 23040,
+    "drift_t_min": 1,
+    "drift_t_max": 7
+  },
+  "instrument_checks": {
+    "t0_excluded": true,
+    "same_probe_both_worlds": true,
+    "parent_hash_unchanged": true
+  },
+  "tests": [
+    {
+      "lens": "R_density",
+      "base": 0,
+      "R": 12,
+      "premise_drift_fb_mean": 0.15919,
+      "premise_drift_nofb_mean": 0.15247,
+      "primary_diff_mean": 0.00672,
+      "t": 0.752,
+      "p_raw": 0.468057,
+      "sign_consistency": 0.417,
+      "all_series_pos": false
+    },
+    {
+      "lens": "R_density",
+      "base": 1,
+      "R": 12,
+      "premise_drift_fb_mean": 0.16438,
+      "premise_drift_nofb_mean": 0.15904,
+      "primary_diff_mean": 0.00534,
+      "t": 0.468,
+      "p_raw": 0.648897,
+      "sign_consistency": 0.417,
+      "all_series_pos": false
+    },
+    {
+      "lens": "link_density",
+      "base": 0,
+      "R": 12,
+      "premise_drift_fb_mean": 0.16957,
+      "premise_drift_nofb_mean": 0.15977,
+      "primary_diff_mean": 0.00979,
+      "t": 0.975,
+      "p_raw": 0.350701,
+      "sign_consistency": 0.583,
+      "all_series_pos": false
+    },
+    {
+      "lens": "link_density",
+      "base": 1,
+      "R": 12,
+      "premise_drift_fb_mean": 0.16948,
+      "premise_drift_nofb_mean": 0.17172,
+      "primary_diff_mean": -0.00224,
+      "t": -0.268,
+      "p_raw": 0.794012,
+      "sign_consistency": 0.583,
+      "all_series_pos": false
+    }
+  ],
+  "total_s": 1264.4
+}
