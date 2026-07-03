@@ -1,6 +1,6 @@
 # 09 ESDE システム構造 (v9.18 現行、Developmental フェイズ v10.x 開始)
 
-*ファイル番号変更 (2026-05-18)*: Unified Phase 独立に伴い `08_esde_system_structure.md` → `09_esde_system_structure.md` に繰り上げ。新規 `07` は `07_unified_summary.md`。内容は変更なし。
+*ファイル番号変更 (2026-05-18)*: Unified Phase 独立に伴い `08_esde_system_structure.md` → `10_esde_system_structure.md` に繰り上げ。新規 `07` は `07_unified_summary.md`。内容は変更なし。
 *作成*: v9.11 完了時点
 *更新*: 2026-04-17 (v9.13 完了、S≥0.20 撤去、persistence-based birth 反映)、2026-04-18 (v9.14 完了、Layer B Shadow Ledger 追加)、2026-04-20 (v9.15 完了、CidSelfBuffer 追加、A/B 分離、event 駆動 Fetch)、2026-04-21 (v9.16 完了、観察サンプリング機構 = age_factor 比例サンプリング追加、Constitution 接続)、2026-04-23 (v9.17 段階 4 完了、他者読み + 接触体記録、CidView + InteractionLog、摂食行動の発見、GPT 監査運用指針 v1 導入)、2026-04-24 (v9.18 段階 5 完了、A+C 統合 = cumulative_cognitive_gain + V_unified + theta_distance、per_step 計算、意識の原資モデルの明確化)、**2026-04-24 (Primitive フェイズ完結、Developmental フェイズ (v10.x) 開始、ディレクトリ `developmental/v10X/`)**、2026-05-08 (v10.9 反映、§89 オービス + 4 種設計表)、2026-05-11 (v10.10-v10.12 反映、§90-§92)
 
@@ -2943,7 +2943,7 @@ v10.13 以降で n_core 軸 / formation_relation 軸を観察対象とする主�
 
 ## v1104 + v1104a 構造追加: scope × 粒度の役割表方針 (2026-05-23)
 
-v1104 + v1104a で確定した 4 つの非対称性 (#L30-L33、概念理解.md #413-#418 / 08_concept_core.md §D.95) を ESDE システム構造として記述する。
+v1104 + v1104a で確定した 4 つの非対称性 (#L30-L33、概念理解.md #413-#418 / 09_concept_core.md §D.95) を ESDE システム構造として記述する。
 
 ### scope 別 chain 構造 (#L30)
 

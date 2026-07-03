@@ -1,6 +1,6 @@
 # 11 ESDE Language Summary
 
-*ファイル番号変更 (2026-05-18)*: Unified Phase 独立に伴い `10_esde_language_summary.md` → `11_esde_language_summary.md` に繰り上げ。新規 `07` は `07_unified_summary.md`。内容は変更なし。
+*ファイル番号変更 (2026-05-18)*: Unified Phase 独立に伴い `10_esde_language_summary.md` → `12_esde_language_summary.md` に繰り上げ。新規 `07` は `07_unified_summary.md`。内容は変更なし。
 *作成*: 2026-05-13、Code A
 *対象*: ESDE Language 系 (`language/` + `docs/ESDE language/` 直下) の凍結時点 (2026-03-03) スナップショット
 *親資料*: `language/ESDE_LANGUAGE_FROZEN_SPEC.md` (技術仕様、636 行) + `unified/v1100/language_side_investigation_report.md` (Web Claude Language 側依頼への調査報告書、466 行)

@@ -3,7 +3,7 @@
 *版*: 1.1（2026-06-18 作成、Code A / 2026-06-25 フロンティア網羅追記、Claude Code）
 *出典*: `docs/ai_summaries/`（00_index 〜 11、約14,000行）を一本化。詳細数値は各原典（`docs/ESDE_*_Report.md` / `primitive/v9XX/*.md` / `developmental/v10X/*.md` / `unified/v1NNN/*.md`）に遡れる。
 *対象範囲*: 現役の **Genesis 系**（物理層→cid→α/β が emergent する「上昇」アプローチ）。Language 系（326 Atoms×48軸、2026-03 凍結）は §10 に substrate として収録。
-*射程の時点*: 認知層 v9.18 / Developmental v10.0–v10.13a / Unified v1100–v1114（注意センター Step1 確立, 2026-06-05）+ フロンティア v12 Atomset（v1201）・v13 child-world（v1301/v1302）・**v1303 注意センター統合クローズ（注意の入力側確立, 2026-07-01）**・v1304 attention projection / child-ESDE（進行中）（§17）。
+*射程の時点*: 認知層 v9.18 / Developmental v10.0–v10.13a / Unified v1100–v1114（注意センター Step1 確立, 2026-06-05）+ フロンティア v12 Atomset（v1201）・v13 child-world（v1301/v1302）・**v1303 注意センター統合クローズ（注意の入力側確立, 2026-07-01）**・**v1304 feedback loop 三部作（a: 動的注意は one-shot では子世界を作らず〔NO〕/ b: ループなら対応が weight 軌跡を方向づけ〔レプリカ null 床超え・lens 非依存〕/ c: 揺れ＝前提ずれは構造を持つ lens で実在〔検出力訂正済〕, 2026-07-04）**（§17）。**Phase 命名（2026-07-04 Taka 判断・遡及）＝v1301 以降を「Attention Phase」／Unified Phase＝v1100–v1114＋v12.x（Phase↔version 対応は §17 冒頭と `00_index` §11）。**
 
 ---
 
@@ -616,7 +616,11 @@ pickup（v9.8c, TTL 延長のみ）/ death_pool / semantic gravity+deviation / v
 
 ## 17. フロンティア実験アーク（v12 Atomset / v13 child-world）― 現行最前線
 
-本書コア（§1–§16）の確定後に進んだ最前線。いずれも **物理層 frozen・親不可侵**（子 engine は in-memory、親 physics/inject/ledger/state 非書込）を厳守。判定（成功/失敗）は置かず観察事実・確定事実・留保（#CW*）で記す。出典は各 `unified/v12xx`・`unified/v13xx` と `docs/ai_summaries/07_unified_summary.md`（Part 3/4）。
+本書コア（§1–§16）の確定後に進んだ最前線。いずれも **物理層 frozen・親不可侵**（子 engine は in-memory、親 physics/inject/ledger/state 非書込）を厳守。判定（成功/失敗）は置かず観察事実・確定事実・留保（#CW*）で記す。出典は各 `unified/v12xx`・`unified/v13xx` と `docs/ai_summaries/07_unified_summary.md`（Part 3/4）・`08_attention_summary.md`（v1301 以降）。
+
+> **Phase↔version 対応表（この1箇所＋`00_index` §11 に集約・2026-07-04 Taka 判断）**
+> - **Unified Phase**＝**v1100–v1114 ＋ v12.x（Atomset, v1201）**。実質は「多くの現象を束ねる試行錯誤」で、その中から「**束ねる主体はセンター（注意）**」が析出した。
+> - **Attention Phase**＝**v1301 以降**（v13 系・注意センター開発の実質に合わせた命名）。**v1301–v1302 は当時 child-world（Unified 枠）として実施**され、v1114 で注意センターを作った時点では「ここが中枢になる」認識には至っていなかった——この史実は上書きせず、**Attention Phase への帰属は遡及命名**と明記する（過去の Phase Result / observation 本文は不変）。§17.3–§17.6 は当時の枠（v12/v13 child-world）の記述を保持したまま、現在形の総括を `08_attention_summary.md` に置く。
 
 ### 17.1 v12 Atomset（`unified/v1201`, m1–m15）― atom×atom 関係網による個性化
 - **主題**: CID 境界を越えた **atom×atom 関係網**（cross-CID）。誕生時 atom（n_core+phase_sig→rank_1）を介し、per-cid 経験（robust_z 特徴度）を per-Atom に集約し、同 atom を担う複数 cid に緩く共有・伝播させて cid 特異な個性化を作れるかを問う（`m5_port_inventory_and_plan.md`）。
@@ -651,9 +655,13 @@ pickup（v9.8c, TTL 延長のみ）/ death_pool / semantic gravity+deviation / v
 - **selector（v1303j）**: emitter を**研究者 cutoff なしで珍しさが 1 つ pull**（ルーレット・v12.1 同型）。grid/alive を per_subject + c_trajectory(window→step=500) から自前再構築（v1303i 生成元欠落に非依存）。**落とし穴2件を実証**＝(1) single-draw 一致率は目の異同に関係なく chance(≈1/eligible) 支配で distinct 判定不能、(2) marginal（時間平均）分布相関は D型平均化で露出時間支配→θ/link/peer が全て uniform と~0.99。**本体は per-t 選択分布**（`p=clip(sal,0)/Σ`・厳密・RNG 不要、many-RNG N=200 は sampler 検証 corr 0.9999）。per-t で目は distinct（now×peer 0.55/now×link 0.48/now×persist 0.43）かつ全 eye が uniform と区別可（per-t KL>0）。
 - **クローズ成果（`unified/v1303/`）**: **eye registry**（正式4 = now_theta 瞬間同期 / archive_theta_percentile〔旧 persist_thetapct・改名＝**duration lens でない**・pulled/eligible seglen 0.955〕/ link_rarity 非θ物理稀さ / bgen_static_prior 誕生時 prior、補助1 = aux_peer_relative_theta θ-family）+ **attention output schema**（`v1303_final_attention_output_seed0.parquet`・t×cid×eye 366,605行・本体 `p_select_given_eye_t`・marginal は参考/single-draw は例示）+ **close memo**（7条件充足）。構造は「5独立系」でなく **dynamic physical cluster（now/archive_θ/link/peer・per-t corr 0.43–0.77）+ static prior（bgen・直交）**、link は非θ＝物理側の別軸（軸数を成果に数えない）。方法論の落とし穴は memory `feedback_single_draw_agreement_is_chance` に固定。
 
-### 17.6 v1304 attention projection / child-ESDE interface（進行中 2026-07-01〜）
-v1303 が固定した attention output（cid×eye の per-t 選択分布）を**何に渡すか＝投影**。selector（v1303・何を注意候補にするか）と projection（v1304・注意→応答方向）を混ぜない。子ESDE・Atom 意味接続・内部環境・外部入力・cross-eye 合成 pull は v1304+ の主題。
-- **v1304a child-ESDE existence check（実装可否ゲート済・写像合意待ち）**: v1303 attention output を子ESDE の初期条件に一回だけ写したとき子が「別の系」として立つかを read-only で見る（親へ feedback なし・成立判定でない）。**3条件**（①canon から構造を持った乖離 ②親特異〔shuffle/other-parent/uniform null より親方向〕③自走維持〔本体は t_mid 以降・初期条件を同期と読まない #CW7〕）が揃って初めて意味。paradigm は既存 `unified/v1301/cw_run.py`（build_child 4knob + canon/shuffle/random 対照 + signature 7構造量 + run_injection）を再利用（engine は現環境で in-memory 自走を smoke 確認）。**唯一の設計判断**＝親 attention profile（eye別 cid上 p_select）→ 子 knob（N/plb/k_sync/theta_mu）の写像形（候補 A aggregate / B ensemble〔cw_run 最小改修・推奨〕/ C 初期θbias）。制約＝knob 源の v11 birth 物理は 45/228 cid でしか非欠損。詳細 `unified/v1304/v1304a_feasibility_check.md`。**継承は持続パラメータ経由のみ（v1302 (A)）**＝runtime 連続注入しない・run_injection を呼び空 start 交絡（`feedback_transplant_skip_injection_confound`）を回避。
+### 17.6 v1304 feedback loop 三部作 ― 動的な注意はループなら仕事をするか（2026-07-01〜07-04）
+v1303 が固定した attention output（cid×eye の per-t 選択分布）を**何に渡すか＝投影**から始まり、v1304a の結果を受けて「**子世界をセンターの第二の観察対象に足し、注意→子→観察→注意…のループを回す**」方向（＝物理 write-back でない feedback・親 read-only 維持）へ展開した。selector（v1303・何を注意候補にするか）と projection/loop（v1304・注意→子→注意）を混ぜない。read-only・親物理 hash 前後検証・書込 `unified/v1304/` 配下のみ。
+
+- **v1304a ― 動的な注意は one-shot では子世界を作らない（NO）**: v1303 attention output を子ESDE の初期条件に一回だけ写す existence check（3条件＝canon から構造を持った乖離／親特異〔shuffle/other-parent/uniform null より親方向〕／自走維持〔本体は t_mid 以降・初期条件を同期と読まない #CW7〕）。paradigm は既存 `unified/v1301/cw_run.py`（build_child 4knob + 対照 + signature + run_injection）再利用。**結果＝4つの結果が収束し「動的な注意は一回写しでは子を親特異に作らない・パイプ自体は通る」**。probe（子 run なし・相関スキャン）で「s_avg 管に届く動的な珍しさ」は無し（NO・最良 E_mean rarity 0.40 < bgen 較正 0.545）。→ 一回写しは死ぬがループならどうか、へ（`unified/v1304/v1304a_*`）。
+- **v1304b ― ループなら対応が weight 軌跡を方向づける（レプリカ null 床超え・正）**: weight（cid ごとの注意重み・now_theta lift 初期化）→ weight 比例で子サンプル（plb←s_avg）→ 子集団内の珍しさ（両側 −log10）を由来 cid に返す → weight 乗法更新（cid 単位平均→round 正規化・0子 cid は α 不動・eps floor）→ 次 round、を feedback / no_feedback / shuffle の3世界で。**primary＝レプリカ null 法**（K=10 の対応破壊レプリカを同一世界に相乗り・子ゼロ追加の算術で `D_fb=mean L1(fb,shuf_k)` と発散床 `D_null=mean L1(shuf_i,shuf_j)` の系列 paired 差）。**結果＝両 base で全12/12系列正・符号一貫1.0・p≤1e-4＝床超え**。**別 lens（R_density）でも再現＝lens 非依存でループの機構的性質**（link_density の自己確認懸念は外れる）。**per-cid 持続性ゼロでも効く＝記憶は weight 軌跡〔履歴・経路〕側に宿り得る**。言える上限＝「**対応が weight 軌跡を方向づけた（レプリカ床超え）**」まで（学習/自律とは言わない）（`unified/v1304/v1304b_*`, memory `project_v1304b_replica_null_cleared`）。
+- **v1304c ― 揺れ（動的な統計＝前提が時間でずれる）の直接測定 ＋ 検出力訂正**: **固定 probe 法**（ある時点の子の値を固定し後 round の子集団に珍しさを測り直す＝値不変で珍しさが動けば動いたのは物差し＝前提だけ・子ゼロ追加）。primary＝`premise_drift_fb − premise_drift_nofb`。**当初 null と報告→Taka「計器を疑え」で自己監査し訂正**：(1) 参照母集団 M=20 が小さすぎ tail 珍しさの推定ノイズが信号を埋没＝**測定アーティファクト**。参照を 220 標本 pool に広げると **link_density の前提ずれは両 base で立つ（前提は時間で進行的にずれる）**。(2) **R_density は ICC＝0.02**（子の値が「どの cid か」でほぼ決まらない）＝**組成が変わっても母集団は構造的に動かず前提ずれは原理的ゼロ**＝R_density を自己確認外し lens に選んだのは構造上結果の出ない実験だった（link_density は ICC 0.67）。**変わらぬ点＝v1304b の効き〔lens 非依存〕は前提ずれ〔lens 依存・ICC 必須〕で説明できず記憶は依然 weight 軌跡側**（むしろ強化）。過剰主張しない＝pooled は事後の検出力回復（M 上げ再 run で正式化＝次段）・link の前提ずれは plb 結合〔自己確認〕に乗る（`unified/v1304/v1304c_full_report.md` + `v1304c_correction.md`, memory `feedback_measurement_power_before_null`）。
+- **Attention Phase が残した資産（再利用可能な計器・規律）**: ① **レプリカ null 法**（対応の効きを子ゼロ追加で統計的に閉じる）② **固定 probe 法**（母集団相対の前提ずれを測る・要 pool 参照）③ **pooled 物差し / ICC 事前確認**（組成・選択効果を lens で測るなら ICC を先に確認・ICC≈0 は構造的空振り）④ **チャネル整合要件**（写像の入力次元と実注入次元を一致させる・v1302 トートロジーの教訓）。**継承は持続パラメータ経由のみ（v1302 (A)）**＝runtime 連続注入しない・run_injection を呼び空 start 交絡（`feedback_transplant_skip_injection_confound`）を回避。
 
 ---
 
@@ -668,7 +676,7 @@ v1303 が固定した attention output（cid×eye の per-t 選択分布）を**
 - **v1201 (v12 Atomset / v12.1)**: atom×atom 関係網の個性化（全チャネル null・凍結核 m5 で初の cid 特異性 sign-flip）+ 一致率＝cosine(cid48,atom48) の確率的観察（roulette、レアを切り捨てない）。§17.1-17.2。
 - **フロンティア (v1301/v1302 child-world)**: CID 誕生形態 M_c→物理 param の縮小子系（N≈100-350・親物理非書込）。v1301 統計監査（pairing 検定で manipulation check）→ **v1302 で継承は持続パラメータ経由 (A) でのみ成立・初期条件 (B=topology 移植) では不成立を確定**（(A) は #CW7 トートロジー留保、懐疑再点検で残差ゼロ）。§17.3-17.4。
 - **v1303（注意センター統合・クローズ 2026-07-01）**: ESDE 注意の入力側を確立（3レンズ ledger→時間構造→手本イベント→θ内部化→Now/Archive 統合→4分類→珍しさ独立軸→動的稀さ→selector→attention output schema 固定）。正式eye 4+補助1・本体=per-t 選択確率。落とし穴＝single-draw は chance 支配・marginal は平均化の罠。§17.5、全経路 `unified/v1303/v1303_evolution.md`。
-- **v1304（attention projection / child-ESDE・進行中）**: v1303 attention output を子ESDE 等へ投影。v1304a existence check＝子が canon と親特異に違う別系として立つか（3条件・cw_run.py 再利用・写像合意待ち）。§17.6。
+- **v1304（feedback loop 三部作・2026-07-04）**: 子世界を注意の第二の観察対象に足すループ。**a**＝動的注意は one-shot では子を親特異に作らず（NO）／**b**＝ループなら対応が weight 軌跡を方向づけ（レプリカ null 床超え・両 base 12/12 系列正・lens 非依存・持続性非依存＝記憶は weight 軌跡側）／**c**＝揺れ（前提が時間でずれる）は構造を持つ lens で実在（当初 null は M=20 検出力アーティファクトと自己監査で訂正・R_density は ICC=0.02 で構造的ゼロ）。§17.6。Attention Phase（§0 射程行・§17 冒頭 Phase 対応表）。
 
 ---
 

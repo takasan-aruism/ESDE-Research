@@ -34,10 +34,10 @@ Unified Phase の独立に伴い、ファイル番号を繰り上げた。Develo
 | 旧番号 | 新番号 | ファイル | 性格 |
 |---|---|---|---|
 | — | **07** | `07_unified_summary.md` (本書、新設) | Phase 要約 |
-| 07 | **08** | `08_concept_core.md` (旧 `07_concept_core.md`) | 概念要約 |
-| 08 | **09** | `09_esde_system_structure.md` (旧 `08_esde_system_structure.md`) | 構造要約 |
-| 09 | **10** | `10_audit_principles.md` (旧 `09_audit_principles.md`) | 監査原則 |
-| 10 | **11** | `11_esde_language_summary.md` (旧 `10_esde_language_summary.md`) | Language 系要約 |
+| 07 | **08** | `09_concept_core.md` (旧 `07_concept_core.md`) | 概念要約 |
+| 08 | **09** | `10_esde_system_structure.md` (旧 `08_esde_system_structure.md`) | 構造要約 |
+| 09 | **10** | `11_audit_principles.md` (旧 `09_audit_principles.md`) | 監査原則 |
+| 10 | **11** | `12_esde_language_summary.md` (旧 `10_esde_language_summary.md`) | Language 系要約 |
 | — | **12** (候補) | `esde_research_method_update.md` (新設、2026-05-19) | 研究運用 — 観察手法の規律 |
 | — | **13** (候補) | `esde_attitude_toward_esde.md` (新設、2026-05-20) | 研究運用 — 観察者の態度の規律 |
 | — | **14** (候補) | `esde_audit_policy_update.md` (新設、2026-05-20) | 研究運用 — 監査の上位目的の規律 |
@@ -505,7 +505,7 @@ Taka 整理 (2026-05-23):
 | **v1105a 主題 (役割表を使って実際に応答候補を絞る試行、問いの形 B、v1101 以来初の試行切替)** | v1105 完了後 | v1105 完了後着手判断 |
 | v1100 / v1101 Phase Result | Web Claude | **作成しないと判断 (Taka 2026-05-20 確定)**。v1100 は事前調査で本格主題でなく、v1101 の核心発見は v1101a に継承済、いずれも次主題に影響しないため。必要なら repo の Code A 観察報告を直接参照 |
 | ESDE への態度 / 監査方針アップデートの repo 配置 | Taka 確認済 | 研究手法アップデートと同じ docs/ai_summaries/ 配下、番号 13 (態度) / 14 (監査方針) 候補 |
-| 概念理解.md / 08_concept_core.md の v1104/v1104a 反映 | Web Claude | 並行進行中 (2026-05-23) |
+| 概念理解.md / 09_concept_core.md の v1104/v1104a 反映 | Web Claude | 並行進行中 (2026-05-23) |
 | 07_unified_summary.md の v1104/v1104a 完了反映 | Web Claude | 完了 (本書、2026-05-23) |
 | EVI 案 (Explainability Viability Index、GPT 2026-05-23 提示) の検討 | v1105+v1105a 後 | 保留中。将来統合的指標として導入する場合は scope × 粒度別の vector で扱う方針 |
 | 新スレッドへの引き継ぎ | Taka + Web Claude | 整理期完了後、徐々に新スレッドへ移行 (Taka 方針「リアルな現場の情報を持っている Claude が一番正しい、引き継ぎは徐々に行う方が事故らない」) |
@@ -645,7 +645,7 @@ Taka 哲学 4 件は Web Claude memory のみに存在、新 Web Claude は Taka
 - **新 Web Claude スレッドが最初に読むべきもの (優先度順)**:
   1. 本書 (07_unified_summary.md) — Unified Phase の全容
   2. 研究運用資料 3 本 (`esde_research_method_update.md` / `esde_attitude_toward_esde.md` / `esde_audit_policy_update.md`) — 観察手法・態度・監査目的の規律
-  3. `00_index.md` (用語対応表) + `概念理解.md` / `08_concept_core.md` (概念)
+  3. `00_index.md` (用語対応表) + `概念理解.md` / `09_concept_core.md` (概念)
   4. v1104+v1104a 関連資料 (`v1104_v1104a_phase_result.md` / `esde_unified_inventory.md` / `v1104a_phase_design_v2.md`) — 直近の主題と段 4-b/4-c 地形図
   5. v1103 関連資料 (`v1103_phase_result.md` / `esde_segment4_path_check.md`) — 段 4-c 点検の確定観察
 - Unified Phase の全容把握は本書 (07) で足りる。`06` / `06b` / `06c` は Developmental Phase 用で凍結済、Unified Phase の新主題は本書に追記して一本化する (06d/06e の枝番継続はしない)。
