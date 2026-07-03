@@ -1,0 +1,48 @@
+{
+  "design": "v1304c_premise_drift",
+  "mode": "smoke",
+  "lenses": [
+    "link_density"
+  ],
+  "bases": [
+    0
+  ],
+  "R": 1,
+  "T": 8,
+  "M": 20,
+  "round0_support": {
+    "support_n": 45,
+    "entropy": 3.779930521795531,
+    "cid_hash": "a0ea0593d3eef99ae9b418e6fb0a470d"
+  },
+  "parent_hash_unchanged": true,
+  "n_child": 480,
+  "log_complete": {
+    "pop_rows": 480,
+    "cidsal_rows": 230,
+    "drift_rows": 7,
+    "expected_pop": 480,
+    "drift_t_min": 1,
+    "drift_t_max": 7
+  },
+  "instrument_checks": {
+    "t0_excluded": true,
+    "same_probe_both_worlds": true,
+    "parent_hash_unchanged": true
+  },
+  "tests": [
+    {
+      "lens": "link_density",
+      "base": 0,
+      "R": 1,
+      "premise_drift_fb_mean": 0.13702,
+      "premise_drift_nofb_mean": 0.15526,
+      "primary_diff_mean": -0.01824,
+      "t": NaN,
+      "p_raw": null,
+      "sign_consistency": NaN,
+      "all_series_pos": false
+    }
+  ],
+  "total_s": 27.0
+}
