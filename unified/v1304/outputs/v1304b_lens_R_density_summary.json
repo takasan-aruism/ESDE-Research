@@ -1,0 +1,101 @@
+{
+  "design": "v1304b_lens_reproduction",
+  "primary_lens": "R_density",
+  "diag_lenses": [
+    "link_density",
+    "R_density"
+  ],
+  "T": 8,
+  "M": 20,
+  "K": 10,
+  "configs": [
+    {
+      "g": 1.0,
+      "base": 0,
+      "R": 12
+    },
+    {
+      "g": 1.0,
+      "base": 1,
+      "R": 12
+    }
+  ],
+  "round0_support": {
+    "support_n": 45,
+    "sum_weight": 1.0000000000000002,
+    "entropy": 3.779930521795531,
+    "cid_hash": "a0ea0593d3eef99ae9b418e6fb0a470d"
+  },
+  "parent_hash_unchanged": true,
+  "spread_check": {
+    "checked": true,
+    "first_std": 0.0448426588868831,
+    "first_vals_n_unique": 20
+  },
+  "n_child": 11520,
+  "tests": [
+    {
+      "g": 1.0,
+      "base": 0,
+      "lens": "R_density",
+      "R": 12,
+      "D_fb_mean": 0.9553,
+      "D_null_mean": 0.88712,
+      "primary_diff_mean": 0.06817,
+      "t": 6.865,
+      "p_raw": 2.7e-05,
+      "sign_consistency": 1.0,
+      "all_series_pos": true,
+      "sec_entropy_diff_mean": 0.31151,
+      "entropy_t": 4.09,
+      "L1_fb_indep_finalT_mean": 1.45889
+    },
+    {
+      "g": 1.0,
+      "base": 1,
+      "lens": "R_density",
+      "R": 12,
+      "D_fb_mean": 1.00538,
+      "D_null_mean": 0.88397,
+      "primary_diff_mean": 0.1214,
+      "t": 3.729,
+      "p_raw": 0.003329,
+      "sign_consistency": 1.0,
+      "all_series_pos": true,
+      "sec_entropy_diff_mean": 0.76132,
+      "entropy_t": 3.685,
+      "L1_fb_indep_finalT_mean": 1.45756
+    }
+  ],
+  "persistence": [
+    {
+      "g": 1.0,
+      "base": 0,
+      "lens": "R_density",
+      "n_cid": 45,
+      "split_half_corr": 0.2597
+    },
+    {
+      "g": 1.0,
+      "base": 0,
+      "lens": "link_density",
+      "n_cid": 45,
+      "split_half_corr": 0.7022
+    },
+    {
+      "g": 1.0,
+      "base": 1,
+      "lens": "R_density",
+      "n_cid": 45,
+      "split_half_corr": -0.0116
+    },
+    {
+      "g": 1.0,
+      "base": 1,
+      "lens": "link_density",
+      "n_cid": 45,
+      "split_half_corr": 0.513
+    }
+  ],
+  "total_s": 639.3
+}
