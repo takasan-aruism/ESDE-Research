@@ -1,0 +1,87 @@
+{
+  "design": "v1304b_full_replica_null",
+  "T": 8,
+  "M": 20,
+  "K": 10,
+  "configs": [
+    {
+      "g": 1.0,
+      "base": 0,
+      "R": 12
+    },
+    {
+      "g": 1.0,
+      "base": 1,
+      "R": 12
+    },
+    {
+      "g": 0.5,
+      "base": 0,
+      "R": 5
+    }
+  ],
+  "round0_support": {
+    "support_n": 45,
+    "sum_weight": 1.0000000000000002,
+    "entropy": 3.779930521795531,
+    "cid_hash": "a0ea0593d3eef99ae9b418e6fb0a470d"
+  },
+  "parent_physics_hash": {
+    "PS": "4360e79a45f110b954cfbecdd02e252b",
+    "SCHEMA": "e6c17b4d5256ae5411980c49021f92b0"
+  },
+  "parent_hash_unchanged": true,
+  "n_child": 13920,
+  "primary_note": "feedback が立つ = (D_fb - D_null) > 0 が R系列で有意・base0/1 再現・符号一貫",
+  "tests": [
+    {
+      "g": 0.5,
+      "base": 0,
+      "R": 5,
+      "role": "g0.5_ref",
+      "D_fb_mean": 0.66562,
+      "D_null_mean": 0.57431,
+      "primary_diff_mean": 0.09131,
+      "t": 3.157,
+      "p_raw": 0.03427,
+      "sign_consistency": 1.0,
+      "sec_entropy_diff_mean": 0.40238,
+      "entropy_t": 3.948,
+      "entropy_p": 0.01684,
+      "L1_fb_indep_finalT_mean": 1.0986
+    },
+    {
+      "g": 1.0,
+      "base": 0,
+      "R": 12,
+      "role": "primary",
+      "D_fb_mean": 1.06745,
+      "D_null_mean": 0.86752,
+      "primary_diff_mean": 0.19993,
+      "t": 7.008,
+      "p_raw": 2e-05,
+      "sign_consistency": 1.0,
+      "sec_entropy_diff_mean": 0.83654,
+      "entropy_t": 9.812,
+      "entropy_p": 0.0,
+      "L1_fb_indep_finalT_mean": 1.5091
+    },
+    {
+      "g": 1.0,
+      "base": 1,
+      "R": 12,
+      "role": "primary",
+      "D_fb_mean": 1.05778,
+      "D_null_mean": 0.89553,
+      "primary_diff_mean": 0.16226,
+      "t": 5.862,
+      "p_raw": 0.00011,
+      "sign_consistency": 1.0,
+      "sec_entropy_diff_mean": 0.96049,
+      "entropy_t": 8.539,
+      "entropy_p": 0.0,
+      "L1_fb_indep_finalT_mean": 1.55712
+    }
+  ],
+  "total_s": 779.5
+}
