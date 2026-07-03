@@ -1,0 +1,84 @@
+{
+  "icc": [
+    {
+      "lens": "link_density",
+      "base": 0,
+      "icc": 0.6703,
+      "between": 0.004477,
+      "within": 0.002202,
+      "n_cid": 45
+    },
+    {
+      "lens": "link_density",
+      "base": 1,
+      "icc": 0.677,
+      "between": 0.004671,
+      "within": 0.002229,
+      "n_cid": 45
+    },
+    {
+      "lens": "R_density",
+      "base": 0,
+      "icc": 0.0217,
+      "between": 4.1e-05,
+      "within": 0.001861,
+      "n_cid": 45
+    },
+    {
+      "lens": "R_density",
+      "base": 1,
+      "icc": 0.0266,
+      "between": 5.3e-05,
+      "within": 0.001923,
+      "n_cid": 45
+    }
+  ],
+  "pooled_drift": [
+    {
+      "lens": "link_density",
+      "base": 0,
+      "R": 12,
+      "diff_mean": 0.02233,
+      "t": 4.371,
+      "p_raw": 0.00112,
+      "sign_consistency": 0.917,
+      "all_pos": false
+    },
+    {
+      "lens": "link_density",
+      "base": 1,
+      "R": 12,
+      "diff_mean": 0.05136,
+      "t": 17.403,
+      "p_raw": 0.0,
+      "sign_consistency": 1.0,
+      "all_pos": true
+    },
+    {
+      "lens": "R_density",
+      "base": 0,
+      "R": 12,
+      "diff_mean": 0.00319,
+      "t": 1.57,
+      "p_raw": 0.14462,
+      "sign_consistency": 0.583,
+      "all_pos": false
+    },
+    {
+      "lens": "R_density",
+      "base": 1,
+      "R": 12,
+      "diff_mean": 0.01375,
+      "t": 5.796,
+      "p_raw": 0.00012,
+      "sign_consistency": 1.0,
+      "all_pos": true
+    }
+  ],
+  "wass_final_fb_minus_nofb": {
+    "link_density_base0": -0.00312,
+    "link_density_base1": 0.0093,
+    "R_density_base0": 0.00331,
+    "R_density_base1": 0.00014
+  }
+}

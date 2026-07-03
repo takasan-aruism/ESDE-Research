@@ -1,5 +1,7 @@
 # v1304c full 報告 — 揺れの直接測定（固定 probe 法）：前提ずれは標本ゆらぎ床内（事前登録 (b)）
 
+> ⚠️ **訂正あり（2026-07-04・`v1304c_correction.md`）**：本報告の結論「前提ずれは床内(b)・揺れは起きない」は **測定アーティファクト**（primary の参照が M=20 で検出力不足）と判明。参照を 220 標本に広げると **link_density の前提ずれは両 base で立つ**（p≤0.001・進行的）。R_density の床内は ICC=0.02 の**構造的ゼロ**（この lens では原理的に揺れようがない）。ただし「v1304b の効き≠前提ずれ（記憶は weight 軌跡側）」は変わらず（v1304b は lens 非依存・前提ずれは lens 依存）。詳細は訂正書。以下は訂正前の記録として残す。
+
 *作成*: 2026-07-04、Code A。**事前固定 primary で「珍しさの前提が注意由来の組成変化でずれるか」を直接測定。read-only・親物理 hash 検証・書込 `unified/v1304/outputs/` 配下・判定なし #12。判定と読みは Taka。**
 *対象指示*: v1304c rev2（Web Claude・2026-07-03・固定 probe 法・primary＝premise_drift_fb − premise_drift_nofb・予登録読み (a)立つ/(b)立たない）。
 *成果物*: `v1304c.py`（機構は v1304b 関数 import で完全同一）+ `outputs/v1304c_full_{pop,cidsalience,weightchange,drift,rankswaps,mechcorr,tests,summary}.parquet/json`。
